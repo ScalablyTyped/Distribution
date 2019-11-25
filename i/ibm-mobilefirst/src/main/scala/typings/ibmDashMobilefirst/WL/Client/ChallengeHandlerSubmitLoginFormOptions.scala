@@ -14,8 +14,8 @@ object ChallengeHandlerSubmitLoginFormOptions {
   @scala.inline
   def apply(headers: js.Object = null, parameters: js.Object = null, timeout: Int | Double = null): ChallengeHandlerSubmitLoginFormOptions = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChallengeHandlerSubmitLoginFormOptions]
   }

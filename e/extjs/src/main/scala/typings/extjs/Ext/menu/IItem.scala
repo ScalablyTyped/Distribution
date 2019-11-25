@@ -122,11 +122,10 @@ object IItem {
     activated: js.UndefOr[Boolean] = js.undefined,
     activeCls: java.lang.String = null,
     canActivate: js.UndefOr[Boolean] = js.undefined,
-    child: /* selector */ js.UndefOr[js.Any] => _ = null,
+    child: js.UndefOr[js.Any] => _ = null,
     clickHideDelay: Int | Double = null,
     destroyMenu: js.UndefOr[Boolean] = js.undefined,
-    disabledCls: java.lang.String = null,
-    down: /* selector */ js.UndefOr[js.Any] => _ = null,
+    down: js.UndefOr[js.Any] => _ = null,
     glyph: js.Any = null,
     handler: js.Any = null,
     hideOnClick: js.UndefOr[Boolean] = js.undefined,
@@ -134,21 +133,17 @@ object IItem {
     hrefTarget: java.lang.String = null,
     icon: java.lang.String = null,
     iconCls: java.lang.String = null,
-    initComponent: () => Unit = null,
-    maskOnDisable: js.UndefOr[Boolean] = js.undefined,
     menu: js.Any = null,
     menuAlign: java.lang.String = null,
     menuExpandDelay: Int | Double = null,
     menuHideDelay: Int | Double = null,
-    onDestroy: () => Unit = null,
     onRemoved: () => Unit = null,
     onRender: () => Unit = null,
     parentMenu: IMenu = null,
     plain: js.UndefOr[Boolean] = js.undefined,
-    query: /* selector */ js.UndefOr[java.lang.String] => Array = null,
-    queryBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Array = null,
-    queryById: /* id */ js.UndefOr[java.lang.String] => IComponent = null,
-    renderTpl: js.Any = null,
+    query: js.UndefOr[java.lang.String] => Array = null,
+    queryBy: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => Array = null,
+    queryById: js.UndefOr[java.lang.String] => IComponent = null,
     setHandler: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
     setIcon: /* icon */ js.UndefOr[java.lang.String] => Unit = null,
     setIconCls: /* iconCls */ js.UndefOr[java.lang.String] => Unit = null,
@@ -160,46 +155,41 @@ object IItem {
     tooltipType: java.lang.String = null
   ): IItem = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (!js.isUndefined(activated)) __obj.updateDynamic("activated")(activated)
-    if (activeCls != null) __obj.updateDynamic("activeCls")(activeCls)
-    if (!js.isUndefined(canActivate)) __obj.updateDynamic("canActivate")(canActivate)
+    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (!js.isUndefined(activated)) __obj.updateDynamic("activated")(activated.asInstanceOf[js.Any])
+    if (activeCls != null) __obj.updateDynamic("activeCls")(activeCls.asInstanceOf[js.Any])
+    if (!js.isUndefined(canActivate)) __obj.updateDynamic("canActivate")(canActivate.asInstanceOf[js.Any])
     if (child != null) __obj.updateDynamic("child")(js.Any.fromFunction1(child))
     if (clickHideDelay != null) __obj.updateDynamic("clickHideDelay")(clickHideDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyMenu)) __obj.updateDynamic("destroyMenu")(destroyMenu)
-    if (disabledCls != null) __obj.updateDynamic("disabledCls")(disabledCls)
+    if (!js.isUndefined(destroyMenu)) __obj.updateDynamic("destroyMenu")(destroyMenu.asInstanceOf[js.Any])
     if (down != null) __obj.updateDynamic("down")(js.Any.fromFunction1(down))
-    if (glyph != null) __obj.updateDynamic("glyph")(glyph)
-    if (handler != null) __obj.updateDynamic("handler")(handler)
-    if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick)
-    if (href != null) __obj.updateDynamic("href")(href)
-    if (hrefTarget != null) __obj.updateDynamic("hrefTarget")(hrefTarget)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (iconCls != null) __obj.updateDynamic("iconCls")(iconCls)
-    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
-    if (!js.isUndefined(maskOnDisable)) __obj.updateDynamic("maskOnDisable")(maskOnDisable)
-    if (menu != null) __obj.updateDynamic("menu")(menu)
-    if (menuAlign != null) __obj.updateDynamic("menuAlign")(menuAlign)
+    if (glyph != null) __obj.updateDynamic("glyph")(glyph.asInstanceOf[js.Any])
+    if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (hrefTarget != null) __obj.updateDynamic("hrefTarget")(hrefTarget.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (iconCls != null) __obj.updateDynamic("iconCls")(iconCls.asInstanceOf[js.Any])
+    if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
+    if (menuAlign != null) __obj.updateDynamic("menuAlign")(menuAlign.asInstanceOf[js.Any])
     if (menuExpandDelay != null) __obj.updateDynamic("menuExpandDelay")(menuExpandDelay.asInstanceOf[js.Any])
     if (menuHideDelay != null) __obj.updateDynamic("menuHideDelay")(menuHideDelay.asInstanceOf[js.Any])
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
     if (onRemoved != null) __obj.updateDynamic("onRemoved")(js.Any.fromFunction0(onRemoved))
     if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction0(onRender))
-    if (parentMenu != null) __obj.updateDynamic("parentMenu")(parentMenu)
-    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
+    if (parentMenu != null) __obj.updateDynamic("parentMenu")(parentMenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(js.Any.fromFunction1(query))
     if (queryBy != null) __obj.updateDynamic("queryBy")(js.Any.fromFunction2(queryBy))
     if (queryById != null) __obj.updateDynamic("queryById")(js.Any.fromFunction1(queryById))
-    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
     if (setHandler != null) __obj.updateDynamic("setHandler")(js.Any.fromFunction2(setHandler))
     if (setIcon != null) __obj.updateDynamic("setIcon")(js.Any.fromFunction1(setIcon))
     if (setIconCls != null) __obj.updateDynamic("setIconCls")(js.Any.fromFunction1(setIconCls))
     if (setMenu != null) __obj.updateDynamic("setMenu")(js.Any.fromFunction2(setMenu))
     if (setText != null) __obj.updateDynamic("setText")(js.Any.fromFunction1(setText))
     if (setTooltip != null) __obj.updateDynamic("setTooltip")(js.Any.fromFunction1(setTooltip))
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
-    if (tooltipType != null) __obj.updateDynamic("tooltipType")(tooltipType)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (tooltipType != null) __obj.updateDynamic("tooltipType")(tooltipType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItem]
   }
 }

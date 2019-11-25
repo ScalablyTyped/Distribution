@@ -11,7 +11,7 @@ trait ElementAttributesProperty extends js.Object {
 object ElementAttributesProperty {
   @scala.inline
   def apply(props: js.Any): ElementAttributesProperty = {
-    val __obj = js.Dynamic.literal(props = props)
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ElementAttributesProperty]
   }

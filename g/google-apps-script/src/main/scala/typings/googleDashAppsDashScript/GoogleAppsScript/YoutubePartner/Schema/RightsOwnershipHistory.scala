@@ -20,10 +20,10 @@ object RightsOwnershipHistory {
     timeProvided: String = null
   ): RightsOwnershipHistory = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (origination != null) __obj.updateDynamic("origination")(origination)
-    if (ownership != null) __obj.updateDynamic("ownership")(ownership)
-    if (timeProvided != null) __obj.updateDynamic("timeProvided")(timeProvided)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (origination != null) __obj.updateDynamic("origination")(origination.asInstanceOf[js.Any])
+    if (ownership != null) __obj.updateDynamic("ownership")(ownership.asInstanceOf[js.Any])
+    if (timeProvided != null) __obj.updateDynamic("timeProvided")(timeProvided.asInstanceOf[js.Any])
     __obj.asInstanceOf[RightsOwnershipHistory]
   }
 }

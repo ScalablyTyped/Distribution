@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait RuntimeTarget extends js.Object
 
+object RuntimeTarget {
+  @scala.inline
+  def browser: typings.atAwsDashSdkBuildDashTypes.atAwsDashSdkBuildDashTypesStrings.browser = this.cast("browser")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def node: typings.atAwsDashSdkBuildDashTypes.atAwsDashSdkBuildDashTypesStrings.node = this.cast("node")
+  @scala.inline
+  def universal: typings.atAwsDashSdkBuildDashTypes.atAwsDashSdkBuildDashTypesStrings.universal = this.cast("universal")
+}
+

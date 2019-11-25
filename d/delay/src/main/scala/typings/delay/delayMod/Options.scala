@@ -16,7 +16,7 @@ object Options {
   @scala.inline
   def apply(signal: AbortSignal = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (signal != null) __obj.updateDynamic("signal")(signal)
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

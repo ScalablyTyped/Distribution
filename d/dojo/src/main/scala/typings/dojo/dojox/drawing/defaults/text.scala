@@ -57,7 +57,7 @@ object text {
     size: String,
     weight: String
   ): text = {
-    val __obj = js.Dynamic.literal(color = color, deleteEmptyCreate = deleteEmptyCreate, deleteEmptyModify = deleteEmptyModify, family = family, minWidth = minWidth, pad = pad, size = size, weight = weight)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], deleteEmptyCreate = deleteEmptyCreate.asInstanceOf[js.Any], deleteEmptyModify = deleteEmptyModify.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any], minWidth = minWidth.asInstanceOf[js.Any], pad = pad.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[text]
   }

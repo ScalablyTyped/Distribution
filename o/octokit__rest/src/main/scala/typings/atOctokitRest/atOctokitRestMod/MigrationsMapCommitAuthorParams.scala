@@ -21,9 +21,9 @@ trait MigrationsMapCommitAuthorParams extends js.Object {
 object MigrationsMapCommitAuthorParams {
   @scala.inline
   def apply(author_id: Double, owner: String, repo: String, email: String = null, name: String = null): MigrationsMapCommitAuthorParams = {
-    val __obj = js.Dynamic.literal(author_id = author_id, owner = owner, repo = repo)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(author_id = author_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationsMapCommitAuthorParams]
   }
 }

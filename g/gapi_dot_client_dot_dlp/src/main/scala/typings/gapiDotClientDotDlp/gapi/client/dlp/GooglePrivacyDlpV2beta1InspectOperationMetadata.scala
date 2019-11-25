@@ -32,13 +32,13 @@ object GooglePrivacyDlpV2beta1InspectOperationMetadata {
     totalEstimatedBytes: String = null
   ): GooglePrivacyDlpV2beta1InspectOperationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (infoTypeStats != null) __obj.updateDynamic("infoTypeStats")(infoTypeStats)
-    if (processedBytes != null) __obj.updateDynamic("processedBytes")(processedBytes)
-    if (requestInspectConfig != null) __obj.updateDynamic("requestInspectConfig")(requestInspectConfig)
-    if (requestOutputConfig != null) __obj.updateDynamic("requestOutputConfig")(requestOutputConfig)
-    if (requestStorageConfig != null) __obj.updateDynamic("requestStorageConfig")(requestStorageConfig)
-    if (totalEstimatedBytes != null) __obj.updateDynamic("totalEstimatedBytes")(totalEstimatedBytes)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (infoTypeStats != null) __obj.updateDynamic("infoTypeStats")(infoTypeStats.asInstanceOf[js.Any])
+    if (processedBytes != null) __obj.updateDynamic("processedBytes")(processedBytes.asInstanceOf[js.Any])
+    if (requestInspectConfig != null) __obj.updateDynamic("requestInspectConfig")(requestInspectConfig.asInstanceOf[js.Any])
+    if (requestOutputConfig != null) __obj.updateDynamic("requestOutputConfig")(requestOutputConfig.asInstanceOf[js.Any])
+    if (requestStorageConfig != null) __obj.updateDynamic("requestStorageConfig")(requestStorageConfig.asInstanceOf[js.Any])
+    if (totalEstimatedBytes != null) __obj.updateDynamic("totalEstimatedBytes")(totalEstimatedBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1InspectOperationMetadata]
   }
 }

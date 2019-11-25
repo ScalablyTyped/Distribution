@@ -32,11 +32,11 @@ object OpenEventArgs {
     value: String = null
   ): OpenEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (prevDate != null) __obj.updateDynamic("prevDate")(prevDate)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (prevDate != null) __obj.updateDynamic("prevDate")(prevDate.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenEventArgs]
   }
 }

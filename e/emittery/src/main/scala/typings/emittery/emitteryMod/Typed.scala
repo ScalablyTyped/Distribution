@@ -29,18 +29,18 @@ class Typed[EventDataMap /* <: Events */, EmptyEvents /* <: String */] () extend
   def emit[Name /* <: EmptyEvents */](eventName: Name): js.Promise[Unit] = js.native
   def emit[Name /* <: Extract[String, String] */](
     eventName: Name,
-    eventData: /* import warning: ImportType.apply Failed type conversion: EventDataMap[Name] */ js.Any
+    eventData: /* import warning: importer.ImportType#apply Failed type conversion: EventDataMap[Name] */ js.Any
   ): js.Promise[Unit] = js.native
   def emitSerial[Name /* <: EmptyEvents */](eventName: Name): js.Promise[Unit] = js.native
   def emitSerial[Name /* <: Extract[String, String] */](
     eventName: Name,
-    eventData: /* import warning: ImportType.apply Failed type conversion: EventDataMap[Name] */ js.Any
+    eventData: /* import warning: importer.ImportType#apply Failed type conversion: EventDataMap[Name] */ js.Any
   ): js.Promise[Unit] = js.native
   def off[Name /* <: EmptyEvents */](eventName: Name, listener: js.Function0[_]): Unit = js.native
   def off[Name /* <: Extract[String, String] */](
     eventName: Name,
     listener: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: EventDataMap[Name] */ /* eventData */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: EventDataMap[Name] */ /* eventData */ js.Any, 
       _
     ]
   ): Unit = js.native
@@ -48,14 +48,14 @@ class Typed[EventDataMap /* <: Events */, EmptyEvents /* <: String */] () extend
   def on[Name /* <: Extract[String, String] */](
     eventName: Name,
     listener: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: EventDataMap[Name] */ /* eventData */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: EventDataMap[Name] */ /* eventData */ js.Any, 
       _
     ]
   ): UnsubscribeFn = js.native
   def once[Name /* <: EmptyEvents */](eventName: Name): js.Promise[Unit] = js.native
   @JSName("once")
   def once_Name_ExtractStringString[Name /* <: Extract[String, String] */](eventName: Name): js.Promise[
-    /* import warning: ImportType.apply Failed type conversion: EventDataMap[Name] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: EventDataMap[Name] */ js.Any
   ] = js.native
 }
 

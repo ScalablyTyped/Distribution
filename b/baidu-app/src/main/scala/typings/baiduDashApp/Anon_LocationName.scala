@@ -18,8 +18,8 @@ trait Anon_LocationName extends js.Object {
 object Anon_LocationName {
   @scala.inline
   def apply(location: Anon_Height, name: Double, probability: Double, `type`: Double): Anon_LocationName = {
-    val __obj = js.Dynamic.literal(location = location, name = name, probability = probability)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], probability = probability.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LocationName]
   }
 }

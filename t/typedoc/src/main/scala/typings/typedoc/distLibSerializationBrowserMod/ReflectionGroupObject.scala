@@ -19,9 +19,9 @@ object ReflectionGroupObject {
     categories: js.Array[ReflectionCategoryObject] = null,
     children: js.Array[Double] = null
   ): ReflectionGroupObject = {
-    val __obj = js.Dynamic.literal(kind = kind, title = title)
-    if (categories != null) __obj.updateDynamic("categories")(categories)
-    if (children != null) __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReflectionGroupObject]
   }
 }

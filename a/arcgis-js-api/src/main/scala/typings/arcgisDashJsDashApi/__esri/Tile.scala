@@ -79,7 +79,7 @@ object Tile {
     scale: Double,
     world: Double
   ): Tile = {
-    val __obj = js.Dynamic.literal(bounds = bounds, col = col, constructor = constructor, coords = coords, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, level = level, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), resolution = resolution, row = row, scale = scale, world = world)
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], coords = coords.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), resolution = resolution.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], world = world.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Tile]
   }

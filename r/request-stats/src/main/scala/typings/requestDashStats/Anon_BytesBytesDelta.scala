@@ -30,7 +30,7 @@ trait Anon_BytesBytesDelta extends js.Object {
 object Anon_BytesBytesDelta {
   @scala.inline
   def apply(bytes: Double, bytesDelta: Double, bytesLeft: Double, speed: Double, timeLeft: Double): Anon_BytesBytesDelta = {
-    val __obj = js.Dynamic.literal(bytes = bytes, bytesDelta = bytesDelta, bytesLeft = bytesLeft, speed = speed, timeLeft = timeLeft)
+    val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any], bytesDelta = bytesDelta.asInstanceOf[js.Any], bytesLeft = bytesLeft.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], timeLeft = timeLeft.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BytesBytesDelta]
   }

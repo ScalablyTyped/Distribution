@@ -31,15 +31,15 @@ object ConsolaOptions {
     types: StringDictionary[ConsolaLogObject] = null
   ): ConsolaOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (mockFn != null) __obj.updateDynamic("mockFn")(js.Any.fromFunction2(mockFn))
-    if (reporters != null) __obj.updateDynamic("reporters")(reporters)
-    if (stderr != null) __obj.updateDynamic("stderr")(stderr)
-    if (stdout != null) __obj.updateDynamic("stdout")(stdout)
+    if (reporters != null) __obj.updateDynamic("reporters")(reporters.asInstanceOf[js.Any])
+    if (stderr != null) __obj.updateDynamic("stderr")(stderr.asInstanceOf[js.Any])
+    if (stdout != null) __obj.updateDynamic("stdout")(stdout.asInstanceOf[js.Any])
     if (throttle != null) __obj.updateDynamic("throttle")(throttle.asInstanceOf[js.Any])
-    if (types != null) __obj.updateDynamic("types")(types)
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsolaOptions]
   }
 }

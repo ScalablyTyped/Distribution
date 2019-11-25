@@ -11,7 +11,7 @@ trait MediaRepositoryConfigureSidecarResponseUsertags extends js.Object {
 object MediaRepositoryConfigureSidecarResponseUsertags {
   @scala.inline
   def apply(in: js.Array[MediaRepositoryConfigureSidecarResponseInItem]): MediaRepositoryConfigureSidecarResponseUsertags = {
-    val __obj = js.Dynamic.literal(in = in)
+    val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaRepositoryConfigureSidecarResponseUsertags]
   }

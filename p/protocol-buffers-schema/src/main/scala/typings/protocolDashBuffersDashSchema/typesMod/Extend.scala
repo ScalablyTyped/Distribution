@@ -12,7 +12,7 @@ trait Extend extends js.Object {
 object Extend {
   @scala.inline
   def apply(message: Message, name: String): Extend = {
-    val __obj = js.Dynamic.literal(message = message, name = name)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Extend]
   }

@@ -15,7 +15,7 @@ trait ToggleButtonState extends js.Object {
 object ToggleButtonState {
   @scala.inline
   def apply(badge: String, checked: Boolean, disabled: Boolean, id: String, label: String): ToggleButtonState = {
-    val __obj = js.Dynamic.literal(badge = badge, checked = checked, disabled = disabled, id = id, label = label)
+    val __obj = js.Dynamic.literal(badge = badge.asInstanceOf[js.Any], checked = checked.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ToggleButtonState]
   }

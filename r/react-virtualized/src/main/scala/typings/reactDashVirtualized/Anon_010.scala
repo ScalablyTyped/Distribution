@@ -16,7 +16,7 @@ trait Anon_010 extends js.Object {
 object Anon_010 {
   @scala.inline
   def apply(minimumBatchSize: `10`, rowCount: `0`, threshold: `15`): Anon_010 = {
-    val __obj = js.Dynamic.literal(minimumBatchSize = minimumBatchSize, rowCount = rowCount, threshold = threshold)
+    val __obj = js.Dynamic.literal(minimumBatchSize = minimumBatchSize.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_010]
   }

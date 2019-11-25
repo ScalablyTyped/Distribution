@@ -13,7 +13,7 @@ trait IssuesGetParams extends js.Object {
 object IssuesGetParams {
   @scala.inline
   def apply(issue_number: Double, owner: String, repo: String): IssuesGetParams = {
-    val __obj = js.Dynamic.literal(issue_number = issue_number, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(issue_number = issue_number.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IssuesGetParams]
   }

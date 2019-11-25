@@ -1,5 +1,6 @@
 package typings.atAngularCompiler.publicUnderscoreApiMod
 
+import typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.ParsedEventType
 import typings.atAngularCompiler.srcRender3R3UnderscoreAstMod.BoundEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +12,7 @@ class TmplAstBoundEvent protected ()
   extends typings.atAngularCompiler.srcCompilerMod.TmplAstBoundEvent {
   def this(
     name: String,
-    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.ParsedEventType,
+    `type`: ParsedEventType,
     handler: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     target: String,
     phase: String,
@@ -20,7 +21,7 @@ class TmplAstBoundEvent protected ()
   ) = this()
   def this(
     name: String,
-    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.ParsedEventType,
+    `type`: ParsedEventType,
     handler: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     target: String,
     phase: Null,
@@ -29,7 +30,7 @@ class TmplAstBoundEvent protected ()
   ) = this()
   def this(
     name: String,
-    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.ParsedEventType,
+    `type`: ParsedEventType,
     handler: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     target: Null,
     phase: String,
@@ -38,7 +39,7 @@ class TmplAstBoundEvent protected ()
   ) = this()
   def this(
     name: String,
-    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.ParsedEventType,
+    `type`: ParsedEventType,
     handler: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     target: Null,
     phase: Null,

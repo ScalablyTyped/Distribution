@@ -31,9 +31,9 @@ object OlapResultAxisOptions {
     tuples: js.Array[_] = null
   ): OlapResultAxisOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (tupleSize != null) __obj.updateDynamic("tupleSize")(tupleSize.asInstanceOf[js.Any])
-    if (tuples != null) __obj.updateDynamic("tuples")(tuples)
+    if (tuples != null) __obj.updateDynamic("tuples")(tuples.asInstanceOf[js.Any])
     __obj.asInstanceOf[OlapResultAxisOptions]
   }
 }

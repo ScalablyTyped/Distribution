@@ -32,15 +32,15 @@ object Anon_HandleColorZero {
     trackSize: Int | Double = null
   ): Anon_HandleColorZero = {
     val __obj = js.Dynamic.literal()
-    if (handleColorZero != null) __obj.updateDynamic("handleColorZero")(handleColorZero)
-    if (handleFillColor != null) __obj.updateDynamic("handleFillColor")(handleFillColor)
+    if (handleColorZero != null) __obj.updateDynamic("handleColorZero")(handleColorZero.asInstanceOf[js.Any])
+    if (handleFillColor != null) __obj.updateDynamic("handleFillColor")(handleFillColor.asInstanceOf[js.Any])
     if (handleSize != null) __obj.updateDynamic("handleSize")(handleSize.asInstanceOf[js.Any])
     if (handleSizeActive != null) __obj.updateDynamic("handleSizeActive")(handleSizeActive.asInstanceOf[js.Any])
     if (handleSizeDisabled != null) __obj.updateDynamic("handleSizeDisabled")(handleSizeDisabled.asInstanceOf[js.Any])
-    if (rippleColor != null) __obj.updateDynamic("rippleColor")(rippleColor)
-    if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor)
-    if (trackColor != null) __obj.updateDynamic("trackColor")(trackColor)
-    if (trackColorSelected != null) __obj.updateDynamic("trackColorSelected")(trackColorSelected)
+    if (rippleColor != null) __obj.updateDynamic("rippleColor")(rippleColor.asInstanceOf[js.Any])
+    if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor.asInstanceOf[js.Any])
+    if (trackColor != null) __obj.updateDynamic("trackColor")(trackColor.asInstanceOf[js.Any])
+    if (trackColorSelected != null) __obj.updateDynamic("trackColorSelected")(trackColorSelected.asInstanceOf[js.Any])
     if (trackSize != null) __obj.updateDynamic("trackSize")(trackSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HandleColorZero]
   }

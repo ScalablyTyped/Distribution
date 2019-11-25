@@ -39,16 +39,16 @@ object PlaceSearchRequest {
   ): PlaceSearchRequest = {
     val __obj = js.Dynamic.literal()
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (keyword != null) __obj.updateDynamic("keyword")(keyword)
+    if (keyword != null) __obj.updateDynamic("keyword")(keyword.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (maxPriceLevel != null) __obj.updateDynamic("maxPriceLevel")(maxPriceLevel.asInstanceOf[js.Any])
     if (minPriceLevel != null) __obj.updateDynamic("minPriceLevel")(minPriceLevel.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(openNow)) __obj.updateDynamic("openNow")(openNow)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(openNow)) __obj.updateDynamic("openNow")(openNow.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (rankBy != null) __obj.updateDynamic("rankBy")(rankBy)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (types != null) __obj.updateDynamic("types")(types)
+    if (rankBy != null) __obj.updateDynamic("rankBy")(rankBy.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceSearchRequest]
   }
 }

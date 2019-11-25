@@ -23,8 +23,8 @@ object GoogleActionsV2TransactionRequirementsCheckSpec {
     paymentOptions: GoogleActionsV2OrdersPaymentOptions = null
   ): GoogleActionsV2TransactionRequirementsCheckSpec = {
     val __obj = js.Dynamic.literal()
-    if (orderOptions != null) __obj.updateDynamic("orderOptions")(orderOptions)
-    if (paymentOptions != null) __obj.updateDynamic("paymentOptions")(paymentOptions)
+    if (orderOptions != null) __obj.updateDynamic("orderOptions")(orderOptions.asInstanceOf[js.Any])
+    if (paymentOptions != null) __obj.updateDynamic("paymentOptions")(paymentOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2TransactionRequirementsCheckSpec]
   }
 }

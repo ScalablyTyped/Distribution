@@ -20,10 +20,10 @@ object TextProps {
     underline: js.UndefOr[Boolean] = js.undefined
   ): TextProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold)
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic)
-    if (!js.isUndefined(strikethrough)) __obj.updateDynamic("strikethrough")(strikethrough)
-    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline)
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
+    if (!js.isUndefined(strikethrough)) __obj.updateDynamic("strikethrough")(strikethrough.asInstanceOf[js.Any])
+    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextProps]
   }
 }

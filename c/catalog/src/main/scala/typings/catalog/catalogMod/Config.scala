@@ -33,15 +33,15 @@ object Config {
     theme: Partial[Theme] = null,
     useBrowserHistory: js.UndefOr[Boolean] = js.undefined
   ): Config = {
-    val __obj = js.Dynamic.literal(pages = pages, title = title)
-    if (basePath != null) __obj.updateDynamic("basePath")(basePath)
-    if (imports != null) __obj.updateDynamic("imports")(imports)
-    if (logoSrc != null) __obj.updateDynamic("logoSrc")(logoSrc)
-    if (responsiveSizes != null) __obj.updateDynamic("responsiveSizes")(responsiveSizes)
-    if (scripts != null) __obj.updateDynamic("scripts")(scripts)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (!js.isUndefined(useBrowserHistory)) __obj.updateDynamic("useBrowserHistory")(useBrowserHistory)
+    val __obj = js.Dynamic.literal(pages = pages.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
+    if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
+    if (logoSrc != null) __obj.updateDynamic("logoSrc")(logoSrc.asInstanceOf[js.Any])
+    if (responsiveSizes != null) __obj.updateDynamic("responsiveSizes")(responsiveSizes.asInstanceOf[js.Any])
+    if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBrowserHistory)) __obj.updateDynamic("useBrowserHistory")(useBrowserHistory.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

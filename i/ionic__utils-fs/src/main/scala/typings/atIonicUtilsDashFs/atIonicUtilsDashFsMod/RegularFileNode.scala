@@ -14,8 +14,8 @@ trait RegularFileNode extends FileNode {
 object RegularFileNode {
   @scala.inline
   def apply(parent: FileNode, path: String, `type`: file): RegularFileNode = {
-    val __obj = js.Dynamic.literal(parent = parent, path = path)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegularFileNode]
   }
 }

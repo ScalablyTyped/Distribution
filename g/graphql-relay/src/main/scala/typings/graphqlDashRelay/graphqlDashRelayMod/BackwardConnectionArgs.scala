@@ -15,7 +15,7 @@ trait BackwardConnectionArgs extends js.Object {
 object BackwardConnectionArgs {
   @scala.inline
   def apply(before: Anon_Type, last: Anon_Type): BackwardConnectionArgs = {
-    val __obj = js.Dynamic.literal(before = before, last = last)
+    val __obj = js.Dynamic.literal(before = before.asInstanceOf[js.Any], last = last.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BackwardConnectionArgs]
   }

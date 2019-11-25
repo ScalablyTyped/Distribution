@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.TopLevel
 import typings.mocha.mochaStrings.fast
 import typings.mocha.mochaStrings.medium
 import typings.mocha.mochaStrings.slow
-import typings.mocha.mochaStrings.test
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +20,7 @@ class Test () extends Runnable {
    // added by reporters
   var err: js.UndefOr[Error] = js.native
   var speed: js.UndefOr[slow | medium | fast] = js.native
-  var `type`: test = js.native
+  var `type`: typings.mocha.mochaStrings.test = js.native
 }
 
 /**

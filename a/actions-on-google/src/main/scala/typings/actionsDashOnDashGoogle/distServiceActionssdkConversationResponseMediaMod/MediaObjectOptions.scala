@@ -39,11 +39,11 @@ object MediaObjectOptions {
     image: GoogleActionsV2UiElementsImage = null,
     name: String = null
   ): MediaObjectOptions = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaObjectOptions]
   }
 }

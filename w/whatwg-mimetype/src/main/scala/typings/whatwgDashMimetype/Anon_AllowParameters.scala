@@ -12,7 +12,7 @@ object Anon_AllowParameters {
   @scala.inline
   def apply(allowParameters: js.UndefOr[Boolean] = js.undefined): Anon_AllowParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowParameters)) __obj.updateDynamic("allowParameters")(allowParameters)
+    if (!js.isUndefined(allowParameters)) __obj.updateDynamic("allowParameters")(allowParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AllowParameters]
   }
 }

@@ -36,7 +36,7 @@ object ITouchData {
     screenY: Double,
     target: HTMLElement
   ): ITouchData = {
-    val __obj = js.Dynamic.literal(clientX = clientX, clientY = clientY, force = force, identifier = identifier, pageX = pageX, pageY = pageY, radiusX = radiusX, radiusY = radiusY, rotationAngle = rotationAngle, screenX = screenX, screenY = screenY, target = target)
+    val __obj = js.Dynamic.literal(clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], radiusX = radiusX.asInstanceOf[js.Any], radiusY = radiusY.asInstanceOf[js.Any], rotationAngle = rotationAngle.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITouchData]
   }

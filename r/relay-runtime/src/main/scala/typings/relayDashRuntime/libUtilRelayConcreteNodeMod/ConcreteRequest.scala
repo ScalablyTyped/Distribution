@@ -25,7 +25,7 @@ object ConcreteRequest {
     operation: NormalizationOperation,
     params: RequestParameters
   ): ConcreteRequest = {
-    val __obj = js.Dynamic.literal(fragment = fragment, kind = kind, operation = operation, params = params)
+    val __obj = js.Dynamic.literal(fragment = fragment.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConcreteRequest]
   }

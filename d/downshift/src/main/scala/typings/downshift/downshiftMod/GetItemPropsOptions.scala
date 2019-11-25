@@ -21,16 +21,14 @@ object GetItemPropsOptions {
     item: Item,
     AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
     ClassAttributes: ClassAttributes[HTMLElement] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
     index: Int | Double = null,
     isSelected: js.UndefOr[Boolean] = js.undefined
   ): GetItemPropsOptions[Item] = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected)
+    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetItemPropsOptions[Item]]
   }
 }

@@ -26,13 +26,13 @@ object EntityAdWordsLink {
     selfLink: String = null
   ): EntityAdWordsLink = {
     val __obj = js.Dynamic.literal()
-    if (adWordsAccounts != null) __obj.updateDynamic("adWordsAccounts")(adWordsAccounts)
-    if (entity != null) __obj.updateDynamic("entity")(entity)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (profileIds != null) __obj.updateDynamic("profileIds")(profileIds)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (adWordsAccounts != null) __obj.updateDynamic("adWordsAccounts")(adWordsAccounts.asInstanceOf[js.Any])
+    if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (profileIds != null) __obj.updateDynamic("profileIds")(profileIds.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityAdWordsLink]
   }
 }

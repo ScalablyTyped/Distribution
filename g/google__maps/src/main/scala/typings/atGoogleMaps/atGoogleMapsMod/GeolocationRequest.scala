@@ -36,13 +36,13 @@ object GeolocationRequest {
     wifiAccessPoints: js.Array[WifiAccessPoint] = null
   ): GeolocationRequest = {
     val __obj = js.Dynamic.literal()
-    if (carrier != null) __obj.updateDynamic("carrier")(carrier)
-    if (cellTowers != null) __obj.updateDynamic("cellTowers")(cellTowers)
-    if (!js.isUndefined(considerIp)) __obj.updateDynamic("considerIp")(considerIp)
+    if (carrier != null) __obj.updateDynamic("carrier")(carrier.asInstanceOf[js.Any])
+    if (cellTowers != null) __obj.updateDynamic("cellTowers")(cellTowers.asInstanceOf[js.Any])
+    if (!js.isUndefined(considerIp)) __obj.updateDynamic("considerIp")(considerIp.asInstanceOf[js.Any])
     if (homeMobileCountryCode != null) __obj.updateDynamic("homeMobileCountryCode")(homeMobileCountryCode.asInstanceOf[js.Any])
     if (homeMobileNetworkCode != null) __obj.updateDynamic("homeMobileNetworkCode")(homeMobileNetworkCode.asInstanceOf[js.Any])
-    if (radioType != null) __obj.updateDynamic("radioType")(radioType)
-    if (wifiAccessPoints != null) __obj.updateDynamic("wifiAccessPoints")(wifiAccessPoints)
+    if (radioType != null) __obj.updateDynamic("radioType")(radioType.asInstanceOf[js.Any])
+    if (wifiAccessPoints != null) __obj.updateDynamic("wifiAccessPoints")(wifiAccessPoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolocationRequest]
   }
 }

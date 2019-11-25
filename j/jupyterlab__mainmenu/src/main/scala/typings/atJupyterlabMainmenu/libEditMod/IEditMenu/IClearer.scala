@@ -39,12 +39,12 @@ object IClearer {
     noun: String = null,
     pluralNoun: String = null
   ): IClearer[T] = {
-    val __obj = js.Dynamic.literal(tracker = tracker)
+    val __obj = js.Dynamic.literal(tracker = tracker.asInstanceOf[js.Any])
     if (clearAll != null) __obj.updateDynamic("clearAll")(js.Any.fromFunction1(clearAll))
     if (clearCurrent != null) __obj.updateDynamic("clearCurrent")(js.Any.fromFunction1(clearCurrent))
     if (isEnabled != null) __obj.updateDynamic("isEnabled")(js.Any.fromFunction1(isEnabled))
-    if (noun != null) __obj.updateDynamic("noun")(noun)
-    if (pluralNoun != null) __obj.updateDynamic("pluralNoun")(pluralNoun)
+    if (noun != null) __obj.updateDynamic("noun")(noun.asInstanceOf[js.Any])
+    if (pluralNoun != null) __obj.updateDynamic("pluralNoun")(pluralNoun.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClearer[T]]
   }
 }

@@ -15,8 +15,8 @@ object VideoAbuseReportReasonSnippet {
   @scala.inline
   def apply(label: String = null, secondaryReasons: js.Array[VideoAbuseReportSecondaryReason] = null): VideoAbuseReportReasonSnippet = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (secondaryReasons != null) __obj.updateDynamic("secondaryReasons")(secondaryReasons)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (secondaryReasons != null) __obj.updateDynamic("secondaryReasons")(secondaryReasons.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoAbuseReportReasonSnippet]
   }
 }

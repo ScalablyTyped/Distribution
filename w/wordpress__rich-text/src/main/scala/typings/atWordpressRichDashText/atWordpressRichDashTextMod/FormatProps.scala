@@ -15,7 +15,7 @@ trait FormatProps extends js.Object {
 object FormatProps {
   @scala.inline
   def apply(activeAttributes: Record[String, String], isActive: Boolean, onChange: Value => Unit, value: Value): FormatProps = {
-    val __obj = js.Dynamic.literal(activeAttributes = activeAttributes, isActive = isActive, onChange = js.Any.fromFunction1(onChange), value = value)
+    val __obj = js.Dynamic.literal(activeAttributes = activeAttributes.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FormatProps]
   }

@@ -17,7 +17,7 @@ object GetAncestryResponse {
   @scala.inline
   def apply(ancestor: js.Array[Ancestor] = null): GetAncestryResponse = {
     val __obj = js.Dynamic.literal()
-    if (ancestor != null) __obj.updateDynamic("ancestor")(ancestor)
+    if (ancestor != null) __obj.updateDynamic("ancestor")(ancestor.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAncestryResponse]
   }
 }

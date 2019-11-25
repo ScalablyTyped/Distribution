@@ -12,7 +12,7 @@ object BasePaymentMethodTokenizationSpecification {
   @scala.inline
   def apply(`type`: TokenizationType): BasePaymentMethodTokenizationSpecification = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasePaymentMethodTokenizationSpecification]
   }
 }

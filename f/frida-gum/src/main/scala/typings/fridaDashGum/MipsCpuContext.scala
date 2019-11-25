@@ -78,7 +78,7 @@ object MipsCpuContext {
     v0: NativePointer,
     v1: NativePointer
   ): MipsCpuContext = {
-    val __obj = js.Dynamic.literal(a0 = a0, a1 = a1, a2 = a2, a3 = a3, at = at, fp = fp, gp = gp, hi = hi, k0 = k0, k1 = k1, lo = lo, pc = pc, ra = ra, s0 = s0, s1 = s1, s2 = s2, s3 = s3, s4 = s4, s5 = s5, s6 = s6, s7 = s7, sp = sp, t0 = t0, t1 = t1, t2 = t2, t3 = t3, t4 = t4, t5 = t5, t6 = t6, t7 = t7, t8 = t8, t9 = t9, v0 = v0, v1 = v1)
+    val __obj = js.Dynamic.literal(a0 = a0.asInstanceOf[js.Any], a1 = a1.asInstanceOf[js.Any], a2 = a2.asInstanceOf[js.Any], a3 = a3.asInstanceOf[js.Any], at = at.asInstanceOf[js.Any], fp = fp.asInstanceOf[js.Any], gp = gp.asInstanceOf[js.Any], hi = hi.asInstanceOf[js.Any], k0 = k0.asInstanceOf[js.Any], k1 = k1.asInstanceOf[js.Any], lo = lo.asInstanceOf[js.Any], pc = pc.asInstanceOf[js.Any], ra = ra.asInstanceOf[js.Any], s0 = s0.asInstanceOf[js.Any], s1 = s1.asInstanceOf[js.Any], s2 = s2.asInstanceOf[js.Any], s3 = s3.asInstanceOf[js.Any], s4 = s4.asInstanceOf[js.Any], s5 = s5.asInstanceOf[js.Any], s6 = s6.asInstanceOf[js.Any], s7 = s7.asInstanceOf[js.Any], sp = sp.asInstanceOf[js.Any], t0 = t0.asInstanceOf[js.Any], t1 = t1.asInstanceOf[js.Any], t2 = t2.asInstanceOf[js.Any], t3 = t3.asInstanceOf[js.Any], t4 = t4.asInstanceOf[js.Any], t5 = t5.asInstanceOf[js.Any], t6 = t6.asInstanceOf[js.Any], t7 = t7.asInstanceOf[js.Any], t8 = t8.asInstanceOf[js.Any], t9 = t9.asInstanceOf[js.Any], v0 = v0.asInstanceOf[js.Any], v1 = v1.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MipsCpuContext]
   }

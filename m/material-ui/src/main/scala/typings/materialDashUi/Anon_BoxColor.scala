@@ -24,12 +24,12 @@ object Anon_BoxColor {
     requiredColor: String = null
   ): Anon_BoxColor = {
     val __obj = js.Dynamic.literal()
-    if (boxColor != null) __obj.updateDynamic("boxColor")(boxColor)
-    if (checkedColor != null) __obj.updateDynamic("checkedColor")(checkedColor)
-    if (disabledColor != null) __obj.updateDynamic("disabledColor")(disabledColor)
-    if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor)
-    if (labelDisabledColor != null) __obj.updateDynamic("labelDisabledColor")(labelDisabledColor)
-    if (requiredColor != null) __obj.updateDynamic("requiredColor")(requiredColor)
+    if (boxColor != null) __obj.updateDynamic("boxColor")(boxColor.asInstanceOf[js.Any])
+    if (checkedColor != null) __obj.updateDynamic("checkedColor")(checkedColor.asInstanceOf[js.Any])
+    if (disabledColor != null) __obj.updateDynamic("disabledColor")(disabledColor.asInstanceOf[js.Any])
+    if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor.asInstanceOf[js.Any])
+    if (labelDisabledColor != null) __obj.updateDynamic("labelDisabledColor")(labelDisabledColor.asInstanceOf[js.Any])
+    if (requiredColor != null) __obj.updateDynamic("requiredColor")(requiredColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BoxColor]
   }
 }

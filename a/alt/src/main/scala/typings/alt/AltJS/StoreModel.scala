@@ -70,13 +70,13 @@ object StoreModel {
   ): StoreModel[S] = {
     val __obj = js.Dynamic.literal()
     if (afterEach != null) __obj.updateDynamic("afterEach")(js.Any.fromFunction2(afterEach))
-    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (beforeEach != null) __obj.updateDynamic("beforeEach")(js.Any.fromFunction2(beforeEach))
     if (bindAction != null) __obj.updateDynamic("bindAction")(js.Any.fromFunction2(bindAction))
     if (bindActions != null) __obj.updateDynamic("bindActions")(js.Any.fromFunction1(bindActions))
     if (bindListeners != null) __obj.updateDynamic("bindListeners")(js.Any.fromFunction1(bindListeners))
-    if (dispatcher != null) __obj.updateDynamic("dispatcher")(dispatcher)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (dispatcher != null) __obj.updateDynamic("dispatcher")(dispatcher.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (emitChange != null) __obj.updateDynamic("emitChange")(js.Any.fromFunction0(emitChange))
     if (exportAsync != null) __obj.updateDynamic("exportAsync")(js.Any.fromFunction1(exportAsync))
     if (exportPublicMethods != null) __obj.updateDynamic("exportPublicMethods")(js.Any.fromFunction1(exportPublicMethods))
@@ -90,8 +90,8 @@ object StoreModel {
     if (preventDefault != null) __obj.updateDynamic("preventDefault")(js.Any.fromFunction0(preventDefault))
     if (reduce != null) __obj.updateDynamic("reduce")(js.Any.fromFunction2(reduce))
     if (registerAsync != null) __obj.updateDynamic("registerAsync")(js.Any.fromFunction1(registerAsync))
-    if (setState != null) __obj.updateDynamic("setState")(setState)
-    if (waitFor != null) __obj.updateDynamic("waitFor")(waitFor)
+    if (setState != null) __obj.updateDynamic("setState")(setState.asInstanceOf[js.Any])
+    if (waitFor != null) __obj.updateDynamic("waitFor")(waitFor.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreModel[S]]
   }
 }

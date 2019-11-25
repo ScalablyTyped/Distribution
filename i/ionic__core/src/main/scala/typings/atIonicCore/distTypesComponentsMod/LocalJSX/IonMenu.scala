@@ -1,6 +1,5 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
-import typings.atIonicCore.distTypesInterfaceMod.Side
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -42,7 +41,9 @@ trait IonMenu extends js.Object {
   /**
     * Which side of the view the menu should be placed.
     */
-  var side: js.UndefOr[Side] = js.undefined
+  var side: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Side */ js.Any
+  ] = js.undefined
   /**
     * If `true`, swiping the menu is enabled.
     */
@@ -64,22 +65,22 @@ object IonMenu {
     onIonDidOpen: /* event */ CustomEvent[Unit] => Unit = null,
     onIonWillClose: /* event */ CustomEvent[Unit] => Unit = null,
     onIonWillOpen: /* event */ CustomEvent[Unit] => Unit = null,
-    side: Side = null,
+    side: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Side */ js.Any = null,
     swipeGesture: js.UndefOr[Boolean] = js.undefined,
     `type`: String = null
   ): IonMenu = {
     val __obj = js.Dynamic.literal()
-    if (contentId != null) __obj.updateDynamic("contentId")(contentId)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (contentId != null) __obj.updateDynamic("contentId")(contentId.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (maxEdgeStart != null) __obj.updateDynamic("maxEdgeStart")(maxEdgeStart.asInstanceOf[js.Any])
-    if (menuId != null) __obj.updateDynamic("menuId")(menuId)
+    if (menuId != null) __obj.updateDynamic("menuId")(menuId.asInstanceOf[js.Any])
     if (onIonDidClose != null) __obj.updateDynamic("onIonDidClose")(js.Any.fromFunction1(onIonDidClose))
     if (onIonDidOpen != null) __obj.updateDynamic("onIonDidOpen")(js.Any.fromFunction1(onIonDidOpen))
     if (onIonWillClose != null) __obj.updateDynamic("onIonWillClose")(js.Any.fromFunction1(onIonWillClose))
     if (onIonWillOpen != null) __obj.updateDynamic("onIonWillOpen")(js.Any.fromFunction1(onIonWillOpen))
-    if (side != null) __obj.updateDynamic("side")(side)
-    if (!js.isUndefined(swipeGesture)) __obj.updateDynamic("swipeGesture")(swipeGesture)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipeGesture)) __obj.updateDynamic("swipeGesture")(swipeGesture.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonMenu]
   }
 }

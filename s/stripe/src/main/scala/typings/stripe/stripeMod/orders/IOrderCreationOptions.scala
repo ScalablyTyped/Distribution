@@ -50,15 +50,15 @@ object IOrderCreationOptions {
     metadata: IOptionsMetadata = null,
     shipping: IShippingInformation = null
   ): IOrderCreationOptions = {
-    val __obj = js.Dynamic.literal(currency = currency)
-    if (coupon != null) __obj.updateDynamic("coupon")(coupon)
-    if (customer != null) __obj.updateDynamic("customer")(customer)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (shipping != null) __obj.updateDynamic("shipping")(shipping)
+    val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any])
+    if (coupon != null) __obj.updateDynamic("coupon")(coupon.asInstanceOf[js.Any])
+    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOrderCreationOptions]
   }
 }

@@ -13,7 +13,7 @@ trait ILOGIN extends js.Object {
 object ILOGIN {
   @scala.inline
   def apply(data: js.Object, user: SFSUser): ILOGIN = {
-    val __obj = js.Dynamic.literal(data = data, user = user)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ILOGIN]
   }

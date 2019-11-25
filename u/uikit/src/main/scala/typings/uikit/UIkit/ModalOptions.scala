@@ -52,11 +52,11 @@ object ModalOptions {
     modal: js.UndefOr[Boolean] = js.undefined
   ): ModalOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bgclose)) __obj.updateDynamic("bgclose")(bgclose)
-    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center)
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
+    if (!js.isUndefined(bgclose)) __obj.updateDynamic("bgclose")(bgclose.asInstanceOf[js.Any])
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
     if (minScrollHeight != null) __obj.updateDynamic("minScrollHeight")(minScrollHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalOptions]
   }
 }

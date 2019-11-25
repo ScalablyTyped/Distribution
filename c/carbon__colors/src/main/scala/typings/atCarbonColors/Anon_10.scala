@@ -32,16 +32,16 @@ object Anon_10 {
     `90`: String
   ): Anon_10 = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("10")(`10`)
-    __obj.updateDynamic("100")(`100`)
-    __obj.updateDynamic("20")(`20`)
-    __obj.updateDynamic("30")(`30`)
-    __obj.updateDynamic("40")(`40`)
-    __obj.updateDynamic("50")(`50`)
-    __obj.updateDynamic("60")(`60`)
-    __obj.updateDynamic("70")(`70`)
-    __obj.updateDynamic("80")(`80`)
-    __obj.updateDynamic("90")(`90`)
+    __obj.updateDynamic("10")(`10`.asInstanceOf[js.Any])
+    __obj.updateDynamic("100")(`100`.asInstanceOf[js.Any])
+    __obj.updateDynamic("20")(`20`.asInstanceOf[js.Any])
+    __obj.updateDynamic("30")(`30`.asInstanceOf[js.Any])
+    __obj.updateDynamic("40")(`40`.asInstanceOf[js.Any])
+    __obj.updateDynamic("50")(`50`.asInstanceOf[js.Any])
+    __obj.updateDynamic("60")(`60`.asInstanceOf[js.Any])
+    __obj.updateDynamic("70")(`70`.asInstanceOf[js.Any])
+    __obj.updateDynamic("80")(`80`.asInstanceOf[js.Any])
+    __obj.updateDynamic("90")(`90`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_10]
   }
 }

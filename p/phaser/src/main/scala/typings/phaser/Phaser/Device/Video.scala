@@ -42,7 +42,7 @@ trait Video extends js.Object {
 object Video {
   @scala.inline
   def apply(h264: Boolean, hls: Boolean, mp4: Boolean, ogg: Boolean, vp9: Boolean, webm: Boolean): Video = {
-    val __obj = js.Dynamic.literal(h264 = h264, hls = hls, mp4 = mp4, ogg = ogg, vp9 = vp9, webm = webm)
+    val __obj = js.Dynamic.literal(h264 = h264.asInstanceOf[js.Any], hls = hls.asInstanceOf[js.Any], mp4 = mp4.asInstanceOf[js.Any], ogg = ogg.asInstanceOf[js.Any], vp9 = vp9.asInstanceOf[js.Any], webm = webm.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Video]
   }

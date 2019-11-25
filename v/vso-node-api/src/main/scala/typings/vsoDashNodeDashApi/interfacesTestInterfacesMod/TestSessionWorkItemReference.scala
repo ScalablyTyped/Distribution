@@ -18,8 +18,8 @@ trait TestSessionWorkItemReference extends js.Object {
 object TestSessionWorkItemReference {
   @scala.inline
   def apply(id: Double, `type`: String): TestSessionWorkItemReference = {
-    val __obj = js.Dynamic.literal(id = id)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestSessionWorkItemReference]
   }
 }

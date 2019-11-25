@@ -41,12 +41,12 @@ object Anon_Fields {
     screenshot: js.UndefOr[Boolean] = js.undefined,
     stategy: String = null
   ): Anon_Fields = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (rule != null) __obj.updateDynamic("rule")(rule)
-    if (!js.isUndefined(screenshot)) __obj.updateDynamic("screenshot")(screenshot)
-    if (stategy != null) __obj.updateDynamic("stategy")(stategy)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
+    if (!js.isUndefined(screenshot)) __obj.updateDynamic("screenshot")(screenshot.asInstanceOf[js.Any])
+    if (stategy != null) __obj.updateDynamic("stategy")(stategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Fields]
   }
 }

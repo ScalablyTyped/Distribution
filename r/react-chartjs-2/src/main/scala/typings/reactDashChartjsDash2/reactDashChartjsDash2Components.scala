@@ -1,7 +1,6 @@
 package typings.reactDashChartjsDash2
 
 import typings.react.reactMod.ComponentType
-import typings.reactDashChartjsDash2.reactDashChartjsDash2Mod.ChartComponentProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +23,7 @@ object reactDashChartjsDash2Components extends reactDashChartjsDash2Props {
   @scala.inline
   def Radar: ComponentType[RadarProps] = js.constructorOf[typings.reactDashChartjsDash2.reactDashChartjsDash2Mod.Radar].asInstanceOf[typings.react.reactMod.ComponentType[RadarProps]]
   @scala.inline
-  def ReactDashChartjsDash2[P /* <: ChartComponentProps */]: ComponentType[P] = js.constructorOf[typings.reactDashChartjsDash2.reactDashChartjsDash2Mod.default[P]].asInstanceOf[typings.react.reactMod.ComponentType[P]]
+  def ReactDashChartjsDash2: ComponentType[ReactDashChartjsDash2Props] = js.constructorOf[typings.reactDashChartjsDash2.reactDashChartjsDash2Mod.default[typings.reactDashChartjsDash2.reactDashChartjsDash2Mod.ChartComponentProps]].asInstanceOf[typings.react.reactMod.ComponentType[ReactDashChartjsDash2Props]]
   @scala.inline
   def Scatter: ComponentType[ScatterProps] = js.constructorOf[typings.reactDashChartjsDash2.reactDashChartjsDash2Mod.Scatter].asInstanceOf[typings.react.reactMod.ComponentType[ScatterProps]]
 }

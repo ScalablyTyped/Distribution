@@ -12,8 +12,8 @@ trait Anon_Coordinates extends js.Object {
 object Anon_Coordinates {
   @scala.inline
   def apply(coordinates: js.Array[_], `type`: String): Anon_Coordinates = {
-    val __obj = js.Dynamic.literal(coordinates = coordinates)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Coordinates]
   }
 }

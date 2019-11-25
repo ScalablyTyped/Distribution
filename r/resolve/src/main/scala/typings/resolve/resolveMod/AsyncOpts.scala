@@ -26,15 +26,15 @@ object AsyncOpts {
     readFile: (/* file */ String, /* cb */ readFileCallback) => Unit = null
   ): AsyncOpts = {
     val __obj = js.Dynamic.literal()
-    if (basedir != null) __obj.updateDynamic("basedir")(basedir)
+    if (basedir != null) __obj.updateDynamic("basedir")(basedir.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (isFile != null) __obj.updateDynamic("isFile")(js.Any.fromFunction2(isFile))
     if (moduleDirectory != null) __obj.updateDynamic("moduleDirectory")(moduleDirectory.asInstanceOf[js.Any])
-    if (`package` != null) __obj.updateDynamic("package")(`package`)
+    if (`package` != null) __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
     if (packageFilter != null) __obj.updateDynamic("packageFilter")(js.Any.fromFunction2(packageFilter))
     if (pathFilter != null) __obj.updateDynamic("pathFilter")(js.Any.fromFunction3(pathFilter))
     if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveSymlinks)) __obj.updateDynamic("preserveSymlinks")(preserveSymlinks)
+    if (!js.isUndefined(preserveSymlinks)) __obj.updateDynamic("preserveSymlinks")(preserveSymlinks.asInstanceOf[js.Any])
     if (readFile != null) __obj.updateDynamic("readFile")(js.Any.fromFunction2(readFile))
     __obj.asInstanceOf[AsyncOpts]
   }

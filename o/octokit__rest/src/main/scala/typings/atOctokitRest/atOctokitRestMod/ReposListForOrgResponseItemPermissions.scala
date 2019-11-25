@@ -13,7 +13,7 @@ trait ReposListForOrgResponseItemPermissions extends js.Object {
 object ReposListForOrgResponseItemPermissions {
   @scala.inline
   def apply(admin: Boolean, pull: Boolean, push: Boolean): ReposListForOrgResponseItemPermissions = {
-    val __obj = js.Dynamic.literal(admin = admin, pull = pull, push = push)
+    val __obj = js.Dynamic.literal(admin = admin.asInstanceOf[js.Any], pull = pull.asInstanceOf[js.Any], push = push.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposListForOrgResponseItemPermissions]
   }

@@ -24,15 +24,15 @@ object JWK {
     `x5t#S256`: String = null,
     x5u: String = null
   ): JWK = {
-    val __obj = js.Dynamic.literal(kty = kty)
-    if (alg != null) __obj.updateDynamic("alg")(alg)
-    if (key_ops != null) __obj.updateDynamic("key_ops")(key_ops)
-    if (kid != null) __obj.updateDynamic("kid")(kid)
-    if (use != null) __obj.updateDynamic("use")(use)
-    if (x5c != null) __obj.updateDynamic("x5c")(x5c)
-    if (x5t != null) __obj.updateDynamic("x5t")(x5t)
-    if (`x5t#S256` != null) __obj.updateDynamic("x5t#S256")(`x5t#S256`)
-    if (x5u != null) __obj.updateDynamic("x5u")(x5u)
+    val __obj = js.Dynamic.literal(kty = kty.asInstanceOf[js.Any])
+    if (alg != null) __obj.updateDynamic("alg")(alg.asInstanceOf[js.Any])
+    if (key_ops != null) __obj.updateDynamic("key_ops")(key_ops.asInstanceOf[js.Any])
+    if (kid != null) __obj.updateDynamic("kid")(kid.asInstanceOf[js.Any])
+    if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
+    if (x5c != null) __obj.updateDynamic("x5c")(x5c.asInstanceOf[js.Any])
+    if (x5t != null) __obj.updateDynamic("x5t")(x5t.asInstanceOf[js.Any])
+    if (`x5t#S256` != null) __obj.updateDynamic("x5t#S256")(`x5t#S256`.asInstanceOf[js.Any])
+    if (x5u != null) __obj.updateDynamic("x5u")(x5u.asInstanceOf[js.Any])
     __obj.asInstanceOf[JWK]
   }
 }

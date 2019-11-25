@@ -41,18 +41,18 @@ object AbbreviatedVersion {
     optionalDependencies: StringDictionary[String] = null,
     peerDependencies: StringDictionary[String] = null
   ): AbbreviatedVersion = {
-    val __obj = js.Dynamic.literal(dist = dist, name = name, version = version)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(_hasShrinkwrap)) __obj.updateDynamic("_hasShrinkwrap")(_hasShrinkwrap)
-    if (bin != null) __obj.updateDynamic("bin")(bin)
-    if (bundleDependencies != null) __obj.updateDynamic("bundleDependencies")(bundleDependencies)
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
-    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated)
-    if (devDependencies != null) __obj.updateDynamic("devDependencies")(devDependencies)
-    if (directories != null) __obj.updateDynamic("directories")(directories)
-    if (engines != null) __obj.updateDynamic("engines")(engines)
-    if (optionalDependencies != null) __obj.updateDynamic("optionalDependencies")(optionalDependencies)
-    if (peerDependencies != null) __obj.updateDynamic("peerDependencies")(peerDependencies)
+    val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(_hasShrinkwrap)) __obj.updateDynamic("_hasShrinkwrap")(_hasShrinkwrap.asInstanceOf[js.Any])
+    if (bin != null) __obj.updateDynamic("bin")(bin.asInstanceOf[js.Any])
+    if (bundleDependencies != null) __obj.updateDynamic("bundleDependencies")(bundleDependencies.asInstanceOf[js.Any])
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
+    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (devDependencies != null) __obj.updateDynamic("devDependencies")(devDependencies.asInstanceOf[js.Any])
+    if (directories != null) __obj.updateDynamic("directories")(directories.asInstanceOf[js.Any])
+    if (engines != null) __obj.updateDynamic("engines")(engines.asInstanceOf[js.Any])
+    if (optionalDependencies != null) __obj.updateDynamic("optionalDependencies")(optionalDependencies.asInstanceOf[js.Any])
+    if (peerDependencies != null) __obj.updateDynamic("peerDependencies")(peerDependencies.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbbreviatedVersion]
   }
 }

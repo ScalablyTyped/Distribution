@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UrlSyncApi extends js.Object {
   /** See: [[UrlService.deferIntercept]] */ @JSName("deferIntercept")
-  var deferIntercept_Original: (/* import warning: ImportType.apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['deferIntercept'] */ js.Any) with (js.Function1[/* defer */ js.UndefOr[Boolean], Unit]) = js.native
+  var deferIntercept_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['deferIntercept'] */ js.Any) with (js.Function1[/* defer */ js.UndefOr[Boolean], Unit]) = js.native
   /** See: [[UrlService.listen]] */ @JSName("listen")
-  var listen_Original: (/* import warning: ImportType.apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['listen'] */ js.Any) with (js.Function1[/* enabled */ js.UndefOr[Boolean], js.Function]) = js.native
+  var listen_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['listen'] */ js.Any) with (js.Function1[/* enabled */ js.UndefOr[Boolean], js.Function]) = js.native
   /** See: [[UrlService.sync]] */ @JSName("sync")
-  var sync_Original: (/* import warning: ImportType.apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['sync'] */ js.Any) with (js.Function1[/* evt */ js.UndefOr[js.Any], Unit]) = js.native
+  var sync_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['sync'] */ js.Any) with (js.Function1[/* evt */ js.UndefOr[js.Any], Unit]) = js.native
   /** See: [[UrlService.deferIntercept]] */ def deferIntercept(): Unit = js.native
   def deferIntercept(defer: Boolean): Unit = js.native
   /** See: [[UrlService.listen]] */ def listen(): js.Function = js.native

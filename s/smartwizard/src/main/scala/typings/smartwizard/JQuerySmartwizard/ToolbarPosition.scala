@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait ToolbarPosition extends js.Object
 
+object ToolbarPosition {
+  @scala.inline
+  def both: typings.smartwizard.smartwizardStrings.both = this.cast("both")
+  @scala.inline
+  def bottom: typings.smartwizard.smartwizardStrings.bottom = this.cast("bottom")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def none: typings.smartwizard.smartwizardStrings.none = this.cast("none")
+  @scala.inline
+  def top: typings.smartwizard.smartwizardStrings.top = this.cast("top")
+}
+

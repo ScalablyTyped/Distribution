@@ -22,8 +22,8 @@ trait GetVaultAccessPolicyOutput extends _OutputTypesUnion {
 object GetVaultAccessPolicyOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, policy: _UnmarshalledVaultAccessPolicy = null): GetVaultAccessPolicyOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (policy != null) __obj.updateDynamic("policy")(policy)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetVaultAccessPolicyOutput]
   }
 }

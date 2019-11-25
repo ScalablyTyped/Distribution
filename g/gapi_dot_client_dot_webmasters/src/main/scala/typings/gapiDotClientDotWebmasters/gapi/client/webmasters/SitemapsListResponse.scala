@@ -13,7 +13,7 @@ object SitemapsListResponse {
   @scala.inline
   def apply(sitemap: js.Array[WmxSitemap] = null): SitemapsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (sitemap != null) __obj.updateDynamic("sitemap")(sitemap)
+    if (sitemap != null) __obj.updateDynamic("sitemap")(sitemap.asInstanceOf[js.Any])
     __obj.asInstanceOf[SitemapsListResponse]
   }
 }

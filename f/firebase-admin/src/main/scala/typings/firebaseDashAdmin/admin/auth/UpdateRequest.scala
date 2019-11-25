@@ -51,13 +51,13 @@ object UpdateRequest {
     photoURL: String = null
   ): UpdateRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
-    if (photoURL != null) __obj.updateDynamic("photoURL")(photoURL)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
+    if (photoURL != null) __obj.updateDynamic("photoURL")(photoURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRequest]
   }
 }

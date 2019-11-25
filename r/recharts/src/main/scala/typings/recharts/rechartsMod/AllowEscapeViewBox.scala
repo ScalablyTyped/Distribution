@@ -4,17 +4,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AllowEscapeViewBox extends js.Object {
-  var x: js.UndefOr[Boolean] = js.undefined
-  var y: js.UndefOr[Boolean] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.recharts.Anon_XBoolean
+  - typings.recharts.Anon_Y
+  - typings.recharts.Anon_XY
+*/
+trait AllowEscapeViewBox extends js.Object
 
 object AllowEscapeViewBox {
   @scala.inline
-  def apply(x: js.UndefOr[Boolean] = js.undefined, y: js.UndefOr[Boolean] = js.undefined): AllowEscapeViewBox = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x)
-    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y)
+  def Anon_XBoolean(x: Boolean): AllowEscapeViewBox = {
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[AllowEscapeViewBox]
+  }
+  @scala.inline
+  def Anon_Y(y: Boolean): AllowEscapeViewBox = {
+    val __obj = js.Dynamic.literal(y = y.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[AllowEscapeViewBox]
+  }
+  @scala.inline
+  def Anon_XY(x: Boolean, y: Boolean): AllowEscapeViewBox = {
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[AllowEscapeViewBox]
   }
 }

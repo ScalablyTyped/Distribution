@@ -40,10 +40,10 @@ object IStateOptions {
     reload: Boolean | String | typings.angularDashUiDashRouter.angularDashUiDashRouterMod.angularMod.ui.IState = null
   ): IStateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify)
-    if (relative != null) __obj.updateDynamic("relative")(relative)
+    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify.asInstanceOf[js.Any])
+    if (relative != null) __obj.updateDynamic("relative")(relative.asInstanceOf[js.Any])
     if (reload != null) __obj.updateDynamic("reload")(reload.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStateOptions]
   }

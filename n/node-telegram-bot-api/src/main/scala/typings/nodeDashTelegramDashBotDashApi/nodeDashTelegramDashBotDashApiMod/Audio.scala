@@ -23,12 +23,12 @@ object Audio {
     thumb: PhotoSize = null,
     title: String = null
   ): Audio = {
-    val __obj = js.Dynamic.literal(duration = duration, file_id = file_id)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], file_id = file_id.asInstanceOf[js.Any])
     if (file_size != null) __obj.updateDynamic("file_size")(file_size.asInstanceOf[js.Any])
-    if (mime_type != null) __obj.updateDynamic("mime_type")(mime_type)
-    if (performer != null) __obj.updateDynamic("performer")(performer)
-    if (thumb != null) __obj.updateDynamic("thumb")(thumb)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (mime_type != null) __obj.updateDynamic("mime_type")(mime_type.asInstanceOf[js.Any])
+    if (performer != null) __obj.updateDynamic("performer")(performer.asInstanceOf[js.Any])
+    if (thumb != null) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Audio]
   }
 }

@@ -27,13 +27,13 @@ object MessageOptions {
     timestamp: Date = null
   ): MessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (appName != null) __obj.updateDynamic("appName")(appName)
-    if (facility != null) __obj.updateDynamic("facility")(facility)
-    if (msgid != null) __obj.updateDynamic("msgid")(msgid)
-    if (!js.isUndefined(rfc3164)) __obj.updateDynamic("rfc3164")(rfc3164)
-    if (severity != null) __obj.updateDynamic("severity")(severity)
-    if (syslogHostname != null) __obj.updateDynamic("syslogHostname")(syslogHostname)
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    if (appName != null) __obj.updateDynamic("appName")(appName.asInstanceOf[js.Any])
+    if (facility != null) __obj.updateDynamic("facility")(facility.asInstanceOf[js.Any])
+    if (msgid != null) __obj.updateDynamic("msgid")(msgid.asInstanceOf[js.Any])
+    if (!js.isUndefined(rfc3164)) __obj.updateDynamic("rfc3164")(rfc3164.asInstanceOf[js.Any])
+    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
+    if (syslogHostname != null) __obj.updateDynamic("syslogHostname")(syslogHostname.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageOptions]
   }
 }

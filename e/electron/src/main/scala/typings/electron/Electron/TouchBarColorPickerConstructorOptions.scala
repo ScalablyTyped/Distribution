@@ -27,9 +27,9 @@ object TouchBarColorPickerConstructorOptions {
     selectedColor: String = null
   ): TouchBarColorPickerConstructorOptions = {
     val __obj = js.Dynamic.literal()
-    if (availableColors != null) __obj.updateDynamic("availableColors")(availableColors)
+    if (availableColors != null) __obj.updateDynamic("availableColors")(availableColors.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (selectedColor != null) __obj.updateDynamic("selectedColor")(selectedColor)
+    if (selectedColor != null) __obj.updateDynamic("selectedColor")(selectedColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchBarColorPickerConstructorOptions]
   }
 }

@@ -12,8 +12,8 @@ trait IDependencyTree extends js.Object {
 object IDependencyTree {
   @scala.inline
   def apply(name: String, dependencies: js.Array[IDependencyTree] = null): IDependencyTree = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDependencyTree]
   }
 }

@@ -15,7 +15,7 @@ trait Anon_ActionName extends js.Object {
 object Anon_ActionName {
   @scala.inline
   def apply(actionName: String, ros: Ros, serverName: String, timeout: Double): Anon_ActionName = {
-    val __obj = js.Dynamic.literal(actionName = actionName, ros = ros, serverName = serverName, timeout = timeout)
+    val __obj = js.Dynamic.literal(actionName = actionName.asInstanceOf[js.Any], ros = ros.asInstanceOf[js.Any], serverName = serverName.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ActionName]
   }

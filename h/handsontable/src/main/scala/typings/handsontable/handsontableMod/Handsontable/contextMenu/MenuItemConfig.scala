@@ -67,15 +67,15 @@ object MenuItemConfig {
     submenu: SubmenuConfig = null
   ): MenuItemConfig = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
-    if (!js.isUndefined(disableSelection)) __obj.updateDynamic("disableSelection")(disableSelection)
+    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableSelection)) __obj.updateDynamic("disableSelection")(disableSelection.asInstanceOf[js.Any])
     if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (hidden != null) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCommand)) __obj.updateDynamic("isCommand")(isCommand)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (!js.isUndefined(isCommand)) __obj.updateDynamic("isCommand")(isCommand.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
-    if (submenu != null) __obj.updateDynamic("submenu")(submenu)
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
+    if (submenu != null) __obj.updateDynamic("submenu")(submenu.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuItemConfig]
   }
 }

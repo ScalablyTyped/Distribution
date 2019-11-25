@@ -13,7 +13,7 @@ object InstancesExportRequest {
   @scala.inline
   def apply(exportContext: ExportContext = null): InstancesExportRequest = {
     val __obj = js.Dynamic.literal()
-    if (exportContext != null) __obj.updateDynamic("exportContext")(exportContext)
+    if (exportContext != null) __obj.updateDynamic("exportContext")(exportContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstancesExportRequest]
   }
 }

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.TopLevel
 import typings.videoDotJs.videoDotJsMod.videojs.AudioTrackOptions
-import typings.videoDotJs.videoDotJsMod.videojs.Track
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +32,8 @@ import scala.scalajs.js.annotation._
   *        If this track is the one that is currently playing. If this track is part of
   *        an {@link AudioTrackList}, only one {@link AudioTrack} will be enabled.
   */
-class ^ () extends Track {
+class ^ ()
+  extends typings.videoDotJs.videoDotJsMod.videojs.Track {
   def this(options: AudioTrackOptions) = this()
 }
 
@@ -63,6 +63,6 @@ object ^
   *        If this track is the one that is currently playing. If this track is part of
   *        an {@link AudioTrackList}, only one {@link AudioTrack} will be enabled.
   */
-Instantiable0[Track]) with (Instantiable1[/* options */ AudioTrackOptions, Track])
+Instantiable0[typings.videoDotJs.videoDotJsMod.videojs.Track]) with (Instantiable1[/* options */ AudioTrackOptions, typings.videoDotJs.videoDotJsMod.videojs.Track])
     ]
 

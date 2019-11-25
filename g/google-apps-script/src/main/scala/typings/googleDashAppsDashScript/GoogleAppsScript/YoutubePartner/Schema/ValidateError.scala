@@ -24,12 +24,12 @@ object ValidateError {
     severity: String = null
   ): ValidateError = {
     val __obj = js.Dynamic.literal()
-    if (columnName != null) __obj.updateDynamic("columnName")(columnName)
+    if (columnName != null) __obj.updateDynamic("columnName")(columnName.asInstanceOf[js.Any])
     if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
     if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (messageCode != null) __obj.updateDynamic("messageCode")(messageCode.asInstanceOf[js.Any])
-    if (severity != null) __obj.updateDynamic("severity")(severity)
+    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidateError]
   }
 }

@@ -252,7 +252,7 @@ object ionicStrings {
   sealed trait wp8 extends KnownPlatform
   
   @js.native
-  sealed trait yarn extends NpmClient
+  sealed trait yarn_ extends NpmClient
   
   @scala.inline
   def `0DOT0DOT0DOT0`: `0DOT0DOT0DOT0` = "0.0.0.0".asInstanceOf[`0DOT0DOT0DOT0`]
@@ -409,6 +409,6 @@ object ionicStrings {
   @scala.inline
   def wp8: wp8 = "wp8".asInstanceOf[wp8]
   @scala.inline
-  def yarn: yarn = "yarn".asInstanceOf[yarn]
+  def yarn_ : yarn_ = "yarn".asInstanceOf[yarn_]
 }
 

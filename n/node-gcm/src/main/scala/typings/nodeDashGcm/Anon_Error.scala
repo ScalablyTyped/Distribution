@@ -14,9 +14,9 @@ object Anon_Error {
   @scala.inline
   def apply(error: String = null, message_id: String = null, registration_id: String = null): Anon_Error = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (message_id != null) __obj.updateDynamic("message_id")(message_id)
-    if (registration_id != null) __obj.updateDynamic("registration_id")(registration_id)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (message_id != null) __obj.updateDynamic("message_id")(message_id.asInstanceOf[js.Any])
+    if (registration_id != null) __obj.updateDynamic("registration_id")(registration_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Error]
   }
 }

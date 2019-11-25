@@ -13,8 +13,8 @@ object Anon_Define {
   @scala.inline
   def apply(define: String = null, id: String = null): Anon_Define = {
     val __obj = js.Dynamic.literal()
-    if (define != null) __obj.updateDynamic("define")(define)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (define != null) __obj.updateDynamic("define")(define.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Define]
   }
 }

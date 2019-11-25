@@ -13,8 +13,8 @@ object Anon_Parameter {
   @scala.inline
   def apply(parameter: String = null, pointer: String = null): Anon_Parameter = {
     val __obj = js.Dynamic.literal()
-    if (parameter != null) __obj.updateDynamic("parameter")(parameter)
-    if (pointer != null) __obj.updateDynamic("pointer")(pointer)
+    if (parameter != null) __obj.updateDynamic("parameter")(parameter.asInstanceOf[js.Any])
+    if (pointer != null) __obj.updateDynamic("pointer")(pointer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Parameter]
   }
 }

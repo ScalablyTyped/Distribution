@@ -20,10 +20,10 @@ object PDFViewerMessagesToolbar {
     pager: PDFViewerMessagesToolbarPager = null
   ): PDFViewerMessagesToolbar = {
     val __obj = js.Dynamic.literal()
-    if (download != null) __obj.updateDynamic("download")(download)
-    if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs)
-    if (open != null) __obj.updateDynamic("open")(open)
-    if (pager != null) __obj.updateDynamic("pager")(pager)
+    if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
+    if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs.asInstanceOf[js.Any])
+    if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (pager != null) __obj.updateDynamic("pager")(pager.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerMessagesToolbar]
   }
 }

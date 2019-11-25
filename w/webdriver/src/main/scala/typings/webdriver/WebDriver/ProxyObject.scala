@@ -38,18 +38,18 @@ object ProxyObject {
     sslProxyPort: Int | Double = null
   ): ProxyObject = {
     val __obj = js.Dynamic.literal()
-    if (ftpProxy != null) __obj.updateDynamic("ftpProxy")(ftpProxy)
+    if (ftpProxy != null) __obj.updateDynamic("ftpProxy")(ftpProxy.asInstanceOf[js.Any])
     if (ftpProxyPort != null) __obj.updateDynamic("ftpProxyPort")(ftpProxyPort.asInstanceOf[js.Any])
-    if (httpProxy != null) __obj.updateDynamic("httpProxy")(httpProxy)
+    if (httpProxy != null) __obj.updateDynamic("httpProxy")(httpProxy.asInstanceOf[js.Any])
     if (httpProxyPort != null) __obj.updateDynamic("httpProxyPort")(httpProxyPort.asInstanceOf[js.Any])
-    if (proxyAutoconfigUrl != null) __obj.updateDynamic("proxyAutoconfigUrl")(proxyAutoconfigUrl)
-    if (proxyType != null) __obj.updateDynamic("proxyType")(proxyType)
-    if (socksPassword != null) __obj.updateDynamic("socksPassword")(socksPassword)
-    if (socksProxy != null) __obj.updateDynamic("socksProxy")(socksProxy)
+    if (proxyAutoconfigUrl != null) __obj.updateDynamic("proxyAutoconfigUrl")(proxyAutoconfigUrl.asInstanceOf[js.Any])
+    if (proxyType != null) __obj.updateDynamic("proxyType")(proxyType.asInstanceOf[js.Any])
+    if (socksPassword != null) __obj.updateDynamic("socksPassword")(socksPassword.asInstanceOf[js.Any])
+    if (socksProxy != null) __obj.updateDynamic("socksProxy")(socksProxy.asInstanceOf[js.Any])
     if (socksProxyPort != null) __obj.updateDynamic("socksProxyPort")(socksProxyPort.asInstanceOf[js.Any])
-    if (socksUsername != null) __obj.updateDynamic("socksUsername")(socksUsername)
-    if (socksVersion != null) __obj.updateDynamic("socksVersion")(socksVersion)
-    if (sslProxy != null) __obj.updateDynamic("sslProxy")(sslProxy)
+    if (socksUsername != null) __obj.updateDynamic("socksUsername")(socksUsername.asInstanceOf[js.Any])
+    if (socksVersion != null) __obj.updateDynamic("socksVersion")(socksVersion.asInstanceOf[js.Any])
+    if (sslProxy != null) __obj.updateDynamic("sslProxy")(sslProxy.asInstanceOf[js.Any])
     if (sslProxyPort != null) __obj.updateDynamic("sslProxyPort")(sslProxyPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyObject]
   }

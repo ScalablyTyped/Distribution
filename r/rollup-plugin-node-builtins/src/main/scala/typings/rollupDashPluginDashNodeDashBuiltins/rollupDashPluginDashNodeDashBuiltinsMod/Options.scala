@@ -13,8 +13,8 @@ object Options {
   @scala.inline
   def apply(crypto: js.UndefOr[Boolean] = js.undefined, fs: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(crypto)) __obj.updateDynamic("crypto")(crypto)
-    if (!js.isUndefined(fs)) __obj.updateDynamic("fs")(fs)
+    if (!js.isUndefined(crypto)) __obj.updateDynamic("crypto")(crypto.asInstanceOf[js.Any])
+    if (!js.isUndefined(fs)) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

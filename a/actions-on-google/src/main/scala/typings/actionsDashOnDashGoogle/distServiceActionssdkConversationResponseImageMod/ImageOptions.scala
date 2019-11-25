@@ -30,7 +30,7 @@ trait ImageOptions extends js.Object {
 object ImageOptions {
   @scala.inline
   def apply(alt: String, url: String, height: Int | Double = null, width: Int | Double = null): ImageOptions = {
-    val __obj = js.Dynamic.literal(alt = alt, url = url)
+    val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageOptions]

@@ -36,11 +36,11 @@ object DocumentStatus {
     filename: String = null,
     sha1: String = null
   ): DocumentStatus = {
-    val __obj = js.Dynamic.literal(document_id = document_id, notices = notices, status = status, status_description = status_description)
-    if (configuration_id != null) __obj.updateDynamic("configuration_id")(configuration_id)
-    if (file_type != null) __obj.updateDynamic("file_type")(file_type)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (sha1 != null) __obj.updateDynamic("sha1")(sha1)
+    val __obj = js.Dynamic.literal(document_id = document_id.asInstanceOf[js.Any], notices = notices.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], status_description = status_description.asInstanceOf[js.Any])
+    if (configuration_id != null) __obj.updateDynamic("configuration_id")(configuration_id.asInstanceOf[js.Any])
+    if (file_type != null) __obj.updateDynamic("file_type")(file_type.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (sha1 != null) __obj.updateDynamic("sha1")(sha1.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentStatus]
   }
 }

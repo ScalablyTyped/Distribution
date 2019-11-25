@@ -23,7 +23,7 @@ trait INxAttrExprDef extends js.Object {
 object INxAttrExprDef {
   @scala.inline
   def apply(qExpression: String, qLibraryId_ : String): INxAttrExprDef = {
-    val __obj = js.Dynamic.literal(qExpression = qExpression, qLibraryId_ = qLibraryId_)
+    val __obj = js.Dynamic.literal(qExpression = qExpression.asInstanceOf[js.Any], qLibraryId_ = qLibraryId_.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INxAttrExprDef]
   }

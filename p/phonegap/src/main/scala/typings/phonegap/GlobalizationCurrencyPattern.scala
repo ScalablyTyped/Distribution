@@ -23,7 +23,7 @@ object GlobalizationCurrencyPattern {
     pattern: String,
     rounding: Double
   ): GlobalizationCurrencyPattern = {
-    val __obj = js.Dynamic.literal(code = code, decimal = decimal, fraction = fraction, grouping = grouping, pattern = pattern, rounding = rounding)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], decimal = decimal.asInstanceOf[js.Any], fraction = fraction.asInstanceOf[js.Any], grouping = grouping.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], rounding = rounding.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GlobalizationCurrencyPattern]
   }

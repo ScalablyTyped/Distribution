@@ -11,7 +11,7 @@ trait WantList extends js.Object {
 object WantList {
   @scala.inline
   def apply(Keys: js.Array[WantListItem]): WantList = {
-    val __obj = js.Dynamic.literal(Keys = Keys)
+    val __obj = js.Dynamic.literal(Keys = Keys.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WantList]
   }

@@ -21,9 +21,9 @@ object BottomBarOptions {
   @scala.inline
   def apply(bottomBar: String = null, input: ReadStream = null, output: WriteStream = null): BottomBarOptions = {
     val __obj = js.Dynamic.literal()
-    if (bottomBar != null) __obj.updateDynamic("bottomBar")(bottomBar)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (output != null) __obj.updateDynamic("output")(output)
+    if (bottomBar != null) __obj.updateDynamic("bottomBar")(bottomBar.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     __obj.asInstanceOf[BottomBarOptions]
   }
 }

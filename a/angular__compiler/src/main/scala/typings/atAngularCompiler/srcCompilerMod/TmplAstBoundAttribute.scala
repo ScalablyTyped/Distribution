@@ -1,6 +1,7 @@
 package typings.atAngularCompiler.srcCompilerMod
 
 import typings.atAngularCompiler.srcCoreMod.SecurityContext
+import typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType
 import typings.atAngularCompiler.srcI18nI18nUnderscoreAstMod.Message
 import typings.atAngularCompiler.srcI18nI18nUnderscoreAstMod.Node
 import typings.atAngularCompiler.srcRender3R3UnderscoreAstMod.BoundAttribute
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation._
 class TmplAstBoundAttribute protected () extends BoundAttribute {
   def this(
     name: String,
-    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    `type`: BindingType,
     securityContext: SecurityContext,
     value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     unit: String,
@@ -21,7 +22,7 @@ class TmplAstBoundAttribute protected () extends BoundAttribute {
   ) = this()
   def this(
     name: String,
-    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    `type`: BindingType,
     securityContext: SecurityContext,
     value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     unit: Null,
@@ -29,7 +30,7 @@ class TmplAstBoundAttribute protected () extends BoundAttribute {
   ) = this()
   def this(
     name: String,
-    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    `type`: BindingType,
     securityContext: SecurityContext,
     value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     unit: String,
@@ -38,7 +39,7 @@ class TmplAstBoundAttribute protected () extends BoundAttribute {
   ) = this()
   def this(
     name: String,
-    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    `type`: BindingType,
     securityContext: SecurityContext,
     value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     unit: Null,
@@ -47,7 +48,7 @@ class TmplAstBoundAttribute protected () extends BoundAttribute {
   ) = this()
   def this(
     name: String,
-    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    `type`: BindingType,
     securityContext: SecurityContext,
     value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     unit: String,
@@ -57,7 +58,7 @@ class TmplAstBoundAttribute protected () extends BoundAttribute {
   ) = this()
   def this(
     name: String,
-    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    `type`: BindingType,
     securityContext: SecurityContext,
     value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     unit: String,
@@ -67,7 +68,7 @@ class TmplAstBoundAttribute protected () extends BoundAttribute {
   ) = this()
   def this(
     name: String,
-    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    `type`: BindingType,
     securityContext: SecurityContext,
     value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     unit: String,
@@ -77,7 +78,7 @@ class TmplAstBoundAttribute protected () extends BoundAttribute {
   ) = this()
   def this(
     name: String,
-    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    `type`: BindingType,
     securityContext: SecurityContext,
     value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     unit: String,
@@ -87,7 +88,7 @@ class TmplAstBoundAttribute protected () extends BoundAttribute {
   ) = this()
   def this(
     name: String,
-    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    `type`: BindingType,
     securityContext: SecurityContext,
     value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     unit: Null,
@@ -97,7 +98,7 @@ class TmplAstBoundAttribute protected () extends BoundAttribute {
   ) = this()
   def this(
     name: String,
-    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    `type`: BindingType,
     securityContext: SecurityContext,
     value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     unit: Null,
@@ -107,7 +108,7 @@ class TmplAstBoundAttribute protected () extends BoundAttribute {
   ) = this()
   def this(
     name: String,
-    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    `type`: BindingType,
     securityContext: SecurityContext,
     value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     unit: Null,
@@ -117,7 +118,7 @@ class TmplAstBoundAttribute protected () extends BoundAttribute {
   ) = this()
   def this(
     name: String,
-    `type`: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.BindingType,
+    `type`: BindingType,
     securityContext: SecurityContext,
     value: typings.atAngularCompiler.srcExpressionUnderscoreParserAstMod.AST,
     unit: Null,

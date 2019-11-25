@@ -26,9 +26,9 @@ object FoundNetworkProperties {
     LongName: String = null,
     ShortName: String = null
   ): FoundNetworkProperties = {
-    val __obj = js.Dynamic.literal(NetworkId = NetworkId, Status = Status, Technology = Technology)
-    if (LongName != null) __obj.updateDynamic("LongName")(LongName)
-    if (ShortName != null) __obj.updateDynamic("ShortName")(ShortName)
+    val __obj = js.Dynamic.literal(NetworkId = NetworkId.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Technology = Technology.asInstanceOf[js.Any])
+    if (LongName != null) __obj.updateDynamic("LongName")(LongName.asInstanceOf[js.Any])
+    if (ShortName != null) __obj.updateDynamic("ShortName")(ShortName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FoundNetworkProperties]
   }
 }

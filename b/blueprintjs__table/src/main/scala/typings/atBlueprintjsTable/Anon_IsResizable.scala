@@ -12,7 +12,7 @@ trait Anon_IsResizable extends js.Object {
 object Anon_IsResizable {
   @scala.inline
   def apply(isResizable: Boolean, minSize: Double): Anon_IsResizable = {
-    val __obj = js.Dynamic.literal(isResizable = isResizable, minSize = minSize)
+    val __obj = js.Dynamic.literal(isResizable = isResizable.asInstanceOf[js.Any], minSize = minSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsResizable]
   }

@@ -19,3 +19,30 @@ import scala.scalajs.js.annotation._
 */
 trait AttributeType extends js.Object
 
+object AttributeType {
+  @scala.inline
+  def array: typings.waterline.waterlineStrings.array = this.cast("array")
+  @scala.inline
+  def binary: typings.waterline.waterlineStrings.binary = this.cast("binary")
+  @scala.inline
+  def boolean: typings.waterline.waterlineStrings.boolean = this.cast("boolean")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def date: typings.waterline.waterlineStrings.date = this.cast("date")
+  @scala.inline
+  def datetime: typings.waterline.waterlineStrings.datetime = this.cast("datetime")
+  @scala.inline
+  def float: typings.waterline.waterlineStrings.float = this.cast("float")
+  @scala.inline
+  def integer: typings.waterline.waterlineStrings.integer = this.cast("integer")
+  @scala.inline
+  def json: typings.waterline.waterlineStrings.json = this.cast("json")
+  @scala.inline
+  def string: typings.waterline.waterlineStrings.string = this.cast("string")
+  @scala.inline
+  def text: typings.waterline.waterlineStrings.text = this.cast("text")
+  @scala.inline
+  def time: typings.waterline.waterlineStrings.time = this.cast("time")
+}
+

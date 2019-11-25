@@ -13,7 +13,7 @@ trait Anon_True extends js.Object {
 object Anon_True {
   @scala.inline
   def apply(wait: `true`): Anon_True = {
-    val __obj = js.Dynamic.literal(wait = wait)
+    val __obj = js.Dynamic.literal(wait = wait.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_True]
   }

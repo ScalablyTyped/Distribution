@@ -20,7 +20,7 @@ object WebhookOptions {
   @scala.inline
   def apply(address: String = null, topic: WebhookTopic = null): WebhookOptions = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (topic != null) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebhookOptions]
   }

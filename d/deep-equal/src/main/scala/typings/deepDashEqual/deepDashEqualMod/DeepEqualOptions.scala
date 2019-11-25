@@ -11,7 +11,7 @@ trait DeepEqualOptions extends js.Object {
 object DeepEqualOptions {
   @scala.inline
   def apply(strict: Boolean): DeepEqualOptions = {
-    val __obj = js.Dynamic.literal(strict = strict)
+    val __obj = js.Dynamic.literal(strict = strict.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeepEqualOptions]
   }

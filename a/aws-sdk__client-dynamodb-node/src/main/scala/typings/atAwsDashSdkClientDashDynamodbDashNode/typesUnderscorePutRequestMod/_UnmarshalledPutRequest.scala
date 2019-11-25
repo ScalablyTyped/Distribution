@@ -17,7 +17,7 @@ trait _UnmarshalledPutRequest extends _PutRequest {
 object _UnmarshalledPutRequest {
   @scala.inline
   def apply(Item: StringDictionary[_UnmarshalledAttributeValue]): _UnmarshalledPutRequest = {
-    val __obj = js.Dynamic.literal(Item = Item)
+    val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_UnmarshalledPutRequest]
   }

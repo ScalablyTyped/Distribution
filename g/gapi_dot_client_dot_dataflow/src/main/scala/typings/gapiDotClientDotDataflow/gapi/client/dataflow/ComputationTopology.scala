@@ -30,12 +30,12 @@ object ComputationTopology {
     systemStageName: String = null
   ): ComputationTopology = {
     val __obj = js.Dynamic.literal()
-    if (computationId != null) __obj.updateDynamic("computationId")(computationId)
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
-    if (keyRanges != null) __obj.updateDynamic("keyRanges")(keyRanges)
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs)
-    if (stateFamilies != null) __obj.updateDynamic("stateFamilies")(stateFamilies)
-    if (systemStageName != null) __obj.updateDynamic("systemStageName")(systemStageName)
+    if (computationId != null) __obj.updateDynamic("computationId")(computationId.asInstanceOf[js.Any])
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
+    if (keyRanges != null) __obj.updateDynamic("keyRanges")(keyRanges.asInstanceOf[js.Any])
+    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
+    if (stateFamilies != null) __obj.updateDynamic("stateFamilies")(stateFamilies.asInstanceOf[js.Any])
+    if (systemStageName != null) __obj.updateDynamic("systemStageName")(systemStageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputationTopology]
   }
 }

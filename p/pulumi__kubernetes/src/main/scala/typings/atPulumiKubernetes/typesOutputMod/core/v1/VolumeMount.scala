@@ -49,7 +49,7 @@ object VolumeMount {
     subPath: String,
     subPathExpr: String
   ): VolumeMount = {
-    val __obj = js.Dynamic.literal(mountPath = mountPath, mountPropagation = mountPropagation, name = name, readOnly = readOnly, subPath = subPath, subPathExpr = subPathExpr)
+    val __obj = js.Dynamic.literal(mountPath = mountPath.asInstanceOf[js.Any], mountPropagation = mountPropagation.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], subPath = subPath.asInstanceOf[js.Any], subPathExpr = subPathExpr.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VolumeMount]
   }

@@ -12,7 +12,7 @@ object Options {
   @scala.inline
   def apply(prompt: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

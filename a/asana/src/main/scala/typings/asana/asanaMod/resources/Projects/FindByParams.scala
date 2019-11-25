@@ -19,11 +19,11 @@ object FindByParams {
     opt_fields: String = null
   ): FindByParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived)
+    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (opt_expand != null) __obj.updateDynamic("opt_expand")(opt_expand)
-    if (opt_fields != null) __obj.updateDynamic("opt_fields")(opt_fields)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (opt_expand != null) __obj.updateDynamic("opt_expand")(opt_expand.asInstanceOf[js.Any])
+    if (opt_fields != null) __obj.updateDynamic("opt_fields")(opt_fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindByParams]
   }
 }

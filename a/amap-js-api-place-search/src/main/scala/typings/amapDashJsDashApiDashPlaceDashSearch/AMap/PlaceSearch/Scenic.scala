@@ -76,7 +76,7 @@ object Scenic {
     season: String,
     theme: String
   ): Scenic = {
-    val __obj = js.Dynamic.literal(deep_src = deep_src, intro = intro, level = level, opentime = opentime, opentime_GDF = opentime_GDF, ordering_wap_url = ordering_wap_url, ordering_web_url = ordering_web_url, photos = photos, price = price, rating = rating, recommend = recommend, season = season, theme = theme)
+    val __obj = js.Dynamic.literal(deep_src = deep_src.asInstanceOf[js.Any], intro = intro.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], opentime = opentime.asInstanceOf[js.Any], opentime_GDF = opentime_GDF.asInstanceOf[js.Any], ordering_wap_url = ordering_wap_url.asInstanceOf[js.Any], ordering_web_url = ordering_web_url.asInstanceOf[js.Any], photos = photos.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], rating = rating.asInstanceOf[js.Any], recommend = recommend.asInstanceOf[js.Any], season = season.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Scenic]
   }

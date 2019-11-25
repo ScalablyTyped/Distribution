@@ -13,8 +13,8 @@ trait Node extends js.Object {
 object Node {
   @scala.inline
   def apply(field: String, path: JSONPath, value: String = null): Node = {
-    val __obj = js.Dynamic.literal(field = field, path = path)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
 }

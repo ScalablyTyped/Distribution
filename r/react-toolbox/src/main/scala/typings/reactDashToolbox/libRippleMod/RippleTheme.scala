@@ -32,10 +32,10 @@ object RippleTheme {
     rippleWrapper: String = null
   ): RippleTheme = {
     val __obj = js.Dynamic.literal()
-    if (ripple != null) __obj.updateDynamic("ripple")(ripple)
-    if (rippleActive != null) __obj.updateDynamic("rippleActive")(rippleActive)
-    if (rippleRestarting != null) __obj.updateDynamic("rippleRestarting")(rippleRestarting)
-    if (rippleWrapper != null) __obj.updateDynamic("rippleWrapper")(rippleWrapper)
+    if (ripple != null) __obj.updateDynamic("ripple")(ripple.asInstanceOf[js.Any])
+    if (rippleActive != null) __obj.updateDynamic("rippleActive")(rippleActive.asInstanceOf[js.Any])
+    if (rippleRestarting != null) __obj.updateDynamic("rippleRestarting")(rippleRestarting.asInstanceOf[js.Any])
+    if (rippleWrapper != null) __obj.updateDynamic("rippleWrapper")(rippleWrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[RippleTheme]
   }
 }

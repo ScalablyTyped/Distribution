@@ -12,7 +12,7 @@ trait Upload extends js.Object {
 object Upload {
   @scala.inline
   def apply(url: String, valid_until: String): Upload = {
-    val __obj = js.Dynamic.literal(url = url, valid_until = valid_until)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any], valid_until = valid_until.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Upload]
   }

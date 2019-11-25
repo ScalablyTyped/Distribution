@@ -12,7 +12,7 @@ trait Font extends js.Object {
 object Font {
   @scala.inline
   def apply(cssClass: String | cssHandler, family: String): Font = {
-    val __obj = js.Dynamic.literal(cssClass = cssClass.asInstanceOf[js.Any], family = family)
+    val __obj = js.Dynamic.literal(cssClass = cssClass.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Font]
   }

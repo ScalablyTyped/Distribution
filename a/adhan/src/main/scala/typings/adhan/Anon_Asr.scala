@@ -16,7 +16,7 @@ trait Anon_Asr extends js.Object {
 object Anon_Asr {
   @scala.inline
   def apply(asr: Double, dhuhr: Double, fajr: Double, isha: Double, maghrib: Double, sunrise: Double): Anon_Asr = {
-    val __obj = js.Dynamic.literal(asr = asr, dhuhr = dhuhr, fajr = fajr, isha = isha, maghrib = maghrib, sunrise = sunrise)
+    val __obj = js.Dynamic.literal(asr = asr.asInstanceOf[js.Any], dhuhr = dhuhr.asInstanceOf[js.Any], fajr = fajr.asInstanceOf[js.Any], isha = isha.asInstanceOf[js.Any], maghrib = maghrib.asInstanceOf[js.Any], sunrise = sunrise.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Asr]
   }

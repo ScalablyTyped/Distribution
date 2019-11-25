@@ -30,12 +30,12 @@ object Svg2JsOptions {
     xmlns: js.UndefOr[Boolean] = js.undefined
   ): Svg2JsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(lowercase)) __obj.updateDynamic("lowercase")(lowercase)
-    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize)
-    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim)
-    if (!js.isUndefined(xmlns)) __obj.updateDynamic("xmlns")(xmlns)
+    if (!js.isUndefined(lowercase)) __obj.updateDynamic("lowercase")(lowercase.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
+    if (!js.isUndefined(xmlns)) __obj.updateDynamic("xmlns")(xmlns.asInstanceOf[js.Any])
     __obj.asInstanceOf[Svg2JsOptions]
   }
 }

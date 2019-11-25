@@ -17,7 +17,7 @@ object _UnmarshalledSourceSelectionCriteria {
   @scala.inline
   def apply(SseKmsEncryptedObjects: _UnmarshalledSseKmsEncryptedObjects = null): _UnmarshalledSourceSelectionCriteria = {
     val __obj = js.Dynamic.literal()
-    if (SseKmsEncryptedObjects != null) __obj.updateDynamic("SseKmsEncryptedObjects")(SseKmsEncryptedObjects)
+    if (SseKmsEncryptedObjects != null) __obj.updateDynamic("SseKmsEncryptedObjects")(SseKmsEncryptedObjects.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledSourceSelectionCriteria]
   }
 }

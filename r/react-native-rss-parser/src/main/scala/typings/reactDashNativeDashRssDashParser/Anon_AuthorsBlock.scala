@@ -32,7 +32,7 @@ object Anon_AuthorsBlock {
     newFeedUrl: Maybe[String] = null,
     subtitle: Maybe[String] = null
   ): Anon_AuthorsBlock = {
-    val __obj = js.Dynamic.literal(authors = authors, categories = categories, explicit = explicit, image = image, owner = owner, summary = summary)
+    val __obj = js.Dynamic.literal(authors = authors.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], explicit = explicit.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
     if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
     if (newFeedUrl != null) __obj.updateDynamic("newFeedUrl")(newFeedUrl.asInstanceOf[js.Any])

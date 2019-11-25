@@ -13,7 +13,7 @@ object ListScreenshotClustersResponse {
   @scala.inline
   def apply(clusters: js.Array[ScreenshotCluster] = null): ListScreenshotClustersResponse = {
     val __obj = js.Dynamic.literal()
-    if (clusters != null) __obj.updateDynamic("clusters")(clusters)
+    if (clusters != null) __obj.updateDynamic("clusters")(clusters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListScreenshotClustersResponse]
   }
 }

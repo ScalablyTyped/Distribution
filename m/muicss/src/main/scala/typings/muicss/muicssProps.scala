@@ -1,11 +1,15 @@
 package typings.muicss
 
 import typings.muicss.reactMod.DivProps
+import typings.react.reactMod.HTMLAttributes
+import typings.react.reactMod.OptionHTMLAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait muicssProps {
+  @scala.inline
+  def AppbarProps: HTMLAttributes.type = typings.react.reactMod.HTMLAttributes
   type AppbarProps = DivProps
   @scala.inline
   def ButtonProps: typings.muicss.reactMod.ButtonProps.type = typings.muicss.reactMod.ButtonProps
@@ -19,6 +23,8 @@ trait muicssProps {
   @scala.inline
   def ContainerProps: typings.muicss.reactMod.ContainerProps.type = typings.muicss.reactMod.ContainerProps
   type ContainerProps = typings.muicss.reactMod.ContainerProps
+  @scala.inline
+  def DividerProps: HTMLAttributes.type = typings.react.reactMod.HTMLAttributes
   type DividerProps = typings.muicss.reactMod.DividerProps
   @scala.inline
   def DropdownProps: typings.muicss.reactMod.DropdownProps.type = typings.muicss.reactMod.DropdownProps
@@ -35,8 +41,14 @@ trait muicssProps {
   @scala.inline
   def InputProps: typings.muicss.reactMod.InputProps.type = typings.muicss.reactMod.InputProps
   type InputProps = typings.muicss.reactMod.InputProps
+  @scala.inline
+  def OptionProps: OptionHTMLAttributes.type = typings.react.reactMod.OptionHTMLAttributes
   type OptionProps = typings.muicss.reactMod.OptionProps
+  @scala.inline
+  def PanelProps: HTMLAttributes.type = typings.react.reactMod.HTMLAttributes
   type PanelProps = typings.muicss.reactMod.PanelProps
+  @scala.inline
+  def RadioProps: typings.muicss.reactMod.CheckboxProps.type = typings.muicss.reactMod.CheckboxProps
   type RadioProps = typings.muicss.reactMod.RadioProps
   @scala.inline
   def RowProps: typings.muicss.reactMod.RowProps.type = typings.muicss.reactMod.RowProps

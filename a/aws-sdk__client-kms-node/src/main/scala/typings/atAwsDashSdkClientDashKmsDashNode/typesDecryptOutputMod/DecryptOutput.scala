@@ -26,9 +26,9 @@ trait DecryptOutput extends OutputTypesUnion {
 object DecryptOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, KeyId: String = null, Plaintext: Uint8Array = null): DecryptOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId)
-    if (Plaintext != null) __obj.updateDynamic("Plaintext")(Plaintext)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
+    if (Plaintext != null) __obj.updateDynamic("Plaintext")(Plaintext.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecryptOutput]
   }
 }

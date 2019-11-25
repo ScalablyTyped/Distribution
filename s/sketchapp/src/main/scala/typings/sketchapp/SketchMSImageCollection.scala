@@ -13,7 +13,7 @@ trait SketchMSImageCollection extends js.Object {
 object SketchMSImageCollection {
   @scala.inline
   def apply(_class: imageCollection, images: js.Array[_]): SketchMSImageCollection = {
-    val __obj = js.Dynamic.literal(_class = _class, images = images)
+    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SketchMSImageCollection]
   }

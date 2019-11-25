@@ -38,7 +38,7 @@ object GlobbyOptions {
   def apply(expandDirectories: ExpandDirectoriesOption = null, gitignore: js.UndefOr[Boolean] = js.undefined): GlobbyOptions = {
     val __obj = js.Dynamic.literal()
     if (expandDirectories != null) __obj.updateDynamic("expandDirectories")(expandDirectories.asInstanceOf[js.Any])
-    if (!js.isUndefined(gitignore)) __obj.updateDynamic("gitignore")(gitignore)
+    if (!js.isUndefined(gitignore)) __obj.updateDynamic("gitignore")(gitignore.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobbyOptions]
   }
 }

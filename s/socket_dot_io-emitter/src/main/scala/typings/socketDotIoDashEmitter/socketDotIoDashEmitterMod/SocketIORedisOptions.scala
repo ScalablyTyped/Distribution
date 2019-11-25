@@ -4,19 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SocketIORedisOptions extends js.Object {
-  var host: js.UndefOr[String] = js.undefined
-  var port: js.UndefOr[Double] = js.undefined
-  var socket: js.UndefOr[String] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.socketDotIoDashEmitter.Anon_Host
+  - typings.socketDotIoDashEmitter.Anon_Socket
+*/
+trait SocketIORedisOptions extends js.Object
 
 object SocketIORedisOptions {
   @scala.inline
-  def apply(host: String = null, port: Int | Double = null, socket: String = null): SocketIORedisOptions = {
-    val __obj = js.Dynamic.literal()
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (socket != null) __obj.updateDynamic("socket")(socket)
+  def Anon_Host(host: String, port: Double): SocketIORedisOptions = {
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[SocketIORedisOptions]
+  }
+  @scala.inline
+  def Anon_Socket(socket: String): SocketIORedisOptions = {
+    val __obj = js.Dynamic.literal(socket = socket.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[SocketIORedisOptions]
   }
 }

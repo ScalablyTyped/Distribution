@@ -19,7 +19,7 @@ trait GlobalizationDatePattern extends js.Object {
 object GlobalizationDatePattern {
   @scala.inline
   def apply(dst_offset: Double, pattern: String, timezone: String, utc_offset: Double): GlobalizationDatePattern = {
-    val __obj = js.Dynamic.literal(dst_offset = dst_offset, pattern = pattern, timezone = timezone, utc_offset = utc_offset)
+    val __obj = js.Dynamic.literal(dst_offset = dst_offset.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any], utc_offset = utc_offset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GlobalizationDatePattern]
   }

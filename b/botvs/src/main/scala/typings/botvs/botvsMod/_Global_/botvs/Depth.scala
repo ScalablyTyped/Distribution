@@ -22,7 +22,7 @@ trait Depth extends js.Object {
 object Depth {
   @scala.inline
   def apply(Asks: js.Array[MarketOrder], Bids: js.Array[MarketOrder], Time: Double): Depth = {
-    val __obj = js.Dynamic.literal(Asks = Asks, Bids = Bids, Time = Time)
+    val __obj = js.Dynamic.literal(Asks = Asks.asInstanceOf[js.Any], Bids = Bids.asInstanceOf[js.Any], Time = Time.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Depth]
   }

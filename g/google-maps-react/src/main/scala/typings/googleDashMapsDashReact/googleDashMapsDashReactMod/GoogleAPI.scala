@@ -12,7 +12,7 @@ trait GoogleAPI extends js.Object {
 object GoogleAPI {
   @scala.inline
   def apply(maps: Typeofmaps): GoogleAPI = {
-    val __obj = js.Dynamic.literal(maps = maps)
+    val __obj = js.Dynamic.literal(maps = maps.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GoogleAPI]
   }

@@ -36,7 +36,7 @@ trait Subject extends js.Object {
 object Subject {
   @scala.inline
   def apply(apiVersion: String, kind: String, name: String, namespace: String): Subject = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, name = name, namespace = namespace)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Subject]
   }

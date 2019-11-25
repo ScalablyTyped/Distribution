@@ -16,8 +16,8 @@ trait Settings
 object Settings {
   @scala.inline
   def apply(public: StringDictionary[js.Any], StringDictionary: /* id */ StringDictionary[js.Any] = null): Settings = {
-    val __obj = js.Dynamic.literal(public = public)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(public = public.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Settings]
   }
 }

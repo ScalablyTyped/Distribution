@@ -12,8 +12,8 @@ trait ActivityListFeedsResponseLinksCurrentUserOrganizationsItem extends js.Obje
 object ActivityListFeedsResponseLinksCurrentUserOrganizationsItem {
   @scala.inline
   def apply(href: String, `type`: String): ActivityListFeedsResponseLinksCurrentUserOrganizationsItem = {
-    val __obj = js.Dynamic.literal(href = href)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityListFeedsResponseLinksCurrentUserOrganizationsItem]
   }
 }

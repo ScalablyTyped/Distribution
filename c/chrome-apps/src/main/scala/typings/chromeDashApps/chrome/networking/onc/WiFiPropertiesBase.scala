@@ -41,13 +41,13 @@ object WiFiPropertiesBase {
     TetheringState: String = null
   ): WiFiPropertiesBase[M, S] = {
     val __obj = js.Dynamic.literal()
-    if (BSSID != null) __obj.updateDynamic("BSSID")(BSSID)
+    if (BSSID != null) __obj.updateDynamic("BSSID")(BSSID.asInstanceOf[js.Any])
     if (Frequency != null) __obj.updateDynamic("Frequency")(Frequency.asInstanceOf[js.Any])
     if (HexSSID != null) __obj.updateDynamic("HexSSID")(HexSSID.asInstanceOf[js.Any])
     if (SSID != null) __obj.updateDynamic("SSID")(SSID.asInstanceOf[js.Any])
     if (Security != null) __obj.updateDynamic("Security")(Security.asInstanceOf[js.Any])
     if (SignalStrength != null) __obj.updateDynamic("SignalStrength")(SignalStrength.asInstanceOf[js.Any])
-    if (TetheringState != null) __obj.updateDynamic("TetheringState")(TetheringState)
+    if (TetheringState != null) __obj.updateDynamic("TetheringState")(TetheringState.asInstanceOf[js.Any])
     __obj.asInstanceOf[WiFiPropertiesBase[M, S]]
   }
 }

@@ -54,14 +54,14 @@ object Subscription {
     resource: String = null
   ): Subscription = {
     val __obj = js.Dynamic.literal()
-    if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId)
-    if (changeType != null) __obj.updateDynamic("changeType")(changeType)
-    if (clientState != null) __obj.updateDynamic("clientState")(clientState)
-    if (creatorId != null) __obj.updateDynamic("creatorId")(creatorId)
-    if (expirationDateTime != null) __obj.updateDynamic("expirationDateTime")(expirationDateTime)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (notificationUrl != null) __obj.updateDynamic("notificationUrl")(notificationUrl)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
+    if (changeType != null) __obj.updateDynamic("changeType")(changeType.asInstanceOf[js.Any])
+    if (clientState != null) __obj.updateDynamic("clientState")(clientState.asInstanceOf[js.Any])
+    if (creatorId != null) __obj.updateDynamic("creatorId")(creatorId.asInstanceOf[js.Any])
+    if (expirationDateTime != null) __obj.updateDynamic("expirationDateTime")(expirationDateTime.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (notificationUrl != null) __obj.updateDynamic("notificationUrl")(notificationUrl.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subscription]
   }
 }

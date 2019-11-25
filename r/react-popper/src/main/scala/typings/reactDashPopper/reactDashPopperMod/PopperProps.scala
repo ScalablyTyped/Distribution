@@ -31,12 +31,12 @@ object PopperProps {
     referenceElement: ReferenceObject = null
   ): PopperProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-    if (!js.isUndefined(eventsEnabled)) __obj.updateDynamic("eventsEnabled")(eventsEnabled)
+    if (!js.isUndefined(eventsEnabled)) __obj.updateDynamic("eventsEnabled")(eventsEnabled.asInstanceOf[js.Any])
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
-    if (placement != null) __obj.updateDynamic("placement")(placement)
-    if (!js.isUndefined(positionFixed)) __obj.updateDynamic("positionFixed")(positionFixed)
-    if (referenceElement != null) __obj.updateDynamic("referenceElement")(referenceElement)
+    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
+    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
+    if (!js.isUndefined(positionFixed)) __obj.updateDynamic("positionFixed")(positionFixed.asInstanceOf[js.Any])
+    if (referenceElement != null) __obj.updateDynamic("referenceElement")(referenceElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopperProps]
   }
 }

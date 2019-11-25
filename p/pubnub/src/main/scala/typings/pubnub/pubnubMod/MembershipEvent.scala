@@ -22,7 +22,7 @@ object MembershipEvent {
     subscription: String,
     timetoken: String
   ): MembershipEvent = {
-    val __obj = js.Dynamic.literal(channel = channel, message = message, publisher = publisher, subscription = subscription, timetoken = timetoken)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], publisher = publisher.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any], timetoken = timetoken.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MembershipEvent]
   }

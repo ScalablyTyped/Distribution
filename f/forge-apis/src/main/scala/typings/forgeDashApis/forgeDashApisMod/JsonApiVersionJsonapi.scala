@@ -11,7 +11,7 @@ trait JsonApiVersionJsonapi extends js.Object {
 object JsonApiVersionJsonapi {
   @scala.inline
   def apply(version: String): JsonApiVersionJsonapi = {
-    val __obj = js.Dynamic.literal(version = version)
+    val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JsonApiVersionJsonapi]
   }

@@ -12,7 +12,7 @@ object DatafeedsFetchNowResponse {
   @scala.inline
   def apply(kind: String = null): DatafeedsFetchNowResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatafeedsFetchNowResponse]
   }
 }

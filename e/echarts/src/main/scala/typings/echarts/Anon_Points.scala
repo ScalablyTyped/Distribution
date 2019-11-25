@@ -48,9 +48,9 @@ object Anon_Points {
     smoothConstraint: js.UndefOr[Boolean] = js.undefined
   ): Anon_Points = {
     val __obj = js.Dynamic.literal()
-    if (points != null) __obj.updateDynamic("points")(points)
+    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
     if (smooth != null) __obj.updateDynamic("smooth")(smooth.asInstanceOf[js.Any])
-    if (!js.isUndefined(smoothConstraint)) __obj.updateDynamic("smoothConstraint")(smoothConstraint)
+    if (!js.isUndefined(smoothConstraint)) __obj.updateDynamic("smoothConstraint")(smoothConstraint.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Points]
   }
 }

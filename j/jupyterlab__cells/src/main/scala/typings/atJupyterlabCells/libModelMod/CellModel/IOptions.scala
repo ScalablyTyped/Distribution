@@ -28,9 +28,9 @@ object IOptions {
   @scala.inline
   def apply(cell: IBaseCell = null, id: String = null, modelDB: IModelDB = null): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (cell != null) __obj.updateDynamic("cell")(cell)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modelDB != null) __obj.updateDynamic("modelDB")(modelDB)
+    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modelDB != null) __obj.updateDynamic("modelDB")(modelDB.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

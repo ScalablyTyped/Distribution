@@ -28,10 +28,10 @@ object TerminalOptions {
   ): TerminalOptions = {
     val __obj = js.Dynamic.literal()
     if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (env != null) __obj.updateDynamic("env")(env)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminalOptions]

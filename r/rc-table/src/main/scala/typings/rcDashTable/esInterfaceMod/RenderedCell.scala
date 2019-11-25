@@ -15,7 +15,7 @@ object RenderedCell {
   def apply(children: ReactNode = null, props: Cell = null): RenderedCell = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (props != null) __obj.updateDynamic("props")(props)
+    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderedCell]
   }
 }

@@ -67,11 +67,11 @@ object Asciimath2jaxPreprocessor {
     skipTags: js.Array[String] = null
   ): Asciimath2jaxPreprocessor = {
     val __obj = js.Dynamic.literal()
-    if (delimiters != null) __obj.updateDynamic("delimiters")(delimiters)
-    if (ignoreClass != null) __obj.updateDynamic("ignoreClass")(ignoreClass)
-    if (preview != null) __obj.updateDynamic("preview")(preview)
-    if (processClass != null) __obj.updateDynamic("processClass")(processClass)
-    if (skipTags != null) __obj.updateDynamic("skipTags")(skipTags)
+    if (delimiters != null) __obj.updateDynamic("delimiters")(delimiters.asInstanceOf[js.Any])
+    if (ignoreClass != null) __obj.updateDynamic("ignoreClass")(ignoreClass.asInstanceOf[js.Any])
+    if (preview != null) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
+    if (processClass != null) __obj.updateDynamic("processClass")(processClass.asInstanceOf[js.Any])
+    if (skipTags != null) __obj.updateDynamic("skipTags")(skipTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Asciimath2jaxPreprocessor]
   }
 }

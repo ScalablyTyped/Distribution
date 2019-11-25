@@ -12,7 +12,7 @@ object ConnectConfig {
   @scala.inline
   def apply(initialConnectionHeaders: InitialConnectionHeaders = null): ConnectConfig = {
     val __obj = js.Dynamic.literal()
-    if (initialConnectionHeaders != null) __obj.updateDynamic("initialConnectionHeaders")(initialConnectionHeaders)
+    if (initialConnectionHeaders != null) __obj.updateDynamic("initialConnectionHeaders")(initialConnectionHeaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectConfig]
   }
 }

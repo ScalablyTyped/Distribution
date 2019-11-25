@@ -33,8 +33,8 @@ object SocketProperties {
   ): SocketProperties = {
     val __obj = js.Dynamic.literal()
     if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketProperties]
   }
 }

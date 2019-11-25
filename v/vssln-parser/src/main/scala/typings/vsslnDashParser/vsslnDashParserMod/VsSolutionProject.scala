@@ -26,10 +26,10 @@ object VsSolutionProject {
     StringDictionary: StringDictionary[js.Any] = null,
     projectDependencies: VsSolutionSection = null
   ): VsSolutionProject = {
-    val __obj = js.Dynamic.literal(name = name, path = path, projectGuid = projectGuid, typeGuid = typeGuid)
-    __obj.updateDynamic("type")(`type`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (projectDependencies != null) __obj.updateDynamic("projectDependencies")(projectDependencies)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], projectGuid = projectGuid.asInstanceOf[js.Any], typeGuid = typeGuid.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (projectDependencies != null) __obj.updateDynamic("projectDependencies")(projectDependencies.asInstanceOf[js.Any])
     __obj.asInstanceOf[VsSolutionProject]
   }
 }

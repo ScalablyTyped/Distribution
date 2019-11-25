@@ -21,9 +21,9 @@ object Anon_AndroidIosKey {
     ios: ProjectParamsIOS = null
   ): Anon_AndroidIosKey = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (android != null) __obj.updateDynamic("android")(android)
-    if (ios != null) __obj.updateDynamic("ios")(ios)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (android != null) __obj.updateDynamic("android")(android.asInstanceOf[js.Any])
+    if (ios != null) __obj.updateDynamic("ios")(ios.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AndroidIosKey]
   }
 }

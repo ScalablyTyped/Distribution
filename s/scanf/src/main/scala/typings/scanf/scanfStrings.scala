@@ -18,7 +18,7 @@ object scanfStrings {
   sealed trait `%o` extends js.Object
   
   @js.native
-  sealed trait `%s` extends js.Object
+  sealed trait `%s_` extends js.Object
   
   @js.native
   sealed trait `%x` extends js.Object
@@ -32,7 +32,7 @@ object scanfStrings {
   @scala.inline
   def `%o`: `%o` = "%o".asInstanceOf[`%o`]
   @scala.inline
-  def `%s`: `%s` = "%s".asInstanceOf[`%s`]
+  def `%s_`: `%s_` = "%s".asInstanceOf[`%s_`]
   @scala.inline
   def `%x`: `%x` = "%x".asInstanceOf[`%x`]
 }

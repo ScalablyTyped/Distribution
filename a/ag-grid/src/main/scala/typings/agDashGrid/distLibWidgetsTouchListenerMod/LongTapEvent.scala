@@ -15,8 +15,8 @@ trait LongTapEvent extends AgEvent {
 object LongTapEvent {
   @scala.inline
   def apply(touchEvent: TouchEvent, touchStart: Touch, `type`: String): LongTapEvent = {
-    val __obj = js.Dynamic.literal(touchEvent = touchEvent, touchStart = touchStart)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(touchEvent = touchEvent.asInstanceOf[js.Any], touchStart = touchStart.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LongTapEvent]
   }
 }

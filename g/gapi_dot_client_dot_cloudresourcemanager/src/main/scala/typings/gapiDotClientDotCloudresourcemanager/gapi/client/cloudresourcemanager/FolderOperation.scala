@@ -30,10 +30,10 @@ object FolderOperation {
     sourceParent: String = null
   ): FolderOperation = {
     val __obj = js.Dynamic.literal()
-    if (destinationParent != null) __obj.updateDynamic("destinationParent")(destinationParent)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (operationType != null) __obj.updateDynamic("operationType")(operationType)
-    if (sourceParent != null) __obj.updateDynamic("sourceParent")(sourceParent)
+    if (destinationParent != null) __obj.updateDynamic("destinationParent")(destinationParent.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])
+    if (sourceParent != null) __obj.updateDynamic("sourceParent")(sourceParent.asInstanceOf[js.Any])
     __obj.asInstanceOf[FolderOperation]
   }
 }

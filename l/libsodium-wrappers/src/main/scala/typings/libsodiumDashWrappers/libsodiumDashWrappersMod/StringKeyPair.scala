@@ -13,7 +13,7 @@ trait StringKeyPair extends js.Object {
 object StringKeyPair {
   @scala.inline
   def apply(keyType: KeyType, privateKey: String, publicKey: String): StringKeyPair = {
-    val __obj = js.Dynamic.literal(keyType = keyType, privateKey = privateKey, publicKey = publicKey)
+    val __obj = js.Dynamic.literal(keyType = keyType.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StringKeyPair]
   }

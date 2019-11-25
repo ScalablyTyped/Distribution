@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "emoji-strip"
-version := "1.0-dt-20191022Z-6dbbe4"
+version := "1.0-dt-20191022Z-3b1f29"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

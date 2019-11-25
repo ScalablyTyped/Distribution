@@ -28,10 +28,10 @@ object Options {
     theme: ITheme = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (clusteringOptions != null) __obj.updateDynamic("clusteringOptions")(clusteringOptions)
+    if (clusteringOptions != null) __obj.updateDynamic("clusteringOptions")(clusteringOptions.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

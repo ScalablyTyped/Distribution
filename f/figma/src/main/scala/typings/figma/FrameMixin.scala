@@ -23,7 +23,7 @@ object FrameMixin {
     guides: js.Array[Guide],
     layoutGrids: js.Array[LayoutGrid]
   ): FrameMixin = {
-    val __obj = js.Dynamic.literal(backgroundStyleId = backgroundStyleId, backgrounds = backgrounds, clipsContent = clipsContent, gridStyleId = gridStyleId, guides = guides, layoutGrids = layoutGrids)
+    val __obj = js.Dynamic.literal(backgroundStyleId = backgroundStyleId.asInstanceOf[js.Any], backgrounds = backgrounds.asInstanceOf[js.Any], clipsContent = clipsContent.asInstanceOf[js.Any], gridStyleId = gridStyleId.asInstanceOf[js.Any], guides = guides.asInstanceOf[js.Any], layoutGrids = layoutGrids.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FrameMixin]
   }

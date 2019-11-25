@@ -13,7 +13,7 @@ object WrapperStyle {
   @scala.inline
   def apply(DefaultStyle: CSSProperties = null): WrapperStyle = {
     val __obj = js.Dynamic.literal()
-    if (DefaultStyle != null) __obj.updateDynamic("DefaultStyle")(DefaultStyle)
+    if (DefaultStyle != null) __obj.updateDynamic("DefaultStyle")(DefaultStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[WrapperStyle]
   }
 }

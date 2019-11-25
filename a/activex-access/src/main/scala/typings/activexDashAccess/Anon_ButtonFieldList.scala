@@ -17,7 +17,7 @@ trait Anon_ButtonFieldList extends js.Object {
 object Anon_ButtonFieldList {
   @scala.inline
   def apply(Button: Double, FieldList: Double, Shift: Double, X: OLE_XPOS_PIXELS, Y: OLE_YPOS_PIXELS): Anon_ButtonFieldList = {
-    val __obj = js.Dynamic.literal(Button = Button, FieldList = FieldList, Shift = Shift, X = X, Y = Y)
+    val __obj = js.Dynamic.literal(Button = Button.asInstanceOf[js.Any], FieldList = FieldList.asInstanceOf[js.Any], Shift = Shift.asInstanceOf[js.Any], X = X.asInstanceOf[js.Any], Y = Y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ButtonFieldList]
   }

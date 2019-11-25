@@ -17,7 +17,7 @@ trait DaemonEndpoint extends js.Object {
 object DaemonEndpoint {
   @scala.inline
   def apply(Port: Double): DaemonEndpoint = {
-    val __obj = js.Dynamic.literal(Port = Port)
+    val __obj = js.Dynamic.literal(Port = Port.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DaemonEndpoint]
   }

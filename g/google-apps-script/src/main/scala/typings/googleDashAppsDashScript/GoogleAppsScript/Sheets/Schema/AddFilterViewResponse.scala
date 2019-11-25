@@ -12,7 +12,7 @@ object AddFilterViewResponse {
   @scala.inline
   def apply(filter: FilterView = null): AddFilterViewResponse = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddFilterViewResponse]
   }
 }

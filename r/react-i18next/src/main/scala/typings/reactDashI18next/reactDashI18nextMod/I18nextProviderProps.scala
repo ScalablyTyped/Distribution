@@ -12,7 +12,7 @@ trait I18nextProviderProps extends js.Object {
 object I18nextProviderProps {
   @scala.inline
   def apply(i18n: i18n): I18nextProviderProps = {
-    val __obj = js.Dynamic.literal(i18n = i18n)
+    val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[I18nextProviderProps]
   }

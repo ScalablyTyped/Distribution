@@ -40,7 +40,7 @@ trait ReplicaSetSpec extends js.Object {
 object ReplicaSetSpec {
   @scala.inline
   def apply(minReadySeconds: Double, replicas: Double, selector: LabelSelector, template: PodTemplateSpec): ReplicaSetSpec = {
-    val __obj = js.Dynamic.literal(minReadySeconds = minReadySeconds, replicas = replicas, selector = selector, template = template)
+    val __obj = js.Dynamic.literal(minReadySeconds = minReadySeconds.asInstanceOf[js.Any], replicas = replicas.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReplicaSetSpec]
   }

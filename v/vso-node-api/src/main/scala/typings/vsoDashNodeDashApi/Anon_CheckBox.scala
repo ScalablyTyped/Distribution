@@ -25,7 +25,7 @@ object Anon_CheckBox {
     textArea: Double,
     textBox: Double
   ): Anon_CheckBox = {
-    val __obj = js.Dynamic.literal(checkBox = checkBox, combo = combo, none = none, passwordBox = passwordBox, radioButtons = radioButtons, textArea = textArea, textBox = textBox)
+    val __obj = js.Dynamic.literal(checkBox = checkBox.asInstanceOf[js.Any], combo = combo.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], passwordBox = passwordBox.asInstanceOf[js.Any], radioButtons = radioButtons.asInstanceOf[js.Any], textArea = textArea.asInstanceOf[js.Any], textBox = textBox.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CheckBox]
   }

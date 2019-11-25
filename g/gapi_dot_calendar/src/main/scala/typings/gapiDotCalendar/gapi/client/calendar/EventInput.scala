@@ -5,8 +5,8 @@ import typings.gapiDotCalendar.Anon_Date
 import typings.gapiDotCalendar.Anon_DateDateTime
 import typings.gapiDotCalendar.Anon_Display
 import typings.gapiDotCalendar.Anon_FileUrl
+import typings.gapiDotCalendar.Anon_Key
 import typings.gapiDotCalendar.Anon_Overrides
-import typings.gapiDotCalendar.Anon_Private
 import typings.gapiDotCalendar.Anon_Title
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +21,7 @@ trait EventInput extends js.Object {
   var colorId: js.UndefOr[String] = js.undefined
   var description: js.UndefOr[String] = js.undefined
   var end: Anon_Date
-  var extendedProperties: js.UndefOr[Anon_Private] = js.undefined
+  var extendedProperties: js.UndefOr[Anon_Key] = js.undefined
   var gadget: js.UndefOr[Anon_Display] = js.undefined
   var guestsCanInviteOthers: js.UndefOr[Boolean] = js.undefined
   var guestsCanSeeOtherGuests: js.UndefOr[Boolean] = js.undefined
@@ -49,7 +49,7 @@ object EventInput {
     attendees: js.Array[Anon_AdditionalGuests] = null,
     colorId: String = null,
     description: String = null,
-    extendedProperties: Anon_Private = null,
+    extendedProperties: Anon_Key = null,
     gadget: Anon_Display = null,
     guestsCanInviteOthers: js.UndefOr[Boolean] = js.undefined,
     guestsCanSeeOtherGuests: js.UndefOr[Boolean] = js.undefined,
@@ -65,27 +65,27 @@ object EventInput {
     transparency: EventTransparency = null,
     visibility: EventVisibility = null
   ): EventInput = {
-    val __obj = js.Dynamic.literal(end = end, start = start)
-    if (!js.isUndefined(anyoneCanAddSelf)) __obj.updateDynamic("anyoneCanAddSelf")(anyoneCanAddSelf)
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
-    if (attendees != null) __obj.updateDynamic("attendees")(attendees)
-    if (colorId != null) __obj.updateDynamic("colorId")(colorId)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (extendedProperties != null) __obj.updateDynamic("extendedProperties")(extendedProperties)
-    if (gadget != null) __obj.updateDynamic("gadget")(gadget)
-    if (!js.isUndefined(guestsCanInviteOthers)) __obj.updateDynamic("guestsCanInviteOthers")(guestsCanInviteOthers)
-    if (!js.isUndefined(guestsCanSeeOtherGuests)) __obj.updateDynamic("guestsCanSeeOtherGuests")(guestsCanSeeOtherGuests)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (originalStartTime != null) __obj.updateDynamic("originalStartTime")(originalStartTime)
-    if (recurrence != null) __obj.updateDynamic("recurrence")(recurrence)
-    if (reminders != null) __obj.updateDynamic("reminders")(reminders)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    if (!js.isUndefined(anyoneCanAddSelf)) __obj.updateDynamic("anyoneCanAddSelf")(anyoneCanAddSelf.asInstanceOf[js.Any])
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
+    if (attendees != null) __obj.updateDynamic("attendees")(attendees.asInstanceOf[js.Any])
+    if (colorId != null) __obj.updateDynamic("colorId")(colorId.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (extendedProperties != null) __obj.updateDynamic("extendedProperties")(extendedProperties.asInstanceOf[js.Any])
+    if (gadget != null) __obj.updateDynamic("gadget")(gadget.asInstanceOf[js.Any])
+    if (!js.isUndefined(guestsCanInviteOthers)) __obj.updateDynamic("guestsCanInviteOthers")(guestsCanInviteOthers.asInstanceOf[js.Any])
+    if (!js.isUndefined(guestsCanSeeOtherGuests)) __obj.updateDynamic("guestsCanSeeOtherGuests")(guestsCanSeeOtherGuests.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (originalStartTime != null) __obj.updateDynamic("originalStartTime")(originalStartTime.asInstanceOf[js.Any])
+    if (recurrence != null) __obj.updateDynamic("recurrence")(recurrence.asInstanceOf[js.Any])
+    if (reminders != null) __obj.updateDynamic("reminders")(reminders.asInstanceOf[js.Any])
     if (sequence != null) __obj.updateDynamic("sequence")(sequence.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (summary != null) __obj.updateDynamic("summary")(summary)
-    if (transparency != null) __obj.updateDynamic("transparency")(transparency)
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
+    if (transparency != null) __obj.updateDynamic("transparency")(transparency.asInstanceOf[js.Any])
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventInput]
   }
 }

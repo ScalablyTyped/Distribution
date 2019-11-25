@@ -19,9 +19,9 @@ object Options {
     text: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (onTick != null) __obj.updateDynamic("onTick")(onTick)
-    if (stream != null) __obj.updateDynamic("stream")(stream)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (onTick != null) __obj.updateDynamic("onTick")(onTick.asInstanceOf[js.Any])
+    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

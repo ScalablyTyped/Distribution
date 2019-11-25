@@ -12,7 +12,7 @@ object Anon_IncludeComments {
   @scala.inline
   def apply(includeComments: js.UndefOr[Boolean] = js.undefined): Anon_IncludeComments = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeComments)) __obj.updateDynamic("includeComments")(includeComments)
+    if (!js.isUndefined(includeComments)) __obj.updateDynamic("includeComments")(includeComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IncludeComments]
   }
 }

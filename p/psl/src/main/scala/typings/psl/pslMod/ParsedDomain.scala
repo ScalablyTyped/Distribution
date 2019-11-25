@@ -25,12 +25,12 @@ object ParsedDomain {
     subdomain: String = null,
     tld: String = null
   ): ParsedDomain = {
-    val __obj = js.Dynamic.literal(input = input, listed = listed)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
-    if (sld != null) __obj.updateDynamic("sld")(sld)
-    if (subdomain != null) __obj.updateDynamic("subdomain")(subdomain)
-    if (tld != null) __obj.updateDynamic("tld")(tld)
+    val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], listed = listed.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (sld != null) __obj.updateDynamic("sld")(sld.asInstanceOf[js.Any])
+    if (subdomain != null) __obj.updateDynamic("subdomain")(subdomain.asInstanceOf[js.Any])
+    if (tld != null) __obj.updateDynamic("tld")(tld.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedDomain]
   }
 }

@@ -35,7 +35,7 @@ object FoldingRangeProviderMiddleware {
     ] = null
   ): FoldingRangeProviderMiddleware = {
     val __obj = js.Dynamic.literal()
-    if (provideFoldingRanges != null) __obj.updateDynamic("provideFoldingRanges")(provideFoldingRanges)
+    if (provideFoldingRanges != null) __obj.updateDynamic("provideFoldingRanges")(provideFoldingRanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[FoldingRangeProviderMiddleware]
   }
 }

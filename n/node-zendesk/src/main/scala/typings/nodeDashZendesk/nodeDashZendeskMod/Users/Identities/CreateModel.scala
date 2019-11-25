@@ -19,10 +19,10 @@ object CreateModel {
     primary: js.UndefOr[Boolean] = js.undefined,
     verified: js.UndefOr[Boolean] = js.undefined
   ): CreateModel = {
-    val __obj = js.Dynamic.literal(value = value)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
-    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateModel]
   }
 }

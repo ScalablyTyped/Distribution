@@ -19,7 +19,7 @@ object WiMAXProperties {
   def apply[M /* <: ManagedObject */, B](AutoConnect: B = null, EAP: EAPProperties = null, SignalStrength: Int | Double = null): WiMAXProperties[M, B] = {
     val __obj = js.Dynamic.literal()
     if (AutoConnect != null) __obj.updateDynamic("AutoConnect")(AutoConnect.asInstanceOf[js.Any])
-    if (EAP != null) __obj.updateDynamic("EAP")(EAP)
+    if (EAP != null) __obj.updateDynamic("EAP")(EAP.asInstanceOf[js.Any])
     if (SignalStrength != null) __obj.updateDynamic("SignalStrength")(SignalStrength.asInstanceOf[js.Any])
     __obj.asInstanceOf[WiMAXProperties[M, B]]
   }

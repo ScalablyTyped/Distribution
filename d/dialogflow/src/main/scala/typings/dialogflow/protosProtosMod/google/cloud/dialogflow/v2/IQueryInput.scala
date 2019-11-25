@@ -18,9 +18,9 @@ object IQueryInput {
   @scala.inline
   def apply(audioConfig: IInputAudioConfig = null, event: IEventInput = null, text: ITextInput = null): IQueryInput = {
     val __obj = js.Dynamic.literal()
-    if (audioConfig != null) __obj.updateDynamic("audioConfig")(audioConfig)
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (audioConfig != null) __obj.updateDynamic("audioConfig")(audioConfig.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQueryInput]
   }
 }

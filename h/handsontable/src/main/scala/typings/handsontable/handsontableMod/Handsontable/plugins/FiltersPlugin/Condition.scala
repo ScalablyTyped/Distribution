@@ -17,7 +17,7 @@ object Condition {
     func: (typings.handsontable.handsontableMod.Handsontable.plugins.CellValue, js.Array[_]) => Boolean,
     name: ConditionName
   ): Condition = {
-    val __obj = js.Dynamic.literal(args = args, func = js.Any.fromFunction2(func), name = name)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], func = js.Any.fromFunction2(func), name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Condition]
   }

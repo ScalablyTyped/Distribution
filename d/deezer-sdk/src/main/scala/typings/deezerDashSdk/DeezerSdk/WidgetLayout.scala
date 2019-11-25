@@ -13,3 +13,12 @@ import scala.scalajs.js.annotation._
 */
 trait WidgetLayout extends js.Object
 
+object WidgetLayout {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def dark: typings.deezerDashSdk.deezerDashSdkStrings.dark = this.cast("dark")
+  @scala.inline
+  def light: typings.deezerDashSdk.deezerDashSdkStrings.light = this.cast("light")
+}
+

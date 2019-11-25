@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait TextPathSpacing extends js.Object
 
+object TextPathSpacing {
+  @scala.inline
+  def auto: typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.auto = this.cast("auto")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def exact: typings.reactDashNativeDashSvg.reactDashNativeDashSvgStrings.exact = this.cast("exact")
+}
+

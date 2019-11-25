@@ -27,11 +27,11 @@ object IdentitytoolkitRelyingpartyGetAccountInfoRequest {
     phoneNumber: js.Array[String] = null
   ): IdentitytoolkitRelyingpartyGetAccountInfoRequest = {
     val __obj = js.Dynamic.literal()
-    if (delegatedProjectNumber != null) __obj.updateDynamic("delegatedProjectNumber")(delegatedProjectNumber)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
-    if (localId != null) __obj.updateDynamic("localId")(localId)
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
+    if (delegatedProjectNumber != null) __obj.updateDynamic("delegatedProjectNumber")(delegatedProjectNumber.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
+    if (localId != null) __obj.updateDynamic("localId")(localId.asInstanceOf[js.Any])
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentitytoolkitRelyingpartyGetAccountInfoRequest]
   }
 }

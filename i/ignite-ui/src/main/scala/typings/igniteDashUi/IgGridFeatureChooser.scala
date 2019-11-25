@@ -58,17 +58,17 @@ object IgGridFeatureChooser {
     regional: String | js.Object = null
   ): IgGridFeatureChooser = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (dropDownWidth != null) __obj.updateDynamic("dropDownWidth")(dropDownWidth)
+    if (dropDownWidth != null) __obj.updateDynamic("dropDownWidth")(dropDownWidth.asInstanceOf[js.Any])
     if (featureChooserDropDownOpened != null) __obj.updateDynamic("featureChooserDropDownOpened")(js.Any.fromFunction2(featureChooserDropDownOpened))
     if (featureChooserDropDownOpening != null) __obj.updateDynamic("featureChooserDropDownOpening")(js.Any.fromFunction2(featureChooserDropDownOpening))
     if (featureChooserRendered != null) __obj.updateDynamic("featureChooserRendered")(js.Any.fromFunction2(featureChooserRendered))
     if (featureChooserRendering != null) __obj.updateDynamic("featureChooserRendering")(js.Any.fromFunction2(featureChooserRendering))
     if (featureToggled != null) __obj.updateDynamic("featureToggled")(js.Any.fromFunction2(featureToggled))
     if (featureToggling != null) __obj.updateDynamic("featureToggling")(js.Any.fromFunction2(featureToggling))
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (menuToggling != null) __obj.updateDynamic("menuToggling")(js.Any.fromFunction2(menuToggling))
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridFeatureChooser]

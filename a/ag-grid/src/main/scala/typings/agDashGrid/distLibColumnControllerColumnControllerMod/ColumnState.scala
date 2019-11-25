@@ -28,9 +28,9 @@ object ColumnState {
     rowGroupIndex: Int | Double = null,
     width: Int | Double = null
   ): ColumnState = {
-    val __obj = js.Dynamic.literal(colId = colId)
+    val __obj = js.Dynamic.literal(colId = colId.asInstanceOf[js.Any])
     if (aggFunc != null) __obj.updateDynamic("aggFunc")(aggFunc.asInstanceOf[js.Any])
-    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide)
+    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
     if (pinned != null) __obj.updateDynamic("pinned")(pinned.asInstanceOf[js.Any])
     if (pivotIndex != null) __obj.updateDynamic("pivotIndex")(pivotIndex.asInstanceOf[js.Any])
     if (rowGroupIndex != null) __obj.updateDynamic("rowGroupIndex")(rowGroupIndex.asInstanceOf[js.Any])

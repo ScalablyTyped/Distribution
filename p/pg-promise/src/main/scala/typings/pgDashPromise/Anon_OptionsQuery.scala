@@ -16,8 +16,8 @@ object Anon_OptionsQuery {
   @scala.inline
   def apply(query: String | QueryFile, options: IFormattingOptions = null, values: js.Any = null): Anon_OptionsQuery = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_OptionsQuery]
   }
 }

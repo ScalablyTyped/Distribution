@@ -55,11 +55,11 @@ object IColumnProps {
   ): IColumnProps = {
     val __obj = js.Dynamic.literal()
     if (cellRenderer != null) __obj.updateDynamic("cellRenderer")(js.Any.fromFunction2(cellRenderer))
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (columnHeaderCellRenderer != null) __obj.updateDynamic("columnHeaderCellRenderer")(js.Any.fromFunction1(columnHeaderCellRenderer))
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (loadingOptions != null) __obj.updateDynamic("loadingOptions")(loadingOptions)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (loadingOptions != null) __obj.updateDynamic("loadingOptions")(loadingOptions.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (nameRenderer != null) __obj.updateDynamic("nameRenderer")(js.Any.fromFunction2(nameRenderer))
     __obj.asInstanceOf[IColumnProps]
   }

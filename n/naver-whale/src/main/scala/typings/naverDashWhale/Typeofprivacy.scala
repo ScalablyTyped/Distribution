@@ -16,7 +16,7 @@ trait Typeofprivacy extends js.Object {
 object Typeofprivacy {
   @scala.inline
   def apply(network: Network, services: Services, websites: Websites): Typeofprivacy = {
-    val __obj = js.Dynamic.literal(network = network, services = services, websites = websites)
+    val __obj = js.Dynamic.literal(network = network.asInstanceOf[js.Any], services = services.asInstanceOf[js.Any], websites = websites.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofprivacy]
   }

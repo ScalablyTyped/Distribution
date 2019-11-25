@@ -18,7 +18,7 @@ object AuthenticateResult {
     authenticated: KeycloakPromise[Boolean, KeycloakError],
     keycloak: KeycloakInstance[js.UndefOr[scala.Nothing]]
   ): AuthenticateResult = {
-    val __obj = js.Dynamic.literal(authenticated = authenticated, keycloak = keycloak)
+    val __obj = js.Dynamic.literal(authenticated = authenticated.asInstanceOf[js.Any], keycloak = keycloak.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AuthenticateResult]
   }

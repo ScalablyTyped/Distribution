@@ -22,11 +22,11 @@ object Transaction {
     uuid: String = null
   ): Transaction = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (external_id != null) __obj.updateDynamic("external_id")(external_id)
-    if (result != null) __obj.updateDynamic("result")(result)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (external_id != null) __obj.updateDynamic("external_id")(external_id.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transaction]
   }
 }

@@ -21,8 +21,8 @@ object Anon_Fps {
   ): Anon_Fps = {
     val __obj = js.Dynamic.literal()
     if (fps != null) __obj.updateDynamic("fps")(fps.asInstanceOf[js.Any])
-    if (loop != null) __obj.updateDynamic("loop")(loop)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (spriteAsset != null) __obj.updateDynamic("spriteAsset")(spriteAsset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Fps]
   }

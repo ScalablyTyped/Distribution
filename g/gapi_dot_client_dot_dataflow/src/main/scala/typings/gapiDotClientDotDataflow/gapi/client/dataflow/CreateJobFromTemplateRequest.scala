@@ -32,11 +32,11 @@ object CreateJobFromTemplateRequest {
     parameters: Record[String, String] = null
   ): CreateJobFromTemplateRequest = {
     val __obj = js.Dynamic.literal()
-    if (environment != null) __obj.updateDynamic("environment")(environment)
-    if (gcsPath != null) __obj.updateDynamic("gcsPath")(gcsPath)
-    if (jobName != null) __obj.updateDynamic("jobName")(jobName)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
+    if (gcsPath != null) __obj.updateDynamic("gcsPath")(gcsPath.asInstanceOf[js.Any])
+    if (jobName != null) __obj.updateDynamic("jobName")(jobName.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateJobFromTemplateRequest]
   }
 }

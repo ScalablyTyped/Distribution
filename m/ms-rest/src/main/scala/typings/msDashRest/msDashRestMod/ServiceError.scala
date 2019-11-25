@@ -23,8 +23,8 @@ object ServiceError {
     statusCode: Double,
     stack: String = null
   ): ServiceError = {
-    val __obj = js.Dynamic.literal(body = body, message = message, name = name, request = request, response = response, statusCode = statusCode)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceError]
   }
 }

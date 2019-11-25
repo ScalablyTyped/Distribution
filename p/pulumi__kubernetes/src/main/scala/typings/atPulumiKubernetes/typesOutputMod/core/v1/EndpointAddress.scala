@@ -32,7 +32,7 @@ trait EndpointAddress extends js.Object {
 object EndpointAddress {
   @scala.inline
   def apply(hostname: String, ip: String, nodeName: String, targetRef: ObjectReference): EndpointAddress = {
-    val __obj = js.Dynamic.literal(hostname = hostname, ip = ip, nodeName = nodeName, targetRef = targetRef)
+    val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], targetRef = targetRef.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EndpointAddress]
   }

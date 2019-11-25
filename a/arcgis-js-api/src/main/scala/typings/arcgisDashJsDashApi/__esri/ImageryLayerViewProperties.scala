@@ -17,8 +17,8 @@ object ImageryLayerViewProperties {
   @scala.inline
   def apply(pixelData: ImageryLayerViewPixelData = null, visible: js.UndefOr[Boolean] = js.undefined): ImageryLayerViewProperties = {
     val __obj = js.Dynamic.literal()
-    if (pixelData != null) __obj.updateDynamic("pixelData")(pixelData)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (pixelData != null) __obj.updateDynamic("pixelData")(pixelData.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageryLayerViewProperties]
   }
 }

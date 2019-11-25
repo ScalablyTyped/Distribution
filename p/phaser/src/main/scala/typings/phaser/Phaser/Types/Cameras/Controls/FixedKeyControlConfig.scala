@@ -59,14 +59,14 @@ object FixedKeyControlConfig {
     zoomSpeed: Int | Double = null
   ): FixedKeyControlConfig = {
     val __obj = js.Dynamic.literal()
-    if (camera != null) __obj.updateDynamic("camera")(camera)
-    if (down != null) __obj.updateDynamic("down")(down)
-    if (left != null) __obj.updateDynamic("left")(left)
-    if (right != null) __obj.updateDynamic("right")(right)
+    if (camera != null) __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
+    if (down != null) __obj.updateDynamic("down")(down.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (up != null) __obj.updateDynamic("up")(up)
-    if (zoomIn != null) __obj.updateDynamic("zoomIn")(zoomIn)
-    if (zoomOut != null) __obj.updateDynamic("zoomOut")(zoomOut)
+    if (up != null) __obj.updateDynamic("up")(up.asInstanceOf[js.Any])
+    if (zoomIn != null) __obj.updateDynamic("zoomIn")(zoomIn.asInstanceOf[js.Any])
+    if (zoomOut != null) __obj.updateDynamic("zoomOut")(zoomOut.asInstanceOf[js.Any])
     if (zoomSpeed != null) __obj.updateDynamic("zoomSpeed")(zoomSpeed.asInstanceOf[js.Any])
     __obj.asInstanceOf[FixedKeyControlConfig]
   }

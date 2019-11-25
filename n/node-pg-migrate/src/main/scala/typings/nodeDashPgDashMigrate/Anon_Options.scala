@@ -15,7 +15,7 @@ object Anon_Options {
   @scala.inline
   def apply(table: Name, options: LikeOptions = null): Anon_Options = {
     val __obj = js.Dynamic.literal(table = table.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Options]
   }
 }

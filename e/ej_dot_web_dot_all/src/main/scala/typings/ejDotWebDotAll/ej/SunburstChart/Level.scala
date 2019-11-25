@@ -15,7 +15,7 @@ object Level {
   @scala.inline
   def apply(groupMemberPath: String = null): Level = {
     val __obj = js.Dynamic.literal()
-    if (groupMemberPath != null) __obj.updateDynamic("groupMemberPath")(groupMemberPath)
+    if (groupMemberPath != null) __obj.updateDynamic("groupMemberPath")(groupMemberPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Level]
   }
 }

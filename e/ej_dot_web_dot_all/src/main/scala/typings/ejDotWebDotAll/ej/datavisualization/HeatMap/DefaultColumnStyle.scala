@@ -21,9 +21,9 @@ object DefaultColumnStyle {
   @scala.inline
   def apply(headerTemplateID: String = null, templateID: String = null, textAlign: js.Any = null): DefaultColumnStyle = {
     val __obj = js.Dynamic.literal()
-    if (headerTemplateID != null) __obj.updateDynamic("headerTemplateID")(headerTemplateID)
-    if (templateID != null) __obj.updateDynamic("templateID")(templateID)
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
+    if (headerTemplateID != null) __obj.updateDynamic("headerTemplateID")(headerTemplateID.asInstanceOf[js.Any])
+    if (templateID != null) __obj.updateDynamic("templateID")(templateID.asInstanceOf[js.Any])
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultColumnStyle]
   }
 }

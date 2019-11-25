@@ -43,7 +43,7 @@ object BackendModule {
     save: (/* language */ String, /* namespace */ String, /* data */ ResourceLanguage) => Unit = null
   ): BackendModule[TOptions] = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction4(create), init = js.Any.fromFunction3(init), read = js.Any.fromFunction3(read))
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (readMulti != null) __obj.updateDynamic("readMulti")(js.Any.fromFunction3(readMulti))
     if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction3(save))
     __obj.asInstanceOf[BackendModule[TOptions]]

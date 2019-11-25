@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait Effect extends js.Object
 
+object Effect {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def float: typings.reactDashTooltip.reactDashTooltipStrings.float = this.cast("float")
+  @scala.inline
+  def solid: typings.reactDashTooltip.reactDashTooltipStrings.solid = this.cast("solid")
+}
+

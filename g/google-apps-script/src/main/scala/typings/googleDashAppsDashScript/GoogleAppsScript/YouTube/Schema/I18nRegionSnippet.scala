@@ -13,8 +13,8 @@ object I18nRegionSnippet {
   @scala.inline
   def apply(gl: String = null, name: String = null): I18nRegionSnippet = {
     val __obj = js.Dynamic.literal()
-    if (gl != null) __obj.updateDynamic("gl")(gl)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (gl != null) __obj.updateDynamic("gl")(gl.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[I18nRegionSnippet]
   }
 }

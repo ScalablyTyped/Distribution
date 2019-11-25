@@ -25,7 +25,7 @@ object Anon_AllDetails {
     symbols: Double,
     testResults: Double
   ): Anon_AllDetails = {
-    val __obj = js.Dynamic.literal(all = all, details = details, dropLocation = dropLocation, label = label, none = none, symbols = symbols, testResults = testResults)
+    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dropLocation = dropLocation.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], symbols = symbols.asInstanceOf[js.Any], testResults = testResults.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AllDetails]
   }

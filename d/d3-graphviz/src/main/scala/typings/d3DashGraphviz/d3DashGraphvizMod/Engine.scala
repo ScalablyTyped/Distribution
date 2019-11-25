@@ -15,3 +15,22 @@ import scala.scalajs.js.annotation._
 */
 trait Engine extends js.Object
 
+object Engine {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def circo: typings.d3DashGraphviz.d3DashGraphvizStrings.circo = this.cast("circo")
+  @scala.inline
+  def dot: typings.d3DashGraphviz.d3DashGraphvizStrings.dot = this.cast("dot")
+  @scala.inline
+  def fdp: typings.d3DashGraphviz.d3DashGraphvizStrings.fdp = this.cast("fdp")
+  @scala.inline
+  def neato: typings.d3DashGraphviz.d3DashGraphvizStrings.neato = this.cast("neato")
+  @scala.inline
+  def osage: typings.d3DashGraphviz.d3DashGraphvizStrings.osage = this.cast("osage")
+  @scala.inline
+  def patchwork: typings.d3DashGraphviz.d3DashGraphvizStrings.patchwork = this.cast("patchwork")
+  @scala.inline
+  def twopi: typings.d3DashGraphviz.d3DashGraphvizStrings.twopi = this.cast("twopi")
+}
+

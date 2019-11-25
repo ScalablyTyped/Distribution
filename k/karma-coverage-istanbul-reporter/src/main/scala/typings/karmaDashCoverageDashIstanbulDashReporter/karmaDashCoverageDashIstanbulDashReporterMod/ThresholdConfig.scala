@@ -24,9 +24,9 @@ object ThresholdConfig {
     global: Threshold = null
   ): ThresholdConfig = {
     val __obj = js.Dynamic.literal()
-    if (each != null) __obj.updateDynamic("each")(each)
-    if (!js.isUndefined(emitWarning)) __obj.updateDynamic("emitWarning")(emitWarning)
-    if (global != null) __obj.updateDynamic("global")(global)
+    if (each != null) __obj.updateDynamic("each")(each.asInstanceOf[js.Any])
+    if (!js.isUndefined(emitWarning)) __obj.updateDynamic("emitWarning")(emitWarning.asInstanceOf[js.Any])
+    if (global != null) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThresholdConfig]
   }
 }

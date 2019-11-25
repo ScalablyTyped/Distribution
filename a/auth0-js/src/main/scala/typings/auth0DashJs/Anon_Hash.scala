@@ -24,10 +24,10 @@ trait Anon_Hash extends js.Object {
 object Anon_Hash {
   @scala.inline
   def apply(hash: String, _idTokenVerification: String = null, nonce: String = null, state: String = null): Anon_Hash = {
-    val __obj = js.Dynamic.literal(hash = hash)
-    if (_idTokenVerification != null) __obj.updateDynamic("_idTokenVerification")(_idTokenVerification)
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
-    if (state != null) __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any])
+    if (_idTokenVerification != null) __obj.updateDynamic("_idTokenVerification")(_idTokenVerification.asInstanceOf[js.Any])
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Hash]
   }
 }

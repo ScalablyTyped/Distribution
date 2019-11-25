@@ -24,10 +24,10 @@ object PlacementAssignment {
     sslRequired: js.UndefOr[Boolean] = js.undefined
   ): PlacementAssignment = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (placementId != null) __obj.updateDynamic("placementId")(placementId)
-    if (placementIdDimensionValue != null) __obj.updateDynamic("placementIdDimensionValue")(placementIdDimensionValue)
-    if (!js.isUndefined(sslRequired)) __obj.updateDynamic("sslRequired")(sslRequired)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (placementId != null) __obj.updateDynamic("placementId")(placementId.asInstanceOf[js.Any])
+    if (placementIdDimensionValue != null) __obj.updateDynamic("placementIdDimensionValue")(placementIdDimensionValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(sslRequired)) __obj.updateDynamic("sslRequired")(sslRequired.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlacementAssignment]
   }
 }

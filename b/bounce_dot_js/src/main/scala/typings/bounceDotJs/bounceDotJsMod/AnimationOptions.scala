@@ -18,9 +18,9 @@ object AnimationOptions {
     remove: js.UndefOr[Boolean] = js.undefined
   ): AnimationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction0(onComplete))
-    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove)
+    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationOptions]
   }
 }

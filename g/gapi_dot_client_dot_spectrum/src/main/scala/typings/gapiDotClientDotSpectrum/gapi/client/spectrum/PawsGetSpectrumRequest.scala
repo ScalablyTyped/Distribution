@@ -72,15 +72,15 @@ object PawsGetSpectrumRequest {
     version: String = null
   ): PawsGetSpectrumRequest = {
     val __obj = js.Dynamic.literal()
-    if (antenna != null) __obj.updateDynamic("antenna")(antenna)
-    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities)
-    if (deviceDesc != null) __obj.updateDynamic("deviceDesc")(deviceDesc)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (masterDeviceDesc != null) __obj.updateDynamic("masterDeviceDesc")(masterDeviceDesc)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (antenna != null) __obj.updateDynamic("antenna")(antenna.asInstanceOf[js.Any])
+    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
+    if (deviceDesc != null) __obj.updateDynamic("deviceDesc")(deviceDesc.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (masterDeviceDesc != null) __obj.updateDynamic("masterDeviceDesc")(masterDeviceDesc.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PawsGetSpectrumRequest]
   }
 }

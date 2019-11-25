@@ -13,7 +13,7 @@ object ListThreatListsResponse {
   @scala.inline
   def apply(threatLists: js.Array[ThreatListDescriptor] = null): ListThreatListsResponse = {
     val __obj = js.Dynamic.literal()
-    if (threatLists != null) __obj.updateDynamic("threatLists")(threatLists)
+    if (threatLists != null) __obj.updateDynamic("threatLists")(threatLists.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListThreatListsResponse]
   }
 }

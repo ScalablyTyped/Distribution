@@ -28,7 +28,7 @@ object TestResultTrendFilter {
     testRunTitles: js.Array[String],
     trendDays: Double
   ): TestResultTrendFilter = {
-    val __obj = js.Dynamic.literal(branchNames = branchNames, buildCount = buildCount, definitionIds = definitionIds, envDefinitionIds = envDefinitionIds, maxCompleteDate = maxCompleteDate, publishContext = publishContext, testRunTitles = testRunTitles, trendDays = trendDays)
+    val __obj = js.Dynamic.literal(branchNames = branchNames.asInstanceOf[js.Any], buildCount = buildCount.asInstanceOf[js.Any], definitionIds = definitionIds.asInstanceOf[js.Any], envDefinitionIds = envDefinitionIds.asInstanceOf[js.Any], maxCompleteDate = maxCompleteDate.asInstanceOf[js.Any], publishContext = publishContext.asInstanceOf[js.Any], testRunTitles = testRunTitles.asInstanceOf[js.Any], trendDays = trendDays.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestResultTrendFilter]
   }

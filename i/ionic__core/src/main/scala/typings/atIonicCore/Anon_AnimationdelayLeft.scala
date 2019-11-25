@@ -12,8 +12,8 @@ trait Anon_AnimationdelayLeft extends js.Object {
 object Anon_AnimationdelayLeft {
   @scala.inline
   def apply(`animation-delay`: String, left: String): Anon_AnimationdelayLeft = {
-    val __obj = js.Dynamic.literal(left = left)
-    __obj.updateDynamic("animation-delay")(`animation-delay`)
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any])
+    __obj.updateDynamic("animation-delay")(`animation-delay`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AnimationdelayLeft]
   }
 }

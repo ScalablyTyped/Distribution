@@ -28,19 +28,19 @@ object SubArgumentParserOptions {
     version: String = null
   ): SubArgumentParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addHelp)) __obj.updateDynamic("addHelp")(addHelp)
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
-    if (argumentDefault != null) __obj.updateDynamic("argumentDefault")(argumentDefault)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (epilog != null) __obj.updateDynamic("epilog")(epilog)
-    if (formatterClass != null) __obj.updateDynamic("formatterClass")(formatterClass)
-    if (help != null) __obj.updateDynamic("help")(help)
-    if (parents != null) __obj.updateDynamic("parents")(parents)
-    if (prefixChars != null) __obj.updateDynamic("prefixChars")(prefixChars)
-    if (prog != null) __obj.updateDynamic("prog")(prog)
-    if (usage != null) __obj.updateDynamic("usage")(usage)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (!js.isUndefined(addHelp)) __obj.updateDynamic("addHelp")(addHelp.asInstanceOf[js.Any])
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
+    if (argumentDefault != null) __obj.updateDynamic("argumentDefault")(argumentDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (epilog != null) __obj.updateDynamic("epilog")(epilog.asInstanceOf[js.Any])
+    if (formatterClass != null) __obj.updateDynamic("formatterClass")(formatterClass.asInstanceOf[js.Any])
+    if (help != null) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
+    if (parents != null) __obj.updateDynamic("parents")(parents.asInstanceOf[js.Any])
+    if (prefixChars != null) __obj.updateDynamic("prefixChars")(prefixChars.asInstanceOf[js.Any])
+    if (prog != null) __obj.updateDynamic("prog")(prog.asInstanceOf[js.Any])
+    if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubArgumentParserOptions]
   }
 }

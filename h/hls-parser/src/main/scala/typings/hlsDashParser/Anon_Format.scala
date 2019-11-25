@@ -22,11 +22,11 @@ object Anon_Format {
     iv: Buffer = null,
     uri: String = null
   ): Anon_Format = {
-    val __obj = js.Dynamic.literal(method = method)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (formatVersion != null) __obj.updateDynamic("formatVersion")(formatVersion)
-    if (iv != null) __obj.updateDynamic("iv")(iv)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (formatVersion != null) __obj.updateDynamic("formatVersion")(formatVersion.asInstanceOf[js.Any])
+    if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Format]
   }
 }

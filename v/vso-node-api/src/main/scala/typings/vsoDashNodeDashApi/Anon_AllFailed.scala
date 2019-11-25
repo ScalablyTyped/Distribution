@@ -25,7 +25,7 @@ object Anon_AllFailed {
     succeeded: Double,
     undefined: Double
   ): Anon_AllFailed = {
-    val __obj = js.Dynamic.literal(all = all, failed = failed, inProgress = inProgress, notDeployed = notDeployed, partiallySucceeded = partiallySucceeded, succeeded = succeeded, undefined = undefined)
+    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], inProgress = inProgress.asInstanceOf[js.Any], notDeployed = notDeployed.asInstanceOf[js.Any], partiallySucceeded = partiallySucceeded.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any], undefined = undefined.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AllFailed]
   }

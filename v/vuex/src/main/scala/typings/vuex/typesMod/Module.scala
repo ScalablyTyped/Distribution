@@ -24,11 +24,11 @@ object Module {
     state: S | js.Function0[S] = null
   ): Module[S, R] = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (getters != null) __obj.updateDynamic("getters")(getters)
-    if (modules != null) __obj.updateDynamic("modules")(modules)
-    if (mutations != null) __obj.updateDynamic("mutations")(mutations)
-    if (!js.isUndefined(namespaced)) __obj.updateDynamic("namespaced")(namespaced)
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (getters != null) __obj.updateDynamic("getters")(getters.asInstanceOf[js.Any])
+    if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
+    if (mutations != null) __obj.updateDynamic("mutations")(mutations.asInstanceOf[js.Any])
+    if (!js.isUndefined(namespaced)) __obj.updateDynamic("namespaced")(namespaced.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Module[S, R]]
   }

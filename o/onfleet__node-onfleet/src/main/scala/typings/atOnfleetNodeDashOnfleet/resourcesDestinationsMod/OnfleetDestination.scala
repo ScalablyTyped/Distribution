@@ -27,7 +27,7 @@ object OnfleetDestination {
     timeCreated: Double,
     timeLastModified: Double
   ): OnfleetDestination = {
-    val __obj = js.Dynamic.literal(address = address, id = id, location = location, metadata = metadata, notes = notes, timeCreated = timeCreated, timeLastModified = timeLastModified)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], timeCreated = timeCreated.asInstanceOf[js.Any], timeLastModified = timeLastModified.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OnfleetDestination]
   }

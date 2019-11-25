@@ -43,12 +43,12 @@ object GuideStep {
     contentUrlJs: String = null,
     thumbnailUrls: String = null
   ): GuideStep = {
-    val __obj = js.Dynamic.literal(advanceMethod = advanceMethod.asInstanceOf[js.Any], attributes = attributes, contentType = contentType, elementPathRule = elementPathRule, guideId = guideId, id = id, lastUpdatedAt = lastUpdatedAt, rank = rank, resetAt = resetAt)
-    __obj.updateDynamic("type")(`type`)
-    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl)
-    if (contentUrlCss != null) __obj.updateDynamic("contentUrlCss")(contentUrlCss)
-    if (contentUrlJs != null) __obj.updateDynamic("contentUrlJs")(contentUrlJs)
-    if (thumbnailUrls != null) __obj.updateDynamic("thumbnailUrls")(thumbnailUrls)
+    val __obj = js.Dynamic.literal(advanceMethod = advanceMethod.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], elementPathRule = elementPathRule.asInstanceOf[js.Any], guideId = guideId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lastUpdatedAt = lastUpdatedAt.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any], resetAt = resetAt.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl.asInstanceOf[js.Any])
+    if (contentUrlCss != null) __obj.updateDynamic("contentUrlCss")(contentUrlCss.asInstanceOf[js.Any])
+    if (contentUrlJs != null) __obj.updateDynamic("contentUrlJs")(contentUrlJs.asInstanceOf[js.Any])
+    if (thumbnailUrls != null) __obj.updateDynamic("thumbnailUrls")(thumbnailUrls.asInstanceOf[js.Any])
     __obj.asInstanceOf[GuideStep]
   }
 }

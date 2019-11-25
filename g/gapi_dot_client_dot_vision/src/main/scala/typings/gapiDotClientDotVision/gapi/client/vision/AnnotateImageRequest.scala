@@ -17,9 +17,9 @@ object AnnotateImageRequest {
   @scala.inline
   def apply(features: js.Array[Feature] = null, image: Image = null, imageContext: ImageContext = null): AnnotateImageRequest = {
     val __obj = js.Dynamic.literal()
-    if (features != null) __obj.updateDynamic("features")(features)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (imageContext != null) __obj.updateDynamic("imageContext")(imageContext)
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (imageContext != null) __obj.updateDynamic("imageContext")(imageContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotateImageRequest]
   }
 }

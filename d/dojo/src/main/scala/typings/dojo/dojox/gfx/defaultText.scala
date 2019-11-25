@@ -65,8 +65,8 @@ object defaultText {
     x: Double,
     y: Double
   ): defaultText = {
-    val __obj = js.Dynamic.literal(align = align, decoration = decoration, kerning = kerning, rotated = rotated, text = text, x = x, y = y)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], decoration = decoration.asInstanceOf[js.Any], kerning = kerning.asInstanceOf[js.Any], rotated = rotated.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[defaultText]
   }
 }

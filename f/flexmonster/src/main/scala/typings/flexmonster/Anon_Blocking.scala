@@ -22,11 +22,11 @@ object Anon_Blocking {
     `type`: String = null
   ): Anon_Blocking = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blocking)) __obj.updateDynamic("blocking")(blocking)
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(blocking)) __obj.updateDynamic("blocking")(blocking.asInstanceOf[js.Any])
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Blocking]
   }
 }

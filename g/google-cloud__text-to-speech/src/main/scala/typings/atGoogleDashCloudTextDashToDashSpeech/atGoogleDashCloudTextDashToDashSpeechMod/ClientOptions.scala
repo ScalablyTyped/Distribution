@@ -26,13 +26,13 @@ object ClientOptions {
     servicePath: String = null
   ): ClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (keyFilename != null) __obj.updateDynamic("keyFilename")(keyFilename)
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (keyFilename != null) __obj.updateDynamic("keyFilename")(keyFilename.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
-    if (promise != null) __obj.updateDynamic("promise")(promise)
-    if (servicePath != null) __obj.updateDynamic("servicePath")(servicePath)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
+    if (servicePath != null) __obj.updateDynamic("servicePath")(servicePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
 }

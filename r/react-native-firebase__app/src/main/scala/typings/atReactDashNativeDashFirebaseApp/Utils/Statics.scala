@@ -11,7 +11,7 @@ trait Statics extends js.Object {
 object Statics {
   @scala.inline
   def apply(FilePath: FilePath): Statics = {
-    val __obj = js.Dynamic.literal(FilePath = FilePath)
+    val __obj = js.Dynamic.literal(FilePath = FilePath.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Statics]
   }

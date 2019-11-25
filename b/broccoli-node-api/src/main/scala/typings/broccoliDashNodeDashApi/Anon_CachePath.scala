@@ -13,8 +13,8 @@ trait Anon_CachePath extends js.Object {
 object Anon_CachePath {
   @scala.inline
   def apply(inputPaths: js.Array[String], outputPath: String, cachePath: String = null): Anon_CachePath = {
-    val __obj = js.Dynamic.literal(inputPaths = inputPaths, outputPath = outputPath)
-    if (cachePath != null) __obj.updateDynamic("cachePath")(cachePath)
+    val __obj = js.Dynamic.literal(inputPaths = inputPaths.asInstanceOf[js.Any], outputPath = outputPath.asInstanceOf[js.Any])
+    if (cachePath != null) __obj.updateDynamic("cachePath")(cachePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CachePath]
   }
 }

@@ -1,6 +1,6 @@
 package typings.koaDashJoiDashRouter.koaDashJoiDashRouterMod
 
-import typings.koaDashJoiDashRouter.Anon_Body
+import typings.koaDashJoiDashRouter.Anon_BodyContinueOnError
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,12 +20,12 @@ object Spec {
     path: String | RegExp,
     meta: js.Any = null,
     pre: Handler = null,
-    validate: Anon_Body = null
+    validate: Anon_BodyContinueOnError = null
   ): Spec = {
     val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (pre != null) __obj.updateDynamic("pre")(pre.asInstanceOf[js.Any])
-    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (validate != null) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Spec]
   }
 }

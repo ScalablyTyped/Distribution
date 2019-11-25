@@ -5,7 +5,7 @@ import typings.ably.ablyStrings.closing
 import typings.ably.ablyStrings.connected
 import typings.ably.ablyStrings.connecting
 import typings.ably.ablyStrings.disconnected
-import typings.ably.ablyStrings.failed
+import typings.ably.ablyStrings.failed_
 import typings.ably.ablyStrings.initialized
 import typings.ably.ablyStrings.suspended
 import typings.ably.ablyStrings.update
@@ -21,7 +21,7 @@ object ConnectionEvent extends js.Object {
   type CONNECTED = connected
   type CONNECTING = connecting
   type DISCONNECTED = disconnected
-  type FAILED = failed
+  type FAILED = failed_
   type INITIALIZED = initialized
   type SUSPENDED = suspended
   type UPDATE = update

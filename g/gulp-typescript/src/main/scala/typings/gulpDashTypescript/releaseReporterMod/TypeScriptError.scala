@@ -33,14 +33,14 @@ object TypeScriptError {
     startPosition: Anon_Character = null,
     tsFile: SourceFile = null
   ): TypeScriptError = {
-    val __obj = js.Dynamic.literal(diagnostic = diagnostic, message = message, name = name)
-    if (endPosition != null) __obj.updateDynamic("endPosition")(endPosition)
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (fullFilename != null) __obj.updateDynamic("fullFilename")(fullFilename)
-    if (relativeFilename != null) __obj.updateDynamic("relativeFilename")(relativeFilename)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
-    if (startPosition != null) __obj.updateDynamic("startPosition")(startPosition)
-    if (tsFile != null) __obj.updateDynamic("tsFile")(tsFile)
+    val __obj = js.Dynamic.literal(diagnostic = diagnostic.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (endPosition != null) __obj.updateDynamic("endPosition")(endPosition.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (fullFilename != null) __obj.updateDynamic("fullFilename")(fullFilename.asInstanceOf[js.Any])
+    if (relativeFilename != null) __obj.updateDynamic("relativeFilename")(relativeFilename.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    if (startPosition != null) __obj.updateDynamic("startPosition")(startPosition.asInstanceOf[js.Any])
+    if (tsFile != null) __obj.updateDynamic("tsFile")(tsFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeScriptError]
   }
 }

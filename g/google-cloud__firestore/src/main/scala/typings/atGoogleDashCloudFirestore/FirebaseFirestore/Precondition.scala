@@ -15,7 +15,7 @@ object Precondition {
   @scala.inline
   def apply(lastUpdateTime: Timestamp = null): Precondition = {
     val __obj = js.Dynamic.literal()
-    if (lastUpdateTime != null) __obj.updateDynamic("lastUpdateTime")(lastUpdateTime)
+    if (lastUpdateTime != null) __obj.updateDynamic("lastUpdateTime")(lastUpdateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Precondition]
   }
 }

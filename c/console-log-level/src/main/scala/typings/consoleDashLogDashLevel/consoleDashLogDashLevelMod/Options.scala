@@ -18,9 +18,9 @@ object Options {
     stderr: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (level != null) __obj.updateDynamic("level")(level)
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(stderr)) __obj.updateDynamic("stderr")(stderr)
+    if (!js.isUndefined(stderr)) __obj.updateDynamic("stderr")(stderr.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

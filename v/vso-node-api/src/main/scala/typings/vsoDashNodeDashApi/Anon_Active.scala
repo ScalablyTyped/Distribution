@@ -25,7 +25,7 @@ object Anon_Active {
     unknown: Double,
     wontFix: Double
   ): Anon_Active = {
-    val __obj = js.Dynamic.literal(active = active, byDesign = byDesign, closed = closed, fixed = fixed, pending = pending, unknown = unknown, wontFix = wontFix)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], byDesign = byDesign.asInstanceOf[js.Any], closed = closed.asInstanceOf[js.Any], fixed = fixed.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], unknown = unknown.asInstanceOf[js.Any], wontFix = wontFix.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Active]
   }

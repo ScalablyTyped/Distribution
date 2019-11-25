@@ -44,7 +44,7 @@ object WorkflowConflicts {
     spawnsConcurrency: Boolean,
     stepId: Double
   ): WorkflowConflicts = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobID = jobID, options = options, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), spawnsConcurrency = spawnsConcurrency, stepId = stepId)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobID = jobID.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), spawnsConcurrency = spawnsConcurrency.asInstanceOf[js.Any], stepId = stepId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkflowConflicts]
   }

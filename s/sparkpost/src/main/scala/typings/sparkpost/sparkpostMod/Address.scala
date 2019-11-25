@@ -16,9 +16,9 @@ trait Address extends js.Object {
 object Address {
   @scala.inline
   def apply(email: String, header_to: String = null, name: String = null): Address = {
-    val __obj = js.Dynamic.literal(email = email)
-    if (header_to != null) __obj.updateDynamic("header_to")(header_to)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
+    if (header_to != null) __obj.updateDynamic("header_to")(header_to.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Address]
   }
 }

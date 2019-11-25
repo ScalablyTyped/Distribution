@@ -28,11 +28,11 @@ object ProductTileContentProps {
     titleProps: StringDictionary[js.Any] = null
   ): ProductTileContentProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (headingLevel != null) __obj.updateDynamic("headingLevel")(headingLevel.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (titleProps != null) __obj.updateDynamic("titleProps")(titleProps)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (titleProps != null) __obj.updateDynamic("titleProps")(titleProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductTileContentProps]
   }
 }

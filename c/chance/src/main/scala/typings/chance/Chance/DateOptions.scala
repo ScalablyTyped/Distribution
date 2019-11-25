@@ -27,12 +27,12 @@ object DateOptions {
     year: Int | Double = null
   ): DateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(american)) __obj.updateDynamic("american")(american)
+    if (!js.isUndefined(american)) __obj.updateDynamic("american")(american.asInstanceOf[js.Any])
     if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max)
-    if (min != null) __obj.updateDynamic("min")(min)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
-    if (!js.isUndefined(string)) __obj.updateDynamic("string")(string)
+    if (!js.isUndefined(string)) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
     if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateOptions]
   }

@@ -16,7 +16,7 @@ object ConfigOptions {
     awsConfig: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.Config */ js.Any = null
   ): ConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (awsConfig != null) __obj.updateDynamic("awsConfig")(awsConfig)
+    if (awsConfig != null) __obj.updateDynamic("awsConfig")(awsConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }
 }

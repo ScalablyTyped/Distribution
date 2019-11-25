@@ -45,10 +45,10 @@ object Model {
     skip: js.UndefOr[Boolean] = js.undefined,
     steppedLine: js.UndefOr[scala.Nothing] = js.undefined
   ): Model = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, base = base, borderColor = borderColor, controlPointNextX = controlPointNextX, controlPointNextY = controlPointNextY, controlPointPreviousX = controlPointPreviousX, controlPointPreviousY = controlPointPreviousY, head = head, hitRadius = hitRadius, pointStyle = pointStyle, radius = radius, tension = tension, x = x, y = y)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any], controlPointNextX = controlPointNextX.asInstanceOf[js.Any], controlPointNextY = controlPointNextY.asInstanceOf[js.Any], controlPointPreviousX = controlPointPreviousX.asInstanceOf[js.Any], controlPointPreviousY = controlPointPreviousY.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], hitRadius = hitRadius.asInstanceOf[js.Any], pointStyle = pointStyle.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], tension = tension.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip)
-    if (!js.isUndefined(steppedLine)) __obj.updateDynamic("steppedLine")(steppedLine)
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (!js.isUndefined(steppedLine)) __obj.updateDynamic("steppedLine")(steppedLine.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

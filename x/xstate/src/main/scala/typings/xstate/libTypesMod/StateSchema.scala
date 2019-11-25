@@ -14,8 +14,8 @@ object StateSchema {
   @scala.inline
   def apply(meta: js.Any = null, states: Record[String | Double, StateSchema] = null): StateSchema = {
     val __obj = js.Dynamic.literal()
-    if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (states != null) __obj.updateDynamic("states")(states)
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateSchema]
   }
 }

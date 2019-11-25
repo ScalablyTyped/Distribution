@@ -11,7 +11,7 @@ trait DaysOfWeekModifier extends _Modifier {
 object DaysOfWeekModifier {
   @scala.inline
   def apply(daysOfWeek: js.Array[Double]): DaysOfWeekModifier = {
-    val __obj = js.Dynamic.literal(daysOfWeek = daysOfWeek)
+    val __obj = js.Dynamic.literal(daysOfWeek = daysOfWeek.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DaysOfWeekModifier]
   }

@@ -11,7 +11,7 @@ trait Anon_AddWord extends js.Object {
     * Add a new word to the trie
     */
   def addWord(word: String): ReturnType[
-    /* import warning: ImportType.apply Failed type conversion: typeof Trie */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof Trie */ js.Any
   ] = js.native
   /**
     * Count the number of words with the given prefixSearch
@@ -64,7 +64,7 @@ trait Anon_AddWord extends js.Object {
     * Remove an existing word from the trie
     */
   def removeWord(word: String): ReturnType[
-    /* import warning: ImportType.apply Failed type conversion: typeof Trie */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof Trie */ js.Any
   ] = js.native
   /**
     * Get the generated raw trie object

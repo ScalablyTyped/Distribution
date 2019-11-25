@@ -33,7 +33,7 @@ object ReposListForksParams {
     per_page: Int | Double = null,
     sort: newest | oldest | stargazers = null
   ): ReposListForksParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])

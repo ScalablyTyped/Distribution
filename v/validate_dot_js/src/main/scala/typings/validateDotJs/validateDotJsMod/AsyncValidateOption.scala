@@ -18,9 +18,9 @@ object AsyncValidateOption {
     wrapErrors: js.Function = null
   ): AsyncValidateOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cleanAttributes)) __obj.updateDynamic("cleanAttributes")(cleanAttributes)
-    if (prettify != null) __obj.updateDynamic("prettify")(prettify)
-    if (wrapErrors != null) __obj.updateDynamic("wrapErrors")(wrapErrors)
+    if (!js.isUndefined(cleanAttributes)) __obj.updateDynamic("cleanAttributes")(cleanAttributes.asInstanceOf[js.Any])
+    if (prettify != null) __obj.updateDynamic("prettify")(prettify.asInstanceOf[js.Any])
+    if (wrapErrors != null) __obj.updateDynamic("wrapErrors")(wrapErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncValidateOption]
   }
 }

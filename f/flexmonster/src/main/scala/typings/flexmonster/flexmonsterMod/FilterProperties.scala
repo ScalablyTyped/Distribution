@@ -20,9 +20,9 @@ object FilterProperties {
     quantity: Int | Double = null
   ): FilterProperties = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (measure != null) __obj.updateDynamic("measure")(measure)
-    if (members != null) __obj.updateDynamic("members")(members)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (measure != null) __obj.updateDynamic("measure")(measure.asInstanceOf[js.Any])
+    if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterProperties]
   }

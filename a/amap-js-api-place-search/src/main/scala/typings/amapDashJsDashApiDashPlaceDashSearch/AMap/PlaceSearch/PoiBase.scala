@@ -51,10 +51,10 @@ object PoiBase {
     children: js.Array[_] = null,
     location: LngLat = null
   ): PoiBase = {
-    val __obj = js.Dynamic.literal(address = address, distance = distance, id = id, name = name, shopinfo = shopinfo, tel = tel)
-    __obj.updateDynamic("type")(`type`)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], shopinfo = shopinfo.asInstanceOf[js.Any], tel = tel.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[PoiBase]
   }
 }

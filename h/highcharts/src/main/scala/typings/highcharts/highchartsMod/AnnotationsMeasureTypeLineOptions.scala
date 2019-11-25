@@ -12,7 +12,7 @@ object AnnotationsMeasureTypeLineOptions {
   @scala.inline
   def apply(fill: String = null): AnnotationsMeasureTypeLineOptions = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsMeasureTypeLineOptions]
   }
 }

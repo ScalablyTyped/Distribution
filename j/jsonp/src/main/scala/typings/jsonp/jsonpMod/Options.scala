@@ -15,9 +15,9 @@ object Options {
   @scala.inline
   def apply(name: String = null, param: String = null, prefix: String = null, timeout: Int | Double = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (param != null) __obj.updateDynamic("param")(param)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (param != null) __obj.updateDynamic("param")(param.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

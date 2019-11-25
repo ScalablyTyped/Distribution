@@ -82,12 +82,12 @@ object FeatureFilterProperties {
   ): FeatureFilterProperties = {
     val __obj = js.Dynamic.literal()
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (geometry != null) __obj.updateDynamic("geometry")(geometry)
-    if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds)
-    if (spatialRelationship != null) __obj.updateDynamic("spatialRelationship")(spatialRelationship)
-    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent)
+    if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
+    if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds.asInstanceOf[js.Any])
+    if (spatialRelationship != null) __obj.updateDynamic("spatialRelationship")(spatialRelationship.asInstanceOf[js.Any])
+    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent.asInstanceOf[js.Any])
     if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
-    if (where != null) __obj.updateDynamic("where")(where)
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureFilterProperties]
   }
 }

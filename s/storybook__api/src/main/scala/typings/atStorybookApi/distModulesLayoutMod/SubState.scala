@@ -15,8 +15,8 @@ trait SubState extends js.Object {
 object SubState {
   @scala.inline
   def apply(layout: Layout, theme: ThemeVars, ui: UI, selectedPanel: String = null): SubState = {
-    val __obj = js.Dynamic.literal(layout = layout, theme = theme, ui = ui)
-    if (selectedPanel != null) __obj.updateDynamic("selectedPanel")(selectedPanel)
+    val __obj = js.Dynamic.literal(layout = layout.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], ui = ui.asInstanceOf[js.Any])
+    if (selectedPanel != null) __obj.updateDynamic("selectedPanel")(selectedPanel.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubState]
   }
 }

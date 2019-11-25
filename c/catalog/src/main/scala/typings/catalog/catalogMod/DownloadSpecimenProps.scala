@@ -14,10 +14,10 @@ trait DownloadSpecimenProps extends js.Object {
 object DownloadSpecimenProps {
   @scala.inline
   def apply(url: String, filename: String = null, subtitle: String = null, title: String = null): DownloadSpecimenProps = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadSpecimenProps]
   }
 }

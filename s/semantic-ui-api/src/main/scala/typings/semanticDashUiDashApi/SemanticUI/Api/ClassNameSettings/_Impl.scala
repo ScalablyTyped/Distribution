@@ -18,7 +18,7 @@ trait _Impl extends js.Object {
 object _Impl {
   @scala.inline
   def apply(error: String, loading: String): _Impl = {
-    val __obj = js.Dynamic.literal(error = error, loading = loading)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

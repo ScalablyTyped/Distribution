@@ -11,7 +11,7 @@ trait UsersGetByUsernameParams extends js.Object {
 object UsersGetByUsernameParams {
   @scala.inline
   def apply(username: String): UsersGetByUsernameParams = {
-    val __obj = js.Dynamic.literal(username = username)
+    val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UsersGetByUsernameParams]
   }

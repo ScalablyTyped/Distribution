@@ -12,7 +12,7 @@ object MediaPrompt {
   @scala.inline
   def apply(mediaInfo: MediaInfo = null): MediaPrompt = {
     val __obj = js.Dynamic.literal()
-    if (mediaInfo != null) __obj.updateDynamic("mediaInfo")(mediaInfo)
+    if (mediaInfo != null) __obj.updateDynamic("mediaInfo")(mediaInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaPrompt]
   }
 }

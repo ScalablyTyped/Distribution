@@ -29,7 +29,7 @@ trait TypeofNumberTextBox extends js.Object {
 object TypeofNumberTextBox {
   @scala.inline
   def apply(Mixin: Instantiable0[Mixin], __Constraints: Instantiable0[__Constraints]): TypeofNumberTextBox = {
-    val __obj = js.Dynamic.literal(Mixin = Mixin, __Constraints = __Constraints)
+    val __obj = js.Dynamic.literal(Mixin = Mixin.asInstanceOf[js.Any], __Constraints = __Constraints.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofNumberTextBox]
   }

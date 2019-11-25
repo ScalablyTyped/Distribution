@@ -55,13 +55,13 @@ object CandidateWindowParameterProperties {
     windowPosition: String = null
   ): CandidateWindowParameterProperties = {
     val __obj = js.Dynamic.literal()
-    if (auxiliaryText != null) __obj.updateDynamic("auxiliaryText")(auxiliaryText)
-    if (!js.isUndefined(auxiliaryTextVisible)) __obj.updateDynamic("auxiliaryTextVisible")(auxiliaryTextVisible)
-    if (!js.isUndefined(cursorVisible)) __obj.updateDynamic("cursorVisible")(cursorVisible)
+    if (auxiliaryText != null) __obj.updateDynamic("auxiliaryText")(auxiliaryText.asInstanceOf[js.Any])
+    if (!js.isUndefined(auxiliaryTextVisible)) __obj.updateDynamic("auxiliaryTextVisible")(auxiliaryTextVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(cursorVisible)) __obj.updateDynamic("cursorVisible")(cursorVisible.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
-    if (windowPosition != null) __obj.updateDynamic("windowPosition")(windowPosition)
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (windowPosition != null) __obj.updateDynamic("windowPosition")(windowPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[CandidateWindowParameterProperties]
   }
 }

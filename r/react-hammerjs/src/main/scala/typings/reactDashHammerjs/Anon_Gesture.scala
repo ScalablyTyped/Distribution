@@ -14,7 +14,7 @@ object Anon_Gesture {
   @scala.inline
   def apply(recognizers: StringDictionary[RecognizerOptions] = null): Anon_Gesture = {
     val __obj = js.Dynamic.literal()
-    if (recognizers != null) __obj.updateDynamic("recognizers")(recognizers)
+    if (recognizers != null) __obj.updateDynamic("recognizers")(recognizers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Gesture]
   }
 }

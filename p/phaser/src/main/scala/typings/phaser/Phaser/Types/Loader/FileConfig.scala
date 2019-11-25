@@ -53,13 +53,13 @@ object FileConfig {
     url: String = null,
     xhrSettings: XHRSettingsObject | `false` = null
   ): FileConfig = {
-    val __obj = js.Dynamic.literal(key = key)
-    __obj.updateDynamic("type")(`type`)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
-    if (url != null) __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (xhrSettings != null) __obj.updateDynamic("xhrSettings")(xhrSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileConfig]
   }

@@ -19,9 +19,9 @@ object CustomAuthorizerResult {
     context: AuthResponseContext = null,
     usageIdentifierKey: String = null
   ): CustomAuthorizerResult = {
-    val __obj = js.Dynamic.literal(policyDocument = policyDocument, principalId = principalId)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (usageIdentifierKey != null) __obj.updateDynamic("usageIdentifierKey")(usageIdentifierKey)
+    val __obj = js.Dynamic.literal(policyDocument = policyDocument.asInstanceOf[js.Any], principalId = principalId.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (usageIdentifierKey != null) __obj.updateDynamic("usageIdentifierKey")(usageIdentifierKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomAuthorizerResult]
   }
 }

@@ -34,8 +34,8 @@ object PositionSettings {
   ): PositionSettings = {
     val __obj = js.Dynamic.literal()
     if (defaultColumnWidth != null) __obj.updateDynamic("defaultColumnWidth")(defaultColumnWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(disablePointerEvents)) __obj.updateDynamic("disablePointerEvents")(disablePointerEvents)
-    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader)
+    if (!js.isUndefined(disablePointerEvents)) __obj.updateDynamic("disablePointerEvents")(disablePointerEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader.asInstanceOf[js.Any])
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
     if (tableHeight != null) __obj.updateDynamic("tableHeight")(tableHeight.asInstanceOf[js.Any])
     if (tableWidth != null) __obj.updateDynamic("tableWidth")(tableWidth.asInstanceOf[js.Any])

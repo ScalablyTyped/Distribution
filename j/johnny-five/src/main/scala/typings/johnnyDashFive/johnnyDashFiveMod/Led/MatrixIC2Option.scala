@@ -21,10 +21,10 @@ object MatrixIC2Option {
     isBicolor: js.UndefOr[Boolean] = js.undefined,
     rotation: Int | Double = null
   ): MatrixIC2Option = {
-    val __obj = js.Dynamic.literal(controller = controller)
-    if (addresses != null) __obj.updateDynamic("addresses")(addresses)
-    if (dims != null) __obj.updateDynamic("dims")(dims)
-    if (!js.isUndefined(isBicolor)) __obj.updateDynamic("isBicolor")(isBicolor)
+    val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any])
+    if (addresses != null) __obj.updateDynamic("addresses")(addresses.asInstanceOf[js.Any])
+    if (dims != null) __obj.updateDynamic("dims")(dims.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBicolor)) __obj.updateDynamic("isBicolor")(isBicolor.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatrixIC2Option]
   }

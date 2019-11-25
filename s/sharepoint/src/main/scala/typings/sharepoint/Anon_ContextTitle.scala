@@ -12,7 +12,7 @@ trait Anon_ContextTitle extends js.Object {
 object Anon_ContextTitle {
   @scala.inline
   def apply(contextTitle: String, openDocumentsInClient: Boolean): Anon_ContextTitle = {
-    val __obj = js.Dynamic.literal(contextTitle = contextTitle, openDocumentsInClient = openDocumentsInClient)
+    val __obj = js.Dynamic.literal(contextTitle = contextTitle.asInstanceOf[js.Any], openDocumentsInClient = openDocumentsInClient.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContextTitle]
   }

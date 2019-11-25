@@ -15,8 +15,8 @@ object TextProperty {
   @scala.inline
   def apply(detectedBreak: DetectedBreak = null, detectedLanguages: js.Array[DetectedLanguage] = null): TextProperty = {
     val __obj = js.Dynamic.literal()
-    if (detectedBreak != null) __obj.updateDynamic("detectedBreak")(detectedBreak)
-    if (detectedLanguages != null) __obj.updateDynamic("detectedLanguages")(detectedLanguages)
+    if (detectedBreak != null) __obj.updateDynamic("detectedBreak")(detectedBreak.asInstanceOf[js.Any])
+    if (detectedLanguages != null) __obj.updateDynamic("detectedLanguages")(detectedLanguages.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextProperty]
   }
 }

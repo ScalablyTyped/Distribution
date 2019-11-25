@@ -20,7 +20,7 @@ object Anon_ContainsFocus {
     renderedWindowsBehind: Double,
     startIndex: Double
   ): Anon_ContainsFocus = {
-    val __obj = js.Dynamic.literal(onRenderCell = js.Any.fromFunction3(onRenderCell), renderedWindowsAhead = renderedWindowsAhead, renderedWindowsBehind = renderedWindowsBehind, startIndex = startIndex)
+    val __obj = js.Dynamic.literal(onRenderCell = js.Any.fromFunction3(onRenderCell), renderedWindowsAhead = renderedWindowsAhead.asInstanceOf[js.Any], renderedWindowsBehind = renderedWindowsBehind.asInstanceOf[js.Any], startIndex = startIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContainsFocus]
   }

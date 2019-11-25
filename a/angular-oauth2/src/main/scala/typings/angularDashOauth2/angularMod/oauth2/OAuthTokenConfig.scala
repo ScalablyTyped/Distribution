@@ -12,7 +12,7 @@ trait OAuthTokenConfig extends js.Object {
 object OAuthTokenConfig {
   @scala.inline
   def apply(name: String, options: js.Any): OAuthTokenConfig = {
-    val __obj = js.Dynamic.literal(name = name, options = options)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OAuthTokenConfig]
   }

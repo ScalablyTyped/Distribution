@@ -17,9 +17,9 @@ object StrictCommentAvatarProps {
   @scala.inline
   def apply(as: js.Any = null, className: String = null, src: String = null): StrictCommentAvatarProps = {
     val __obj = js.Dynamic.literal()
-    if (as != null) __obj.updateDynamic("as")(as)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (src != null) __obj.updateDynamic("src")(src)
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictCommentAvatarProps]
   }
 }

@@ -40,8 +40,6 @@ object ISplitter {
   @scala.inline
   def apply(
     IComponent: IComponent = null,
-    baseCls: java.lang.String = null,
-    beforeDestroy: () => Unit = null,
     collapseOnDblClick: js.UndefOr[Boolean] = js.undefined,
     collapseTarget: js.Any = null,
     collapsedCls: java.lang.String = null,
@@ -52,25 +50,21 @@ object ISplitter {
     onRender: () => Unit = null,
     orientation: java.lang.String = null,
     performCollapse: js.UndefOr[Boolean] = js.undefined,
-    renderTpl: js.Any = null,
     setSize: () => IComponent = null,
     size: Int | Double = null
   ): ISplitter = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (beforeDestroy != null) __obj.updateDynamic("beforeDestroy")(js.Any.fromFunction0(beforeDestroy))
-    if (!js.isUndefined(collapseOnDblClick)) __obj.updateDynamic("collapseOnDblClick")(collapseOnDblClick)
-    if (collapseTarget != null) __obj.updateDynamic("collapseTarget")(collapseTarget)
-    if (collapsedCls != null) __obj.updateDynamic("collapsedCls")(collapsedCls)
-    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
+    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (!js.isUndefined(collapseOnDblClick)) __obj.updateDynamic("collapseOnDblClick")(collapseOnDblClick.asInstanceOf[js.Any])
+    if (collapseTarget != null) __obj.updateDynamic("collapseTarget")(collapseTarget.asInstanceOf[js.Any])
+    if (collapsedCls != null) __obj.updateDynamic("collapsedCls")(collapsedCls.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.asInstanceOf[js.Any])
     if (defaultSplitMax != null) __obj.updateDynamic("defaultSplitMax")(defaultSplitMax.asInstanceOf[js.Any])
     if (defaultSplitMin != null) __obj.updateDynamic("defaultSplitMin")(defaultSplitMin.asInstanceOf[js.Any])
     if (getTrackerConfig != null) __obj.updateDynamic("getTrackerConfig")(js.Any.fromFunction0(getTrackerConfig))
     if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction0(onRender))
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
-    if (!js.isUndefined(performCollapse)) __obj.updateDynamic("performCollapse")(performCollapse)
-    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (!js.isUndefined(performCollapse)) __obj.updateDynamic("performCollapse")(performCollapse.asInstanceOf[js.Any])
     if (setSize != null) __obj.updateDynamic("setSize")(js.Any.fromFunction0(setSize))
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISplitter]

@@ -37,7 +37,7 @@ trait ParticipantInfo extends js.Object {
 object ParticipantInfo {
   @scala.inline
   def apply(affiliation: Double, flags: Double, id: String, reason: String, resource: String, role: Double): ParticipantInfo = {
-    val __obj = js.Dynamic.literal(affiliation = affiliation, flags = flags, id = id, reason = reason, resource = resource, role = role)
+    val __obj = js.Dynamic.literal(affiliation = affiliation.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ParticipantInfo]
   }

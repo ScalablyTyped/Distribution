@@ -19,7 +19,7 @@ object OptionLimits {
     parallelism: NumericLimit,
     timeCost: NumericLimit
   ): OptionLimits = {
-    val __obj = js.Dynamic.literal(hashLength = hashLength, memoryCost = memoryCost, parallelism = parallelism, timeCost = timeCost)
+    val __obj = js.Dynamic.literal(hashLength = hashLength.asInstanceOf[js.Any], memoryCost = memoryCost.asInstanceOf[js.Any], parallelism = parallelism.asInstanceOf[js.Any], timeCost = timeCost.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OptionLimits]
   }

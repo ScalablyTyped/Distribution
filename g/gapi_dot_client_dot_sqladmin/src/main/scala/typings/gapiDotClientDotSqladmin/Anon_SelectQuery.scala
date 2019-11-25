@@ -13,7 +13,7 @@ object Anon_SelectQuery {
   @scala.inline
   def apply(selectQuery: String = null): Anon_SelectQuery = {
     val __obj = js.Dynamic.literal()
-    if (selectQuery != null) __obj.updateDynamic("selectQuery")(selectQuery)
+    if (selectQuery != null) __obj.updateDynamic("selectQuery")(selectQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_SelectQuery]
   }
 }

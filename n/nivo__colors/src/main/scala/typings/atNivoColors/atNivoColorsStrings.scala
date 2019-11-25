@@ -2,6 +2,7 @@ package typings.atNivoColors
 
 import typings.atNivoColors.atNivoColorsMod.CategoricalColorSchemeId
 import typings.atNivoColors.atNivoColorsMod.ColorModifierType
+import typings.atNivoColors.atNivoColorsMod.ColorSchemeId
 import typings.atNivoColors.atNivoColorsMod.DivergingColorSchemeId
 import typings.atNivoColors.atNivoColorsMod.SequentialColorSchemeId
 import scala.scalajs.js
@@ -10,124 +11,198 @@ import scala.scalajs.js.annotation._
 
 object atNivoColorsStrings {
   @js.native
-  sealed trait accent extends CategoricalColorSchemeId
+  sealed trait accent
+    extends CategoricalColorSchemeId
+       with ColorSchemeId
   
   @js.native
-  sealed trait blue_green extends SequentialColorSchemeId
+  sealed trait blue_green
+    extends ColorSchemeId
+       with SequentialColorSchemeId
   
   @js.native
-  sealed trait blue_purple extends SequentialColorSchemeId
+  sealed trait blue_purple
+    extends ColorSchemeId
+       with SequentialColorSchemeId
   
   @js.native
-  sealed trait blues extends SequentialColorSchemeId
+  sealed trait blues
+    extends ColorSchemeId
+       with SequentialColorSchemeId
   
   @js.native
   sealed trait brighter extends ColorModifierType
   
   @js.native
-  sealed trait brown_blueGreen extends DivergingColorSchemeId
+  sealed trait brown_blueGreen
+    extends ColorSchemeId
+       with DivergingColorSchemeId
   
   @js.native
-  sealed trait category10 extends CategoricalColorSchemeId
+  sealed trait category10
+    extends CategoricalColorSchemeId
+       with ColorSchemeId
   
   @js.native
-  sealed trait dark2 extends CategoricalColorSchemeId
+  sealed trait dark2
+    extends CategoricalColorSchemeId
+       with ColorSchemeId
   
   @js.native
   sealed trait darker extends ColorModifierType
   
   @js.native
-  sealed trait green_blue extends SequentialColorSchemeId
+  sealed trait green_blue
+    extends ColorSchemeId
+       with SequentialColorSchemeId
   
   @js.native
-  sealed trait greens extends SequentialColorSchemeId
+  sealed trait greens
+    extends ColorSchemeId
+       with SequentialColorSchemeId
   
   @js.native
-  sealed trait greys extends SequentialColorSchemeId
+  sealed trait greys
+    extends ColorSchemeId
+       with SequentialColorSchemeId
   
   @js.native
-  sealed trait nivo extends CategoricalColorSchemeId
+  sealed trait nivo
+    extends CategoricalColorSchemeId
+       with ColorSchemeId
   
   @js.native
   sealed trait opacity extends ColorModifierType
   
   @js.native
-  sealed trait orange_red extends SequentialColorSchemeId
+  sealed trait orange_red
+    extends ColorSchemeId
+       with SequentialColorSchemeId
   
   @js.native
-  sealed trait oranges extends SequentialColorSchemeId
+  sealed trait oranges
+    extends ColorSchemeId
+       with SequentialColorSchemeId
   
   @js.native
-  sealed trait paired extends CategoricalColorSchemeId
+  sealed trait paired
+    extends CategoricalColorSchemeId
+       with ColorSchemeId
   
   @js.native
-  sealed trait pastel1 extends CategoricalColorSchemeId
+  sealed trait pastel1
+    extends CategoricalColorSchemeId
+       with ColorSchemeId
   
   @js.native
-  sealed trait pastel2 extends CategoricalColorSchemeId
+  sealed trait pastel2
+    extends CategoricalColorSchemeId
+       with ColorSchemeId
   
   @js.native
-  sealed trait pink_yellowGreen extends DivergingColorSchemeId
+  sealed trait pink_yellowGreen
+    extends ColorSchemeId
+       with DivergingColorSchemeId
   
   @js.native
-  sealed trait purpleRed_green extends DivergingColorSchemeId
+  sealed trait purpleRed_green
+    extends ColorSchemeId
+       with DivergingColorSchemeId
   
   @js.native
-  sealed trait purple_blue extends SequentialColorSchemeId
+  sealed trait purple_blue
+    extends ColorSchemeId
+       with SequentialColorSchemeId
   
   @js.native
-  sealed trait purple_blue_green extends SequentialColorSchemeId
+  sealed trait purple_blue_green
+    extends ColorSchemeId
+       with SequentialColorSchemeId
   
   @js.native
-  sealed trait purple_orange extends DivergingColorSchemeId
+  sealed trait purple_orange
+    extends ColorSchemeId
+       with DivergingColorSchemeId
   
   @js.native
-  sealed trait purple_red extends SequentialColorSchemeId
+  sealed trait purple_red
+    extends ColorSchemeId
+       with SequentialColorSchemeId
   
   @js.native
-  sealed trait purples extends SequentialColorSchemeId
+  sealed trait purples
+    extends ColorSchemeId
+       with SequentialColorSchemeId
   
   @js.native
-  sealed trait red_blue extends DivergingColorSchemeId
+  sealed trait red_blue
+    extends ColorSchemeId
+       with DivergingColorSchemeId
   
   @js.native
-  sealed trait red_grey extends DivergingColorSchemeId
+  sealed trait red_grey
+    extends ColorSchemeId
+       with DivergingColorSchemeId
   
   @js.native
-  sealed trait red_purple extends SequentialColorSchemeId
+  sealed trait red_purple
+    extends ColorSchemeId
+       with SequentialColorSchemeId
   
   @js.native
-  sealed trait red_yellow_blue extends DivergingColorSchemeId
+  sealed trait red_yellow_blue
+    extends ColorSchemeId
+       with DivergingColorSchemeId
   
   @js.native
-  sealed trait red_yellow_green extends DivergingColorSchemeId
+  sealed trait red_yellow_green
+    extends ColorSchemeId
+       with DivergingColorSchemeId
   
   @js.native
-  sealed trait reds extends SequentialColorSchemeId
+  sealed trait reds
+    extends ColorSchemeId
+       with SequentialColorSchemeId
   
   @js.native
-  sealed trait set1 extends CategoricalColorSchemeId
+  sealed trait set1
+    extends CategoricalColorSchemeId
+       with ColorSchemeId
   
   @js.native
-  sealed trait set2 extends CategoricalColorSchemeId
+  sealed trait set2
+    extends CategoricalColorSchemeId
+       with ColorSchemeId
   
   @js.native
-  sealed trait set3 extends CategoricalColorSchemeId
+  sealed trait set3
+    extends CategoricalColorSchemeId
+       with ColorSchemeId
   
   @js.native
-  sealed trait spectral extends DivergingColorSchemeId
+  sealed trait spectral
+    extends ColorSchemeId
+       with DivergingColorSchemeId
   
   @js.native
-  sealed trait yellow_green extends SequentialColorSchemeId
+  sealed trait yellow_green
+    extends ColorSchemeId
+       with SequentialColorSchemeId
   
   @js.native
-  sealed trait yellow_green_blue extends SequentialColorSchemeId
+  sealed trait yellow_green_blue
+    extends ColorSchemeId
+       with SequentialColorSchemeId
   
   @js.native
-  sealed trait yellow_orange_brown extends SequentialColorSchemeId
+  sealed trait yellow_orange_brown
+    extends ColorSchemeId
+       with SequentialColorSchemeId
   
   @js.native
-  sealed trait yellow_orange_red extends SequentialColorSchemeId
+  sealed trait yellow_orange_red
+    extends ColorSchemeId
+       with SequentialColorSchemeId
   
   @scala.inline
   def accent: accent = "accent".asInstanceOf[accent]

@@ -283,7 +283,7 @@ class Object ()
   	 * Basic getter
   	 * @param property Property name
   	 */
-  def get[K /* <: String */](property: K): /* import warning: ImportType.apply Failed type conversion: this[K] */ js.Any = js.native
+  def get[K /* <: String */](property: K): /* import warning: importer.ImportType#apply Failed type conversion: this[K] */ js.Any = js.native
   /**
   	 * Returns coordinates of object's bounding rectangle (left, top, width, height)
   	 * the box is intented as aligned to axis of canvas.
@@ -559,12 +559,15 @@ class Object ()
   	 * @param key Property name
   	 * @param value Property value (if function, the value is passed into it and its return value is used as a new one)
   	 */
-  def set[K /* <: String */](key: K, value: /* import warning: ImportType.apply Failed type conversion: this[K] */ js.Any): Object = js.native
+  def set[K /* <: String */](
+    key: K,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: this[K] */ js.Any
+  ): Object = js.native
   def set[K /* <: String */](
     key: K,
     value: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: this[K] */ /* value */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: this[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: this[K] */ /* value */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: this[K] */ js.Any
     ]
   ): Object = js.native
   /**

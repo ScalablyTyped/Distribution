@@ -36,7 +36,7 @@ object AgentConfiguration {
     softphoneEnabled: Boolean,
     username: String
   ): AgentConfiguration = {
-    val __obj = js.Dynamic.literal(extension = extension, name = name, routingProfile = routingProfile, softphoneEnabled = softphoneEnabled, username = username)
+    val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], routingProfile = routingProfile.asInstanceOf[js.Any], softphoneEnabled = softphoneEnabled.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AgentConfiguration]
   }

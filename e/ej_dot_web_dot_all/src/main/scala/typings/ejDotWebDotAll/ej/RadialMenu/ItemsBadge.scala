@@ -17,7 +17,7 @@ object ItemsBadge {
   @scala.inline
   def apply(enabled: js.UndefOr[Boolean] = js.undefined, value: Int | Double = null): ItemsBadge = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsBadge]
   }

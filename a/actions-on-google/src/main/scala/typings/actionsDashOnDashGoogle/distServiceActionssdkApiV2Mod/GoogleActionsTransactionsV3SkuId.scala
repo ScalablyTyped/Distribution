@@ -28,9 +28,9 @@ object GoogleActionsTransactionsV3SkuId {
     skuType: GoogleActionsTransactionsV3SkuIdSkuType = null
   ): GoogleActionsTransactionsV3SkuId = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (packageName != null) __obj.updateDynamic("packageName")(packageName)
-    if (skuType != null) __obj.updateDynamic("skuType")(skuType)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
+    if (skuType != null) __obj.updateDynamic("skuType")(skuType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsTransactionsV3SkuId]
   }
 }

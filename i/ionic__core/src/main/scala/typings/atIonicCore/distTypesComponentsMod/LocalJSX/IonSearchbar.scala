@@ -14,8 +14,6 @@ import typings.atIonicCore.atIonicCoreStrings.search
 import typings.atIonicCore.atIonicCoreStrings.tel
 import typings.atIonicCore.atIonicCoreStrings.text
 import typings.atIonicCore.atIonicCoreStrings.url
-import typings.atIonicCore.distTypesComponentsSearchbarSearchbarDashInterfaceMod.SearchbarChangeEventDetail
-import typings.atIonicCore.distTypesInterfaceMod.Color
 import typings.std.CustomEvent
 import typings.std.KeyboardEvent
 import scala.scalajs.js
@@ -50,7 +48,9 @@ trait IonSearchbar extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.undefined
+  var color: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
+  ] = js.undefined
   /**
     * Set the amount of time, in milliseconds, to wait to trigger the `ionChange` event after each keystroke.
     */
@@ -78,7 +78,14 @@ trait IonSearchbar extends js.Object {
   /**
     * Emitted when the value has changed.
     */
-  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[SearchbarChangeEventDetail], Unit]] = js.undefined
+  var onIonChange: js.UndefOr[
+    js.Function1[
+      /* event */ CustomEvent[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SearchbarChangeEventDetail */ _
+      ], 
+      Unit
+    ]
+  ] = js.undefined
   /**
     * Emitted when the clear input button is clicked.
     */
@@ -126,14 +133,16 @@ object IonSearchbar {
     cancelButtonIcon: String = null,
     cancelButtonText: String = null,
     clearIcon: String = null,
-    color: Color = null,
+    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
     debounce: Int | Double = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     inputmode: none | text | tel | url | email | numeric | decimal | search = null,
     mode: ios | md = null,
     onIonBlur: /* event */ CustomEvent[Unit] => Unit = null,
     onIonCancel: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonChange: /* event */ CustomEvent[SearchbarChangeEventDetail] => Unit = null,
+    onIonChange: /* event */ CustomEvent[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SearchbarChangeEventDetail */ _
+    ] => Unit = null,
     onIonClear: /* event */ CustomEvent[Unit] => Unit = null,
     onIonFocus: /* event */ CustomEvent[Unit] => Unit = null,
     onIonInput: /* event */ CustomEvent[KeyboardEvent] => Unit = null,
@@ -145,15 +154,15 @@ object IonSearchbar {
     value: String = null
   ): IonSearchbar = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
     if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
     if (autocorrect != null) __obj.updateDynamic("autocorrect")(autocorrect.asInstanceOf[js.Any])
-    if (cancelButtonIcon != null) __obj.updateDynamic("cancelButtonIcon")(cancelButtonIcon)
-    if (cancelButtonText != null) __obj.updateDynamic("cancelButtonText")(cancelButtonText)
-    if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon)
+    if (cancelButtonIcon != null) __obj.updateDynamic("cancelButtonIcon")(cancelButtonIcon.asInstanceOf[js.Any])
+    if (cancelButtonText != null) __obj.updateDynamic("cancelButtonText")(cancelButtonText.asInstanceOf[js.Any])
+    if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (inputmode != null) __obj.updateDynamic("inputmode")(inputmode.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onIonBlur != null) __obj.updateDynamic("onIonBlur")(js.Any.fromFunction1(onIonBlur))
@@ -162,12 +171,12 @@ object IonSearchbar {
     if (onIonClear != null) __obj.updateDynamic("onIonClear")(js.Any.fromFunction1(onIonClear))
     if (onIonFocus != null) __obj.updateDynamic("onIonFocus")(js.Any.fromFunction1(onIonFocus))
     if (onIonInput != null) __obj.updateDynamic("onIonInput")(js.Any.fromFunction1(onIonInput))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (searchIcon != null) __obj.updateDynamic("searchIcon")(searchIcon)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (searchIcon != null) __obj.updateDynamic("searchIcon")(searchIcon.asInstanceOf[js.Any])
     if (showCancelButton != null) __obj.updateDynamic("showCancelButton")(showCancelButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck)
+    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonSearchbar]
   }
 }

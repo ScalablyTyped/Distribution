@@ -23,10 +23,10 @@ object GetFeedbackParams {
     model: Model | String = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): GetFeedbackParams = {
-    val __obj = js.Dynamic.literal(feedback_id = feedback_id)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(feedback_id = feedback_id.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFeedbackParams]
   }
 }

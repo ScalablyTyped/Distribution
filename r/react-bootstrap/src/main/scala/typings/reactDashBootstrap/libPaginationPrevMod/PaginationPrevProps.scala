@@ -14,13 +14,11 @@ object PaginationPrevProps {
   @scala.inline
   def apply(
     AllHTMLAttributes: AllHTMLAttributes[PaginationPrev] = null,
-    ClassAttributes: ClassAttributes[PaginationPrev] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined
+    ClassAttributes: ClassAttributes[PaginationPrev] = null
   ): PaginationPrevProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     __obj.asInstanceOf[PaginationPrevProps]
   }
 }

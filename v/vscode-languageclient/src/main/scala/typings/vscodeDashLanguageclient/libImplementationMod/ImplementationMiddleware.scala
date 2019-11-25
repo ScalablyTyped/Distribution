@@ -36,7 +36,7 @@ object ImplementationMiddleware {
     ] = null
   ): ImplementationMiddleware = {
     val __obj = js.Dynamic.literal()
-    if (provideImplementation != null) __obj.updateDynamic("provideImplementation")(provideImplementation)
+    if (provideImplementation != null) __obj.updateDynamic("provideImplementation")(provideImplementation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImplementationMiddleware]
   }
 }

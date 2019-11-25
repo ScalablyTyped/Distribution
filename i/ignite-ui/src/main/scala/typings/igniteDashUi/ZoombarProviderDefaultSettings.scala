@@ -40,9 +40,9 @@ object ZoombarProviderDefaultSettings {
     zoomChangedCallback: js.Any = null
   ): ZoombarProviderDefaultSettings = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (targetObject != null) __obj.updateDynamic("targetObject")(targetObject)
-    if (zoomChangedCallback != null) __obj.updateDynamic("zoomChangedCallback")(zoomChangedCallback)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (targetObject != null) __obj.updateDynamic("targetObject")(targetObject.asInstanceOf[js.Any])
+    if (zoomChangedCallback != null) __obj.updateDynamic("zoomChangedCallback")(zoomChangedCallback.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoombarProviderDefaultSettings]
   }
 }

@@ -41,12 +41,12 @@ object LocalAudioStats {
     SendLevel: String = null
   ): LocalAudioStats = {
     val __obj = js.Dynamic.literal()
-    if (CodecType != null) __obj.updateDynamic("CodecType")(CodecType)
-    if (MuteState != null) __obj.updateDynamic("MuteState")(MuteState)
-    if (RecordingLevel != null) __obj.updateDynamic("RecordingLevel")(RecordingLevel)
-    if (SamplingRate != null) __obj.updateDynamic("SamplingRate")(SamplingRate)
-    if (SendBitrate != null) __obj.updateDynamic("SendBitrate")(SendBitrate)
-    if (SendLevel != null) __obj.updateDynamic("SendLevel")(SendLevel)
+    if (CodecType != null) __obj.updateDynamic("CodecType")(CodecType.asInstanceOf[js.Any])
+    if (MuteState != null) __obj.updateDynamic("MuteState")(MuteState.asInstanceOf[js.Any])
+    if (RecordingLevel != null) __obj.updateDynamic("RecordingLevel")(RecordingLevel.asInstanceOf[js.Any])
+    if (SamplingRate != null) __obj.updateDynamic("SamplingRate")(SamplingRate.asInstanceOf[js.Any])
+    if (SendBitrate != null) __obj.updateDynamic("SendBitrate")(SendBitrate.asInstanceOf[js.Any])
+    if (SendLevel != null) __obj.updateDynamic("SendLevel")(SendLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalAudioStats]
   }
 }

@@ -13,9 +13,9 @@ trait PersonMetadata extends js.Object {
 object PersonMetadata {
   @scala.inline
   def apply(name: String, email: String = null, url: String = null): PersonMetadata = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (url != null) __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersonMetadata]
   }
 }

@@ -12,7 +12,7 @@ trait ReposDeleteFileResponse extends js.Object {
 object ReposDeleteFileResponse {
   @scala.inline
   def apply(commit: ReposDeleteFileResponseCommit, content: Null): ReposDeleteFileResponse = {
-    val __obj = js.Dynamic.literal(commit = commit, content = content)
+    val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposDeleteFileResponse]
   }

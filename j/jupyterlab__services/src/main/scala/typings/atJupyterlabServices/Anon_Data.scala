@@ -15,8 +15,8 @@ trait Anon_Data extends js.Object {
 object Anon_Data {
   @scala.inline
   def apply(data: IMimeBundle, metadata: OutputMetadata, transient: Anon_Displayid = null): Anon_Data = {
-    val __obj = js.Dynamic.literal(data = data, metadata = metadata)
-    if (transient != null) __obj.updateDynamic("transient")(transient)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
+    if (transient != null) __obj.updateDynamic("transient")(transient.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Data]
   }
 }

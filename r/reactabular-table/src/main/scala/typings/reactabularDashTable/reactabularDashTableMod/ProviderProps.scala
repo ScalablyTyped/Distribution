@@ -21,10 +21,10 @@ object ProviderProps {
     renderers: Renderers = null,
     style: Partial[CSSStyleDeclaration] = null
   ): ProviderProps = {
-    val __obj = js.Dynamic.literal(columns = columns)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (renderers != null) __obj.updateDynamic("renderers")(renderers)
-    if (style != null) __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (renderers != null) __obj.updateDynamic("renderers")(renderers.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderProps]
   }
 }

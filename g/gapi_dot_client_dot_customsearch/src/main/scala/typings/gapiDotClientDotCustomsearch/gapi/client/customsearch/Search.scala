@@ -32,14 +32,14 @@ object Search {
     url: Anon_Template = null
   ): Search = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (promotions != null) __obj.updateDynamic("promotions")(promotions)
-    if (queries != null) __obj.updateDynamic("queries")(queries)
-    if (searchInformation != null) __obj.updateDynamic("searchInformation")(searchInformation)
-    if (spelling != null) __obj.updateDynamic("spelling")(spelling)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (promotions != null) __obj.updateDynamic("promotions")(promotions.asInstanceOf[js.Any])
+    if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
+    if (searchInformation != null) __obj.updateDynamic("searchInformation")(searchInformation.asInstanceOf[js.Any])
+    if (spelling != null) __obj.updateDynamic("spelling")(spelling.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Search]
   }
 }

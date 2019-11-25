@@ -11,7 +11,7 @@ trait IPositionChangedEventArgs extends js.Object {
 object IPositionChangedEventArgs {
   @scala.inline
   def apply(position: Geoposition): IPositionChangedEventArgs = {
-    val __obj = js.Dynamic.literal(position = position)
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPositionChangedEventArgs]
   }

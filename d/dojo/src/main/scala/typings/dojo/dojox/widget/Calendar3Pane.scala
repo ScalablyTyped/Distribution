@@ -1,7 +1,6 @@
 package typings.dojo.dojox.widget
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValue
 import typings.dojo.dojoStrings.parent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,6 +27,14 @@ class Calendar3Pane () extends _CalendarBase {
   @JSName("set")
   def set_parent(property: parent, value: js.Object): Unit = js.native
   @JSName("watch")
-  def watch_parent(property: parent, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_parent(
+    property: parent,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

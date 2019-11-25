@@ -15,8 +15,8 @@ trait Media extends js.Object {
 object Media {
   @scala.inline
   def apply(buffer: Buffer, extension: String, name: String, `type`: String): Media = {
-    val __obj = js.Dynamic.literal(buffer = buffer, extension = extension, name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Media]
   }
 }

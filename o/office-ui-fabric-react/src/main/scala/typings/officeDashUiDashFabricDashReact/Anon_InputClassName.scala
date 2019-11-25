@@ -15,8 +15,8 @@ object Anon_InputClassName {
   @scala.inline
   def apply(inputClassName: String = null, isFocused: js.UndefOr[Boolean] = js.undefined): Anon_InputClassName = {
     val __obj = js.Dynamic.literal()
-    if (inputClassName != null) __obj.updateDynamic("inputClassName")(inputClassName)
-    if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused)
+    if (inputClassName != null) __obj.updateDynamic("inputClassName")(inputClassName.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_InputClassName]
   }
 }

@@ -15,8 +15,8 @@ object AutoscalerStatusDetails {
   @scala.inline
   def apply(message: String = null, `type`: String = null): AutoscalerStatusDetails = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoscalerStatusDetails]
   }
 }

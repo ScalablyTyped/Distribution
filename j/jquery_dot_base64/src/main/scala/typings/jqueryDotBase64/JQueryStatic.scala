@@ -11,7 +11,7 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(base64: JQueryBase64Static): JQueryStatic = {
-    val __obj = js.Dynamic.literal(base64 = base64)
+    val __obj = js.Dynamic.literal(base64 = base64.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JQueryStatic]
   }

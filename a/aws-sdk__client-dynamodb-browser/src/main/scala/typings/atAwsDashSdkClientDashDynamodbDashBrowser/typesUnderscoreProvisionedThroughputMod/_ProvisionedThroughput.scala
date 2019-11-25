@@ -18,7 +18,7 @@ trait _ProvisionedThroughput extends js.Object {
 object _ProvisionedThroughput {
   @scala.inline
   def apply(ReadCapacityUnits: Double, WriteCapacityUnits: Double): _ProvisionedThroughput = {
-    val __obj = js.Dynamic.literal(ReadCapacityUnits = ReadCapacityUnits, WriteCapacityUnits = WriteCapacityUnits)
+    val __obj = js.Dynamic.literal(ReadCapacityUnits = ReadCapacityUnits.asInstanceOf[js.Any], WriteCapacityUnits = WriteCapacityUnits.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_ProvisionedThroughput]
   }

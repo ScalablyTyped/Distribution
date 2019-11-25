@@ -60,17 +60,17 @@ object S3Options {
     storageClass: STANDARD | REDUCED_REDUNDANCY | STANDARD_IA = null,
     updaterCacheDirName: String = null
   ): S3Options = {
-    val __obj = js.Dynamic.literal(bucket = bucket, provider = provider)
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
     if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
-    if (channel != null) __obj.updateDynamic("channel")(channel)
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
     if (encryption != null) __obj.updateDynamic("encryption")(encryption.asInstanceOf[js.Any])
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate)
-    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName)
-    if (region != null) __obj.updateDynamic("region")(region)
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.asInstanceOf[js.Any])
+    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (storageClass != null) __obj.updateDynamic("storageClass")(storageClass.asInstanceOf[js.Any])
-    if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName)
+    if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Options]
   }
 }

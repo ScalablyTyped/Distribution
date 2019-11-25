@@ -16,9 +16,9 @@ trait RawForeignKeySpec extends js.Object {
 object RawForeignKeySpec {
   @scala.inline
   def apply(local: String, ref: String, action: ConstraintAction = null, timing: ConstraintTiming = null): RawForeignKeySpec = {
-    val __obj = js.Dynamic.literal(local = local, ref = ref)
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (timing != null) __obj.updateDynamic("timing")(timing)
+    val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (timing != null) __obj.updateDynamic("timing")(timing.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawForeignKeySpec]
   }
 }

@@ -65,16 +65,16 @@ object GoogleActionsV2OrdersLineItem {
     `type`: GoogleActionsV2OrdersLineItemType = null
   ): GoogleActionsV2OrdersLineItem = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (offerId != null) __obj.updateDynamic("offerId")(offerId)
-    if (price != null) __obj.updateDynamic("price")(price)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (offerId != null) __obj.updateDynamic("offerId")(offerId.asInstanceOf[js.Any])
+    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
-    if (subLines != null) __obj.updateDynamic("subLines")(subLines)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (subLines != null) __obj.updateDynamic("subLines")(subLines.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersLineItem]
   }
 }

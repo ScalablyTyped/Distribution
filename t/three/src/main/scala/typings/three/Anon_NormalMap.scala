@@ -13,7 +13,7 @@ trait Anon_NormalMap extends js.Object {
 object Anon_NormalMap {
   @scala.inline
   def apply(normalMap: IUniform, normalScale: IUniform): Anon_NormalMap = {
-    val __obj = js.Dynamic.literal(normalMap = normalMap, normalScale = normalScale)
+    val __obj = js.Dynamic.literal(normalMap = normalMap.asInstanceOf[js.Any], normalScale = normalScale.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NormalMap]
   }

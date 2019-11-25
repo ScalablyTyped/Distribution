@@ -28,10 +28,10 @@ object AssignedPlan {
     servicePlanId: String = null
   ): AssignedPlan = {
     val __obj = js.Dynamic.literal()
-    if (assignedDateTime != null) __obj.updateDynamic("assignedDateTime")(assignedDateTime)
-    if (capabilityStatus != null) __obj.updateDynamic("capabilityStatus")(capabilityStatus)
-    if (service != null) __obj.updateDynamic("service")(service)
-    if (servicePlanId != null) __obj.updateDynamic("servicePlanId")(servicePlanId)
+    if (assignedDateTime != null) __obj.updateDynamic("assignedDateTime")(assignedDateTime.asInstanceOf[js.Any])
+    if (capabilityStatus != null) __obj.updateDynamic("capabilityStatus")(capabilityStatus.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
+    if (servicePlanId != null) __obj.updateDynamic("servicePlanId")(servicePlanId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssignedPlan]
   }
 }

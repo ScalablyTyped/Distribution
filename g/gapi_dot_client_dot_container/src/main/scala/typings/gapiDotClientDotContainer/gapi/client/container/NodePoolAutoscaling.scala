@@ -27,7 +27,7 @@ object NodePoolAutoscaling {
     minNodeCount: Int | Double = null
   ): NodePoolAutoscaling = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (maxNodeCount != null) __obj.updateDynamic("maxNodeCount")(maxNodeCount.asInstanceOf[js.Any])
     if (minNodeCount != null) __obj.updateDynamic("minNodeCount")(minNodeCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodePoolAutoscaling]

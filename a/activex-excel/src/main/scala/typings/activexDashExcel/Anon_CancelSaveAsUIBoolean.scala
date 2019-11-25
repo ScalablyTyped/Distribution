@@ -12,7 +12,7 @@ trait Anon_CancelSaveAsUIBoolean extends js.Object {
 object Anon_CancelSaveAsUIBoolean {
   @scala.inline
   def apply(Cancel: Boolean, SaveAsUI: Boolean): Anon_CancelSaveAsUIBoolean = {
-    val __obj = js.Dynamic.literal(Cancel = Cancel, SaveAsUI = SaveAsUI)
+    val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], SaveAsUI = SaveAsUI.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CancelSaveAsUIBoolean]
   }

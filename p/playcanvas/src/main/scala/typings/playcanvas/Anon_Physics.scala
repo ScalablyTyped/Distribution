@@ -12,7 +12,7 @@ trait Anon_Physics extends js.Object {
 object Anon_Physics {
   @scala.inline
   def apply(physics: Anon_Gravity, render: Anon_Exposure): Anon_Physics = {
-    val __obj = js.Dynamic.literal(physics = physics, render = render)
+    val __obj = js.Dynamic.literal(physics = physics.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Physics]
   }

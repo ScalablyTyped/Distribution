@@ -12,7 +12,7 @@ package object libIComponentMod {
   import typings.react.reactMod.PropsWithChildren
   import typings.std.ReturnType
 
-  type IComponentStyles[TSlots] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type IComponentStyles[TSlots] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof TSlots ]:? @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyle.IStyle}
     */ typings.atUifabricFoundation.atUifabricFoundationStrings.IComponentStyles with js.Any
   type IPropsWithChildren[TProps] = PropsWithChildren[TProps]

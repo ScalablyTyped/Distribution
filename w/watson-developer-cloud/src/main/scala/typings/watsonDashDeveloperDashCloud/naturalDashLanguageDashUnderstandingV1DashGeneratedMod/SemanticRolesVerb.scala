@@ -16,8 +16,8 @@ object SemanticRolesVerb {
   @scala.inline
   def apply(tense: String = null, text: String = null): SemanticRolesVerb = {
     val __obj = js.Dynamic.literal()
-    if (tense != null) __obj.updateDynamic("tense")(tense)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (tense != null) __obj.updateDynamic("tense")(tense.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SemanticRolesVerb]
   }
 }

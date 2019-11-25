@@ -21,8 +21,8 @@ object PlotChaikinParamsOptions {
   @scala.inline
   def apply(periods: js.Array[Double] = null, volumeSeriesID: String = null): PlotChaikinParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (periods != null) __obj.updateDynamic("periods")(periods)
-    if (volumeSeriesID != null) __obj.updateDynamic("volumeSeriesID")(volumeSeriesID)
+    if (periods != null) __obj.updateDynamic("periods")(periods.asInstanceOf[js.Any])
+    if (volumeSeriesID != null) __obj.updateDynamic("volumeSeriesID")(volumeSeriesID.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotChaikinParamsOptions]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "remove-markdown"
-version := "0.1-dt-20180214Z-e39e3a"
+version := "0.1-dt-20180214Z-770b2e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -29,10 +29,10 @@ object RequestLoggerOptions {
     updateResponseLogFields: /* responseData */ ResponseData => ResponseData = null
   ): RequestLoggerOptions = {
     val __obj = js.Dynamic.literal()
-    if (durationField != null) __obj.updateDynamic("durationField")(durationField)
+    if (durationField != null) __obj.updateDynamic("durationField")(durationField.asInstanceOf[js.Any])
     if (formatRequestMessage != null) __obj.updateDynamic("formatRequestMessage")(js.Any.fromFunction1(formatRequestMessage))
     if (formatResponseMessage != null) __obj.updateDynamic("formatResponseMessage")(js.Any.fromFunction1(formatResponseMessage))
-    if (ignorePath != null) __obj.updateDynamic("ignorePath")(ignorePath)
+    if (ignorePath != null) __obj.updateDynamic("ignorePath")(ignorePath.asInstanceOf[js.Any])
     if (levelFn != null) __obj.updateDynamic("levelFn")(js.Any.fromFunction2(levelFn))
     if (updateLogFields != null) __obj.updateDynamic("updateLogFields")(js.Any.fromFunction1(updateLogFields))
     if (updateRequestLogFields != null) __obj.updateDynamic("updateRequestLogFields")(js.Any.fromFunction1(updateRequestLogFields))

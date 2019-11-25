@@ -12,7 +12,7 @@ trait Anon_DtypeUint8 extends js.Object {
 object Anon_DtypeUint8 {
   @scala.inline
   def apply(dtype: uint8): Anon_DtypeUint8 = {
-    val __obj = js.Dynamic.literal(dtype = dtype)
+    val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DtypeUint8]
   }

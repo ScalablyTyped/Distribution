@@ -12,7 +12,7 @@ object Anon_TypeMap {
   @scala.inline
   def apply(typeMap: Anon_Force = null): Anon_TypeMap = {
     val __obj = js.Dynamic.literal()
-    if (typeMap != null) __obj.updateDynamic("typeMap")(typeMap)
+    if (typeMap != null) __obj.updateDynamic("typeMap")(typeMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TypeMap]
   }
 }

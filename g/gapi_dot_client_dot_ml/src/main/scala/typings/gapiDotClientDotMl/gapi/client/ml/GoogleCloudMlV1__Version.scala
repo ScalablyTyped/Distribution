@@ -83,17 +83,17 @@ object GoogleCloudMlV1__Version {
     state: String = null
   ): GoogleCloudMlV1__Version = {
     val __obj = js.Dynamic.literal()
-    if (autoScaling != null) __obj.updateDynamic("autoScaling")(autoScaling)
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (deploymentUri != null) __obj.updateDynamic("deploymentUri")(deploymentUri)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
-    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault)
-    if (lastUseTime != null) __obj.updateDynamic("lastUseTime")(lastUseTime)
-    if (manualScaling != null) __obj.updateDynamic("manualScaling")(manualScaling)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (runtimeVersion != null) __obj.updateDynamic("runtimeVersion")(runtimeVersion)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (autoScaling != null) __obj.updateDynamic("autoScaling")(autoScaling.asInstanceOf[js.Any])
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (deploymentUri != null) __obj.updateDynamic("deploymentUri")(deploymentUri.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.asInstanceOf[js.Any])
+    if (lastUseTime != null) __obj.updateDynamic("lastUseTime")(lastUseTime.asInstanceOf[js.Any])
+    if (manualScaling != null) __obj.updateDynamic("manualScaling")(manualScaling.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (runtimeVersion != null) __obj.updateDynamic("runtimeVersion")(runtimeVersion.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudMlV1__Version]
   }
 }

@@ -14,7 +14,7 @@ trait GestureHandlerStateChangeNativeEvent extends js.Object {
 object GestureHandlerStateChangeNativeEvent {
   @scala.inline
   def apply(handlerTag: Double, numberOfPointers: Double, oldState: State, state: State): GestureHandlerStateChangeNativeEvent = {
-    val __obj = js.Dynamic.literal(handlerTag = handlerTag, numberOfPointers = numberOfPointers, oldState = oldState, state = state)
+    val __obj = js.Dynamic.literal(handlerTag = handlerTag.asInstanceOf[js.Any], numberOfPointers = numberOfPointers.asInstanceOf[js.Any], oldState = oldState.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GestureHandlerStateChangeNativeEvent]
   }

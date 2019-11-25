@@ -32,14 +32,14 @@ object WMTSOptions {
     tileSizes: js.Array[Double | Size] = null,
     widths: js.Array[Double] = null
   ): WMTSOptions = {
-    val __obj = js.Dynamic.literal(matrixIds = matrixIds, resolutions = resolutions)
-    if (extent != null) __obj.updateDynamic("extent")(extent)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (origins != null) __obj.updateDynamic("origins")(origins)
-    if (sizes != null) __obj.updateDynamic("sizes")(sizes)
+    val __obj = js.Dynamic.literal(matrixIds = matrixIds.asInstanceOf[js.Any], resolutions = resolutions.asInstanceOf[js.Any])
+    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (origins != null) __obj.updateDynamic("origins")(origins.asInstanceOf[js.Any])
+    if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
-    if (tileSizes != null) __obj.updateDynamic("tileSizes")(tileSizes)
-    if (widths != null) __obj.updateDynamic("widths")(widths)
+    if (tileSizes != null) __obj.updateDynamic("tileSizes")(tileSizes.asInstanceOf[js.Any])
+    if (widths != null) __obj.updateDynamic("widths")(widths.asInstanceOf[js.Any])
     __obj.asInstanceOf[WMTSOptions]
   }
 }

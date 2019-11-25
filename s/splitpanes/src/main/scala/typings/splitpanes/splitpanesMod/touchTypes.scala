@@ -13,7 +13,7 @@ trait touchTypes extends js.Object {
 object touchTypes {
   @scala.inline
   def apply(dragging: Boolean, mouseDown: Boolean, activeSplitter: Int | Double = null): touchTypes = {
-    val __obj = js.Dynamic.literal(dragging = dragging, mouseDown = mouseDown)
+    val __obj = js.Dynamic.literal(dragging = dragging.asInstanceOf[js.Any], mouseDown = mouseDown.asInstanceOf[js.Any])
     if (activeSplitter != null) __obj.updateDynamic("activeSplitter")(activeSplitter.asInstanceOf[js.Any])
     __obj.asInstanceOf[touchTypes]
   }

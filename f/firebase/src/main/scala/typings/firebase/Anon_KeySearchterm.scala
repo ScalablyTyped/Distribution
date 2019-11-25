@@ -14,8 +14,8 @@ object Anon_KeySearchterm {
   @scala.inline
   def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, search_term: String = null): Anon_KeySearchterm = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (search_term != null) __obj.updateDynamic("search_term")(search_term)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (search_term != null) __obj.updateDynamic("search_term")(search_term.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_KeySearchterm]
   }
 }

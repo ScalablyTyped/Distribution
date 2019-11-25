@@ -58,16 +58,16 @@ object AssociationOptionsBelongsToMany {
   ): AssociationOptionsBelongsToMany = {
     val __obj = js.Dynamic.literal(through = through.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(constraints)) __obj.updateDynamic("constraints")(constraints)
+    if (!js.isUndefined(constraints)) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
     if (foreignKey != null) __obj.updateDynamic("foreignKey")(foreignKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(foreignKeyConstraint)) __obj.updateDynamic("foreignKeyConstraint")(foreignKeyConstraint)
-    if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks)
-    if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete)
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (!js.isUndefined(foreignKeyConstraint)) __obj.updateDynamic("foreignKeyConstraint")(foreignKeyConstraint.asInstanceOf[js.Any])
+    if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
+    if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete.asInstanceOf[js.Any])
+    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate.asInstanceOf[js.Any])
     if (otherKey != null) __obj.updateDynamic("otherKey")(otherKey.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (!js.isUndefined(timestamps)) __obj.updateDynamic("timestamps")(timestamps)
-    if (uniqueKey != null) __obj.updateDynamic("uniqueKey")(uniqueKey)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (!js.isUndefined(timestamps)) __obj.updateDynamic("timestamps")(timestamps.asInstanceOf[js.Any])
+    if (uniqueKey != null) __obj.updateDynamic("uniqueKey")(uniqueKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociationOptionsBelongsToMany]
   }
 }

@@ -17,8 +17,8 @@ object HeaderOptions {
     `X-Watson-Learning-Opt-Out`: js.UndefOr[Boolean] = js.undefined
   ): HeaderOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(`X-Watson-Learning-Opt-Out`)) __obj.updateDynamic("X-Watson-Learning-Opt-Out")(`X-Watson-Learning-Opt-Out`)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(`X-Watson-Learning-Opt-Out`)) __obj.updateDynamic("X-Watson-Learning-Opt-Out")(`X-Watson-Learning-Opt-Out`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderOptions]
   }
 }

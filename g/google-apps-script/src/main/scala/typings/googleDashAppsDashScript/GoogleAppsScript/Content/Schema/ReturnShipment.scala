@@ -26,13 +26,13 @@ object ReturnShipment {
     state: String = null
   ): ReturnShipment = {
     val __obj = js.Dynamic.literal()
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate)
-    if (deliveryDate != null) __obj.updateDynamic("deliveryDate")(deliveryDate)
-    if (returnMethodType != null) __obj.updateDynamic("returnMethodType")(returnMethodType)
-    if (shipmentId != null) __obj.updateDynamic("shipmentId")(shipmentId)
-    if (shipmentTrackingInfos != null) __obj.updateDynamic("shipmentTrackingInfos")(shipmentTrackingInfos)
-    if (shippingDate != null) __obj.updateDynamic("shippingDate")(shippingDate)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
+    if (deliveryDate != null) __obj.updateDynamic("deliveryDate")(deliveryDate.asInstanceOf[js.Any])
+    if (returnMethodType != null) __obj.updateDynamic("returnMethodType")(returnMethodType.asInstanceOf[js.Any])
+    if (shipmentId != null) __obj.updateDynamic("shipmentId")(shipmentId.asInstanceOf[js.Any])
+    if (shipmentTrackingInfos != null) __obj.updateDynamic("shipmentTrackingInfos")(shipmentTrackingInfos.asInstanceOf[js.Any])
+    if (shippingDate != null) __obj.updateDynamic("shippingDate")(shippingDate.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnShipment]
   }
 }

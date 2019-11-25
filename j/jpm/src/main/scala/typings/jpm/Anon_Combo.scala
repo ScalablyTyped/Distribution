@@ -12,7 +12,7 @@ trait Anon_Combo extends js.Object {
 object Anon_Combo {
   @scala.inline
   def apply(combo: String, onPress: () => Unit): Anon_Combo = {
-    val __obj = js.Dynamic.literal(combo = combo, onPress = js.Any.fromFunction0(onPress))
+    val __obj = js.Dynamic.literal(combo = combo.asInstanceOf[js.Any], onPress = js.Any.fromFunction0(onPress))
   
     __obj.asInstanceOf[Anon_Combo]
   }

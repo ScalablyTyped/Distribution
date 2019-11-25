@@ -23,8 +23,8 @@ object GoogleDatastoreAdminV1beta1EntityFilter {
   @scala.inline
   def apply(kinds: js.Array[String] = null, namespaceIds: js.Array[String] = null): GoogleDatastoreAdminV1beta1EntityFilter = {
     val __obj = js.Dynamic.literal()
-    if (kinds != null) __obj.updateDynamic("kinds")(kinds)
-    if (namespaceIds != null) __obj.updateDynamic("namespaceIds")(namespaceIds)
+    if (kinds != null) __obj.updateDynamic("kinds")(kinds.asInstanceOf[js.Any])
+    if (namespaceIds != null) __obj.updateDynamic("namespaceIds")(namespaceIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleDatastoreAdminV1beta1EntityFilter]
   }
 }

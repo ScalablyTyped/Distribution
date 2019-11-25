@@ -73,14 +73,14 @@ object CreateDomainOptions {
     snapshotThreshold: Int | Double = null,
     useLoaderExtensions: `true` = null
   ): CreateDomainOptions = {
-    val __obj = js.Dynamic.literal(domainPath = domainPath)
-    if (aggregateLock != null) __obj.updateDynamic("aggregateLock")(aggregateLock)
-    if (commandRejectedEventName != null) __obj.updateDynamic("commandRejectedEventName")(commandRejectedEventName)
-    if (deduplication != null) __obj.updateDynamic("deduplication")(deduplication)
-    if (eventStore != null) __obj.updateDynamic("eventStore")(eventStore)
+    val __obj = js.Dynamic.literal(domainPath = domainPath.asInstanceOf[js.Any])
+    if (aggregateLock != null) __obj.updateDynamic("aggregateLock")(aggregateLock.asInstanceOf[js.Any])
+    if (commandRejectedEventName != null) __obj.updateDynamic("commandRejectedEventName")(commandRejectedEventName.asInstanceOf[js.Any])
+    if (deduplication != null) __obj.updateDynamic("deduplication")(deduplication.asInstanceOf[js.Any])
+    if (eventStore != null) __obj.updateDynamic("eventStore")(eventStore.asInstanceOf[js.Any])
     if (retryOnConcurrencyTimeout != null) __obj.updateDynamic("retryOnConcurrencyTimeout")(retryOnConcurrencyTimeout.asInstanceOf[js.Any])
     if (snapshotThreshold != null) __obj.updateDynamic("snapshotThreshold")(snapshotThreshold.asInstanceOf[js.Any])
-    if (useLoaderExtensions != null) __obj.updateDynamic("useLoaderExtensions")(useLoaderExtensions)
+    if (useLoaderExtensions != null) __obj.updateDynamic("useLoaderExtensions")(useLoaderExtensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDomainOptions]
   }
 }

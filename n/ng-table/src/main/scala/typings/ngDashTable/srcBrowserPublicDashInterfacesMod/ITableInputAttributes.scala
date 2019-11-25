@@ -34,14 +34,14 @@ object ITableInputAttributes {
     templateHeader: String = null,
     templatePagination: String = null
   ): ITableInputAttributes = {
-    val __obj = js.Dynamic.literal($addClass = js.Any.fromFunction1($addClass), $attr = $attr, $normalize = js.Any.fromFunction1($normalize), $observe = js.Any.fromFunction2($observe), $removeClass = js.Any.fromFunction1($removeClass), $set = js.Any.fromFunction2($set), $updateClass = js.Any.fromFunction2($updateClass))
-    if (disableFilter != null) __obj.updateDynamic("disableFilter")(disableFilter)
-    if (ngTable != null) __obj.updateDynamic("ngTable")(ngTable)
-    if (ngTableDynamic != null) __obj.updateDynamic("ngTableDynamic")(ngTableDynamic)
-    if (showFilter != null) __obj.updateDynamic("showFilter")(showFilter)
-    if (showGroup != null) __obj.updateDynamic("showGroup")(showGroup)
-    if (templateHeader != null) __obj.updateDynamic("templateHeader")(templateHeader)
-    if (templatePagination != null) __obj.updateDynamic("templatePagination")(templatePagination)
+    val __obj = js.Dynamic.literal($addClass = js.Any.fromFunction1($addClass), $attr = $attr.asInstanceOf[js.Any], $normalize = js.Any.fromFunction1($normalize), $observe = js.Any.fromFunction2($observe), $removeClass = js.Any.fromFunction1($removeClass), $set = js.Any.fromFunction2($set), $updateClass = js.Any.fromFunction2($updateClass))
+    if (disableFilter != null) __obj.updateDynamic("disableFilter")(disableFilter.asInstanceOf[js.Any])
+    if (ngTable != null) __obj.updateDynamic("ngTable")(ngTable.asInstanceOf[js.Any])
+    if (ngTableDynamic != null) __obj.updateDynamic("ngTableDynamic")(ngTableDynamic.asInstanceOf[js.Any])
+    if (showFilter != null) __obj.updateDynamic("showFilter")(showFilter.asInstanceOf[js.Any])
+    if (showGroup != null) __obj.updateDynamic("showGroup")(showGroup.asInstanceOf[js.Any])
+    if (templateHeader != null) __obj.updateDynamic("templateHeader")(templateHeader.asInstanceOf[js.Any])
+    if (templatePagination != null) __obj.updateDynamic("templatePagination")(templatePagination.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITableInputAttributes]
   }
 }

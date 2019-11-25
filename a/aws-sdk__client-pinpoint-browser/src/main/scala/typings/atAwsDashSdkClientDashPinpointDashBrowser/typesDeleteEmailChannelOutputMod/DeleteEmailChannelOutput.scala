@@ -22,7 +22,7 @@ trait DeleteEmailChannelOutput extends OutputTypesUnion {
 object DeleteEmailChannelOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, EmailChannelResponse: _UnmarshalledEmailChannelResponse): DeleteEmailChannelOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, EmailChannelResponse = EmailChannelResponse)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], EmailChannelResponse = EmailChannelResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteEmailChannelOutput]
   }

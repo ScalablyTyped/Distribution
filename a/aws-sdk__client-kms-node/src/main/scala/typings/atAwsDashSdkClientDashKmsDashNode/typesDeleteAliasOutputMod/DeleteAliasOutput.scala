@@ -17,7 +17,7 @@ trait DeleteAliasOutput extends OutputTypesUnion {
 object DeleteAliasOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): DeleteAliasOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteAliasOutput]
   }

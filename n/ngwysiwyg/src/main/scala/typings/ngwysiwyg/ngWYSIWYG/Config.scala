@@ -12,8 +12,8 @@ trait Config extends js.Object {
 object Config {
   @scala.inline
   def apply(sanitize: Boolean, toolbar: js.Array[Toolbar] = null): Config = {
-    val __obj = js.Dynamic.literal(sanitize = sanitize)
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar)
+    val __obj = js.Dynamic.literal(sanitize = sanitize.asInstanceOf[js.Any])
+    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

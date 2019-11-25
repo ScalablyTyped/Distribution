@@ -50,9 +50,9 @@ object MusicLibraryOptionsType {
     success: /* param0 */ MusicLibraryResponseType => _ = null
   ): MusicLibraryOptionsType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowMultipleSelections)) __obj.updateDynamic("allowMultipleSelections")(allowMultipleSelections)
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
-    if (!js.isUndefined(autohide)) __obj.updateDynamic("autohide")(autohide)
+    if (!js.isUndefined(allowMultipleSelections)) __obj.updateDynamic("allowMultipleSelections")(allowMultipleSelections.asInstanceOf[js.Any])
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
+    if (!js.isUndefined(autohide)) __obj.updateDynamic("autohide")(autohide.asInstanceOf[js.Any])
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (mediaTypes != null) __obj.updateDynamic("mediaTypes")(mediaTypes.asInstanceOf[js.Any])

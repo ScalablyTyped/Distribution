@@ -13,7 +13,7 @@ trait SignatureInfoForFuncDecl extends js.Object {
 object SignatureInfoForFuncDecl {
   @scala.inline
   def apply(allSignatures: js.Array[PullSignatureSymbol], signature: PullSignatureSymbol): SignatureInfoForFuncDecl = {
-    val __obj = js.Dynamic.literal(allSignatures = allSignatures, signature = signature)
+    val __obj = js.Dynamic.literal(allSignatures = allSignatures.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SignatureInfoForFuncDecl]
   }

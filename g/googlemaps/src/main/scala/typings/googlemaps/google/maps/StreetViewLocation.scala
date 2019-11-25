@@ -20,10 +20,10 @@ object StreetViewLocation {
     shortDescription: String = null
   ): StreetViewLocation = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (latLng != null) __obj.updateDynamic("latLng")(latLng)
-    if (pano != null) __obj.updateDynamic("pano")(pano)
-    if (shortDescription != null) __obj.updateDynamic("shortDescription")(shortDescription)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (latLng != null) __obj.updateDynamic("latLng")(latLng.asInstanceOf[js.Any])
+    if (pano != null) __obj.updateDynamic("pano")(pano.asInstanceOf[js.Any])
+    if (shortDescription != null) __obj.updateDynamic("shortDescription")(shortDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreetViewLocation]
   }
 }

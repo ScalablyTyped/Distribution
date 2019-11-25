@@ -15,9 +15,9 @@ object UpdateAdminProps {
   @scala.inline
   def apply(email: String = null, metadata: OnfleetMetadata = null, name: String = null): UpdateAdminProps = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAdminProps]
   }
 }

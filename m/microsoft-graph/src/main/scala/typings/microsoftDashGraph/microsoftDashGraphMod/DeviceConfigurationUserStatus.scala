@@ -32,11 +32,11 @@ object DeviceConfigurationUserStatus {
   ): DeviceConfigurationUserStatus = {
     val __obj = js.Dynamic.literal()
     if (devicesCount != null) __obj.updateDynamic("devicesCount")(devicesCount.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastReportedDateTime != null) __obj.updateDynamic("lastReportedDateTime")(lastReportedDateTime)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (userDisplayName != null) __obj.updateDynamic("userDisplayName")(userDisplayName)
-    if (userPrincipalName != null) __obj.updateDynamic("userPrincipalName")(userPrincipalName)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastReportedDateTime != null) __obj.updateDynamic("lastReportedDateTime")(lastReportedDateTime.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (userDisplayName != null) __obj.updateDynamic("userDisplayName")(userDisplayName.asInstanceOf[js.Any])
+    if (userPrincipalName != null) __obj.updateDynamic("userPrincipalName")(userPrincipalName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceConfigurationUserStatus]
   }
 }

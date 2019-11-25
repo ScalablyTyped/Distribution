@@ -15,7 +15,7 @@ object PlotIkhPointOptions {
   @scala.inline
   def apply(events: PlotIkhPointEventsOptions = null): PlotIkhPointOptions = {
     val __obj = js.Dynamic.literal()
-    if (events != null) __obj.updateDynamic("events")(events)
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotIkhPointOptions]
   }
 }

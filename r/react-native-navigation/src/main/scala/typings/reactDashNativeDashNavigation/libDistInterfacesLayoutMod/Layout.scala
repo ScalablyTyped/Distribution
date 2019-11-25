@@ -47,13 +47,13 @@ object Layout {
     topTabs: TopTabs = null
   ): Layout[P] = {
     val __obj = js.Dynamic.literal()
-    if (bottomTabs != null) __obj.updateDynamic("bottomTabs")(bottomTabs)
-    if (component != null) __obj.updateDynamic("component")(component)
-    if (externalComponent != null) __obj.updateDynamic("externalComponent")(externalComponent)
-    if (sideMenu != null) __obj.updateDynamic("sideMenu")(sideMenu)
-    if (splitView != null) __obj.updateDynamic("splitView")(splitView)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
-    if (topTabs != null) __obj.updateDynamic("topTabs")(topTabs)
+    if (bottomTabs != null) __obj.updateDynamic("bottomTabs")(bottomTabs.asInstanceOf[js.Any])
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (externalComponent != null) __obj.updateDynamic("externalComponent")(externalComponent.asInstanceOf[js.Any])
+    if (sideMenu != null) __obj.updateDynamic("sideMenu")(sideMenu.asInstanceOf[js.Any])
+    if (splitView != null) __obj.updateDynamic("splitView")(splitView.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    if (topTabs != null) __obj.updateDynamic("topTabs")(topTabs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layout[P]]
   }
 }

@@ -12,7 +12,7 @@ trait SNSMessageAttribute extends js.Object {
 object SNSMessageAttribute {
   @scala.inline
   def apply(Type: String, Value: String): SNSMessageAttribute = {
-    val __obj = js.Dynamic.literal(Type = Type, Value = Value)
+    val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SNSMessageAttribute]
   }

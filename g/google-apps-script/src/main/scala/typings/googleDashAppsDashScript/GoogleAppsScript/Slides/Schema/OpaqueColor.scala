@@ -13,8 +13,8 @@ object OpaqueColor {
   @scala.inline
   def apply(rgbColor: RgbColor = null, themeColor: String = null): OpaqueColor = {
     val __obj = js.Dynamic.literal()
-    if (rgbColor != null) __obj.updateDynamic("rgbColor")(rgbColor)
-    if (themeColor != null) __obj.updateDynamic("themeColor")(themeColor)
+    if (rgbColor != null) __obj.updateDynamic("rgbColor")(rgbColor.asInstanceOf[js.Any])
+    if (themeColor != null) __obj.updateDynamic("themeColor")(themeColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpaqueColor]
   }
 }

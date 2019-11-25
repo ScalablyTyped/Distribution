@@ -23,7 +23,7 @@ object MappingItem {
     originalLine: Double,
     source: String
   ): MappingItem = {
-    val __obj = js.Dynamic.literal(generatedColumn = generatedColumn, generatedLine = generatedLine, name = name, originalColumn = originalColumn, originalLine = originalLine, source = source)
+    val __obj = js.Dynamic.literal(generatedColumn = generatedColumn.asInstanceOf[js.Any], generatedLine = generatedLine.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], originalColumn = originalColumn.asInstanceOf[js.Any], originalLine = originalLine.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MappingItem]
   }

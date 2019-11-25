@@ -39,14 +39,14 @@ object UrlMap {
     urlRegex: String = null
   ): UrlMap = {
     val __obj = js.Dynamic.literal()
-    if (apiEndpoint != null) __obj.updateDynamic("apiEndpoint")(apiEndpoint)
-    if (authFailAction != null) __obj.updateDynamic("authFailAction")(authFailAction)
-    if (login != null) __obj.updateDynamic("login")(login)
-    if (redirectHttpResponseCode != null) __obj.updateDynamic("redirectHttpResponseCode")(redirectHttpResponseCode)
-    if (script != null) __obj.updateDynamic("script")(script)
-    if (securityLevel != null) __obj.updateDynamic("securityLevel")(securityLevel)
-    if (staticFiles != null) __obj.updateDynamic("staticFiles")(staticFiles)
-    if (urlRegex != null) __obj.updateDynamic("urlRegex")(urlRegex)
+    if (apiEndpoint != null) __obj.updateDynamic("apiEndpoint")(apiEndpoint.asInstanceOf[js.Any])
+    if (authFailAction != null) __obj.updateDynamic("authFailAction")(authFailAction.asInstanceOf[js.Any])
+    if (login != null) __obj.updateDynamic("login")(login.asInstanceOf[js.Any])
+    if (redirectHttpResponseCode != null) __obj.updateDynamic("redirectHttpResponseCode")(redirectHttpResponseCode.asInstanceOf[js.Any])
+    if (script != null) __obj.updateDynamic("script")(script.asInstanceOf[js.Any])
+    if (securityLevel != null) __obj.updateDynamic("securityLevel")(securityLevel.asInstanceOf[js.Any])
+    if (staticFiles != null) __obj.updateDynamic("staticFiles")(staticFiles.asInstanceOf[js.Any])
+    if (urlRegex != null) __obj.updateDynamic("urlRegex")(urlRegex.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlMap]
   }
 }

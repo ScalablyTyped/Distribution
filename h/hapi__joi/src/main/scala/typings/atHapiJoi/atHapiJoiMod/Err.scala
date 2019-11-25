@@ -8,8 +8,8 @@ trait Err extends JoiObject
 
 object Err {
   @scala.inline
-  def apply(isJoi: Boolean, toString: () => String): Err = {
-    val __obj = js.Dynamic.literal(isJoi = isJoi, toString = js.Any.fromFunction0(toString))
+  def apply(isJoi: Boolean): Err = {
+    val __obj = js.Dynamic.literal(isJoi = isJoi.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Err]
   }

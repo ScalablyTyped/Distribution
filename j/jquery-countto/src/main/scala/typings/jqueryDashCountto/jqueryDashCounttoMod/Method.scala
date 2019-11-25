@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait Method extends js.Object
 
+object Method {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def restart: typings.jqueryDashCountto.jqueryDashCounttoStrings.restart = this.cast("restart")
+  @scala.inline
+  def start: typings.jqueryDashCountto.jqueryDashCounttoStrings.start = this.cast("start")
+  @scala.inline
+  def stop: typings.jqueryDashCountto.jqueryDashCounttoStrings.stop = this.cast("stop")
+  @scala.inline
+  def toggle: typings.jqueryDashCountto.jqueryDashCounttoStrings.toggle = this.cast("toggle")
+}
+

@@ -13,8 +13,8 @@ object HtmlIframeProps {
   @scala.inline
   def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, src: String = null): HtmlIframeProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (src != null) __obj.updateDynamic("src")(src)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlIframeProps]
   }
 }

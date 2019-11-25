@@ -20,8 +20,8 @@ trait EvaluateOnCallFrameReturnType extends js.Object {
 object EvaluateOnCallFrameReturnType {
   @scala.inline
   def apply(result: RemoteObject, exceptionDetails: ExceptionDetails = null): EvaluateOnCallFrameReturnType = {
-    val __obj = js.Dynamic.literal(result = result)
-    if (exceptionDetails != null) __obj.updateDynamic("exceptionDetails")(exceptionDetails)
+    val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
+    if (exceptionDetails != null) __obj.updateDynamic("exceptionDetails")(exceptionDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvaluateOnCallFrameReturnType]
   }
 }

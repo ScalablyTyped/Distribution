@@ -17,7 +17,7 @@ object HasPlayServicesParams {
   @scala.inline
   def apply(showPlayServicesUpdateDialog: js.UndefOr[Boolean] = js.undefined): HasPlayServicesParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(showPlayServicesUpdateDialog)) __obj.updateDynamic("showPlayServicesUpdateDialog")(showPlayServicesUpdateDialog)
+    if (!js.isUndefined(showPlayServicesUpdateDialog)) __obj.updateDynamic("showPlayServicesUpdateDialog")(showPlayServicesUpdateDialog.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasPlayServicesParams]
   }
 }

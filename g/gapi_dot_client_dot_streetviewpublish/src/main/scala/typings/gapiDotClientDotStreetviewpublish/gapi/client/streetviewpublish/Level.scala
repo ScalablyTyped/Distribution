@@ -23,7 +23,7 @@ object Level {
   @scala.inline
   def apply(name: String = null, number: Int | Double = null): Level = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
     __obj.asInstanceOf[Level]
   }

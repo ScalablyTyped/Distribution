@@ -137,7 +137,7 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait concat extends BidirectionalMergeMode
   
   @js.native
-  sealed trait constant extends _InitializerIdentifier
+  sealed trait constant_ extends _InitializerIdentifier
   
   @js.native
   sealed trait cosine_proximity extends js.Object
@@ -194,7 +194,7 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait hinge extends js.Object
   
   @js.native
-  sealed trait identity extends _InitializerIdentifier
+  sealed trait identity_ extends _InitializerIdentifier
   
   @js.native
   sealed trait input_dtype extends js.Object
@@ -230,7 +230,7 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait max extends PoolMode
   
   @js.native
-  sealed trait maxNorm extends _ConstraintIdentifier
+  sealed trait maxNorm_ extends _ConstraintIdentifier
   
   @js.native
   sealed trait mean_absolute_error extends js.Object
@@ -248,7 +248,7 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait min extends js.Object
   
   @js.native
-  sealed trait minMaxNorm extends _ConstraintIdentifier
+  sealed trait minMaxNorm_ extends _ConstraintIdentifier
   
   @js.native
   sealed trait mul extends BidirectionalMergeMode
@@ -260,7 +260,7 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait never extends _YieldEveryOptions
   
   @js.native
-  sealed trait nonNeg extends _ConstraintIdentifier
+  sealed trait nonNeg_ extends _ConstraintIdentifier
   
   @js.native
   sealed trait normal
@@ -268,19 +268,19 @@ object atTensorflowTfjsDashLayersStrings {
        with DistributionSerialization
   
   @js.native
-  sealed trait ones extends _InitializerIdentifier
+  sealed trait ones_ extends _InitializerIdentifier
   
   @js.native
-  sealed trait orthogonal extends _InitializerIdentifier
+  sealed trait orthogonal_ extends _InitializerIdentifier
   
   @js.native
   sealed trait poisson extends js.Object
   
   @js.native
-  sealed trait randomNormal extends _InitializerIdentifier
+  sealed trait randomNormal_ extends _InitializerIdentifier
   
   @js.native
-  sealed trait randomUniform extends _InitializerIdentifier
+  sealed trait randomUniform_ extends _InitializerIdentifier
   
   @js.native
   sealed trait relu extends ActivationIdentifier
@@ -328,7 +328,7 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait trainable extends js.Object
   
   @js.native
-  sealed trait truncatedNormal
+  sealed trait truncatedNormal_
     extends Distribution
        with _InitializerIdentifier
   
@@ -341,16 +341,16 @@ object atTensorflowTfjsDashLayersStrings {
        with DistributionSerialization
   
   @js.native
-  sealed trait unitNorm extends _ConstraintIdentifier
+  sealed trait unitNorm_ extends _ConstraintIdentifier
   
   @js.native
   sealed trait valid extends PaddingMode
   
   @js.native
-  sealed trait varianceScaling extends _InitializerIdentifier
+  sealed trait varianceScaling_ extends _InitializerIdentifier
   
   @js.native
-  sealed trait zeros extends _InitializerIdentifier
+  sealed trait zeros_ extends _InitializerIdentifier
   
   @scala.inline
   def `1DOT3DOT2`: `1DOT3DOT2` = "1.3.2".asInstanceOf[`1DOT3DOT2`]
@@ -431,7 +431,7 @@ object atTensorflowTfjsDashLayersStrings {
   @scala.inline
   def concat: concat = "concat".asInstanceOf[concat]
   @scala.inline
-  def constant: constant = "constant".asInstanceOf[constant]
+  def constant_ : constant_ = "constant".asInstanceOf[constant_]
   @scala.inline
   def cosine_proximity: cosine_proximity = "cosine_proximity".asInstanceOf[cosine_proximity]
   @scala.inline
@@ -469,7 +469,7 @@ object atTensorflowTfjsDashLayersStrings {
   @scala.inline
   def hinge: hinge = "hinge".asInstanceOf[hinge]
   @scala.inline
-  def identity: identity = "identity".asInstanceOf[identity]
+  def identity_ : identity_ = "identity".asInstanceOf[identity_]
   @scala.inline
   def input_dtype: input_dtype = "input_dtype".asInstanceOf[input_dtype]
   @scala.inline
@@ -493,7 +493,7 @@ object atTensorflowTfjsDashLayersStrings {
   @scala.inline
   def max: max = "max".asInstanceOf[max]
   @scala.inline
-  def maxNorm: maxNorm = "maxNorm".asInstanceOf[maxNorm]
+  def maxNorm_ : maxNorm_ = "maxNorm".asInstanceOf[maxNorm_]
   @scala.inline
   def mean_absolute_error: mean_absolute_error = "mean_absolute_error".asInstanceOf[mean_absolute_error]
   @scala.inline
@@ -505,7 +505,7 @@ object atTensorflowTfjsDashLayersStrings {
   @scala.inline
   def min: min = "min".asInstanceOf[min]
   @scala.inline
-  def minMaxNorm: minMaxNorm = "minMaxNorm".asInstanceOf[minMaxNorm]
+  def minMaxNorm_ : minMaxNorm_ = "minMaxNorm".asInstanceOf[minMaxNorm_]
   @scala.inline
   def mul: mul = "mul".asInstanceOf[mul]
   @scala.inline
@@ -513,19 +513,19 @@ object atTensorflowTfjsDashLayersStrings {
   @scala.inline
   def never: never = "never".asInstanceOf[never]
   @scala.inline
-  def nonNeg: nonNeg = "nonNeg".asInstanceOf[nonNeg]
+  def nonNeg_ : nonNeg_ = "nonNeg".asInstanceOf[nonNeg_]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
-  def ones: ones = "ones".asInstanceOf[ones]
+  def ones_ : ones_ = "ones".asInstanceOf[ones_]
   @scala.inline
-  def orthogonal: orthogonal = "orthogonal".asInstanceOf[orthogonal]
+  def orthogonal_ : orthogonal_ = "orthogonal".asInstanceOf[orthogonal_]
   @scala.inline
   def poisson: poisson = "poisson".asInstanceOf[poisson]
   @scala.inline
-  def randomNormal: randomNormal = "randomNormal".asInstanceOf[randomNormal]
+  def randomNormal_ : randomNormal_ = "randomNormal".asInstanceOf[randomNormal_]
   @scala.inline
-  def randomUniform: randomUniform = "randomUniform".asInstanceOf[randomUniform]
+  def randomUniform_ : randomUniform_ = "randomUniform".asInstanceOf[randomUniform_]
   @scala.inline
   def relu: relu = "relu".asInstanceOf[relu]
   @scala.inline
@@ -557,18 +557,18 @@ object atTensorflowTfjsDashLayersStrings {
   @scala.inline
   def trainable: trainable = "trainable".asInstanceOf[trainable]
   @scala.inline
-  def truncatedNormal: truncatedNormal = "truncatedNormal".asInstanceOf[truncatedNormal]
+  def truncatedNormal_ : truncatedNormal_ = "truncatedNormal".asInstanceOf[truncatedNormal_]
   @scala.inline
   def truncated_normal: truncated_normal = "truncated_normal".asInstanceOf[truncated_normal]
   @scala.inline
   def uniform: uniform = "uniform".asInstanceOf[uniform]
   @scala.inline
-  def unitNorm: unitNorm = "unitNorm".asInstanceOf[unitNorm]
+  def unitNorm_ : unitNorm_ = "unitNorm".asInstanceOf[unitNorm_]
   @scala.inline
   def valid: valid = "valid".asInstanceOf[valid]
   @scala.inline
-  def varianceScaling: varianceScaling = "varianceScaling".asInstanceOf[varianceScaling]
+  def varianceScaling_ : varianceScaling_ = "varianceScaling".asInstanceOf[varianceScaling_]
   @scala.inline
-  def zeros: zeros = "zeros".asInstanceOf[zeros]
+  def zeros_ : zeros_ = "zeros".asInstanceOf[zeros_]
 }
 

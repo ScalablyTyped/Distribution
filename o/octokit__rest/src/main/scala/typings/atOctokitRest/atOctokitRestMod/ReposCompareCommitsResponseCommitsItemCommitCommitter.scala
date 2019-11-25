@@ -13,7 +13,7 @@ trait ReposCompareCommitsResponseCommitsItemCommitCommitter extends js.Object {
 object ReposCompareCommitsResponseCommitsItemCommitCommitter {
   @scala.inline
   def apply(date: String, email: String, name: String): ReposCompareCommitsResponseCommitsItemCommitCommitter = {
-    val __obj = js.Dynamic.literal(date = date, email = email, name = name)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposCompareCommitsResponseCommitsItemCommitCommitter]
   }

@@ -30,8 +30,8 @@ object State {
     zIndex: Double,
     extent: Extent = null
   ): State = {
-    val __obj = js.Dynamic.literal(layer = layer, managed = managed, maxResolution = maxResolution, minResolution = minResolution, opacity = opacity, sourceState = sourceState, visible = visible, zIndex = zIndex)
-    if (extent != null) __obj.updateDynamic("extent")(extent)
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], managed = managed.asInstanceOf[js.Any], maxResolution = maxResolution.asInstanceOf[js.Any], minResolution = minResolution.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], sourceState = sourceState.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
+    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
 }

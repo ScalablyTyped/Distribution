@@ -23,7 +23,7 @@ object ShardStatus {
     services: js.Array[Service],
     slug: String
   ): ShardStatus = {
-    val __obj = js.Dynamic.literal(hostname = hostname, locales = locales, name = name, region_tag = region_tag, services = services, slug = slug)
+    val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], locales = locales.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], region_tag = region_tag.asInstanceOf[js.Any], services = services.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ShardStatus]
   }

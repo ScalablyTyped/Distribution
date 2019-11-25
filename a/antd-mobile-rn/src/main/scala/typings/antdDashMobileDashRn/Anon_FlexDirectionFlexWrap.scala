@@ -12,7 +12,7 @@ trait Anon_FlexDirectionFlexWrap extends js.Object {
 object Anon_FlexDirectionFlexWrap {
   @scala.inline
   def apply(flexDirection: String, flexWrap: String): Anon_FlexDirectionFlexWrap = {
-    val __obj = js.Dynamic.literal(flexDirection = flexDirection, flexWrap = flexWrap)
+    val __obj = js.Dynamic.literal(flexDirection = flexDirection.asInstanceOf[js.Any], flexWrap = flexWrap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FlexDirectionFlexWrap]
   }

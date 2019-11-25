@@ -22,7 +22,7 @@ trait UserRoleAssignmentRef extends js.Object {
 object UserRoleAssignmentRef {
   @scala.inline
   def apply(roleName: String, uniqueName: String, userId: String): UserRoleAssignmentRef = {
-    val __obj = js.Dynamic.literal(roleName = roleName, uniqueName = uniqueName, userId = userId)
+    val __obj = js.Dynamic.literal(roleName = roleName.asInstanceOf[js.Any], uniqueName = uniqueName.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserRoleAssignmentRef]
   }

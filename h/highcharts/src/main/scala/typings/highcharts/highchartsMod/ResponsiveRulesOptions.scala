@@ -30,8 +30,8 @@ object ResponsiveRulesOptions {
   @scala.inline
   def apply(chartOptions: Options = null, condition: ResponsiveRulesConditionOptions = null): ResponsiveRulesOptions = {
     val __obj = js.Dynamic.literal()
-    if (chartOptions != null) __obj.updateDynamic("chartOptions")(chartOptions)
-    if (condition != null) __obj.updateDynamic("condition")(condition)
+    if (chartOptions != null) __obj.updateDynamic("chartOptions")(chartOptions.asInstanceOf[js.Any])
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponsiveRulesOptions]
   }
 }

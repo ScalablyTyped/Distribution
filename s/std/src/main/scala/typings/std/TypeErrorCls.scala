@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("TypeError")
 @js.native
-class TypeErrorCls () extends TypeError {
+class TypeErrorCls () extends Error {
   def this(message: java.lang.String) = this()
   /* CompleteClass */
   override var message: java.lang.String = js.native

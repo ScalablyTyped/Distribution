@@ -12,7 +12,7 @@ trait RadioChangeEventDetail extends js.Object {
 object RadioChangeEventDetail {
   @scala.inline
   def apply(checked: Boolean, value: js.Any): RadioChangeEventDetail = {
-    val __obj = js.Dynamic.literal(checked = checked, value = value)
+    val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RadioChangeEventDetail]
   }

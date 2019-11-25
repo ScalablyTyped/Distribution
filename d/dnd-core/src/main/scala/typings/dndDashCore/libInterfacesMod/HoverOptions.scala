@@ -12,7 +12,7 @@ object HoverOptions {
   @scala.inline
   def apply(clientOffset: XYCoord = null): HoverOptions = {
     val __obj = js.Dynamic.literal()
-    if (clientOffset != null) __obj.updateDynamic("clientOffset")(clientOffset)
+    if (clientOffset != null) __obj.updateDynamic("clientOffset")(clientOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[HoverOptions]
   }
 }

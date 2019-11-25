@@ -20,7 +20,7 @@ object Anon_BIncomingQueueBlocked {
     bOutgoingQueuePaused: Boolean,
     pFaxServer: FaxServer
   ): Anon_BIncomingQueueBlocked = {
-    val __obj = js.Dynamic.literal(bIncomingQueueBlocked = bIncomingQueueBlocked, bOutgoingQueueBlocked = bOutgoingQueueBlocked, bOutgoingQueuePaused = bOutgoingQueuePaused, pFaxServer = pFaxServer)
+    val __obj = js.Dynamic.literal(bIncomingQueueBlocked = bIncomingQueueBlocked.asInstanceOf[js.Any], bOutgoingQueueBlocked = bOutgoingQueueBlocked.asInstanceOf[js.Any], bOutgoingQueuePaused = bOutgoingQueuePaused.asInstanceOf[js.Any], pFaxServer = pFaxServer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BIncomingQueueBlocked]
   }

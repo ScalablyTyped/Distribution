@@ -37,11 +37,11 @@ object Post {
     numberOfGlyphs: Int | Double = null,
     offset: js.Array[Double] = null
   ): Post = {
-    val __obj = js.Dynamic.literal(isFixedPitch = isFixedPitch, italicAngle = italicAngle, maxMemType1 = maxMemType1, maxMemType42 = maxMemType42, minMemType1 = minMemType1, minMemType42 = minMemType42, underlinePosition = underlinePosition, underlineThickness = underlineThickness, version = version)
-    if (glyphNameIndex != null) __obj.updateDynamic("glyphNameIndex")(glyphNameIndex)
-    if (names != null) __obj.updateDynamic("names")(names)
+    val __obj = js.Dynamic.literal(isFixedPitch = isFixedPitch.asInstanceOf[js.Any], italicAngle = italicAngle.asInstanceOf[js.Any], maxMemType1 = maxMemType1.asInstanceOf[js.Any], maxMemType42 = maxMemType42.asInstanceOf[js.Any], minMemType1 = minMemType1.asInstanceOf[js.Any], minMemType42 = minMemType42.asInstanceOf[js.Any], underlinePosition = underlinePosition.asInstanceOf[js.Any], underlineThickness = underlineThickness.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (glyphNameIndex != null) __obj.updateDynamic("glyphNameIndex")(glyphNameIndex.asInstanceOf[js.Any])
+    if (names != null) __obj.updateDynamic("names")(names.asInstanceOf[js.Any])
     if (numberOfGlyphs != null) __obj.updateDynamic("numberOfGlyphs")(numberOfGlyphs.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Post]
   }
 }

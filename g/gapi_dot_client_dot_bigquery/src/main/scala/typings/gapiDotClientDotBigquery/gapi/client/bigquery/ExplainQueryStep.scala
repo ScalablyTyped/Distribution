@@ -15,8 +15,8 @@ object ExplainQueryStep {
   @scala.inline
   def apply(kind: String = null, substeps: js.Array[String] = null): ExplainQueryStep = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (substeps != null) __obj.updateDynamic("substeps")(substeps)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (substeps != null) __obj.updateDynamic("substeps")(substeps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExplainQueryStep]
   }
 }

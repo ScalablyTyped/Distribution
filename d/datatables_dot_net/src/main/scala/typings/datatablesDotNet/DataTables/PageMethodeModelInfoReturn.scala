@@ -27,7 +27,7 @@ object PageMethodeModelInfoReturn {
     serverSide: Boolean,
     start: Double
   ): PageMethodeModelInfoReturn = {
-    val __obj = js.Dynamic.literal(end = end, length = length, page = page, pages = pages, recordsDisplay = recordsDisplay, recordsTotal = recordsTotal, serverSide = serverSide, start = start)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], recordsDisplay = recordsDisplay.asInstanceOf[js.Any], recordsTotal = recordsTotal.asInstanceOf[js.Any], serverSide = serverSide.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PageMethodeModelInfoReturn]
   }

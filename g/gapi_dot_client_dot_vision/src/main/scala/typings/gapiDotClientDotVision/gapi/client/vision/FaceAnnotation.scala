@@ -83,21 +83,21 @@ object FaceAnnotation {
     underExposedLikelihood: String = null
   ): FaceAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (angerLikelihood != null) __obj.updateDynamic("angerLikelihood")(angerLikelihood)
-    if (blurredLikelihood != null) __obj.updateDynamic("blurredLikelihood")(blurredLikelihood)
-    if (boundingPoly != null) __obj.updateDynamic("boundingPoly")(boundingPoly)
+    if (angerLikelihood != null) __obj.updateDynamic("angerLikelihood")(angerLikelihood.asInstanceOf[js.Any])
+    if (blurredLikelihood != null) __obj.updateDynamic("blurredLikelihood")(blurredLikelihood.asInstanceOf[js.Any])
+    if (boundingPoly != null) __obj.updateDynamic("boundingPoly")(boundingPoly.asInstanceOf[js.Any])
     if (detectionConfidence != null) __obj.updateDynamic("detectionConfidence")(detectionConfidence.asInstanceOf[js.Any])
-    if (fdBoundingPoly != null) __obj.updateDynamic("fdBoundingPoly")(fdBoundingPoly)
-    if (headwearLikelihood != null) __obj.updateDynamic("headwearLikelihood")(headwearLikelihood)
-    if (joyLikelihood != null) __obj.updateDynamic("joyLikelihood")(joyLikelihood)
+    if (fdBoundingPoly != null) __obj.updateDynamic("fdBoundingPoly")(fdBoundingPoly.asInstanceOf[js.Any])
+    if (headwearLikelihood != null) __obj.updateDynamic("headwearLikelihood")(headwearLikelihood.asInstanceOf[js.Any])
+    if (joyLikelihood != null) __obj.updateDynamic("joyLikelihood")(joyLikelihood.asInstanceOf[js.Any])
     if (landmarkingConfidence != null) __obj.updateDynamic("landmarkingConfidence")(landmarkingConfidence.asInstanceOf[js.Any])
-    if (landmarks != null) __obj.updateDynamic("landmarks")(landmarks)
+    if (landmarks != null) __obj.updateDynamic("landmarks")(landmarks.asInstanceOf[js.Any])
     if (panAngle != null) __obj.updateDynamic("panAngle")(panAngle.asInstanceOf[js.Any])
     if (rollAngle != null) __obj.updateDynamic("rollAngle")(rollAngle.asInstanceOf[js.Any])
-    if (sorrowLikelihood != null) __obj.updateDynamic("sorrowLikelihood")(sorrowLikelihood)
-    if (surpriseLikelihood != null) __obj.updateDynamic("surpriseLikelihood")(surpriseLikelihood)
+    if (sorrowLikelihood != null) __obj.updateDynamic("sorrowLikelihood")(sorrowLikelihood.asInstanceOf[js.Any])
+    if (surpriseLikelihood != null) __obj.updateDynamic("surpriseLikelihood")(surpriseLikelihood.asInstanceOf[js.Any])
     if (tiltAngle != null) __obj.updateDynamic("tiltAngle")(tiltAngle.asInstanceOf[js.Any])
-    if (underExposedLikelihood != null) __obj.updateDynamic("underExposedLikelihood")(underExposedLikelihood)
+    if (underExposedLikelihood != null) __obj.updateDynamic("underExposedLikelihood")(underExposedLikelihood.asInstanceOf[js.Any])
     __obj.asInstanceOf[FaceAnnotation]
   }
 }

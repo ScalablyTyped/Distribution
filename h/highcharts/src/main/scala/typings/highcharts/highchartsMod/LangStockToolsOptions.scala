@@ -12,7 +12,7 @@ object LangStockToolsOptions {
   @scala.inline
   def apply(gui: LangStockToolsGuiOptions = null): LangStockToolsOptions = {
     val __obj = js.Dynamic.literal()
-    if (gui != null) __obj.updateDynamic("gui")(gui)
+    if (gui != null) __obj.updateDynamic("gui")(gui.asInstanceOf[js.Any])
     __obj.asInstanceOf[LangStockToolsOptions]
   }
 }

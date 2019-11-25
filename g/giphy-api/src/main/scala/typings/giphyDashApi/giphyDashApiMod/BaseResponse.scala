@@ -14,7 +14,7 @@ trait BaseResponse extends js.Object {
 object BaseResponse {
   @scala.inline
   def apply(meta: Anon_Msg, pagination: Anon_Count): BaseResponse = {
-    val __obj = js.Dynamic.literal(meta = meta, pagination = pagination)
+    val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BaseResponse]
   }

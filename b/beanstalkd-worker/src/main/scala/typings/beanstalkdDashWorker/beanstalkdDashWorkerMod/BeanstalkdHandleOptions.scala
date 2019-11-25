@@ -17,7 +17,7 @@ object BeanstalkdHandleOptions {
   @scala.inline
   def apply(backoff: BeanstalkdHandleBackoff = null, tries: Int | Double = null, width: Int | Double = null): BeanstalkdHandleOptions = {
     val __obj = js.Dynamic.literal()
-    if (backoff != null) __obj.updateDynamic("backoff")(backoff)
+    if (backoff != null) __obj.updateDynamic("backoff")(backoff.asInstanceOf[js.Any])
     if (tries != null) __obj.updateDynamic("tries")(tries.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeanstalkdHandleOptions]

@@ -36,7 +36,7 @@ object WorkflowTask {
     timeoutInMinutes: Double,
     version: String
   ): WorkflowTask = {
-    val __obj = js.Dynamic.literal(alwaysRun = alwaysRun, condition = condition, continueOnError = continueOnError, definitionType = definitionType, enabled = enabled, inputs = inputs, name = name, overrideInputs = overrideInputs, refName = refName, taskId = taskId, timeoutInMinutes = timeoutInMinutes, version = version)
+    val __obj = js.Dynamic.literal(alwaysRun = alwaysRun.asInstanceOf[js.Any], condition = condition.asInstanceOf[js.Any], continueOnError = continueOnError.asInstanceOf[js.Any], definitionType = definitionType.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], overrideInputs = overrideInputs.asInstanceOf[js.Any], refName = refName.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any], timeoutInMinutes = timeoutInMinutes.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkflowTask]
   }

@@ -19,9 +19,9 @@ object Options {
     transform: Transform = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(decodeEntities)) __obj.updateDynamic("decodeEntities")(decodeEntities)
+    if (!js.isUndefined(decodeEntities)) __obj.updateDynamic("decodeEntities")(decodeEntities.asInstanceOf[js.Any])
     if (preprocessNodes != null) __obj.updateDynamic("preprocessNodes")(js.Any.fromFunction1(preprocessNodes))
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

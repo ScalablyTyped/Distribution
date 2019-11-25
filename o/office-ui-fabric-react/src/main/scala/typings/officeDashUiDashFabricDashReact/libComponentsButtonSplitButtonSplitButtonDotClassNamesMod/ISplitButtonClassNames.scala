@@ -22,11 +22,11 @@ object ISplitButtonClassNames {
     splitButtonContainer: String = null
   ): ISplitButtonClassNames = {
     val __obj = js.Dynamic.literal()
-    if (divider != null) __obj.updateDynamic("divider")(divider)
-    if (flexContainer != null) __obj.updateDynamic("flexContainer")(flexContainer)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (splitButtonContainer != null) __obj.updateDynamic("splitButtonContainer")(splitButtonContainer)
+    if (divider != null) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
+    if (flexContainer != null) __obj.updateDynamic("flexContainer")(flexContainer.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (splitButtonContainer != null) __obj.updateDynamic("splitButtonContainer")(splitButtonContainer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISplitButtonClassNames]
   }
 }

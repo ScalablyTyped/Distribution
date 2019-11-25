@@ -16,7 +16,7 @@ object Anon_DomPUpdate {
   @scala.inline
   def apply[S /* <: Schema[_, _] */](update: EditorState[S] => Boolean, dom: DocumentFragment = null): Anon_DomPUpdate[S] = {
     val __obj = js.Dynamic.literal(update = js.Any.fromFunction1(update))
-    if (dom != null) __obj.updateDynamic("dom")(dom)
+    if (dom != null) __obj.updateDynamic("dom")(dom.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DomPUpdate[S]]
   }
 }

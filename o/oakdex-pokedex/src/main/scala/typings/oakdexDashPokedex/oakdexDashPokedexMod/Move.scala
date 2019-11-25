@@ -55,10 +55,10 @@ object Move {
     in_battle_properties: Anon_Increasedcriticalhitratio = null,
     stat_modifiers: js.Array[MoveStatModifier] = null
   ): Move = {
-    val __obj = js.Dynamic.literal(accuracy = accuracy, affected_by_kings_rock = affected_by_kings_rock, affected_by_magic_coat = affected_by_magic_coat, affected_by_mirror_move = affected_by_mirror_move, affected_by_protect = affected_by_protect, affected_by_snatch = affected_by_snatch, category = category, contests = contests, critical_hit = critical_hit, index_number = index_number, makes_contact = makes_contact, max_pp = max_pp, names = names, pokedex_entries = pokedex_entries, power = power, pp = pp, priority = priority, target = target)
-    __obj.updateDynamic("type")(`type`)
-    if (in_battle_properties != null) __obj.updateDynamic("in_battle_properties")(in_battle_properties)
-    if (stat_modifiers != null) __obj.updateDynamic("stat_modifiers")(stat_modifiers)
+    val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], affected_by_kings_rock = affected_by_kings_rock.asInstanceOf[js.Any], affected_by_magic_coat = affected_by_magic_coat.asInstanceOf[js.Any], affected_by_mirror_move = affected_by_mirror_move.asInstanceOf[js.Any], affected_by_protect = affected_by_protect.asInstanceOf[js.Any], affected_by_snatch = affected_by_snatch.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], contests = contests.asInstanceOf[js.Any], critical_hit = critical_hit.asInstanceOf[js.Any], index_number = index_number.asInstanceOf[js.Any], makes_contact = makes_contact.asInstanceOf[js.Any], max_pp = max_pp.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], pokedex_entries = pokedex_entries.asInstanceOf[js.Any], power = power.asInstanceOf[js.Any], pp = pp.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (in_battle_properties != null) __obj.updateDynamic("in_battle_properties")(in_battle_properties.asInstanceOf[js.Any])
+    if (stat_modifiers != null) __obj.updateDynamic("stat_modifiers")(stat_modifiers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Move]
   }
 }

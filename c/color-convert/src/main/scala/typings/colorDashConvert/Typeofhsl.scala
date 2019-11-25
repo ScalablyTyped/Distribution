@@ -21,7 +21,7 @@ trait Typeofhsl extends js.Object {
 object Typeofhsl {
   @scala.inline
   def apply(channels: `3`, hcg: HSL => HCG, hsv: HSL => HSV, labels: hsl, rgb: HSL => RGB): Typeofhsl = {
-    val __obj = js.Dynamic.literal(channels = channels, hcg = js.Any.fromFunction1(hcg), hsv = js.Any.fromFunction1(hsv), labels = labels, rgb = js.Any.fromFunction1(rgb))
+    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], hcg = js.Any.fromFunction1(hcg), hsv = js.Any.fromFunction1(hsv), labels = labels.asInstanceOf[js.Any], rgb = js.Any.fromFunction1(rgb))
   
     __obj.asInstanceOf[Typeofhsl]
   }

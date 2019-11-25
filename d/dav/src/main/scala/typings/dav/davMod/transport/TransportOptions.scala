@@ -17,8 +17,8 @@ object TransportOptions {
   @scala.inline
   def apply(retry: js.UndefOr[Boolean] = js.undefined, sandbox: Sandbox = null): TransportOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(retry)) __obj.updateDynamic("retry")(retry)
-    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox)
+    if (!js.isUndefined(retry)) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
+    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransportOptions]
   }
 }

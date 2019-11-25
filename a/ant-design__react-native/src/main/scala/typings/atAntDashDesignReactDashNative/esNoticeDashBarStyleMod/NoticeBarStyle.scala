@@ -29,7 +29,7 @@ object NoticeBarStyle {
     link: TextStyle,
     notice: ViewStyle
   ): NoticeBarStyle = {
-    val __obj = js.Dynamic.literal(actionWrap = actionWrap, close = close, container = container, content = content, left15 = left15, left6 = left6, link = link, notice = notice)
+    val __obj = js.Dynamic.literal(actionWrap = actionWrap.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], left15 = left15.asInstanceOf[js.Any], left6 = left6.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], notice = notice.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NoticeBarStyle]
   }

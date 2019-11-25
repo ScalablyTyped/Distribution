@@ -3,7 +3,6 @@ package typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod
 import org.scalablytyped.runtime.TopLevel
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.euclidean
 import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.fro
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import typings.atTensorflowTfjsDashCore.distTypesMod.TensorLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,11 +13,11 @@ import scala.scalajs.js.annotation._
 object norm
   extends TopLevel[
       js.Function4[
-        /* x */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] | TensorLike, 
+        /* x */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] | TensorLike, 
         /* ord */ js.UndefOr[Double | euclidean | fro], 
         /* axis */ js.UndefOr[Double | js.Array[Double]], 
         /* keepDims */ js.UndefOr[Boolean], 
-        typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+        typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
       ]
     ]
 

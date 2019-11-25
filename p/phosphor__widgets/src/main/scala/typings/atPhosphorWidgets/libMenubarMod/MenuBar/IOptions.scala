@@ -20,7 +20,7 @@ object IOptions {
   @scala.inline
   def apply(renderer: IRenderer = null): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

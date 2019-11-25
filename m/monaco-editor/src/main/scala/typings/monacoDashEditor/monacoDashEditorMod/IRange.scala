@@ -26,7 +26,7 @@ trait IRange extends js.Object {
 object IRange {
   @scala.inline
   def apply(endColumn: Double, endLineNumber: Double, startColumn: Double, startLineNumber: Double): IRange = {
-    val __obj = js.Dynamic.literal(endColumn = endColumn, endLineNumber = endLineNumber, startColumn = startColumn, startLineNumber = startLineNumber)
+    val __obj = js.Dynamic.literal(endColumn = endColumn.asInstanceOf[js.Any], endLineNumber = endLineNumber.asInstanceOf[js.Any], startColumn = startColumn.asInstanceOf[js.Any], startLineNumber = startLineNumber.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IRange]
   }

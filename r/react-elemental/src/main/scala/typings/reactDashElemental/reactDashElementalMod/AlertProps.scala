@@ -27,12 +27,12 @@ object AlertProps {
     style: CSSProperties = null,
     `type`: AlertType = null
   ): AlertProps = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], title = title)
-    if (!js.isUndefined(dismissible)) __obj.updateDynamic("dismissible")(dismissible)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (!js.isUndefined(dismissible)) __obj.updateDynamic("dismissible")(dismissible.asInstanceOf[js.Any])
     if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction0(onDismiss))
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlertProps]
   }
 }

@@ -12,7 +12,7 @@ trait MemUsedInfo extends js.Object {
 object MemUsedInfo {
   @scala.inline
   def apply(totalMemMb: Double, usedMemMb: Double): MemUsedInfo = {
-    val __obj = js.Dynamic.literal(totalMemMb = totalMemMb, usedMemMb = usedMemMb)
+    val __obj = js.Dynamic.literal(totalMemMb = totalMemMb.asInstanceOf[js.Any], usedMemMb = usedMemMb.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MemUsedInfo]
   }

@@ -33,9 +33,9 @@ object Anon_Generator {
   ): Anon_Generator = {
     val __obj = js.Dynamic.literal()
     if (generator != null) __obj.updateDynamic("generator")(generator.asInstanceOf[js.Any])
-    if (pseudo != null) __obj.updateDynamic("pseudo")(pseudo)
-    if (separator != null) __obj.updateDynamic("separator")(separator)
-    if (whitespace != null) __obj.updateDynamic("whitespace")(whitespace)
+    if (pseudo != null) __obj.updateDynamic("pseudo")(pseudo.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (whitespace != null) __obj.updateDynamic("whitespace")(whitespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Generator]
   }
 }

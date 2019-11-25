@@ -23,7 +23,7 @@ object Invocation {
   @scala.inline
   def apply(address: String = null): Invocation = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     __obj.asInstanceOf[Invocation]
   }
 }

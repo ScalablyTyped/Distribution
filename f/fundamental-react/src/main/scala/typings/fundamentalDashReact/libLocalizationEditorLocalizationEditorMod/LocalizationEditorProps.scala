@@ -35,14 +35,14 @@ object LocalizationEditorProps {
     popoverProps: StringDictionary[js.Any] = null,
     textarea: js.UndefOr[Boolean] = js.undefined
   ): LocalizationEditorProps = {
-    val __obj = js.Dynamic.literal(control = control, menu = menu)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (listProps != null) __obj.updateDynamic("listProps")(listProps)
-    if (popoverProps != null) __obj.updateDynamic("popoverProps")(popoverProps)
-    if (!js.isUndefined(textarea)) __obj.updateDynamic("textarea")(textarea)
+    val __obj = js.Dynamic.literal(control = control.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (listProps != null) __obj.updateDynamic("listProps")(listProps.asInstanceOf[js.Any])
+    if (popoverProps != null) __obj.updateDynamic("popoverProps")(popoverProps.asInstanceOf[js.Any])
+    if (!js.isUndefined(textarea)) __obj.updateDynamic("textarea")(textarea.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalizationEditorProps]
   }
 }

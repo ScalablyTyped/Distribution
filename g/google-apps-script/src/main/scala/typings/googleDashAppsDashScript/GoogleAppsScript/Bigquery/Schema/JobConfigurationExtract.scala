@@ -26,13 +26,13 @@ object JobConfigurationExtract {
     sourceTable: TableReference = null
   ): JobConfigurationExtract = {
     val __obj = js.Dynamic.literal()
-    if (compression != null) __obj.updateDynamic("compression")(compression)
-    if (destinationFormat != null) __obj.updateDynamic("destinationFormat")(destinationFormat)
-    if (destinationUri != null) __obj.updateDynamic("destinationUri")(destinationUri)
-    if (destinationUris != null) __obj.updateDynamic("destinationUris")(destinationUris)
-    if (fieldDelimiter != null) __obj.updateDynamic("fieldDelimiter")(fieldDelimiter)
-    if (!js.isUndefined(printHeader)) __obj.updateDynamic("printHeader")(printHeader)
-    if (sourceTable != null) __obj.updateDynamic("sourceTable")(sourceTable)
+    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
+    if (destinationFormat != null) __obj.updateDynamic("destinationFormat")(destinationFormat.asInstanceOf[js.Any])
+    if (destinationUri != null) __obj.updateDynamic("destinationUri")(destinationUri.asInstanceOf[js.Any])
+    if (destinationUris != null) __obj.updateDynamic("destinationUris")(destinationUris.asInstanceOf[js.Any])
+    if (fieldDelimiter != null) __obj.updateDynamic("fieldDelimiter")(fieldDelimiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(printHeader)) __obj.updateDynamic("printHeader")(printHeader.asInstanceOf[js.Any])
+    if (sourceTable != null) __obj.updateDynamic("sourceTable")(sourceTable.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobConfigurationExtract]
   }
 }

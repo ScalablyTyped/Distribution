@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait _DownloadMethod extends js.Object
 
+object _DownloadMethod {
+  @scala.inline
+  def GET: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.GET = this.cast("GET")
+  @scala.inline
+  def POST: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.POST = this.cast("POST")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

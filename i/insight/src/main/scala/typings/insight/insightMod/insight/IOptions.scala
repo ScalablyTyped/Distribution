@@ -23,12 +23,12 @@ object IOptions {
     pkg: IPackage = null,
     trackingProvider: String = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(trackingCode = trackingCode)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (packageName != null) __obj.updateDynamic("packageName")(packageName)
-    if (packageVersion != null) __obj.updateDynamic("packageVersion")(packageVersion)
-    if (pkg != null) __obj.updateDynamic("pkg")(pkg)
-    if (trackingProvider != null) __obj.updateDynamic("trackingProvider")(trackingProvider)
+    val __obj = js.Dynamic.literal(trackingCode = trackingCode.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
+    if (packageVersion != null) __obj.updateDynamic("packageVersion")(packageVersion.asInstanceOf[js.Any])
+    if (pkg != null) __obj.updateDynamic("pkg")(pkg.asInstanceOf[js.Any])
+    if (trackingProvider != null) __obj.updateDynamic("trackingProvider")(trackingProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

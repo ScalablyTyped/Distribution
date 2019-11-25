@@ -38,11 +38,11 @@ object ListBucketMetricsConfigurationsOutput {
     MetricsConfigurationList: js.Array[_UnmarshalledMetricsConfiguration] = null,
     NextContinuationToken: String = null
   ): ListBucketMetricsConfigurationsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (ContinuationToken != null) __obj.updateDynamic("ContinuationToken")(ContinuationToken)
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated)
-    if (MetricsConfigurationList != null) __obj.updateDynamic("MetricsConfigurationList")(MetricsConfigurationList)
-    if (NextContinuationToken != null) __obj.updateDynamic("NextContinuationToken")(NextContinuationToken)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (ContinuationToken != null) __obj.updateDynamic("ContinuationToken")(ContinuationToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.asInstanceOf[js.Any])
+    if (MetricsConfigurationList != null) __obj.updateDynamic("MetricsConfigurationList")(MetricsConfigurationList.asInstanceOf[js.Any])
+    if (NextContinuationToken != null) __obj.updateDynamic("NextContinuationToken")(NextContinuationToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBucketMetricsConfigurationsOutput]
   }
 }

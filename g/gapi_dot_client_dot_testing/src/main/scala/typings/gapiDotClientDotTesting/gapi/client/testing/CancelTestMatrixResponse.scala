@@ -17,7 +17,7 @@ object CancelTestMatrixResponse {
   @scala.inline
   def apply(testState: String = null): CancelTestMatrixResponse = {
     val __obj = js.Dynamic.literal()
-    if (testState != null) __obj.updateDynamic("testState")(testState)
+    if (testState != null) __obj.updateDynamic("testState")(testState.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelTestMatrixResponse]
   }
 }

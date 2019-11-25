@@ -37,10 +37,10 @@ object VastRequestOptions {
     wrapperLimit: Int | Double = null
   ): VastRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(resolveAll)) __obj.updateDynamic("resolveAll")(resolveAll)
+    if (!js.isUndefined(resolveAll)) __obj.updateDynamic("resolveAll")(resolveAll.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (urlHandler != null) __obj.updateDynamic("urlHandler")(urlHandler)
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    if (urlHandler != null) __obj.updateDynamic("urlHandler")(urlHandler.asInstanceOf[js.Any])
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
     if (wrapperLimit != null) __obj.updateDynamic("wrapperLimit")(wrapperLimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[VastRequestOptions]
   }

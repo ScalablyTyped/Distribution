@@ -16,7 +16,7 @@ trait TypeofClassModel
      with Instantiable1[/* data */ js.Any, Model] {
   var fields: DataSourceSchemaModelFields = js.native
   var idField: String = js.native
-  def define(options: DataSourceSchemaModelWithFieldsArray): /* import warning: ImportType.apply Failed type conversion: typeof Model */ js.Any = js.native
-  def define(options: DataSourceSchemaModelWithFieldsObject): /* import warning: ImportType.apply Failed type conversion: typeof Model */ js.Any = js.native
+  def define(options: DataSourceSchemaModelWithFieldsArray): /* import warning: importer.ImportType#apply Failed type conversion: typeof Model */ js.Any = js.native
+  def define(options: DataSourceSchemaModelWithFieldsObject): /* import warning: importer.ImportType#apply Failed type conversion: typeof Model */ js.Any = js.native
 }
 

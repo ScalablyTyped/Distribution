@@ -24,9 +24,9 @@ object BeaconInfo {
     beaconName: String = null
   ): BeaconInfo = {
     val __obj = js.Dynamic.literal()
-    if (advertisedId != null) __obj.updateDynamic("advertisedId")(advertisedId)
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
-    if (beaconName != null) __obj.updateDynamic("beaconName")(beaconName)
+    if (advertisedId != null) __obj.updateDynamic("advertisedId")(advertisedId.asInstanceOf[js.Any])
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
+    if (beaconName != null) __obj.updateDynamic("beaconName")(beaconName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeaconInfo]
   }
 }

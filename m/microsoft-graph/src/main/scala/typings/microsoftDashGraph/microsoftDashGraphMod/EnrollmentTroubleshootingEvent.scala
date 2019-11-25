@@ -47,17 +47,17 @@ object EnrollmentTroubleshootingEvent {
     userId: String = null
   ): EnrollmentTroubleshootingEvent = {
     val __obj = js.Dynamic.literal()
-    if (correlationId != null) __obj.updateDynamic("correlationId")(correlationId)
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
-    if (enrollmentType != null) __obj.updateDynamic("enrollmentType")(enrollmentType)
-    if (eventDateTime != null) __obj.updateDynamic("eventDateTime")(eventDateTime)
-    if (failureCategory != null) __obj.updateDynamic("failureCategory")(failureCategory)
-    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (managedDeviceIdentifier != null) __obj.updateDynamic("managedDeviceIdentifier")(managedDeviceIdentifier)
-    if (operatingSystem != null) __obj.updateDynamic("operatingSystem")(operatingSystem)
-    if (osVersion != null) __obj.updateDynamic("osVersion")(osVersion)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
+    if (correlationId != null) __obj.updateDynamic("correlationId")(correlationId.asInstanceOf[js.Any])
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
+    if (enrollmentType != null) __obj.updateDynamic("enrollmentType")(enrollmentType.asInstanceOf[js.Any])
+    if (eventDateTime != null) __obj.updateDynamic("eventDateTime")(eventDateTime.asInstanceOf[js.Any])
+    if (failureCategory != null) __obj.updateDynamic("failureCategory")(failureCategory.asInstanceOf[js.Any])
+    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (managedDeviceIdentifier != null) __obj.updateDynamic("managedDeviceIdentifier")(managedDeviceIdentifier.asInstanceOf[js.Any])
+    if (operatingSystem != null) __obj.updateDynamic("operatingSystem")(operatingSystem.asInstanceOf[js.Any])
+    if (osVersion != null) __obj.updateDynamic("osVersion")(osVersion.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnrollmentTroubleshootingEvent]
   }
 }

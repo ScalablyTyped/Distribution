@@ -32,7 +32,7 @@ object IOptions {
     password: Boolean,
     prompt: String
   ): IOptions = {
-    val __obj = js.Dynamic.literal(future = future, password = password, prompt = prompt)
+    val __obj = js.Dynamic.literal(future = future.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOptions]
   }

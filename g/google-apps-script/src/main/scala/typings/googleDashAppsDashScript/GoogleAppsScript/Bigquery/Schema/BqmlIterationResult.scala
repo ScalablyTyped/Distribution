@@ -22,7 +22,7 @@ object BqmlIterationResult {
     trainingLoss: Int | Double = null
   ): BqmlIterationResult = {
     val __obj = js.Dynamic.literal()
-    if (durationMs != null) __obj.updateDynamic("durationMs")(durationMs)
+    if (durationMs != null) __obj.updateDynamic("durationMs")(durationMs.asInstanceOf[js.Any])
     if (evalLoss != null) __obj.updateDynamic("evalLoss")(evalLoss.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (learnRate != null) __obj.updateDynamic("learnRate")(learnRate.asInstanceOf[js.Any])

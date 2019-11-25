@@ -19,8 +19,8 @@ object DialogflowV1Status {
   ): DialogflowV1Status = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (errorType != null) __obj.updateDynamic("errorType")(errorType)
-    if (!js.isUndefined(webhookTimedOut)) __obj.updateDynamic("webhookTimedOut")(webhookTimedOut)
+    if (errorType != null) __obj.updateDynamic("errorType")(errorType.asInstanceOf[js.Any])
+    if (!js.isUndefined(webhookTimedOut)) __obj.updateDynamic("webhookTimedOut")(webhookTimedOut.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogflowV1Status]
   }
 }

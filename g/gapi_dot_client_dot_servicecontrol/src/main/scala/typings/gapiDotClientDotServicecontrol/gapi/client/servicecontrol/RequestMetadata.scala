@@ -47,9 +47,9 @@ object RequestMetadata {
   @scala.inline
   def apply(callerIp: String = null, callerNetwork: String = null, callerSuppliedUserAgent: String = null): RequestMetadata = {
     val __obj = js.Dynamic.literal()
-    if (callerIp != null) __obj.updateDynamic("callerIp")(callerIp)
-    if (callerNetwork != null) __obj.updateDynamic("callerNetwork")(callerNetwork)
-    if (callerSuppliedUserAgent != null) __obj.updateDynamic("callerSuppliedUserAgent")(callerSuppliedUserAgent)
+    if (callerIp != null) __obj.updateDynamic("callerIp")(callerIp.asInstanceOf[js.Any])
+    if (callerNetwork != null) __obj.updateDynamic("callerNetwork")(callerNetwork.asInstanceOf[js.Any])
+    if (callerSuppliedUserAgent != null) __obj.updateDynamic("callerSuppliedUserAgent")(callerSuppliedUserAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestMetadata]
   }
 }

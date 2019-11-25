@@ -27,11 +27,11 @@ object PasteDataRequest {
     `type`: String = null
   ): PasteDataRequest = {
     val __obj = js.Dynamic.literal()
-    if (coordinate != null) __obj.updateDynamic("coordinate")(coordinate)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (coordinate != null) __obj.updateDynamic("coordinate")(coordinate.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasteDataRequest]
   }
 }

@@ -65,7 +65,7 @@ object Column {
     sorts: js.Array[String],
     textAlign: String
   ): Column = {
-    val __obj = js.Dynamic.literal(attributeReader = js.Any.fromFunction2(attributeReader), attributeWriter = js.Any.fromFunction1(attributeWriter), hidden = hidden, id = id, index = index, label = label, sorts = sorts, textAlign = textAlign)
+    val __obj = js.Dynamic.literal(attributeReader = js.Any.fromFunction2(attributeReader), attributeWriter = js.Any.fromFunction1(attributeWriter), hidden = hidden.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], sorts = sorts.asInstanceOf[js.Any], textAlign = textAlign.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Column]
   }

@@ -19,8 +19,8 @@ object ThumbDragEndEventUIParam {
   @scala.inline
   def apply(horizontal: js.UndefOr[Boolean] = js.undefined, owner: js.Any = null): ThumbDragEndEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThumbDragEndEventUIParam]
   }
 }

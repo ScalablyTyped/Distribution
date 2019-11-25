@@ -13,7 +13,7 @@ object DndContextType {
   @scala.inline
   def apply(dragDropManager: DragDropManager = null): DndContextType = {
     val __obj = js.Dynamic.literal()
-    if (dragDropManager != null) __obj.updateDynamic("dragDropManager")(dragDropManager)
+    if (dragDropManager != null) __obj.updateDynamic("dragDropManager")(dragDropManager.asInstanceOf[js.Any])
     __obj.asInstanceOf[DndContextType]
   }
 }

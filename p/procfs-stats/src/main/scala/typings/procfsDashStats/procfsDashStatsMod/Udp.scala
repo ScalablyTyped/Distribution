@@ -41,8 +41,8 @@ object Udp {
     tx_queue: String,
     uid: String
   ): Udp = {
-    val __obj = js.Dynamic.literal(drops = drops, inode = inode, local_address = local_address, pointer = pointer, ref = ref, rem_address = rem_address, retrnsmt = retrnsmt, rx_queue = rx_queue, sl = sl, st = st, timeout = timeout, tr = tr, tx_queue = tx_queue, uid = uid)
-    __obj.updateDynamic("tm->when")(`tm->when`)
+    val __obj = js.Dynamic.literal(drops = drops.asInstanceOf[js.Any], inode = inode.asInstanceOf[js.Any], local_address = local_address.asInstanceOf[js.Any], pointer = pointer.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], rem_address = rem_address.asInstanceOf[js.Any], retrnsmt = retrnsmt.asInstanceOf[js.Any], rx_queue = rx_queue.asInstanceOf[js.Any], sl = sl.asInstanceOf[js.Any], st = st.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], tx_queue = tx_queue.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
+    __obj.updateDynamic("tm->when")(`tm->when`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Udp]
   }
 }

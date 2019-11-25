@@ -30,18 +30,18 @@ object ParameterObject {
     schema: ReferenceObject | SchemaObject = null,
     style: String = null
   ): ParameterObject = {
-    val __obj = js.Dynamic.literal(in = in, name = name)
-    if (!js.isUndefined(allowEmptyValue)) __obj.updateDynamic("allowEmptyValue")(allowEmptyValue)
-    if (!js.isUndefined(allowReserved)) __obj.updateDynamic("allowReserved")(allowReserved)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (example != null) __obj.updateDynamic("example")(example)
-    if (examples != null) __obj.updateDynamic("examples")(examples)
-    if (!js.isUndefined(explode)) __obj.updateDynamic("explode")(explode)
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowEmptyValue)) __obj.updateDynamic("allowEmptyValue")(allowEmptyValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowReserved)) __obj.updateDynamic("allowReserved")(allowReserved.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (example != null) __obj.updateDynamic("example")(example.asInstanceOf[js.Any])
+    if (examples != null) __obj.updateDynamic("examples")(examples.asInstanceOf[js.Any])
+    if (!js.isUndefined(explode)) __obj.updateDynamic("explode")(explode.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterObject]
   }
 }

@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait ComparisonRestriction extends js.Object
 
+object ComparisonRestriction {
+  @scala.inline
+  def `<`: typings.cassanknex.cassanknexStrings.`<` = this.cast("<")
+  @scala.inline
+  def `<=`: typings.cassanknex.cassanknexStrings.`<=` = this.cast("<=")
+  @scala.inline
+  def `=`: typings.cassanknex.cassanknexStrings.`=` = this.cast("=")
+  @scala.inline
+  def `>`: typings.cassanknex.cassanknexStrings.`>` = this.cast(">")
+  @scala.inline
+  def `>=`: typings.cassanknex.cassanknexStrings.`>=` = this.cast(">=")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

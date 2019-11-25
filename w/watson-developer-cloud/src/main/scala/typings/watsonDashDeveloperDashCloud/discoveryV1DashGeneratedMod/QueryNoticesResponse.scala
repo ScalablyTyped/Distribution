@@ -28,11 +28,11 @@ object QueryNoticesResponse {
     results: js.Array[QueryNoticesResult] = null
   ): QueryNoticesResponse = {
     val __obj = js.Dynamic.literal()
-    if (aggregations != null) __obj.updateDynamic("aggregations")(aggregations)
+    if (aggregations != null) __obj.updateDynamic("aggregations")(aggregations.asInstanceOf[js.Any])
     if (duplicates_removed != null) __obj.updateDynamic("duplicates_removed")(duplicates_removed.asInstanceOf[js.Any])
     if (matching_results != null) __obj.updateDynamic("matching_results")(matching_results.asInstanceOf[js.Any])
-    if (passages != null) __obj.updateDynamic("passages")(passages)
-    if (results != null) __obj.updateDynamic("results")(results)
+    if (passages != null) __obj.updateDynamic("passages")(passages.asInstanceOf[js.Any])
+    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryNoticesResponse]
   }
 }

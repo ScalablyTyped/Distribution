@@ -26,7 +26,7 @@ object DocumentRangeFormattingEditProvider {
     displayName: String = null
   ): DocumentRangeFormattingEditProvider = {
     val __obj = js.Dynamic.literal(provideDocumentRangeFormattingEdits = js.Any.fromFunction4(provideDocumentRangeFormattingEdits))
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentRangeFormattingEditProvider]
   }
 }

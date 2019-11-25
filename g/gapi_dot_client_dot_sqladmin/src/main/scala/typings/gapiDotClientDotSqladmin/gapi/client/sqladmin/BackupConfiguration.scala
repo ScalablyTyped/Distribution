@@ -24,10 +24,10 @@ object BackupConfiguration {
     startTime: String = null
   ): BackupConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(binaryLogEnabled)) __obj.updateDynamic("binaryLogEnabled")(binaryLogEnabled)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (!js.isUndefined(binaryLogEnabled)) __obj.updateDynamic("binaryLogEnabled")(binaryLogEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackupConfiguration]
   }
 }

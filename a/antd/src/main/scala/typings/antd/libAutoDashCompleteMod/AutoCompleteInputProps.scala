@@ -14,7 +14,7 @@ trait AutoCompleteInputProps extends js.Object {
 object AutoCompleteInputProps {
   @scala.inline
   def apply(value: js.Any, onChange: FormEvent[_] => Unit = null): AutoCompleteInputProps = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[AutoCompleteInputProps]
   }

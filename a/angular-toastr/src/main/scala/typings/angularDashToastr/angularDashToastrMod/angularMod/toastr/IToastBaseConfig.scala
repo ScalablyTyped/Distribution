@@ -59,21 +59,21 @@ object IToastBaseConfig {
     toastClass: String = null
   ): IToastBaseConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowHtml)) __obj.updateDynamic("allowHtml")(allowHtml)
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton)
-    if (closeHtml != null) __obj.updateDynamic("closeHtml")(closeHtml)
+    if (!js.isUndefined(allowHtml)) __obj.updateDynamic("allowHtml")(allowHtml.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
+    if (closeHtml != null) __obj.updateDynamic("closeHtml")(closeHtml.asInstanceOf[js.Any])
     if (extendedTimeOut != null) __obj.updateDynamic("extendedTimeOut")(extendedTimeOut.asInstanceOf[js.Any])
-    if (extraData != null) __obj.updateDynamic("extraData")(extraData)
-    if (messageClass != null) __obj.updateDynamic("messageClass")(messageClass)
+    if (extraData != null) __obj.updateDynamic("extraData")(extraData.asInstanceOf[js.Any])
+    if (messageClass != null) __obj.updateDynamic("messageClass")(messageClass.asInstanceOf[js.Any])
     if (onHidden != null) __obj.updateDynamic("onHidden")(js.Any.fromFunction2(onHidden))
     if (onShown != null) __obj.updateDynamic("onShown")(js.Any.fromFunction1(onShown))
     if (onTap != null) __obj.updateDynamic("onTap")(js.Any.fromFunction1(onTap))
-    if (!js.isUndefined(progressBar)) __obj.updateDynamic("progressBar")(progressBar)
-    if (!js.isUndefined(tapToDismiss)) __obj.updateDynamic("tapToDismiss")(tapToDismiss)
-    if (templates != null) __obj.updateDynamic("templates")(templates)
+    if (!js.isUndefined(progressBar)) __obj.updateDynamic("progressBar")(progressBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(tapToDismiss)) __obj.updateDynamic("tapToDismiss")(tapToDismiss.asInstanceOf[js.Any])
+    if (templates != null) __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
     if (timeOut != null) __obj.updateDynamic("timeOut")(timeOut.asInstanceOf[js.Any])
-    if (titleClass != null) __obj.updateDynamic("titleClass")(titleClass)
-    if (toastClass != null) __obj.updateDynamic("toastClass")(toastClass)
+    if (titleClass != null) __obj.updateDynamic("titleClass")(titleClass.asInstanceOf[js.Any])
+    if (toastClass != null) __obj.updateDynamic("toastClass")(toastClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToastBaseConfig]
   }
 }

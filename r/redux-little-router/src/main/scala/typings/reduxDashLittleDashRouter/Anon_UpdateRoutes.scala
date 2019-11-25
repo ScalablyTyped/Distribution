@@ -11,7 +11,7 @@ trait Anon_UpdateRoutes extends js.Object {
 object Anon_UpdateRoutes {
   @scala.inline
   def apply(updateRoutes: Boolean): Anon_UpdateRoutes = {
-    val __obj = js.Dynamic.literal(updateRoutes = updateRoutes)
+    val __obj = js.Dynamic.literal(updateRoutes = updateRoutes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_UpdateRoutes]
   }

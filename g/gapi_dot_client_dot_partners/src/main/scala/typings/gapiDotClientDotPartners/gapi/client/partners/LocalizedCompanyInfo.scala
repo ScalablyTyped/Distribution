@@ -28,10 +28,10 @@ object LocalizedCompanyInfo {
     overview: String = null
   ): LocalizedCompanyInfo = {
     val __obj = js.Dynamic.literal()
-    if (countryCodes != null) __obj.updateDynamic("countryCodes")(countryCodes)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
-    if (overview != null) __obj.updateDynamic("overview")(overview)
+    if (countryCodes != null) __obj.updateDynamic("countryCodes")(countryCodes.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (overview != null) __obj.updateDynamic("overview")(overview.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalizedCompanyInfo]
   }
 }

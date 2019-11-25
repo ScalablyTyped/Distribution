@@ -18,7 +18,7 @@ trait TypeofuiArcGauge extends js.Object {
   var StockChart: TypeofClassStockChart = js.native
   var TreeMap: TypeofClassTreeMap = js.native
   def plugin(
-    widget: /* import warning: ImportType.apply Failed type conversion: typeof kendo.ui.Widget */ js.Any
+    widget: /* import warning: importer.ImportType#apply Failed type conversion: typeof kendo.ui.Widget */ js.Any
   ): Unit = js.native
   def registerTheme(name: String, options: js.Any): Unit = js.native
 }

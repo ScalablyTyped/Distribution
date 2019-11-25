@@ -37,12 +37,12 @@ object ModifyOptions {
     val __obj = js.Dynamic.literal()
     if (condition != null) __obj.updateDynamic("condition")(js.Any.fromFunction1(condition))
     if (deleteCondition != null) __obj.updateDynamic("deleteCondition")(js.Any.fromFunction1(deleteCondition))
-    if (features != null) __obj.updateDynamic("features")(features)
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     if (insertVertexCondition != null) __obj.updateDynamic("insertVertexCondition")(js.Any.fromFunction1(insertVertexCondition))
     if (pixelTolerance != null) __obj.updateDynamic("pixelTolerance")(pixelTolerance.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX)
+    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyOptions]
   }
 }

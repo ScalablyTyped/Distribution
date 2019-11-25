@@ -29,14 +29,14 @@ object Anon_ContentTypeCorrelationData {
     userProperties: js.Object = null
   ): Anon_ContentTypeCorrelationData = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (correlationData != null) __obj.updateDynamic("correlationData")(correlationData)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (correlationData != null) __obj.updateDynamic("correlationData")(correlationData.asInstanceOf[js.Any])
     if (messageExpiryInterval != null) __obj.updateDynamic("messageExpiryInterval")(messageExpiryInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(payloadFormatIndicator)) __obj.updateDynamic("payloadFormatIndicator")(payloadFormatIndicator)
-    if (responseTopic != null) __obj.updateDynamic("responseTopic")(responseTopic)
+    if (!js.isUndefined(payloadFormatIndicator)) __obj.updateDynamic("payloadFormatIndicator")(payloadFormatIndicator.asInstanceOf[js.Any])
+    if (responseTopic != null) __obj.updateDynamic("responseTopic")(responseTopic.asInstanceOf[js.Any])
     if (subscriptionIdentifier != null) __obj.updateDynamic("subscriptionIdentifier")(subscriptionIdentifier.asInstanceOf[js.Any])
     if (topicAlias != null) __obj.updateDynamic("topicAlias")(topicAlias.asInstanceOf[js.Any])
-    if (userProperties != null) __obj.updateDynamic("userProperties")(userProperties)
+    if (userProperties != null) __obj.updateDynamic("userProperties")(userProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContentTypeCorrelationData]
   }
 }

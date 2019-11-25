@@ -24,10 +24,10 @@ object IdentitytoolkitRelyingpartyResetPasswordRequest {
     oobCode: String = null
   ): IdentitytoolkitRelyingpartyResetPasswordRequest = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (newPassword != null) __obj.updateDynamic("newPassword")(newPassword)
-    if (oldPassword != null) __obj.updateDynamic("oldPassword")(oldPassword)
-    if (oobCode != null) __obj.updateDynamic("oobCode")(oobCode)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (newPassword != null) __obj.updateDynamic("newPassword")(newPassword.asInstanceOf[js.Any])
+    if (oldPassword != null) __obj.updateDynamic("oldPassword")(oldPassword.asInstanceOf[js.Any])
+    if (oobCode != null) __obj.updateDynamic("oobCode")(oobCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentitytoolkitRelyingpartyResetPasswordRequest]
   }
 }

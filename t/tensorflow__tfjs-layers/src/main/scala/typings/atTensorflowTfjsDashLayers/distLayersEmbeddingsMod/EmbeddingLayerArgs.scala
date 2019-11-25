@@ -81,21 +81,21 @@ object EmbeddingLayerArgs {
     trainable: js.UndefOr[Boolean] = js.undefined,
     weights: js.Array[Tensor[Rank]] = null
   ): EmbeddingLayerArgs = {
-    val __obj = js.Dynamic.literal(inputDim = inputDim, outputDim = outputDim)
+    val __obj = js.Dynamic.literal(inputDim = inputDim.asInstanceOf[js.Any], outputDim = outputDim.asInstanceOf[js.Any])
     if (activityRegularizer != null) __obj.updateDynamic("activityRegularizer")(activityRegularizer.asInstanceOf[js.Any])
-    if (batchInputShape != null) __obj.updateDynamic("batchInputShape")(batchInputShape)
+    if (batchInputShape != null) __obj.updateDynamic("batchInputShape")(batchInputShape.asInstanceOf[js.Any])
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
-    if (dtype != null) __obj.updateDynamic("dtype")(dtype)
+    if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
     if (embeddingsConstraint != null) __obj.updateDynamic("embeddingsConstraint")(embeddingsConstraint.asInstanceOf[js.Any])
     if (embeddingsInitializer != null) __obj.updateDynamic("embeddingsInitializer")(embeddingsInitializer.asInstanceOf[js.Any])
     if (embeddingsRegularizer != null) __obj.updateDynamic("embeddingsRegularizer")(embeddingsRegularizer.asInstanceOf[js.Any])
-    if (inputDType != null) __obj.updateDynamic("inputDType")(inputDType)
+    if (inputDType != null) __obj.updateDynamic("inputDType")(inputDType.asInstanceOf[js.Any])
     if (inputLength != null) __obj.updateDynamic("inputLength")(inputLength.asInstanceOf[js.Any])
-    if (inputShape != null) __obj.updateDynamic("inputShape")(inputShape)
-    if (!js.isUndefined(maskZero)) __obj.updateDynamic("maskZero")(maskZero)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable)
-    if (weights != null) __obj.updateDynamic("weights")(weights)
+    if (inputShape != null) __obj.updateDynamic("inputShape")(inputShape.asInstanceOf[js.Any])
+    if (!js.isUndefined(maskZero)) __obj.updateDynamic("maskZero")(maskZero.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.asInstanceOf[js.Any])
+    if (weights != null) __obj.updateDynamic("weights")(weights.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmbeddingLayerArgs]
   }
 }

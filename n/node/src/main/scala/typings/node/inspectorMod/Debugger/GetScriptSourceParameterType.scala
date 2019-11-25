@@ -15,7 +15,7 @@ trait GetScriptSourceParameterType extends js.Object {
 object GetScriptSourceParameterType {
   @scala.inline
   def apply(scriptId: ScriptId): GetScriptSourceParameterType = {
-    val __obj = js.Dynamic.literal(scriptId = scriptId)
+    val __obj = js.Dynamic.literal(scriptId = scriptId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetScriptSourceParameterType]
   }

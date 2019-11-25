@@ -15,8 +15,8 @@ trait Anon_Attachment extends js.Object {
 object Anon_Attachment {
   @scala.inline
   def apply(attachment: Attachment, deleted: Boolean, `type`: chatDOTfile): Anon_Attachment = {
-    val __obj = js.Dynamic.literal(attachment = attachment, deleted = deleted)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(attachment = attachment.asInstanceOf[js.Any], deleted = deleted.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Attachment]
   }
 }

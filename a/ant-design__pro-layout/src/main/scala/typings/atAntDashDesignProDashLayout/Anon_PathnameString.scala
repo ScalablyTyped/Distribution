@@ -12,7 +12,7 @@ object Anon_PathnameString {
   @scala.inline
   def apply(pathname: String = null): Anon_PathnameString = {
     val __obj = js.Dynamic.literal()
-    if (pathname != null) __obj.updateDynamic("pathname")(pathname)
+    if (pathname != null) __obj.updateDynamic("pathname")(pathname.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PathnameString]
   }
 }

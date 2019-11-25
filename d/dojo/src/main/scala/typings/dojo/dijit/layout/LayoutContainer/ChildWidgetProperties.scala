@@ -33,7 +33,7 @@ trait ChildWidgetProperties extends js.Object {
 object ChildWidgetProperties {
   @scala.inline
   def apply(layoutAlign: String, layoutPriority: Double, region: String): ChildWidgetProperties = {
-    val __obj = js.Dynamic.literal(layoutAlign = layoutAlign, layoutPriority = layoutPriority, region = region)
+    val __obj = js.Dynamic.literal(layoutAlign = layoutAlign.asInstanceOf[js.Any], layoutPriority = layoutPriority.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChildWidgetProperties]
   }

@@ -18,7 +18,7 @@ object Context {
     watermarks: Watermarks,
     writer: FileWriter
   ): Context = {
-    val __obj = js.Dynamic.literal(data = data, dir = dir, sourceFinder = js.Any.fromFunction1(sourceFinder), watermarks = watermarks, writer = writer)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], sourceFinder = js.Any.fromFunction1(sourceFinder), watermarks = watermarks.asInstanceOf[js.Any], writer = writer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Context]
   }

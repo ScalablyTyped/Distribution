@@ -18,9 +18,9 @@ object Anon_Delimiter {
     paging: js.UndefOr[Boolean] = js.undefined
   ): Anon_Delimiter = {
     val __obj = js.Dynamic.literal()
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(paging)) __obj.updateDynamic("paging")(paging)
+    if (!js.isUndefined(paging)) __obj.updateDynamic("paging")(paging.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Delimiter]
   }
 }

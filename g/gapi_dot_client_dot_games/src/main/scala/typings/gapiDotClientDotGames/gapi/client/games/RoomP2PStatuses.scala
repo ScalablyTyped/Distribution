@@ -15,8 +15,8 @@ object RoomP2PStatuses {
   @scala.inline
   def apply(kind: String = null, updates: js.Array[RoomP2PStatus] = null): RoomP2PStatuses = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (updates != null) __obj.updateDynamic("updates")(updates)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (updates != null) __obj.updateDynamic("updates")(updates.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomP2PStatuses]
   }
 }

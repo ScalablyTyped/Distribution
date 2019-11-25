@@ -19,9 +19,9 @@ object StockChartNavigatorSelect {
     to: Date = null
   ): StockChartNavigatorSelect = {
     val __obj = js.Dynamic.literal()
-    if (from != null) __obj.updateDynamic("from")(from)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (mousewheel != null) __obj.updateDynamic("mousewheel")(mousewheel.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartNavigatorSelect]
   }
 }

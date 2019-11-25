@@ -13,7 +13,7 @@ object Anon_Stripe {
   @scala.inline
   def apply(stripe: Stripe = null): Anon_Stripe = {
     val __obj = js.Dynamic.literal()
-    if (stripe != null) __obj.updateDynamic("stripe")(stripe)
+    if (stripe != null) __obj.updateDynamic("stripe")(stripe.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Stripe]
   }
 }

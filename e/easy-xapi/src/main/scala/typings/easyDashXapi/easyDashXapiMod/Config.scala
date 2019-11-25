@@ -25,8 +25,8 @@ object Config {
     root: String,
     xHeaderDefaults: js.Object = null
   ): Config = {
-    val __obj = js.Dynamic.literal(log = log, mount = js.Any.fromFunction1(mount), name = name, port = port, root = root)
-    if (xHeaderDefaults != null) __obj.updateDynamic("xHeaderDefaults")(xHeaderDefaults)
+    val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any], mount = js.Any.fromFunction1(mount), name = name.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    if (xHeaderDefaults != null) __obj.updateDynamic("xHeaderDefaults")(xHeaderDefaults.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

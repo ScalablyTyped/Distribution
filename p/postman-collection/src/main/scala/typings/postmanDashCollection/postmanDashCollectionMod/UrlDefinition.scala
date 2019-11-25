@@ -30,14 +30,14 @@ object UrlDefinition {
     variable: js.Array[VariableDefinition] = null
   ): UrlDefinition = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth)
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (hash != null) __obj.updateDynamic("hash")(hash)
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (variable != null) __obj.updateDynamic("variable")(variable)
+    if (variable != null) __obj.updateDynamic("variable")(variable.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlDefinition]
   }
 }

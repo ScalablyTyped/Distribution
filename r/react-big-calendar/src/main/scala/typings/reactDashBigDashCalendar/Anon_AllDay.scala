@@ -15,7 +15,7 @@ trait Anon_AllDay[TEvent /* <: js.Object */] extends js.Object {
 object Anon_AllDay {
   @scala.inline
   def apply[TEvent /* <: js.Object */](allDay: Boolean, end: stringOrDate, event: TEvent, start: stringOrDate): Anon_AllDay[TEvent] = {
-    val __obj = js.Dynamic.literal(allDay = allDay, end = end.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(allDay = allDay.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AllDay[TEvent]]
   }

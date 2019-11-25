@@ -37,8 +37,8 @@ object relationshipUpdateRendererParamsField2 {
     propertyIsEnumerable: PropertyKey => Boolean,
     normalizationField: String = null
   ): relationshipUpdateRendererParamsField2 = {
-    val __obj = js.Dynamic.literal(classBreakInfos = classBreakInfos, constructor = constructor, field = field, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
+    val __obj = js.Dynamic.literal(classBreakInfos = classBreakInfos.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField.asInstanceOf[js.Any])
     __obj.asInstanceOf[relationshipUpdateRendererParamsField2]
   }
 }

@@ -24,10 +24,10 @@ object Anon_ExtendHour {
   ): Anon_ExtendHour = {
     val __obj = js.Dynamic.literal()
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (hour != null) __obj.updateDynamic("hour")(hour)
-    if (minute != null) __obj.updateDynamic("minute")(minute)
-    if (second != null) __obj.updateDynamic("second")(second)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
+    if (minute != null) __obj.updateDynamic("minute")(minute.asInstanceOf[js.Any])
+    if (second != null) __obj.updateDynamic("second")(second.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExtendHour]
   }
 }

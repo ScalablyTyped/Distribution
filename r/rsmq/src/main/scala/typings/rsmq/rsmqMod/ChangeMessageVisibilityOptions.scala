@@ -25,7 +25,7 @@ trait ChangeMessageVisibilityOptions extends BaseOptions {
 object ChangeMessageVisibilityOptions {
   @scala.inline
   def apply(id: String, qname: String, vt: Double): ChangeMessageVisibilityOptions = {
-    val __obj = js.Dynamic.literal(id = id, qname = qname, vt = vt)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], qname = qname.asInstanceOf[js.Any], vt = vt.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChangeMessageVisibilityOptions]
   }

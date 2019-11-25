@@ -14,7 +14,7 @@ object RetrievalDetails {
   @scala.inline
   def apply(document_retrieval_strategy: String = null): RetrievalDetails = {
     val __obj = js.Dynamic.literal()
-    if (document_retrieval_strategy != null) __obj.updateDynamic("document_retrieval_strategy")(document_retrieval_strategy)
+    if (document_retrieval_strategy != null) __obj.updateDynamic("document_retrieval_strategy")(document_retrieval_strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetrievalDetails]
   }
 }

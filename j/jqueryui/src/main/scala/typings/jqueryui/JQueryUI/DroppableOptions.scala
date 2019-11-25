@@ -35,20 +35,20 @@ object DroppableOptions {
     tolerance: String = null
   ): DroppableOptions = {
     val __obj = js.Dynamic.literal()
-    if (accept != null) __obj.updateDynamic("accept")(accept)
+    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
     if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction2(activate))
-    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass)
-    if (!js.isUndefined(addClasses)) __obj.updateDynamic("addClasses")(addClasses)
+    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(addClasses)) __obj.updateDynamic("addClasses")(addClasses.asInstanceOf[js.Any])
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
     if (deactivate != null) __obj.updateDynamic("deactivate")(js.Any.fromFunction2(deactivate))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction2(drop))
-    if (!js.isUndefined(greedy)) __obj.updateDynamic("greedy")(greedy)
-    if (hoverClass != null) __obj.updateDynamic("hoverClass")(hoverClass)
+    if (!js.isUndefined(greedy)) __obj.updateDynamic("greedy")(greedy.asInstanceOf[js.Any])
+    if (hoverClass != null) __obj.updateDynamic("hoverClass")(hoverClass.asInstanceOf[js.Any])
     if (out != null) __obj.updateDynamic("out")(js.Any.fromFunction2(out))
     if (over != null) __obj.updateDynamic("over")(js.Any.fromFunction2(over))
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
     __obj.asInstanceOf[DroppableOptions]
   }
 }

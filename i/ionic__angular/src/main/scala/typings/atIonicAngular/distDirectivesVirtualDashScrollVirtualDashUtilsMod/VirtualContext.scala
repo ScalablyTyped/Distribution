@@ -13,7 +13,7 @@ trait VirtualContext extends js.Object {
 object VirtualContext {
   @scala.inline
   def apply($implicit: js.Any, index: Double): VirtualContext = {
-    val __obj = js.Dynamic.literal($implicit = $implicit, index = index)
+    val __obj = js.Dynamic.literal($implicit = $implicit.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VirtualContext]
   }

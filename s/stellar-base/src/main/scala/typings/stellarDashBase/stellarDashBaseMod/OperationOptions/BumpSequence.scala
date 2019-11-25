@@ -11,8 +11,8 @@ trait BumpSequence extends BaseOptions {
 object BumpSequence {
   @scala.inline
   def apply(bumpTo: String, source: String = null): BumpSequence = {
-    val __obj = js.Dynamic.literal(bumpTo = bumpTo)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(bumpTo = bumpTo.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[BumpSequence]
   }
 }

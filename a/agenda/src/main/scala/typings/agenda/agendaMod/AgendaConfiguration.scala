@@ -62,13 +62,13 @@ object AgendaConfiguration {
     processEvery: String | Double = null
   ): AgendaConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (db != null) __obj.updateDynamic("db")(db)
+    if (db != null) __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
     if (defaultConcurrency != null) __obj.updateDynamic("defaultConcurrency")(defaultConcurrency.asInstanceOf[js.Any])
     if (defaultLockLifetime != null) __obj.updateDynamic("defaultLockLifetime")(defaultLockLifetime.asInstanceOf[js.Any])
     if (defaultLockLimit != null) __obj.updateDynamic("defaultLockLimit")(defaultLockLimit.asInstanceOf[js.Any])
     if (lockLimit != null) __obj.updateDynamic("lockLimit")(lockLimit.asInstanceOf[js.Any])
     if (maxConcurrency != null) __obj.updateDynamic("maxConcurrency")(maxConcurrency.asInstanceOf[js.Any])
-    if (mongo != null) __obj.updateDynamic("mongo")(mongo)
+    if (mongo != null) __obj.updateDynamic("mongo")(mongo.asInstanceOf[js.Any])
     if (processEvery != null) __obj.updateDynamic("processEvery")(processEvery.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgendaConfiguration]
   }

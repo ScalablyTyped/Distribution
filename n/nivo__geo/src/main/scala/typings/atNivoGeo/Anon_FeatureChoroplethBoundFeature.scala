@@ -12,7 +12,7 @@ trait Anon_FeatureChoroplethBoundFeature extends js.Object {
 object Anon_FeatureChoroplethBoundFeature {
   @scala.inline
   def apply(feature: ChoroplethBoundFeature): Anon_FeatureChoroplethBoundFeature = {
-    val __obj = js.Dynamic.literal(feature = feature)
+    val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FeatureChoroplethBoundFeature]
   }

@@ -46,13 +46,13 @@ object Anon_Aggregationkey {
     tags: js.Array[String] = null
   ): Anon_Aggregationkey = {
     val __obj = js.Dynamic.literal()
-    if (aggregation_key != null) __obj.updateDynamic("aggregation_key")(aggregation_key)
+    if (aggregation_key != null) __obj.updateDynamic("aggregation_key")(aggregation_key.asInstanceOf[js.Any])
     if (alert_type != null) __obj.updateDynamic("alert_type")(alert_type.asInstanceOf[js.Any])
     if (date_happened != null) __obj.updateDynamic("date_happened")(date_happened.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (source_type_name != null) __obj.updateDynamic("source_type_name")(source_type_name.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Aggregationkey]
   }
 }

@@ -52,12 +52,12 @@ object Anon_DrawAttention {
     width: Int | Double = null
   ): Anon_DrawAttention = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(drawAttention)) __obj.updateDynamic("drawAttention")(drawAttention)
-    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused)
+    if (!js.isUndefined(drawAttention)) __obj.updateDynamic("drawAttention")(drawAttention.asInstanceOf[js.Any])
+    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (titlePreface != null) __obj.updateDynamic("titlePreface")(titlePreface)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (titlePreface != null) __obj.updateDynamic("titlePreface")(titlePreface.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DrawAttention]

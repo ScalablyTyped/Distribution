@@ -15,18 +15,18 @@ object libFetchQueryMod extends js.Object {
   def fetchQuery_variables[TQuery /* <: OperationType */](
     environment: Environment,
     query: GraphQLTaggedNode,
-    variables: /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any
   ): Observable[
-    /* import warning: ImportType.apply Failed type conversion: TQuery['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any
   ] = js.native
   @JSName("fetchQuery")
   def fetchQuery_variables[TQuery /* <: OperationType */](
     environment: Environment,
     query: GraphQLTaggedNode,
-    variables: /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any,
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any,
     options: Anon_NetworkCacheConfig
   ): Observable[
-    /* import warning: ImportType.apply Failed type conversion: TQuery['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any
   ] = js.native
 }
 

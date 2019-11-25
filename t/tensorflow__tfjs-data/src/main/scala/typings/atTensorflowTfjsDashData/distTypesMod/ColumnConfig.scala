@@ -22,9 +22,9 @@ object ColumnConfig {
   ): ColumnConfig = {
     val __obj = js.Dynamic.literal()
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (dtype != null) __obj.updateDynamic("dtype")(dtype)
-    if (!js.isUndefined(isLabel)) __obj.updateDynamic("isLabel")(isLabel)
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLabel)) __obj.updateDynamic("isLabel")(isLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnConfig]
   }
 }

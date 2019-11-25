@@ -24,9 +24,9 @@ object SegmentData {
     featureSegments: js.Array[SegmentData] = null,
     index: Int | Double = null
   ): SegmentData = {
-    val __obj = js.Dynamic.literal(feature = feature, geometry = geometry, segment = segment)
-    if (depth != null) __obj.updateDynamic("depth")(depth)
-    if (featureSegments != null) __obj.updateDynamic("featureSegments")(featureSegments)
+    val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], segment = segment.asInstanceOf[js.Any])
+    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (featureSegments != null) __obj.updateDynamic("featureSegments")(featureSegments.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentData]
   }

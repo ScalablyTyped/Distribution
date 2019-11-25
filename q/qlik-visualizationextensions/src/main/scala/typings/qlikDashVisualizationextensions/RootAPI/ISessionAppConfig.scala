@@ -41,8 +41,8 @@ object ISessionAppConfig {
     prefix: String,
     host: String = null
   ): ISessionAppConfig = {
-    val __obj = js.Dynamic.literal(identity = identity, isSecure = isSecure, openWithoutData = openWithoutData, port = port.asInstanceOf[js.Any], prefix = prefix)
-    if (host != null) __obj.updateDynamic("host")(host)
+    val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], isSecure = isSecure.asInstanceOf[js.Any], openWithoutData = openWithoutData.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISessionAppConfig]
   }
 }

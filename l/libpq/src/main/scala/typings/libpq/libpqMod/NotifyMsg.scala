@@ -13,7 +13,7 @@ trait NotifyMsg extends js.Object {
 object NotifyMsg {
   @scala.inline
   def apply(be_pid: Double, extra: String, relname: String): NotifyMsg = {
-    val __obj = js.Dynamic.literal(be_pid = be_pid, extra = extra, relname = relname)
+    val __obj = js.Dynamic.literal(be_pid = be_pid.asInstanceOf[js.Any], extra = extra.asInstanceOf[js.Any], relname = relname.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NotifyMsg]
   }

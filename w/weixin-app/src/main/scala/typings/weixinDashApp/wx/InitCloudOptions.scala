@@ -25,7 +25,7 @@ object InitCloudOptions {
   def apply(env: String | InitCloudEnvOptions = null, traceUser: js.UndefOr[Boolean] = js.undefined): InitCloudOptions = {
     val __obj = js.Dynamic.literal()
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (!js.isUndefined(traceUser)) __obj.updateDynamic("traceUser")(traceUser)
+    if (!js.isUndefined(traceUser)) __obj.updateDynamic("traceUser")(traceUser.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitCloudOptions]
   }
 }

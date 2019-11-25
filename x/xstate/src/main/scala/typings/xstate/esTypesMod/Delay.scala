@@ -15,7 +15,7 @@ trait Delay extends js.Object {
 object Delay {
   @scala.inline
   def apply(delay: Double, id: String): Delay = {
-    val __obj = js.Dynamic.literal(delay = delay, id = id)
+    val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Delay]
   }

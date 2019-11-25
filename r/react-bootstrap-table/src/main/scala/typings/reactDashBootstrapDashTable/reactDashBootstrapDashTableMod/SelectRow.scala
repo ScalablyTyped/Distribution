@@ -122,21 +122,21 @@ object SelectRow {
     showOnlySelected: js.UndefOr[Boolean] = js.undefined,
     unselectable: js.Array[Double | String] = null
   ): SelectRow[TRow] = {
-    val __obj = js.Dynamic.literal(mode = mode)
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickToExpand)) __obj.updateDynamic("clickToExpand")(clickToExpand)
-    if (!js.isUndefined(clickToSelect)) __obj.updateDynamic("clickToSelect")(clickToSelect)
-    if (!js.isUndefined(clickToSelectAndEditCell)) __obj.updateDynamic("clickToSelectAndEditCell")(clickToSelectAndEditCell)
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth)
+    if (!js.isUndefined(clickToExpand)) __obj.updateDynamic("clickToExpand")(clickToExpand.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickToSelect)) __obj.updateDynamic("clickToSelect")(clickToSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickToSelectAndEditCell)) __obj.updateDynamic("clickToSelectAndEditCell")(clickToSelectAndEditCell.asInstanceOf[js.Any])
+    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
     if (customComponent != null) __obj.updateDynamic("customComponent")(js.Any.fromFunction1(customComponent))
-    if (!js.isUndefined(hideSelectColumn)) __obj.updateDynamic("hideSelectColumn")(hideSelectColumn)
+    if (!js.isUndefined(hideSelectColumn)) __obj.updateDynamic("hideSelectColumn")(hideSelectColumn.asInstanceOf[js.Any])
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction4(onSelect))
     if (onSelectAll != null) __obj.updateDynamic("onSelectAll")(js.Any.fromFunction2(onSelectAll))
-    if (!js.isUndefined(onlyUnselectVisible)) __obj.updateDynamic("onlyUnselectVisible")(onlyUnselectVisible)
-    if (selected != null) __obj.updateDynamic("selected")(selected)
-    if (!js.isUndefined(showOnlySelected)) __obj.updateDynamic("showOnlySelected")(showOnlySelected)
-    if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable)
+    if (!js.isUndefined(onlyUnselectVisible)) __obj.updateDynamic("onlyUnselectVisible")(onlyUnselectVisible.asInstanceOf[js.Any])
+    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOnlySelected)) __obj.updateDynamic("showOnlySelected")(showOnlySelected.asInstanceOf[js.Any])
+    if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectRow[TRow]]
   }
 }

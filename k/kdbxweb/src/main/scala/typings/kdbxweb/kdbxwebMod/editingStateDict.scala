@@ -12,8 +12,8 @@ trait editingStateDict extends /* uuid */ StringDictionary[editingState] {
 object editingStateDict {
   @scala.inline
   def apply(meta: editingState, StringDictionary: /* uuid */ StringDictionary[editingState] = null): editingStateDict = {
-    val __obj = js.Dynamic.literal(meta = meta)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[editingStateDict]
   }
 }

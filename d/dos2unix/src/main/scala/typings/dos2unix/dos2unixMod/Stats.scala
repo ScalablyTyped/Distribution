@@ -13,7 +13,7 @@ trait Stats extends js.Object {
 object Stats {
   @scala.inline
   def apply(error: Double, fix: Double, skip: Double): Stats = {
-    val __obj = js.Dynamic.literal(error = error, fix = fix, skip = skip)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], fix = fix.asInstanceOf[js.Any], skip = skip.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Stats]
   }

@@ -14,7 +14,7 @@ trait Anon_Links extends js.Object {
 object Anon_Links {
   @scala.inline
   def apply(links: js.Array[SankeyDataLink], nodes: js.Array[SankeyDataNode]): Anon_Links = {
-    val __obj = js.Dynamic.literal(links = links, nodes = nodes)
+    val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Links]
   }

@@ -19,7 +19,7 @@ object PublishXunitXmlFilesRequest {
   @scala.inline
   def apply(xunitXmlFiles: js.Array[FileReference] = null): PublishXunitXmlFilesRequest = {
     val __obj = js.Dynamic.literal()
-    if (xunitXmlFiles != null) __obj.updateDynamic("xunitXmlFiles")(xunitXmlFiles)
+    if (xunitXmlFiles != null) __obj.updateDynamic("xunitXmlFiles")(xunitXmlFiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishXunitXmlFilesRequest]
   }
 }

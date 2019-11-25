@@ -26,7 +26,7 @@ trait Performance extends js.Object {
 object Performance {
   @scala.inline
   def apply(dataCollectionEnabled: Boolean, instrumentationEnabled: Boolean, trace: String => Trace): Performance = {
-    val __obj = js.Dynamic.literal(dataCollectionEnabled = dataCollectionEnabled, instrumentationEnabled = instrumentationEnabled, trace = js.Any.fromFunction1(trace))
+    val __obj = js.Dynamic.literal(dataCollectionEnabled = dataCollectionEnabled.asInstanceOf[js.Any], instrumentationEnabled = instrumentationEnabled.asInstanceOf[js.Any], trace = js.Any.fromFunction1(trace))
   
     __obj.asInstanceOf[Performance]
   }

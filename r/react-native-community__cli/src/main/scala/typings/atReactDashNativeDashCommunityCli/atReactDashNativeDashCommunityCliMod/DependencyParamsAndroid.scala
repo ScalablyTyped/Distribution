@@ -20,10 +20,10 @@ object DependencyParamsAndroid {
     sourceDir: String = null
   ): DependencyParamsAndroid = {
     val __obj = js.Dynamic.literal()
-    if (manifestPath != null) __obj.updateDynamic("manifestPath")(manifestPath)
-    if (packageImportPath != null) __obj.updateDynamic("packageImportPath")(packageImportPath)
-    if (packageInstance != null) __obj.updateDynamic("packageInstance")(packageInstance)
-    if (sourceDir != null) __obj.updateDynamic("sourceDir")(sourceDir)
+    if (manifestPath != null) __obj.updateDynamic("manifestPath")(manifestPath.asInstanceOf[js.Any])
+    if (packageImportPath != null) __obj.updateDynamic("packageImportPath")(packageImportPath.asInstanceOf[js.Any])
+    if (packageInstance != null) __obj.updateDynamic("packageInstance")(packageInstance.asInstanceOf[js.Any])
+    if (sourceDir != null) __obj.updateDynamic("sourceDir")(sourceDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[DependencyParamsAndroid]
   }
 }

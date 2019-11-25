@@ -19,7 +19,7 @@ object Anon_ShouldDestroyOnFileDelete {
   def apply(shouldDestroyOnFileDelete: () => Boolean = null, text: String = null): Anon_ShouldDestroyOnFileDelete = {
     val __obj = js.Dynamic.literal()
     if (shouldDestroyOnFileDelete != null) __obj.updateDynamic("shouldDestroyOnFileDelete")(js.Any.fromFunction0(shouldDestroyOnFileDelete))
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ShouldDestroyOnFileDelete]
   }
 }

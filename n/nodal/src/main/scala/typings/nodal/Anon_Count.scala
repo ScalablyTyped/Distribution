@@ -23,8 +23,8 @@ object Anon_Count {
     total: Double,
     summary: String = null
   ): Anon_Count = {
-    val __obj = js.Dynamic.literal(count = count, error = error, offset = offset, resource = resource, total = total)
-    if (summary != null) __obj.updateDynamic("summary")(summary)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
+    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Count]
   }
 }

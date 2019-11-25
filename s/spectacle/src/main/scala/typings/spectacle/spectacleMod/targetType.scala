@@ -15,3 +15,16 @@ import scala.scalajs.js.annotation._
 */
 trait targetType extends js.Object
 
+object targetType {
+  @scala.inline
+  def _blank: typings.spectacle.spectacleStrings._blank = this.cast("_blank")
+  @scala.inline
+  def _parent: typings.spectacle.spectacleStrings._parent = this.cast("_parent")
+  @scala.inline
+  def _self: typings.spectacle.spectacleStrings._self = this.cast("_self")
+  @scala.inline
+  def _top: typings.spectacle.spectacleStrings._top = this.cast("_top")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

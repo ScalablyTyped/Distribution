@@ -15,8 +15,8 @@ object PermissionGrant {
   @scala.inline
   def apply(permission: String = null, policy: String = null): PermissionGrant = {
     val __obj = js.Dynamic.literal()
-    if (permission != null) __obj.updateDynamic("permission")(permission)
-    if (policy != null) __obj.updateDynamic("policy")(policy)
+    if (permission != null) __obj.updateDynamic("permission")(permission.asInstanceOf[js.Any])
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermissionGrant]
   }
 }

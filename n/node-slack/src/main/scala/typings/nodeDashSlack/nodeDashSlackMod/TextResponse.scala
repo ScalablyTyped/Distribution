@@ -11,7 +11,7 @@ trait TextResponse extends js.Object {
 object TextResponse {
   @scala.inline
   def apply(text: String): TextResponse = {
-    val __obj = js.Dynamic.literal(text = text)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TextResponse]
   }

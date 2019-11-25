@@ -19,8 +19,8 @@ object FancyBoxTouchOptions {
   @scala.inline
   def apply(momentum: js.UndefOr[Boolean] = js.undefined, vertical: js.UndefOr[Boolean] = js.undefined): FancyBoxTouchOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(momentum)) __obj.updateDynamic("momentum")(momentum)
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    if (!js.isUndefined(momentum)) __obj.updateDynamic("momentum")(momentum.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[FancyBoxTouchOptions]
   }
 }

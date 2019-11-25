@@ -14,7 +14,7 @@ trait DocumentScanCallbackArg extends js.Object {
 object DocumentScanCallbackArg {
   @scala.inline
   def apply(dataUrls: js.Array[String], mimeType: String): DocumentScanCallbackArg = {
-    val __obj = js.Dynamic.literal(dataUrls = dataUrls, mimeType = mimeType)
+    val __obj = js.Dynamic.literal(dataUrls = dataUrls.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DocumentScanCallbackArg]
   }

@@ -54,17 +54,17 @@ object Workspace {
     system_settings: WorkspaceSystemSettings = null,
     updated: String = null
   ): Workspace = {
-    val __obj = js.Dynamic.literal(language = language, learning_opt_out = learning_opt_out, name = name, workspace_id = workspace_id)
-    if (counterexamples != null) __obj.updateDynamic("counterexamples")(counterexamples)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (dialog_nodes != null) __obj.updateDynamic("dialog_nodes")(dialog_nodes)
-    if (entities != null) __obj.updateDynamic("entities")(entities)
-    if (intents != null) __obj.updateDynamic("intents")(intents)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (system_settings != null) __obj.updateDynamic("system_settings")(system_settings)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], learning_opt_out = learning_opt_out.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], workspace_id = workspace_id.asInstanceOf[js.Any])
+    if (counterexamples != null) __obj.updateDynamic("counterexamples")(counterexamples.asInstanceOf[js.Any])
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (dialog_nodes != null) __obj.updateDynamic("dialog_nodes")(dialog_nodes.asInstanceOf[js.Any])
+    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
+    if (intents != null) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (system_settings != null) __obj.updateDynamic("system_settings")(system_settings.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Workspace]
   }
 }

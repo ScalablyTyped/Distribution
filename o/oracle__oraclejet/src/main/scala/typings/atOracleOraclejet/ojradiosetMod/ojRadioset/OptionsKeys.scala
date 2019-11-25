@@ -14,8 +14,8 @@ object OptionsKeys {
   @scala.inline
   def apply(label: String = null, value: String = null): OptionsKeys = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsKeys]
   }
 }

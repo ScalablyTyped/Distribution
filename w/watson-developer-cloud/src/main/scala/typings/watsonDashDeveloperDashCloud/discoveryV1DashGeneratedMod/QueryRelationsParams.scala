@@ -40,14 +40,14 @@ object QueryRelationsParams {
     return_response: js.UndefOr[Boolean] = js.undefined,
     sort: Sort | String = null
   ): QueryRelationsParams = {
-    val __obj = js.Dynamic.literal(collection_id = collection_id, environment_id = environment_id)
-    if (context != null) __obj.updateDynamic("context")(context)
+    val __obj = js.Dynamic.literal(collection_id = collection_id.asInstanceOf[js.Any], environment_id = environment_id.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (entities != null) __obj.updateDynamic("entities")(entities)
+    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
     if (evidence_count != null) __obj.updateDynamic("evidence_count")(evidence_count.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryRelationsParams]
   }

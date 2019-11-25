@@ -12,7 +12,7 @@ trait FetchTimeResponse extends js.Object {
 object FetchTimeResponse {
   @scala.inline
   def apply(timetoken: Double): FetchTimeResponse = {
-    val __obj = js.Dynamic.literal(timetoken = timetoken)
+    val __obj = js.Dynamic.literal(timetoken = timetoken.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FetchTimeResponse]
   }

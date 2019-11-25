@@ -21,9 +21,9 @@ object ResolvedModuleFull {
     isExternalLibraryImport: js.UndefOr[Boolean] = js.undefined,
     packageId: PackageId = null
   ): ResolvedModuleFull = {
-    val __obj = js.Dynamic.literal(extension = extension, resolvedFileName = resolvedFileName)
-    if (!js.isUndefined(isExternalLibraryImport)) __obj.updateDynamic("isExternalLibraryImport")(isExternalLibraryImport)
-    if (packageId != null) __obj.updateDynamic("packageId")(packageId)
+    val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], resolvedFileName = resolvedFileName.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExternalLibraryImport)) __obj.updateDynamic("isExternalLibraryImport")(isExternalLibraryImport.asInstanceOf[js.Any])
+    if (packageId != null) __obj.updateDynamic("packageId")(packageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedModuleFull]
   }
 }

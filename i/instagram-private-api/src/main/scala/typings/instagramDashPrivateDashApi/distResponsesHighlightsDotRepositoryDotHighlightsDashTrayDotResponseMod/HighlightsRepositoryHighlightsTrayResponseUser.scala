@@ -35,12 +35,12 @@ object HighlightsRepositoryHighlightsTrayResponseUser {
     is_unpublished: js.UndefOr[Boolean] = js.undefined,
     latest_reel_media: Null = null
   ): HighlightsRepositoryHighlightsTrayResponseUser = {
-    val __obj = js.Dynamic.literal(full_name = full_name, is_private = is_private, is_verified = is_verified, pk = pk, profile_pic_id = profile_pic_id, profile_pic_url = profile_pic_url, username = username)
-    if (friendship_status != null) __obj.updateDynamic("friendship_status")(friendship_status)
-    if (!js.isUndefined(has_anonymous_profile_picture)) __obj.updateDynamic("has_anonymous_profile_picture")(has_anonymous_profile_picture)
-    if (!js.isUndefined(is_favorite)) __obj.updateDynamic("is_favorite")(is_favorite)
-    if (!js.isUndefined(is_unpublished)) __obj.updateDynamic("is_unpublished")(is_unpublished)
-    if (latest_reel_media != null) __obj.updateDynamic("latest_reel_media")(latest_reel_media)
+    val __obj = js.Dynamic.literal(full_name = full_name.asInstanceOf[js.Any], is_private = is_private.asInstanceOf[js.Any], is_verified = is_verified.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], profile_pic_id = profile_pic_id.asInstanceOf[js.Any], profile_pic_url = profile_pic_url.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    if (friendship_status != null) __obj.updateDynamic("friendship_status")(friendship_status.asInstanceOf[js.Any])
+    if (!js.isUndefined(has_anonymous_profile_picture)) __obj.updateDynamic("has_anonymous_profile_picture")(has_anonymous_profile_picture.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_favorite)) __obj.updateDynamic("is_favorite")(is_favorite.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_unpublished)) __obj.updateDynamic("is_unpublished")(is_unpublished.asInstanceOf[js.Any])
+    if (latest_reel_media != null) __obj.updateDynamic("latest_reel_media")(latest_reel_media.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightsRepositoryHighlightsTrayResponseUser]
   }
 }

@@ -24,7 +24,7 @@ object SpriteOptions {
     width: Int | Double = null
   ): SpriteOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (posx != null) __obj.updateDynamic("posx")(posx.asInstanceOf[js.Any])

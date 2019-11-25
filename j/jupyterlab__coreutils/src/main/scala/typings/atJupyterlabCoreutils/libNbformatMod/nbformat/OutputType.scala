@@ -16,3 +16,18 @@ import scala.scalajs.js.annotation._
 */
 trait OutputType extends js.Object
 
+object OutputType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def display_data: typings.atJupyterlabCoreutils.atJupyterlabCoreutilsStrings.display_data = this.cast("display_data")
+  @scala.inline
+  def error: typings.atJupyterlabCoreutils.atJupyterlabCoreutilsStrings.error = this.cast("error")
+  @scala.inline
+  def execute_result: typings.atJupyterlabCoreutils.atJupyterlabCoreutilsStrings.execute_result = this.cast("execute_result")
+  @scala.inline
+  def stream: typings.atJupyterlabCoreutils.atJupyterlabCoreutilsStrings.stream = this.cast("stream")
+  @scala.inline
+  def update_display_data: typings.atJupyterlabCoreutils.atJupyterlabCoreutilsStrings.update_display_data = this.cast("update_display_data")
+}
+

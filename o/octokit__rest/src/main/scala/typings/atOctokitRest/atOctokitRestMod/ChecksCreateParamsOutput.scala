@@ -21,10 +21,10 @@ object ChecksCreateParamsOutput {
     images: js.Array[ChecksCreateParamsOutputImages] = null,
     text: String = null
   ): ChecksCreateParamsOutput = {
-    val __obj = js.Dynamic.literal(summary = summary, title = title)
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations)
-    if (images != null) __obj.updateDynamic("images")(images)
-    if (text != null) __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(summary = summary.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
+    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChecksCreateParamsOutput]
   }
 }

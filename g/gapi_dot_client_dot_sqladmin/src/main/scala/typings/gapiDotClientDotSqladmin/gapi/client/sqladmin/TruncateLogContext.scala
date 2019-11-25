@@ -15,8 +15,8 @@ object TruncateLogContext {
   @scala.inline
   def apply(kind: String = null, logType: String = null): TruncateLogContext = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (logType != null) __obj.updateDynamic("logType")(logType)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (logType != null) __obj.updateDynamic("logType")(logType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TruncateLogContext]
   }
 }

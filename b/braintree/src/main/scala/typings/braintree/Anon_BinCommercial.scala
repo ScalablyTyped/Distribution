@@ -55,7 +55,7 @@ object Anon_BinCommercial {
     virtualCardLast4: String,
     virtualCardType: String
   ): Anon_BinCommercial = {
-    val __obj = js.Dynamic.literal(bin = bin, commercial = commercial, countryOfIssuance = countryOfIssuance, debit = debit, durbinRegulated = durbinRegulated, expirationMonth = expirationMonth, expirationYear = expirationYear, googleTransactionId = googleTransactionId, healthcare = healthcare, imageUrl = imageUrl, payroll = payroll, prepaid = prepaid, productId = productId, sourceCardLast4 = sourceCardLast4, sourceCardType = sourceCardType, sourceDescription = sourceDescription, token = token, virtualCardLast4 = virtualCardLast4, virtualCardType = virtualCardType)
+    val __obj = js.Dynamic.literal(bin = bin.asInstanceOf[js.Any], commercial = commercial.asInstanceOf[js.Any], countryOfIssuance = countryOfIssuance.asInstanceOf[js.Any], debit = debit.asInstanceOf[js.Any], durbinRegulated = durbinRegulated.asInstanceOf[js.Any], expirationMonth = expirationMonth.asInstanceOf[js.Any], expirationYear = expirationYear.asInstanceOf[js.Any], googleTransactionId = googleTransactionId.asInstanceOf[js.Any], healthcare = healthcare.asInstanceOf[js.Any], imageUrl = imageUrl.asInstanceOf[js.Any], payroll = payroll.asInstanceOf[js.Any], prepaid = prepaid.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any], sourceCardLast4 = sourceCardLast4.asInstanceOf[js.Any], sourceCardType = sourceCardType.asInstanceOf[js.Any], sourceDescription = sourceDescription.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], virtualCardLast4 = virtualCardLast4.asInstanceOf[js.Any], virtualCardType = virtualCardType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BinCommercial]
   }

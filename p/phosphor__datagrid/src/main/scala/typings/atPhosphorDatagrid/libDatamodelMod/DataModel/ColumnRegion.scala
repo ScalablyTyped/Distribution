@@ -13,3 +13,12 @@ import scala.scalajs.js.annotation._
 */
 trait ColumnRegion extends js.Object
 
+object ColumnRegion {
+  @scala.inline
+  def body: typings.atPhosphorDatagrid.atPhosphorDatagridStrings.body = this.cast("body")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def `row-header`: typings.atPhosphorDatagrid.atPhosphorDatagridStrings.`row-header` = this.cast("row-header")
+}
+

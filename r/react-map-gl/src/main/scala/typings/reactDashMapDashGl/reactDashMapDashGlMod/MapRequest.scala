@@ -14,9 +14,9 @@ trait MapRequest extends js.Object {
 object MapRequest {
   @scala.inline
   def apply(url: String, credentials: String = null, headers: StringDictionary[String] = null): MapRequest = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapRequest]
   }
 }

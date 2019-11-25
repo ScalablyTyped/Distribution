@@ -50,13 +50,13 @@ object DirectoryOptions {
     uid: Int | Double = null
   ): DirectoryOptions = {
     val __obj = js.Dynamic.literal()
-    if (atime != null) __obj.updateDynamic("atime")(atime)
-    if (birthtime != null) __obj.updateDynamic("birthtime")(birthtime)
-    if (ctime != null) __obj.updateDynamic("ctime")(ctime)
+    if (atime != null) __obj.updateDynamic("atime")(atime.asInstanceOf[js.Any])
+    if (birthtime != null) __obj.updateDynamic("birthtime")(birthtime.asInstanceOf[js.Any])
+    if (ctime != null) __obj.updateDynamic("ctime")(ctime.asInstanceOf[js.Any])
     if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (mtime != null) __obj.updateDynamic("mtime")(mtime)
+    if (mtime != null) __obj.updateDynamic("mtime")(mtime.asInstanceOf[js.Any])
     if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectoryOptions]
   }

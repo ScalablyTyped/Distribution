@@ -94,9 +94,9 @@ object SequenceDiagramConfig {
     if (diagramMarginY != null) __obj.updateDynamic("diagramMarginY")(diagramMarginY.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (messageMargin != null) __obj.updateDynamic("messageMargin")(messageMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(mirrorActors)) __obj.updateDynamic("mirrorActors")(mirrorActors)
+    if (!js.isUndefined(mirrorActors)) __obj.updateDynamic("mirrorActors")(mirrorActors.asInstanceOf[js.Any])
     if (noteMargin != null) __obj.updateDynamic("noteMargin")(noteMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMaxWidth)) __obj.updateDynamic("useMaxWidth")(useMaxWidth)
+    if (!js.isUndefined(useMaxWidth)) __obj.updateDynamic("useMaxWidth")(useMaxWidth.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SequenceDiagramConfig]
   }

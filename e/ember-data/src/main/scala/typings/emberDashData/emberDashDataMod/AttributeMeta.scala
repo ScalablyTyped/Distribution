@@ -23,8 +23,8 @@ object AttributeMeta {
     parentType: Model,
     `type`: String
   ): AttributeMeta[Model] = {
-    val __obj = js.Dynamic.literal(isAttribute = isAttribute, name = name.asInstanceOf[js.Any], options = options, parentType = parentType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(isAttribute = isAttribute.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], parentType = parentType.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeMeta[Model]]
   }
 }

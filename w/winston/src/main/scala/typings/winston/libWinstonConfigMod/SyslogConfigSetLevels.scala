@@ -29,8 +29,8 @@ object SyslogConfigSetLevels {
     warning: Double,
     StringDictionary: StringDictionary[Double] = null
   ): SyslogConfigSetLevels = {
-    val __obj = js.Dynamic.literal(alert = alert, crit = crit, debug = debug, emerg = emerg, error = error, info = info, notice = notice, warning = warning)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(alert = alert.asInstanceOf[js.Any], crit = crit.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], emerg = emerg.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], notice = notice.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[SyslogConfigSetLevels]
   }
 }

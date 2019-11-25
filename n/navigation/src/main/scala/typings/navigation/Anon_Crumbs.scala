@@ -15,7 +15,7 @@ trait Anon_Crumbs extends js.Object {
 object Anon_Crumbs {
   @scala.inline
   def apply(crumbs: js.Array[Crumb], data: js.Any, state: State): Anon_Crumbs = {
-    val __obj = js.Dynamic.literal(crumbs = crumbs, data = data, state = state)
+    val __obj = js.Dynamic.literal(crumbs = crumbs.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Crumbs]
   }

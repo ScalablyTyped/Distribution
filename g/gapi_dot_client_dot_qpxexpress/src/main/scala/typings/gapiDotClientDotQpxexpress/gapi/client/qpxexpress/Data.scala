@@ -33,12 +33,12 @@ object Data {
     tax: js.Array[TaxData] = null
   ): Data = {
     val __obj = js.Dynamic.literal()
-    if (aircraft != null) __obj.updateDynamic("aircraft")(aircraft)
-    if (airport != null) __obj.updateDynamic("airport")(airport)
-    if (carrier != null) __obj.updateDynamic("carrier")(carrier)
-    if (city != null) __obj.updateDynamic("city")(city)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (tax != null) __obj.updateDynamic("tax")(tax)
+    if (aircraft != null) __obj.updateDynamic("aircraft")(aircraft.asInstanceOf[js.Any])
+    if (airport != null) __obj.updateDynamic("airport")(airport.asInstanceOf[js.Any])
+    if (carrier != null) __obj.updateDynamic("carrier")(carrier.asInstanceOf[js.Any])
+    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (tax != null) __obj.updateDynamic("tax")(tax.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data]
   }
 }

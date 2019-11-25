@@ -30,9 +30,9 @@ object IColumnDef {
     pinnedRight: js.UndefOr[Boolean] = js.undefined
   ): IColumnDef = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enablePinning)) __obj.updateDynamic("enablePinning")(enablePinning)
-    if (!js.isUndefined(pinnedLeft)) __obj.updateDynamic("pinnedLeft")(pinnedLeft)
-    if (!js.isUndefined(pinnedRight)) __obj.updateDynamic("pinnedRight")(pinnedRight)
+    if (!js.isUndefined(enablePinning)) __obj.updateDynamic("enablePinning")(enablePinning.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinnedLeft)) __obj.updateDynamic("pinnedLeft")(pinnedLeft.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinnedRight)) __obj.updateDynamic("pinnedRight")(pinnedRight.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnDef]
   }
 }

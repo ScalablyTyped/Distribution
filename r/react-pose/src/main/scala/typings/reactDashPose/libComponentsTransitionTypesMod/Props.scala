@@ -31,14 +31,14 @@ object Props {
     preEnterPose: String = null
   ): Props = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(animateOnMount)) __obj.updateDynamic("animateOnMount")(animateOnMount)
-    if (!js.isUndefined(enterAfterExit)) __obj.updateDynamic("enterAfterExit")(enterAfterExit)
-    if (enterPose != null) __obj.updateDynamic("enterPose")(enterPose)
-    if (exitPose != null) __obj.updateDynamic("exitPose")(exitPose)
-    if (!js.isUndefined(flipMove)) __obj.updateDynamic("flipMove")(flipMove)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(animateOnMount)) __obj.updateDynamic("animateOnMount")(animateOnMount.asInstanceOf[js.Any])
+    if (!js.isUndefined(enterAfterExit)) __obj.updateDynamic("enterAfterExit")(enterAfterExit.asInstanceOf[js.Any])
+    if (enterPose != null) __obj.updateDynamic("enterPose")(enterPose.asInstanceOf[js.Any])
+    if (exitPose != null) __obj.updateDynamic("exitPose")(exitPose.asInstanceOf[js.Any])
+    if (!js.isUndefined(flipMove)) __obj.updateDynamic("flipMove")(flipMove.asInstanceOf[js.Any])
     if (onRest != null) __obj.updateDynamic("onRest")(js.Any.fromFunction0(onRest))
-    if (preEnterPose != null) __obj.updateDynamic("preEnterPose")(preEnterPose)
+    if (preEnterPose != null) __obj.updateDynamic("preEnterPose")(preEnterPose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

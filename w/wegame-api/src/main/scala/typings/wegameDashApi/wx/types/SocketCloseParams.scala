@@ -31,7 +31,7 @@ object SocketCloseParams {
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[SocketCloseParams]
   }

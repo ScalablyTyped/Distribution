@@ -31,7 +31,7 @@ object IPointerPointTransform {
     transformBounds: Rect => Rect,
     tryTransform: Point => Anon_OutPoint
   ): IPointerPointTransform = {
-    val __obj = js.Dynamic.literal(inverse = inverse, transformBounds = js.Any.fromFunction1(transformBounds), tryTransform = js.Any.fromFunction1(tryTransform))
+    val __obj = js.Dynamic.literal(inverse = inverse.asInstanceOf[js.Any], transformBounds = js.Any.fromFunction1(transformBounds), tryTransform = js.Any.fromFunction1(tryTransform))
   
     __obj.asInstanceOf[IPointerPointTransform]
   }

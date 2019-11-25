@@ -26,8 +26,8 @@ object TestDetails {
   @scala.inline
   def apply(errorMessage: String = null, progressMessages: js.Array[String] = null): TestDetails = {
     val __obj = js.Dynamic.literal()
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
-    if (progressMessages != null) __obj.updateDynamic("progressMessages")(progressMessages)
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
+    if (progressMessages != null) __obj.updateDynamic("progressMessages")(progressMessages.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestDetails]
   }
 }

@@ -16,7 +16,7 @@ object DbUpdateSpec {
   @scala.inline
   def apply(databases: js.Array[DatabaseSpec] = null): DbUpdateSpec = {
     val __obj = js.Dynamic.literal()
-    if (databases != null) __obj.updateDynamic("databases")(databases)
+    if (databases != null) __obj.updateDynamic("databases")(databases.asInstanceOf[js.Any])
     __obj.asInstanceOf[DbUpdateSpec]
   }
 }

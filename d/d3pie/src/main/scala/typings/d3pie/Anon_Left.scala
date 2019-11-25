@@ -13,7 +13,7 @@ object Anon_Left {
   @scala.inline
   def apply(location: left = null): Anon_Left = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Left]
   }
 }

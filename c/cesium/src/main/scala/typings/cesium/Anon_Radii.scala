@@ -22,10 +22,10 @@ object Anon_Radii {
     vertexFormat: VertexFormat = null
   ): Anon_Radii = {
     val __obj = js.Dynamic.literal()
-    if (radii != null) __obj.updateDynamic("radii")(radii)
+    if (radii != null) __obj.updateDynamic("radii")(radii.asInstanceOf[js.Any])
     if (slicePartitions != null) __obj.updateDynamic("slicePartitions")(slicePartitions.asInstanceOf[js.Any])
     if (stackPartitions != null) __obj.updateDynamic("stackPartitions")(stackPartitions.asInstanceOf[js.Any])
-    if (vertexFormat != null) __obj.updateDynamic("vertexFormat")(vertexFormat)
+    if (vertexFormat != null) __obj.updateDynamic("vertexFormat")(vertexFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Radii]
   }
 }

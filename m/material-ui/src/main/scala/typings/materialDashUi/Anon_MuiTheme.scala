@@ -13,7 +13,7 @@ object Anon_MuiTheme {
   @scala.inline
   def apply(muiTheme: MuiTheme = null): Anon_MuiTheme = {
     val __obj = js.Dynamic.literal()
-    if (muiTheme != null) __obj.updateDynamic("muiTheme")(muiTheme)
+    if (muiTheme != null) __obj.updateDynamic("muiTheme")(muiTheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MuiTheme]
   }
 }

@@ -23,7 +23,7 @@ object ItemModel {
     path: String,
     url: String
   ): ItemModel = {
-    val __obj = js.Dynamic.literal(_links = _links, contentMetadata = contentMetadata, isFolder = isFolder, isSymLink = isSymLink, path = path, url = url)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], contentMetadata = contentMetadata.asInstanceOf[js.Any], isFolder = isFolder.asInstanceOf[js.Any], isSymLink = isSymLink.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ItemModel]
   }

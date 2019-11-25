@@ -11,7 +11,7 @@ trait IntegerParam extends js.Object {
 object IntegerParam {
   @scala.inline
   def apply(int: Double): IntegerParam = {
-    val __obj = js.Dynamic.literal(int = int)
+    val __obj = js.Dynamic.literal(int = int.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IntegerParam]
   }

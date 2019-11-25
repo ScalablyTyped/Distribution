@@ -26,10 +26,10 @@ object UserDependencyConfig {
     haste: Anon_Platforms = null,
     platforms: StringDictionary[js.Any] = null
   ): UserDependencyConfig = {
-    val __obj = js.Dynamic.literal(commands = commands)
-    if (dependency != null) __obj.updateDynamic("dependency")(dependency)
-    if (haste != null) __obj.updateDynamic("haste")(haste)
-    if (platforms != null) __obj.updateDynamic("platforms")(platforms)
+    val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any])
+    if (dependency != null) __obj.updateDynamic("dependency")(dependency.asInstanceOf[js.Any])
+    if (haste != null) __obj.updateDynamic("haste")(haste.asInstanceOf[js.Any])
+    if (platforms != null) __obj.updateDynamic("platforms")(platforms.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserDependencyConfig]
   }
 }

@@ -13,7 +13,7 @@ trait Anon_IsValid extends js.Object {
 object Anon_IsValid {
   @scala.inline
   def apply(isValid: Boolean, parse: Anon_CertsIdx, signerInfos: js.Array[_]): Anon_IsValid = {
-    val __obj = js.Dynamic.literal(isValid = isValid, parse = parse, signerInfos = signerInfos)
+    val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any], parse = parse.asInstanceOf[js.Any], signerInfos = signerInfos.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsValid]
   }

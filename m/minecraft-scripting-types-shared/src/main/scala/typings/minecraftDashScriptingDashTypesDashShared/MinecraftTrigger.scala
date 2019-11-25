@@ -13,7 +13,7 @@ trait MinecraftTrigger extends js.Object {
 object MinecraftTrigger {
   @scala.inline
   def apply(event: String, filters: MinecraftFilter, target: String): MinecraftTrigger = {
-    val __obj = js.Dynamic.literal(event = event, filters = filters, target = target)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], filters = filters.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MinecraftTrigger]
   }

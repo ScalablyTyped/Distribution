@@ -13,7 +13,7 @@ object Async {
   @scala.inline
   def apply(async: `true` = null): Async = {
     val __obj = js.Dynamic.literal()
-    if (async != null) __obj.updateDynamic("async")(async)
+    if (async != null) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
     __obj.asInstanceOf[Async]
   }
 }

@@ -17,7 +17,7 @@ trait TracingFormat extends js.Object {
 object TracingFormat {
   @scala.inline
   def apply(duration: Double, endTime: String, execution: Anon_Resolvers, startTime: String, version: `1`): TracingFormat = {
-    val __obj = js.Dynamic.literal(duration = duration, endTime = endTime, execution = execution, startTime = startTime, version = version)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any], execution = execution.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TracingFormat]
   }

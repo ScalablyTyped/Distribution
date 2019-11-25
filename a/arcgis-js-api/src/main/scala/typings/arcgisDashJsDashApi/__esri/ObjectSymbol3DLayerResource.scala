@@ -41,9 +41,9 @@ object ObjectSymbol3DLayerResource {
     href: String = null,
     primitive: String = null
   ): ObjectSymbol3DLayerResource = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (href != null) __obj.updateDynamic("href")(href)
-    if (primitive != null) __obj.updateDynamic("primitive")(primitive)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (primitive != null) __obj.updateDynamic("primitive")(primitive.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectSymbol3DLayerResource]
   }
 }

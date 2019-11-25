@@ -22,9 +22,9 @@ object Options {
     hotClient: typings.webpackDashHotDashClient.webpackDashHotDashClientMod.Options | Boolean = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (compiler != null) __obj.updateDynamic("compiler")(compiler)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (devMiddleware != null) __obj.updateDynamic("devMiddleware")(devMiddleware)
+    if (compiler != null) __obj.updateDynamic("compiler")(compiler.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (devMiddleware != null) __obj.updateDynamic("devMiddleware")(devMiddleware.asInstanceOf[js.Any])
     if (hotClient != null) __obj.updateDynamic("hotClient")(hotClient.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

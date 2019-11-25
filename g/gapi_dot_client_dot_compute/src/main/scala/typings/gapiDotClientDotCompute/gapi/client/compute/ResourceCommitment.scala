@@ -18,8 +18,8 @@ object ResourceCommitment {
   @scala.inline
   def apply(amount: String = null, `type`: String = null): ResourceCommitment = {
     val __obj = js.Dynamic.literal()
-    if (amount != null) __obj.updateDynamic("amount")(amount)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceCommitment]
   }
 }

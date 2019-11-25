@@ -16,8 +16,8 @@ object AlterMaterializedViewOptions {
   def apply(cluster: `false` | String = null, extension: String = null, storageParameters: js.Object = null): AlterMaterializedViewOptions = {
     val __obj = js.Dynamic.literal()
     if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (storageParameters != null) __obj.updateDynamic("storageParameters")(storageParameters)
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (storageParameters != null) __obj.updateDynamic("storageParameters")(storageParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlterMaterializedViewOptions]
   }
 }

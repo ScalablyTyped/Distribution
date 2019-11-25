@@ -67,7 +67,7 @@ object TestInfo {
     video: String,
     web10: Double
   ): TestInfo = {
-    val __obj = js.Dynamic.literal(block = block, bodies = bodies, browser = browser, bwIn = bwIn, bwOut = bwOut, connectivity = connectivity, fvonly = fvonly, ignoreSSL = ignoreSSL, iq = iq, keepua = keepua, label = label, latency = latency, location = location, mobile = mobile, netlog = netlog, noscript = noscript, plr = plr, pngss = pngss, priority = priority, runs = runs, scripted = scripted, standards = standards, tcpdump = tcpdump, timeline = timeline, trace = trace, url = url, video = video, web10 = web10)
+    val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], bodies = bodies.asInstanceOf[js.Any], browser = browser.asInstanceOf[js.Any], bwIn = bwIn.asInstanceOf[js.Any], bwOut = bwOut.asInstanceOf[js.Any], connectivity = connectivity.asInstanceOf[js.Any], fvonly = fvonly.asInstanceOf[js.Any], ignoreSSL = ignoreSSL.asInstanceOf[js.Any], iq = iq.asInstanceOf[js.Any], keepua = keepua.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], latency = latency.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], mobile = mobile.asInstanceOf[js.Any], netlog = netlog.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], plr = plr.asInstanceOf[js.Any], pngss = pngss.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], runs = runs.asInstanceOf[js.Any], scripted = scripted.asInstanceOf[js.Any], standards = standards.asInstanceOf[js.Any], tcpdump = tcpdump.asInstanceOf[js.Any], timeline = timeline.asInstanceOf[js.Any], trace = trace.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], web10 = web10.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestInfo]
   }

@@ -15,7 +15,7 @@ trait NightwatchTypedCallbackResult[T] extends NightwatchCallbackResult[T] {
 object NightwatchTypedCallbackResult {
   @scala.inline
   def apply[T](state: Error | String, status: `0`, value: T): NightwatchTypedCallbackResult[T] = {
-    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], status = status, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NightwatchTypedCallbackResult[T]]
   }

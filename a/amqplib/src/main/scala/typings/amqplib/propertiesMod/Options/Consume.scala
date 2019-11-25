@@ -24,11 +24,11 @@ object Consume {
     priority: Int | Double = null
   ): Consume = {
     val __obj = js.Dynamic.literal()
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
-    if (consumerTag != null) __obj.updateDynamic("consumerTag")(consumerTag)
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
-    if (!js.isUndefined(noAck)) __obj.updateDynamic("noAck")(noAck)
-    if (!js.isUndefined(noLocal)) __obj.updateDynamic("noLocal")(noLocal)
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
+    if (consumerTag != null) __obj.updateDynamic("consumerTag")(consumerTag.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
+    if (!js.isUndefined(noAck)) __obj.updateDynamic("noAck")(noAck.asInstanceOf[js.Any])
+    if (!js.isUndefined(noLocal)) __obj.updateDynamic("noLocal")(noLocal.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[Consume]
   }

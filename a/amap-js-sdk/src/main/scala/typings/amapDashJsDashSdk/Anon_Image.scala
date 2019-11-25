@@ -17,10 +17,10 @@ object Anon_Image {
   @scala.inline
   def apply(image: String = null, imageOffset: Pixel = null, imageSize: Size = null, size: Size = null): Anon_Image = {
     val __obj = js.Dynamic.literal()
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (imageOffset != null) __obj.updateDynamic("imageOffset")(imageOffset)
-    if (imageSize != null) __obj.updateDynamic("imageSize")(imageSize)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (imageOffset != null) __obj.updateDynamic("imageOffset")(imageOffset.asInstanceOf[js.Any])
+    if (imageSize != null) __obj.updateDynamic("imageSize")(imageSize.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Image]
   }
 }

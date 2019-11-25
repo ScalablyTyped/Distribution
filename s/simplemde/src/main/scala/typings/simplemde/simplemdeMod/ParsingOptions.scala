@@ -18,9 +18,9 @@ object ParsingOptions {
     underscoresBreakWords: js.UndefOr[Boolean] = js.undefined
   ): ParsingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowAtxHeaderWithoutSpace)) __obj.updateDynamic("allowAtxHeaderWithoutSpace")(allowAtxHeaderWithoutSpace)
-    if (!js.isUndefined(strikethrough)) __obj.updateDynamic("strikethrough")(strikethrough)
-    if (!js.isUndefined(underscoresBreakWords)) __obj.updateDynamic("underscoresBreakWords")(underscoresBreakWords)
+    if (!js.isUndefined(allowAtxHeaderWithoutSpace)) __obj.updateDynamic("allowAtxHeaderWithoutSpace")(allowAtxHeaderWithoutSpace.asInstanceOf[js.Any])
+    if (!js.isUndefined(strikethrough)) __obj.updateDynamic("strikethrough")(strikethrough.asInstanceOf[js.Any])
+    if (!js.isUndefined(underscoresBreakWords)) __obj.updateDynamic("underscoresBreakWords")(underscoresBreakWords.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsingOptions]
   }
 }

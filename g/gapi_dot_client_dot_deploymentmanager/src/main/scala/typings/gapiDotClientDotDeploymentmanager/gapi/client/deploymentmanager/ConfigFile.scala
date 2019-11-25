@@ -13,7 +13,7 @@ object ConfigFile {
   @scala.inline
   def apply(content: String = null): ConfigFile = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigFile]
   }
 }

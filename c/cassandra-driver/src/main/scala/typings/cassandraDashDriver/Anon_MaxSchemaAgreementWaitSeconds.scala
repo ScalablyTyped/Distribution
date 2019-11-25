@@ -22,7 +22,7 @@ object Anon_MaxSchemaAgreementWaitSeconds {
     val __obj = js.Dynamic.literal()
     if (maxSchemaAgreementWaitSeconds != null) __obj.updateDynamic("maxSchemaAgreementWaitSeconds")(maxSchemaAgreementWaitSeconds.asInstanceOf[js.Any])
     if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(noCompact)) __obj.updateDynamic("noCompact")(noCompact)
+    if (!js.isUndefined(noCompact)) __obj.updateDynamic("noCompact")(noCompact.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MaxSchemaAgreementWaitSeconds]
   }

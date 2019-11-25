@@ -30,8 +30,8 @@ object Anon_Callback {
     read: js.ThisFunction1[/* this */ _Readable, /* size */ Double, Unit] = null
   ): Anon_Callback = {
     val __obj = js.Dynamic.literal()
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (read != null) __obj.updateDynamic("read")(read)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
+    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Callback]
   }
 }

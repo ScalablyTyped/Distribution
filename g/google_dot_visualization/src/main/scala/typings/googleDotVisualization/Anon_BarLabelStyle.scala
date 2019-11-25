@@ -25,12 +25,12 @@ object Anon_BarLabelStyle {
     singleColor: String = null
   ): Anon_BarLabelStyle = {
     val __obj = js.Dynamic.literal()
-    if (barLabelStyle != null) __obj.updateDynamic("barLabelStyle")(barLabelStyle)
-    if (!js.isUndefined(colorByRowLabel)) __obj.updateDynamic("colorByRowLabel")(colorByRowLabel)
-    if (!js.isUndefined(groupByRowLabel)) __obj.updateDynamic("groupByRowLabel")(groupByRowLabel)
-    if (rowLabelStyle != null) __obj.updateDynamic("rowLabelStyle")(rowLabelStyle)
-    if (!js.isUndefined(showRowLabels)) __obj.updateDynamic("showRowLabels")(showRowLabels)
-    if (singleColor != null) __obj.updateDynamic("singleColor")(singleColor)
+    if (barLabelStyle != null) __obj.updateDynamic("barLabelStyle")(barLabelStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorByRowLabel)) __obj.updateDynamic("colorByRowLabel")(colorByRowLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupByRowLabel)) __obj.updateDynamic("groupByRowLabel")(groupByRowLabel.asInstanceOf[js.Any])
+    if (rowLabelStyle != null) __obj.updateDynamic("rowLabelStyle")(rowLabelStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRowLabels)) __obj.updateDynamic("showRowLabels")(showRowLabels.asInstanceOf[js.Any])
+    if (singleColor != null) __obj.updateDynamic("singleColor")(singleColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BarLabelStyle]
   }
 }

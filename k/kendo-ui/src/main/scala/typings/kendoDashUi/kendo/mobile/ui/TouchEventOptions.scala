@@ -15,9 +15,9 @@ object TouchEventOptions {
   @scala.inline
   def apply(target: JQuery = null, x: TouchAxis = null, y: TouchAxis = null): TouchEventOptions = {
     val __obj = js.Dynamic.literal()
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (x != null) __obj.updateDynamic("x")(x)
-    if (y != null) __obj.updateDynamic("y")(y)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchEventOptions]
   }
 }

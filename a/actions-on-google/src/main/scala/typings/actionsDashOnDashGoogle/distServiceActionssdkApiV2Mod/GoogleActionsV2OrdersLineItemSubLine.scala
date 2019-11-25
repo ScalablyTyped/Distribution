@@ -19,8 +19,8 @@ object GoogleActionsV2OrdersLineItemSubLine {
   @scala.inline
   def apply(lineItem: GoogleActionsV2OrdersLineItem = null, note: String = null): GoogleActionsV2OrdersLineItemSubLine = {
     val __obj = js.Dynamic.literal()
-    if (lineItem != null) __obj.updateDynamic("lineItem")(lineItem)
-    if (note != null) __obj.updateDynamic("note")(note)
+    if (lineItem != null) __obj.updateDynamic("lineItem")(lineItem.asInstanceOf[js.Any])
+    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersLineItemSubLine]
   }
 }

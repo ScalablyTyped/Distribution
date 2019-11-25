@@ -55,13 +55,13 @@ object Anon_Apppackagename {
     width: Int | Double = null
   ): Anon_Apppackagename = {
     val __obj = js.Dynamic.literal()
-    if (app_package_name != null) __obj.updateDynamic("app_package_name")(app_package_name)
+    if (app_package_name != null) __obj.updateDynamic("app_package_name")(app_package_name.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(longtitle)) __obj.updateDynamic("longtitle")(longtitle)
+    if (!js.isUndefined(longtitle)) __obj.updateDynamic("longtitle")(longtitle.asInstanceOf[js.Any])
     if (onfailure != null) __obj.updateDynamic("onfailure")(js.Any.fromFunction1(onfailure))
     if (onsuccess != null) __obj.updateDynamic("onsuccess")(js.Any.fromFunction1(onsuccess))
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Apppackagename]
   }

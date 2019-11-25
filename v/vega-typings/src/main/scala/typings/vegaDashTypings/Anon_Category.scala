@@ -31,7 +31,7 @@ object Anon_Category {
     if (heatmap != null) __obj.updateDynamic("heatmap")(heatmap.asInstanceOf[js.Any])
     if (ordinal != null) __obj.updateDynamic("ordinal")(ordinal.asInstanceOf[js.Any])
     if (ramp != null) __obj.updateDynamic("ramp")(ramp.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Category]
   }
 }

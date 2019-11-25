@@ -36,18 +36,18 @@ object Anon_Amount {
     shippingAddressOverride: PayPalShippingAddress = null,
     useraction: String = null
   ): Anon_Amount = {
-    val __obj = js.Dynamic.literal(flow = flow)
+    val __obj = js.Dynamic.literal(flow = flow.asInstanceOf[js.Any])
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (billingAgreementDescription != null) __obj.updateDynamic("billingAgreementDescription")(billingAgreementDescription)
-    if (currency != null) __obj.updateDynamic("currency")(currency)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (!js.isUndefined(enableShippingAddress)) __obj.updateDynamic("enableShippingAddress")(enableShippingAddress)
-    if (intent != null) __obj.updateDynamic("intent")(intent)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (!js.isUndefined(offerCredit)) __obj.updateDynamic("offerCredit")(offerCredit)
-    if (!js.isUndefined(shippingAddressEditable)) __obj.updateDynamic("shippingAddressEditable")(shippingAddressEditable)
-    if (shippingAddressOverride != null) __obj.updateDynamic("shippingAddressOverride")(shippingAddressOverride)
-    if (useraction != null) __obj.updateDynamic("useraction")(useraction)
+    if (billingAgreementDescription != null) __obj.updateDynamic("billingAgreementDescription")(billingAgreementDescription.asInstanceOf[js.Any])
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableShippingAddress)) __obj.updateDynamic("enableShippingAddress")(enableShippingAddress.asInstanceOf[js.Any])
+    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (!js.isUndefined(offerCredit)) __obj.updateDynamic("offerCredit")(offerCredit.asInstanceOf[js.Any])
+    if (!js.isUndefined(shippingAddressEditable)) __obj.updateDynamic("shippingAddressEditable")(shippingAddressEditable.asInstanceOf[js.Any])
+    if (shippingAddressOverride != null) __obj.updateDynamic("shippingAddressOverride")(shippingAddressOverride.asInstanceOf[js.Any])
+    if (useraction != null) __obj.updateDynamic("useraction")(useraction.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Amount]
   }
 }

@@ -21,7 +21,7 @@ object Anon_ColorFontSizeFontWeightTextAlignTransform {
     textAlign: String,
     transform: js.Array[Anon_Rotate]
   ): Anon_ColorFontSizeFontWeightTextAlignTransform = {
-    val __obj = js.Dynamic.literal(color = color, fontSize = fontSize, fontWeight = fontWeight, textAlign = textAlign, transform = transform)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], textAlign = textAlign.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColorFontSizeFontWeightTextAlignTransform]
   }

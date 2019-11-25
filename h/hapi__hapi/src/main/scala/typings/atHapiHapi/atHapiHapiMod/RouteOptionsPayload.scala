@@ -123,16 +123,16 @@ object RouteOptionsPayload {
   ): RouteOptionsPayload = {
     val __obj = js.Dynamic.literal()
     if (allow != null) __obj.updateDynamic("allow")(allow.asInstanceOf[js.Any])
-    if (compression != null) __obj.updateDynamic("compression")(compression)
-    if (defaultContentType != null) __obj.updateDynamic("defaultContentType")(defaultContentType)
+    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
+    if (defaultContentType != null) __obj.updateDynamic("defaultContentType")(defaultContentType.asInstanceOf[js.Any])
     if (failAction != null) __obj.updateDynamic("failAction")(failAction.asInstanceOf[js.Any])
     if (maxBytes != null) __obj.updateDynamic("maxBytes")(maxBytes.asInstanceOf[js.Any])
     if (multipart != null) __obj.updateDynamic("multipart")(multipart.asInstanceOf[js.Any])
-    if (output != null) __obj.updateDynamic("output")(output)
-    if (`override` != null) __obj.updateDynamic("override")(`override`)
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
+    if (`override` != null) __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
     if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (uploads != null) __obj.updateDynamic("uploads")(uploads)
+    if (uploads != null) __obj.updateDynamic("uploads")(uploads.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteOptionsPayload]
   }
 }

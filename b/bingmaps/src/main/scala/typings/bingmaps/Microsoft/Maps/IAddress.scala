@@ -41,7 +41,7 @@ object IAddress {
     locality: String,
     postalCode: String
   ): IAddress = {
-    val __obj = js.Dynamic.literal(addressLine = addressLine, adminDistrict = adminDistrict, countryRegion = countryRegion, countryRegionISO2 = countryRegionISO2, district = district, formattedAddress = formattedAddress, locality = locality, postalCode = postalCode)
+    val __obj = js.Dynamic.literal(addressLine = addressLine.asInstanceOf[js.Any], adminDistrict = adminDistrict.asInstanceOf[js.Any], countryRegion = countryRegion.asInstanceOf[js.Any], countryRegionISO2 = countryRegionISO2.asInstanceOf[js.Any], district = district.asInstanceOf[js.Any], formattedAddress = formattedAddress.asInstanceOf[js.Any], locality = locality.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IAddress]
   }

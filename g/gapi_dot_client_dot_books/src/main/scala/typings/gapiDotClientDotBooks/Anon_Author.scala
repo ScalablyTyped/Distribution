@@ -24,12 +24,12 @@ object Anon_Author {
     volumeId: String = null
   ): Anon_Author = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (canonicalVolumeLink != null) __obj.updateDynamic("canonicalVolumeLink")(canonicalVolumeLink)
-    if (coverUrl != null) __obj.updateDynamic("coverUrl")(coverUrl)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId)
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (canonicalVolumeLink != null) __obj.updateDynamic("canonicalVolumeLink")(canonicalVolumeLink.asInstanceOf[js.Any])
+    if (coverUrl != null) __obj.updateDynamic("coverUrl")(coverUrl.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Author]
   }
 }

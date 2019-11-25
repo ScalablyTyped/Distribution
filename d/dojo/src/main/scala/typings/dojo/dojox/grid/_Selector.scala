@@ -1,9 +1,6 @@
 package typings.dojo.dojox.grid
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dojoStrings.inputType
 import typings.dojo.dojoStrings.noscroll
 import typings.dojo.dojoStrings.padBorderWidth
@@ -68,12 +65,44 @@ class _Selector () extends _View {
   @JSName("set")
   def set_selectionMode(property: selectionMode, value: String): Unit = js.native
   @JSName("watch")
-  def watch_inputType(property: inputType, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_inputType(
+    property: inputType,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_noscroll(property: noscroll, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_noscroll(
+    property: noscroll,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_padBorderWidth(property: padBorderWidth, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_padBorderWidth(
+    property: padBorderWidth,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_selectionMode(property: selectionMode, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_selectionMode(
+    property: selectionMode,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

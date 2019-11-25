@@ -71,16 +71,16 @@ object ResourceOptions {
     version: String = null
   ): ResourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
-    if (customTimeouts != null) __obj.updateDynamic("customTimeouts")(customTimeouts)
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
+    if (customTimeouts != null) __obj.updateDynamic("customTimeouts")(customTimeouts.asInstanceOf[js.Any])
     if (dependsOn != null) __obj.updateDynamic("dependsOn")(dependsOn.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (ignoreChanges != null) __obj.updateDynamic("ignoreChanges")(ignoreChanges)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (!js.isUndefined(protect)) __obj.updateDynamic("protect")(protect)
-    if (provider != null) __obj.updateDynamic("provider")(provider)
-    if (transformations != null) __obj.updateDynamic("transformations")(transformations)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (ignoreChanges != null) __obj.updateDynamic("ignoreChanges")(ignoreChanges.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(protect)) __obj.updateDynamic("protect")(protect.asInstanceOf[js.Any])
+    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
+    if (transformations != null) __obj.updateDynamic("transformations")(transformations.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceOptions]
   }
 }

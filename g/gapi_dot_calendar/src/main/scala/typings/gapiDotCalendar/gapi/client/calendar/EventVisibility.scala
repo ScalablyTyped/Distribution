@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait EventVisibility extends js.Object
 
+object EventVisibility {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def confidential: typings.gapiDotCalendar.gapiDotCalendarStrings.confidential = this.cast("confidential")
+  @scala.inline
+  def default: typings.gapiDotCalendar.gapiDotCalendarStrings.default = this.cast("default")
+  @scala.inline
+  def `private`: typings.gapiDotCalendar.gapiDotCalendarStrings.`private` = this.cast("private")
+  @scala.inline
+  def public: typings.gapiDotCalendar.gapiDotCalendarStrings.public = this.cast("public")
+}
+

@@ -38,7 +38,6 @@ object ICheckItem {
   @scala.inline
   def apply(
     IItem: IItem = null,
-    afterRender: () => Unit = null,
     checkChangeDisabled: js.UndefOr[Boolean] = js.undefined,
     checkHandler: js.Any = null,
     checked: js.UndefOr[Boolean] = js.undefined,
@@ -47,32 +46,23 @@ object ICheckItem {
     enableCheckChange: () => Unit = null,
     group: java.lang.String = null,
     groupCls: java.lang.String = null,
-    hideOnClick: js.UndefOr[Boolean] = js.undefined,
-    initComponent: () => Unit = null,
-    onDestroy: () => Unit = null,
-    renderTpl: js.Any = null,
     scope: js.Any = null,
     setChecked: (/* checked */ js.UndefOr[Boolean], /* suppressEvents */ js.UndefOr[Boolean]) => Unit = null,
     uncheckedCls: java.lang.String = null
   ): ICheckItem = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IItem)
-    if (afterRender != null) __obj.updateDynamic("afterRender")(js.Any.fromFunction0(afterRender))
-    if (!js.isUndefined(checkChangeDisabled)) __obj.updateDynamic("checkChangeDisabled")(checkChangeDisabled)
-    if (checkHandler != null) __obj.updateDynamic("checkHandler")(checkHandler)
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (checkedCls != null) __obj.updateDynamic("checkedCls")(checkedCls)
+    if (IItem != null) js.Dynamic.global.Object.assign(__obj, IItem)
+    if (!js.isUndefined(checkChangeDisabled)) __obj.updateDynamic("checkChangeDisabled")(checkChangeDisabled.asInstanceOf[js.Any])
+    if (checkHandler != null) __obj.updateDynamic("checkHandler")(checkHandler.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (checkedCls != null) __obj.updateDynamic("checkedCls")(checkedCls.asInstanceOf[js.Any])
     if (disableCheckChange != null) __obj.updateDynamic("disableCheckChange")(js.Any.fromFunction0(disableCheckChange))
     if (enableCheckChange != null) __obj.updateDynamic("enableCheckChange")(js.Any.fromFunction0(enableCheckChange))
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (groupCls != null) __obj.updateDynamic("groupCls")(groupCls)
-    if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick)
-    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
-    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (groupCls != null) __obj.updateDynamic("groupCls")(groupCls.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (setChecked != null) __obj.updateDynamic("setChecked")(js.Any.fromFunction2(setChecked))
-    if (uncheckedCls != null) __obj.updateDynamic("uncheckedCls")(uncheckedCls)
+    if (uncheckedCls != null) __obj.updateDynamic("uncheckedCls")(uncheckedCls.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICheckItem]
   }
 }

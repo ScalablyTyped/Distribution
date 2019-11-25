@@ -43,7 +43,7 @@ object RuleContext {
     report: ReportDescriptor => Unit,
     settings: StringDictionary[js.Any]
   ): RuleContext = {
-    val __obj = js.Dynamic.literal(getAncestors = js.Any.fromFunction0(getAncestors), getDeclaredVariables = js.Any.fromFunction1(getDeclaredVariables), getFilename = js.Any.fromFunction0(getFilename), getScope = js.Any.fromFunction0(getScope), getSourceCode = js.Any.fromFunction0(getSourceCode), id = id, markVariableAsUsed = js.Any.fromFunction1(markVariableAsUsed), options = options, parserOptions = parserOptions, parserPath = parserPath, parserServices = parserServices, report = js.Any.fromFunction1(report), settings = settings)
+    val __obj = js.Dynamic.literal(getAncestors = js.Any.fromFunction0(getAncestors), getDeclaredVariables = js.Any.fromFunction1(getDeclaredVariables), getFilename = js.Any.fromFunction0(getFilename), getScope = js.Any.fromFunction0(getScope), getSourceCode = js.Any.fromFunction0(getSourceCode), id = id.asInstanceOf[js.Any], markVariableAsUsed = js.Any.fromFunction1(markVariableAsUsed), options = options.asInstanceOf[js.Any], parserOptions = parserOptions.asInstanceOf[js.Any], parserPath = parserPath.asInstanceOf[js.Any], parserServices = parserServices.asInstanceOf[js.Any], report = js.Any.fromFunction1(report), settings = settings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RuleContext]
   }

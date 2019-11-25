@@ -25,10 +25,10 @@ object Credentials {
     realm: String = null,
     serviceName: String = null
   ): Credentials = {
-    val __obj = js.Dynamic.literal(host = host, password = password, serviceType = serviceType, username = username)
-    if (authzid != null) __obj.updateDynamic("authzid")(authzid)
-    if (realm != null) __obj.updateDynamic("realm")(realm)
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], serviceType = serviceType.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    if (authzid != null) __obj.updateDynamic("authzid")(authzid.asInstanceOf[js.Any])
+    if (realm != null) __obj.updateDynamic("realm")(realm.asInstanceOf[js.Any])
+    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credentials]
   }
 }

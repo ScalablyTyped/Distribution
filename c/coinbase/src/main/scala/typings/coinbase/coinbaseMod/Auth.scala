@@ -19,8 +19,8 @@ trait Auth extends js.Object {
 object Auth {
   @scala.inline
   def apply(method: String, scopes: js.Array[String], oauth_meta: js.Any = null): Auth = {
-    val __obj = js.Dynamic.literal(method = method, scopes = scopes)
-    if (oauth_meta != null) __obj.updateDynamic("oauth_meta")(oauth_meta)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any])
+    if (oauth_meta != null) __obj.updateDynamic("oauth_meta")(oauth_meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth]
   }
 }

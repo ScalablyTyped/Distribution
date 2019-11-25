@@ -19,7 +19,7 @@ trait Anon_FindNegativeTabindex extends js.Object {
 object Anon_FindNegativeTabindex {
   @scala.inline
   def apply(findNegativeTabindex: Boolean, findPositiveTabindex: `true`): Anon_FindNegativeTabindex = {
-    val __obj = js.Dynamic.literal(findNegativeTabindex = findNegativeTabindex, findPositiveTabindex = findPositiveTabindex)
+    val __obj = js.Dynamic.literal(findNegativeTabindex = findNegativeTabindex.asInstanceOf[js.Any], findPositiveTabindex = findPositiveTabindex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FindNegativeTabindex]
   }

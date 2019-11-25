@@ -29,11 +29,11 @@ object ChooseMultipleFilesEntryOptions {
     acceptsAllTypes: js.UndefOr[Boolean] = js.undefined,
     suggestedName: String = null
   ): ChooseMultipleFilesEntryOptions = {
-    val __obj = js.Dynamic.literal(acceptsMultiple = acceptsMultiple)
+    val __obj = js.Dynamic.literal(acceptsMultiple = acceptsMultiple.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (accepts != null) __obj.updateDynamic("accepts")(accepts)
-    if (!js.isUndefined(acceptsAllTypes)) __obj.updateDynamic("acceptsAllTypes")(acceptsAllTypes)
-    if (suggestedName != null) __obj.updateDynamic("suggestedName")(suggestedName)
+    if (accepts != null) __obj.updateDynamic("accepts")(accepts.asInstanceOf[js.Any])
+    if (!js.isUndefined(acceptsAllTypes)) __obj.updateDynamic("acceptsAllTypes")(acceptsAllTypes.asInstanceOf[js.Any])
+    if (suggestedName != null) __obj.updateDynamic("suggestedName")(suggestedName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooseMultipleFilesEntryOptions]
   }
 }

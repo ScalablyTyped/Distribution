@@ -11,7 +11,7 @@ trait RolePage extends Page {
 object RolePage {
   @scala.inline
   def apply(length: Double, limit: Double, roles: js.Array[Role], start: Double, total: Double): RolePage = {
-    val __obj = js.Dynamic.literal(length = length, limit = limit, roles = roles, start = start, total = total)
+    val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], roles = roles.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RolePage]
   }

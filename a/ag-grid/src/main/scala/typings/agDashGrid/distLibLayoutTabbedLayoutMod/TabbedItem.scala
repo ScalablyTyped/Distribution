@@ -22,8 +22,8 @@ object TabbedItem {
     title: Element,
     afterAttachedCallback: js.Function = null
   ): TabbedItem = {
-    val __obj = js.Dynamic.literal(bodyPromise = bodyPromise, name = name, title = title)
-    if (afterAttachedCallback != null) __obj.updateDynamic("afterAttachedCallback")(afterAttachedCallback)
+    val __obj = js.Dynamic.literal(bodyPromise = bodyPromise.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (afterAttachedCallback != null) __obj.updateDynamic("afterAttachedCallback")(afterAttachedCallback.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabbedItem]
   }
 }

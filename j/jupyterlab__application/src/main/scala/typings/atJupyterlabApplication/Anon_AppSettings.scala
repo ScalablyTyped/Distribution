@@ -27,7 +27,7 @@ object Anon_AppSettings {
     userSettings: String,
     workspaces: String
   ): Anon_AppSettings = {
-    val __obj = js.Dynamic.literal(appSettings = appSettings, schemas = schemas, serverRoot = serverRoot, static = static, templates = templates, themes = themes, userSettings = userSettings, workspaces = workspaces)
+    val __obj = js.Dynamic.literal(appSettings = appSettings.asInstanceOf[js.Any], schemas = schemas.asInstanceOf[js.Any], serverRoot = serverRoot.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], templates = templates.asInstanceOf[js.Any], themes = themes.asInstanceOf[js.Any], userSettings = userSettings.asInstanceOf[js.Any], workspaces = workspaces.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AppSettings]
   }

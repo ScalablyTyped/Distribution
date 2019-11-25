@@ -19,9 +19,9 @@ object PaymentData {
     email: String = null,
     shippingAddress: Address = null
   ): PaymentData = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion, apiVersionMinor = apiVersionMinor, paymentMethodData = paymentMethodData)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (shippingAddress != null) __obj.updateDynamic("shippingAddress")(shippingAddress)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], apiVersionMinor = apiVersionMinor.asInstanceOf[js.Any], paymentMethodData = paymentMethodData.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (shippingAddress != null) __obj.updateDynamic("shippingAddress")(shippingAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentData]
   }
 }

@@ -20,9 +20,9 @@ object Anon_FoursquareId {
     replyToMessage: Int | Double = null
   ): Anon_FoursquareId = {
     val __obj = js.Dynamic.literal()
-    if (foursquareId != null) __obj.updateDynamic("foursquareId")(foursquareId)
-    if (!js.isUndefined(notification)) __obj.updateDynamic("notification")(notification)
-    if (replyMarkup != null) __obj.updateDynamic("replyMarkup")(replyMarkup)
+    if (foursquareId != null) __obj.updateDynamic("foursquareId")(foursquareId.asInstanceOf[js.Any])
+    if (!js.isUndefined(notification)) __obj.updateDynamic("notification")(notification.asInstanceOf[js.Any])
+    if (replyMarkup != null) __obj.updateDynamic("replyMarkup")(replyMarkup.asInstanceOf[js.Any])
     if (replyToMessage != null) __obj.updateDynamic("replyToMessage")(replyToMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FoursquareId]
   }

@@ -22,15 +22,15 @@ object DataSourceSchemaWithTimezone {
     `type`: String = null
   ): DataSourceSchemaWithTimezone = {
     val __obj = js.Dynamic.literal()
-    if (aggregates != null) __obj.updateDynamic("aggregates")(aggregates)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (groups != null) __obj.updateDynamic("groups")(groups)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (parse != null) __obj.updateDynamic("parse")(parse)
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
-    if (total != null) __obj.updateDynamic("total")(total)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (aggregates != null) __obj.updateDynamic("aggregates")(aggregates.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
+    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceSchemaWithTimezone]
   }
 }

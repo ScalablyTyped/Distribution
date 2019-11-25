@@ -24,8 +24,8 @@ object Anon_Cookie {
   ): Anon_Cookie = {
     val __obj = js.Dynamic.literal()
     if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
-    if (ignoreMethods != null) __obj.updateDynamic("ignoreMethods")(ignoreMethods)
-    if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey)
+    if (ignoreMethods != null) __obj.updateDynamic("ignoreMethods")(ignoreMethods.asInstanceOf[js.Any])
+    if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(js.Any.fromFunction1(value))
     __obj.asInstanceOf[Anon_Cookie]
   }

@@ -42,8 +42,8 @@ object OptionsCustomTransitionAnimation {
     springVelocity: Int | Double = null,
     startDelay: Int | Double = null
   ): OptionsCustomTransitionAnimation = {
-    val __obj = js.Dynamic.literal(fromId = fromId, toId = toId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(fromId = fromId.asInstanceOf[js.Any], toId = toId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (springVelocity != null) __obj.updateDynamic("springVelocity")(springVelocity.asInstanceOf[js.Any])
     if (startDelay != null) __obj.updateDynamic("startDelay")(startDelay.asInstanceOf[js.Any])

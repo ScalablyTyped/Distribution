@@ -29,14 +29,14 @@ object PartialClassNameMapTooltipClassKey {
     touch: String = null
   ): PartialClassNameMapTooltipClassKey = {
     val __obj = js.Dynamic.literal()
-    if (popper != null) __obj.updateDynamic("popper")(popper)
-    if (popperInteractive != null) __obj.updateDynamic("popperInteractive")(popperInteractive)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
-    if (tooltipPlacementBottom != null) __obj.updateDynamic("tooltipPlacementBottom")(tooltipPlacementBottom)
-    if (tooltipPlacementLeft != null) __obj.updateDynamic("tooltipPlacementLeft")(tooltipPlacementLeft)
-    if (tooltipPlacementRight != null) __obj.updateDynamic("tooltipPlacementRight")(tooltipPlacementRight)
-    if (tooltipPlacementTop != null) __obj.updateDynamic("tooltipPlacementTop")(tooltipPlacementTop)
-    if (touch != null) __obj.updateDynamic("touch")(touch)
+    if (popper != null) __obj.updateDynamic("popper")(popper.asInstanceOf[js.Any])
+    if (popperInteractive != null) __obj.updateDynamic("popperInteractive")(popperInteractive.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (tooltipPlacementBottom != null) __obj.updateDynamic("tooltipPlacementBottom")(tooltipPlacementBottom.asInstanceOf[js.Any])
+    if (tooltipPlacementLeft != null) __obj.updateDynamic("tooltipPlacementLeft")(tooltipPlacementLeft.asInstanceOf[js.Any])
+    if (tooltipPlacementRight != null) __obj.updateDynamic("tooltipPlacementRight")(tooltipPlacementRight.asInstanceOf[js.Any])
+    if (tooltipPlacementTop != null) __obj.updateDynamic("tooltipPlacementTop")(tooltipPlacementTop.asInstanceOf[js.Any])
+    if (touch != null) __obj.updateDynamic("touch")(touch.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapTooltipClassKey]
   }
 }

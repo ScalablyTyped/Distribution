@@ -16,8 +16,8 @@ object Anon_Locale {
   @scala.inline
   def apply(locale: String = null, ruleResults: Record[String, Anon_Groups] = null): Anon_Locale = {
     val __obj = js.Dynamic.literal()
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (ruleResults != null) __obj.updateDynamic("ruleResults")(ruleResults)
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (ruleResults != null) __obj.updateDynamic("ruleResults")(ruleResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Locale]
   }
 }

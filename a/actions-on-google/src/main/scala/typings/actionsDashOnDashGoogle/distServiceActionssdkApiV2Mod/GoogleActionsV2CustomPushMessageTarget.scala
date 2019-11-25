@@ -35,10 +35,10 @@ object GoogleActionsV2CustomPushMessageTarget {
     userId: String = null
   ): GoogleActionsV2CustomPushMessageTarget = {
     val __obj = js.Dynamic.literal()
-    if (argument != null) __obj.updateDynamic("argument")(argument)
-    if (intent != null) __obj.updateDynamic("intent")(intent)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
+    if (argument != null) __obj.updateDynamic("argument")(argument.asInstanceOf[js.Any])
+    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2CustomPushMessageTarget]
   }
 }

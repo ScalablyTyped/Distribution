@@ -14,7 +14,7 @@ object Anon_FamilySizeWeight {
   @scala.inline
   def apply(family: String = null, size: Int | Double = null, weight: Int | Double = null): Anon_FamilySizeWeight = {
     val __obj = js.Dynamic.literal()
-    if (family != null) __obj.updateDynamic("family")(family)
+    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FamilySizeWeight]

@@ -16,8 +16,8 @@ object Anon_Name {
   @scala.inline
   def apply(name: String = null, passProps: js.Object = null): Anon_Name = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (passProps != null) __obj.updateDynamic("passProps")(passProps)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (passProps != null) __obj.updateDynamic("passProps")(passProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Name]
   }
 }

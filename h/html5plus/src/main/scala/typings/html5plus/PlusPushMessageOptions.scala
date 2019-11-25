@@ -81,13 +81,13 @@ object PlusPushMessageOptions {
     when: Date = null
   ): PlusPushMessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (appid != null) __obj.updateDynamic("appid")(appid)
-    if (!js.isUndefined(cover)) __obj.updateDynamic("cover")(cover)
+    if (appid != null) __obj.updateDynamic("appid")(appid.asInstanceOf[js.Any])
+    if (!js.isUndefined(cover)) __obj.updateDynamic("cover")(cover.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (when != null) __obj.updateDynamic("when")(when)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusPushMessageOptions]
   }
 }

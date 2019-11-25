@@ -58,7 +58,7 @@ trait CSIDriverSpec extends js.Object {
 object CSIDriverSpec {
   @scala.inline
   def apply(attachRequired: Boolean, podInfoOnMount: Boolean, volumeLifecycleModes: js.Array[String]): CSIDriverSpec = {
-    val __obj = js.Dynamic.literal(attachRequired = attachRequired, podInfoOnMount = podInfoOnMount, volumeLifecycleModes = volumeLifecycleModes)
+    val __obj = js.Dynamic.literal(attachRequired = attachRequired.asInstanceOf[js.Any], podInfoOnMount = podInfoOnMount.asInstanceOf[js.Any], volumeLifecycleModes = volumeLifecycleModes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CSIDriverSpec]
   }

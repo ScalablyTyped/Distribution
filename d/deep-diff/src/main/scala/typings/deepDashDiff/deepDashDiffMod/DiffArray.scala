@@ -15,8 +15,8 @@ trait DiffArray[LHS, RHS] extends Diff[LHS, RHS] {
 object DiffArray {
   @scala.inline
   def apply[LHS, RHS](index: Double, item: Diff[LHS, RHS], kind: A, path: js.Array[_] = null): DiffArray[LHS, RHS] = {
-    val __obj = js.Dynamic.literal(index = index, item = item, kind = kind)
-    if (path != null) __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiffArray[LHS, RHS]]
   }
 }

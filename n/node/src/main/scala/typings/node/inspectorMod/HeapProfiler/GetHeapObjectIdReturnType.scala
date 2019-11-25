@@ -14,7 +14,7 @@ trait GetHeapObjectIdReturnType extends js.Object {
 object GetHeapObjectIdReturnType {
   @scala.inline
   def apply(heapSnapshotObjectId: HeapSnapshotObjectId): GetHeapObjectIdReturnType = {
-    val __obj = js.Dynamic.literal(heapSnapshotObjectId = heapSnapshotObjectId)
+    val __obj = js.Dynamic.literal(heapSnapshotObjectId = heapSnapshotObjectId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetHeapObjectIdReturnType]
   }

@@ -16,7 +16,7 @@ object SslCertsInsertRequest {
   @scala.inline
   def apply(commonName: String = null): SslCertsInsertRequest = {
     val __obj = js.Dynamic.literal()
-    if (commonName != null) __obj.updateDynamic("commonName")(commonName)
+    if (commonName != null) __obj.updateDynamic("commonName")(commonName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SslCertsInsertRequest]
   }
 }

@@ -15,8 +15,8 @@ object Anon_Desired {
   @scala.inline
   def apply(desired: Capabilities = null, required: Capabilities = null): Anon_Desired = {
     val __obj = js.Dynamic.literal()
-    if (desired != null) __obj.updateDynamic("desired")(desired)
-    if (required != null) __obj.updateDynamic("required")(required)
+    if (desired != null) __obj.updateDynamic("desired")(desired.asInstanceOf[js.Any])
+    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Desired]
   }
 }

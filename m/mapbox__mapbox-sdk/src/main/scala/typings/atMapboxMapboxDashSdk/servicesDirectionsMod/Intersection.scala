@@ -54,8 +54,8 @@ object Intersection {
     in: Int | Double = null,
     out: Int | Double = null
   ): Intersection = {
-    val __obj = js.Dynamic.literal(bearings = bearings, entry = entry, lanes = lanes, location = location)
-    if (classes != null) __obj.updateDynamic("classes")(classes)
+    val __obj = js.Dynamic.literal(bearings = bearings.asInstanceOf[js.Any], entry = entry.asInstanceOf[js.Any], lanes = lanes.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (in != null) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
     if (out != null) __obj.updateDynamic("out")(out.asInstanceOf[js.Any])
     __obj.asInstanceOf[Intersection]

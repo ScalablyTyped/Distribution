@@ -21,8 +21,8 @@ trait DeleteRepositoryOutput extends OutputTypesUnion {
 object DeleteRepositoryOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, repositoryId: String = null): DeleteRepositoryOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (repositoryId != null) __obj.updateDynamic("repositoryId")(repositoryId)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (repositoryId != null) __obj.updateDynamic("repositoryId")(repositoryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRepositoryOutput]
   }
 }

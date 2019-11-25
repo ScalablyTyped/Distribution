@@ -27,7 +27,7 @@ object AccessMapping {
     serviceOwner: String,
     virtualDirectory: String
   ): AccessMapping = {
-    val __obj = js.Dynamic.literal(accessPoint = accessPoint, displayName = displayName, moniker = moniker, serviceOwner = serviceOwner, virtualDirectory = virtualDirectory)
+    val __obj = js.Dynamic.literal(accessPoint = accessPoint.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], moniker = moniker.asInstanceOf[js.Any], serviceOwner = serviceOwner.asInstanceOf[js.Any], virtualDirectory = virtualDirectory.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AccessMapping]
   }

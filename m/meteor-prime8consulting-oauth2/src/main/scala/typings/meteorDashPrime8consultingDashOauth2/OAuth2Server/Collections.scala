@@ -32,7 +32,7 @@ object Collections {
     client: Collection[Client],
     refreshToken: Collection[RefreshToken]
   ): Collections = {
-    val __obj = js.Dynamic.literal(accessToken = accessToken, authCode = authCode, client = client, refreshToken = refreshToken)
+    val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], authCode = authCode.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], refreshToken = refreshToken.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Collections]
   }

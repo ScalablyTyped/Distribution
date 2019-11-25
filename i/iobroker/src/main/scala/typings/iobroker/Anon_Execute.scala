@@ -13,7 +13,7 @@ trait Anon_Execute extends js.Object {
 object Anon_Execute {
   @scala.inline
   def apply(execute: Boolean, http: Boolean, sendto: Boolean): Anon_Execute = {
-    val __obj = js.Dynamic.literal(execute = execute, http = http, sendto = sendto)
+    val __obj = js.Dynamic.literal(execute = execute.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any], sendto = sendto.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Execute]
   }

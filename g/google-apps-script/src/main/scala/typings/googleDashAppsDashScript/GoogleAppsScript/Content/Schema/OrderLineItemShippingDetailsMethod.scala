@@ -20,9 +20,9 @@ object OrderLineItemShippingDetailsMethod {
     minDaysInTransit: Int | Double = null
   ): OrderLineItemShippingDetailsMethod = {
     val __obj = js.Dynamic.literal()
-    if (carrier != null) __obj.updateDynamic("carrier")(carrier)
+    if (carrier != null) __obj.updateDynamic("carrier")(carrier.asInstanceOf[js.Any])
     if (maxDaysInTransit != null) __obj.updateDynamic("maxDaysInTransit")(maxDaysInTransit.asInstanceOf[js.Any])
-    if (methodName != null) __obj.updateDynamic("methodName")(methodName)
+    if (methodName != null) __obj.updateDynamic("methodName")(methodName.asInstanceOf[js.Any])
     if (minDaysInTransit != null) __obj.updateDynamic("minDaysInTransit")(minDaysInTransit.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderLineItemShippingDetailsMethod]
   }

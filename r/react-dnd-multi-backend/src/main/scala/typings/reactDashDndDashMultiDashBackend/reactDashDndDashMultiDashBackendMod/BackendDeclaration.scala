@@ -37,9 +37,9 @@ object BackendDeclaration {
     transition: Transition = null
   ): BackendDeclaration = {
     val __obj = js.Dynamic.literal(backend = js.Any.fromFunction3(backend))
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview)
-    if (transition != null) __obj.updateDynamic("transition")(transition)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
+    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackendDeclaration]
   }
 }

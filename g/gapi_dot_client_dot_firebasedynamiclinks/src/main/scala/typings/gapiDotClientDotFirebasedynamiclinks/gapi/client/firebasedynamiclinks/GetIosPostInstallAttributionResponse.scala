@@ -88,19 +88,19 @@ object GetIosPostInstallAttributionResponse {
     utmSource: String = null
   ): GetIosPostInstallAttributionResponse = {
     val __obj = js.Dynamic.literal()
-    if (appMinimumVersion != null) __obj.updateDynamic("appMinimumVersion")(appMinimumVersion)
-    if (attributionConfidence != null) __obj.updateDynamic("attributionConfidence")(attributionConfidence)
-    if (deepLink != null) __obj.updateDynamic("deepLink")(deepLink)
-    if (externalBrowserDestinationLink != null) __obj.updateDynamic("externalBrowserDestinationLink")(externalBrowserDestinationLink)
-    if (fallbackLink != null) __obj.updateDynamic("fallbackLink")(fallbackLink)
-    if (invitationId != null) __obj.updateDynamic("invitationId")(invitationId)
-    if (!js.isUndefined(isStrongMatchExecutable)) __obj.updateDynamic("isStrongMatchExecutable")(isStrongMatchExecutable)
-    if (matchMessage != null) __obj.updateDynamic("matchMessage")(matchMessage)
-    if (requestedLink != null) __obj.updateDynamic("requestedLink")(requestedLink)
-    if (resolvedLink != null) __obj.updateDynamic("resolvedLink")(resolvedLink)
-    if (utmCampaign != null) __obj.updateDynamic("utmCampaign")(utmCampaign)
-    if (utmMedium != null) __obj.updateDynamic("utmMedium")(utmMedium)
-    if (utmSource != null) __obj.updateDynamic("utmSource")(utmSource)
+    if (appMinimumVersion != null) __obj.updateDynamic("appMinimumVersion")(appMinimumVersion.asInstanceOf[js.Any])
+    if (attributionConfidence != null) __obj.updateDynamic("attributionConfidence")(attributionConfidence.asInstanceOf[js.Any])
+    if (deepLink != null) __obj.updateDynamic("deepLink")(deepLink.asInstanceOf[js.Any])
+    if (externalBrowserDestinationLink != null) __obj.updateDynamic("externalBrowserDestinationLink")(externalBrowserDestinationLink.asInstanceOf[js.Any])
+    if (fallbackLink != null) __obj.updateDynamic("fallbackLink")(fallbackLink.asInstanceOf[js.Any])
+    if (invitationId != null) __obj.updateDynamic("invitationId")(invitationId.asInstanceOf[js.Any])
+    if (!js.isUndefined(isStrongMatchExecutable)) __obj.updateDynamic("isStrongMatchExecutable")(isStrongMatchExecutable.asInstanceOf[js.Any])
+    if (matchMessage != null) __obj.updateDynamic("matchMessage")(matchMessage.asInstanceOf[js.Any])
+    if (requestedLink != null) __obj.updateDynamic("requestedLink")(requestedLink.asInstanceOf[js.Any])
+    if (resolvedLink != null) __obj.updateDynamic("resolvedLink")(resolvedLink.asInstanceOf[js.Any])
+    if (utmCampaign != null) __obj.updateDynamic("utmCampaign")(utmCampaign.asInstanceOf[js.Any])
+    if (utmMedium != null) __obj.updateDynamic("utmMedium")(utmMedium.asInstanceOf[js.Any])
+    if (utmSource != null) __obj.updateDynamic("utmSource")(utmSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIosPostInstallAttributionResponse]
   }
 }

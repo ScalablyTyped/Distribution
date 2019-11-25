@@ -27,9 +27,9 @@ object GoogleActionsV2UserProfile {
   @scala.inline
   def apply(displayName: String = null, familyName: String = null, givenName: String = null): GoogleActionsV2UserProfile = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (familyName != null) __obj.updateDynamic("familyName")(familyName)
-    if (givenName != null) __obj.updateDynamic("givenName")(givenName)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (familyName != null) __obj.updateDynamic("familyName")(familyName.asInstanceOf[js.Any])
+    if (givenName != null) __obj.updateDynamic("givenName")(givenName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2UserProfile]
   }
 }

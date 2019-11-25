@@ -37,13 +37,13 @@ object ServerConfig {
     ident: String = null,
     maxPacketSize: Int | Double = null
   ): ServerConfig = {
-    val __obj = js.Dynamic.literal(hostKeys = hostKeys)
-    if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms)
-    if (banner != null) __obj.updateDynamic("banner")(banner)
+    val __obj = js.Dynamic.literal(hostKeys = hostKeys.asInstanceOf[js.Any])
+    if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms.asInstanceOf[js.Any])
+    if (banner != null) __obj.updateDynamic("banner")(banner.asInstanceOf[js.Any])
     if (debug != null) __obj.updateDynamic("debug")(js.Any.fromFunction1(debug))
-    if (greeting != null) __obj.updateDynamic("greeting")(greeting)
+    if (greeting != null) __obj.updateDynamic("greeting")(greeting.asInstanceOf[js.Any])
     if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (ident != null) __obj.updateDynamic("ident")(ident)
+    if (ident != null) __obj.updateDynamic("ident")(ident.asInstanceOf[js.Any])
     if (maxPacketSize != null) __obj.updateDynamic("maxPacketSize")(maxPacketSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerConfig]
   }

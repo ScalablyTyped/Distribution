@@ -14,7 +14,7 @@ object RenderSuccessEventArgs {
   @scala.inline
   def apply(args: js.Any = null): RenderSuccessEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderSuccessEventArgs]
   }
 }

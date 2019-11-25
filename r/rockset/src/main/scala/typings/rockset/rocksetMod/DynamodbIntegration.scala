@@ -13,7 +13,7 @@ object DynamodbIntegration {
   @scala.inline
   def apply(aws_access_key: AwsAccessKey = null): DynamodbIntegration = {
     val __obj = js.Dynamic.literal()
-    if (aws_access_key != null) __obj.updateDynamic("aws_access_key")(aws_access_key)
+    if (aws_access_key != null) __obj.updateDynamic("aws_access_key")(aws_access_key.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamodbIntegration]
   }
 }

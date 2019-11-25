@@ -221,9 +221,5 @@ object Sync extends js.Object {
     def requestPasswordReset(server: String, email: String): js.Promise[Unit] = js.native
   }
   
-  type ClientResyncMode = typings.realm.Realm.Sync.ClientResyncMode
-  type OpenRealmBehaviorType = typings.realm.Realm.Sync.OpenRealmBehaviorType
-  type OpenRealmTimeOutBehavior = typings.realm.Realm.Sync.OpenRealmTimeOutBehavior
-  type SessionStopPolicy = typings.realm.Realm.Sync.SessionStopPolicy
 }
 

@@ -15,7 +15,7 @@ trait Anon_EventsIsOver extends js.Object {
 object Anon_EventsIsOver {
   @scala.inline
   def apply(events: Anon_OnMouseEnter, isOver: Boolean, willAccept: Boolean): Anon_EventsIsOver = {
-    val __obj = js.Dynamic.literal(events = events, isOver = isOver, willAccept = willAccept)
+    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], isOver = isOver.asInstanceOf[js.Any], willAccept = willAccept.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EventsIsOver]
   }

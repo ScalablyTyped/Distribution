@@ -36,13 +36,13 @@ object Element {
     val __obj = js.Dynamic.literal()
     if (attached != null) __obj.updateDynamic("attached")(js.Any.fromFunction0(attached))
     if (attributeChanged != null) __obj.updateDynamic("attributeChanged")(js.Any.fromFunction3(attributeChanged))
-    if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors)
+    if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(js.Any.fromFunction0(created))
     if (detached != null) __obj.updateDynamic("detached")(js.Any.fromFunction0(detached))
     if (factoryImpl != null) __obj.updateDynamic("factoryImpl")(js.Any.fromFunction1(factoryImpl))
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners)
-    if (observers != null) __obj.updateDynamic("observers")(observers)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
+    if (observers != null) __obj.updateDynamic("observers")(observers.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction0(ready))
     __obj.asInstanceOf[Element]
   }

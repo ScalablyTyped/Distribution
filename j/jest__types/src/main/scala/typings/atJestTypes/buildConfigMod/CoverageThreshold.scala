@@ -15,8 +15,8 @@ object CoverageThreshold {
     global: StringDictionary[Double],
     StringDictionary: /* path */ StringDictionary[StringDictionary[Double]] = null
   ): CoverageThreshold = {
-    val __obj = js.Dynamic.literal(global = global)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(global = global.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[CoverageThreshold]
   }
 }

@@ -15,7 +15,7 @@ trait HierarchicalFacet extends js.Object {
 object HierarchicalFacet {
   @scala.inline
   def apply(count: Double, data: js.Array[HierarchicalFacet], isRefined: Boolean, name: String, path: String): HierarchicalFacet = {
-    val __obj = js.Dynamic.literal(count = count, data = data, isRefined = isRefined, name = name, path = path)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], isRefined = isRefined.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HierarchicalFacet]
   }

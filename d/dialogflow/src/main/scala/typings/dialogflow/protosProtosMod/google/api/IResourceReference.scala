@@ -16,8 +16,8 @@ object IResourceReference {
   @scala.inline
   def apply(childType: String = null, `type`: String = null): IResourceReference = {
     val __obj = js.Dynamic.literal()
-    if (childType != null) __obj.updateDynamic("childType")(childType)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (childType != null) __obj.updateDynamic("childType")(childType.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResourceReference]
   }
 }

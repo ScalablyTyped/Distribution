@@ -11,7 +11,7 @@ trait Device extends js.Object {
 object Device {
   @scala.inline
   def apply(uuid: String): Device = {
-    val __obj = js.Dynamic.literal(uuid = uuid)
+    val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Device]
   }

@@ -24,11 +24,11 @@ object HttpAdapterConfiguration {
     name: String = null,
     skip_setup: js.UndefOr[Boolean] = js.undefined
   ): HttpAdapterConfiguration = {
-    val __obj = js.Dynamic.literal(adapter = adapter)
-    if (auth != null) __obj.updateDynamic("auth")(auth)
+    val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any])
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (fetch != null) __obj.updateDynamic("fetch")(js.Any.fromFunction2(fetch))
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(skip_setup)) __obj.updateDynamic("skip_setup")(skip_setup)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip_setup)) __obj.updateDynamic("skip_setup")(skip_setup.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpAdapterConfiguration]
   }
 }

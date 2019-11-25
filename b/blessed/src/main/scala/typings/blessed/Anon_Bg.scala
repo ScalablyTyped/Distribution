@@ -13,8 +13,8 @@ object Anon_Bg {
   @scala.inline
   def apply(bg: String = null, fg: String = null): Anon_Bg = {
     val __obj = js.Dynamic.literal()
-    if (bg != null) __obj.updateDynamic("bg")(bg)
-    if (fg != null) __obj.updateDynamic("fg")(fg)
+    if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
+    if (fg != null) __obj.updateDynamic("fg")(fg.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bg]
   }
 }

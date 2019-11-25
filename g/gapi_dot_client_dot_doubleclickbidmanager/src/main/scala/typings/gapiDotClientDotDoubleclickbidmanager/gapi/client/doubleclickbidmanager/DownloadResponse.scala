@@ -24,10 +24,10 @@ object DownloadResponse {
     lineItems: String = null
   ): DownloadResponse = {
     val __obj = js.Dynamic.literal()
-    if (adGroups != null) __obj.updateDynamic("adGroups")(adGroups)
-    if (ads != null) __obj.updateDynamic("ads")(ads)
-    if (insertionOrders != null) __obj.updateDynamic("insertionOrders")(insertionOrders)
-    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems)
+    if (adGroups != null) __obj.updateDynamic("adGroups")(adGroups.asInstanceOf[js.Any])
+    if (ads != null) __obj.updateDynamic("ads")(ads.asInstanceOf[js.Any])
+    if (insertionOrders != null) __obj.updateDynamic("insertionOrders")(insertionOrders.asInstanceOf[js.Any])
+    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadResponse]
   }
 }

@@ -13,8 +13,8 @@ object operatorDistinctUntilKeyChangedMod extends js.Object {
     `this`: Observable[T],
     key: K,
     compare: js.Function2[
-      /* import warning: ImportType.apply Failed type conversion: T[K] */ /* x */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: T[K] */ /* y */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ /* x */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ /* y */ js.Any, 
       Boolean
     ]
   ): Observable[T] = js.native

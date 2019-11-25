@@ -14,7 +14,7 @@ object Anon_Bs {
   @scala.inline
   def apply(plugin: (js.Object, BrowserSyncInstance) => js.Any, `plugin:name`: String = null): Anon_Bs = {
     val __obj = js.Dynamic.literal(plugin = js.Any.fromFunction2(plugin))
-    if (`plugin:name` != null) __obj.updateDynamic("plugin:name")(`plugin:name`)
+    if (`plugin:name` != null) __obj.updateDynamic("plugin:name")(`plugin:name`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bs]
   }
 }

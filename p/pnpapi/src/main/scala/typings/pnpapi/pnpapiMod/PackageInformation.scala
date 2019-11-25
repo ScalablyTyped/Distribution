@@ -13,7 +13,7 @@ trait PackageInformation extends js.Object {
 object PackageInformation {
   @scala.inline
   def apply(packageDependencies: Map[String, String | (js.Tuple2[String, String])], packageLocation: String): PackageInformation = {
-    val __obj = js.Dynamic.literal(packageDependencies = packageDependencies, packageLocation = packageLocation)
+    val __obj = js.Dynamic.literal(packageDependencies = packageDependencies.asInstanceOf[js.Any], packageLocation = packageLocation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PackageInformation]
   }

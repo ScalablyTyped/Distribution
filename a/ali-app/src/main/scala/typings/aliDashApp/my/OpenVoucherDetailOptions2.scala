@@ -20,7 +20,7 @@ object OpenVoucherDetailOptions2 {
     fail: js.Any => Unit = null,
     success: js.Any => Unit = null
   ): OpenVoucherDetailOptions2 = {
-    val __obj = js.Dynamic.literal(partnerId = partnerId, serialNumber = serialNumber)
+    val __obj = js.Dynamic.literal(partnerId = partnerId.asInstanceOf[js.Any], serialNumber = serialNumber.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

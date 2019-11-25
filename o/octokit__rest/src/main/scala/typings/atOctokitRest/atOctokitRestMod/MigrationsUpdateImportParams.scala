@@ -20,9 +20,9 @@ trait MigrationsUpdateImportParams extends js.Object {
 object MigrationsUpdateImportParams {
   @scala.inline
   def apply(owner: String, repo: String, vcs_password: String = null, vcs_username: String = null): MigrationsUpdateImportParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo)
-    if (vcs_password != null) __obj.updateDynamic("vcs_password")(vcs_password)
-    if (vcs_username != null) __obj.updateDynamic("vcs_username")(vcs_username)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (vcs_password != null) __obj.updateDynamic("vcs_password")(vcs_password.asInstanceOf[js.Any])
+    if (vcs_username != null) __obj.updateDynamic("vcs_username")(vcs_username.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationsUpdateImportParams]
   }
 }

@@ -40,10 +40,10 @@ object GraphQLFormattedError {
     locations: js.Array[SourceLocation] = null,
     path: js.Array[String | Double] = null
   ): GraphQLFormattedError[TExtensions] = {
-    val __obj = js.Dynamic.literal(message = message)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (locations != null) __obj.updateDynamic("locations")(locations)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLFormattedError[TExtensions]]
   }
 }

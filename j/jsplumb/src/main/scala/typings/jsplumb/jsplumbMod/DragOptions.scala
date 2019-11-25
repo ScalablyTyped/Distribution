@@ -24,8 +24,8 @@ object DragOptions {
     zIndex: Int | Double = null
   ): DragOptions = {
     val __obj = js.Dynamic.literal()
-    if (containment != null) __obj.updateDynamic("containment")(containment)
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    if (containment != null) __obj.updateDynamic("containment")(containment.asInstanceOf[js.Any])
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction1(drag))
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
     if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction1(stop))

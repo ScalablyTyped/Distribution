@@ -19,7 +19,7 @@ object RmDirOptions {
   @scala.inline
   def apply(recursive: js.UndefOr[Boolean] = js.undefined): RmDirOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
     __obj.asInstanceOf[RmDirOptions]
   }
 }

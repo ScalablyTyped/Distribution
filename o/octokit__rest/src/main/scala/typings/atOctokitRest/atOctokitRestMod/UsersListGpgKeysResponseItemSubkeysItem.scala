@@ -35,7 +35,7 @@ object UsersListGpgKeysResponseItemSubkeysItem {
     public_key: String,
     subkeys: js.Array[_]
   ): UsersListGpgKeysResponseItemSubkeysItem = {
-    val __obj = js.Dynamic.literal(can_certify = can_certify, can_encrypt_comms = can_encrypt_comms, can_encrypt_storage = can_encrypt_storage, can_sign = can_sign, created_at = created_at, emails = emails, expires_at = expires_at, id = id, key_id = key_id, primary_key_id = primary_key_id, public_key = public_key, subkeys = subkeys)
+    val __obj = js.Dynamic.literal(can_certify = can_certify.asInstanceOf[js.Any], can_encrypt_comms = can_encrypt_comms.asInstanceOf[js.Any], can_encrypt_storage = can_encrypt_storage.asInstanceOf[js.Any], can_sign = can_sign.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], emails = emails.asInstanceOf[js.Any], expires_at = expires_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], key_id = key_id.asInstanceOf[js.Any], primary_key_id = primary_key_id.asInstanceOf[js.Any], public_key = public_key.asInstanceOf[js.Any], subkeys = subkeys.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UsersListGpgKeysResponseItemSubkeysItem]
   }

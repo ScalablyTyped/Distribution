@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "restify-errors"
-version := "4.3-dt-20180607Z-3fb734"
+version := "4.3-dt-20180607Z-d99e29"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf",
-  "org.scalablytyped" %%% "verror" % "1.10-dt-20180214Z-bc1842")
+  "org.scalablytyped" %%% "std" % "3.7-1d724d",
+  "org.scalablytyped" %%% "verror" % "1.10-dt-20180214Z-1ad9e9")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

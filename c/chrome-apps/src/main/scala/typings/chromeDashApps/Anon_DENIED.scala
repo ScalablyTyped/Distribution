@@ -14,7 +14,7 @@ trait Anon_DENIED extends js.Object {
 object Anon_DENIED {
   @scala.inline
   def apply(DENIED: denied, GRANTED: granted): Anon_DENIED = {
-    val __obj = js.Dynamic.literal(DENIED = DENIED, GRANTED = GRANTED)
+    val __obj = js.Dynamic.literal(DENIED = DENIED.asInstanceOf[js.Any], GRANTED = GRANTED.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DENIED]
   }

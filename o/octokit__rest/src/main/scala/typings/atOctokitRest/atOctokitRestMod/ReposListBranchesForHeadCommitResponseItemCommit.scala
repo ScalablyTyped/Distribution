@@ -12,7 +12,7 @@ trait ReposListBranchesForHeadCommitResponseItemCommit extends js.Object {
 object ReposListBranchesForHeadCommitResponseItemCommit {
   @scala.inline
   def apply(sha: String, url: String): ReposListBranchesForHeadCommitResponseItemCommit = {
-    val __obj = js.Dynamic.literal(sha = sha, url = url)
+    val __obj = js.Dynamic.literal(sha = sha.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposListBranchesForHeadCommitResponseItemCommit]
   }

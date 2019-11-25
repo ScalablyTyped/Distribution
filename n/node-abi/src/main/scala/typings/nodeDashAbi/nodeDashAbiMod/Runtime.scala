@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait Runtime extends js.Object
 
+object Runtime {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def electron: typings.nodeDashAbi.nodeDashAbiStrings.electron = this.cast("electron")
+  @scala.inline
+  def node: typings.nodeDashAbi.nodeDashAbiStrings.node = this.cast("node")
+  @scala.inline
+  def `node-webkit`: typings.nodeDashAbi.nodeDashAbiStrings.`node-webkit` = this.cast("node-webkit")
+}
+

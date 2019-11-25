@@ -13,7 +13,7 @@ trait KeyRing extends js.Object {
 object KeyRing {
   @scala.inline
   def apply(createTime: AsObject, name: String): KeyRing = {
-    val __obj = js.Dynamic.literal(createTime = createTime, name = name)
+    val __obj = js.Dynamic.literal(createTime = createTime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KeyRing]
   }

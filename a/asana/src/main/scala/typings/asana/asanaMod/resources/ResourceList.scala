@@ -2,7 +2,6 @@ package typings.asana.asanaMod.resources
 
 import typings.asana.Anon_AsanaBaseUrl
 import typings.asana.Anon_Data
-import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +16,7 @@ trait ResourceList[T /* <: Resource */] extends js.Object {
     * @returns {Promise<Collection?>} Resolves to either a collection representing
     *     the next page of results, or null if no more pages.
     */
-  def nextPage(): ^[ResourceList[T] | Null]
+  def nextPage(): typings.bluebird.bluebirdMod.^[ResourceList[T] | Null]
 }
 
 object ResourceList {
@@ -26,9 +25,9 @@ object ResourceList {
     _dispatcher: Anon_AsanaBaseUrl,
     _response: Anon_Data[T],
     data: js.Array[T],
-    nextPage: () => ^[ResourceList[T] | Null]
+    nextPage: () => typings.bluebird.bluebirdMod.^[ResourceList[T] | Null]
   ): ResourceList[T] = {
-    val __obj = js.Dynamic.literal(_dispatcher = _dispatcher, _response = _response, data = data, nextPage = js.Any.fromFunction0(nextPage))
+    val __obj = js.Dynamic.literal(_dispatcher = _dispatcher.asInstanceOf[js.Any], _response = _response.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], nextPage = js.Any.fromFunction0(nextPage))
   
     __obj.asInstanceOf[ResourceList[T]]
   }

@@ -25,9 +25,9 @@ object Anon_CommentsIdInitializer {
     loc: SourceLocationKind = null
   ): Anon_CommentsIdInitializer = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (initializer != null) __obj.updateDynamic("initializer")(initializer)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (initializer != null) __obj.updateDynamic("initializer")(initializer.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsIdInitializer]
   }
 }

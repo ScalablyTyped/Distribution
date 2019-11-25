@@ -83,15 +83,15 @@ object ActiveLayerInfoProperties {
   ): ActiveLayerInfoProperties = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(isScaleDriven)) __obj.updateDynamic("isScaleDriven")(isScaleDriven)
-    if (layer != null) __obj.updateDynamic("layer")(layer)
-    if (legendElements != null) __obj.updateDynamic("legendElements")(legendElements)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (!js.isUndefined(ready)) __obj.updateDynamic("ready")(ready)
+    if (!js.isUndefined(isScaleDriven)) __obj.updateDynamic("isScaleDriven")(isScaleDriven.asInstanceOf[js.Any])
+    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
+    if (legendElements != null) __obj.updateDynamic("legendElements")(legendElements.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(ready)) __obj.updateDynamic("ready")(ready.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveLayerInfoProperties]
   }
 }

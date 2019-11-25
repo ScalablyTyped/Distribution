@@ -14,9 +14,9 @@ object LayoutProperties {
   @scala.inline
   def apply(displayName: String = null, masterObjectId: String = null, name: String = null): LayoutProperties = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (masterObjectId != null) __obj.updateDynamic("masterObjectId")(masterObjectId)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (masterObjectId != null) __obj.updateDynamic("masterObjectId")(masterObjectId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutProperties]
   }
 }

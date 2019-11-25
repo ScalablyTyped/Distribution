@@ -14,3 +14,14 @@ import scala.scalajs.js.annotation._
 */
 trait VerticalAnchorType extends js.Object
 
+object VerticalAnchorType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def end: typings.victory.victoryStrings.end = this.cast("end")
+  @scala.inline
+  def middle: typings.victory.victoryStrings.middle = this.cast("middle")
+  @scala.inline
+  def start: typings.victory.victoryStrings.start = this.cast("start")
+}
+

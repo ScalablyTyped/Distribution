@@ -19,7 +19,7 @@ trait IHistoryReply extends IReplyOkContent {
 object IHistoryReply {
   @scala.inline
   def apply(history: js.Array[js.Tuple3[Double, Double, String | (js.Tuple2[String, String])]], status: ok): IHistoryReply = {
-    val __obj = js.Dynamic.literal(history = history, status = status)
+    val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IHistoryReply]
   }

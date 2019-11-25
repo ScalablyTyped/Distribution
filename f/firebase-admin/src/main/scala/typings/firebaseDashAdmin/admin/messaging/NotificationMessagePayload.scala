@@ -168,19 +168,19 @@ object NotificationMessagePayload {
     titleLocKey: String = null
   ): NotificationMessagePayload = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (badge != null) __obj.updateDynamic("badge")(badge)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (bodyLocArgs != null) __obj.updateDynamic("bodyLocArgs")(bodyLocArgs)
-    if (bodyLocKey != null) __obj.updateDynamic("bodyLocKey")(bodyLocKey)
-    if (clickAction != null) __obj.updateDynamic("clickAction")(clickAction)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (sound != null) __obj.updateDynamic("sound")(sound)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (titleLocArgs != null) __obj.updateDynamic("titleLocArgs")(titleLocArgs)
-    if (titleLocKey != null) __obj.updateDynamic("titleLocKey")(titleLocKey)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (bodyLocArgs != null) __obj.updateDynamic("bodyLocArgs")(bodyLocArgs.asInstanceOf[js.Any])
+    if (bodyLocKey != null) __obj.updateDynamic("bodyLocKey")(bodyLocKey.asInstanceOf[js.Any])
+    if (clickAction != null) __obj.updateDynamic("clickAction")(clickAction.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (titleLocArgs != null) __obj.updateDynamic("titleLocArgs")(titleLocArgs.asInstanceOf[js.Any])
+    if (titleLocKey != null) __obj.updateDynamic("titleLocKey")(titleLocKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationMessagePayload]
   }
 }

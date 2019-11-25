@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.atAwsDashSdkBuildDashTypes.atAwsDashSdkBuildDashTypesStrings.input
 import typings.atAwsDashSdkBuildDashTypes.atAwsDashSdkBuildDashTypesStrings.output
 import typings.atAwsDashSdkTypes.atAwsDashSdkTypesStrings.structure
-import typings.atAwsDashSdkTypes.buildProtocolMod.SerializationType
 import typings.atAwsDashSdkTypes.buildProtocolMod.Structure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,8 +26,7 @@ object TreeModelStructure {
     members: StringDictionary[TreeModelMember],
     name: String,
     required: js.Array[String],
-    `type`: SerializationType,
-    type_Structure: structure,
+    `type`: structure,
     exception: js.UndefOr[Boolean] = js.undefined,
     exceptionCode: String = null,
     exceptionType: String = null,
@@ -36,14 +34,13 @@ object TreeModelStructure {
     sensitive: js.UndefOr[Boolean] = js.undefined,
     topLevel: input | output = null
   ): TreeModelStructure = {
-    val __obj = js.Dynamic.literal(documentation = documentation, members = members, name = name, required = required)
-    __obj.updateDynamic("type")(`type`)
-    __obj.updateDynamic("type")(type_Structure)
-    if (!js.isUndefined(exception)) __obj.updateDynamic("exception")(exception)
-    if (exceptionCode != null) __obj.updateDynamic("exceptionCode")(exceptionCode)
-    if (exceptionType != null) __obj.updateDynamic("exceptionType")(exceptionType)
-    if (payload != null) __obj.updateDynamic("payload")(payload)
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive)
+    val __obj = js.Dynamic.literal(documentation = documentation.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(exception)) __obj.updateDynamic("exception")(exception.asInstanceOf[js.Any])
+    if (exceptionCode != null) __obj.updateDynamic("exceptionCode")(exceptionCode.asInstanceOf[js.Any])
+    if (exceptionType != null) __obj.updateDynamic("exceptionType")(exceptionType.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
     if (topLevel != null) __obj.updateDynamic("topLevel")(topLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeModelStructure]
   }

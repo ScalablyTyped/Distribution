@@ -54,13 +54,13 @@ object TabsGroup {
   ): TabsGroup = {
     val __obj = js.Dynamic.literal()
     if (alignType != null) __obj.updateDynamic("alignType")(alignType.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (contentID != null) __obj.updateDynamic("contentID")(contentID)
-    if (customContent != null) __obj.updateDynamic("customContent")(customContent)
-    if (!js.isUndefined(enableGroupExpander)) __obj.updateDynamic("enableGroupExpander")(enableGroupExpander)
-    if (groupExpanderSettings != null) __obj.updateDynamic("groupExpanderSettings")(groupExpanderSettings)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (contentID != null) __obj.updateDynamic("contentID")(contentID.asInstanceOf[js.Any])
+    if (customContent != null) __obj.updateDynamic("customContent")(customContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGroupExpander)) __obj.updateDynamic("enableGroupExpander")(enableGroupExpander.asInstanceOf[js.Any])
+    if (groupExpanderSettings != null) __obj.updateDynamic("groupExpanderSettings")(groupExpanderSettings.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabsGroup]
   }
 }

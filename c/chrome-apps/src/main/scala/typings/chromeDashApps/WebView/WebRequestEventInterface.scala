@@ -92,7 +92,7 @@ object WebRequestEventInterface {
     onResponseStarted: WebResponseCacheEvent,
     onSendHeaders: WebRequestHeadersEvent
   ): WebRequestEventInterface = {
-    val __obj = js.Dynamic.literal(onAuthRequired = onAuthRequired, onBeforeRedirect = onBeforeRedirect, onBeforeRequest = onBeforeRequest, onBeforeSendHeaders = onBeforeSendHeaders, onCompleted = onCompleted, onErrorOccured = onErrorOccured, onHeadersReceived = onHeadersReceived, onMessage = onMessage, onRequest = onRequest, onResponseStarted = onResponseStarted, onSendHeaders = onSendHeaders)
+    val __obj = js.Dynamic.literal(onAuthRequired = onAuthRequired.asInstanceOf[js.Any], onBeforeRedirect = onBeforeRedirect.asInstanceOf[js.Any], onBeforeRequest = onBeforeRequest.asInstanceOf[js.Any], onBeforeSendHeaders = onBeforeSendHeaders.asInstanceOf[js.Any], onCompleted = onCompleted.asInstanceOf[js.Any], onErrorOccured = onErrorOccured.asInstanceOf[js.Any], onHeadersReceived = onHeadersReceived.asInstanceOf[js.Any], onMessage = onMessage.asInstanceOf[js.Any], onRequest = onRequest.asInstanceOf[js.Any], onResponseStarted = onResponseStarted.asInstanceOf[js.Any], onSendHeaders = onSendHeaders.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebRequestEventInterface]
   }

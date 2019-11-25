@@ -2,13 +2,9 @@ package typings.next
 
 import typings.next.distNextDashServerLibUtilsMod.DocumentProps
 import typings.next.distPagesUnderscoreAppMod.AppProps
-import typings.next.distPagesUnderscoreDocumentMod.OriginProps
 import typings.next.distPagesUnderscoreErrorMod.ErrorProps
 import typings.react.reactMod.ComponentType
-import typings.react.reactMod.DetailedHTMLProps
-import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.HtmlHTMLAttributes
-import typings.std.HTMLHeadElement
 import typings.std.HTMLHtmlElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,13 +18,9 @@ object nextComponents extends nextProps {
   @scala.inline
   def Error[P]: ComponentType[P with ErrorProps] = js.constructorOf[typings.next.errorMod.default[P]].asInstanceOf[typings.react.reactMod.ComponentType[P with typings.next.distPagesUnderscoreErrorMod.ErrorProps]]
   @scala.inline
-  def Head: ComponentType[
-    OriginProps with (DetailedHTMLProps[HTMLAttributes[HTMLHeadElement], HTMLHeadElement])
-  ] = js.constructorOf[typings.next.documentMod.Head].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.next.distPagesUnderscoreDocumentMod.OriginProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.HTMLAttributes[typings.std.HTMLHeadElement], 
-    typings.std.HTMLHeadElement
-  ])]]
+  def Head: ComponentType[HeadProps] = typings.next.distNextDashServerLibHeadMod.default.asInstanceOf[typings.react.reactMod.ComponentType[HeadProps]]
+  @scala.inline
+  def HeadDefault: ComponentType[HeadDefaultProps] = typings.next.headMod.default.asInstanceOf[typings.react.reactMod.ComponentType[HeadDefaultProps]]
   @scala.inline
   def Html: ComponentType[HtmlProps[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement]] = js.constructorOf[typings.next.documentMod.Html].asInstanceOf[typings.react.reactMod.ComponentType[
   HtmlProps[

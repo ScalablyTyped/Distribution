@@ -25,11 +25,11 @@ object Configuration {
     pm2: js.UndefOr[Boolean] = js.undefined,
     pm2InstanceVar: String = null
   ): Configuration = {
-    val __obj = js.Dynamic.literal(appenders = appenders, categories = categories)
-    if (!js.isUndefined(disableClustering)) __obj.updateDynamic("disableClustering")(disableClustering)
-    if (levels != null) __obj.updateDynamic("levels")(levels)
-    if (!js.isUndefined(pm2)) __obj.updateDynamic("pm2")(pm2)
-    if (pm2InstanceVar != null) __obj.updateDynamic("pm2InstanceVar")(pm2InstanceVar)
+    val __obj = js.Dynamic.literal(appenders = appenders.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableClustering)) __obj.updateDynamic("disableClustering")(disableClustering.asInstanceOf[js.Any])
+    if (levels != null) __obj.updateDynamic("levels")(levels.asInstanceOf[js.Any])
+    if (!js.isUndefined(pm2)) __obj.updateDynamic("pm2")(pm2.asInstanceOf[js.Any])
+    if (pm2InstanceVar != null) __obj.updateDynamic("pm2InstanceVar")(pm2InstanceVar.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
 }

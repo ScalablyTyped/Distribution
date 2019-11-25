@@ -17,7 +17,7 @@ object BlobsOptions {
   @scala.inline
   def apply(defaultName: String = null): BlobsOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultName != null) __obj.updateDynamic("defaultName")(defaultName)
+    if (defaultName != null) __obj.updateDynamic("defaultName")(defaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlobsOptions]
   }
 }

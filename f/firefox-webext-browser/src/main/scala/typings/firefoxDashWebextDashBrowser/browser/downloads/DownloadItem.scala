@@ -65,14 +65,14 @@ object DownloadItem {
     mime: String = null,
     referrer: String = null
   ): DownloadItem = {
-    val __obj = js.Dynamic.literal(bytesReceived = bytesReceived, canResume = canResume, danger = danger, exists = exists, fileSize = fileSize, filename = filename, id = id, incognito = incognito, paused = paused, startTime = startTime, state = state, totalBytes = totalBytes, url = url)
-    if (byExtensionId != null) __obj.updateDynamic("byExtensionId")(byExtensionId)
-    if (byExtensionName != null) __obj.updateDynamic("byExtensionName")(byExtensionName)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (estimatedEndTime != null) __obj.updateDynamic("estimatedEndTime")(estimatedEndTime)
-    if (mime != null) __obj.updateDynamic("mime")(mime)
-    if (referrer != null) __obj.updateDynamic("referrer")(referrer)
+    val __obj = js.Dynamic.literal(bytesReceived = bytesReceived.asInstanceOf[js.Any], canResume = canResume.asInstanceOf[js.Any], danger = danger.asInstanceOf[js.Any], exists = exists.asInstanceOf[js.Any], fileSize = fileSize.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], incognito = incognito.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], totalBytes = totalBytes.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (byExtensionId != null) __obj.updateDynamic("byExtensionId")(byExtensionId.asInstanceOf[js.Any])
+    if (byExtensionName != null) __obj.updateDynamic("byExtensionName")(byExtensionName.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (estimatedEndTime != null) __obj.updateDynamic("estimatedEndTime")(estimatedEndTime.asInstanceOf[js.Any])
+    if (mime != null) __obj.updateDynamic("mime")(mime.asInstanceOf[js.Any])
+    if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadItem]
   }
 }

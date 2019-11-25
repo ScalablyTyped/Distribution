@@ -22,7 +22,7 @@ object MediaQueryInfoType {
   @scala.inline
   def apply(exact: js.UndefOr[Boolean] = js.undefined, value: Double | String | Boolean = null): MediaQueryInfoType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)
+    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaQueryInfoType]
   }

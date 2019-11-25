@@ -6,7 +6,7 @@ import typings.stripe.stripeMod.paymentMethods.CardWallet
 import typings.stripe.stripeStrings.credit
 import typings.stripe.stripeStrings.debit
 import typings.stripe.stripeStrings.prepaid
-import typings.stripe.stripeStrings.unknown
+import typings.stripe.stripeStrings.unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +31,7 @@ trait Anon_BrandChecks extends js.Object {
     */
   var fingerprint: String
   /** Card funding type. Can be credit, debit, prepaid, or unknown. */
-  var funding: credit | debit | prepaid | unknown
+  var funding: credit | debit | prepaid | unknown_
   /** Details of the original PaymentMethod that created this object. */
   var generated_from: Null | Anon_Charge
   /** The last four digits of the card. */
@@ -51,15 +51,15 @@ object Anon_BrandChecks {
     exp_month: Double,
     exp_year: Double,
     fingerprint: String,
-    funding: credit | debit | prepaid | unknown,
+    funding: credit | debit | prepaid | unknown_,
     last4: String,
     three_d_secure_usage: Anon_Supported,
     generated_from: Anon_Charge = null,
     wallet: CardWallet = null
   ): Anon_BrandChecks = {
-    val __obj = js.Dynamic.literal(brand = brand, checks = checks, country = country, exp_month = exp_month, exp_year = exp_year, fingerprint = fingerprint, funding = funding.asInstanceOf[js.Any], last4 = last4, three_d_secure_usage = three_d_secure_usage)
-    if (generated_from != null) __obj.updateDynamic("generated_from")(generated_from)
-    if (wallet != null) __obj.updateDynamic("wallet")(wallet)
+    val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], checks = checks.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], funding = funding.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], three_d_secure_usage = three_d_secure_usage.asInstanceOf[js.Any])
+    if (generated_from != null) __obj.updateDynamic("generated_from")(generated_from.asInstanceOf[js.Any])
+    if (wallet != null) __obj.updateDynamic("wallet")(wallet.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BrandChecks]
   }
 }

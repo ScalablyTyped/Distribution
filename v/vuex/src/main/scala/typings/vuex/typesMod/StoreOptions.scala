@@ -26,13 +26,13 @@ object StoreOptions {
     strict: js.UndefOr[Boolean] = js.undefined
   ): StoreOptions[S] = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (getters != null) __obj.updateDynamic("getters")(getters)
-    if (modules != null) __obj.updateDynamic("modules")(modules)
-    if (mutations != null) __obj.updateDynamic("mutations")(mutations)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (getters != null) __obj.updateDynamic("getters")(getters.asInstanceOf[js.Any])
+    if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
+    if (mutations != null) __obj.updateDynamic("mutations")(mutations.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreOptions[S]]
   }
 }

@@ -17,7 +17,7 @@ object HistoryResponse {
     endTimeToken: String | Double = null,
     startTimeToken: String | Double = null
   ): HistoryResponse = {
-    val __obj = js.Dynamic.literal(messages = messages)
+    val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any])
     if (endTimeToken != null) __obj.updateDynamic("endTimeToken")(endTimeToken.asInstanceOf[js.Any])
     if (startTimeToken != null) __obj.updateDynamic("startTimeToken")(startTimeToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryResponse]

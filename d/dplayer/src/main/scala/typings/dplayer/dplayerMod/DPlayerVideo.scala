@@ -25,12 +25,12 @@ object DPlayerVideo {
     thumbnails: String = null,
     `type`: VideoType | String = null
   ): DPlayerVideo = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (customType != null) __obj.updateDynamic("customType")(customType)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (customType != null) __obj.updateDynamic("customType")(customType.asInstanceOf[js.Any])
     if (defaultQuality != null) __obj.updateDynamic("defaultQuality")(defaultQuality.asInstanceOf[js.Any])
-    if (pic != null) __obj.updateDynamic("pic")(pic)
-    if (quality != null) __obj.updateDynamic("quality")(quality)
-    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails)
+    if (pic != null) __obj.updateDynamic("pic")(pic.asInstanceOf[js.Any])
+    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DPlayerVideo]
   }

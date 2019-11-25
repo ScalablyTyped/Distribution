@@ -36,7 +36,7 @@ object GamepadReading {
     rightTrigger: Double,
     timestamp: Double
   ): GamepadReading = {
-    val __obj = js.Dynamic.literal(buttons = buttons, leftThumbstickX = leftThumbstickX, leftThumbstickY = leftThumbstickY, leftTrigger = leftTrigger, rightThumbstickX = rightThumbstickX, rightThumbstickY = rightThumbstickY, rightTrigger = rightTrigger, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], leftThumbstickX = leftThumbstickX.asInstanceOf[js.Any], leftThumbstickY = leftThumbstickY.asInstanceOf[js.Any], leftTrigger = leftTrigger.asInstanceOf[js.Any], rightThumbstickX = rightThumbstickX.asInstanceOf[js.Any], rightThumbstickY = rightThumbstickY.asInstanceOf[js.Any], rightTrigger = rightTrigger.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GamepadReading]
   }

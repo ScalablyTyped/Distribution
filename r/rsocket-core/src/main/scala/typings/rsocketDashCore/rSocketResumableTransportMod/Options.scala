@@ -14,7 +14,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(bufferSize: Double, resumeToken: Encodable, sessionDurationSeconds: Double): Options = {
-    val __obj = js.Dynamic.literal(bufferSize = bufferSize, resumeToken = resumeToken.asInstanceOf[js.Any], sessionDurationSeconds = sessionDurationSeconds)
+    val __obj = js.Dynamic.literal(bufferSize = bufferSize.asInstanceOf[js.Any], resumeToken = resumeToken.asInstanceOf[js.Any], sessionDurationSeconds = sessionDurationSeconds.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

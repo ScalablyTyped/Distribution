@@ -13,7 +13,7 @@ trait Anon_Azimuth extends js.Object {
 object Anon_Azimuth {
   @scala.inline
   def apply(azimuth: Double, pitch: Double, roll: Double): Anon_Azimuth = {
-    val __obj = js.Dynamic.literal(azimuth = azimuth, pitch = pitch, roll = roll)
+    val __obj = js.Dynamic.literal(azimuth = azimuth.asInstanceOf[js.Any], pitch = pitch.asInstanceOf[js.Any], roll = roll.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Azimuth]
   }

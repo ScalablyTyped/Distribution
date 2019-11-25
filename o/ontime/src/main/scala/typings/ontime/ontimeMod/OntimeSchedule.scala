@@ -71,11 +71,11 @@ object OntimeSchedule {
     utc: js.UndefOr[Boolean] = js.undefined
   ): OntimeSchedule = {
     val __obj = js.Dynamic.literal(cycle = cycle.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepLast)) __obj.updateDynamic("keepLast")(keepLast)
-    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log)
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single)
+    if (!js.isUndefined(keepLast)) __obj.updateDynamic("keepLast")(keepLast.asInstanceOf[js.Any])
+    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (!js.isUndefined(utc)) __obj.updateDynamic("utc")(utc)
+    if (!js.isUndefined(utc)) __obj.updateDynamic("utc")(utc.asInstanceOf[js.Any])
     __obj.asInstanceOf[OntimeSchedule]
   }
 }

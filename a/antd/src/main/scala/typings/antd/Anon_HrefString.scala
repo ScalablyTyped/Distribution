@@ -11,7 +11,7 @@ trait Anon_HrefString extends js.Object {
 object Anon_HrefString {
   @scala.inline
   def apply(href: String): Anon_HrefString = {
-    val __obj = js.Dynamic.literal(href = href)
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HrefString]
   }

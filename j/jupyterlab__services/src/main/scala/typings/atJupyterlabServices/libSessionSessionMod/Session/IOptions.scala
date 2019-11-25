@@ -56,14 +56,14 @@ object IOptions {
     `type`: String = null,
     username: String = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(path = path)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (kernelId != null) __obj.updateDynamic("kernelId")(kernelId)
-    if (kernelName != null) __obj.updateDynamic("kernelName")(kernelName)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (serverSettings != null) __obj.updateDynamic("serverSettings")(serverSettings)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (username != null) __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (kernelId != null) __obj.updateDynamic("kernelId")(kernelId.asInstanceOf[js.Any])
+    if (kernelName != null) __obj.updateDynamic("kernelName")(kernelName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (serverSettings != null) __obj.updateDynamic("serverSettings")(serverSettings.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

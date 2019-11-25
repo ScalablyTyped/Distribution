@@ -51,18 +51,18 @@ object DeviceCompliancePolicySettingState {
     userPrincipalName: String = null
   ): DeviceCompliancePolicySettingState = {
     val __obj = js.Dynamic.literal()
-    if (currentValue != null) __obj.updateDynamic("currentValue")(currentValue)
+    if (currentValue != null) __obj.updateDynamic("currentValue")(currentValue.asInstanceOf[js.Any])
     if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
-    if (errorDescription != null) __obj.updateDynamic("errorDescription")(errorDescription)
-    if (instanceDisplayName != null) __obj.updateDynamic("instanceDisplayName")(instanceDisplayName)
-    if (setting != null) __obj.updateDynamic("setting")(setting)
-    if (settingName != null) __obj.updateDynamic("settingName")(settingName)
-    if (sources != null) __obj.updateDynamic("sources")(sources)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (userEmail != null) __obj.updateDynamic("userEmail")(userEmail)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
-    if (userName != null) __obj.updateDynamic("userName")(userName)
-    if (userPrincipalName != null) __obj.updateDynamic("userPrincipalName")(userPrincipalName)
+    if (errorDescription != null) __obj.updateDynamic("errorDescription")(errorDescription.asInstanceOf[js.Any])
+    if (instanceDisplayName != null) __obj.updateDynamic("instanceDisplayName")(instanceDisplayName.asInstanceOf[js.Any])
+    if (setting != null) __obj.updateDynamic("setting")(setting.asInstanceOf[js.Any])
+    if (settingName != null) __obj.updateDynamic("settingName")(settingName.asInstanceOf[js.Any])
+    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (userEmail != null) __obj.updateDynamic("userEmail")(userEmail.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
+    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
+    if (userPrincipalName != null) __obj.updateDynamic("userPrincipalName")(userPrincipalName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceCompliancePolicySettingState]
   }
 }

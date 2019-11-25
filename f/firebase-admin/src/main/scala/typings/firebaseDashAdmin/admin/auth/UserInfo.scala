@@ -50,7 +50,7 @@ object UserInfo {
     toJSON: () => js.Object,
     uid: String
   ): UserInfo = {
-    val __obj = js.Dynamic.literal(displayName = displayName, email = email, phoneNumber = phoneNumber, photoURL = photoURL, providerId = providerId, toJSON = js.Any.fromFunction0(toJSON), uid = uid)
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], phoneNumber = phoneNumber.asInstanceOf[js.Any], photoURL = photoURL.asInstanceOf[js.Any], providerId = providerId.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), uid = uid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserInfo]
   }

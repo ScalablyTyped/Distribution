@@ -13,7 +13,7 @@ trait Anon_Frame extends js.Object {
 object Anon_Frame {
   @scala.inline
   def apply(frame: Anon_Duration, transition: Transition): Anon_Frame = {
-    val __obj = js.Dynamic.literal(frame = frame, transition = transition)
+    val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Frame]
   }

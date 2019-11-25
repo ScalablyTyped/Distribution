@@ -12,7 +12,7 @@ trait BucketHostname extends js.Object {
 object BucketHostname {
   @scala.inline
   def apply(bucketEndpoint: Boolean, hostname: String): BucketHostname = {
-    val __obj = js.Dynamic.literal(bucketEndpoint = bucketEndpoint, hostname = hostname)
+    val __obj = js.Dynamic.literal(bucketEndpoint = bucketEndpoint.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BucketHostname]
   }

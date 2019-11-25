@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object toMap extends js.Object {
   def apply[T /* <: js.Object */](data: T): Map[
     String, 
-    /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   ] = js.native
   def apply[K /* <: String */, V](data: js.Array[js.Tuple2[K, V]]): Map[K, V] = js.native
   def apply[K, V](data: Map[K, V]): Map[K, V] = js.native

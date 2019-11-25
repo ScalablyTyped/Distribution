@@ -23,7 +23,7 @@ trait OfferRecord
 object OfferRecord {
   @scala.inline
   def apply(
-    _links: /* import warning: ImportType.apply c Unsupported type mapping: 
+    _links: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in T | 'self' ]: stellar-sdk.stellar-sdk/lib/horizon_api.Horizon.ResponseLink}
     */ typings.stellarDashSdk.stellarDashSdkStrings.BaseResponse with js.Any,
     amount: String,
@@ -37,7 +37,7 @@ object OfferRecord {
     seller: String,
     selling: OfferAsset
   ): OfferRecord = {
-    val __obj = js.Dynamic.literal(_links = _links, amount = amount, buying = buying, id = id.asInstanceOf[js.Any], last_modified_ledger = last_modified_ledger, last_modified_time = last_modified_time, paging_token = paging_token, price = price, price_r = price_r, seller = seller, selling = selling)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], amount = amount.asInstanceOf[js.Any], buying = buying.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last_modified_ledger = last_modified_ledger.asInstanceOf[js.Any], last_modified_time = last_modified_time.asInstanceOf[js.Any], paging_token = paging_token.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], price_r = price_r.asInstanceOf[js.Any], seller = seller.asInstanceOf[js.Any], selling = selling.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OfferRecord]
   }

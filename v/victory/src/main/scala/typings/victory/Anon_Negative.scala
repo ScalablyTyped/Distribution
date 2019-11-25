@@ -13,8 +13,8 @@ object Anon_Negative {
   @scala.inline
   def apply(negative: String = null, positive: String = null): Anon_Negative = {
     val __obj = js.Dynamic.literal()
-    if (negative != null) __obj.updateDynamic("negative")(negative)
-    if (positive != null) __obj.updateDynamic("positive")(positive)
+    if (negative != null) __obj.updateDynamic("negative")(negative.asInstanceOf[js.Any])
+    if (positive != null) __obj.updateDynamic("positive")(positive.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Negative]
   }
 }

@@ -28,13 +28,13 @@ object InlineQueryResultCachedPhoto {
     reply_markup: InlineKeyboardMarkup = null,
     title: String = null
   ): InlineQueryResultCachedPhoto = {
-    val __obj = js.Dynamic.literal(id = id, photo_file_id = photo_file_id)
-    __obj.updateDynamic("type")(`type`)
-    if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content)
-    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], photo_file_id = photo_file_id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
+    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineQueryResultCachedPhoto]
   }
 }

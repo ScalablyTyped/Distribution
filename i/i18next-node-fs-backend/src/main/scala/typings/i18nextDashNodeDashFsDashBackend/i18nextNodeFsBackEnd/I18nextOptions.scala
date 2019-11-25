@@ -16,7 +16,7 @@ object I18nextOptions {
   @scala.inline
   def apply(backend: i18nextNodeFsBackEndOptions = null): I18nextOptions = {
     val __obj = js.Dynamic.literal()
-    if (backend != null) __obj.updateDynamic("backend")(backend)
+    if (backend != null) __obj.updateDynamic("backend")(backend.asInstanceOf[js.Any])
     __obj.asInstanceOf[I18nextOptions]
   }
 }

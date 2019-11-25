@@ -45,8 +45,8 @@ object Anon_Category {
     tag: Double,
     vsixMetadata: Double
   ): Anon_Category = {
-    val __obj = js.Dynamic.literal(category = category, contributionType = contributionType, displayName = displayName, excludeWithFlags = excludeWithFlags, featured = featured, featuredInCategory = featuredInCategory, id = id, includeWithFlags = includeWithFlags, installationTarget = installationTarget, installationTargetVersion = installationTargetVersion, installationTargetVersionRange = installationTargetVersionRange, lcid = lcid, name = name, searchText = searchText, tag = tag, vsixMetadata = vsixMetadata)
-    __obj.updateDynamic("private")(`private`)
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], contributionType = contributionType.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], excludeWithFlags = excludeWithFlags.asInstanceOf[js.Any], featured = featured.asInstanceOf[js.Any], featuredInCategory = featuredInCategory.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], includeWithFlags = includeWithFlags.asInstanceOf[js.Any], installationTarget = installationTarget.asInstanceOf[js.Any], installationTargetVersion = installationTargetVersion.asInstanceOf[js.Any], installationTargetVersionRange = installationTargetVersionRange.asInstanceOf[js.Any], lcid = lcid.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], searchText = searchText.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], vsixMetadata = vsixMetadata.asInstanceOf[js.Any])
+    __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Category]
   }
 }

@@ -71,9 +71,9 @@ object LineItem {
     attrs: js.Any = null,
     onlineStoreUrl: String = null
   ): LineItem = {
-    val __obj = js.Dynamic.literal(compare_at_price = compare_at_price, grams = grams, id = id.asInstanceOf[js.Any], image = image, line_price = line_price, price = price, product_id = product_id.asInstanceOf[js.Any], quantity = quantity, title = title, variant_id = variant_id.asInstanceOf[js.Any], variant_title = variant_title)
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
-    if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl)
+    val __obj = js.Dynamic.literal(compare_at_price = compare_at_price.asInstanceOf[js.Any], grams = grams.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], line_price = line_price.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], product_id = product_id.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], variant_id = variant_id.asInstanceOf[js.Any], variant_title = variant_title.asInstanceOf[js.Any])
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
+    if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineItem]
   }
 }

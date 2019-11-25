@@ -12,7 +12,7 @@ trait Anon_CalculationMethod extends js.Object {
 object Anon_CalculationMethod {
   @scala.inline
   def apply(calculationMethod: String, usageTypes: js.Array[String]): Anon_CalculationMethod = {
-    val __obj = js.Dynamic.literal(calculationMethod = calculationMethod, usageTypes = usageTypes)
+    val __obj = js.Dynamic.literal(calculationMethod = calculationMethod.asInstanceOf[js.Any], usageTypes = usageTypes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CalculationMethod]
   }

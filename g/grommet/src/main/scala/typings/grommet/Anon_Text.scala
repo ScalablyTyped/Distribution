@@ -12,7 +12,7 @@ object Anon_Text {
   @scala.inline
   def apply(text: Anon_LargeMediumSmallXlarge = null): Anon_Text = {
     val __obj = js.Dynamic.literal()
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Text]
   }
 }

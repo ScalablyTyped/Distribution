@@ -13,7 +13,7 @@ trait Anon_ItemsReturnValueIPlayReadyDomain extends js.Object {
 object Anon_ItemsReturnValueIPlayReadyDomain {
   @scala.inline
   def apply(items: IPlayReadyDomain, returnValue: Double): Anon_ItemsReturnValueIPlayReadyDomain = {
-    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ItemsReturnValueIPlayReadyDomain]
   }

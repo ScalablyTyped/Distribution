@@ -13,7 +13,7 @@ trait Anon_Filealterpreservation extends js.Object {
 object Anon_Filealterpreservation {
   @scala.inline
   def apply(file_alter_preservation: Boolean, read_only: Boolean, tag_alter_preservation: Boolean): Anon_Filealterpreservation = {
-    val __obj = js.Dynamic.literal(file_alter_preservation = file_alter_preservation, read_only = read_only, tag_alter_preservation = tag_alter_preservation)
+    val __obj = js.Dynamic.literal(file_alter_preservation = file_alter_preservation.asInstanceOf[js.Any], read_only = read_only.asInstanceOf[js.Any], tag_alter_preservation = tag_alter_preservation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Filealterpreservation]
   }

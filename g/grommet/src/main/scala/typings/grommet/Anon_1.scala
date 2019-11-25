@@ -24,12 +24,12 @@ object Anon_1 {
     `6`: Anon_Font = null
   ): Anon_1 = {
     val __obj = js.Dynamic.literal()
-    if (`1` != null) __obj.updateDynamic("1")(`1`)
-    if (`2` != null) __obj.updateDynamic("2")(`2`)
-    if (`3` != null) __obj.updateDynamic("3")(`3`)
-    if (`4` != null) __obj.updateDynamic("4")(`4`)
-    if (`5` != null) __obj.updateDynamic("5")(`5`)
-    if (`6` != null) __obj.updateDynamic("6")(`6`)
+    if (`1` != null) __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
+    if (`2` != null) __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
+    if (`3` != null) __obj.updateDynamic("3")(`3`.asInstanceOf[js.Any])
+    if (`4` != null) __obj.updateDynamic("4")(`4`.asInstanceOf[js.Any])
+    if (`5` != null) __obj.updateDynamic("5")(`5`.asInstanceOf[js.Any])
+    if (`6` != null) __obj.updateDynamic("6")(`6`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_1]
   }
 }

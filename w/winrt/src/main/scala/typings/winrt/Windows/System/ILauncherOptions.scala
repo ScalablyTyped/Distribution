@@ -29,7 +29,7 @@ object ILauncherOptions {
     treatAsUntrusted: Boolean,
     uI: LauncherUIOptions
   ): ILauncherOptions = {
-    val __obj = js.Dynamic.literal(contentType = contentType, desiredRemainingView = desiredRemainingView, displayApplicationPicker = displayApplicationPicker, fallbackUri = fallbackUri, preferredApplicationDisplayName = preferredApplicationDisplayName, preferredApplicationPackageFamilyName = preferredApplicationPackageFamilyName, treatAsUntrusted = treatAsUntrusted, uI = uI)
+    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], desiredRemainingView = desiredRemainingView.asInstanceOf[js.Any], displayApplicationPicker = displayApplicationPicker.asInstanceOf[js.Any], fallbackUri = fallbackUri.asInstanceOf[js.Any], preferredApplicationDisplayName = preferredApplicationDisplayName.asInstanceOf[js.Any], preferredApplicationPackageFamilyName = preferredApplicationPackageFamilyName.asInstanceOf[js.Any], treatAsUntrusted = treatAsUntrusted.asInstanceOf[js.Any], uI = uI.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ILauncherOptions]
   }

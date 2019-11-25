@@ -14,7 +14,7 @@ object Batches {
   @scala.inline
   def apply(batches: js.Array[BatchStatus] = null): Batches = {
     val __obj = js.Dynamic.literal()
-    if (batches != null) __obj.updateDynamic("batches")(batches)
+    if (batches != null) __obj.updateDynamic("batches")(batches.asInstanceOf[js.Any])
     __obj.asInstanceOf[Batches]
   }
 }

@@ -45,16 +45,16 @@ object CrawlerOptions {
     unknown: js.UndefOr[Boolean] = js.undefined
   ): CrawlerOptions = {
     val __obj = js.Dynamic.literal(start = start.asInstanceOf[js.Any])
-    if (csv != null) __obj.updateDynamic("csv")(csv)
-    if (!js.isUndefined(dependencies)) __obj.updateDynamic("dependencies")(dependencies)
-    if (!js.isUndefined(development)) __obj.updateDynamic("development")(development)
+    if (csv != null) __obj.updateDynamic("csv")(csv.asInstanceOf[js.Any])
+    if (!js.isUndefined(dependencies)) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
+    if (!js.isUndefined(development)) __obj.updateDynamic("development")(development.asInstanceOf[js.Any])
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (json != null) __obj.updateDynamic("json")(json)
-    if (!js.isUndefined(omitVersion)) __obj.updateDynamic("omitVersion")(omitVersion)
-    if (!js.isUndefined(onlyDirectDependencies)) __obj.updateDynamic("onlyDirectDependencies")(onlyDirectDependencies)
-    if (!js.isUndefined(production)) __obj.updateDynamic("production")(production)
-    if (!js.isUndefined(relativeLicensePath)) __obj.updateDynamic("relativeLicensePath")(relativeLicensePath)
-    if (!js.isUndefined(unknown)) __obj.updateDynamic("unknown")(unknown)
+    if (json != null) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    if (!js.isUndefined(omitVersion)) __obj.updateDynamic("omitVersion")(omitVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyDirectDependencies)) __obj.updateDynamic("onlyDirectDependencies")(onlyDirectDependencies.asInstanceOf[js.Any])
+    if (!js.isUndefined(production)) __obj.updateDynamic("production")(production.asInstanceOf[js.Any])
+    if (!js.isUndefined(relativeLicensePath)) __obj.updateDynamic("relativeLicensePath")(relativeLicensePath.asInstanceOf[js.Any])
+    if (!js.isUndefined(unknown)) __obj.updateDynamic("unknown")(unknown.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrawlerOptions]
   }
 }

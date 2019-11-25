@@ -34,10 +34,10 @@ object LookupDeveloperIdentityOutput {
     IdentityId: String = null,
     NextToken: String = null
   ): LookupDeveloperIdentityOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (DeveloperUserIdentifierList != null) __obj.updateDynamic("DeveloperUserIdentifierList")(DeveloperUserIdentifierList)
-    if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (DeveloperUserIdentifierList != null) __obj.updateDynamic("DeveloperUserIdentifierList")(DeveloperUserIdentifierList.asInstanceOf[js.Any])
+    if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupDeveloperIdentityOutput]
   }
 }

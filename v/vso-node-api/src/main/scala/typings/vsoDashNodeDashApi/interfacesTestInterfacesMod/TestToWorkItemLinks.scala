@@ -12,7 +12,7 @@ trait TestToWorkItemLinks extends js.Object {
 object TestToWorkItemLinks {
   @scala.inline
   def apply(test: TestMethod, workItems: js.Array[WorkItemReference]): TestToWorkItemLinks = {
-    val __obj = js.Dynamic.literal(test = test, workItems = workItems)
+    val __obj = js.Dynamic.literal(test = test.asInstanceOf[js.Any], workItems = workItems.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestToWorkItemLinks]
   }

@@ -33,9 +33,9 @@ object Anon_FetchOptions {
     provider: () => String = null
   ): Anon_FetchOptions = {
     val __obj = js.Dynamic.literal()
-    if (fetchOptions != null) __obj.updateDynamic("fetchOptions")(fetchOptions)
-    if (!js.isUndefined(forceUpdate)) __obj.updateDynamic("forceUpdate")(forceUpdate)
-    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors)
+    if (fetchOptions != null) __obj.updateDynamic("fetchOptions")(fetchOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceUpdate)) __obj.updateDynamic("forceUpdate")(forceUpdate.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors.asInstanceOf[js.Any])
     if (provider != null) __obj.updateDynamic("provider")(js.Any.fromFunction0(provider))
     __obj.asInstanceOf[Anon_FetchOptions]
   }

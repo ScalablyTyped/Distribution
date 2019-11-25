@@ -12,7 +12,7 @@ trait Anon_CurrSt extends js.Object {
 object Anon_CurrSt {
   @scala.inline
   def apply(currSt: String, dragOnEdge: Boolean): Anon_CurrSt = {
-    val __obj = js.Dynamic.literal(currSt = currSt, dragOnEdge = dragOnEdge)
+    val __obj = js.Dynamic.literal(currSt = currSt.asInstanceOf[js.Any], dragOnEdge = dragOnEdge.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CurrSt]
   }

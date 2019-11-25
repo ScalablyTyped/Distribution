@@ -12,8 +12,8 @@ trait Descriptor extends js.Object {
 
 object Descriptor {
   @scala.inline
-  def apply(toString: () => String, uuid: String, value: Buffer): Descriptor = {
-    val __obj = js.Dynamic.literal(toString = js.Any.fromFunction0(toString), uuid = uuid, value = value)
+  def apply(uuid: String, value: Buffer): Descriptor = {
+    val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Descriptor]
   }

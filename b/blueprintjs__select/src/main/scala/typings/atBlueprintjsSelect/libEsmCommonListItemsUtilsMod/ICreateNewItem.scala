@@ -12,7 +12,7 @@ trait ICreateNewItem extends js.Object {
 object ICreateNewItem {
   @scala.inline
   def apply(__blueprintCreateNewItemBrand: `blueprint-create-new-item`): ICreateNewItem = {
-    val __obj = js.Dynamic.literal(__blueprintCreateNewItemBrand = __blueprintCreateNewItemBrand)
+    val __obj = js.Dynamic.literal(__blueprintCreateNewItemBrand = __blueprintCreateNewItemBrand.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICreateNewItem]
   }

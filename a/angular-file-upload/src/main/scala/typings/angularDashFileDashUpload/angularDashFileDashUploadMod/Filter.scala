@@ -12,7 +12,7 @@ trait Filter extends js.Object {
 object Filter {
   @scala.inline
   def apply(fn: SyncFilter | AsyncFilter, name: String): Filter = {
-    val __obj = js.Dynamic.literal(fn = fn.asInstanceOf[js.Any], name = name)
+    val __obj = js.Dynamic.literal(fn = fn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Filter]
   }

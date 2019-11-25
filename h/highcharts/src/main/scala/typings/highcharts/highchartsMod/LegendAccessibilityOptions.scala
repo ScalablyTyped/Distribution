@@ -21,8 +21,8 @@ object LegendAccessibilityOptions {
   @scala.inline
   def apply(enabled: js.Any = null, keyboardNavigation: LegendAccessibilityKeyboardNavigationOptions = null): LegendAccessibilityOptions = {
     val __obj = js.Dynamic.literal()
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled)
-    if (keyboardNavigation != null) __obj.updateDynamic("keyboardNavigation")(keyboardNavigation)
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (keyboardNavigation != null) __obj.updateDynamic("keyboardNavigation")(keyboardNavigation.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendAccessibilityOptions]
   }
 }

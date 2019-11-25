@@ -13,7 +13,7 @@ object IProtocol {
   @scala.inline
   def apply(delta: js.UndefOr[Boolean] = js.undefined): IProtocol = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(delta)) __obj.updateDynamic("delta")(delta)
+    if (!js.isUndefined(delta)) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProtocol]
   }
 }

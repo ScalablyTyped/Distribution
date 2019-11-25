@@ -77,19 +77,19 @@ object SliderTheme {
     snaps: String = null
   ): SliderTheme = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (editable != null) __obj.updateDynamic("editable")(editable)
-    if (innerknob != null) __obj.updateDynamic("innerknob")(innerknob)
-    if (innerprogress != null) __obj.updateDynamic("innerprogress")(innerprogress)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (knob != null) __obj.updateDynamic("knob")(knob)
-    if (pinned != null) __obj.updateDynamic("pinned")(pinned)
-    if (pressed != null) __obj.updateDynamic("pressed")(pressed)
-    if (progress != null) __obj.updateDynamic("progress")(progress)
-    if (ring != null) __obj.updateDynamic("ring")(ring)
-    if (slider != null) __obj.updateDynamic("slider")(slider)
-    if (snap != null) __obj.updateDynamic("snap")(snap)
-    if (snaps != null) __obj.updateDynamic("snaps")(snaps)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
+    if (innerknob != null) __obj.updateDynamic("innerknob")(innerknob.asInstanceOf[js.Any])
+    if (innerprogress != null) __obj.updateDynamic("innerprogress")(innerprogress.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (knob != null) __obj.updateDynamic("knob")(knob.asInstanceOf[js.Any])
+    if (pinned != null) __obj.updateDynamic("pinned")(pinned.asInstanceOf[js.Any])
+    if (pressed != null) __obj.updateDynamic("pressed")(pressed.asInstanceOf[js.Any])
+    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
+    if (ring != null) __obj.updateDynamic("ring")(ring.asInstanceOf[js.Any])
+    if (slider != null) __obj.updateDynamic("slider")(slider.asInstanceOf[js.Any])
+    if (snap != null) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])
+    if (snaps != null) __obj.updateDynamic("snaps")(snaps.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderTheme]
   }
 }

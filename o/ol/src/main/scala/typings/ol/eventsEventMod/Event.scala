@@ -14,8 +14,8 @@ trait Event extends js.Object {
 object Event {
   @scala.inline
   def apply(preventDefault: () => Unit, stopPropagation: () => Unit, target: js.Any, `type`: String): Event = {
-    val __obj = js.Dynamic.literal(preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
 }

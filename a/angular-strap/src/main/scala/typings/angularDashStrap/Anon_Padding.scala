@@ -12,7 +12,7 @@ trait Anon_Padding extends js.Object {
 object Anon_Padding {
   @scala.inline
   def apply(padding: String | Double, selector: String): Anon_Padding = {
-    val __obj = js.Dynamic.literal(padding = padding.asInstanceOf[js.Any], selector = selector)
+    val __obj = js.Dynamic.literal(padding = padding.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Padding]
   }

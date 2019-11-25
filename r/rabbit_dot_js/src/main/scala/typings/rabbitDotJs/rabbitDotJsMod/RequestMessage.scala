@@ -13,7 +13,7 @@ trait RequestMessage extends js.Object {
 object RequestMessage {
   @scala.inline
   def apply(content: js.Any, properties: Anon_CorrelationId): RequestMessage = {
-    val __obj = js.Dynamic.literal(content = content, properties = properties)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RequestMessage]
   }

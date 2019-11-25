@@ -13,8 +13,8 @@ trait INewLightsResponse extends /* key */ StringDictionary[String | Anon_Name] 
 object INewLightsResponse {
   @scala.inline
   def apply(lastscan: String, StringDictionary: /* key */ StringDictionary[String | Anon_Name] = null): INewLightsResponse = {
-    val __obj = js.Dynamic.literal(lastscan = lastscan)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(lastscan = lastscan.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[INewLightsResponse]
   }
 }

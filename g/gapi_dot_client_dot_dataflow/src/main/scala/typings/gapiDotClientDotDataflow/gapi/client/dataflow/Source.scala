@@ -63,11 +63,11 @@ object Source {
     spec: Record[String, _] = null
   ): Source = {
     val __obj = js.Dynamic.literal()
-    if (baseSpecs != null) __obj.updateDynamic("baseSpecs")(baseSpecs)
-    if (codec != null) __obj.updateDynamic("codec")(codec)
-    if (!js.isUndefined(doesNotNeedSplitting)) __obj.updateDynamic("doesNotNeedSplitting")(doesNotNeedSplitting)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (spec != null) __obj.updateDynamic("spec")(spec)
+    if (baseSpecs != null) __obj.updateDynamic("baseSpecs")(baseSpecs.asInstanceOf[js.Any])
+    if (codec != null) __obj.updateDynamic("codec")(codec.asInstanceOf[js.Any])
+    if (!js.isUndefined(doesNotNeedSplitting)) __obj.updateDynamic("doesNotNeedSplitting")(doesNotNeedSplitting.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (spec != null) __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }
 }

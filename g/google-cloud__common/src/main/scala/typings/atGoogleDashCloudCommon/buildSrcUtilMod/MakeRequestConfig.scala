@@ -32,11 +32,11 @@ object MakeRequestConfig {
     stream: Duplexify = null
   ): MakeRequestConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoRetry)) __obj.updateDynamic("autoRetry")(autoRetry)
+    if (!js.isUndefined(autoRetry)) __obj.updateDynamic("autoRetry")(autoRetry.asInstanceOf[js.Any])
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
     if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
     if (shouldRetryFn != null) __obj.updateDynamic("shouldRetryFn")(js.Any.fromFunction1(shouldRetryFn))
-    if (stream != null) __obj.updateDynamic("stream")(stream)
+    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[MakeRequestConfig]
   }
 }

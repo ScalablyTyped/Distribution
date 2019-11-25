@@ -45,17 +45,17 @@ object ConcurrentAccessRestriction {
     volumeId: String = null
   ): ConcurrentAccessRestriction = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deviceAllowed)) __obj.updateDynamic("deviceAllowed")(deviceAllowed)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (!js.isUndefined(deviceAllowed)) __obj.updateDynamic("deviceAllowed")(deviceAllowed.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (maxConcurrentDevices != null) __obj.updateDynamic("maxConcurrentDevices")(maxConcurrentDevices.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
-    if (reasonCode != null) __obj.updateDynamic("reasonCode")(reasonCode)
-    if (!js.isUndefined(restricted)) __obj.updateDynamic("restricted")(restricted)
-    if (signature != null) __obj.updateDynamic("signature")(signature)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
+    if (reasonCode != null) __obj.updateDynamic("reasonCode")(reasonCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(restricted)) __obj.updateDynamic("restricted")(restricted.asInstanceOf[js.Any])
+    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (timeWindowSeconds != null) __obj.updateDynamic("timeWindowSeconds")(timeWindowSeconds.asInstanceOf[js.Any])
-    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId)
+    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConcurrentAccessRestriction]
   }
 }

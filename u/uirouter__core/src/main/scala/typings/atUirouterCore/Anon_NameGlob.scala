@@ -14,7 +14,7 @@ object Anon_NameGlob {
   @scala.inline
   def apply(nameGlob: Glob = null): Anon_NameGlob = {
     val __obj = js.Dynamic.literal()
-    if (nameGlob != null) __obj.updateDynamic("nameGlob")(nameGlob)
+    if (nameGlob != null) __obj.updateDynamic("nameGlob")(nameGlob.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NameGlob]
   }
 }

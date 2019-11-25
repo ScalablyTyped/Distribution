@@ -27,7 +27,7 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(callback: Widget => Unit, commands: CommandRegistry, cwd: String): IOptions = {
-    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), commands = commands, cwd = cwd)
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), commands = commands.asInstanceOf[js.Any], cwd = cwd.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOptions]
   }

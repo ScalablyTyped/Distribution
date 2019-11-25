@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait ChangeType extends js.Object
 
+object ChangeType {
+  @scala.inline
+  def attributes: typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineStrings.attributes = this.cast("attributes")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def children: typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineStrings.children = this.cast("children")
+  @scala.inline
+  def text: typings.atCkeditorCkeditor5DashEngine.atCkeditorCkeditor5DashEngineStrings.text = this.cast("text")
+}
+

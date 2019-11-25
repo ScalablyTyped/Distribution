@@ -25,11 +25,11 @@ object InitSignal {
     on: js.Array[OnEvent] = null,
     value: SignalValue = null
   ): InitSignal = {
-    val __obj = js.Dynamic.literal(init = init, name = name)
-    if (bind != null) __obj.updateDynamic("bind")(bind)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (on != null) __obj.updateDynamic("on")(on)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(init = init.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (bind != null) __obj.updateDynamic("bind")(bind.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitSignal]
   }
 }

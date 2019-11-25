@@ -24,10 +24,10 @@ object QueryResponse {
     stats: QueryResponseStats = null
   ): QueryResponse = {
     val __obj = js.Dynamic.literal()
-    if (column_fields != null) __obj.updateDynamic("column_fields")(column_fields)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (results != null) __obj.updateDynamic("results")(results)
-    if (stats != null) __obj.updateDynamic("stats")(stats)
+    if (column_fields != null) __obj.updateDynamic("column_fields")(column_fields.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
+    if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResponse]
   }
 }

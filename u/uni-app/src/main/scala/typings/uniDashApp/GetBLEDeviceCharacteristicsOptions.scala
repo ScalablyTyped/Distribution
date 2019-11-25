@@ -38,9 +38,9 @@ object GetBLEDeviceCharacteristicsOptions {
   ): GetBLEDeviceCharacteristicsOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (serviceId != null) __obj.updateDynamic("serviceId")(serviceId)
+    if (serviceId != null) __obj.updateDynamic("serviceId")(serviceId.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetBLEDeviceCharacteristicsOptions]
   }

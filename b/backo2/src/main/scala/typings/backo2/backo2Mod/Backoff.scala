@@ -61,7 +61,7 @@ object Backoff {
     setMax: Double => Unit,
     setMin: Double => Unit
   ): Backoff = {
-    val __obj = js.Dynamic.literal(attempts = attempts, duration = js.Any.fromFunction0(duration), factor = factor, jitter = jitter, max = max, ms = ms, reset = js.Any.fromFunction0(reset), setJitter = js.Any.fromFunction1(setJitter), setMax = js.Any.fromFunction1(setMax), setMin = js.Any.fromFunction1(setMin))
+    val __obj = js.Dynamic.literal(attempts = attempts.asInstanceOf[js.Any], duration = js.Any.fromFunction0(duration), factor = factor.asInstanceOf[js.Any], jitter = jitter.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], ms = ms.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), setJitter = js.Any.fromFunction1(setJitter), setMax = js.Any.fromFunction1(setMax), setMin = js.Any.fromFunction1(setMin))
   
     __obj.asInstanceOf[Backoff]
   }

@@ -29,10 +29,10 @@ object PayDialogResponse {
     error_message: String = null,
     request_id: String = null
   ): PayDialogResponse = {
-    val __obj = js.Dynamic.literal(amount = amount, currency = currency, payment_id = payment_id, quantity = quantity, signed_request = signed_request, status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], payment_id = payment_id.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], signed_request = signed_request.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     if (error_code != null) __obj.updateDynamic("error_code")(error_code.asInstanceOf[js.Any])
-    if (error_message != null) __obj.updateDynamic("error_message")(error_message)
-    if (request_id != null) __obj.updateDynamic("request_id")(request_id)
+    if (error_message != null) __obj.updateDynamic("error_message")(error_message.asInstanceOf[js.Any])
+    if (request_id != null) __obj.updateDynamic("request_id")(request_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[PayDialogResponse]
   }
 }

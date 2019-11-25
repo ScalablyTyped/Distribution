@@ -12,7 +12,7 @@ trait SmartHomeV1ExecuteResponse extends SmartHomeV1Response {
 object SmartHomeV1ExecuteResponse {
   @scala.inline
   def apply(payload: SmartHomeV1ExecutePayload, requestId: String): SmartHomeV1ExecuteResponse = {
-    val __obj = js.Dynamic.literal(payload = payload, requestId = requestId)
+    val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SmartHomeV1ExecuteResponse]
   }

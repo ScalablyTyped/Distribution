@@ -23,9 +23,9 @@ object TableRowTheme {
   @scala.inline
   def apply(checkboxCell: String = null, row: String = null, selected: String = null): TableRowTheme = {
     val __obj = js.Dynamic.literal()
-    if (checkboxCell != null) __obj.updateDynamic("checkboxCell")(checkboxCell)
-    if (row != null) __obj.updateDynamic("row")(row)
-    if (selected != null) __obj.updateDynamic("selected")(selected)
+    if (checkboxCell != null) __obj.updateDynamic("checkboxCell")(checkboxCell.asInstanceOf[js.Any])
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRowTheme]
   }
 }

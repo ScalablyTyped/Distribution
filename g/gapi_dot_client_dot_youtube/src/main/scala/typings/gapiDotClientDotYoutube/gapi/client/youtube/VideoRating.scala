@@ -13,8 +13,8 @@ object VideoRating {
   @scala.inline
   def apply(rating: String = null, videoId: String = null): VideoRating = {
     val __obj = js.Dynamic.literal()
-    if (rating != null) __obj.updateDynamic("rating")(rating)
-    if (videoId != null) __obj.updateDynamic("videoId")(videoId)
+    if (rating != null) __obj.updateDynamic("rating")(rating.asInstanceOf[js.Any])
+    if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoRating]
   }
 }

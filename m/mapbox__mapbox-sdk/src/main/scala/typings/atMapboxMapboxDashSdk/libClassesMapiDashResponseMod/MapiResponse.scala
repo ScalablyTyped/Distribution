@@ -46,7 +46,7 @@ object MapiResponse {
     request: MapiRequest,
     statusCode: Double
   ): MapiResponse = {
-    val __obj = js.Dynamic.literal(body = body, hasNextPage = js.Any.fromFunction0(hasNextPage), headers = headers, links = links, nextPage = js.Any.fromFunction0(nextPage), rawBody = rawBody, request = request, statusCode = statusCode)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], hasNextPage = js.Any.fromFunction0(hasNextPage), headers = headers.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], nextPage = js.Any.fromFunction0(nextPage), rawBody = rawBody.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MapiResponse]
   }

@@ -33,14 +33,14 @@ object ServiceProviderOptions {
     nameid_format: String = null,
     sign_get_request: js.UndefOr[Boolean] = js.undefined
   ): ServiceProviderOptions = {
-    val __obj = js.Dynamic.literal(assert_endpoint = assert_endpoint, certificate = certificate, entity_id = entity_id, private_key = private_key)
-    if (!js.isUndefined(allow_unencrypted_assertion)) __obj.updateDynamic("allow_unencrypted_assertion")(allow_unencrypted_assertion)
-    if (alt_certs != null) __obj.updateDynamic("alt_certs")(alt_certs)
-    if (alt_private_keys != null) __obj.updateDynamic("alt_private_keys")(alt_private_keys)
-    if (auth_context != null) __obj.updateDynamic("auth_context")(auth_context)
-    if (!js.isUndefined(force_authn)) __obj.updateDynamic("force_authn")(force_authn)
-    if (nameid_format != null) __obj.updateDynamic("nameid_format")(nameid_format)
-    if (!js.isUndefined(sign_get_request)) __obj.updateDynamic("sign_get_request")(sign_get_request)
+    val __obj = js.Dynamic.literal(assert_endpoint = assert_endpoint.asInstanceOf[js.Any], certificate = certificate.asInstanceOf[js.Any], entity_id = entity_id.asInstanceOf[js.Any], private_key = private_key.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_unencrypted_assertion)) __obj.updateDynamic("allow_unencrypted_assertion")(allow_unencrypted_assertion.asInstanceOf[js.Any])
+    if (alt_certs != null) __obj.updateDynamic("alt_certs")(alt_certs.asInstanceOf[js.Any])
+    if (alt_private_keys != null) __obj.updateDynamic("alt_private_keys")(alt_private_keys.asInstanceOf[js.Any])
+    if (auth_context != null) __obj.updateDynamic("auth_context")(auth_context.asInstanceOf[js.Any])
+    if (!js.isUndefined(force_authn)) __obj.updateDynamic("force_authn")(force_authn.asInstanceOf[js.Any])
+    if (nameid_format != null) __obj.updateDynamic("nameid_format")(nameid_format.asInstanceOf[js.Any])
+    if (!js.isUndefined(sign_get_request)) __obj.updateDynamic("sign_get_request")(sign_get_request.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceProviderOptions]
   }
 }

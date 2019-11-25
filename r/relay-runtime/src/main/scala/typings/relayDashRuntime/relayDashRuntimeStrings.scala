@@ -123,7 +123,7 @@ object relayDashRuntimeStrings {
   sealed trait cursor extends js.Object
   
   @js.native
-  sealed trait defer extends js.Object
+  sealed trait defer_ extends js.Object
   
   @js.native
   sealed trait edges extends js.Object
@@ -132,7 +132,7 @@ object relayDashRuntimeStrings {
   sealed trait endCursor extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error_ extends js.Object
   
   @js.native
   sealed trait fetch extends js.Object
@@ -156,7 +156,7 @@ object relayDashRuntimeStrings {
   sealed trait node extends js.Object
   
   @js.native
-  sealed trait pageInfo extends js.Object
+  sealed trait pageInfo_ extends js.Object
   
   @js.native
   sealed trait pluralLinked extends js.Object
@@ -171,7 +171,7 @@ object relayDashRuntimeStrings {
   sealed trait startCursor extends js.Object
   
   @js.native
-  sealed trait stream extends js.Object
+  sealed trait stream_ extends js.Object
   
   @js.native
   sealed trait update extends js.Object
@@ -253,13 +253,13 @@ object relayDashRuntimeStrings {
   @scala.inline
   def cursor: cursor = "cursor".asInstanceOf[cursor]
   @scala.inline
-  def defer: defer = "defer".asInstanceOf[defer]
+  def defer_ : defer_ = "defer".asInstanceOf[defer_]
   @scala.inline
   def edges: edges = "edges".asInstanceOf[edges]
   @scala.inline
   def endCursor: endCursor = "endCursor".asInstanceOf[endCursor]
   @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  def error_ : error_ = "error".asInstanceOf[error_]
   @scala.inline
   def fetch: fetch = "fetch".asInstanceOf[fetch]
   @scala.inline
@@ -275,7 +275,7 @@ object relayDashRuntimeStrings {
   @scala.inline
   def node: node = "node".asInstanceOf[node]
   @scala.inline
-  def pageInfo: pageInfo = "pageInfo".asInstanceOf[pageInfo]
+  def pageInfo_ : pageInfo_ = "pageInfo".asInstanceOf[pageInfo_]
   @scala.inline
   def pluralLinked: pluralLinked = "pluralLinked".asInstanceOf[pluralLinked]
   @scala.inline
@@ -285,7 +285,7 @@ object relayDashRuntimeStrings {
   @scala.inline
   def startCursor: startCursor = "startCursor".asInstanceOf[startCursor]
   @scala.inline
-  def stream: stream = "stream".asInstanceOf[stream]
+  def stream_ : stream_ = "stream".asInstanceOf[stream_]
   @scala.inline
   def update: update = "update".asInstanceOf[update]
 }

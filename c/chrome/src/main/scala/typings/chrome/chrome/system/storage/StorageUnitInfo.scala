@@ -23,8 +23,8 @@ trait StorageUnitInfo extends js.Object {
 object StorageUnitInfo {
   @scala.inline
   def apply(capacity: Double, id: String, name: String, `type`: String): StorageUnitInfo = {
-    val __obj = js.Dynamic.literal(capacity = capacity, id = id, name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(capacity = capacity.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageUnitInfo]
   }
 }

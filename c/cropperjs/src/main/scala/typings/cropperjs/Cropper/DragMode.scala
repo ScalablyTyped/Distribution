@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait DragMode extends js.Object
 
+object DragMode {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def crop: typings.cropperjs.cropperjsStrings.crop = this.cast("crop")
+  @scala.inline
+  def move: typings.cropperjs.cropperjsStrings.move = this.cast("move")
+  @scala.inline
+  def none: typings.cropperjs.cropperjsStrings.none = this.cast("none")
+}
+

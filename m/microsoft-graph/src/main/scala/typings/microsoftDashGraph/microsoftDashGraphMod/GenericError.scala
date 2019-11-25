@@ -15,8 +15,8 @@ object GenericError {
   @scala.inline
   def apply(code: String = null, message: String = null): GenericError = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenericError]
   }
 }

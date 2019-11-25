@@ -52,10 +52,10 @@ object PlusStreamStreamRestoreOptions {
     styles: PlusStreamLaunchWebviewStyles = null
   ): PlusStreamStreamRestoreOptions = {
     val __obj = js.Dynamic.literal()
-    if (extras != null) __obj.updateDynamic("extras")(extras)
-    if (splash != null) __obj.updateDynamic("splash")(splash)
-    if (splashscreen != null) __obj.updateDynamic("splashscreen")(splashscreen)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (extras != null) __obj.updateDynamic("extras")(extras.asInstanceOf[js.Any])
+    if (splash != null) __obj.updateDynamic("splash")(splash.asInstanceOf[js.Any])
+    if (splashscreen != null) __obj.updateDynamic("splashscreen")(splashscreen.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusStreamStreamRestoreOptions]
   }
 }

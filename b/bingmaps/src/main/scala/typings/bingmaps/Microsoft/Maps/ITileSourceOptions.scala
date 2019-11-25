@@ -33,7 +33,7 @@ object ITileSourceOptions {
     minZoom: Int | Double = null
   ): ITileSourceOptions = {
     val __obj = js.Dynamic.literal(uriConstructor = uriConstructor.asInstanceOf[js.Any])
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITileSourceOptions]

@@ -27,10 +27,10 @@ object HistoryParams {
   ): HistoryParams = {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (since != null) __obj.updateDynamic("since")(since)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryParams]
   }
 }

@@ -54,7 +54,7 @@ object Anon_BodyButtonGroupH {
     popupSlideUp: RegisteredStyle[ViewStyle],
     wrap: RegisteredStyle[ViewStyle]
   ): Anon_BodyButtonGroupH = {
-    val __obj = js.Dynamic.literal(body = body, buttonGroupH = buttonGroupH, buttonGroupV = buttonGroupV, buttonText = buttonText, buttonTextOperation = buttonTextOperation, buttonWrapH = buttonWrapH, buttonWrapV = buttonWrapV, close = close, closeWrap = closeWrap, container = container, footer = footer, header = header, innerContainer = innerContainer, maskClosable = maskClosable, operationBody = operationBody, operationContainer = operationContainer, popupContainer = popupContainer, popupSlideDown = popupSlideDown, popupSlideUp = popupSlideUp, wrap = wrap)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], buttonGroupH = buttonGroupH.asInstanceOf[js.Any], buttonGroupV = buttonGroupV.asInstanceOf[js.Any], buttonText = buttonText.asInstanceOf[js.Any], buttonTextOperation = buttonTextOperation.asInstanceOf[js.Any], buttonWrapH = buttonWrapH.asInstanceOf[js.Any], buttonWrapV = buttonWrapV.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], closeWrap = closeWrap.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], innerContainer = innerContainer.asInstanceOf[js.Any], maskClosable = maskClosable.asInstanceOf[js.Any], operationBody = operationBody.asInstanceOf[js.Any], operationContainer = operationContainer.asInstanceOf[js.Any], popupContainer = popupContainer.asInstanceOf[js.Any], popupSlideDown = popupSlideDown.asInstanceOf[js.Any], popupSlideUp = popupSlideUp.asInstanceOf[js.Any], wrap = wrap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BodyButtonGroupH]
   }

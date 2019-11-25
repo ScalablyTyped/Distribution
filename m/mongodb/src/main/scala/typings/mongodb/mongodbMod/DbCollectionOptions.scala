@@ -29,14 +29,14 @@ object DbCollectionOptions {
     wtimeout: Int | scala.Double = null
   ): DbCollectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j)
-    if (pkFactory != null) __obj.updateDynamic("pkFactory")(pkFactory)
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
-    if (readConcern != null) __obj.updateDynamic("readConcern")(readConcern)
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
-    if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions)
-    if (session != null) __obj.updateDynamic("session")(session)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j.asInstanceOf[js.Any])
+    if (pkFactory != null) __obj.updateDynamic("pkFactory")(pkFactory.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (readConcern != null) __obj.updateDynamic("readConcern")(readConcern.asInstanceOf[js.Any])
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
     if (wtimeout != null) __obj.updateDynamic("wtimeout")(wtimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[DbCollectionOptions]

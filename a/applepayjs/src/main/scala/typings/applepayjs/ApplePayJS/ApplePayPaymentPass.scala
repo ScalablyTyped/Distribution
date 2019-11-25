@@ -39,9 +39,9 @@ object ApplePayPaymentPass {
     deviceAccountIdentifier: String = null,
     deviceAccountNumberSuffix: String = null
   ): ApplePayPaymentPass = {
-    val __obj = js.Dynamic.literal(activationState = activationState, primaryAccountIdentifier = primaryAccountIdentifier, primaryAccountNumberSuffix = primaryAccountNumberSuffix)
-    if (deviceAccountIdentifier != null) __obj.updateDynamic("deviceAccountIdentifier")(deviceAccountIdentifier)
-    if (deviceAccountNumberSuffix != null) __obj.updateDynamic("deviceAccountNumberSuffix")(deviceAccountNumberSuffix)
+    val __obj = js.Dynamic.literal(activationState = activationState.asInstanceOf[js.Any], primaryAccountIdentifier = primaryAccountIdentifier.asInstanceOf[js.Any], primaryAccountNumberSuffix = primaryAccountNumberSuffix.asInstanceOf[js.Any])
+    if (deviceAccountIdentifier != null) __obj.updateDynamic("deviceAccountIdentifier")(deviceAccountIdentifier.asInstanceOf[js.Any])
+    if (deviceAccountNumberSuffix != null) __obj.updateDynamic("deviceAccountNumberSuffix")(deviceAccountNumberSuffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplePayPaymentPass]
   }
 }

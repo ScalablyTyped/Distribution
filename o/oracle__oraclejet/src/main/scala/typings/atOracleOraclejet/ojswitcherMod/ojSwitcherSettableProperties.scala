@@ -12,7 +12,7 @@ trait ojSwitcherSettableProperties extends JetSettableProperties {
 object ojSwitcherSettableProperties {
   @scala.inline
   def apply(value: String): ojSwitcherSettableProperties = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ojSwitcherSettableProperties]
   }

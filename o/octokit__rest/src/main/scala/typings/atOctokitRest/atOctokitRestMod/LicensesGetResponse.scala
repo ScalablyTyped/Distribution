@@ -37,7 +37,7 @@ object LicensesGetResponse {
     spdx_id: String,
     url: String
   ): LicensesGetResponse = {
-    val __obj = js.Dynamic.literal(body = body, conditions = conditions, description = description, featured = featured, html_url = html_url, implementation = implementation, key = key, limitations = limitations, name = name, node_id = node_id, permissions = permissions, spdx_id = spdx_id, url = url)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], conditions = conditions.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], featured = featured.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], implementation = implementation.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], limitations = limitations.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], spdx_id = spdx_id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LicensesGetResponse]
   }

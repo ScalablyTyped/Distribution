@@ -29,7 +29,7 @@ object SubnetInfo {
     subnetMask: String,
     subnetMaskLength: Double
   ): SubnetInfo = {
-    val __obj = js.Dynamic.literal(broadcastAddress = broadcastAddress, contains = js.Any.fromFunction1(contains), firstAddress = firstAddress, lastAddress = lastAddress, length = length, networkAddress = networkAddress, numHosts = numHosts, subnetMask = subnetMask, subnetMaskLength = subnetMaskLength)
+    val __obj = js.Dynamic.literal(broadcastAddress = broadcastAddress.asInstanceOf[js.Any], contains = js.Any.fromFunction1(contains), firstAddress = firstAddress.asInstanceOf[js.Any], lastAddress = lastAddress.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], networkAddress = networkAddress.asInstanceOf[js.Any], numHosts = numHosts.asInstanceOf[js.Any], subnetMask = subnetMask.asInstanceOf[js.Any], subnetMaskLength = subnetMaskLength.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SubnetInfo]
   }

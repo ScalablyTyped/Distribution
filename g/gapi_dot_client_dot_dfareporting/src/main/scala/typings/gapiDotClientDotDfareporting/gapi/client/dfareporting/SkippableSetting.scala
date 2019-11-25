@@ -24,10 +24,10 @@ object SkippableSetting {
     skippable: js.UndefOr[Boolean] = js.undefined
   ): SkippableSetting = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (progressOffset != null) __obj.updateDynamic("progressOffset")(progressOffset)
-    if (skipOffset != null) __obj.updateDynamic("skipOffset")(skipOffset)
-    if (!js.isUndefined(skippable)) __obj.updateDynamic("skippable")(skippable)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (progressOffset != null) __obj.updateDynamic("progressOffset")(progressOffset.asInstanceOf[js.Any])
+    if (skipOffset != null) __obj.updateDynamic("skipOffset")(skipOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(skippable)) __obj.updateDynamic("skippable")(skippable.asInstanceOf[js.Any])
     __obj.asInstanceOf[SkippableSetting]
   }
 }

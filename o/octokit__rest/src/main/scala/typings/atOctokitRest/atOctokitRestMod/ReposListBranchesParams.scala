@@ -30,10 +30,10 @@ object ReposListBranchesParams {
     per_page: Int | Double = null,
     `protected`: js.UndefOr[Boolean] = js.undefined
   ): ReposListBranchesParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
-    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`)
+    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposListBranchesParams]
   }
 }

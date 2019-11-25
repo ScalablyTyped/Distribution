@@ -13,8 +13,8 @@ object ActivityArgs {
   @scala.inline
   def apply(id: String = null, parentSpan: js.Object = null): ActivityArgs = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (parentSpan != null) __obj.updateDynamic("parentSpan")(parentSpan)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (parentSpan != null) __obj.updateDynamic("parentSpan")(parentSpan.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityArgs]
   }
 }

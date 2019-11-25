@@ -17,8 +17,8 @@ object DatabaseSchemaJson {
     fullTextCatalogs: js.Array[FullTextCatalog] = null,
     version: Int | Double = null
   ): DatabaseSchemaJson = {
-    val __obj = js.Dynamic.literal(stores = stores)
-    if (fullTextCatalogs != null) __obj.updateDynamic("fullTextCatalogs")(fullTextCatalogs)
+    val __obj = js.Dynamic.literal(stores = stores.asInstanceOf[js.Any])
+    if (fullTextCatalogs != null) __obj.updateDynamic("fullTextCatalogs")(fullTextCatalogs.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseSchemaJson]
   }

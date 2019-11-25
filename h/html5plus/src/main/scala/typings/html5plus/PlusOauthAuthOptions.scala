@@ -72,12 +72,12 @@ object PlusOauthAuthOptions {
     state: String = null
   ): PlusOauthAuthOptions = {
     val __obj = js.Dynamic.literal()
-    if (appid != null) __obj.updateDynamic("appid")(appid)
-    if (appkey != null) __obj.updateDynamic("appkey")(appkey)
-    if (appsecret != null) __obj.updateDynamic("appsecret")(appsecret)
-    if (redirect_url != null) __obj.updateDynamic("redirect_url")(redirect_url)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (appid != null) __obj.updateDynamic("appid")(appid.asInstanceOf[js.Any])
+    if (appkey != null) __obj.updateDynamic("appkey")(appkey.asInstanceOf[js.Any])
+    if (appsecret != null) __obj.updateDynamic("appsecret")(appsecret.asInstanceOf[js.Any])
+    if (redirect_url != null) __obj.updateDynamic("redirect_url")(redirect_url.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusOauthAuthOptions]
   }
 }

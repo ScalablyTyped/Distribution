@@ -35,10 +35,10 @@ object ServiceOptions {
     useCors: js.UndefOr[Boolean] = js.undefined
   ): ServiceOptions = {
     val __obj = js.Dynamic.literal()
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (!js.isUndefined(useCors)) __obj.updateDynamic("useCors")(useCors)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCors)) __obj.updateDynamic("useCors")(useCors.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceOptions]
   }
 }

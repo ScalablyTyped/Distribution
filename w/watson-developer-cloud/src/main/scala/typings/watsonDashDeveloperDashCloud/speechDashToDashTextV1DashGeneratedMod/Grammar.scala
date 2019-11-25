@@ -19,8 +19,8 @@ trait Grammar extends js.Object {
 object Grammar {
   @scala.inline
   def apply(name: String, out_of_vocabulary_words: Double, status: String, error: String = null): Grammar = {
-    val __obj = js.Dynamic.literal(name = name, out_of_vocabulary_words = out_of_vocabulary_words, status = status)
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], out_of_vocabulary_words = out_of_vocabulary_words.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[Grammar]
   }
 }

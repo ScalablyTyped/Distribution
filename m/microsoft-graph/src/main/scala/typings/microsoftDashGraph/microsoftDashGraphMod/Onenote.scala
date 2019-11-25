@@ -37,13 +37,13 @@ object Onenote {
     sections: js.Array[OnenoteSection] = null
   ): Onenote = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (notebooks != null) __obj.updateDynamic("notebooks")(notebooks)
-    if (operations != null) __obj.updateDynamic("operations")(operations)
-    if (pages != null) __obj.updateDynamic("pages")(pages)
-    if (resources != null) __obj.updateDynamic("resources")(resources)
-    if (sectionGroups != null) __obj.updateDynamic("sectionGroups")(sectionGroups)
-    if (sections != null) __obj.updateDynamic("sections")(sections)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (notebooks != null) __obj.updateDynamic("notebooks")(notebooks.asInstanceOf[js.Any])
+    if (operations != null) __obj.updateDynamic("operations")(operations.asInstanceOf[js.Any])
+    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
+    if (sectionGroups != null) __obj.updateDynamic("sectionGroups")(sectionGroups.asInstanceOf[js.Any])
+    if (sections != null) __obj.updateDynamic("sections")(sections.asInstanceOf[js.Any])
     __obj.asInstanceOf[Onenote]
   }
 }

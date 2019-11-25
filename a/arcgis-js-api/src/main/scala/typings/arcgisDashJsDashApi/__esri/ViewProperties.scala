@@ -101,18 +101,18 @@ object ViewProperties {
   ): ViewProperties = {
     val __obj = js.Dynamic.literal()
     if (allLayerViews != null) __obj.updateDynamic("allLayerViews")(allLayerViews.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation)
-    if (basemapView != null) __obj.updateDynamic("basemapView")(basemapView)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (basemapView != null) __obj.updateDynamic("basemapView")(basemapView.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (fatalError != null) __obj.updateDynamic("fatalError")(fatalError)
+    if (fatalError != null) __obj.updateDynamic("fatalError")(fatalError.asInstanceOf[js.Any])
     if (graphics != null) __obj.updateDynamic("graphics")(graphics.asInstanceOf[js.Any])
     if (layerViews != null) __obj.updateDynamic("layerViews")(layerViews.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (padding != null) __obj.updateDynamic("padding")(padding)
-    if (popup != null) __obj.updateDynamic("popup")(popup)
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
-    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent)
-    if (ui != null) __obj.updateDynamic("ui")(ui)
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
+    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent.asInstanceOf[js.Any])
+    if (ui != null) __obj.updateDynamic("ui")(ui.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewProperties]
   }
 }

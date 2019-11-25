@@ -35,9 +35,9 @@ object IOptions {
     toolbar: Toolbar[Widget] = null
   ): IOptions[T] = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-    if (node != null) __obj.updateDynamic("node")(node)
-    if (reveal != null) __obj.updateDynamic("reveal")(reveal)
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar)
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    if (reveal != null) __obj.updateDynamic("reveal")(reveal.asInstanceOf[js.Any])
+    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions[T]]
   }
 }

@@ -28,9 +28,9 @@ object ProtocolSpec {
     protocols: js.Array[Protocol] = null
   ): ProtocolSpec = {
     val __obj = js.Dynamic.literal()
-    if (methods != null) __obj.updateDynamic("methods")(methods)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (protocols != null) __obj.updateDynamic("protocols")(protocols)
+    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtocolSpec]
   }
 }

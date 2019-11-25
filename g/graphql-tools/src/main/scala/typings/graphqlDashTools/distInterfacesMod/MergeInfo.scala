@@ -3,9 +3,9 @@ package typings.graphqlDashTools.distInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
 import typings.graphqlDashTools.Anon_Field
-import typings.graphqlDashTools.graphqlDashToolsStrings.mutation
-import typings.graphqlDashTools.graphqlDashToolsStrings.query
-import typings.graphqlDashTools.graphqlDashToolsStrings.subscription
+import typings.graphqlDashTools.graphqlDashToolsStrings.mutation_
+import typings.graphqlDashTools.graphqlDashToolsStrings.query_
+import typings.graphqlDashTools.graphqlDashToolsStrings.subscription_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait MergeInfo extends js.Object {
   def delegateToSchema[TContext](options: IDelegateToSchemaOptions[TContext]): js.Any = js.native
   @JSName("delegate")
   def delegate_mutation(
-    `type`: mutation,
+    `type`: mutation_,
     fieldName: String,
     args: StringDictionary[js.Any],
     context: StringDictionary[js.Any],
@@ -24,7 +24,7 @@ trait MergeInfo extends js.Object {
   ): js.Any = js.native
   @JSName("delegate")
   def delegate_mutation(
-    `type`: mutation,
+    `type`: mutation_,
     fieldName: String,
     args: StringDictionary[js.Any],
     context: StringDictionary[js.Any],
@@ -33,7 +33,7 @@ trait MergeInfo extends js.Object {
   ): js.Any = js.native
   @JSName("delegate")
   def delegate_query(
-    `type`: query,
+    `type`: query_,
     fieldName: String,
     args: StringDictionary[js.Any],
     context: StringDictionary[js.Any],
@@ -41,7 +41,7 @@ trait MergeInfo extends js.Object {
   ): js.Any = js.native
   @JSName("delegate")
   def delegate_query(
-    `type`: query,
+    `type`: query_,
     fieldName: String,
     args: StringDictionary[js.Any],
     context: StringDictionary[js.Any],
@@ -50,7 +50,7 @@ trait MergeInfo extends js.Object {
   ): js.Any = js.native
   @JSName("delegate")
   def delegate_subscription(
-    `type`: subscription,
+    `type`: subscription_,
     fieldName: String,
     args: StringDictionary[js.Any],
     context: StringDictionary[js.Any],
@@ -58,7 +58,7 @@ trait MergeInfo extends js.Object {
   ): js.Any = js.native
   @JSName("delegate")
   def delegate_subscription(
-    `type`: subscription,
+    `type`: subscription_,
     fieldName: String,
     args: StringDictionary[js.Any],
     context: StringDictionary[js.Any],

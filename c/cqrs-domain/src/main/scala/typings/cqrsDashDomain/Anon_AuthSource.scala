@@ -37,18 +37,18 @@ object Anon_AuthSource {
     username: String = null
   ): Anon_AuthSource = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (authSource != null) __obj.updateDynamic("authSource")(authSource)
-    if (dbName != null) __obj.updateDynamic("dbName")(dbName)
-    if (eventsCollectionName != null) __obj.updateDynamic("eventsCollectionName")(eventsCollectionName)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (password != null) __obj.updateDynamic("password")(password)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (authSource != null) __obj.updateDynamic("authSource")(authSource.asInstanceOf[js.Any])
+    if (dbName != null) __obj.updateDynamic("dbName")(dbName.asInstanceOf[js.Any])
+    if (eventsCollectionName != null) __obj.updateDynamic("eventsCollectionName")(eventsCollectionName.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (snapshotsCollectionName != null) __obj.updateDynamic("snapshotsCollectionName")(snapshotsCollectionName)
+    if (snapshotsCollectionName != null) __obj.updateDynamic("snapshotsCollectionName")(snapshotsCollectionName.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (transactionsCollectionName != null) __obj.updateDynamic("transactionsCollectionName")(transactionsCollectionName)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (transactionsCollectionName != null) __obj.updateDynamic("transactionsCollectionName")(transactionsCollectionName.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AuthSource]
   }
 }

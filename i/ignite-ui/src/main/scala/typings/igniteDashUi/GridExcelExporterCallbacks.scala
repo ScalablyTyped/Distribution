@@ -153,19 +153,19 @@ object GridExcelExporterCallbacks {
     summaryExporting: js.Function = null
   ): GridExcelExporterCallbacks = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (cellExported != null) __obj.updateDynamic("cellExported")(cellExported)
-    if (cellExporting != null) __obj.updateDynamic("cellExporting")(cellExporting)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (exportEnding != null) __obj.updateDynamic("exportEnding")(exportEnding)
-    if (exportStarting != null) __obj.updateDynamic("exportStarting")(exportStarting)
-    if (headerCellExported != null) __obj.updateDynamic("headerCellExported")(headerCellExported)
-    if (headerCellExporting != null) __obj.updateDynamic("headerCellExporting")(headerCellExporting)
-    if (rowExported != null) __obj.updateDynamic("rowExported")(rowExported)
-    if (rowExporting != null) __obj.updateDynamic("rowExporting")(rowExporting)
-    if (success != null) __obj.updateDynamic("success")(success)
-    if (summaryExported != null) __obj.updateDynamic("summaryExported")(summaryExported)
-    if (summaryExporting != null) __obj.updateDynamic("summaryExporting")(summaryExporting)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (cellExported != null) __obj.updateDynamic("cellExported")(cellExported.asInstanceOf[js.Any])
+    if (cellExporting != null) __obj.updateDynamic("cellExporting")(cellExporting.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (exportEnding != null) __obj.updateDynamic("exportEnding")(exportEnding.asInstanceOf[js.Any])
+    if (exportStarting != null) __obj.updateDynamic("exportStarting")(exportStarting.asInstanceOf[js.Any])
+    if (headerCellExported != null) __obj.updateDynamic("headerCellExported")(headerCellExported.asInstanceOf[js.Any])
+    if (headerCellExporting != null) __obj.updateDynamic("headerCellExporting")(headerCellExporting.asInstanceOf[js.Any])
+    if (rowExported != null) __obj.updateDynamic("rowExported")(rowExported.asInstanceOf[js.Any])
+    if (rowExporting != null) __obj.updateDynamic("rowExporting")(rowExporting.asInstanceOf[js.Any])
+    if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
+    if (summaryExported != null) __obj.updateDynamic("summaryExported")(summaryExported.asInstanceOf[js.Any])
+    if (summaryExporting != null) __obj.updateDynamic("summaryExporting")(summaryExporting.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridExcelExporterCallbacks]
   }
 }

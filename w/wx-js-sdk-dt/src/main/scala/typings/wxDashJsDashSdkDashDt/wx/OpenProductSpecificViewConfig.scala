@@ -25,7 +25,7 @@ object OpenProductSpecificViewConfig {
     success: /* res */ js.UndefOr[js.Any] => Unit = null,
     viewType: Int | Double = null
   ): OpenProductSpecificViewConfig = {
-    val __obj = js.Dynamic.literal(productId = productId)
+    val __obj = js.Dynamic.literal(productId = productId.asInstanceOf[js.Any])
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))

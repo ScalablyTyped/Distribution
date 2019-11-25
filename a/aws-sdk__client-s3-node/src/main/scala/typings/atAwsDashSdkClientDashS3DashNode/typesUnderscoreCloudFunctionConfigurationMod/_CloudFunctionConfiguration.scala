@@ -59,11 +59,11 @@ object _CloudFunctionConfiguration {
     InvocationRole: String = null
   ): _CloudFunctionConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (CloudFunction != null) __obj.updateDynamic("CloudFunction")(CloudFunction)
+    if (CloudFunction != null) __obj.updateDynamic("CloudFunction")(CloudFunction.asInstanceOf[js.Any])
     if (Event != null) __obj.updateDynamic("Event")(Event.asInstanceOf[js.Any])
     if (Events != null) __obj.updateDynamic("Events")(Events.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (InvocationRole != null) __obj.updateDynamic("InvocationRole")(InvocationRole)
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (InvocationRole != null) __obj.updateDynamic("InvocationRole")(InvocationRole.asInstanceOf[js.Any])
     __obj.asInstanceOf[_CloudFunctionConfiguration]
   }
 }

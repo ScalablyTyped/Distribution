@@ -110,18 +110,18 @@ object JSTreeStaticDefaults {
     types: js.Any = null,
     unique: JSTreeStaticDefaultsUnique = null
   ): JSTreeStaticDefaults = {
-    val __obj = js.Dynamic.literal(core = core, plugins = plugins)
-    if (checkbox != null) __obj.updateDynamic("checkbox")(checkbox)
+    val __obj = js.Dynamic.literal(core = core.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any])
+    if (checkbox != null) __obj.updateDynamic("checkbox")(checkbox.asInstanceOf[js.Any])
     if (conditionalclose != null) __obj.updateDynamic("conditionalclose")(js.Any.fromFunction0(conditionalclose))
     if (conditionalselect != null) __obj.updateDynamic("conditionalselect")(js.Any.fromFunction0(conditionalselect))
-    if (contextmenu != null) __obj.updateDynamic("contextmenu")(contextmenu)
-    if (dnd != null) __obj.updateDynamic("dnd")(dnd)
-    if (massload != null) __obj.updateDynamic("massload")(massload)
-    if (search != null) __obj.updateDynamic("search")(search)
+    if (contextmenu != null) __obj.updateDynamic("contextmenu")(contextmenu.asInstanceOf[js.Any])
+    if (dnd != null) __obj.updateDynamic("dnd")(dnd.asInstanceOf[js.Any])
+    if (massload != null) __obj.updateDynamic("massload")(massload.asInstanceOf[js.Any])
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (types != null) __obj.updateDynamic("types")(types)
-    if (unique != null) __obj.updateDynamic("unique")(unique)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
+    if (unique != null) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSTreeStaticDefaults]
   }
 }

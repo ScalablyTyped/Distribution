@@ -24,12 +24,12 @@ object htmlDataProcessorOptions {
     protectedWhitespaces: js.UndefOr[Boolean] = js.undefined
   ): htmlDataProcessorOptions = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (!js.isUndefined(dontFilter)) __obj.updateDynamic("dontFilter")(dontFilter)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(dontFilter)) __obj.updateDynamic("dontFilter")(dontFilter.asInstanceOf[js.Any])
     if (enterMode != null) __obj.updateDynamic("enterMode")(enterMode.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (!js.isUndefined(fixForBody)) __obj.updateDynamic("fixForBody")(fixForBody)
-    if (!js.isUndefined(protectedWhitespaces)) __obj.updateDynamic("protectedWhitespaces")(protectedWhitespaces)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixForBody)) __obj.updateDynamic("fixForBody")(fixForBody.asInstanceOf[js.Any])
+    if (!js.isUndefined(protectedWhitespaces)) __obj.updateDynamic("protectedWhitespaces")(protectedWhitespaces.asInstanceOf[js.Any])
     __obj.asInstanceOf[htmlDataProcessorOptions]
   }
 }

@@ -24,12 +24,12 @@ object StockChartCategoryAxisItemAutoBaseUnitSteps {
     years: js.Any = null
   ): StockChartCategoryAxisItemAutoBaseUnitSteps = {
     val __obj = js.Dynamic.literal()
-    if (days != null) __obj.updateDynamic("days")(days)
-    if (hours != null) __obj.updateDynamic("hours")(hours)
-    if (minutes != null) __obj.updateDynamic("minutes")(minutes)
-    if (months != null) __obj.updateDynamic("months")(months)
-    if (weeks != null) __obj.updateDynamic("weeks")(weeks)
-    if (years != null) __obj.updateDynamic("years")(years)
+    if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
+    if (hours != null) __obj.updateDynamic("hours")(hours.asInstanceOf[js.Any])
+    if (minutes != null) __obj.updateDynamic("minutes")(minutes.asInstanceOf[js.Any])
+    if (months != null) __obj.updateDynamic("months")(months.asInstanceOf[js.Any])
+    if (weeks != null) __obj.updateDynamic("weeks")(weeks.asInstanceOf[js.Any])
+    if (years != null) __obj.updateDynamic("years")(years.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartCategoryAxisItemAutoBaseUnitSteps]
   }
 }

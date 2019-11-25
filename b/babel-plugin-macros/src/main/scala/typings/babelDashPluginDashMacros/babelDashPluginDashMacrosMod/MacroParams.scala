@@ -16,7 +16,7 @@ trait MacroParams extends js.Object {
 object MacroParams {
   @scala.inline
   def apply(babel: TypeofBabel, references: Anon_Default with References, state: js.Any): MacroParams = {
-    val __obj = js.Dynamic.literal(babel = babel, references = references, state = state)
+    val __obj = js.Dynamic.literal(babel = babel.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MacroParams]
   }

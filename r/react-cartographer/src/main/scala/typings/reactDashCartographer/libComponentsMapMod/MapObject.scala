@@ -12,7 +12,7 @@ trait MapObject extends js.Object {
 object MapObject {
   @scala.inline
   def apply(data: MapData, mapId: String): MapObject = {
-    val __obj = js.Dynamic.literal(data = data, mapId = mapId)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], mapId = mapId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MapObject]
   }

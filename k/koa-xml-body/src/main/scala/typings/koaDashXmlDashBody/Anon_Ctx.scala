@@ -30,11 +30,11 @@ object Anon_Ctx {
     xmlOptions: Options = null
   ): Anon_Ctx = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (onerror != null) __obj.updateDynamic("onerror")(js.Any.fromFunction2(onerror))
-    if (xmlOptions != null) __obj.updateDynamic("xmlOptions")(xmlOptions)
+    if (xmlOptions != null) __obj.updateDynamic("xmlOptions")(xmlOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Ctx]
   }
 }

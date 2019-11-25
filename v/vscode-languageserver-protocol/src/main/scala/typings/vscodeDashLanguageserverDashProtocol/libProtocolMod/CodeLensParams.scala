@@ -15,7 +15,7 @@ trait CodeLensParams extends js.Object {
 object CodeLensParams {
   @scala.inline
   def apply(textDocument: TextDocumentIdentifier): CodeLensParams = {
-    val __obj = js.Dynamic.literal(textDocument = textDocument)
+    val __obj = js.Dynamic.literal(textDocument = textDocument.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CodeLensParams]
   }

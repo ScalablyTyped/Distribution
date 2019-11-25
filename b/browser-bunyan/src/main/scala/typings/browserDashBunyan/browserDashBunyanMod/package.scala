@@ -9,7 +9,6 @@ package object browserDashBunyanMod {
   import typings.browserDashBunyan.Anon_ConsoleFormattedStream
   import typings.browserDashBunyan.Typeofbunyan
   import typings.bunyan.bunyanMod.LoggerOptions
-  import typings.bunyan.bunyanMod.^
 
-  type BrowserBunyan = (Instantiable1[/* options */ LoggerOptions, ^]) with Typeofbunyan with Anon_ConsoleFormattedStream
+  type BrowserBunyan = (Instantiable1[/* options */ LoggerOptions, typings.bunyan.bunyanMod.^]) with Typeofbunyan with Anon_ConsoleFormattedStream
 }

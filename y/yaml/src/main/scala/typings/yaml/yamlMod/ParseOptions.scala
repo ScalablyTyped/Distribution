@@ -57,14 +57,14 @@ object ParseOptions {
     version: String = null
   ): ParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(keepBlobsInJSON)) __obj.updateDynamic("keepBlobsInJSON")(keepBlobsInJSON)
-    if (!js.isUndefined(keepCstNodes)) __obj.updateDynamic("keepCstNodes")(keepCstNodes)
-    if (!js.isUndefined(keepNodeTypes)) __obj.updateDynamic("keepNodeTypes")(keepNodeTypes)
-    if (!js.isUndefined(mapAsMap)) __obj.updateDynamic("mapAsMap")(mapAsMap)
-    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge)
+    if (!js.isUndefined(keepBlobsInJSON)) __obj.updateDynamic("keepBlobsInJSON")(keepBlobsInJSON.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepCstNodes)) __obj.updateDynamic("keepCstNodes")(keepCstNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepNodeTypes)) __obj.updateDynamic("keepNodeTypes")(keepNodeTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(mapAsMap)) __obj.updateDynamic("mapAsMap")(mapAsMap.asInstanceOf[js.Any])
+    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }
 }

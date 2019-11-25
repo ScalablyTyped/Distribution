@@ -22,7 +22,7 @@ trait GetPullRequestOutput extends OutputTypesUnion {
 object GetPullRequestOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, pullRequest: _UnmarshalledPullRequest): GetPullRequestOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, pullRequest = pullRequest)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], pullRequest = pullRequest.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetPullRequestOutput]
   }

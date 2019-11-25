@@ -29,9 +29,9 @@ object GetBucketAclOutput {
     Grants: js.Array[_UnmarshalledGrant] = null,
     Owner: _UnmarshalledOwner = null
   ): GetBucketAclOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Grants != null) __obj.updateDynamic("Grants")(Grants)
-    if (Owner != null) __obj.updateDynamic("Owner")(Owner)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Grants != null) __obj.updateDynamic("Grants")(Grants.asInstanceOf[js.Any])
+    if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketAclOutput]
   }
 }

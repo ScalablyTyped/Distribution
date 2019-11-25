@@ -13,7 +13,7 @@ trait Anon_Aggregate extends js.Object {
 object Anon_Aggregate {
   @scala.inline
   def apply(aggregate: String, aggregateId: String, context: String): Anon_Aggregate = {
-    val __obj = js.Dynamic.literal(aggregate = aggregate, aggregateId = aggregateId, context = context)
+    val __obj = js.Dynamic.literal(aggregate = aggregate.asInstanceOf[js.Any], aggregateId = aggregateId.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Aggregate]
   }

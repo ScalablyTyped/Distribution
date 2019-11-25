@@ -12,7 +12,7 @@ trait i18n extends js.Object {
 object i18n {
   @scala.inline
   def apply(reportNamespaces: ReportNamespaces): i18n = {
-    val __obj = js.Dynamic.literal(reportNamespaces = reportNamespaces)
+    val __obj = js.Dynamic.literal(reportNamespaces = reportNamespaces.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[i18n]
   }

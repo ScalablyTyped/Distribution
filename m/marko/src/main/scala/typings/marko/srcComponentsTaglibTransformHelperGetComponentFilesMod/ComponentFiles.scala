@@ -19,10 +19,10 @@ object ComponentFiles {
     file: String = null,
     `package`: String = null
   ): ComponentFiles = {
-    val __obj = js.Dynamic.literal(styles = styles)
-    if (browserFile != null) __obj.updateDynamic("browserFile")(browserFile)
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (`package` != null) __obj.updateDynamic("package")(`package`)
+    val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any])
+    if (browserFile != null) __obj.updateDynamic("browserFile")(browserFile.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (`package` != null) __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentFiles]
   }
 }

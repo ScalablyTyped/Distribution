@@ -13,7 +13,7 @@ trait Anon_HasDeprecationWarnings extends js.Object {
 object Anon_HasDeprecationWarnings {
   @scala.inline
   def apply(hasDeprecationWarnings: Boolean, options: AllOptions): Anon_HasDeprecationWarnings = {
-    val __obj = js.Dynamic.literal(hasDeprecationWarnings = hasDeprecationWarnings, options = options)
+    val __obj = js.Dynamic.literal(hasDeprecationWarnings = hasDeprecationWarnings.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HasDeprecationWarnings]
   }

@@ -12,7 +12,7 @@ trait InsightsServiceAccountResponseTotal_count_graph extends js.Object {
 object InsightsServiceAccountResponseTotal_count_graph {
   @scala.inline
   def apply(data_points: js.Array[InsightsServiceAccountResponseDataPointsItem], graph_name: String): InsightsServiceAccountResponseTotal_count_graph = {
-    val __obj = js.Dynamic.literal(data_points = data_points, graph_name = graph_name)
+    val __obj = js.Dynamic.literal(data_points = data_points.asInstanceOf[js.Any], graph_name = graph_name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServiceAccountResponseTotal_count_graph]
   }

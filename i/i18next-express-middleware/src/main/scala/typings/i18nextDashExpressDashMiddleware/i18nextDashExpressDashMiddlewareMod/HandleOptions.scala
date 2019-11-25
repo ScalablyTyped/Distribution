@@ -17,7 +17,7 @@ object HandleOptions {
   ): HandleOptions = {
     val __obj = js.Dynamic.literal()
     if (ignoreRoutes != null) __obj.updateDynamic("ignoreRoutes")(ignoreRoutes.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeLngFromUrl)) __obj.updateDynamic("removeLngFromUrl")(removeLngFromUrl)
+    if (!js.isUndefined(removeLngFromUrl)) __obj.updateDynamic("removeLngFromUrl")(removeLngFromUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandleOptions]
   }
 }

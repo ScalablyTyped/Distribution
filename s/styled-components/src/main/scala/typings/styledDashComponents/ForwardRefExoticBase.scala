@@ -28,10 +28,10 @@ object ForwardRefExoticBase {
     displayName: String = null,
     propTypes: WeakValidationMap[propTypes] = null
   ): ForwardRefExoticBase[P] = {
-    val __obj = js.Dynamic.literal($$typeof = $$typeof)
-    if (defaultProps != null) __obj.updateDynamic("defaultProps")(defaultProps)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (propTypes != null) __obj.updateDynamic("propTypes")(propTypes)
+    val __obj = js.Dynamic.literal($$typeof = $$typeof.asInstanceOf[js.Any])
+    if (defaultProps != null) __obj.updateDynamic("defaultProps")(defaultProps.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (propTypes != null) __obj.updateDynamic("propTypes")(propTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForwardRefExoticBase[P]]
   }
 }

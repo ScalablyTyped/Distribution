@@ -20,8 +20,8 @@ object MUIDataTableProps {
     options: MUIDataTableOptions = null,
     title: String | ReactNode = null
   ): MUIDataTableProps = {
-    val __obj = js.Dynamic.literal(columns = columns, data = data)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableProps]
   }

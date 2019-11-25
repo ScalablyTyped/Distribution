@@ -38,8 +38,8 @@ trait IColumnsMovedArgs extends ChangedArgs {
 object IColumnsMovedArgs {
   @scala.inline
   def apply(destination: Double, index: Double, region: ColumnRegion, span: Double, `type`: `columns-moved`): IColumnsMovedArgs = {
-    val __obj = js.Dynamic.literal(destination = destination, index = index, region = region, span = span)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnsMovedArgs]
   }
 }

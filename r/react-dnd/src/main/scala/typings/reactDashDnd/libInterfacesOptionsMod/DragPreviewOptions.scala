@@ -50,7 +50,7 @@ object DragPreviewOptions {
     val __obj = js.Dynamic.literal()
     if (anchorX != null) __obj.updateDynamic("anchorX")(anchorX.asInstanceOf[js.Any])
     if (anchorY != null) __obj.updateDynamic("anchorY")(anchorY.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureDraggingState)) __obj.updateDynamic("captureDraggingState")(captureDraggingState)
+    if (!js.isUndefined(captureDraggingState)) __obj.updateDynamic("captureDraggingState")(captureDraggingState.asInstanceOf[js.Any])
     if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
     if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragPreviewOptions]

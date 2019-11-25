@@ -16,3 +16,24 @@ import scala.scalajs.js.annotation._
 */
 trait GoogleActionsV2OrdersLineItemType extends js.Object
 
+object GoogleActionsV2OrdersLineItemType {
+  @scala.inline
+  def DELIVERY: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.DELIVERY = this.cast("DELIVERY")
+  @scala.inline
+  def DISCOUNT: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.DISCOUNT = this.cast("DISCOUNT")
+  @scala.inline
+  def FEE: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.FEE = this.cast("FEE")
+  @scala.inline
+  def GRATUITY: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.GRATUITY = this.cast("GRATUITY")
+  @scala.inline
+  def REGULAR: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.REGULAR = this.cast("REGULAR")
+  @scala.inline
+  def SUBTOTAL: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.SUBTOTAL = this.cast("SUBTOTAL")
+  @scala.inline
+  def TAX: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.TAX = this.cast("TAX")
+  @scala.inline
+  def UNSPECIFIED: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.UNSPECIFIED = this.cast("UNSPECIFIED")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -21,7 +21,7 @@ object Anon_GrayBorderBox {
     icon: RegisteredStyle[ImageStyle],
     text: RegisteredStyle[TextStyle]
   ): Anon_GrayBorderBox = {
-    val __obj = js.Dynamic.literal(grayBorderBox = grayBorderBox, icon = icon, text = text)
+    val __obj = js.Dynamic.literal(grayBorderBox = grayBorderBox.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GrayBorderBox]
   }

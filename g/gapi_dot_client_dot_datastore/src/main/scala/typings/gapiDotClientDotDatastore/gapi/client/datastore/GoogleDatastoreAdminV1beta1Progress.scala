@@ -21,8 +21,8 @@ object GoogleDatastoreAdminV1beta1Progress {
   @scala.inline
   def apply(workCompleted: String = null, workEstimated: String = null): GoogleDatastoreAdminV1beta1Progress = {
     val __obj = js.Dynamic.literal()
-    if (workCompleted != null) __obj.updateDynamic("workCompleted")(workCompleted)
-    if (workEstimated != null) __obj.updateDynamic("workEstimated")(workEstimated)
+    if (workCompleted != null) __obj.updateDynamic("workCompleted")(workCompleted.asInstanceOf[js.Any])
+    if (workEstimated != null) __obj.updateDynamic("workEstimated")(workEstimated.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleDatastoreAdminV1beta1Progress]
   }
 }

@@ -22,7 +22,7 @@ object CheckboxOptionType {
     onChange: /* e */ CheckboxChangeEvent => Unit = null
   ): CheckboxOptionType = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[CheckboxOptionType]

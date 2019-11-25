@@ -26,9 +26,9 @@ object SpeechRecognitionResults {
   ): SpeechRecognitionResults = {
     val __obj = js.Dynamic.literal()
     if (result_index != null) __obj.updateDynamic("result_index")(result_index.asInstanceOf[js.Any])
-    if (results != null) __obj.updateDynamic("results")(results)
-    if (speaker_labels != null) __obj.updateDynamic("speaker_labels")(speaker_labels)
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
+    if (speaker_labels != null) __obj.updateDynamic("speaker_labels")(speaker_labels.asInstanceOf[js.Any])
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechRecognitionResults]
   }
 }

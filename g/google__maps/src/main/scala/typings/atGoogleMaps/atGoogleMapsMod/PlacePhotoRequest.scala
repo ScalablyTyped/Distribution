@@ -29,7 +29,7 @@ trait PlacePhotoRequest extends js.Object {
 object PlacePhotoRequest {
   @scala.inline
   def apply(photoreference: String, maxheight: Int | Double = null, maxwidth: Int | Double = null): PlacePhotoRequest = {
-    val __obj = js.Dynamic.literal(photoreference = photoreference)
+    val __obj = js.Dynamic.literal(photoreference = photoreference.asInstanceOf[js.Any])
     if (maxheight != null) __obj.updateDynamic("maxheight")(maxheight.asInstanceOf[js.Any])
     if (maxwidth != null) __obj.updateDynamic("maxwidth")(maxwidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlacePhotoRequest]

@@ -26,11 +26,11 @@ object PropertiesQuery {
     sort: js.UndefOr[Boolean] = js.undefined
   ): PropertiesQuery = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (docFormat != null) __obj.updateDynamic("docFormat")(docFormat)
-    if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (docFormat != null) __obj.updateDynamic("docFormat")(docFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertiesQuery]
   }
 }

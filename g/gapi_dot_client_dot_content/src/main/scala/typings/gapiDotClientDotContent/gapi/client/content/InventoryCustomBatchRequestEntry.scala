@@ -28,10 +28,10 @@ object InventoryCustomBatchRequestEntry {
   ): InventoryCustomBatchRequestEntry = {
     val __obj = js.Dynamic.literal()
     if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
-    if (inventory != null) __obj.updateDynamic("inventory")(inventory)
-    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
-    if (storeCode != null) __obj.updateDynamic("storeCode")(storeCode)
+    if (inventory != null) __obj.updateDynamic("inventory")(inventory.asInstanceOf[js.Any])
+    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
+    if (storeCode != null) __obj.updateDynamic("storeCode")(storeCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryCustomBatchRequestEntry]
   }
 }

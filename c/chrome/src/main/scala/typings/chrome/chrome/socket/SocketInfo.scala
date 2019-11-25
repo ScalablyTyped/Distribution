@@ -23,10 +23,10 @@ object SocketInfo {
     peerAddress: String = null,
     peerPort: Int | Double = null
   ): SocketInfo = {
-    val __obj = js.Dynamic.literal(connected = connected, socketType = socketType)
-    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
+    val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], socketType = socketType.asInstanceOf[js.Any])
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
     if (localPort != null) __obj.updateDynamic("localPort")(localPort.asInstanceOf[js.Any])
-    if (peerAddress != null) __obj.updateDynamic("peerAddress")(peerAddress)
+    if (peerAddress != null) __obj.updateDynamic("peerAddress")(peerAddress.asInstanceOf[js.Any])
     if (peerPort != null) __obj.updateDynamic("peerPort")(peerPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketInfo]
   }

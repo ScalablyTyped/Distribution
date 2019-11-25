@@ -12,7 +12,7 @@ trait Metadata extends js.Object {
 object Metadata {
   @scala.inline
   def apply(files: StringDictionary[File]): Metadata = {
-    val __obj = js.Dynamic.literal(files = files)
+    val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Metadata]
   }

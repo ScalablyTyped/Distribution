@@ -22,11 +22,11 @@ object ControlgroupOptions {
     `type`: String = null
   ): ControlgroupOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(corners)) __obj.updateDynamic("corners")(corners)
-    if (!js.isUndefined(excludeInvisible)) __obj.updateDynamic("excludeInvisible")(excludeInvisible)
-    if (!js.isUndefined(mini)) __obj.updateDynamic("mini")(mini)
-    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(corners)) __obj.updateDynamic("corners")(corners.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludeInvisible)) __obj.updateDynamic("excludeInvisible")(excludeInvisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(mini)) __obj.updateDynamic("mini")(mini.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControlgroupOptions]
   }
 }

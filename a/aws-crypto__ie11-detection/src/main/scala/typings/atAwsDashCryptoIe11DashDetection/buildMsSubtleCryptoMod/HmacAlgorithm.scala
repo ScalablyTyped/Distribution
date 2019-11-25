@@ -13,7 +13,7 @@ trait HmacAlgorithm extends js.Object {
 object HmacAlgorithm {
   @scala.inline
   def apply(hash: HashAlgorithm, name: HMAC): HmacAlgorithm = {
-    val __obj = js.Dynamic.literal(hash = hash, name = name)
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HmacAlgorithm]
   }

@@ -19,9 +19,9 @@ object Anon_Description {
     fatal: js.UndefOr[Boolean] = js.undefined
   ): Anon_Description = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(fatal)) __obj.updateDynamic("fatal")(fatal)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(fatal)) __obj.updateDynamic("fatal")(fatal.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Description]
   }
 }

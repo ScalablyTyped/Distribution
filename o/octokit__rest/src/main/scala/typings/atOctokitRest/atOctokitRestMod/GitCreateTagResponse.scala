@@ -27,8 +27,8 @@ object GitCreateTagResponse {
     url: String,
     verification: GitCreateTagResponseVerification
   ): GitCreateTagResponse = {
-    val __obj = js.Dynamic.literal(message = message, node_id = node_id, sha = sha, tag = tag, tagger = tagger, url = url, verification = verification)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagger = tagger.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verification = verification.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitCreateTagResponse]
   }
 }

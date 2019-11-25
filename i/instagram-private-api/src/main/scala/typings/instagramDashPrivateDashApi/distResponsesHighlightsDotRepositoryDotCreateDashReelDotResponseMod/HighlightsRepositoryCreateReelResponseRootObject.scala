@@ -12,7 +12,7 @@ trait HighlightsRepositoryCreateReelResponseRootObject extends js.Object {
 object HighlightsRepositoryCreateReelResponseRootObject {
   @scala.inline
   def apply(reel: HighlightsRepositoryCreateReelResponseReel, status: String): HighlightsRepositoryCreateReelResponseRootObject = {
-    val __obj = js.Dynamic.literal(reel = reel, status = status)
+    val __obj = js.Dynamic.literal(reel = reel.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HighlightsRepositoryCreateReelResponseRootObject]
   }

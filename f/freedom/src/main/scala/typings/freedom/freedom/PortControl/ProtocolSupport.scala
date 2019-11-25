@@ -14,7 +14,7 @@ trait ProtocolSupport extends js.Object {
 object ProtocolSupport {
   @scala.inline
   def apply(natPmp: Boolean, pcp: Boolean, upnp: Boolean): ProtocolSupport = {
-    val __obj = js.Dynamic.literal(natPmp = natPmp, pcp = pcp, upnp = upnp)
+    val __obj = js.Dynamic.literal(natPmp = natPmp.asInstanceOf[js.Any], pcp = pcp.asInstanceOf[js.Any], upnp = upnp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProtocolSupport]
   }

@@ -16,7 +16,7 @@ trait Address extends js.Object {
 object Address {
   @scala.inline
   def apply(city: String, geo: Geo, state: String, street: String, suite: String, zipcode: String): Address = {
-    val __obj = js.Dynamic.literal(city = city, geo = geo, state = state, street = street, suite = suite, zipcode = zipcode)
+    val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], geo = geo.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], street = street.asInstanceOf[js.Any], suite = suite.asInstanceOf[js.Any], zipcode = zipcode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Address]
   }

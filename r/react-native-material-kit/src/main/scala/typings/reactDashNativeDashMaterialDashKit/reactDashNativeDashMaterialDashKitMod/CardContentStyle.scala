@@ -13,7 +13,7 @@ object CardContentStyle {
   @scala.inline
   def apply(color: String = null, padding: Int | Double = null): CardContentStyle = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardContentStyle]
   }

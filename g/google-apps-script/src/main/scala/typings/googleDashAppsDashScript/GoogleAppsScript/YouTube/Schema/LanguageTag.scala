@@ -12,7 +12,7 @@ object LanguageTag {
   @scala.inline
   def apply(value: String = null): LanguageTag = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageTag]
   }
 }

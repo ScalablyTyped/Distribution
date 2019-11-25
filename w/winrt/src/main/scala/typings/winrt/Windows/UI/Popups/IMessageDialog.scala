@@ -27,7 +27,7 @@ object IMessageDialog {
     showAsync: () => IAsyncOperation[IUICommand],
     title: String
   ): IMessageDialog = {
-    val __obj = js.Dynamic.literal(cancelCommandIndex = cancelCommandIndex, commands = commands, content = content, defaultCommandIndex = defaultCommandIndex, options = options, showAsync = js.Any.fromFunction0(showAsync), title = title)
+    val __obj = js.Dynamic.literal(cancelCommandIndex = cancelCommandIndex.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], defaultCommandIndex = defaultCommandIndex.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], showAsync = js.Any.fromFunction0(showAsync), title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IMessageDialog]
   }

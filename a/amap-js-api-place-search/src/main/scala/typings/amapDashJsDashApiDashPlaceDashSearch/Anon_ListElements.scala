@@ -20,7 +20,7 @@ object Anon_ListElements {
     markers: js.Array[Marker[_]],
     result: js.Array[SelectChangeEventData]
   ): Anon_ListElements = {
-    val __obj = js.Dynamic.literal(listElements = listElements, markers = markers, result = result)
+    val __obj = js.Dynamic.literal(listElements = listElements.asInstanceOf[js.Any], markers = markers.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ListElements]
   }

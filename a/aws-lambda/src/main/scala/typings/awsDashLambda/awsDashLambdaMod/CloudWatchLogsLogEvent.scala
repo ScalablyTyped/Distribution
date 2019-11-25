@@ -15,8 +15,8 @@ trait CloudWatchLogsLogEvent extends js.Object {
 object CloudWatchLogsLogEvent {
   @scala.inline
   def apply(id: String, message: String, timestamp: Double, extractedFields: StringDictionary[String] = null): CloudWatchLogsLogEvent = {
-    val __obj = js.Dynamic.literal(id = id, message = message, timestamp = timestamp)
-    if (extractedFields != null) __obj.updateDynamic("extractedFields")(extractedFields)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    if (extractedFields != null) __obj.updateDynamic("extractedFields")(extractedFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudWatchLogsLogEvent]
   }
 }

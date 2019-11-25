@@ -23,8 +23,8 @@ object FilterMenuState {
     valueKeys: StringDictionary[String],
     visible: js.UndefOr[Boolean] = js.undefined
   ): FilterMenuState[T] = {
-    val __obj = js.Dynamic.literal(keyPathOfSelectedItem = keyPathOfSelectedItem, prevProps = prevProps, selectedKeys = selectedKeys, valueKeys = valueKeys)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(keyPathOfSelectedItem = keyPathOfSelectedItem.asInstanceOf[js.Any], prevProps = prevProps.asInstanceOf[js.Any], selectedKeys = selectedKeys.asInstanceOf[js.Any], valueKeys = valueKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterMenuState[T]]
   }
 }

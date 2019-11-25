@@ -21,7 +21,7 @@ object AdamaxOptimizerConfig {
     decay: Int | Double = null,
     epsilon: Int | Double = null
   ): AdamaxOptimizerConfig = {
-    val __obj = js.Dynamic.literal(beta1 = beta1, beta2 = beta2, learning_rate = learning_rate)
+    val __obj = js.Dynamic.literal(beta1 = beta1.asInstanceOf[js.Any], beta2 = beta2.asInstanceOf[js.Any], learning_rate = learning_rate.asInstanceOf[js.Any])
     if (decay != null) __obj.updateDynamic("decay")(decay.asInstanceOf[js.Any])
     if (epsilon != null) __obj.updateDynamic("epsilon")(epsilon.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdamaxOptimizerConfig]

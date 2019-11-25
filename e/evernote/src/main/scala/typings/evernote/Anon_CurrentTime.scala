@@ -14,7 +14,7 @@ trait Anon_CurrentTime extends js.Object {
 object Anon_CurrentTime {
   @scala.inline
   def apply(currentTime: Double, fullSyncBefore: Double, updateCount: Double, uploaded: Int | Double = null): Anon_CurrentTime = {
-    val __obj = js.Dynamic.literal(currentTime = currentTime, fullSyncBefore = fullSyncBefore, updateCount = updateCount)
+    val __obj = js.Dynamic.literal(currentTime = currentTime.asInstanceOf[js.Any], fullSyncBefore = fullSyncBefore.asInstanceOf[js.Any], updateCount = updateCount.asInstanceOf[js.Any])
     if (uploaded != null) __obj.updateDynamic("uploaded")(uploaded.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CurrentTime]
   }

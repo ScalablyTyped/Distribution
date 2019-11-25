@@ -13,8 +13,8 @@ object Anon_Local {
   @scala.inline
   def apply(local: js.UndefOr[Boolean] = js.undefined, prefix: String = null): Anon_Local = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(local)) __obj.updateDynamic("local")(local)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (!js.isUndefined(local)) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Local]
   }
 }

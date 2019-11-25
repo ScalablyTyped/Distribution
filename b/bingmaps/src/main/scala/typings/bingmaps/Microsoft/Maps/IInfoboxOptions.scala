@@ -71,18 +71,18 @@ object IInfoboxOptions {
     zIndex: Int | Double = null
   ): IInfoboxOptions = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions)
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (closeDelayTime != null) __obj.updateDynamic("closeDelayTime")(closeDelayTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (htmlContent != null) __obj.updateDynamic("htmlContent")(htmlContent)
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (htmlContent != null) __obj.updateDynamic("htmlContent")(htmlContent.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton)
-    if (!js.isUndefined(showPointer)) __obj.updateDynamic("showPointer")(showPointer)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPointer)) __obj.updateDynamic("showPointer")(showPointer.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInfoboxOptions]
   }

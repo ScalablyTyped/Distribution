@@ -16,7 +16,7 @@ trait WebhookResponse extends js.Object {
 object WebhookResponse {
   @scala.inline
   def apply(headers: js.Any, response: js.Any, status: fail | ok, statusCode: Double): WebhookResponse = {
-    val __obj = js.Dynamic.literal(headers = headers, response = response, status = status.asInstanceOf[js.Any], statusCode = statusCode)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebhookResponse]
   }

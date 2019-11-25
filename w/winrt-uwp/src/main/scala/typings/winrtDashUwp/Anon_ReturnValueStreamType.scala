@@ -13,7 +13,7 @@ trait Anon_ReturnValueStreamType extends js.Object {
 object Anon_ReturnValueStreamType {
   @scala.inline
   def apply(returnValue: Double, streamType: NDMediaStreamType): Anon_ReturnValueStreamType = {
-    val __obj = js.Dynamic.literal(returnValue = returnValue, streamType = streamType)
+    val __obj = js.Dynamic.literal(returnValue = returnValue.asInstanceOf[js.Any], streamType = streamType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ReturnValueStreamType]
   }

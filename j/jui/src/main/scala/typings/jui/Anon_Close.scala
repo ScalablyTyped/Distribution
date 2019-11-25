@@ -58,14 +58,14 @@ object Anon_Close {
     width: Int | Double = null
   ): Anon_Close = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(close)) __obj.updateDynamic("close")(close)
-    if (event != null) __obj.updateDynamic("event")(event)
+    if (!js.isUndefined(close)) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(keydown)) __obj.updateDynamic("keydown")(keydown)
+    if (!js.isUndefined(keydown)) __obj.updateDynamic("keydown")(keydown.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Close]
   }

@@ -17,8 +17,8 @@ object _UnmarshalledTraceUser {
   @scala.inline
   def apply(ServiceIds: js.Array[_UnmarshalledServiceId] = null, UserName: String = null): _UnmarshalledTraceUser = {
     val __obj = js.Dynamic.literal()
-    if (ServiceIds != null) __obj.updateDynamic("ServiceIds")(ServiceIds)
-    if (UserName != null) __obj.updateDynamic("UserName")(UserName)
+    if (ServiceIds != null) __obj.updateDynamic("ServiceIds")(ServiceIds.asInstanceOf[js.Any])
+    if (UserName != null) __obj.updateDynamic("UserName")(UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledTraceUser]
   }
 }

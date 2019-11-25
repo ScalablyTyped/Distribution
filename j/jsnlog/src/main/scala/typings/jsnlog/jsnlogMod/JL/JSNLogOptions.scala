@@ -27,12 +27,12 @@ object JSNLogOptions {
     serialize: /* object */ js.Any => String = null
   ): JSNLogOptions = {
     val __obj = js.Dynamic.literal()
-    if (clientIP != null) __obj.updateDynamic("clientIP")(clientIP)
-    if (defaultAjaxUrl != null) __obj.updateDynamic("defaultAjaxUrl")(defaultAjaxUrl)
+    if (clientIP != null) __obj.updateDynamic("clientIP")(clientIP.asInstanceOf[js.Any])
+    if (defaultAjaxUrl != null) __obj.updateDynamic("defaultAjaxUrl")(defaultAjaxUrl.asInstanceOf[js.Any])
     if (defaultBeforeSend != null) __obj.updateDynamic("defaultBeforeSend")(js.Any.fromFunction1(defaultBeforeSend))
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (maxMessages != null) __obj.updateDynamic("maxMessages")(maxMessages.asInstanceOf[js.Any])
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId)
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
     if (serialize != null) __obj.updateDynamic("serialize")(js.Any.fromFunction1(serialize))
     __obj.asInstanceOf[JSNLogOptions]
   }

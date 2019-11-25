@@ -12,7 +12,7 @@ object LiveChatMessageDeletedDetails {
   @scala.inline
   def apply(deletedMessageId: String = null): LiveChatMessageDeletedDetails = {
     val __obj = js.Dynamic.literal()
-    if (deletedMessageId != null) __obj.updateDynamic("deletedMessageId")(deletedMessageId)
+    if (deletedMessageId != null) __obj.updateDynamic("deletedMessageId")(deletedMessageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveChatMessageDeletedDetails]
   }
 }

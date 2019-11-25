@@ -13,7 +13,7 @@ trait Anon_NotAfter extends js.Object {
 object Anon_NotAfter {
   @scala.inline
   def apply(notAfter: Date, notBefore: Date): Anon_NotAfter = {
-    val __obj = js.Dynamic.literal(notAfter = notAfter, notBefore = notBefore)
+    val __obj = js.Dynamic.literal(notAfter = notAfter.asInstanceOf[js.Any], notBefore = notBefore.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NotAfter]
   }

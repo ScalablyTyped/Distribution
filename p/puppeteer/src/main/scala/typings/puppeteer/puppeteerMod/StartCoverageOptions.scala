@@ -24,8 +24,8 @@ object StartCoverageOptions {
     resetOnNavigation: js.UndefOr[Boolean] = js.undefined
   ): StartCoverageOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(reportAnonymousScripts)) __obj.updateDynamic("reportAnonymousScripts")(reportAnonymousScripts)
-    if (!js.isUndefined(resetOnNavigation)) __obj.updateDynamic("resetOnNavigation")(resetOnNavigation)
+    if (!js.isUndefined(reportAnonymousScripts)) __obj.updateDynamic("reportAnonymousScripts")(reportAnonymousScripts.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetOnNavigation)) __obj.updateDynamic("resetOnNavigation")(resetOnNavigation.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartCoverageOptions]
   }
 }

@@ -14,7 +14,7 @@ trait TimelineFeedResponseFriendship_status extends js.Object {
 object TimelineFeedResponseFriendship_status {
   @scala.inline
   def apply(following: Boolean, is_bestie: Boolean, is_muting_reel: Boolean, outgoing_request: Boolean): TimelineFeedResponseFriendship_status = {
-    val __obj = js.Dynamic.literal(following = following, is_bestie = is_bestie, is_muting_reel = is_muting_reel, outgoing_request = outgoing_request)
+    val __obj = js.Dynamic.literal(following = following.asInstanceOf[js.Any], is_bestie = is_bestie.asInstanceOf[js.Any], is_muting_reel = is_muting_reel.asInstanceOf[js.Any], outgoing_request = outgoing_request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TimelineFeedResponseFriendship_status]
   }

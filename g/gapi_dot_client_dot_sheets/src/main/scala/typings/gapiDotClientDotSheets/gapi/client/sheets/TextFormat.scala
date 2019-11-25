@@ -33,13 +33,13 @@ object TextFormat {
     underline: js.UndefOr[Boolean] = js.undefined
   ): TextFormat = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold)
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor)
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic)
-    if (!js.isUndefined(strikethrough)) __obj.updateDynamic("strikethrough")(strikethrough)
-    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline)
+    if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
+    if (!js.isUndefined(strikethrough)) __obj.updateDynamic("strikethrough")(strikethrough.asInstanceOf[js.Any])
+    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextFormat]
   }
 }

@@ -23,7 +23,7 @@ object IProgressConfig {
   @scala.inline
   def apply(animate: js.UndefOr[Boolean] = js.undefined, max: Int | Double = null): IProgressConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProgressConfig]
   }

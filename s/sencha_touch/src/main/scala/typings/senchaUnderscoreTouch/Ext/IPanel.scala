@@ -41,30 +41,24 @@ object IPanel {
   @scala.inline
   def apply(
     IContainer: IContainer = null,
-    baseCls: java.lang.String = null,
     bodyBorder: js.Any = null,
     bodyMargin: js.Any = null,
     bodyPadding: js.Any = null,
-    getBaseCls: () => java.lang.String = null,
     getBodyBorder: () => _ = null,
     getBodyMargin: () => _ = null,
     getBodyPadding: () => _ = null,
-    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => Unit = null,
     setBodyBorder: /* bodyBorder */ js.UndefOr[js.Any] => Unit = null,
     setBodyMargin: /* bodyMargin */ js.UndefOr[js.Any] => Unit = null,
     setBodyPadding: /* bodyPadding */ js.UndefOr[js.Any] => Unit = null
   ): IPanel = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (bodyBorder != null) __obj.updateDynamic("bodyBorder")(bodyBorder)
-    if (bodyMargin != null) __obj.updateDynamic("bodyMargin")(bodyMargin)
-    if (bodyPadding != null) __obj.updateDynamic("bodyPadding")(bodyPadding)
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
+    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (bodyBorder != null) __obj.updateDynamic("bodyBorder")(bodyBorder.asInstanceOf[js.Any])
+    if (bodyMargin != null) __obj.updateDynamic("bodyMargin")(bodyMargin.asInstanceOf[js.Any])
+    if (bodyPadding != null) __obj.updateDynamic("bodyPadding")(bodyPadding.asInstanceOf[js.Any])
     if (getBodyBorder != null) __obj.updateDynamic("getBodyBorder")(js.Any.fromFunction0(getBodyBorder))
     if (getBodyMargin != null) __obj.updateDynamic("getBodyMargin")(js.Any.fromFunction0(getBodyMargin))
     if (getBodyPadding != null) __obj.updateDynamic("getBodyPadding")(js.Any.fromFunction0(getBodyPadding))
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
     if (setBodyBorder != null) __obj.updateDynamic("setBodyBorder")(js.Any.fromFunction1(setBodyBorder))
     if (setBodyMargin != null) __obj.updateDynamic("setBodyMargin")(js.Any.fromFunction1(setBodyMargin))
     if (setBodyPadding != null) __obj.updateDynamic("setBodyPadding")(js.Any.fromFunction1(setBodyPadding))

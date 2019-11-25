@@ -19,8 +19,8 @@ object GraphQLOperationStatus {
     loading: Boolean,
     cacheValue: GraphQLCacheValue[T] = null
   ): GraphQLOperationStatus[T] = {
-    val __obj = js.Dynamic.literal(cacheKey = cacheKey, load = js.Any.fromFunction0(load), loading = loading)
-    if (cacheValue != null) __obj.updateDynamic("cacheValue")(cacheValue)
+    val __obj = js.Dynamic.literal(cacheKey = cacheKey.asInstanceOf[js.Any], load = js.Any.fromFunction0(load), loading = loading.asInstanceOf[js.Any])
+    if (cacheValue != null) __obj.updateDynamic("cacheValue")(cacheValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLOperationStatus[T]]
   }
 }

@@ -31,9 +31,9 @@ object WordInfo {
   @scala.inline
   def apply(endTime: String = null, startTime: String = null, word: String = null): WordInfo = {
     val __obj = js.Dynamic.literal()
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (word != null) __obj.updateDynamic("word")(word)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (word != null) __obj.updateDynamic("word")(word.asInstanceOf[js.Any])
     __obj.asInstanceOf[WordInfo]
   }
 }

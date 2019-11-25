@@ -33,16 +33,16 @@ object TimelineProps {
     useTicks: js.UndefOr[Boolean] = js.undefined
   ): TimelineProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bounce)) __obj.updateDynamic("bounce")(bounce)
-    if (!js.isUndefined(ignoreGlobalPause)) __obj.updateDynamic("ignoreGlobalPause")(ignoreGlobalPause)
+    if (!js.isUndefined(bounce)) __obj.updateDynamic("bounce")(bounce.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreGlobalPause)) __obj.updateDynamic("ignoreGlobalPause")(ignoreGlobalPause.asInstanceOf[js.Any])
     if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
-    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused)
+    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed)
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.asInstanceOf[js.Any])
     if (timeScale != null) __obj.updateDynamic("timeScale")(timeScale.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTicks)) __obj.updateDynamic("useTicks")(useTicks)
+    if (!js.isUndefined(useTicks)) __obj.updateDynamic("useTicks")(useTicks.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineProps]
   }
 }

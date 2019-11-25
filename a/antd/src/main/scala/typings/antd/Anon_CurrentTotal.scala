@@ -12,7 +12,7 @@ trait Anon_CurrentTotal extends js.Object {
 object Anon_CurrentTotal {
   @scala.inline
   def apply(current: Double, total: Double): Anon_CurrentTotal = {
-    val __obj = js.Dynamic.literal(current = current, total = total)
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CurrentTotal]
   }

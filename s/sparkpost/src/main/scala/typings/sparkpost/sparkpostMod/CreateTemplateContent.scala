@@ -33,11 +33,11 @@ object CreateTemplateContent {
     reply_to: String = null,
     text: String = null
   ): CreateTemplateContent = {
-    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], subject = subject)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (html != null) __obj.updateDynamic("html")(html)
-    if (reply_to != null) __obj.updateDynamic("reply_to")(reply_to)
-    if (text != null) __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (reply_to != null) __obj.updateDynamic("reply_to")(reply_to.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTemplateContent]
   }
 }

@@ -14,8 +14,8 @@ object TokenCacheOptions {
   @scala.inline
   def apply(cacheConfig: CacheConfig = null, logger: Logger = null): TokenCacheOptions = {
     val __obj = js.Dynamic.literal()
-    if (cacheConfig != null) __obj.updateDynamic("cacheConfig")(cacheConfig)
-    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (cacheConfig != null) __obj.updateDynamic("cacheConfig")(cacheConfig.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenCacheOptions]
   }
 }

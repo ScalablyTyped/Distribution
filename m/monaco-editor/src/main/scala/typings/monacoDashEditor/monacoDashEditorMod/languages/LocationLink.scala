@@ -29,9 +29,9 @@ trait LocationLink extends js.Object {
 object LocationLink {
   @scala.inline
   def apply(range: IRange, uri: Uri, originSelectionRange: IRange = null, targetSelectionRange: IRange = null): LocationLink = {
-    val __obj = js.Dynamic.literal(range = range, uri = uri)
-    if (originSelectionRange != null) __obj.updateDynamic("originSelectionRange")(originSelectionRange)
-    if (targetSelectionRange != null) __obj.updateDynamic("targetSelectionRange")(targetSelectionRange)
+    val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    if (originSelectionRange != null) __obj.updateDynamic("originSelectionRange")(originSelectionRange.asInstanceOf[js.Any])
+    if (targetSelectionRange != null) __obj.updateDynamic("targetSelectionRange")(targetSelectionRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationLink]
   }
 }

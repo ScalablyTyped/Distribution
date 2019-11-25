@@ -43,9 +43,9 @@ object MigrationOptions {
   ): MigrationOptions = {
     val __obj = js.Dynamic.literal()
     if (customResolver != null) __obj.updateDynamic("customResolver")(js.Any.fromFunction1(customResolver))
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     if (wrap != null) __obj.updateDynamic("wrap")(js.Any.fromFunction1(wrap))
     __obj.asInstanceOf[MigrationOptions]
   }

@@ -31,10 +31,10 @@ object ThemePaletteColors {
     productDarkHover: String = null,
     productDarker: String = null
   ): ThemePaletteColors = {
-    val __obj = js.Dynamic.literal(productDark = productDark, productLight = productLight, productLightActive = productLightActive, productLightHover = productLightHover, productNormal = productNormal, productNormalActive = productNormalActive, productNormalHover = productNormalHover)
-    if (productDarkActive != null) __obj.updateDynamic("productDarkActive")(productDarkActive)
-    if (productDarkHover != null) __obj.updateDynamic("productDarkHover")(productDarkHover)
-    if (productDarker != null) __obj.updateDynamic("productDarker")(productDarker)
+    val __obj = js.Dynamic.literal(productDark = productDark.asInstanceOf[js.Any], productLight = productLight.asInstanceOf[js.Any], productLightActive = productLightActive.asInstanceOf[js.Any], productLightHover = productLightHover.asInstanceOf[js.Any], productNormal = productNormal.asInstanceOf[js.Any], productNormalActive = productNormalActive.asInstanceOf[js.Any], productNormalHover = productNormalHover.asInstanceOf[js.Any])
+    if (productDarkActive != null) __obj.updateDynamic("productDarkActive")(productDarkActive.asInstanceOf[js.Any])
+    if (productDarkHover != null) __obj.updateDynamic("productDarkHover")(productDarkHover.asInstanceOf[js.Any])
+    if (productDarker != null) __obj.updateDynamic("productDarker")(productDarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemePaletteColors]
   }
 }

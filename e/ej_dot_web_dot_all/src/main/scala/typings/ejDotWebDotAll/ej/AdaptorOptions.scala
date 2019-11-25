@@ -34,17 +34,17 @@ object AdaptorOptions {
     where: String = null
   ): AdaptorOptions = {
     val __obj = js.Dynamic.literal()
-    if (aggregates != null) __obj.updateDynamic("aggregates")(aggregates)
-    if (count != null) __obj.updateDynamic("count")(count)
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
-    if (search != null) __obj.updateDynamic("search")(search)
-    if (select != null) __obj.updateDynamic("select")(select)
-    if (skip != null) __obj.updateDynamic("skip")(skip)
-    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy)
-    if (take != null) __obj.updateDynamic("take")(take)
-    if (where != null) __obj.updateDynamic("where")(where)
+    if (aggregates != null) __obj.updateDynamic("aggregates")(aggregates.asInstanceOf[js.Any])
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
+    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
+    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
+    if (take != null) __obj.updateDynamic("take")(take.asInstanceOf[js.Any])
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdaptorOptions]
   }
 }

@@ -14,7 +14,7 @@ trait NamedRequest extends js.Object {
 object NamedRequest {
   @scala.inline
   def apply(name: String): NamedRequest = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NamedRequest]
   }

@@ -15,8 +15,8 @@ object QueryCurrentObservable {
   @scala.inline
   def apply[TData, TVariables](query: ObservableQuery[TData, TVariables] = null, subscription: Subscription = null): QueryCurrentObservable[TData, TVariables] = {
     val __obj = js.Dynamic.literal()
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryCurrentObservable[TData, TVariables]]
   }
 }

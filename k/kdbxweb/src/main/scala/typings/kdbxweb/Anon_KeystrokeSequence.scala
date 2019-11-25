@@ -12,7 +12,7 @@ trait Anon_KeystrokeSequence extends js.Object {
 object Anon_KeystrokeSequence {
   @scala.inline
   def apply(keystrokeSequence: String, windows: String): Anon_KeystrokeSequence = {
-    val __obj = js.Dynamic.literal(keystrokeSequence = keystrokeSequence, windows = windows)
+    val __obj = js.Dynamic.literal(keystrokeSequence = keystrokeSequence.asInstanceOf[js.Any], windows = windows.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_KeystrokeSequence]
   }

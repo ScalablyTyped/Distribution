@@ -22,11 +22,11 @@ object Anon_DataDimensions {
     sorting: Anon_ItemsKey = null
   ): Anon_DataDimensions = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
-    if (measures != null) __obj.updateDynamic("measures")(measures)
-    if (settings != null) __obj.updateDynamic("settings")(settings)
-    if (sorting != null) __obj.updateDynamic("sorting")(sorting)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
+    if (measures != null) __obj.updateDynamic("measures")(measures.asInstanceOf[js.Any])
+    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
+    if (sorting != null) __obj.updateDynamic("sorting")(sorting.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DataDimensions]
   }
 }

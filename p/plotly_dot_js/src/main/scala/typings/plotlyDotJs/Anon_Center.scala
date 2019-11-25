@@ -47,7 +47,7 @@ object Anon_Center {
     visible: Boolean,
     xanchor: left | center | right
   ): Anon_Center = {
-    val __obj = js.Dynamic.literal(font = font, offset = offset, prefix = prefix, suffix = suffix, visible = visible, xanchor = xanchor.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(font = font.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], suffix = suffix.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], xanchor = xanchor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Center]
   }

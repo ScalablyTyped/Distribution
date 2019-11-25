@@ -35,35 +35,21 @@ object ITab {
     IButton: typings.extjs.Ext.button.IButton = null,
     active: js.UndefOr[Boolean] = js.undefined,
     activeCls: java.lang.String = null,
-    baseCls: java.lang.String = null,
     closable: js.UndefOr[Boolean] = js.undefined,
     closableCls: java.lang.String = null,
     closeText: java.lang.String = null,
-    disable: /* silent */ js.UndefOr[js.Any] => Unit = null,
-    disabledCls: java.lang.String = null,
-    enable: /* silent */ js.UndefOr[js.Any] => Unit = null,
-    getTemplateArgs: () => _ = null,
-    initComponent: () => Unit = null,
     isTab: js.UndefOr[Boolean] = js.undefined,
-    scale: js.Any = null,
     setCard: /* card */ js.UndefOr[IComponent] => Unit = null,
     setClosable: /* closable */ js.UndefOr[Boolean] => Unit = null
   ): ITab = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IButton)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (activeCls != null) __obj.updateDynamic("activeCls")(activeCls)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable)
-    if (closableCls != null) __obj.updateDynamic("closableCls")(closableCls)
-    if (closeText != null) __obj.updateDynamic("closeText")(closeText)
-    if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction1(disable))
-    if (disabledCls != null) __obj.updateDynamic("disabledCls")(disabledCls)
-    if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction1(enable))
-    if (getTemplateArgs != null) __obj.updateDynamic("getTemplateArgs")(js.Any.fromFunction0(getTemplateArgs))
-    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
-    if (!js.isUndefined(isTab)) __obj.updateDynamic("isTab")(isTab)
-    if (scale != null) __obj.updateDynamic("scale")(scale)
+    if (IButton != null) js.Dynamic.global.Object.assign(__obj, IButton)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (activeCls != null) __obj.updateDynamic("activeCls")(activeCls.asInstanceOf[js.Any])
+    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
+    if (closableCls != null) __obj.updateDynamic("closableCls")(closableCls.asInstanceOf[js.Any])
+    if (closeText != null) __obj.updateDynamic("closeText")(closeText.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTab)) __obj.updateDynamic("isTab")(isTab.asInstanceOf[js.Any])
     if (setCard != null) __obj.updateDynamic("setCard")(js.Any.fromFunction1(setCard))
     if (setClosable != null) __obj.updateDynamic("setClosable")(js.Any.fromFunction1(setClosable))
     __obj.asInstanceOf[ITab]

@@ -34,15 +34,15 @@ object AuthorizeConfig {
     prompt: String = null,
     response_type: String = null
   ): AuthorizeConfig = {
-    val __obj = js.Dynamic.literal(client_id = client_id, scope = scope)
-    if (app_package_name != null) __obj.updateDynamic("app_package_name")(app_package_name)
-    if (cookie_policy != null) __obj.updateDynamic("cookie_policy")(cookie_policy)
-    if (hosted_domain != null) __obj.updateDynamic("hosted_domain")(hosted_domain)
-    if (!js.isUndefined(include_granted_scopes)) __obj.updateDynamic("include_granted_scopes")(include_granted_scopes)
-    if (login_hint != null) __obj.updateDynamic("login_hint")(login_hint)
-    if (openid_realm != null) __obj.updateDynamic("openid_realm")(openid_realm)
-    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
-    if (response_type != null) __obj.updateDynamic("response_type")(response_type)
+    val __obj = js.Dynamic.literal(client_id = client_id.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
+    if (app_package_name != null) __obj.updateDynamic("app_package_name")(app_package_name.asInstanceOf[js.Any])
+    if (cookie_policy != null) __obj.updateDynamic("cookie_policy")(cookie_policy.asInstanceOf[js.Any])
+    if (hosted_domain != null) __obj.updateDynamic("hosted_domain")(hosted_domain.asInstanceOf[js.Any])
+    if (!js.isUndefined(include_granted_scopes)) __obj.updateDynamic("include_granted_scopes")(include_granted_scopes.asInstanceOf[js.Any])
+    if (login_hint != null) __obj.updateDynamic("login_hint")(login_hint.asInstanceOf[js.Any])
+    if (openid_realm != null) __obj.updateDynamic("openid_realm")(openid_realm.asInstanceOf[js.Any])
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
+    if (response_type != null) __obj.updateDynamic("response_type")(response_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizeConfig]
   }
 }

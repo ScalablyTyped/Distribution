@@ -96,9 +96,9 @@ object UploadOptions {
   ): UploadOptions = {
     val __obj = js.Dynamic.literal()
     if (abort != null) __obj.updateDynamic("abort")(js.Any.fromFunction1(abort))
-    if (action != null) __obj.updateDynamic("action")(action)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (allcomplete != null) __obj.updateDynamic("allcomplete")(js.Any.fromFunction2(allcomplete))
-    if (allow != null) __obj.updateDynamic("allow")(allow)
+    if (allow != null) __obj.updateDynamic("allow")(allow.asInstanceOf[js.Any])
     if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction2(before))
     if (beforeAll != null) __obj.updateDynamic("beforeAll")(js.Any.fromFunction1(beforeAll))
     if (beforeSend != null) __obj.updateDynamic("beforeSend")(js.Any.fromFunction1(beforeSend))
@@ -109,12 +109,12 @@ object UploadOptions {
     if (loadend != null) __obj.updateDynamic("loadend")(js.Any.fromFunction1(loadend))
     if (loadstart != null) __obj.updateDynamic("loadstart")(js.Any.fromFunction1(loadstart))
     if (notallowed != null) __obj.updateDynamic("notallowed")(js.Any.fromFunction2(notallowed))
-    if (param != null) __obj.updateDynamic("param")(param)
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (param != null) __obj.updateDynamic("param")(param.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (progress != null) __obj.updateDynamic("progress")(js.Any.fromFunction1(progress))
     if (readystatechange != null) __obj.updateDynamic("readystatechange")(js.Any.fromFunction1(readystatechange))
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadOptions]
   }
 }

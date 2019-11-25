@@ -37,8 +37,8 @@ object CommonAnnotationProps {
     noteTextOffset: Int | Double = null,
     noteWidth: Int | Double = null
   ): CommonAnnotationProps = {
-    val __obj = js.Dynamic.literal(containerHeight = containerHeight, containerWidth = containerWidth, noteX = noteX.asInstanceOf[js.Any], noteY = noteY.asInstanceOf[js.Any], x = x, y = y)
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    val __obj = js.Dynamic.literal(containerHeight = containerHeight.asInstanceOf[js.Any], containerWidth = containerWidth.asInstanceOf[js.Any], noteX = noteX.asInstanceOf[js.Any], noteY = noteY.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
     if (motionDamping != null) __obj.updateDynamic("motionDamping")(motionDamping.asInstanceOf[js.Any])
     if (motionStiffness != null) __obj.updateDynamic("motionStiffness")(motionStiffness.asInstanceOf[js.Any])
     if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])

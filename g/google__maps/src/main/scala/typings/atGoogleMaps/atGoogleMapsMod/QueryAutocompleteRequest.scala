@@ -41,8 +41,8 @@ object QueryAutocompleteRequest {
     offset: Int | Double = null,
     radius: Int | Double = null
   ): QueryAutocompleteRequest = {
-    val __obj = js.Dynamic.literal(input = input)
-    if (language != null) __obj.updateDynamic("language")(language)
+    val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])

@@ -28,8 +28,8 @@ object ImageInfo {
     VirtualSize: Double,
     RepoDigests: js.Array[String] = null
   ): ImageInfo = {
-    val __obj = js.Dynamic.literal(Created = Created, Id = Id, Labels = Labels, ParentId = ParentId, RepoTags = RepoTags, Size = Size, VirtualSize = VirtualSize)
-    if (RepoDigests != null) __obj.updateDynamic("RepoDigests")(RepoDigests)
+    val __obj = js.Dynamic.literal(Created = Created.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Labels = Labels.asInstanceOf[js.Any], ParentId = ParentId.asInstanceOf[js.Any], RepoTags = RepoTags.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], VirtualSize = VirtualSize.asInstanceOf[js.Any])
+    if (RepoDigests != null) __obj.updateDynamic("RepoDigests")(RepoDigests.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageInfo]
   }
 }

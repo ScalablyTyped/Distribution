@@ -45,22 +45,22 @@ trait Typeofconfig extends js.Object {
   def finishAuthentication(
     GUID: String,
     result: ToStringLiteral[
-      /* import warning: ImportType.apply Failed type conversion: typeof AuthenticationResult */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof AuthenticationResult */ js.Any, 
       String, 
       Exclude[
         String, 
-        /* import warning: ImportType.apply Failed type conversion: typeof AuthenticationResult[keyof typeof AuthenticationResult] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof AuthenticationResult[keyof typeof AuthenticationResult] */ js.Any
       ]
     ]
   ): Unit = js.native
   def finishAuthentication(
     GUID: String,
     result: ToStringLiteral[
-      /* import warning: ImportType.apply Failed type conversion: typeof AuthenticationResult */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof AuthenticationResult */ js.Any, 
       String, 
       Exclude[
         String, 
-        /* import warning: ImportType.apply Failed type conversion: typeof AuthenticationResult[keyof typeof AuthenticationResult] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof AuthenticationResult[keyof typeof AuthenticationResult] */ js.Any
       ]
     ],
     callback: js.Function0[Unit]

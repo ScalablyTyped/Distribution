@@ -12,8 +12,8 @@ trait VisibleChangedEvent extends AgEvent {
 object VisibleChangedEvent {
   @scala.inline
   def apply(`type`: String, visible: Boolean): VisibleChangedEvent = {
-    val __obj = js.Dynamic.literal(visible = visible)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisibleChangedEvent]
   }
 }

@@ -13,8 +13,8 @@ object Line {
   @scala.inline
   def apply(coordinates: js.Array[js.Array[Double]] = null, `type`: String = null): Line = {
     val __obj = js.Dynamic.literal()
-    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Line]
   }
 }

@@ -19,8 +19,8 @@ object DataLabelsTextPathOptionsObject {
   @scala.inline
   def apply(attributes: SVGAttributes = null, enabled: js.UndefOr[Boolean] = js.undefined): DataLabelsTextPathOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataLabelsTextPathOptionsObject]
   }
 }

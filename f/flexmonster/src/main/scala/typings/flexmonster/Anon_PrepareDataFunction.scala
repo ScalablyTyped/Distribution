@@ -15,9 +15,9 @@ object Anon_PrepareDataFunction {
   @scala.inline
   def apply(`type`: String, prepareDataFunction: /* rawData */ js.Any => _ = null, slice: Slice = null): Anon_PrepareDataFunction = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (prepareDataFunction != null) __obj.updateDynamic("prepareDataFunction")(js.Any.fromFunction1(prepareDataFunction))
-    if (slice != null) __obj.updateDynamic("slice")(slice)
+    if (slice != null) __obj.updateDynamic("slice")(slice.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PrepareDataFunction]
   }
 }

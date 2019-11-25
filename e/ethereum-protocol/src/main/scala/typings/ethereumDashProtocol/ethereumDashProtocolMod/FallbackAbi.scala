@@ -13,8 +13,8 @@ trait FallbackAbi extends FunctionAbi {
 object FallbackAbi {
   @scala.inline
   def apply(payable: Boolean, `type`: Fallback): FallbackAbi = {
-    val __obj = js.Dynamic.literal(payable = payable)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(payable = payable.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FallbackAbi]
   }
 }

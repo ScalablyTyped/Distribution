@@ -32,9 +32,9 @@ object IOptions {
     contentFactory: IContentFactory = null,
     updateOnShow: js.UndefOr[Boolean] = js.undefined
   ): IOptions = {
-    val __obj = js.Dynamic.literal(model = model)
-    if (contentFactory != null) __obj.updateDynamic("contentFactory")(contentFactory)
-    if (!js.isUndefined(updateOnShow)) __obj.updateDynamic("updateOnShow")(updateOnShow)
+    val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
+    if (contentFactory != null) __obj.updateDynamic("contentFactory")(contentFactory.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateOnShow)) __obj.updateDynamic("updateOnShow")(updateOnShow.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

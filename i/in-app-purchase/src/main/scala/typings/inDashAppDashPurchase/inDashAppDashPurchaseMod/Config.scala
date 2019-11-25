@@ -52,17 +52,17 @@ object Config {
   ): Config = {
     val __obj = js.Dynamic.literal()
     if (amazonAPIVersion != null) __obj.updateDynamic("amazonAPIVersion")(amazonAPIVersion.asInstanceOf[js.Any])
-    if (applePassword != null) __obj.updateDynamic("applePassword")(applePassword)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret)
-    if (googleAccToken != null) __obj.updateDynamic("googleAccToken")(googleAccToken)
-    if (googlePublicKeyPath != null) __obj.updateDynamic("googlePublicKeyPath")(googlePublicKeyPath)
-    if (googleRefToken != null) __obj.updateDynamic("googleRefToken")(googleRefToken)
-    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
-    if (rokuApiKey != null) __obj.updateDynamic("rokuApiKey")(rokuApiKey)
-    if (secret != null) __obj.updateDynamic("secret")(secret)
-    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test)
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (applePassword != null) __obj.updateDynamic("applePassword")(applePassword.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
+    if (googleAccToken != null) __obj.updateDynamic("googleAccToken")(googleAccToken.asInstanceOf[js.Any])
+    if (googlePublicKeyPath != null) __obj.updateDynamic("googlePublicKeyPath")(googlePublicKeyPath.asInstanceOf[js.Any])
+    if (googleRefToken != null) __obj.updateDynamic("googleRefToken")(googleRefToken.asInstanceOf[js.Any])
+    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])
+    if (rokuApiKey != null) __obj.updateDynamic("rokuApiKey")(rokuApiKey.asInstanceOf[js.Any])
+    if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
+    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

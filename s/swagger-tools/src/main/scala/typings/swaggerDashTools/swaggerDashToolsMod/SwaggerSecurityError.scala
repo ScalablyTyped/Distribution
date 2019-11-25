@@ -15,9 +15,9 @@ object SwaggerSecurityError {
   @scala.inline
   def apply(code: String = null, message: String = null, state: String = null, statusCode: Int | Double = null): SwaggerSecurityError = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwaggerSecurityError]
   }

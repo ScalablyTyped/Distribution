@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LocationServices extends Disposable {
   /** See: [[UrlService.hash]] */ @JSName("hash")
-  var hash_Original: (/* import warning: ImportType.apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['hash'] */ js.Any) with js.Function0[String] = js.native
+  var hash_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['hash'] */ js.Any) with js.Function0[String] = js.native
   /** See: [[UrlService.onChange]] */ @JSName("onChange")
-  var onChange_Original: (/* import warning: ImportType.apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['onChange'] */ js.Any) with (js.Function1[/* callback */ EventListener, js.Function]) = js.native
+  var onChange_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['onChange'] */ js.Any) with (js.Function1[/* callback */ EventListener, js.Function]) = js.native
   /** See: [[UrlService.path]] */ @JSName("path")
-  var path_Original: (/* import warning: ImportType.apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['path'] */ js.Any) with js.Function0[String] = js.native
+  var path_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['path'] */ js.Any) with js.Function0[String] = js.native
   /** See: [[UrlService.search]] */ @JSName("search")
-  var search_Original: (/* import warning: ImportType.apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['search'] */ js.Any) with js.Function0[StringDictionary[_]] = js.native
+  var search_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['search'] */ js.Any) with js.Function0[StringDictionary[_]] = js.native
   /** See: [[UrlService.url]] */ @JSName("url")
-  var url_Original: (/* import warning: ImportType.apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['url'] */ js.Any) with (js.Function3[
+  var url_Original: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url.UrlService['url'] */ js.Any) with (js.Function3[
     /* newurl */ js.UndefOr[String], 
     /* replace */ js.UndefOr[Boolean], 
     /* state */ js.UndefOr[js.Any], 

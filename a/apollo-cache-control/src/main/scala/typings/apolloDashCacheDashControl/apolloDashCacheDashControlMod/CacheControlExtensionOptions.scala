@@ -18,9 +18,9 @@ object CacheControlExtensionOptions {
     stripFormattedExtensions: js.UndefOr[Boolean] = js.undefined
   ): CacheControlExtensionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(calculateHttpHeaders)) __obj.updateDynamic("calculateHttpHeaders")(calculateHttpHeaders)
+    if (!js.isUndefined(calculateHttpHeaders)) __obj.updateDynamic("calculateHttpHeaders")(calculateHttpHeaders.asInstanceOf[js.Any])
     if (defaultMaxAge != null) __obj.updateDynamic("defaultMaxAge")(defaultMaxAge.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripFormattedExtensions)) __obj.updateDynamic("stripFormattedExtensions")(stripFormattedExtensions)
+    if (!js.isUndefined(stripFormattedExtensions)) __obj.updateDynamic("stripFormattedExtensions")(stripFormattedExtensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheControlExtensionOptions]
   }
 }

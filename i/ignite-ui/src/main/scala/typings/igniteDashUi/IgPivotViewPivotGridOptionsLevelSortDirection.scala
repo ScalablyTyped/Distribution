@@ -32,9 +32,9 @@ object IgPivotViewPivotGridOptionsLevelSortDirection {
     sortDirection: js.Any = null
   ): IgPivotViewPivotGridOptionsLevelSortDirection = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (levelUniqueName != null) __obj.updateDynamic("levelUniqueName")(levelUniqueName)
-    if (sortDirection != null) __obj.updateDynamic("sortDirection")(sortDirection)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (levelUniqueName != null) __obj.updateDynamic("levelUniqueName")(levelUniqueName.asInstanceOf[js.Any])
+    if (sortDirection != null) __obj.updateDynamic("sortDirection")(sortDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPivotViewPivotGridOptionsLevelSortDirection]
   }
 }

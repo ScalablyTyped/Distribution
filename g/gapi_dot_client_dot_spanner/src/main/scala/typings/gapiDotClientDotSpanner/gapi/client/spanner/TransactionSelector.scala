@@ -25,9 +25,9 @@ object TransactionSelector {
   @scala.inline
   def apply(begin: TransactionOptions = null, id: String = null, singleUse: TransactionOptions = null): TransactionSelector = {
     val __obj = js.Dynamic.literal()
-    if (begin != null) __obj.updateDynamic("begin")(begin)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (singleUse != null) __obj.updateDynamic("singleUse")(singleUse)
+    if (begin != null) __obj.updateDynamic("begin")(begin.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (singleUse != null) __obj.updateDynamic("singleUse")(singleUse.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionSelector]
   }
 }

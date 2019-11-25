@@ -15,8 +15,8 @@ trait Result extends js.Object {
 object Result {
   @scala.inline
   def apply(resources: js.Array[String], spritemap: StringDictionary[Anon_End], autoplay: String = null): Result = {
-    val __obj = js.Dynamic.literal(resources = resources, spritemap = spritemap)
-    if (autoplay != null) __obj.updateDynamic("autoplay")(autoplay)
+    val __obj = js.Dynamic.literal(resources = resources.asInstanceOf[js.Any], spritemap = spritemap.asInstanceOf[js.Any])
+    if (autoplay != null) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
 }

@@ -11,7 +11,7 @@ trait HandshakeFields extends js.Object {
 object HandshakeFields {
   @scala.inline
   def apply(ext: js.Any): HandshakeFields = {
-    val __obj = js.Dynamic.literal(ext = ext)
+    val __obj = js.Dynamic.literal(ext = ext.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HandshakeFields]
   }

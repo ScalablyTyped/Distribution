@@ -15,7 +15,7 @@ trait Engine extends js.Object {
 object Engine {
   @scala.inline
   def apply(crypto: Crypto, name: String, subtle: SubtleCrypto): Engine = {
-    val __obj = js.Dynamic.literal(crypto = crypto, name = name, subtle = subtle)
+    val __obj = js.Dynamic.literal(crypto = crypto.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], subtle = subtle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Engine]
   }

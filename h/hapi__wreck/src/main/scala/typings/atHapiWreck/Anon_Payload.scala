@@ -12,7 +12,7 @@ object Anon_Payload {
   @scala.inline
   def apply(payload: js.Any = null): Anon_Payload = {
     val __obj = js.Dynamic.literal()
-    if (payload != null) __obj.updateDynamic("payload")(payload)
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Payload]
   }
 }

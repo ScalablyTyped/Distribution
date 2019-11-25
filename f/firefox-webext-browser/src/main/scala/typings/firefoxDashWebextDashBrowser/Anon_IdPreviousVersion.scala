@@ -26,9 +26,9 @@ trait Anon_IdPreviousVersion extends js.Object {
 object Anon_IdPreviousVersion {
   @scala.inline
   def apply(reason: OnInstalledReason, temporary: Boolean, id: String = null, previousVersion: String = null): Anon_IdPreviousVersion = {
-    val __obj = js.Dynamic.literal(reason = reason, temporary = temporary)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (previousVersion != null) __obj.updateDynamic("previousVersion")(previousVersion)
+    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], temporary = temporary.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (previousVersion != null) __obj.updateDynamic("previousVersion")(previousVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IdPreviousVersion]
   }
 }

@@ -11,7 +11,7 @@ trait ObjectWrapper extends NativePointerValue {
 object ObjectWrapper {
   @scala.inline
   def apply(handle: NativePointer): ObjectWrapper = {
-    val __obj = js.Dynamic.literal(handle = handle)
+    val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ObjectWrapper]
   }

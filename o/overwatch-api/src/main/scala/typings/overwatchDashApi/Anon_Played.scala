@@ -12,8 +12,8 @@ trait Anon_Played extends js.Object {
 object Anon_Played {
   @scala.inline
   def apply(won: Double, played: js.UndefOr[scala.Nothing] = js.undefined): Anon_Played = {
-    val __obj = js.Dynamic.literal(won = won)
-    if (!js.isUndefined(played)) __obj.updateDynamic("played")(played)
+    val __obj = js.Dynamic.literal(won = won.asInstanceOf[js.Any])
+    if (!js.isUndefined(played)) __obj.updateDynamic("played")(played.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Played]
   }
 }

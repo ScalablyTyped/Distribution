@@ -13,7 +13,7 @@ object Anon_TextFormat {
   @scala.inline
   def apply(textFormat: LyricistTextFormat = null): Anon_TextFormat = {
     val __obj = js.Dynamic.literal()
-    if (textFormat != null) __obj.updateDynamic("textFormat")(textFormat)
+    if (textFormat != null) __obj.updateDynamic("textFormat")(textFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TextFormat]
   }
 }

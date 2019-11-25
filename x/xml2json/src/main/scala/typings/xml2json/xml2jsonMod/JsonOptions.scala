@@ -64,12 +64,12 @@ object JsonOptions {
     trim: js.UndefOr[Boolean] = js.undefined
   ): JsonOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alternateTextNode)) __obj.updateDynamic("alternateTextNode")(alternateTextNode)
+    if (!js.isUndefined(alternateTextNode)) __obj.updateDynamic("alternateTextNode")(alternateTextNode.asInstanceOf[js.Any])
     if (arrayNotation != null) __obj.updateDynamic("arrayNotation")(arrayNotation.asInstanceOf[js.Any])
-    if (!js.isUndefined(coerce)) __obj.updateDynamic("coerce")(coerce)
-    if (!js.isUndefined(reversible)) __obj.updateDynamic("reversible")(reversible)
-    if (!js.isUndefined(sanitize)) __obj.updateDynamic("sanitize")(sanitize)
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim)
+    if (!js.isUndefined(coerce)) __obj.updateDynamic("coerce")(coerce.asInstanceOf[js.Any])
+    if (!js.isUndefined(reversible)) __obj.updateDynamic("reversible")(reversible.asInstanceOf[js.Any])
+    if (!js.isUndefined(sanitize)) __obj.updateDynamic("sanitize")(sanitize.asInstanceOf[js.Any])
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonOptions]
   }
 }

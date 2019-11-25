@@ -87,16 +87,16 @@ object BackendOptions {
     withCredentials: js.UndefOr[Boolean] = js.undefined
   ): BackendOptions = {
     val __obj = js.Dynamic.literal()
-    if (addPath != null) __obj.updateDynamic("addPath")(addPath)
+    if (addPath != null) __obj.updateDynamic("addPath")(addPath.asInstanceOf[js.Any])
     if (ajax != null) __obj.updateDynamic("ajax")(js.Any.fromFunction5(ajax))
-    if (!js.isUndefined(allowMultiLoading)) __obj.updateDynamic("allowMultiLoading")(allowMultiLoading)
-    if (!js.isUndefined(crossDomain)) __obj.updateDynamic("crossDomain")(crossDomain)
-    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
+    if (!js.isUndefined(allowMultiLoading)) __obj.updateDynamic("allowMultiLoading")(allowMultiLoading.asInstanceOf[js.Any])
+    if (!js.isUndefined(crossDomain)) __obj.updateDynamic("crossDomain")(crossDomain.asInstanceOf[js.Any])
+    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
     if (loadPath != null) __obj.updateDynamic("loadPath")(loadPath.asInstanceOf[js.Any])
     if (parse != null) __obj.updateDynamic("parse")(js.Any.fromFunction1(parse))
     if (parsePayload != null) __obj.updateDynamic("parsePayload")(js.Any.fromFunction3(parsePayload))
-    if (queryStringParams != null) __obj.updateDynamic("queryStringParams")(queryStringParams)
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    if (queryStringParams != null) __obj.updateDynamic("queryStringParams")(queryStringParams.asInstanceOf[js.Any])
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackendOptions]
   }
 }

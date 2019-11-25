@@ -18,8 +18,8 @@ object TargetConfiguration {
   @scala.inline
   def apply(config: ConfigFile = null, imports: js.Array[ImportFile] = null): TargetConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (imports != null) __obj.updateDynamic("imports")(imports)
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetConfiguration]
   }
 }

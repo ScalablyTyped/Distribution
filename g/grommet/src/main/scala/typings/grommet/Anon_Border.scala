@@ -13,8 +13,8 @@ object Anon_Border {
   @scala.inline
   def apply(border: Anon_ColorRadius = null, disabled: Anon_Opacity = null): Anon_Border = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Border]
   }
 }

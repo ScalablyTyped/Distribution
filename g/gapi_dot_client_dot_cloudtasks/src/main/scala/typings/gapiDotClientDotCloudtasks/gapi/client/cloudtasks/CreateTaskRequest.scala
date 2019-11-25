@@ -64,8 +64,8 @@ object CreateTaskRequest {
   @scala.inline
   def apply(responseView: String = null, task: Task = null): CreateTaskRequest = {
     val __obj = js.Dynamic.literal()
-    if (responseView != null) __obj.updateDynamic("responseView")(responseView)
-    if (task != null) __obj.updateDynamic("task")(task)
+    if (responseView != null) __obj.updateDynamic("responseView")(responseView.asInstanceOf[js.Any])
+    if (task != null) __obj.updateDynamic("task")(task.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTaskRequest]
   }
 }

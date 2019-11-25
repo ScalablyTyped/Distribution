@@ -18,8 +18,8 @@ trait Anon_Part extends js.Object {
 object Anon_Part {
   @scala.inline
   def apply(part: String, RequestBody: String = null): Anon_Part = {
-    val __obj = js.Dynamic.literal(part = part)
-    if (RequestBody != null) __obj.updateDynamic("RequestBody")(RequestBody)
+    val __obj = js.Dynamic.literal(part = part.asInstanceOf[js.Any])
+    if (RequestBody != null) __obj.updateDynamic("RequestBody")(RequestBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Part]
   }
 }

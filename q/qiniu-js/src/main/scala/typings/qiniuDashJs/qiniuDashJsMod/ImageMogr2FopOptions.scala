@@ -1,12 +1,11 @@
 package typings.qiniuDashJs.qiniuDashJsMod
 
-import typings.qiniuDashJs.qiniuDashJsStrings.imageMogr2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ImageMogr2FopOptions extends ImageMogr2Options {
-  var fop: imageMogr2
+  var fop: typings.qiniuDashJs.qiniuDashJsStrings.imageMogr2
 }
 
 object ImageMogr2FopOptions {
@@ -15,7 +14,7 @@ object ImageMogr2FopOptions {
     `auto-orient`: Boolean,
     blur: String,
     crop: String,
-    fop: imageMogr2,
+    fop: typings.qiniuDashJs.qiniuDashJsStrings.imageMogr2,
     format: String,
     gravity: String,
     quality: Double,
@@ -23,8 +22,8 @@ object ImageMogr2FopOptions {
     strip: Boolean,
     thumbnail: String
   ): ImageMogr2FopOptions = {
-    val __obj = js.Dynamic.literal(blur = blur, crop = crop, fop = fop, format = format, gravity = gravity, quality = quality, rotate = rotate, strip = strip, thumbnail = thumbnail)
-    __obj.updateDynamic("auto-orient")(`auto-orient`)
+    val __obj = js.Dynamic.literal(blur = blur.asInstanceOf[js.Any], crop = crop.asInstanceOf[js.Any], fop = fop.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], gravity = gravity.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any], rotate = rotate.asInstanceOf[js.Any], strip = strip.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any])
+    __obj.updateDynamic("auto-orient")(`auto-orient`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageMogr2FopOptions]
   }
 }

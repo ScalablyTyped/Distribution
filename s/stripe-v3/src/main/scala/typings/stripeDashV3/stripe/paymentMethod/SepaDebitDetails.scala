@@ -15,7 +15,7 @@ trait SepaDebitDetails extends js.Object {
 object SepaDebitDetails {
   @scala.inline
   def apply(bank_code: String, branch_code: String, country: String, fingerprint: String, last4: String): SepaDebitDetails = {
-    val __obj = js.Dynamic.literal(bank_code = bank_code, branch_code = branch_code, country = country, fingerprint = fingerprint, last4 = last4)
+    val __obj = js.Dynamic.literal(bank_code = bank_code.asInstanceOf[js.Any], branch_code = branch_code.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SepaDebitDetails]
   }

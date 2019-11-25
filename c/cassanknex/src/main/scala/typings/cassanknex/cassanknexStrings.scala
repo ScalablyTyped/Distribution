@@ -35,7 +35,7 @@ object cassanknexStrings {
   sealed trait desc extends js.Object
   
   @js.native
-  sealed trait in extends InRestriction
+  sealed trait in_ extends InRestriction
   
   @scala.inline
   def `<`: `<` = "<".asInstanceOf[`<`]
@@ -56,6 +56,6 @@ object cassanknexStrings {
   @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
   @scala.inline
-  def in: in = "in".asInstanceOf[in]
+  def in_ : in_ = "in".asInstanceOf[in_]
 }
 

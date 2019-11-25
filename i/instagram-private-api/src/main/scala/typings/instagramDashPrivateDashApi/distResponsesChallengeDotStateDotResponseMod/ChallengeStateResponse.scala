@@ -26,8 +26,8 @@ object ChallengeStateResponse {
     user_id: Double,
     logged_in_user: AccountRepositoryLoginResponseLogged_in_user = null
   ): ChallengeStateResponse = {
-    val __obj = js.Dynamic.literal(action = action, nonce_code = nonce_code, status = status, step_data = step_data, step_name = step_name, user_id = user_id)
-    if (logged_in_user != null) __obj.updateDynamic("logged_in_user")(logged_in_user)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], nonce_code = nonce_code.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], step_data = step_data.asInstanceOf[js.Any], step_name = step_name.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any])
+    if (logged_in_user != null) __obj.updateDynamic("logged_in_user")(logged_in_user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChallengeStateResponse]
   }
 }

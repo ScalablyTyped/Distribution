@@ -17,7 +17,7 @@ trait IFeedCallbackOptions extends js.Object {
 object IFeedCallbackOptions {
   @scala.inline
   def apply(continuation: String, currentCollectionSizeInMB: String, maxCollectionSizeInMB: String): IFeedCallbackOptions = {
-    val __obj = js.Dynamic.literal(continuation = continuation, currentCollectionSizeInMB = currentCollectionSizeInMB, maxCollectionSizeInMB = maxCollectionSizeInMB)
+    val __obj = js.Dynamic.literal(continuation = continuation.asInstanceOf[js.Any], currentCollectionSizeInMB = currentCollectionSizeInMB.asInstanceOf[js.Any], maxCollectionSizeInMB = maxCollectionSizeInMB.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IFeedCallbackOptions]
   }

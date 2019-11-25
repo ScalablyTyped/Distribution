@@ -28,9 +28,9 @@ object Anon_Compression {
     queue_size: Int | Double = null,
     throttle_rate: Int | Double = null
   ): Anon_Compression = {
-    val __obj = js.Dynamic.literal(messageType = messageType, name = name, ros = ros)
-    if (compression != null) __obj.updateDynamic("compression")(compression)
-    if (!js.isUndefined(latch)) __obj.updateDynamic("latch")(latch)
+    val __obj = js.Dynamic.literal(messageType = messageType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ros = ros.asInstanceOf[js.Any])
+    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
+    if (!js.isUndefined(latch)) __obj.updateDynamic("latch")(latch.asInstanceOf[js.Any])
     if (queue_length != null) __obj.updateDynamic("queue_length")(queue_length.asInstanceOf[js.Any])
     if (queue_size != null) __obj.updateDynamic("queue_size")(queue_size.asInstanceOf[js.Any])
     if (throttle_rate != null) __obj.updateDynamic("throttle_rate")(throttle_rate.asInstanceOf[js.Any])

@@ -38,8 +38,8 @@ object ReGeocode {
     roads: js.Array[Road],
     aois: js.Array[ReGeocodeAoi] = null
   ): ReGeocode = {
-    val __obj = js.Dynamic.literal(addressComponent = addressComponent, crosses = crosses, formattedAddress = formattedAddress, pois = pois, roads = roads)
-    if (aois != null) __obj.updateDynamic("aois")(aois)
+    val __obj = js.Dynamic.literal(addressComponent = addressComponent.asInstanceOf[js.Any], crosses = crosses.asInstanceOf[js.Any], formattedAddress = formattedAddress.asInstanceOf[js.Any], pois = pois.asInstanceOf[js.Any], roads = roads.asInstanceOf[js.Any])
+    if (aois != null) __obj.updateDynamic("aois")(aois.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReGeocode]
   }
 }

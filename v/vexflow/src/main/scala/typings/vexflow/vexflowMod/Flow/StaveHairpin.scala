@@ -24,17 +24,16 @@ object StaveHairpin extends js.Object {
     ctx: IRenderContext,
     formatter: typings.vexflow.Vex.Flow.Formatter,
     notes: Anon_Firstnote,
-    `type`: typings.vexflow.Vex.Flow.StaveHairpin.`type`,
+    `type`: `type`,
     position: Position
   ): Unit = js.native
   def FormatByTicksAndDraw(
     ctx: IRenderContext,
     formatter: typings.vexflow.Vex.Flow.Formatter,
     notes: Anon_Firstnote,
-    `type`: typings.vexflow.Vex.Flow.StaveHairpin.`type`,
+    `type`: `type`,
     position: Position,
     options: Anon_HeightLeftshiftticks
   ): Unit = js.native
-  type `type` = typings.vexflow.Vex.Flow.StaveHairpin.`type`
 }
 

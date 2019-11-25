@@ -29,10 +29,10 @@ object StateTransition {
     source: State[TContext, EventObject] = null,
     tree: StateTree = null
   ): StateTransition[TContext, TEvent] = {
-    val __obj = js.Dynamic.literal(actions = actions, configuration = configuration, transitions = transitions)
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], configuration = configuration.asInstanceOf[js.Any], transitions = transitions.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (tree != null) __obj.updateDynamic("tree")(tree)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (tree != null) __obj.updateDynamic("tree")(tree.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateTransition[TContext, TEvent]]
   }
 }

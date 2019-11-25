@@ -36,7 +36,7 @@ object ExtensionDailyStats {
     publisherName: String,
     statCount: Double
   ): ExtensionDailyStats = {
-    val __obj = js.Dynamic.literal(dailyStats = dailyStats, extensionId = extensionId, extensionName = extensionName, publisherName = publisherName, statCount = statCount)
+    val __obj = js.Dynamic.literal(dailyStats = dailyStats.asInstanceOf[js.Any], extensionId = extensionId.asInstanceOf[js.Any], extensionName = extensionName.asInstanceOf[js.Any], publisherName = publisherName.asInstanceOf[js.Any], statCount = statCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExtensionDailyStats]
   }

@@ -36,14 +36,14 @@ object DefinitionQueryResult {
     url: String = null
   ): DefinitionQueryResult = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (contextOffset != null) __obj.updateDynamic("contextOffset")(contextOffset.asInstanceOf[js.Any])
-    if (doc != null) __obj.updateDynamic("doc")(doc)
+    if (doc != null) __obj.updateDynamic("doc")(doc.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefinitionQueryResult]
   }
 }

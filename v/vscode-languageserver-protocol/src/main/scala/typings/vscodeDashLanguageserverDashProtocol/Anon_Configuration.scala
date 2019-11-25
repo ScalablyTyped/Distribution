@@ -15,7 +15,7 @@ object Anon_Configuration {
   @scala.inline
   def apply(configuration: js.UndefOr[Boolean] = js.undefined): Anon_Configuration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(configuration)) __obj.updateDynamic("configuration")(configuration)
+    if (!js.isUndefined(configuration)) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Configuration]
   }
 }

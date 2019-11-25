@@ -14,7 +14,7 @@ object Anon_Precision {
   def apply(precision: Int | Double = null, useTz: js.UndefOr[Boolean] = js.undefined): Anon_Precision = {
     val __obj = js.Dynamic.literal()
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTz)) __obj.updateDynamic("useTz")(useTz)
+    if (!js.isUndefined(useTz)) __obj.updateDynamic("useTz")(useTz.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Precision]
   }
 }

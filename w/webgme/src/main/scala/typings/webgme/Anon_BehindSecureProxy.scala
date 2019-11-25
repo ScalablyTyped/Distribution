@@ -57,8 +57,8 @@ object Anon_BehindSecureProxy {
     timeout: Double,
     handle: Anon_Fd = null
   ): Anon_BehindSecureProxy = {
-    val __obj = js.Dynamic.literal(behindSecureProxy = behindSecureProxy, extlibExcludes = extlibExcludes, log = log, maxWorkers = maxWorkers, port = port, timeout = timeout)
-    if (handle != null) __obj.updateDynamic("handle")(handle)
+    val __obj = js.Dynamic.literal(behindSecureProxy = behindSecureProxy.asInstanceOf[js.Any], extlibExcludes = extlibExcludes.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], maxWorkers = maxWorkers.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BehindSecureProxy]
   }
 }

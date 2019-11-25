@@ -13,7 +13,7 @@ object CarbonPictogramProps {
   @scala.inline
   def apply(tabIndex: String = null): CarbonPictogramProps = {
     val __obj = js.Dynamic.literal()
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[CarbonPictogramProps]
   }
 }

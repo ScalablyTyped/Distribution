@@ -73,24 +73,24 @@ object RecurringCharge {
     trial_ends_on: String = null,
     updated_at: String = null
   ): RecurringCharge = {
-    val __obj = js.Dynamic.literal(name = name, trial_days = trial_days)
-    if (activated_on != null) __obj.updateDynamic("activated_on")(activated_on)
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], trial_days = trial_days.asInstanceOf[js.Any])
+    if (activated_on != null) __obj.updateDynamic("activated_on")(activated_on.asInstanceOf[js.Any])
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
     if (balance_remaining != null) __obj.updateDynamic("balance_remaining")(balance_remaining.asInstanceOf[js.Any])
     if (balance_used != null) __obj.updateDynamic("balance_used")(balance_used.asInstanceOf[js.Any])
-    if (billing_on != null) __obj.updateDynamic("billing_on")(billing_on)
-    if (cancelled_on != null) __obj.updateDynamic("cancelled_on")(cancelled_on)
+    if (billing_on != null) __obj.updateDynamic("billing_on")(billing_on.asInstanceOf[js.Any])
+    if (cancelled_on != null) __obj.updateDynamic("cancelled_on")(cancelled_on.asInstanceOf[js.Any])
     if (capped_amount != null) __obj.updateDynamic("capped_amount")(capped_amount.asInstanceOf[js.Any])
-    if (confirmation_url != null) __obj.updateDynamic("confirmation_url")(confirmation_url)
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    if (confirmation_url != null) __obj.updateDynamic("confirmation_url")(confirmation_url.asInstanceOf[js.Any])
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
-    if (return_url != null) __obj.updateDynamic("return_url")(return_url)
+    if (return_url != null) __obj.updateDynamic("return_url")(return_url.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (terms != null) __obj.updateDynamic("terms")(terms)
-    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test)
-    if (trial_ends_on != null) __obj.updateDynamic("trial_ends_on")(trial_ends_on)
-    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    if (terms != null) __obj.updateDynamic("terms")(terms.asInstanceOf[js.Any])
+    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
+    if (trial_ends_on != null) __obj.updateDynamic("trial_ends_on")(trial_ends_on.asInstanceOf[js.Any])
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecurringCharge]
   }
 }

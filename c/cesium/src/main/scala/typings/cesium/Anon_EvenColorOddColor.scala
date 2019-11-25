@@ -23,11 +23,11 @@ object Anon_EvenColorOddColor {
     repeat: Property = null
   ): Anon_EvenColorOddColor = {
     val __obj = js.Dynamic.literal()
-    if (evenColor != null) __obj.updateDynamic("evenColor")(evenColor)
-    if (oddColor != null) __obj.updateDynamic("oddColor")(oddColor)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
-    if (repeat != null) __obj.updateDynamic("repeat")(repeat)
+    if (evenColor != null) __obj.updateDynamic("evenColor")(evenColor.asInstanceOf[js.Any])
+    if (oddColor != null) __obj.updateDynamic("oddColor")(oddColor.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EvenColorOddColor]
   }
 }

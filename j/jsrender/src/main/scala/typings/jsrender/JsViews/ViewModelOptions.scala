@@ -21,8 +21,8 @@ object ViewModelOptions {
     id: String | (js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]) = null
   ): ViewModelOptions = {
     val __obj = js.Dynamic.literal()
-    if (extend != null) __obj.updateDynamic("extend")(extend)
-    if (getters != null) __obj.updateDynamic("getters")(getters)
+    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
+    if (getters != null) __obj.updateDynamic("getters")(getters.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewModelOptions]
   }

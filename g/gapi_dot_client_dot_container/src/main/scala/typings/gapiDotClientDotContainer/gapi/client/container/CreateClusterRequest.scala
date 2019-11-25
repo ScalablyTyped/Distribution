@@ -16,7 +16,7 @@ object CreateClusterRequest {
   @scala.inline
   def apply(cluster: Cluster = null): CreateClusterRequest = {
     val __obj = js.Dynamic.literal()
-    if (cluster != null) __obj.updateDynamic("cluster")(cluster)
+    if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClusterRequest]
   }
 }

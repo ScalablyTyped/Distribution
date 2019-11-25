@@ -18,7 +18,7 @@ trait Anon_Automobile extends js.Object {
 object Anon_Automobile {
   @scala.inline
   def apply(Automobile: String, Walking: String): Anon_Automobile = {
-    val __obj = js.Dynamic.literal(Automobile = Automobile, Walking = Walking)
+    val __obj = js.Dynamic.literal(Automobile = Automobile.asInstanceOf[js.Any], Walking = Walking.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Automobile]
   }

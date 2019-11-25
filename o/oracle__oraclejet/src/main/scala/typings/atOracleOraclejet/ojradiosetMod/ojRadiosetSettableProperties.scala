@@ -48,12 +48,12 @@ object ojRadiosetSettableProperties {
     options: DataProvider[K, D] = null,
     optionsKeys: OptionsKeys = null
   ): ojRadiosetSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal(disabled = disabled, displayOptions = displayOptions, help = help, helpHints = helpHints, labelHint = labelHint, messagesCustom = messagesCustom, required = required, translations = translations, valid = valid.asInstanceOf[js.Any], value = value)
-    if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy)
-    if (labelledBy != null) __obj.updateDynamic("labelledBy")(labelledBy)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy.asInstanceOf[js.Any])
+    if (labelledBy != null) __obj.updateDynamic("labelledBy")(labelledBy.asInstanceOf[js.Any])
     if (optionRenderer != null) __obj.updateDynamic("optionRenderer")(js.Any.fromFunction1(optionRenderer))
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (optionsKeys != null) __obj.updateDynamic("optionsKeys")(optionsKeys)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (optionsKeys != null) __obj.updateDynamic("optionsKeys")(optionsKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojRadiosetSettableProperties[K, D]]
   }
 }

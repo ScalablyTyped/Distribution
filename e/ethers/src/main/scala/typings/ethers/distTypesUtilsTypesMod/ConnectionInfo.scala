@@ -19,10 +19,10 @@ object ConnectionInfo {
     password: String = null,
     user: String = null
   ): ConnectionInfo = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (!js.isUndefined(allowInsecure)) __obj.updateDynamic("allowInsecure")(allowInsecure)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (user != null) __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowInsecure)) __obj.updateDynamic("allowInsecure")(allowInsecure.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionInfo]
   }
 }

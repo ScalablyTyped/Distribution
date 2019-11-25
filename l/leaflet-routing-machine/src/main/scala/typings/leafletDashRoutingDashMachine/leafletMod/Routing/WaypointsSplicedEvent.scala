@@ -13,7 +13,7 @@ trait WaypointsSplicedEvent extends js.Object {
 object WaypointsSplicedEvent {
   @scala.inline
   def apply(added: js.Array[Waypoint], index: Double, nRemoved: Double): WaypointsSplicedEvent = {
-    val __obj = js.Dynamic.literal(added = added, index = index, nRemoved = nRemoved)
+    val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], nRemoved = nRemoved.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WaypointsSplicedEvent]
   }

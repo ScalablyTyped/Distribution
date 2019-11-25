@@ -12,7 +12,7 @@ trait RemoveChannelParameters extends js.Object {
 object RemoveChannelParameters {
   @scala.inline
   def apply(channelGroup: String, channels: js.Array[String]): RemoveChannelParameters = {
-    val __obj = js.Dynamic.literal(channelGroup = channelGroup, channels = channels)
+    val __obj = js.Dynamic.literal(channelGroup = channelGroup.asInstanceOf[js.Any], channels = channels.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RemoveChannelParameters]
   }

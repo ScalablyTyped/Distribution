@@ -20,7 +20,7 @@ object Class {
   @scala.inline
   def apply(name: declaration | expression | function | pattern | statement, `type`: `class`): Class = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Class]
   }
 }

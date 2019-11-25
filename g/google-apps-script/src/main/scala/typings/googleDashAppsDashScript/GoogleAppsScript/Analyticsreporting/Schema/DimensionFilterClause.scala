@@ -13,8 +13,8 @@ object DimensionFilterClause {
   @scala.inline
   def apply(filters: js.Array[DimensionFilter] = null, operator: String = null): DimensionFilterClause = {
     val __obj = js.Dynamic.literal()
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (operator != null) __obj.updateDynamic("operator")(operator)
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
     __obj.asInstanceOf[DimensionFilterClause]
   }
 }

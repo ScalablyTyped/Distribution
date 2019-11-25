@@ -14,9 +14,9 @@ trait ColumnRef extends js.Object {
 object ColumnRef {
   @scala.inline
   def apply(column: String, `type`: column_ref, table: String = null): ColumnRef = {
-    val __obj = js.Dynamic.literal(column = column)
-    __obj.updateDynamic("type")(`type`)
-    if (table != null) __obj.updateDynamic("table")(table)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnRef]
   }
 }

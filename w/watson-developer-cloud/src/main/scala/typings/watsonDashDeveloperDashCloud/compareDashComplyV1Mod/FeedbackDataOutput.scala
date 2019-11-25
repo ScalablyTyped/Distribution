@@ -40,15 +40,15 @@ object FeedbackDataOutput {
     updated_labels: UpdatedLabelsOut = null
   ): FeedbackDataOutput = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (feedback_type != null) __obj.updateDynamic("feedback_type")(feedback_type)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (model_id != null) __obj.updateDynamic("model_id")(model_id)
-    if (model_version != null) __obj.updateDynamic("model_version")(model_version)
-    if (original_labels != null) __obj.updateDynamic("original_labels")(original_labels)
-    if (pagination != null) __obj.updateDynamic("pagination")(pagination)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (updated_labels != null) __obj.updateDynamic("updated_labels")(updated_labels)
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (feedback_type != null) __obj.updateDynamic("feedback_type")(feedback_type.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (model_id != null) __obj.updateDynamic("model_id")(model_id.asInstanceOf[js.Any])
+    if (model_version != null) __obj.updateDynamic("model_version")(model_version.asInstanceOf[js.Any])
+    if (original_labels != null) __obj.updateDynamic("original_labels")(original_labels.asInstanceOf[js.Any])
+    if (pagination != null) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (updated_labels != null) __obj.updateDynamic("updated_labels")(updated_labels.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeedbackDataOutput]
   }
 }

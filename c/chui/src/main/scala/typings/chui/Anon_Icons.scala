@@ -21,9 +21,9 @@ object Anon_Icons {
     id: String = null,
     selected: Int | Double = null
   ): Anon_Icons = {
-    val __obj = js.Dynamic.literal(labels = labels, tabs = tabs)
-    if (icons != null) __obj.updateDynamic("icons")(icons)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(labels = labels.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any])
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Icons]
   }

@@ -14,7 +14,7 @@ trait Anon_DRIVER extends js.Object {
 object Anon_DRIVER {
   @scala.inline
   def apply(DRIVER: STEPPER_TYPE, FOUR_WIRE: STEPPER_TYPE, TWO_WIRE: STEPPER_TYPE): Anon_DRIVER = {
-    val __obj = js.Dynamic.literal(DRIVER = DRIVER, FOUR_WIRE = FOUR_WIRE, TWO_WIRE = TWO_WIRE)
+    val __obj = js.Dynamic.literal(DRIVER = DRIVER.asInstanceOf[js.Any], FOUR_WIRE = FOUR_WIRE.asInstanceOf[js.Any], TWO_WIRE = TWO_WIRE.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DRIVER]
   }

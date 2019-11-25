@@ -17,6 +17,5 @@ class TextBracket protected ()
 @js.native
 object TextBracket extends js.Object {
   var DEBUG: Boolean = js.native
-  type Positions = typings.vexflow.Vex.Flow.TextBracket.Positions
 }
 

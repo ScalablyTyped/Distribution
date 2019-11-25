@@ -15,8 +15,8 @@ object Source {
   @scala.inline
   def apply(repoSource: RepoSource = null, storageSource: StorageSource = null): Source = {
     val __obj = js.Dynamic.literal()
-    if (repoSource != null) __obj.updateDynamic("repoSource")(repoSource)
-    if (storageSource != null) __obj.updateDynamic("storageSource")(storageSource)
+    if (repoSource != null) __obj.updateDynamic("repoSource")(repoSource.asInstanceOf[js.Any])
+    if (storageSource != null) __obj.updateDynamic("storageSource")(storageSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }
 }

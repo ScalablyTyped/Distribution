@@ -24,12 +24,12 @@ object Permission {
     user: User = null
   ): Permission = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDiscovery)) __obj.updateDynamic("allowDiscovery")(allowDiscovery)
-    if (anyone != null) __obj.updateDynamic("anyone")(anyone)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (role != null) __obj.updateDynamic("role")(role)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (!js.isUndefined(allowDiscovery)) __obj.updateDynamic("allowDiscovery")(allowDiscovery.asInstanceOf[js.Any])
+    if (anyone != null) __obj.updateDynamic("anyone")(anyone.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Permission]
   }
 }

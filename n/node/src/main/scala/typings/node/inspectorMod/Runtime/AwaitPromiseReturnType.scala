@@ -18,8 +18,8 @@ trait AwaitPromiseReturnType extends js.Object {
 object AwaitPromiseReturnType {
   @scala.inline
   def apply(result: RemoteObject, exceptionDetails: ExceptionDetails = null): AwaitPromiseReturnType = {
-    val __obj = js.Dynamic.literal(result = result)
-    if (exceptionDetails != null) __obj.updateDynamic("exceptionDetails")(exceptionDetails)
+    val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
+    if (exceptionDetails != null) __obj.updateDynamic("exceptionDetails")(exceptionDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwaitPromiseReturnType]
   }
 }

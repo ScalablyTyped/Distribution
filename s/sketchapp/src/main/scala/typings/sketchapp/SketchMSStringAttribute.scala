@@ -13,7 +13,7 @@ trait SketchMSStringAttribute extends js.Object {
 object SketchMSStringAttribute {
   @scala.inline
   def apply(_class: stringAttribute, attributes: SketchMSAttributes): SketchMSStringAttribute = {
-    val __obj = js.Dynamic.literal(_class = _class, attributes = attributes)
+    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SketchMSStringAttribute]
   }

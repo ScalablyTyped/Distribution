@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 object MarkerClusterGroupLayerSupportOptions {
   @scala.inline
   def apply(singleAddRemoveBufferDuration: Double): MarkerClusterGroupLayerSupportOptions = {
-    val __obj = js.Dynamic.literal(singleAddRemoveBufferDuration = singleAddRemoveBufferDuration)
+    val __obj = js.Dynamic.literal(singleAddRemoveBufferDuration = singleAddRemoveBufferDuration.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MarkerClusterGroupLayerSupportOptions]
   }

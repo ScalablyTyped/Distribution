@@ -14,7 +14,7 @@ trait IconTree extends js.Object {
 object IconTree {
   @scala.inline
   def apply(attr: StringDictionary[String], child: js.Array[IconTree], tag: String): IconTree = {
-    val __obj = js.Dynamic.literal(attr = attr, child = child, tag = tag)
+    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], child = child.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IconTree]
   }

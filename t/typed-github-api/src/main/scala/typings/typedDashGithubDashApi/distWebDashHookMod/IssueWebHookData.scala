@@ -31,7 +31,7 @@ object IssueWebHookData {
     issue: Issue,
     sender: UserSummary
   ): IssueWebHookData = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], event = event, id = id, issue = issue, sender = sender)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], issue = issue.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IssueWebHookData]
   }

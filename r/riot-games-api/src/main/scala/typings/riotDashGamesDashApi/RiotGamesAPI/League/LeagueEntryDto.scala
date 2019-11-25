@@ -33,7 +33,7 @@ object LeagueEntryDto {
     playerOrTeamName: String,
     wins: Double
   ): LeagueEntryDto = {
-    val __obj = js.Dynamic.literal(division = division, isFreshBlood = isFreshBlood, isHotStreak = isHotStreak, isInactive = isInactive, isVeteran = isVeteran, leaguePoints = leaguePoints, losses = losses, miniSeries = miniSeries, playerOrTeamId = playerOrTeamId, playerOrTeamName = playerOrTeamName, wins = wins)
+    val __obj = js.Dynamic.literal(division = division.asInstanceOf[js.Any], isFreshBlood = isFreshBlood.asInstanceOf[js.Any], isHotStreak = isHotStreak.asInstanceOf[js.Any], isInactive = isInactive.asInstanceOf[js.Any], isVeteran = isVeteran.asInstanceOf[js.Any], leaguePoints = leaguePoints.asInstanceOf[js.Any], losses = losses.asInstanceOf[js.Any], miniSeries = miniSeries.asInstanceOf[js.Any], playerOrTeamId = playerOrTeamId.asInstanceOf[js.Any], playerOrTeamName = playerOrTeamName.asInstanceOf[js.Any], wins = wins.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LeagueEntryDto]
   }

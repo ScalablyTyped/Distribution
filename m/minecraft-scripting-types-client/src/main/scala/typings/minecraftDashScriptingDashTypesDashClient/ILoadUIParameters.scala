@@ -21,8 +21,8 @@ trait ILoadUIParameters extends js.Object {
 object ILoadUIParameters {
   @scala.inline
   def apply(path: String, options: Anon_Absorbsinput = null): ILoadUIParameters = {
-    val __obj = js.Dynamic.literal(path = path)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILoadUIParameters]
   }
 }

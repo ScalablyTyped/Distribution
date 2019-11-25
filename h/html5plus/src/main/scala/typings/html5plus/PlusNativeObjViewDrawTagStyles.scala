@@ -128,17 +128,17 @@ object PlusNativeObjViewDrawTagStyles {
     textStyles: PlusNativeObjTextStyles = null
   ): PlusNativeObjViewDrawTagStyles = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (inputStyles != null) __obj.updateDynamic("inputStyles")(inputStyles)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (rectStyles != null) __obj.updateDynamic("rectStyles")(rectStyles)
-    if (richTextStyles != null) __obj.updateDynamic("richTextStyles")(richTextStyles)
-    if (sprite != null) __obj.updateDynamic("sprite")(sprite)
-    if (src != null) __obj.updateDynamic("src")(src)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (inputStyles != null) __obj.updateDynamic("inputStyles")(inputStyles.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (rectStyles != null) __obj.updateDynamic("rectStyles")(rectStyles.asInstanceOf[js.Any])
+    if (richTextStyles != null) __obj.updateDynamic("richTextStyles")(richTextStyles.asInstanceOf[js.Any])
+    if (sprite != null) __obj.updateDynamic("sprite")(sprite.asInstanceOf[js.Any])
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (textStyles != null) __obj.updateDynamic("textStyles")(textStyles)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (textStyles != null) __obj.updateDynamic("textStyles")(textStyles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeObjViewDrawTagStyles]
   }
 }

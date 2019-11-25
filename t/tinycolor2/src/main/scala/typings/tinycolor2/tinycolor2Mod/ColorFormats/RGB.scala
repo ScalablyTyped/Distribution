@@ -14,7 +14,7 @@ trait RGB extends _ColorInputWithoutInstance {
 object RGB {
   @scala.inline
   def apply(b: Double, g: Double, r: Double): RGB = {
-    val __obj = js.Dynamic.literal(b = b, g = g, r = r)
+    val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RGB]
   }

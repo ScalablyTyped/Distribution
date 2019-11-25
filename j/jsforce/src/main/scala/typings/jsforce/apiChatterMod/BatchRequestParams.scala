@@ -11,9 +11,9 @@ trait BatchRequestParams extends RequestParams {
 object BatchRequestParams {
   @scala.inline
   def apply(method: String, url: String, body: String = null, richInput: String = null): BatchRequestParams = {
-    val __obj = js.Dynamic.literal(method = method, url = url)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (richInput != null) __obj.updateDynamic("richInput")(richInput)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (richInput != null) __obj.updateDynamic("richInput")(richInput.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchRequestParams]
   }
 }

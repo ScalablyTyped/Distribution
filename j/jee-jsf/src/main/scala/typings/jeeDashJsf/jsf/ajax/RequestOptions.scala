@@ -44,12 +44,12 @@ object RequestOptions {
     render: String = null
   ): RequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (execute != null) __obj.updateDynamic("execute")(execute)
-    if (`javax.faces.behavior.event` != null) __obj.updateDynamic("javax.faces.behavior.event")(`javax.faces.behavior.event`)
+    if (execute != null) __obj.updateDynamic("execute")(execute.asInstanceOf[js.Any])
+    if (`javax.faces.behavior.event` != null) __obj.updateDynamic("javax.faces.behavior.event")(`javax.faces.behavior.event`.asInstanceOf[js.Any])
     if (onerror != null) __obj.updateDynamic("onerror")(js.Any.fromFunction1(onerror))
     if (onevent != null) __obj.updateDynamic("onevent")(js.Any.fromFunction1(onevent))
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }
 }

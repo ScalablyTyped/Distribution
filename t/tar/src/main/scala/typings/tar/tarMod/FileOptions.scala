@@ -19,8 +19,8 @@ object FileOptions {
   @scala.inline
   def apply(f: String = null, file: String = null): FileOptions = {
     val __obj = js.Dynamic.literal()
-    if (f != null) __obj.updateDynamic("f")(f)
-    if (file != null) __obj.updateDynamic("file")(file)
+    if (f != null) __obj.updateDynamic("f")(f.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileOptions]
   }
 }

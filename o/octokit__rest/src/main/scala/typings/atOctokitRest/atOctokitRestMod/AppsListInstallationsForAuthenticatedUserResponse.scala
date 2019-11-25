@@ -15,7 +15,7 @@ object AppsListInstallationsForAuthenticatedUserResponse {
     installations: js.Array[AppsListInstallationsForAuthenticatedUserResponseInstallationsItem],
     total_count: Double
   ): AppsListInstallationsForAuthenticatedUserResponse = {
-    val __obj = js.Dynamic.literal(installations = installations, total_count = total_count)
+    val __obj = js.Dynamic.literal(installations = installations.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AppsListInstallationsForAuthenticatedUserResponse]
   }

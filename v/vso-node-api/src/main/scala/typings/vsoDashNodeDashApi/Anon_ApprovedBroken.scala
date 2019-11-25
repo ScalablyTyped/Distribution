@@ -23,7 +23,7 @@ object Anon_ApprovedBroken {
     rejected: Double,
     running: Double
   ): Anon_ApprovedBroken = {
-    val __obj = js.Dynamic.literal(approved = approved, broken = broken, notApplicable = notApplicable, queued = queued, rejected = rejected, running = running)
+    val __obj = js.Dynamic.literal(approved = approved.asInstanceOf[js.Any], broken = broken.asInstanceOf[js.Any], notApplicable = notApplicable.asInstanceOf[js.Any], queued = queued.asInstanceOf[js.Any], rejected = rejected.asInstanceOf[js.Any], running = running.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ApprovedBroken]
   }

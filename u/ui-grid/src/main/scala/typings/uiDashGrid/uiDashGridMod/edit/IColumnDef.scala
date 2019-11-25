@@ -1,7 +1,7 @@
 package typings.uiDashGrid.uiDashGridMod.edit
 
+import typings.angular.angularMod.IScope
 import typings.std.FileList
-import typings.uiDashGrid.Fn_Scope
 import typings.uiDashGrid.uiDashGridMod.IGridColumnOf
 import typings.uiDashGrid.uiDashGridMod.IGridRowOf
 import scala.scalajs.js
@@ -13,7 +13,7 @@ trait IColumnDef[TEntity] extends js.Object {
     * If specified, either a value or function evaluated before editing cell.
     * If falsy, then editing of cell is not allowed.
     */
-  var cellEditableCondition: js.UndefOr[js.Any | Fn_Scope] = js.undefined
+  var cellEditableCondition: js.UndefOr[js.Any | (js.Function1[/* $scope */ IScope, Boolean])] = js.undefined
   /** A filter that you would like to apply to the values in the options list of the dropdown */
   var editDropdownFilter: js.UndefOr[String] = js.undefined
   /** the label for the "id" field in the editDropdownOptionsArray. Defaults to 'id' */
@@ -96,7 +96,7 @@ trait IColumnDef[TEntity] extends js.Object {
 object IColumnDef {
   @scala.inline
   def apply[TEntity](
-    cellEditableCondition: js.Any | Fn_Scope = null,
+    cellEditableCondition: js.Any | (js.Function1[/* $scope */ IScope, Boolean]) = null,
     editDropdownFilter: String = null,
     editDropdownIdLabel: String = null,
     editDropdownOptionsArray: js.Array[IEditDropdown] = null,
@@ -110,16 +110,16 @@ object IColumnDef {
   ): IColumnDef[TEntity] = {
     val __obj = js.Dynamic.literal()
     if (cellEditableCondition != null) __obj.updateDynamic("cellEditableCondition")(cellEditableCondition.asInstanceOf[js.Any])
-    if (editDropdownFilter != null) __obj.updateDynamic("editDropdownFilter")(editDropdownFilter)
-    if (editDropdownIdLabel != null) __obj.updateDynamic("editDropdownIdLabel")(editDropdownIdLabel)
-    if (editDropdownOptionsArray != null) __obj.updateDynamic("editDropdownOptionsArray")(editDropdownOptionsArray)
-    if (editDropdownRowEntityOptionsArrayPath != null) __obj.updateDynamic("editDropdownRowEntityOptionsArrayPath")(editDropdownRowEntityOptionsArrayPath)
-    if (editDropdownValueLabel != null) __obj.updateDynamic("editDropdownValueLabel")(editDropdownValueLabel)
+    if (editDropdownFilter != null) __obj.updateDynamic("editDropdownFilter")(editDropdownFilter.asInstanceOf[js.Any])
+    if (editDropdownIdLabel != null) __obj.updateDynamic("editDropdownIdLabel")(editDropdownIdLabel.asInstanceOf[js.Any])
+    if (editDropdownOptionsArray != null) __obj.updateDynamic("editDropdownOptionsArray")(editDropdownOptionsArray.asInstanceOf[js.Any])
+    if (editDropdownRowEntityOptionsArrayPath != null) __obj.updateDynamic("editDropdownRowEntityOptionsArrayPath")(editDropdownRowEntityOptionsArrayPath.asInstanceOf[js.Any])
+    if (editDropdownValueLabel != null) __obj.updateDynamic("editDropdownValueLabel")(editDropdownValueLabel.asInstanceOf[js.Any])
     if (editFileChooserCallback != null) __obj.updateDynamic("editFileChooserCallback")(js.Any.fromFunction3(editFileChooserCallback))
-    if (editModelField != null) __obj.updateDynamic("editModelField")(editModelField)
-    if (editableCellTemplate != null) __obj.updateDynamic("editableCellTemplate")(editableCellTemplate)
-    if (!js.isUndefined(enableCellEdit)) __obj.updateDynamic("enableCellEdit")(enableCellEdit)
-    if (!js.isUndefined(enableCellEditOnFocus)) __obj.updateDynamic("enableCellEditOnFocus")(enableCellEditOnFocus)
+    if (editModelField != null) __obj.updateDynamic("editModelField")(editModelField.asInstanceOf[js.Any])
+    if (editableCellTemplate != null) __obj.updateDynamic("editableCellTemplate")(editableCellTemplate.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCellEdit)) __obj.updateDynamic("enableCellEdit")(enableCellEdit.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCellEditOnFocus)) __obj.updateDynamic("enableCellEditOnFocus")(enableCellEditOnFocus.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnDef[TEntity]]
   }
 }

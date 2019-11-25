@@ -45,11 +45,11 @@ object RoomP2PStatus {
   ): RoomP2PStatus = {
     val __obj = js.Dynamic.literal()
     if (connectionSetupLatencyMillis != null) __obj.updateDynamic("connectionSetupLatencyMillis")(connectionSetupLatencyMillis.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (error_reason != null) __obj.updateDynamic("error_reason")(error_reason)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (participantId != null) __obj.updateDynamic("participantId")(participantId)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (error_reason != null) __obj.updateDynamic("error_reason")(error_reason.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (participantId != null) __obj.updateDynamic("participantId")(participantId.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (unreliableRoundtripLatencyMillis != null) __obj.updateDynamic("unreliableRoundtripLatencyMillis")(unreliableRoundtripLatencyMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomP2PStatus]
   }

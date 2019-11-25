@@ -20,7 +20,7 @@ object IELangEditEvents {
     remove: JQueryDeferred[_],
     select: JQueryDeferred[_]
   ): IELangEditEvents = {
-    val __obj = js.Dynamic.literal(insert = insert, modify = modify, remove = remove, select = select)
+    val __obj = js.Dynamic.literal(insert = insert.asInstanceOf[js.Any], modify = modify.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IELangEditEvents]
   }

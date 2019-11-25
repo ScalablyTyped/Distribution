@@ -47,8 +47,8 @@ object ChecksListForSuiteParams {
     per_page: Int | Double = null,
     status: queued | in_progress | completed = null
   ): ChecksListForSuiteParams = {
-    val __obj = js.Dynamic.literal(check_suite_id = check_suite_id, owner = owner, repo = repo)
-    if (check_name != null) __obj.updateDynamic("check_name")(check_name)
+    val __obj = js.Dynamic.literal(check_suite_id = check_suite_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (check_name != null) __obj.updateDynamic("check_name")(check_name.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])

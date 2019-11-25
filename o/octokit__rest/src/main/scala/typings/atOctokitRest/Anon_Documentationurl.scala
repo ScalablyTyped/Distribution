@@ -20,9 +20,9 @@ object Anon_Documentationurl {
     documentation_url: String = null,
     errors: js.Array[Anon_Code] = null
   ): Anon_Documentationurl = {
-    val __obj = js.Dynamic.literal(headers = headers, status = status)
-    if (documentation_url != null) __obj.updateDynamic("documentation_url")(documentation_url)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (documentation_url != null) __obj.updateDynamic("documentation_url")(documentation_url.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Documentationurl]
   }
 }

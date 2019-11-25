@@ -20,7 +20,7 @@ trait IonFooter extends js.Object {
 object IonFooter {
   @scala.inline
   def apply(translucent: Boolean, mode: ios | md = null): IonFooter = {
-    val __obj = js.Dynamic.literal(translucent = translucent)
+    val __obj = js.Dynamic.literal(translucent = translucent.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonFooter]
   }

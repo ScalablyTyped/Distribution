@@ -23,7 +23,7 @@ trait ISpinButtonState extends js.Object {
 object ISpinButtonState {
   @scala.inline
   def apply(isFocused: Boolean, keyboardSpinDirection: KeyboardSpinDirection, value: String): ISpinButtonState = {
-    val __obj = js.Dynamic.literal(isFocused = isFocused, keyboardSpinDirection = keyboardSpinDirection, value = value)
+    val __obj = js.Dynamic.literal(isFocused = isFocused.asInstanceOf[js.Any], keyboardSpinDirection = keyboardSpinDirection.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISpinButtonState]
   }

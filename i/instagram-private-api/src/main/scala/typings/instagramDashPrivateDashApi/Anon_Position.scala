@@ -12,7 +12,7 @@ trait Anon_Position extends js.Object {
 object Anon_Position {
   @scala.inline
   def apply(position: js.Tuple2[Double, Double], user_id: Double | String): Anon_Position = {
-    val __obj = js.Dynamic.literal(position = position, user_id = user_id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Position]
   }

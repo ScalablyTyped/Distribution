@@ -24,8 +24,8 @@ object DefineNameOptions {
   @scala.inline
   def apply(plural: String = null, singular: String = null): DefineNameOptions = {
     val __obj = js.Dynamic.literal()
-    if (plural != null) __obj.updateDynamic("plural")(plural)
-    if (singular != null) __obj.updateDynamic("singular")(singular)
+    if (plural != null) __obj.updateDynamic("plural")(plural.asInstanceOf[js.Any])
+    if (singular != null) __obj.updateDynamic("singular")(singular.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineNameOptions]
   }
 }

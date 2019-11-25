@@ -58,7 +58,7 @@ object Position {
     Profit: Double,
     Type: VPositionType
   ): Position = {
-    val __obj = js.Dynamic.literal(Amount = Amount, CanCover = CanCover, ContractType = ContractType, FrozenAmount = FrozenAmount, MarginLevel = MarginLevel, Price = Price, Profit = Profit, Type = Type)
+    val __obj = js.Dynamic.literal(Amount = Amount.asInstanceOf[js.Any], CanCover = CanCover.asInstanceOf[js.Any], ContractType = ContractType.asInstanceOf[js.Any], FrozenAmount = FrozenAmount.asInstanceOf[js.Any], MarginLevel = MarginLevel.asInstanceOf[js.Any], Price = Price.asInstanceOf[js.Any], Profit = Profit.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Position]
   }

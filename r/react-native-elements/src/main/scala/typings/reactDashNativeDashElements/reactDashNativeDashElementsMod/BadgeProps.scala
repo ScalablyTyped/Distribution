@@ -63,7 +63,7 @@ object BadgeProps {
     value: ReactNode = null
   ): BadgeProps = {
     val __obj = js.Dynamic.literal()
-    if (Component != null) __obj.updateDynamic("Component")(Component)
+    if (Component != null) __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
     if (badgeStyle != null) __obj.updateDynamic("badgeStyle")(badgeStyle.asInstanceOf[js.Any])
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction0(onPress))

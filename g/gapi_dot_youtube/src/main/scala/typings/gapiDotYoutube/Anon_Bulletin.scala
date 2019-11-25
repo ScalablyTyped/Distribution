@@ -61,7 +61,7 @@ object Anon_Bulletin {
     subscription: Anon_ResourceIdAnonChannelIdKindString,
     upload: Anon_VideoId
   ): Anon_Bulletin = {
-    val __obj = js.Dynamic.literal(bulletin = bulletin, channelItem = channelItem, comment = comment, favorite = favorite, like = like, playlistItem = playlistItem, recommendation = recommendation, social = social, subscription = subscription, upload = upload)
+    val __obj = js.Dynamic.literal(bulletin = bulletin.asInstanceOf[js.Any], channelItem = channelItem.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], favorite = favorite.asInstanceOf[js.Any], like = like.asInstanceOf[js.Any], playlistItem = playlistItem.asInstanceOf[js.Any], recommendation = recommendation.asInstanceOf[js.Any], social = social.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any], upload = upload.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Bulletin]
   }

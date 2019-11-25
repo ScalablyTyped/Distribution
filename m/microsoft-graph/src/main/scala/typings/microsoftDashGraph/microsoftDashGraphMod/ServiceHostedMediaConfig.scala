@@ -12,7 +12,7 @@ object ServiceHostedMediaConfig {
   @scala.inline
   def apply(preFetchMedia: js.Array[MediaInfo] = null): ServiceHostedMediaConfig = {
     val __obj = js.Dynamic.literal()
-    if (preFetchMedia != null) __obj.updateDynamic("preFetchMedia")(preFetchMedia)
+    if (preFetchMedia != null) __obj.updateDynamic("preFetchMedia")(preFetchMedia.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceHostedMediaConfig]
   }
 }

@@ -30,7 +30,7 @@ object HookMatchCriteria {
     to: HookMatchCriterion = null
   ): HookMatchCriteria = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (entering != null) __obj.updateDynamic("entering")(entering.asInstanceOf[js.Any])
     if (exiting != null) __obj.updateDynamic("exiting")(exiting.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])

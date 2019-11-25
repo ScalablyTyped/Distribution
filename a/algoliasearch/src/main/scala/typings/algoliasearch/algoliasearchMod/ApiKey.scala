@@ -36,8 +36,8 @@ object ApiKey {
     value: String,
     description: String = null
   ): ApiKey = {
-    val __obj = js.Dynamic.literal(acl = acl, createdAt = createdAt, validity = validity, value = value)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(acl = acl.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], validity = validity.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiKey]
   }
 }

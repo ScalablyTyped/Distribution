@@ -14,7 +14,7 @@ trait Anon_FillShape extends js.Object {
 object Anon_FillShape {
   @scala.inline
   def apply(fill: String, shape: String, size: Double, strokeWidth: Double): Anon_FillShape = {
-    val __obj = js.Dynamic.literal(fill = fill, shape = shape, size = size, strokeWidth = strokeWidth)
+    val __obj = js.Dynamic.literal(fill = fill.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], strokeWidth = strokeWidth.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FillShape]
   }

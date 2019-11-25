@@ -12,8 +12,8 @@ trait ExtendedConfigCacheEntry extends js.Object {
 object ExtendedConfigCacheEntry {
   @scala.inline
   def apply(extendedResult: TsConfigSourceFile, extendedConfig: ParsedTsconfig = null): ExtendedConfigCacheEntry = {
-    val __obj = js.Dynamic.literal(extendedResult = extendedResult)
-    if (extendedConfig != null) __obj.updateDynamic("extendedConfig")(extendedConfig)
+    val __obj = js.Dynamic.literal(extendedResult = extendedResult.asInstanceOf[js.Any])
+    if (extendedConfig != null) __obj.updateDynamic("extendedConfig")(extendedConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendedConfigCacheEntry]
   }
 }

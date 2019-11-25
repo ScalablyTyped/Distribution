@@ -15,7 +15,7 @@ object FilterSettings {
   @scala.inline
   def apply(filteredColumns: js.Array[FilterSettingsFilteredColumn] = null): FilterSettings = {
     val __obj = js.Dynamic.literal()
-    if (filteredColumns != null) __obj.updateDynamic("filteredColumns")(filteredColumns)
+    if (filteredColumns != null) __obj.updateDynamic("filteredColumns")(filteredColumns.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterSettings]
   }
 }

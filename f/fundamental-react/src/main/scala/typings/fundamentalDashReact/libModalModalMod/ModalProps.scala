@@ -57,19 +57,19 @@ object ModalProps {
     show: js.UndefOr[Boolean] = js.undefined,
     titleProps: StringDictionary[js.Any] = null
   ): ModalProps = {
-    val __obj = js.Dynamic.literal(title = title)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (bodyProps != null) __obj.updateDynamic("bodyProps")(bodyProps)
-    if (closeProps != null) __obj.updateDynamic("closeProps")(closeProps)
-    if (contentProps != null) __obj.updateDynamic("contentProps")(contentProps)
-    if (footerProps != null) __obj.updateDynamic("footerProps")(footerProps)
-    if (headerProps != null) __obj.updateDynamic("headerProps")(headerProps)
+    if (bodyProps != null) __obj.updateDynamic("bodyProps")(bodyProps.asInstanceOf[js.Any])
+    if (closeProps != null) __obj.updateDynamic("closeProps")(closeProps.asInstanceOf[js.Any])
+    if (contentProps != null) __obj.updateDynamic("contentProps")(contentProps.asInstanceOf[js.Any])
+    if (footerProps != null) __obj.updateDynamic("footerProps")(footerProps.asInstanceOf[js.Any])
+    if (headerProps != null) __obj.updateDynamic("headerProps")(headerProps.asInstanceOf[js.Any])
     if (headingLevel != null) __obj.updateDynamic("headingLevel")(headingLevel.asInstanceOf[js.Any])
-    if (localizedText != null) __obj.updateDynamic("localizedText")(localizedText)
+    if (localizedText != null) __obj.updateDynamic("localizedText")(localizedText.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
-    if (titleProps != null) __obj.updateDynamic("titleProps")(titleProps)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (titleProps != null) __obj.updateDynamic("titleProps")(titleProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalProps]
   }
 }

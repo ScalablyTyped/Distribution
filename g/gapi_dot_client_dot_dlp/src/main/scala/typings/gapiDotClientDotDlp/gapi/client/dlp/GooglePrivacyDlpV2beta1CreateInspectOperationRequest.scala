@@ -24,10 +24,10 @@ object GooglePrivacyDlpV2beta1CreateInspectOperationRequest {
     storageConfig: GooglePrivacyDlpV2beta1StorageConfig = null
   ): GooglePrivacyDlpV2beta1CreateInspectOperationRequest = {
     val __obj = js.Dynamic.literal()
-    if (inspectConfig != null) __obj.updateDynamic("inspectConfig")(inspectConfig)
-    if (operationConfig != null) __obj.updateDynamic("operationConfig")(operationConfig)
-    if (outputConfig != null) __obj.updateDynamic("outputConfig")(outputConfig)
-    if (storageConfig != null) __obj.updateDynamic("storageConfig")(storageConfig)
+    if (inspectConfig != null) __obj.updateDynamic("inspectConfig")(inspectConfig.asInstanceOf[js.Any])
+    if (operationConfig != null) __obj.updateDynamic("operationConfig")(operationConfig.asInstanceOf[js.Any])
+    if (outputConfig != null) __obj.updateDynamic("outputConfig")(outputConfig.asInstanceOf[js.Any])
+    if (storageConfig != null) __obj.updateDynamic("storageConfig")(storageConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1CreateInspectOperationRequest]
   }
 }

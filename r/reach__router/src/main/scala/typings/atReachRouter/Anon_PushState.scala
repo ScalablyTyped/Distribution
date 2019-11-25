@@ -17,7 +17,7 @@ object Anon_PushState {
     replaceState: (js.Any, String, String) => Unit,
     state: js.Any
   ): Anon_PushState = {
-    val __obj = js.Dynamic.literal(pushState = js.Any.fromFunction3(pushState), replaceState = js.Any.fromFunction3(replaceState), state = state)
+    val __obj = js.Dynamic.literal(pushState = js.Any.fromFunction3(pushState), replaceState = js.Any.fromFunction3(replaceState), state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PushState]
   }

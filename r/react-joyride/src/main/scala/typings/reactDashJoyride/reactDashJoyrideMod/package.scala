@@ -10,5 +10,5 @@ package object reactDashJoyrideMod {
 
   type GenericObject = StringDictionary[js.Any]
   type ReactJoyride = Component[Props, StoreState, js.Any]
-  type valueof[T] = /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any
+  type valueof[T] = /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
 }

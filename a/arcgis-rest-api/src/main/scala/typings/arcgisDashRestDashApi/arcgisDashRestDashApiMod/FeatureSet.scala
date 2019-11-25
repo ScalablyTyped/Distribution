@@ -32,15 +32,15 @@ object FeatureSet {
     objectIdFieldName: String = null,
     spatialReference: SpatialReference = null
   ): FeatureSet = {
-    val __obj = js.Dynamic.literal(features = features)
-    if (displayFieldName != null) __obj.updateDynamic("displayFieldName")(displayFieldName)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType)
-    if (globalIdFieldName != null) __obj.updateDynamic("globalIdFieldName")(globalIdFieldName)
-    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM)
-    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ)
-    if (objectIdFieldName != null) __obj.updateDynamic("objectIdFieldName")(objectIdFieldName)
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any])
+    if (displayFieldName != null) __obj.updateDynamic("displayFieldName")(displayFieldName.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType.asInstanceOf[js.Any])
+    if (globalIdFieldName != null) __obj.updateDynamic("globalIdFieldName")(globalIdFieldName.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ.asInstanceOf[js.Any])
+    if (objectIdFieldName != null) __obj.updateDynamic("objectIdFieldName")(objectIdFieldName.asInstanceOf[js.Any])
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureSet]
   }
 }

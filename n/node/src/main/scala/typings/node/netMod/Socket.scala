@@ -3,7 +3,6 @@ package typings.node.netMod
 import typings.node.Buffer
 import typings.node.Error
 import typings.node.nodeStrings.close
-import typings.node.nodeStrings.connect
 import typings.node.nodeStrings.data
 import typings.node.nodeStrings.lookup
 import typings.node.nodeStrings.timeout
@@ -29,7 +28,7 @@ class Socket () extends Duplex {
   @JSName("addListener")
   def addListener_close(event: close, listener: js.Function1[/* had_error */ Boolean, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
+  def addListener_connect(event: typings.node.nodeStrings.connect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_lookup(
     event: lookup,
@@ -55,7 +54,7 @@ class Socket () extends Duplex {
   @JSName("emit")
   def emit_close(event: close, had_error: Boolean): Boolean = js.native
   @JSName("emit")
-  def emit_connect(event: connect): Boolean = js.native
+  def emit_connect(event: typings.node.nodeStrings.connect): Boolean = js.native
   @JSName("emit")
   def emit_data(event: data, data: Buffer): Boolean = js.native
   @JSName("emit")
@@ -81,7 +80,7 @@ class Socket () extends Duplex {
   @JSName("on")
   def on_close(event: close, listener: js.Function1[/* had_error */ Boolean, Unit]): this.type = js.native
   @JSName("on")
-  def on_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
+  def on_connect(event: typings.node.nodeStrings.connect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_lookup(
     event: lookup,
@@ -98,7 +97,7 @@ class Socket () extends Duplex {
   @JSName("once")
   def once_close(event: close, listener: js.Function1[/* had_error */ Boolean, Unit]): this.type = js.native
   @JSName("once")
-  def once_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
+  def once_connect(event: typings.node.nodeStrings.connect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
   def once_lookup(
     event: lookup,
@@ -115,7 +114,7 @@ class Socket () extends Duplex {
   @JSName("prependListener")
   def prependListener_close(event: close, listener: js.Function1[/* had_error */ Boolean, Unit]): this.type = js.native
   @JSName("prependListener")
-  def prependListener_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
+  def prependListener_connect(event: typings.node.nodeStrings.connect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_lookup(
     event: lookup,
@@ -132,7 +131,7 @@ class Socket () extends Duplex {
   @JSName("prependOnceListener")
   def prependOnceListener_close(event: close, listener: js.Function1[/* had_error */ Boolean, Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
+  def prependOnceListener_connect(event: typings.node.nodeStrings.connect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_lookup(
     event: lookup,

@@ -32,10 +32,10 @@ object Profile {
     name: Anon_FamilyName = null,
     photos: js.Array[Anon_Value] = null
   ): Profile = {
-    val __obj = js.Dynamic.literal(_accessLevel = _accessLevel, _json = _json, _raw = _raw, displayName = displayName, gender = gender, id = id, provider = provider, username = username)
-    if (emails != null) __obj.updateDynamic("emails")(emails)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (photos != null) __obj.updateDynamic("photos")(photos)
+    val __obj = js.Dynamic.literal(_accessLevel = _accessLevel.asInstanceOf[js.Any], _json = _json.asInstanceOf[js.Any], _raw = _raw.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], gender = gender.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    if (emails != null) __obj.updateDynamic("emails")(emails.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (photos != null) __obj.updateDynamic("photos")(photos.asInstanceOf[js.Any])
     __obj.asInstanceOf[Profile]
   }
 }

@@ -53,10 +53,10 @@ object SettingsCollection {
     SendAs: SendAsCollection = null
   ): SettingsCollection = {
     val __obj = js.Dynamic.literal(getAutoForwarding = js.Any.fromFunction1(getAutoForwarding), getImap = js.Any.fromFunction1(getImap), getPop = js.Any.fromFunction1(getPop), getVacation = js.Any.fromFunction1(getVacation), updateAutoForwarding = js.Any.fromFunction2(updateAutoForwarding), updateImap = js.Any.fromFunction2(updateImap), updatePop = js.Any.fromFunction2(updatePop), updateVacation = js.Any.fromFunction2(updateVacation))
-    if (Delegates != null) __obj.updateDynamic("Delegates")(Delegates)
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (ForwardingAddresses != null) __obj.updateDynamic("ForwardingAddresses")(ForwardingAddresses)
-    if (SendAs != null) __obj.updateDynamic("SendAs")(SendAs)
+    if (Delegates != null) __obj.updateDynamic("Delegates")(Delegates.asInstanceOf[js.Any])
+    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
+    if (ForwardingAddresses != null) __obj.updateDynamic("ForwardingAddresses")(ForwardingAddresses.asInstanceOf[js.Any])
+    if (SendAs != null) __obj.updateDynamic("SendAs")(SendAs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingsCollection]
   }
 }

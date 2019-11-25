@@ -16,10 +16,10 @@ trait ResponseFailure extends js.Object {
 object ResponseFailure {
   @scala.inline
   def apply(device: String, error: Error = null, response: Anon_Reason = null, status: String = null): ResponseFailure = {
-    val __obj = js.Dynamic.literal(device = device)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (response != null) __obj.updateDynamic("response")(response)
-    if (status != null) __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseFailure]
   }
 }

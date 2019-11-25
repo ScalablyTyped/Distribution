@@ -13,8 +13,8 @@ object Anon_ColorRippleBackgroundColor {
   @scala.inline
   def apply(color: String = null, rippleBackgroundColor: String = null): Anon_ColorRippleBackgroundColor = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (rippleBackgroundColor != null) __obj.updateDynamic("rippleBackgroundColor")(rippleBackgroundColor)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (rippleBackgroundColor != null) __obj.updateDynamic("rippleBackgroundColor")(rippleBackgroundColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorRippleBackgroundColor]
   }
 }

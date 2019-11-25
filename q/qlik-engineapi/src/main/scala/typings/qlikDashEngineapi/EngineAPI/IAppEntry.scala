@@ -49,7 +49,7 @@ object IAppEntry {
     qThumbnail: IStaticContentUrl,
     qTitle: String
   ): IAppEntry = {
-    val __obj = js.Dynamic.literal(qID = qID, qLastReloadTime = qLastReloadTime, qMeta = qMeta, qPath = qPath, qReadOnly = qReadOnly, qThumbnail = qThumbnail, qTitle = qTitle)
+    val __obj = js.Dynamic.literal(qID = qID.asInstanceOf[js.Any], qLastReloadTime = qLastReloadTime.asInstanceOf[js.Any], qMeta = qMeta.asInstanceOf[js.Any], qPath = qPath.asInstanceOf[js.Any], qReadOnly = qReadOnly.asInstanceOf[js.Any], qThumbnail = qThumbnail.asInstanceOf[js.Any], qTitle = qTitle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IAppEntry]
   }

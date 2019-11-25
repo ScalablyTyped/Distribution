@@ -20,3 +20,32 @@ import scala.scalajs.js.annotation._
 */
 trait GoogleActionsV2OrdersOrderUpdateActionType extends js.Object
 
+object GoogleActionsV2OrdersOrderUpdateActionType {
+  @scala.inline
+  def CALL: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.CALL = this.cast("CALL")
+  @scala.inline
+  def CANCEL: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.CANCEL = this.cast("CANCEL")
+  @scala.inline
+  def CUSTOMER_SERVICE: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.CUSTOMER_SERVICE = this.cast("CUSTOMER_SERVICE")
+  @scala.inline
+  def EMAIL: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.EMAIL = this.cast("EMAIL")
+  @scala.inline
+  def EXCHANGE: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.EXCHANGE = this.cast("EXCHANGE")
+  @scala.inline
+  def FIX_ISSUE: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.FIX_ISSUE = this.cast("FIX_ISSUE")
+  @scala.inline
+  def MODIFY: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.MODIFY = this.cast("MODIFY")
+  @scala.inline
+  def REORDER: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.REORDER = this.cast("REORDER")
+  @scala.inline
+  def RETURN: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.RETURN = this.cast("RETURN")
+  @scala.inline
+  def REVIEW: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.REVIEW = this.cast("REVIEW")
+  @scala.inline
+  def UNKNOWN: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.UNKNOWN = this.cast("UNKNOWN")
+  @scala.inline
+  def VIEW_DETAILS: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.VIEW_DETAILS = this.cast("VIEW_DETAILS")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -43,11 +43,11 @@ object HtmlEditorOptions {
     toolbar: js.Array[String] = null
   ): HtmlEditorOptions = {
     val __obj = js.Dynamic.literal()
-    if (lblCodeview != null) __obj.updateDynamic("lblCodeview")(lblCodeview)
-    if (lblPreview != null) __obj.updateDynamic("lblPreview")(lblPreview)
+    if (lblCodeview != null) __obj.updateDynamic("lblCodeview")(lblCodeview.asInstanceOf[js.Any])
+    if (lblPreview != null) __obj.updateDynamic("lblPreview")(lblPreview.asInstanceOf[js.Any])
     if (maxsplitsize != null) __obj.updateDynamic("maxsplitsize")(maxsplitsize.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlEditorOptions]
   }
 }

@@ -23,7 +23,7 @@ object Anon_BackgroundColorColorFontSizePaddingBottom {
     paddingHorizontal: Double,
     paddingTop: Double
   ): Anon_BackgroundColorColorFontSizePaddingBottom = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, color = color, fontSize = fontSize, paddingBottom = paddingBottom, paddingHorizontal = paddingHorizontal, paddingTop = paddingTop)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], paddingBottom = paddingBottom.asInstanceOf[js.Any], paddingHorizontal = paddingHorizontal.asInstanceOf[js.Any], paddingTop = paddingTop.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BackgroundColorColorFontSizePaddingBottom]
   }

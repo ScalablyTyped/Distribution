@@ -11,7 +11,7 @@ trait BindingList extends js.Object {
 object BindingList {
   @scala.inline
   def apply(ip: String): BindingList = {
-    val __obj = js.Dynamic.literal(ip = ip)
+    val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BindingList]
   }

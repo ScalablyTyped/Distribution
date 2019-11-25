@@ -17,9 +17,9 @@ object ContainerNewProps {
   @scala.inline
   def apply(nodes: js.Array[ChildNode] = null, raws: ContainerRaws = null, source: NodeSource = null): ContainerNewProps = {
     val __obj = js.Dynamic.literal()
-    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
-    if (raws != null) __obj.updateDynamic("raws")(raws)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
+    if (raws != null) __obj.updateDynamic("raws")(raws.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerNewProps]
   }
 }

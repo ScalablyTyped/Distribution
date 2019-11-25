@@ -12,7 +12,7 @@ trait ScopeInfo extends js.Object {
 object ScopeInfo {
   @scala.inline
   def apply(label: String, name: String): ScopeInfo = {
-    val __obj = js.Dynamic.literal(label = label, name = name)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ScopeInfo]
   }

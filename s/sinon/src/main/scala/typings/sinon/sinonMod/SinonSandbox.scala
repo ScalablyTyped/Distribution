@@ -43,7 +43,7 @@ trait SinonSandbox extends js.Object {
   def createStubInstance[TType](constructor: StubbableType[TType]): SinonStubbedInstance[TType] = js.native
   def createStubInstance[TType](
     constructor: StubbableType[TType],
-    overrides: /* import warning: ImportType.apply c Unsupported type mapping: 
+    overrides: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof TType ]:? any}
     */ typings.sinon.sinonStrings.SinonSandbox with js.Any
   ): SinonStubbedInstance[TType] = js.native
@@ -67,8 +67,8 @@ trait SinonSandbox extends js.Object {
   def replace[T, TKey /* <: String */](
     obj: T,
     prop: TKey,
-    replacement: /* import warning: ImportType.apply Failed type conversion: T[TKey] */ js.Any
-  ): /* import warning: ImportType.apply Failed type conversion: T[TKey] */ js.Any = js.native
+    replacement: /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
+  ): /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any = js.native
   /**
     * Replaces getter for property on object with replacement argument. Attempts to replace an already replaced getter cause an exception.
     * replacement must be a Function, and can be instances of spies, stubs and fakes.
@@ -79,8 +79,12 @@ trait SinonSandbox extends js.Object {
   def replaceGetter[T, TKey /* <: String */](
     obj: T,
     prop: TKey,
-    replacement: js.Function0[/* import warning: ImportType.apply Failed type conversion: T[TKey] */ js.Any]
-  ): js.Function0[/* import warning: ImportType.apply Failed type conversion: T[TKey] */ js.Any] = js.native
+    replacement: js.Function0[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
+    ]
+  ): js.Function0[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
+  ] = js.native
   /**
     * Replaces setter for property on object with replacement argument. Attempts to replace an already replaced setter cause an exception.
     * replacement must be a Function, and can be instances of spies, stubs and fakes.
@@ -92,11 +96,11 @@ trait SinonSandbox extends js.Object {
     obj: T,
     prop: TKey,
     replacement: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: T[TKey] */ /* val */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ /* val */ js.Any, 
       Unit
     ]
   ): js.Function1[
-    /* import warning: ImportType.apply Failed type conversion: T[TKey] */ /* val */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ /* val */ js.Any, 
     Unit
   ] = js.native
   /**

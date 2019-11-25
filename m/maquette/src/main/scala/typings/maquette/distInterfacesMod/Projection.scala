@@ -21,7 +21,7 @@ trait Projection extends js.Object {
 object Projection {
   @scala.inline
   def apply(domNode: Element, getLastRender: () => VNode, update: VNode => Unit): Projection = {
-    val __obj = js.Dynamic.literal(domNode = domNode, getLastRender = js.Any.fromFunction0(getLastRender), update = js.Any.fromFunction1(update))
+    val __obj = js.Dynamic.literal(domNode = domNode.asInstanceOf[js.Any], getLastRender = js.Any.fromFunction0(getLastRender), update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[Projection]
   }

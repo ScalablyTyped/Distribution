@@ -22,9 +22,9 @@ object Anon_BottomRadius {
     slices: Int | Double = null,
     vertexFormat: VertexFormat = null
   ): Anon_BottomRadius = {
-    val __obj = js.Dynamic.literal(bottomRadius = bottomRadius, length = length, topRadius = topRadius)
+    val __obj = js.Dynamic.literal(bottomRadius = bottomRadius.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], topRadius = topRadius.asInstanceOf[js.Any])
     if (slices != null) __obj.updateDynamic("slices")(slices.asInstanceOf[js.Any])
-    if (vertexFormat != null) __obj.updateDynamic("vertexFormat")(vertexFormat)
+    if (vertexFormat != null) __obj.updateDynamic("vertexFormat")(vertexFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BottomRadius]
   }
 }

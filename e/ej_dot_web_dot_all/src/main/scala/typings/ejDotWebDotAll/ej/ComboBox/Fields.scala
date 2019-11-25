@@ -27,10 +27,10 @@ object Fields {
   @scala.inline
   def apply(groupBy: String = null, iconCss: String = null, text: String = null, value: String = null): Fields = {
     val __obj = js.Dynamic.literal()
-    if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy)
-    if (iconCss != null) __obj.updateDynamic("iconCss")(iconCss)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
+    if (iconCss != null) __obj.updateDynamic("iconCss")(iconCss.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fields]
   }
 }

@@ -12,7 +12,7 @@ trait Request extends js.Object {
 object Request {
   @scala.inline
   def apply(cookieAuth: Anon_Clear): Request = {
-    val __obj = js.Dynamic.literal(cookieAuth = cookieAuth)
+    val __obj = js.Dynamic.literal(cookieAuth = cookieAuth.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Request]
   }

@@ -18,9 +18,9 @@ object Anon_IgnoreScroll {
     partial: js.UndefOr[Boolean] = js.undefined
   ): Anon_IgnoreScroll = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreScroll)) __obj.updateDynamic("ignoreScroll")(ignoreScroll)
-    if (!js.isUndefined(ignoreSorting)) __obj.updateDynamic("ignoreSorting")(ignoreSorting)
-    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial)
+    if (!js.isUndefined(ignoreScroll)) __obj.updateDynamic("ignoreScroll")(ignoreScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreSorting)) __obj.updateDynamic("ignoreSorting")(ignoreSorting.asInstanceOf[js.Any])
+    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IgnoreScroll]
   }
 }

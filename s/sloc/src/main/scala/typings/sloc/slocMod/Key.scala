@@ -17,3 +17,26 @@ import scala.scalajs.js.annotation._
 */
 trait Key extends js.Object
 
+object Key {
+  @scala.inline
+  def block: typings.sloc.slocStrings.block = this.cast("block")
+  @scala.inline
+  def blockEmpty: typings.sloc.slocStrings.blockEmpty = this.cast("blockEmpty")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def comment: typings.sloc.slocStrings.comment = this.cast("comment")
+  @scala.inline
+  def empty: typings.sloc.slocStrings.empty = this.cast("empty")
+  @scala.inline
+  def mixed: typings.sloc.slocStrings.mixed = this.cast("mixed")
+  @scala.inline
+  def single: typings.sloc.slocStrings.single = this.cast("single")
+  @scala.inline
+  def source: typings.sloc.slocStrings.source = this.cast("source")
+  @scala.inline
+  def todo: typings.sloc.slocStrings.todo = this.cast("todo")
+  @scala.inline
+  def total: typings.sloc.slocStrings.total = this.cast("total")
+}
+

@@ -40,9 +40,9 @@ object IDoReloadExParams {
     qPartial: js.UndefOr[Boolean] = js.undefined
   ): IDoReloadExParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(qDebug)) __obj.updateDynamic("qDebug")(qDebug)
+    if (!js.isUndefined(qDebug)) __obj.updateDynamic("qDebug")(qDebug.asInstanceOf[js.Any])
     if (qMode != null) __obj.updateDynamic("qMode")(qMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(qPartial)) __obj.updateDynamic("qPartial")(qPartial)
+    if (!js.isUndefined(qPartial)) __obj.updateDynamic("qPartial")(qPartial.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDoReloadExParams]
   }
 }

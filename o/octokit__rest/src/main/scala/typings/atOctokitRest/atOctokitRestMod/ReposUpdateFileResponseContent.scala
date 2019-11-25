@@ -31,8 +31,8 @@ object ReposUpdateFileResponseContent {
     `type`: String,
     url: String
   ): ReposUpdateFileResponseContent = {
-    val __obj = js.Dynamic.literal(_links = _links, download_url = download_url, git_url = git_url, html_url = html_url, name = name, path = path, sha = sha, size = size, url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], download_url = download_url.asInstanceOf[js.Any], git_url = git_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposUpdateFileResponseContent]
   }
 }

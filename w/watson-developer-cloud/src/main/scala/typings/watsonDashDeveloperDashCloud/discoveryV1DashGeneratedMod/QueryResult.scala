@@ -33,12 +33,12 @@ object QueryResult {
     title: String = null
   ): QueryResult = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (collection_id != null) __obj.updateDynamic("collection_id")(collection_id)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (result_metadata != null) __obj.updateDynamic("result_metadata")(result_metadata)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (collection_id != null) __obj.updateDynamic("collection_id")(collection_id.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (result_metadata != null) __obj.updateDynamic("result_metadata")(result_metadata.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResult]
   }
 }

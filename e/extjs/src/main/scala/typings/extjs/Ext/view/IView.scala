@@ -28,18 +28,14 @@ object IView {
     clearHighlight: () => Unit = null,
     focusNode: /* rec */ js.UndefOr[IModel] => Unit = null,
     highlightItem: /* item */ js.UndefOr[HTMLElement] => Unit = null,
-    initComponent: () => Unit = null,
-    mouseOverOutBuffer: Int | Double = null,
-    refresh: () => Unit = null
+    mouseOverOutBuffer: Int | Double = null
   ): IView = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IAbstractView)
+    if (IAbstractView != null) js.Dynamic.global.Object.assign(__obj, IAbstractView)
     if (clearHighlight != null) __obj.updateDynamic("clearHighlight")(js.Any.fromFunction0(clearHighlight))
     if (focusNode != null) __obj.updateDynamic("focusNode")(js.Any.fromFunction1(focusNode))
     if (highlightItem != null) __obj.updateDynamic("highlightItem")(js.Any.fromFunction1(highlightItem))
-    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
     if (mouseOverOutBuffer != null) __obj.updateDynamic("mouseOverOutBuffer")(mouseOverOutBuffer.asInstanceOf[js.Any])
-    if (refresh != null) __obj.updateDynamic("refresh")(js.Any.fromFunction0(refresh))
     __obj.asInstanceOf[IView]
   }
 }

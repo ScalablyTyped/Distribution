@@ -11,7 +11,7 @@ trait Cancel extends js.Object {
 object Cancel {
   @scala.inline
   def apply(message: String): Cancel = {
-    val __obj = js.Dynamic.literal(message = message)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Cancel]
   }

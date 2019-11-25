@@ -25,8 +25,8 @@ object ClipboardItemsType {
   @scala.inline
   def apply(items: js.Array[_] = null, options: js.Any = null): ClipboardItemsType = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClipboardItemsType]
   }
 }

@@ -21,13 +21,13 @@ object PluralProps {
     two: String = null,
     zero: String = null
   ): PluralProps = {
-    val __obj = js.Dynamic.literal(other = other, value = value)
-    if (few != null) __obj.updateDynamic("few")(few)
-    if (many != null) __obj.updateDynamic("many")(many)
+    val __obj = js.Dynamic.literal(other = other.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (few != null) __obj.updateDynamic("few")(few.asInstanceOf[js.Any])
+    if (many != null) __obj.updateDynamic("many")(many.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (one != null) __obj.updateDynamic("one")(one)
-    if (two != null) __obj.updateDynamic("two")(two)
-    if (zero != null) __obj.updateDynamic("zero")(zero)
+    if (one != null) __obj.updateDynamic("one")(one.asInstanceOf[js.Any])
+    if (two != null) __obj.updateDynamic("two")(two.asInstanceOf[js.Any])
+    if (zero != null) __obj.updateDynamic("zero")(zero.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluralProps]
   }
 }

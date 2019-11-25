@@ -32,10 +32,10 @@ object ServiceMethodSettings {
     paging: String = null
   ): ServiceMethodSettings = {
     val __obj = js.Dynamic.literal()
-    if (drillDown != null) __obj.updateDynamic("drillDown")(drillDown)
-    if (exportPivotChart != null) __obj.updateDynamic("exportPivotChart")(exportPivotChart)
-    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
-    if (paging != null) __obj.updateDynamic("paging")(paging)
+    if (drillDown != null) __obj.updateDynamic("drillDown")(drillDown.asInstanceOf[js.Any])
+    if (exportPivotChart != null) __obj.updateDynamic("exportPivotChart")(exportPivotChart.asInstanceOf[js.Any])
+    if (initialize != null) __obj.updateDynamic("initialize")(initialize.asInstanceOf[js.Any])
+    if (paging != null) __obj.updateDynamic("paging")(paging.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceMethodSettings]
   }
 }

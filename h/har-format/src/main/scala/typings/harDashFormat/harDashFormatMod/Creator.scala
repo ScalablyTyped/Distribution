@@ -16,8 +16,8 @@ trait Creator extends js.Object {
 object Creator {
   @scala.inline
   def apply(name: String, version: String, comment: String = null): Creator = {
-    val __obj = js.Dynamic.literal(name = name, version = version)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Creator]
   }
 }

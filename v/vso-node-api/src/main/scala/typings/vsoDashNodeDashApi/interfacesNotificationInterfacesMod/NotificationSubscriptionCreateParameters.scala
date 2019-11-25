@@ -37,7 +37,7 @@ object NotificationSubscriptionCreateParameters {
     scope: SubscriptionScope,
     subscriber: IdentityRef
   ): NotificationSubscriptionCreateParameters = {
-    val __obj = js.Dynamic.literal(channel = channel, description = description, filter = filter, scope = scope, subscriber = subscriber)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], subscriber = subscriber.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NotificationSubscriptionCreateParameters]
   }

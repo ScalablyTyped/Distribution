@@ -14,7 +14,7 @@ trait Anon_Files extends js.Object {
 object Anon_Files {
   @scala.inline
   def apply(files: FileData, rootDir: Path): Anon_Files = {
-    val __obj = js.Dynamic.literal(files = files, rootDir = rootDir)
+    val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], rootDir = rootDir.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Files]
   }

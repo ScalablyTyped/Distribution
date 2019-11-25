@@ -13,7 +13,7 @@ trait PrismTheme extends js.Object {
 object PrismTheme {
   @scala.inline
   def apply(plain: PrismThemeEntry, styles: js.Array[Anon_Languages]): PrismTheme = {
-    val __obj = js.Dynamic.literal(plain = plain, styles = styles)
+    val __obj = js.Dynamic.literal(plain = plain.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PrismTheme]
   }

@@ -11,7 +11,7 @@ trait NameParam extends js.Object {
 object NameParam {
   @scala.inline
   def apply(name: String): NameParam = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NameParam]
   }

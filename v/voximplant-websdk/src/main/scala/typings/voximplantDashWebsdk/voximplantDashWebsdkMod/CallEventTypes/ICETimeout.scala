@@ -18,7 +18,7 @@ trait ICETimeout extends js.Object {
 object ICETimeout {
   @scala.inline
   def apply(call: Call): ICETimeout = {
-    val __obj = js.Dynamic.literal(call = call)
+    val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICETimeout]
   }

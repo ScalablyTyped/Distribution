@@ -13,8 +13,8 @@ object Anon_Gfm {
   @scala.inline
   def apply(gfm: js.UndefOr[Boolean] = js.undefined, stripListLeaders: js.UndefOr[Boolean] = js.undefined): Anon_Gfm = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(gfm)) __obj.updateDynamic("gfm")(gfm)
-    if (!js.isUndefined(stripListLeaders)) __obj.updateDynamic("stripListLeaders")(stripListLeaders)
+    if (!js.isUndefined(gfm)) __obj.updateDynamic("gfm")(gfm.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripListLeaders)) __obj.updateDynamic("stripListLeaders")(stripListLeaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Gfm]
   }
 }

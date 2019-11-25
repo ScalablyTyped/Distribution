@@ -14,7 +14,7 @@ trait IMetadataCardUnvalidatedValue extends js.Object {
 object IMetadataCardUnvalidatedValue {
   @scala.inline
   def apply(ID: String, IsMultiValue: Boolean, IsUnvalidated: Boolean, Name: String): IMetadataCardUnvalidatedValue = {
-    val __obj = js.Dynamic.literal(ID = ID, IsMultiValue = IsMultiValue, IsUnvalidated = IsUnvalidated, Name = Name)
+    val __obj = js.Dynamic.literal(ID = ID.asInstanceOf[js.Any], IsMultiValue = IsMultiValue.asInstanceOf[js.Any], IsUnvalidated = IsUnvalidated.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IMetadataCardUnvalidatedValue]
   }

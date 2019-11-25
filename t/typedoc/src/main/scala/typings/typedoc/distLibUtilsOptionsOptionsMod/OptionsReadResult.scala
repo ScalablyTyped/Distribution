@@ -12,7 +12,7 @@ trait OptionsReadResult extends js.Object {
 object OptionsReadResult {
   @scala.inline
   def apply(hasErrors: Boolean, inputFiles: js.Array[String]): OptionsReadResult = {
-    val __obj = js.Dynamic.literal(hasErrors = hasErrors, inputFiles = inputFiles)
+    val __obj = js.Dynamic.literal(hasErrors = hasErrors.asInstanceOf[js.Any], inputFiles = inputFiles.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OptionsReadResult]
   }

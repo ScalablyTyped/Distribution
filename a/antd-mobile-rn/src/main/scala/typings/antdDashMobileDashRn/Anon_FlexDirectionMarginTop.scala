@@ -13,7 +13,7 @@ trait Anon_FlexDirectionMarginTop extends js.Object {
 object Anon_FlexDirectionMarginTop {
   @scala.inline
   def apply(flexDirection: String, marginTop: Double, paddingHorizontal: Double): Anon_FlexDirectionMarginTop = {
-    val __obj = js.Dynamic.literal(flexDirection = flexDirection, marginTop = marginTop, paddingHorizontal = paddingHorizontal)
+    val __obj = js.Dynamic.literal(flexDirection = flexDirection.asInstanceOf[js.Any], marginTop = marginTop.asInstanceOf[js.Any], paddingHorizontal = paddingHorizontal.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FlexDirectionMarginTop]
   }

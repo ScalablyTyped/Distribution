@@ -19,15 +19,13 @@ object ITagItemSuggestionProps {
   @scala.inline
   def apply(
     AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
-    className: String = null,
     styles: IStyleFunctionOrObject[ITagItemSuggestionStyleProps, ITagItemSuggestionStyles] = null,
     theme: ITheme = null
   ): ITagItemSuggestionProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITagItemSuggestionProps]
   }
 }

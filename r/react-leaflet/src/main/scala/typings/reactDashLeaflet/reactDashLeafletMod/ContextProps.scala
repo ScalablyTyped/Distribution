@@ -12,7 +12,7 @@ object ContextProps {
   @scala.inline
   def apply(leaflet: LeafletContext = null): ContextProps = {
     val __obj = js.Dynamic.literal()
-    if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet)
+    if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextProps]
   }
 }

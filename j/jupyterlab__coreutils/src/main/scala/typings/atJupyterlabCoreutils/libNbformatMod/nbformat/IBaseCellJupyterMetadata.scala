@@ -18,7 +18,7 @@ trait IBaseCellJupyterMetadata extends JSONObject {
 object IBaseCellJupyterMetadata {
   @scala.inline
   def apply(source_hidden: Boolean): IBaseCellJupyterMetadata = {
-    val __obj = js.Dynamic.literal(source_hidden = source_hidden)
+    val __obj = js.Dynamic.literal(source_hidden = source_hidden.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IBaseCellJupyterMetadata]
   }

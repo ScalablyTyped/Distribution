@@ -53,10 +53,9 @@ object CoreObject {
     init: () => Unit,
     isDestroyed: Boolean,
     isDestroying: Boolean,
-    toString: () => String,
     willDestroy: () => Unit
   ): CoreObject = {
-    val __obj = js.Dynamic.literal(_super = js.Any.fromFunction1(_super), concatenatedProperties = concatenatedProperties, destroy = js.Any.fromFunction0(destroy), init = js.Any.fromFunction0(init), isDestroyed = isDestroyed, isDestroying = isDestroying, toString = js.Any.fromFunction0(toString), willDestroy = js.Any.fromFunction0(willDestroy))
+    val __obj = js.Dynamic.literal(_super = js.Any.fromFunction1(_super), concatenatedProperties = concatenatedProperties.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), init = js.Any.fromFunction0(init), isDestroyed = isDestroyed.asInstanceOf[js.Any], isDestroying = isDestroying.asInstanceOf[js.Any], willDestroy = js.Any.fromFunction0(willDestroy))
   
     __obj.asInstanceOf[CoreObject]
   }

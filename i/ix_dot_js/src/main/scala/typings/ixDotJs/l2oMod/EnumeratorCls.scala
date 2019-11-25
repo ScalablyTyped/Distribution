@@ -1,13 +1,13 @@
 package typings.ixDotJs.l2oMod
 
-import typings.ixDotJs.Ix.Enumerator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("l2o", "Enumerator")
 @js.native
-class EnumeratorCls[T] protected () extends Enumerator[T] {
+class EnumeratorCls[T] protected ()
+  extends typings.ixDotJs.Ix.Enumerator[T] {
   def this(moveNext: js.Function0[Boolean], getCurrent: js.Function0[T], dispose: js.Function0[Unit]) = this()
   /* CompleteClass */
   override def dispose(): Unit = js.native

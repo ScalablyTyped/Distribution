@@ -13,8 +13,8 @@ trait Event extends js.Object {
 object Event {
   @scala.inline
   def apply(eid: String, etype: TerritoryEventType, id: String = null): Event = {
-    val __obj = js.Dynamic.literal(eid = eid, etype = etype)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(eid = eid.asInstanceOf[js.Any], etype = etype.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
 }

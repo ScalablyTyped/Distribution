@@ -22,10 +22,10 @@ object Anon_Eventcategory {
     event_category: String = null,
     event_label: String = null
   ): Anon_Eventcategory = {
-    val __obj = js.Dynamic.literal(name = name, value = value)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (event_category != null) __obj.updateDynamic("event_category")(event_category)
-    if (event_label != null) __obj.updateDynamic("event_label")(event_label)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (event_category != null) __obj.updateDynamic("event_category")(event_category.asInstanceOf[js.Any])
+    if (event_label != null) __obj.updateDynamic("event_label")(event_label.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Eventcategory]
   }
 }

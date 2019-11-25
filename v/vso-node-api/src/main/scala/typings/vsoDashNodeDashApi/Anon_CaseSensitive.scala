@@ -14,7 +14,7 @@ trait Anon_CaseSensitive extends js.Object {
 object Anon_CaseSensitive {
   @scala.inline
   def apply(caseSensitive: Double, none: Double, objectTooLarge: Double, unknown: Double): Anon_CaseSensitive = {
-    val __obj = js.Dynamic.literal(caseSensitive = caseSensitive, none = none, objectTooLarge = objectTooLarge, unknown = unknown)
+    val __obj = js.Dynamic.literal(caseSensitive = caseSensitive.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], objectTooLarge = objectTooLarge.asInstanceOf[js.Any], unknown = unknown.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CaseSensitive]
   }

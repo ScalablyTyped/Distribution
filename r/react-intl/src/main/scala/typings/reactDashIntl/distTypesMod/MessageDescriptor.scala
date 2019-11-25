@@ -14,9 +14,9 @@ object MessageDescriptor {
   @scala.inline
   def apply(defaultMessage: String = null, description: String | js.Object = null, id: String = null): MessageDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (defaultMessage != null) __obj.updateDynamic("defaultMessage")(defaultMessage)
+    if (defaultMessage != null) __obj.updateDynamic("defaultMessage")(defaultMessage.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageDescriptor]
   }
 }

@@ -22,9 +22,9 @@ object Anon_Chart {
     datasetIndex: Int | Double = null
   ): Anon_Chart = {
     val __obj = js.Dynamic.literal()
-    if (chart != null) __obj.updateDynamic("chart")(chart)
+    if (chart != null) __obj.updateDynamic("chart")(chart.asInstanceOf[js.Any])
     if (dataIndex != null) __obj.updateDynamic("dataIndex")(dataIndex.asInstanceOf[js.Any])
-    if (dataset != null) __obj.updateDynamic("dataset")(dataset)
+    if (dataset != null) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])
     if (datasetIndex != null) __obj.updateDynamic("datasetIndex")(datasetIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Chart]
   }

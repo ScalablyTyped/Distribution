@@ -62,11 +62,11 @@ object IFileType {
     iconLabel: String = null,
     pattern: String = null
   ): IFileType = {
-    val __obj = js.Dynamic.literal(contentType = contentType, extensions = extensions, fileFormat = fileFormat, mimeTypes = mimeTypes, name = name)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
-    if (iconLabel != null) __obj.updateDynamic("iconLabel")(iconLabel)
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], fileFormat = fileFormat.asInstanceOf[js.Any], mimeTypes = mimeTypes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
+    if (iconLabel != null) __obj.updateDynamic("iconLabel")(iconLabel.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileType]
   }
 }

@@ -13,7 +13,7 @@ package object atMaterialDashUiCoreMod {
   import typings.std.Exclude
   import typings.std.Pick
 
-  type ConsistentWith[DecorationTargetProps, InjectedProps] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type ConsistentWith[DecorationTargetProps, InjectedProps] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof DecorationTargetProps ]: P extends keyof InjectedProps? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : InjectedProps[P] : DecorationTargetProps[P]}
     */ typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.ConsistentWith with js.Any
   type Omit[T, K /* <: String */] = Pick[T, Exclude[String, K]]
@@ -22,6 +22,6 @@ package object atMaterialDashUiCoreMod {
     /* component */ js.Any, 
     ComponentType[(Omit[LibraryManagedAttributes[_, PropsOf[_]], String]) with AdditionalProps]
   ]
-  type PropsOf[C] = /* import warning: ImportType.apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements[C] */ js.Any
+  type PropsOf[C] = /* import warning: importer.ImportType#apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements[C] */ js.Any
   type StandardProps[C, ClassKey /* <: String */, Removals /* <: String */] = (Omit[C, classes | Removals]) with StyledComponentProps[ClassKey] with Anon_ClassName
 }

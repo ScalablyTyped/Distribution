@@ -21,7 +21,7 @@ trait IFileMap extends js.Object {
 object IFileMap {
   @scala.inline
   def apply(dest: java.lang.String, src: js.Array[java.lang.String]): IFileMap = {
-    val __obj = js.Dynamic.literal(dest = dest, src = src)
+    val __obj = js.Dynamic.literal(dest = dest.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IFileMap]
   }

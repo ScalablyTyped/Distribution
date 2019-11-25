@@ -17,7 +17,7 @@ object PadLevelsOptions {
   @scala.inline
   def apply(levels: Record[String, Double] = null): PadLevelsOptions = {
     val __obj = js.Dynamic.literal()
-    if (levels != null) __obj.updateDynamic("levels")(levels)
+    if (levels != null) __obj.updateDynamic("levels")(levels.asInstanceOf[js.Any])
     __obj.asInstanceOf[PadLevelsOptions]
   }
 }

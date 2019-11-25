@@ -15,7 +15,7 @@ trait Sql extends js.Object {
 object Sql {
   @scala.inline
   def apply(bindings: js.Array[Value], method: String, options: js.Any, sql: String, toNative: () => SqlNative): Sql = {
-    val __obj = js.Dynamic.literal(bindings = bindings, method = method, options = options, sql = sql, toNative = js.Any.fromFunction0(toNative))
+    val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], sql = sql.asInstanceOf[js.Any], toNative = js.Any.fromFunction0(toNative))
   
     __obj.asInstanceOf[Sql]
   }

@@ -41,12 +41,12 @@ object ImportContext {
     uri: String = null
   ): ImportContext = {
     val __obj = js.Dynamic.literal()
-    if (csvImportOptions != null) __obj.updateDynamic("csvImportOptions")(csvImportOptions)
-    if (database != null) __obj.updateDynamic("database")(database)
-    if (fileType != null) __obj.updateDynamic("fileType")(fileType)
-    if (importUser != null) __obj.updateDynamic("importUser")(importUser)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (csvImportOptions != null) __obj.updateDynamic("csvImportOptions")(csvImportOptions.asInstanceOf[js.Any])
+    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
+    if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])
+    if (importUser != null) __obj.updateDynamic("importUser")(importUser.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportContext]
   }
 }

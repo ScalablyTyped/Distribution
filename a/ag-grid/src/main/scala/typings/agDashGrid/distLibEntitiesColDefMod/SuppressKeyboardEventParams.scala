@@ -27,7 +27,7 @@ object SuppressKeyboardEventParams {
     event: KeyboardEvent,
     node: RowNode
   ): SuppressKeyboardEventParams = {
-    val __obj = js.Dynamic.literal(api = api, colDef = colDef, column = column, columnApi = columnApi, context = context, data = data, editing = editing, event = event, node = node)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], colDef = colDef.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], editing = editing.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SuppressKeyboardEventParams]
   }

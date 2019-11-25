@@ -26,9 +26,9 @@ object PersistOptions {
   @scala.inline
   def apply(prefixText: String = null, symbol: String = null, text: String = null): PersistOptions = {
     val __obj = js.Dynamic.literal()
-    if (prefixText != null) __obj.updateDynamic("prefixText")(prefixText)
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (prefixText != null) __obj.updateDynamic("prefixText")(prefixText.asInstanceOf[js.Any])
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersistOptions]
   }
 }

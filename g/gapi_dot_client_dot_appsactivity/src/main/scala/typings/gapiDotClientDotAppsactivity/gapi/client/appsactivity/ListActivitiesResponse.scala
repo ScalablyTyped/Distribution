@@ -15,8 +15,8 @@ object ListActivitiesResponse {
   @scala.inline
   def apply(activities: js.Array[Activity] = null, nextPageToken: String = null): ListActivitiesResponse = {
     val __obj = js.Dynamic.literal()
-    if (activities != null) __obj.updateDynamic("activities")(activities)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (activities != null) __obj.updateDynamic("activities")(activities.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListActivitiesResponse]
   }
 }

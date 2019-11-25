@@ -12,7 +12,7 @@ trait Anon_MAXLENGTH extends js.Object {
 object Anon_MAXLENGTH {
   @scala.inline
   def apply(MAX_LENGTH: Double, MAX_STRING_LENGTH: Double): Anon_MAXLENGTH = {
-    val __obj = js.Dynamic.literal(MAX_LENGTH = MAX_LENGTH, MAX_STRING_LENGTH = MAX_STRING_LENGTH)
+    val __obj = js.Dynamic.literal(MAX_LENGTH = MAX_LENGTH.asInstanceOf[js.Any], MAX_STRING_LENGTH = MAX_STRING_LENGTH.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MAXLENGTH]
   }

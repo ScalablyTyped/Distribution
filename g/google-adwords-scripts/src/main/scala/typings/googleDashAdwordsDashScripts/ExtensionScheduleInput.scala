@@ -22,7 +22,7 @@ object ExtensionScheduleInput {
     startMinute: Int | Double = null
   ): ExtensionScheduleInput = {
     val __obj = js.Dynamic.literal()
-    if (dayOfWeek != null) __obj.updateDynamic("dayOfWeek")(dayOfWeek)
+    if (dayOfWeek != null) __obj.updateDynamic("dayOfWeek")(dayOfWeek.asInstanceOf[js.Any])
     if (endHour != null) __obj.updateDynamic("endHour")(endHour.asInstanceOf[js.Any])
     if (endMinute != null) __obj.updateDynamic("endMinute")(endMinute.asInstanceOf[js.Any])
     if (startHour != null) __obj.updateDynamic("startHour")(startHour.asInstanceOf[js.Any])

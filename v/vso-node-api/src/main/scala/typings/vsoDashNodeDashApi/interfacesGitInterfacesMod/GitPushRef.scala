@@ -25,7 +25,7 @@ object GitPushRef {
     pushedBy: IdentityRef,
     url: String
   ): GitPushRef = {
-    val __obj = js.Dynamic.literal(_links = _links, date = date, pushCorrelationId = pushCorrelationId, pushId = pushId, pushedBy = pushedBy, url = url)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], pushCorrelationId = pushCorrelationId.asInstanceOf[js.Any], pushId = pushId.asInstanceOf[js.Any], pushedBy = pushedBy.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitPushRef]
   }

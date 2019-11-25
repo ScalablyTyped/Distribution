@@ -11,7 +11,7 @@ trait ConstraintMixin extends js.Object {
 object ConstraintMixin {
   @scala.inline
   def apply(constraints: Constraints): ConstraintMixin = {
-    val __obj = js.Dynamic.literal(constraints = constraints)
+    val __obj = js.Dynamic.literal(constraints = constraints.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConstraintMixin]
   }

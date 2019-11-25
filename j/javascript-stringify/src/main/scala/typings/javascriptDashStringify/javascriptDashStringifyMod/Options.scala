@@ -22,8 +22,8 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
     if (maxValues != null) __obj.updateDynamic("maxValues")(maxValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(references)) __obj.updateDynamic("references")(references)
-    if (!js.isUndefined(skipUndefinedProperties)) __obj.updateDynamic("skipUndefinedProperties")(skipUndefinedProperties)
+    if (!js.isUndefined(references)) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipUndefinedProperties)) __obj.updateDynamic("skipUndefinedProperties")(skipUndefinedProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

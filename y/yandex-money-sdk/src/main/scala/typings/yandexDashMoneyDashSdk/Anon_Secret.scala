@@ -12,7 +12,7 @@ trait Anon_Secret extends js.Object {
 object Anon_Secret {
   @scala.inline
   def apply(secret: String, serial: String): Anon_Secret = {
-    val __obj = js.Dynamic.literal(secret = secret, serial = serial)
+    val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Secret]
   }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cloud-env"
-version := "0.2.2-dt-20190322Z-433243"
+version := "0.2.2-dt-20190322Z-cc812c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

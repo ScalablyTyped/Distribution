@@ -40,10 +40,10 @@ object SessionOptions {
     refreshOnReset: js.UndefOr[Boolean] = js.undefined
   ): SessionOptions = {
     val __obj = js.Dynamic.literal()
-    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (!js.isUndefined(refreshOnReset)) __obj.updateDynamic("refreshOnReset")(refreshOnReset)
+    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshOnReset)) __obj.updateDynamic("refreshOnReset")(refreshOnReset.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionOptions]
   }
 }

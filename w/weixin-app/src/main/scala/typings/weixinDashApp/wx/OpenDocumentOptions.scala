@@ -32,7 +32,7 @@ object OpenDocumentOptions {
     fileType: doc | xls | ppt | pdf | docx | xlsx | pptx = null,
     success: js.Any => Unit = null
   ): OpenDocumentOptions = {
-    val __obj = js.Dynamic.literal(filePath = filePath)
+    val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])

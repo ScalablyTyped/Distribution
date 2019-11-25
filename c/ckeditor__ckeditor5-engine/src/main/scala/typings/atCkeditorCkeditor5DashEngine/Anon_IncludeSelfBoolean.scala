@@ -11,7 +11,7 @@ trait Anon_IncludeSelfBoolean extends js.Object {
 object Anon_IncludeSelfBoolean {
   @scala.inline
   def apply(includeSelf: Boolean): Anon_IncludeSelfBoolean = {
-    val __obj = js.Dynamic.literal(includeSelf = includeSelf)
+    val __obj = js.Dynamic.literal(includeSelf = includeSelf.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IncludeSelfBoolean]
   }

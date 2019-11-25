@@ -1,6 +1,5 @@
 package typings.antdDashMobile
 
-import typings.antdDashMobile.esDateDashPickerMod.PropsType
 import typings.antdDashMobile.esDrawerPropsTypeMod.DrawerWebProps
 import typings.antdDashMobile.esImageDashPickerMod.ImagePickerPropTypes
 import typings.antdDashMobile.esInputDashItemCustomInputMod.NumberInputProps
@@ -12,6 +11,7 @@ import typings.antdDashMobile.esPopoverItemMod.PopoverItemProps
 import typings.antdDashMobile.esPopoverMod.PopOverPropsType
 import typings.antdDashMobile.esStepperMod.StepProps
 import typings.antdDashMobile.esTabDashBarMod.AntTabbarProps
+import typings.rmcDashCalendar.libCalendarPropsMod.PropsType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,6 +35,8 @@ trait antdDashMobileProps {
   @scala.inline
   def ButtonProps: typings.antdDashMobile.esButtonMod.ButtonProps.type = typings.antdDashMobile.esButtonMod.ButtonProps
   type ButtonProps = typings.antdDashMobile.esButtonMod.ButtonProps
+  @scala.inline
+  def CalendarProps: PropsType.type = typings.rmcDashCalendar.libCalendarPropsMod.PropsType
   type CalendarProps = typings.antdDashMobile.esCalendarPropsTypeMod.CalendarProps
   @scala.inline
   def CardProps: typings.antdDashMobile.esCardMod.CardProps.type = typings.antdDashMobile.esCardMod.CardProps
@@ -58,14 +60,14 @@ trait antdDashMobileProps {
   def CustomInputProps: NumberInputProps.type = typings.antdDashMobile.esInputDashItemCustomInputMod.NumberInputProps
   type CustomInputProps = NumberInputProps
   @scala.inline
-  def DateDashPickerProps: PropsType.type = typings.antdDashMobile.esDateDashPickerMod.PropsType
-  type DateDashPickerProps = PropsType
+  def DateDashPickerProps: typings.antdDashMobile.esDateDashPickerMod.PropsType.type = typings.antdDashMobile.esDateDashPickerMod.PropsType
+  type DateDashPickerProps = typings.antdDashMobile.esDateDashPickerMod.PropsType
   @scala.inline
   def DateDashPickerDashViewProps: typings.antdDashMobile.esDateDashPickerDashViewPropsTypeMod.DatePickerProps.type = typings.antdDashMobile.esDateDashPickerDashViewPropsTypeMod.DatePickerProps
   type DateDashPickerDashViewProps = typings.antdDashMobile.esDateDashPickerDashViewPropsTypeMod.DatePickerProps
   @scala.inline
-  def DatePickerProps: PropsType.type = typings.antdDashMobile.esDateDashPickerMod.PropsType
-  type DatePickerProps = PropsType
+  def DatePickerProps: typings.antdDashMobile.esDateDashPickerMod.PropsType.type = typings.antdDashMobile.esDateDashPickerMod.PropsType
+  type DatePickerProps = typings.antdDashMobile.esDateDashPickerMod.PropsType
   @scala.inline
   def DatePickerViewProps: typings.antdDashMobile.esDateDashPickerDashViewPropsTypeMod.DatePickerProps.type = typings.antdDashMobile.esDateDashPickerDashViewPropsTypeMod.DatePickerProps
   type DatePickerViewProps = typings.antdDashMobile.esDateDashPickerDashViewPropsTypeMod.DatePickerProps

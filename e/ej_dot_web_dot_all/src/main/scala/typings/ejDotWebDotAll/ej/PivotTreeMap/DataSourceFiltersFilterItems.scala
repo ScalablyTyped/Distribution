@@ -15,7 +15,7 @@ object DataSourceFiltersFilterItems {
   @scala.inline
   def apply(values: js.Array[_] = null): DataSourceFiltersFilterItems = {
     val __obj = js.Dynamic.literal()
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceFiltersFilterItems]
   }
 }

@@ -24,12 +24,12 @@ object IOptions {
     `type`: String = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions)
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodeOnly)) __obj.updateDynamic("nodeOnly")(nodeOnly)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(nodeOnly)) __obj.updateDynamic("nodeOnly")(nodeOnly.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

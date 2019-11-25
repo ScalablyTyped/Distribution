@@ -36,18 +36,18 @@ object EpicEditorOptions {
     useNativeFullsreen: js.UndefOr[Boolean] = js.undefined
   ): EpicEditorOptions = {
     val __obj = js.Dynamic.literal()
-    if (basePath != null) __obj.updateDynamic("basePath")(basePath)
-    if (!js.isUndefined(clientSideStorage)) __obj.updateDynamic("clientSideStorage")(clientSideStorage)
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (!js.isUndefined(focusOnLoad)) __obj.updateDynamic("focusOnLoad")(focusOnLoad)
-    if (localStorageName != null) __obj.updateDynamic("localStorageName")(localStorageName)
-    if (parser != null) __obj.updateDynamic("parser")(parser)
-    if (shortcut != null) __obj.updateDynamic("shortcut")(shortcut)
-    if (string != null) __obj.updateDynamic("string")(string)
-    if (textarea != null) __obj.updateDynamic("textarea")(textarea)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (!js.isUndefined(useNativeFullsreen)) __obj.updateDynamic("useNativeFullsreen")(useNativeFullsreen)
+    if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientSideStorage)) __obj.updateDynamic("clientSideStorage")(clientSideStorage.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusOnLoad)) __obj.updateDynamic("focusOnLoad")(focusOnLoad.asInstanceOf[js.Any])
+    if (localStorageName != null) __obj.updateDynamic("localStorageName")(localStorageName.asInstanceOf[js.Any])
+    if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
+    if (shortcut != null) __obj.updateDynamic("shortcut")(shortcut.asInstanceOf[js.Any])
+    if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
+    if (textarea != null) __obj.updateDynamic("textarea")(textarea.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNativeFullsreen)) __obj.updateDynamic("useNativeFullsreen")(useNativeFullsreen.asInstanceOf[js.Any])
     __obj.asInstanceOf[EpicEditorOptions]
   }
 }

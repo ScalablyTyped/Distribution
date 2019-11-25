@@ -11,8 +11,8 @@ trait GeometryCollection extends GeoJSONObject {
 object GeometryCollection {
   @scala.inline
   def apply(geometries: js.Array[Geometry], `type`: String): GeometryCollection = {
-    val __obj = js.Dynamic.literal(geometries = geometries)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(geometries = geometries.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeometryCollection]
   }
 }

@@ -41,8 +41,8 @@ object Comment {
     ups: Double,
     vote: String = null
   ): Comment = {
-    val __obj = js.Dynamic.literal(album_cover = album_cover, author = author, author_id = author_id, children = children, comment = comment, datetime = datetime, deleted = deleted, downs = downs, id = id, image_id = image_id, on_album = on_album, parent_id = parent_id, points = points, ups = ups)
-    if (vote != null) __obj.updateDynamic("vote")(vote)
+    val __obj = js.Dynamic.literal(album_cover = album_cover.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], author_id = author_id.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], datetime = datetime.asInstanceOf[js.Any], deleted = deleted.asInstanceOf[js.Any], downs = downs.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image_id = image_id.asInstanceOf[js.Any], on_album = on_album.asInstanceOf[js.Any], parent_id = parent_id.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any], ups = ups.asInstanceOf[js.Any])
+    if (vote != null) __obj.updateDynamic("vote")(vote.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comment]
   }
 }

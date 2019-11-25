@@ -39,14 +39,14 @@ object Flag {
     `type`: String = null
   ): Flag = {
     val __obj = js.Dynamic.literal()
-    if (allowedStringValues != null) __obj.updateDynamic("allowedStringValues")(allowedStringValues)
-    if (appliesTo != null) __obj.updateDynamic("appliesTo")(appliesTo)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue)
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(requiresRestart)) __obj.updateDynamic("requiresRestart")(requiresRestart)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (allowedStringValues != null) __obj.updateDynamic("allowedStringValues")(allowedStringValues.asInstanceOf[js.Any])
+    if (appliesTo != null) __obj.updateDynamic("appliesTo")(appliesTo.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(requiresRestart)) __obj.updateDynamic("requiresRestart")(requiresRestart.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Flag]
   }
 }

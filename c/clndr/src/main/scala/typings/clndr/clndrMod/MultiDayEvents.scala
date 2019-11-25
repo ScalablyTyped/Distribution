@@ -18,9 +18,9 @@ object MultiDayEvents {
   @scala.inline
   def apply(endDate: String = null, singleDay: String = null, startDate: String = null): MultiDayEvents = {
     val __obj = js.Dynamic.literal()
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
-    if (singleDay != null) __obj.updateDynamic("singleDay")(singleDay)
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (singleDay != null) __obj.updateDynamic("singleDay")(singleDay.asInstanceOf[js.Any])
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiDayEvents]
   }
 }

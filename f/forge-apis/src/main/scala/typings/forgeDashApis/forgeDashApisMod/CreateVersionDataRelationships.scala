@@ -13,8 +13,8 @@ object CreateVersionDataRelationships {
   @scala.inline
   def apply(item: CreateVersionDataRelationshipsItem = null, storage: CreateItemRelationshipsStorage = null): CreateVersionDataRelationships = {
     val __obj = js.Dynamic.literal()
-    if (item != null) __obj.updateDynamic("item")(item)
-    if (storage != null) __obj.updateDynamic("storage")(storage)
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVersionDataRelationships]
   }
 }

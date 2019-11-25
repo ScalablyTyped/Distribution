@@ -22,8 +22,8 @@ object ShortRepresentation {
   @scala.inline
   def apply(description: String = null, subqueries: Record[String, Double] = null): ShortRepresentation = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (subqueries != null) __obj.updateDynamic("subqueries")(subqueries)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (subqueries != null) __obj.updateDynamic("subqueries")(subqueries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShortRepresentation]
   }
 }

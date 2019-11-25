@@ -12,7 +12,7 @@ trait Anon_ColumnRowNumber extends js.Object {
 object Anon_ColumnRowNumber {
   @scala.inline
   def apply(row: Double, column: Int | Double = null): Anon_ColumnRowNumber = {
-    val __obj = js.Dynamic.literal(row = row)
+    val __obj = js.Dynamic.literal(row = row.asInstanceOf[js.Any])
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColumnRowNumber]
   }

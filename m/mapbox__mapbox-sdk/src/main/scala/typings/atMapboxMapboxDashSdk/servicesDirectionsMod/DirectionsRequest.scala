@@ -89,19 +89,19 @@ object DirectionsRequest {
     voiceInstructions: js.UndefOr[Boolean] = js.undefined,
     voiceUnits: DirectionsUnits = null
   ): DirectionsRequest = {
-    val __obj = js.Dynamic.literal(profile = profile, waypoints = waypoints)
-    if (!js.isUndefined(alternatives)) __obj.updateDynamic("alternatives")(alternatives)
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations)
-    if (!js.isUndefined(bannerInstructions)) __obj.updateDynamic("bannerInstructions")(bannerInstructions)
-    if (!js.isUndefined(continueStraight)) __obj.updateDynamic("continueStraight")(continueStraight)
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (geometries != null) __obj.updateDynamic("geometries")(geometries)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (overview != null) __obj.updateDynamic("overview")(overview)
-    if (!js.isUndefined(roundaboutExits)) __obj.updateDynamic("roundaboutExits")(roundaboutExits)
-    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps)
-    if (!js.isUndefined(voiceInstructions)) __obj.updateDynamic("voiceInstructions")(voiceInstructions)
-    if (voiceUnits != null) __obj.updateDynamic("voiceUnits")(voiceUnits)
+    val __obj = js.Dynamic.literal(profile = profile.asInstanceOf[js.Any], waypoints = waypoints.asInstanceOf[js.Any])
+    if (!js.isUndefined(alternatives)) __obj.updateDynamic("alternatives")(alternatives.asInstanceOf[js.Any])
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
+    if (!js.isUndefined(bannerInstructions)) __obj.updateDynamic("bannerInstructions")(bannerInstructions.asInstanceOf[js.Any])
+    if (!js.isUndefined(continueStraight)) __obj.updateDynamic("continueStraight")(continueStraight.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (geometries != null) __obj.updateDynamic("geometries")(geometries.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (overview != null) __obj.updateDynamic("overview")(overview.asInstanceOf[js.Any])
+    if (!js.isUndefined(roundaboutExits)) __obj.updateDynamic("roundaboutExits")(roundaboutExits.asInstanceOf[js.Any])
+    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
+    if (!js.isUndefined(voiceInstructions)) __obj.updateDynamic("voiceInstructions")(voiceInstructions.asInstanceOf[js.Any])
+    if (voiceUnits != null) __obj.updateDynamic("voiceUnits")(voiceUnits.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsRequest]
   }
 }

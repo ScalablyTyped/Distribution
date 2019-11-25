@@ -25,8 +25,8 @@ object DKIMSignOptions {
     privateKey: SignPrivateKeyInput | KeyLike,
     headerFieldNames: String = null
   ): DKIMSignOptions = {
-    val __obj = js.Dynamic.literal(domainName = domainName, keySelector = keySelector, privateKey = privateKey.asInstanceOf[js.Any])
-    if (headerFieldNames != null) __obj.updateDynamic("headerFieldNames")(headerFieldNames)
+    val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any], keySelector = keySelector.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any])
+    if (headerFieldNames != null) __obj.updateDynamic("headerFieldNames")(headerFieldNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[DKIMSignOptions]
   }
 }

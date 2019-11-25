@@ -14,7 +14,7 @@ object Anon_ChildMaxLoopBaseNode {
   @scala.inline
   def apply(child: BaseNode = null, maxLoop: Int | Double = null): Anon_ChildMaxLoopBaseNode = {
     val __obj = js.Dynamic.literal()
-    if (child != null) __obj.updateDynamic("child")(child)
+    if (child != null) __obj.updateDynamic("child")(child.asInstanceOf[js.Any])
     if (maxLoop != null) __obj.updateDynamic("maxLoop")(maxLoop.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChildMaxLoopBaseNode]
   }

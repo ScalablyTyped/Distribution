@@ -30,7 +30,7 @@ object ModuleOptions {
     val __obj = js.Dynamic.literal()
     if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
     if (failAfter != null) __obj.updateDynamic("failAfter")(failAfter.asInstanceOf[js.Any])
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate)
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
     if (initialDelay != null) __obj.updateDynamic("initialDelay")(initialDelay.asInstanceOf[js.Any])
     if (maxDelay != null) __obj.updateDynamic("maxDelay")(maxDelay.asInstanceOf[js.Any])
     if (onConnect != null) __obj.updateDynamic("onConnect")(js.Any.fromFunction1(onConnect))

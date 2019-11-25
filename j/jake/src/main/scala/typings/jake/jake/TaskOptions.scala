@@ -20,7 +20,7 @@ object TaskOptions {
   @scala.inline
   def apply(async: js.UndefOr[Boolean] = js.undefined, parallelLimit: Int | Double = null): TaskOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
     if (parallelLimit != null) __obj.updateDynamic("parallelLimit")(parallelLimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskOptions]
   }

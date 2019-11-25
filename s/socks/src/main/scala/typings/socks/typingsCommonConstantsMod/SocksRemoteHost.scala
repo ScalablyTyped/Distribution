@@ -15,7 +15,7 @@ trait SocksRemoteHost extends js.Object {
 object SocksRemoteHost {
   @scala.inline
   def apply(host: String, port: Double): SocksRemoteHost = {
-    val __obj = js.Dynamic.literal(host = host, port = port)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SocksRemoteHost]
   }

@@ -14,9 +14,9 @@ trait ResultMessage
 object ResultMessage {
   @scala.inline
   def apply(plugin: String, `type`: String, StringDictionary: /* others */ StringDictionary[js.Any] = null): ResultMessage = {
-    val __obj = js.Dynamic.literal(plugin = plugin)
-    __obj.updateDynamic("type")(`type`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(plugin = plugin.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ResultMessage]
   }
 }

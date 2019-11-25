@@ -31,14 +31,14 @@ object Anon_CommentsComputedInitializer {
     readonly: js.UndefOr[Boolean] = js.undefined,
     typeAnnotation: TSTypeAnnotationKind = null
   ): Anon_CommentsComputedInitializer = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed)
-    if (initializer != null) __obj.updateDynamic("initializer")(initializer)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
-    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed.asInstanceOf[js.Any])
+    if (initializer != null) __obj.updateDynamic("initializer")(initializer.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
+    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsComputedInitializer]
   }
 }

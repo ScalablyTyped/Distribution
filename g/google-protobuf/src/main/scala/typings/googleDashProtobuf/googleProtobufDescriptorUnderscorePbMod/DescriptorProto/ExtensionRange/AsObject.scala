@@ -21,7 +21,7 @@ object AsObject {
   ): AsObject = {
     val __obj = js.Dynamic.literal()
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }

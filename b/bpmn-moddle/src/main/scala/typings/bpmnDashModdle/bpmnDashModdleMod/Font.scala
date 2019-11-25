@@ -25,7 +25,7 @@ object Font {
     name: String,
     size: Double
   ): Font = {
-    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, isBold = isBold, isItalic = isItalic, isStrikeThrough = isStrikeThrough, isUnderline = isUnderline, name = name, size = size)
+    val __obj = js.Dynamic.literal($parent = $parent.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any], isBold = isBold.asInstanceOf[js.Any], isItalic = isItalic.asInstanceOf[js.Any], isStrikeThrough = isStrikeThrough.asInstanceOf[js.Any], isUnderline = isUnderline.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Font]
   }

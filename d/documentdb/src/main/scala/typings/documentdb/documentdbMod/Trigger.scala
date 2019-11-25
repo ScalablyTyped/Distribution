@@ -20,10 +20,10 @@ object Trigger {
     serverScript: UserFunction = null,
     triggerType: TriggerType = null
   ): Trigger = {
-    val __obj = js.Dynamic.literal(id = id, triggerOperation = triggerOperation)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], triggerOperation = triggerOperation.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (serverScript != null) __obj.updateDynamic("serverScript")(serverScript.asInstanceOf[js.Any])
-    if (triggerType != null) __obj.updateDynamic("triggerType")(triggerType)
+    if (triggerType != null) __obj.updateDynamic("triggerType")(triggerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Trigger]
   }
 }

@@ -18,7 +18,7 @@ trait FileTypeResult extends js.Object {
 object FileTypeResult {
   @scala.inline
   def apply(ext: FileType, mime: MimeType): FileTypeResult = {
-    val __obj = js.Dynamic.literal(ext = ext, mime = mime)
+    val __obj = js.Dynamic.literal(ext = ext.asInstanceOf[js.Any], mime = mime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FileTypeResult]
   }

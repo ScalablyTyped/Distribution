@@ -42,13 +42,13 @@ object IDetailsFooterProps {
     rowWidth: Int | Double = null,
     viewport: IViewport = null
   ): IDetailsFooterProps = {
-    val __obj = js.Dynamic.literal(columns = columns, selection = selection, selectionMode = selectionMode)
-    if (cellStyleProps != null) __obj.updateDynamic("cellStyleProps")(cellStyleProps)
-    if (checkboxVisibility != null) __obj.updateDynamic("checkboxVisibility")(checkboxVisibility)
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any])
+    if (cellStyleProps != null) __obj.updateDynamic("cellStyleProps")(cellStyleProps.asInstanceOf[js.Any])
+    if (checkboxVisibility != null) __obj.updateDynamic("checkboxVisibility")(checkboxVisibility.asInstanceOf[js.Any])
     if (groupNestingDepth != null) __obj.updateDynamic("groupNestingDepth")(groupNestingDepth.asInstanceOf[js.Any])
     if (indentWidth != null) __obj.updateDynamic("indentWidth")(indentWidth.asInstanceOf[js.Any])
     if (rowWidth != null) __obj.updateDynamic("rowWidth")(rowWidth.asInstanceOf[js.Any])
-    if (viewport != null) __obj.updateDynamic("viewport")(viewport)
+    if (viewport != null) __obj.updateDynamic("viewport")(viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsFooterProps]
   }
 }

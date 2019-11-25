@@ -21,9 +21,9 @@ object HttpEndpoint {
     port: Int | Double = null,
     query: QueryParameterBag = null
   ): HttpEndpoint = {
-    val __obj = js.Dynamic.literal(hostname = hostname, path = path, protocol = protocol)
+    val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpEndpoint]
   }
 }

@@ -14,7 +14,7 @@ trait GetActionsRequestedEventOptions extends RequestedEventOptions {
 object GetActionsRequestedEventOptions {
   @scala.inline
   def apply(entryPaths: js.Array[String], fileSystemId: String, requestId: integer): GetActionsRequestedEventOptions = {
-    val __obj = js.Dynamic.literal(entryPaths = entryPaths, fileSystemId = fileSystemId, requestId = requestId)
+    val __obj = js.Dynamic.literal(entryPaths = entryPaths.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetActionsRequestedEventOptions]
   }

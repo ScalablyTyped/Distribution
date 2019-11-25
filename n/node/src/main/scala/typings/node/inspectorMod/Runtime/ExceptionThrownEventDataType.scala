@@ -15,7 +15,7 @@ trait ExceptionThrownEventDataType extends js.Object {
 object ExceptionThrownEventDataType {
   @scala.inline
   def apply(exceptionDetails: ExceptionDetails, timestamp: Timestamp): ExceptionThrownEventDataType = {
-    val __obj = js.Dynamic.literal(exceptionDetails = exceptionDetails, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(exceptionDetails = exceptionDetails.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExceptionThrownEventDataType]
   }

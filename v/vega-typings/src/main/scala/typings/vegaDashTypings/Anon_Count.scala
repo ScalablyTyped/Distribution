@@ -23,8 +23,8 @@ object Anon_Count {
   ): Anon_Count = {
     val __obj = js.Dynamic.literal(gradient = gradient.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (stop != null) __obj.updateDynamic("stop")(stop.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Count]
   }
 }

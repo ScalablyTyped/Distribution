@@ -36,11 +36,11 @@ object LoadURLOptions {
     userAgent: String = null
   ): LoadURLOptions = {
     val __obj = js.Dynamic.literal()
-    if (baseURLForDataURL != null) __obj.updateDynamic("baseURLForDataURL")(baseURLForDataURL)
-    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
+    if (baseURLForDataURL != null) __obj.updateDynamic("baseURLForDataURL")(baseURLForDataURL.asInstanceOf[js.Any])
+    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
     if (httpReferrer != null) __obj.updateDynamic("httpReferrer")(httpReferrer.asInstanceOf[js.Any])
-    if (postData != null) __obj.updateDynamic("postData")(postData)
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
+    if (postData != null) __obj.updateDynamic("postData")(postData.asInstanceOf[js.Any])
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadURLOptions]
   }
 }

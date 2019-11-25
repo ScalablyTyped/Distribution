@@ -15,8 +15,8 @@ trait Location[S] extends js.Object {
 object Location {
   @scala.inline
   def apply[S](hash: Hash, pathname: Pathname, search: Search, state: S, key: LocationKey = null): Location[S] = {
-    val __obj = js.Dynamic.literal(hash = hash, pathname = pathname, search = search, state = state.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Location[S]]
   }
 }

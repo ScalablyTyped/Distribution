@@ -15,10 +15,10 @@ object TreeListToolbarItem {
   @scala.inline
   def apply(click: js.Function = null, imageClass: String = null, name: String = null, text: String = null): TreeListToolbarItem = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
+    if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListToolbarItem]
   }
 }

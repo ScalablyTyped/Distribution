@@ -16,7 +16,7 @@ object IplaypausestopVoice {
     fail: /* repeated */ js.Any => Unit = null,
     success: /* repeated */ js.Any => Unit = null
   ): IplaypausestopVoice = {
-    val __obj = js.Dynamic.literal(localId = localId)
+    val __obj = js.Dynamic.literal(localId = localId.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

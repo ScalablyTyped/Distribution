@@ -30,9 +30,9 @@ object Options {
     unwrap: js.Array[String] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (bubble != null) __obj.updateDynamic("bubble")(bubble)
-    if (!js.isUndefined(preserveEmpty)) __obj.updateDynamic("preserveEmpty")(preserveEmpty)
-    if (unwrap != null) __obj.updateDynamic("unwrap")(unwrap)
+    if (bubble != null) __obj.updateDynamic("bubble")(bubble.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveEmpty)) __obj.updateDynamic("preserveEmpty")(preserveEmpty.asInstanceOf[js.Any])
+    if (unwrap != null) __obj.updateDynamic("unwrap")(unwrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

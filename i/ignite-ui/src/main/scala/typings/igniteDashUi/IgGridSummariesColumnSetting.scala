@@ -45,11 +45,11 @@ object IgGridSummariesColumnSetting {
     summaryOperands: js.Array[IgGridSummariesColumnSettingSummaryOperand] = null
   ): IgGridSummariesColumnSetting = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(allowSummaries)) __obj.updateDynamic("allowSummaries")(allowSummaries)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowSummaries)) __obj.updateDynamic("allowSummaries")(allowSummaries.asInstanceOf[js.Any])
     if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
-    if (summaryOperands != null) __obj.updateDynamic("summaryOperands")(summaryOperands)
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
+    if (summaryOperands != null) __obj.updateDynamic("summaryOperands")(summaryOperands.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridSummariesColumnSetting]
   }
 }

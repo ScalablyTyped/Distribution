@@ -15,7 +15,7 @@ trait ServerOptions extends js.Object {
 object ServerOptions {
   @scala.inline
   def apply(salt: String, verifier: String, length: `2048` | `4096` = null): ServerOptions = {
-    val __obj = js.Dynamic.literal(salt = salt, verifier = verifier)
+    val __obj = js.Dynamic.literal(salt = salt.asInstanceOf[js.Any], verifier = verifier.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptions]
   }

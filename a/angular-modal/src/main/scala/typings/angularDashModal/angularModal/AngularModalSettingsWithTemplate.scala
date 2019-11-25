@@ -16,10 +16,10 @@ object AngularModalSettingsWithTemplate {
     controller: AngularModalControllerDefinition = null,
     controllerAs: String = null
   ): AngularModalSettingsWithTemplate = {
-    val __obj = js.Dynamic.literal(template = template)
+    val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs)
+    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs.asInstanceOf[js.Any])
     __obj.asInstanceOf[AngularModalSettingsWithTemplate]
   }
 }

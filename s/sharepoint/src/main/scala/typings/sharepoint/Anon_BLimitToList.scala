@@ -13,7 +13,7 @@ trait Anon_BLimitToList extends js.Object {
 object Anon_BLimitToList {
   @scala.inline
   def apply(bLimitToList: Boolean, id: String, items: js.Array[_]): Anon_BLimitToList = {
-    val __obj = js.Dynamic.literal(bLimitToList = bLimitToList, id = id, items = items)
+    val __obj = js.Dynamic.literal(bLimitToList = bLimitToList.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BLimitToList]
   }

@@ -20,8 +20,8 @@ object ContextMenuSettings {
   @scala.inline
   def apply(customMenuFields: js.Array[_] = null, items: js.Any = null): ContextMenuSettings = {
     val __obj = js.Dynamic.literal()
-    if (customMenuFields != null) __obj.updateDynamic("customMenuFields")(customMenuFields)
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (customMenuFields != null) __obj.updateDynamic("customMenuFields")(customMenuFields.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuSettings]
   }
 }

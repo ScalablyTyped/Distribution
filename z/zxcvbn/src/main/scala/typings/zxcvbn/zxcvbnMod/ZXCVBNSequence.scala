@@ -111,7 +111,7 @@ object ZXCVBNSequence {
     token: String,
     uppercase_variations: Double
   ): ZXCVBNSequence = {
-    val __obj = js.Dynamic.literal(ascending = ascending, base_guesses = base_guesses, base_matches = base_matches, base_token = base_token, dictionary_name = dictionary_name, guesses = guesses, guesses_log10 = guesses_log10, i = i, j = j, l33t = l33t, l33t_variations = l33t_variations, matched_word = matched_word, pattern = pattern, rank = rank, repeat_count = repeat_count, reversed = reversed, sequence_name = sequence_name, sequence_space = sequence_space, token = token, uppercase_variations = uppercase_variations)
+    val __obj = js.Dynamic.literal(ascending = ascending.asInstanceOf[js.Any], base_guesses = base_guesses.asInstanceOf[js.Any], base_matches = base_matches.asInstanceOf[js.Any], base_token = base_token.asInstanceOf[js.Any], dictionary_name = dictionary_name.asInstanceOf[js.Any], guesses = guesses.asInstanceOf[js.Any], guesses_log10 = guesses_log10.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], j = j.asInstanceOf[js.Any], l33t = l33t.asInstanceOf[js.Any], l33t_variations = l33t_variations.asInstanceOf[js.Any], matched_word = matched_word.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any], repeat_count = repeat_count.asInstanceOf[js.Any], reversed = reversed.asInstanceOf[js.Any], sequence_name = sequence_name.asInstanceOf[js.Any], sequence_space = sequence_space.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], uppercase_variations = uppercase_variations.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ZXCVBNSequence]
   }

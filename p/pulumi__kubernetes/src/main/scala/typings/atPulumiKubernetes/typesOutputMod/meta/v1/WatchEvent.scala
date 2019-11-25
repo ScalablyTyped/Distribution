@@ -23,8 +23,8 @@ object WatchEvent {
   @scala.inline
   def apply(`object`: js.Object, `type`: String): WatchEvent = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("object")(`object`)
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatchEvent]
   }
 }

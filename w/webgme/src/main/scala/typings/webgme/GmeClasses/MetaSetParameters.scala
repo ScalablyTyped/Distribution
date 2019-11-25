@@ -32,9 +32,9 @@ object MetaSetParameters {
     sensitive: js.UndefOr[Boolean] = js.undefined
   ): MetaSetParameters = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("object")(`object`)
-    if (!js.isUndefined(multiplicity)) __obj.updateDynamic("multiplicity")(multiplicity)
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive)
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiplicity)) __obj.updateDynamic("multiplicity")(multiplicity.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaSetParameters]
   }
 }

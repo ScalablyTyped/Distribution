@@ -54,7 +54,7 @@ trait TypeofClassMessageAddToRepeatedField extends Instantiable0[Message] {
     msg: Message,
     fieldNumber: Double,
     noLazyCreate: Boolean,
-    valueCtor: /* import warning: ImportType.apply Failed type conversion: typeof Message */ js.Any
+    valueCtor: /* import warning: importer.ImportType#apply Failed type conversion: typeof Message */ js.Any
   ): Map[_, _] = js.native
   def getOptionalFloatingPointField(msg: Message, fieldNumber: Double): js.UndefOr[Double] = js.native
   def getRepeatedFloatingPointField(msg: Message, fieldNumber: Double): js.Array[Double] = js.native
@@ -95,7 +95,7 @@ trait TypeofClassMessageAddToRepeatedField extends Instantiable0[Message] {
   ): Unit = js.native
   def registerMessageType(
     id: Double,
-    constructor: /* import warning: ImportType.apply Failed type conversion: typeof Message */ js.Any
+    constructor: /* import warning: importer.ImportType#apply Failed type conversion: typeof Message */ js.Any
   ): Unit = js.native
   def serializeBinaryToWriter(message: Message, writer: BinaryWriter): Unit = js.native
   def setField(msg: Message, fieldNumber: Double, value: FieldValue): Unit = js.native

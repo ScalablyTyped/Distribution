@@ -20,10 +20,10 @@ object ChannelBrandingSettings {
     watch: WatchSettings = null
   ): ChannelBrandingSettings = {
     val __obj = js.Dynamic.literal()
-    if (channel != null) __obj.updateDynamic("channel")(channel)
-    if (hints != null) __obj.updateDynamic("hints")(hints)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (watch != null) __obj.updateDynamic("watch")(watch)
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (hints != null) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (watch != null) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelBrandingSettings]
   }
 }

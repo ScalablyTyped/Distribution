@@ -20,7 +20,7 @@ trait Typeof_DateTimeTextBox extends js.Object {
 object Typeof_DateTimeTextBox {
   @scala.inline
   def apply(__Constraints: Instantiable0[__Constraints]): Typeof_DateTimeTextBox = {
-    val __obj = js.Dynamic.literal(__Constraints = __Constraints)
+    val __obj = js.Dynamic.literal(__Constraints = __Constraints.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeof_DateTimeTextBox]
   }

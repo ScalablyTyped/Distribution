@@ -28,13 +28,13 @@ object GoogleAssistantResponse {
     userStorage: String = null
   ): GoogleAssistantResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(expectUserResponse)) __obj.updateDynamic("expectUserResponse")(expectUserResponse)
-    if (!js.isUndefined(isSsml)) __obj.updateDynamic("isSsml")(isSsml)
-    if (noInputPrompts != null) __obj.updateDynamic("noInputPrompts")(noInputPrompts)
-    if (richResponse != null) __obj.updateDynamic("richResponse")(richResponse)
-    if (speechBiasingHints != null) __obj.updateDynamic("speechBiasingHints")(speechBiasingHints)
-    if (systemIntent != null) __obj.updateDynamic("systemIntent")(systemIntent)
-    if (userStorage != null) __obj.updateDynamic("userStorage")(userStorage)
+    if (!js.isUndefined(expectUserResponse)) __obj.updateDynamic("expectUserResponse")(expectUserResponse.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSsml)) __obj.updateDynamic("isSsml")(isSsml.asInstanceOf[js.Any])
+    if (noInputPrompts != null) __obj.updateDynamic("noInputPrompts")(noInputPrompts.asInstanceOf[js.Any])
+    if (richResponse != null) __obj.updateDynamic("richResponse")(richResponse.asInstanceOf[js.Any])
+    if (speechBiasingHints != null) __obj.updateDynamic("speechBiasingHints")(speechBiasingHints.asInstanceOf[js.Any])
+    if (systemIntent != null) __obj.updateDynamic("systemIntent")(systemIntent.asInstanceOf[js.Any])
+    if (userStorage != null) __obj.updateDynamic("userStorage")(userStorage.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleAssistantResponse]
   }
 }

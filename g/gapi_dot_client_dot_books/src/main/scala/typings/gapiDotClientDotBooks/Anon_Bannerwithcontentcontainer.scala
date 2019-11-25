@@ -25,12 +25,12 @@ object Anon_Bannerwithcontentcontainer {
     volumes: js.Array[Volume] = null
   ): Anon_Bannerwithcontentcontainer = {
     val __obj = js.Dynamic.literal()
-    if (banner_with_content_container != null) __obj.updateDynamic("banner_with_content_container")(banner_with_content_container)
-    if (subTitle != null) __obj.updateDynamic("subTitle")(subTitle)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (banner_with_content_container != null) __obj.updateDynamic("banner_with_content_container")(banner_with_content_container.asInstanceOf[js.Any])
+    if (subTitle != null) __obj.updateDynamic("subTitle")(subTitle.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (totalVolumes != null) __obj.updateDynamic("totalVolumes")(totalVolumes.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid)
-    if (volumes != null) __obj.updateDynamic("volumes")(volumes)
+    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
+    if (volumes != null) __obj.updateDynamic("volumes")(volumes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bannerwithcontentcontainer]
   }
 }

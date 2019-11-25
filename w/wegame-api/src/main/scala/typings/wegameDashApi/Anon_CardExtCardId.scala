@@ -26,7 +26,7 @@ trait Anon_CardExtCardId extends js.Object {
 object Anon_CardExtCardId {
   @scala.inline
   def apply(cardExt: String, cardId: String, code: String, isSuccess: Boolean): Anon_CardExtCardId = {
-    val __obj = js.Dynamic.literal(cardExt = cardExt, cardId = cardId, code = code, isSuccess = isSuccess)
+    val __obj = js.Dynamic.literal(cardExt = cardExt.asInstanceOf[js.Any], cardId = cardId.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], isSuccess = isSuccess.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CardExtCardId]
   }

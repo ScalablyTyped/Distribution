@@ -74,13 +74,13 @@ object MarkSpec {
     toDOM: (/* mark */ Mark[_], /* inline */ Boolean) => DOMOutputSpec = null
   ): MarkSpec = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
-    if (excludes != null) __obj.updateDynamic("excludes")(excludes)
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (!js.isUndefined(inclusive)) __obj.updateDynamic("inclusive")(inclusive)
-    if (parseDOM != null) __obj.updateDynamic("parseDOM")(parseDOM)
-    if (!js.isUndefined(spanning)) __obj.updateDynamic("spanning")(spanning)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
+    if (excludes != null) __obj.updateDynamic("excludes")(excludes.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (!js.isUndefined(inclusive)) __obj.updateDynamic("inclusive")(inclusive.asInstanceOf[js.Any])
+    if (parseDOM != null) __obj.updateDynamic("parseDOM")(parseDOM.asInstanceOf[js.Any])
+    if (!js.isUndefined(spanning)) __obj.updateDynamic("spanning")(spanning.asInstanceOf[js.Any])
     if (toDOM != null) __obj.updateDynamic("toDOM")(js.Any.fromFunction2(toDOM))
     __obj.asInstanceOf[MarkSpec]
   }

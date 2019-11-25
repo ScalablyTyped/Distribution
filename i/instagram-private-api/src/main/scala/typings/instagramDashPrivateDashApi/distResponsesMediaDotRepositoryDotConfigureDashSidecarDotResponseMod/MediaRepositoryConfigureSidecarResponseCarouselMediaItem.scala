@@ -33,11 +33,11 @@ object MediaRepositoryConfigureSidecarResponseCarouselMediaItem {
     video_duration: Int | Double = null,
     video_versions: js.Array[MediaRepositoryConfigureSidecarResponseVideoVersionsItem] = null
   ): MediaRepositoryConfigureSidecarResponseCarouselMediaItem = {
-    val __obj = js.Dynamic.literal(carousel_parent_id = carousel_parent_id, id = id, image_versions2 = image_versions2, media_type = media_type, original_height = original_height, original_width = original_width, pk = pk)
-    if (fb_user_tags != null) __obj.updateDynamic("fb_user_tags")(fb_user_tags)
-    if (usertags != null) __obj.updateDynamic("usertags")(usertags)
+    val __obj = js.Dynamic.literal(carousel_parent_id = carousel_parent_id.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image_versions2 = image_versions2.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], original_height = original_height.asInstanceOf[js.Any], original_width = original_width.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any])
+    if (fb_user_tags != null) __obj.updateDynamic("fb_user_tags")(fb_user_tags.asInstanceOf[js.Any])
+    if (usertags != null) __obj.updateDynamic("usertags")(usertags.asInstanceOf[js.Any])
     if (video_duration != null) __obj.updateDynamic("video_duration")(video_duration.asInstanceOf[js.Any])
-    if (video_versions != null) __obj.updateDynamic("video_versions")(video_versions)
+    if (video_versions != null) __obj.updateDynamic("video_versions")(video_versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaRepositoryConfigureSidecarResponseCarouselMediaItem]
   }
 }

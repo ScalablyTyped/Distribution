@@ -26,7 +26,7 @@ trait GitTreeDiff extends js.Object {
 object GitTreeDiff {
   @scala.inline
   def apply(baseTreeId: String, diffEntries: js.Array[GitTreeDiffEntry], targetTreeId: String, url: String): GitTreeDiff = {
-    val __obj = js.Dynamic.literal(baseTreeId = baseTreeId, diffEntries = diffEntries, targetTreeId = targetTreeId, url = url)
+    val __obj = js.Dynamic.literal(baseTreeId = baseTreeId.asInstanceOf[js.Any], diffEntries = diffEntries.asInstanceOf[js.Any], targetTreeId = targetTreeId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitTreeDiff]
   }

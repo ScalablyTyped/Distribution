@@ -17,9 +17,9 @@ object Issue {
   @scala.inline
   def apply(description: String = null, severity: String = null, sourcePosition: SourcePosition = null): Issue = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (severity != null) __obj.updateDynamic("severity")(severity)
-    if (sourcePosition != null) __obj.updateDynamic("sourcePosition")(sourcePosition)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
+    if (sourcePosition != null) __obj.updateDynamic("sourcePosition")(sourcePosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[Issue]
   }
 }

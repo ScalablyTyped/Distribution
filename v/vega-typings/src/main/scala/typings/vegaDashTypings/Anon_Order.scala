@@ -13,7 +13,7 @@ trait Anon_Order extends _SortField {
 object Anon_Order {
   @scala.inline
   def apply(order: SortOrder): Anon_Order = {
-    val __obj = js.Dynamic.literal(order = order)
+    val __obj = js.Dynamic.literal(order = order.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Order]
   }

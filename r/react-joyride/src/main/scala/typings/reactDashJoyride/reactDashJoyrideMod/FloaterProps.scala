@@ -20,10 +20,10 @@ object FloaterProps {
     wrapperOptions: GenericObject = null
   ): FloaterProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableAnimation)) __obj.updateDynamic("disableAnimation")(disableAnimation)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
-    if (wrapperOptions != null) __obj.updateDynamic("wrapperOptions")(wrapperOptions)
+    if (!js.isUndefined(disableAnimation)) __obj.updateDynamic("disableAnimation")(disableAnimation.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (wrapperOptions != null) __obj.updateDynamic("wrapperOptions")(wrapperOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[FloaterProps]
   }
 }

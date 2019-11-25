@@ -98,7 +98,7 @@ object FieldInfoFormatProperties {
   ): FieldInfoFormatProperties = {
     val __obj = js.Dynamic.literal()
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(digitSeparator)) __obj.updateDynamic("digitSeparator")(digitSeparator)
+    if (!js.isUndefined(digitSeparator)) __obj.updateDynamic("digitSeparator")(digitSeparator.asInstanceOf[js.Any])
     if (places != null) __obj.updateDynamic("places")(places.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldInfoFormatProperties]
   }

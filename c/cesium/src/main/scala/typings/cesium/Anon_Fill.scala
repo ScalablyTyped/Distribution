@@ -34,16 +34,16 @@ object Anon_Fill {
     subdivisions: Property = null
   ): Anon_Fill = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (material != null) __obj.updateDynamic("material")(material)
-    if (outline != null) __obj.updateDynamic("outline")(outline)
-    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor)
-    if (outlineWidth != null) __obj.updateDynamic("outlineWidth")(outlineWidth)
-    if (radii != null) __obj.updateDynamic("radii")(radii)
-    if (show != null) __obj.updateDynamic("show")(show)
-    if (slicePartitions != null) __obj.updateDynamic("slicePartitions")(slicePartitions)
-    if (stackPartitions != null) __obj.updateDynamic("stackPartitions")(stackPartitions)
-    if (subdivisions != null) __obj.updateDynamic("subdivisions")(subdivisions)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
+    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
+    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
+    if (outlineWidth != null) __obj.updateDynamic("outlineWidth")(outlineWidth.asInstanceOf[js.Any])
+    if (radii != null) __obj.updateDynamic("radii")(radii.asInstanceOf[js.Any])
+    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (slicePartitions != null) __obj.updateDynamic("slicePartitions")(slicePartitions.asInstanceOf[js.Any])
+    if (stackPartitions != null) __obj.updateDynamic("stackPartitions")(stackPartitions.asInstanceOf[js.Any])
+    if (subdivisions != null) __obj.updateDynamic("subdivisions")(subdivisions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Fill]
   }
 }

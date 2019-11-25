@@ -27,11 +27,11 @@ object CreateOptions {
     isOnly: js.UndefOr[Boolean] = js.undefined,
     pending: js.UndefOr[Boolean] = js.undefined
   ): CreateOptions = {
-    val __obj = js.Dynamic.literal(title = title)
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (fn != null) __obj.updateDynamic("fn")(fn)
-    if (!js.isUndefined(isOnly)) __obj.updateDynamic("isOnly")(isOnly)
-    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (fn != null) __obj.updateDynamic("fn")(fn.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOnly)) __obj.updateDynamic("isOnly")(isOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOptions]
   }
 }

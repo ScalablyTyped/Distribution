@@ -14,7 +14,7 @@ trait TitleDetails extends js.Object {
 object TitleDetails {
   @scala.inline
   def apply(title: String, tabId: Int | Double = null): TitleDetails = {
-    val __obj = js.Dynamic.literal(title = title)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TitleDetails]
   }

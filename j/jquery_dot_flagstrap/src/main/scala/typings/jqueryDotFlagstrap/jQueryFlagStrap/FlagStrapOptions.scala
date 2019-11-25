@@ -76,11 +76,11 @@ object FlagStrapOptions {
     onSelect: (/* value */ js.Any, /* element */ js.Any) => Unit = null,
     scrollableHeight: String = null
   ): FlagStrapOptions = {
-    val __obj = js.Dynamic.literal(buttonSize = buttonSize, buttonType = buttonType, inputName = inputName, labelMargin = labelMargin, placeholder = placeholder.asInstanceOf[js.Any], scrollable = scrollable)
-    if (countries != null) __obj.updateDynamic("countries")(countries)
-    if (inputId != null) __obj.updateDynamic("inputId")(inputId)
+    val __obj = js.Dynamic.literal(buttonSize = buttonSize.asInstanceOf[js.Any], buttonType = buttonType.asInstanceOf[js.Any], inputName = inputName.asInstanceOf[js.Any], labelMargin = labelMargin.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], scrollable = scrollable.asInstanceOf[js.Any])
+    if (countries != null) __obj.updateDynamic("countries")(countries.asInstanceOf[js.Any])
+    if (inputId != null) __obj.updateDynamic("inputId")(inputId.asInstanceOf[js.Any])
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
-    if (scrollableHeight != null) __obj.updateDynamic("scrollableHeight")(scrollableHeight)
+    if (scrollableHeight != null) __obj.updateDynamic("scrollableHeight")(scrollableHeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlagStrapOptions]
   }
 }

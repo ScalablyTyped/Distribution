@@ -22,10 +22,10 @@ object WorkbookChartSeries {
     points: js.Array[WorkbookChartPoint] = null
   ): WorkbookChartSeries = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (points != null) __obj.updateDynamic("points")(points)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookChartSeries]
   }
 }

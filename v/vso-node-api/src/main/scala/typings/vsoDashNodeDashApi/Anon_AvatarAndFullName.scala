@@ -13,7 +13,7 @@ trait Anon_AvatarAndFullName extends js.Object {
 object Anon_AvatarAndFullName {
   @scala.inline
   def apply(avatarAndFullName: Double, avatarOnly: Double, fullName: Double): Anon_AvatarAndFullName = {
-    val __obj = js.Dynamic.literal(avatarAndFullName = avatarAndFullName, avatarOnly = avatarOnly, fullName = fullName)
+    val __obj = js.Dynamic.literal(avatarAndFullName = avatarAndFullName.asInstanceOf[js.Any], avatarOnly = avatarOnly.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AvatarAndFullName]
   }

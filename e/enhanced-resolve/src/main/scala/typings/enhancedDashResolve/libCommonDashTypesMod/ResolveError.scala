@@ -21,8 +21,8 @@ object ResolveError {
     recursion: Boolean,
     stack: String = null
   ): ResolveError = {
-    val __obj = js.Dynamic.literal(details = details, message = message, missing = missing, name = name, recursion = recursion)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], missing = missing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], recursion = recursion.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolveError]
   }
 }

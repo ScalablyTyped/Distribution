@@ -13,7 +13,7 @@ trait Nil extends js.Object {
 object Nil {
   @scala.inline
   def apply(Highland_NIL: Nil): Nil = {
-    val __obj = js.Dynamic.literal(Highland_NIL = Highland_NIL)
+    val __obj = js.Dynamic.literal(Highland_NIL = Highland_NIL.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Nil]
   }

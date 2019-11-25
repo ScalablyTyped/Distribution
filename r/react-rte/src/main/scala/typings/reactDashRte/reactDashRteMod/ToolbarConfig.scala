@@ -22,8 +22,8 @@ object ToolbarConfig {
     display: js.Array[GroupName],
     extraProps: js.Object = null
   ): ToolbarConfig = {
-    val __obj = js.Dynamic.literal(BLOCK_TYPE_BUTTONS = BLOCK_TYPE_BUTTONS, BLOCK_TYPE_DROPDOWN = BLOCK_TYPE_DROPDOWN, INLINE_STYLE_BUTTONS = INLINE_STYLE_BUTTONS, display = display)
-    if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps)
+    val __obj = js.Dynamic.literal(BLOCK_TYPE_BUTTONS = BLOCK_TYPE_BUTTONS.asInstanceOf[js.Any], BLOCK_TYPE_DROPDOWN = BLOCK_TYPE_DROPDOWN.asInstanceOf[js.Any], INLINE_STYLE_BUTTONS = INLINE_STYLE_BUTTONS.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any])
+    if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarConfig]
   }
 }

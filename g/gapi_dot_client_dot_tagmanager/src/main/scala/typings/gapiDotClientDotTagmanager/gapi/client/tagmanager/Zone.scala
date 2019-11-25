@@ -48,18 +48,18 @@ object Zone {
     zoneId: String = null
   ): Zone = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (boundary != null) __obj.updateDynamic("boundary")(boundary)
-    if (childContainer != null) __obj.updateDynamic("childContainer")(childContainer)
-    if (containerId != null) __obj.updateDynamic("containerId")(containerId)
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (notes != null) __obj.updateDynamic("notes")(notes)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (tagManagerUrl != null) __obj.updateDynamic("tagManagerUrl")(tagManagerUrl)
-    if (typeRestriction != null) __obj.updateDynamic("typeRestriction")(typeRestriction)
-    if (workspaceId != null) __obj.updateDynamic("workspaceId")(workspaceId)
-    if (zoneId != null) __obj.updateDynamic("zoneId")(zoneId)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
+    if (childContainer != null) __obj.updateDynamic("childContainer")(childContainer.asInstanceOf[js.Any])
+    if (containerId != null) __obj.updateDynamic("containerId")(containerId.asInstanceOf[js.Any])
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (tagManagerUrl != null) __obj.updateDynamic("tagManagerUrl")(tagManagerUrl.asInstanceOf[js.Any])
+    if (typeRestriction != null) __obj.updateDynamic("typeRestriction")(typeRestriction.asInstanceOf[js.Any])
+    if (workspaceId != null) __obj.updateDynamic("workspaceId")(workspaceId.asInstanceOf[js.Any])
+    if (zoneId != null) __obj.updateDynamic("zoneId")(zoneId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Zone]
   }
 }

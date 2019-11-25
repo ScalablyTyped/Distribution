@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_sourcerepo"
-version := "1.0-dt-20190213Z-36f5e8"
+version := "1.0-dt-20190213Z-697776"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "gapi_dot_client" % "1.0-dt-20190213Z-56d619",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
+  "org.scalablytyped" %%% "gapi_dot_client" % "1.0-dt-20190213Z-61b5c0",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

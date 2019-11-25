@@ -53,7 +53,7 @@ object FrameState {
     viewState: typings.ol.viewMod.State,
     wantedTiles: StringDictionary[StringDictionary[Boolean]]
   ): FrameState = {
-    val __obj = js.Dynamic.literal(animate = animate, coordinateToPixelTransform = coordinateToPixelTransform, extent = extent, focus = focus, index = index, layerStates = layerStates, layerStatesArray = layerStatesArray, pixelRatio = pixelRatio, pixelToCoordinateTransform = pixelToCoordinateTransform, postRenderFunctions = postRenderFunctions, size = size, skippedFeatureUids = skippedFeatureUids, tileQueue = tileQueue, time = time, usedTiles = usedTiles, viewHints = viewHints, viewState = viewState, wantedTiles = wantedTiles)
+    val __obj = js.Dynamic.literal(animate = animate.asInstanceOf[js.Any], coordinateToPixelTransform = coordinateToPixelTransform.asInstanceOf[js.Any], extent = extent.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], layerStates = layerStates.asInstanceOf[js.Any], layerStatesArray = layerStatesArray.asInstanceOf[js.Any], pixelRatio = pixelRatio.asInstanceOf[js.Any], pixelToCoordinateTransform = pixelToCoordinateTransform.asInstanceOf[js.Any], postRenderFunctions = postRenderFunctions.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], skippedFeatureUids = skippedFeatureUids.asInstanceOf[js.Any], tileQueue = tileQueue.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], usedTiles = usedTiles.asInstanceOf[js.Any], viewHints = viewHints.asInstanceOf[js.Any], viewState = viewState.asInstanceOf[js.Any], wantedTiles = wantedTiles.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FrameState]
   }

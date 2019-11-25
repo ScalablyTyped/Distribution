@@ -34,17 +34,17 @@ object SnapshotSerializerOptions {
     theme: SnapshotSerializerOptionsTheme = null
   ): SnapshotSerializerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(callToJSON)) __obj.updateDynamic("callToJSON")(callToJSON)
-    if (edgeSpacing != null) __obj.updateDynamic("edgeSpacing")(edgeSpacing)
-    if (!js.isUndefined(escapeRegex)) __obj.updateDynamic("escapeRegex")(escapeRegex)
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
+    if (!js.isUndefined(callToJSON)) __obj.updateDynamic("callToJSON")(callToJSON.asInstanceOf[js.Any])
+    if (edgeSpacing != null) __obj.updateDynamic("edgeSpacing")(edgeSpacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(escapeRegex)) __obj.updateDynamic("escapeRegex")(escapeRegex.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
     if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
     if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
-    if (!js.isUndefined(printFunctionName)) __obj.updateDynamic("printFunctionName")(printFunctionName)
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (!js.isUndefined(printFunctionName)) __obj.updateDynamic("printFunctionName")(printFunctionName.asInstanceOf[js.Any])
+    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotSerializerOptions]
   }
 }

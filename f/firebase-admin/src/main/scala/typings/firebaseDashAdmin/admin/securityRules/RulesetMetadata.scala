@@ -23,7 +23,7 @@ trait RulesetMetadata extends js.Object {
 object RulesetMetadata {
   @scala.inline
   def apply(createTime: String, name: String): RulesetMetadata = {
-    val __obj = js.Dynamic.literal(createTime = createTime, name = name)
+    val __obj = js.Dynamic.literal(createTime = createTime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RulesetMetadata]
   }

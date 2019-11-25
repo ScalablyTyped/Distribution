@@ -13,7 +13,7 @@ trait Leaf extends js.Object {
 object Leaf {
   @scala.inline
   def apply(bounds: Rectangle, variable: Variable): Leaf = {
-    val __obj = js.Dynamic.literal(bounds = bounds, variable = variable)
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], variable = variable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Leaf]
   }

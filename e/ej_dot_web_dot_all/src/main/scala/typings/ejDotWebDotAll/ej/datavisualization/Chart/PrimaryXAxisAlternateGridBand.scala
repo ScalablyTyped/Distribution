@@ -17,8 +17,8 @@ object PrimaryXAxisAlternateGridBand {
   @scala.inline
   def apply(even: PrimaryXAxisAlternateGridBandEven = null, odd: PrimaryXAxisAlternateGridBandOdd = null): PrimaryXAxisAlternateGridBand = {
     val __obj = js.Dynamic.literal()
-    if (even != null) __obj.updateDynamic("even")(even)
-    if (odd != null) __obj.updateDynamic("odd")(odd)
+    if (even != null) __obj.updateDynamic("even")(even.asInstanceOf[js.Any])
+    if (odd != null) __obj.updateDynamic("odd")(odd.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrimaryXAxisAlternateGridBand]
   }
 }

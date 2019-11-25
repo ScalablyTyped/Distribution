@@ -18,8 +18,8 @@ object ClaimDeviceResponse {
   @scala.inline
   def apply(deviceId: String = null, deviceName: String = null): ClaimDeviceResponse = {
     val __obj = js.Dynamic.literal()
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
-    if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName)
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
+    if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimDeviceResponse]
   }
 }

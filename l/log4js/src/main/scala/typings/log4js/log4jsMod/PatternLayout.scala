@@ -17,9 +17,9 @@ trait PatternLayout extends Layout {
 object PatternLayout {
   @scala.inline
   def apply(pattern: String, `type`: pattern, tokens: StringDictionary[Token] = null): PatternLayout = {
-    val __obj = js.Dynamic.literal(pattern = pattern)
-    __obj.updateDynamic("type")(`type`)
-    if (tokens != null) __obj.updateDynamic("tokens")(tokens)
+    val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (tokens != null) __obj.updateDynamic("tokens")(tokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatternLayout]
   }
 }

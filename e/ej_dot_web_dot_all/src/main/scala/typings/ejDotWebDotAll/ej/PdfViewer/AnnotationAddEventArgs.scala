@@ -44,14 +44,14 @@ object AnnotationAddEventArgs {
     `type`: String = null
   ): AnnotationAddEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (annotationBound != null) __obj.updateDynamic("annotationBound")(annotationBound)
+    if (annotationBound != null) __obj.updateDynamic("annotationBound")(annotationBound.asInstanceOf[js.Any])
     if (annotationID != null) __obj.updateDynamic("annotationID")(annotationID.asInstanceOf[js.Any])
-    if (annotationSettings != null) __obj.updateDynamic("annotationSettings")(annotationSettings)
-    if (annotationType != null) __obj.updateDynamic("annotationType")(annotationType)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (annotationSettings != null) __obj.updateDynamic("annotationSettings")(annotationSettings.asInstanceOf[js.Any])
+    if (annotationType != null) __obj.updateDynamic("annotationType")(annotationType.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (pageID != null) __obj.updateDynamic("pageID")(pageID.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationAddEventArgs]
   }
 }

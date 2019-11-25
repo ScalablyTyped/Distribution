@@ -32,8 +32,8 @@ object SmartHomeJwt {
     token_uri: String,
     `type`: service_account
   ): SmartHomeJwt = {
-    val __obj = js.Dynamic.literal(auth_provider_x509_cert_url = auth_provider_x509_cert_url, auth_uri = auth_uri, client_email = client_email, client_id = client_id, client_x509_cert_url = client_x509_cert_url, private_key = private_key, private_key_id = private_key_id, project_id = project_id, token_uri = token_uri)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(auth_provider_x509_cert_url = auth_provider_x509_cert_url.asInstanceOf[js.Any], auth_uri = auth_uri.asInstanceOf[js.Any], client_email = client_email.asInstanceOf[js.Any], client_id = client_id.asInstanceOf[js.Any], client_x509_cert_url = client_x509_cert_url.asInstanceOf[js.Any], private_key = private_key.asInstanceOf[js.Any], private_key_id = private_key_id.asInstanceOf[js.Any], project_id = project_id.asInstanceOf[js.Any], token_uri = token_uri.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartHomeJwt]
   }
 }

@@ -22,7 +22,7 @@ trait DefaultPlugins extends js.Object {
 object DefaultPlugins {
   @scala.inline
   def apply(CoreScene: js.Array[_], DefaultScene: js.Array[_], Global: js.Array[_]): DefaultPlugins = {
-    val __obj = js.Dynamic.literal(CoreScene = CoreScene, DefaultScene = DefaultScene, Global = Global)
+    val __obj = js.Dynamic.literal(CoreScene = CoreScene.asInstanceOf[js.Any], DefaultScene = DefaultScene.asInstanceOf[js.Any], Global = Global.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DefaultPlugins]
   }

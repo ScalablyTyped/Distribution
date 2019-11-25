@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object factoryDashGirlMod {
   type Attributes[T] = Definition[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: factory-girl.factory-girl.Definition<T[P]>}
     */ typings.factoryDashGirl.factoryDashGirlStrings.Attributes with T
   ]

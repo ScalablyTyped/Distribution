@@ -71,15 +71,15 @@ object Settings {
   ): Settings = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     if (autoSaveTime != null) __obj.updateDynamic("autoSaveTime")(autoSaveTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display)
+    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (framerate != null) __obj.updateDynamic("framerate")(framerate.asInstanceOf[js.Any])
     if (motionBlurFrames != null) __obj.updateDynamic("motionBlurFrames")(motionBlurFrames.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     if (timeLimit != null) __obj.updateDynamic("timeLimit")(timeLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
-    if (workersPath != null) __obj.updateDynamic("workersPath")(workersPath)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
+    if (workersPath != null) __obj.updateDynamic("workersPath")(workersPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

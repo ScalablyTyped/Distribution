@@ -15,7 +15,7 @@ trait Anon_JumpNextIcon extends js.Object {
 object Anon_JumpNextIcon {
   @scala.inline
   def apply(jumpNextIcon: Element, jumpPrevIcon: Element, nextIcon: Element, prevIcon: Element): Anon_JumpNextIcon = {
-    val __obj = js.Dynamic.literal(jumpNextIcon = jumpNextIcon, jumpPrevIcon = jumpPrevIcon, nextIcon = nextIcon, prevIcon = prevIcon)
+    val __obj = js.Dynamic.literal(jumpNextIcon = jumpNextIcon.asInstanceOf[js.Any], jumpPrevIcon = jumpPrevIcon.asInstanceOf[js.Any], nextIcon = nextIcon.asInstanceOf[js.Any], prevIcon = prevIcon.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_JumpNextIcon]
   }

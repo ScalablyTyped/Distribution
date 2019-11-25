@@ -378,7 +378,7 @@ object DOMAttributes {
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
     if (onWheelCapture != null) __obj.updateDynamic("onWheelCapture")(js.Any.fromFunction1(onWheelCapture))
     if (ref != null) __obj.updateDynamic("ref")(js.Any.fromFunction1(ref))
-    if (slot != null) __obj.updateDynamic("slot")(slot)
+    if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMAttributes[T]]
   }
 }

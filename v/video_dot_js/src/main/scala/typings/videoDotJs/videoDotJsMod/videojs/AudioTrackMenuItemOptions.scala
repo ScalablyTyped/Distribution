@@ -1,12 +1,11 @@
 package typings.videoDotJs.videoDotJsMod.videojs
 
-import typings.std.AudioTrack
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AudioTrackMenuItemOptions extends MenuItemOptions {
-  var track: js.UndefOr[AudioTrack] = js.undefined
+  var track: js.UndefOr[typings.std.AudioTrack] = js.undefined
 }
 
 object AudioTrackMenuItemOptions {
@@ -17,15 +16,15 @@ object AudioTrackMenuItemOptions {
     multiSelectable: js.UndefOr[Boolean] = js.undefined,
     selectable: js.UndefOr[Boolean] = js.undefined,
     selected: js.UndefOr[Boolean] = js.undefined,
-    track: AudioTrack = null
+    track: typings.std.AudioTrack = null
   ): AudioTrackMenuItemOptions = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (!js.isUndefined(multiSelectable)) __obj.updateDynamic("multiSelectable")(multiSelectable)
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
-    if (track != null) __obj.updateDynamic("track")(track)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiSelectable)) __obj.updateDynamic("multiSelectable")(multiSelectable.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (track != null) __obj.updateDynamic("track")(track.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioTrackMenuItemOptions]
   }
 }

@@ -12,7 +12,9 @@ trait WhereIn[TRecord, TResult] extends js.Object {
   def apply(columnNames: js.Array[String], values: QueryCallback[_, js.Array[_]]): QueryBuilder[TRecord, TResult] = js.native
   def apply[K /* <: String */](
     columnName: K,
-    values: js.Array[/* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any]
+    values: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
+    ]
   ): QueryBuilder[TRecord, TResult] = js.native
   def apply[K /* <: String */](columnName: K, values: QueryCallback[_, js.Array[_]]): QueryBuilder[TRecord, TResult] = js.native
   def apply[TRecordInner, TResultInner](columnName: String, values: QueryBuilder[TRecordInner, TResultInner]): QueryBuilder[TRecord, TResult] = js.native
@@ -21,7 +23,7 @@ trait WhereIn[TRecord, TResult] extends js.Object {
     columnName: K,
     values: QueryBuilder[
       TRecordInner, 
-      /* import warning: ImportType.apply Failed type conversion: TRecord[K] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TRecord[K] */ js.Any
     ]
   ): QueryBuilder[TRecord, TResult] = js.native
 }

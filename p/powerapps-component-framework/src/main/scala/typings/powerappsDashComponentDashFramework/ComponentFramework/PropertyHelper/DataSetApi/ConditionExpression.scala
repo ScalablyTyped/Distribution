@@ -35,8 +35,8 @@ object ConditionExpression {
     value: String | js.Array[String],
     entityAliasName: String = null
   ): ConditionExpression = {
-    val __obj = js.Dynamic.literal(attributeName = attributeName, conditionOperator = conditionOperator, value = value.asInstanceOf[js.Any])
-    if (entityAliasName != null) __obj.updateDynamic("entityAliasName")(entityAliasName)
+    val __obj = js.Dynamic.literal(attributeName = attributeName.asInstanceOf[js.Any], conditionOperator = conditionOperator.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (entityAliasName != null) __obj.updateDynamic("entityAliasName")(entityAliasName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionExpression]
   }
 }

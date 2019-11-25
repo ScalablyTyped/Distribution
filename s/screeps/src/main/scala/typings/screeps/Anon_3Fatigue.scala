@@ -12,7 +12,7 @@ trait Anon_3Fatigue extends js.Object {
 object Anon_3Fatigue {
   @scala.inline
   def apply(fatigue: `3`): Anon_3Fatigue = {
-    val __obj = js.Dynamic.literal(fatigue = fatigue)
+    val __obj = js.Dynamic.literal(fatigue = fatigue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_3Fatigue]
   }

@@ -45,9 +45,9 @@ object HandleObject {
     `type`: String,
     selector: String = null
   ): HandleObject[TTarget, TData] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], handler = js.Any.fromFunction3(handler), namespace = namespace, origType = origType)
-    __obj.updateDynamic("type")(`type`)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], handler = js.Any.fromFunction3(handler), namespace = namespace.asInstanceOf[js.Any], origType = origType.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandleObject[TTarget, TData]]
   }
 }

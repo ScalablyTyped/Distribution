@@ -34,7 +34,7 @@ trait Anon_Account extends js.Object {
 object Anon_Account {
   @scala.inline
   def apply(account: String, business: String, other: String, personal: String, preferred: String): Anon_Account = {
-    val __obj = js.Dynamic.literal(account = account, business = business, other = other, personal = personal, preferred = preferred)
+    val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], business = business.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], personal = personal.asInstanceOf[js.Any], preferred = preferred.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Account]
   }

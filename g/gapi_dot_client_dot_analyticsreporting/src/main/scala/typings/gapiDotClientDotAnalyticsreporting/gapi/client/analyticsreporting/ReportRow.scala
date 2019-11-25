@@ -15,8 +15,8 @@ object ReportRow {
   @scala.inline
   def apply(dimensions: js.Array[String] = null, metrics: js.Array[DateRangeValues] = null): ReportRow = {
     val __obj = js.Dynamic.literal()
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportRow]
   }
 }

@@ -22,8 +22,8 @@ object openssh_DirectStreamLocalChannelInfo {
     `type`: `direct-streamlocal@opensshDOTcom`,
     window: Double
   ): openssh_DirectStreamLocalChannelInfo = {
-    val __obj = js.Dynamic.literal(data = data, packetSize = packetSize, sender = sender, window = window)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], packetSize = packetSize.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[openssh_DirectStreamLocalChannelInfo]
   }
 }

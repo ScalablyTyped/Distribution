@@ -26,11 +26,11 @@ object AttributeSelector {
     matcher: String = null,
     value: StringNode | Identifier = null
   ): AttributeSelector = {
-    val __obj = js.Dynamic.literal(name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (flags != null) __obj.updateDynamic("flags")(flags)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (matcher != null) __obj.updateDynamic("matcher")(matcher)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (matcher != null) __obj.updateDynamic("matcher")(matcher.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeSelector]
   }

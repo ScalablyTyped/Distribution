@@ -23,11 +23,11 @@ object ASTText {
     ssrOptimizability: SSROptimizability = null,
     static: js.UndefOr[Boolean] = js.undefined
   ): ASTText = {
-    val __obj = js.Dynamic.literal(text = text)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(isComment)) __obj.updateDynamic("isComment")(isComment)
-    if (ssrOptimizability != null) __obj.updateDynamic("ssrOptimizability")(ssrOptimizability)
-    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(isComment)) __obj.updateDynamic("isComment")(isComment.asInstanceOf[js.Any])
+    if (ssrOptimizability != null) __obj.updateDynamic("ssrOptimizability")(ssrOptimizability.asInstanceOf[js.Any])
+    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTText]
   }
 }

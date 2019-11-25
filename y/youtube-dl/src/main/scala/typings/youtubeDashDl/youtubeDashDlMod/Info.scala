@@ -23,7 +23,7 @@ object Info {
     filename: String,
     size: Double
   ): Info = {
-    val __obj = js.Dynamic.literal(_duration_hms = _duration_hms, _duration_raw = _duration_raw, _filename = _filename, duration = duration, filename = filename, size = size)
+    val __obj = js.Dynamic.literal(_duration_hms = _duration_hms.asInstanceOf[js.Any], _duration_raw = _duration_raw.asInstanceOf[js.Any], _filename = _filename.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Info]
   }

@@ -86,7 +86,7 @@ object ExecuteInfo {
     stepID: Double,
     threwError: Boolean
   ): ExecuteInfo = {
-    val __obj = js.Dynamic.literal(conflicts = conflicts, constructor = constructor, errorCode = errorCode, errorDescription = errorDescription, executionResult = executionResult, hasConflicts = hasConflicts, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), hasReturnCode = hasReturnCode, jobID = jobID, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), returnCode = returnCode, stepID = stepID, threwError = threwError)
+    val __obj = js.Dynamic.literal(conflicts = conflicts.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], errorCode = errorCode.asInstanceOf[js.Any], errorDescription = errorDescription.asInstanceOf[js.Any], executionResult = executionResult.asInstanceOf[js.Any], hasConflicts = hasConflicts.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), hasReturnCode = hasReturnCode.asInstanceOf[js.Any], jobID = jobID.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), returnCode = returnCode.asInstanceOf[js.Any], stepID = stepID.asInstanceOf[js.Any], threwError = threwError.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExecuteInfo]
   }

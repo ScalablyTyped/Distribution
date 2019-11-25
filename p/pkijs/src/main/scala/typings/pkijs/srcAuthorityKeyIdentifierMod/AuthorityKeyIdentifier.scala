@@ -25,7 +25,7 @@ object AuthorityKeyIdentifier {
     toJSON: () => js.Any,
     toSchema: () => js.Any
   ): AuthorityKeyIdentifier = {
-    val __obj = js.Dynamic.literal(authorityCertIssuer = authorityCertIssuer, authorityCertSerialNumber = authorityCertSerialNumber, fromSchema = js.Any.fromFunction1(fromSchema), keyIdentifier = keyIdentifier, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
+    val __obj = js.Dynamic.literal(authorityCertIssuer = authorityCertIssuer.asInstanceOf[js.Any], authorityCertSerialNumber = authorityCertSerialNumber.asInstanceOf[js.Any], fromSchema = js.Any.fromFunction1(fromSchema), keyIdentifier = keyIdentifier.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[AuthorityKeyIdentifier]
   }

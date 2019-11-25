@@ -12,7 +12,7 @@ object TransportOptions {
   @scala.inline
   def apply(component: String = null): TransportOptions = {
     val __obj = js.Dynamic.literal()
-    if (component != null) __obj.updateDynamic("component")(component)
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransportOptions]
   }
 }

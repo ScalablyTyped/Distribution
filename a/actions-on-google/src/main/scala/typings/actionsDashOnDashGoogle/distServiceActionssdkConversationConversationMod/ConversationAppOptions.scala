@@ -27,10 +27,10 @@ object ConversationAppOptions {
     ordersv3: js.UndefOr[Boolean] = js.undefined
   ): ConversationAppOptions[TConvData, TUserStorage] = {
     val __obj = js.Dynamic.literal()
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction0(init))
-    if (!js.isUndefined(ordersv3)) __obj.updateDynamic("ordersv3")(ordersv3)
+    if (!js.isUndefined(ordersv3)) __obj.updateDynamic("ordersv3")(ordersv3.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConversationAppOptions[TConvData, TUserStorage]]
   }
 }

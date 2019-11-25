@@ -13,7 +13,7 @@ trait FaceVertex extends js.Object {
 object FaceVertex {
   @scala.inline
   def apply(textureCoordsIndex: Double, vertexIndex: Double, vertexNormalIndex: Double): FaceVertex = {
-    val __obj = js.Dynamic.literal(textureCoordsIndex = textureCoordsIndex, vertexIndex = vertexIndex, vertexNormalIndex = vertexNormalIndex)
+    val __obj = js.Dynamic.literal(textureCoordsIndex = textureCoordsIndex.asInstanceOf[js.Any], vertexIndex = vertexIndex.asInstanceOf[js.Any], vertexNormalIndex = vertexNormalIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FaceVertex]
   }

@@ -50,7 +50,7 @@ object ITeachingBubbleStyles {
     if (primaryButton != null) __obj.updateDynamic("primaryButton")(primaryButton.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (secondaryButton != null) __obj.updateDynamic("secondaryButton")(secondaryButton.asInstanceOf[js.Any])
-    if (subComponentStyles != null) __obj.updateDynamic("subComponentStyles")(subComponentStyles)
+    if (subComponentStyles != null) __obj.updateDynamic("subComponentStyles")(subComponentStyles.asInstanceOf[js.Any])
     if (subText != null) __obj.updateDynamic("subText")(subText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITeachingBubbleStyles]
   }

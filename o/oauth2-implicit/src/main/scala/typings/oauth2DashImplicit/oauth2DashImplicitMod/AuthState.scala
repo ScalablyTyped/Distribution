@@ -13,8 +13,8 @@ trait AuthState
 object AuthState {
   @scala.inline
   def apply(originalUrl: String, StringDictionary: /* key */ StringDictionary[js.Any] = null): AuthState = {
-    val __obj = js.Dynamic.literal(originalUrl = originalUrl)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(originalUrl = originalUrl.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[AuthState]
   }
 }

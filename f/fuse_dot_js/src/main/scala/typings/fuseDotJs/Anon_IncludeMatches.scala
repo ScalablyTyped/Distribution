@@ -12,7 +12,7 @@ trait Anon_IncludeMatches extends js.Object {
 object Anon_IncludeMatches {
   @scala.inline
   def apply(includeMatches: `true`): Anon_IncludeMatches = {
-    val __obj = js.Dynamic.literal(includeMatches = includeMatches)
+    val __obj = js.Dynamic.literal(includeMatches = includeMatches.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IncludeMatches]
   }

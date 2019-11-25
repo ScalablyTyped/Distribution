@@ -24,8 +24,8 @@ object SizeOptions {
   def apply(maxSize: Int | Double = null, name: String = null, `type`: String = null): SizeOptions = {
     val __obj = js.Dynamic.literal()
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeOptions]
   }
 }

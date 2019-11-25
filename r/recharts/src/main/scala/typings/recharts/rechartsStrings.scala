@@ -66,7 +66,9 @@ object rechartsStrings {
   sealed trait centric extends js.Object
   
   @js.native
-  sealed trait circle extends IconType
+  sealed trait circle
+    extends IconType
+       with LegendType
   
   @js.native
   sealed trait clip extends PickedCSSStyleDeclarationKeys
@@ -87,7 +89,9 @@ object rechartsStrings {
   sealed trait crispEdges extends js.Object
   
   @js.native
-  sealed trait cross extends IconType
+  sealed trait cross
+    extends IconType
+       with LegendType
   
   @js.native
   sealed trait cursor extends PickedCSSStyleDeclarationKeys
@@ -108,7 +112,9 @@ object rechartsStrings {
   sealed trait diameter extends js.Object
   
   @js.native
-  sealed trait diamond extends IconType
+  sealed trait diamond
+    extends IconType
+       with LegendType
   
   @js.native
   sealed trait direction extends PickedCSSStyleDeclarationKeys
@@ -252,7 +258,9 @@ object rechartsStrings {
   sealed trait lightingColor extends PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait line extends IconType
+  sealed trait line
+    extends IconType
+       with LegendType
   
   @js.native
   sealed trait linear
@@ -326,7 +334,9 @@ object rechartsStrings {
   sealed trait overflow extends PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait plainline extends IconType
+  sealed trait plainline
+    extends IconType
+       with LegendType
   
   @js.native
   sealed trait point extends ScaleType
@@ -359,7 +369,9 @@ object rechartsStrings {
   sealed trait radial extends js.Object
   
   @js.native
-  sealed trait rect extends IconType
+  sealed trait rect
+    extends IconType
+       with LegendType
   
   @js.native
   sealed trait right extends PositionType
@@ -377,10 +389,14 @@ object rechartsStrings {
   sealed trait sqrt extends ScaleType
   
   @js.native
-  sealed trait square extends IconType
+  sealed trait square
+    extends IconType
+       with LegendType
   
   @js.native
-  sealed trait star extends IconType
+  sealed trait star
+    extends IconType
+       with LegendType
   
   @js.native
   sealed trait start extends js.Object
@@ -425,7 +441,9 @@ object rechartsStrings {
   sealed trait transform extends PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait triangle extends IconType
+  sealed trait triangle
+    extends IconType
+       with LegendType
   
   @js.native
   sealed trait unicodeBidi extends PickedCSSStyleDeclarationKeys
@@ -449,7 +467,9 @@ object rechartsStrings {
   sealed trait writingMode extends PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait wye extends IconType
+  sealed trait wye
+    extends IconType
+       with LegendType
   
   @scala.inline
   def alignmentBaseline: alignmentBaseline = "alignmentBaseline".asInstanceOf[alignmentBaseline]

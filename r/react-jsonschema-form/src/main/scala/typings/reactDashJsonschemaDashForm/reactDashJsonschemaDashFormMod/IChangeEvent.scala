@@ -28,8 +28,8 @@ object IChangeEvent {
     uiSchema: UiSchema,
     status: String = null
   ): IChangeEvent[T] = {
-    val __obj = js.Dynamic.literal(edit = edit, errorSchema = errorSchema, errors = errors, formData = formData.asInstanceOf[js.Any], idSchema = idSchema, schema = schema, uiSchema = uiSchema)
-    if (status != null) __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(edit = edit.asInstanceOf[js.Any], errorSchema = errorSchema.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], formData = formData.asInstanceOf[js.Any], idSchema = idSchema.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], uiSchema = uiSchema.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChangeEvent[T]]
   }
 }

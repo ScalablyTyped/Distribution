@@ -18,11 +18,6 @@ trait Anon_DATA extends js.Object {
   var PERIODIC: periodic
 }
 
-trait Anon_Data extends js.Object {
-  var data: js.Array[integer]
-  var id: integer
-}
-
 object Anon_DATA {
   @scala.inline
   def apply(
@@ -32,16 +27,21 @@ object Anon_DATA {
     NOTIFICATION: notification,
     PERIODIC: periodic
   ): Anon_DATA = {
-    val __obj = js.Dynamic.literal(DATA = DATA, EXPLICIT_FEEDBACK = EXPLICIT_FEEDBACK, FEEDBACK = FEEDBACK, NOTIFICATION = NOTIFICATION, PERIODIC = PERIODIC)
+    val __obj = js.Dynamic.literal(DATA = DATA.asInstanceOf[js.Any], EXPLICIT_FEEDBACK = EXPLICIT_FEEDBACK.asInstanceOf[js.Any], FEEDBACK = FEEDBACK.asInstanceOf[js.Any], NOTIFICATION = NOTIFICATION.asInstanceOf[js.Any], PERIODIC = PERIODIC.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DATA]
   }
 }
 
+trait Anon_Data extends js.Object {
+  var data: js.Array[integer]
+  var id: integer
+}
+
 object Anon_Data {
   @scala.inline
   def apply(data: js.Array[integer], id: integer): Anon_Data = {
-    val __obj = js.Dynamic.literal(data = data, id = id)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Data]
   }

@@ -22,7 +22,7 @@ object FlushOptions {
   def apply(callback: /* v */ String => Unit = null, isAppCrashing: js.UndefOr[Boolean] = js.undefined): FlushOptions = {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
-    if (!js.isUndefined(isAppCrashing)) __obj.updateDynamic("isAppCrashing")(isAppCrashing)
+    if (!js.isUndefined(isAppCrashing)) __obj.updateDynamic("isAppCrashing")(isAppCrashing.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlushOptions]
   }
 }

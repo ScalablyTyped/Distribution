@@ -17,8 +17,8 @@ object GanttResizeStartEvent {
     sender: Gantt,
     task: GanttTask = null
   ): GanttResizeStartEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (task != null) __obj.updateDynamic("task")(task)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (task != null) __obj.updateDynamic("task")(task.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttResizeStartEvent]
   }
 }

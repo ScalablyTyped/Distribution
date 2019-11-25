@@ -34,15 +34,15 @@ object ExecuteSpecsOptions {
     teamcity: String | Boolean = null,
     useRequireJs: js.UndefOr[Boolean] = js.undefined
   ): ExecuteSpecsOptions = {
-    val __obj = js.Dynamic.literal(regExpSpec = regExpSpec, specFolders = specFolders)
-    if (!js.isUndefined(growl)) __obj.updateDynamic("growl")(growl)
-    if (!js.isUndefined(includeStackTrace)) __obj.updateDynamic("includeStackTrace")(includeStackTrace)
-    if (!js.isUndefined(isVerbose)) __obj.updateDynamic("isVerbose")(isVerbose)
-    if (junitreport != null) __obj.updateDynamic("junitreport")(junitreport)
+    val __obj = js.Dynamic.literal(regExpSpec = regExpSpec.asInstanceOf[js.Any], specFolders = specFolders.asInstanceOf[js.Any])
+    if (!js.isUndefined(growl)) __obj.updateDynamic("growl")(growl.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeStackTrace)) __obj.updateDynamic("includeStackTrace")(includeStackTrace.asInstanceOf[js.Any])
+    if (!js.isUndefined(isVerbose)) __obj.updateDynamic("isVerbose")(isVerbose.asInstanceOf[js.Any])
+    if (junitreport != null) __obj.updateDynamic("junitreport")(junitreport.asInstanceOf[js.Any])
     if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
-    if (!js.isUndefined(showColors)) __obj.updateDynamic("showColors")(showColors)
+    if (!js.isUndefined(showColors)) __obj.updateDynamic("showColors")(showColors.asInstanceOf[js.Any])
     if (teamcity != null) __obj.updateDynamic("teamcity")(teamcity.asInstanceOf[js.Any])
-    if (!js.isUndefined(useRequireJs)) __obj.updateDynamic("useRequireJs")(useRequireJs)
+    if (!js.isUndefined(useRequireJs)) __obj.updateDynamic("useRequireJs")(useRequireJs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteSpecsOptions]
   }
 }

@@ -21,9 +21,9 @@ object IObserverTree {
     listeners: Int | Double = null,
     observers: js.Array[IObserverTree] = null
   ): IObserverTree = {
-    val __obj = js.Dynamic.literal(context = context, id = id, name = name)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
-    if (observers != null) __obj.updateDynamic("observers")(observers)
+    if (observers != null) __obj.updateDynamic("observers")(observers.asInstanceOf[js.Any])
     __obj.asInstanceOf[IObserverTree]
   }
 }

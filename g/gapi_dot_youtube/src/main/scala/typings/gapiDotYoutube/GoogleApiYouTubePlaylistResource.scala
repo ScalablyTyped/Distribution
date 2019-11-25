@@ -46,7 +46,7 @@ object GoogleApiYouTubePlaylistResource {
     snippet: Anon_ChannelIdChannelTitleDescriptionPublishedAt,
     status: Anon_PrivacyStatus
   ): GoogleApiYouTubePlaylistResource = {
-    val __obj = js.Dynamic.literal(contentDetails = contentDetails, etag = etag, id = id, kind = kind, player = player, snippet = snippet, status = status)
+    val __obj = js.Dynamic.literal(contentDetails = contentDetails.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], player = player.asInstanceOf[js.Any], snippet = snippet.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GoogleApiYouTubePlaylistResource]
   }

@@ -16,8 +16,8 @@ object PDFViewerRenderEvent {
     sender: PDFViewer,
     page: js.Any = null
   ): PDFViewerRenderEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (page != null) __obj.updateDynamic("page")(page)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerRenderEvent]
   }
 }

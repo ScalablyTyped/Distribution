@@ -15,7 +15,7 @@ object _ReplicaDescription {
   @scala.inline
   def apply(RegionName: String = null): _ReplicaDescription = {
     val __obj = js.Dynamic.literal()
-    if (RegionName != null) __obj.updateDynamic("RegionName")(RegionName)
+    if (RegionName != null) __obj.updateDynamic("RegionName")(RegionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ReplicaDescription]
   }
 }

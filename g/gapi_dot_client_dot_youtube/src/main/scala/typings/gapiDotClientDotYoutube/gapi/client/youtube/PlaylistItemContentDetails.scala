@@ -34,11 +34,11 @@ object PlaylistItemContentDetails {
     videoPublishedAt: String = null
   ): PlaylistItemContentDetails = {
     val __obj = js.Dynamic.literal()
-    if (endAt != null) __obj.updateDynamic("endAt")(endAt)
-    if (note != null) __obj.updateDynamic("note")(note)
-    if (startAt != null) __obj.updateDynamic("startAt")(startAt)
-    if (videoId != null) __obj.updateDynamic("videoId")(videoId)
-    if (videoPublishedAt != null) __obj.updateDynamic("videoPublishedAt")(videoPublishedAt)
+    if (endAt != null) __obj.updateDynamic("endAt")(endAt.asInstanceOf[js.Any])
+    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
+    if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])
+    if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])
+    if (videoPublishedAt != null) __obj.updateDynamic("videoPublishedAt")(videoPublishedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaylistItemContentDetails]
   }
 }

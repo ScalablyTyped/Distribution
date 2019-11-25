@@ -22,7 +22,7 @@ object _CampaignsResponse {
   def apply(Item: js.Array[_CampaignResponse] | Iterable[_CampaignResponse] = null, NextToken: String = null): _CampaignsResponse = {
     val __obj = js.Dynamic.literal()
     if (Item != null) __obj.updateDynamic("Item")(Item.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[_CampaignsResponse]
   }
 }

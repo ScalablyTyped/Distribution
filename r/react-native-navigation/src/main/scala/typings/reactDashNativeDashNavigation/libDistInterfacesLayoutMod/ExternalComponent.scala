@@ -28,9 +28,9 @@ object ExternalComponent {
   @scala.inline
   def apply(name: String | Double, id: String = null, options: Options = null, passProps: js.Object = null): ExternalComponent = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (passProps != null) __obj.updateDynamic("passProps")(passProps)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (passProps != null) __obj.updateDynamic("passProps")(passProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalComponent]
   }
 }

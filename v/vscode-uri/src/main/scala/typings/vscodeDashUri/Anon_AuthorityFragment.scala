@@ -22,11 +22,11 @@ object Anon_AuthorityFragment {
     scheme: String = null
   ): Anon_AuthorityFragment = {
     val __obj = js.Dynamic.literal()
-    if (authority != null) __obj.updateDynamic("authority")(authority)
-    if (fragment != null) __obj.updateDynamic("fragment")(fragment)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme)
+    if (authority != null) __obj.updateDynamic("authority")(authority.asInstanceOf[js.Any])
+    if (fragment != null) __obj.updateDynamic("fragment")(fragment.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AuthorityFragment]
   }
 }

@@ -43,12 +43,12 @@ object _SegmentDemographics {
     Platform: _SetDimension = null
   ): _SegmentDemographics = {
     val __obj = js.Dynamic.literal()
-    if (AppVersion != null) __obj.updateDynamic("AppVersion")(AppVersion)
-    if (Channel != null) __obj.updateDynamic("Channel")(Channel)
-    if (DeviceType != null) __obj.updateDynamic("DeviceType")(DeviceType)
-    if (Make != null) __obj.updateDynamic("Make")(Make)
-    if (Model != null) __obj.updateDynamic("Model")(Model)
-    if (Platform != null) __obj.updateDynamic("Platform")(Platform)
+    if (AppVersion != null) __obj.updateDynamic("AppVersion")(AppVersion.asInstanceOf[js.Any])
+    if (Channel != null) __obj.updateDynamic("Channel")(Channel.asInstanceOf[js.Any])
+    if (DeviceType != null) __obj.updateDynamic("DeviceType")(DeviceType.asInstanceOf[js.Any])
+    if (Make != null) __obj.updateDynamic("Make")(Make.asInstanceOf[js.Any])
+    if (Model != null) __obj.updateDynamic("Model")(Model.asInstanceOf[js.Any])
+    if (Platform != null) __obj.updateDynamic("Platform")(Platform.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SegmentDemographics]
   }
 }

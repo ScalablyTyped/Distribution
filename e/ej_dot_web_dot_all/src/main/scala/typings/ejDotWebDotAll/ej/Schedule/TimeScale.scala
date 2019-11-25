@@ -38,11 +38,11 @@ object TimeScale {
     minorSlotTemplateId: String = null
   ): TimeScale = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
     if (majorSlot != null) __obj.updateDynamic("majorSlot")(majorSlot.asInstanceOf[js.Any])
-    if (majorSlotTemplateId != null) __obj.updateDynamic("majorSlotTemplateId")(majorSlotTemplateId)
+    if (majorSlotTemplateId != null) __obj.updateDynamic("majorSlotTemplateId")(majorSlotTemplateId.asInstanceOf[js.Any])
     if (minorSlotCount != null) __obj.updateDynamic("minorSlotCount")(minorSlotCount.asInstanceOf[js.Any])
-    if (minorSlotTemplateId != null) __obj.updateDynamic("minorSlotTemplateId")(minorSlotTemplateId)
+    if (minorSlotTemplateId != null) __obj.updateDynamic("minorSlotTemplateId")(minorSlotTemplateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeScale]
   }
 }

@@ -38,9 +38,9 @@ object SchemaMethod {
     parameterOrder: js.Array[String] = null,
     parameters: StringDictionary[SchemaParameter] = null
   ): SchemaMethod = {
-    val __obj = js.Dynamic.literal(description = description, fragment = fragment, httpMethod = httpMethod, id = id, mediaUpload = mediaUpload, path = path, request = request, response = response, sampleUrl = sampleUrl, scopes = scopes)
-    if (parameterOrder != null) __obj.updateDynamic("parameterOrder")(parameterOrder)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], fragment = fragment.asInstanceOf[js.Any], httpMethod = httpMethod.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], mediaUpload = mediaUpload.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], sampleUrl = sampleUrl.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any])
+    if (parameterOrder != null) __obj.updateDynamic("parameterOrder")(parameterOrder.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMethod]
   }
 }

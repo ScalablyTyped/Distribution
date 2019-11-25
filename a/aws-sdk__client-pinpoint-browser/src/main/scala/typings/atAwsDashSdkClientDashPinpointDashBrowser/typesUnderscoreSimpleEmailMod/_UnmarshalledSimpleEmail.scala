@@ -31,9 +31,9 @@ object _UnmarshalledSimpleEmail {
     TextPart: _UnmarshalledSimpleEmailPart = null
   ): _UnmarshalledSimpleEmail = {
     val __obj = js.Dynamic.literal()
-    if (HtmlPart != null) __obj.updateDynamic("HtmlPart")(HtmlPart)
-    if (Subject != null) __obj.updateDynamic("Subject")(Subject)
-    if (TextPart != null) __obj.updateDynamic("TextPart")(TextPart)
+    if (HtmlPart != null) __obj.updateDynamic("HtmlPart")(HtmlPart.asInstanceOf[js.Any])
+    if (Subject != null) __obj.updateDynamic("Subject")(Subject.asInstanceOf[js.Any])
+    if (TextPart != null) __obj.updateDynamic("TextPart")(TextPart.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledSimpleEmail]
   }
 }

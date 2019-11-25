@@ -40,11 +40,11 @@ object ITileLayerOptions {
   ): ITileLayerOptions = {
     val __obj = js.Dynamic.literal()
     if (downloadTimeout != null) __obj.updateDynamic("downloadTimeout")(downloadTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCORS)) __obj.updateDynamic("enableCORS")(enableCORS)
-    if (mercator != null) __obj.updateDynamic("mercator")(mercator)
+    if (!js.isUndefined(enableCORS)) __obj.updateDynamic("enableCORS")(enableCORS.asInstanceOf[js.Any])
+    if (mercator != null) __obj.updateDynamic("mercator")(mercator.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(useCredentialsForCORS)) __obj.updateDynamic("useCredentialsForCORS")(useCredentialsForCORS)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(useCredentialsForCORS)) __obj.updateDynamic("useCredentialsForCORS")(useCredentialsForCORS.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITileLayerOptions]
   }

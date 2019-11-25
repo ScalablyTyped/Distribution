@@ -13,8 +13,8 @@ object Dimension {
   @scala.inline
   def apply(histogramBuckets: js.Array[String] = null, name: String = null): Dimension = {
     val __obj = js.Dynamic.literal()
-    if (histogramBuckets != null) __obj.updateDynamic("histogramBuckets")(histogramBuckets)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (histogramBuckets != null) __obj.updateDynamic("histogramBuckets")(histogramBuckets.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dimension]
   }
 }

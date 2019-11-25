@@ -9,4 +9,5 @@ package object sailsDotIoDotJsMod {
 
   type Data = js.Object
   type Headers = StringDictionary[String]
+  type RequestCallback = js.Function2[/* body */ js.Any, /* jwr */ JWR, js.Any]
 }

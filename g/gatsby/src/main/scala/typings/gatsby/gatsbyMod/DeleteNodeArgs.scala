@@ -11,7 +11,7 @@ trait DeleteNodeArgs extends js.Object {
 object DeleteNodeArgs {
   @scala.inline
   def apply(node: Node): DeleteNodeArgs = {
-    val __obj = js.Dynamic.literal(node = node)
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteNodeArgs]
   }

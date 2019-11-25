@@ -13,7 +13,7 @@ object TailOptions {
   @scala.inline
   def apply(`-n`: Double): TailOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("-n")(`-n`)
+    __obj.updateDynamic("-n")(`-n`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TailOptions]
   }
 }

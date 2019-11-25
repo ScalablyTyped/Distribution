@@ -27,7 +27,7 @@ object Anon_RTLDDEFAUL {
     RTLD_NOLOAD: Double,
     RTLD_NOW: Double
   ): Anon_RTLDDEFAUL = {
-    val __obj = js.Dynamic.literal(RTLD_DEFAUL = RTLD_DEFAUL, RTLD_GLOBAL = RTLD_GLOBAL, RTLD_LAZY = RTLD_LAZY, RTLD_LOCAL = RTLD_LOCAL, RTLD_NEXT = RTLD_NEXT, RTLD_NODELETE = RTLD_NODELETE, RTLD_NOLOAD = RTLD_NOLOAD, RTLD_NOW = RTLD_NOW)
+    val __obj = js.Dynamic.literal(RTLD_DEFAUL = RTLD_DEFAUL.asInstanceOf[js.Any], RTLD_GLOBAL = RTLD_GLOBAL.asInstanceOf[js.Any], RTLD_LAZY = RTLD_LAZY.asInstanceOf[js.Any], RTLD_LOCAL = RTLD_LOCAL.asInstanceOf[js.Any], RTLD_NEXT = RTLD_NEXT.asInstanceOf[js.Any], RTLD_NODELETE = RTLD_NODELETE.asInstanceOf[js.Any], RTLD_NOLOAD = RTLD_NOLOAD.asInstanceOf[js.Any], RTLD_NOW = RTLD_NOW.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_RTLDDEFAUL]
   }

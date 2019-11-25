@@ -33,13 +33,13 @@ object DeviceDetail {
     trustType: String = null
   ): DeviceDetail = {
     val __obj = js.Dynamic.literal()
-    if (browser != null) __obj.updateDynamic("browser")(browser)
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (!js.isUndefined(isCompliant)) __obj.updateDynamic("isCompliant")(isCompliant)
-    if (!js.isUndefined(isManaged)) __obj.updateDynamic("isManaged")(isManaged)
-    if (operatingSystem != null) __obj.updateDynamic("operatingSystem")(operatingSystem)
-    if (trustType != null) __obj.updateDynamic("trustType")(trustType)
+    if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCompliant)) __obj.updateDynamic("isCompliant")(isCompliant.asInstanceOf[js.Any])
+    if (!js.isUndefined(isManaged)) __obj.updateDynamic("isManaged")(isManaged.asInstanceOf[js.Any])
+    if (operatingSystem != null) __obj.updateDynamic("operatingSystem")(operatingSystem.asInstanceOf[js.Any])
+    if (trustType != null) __obj.updateDynamic("trustType")(trustType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceDetail]
   }
 }

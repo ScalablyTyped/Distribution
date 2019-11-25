@@ -21,10 +21,10 @@ object IComparison {
     __order: String = null
   ): IComparison = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (__count != null) __obj.updateDynamic("__count")(__count.asInstanceOf[js.Any])
     if (__offset != null) __obj.updateDynamic("__offset")(__offset.asInstanceOf[js.Any])
-    if (__order != null) __obj.updateDynamic("__order")(__order)
+    if (__order != null) __obj.updateDynamic("__order")(__order.asInstanceOf[js.Any])
     __obj.asInstanceOf[IComparison]
   }
 }

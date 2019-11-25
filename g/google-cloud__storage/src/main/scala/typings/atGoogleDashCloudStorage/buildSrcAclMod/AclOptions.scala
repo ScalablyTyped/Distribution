@@ -14,7 +14,7 @@ trait AclOptions extends js.Object {
 object AclOptions {
   @scala.inline
   def apply(pathPrefix: String, request: (DecorateRequestOptions, BodyResponseCallback) => Unit): AclOptions = {
-    val __obj = js.Dynamic.literal(pathPrefix = pathPrefix, request = js.Any.fromFunction2(request))
+    val __obj = js.Dynamic.literal(pathPrefix = pathPrefix.asInstanceOf[js.Any], request = js.Any.fromFunction2(request))
   
     __obj.asInstanceOf[AclOptions]
   }

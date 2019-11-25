@@ -1,6 +1,5 @@
 package typings.ndnDashJs.ndnDashJsMod
 
-import typings.ndnDashJs.nameMod.ComponentType
 import typings.ndnDashJs.nameMod.Name.Component
 import typings.std.ArrayBuffer
 import typings.std.Uint8Array
@@ -30,16 +29,20 @@ object Name extends js.Object {
     def this(value: typings.ndnDashJs.blobMod.Blob) = this()
     def this(value: ArrayBuffer) = this()
     def this(value: Uint8Array) = this()
-    def this(value: String, `type`: ComponentType) = this()
-    def this(value: js.Array[Double], `type`: ComponentType) = this()
-    def this(value: typings.ndnDashJs.blobMod.Blob, `type`: ComponentType) = this()
-    def this(value: ArrayBuffer, `type`: ComponentType) = this()
-    def this(value: Uint8Array, `type`: ComponentType) = this()
-    def this(value: String, `type`: ComponentType, otherTypeCode: Double) = this()
-    def this(value: js.Array[Double], `type`: ComponentType, otherTypeCode: Double) = this()
-    def this(value: typings.ndnDashJs.blobMod.Blob, `type`: ComponentType, otherTypeCode: Double) = this()
-    def this(value: ArrayBuffer, `type`: ComponentType, otherTypeCode: Double) = this()
-    def this(value: Uint8Array, `type`: ComponentType, otherTypeCode: Double) = this()
+    def this(value: String, `type`: typings.ndnDashJs.nameMod.ComponentType) = this()
+    def this(value: js.Array[Double], `type`: typings.ndnDashJs.nameMod.ComponentType) = this()
+    def this(value: typings.ndnDashJs.blobMod.Blob, `type`: typings.ndnDashJs.nameMod.ComponentType) = this()
+    def this(value: ArrayBuffer, `type`: typings.ndnDashJs.nameMod.ComponentType) = this()
+    def this(value: Uint8Array, `type`: typings.ndnDashJs.nameMod.ComponentType) = this()
+    def this(value: String, `type`: typings.ndnDashJs.nameMod.ComponentType, otherTypeCode: Double) = this()
+    def this(value: js.Array[Double], `type`: typings.ndnDashJs.nameMod.ComponentType, otherTypeCode: Double) = this()
+    def this(
+      value: typings.ndnDashJs.blobMod.Blob,
+      `type`: typings.ndnDashJs.nameMod.ComponentType,
+      otherTypeCode: Double
+    ) = this()
+    def this(value: ArrayBuffer, `type`: typings.ndnDashJs.nameMod.ComponentType, otherTypeCode: Double) = this()
+    def this(value: Uint8Array, `type`: typings.ndnDashJs.nameMod.ComponentType, otherTypeCode: Double) = this()
   }
   
   def fromEscapedString(uri: String): typings.ndnDashJs.nameMod.Name = js.native
@@ -48,8 +51,8 @@ object Name extends js.Object {
   object Component extends js.Object {
     def fromImplicitSha256Digest(digest: typings.ndnDashJs.blobMod.Blob): typings.ndnDashJs.nameMod.Name.Component = js.native
     def fromNumber(number: Double): typings.ndnDashJs.nameMod.Name.Component = js.native
-    def fromNumber(number: Double, `type`: ComponentType): typings.ndnDashJs.nameMod.Name.Component = js.native
-    def fromNumber(number: Double, `type`: ComponentType, otherTypeCode: Double): typings.ndnDashJs.nameMod.Name.Component = js.native
+    def fromNumber(number: Double, `type`: typings.ndnDashJs.nameMod.ComponentType): typings.ndnDashJs.nameMod.Name.Component = js.native
+    def fromNumber(number: Double, `type`: typings.ndnDashJs.nameMod.ComponentType, otherTypeCode: Double): typings.ndnDashJs.nameMod.Name.Component = js.native
     def fromNumberWithMarker(number: Double, marker: Double): typings.ndnDashJs.nameMod.Name.Component = js.native
     def fromParametersSha256Digest(digest: typings.ndnDashJs.blobMod.Blob): typings.ndnDashJs.nameMod.Name.Component = js.native
     def fromSegment(segment: Double): typings.ndnDashJs.nameMod.Name.Component = js.native

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait TypeString extends js.Object
 
+object TypeString {
+  @scala.inline
+  def JS: typings.htmlDashWebpackDashTagsDashPlugin.htmlDashWebpackDashTagsDashPluginStrings.JS = this.cast("js")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def css: typings.htmlDashWebpackDashTagsDashPlugin.htmlDashWebpackDashTagsDashPluginStrings.css = this.cast("css")
+}
+

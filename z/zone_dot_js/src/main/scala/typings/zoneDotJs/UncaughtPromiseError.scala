@@ -23,8 +23,8 @@ object UncaughtPromiseError {
     zone: Zone,
     stack: String = null
   ): UncaughtPromiseError = {
-    val __obj = js.Dynamic.literal(message = message, name = name, promise = promise, rejection = rejection, task = task, zone = zone)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any], rejection = rejection.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any], zone = zone.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[UncaughtPromiseError]
   }
 }

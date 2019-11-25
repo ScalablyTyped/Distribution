@@ -21,8 +21,8 @@ object Namespace {
   @scala.inline
   def apply(namespaceName: String = null, servingVisibility: String = null): Namespace = {
     val __obj = js.Dynamic.literal()
-    if (namespaceName != null) __obj.updateDynamic("namespaceName")(namespaceName)
-    if (servingVisibility != null) __obj.updateDynamic("servingVisibility")(servingVisibility)
+    if (namespaceName != null) __obj.updateDynamic("namespaceName")(namespaceName.asInstanceOf[js.Any])
+    if (servingVisibility != null) __obj.updateDynamic("servingVisibility")(servingVisibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[Namespace]
   }
 }

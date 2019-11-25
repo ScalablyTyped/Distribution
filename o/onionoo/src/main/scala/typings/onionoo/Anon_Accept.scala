@@ -13,8 +13,8 @@ object Anon_Accept {
   @scala.inline
   def apply(accept: js.Array[String] = null, reject: js.Array[String] = null): Anon_Accept = {
     val __obj = js.Dynamic.literal()
-    if (accept != null) __obj.updateDynamic("accept")(accept)
-    if (reject != null) __obj.updateDynamic("reject")(reject)
+    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
+    if (reject != null) __obj.updateDynamic("reject")(reject.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Accept]
   }
 }

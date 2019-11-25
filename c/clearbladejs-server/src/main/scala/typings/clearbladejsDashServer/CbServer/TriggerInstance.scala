@@ -19,7 +19,7 @@ object TriggerInstance {
     name: String,
     systemKey: String
   ): TriggerInstance = {
-    val __obj = js.Dynamic.literal(Delete = js.Any.fromFunction1(Delete), Update = js.Any.fromFunction2(Update), name = name, systemKey = systemKey)
+    val __obj = js.Dynamic.literal(Delete = js.Any.fromFunction1(Delete), Update = js.Any.fromFunction2(Update), name = name.asInstanceOf[js.Any], systemKey = systemKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TriggerInstance]
   }

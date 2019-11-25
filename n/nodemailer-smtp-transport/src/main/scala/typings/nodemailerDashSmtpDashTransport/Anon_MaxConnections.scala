@@ -37,11 +37,11 @@ object Anon_MaxConnections {
     rateLimit: js.UndefOr[Boolean] = js.undefined
   ): Anon_MaxConnections = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxConnections)) __obj.updateDynamic("maxConnections")(maxConnections)
-    if (!js.isUndefined(maxMessages)) __obj.updateDynamic("maxMessages")(maxMessages)
-    if (!js.isUndefined(pool)) __obj.updateDynamic("pool")(pool)
-    if (!js.isUndefined(rateDelta)) __obj.updateDynamic("rateDelta")(rateDelta)
-    if (!js.isUndefined(rateLimit)) __obj.updateDynamic("rateLimit")(rateLimit)
+    if (!js.isUndefined(maxConnections)) __obj.updateDynamic("maxConnections")(maxConnections.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxMessages)) __obj.updateDynamic("maxMessages")(maxMessages.asInstanceOf[js.Any])
+    if (!js.isUndefined(pool)) __obj.updateDynamic("pool")(pool.asInstanceOf[js.Any])
+    if (!js.isUndefined(rateDelta)) __obj.updateDynamic("rateDelta")(rateDelta.asInstanceOf[js.Any])
+    if (!js.isUndefined(rateLimit)) __obj.updateDynamic("rateLimit")(rateLimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MaxConnections]
   }
 }

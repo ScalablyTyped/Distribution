@@ -25,8 +25,8 @@ object TagFeedResponseLikersItem {
     username: String,
     profile_pic_id: String = null
   ): TagFeedResponseLikersItem = {
-    val __obj = js.Dynamic.literal(full_name = full_name, is_private = is_private, is_verified = is_verified, pk = pk, profile_pic_url = profile_pic_url, username = username)
-    if (profile_pic_id != null) __obj.updateDynamic("profile_pic_id")(profile_pic_id)
+    val __obj = js.Dynamic.literal(full_name = full_name.asInstanceOf[js.Any], is_private = is_private.asInstanceOf[js.Any], is_verified = is_verified.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], profile_pic_url = profile_pic_url.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    if (profile_pic_id != null) __obj.updateDynamic("profile_pic_id")(profile_pic_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagFeedResponseLikersItem]
   }
 }

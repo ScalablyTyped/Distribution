@@ -30,16 +30,16 @@ object KssOptions {
     mask: String | RegExp = null,
     verbose: js.UndefOr[Boolean] = js.undefined
   ): KssOptions = {
-    val __obj = js.Dynamic.literal(source = source)
-    if (builder != null) __obj.updateDynamic("builder")(builder)
-    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone)
-    if (custom != null) __obj.updateDynamic("custom")(custom)
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header)
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    if (builder != null) __obj.updateDynamic("builder")(builder.asInstanceOf[js.Any])
+    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
     if (logErrorFunction != null) __obj.updateDynamic("logErrorFunction")(js.Any.fromFunction1(logErrorFunction))
-    if (!js.isUndefined(markdown)) __obj.updateDynamic("markdown")(markdown)
+    if (!js.isUndefined(markdown)) __obj.updateDynamic("markdown")(markdown.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[KssOptions]
   }
 }

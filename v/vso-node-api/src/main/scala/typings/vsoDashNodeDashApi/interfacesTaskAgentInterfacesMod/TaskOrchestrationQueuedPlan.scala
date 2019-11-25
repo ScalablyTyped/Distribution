@@ -30,7 +30,7 @@ object TaskOrchestrationQueuedPlan {
     queueTime: Date,
     scopeIdentifier: String
   ): TaskOrchestrationQueuedPlan = {
-    val __obj = js.Dynamic.literal(assignTime = assignTime, definition = definition, owner = owner, planGroup = planGroup, planId = planId, poolId = poolId, queuePosition = queuePosition, queueTime = queueTime, scopeIdentifier = scopeIdentifier)
+    val __obj = js.Dynamic.literal(assignTime = assignTime.asInstanceOf[js.Any], definition = definition.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], planGroup = planGroup.asInstanceOf[js.Any], planId = planId.asInstanceOf[js.Any], poolId = poolId.asInstanceOf[js.Any], queuePosition = queuePosition.asInstanceOf[js.Any], queueTime = queueTime.asInstanceOf[js.Any], scopeIdentifier = scopeIdentifier.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TaskOrchestrationQueuedPlan]
   }

@@ -31,8 +31,8 @@ object BridgeUptime {
     fingerprint: String,
     uptime: Partial[Record[`1_week` | `1_month` | `6_months` | `1_year` | `5_years`, Histogram]] = null
   ): BridgeUptime = {
-    val __obj = js.Dynamic.literal(fingerprint = fingerprint)
-    if (uptime != null) __obj.updateDynamic("uptime")(uptime)
+    val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any])
+    if (uptime != null) __obj.updateDynamic("uptime")(uptime.asInstanceOf[js.Any])
     __obj.asInstanceOf[BridgeUptime]
   }
 }

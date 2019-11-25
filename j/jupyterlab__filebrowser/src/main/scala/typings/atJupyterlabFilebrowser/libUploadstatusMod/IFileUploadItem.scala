@@ -26,7 +26,7 @@ trait IFileUploadItem extends js.Object {
 object IFileUploadItem {
   @scala.inline
   def apply(complete: Boolean, path: String, progress: Double): IFileUploadItem = {
-    val __obj = js.Dynamic.literal(complete = complete, path = path, progress = progress)
+    val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IFileUploadItem]
   }

@@ -37,7 +37,7 @@ object VersionInfo {
     parent: String,
     propertyIsEnumerable: PropertyKey => Boolean
   ): VersionInfo = {
-    val __obj = js.Dynamic.literal(access = access, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name, parent = parent, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[VersionInfo]
   }

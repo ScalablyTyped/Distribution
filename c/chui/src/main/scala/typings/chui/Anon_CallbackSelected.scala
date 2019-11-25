@@ -13,7 +13,7 @@ object Anon_CallbackSelected {
   @scala.inline
   def apply(callback: js.Function = null, selected: Int | Double = null): Anon_CallbackSelected = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
     if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CallbackSelected]
   }

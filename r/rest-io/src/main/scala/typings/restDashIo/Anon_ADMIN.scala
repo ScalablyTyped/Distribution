@@ -14,7 +14,7 @@ trait Anon_ADMIN extends js.Object {
 object Anon_ADMIN {
   @scala.inline
   def apply(ADMIN: String, MODERATOR: String, SUPER_USER: String, USER: String): Anon_ADMIN = {
-    val __obj = js.Dynamic.literal(ADMIN = ADMIN, MODERATOR = MODERATOR, SUPER_USER = SUPER_USER, USER = USER)
+    val __obj = js.Dynamic.literal(ADMIN = ADMIN.asInstanceOf[js.Any], MODERATOR = MODERATOR.asInstanceOf[js.Any], SUPER_USER = SUPER_USER.asInstanceOf[js.Any], USER = USER.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ADMIN]
   }

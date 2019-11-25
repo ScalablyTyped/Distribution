@@ -29,9 +29,9 @@ object ITextProps {
     tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any = null
   ): ITextProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(ellipsize)) __obj.updateDynamic("ellipsize")(ellipsize)
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(ellipsize)) __obj.updateDynamic("ellipsize")(ellipsize.asInstanceOf[js.Any])
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITextProps]
   }
 }

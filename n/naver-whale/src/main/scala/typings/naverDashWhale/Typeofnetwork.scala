@@ -19,7 +19,7 @@ object Typeofnetwork {
     onNavigated: NavigatedEvent,
     onRequestFinished: RequestFinishedEvent
   ): Typeofnetwork = {
-    val __obj = js.Dynamic.literal(getHAR = js.Any.fromFunction1(getHAR), onNavigated = onNavigated, onRequestFinished = onRequestFinished)
+    val __obj = js.Dynamic.literal(getHAR = js.Any.fromFunction1(getHAR), onNavigated = onNavigated.asInstanceOf[js.Any], onRequestFinished = onRequestFinished.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofnetwork]
   }

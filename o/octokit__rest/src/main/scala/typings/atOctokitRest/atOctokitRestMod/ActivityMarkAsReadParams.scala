@@ -15,7 +15,7 @@ object ActivityMarkAsReadParams {
   @scala.inline
   def apply(last_read_at: String = null): ActivityMarkAsReadParams = {
     val __obj = js.Dynamic.literal()
-    if (last_read_at != null) __obj.updateDynamic("last_read_at")(last_read_at)
+    if (last_read_at != null) __obj.updateDynamic("last_read_at")(last_read_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityMarkAsReadParams]
   }
 }

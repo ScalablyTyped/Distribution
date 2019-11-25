@@ -13,7 +13,7 @@ trait Anon_NNModified extends js.Object {
 object Anon_NNModified {
   @scala.inline
   def apply(n: Double, nModified: Double, ok: Double): Anon_NNModified = {
-    val __obj = js.Dynamic.literal(n = n, nModified = nModified, ok = ok)
+    val __obj = js.Dynamic.literal(n = n.asInstanceOf[js.Any], nModified = nModified.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NNModified]
   }

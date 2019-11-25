@@ -1,9 +1,6 @@
 package typings.joi.joiMod
 
 import typings.joi.Anon_Arrays
-import typings.joi.joiStrings.forbidden
-import typings.joi.joiStrings.optional
-import typings.joi.joiStrings.required
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +33,9 @@ trait ValidationOptions extends js.Object {
   /**
     * sets the default presence requirements. Supported modes: 'optional', 'required', and 'forbidden'. Defaults to 'optional'.
     */
-  var presence: js.UndefOr[optional | required | forbidden] = js.undefined
+  var presence: js.UndefOr[
+    typings.joi.joiStrings.optional | typings.joi.joiStrings.required | typings.joi.joiStrings.forbidden
+  ] = js.undefined
   /**
     * when true, ignores unknown keys with a function value. Defaults to false.
     */
@@ -59,19 +58,19 @@ object ValidationOptions {
     convert: js.UndefOr[Boolean] = js.undefined,
     language: LanguageRootOptions = null,
     noDefaults: js.UndefOr[Boolean] = js.undefined,
-    presence: optional | required | forbidden = null,
+    presence: typings.joi.joiStrings.optional | typings.joi.joiStrings.required | typings.joi.joiStrings.forbidden = null,
     skipFunctions: js.UndefOr[Boolean] = js.undefined,
     stripUnknown: Boolean | Anon_Arrays = null
   ): ValidationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(abortEarly)) __obj.updateDynamic("abortEarly")(abortEarly)
-    if (!js.isUndefined(allowUnknown)) __obj.updateDynamic("allowUnknown")(allowUnknown)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (!js.isUndefined(convert)) __obj.updateDynamic("convert")(convert)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (!js.isUndefined(noDefaults)) __obj.updateDynamic("noDefaults")(noDefaults)
+    if (!js.isUndefined(abortEarly)) __obj.updateDynamic("abortEarly")(abortEarly.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowUnknown)) __obj.updateDynamic("allowUnknown")(allowUnknown.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(convert)) __obj.updateDynamic("convert")(convert.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (!js.isUndefined(noDefaults)) __obj.updateDynamic("noDefaults")(noDefaults.asInstanceOf[js.Any])
     if (presence != null) __obj.updateDynamic("presence")(presence.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipFunctions)) __obj.updateDynamic("skipFunctions")(skipFunctions)
+    if (!js.isUndefined(skipFunctions)) __obj.updateDynamic("skipFunctions")(skipFunctions.asInstanceOf[js.Any])
     if (stripUnknown != null) __obj.updateDynamic("stripUnknown")(stripUnknown.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationOptions]
   }

@@ -12,7 +12,7 @@ trait Anon_Expressive extends js.Object {
 object Anon_Expressive {
   @scala.inline
   def apply(expressive: String, productive: String): Anon_Expressive = {
-    val __obj = js.Dynamic.literal(expressive = expressive, productive = productive)
+    val __obj = js.Dynamic.literal(expressive = expressive.asInstanceOf[js.Any], productive = productive.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Expressive]
   }

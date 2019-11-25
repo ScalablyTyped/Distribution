@@ -25,12 +25,12 @@ object PartialTypeAction {
     selected: String = null
   ): PartialTypeAction = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active)
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (disabledBackground != null) __obj.updateDynamic("disabledBackground")(disabledBackground)
-    if (hover != null) __obj.updateDynamic("hover")(hover)
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (disabledBackground != null) __obj.updateDynamic("disabledBackground")(disabledBackground.asInstanceOf[js.Any])
+    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
     if (hoverOpacity != null) __obj.updateDynamic("hoverOpacity")(hoverOpacity.asInstanceOf[js.Any])
-    if (selected != null) __obj.updateDynamic("selected")(selected)
+    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialTypeAction]
   }
 }

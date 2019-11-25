@@ -17,9 +17,9 @@ object Volume {
   @scala.inline
   def apply(name: String = null, sizeGb: Int | Double = null, volumeType: String = null): Volume = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (sizeGb != null) __obj.updateDynamic("sizeGb")(sizeGb.asInstanceOf[js.Any])
-    if (volumeType != null) __obj.updateDynamic("volumeType")(volumeType)
+    if (volumeType != null) __obj.updateDynamic("volumeType")(volumeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Volume]
   }
 }

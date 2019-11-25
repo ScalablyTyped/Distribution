@@ -19,8 +19,8 @@ object Anon_PropNameView {
     viewModel: js.Object,
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Anon_PropNameView = {
-    val __obj = js.Dynamic.literal(view = view, viewModel = viewModel)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(view = view.asInstanceOf[js.Any], viewModel = viewModel.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_PropNameView]
   }
 }

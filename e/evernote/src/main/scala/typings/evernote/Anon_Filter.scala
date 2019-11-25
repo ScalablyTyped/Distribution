@@ -21,10 +21,10 @@ object Anon_Filter {
     referenceUri: String = null
   ): Anon_Filter = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (noteGuid != null) __obj.updateDynamic("noteGuid")(noteGuid)
-    if (plainText != null) __obj.updateDynamic("plainText")(plainText)
-    if (referenceUri != null) __obj.updateDynamic("referenceUri")(referenceUri)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (noteGuid != null) __obj.updateDynamic("noteGuid")(noteGuid.asInstanceOf[js.Any])
+    if (plainText != null) __obj.updateDynamic("plainText")(plainText.asInstanceOf[js.Any])
+    if (referenceUri != null) __obj.updateDynamic("referenceUri")(referenceUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Filter]
   }
 }

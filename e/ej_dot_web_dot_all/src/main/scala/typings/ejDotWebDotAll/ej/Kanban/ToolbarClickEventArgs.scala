@@ -48,15 +48,15 @@ object ToolbarClickEventArgs {
     `type`: String = null
   ): ToolbarClickEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (currentTarget != null) __obj.updateDynamic("currentTarget")(currentTarget)
-    if (itemId != null) __obj.updateDynamic("itemId")(itemId)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (currentTarget != null) __obj.updateDynamic("currentTarget")(currentTarget.asInstanceOf[js.Any])
+    if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
     if (itemIndex != null) __obj.updateDynamic("itemIndex")(itemIndex.asInstanceOf[js.Any])
-    if (itemName != null) __obj.updateDynamic("itemName")(itemName)
-    if (itemText != null) __obj.updateDynamic("itemText")(itemText)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (toolbarData != null) __obj.updateDynamic("toolbarData")(toolbarData)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (itemName != null) __obj.updateDynamic("itemName")(itemName.asInstanceOf[js.Any])
+    if (itemText != null) __obj.updateDynamic("itemText")(itemText.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (toolbarData != null) __obj.updateDynamic("toolbarData")(toolbarData.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarClickEventArgs]
   }
 }

@@ -25,7 +25,7 @@ trait ListStreamsOutput extends OutputTypesUnion {
 object ListStreamsOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, HasMoreStreams: Boolean, StreamNames: js.Array[String]): ListStreamsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, HasMoreStreams = HasMoreStreams, StreamNames = StreamNames)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], HasMoreStreams = HasMoreStreams.asInstanceOf[js.Any], StreamNames = StreamNames.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListStreamsOutput]
   }

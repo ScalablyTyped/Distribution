@@ -26,11 +26,11 @@ object Anon_Channel {
     path: String = null,
     tileDiscardPolicy: TileDiscardPolicy = null
   ): Anon_Channel = {
-    val __obj = js.Dynamic.literal(channel = channel, url = url.asInstanceOf[js.Any])
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
     if (maximumLevel != null) __obj.updateDynamic("maximumLevel")(maximumLevel.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (tileDiscardPolicy != null) __obj.updateDynamic("tileDiscardPolicy")(tileDiscardPolicy)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (tileDiscardPolicy != null) __obj.updateDynamic("tileDiscardPolicy")(tileDiscardPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Channel]
   }
 }

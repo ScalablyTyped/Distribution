@@ -19,8 +19,8 @@ object DropPrimaryIndexOptions {
   @scala.inline
   def apply(ignoreIfNotExists: js.UndefOr[Boolean] = js.undefined, name: String = null): DropPrimaryIndexOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreIfNotExists)) __obj.updateDynamic("ignoreIfNotExists")(ignoreIfNotExists)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(ignoreIfNotExists)) __obj.updateDynamic("ignoreIfNotExists")(ignoreIfNotExists.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropPrimaryIndexOptions]
   }
 }

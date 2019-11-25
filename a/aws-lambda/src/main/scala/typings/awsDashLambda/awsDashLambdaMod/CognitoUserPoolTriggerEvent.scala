@@ -54,8 +54,8 @@ object CognitoUserPoolTriggerEvent {
     version: Double,
     userName: String = null
   ): CognitoUserPoolTriggerEvent = {
-    val __obj = js.Dynamic.literal(callerContext = callerContext, region = region, request = request, response = response, triggerSource = triggerSource.asInstanceOf[js.Any], userPoolId = userPoolId, version = version)
-    if (userName != null) __obj.updateDynamic("userName")(userName)
+    val __obj = js.Dynamic.literal(callerContext = callerContext.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], triggerSource = triggerSource.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CognitoUserPoolTriggerEvent]
   }
 }

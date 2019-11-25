@@ -58,14 +58,14 @@ object SheetProperties {
     title: String = null
   ): SheetProperties = {
     val __obj = js.Dynamic.literal()
-    if (gridProperties != null) __obj.updateDynamic("gridProperties")(gridProperties)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (gridProperties != null) __obj.updateDynamic("gridProperties")(gridProperties.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightToLeft)) __obj.updateDynamic("rightToLeft")(rightToLeft)
+    if (!js.isUndefined(rightToLeft)) __obj.updateDynamic("rightToLeft")(rightToLeft.asInstanceOf[js.Any])
     if (sheetId != null) __obj.updateDynamic("sheetId")(sheetId.asInstanceOf[js.Any])
-    if (sheetType != null) __obj.updateDynamic("sheetType")(sheetType)
-    if (tabColor != null) __obj.updateDynamic("tabColor")(tabColor)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (sheetType != null) __obj.updateDynamic("sheetType")(sheetType.asInstanceOf[js.Any])
+    if (tabColor != null) __obj.updateDynamic("tabColor")(tabColor.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SheetProperties]
   }
 }

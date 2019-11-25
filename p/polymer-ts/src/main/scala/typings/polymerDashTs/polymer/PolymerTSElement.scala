@@ -23,10 +23,10 @@ object PolymerTSElement {
     template: String = null
   ): PolymerTSElement = {
     val __obj = js.Dynamic.literal()
-    if ($custom_cons != null) __obj.updateDynamic("$custom_cons")($custom_cons)
-    if ($custom_cons_args != null) __obj.updateDynamic("$custom_cons_args")($custom_cons_args)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (template != null) __obj.updateDynamic("template")(template)
+    if ($custom_cons != null) __obj.updateDynamic("$custom_cons")($custom_cons.asInstanceOf[js.Any])
+    if ($custom_cons_args != null) __obj.updateDynamic("$custom_cons_args")($custom_cons_args.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolymerTSElement]
   }
 }

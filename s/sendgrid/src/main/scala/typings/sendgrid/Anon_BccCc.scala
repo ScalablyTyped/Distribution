@@ -27,7 +27,7 @@ object Anon_BccCc {
     substitutions: js.Any,
     to: js.Any
   ): Anon_BccCc = {
-    val __obj = js.Dynamic.literal(bcc = bcc, cc = cc, custom_args = custom_args, headers = headers, send_at = send_at, subject = subject, substitutions = substitutions, to = to)
+    val __obj = js.Dynamic.literal(bcc = bcc.asInstanceOf[js.Any], cc = cc.asInstanceOf[js.Any], custom_args = custom_args.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], send_at = send_at.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], substitutions = substitutions.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BccCc]
   }

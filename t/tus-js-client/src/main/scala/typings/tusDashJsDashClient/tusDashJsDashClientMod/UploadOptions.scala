@@ -50,23 +50,23 @@ object UploadOptions {
     uploadUrl: String = null,
     withCredentials: js.UndefOr[Boolean] = js.undefined
   ): UploadOptions = {
-    val __obj = js.Dynamic.literal(endpoint = endpoint)
+    val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any])
     if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
     if (fingerprint != null) __obj.updateDynamic("fingerprint")(js.Any.fromFunction2(fingerprint))
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (onChunkComplete != null) __obj.updateDynamic("onChunkComplete")(js.Any.fromFunction3(onChunkComplete))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction2(onProgress))
     if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction0(onSuccess))
-    if (!js.isUndefined(overridePatchMethod)) __obj.updateDynamic("overridePatchMethod")(overridePatchMethod)
-    if (!js.isUndefined(removeFingerprintOnSuccess)) __obj.updateDynamic("removeFingerprintOnSuccess")(removeFingerprintOnSuccess)
-    if (!js.isUndefined(resume)) __obj.updateDynamic("resume")(resume)
-    if (retryDelays != null) __obj.updateDynamic("retryDelays")(retryDelays)
-    if (!js.isUndefined(uploadLengthDeferred)) __obj.updateDynamic("uploadLengthDeferred")(uploadLengthDeferred)
+    if (!js.isUndefined(overridePatchMethod)) __obj.updateDynamic("overridePatchMethod")(overridePatchMethod.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeFingerprintOnSuccess)) __obj.updateDynamic("removeFingerprintOnSuccess")(removeFingerprintOnSuccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(resume)) __obj.updateDynamic("resume")(resume.asInstanceOf[js.Any])
+    if (retryDelays != null) __obj.updateDynamic("retryDelays")(retryDelays.asInstanceOf[js.Any])
+    if (!js.isUndefined(uploadLengthDeferred)) __obj.updateDynamic("uploadLengthDeferred")(uploadLengthDeferred.asInstanceOf[js.Any])
     if (uploadSize != null) __obj.updateDynamic("uploadSize")(uploadSize.asInstanceOf[js.Any])
-    if (uploadUrl != null) __obj.updateDynamic("uploadUrl")(uploadUrl)
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    if (uploadUrl != null) __obj.updateDynamic("uploadUrl")(uploadUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadOptions]
   }
 }

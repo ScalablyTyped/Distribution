@@ -30,10 +30,10 @@ object ResourceGroupPatchable {
     tags: StringDictionary[String] = null
   ): ResourceGroupPatchable = {
     val __obj = js.Dynamic.literal()
-    if (managedBy != null) __obj.updateDynamic("managedBy")(managedBy)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (managedBy != null) __obj.updateDynamic("managedBy")(managedBy.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceGroupPatchable]
   }
 }

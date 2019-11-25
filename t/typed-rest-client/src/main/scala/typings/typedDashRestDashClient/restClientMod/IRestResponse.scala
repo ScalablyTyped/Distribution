@@ -13,7 +13,7 @@ trait IRestResponse[T] extends js.Object {
 object IRestResponse {
   @scala.inline
   def apply[T](headers: js.Object, statusCode: Double, result: T = null): IRestResponse[T] = {
-    val __obj = js.Dynamic.literal(headers = headers, statusCode = statusCode)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRestResponse[T]]
   }

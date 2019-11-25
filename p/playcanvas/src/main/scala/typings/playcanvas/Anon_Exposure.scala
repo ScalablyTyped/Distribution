@@ -42,7 +42,7 @@ object Anon_Exposure {
     tonemapping: Double,
     skybox: Int | Double = null
   ): Anon_Exposure = {
-    val __obj = js.Dynamic.literal(exposure = exposure, fog = fog, fog_color = fog_color, fog_density = fog_density, fog_end = fog_end, fog_start = fog_start, gamma_correction = gamma_correction, global_ambient = global_ambient, lightmapMaxResolution = lightmapMaxResolution, lightmapMode = lightmapMode, lightmapSizeMultiplier = lightmapSizeMultiplier, skyboxIntensity = skyboxIntensity, skyboxMip = skyboxMip, tonemapping = tonemapping)
+    val __obj = js.Dynamic.literal(exposure = exposure.asInstanceOf[js.Any], fog = fog.asInstanceOf[js.Any], fog_color = fog_color.asInstanceOf[js.Any], fog_density = fog_density.asInstanceOf[js.Any], fog_end = fog_end.asInstanceOf[js.Any], fog_start = fog_start.asInstanceOf[js.Any], gamma_correction = gamma_correction.asInstanceOf[js.Any], global_ambient = global_ambient.asInstanceOf[js.Any], lightmapMaxResolution = lightmapMaxResolution.asInstanceOf[js.Any], lightmapMode = lightmapMode.asInstanceOf[js.Any], lightmapSizeMultiplier = lightmapSizeMultiplier.asInstanceOf[js.Any], skyboxIntensity = skyboxIntensity.asInstanceOf[js.Any], skyboxMip = skyboxMip.asInstanceOf[js.Any], tonemapping = tonemapping.asInstanceOf[js.Any])
     if (skybox != null) __obj.updateDynamic("skybox")(skybox.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Exposure]
   }

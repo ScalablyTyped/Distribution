@@ -22,3 +22,18 @@ import scala.scalajs.js.annotation._
 */
 trait EventNames extends js.Object
 
+object EventNames {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def failure: typings.memcached.memcachedStrings.failure = this.cast("failure")
+  @scala.inline
+  def issue: typings.memcached.memcachedStrings.issue = this.cast("issue")
+  @scala.inline
+  def reconnect: typings.memcached.memcachedStrings.reconnect = this.cast("reconnect")
+  @scala.inline
+  def reconnecting: typings.memcached.memcachedStrings.reconnecting = this.cast("reconnecting")
+  @scala.inline
+  def remove: typings.memcached.memcachedStrings.remove = this.cast("remove")
+}
+

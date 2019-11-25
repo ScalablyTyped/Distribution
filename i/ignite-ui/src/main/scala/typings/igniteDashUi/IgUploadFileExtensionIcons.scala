@@ -36,10 +36,10 @@ object IgUploadFileExtensionIcons {
     ext: js.Array[_] = null
   ): IgUploadFileExtensionIcons = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (css != null) __obj.updateDynamic("css")(css)
-    if (!js.isUndefined(`def`)) __obj.updateDynamic("def")(`def`)
-    if (ext != null) __obj.updateDynamic("ext")(ext)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
+    if (!js.isUndefined(`def`)) __obj.updateDynamic("def")(`def`.asInstanceOf[js.Any])
+    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgUploadFileExtensionIcons]
   }
 }

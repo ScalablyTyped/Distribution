@@ -20,9 +20,9 @@ object ExportUsersOptions {
     limit: Int | Double = null
   ): ExportUsersOptions = {
     val __obj = js.Dynamic.literal()
-    if (connection_id != null) __obj.updateDynamic("connection_id")(connection_id)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (connection_id != null) __obj.updateDynamic("connection_id")(connection_id.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportUsersOptions]
   }

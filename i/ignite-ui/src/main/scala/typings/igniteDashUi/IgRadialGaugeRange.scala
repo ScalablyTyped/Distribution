@@ -76,16 +76,16 @@ object IgRadialGaugeRange {
     strokeThickness: Int | Double = null
   ): IgRadialGaugeRange = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (brush != null) __obj.updateDynamic("brush")(brush)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (brush != null) __obj.updateDynamic("brush")(brush.asInstanceOf[js.Any])
     if (endValue != null) __obj.updateDynamic("endValue")(endValue.asInstanceOf[js.Any])
     if (innerEndExtent != null) __obj.updateDynamic("innerEndExtent")(innerEndExtent.asInstanceOf[js.Any])
     if (innerStartExtent != null) __obj.updateDynamic("innerStartExtent")(innerStartExtent.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (outerEndExtent != null) __obj.updateDynamic("outerEndExtent")(outerEndExtent.asInstanceOf[js.Any])
     if (outerStartExtent != null) __obj.updateDynamic("outerStartExtent")(outerStartExtent.asInstanceOf[js.Any])
-    if (outline != null) __obj.updateDynamic("outline")(outline)
-    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove)
+    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
+    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
     if (startValue != null) __obj.updateDynamic("startValue")(startValue.asInstanceOf[js.Any])
     if (strokeThickness != null) __obj.updateDynamic("strokeThickness")(strokeThickness.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgRadialGaugeRange]

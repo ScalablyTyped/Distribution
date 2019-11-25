@@ -13,7 +13,7 @@ trait Anon_AnimationStateHeight extends js.Object {
 object Anon_AnimationStateHeight {
   @scala.inline
   def apply(animationState: AnimationStates, height: String): Anon_AnimationStateHeight = {
-    val __obj = js.Dynamic.literal(animationState = animationState, height = height)
+    val __obj = js.Dynamic.literal(animationState = animationState.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AnimationStateHeight]
   }

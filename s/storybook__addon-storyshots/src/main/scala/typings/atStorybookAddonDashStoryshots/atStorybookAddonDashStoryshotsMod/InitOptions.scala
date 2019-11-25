@@ -33,14 +33,14 @@ object InitOptions {
     test: /* options */ Anon_Context => js.UndefOr[Unit | js.Promise[Unit]] = null
   ): InitOptions[Rendered] = {
     val __obj = js.Dynamic.literal()
-    if (configPath != null) __obj.updateDynamic("configPath")(configPath)
-    if (framework != null) __obj.updateDynamic("framework")(framework)
-    if (integrityOptions != null) __obj.updateDynamic("integrityOptions")(integrityOptions)
+    if (configPath != null) __obj.updateDynamic("configPath")(configPath.asInstanceOf[js.Any])
+    if (framework != null) __obj.updateDynamic("framework")(framework.asInstanceOf[js.Any])
+    if (integrityOptions != null) __obj.updateDynamic("integrityOptions")(integrityOptions.asInstanceOf[js.Any])
     if (renderer != null) __obj.updateDynamic("renderer")(js.Any.fromFunction1(renderer))
     if (serializer != null) __obj.updateDynamic("serializer")(js.Any.fromFunction1(serializer))
-    if (storyKindRegex != null) __obj.updateDynamic("storyKindRegex")(storyKindRegex)
-    if (storyNameRegex != null) __obj.updateDynamic("storyNameRegex")(storyNameRegex)
-    if (suite != null) __obj.updateDynamic("suite")(suite)
+    if (storyKindRegex != null) __obj.updateDynamic("storyKindRegex")(storyKindRegex.asInstanceOf[js.Any])
+    if (storyNameRegex != null) __obj.updateDynamic("storyNameRegex")(storyNameRegex.asInstanceOf[js.Any])
+    if (suite != null) __obj.updateDynamic("suite")(suite.asInstanceOf[js.Any])
     if (test != null) __obj.updateDynamic("test")(js.Any.fromFunction1(test))
     __obj.asInstanceOf[InitOptions[Rendered]]
   }

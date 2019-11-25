@@ -19,10 +19,10 @@ object LoginUrl {
     forward_text: String = null,
     request_write_acces: js.UndefOr[Boolean] = js.undefined
   ): LoginUrl = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (bot_username != null) __obj.updateDynamic("bot_username")(bot_username)
-    if (forward_text != null) __obj.updateDynamic("forward_text")(forward_text)
-    if (!js.isUndefined(request_write_acces)) __obj.updateDynamic("request_write_acces")(request_write_acces)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (bot_username != null) __obj.updateDynamic("bot_username")(bot_username.asInstanceOf[js.Any])
+    if (forward_text != null) __obj.updateDynamic("forward_text")(forward_text.asInstanceOf[js.Any])
+    if (!js.isUndefined(request_write_acces)) __obj.updateDynamic("request_write_acces")(request_write_acces.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginUrl]
   }
 }

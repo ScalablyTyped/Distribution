@@ -24,12 +24,12 @@ object DomainAlias {
     verified: js.UndefOr[Boolean] = js.undefined
   ): DomainAlias = {
     val __obj = js.Dynamic.literal()
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
-    if (domainAliasName != null) __obj.updateDynamic("domainAliasName")(domainAliasName)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (parentDomainName != null) __obj.updateDynamic("parentDomainName")(parentDomainName)
-    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified)
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
+    if (domainAliasName != null) __obj.updateDynamic("domainAliasName")(domainAliasName.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (parentDomainName != null) __obj.updateDynamic("parentDomainName")(parentDomainName.asInstanceOf[js.Any])
+    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainAlias]
   }
 }

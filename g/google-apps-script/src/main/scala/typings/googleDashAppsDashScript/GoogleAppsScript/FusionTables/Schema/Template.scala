@@ -24,11 +24,11 @@ object Template {
     templateId: Int | Double = null
   ): Template = {
     val __obj = js.Dynamic.literal()
-    if (automaticColumnNames != null) __obj.updateDynamic("automaticColumnNames")(automaticColumnNames)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (tableId != null) __obj.updateDynamic("tableId")(tableId)
+    if (automaticColumnNames != null) __obj.updateDynamic("automaticColumnNames")(automaticColumnNames.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (tableId != null) __obj.updateDynamic("tableId")(tableId.asInstanceOf[js.Any])
     if (templateId != null) __obj.updateDynamic("templateId")(templateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Template]
   }

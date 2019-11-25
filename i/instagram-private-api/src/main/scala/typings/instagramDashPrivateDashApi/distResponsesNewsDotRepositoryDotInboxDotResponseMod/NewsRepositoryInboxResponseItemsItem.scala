@@ -37,7 +37,7 @@ object NewsRepositoryInboxResponseItemsItem {
     uuid: String,
     value: Double
   ): NewsRepositoryInboxResponseItemsItem = {
-    val __obj = js.Dynamic.literal(algorithm = algorithm, caption = caption, followed_by = followed_by, icon = icon, is_new_suggestion = is_new_suggestion, large_urls = large_urls, media_ids = media_ids, media_infos = media_infos, social_context = social_context, thumbnail_urls = thumbnail_urls, user = user, uuid = uuid, value = value)
+    val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], followed_by = followed_by.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], is_new_suggestion = is_new_suggestion.asInstanceOf[js.Any], large_urls = large_urls.asInstanceOf[js.Any], media_ids = media_ids.asInstanceOf[js.Any], media_infos = media_infos.asInstanceOf[js.Any], social_context = social_context.asInstanceOf[js.Any], thumbnail_urls = thumbnail_urls.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NewsRepositoryInboxResponseItemsItem]
   }

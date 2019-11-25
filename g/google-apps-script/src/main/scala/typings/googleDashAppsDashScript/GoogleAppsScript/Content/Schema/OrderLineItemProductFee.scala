@@ -13,8 +13,8 @@ object OrderLineItemProductFee {
   @scala.inline
   def apply(amount: Price = null, name: String = null): OrderLineItemProductFee = {
     val __obj = js.Dynamic.literal()
-    if (amount != null) __obj.updateDynamic("amount")(amount)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderLineItemProductFee]
   }
 }

@@ -19,7 +19,7 @@ class Decoder_ () extends Transform {
   // #region Duplex methods overloadings
   def addListener[K /* <: String */](
     event: K,
-    listener: /* import warning: ImportType.apply Failed type conversion: ebml.ebml.Decoder.EventListenerMap[K] */ js.Any
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.Decoder.EventListenerMap[K] */ js.Any
   ): this.type = js.native
   def end(chunk: Buffer): Unit = js.native
   def end(chunk: Buffer, cb: js.Function0[Unit]): Unit = js.native
@@ -27,26 +27,26 @@ class Decoder_ () extends Transform {
   def end(chunk: Buffer, encoding: String, cb: js.Function0[Unit]): Unit = js.native
   def on[K /* <: String */](
     event: K,
-    listener: /* import warning: ImportType.apply Failed type conversion: ebml.ebml.Decoder.EventListenerMap[K] */ js.Any
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.Decoder.EventListenerMap[K] */ js.Any
   ): this.type = js.native
   def once[K /* <: String */](
     event: K,
-    listener: /* import warning: ImportType.apply Failed type conversion: ebml.ebml.Decoder.EventListenerMap[K] */ js.Any
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.Decoder.EventListenerMap[K] */ js.Any
   ): this.type = js.native
   def prependListener[K /* <: String */](
     event: K,
-    listener: /* import warning: ImportType.apply Failed type conversion: ebml.ebml.Decoder.EventListenerMap[K] */ js.Any
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.Decoder.EventListenerMap[K] */ js.Any
   ): this.type = js.native
   def prependOnceListener[K /* <: String */](
     event: K,
-    listener: /* import warning: ImportType.apply Failed type conversion: ebml.ebml.Decoder.EventListenerMap[K] */ js.Any
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.Decoder.EventListenerMap[K] */ js.Any
   ): this.type = js.native
   def readContent(): Boolean = js.native
   def readSize(): Boolean = js.native
   def readTag(): Boolean = js.native
   def removeListener[K /* <: String */](
     event: K,
-    listener: /* import warning: ImportType.apply Failed type conversion: ebml.ebml.Decoder.EventListenerMap[K] */ js.Any
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: ebml.ebml.Decoder.EventListenerMap[K] */ js.Any
   ): this.type = js.native
   def write(chunk: Buffer): Boolean = js.native
   def write(chunk: Buffer, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native

@@ -27,8 +27,8 @@ object _UnmarshalledItemResponse {
     EventsItemResponse: StringDictionary[_UnmarshalledEventItemResponse] = null
   ): _UnmarshalledItemResponse = {
     val __obj = js.Dynamic.literal()
-    if (EndpointItemResponse != null) __obj.updateDynamic("EndpointItemResponse")(EndpointItemResponse)
-    if (EventsItemResponse != null) __obj.updateDynamic("EventsItemResponse")(EventsItemResponse)
+    if (EndpointItemResponse != null) __obj.updateDynamic("EndpointItemResponse")(EndpointItemResponse.asInstanceOf[js.Any])
+    if (EventsItemResponse != null) __obj.updateDynamic("EventsItemResponse")(EventsItemResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledItemResponse]
   }
 }

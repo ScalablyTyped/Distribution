@@ -71,12 +71,12 @@ object BoostOptions {
     usePreallocated: js.UndefOr[Boolean] = js.undefined
   ): BoostOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowForce)) __obj.updateDynamic("allowForce")(allowForce)
-    if (debug != null) __obj.updateDynamic("debug")(debug)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(allowForce)) __obj.updateDynamic("allowForce")(allowForce.asInstanceOf[js.Any])
+    if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (seriesThreshold != null) __obj.updateDynamic("seriesThreshold")(seriesThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(useGPUTranslations)) __obj.updateDynamic("useGPUTranslations")(useGPUTranslations)
-    if (!js.isUndefined(usePreallocated)) __obj.updateDynamic("usePreallocated")(usePreallocated)
+    if (!js.isUndefined(useGPUTranslations)) __obj.updateDynamic("useGPUTranslations")(useGPUTranslations.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePreallocated)) __obj.updateDynamic("usePreallocated")(usePreallocated.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoostOptions]
   }
 }

@@ -2,7 +2,7 @@ package typings.envDashCi.envDashCiMod
 
 import typings.envDashCi.envDashCiNumbers.`true`
 import typings.envDashCi.envDashCiStrings.Bamboo
-import typings.envDashCi.envDashCiStrings.bamboo
+import typings.envDashCi.envDashCiStrings.bamboo_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait BambooEnv
   var job: String
   var name: Bamboo
   var root: String
-  var service: bamboo
+  var service: bamboo_
 }
 
 object BambooEnv {
@@ -31,9 +31,9 @@ object BambooEnv {
     job: String,
     name: Bamboo,
     root: String,
-    service: bamboo
+    service: bamboo_
   ): BambooEnv = {
-    val __obj = js.Dynamic.literal(branch = branch, build = build, buildUrl = buildUrl, commit = commit, isCi = isCi, job = job, name = name, root = root, service = service)
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BambooEnv]
   }

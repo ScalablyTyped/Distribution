@@ -15,8 +15,8 @@ object Plugin {
   @scala.inline
   def apply(plugin: String | Anon_Options, options: js.Any = null, routes: js.Any = null): Plugin = {
     val __obj = js.Dynamic.literal(plugin = plugin.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (routes != null) __obj.updateDynamic("routes")(routes)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Plugin]
   }
 }

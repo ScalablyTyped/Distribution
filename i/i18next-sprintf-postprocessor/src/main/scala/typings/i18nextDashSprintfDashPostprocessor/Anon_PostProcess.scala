@@ -13,7 +13,7 @@ trait Anon_PostProcess extends js.Object {
 object Anon_PostProcess {
   @scala.inline
   def apply(postProcess: sprintf, sprintf: js.Array[String]): Anon_PostProcess = {
-    val __obj = js.Dynamic.literal(postProcess = postProcess, sprintf = sprintf)
+    val __obj = js.Dynamic.literal(postProcess = postProcess.asInstanceOf[js.Any], sprintf = sprintf.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PostProcess]
   }

@@ -14,9 +14,9 @@ object DocDefaultConfig {
   @scala.inline
   def apply(context: js.Any = null, prefix: String = null, status: String = null): DocDefaultConfig = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocDefaultConfig]
   }
 }

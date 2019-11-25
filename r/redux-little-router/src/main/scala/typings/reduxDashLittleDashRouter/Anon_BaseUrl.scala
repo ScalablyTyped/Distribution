@@ -22,8 +22,8 @@ object Anon_BaseUrl {
     url: String,
     passRouterStateToReducer: js.UndefOr[Boolean] = js.undefined
   ): Anon_BaseUrl = {
-    val __obj = js.Dynamic.literal(baseUrl = baseUrl, path = path, query = query, url = url)
-    if (!js.isUndefined(passRouterStateToReducer)) __obj.updateDynamic("passRouterStateToReducer")(passRouterStateToReducer)
+    val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (!js.isUndefined(passRouterStateToReducer)) __obj.updateDynamic("passRouterStateToReducer")(passRouterStateToReducer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BaseUrl]
   }
 }

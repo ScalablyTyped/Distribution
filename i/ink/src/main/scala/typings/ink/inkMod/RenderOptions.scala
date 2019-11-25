@@ -50,11 +50,11 @@ object RenderOptions {
     stdout: WriteStream = null
   ): RenderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (!js.isUndefined(exitOnCtrlC)) __obj.updateDynamic("exitOnCtrlC")(exitOnCtrlC)
-    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental)
-    if (stdin != null) __obj.updateDynamic("stdin")(stdin)
-    if (stdout != null) __obj.updateDynamic("stdout")(stdout)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(exitOnCtrlC)) __obj.updateDynamic("exitOnCtrlC")(exitOnCtrlC.asInstanceOf[js.Any])
+    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental.asInstanceOf[js.Any])
+    if (stdin != null) __obj.updateDynamic("stdin")(stdin.asInstanceOf[js.Any])
+    if (stdout != null) __obj.updateDynamic("stdout")(stdout.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderOptions]
   }
 }

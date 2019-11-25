@@ -39,11 +39,11 @@ object ProductPurchase {
   ): ProductPurchase = {
     val __obj = js.Dynamic.literal()
     if (consumptionState != null) __obj.updateDynamic("consumptionState")(consumptionState.asInstanceOf[js.Any])
-    if (developerPayload != null) __obj.updateDynamic("developerPayload")(developerPayload)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (orderId != null) __obj.updateDynamic("orderId")(orderId)
+    if (developerPayload != null) __obj.updateDynamic("developerPayload")(developerPayload.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (orderId != null) __obj.updateDynamic("orderId")(orderId.asInstanceOf[js.Any])
     if (purchaseState != null) __obj.updateDynamic("purchaseState")(purchaseState.asInstanceOf[js.Any])
-    if (purchaseTimeMillis != null) __obj.updateDynamic("purchaseTimeMillis")(purchaseTimeMillis)
+    if (purchaseTimeMillis != null) __obj.updateDynamic("purchaseTimeMillis")(purchaseTimeMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductPurchase]
   }
 }

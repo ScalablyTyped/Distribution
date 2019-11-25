@@ -28,14 +28,14 @@ object Classes {
     today: String = null
   ): Classes = {
     val __obj = js.Dynamic.literal()
-    if (adjacentMonth != null) __obj.updateDynamic("adjacentMonth")(adjacentMonth)
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (inactive != null) __obj.updateDynamic("inactive")(inactive)
-    if (lastMonth != null) __obj.updateDynamic("lastMonth")(lastMonth)
-    if (nextMonth != null) __obj.updateDynamic("nextMonth")(nextMonth)
-    if (past != null) __obj.updateDynamic("past")(past)
-    if (selected != null) __obj.updateDynamic("selected")(selected)
-    if (today != null) __obj.updateDynamic("today")(today)
+    if (adjacentMonth != null) __obj.updateDynamic("adjacentMonth")(adjacentMonth.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (inactive != null) __obj.updateDynamic("inactive")(inactive.asInstanceOf[js.Any])
+    if (lastMonth != null) __obj.updateDynamic("lastMonth")(lastMonth.asInstanceOf[js.Any])
+    if (nextMonth != null) __obj.updateDynamic("nextMonth")(nextMonth.asInstanceOf[js.Any])
+    if (past != null) __obj.updateDynamic("past")(past.asInstanceOf[js.Any])
+    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (today != null) __obj.updateDynamic("today")(today.asInstanceOf[js.Any])
     __obj.asInstanceOf[Classes]
   }
 }

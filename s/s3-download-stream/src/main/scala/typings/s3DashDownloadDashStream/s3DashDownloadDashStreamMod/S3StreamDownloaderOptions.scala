@@ -19,8 +19,8 @@ object S3StreamDownloaderOptions {
     chunkSize: String = null,
     concurrency: Int | Double = null
   ): S3StreamDownloaderOptions = {
-    val __obj = js.Dynamic.literal(client = client, params = params)
-    if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+    if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
     if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3StreamDownloaderOptions]
   }

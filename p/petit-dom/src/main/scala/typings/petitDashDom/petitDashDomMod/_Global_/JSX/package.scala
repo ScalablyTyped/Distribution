@@ -20,7 +20,7 @@ package object JSX {
   type IntrinsicAttributes = IntrinsicProps
   // tslint:disable-next-line:no-empty-interface
   type IntrinsicClassAttributes[T] = Props[typings.std.Element]
-  type IntrinsicElements = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type IntrinsicElements = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in 'main' ]: petit-dom.petit-dom.PetitDom.Props<petit-dom.petit-dom.PetitDom.DomElements[P]> & {  content? :petit-dom.petit-dom.PetitDom.Content | std.ReadonlyArray<petit-dom.petit-dom.PetitDom.Content>}}
     */ typings.petitDashDom.petitDashDomStrings.IntrinsicElements with DomElements
 }

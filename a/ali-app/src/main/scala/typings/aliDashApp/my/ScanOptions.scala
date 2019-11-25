@@ -32,9 +32,9 @@ object ScanOptions {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (!js.isUndefined(hideAlbum)) __obj.updateDynamic("hideAlbum")(hideAlbum)
+    if (!js.isUndefined(hideAlbum)) __obj.updateDynamic("hideAlbum")(hideAlbum.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScanOptions]
   }
 }

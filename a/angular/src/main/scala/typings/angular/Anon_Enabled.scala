@@ -18,9 +18,9 @@ object Anon_Enabled {
     rewriteLinks: js.UndefOr[Boolean] = js.undefined
   ): Anon_Enabled = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (!js.isUndefined(requireBase)) __obj.updateDynamic("requireBase")(requireBase)
-    if (!js.isUndefined(rewriteLinks)) __obj.updateDynamic("rewriteLinks")(rewriteLinks)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireBase)) __obj.updateDynamic("requireBase")(requireBase.asInstanceOf[js.Any])
+    if (!js.isUndefined(rewriteLinks)) __obj.updateDynamic("rewriteLinks")(rewriteLinks.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Enabled]
   }
 }

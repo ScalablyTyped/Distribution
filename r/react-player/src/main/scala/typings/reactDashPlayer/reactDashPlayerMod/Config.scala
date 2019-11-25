@@ -28,14 +28,14 @@ object Config {
     youtube: YouTubeConfig = null
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (dailymotion != null) __obj.updateDynamic("dailymotion")(dailymotion)
-    if (facebook != null) __obj.updateDynamic("facebook")(facebook)
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (mixcloud != null) __obj.updateDynamic("mixcloud")(mixcloud)
-    if (soundcloud != null) __obj.updateDynamic("soundcloud")(soundcloud)
-    if (vimeo != null) __obj.updateDynamic("vimeo")(vimeo)
-    if (wistia != null) __obj.updateDynamic("wistia")(wistia)
-    if (youtube != null) __obj.updateDynamic("youtube")(youtube)
+    if (dailymotion != null) __obj.updateDynamic("dailymotion")(dailymotion.asInstanceOf[js.Any])
+    if (facebook != null) __obj.updateDynamic("facebook")(facebook.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (mixcloud != null) __obj.updateDynamic("mixcloud")(mixcloud.asInstanceOf[js.Any])
+    if (soundcloud != null) __obj.updateDynamic("soundcloud")(soundcloud.asInstanceOf[js.Any])
+    if (vimeo != null) __obj.updateDynamic("vimeo")(vimeo.asInstanceOf[js.Any])
+    if (wistia != null) __obj.updateDynamic("wistia")(wistia.asInstanceOf[js.Any])
+    if (youtube != null) __obj.updateDynamic("youtube")(youtube.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

@@ -12,7 +12,7 @@ trait DefaultFontSizeDetails extends js.Object {
 object DefaultFontSizeDetails {
   @scala.inline
   def apply(pixelSize: Double): DefaultFontSizeDetails = {
-    val __obj = js.Dynamic.literal(pixelSize = pixelSize)
+    val __obj = js.Dynamic.literal(pixelSize = pixelSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DefaultFontSizeDetails]
   }

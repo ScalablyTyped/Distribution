@@ -24,10 +24,9 @@ object uuid {
     equals: uuid => Boolean,
     fromParts: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => uuid,
     toBytes: () => js.Array[_],
-    toString: () => String,
     toURN: () => String
   ): uuid = {
-    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), fromParts = js.Any.fromFunction6(fromParts), toBytes = js.Any.fromFunction0(toBytes), toString = js.Any.fromFunction0(toString), toURN = js.Any.fromFunction0(toURN))
+    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), fromParts = js.Any.fromFunction6(fromParts), toBytes = js.Any.fromFunction0(toBytes), toURN = js.Any.fromFunction0(toURN))
   
     __obj.asInstanceOf[uuid]
   }

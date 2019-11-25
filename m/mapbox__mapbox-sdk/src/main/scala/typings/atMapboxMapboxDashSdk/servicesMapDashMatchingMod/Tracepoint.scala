@@ -31,7 +31,7 @@ object Tracepoint {
     name: String,
     waypoint_index: Double
   ): Tracepoint = {
-    val __obj = js.Dynamic.literal(alternatives_count = alternatives_count, location = location, matchings_index = matchings_index, name = name, waypoint_index = waypoint_index)
+    val __obj = js.Dynamic.literal(alternatives_count = alternatives_count.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], matchings_index = matchings_index.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], waypoint_index = waypoint_index.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Tracepoint]
   }

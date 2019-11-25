@@ -31,10 +31,10 @@ object Colors {
     updated: String = null
   ): Colors = {
     val __obj = js.Dynamic.literal()
-    if (calendar != null) __obj.updateDynamic("calendar")(calendar)
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
+    if (calendar != null) __obj.updateDynamic("calendar")(calendar.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Colors]
   }
 }

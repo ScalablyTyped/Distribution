@@ -11,7 +11,7 @@ trait URLLike extends _RequestInfo {
 object URLLike {
   @scala.inline
   def apply(href: String): URLLike = {
-    val __obj = js.Dynamic.literal(href = href)
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[URLLike]
   }

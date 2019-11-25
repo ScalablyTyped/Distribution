@@ -13,7 +13,7 @@ trait Company extends js.Object {
 object Company {
   @scala.inline
   def apply(bs: String, catchPhrase: String, name: String): Company = {
-    val __obj = js.Dynamic.literal(bs = bs, catchPhrase = catchPhrase, name = name)
+    val __obj = js.Dynamic.literal(bs = bs.asInstanceOf[js.Any], catchPhrase = catchPhrase.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Company]
   }

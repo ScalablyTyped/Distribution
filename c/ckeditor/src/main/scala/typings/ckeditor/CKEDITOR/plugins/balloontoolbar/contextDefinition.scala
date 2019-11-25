@@ -26,7 +26,7 @@ object contextDefinition {
     widgets: js.Array[String] | String = null
   ): contextDefinition = {
     val __obj = js.Dynamic.literal()
-    if (cssSelector != null) __obj.updateDynamic("cssSelector")(cssSelector)
+    if (cssSelector != null) __obj.updateDynamic("cssSelector")(cssSelector.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (refresh != null) __obj.updateDynamic("refresh")(js.Any.fromFunction3(refresh))
     if (widgets != null) __obj.updateDynamic("widgets")(widgets.asInstanceOf[js.Any])

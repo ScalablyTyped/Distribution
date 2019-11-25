@@ -13,7 +13,7 @@ trait ResponseWrapper extends js.Object {
 object ResponseWrapper {
   @scala.inline
   def apply(body: js.Any, response: Response): ResponseWrapper = {
-    val __obj = js.Dynamic.literal(body = body, response = response)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResponseWrapper]
   }

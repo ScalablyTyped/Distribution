@@ -56,17 +56,17 @@ object DrawIndicatorsEventArgs {
     `type`: String = null
   ): DrawIndicatorsEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (indicatorElement != null) __obj.updateDynamic("indicatorElement")(indicatorElement)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (indicatorElement != null) __obj.updateDynamic("indicatorElement")(indicatorElement.asInstanceOf[js.Any])
     if (indicatorIndex != null) __obj.updateDynamic("indicatorIndex")(indicatorIndex.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement.asInstanceOf[js.Any])
     if (scaleIndex != null) __obj.updateDynamic("scaleIndex")(scaleIndex.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawIndicatorsEventArgs]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_SelectionEnd extends js.Object {
 object Anon_SelectionEnd {
   @scala.inline
   def apply(selectionEnd: Double, selectionStart: Double): Anon_SelectionEnd = {
-    val __obj = js.Dynamic.literal(selectionEnd = selectionEnd, selectionStart = selectionStart)
+    val __obj = js.Dynamic.literal(selectionEnd = selectionEnd.asInstanceOf[js.Any], selectionStart = selectionStart.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SelectionEnd]
   }

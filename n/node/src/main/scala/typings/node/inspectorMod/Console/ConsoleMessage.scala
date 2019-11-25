@@ -44,10 +44,10 @@ object ConsoleMessage {
     line: Int | Double = null,
     url: java.lang.String = null
   ): ConsoleMessage = {
-    val __obj = js.Dynamic.literal(level = level, source = source, text = text)
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsoleMessage]
   }
 }

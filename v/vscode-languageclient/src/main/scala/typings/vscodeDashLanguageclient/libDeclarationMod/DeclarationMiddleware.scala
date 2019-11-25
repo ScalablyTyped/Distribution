@@ -35,7 +35,7 @@ object DeclarationMiddleware {
     ] = null
   ): DeclarationMiddleware = {
     val __obj = js.Dynamic.literal()
-    if (provideDeclaration != null) __obj.updateDynamic("provideDeclaration")(provideDeclaration)
+    if (provideDeclaration != null) __obj.updateDynamic("provideDeclaration")(provideDeclaration.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeclarationMiddleware]
   }
 }

@@ -18,9 +18,9 @@ object Anon_ShowTransitions {
     titleLabelClassName: String = null
   ): Anon_ShowTransitions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(showTransitions)) __obj.updateDynamic("showTransitions")(showTransitions)
-    if (!js.isUndefined(showValue)) __obj.updateDynamic("showValue")(showValue)
-    if (titleLabelClassName != null) __obj.updateDynamic("titleLabelClassName")(titleLabelClassName)
+    if (!js.isUndefined(showTransitions)) __obj.updateDynamic("showTransitions")(showTransitions.asInstanceOf[js.Any])
+    if (!js.isUndefined(showValue)) __obj.updateDynamic("showValue")(showValue.asInstanceOf[js.Any])
+    if (titleLabelClassName != null) __obj.updateDynamic("titleLabelClassName")(titleLabelClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ShowTransitions]
   }
 }

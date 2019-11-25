@@ -12,7 +12,7 @@ object csrfOptionsBlacklist {
   @scala.inline
   def apply(blacklist: js.Array[String] = null): csrfOptionsBlacklist = {
     val __obj = js.Dynamic.literal()
-    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist)
+    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist.asInstanceOf[js.Any])
     __obj.asInstanceOf[csrfOptionsBlacklist]
   }
 }

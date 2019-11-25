@@ -39,8 +39,8 @@ object ISchema {
     missingValues: js.Array[String] = null,
     primaryKey: String | js.Array[String] = null
   ): ISchema = {
-    val __obj = js.Dynamic.literal(fields = fields)
-    if (missingValues != null) __obj.updateDynamic("missingValues")(missingValues)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
+    if (missingValues != null) __obj.updateDynamic("missingValues")(missingValues.asInstanceOf[js.Any])
     if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISchema]
   }

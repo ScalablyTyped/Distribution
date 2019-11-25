@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait SocketType extends js.Object
 
+object SocketType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def udp4: typings.node.nodeStrings.udp4 = this.cast("udp4")
+  @scala.inline
+  def udp6: typings.node.nodeStrings.udp6 = this.cast("udp6")
+}
+

@@ -23,7 +23,7 @@ object Options {
   @scala.inline
   def apply(fs: Typeoffs = null, mode: Int | Double = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (fs != null) __obj.updateDynamic("fs")(fs)
+    if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

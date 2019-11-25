@@ -13,8 +13,8 @@ object Anon_Children {
   @scala.inline
   def apply(children: String = null, iconClassName: String = null): Anon_Children = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (iconClassName != null) __obj.updateDynamic("iconClassName")(iconClassName)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (iconClassName != null) __obj.updateDynamic("iconClassName")(iconClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Children]
   }
 }

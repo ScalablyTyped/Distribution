@@ -36,7 +36,7 @@ object ReleaseSchedule {
     startMinutes: Double,
     timeZoneId: String
   ): ReleaseSchedule = {
-    val __obj = js.Dynamic.literal(daysToRelease = daysToRelease, jobId = jobId, startHours = startHours, startMinutes = startMinutes, timeZoneId = timeZoneId)
+    val __obj = js.Dynamic.literal(daysToRelease = daysToRelease.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any], startHours = startHours.asInstanceOf[js.Any], startMinutes = startMinutes.asInstanceOf[js.Any], timeZoneId = timeZoneId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReleaseSchedule]
   }

@@ -19,7 +19,7 @@ object Anon_Alipayaccount {
     bitcoin_receiver: Int | Double = null,
     customer_bank_account: Int | Double = null
   ): Anon_Alipayaccount = {
-    val __obj = js.Dynamic.literal(card = card)
+    val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any])
     if (alipay_account != null) __obj.updateDynamic("alipay_account")(alipay_account.asInstanceOf[js.Any])
     if (bitcoin_receiver != null) __obj.updateDynamic("bitcoin_receiver")(bitcoin_receiver.asInstanceOf[js.Any])
     if (customer_bank_account != null) __obj.updateDynamic("customer_bank_account")(customer_bank_account.asInstanceOf[js.Any])

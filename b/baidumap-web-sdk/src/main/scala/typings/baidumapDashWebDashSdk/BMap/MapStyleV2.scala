@@ -4,17 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MapStyleV2 extends js.Object {
-  var styleId: js.UndefOr[String] = js.undefined
-  var styleJson: js.UndefOr[js.Array[MapStyleItem]] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.baidumapDashWebDashSdk.Anon_StyleJson
+  - typings.baidumapDashWebDashSdk.Anon_StyleId
+*/
+trait MapStyleV2 extends js.Object
 
 object MapStyleV2 {
   @scala.inline
-  def apply(styleId: String = null, styleJson: js.Array[MapStyleItem] = null): MapStyleV2 = {
-    val __obj = js.Dynamic.literal()
-    if (styleId != null) __obj.updateDynamic("styleId")(styleId)
-    if (styleJson != null) __obj.updateDynamic("styleJson")(styleJson)
+  def Anon_StyleJson(styleJson: js.Array[MapStyleItem]): MapStyleV2 = {
+    val __obj = js.Dynamic.literal(styleJson = styleJson.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[MapStyleV2]
+  }
+  @scala.inline
+  def Anon_StyleId(styleId: String): MapStyleV2 = {
+    val __obj = js.Dynamic.literal(styleId = styleId.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[MapStyleV2]
   }
 }

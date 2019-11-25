@@ -17,9 +17,9 @@ object ThreatListDescriptor {
   @scala.inline
   def apply(platformType: String = null, threatEntryType: String = null, threatType: String = null): ThreatListDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (platformType != null) __obj.updateDynamic("platformType")(platformType)
-    if (threatEntryType != null) __obj.updateDynamic("threatEntryType")(threatEntryType)
-    if (threatType != null) __obj.updateDynamic("threatType")(threatType)
+    if (platformType != null) __obj.updateDynamic("platformType")(platformType.asInstanceOf[js.Any])
+    if (threatEntryType != null) __obj.updateDynamic("threatEntryType")(threatEntryType.asInstanceOf[js.Any])
+    if (threatType != null) __obj.updateDynamic("threatType")(threatType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreatListDescriptor]
   }
 }

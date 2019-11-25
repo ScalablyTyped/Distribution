@@ -15,8 +15,8 @@ trait Anon_Hash extends js.Object {
 object Anon_Hash {
   @scala.inline
   def apply(url: HttpURL, hash: String = null): Anon_Hash = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (hash != null) __obj.updateDynamic("hash")(hash)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Hash]
   }
 }

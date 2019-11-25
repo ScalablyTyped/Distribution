@@ -29,9 +29,9 @@ object Anon_Arpa {
     mrr: Double,
     `mrr-churn-rate`: Double
   ): Anon_Arpa = {
-    val __obj = js.Dynamic.literal(arpa = arpa, arr = arr, asp = asp, customers = customers, date = date, ltv = ltv, mrr = mrr)
-    __obj.updateDynamic("customer-churn-rate")(`customer-churn-rate`)
-    __obj.updateDynamic("mrr-churn-rate")(`mrr-churn-rate`)
+    val __obj = js.Dynamic.literal(arpa = arpa.asInstanceOf[js.Any], arr = arr.asInstanceOf[js.Any], asp = asp.asInstanceOf[js.Any], customers = customers.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], ltv = ltv.asInstanceOf[js.Any], mrr = mrr.asInstanceOf[js.Any])
+    __obj.updateDynamic("customer-churn-rate")(`customer-churn-rate`.asInstanceOf[js.Any])
+    __obj.updateDynamic("mrr-churn-rate")(`mrr-churn-rate`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Arpa]
   }
 }

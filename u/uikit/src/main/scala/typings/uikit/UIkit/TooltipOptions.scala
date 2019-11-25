@@ -60,12 +60,12 @@ object TooltipOptions {
     pos: String = null
   ): TooltipOptions = {
     val __obj = js.Dynamic.literal()
-    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass)
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
-    if (cls != null) __obj.updateDynamic("cls")(cls)
+    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (cls != null) __obj.updateDynamic("cls")(cls.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (pos != null) __obj.updateDynamic("pos")(pos)
+    if (pos != null) __obj.updateDynamic("pos")(pos.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipOptions]
   }
 }

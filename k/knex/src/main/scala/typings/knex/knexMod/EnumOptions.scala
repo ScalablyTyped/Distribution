@@ -19,9 +19,9 @@ object EnumOptions {
     existingType: js.UndefOr[Boolean] = js.undefined,
     schemaName: String = null
   ): EnumOptions = {
-    val __obj = js.Dynamic.literal(enumName = enumName, useNative = useNative)
-    if (!js.isUndefined(existingType)) __obj.updateDynamic("existingType")(existingType)
-    if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName)
+    val __obj = js.Dynamic.literal(enumName = enumName.asInstanceOf[js.Any], useNative = useNative.asInstanceOf[js.Any])
+    if (!js.isUndefined(existingType)) __obj.updateDynamic("existingType")(existingType.asInstanceOf[js.Any])
+    if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumOptions]
   }
 }

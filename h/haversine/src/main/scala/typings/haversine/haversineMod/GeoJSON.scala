@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object GeoJSON {
   @scala.inline
   def apply(geometry: Anon_Coordinates): GeoJSON = {
-    val __obj = js.Dynamic.literal(geometry = geometry)
+    val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GeoJSON]
   }

@@ -26,10 +26,10 @@ object Repo {
   @scala.inline
   def apply(mirrorConfig: MirrorConfig = null, name: String = null, size: String = null, url: String = null): Repo = {
     val __obj = js.Dynamic.literal()
-    if (mirrorConfig != null) __obj.updateDynamic("mirrorConfig")(mirrorConfig)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (mirrorConfig != null) __obj.updateDynamic("mirrorConfig")(mirrorConfig.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Repo]
   }
 }

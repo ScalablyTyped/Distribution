@@ -70,13 +70,13 @@ object Options {
     verbose: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (cleanAfterEveryBuildPatterns != null) __obj.updateDynamic("cleanAfterEveryBuildPatterns")(cleanAfterEveryBuildPatterns)
-    if (cleanOnceBeforeBuildPatterns != null) __obj.updateDynamic("cleanOnceBeforeBuildPatterns")(cleanOnceBeforeBuildPatterns)
-    if (!js.isUndefined(cleanStaleWebpackAssets)) __obj.updateDynamic("cleanStaleWebpackAssets")(cleanStaleWebpackAssets)
-    if (!js.isUndefined(dangerouslyAllowCleanPatternsOutsideProject)) __obj.updateDynamic("dangerouslyAllowCleanPatternsOutsideProject")(dangerouslyAllowCleanPatternsOutsideProject)
-    if (!js.isUndefined(dry)) __obj.updateDynamic("dry")(dry)
-    if (!js.isUndefined(protectWebpackAssets)) __obj.updateDynamic("protectWebpackAssets")(protectWebpackAssets)
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (cleanAfterEveryBuildPatterns != null) __obj.updateDynamic("cleanAfterEveryBuildPatterns")(cleanAfterEveryBuildPatterns.asInstanceOf[js.Any])
+    if (cleanOnceBeforeBuildPatterns != null) __obj.updateDynamic("cleanOnceBeforeBuildPatterns")(cleanOnceBeforeBuildPatterns.asInstanceOf[js.Any])
+    if (!js.isUndefined(cleanStaleWebpackAssets)) __obj.updateDynamic("cleanStaleWebpackAssets")(cleanStaleWebpackAssets.asInstanceOf[js.Any])
+    if (!js.isUndefined(dangerouslyAllowCleanPatternsOutsideProject)) __obj.updateDynamic("dangerouslyAllowCleanPatternsOutsideProject")(dangerouslyAllowCleanPatternsOutsideProject.asInstanceOf[js.Any])
+    if (!js.isUndefined(dry)) __obj.updateDynamic("dry")(dry.asInstanceOf[js.Any])
+    if (!js.isUndefined(protectWebpackAssets)) __obj.updateDynamic("protectWebpackAssets")(protectWebpackAssets.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

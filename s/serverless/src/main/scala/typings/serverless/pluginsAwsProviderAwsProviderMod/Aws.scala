@@ -22,7 +22,7 @@ object Aws {
     getStage: () => String,
     naming: StringDictionary[js.Function0[String]]
   ): Aws = {
-    val __obj = js.Dynamic.literal(getProviderName = js.Any.fromFunction0(getProviderName), getRegion = js.Any.fromFunction0(getRegion), getServerlessDeploymentBucketName = js.Any.fromFunction0(getServerlessDeploymentBucketName), getStage = js.Any.fromFunction0(getStage), naming = naming)
+    val __obj = js.Dynamic.literal(getProviderName = js.Any.fromFunction0(getProviderName), getRegion = js.Any.fromFunction0(getRegion), getServerlessDeploymentBucketName = js.Any.fromFunction0(getServerlessDeploymentBucketName), getStage = js.Any.fromFunction0(getStage), naming = naming.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Aws]
   }

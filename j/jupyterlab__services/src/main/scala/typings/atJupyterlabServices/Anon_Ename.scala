@@ -13,7 +13,7 @@ trait Anon_Ename extends js.Object {
 object Anon_Ename {
   @scala.inline
   def apply(ename: String, evalue: String, traceback: js.Array[String]): Anon_Ename = {
-    val __obj = js.Dynamic.literal(ename = ename, evalue = evalue, traceback = traceback)
+    val __obj = js.Dynamic.literal(ename = ename.asInstanceOf[js.Any], evalue = evalue.asInstanceOf[js.Any], traceback = traceback.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Ename]
   }

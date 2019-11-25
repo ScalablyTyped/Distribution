@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait LogLevelString extends js.Object
 
+object LogLevelString {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def debug: typings.bunyan.bunyanStrings.debug = this.cast("debug")
+  @scala.inline
+  def error: typings.bunyan.bunyanStrings.error = this.cast("error")
+  @scala.inline
+  def fatal: typings.bunyan.bunyanStrings.fatal = this.cast("fatal")
+  @scala.inline
+  def info: typings.bunyan.bunyanStrings.info = this.cast("info")
+  @scala.inline
+  def trace: typings.bunyan.bunyanStrings.trace = this.cast("trace")
+  @scala.inline
+  def warn: typings.bunyan.bunyanStrings.warn = this.cast("warn")
+}
+

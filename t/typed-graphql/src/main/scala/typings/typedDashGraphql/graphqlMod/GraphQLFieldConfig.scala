@@ -23,10 +23,10 @@ object GraphQLFieldConfig {
     resolve: (/* source */ js.Any, /* args */ StringDictionary[js.Any], /* context */ js.Any, /* info */ GraphQLResolveInfo) => js.Any = null
   ): GraphQLFieldConfig = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason)
-    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction4(resolve))
     __obj.asInstanceOf[GraphQLFieldConfig]
   }

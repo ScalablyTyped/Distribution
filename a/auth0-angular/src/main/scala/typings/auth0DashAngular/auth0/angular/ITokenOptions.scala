@@ -13,8 +13,8 @@ object ITokenOptions {
   @scala.inline
   def apply(api: String = null, targetClientId: String = null): ITokenOptions = {
     val __obj = js.Dynamic.literal()
-    if (api != null) __obj.updateDynamic("api")(api)
-    if (targetClientId != null) __obj.updateDynamic("targetClientId")(targetClientId)
+    if (api != null) __obj.updateDynamic("api")(api.asInstanceOf[js.Any])
+    if (targetClientId != null) __obj.updateDynamic("targetClientId")(targetClientId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITokenOptions]
   }
 }

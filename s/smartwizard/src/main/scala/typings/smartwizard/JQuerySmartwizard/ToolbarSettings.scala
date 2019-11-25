@@ -23,11 +23,11 @@ object ToolbarSettings {
     toolbarPosition: ToolbarPosition = null
   ): ToolbarSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(showNextButton)) __obj.updateDynamic("showNextButton")(showNextButton)
-    if (!js.isUndefined(showPreviousButton)) __obj.updateDynamic("showPreviousButton")(showPreviousButton)
-    if (toolbarButtonPosition != null) __obj.updateDynamic("toolbarButtonPosition")(toolbarButtonPosition)
-    if (toolbarExtraButtons != null) __obj.updateDynamic("toolbarExtraButtons")(toolbarExtraButtons)
-    if (toolbarPosition != null) __obj.updateDynamic("toolbarPosition")(toolbarPosition)
+    if (!js.isUndefined(showNextButton)) __obj.updateDynamic("showNextButton")(showNextButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPreviousButton)) __obj.updateDynamic("showPreviousButton")(showPreviousButton.asInstanceOf[js.Any])
+    if (toolbarButtonPosition != null) __obj.updateDynamic("toolbarButtonPosition")(toolbarButtonPosition.asInstanceOf[js.Any])
+    if (toolbarExtraButtons != null) __obj.updateDynamic("toolbarExtraButtons")(toolbarExtraButtons.asInstanceOf[js.Any])
+    if (toolbarPosition != null) __obj.updateDynamic("toolbarPosition")(toolbarPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarSettings]
   }
 }

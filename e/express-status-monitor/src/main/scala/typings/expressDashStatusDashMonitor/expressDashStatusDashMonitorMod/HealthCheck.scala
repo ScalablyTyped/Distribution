@@ -14,7 +14,7 @@ trait HealthCheck extends js.Object {
 object HealthCheck {
   @scala.inline
   def apply(host: String, path: String, port: String | Double, protocol: String): HealthCheck = {
-    val __obj = js.Dynamic.literal(host = host, path = path, port = port.asInstanceOf[js.Any], protocol = protocol)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HealthCheck]
   }

@@ -12,7 +12,7 @@ object Anon_Camelcase {
   @scala.inline
   def apply(camelcase: js.UndefOr[Boolean] = js.undefined): Anon_Camelcase = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(camelcase)) __obj.updateDynamic("camelcase")(camelcase)
+    if (!js.isUndefined(camelcase)) __obj.updateDynamic("camelcase")(camelcase.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Camelcase]
   }
 }

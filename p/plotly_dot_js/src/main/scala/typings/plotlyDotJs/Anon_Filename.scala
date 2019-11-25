@@ -19,7 +19,7 @@ trait Anon_Filename extends js.Object {
 object Anon_Filename {
   @scala.inline
   def apply(filename: String, format: png | svg | jpeg | webp, height: Double, scale: Double, width: Double): Anon_Filename = {
-    val __obj = js.Dynamic.literal(filename = filename, format = format.asInstanceOf[js.Any], height = height, scale = scale, width = width)
+    val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Filename]
   }

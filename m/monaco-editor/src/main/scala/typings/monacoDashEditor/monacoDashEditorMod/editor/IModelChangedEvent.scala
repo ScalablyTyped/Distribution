@@ -20,8 +20,8 @@ object IModelChangedEvent {
   @scala.inline
   def apply(newModelUrl: Uri = null, oldModelUrl: Uri = null): IModelChangedEvent = {
     val __obj = js.Dynamic.literal()
-    if (newModelUrl != null) __obj.updateDynamic("newModelUrl")(newModelUrl)
-    if (oldModelUrl != null) __obj.updateDynamic("oldModelUrl")(oldModelUrl)
+    if (newModelUrl != null) __obj.updateDynamic("newModelUrl")(newModelUrl.asInstanceOf[js.Any])
+    if (oldModelUrl != null) __obj.updateDynamic("oldModelUrl")(oldModelUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModelChangedEvent]
   }
 }

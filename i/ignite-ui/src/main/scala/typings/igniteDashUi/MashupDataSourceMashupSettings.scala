@@ -31,9 +31,9 @@ object MashupDataSourceMashupSettings {
     ignorePartialRecords: js.UndefOr[Boolean] = js.undefined
   ): MashupDataSourceMashupSettings = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (!js.isUndefined(ignorePartialRecords)) __obj.updateDynamic("ignorePartialRecords")(ignorePartialRecords)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignorePartialRecords)) __obj.updateDynamic("ignorePartialRecords")(ignorePartialRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[MashupDataSourceMashupSettings]
   }
 }

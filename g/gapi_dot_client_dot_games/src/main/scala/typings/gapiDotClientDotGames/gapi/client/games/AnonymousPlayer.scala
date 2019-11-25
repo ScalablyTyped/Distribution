@@ -17,9 +17,9 @@ object AnonymousPlayer {
   @scala.inline
   def apply(avatarImageUrl: String = null, displayName: String = null, kind: String = null): AnonymousPlayer = {
     val __obj = js.Dynamic.literal()
-    if (avatarImageUrl != null) __obj.updateDynamic("avatarImageUrl")(avatarImageUrl)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (avatarImageUrl != null) __obj.updateDynamic("avatarImageUrl")(avatarImageUrl.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonymousPlayer]
   }
 }

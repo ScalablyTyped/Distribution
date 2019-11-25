@@ -23,8 +23,8 @@ object GoogleActionsV2UiElementsCarouselBrowse {
     items: js.Array[GoogleActionsV2UiElementsCarouselBrowseItem] = null
   ): GoogleActionsV2UiElementsCarouselBrowse = {
     val __obj = js.Dynamic.literal()
-    if (imageDisplayOptions != null) __obj.updateDynamic("imageDisplayOptions")(imageDisplayOptions)
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (imageDisplayOptions != null) __obj.updateDynamic("imageDisplayOptions")(imageDisplayOptions.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2UiElementsCarouselBrowse]
   }
 }

@@ -20,9 +20,9 @@ object EmitRequest {
     authTokenExpiredError: Error = null,
     data: js.Any = null
   ): EmitRequest = {
-    val __obj = js.Dynamic.literal(event = event, socket = socket)
-    if (authTokenExpiredError != null) __obj.updateDynamic("authTokenExpiredError")(authTokenExpiredError)
-    if (data != null) __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
+    if (authTokenExpiredError != null) __obj.updateDynamic("authTokenExpiredError")(authTokenExpiredError.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmitRequest]
   }
 }

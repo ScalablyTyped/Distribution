@@ -16,7 +16,7 @@ trait TorrentRecord extends js.Object {
 object TorrentRecord {
   @scala.inline
   def apply(connected: Boolean, filters: Anon_State, stats: DelugeStats, torrents: StringDictionary[Torrent]): TorrentRecord = {
-    val __obj = js.Dynamic.literal(connected = connected, filters = filters, stats = stats, torrents = torrents)
+    val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], filters = filters.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], torrents = torrents.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TorrentRecord]
   }

@@ -11,7 +11,7 @@ trait SeparatorObject extends js.Object {
 object SeparatorObject {
   @scala.inline
   def apply(name: String): SeparatorObject = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SeparatorObject]
   }

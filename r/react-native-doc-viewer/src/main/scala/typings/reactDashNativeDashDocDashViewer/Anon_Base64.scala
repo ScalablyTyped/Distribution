@@ -13,9 +13,9 @@ trait Anon_Base64 extends js.Object {
 object Anon_Base64 {
   @scala.inline
   def apply(base64: String, fileName: String = null, fileType: String = null): Anon_Base64 = {
-    val __obj = js.Dynamic.literal(base64 = base64)
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (fileType != null) __obj.updateDynamic("fileType")(fileType)
+    val __obj = js.Dynamic.literal(base64 = base64.asInstanceOf[js.Any])
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Base64]
   }
 }

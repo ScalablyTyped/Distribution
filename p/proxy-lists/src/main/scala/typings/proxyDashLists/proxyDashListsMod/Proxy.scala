@@ -25,10 +25,10 @@ object Proxy {
     protocols: js.Array[Protocol] = null,
     tunnel: js.UndefOr[Boolean] = js.undefined
   ): Proxy = {
-    val __obj = js.Dynamic.literal(country = country, ipAddress = ipAddress, port = port, source = source)
-    if (anonymityLevel != null) __obj.updateDynamic("anonymityLevel")(anonymityLevel)
-    if (protocols != null) __obj.updateDynamic("protocols")(protocols)
-    if (!js.isUndefined(tunnel)) __obj.updateDynamic("tunnel")(tunnel)
+    val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], ipAddress = ipAddress.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    if (anonymityLevel != null) __obj.updateDynamic("anonymityLevel")(anonymityLevel.asInstanceOf[js.Any])
+    if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
+    if (!js.isUndefined(tunnel)) __obj.updateDynamic("tunnel")(tunnel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Proxy]
   }
 }

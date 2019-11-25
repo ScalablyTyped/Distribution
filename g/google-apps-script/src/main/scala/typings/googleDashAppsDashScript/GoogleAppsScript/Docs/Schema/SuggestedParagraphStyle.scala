@@ -16,8 +16,8 @@ object SuggestedParagraphStyle {
     paragraphStyleSuggestionState: ParagraphStyleSuggestionState = null
   ): SuggestedParagraphStyle = {
     val __obj = js.Dynamic.literal()
-    if (paragraphStyle != null) __obj.updateDynamic("paragraphStyle")(paragraphStyle)
-    if (paragraphStyleSuggestionState != null) __obj.updateDynamic("paragraphStyleSuggestionState")(paragraphStyleSuggestionState)
+    if (paragraphStyle != null) __obj.updateDynamic("paragraphStyle")(paragraphStyle.asInstanceOf[js.Any])
+    if (paragraphStyleSuggestionState != null) __obj.updateDynamic("paragraphStyleSuggestionState")(paragraphStyleSuggestionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestedParagraphStyle]
   }
 }

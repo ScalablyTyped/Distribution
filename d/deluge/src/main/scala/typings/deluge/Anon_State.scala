@@ -12,7 +12,7 @@ trait Anon_State extends js.Object {
 object Anon_State {
   @scala.inline
   def apply(state: js.Array[js.Tuple2[String, Double]], tracker_host: js.Array[js.Tuple2[String, Double]]): Anon_State = {
-    val __obj = js.Dynamic.literal(state = state, tracker_host = tracker_host)
+    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], tracker_host = tracker_host.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_State]
   }

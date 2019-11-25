@@ -13,7 +13,7 @@ trait Anon_ComparatorNumber extends js.Object {
 object Anon_ComparatorNumber {
   @scala.inline
   def apply(comparator: CSSProperties, number: CSSProperties): Anon_ComparatorNumber = {
-    val __obj = js.Dynamic.literal(comparator = comparator, number = number)
+    val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ComparatorNumber]
   }

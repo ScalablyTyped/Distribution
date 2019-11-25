@@ -23,8 +23,8 @@ object MediaScannerResponse {
   @scala.inline
   def apply(path: String = null, uri: String = null): MediaScannerResponse = {
     val __obj = js.Dynamic.literal()
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaScannerResponse]
   }
 }

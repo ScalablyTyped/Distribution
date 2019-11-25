@@ -27,7 +27,7 @@ object DSAKeyPairOptions {
     privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with Anon_Pkcs8,
     publicKeyEncoding: Anon_FormatSpki[PubF]
   ): DSAKeyPairOptions[PubF, PrivF] = {
-    val __obj = js.Dynamic.literal(divisorLength = divisorLength, modulusLength = modulusLength, privateKeyEncoding = privateKeyEncoding, publicKeyEncoding = publicKeyEncoding)
+    val __obj = js.Dynamic.literal(divisorLength = divisorLength.asInstanceOf[js.Any], modulusLength = modulusLength.asInstanceOf[js.Any], privateKeyEncoding = privateKeyEncoding.asInstanceOf[js.Any], publicKeyEncoding = publicKeyEncoding.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DSAKeyPairOptions[PubF, PrivF]]
   }

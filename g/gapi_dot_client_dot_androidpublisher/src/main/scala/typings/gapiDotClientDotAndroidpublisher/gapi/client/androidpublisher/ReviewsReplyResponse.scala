@@ -12,7 +12,7 @@ object ReviewsReplyResponse {
   @scala.inline
   def apply(result: ReviewReplyResult = null): ReviewsReplyResponse = {
     val __obj = js.Dynamic.literal()
-    if (result != null) __obj.updateDynamic("result")(result)
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReviewsReplyResponse]
   }
 }

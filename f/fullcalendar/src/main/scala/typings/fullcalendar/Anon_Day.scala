@@ -29,7 +29,7 @@ object Anon_Day {
     week: String,
     year: String
   ): Anon_Day = {
-    val __obj = js.Dynamic.literal(day = day, month = month, next = next, nextYear = nextYear, prev = prev, prevYear = prevYear, today = today, week = week, year = year)
+    val __obj = js.Dynamic.literal(day = day.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], nextYear = nextYear.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any], prevYear = prevYear.asInstanceOf[js.Any], today = today.asInstanceOf[js.Any], week = week.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Day]
   }

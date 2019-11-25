@@ -12,7 +12,7 @@ trait ApplyTicketResponsePayload extends js.Object {
 object ApplyTicketResponsePayload {
   @scala.inline
   def apply(result: Anon_Comment): ApplyTicketResponsePayload = {
-    val __obj = js.Dynamic.literal(result = result)
+    val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ApplyTicketResponsePayload]
   }

@@ -12,7 +12,7 @@ object IMapCheckZoomRangeOptions {
   @scala.inline
   def apply(checkZoomRange: js.UndefOr[Boolean] = js.undefined): IMapCheckZoomRangeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkZoomRange)) __obj.updateDynamic("checkZoomRange")(checkZoomRange)
+    if (!js.isUndefined(checkZoomRange)) __obj.updateDynamic("checkZoomRange")(checkZoomRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMapCheckZoomRangeOptions]
   }
 }

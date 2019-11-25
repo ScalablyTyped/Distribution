@@ -11,7 +11,7 @@ trait Anon_Overflow extends js.Object {
 object Anon_Overflow {
   @scala.inline
   def apply(overflow: String): Anon_Overflow = {
-    val __obj = js.Dynamic.literal(overflow = overflow)
+    val __obj = js.Dynamic.literal(overflow = overflow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Overflow]
   }

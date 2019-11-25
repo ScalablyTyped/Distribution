@@ -13,7 +13,7 @@ trait Anon_OriginalEventValueEvent extends js.Object {
 object Anon_OriginalEventValueEvent {
   @scala.inline
   def apply(originalEvent: Event, value: String): Anon_OriginalEventValueEvent = {
-    val __obj = js.Dynamic.literal(originalEvent = originalEvent, value = value)
+    val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_OriginalEventValueEvent]
   }

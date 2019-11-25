@@ -28,8 +28,8 @@ object transitionAnimationParam {
   def apply(duration: Int | Double = null, transitionFrom: Animation = null, transitionTo: Animation = null): transitionAnimationParam = {
     val __obj = js.Dynamic.literal()
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (transitionFrom != null) __obj.updateDynamic("transitionFrom")(transitionFrom)
-    if (transitionTo != null) __obj.updateDynamic("transitionTo")(transitionTo)
+    if (transitionFrom != null) __obj.updateDynamic("transitionFrom")(transitionFrom.asInstanceOf[js.Any])
+    if (transitionTo != null) __obj.updateDynamic("transitionTo")(transitionTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[transitionAnimationParam]
   }
 }

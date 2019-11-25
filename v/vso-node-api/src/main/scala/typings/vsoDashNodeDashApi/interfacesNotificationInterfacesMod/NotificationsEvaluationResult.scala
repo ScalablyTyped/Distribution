@@ -14,7 +14,7 @@ trait NotificationsEvaluationResult extends js.Object {
 object NotificationsEvaluationResult {
   @scala.inline
   def apply(count: Double): NotificationsEvaluationResult = {
-    val __obj = js.Dynamic.literal(count = count)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NotificationsEvaluationResult]
   }

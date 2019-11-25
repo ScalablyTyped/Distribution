@@ -13,7 +13,7 @@ object GetPublisherProfilesByAccountIdResponse {
   @scala.inline
   def apply(profiles: js.Array[PublisherProfileApiProto] = null): GetPublisherProfilesByAccountIdResponse = {
     val __obj = js.Dynamic.literal()
-    if (profiles != null) __obj.updateDynamic("profiles")(profiles)
+    if (profiles != null) __obj.updateDynamic("profiles")(profiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPublisherProfilesByAccountIdResponse]
   }
 }

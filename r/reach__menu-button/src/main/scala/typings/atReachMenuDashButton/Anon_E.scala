@@ -42,9 +42,9 @@ object Anon_E {
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
     if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction0(onSelect))
-    if (role != null) __obj.updateDynamic("role")(role)
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (setState != null) __obj.updateDynamic("setState")(js.Any.fromFunction1(setState))
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_E]
   }
 }

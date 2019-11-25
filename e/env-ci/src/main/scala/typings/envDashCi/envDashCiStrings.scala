@@ -69,25 +69,25 @@ object envDashCiStrings {
   sealed trait Wercker extends js.Object
   
   @js.native
-  sealed trait appveyor extends js.Object
+  sealed trait appveyor_ extends js.Object
   
   @js.native
-  sealed trait bamboo extends js.Object
+  sealed trait bamboo_ extends js.Object
   
   @js.native
   sealed trait bitbucket extends js.Object
   
   @js.native
-  sealed trait bitrise extends js.Object
+  sealed trait bitrise_ extends js.Object
   
   @js.native
-  sealed trait buddy extends js.Object
+  sealed trait buddy_ extends js.Object
   
   @js.native
-  sealed trait buildkite extends js.Object
+  sealed trait buildkite_ extends js.Object
   
   @js.native
-  sealed trait circleci extends js.Object
+  sealed trait circleci_ extends js.Object
   
   @js.native
   sealed trait cirrus extends js.Object
@@ -96,31 +96,31 @@ object envDashCiStrings {
   sealed trait codebuild extends js.Object
   
   @js.native
-  sealed trait codefresh extends js.Object
+  sealed trait codefresh_ extends js.Object
   
   @js.native
-  sealed trait codeship extends js.Object
+  sealed trait codeship_ extends js.Object
   
   @js.native
-  sealed trait drone extends js.Object
+  sealed trait drone_ extends js.Object
   
   @js.native
   sealed trait gitlab extends js.Object
   
   @js.native
-  sealed trait jenkins extends js.Object
+  sealed trait jenkins_ extends js.Object
   
   @js.native
   sealed trait sail extends js.Object
   
   @js.native
-  sealed trait semaphore extends js.Object
+  sealed trait semaphore_ extends js.Object
   
   @js.native
-  sealed trait shippable extends js.Object
+  sealed trait shippable_ extends js.Object
   
   @js.native
-  sealed trait teamcity extends js.Object
+  sealed trait teamcity_ extends js.Object
   
   @js.native
   sealed trait travis extends js.Object
@@ -129,7 +129,7 @@ object envDashCiStrings {
   sealed trait vsts extends js.Object
   
   @js.native
-  sealed trait wercker extends js.Object
+  sealed trait wercker_ extends js.Object
   
   @scala.inline
   def `AWS CodeBuild`: `AWS CodeBuild` = "AWS CodeBuild".asInstanceOf[`AWS CodeBuild`]
@@ -174,46 +174,46 @@ object envDashCiStrings {
   @scala.inline
   def Wercker: Wercker = "Wercker".asInstanceOf[Wercker]
   @scala.inline
-  def appveyor: appveyor = "appveyor".asInstanceOf[appveyor]
+  def appveyor_ : appveyor_ = "appveyor".asInstanceOf[appveyor_]
   @scala.inline
-  def bamboo: bamboo = "bamboo".asInstanceOf[bamboo]
+  def bamboo_ : bamboo_ = "bamboo".asInstanceOf[bamboo_]
   @scala.inline
   def bitbucket: bitbucket = "bitbucket".asInstanceOf[bitbucket]
   @scala.inline
-  def bitrise: bitrise = "bitrise".asInstanceOf[bitrise]
+  def bitrise_ : bitrise_ = "bitrise".asInstanceOf[bitrise_]
   @scala.inline
-  def buddy: buddy = "buddy".asInstanceOf[buddy]
+  def buddy_ : buddy_ = "buddy".asInstanceOf[buddy_]
   @scala.inline
-  def buildkite: buildkite = "buildkite".asInstanceOf[buildkite]
+  def buildkite_ : buildkite_ = "buildkite".asInstanceOf[buildkite_]
   @scala.inline
-  def circleci: circleci = "circleci".asInstanceOf[circleci]
+  def circleci_ : circleci_ = "circleci".asInstanceOf[circleci_]
   @scala.inline
   def cirrus: cirrus = "cirrus".asInstanceOf[cirrus]
   @scala.inline
   def codebuild: codebuild = "codebuild".asInstanceOf[codebuild]
   @scala.inline
-  def codefresh: codefresh = "codefresh".asInstanceOf[codefresh]
+  def codefresh_ : codefresh_ = "codefresh".asInstanceOf[codefresh_]
   @scala.inline
-  def codeship: codeship = "codeship".asInstanceOf[codeship]
+  def codeship_ : codeship_ = "codeship".asInstanceOf[codeship_]
   @scala.inline
-  def drone: drone = "drone".asInstanceOf[drone]
+  def drone_ : drone_ = "drone".asInstanceOf[drone_]
   @scala.inline
   def gitlab: gitlab = "gitlab".asInstanceOf[gitlab]
   @scala.inline
-  def jenkins: jenkins = "jenkins".asInstanceOf[jenkins]
+  def jenkins_ : jenkins_ = "jenkins".asInstanceOf[jenkins_]
   @scala.inline
   def sail: sail = "sail".asInstanceOf[sail]
   @scala.inline
-  def semaphore: semaphore = "semaphore".asInstanceOf[semaphore]
+  def semaphore_ : semaphore_ = "semaphore".asInstanceOf[semaphore_]
   @scala.inline
-  def shippable: shippable = "shippable".asInstanceOf[shippable]
+  def shippable_ : shippable_ = "shippable".asInstanceOf[shippable_]
   @scala.inline
-  def teamcity: teamcity = "teamcity".asInstanceOf[teamcity]
+  def teamcity_ : teamcity_ = "teamcity".asInstanceOf[teamcity_]
   @scala.inline
   def travis: travis = "travis".asInstanceOf[travis]
   @scala.inline
   def vsts: vsts = "vsts".asInstanceOf[vsts]
   @scala.inline
-  def wercker: wercker = "wercker".asInstanceOf[wercker]
+  def wercker_ : wercker_ = "wercker".asInstanceOf[wercker_]
 }
 

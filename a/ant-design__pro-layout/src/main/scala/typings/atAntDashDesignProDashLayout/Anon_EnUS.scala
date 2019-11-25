@@ -18,9 +18,9 @@ object Anon_EnUS {
     `zh-TW`: Anon_Appsettingcontentwidth
   ): Anon_EnUS = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("en-US")(`en-US`)
-    __obj.updateDynamic("zh-CN")(`zh-CN`)
-    __obj.updateDynamic("zh-TW")(`zh-TW`)
+    __obj.updateDynamic("en-US")(`en-US`.asInstanceOf[js.Any])
+    __obj.updateDynamic("zh-CN")(`zh-CN`.asInstanceOf[js.Any])
+    __obj.updateDynamic("zh-TW")(`zh-TW`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EnUS]
   }
 }

@@ -35,17 +35,17 @@ object Anon_Author {
     trackbacks: `true` = null
   ): Anon_Author = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (`custom-fields` != null) __obj.updateDynamic("custom-fields")(`custom-fields`)
-    if (editor != null) __obj.updateDynamic("editor")(editor)
-    if (excerpt != null) __obj.updateDynamic("excerpt")(excerpt)
-    if (`page-attributes` != null) __obj.updateDynamic("page-attributes")(`page-attributes`)
-    if (`post-formats` != null) __obj.updateDynamic("post-formats")(`post-formats`)
-    if (revisions != null) __obj.updateDynamic("revisions")(revisions)
-    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (trackbacks != null) __obj.updateDynamic("trackbacks")(trackbacks)
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (`custom-fields` != null) __obj.updateDynamic("custom-fields")(`custom-fields`.asInstanceOf[js.Any])
+    if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
+    if (excerpt != null) __obj.updateDynamic("excerpt")(excerpt.asInstanceOf[js.Any])
+    if (`page-attributes` != null) __obj.updateDynamic("page-attributes")(`page-attributes`.asInstanceOf[js.Any])
+    if (`post-formats` != null) __obj.updateDynamic("post-formats")(`post-formats`.asInstanceOf[js.Any])
+    if (revisions != null) __obj.updateDynamic("revisions")(revisions.asInstanceOf[js.Any])
+    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (trackbacks != null) __obj.updateDynamic("trackbacks")(trackbacks.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Author]
   }
 }

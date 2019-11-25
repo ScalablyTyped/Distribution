@@ -20,7 +20,7 @@ object ListrTask {
     enabled: /* ctx */ Ctx => Boolean | js.Promise[Boolean] | Observable[Boolean] = null,
     skip: /* ctx */ Ctx => Unit | Boolean | String | js.Promise[Boolean] = null
   ): ListrTask[Ctx] = {
-    val __obj = js.Dynamic.literal(task = js.Any.fromFunction2(task), title = title)
+    val __obj = js.Dynamic.literal(task = js.Any.fromFunction2(task), title = title.asInstanceOf[js.Any])
     if (enabled != null) __obj.updateDynamic("enabled")(js.Any.fromFunction1(enabled))
     if (skip != null) __obj.updateDynamic("skip")(js.Any.fromFunction1(skip))
     __obj.asInstanceOf[ListrTask[Ctx]]

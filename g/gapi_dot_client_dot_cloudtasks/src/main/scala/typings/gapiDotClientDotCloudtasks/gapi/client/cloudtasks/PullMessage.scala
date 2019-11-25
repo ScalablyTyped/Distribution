@@ -22,8 +22,8 @@ object PullMessage {
   @scala.inline
   def apply(payload: String = null, tag: String = null): PullMessage = {
     val __obj = js.Dynamic.literal()
-    if (payload != null) __obj.updateDynamic("payload")(payload)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullMessage]
   }
 }

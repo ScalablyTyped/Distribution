@@ -19,10 +19,10 @@ object HasteConfig {
     hasteImplModulePath: String = null,
     platforms: js.Array[String] = null
   ): HasteConfig = {
-    val __obj = js.Dynamic.literal(providesModuleNodeModules = providesModuleNodeModules)
+    val __obj = js.Dynamic.literal(providesModuleNodeModules = providesModuleNodeModules.asInstanceOf[js.Any])
     if (defaultPlatform != null) __obj.updateDynamic("defaultPlatform")(defaultPlatform.asInstanceOf[js.Any])
-    if (hasteImplModulePath != null) __obj.updateDynamic("hasteImplModulePath")(hasteImplModulePath)
-    if (platforms != null) __obj.updateDynamic("platforms")(platforms)
+    if (hasteImplModulePath != null) __obj.updateDynamic("hasteImplModulePath")(hasteImplModulePath.asInstanceOf[js.Any])
+    if (platforms != null) __obj.updateDynamic("platforms")(platforms.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasteConfig]
   }
 }

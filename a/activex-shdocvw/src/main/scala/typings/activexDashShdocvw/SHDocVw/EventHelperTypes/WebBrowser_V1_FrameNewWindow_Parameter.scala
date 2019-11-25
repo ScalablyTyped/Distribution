@@ -23,7 +23,7 @@ object WebBrowser_V1_FrameNewWindow_Parameter {
     TargetFrameName: String,
     URL: String
   ): WebBrowser_V1_FrameNewWindow_Parameter = {
-    val __obj = js.Dynamic.literal(Flags = Flags, Headers = Headers, PostData = PostData, Processed = Processed, TargetFrameName = TargetFrameName, URL = URL)
+    val __obj = js.Dynamic.literal(Flags = Flags.asInstanceOf[js.Any], Headers = Headers.asInstanceOf[js.Any], PostData = PostData.asInstanceOf[js.Any], Processed = Processed.asInstanceOf[js.Any], TargetFrameName = TargetFrameName.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebBrowser_V1_FrameNewWindow_Parameter]
   }

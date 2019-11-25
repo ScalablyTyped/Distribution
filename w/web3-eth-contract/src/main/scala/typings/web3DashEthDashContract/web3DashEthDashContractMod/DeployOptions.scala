@@ -12,8 +12,8 @@ trait DeployOptions extends js.Object {
 object DeployOptions {
   @scala.inline
   def apply(data: String, arguments: js.Array[_] = null): DeployOptions = {
-    val __obj = js.Dynamic.literal(data = data)
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeployOptions]
   }
 }

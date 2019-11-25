@@ -11,7 +11,7 @@ trait AppsDeleteInstallationParams extends js.Object {
 object AppsDeleteInstallationParams {
   @scala.inline
   def apply(installation_id: Double): AppsDeleteInstallationParams = {
-    val __obj = js.Dynamic.literal(installation_id = installation_id)
+    val __obj = js.Dynamic.literal(installation_id = installation_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AppsDeleteInstallationParams]
   }

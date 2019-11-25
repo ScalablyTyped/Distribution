@@ -42,19 +42,19 @@ object Anon_AllowPickingAppearance {
     vertexCacheOptimize: js.UndefOr[Boolean] = js.undefined
   ): Anon_AllowPickingAppearance = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowPicking)) __obj.updateDynamic("allowPicking")(allowPicking)
-    if (appearance != null) __obj.updateDynamic("appearance")(appearance)
-    if (!js.isUndefined(asynchronous)) __obj.updateDynamic("asynchronous")(asynchronous)
-    if (!js.isUndefined(compressVertices)) __obj.updateDynamic("compressVertices")(compressVertices)
-    if (!js.isUndefined(cull)) __obj.updateDynamic("cull")(cull)
-    if (!js.isUndefined(debugShowBoundingVolume)) __obj.updateDynamic("debugShowBoundingVolume")(debugShowBoundingVolume)
+    if (!js.isUndefined(allowPicking)) __obj.updateDynamic("allowPicking")(allowPicking.asInstanceOf[js.Any])
+    if (appearance != null) __obj.updateDynamic("appearance")(appearance.asInstanceOf[js.Any])
+    if (!js.isUndefined(asynchronous)) __obj.updateDynamic("asynchronous")(asynchronous.asInstanceOf[js.Any])
+    if (!js.isUndefined(compressVertices)) __obj.updateDynamic("compressVertices")(compressVertices.asInstanceOf[js.Any])
+    if (!js.isUndefined(cull)) __obj.updateDynamic("cull")(cull.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugShowBoundingVolume)) __obj.updateDynamic("debugShowBoundingVolume")(debugShowBoundingVolume.asInstanceOf[js.Any])
     if (geometryInstances != null) __obj.updateDynamic("geometryInstances")(geometryInstances.asInstanceOf[js.Any])
-    if (!js.isUndefined(interleave)) __obj.updateDynamic("interleave")(interleave)
-    if (modelMatrix != null) __obj.updateDynamic("modelMatrix")(modelMatrix)
-    if (!js.isUndefined(releaseGeometryInstances)) __obj.updateDynamic("releaseGeometryInstances")(releaseGeometryInstances)
-    if (shadows != null) __obj.updateDynamic("shadows")(shadows)
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
-    if (!js.isUndefined(vertexCacheOptimize)) __obj.updateDynamic("vertexCacheOptimize")(vertexCacheOptimize)
+    if (!js.isUndefined(interleave)) __obj.updateDynamic("interleave")(interleave.asInstanceOf[js.Any])
+    if (modelMatrix != null) __obj.updateDynamic("modelMatrix")(modelMatrix.asInstanceOf[js.Any])
+    if (!js.isUndefined(releaseGeometryInstances)) __obj.updateDynamic("releaseGeometryInstances")(releaseGeometryInstances.asInstanceOf[js.Any])
+    if (shadows != null) __obj.updateDynamic("shadows")(shadows.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertexCacheOptimize)) __obj.updateDynamic("vertexCacheOptimize")(vertexCacheOptimize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AllowPickingAppearance]
   }
 }

@@ -19,7 +19,7 @@ trait Constructor
   def addAll[T](instance: js.Object, sources: js.Array[js.Object]): js.Object = js.native
   def addAll[T](instance: js.Object, sources: js.Array[js.Object], options: ObjectMergeOptions[T]): js.Object = js.native
   def average[T, U](instance: js.Object): Double = js.native
-  def average[T, U](instance: js.Object, map: String): Double = js.native
+  def average[T, U](instance: js.Object, map: java.lang.String): Double = js.native
   def average[T, U](instance: js.Object, map: mapFn[T, U]): Double = js.native
   def clone(instance: js.Object): js.Object = js.native
   def clone(instance: js.Object, deep: Boolean): js.Object = js.native
@@ -37,14 +37,14 @@ trait Constructor
   def find[T](instance: js.Object, search: searchFn[T]): Boolean = js.native
   def forEach[T](
     instance: js.Object,
-    eachFn: js.Function3[/* val */ T, /* key */ String, /* obj */ js.Object, Unit]
+    eachFn: js.Function3[/* val */ T, /* key */ java.lang.String, /* obj */ js.Object, Unit]
   ): js.Object = js.native
-  def fromQueryString[T, U](str: String): js.Object = js.native
-  def fromQueryString[T, U](str: String, options: QueryStringParseOptions[T, U]): js.Object = js.native
-  def get[T](instance: js.Object, key: String): T = js.native
-  def get[T](instance: js.Object, key: String, inherited: Boolean): T = js.native
-  def has(instance: js.Object, key: String): Boolean = js.native
-  def has(instance: js.Object, key: String, inherited: Boolean): Boolean = js.native
+  def fromQueryString[T, U](str: java.lang.String): js.Object = js.native
+  def fromQueryString[T, U](str: java.lang.String, options: QueryStringParseOptions[T, U]): js.Object = js.native
+  def get[T](instance: js.Object, key: java.lang.String): T = js.native
+  def get[T](instance: js.Object, key: java.lang.String, inherited: Boolean): T = js.native
+  def has(instance: js.Object, key: java.lang.String): Boolean = js.native
+  def has(instance: js.Object, key: java.lang.String, inherited: Boolean): Boolean = js.native
   def intersect(instance: js.Object, obj: js.Object): js.Object = js.native
   def invert(instance: js.Object): js.Object = js.native
   def invert(instance: js.Object, multi: Boolean): js.Object = js.native
@@ -65,20 +65,20 @@ trait Constructor
   def keys[T](instance: js.Object): js.Array[T] = js.native
   def least[T, U](instance: js.Object): T = js.native
   def least[T, U](instance: js.Object, all: Boolean): T = js.native
-  def least[T, U](instance: js.Object, all: Boolean, map: String): T = js.native
+  def least[T, U](instance: js.Object, all: Boolean, map: java.lang.String): T = js.native
   def least[T, U](instance: js.Object, all: Boolean, map: mapFn[T, U]): T = js.native
-  def least[T, U](instance: js.Object, map: String): T = js.native
+  def least[T, U](instance: js.Object, map: java.lang.String): T = js.native
   def least[T, U](instance: js.Object, map: mapFn[T, U]): T = js.native
-  def map[T, U](instance: js.Object, map: String): js.Object = js.native
+  def map[T, U](instance: js.Object, map: java.lang.String): js.Object = js.native
   def map[T, U](instance: js.Object, map: mapFn[T, U]): js.Object = js.native
   def max[T, U](instance: js.Object): T = js.native
   def max[T, U](instance: js.Object, all: Boolean): T = js.native
-  def max[T, U](instance: js.Object, all: Boolean, map: String): T = js.native
+  def max[T, U](instance: js.Object, all: Boolean, map: java.lang.String): T = js.native
   def max[T, U](instance: js.Object, all: Boolean, map: mapFn[T, U]): T = js.native
-  def max[T, U](instance: js.Object, map: String): T = js.native
+  def max[T, U](instance: js.Object, map: java.lang.String): T = js.native
   def max[T, U](instance: js.Object, map: mapFn[T, U]): T = js.native
   def median[T, U](instance: js.Object): Double = js.native
-  def median[T, U](instance: js.Object, map: String): Double = js.native
+  def median[T, U](instance: js.Object, map: java.lang.String): Double = js.native
   def median[T, U](instance: js.Object, map: mapFn[T, U]): Double = js.native
   def merge[T](instance: js.Object, source: js.Object): js.Object = js.native
   def merge[T](instance: js.Object, source: js.Object, options: ObjectMergeOptions[T]): js.Object = js.native
@@ -86,44 +86,44 @@ trait Constructor
   def mergeAll[T](instance: js.Object, sources: js.Array[js.Object], options: ObjectMergeOptions[T]): js.Object = js.native
   def min[T, U](instance: js.Object): T = js.native
   def min[T, U](instance: js.Object, all: Boolean): T = js.native
-  def min[T, U](instance: js.Object, all: Boolean, map: String): T = js.native
+  def min[T, U](instance: js.Object, all: Boolean, map: java.lang.String): T = js.native
   def min[T, U](instance: js.Object, all: Boolean, map: mapFn[T, U]): T = js.native
-  def min[T, U](instance: js.Object, map: String): T = js.native
+  def min[T, U](instance: js.Object, map: java.lang.String): T = js.native
   def min[T, U](instance: js.Object, map: mapFn[T, U]): T = js.native
   def most[T, U](instance: js.Object): T = js.native
   def most[T, U](instance: js.Object, all: Boolean): T = js.native
-  def most[T, U](instance: js.Object, all: Boolean, map: String): T = js.native
+  def most[T, U](instance: js.Object, all: Boolean, map: java.lang.String): T = js.native
   def most[T, U](instance: js.Object, all: Boolean, map: mapFn[T, U]): T = js.native
-  def most[T, U](instance: js.Object, map: String): T = js.native
+  def most[T, U](instance: js.Object, map: java.lang.String): T = js.native
   def most[T, U](instance: js.Object, map: mapFn[T, U]): T = js.native
   def none[T](instance: js.Object, search: T): Boolean = js.native
   def none[T](instance: js.Object, search: searchFn[T]): Boolean = js.native
   def reduce[T](
     instance: js.Object,
-    reduceFn: js.Function4[/* acc */ T, /* val */ T, /* key */ String, /* obj */ js.Object, Unit]
+    reduceFn: js.Function4[/* acc */ T, /* val */ T, /* key */ java.lang.String, /* obj */ js.Object, Unit]
   ): T = js.native
   def reduce[T](
     instance: js.Object,
-    reduceFn: js.Function4[/* acc */ T, /* val */ T, /* key */ String, /* obj */ js.Object, Unit],
+    reduceFn: js.Function4[/* acc */ T, /* val */ T, /* key */ java.lang.String, /* obj */ js.Object, Unit],
     init: js.Any
   ): T = js.native
-  def reject(instance: js.Object, find: String): js.Object = js.native
-  def reject(instance: js.Object, find: js.Array[String]): js.Object = js.native
+  def reject(instance: js.Object, find: java.lang.String): js.Object = js.native
+  def reject(instance: js.Object, find: js.Array[java.lang.String]): js.Object = js.native
   def reject(instance: js.Object, find: js.Object): js.Object = js.native
   def reject(instance: js.Object, find: typings.std.RegExp): js.Object = js.native
   def remove[T](instance: js.Object, search: T): js.Object = js.native
   def remove[T](instance: js.Object, search: searchFn[T]): js.Object = js.native
-  def select(instance: js.Object, find: String): js.Object = js.native
-  def select(instance: js.Object, find: js.Array[String]): js.Object = js.native
+  def select(instance: js.Object, find: java.lang.String): js.Object = js.native
+  def select(instance: js.Object, find: js.Array[java.lang.String]): js.Object = js.native
   def select(instance: js.Object, find: js.Object): js.Object = js.native
   def select(instance: js.Object, find: typings.std.RegExp): js.Object = js.native
-  def set[T](instance: js.Object, key: String, `val`: T): js.Object = js.native
+  def set[T](instance: js.Object, key: java.lang.String, `val`: T): js.Object = js.native
   def size(instance: js.Object): Double = js.native
   def some[T](instance: js.Object, search: T): Boolean = js.native
   def some[T](instance: js.Object, search: searchFn[T]): Boolean = js.native
   def subtract(instance: js.Object, obj: js.Object): js.Object = js.native
   def sum[T, U](instance: js.Object): Double = js.native
-  def sum[T, U](instance: js.Object, map: String): Double = js.native
+  def sum[T, U](instance: js.Object, map: java.lang.String): Double = js.native
   def sum[T, U](instance: js.Object, map: mapFn[T, U]): Double = js.native
   def tap(instance: js.Object, tapFn: js.Function1[/* obj */ js.Object, _]): js.Object = js.native
   def toQueryString[T, U](instance: js.Object): js.Object = js.native

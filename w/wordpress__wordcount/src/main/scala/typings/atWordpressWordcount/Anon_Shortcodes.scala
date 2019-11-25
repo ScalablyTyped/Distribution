@@ -15,8 +15,8 @@ object Anon_Shortcodes {
   @scala.inline
   def apply(shortcodes: js.Array[String] = null, `type`: CountType = null): Anon_Shortcodes = {
     val __obj = js.Dynamic.literal()
-    if (shortcodes != null) __obj.updateDynamic("shortcodes")(shortcodes)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (shortcodes != null) __obj.updateDynamic("shortcodes")(shortcodes.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Shortcodes]
   }
 }

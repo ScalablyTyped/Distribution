@@ -27,7 +27,7 @@ object ReposListCommentsForCommitParams {
     page: Int | Double = null,
     per_page: Int | Double = null
   ): ReposListCommentsForCommitParams = {
-    val __obj = js.Dynamic.literal(commit_sha = commit_sha, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(commit_sha = commit_sha.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposListCommentsForCommitParams]

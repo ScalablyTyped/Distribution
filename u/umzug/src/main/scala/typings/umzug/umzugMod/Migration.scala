@@ -12,7 +12,7 @@ trait Migration extends js.Object {
 object Migration {
   @scala.inline
   def apply(file: String, path: String): Migration = {
-    val __obj = js.Dynamic.literal(file = file, path = path)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Migration]
   }

@@ -32,7 +32,7 @@ object OnErrorOccurredDetails {
     url: String,
     webContentsId: Int | Double = null
   ): OnErrorOccurredDetails = {
-    val __obj = js.Dynamic.literal(error = error, fromCache = fromCache, id = id, method = method, referrer = referrer, resourceType = resourceType, timestamp = timestamp, url = url)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], fromCache = fromCache.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], referrer = referrer.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (webContentsId != null) __obj.updateDynamic("webContentsId")(webContentsId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnErrorOccurredDetails]
   }

@@ -59,15 +59,15 @@ object WebRequest {
     version: String = null
   ): WebRequest = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebRequest]
   }
 }

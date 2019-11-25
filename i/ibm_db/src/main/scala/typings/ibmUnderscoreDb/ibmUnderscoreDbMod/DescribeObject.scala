@@ -21,11 +21,11 @@ object DescribeObject {
     table: String = null,
     `type`: String = null
   ): DescribeObject = {
-    val __obj = js.Dynamic.literal(database = database)
-    if (column != null) __obj.updateDynamic("column")(column)
-    if (schema != null) __obj.updateDynamic("schema")(schema)
-    if (table != null) __obj.updateDynamic("table")(table)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any])
+    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeObject]
   }
 }

@@ -14,7 +14,7 @@ trait Anon_NameTargetEventTarget extends js.Object {
 object Anon_NameTargetEventTarget {
   @scala.inline
   def apply(name: GlobalTargetName, target: EventTarget): Anon_NameTargetEventTarget = {
-    val __obj = js.Dynamic.literal(name = name, target = target)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NameTargetEventTarget]
   }

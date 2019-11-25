@@ -36,8 +36,8 @@ object Anon_BufferSize {
     threads: js.Array[String] = null,
     windowLength: Int | Double = null
   ): Anon_BufferSize = {
-    val __obj = js.Dynamic.literal(bufferSize = bufferSize, features = features, interval = interval)
-    if (threads != null) __obj.updateDynamic("threads")(threads)
+    val __obj = js.Dynamic.literal(bufferSize = bufferSize.asInstanceOf[js.Any], features = features.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any])
+    if (threads != null) __obj.updateDynamic("threads")(threads.asInstanceOf[js.Any])
     if (windowLength != null) __obj.updateDynamic("windowLength")(windowLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BufferSize]
   }

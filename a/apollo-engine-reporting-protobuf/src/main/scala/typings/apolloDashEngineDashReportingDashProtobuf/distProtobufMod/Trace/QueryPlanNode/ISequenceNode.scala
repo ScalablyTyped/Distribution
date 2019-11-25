@@ -15,7 +15,7 @@ object ISequenceNode {
   @scala.inline
   def apply(nodes: js.Array[IQueryPlanNode] = null): ISequenceNode = {
     val __obj = js.Dynamic.literal()
-    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISequenceNode]
   }
 }

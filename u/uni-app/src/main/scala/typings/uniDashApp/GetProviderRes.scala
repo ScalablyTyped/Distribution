@@ -27,7 +27,7 @@ object GetProviderRes {
   @scala.inline
   def apply(provider: js.Array[_] = null, service: oauth | share | payment | push = null): GetProviderRes = {
     val __obj = js.Dynamic.literal()
-    if (provider != null) __obj.updateDynamic("provider")(provider)
+    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
     if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetProviderRes]
   }

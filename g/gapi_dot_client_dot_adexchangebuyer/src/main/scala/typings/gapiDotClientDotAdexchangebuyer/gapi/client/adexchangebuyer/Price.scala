@@ -25,9 +25,9 @@ object Price {
   ): Price = {
     val __obj = js.Dynamic.literal()
     if (amountMicros != null) __obj.updateDynamic("amountMicros")(amountMicros.asInstanceOf[js.Any])
-    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode)
+    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode.asInstanceOf[js.Any])
     if (expectedCpmMicros != null) __obj.updateDynamic("expectedCpmMicros")(expectedCpmMicros.asInstanceOf[js.Any])
-    if (pricingType != null) __obj.updateDynamic("pricingType")(pricingType)
+    if (pricingType != null) __obj.updateDynamic("pricingType")(pricingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Price]
   }
 }

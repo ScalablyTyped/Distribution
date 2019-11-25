@@ -39,11 +39,11 @@ object VisualInfo {
     displayText: String = null
   ): VisualInfo = {
     val __obj = js.Dynamic.literal()
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (displayText != null) __obj.updateDynamic("displayText")(displayText)
+    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (displayText != null) __obj.updateDynamic("displayText")(displayText.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisualInfo]
   }
 }

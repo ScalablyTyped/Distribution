@@ -21,12 +21,12 @@ object ReadThumbnailOptions {
     size: String = null
   ): ReadThumbnailOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrayBuffer)) __obj.updateDynamic("arrayBuffer")(arrayBuffer)
-    if (!js.isUndefined(blob)) __obj.updateDynamic("blob")(blob)
-    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (!js.isUndefined(png)) __obj.updateDynamic("png")(png)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (!js.isUndefined(arrayBuffer)) __obj.updateDynamic("arrayBuffer")(arrayBuffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(blob)) __obj.updateDynamic("blob")(blob.asInstanceOf[js.Any])
+    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(png)) __obj.updateDynamic("png")(png.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadThumbnailOptions]
   }
 }

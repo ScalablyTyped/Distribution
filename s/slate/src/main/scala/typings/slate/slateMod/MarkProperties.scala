@@ -16,9 +16,9 @@ object MarkProperties {
   @scala.inline
   def apply(`type`: String, data: Data | StringDictionary[js.Any] = null, `object`: mark = null): MarkProperties = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkProperties]
   }
 }

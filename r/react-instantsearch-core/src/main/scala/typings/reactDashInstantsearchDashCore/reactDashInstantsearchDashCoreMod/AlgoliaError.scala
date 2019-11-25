@@ -15,7 +15,7 @@ trait AlgoliaError extends js.Object {
 object AlgoliaError {
   @scala.inline
   def apply(debugData: js.Array[_], message: String, name: String, stack: String, statusCode: Double): AlgoliaError = {
-    val __obj = js.Dynamic.literal(debugData = debugData, message = message, name = name, stack = stack, statusCode = statusCode)
+    val __obj = js.Dynamic.literal(debugData = debugData.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AlgoliaError]
   }

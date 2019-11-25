@@ -17,8 +17,8 @@ object Anon_All {
     StringDictionary: /* integration */ StringDictionary[js.UndefOr[Boolean]] = null
   ): Anon_All = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(All)) __obj.updateDynamic("All")(All)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(All)) __obj.updateDynamic("All")(All.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_All]
   }
 }

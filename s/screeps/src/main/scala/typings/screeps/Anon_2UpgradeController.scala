@@ -12,7 +12,7 @@ trait Anon_2UpgradeController extends js.Object {
 object Anon_2UpgradeController {
   @scala.inline
   def apply(upgradeController: `2`): Anon_2UpgradeController = {
-    val __obj = js.Dynamic.literal(upgradeController = upgradeController)
+    val __obj = js.Dynamic.literal(upgradeController = upgradeController.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_2UpgradeController]
   }

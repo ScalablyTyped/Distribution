@@ -15,7 +15,7 @@ trait DownloadResult extends js.Object {
 object DownloadResult {
   @scala.inline
   def apply(bytesWritten: Double, jobId: Double, statusCode: Double): DownloadResult = {
-    val __obj = js.Dynamic.literal(bytesWritten = bytesWritten, jobId = jobId, statusCode = statusCode)
+    val __obj = js.Dynamic.literal(bytesWritten = bytesWritten.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DownloadResult]
   }

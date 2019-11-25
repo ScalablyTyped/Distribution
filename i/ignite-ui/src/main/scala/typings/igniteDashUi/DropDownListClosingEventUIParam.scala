@@ -27,10 +27,10 @@ object DropDownListClosingEventUIParam {
   @scala.inline
   def apply(editor: js.Any = null, editorInput: js.Any = null, list: js.Any = null, owner: js.Any = null): DropDownListClosingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (editor != null) __obj.updateDynamic("editor")(editor)
-    if (editorInput != null) __obj.updateDynamic("editorInput")(editorInput)
-    if (list != null) __obj.updateDynamic("list")(list)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
+    if (editorInput != null) __obj.updateDynamic("editorInput")(editorInput.asInstanceOf[js.Any])
+    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropDownListClosingEventUIParam]
   }
 }

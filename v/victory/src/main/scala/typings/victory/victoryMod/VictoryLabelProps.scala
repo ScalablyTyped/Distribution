@@ -3,9 +3,6 @@ package typings.victory.victoryMod
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.DOMAttributes
 import typings.victory.Anon_X
-import typings.victory.Fn_String
-import typings.victory.Fn_TextAnchorType
-import typings.victory.Fn_VerticalAnchorType
 import typings.victory.victoryStrings.parallel
 import typings.victory.victoryStrings.perpendicular
 import typings.victory.victoryStrings.vertical
@@ -101,16 +98,16 @@ trait VictoryLabelProps extends js.Object {
   /**
     * The textAnchor prop defines how the text is horizontally positioned relative to the given `x` and `y` coordinates.
     */
-  var textAnchor: js.UndefOr[TextAnchorType | Fn_TextAnchorType] = js.undefined
+  var textAnchor: js.UndefOr[TextAnchorType | js.Function0[TextAnchorType]] = js.undefined
   /**
     * The transform prop applies a transform to the rendered `<text>` element.
     * In addition to being a string, it can be an object containing transform definitions for easier authoring.
     */
-  var transform: js.UndefOr[String | js.Object | Fn_String] = js.undefined
+  var transform: js.UndefOr[String | js.Object | (js.Function0[String | js.Object])] = js.undefined
   /**
     * The verticalAnchor prop defines how the text is vertically positioned relative to the given `x` and `y` coordinates.
     */
-  var verticalAnchor: js.UndefOr[VerticalAnchorType | Fn_VerticalAnchorType] = js.undefined
+  var verticalAnchor: js.UndefOr[VerticalAnchorType | js.Function0[VerticalAnchorType]] = js.undefined
   /**
     * The x prop defines the x coordinate to use as a basis for horizontal positioning.
     */
@@ -140,9 +137,9 @@ object VictoryLabelProps {
     renderInPortal: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties | js.Array[CSSProperties] = null,
     text: js.Array[String] | StringOrNumberOrCallback = null,
-    textAnchor: TextAnchorType | Fn_TextAnchorType = null,
-    transform: String | js.Object | Fn_String = null,
-    verticalAnchor: VerticalAnchorType | Fn_VerticalAnchorType = null,
+    textAnchor: TextAnchorType | js.Function0[TextAnchorType] = null,
+    transform: String | js.Object | (js.Function0[String | js.Object]) = null,
+    verticalAnchor: VerticalAnchorType | js.Function0[VerticalAnchorType] = null,
     x: Int | Double = null,
     y: Int | Double = null
   ): VictoryLabelProps = {
@@ -150,17 +147,17 @@ object VictoryLabelProps {
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (capHeight != null) __obj.updateDynamic("capHeight")(capHeight.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (datum != null) __obj.updateDynamic("datum")(datum)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (datum != null) __obj.updateDynamic("datum")(datum.asInstanceOf[js.Any])
     if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
     if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events)
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])
     if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (!js.isUndefined(polar)) __obj.updateDynamic("polar")(polar)
-    if (!js.isUndefined(renderInPortal)) __obj.updateDynamic("renderInPortal")(renderInPortal)
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (!js.isUndefined(polar)) __obj.updateDynamic("polar")(polar.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderInPortal)) __obj.updateDynamic("renderInPortal")(renderInPortal.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textAnchor != null) __obj.updateDynamic("textAnchor")(textAnchor.asInstanceOf[js.Any])

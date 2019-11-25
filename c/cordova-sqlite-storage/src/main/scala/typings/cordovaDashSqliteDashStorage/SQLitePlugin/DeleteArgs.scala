@@ -13,9 +13,9 @@ trait DeleteArgs extends js.Object {
 object DeleteArgs {
   @scala.inline
   def apply(name: String, iosDatabaseLocation: String = null, location: String = null): DeleteArgs = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (iosDatabaseLocation != null) __obj.updateDynamic("iosDatabaseLocation")(iosDatabaseLocation)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (iosDatabaseLocation != null) __obj.updateDynamic("iosDatabaseLocation")(iosDatabaseLocation.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteArgs]
   }
 }

@@ -12,7 +12,7 @@ object LiveChatMessageRetractedDetails {
   @scala.inline
   def apply(retractedMessageId: String = null): LiveChatMessageRetractedDetails = {
     val __obj = js.Dynamic.literal()
-    if (retractedMessageId != null) __obj.updateDynamic("retractedMessageId")(retractedMessageId)
+    if (retractedMessageId != null) __obj.updateDynamic("retractedMessageId")(retractedMessageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveChatMessageRetractedDetails]
   }
 }

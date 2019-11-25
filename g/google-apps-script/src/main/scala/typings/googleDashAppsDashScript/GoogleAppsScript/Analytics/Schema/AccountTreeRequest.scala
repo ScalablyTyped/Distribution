@@ -24,12 +24,12 @@ object AccountTreeRequest {
     websiteUrl: String = null
   ): AccountTreeRequest = {
     val __obj = js.Dynamic.literal()
-    if (accountName != null) __obj.updateDynamic("accountName")(accountName)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (profileName != null) __obj.updateDynamic("profileName")(profileName)
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
-    if (webpropertyName != null) __obj.updateDynamic("webpropertyName")(webpropertyName)
-    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl)
+    if (accountName != null) __obj.updateDynamic("accountName")(accountName.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (profileName != null) __obj.updateDynamic("profileName")(profileName.asInstanceOf[js.Any])
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
+    if (webpropertyName != null) __obj.updateDynamic("webpropertyName")(webpropertyName.asInstanceOf[js.Any])
+    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountTreeRequest]
   }
 }

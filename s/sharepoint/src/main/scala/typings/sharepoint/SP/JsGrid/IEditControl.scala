@@ -56,8 +56,8 @@ object IEditControl {
     if (OnValueChanged != null) __obj.updateDynamic("OnValueChanged")(js.Any.fromFunction1(OnValueChanged))
     if (SetSize != null) __obj.updateDynamic("SetSize")(js.Any.fromFunction2(SetSize))
     if (SetValue != null) __obj.updateDynamic("SetValue")(js.Any.fromFunction1(SetValue))
-    if (SupportedReadMode != null) __obj.updateDynamic("SupportedReadMode")(SupportedReadMode)
-    if (SupportedWriteMode != null) __obj.updateDynamic("SupportedWriteMode")(SupportedWriteMode)
+    if (SupportedReadMode != null) __obj.updateDynamic("SupportedReadMode")(SupportedReadMode.asInstanceOf[js.Any])
+    if (SupportedWriteMode != null) __obj.updateDynamic("SupportedWriteMode")(SupportedWriteMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditControl]
   }
 }

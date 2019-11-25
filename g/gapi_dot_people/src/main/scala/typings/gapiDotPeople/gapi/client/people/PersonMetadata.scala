@@ -21,7 +21,7 @@ object PersonMetadata {
     previousResourceNames: js.Array[String],
     sources: js.Array[Source]
   ): PersonMetadata = {
-    val __obj = js.Dynamic.literal(deleted = deleted, linkedPeopleResourceNames = linkedPeopleResourceNames, objectType = objectType, previousResourceNames = previousResourceNames, sources = sources)
+    val __obj = js.Dynamic.literal(deleted = deleted.asInstanceOf[js.Any], linkedPeopleResourceNames = linkedPeopleResourceNames.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any], previousResourceNames = previousResourceNames.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PersonMetadata]
   }

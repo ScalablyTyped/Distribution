@@ -24,8 +24,8 @@ trait ListTenantsResult extends js.Object {
 object ListTenantsResult {
   @scala.inline
   def apply(tenants: js.Array[Tenant], pageToken: String = null): ListTenantsResult = {
-    val __obj = js.Dynamic.literal(tenants = tenants)
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    val __obj = js.Dynamic.literal(tenants = tenants.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTenantsResult]
   }
 }

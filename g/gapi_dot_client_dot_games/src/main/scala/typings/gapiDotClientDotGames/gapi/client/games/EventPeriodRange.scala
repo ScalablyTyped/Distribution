@@ -17,9 +17,9 @@ object EventPeriodRange {
   @scala.inline
   def apply(kind: String = null, periodEndMillis: String = null, periodStartMillis: String = null): EventPeriodRange = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (periodEndMillis != null) __obj.updateDynamic("periodEndMillis")(periodEndMillis)
-    if (periodStartMillis != null) __obj.updateDynamic("periodStartMillis")(periodStartMillis)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (periodEndMillis != null) __obj.updateDynamic("periodEndMillis")(periodEndMillis.asInstanceOf[js.Any])
+    if (periodStartMillis != null) __obj.updateDynamic("periodStartMillis")(periodStartMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventPeriodRange]
   }
 }

@@ -51,14 +51,14 @@ object Service {
     retry: Int | Double = null,
     timeout: Int | Double = null
   ): Service = {
-    val __obj = js.Dynamic.literal(balance = balance.asInstanceOf[js.Any], pack = pack, protocol = protocol.asInstanceOf[js.Any], server = server, unpack = unpack)
-    if (data != null) __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(balance = balance.asInstanceOf[js.Any], pack = pack.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any], unpack = unpack.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(hybird)) __obj.updateDynamic("hybird")(hybird)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(hybird)) __obj.updateDynamic("hybird")(hybird.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Service]

@@ -25,7 +25,7 @@ object ServerStreamFileResponseOptionsWithError {
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (statCheck != null) __obj.updateDynamic("statCheck")(js.Any.fromFunction3(statCheck))
-    if (!js.isUndefined(waitForTrailers)) __obj.updateDynamic("waitForTrailers")(waitForTrailers)
+    if (!js.isUndefined(waitForTrailers)) __obj.updateDynamic("waitForTrailers")(waitForTrailers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerStreamFileResponseOptionsWithError]
   }
 }

@@ -49,17 +49,17 @@ object DumpOptions {
     styles: StringDictionary[js.Any] = null
   ): DumpOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(condenseFlow)) __obj.updateDynamic("condenseFlow")(condenseFlow)
+    if (!js.isUndefined(condenseFlow)) __obj.updateDynamic("condenseFlow")(condenseFlow.asInstanceOf[js.Any])
     if (flowLevel != null) __obj.updateDynamic("flowLevel")(flowLevel.asInstanceOf[js.Any])
     if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(noArrayIndent)) __obj.updateDynamic("noArrayIndent")(noArrayIndent)
-    if (!js.isUndefined(noCompatMode)) __obj.updateDynamic("noCompatMode")(noCompatMode)
-    if (!js.isUndefined(noRefs)) __obj.updateDynamic("noRefs")(noRefs)
-    if (schema != null) __obj.updateDynamic("schema")(schema)
-    if (!js.isUndefined(skipInvalid)) __obj.updateDynamic("skipInvalid")(skipInvalid)
+    if (!js.isUndefined(noArrayIndent)) __obj.updateDynamic("noArrayIndent")(noArrayIndent.asInstanceOf[js.Any])
+    if (!js.isUndefined(noCompatMode)) __obj.updateDynamic("noCompatMode")(noCompatMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(noRefs)) __obj.updateDynamic("noRefs")(noRefs.asInstanceOf[js.Any])
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipInvalid)) __obj.updateDynamic("skipInvalid")(skipInvalid.asInstanceOf[js.Any])
     if (sortKeys != null) __obj.updateDynamic("sortKeys")(sortKeys.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[DumpOptions]
   }
 }

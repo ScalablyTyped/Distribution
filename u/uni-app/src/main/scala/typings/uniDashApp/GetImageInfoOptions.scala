@@ -34,7 +34,7 @@ object GetImageInfoOptions {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (src != null) __obj.updateDynamic("src")(src)
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetImageInfoOptions]
   }

@@ -29,12 +29,12 @@ object Argon2BrowserHashOptions {
     `type`: ArgonType = null
   ): Argon2BrowserHashOptions = {
     val __obj = js.Dynamic.literal(pass = pass.asInstanceOf[js.Any], salt = salt.asInstanceOf[js.Any])
-    if (distPath != null) __obj.updateDynamic("distPath")(distPath)
+    if (distPath != null) __obj.updateDynamic("distPath")(distPath.asInstanceOf[js.Any])
     if (hashLen != null) __obj.updateDynamic("hashLen")(hashLen.asInstanceOf[js.Any])
     if (mem != null) __obj.updateDynamic("mem")(mem.asInstanceOf[js.Any])
     if (parallelism != null) __obj.updateDynamic("parallelism")(parallelism.asInstanceOf[js.Any])
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Argon2BrowserHashOptions]
   }
 }

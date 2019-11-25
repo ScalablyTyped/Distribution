@@ -23,7 +23,7 @@ object FsCommand {
   ): FsCommand = {
     val __obj = js.Dynamic.literal()
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (positionOption != null) __obj.updateDynamic("positionOption")(positionOption)
+    if (positionOption != null) __obj.updateDynamic("positionOption")(positionOption.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (windowHeight != null) __obj.updateDynamic("windowHeight")(windowHeight.asInstanceOf[js.Any])
     if (windowWidth != null) __obj.updateDynamic("windowWidth")(windowWidth.asInstanceOf[js.Any])

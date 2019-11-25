@@ -82,9 +82,9 @@ object ojGanttSettableProperties {
     dependencyData: DataProvider[K1, D1] = null,
     taskData: DataProvider[K2, D2] = null
   ): ojGanttSettableProperties[K1, K2, D1, D2] = {
-    val __obj = js.Dynamic.literal(animationOnDataChange = animationOnDataChange.asInstanceOf[js.Any], animationOnDisplay = animationOnDisplay.asInstanceOf[js.Any], as = as, axisPosition = axisPosition.asInstanceOf[js.Any], dnd = dnd, end = end, gridlines = gridlines, majorAxis = majorAxis, minorAxis = minorAxis, referenceObjects = referenceObjects, rowAxis = rowAxis, rowDefaults = rowDefaults, scrollPosition = scrollPosition, selection = selection, selectionMode = selectionMode.asInstanceOf[js.Any], start = start, taskDefaults = taskDefaults, tooltip = tooltip, trackResize = trackResize.asInstanceOf[js.Any], translations = translations, valueFormats = valueFormats, viewportEnd = viewportEnd, viewportStart = viewportStart)
-    if (dependencyData != null) __obj.updateDynamic("dependencyData")(dependencyData)
-    if (taskData != null) __obj.updateDynamic("taskData")(taskData)
+    val __obj = js.Dynamic.literal(animationOnDataChange = animationOnDataChange.asInstanceOf[js.Any], animationOnDisplay = animationOnDisplay.asInstanceOf[js.Any], as = as.asInstanceOf[js.Any], axisPosition = axisPosition.asInstanceOf[js.Any], dnd = dnd.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], gridlines = gridlines.asInstanceOf[js.Any], majorAxis = majorAxis.asInstanceOf[js.Any], minorAxis = minorAxis.asInstanceOf[js.Any], referenceObjects = referenceObjects.asInstanceOf[js.Any], rowAxis = rowAxis.asInstanceOf[js.Any], rowDefaults = rowDefaults.asInstanceOf[js.Any], scrollPosition = scrollPosition.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], taskDefaults = taskDefaults.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valueFormats = valueFormats.asInstanceOf[js.Any], viewportEnd = viewportEnd.asInstanceOf[js.Any], viewportStart = viewportStart.asInstanceOf[js.Any])
+    if (dependencyData != null) __obj.updateDynamic("dependencyData")(dependencyData.asInstanceOf[js.Any])
+    if (taskData != null) __obj.updateDynamic("taskData")(taskData.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojGanttSettableProperties[K1, K2, D1, D2]]
   }
 }

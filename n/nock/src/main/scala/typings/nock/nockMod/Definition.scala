@@ -32,13 +32,13 @@ object Definition {
     response: ReplyBody = null,
     status: Int | Double = null
   ): Definition = {
-    val __obj = js.Dynamic.literal(path = path, scope = scope)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (reqheaders != null) __obj.updateDynamic("reqheaders")(reqheaders)
+    if (reqheaders != null) __obj.updateDynamic("reqheaders")(reqheaders.asInstanceOf[js.Any])
     if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Definition]

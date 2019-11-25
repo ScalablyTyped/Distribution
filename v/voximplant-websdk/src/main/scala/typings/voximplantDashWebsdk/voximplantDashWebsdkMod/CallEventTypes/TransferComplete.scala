@@ -19,7 +19,7 @@ trait TransferComplete extends VoxImplantCallEvent {
 object TransferComplete {
   @scala.inline
   def apply(call: Call): TransferComplete = {
-    val __obj = js.Dynamic.literal(call = call)
+    val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TransferComplete]
   }

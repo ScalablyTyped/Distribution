@@ -14,9 +14,9 @@ object IdentifierBearer {
   @scala.inline
   def apply(DelegationSetId: String = null, HostedZoneId: String = null, Id: String = null): IdentifierBearer = {
     val __obj = js.Dynamic.literal()
-    if (DelegationSetId != null) __obj.updateDynamic("DelegationSetId")(DelegationSetId)
-    if (HostedZoneId != null) __obj.updateDynamic("HostedZoneId")(HostedZoneId)
-    if (Id != null) __obj.updateDynamic("Id")(Id)
+    if (DelegationSetId != null) __obj.updateDynamic("DelegationSetId")(DelegationSetId.asInstanceOf[js.Any])
+    if (HostedZoneId != null) __obj.updateDynamic("HostedZoneId")(HostedZoneId.asInstanceOf[js.Any])
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentifierBearer]
   }
 }

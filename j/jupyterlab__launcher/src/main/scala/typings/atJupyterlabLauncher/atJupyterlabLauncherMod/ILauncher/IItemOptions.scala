@@ -68,10 +68,10 @@ object IItemOptions {
     kernelIconUrl: String = null,
     rank: Int | Double = null
   ): IItemOptions = {
-    val __obj = js.Dynamic.literal(command = command)
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (kernelIconUrl != null) __obj.updateDynamic("kernelIconUrl")(kernelIconUrl)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (kernelIconUrl != null) __obj.updateDynamic("kernelIconUrl")(kernelIconUrl.asInstanceOf[js.Any])
     if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItemOptions]
   }

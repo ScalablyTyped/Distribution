@@ -28,12 +28,12 @@ object Document {
     servers: js.Array[ServerObject] = null,
     tags: js.Array[TagObject] = null
   ): Document = {
-    val __obj = js.Dynamic.literal(info = info, openapi = openapi, paths = paths)
-    if (components != null) __obj.updateDynamic("components")(components)
-    if (externalDocs != null) __obj.updateDynamic("externalDocs")(externalDocs)
-    if (security != null) __obj.updateDynamic("security")(security)
-    if (servers != null) __obj.updateDynamic("servers")(servers)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], openapi = openapi.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any])
+    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
+    if (externalDocs != null) __obj.updateDynamic("externalDocs")(externalDocs.asInstanceOf[js.Any])
+    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
+    if (servers != null) __obj.updateDynamic("servers")(servers.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Document]
   }
 }

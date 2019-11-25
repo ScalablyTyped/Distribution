@@ -35,16 +35,16 @@ object FontFaceHyphen {
   ): FontFaceHyphen = {
     val __obj = js.Dynamic.literal()
     if (`-moz-font-feature-settings` != null) __obj.updateDynamic("-moz-font-feature-settings")(`-moz-font-feature-settings`.asInstanceOf[js.Any])
-    if (`font-display` != null) __obj.updateDynamic("font-display")(`font-display`)
-    if (`font-family` != null) __obj.updateDynamic("font-family")(`font-family`)
+    if (`font-display` != null) __obj.updateDynamic("font-display")(`font-display`.asInstanceOf[js.Any])
+    if (`font-family` != null) __obj.updateDynamic("font-family")(`font-family`.asInstanceOf[js.Any])
     if (`font-feature-settings` != null) __obj.updateDynamic("font-feature-settings")(`font-feature-settings`.asInstanceOf[js.Any])
     if (`font-stretch` != null) __obj.updateDynamic("font-stretch")(`font-stretch`.asInstanceOf[js.Any])
     if (`font-style` != null) __obj.updateDynamic("font-style")(`font-style`.asInstanceOf[js.Any])
     if (`font-variant` != null) __obj.updateDynamic("font-variant")(`font-variant`.asInstanceOf[js.Any])
     if (`font-variation-settings` != null) __obj.updateDynamic("font-variation-settings")(`font-variation-settings`.asInstanceOf[js.Any])
     if (`font-weight` != null) __obj.updateDynamic("font-weight")(`font-weight`.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src)
-    if (`unicode-range` != null) __obj.updateDynamic("unicode-range")(`unicode-range`)
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
+    if (`unicode-range` != null) __obj.updateDynamic("unicode-range")(`unicode-range`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontFaceHyphen]
   }
 }

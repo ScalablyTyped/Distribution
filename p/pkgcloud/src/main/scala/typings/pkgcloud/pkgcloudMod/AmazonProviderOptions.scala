@@ -15,8 +15,8 @@ trait AmazonProviderOptions extends js.Object {
 object AmazonProviderOptions {
   @scala.inline
   def apply(key: String, keyId: String, provider: amazon, region: String = null): AmazonProviderOptions = {
-    val __obj = js.Dynamic.literal(key = key, keyId = keyId, provider = provider)
-    if (region != null) __obj.updateDynamic("region")(region)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], keyId = keyId.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[AmazonProviderOptions]
   }
 }

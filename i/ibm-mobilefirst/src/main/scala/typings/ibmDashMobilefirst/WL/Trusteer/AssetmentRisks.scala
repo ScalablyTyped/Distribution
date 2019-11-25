@@ -33,17 +33,17 @@ object AssetmentRisks {
     `tas.config_update`: AssesmentRisk = null,
     `total.risk.generic`: AssesmentRisk = null
   ): AssetmentRisks = {
-    val __obj = js.Dynamic.literal(device_key = device_key)
-    if (`malware.any` != null) __obj.updateDynamic("malware.any")(`malware.any`)
-    if (`network.wifi` != null) __obj.updateDynamic("network.wifi")(`network.wifi`)
-    if (`os.rooted` != null) __obj.updateDynamic("os.rooted")(`os.rooted`)
-    if (`os.rooted.hiders` != null) __obj.updateDynamic("os.rooted.hiders")(`os.rooted.hiders`)
-    if (`os.rooted.native` != null) __obj.updateDynamic("os.rooted.native")(`os.rooted.native`)
-    if (`os.ver_up_to_date` != null) __obj.updateDynamic("os.ver_up_to_date")(`os.ver_up_to_date`)
-    if (`plat.android.apprestrict` != null) __obj.updateDynamic("plat.android.apprestrict")(`plat.android.apprestrict`)
-    if (`plat.android.dumpsys` != null) __obj.updateDynamic("plat.android.dumpsys")(`plat.android.dumpsys`)
-    if (`tas.config_update` != null) __obj.updateDynamic("tas.config_update")(`tas.config_update`)
-    if (`total.risk.generic` != null) __obj.updateDynamic("total.risk.generic")(`total.risk.generic`)
+    val __obj = js.Dynamic.literal(device_key = device_key.asInstanceOf[js.Any])
+    if (`malware.any` != null) __obj.updateDynamic("malware.any")(`malware.any`.asInstanceOf[js.Any])
+    if (`network.wifi` != null) __obj.updateDynamic("network.wifi")(`network.wifi`.asInstanceOf[js.Any])
+    if (`os.rooted` != null) __obj.updateDynamic("os.rooted")(`os.rooted`.asInstanceOf[js.Any])
+    if (`os.rooted.hiders` != null) __obj.updateDynamic("os.rooted.hiders")(`os.rooted.hiders`.asInstanceOf[js.Any])
+    if (`os.rooted.native` != null) __obj.updateDynamic("os.rooted.native")(`os.rooted.native`.asInstanceOf[js.Any])
+    if (`os.ver_up_to_date` != null) __obj.updateDynamic("os.ver_up_to_date")(`os.ver_up_to_date`.asInstanceOf[js.Any])
+    if (`plat.android.apprestrict` != null) __obj.updateDynamic("plat.android.apprestrict")(`plat.android.apprestrict`.asInstanceOf[js.Any])
+    if (`plat.android.dumpsys` != null) __obj.updateDynamic("plat.android.dumpsys")(`plat.android.dumpsys`.asInstanceOf[js.Any])
+    if (`tas.config_update` != null) __obj.updateDynamic("tas.config_update")(`tas.config_update`.asInstanceOf[js.Any])
+    if (`total.risk.generic` != null) __obj.updateDynamic("total.risk.generic")(`total.risk.generic`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetmentRisks]
   }
 }

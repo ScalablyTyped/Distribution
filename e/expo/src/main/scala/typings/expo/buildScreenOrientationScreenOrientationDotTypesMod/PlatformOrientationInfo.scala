@@ -18,9 +18,9 @@ object PlatformOrientationInfo {
     screenOrientationLockWeb: WebOrientationLock = null
   ): PlatformOrientationInfo = {
     val __obj = js.Dynamic.literal()
-    if (screenOrientationArrayIOS != null) __obj.updateDynamic("screenOrientationArrayIOS")(screenOrientationArrayIOS)
+    if (screenOrientationArrayIOS != null) __obj.updateDynamic("screenOrientationArrayIOS")(screenOrientationArrayIOS.asInstanceOf[js.Any])
     if (screenOrientationConstantAndroid != null) __obj.updateDynamic("screenOrientationConstantAndroid")(screenOrientationConstantAndroid.asInstanceOf[js.Any])
-    if (screenOrientationLockWeb != null) __obj.updateDynamic("screenOrientationLockWeb")(screenOrientationLockWeb)
+    if (screenOrientationLockWeb != null) __obj.updateDynamic("screenOrientationLockWeb")(screenOrientationLockWeb.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlatformOrientationInfo]
   }
 }

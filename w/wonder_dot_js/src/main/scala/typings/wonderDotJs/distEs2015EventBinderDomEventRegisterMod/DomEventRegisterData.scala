@@ -27,9 +27,9 @@ object DomEventRegisterData {
     dom: HTMLElement = null,
     target: EntityObject = null
   ): DomEventRegisterData = {
-    val __obj = js.Dynamic.literal(domHandler = domHandler, eventData = eventData, handler = handler, originHandler = originHandler, priority = priority)
-    if (dom != null) __obj.updateDynamic("dom")(dom)
-    if (target != null) __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(domHandler = domHandler.asInstanceOf[js.Any], eventData = eventData.asInstanceOf[js.Any], handler = handler.asInstanceOf[js.Any], originHandler = originHandler.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
+    if (dom != null) __obj.updateDynamic("dom")(dom.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomEventRegisterData]
   }
 }

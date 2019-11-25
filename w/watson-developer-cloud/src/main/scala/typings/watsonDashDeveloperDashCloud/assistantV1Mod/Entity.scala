@@ -33,13 +33,13 @@ object Entity {
     updated: String = null,
     values: js.Array[Value] = null
   ): Entity = {
-    val __obj = js.Dynamic.literal(entity = entity)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(fuzzy_match)) __obj.updateDynamic("fuzzy_match")(fuzzy_match)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
-    if (values != null) __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any])
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(fuzzy_match)) __obj.updateDynamic("fuzzy_match")(fuzzy_match.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entity]
   }
 }

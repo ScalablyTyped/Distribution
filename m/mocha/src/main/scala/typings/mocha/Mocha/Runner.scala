@@ -10,8 +10,6 @@ import typings.mocha.mochaStrings.hook
 import typings.mocha.mochaStrings.pass
 import typings.mocha.mochaStrings.pending
 import typings.mocha.mochaStrings.start
-import typings.mocha.mochaStrings.suite
-import typings.mocha.mochaStrings.test
 import typings.mocha.mochaStrings.waiting
 import typings.std.RegExp
 import scala.scalajs.js
@@ -97,11 +95,11 @@ class Runner protected () extends EventEmitter {
   @JSName("addListener")
   def addListener_start(event: start, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_suite(event: suite, listener: js.Function1[/* suite */ Suite, Unit]): this.type = js.native
+  def addListener_suite(event: typings.mocha.mochaStrings.suite, listener: js.Function1[/* suite */ Suite, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_suiteend(event: `suite end`, listener: js.Function1[/* suite */ Suite, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_test(event: test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
+  def addListener_test(event: typings.mocha.mochaStrings.test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_testend(event: `test end`, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
   @JSName("addListener")
@@ -128,11 +126,11 @@ class Runner protected () extends EventEmitter {
   @JSName("emit")
   def emit_start(name: start): Boolean = js.native
   @JSName("emit")
-  def emit_suite(name: suite, suite: Suite): Boolean = js.native
+  def emit_suite(name: typings.mocha.mochaStrings.suite, suite: Suite): Boolean = js.native
   @JSName("emit")
   def emit_suiteend(name: `suite end`, suite: Suite): Boolean = js.native
   @JSName("emit")
-  def emit_test(name: test, test: Test): Boolean = js.native
+  def emit_test(name: typings.mocha.mochaStrings.test, test: Test): Boolean = js.native
   @JSName("emit")
   def emit_testend(name: `test end`, test: Test): Boolean = js.native
   @JSName("emit")
@@ -248,11 +246,11 @@ class Runner protected () extends EventEmitter {
   @JSName("on")
   def on_start(event: start, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
-  def on_suite(event: suite, listener: js.Function1[/* suite */ Suite, Unit]): this.type = js.native
+  def on_suite(event: typings.mocha.mochaStrings.suite, listener: js.Function1[/* suite */ Suite, Unit]): this.type = js.native
   @JSName("on")
   def on_suiteend(event: `suite end`, listener: js.Function1[/* suite */ Suite, Unit]): this.type = js.native
   @JSName("on")
-  def on_test(event: test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
+  def on_test(event: typings.mocha.mochaStrings.test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
   @JSName("on")
   def on_testend(event: `test end`, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
   @JSName("on")
@@ -273,11 +271,11 @@ class Runner protected () extends EventEmitter {
   @JSName("once")
   def once_start(event: start, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
-  def once_suite(event: suite, listener: js.Function1[/* suite */ Suite, Unit]): this.type = js.native
+  def once_suite(event: typings.mocha.mochaStrings.suite, listener: js.Function1[/* suite */ Suite, Unit]): this.type = js.native
   @JSName("once")
   def once_suiteend(event: `suite end`, listener: js.Function1[/* suite */ Suite, Unit]): this.type = js.native
   @JSName("once")
-  def once_test(event: test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
+  def once_test(event: typings.mocha.mochaStrings.test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
   @JSName("once")
   def once_testend(event: `test end`, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
   @JSName("once")
@@ -304,11 +302,11 @@ class Runner protected () extends EventEmitter {
   @JSName("prependListener")
   def prependListener_start(event: start, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
-  def prependListener_suite(event: suite, listener: js.Function1[/* suite */ Suite, Unit]): this.type = js.native
+  def prependListener_suite(event: typings.mocha.mochaStrings.suite, listener: js.Function1[/* suite */ Suite, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_suiteend(event: `suite end`, listener: js.Function1[/* suite */ Suite, Unit]): this.type = js.native
   @JSName("prependListener")
-  def prependListener_test(event: test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
+  def prependListener_test(event: typings.mocha.mochaStrings.test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_testend(event: `test end`, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
   @JSName("prependListener")
@@ -329,11 +327,11 @@ class Runner protected () extends EventEmitter {
   @JSName("prependOnceListener")
   def prependOnceListener_start(event: start, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_suite(event: suite, listener: js.Function1[/* suite */ Suite, Unit]): this.type = js.native
+  def prependOnceListener_suite(event: typings.mocha.mochaStrings.suite, listener: js.Function1[/* suite */ Suite, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_suiteend(event: `suite end`, listener: js.Function1[/* suite */ Suite, Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_test(event: test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
+  def prependOnceListener_test(event: typings.mocha.mochaStrings.test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_testend(event: `test end`, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -354,11 +352,11 @@ class Runner protected () extends EventEmitter {
   @JSName("removeListener")
   def removeListener_start(event: start, listener: js.Function0[Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_suite(event: suite, listener: js.Function1[/* suite */ Suite, Unit]): this.type = js.native
+  def removeListener_suite(event: typings.mocha.mochaStrings.suite, listener: js.Function1[/* suite */ Suite, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_suiteend(event: `suite end`, listener: js.Function1[/* suite */ Suite, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_test(event: test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
+  def removeListener_test(event: typings.mocha.mochaStrings.test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_testend(event: `test end`, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
   @JSName("removeListener")

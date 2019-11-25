@@ -23,8 +23,8 @@ object GridStyle {
     remove: () => Unit,
     `type`: GRID
   ): GridStyle = {
-    val __obj = js.Dynamic.literal(description = description, id = id, key = key, layoutGrids = layoutGrids, name = name, remote = remote, remove = js.Any.fromFunction0(remove))
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], layoutGrids = layoutGrids.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any], remove = js.Any.fromFunction0(remove))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridStyle]
   }
 }

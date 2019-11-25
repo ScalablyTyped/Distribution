@@ -16,8 +16,8 @@ object Anon_DisplayInForeground {
     sound: js.UndefOr[Boolean] = js.undefined
   ): Anon_DisplayInForeground = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(_displayInForeground)) __obj.updateDynamic("_displayInForeground")(_displayInForeground)
-    if (!js.isUndefined(sound)) __obj.updateDynamic("sound")(sound)
+    if (!js.isUndefined(_displayInForeground)) __obj.updateDynamic("_displayInForeground")(_displayInForeground.asInstanceOf[js.Any])
+    if (!js.isUndefined(sound)) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DisplayInForeground]
   }
 }

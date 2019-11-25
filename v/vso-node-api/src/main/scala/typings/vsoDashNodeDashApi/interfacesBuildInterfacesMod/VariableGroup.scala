@@ -30,8 +30,8 @@ object VariableGroup {
     `type`: String,
     variables: StringDictionary[BuildDefinitionVariable]
   ): VariableGroup = {
-    val __obj = js.Dynamic.literal(description = description, id = id, name = name, variables = variables)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VariableGroup]
   }
 }

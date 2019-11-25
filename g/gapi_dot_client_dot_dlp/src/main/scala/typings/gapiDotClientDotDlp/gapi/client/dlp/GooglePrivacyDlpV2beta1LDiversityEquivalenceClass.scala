@@ -27,10 +27,10 @@ object GooglePrivacyDlpV2beta1LDiversityEquivalenceClass {
     topSensitiveValues: js.Array[GooglePrivacyDlpV2beta1ValueFrequency] = null
   ): GooglePrivacyDlpV2beta1LDiversityEquivalenceClass = {
     val __obj = js.Dynamic.literal()
-    if (equivalenceClassSize != null) __obj.updateDynamic("equivalenceClassSize")(equivalenceClassSize)
-    if (numDistinctSensitiveValues != null) __obj.updateDynamic("numDistinctSensitiveValues")(numDistinctSensitiveValues)
-    if (quasiIdsValues != null) __obj.updateDynamic("quasiIdsValues")(quasiIdsValues)
-    if (topSensitiveValues != null) __obj.updateDynamic("topSensitiveValues")(topSensitiveValues)
+    if (equivalenceClassSize != null) __obj.updateDynamic("equivalenceClassSize")(equivalenceClassSize.asInstanceOf[js.Any])
+    if (numDistinctSensitiveValues != null) __obj.updateDynamic("numDistinctSensitiveValues")(numDistinctSensitiveValues.asInstanceOf[js.Any])
+    if (quasiIdsValues != null) __obj.updateDynamic("quasiIdsValues")(quasiIdsValues.asInstanceOf[js.Any])
+    if (topSensitiveValues != null) __obj.updateDynamic("topSensitiveValues")(topSensitiveValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1LDiversityEquivalenceClass]
   }
 }

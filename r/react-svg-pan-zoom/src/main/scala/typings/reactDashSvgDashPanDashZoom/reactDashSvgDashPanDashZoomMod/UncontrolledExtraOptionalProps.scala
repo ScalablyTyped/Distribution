@@ -18,8 +18,8 @@ trait UncontrolledExtraOptionalProps extends js.Object {
 object UncontrolledExtraOptionalProps {
   @scala.inline
   def apply(onChangeTool: Tool => Unit, onChangeValue: Value => Unit, tool: Tool, value: Value = null): UncontrolledExtraOptionalProps = {
-    val __obj = js.Dynamic.literal(onChangeTool = js.Any.fromFunction1(onChangeTool), onChangeValue = js.Any.fromFunction1(onChangeValue), tool = tool)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(onChangeTool = js.Any.fromFunction1(onChangeTool), onChangeValue = js.Any.fromFunction1(onChangeValue), tool = tool.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[UncontrolledExtraOptionalProps]
   }
 }

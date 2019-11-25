@@ -33,15 +33,15 @@ object IBorderedMapElementStyle {
     visible: js.UndefOr[Boolean] = js.undefined
   ): IBorderedMapElementStyle = {
     val __obj = js.Dynamic.literal()
-    if (borderOutlineColor != null) __obj.updateDynamic("borderOutlineColor")(borderOutlineColor)
-    if (borderStrokeColor != null) __obj.updateDynamic("borderStrokeColor")(borderStrokeColor)
-    if (!js.isUndefined(borderVisible)) __obj.updateDynamic("borderVisible")(borderVisible)
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
-    if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor)
-    if (labelOutlineColor != null) __obj.updateDynamic("labelOutlineColor")(labelOutlineColor)
-    if (!js.isUndefined(labelVisible)) __obj.updateDynamic("labelVisible")(labelVisible)
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (borderOutlineColor != null) __obj.updateDynamic("borderOutlineColor")(borderOutlineColor.asInstanceOf[js.Any])
+    if (borderStrokeColor != null) __obj.updateDynamic("borderStrokeColor")(borderStrokeColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderVisible)) __obj.updateDynamic("borderVisible")(borderVisible.asInstanceOf[js.Any])
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
+    if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor.asInstanceOf[js.Any])
+    if (labelOutlineColor != null) __obj.updateDynamic("labelOutlineColor")(labelOutlineColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelVisible)) __obj.updateDynamic("labelVisible")(labelVisible.asInstanceOf[js.Any])
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBorderedMapElementStyle]
   }
 }

@@ -16,7 +16,7 @@ trait Anon_01 extends js.Object {
 object Anon_01 {
   @scala.inline
   def apply(Authorized: `1`, Denied: `2`, NotDetermined: `0`): Anon_01 = {
-    val __obj = js.Dynamic.literal(Authorized = Authorized, Denied = Denied, NotDetermined = NotDetermined)
+    val __obj = js.Dynamic.literal(Authorized = Authorized.asInstanceOf[js.Any], Denied = Denied.asInstanceOf[js.Any], NotDetermined = NotDetermined.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_01]
   }

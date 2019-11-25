@@ -23,9 +23,9 @@ object NavigationControlOptions {
   ): NavigationControlOptions = {
     val __obj = js.Dynamic.literal()
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGeolocation)) __obj.updateDynamic("enableGeolocation")(enableGeolocation)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (!js.isUndefined(showZoomInfo)) __obj.updateDynamic("showZoomInfo")(showZoomInfo)
+    if (!js.isUndefined(enableGeolocation)) __obj.updateDynamic("enableGeolocation")(enableGeolocation.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(showZoomInfo)) __obj.updateDynamic("showZoomInfo")(showZoomInfo.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationControlOptions]
   }

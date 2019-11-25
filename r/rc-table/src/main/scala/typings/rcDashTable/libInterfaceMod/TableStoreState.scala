@@ -23,7 +23,7 @@ object TableStoreState {
     fixedColumnsBodyRowsHeight: Record[Key, Double],
     fixedColumnsHeadRowsHeight: Record[Key, Double | auto]
   ): TableStoreState = {
-    val __obj = js.Dynamic.literal(currentHoverKey = currentHoverKey.asInstanceOf[js.Any], expandedRowKeys = expandedRowKeys, expandedRowsHeight = expandedRowsHeight, fixedColumnsBodyRowsHeight = fixedColumnsBodyRowsHeight, fixedColumnsHeadRowsHeight = fixedColumnsHeadRowsHeight)
+    val __obj = js.Dynamic.literal(currentHoverKey = currentHoverKey.asInstanceOf[js.Any], expandedRowKeys = expandedRowKeys.asInstanceOf[js.Any], expandedRowsHeight = expandedRowsHeight.asInstanceOf[js.Any], fixedColumnsBodyRowsHeight = fixedColumnsBodyRowsHeight.asInstanceOf[js.Any], fixedColumnsHeadRowsHeight = fixedColumnsHeadRowsHeight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TableStoreState]
   }

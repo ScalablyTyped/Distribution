@@ -40,20 +40,20 @@ object DataPropertyOptions {
     validators: js.Array[Validator] = null
   ): DataPropertyOptions = {
     val __obj = js.Dynamic.literal()
-    if (complexTypeName != null) __obj.updateDynamic("complexTypeName")(complexTypeName)
-    if (concurrencyMode != null) __obj.updateDynamic("concurrencyMode")(concurrencyMode)
-    if (custom != null) __obj.updateDynamic("custom")(custom)
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType)
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (!js.isUndefined(isNullable)) __obj.updateDynamic("isNullable")(isNullable)
-    if (!js.isUndefined(isPartOfKey)) __obj.updateDynamic("isPartOfKey")(isPartOfKey)
-    if (!js.isUndefined(isScalar)) __obj.updateDynamic("isScalar")(isScalar)
-    if (!js.isUndefined(isUnmapped)) __obj.updateDynamic("isUnmapped")(isUnmapped)
+    if (complexTypeName != null) __obj.updateDynamic("complexTypeName")(complexTypeName.asInstanceOf[js.Any])
+    if (concurrencyMode != null) __obj.updateDynamic("concurrencyMode")(concurrencyMode.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNullable)) __obj.updateDynamic("isNullable")(isNullable.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPartOfKey)) __obj.updateDynamic("isPartOfKey")(isPartOfKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(isScalar)) __obj.updateDynamic("isScalar")(isScalar.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUnmapped)) __obj.updateDynamic("isUnmapped")(isUnmapped.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (nameOnServer != null) __obj.updateDynamic("nameOnServer")(nameOnServer)
-    if (validators != null) __obj.updateDynamic("validators")(validators)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (nameOnServer != null) __obj.updateDynamic("nameOnServer")(nameOnServer.asInstanceOf[js.Any])
+    if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataPropertyOptions]
   }
 }

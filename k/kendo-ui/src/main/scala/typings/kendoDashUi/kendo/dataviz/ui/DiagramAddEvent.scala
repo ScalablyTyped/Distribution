@@ -20,9 +20,9 @@ object DiagramAddEvent {
     connection: Connection = null,
     shape: Shape = null
   ): DiagramAddEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (connection != null) __obj.updateDynamic("connection")(connection)
-    if (shape != null) __obj.updateDynamic("shape")(shape)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramAddEvent]
   }
 }

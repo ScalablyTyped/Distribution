@@ -12,7 +12,7 @@ trait AfterModifier extends _Modifier {
 object AfterModifier {
   @scala.inline
   def apply(after: Date): AfterModifier = {
-    val __obj = js.Dynamic.literal(after = after)
+    val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AfterModifier]
   }

@@ -21,7 +21,7 @@ object DynamicUrlDeclaration {
     url: String | (js.Function1[/* args */ T, String | StaticUrlDeclaration]) = null
   ): DynamicUrlDeclaration[T] = {
     val __obj = js.Dynamic.literal()
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamicUrlDeclaration[T]]
   }

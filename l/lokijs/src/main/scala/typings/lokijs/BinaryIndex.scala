@@ -13,7 +13,7 @@ trait BinaryIndex extends js.Object {
 object BinaryIndex {
   @scala.inline
   def apply(dirty: Boolean, name: String, values: js.Array[Double]): BinaryIndex = {
-    val __obj = js.Dynamic.literal(dirty = dirty, name = name, values = values)
+    val __obj = js.Dynamic.literal(dirty = dirty.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BinaryIndex]
   }

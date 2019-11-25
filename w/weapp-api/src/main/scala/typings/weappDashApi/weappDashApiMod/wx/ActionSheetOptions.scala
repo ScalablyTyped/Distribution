@@ -24,10 +24,10 @@ object ActionSheetOptions {
     itemColor: String = null,
     success: /* res */ Anon_TapIndex => Unit = null
   ): ActionSheetOptions = {
-    val __obj = js.Dynamic.literal(itemList = itemList)
+    val __obj = js.Dynamic.literal(itemList = itemList.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (itemColor != null) __obj.updateDynamic("itemColor")(itemColor)
+    if (itemColor != null) __obj.updateDynamic("itemColor")(itemColor.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[ActionSheetOptions]
   }

@@ -31,11 +31,11 @@ object AggregateBucket {
   ): AggregateBucket = {
     val __obj = js.Dynamic.literal()
     if (activity != null) __obj.updateDynamic("activity")(activity.asInstanceOf[js.Any])
-    if (dataset != null) __obj.updateDynamic("dataset")(dataset)
-    if (endTimeMillis != null) __obj.updateDynamic("endTimeMillis")(endTimeMillis)
-    if (session != null) __obj.updateDynamic("session")(session)
-    if (startTimeMillis != null) __obj.updateDynamic("startTimeMillis")(startTimeMillis)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (dataset != null) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])
+    if (endTimeMillis != null) __obj.updateDynamic("endTimeMillis")(endTimeMillis.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (startTimeMillis != null) __obj.updateDynamic("startTimeMillis")(startTimeMillis.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregateBucket]
   }
 }

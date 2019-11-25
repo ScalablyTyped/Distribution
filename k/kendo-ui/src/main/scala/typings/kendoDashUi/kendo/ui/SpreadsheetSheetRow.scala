@@ -20,10 +20,10 @@ object SpreadsheetSheetRow {
     `type`: String = null
   ): SpreadsheetSheetRow = {
     val __obj = js.Dynamic.literal()
-    if (cells != null) __obj.updateDynamic("cells")(cells)
+    if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetSheetRow]
   }
 }

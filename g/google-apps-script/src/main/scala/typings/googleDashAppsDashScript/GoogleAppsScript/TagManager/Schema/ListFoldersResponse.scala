@@ -13,8 +13,8 @@ object ListFoldersResponse {
   @scala.inline
   def apply(folder: js.Array[Folder] = null, nextPageToken: String = null): ListFoldersResponse = {
     val __obj = js.Dynamic.literal()
-    if (folder != null) __obj.updateDynamic("folder")(folder)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFoldersResponse]
   }
 }

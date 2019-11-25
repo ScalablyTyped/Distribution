@@ -90,7 +90,7 @@ object Tween {
     unit: String,
     pos: Int | Double = null
   ): Tween[TElement] = {
-    val __obj = js.Dynamic.literal(cur = js.Any.fromFunction0(cur), easing = easing, elem = elem.asInstanceOf[js.Any], end = end, now = now, options = options, prop = prop, run = js.Any.fromFunction1(run), start = start, unit = unit)
+    val __obj = js.Dynamic.literal(cur = js.Any.fromFunction0(cur), easing = easing.asInstanceOf[js.Any], elem = elem.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], now = now.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], prop = prop.asInstanceOf[js.Any], run = js.Any.fromFunction1(run), start = start.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
     if (pos != null) __obj.updateDynamic("pos")(pos.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tween[TElement]]
   }

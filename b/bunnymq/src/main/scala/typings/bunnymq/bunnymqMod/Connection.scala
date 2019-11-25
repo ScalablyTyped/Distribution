@@ -13,8 +13,8 @@ trait Connection
 object Connection {
   @scala.inline
   def apply(startedAt: String, StringDictionary: /* address */ StringDictionary[js.Any] = null): Connection = {
-    val __obj = js.Dynamic.literal(startedAt = startedAt)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(startedAt = startedAt.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Connection]
   }
 }

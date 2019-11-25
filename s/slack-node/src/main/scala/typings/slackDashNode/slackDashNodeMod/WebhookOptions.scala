@@ -26,13 +26,13 @@ object WebhookOptions {
     username: String = null
   ): WebhookOptions = {
     val __obj = js.Dynamic.literal()
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
-    if (channel != null) __obj.updateDynamic("channel")(channel)
-    if (icon_emoji != null) __obj.updateDynamic("icon_emoji")(icon_emoji)
-    if (link_names != null) __obj.updateDynamic("link_names")(link_names)
-    if (response_type != null) __obj.updateDynamic("response_type")(response_type)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (icon_emoji != null) __obj.updateDynamic("icon_emoji")(icon_emoji.asInstanceOf[js.Any])
+    if (link_names != null) __obj.updateDynamic("link_names")(link_names.asInstanceOf[js.Any])
+    if (response_type != null) __obj.updateDynamic("response_type")(response_type.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebhookOptions]
   }
 }

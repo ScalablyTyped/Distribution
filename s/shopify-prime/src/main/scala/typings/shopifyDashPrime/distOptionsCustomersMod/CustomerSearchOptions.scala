@@ -19,8 +19,8 @@ object CustomerSearchOptions {
   @scala.inline
   def apply(order: String = null, query: String = null): CustomerSearchOptions = {
     val __obj = js.Dynamic.literal()
-    if (order != null) __obj.updateDynamic("order")(order)
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomerSearchOptions]
   }
 }

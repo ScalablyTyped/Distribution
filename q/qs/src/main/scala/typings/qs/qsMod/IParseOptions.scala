@@ -56,21 +56,21 @@ object IParseOptions {
     strictNullHandling: js.UndefOr[Boolean] = js.undefined
   ): IParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDots)) __obj.updateDynamic("allowDots")(allowDots)
-    if (!js.isUndefined(allowPrototypes)) __obj.updateDynamic("allowPrototypes")(allowPrototypes)
+    if (!js.isUndefined(allowDots)) __obj.updateDynamic("allowDots")(allowDots.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowPrototypes)) __obj.updateDynamic("allowPrototypes")(allowPrototypes.asInstanceOf[js.Any])
     if (arrayLimit != null) __obj.updateDynamic("arrayLimit")(arrayLimit.asInstanceOf[js.Any])
     if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
-    if (!js.isUndefined(charsetSentinel)) __obj.updateDynamic("charsetSentinel")(charsetSentinel)
-    if (!js.isUndefined(comma)) __obj.updateDynamic("comma")(comma)
+    if (!js.isUndefined(charsetSentinel)) __obj.updateDynamic("charsetSentinel")(charsetSentinel.asInstanceOf[js.Any])
+    if (!js.isUndefined(comma)) __obj.updateDynamic("comma")(comma.asInstanceOf[js.Any])
     if (decoder != null) __obj.updateDynamic("decoder")(js.Any.fromFunction4(decoder))
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreQueryPrefix)) __obj.updateDynamic("ignoreQueryPrefix")(ignoreQueryPrefix)
-    if (!js.isUndefined(interpretNumericEntities)) __obj.updateDynamic("interpretNumericEntities")(interpretNumericEntities)
+    if (!js.isUndefined(ignoreQueryPrefix)) __obj.updateDynamic("ignoreQueryPrefix")(ignoreQueryPrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(interpretNumericEntities)) __obj.updateDynamic("interpretNumericEntities")(interpretNumericEntities.asInstanceOf[js.Any])
     if (parameterLimit != null) __obj.updateDynamic("parameterLimit")(parameterLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(parseArrays)) __obj.updateDynamic("parseArrays")(parseArrays)
-    if (!js.isUndefined(plainObjects)) __obj.updateDynamic("plainObjects")(plainObjects)
-    if (!js.isUndefined(strictNullHandling)) __obj.updateDynamic("strictNullHandling")(strictNullHandling)
+    if (!js.isUndefined(parseArrays)) __obj.updateDynamic("parseArrays")(parseArrays.asInstanceOf[js.Any])
+    if (!js.isUndefined(plainObjects)) __obj.updateDynamic("plainObjects")(plainObjects.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictNullHandling)) __obj.updateDynamic("strictNullHandling")(strictNullHandling.asInstanceOf[js.Any])
     __obj.asInstanceOf[IParseOptions]
   }
 }

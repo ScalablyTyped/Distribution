@@ -19,7 +19,7 @@ object SetMonitoringServiceRequest {
   @scala.inline
   def apply(monitoringService: String = null): SetMonitoringServiceRequest = {
     val __obj = js.Dynamic.literal()
-    if (monitoringService != null) __obj.updateDynamic("monitoringService")(monitoringService)
+    if (monitoringService != null) __obj.updateDynamic("monitoringService")(monitoringService.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetMonitoringServiceRequest]
   }
 }

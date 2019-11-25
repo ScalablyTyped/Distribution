@@ -31,9 +31,9 @@ object GoogleActionsTransactionsV3TransactionDecisionValue {
     transactionDecision: GoogleActionsTransactionsV3TransactionDecisionValueTransactionDecision = null
   ): GoogleActionsTransactionsV3TransactionDecisionValue = {
     val __obj = js.Dynamic.literal()
-    if (deliveryAddress != null) __obj.updateDynamic("deliveryAddress")(deliveryAddress)
-    if (order != null) __obj.updateDynamic("order")(order)
-    if (transactionDecision != null) __obj.updateDynamic("transactionDecision")(transactionDecision)
+    if (deliveryAddress != null) __obj.updateDynamic("deliveryAddress")(deliveryAddress.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (transactionDecision != null) __obj.updateDynamic("transactionDecision")(transactionDecision.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsTransactionsV3TransactionDecisionValue]
   }
 }

@@ -31,12 +31,12 @@ object INotifyOpts {
   ): INotifyOpts = {
     val __obj = js.Dynamic.literal()
     if (beforeSend != null) __obj.updateDynamic("beforeSend")(js.Any.fromFunction1(beforeSend))
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (device != null) __obj.updateDynamic("device")(device)
-    if (metaData != null) __obj.updateDynamic("metaData")(metaData)
-    if (request != null) __obj.updateDynamic("request")(request)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
+    if (metaData != null) __obj.updateDynamic("metaData")(metaData.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
     if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[INotifyOpts]
   }
 }

@@ -37,18 +37,18 @@ object SignOptions {
     subject: String = null
   ): SignOptions = {
     val __obj = js.Dynamic.literal()
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
     if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
-    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (!js.isUndefined(iat)) __obj.updateDynamic("iat")(iat)
-    if (issuer != null) __obj.updateDynamic("issuer")(issuer)
-    if (jti != null) __obj.updateDynamic("jti")(jti)
-    if (!js.isUndefined(kid)) __obj.updateDynamic("kid")(kid)
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
-    if (notBefore != null) __obj.updateDynamic("notBefore")(notBefore)
-    if (now != null) __obj.updateDynamic("now")(now)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (!js.isUndefined(iat)) __obj.updateDynamic("iat")(iat.asInstanceOf[js.Any])
+    if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
+    if (jti != null) __obj.updateDynamic("jti")(jti.asInstanceOf[js.Any])
+    if (!js.isUndefined(kid)) __obj.updateDynamic("kid")(kid.asInstanceOf[js.Any])
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
+    if (notBefore != null) __obj.updateDynamic("notBefore")(notBefore.asInstanceOf[js.Any])
+    if (now != null) __obj.updateDynamic("now")(now.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignOptions]
   }
 }

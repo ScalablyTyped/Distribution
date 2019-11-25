@@ -13,8 +13,8 @@ object AboutMaxUploadSizes {
   @scala.inline
   def apply(size: String = null, `type`: String = null): AboutMaxUploadSizes = {
     val __obj = js.Dynamic.literal()
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AboutMaxUploadSizes]
   }
 }

@@ -40,10 +40,10 @@ object ClassBreakInfoProperties {
     symbol: SymbolProperties = null
   ): ClassBreakInfoProperties = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassBreakInfoProperties]
   }
 }

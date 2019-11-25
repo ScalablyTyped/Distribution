@@ -27,12 +27,12 @@ object RangeDeleteConfig {
     parentID: String = null,
     parentName: String = null
   ): RangeDeleteConfig = {
-    val __obj = js.Dynamic.literal(deletedIDFieldName = deletedIDFieldName.asInstanceOf[js.Any], pathToConnection = pathToConnection)
-    __obj.updateDynamic("type")(`type`)
-    if (connectionKeys != null) __obj.updateDynamic("connectionKeys")(connectionKeys)
-    if (connectionName != null) __obj.updateDynamic("connectionName")(connectionName)
-    if (parentID != null) __obj.updateDynamic("parentID")(parentID)
-    if (parentName != null) __obj.updateDynamic("parentName")(parentName)
+    val __obj = js.Dynamic.literal(deletedIDFieldName = deletedIDFieldName.asInstanceOf[js.Any], pathToConnection = pathToConnection.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (connectionKeys != null) __obj.updateDynamic("connectionKeys")(connectionKeys.asInstanceOf[js.Any])
+    if (connectionName != null) __obj.updateDynamic("connectionName")(connectionName.asInstanceOf[js.Any])
+    if (parentID != null) __obj.updateDynamic("parentID")(parentID.asInstanceOf[js.Any])
+    if (parentName != null) __obj.updateDynamic("parentName")(parentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeDeleteConfig]
   }
 }

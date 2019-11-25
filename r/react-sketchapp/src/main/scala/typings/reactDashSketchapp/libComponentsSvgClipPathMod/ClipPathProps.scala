@@ -13,7 +13,7 @@ trait ClipPathProps extends js.Object {
 object ClipPathProps {
   @scala.inline
   def apply(id: String, children: js.Array[ReactNode] | ReactNode = null): ClipPathProps = {
-    val __obj = js.Dynamic.literal(id = id)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClipPathProps]
   }

@@ -26,7 +26,7 @@ object NgAnalyzedFile {
     ngModules: js.Array[CompileNgModuleMetadata],
     pipes: js.Array[StaticSymbol]
   ): NgAnalyzedFile = {
-    val __obj = js.Dynamic.literal(directives = directives, exportsNonSourceFiles = exportsNonSourceFiles, fileName = fileName, injectables = injectables, ngModules = ngModules, pipes = pipes)
+    val __obj = js.Dynamic.literal(directives = directives.asInstanceOf[js.Any], exportsNonSourceFiles = exportsNonSourceFiles.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], injectables = injectables.asInstanceOf[js.Any], ngModules = ngModules.asInstanceOf[js.Any], pipes = pipes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NgAnalyzedFile]
   }

@@ -12,7 +12,7 @@ object CommentThreadReplies {
   @scala.inline
   def apply(comments: js.Array[Comment] = null): CommentThreadReplies = {
     val __obj = js.Dynamic.literal()
-    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentThreadReplies]
   }
 }

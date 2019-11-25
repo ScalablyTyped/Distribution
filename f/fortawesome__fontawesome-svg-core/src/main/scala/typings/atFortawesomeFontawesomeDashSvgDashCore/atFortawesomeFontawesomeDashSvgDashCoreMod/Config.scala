@@ -34,7 +34,7 @@ object Config {
     searchPseudoElements: Boolean,
     showMissingIcons: Boolean
   ): Config = {
-    val __obj = js.Dynamic.literal(autoA11y = autoA11y, autoAddCss = autoAddCss, autoReplaceSvg = autoReplaceSvg.asInstanceOf[js.Any], familyPrefix = familyPrefix, keepOriginalSource = keepOriginalSource, measurePerformance = measurePerformance, observeMutations = observeMutations, replacementClass = replacementClass, searchPseudoElements = searchPseudoElements, showMissingIcons = showMissingIcons)
+    val __obj = js.Dynamic.literal(autoA11y = autoA11y.asInstanceOf[js.Any], autoAddCss = autoAddCss.asInstanceOf[js.Any], autoReplaceSvg = autoReplaceSvg.asInstanceOf[js.Any], familyPrefix = familyPrefix.asInstanceOf[js.Any], keepOriginalSource = keepOriginalSource.asInstanceOf[js.Any], measurePerformance = measurePerformance.asInstanceOf[js.Any], observeMutations = observeMutations.asInstanceOf[js.Any], replacementClass = replacementClass.asInstanceOf[js.Any], searchPseudoElements = searchPseudoElements.asInstanceOf[js.Any], showMissingIcons = showMissingIcons.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Config]
   }

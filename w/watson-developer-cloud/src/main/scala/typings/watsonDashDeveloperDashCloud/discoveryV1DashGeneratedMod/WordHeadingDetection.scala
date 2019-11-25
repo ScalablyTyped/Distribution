@@ -14,8 +14,8 @@ object WordHeadingDetection {
   @scala.inline
   def apply(fonts: js.Array[FontSetting] = null, styles: js.Array[WordStyle] = null): WordHeadingDetection = {
     val __obj = js.Dynamic.literal()
-    if (fonts != null) __obj.updateDynamic("fonts")(fonts)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (fonts != null) __obj.updateDynamic("fonts")(fonts.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[WordHeadingDetection]
   }
 }

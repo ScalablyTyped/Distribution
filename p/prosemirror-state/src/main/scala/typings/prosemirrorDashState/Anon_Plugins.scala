@@ -15,7 +15,7 @@ object Anon_Plugins {
   @scala.inline
   def apply[S /* <: Schema[_, _] */](plugins: js.Array[Plugin[_, S]] = null, schema: S = null): Anon_Plugins[S] = {
     val __obj = js.Dynamic.literal()
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Plugins[S]]
   }

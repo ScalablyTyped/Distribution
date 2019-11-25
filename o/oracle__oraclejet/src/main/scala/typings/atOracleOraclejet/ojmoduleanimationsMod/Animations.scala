@@ -21,3 +21,34 @@ import scala.scalajs.js.annotation._
 */
 trait Animations extends js.Object
 
+object Animations {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def coverStart: typings.atOracleOraclejet.atOracleOraclejetStrings.coverStart = this.cast("coverStart")
+  @scala.inline
+  def coverUp: typings.atOracleOraclejet.atOracleOraclejetStrings.coverUp = this.cast("coverUp")
+  @scala.inline
+  def fade: typings.atOracleOraclejet.atOracleOraclejetStrings.fade = this.cast("fade")
+  @scala.inline
+  def navChild: typings.atOracleOraclejet.atOracleOraclejetStrings.navChild = this.cast("navChild")
+  @scala.inline
+  def navParent: typings.atOracleOraclejet.atOracleOraclejetStrings.navParent = this.cast("navParent")
+  @scala.inline
+  def navSiblingEarlier: typings.atOracleOraclejet.atOracleOraclejetStrings.navSiblingEarlier = this.cast("navSiblingEarlier")
+  @scala.inline
+  def navSiblingLater: typings.atOracleOraclejet.atOracleOraclejetStrings.navSiblingLater = this.cast("navSiblingLater")
+  @scala.inline
+  def pushEnd: typings.atOracleOraclejet.atOracleOraclejetStrings.pushEnd = this.cast("pushEnd")
+  @scala.inline
+  def pushStart: typings.atOracleOraclejet.atOracleOraclejetStrings.pushStart = this.cast("pushStart")
+  @scala.inline
+  def revealDown: typings.atOracleOraclejet.atOracleOraclejetStrings.revealDown = this.cast("revealDown")
+  @scala.inline
+  def revealEnd: typings.atOracleOraclejet.atOracleOraclejetStrings.revealEnd = this.cast("revealEnd")
+  @scala.inline
+  def zoomIn: typings.atOracleOraclejet.atOracleOraclejetStrings.zoomIn = this.cast("zoomIn")
+  @scala.inline
+  def zoomOut: typings.atOracleOraclejet.atOracleOraclejetStrings.zoomOut = this.cast("zoomOut")
+}
+

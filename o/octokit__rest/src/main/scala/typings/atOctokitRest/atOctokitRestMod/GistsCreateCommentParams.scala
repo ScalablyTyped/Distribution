@@ -15,7 +15,7 @@ trait GistsCreateCommentParams extends js.Object {
 object GistsCreateCommentParams {
   @scala.inline
   def apply(body: String, gist_id: String): GistsCreateCommentParams = {
-    val __obj = js.Dynamic.literal(body = body, gist_id = gist_id)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], gist_id = gist_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GistsCreateCommentParams]
   }

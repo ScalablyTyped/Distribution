@@ -12,7 +12,7 @@ object SearchDeveloperMetadataRequest {
   @scala.inline
   def apply(dataFilters: js.Array[DataFilter] = null): SearchDeveloperMetadataRequest = {
     val __obj = js.Dynamic.literal()
-    if (dataFilters != null) __obj.updateDynamic("dataFilters")(dataFilters)
+    if (dataFilters != null) __obj.updateDynamic("dataFilters")(dataFilters.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchDeveloperMetadataRequest]
   }
 }

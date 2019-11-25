@@ -1,8 +1,6 @@
 package typings.dojo.dijit.form
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyAny
 import typings.dojo.dijit.form.RangeBoundTextBox.__Constraints
 import typings.dojo.dojoStrings.pattern
 import typings.dojo.dojoStrings.rangeMessage
@@ -62,9 +60,15 @@ class RangeBoundTextBox () extends MappedTextBox {
   @JSName("set")
   def set_rangeMessage(property: rangeMessage, value: String): Unit = js.native
   @JSName("watch")
-  def watch_pattern(property: pattern, callback: Fn_NewValueOldValuePropertyAny): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_rangeMessage(property: rangeMessage, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_rangeMessage(
+    property: rangeMessage,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 
 @JSGlobal("dijit.form.RangeBoundTextBox")

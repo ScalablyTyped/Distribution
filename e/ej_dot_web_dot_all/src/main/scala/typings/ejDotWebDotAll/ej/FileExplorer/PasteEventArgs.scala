@@ -40,13 +40,13 @@ object PasteEventArgs {
     `type`: String = null
   ): PasteEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems)
-    if (targetFolder != null) __obj.updateDynamic("targetFolder")(targetFolder)
-    if (targetPath != null) __obj.updateDynamic("targetPath")(targetPath)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems.asInstanceOf[js.Any])
+    if (targetFolder != null) __obj.updateDynamic("targetFolder")(targetFolder.asInstanceOf[js.Any])
+    if (targetPath != null) __obj.updateDynamic("targetPath")(targetPath.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasteEventArgs]
   }
 }

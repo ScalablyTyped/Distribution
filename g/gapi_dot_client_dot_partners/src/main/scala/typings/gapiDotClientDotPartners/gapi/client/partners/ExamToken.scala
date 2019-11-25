@@ -17,9 +17,9 @@ object ExamToken {
   @scala.inline
   def apply(examId: String = null, examType: String = null, token: String = null): ExamToken = {
     val __obj = js.Dynamic.literal()
-    if (examId != null) __obj.updateDynamic("examId")(examId)
-    if (examType != null) __obj.updateDynamic("examType")(examType)
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (examId != null) __obj.updateDynamic("examId")(examId.asInstanceOf[js.Any])
+    if (examType != null) __obj.updateDynamic("examType")(examType.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExamToken]
   }
 }

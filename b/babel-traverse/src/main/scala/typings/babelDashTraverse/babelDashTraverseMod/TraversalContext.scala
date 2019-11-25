@@ -14,7 +14,7 @@ trait TraversalContext extends js.Object {
 object TraversalContext {
   @scala.inline
   def apply(opts: js.Any, parentPath: NodePath[Node], scope: Scope, state: js.Any): TraversalContext = {
-    val __obj = js.Dynamic.literal(opts = opts, parentPath = parentPath, scope = scope, state = state)
+    val __obj = js.Dynamic.literal(opts = opts.asInstanceOf[js.Any], parentPath = parentPath.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TraversalContext]
   }

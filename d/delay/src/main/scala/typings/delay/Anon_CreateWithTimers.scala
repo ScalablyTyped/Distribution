@@ -17,7 +17,7 @@ object Anon_CreateWithTimers {
     createWithTimers: Anon_ClearTimeout => Delay,
     default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof delay */ js.Any
   ): Anon_CreateWithTimers = {
-    val __obj = js.Dynamic.literal(createWithTimers = js.Any.fromFunction1(createWithTimers), default = default)
+    val __obj = js.Dynamic.literal(createWithTimers = js.Any.fromFunction1(createWithTimers), default = default.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CreateWithTimers]
   }

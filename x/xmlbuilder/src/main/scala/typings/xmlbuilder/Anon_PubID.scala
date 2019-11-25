@@ -13,8 +13,8 @@ object Anon_PubID {
   @scala.inline
   def apply(pubID: String = null, sysID: String = null): Anon_PubID = {
     val __obj = js.Dynamic.literal()
-    if (pubID != null) __obj.updateDynamic("pubID")(pubID)
-    if (sysID != null) __obj.updateDynamic("sysID")(sysID)
+    if (pubID != null) __obj.updateDynamic("pubID")(pubID.asInstanceOf[js.Any])
+    if (sysID != null) __obj.updateDynamic("sysID")(sysID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PubID]
   }
 }

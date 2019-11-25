@@ -12,7 +12,7 @@ trait Anon_HtmlEngine extends js.Object {
 object Anon_HtmlEngine {
   @scala.inline
   def apply(htmlEngine: htmlEngine): Anon_HtmlEngine = {
-    val __obj = js.Dynamic.literal(htmlEngine = htmlEngine)
+    val __obj = js.Dynamic.literal(htmlEngine = htmlEngine.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HtmlEngine]
   }

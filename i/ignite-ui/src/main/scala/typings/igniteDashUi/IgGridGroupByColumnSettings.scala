@@ -84,15 +84,15 @@ object IgGridGroupByColumnSettings {
     summaries: IgGridGroupByColumnSettingsSummaries = null
   ): IgGridGroupByColumnSettings = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(allowGrouping)) __obj.updateDynamic("allowGrouping")(allowGrouping)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowGrouping)) __obj.updateDynamic("allowGrouping")(allowGrouping.asInstanceOf[js.Any])
     if (compareFunc != null) __obj.updateDynamic("compareFunc")(compareFunc.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (groupComparerFunction != null) __obj.updateDynamic("groupComparerFunction")(groupComparerFunction)
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (groupComparerFunction != null) __obj.updateDynamic("groupComparerFunction")(groupComparerFunction.asInstanceOf[js.Any])
     if (groupLabelFormatter != null) __obj.updateDynamic("groupLabelFormatter")(groupLabelFormatter.asInstanceOf[js.Any])
-    if (groupSummaries != null) __obj.updateDynamic("groupSummaries")(groupSummaries)
-    if (!js.isUndefined(isGroupBy)) __obj.updateDynamic("isGroupBy")(isGroupBy)
-    if (summaries != null) __obj.updateDynamic("summaries")(summaries)
+    if (groupSummaries != null) __obj.updateDynamic("groupSummaries")(groupSummaries.asInstanceOf[js.Any])
+    if (!js.isUndefined(isGroupBy)) __obj.updateDynamic("isGroupBy")(isGroupBy.asInstanceOf[js.Any])
+    if (summaries != null) __obj.updateDynamic("summaries")(summaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridGroupByColumnSettings]
   }
 }

@@ -16,7 +16,7 @@ object GoogleActionsV2Surface {
   @scala.inline
   def apply(capabilities: js.Array[GoogleActionsV2Capability] = null): GoogleActionsV2Surface = {
     val __obj = js.Dynamic.literal()
-    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities)
+    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2Surface]
   }
 }

@@ -15,7 +15,7 @@ object GoogleActionsV2SimpleSelect {
   @scala.inline
   def apply(items: js.Array[GoogleActionsV2SimpleSelectItem] = null): GoogleActionsV2SimpleSelect = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2SimpleSelect]
   }
 }

@@ -32,13 +32,13 @@ object Anon_GPSAltitude {
     val __obj = js.Dynamic.literal()
     if (GPSAltitude != null) __obj.updateDynamic("GPSAltitude")(GPSAltitude.asInstanceOf[js.Any])
     if (GPSAltitudeRef != null) __obj.updateDynamic("GPSAltitudeRef")(GPSAltitudeRef.asInstanceOf[js.Any])
-    if (GPSDateStamp != null) __obj.updateDynamic("GPSDateStamp")(GPSDateStamp)
-    if (GPSLatitude != null) __obj.updateDynamic("GPSLatitude")(GPSLatitude)
-    if (GPSLatitudeRef != null) __obj.updateDynamic("GPSLatitudeRef")(GPSLatitudeRef)
-    if (GPSLongitude != null) __obj.updateDynamic("GPSLongitude")(GPSLongitude)
-    if (GPSLongitudeRef != null) __obj.updateDynamic("GPSLongitudeRef")(GPSLongitudeRef)
-    if (GPSTimeStamp != null) __obj.updateDynamic("GPSTimeStamp")(GPSTimeStamp)
-    if (GPSVersionId != null) __obj.updateDynamic("GPSVersionId")(GPSVersionId)
+    if (GPSDateStamp != null) __obj.updateDynamic("GPSDateStamp")(GPSDateStamp.asInstanceOf[js.Any])
+    if (GPSLatitude != null) __obj.updateDynamic("GPSLatitude")(GPSLatitude.asInstanceOf[js.Any])
+    if (GPSLatitudeRef != null) __obj.updateDynamic("GPSLatitudeRef")(GPSLatitudeRef.asInstanceOf[js.Any])
+    if (GPSLongitude != null) __obj.updateDynamic("GPSLongitude")(GPSLongitude.asInstanceOf[js.Any])
+    if (GPSLongitudeRef != null) __obj.updateDynamic("GPSLongitudeRef")(GPSLongitudeRef.asInstanceOf[js.Any])
+    if (GPSTimeStamp != null) __obj.updateDynamic("GPSTimeStamp")(GPSTimeStamp.asInstanceOf[js.Any])
+    if (GPSVersionId != null) __obj.updateDynamic("GPSVersionId")(GPSVersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_GPSAltitude]
   }
 }

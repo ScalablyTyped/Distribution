@@ -25,8 +25,8 @@ trait mixin extends js.Object {
 object mixin {
   @scala.inline
   def apply(`data-mvc-bindings`: String, dataBindAttr: String): mixin = {
-    val __obj = js.Dynamic.literal(dataBindAttr = dataBindAttr)
-    __obj.updateDynamic("data-mvc-bindings")(`data-mvc-bindings`)
+    val __obj = js.Dynamic.literal(dataBindAttr = dataBindAttr.asInstanceOf[js.Any])
+    __obj.updateDynamic("data-mvc-bindings")(`data-mvc-bindings`.asInstanceOf[js.Any])
     __obj.asInstanceOf[mixin]
   }
 }

@@ -14,7 +14,7 @@ object NluEnrichmentRelations {
   @scala.inline
   def apply(model: String = null): NluEnrichmentRelations = {
     val __obj = js.Dynamic.literal()
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     __obj.asInstanceOf[NluEnrichmentRelations]
   }
 }

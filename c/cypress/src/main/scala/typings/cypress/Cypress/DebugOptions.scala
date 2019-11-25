@@ -11,7 +11,7 @@ trait DebugOptions extends js.Object {
 object DebugOptions {
   @scala.inline
   def apply(verbose: Boolean): DebugOptions = {
-    val __obj = js.Dynamic.literal(verbose = verbose)
+    val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DebugOptions]
   }

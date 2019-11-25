@@ -22,8 +22,8 @@ trait RepositoryWebhook extends js.Object {
 object RepositoryWebhook {
   @scala.inline
   def apply(name: String, `type`: String, url: String): RepositoryWebhook = {
-    val __obj = js.Dynamic.literal(name = name, url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepositoryWebhook]
   }
 }

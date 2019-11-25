@@ -14,7 +14,7 @@ trait Anon_Animating extends js.Object {
 object Anon_Animating {
   @scala.inline
   def apply(animating: Boolean, color: String, size: String, toast: Boolean): Anon_Animating = {
-    val __obj = js.Dynamic.literal(animating = animating, color = color, size = size, toast = toast)
+    val __obj = js.Dynamic.literal(animating = animating.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], toast = toast.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Animating]
   }

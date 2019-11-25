@@ -47,10 +47,10 @@ object Options {
     maxBatchSize: Int | Double = null
   ): Options[K, V] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(batch)) __obj.updateDynamic("batch")(batch)
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (!js.isUndefined(batch)) __obj.updateDynamic("batch")(batch.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (cacheKeyFn != null) __obj.updateDynamic("cacheKeyFn")(js.Any.fromFunction1(cacheKeyFn))
-    if (cacheMap != null) __obj.updateDynamic("cacheMap")(cacheMap)
+    if (cacheMap != null) __obj.updateDynamic("cacheMap")(cacheMap.asInstanceOf[js.Any])
     if (maxBatchSize != null) __obj.updateDynamic("maxBatchSize")(maxBatchSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[K, V]]
   }

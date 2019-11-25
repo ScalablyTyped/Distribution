@@ -82,17 +82,17 @@ object TooltipProps {
     tooltipShowOnClick: js.UndefOr[Boolean] = js.undefined
   ): TooltipProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter.asInstanceOf[js.Any])
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (tooltipDelay != null) __obj.updateDynamic("tooltipDelay")(tooltipDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltipHideOnClick)) __obj.updateDynamic("tooltipHideOnClick")(tooltipHideOnClick)
+    if (!js.isUndefined(tooltipHideOnClick)) __obj.updateDynamic("tooltipHideOnClick")(tooltipHideOnClick.asInstanceOf[js.Any])
     if (tooltipPosition != null) __obj.updateDynamic("tooltipPosition")(tooltipPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltipShowOnClick)) __obj.updateDynamic("tooltipShowOnClick")(tooltipShowOnClick)
+    if (!js.isUndefined(tooltipShowOnClick)) __obj.updateDynamic("tooltipShowOnClick")(tooltipShowOnClick.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipProps]
   }
 }

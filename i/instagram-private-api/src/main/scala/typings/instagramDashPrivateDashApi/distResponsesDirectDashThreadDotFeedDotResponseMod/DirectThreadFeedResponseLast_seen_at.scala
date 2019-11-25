@@ -12,7 +12,7 @@ object DirectThreadFeedResponseLast_seen_at {
   @scala.inline
   def apply(`300687565`: DirectThreadFeedResponse300687565): DirectThreadFeedResponseLast_seen_at = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("300687565")(`300687565`)
+    __obj.updateDynamic("300687565")(`300687565`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectThreadFeedResponseLast_seen_at]
   }
 }

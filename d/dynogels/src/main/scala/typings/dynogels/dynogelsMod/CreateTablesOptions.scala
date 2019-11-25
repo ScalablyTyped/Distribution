@@ -20,7 +20,7 @@ object CreateTablesOptions {
   ): CreateTablesOptions = {
     val __obj = js.Dynamic.literal()
     if (readCapacity != null) __obj.updateDynamic("readCapacity")(readCapacity.asInstanceOf[js.Any])
-    if (streamSpecification != null) __obj.updateDynamic("streamSpecification")(streamSpecification)
+    if (streamSpecification != null) __obj.updateDynamic("streamSpecification")(streamSpecification.asInstanceOf[js.Any])
     if (writeCapacity != null) __obj.updateDynamic("writeCapacity")(writeCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTablesOptions]
   }

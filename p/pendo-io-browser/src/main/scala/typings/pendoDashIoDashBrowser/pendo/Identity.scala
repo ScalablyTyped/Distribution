@@ -12,8 +12,8 @@ trait Identity extends js.Object {
 object Identity {
   @scala.inline
   def apply(visitor: Visitor, account: Account = null): Identity = {
-    val __obj = js.Dynamic.literal(visitor = visitor)
-    if (account != null) __obj.updateDynamic("account")(account)
+    val __obj = js.Dynamic.literal(visitor = visitor.asInstanceOf[js.Any])
+    if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
     __obj.asInstanceOf[Identity]
   }
 }

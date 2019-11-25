@@ -15,7 +15,7 @@ trait Anon_AcceptableStatesFalse extends js.Object {
 object Anon_AcceptableStatesFalse {
   @scala.inline
   def apply(acceptableStates: js.Tuple2[ENDED, PLAYING], stateChangeRequired: `false`): Anon_AcceptableStatesFalse = {
-    val __obj = js.Dynamic.literal(acceptableStates = acceptableStates, stateChangeRequired = stateChangeRequired)
+    val __obj = js.Dynamic.literal(acceptableStates = acceptableStates.asInstanceOf[js.Any], stateChangeRequired = stateChangeRequired.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AcceptableStatesFalse]
   }

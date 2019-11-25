@@ -27,7 +27,7 @@ object Anon_ALERT {
     NOTICE: String,
     WARNING: String
   ): Anon_ALERT = {
-    val __obj = js.Dynamic.literal(ALERT = ALERT, CRITICAL = CRITICAL, DEBUG = DEBUG, EMERGENCY = EMERGENCY, ERROR = ERROR, INFO = INFO, NOTICE = NOTICE, WARNING = WARNING)
+    val __obj = js.Dynamic.literal(ALERT = ALERT.asInstanceOf[js.Any], CRITICAL = CRITICAL.asInstanceOf[js.Any], DEBUG = DEBUG.asInstanceOf[js.Any], EMERGENCY = EMERGENCY.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], INFO = INFO.asInstanceOf[js.Any], NOTICE = NOTICE.asInstanceOf[js.Any], WARNING = WARNING.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ALERT]
   }

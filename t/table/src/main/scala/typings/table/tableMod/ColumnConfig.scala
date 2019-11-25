@@ -32,7 +32,7 @@ object ColumnConfig {
     if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
     if (truncate != null) __obj.updateDynamic("truncate")(truncate.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapWord)) __obj.updateDynamic("wrapWord")(wrapWord)
+    if (!js.isUndefined(wrapWord)) __obj.updateDynamic("wrapWord")(wrapWord.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnConfig]
   }
 }

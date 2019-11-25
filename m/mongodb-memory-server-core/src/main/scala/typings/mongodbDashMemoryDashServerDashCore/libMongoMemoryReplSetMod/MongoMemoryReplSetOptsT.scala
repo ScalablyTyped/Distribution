@@ -24,11 +24,11 @@ object MongoMemoryReplSetOptsT {
     replSet: ReplSetOpts = null
   ): MongoMemoryReplSetOptsT = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart)
-    if (binary != null) __obj.updateDynamic("binary")(binary)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (instanceOpts != null) __obj.updateDynamic("instanceOpts")(instanceOpts)
-    if (replSet != null) __obj.updateDynamic("replSet")(replSet)
+    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.asInstanceOf[js.Any])
+    if (binary != null) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (instanceOpts != null) __obj.updateDynamic("instanceOpts")(instanceOpts.asInstanceOf[js.Any])
+    if (replSet != null) __obj.updateDynamic("replSet")(replSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongoMemoryReplSetOptsT]
   }
 }

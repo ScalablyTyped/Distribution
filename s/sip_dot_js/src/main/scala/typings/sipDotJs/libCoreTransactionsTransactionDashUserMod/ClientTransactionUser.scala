@@ -37,7 +37,7 @@ object ClientTransactionUser {
     onTransportError: /* error */ TransportError => Unit = null,
     receiveResponse: /* response */ IncomingResponseMessage => Unit = null
   ): ClientTransactionUser = {
-    val __obj = js.Dynamic.literal(loggerFactory = loggerFactory)
+    val __obj = js.Dynamic.literal(loggerFactory = loggerFactory.asInstanceOf[js.Any])
     if (onRequestTimeout != null) __obj.updateDynamic("onRequestTimeout")(js.Any.fromFunction0(onRequestTimeout))
     if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction1(onStateChange))
     if (onTransportError != null) __obj.updateDynamic("onTransportError")(js.Any.fromFunction1(onTransportError))

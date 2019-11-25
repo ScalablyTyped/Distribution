@@ -58,11 +58,11 @@ trait IFileUploadConfigFile extends IRequestConfig {
 object IFileUploadConfigFile {
   @scala.inline
   def apply(
-    data: js.Any,
     method: String,
     url: String,
     arrayKey: String = null,
     cache: js.Any = null,
+    data: js.Any = null,
     disableProgress: js.UndefOr[Boolean] = js.undefined,
     eventHandlers: StringDictionary[EventListenerOrEventListenerObject] = null,
     headers: IHttpRequestConfigHeaders = null,
@@ -83,28 +83,29 @@ object IFileUploadConfigFile {
     xsrfCookieName: String = null,
     xsrfHeaderName: String = null
   ): IFileUploadConfigFile = {
-    val __obj = js.Dynamic.literal(data = data, method = method, url = url)
-    if (arrayKey != null) __obj.updateDynamic("arrayKey")(arrayKey)
-    if (cache != null) __obj.updateDynamic("cache")(cache)
-    if (!js.isUndefined(disableProgress)) __obj.updateDynamic("disableProgress")(disableProgress)
-    if (eventHandlers != null) __obj.updateDynamic("eventHandlers")(eventHandlers)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (jsonpCallbackParam != null) __obj.updateDynamic("jsonpCallbackParam")(jsonpCallbackParam)
-    if (objectKey != null) __obj.updateDynamic("objectKey")(objectKey)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (arrayKey != null) __obj.updateDynamic("arrayKey")(arrayKey.asInstanceOf[js.Any])
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableProgress)) __obj.updateDynamic("disableProgress")(disableProgress.asInstanceOf[js.Any])
+    if (eventHandlers != null) __obj.updateDynamic("eventHandlers")(eventHandlers.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (jsonpCallbackParam != null) __obj.updateDynamic("jsonpCallbackParam")(jsonpCallbackParam.asInstanceOf[js.Any])
+    if (objectKey != null) __obj.updateDynamic("objectKey")(objectKey.asInstanceOf[js.Any])
     if (paramSerializer != null) __obj.updateDynamic("paramSerializer")(paramSerializer.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
     if (resumeChunkSize != null) __obj.updateDynamic("resumeChunkSize")(resumeChunkSize.asInstanceOf[js.Any])
-    if (resumeSize != null) __obj.updateDynamic("resumeSize")(resumeSize)
-    if (resumeSizeResponseReader != null) __obj.updateDynamic("resumeSizeResponseReader")(resumeSizeResponseReader)
-    if (resumeSizeUrl != null) __obj.updateDynamic("resumeSizeUrl")(resumeSizeUrl)
+    if (resumeSize != null) __obj.updateDynamic("resumeSize")(resumeSize.asInstanceOf[js.Any])
+    if (resumeSizeResponseReader != null) __obj.updateDynamic("resumeSizeResponseReader")(resumeSizeResponseReader.asInstanceOf[js.Any])
+    if (resumeSizeUrl != null) __obj.updateDynamic("resumeSizeUrl")(resumeSizeUrl.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (transformRequest != null) __obj.updateDynamic("transformRequest")(transformRequest.asInstanceOf[js.Any])
     if (transformResponse != null) __obj.updateDynamic("transformResponse")(transformResponse.asInstanceOf[js.Any])
-    if (uploadEventHandlers != null) __obj.updateDynamic("uploadEventHandlers")(uploadEventHandlers)
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
-    if (xsrfCookieName != null) __obj.updateDynamic("xsrfCookieName")(xsrfCookieName)
-    if (xsrfHeaderName != null) __obj.updateDynamic("xsrfHeaderName")(xsrfHeaderName)
+    if (uploadEventHandlers != null) __obj.updateDynamic("uploadEventHandlers")(uploadEventHandlers.asInstanceOf[js.Any])
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
+    if (xsrfCookieName != null) __obj.updateDynamic("xsrfCookieName")(xsrfCookieName.asInstanceOf[js.Any])
+    if (xsrfHeaderName != null) __obj.updateDynamic("xsrfHeaderName")(xsrfHeaderName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileUploadConfigFile]
   }
 }

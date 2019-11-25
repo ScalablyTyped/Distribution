@@ -59,15 +59,15 @@ object GenerateTextureConfig {
     resizeCanvas: js.UndefOr[Boolean] = js.undefined
   ): GenerateTextureConfig = {
     val __obj = js.Dynamic.literal()
-    if (canvas != null) __obj.updateDynamic("canvas")(canvas)
-    if (!js.isUndefined(clearCanvas)) __obj.updateDynamic("clearCanvas")(clearCanvas)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (palette != null) __obj.updateDynamic("palette")(palette)
+    if (canvas != null) __obj.updateDynamic("canvas")(canvas.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearCanvas)) __obj.updateDynamic("clearCanvas")(clearCanvas.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
     if (pixelHeight != null) __obj.updateDynamic("pixelHeight")(pixelHeight.asInstanceOf[js.Any])
     if (pixelWidth != null) __obj.updateDynamic("pixelWidth")(pixelWidth.asInstanceOf[js.Any])
     if (postRender != null) __obj.updateDynamic("postRender")(js.Any.fromFunction2(postRender))
     if (preRender != null) __obj.updateDynamic("preRender")(js.Any.fromFunction2(preRender))
-    if (!js.isUndefined(resizeCanvas)) __obj.updateDynamic("resizeCanvas")(resizeCanvas)
+    if (!js.isUndefined(resizeCanvas)) __obj.updateDynamic("resizeCanvas")(resizeCanvas.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateTextureConfig]
   }
 }

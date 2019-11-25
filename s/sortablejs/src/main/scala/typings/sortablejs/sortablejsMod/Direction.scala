@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait Direction extends js.Object
 
+object Direction {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def horizontal: typings.sortablejs.sortablejsStrings.horizontal = this.cast("horizontal")
+  @scala.inline
+  def vertical: typings.sortablejs.sortablejsStrings.vertical = this.cast("vertical")
+}
+

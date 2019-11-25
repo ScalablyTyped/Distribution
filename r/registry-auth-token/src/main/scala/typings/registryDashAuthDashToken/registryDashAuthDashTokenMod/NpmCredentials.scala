@@ -31,10 +31,10 @@ trait NpmCredentials extends js.Object {
 object NpmCredentials {
   @scala.inline
   def apply(token: String, `type`: Basic | Bearer, password: String = null, username: String = null): NpmCredentials = {
-    val __obj = js.Dynamic.literal(token = token)
+    val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[NpmCredentials]
   }
 }

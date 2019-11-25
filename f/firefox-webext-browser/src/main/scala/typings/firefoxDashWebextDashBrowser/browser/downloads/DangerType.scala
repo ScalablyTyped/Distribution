@@ -30,3 +30,24 @@ import scala.scalajs.js.annotation._
 */
 trait DangerType extends js.Object
 
+object DangerType {
+  @scala.inline
+  def accepted: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.accepted = this.cast("accepted")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def content: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.content = this.cast("content")
+  @scala.inline
+  def file: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.file = this.cast("file")
+  @scala.inline
+  def host: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.host = this.cast("host")
+  @scala.inline
+  def safe: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.safe = this.cast("safe")
+  @scala.inline
+  def uncommon: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.uncommon = this.cast("uncommon")
+  @scala.inline
+  def unwanted: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.unwanted = this.cast("unwanted")
+  @scala.inline
+  def url: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.url = this.cast("url")
+}
+

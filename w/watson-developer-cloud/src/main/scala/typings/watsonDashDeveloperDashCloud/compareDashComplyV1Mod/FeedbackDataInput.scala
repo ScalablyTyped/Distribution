@@ -36,10 +36,10 @@ object FeedbackDataInput {
     model_id: String = null,
     model_version: String = null
   ): FeedbackDataInput = {
-    val __obj = js.Dynamic.literal(feedback_type = feedback_type, location = location, original_labels = original_labels, text = text, updated_labels = updated_labels)
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (model_id != null) __obj.updateDynamic("model_id")(model_id)
-    if (model_version != null) __obj.updateDynamic("model_version")(model_version)
+    val __obj = js.Dynamic.literal(feedback_type = feedback_type.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], original_labels = original_labels.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], updated_labels = updated_labels.asInstanceOf[js.Any])
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (model_id != null) __obj.updateDynamic("model_id")(model_id.asInstanceOf[js.Any])
+    if (model_version != null) __obj.updateDynamic("model_version")(model_version.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeedbackDataInput]
   }
 }

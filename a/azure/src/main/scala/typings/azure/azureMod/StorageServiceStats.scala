@@ -12,7 +12,7 @@ trait StorageServiceStats extends js.Object {
 object StorageServiceStats {
   @scala.inline
   def apply(GeoReplication: Anon_LastSyncTime): StorageServiceStats = {
-    val __obj = js.Dynamic.literal(GeoReplication = GeoReplication)
+    val __obj = js.Dynamic.literal(GeoReplication = GeoReplication.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StorageServiceStats]
   }

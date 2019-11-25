@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait VoronoiTransform extends Transforms {
+trait VoronoiTransform extends _Transforms {
   var as: js.UndefOr[String | SignalRef] = js.undefined
   var extent: js.UndefOr[(Vector2[(Vector2[Double | SignalRef]) | SignalRef]) | SignalRef] = js.undefined
   var size: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.undefined
@@ -27,7 +27,7 @@ object VoronoiTransform {
     size: (Vector2[Double | SignalRef]) | SignalRef = null
   ): VoronoiTransform = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

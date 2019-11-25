@@ -37,7 +37,7 @@ object PlaybackState {
     shuffle: Boolean,
     track_window: PlaybackTrackWindow
   ): PlaybackState = {
-    val __obj = js.Dynamic.literal(context = context, disallows = disallows, duration = duration, paused = paused, position = position, repeat_mode = repeat_mode.asInstanceOf[js.Any], restrictions = restrictions, shuffle = shuffle, track_window = track_window)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], disallows = disallows.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], repeat_mode = repeat_mode.asInstanceOf[js.Any], restrictions = restrictions.asInstanceOf[js.Any], shuffle = shuffle.asInstanceOf[js.Any], track_window = track_window.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PlaybackState]
   }

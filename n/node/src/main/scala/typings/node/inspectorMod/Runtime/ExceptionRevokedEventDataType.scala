@@ -18,7 +18,7 @@ trait ExceptionRevokedEventDataType extends js.Object {
 object ExceptionRevokedEventDataType {
   @scala.inline
   def apply(exceptionId: Double, reason: java.lang.String): ExceptionRevokedEventDataType = {
-    val __obj = js.Dynamic.literal(exceptionId = exceptionId, reason = reason)
+    val __obj = js.Dynamic.literal(exceptionId = exceptionId.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExceptionRevokedEventDataType]
   }

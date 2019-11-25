@@ -26,10 +26,10 @@ object AutosizeInputProps {
     inputRef: LegacyRef[HTMLInputElement] = null,
     inputStyle: Pick[CSSProperties, boxSizing | width] = null
   ): AutosizeInputProps = {
-    val __obj = js.Dynamic.literal(style = style)
-    if (inputClassName != null) __obj.updateDynamic("inputClassName")(inputClassName)
+    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
+    if (inputClassName != null) __obj.updateDynamic("inputClassName")(inputClassName.asInstanceOf[js.Any])
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
-    if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle)
+    if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutosizeInputProps]
   }
 }

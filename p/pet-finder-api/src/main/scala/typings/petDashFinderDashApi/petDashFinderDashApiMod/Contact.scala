@@ -27,7 +27,7 @@ object Contact {
     state: String,
     zip: String
   ): Contact = {
-    val __obj = js.Dynamic.literal(address1 = address1, address2 = address2, city = city, email = email, fax = fax, phone = phone, state = state, zip = zip)
+    val __obj = js.Dynamic.literal(address1 = address1.asInstanceOf[js.Any], address2 = address2.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], fax = fax.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], zip = zip.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Contact]
   }

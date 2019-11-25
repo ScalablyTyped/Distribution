@@ -152,7 +152,7 @@ object coinbaseDashCommerceDashNodeStrings {
   sealed trait pricing_type extends js.Object
   
   @js.native
-  sealed trait usdc extends CryptoName
+  sealed trait usdc_ extends CryptoName
   
   @scala.inline
   def BCH: BCH = "BCH".asInstanceOf[BCH]
@@ -249,6 +249,6 @@ object coinbaseDashCommerceDashNodeStrings {
   @scala.inline
   def pricing_type: pricing_type = "pricing_type".asInstanceOf[pricing_type]
   @scala.inline
-  def usdc: usdc = "usdc".asInstanceOf[usdc]
+  def usdc_ : usdc_ = "usdc".asInstanceOf[usdc_]
 }
 

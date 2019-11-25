@@ -12,7 +12,7 @@ object Anon_MultiBoolean {
   @scala.inline
   def apply(multi: js.UndefOr[Boolean] = js.undefined): Anon_MultiBoolean = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MultiBoolean]
   }
 }

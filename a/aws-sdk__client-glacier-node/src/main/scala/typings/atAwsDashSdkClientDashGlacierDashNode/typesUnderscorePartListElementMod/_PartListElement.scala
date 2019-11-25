@@ -19,8 +19,8 @@ object _PartListElement {
   @scala.inline
   def apply(RangeInBytes: String = null, SHA256TreeHash: String = null): _PartListElement = {
     val __obj = js.Dynamic.literal()
-    if (RangeInBytes != null) __obj.updateDynamic("RangeInBytes")(RangeInBytes)
-    if (SHA256TreeHash != null) __obj.updateDynamic("SHA256TreeHash")(SHA256TreeHash)
+    if (RangeInBytes != null) __obj.updateDynamic("RangeInBytes")(RangeInBytes.asInstanceOf[js.Any])
+    if (SHA256TreeHash != null) __obj.updateDynamic("SHA256TreeHash")(SHA256TreeHash.asInstanceOf[js.Any])
     __obj.asInstanceOf[_PartListElement]
   }
 }

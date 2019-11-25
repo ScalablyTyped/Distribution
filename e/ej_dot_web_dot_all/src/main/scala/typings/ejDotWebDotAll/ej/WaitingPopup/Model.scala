@@ -60,16 +60,16 @@ object Model {
     text: String = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
+    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
-    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
-    if (!js.isUndefined(showImage)) __obj.updateDynamic("showImage")(showImage)
-    if (!js.isUndefined(showOnInit)) __obj.updateDynamic("showOnInit")(showOnInit)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(showImage)) __obj.updateDynamic("showImage")(showImage.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOnInit)) __obj.updateDynamic("showOnInit")(showOnInit.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

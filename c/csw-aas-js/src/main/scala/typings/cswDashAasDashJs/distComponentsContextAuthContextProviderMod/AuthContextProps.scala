@@ -13,7 +13,7 @@ trait AuthContextProps extends js.Object {
 object AuthContextProps {
   @scala.inline
   def apply(config: AuthContextConfig, children: ReactNode = null): AuthContextProps = {
-    val __obj = js.Dynamic.literal(config = config)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthContextProps]
   }

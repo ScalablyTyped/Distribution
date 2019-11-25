@@ -30,7 +30,7 @@ object IUploadOperation {
     sourceFile: IStorageFile,
     startAsync: () => IAsyncOperationWithProgress[UploadOperation, UploadOperation]
   ): IUploadOperation = {
-    val __obj = js.Dynamic.literal(attachAsync = js.Any.fromFunction0(attachAsync), costPolicy = costPolicy, getResponseInformation = js.Any.fromFunction0(getResponseInformation), getResultStreamAt = js.Any.fromFunction1(getResultStreamAt), group = group, guid = guid, method = method, progress = progress, requestedUri = requestedUri, sourceFile = sourceFile, startAsync = js.Any.fromFunction0(startAsync))
+    val __obj = js.Dynamic.literal(attachAsync = js.Any.fromFunction0(attachAsync), costPolicy = costPolicy.asInstanceOf[js.Any], getResponseInformation = js.Any.fromFunction0(getResponseInformation), getResultStreamAt = js.Any.fromFunction1(getResultStreamAt), group = group.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], requestedUri = requestedUri.asInstanceOf[js.Any], sourceFile = sourceFile.asInstanceOf[js.Any], startAsync = js.Any.fromFunction0(startAsync))
   
     __obj.asInstanceOf[IUploadOperation]
   }

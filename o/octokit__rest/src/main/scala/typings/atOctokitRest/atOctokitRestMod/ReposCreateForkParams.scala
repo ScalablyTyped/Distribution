@@ -16,8 +16,8 @@ trait ReposCreateForkParams extends js.Object {
 object ReposCreateForkParams {
   @scala.inline
   def apply(owner: String, repo: String, organization: String = null): ReposCreateForkParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo)
-    if (organization != null) __obj.updateDynamic("organization")(organization)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (organization != null) __obj.updateDynamic("organization")(organization.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCreateForkParams]
   }
 }

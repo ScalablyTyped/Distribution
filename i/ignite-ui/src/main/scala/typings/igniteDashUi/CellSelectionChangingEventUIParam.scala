@@ -47,13 +47,13 @@ object CellSelectionChangingEventUIParam {
     selectedCells: js.Array[_] = null
   ): CellSelectionChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (cell != null) __obj.updateDynamic("cell")(cell)
+    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
     if (firstColumnIndex != null) __obj.updateDynamic("firstColumnIndex")(firstColumnIndex.asInstanceOf[js.Any])
     if (firstRowIndex != null) __obj.updateDynamic("firstRowIndex")(firstRowIndex.asInstanceOf[js.Any])
     if (lastColumnIndex != null) __obj.updateDynamic("lastColumnIndex")(lastColumnIndex.asInstanceOf[js.Any])
     if (lastRowIndex != null) __obj.updateDynamic("lastRowIndex")(lastRowIndex.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (selectedCells != null) __obj.updateDynamic("selectedCells")(selectedCells)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (selectedCells != null) __obj.updateDynamic("selectedCells")(selectedCells.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellSelectionChangingEventUIParam]
   }
 }

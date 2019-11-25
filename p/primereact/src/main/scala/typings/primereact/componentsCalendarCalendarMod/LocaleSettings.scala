@@ -27,7 +27,7 @@ object LocaleSettings {
     today: String,
     firstDayOfWeek: Int | Double = null
   ): LocaleSettings = {
-    val __obj = js.Dynamic.literal(clear = clear, dayNames = dayNames, dayNamesMin = dayNamesMin, dayNamesShort = dayNamesShort, monthNames = monthNames, monthNamesShort = monthNamesShort, today = today)
+    val __obj = js.Dynamic.literal(clear = clear.asInstanceOf[js.Any], dayNames = dayNames.asInstanceOf[js.Any], dayNamesMin = dayNamesMin.asInstanceOf[js.Any], dayNamesShort = dayNamesShort.asInstanceOf[js.Any], monthNames = monthNames.asInstanceOf[js.Any], monthNamesShort = monthNamesShort.asInstanceOf[js.Any], today = today.asInstanceOf[js.Any])
     if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocaleSettings]
   }

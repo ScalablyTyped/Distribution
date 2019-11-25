@@ -15,3 +15,22 @@ import scala.scalajs.js.annotation._
 */
 trait QueryOperator extends js.Object
 
+object QueryOperator {
+  @scala.inline
+  def `<`: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.`<` = this.cast("<")
+  @scala.inline
+  def `<=`: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.`<=` = this.cast("<=")
+  @scala.inline
+  def `=`: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.`=` = this.cast("=")
+  @scala.inline
+  def `==`: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.`==` = this.cast("==")
+  @scala.inline
+  def `>`: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.`>` = this.cast(">")
+  @scala.inline
+  def `>=`: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.`>=` = this.cast(">=")
+  @scala.inline
+  def `array-contains`: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.`array-contains` = this.cast("array-contains")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

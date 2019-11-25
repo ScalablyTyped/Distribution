@@ -26,8 +26,8 @@ trait SyncCollectionOptions extends js.Object {
 object SyncCollectionOptions {
   @scala.inline
   def apply(props: js.Array[js.Object], syncLevel: Double, syncToken: String, depth: String = null): SyncCollectionOptions = {
-    val __obj = js.Dynamic.literal(props = props, syncLevel = syncLevel, syncToken = syncToken)
-    if (depth != null) __obj.updateDynamic("depth")(depth)
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], syncLevel = syncLevel.asInstanceOf[js.Any], syncToken = syncToken.asInstanceOf[js.Any])
+    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyncCollectionOptions]
   }
 }

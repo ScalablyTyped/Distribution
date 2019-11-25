@@ -25,7 +25,7 @@ object meshUtilsCreateFromElevationOptions {
     propertyIsEnumerable: PropertyKey => Boolean,
     demResolution: Double | String = null
   ): meshUtilsCreateFromElevationOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (demResolution != null) __obj.updateDynamic("demResolution")(demResolution.asInstanceOf[js.Any])
     __obj.asInstanceOf[meshUtilsCreateFromElevationOptions]
   }

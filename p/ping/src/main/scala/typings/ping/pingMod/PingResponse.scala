@@ -57,8 +57,8 @@ object PingResponse {
     time: Double | unknown,
     numeric_host: String = null
   ): PingResponse = {
-    val __obj = js.Dynamic.literal(alive = alive, avg = avg, host = host, max = max, min = min, output = output, stddev = stddev, time = time.asInstanceOf[js.Any])
-    if (numeric_host != null) __obj.updateDynamic("numeric_host")(numeric_host)
+    val __obj = js.Dynamic.literal(alive = alive.asInstanceOf[js.Any], avg = avg.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], stddev = stddev.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
+    if (numeric_host != null) __obj.updateDynamic("numeric_host")(numeric_host.asInstanceOf[js.Any])
     __obj.asInstanceOf[PingResponse]
   }
 }

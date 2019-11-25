@@ -35,8 +35,8 @@ object SVGInjectorOptions {
   ): SVGInjectorOptions = {
     val __obj = js.Dynamic.literal()
     if (each != null) __obj.updateDynamic("each")(js.Any.fromFunction1(each))
-    if (evalScripts != null) __obj.updateDynamic("evalScripts")(evalScripts)
-    if (pngFallback != null) __obj.updateDynamic("pngFallback")(pngFallback)
+    if (evalScripts != null) __obj.updateDynamic("evalScripts")(evalScripts.asInstanceOf[js.Any])
+    if (pngFallback != null) __obj.updateDynamic("pngFallback")(pngFallback.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGInjectorOptions]
   }
 }

@@ -17,9 +17,9 @@ object ProductPermissions {
   @scala.inline
   def apply(kind: String = null, permission: js.Array[ProductPermission] = null, productId: String = null): ProductPermissions = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (permission != null) __obj.updateDynamic("permission")(permission)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (permission != null) __obj.updateDynamic("permission")(permission.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductPermissions]
   }
 }

@@ -25,9 +25,9 @@ object CreateBucketOptions {
     replicaNumber: Int | Double = null
   ): CreateBucketOptions = {
     val __obj = js.Dynamic.literal()
-    if (authType != null) __obj.updateDynamic("authType")(authType)
-    if (bucketType != null) __obj.updateDynamic("bucketType")(bucketType)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (authType != null) __obj.updateDynamic("authType")(authType.asInstanceOf[js.Any])
+    if (bucketType != null) __obj.updateDynamic("bucketType")(bucketType.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (ramQuotaMB != null) __obj.updateDynamic("ramQuotaMB")(ramQuotaMB.asInstanceOf[js.Any])
     if (replicaNumber != null) __obj.updateDynamic("replicaNumber")(replicaNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBucketOptions]

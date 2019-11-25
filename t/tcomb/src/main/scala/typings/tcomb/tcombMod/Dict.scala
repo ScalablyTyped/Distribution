@@ -21,7 +21,7 @@ trait Dict[T] extends Type[StringDictionary[T]] {
 @JSImport("tcomb", "dict")
 @js.native
 object dict extends js.Object {
-  def apply[T](domain: Constructor[String], codomain: Constructor[T]): Dict[T] = js.native
-  def apply[T](domain: Constructor[String], codomain: Constructor[T], name: String): Dict[T] = js.native
+  def apply[T](domain: Constructor[java.lang.String], codomain: Constructor[T]): Dict[T] = js.native
+  def apply[T](domain: Constructor[java.lang.String], codomain: Constructor[T], name: java.lang.String): Dict[T] = js.native
 }
 

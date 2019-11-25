@@ -14,8 +14,8 @@ trait TableSpecimenProps extends js.Object {
 object TableSpecimenProps {
   @scala.inline
   def apply(rows: js.Array[StringDictionary[ReactNode]], columns: js.Array[String] = null): TableSpecimenProps = {
-    val __obj = js.Dynamic.literal(rows = rows)
-    if (columns != null) __obj.updateDynamic("columns")(columns)
+    val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any])
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableSpecimenProps]
   }
 }

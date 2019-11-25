@@ -14,8 +14,8 @@ object RestPresenceParams {
   @scala.inline
   def apply(clientId: String = null, connectionId: String = null, limit: Int | Double = null): RestPresenceParams = {
     val __obj = js.Dynamic.literal()
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestPresenceParams]
   }

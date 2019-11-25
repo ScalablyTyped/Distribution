@@ -12,7 +12,7 @@ trait DeepMapAsyncResult extends js.Object {
 object DeepMapAsyncResult {
   @scala.inline
   def apply(recurse: Boolean, value: js.Promise[_]): DeepMapAsyncResult = {
-    val __obj = js.Dynamic.literal(recurse = recurse, value = value)
+    val __obj = js.Dynamic.literal(recurse = recurse.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeepMapAsyncResult]
   }

@@ -18,7 +18,7 @@ trait IdentityDescriptor extends js.Object {
 object IdentityDescriptor {
   @scala.inline
   def apply(identifier: String, identityType: String): IdentityDescriptor = {
-    val __obj = js.Dynamic.literal(identifier = identifier, identityType = identityType)
+    val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], identityType = identityType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IdentityDescriptor]
   }

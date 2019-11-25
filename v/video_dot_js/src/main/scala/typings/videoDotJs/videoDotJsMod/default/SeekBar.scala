@@ -2,7 +2,6 @@ package typings.videoDotJs.videoDotJsMod.default
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.videoDotJs.videoDotJsMod.videojs.Player
 import typings.videoDotJs.videoDotJsMod.videojs.SliderOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,9 +19,12 @@ object SeekBar
   * @param [options]
   *        The key/value store of player options.
   */
-Instantiable1[/* player */ Player, typings.videoDotJs.videoDotJsMod.videojs.SeekBar]
+Instantiable1[
+      /* player */ typings.videoDotJs.videoDotJsMod.videojs.Player, 
+      typings.videoDotJs.videoDotJsMod.videojs.SeekBar
+    ]
      with Instantiable2[
-      /* player */ Player, 
+      /* player */ typings.videoDotJs.videoDotJsMod.videojs.Player, 
       /* options */ SliderOptions, 
       typings.videoDotJs.videoDotJsMod.videojs.SeekBar
     ]

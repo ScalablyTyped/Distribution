@@ -14,7 +14,7 @@ trait TreeData extends js.Object {
 object TreeData {
   @scala.inline
   def apply(items: StringDictionary[TreeItem] with NumberDictionary[TreeItem], rootId: ItemId): TreeData = {
-    val __obj = js.Dynamic.literal(items = items, rootId = rootId)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], rootId = rootId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TreeData]
   }

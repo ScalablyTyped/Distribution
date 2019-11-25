@@ -35,10 +35,10 @@ object ListResourceTagsOutput {
     Tags: js.Array[_UnmarshalledTag] = null,
     Truncated: js.UndefOr[Boolean] = js.undefined
   ): ListResourceTagsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker)
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
-    if (!js.isUndefined(Truncated)) __obj.updateDynamic("Truncated")(Truncated)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
+    if (!js.isUndefined(Truncated)) __obj.updateDynamic("Truncated")(Truncated.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResourceTagsOutput]
   }
 }

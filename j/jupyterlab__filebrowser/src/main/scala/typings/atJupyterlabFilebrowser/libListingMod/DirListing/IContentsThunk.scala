@@ -26,7 +26,7 @@ trait IContentsThunk extends js.Object {
 object IContentsThunk {
   @scala.inline
   def apply(model: IModel, withContent: () => js.Promise[IModel]): IContentsThunk = {
-    val __obj = js.Dynamic.literal(model = model, withContent = js.Any.fromFunction0(withContent))
+    val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], withContent = js.Any.fromFunction0(withContent))
   
     __obj.asInstanceOf[IContentsThunk]
   }

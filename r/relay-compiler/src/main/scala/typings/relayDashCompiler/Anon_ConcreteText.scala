@@ -72,10 +72,10 @@ object Anon_ConcreteText {
     documentType: Fragment | Request = null,
     hash: String = null
   ): Anon_ConcreteText = {
-    val __obj = js.Dynamic.literal(concreteText = concreteText, definition = definition, kind = kind, moduleName = moduleName, node = node, sourceHash = sourceHash, typeText = typeText)
-    if (docText != null) __obj.updateDynamic("docText")(docText)
+    val __obj = js.Dynamic.literal(concreteText = concreteText.asInstanceOf[js.Any], definition = definition.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], moduleName = moduleName.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], sourceHash = sourceHash.asInstanceOf[js.Any], typeText = typeText.asInstanceOf[js.Any])
+    if (docText != null) __obj.updateDynamic("docText")(docText.asInstanceOf[js.Any])
     if (documentType != null) __obj.updateDynamic("documentType")(documentType.asInstanceOf[js.Any])
-    if (hash != null) __obj.updateDynamic("hash")(hash)
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ConcreteText]
   }
 }

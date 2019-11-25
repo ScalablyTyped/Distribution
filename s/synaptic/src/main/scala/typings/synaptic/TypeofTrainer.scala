@@ -11,7 +11,7 @@ trait TypeofTrainer extends js.Object {
 object TypeofTrainer {
   @scala.inline
   def apply(cost: Typeofcost): TypeofTrainer = {
-    val __obj = js.Dynamic.literal(cost = cost)
+    val __obj = js.Dynamic.literal(cost = cost.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofTrainer]
   }

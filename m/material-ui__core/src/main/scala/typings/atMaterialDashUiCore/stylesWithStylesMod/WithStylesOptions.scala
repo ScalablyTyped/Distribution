@@ -19,9 +19,9 @@ object WithStylesOptions {
     withTheme: js.UndefOr[Boolean] = js.undefined
   ): WithStylesOptions[ClassKey] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(withTheme)) __obj.updateDynamic("withTheme")(withTheme)
+    if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(withTheme)) __obj.updateDynamic("withTheme")(withTheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithStylesOptions[ClassKey]]
   }
 }

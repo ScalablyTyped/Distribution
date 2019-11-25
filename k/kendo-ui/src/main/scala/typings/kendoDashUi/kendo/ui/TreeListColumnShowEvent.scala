@@ -16,8 +16,8 @@ object TreeListColumnShowEvent {
     sender: TreeList,
     column: js.Any = null
   ): TreeListColumnShowEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (column != null) __obj.updateDynamic("column")(column)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListColumnShowEvent]
   }
 }

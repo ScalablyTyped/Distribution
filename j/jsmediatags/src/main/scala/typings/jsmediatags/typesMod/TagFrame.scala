@@ -14,7 +14,7 @@ trait TagFrame extends js.Object {
 object TagFrame {
   @scala.inline
   def apply(data: js.Any, description: String, id: String, size: Double): TagFrame = {
-    val __obj = js.Dynamic.literal(data = data, description = description, id = id, size = size)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TagFrame]
   }

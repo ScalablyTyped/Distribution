@@ -14,7 +14,7 @@ trait Anon_IsSupportBLE extends js.Object {
 object Anon_IsSupportBLE {
   @scala.inline
   def apply(isSupportBLE: Boolean): Anon_IsSupportBLE = {
-    val __obj = js.Dynamic.literal(isSupportBLE = isSupportBLE)
+    val __obj = js.Dynamic.literal(isSupportBLE = isSupportBLE.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsSupportBLE]
   }

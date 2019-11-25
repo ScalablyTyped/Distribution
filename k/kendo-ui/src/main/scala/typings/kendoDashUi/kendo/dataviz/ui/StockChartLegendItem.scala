@@ -13,8 +13,8 @@ object StockChartLegendItem {
   @scala.inline
   def apply(cursor: String = null, visual: js.Function = null): StockChartLegendItem = {
     val __obj = js.Dynamic.literal()
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (visual != null) __obj.updateDynamic("visual")(visual)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (visual != null) __obj.updateDynamic("visual")(visual.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartLegendItem]
   }
 }

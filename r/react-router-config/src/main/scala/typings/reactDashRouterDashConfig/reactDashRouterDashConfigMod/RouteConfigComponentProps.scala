@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RouteConfigComponentProps[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+trait RouteConfigComponentProps[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof Params ]:? string}
   */ typings.reactDashRouterDashConfig.reactDashRouterDashConfigStrings.RouteConfigComponentProps with js.Any */] extends RouteComponentProps[Params, StaticContext, LocationState] {
   var route: js.UndefOr[RouteConfig] = js.undefined
@@ -18,7 +18,7 @@ trait RouteConfigComponentProps[Params /* <: /* import warning: ImportType.apply
 
 object RouteConfigComponentProps {
   @scala.inline
-  def apply[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.reactDashRouterDashConfig.reactDashRouterDashConfigStrings.RouteConfigComponentProps with js.Any */](
     history: History[LocationState],
@@ -27,10 +27,10 @@ object RouteConfigComponentProps {
     route: RouteConfig = null,
     staticContext: StaticContext = null
   ): RouteConfigComponentProps[Params] = {
-    val __obj = js.Dynamic.literal(history = history, location = location)
-    __obj.updateDynamic("match")(`match`)
-    if (route != null) __obj.updateDynamic("route")(route)
-    if (staticContext != null) __obj.updateDynamic("staticContext")(staticContext)
+    val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
+    __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
+    if (route != null) __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
+    if (staticContext != null) __obj.updateDynamic("staticContext")(staticContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteConfigComponentProps[Params]]
   }
 }

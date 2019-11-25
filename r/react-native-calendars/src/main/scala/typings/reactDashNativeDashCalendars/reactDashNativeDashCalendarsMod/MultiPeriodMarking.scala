@@ -12,7 +12,7 @@ trait MultiPeriodMarking extends Marking {
 object MultiPeriodMarking {
   @scala.inline
   def apply(periods: js.Array[Anon_Color]): MultiPeriodMarking = {
-    val __obj = js.Dynamic.literal(periods = periods)
+    val __obj = js.Dynamic.literal(periods = periods.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MultiPeriodMarking]
   }

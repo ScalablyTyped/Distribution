@@ -50,19 +50,19 @@ object AdapterOptions {
     unload: /* callback */ EmptyCallback => Unit | js.Promise[Unit] = null,
     useFormatDate: js.UndefOr[Boolean] = js.undefined
   ): AdapterOptions = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (dirname != null) __obj.updateDynamic("dirname")(dirname)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (dirname != null) __obj.updateDynamic("dirname")(dirname.asInstanceOf[js.Any])
     if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
-    if (!js.isUndefined(logTransporter)) __obj.updateDynamic("logTransporter")(logTransporter)
+    if (!js.isUndefined(logTransporter)) __obj.updateDynamic("logTransporter")(logTransporter.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(js.Any.fromFunction1(message))
-    if (!js.isUndefined(noNamespace)) __obj.updateDynamic("noNamespace")(noNamespace)
+    if (!js.isUndefined(noNamespace)) __obj.updateDynamic("noNamespace")(noNamespace.asInstanceOf[js.Any])
     if (objectChange != null) __obj.updateDynamic("objectChange")(js.Any.fromFunction2(objectChange))
     if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction0(ready))
     if (stateChange != null) __obj.updateDynamic("stateChange")(js.Any.fromFunction2(stateChange))
-    if (!js.isUndefined(systemConfig)) __obj.updateDynamic("systemConfig")(systemConfig)
+    if (!js.isUndefined(systemConfig)) __obj.updateDynamic("systemConfig")(systemConfig.asInstanceOf[js.Any])
     if (unload != null) __obj.updateDynamic("unload")(js.Any.fromFunction1(unload))
-    if (!js.isUndefined(useFormatDate)) __obj.updateDynamic("useFormatDate")(useFormatDate)
+    if (!js.isUndefined(useFormatDate)) __obj.updateDynamic("useFormatDate")(useFormatDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdapterOptions]
   }
 }

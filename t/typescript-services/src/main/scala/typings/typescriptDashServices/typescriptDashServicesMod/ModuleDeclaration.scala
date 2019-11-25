@@ -1,6 +1,5 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScript.PullElementFlags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation._
 class ModuleDeclaration protected ()
   extends typings.typescriptDashServices.TypeScript.ModuleDeclaration {
   def this(
-    modifiers: js.Array[PullElementFlags],
+    modifiers: js.Array[typings.typescriptDashServices.TypeScript.PullElementFlags],
     name: typings.typescriptDashServices.TypeScript.AST,
     stringLiteral: typings.typescriptDashServices.TypeScript.StringLiteral,
     moduleElements: typings.typescriptDashServices.TypeScript.ISyntaxList2,

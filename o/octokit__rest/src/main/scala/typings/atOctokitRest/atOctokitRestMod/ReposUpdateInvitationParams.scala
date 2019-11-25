@@ -20,7 +20,7 @@ trait ReposUpdateInvitationParams extends js.Object {
 object ReposUpdateInvitationParams {
   @scala.inline
   def apply(invitation_id: Double, owner: String, repo: String, permissions: read | write | admin = null): ReposUpdateInvitationParams = {
-    val __obj = js.Dynamic.literal(invitation_id = invitation_id, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(invitation_id = invitation_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposUpdateInvitationParams]
   }

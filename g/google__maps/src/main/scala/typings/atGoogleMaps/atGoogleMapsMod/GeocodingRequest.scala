@@ -53,11 +53,11 @@ object GeocodingRequest {
     region: String = null
   ): GeocodingRequest = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
-    if (components != null) __obj.updateDynamic("components")(components)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (region != null) __obj.updateDynamic("region")(region)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeocodingRequest]
   }
 }

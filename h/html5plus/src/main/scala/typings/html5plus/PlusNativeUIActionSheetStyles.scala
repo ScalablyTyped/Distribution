@@ -35,9 +35,9 @@ object PlusNativeUIActionSheetStyles {
   @scala.inline
   def apply(buttons: js.Array[PlusNativeUI] = null, cancel: String = null, title: String = null): PlusNativeUIActionSheetStyles = {
     val __obj = js.Dynamic.literal()
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeUIActionSheetStyles]
   }
 }

@@ -17,7 +17,7 @@ object Anon_IndexKeyParent {
     val __obj = js.Dynamic.literal()
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IndexKeyParent[K]]
   }
 }

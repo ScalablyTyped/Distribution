@@ -13,8 +13,8 @@ trait TabButtonClickEventDetail extends js.Object {
 object TabButtonClickEventDetail {
   @scala.inline
   def apply(selected: Boolean, tab: String, href: String = null): TabButtonClickEventDetail = {
-    val __obj = js.Dynamic.literal(selected = selected, tab = tab)
-    if (href != null) __obj.updateDynamic("href")(href)
+    val __obj = js.Dynamic.literal(selected = selected.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabButtonClickEventDetail]
   }
 }

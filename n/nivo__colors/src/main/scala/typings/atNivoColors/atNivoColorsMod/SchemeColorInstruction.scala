@@ -18,7 +18,7 @@ trait SchemeColorInstruction
 object SchemeColorInstruction {
   @scala.inline
   def apply(scheme: ColorSchemeId, size: Int | Double = null): SchemeColorInstruction = {
-    val __obj = js.Dynamic.literal(scheme = scheme)
+    val __obj = js.Dynamic.literal(scheme = scheme.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemeColorInstruction]
   }

@@ -32,9 +32,9 @@ object AttachmentCardOptions {
     foldColor: String = null,
     mimeType: String = null
   ): AttachmentCardOptions = {
-    val __obj = js.Dynamic.literal(buttons = buttons, description = description, failoverPreviewIconUrl = failoverPreviewIconUrl, fileIconImageUrl = fileIconImageUrl, previewOnClick = js.Any.fromFunction1(previewOnClick), previewThumbnailUrl = previewThumbnailUrl, previewUrl = previewUrl, title = title)
-    if (foldColor != null) __obj.updateDynamic("foldColor")(foldColor)
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], failoverPreviewIconUrl = failoverPreviewIconUrl.asInstanceOf[js.Any], fileIconImageUrl = fileIconImageUrl.asInstanceOf[js.Any], previewOnClick = js.Any.fromFunction1(previewOnClick), previewThumbnailUrl = previewThumbnailUrl.asInstanceOf[js.Any], previewUrl = previewUrl.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (foldColor != null) __obj.updateDynamic("foldColor")(foldColor.asInstanceOf[js.Any])
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentCardOptions]
   }
 }

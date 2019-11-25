@@ -12,8 +12,8 @@ trait AuthSessionOptions extends js.Object {
 object AuthSessionOptions {
   @scala.inline
   def apply(authUrl: String, returnUrl: String = null): AuthSessionOptions = {
-    val __obj = js.Dynamic.literal(authUrl = authUrl)
-    if (returnUrl != null) __obj.updateDynamic("returnUrl")(returnUrl)
+    val __obj = js.Dynamic.literal(authUrl = authUrl.asInstanceOf[js.Any])
+    if (returnUrl != null) __obj.updateDynamic("returnUrl")(returnUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthSessionOptions]
   }
 }

@@ -19,9 +19,9 @@ object BuildOptions {
     trailingSlashMode: TrailingSlashMode = null
   ): BuildOptions = {
     val __obj = js.Dynamic.literal()
-    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams)
-    if (queryParamsMode != null) __obj.updateDynamic("queryParamsMode")(queryParamsMode)
-    if (trailingSlashMode != null) __obj.updateDynamic("trailingSlashMode")(trailingSlashMode)
+    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
+    if (queryParamsMode != null) __obj.updateDynamic("queryParamsMode")(queryParamsMode.asInstanceOf[js.Any])
+    if (trailingSlashMode != null) __obj.updateDynamic("trailingSlashMode")(trailingSlashMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildOptions]
   }
 }

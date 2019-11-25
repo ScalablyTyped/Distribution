@@ -12,7 +12,7 @@ trait NxSimpleValue extends js.Object {
 object NxSimpleValue {
   @scala.inline
   def apply(qNum: Double, qText: String): NxSimpleValue = {
-    val __obj = js.Dynamic.literal(qNum = qNum, qText = qText)
+    val __obj = js.Dynamic.literal(qNum = qNum.asInstanceOf[js.Any], qText = qText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NxSimpleValue]
   }

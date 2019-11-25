@@ -14,9 +14,9 @@ object CreateTokenRequest {
   @scala.inline
   def apply(note: String = null, resources: js.Array[String] = null, scopes: js.Array[String] = null): CreateTokenRequest = {
     val __obj = js.Dynamic.literal()
-    if (note != null) __obj.updateDynamic("note")(note)
-    if (resources != null) __obj.updateDynamic("resources")(resources)
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTokenRequest]
   }
 }

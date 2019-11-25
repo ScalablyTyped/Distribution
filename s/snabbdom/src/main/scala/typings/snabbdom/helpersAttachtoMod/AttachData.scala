@@ -23,10 +23,10 @@ object AttachData {
     real: Node = null
   ): AttachData = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (real != null) __obj.updateDynamic("real")(real)
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (real != null) __obj.updateDynamic("real")(real.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachData]
   }
 }

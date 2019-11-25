@@ -26,7 +26,7 @@ object Anon_APPID {
     SOURCE: wx_devtools | wx_client | wx_http | wx_unknown | BACKSLASHu5176BACKSLASHu4ED6,
     UNIONID: String
   ): Anon_APPID = {
-    val __obj = js.Dynamic.literal(APPID = APPID, ENV = ENV, OPENID = OPENID, SOURCE = SOURCE.asInstanceOf[js.Any], UNIONID = UNIONID)
+    val __obj = js.Dynamic.literal(APPID = APPID.asInstanceOf[js.Any], ENV = ENV.asInstanceOf[js.Any], OPENID = OPENID.asInstanceOf[js.Any], SOURCE = SOURCE.asInstanceOf[js.Any], UNIONID = UNIONID.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_APPID]
   }

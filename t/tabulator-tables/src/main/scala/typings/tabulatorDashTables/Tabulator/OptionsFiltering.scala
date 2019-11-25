@@ -31,8 +31,8 @@ object OptionsFiltering {
     val __obj = js.Dynamic.literal()
     if (dataFiltered != null) __obj.updateDynamic("dataFiltered")(js.Any.fromFunction2(dataFiltered))
     if (dataFiltering != null) __obj.updateDynamic("dataFiltering")(js.Any.fromFunction1(dataFiltering))
-    if (initialFilter != null) __obj.updateDynamic("initialFilter")(initialFilter)
-    if (initialHeaderFilter != null) __obj.updateDynamic("initialHeaderFilter")(initialHeaderFilter)
+    if (initialFilter != null) __obj.updateDynamic("initialFilter")(initialFilter.asInstanceOf[js.Any])
+    if (initialHeaderFilter != null) __obj.updateDynamic("initialHeaderFilter")(initialHeaderFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsFiltering]
   }
 }

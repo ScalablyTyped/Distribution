@@ -42,12 +42,12 @@ object TooltipHidingEventUIParam {
     series: js.Any = null
   ): TooltipHidingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (actualItemBrush != null) __obj.updateDynamic("actualItemBrush")(actualItemBrush)
-    if (actualSeriesBrush != null) __obj.updateDynamic("actualSeriesBrush")(actualSeriesBrush)
-    if (chart != null) __obj.updateDynamic("chart")(chart)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (item != null) __obj.updateDynamic("item")(item)
-    if (series != null) __obj.updateDynamic("series")(series)
+    if (actualItemBrush != null) __obj.updateDynamic("actualItemBrush")(actualItemBrush.asInstanceOf[js.Any])
+    if (actualSeriesBrush != null) __obj.updateDynamic("actualSeriesBrush")(actualSeriesBrush.asInstanceOf[js.Any])
+    if (chart != null) __obj.updateDynamic("chart")(chart.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipHidingEventUIParam]
   }
 }

@@ -40,10 +40,10 @@ object _Grantee {
     URI: String = null
   ): _Grantee = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
-    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName)
-    if (EmailAddress != null) __obj.updateDynamic("EmailAddress")(EmailAddress)
-    if (ID != null) __obj.updateDynamic("ID")(ID)
-    if (URI != null) __obj.updateDynamic("URI")(URI)
+    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
+    if (EmailAddress != null) __obj.updateDynamic("EmailAddress")(EmailAddress.asInstanceOf[js.Any])
+    if (ID != null) __obj.updateDynamic("ID")(ID.asInstanceOf[js.Any])
+    if (URI != null) __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Grantee]
   }
 }

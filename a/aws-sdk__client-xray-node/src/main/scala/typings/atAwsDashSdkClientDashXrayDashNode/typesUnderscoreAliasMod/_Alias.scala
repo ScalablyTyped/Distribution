@@ -24,9 +24,9 @@ object _Alias {
   @scala.inline
   def apply(Name: String = null, Names: js.Array[String] | Iterable[String] = null, Type: String = null): _Alias = {
     val __obj = js.Dynamic.literal()
-    if (Name != null) __obj.updateDynamic("Name")(Name)
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (Names != null) __obj.updateDynamic("Names")(Names.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type)
+    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Alias]
   }
 }

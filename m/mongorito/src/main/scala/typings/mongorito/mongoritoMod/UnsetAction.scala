@@ -14,7 +14,7 @@ object UnsetAction {
   @scala.inline
   def apply(keys: String | js.Array[String], `type`: UNSET): UnsetAction = {
     val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnsetAction]
   }
 }

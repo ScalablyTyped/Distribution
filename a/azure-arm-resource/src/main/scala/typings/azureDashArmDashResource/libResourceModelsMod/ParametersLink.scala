@@ -18,8 +18,8 @@ trait ParametersLink extends js.Object {
 object ParametersLink {
   @scala.inline
   def apply(uri: String, contentVersion: String = null): ParametersLink = {
-    val __obj = js.Dynamic.literal(uri = uri)
-    if (contentVersion != null) __obj.updateDynamic("contentVersion")(contentVersion)
+    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
+    if (contentVersion != null) __obj.updateDynamic("contentVersion")(contentVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersLink]
   }
 }

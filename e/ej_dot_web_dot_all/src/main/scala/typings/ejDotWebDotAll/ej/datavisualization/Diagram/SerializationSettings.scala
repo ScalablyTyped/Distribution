@@ -15,7 +15,7 @@ object SerializationSettings {
   @scala.inline
   def apply(preventDefaultValues: js.UndefOr[Boolean] = js.undefined): SerializationSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(preventDefaultValues)) __obj.updateDynamic("preventDefaultValues")(preventDefaultValues)
+    if (!js.isUndefined(preventDefaultValues)) __obj.updateDynamic("preventDefaultValues")(preventDefaultValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerializationSettings]
   }
 }

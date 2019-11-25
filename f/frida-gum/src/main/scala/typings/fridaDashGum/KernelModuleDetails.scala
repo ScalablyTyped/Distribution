@@ -22,7 +22,7 @@ trait KernelModuleDetails extends js.Object {
 object KernelModuleDetails {
   @scala.inline
   def apply(base: UInt64, name: String, size: Double): KernelModuleDetails = {
-    val __obj = js.Dynamic.literal(base = base, name = name, size = size)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KernelModuleDetails]
   }

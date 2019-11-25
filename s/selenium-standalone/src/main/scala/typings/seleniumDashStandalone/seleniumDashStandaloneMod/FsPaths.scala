@@ -26,12 +26,12 @@ object FsPaths {
     selenium: Anon_InstallPath = null
   ): FsPaths = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (chrome != null) __obj.updateDynamic("chrome")(chrome)
-    if (edge != null) __obj.updateDynamic("edge")(edge)
-    if (firefox != null) __obj.updateDynamic("firefox")(firefox)
-    if (ie != null) __obj.updateDynamic("ie")(ie)
-    if (selenium != null) __obj.updateDynamic("selenium")(selenium)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (chrome != null) __obj.updateDynamic("chrome")(chrome.asInstanceOf[js.Any])
+    if (edge != null) __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
+    if (firefox != null) __obj.updateDynamic("firefox")(firefox.asInstanceOf[js.Any])
+    if (ie != null) __obj.updateDynamic("ie")(ie.asInstanceOf[js.Any])
+    if (selenium != null) __obj.updateDynamic("selenium")(selenium.asInstanceOf[js.Any])
     __obj.asInstanceOf[FsPaths]
   }
 }

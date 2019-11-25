@@ -29,12 +29,12 @@ object CliConfigOptions {
     mode: development | production | none = null
   ): CliConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (`config-name` != null) __obj.updateDynamic("config-name")(`config-name`)
-    if (`config-register` != null) __obj.updateDynamic("config-register")(`config-register`)
-    if (configName != null) __obj.updateDynamic("configName")(configName)
-    if (configRegister != null) __obj.updateDynamic("configRegister")(configRegister)
-    if (env != null) __obj.updateDynamic("env")(env)
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (`config-name` != null) __obj.updateDynamic("config-name")(`config-name`.asInstanceOf[js.Any])
+    if (`config-register` != null) __obj.updateDynamic("config-register")(`config-register`.asInstanceOf[js.Any])
+    if (configName != null) __obj.updateDynamic("configName")(configName.asInstanceOf[js.Any])
+    if (configRegister != null) __obj.updateDynamic("configRegister")(configRegister.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CliConfigOptions]
   }

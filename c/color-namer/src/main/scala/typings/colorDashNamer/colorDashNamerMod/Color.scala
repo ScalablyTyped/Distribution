@@ -13,7 +13,7 @@ trait Color extends js.Object {
 object Color {
   @scala.inline
   def apply(distance: Double, hex: String, name: String): Color = {
-    val __obj = js.Dynamic.literal(distance = distance, hex = hex, name = name)
+    val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], hex = hex.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Color]
   }

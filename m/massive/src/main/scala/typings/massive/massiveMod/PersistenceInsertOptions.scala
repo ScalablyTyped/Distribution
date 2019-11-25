@@ -16,8 +16,8 @@ object PersistenceInsertOptions {
     onConflictIgnore: js.UndefOr[Boolean] = js.undefined
   ): PersistenceInsertOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deepInsert)) __obj.updateDynamic("deepInsert")(deepInsert)
-    if (!js.isUndefined(onConflictIgnore)) __obj.updateDynamic("onConflictIgnore")(onConflictIgnore)
+    if (!js.isUndefined(deepInsert)) __obj.updateDynamic("deepInsert")(deepInsert.asInstanceOf[js.Any])
+    if (!js.isUndefined(onConflictIgnore)) __obj.updateDynamic("onConflictIgnore")(onConflictIgnore.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersistenceInsertOptions]
   }
 }

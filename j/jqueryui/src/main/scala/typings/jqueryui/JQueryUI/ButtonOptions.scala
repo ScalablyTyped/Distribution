@@ -25,9 +25,9 @@ object ButtonOptions {
   ): ButtonOptions = {
     val __obj = js.Dynamic.literal()
     if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (icons != null) __obj.updateDynamic("icons")(icons)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonOptions]
   }

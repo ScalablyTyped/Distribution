@@ -27,13 +27,13 @@ object Completion {
     snippet: js.Any = null,
     `type`: String = null
   ): Completion = {
-    val __obj = js.Dynamic.literal(meta = meta, value = value)
-    if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (docHTML != null) __obj.updateDynamic("docHTML")(docHTML)
+    val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (docHTML != null) __obj.updateDynamic("docHTML")(docHTML.asInstanceOf[js.Any])
     if (exactMatch != null) __obj.updateDynamic("exactMatch")(exactMatch.asInstanceOf[js.Any])
     if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
-    if (snippet != null) __obj.updateDynamic("snippet")(snippet)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (snippet != null) __obj.updateDynamic("snippet")(snippet.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Completion]
   }
 }

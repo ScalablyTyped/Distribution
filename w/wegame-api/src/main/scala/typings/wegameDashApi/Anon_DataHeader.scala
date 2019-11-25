@@ -14,8 +14,8 @@ trait Anon_DataHeader extends js.Object {
 object Anon_DataHeader {
   @scala.inline
   def apply(data: js.Any, statusCode: Double, header: StringDictionary[String] = null): Anon_DataHeader = {
-    val __obj = js.Dynamic.literal(data = data, statusCode = statusCode)
-    if (header != null) __obj.updateDynamic("header")(header)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DataHeader]
   }
 }

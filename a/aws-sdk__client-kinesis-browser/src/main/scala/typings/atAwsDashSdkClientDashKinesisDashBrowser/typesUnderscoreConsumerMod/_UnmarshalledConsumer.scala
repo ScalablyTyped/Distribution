@@ -24,7 +24,7 @@ object _UnmarshalledConsumer {
     ConsumerName: String,
     ConsumerStatus: CREATING | DELETING | ACTIVE | String
   ): _UnmarshalledConsumer = {
-    val __obj = js.Dynamic.literal(ConsumerARN = ConsumerARN, ConsumerCreationTimestamp = ConsumerCreationTimestamp, ConsumerName = ConsumerName, ConsumerStatus = ConsumerStatus.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ConsumerARN = ConsumerARN.asInstanceOf[js.Any], ConsumerCreationTimestamp = ConsumerCreationTimestamp.asInstanceOf[js.Any], ConsumerName = ConsumerName.asInstanceOf[js.Any], ConsumerStatus = ConsumerStatus.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_UnmarshalledConsumer]
   }

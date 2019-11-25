@@ -24,7 +24,7 @@ object INotifyConfigProvider {
     notifyConfigs: js.Any,
     optionsTransformer: (INotifyOptions, ISCEService) => Unit
   ): INotifyConfigProvider = {
-    val __obj = js.Dynamic.literal($get = $get, addOrUpdateNotifyConfig = js.Any.fromFunction2(addOrUpdateNotifyConfig), defaultNotifyConfig = defaultNotifyConfig, defaultTargetContainerName = defaultTargetContainerName, notifyConfigs = notifyConfigs, optionsTransformer = js.Any.fromFunction2(optionsTransformer))
+    val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], addOrUpdateNotifyConfig = js.Any.fromFunction2(addOrUpdateNotifyConfig), defaultNotifyConfig = defaultNotifyConfig.asInstanceOf[js.Any], defaultTargetContainerName = defaultTargetContainerName.asInstanceOf[js.Any], notifyConfigs = notifyConfigs.asInstanceOf[js.Any], optionsTransformer = js.Any.fromFunction2(optionsTransformer))
   
     __obj.asInstanceOf[INotifyConfigProvider]
   }

@@ -16,8 +16,8 @@ trait Options extends OptionsOrRef {
 object Options {
   @scala.inline
   def apply(userAgent: String, oAuthToken: String = null, version: v3 | `thor-preview` = null): Options = {
-    val __obj = js.Dynamic.literal(userAgent = userAgent)
-    if (oAuthToken != null) __obj.updateDynamic("oAuthToken")(oAuthToken)
+    val __obj = js.Dynamic.literal(userAgent = userAgent.asInstanceOf[js.Any])
+    if (oAuthToken != null) __obj.updateDynamic("oAuthToken")(oAuthToken.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

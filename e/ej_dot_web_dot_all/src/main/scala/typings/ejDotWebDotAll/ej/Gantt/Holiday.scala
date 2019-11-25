@@ -20,9 +20,9 @@ object Holiday {
   @scala.inline
   def apply(background: String = null, day: String = null, label: String = null): Holiday = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (day != null) __obj.updateDynamic("day")(day)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[Holiday]
   }
 }

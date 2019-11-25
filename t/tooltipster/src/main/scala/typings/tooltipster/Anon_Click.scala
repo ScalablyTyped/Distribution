@@ -46,12 +46,12 @@ object Anon_Click {
     touchleave: js.UndefOr[Boolean] = js.undefined
   ): Anon_Click = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(click)) __obj.updateDynamic("click")(click)
-    if (!js.isUndefined(mouseleave)) __obj.updateDynamic("mouseleave")(mouseleave)
-    if (!js.isUndefined(originClick)) __obj.updateDynamic("originClick")(originClick)
-    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll)
-    if (!js.isUndefined(tap)) __obj.updateDynamic("tap")(tap)
-    if (!js.isUndefined(touchleave)) __obj.updateDynamic("touchleave")(touchleave)
+    if (!js.isUndefined(click)) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseleave)) __obj.updateDynamic("mouseleave")(mouseleave.asInstanceOf[js.Any])
+    if (!js.isUndefined(originClick)) __obj.updateDynamic("originClick")(originClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(tap)) __obj.updateDynamic("tap")(tap.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchleave)) __obj.updateDynamic("touchleave")(touchleave.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Click]
   }
 }

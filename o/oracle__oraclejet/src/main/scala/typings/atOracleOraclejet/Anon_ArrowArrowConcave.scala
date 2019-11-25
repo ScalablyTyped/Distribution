@@ -30,7 +30,7 @@ object Anon_ArrowArrowConcave {
     svgStyle: js.Object,
     width: Double
   ): Anon_ArrowArrowConcave = {
-    val __obj = js.Dynamic.literal(color = color, endConnectorType = endConnectorType.asInstanceOf[js.Any], startConnectorType = startConnectorType.asInstanceOf[js.Any], svgClassName = svgClassName, svgStyle = svgStyle, width = width)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], endConnectorType = endConnectorType.asInstanceOf[js.Any], startConnectorType = startConnectorType.asInstanceOf[js.Any], svgClassName = svgClassName.asInstanceOf[js.Any], svgStyle = svgStyle.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ArrowArrowConcave]
   }

@@ -37,10 +37,10 @@ object fileOptions {
     mtime: Date = null
   ): fileOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
-    if (!js.isUndefined(forceZip64Format)) __obj.updateDynamic("forceZip64Format")(forceZip64Format)
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceZip64Format)) __obj.updateDynamic("forceZip64Format")(forceZip64Format.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (mtime != null) __obj.updateDynamic("mtime")(mtime)
+    if (mtime != null) __obj.updateDynamic("mtime")(mtime.asInstanceOf[js.Any])
     __obj.asInstanceOf[fileOptions]
   }
 }

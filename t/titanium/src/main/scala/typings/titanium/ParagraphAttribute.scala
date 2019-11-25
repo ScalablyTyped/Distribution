@@ -82,7 +82,7 @@ object ParagraphAttribute {
   ): ParagraphAttribute = {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowsDefaultTighteningForTruncation)) __obj.updateDynamic("allowsDefaultTighteningForTruncation")(allowsDefaultTighteningForTruncation)
+    if (!js.isUndefined(allowsDefaultTighteningForTruncation)) __obj.updateDynamic("allowsDefaultTighteningForTruncation")(allowsDefaultTighteningForTruncation.asInstanceOf[js.Any])
     if (firstLineHeadIndent != null) __obj.updateDynamic("firstLineHeadIndent")(firstLineHeadIndent.asInstanceOf[js.Any])
     if (headIndent != null) __obj.updateDynamic("headIndent")(headIndent.asInstanceOf[js.Any])
     if (hyphenationFactor != null) __obj.updateDynamic("hyphenationFactor")(hyphenationFactor.asInstanceOf[js.Any])

@@ -59,17 +59,17 @@ object Diff {
     reset: Anon_BeforeName = null,
     update: Anon_NewValue = null
   ): Diff = {
-    val __obj = js.Dynamic.literal(mapUniqueKey = mapUniqueKey)
+    val __obj = js.Dynamic.literal(mapUniqueKey = mapUniqueKey.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (add != null) __obj.updateDynamic("add")(add)
-    if (addCombo != null) __obj.updateDynamic("addCombo")(addCombo)
-    if (addSource != null) __obj.updateDynamic("addSource")(addSource)
-    if (exchange != null) __obj.updateDynamic("exchange")(exchange)
-    if (move != null) __obj.updateDynamic("move")(move)
-    if (paste != null) __obj.updateDynamic("paste")(paste)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
-    if (reset != null) __obj.updateDynamic("reset")(reset)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (add != null) __obj.updateDynamic("add")(add.asInstanceOf[js.Any])
+    if (addCombo != null) __obj.updateDynamic("addCombo")(addCombo.asInstanceOf[js.Any])
+    if (addSource != null) __obj.updateDynamic("addSource")(addSource.asInstanceOf[js.Any])
+    if (exchange != null) __obj.updateDynamic("exchange")(exchange.asInstanceOf[js.Any])
+    if (move != null) __obj.updateDynamic("move")(move.asInstanceOf[js.Any])
+    if (paste != null) __obj.updateDynamic("paste")(paste.asInstanceOf[js.Any])
+    if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
+    if (reset != null) __obj.updateDynamic("reset")(reset.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[Diff]
   }
 }

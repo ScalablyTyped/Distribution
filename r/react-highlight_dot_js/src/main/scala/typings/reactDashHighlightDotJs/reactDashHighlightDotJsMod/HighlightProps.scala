@@ -19,7 +19,7 @@ trait HighlightProps extends js.Object {
 object HighlightProps {
   @scala.inline
   def apply(language: String, children: ReactNode = null): HighlightProps = {
-    val __obj = js.Dynamic.literal(language = language)
+    val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightProps]
   }

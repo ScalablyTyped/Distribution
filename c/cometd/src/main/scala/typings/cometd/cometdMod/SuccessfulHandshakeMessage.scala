@@ -39,16 +39,16 @@ object SuccessfulHandshakeMessage {
     minimumVersion: String = null,
     timestamp: String = null
   ): SuccessfulHandshakeMessage = {
-    val __obj = js.Dynamic.literal(channel = channel, clientId = clientId, reestablish = reestablish, successful = successful, supportedConnectionTypes = supportedConnectionTypes, version = version)
-    if (advice != null) __obj.updateDynamic("advice")(advice)
-    if (authSuccessful != null) __obj.updateDynamic("authSuccessful")(authSuccessful)
-    if (connectionType != null) __obj.updateDynamic("connectionType")(connectionType)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (ext != null) __obj.updateDynamic("ext")(ext)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (minimumVersion != null) __obj.updateDynamic("minimumVersion")(minimumVersion)
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], reestablish = reestablish.asInstanceOf[js.Any], successful = successful.asInstanceOf[js.Any], supportedConnectionTypes = supportedConnectionTypes.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (advice != null) __obj.updateDynamic("advice")(advice.asInstanceOf[js.Any])
+    if (authSuccessful != null) __obj.updateDynamic("authSuccessful")(authSuccessful.asInstanceOf[js.Any])
+    if (connectionType != null) __obj.updateDynamic("connectionType")(connectionType.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (minimumVersion != null) __obj.updateDynamic("minimumVersion")(minimumVersion.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuccessfulHandshakeMessage]
   }
 }

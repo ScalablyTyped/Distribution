@@ -13,8 +13,8 @@ object ListCourseAliasesResponse {
   @scala.inline
   def apply(aliases: js.Array[CourseAlias] = null, nextPageToken: String = null): ListCourseAliasesResponse = {
     val __obj = js.Dynamic.literal()
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCourseAliasesResponse]
   }
 }

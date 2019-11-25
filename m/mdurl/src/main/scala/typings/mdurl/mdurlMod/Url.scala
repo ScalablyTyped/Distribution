@@ -27,7 +27,7 @@ object Url {
     search: String,
     slashes: String
   ): Url = {
-    val __obj = js.Dynamic.literal(auth = auth, hash = hash, hostname = hostname, pathname = pathname, port = port, protocol = protocol, search = search, slashes = slashes)
+    val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], slashes = slashes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Url]
   }

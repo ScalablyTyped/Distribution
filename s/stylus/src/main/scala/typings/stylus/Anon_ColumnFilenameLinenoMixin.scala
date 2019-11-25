@@ -26,8 +26,8 @@ object Anon_ColumnFilenameLinenoMixin {
     name: String,
     `val`: Node
   ): Anon_ColumnFilenameLinenoMixin = {
-    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno, mixin = mixin, name = name)
-    __obj.updateDynamic("val")(`val`)
+    val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], mixin = mixin.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColumnFilenameLinenoMixin]
   }
 }

@@ -13,7 +13,7 @@ trait Event extends js.Object {
 object Event {
   @scala.inline
   def apply(serviceName: String, slot: Slot): Event = {
-    val __obj = js.Dynamic.literal(serviceName = serviceName, slot = slot)
+    val __obj = js.Dynamic.literal(serviceName = serviceName.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Event]
   }

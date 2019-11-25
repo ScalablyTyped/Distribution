@@ -18,7 +18,7 @@ object SheetProps {
   @scala.inline
   def apply(CodeName: String = null, Hidden: `0` | `1` | `2` = null): SheetProps = {
     val __obj = js.Dynamic.literal()
-    if (CodeName != null) __obj.updateDynamic("CodeName")(CodeName)
+    if (CodeName != null) __obj.updateDynamic("CodeName")(CodeName.asInstanceOf[js.Any])
     if (Hidden != null) __obj.updateDynamic("Hidden")(Hidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[SheetProps]
   }

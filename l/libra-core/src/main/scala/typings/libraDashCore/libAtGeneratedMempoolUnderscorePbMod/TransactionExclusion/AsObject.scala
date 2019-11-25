@@ -13,7 +13,7 @@ trait AsObject extends js.Object {
 object AsObject {
   @scala.inline
   def apply(sender: Uint8Array | String, sequenceNumber: String): AsObject = {
-    val __obj = js.Dynamic.literal(sender = sender.asInstanceOf[js.Any], sequenceNumber = sequenceNumber)
+    val __obj = js.Dynamic.literal(sender = sender.asInstanceOf[js.Any], sequenceNumber = sequenceNumber.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

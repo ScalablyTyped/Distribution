@@ -15,7 +15,7 @@ object SetOptions {
   def apply[X](meta: X = null, refresh: js.UndefOr[Boolean] = js.undefined, ttl: Int | Double = null): SetOptions[X] = {
     val __obj = js.Dynamic.literal()
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh)
+    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetOptions[X]]
   }

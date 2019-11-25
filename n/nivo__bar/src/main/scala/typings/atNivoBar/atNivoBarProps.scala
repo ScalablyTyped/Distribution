@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait atNivoBarProps {
   @scala.inline
-  def BarProps: typings.atNivoBar.BarSvgPropsDimensions.type = typings.atNivoBar.BarSvgPropsDimensions
+  def BarProps: BarSvgPropsDimensions.type = typings.atNivoBar.BarSvgPropsDimensions
   type BarProps = BarSvgPropsDimensions
   @scala.inline
-  def BarCanvasProps: typings.atNivoBar.BarCanvasPropsDimensions.type = typings.atNivoBar.BarCanvasPropsDimensions
+  def BarCanvasProps: BarCanvasPropsDimensions.type = typings.atNivoBar.BarCanvasPropsDimensions
   type BarCanvasProps = BarCanvasPropsDimensions
   @scala.inline
   def ResponsiveBarProps: BarSvgProps.type = typings.atNivoBar.atNivoBarMod.BarSvgProps

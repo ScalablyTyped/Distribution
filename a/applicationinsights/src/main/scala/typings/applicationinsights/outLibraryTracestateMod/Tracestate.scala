@@ -11,8 +11,8 @@ trait Tracestate extends js.Object {
 
 object Tracestate {
   @scala.inline
-  def apply(fieldmap: js.Array[String], parseHeader: js.Any => js.Any, toString: () => String): Tracestate = {
-    val __obj = js.Dynamic.literal(fieldmap = fieldmap, parseHeader = js.Any.fromFunction1(parseHeader), toString = js.Any.fromFunction0(toString))
+  def apply(fieldmap: js.Array[String], parseHeader: js.Any => js.Any): Tracestate = {
+    val __obj = js.Dynamic.literal(fieldmap = fieldmap.asInstanceOf[js.Any], parseHeader = js.Any.fromFunction1(parseHeader))
   
     __obj.asInstanceOf[Tracestate]
   }

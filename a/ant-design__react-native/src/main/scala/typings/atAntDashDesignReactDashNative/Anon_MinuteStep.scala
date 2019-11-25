@@ -13,7 +13,7 @@ trait Anon_MinuteStep extends js.Object {
 object Anon_MinuteStep {
   @scala.inline
   def apply(minuteStep: Double, mode: String, use12Hours: Boolean): Anon_MinuteStep = {
-    val __obj = js.Dynamic.literal(minuteStep = minuteStep, mode = mode, use12Hours = use12Hours)
+    val __obj = js.Dynamic.literal(minuteStep = minuteStep.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], use12Hours = use12Hours.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MinuteStep]
   }

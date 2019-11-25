@@ -22,8 +22,8 @@ object GoogleActionsV2OrdersPaymentOptions {
     googleProvidedOptions: GoogleActionsV2OrdersGoogleProvidedPaymentOptions = null
   ): GoogleActionsV2OrdersPaymentOptions = {
     val __obj = js.Dynamic.literal()
-    if (actionProvidedOptions != null) __obj.updateDynamic("actionProvidedOptions")(actionProvidedOptions)
-    if (googleProvidedOptions != null) __obj.updateDynamic("googleProvidedOptions")(googleProvidedOptions)
+    if (actionProvidedOptions != null) __obj.updateDynamic("actionProvidedOptions")(actionProvidedOptions.asInstanceOf[js.Any])
+    if (googleProvidedOptions != null) __obj.updateDynamic("googleProvidedOptions")(googleProvidedOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersPaymentOptions]
   }
 }

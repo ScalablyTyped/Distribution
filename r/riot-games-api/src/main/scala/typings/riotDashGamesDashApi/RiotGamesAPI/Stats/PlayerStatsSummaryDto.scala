@@ -21,7 +21,7 @@ object PlayerStatsSummaryDto {
     playerStatSummaryType: String,
     wins: Double
   ): PlayerStatsSummaryDto = {
-    val __obj = js.Dynamic.literal(aggregatedStats = aggregatedStats, losses = losses, modifyDate = modifyDate, playerStatSummaryType = playerStatSummaryType, wins = wins)
+    val __obj = js.Dynamic.literal(aggregatedStats = aggregatedStats.asInstanceOf[js.Any], losses = losses.asInstanceOf[js.Any], modifyDate = modifyDate.asInstanceOf[js.Any], playerStatSummaryType = playerStatSummaryType.asInstanceOf[js.Any], wins = wins.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PlayerStatsSummaryDto]
   }

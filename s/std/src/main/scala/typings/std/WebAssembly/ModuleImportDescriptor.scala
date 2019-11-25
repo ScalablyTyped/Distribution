@@ -13,7 +13,7 @@ trait ModuleImportDescriptor extends js.Object {
 object ModuleImportDescriptor {
   @scala.inline
   def apply(kind: ImportExportKind, module: java.lang.String, name: java.lang.String): ModuleImportDescriptor = {
-    val __obj = js.Dynamic.literal(kind = kind, module = module, name = name)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ModuleImportDescriptor]
   }

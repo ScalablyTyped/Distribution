@@ -13,7 +13,7 @@ trait ReactProviderType[T] extends js.Object {
 object ReactProviderType {
   @scala.inline
   def apply[T]($$typeof: js.Symbol | Double, _context: ReactContext[T]): ReactProviderType[T] = {
-    val __obj = js.Dynamic.literal($$typeof = $$typeof.asInstanceOf[js.Any], _context = _context)
+    val __obj = js.Dynamic.literal($$typeof = $$typeof.asInstanceOf[js.Any], _context = _context.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReactProviderType[T]]
   }

@@ -18,7 +18,7 @@ object Anon_ExtensionASTNodesKey {
     extensionASTNodes: js.Array[UnionTypeExtensionNode],
     types: js.Array[GraphQLObjectType[_, _, StringDictionary[_]]]
   ): Anon_ExtensionASTNodesKey = {
-    val __obj = js.Dynamic.literal(extensionASTNodes = extensionASTNodes, types = types)
+    val __obj = js.Dynamic.literal(extensionASTNodes = extensionASTNodes.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ExtensionASTNodesKey]
   }

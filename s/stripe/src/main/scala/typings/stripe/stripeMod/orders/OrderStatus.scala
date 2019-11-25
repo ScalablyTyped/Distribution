@@ -16,3 +16,18 @@ import scala.scalajs.js.annotation._
 */
 trait OrderStatus extends js.Object
 
+object OrderStatus {
+  @scala.inline
+  def canceled: typings.stripe.stripeStrings.canceled = this.cast("canceled")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def created: typings.stripe.stripeStrings.created = this.cast("created")
+  @scala.inline
+  def fulfilled: typings.stripe.stripeStrings.fulfilled = this.cast("fulfilled")
+  @scala.inline
+  def paid: typings.stripe.stripeStrings.paid = this.cast("paid")
+  @scala.inline
+  def returned: typings.stripe.stripeStrings.returned = this.cast("returned")
+}
+

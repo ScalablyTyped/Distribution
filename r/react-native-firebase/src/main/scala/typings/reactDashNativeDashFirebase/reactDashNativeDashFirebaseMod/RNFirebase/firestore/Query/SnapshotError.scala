@@ -22,10 +22,10 @@ object SnapshotError {
     nativeErrorMessage: String = null,
     stack: String = null
   ): SnapshotError = {
-    val __obj = js.Dynamic.literal(appName = appName, code = code, message = message, name = name, path = path)
-    if (nativeErrorCode != null) __obj.updateDynamic("nativeErrorCode")(nativeErrorCode)
-    if (nativeErrorMessage != null) __obj.updateDynamic("nativeErrorMessage")(nativeErrorMessage)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(appName = appName.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (nativeErrorCode != null) __obj.updateDynamic("nativeErrorCode")(nativeErrorCode.asInstanceOf[js.Any])
+    if (nativeErrorMessage != null) __obj.updateDynamic("nativeErrorMessage")(nativeErrorMessage.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotError]
   }
 }

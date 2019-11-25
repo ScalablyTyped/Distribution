@@ -18,7 +18,7 @@ object WithStore {
     setCheckboxPropsCache: CheckboxPropsCache => Unit,
     store: Store
   ): WithStore = {
-    val __obj = js.Dynamic.literal(checkboxPropsCache = checkboxPropsCache, setCheckboxPropsCache = js.Any.fromFunction1(setCheckboxPropsCache), store = store)
+    val __obj = js.Dynamic.literal(checkboxPropsCache = checkboxPropsCache.asInstanceOf[js.Any], setCheckboxPropsCache = js.Any.fromFunction1(setCheckboxPropsCache), store = store.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WithStore]
   }

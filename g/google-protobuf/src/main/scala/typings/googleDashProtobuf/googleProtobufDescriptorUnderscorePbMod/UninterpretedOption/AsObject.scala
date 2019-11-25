@@ -30,10 +30,10 @@ object AsObject {
     negativeIntValue: Int | Double = null,
     positiveIntValue: Int | Double = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(nameList = nameList, stringValue = stringValue.asInstanceOf[js.Any])
-    if (aggregateValue != null) __obj.updateDynamic("aggregateValue")(aggregateValue)
+    val __obj = js.Dynamic.literal(nameList = nameList.asInstanceOf[js.Any], stringValue = stringValue.asInstanceOf[js.Any])
+    if (aggregateValue != null) __obj.updateDynamic("aggregateValue")(aggregateValue.asInstanceOf[js.Any])
     if (doubleValue != null) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
-    if (identifierValue != null) __obj.updateDynamic("identifierValue")(identifierValue)
+    if (identifierValue != null) __obj.updateDynamic("identifierValue")(identifierValue.asInstanceOf[js.Any])
     if (negativeIntValue != null) __obj.updateDynamic("negativeIntValue")(negativeIntValue.asInstanceOf[js.Any])
     if (positiveIntValue != null) __obj.updateDynamic("positiveIntValue")(positiveIntValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]

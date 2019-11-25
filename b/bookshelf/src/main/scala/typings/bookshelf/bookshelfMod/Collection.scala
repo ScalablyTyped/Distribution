@@ -1,7 +1,6 @@
 package typings.bookshelf.bookshelfMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.bluebird.bluebirdMod.^
 import typings.knex.knexMod.QueryBuilder
 import typings.knex.knexMod.SafePartial
 import typings.std.Error
@@ -12,25 +11,25 @@ import scala.scalajs.js.annotation._
 @JSImport("bookshelf", "Collection")
 @js.native
 class Collection[T /* <: Model[_] */] () extends CollectionBase[T] {
-  def attach(ids: js.Any): ^[Collection[T]] = js.native
-  def attach(ids: js.Any, options: SyncOptions): ^[Collection[T]] = js.native
-  def attach(ids: js.Array[_]): ^[Collection[T]] = js.native
-  def attach(ids: js.Array[_], options: SyncOptions): ^[Collection[T]] = js.native
-  def count(): ^[Double | String] = js.native
-  def count(column: String): ^[Double | String] = js.native
-  def count(column: String, options: SyncOptions): ^[Double | String] = js.native
-  def create(model: StringDictionary[js.Any]): ^[T] = js.native
-  def create(model: StringDictionary[js.Any], options: CollectionCreateOptions): ^[T] = js.native
-  def detach(): ^[_] = js.native
-  def detach(ids: js.Array[_]): ^[_] = js.native
-  def detach(ids: js.Array[_], options: SyncOptions): ^[_] = js.native
-  def detach(options: SyncOptions): ^[_] = js.native
-  def fetchOne(): ^[T] = js.native
-  def fetchOne(options: CollectionFetchOneOptions): ^[T] = js.native
-  def load(relations: String): ^[Collection[T]] = js.native
-  def load(relations: String, options: SyncOptions): ^[Collection[T]] = js.native
-  def load(relations: js.Array[String]): ^[Collection[T]] = js.native
-  def load(relations: js.Array[String], options: SyncOptions): ^[Collection[T]] = js.native
+  def attach(ids: js.Any): typings.bluebird.bluebirdMod.^[Collection[T]] = js.native
+  def attach(ids: js.Any, options: SyncOptions): typings.bluebird.bluebirdMod.^[Collection[T]] = js.native
+  def attach(ids: js.Array[_]): typings.bluebird.bluebirdMod.^[Collection[T]] = js.native
+  def attach(ids: js.Array[_], options: SyncOptions): typings.bluebird.bluebirdMod.^[Collection[T]] = js.native
+  def count(): typings.bluebird.bluebirdMod.^[Double | String] = js.native
+  def count(column: String): typings.bluebird.bluebirdMod.^[Double | String] = js.native
+  def count(column: String, options: SyncOptions): typings.bluebird.bluebirdMod.^[Double | String] = js.native
+  def create(model: StringDictionary[js.Any]): typings.bluebird.bluebirdMod.^[T] = js.native
+  def create(model: StringDictionary[js.Any], options: CollectionCreateOptions): typings.bluebird.bluebirdMod.^[T] = js.native
+  def detach(): typings.bluebird.bluebirdMod.^[_] = js.native
+  def detach(ids: js.Array[_]): typings.bluebird.bluebirdMod.^[_] = js.native
+  def detach(ids: js.Array[_], options: SyncOptions): typings.bluebird.bluebirdMod.^[_] = js.native
+  def detach(options: SyncOptions): typings.bluebird.bluebirdMod.^[_] = js.native
+  def fetchOne(): typings.bluebird.bluebirdMod.^[T] = js.native
+  def fetchOne(options: CollectionFetchOneOptions): typings.bluebird.bluebirdMod.^[T] = js.native
+  def load(relations: String): typings.bluebird.bluebirdMod.^[Collection[T]] = js.native
+  def load(relations: String, options: SyncOptions): typings.bluebird.bluebirdMod.^[Collection[T]] = js.native
+  def load(relations: js.Array[String]): typings.bluebird.bluebirdMod.^[Collection[T]] = js.native
+  def load(relations: js.Array[String], options: SyncOptions): typings.bluebird.bluebirdMod.^[Collection[T]] = js.native
   def orderBy(column: String): Collection[T] = js.native
   def orderBy(column: String, order: SortOrder): Collection[T] = js.native
   // Declaration order matters otherwise TypeScript gets confused between query() and query(...query: string[])
@@ -42,8 +41,8 @@ class Collection[T /* <: Model[_] */] () extends CollectionBase[T] {
   def through[R /* <: Model[_] */](interim: ModelSubclass): Collection[R] = js.native
   def through[R /* <: Model[_] */](interim: ModelSubclass, throughForeignKey: String): Collection[R] = js.native
   def through[R /* <: Model[_] */](interim: ModelSubclass, throughForeignKey: String, otherKey: String): Collection[R] = js.native
-  def updatePivot(attributes: js.Any): ^[Double] = js.native
-  def updatePivot(attributes: js.Any, options: PivotOptions): ^[Double] = js.native
+  def updatePivot(attributes: js.Any): typings.bluebird.bluebirdMod.^[Double] = js.native
+  def updatePivot(attributes: js.Any, options: PivotOptions): typings.bluebird.bluebirdMod.^[Double] = js.native
   def withPivot(columns: js.Array[String]): Collection[T] = js.native
 }
 

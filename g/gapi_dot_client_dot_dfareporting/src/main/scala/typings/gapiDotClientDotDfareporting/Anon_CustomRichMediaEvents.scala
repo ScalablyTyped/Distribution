@@ -42,13 +42,13 @@ object Anon_CustomRichMediaEvents {
     reportProperties: Anon_IncludeAttributedIPConversions = null
   ): Anon_CustomRichMediaEvents = {
     val __obj = js.Dynamic.literal()
-    if (customRichMediaEvents != null) __obj.updateDynamic("customRichMediaEvents")(customRichMediaEvents)
-    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange)
-    if (dimensionFilters != null) __obj.updateDynamic("dimensionFilters")(dimensionFilters)
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
-    if (floodlightConfigId != null) __obj.updateDynamic("floodlightConfigId")(floodlightConfigId)
-    if (metricNames != null) __obj.updateDynamic("metricNames")(metricNames)
-    if (reportProperties != null) __obj.updateDynamic("reportProperties")(reportProperties)
+    if (customRichMediaEvents != null) __obj.updateDynamic("customRichMediaEvents")(customRichMediaEvents.asInstanceOf[js.Any])
+    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange.asInstanceOf[js.Any])
+    if (dimensionFilters != null) __obj.updateDynamic("dimensionFilters")(dimensionFilters.asInstanceOf[js.Any])
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
+    if (floodlightConfigId != null) __obj.updateDynamic("floodlightConfigId")(floodlightConfigId.asInstanceOf[js.Any])
+    if (metricNames != null) __obj.updateDynamic("metricNames")(metricNames.asInstanceOf[js.Any])
+    if (reportProperties != null) __obj.updateDynamic("reportProperties")(reportProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CustomRichMediaEvents]
   }
 }

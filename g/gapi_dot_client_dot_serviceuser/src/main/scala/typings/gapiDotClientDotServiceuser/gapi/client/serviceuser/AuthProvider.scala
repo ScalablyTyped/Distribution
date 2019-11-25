@@ -66,11 +66,11 @@ object AuthProvider {
     jwksUri: String = null
   ): AuthProvider = {
     val __obj = js.Dynamic.literal()
-    if (audiences != null) __obj.updateDynamic("audiences")(audiences)
-    if (authorizationUrl != null) __obj.updateDynamic("authorizationUrl")(authorizationUrl)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (issuer != null) __obj.updateDynamic("issuer")(issuer)
-    if (jwksUri != null) __obj.updateDynamic("jwksUri")(jwksUri)
+    if (audiences != null) __obj.updateDynamic("audiences")(audiences.asInstanceOf[js.Any])
+    if (authorizationUrl != null) __obj.updateDynamic("authorizationUrl")(authorizationUrl.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
+    if (jwksUri != null) __obj.updateDynamic("jwksUri")(jwksUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthProvider]
   }
 }

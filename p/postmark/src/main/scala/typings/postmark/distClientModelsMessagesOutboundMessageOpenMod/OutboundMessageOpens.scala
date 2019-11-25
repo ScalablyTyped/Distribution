@@ -12,7 +12,7 @@ trait OutboundMessageOpens extends js.Object {
 object OutboundMessageOpens {
   @scala.inline
   def apply(Opens: js.Array[OpenEvent], TotalCount: Double): OutboundMessageOpens = {
-    val __obj = js.Dynamic.literal(Opens = Opens, TotalCount = TotalCount)
+    val __obj = js.Dynamic.literal(Opens = Opens.asInstanceOf[js.Any], TotalCount = TotalCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OutboundMessageOpens]
   }

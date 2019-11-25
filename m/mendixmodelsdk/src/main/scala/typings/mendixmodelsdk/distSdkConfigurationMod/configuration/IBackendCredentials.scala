@@ -14,8 +14,8 @@ trait IBackendCredentials extends js.Object {
 object IBackendCredentials {
   @scala.inline
   def apply(password: String, username: String, openid: String = null): IBackendCredentials = {
-    val __obj = js.Dynamic.literal(password = password, username = username)
-    if (openid != null) __obj.updateDynamic("openid")(openid)
+    val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    if (openid != null) __obj.updateDynamic("openid")(openid.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBackendCredentials]
   }
 }

@@ -74,10 +74,10 @@ object ObjectConditions {
     minTimeElapsedSinceLastModification: String = null
   ): ObjectConditions = {
     val __obj = js.Dynamic.literal()
-    if (excludePrefixes != null) __obj.updateDynamic("excludePrefixes")(excludePrefixes)
-    if (includePrefixes != null) __obj.updateDynamic("includePrefixes")(includePrefixes)
-    if (maxTimeElapsedSinceLastModification != null) __obj.updateDynamic("maxTimeElapsedSinceLastModification")(maxTimeElapsedSinceLastModification)
-    if (minTimeElapsedSinceLastModification != null) __obj.updateDynamic("minTimeElapsedSinceLastModification")(minTimeElapsedSinceLastModification)
+    if (excludePrefixes != null) __obj.updateDynamic("excludePrefixes")(excludePrefixes.asInstanceOf[js.Any])
+    if (includePrefixes != null) __obj.updateDynamic("includePrefixes")(includePrefixes.asInstanceOf[js.Any])
+    if (maxTimeElapsedSinceLastModification != null) __obj.updateDynamic("maxTimeElapsedSinceLastModification")(maxTimeElapsedSinceLastModification.asInstanceOf[js.Any])
+    if (minTimeElapsedSinceLastModification != null) __obj.updateDynamic("minTimeElapsedSinceLastModification")(minTimeElapsedSinceLastModification.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectConditions]
   }
 }

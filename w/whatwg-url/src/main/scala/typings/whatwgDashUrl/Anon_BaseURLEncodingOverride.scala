@@ -22,10 +22,10 @@ object Anon_BaseURLEncodingOverride {
     url: URLRecord = null
   ): Anon_BaseURLEncodingOverride = {
     val __obj = js.Dynamic.literal()
-    if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL)
-    if (encodingOverride != null) __obj.updateDynamic("encodingOverride")(encodingOverride)
-    if (stateOverride != null) __obj.updateDynamic("stateOverride")(stateOverride)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL.asInstanceOf[js.Any])
+    if (encodingOverride != null) __obj.updateDynamic("encodingOverride")(encodingOverride.asInstanceOf[js.Any])
+    if (stateOverride != null) __obj.updateDynamic("stateOverride")(stateOverride.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BaseURLEncodingOverride]
   }
 }

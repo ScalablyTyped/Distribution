@@ -19,8 +19,8 @@ object ListInstanceConfigsResponse {
   @scala.inline
   def apply(instanceConfigs: js.Array[InstanceConfig] = null, nextPageToken: String = null): ListInstanceConfigsResponse = {
     val __obj = js.Dynamic.literal()
-    if (instanceConfigs != null) __obj.updateDynamic("instanceConfigs")(instanceConfigs)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (instanceConfigs != null) __obj.updateDynamic("instanceConfigs")(instanceConfigs.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListInstanceConfigsResponse]
   }
 }

@@ -17,8 +17,8 @@ object NameManager {
   @scala.inline
   def apply(name: String = null, refersto: String = null): NameManager = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (refersto != null) __obj.updateDynamic("refersto")(refersto)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (refersto != null) __obj.updateDynamic("refersto")(refersto.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameManager]
   }
 }

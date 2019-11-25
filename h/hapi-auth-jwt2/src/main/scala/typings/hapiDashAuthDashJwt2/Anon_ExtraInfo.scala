@@ -14,8 +14,8 @@ trait Anon_ExtraInfo extends js.Object {
 object Anon_ExtraInfo {
   @scala.inline
   def apply(isValid: Boolean, key: String, extraInfo: ExtraInfo = null): Anon_ExtraInfo = {
-    val __obj = js.Dynamic.literal(isValid = isValid, key = key)
-    if (extraInfo != null) __obj.updateDynamic("extraInfo")(extraInfo)
+    val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
+    if (extraInfo != null) __obj.updateDynamic("extraInfo")(extraInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExtraInfo]
   }
 }

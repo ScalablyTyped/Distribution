@@ -22,11 +22,11 @@ object Anon_Cancel {
     up: js.Array[Double] = null
   ): Anon_Cancel = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (down != null) __obj.updateDynamic("down")(down)
-    if (drop != null) __obj.updateDynamic("drop")(drop)
-    if (lift != null) __obj.updateDynamic("lift")(lift)
-    if (up != null) __obj.updateDynamic("up")(up)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (down != null) __obj.updateDynamic("down")(down.asInstanceOf[js.Any])
+    if (drop != null) __obj.updateDynamic("drop")(drop.asInstanceOf[js.Any])
+    if (lift != null) __obj.updateDynamic("lift")(lift.asInstanceOf[js.Any])
+    if (up != null) __obj.updateDynamic("up")(up.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cancel]
   }
 }

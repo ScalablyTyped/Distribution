@@ -45,7 +45,7 @@ object DatabaseReplicationHistoryItem {
     start_last_seq: Double,
     start_time: String
   ): DatabaseReplicationHistoryItem = {
-    val __obj = js.Dynamic.literal(doc_write_failures = doc_write_failures, docs_read = docs_read, docs_written = docs_written, end_last_seq = end_last_seq, end_time = end_time, missing_checked = missing_checked, missing_found = missing_found, recorded_seq = recorded_seq, session_id = session_id, start_last_seq = start_last_seq, start_time = start_time)
+    val __obj = js.Dynamic.literal(doc_write_failures = doc_write_failures.asInstanceOf[js.Any], docs_read = docs_read.asInstanceOf[js.Any], docs_written = docs_written.asInstanceOf[js.Any], end_last_seq = end_last_seq.asInstanceOf[js.Any], end_time = end_time.asInstanceOf[js.Any], missing_checked = missing_checked.asInstanceOf[js.Any], missing_found = missing_found.asInstanceOf[js.Any], recorded_seq = recorded_seq.asInstanceOf[js.Any], session_id = session_id.asInstanceOf[js.Any], start_last_seq = start_last_seq.asInstanceOf[js.Any], start_time = start_time.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DatabaseReplicationHistoryItem]
   }

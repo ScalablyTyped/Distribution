@@ -18,9 +18,9 @@ object TimelineItemEditableOption {
     updateTime: js.UndefOr[Boolean] = js.undefined
   ): TimelineItemEditableOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove)
-    if (!js.isUndefined(updateGroup)) __obj.updateDynamic("updateGroup")(updateGroup)
-    if (!js.isUndefined(updateTime)) __obj.updateDynamic("updateTime")(updateTime)
+    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateGroup)) __obj.updateDynamic("updateGroup")(updateGroup.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateTime)) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineItemEditableOption]
   }
 }

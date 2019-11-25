@@ -15,7 +15,7 @@ object OnBluetoothDeviceFoundResult {
   @scala.inline
   def apply(devices: js.Array[BluetoothDeviceInfo] = null): OnBluetoothDeviceFoundResult = {
     val __obj = js.Dynamic.literal()
-    if (devices != null) __obj.updateDynamic("devices")(devices)
+    if (devices != null) __obj.updateDynamic("devices")(devices.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBluetoothDeviceFoundResult]
   }
 }

@@ -20,9 +20,9 @@ object OverlayOptions {
     scale: Int | Double = null
   ): OverlayOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fitHeight)) __obj.updateDynamic("fitHeight")(fitHeight)
-    if (!js.isUndefined(fitWidth)) __obj.updateDynamic("fitWidth")(fitWidth)
-    if (!js.isUndefined(keepAspectRatio)) __obj.updateDynamic("keepAspectRatio")(keepAspectRatio)
+    if (!js.isUndefined(fitHeight)) __obj.updateDynamic("fitHeight")(fitHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(fitWidth)) __obj.updateDynamic("fitWidth")(fitWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepAspectRatio)) __obj.updateDynamic("keepAspectRatio")(keepAspectRatio.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverlayOptions]
   }

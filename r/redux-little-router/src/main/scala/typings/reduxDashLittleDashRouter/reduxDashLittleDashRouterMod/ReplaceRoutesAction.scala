@@ -14,8 +14,8 @@ trait ReplaceRoutesAction extends RouterActions {
 object ReplaceRoutesAction {
   @scala.inline
   def apply(payload: Anon_Options, `type`: ROUTER_REPLACE_ROUTES): ReplaceRoutesAction = {
-    val __obj = js.Dynamic.literal(payload = payload)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceRoutesAction]
   }
 }

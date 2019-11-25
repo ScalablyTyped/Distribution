@@ -22,7 +22,7 @@ object IDateInputState {
     valueString: String,
     selectedShortcutIndex: Int | Double = null
   ): IDateInputState = {
-    val __obj = js.Dynamic.literal(isInputFocused = isInputFocused, isOpen = isOpen, value = value, valueString = valueString)
+    val __obj = js.Dynamic.literal(isInputFocused = isInputFocused.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueString = valueString.asInstanceOf[js.Any])
     if (selectedShortcutIndex != null) __obj.updateDynamic("selectedShortcutIndex")(selectedShortcutIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDateInputState]
   }

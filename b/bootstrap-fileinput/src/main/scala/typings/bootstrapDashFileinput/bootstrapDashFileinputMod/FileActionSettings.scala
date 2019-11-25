@@ -81,7 +81,7 @@ object FileActionSettings {
     uploadIcon: String,
     uploadTitle: String
   ): FileActionSettings = {
-    val __obj = js.Dynamic.literal(indicatorError = indicatorError, indicatorErrorTitle = indicatorErrorTitle, indicatorLoading = indicatorLoading, indicatorLoadingTitle = indicatorLoadingTitle, indicatorNew = indicatorNew, indicatorNewTitle = indicatorNewTitle, indicatorSuccess = indicatorSuccess, indicatorSuccessTitle = indicatorSuccessTitle, removeClass = removeClass, removeIcon = removeIcon, removeTitle = removeTitle, uploadClass = uploadClass, uploadIcon = uploadIcon, uploadTitle = uploadTitle)
+    val __obj = js.Dynamic.literal(indicatorError = indicatorError.asInstanceOf[js.Any], indicatorErrorTitle = indicatorErrorTitle.asInstanceOf[js.Any], indicatorLoading = indicatorLoading.asInstanceOf[js.Any], indicatorLoadingTitle = indicatorLoadingTitle.asInstanceOf[js.Any], indicatorNew = indicatorNew.asInstanceOf[js.Any], indicatorNewTitle = indicatorNewTitle.asInstanceOf[js.Any], indicatorSuccess = indicatorSuccess.asInstanceOf[js.Any], indicatorSuccessTitle = indicatorSuccessTitle.asInstanceOf[js.Any], removeClass = removeClass.asInstanceOf[js.Any], removeIcon = removeIcon.asInstanceOf[js.Any], removeTitle = removeTitle.asInstanceOf[js.Any], uploadClass = uploadClass.asInstanceOf[js.Any], uploadIcon = uploadIcon.asInstanceOf[js.Any], uploadTitle = uploadTitle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FileActionSettings]
   }

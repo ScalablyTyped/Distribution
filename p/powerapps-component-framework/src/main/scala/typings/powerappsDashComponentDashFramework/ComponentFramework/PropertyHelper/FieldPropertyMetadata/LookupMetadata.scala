@@ -20,7 +20,7 @@ object LookupMetadata {
     SourceType: Double,
     Targets: js.Array[String]
   ): LookupMetadata = {
-    val __obj = js.Dynamic.literal(Description = Description, DisplayName = DisplayName, IsSecured = IsSecured, LogicalName = LogicalName, RequiredLevel = RequiredLevel, SourceType = SourceType, Targets = Targets)
+    val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], DisplayName = DisplayName.asInstanceOf[js.Any], IsSecured = IsSecured.asInstanceOf[js.Any], LogicalName = LogicalName.asInstanceOf[js.Any], RequiredLevel = RequiredLevel.asInstanceOf[js.Any], SourceType = SourceType.asInstanceOf[js.Any], Targets = Targets.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LookupMetadata]
   }

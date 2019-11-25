@@ -14,7 +14,7 @@ object Anon_AnimatedX {
   @scala.inline
   def apply(animated: js.UndefOr[Boolean] = js.undefined, x: Int | Double = null, y: Int | Double = null): Anon_AnimatedX = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AnimatedX]

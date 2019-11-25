@@ -29,14 +29,14 @@ object PartialClassNameMapMobileStepperClassKey {
     root: String = null
   ): PartialClassNameMapMobileStepperClassKey = {
     val __obj = js.Dynamic.literal()
-    if (dot != null) __obj.updateDynamic("dot")(dot)
-    if (dotActive != null) __obj.updateDynamic("dotActive")(dotActive)
-    if (dots != null) __obj.updateDynamic("dots")(dots)
-    if (positionBottom != null) __obj.updateDynamic("positionBottom")(positionBottom)
-    if (positionStatic != null) __obj.updateDynamic("positionStatic")(positionStatic)
-    if (positionTop != null) __obj.updateDynamic("positionTop")(positionTop)
-    if (progress != null) __obj.updateDynamic("progress")(progress)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (dot != null) __obj.updateDynamic("dot")(dot.asInstanceOf[js.Any])
+    if (dotActive != null) __obj.updateDynamic("dotActive")(dotActive.asInstanceOf[js.Any])
+    if (dots != null) __obj.updateDynamic("dots")(dots.asInstanceOf[js.Any])
+    if (positionBottom != null) __obj.updateDynamic("positionBottom")(positionBottom.asInstanceOf[js.Any])
+    if (positionStatic != null) __obj.updateDynamic("positionStatic")(positionStatic.asInstanceOf[js.Any])
+    if (positionTop != null) __obj.updateDynamic("positionTop")(positionTop.asInstanceOf[js.Any])
+    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapMobileStepperClassKey]
   }
 }

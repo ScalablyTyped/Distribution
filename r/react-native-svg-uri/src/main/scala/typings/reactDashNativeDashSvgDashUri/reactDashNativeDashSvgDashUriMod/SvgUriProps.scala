@@ -41,10 +41,10 @@ object SvgUriProps {
     width: Double | String = null
   ): SvgUriProps = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (svgXmlData != null) __obj.updateDynamic("svgXmlData")(svgXmlData)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (svgXmlData != null) __obj.updateDynamic("svgXmlData")(svgXmlData.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SvgUriProps]
   }

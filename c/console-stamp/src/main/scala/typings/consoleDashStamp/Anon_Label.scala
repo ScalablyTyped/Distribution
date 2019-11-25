@@ -14,9 +14,9 @@ object Anon_Label {
   @scala.inline
   def apply(label: js.Any = null, metadata: js.Any = null, stamp: js.Any = null): Anon_Label = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (stamp != null) __obj.updateDynamic("stamp")(stamp)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (stamp != null) __obj.updateDynamic("stamp")(stamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Label]
   }
 }

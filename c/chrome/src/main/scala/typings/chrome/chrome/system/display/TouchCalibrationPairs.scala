@@ -23,7 +23,7 @@ object TouchCalibrationPairs {
     pair3: TouchCalibrationPair,
     pair4: TouchCalibrationPair
   ): TouchCalibrationPairs = {
-    val __obj = js.Dynamic.literal(pair1 = pair1, pair2 = pair2, pair3 = pair3, pair4 = pair4)
+    val __obj = js.Dynamic.literal(pair1 = pair1.asInstanceOf[js.Any], pair2 = pair2.asInstanceOf[js.Any], pair3 = pair3.asInstanceOf[js.Any], pair4 = pair4.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TouchCalibrationPairs]
   }

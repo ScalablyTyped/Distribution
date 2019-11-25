@@ -27,7 +27,7 @@ object GitPushSearchCriteria {
     refName: String,
     toDate: Date
   ): GitPushSearchCriteria = {
-    val __obj = js.Dynamic.literal(fromDate = fromDate, includeLinks = includeLinks, includeRefUpdates = includeRefUpdates, pusherId = pusherId, refName = refName, toDate = toDate)
+    val __obj = js.Dynamic.literal(fromDate = fromDate.asInstanceOf[js.Any], includeLinks = includeLinks.asInstanceOf[js.Any], includeRefUpdates = includeRefUpdates.asInstanceOf[js.Any], pusherId = pusherId.asInstanceOf[js.Any], refName = refName.asInstanceOf[js.Any], toDate = toDate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitPushSearchCriteria]
   }

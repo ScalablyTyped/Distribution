@@ -18,7 +18,7 @@ object SourcePosition {
   def apply(column: Int | Double = null, fileName: String = null, line: Int | Double = null): SourcePosition = {
     val __obj = js.Dynamic.literal()
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourcePosition]
   }

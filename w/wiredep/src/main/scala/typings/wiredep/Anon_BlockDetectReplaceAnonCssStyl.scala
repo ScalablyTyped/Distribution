@@ -18,7 +18,7 @@ trait Anon_BlockDetectReplaceAnonCssStyl extends js.Object {
 object Anon_BlockDetectReplaceAnonCssStyl {
   @scala.inline
   def apply(block: RegExp, detect: Anon_CssStyl, replace: Anon_CssStylString): Anon_BlockDetectReplaceAnonCssStyl = {
-    val __obj = js.Dynamic.literal(block = block, detect = detect, replace = replace)
+    val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], detect = detect.asInstanceOf[js.Any], replace = replace.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BlockDetectReplaceAnonCssStyl]
   }

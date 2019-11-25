@@ -14,8 +14,8 @@ object PartiallinePartialCSSPropertiestextPartialCSSPrope {
   @scala.inline
   def apply(line: PartialCSSProperties = null, text: PartialCSSProperties = null): PartiallinePartialCSSPropertiestextPartialCSSPrope = {
     val __obj = js.Dynamic.literal()
-    if (line != null) __obj.updateDynamic("line")(line)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartiallinePartialCSSPropertiestextPartialCSSPrope]
   }
 }

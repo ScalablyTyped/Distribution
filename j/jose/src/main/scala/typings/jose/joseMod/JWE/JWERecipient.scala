@@ -12,8 +12,8 @@ trait JWERecipient extends js.Object {
 object JWERecipient {
   @scala.inline
   def apply(encrypted_key: String, header: js.Object = null): JWERecipient = {
-    val __obj = js.Dynamic.literal(encrypted_key = encrypted_key)
-    if (header != null) __obj.updateDynamic("header")(header)
+    val __obj = js.Dynamic.literal(encrypted_key = encrypted_key.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     __obj.asInstanceOf[JWERecipient]
   }
 }

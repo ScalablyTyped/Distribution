@@ -48,12 +48,12 @@ object StrictBreadcrumbProps {
     size: mini | tiny | small | large | big | huge | massive = null
   ): StrictBreadcrumbProps = {
     val __obj = js.Dynamic.literal()
-    if (as != null) __obj.updateDynamic("as")(as)
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (divider != null) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (sections != null) __obj.updateDynamic("sections")(sections)
+    if (sections != null) __obj.updateDynamic("sections")(sections.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictBreadcrumbProps]
   }

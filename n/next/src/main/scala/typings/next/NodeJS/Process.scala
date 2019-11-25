@@ -11,7 +11,7 @@ trait Process extends js.Object {
 object Process {
   @scala.inline
   def apply(browser: Boolean): Process = {
-    val __obj = js.Dynamic.literal(browser = browser)
+    val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Process]
   }

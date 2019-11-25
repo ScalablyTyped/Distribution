@@ -25,13 +25,13 @@ object Anon_Cookies {
     opts: js.Object = null,
     replyCookies: js.Array[String] = null
   ): Anon_Cookies = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (cookies != null) __obj.updateDynamic("cookies")(cookies)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal)
-    if (!js.isUndefined(jSend)) __obj.updateDynamic("jSend")(jSend)
-    if (opts != null) __obj.updateDynamic("opts")(opts)
-    if (replyCookies != null) __obj.updateDynamic("replyCookies")(replyCookies)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (cookies != null) __obj.updateDynamic("cookies")(cookies.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal.asInstanceOf[js.Any])
+    if (!js.isUndefined(jSend)) __obj.updateDynamic("jSend")(jSend.asInstanceOf[js.Any])
+    if (opts != null) __obj.updateDynamic("opts")(opts.asInstanceOf[js.Any])
+    if (replyCookies != null) __obj.updateDynamic("replyCookies")(replyCookies.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cookies]
   }
 }

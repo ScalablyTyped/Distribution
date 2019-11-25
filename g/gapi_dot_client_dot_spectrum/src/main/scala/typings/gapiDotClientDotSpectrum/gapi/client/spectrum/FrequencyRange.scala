@@ -32,7 +32,7 @@ object FrequencyRange {
     stopHz: Int | Double = null
   ): FrequencyRange = {
     val __obj = js.Dynamic.literal()
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
     if (maxPowerDBm != null) __obj.updateDynamic("maxPowerDBm")(maxPowerDBm.asInstanceOf[js.Any])
     if (startHz != null) __obj.updateDynamic("startHz")(startHz.asInstanceOf[js.Any])
     if (stopHz != null) __obj.updateDynamic("stopHz")(stopHz.asInstanceOf[js.Any])

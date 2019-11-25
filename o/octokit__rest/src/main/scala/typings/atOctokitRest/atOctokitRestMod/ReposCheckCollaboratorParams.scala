@@ -13,7 +13,7 @@ trait ReposCheckCollaboratorParams extends js.Object {
 object ReposCheckCollaboratorParams {
   @scala.inline
   def apply(owner: String, repo: String, username: String): ReposCheckCollaboratorParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo, username = username)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposCheckCollaboratorParams]
   }

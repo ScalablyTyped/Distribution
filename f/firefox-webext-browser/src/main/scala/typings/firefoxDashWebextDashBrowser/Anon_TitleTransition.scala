@@ -20,9 +20,9 @@ trait Anon_TitleTransition extends js.Object {
 object Anon_TitleTransition {
   @scala.inline
   def apply(url: String, title: String = null, transition: TransitionType = null, visitTime: Date = null): Anon_TitleTransition = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (transition != null) __obj.updateDynamic("transition")(transition)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     if (visitTime != null) __obj.updateDynamic("visitTime")(visitTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TitleTransition]
   }

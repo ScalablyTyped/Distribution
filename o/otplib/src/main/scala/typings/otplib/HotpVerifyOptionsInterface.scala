@@ -15,8 +15,8 @@ object HotpVerifyOptionsInterface {
   def apply(counter: Int | Double = null, secret: String = null, token: String = null): HotpVerifyOptionsInterface = {
     val __obj = js.Dynamic.literal()
     if (counter != null) __obj.updateDynamic("counter")(counter.asInstanceOf[js.Any])
-    if (secret != null) __obj.updateDynamic("secret")(secret)
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[HotpVerifyOptionsInterface]
   }
 }

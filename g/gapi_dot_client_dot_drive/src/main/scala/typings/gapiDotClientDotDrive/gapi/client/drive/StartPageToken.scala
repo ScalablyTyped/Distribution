@@ -15,8 +15,8 @@ object StartPageToken {
   @scala.inline
   def apply(kind: String = null, startPageToken: String = null): StartPageToken = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (startPageToken != null) __obj.updateDynamic("startPageToken")(startPageToken)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (startPageToken != null) __obj.updateDynamic("startPageToken")(startPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartPageToken]
   }
 }

@@ -27,7 +27,7 @@ object Reference {
     referencedContext: () => typings.opentracing.libSpanUnderscoreContextMod.default,
     `type`: () => String
   ): Reference = {
-    val __obj = js.Dynamic.literal(_referencedContext = _referencedContext, _type = _type, referencedContext = js.Any.fromFunction0(referencedContext))
+    val __obj = js.Dynamic.literal(_referencedContext = _referencedContext.asInstanceOf[js.Any], _type = _type.asInstanceOf[js.Any], referencedContext = js.Any.fromFunction0(referencedContext))
     __obj.updateDynamic("type")(js.Any.fromFunction0(`type`))
     __obj.asInstanceOf[Reference]
   }

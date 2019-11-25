@@ -13,7 +13,7 @@ trait Anon_Afters extends js.Object {
 object Anon_Afters {
   @scala.inline
   def apply(afters: js.Array[QueueableFn], befores: js.Array[QueueableFn]): Anon_Afters = {
-    val __obj = js.Dynamic.literal(afters = afters, befores = befores)
+    val __obj = js.Dynamic.literal(afters = afters.asInstanceOf[js.Any], befores = befores.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Afters]
   }

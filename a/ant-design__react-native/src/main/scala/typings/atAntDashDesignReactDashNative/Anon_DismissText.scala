@@ -16,7 +16,7 @@ trait Anon_DismissText extends js.Object {
 object Anon_DismissText {
   @scala.inline
   def apply(dismissText: String, extra: String, okText: String): Anon_DismissText = {
-    val __obj = js.Dynamic.literal(dismissText = dismissText, extra = extra, okText = okText)
+    val __obj = js.Dynamic.literal(dismissText = dismissText.asInstanceOf[js.Any], extra = extra.asInstanceOf[js.Any], okText = okText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DismissText]
   }

@@ -34,16 +34,16 @@ object AdUnitOptions {
     urlColor: String = null
   ): AdUnitOptions = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
-    if (channelNumber != null) __obj.updateDynamic("channelNumber")(channelNumber)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (publisherId != null) __obj.updateDynamic("publisherId")(publisherId)
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
-    if (titleColor != null) __obj.updateDynamic("titleColor")(titleColor)
-    if (urlColor != null) __obj.updateDynamic("urlColor")(urlColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (channelNumber != null) __obj.updateDynamic("channelNumber")(channelNumber.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (publisherId != null) __obj.updateDynamic("publisherId")(publisherId.asInstanceOf[js.Any])
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
+    if (titleColor != null) __obj.updateDynamic("titleColor")(titleColor.asInstanceOf[js.Any])
+    if (urlColor != null) __obj.updateDynamic("urlColor")(urlColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdUnitOptions]
   }
 }

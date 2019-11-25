@@ -21,7 +21,7 @@ trait ICheckpointModel extends js.Object {
 object ICheckpointModel {
   @scala.inline
   def apply(id: String, last_modified: String): ICheckpointModel = {
-    val __obj = js.Dynamic.literal(id = id, last_modified = last_modified)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], last_modified = last_modified.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICheckpointModel]
   }

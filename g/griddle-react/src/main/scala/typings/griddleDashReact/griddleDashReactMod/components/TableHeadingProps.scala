@@ -17,9 +17,9 @@ object TableHeadingProps {
     columnIds: js.Array[Double] = null,
     columnTitles: js.Array[String] = null
   ): TableHeadingProps = {
-    val __obj = js.Dynamic.literal(TableHeadingCell = TableHeadingCell)
-    if (columnIds != null) __obj.updateDynamic("columnIds")(columnIds)
-    if (columnTitles != null) __obj.updateDynamic("columnTitles")(columnTitles)
+    val __obj = js.Dynamic.literal(TableHeadingCell = TableHeadingCell.asInstanceOf[js.Any])
+    if (columnIds != null) __obj.updateDynamic("columnIds")(columnIds.asInstanceOf[js.Any])
+    if (columnTitles != null) __obj.updateDynamic("columnTitles")(columnTitles.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableHeadingProps]
   }
 }

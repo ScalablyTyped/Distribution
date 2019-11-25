@@ -24,7 +24,7 @@ object MapType {
     projection: Projection,
     tileSize: Size
   ): MapType = {
-    val __obj = js.Dynamic.literal(getTile = js.Any.fromFunction3(getTile), maxZoom = maxZoom, minZoom = minZoom, name = name, projection = projection, tileSize = tileSize)
+    val __obj = js.Dynamic.literal(getTile = js.Any.fromFunction3(getTile), maxZoom = maxZoom.asInstanceOf[js.Any], minZoom = minZoom.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], tileSize = tileSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MapType]
   }

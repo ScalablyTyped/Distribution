@@ -47,8 +47,8 @@ object LineInfoBase {
     start_stop: String,
     `type`: String
   ): LineInfoBase = {
-    val __obj = js.Dynamic.literal(citycode = citycode, end_stop = end_stop, id = id, name = name, path = path, start_stop = start_stop)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(citycode = citycode.asInstanceOf[js.Any], end_stop = end_stop.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], start_stop = start_stop.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineInfoBase]
   }
 }

@@ -14,7 +14,7 @@ trait Anon_And extends js.Object {
 object Anon_And {
   @scala.inline
   def apply($and: js.Any, $or: js.Any): Anon_And = {
-    val __obj = js.Dynamic.literal($and = $and, $or = $or)
+    val __obj = js.Dynamic.literal($and = $and.asInstanceOf[js.Any], $or = $or.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_And]
   }

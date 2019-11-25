@@ -18,7 +18,7 @@ object VRStageParameters {
     sizeY: Int | Double = null
   ): VRStageParameters = {
     val __obj = js.Dynamic.literal()
-    if (sittingToStandingTransform != null) __obj.updateDynamic("sittingToStandingTransform")(sittingToStandingTransform)
+    if (sittingToStandingTransform != null) __obj.updateDynamic("sittingToStandingTransform")(sittingToStandingTransform.asInstanceOf[js.Any])
     if (sizeX != null) __obj.updateDynamic("sizeX")(sizeX.asInstanceOf[js.Any])
     if (sizeY != null) __obj.updateDynamic("sizeY")(sizeY.asInstanceOf[js.Any])
     __obj.asInstanceOf[VRStageParameters]

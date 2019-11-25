@@ -32,9 +32,9 @@ object IClientSubscribeOptions {
     rap: js.UndefOr[Boolean] = js.undefined,
     rh: Int | Double = null
   ): IClientSubscribeOptions = {
-    val __obj = js.Dynamic.literal(qos = qos)
-    if (!js.isUndefined(nl)) __obj.updateDynamic("nl")(nl)
-    if (!js.isUndefined(rap)) __obj.updateDynamic("rap")(rap)
+    val __obj = js.Dynamic.literal(qos = qos.asInstanceOf[js.Any])
+    if (!js.isUndefined(nl)) __obj.updateDynamic("nl")(nl.asInstanceOf[js.Any])
+    if (!js.isUndefined(rap)) __obj.updateDynamic("rap")(rap.asInstanceOf[js.Any])
     if (rh != null) __obj.updateDynamic("rh")(rh.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientSubscribeOptions]
   }

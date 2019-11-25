@@ -13,8 +13,8 @@ object EditorFileBrowserSchemaModelFieldsSize {
   @scala.inline
   def apply(field: String = null, parse: js.Function = null): EditorFileBrowserSchemaModelFieldsSize = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (parse != null) __obj.updateDynamic("parse")(parse)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorFileBrowserSchemaModelFieldsSize]
   }
 }

@@ -71,15 +71,15 @@ object IViewZone {
     onDomNodeTop: /* top */ Double => Unit = null,
     suppressMouseDown: js.UndefOr[Boolean] = js.undefined
   ): IViewZone = {
-    val __obj = js.Dynamic.literal(afterLineNumber = afterLineNumber, domNode = domNode)
+    val __obj = js.Dynamic.literal(afterLineNumber = afterLineNumber.asInstanceOf[js.Any], domNode = domNode.asInstanceOf[js.Any])
     if (afterColumn != null) __obj.updateDynamic("afterColumn")(afterColumn.asInstanceOf[js.Any])
     if (heightInLines != null) __obj.updateDynamic("heightInLines")(heightInLines.asInstanceOf[js.Any])
     if (heightInPx != null) __obj.updateDynamic("heightInPx")(heightInPx.asInstanceOf[js.Any])
-    if (marginDomNode != null) __obj.updateDynamic("marginDomNode")(marginDomNode)
+    if (marginDomNode != null) __obj.updateDynamic("marginDomNode")(marginDomNode.asInstanceOf[js.Any])
     if (minWidthInPx != null) __obj.updateDynamic("minWidthInPx")(minWidthInPx.asInstanceOf[js.Any])
     if (onComputedHeight != null) __obj.updateDynamic("onComputedHeight")(js.Any.fromFunction1(onComputedHeight))
     if (onDomNodeTop != null) __obj.updateDynamic("onDomNodeTop")(js.Any.fromFunction1(onDomNodeTop))
-    if (!js.isUndefined(suppressMouseDown)) __obj.updateDynamic("suppressMouseDown")(suppressMouseDown)
+    if (!js.isUndefined(suppressMouseDown)) __obj.updateDynamic("suppressMouseDown")(suppressMouseDown.asInstanceOf[js.Any])
     __obj.asInstanceOf[IViewZone]
   }
 }

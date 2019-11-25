@@ -37,9 +37,9 @@ object PhotoSwipeGalleryProps {
     className: String = null,
     isOpen: js.UndefOr[Boolean] = js.undefined
   ): PhotoSwipeGalleryProps = {
-    val __obj = js.Dynamic.literal(items = items, thumbnailContent = js.Any.fromFunction1(thumbnailContent))
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], thumbnailContent = js.Any.fromFunction1(thumbnailContent))
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhotoSwipeGalleryProps]
   }
 }

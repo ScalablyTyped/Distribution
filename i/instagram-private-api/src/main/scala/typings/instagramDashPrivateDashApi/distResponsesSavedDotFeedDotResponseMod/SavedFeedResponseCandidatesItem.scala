@@ -14,8 +14,8 @@ trait SavedFeedResponseCandidatesItem extends js.Object {
 object SavedFeedResponseCandidatesItem {
   @scala.inline
   def apply(height: Double, url: String, width: Double, estimated_scans_sizes: js.Array[Double] = null): SavedFeedResponseCandidatesItem = {
-    val __obj = js.Dynamic.literal(height = height, url = url, width = width)
-    if (estimated_scans_sizes != null) __obj.updateDynamic("estimated_scans_sizes")(estimated_scans_sizes)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (estimated_scans_sizes != null) __obj.updateDynamic("estimated_scans_sizes")(estimated_scans_sizes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavedFeedResponseCandidatesItem]
   }
 }

@@ -22,7 +22,7 @@ object CookieParserOptionItem {
   @scala.inline
   def apply(options: js.Any = null, secret: String | js.Array[String] = null): CookieParserOptionItem = {
     val __obj = js.Dynamic.literal()
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookieParserOptionItem]
   }

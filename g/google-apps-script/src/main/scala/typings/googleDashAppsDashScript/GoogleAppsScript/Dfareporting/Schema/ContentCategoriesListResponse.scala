@@ -18,9 +18,9 @@ object ContentCategoriesListResponse {
     nextPageToken: String = null
   ): ContentCategoriesListResponse = {
     val __obj = js.Dynamic.literal()
-    if (contentCategories != null) __obj.updateDynamic("contentCategories")(contentCategories)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (contentCategories != null) __obj.updateDynamic("contentCategories")(contentCategories.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentCategoriesListResponse]
   }
 }

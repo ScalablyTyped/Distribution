@@ -15,7 +15,7 @@ object GetExtConfigSyncRes {
   @scala.inline
   def apply(extConfig: js.Any = null): GetExtConfigSyncRes = {
     val __obj = js.Dynamic.literal()
-    if (extConfig != null) __obj.updateDynamic("extConfig")(extConfig)
+    if (extConfig != null) __obj.updateDynamic("extConfig")(extConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetExtConfigSyncRes]
   }
 }

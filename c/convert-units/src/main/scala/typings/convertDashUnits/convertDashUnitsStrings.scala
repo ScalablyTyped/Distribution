@@ -24,130 +24,211 @@ import typings.convertDashUnits.convertDashUnitsMod.uTime
 import typings.convertDashUnits.convertDashUnitsMod.uVoltage
 import typings.convertDashUnits.convertDashUnitsMod.uVolume
 import typings.convertDashUnits.convertDashUnitsMod.uVolumeFlowRate
+import typings.convertDashUnits.convertDashUnitsMod.unit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object convertDashUnitsStrings {
   @js.native
-  sealed trait A extends uCurrent
+  sealed trait A
+    extends uCurrent
+       with unit
   
   @js.native
-  sealed trait B extends uDitgital
+  sealed trait B
+    extends uDitgital
+       with unit
   
   @js.native
-  sealed trait C extends uTemperature
+  sealed trait C
+    extends uTemperature
+       with unit
   
   @js.native
-  sealed trait F extends uTemperature
+  sealed trait F
+    extends uTemperature
+       with unit
   
   @js.native
-  sealed trait GB extends uDitgital
+  sealed trait GB
+    extends uDitgital
+       with unit
   
   @js.native
-  sealed trait GHz extends uFrequency
+  sealed trait GHz
+    extends uFrequency
+       with unit
   
   @js.native
-  sealed trait GVA extends uApparentPower
+  sealed trait GVA
+    extends uApparentPower
+       with unit
   
   @js.native
-  sealed trait GVAR extends uReactivePower
+  sealed trait GVAR
+    extends uReactivePower
+       with unit
   
   @js.native
-  sealed trait GVARH extends uReactiveEnergy
+  sealed trait GVARH
+    extends uReactiveEnergy
+       with unit
   
   @js.native
-  sealed trait GW extends uPower
+  sealed trait GW
+    extends uPower
+       with unit
   
   @js.native
-  sealed trait GWh extends uEnergy
+  sealed trait GWh
+    extends uEnergy
+       with unit
   
   @js.native
-  sealed trait Gb extends uDitgital
+  sealed trait Gb_
+    extends uDitgital
+       with unit
   
   @js.native
-  sealed trait Hz extends uFrequency
+  sealed trait Hz
+    extends uFrequency
+       with unit
   
   @js.native
-  sealed trait J extends uEnergy
+  sealed trait J
+    extends uEnergy
+       with unit
   
   @js.native
-  sealed trait K extends uTemperature
+  sealed trait K
+    extends uTemperature
+       with unit
   
   @js.native
-  sealed trait KB extends uDitgital
+  sealed trait KB
+    extends uDitgital
+       with unit
   
   @js.native
-  sealed trait Kb extends uDitgital
+  sealed trait Kb_
+    extends uDitgital
+       with unit
   
   @js.native
-  sealed trait MB extends uDitgital
+  sealed trait MB
+    extends uDitgital
+       with unit
   
   @js.native
-  sealed trait MHz extends uFrequency
+  sealed trait MHz
+    extends uFrequency
+       with unit
   
   @js.native
-  sealed trait MPa extends uPressure
+  sealed trait MPa
+    extends uPressure
+       with unit
   
   @js.native
-  sealed trait MVA extends uApparentPower
+  sealed trait MVA
+    extends uApparentPower
+       with unit
   
   @js.native
-  sealed trait MVAR extends uReactivePower
+  sealed trait MVAR
+    extends uReactivePower
+       with unit
   
   @js.native
-  sealed trait MVARh extends uReactiveEnergy
+  sealed trait MVARh
+    extends uReactiveEnergy
+       with unit
   
   @js.native
-  sealed trait MW extends uPower
+  sealed trait MW
+    extends uPower
+       with unit
   
   @js.native
-  sealed trait MWh extends uEnergy
+  sealed trait MWh
+    extends uEnergy
+       with unit
   
   @js.native
-  sealed trait Mb extends uDitgital
+  sealed trait Mb_
+    extends uDitgital
+       with unit
   
   @js.native
-  sealed trait Pa extends uPressure
+  sealed trait Pa
+    extends uPressure
+       with unit
   
   @js.native
-  sealed trait R extends uTemperature
+  sealed trait R
+    extends uTemperature
+       with unit
   
   @js.native
-  sealed trait TB extends uDitgital
+  sealed trait TB
+    extends uDitgital
+       with unit
   
   @js.native
-  sealed trait THz extends uFrequency
+  sealed trait THz
+    extends uFrequency
+       with unit
   
   @js.native
-  sealed trait Tb extends uDitgital
+  sealed trait Tb_
+    extends uDitgital
+       with unit
   
   @js.native
-  sealed trait Tbs extends uVolume
+  sealed trait Tbs
+    extends uVolume
+       with unit
   
   @js.native
-  sealed trait `Tbs/s` extends uVolumeFlowRate
+  sealed trait `Tbs/s`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait V extends uVoltage
+  sealed trait V
+    extends uVoltage
+       with unit
   
   @js.native
-  sealed trait VA extends uApparentPower
+  sealed trait VA
+    extends uApparentPower
+       with unit
   
   @js.native
-  sealed trait VAR extends uReactivePower
+  sealed trait VAR
+    extends uReactivePower
+       with unit
   
   @js.native
-  sealed trait VARh extends uReactiveEnergy
+  sealed trait VARh
+    extends uReactiveEnergy
+       with unit
   
   @js.native
-  sealed trait W extends uPower
+  sealed trait W
+    extends uPower
+       with unit
   
   @js.native
-  sealed trait Wh extends uEnergy
+  sealed trait Wh
+    extends uEnergy
+       with unit
   
   @js.native
-  sealed trait ac extends uArea
+  sealed trait ac
+    extends uArea
+       with unit
   
   @js.native
   sealed trait angle extends measure
@@ -156,19 +237,27 @@ object convertDashUnitsStrings {
   sealed trait apparentPower extends measure
   
   @js.native
-  sealed trait arcmin extends uAngle
+  sealed trait arcmin
+    extends uAngle
+       with unit
   
   @js.native
-  sealed trait arcsec extends uAngle
+  sealed trait arcsec
+    extends uAngle
+       with unit
   
   @js.native
   sealed trait area extends measure
   
   @js.native
-  sealed trait b extends uDitgital
+  sealed trait b_
+    extends uDitgital
+       with unit
   
   @js.native
-  sealed trait bar extends uPressure
+  sealed trait bar
+    extends uPressure
+       with unit
   
   @js.native
   sealed trait bits extends system
@@ -177,37 +266,57 @@ object convertDashUnitsStrings {
   sealed trait bytes extends system
   
   @js.native
-  sealed trait `cl/s` extends uVolumeFlowRate
+  sealed trait `cl/s`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait cm extends uDistance
+  sealed trait cm
+    extends uDistance
+       with unit
   
   @js.native
-  sealed trait cm2 extends uArea
+  sealed trait cm2
+    extends uArea
+       with unit
   
   @js.native
-  sealed trait cm3 extends uVolume
+  sealed trait cm3
+    extends uVolume
+       with unit
   
   @js.native
-  sealed trait `cm3/s` extends uVolumeFlowRate
+  sealed trait `cm3/s`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait cup extends uVolume
+  sealed trait cup
+    extends uVolume
+       with unit
   
   @js.native
-  sealed trait `cup/s` extends uVolumeFlowRate
+  sealed trait `cup/s`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
   sealed trait current extends measure
   
   @js.native
-  sealed trait d extends uTime
+  sealed trait d
+    extends uTime
+       with unit
   
   @js.native
-  sealed trait deg extends uAngle
+  sealed trait deg
+    extends uAngle
+       with unit
   
   @js.native
-  sealed trait `deg/s` extends uFrequency
+  sealed trait `deg/s`
+    extends uFrequency
+       with unit
   
   @js.native
   sealed trait distance extends measure
@@ -216,79 +325,125 @@ object convertDashUnitsStrings {
   sealed trait ditgital extends measure
   
   @js.native
-  sealed trait `dl/s` extends uVolumeFlowRate
+  sealed trait `dl/s`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
   sealed trait energy extends measure
   
   @js.native
-  sealed trait `fl-oz` extends uVolume
+  sealed trait `fl-oz`
+    extends uVolume
+       with unit
   
   @js.native
-  sealed trait `fl-oz/h` extends uVolumeFlowRate
+  sealed trait `fl-oz/h`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait `fl-oz/min` extends uVolumeFlowRate
+  sealed trait `fl-oz/min`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait `fl-oz/s` extends uVolumeFlowRate
+  sealed trait `fl-oz/s`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
   sealed trait frequency extends measure
   
   @js.native
-  sealed trait ft extends uDistance
+  sealed trait ft
+    extends uDistance
+       with unit
   
   @js.native
-  sealed trait `ft-cd` extends uIlluminance
+  sealed trait `ft-cd`
+    extends uIlluminance
+       with unit
   
   @js.native
-  sealed trait `ft-us` extends uDistance
+  sealed trait `ft-us`
+    extends uDistance
+       with unit
   
   @js.native
-  sealed trait `ft/s` extends uSpeed
+  sealed trait `ft/s`
+    extends uSpeed
+       with unit
   
   @js.native
-  sealed trait ft2 extends uArea
+  sealed trait ft2
+    extends uArea
+       with unit
   
   @js.native
-  sealed trait ft3 extends uVolume
+  sealed trait ft3
+    extends uVolume
+       with unit
   
   @js.native
-  sealed trait `ft3/h` extends uVolumeFlowRate
+  sealed trait `ft3/h`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait `ft3/min` extends uVolumeFlowRate
+  sealed trait `ft3/min`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait `ft3/s` extends uVolumeFlowRate
+  sealed trait `ft3/s`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait g extends uMass
+  sealed trait g
+    extends uMass
+       with unit
   
   @js.native
-  sealed trait gal extends uVolume
+  sealed trait gal
+    extends uVolume
+       with unit
   
   @js.native
-  sealed trait `gal/h` extends uVolumeFlowRate
+  sealed trait `gal/h`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait `gal/min` extends uVolumeFlowRate
+  sealed trait `gal/min`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait `gal/s` extends uVolumeFlowRate
+  sealed trait `gal/s`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait grad extends uAngle
+  sealed trait grad
+    extends uAngle
+       with unit
   
   @js.native
-  sealed trait h extends uTime
+  sealed trait h
+    extends uTime
+       with unit
   
   @js.native
-  sealed trait hPa extends uPressure
+  sealed trait hPa
+    extends uPressure
+       with unit
   
   @js.native
-  sealed trait ha extends uArea
+  sealed trait ha
+    extends uArea
+       with unit
   
   @js.native
   sealed trait illuminance extends measure
@@ -297,214 +452,350 @@ object convertDashUnitsStrings {
   sealed trait imperial extends system
   
   @js.native
-  sealed trait in extends uDistance
+  sealed trait in
+    extends uDistance
+       with unit
   
   @js.native
-  sealed trait in2 extends uArea
+  sealed trait in2
+    extends uArea
+       with unit
   
   @js.native
-  sealed trait in3 extends uVolume
+  sealed trait in3
+    extends uVolume
+       with unit
   
   @js.native
-  sealed trait `in3/h` extends uVolumeFlowRate
+  sealed trait `in3/h`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait `in3/min` extends uVolumeFlowRate
+  sealed trait `in3/min`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait `in3/s` extends uVolumeFlowRate
+  sealed trait `in3/s`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait kA extends uCurrent
+  sealed trait kA
+    extends uCurrent
+       with unit
   
   @js.native
-  sealed trait kHz extends uFrequency
+  sealed trait kHz
+    extends uFrequency
+       with unit
   
   @js.native
-  sealed trait kJ extends uEnergy
+  sealed trait kJ
+    extends uEnergy
+       with unit
   
   @js.native
-  sealed trait kM extends uPower
+  sealed trait kM
+    extends uPower
+       with unit
   
   @js.native
-  sealed trait kPa extends uPressure
+  sealed trait kPa
+    extends uPressure
+       with unit
   
   @js.native
-  sealed trait kV extends uVoltage
+  sealed trait kV
+    extends uVoltage
+       with unit
   
   @js.native
-  sealed trait kVA extends uApparentPower
+  sealed trait kVA
+    extends uApparentPower
+       with unit
   
   @js.native
-  sealed trait kVAR extends uReactivePower
+  sealed trait kVAR
+    extends uReactivePower
+       with unit
   
   @js.native
-  sealed trait kVARh extends uReactiveEnergy
+  sealed trait kVARh
+    extends uReactiveEnergy
+       with unit
   
   @js.native
-  sealed trait kWh extends uEnergy
+  sealed trait kWh
+    extends uEnergy
+       with unit
   
   @js.native
-  sealed trait kg extends uMass
+  sealed trait kg
+    extends uMass
+       with unit
   
   @js.native
-  sealed trait kl extends uVolume
+  sealed trait kl
+    extends uVolume
+       with unit
   
   @js.native
-  sealed trait `kl/h` extends uVolumeFlowRate
+  sealed trait `kl/h`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait `kl/min` extends uVolumeFlowRate
+  sealed trait `kl/min`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait `kl/s` extends uVolumeFlowRate
+  sealed trait `kl/s`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait km extends uDistance
+  sealed trait `km/h`
+    extends uSpeed
+       with unit
   
   @js.native
-  sealed trait `km/h` extends uSpeed
+  sealed trait km2
+    extends uArea
+       with unit
   
   @js.native
-  sealed trait km2 extends uArea
+  sealed trait km3
+    extends uVolume
+       with unit
   
   @js.native
-  sealed trait km3 extends uVolume
+  sealed trait `km3/s`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait `km3/s` extends uVolumeFlowRate
+  sealed trait km_
+    extends uDistance
+       with unit
   
   @js.native
-  sealed trait knot extends uSpeed
+  sealed trait knot
+    extends uSpeed
+       with unit
   
   @js.native
-  sealed trait ksi extends uPressure
+  sealed trait ksi
+    extends uPressure
+       with unit
   
   @js.native
-  sealed trait l extends uVolume
+  sealed trait l
+    extends uVolume
+       with unit
   
   @js.native
-  sealed trait `l/h` extends uVolumeFlowRate
+  sealed trait `l/h`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait `l/min` extends uVolumeFlowRate
+  sealed trait `l/min`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait `l/s` extends uVolumeFlowRate
+  sealed trait `l/s`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait lb extends uMass
+  sealed trait lb
+    extends uMass
+       with unit
   
   @js.native
-  sealed trait lx extends uIlluminance
+  sealed trait lx
+    extends uIlluminance
+       with unit
   
   @js.native
-  sealed trait m extends uDistance
+  sealed trait m
+    extends uDistance
+       with unit
   
   @js.native
-  sealed trait `m/h` extends uSpeed
+  sealed trait `m/h`
+    extends uSpeed
+       with unit
   
   @js.native
-  sealed trait `m/s` extends uSpeed
+  sealed trait `m/s`
+    extends uSpeed
+       with unit
   
   @js.native
-  sealed trait m2 extends uArea
+  sealed trait m2
+    extends uArea
+       with unit
   
   @js.native
-  sealed trait m3 extends uVolume
+  sealed trait m3
+    extends uVolume
+       with unit
   
   @js.native
-  sealed trait `m3/h` extends uVolumeFlowRate
+  sealed trait `m3/h`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait `m3/min` extends uVolumeFlowRate
+  sealed trait `m3/min`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait `m3/s` extends uVolumeFlowRate
+  sealed trait `m3/s`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait mA extends uCurrent
+  sealed trait mA
+    extends uCurrent
+       with unit
   
   @js.native
-  sealed trait mHz extends uFrequency
+  sealed trait mHz_
+    extends uFrequency
+       with unit
   
   @js.native
-  sealed trait mV extends uVoltage
+  sealed trait mV
+    extends uVoltage
+       with unit
   
   @js.native
-  sealed trait mVA extends uApparentPower
+  sealed trait mVAR_
+    extends uReactivePower
+       with unit
   
   @js.native
-  sealed trait mVAR extends uReactivePower
+  sealed trait mVARh_
+    extends uReactiveEnergy
+       with unit
   
   @js.native
-  sealed trait mVARh extends uReactiveEnergy
+  sealed trait mVA_
+    extends uApparentPower
+       with unit
   
   @js.native
-  sealed trait mW extends uPower
+  sealed trait mW_
+    extends uPower
+       with unit
   
   @js.native
-  sealed trait mWh extends uEnergy
+  sealed trait mWh_
+    extends uEnergy
+       with unit
   
   @js.native
   sealed trait mass extends measure
   
   @js.native
-  sealed trait mcg extends uMass
+  sealed trait mcg
+    extends uMass
+       with unit
   
   @js.native
   sealed trait metric extends system
   
   @js.native
-  sealed trait mg extends uMass
+  sealed trait mg
+    extends uMass
+       with unit
   
   @js.native
-  sealed trait mi extends uDistance
+  sealed trait mi
+    extends uDistance
+       with unit
   
   @js.native
-  sealed trait mi2 extends uArea
+  sealed trait mi2
+    extends uArea
+       with unit
   
   @js.native
-  sealed trait min extends uTime
+  sealed trait min
+    extends uTime
+       with unit
   
   @js.native
-  sealed trait `min/km` extends uPace
+  sealed trait `min/km`
+    extends uPace
+       with unit
   
   @js.native
-  sealed trait ml extends uVolume
+  sealed trait ml
+    extends uVolume
+       with unit
   
   @js.native
-  sealed trait `ml/s` extends uVolumeFlowRate
+  sealed trait `ml/s`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait mm extends uDistance
+  sealed trait mm
+    extends uDistance
+       with unit
   
   @js.native
-  sealed trait mm2 extends uArea
+  sealed trait mm2
+    extends uArea
+       with unit
   
   @js.native
-  sealed trait mm3 extends uVolume
+  sealed trait mm3
+    extends uVolume
+       with unit
   
   @js.native
-  sealed trait `mm3/s` extends uVolumeFlowRate
+  sealed trait `mm3/s`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait month extends uTime
+  sealed trait month
+    extends uTime
+       with unit
   
   @js.native
-  sealed trait ms extends uTime
+  sealed trait ms
+    extends uTime
+       with unit
   
   @js.native
-  sealed trait mt extends uMass
+  sealed trait mt
+    extends uMass
+       with unit
   
   @js.native
-  sealed trait mu extends uTime
+  sealed trait mu
+    extends uTime
+       with unit
   
   @js.native
-  sealed trait ns extends uTime
+  sealed trait ns
+    extends uTime
+       with unit
   
   @js.native
-  sealed trait oz extends uMass
+  sealed trait oz
+    extends uMass
+       with unit
   
   @js.native
   sealed trait pace extends measure
@@ -513,49 +804,75 @@ object convertDashUnitsStrings {
   sealed trait partsPer extends measure
   
   @js.native
-  sealed trait pnt extends uVolume
+  sealed trait pnt
+    extends uVolume
+       with unit
   
   @js.native
-  sealed trait `pnt/h` extends uVolumeFlowRate
+  sealed trait `pnt/h`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait `pnt/min` extends uVolumeFlowRate
+  sealed trait `pnt/min`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait `pnt/s` extends uVolumeFlowRate
+  sealed trait `pnt/s`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
   sealed trait power extends measure
   
   @js.native
-  sealed trait ppb extends uPartsPer
+  sealed trait ppb
+    extends uPartsPer
+       with unit
   
   @js.native
-  sealed trait ppm extends uPartsPer
+  sealed trait ppm
+    extends uPartsPer
+       with unit
   
   @js.native
-  sealed trait ppq extends uPartsPer
+  sealed trait ppq
+    extends uPartsPer
+       with unit
   
   @js.native
-  sealed trait ppt extends uPartsPer
+  sealed trait ppt
+    extends uPartsPer
+       with unit
   
   @js.native
   sealed trait pressure extends measure
   
   @js.native
-  sealed trait psi extends uPressure
+  sealed trait psi
+    extends uPressure
+       with unit
   
   @js.native
-  sealed trait qt extends uVolume
+  sealed trait qt
+    extends uVolume
+       with unit
   
   @js.native
-  sealed trait `qt/s` extends uVolumeFlowRate
+  sealed trait `qt/s`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait rad extends uAngle
+  sealed trait rad
+    extends uAngle
+       with unit
   
   @js.native
-  sealed trait `rad/s` extends uFrequency
+  sealed trait `rad/s`
+    extends uFrequency
+       with unit
   
   @js.native
   sealed trait reactiveEnergy extends measure
@@ -564,22 +881,32 @@ object convertDashUnitsStrings {
   sealed trait reactivePower extends measure
   
   @js.native
-  sealed trait rpm extends uFrequency
+  sealed trait rpm
+    extends uFrequency
+       with unit
   
   @js.native
-  sealed trait s extends uTime
+  sealed trait s
+    extends uTime
+       with unit
   
   @js.native
-  sealed trait `s/ft` extends uPace
+  sealed trait `s/ft`
+    extends uPace
+       with unit
   
   @js.native
-  sealed trait `s/m` extends uPace
+  sealed trait `s/m`
+    extends uPace
+       with unit
   
   @js.native
   sealed trait speed extends measure
   
   @js.native
-  sealed trait t extends uMass
+  sealed trait t
+    extends uMass
+       with unit
   
   @js.native
   sealed trait temperature extends measure
@@ -588,13 +915,19 @@ object convertDashUnitsStrings {
   sealed trait time extends measure
   
   @js.native
-  sealed trait torr extends uPressure
+  sealed trait torr
+    extends uPressure
+       with unit
   
   @js.native
-  sealed trait tsp extends uVolume
+  sealed trait tsp
+    extends uVolume
+       with unit
   
   @js.native
-  sealed trait `tsp/s` extends uVolumeFlowRate
+  sealed trait `tsp/s`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
   sealed trait voltage extends measure
@@ -606,22 +939,34 @@ object convertDashUnitsStrings {
   sealed trait volumeFlowRate extends measure
   
   @js.native
-  sealed trait week extends uTime
+  sealed trait week
+    extends uTime
+       with unit
   
   @js.native
-  sealed trait yd3 extends uVolume
+  sealed trait yd3
+    extends uVolume
+       with unit
   
   @js.native
-  sealed trait `yd3/h` extends uVolumeFlowRate
+  sealed trait `yd3/h`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait `yd3/min` extends uVolumeFlowRate
+  sealed trait `yd3/min`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait `yd3/s` extends uVolumeFlowRate
+  sealed trait `yd3/s`
+    extends uVolumeFlowRate
+       with unit
   
   @js.native
-  sealed trait year extends uTime
+  sealed trait year
+    extends uTime
+       with unit
   
   @scala.inline
   def A: A = "A".asInstanceOf[A]
@@ -646,7 +991,7 @@ object convertDashUnitsStrings {
   @scala.inline
   def GWh: GWh = "GWh".asInstanceOf[GWh]
   @scala.inline
-  def Gb: Gb = "Gb".asInstanceOf[Gb]
+  def Gb_ : Gb_ = "Gb".asInstanceOf[Gb_]
   @scala.inline
   def Hz: Hz = "Hz".asInstanceOf[Hz]
   @scala.inline
@@ -656,7 +1001,7 @@ object convertDashUnitsStrings {
   @scala.inline
   def KB: KB = "KB".asInstanceOf[KB]
   @scala.inline
-  def Kb: Kb = "Kb".asInstanceOf[Kb]
+  def Kb_ : Kb_ = "Kb".asInstanceOf[Kb_]
   @scala.inline
   def MB: MB = "MB".asInstanceOf[MB]
   @scala.inline
@@ -674,7 +1019,7 @@ object convertDashUnitsStrings {
   @scala.inline
   def MWh: MWh = "MWh".asInstanceOf[MWh]
   @scala.inline
-  def Mb: Mb = "Mb".asInstanceOf[Mb]
+  def Mb_ : Mb_ = "Mb".asInstanceOf[Mb_]
   @scala.inline
   def Pa: Pa = "Pa".asInstanceOf[Pa]
   @scala.inline
@@ -684,7 +1029,7 @@ object convertDashUnitsStrings {
   @scala.inline
   def THz: THz = "THz".asInstanceOf[THz]
   @scala.inline
-  def Tb: Tb = "Tb".asInstanceOf[Tb]
+  def Tb_ : Tb_ = "Tb".asInstanceOf[Tb_]
   @scala.inline
   def Tbs: Tbs = "Tbs".asInstanceOf[Tbs]
   @scala.inline
@@ -714,7 +1059,7 @@ object convertDashUnitsStrings {
   @scala.inline
   def area: area = "area".asInstanceOf[area]
   @scala.inline
-  def b: b = "b".asInstanceOf[b]
+  def b_ : b_ = "b".asInstanceOf[b_]
   @scala.inline
   def bar: bar = "bar".asInstanceOf[bar]
   @scala.inline
@@ -844,8 +1189,6 @@ object convertDashUnitsStrings {
   @scala.inline
   def `kl/s`: `kl/s` = "kl/s".asInstanceOf[`kl/s`]
   @scala.inline
-  def km: km = "km".asInstanceOf[km]
-  @scala.inline
   def `km/h`: `km/h` = "km/h".asInstanceOf[`km/h`]
   @scala.inline
   def km2: km2 = "km2".asInstanceOf[km2]
@@ -853,6 +1196,8 @@ object convertDashUnitsStrings {
   def km3: km3 = "km3".asInstanceOf[km3]
   @scala.inline
   def `km3/s`: `km3/s` = "km3/s".asInstanceOf[`km3/s`]
+  @scala.inline
+  def km_ : km_ = "km".asInstanceOf[km_]
   @scala.inline
   def knot: knot = "knot".asInstanceOf[knot]
   @scala.inline
@@ -888,19 +1233,19 @@ object convertDashUnitsStrings {
   @scala.inline
   def mA: mA = "mA".asInstanceOf[mA]
   @scala.inline
-  def mHz: mHz = "mHz".asInstanceOf[mHz]
+  def mHz_ : mHz_ = "mHz".asInstanceOf[mHz_]
   @scala.inline
   def mV: mV = "mV".asInstanceOf[mV]
   @scala.inline
-  def mVA: mVA = "mVA".asInstanceOf[mVA]
+  def mVAR_ : mVAR_ = "mVAR".asInstanceOf[mVAR_]
   @scala.inline
-  def mVAR: mVAR = "mVAR".asInstanceOf[mVAR]
+  def mVARh_ : mVARh_ = "mVARh".asInstanceOf[mVARh_]
   @scala.inline
-  def mVARh: mVARh = "mVARh".asInstanceOf[mVARh]
+  def mVA_ : mVA_ = "mVA".asInstanceOf[mVA_]
   @scala.inline
-  def mW: mW = "mW".asInstanceOf[mW]
+  def mW_ : mW_ = "mW".asInstanceOf[mW_]
   @scala.inline
-  def mWh: mWh = "mWh".asInstanceOf[mWh]
+  def mWh_ : mWh_ = "mWh".asInstanceOf[mWh_]
   @scala.inline
   def mass: mass = "mass".asInstanceOf[mass]
   @scala.inline

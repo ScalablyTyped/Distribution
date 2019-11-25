@@ -30,9 +30,9 @@ object ProjectParametersTransformation {
     wkid: Int | Double = null,
     wkt: String = null
   ): ProjectParametersTransformation = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (wkid != null) __obj.updateDynamic("wkid")(wkid.asInstanceOf[js.Any])
-    if (wkt != null) __obj.updateDynamic("wkt")(wkt)
+    if (wkt != null) __obj.updateDynamic("wkt")(wkt.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectParametersTransformation]
   }
 }

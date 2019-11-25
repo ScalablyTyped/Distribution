@@ -13,7 +13,7 @@ trait ojOptionSettableProperties extends JetSettableProperties {
 object ojOptionSettableProperties {
   @scala.inline
   def apply(disabled: Boolean, value: js.Any): ojOptionSettableProperties = {
-    val __obj = js.Dynamic.literal(disabled = disabled, value = value)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ojOptionSettableProperties]
   }

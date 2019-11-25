@@ -24,12 +24,12 @@ object ProfileFilterLink {
     selfLink: String = null
   ): ProfileFilterLink = {
     val __obj = js.Dynamic.literal()
-    if (filterRef != null) __obj.updateDynamic("filterRef")(filterRef)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (profileRef != null) __obj.updateDynamic("profileRef")(profileRef)
+    if (filterRef != null) __obj.updateDynamic("filterRef")(filterRef.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (profileRef != null) __obj.updateDynamic("profileRef")(profileRef.asInstanceOf[js.Any])
     if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfileFilterLink]
   }
 }

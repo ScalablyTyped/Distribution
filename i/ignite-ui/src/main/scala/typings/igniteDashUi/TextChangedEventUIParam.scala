@@ -23,9 +23,9 @@ object TextChangedEventUIParam {
   @scala.inline
   def apply(oldText: String = null, owner: js.Any = null, text: String = null): TextChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (oldText != null) __obj.updateDynamic("oldText")(oldText)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (oldText != null) __obj.updateDynamic("oldText")(oldText.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextChangedEventUIParam]
   }
 }

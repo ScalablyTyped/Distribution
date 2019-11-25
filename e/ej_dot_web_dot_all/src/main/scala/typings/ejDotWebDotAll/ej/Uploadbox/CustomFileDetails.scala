@@ -32,11 +32,11 @@ object CustomFileDetails {
     title: js.UndefOr[Boolean] = js.undefined
   ): CustomFileDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(action)) __obj.updateDynamic("action")(action)
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size)
-    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status)
-    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(action)) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomFileDetails]
   }
 }

@@ -14,7 +14,7 @@ object CredentialsList {
   @scala.inline
   def apply(credentials: js.Array[Credentials] = null): CredentialsList = {
     val __obj = js.Dynamic.literal()
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[CredentialsList]
   }
 }

@@ -20,7 +20,7 @@ object CopyFileOptions {
     fail: js.Any => Unit = null,
     success: js.Any => Unit = null
   ): CopyFileOptions = {
-    val __obj = js.Dynamic.literal(destPath = destPath, srcPath = srcPath)
+    val __obj = js.Dynamic.literal(destPath = destPath.asInstanceOf[js.Any], srcPath = srcPath.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

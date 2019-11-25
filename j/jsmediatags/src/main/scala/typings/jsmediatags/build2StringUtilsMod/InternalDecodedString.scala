@@ -12,8 +12,8 @@ trait InternalDecodedString extends js.Object {
 
 object InternalDecodedString {
   @scala.inline
-  def apply(_value: String, bytesReadCount: Double, length: Double, toString: () => String): InternalDecodedString = {
-    val __obj = js.Dynamic.literal(_value = _value, bytesReadCount = bytesReadCount, length = length, toString = js.Any.fromFunction0(toString))
+  def apply(_value: String, bytesReadCount: Double, length: Double): InternalDecodedString = {
+    val __obj = js.Dynamic.literal(_value = _value.asInstanceOf[js.Any], bytesReadCount = bytesReadCount.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InternalDecodedString]
   }

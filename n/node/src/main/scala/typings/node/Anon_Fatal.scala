@@ -13,8 +13,8 @@ object Anon_Fatal {
   @scala.inline
   def apply(fatal: js.UndefOr[Boolean] = js.undefined, ignoreBOM: js.UndefOr[Boolean] = js.undefined): Anon_Fatal = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fatal)) __obj.updateDynamic("fatal")(fatal)
-    if (!js.isUndefined(ignoreBOM)) __obj.updateDynamic("ignoreBOM")(ignoreBOM)
+    if (!js.isUndefined(fatal)) __obj.updateDynamic("fatal")(fatal.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreBOM)) __obj.updateDynamic("ignoreBOM")(ignoreBOM.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Fatal]
   }
 }

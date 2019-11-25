@@ -16,8 +16,8 @@ trait ReposGetReadmeParams extends js.Object {
 object ReposGetReadmeParams {
   @scala.inline
   def apply(owner: String, repo: String, ref: String = null): ReposGetReadmeParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo)
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposGetReadmeParams]
   }
 }

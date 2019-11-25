@@ -13,7 +13,7 @@ object ListNamespacesResponse {
   @scala.inline
   def apply(namespaces: js.Array[Namespace] = null): ListNamespacesResponse = {
     val __obj = js.Dynamic.literal()
-    if (namespaces != null) __obj.updateDynamic("namespaces")(namespaces)
+    if (namespaces != null) __obj.updateDynamic("namespaces")(namespaces.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListNamespacesResponse]
   }
 }

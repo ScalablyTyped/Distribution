@@ -14,7 +14,7 @@ trait GlyphAtlas extends js.Object {
 object GlyphAtlas {
   @scala.inline
   def apply(atlas: typings.ol.styleAtlasManagerMod.default, height: Double, width: StringDictionary[Double]): GlyphAtlas = {
-    val __obj = js.Dynamic.literal(atlas = atlas, height = height, width = width)
+    val __obj = js.Dynamic.literal(atlas = atlas.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GlyphAtlas]
   }

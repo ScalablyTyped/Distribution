@@ -21,10 +21,10 @@ object Anon_AccessTokenUrl {
     https: js.UndefOr[Boolean] = js.undefined,
     ticketUrl: String = null
   ): Anon_AccessTokenUrl = {
-    val __obj = js.Dynamic.literal(appId = appId, appSecret = appSecret)
-    if (accessTokenUrl != null) __obj.updateDynamic("accessTokenUrl")(accessTokenUrl)
-    if (!js.isUndefined(https)) __obj.updateDynamic("https")(https)
-    if (ticketUrl != null) __obj.updateDynamic("ticketUrl")(ticketUrl)
+    val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], appSecret = appSecret.asInstanceOf[js.Any])
+    if (accessTokenUrl != null) __obj.updateDynamic("accessTokenUrl")(accessTokenUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(https)) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
+    if (ticketUrl != null) __obj.updateDynamic("ticketUrl")(ticketUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AccessTokenUrl]
   }
 }

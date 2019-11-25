@@ -12,7 +12,7 @@ trait GridViewCustomButtonEventArgs extends ProcessingModeEventArgs {
 object GridViewCustomButtonEventArgs {
   @scala.inline
   def apply(buttonID: String, processOnServer: Boolean, sender: Control, visibleIndex: Double): GridViewCustomButtonEventArgs = {
-    val __obj = js.Dynamic.literal(buttonID = buttonID, processOnServer = processOnServer, sender = sender, visibleIndex = visibleIndex)
+    val __obj = js.Dynamic.literal(buttonID = buttonID.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GridViewCustomButtonEventArgs]
   }

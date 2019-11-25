@@ -30,7 +30,7 @@ object Reader {
     resolveDataPointer: Double => js.Any,
     walker: js.Any
   ): Reader[T] = {
-    val __obj = js.Dynamic.literal(db = db, decoder = decoder, findAddressInTree = js.Any.fromFunction1(findAddressInTree), get = js.Any.fromFunction1(get), load = js.Any.fromFunction2(load), metadata = metadata, resolveDataPointer = js.Any.fromFunction1(resolveDataPointer), walker = walker)
+    val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any], decoder = decoder.asInstanceOf[js.Any], findAddressInTree = js.Any.fromFunction1(findAddressInTree), get = js.Any.fromFunction1(get), load = js.Any.fromFunction2(load), metadata = metadata.asInstanceOf[js.Any], resolveDataPointer = js.Any.fromFunction1(resolveDataPointer), walker = walker.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Reader[T]]
   }

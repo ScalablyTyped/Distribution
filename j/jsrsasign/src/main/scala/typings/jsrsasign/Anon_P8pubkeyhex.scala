@@ -11,7 +11,7 @@ trait Anon_P8pubkeyhex extends js.Object {
 object Anon_P8pubkeyhex {
   @scala.inline
   def apply(p8pubkeyhex: String): Anon_P8pubkeyhex = {
-    val __obj = js.Dynamic.literal(p8pubkeyhex = p8pubkeyhex)
+    val __obj = js.Dynamic.literal(p8pubkeyhex = p8pubkeyhex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_P8pubkeyhex]
   }

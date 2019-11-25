@@ -24,8 +24,8 @@ object AggregationInfo {
   ): AggregationInfo = {
     val __obj = js.Dynamic.literal()
     if (aggregationCount != null) __obj.updateDynamic("aggregationCount")(aggregationCount.asInstanceOf[js.Any])
-    if (aggregationInterval != null) __obj.updateDynamic("aggregationInterval")(aggregationInterval)
-    if (aggregationLevel != null) __obj.updateDynamic("aggregationLevel")(aggregationLevel)
+    if (aggregationInterval != null) __obj.updateDynamic("aggregationInterval")(aggregationInterval.asInstanceOf[js.Any])
+    if (aggregationLevel != null) __obj.updateDynamic("aggregationLevel")(aggregationLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregationInfo]
   }
 }

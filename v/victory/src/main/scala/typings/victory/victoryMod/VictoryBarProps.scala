@@ -3,7 +3,6 @@ package typings.victory.victoryMod
 import typings.react.reactMod.ReactElement
 import typings.victory.Anon_Bottom
 import typings.victory.Anon_XYD3Scale
-import typings.victory.Fn_DataAnyString
 import typings.victory.victoryStrings.data
 import typings.victory.victoryStrings.end
 import typings.victory.victoryStrings.labels
@@ -122,7 +121,7 @@ object VictoryBarProps {
     height: Int | Double = null,
     horizontal: js.UndefOr[Boolean] = js.undefined,
     labelComponent: ReactElement = null,
-    labels: js.Array[String] | Fn_DataAnyString = null,
+    labels: js.Array[String] | (js.Function1[/* data */ js.Any, String]) = null,
     name: String = null,
     padding: PaddingProps = null,
     scale: ScalePropType | D3Scale | Anon_XYD3Scale = null,
@@ -136,28 +135,28 @@ object VictoryBarProps {
   ): VictoryBarProps = {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (animate != null) __obj.updateDynamic("animate")(animate)
+    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
     if (barRatio != null) __obj.updateDynamic("barRatio")(barRatio.asInstanceOf[js.Any])
     if (barWidth != null) __obj.updateDynamic("barWidth")(barWidth.asInstanceOf[js.Any])
     if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (containerComponent != null) __obj.updateDynamic("containerComponent")(containerComponent)
+    if (containerComponent != null) __obj.updateDynamic("containerComponent")(containerComponent.asInstanceOf[js.Any])
     if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (dataComponent != null) __obj.updateDynamic("dataComponent")(dataComponent)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (dataComponent != null) __obj.updateDynamic("dataComponent")(dataComponent.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent)
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
-    if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent)
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])

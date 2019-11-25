@@ -34,7 +34,7 @@ object GetMergeConflictsOutput {
     mergeable: Boolean,
     sourceCommitId: String
   ): GetMergeConflictsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, destinationCommitId = destinationCommitId, mergeable = mergeable, sourceCommitId = sourceCommitId)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], destinationCommitId = destinationCommitId.asInstanceOf[js.Any], mergeable = mergeable.asInstanceOf[js.Any], sourceCommitId = sourceCommitId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetMergeConflictsOutput]
   }

@@ -16,8 +16,8 @@ trait ThemeAttributeBackgroundPropType
 object ThemeAttributeBackgroundPropType {
   @scala.inline
   def apply(attribute: String, `type`: ThemeAttrAndroid): ThemeAttributeBackgroundPropType = {
-    val __obj = js.Dynamic.literal(attribute = attribute)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeAttributeBackgroundPropType]
   }
 }

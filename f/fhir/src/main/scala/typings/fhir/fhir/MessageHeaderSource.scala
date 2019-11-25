@@ -65,21 +65,21 @@ object MessageHeaderSource {
     software: String = null,
     version: String = null
   ): MessageHeaderSource = {
-    val __obj = js.Dynamic.literal(endpoint = endpoint)
-    if (_endpoint != null) __obj.updateDynamic("_endpoint")(_endpoint)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_name != null) __obj.updateDynamic("_name")(_name)
-    if (_software != null) __obj.updateDynamic("_software")(_software)
-    if (_version != null) __obj.updateDynamic("_version")(_version)
-    if (contact != null) __obj.updateDynamic("contact")(contact)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (software != null) __obj.updateDynamic("software")(software)
-    if (version != null) __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any])
+    if (_endpoint != null) __obj.updateDynamic("_endpoint")(_endpoint.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_name != null) __obj.updateDynamic("_name")(_name.asInstanceOf[js.Any])
+    if (_software != null) __obj.updateDynamic("_software")(_software.asInstanceOf[js.Any])
+    if (_version != null) __obj.updateDynamic("_version")(_version.asInstanceOf[js.Any])
+    if (contact != null) __obj.updateDynamic("contact")(contact.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (software != null) __obj.updateDynamic("software")(software.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageHeaderSource]
   }
 }

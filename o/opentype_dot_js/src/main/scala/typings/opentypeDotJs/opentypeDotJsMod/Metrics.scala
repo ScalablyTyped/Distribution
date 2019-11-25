@@ -23,7 +23,7 @@ object Metrics {
     yMin: Double,
     rightSideBearing: Int | Double = null
   ): Metrics = {
-    val __obj = js.Dynamic.literal(leftSideBearing = leftSideBearing, xMax = xMax, xMin = xMin, yMax = yMax, yMin = yMin)
+    val __obj = js.Dynamic.literal(leftSideBearing = leftSideBearing.asInstanceOf[js.Any], xMax = xMax.asInstanceOf[js.Any], xMin = xMin.asInstanceOf[js.Any], yMax = yMax.asInstanceOf[js.Any], yMin = yMin.asInstanceOf[js.Any])
     if (rightSideBearing != null) __obj.updateDynamic("rightSideBearing")(rightSideBearing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metrics]
   }

@@ -16,7 +16,7 @@ object CordovaPlugins {
   def apply(
     deviceName: typings.cordovaDashPluginDashDeviceDashName.CordovaPluginDeviceName.CordovaPluginDeviceName
   ): CordovaPlugins = {
-    val __obj = js.Dynamic.literal(deviceName = deviceName)
+    val __obj = js.Dynamic.literal(deviceName = deviceName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CordovaPlugins]
   }

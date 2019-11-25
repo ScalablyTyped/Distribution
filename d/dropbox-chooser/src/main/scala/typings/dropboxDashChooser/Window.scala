@@ -13,7 +13,7 @@ object Window {
   @scala.inline
   def apply(Dropbox: Chooser = null): Window = {
     val __obj = js.Dynamic.literal()
-    if (Dropbox != null) __obj.updateDynamic("Dropbox")(Dropbox)
+    if (Dropbox != null) __obj.updateDynamic("Dropbox")(Dropbox.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
 }

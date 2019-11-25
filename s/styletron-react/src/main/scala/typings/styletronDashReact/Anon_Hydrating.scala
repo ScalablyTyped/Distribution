@@ -11,7 +11,7 @@ trait Anon_Hydrating extends js.Object {
 object Anon_Hydrating {
   @scala.inline
   def apply(hydrating: Boolean): Anon_Hydrating = {
-    val __obj = js.Dynamic.literal(hydrating = hydrating)
+    val __obj = js.Dynamic.literal(hydrating = hydrating.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Hydrating]
   }

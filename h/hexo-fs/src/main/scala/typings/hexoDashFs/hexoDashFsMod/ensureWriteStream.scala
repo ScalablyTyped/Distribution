@@ -1,6 +1,5 @@
 package typings.hexoDashFs.hexoDashFsMod
 
-import typings.bluebird.bluebirdMod.^
 import typings.hexoDashFs.Anon_AutoClose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("hexo-fs", "ensureWriteStream")
 @js.native
 object ensureWriteStream extends js.Object {
-  def apply(path: String): ^[typings.gracefulDashFs.gracefulDashFsMod.WriteStream] = js.native
+  def apply(path: String): typings.bluebird.bluebirdMod.^[typings.gracefulDashFs.gracefulDashFsMod.WriteStream] = js.native
   def apply(
     path: String,
     callback: js.Function2[
@@ -17,8 +16,8 @@ object ensureWriteStream extends js.Object {
       /* value */ js.UndefOr[typings.gracefulDashFs.gracefulDashFsMod.WriteStream], 
       Unit
     ]
-  ): ^[typings.gracefulDashFs.gracefulDashFsMod.WriteStream] = js.native
-  def apply(path: String, options: String): ^[typings.gracefulDashFs.gracefulDashFsMod.WriteStream] = js.native
+  ): typings.bluebird.bluebirdMod.^[typings.gracefulDashFs.gracefulDashFsMod.WriteStream] = js.native
+  def apply(path: String, options: String): typings.bluebird.bluebirdMod.^[typings.gracefulDashFs.gracefulDashFsMod.WriteStream] = js.native
   def apply(
     path: String,
     options: String,
@@ -27,8 +26,8 @@ object ensureWriteStream extends js.Object {
       /* value */ js.UndefOr[typings.gracefulDashFs.gracefulDashFsMod.WriteStream], 
       Unit
     ]
-  ): ^[typings.gracefulDashFs.gracefulDashFsMod.WriteStream] = js.native
-  def apply(path: String, options: Anon_AutoClose): ^[typings.gracefulDashFs.gracefulDashFsMod.WriteStream] = js.native
+  ): typings.bluebird.bluebirdMod.^[typings.gracefulDashFs.gracefulDashFsMod.WriteStream] = js.native
+  def apply(path: String, options: Anon_AutoClose): typings.bluebird.bluebirdMod.^[typings.gracefulDashFs.gracefulDashFsMod.WriteStream] = js.native
   def apply(
     path: String,
     options: Anon_AutoClose,
@@ -37,6 +36,6 @@ object ensureWriteStream extends js.Object {
       /* value */ js.UndefOr[typings.gracefulDashFs.gracefulDashFsMod.WriteStream], 
       Unit
     ]
-  ): ^[typings.gracefulDashFs.gracefulDashFsMod.WriteStream] = js.native
+  ): typings.bluebird.bluebirdMod.^[typings.gracefulDashFs.gracefulDashFsMod.WriteStream] = js.native
 }
 

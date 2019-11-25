@@ -11,7 +11,7 @@ trait LocationFeedResponseUsertags extends js.Object {
 object LocationFeedResponseUsertags {
   @scala.inline
   def apply(in: js.Array[LocationFeedResponseInItem]): LocationFeedResponseUsertags = {
-    val __obj = js.Dynamic.literal(in = in)
+    val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LocationFeedResponseUsertags]
   }

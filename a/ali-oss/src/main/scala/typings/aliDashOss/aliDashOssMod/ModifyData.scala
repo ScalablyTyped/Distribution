@@ -13,7 +13,7 @@ trait ModifyData extends js.Object {
 object ModifyData {
   @scala.inline
   def apply(etag: String, lastModified: String): ModifyData = {
-    val __obj = js.Dynamic.literal(etag = etag, lastModified = lastModified)
+    val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], lastModified = lastModified.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ModifyData]
   }

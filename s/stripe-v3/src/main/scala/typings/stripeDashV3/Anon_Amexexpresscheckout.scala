@@ -35,13 +35,13 @@ object Anon_Amexexpresscheckout {
   ): Anon_Amexexpresscheckout = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (amex_express_checkout != null) __obj.updateDynamic("amex_express_checkout")(amex_express_checkout)
-    if (apple_pay != null) __obj.updateDynamic("apple_pay")(apple_pay)
-    if (dynamic_last4 != null) __obj.updateDynamic("dynamic_last4")(dynamic_last4)
-    if (google_pay != null) __obj.updateDynamic("google_pay")(google_pay)
-    if (masterpass != null) __obj.updateDynamic("masterpass")(masterpass)
-    if (samsung_pay != null) __obj.updateDynamic("samsung_pay")(samsung_pay)
-    if (visa_checkout != null) __obj.updateDynamic("visa_checkout")(visa_checkout)
+    if (amex_express_checkout != null) __obj.updateDynamic("amex_express_checkout")(amex_express_checkout.asInstanceOf[js.Any])
+    if (apple_pay != null) __obj.updateDynamic("apple_pay")(apple_pay.asInstanceOf[js.Any])
+    if (dynamic_last4 != null) __obj.updateDynamic("dynamic_last4")(dynamic_last4.asInstanceOf[js.Any])
+    if (google_pay != null) __obj.updateDynamic("google_pay")(google_pay.asInstanceOf[js.Any])
+    if (masterpass != null) __obj.updateDynamic("masterpass")(masterpass.asInstanceOf[js.Any])
+    if (samsung_pay != null) __obj.updateDynamic("samsung_pay")(samsung_pay.asInstanceOf[js.Any])
+    if (visa_checkout != null) __obj.updateDynamic("visa_checkout")(visa_checkout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Amexexpresscheckout]
   }
 }

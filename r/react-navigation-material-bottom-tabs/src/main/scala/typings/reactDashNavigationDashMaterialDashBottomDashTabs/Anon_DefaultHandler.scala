@@ -18,7 +18,7 @@ object Anon_DefaultHandler {
     defaultHandler: () => Unit,
     navigation: NavigationTabProp[NavigationRoute[NavigationParams], NavigationParams]
   ): Anon_DefaultHandler = {
-    val __obj = js.Dynamic.literal(defaultHandler = js.Any.fromFunction0(defaultHandler), navigation = navigation)
+    val __obj = js.Dynamic.literal(defaultHandler = js.Any.fromFunction0(defaultHandler), navigation = navigation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DefaultHandler]
   }

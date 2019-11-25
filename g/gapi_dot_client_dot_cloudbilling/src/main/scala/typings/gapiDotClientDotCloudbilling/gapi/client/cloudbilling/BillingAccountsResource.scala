@@ -29,7 +29,7 @@ object BillingAccountsResource {
     list: Anon_AccesstokenAltBearertoken => Request[ListBillingAccountsResponse],
     projects: ProjectsResource
   ): BillingAccountsResource = {
-    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), projects = projects)
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), projects = projects.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BillingAccountsResource]
   }

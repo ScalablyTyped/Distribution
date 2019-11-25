@@ -17,9 +17,9 @@ object GameRequestDialogResponse {
     error_code: Int | Double = null,
     error_message: String = null
   ): GameRequestDialogResponse = {
-    val __obj = js.Dynamic.literal(request = request, to = to)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     if (error_code != null) __obj.updateDynamic("error_code")(error_code.asInstanceOf[js.Any])
-    if (error_message != null) __obj.updateDynamic("error_message")(error_message)
+    if (error_message != null) __obj.updateDynamic("error_message")(error_message.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameRequestDialogResponse]
   }
 }

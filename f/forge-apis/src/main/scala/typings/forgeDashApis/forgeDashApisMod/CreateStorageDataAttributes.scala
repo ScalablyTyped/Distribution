@@ -12,7 +12,7 @@ trait CreateStorageDataAttributes extends js.Object {
 object CreateStorageDataAttributes {
   @scala.inline
   def apply(extension: BaseAttributesExtensionObject, name: String): CreateStorageDataAttributes = {
-    val __obj = js.Dynamic.literal(extension = extension, name = name)
+    val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CreateStorageDataAttributes]
   }

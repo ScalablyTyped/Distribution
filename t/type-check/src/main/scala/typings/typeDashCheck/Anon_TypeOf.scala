@@ -12,7 +12,7 @@ trait Anon_TypeOf extends js.Object {
 object Anon_TypeOf {
   @scala.inline
   def apply(typeOf: String, validate: js.Any => js.Any): Anon_TypeOf = {
-    val __obj = js.Dynamic.literal(typeOf = typeOf, validate = js.Any.fromFunction1(validate))
+    val __obj = js.Dynamic.literal(typeOf = typeOf.asInstanceOf[js.Any], validate = js.Any.fromFunction1(validate))
   
     __obj.asInstanceOf[Anon_TypeOf]
   }

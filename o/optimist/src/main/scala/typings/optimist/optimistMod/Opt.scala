@@ -23,10 +23,10 @@ object Opt {
   ): Opt = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (demand != null) __obj.updateDynamic("demand")(demand.asInstanceOf[js.Any])
-    if (describe != null) __obj.updateDynamic("describe")(describe)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (describe != null) __obj.updateDynamic("describe")(describe.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Opt]
   }
 }

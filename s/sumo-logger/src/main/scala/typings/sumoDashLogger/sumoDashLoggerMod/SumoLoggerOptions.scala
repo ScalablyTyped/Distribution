@@ -81,16 +81,16 @@ object SumoLoggerOptions {
     sourceCategory: String = null,
     sourceName: String = null
   ): SumoLoggerOptions = {
-    val __obj = js.Dynamic.literal(endpoint = endpoint, onError = js.Any.fromFunction0(onError), onSuccess = js.Any.fromFunction0(onSuccess))
-    if (clientUrl != null) __obj.updateDynamic("clientUrl")(clientUrl)
-    if (!js.isUndefined(graphite)) __obj.updateDynamic("graphite")(graphite)
-    if (hostName != null) __obj.updateDynamic("hostName")(hostName)
+    val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], onError = js.Any.fromFunction0(onError), onSuccess = js.Any.fromFunction0(onSuccess))
+    if (clientUrl != null) __obj.updateDynamic("clientUrl")(clientUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(graphite)) __obj.updateDynamic("graphite")(graphite.asInstanceOf[js.Any])
+    if (hostName != null) __obj.updateDynamic("hostName")(hostName.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
-    if (!js.isUndefined(sendErrors)) __obj.updateDynamic("sendErrors")(sendErrors)
-    if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey)
-    if (sourceCategory != null) __obj.updateDynamic("sourceCategory")(sourceCategory)
-    if (sourceName != null) __obj.updateDynamic("sourceName")(sourceName)
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendErrors)) __obj.updateDynamic("sendErrors")(sendErrors.asInstanceOf[js.Any])
+    if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey.asInstanceOf[js.Any])
+    if (sourceCategory != null) __obj.updateDynamic("sourceCategory")(sourceCategory.asInstanceOf[js.Any])
+    if (sourceName != null) __obj.updateDynamic("sourceName")(sourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SumoLoggerOptions]
   }
 }

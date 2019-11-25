@@ -30,8 +30,8 @@ object Client {
     setCookie: (String, String) => Client,
     cookies: Cookies = null
   ): Client = {
-    val __obj = js.Dynamic.literal(getCookie = js.Any.fromFunction1(getCookie), headersProcessors = headersProcessors, isSecure = isSecure, methodCall = js.Any.fromFunction3(methodCall), options = options, setCookie = js.Any.fromFunction2(setCookie))
-    if (cookies != null) __obj.updateDynamic("cookies")(cookies)
+    val __obj = js.Dynamic.literal(getCookie = js.Any.fromFunction1(getCookie), headersProcessors = headersProcessors.asInstanceOf[js.Any], isSecure = isSecure.asInstanceOf[js.Any], methodCall = js.Any.fromFunction3(methodCall), options = options.asInstanceOf[js.Any], setCookie = js.Any.fromFunction2(setCookie))
+    if (cookies != null) __obj.updateDynamic("cookies")(cookies.asInstanceOf[js.Any])
     __obj.asInstanceOf[Client]
   }
 }

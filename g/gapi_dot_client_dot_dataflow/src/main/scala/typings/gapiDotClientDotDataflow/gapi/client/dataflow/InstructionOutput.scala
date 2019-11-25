@@ -43,12 +43,12 @@ object InstructionOutput {
     systemName: String = null
   ): InstructionOutput = {
     val __obj = js.Dynamic.literal()
-    if (codec != null) __obj.updateDynamic("codec")(codec)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(onlyCountKeyBytes)) __obj.updateDynamic("onlyCountKeyBytes")(onlyCountKeyBytes)
-    if (!js.isUndefined(onlyCountValueBytes)) __obj.updateDynamic("onlyCountValueBytes")(onlyCountValueBytes)
-    if (originalName != null) __obj.updateDynamic("originalName")(originalName)
-    if (systemName != null) __obj.updateDynamic("systemName")(systemName)
+    if (codec != null) __obj.updateDynamic("codec")(codec.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyCountKeyBytes)) __obj.updateDynamic("onlyCountKeyBytes")(onlyCountKeyBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyCountValueBytes)) __obj.updateDynamic("onlyCountValueBytes")(onlyCountValueBytes.asInstanceOf[js.Any])
+    if (originalName != null) __obj.updateDynamic("originalName")(originalName.asInstanceOf[js.Any])
+    if (systemName != null) __obj.updateDynamic("systemName")(systemName.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstructionOutput]
   }
 }

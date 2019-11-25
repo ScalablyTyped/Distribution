@@ -15,8 +15,8 @@ trait Anon_Geometries extends js.Object {
 object Anon_Geometries {
   @scala.inline
   def apply(geometries: js.Array[Polygon[js.Object] | MultiPolygon[js.Object]], `type`: GeometryCollection): Anon_Geometries = {
-    val __obj = js.Dynamic.literal(geometries = geometries)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(geometries = geometries.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Geometries]
   }
 }

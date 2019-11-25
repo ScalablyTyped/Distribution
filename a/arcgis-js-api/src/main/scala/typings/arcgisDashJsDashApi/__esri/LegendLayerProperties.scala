@@ -29,9 +29,9 @@ object LegendLayerProperties {
   @scala.inline
   def apply(layerId: String = null, subLayerIds: js.Array[String] = null, title: String = null): LegendLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (layerId != null) __obj.updateDynamic("layerId")(layerId)
-    if (subLayerIds != null) __obj.updateDynamic("subLayerIds")(subLayerIds)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
+    if (subLayerIds != null) __obj.updateDynamic("subLayerIds")(subLayerIds.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendLayerProperties]
   }
 }

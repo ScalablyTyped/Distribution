@@ -13,7 +13,7 @@ trait MediaRepositoryConfigureSidecarResponseRootObject extends js.Object {
 object MediaRepositoryConfigureSidecarResponseRootObject {
   @scala.inline
   def apply(client_sidecar_id: String, media: MediaRepositoryConfigureSidecarResponseMedia, status: String): MediaRepositoryConfigureSidecarResponseRootObject = {
-    val __obj = js.Dynamic.literal(client_sidecar_id = client_sidecar_id, media = media, status = status)
+    val __obj = js.Dynamic.literal(client_sidecar_id = client_sidecar_id.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaRepositoryConfigureSidecarResponseRootObject]
   }

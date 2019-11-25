@@ -28,10 +28,10 @@ object Index {
     state: String = null
   ): Index = {
     val __obj = js.Dynamic.literal()
-    if (collectionId != null) __obj.updateDynamic("collectionId")(collectionId)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (collectionId != null) __obj.updateDynamic("collectionId")(collectionId.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Index]
   }
 }

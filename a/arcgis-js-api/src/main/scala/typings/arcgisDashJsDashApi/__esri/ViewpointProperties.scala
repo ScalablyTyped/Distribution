@@ -44,10 +44,10 @@ object ViewpointProperties {
     targetGeometry: GeometryProperties = null
   ): ViewpointProperties = {
     val __obj = js.Dynamic.literal()
-    if (camera != null) __obj.updateDynamic("camera")(camera)
+    if (camera != null) __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (targetGeometry != null) __obj.updateDynamic("targetGeometry")(targetGeometry)
+    if (targetGeometry != null) __obj.updateDynamic("targetGeometry")(targetGeometry.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewpointProperties]
   }
 }

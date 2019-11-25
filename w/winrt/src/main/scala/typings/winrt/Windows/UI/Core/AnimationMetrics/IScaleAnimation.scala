@@ -27,8 +27,8 @@ object IScaleAnimation {
     normalizedOrigin: Point,
     `type`: PropertyAnimationType
   ): IScaleAnimation = {
-    val __obj = js.Dynamic.literal(control1 = control1, control2 = control2, delay = delay, duration = duration, finalScaleX = finalScaleX, finalScaleY = finalScaleY, initialScaleX = initialScaleX, initialScaleY = initialScaleY, normalizedOrigin = normalizedOrigin)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(control1 = control1.asInstanceOf[js.Any], control2 = control2.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], finalScaleX = finalScaleX.asInstanceOf[js.Any], finalScaleY = finalScaleY.asInstanceOf[js.Any], initialScaleX = initialScaleX.asInstanceOf[js.Any], initialScaleY = initialScaleY.asInstanceOf[js.Any], normalizedOrigin = normalizedOrigin.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IScaleAnimation]
   }
 }

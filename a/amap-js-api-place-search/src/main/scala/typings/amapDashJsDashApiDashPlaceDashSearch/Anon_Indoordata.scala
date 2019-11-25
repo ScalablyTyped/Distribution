@@ -13,7 +13,7 @@ trait Anon_Indoordata extends js.Object {
 object Anon_Indoordata {
   @scala.inline
   def apply(indoor_data: Anon_Cpid, indoor_map: `true`): Anon_Indoordata = {
-    val __obj = js.Dynamic.literal(indoor_data = indoor_data, indoor_map = indoor_map)
+    val __obj = js.Dynamic.literal(indoor_data = indoor_data.asInstanceOf[js.Any], indoor_map = indoor_map.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Indoordata]
   }

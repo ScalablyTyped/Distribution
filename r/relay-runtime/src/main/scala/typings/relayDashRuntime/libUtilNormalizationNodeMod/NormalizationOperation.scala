@@ -20,7 +20,7 @@ object NormalizationOperation {
     name: String,
     selections: js.Array[NormalizationSelection]
   ): NormalizationOperation = {
-    val __obj = js.Dynamic.literal(argumentDefinitions = argumentDefinitions, kind = kind, name = name, selections = selections)
+    val __obj = js.Dynamic.literal(argumentDefinitions = argumentDefinitions.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NormalizationOperation]
   }

@@ -532,8 +532,8 @@ object TraverseOptions {
     if (YieldExpression != null) __obj.updateDynamic("YieldExpression")(YieldExpression.asInstanceOf[js.Any])
     if (enter != null) __obj.updateDynamic("enter")(js.Any.fromFunction2(enter))
     if (exit != null) __obj.updateDynamic("exit")(js.Any.fromFunction2(exit))
-    if (!js.isUndefined(noScope)) __obj.updateDynamic("noScope")(noScope)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (!js.isUndefined(noScope)) __obj.updateDynamic("noScope")(noScope.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[TraverseOptions[S]]
   }
 }

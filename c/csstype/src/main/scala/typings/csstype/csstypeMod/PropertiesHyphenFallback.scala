@@ -83,11 +83,11 @@ object PropertiesHyphenFallback {
     `vector-effect`: VectorEffectProperty | js.Array[VectorEffectProperty] = null
   ): PropertiesHyphenFallback[TLength] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, ObsoletePropertiesHyphenFallback)
-    js.Dynamic.global.Object.assign(__obj, StandardLonghandPropertiesHyphenFallback)
-    js.Dynamic.global.Object.assign(__obj, StandardShorthandPropertiesHyphenFallback)
-    js.Dynamic.global.Object.assign(__obj, VendorLonghandPropertiesHyphenFallback)
-    js.Dynamic.global.Object.assign(__obj, VendorShorthandPropertiesHyphenFallback)
+    if (ObsoletePropertiesHyphenFallback != null) js.Dynamic.global.Object.assign(__obj, ObsoletePropertiesHyphenFallback)
+    if (StandardLonghandPropertiesHyphenFallback != null) js.Dynamic.global.Object.assign(__obj, StandardLonghandPropertiesHyphenFallback)
+    if (StandardShorthandPropertiesHyphenFallback != null) js.Dynamic.global.Object.assign(__obj, StandardShorthandPropertiesHyphenFallback)
+    if (VendorLonghandPropertiesHyphenFallback != null) js.Dynamic.global.Object.assign(__obj, VendorLonghandPropertiesHyphenFallback)
+    if (VendorShorthandPropertiesHyphenFallback != null) js.Dynamic.global.Object.assign(__obj, VendorShorthandPropertiesHyphenFallback)
     if (`alignment-baseline` != null) __obj.updateDynamic("alignment-baseline")(`alignment-baseline`.asInstanceOf[js.Any])
     if (`baseline-shift` != null) __obj.updateDynamic("baseline-shift")(`baseline-shift`.asInstanceOf[js.Any])
     if (`clip-rule` != null) __obj.updateDynamic("clip-rule")(`clip-rule`.asInstanceOf[js.Any])

@@ -14,7 +14,7 @@ trait CpuCurrentSpeedData extends js.Object {
 object CpuCurrentSpeedData {
   @scala.inline
   def apply(avg: String, cores: js.Array[Double], max: String, min: String): CpuCurrentSpeedData = {
-    val __obj = js.Dynamic.literal(avg = avg, cores = cores, max = max, min = min)
+    val __obj = js.Dynamic.literal(avg = avg.asInstanceOf[js.Any], cores = cores.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CpuCurrentSpeedData]
   }

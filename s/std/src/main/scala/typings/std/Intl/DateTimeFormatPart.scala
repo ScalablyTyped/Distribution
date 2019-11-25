@@ -12,8 +12,8 @@ trait DateTimeFormatPart extends js.Object {
 object DateTimeFormatPart {
   @scala.inline
   def apply(`type`: DateTimeFormatPartTypes, value: java.lang.String): DateTimeFormatPart = {
-    val __obj = js.Dynamic.literal(value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimeFormatPart]
   }
 }

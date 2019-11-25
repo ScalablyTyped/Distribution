@@ -35,15 +35,15 @@ object HeaderProps {
     yearSelectOffset: Int | Double = null,
     yearSelectTotal: Int | Double = null
   ): HeaderProps = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
     if (headerRender != null) __obj.updateDynamic("headerRender")(js.Any.fromFunction1(headerRender))
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (onTypeChange != null) __obj.updateDynamic("onTypeChange")(js.Any.fromFunction1(onTypeChange))
     if (onValueChange != null) __obj.updateDynamic("onValueChange")(js.Any.fromFunction1(onValueChange))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (validRange != null) __obj.updateDynamic("validRange")(validRange)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (validRange != null) __obj.updateDynamic("validRange")(validRange.asInstanceOf[js.Any])
     if (yearSelectOffset != null) __obj.updateDynamic("yearSelectOffset")(yearSelectOffset.asInstanceOf[js.Any])
     if (yearSelectTotal != null) __obj.updateDynamic("yearSelectTotal")(yearSelectTotal.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderProps]

@@ -26,9 +26,9 @@ object GetAttributeOpts {
   @scala.inline
   def apply(name: String = null, shortName: String = null, `type`: String = null): GetAttributeOpts = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (shortName != null) __obj.updateDynamic("shortName")(shortName)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (shortName != null) __obj.updateDynamic("shortName")(shortName.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAttributeOpts]
   }
 }

@@ -31,9 +31,9 @@ object ConnectionInvokeOptions {
     signal: AbortSignal = null,
     transferList: js.Array[_] = null
   ): ConnectionInvokeOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (signal != null) __obj.updateDynamic("signal")(signal)
-    if (transferList != null) __obj.updateDynamic("transferList")(transferList)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
+    if (transferList != null) __obj.updateDynamic("transferList")(transferList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionInvokeOptions]
   }
 }

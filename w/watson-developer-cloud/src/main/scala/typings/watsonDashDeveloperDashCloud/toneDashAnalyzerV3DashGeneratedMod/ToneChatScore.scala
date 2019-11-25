@@ -17,7 +17,7 @@ trait ToneChatScore extends js.Object {
 object ToneChatScore {
   @scala.inline
   def apply(score: Double, tone_id: String, tone_name: String): ToneChatScore = {
-    val __obj = js.Dynamic.literal(score = score, tone_id = tone_id, tone_name = tone_name)
+    val __obj = js.Dynamic.literal(score = score.asInstanceOf[js.Any], tone_id = tone_id.asInstanceOf[js.Any], tone_name = tone_name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ToneChatScore]
   }

@@ -9,7 +9,7 @@ trait atNivoStreamProps {
   def ResponsiveStreamProps: typings.atNivoStream.atNivoStreamMod.StreamProps.type = typings.atNivoStream.atNivoStreamMod.StreamProps
   type ResponsiveStreamProps[T] = typings.atNivoStream.atNivoStreamMod.StreamProps[T]
   @scala.inline
-  def StreamProps: typings.atNivoStream.StreamPropsTDimensions.type = typings.atNivoStream.StreamPropsTDimensions
+  def StreamProps: StreamPropsTDimensions.type = typings.atNivoStream.StreamPropsTDimensions
   type StreamProps[T] = StreamPropsTDimensions[T]
   @scala.inline
   def StreamDotsItemProps: typings.atNivoStream.atNivoStreamMod.StreamDotsItemProps.type = typings.atNivoStream.atNivoStreamMod.StreamDotsItemProps

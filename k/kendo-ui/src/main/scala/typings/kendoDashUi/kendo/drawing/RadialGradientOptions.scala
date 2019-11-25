@@ -22,9 +22,9 @@ object RadialGradientOptions {
   ): RadialGradientOptions = {
     val __obj = js.Dynamic.literal()
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (stops != null) __obj.updateDynamic("stops")(stops)
+    if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadialGradientOptions]
   }
 }

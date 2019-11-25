@@ -41,10 +41,10 @@ object Document {
     `type`: String = null
   ): Document = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (gcsContentUri != null) __obj.updateDynamic("gcsContentUri")(gcsContentUri)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (gcsContentUri != null) __obj.updateDynamic("gcsContentUri")(gcsContentUri.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Document]
   }
 }

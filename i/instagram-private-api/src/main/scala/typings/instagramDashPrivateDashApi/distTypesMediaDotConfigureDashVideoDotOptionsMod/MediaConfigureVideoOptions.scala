@@ -38,15 +38,15 @@ object MediaConfigureVideoOptions {
     posting_latitude: String = null,
     posting_longitude: String = null
   ): MediaConfigureVideoOptions = {
-    val __obj = js.Dynamic.literal(height = height, length = length, upload_id = upload_id, width = width)
-    if (!js.isUndefined(audio_muted)) __obj.updateDynamic("audio_muted")(audio_muted)
-    if (clips != null) __obj.updateDynamic("clips")(clips)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], upload_id = upload_id.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (!js.isUndefined(audio_muted)) __obj.updateDynamic("audio_muted")(audio_muted.asInstanceOf[js.Any])
+    if (clips != null) __obj.updateDynamic("clips")(clips.asInstanceOf[js.Any])
     if (geotag_enabled != null) __obj.updateDynamic("geotag_enabled")(geotag_enabled.asInstanceOf[js.Any])
-    if (media_latitude != null) __obj.updateDynamic("media_latitude")(media_latitude)
-    if (media_longitude != null) __obj.updateDynamic("media_longitude")(media_longitude)
+    if (media_latitude != null) __obj.updateDynamic("media_latitude")(media_latitude.asInstanceOf[js.Any])
+    if (media_longitude != null) __obj.updateDynamic("media_longitude")(media_longitude.asInstanceOf[js.Any])
     if (poster_frame_index != null) __obj.updateDynamic("poster_frame_index")(poster_frame_index.asInstanceOf[js.Any])
-    if (posting_latitude != null) __obj.updateDynamic("posting_latitude")(posting_latitude)
-    if (posting_longitude != null) __obj.updateDynamic("posting_longitude")(posting_longitude)
+    if (posting_latitude != null) __obj.updateDynamic("posting_latitude")(posting_latitude.asInstanceOf[js.Any])
+    if (posting_longitude != null) __obj.updateDynamic("posting_longitude")(posting_longitude.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaConfigureVideoOptions]
   }
 }

@@ -25,12 +25,12 @@ object Options {
     skipCapabilities: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (analogPins != null) __obj.updateDynamic("analogPins")(analogPins)
-    if (pins != null) __obj.updateDynamic("pins")(pins)
+    if (analogPins != null) __obj.updateDynamic("analogPins")(analogPins.asInstanceOf[js.Any])
+    if (pins != null) __obj.updateDynamic("pins")(pins.asInstanceOf[js.Any])
     if (reportVersionTimeout != null) __obj.updateDynamic("reportVersionTimeout")(reportVersionTimeout.asInstanceOf[js.Any])
     if (samplingInterval != null) __obj.updateDynamic("samplingInterval")(samplingInterval.asInstanceOf[js.Any])
-    if (serialport != null) __obj.updateDynamic("serialport")(serialport)
-    if (!js.isUndefined(skipCapabilities)) __obj.updateDynamic("skipCapabilities")(skipCapabilities)
+    if (serialport != null) __obj.updateDynamic("serialport")(serialport.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipCapabilities)) __obj.updateDynamic("skipCapabilities")(skipCapabilities.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

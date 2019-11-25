@@ -3,16 +3,6 @@ package typings.webgme.Blobs
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.JSON
 import typings.webgme.Core.DataObject
-import typings.webgme.Fn_CallbackArray
-import typings.webgme.Fn_CallbackData
-import typings.webgme.Fn_CallbackMetadataDescriptor
-import typings.webgme.Fn_CallbackMetadataHashArtifact
-import typings.webgme.Fn_CallbackMetadataHashContentString
-import typings.webgme.Fn_CallbackMetadataHashJSON
-import typings.webgme.Fn_CallbackMetadataHashMetadata
-import typings.webgme.Fn_CallbackMetadataHashSubpath
-import typings.webgme.Fn_CallbackMetadataHashSubpathContent
-import typings.webgme.Fn_CallbackNameO
 import typings.webgme.GmeClasses.Artifact
 import typings.webgme.GmeCommon.Content
 import typings.webgme.GmeCommon.ContentString
@@ -32,31 +22,6 @@ class BlobClient protected () extends js.Object {
     * @param paramters
     */
   def this(parameters: BlobClientParamters) = this()
-  /**
-    * Retrieves the Artifact from the blob storage.
-    * @param metadataHash hash associated with the artifact.
-    * @return resolved with Artifact artifact.
-    */
-  @JSName("getArtifact")
-  var getArtifact_Original: Fn_CallbackMetadataHashArtifact = js.native
-  @JSName("getMetadata")
-  var getMetadata_Original: Fn_CallbackMetadataHashMetadata = js.native
-  @JSName("getObjectAsJSON")
-  var getObjectAsJSON_Original: Fn_CallbackMetadataHashJSON = js.native
-  @JSName("getObjectAsString")
-  var getObjectAsString_Original: Fn_CallbackMetadataHashContentString = js.native
-  @JSName("getObject")
-  var getObject_Original: Fn_CallbackMetadataHashSubpathContent = js.native
-  @JSName("getSubObject")
-  var getSubObject_Original: Fn_CallbackMetadataHashSubpath = js.native
-  @JSName("putFile")
-  var putFile_Original: Fn_CallbackData = js.native
-  @JSName("putFiles")
-  var putFiles_Original: Fn_CallbackNameO = js.native
-  @JSName("putMetadata")
-  var putMetadata_Original: Fn_CallbackMetadataDescriptor = js.native
-  @JSName("saveAllArtifacts")
-  var saveAllArtifacts_Original: Fn_CallbackArray = js.native
   /**
     * Creates a new artifact 
     * and adds it to array of artifacts of the instance.

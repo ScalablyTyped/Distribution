@@ -18,9 +18,9 @@ object ISwizOptions {
     stripSerializerType: js.UndefOr[Boolean] = js.undefined
   ): ISwizOptions = {
     val __obj = js.Dynamic.literal()
-    if (`for` != null) __obj.updateDynamic("for")(`for`)
-    if (!js.isUndefined(stripNulls)) __obj.updateDynamic("stripNulls")(stripNulls)
-    if (!js.isUndefined(stripSerializerType)) __obj.updateDynamic("stripSerializerType")(stripSerializerType)
+    if (`for` != null) __obj.updateDynamic("for")(`for`.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripNulls)) __obj.updateDynamic("stripNulls")(stripNulls.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripSerializerType)) __obj.updateDynamic("stripSerializerType")(stripSerializerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISwizOptions]
   }
 }

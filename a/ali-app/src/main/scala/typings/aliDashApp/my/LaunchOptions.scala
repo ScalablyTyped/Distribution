@@ -46,9 +46,9 @@ object LaunchOptions {
     scene: Double,
     shareTicket: String
   ): LaunchOptions = {
-    val __obj = js.Dynamic.literal(path = path, query = query, referrerInfo = referrerInfo, scene = scene, shareTicket = shareTicket)
-    __obj.updateDynamic("referrerInfo.appId")(`referrerInfo.appId`)
-    __obj.updateDynamic("referrerInfo.extraData")(`referrerInfo.extraData`)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], referrerInfo = referrerInfo.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], shareTicket = shareTicket.asInstanceOf[js.Any])
+    __obj.updateDynamic("referrerInfo.appId")(`referrerInfo.appId`.asInstanceOf[js.Any])
+    __obj.updateDynamic("referrerInfo.extraData")(`referrerInfo.extraData`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchOptions]
   }
 }

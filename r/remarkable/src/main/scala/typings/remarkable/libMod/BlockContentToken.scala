@@ -27,11 +27,11 @@ object BlockContentToken {
     content: String = null,
     lines: js.Tuple2[Double, Double] = null
   ): BlockContentToken = {
-    val __obj = js.Dynamic.literal(level = level)
-    __obj.updateDynamic("type")(`type`)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (lines != null) __obj.updateDynamic("lines")(lines)
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockContentToken]
   }
 }

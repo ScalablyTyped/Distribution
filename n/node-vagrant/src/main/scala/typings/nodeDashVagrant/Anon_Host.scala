@@ -22,11 +22,11 @@ object Anon_Host {
     user: String = null
   ): Anon_Host = {
     val __obj = js.Dynamic.literal()
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
-    if (port != null) __obj.updateDynamic("port")(port)
-    if (private_key != null) __obj.updateDynamic("private_key")(private_key)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (private_key != null) __obj.updateDynamic("private_key")(private_key.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Host]
   }
 }

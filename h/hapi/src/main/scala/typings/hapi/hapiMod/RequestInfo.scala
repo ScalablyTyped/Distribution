@@ -45,7 +45,7 @@ object RequestInfo {
     remotePort: String,
     responded: Double
   ): RequestInfo = {
-    val __obj = js.Dynamic.literal(acceptEncoding = acceptEncoding, completed = completed, cors = cors, host = host, hostname = hostname, id = id, received = received, referrer = referrer, remoteAddress = remoteAddress, remotePort = remotePort, responded = responded)
+    val __obj = js.Dynamic.literal(acceptEncoding = acceptEncoding.asInstanceOf[js.Any], completed = completed.asInstanceOf[js.Any], cors = cors.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], received = received.asInstanceOf[js.Any], referrer = referrer.asInstanceOf[js.Any], remoteAddress = remoteAddress.asInstanceOf[js.Any], remotePort = remotePort.asInstanceOf[js.Any], responded = responded.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RequestInfo]
   }

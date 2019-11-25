@@ -18,9 +18,9 @@ object FloodlightActivitiesGenerateTagResponse {
     kind: String = null
   ): FloodlightActivitiesGenerateTagResponse = {
     val __obj = js.Dynamic.literal()
-    if (floodlightActivityTag != null) __obj.updateDynamic("floodlightActivityTag")(floodlightActivityTag)
-    if (globalSiteTagGlobalSnippet != null) __obj.updateDynamic("globalSiteTagGlobalSnippet")(globalSiteTagGlobalSnippet)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (floodlightActivityTag != null) __obj.updateDynamic("floodlightActivityTag")(floodlightActivityTag.asInstanceOf[js.Any])
+    if (globalSiteTagGlobalSnippet != null) __obj.updateDynamic("globalSiteTagGlobalSnippet")(globalSiteTagGlobalSnippet.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[FloodlightActivitiesGenerateTagResponse]
   }
 }

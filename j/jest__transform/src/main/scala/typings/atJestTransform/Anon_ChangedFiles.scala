@@ -14,7 +14,7 @@ object Anon_ChangedFiles {
   @scala.inline
   def apply(changedFiles: Set[Path] = null): Anon_ChangedFiles = {
     val __obj = js.Dynamic.literal()
-    if (changedFiles != null) __obj.updateDynamic("changedFiles")(changedFiles)
+    if (changedFiles != null) __obj.updateDynamic("changedFiles")(changedFiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChangedFiles]
   }
 }

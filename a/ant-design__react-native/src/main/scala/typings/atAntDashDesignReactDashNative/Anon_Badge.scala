@@ -37,7 +37,7 @@ object Anon_Badge {
     tabbar: RegisteredStyle[ViewStyle],
     tabs: RegisteredStyle[ViewStyle]
   ): Anon_Badge = {
-    val __obj = js.Dynamic.literal(badge = badge, badgeText = badgeText, barIcon = barIcon, barItem = barItem, barItemSelected = barItemSelected, barItemTitle = barItemTitle, content = content, contentItem = contentItem, contentItemSelected = contentItemSelected, tabbar = tabbar, tabs = tabs)
+    val __obj = js.Dynamic.literal(badge = badge.asInstanceOf[js.Any], badgeText = badgeText.asInstanceOf[js.Any], barIcon = barIcon.asInstanceOf[js.Any], barItem = barItem.asInstanceOf[js.Any], barItemSelected = barItemSelected.asInstanceOf[js.Any], barItemTitle = barItemTitle.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentItem = contentItem.asInstanceOf[js.Any], contentItemSelected = contentItemSelected.asInstanceOf[js.Any], tabbar = tabbar.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Badge]
   }

@@ -17,9 +17,9 @@ object IPanelState {
     id: String = null,
     isFooterSticky: js.UndefOr[Boolean] = js.undefined
   ): IPanelState = {
-    val __obj = js.Dynamic.literal(visibility = visibility)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(isFooterSticky)) __obj.updateDynamic("isFooterSticky")(isFooterSticky)
+    val __obj = js.Dynamic.literal(visibility = visibility.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFooterSticky)) __obj.updateDynamic("isFooterSticky")(isFooterSticky.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPanelState]
   }
 }

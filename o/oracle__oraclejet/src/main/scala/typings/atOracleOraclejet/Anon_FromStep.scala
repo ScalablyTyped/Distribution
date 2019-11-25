@@ -14,8 +14,8 @@ trait Anon_FromStep
 object Anon_FromStep {
   @scala.inline
   def apply(fromStep: String, toStep: String, StringDictionary: /* propName */ StringDictionary[js.Any] = null): Anon_FromStep = {
-    val __obj = js.Dynamic.literal(fromStep = fromStep, toStep = toStep)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(fromStep = fromStep.asInstanceOf[js.Any], toStep = toStep.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_FromStep]
   }
 }

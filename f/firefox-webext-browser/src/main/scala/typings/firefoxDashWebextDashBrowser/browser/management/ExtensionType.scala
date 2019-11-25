@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait ExtensionType extends js.Object
 
+object ExtensionType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def extension: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.extension = this.cast("extension")
+  @scala.inline
+  def theme: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.theme = this.cast("theme")
+}
+

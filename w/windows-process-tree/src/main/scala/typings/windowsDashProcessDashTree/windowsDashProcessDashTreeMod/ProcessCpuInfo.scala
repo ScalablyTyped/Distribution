@@ -18,8 +18,8 @@ object ProcessCpuInfo {
     cpu: Int | Double = null,
     memory: Int | Double = null
   ): ProcessCpuInfo = {
-    val __obj = js.Dynamic.literal(name = name, pid = pid, ppid = ppid)
-    if (commandLine != null) __obj.updateDynamic("commandLine")(commandLine)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], ppid = ppid.asInstanceOf[js.Any])
+    if (commandLine != null) __obj.updateDynamic("commandLine")(commandLine.asInstanceOf[js.Any])
     if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
     if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessCpuInfo]

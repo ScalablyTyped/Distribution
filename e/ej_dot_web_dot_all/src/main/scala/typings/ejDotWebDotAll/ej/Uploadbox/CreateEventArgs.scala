@@ -17,8 +17,8 @@ object CreateEventArgs {
   @scala.inline
   def apply(model: js.Any = null, `type`: String = null): CreateEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateEventArgs]
   }
 }

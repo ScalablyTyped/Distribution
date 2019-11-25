@@ -27,7 +27,7 @@ object ViewConfig {
     path: js.Array[PathNode],
     viewDecl: _ViewDeclaration
   ): ViewConfig = {
-    val __obj = js.Dynamic.literal($id = $id, load = js.Any.fromFunction0(load), loaded = loaded, path = path, viewDecl = viewDecl)
+    val __obj = js.Dynamic.literal($id = $id.asInstanceOf[js.Any], load = js.Any.fromFunction0(load), loaded = loaded.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], viewDecl = viewDecl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ViewConfig]
   }

@@ -1,33 +1,43 @@
 package typings.waterline.waterlineMod
 
-import typings.waterline.Fn_Criteria
-import typings.waterline.Fn_DestroyedInstance
-import typings.waterline.Fn_NewlyCreatedRecord
-import typings.waterline.Fn_Next
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LifecycleCallbacks extends js.Object {
-  var afterCreate: js.UndefOr[js.Array[Fn_NewlyCreatedRecord] | Fn_NewlyCreatedRecord] = js.undefined
-  var afterDestroy: js.UndefOr[js.Array[Fn_DestroyedInstance] | Fn_DestroyedInstance] = js.undefined
-  var afterUpdate: js.UndefOr[js.Array[Fn_Next] | Fn_Next] = js.undefined
-  var beforeCreate: js.UndefOr[js.Array[Fn_Next] | Fn_Next] = js.undefined
-  var beforeDestroy: js.UndefOr[js.Array[Fn_Criteria] | Fn_Next] = js.undefined
-  var beforeUpdate: js.UndefOr[js.Array[Fn_Next] | Fn_Next] = js.undefined
-  var beforeValidate: js.UndefOr[js.Array[Fn_Next] | Fn_Next] = js.undefined
+  var afterCreate: js.UndefOr[
+    (js.Array[js.Function2[/* newlyCreatedRecord */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* newlyCreatedRecord */ js.Any, /* next */ js.Function, Unit])
+  ] = js.undefined
+  var afterDestroy: js.UndefOr[
+    (js.Array[js.Function2[/* destroyedInstance */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* destroyedInstance */ js.Any, /* next */ js.Function, Unit])
+  ] = js.undefined
+  var afterUpdate: js.UndefOr[
+    (js.Array[js.Function2[/* valuesToUpdate */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit])
+  ] = js.undefined
+  var beforeCreate: js.UndefOr[
+    (js.Array[js.Function2[/* values */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* vaues */ js.Any, /* next */ js.Function, Unit])
+  ] = js.undefined
+  var beforeDestroy: js.UndefOr[
+    (js.Array[js.Function2[/* criteria */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit])
+  ] = js.undefined
+  var beforeUpdate: js.UndefOr[
+    (js.Array[js.Function2[/* valuesToUpdate */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit])
+  ] = js.undefined
+  var beforeValidate: js.UndefOr[
+    (js.Array[js.Function2[/* vaues */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* vaues */ js.Any, /* next */ js.Function, Unit])
+  ] = js.undefined
 }
 
 object LifecycleCallbacks {
   @scala.inline
   def apply(
-    afterCreate: js.Array[Fn_NewlyCreatedRecord] | Fn_NewlyCreatedRecord = null,
-    afterDestroy: js.Array[Fn_DestroyedInstance] | Fn_DestroyedInstance = null,
-    afterUpdate: js.Array[Fn_Next] | Fn_Next = null,
-    beforeCreate: js.Array[Fn_Next] | Fn_Next = null,
-    beforeDestroy: js.Array[Fn_Criteria] | Fn_Next = null,
-    beforeUpdate: js.Array[Fn_Next] | Fn_Next = null,
-    beforeValidate: js.Array[Fn_Next] | Fn_Next = null
+    afterCreate: (js.Array[js.Function2[/* newlyCreatedRecord */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* newlyCreatedRecord */ js.Any, /* next */ js.Function, Unit]) = null,
+    afterDestroy: (js.Array[js.Function2[/* destroyedInstance */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* destroyedInstance */ js.Any, /* next */ js.Function, Unit]) = null,
+    afterUpdate: (js.Array[js.Function2[/* valuesToUpdate */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit]) = null,
+    beforeCreate: (js.Array[js.Function2[/* values */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* vaues */ js.Any, /* next */ js.Function, Unit]) = null,
+    beforeDestroy: (js.Array[js.Function2[/* criteria */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit]) = null,
+    beforeUpdate: (js.Array[js.Function2[/* valuesToUpdate */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit]) = null,
+    beforeValidate: (js.Array[js.Function2[/* vaues */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* vaues */ js.Any, /* next */ js.Function, Unit]) = null
   ): LifecycleCallbacks = {
     val __obj = js.Dynamic.literal()
     if (afterCreate != null) __obj.updateDynamic("afterCreate")(afterCreate.asInstanceOf[js.Any])

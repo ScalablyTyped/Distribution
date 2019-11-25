@@ -231,7 +231,7 @@ object DefineValidateOptions {
     notNull: Boolean | Anon_MsgString = null
   ): DefineValidateOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (contains != null) __obj.updateDynamic("contains")(contains.asInstanceOf[js.Any])
     if (equals != null) __obj.updateDynamic("equals")(equals.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])

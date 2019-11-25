@@ -16,7 +16,7 @@ trait _UnmarshalledInventoryDestination extends _InventoryDestination {
 object _UnmarshalledInventoryDestination {
   @scala.inline
   def apply(S3BucketDestination: _UnmarshalledInventoryS3BucketDestination): _UnmarshalledInventoryDestination = {
-    val __obj = js.Dynamic.literal(S3BucketDestination = S3BucketDestination)
+    val __obj = js.Dynamic.literal(S3BucketDestination = S3BucketDestination.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_UnmarshalledInventoryDestination]
   }

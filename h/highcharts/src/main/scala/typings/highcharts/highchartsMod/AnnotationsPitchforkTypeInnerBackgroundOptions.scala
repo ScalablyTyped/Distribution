@@ -33,9 +33,9 @@ object AnnotationsPitchforkTypeInnerBackgroundOptions {
     strokeWidth: Int | Double = null
   ): AnnotationsPitchforkTypeInnerBackgroundOptions = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (snap != null) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsPitchforkTypeInnerBackgroundOptions]
   }

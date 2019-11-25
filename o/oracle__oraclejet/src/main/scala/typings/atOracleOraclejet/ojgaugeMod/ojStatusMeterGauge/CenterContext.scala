@@ -16,7 +16,7 @@ trait CenterContext extends js.Object {
 object CenterContext {
   @scala.inline
   def apply(componentElement: Element, innerBounds: Bounds, metricLabel: String, outerBounds: Bounds): CenterContext = {
-    val __obj = js.Dynamic.literal(componentElement = componentElement, innerBounds = innerBounds, metricLabel = metricLabel, outerBounds = outerBounds)
+    val __obj = js.Dynamic.literal(componentElement = componentElement.asInstanceOf[js.Any], innerBounds = innerBounds.asInstanceOf[js.Any], metricLabel = metricLabel.asInstanceOf[js.Any], outerBounds = outerBounds.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CenterContext]
   }

@@ -1,6 +1,5 @@
 package typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod
 
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +14,17 @@ object LocationLink extends js.Object {
     * @param targetSelectionRange The span of the symbol definition at the target.
     * @param originSelectionRange The span of the symbol being defined in the originating source file.
     */
-  def create(targetUri: String, targetRange: Range, targetSelectionRange: Range): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.LocationLink = js.native
-  def create(targetUri: String, targetRange: Range, targetSelectionRange: Range, originSelectionRange: Range): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.LocationLink = js.native
+  def create(
+    targetUri: String,
+    targetRange: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range,
+    targetSelectionRange: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range
+  ): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.LocationLink = js.native
+  def create(
+    targetUri: String,
+    targetRange: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range,
+    targetSelectionRange: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range,
+    originSelectionRange: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range
+  ): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.LocationLink = js.native
   /**
     * Checks whether the given literal conforms to the [LocationLink](#LocationLink) interface.
     */

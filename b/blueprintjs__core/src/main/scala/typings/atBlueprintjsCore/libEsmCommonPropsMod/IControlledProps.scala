@@ -20,9 +20,9 @@ object IControlledProps {
   @scala.inline
   def apply(defaultValue: String = null, onChange: FormEvent[HTMLElement] => Unit = null, value: String = null): IControlledProps = {
     val __obj = js.Dynamic.literal()
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IControlledProps]
   }
 }

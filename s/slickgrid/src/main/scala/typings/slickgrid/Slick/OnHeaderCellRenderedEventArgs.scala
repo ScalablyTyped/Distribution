@@ -14,7 +14,7 @@ trait OnHeaderCellRenderedEventArgs[T /* <: SlickData */] extends GridEventArgs[
 object OnHeaderCellRenderedEventArgs {
   @scala.inline
   def apply[T /* <: SlickData */](column: Column[T], grid: Grid[T], node: HTMLElement): OnHeaderCellRenderedEventArgs[T] = {
-    val __obj = js.Dynamic.literal(column = column, grid = grid, node = node)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OnHeaderCellRenderedEventArgs[T]]
   }

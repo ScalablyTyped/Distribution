@@ -23,9 +23,9 @@ object RewriteRules {
     replace: String = null
   ): RewriteRules = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("match")(`match`)
+    __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     if (fn != null) __obj.updateDynamic("fn")(js.Any.fromFunction3(fn))
-    if (replace != null) __obj.updateDynamic("replace")(replace)
+    if (replace != null) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
     __obj.asInstanceOf[RewriteRules]
   }
 }

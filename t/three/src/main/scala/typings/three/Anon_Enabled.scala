@@ -25,7 +25,7 @@ object Anon_Enabled {
     offsetY: Double,
     width: Double
   ): Anon_Enabled = {
-    val __obj = js.Dynamic.literal(enabled = enabled, fullHeight = fullHeight, fullWidth = fullWidth, height = height, offsetX = offsetX, offsetY = offsetY, width = width)
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], fullHeight = fullHeight.asInstanceOf[js.Any], fullWidth = fullWidth.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Enabled]
   }

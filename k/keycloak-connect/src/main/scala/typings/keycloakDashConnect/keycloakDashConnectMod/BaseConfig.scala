@@ -12,7 +12,7 @@ object BaseConfig {
   @scala.inline
   def apply(scope: js.Any = null): BaseConfig = {
     val __obj = js.Dynamic.literal()
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseConfig]
   }
 }

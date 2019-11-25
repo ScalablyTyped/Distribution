@@ -1,7 +1,6 @@
 package typings.dojo.dojox.calc
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValue
 import typings.dojo.dojoStrings.aFloatingPane
 import typings.dojo.dojoStrings.funcMaker
 import typings.dojo.dojoStrings.grapher
@@ -58,10 +57,34 @@ class GraphPro () extends Standard {
   @JSName("set")
   def set_grapher(property: grapher, value: js.Object): Unit = js.native
   @JSName("watch")
-  def watch_aFloatingPane(property: aFloatingPane, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_aFloatingPane(
+    property: aFloatingPane,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_funcMaker(property: funcMaker, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_funcMaker(
+    property: funcMaker,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_grapher(property: grapher, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_grapher(
+    property: grapher,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

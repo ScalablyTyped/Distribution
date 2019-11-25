@@ -30,14 +30,14 @@ object Anon_ClearColor {
     textureScale: Int | Double = null,
     uniforms: js.Object = null
   ): Anon_ClearColor = {
-    val __obj = js.Dynamic.literal(fragmentShader = fragmentShader)
-    if (clearColor != null) __obj.updateDynamic("clearColor")(clearColor)
-    if (!js.isUndefined(forcePowerOfTwo)) __obj.updateDynamic("forcePowerOfTwo")(forcePowerOfTwo)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (pixelFormat != null) __obj.updateDynamic("pixelFormat")(pixelFormat)
-    if (scissorRectangle != null) __obj.updateDynamic("scissorRectangle")(scissorRectangle)
+    val __obj = js.Dynamic.literal(fragmentShader = fragmentShader.asInstanceOf[js.Any])
+    if (clearColor != null) __obj.updateDynamic("clearColor")(clearColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(forcePowerOfTwo)) __obj.updateDynamic("forcePowerOfTwo")(forcePowerOfTwo.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (pixelFormat != null) __obj.updateDynamic("pixelFormat")(pixelFormat.asInstanceOf[js.Any])
+    if (scissorRectangle != null) __obj.updateDynamic("scissorRectangle")(scissorRectangle.asInstanceOf[js.Any])
     if (textureScale != null) __obj.updateDynamic("textureScale")(textureScale.asInstanceOf[js.Any])
-    if (uniforms != null) __obj.updateDynamic("uniforms")(uniforms)
+    if (uniforms != null) __obj.updateDynamic("uniforms")(uniforms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClearColor]
   }
 }

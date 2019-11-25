@@ -21,10 +21,10 @@ object Anon_Items {
     shipping_method: String = null,
     shipping_phone_number: String = null
   ): Anon_Items = {
-    val __obj = js.Dynamic.literal(items = items)
-    if (shipping_address != null) __obj.updateDynamic("shipping_address")(shipping_address)
-    if (shipping_method != null) __obj.updateDynamic("shipping_method")(shipping_method)
-    if (shipping_phone_number != null) __obj.updateDynamic("shipping_phone_number")(shipping_phone_number)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
+    if (shipping_address != null) __obj.updateDynamic("shipping_address")(shipping_address.asInstanceOf[js.Any])
+    if (shipping_method != null) __obj.updateDynamic("shipping_method")(shipping_method.asInstanceOf[js.Any])
+    if (shipping_phone_number != null) __obj.updateDynamic("shipping_phone_number")(shipping_phone_number.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Items]
   }
 }

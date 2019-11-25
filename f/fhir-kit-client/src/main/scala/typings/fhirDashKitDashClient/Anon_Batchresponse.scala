@@ -13,7 +13,7 @@ object Anon_Batchresponse {
   @scala.inline
   def apply(`type`: `batch-response`): Anon_Batchresponse = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Batchresponse]
   }
 }

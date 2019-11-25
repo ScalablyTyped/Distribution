@@ -19,9 +19,9 @@ object SharedDescriptionFields {
   @scala.inline
   def apply(bandwidth: Anon_AS = null, connection: Anon_Ip = null, description: String = null): SharedDescriptionFields = {
     val __obj = js.Dynamic.literal()
-    if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth)
-    if (connection != null) __obj.updateDynamic("connection")(connection)
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth.asInstanceOf[js.Any])
+    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedDescriptionFields]
   }
 }

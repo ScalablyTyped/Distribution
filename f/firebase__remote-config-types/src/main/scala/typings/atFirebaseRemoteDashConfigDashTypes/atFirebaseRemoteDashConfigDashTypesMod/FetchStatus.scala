@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait FetchStatus extends js.Object
 
+object FetchStatus {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def failure: typings.atFirebaseRemoteDashConfigDashTypes.atFirebaseRemoteDashConfigDashTypesStrings.failure = this.cast("failure")
+  @scala.inline
+  def `no-fetch-yet`: typings.atFirebaseRemoteDashConfigDashTypes.atFirebaseRemoteDashConfigDashTypesStrings.`no-fetch-yet` = this.cast("no-fetch-yet")
+  @scala.inline
+  def success: typings.atFirebaseRemoteDashConfigDashTypes.atFirebaseRemoteDashConfigDashTypesStrings.success = this.cast("success")
+  @scala.inline
+  def throttle: typings.atFirebaseRemoteDashConfigDashTypes.atFirebaseRemoteDashConfigDashTypesStrings.throttle = this.cast("throttle")
+}
+

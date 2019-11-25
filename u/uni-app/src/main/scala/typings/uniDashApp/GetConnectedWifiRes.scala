@@ -15,7 +15,7 @@ object GetConnectedWifiRes {
   @scala.inline
   def apply(wifi: WiFi = null): GetConnectedWifiRes = {
     val __obj = js.Dynamic.literal()
-    if (wifi != null) __obj.updateDynamic("wifi")(wifi)
+    if (wifi != null) __obj.updateDynamic("wifi")(wifi.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConnectedWifiRes]
   }
 }

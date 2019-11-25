@@ -45,7 +45,7 @@ object PathVisitor {
     visitor: js.Any,
     wasChangeReported: () => js.Any
   ): PathVisitor = {
-    val __obj = js.Dynamic.literal(AbortRequest = AbortRequest, Context = Context, _abortRequested = _abortRequested, _changeReported = _changeReported, _methodNameTable = _methodNameTable, _reusableContextStack = _reusableContextStack, _shouldVisitComments = _shouldVisitComments, _visiting = _visiting, abort = js.Any.fromFunction0(abort), acquireContext = js.Any.fromFunction1(acquireContext), releaseContext = js.Any.fromFunction1(releaseContext), reportChanged = js.Any.fromFunction0(reportChanged), reset = js.Any.fromFunction1(reset), visit = js.Any.fromFunction1(visit), visitWithoutReset = js.Any.fromFunction1(visitWithoutReset), visitor = visitor, wasChangeReported = js.Any.fromFunction0(wasChangeReported))
+    val __obj = js.Dynamic.literal(AbortRequest = AbortRequest.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any], _abortRequested = _abortRequested.asInstanceOf[js.Any], _changeReported = _changeReported.asInstanceOf[js.Any], _methodNameTable = _methodNameTable.asInstanceOf[js.Any], _reusableContextStack = _reusableContextStack.asInstanceOf[js.Any], _shouldVisitComments = _shouldVisitComments.asInstanceOf[js.Any], _visiting = _visiting.asInstanceOf[js.Any], abort = js.Any.fromFunction0(abort), acquireContext = js.Any.fromFunction1(acquireContext), releaseContext = js.Any.fromFunction1(releaseContext), reportChanged = js.Any.fromFunction0(reportChanged), reset = js.Any.fromFunction1(reset), visit = js.Any.fromFunction1(visit), visitWithoutReset = js.Any.fromFunction1(visitWithoutReset), visitor = visitor.asInstanceOf[js.Any], wasChangeReported = js.Any.fromFunction0(wasChangeReported))
   
     __obj.asInstanceOf[PathVisitor]
   }

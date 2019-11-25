@@ -1,6 +1,5 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
-import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouterEventDetail
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,11 +9,25 @@ trait IonRouter extends js.Object {
   /**
     * Emitted when the route had changed
     */
-  var onIonRouteDidChange: js.UndefOr[js.Function1[/* event */ CustomEvent[RouterEventDetail], Unit]] = js.undefined
+  var onIonRouteDidChange: js.UndefOr[
+    js.Function1[
+      /* event */ CustomEvent[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterEventDetail */ _
+      ], 
+      Unit
+    ]
+  ] = js.undefined
   /**
     * Event emitted when the route is about to change
     */
-  var onIonRouteWillChange: js.UndefOr[js.Function1[/* event */ CustomEvent[RouterEventDetail], Unit]] = js.undefined
+  var onIonRouteWillChange: js.UndefOr[
+    js.Function1[
+      /* event */ CustomEvent[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterEventDetail */ _
+      ], 
+      Unit
+    ]
+  ] = js.undefined
   /**
     * By default `ion-router` will match the routes at the root path ("/"). That can be changed when
     */
@@ -28,16 +41,20 @@ trait IonRouter extends js.Object {
 object IonRouter {
   @scala.inline
   def apply(
-    onIonRouteDidChange: /* event */ CustomEvent[RouterEventDetail] => Unit = null,
-    onIonRouteWillChange: /* event */ CustomEvent[RouterEventDetail] => Unit = null,
+    onIonRouteDidChange: /* event */ CustomEvent[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterEventDetail */ _
+    ] => Unit = null,
+    onIonRouteWillChange: /* event */ CustomEvent[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterEventDetail */ _
+    ] => Unit = null,
     root: String = null,
     useHash: js.UndefOr[Boolean] = js.undefined
   ): IonRouter = {
     val __obj = js.Dynamic.literal()
     if (onIonRouteDidChange != null) __obj.updateDynamic("onIonRouteDidChange")(js.Any.fromFunction1(onIonRouteDidChange))
     if (onIonRouteWillChange != null) __obj.updateDynamic("onIonRouteWillChange")(js.Any.fromFunction1(onIonRouteWillChange))
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (!js.isUndefined(useHash)) __obj.updateDynamic("useHash")(useHash)
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHash)) __obj.updateDynamic("useHash")(useHash.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRouter]
   }
 }

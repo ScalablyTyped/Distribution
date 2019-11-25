@@ -14,8 +14,8 @@ trait RangeSelectionChangedEvent extends AgGridEvent {
 object RangeSelectionChangedEvent {
   @scala.inline
   def apply(api: GridApi, columnApi: ColumnApi, finished: Boolean, started: Boolean, `type`: String): RangeSelectionChangedEvent = {
-    val __obj = js.Dynamic.literal(api = api, columnApi = columnApi, finished = finished, started = started)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], finished = finished.asInstanceOf[js.Any], started = started.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeSelectionChangedEvent]
   }
 }

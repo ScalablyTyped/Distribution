@@ -13,8 +13,8 @@ trait ZipFSOptions extends js.Object {
 object ZipFSOptions {
   @scala.inline
   def apply(zipData: Buffer, name: String = null): ZipFSOptions = {
-    val __obj = js.Dynamic.literal(zipData = zipData)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(zipData = zipData.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZipFSOptions]
   }
 }

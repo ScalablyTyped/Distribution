@@ -23,8 +23,8 @@ object PathExpression {
     parts: js.Array[String],
     `type`: typings.handlebars.handlebarsStrings.PathExpression
   ): PathExpression = {
-    val __obj = js.Dynamic.literal(data = data, depth = depth, loc = loc, original = original, parts = parts)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathExpression]
   }
 }

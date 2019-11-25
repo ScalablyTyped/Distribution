@@ -32,10 +32,10 @@ object ContextMenuSettings {
     menuItems: js.Array[_] = null
   ): ContextMenuSettings = {
     val __obj = js.Dynamic.literal()
-    if (customMenuItems != null) __obj.updateDynamic("customMenuItems")(customMenuItems)
-    if (disableDefaultItems != null) __obj.updateDynamic("disableDefaultItems")(disableDefaultItems)
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
-    if (menuItems != null) __obj.updateDynamic("menuItems")(menuItems)
+    if (customMenuItems != null) __obj.updateDynamic("customMenuItems")(customMenuItems.asInstanceOf[js.Any])
+    if (disableDefaultItems != null) __obj.updateDynamic("disableDefaultItems")(disableDefaultItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    if (menuItems != null) __obj.updateDynamic("menuItems")(menuItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuSettings]
   }
 }

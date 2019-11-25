@@ -31,8 +31,8 @@ object SoftwareConfig {
   @scala.inline
   def apply(imageVersion: String = null, properties: Record[String, String] = null): SoftwareConfig = {
     val __obj = js.Dynamic.literal()
-    if (imageVersion != null) __obj.updateDynamic("imageVersion")(imageVersion)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (imageVersion != null) __obj.updateDynamic("imageVersion")(imageVersion.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[SoftwareConfig]
   }
 }

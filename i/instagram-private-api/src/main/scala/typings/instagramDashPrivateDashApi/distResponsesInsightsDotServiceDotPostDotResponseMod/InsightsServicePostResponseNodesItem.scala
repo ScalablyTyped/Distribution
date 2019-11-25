@@ -13,8 +13,8 @@ trait InsightsServicePostResponseNodesItem extends js.Object {
 object InsightsServicePostResponseNodesItem {
   @scala.inline
   def apply(__typename: String, value: Double, name: String = null): InsightsServicePostResponseNodesItem = {
-    val __obj = js.Dynamic.literal(__typename = __typename, value = value)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(__typename = __typename.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightsServicePostResponseNodesItem]
   }
 }

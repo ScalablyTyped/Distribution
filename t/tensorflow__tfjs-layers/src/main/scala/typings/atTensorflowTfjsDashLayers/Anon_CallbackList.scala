@@ -14,7 +14,7 @@ trait Anon_CallbackList extends js.Object {
 object Anon_CallbackList {
   @scala.inline
   def apply(callbackList: CallbackList, history: History): Anon_CallbackList = {
-    val __obj = js.Dynamic.literal(callbackList = callbackList, history = history)
+    val __obj = js.Dynamic.literal(callbackList = callbackList.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CallbackList]
   }

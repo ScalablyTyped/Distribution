@@ -22,11 +22,11 @@ object ConfigOptions {
     version: String = null
   ): ConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (output != null) __obj.updateDynamic("output")(output)
-    if (!js.isUndefined(perform_api_call)) __obj.updateDynamic("perform_api_call")(perform_api_call)
-    if (!js.isUndefined(secured)) __obj.updateDynamic("secured")(secured)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
+    if (!js.isUndefined(perform_api_call)) __obj.updateDynamic("perform_api_call")(perform_api_call.asInstanceOf[js.Any])
+    if (!js.isUndefined(secured)) __obj.updateDynamic("secured")(secured.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }
 }

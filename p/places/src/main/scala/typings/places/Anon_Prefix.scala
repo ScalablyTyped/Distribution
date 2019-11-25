@@ -12,7 +12,7 @@ trait Anon_Prefix extends js.Object {
 object Anon_Prefix {
   @scala.inline
   def apply(prefix: js.Any, root: String): Anon_Prefix = {
-    val __obj = js.Dynamic.literal(prefix = prefix, root = root)
+    val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Prefix]
   }

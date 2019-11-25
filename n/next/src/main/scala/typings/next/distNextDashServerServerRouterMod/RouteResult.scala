@@ -12,8 +12,8 @@ trait RouteResult extends js.Object {
 object RouteResult {
   @scala.inline
   def apply(finished: Boolean, pathname: String = null): RouteResult = {
-    val __obj = js.Dynamic.literal(finished = finished)
-    if (pathname != null) __obj.updateDynamic("pathname")(pathname)
+    val __obj = js.Dynamic.literal(finished = finished.asInstanceOf[js.Any])
+    if (pathname != null) __obj.updateDynamic("pathname")(pathname.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteResult]
   }
 }

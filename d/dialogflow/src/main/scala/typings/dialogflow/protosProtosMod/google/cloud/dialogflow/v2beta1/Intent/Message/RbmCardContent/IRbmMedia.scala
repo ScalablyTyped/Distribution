@@ -19,9 +19,9 @@ object IRbmMedia {
   @scala.inline
   def apply(fileUri: String = null, height: Height = null, thumbnailUri: String = null): IRbmMedia = {
     val __obj = js.Dynamic.literal()
-    if (fileUri != null) __obj.updateDynamic("fileUri")(fileUri)
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (thumbnailUri != null) __obj.updateDynamic("thumbnailUri")(thumbnailUri)
+    if (fileUri != null) __obj.updateDynamic("fileUri")(fileUri.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (thumbnailUri != null) __obj.updateDynamic("thumbnailUri")(thumbnailUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRbmMedia]
   }
 }

@@ -65,12 +65,12 @@ object HistogramConfig {
     standardDeviation: Int | Double = null,
     standardDeviationCount: Int | Double = null
   ): HistogramConfig = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (average != null) __obj.updateDynamic("average")(average.asInstanceOf[js.Any])
     if (barCreatedFunction != null) __obj.updateDynamic("barCreatedFunction")(js.Any.fromFunction2(barCreatedFunction))
-    if (bins != null) __obj.updateDynamic("bins")(bins)
+    if (bins != null) __obj.updateDynamic("bins")(bins.asInstanceOf[js.Any])
     if (dataLineCreatedFunction != null) __obj.updateDynamic("dataLineCreatedFunction")(js.Any.fromFunction3(dataLineCreatedFunction))
-    if (dataLines != null) __obj.updateDynamic("dataLines")(dataLines)
+    if (dataLines != null) __obj.updateDynamic("dataLines")(dataLines.asInstanceOf[js.Any])
     if (standardDeviation != null) __obj.updateDynamic("standardDeviation")(standardDeviation.asInstanceOf[js.Any])
     if (standardDeviationCount != null) __obj.updateDynamic("standardDeviationCount")(standardDeviationCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistogramConfig]

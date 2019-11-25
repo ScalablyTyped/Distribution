@@ -14,7 +14,7 @@ object DebounceOptions {
   @scala.inline
   def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, maxWait: Int | Double = null): DebounceOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (maxWait != null) __obj.updateDynamic("maxWait")(maxWait.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebounceOptions]
   }

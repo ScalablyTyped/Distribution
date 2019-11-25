@@ -33,9 +33,9 @@ object OlapXmlaDataSourceOptionsRequestOptions {
     withCredentials: js.UndefOr[Boolean] = js.undefined
   ): OlapXmlaDataSourceOptionsRequestOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend)
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend.asInstanceOf[js.Any])
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[OlapXmlaDataSourceOptionsRequestOptions]
   }
 }

@@ -24,12 +24,12 @@ object StockChartLegendItemHoverEvent {
     seriesIndex: Int | Double = null,
     text: String = null
   ): StockChartLegendItemHoverEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (element != null) __obj.updateDynamic("element")(element)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (pointIndex != null) __obj.updateDynamic("pointIndex")(pointIndex.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series)
+    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     if (seriesIndex != null) __obj.updateDynamic("seriesIndex")(seriesIndex.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartLegendItemHoverEvent]
   }
 }

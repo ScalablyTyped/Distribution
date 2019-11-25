@@ -30,7 +30,7 @@ object IssuesLockParams {
     repo: String,
     lock_reason: `off-topic` | (`too heated`) | resolved | spam = null
   ): IssuesLockParams = {
-    val __obj = js.Dynamic.literal(issue_number = issue_number, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(issue_number = issue_number.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     if (lock_reason != null) __obj.updateDynamic("lock_reason")(lock_reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuesLockParams]
   }

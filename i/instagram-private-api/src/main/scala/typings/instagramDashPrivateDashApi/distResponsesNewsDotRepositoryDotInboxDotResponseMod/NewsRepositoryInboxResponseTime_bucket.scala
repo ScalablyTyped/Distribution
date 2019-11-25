@@ -12,7 +12,7 @@ trait NewsRepositoryInboxResponseTime_bucket extends js.Object {
 object NewsRepositoryInboxResponseTime_bucket {
   @scala.inline
   def apply(headers: js.Array[String], indices: js.Array[Double]): NewsRepositoryInboxResponseTime_bucket = {
-    val __obj = js.Dynamic.literal(headers = headers, indices = indices)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], indices = indices.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NewsRepositoryInboxResponseTime_bucket]
   }

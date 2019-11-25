@@ -14,8 +14,8 @@ trait TagFrameHeader extends js.Object {
 object TagFrameHeader {
   @scala.inline
   def apply(headerSize: Double, id: String, size: Double, flags: TagFrameFlags = null): TagFrameHeader = {
-    val __obj = js.Dynamic.literal(headerSize = headerSize, id = id, size = size)
-    if (flags != null) __obj.updateDynamic("flags")(flags)
+    val __obj = js.Dynamic.literal(headerSize = headerSize.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagFrameHeader]
   }
 }

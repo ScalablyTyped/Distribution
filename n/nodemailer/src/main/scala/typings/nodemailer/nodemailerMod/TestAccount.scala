@@ -17,7 +17,7 @@ trait TestAccount extends js.Object {
 object TestAccount {
   @scala.inline
   def apply(imap: Anon_Host, pass: String, pop3: Anon_Host, smtp: Anon_Host, user: String, web: String): TestAccount = {
-    val __obj = js.Dynamic.literal(imap = imap, pass = pass, pop3 = pop3, smtp = smtp, user = user, web = web)
+    val __obj = js.Dynamic.literal(imap = imap.asInstanceOf[js.Any], pass = pass.asInstanceOf[js.Any], pop3 = pop3.asInstanceOf[js.Any], smtp = smtp.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], web = web.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestAccount]
   }

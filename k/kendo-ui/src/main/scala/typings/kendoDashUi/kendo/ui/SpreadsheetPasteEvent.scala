@@ -19,9 +19,9 @@ object SpreadsheetPasteEvent {
     clipboardContent: js.Any = null,
     range: Range = null
   ): SpreadsheetPasteEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (clipboardContent != null) __obj.updateDynamic("clipboardContent")(clipboardContent)
-    if (range != null) __obj.updateDynamic("range")(range)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (clipboardContent != null) __obj.updateDynamic("clipboardContent")(clipboardContent.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetPasteEvent]
   }
 }

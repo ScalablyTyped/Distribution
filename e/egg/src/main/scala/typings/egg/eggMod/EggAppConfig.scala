@@ -154,8 +154,8 @@ object EggAppConfig {
     StringDictionary: /* prop */ StringDictionary[js.Any] = null,
     serverTimeout: Int | Double = null
   ): EggAppConfig = {
-    val __obj = js.Dynamic.literal(HOME = HOME, baseDir = baseDir, bodyParser = bodyParser, customLoader = customLoader, customLogger = customLogger, development = development, dump = dump, env = env.asInstanceOf[js.Any], hostHeaders = hostHeaders, httpclient = httpclient, i18n = i18n, ipHeaders = ipHeaders, jsonp = jsonp, keys = keys, logger = logger, middleware = middleware, name = name, onClientError = js.Any.fromFunction3(onClientError), pkg = pkg, rundir = rundir, security = security, siteFile = siteFile, static = static, watcher = watcher, workerStartTimeout = workerStartTimeout)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(HOME = HOME.asInstanceOf[js.Any], baseDir = baseDir.asInstanceOf[js.Any], bodyParser = bodyParser.asInstanceOf[js.Any], customLoader = customLoader.asInstanceOf[js.Any], customLogger = customLogger.asInstanceOf[js.Any], development = development.asInstanceOf[js.Any], dump = dump.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], hostHeaders = hostHeaders.asInstanceOf[js.Any], httpclient = httpclient.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], ipHeaders = ipHeaders.asInstanceOf[js.Any], jsonp = jsonp.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], middleware = middleware.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onClientError = js.Any.fromFunction3(onClientError), pkg = pkg.asInstanceOf[js.Any], rundir = rundir.asInstanceOf[js.Any], security = security.asInstanceOf[js.Any], siteFile = siteFile.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], watcher = watcher.asInstanceOf[js.Any], workerStartTimeout = workerStartTimeout.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (serverTimeout != null) __obj.updateDynamic("serverTimeout")(serverTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[EggAppConfig]
   }

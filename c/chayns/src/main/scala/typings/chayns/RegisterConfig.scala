@@ -30,12 +30,12 @@ object RegisterConfig {
     strictMode: js.UndefOr[Boolean] = js.undefined
   ): RegisterConfig = {
     val __obj = js.Dynamic.literal()
-    if (appName != null) __obj.updateDynamic("appName")(appName)
-    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize)
-    if (callbackPrefix != null) __obj.updateDynamic("callbackPrefix")(callbackPrefix)
-    if (cssPrefix != null) __obj.updateDynamic("cssPrefix")(cssPrefix)
+    if (appName != null) __obj.updateDynamic("appName")(appName.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.asInstanceOf[js.Any])
+    if (callbackPrefix != null) __obj.updateDynamic("callbackPrefix")(callbackPrefix.asInstanceOf[js.Any])
+    if (cssPrefix != null) __obj.updateDynamic("cssPrefix")(cssPrefix.asInstanceOf[js.Any])
     if (initialHeight != null) __obj.updateDynamic("initialHeight")(initialHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictMode)) __obj.updateDynamic("strictMode")(strictMode)
+    if (!js.isUndefined(strictMode)) __obj.updateDynamic("strictMode")(strictMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterConfig]
   }
 }

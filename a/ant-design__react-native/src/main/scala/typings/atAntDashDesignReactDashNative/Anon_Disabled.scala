@@ -27,7 +27,7 @@ object Anon_Disabled {
     placeholder: String,
     showCancelButton: Boolean
   ): Anon_Disabled = {
-    val __obj = js.Dynamic.literal(disabled = disabled, onBlur = js.Any.fromFunction0(onBlur), onChange = js.Any.fromFunction0(onChange), onClear = js.Any.fromFunction0(onClear), onFocus = js.Any.fromFunction0(onFocus), onSubmit = js.Any.fromFunction0(onSubmit), placeholder = placeholder, showCancelButton = showCancelButton)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], onBlur = js.Any.fromFunction0(onBlur), onChange = js.Any.fromFunction0(onChange), onClear = js.Any.fromFunction0(onClear), onFocus = js.Any.fromFunction0(onFocus), onSubmit = js.Any.fromFunction0(onSubmit), placeholder = placeholder.asInstanceOf[js.Any], showCancelButton = showCancelButton.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Disabled]
   }

@@ -16,7 +16,7 @@ class Configuration () extends js.Object
 object Configuration extends js.Object {
   @JSName("start")
   var start_Original: js.Function0[
-    /* import warning: ImportType.apply Failed type conversion: typeof Configuration */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof Configuration */ js.Any
   ] = js.native
   /**
     * Sets the state of console and logger tracking (enabled by default for third-party loggers only)
@@ -97,6 +97,6 @@ object Configuration extends js.Object {
   def setUseDiskRetryCaching(value: Boolean): TypeofClassConfiguration = js.native
   def setUseDiskRetryCaching(value: Boolean, resendInterval: Double): TypeofClassConfiguration = js.native
   def setUseDiskRetryCaching(value: Boolean, resendInterval: Double, maxBytesOnDisk: Double): TypeofClassConfiguration = js.native
-  def start(): /* import warning: ImportType.apply Failed type conversion: typeof Configuration */ js.Any = js.native
+  def start(): /* import warning: importer.ImportType#apply Failed type conversion: typeof Configuration */ js.Any = js.native
 }
 

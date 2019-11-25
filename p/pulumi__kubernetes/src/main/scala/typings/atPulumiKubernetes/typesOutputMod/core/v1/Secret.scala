@@ -59,8 +59,8 @@ object Secret {
     stringData: StringDictionary[String],
     `type`: String
   ): Secret = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion, data = data, kind = kind, metadata = metadata, stringData = stringData)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], stringData = stringData.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Secret]
   }
 }

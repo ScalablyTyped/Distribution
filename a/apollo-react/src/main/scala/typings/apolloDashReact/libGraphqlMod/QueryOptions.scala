@@ -30,14 +30,14 @@ object QueryOptions {
     variables: StringDictionary[js.Any] = null
   ): QueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forceFetch)) __obj.updateDynamic("forceFetch")(forceFetch)
-    if (fragments != null) __obj.updateDynamic("fragments")(fragments)
-    if (!js.isUndefined(noFetch)) __obj.updateDynamic("noFetch")(noFetch)
+    if (!js.isUndefined(forceFetch)) __obj.updateDynamic("forceFetch")(forceFetch.asInstanceOf[js.Any])
+    if (fragments != null) __obj.updateDynamic("fragments")(fragments.asInstanceOf[js.Any])
+    if (!js.isUndefined(noFetch)) __obj.updateDynamic("noFetch")(noFetch.asInstanceOf[js.Any])
     if (pollInterval != null) __obj.updateDynamic("pollInterval")(pollInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnPartialData)) __obj.updateDynamic("returnPartialData")(returnPartialData)
-    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip)
-    if (!js.isUndefined(ssr)) __obj.updateDynamic("ssr")(ssr)
-    if (variables != null) __obj.updateDynamic("variables")(variables)
+    if (!js.isUndefined(returnPartialData)) __obj.updateDynamic("returnPartialData")(returnPartialData.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssr)) __obj.updateDynamic("ssr")(ssr.asInstanceOf[js.Any])
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptions]
   }
 }

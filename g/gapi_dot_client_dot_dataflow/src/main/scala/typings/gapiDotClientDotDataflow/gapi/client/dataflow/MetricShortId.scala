@@ -19,7 +19,7 @@ object MetricShortId {
   def apply(metricIndex: Int | Double = null, shortId: String = null): MetricShortId = {
     val __obj = js.Dynamic.literal()
     if (metricIndex != null) __obj.updateDynamic("metricIndex")(metricIndex.asInstanceOf[js.Any])
-    if (shortId != null) __obj.updateDynamic("shortId")(shortId)
+    if (shortId != null) __obj.updateDynamic("shortId")(shortId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricShortId]
   }
 }

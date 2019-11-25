@@ -42,12 +42,12 @@ object _EndpointLocation {
     Region: String = null
   ): _EndpointLocation = {
     val __obj = js.Dynamic.literal()
-    if (City != null) __obj.updateDynamic("City")(City)
-    if (Country != null) __obj.updateDynamic("Country")(Country)
+    if (City != null) __obj.updateDynamic("City")(City.asInstanceOf[js.Any])
+    if (Country != null) __obj.updateDynamic("Country")(Country.asInstanceOf[js.Any])
     if (Latitude != null) __obj.updateDynamic("Latitude")(Latitude.asInstanceOf[js.Any])
     if (Longitude != null) __obj.updateDynamic("Longitude")(Longitude.asInstanceOf[js.Any])
-    if (PostalCode != null) __obj.updateDynamic("PostalCode")(PostalCode)
-    if (Region != null) __obj.updateDynamic("Region")(Region)
+    if (PostalCode != null) __obj.updateDynamic("PostalCode")(PostalCode.asInstanceOf[js.Any])
+    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
     __obj.asInstanceOf[_EndpointLocation]
   }
 }

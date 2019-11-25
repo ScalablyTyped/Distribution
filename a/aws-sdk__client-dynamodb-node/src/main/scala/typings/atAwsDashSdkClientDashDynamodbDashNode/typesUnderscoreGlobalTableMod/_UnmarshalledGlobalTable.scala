@@ -17,8 +17,8 @@ object _UnmarshalledGlobalTable {
   @scala.inline
   def apply(GlobalTableName: String = null, ReplicationGroup: js.Array[_UnmarshalledReplica] = null): _UnmarshalledGlobalTable = {
     val __obj = js.Dynamic.literal()
-    if (GlobalTableName != null) __obj.updateDynamic("GlobalTableName")(GlobalTableName)
-    if (ReplicationGroup != null) __obj.updateDynamic("ReplicationGroup")(ReplicationGroup)
+    if (GlobalTableName != null) __obj.updateDynamic("GlobalTableName")(GlobalTableName.asInstanceOf[js.Any])
+    if (ReplicationGroup != null) __obj.updateDynamic("ReplicationGroup")(ReplicationGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledGlobalTable]
   }
 }

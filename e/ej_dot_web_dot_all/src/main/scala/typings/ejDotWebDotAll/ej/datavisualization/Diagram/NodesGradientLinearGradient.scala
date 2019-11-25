@@ -42,8 +42,8 @@ object NodesGradientLinearGradient {
     y2: Int | Double = null
   ): NodesGradientLinearGradient = {
     val __obj = js.Dynamic.literal()
-    if (stops != null) __obj.updateDynamic("stops")(stops)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (x1 != null) __obj.updateDynamic("x1")(x1.asInstanceOf[js.Any])
     if (x2 != null) __obj.updateDynamic("x2")(x2.asInstanceOf[js.Any])
     if (y1 != null) __obj.updateDynamic("y1")(y1.asInstanceOf[js.Any])

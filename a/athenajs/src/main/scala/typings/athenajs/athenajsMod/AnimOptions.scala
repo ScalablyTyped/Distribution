@@ -25,7 +25,7 @@ object AnimOptions {
     offsetX: Int | Double = null,
     offsetY: Int | Double = null
   ): AnimOptions = {
-    val __obj = js.Dynamic.literal(frameDuration = frameDuration, frameHeight = frameHeight, frameWidth = frameWidth, numFrames = numFrames)
+    val __obj = js.Dynamic.literal(frameDuration = frameDuration.asInstanceOf[js.Any], frameHeight = frameHeight.asInstanceOf[js.Any], frameWidth = frameWidth.asInstanceOf[js.Any], numFrames = numFrames.asInstanceOf[js.Any])
     if (frameSpacing != null) __obj.updateDynamic("frameSpacing")(frameSpacing.asInstanceOf[js.Any])
     if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
     if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])

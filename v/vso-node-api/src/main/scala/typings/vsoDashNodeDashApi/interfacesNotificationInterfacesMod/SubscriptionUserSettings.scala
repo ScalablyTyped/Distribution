@@ -14,7 +14,7 @@ trait SubscriptionUserSettings extends js.Object {
 object SubscriptionUserSettings {
   @scala.inline
   def apply(optedOut: Boolean): SubscriptionUserSettings = {
-    val __obj = js.Dynamic.literal(optedOut = optedOut)
+    val __obj = js.Dynamic.literal(optedOut = optedOut.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SubscriptionUserSettings]
   }

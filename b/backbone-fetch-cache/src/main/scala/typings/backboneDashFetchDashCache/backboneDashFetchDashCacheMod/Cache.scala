@@ -14,7 +14,7 @@ trait Cache extends js.Object {
 object Cache {
   @scala.inline
   def apply(expires: Double, lastSync: Double, prefillExpires: Double, value: js.Any): Cache = {
-    val __obj = js.Dynamic.literal(expires = expires, lastSync = lastSync, prefillExpires = prefillExpires, value = value)
+    val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], lastSync = lastSync.asInstanceOf[js.Any], prefillExpires = prefillExpires.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Cache]
   }

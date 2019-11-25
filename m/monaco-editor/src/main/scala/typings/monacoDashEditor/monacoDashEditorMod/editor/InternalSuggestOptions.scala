@@ -32,7 +32,7 @@ object InternalSuggestOptions {
     snippets: top | bottom | `inline` | none,
     snippetsPreventQuickSuggestions: Boolean
   ): InternalSuggestOptions = {
-    val __obj = js.Dynamic.literal(filterGraceful = filterGraceful, filteredTypes = filteredTypes, localityBonus = localityBonus, maxVisibleSuggestions = maxVisibleSuggestions, shareSuggestSelections = shareSuggestSelections, showIcons = showIcons, snippets = snippets.asInstanceOf[js.Any], snippetsPreventQuickSuggestions = snippetsPreventQuickSuggestions)
+    val __obj = js.Dynamic.literal(filterGraceful = filterGraceful.asInstanceOf[js.Any], filteredTypes = filteredTypes.asInstanceOf[js.Any], localityBonus = localityBonus.asInstanceOf[js.Any], maxVisibleSuggestions = maxVisibleSuggestions.asInstanceOf[js.Any], shareSuggestSelections = shareSuggestSelections.asInstanceOf[js.Any], showIcons = showIcons.asInstanceOf[js.Any], snippets = snippets.asInstanceOf[js.Any], snippetsPreventQuickSuggestions = snippetsPreventQuickSuggestions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InternalSuggestOptions]
   }

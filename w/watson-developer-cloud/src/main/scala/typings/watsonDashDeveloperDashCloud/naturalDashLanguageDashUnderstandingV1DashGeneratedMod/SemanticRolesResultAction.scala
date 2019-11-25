@@ -17,9 +17,9 @@ object SemanticRolesResultAction {
   @scala.inline
   def apply(normalized: String = null, text: String = null, verb: SemanticRolesVerb = null): SemanticRolesResultAction = {
     val __obj = js.Dynamic.literal()
-    if (normalized != null) __obj.updateDynamic("normalized")(normalized)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (verb != null) __obj.updateDynamic("verb")(verb)
+    if (normalized != null) __obj.updateDynamic("normalized")(normalized.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (verb != null) __obj.updateDynamic("verb")(verb.asInstanceOf[js.Any])
     __obj.asInstanceOf[SemanticRolesResultAction]
   }
 }

@@ -29,7 +29,7 @@ object IConsoleCreator {
     tracker: IWidgetTracker[T],
     isEnabled: T => Boolean = null
   ): IConsoleCreator[T] = {
-    val __obj = js.Dynamic.literal(createConsole = js.Any.fromFunction1(createConsole), name = name, tracker = tracker)
+    val __obj = js.Dynamic.literal(createConsole = js.Any.fromFunction1(createConsole), name = name.asInstanceOf[js.Any], tracker = tracker.asInstanceOf[js.Any])
     if (isEnabled != null) __obj.updateDynamic("isEnabled")(js.Any.fromFunction1(isEnabled))
     __obj.asInstanceOf[IConsoleCreator[T]]
   }

@@ -16,8 +16,8 @@ object IGetEntityTypeRequest {
   @scala.inline
   def apply(languageCode: String = null, name: String = null): IGetEntityTypeRequest = {
     val __obj = js.Dynamic.literal()
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetEntityTypeRequest]
   }
 }

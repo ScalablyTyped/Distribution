@@ -11,7 +11,7 @@ trait Anon_Exec extends js.Object {
 object Anon_Exec {
   @scala.inline
   def apply(exec: js.Any): Anon_Exec = {
-    val __obj = js.Dynamic.literal(exec = exec)
+    val __obj = js.Dynamic.literal(exec = exec.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Exec]
   }

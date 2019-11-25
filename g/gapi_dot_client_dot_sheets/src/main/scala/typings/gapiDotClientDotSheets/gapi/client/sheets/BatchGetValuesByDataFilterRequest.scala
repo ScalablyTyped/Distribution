@@ -44,10 +44,10 @@ object BatchGetValuesByDataFilterRequest {
     valueRenderOption: String = null
   ): BatchGetValuesByDataFilterRequest = {
     val __obj = js.Dynamic.literal()
-    if (dataFilters != null) __obj.updateDynamic("dataFilters")(dataFilters)
-    if (dateTimeRenderOption != null) __obj.updateDynamic("dateTimeRenderOption")(dateTimeRenderOption)
-    if (majorDimension != null) __obj.updateDynamic("majorDimension")(majorDimension)
-    if (valueRenderOption != null) __obj.updateDynamic("valueRenderOption")(valueRenderOption)
+    if (dataFilters != null) __obj.updateDynamic("dataFilters")(dataFilters.asInstanceOf[js.Any])
+    if (dateTimeRenderOption != null) __obj.updateDynamic("dateTimeRenderOption")(dateTimeRenderOption.asInstanceOf[js.Any])
+    if (majorDimension != null) __obj.updateDynamic("majorDimension")(majorDimension.asInstanceOf[js.Any])
+    if (valueRenderOption != null) __obj.updateDynamic("valueRenderOption")(valueRenderOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetValuesByDataFilterRequest]
   }
 }

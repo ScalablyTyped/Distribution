@@ -24,12 +24,12 @@ object ChildNode {
     vtext: String = null
   ): ChildNode = {
     val __obj = js.Dynamic.literal()
-    if (vattrs != null) __obj.updateDynamic("vattrs")(vattrs)
-    if (vchildren != null) __obj.updateDynamic("vchildren")(vchildren)
+    if (vattrs != null) __obj.updateDynamic("vattrs")(vattrs.asInstanceOf[js.Any])
+    if (vchildren != null) __obj.updateDynamic("vchildren")(vchildren.asInstanceOf[js.Any])
     if (vkey != null) __obj.updateDynamic("vkey")(vkey.asInstanceOf[js.Any])
-    if (vname != null) __obj.updateDynamic("vname")(vname)
+    if (vname != null) __obj.updateDynamic("vname")(vname.asInstanceOf[js.Any])
     if (vtag != null) __obj.updateDynamic("vtag")(vtag.asInstanceOf[js.Any])
-    if (vtext != null) __obj.updateDynamic("vtext")(vtext)
+    if (vtext != null) __obj.updateDynamic("vtext")(vtext.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildNode]
   }
 }

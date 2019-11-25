@@ -25,10 +25,10 @@ object MessageInputOptions {
     return_context: js.UndefOr[Boolean] = js.undefined
   ): MessageInputOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alternate_intents)) __obj.updateDynamic("alternate_intents")(alternate_intents)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (!js.isUndefined(restart)) __obj.updateDynamic("restart")(restart)
-    if (!js.isUndefined(return_context)) __obj.updateDynamic("return_context")(return_context)
+    if (!js.isUndefined(alternate_intents)) __obj.updateDynamic("alternate_intents")(alternate_intents.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(restart)) __obj.updateDynamic("restart")(restart.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_context)) __obj.updateDynamic("return_context")(return_context.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageInputOptions]
   }
 }

@@ -21,11 +21,11 @@ object Anon_Alias {
     indices: js.Array[String] = null,
     routing: String = null
   ): Anon_Alias = {
-    val __obj = js.Dynamic.literal(alias = alias)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (index != null) __obj.updateDynamic("index")(index)
-    if (indices != null) __obj.updateDynamic("indices")(indices)
-    if (routing != null) __obj.updateDynamic("routing")(routing)
+    val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (indices != null) __obj.updateDynamic("indices")(indices.asInstanceOf[js.Any])
+    if (routing != null) __obj.updateDynamic("routing")(routing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Alias]
   }
 }

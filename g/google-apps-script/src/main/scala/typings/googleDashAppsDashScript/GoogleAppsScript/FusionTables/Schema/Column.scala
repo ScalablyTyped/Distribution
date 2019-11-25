@@ -36,18 +36,18 @@ object Column {
     validateData: js.UndefOr[Boolean] = js.undefined
   ): Column = {
     val __obj = js.Dynamic.literal()
-    if (baseColumn != null) __obj.updateDynamic("baseColumn")(baseColumn)
+    if (baseColumn != null) __obj.updateDynamic("baseColumn")(baseColumn.asInstanceOf[js.Any])
     if (columnId != null) __obj.updateDynamic("columnId")(columnId.asInstanceOf[js.Any])
-    if (columnJsonSchema != null) __obj.updateDynamic("columnJsonSchema")(columnJsonSchema)
-    if (columnPropertiesJson != null) __obj.updateDynamic("columnPropertiesJson")(columnPropertiesJson)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (formatPattern != null) __obj.updateDynamic("formatPattern")(formatPattern)
-    if (graphPredicate != null) __obj.updateDynamic("graphPredicate")(graphPredicate)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (validValues != null) __obj.updateDynamic("validValues")(validValues)
-    if (!js.isUndefined(validateData)) __obj.updateDynamic("validateData")(validateData)
+    if (columnJsonSchema != null) __obj.updateDynamic("columnJsonSchema")(columnJsonSchema.asInstanceOf[js.Any])
+    if (columnPropertiesJson != null) __obj.updateDynamic("columnPropertiesJson")(columnPropertiesJson.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (formatPattern != null) __obj.updateDynamic("formatPattern")(formatPattern.asInstanceOf[js.Any])
+    if (graphPredicate != null) __obj.updateDynamic("graphPredicate")(graphPredicate.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (validValues != null) __obj.updateDynamic("validValues")(validValues.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateData)) __obj.updateDynamic("validateData")(validateData.asInstanceOf[js.Any])
     __obj.asInstanceOf[Column]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_LeftTopNumber extends js.Object {
 object Anon_LeftTopNumber {
   @scala.inline
   def apply(left: Double, top: Double): Anon_LeftTopNumber = {
-    val __obj = js.Dynamic.literal(left = left, top = top)
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_LeftTopNumber]
   }

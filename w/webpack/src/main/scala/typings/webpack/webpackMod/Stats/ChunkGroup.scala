@@ -23,8 +23,8 @@ object ChunkGroup {
     chunks: js.Array[Double | String],
     isOverSizeLimit: js.UndefOr[Boolean] = js.undefined
   ): ChunkGroup = {
-    val __obj = js.Dynamic.literal(assets = assets, childAssets = childAssets, children = children, chunks = chunks)
-    if (!js.isUndefined(isOverSizeLimit)) __obj.updateDynamic("isOverSizeLimit")(isOverSizeLimit)
+    val __obj = js.Dynamic.literal(assets = assets.asInstanceOf[js.Any], childAssets = childAssets.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], chunks = chunks.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOverSizeLimit)) __obj.updateDynamic("isOverSizeLimit")(isOverSizeLimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChunkGroup]
   }
 }

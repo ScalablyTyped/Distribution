@@ -13,7 +13,7 @@ object LocationInfo {
   @scala.inline
   def apply(latLng: LatLng = null): LocationInfo = {
     val __obj = js.Dynamic.literal()
-    if (latLng != null) __obj.updateDynamic("latLng")(latLng)
+    if (latLng != null) __obj.updateDynamic("latLng")(latLng.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationInfo]
   }
 }

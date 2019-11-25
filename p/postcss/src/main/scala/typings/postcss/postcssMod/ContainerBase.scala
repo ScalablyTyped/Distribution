@@ -1,7 +1,6 @@
 package typings.postcss.postcssMod
 
 import typings.postcss.Anon_Fast
-import typings.postcss.Fn_Args
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -127,7 +126,10 @@ trait ContainerBase extends NodeBase {
     */
   def removeChild(child: ChildNode): this.type = js.native
   def replaceValues(pattern: String, callbackOrReplaceValue: String): this.type = js.native
-  def replaceValues(pattern: String, callbackOrReplaceValue: Fn_Args): this.type = js.native
+  def replaceValues(
+    pattern: String,
+    callbackOrReplaceValue: js.Function2[/* substring */ String, /* repeated */ js.Any, String]
+  ): this.type = js.native
   /**
     * Passes all declaration values within the container that match pattern
     * through the callback, replacing those values with the returned result of
@@ -140,11 +142,22 @@ trait ContainerBase extends NodeBase {
     * arguments as those passed to a function parameter of String#replace.
     */
   def replaceValues(pattern: String, options: Anon_Fast, callbackOrReplaceValue: String): this.type = js.native
-  def replaceValues(pattern: String, options: Anon_Fast, callbackOrReplaceValue: Fn_Args): this.type = js.native
+  def replaceValues(
+    pattern: String,
+    options: Anon_Fast,
+    callbackOrReplaceValue: js.Function2[/* substring */ String, /* repeated */ js.Any, String]
+  ): this.type = js.native
   def replaceValues(pattern: RegExp, callbackOrReplaceValue: String): this.type = js.native
-  def replaceValues(pattern: RegExp, callbackOrReplaceValue: Fn_Args): this.type = js.native
+  def replaceValues(
+    pattern: RegExp,
+    callbackOrReplaceValue: js.Function2[/* substring */ String, /* repeated */ js.Any, String]
+  ): this.type = js.native
   def replaceValues(pattern: RegExp, options: Anon_Fast, callbackOrReplaceValue: String): this.type = js.native
-  def replaceValues(pattern: RegExp, options: Anon_Fast, callbackOrReplaceValue: Fn_Args): this.type = js.native
+  def replaceValues(
+    pattern: RegExp,
+    options: Anon_Fast,
+    callbackOrReplaceValue: js.Function2[/* substring */ String, /* repeated */ js.Any, String]
+  ): this.type = js.native
   /**
     * Determines whether the specified callback returns true for any child node.
     * @param callback A function that accepts up to three arguments. The some

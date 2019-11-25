@@ -61,10 +61,10 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (appendNext != null) __obj.updateDynamic("appendNext")(appendNext.asInstanceOf[js.Any])
-    if (cookie != null) __obj.updateDynamic("cookie")(cookie)
-    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive)
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
     if (redirectTo != null) __obj.updateDynamic("redirectTo")(redirectTo.asInstanceOf[js.Any])
-    if (requestDecoratorName != null) __obj.updateDynamic("requestDecoratorName")(requestDecoratorName)
+    if (requestDecoratorName != null) __obj.updateDynamic("requestDecoratorName")(requestDecoratorName.asInstanceOf[js.Any])
     if (validateFunc != null) __obj.updateDynamic("validateFunc")(js.Any.fromFunction2(validateFunc))
     __obj.asInstanceOf[Options]
   }

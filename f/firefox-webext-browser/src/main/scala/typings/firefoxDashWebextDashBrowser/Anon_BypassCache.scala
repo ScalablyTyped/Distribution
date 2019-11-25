@@ -13,7 +13,7 @@ object Anon_BypassCache {
   @scala.inline
   def apply(bypassCache: js.UndefOr[Boolean] = js.undefined): Anon_BypassCache = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bypassCache)) __obj.updateDynamic("bypassCache")(bypassCache)
+    if (!js.isUndefined(bypassCache)) __obj.updateDynamic("bypassCache")(bypassCache.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BypassCache]
   }
 }

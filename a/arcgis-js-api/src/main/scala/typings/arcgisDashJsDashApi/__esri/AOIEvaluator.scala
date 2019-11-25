@@ -58,8 +58,8 @@ object AOIEvaluator {
     `type`: String,
     useJobAOI: Boolean
   ): AOIEvaluator = {
-    val __obj = js.Dynamic.literal(aoi = aoi, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), inverse = inverse, name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), relation = relation, useJobAOI = useJobAOI)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(aoi = aoi.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), inverse = inverse.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), relation = relation.asInstanceOf[js.Any], useJobAOI = useJobAOI.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AOIEvaluator]
   }
 }

@@ -15,7 +15,7 @@ object PlotGanttDragDropGuideBoxOptions {
   @scala.inline
   def apply(default: PlotGanttDragDropGuideBoxDefaultOptions = null): PlotGanttDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotGanttDragDropGuideBoxOptions]
   }
 }

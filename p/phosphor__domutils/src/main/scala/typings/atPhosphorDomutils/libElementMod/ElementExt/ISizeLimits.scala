@@ -29,7 +29,7 @@ trait ISizeLimits extends js.Object {
 object ISizeLimits {
   @scala.inline
   def apply(maxHeight: Double, maxWidth: Double, minHeight: Double, minWidth: Double): ISizeLimits = {
-    val __obj = js.Dynamic.literal(maxHeight = maxHeight, maxWidth = maxWidth, minHeight = minHeight, minWidth = minWidth)
+    val __obj = js.Dynamic.literal(maxHeight = maxHeight.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any], minHeight = minHeight.asInstanceOf[js.Any], minWidth = minWidth.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISizeLimits]
   }

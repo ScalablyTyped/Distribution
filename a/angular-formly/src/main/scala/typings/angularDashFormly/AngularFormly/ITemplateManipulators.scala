@@ -16,8 +16,8 @@ object ITemplateManipulators {
     preWrapper: js.Array[ITemplateManipulator] = null
   ): ITemplateManipulators = {
     val __obj = js.Dynamic.literal()
-    if (postWrapper != null) __obj.updateDynamic("postWrapper")(postWrapper)
-    if (preWrapper != null) __obj.updateDynamic("preWrapper")(preWrapper)
+    if (postWrapper != null) __obj.updateDynamic("postWrapper")(postWrapper.asInstanceOf[js.Any])
+    if (preWrapper != null) __obj.updateDynamic("preWrapper")(preWrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITemplateManipulators]
   }
 }

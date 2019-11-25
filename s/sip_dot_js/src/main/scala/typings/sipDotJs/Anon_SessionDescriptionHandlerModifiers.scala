@@ -18,8 +18,8 @@ object Anon_SessionDescriptionHandlerModifiers {
     sessionDescriptionHandlerOptions: SessionDescriptionHandlerOptions = null
   ): Anon_SessionDescriptionHandlerModifiers = {
     val __obj = js.Dynamic.literal()
-    if (sessionDescriptionHandlerModifiers != null) __obj.updateDynamic("sessionDescriptionHandlerModifiers")(sessionDescriptionHandlerModifiers)
-    if (sessionDescriptionHandlerOptions != null) __obj.updateDynamic("sessionDescriptionHandlerOptions")(sessionDescriptionHandlerOptions)
+    if (sessionDescriptionHandlerModifiers != null) __obj.updateDynamic("sessionDescriptionHandlerModifiers")(sessionDescriptionHandlerModifiers.asInstanceOf[js.Any])
+    if (sessionDescriptionHandlerOptions != null) __obj.updateDynamic("sessionDescriptionHandlerOptions")(sessionDescriptionHandlerOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_SessionDescriptionHandlerModifiers]
   }
 }

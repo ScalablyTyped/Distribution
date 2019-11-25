@@ -58,17 +58,17 @@ object Volume {
     volumeInfo: Anon_AllowAnonLogging = null
   ): Volume = {
     val __obj = js.Dynamic.literal()
-    if (accessInfo != null) __obj.updateDynamic("accessInfo")(accessInfo)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (layerInfo != null) __obj.updateDynamic("layerInfo")(layerInfo)
-    if (recommendedInfo != null) __obj.updateDynamic("recommendedInfo")(recommendedInfo)
-    if (saleInfo != null) __obj.updateDynamic("saleInfo")(saleInfo)
-    if (searchInfo != null) __obj.updateDynamic("searchInfo")(searchInfo)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (userInfo != null) __obj.updateDynamic("userInfo")(userInfo)
-    if (volumeInfo != null) __obj.updateDynamic("volumeInfo")(volumeInfo)
+    if (accessInfo != null) __obj.updateDynamic("accessInfo")(accessInfo.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (layerInfo != null) __obj.updateDynamic("layerInfo")(layerInfo.asInstanceOf[js.Any])
+    if (recommendedInfo != null) __obj.updateDynamic("recommendedInfo")(recommendedInfo.asInstanceOf[js.Any])
+    if (saleInfo != null) __obj.updateDynamic("saleInfo")(saleInfo.asInstanceOf[js.Any])
+    if (searchInfo != null) __obj.updateDynamic("searchInfo")(searchInfo.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (userInfo != null) __obj.updateDynamic("userInfo")(userInfo.asInstanceOf[js.Any])
+    if (volumeInfo != null) __obj.updateDynamic("volumeInfo")(volumeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Volume]
   }
 }

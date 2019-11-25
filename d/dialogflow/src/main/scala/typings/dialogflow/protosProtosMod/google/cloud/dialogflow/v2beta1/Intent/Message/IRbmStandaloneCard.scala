@@ -24,9 +24,9 @@ object IRbmStandaloneCard {
     thumbnailImageAlignment: ThumbnailImageAlignment = null
   ): IRbmStandaloneCard = {
     val __obj = js.Dynamic.literal()
-    if (cardContent != null) __obj.updateDynamic("cardContent")(cardContent)
-    if (cardOrientation != null) __obj.updateDynamic("cardOrientation")(cardOrientation)
-    if (thumbnailImageAlignment != null) __obj.updateDynamic("thumbnailImageAlignment")(thumbnailImageAlignment)
+    if (cardContent != null) __obj.updateDynamic("cardContent")(cardContent.asInstanceOf[js.Any])
+    if (cardOrientation != null) __obj.updateDynamic("cardOrientation")(cardOrientation.asInstanceOf[js.Any])
+    if (thumbnailImageAlignment != null) __obj.updateDynamic("thumbnailImageAlignment")(thumbnailImageAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRbmStandaloneCard]
   }
 }

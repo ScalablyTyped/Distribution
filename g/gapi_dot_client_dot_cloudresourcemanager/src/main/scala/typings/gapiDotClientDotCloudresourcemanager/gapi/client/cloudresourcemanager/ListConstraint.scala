@@ -16,7 +16,7 @@ object ListConstraint {
   @scala.inline
   def apply(suggestedValue: String = null): ListConstraint = {
     val __obj = js.Dynamic.literal()
-    if (suggestedValue != null) __obj.updateDynamic("suggestedValue")(suggestedValue)
+    if (suggestedValue != null) __obj.updateDynamic("suggestedValue")(suggestedValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListConstraint]
   }
 }

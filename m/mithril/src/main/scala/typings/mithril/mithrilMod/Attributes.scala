@@ -39,16 +39,16 @@ object Attributes {
     onupdate: js.ThisFunction1[js.Any, /* vnode */ VnodeDOM[js.Any, js.Any], _] = null
   ): Attributes = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (`class` != null) __obj.updateDynamic("class")(`class`)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (onbeforeremove != null) __obj.updateDynamic("onbeforeremove")(onbeforeremove)
-    if (onbeforeupdate != null) __obj.updateDynamic("onbeforeupdate")(onbeforeupdate)
-    if (oncreate != null) __obj.updateDynamic("oncreate")(oncreate)
-    if (oninit != null) __obj.updateDynamic("oninit")(oninit)
-    if (onremove != null) __obj.updateDynamic("onremove")(onremove)
-    if (onupdate != null) __obj.updateDynamic("onupdate")(onupdate)
+    if (onbeforeremove != null) __obj.updateDynamic("onbeforeremove")(onbeforeremove.asInstanceOf[js.Any])
+    if (onbeforeupdate != null) __obj.updateDynamic("onbeforeupdate")(onbeforeupdate.asInstanceOf[js.Any])
+    if (oncreate != null) __obj.updateDynamic("oncreate")(oncreate.asInstanceOf[js.Any])
+    if (oninit != null) __obj.updateDynamic("oninit")(oninit.asInstanceOf[js.Any])
+    if (onremove != null) __obj.updateDynamic("onremove")(onremove.asInstanceOf[js.Any])
+    if (onupdate != null) __obj.updateDynamic("onupdate")(onupdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attributes]
   }
 }

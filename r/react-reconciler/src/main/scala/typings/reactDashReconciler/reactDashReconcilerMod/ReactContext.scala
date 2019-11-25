@@ -33,10 +33,10 @@ object ReactContext {
     _currentRenderer: js.Object = null,
     _currentRenderer2: js.Object = null
   ): ReactContext[T] = {
-    val __obj = js.Dynamic.literal($$typeof = $$typeof.asInstanceOf[js.Any], Consumer = Consumer, Provider = Provider, _currentValue = _currentValue.asInstanceOf[js.Any], _currentValue2 = _currentValue2.asInstanceOf[js.Any], _threadCount = _threadCount, unstable_read = js.Any.fromFunction0(unstable_read))
+    val __obj = js.Dynamic.literal($$typeof = $$typeof.asInstanceOf[js.Any], Consumer = Consumer.asInstanceOf[js.Any], Provider = Provider.asInstanceOf[js.Any], _currentValue = _currentValue.asInstanceOf[js.Any], _currentValue2 = _currentValue2.asInstanceOf[js.Any], _threadCount = _threadCount.asInstanceOf[js.Any], unstable_read = js.Any.fromFunction0(unstable_read))
     if (_calculateChangedBits != null) __obj.updateDynamic("_calculateChangedBits")(js.Any.fromFunction2(_calculateChangedBits))
-    if (_currentRenderer != null) __obj.updateDynamic("_currentRenderer")(_currentRenderer)
-    if (_currentRenderer2 != null) __obj.updateDynamic("_currentRenderer2")(_currentRenderer2)
+    if (_currentRenderer != null) __obj.updateDynamic("_currentRenderer")(_currentRenderer.asInstanceOf[js.Any])
+    if (_currentRenderer2 != null) __obj.updateDynamic("_currentRenderer2")(_currentRenderer2.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactContext[T]]
   }
 }

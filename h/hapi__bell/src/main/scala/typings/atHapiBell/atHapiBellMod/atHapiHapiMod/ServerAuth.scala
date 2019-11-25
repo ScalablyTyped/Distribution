@@ -13,9 +13,9 @@ trait ServerAuth extends js.Object {
 
 object ServerAuth {
   @scala.inline
-  def apply(strategy_bell: (String, bell, BellOptions) => Unit): ServerAuth = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("strategy")(js.Any.fromFunction3(strategy_bell))
+  def apply(strategy: (String, bell, BellOptions) => Unit): ServerAuth = {
+    val __obj = js.Dynamic.literal(strategy = js.Any.fromFunction3(strategy))
+  
     __obj.asInstanceOf[ServerAuth]
   }
 }

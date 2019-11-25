@@ -51,13 +51,13 @@ object ServiceAccountKey {
     validBeforeTime: String = null
   ): ServiceAccountKey = {
     val __obj = js.Dynamic.literal()
-    if (keyAlgorithm != null) __obj.updateDynamic("keyAlgorithm")(keyAlgorithm)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (privateKeyData != null) __obj.updateDynamic("privateKeyData")(privateKeyData)
-    if (privateKeyType != null) __obj.updateDynamic("privateKeyType")(privateKeyType)
-    if (publicKeyData != null) __obj.updateDynamic("publicKeyData")(publicKeyData)
-    if (validAfterTime != null) __obj.updateDynamic("validAfterTime")(validAfterTime)
-    if (validBeforeTime != null) __obj.updateDynamic("validBeforeTime")(validBeforeTime)
+    if (keyAlgorithm != null) __obj.updateDynamic("keyAlgorithm")(keyAlgorithm.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (privateKeyData != null) __obj.updateDynamic("privateKeyData")(privateKeyData.asInstanceOf[js.Any])
+    if (privateKeyType != null) __obj.updateDynamic("privateKeyType")(privateKeyType.asInstanceOf[js.Any])
+    if (publicKeyData != null) __obj.updateDynamic("publicKeyData")(publicKeyData.asInstanceOf[js.Any])
+    if (validAfterTime != null) __obj.updateDynamic("validAfterTime")(validAfterTime.asInstanceOf[js.Any])
+    if (validBeforeTime != null) __obj.updateDynamic("validBeforeTime")(validBeforeTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceAccountKey]
   }
 }

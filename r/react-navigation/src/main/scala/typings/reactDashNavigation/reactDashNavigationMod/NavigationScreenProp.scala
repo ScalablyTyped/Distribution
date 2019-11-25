@@ -20,11 +20,15 @@ trait NavigationScreenProp[S, P] extends js.Object {
   def dismiss(): Boolean = js.native
   @JSName("emit")
   def emit_refocus(eventName: refocus): Unit = js.native
-  def getParam[T /* <: String */](param: T): /* import warning: ImportType.apply Failed type conversion: P[T] */ js.Any = js.native
+  def getParam[T /* <: String */](param: T): /* import warning: importer.ImportType#apply Failed type conversion: P[T] */ js.Any = js.native
   def getParam[T /* <: String */](
     param: T,
-    fallback: NonNullable[/* import warning: ImportType.apply Failed type conversion: P[T] */ js.Any]
-  ): NonNullable[/* import warning: ImportType.apply Failed type conversion: P[T] */ js.Any] = js.native
+    fallback: NonNullable[
+      /* import warning: importer.ImportType#apply Failed type conversion: P[T] */ js.Any
+    ]
+  ): NonNullable[
+    /* import warning: importer.ImportType#apply Failed type conversion: P[T] */ js.Any
+  ] = js.native
   def goBack(): Boolean = js.native
   def goBack(routeKey: String): Boolean = js.native
   def isFirstRouteInParent(): Boolean = js.native

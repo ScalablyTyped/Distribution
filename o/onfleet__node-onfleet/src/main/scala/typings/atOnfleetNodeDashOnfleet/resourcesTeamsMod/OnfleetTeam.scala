@@ -25,7 +25,7 @@ object OnfleetTeam {
     timeLastModified: Double,
     workers: js.Array[String]
   ): OnfleetTeam = {
-    val __obj = js.Dynamic.literal(hub = hub, id = id, managers = managers, name = name, timeCreated = timeCreated, timeLastModified = timeLastModified, workers = workers)
+    val __obj = js.Dynamic.literal(hub = hub.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], managers = managers.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], timeCreated = timeCreated.asInstanceOf[js.Any], timeLastModified = timeLastModified.asInstanceOf[js.Any], workers = workers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OnfleetTeam]
   }

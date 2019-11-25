@@ -41,11 +41,11 @@ object StockToolsGuiOptions {
     toolbarClassName: String = null
   ): StockToolsGuiOptions = {
     val __obj = js.Dynamic.literal()
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (definitions != null) __obj.updateDynamic("definitions")(definitions.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (toolbarClassName != null) __obj.updateDynamic("toolbarClassName")(toolbarClassName)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (toolbarClassName != null) __obj.updateDynamic("toolbarClassName")(toolbarClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockToolsGuiOptions]
   }
 }

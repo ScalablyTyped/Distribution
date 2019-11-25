@@ -20,10 +20,10 @@ object FusionTablesMouseEvent {
     row: js.Object = null
   ): FusionTablesMouseEvent = {
     val __obj = js.Dynamic.literal()
-    if (infoWindowHtml != null) __obj.updateDynamic("infoWindowHtml")(infoWindowHtml)
-    if (latLng != null) __obj.updateDynamic("latLng")(latLng)
-    if (pixelOffset != null) __obj.updateDynamic("pixelOffset")(pixelOffset)
-    if (row != null) __obj.updateDynamic("row")(row)
+    if (infoWindowHtml != null) __obj.updateDynamic("infoWindowHtml")(infoWindowHtml.asInstanceOf[js.Any])
+    if (latLng != null) __obj.updateDynamic("latLng")(latLng.asInstanceOf[js.Any])
+    if (pixelOffset != null) __obj.updateDynamic("pixelOffset")(pixelOffset.asInstanceOf[js.Any])
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     __obj.asInstanceOf[FusionTablesMouseEvent]
   }
 }

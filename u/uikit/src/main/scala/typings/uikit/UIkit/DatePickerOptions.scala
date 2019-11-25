@@ -62,12 +62,12 @@ object DatePickerOptions {
     weekstart: Int | Double = null
   ): DatePickerOptions = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (i18n != null) __obj.updateDynamic("i18n")(i18n)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (i18n != null) __obj.updateDynamic("i18n")(i18n.asInstanceOf[js.Any])
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
     if (offsettop != null) __obj.updateDynamic("offsettop")(offsettop.asInstanceOf[js.Any])
-    if (pos != null) __obj.updateDynamic("pos")(pos)
+    if (pos != null) __obj.updateDynamic("pos")(pos.asInstanceOf[js.Any])
     if (weekstart != null) __obj.updateDynamic("weekstart")(weekstart.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatePickerOptions]
   }

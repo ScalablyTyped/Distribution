@@ -14,7 +14,7 @@ trait DetoxMochaAdapter extends js.Object {
 object DetoxMochaAdapter {
   @scala.inline
   def apply(afterEach: js.Any => js.Promise[Unit], beforeEach: js.Any => js.Promise[Unit], detox: Detox): DetoxMochaAdapter = {
-    val __obj = js.Dynamic.literal(afterEach = js.Any.fromFunction1(afterEach), beforeEach = js.Any.fromFunction1(beforeEach), detox = detox)
+    val __obj = js.Dynamic.literal(afterEach = js.Any.fromFunction1(afterEach), beforeEach = js.Any.fromFunction1(beforeEach), detox = detox.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DetoxMochaAdapter]
   }

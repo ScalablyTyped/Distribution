@@ -13,8 +13,8 @@ object MediaInfo {
   @scala.inline
   def apply(resourceId: String = null, uri: String = null): MediaInfo = {
     val __obj = js.Dynamic.literal()
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaInfo]
   }
 }

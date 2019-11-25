@@ -78,16 +78,16 @@ object IssuesListForRepoParams {
     sort: created | updated | comments = null,
     state: open | closed | all = null
   ): IssuesListForRepoParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo)
-    if (assignee != null) __obj.updateDynamic("assignee")(assignee)
-    if (creator != null) __obj.updateDynamic("creator")(creator)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (assignee != null) __obj.updateDynamic("assignee")(assignee.asInstanceOf[js.Any])
+    if (creator != null) __obj.updateDynamic("creator")(creator.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (mentioned != null) __obj.updateDynamic("mentioned")(mentioned)
-    if (milestone != null) __obj.updateDynamic("milestone")(milestone)
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (mentioned != null) __obj.updateDynamic("mentioned")(mentioned.asInstanceOf[js.Any])
+    if (milestone != null) __obj.updateDynamic("milestone")(milestone.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
-    if (since != null) __obj.updateDynamic("since")(since)
+    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuesListForRepoParams]

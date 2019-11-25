@@ -16,7 +16,7 @@ class Container () extends js.Object {
     * way for the container to ensure instances are destroyed when it itself is
     * destroyed.
     */
-  def factoryFor(fullName: String): js.Any = js.native
-  def factoryFor(fullName: String, options: js.Object): js.Any = js.native
+  def factoryFor(fullName: java.lang.String): js.Any = js.native
+  def factoryFor(fullName: java.lang.String, options: js.Object): js.Any = js.native
 }
 

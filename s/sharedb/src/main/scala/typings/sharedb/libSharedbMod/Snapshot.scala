@@ -15,10 +15,10 @@ trait Snapshot extends js.Object {
 object Snapshot {
   @scala.inline
   def apply(id: String, v: Double, data: js.Any = null, m: SnapshotMeta = null, `type`: String = null): Snapshot = {
-    val __obj = js.Dynamic.literal(id = id, v = v)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (m != null) __obj.updateDynamic("m")(m)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Snapshot]
   }
 }

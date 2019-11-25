@@ -18,8 +18,8 @@ trait IonMenuToggle extends js.Object {
 object IonMenuToggle {
   @scala.inline
   def apply(autoHide: Boolean, menu: String = null): IonMenuToggle = {
-    val __obj = js.Dynamic.literal(autoHide = autoHide)
-    if (menu != null) __obj.updateDynamic("menu")(menu)
+    val __obj = js.Dynamic.literal(autoHide = autoHide.asInstanceOf[js.Any])
+    if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonMenuToggle]
   }
 }

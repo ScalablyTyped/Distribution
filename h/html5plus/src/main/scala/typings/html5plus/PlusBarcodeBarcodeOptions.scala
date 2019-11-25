@@ -59,10 +59,10 @@ object PlusBarcodeBarcodeOptions {
     vibrate: js.UndefOr[Boolean] = js.undefined
   ): PlusBarcodeBarcodeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(conserve)) __obj.updateDynamic("conserve")(conserve)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (!js.isUndefined(conserve)) __obj.updateDynamic("conserve")(conserve.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
-    if (!js.isUndefined(vibrate)) __obj.updateDynamic("vibrate")(vibrate)
+    if (!js.isUndefined(vibrate)) __obj.updateDynamic("vibrate")(vibrate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusBarcodeBarcodeOptions]
   }
 }

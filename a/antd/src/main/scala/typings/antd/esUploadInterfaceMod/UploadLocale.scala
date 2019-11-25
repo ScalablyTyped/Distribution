@@ -22,11 +22,11 @@ object UploadLocale {
     uploading: String = null
   ): UploadLocale = {
     val __obj = js.Dynamic.literal()
-    if (downloadFile != null) __obj.updateDynamic("downloadFile")(downloadFile)
-    if (previewFile != null) __obj.updateDynamic("previewFile")(previewFile)
-    if (removeFile != null) __obj.updateDynamic("removeFile")(removeFile)
-    if (uploadError != null) __obj.updateDynamic("uploadError")(uploadError)
-    if (uploading != null) __obj.updateDynamic("uploading")(uploading)
+    if (downloadFile != null) __obj.updateDynamic("downloadFile")(downloadFile.asInstanceOf[js.Any])
+    if (previewFile != null) __obj.updateDynamic("previewFile")(previewFile.asInstanceOf[js.Any])
+    if (removeFile != null) __obj.updateDynamic("removeFile")(removeFile.asInstanceOf[js.Any])
+    if (uploadError != null) __obj.updateDynamic("uploadError")(uploadError.asInstanceOf[js.Any])
+    if (uploading != null) __obj.updateDynamic("uploading")(uploading.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadLocale]
   }
 }

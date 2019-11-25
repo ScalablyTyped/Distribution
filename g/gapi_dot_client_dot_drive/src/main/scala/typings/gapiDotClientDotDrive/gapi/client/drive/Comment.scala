@@ -52,18 +52,18 @@ object Comment {
     resolved: js.UndefOr[Boolean] = js.undefined
   ): Comment = {
     val __obj = js.Dynamic.literal()
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (createdTime != null) __obj.updateDynamic("createdTime")(createdTime)
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
-    if (htmlContent != null) __obj.updateDynamic("htmlContent")(htmlContent)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (modifiedTime != null) __obj.updateDynamic("modifiedTime")(modifiedTime)
-    if (quotedFileContent != null) __obj.updateDynamic("quotedFileContent")(quotedFileContent)
-    if (replies != null) __obj.updateDynamic("replies")(replies)
-    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved)
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (createdTime != null) __obj.updateDynamic("createdTime")(createdTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (htmlContent != null) __obj.updateDynamic("htmlContent")(htmlContent.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (modifiedTime != null) __obj.updateDynamic("modifiedTime")(modifiedTime.asInstanceOf[js.Any])
+    if (quotedFileContent != null) __obj.updateDynamic("quotedFileContent")(quotedFileContent.asInstanceOf[js.Any])
+    if (replies != null) __obj.updateDynamic("replies")(replies.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comment]
   }
 }

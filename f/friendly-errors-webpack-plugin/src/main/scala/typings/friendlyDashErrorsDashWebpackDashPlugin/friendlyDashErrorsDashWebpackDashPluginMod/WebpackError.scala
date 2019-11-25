@@ -23,7 +23,7 @@ object WebpackError {
     severity: Severity,
     webpackError: js.Any
   ): WebpackError = {
-    val __obj = js.Dynamic.literal(file = file, message = message, name = name, origin = origin, severity = severity, webpackError = webpackError)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any], webpackError = webpackError.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebpackError]
   }

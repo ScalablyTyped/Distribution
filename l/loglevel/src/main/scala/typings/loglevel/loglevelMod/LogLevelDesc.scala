@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
   */
 /* Rewritten from type alias, can be one of: 
   - typings.loglevel.loglevelMod.LogLevelNumbers
-  - typings.loglevel.loglevelStrings.trace
-  - typings.loglevel.loglevelStrings.debug
-  - typings.loglevel.loglevelStrings.info
-  - typings.loglevel.loglevelStrings.warn
-  - typings.loglevel.loglevelStrings.error
-  - typings.loglevel.loglevelStrings.silent
+  - typings.loglevel.loglevelStrings.trace_
+  - typings.loglevel.loglevelStrings.debug_
+  - typings.loglevel.loglevelStrings.info_
+  - typings.loglevel.loglevelStrings.warn_
+  - typings.loglevel.loglevelStrings.error_
+  - typings.loglevel.loglevelStrings.silent_
   - typings.loglevel.loglevelStrings.TRACE
   - typings.loglevel.loglevelStrings.DEBUG
   - typings.loglevel.loglevelStrings.INFO

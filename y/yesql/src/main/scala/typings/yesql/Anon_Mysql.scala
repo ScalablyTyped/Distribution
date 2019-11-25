@@ -15,7 +15,7 @@ object Anon_Mysql {
   @scala.inline
   def apply(pg: js.UndefOr[Boolean] = js.undefined, `type`: pg | mysql = null): Anon_Mysql = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(pg)) __obj.updateDynamic("pg")(pg)
+    if (!js.isUndefined(pg)) __obj.updateDynamic("pg")(pg.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Mysql]
   }

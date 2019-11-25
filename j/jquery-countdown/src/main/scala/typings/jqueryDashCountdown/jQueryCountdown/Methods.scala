@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait Methods extends js.Object
 
+object Methods {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def finishDOTcountdown: typings.jqueryDashCountdown.jqueryDashCountdownStrings.finishDOTcountdown = this.cast("finish.countdown")
+  @scala.inline
+  def stopDOTcountdown: typings.jqueryDashCountdown.jqueryDashCountdownStrings.stopDOTcountdown = this.cast("stop.countdown")
+  @scala.inline
+  def updateDOTcountdown: typings.jqueryDashCountdown.jqueryDashCountdownStrings.updateDOTcountdown = this.cast("update.countdown")
+}
+

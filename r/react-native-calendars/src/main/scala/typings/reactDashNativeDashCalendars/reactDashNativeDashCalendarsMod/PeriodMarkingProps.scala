@@ -14,7 +14,7 @@ trait PeriodMarkingProps extends _CalendarMarkingProps {
 object PeriodMarkingProps {
   @scala.inline
   def apply(markedDates: StringDictionary[PeriodMarking], markingType: period): PeriodMarkingProps = {
-    val __obj = js.Dynamic.literal(markedDates = markedDates, markingType = markingType)
+    val __obj = js.Dynamic.literal(markedDates = markedDates.asInstanceOf[js.Any], markingType = markingType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PeriodMarkingProps]
   }

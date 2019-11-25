@@ -51,7 +51,7 @@ object IgGridResponsiveAllowedColumnWidthPerType {
     string: Int | Double = null
   ): IgGridResponsiveAllowedColumnWidthPerType = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (bool != null) __obj.updateDynamic("bool")(bool.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])

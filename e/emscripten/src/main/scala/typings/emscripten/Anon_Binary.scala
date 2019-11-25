@@ -16,7 +16,7 @@ object Anon_Binary {
   def apply(encoding: binary | utf8 = null, flags: String = null): Anon_Binary = {
     val __obj = js.Dynamic.literal()
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags)
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Binary]
   }
 }

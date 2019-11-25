@@ -13,7 +13,7 @@ object Anon_Key {
   @scala.inline
   def apply(overrides: StringDictionary[js.Any] = null): Anon_Key = {
     val __obj = js.Dynamic.literal()
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides)
+    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Key]
   }
 }

@@ -12,7 +12,7 @@ object Anon_GcmSenderId {
   @scala.inline
   def apply(gcmSenderId: String = null): Anon_GcmSenderId = {
     val __obj = js.Dynamic.literal()
-    if (gcmSenderId != null) __obj.updateDynamic("gcmSenderId")(gcmSenderId)
+    if (gcmSenderId != null) __obj.updateDynamic("gcmSenderId")(gcmSenderId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_GcmSenderId]
   }
 }

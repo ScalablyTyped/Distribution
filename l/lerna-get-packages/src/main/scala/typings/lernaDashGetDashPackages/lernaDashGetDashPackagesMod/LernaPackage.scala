@@ -13,8 +13,8 @@ trait LernaPackage extends js.Object {
 object LernaPackage {
   @scala.inline
   def apply(location: String, `package`: Anon_Config): LernaPackage = {
-    val __obj = js.Dynamic.literal(location = location)
-    __obj.updateDynamic("package")(`package`)
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
+    __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LernaPackage]
   }
 }

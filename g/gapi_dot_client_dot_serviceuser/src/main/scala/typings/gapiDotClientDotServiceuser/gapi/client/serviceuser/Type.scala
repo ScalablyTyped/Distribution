@@ -30,12 +30,12 @@ object Type {
     syntax: String = null
   ): Type = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (oneofs != null) __obj.updateDynamic("oneofs")(oneofs)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (sourceContext != null) __obj.updateDynamic("sourceContext")(sourceContext)
-    if (syntax != null) __obj.updateDynamic("syntax")(syntax)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (oneofs != null) __obj.updateDynamic("oneofs")(oneofs.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (sourceContext != null) __obj.updateDynamic("sourceContext")(sourceContext.asInstanceOf[js.Any])
+    if (syntax != null) __obj.updateDynamic("syntax")(syntax.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type]
   }
 }

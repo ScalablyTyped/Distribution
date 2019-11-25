@@ -23,7 +23,7 @@ object MediaRepositoryCheckOffensiveCommentResponseRootObject {
     spam_classifier: String,
     status: String
   ): MediaRepositoryCheckOffensiveCommentResponseRootObject = {
-    val __obj = js.Dynamic.literal(bully_classifier = bully_classifier, hate_classifier = hate_classifier, is_offensive = is_offensive, sexual_classifier = sexual_classifier, spam_classifier = spam_classifier, status = status)
+    val __obj = js.Dynamic.literal(bully_classifier = bully_classifier.asInstanceOf[js.Any], hate_classifier = hate_classifier.asInstanceOf[js.Any], is_offensive = is_offensive.asInstanceOf[js.Any], sexual_classifier = sexual_classifier.asInstanceOf[js.Any], spam_classifier = spam_classifier.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaRepositoryCheckOffensiveCommentResponseRootObject]
   }

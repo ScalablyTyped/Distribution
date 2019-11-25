@@ -47,8 +47,8 @@ object TeamsUpdateDiscussionResponse {
     updated_at: String,
     url: String
   ): TeamsUpdateDiscussionResponse = {
-    val __obj = js.Dynamic.literal(author = author, body = body, body_html = body_html, body_version = body_version, comments_count = comments_count, comments_url = comments_url, created_at = created_at, html_url = html_url, last_edited_at = last_edited_at, node_id = node_id, number = number, pinned = pinned, reactions = reactions, team_url = team_url, title = title, updated_at = updated_at, url = url)
-    __obj.updateDynamic("private")(`private`)
+    val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], body_html = body_html.asInstanceOf[js.Any], body_version = body_version.asInstanceOf[js.Any], comments_count = comments_count.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], last_edited_at = last_edited_at.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], pinned = pinned.asInstanceOf[js.Any], reactions = reactions.asInstanceOf[js.Any], team_url = team_url.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsUpdateDiscussionResponse]
   }
 }

@@ -17,7 +17,7 @@ object ParserCore {
     process: js.Any => Unit,
     ruler: typings.markdownDashIt.libRulerMod.^[typings.markdownDashIt.libRulesUnderscoreCoreStateUnderscoreCoreMod.^]
   ): ParserCore = {
-    val __obj = js.Dynamic.literal(State = State, process = js.Any.fromFunction1(process), ruler = ruler)
+    val __obj = js.Dynamic.literal(State = State.asInstanceOf[js.Any], process = js.Any.fromFunction1(process), ruler = ruler.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ParserCore]
   }

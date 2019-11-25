@@ -22,11 +22,11 @@ object Headers {
     weights: js.Array[Weight] = null
   ): Headers = {
     val __obj = js.Dynamic.literal()
-    if (locations != null) __obj.updateDynamic("locations")(locations)
-    if (numberOfItems != null) __obj.updateDynamic("numberOfItems")(numberOfItems)
-    if (postalCodeGroupNames != null) __obj.updateDynamic("postalCodeGroupNames")(postalCodeGroupNames)
-    if (prices != null) __obj.updateDynamic("prices")(prices)
-    if (weights != null) __obj.updateDynamic("weights")(weights)
+    if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
+    if (numberOfItems != null) __obj.updateDynamic("numberOfItems")(numberOfItems.asInstanceOf[js.Any])
+    if (postalCodeGroupNames != null) __obj.updateDynamic("postalCodeGroupNames")(postalCodeGroupNames.asInstanceOf[js.Any])
+    if (prices != null) __obj.updateDynamic("prices")(prices.asInstanceOf[js.Any])
+    if (weights != null) __obj.updateDynamic("weights")(weights.asInstanceOf[js.Any])
     __obj.asInstanceOf[Headers]
   }
 }

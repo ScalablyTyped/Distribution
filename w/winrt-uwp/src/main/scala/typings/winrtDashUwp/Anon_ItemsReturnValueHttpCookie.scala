@@ -13,7 +13,7 @@ trait Anon_ItemsReturnValueHttpCookie extends js.Object {
 object Anon_ItemsReturnValueHttpCookie {
   @scala.inline
   def apply(items: HttpCookie, returnValue: Double): Anon_ItemsReturnValueHttpCookie = {
-    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ItemsReturnValueHttpCookie]
   }

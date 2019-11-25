@@ -13,7 +13,7 @@ trait SentCounts extends js.Object {
 object SentCounts {
   @scala.inline
   def apply(Days: js.Array[Anon_Date], Sent: Double): SentCounts = {
-    val __obj = js.Dynamic.literal(Days = Days, Sent = Sent)
+    val __obj = js.Dynamic.literal(Days = Days.asInstanceOf[js.Any], Sent = Sent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SentCounts]
   }

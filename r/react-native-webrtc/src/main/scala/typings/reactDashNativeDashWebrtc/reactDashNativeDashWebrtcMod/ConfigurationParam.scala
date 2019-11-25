@@ -13,8 +13,8 @@ object ConfigurationParam {
   @scala.inline
   def apply(credential: String = null, username: String = null): ConfigurationParam = {
     val __obj = js.Dynamic.literal()
-    if (credential != null) __obj.updateDynamic("credential")(credential)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (credential != null) __obj.updateDynamic("credential")(credential.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationParam]
   }
 }

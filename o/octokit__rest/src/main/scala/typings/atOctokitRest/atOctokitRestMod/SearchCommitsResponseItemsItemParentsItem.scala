@@ -13,7 +13,7 @@ trait SearchCommitsResponseItemsItemParentsItem extends js.Object {
 object SearchCommitsResponseItemsItemParentsItem {
   @scala.inline
   def apply(html_url: String, sha: String, url: String): SearchCommitsResponseItemsItemParentsItem = {
-    val __obj = js.Dynamic.literal(html_url = html_url, sha = sha, url = url)
+    val __obj = js.Dynamic.literal(html_url = html_url.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SearchCommitsResponseItemsItemParentsItem]
   }

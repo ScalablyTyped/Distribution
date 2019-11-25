@@ -22,7 +22,7 @@ object ListViewContentInsetOption {
   @scala.inline
   def apply(animated: js.UndefOr[Boolean] = js.undefined, duration: Int | Double = null): ListViewContentInsetOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListViewContentInsetOption]
   }

@@ -39,9 +39,9 @@ object SceneViewConstraintsClipDistanceProperties {
     mode: String = null,
     near: Int | Double = null
   ): SceneViewConstraintsClipDistanceProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (far != null) __obj.updateDynamic("far")(far.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (near != null) __obj.updateDynamic("near")(near.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewConstraintsClipDistanceProperties]
   }

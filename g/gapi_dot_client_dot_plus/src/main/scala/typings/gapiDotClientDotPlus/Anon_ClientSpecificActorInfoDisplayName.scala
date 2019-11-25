@@ -30,12 +30,12 @@ object Anon_ClientSpecificActorInfoDisplayName {
     verification: Anon_AdHocVerified = null
   ): Anon_ClientSpecificActorInfoDisplayName = {
     val __obj = js.Dynamic.literal()
-    if (clientSpecificActorInfo != null) __obj.updateDynamic("clientSpecificActorInfo")(clientSpecificActorInfo)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (verification != null) __obj.updateDynamic("verification")(verification)
+    if (clientSpecificActorInfo != null) __obj.updateDynamic("clientSpecificActorInfo")(clientSpecificActorInfo.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (verification != null) __obj.updateDynamic("verification")(verification.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClientSpecificActorInfoDisplayName]
   }
 }

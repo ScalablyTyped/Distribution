@@ -16,8 +16,8 @@ trait LoadOperation extends ManagementOperation {
 object LoadOperation {
   @scala.inline
   def apply(destination: String | `false`, silent: Boolean, source: String, `type`: load): LoadOperation = {
-    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], silent = silent, source = source)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadOperation]
   }
 }

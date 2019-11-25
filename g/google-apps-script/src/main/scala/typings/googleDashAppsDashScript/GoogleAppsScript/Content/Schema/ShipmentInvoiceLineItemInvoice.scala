@@ -20,10 +20,10 @@ object ShipmentInvoiceLineItemInvoice {
     unitInvoice: UnitInvoice = null
   ): ShipmentInvoiceLineItemInvoice = {
     val __obj = js.Dynamic.literal()
-    if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
-    if (shipmentUnitIds != null) __obj.updateDynamic("shipmentUnitIds")(shipmentUnitIds)
-    if (unitInvoice != null) __obj.updateDynamic("unitInvoice")(unitInvoice)
+    if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
+    if (shipmentUnitIds != null) __obj.updateDynamic("shipmentUnitIds")(shipmentUnitIds.asInstanceOf[js.Any])
+    if (unitInvoice != null) __obj.updateDynamic("unitInvoice")(unitInvoice.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShipmentInvoiceLineItemInvoice]
   }
 }

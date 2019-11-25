@@ -22,11 +22,11 @@ object Options {
     production: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowRoot)) __obj.updateDynamic("allowRoot")(allowRoot)
+    if (!js.isUndefined(allowRoot)) __obj.updateDynamic("allowRoot")(allowRoot.asInstanceOf[js.Any])
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreScripts)) __obj.updateDynamic("ignoreScripts")(ignoreScripts)
-    if (!js.isUndefined(noOptional)) __obj.updateDynamic("noOptional")(noOptional)
-    if (!js.isUndefined(production)) __obj.updateDynamic("production")(production)
+    if (!js.isUndefined(ignoreScripts)) __obj.updateDynamic("ignoreScripts")(ignoreScripts.asInstanceOf[js.Any])
+    if (!js.isUndefined(noOptional)) __obj.updateDynamic("noOptional")(noOptional.asInstanceOf[js.Any])
+    if (!js.isUndefined(production)) __obj.updateDynamic("production")(production.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

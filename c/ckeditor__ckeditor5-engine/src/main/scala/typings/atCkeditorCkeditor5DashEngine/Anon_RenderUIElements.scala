@@ -24,12 +24,12 @@ object Anon_RenderUIElements {
     withoutSelection: js.UndefOr[Boolean] = js.undefined
   ): Anon_RenderUIElements = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(renderUIElements)) __obj.updateDynamic("renderUIElements")(renderUIElements)
-    if (!js.isUndefined(rootName)) __obj.updateDynamic("rootName")(rootName)
-    if (!js.isUndefined(showAttributeElementId)) __obj.updateDynamic("showAttributeElementId")(showAttributeElementId)
-    if (!js.isUndefined(showPriority)) __obj.updateDynamic("showPriority")(showPriority)
-    if (!js.isUndefined(showType)) __obj.updateDynamic("showType")(showType)
-    if (!js.isUndefined(withoutSelection)) __obj.updateDynamic("withoutSelection")(withoutSelection)
+    if (!js.isUndefined(renderUIElements)) __obj.updateDynamic("renderUIElements")(renderUIElements.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootName)) __obj.updateDynamic("rootName")(rootName.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAttributeElementId)) __obj.updateDynamic("showAttributeElementId")(showAttributeElementId.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPriority)) __obj.updateDynamic("showPriority")(showPriority.asInstanceOf[js.Any])
+    if (!js.isUndefined(showType)) __obj.updateDynamic("showType")(showType.asInstanceOf[js.Any])
+    if (!js.isUndefined(withoutSelection)) __obj.updateDynamic("withoutSelection")(withoutSelection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_RenderUIElements]
   }
 }

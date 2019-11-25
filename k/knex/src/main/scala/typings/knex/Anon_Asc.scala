@@ -14,7 +14,7 @@ trait Anon_Asc[TRecord] extends js.Object {
 object Anon_Asc {
   @scala.inline
   def apply[TRecord](column: String, order: asc | desc = null): Anon_Asc[TRecord] = {
-    val __obj = js.Dynamic.literal(column = column)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Asc[TRecord]]
   }

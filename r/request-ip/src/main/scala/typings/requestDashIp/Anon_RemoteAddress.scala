@@ -12,7 +12,7 @@ object Anon_RemoteAddress {
   @scala.inline
   def apply(remoteAddress: String = null): Anon_RemoteAddress = {
     val __obj = js.Dynamic.literal()
-    if (remoteAddress != null) __obj.updateDynamic("remoteAddress")(remoteAddress)
+    if (remoteAddress != null) __obj.updateDynamic("remoteAddress")(remoteAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_RemoteAddress]
   }
 }

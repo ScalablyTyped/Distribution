@@ -25,7 +25,7 @@ object FileSystem {
     stat: (/* path */ String, /* callback */ Callback[typings.node.fsMod.Stats]) => Unit = null
   ): FileSystem = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (lstat != null) __obj.updateDynamic("lstat")(js.Any.fromFunction2(lstat))
     if (readdir != null) __obj.updateDynamic("readdir")(js.Any.fromFunction2(readdir))
     if (stat != null) __obj.updateDynamic("stat")(js.Any.fromFunction2(stat))

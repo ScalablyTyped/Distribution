@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfoCurbsideFulfillmentType extends js.Object
 
+object GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfoCurbsideFulfillmentType {
+  @scala.inline
+  def UNSPECIFIED: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.UNSPECIFIED = this.cast("UNSPECIFIED")
+  @scala.inline
+  def VEHICLE_DETAIL: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.VEHICLE_DETAIL = this.cast("VEHICLE_DETAIL")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

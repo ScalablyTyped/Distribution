@@ -22,7 +22,7 @@ object Graph {
     placeholders: js.Array[Node],
     weights: js.Array[Node]
   ): Graph = {
-    val __obj = js.Dynamic.literal(inputs = inputs, nodes = nodes, outputs = outputs, placeholders = placeholders, weights = weights)
+    val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], placeholders = placeholders.asInstanceOf[js.Any], weights = weights.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Graph]
   }

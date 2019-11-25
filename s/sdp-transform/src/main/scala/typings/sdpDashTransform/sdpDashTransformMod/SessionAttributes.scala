@@ -42,19 +42,19 @@ object SessionAttributes {
     sourceFilter: Anon_AddressTypes = null
   ): SessionAttributes = {
     val __obj = js.Dynamic.literal()
-    if (control != null) __obj.updateDynamic("control")(control)
+    if (control != null) __obj.updateDynamic("control")(control.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext)
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
-    if (groups != null) __obj.updateDynamic("groups")(groups)
-    if (iceOptions != null) __obj.updateDynamic("iceOptions")(iceOptions)
-    if (icePwd != null) __obj.updateDynamic("icePwd")(icePwd)
-    if (iceUfrag != null) __obj.updateDynamic("iceUfrag")(iceUfrag)
-    if (icelite != null) __obj.updateDynamic("icelite")(icelite)
-    if (invalid != null) __obj.updateDynamic("invalid")(invalid)
-    if (msidSemantic != null) __obj.updateDynamic("msidSemantic")(msidSemantic)
-    if (setup != null) __obj.updateDynamic("setup")(setup)
-    if (sourceFilter != null) __obj.updateDynamic("sourceFilter")(sourceFilter)
+    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
+    if (iceOptions != null) __obj.updateDynamic("iceOptions")(iceOptions.asInstanceOf[js.Any])
+    if (icePwd != null) __obj.updateDynamic("icePwd")(icePwd.asInstanceOf[js.Any])
+    if (iceUfrag != null) __obj.updateDynamic("iceUfrag")(iceUfrag.asInstanceOf[js.Any])
+    if (icelite != null) __obj.updateDynamic("icelite")(icelite.asInstanceOf[js.Any])
+    if (invalid != null) __obj.updateDynamic("invalid")(invalid.asInstanceOf[js.Any])
+    if (msidSemantic != null) __obj.updateDynamic("msidSemantic")(msidSemantic.asInstanceOf[js.Any])
+    if (setup != null) __obj.updateDynamic("setup")(setup.asInstanceOf[js.Any])
+    if (sourceFilter != null) __obj.updateDynamic("sourceFilter")(sourceFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionAttributes]
   }
 }

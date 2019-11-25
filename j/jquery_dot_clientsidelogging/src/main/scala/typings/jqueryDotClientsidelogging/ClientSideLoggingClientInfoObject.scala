@@ -23,10 +23,10 @@ object ClientSideLoggingClientInfoObject {
     window_size: js.UndefOr[Boolean] = js.undefined
   ): ClientSideLoggingClientInfoObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(location)) __obj.updateDynamic("location")(location)
-    if (!js.isUndefined(screen_size)) __obj.updateDynamic("screen_size")(screen_size)
-    if (!js.isUndefined(user_agent)) __obj.updateDynamic("user_agent")(user_agent)
-    if (!js.isUndefined(window_size)) __obj.updateDynamic("window_size")(window_size)
+    if (!js.isUndefined(location)) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (!js.isUndefined(screen_size)) __obj.updateDynamic("screen_size")(screen_size.asInstanceOf[js.Any])
+    if (!js.isUndefined(user_agent)) __obj.updateDynamic("user_agent")(user_agent.asInstanceOf[js.Any])
+    if (!js.isUndefined(window_size)) __obj.updateDynamic("window_size")(window_size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientSideLoggingClientInfoObject]
   }
 }

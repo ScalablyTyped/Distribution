@@ -45,11 +45,11 @@ object IgComboLocale {
     placeHolder: js.Any = null
   ): IgComboLocale = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (clearButtonTitle != null) __obj.updateDynamic("clearButtonTitle")(clearButtonTitle)
-    if (dropDownButtonTitle != null) __obj.updateDynamic("dropDownButtonTitle")(dropDownButtonTitle)
-    if (noMatchFoundText != null) __obj.updateDynamic("noMatchFoundText")(noMatchFoundText)
-    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (clearButtonTitle != null) __obj.updateDynamic("clearButtonTitle")(clearButtonTitle.asInstanceOf[js.Any])
+    if (dropDownButtonTitle != null) __obj.updateDynamic("dropDownButtonTitle")(dropDownButtonTitle.asInstanceOf[js.Any])
+    if (noMatchFoundText != null) __obj.updateDynamic("noMatchFoundText")(noMatchFoundText.asInstanceOf[js.Any])
+    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgComboLocale]
   }
 }

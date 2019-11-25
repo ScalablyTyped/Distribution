@@ -15,7 +15,7 @@ trait Anon_Applicationoctetstream extends js.Object {
 object Anon_Applicationoctetstream {
   @scala.inline
   def apply(data: String | Buffer, name: String, `type`: String | `application/octet-stream`): Anon_Applicationoctetstream = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Applicationoctetstream]
   }

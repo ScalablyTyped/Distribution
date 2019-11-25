@@ -49,18 +49,18 @@ object Resource {
     warnings: js.Array[Anon_CodeData] = null
   ): Resource = {
     val __obj = js.Dynamic.literal()
-    if (accessControl != null) __obj.updateDynamic("accessControl")(accessControl)
-    if (finalProperties != null) __obj.updateDynamic("finalProperties")(finalProperties)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime)
-    if (manifest != null) __obj.updateDynamic("manifest")(manifest)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (update != null) __obj.updateDynamic("update")(update)
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    if (accessControl != null) __obj.updateDynamic("accessControl")(accessControl.asInstanceOf[js.Any])
+    if (finalProperties != null) __obj.updateDynamic("finalProperties")(finalProperties.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime.asInstanceOf[js.Any])
+    if (manifest != null) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
 }

@@ -13,8 +13,8 @@ trait Anon_Auto extends js.Object {
 object Anon_Auto {
   @scala.inline
   def apply(auto: js.Array[Guide], `override`: js.Array[Guide]): Anon_Auto = {
-    val __obj = js.Dynamic.literal(auto = auto)
-    __obj.updateDynamic("override")(`override`)
+    val __obj = js.Dynamic.literal(auto = auto.asInstanceOf[js.Any])
+    __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Auto]
   }
 }

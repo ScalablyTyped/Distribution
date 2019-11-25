@@ -27,8 +27,8 @@ object TurnBasedAutoMatchingCriteria {
     minAutoMatchingPlayers: Int | Double = null
   ): TurnBasedAutoMatchingCriteria = {
     val __obj = js.Dynamic.literal()
-    if (exclusiveBitmask != null) __obj.updateDynamic("exclusiveBitmask")(exclusiveBitmask)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (exclusiveBitmask != null) __obj.updateDynamic("exclusiveBitmask")(exclusiveBitmask.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (maxAutoMatchingPlayers != null) __obj.updateDynamic("maxAutoMatchingPlayers")(maxAutoMatchingPlayers.asInstanceOf[js.Any])
     if (minAutoMatchingPlayers != null) __obj.updateDynamic("minAutoMatchingPlayers")(minAutoMatchingPlayers.asInstanceOf[js.Any])
     __obj.asInstanceOf[TurnBasedAutoMatchingCriteria]

@@ -15,7 +15,7 @@ object PreactDOMAttributes {
   def apply(children: ComponentChildren = null, dangerouslySetInnerHTML: Anon_Html = null): PreactDOMAttributes = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML)
+    if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreactDOMAttributes]
   }
 }

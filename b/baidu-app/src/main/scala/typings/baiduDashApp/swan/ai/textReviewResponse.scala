@@ -14,7 +14,7 @@ trait textReviewResponse extends js.Object {
 object textReviewResponse {
   @scala.inline
   def apply(log_id: String, result: Anon_Pass): textReviewResponse = {
-    val __obj = js.Dynamic.literal(log_id = log_id, result = result)
+    val __obj = js.Dynamic.literal(log_id = log_id.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[textReviewResponse]
   }

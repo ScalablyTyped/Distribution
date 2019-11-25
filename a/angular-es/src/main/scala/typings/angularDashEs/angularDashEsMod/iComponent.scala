@@ -29,12 +29,12 @@ object iComponent {
     templateUrl: String = null,
     transclude: String = null
   ): iComponent = {
-    val __obj = js.Dynamic.literal(selector = selector, template = template)
-    if (bindings != null) __obj.updateDynamic("bindings")(bindings)
-    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs)
-    if (require != null) __obj.updateDynamic("require")(require)
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
-    if (transclude != null) __obj.updateDynamic("transclude")(transclude)
+    val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
+    if (bindings != null) __obj.updateDynamic("bindings")(bindings.asInstanceOf[js.Any])
+    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs.asInstanceOf[js.Any])
+    if (require != null) __obj.updateDynamic("require")(require.asInstanceOf[js.Any])
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
+    if (transclude != null) __obj.updateDynamic("transclude")(transclude.asInstanceOf[js.Any])
     __obj.asInstanceOf[iComponent]
   }
 }

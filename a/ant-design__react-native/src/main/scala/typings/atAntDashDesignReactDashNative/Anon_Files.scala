@@ -14,7 +14,7 @@ trait Anon_Files extends js.Object {
 object Anon_Files {
   @scala.inline
   def apply(files: js.Array[scala.Nothing], onChange: () => Unit, onFail: () => Unit, selectable: Boolean): Anon_Files = {
-    val __obj = js.Dynamic.literal(files = files, onChange = js.Any.fromFunction0(onChange), onFail = js.Any.fromFunction0(onFail), selectable = selectable)
+    val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], onChange = js.Any.fromFunction0(onChange), onFail = js.Any.fromFunction0(onFail), selectable = selectable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Files]
   }

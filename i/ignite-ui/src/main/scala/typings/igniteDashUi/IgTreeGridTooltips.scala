@@ -106,20 +106,20 @@ object IgTreeGridTooltips {
     visibility: String = null
   ): IgTreeGridTooltips = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings.asInstanceOf[js.Any])
     if (cursorLeftOffset != null) __obj.updateDynamic("cursorLeftOffset")(cursorLeftOffset.asInstanceOf[js.Any])
     if (cursorTopOffset != null) __obj.updateDynamic("cursorTopOffset")(cursorTopOffset.asInstanceOf[js.Any])
     if (fadeTimespan != null) __obj.updateDynamic("fadeTimespan")(fadeTimespan.asInstanceOf[js.Any])
     if (hideDelay != null) __obj.updateDynamic("hideDelay")(hideDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit.asInstanceOf[js.Any])
     if (showDelay != null) __obj.updateDynamic("showDelay")(showDelay.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tooltipHidden != null) __obj.updateDynamic("tooltipHidden")(js.Any.fromFunction2(tooltipHidden))
     if (tooltipHiding != null) __obj.updateDynamic("tooltipHiding")(js.Any.fromFunction2(tooltipHiding))
     if (tooltipShowing != null) __obj.updateDynamic("tooltipShowing")(js.Any.fromFunction2(tooltipShowing))
     if (tooltipShown != null) __obj.updateDynamic("tooltipShown")(js.Any.fromFunction2(tooltipShown))
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTreeGridTooltips]
   }
 }

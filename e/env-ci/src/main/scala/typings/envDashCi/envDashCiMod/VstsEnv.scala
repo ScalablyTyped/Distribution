@@ -35,9 +35,9 @@ object VstsEnv {
     pr: String = null,
     prBranch: String = null
   ): VstsEnv = {
-    val __obj = js.Dynamic.literal(branch = branch, build = build, commit = commit, isCi = isCi, isPr = isPr, name = name, root = root, service = service)
-    if (pr != null) __obj.updateDynamic("pr")(pr)
-    if (prBranch != null) __obj.updateDynamic("prBranch")(prBranch)
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
+    if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
+    if (prBranch != null) __obj.updateDynamic("prBranch")(prBranch.asInstanceOf[js.Any])
     __obj.asInstanceOf[VstsEnv]
   }
 }

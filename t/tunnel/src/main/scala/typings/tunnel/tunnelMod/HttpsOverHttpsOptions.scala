@@ -20,11 +20,11 @@ object HttpsOverHttpsOptions {
     proxy: HttpsProxyOptions = null
   ): HttpsOverHttpsOptions = {
     val __obj = js.Dynamic.literal()
-    if (ca != null) __obj.updateDynamic("ca")(ca)
-    if (cert != null) __obj.updateDynamic("cert")(cert)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
+    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (maxSockets != null) __obj.updateDynamic("maxSockets")(maxSockets.asInstanceOf[js.Any])
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpsOverHttpsOptions]
   }
 }

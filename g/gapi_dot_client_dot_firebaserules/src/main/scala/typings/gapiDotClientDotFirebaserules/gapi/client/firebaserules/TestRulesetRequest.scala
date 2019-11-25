@@ -19,8 +19,8 @@ object TestRulesetRequest {
   @scala.inline
   def apply(source: Source = null, testSuite: TestSuite = null): TestRulesetRequest = {
     val __obj = js.Dynamic.literal()
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (testSuite != null) __obj.updateDynamic("testSuite")(testSuite)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (testSuite != null) __obj.updateDynamic("testSuite")(testSuite.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestRulesetRequest]
   }
 }

@@ -17,9 +17,9 @@ object DriveRecipient {
   @scala.inline
   def apply(alias: String = null, email: String = null, objectId: String = null): DriveRecipient = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DriveRecipient]
   }
 }

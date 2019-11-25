@@ -14,9 +14,9 @@ object LiveChatPollOpenedDetails {
   @scala.inline
   def apply(id: String = null, items: js.Array[LiveChatPollItem] = null, prompt: String = null): LiveChatPollOpenedDetails = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveChatPollOpenedDetails]
   }
 }

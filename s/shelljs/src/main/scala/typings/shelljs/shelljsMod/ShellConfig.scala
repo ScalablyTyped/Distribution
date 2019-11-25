@@ -42,8 +42,8 @@ object ShellConfig {
     verbose: Boolean,
     execPath: String = null
   ): ShellConfig = {
-    val __obj = js.Dynamic.literal(fatal = fatal, globOptions = globOptions, reset = js.Any.fromFunction0(reset), silent = silent, verbose = verbose)
-    if (execPath != null) __obj.updateDynamic("execPath")(execPath)
+    val __obj = js.Dynamic.literal(fatal = fatal.asInstanceOf[js.Any], globOptions = globOptions.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), silent = silent.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
+    if (execPath != null) __obj.updateDynamic("execPath")(execPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShellConfig]
   }
 }

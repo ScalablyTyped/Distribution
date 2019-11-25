@@ -13,7 +13,7 @@ object Explicit {
   @scala.inline
   def apply(bounds: js.Array[Double] = null): Explicit = {
     val __obj = js.Dynamic.literal()
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     __obj.asInstanceOf[Explicit]
   }
 }

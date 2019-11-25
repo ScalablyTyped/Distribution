@@ -1,6 +1,5 @@
 package typings.typescriptDashServices.typescriptDashServicesMod.Services.Formatting
 
-import typings.typescriptDashServices.TypeScript.Services.Formatting.RuleFlags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +15,7 @@ class Rule protected ()
   def this(
     Descriptor: typings.typescriptDashServices.TypeScript.Services.Formatting.RuleDescriptor,
     Operation: typings.typescriptDashServices.TypeScript.Services.Formatting.RuleOperation,
-    Flag: RuleFlags
+    Flag: typings.typescriptDashServices.TypeScript.Services.Formatting.RuleFlags
   ) = this()
 }
 

@@ -24,7 +24,7 @@ object GitAsyncRefOperation {
     status: GitAsyncOperationStatus,
     url: String
   ): GitAsyncRefOperation = {
-    val __obj = js.Dynamic.literal(_links = _links, detailedStatus = detailedStatus, parameters = parameters, status = status, url = url)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], detailedStatus = detailedStatus.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitAsyncRefOperation]
   }

@@ -26,11 +26,11 @@ object Options {
     info: Anon_Debug = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (cacheDirectory != null) __obj.updateDynamic("cacheDirectory")(cacheDirectory)
-    if (cachePrune != null) __obj.updateDynamic("cachePrune")(cachePrune)
+    if (cacheDirectory != null) __obj.updateDynamic("cacheDirectory")(cacheDirectory.asInstanceOf[js.Any])
+    if (cachePrune != null) __obj.updateDynamic("cachePrune")(cachePrune.asInstanceOf[js.Any])
     if (configHash != null) __obj.updateDynamic("configHash")(configHash.asInstanceOf[js.Any])
-    if (environmentHash != null) __obj.updateDynamic("environmentHash")(environmentHash)
-    if (info != null) __obj.updateDynamic("info")(info)
+    if (environmentHash != null) __obj.updateDynamic("environmentHash")(environmentHash.asInstanceOf[js.Any])
+    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

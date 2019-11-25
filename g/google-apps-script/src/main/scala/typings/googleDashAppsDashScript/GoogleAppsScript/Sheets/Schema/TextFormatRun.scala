@@ -13,7 +13,7 @@ object TextFormatRun {
   @scala.inline
   def apply(format: TextFormat = null, startIndex: Int | Double = null): TextFormatRun = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextFormatRun]
   }

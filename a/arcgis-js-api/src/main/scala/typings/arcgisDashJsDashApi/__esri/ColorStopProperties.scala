@@ -30,7 +30,7 @@ object ColorStopProperties {
   def apply(color: Color | js.Array[Double] | String = null, label: String = null, value: Int | Double = null): ColorStopProperties = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorStopProperties]
   }

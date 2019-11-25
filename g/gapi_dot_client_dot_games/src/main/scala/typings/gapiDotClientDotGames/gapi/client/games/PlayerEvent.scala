@@ -30,11 +30,11 @@ object PlayerEvent {
     playerId: String = null
   ): PlayerEvent = {
     val __obj = js.Dynamic.literal()
-    if (definitionId != null) __obj.updateDynamic("definitionId")(definitionId)
-    if (formattedNumEvents != null) __obj.updateDynamic("formattedNumEvents")(formattedNumEvents)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (numEvents != null) __obj.updateDynamic("numEvents")(numEvents)
-    if (playerId != null) __obj.updateDynamic("playerId")(playerId)
+    if (definitionId != null) __obj.updateDynamic("definitionId")(definitionId.asInstanceOf[js.Any])
+    if (formattedNumEvents != null) __obj.updateDynamic("formattedNumEvents")(formattedNumEvents.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (numEvents != null) __obj.updateDynamic("numEvents")(numEvents.asInstanceOf[js.Any])
+    if (playerId != null) __obj.updateDynamic("playerId")(playerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayerEvent]
   }
 }

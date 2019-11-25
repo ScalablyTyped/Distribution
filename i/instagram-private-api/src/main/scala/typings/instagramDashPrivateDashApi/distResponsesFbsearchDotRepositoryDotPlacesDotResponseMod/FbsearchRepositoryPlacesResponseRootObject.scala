@@ -19,7 +19,7 @@ object FbsearchRepositoryPlacesResponseRootObject {
     rank_token: String,
     status: String
   ): FbsearchRepositoryPlacesResponseRootObject = {
-    val __obj = js.Dynamic.literal(has_more = has_more, items = items, rank_token = rank_token, status = status)
+    val __obj = js.Dynamic.literal(has_more = has_more.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], rank_token = rank_token.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FbsearchRepositoryPlacesResponseRootObject]
   }

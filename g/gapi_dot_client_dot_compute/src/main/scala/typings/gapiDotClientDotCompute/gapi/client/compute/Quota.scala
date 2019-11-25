@@ -18,7 +18,7 @@ object Quota {
   def apply(limit: Int | Double = null, metric: String = null, usage: Int | Double = null): Quota = {
     val __obj = js.Dynamic.literal()
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (metric != null) __obj.updateDynamic("metric")(metric)
+    if (metric != null) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
     if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Quota]
   }

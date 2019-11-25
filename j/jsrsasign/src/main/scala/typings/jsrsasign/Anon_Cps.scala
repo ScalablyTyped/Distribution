@@ -13,7 +13,7 @@ trait Anon_Cps extends js.Object {
 object Anon_Cps {
   @scala.inline
   def apply(cps: String, id: String, unotice: String): Anon_Cps = {
-    val __obj = js.Dynamic.literal(cps = cps, id = id, unotice = unotice)
+    val __obj = js.Dynamic.literal(cps = cps.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], unotice = unotice.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Cps]
   }

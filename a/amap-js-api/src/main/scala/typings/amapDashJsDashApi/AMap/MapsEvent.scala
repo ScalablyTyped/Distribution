@@ -14,7 +14,7 @@ trait MapsEvent[N /* <: String */, I] extends js.Object {
 object MapsEvent {
   @scala.inline
   def apply[N /* <: String */, I](`type`: N, value: Anon_Lnglat[I]): MapsEvent[N, I] = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapsEvent[N, I]]
   }

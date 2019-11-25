@@ -11,7 +11,7 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(RTCPeerConnection: RTCPeerConnectionStatic): Window = {
-    val __obj = js.Dynamic.literal(RTCPeerConnection = RTCPeerConnection)
+    val __obj = js.Dynamic.literal(RTCPeerConnection = RTCPeerConnection.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Window]
   }

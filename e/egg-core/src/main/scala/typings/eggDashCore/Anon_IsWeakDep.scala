@@ -13,7 +13,7 @@ object Anon_IsWeakDep {
   @scala.inline
   def apply(isWeakDep: js.UndefOr[Boolean] = js.undefined, timeout: Int | Double = null): Anon_IsWeakDep = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isWeakDep)) __obj.updateDynamic("isWeakDep")(isWeakDep)
+    if (!js.isUndefined(isWeakDep)) __obj.updateDynamic("isWeakDep")(isWeakDep.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IsWeakDep]
   }

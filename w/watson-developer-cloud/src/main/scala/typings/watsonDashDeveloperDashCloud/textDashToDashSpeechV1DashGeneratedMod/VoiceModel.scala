@@ -36,14 +36,14 @@ object VoiceModel {
     owner: String = null,
     words: js.Array[Word] = null
   ): VoiceModel = {
-    val __obj = js.Dynamic.literal(customization_id = customization_id)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (last_modified != null) __obj.updateDynamic("last_modified")(last_modified)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (words != null) __obj.updateDynamic("words")(words)
+    val __obj = js.Dynamic.literal(customization_id = customization_id.asInstanceOf[js.Any])
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (last_modified != null) __obj.updateDynamic("last_modified")(last_modified.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (words != null) __obj.updateDynamic("words")(words.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoiceModel]
   }
 }

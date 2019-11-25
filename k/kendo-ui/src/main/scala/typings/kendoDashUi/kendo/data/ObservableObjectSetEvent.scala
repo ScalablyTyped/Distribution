@@ -18,10 +18,10 @@ object ObservableObjectSetEvent {
     value: js.Any = null
   ): ObservableObjectSetEvent = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (preventDefault != null) __obj.updateDynamic("preventDefault")(preventDefault)
-    if (sender != null) __obj.updateDynamic("sender")(sender)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (preventDefault != null) __obj.updateDynamic("preventDefault")(preventDefault.asInstanceOf[js.Any])
+    if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObservableObjectSetEvent]
   }
 }

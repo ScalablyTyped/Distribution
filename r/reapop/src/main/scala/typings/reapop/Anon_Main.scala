@@ -13,7 +13,7 @@ object Anon_Main {
   @scala.inline
   def apply(main: String = null, position: /* position */ String => String = null): Anon_Main = {
     val __obj = js.Dynamic.literal()
-    if (main != null) __obj.updateDynamic("main")(main)
+    if (main != null) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(js.Any.fromFunction1(position))
     __obj.asInstanceOf[Anon_Main]
   }

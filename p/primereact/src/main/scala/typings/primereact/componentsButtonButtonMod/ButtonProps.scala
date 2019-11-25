@@ -29,13 +29,13 @@ object ButtonProps {
     tooltipOptions: TooltipOptions = null
   ): ButtonProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (cornerStyleClass != null) __obj.updateDynamic("cornerStyleClass")(cornerStyleClass)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (iconPos != null) __obj.updateDynamic("iconPos")(iconPos)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
-    if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (cornerStyleClass != null) __obj.updateDynamic("cornerStyleClass")(cornerStyleClass.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (iconPos != null) __obj.updateDynamic("iconPos")(iconPos.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonProps]
   }
 }

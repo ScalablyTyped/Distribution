@@ -28,12 +28,12 @@ object EventTelemetry {
     tagOverrides: StringDictionary[String] = null,
     time: Date = null
   ): EventTelemetry = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects)
-    if (measurements != null) __obj.updateDynamic("measurements")(measurements)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (tagOverrides != null) __obj.updateDynamic("tagOverrides")(tagOverrides)
-    if (time != null) __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects.asInstanceOf[js.Any])
+    if (measurements != null) __obj.updateDynamic("measurements")(measurements.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (tagOverrides != null) __obj.updateDynamic("tagOverrides")(tagOverrides.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventTelemetry]
   }
 }

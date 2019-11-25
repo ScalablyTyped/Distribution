@@ -17,8 +17,8 @@ object ILineChange {
     originalStartLineNumber: Double,
     charChanges: js.Array[ICharChange] = null
   ): ILineChange = {
-    val __obj = js.Dynamic.literal(modifiedEndLineNumber = modifiedEndLineNumber, modifiedStartLineNumber = modifiedStartLineNumber, originalEndLineNumber = originalEndLineNumber, originalStartLineNumber = originalStartLineNumber)
-    if (charChanges != null) __obj.updateDynamic("charChanges")(charChanges)
+    val __obj = js.Dynamic.literal(modifiedEndLineNumber = modifiedEndLineNumber.asInstanceOf[js.Any], modifiedStartLineNumber = modifiedStartLineNumber.asInstanceOf[js.Any], originalEndLineNumber = originalEndLineNumber.asInstanceOf[js.Any], originalStartLineNumber = originalStartLineNumber.asInstanceOf[js.Any])
+    if (charChanges != null) __obj.updateDynamic("charChanges")(charChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILineChange]
   }
 }

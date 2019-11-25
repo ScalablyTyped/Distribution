@@ -15,9 +15,9 @@ object PartialClassNameMapAvatarClassKey {
   @scala.inline
   def apply(colorDefault: String = null, img: String = null, root: String = null): PartialClassNameMapAvatarClassKey = {
     val __obj = js.Dynamic.literal()
-    if (colorDefault != null) __obj.updateDynamic("colorDefault")(colorDefault)
-    if (img != null) __obj.updateDynamic("img")(img)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (colorDefault != null) __obj.updateDynamic("colorDefault")(colorDefault.asInstanceOf[js.Any])
+    if (img != null) __obj.updateDynamic("img")(img.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapAvatarClassKey]
   }
 }

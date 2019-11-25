@@ -16,7 +16,7 @@ object Anon_AutoOffTooltipDisplayTooltipLabel {
   def apply(tooltipDisplay: off | auto = null, tooltipLabel: String = null): Anon_AutoOffTooltipDisplayTooltipLabel = {
     val __obj = js.Dynamic.literal()
     if (tooltipDisplay != null) __obj.updateDynamic("tooltipDisplay")(tooltipDisplay.asInstanceOf[js.Any])
-    if (tooltipLabel != null) __obj.updateDynamic("tooltipLabel")(tooltipLabel)
+    if (tooltipLabel != null) __obj.updateDynamic("tooltipLabel")(tooltipLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoOffTooltipDisplayTooltipLabel]
   }
 }

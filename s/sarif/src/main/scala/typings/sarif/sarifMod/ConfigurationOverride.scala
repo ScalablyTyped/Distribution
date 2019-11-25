@@ -26,8 +26,8 @@ object ConfigurationOverride {
     descriptor: ReportingDescriptorReference,
     properties: PropertyBag = null
   ): ConfigurationOverride = {
-    val __obj = js.Dynamic.literal(configuration = configuration, descriptor = descriptor)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(configuration = configuration.asInstanceOf[js.Any], descriptor = descriptor.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationOverride]
   }
 }

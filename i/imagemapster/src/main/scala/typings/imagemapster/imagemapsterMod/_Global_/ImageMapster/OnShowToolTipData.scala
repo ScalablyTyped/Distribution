@@ -24,7 +24,7 @@ trait OnShowToolTipData extends js.Object {
 object OnShowToolTipData {
   @scala.inline
   def apply(areaOptions: AreaRenderingOptions, key: String, selected: Boolean, toolTip: JQuery): OnShowToolTipData = {
-    val __obj = js.Dynamic.literal(areaOptions = areaOptions, key = key, selected = selected, toolTip = toolTip)
+    val __obj = js.Dynamic.literal(areaOptions = areaOptions.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], toolTip = toolTip.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OnShowToolTipData]
   }

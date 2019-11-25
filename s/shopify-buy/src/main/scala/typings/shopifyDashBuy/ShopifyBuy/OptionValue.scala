@@ -13,7 +13,7 @@ trait OptionValue extends js.Object {
 object OptionValue {
   @scala.inline
   def apply(name: String, option_id: String, value: js.Any): OptionValue = {
-    val __obj = js.Dynamic.literal(name = name, option_id = option_id, value = value)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], option_id = option_id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OptionValue]
   }

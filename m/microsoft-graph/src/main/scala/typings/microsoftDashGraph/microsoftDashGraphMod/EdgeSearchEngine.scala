@@ -16,7 +16,7 @@ object EdgeSearchEngine {
   @scala.inline
   def apply(edgeSearchEngineType: EdgeSearchEngineType = null): EdgeSearchEngine = {
     val __obj = js.Dynamic.literal()
-    if (edgeSearchEngineType != null) __obj.updateDynamic("edgeSearchEngineType")(edgeSearchEngineType)
+    if (edgeSearchEngineType != null) __obj.updateDynamic("edgeSearchEngineType")(edgeSearchEngineType.asInstanceOf[js.Any])
     __obj.asInstanceOf[EdgeSearchEngine]
   }
 }

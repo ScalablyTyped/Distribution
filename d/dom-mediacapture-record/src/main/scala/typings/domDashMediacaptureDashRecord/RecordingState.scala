@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait RecordingState extends js.Object
 
+object RecordingState {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def inactive: typings.domDashMediacaptureDashRecord.domDashMediacaptureDashRecordStrings.inactive = this.cast("inactive")
+  @scala.inline
+  def paused: typings.domDashMediacaptureDashRecord.domDashMediacaptureDashRecordStrings.paused = this.cast("paused")
+  @scala.inline
+  def recording: typings.domDashMediacaptureDashRecord.domDashMediacaptureDashRecordStrings.recording = this.cast("recording")
+}
+

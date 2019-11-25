@@ -53,8 +53,8 @@ object CommentController {
     commentingRangeProvider: CommentingRangeProvider = null,
     reactionHandler: (/* comment */ Comment, /* reaction */ CommentReaction) => js.Promise[Unit] = null
   ): CommentController = {
-    val __obj = js.Dynamic.literal(createCommentThread = js.Any.fromFunction3(createCommentThread), dispose = js.Any.fromFunction0(dispose), id = id, label = label)
-    if (commentingRangeProvider != null) __obj.updateDynamic("commentingRangeProvider")(commentingRangeProvider)
+    val __obj = js.Dynamic.literal(createCommentThread = js.Any.fromFunction3(createCommentThread), dispose = js.Any.fromFunction0(dispose), id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+    if (commentingRangeProvider != null) __obj.updateDynamic("commentingRangeProvider")(commentingRangeProvider.asInstanceOf[js.Any])
     if (reactionHandler != null) __obj.updateDynamic("reactionHandler")(js.Any.fromFunction2(reactionHandler))
     __obj.asInstanceOf[CommentController]
   }

@@ -15,7 +15,7 @@ trait DirectThreadRepositoryAddUserResponseTextAttributesItem extends js.Object 
 object DirectThreadRepositoryAddUserResponseTextAttributesItem {
   @scala.inline
   def apply(bold: Double, color: String, end: Double, intent: String, start: Double): DirectThreadRepositoryAddUserResponseTextAttributesItem = {
-    val __obj = js.Dynamic.literal(bold = bold, color = color, end = end, intent = intent, start = start)
+    val __obj = js.Dynamic.literal(bold = bold.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], intent = intent.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DirectThreadRepositoryAddUserResponseTextAttributesItem]
   }

@@ -14,9 +14,9 @@ trait ReaderPaginationMetadata extends js.Object {
 object ReaderPaginationMetadata {
   @scala.inline
   def apply(path: js.Array[String], backward: Anon_Count = null, forward: Anon_Count = null): ReaderPaginationMetadata = {
-    val __obj = js.Dynamic.literal(path = path)
-    if (backward != null) __obj.updateDynamic("backward")(backward)
-    if (forward != null) __obj.updateDynamic("forward")(forward)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    if (backward != null) __obj.updateDynamic("backward")(backward.asInstanceOf[js.Any])
+    if (forward != null) __obj.updateDynamic("forward")(forward.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderPaginationMetadata]
   }
 }

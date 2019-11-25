@@ -21,9 +21,9 @@ object Activities {
     metricNames: js.Array[String] = null
   ): Activities = {
     val __obj = js.Dynamic.literal()
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (metricNames != null) __obj.updateDynamic("metricNames")(metricNames)
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (metricNames != null) __obj.updateDynamic("metricNames")(metricNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[Activities]
   }
 }

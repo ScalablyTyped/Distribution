@@ -15,7 +15,7 @@ trait ISPECTATOR_TO_PLAYER extends js.Object {
 object ISPECTATOR_TO_PLAYER {
   @scala.inline
   def apply(playerId: Double, room: SFSRoom, user: SFSUser): ISPECTATOR_TO_PLAYER = {
-    val __obj = js.Dynamic.literal(playerId = playerId, room = room, user = user)
+    val __obj = js.Dynamic.literal(playerId = playerId.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISPECTATOR_TO_PLAYER]
   }

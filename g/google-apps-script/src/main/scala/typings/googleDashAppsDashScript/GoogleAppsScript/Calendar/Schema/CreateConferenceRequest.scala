@@ -18,9 +18,9 @@ object CreateConferenceRequest {
     status: ConferenceRequestStatus = null
   ): CreateConferenceRequest = {
     val __obj = js.Dynamic.literal()
-    if (conferenceSolutionKey != null) __obj.updateDynamic("conferenceSolutionKey")(conferenceSolutionKey)
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (conferenceSolutionKey != null) __obj.updateDynamic("conferenceSolutionKey")(conferenceSolutionKey.asInstanceOf[js.Any])
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateConferenceRequest]
   }
 }

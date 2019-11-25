@@ -11,7 +11,7 @@ trait Anon_ContentSizeAnonHeightWidth extends js.Object {
 object Anon_ContentSizeAnonHeightWidth {
   @scala.inline
   def apply(contentSize: Anon_HeightWidth): Anon_ContentSizeAnonHeightWidth = {
-    val __obj = js.Dynamic.literal(contentSize = contentSize)
+    val __obj = js.Dynamic.literal(contentSize = contentSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContentSizeAnonHeightWidth]
   }

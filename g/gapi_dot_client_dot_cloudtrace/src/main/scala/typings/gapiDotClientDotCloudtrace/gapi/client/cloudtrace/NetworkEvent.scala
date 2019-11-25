@@ -34,11 +34,11 @@ object NetworkEvent {
     uncompressedMessageSize: String = null
   ): NetworkEvent = {
     val __obj = js.Dynamic.literal()
-    if (compressedMessageSize != null) __obj.updateDynamic("compressedMessageSize")(compressedMessageSize)
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId)
-    if (time != null) __obj.updateDynamic("time")(time)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (uncompressedMessageSize != null) __obj.updateDynamic("uncompressedMessageSize")(uncompressedMessageSize)
+    if (compressedMessageSize != null) __obj.updateDynamic("compressedMessageSize")(compressedMessageSize.asInstanceOf[js.Any])
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (uncompressedMessageSize != null) __obj.updateDynamic("uncompressedMessageSize")(uncompressedMessageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkEvent]
   }
 }

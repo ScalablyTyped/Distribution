@@ -15,7 +15,7 @@ trait SearchResult[Raw] extends js.Object {
 object SearchResult {
   @scala.inline
   def apply[Raw](bounds: BoundsTuple, label: String, raw: Raw, x: String, y: String): SearchResult[Raw] = {
-    val __obj = js.Dynamic.literal(bounds = bounds, label = label, raw = raw.asInstanceOf[js.Any], x = x, y = y)
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SearchResult[Raw]]
   }

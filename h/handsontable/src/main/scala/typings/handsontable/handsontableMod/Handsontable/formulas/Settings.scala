@@ -13,7 +13,7 @@ object Settings {
   @scala.inline
   def apply(variables: StringDictionary[js.Any] = null): Settings = {
     val __obj = js.Dynamic.literal()
-    if (variables != null) __obj.updateDynamic("variables")(variables)
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

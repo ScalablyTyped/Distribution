@@ -120,8 +120,8 @@ object Options {
     verifyOptions: VerifyOptions = null
   ): Options = {
     val __obj = js.Dynamic.literal(validate = js.Any.fromFunction3(validate))
-    if (!js.isUndefined(attemptToExtractTokenInPayload)) __obj.updateDynamic("attemptToExtractTokenInPayload")(attemptToExtractTokenInPayload)
-    if (!js.isUndefined(complete)) __obj.updateDynamic("complete")(complete)
+    if (!js.isUndefined(attemptToExtractTokenInPayload)) __obj.updateDynamic("attemptToExtractTokenInPayload")(attemptToExtractTokenInPayload.asInstanceOf[js.Any])
+    if (!js.isUndefined(complete)) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
     if (cookieKey != null) __obj.updateDynamic("cookieKey")(cookieKey.asInstanceOf[js.Any])
     if (customExtractionFunc != null) __obj.updateDynamic("customExtractionFunc")(js.Any.fromFunction1(customExtractionFunc))
     if (errorFunc != null) __obj.updateDynamic("errorFunc")(js.Any.fromFunction1(errorFunc))
@@ -129,9 +129,9 @@ object Options {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (payloadKey != null) __obj.updateDynamic("payloadKey")(payloadKey.asInstanceOf[js.Any])
     if (responseFunc != null) __obj.updateDynamic("responseFunc")(js.Any.fromFunction2(responseFunc))
-    if (tokenType != null) __obj.updateDynamic("tokenType")(tokenType)
+    if (tokenType != null) __obj.updateDynamic("tokenType")(tokenType.asInstanceOf[js.Any])
     if (urlKey != null) __obj.updateDynamic("urlKey")(urlKey.asInstanceOf[js.Any])
-    if (verifyOptions != null) __obj.updateDynamic("verifyOptions")(verifyOptions)
+    if (verifyOptions != null) __obj.updateDynamic("verifyOptions")(verifyOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

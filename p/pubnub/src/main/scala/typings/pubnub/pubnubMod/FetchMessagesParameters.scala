@@ -29,14 +29,14 @@ object FetchMessagesParameters {
     stringifiedTimeToken: js.UndefOr[Boolean] = js.undefined,
     withMessageActions: js.UndefOr[Boolean] = js.undefined
   ): FetchMessagesParameters = {
-    val __obj = js.Dynamic.literal(channels = channels)
+    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeMessageActions)) __obj.updateDynamic("includeMessageActions")(includeMessageActions)
-    if (!js.isUndefined(includeMeta)) __obj.updateDynamic("includeMeta")(includeMeta)
+    if (!js.isUndefined(includeMessageActions)) __obj.updateDynamic("includeMessageActions")(includeMessageActions.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeMeta)) __obj.updateDynamic("includeMeta")(includeMeta.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (!js.isUndefined(stringifiedTimeToken)) __obj.updateDynamic("stringifiedTimeToken")(stringifiedTimeToken)
-    if (!js.isUndefined(withMessageActions)) __obj.updateDynamic("withMessageActions")(withMessageActions)
+    if (!js.isUndefined(stringifiedTimeToken)) __obj.updateDynamic("stringifiedTimeToken")(stringifiedTimeToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(withMessageActions)) __obj.updateDynamic("withMessageActions")(withMessageActions.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchMessagesParameters]
   }
 }

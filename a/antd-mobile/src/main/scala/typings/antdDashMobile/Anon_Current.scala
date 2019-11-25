@@ -23,7 +23,7 @@ object Anon_Current {
     simple: Boolean,
     total: Double
   ): Anon_Current = {
-    val __obj = js.Dynamic.literal(current = current, mode = mode, onChange = js.Any.fromFunction0(onChange), prefixCls = prefixCls, simple = simple, total = total)
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], onChange = js.Any.fromFunction0(onChange), prefixCls = prefixCls.asInstanceOf[js.Any], simple = simple.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Current]
   }

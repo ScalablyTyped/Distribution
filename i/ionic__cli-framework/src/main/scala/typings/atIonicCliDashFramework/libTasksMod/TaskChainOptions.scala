@@ -13,7 +13,7 @@ object TaskChainOptions {
   @scala.inline
   def apply(taskOptions: Partial[TaskOptions] = null): TaskChainOptions = {
     val __obj = js.Dynamic.literal()
-    if (taskOptions != null) __obj.updateDynamic("taskOptions")(taskOptions)
+    if (taskOptions != null) __obj.updateDynamic("taskOptions")(taskOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskChainOptions]
   }
 }

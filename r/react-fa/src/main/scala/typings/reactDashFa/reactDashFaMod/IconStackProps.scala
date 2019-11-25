@@ -20,9 +20,9 @@ object IconStackProps {
     size: IconSize = null
   ): IconStackProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, SizeOverrideHTMLProps)
+    if (SizeOverrideHTMLProps != null) js.Dynamic.global.Object.assign(__obj, SizeOverrideHTMLProps)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconStackProps]
   }
 }

@@ -63,8 +63,8 @@ object TreeChanges {
     StringDictionary: /** @nodoc */
   /* key */ StringDictionary[js.UndefOr[js.Array[PathNode]]] = null
   ): TreeChanges = {
-    val __obj = js.Dynamic.literal(entering = entering, exiting = exiting, from = from, retained = retained, retainedWithToParams = retainedWithToParams, to = to)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(entering = entering.asInstanceOf[js.Any], exiting = exiting.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], retained = retained.asInstanceOf[js.Any], retainedWithToParams = retainedWithToParams.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[TreeChanges]
   }
 }

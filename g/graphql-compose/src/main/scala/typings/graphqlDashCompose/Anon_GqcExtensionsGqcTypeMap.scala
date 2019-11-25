@@ -21,9 +21,9 @@ object Anon_GqcExtensionsGqcTypeMap {
     _gqcExtensions: Extensions = null,
     _gqcTypeResolvers: UnionTypeResolversMap[TSource, TContext] = null
   ): Anon_GqcExtensionsGqcTypeMap[TSource, TContext] = {
-    val __obj = js.Dynamic.literal(_gqcTypeMap = _gqcTypeMap)
-    if (_gqcExtensions != null) __obj.updateDynamic("_gqcExtensions")(_gqcExtensions)
-    if (_gqcTypeResolvers != null) __obj.updateDynamic("_gqcTypeResolvers")(_gqcTypeResolvers)
+    val __obj = js.Dynamic.literal(_gqcTypeMap = _gqcTypeMap.asInstanceOf[js.Any])
+    if (_gqcExtensions != null) __obj.updateDynamic("_gqcExtensions")(_gqcExtensions.asInstanceOf[js.Any])
+    if (_gqcTypeResolvers != null) __obj.updateDynamic("_gqcTypeResolvers")(_gqcTypeResolvers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_GqcExtensionsGqcTypeMap[TSource, TContext]]
   }
 }

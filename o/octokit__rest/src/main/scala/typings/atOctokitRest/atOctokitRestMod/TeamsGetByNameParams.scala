@@ -12,7 +12,7 @@ trait TeamsGetByNameParams extends js.Object {
 object TeamsGetByNameParams {
   @scala.inline
   def apply(org: String, team_slug: String): TeamsGetByNameParams = {
-    val __obj = js.Dynamic.literal(org = org, team_slug = team_slug)
+    val __obj = js.Dynamic.literal(org = org.asInstanceOf[js.Any], team_slug = team_slug.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TeamsGetByNameParams]
   }

@@ -14,8 +14,8 @@ object OffCanvasOptions {
   @scala.inline
   def apply(close_on_click: js.UndefOr[Boolean] = js.undefined, open_method: String = null): OffCanvasOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(close_on_click)) __obj.updateDynamic("close_on_click")(close_on_click)
-    if (open_method != null) __obj.updateDynamic("open_method")(open_method)
+    if (!js.isUndefined(close_on_click)) __obj.updateDynamic("close_on_click")(close_on_click.asInstanceOf[js.Any])
+    if (open_method != null) __obj.updateDynamic("open_method")(open_method.asInstanceOf[js.Any])
     __obj.asInstanceOf[OffCanvasOptions]
   }
 }

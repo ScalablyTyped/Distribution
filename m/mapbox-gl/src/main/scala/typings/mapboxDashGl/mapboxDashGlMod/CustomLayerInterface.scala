@@ -85,8 +85,8 @@ object CustomLayerInterface {
     prerender: (/* gl */ WebGLRenderingContext, /* matrix */ js.Array[Double]) => Unit = null,
     renderingMode: `2d` | `3d` = null
   ): CustomLayerInterface = {
-    val __obj = js.Dynamic.literal(id = id, render = js.Any.fromFunction2(render))
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], render = js.Any.fromFunction2(render))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction2(onAdd))
     if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction2(onRemove))
     if (prerender != null) __obj.updateDynamic("prerender")(js.Any.fromFunction2(prerender))

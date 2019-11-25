@@ -12,7 +12,7 @@ trait Typeofdownloads extends js.Object {
 object Typeofdownloads {
   @scala.inline
   def apply(State: StateType): Typeofdownloads = {
-    val __obj = js.Dynamic.literal(State = State)
+    val __obj = js.Dynamic.literal(State = State.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofdownloads]
   }

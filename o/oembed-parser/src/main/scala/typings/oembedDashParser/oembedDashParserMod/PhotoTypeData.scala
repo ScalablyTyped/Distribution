@@ -37,17 +37,17 @@ object PhotoTypeData {
     thumbnail_width: Int | Double = null,
     title: String = null
   ): PhotoTypeData = {
-    val __obj = js.Dynamic.literal(height = height, url = url, version = version, width = width)
-    __obj.updateDynamic("type")(`type`)
-    if (author_name != null) __obj.updateDynamic("author_name")(author_name)
-    if (author_url != null) __obj.updateDynamic("author_url")(author_url)
-    if (cache_age != null) __obj.updateDynamic("cache_age")(cache_age)
-    if (provider_name != null) __obj.updateDynamic("provider_name")(provider_name)
-    if (provider_url != null) __obj.updateDynamic("provider_url")(provider_url)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (author_name != null) __obj.updateDynamic("author_name")(author_name.asInstanceOf[js.Any])
+    if (author_url != null) __obj.updateDynamic("author_url")(author_url.asInstanceOf[js.Any])
+    if (cache_age != null) __obj.updateDynamic("cache_age")(cache_age.asInstanceOf[js.Any])
+    if (provider_name != null) __obj.updateDynamic("provider_name")(provider_name.asInstanceOf[js.Any])
+    if (provider_url != null) __obj.updateDynamic("provider_url")(provider_url.asInstanceOf[js.Any])
     if (thumbnail_height != null) __obj.updateDynamic("thumbnail_height")(thumbnail_height.asInstanceOf[js.Any])
-    if (thumbnail_url != null) __obj.updateDynamic("thumbnail_url")(thumbnail_url)
+    if (thumbnail_url != null) __obj.updateDynamic("thumbnail_url")(thumbnail_url.asInstanceOf[js.Any])
     if (thumbnail_width != null) __obj.updateDynamic("thumbnail_width")(thumbnail_width.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhotoTypeData]
   }
 }

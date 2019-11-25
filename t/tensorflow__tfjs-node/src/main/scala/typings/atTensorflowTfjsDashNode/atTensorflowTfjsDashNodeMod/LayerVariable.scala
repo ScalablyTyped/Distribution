@@ -1,7 +1,6 @@
 package typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeMod
 
 import typings.atTensorflowTfjsDashCore.distTypesMod.DataType
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import typings.atTensorflowTfjsDashLayers.distConstraintsMod.Constraint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,21 +24,24 @@ class LayerVariable protected ()
     * variable after optimize updates
     * @throws ValueError if `name` is `null` or `undefined`.
     */
-  def this(`val`: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor[Rank]) = this()
-  def this(`val`: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor[Rank], dtype: DataType) = this()
+  def this(`val`: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]) = this()
   def this(
-    `val`: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor[Rank],
+    `val`: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+    dtype: DataType
+  ) = this()
+  def this(
+    `val`: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
     dtype: DataType,
     name: String
   ) = this()
   def this(
-    `val`: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor[Rank],
+    `val`: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
     dtype: DataType,
     name: String,
     trainable: Boolean
   ) = this()
   def this(
-    `val`: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor[Rank],
+    `val`: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
     dtype: DataType,
     name: String,
     trainable: Boolean,

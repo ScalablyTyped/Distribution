@@ -31,15 +31,15 @@ object IGridMetadata {
     RecordKeyHash: String = null,
     RecordKeyOrderChanged: js.Any = null
   ): IGridMetadata = {
-    val __obj = js.Dynamic.literal(KeyColumnName = KeyColumnName)
-    if (GridOperationalConstantsFieldKeyMap != null) __obj.updateDynamic("GridOperationalConstantsFieldKeyMap")(GridOperationalConstantsFieldKeyMap)
+    val __obj = js.Dynamic.literal(KeyColumnName = KeyColumnName.asInstanceOf[js.Any])
+    if (GridOperationalConstantsFieldKeyMap != null) __obj.updateDynamic("GridOperationalConstantsFieldKeyMap")(GridOperationalConstantsFieldKeyMap.asInstanceOf[js.Any])
     if (GroupingLevel != null) __obj.updateDynamic("GroupingLevel")(GroupingLevel.asInstanceOf[js.Any])
-    if (GroupingPrefix != null) __obj.updateDynamic("GroupingPrefix")(GroupingPrefix)
-    if (!js.isUndefined(IsGanttEnabled)) __obj.updateDynamic("IsGanttEnabled")(IsGanttEnabled)
-    if (!js.isUndefined(IsHierarchyEnabled)) __obj.updateDynamic("IsHierarchyEnabled")(IsHierarchyEnabled)
-    if (!js.isUndefined(IsSorted)) __obj.updateDynamic("IsSorted")(IsSorted)
-    if (RecordKeyHash != null) __obj.updateDynamic("RecordKeyHash")(RecordKeyHash)
-    if (RecordKeyOrderChanged != null) __obj.updateDynamic("RecordKeyOrderChanged")(RecordKeyOrderChanged)
+    if (GroupingPrefix != null) __obj.updateDynamic("GroupingPrefix")(GroupingPrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsGanttEnabled)) __obj.updateDynamic("IsGanttEnabled")(IsGanttEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsHierarchyEnabled)) __obj.updateDynamic("IsHierarchyEnabled")(IsHierarchyEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsSorted)) __obj.updateDynamic("IsSorted")(IsSorted.asInstanceOf[js.Any])
+    if (RecordKeyHash != null) __obj.updateDynamic("RecordKeyHash")(RecordKeyHash.asInstanceOf[js.Any])
+    if (RecordKeyOrderChanged != null) __obj.updateDynamic("RecordKeyOrderChanged")(RecordKeyOrderChanged.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridMetadata]
   }
 }

@@ -15,8 +15,8 @@ object Anon_IndexableText {
   @scala.inline
   def apply(indexableText: String = null, thumbnail: Anon_Image = null): Anon_IndexableText = {
     val __obj = js.Dynamic.literal()
-    if (indexableText != null) __obj.updateDynamic("indexableText")(indexableText)
-    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail)
+    if (indexableText != null) __obj.updateDynamic("indexableText")(indexableText.asInstanceOf[js.Any])
+    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IndexableText]
   }
 }

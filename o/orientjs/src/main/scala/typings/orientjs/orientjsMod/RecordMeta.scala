@@ -13,7 +13,7 @@ object RecordMeta {
   @scala.inline
   def apply(`@rid`: ORID, `@version`: Version): RecordMeta = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("@rid")(`@rid`)
+    __obj.updateDynamic("@rid")(`@rid`.asInstanceOf[js.Any])
     __obj.updateDynamic("@version")(`@version`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordMeta]
   }

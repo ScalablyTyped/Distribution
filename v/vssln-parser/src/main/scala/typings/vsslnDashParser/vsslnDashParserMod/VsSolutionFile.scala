@@ -30,15 +30,15 @@ object VsSolutionFile {
     teamFoundationVersionControl: VsSolutionSection = null,
     visualStudioVersion: String = null
   ): VsSolutionFile = {
-    val __obj = js.Dynamic.literal(projects = projects)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (minimumVisualStudioVersion != null) __obj.updateDynamic("minimumVisualStudioVersion")(minimumVisualStudioVersion)
-    if (nestedProjects != null) __obj.updateDynamic("nestedProjects")(nestedProjects)
-    if (projectConfigurationPlatforms != null) __obj.updateDynamic("projectConfigurationPlatforms")(projectConfigurationPlatforms)
-    if (solutionConfigurationPlatforms != null) __obj.updateDynamic("solutionConfigurationPlatforms")(solutionConfigurationPlatforms)
-    if (solutionProperties != null) __obj.updateDynamic("solutionProperties")(solutionProperties)
-    if (teamFoundationVersionControl != null) __obj.updateDynamic("teamFoundationVersionControl")(teamFoundationVersionControl)
-    if (visualStudioVersion != null) __obj.updateDynamic("visualStudioVersion")(visualStudioVersion)
+    val __obj = js.Dynamic.literal(projects = projects.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (minimumVisualStudioVersion != null) __obj.updateDynamic("minimumVisualStudioVersion")(minimumVisualStudioVersion.asInstanceOf[js.Any])
+    if (nestedProjects != null) __obj.updateDynamic("nestedProjects")(nestedProjects.asInstanceOf[js.Any])
+    if (projectConfigurationPlatforms != null) __obj.updateDynamic("projectConfigurationPlatforms")(projectConfigurationPlatforms.asInstanceOf[js.Any])
+    if (solutionConfigurationPlatforms != null) __obj.updateDynamic("solutionConfigurationPlatforms")(solutionConfigurationPlatforms.asInstanceOf[js.Any])
+    if (solutionProperties != null) __obj.updateDynamic("solutionProperties")(solutionProperties.asInstanceOf[js.Any])
+    if (teamFoundationVersionControl != null) __obj.updateDynamic("teamFoundationVersionControl")(teamFoundationVersionControl.asInstanceOf[js.Any])
+    if (visualStudioVersion != null) __obj.updateDynamic("visualStudioVersion")(visualStudioVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[VsSolutionFile]
   }
 }

@@ -21,8 +21,8 @@ trait EmbedRequest extends js.Object {
 object EmbedRequest {
   @scala.inline
   def apply(allow: String => Unit, deny: () => Unit, embedderId: String, data: js.Any = null): EmbedRequest = {
-    val __obj = js.Dynamic.literal(allow = js.Any.fromFunction1(allow), deny = js.Any.fromFunction0(deny), embedderId = embedderId)
-    if (data != null) __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(allow = js.Any.fromFunction1(allow), deny = js.Any.fromFunction0(deny), embedderId = embedderId.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmbedRequest]
   }
 }

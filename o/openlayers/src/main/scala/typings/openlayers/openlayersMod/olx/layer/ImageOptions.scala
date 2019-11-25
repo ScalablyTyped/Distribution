@@ -29,13 +29,13 @@ object ImageOptions {
     visible: js.UndefOr[Boolean] = js.undefined,
     zIndex: Int | Double = null
   ): ImageOptions = {
-    val __obj = js.Dynamic.literal(source = source)
-    if (extent != null) __obj.updateDynamic("extent")(extent)
-    if (map != null) __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (maxResolution != null) __obj.updateDynamic("maxResolution")(maxResolution.asInstanceOf[js.Any])
     if (minResolution != null) __obj.updateDynamic("minResolution")(minResolution.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageOptions]
   }

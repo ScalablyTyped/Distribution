@@ -11,7 +11,7 @@ trait MetadataChanges extends js.Object {
 object MetadataChanges {
   @scala.inline
   def apply(includeMetadataChanges: Boolean): MetadataChanges = {
-    val __obj = js.Dynamic.literal(includeMetadataChanges = includeMetadataChanges)
+    val __obj = js.Dynamic.literal(includeMetadataChanges = includeMetadataChanges.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MetadataChanges]
   }

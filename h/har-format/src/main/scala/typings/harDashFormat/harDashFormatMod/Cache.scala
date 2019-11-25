@@ -25,9 +25,9 @@ object Cache {
   @scala.inline
   def apply(afterRequest: CacheDetails = null, beforeRequest: CacheDetails = null, comment: String = null): Cache = {
     val __obj = js.Dynamic.literal()
-    if (afterRequest != null) __obj.updateDynamic("afterRequest")(afterRequest)
-    if (beforeRequest != null) __obj.updateDynamic("beforeRequest")(beforeRequest)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (afterRequest != null) __obj.updateDynamic("afterRequest")(afterRequest.asInstanceOf[js.Any])
+    if (beforeRequest != null) __obj.updateDynamic("beforeRequest")(beforeRequest.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cache]
   }
 }

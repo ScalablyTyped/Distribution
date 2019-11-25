@@ -14,7 +14,7 @@ trait ojModuleSettableProperties extends JetSettableProperties {
 object ojModuleSettableProperties {
   @scala.inline
   def apply(animation: js.Object, config: Anon_CleanupMode): ojModuleSettableProperties = {
-    val __obj = js.Dynamic.literal(animation = animation, config = config)
+    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ojModuleSettableProperties]
   }

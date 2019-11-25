@@ -115,17 +115,17 @@ object IConstraintDefinition {
     `type`: String = null
   ): IConstraintDefinition = {
     val __obj = js.Dynamic.literal()
-    if (bodyA != null) __obj.updateDynamic("bodyA")(bodyA)
-    if (bodyB != null) __obj.updateDynamic("bodyB")(bodyB)
+    if (bodyA != null) __obj.updateDynamic("bodyA")(bodyA.asInstanceOf[js.Any])
+    if (bodyB != null) __obj.updateDynamic("bodyB")(bodyB.asInstanceOf[js.Any])
     if (damping != null) __obj.updateDynamic("damping")(damping.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (pointA != null) __obj.updateDynamic("pointA")(pointA)
-    if (pointB != null) __obj.updateDynamic("pointB")(pointB)
-    if (render != null) __obj.updateDynamic("render")(render)
+    if (pointA != null) __obj.updateDynamic("pointA")(pointA.asInstanceOf[js.Any])
+    if (pointB != null) __obj.updateDynamic("pointB")(pointB.asInstanceOf[js.Any])
+    if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
     if (stiffness != null) __obj.updateDynamic("stiffness")(stiffness.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConstraintDefinition]
   }
 }

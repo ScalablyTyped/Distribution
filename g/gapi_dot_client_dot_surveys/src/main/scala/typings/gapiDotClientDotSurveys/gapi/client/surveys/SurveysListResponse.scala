@@ -22,10 +22,10 @@ object SurveysListResponse {
     tokenPagination: TokenPagination = null
   ): SurveysListResponse = {
     val __obj = js.Dynamic.literal()
-    if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo)
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId)
-    if (resources != null) __obj.updateDynamic("resources")(resources)
-    if (tokenPagination != null) __obj.updateDynamic("tokenPagination")(tokenPagination)
+    if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo.asInstanceOf[js.Any])
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
+    if (tokenPagination != null) __obj.updateDynamic("tokenPagination")(tokenPagination.asInstanceOf[js.Any])
     __obj.asInstanceOf[SurveysListResponse]
   }
 }

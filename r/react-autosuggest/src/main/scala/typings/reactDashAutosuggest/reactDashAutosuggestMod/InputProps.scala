@@ -22,7 +22,7 @@ object InputProps {
     value: String,
     onBlur: (/* event */ FocusEvent[_], /* params */ js.UndefOr[BlurEvent[TSuggestion]]) => Unit = null
   ): InputProps[TSuggestion] = {
-    val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction2(onChange), value = value)
+    val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction2(onChange), value = value.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction2(onBlur))
     __obj.asInstanceOf[InputProps[TSuggestion]]
   }

@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait MediaDeviceKind extends js.Object
 
+object MediaDeviceKind {
+  @scala.inline
+  def audioinput: typings.std.stdStrings.audioinput = this.cast("audioinput")
+  @scala.inline
+  def audiooutput: typings.std.stdStrings.audiooutput = this.cast("audiooutput")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def videoinput: typings.std.stdStrings.videoinput = this.cast("videoinput")
+}
+

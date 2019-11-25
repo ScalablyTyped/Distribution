@@ -12,7 +12,7 @@ trait PlayerStatsSummaryListDto extends js.Object {
 object PlayerStatsSummaryListDto {
   @scala.inline
   def apply(playerStatSummaries: js.Array[PlayerStatsSummaryDto], summonerId: Double): PlayerStatsSummaryListDto = {
-    val __obj = js.Dynamic.literal(playerStatSummaries = playerStatSummaries, summonerId = summonerId)
+    val __obj = js.Dynamic.literal(playerStatSummaries = playerStatSummaries.asInstanceOf[js.Any], summonerId = summonerId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PlayerStatsSummaryListDto]
   }

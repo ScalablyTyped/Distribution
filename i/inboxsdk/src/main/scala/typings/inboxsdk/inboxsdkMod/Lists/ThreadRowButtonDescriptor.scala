@@ -21,9 +21,9 @@ object ThreadRowButtonDescriptor {
     hasDropdown: js.UndefOr[Boolean] = js.undefined,
     iconClass: String = null
   ): ThreadRowButtonDescriptor = {
-    val __obj = js.Dynamic.literal(iconUrl = iconUrl, onClick = js.Any.fromFunction1(onClick), title = title)
-    if (!js.isUndefined(hasDropdown)) __obj.updateDynamic("hasDropdown")(hasDropdown)
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), title = title.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasDropdown)) __obj.updateDynamic("hasDropdown")(hasDropdown.asInstanceOf[js.Any])
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreadRowButtonDescriptor]
   }
 }

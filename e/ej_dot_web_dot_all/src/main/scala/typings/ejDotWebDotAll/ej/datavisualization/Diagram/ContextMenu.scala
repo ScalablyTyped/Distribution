@@ -22,8 +22,8 @@ object ContextMenu {
     showCustomMenuItemsOnly: js.UndefOr[Boolean] = js.undefined
   ): ContextMenu = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (!js.isUndefined(showCustomMenuItemsOnly)) __obj.updateDynamic("showCustomMenuItemsOnly")(showCustomMenuItemsOnly)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCustomMenuItemsOnly)) __obj.updateDynamic("showCustomMenuItemsOnly")(showCustomMenuItemsOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenu]
   }
 }

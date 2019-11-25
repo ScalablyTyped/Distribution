@@ -47,8 +47,8 @@ object CommitObject {
     `type`: String,
     updater: js.Array[String]
   ): CommitObject = {
-    val __obj = js.Dynamic.literal(_id = _id, message = message, parents = parents, root = root, time = time, updater = updater)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], updater = updater.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitObject]
   }
 }

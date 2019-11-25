@@ -12,7 +12,7 @@ trait Anon_IceConnectionState extends js.Object {
 object Anon_IceConnectionState {
   @scala.inline
   def apply(iceConnectionState: RTCIceConnectionState): Anon_IceConnectionState = {
-    val __obj = js.Dynamic.literal(iceConnectionState = iceConnectionState)
+    val __obj = js.Dynamic.literal(iceConnectionState = iceConnectionState.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IceConnectionState]
   }

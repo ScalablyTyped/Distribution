@@ -13,8 +13,8 @@ object Anon_Lower {
   @scala.inline
   def apply(lower: String = null, upper: String = null): Anon_Lower = {
     val __obj = js.Dynamic.literal()
-    if (lower != null) __obj.updateDynamic("lower")(lower)
-    if (upper != null) __obj.updateDynamic("upper")(upper)
+    if (lower != null) __obj.updateDynamic("lower")(lower.asInstanceOf[js.Any])
+    if (upper != null) __obj.updateDynamic("upper")(upper.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Lower]
   }
 }

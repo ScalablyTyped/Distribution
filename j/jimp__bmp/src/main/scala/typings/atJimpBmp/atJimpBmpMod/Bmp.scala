@@ -23,7 +23,7 @@ object Bmp {
     encoders: Anon_ImagebmpImagexmsbmpEncoderFn,
     mime: Anon_ImagebmpArray
   ): Bmp = {
-    val __obj = js.Dynamic.literal(constants = constants, decoders = decoders, encoders = encoders, mime = mime)
+    val __obj = js.Dynamic.literal(constants = constants.asInstanceOf[js.Any], decoders = decoders.asInstanceOf[js.Any], encoders = encoders.asInstanceOf[js.Any], mime = mime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Bmp]
   }

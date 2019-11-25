@@ -26,8 +26,8 @@ object Anon_Cps {
     thickness: Int | Double = null,
     x_shift: Int | Double = null
   ): Anon_Cps = {
-    val __obj = js.Dynamic.literal(invert = invert, position = position, y_shift = y_shift)
-    if (cps != null) __obj.updateDynamic("cps")(cps)
+    val __obj = js.Dynamic.literal(invert = invert.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], y_shift = y_shift.asInstanceOf[js.Any])
+    if (cps != null) __obj.updateDynamic("cps")(cps.asInstanceOf[js.Any])
     if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
     if (thickness != null) __obj.updateDynamic("thickness")(thickness.asInstanceOf[js.Any])
     if (x_shift != null) __obj.updateDynamic("x_shift")(x_shift.asInstanceOf[js.Any])

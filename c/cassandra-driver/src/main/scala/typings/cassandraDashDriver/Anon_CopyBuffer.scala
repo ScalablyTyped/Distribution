@@ -24,12 +24,12 @@ object Anon_CopyBuffer {
     useUndefinedAsUnset: js.UndefOr[Boolean] = js.undefined
   ): Anon_CopyBuffer = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(copyBuffer)) __obj.updateDynamic("copyBuffer")(copyBuffer)
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (set != null) __obj.updateDynamic("set")(set)
-    if (!js.isUndefined(useBigIntAsLong)) __obj.updateDynamic("useBigIntAsLong")(useBigIntAsLong)
-    if (!js.isUndefined(useBigIntAsVarint)) __obj.updateDynamic("useBigIntAsVarint")(useBigIntAsVarint)
-    if (!js.isUndefined(useUndefinedAsUnset)) __obj.updateDynamic("useUndefinedAsUnset")(useUndefinedAsUnset)
+    if (!js.isUndefined(copyBuffer)) __obj.updateDynamic("copyBuffer")(copyBuffer.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBigIntAsLong)) __obj.updateDynamic("useBigIntAsLong")(useBigIntAsLong.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBigIntAsVarint)) __obj.updateDynamic("useBigIntAsVarint")(useBigIntAsVarint.asInstanceOf[js.Any])
+    if (!js.isUndefined(useUndefinedAsUnset)) __obj.updateDynamic("useUndefinedAsUnset")(useUndefinedAsUnset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CopyBuffer]
   }
 }

@@ -20,10 +20,10 @@ object Anon_Derivatives {
     shaderTextureLOD: js.UndefOr[Boolean] = js.undefined
   ): Anon_Derivatives = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(derivatives)) __obj.updateDynamic("derivatives")(derivatives)
-    if (!js.isUndefined(drawBuffers)) __obj.updateDynamic("drawBuffers")(drawBuffers)
-    if (!js.isUndefined(fragDepth)) __obj.updateDynamic("fragDepth")(fragDepth)
-    if (!js.isUndefined(shaderTextureLOD)) __obj.updateDynamic("shaderTextureLOD")(shaderTextureLOD)
+    if (!js.isUndefined(derivatives)) __obj.updateDynamic("derivatives")(derivatives.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawBuffers)) __obj.updateDynamic("drawBuffers")(drawBuffers.asInstanceOf[js.Any])
+    if (!js.isUndefined(fragDepth)) __obj.updateDynamic("fragDepth")(fragDepth.asInstanceOf[js.Any])
+    if (!js.isUndefined(shaderTextureLOD)) __obj.updateDynamic("shaderTextureLOD")(shaderTextureLOD.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Derivatives]
   }
 }

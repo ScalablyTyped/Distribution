@@ -1,6 +1,5 @@
 package typings.atPulumiCloud.atPulumiCloudMod
 
-import typings.atPulumiCloud.serviceMod.Service
 import typings.atPulumiCloud.serviceMod.ServiceArguments
 import typings.atPulumiPulumi.resourceMod.ResourceOptions
 import scala.scalajs.js
@@ -9,7 +8,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@pulumi/cloud", "Service")
 @js.native
-class ServiceCls protected () extends Service {
+class ServiceCls protected ()
+  extends typings.atPulumiCloud.serviceMod.Service {
   /**
     * Construct a new Service, which is one or more managed replicas of a group of one or more Containers.
     *

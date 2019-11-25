@@ -13,8 +13,8 @@ object ContactGroupMetadata {
   @scala.inline
   def apply(deleted: js.UndefOr[Boolean] = js.undefined, updateTime: String = null): ContactGroupMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactGroupMetadata]
   }
 }

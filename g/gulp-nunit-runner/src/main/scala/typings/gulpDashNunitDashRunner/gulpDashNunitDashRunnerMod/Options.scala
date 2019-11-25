@@ -34,10 +34,10 @@ object Options {
     teamcity: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (executable != null) __obj.updateDynamic("executable")(executable)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (platform != null) __obj.updateDynamic("platform")(platform)
-    if (!js.isUndefined(teamcity)) __obj.updateDynamic("teamcity")(teamcity)
+    if (executable != null) __obj.updateDynamic("executable")(executable.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (!js.isUndefined(teamcity)) __obj.updateDynamic("teamcity")(teamcity.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

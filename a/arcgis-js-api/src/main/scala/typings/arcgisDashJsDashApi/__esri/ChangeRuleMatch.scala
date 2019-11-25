@@ -66,7 +66,7 @@ object ChangeRuleMatch {
     propertyIsEnumerable: PropertyKey => Boolean,
     ruleID: String
   ): ChangeRuleMatch = {
-    val __obj = js.Dynamic.literal(changeTime = changeTime, changeType = changeType, constructor = constructor, dataWorkspaceId = dataWorkspaceId, dataset = dataset, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id, jobID = jobID, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), ruleID = ruleID)
+    val __obj = js.Dynamic.literal(changeTime = changeTime.asInstanceOf[js.Any], changeType = changeType.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], dataWorkspaceId = dataWorkspaceId.asInstanceOf[js.Any], dataset = dataset.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id.asInstanceOf[js.Any], jobID = jobID.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), ruleID = ruleID.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChangeRuleMatch]
   }

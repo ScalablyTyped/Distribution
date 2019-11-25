@@ -241,21 +241,17 @@ object IInput {
     autoCapitalize: js.UndefOr[Boolean] = js.undefined,
     autoComplete: js.UndefOr[Boolean] = js.undefined,
     autoCorrect: js.UndefOr[Boolean] = js.undefined,
-    baseCls: java.lang.String = null,
     blur: () => IInput = null,
     checked: js.UndefOr[Boolean] = js.undefined,
     cls: java.lang.String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
     fastFocus: js.UndefOr[Boolean] = js.undefined,
     focus: () => IInput = null,
     focusCls: java.lang.String = null,
     getAutoCapitalize: () => Boolean = null,
     getAutoComplete: () => Boolean = null,
     getAutoCorrect: () => Boolean = null,
-    getBaseCls: () => java.lang.String = null,
     getChecked: () => _ = null,
     getCls: () => java.lang.String = null,
-    getDisabled: () => Boolean = null,
     getFastFocus: () => Boolean = null,
     getFocusCls: () => java.lang.String = null,
     getMaxLength: () => Double = null,
@@ -286,9 +282,7 @@ object IInput {
     setAutoCapitalize: /* autoCapitalize */ js.UndefOr[Boolean] => Unit = null,
     setAutoComplete: /* autoComplete */ js.UndefOr[Boolean] => Unit = null,
     setAutoCorrect: /* autoCorrect */ js.UndefOr[Boolean] => Unit = null,
-    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => Unit = null,
     setCls: /* cls */ js.UndefOr[java.lang.String] => Unit = null,
-    setDisabled: /* disabled */ js.UndefOr[Boolean] => Unit = null,
     setFastFocus: /* fastFocus */ js.UndefOr[Boolean] => Unit = null,
     setFocusCls: /* focusCls */ js.UndefOr[java.lang.String] => Unit = null,
     setMaxLength: /* maxLength */ js.UndefOr[Double] => Unit = null,
@@ -312,25 +306,21 @@ object IInput {
     value: js.Any = null
   ): IInput = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (!js.isUndefined(autoCapitalize)) __obj.updateDynamic("autoCapitalize")(autoCapitalize)
-    if (!js.isUndefined(autoComplete)) __obj.updateDynamic("autoComplete")(autoComplete)
-    if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (!js.isUndefined(autoCapitalize)) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoComplete)) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
     if (blur != null) __obj.updateDynamic("blur")(js.Any.fromFunction0(blur))
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (cls != null) __obj.updateDynamic("cls")(cls)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(fastFocus)) __obj.updateDynamic("fastFocus")(fastFocus)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (cls != null) __obj.updateDynamic("cls")(cls.asInstanceOf[js.Any])
+    if (!js.isUndefined(fastFocus)) __obj.updateDynamic("fastFocus")(fastFocus.asInstanceOf[js.Any])
     if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction0(focus))
-    if (focusCls != null) __obj.updateDynamic("focusCls")(focusCls)
+    if (focusCls != null) __obj.updateDynamic("focusCls")(focusCls.asInstanceOf[js.Any])
     if (getAutoCapitalize != null) __obj.updateDynamic("getAutoCapitalize")(js.Any.fromFunction0(getAutoCapitalize))
     if (getAutoComplete != null) __obj.updateDynamic("getAutoComplete")(js.Any.fromFunction0(getAutoComplete))
     if (getAutoCorrect != null) __obj.updateDynamic("getAutoCorrect")(js.Any.fromFunction0(getAutoCorrect))
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
     if (getChecked != null) __obj.updateDynamic("getChecked")(js.Any.fromFunction0(getChecked))
     if (getCls != null) __obj.updateDynamic("getCls")(js.Any.fromFunction0(getCls))
-    if (getDisabled != null) __obj.updateDynamic("getDisabled")(js.Any.fromFunction0(getDisabled))
     if (getFastFocus != null) __obj.updateDynamic("getFastFocus")(js.Any.fromFunction0(getFastFocus))
     if (getFocusCls != null) __obj.updateDynamic("getFocusCls")(js.Any.fromFunction0(getFocusCls))
     if (getMaxLength != null) __obj.updateDynamic("getMaxLength")(js.Any.fromFunction0(getMaxLength))
@@ -347,23 +337,21 @@ object IInput {
     if (getType != null) __obj.updateDynamic("getType")(js.Any.fromFunction0(getType))
     if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
     if (isDirty != null) __obj.updateDynamic("isDirty")(js.Any.fromFunction0(isDirty))
-    if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused)
+    if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (maxRows != null) __obj.updateDynamic("maxRows")(maxRows.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
-    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder)
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
     if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction0(reset))
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction0(select))
     if (setAutoCapitalize != null) __obj.updateDynamic("setAutoCapitalize")(js.Any.fromFunction1(setAutoCapitalize))
     if (setAutoComplete != null) __obj.updateDynamic("setAutoComplete")(js.Any.fromFunction1(setAutoComplete))
     if (setAutoCorrect != null) __obj.updateDynamic("setAutoCorrect")(js.Any.fromFunction1(setAutoCorrect))
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
     if (setCls != null) __obj.updateDynamic("setCls")(js.Any.fromFunction1(setCls))
-    if (setDisabled != null) __obj.updateDynamic("setDisabled")(js.Any.fromFunction1(setDisabled))
     if (setFastFocus != null) __obj.updateDynamic("setFastFocus")(js.Any.fromFunction1(setFastFocus))
     if (setFocusCls != null) __obj.updateDynamic("setFocusCls")(js.Any.fromFunction1(setFocusCls))
     if (setMaxLength != null) __obj.updateDynamic("setMaxLength")(js.Any.fromFunction1(setMaxLength))
@@ -378,13 +366,13 @@ object IInput {
     if (setStepValue != null) __obj.updateDynamic("setStepValue")(js.Any.fromFunction1(setStepValue))
     if (setTabIndex != null) __obj.updateDynamic("setTabIndex")(js.Any.fromFunction1(setTabIndex))
     if (setType != null) __obj.updateDynamic("setType")(js.Any.fromFunction1(setType))
-    if (startValue != null) __obj.updateDynamic("startValue")(startValue)
+    if (startValue != null) __obj.updateDynamic("startValue")(startValue.asInstanceOf[js.Any])
     if (stepValue != null) __obj.updateDynamic("stepValue")(stepValue.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (updateCls != null) __obj.updateDynamic("updateCls")(js.Any.fromFunction2(updateCls))
     if (updateUseMask != null) __obj.updateDynamic("updateUseMask")(js.Any.fromFunction1(updateUseMask))
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInput]
   }
 }

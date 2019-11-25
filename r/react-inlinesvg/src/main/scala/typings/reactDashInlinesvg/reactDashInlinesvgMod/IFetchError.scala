@@ -14,9 +14,9 @@ trait IFetchError extends Error {
 object IFetchError {
   @scala.inline
   def apply(code: String, errno: String, message: String, name: String, `type`: String, stack: String = null): IFetchError = {
-    val __obj = js.Dynamic.literal(code = code, errno = errno, message = message, name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], errno = errno.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFetchError]
   }
 }

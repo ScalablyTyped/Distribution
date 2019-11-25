@@ -33,13 +33,13 @@ object SimpleAddressType {
     zip: String = null
   ): SimpleAddressType = {
     val __obj = js.Dynamic.literal()
-    if (city != null) __obj.updateDynamic("city")(city)
-    if (line1 != null) __obj.updateDynamic("line1")(line1)
-    if (line2 != null) __obj.updateDynamic("line2")(line2)
-    if (line3 != null) __obj.updateDynamic("line3")(line3)
-    if (locationName != null) __obj.updateDynamic("locationName")(locationName)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (zip != null) __obj.updateDynamic("zip")(zip)
+    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
+    if (line1 != null) __obj.updateDynamic("line1")(line1.asInstanceOf[js.Any])
+    if (line2 != null) __obj.updateDynamic("line2")(line2.asInstanceOf[js.Any])
+    if (line3 != null) __obj.updateDynamic("line3")(line3.asInstanceOf[js.Any])
+    if (locationName != null) __obj.updateDynamic("locationName")(locationName.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (zip != null) __obj.updateDynamic("zip")(zip.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleAddressType]
   }
 }

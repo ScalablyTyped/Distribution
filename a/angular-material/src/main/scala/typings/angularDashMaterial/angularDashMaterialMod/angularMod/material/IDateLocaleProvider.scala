@@ -36,7 +36,7 @@ object IDateLocaleProvider {
     shortMonths: js.Array[String],
     weekNumberFormatter: Double => String
   ): IDateLocaleProvider = {
-    val __obj = js.Dynamic.literal(dates = dates, days = days, firstDayOfWeek = firstDayOfWeek, formatDate = js.Any.fromFunction1(formatDate), monthHeaderFormatter = js.Any.fromFunction1(monthHeaderFormatter), months = months, msgCalendar = msgCalendar, msgOpenCalendar = msgOpenCalendar, parseDate = js.Any.fromFunction1(parseDate), shortDays = shortDays, shortMonths = shortMonths, weekNumberFormatter = js.Any.fromFunction1(weekNumberFormatter))
+    val __obj = js.Dynamic.literal(dates = dates.asInstanceOf[js.Any], days = days.asInstanceOf[js.Any], firstDayOfWeek = firstDayOfWeek.asInstanceOf[js.Any], formatDate = js.Any.fromFunction1(formatDate), monthHeaderFormatter = js.Any.fromFunction1(monthHeaderFormatter), months = months.asInstanceOf[js.Any], msgCalendar = msgCalendar.asInstanceOf[js.Any], msgOpenCalendar = msgOpenCalendar.asInstanceOf[js.Any], parseDate = js.Any.fromFunction1(parseDate), shortDays = shortDays.asInstanceOf[js.Any], shortMonths = shortMonths.asInstanceOf[js.Any], weekNumberFormatter = js.Any.fromFunction1(weekNumberFormatter))
   
     __obj.asInstanceOf[IDateLocaleProvider]
   }

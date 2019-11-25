@@ -36,18 +36,18 @@ object Anon_AddBillingAddressToPaymentMethod {
     venmo: Anon_ProfileId = null
   ): Anon_AddBillingAddressToPaymentMethod = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addBillingAddressToPaymentMethod)) __obj.updateDynamic("addBillingAddressToPaymentMethod")(addBillingAddressToPaymentMethod)
-    if (!js.isUndefined(holdInEscrow)) __obj.updateDynamic("holdInEscrow")(holdInEscrow)
-    if (paypal != null) __obj.updateDynamic("paypal")(paypal)
-    if (!js.isUndefined(skipAdvancedFraudChecking)) __obj.updateDynamic("skipAdvancedFraudChecking")(skipAdvancedFraudChecking)
-    if (!js.isUndefined(skipAvs)) __obj.updateDynamic("skipAvs")(skipAvs)
-    if (!js.isUndefined(skipCvv)) __obj.updateDynamic("skipCvv")(skipCvv)
-    if (!js.isUndefined(storeInVault)) __obj.updateDynamic("storeInVault")(storeInVault)
-    if (!js.isUndefined(storeInVaultOnSuccess)) __obj.updateDynamic("storeInVaultOnSuccess")(storeInVaultOnSuccess)
-    if (!js.isUndefined(storeShippingAddressInVault)) __obj.updateDynamic("storeShippingAddressInVault")(storeShippingAddressInVault)
-    if (!js.isUndefined(submitForSettlement)) __obj.updateDynamic("submitForSettlement")(submitForSettlement)
-    if (threeDSecure != null) __obj.updateDynamic("threeDSecure")(threeDSecure)
-    if (venmo != null) __obj.updateDynamic("venmo")(venmo)
+    if (!js.isUndefined(addBillingAddressToPaymentMethod)) __obj.updateDynamic("addBillingAddressToPaymentMethod")(addBillingAddressToPaymentMethod.asInstanceOf[js.Any])
+    if (!js.isUndefined(holdInEscrow)) __obj.updateDynamic("holdInEscrow")(holdInEscrow.asInstanceOf[js.Any])
+    if (paypal != null) __obj.updateDynamic("paypal")(paypal.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipAdvancedFraudChecking)) __obj.updateDynamic("skipAdvancedFraudChecking")(skipAdvancedFraudChecking.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipAvs)) __obj.updateDynamic("skipAvs")(skipAvs.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipCvv)) __obj.updateDynamic("skipCvv")(skipCvv.asInstanceOf[js.Any])
+    if (!js.isUndefined(storeInVault)) __obj.updateDynamic("storeInVault")(storeInVault.asInstanceOf[js.Any])
+    if (!js.isUndefined(storeInVaultOnSuccess)) __obj.updateDynamic("storeInVaultOnSuccess")(storeInVaultOnSuccess.asInstanceOf[js.Any])
+    if (!js.isUndefined(storeShippingAddressInVault)) __obj.updateDynamic("storeShippingAddressInVault")(storeShippingAddressInVault.asInstanceOf[js.Any])
+    if (!js.isUndefined(submitForSettlement)) __obj.updateDynamic("submitForSettlement")(submitForSettlement.asInstanceOf[js.Any])
+    if (threeDSecure != null) __obj.updateDynamic("threeDSecure")(threeDSecure.asInstanceOf[js.Any])
+    if (venmo != null) __obj.updateDynamic("venmo")(venmo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AddBillingAddressToPaymentMethod]
   }
 }

@@ -95,15 +95,15 @@ object BuildStep {
     waitFor: js.Array[String] = null
   ): BuildStep = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (entrypoint != null) __obj.updateDynamic("entrypoint")(entrypoint)
-    if (env != null) __obj.updateDynamic("env")(env)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (secretEnv != null) __obj.updateDynamic("secretEnv")(secretEnv)
-    if (volumes != null) __obj.updateDynamic("volumes")(volumes)
-    if (waitFor != null) __obj.updateDynamic("waitFor")(waitFor)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (entrypoint != null) __obj.updateDynamic("entrypoint")(entrypoint.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (secretEnv != null) __obj.updateDynamic("secretEnv")(secretEnv.asInstanceOf[js.Any])
+    if (volumes != null) __obj.updateDynamic("volumes")(volumes.asInstanceOf[js.Any])
+    if (waitFor != null) __obj.updateDynamic("waitFor")(waitFor.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildStep]
   }
 }

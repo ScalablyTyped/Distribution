@@ -11,7 +11,7 @@ trait Declaration extends js.Object {
 object Declaration {
   @scala.inline
   def apply(attributes: Attributes): Declaration = {
-    val __obj = js.Dynamic.literal(attributes = attributes)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Declaration]
   }

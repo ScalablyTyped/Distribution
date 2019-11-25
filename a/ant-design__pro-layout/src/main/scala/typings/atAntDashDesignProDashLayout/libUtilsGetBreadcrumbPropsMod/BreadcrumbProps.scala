@@ -48,14 +48,14 @@ object BreadcrumbProps {
     menu: Anon_Locale = null
   ): BreadcrumbProps = {
     val __obj = js.Dynamic.literal()
-    if (breadcrumb != null) __obj.updateDynamic("breadcrumb")(breadcrumb)
-    if (breadcrumbList != null) __obj.updateDynamic("breadcrumbList")(breadcrumbList)
+    if (breadcrumb != null) __obj.updateDynamic("breadcrumb")(breadcrumb.asInstanceOf[js.Any])
+    if (breadcrumbList != null) __obj.updateDynamic("breadcrumbList")(breadcrumbList.asInstanceOf[js.Any])
     if (breadcrumbRender != null) __obj.updateDynamic("breadcrumbRender")(js.Any.fromFunction1(breadcrumbRender))
     if (formatMessage != null) __obj.updateDynamic("formatMessage")(js.Any.fromFunction1(formatMessage))
-    if (home != null) __obj.updateDynamic("home")(home)
+    if (home != null) __obj.updateDynamic("home")(home.asInstanceOf[js.Any])
     if (itemRender != null) __obj.updateDynamic("itemRender")(js.Any.fromFunction4(itemRender))
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (menu != null) __obj.updateDynamic("menu")(menu)
+    if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
     __obj.asInstanceOf[BreadcrumbProps]
   }
 }

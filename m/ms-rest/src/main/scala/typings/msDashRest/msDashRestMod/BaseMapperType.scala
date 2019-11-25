@@ -11,7 +11,7 @@ trait BaseMapperType extends js.Object {
 object BaseMapperType {
   @scala.inline
   def apply(name: MapperType): BaseMapperType = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BaseMapperType]
   }

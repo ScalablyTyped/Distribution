@@ -21,10 +21,10 @@ object HttpArchiveRequest {
     url: String = null
   ): HttpArchiveRequest = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (method != null) __obj.updateDynamic("method")(method)
-    if (postData != null) __obj.updateDynamic("postData")(postData)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (postData != null) __obj.updateDynamic("postData")(postData.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpArchiveRequest]
   }
 }

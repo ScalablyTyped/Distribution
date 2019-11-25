@@ -30,15 +30,15 @@ object PricingSchedule {
     testingStartDate: String = null
   ): PricingSchedule = {
     val __obj = js.Dynamic.literal()
-    if (capCostOption != null) __obj.updateDynamic("capCostOption")(capCostOption)
-    if (!js.isUndefined(disregardOverdelivery)) __obj.updateDynamic("disregardOverdelivery")(disregardOverdelivery)
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
-    if (!js.isUndefined(flighted)) __obj.updateDynamic("flighted")(flighted)
-    if (floodlightActivityId != null) __obj.updateDynamic("floodlightActivityId")(floodlightActivityId)
-    if (pricingPeriods != null) __obj.updateDynamic("pricingPeriods")(pricingPeriods)
-    if (pricingType != null) __obj.updateDynamic("pricingType")(pricingType)
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
-    if (testingStartDate != null) __obj.updateDynamic("testingStartDate")(testingStartDate)
+    if (capCostOption != null) __obj.updateDynamic("capCostOption")(capCostOption.asInstanceOf[js.Any])
+    if (!js.isUndefined(disregardOverdelivery)) __obj.updateDynamic("disregardOverdelivery")(disregardOverdelivery.asInstanceOf[js.Any])
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(flighted)) __obj.updateDynamic("flighted")(flighted.asInstanceOf[js.Any])
+    if (floodlightActivityId != null) __obj.updateDynamic("floodlightActivityId")(floodlightActivityId.asInstanceOf[js.Any])
+    if (pricingPeriods != null) __obj.updateDynamic("pricingPeriods")(pricingPeriods.asInstanceOf[js.Any])
+    if (pricingType != null) __obj.updateDynamic("pricingType")(pricingType.asInstanceOf[js.Any])
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
+    if (testingStartDate != null) __obj.updateDynamic("testingStartDate")(testingStartDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PricingSchedule]
   }
 }

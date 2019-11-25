@@ -5,7 +5,6 @@ import typings.cassandraDashDriver.cassandraDashDriverMod.types.InetAddress
 import typings.cassandraDashDriver.cassandraDashDriverMod.types.LocalDate
 import typings.cassandraDashDriver.cassandraDashDriverMod.types.TimeUuid
 import typings.cassandraDashDriver.cassandraDashDriverMod.types.Uuid
-import typings.long.longMod.^
 import typings.node.Buffer
 import typings.std.Date
 import typings.std.Map
@@ -16,13 +15,13 @@ import scala.scalajs.js.annotation._
 
 trait FieldValueQueryBuilder[T] extends js.Object {
   def ascii[K /* <: String */](columnName: K): TypeMatchedValue[T, K, String, this.type]
-  def bigint[K /* <: String */](columnName: K): TypeMatchedValue[T, K, ^, this.type]
+  def bigint[K /* <: String */](columnName: K): TypeMatchedValue[T, K, typings.long.longMod.^, this.type]
   def blob[K /* <: String */](columnName: K): TypeMatchedValue[T, K, Buffer, this.type]
   def boolean[K /* <: String */](columnName: K): TypeMatchedValue[T, K, Boolean, this.type]
-  def counter[K /* <: String */](columnName: K): TypeMatchedValue[T, K, ^, this.type]
+  def counter[K /* <: String */](columnName: K): TypeMatchedValue[T, K, typings.long.longMod.^, this.type]
   def date[K /* <: String */](columnName: K): TypeMatchedValue[T, K, LocalDate, this.type]
   def decimal[K /* <: String */](columnName: K): TypeMatchedValue[T, K, BigDecimal, this.type]
-  def double[K /* <: String */](columnName: K): TypeMatchedValue[T, K, ^, this.type]
+  def double[K /* <: String */](columnName: K): TypeMatchedValue[T, K, typings.long.longMod.^, this.type]
   def float[K /* <: String */](columnName: K): TypeMatchedValue[T, K, Double, this.type]
   def inet[K /* <: String */](columnName: K): TypeMatchedValue[T, K, InetAddress, this.type]
   def int[K /* <: String */](columnName: K): TypeMatchedValue[T, K, Double, this.type]
@@ -32,7 +31,9 @@ trait FieldValueQueryBuilder[T] extends js.Object {
   def set[K /* <: String */, A /* <: String */](columnName: K, a: A): TypeMatchedValue[
     T, 
     K, 
-    Set[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any], 
+    Set[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ], 
     this.type
   ]
   def text[K /* <: String */](columnName: K): TypeMatchedValue[T, K, String, this.type]
@@ -46,13 +47,13 @@ object FieldValueQueryBuilder {
   @scala.inline
   def apply[T](
     ascii: js.Any => TypeMatchedValue[T, js.Any, String, FieldValueQueryBuilder[T]],
-    bigint: js.Any => TypeMatchedValue[T, js.Any, ^, FieldValueQueryBuilder[T]],
+    bigint: js.Any => TypeMatchedValue[T, js.Any, typings.long.longMod.^, FieldValueQueryBuilder[T]],
     blob: js.Any => TypeMatchedValue[T, js.Any, Buffer, FieldValueQueryBuilder[T]],
     boolean: js.Any => TypeMatchedValue[T, js.Any, Boolean, FieldValueQueryBuilder[T]],
-    counter: js.Any => TypeMatchedValue[T, js.Any, ^, FieldValueQueryBuilder[T]],
+    counter: js.Any => TypeMatchedValue[T, js.Any, typings.long.longMod.^, FieldValueQueryBuilder[T]],
     date: js.Any => TypeMatchedValue[T, js.Any, LocalDate, FieldValueQueryBuilder[T]],
     decimal: js.Any => TypeMatchedValue[T, js.Any, BigDecimal, FieldValueQueryBuilder[T]],
-    double: js.Any => TypeMatchedValue[T, js.Any, ^, FieldValueQueryBuilder[T]],
+    double: js.Any => TypeMatchedValue[T, js.Any, typings.long.longMod.^, FieldValueQueryBuilder[T]],
     float: js.Any => TypeMatchedValue[T, js.Any, Double, FieldValueQueryBuilder[T]],
     inet: js.Any => TypeMatchedValue[T, js.Any, InetAddress, FieldValueQueryBuilder[T]],
     int: js.Any => TypeMatchedValue[T, js.Any, Double, FieldValueQueryBuilder[T]],
@@ -62,7 +63,9 @@ object FieldValueQueryBuilder {
     set: (js.Any, js.Any) => TypeMatchedValue[
       T, 
       js.Any, 
-      Set[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any], 
+      Set[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+      ], 
       FieldValueQueryBuilder[T]
     ],
     text: js.Any => TypeMatchedValue[T, js.Any, String, FieldValueQueryBuilder[T]],

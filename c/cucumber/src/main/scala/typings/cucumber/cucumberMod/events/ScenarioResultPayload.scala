@@ -24,7 +24,7 @@ object ScenarioResultPayload {
     status: Status,
     stepResults: js.Array[_]
   ): ScenarioResultPayload = {
-    val __obj = js.Dynamic.literal(duration = duration, failureException = failureException, scenario = scenario, status = status, stepResults = stepResults)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], failureException = failureException.asInstanceOf[js.Any], scenario = scenario.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], stepResults = stepResults.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ScenarioResultPayload]
   }

@@ -23,7 +23,7 @@ object Anon_OPENDIRECTORY {
     OPEN_WRITABLE_FILE: openWritableFile,
     SAVE_FILE: saveFile
   ): Anon_OPENDIRECTORY = {
-    val __obj = js.Dynamic.literal(OPEN_DIRECTORY = OPEN_DIRECTORY, OPEN_FILE = OPEN_FILE, OPEN_WRITABLE_FILE = OPEN_WRITABLE_FILE, SAVE_FILE = SAVE_FILE)
+    val __obj = js.Dynamic.literal(OPEN_DIRECTORY = OPEN_DIRECTORY.asInstanceOf[js.Any], OPEN_FILE = OPEN_FILE.asInstanceOf[js.Any], OPEN_WRITABLE_FILE = OPEN_WRITABLE_FILE.asInstanceOf[js.Any], SAVE_FILE = SAVE_FILE.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_OPENDIRECTORY]
   }

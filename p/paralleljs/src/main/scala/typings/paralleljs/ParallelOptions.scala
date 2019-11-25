@@ -27,9 +27,9 @@ object ParallelOptions {
     synchronous: js.UndefOr[Boolean] = js.undefined
   ): ParallelOptions = {
     val __obj = js.Dynamic.literal()
-    if (evalPath != null) __obj.updateDynamic("evalPath")(evalPath)
+    if (evalPath != null) __obj.updateDynamic("evalPath")(evalPath.asInstanceOf[js.Any])
     if (maxWorkers != null) __obj.updateDynamic("maxWorkers")(maxWorkers.asInstanceOf[js.Any])
-    if (!js.isUndefined(synchronous)) __obj.updateDynamic("synchronous")(synchronous)
+    if (!js.isUndefined(synchronous)) __obj.updateDynamic("synchronous")(synchronous.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParallelOptions]
   }
 }

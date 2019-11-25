@@ -19,8 +19,8 @@ object GetOpts {
   @scala.inline
   def apply(unwrap: js.UndefOr[Boolean] = js.undefined, virtual: js.UndefOr[Boolean] = js.undefined): GetOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(unwrap)) __obj.updateDynamic("unwrap")(unwrap)
-    if (!js.isUndefined(virtual)) __obj.updateDynamic("virtual")(virtual)
+    if (!js.isUndefined(unwrap)) __obj.updateDynamic("unwrap")(unwrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(virtual)) __obj.updateDynamic("virtual")(virtual.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOpts]
   }
 }

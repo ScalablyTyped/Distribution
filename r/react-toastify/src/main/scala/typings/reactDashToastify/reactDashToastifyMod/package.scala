@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object reactDashToastifyMod {
   import typings.react.reactMod.ReactNode
-  import typings.reactDashToastify.Fn_Void
 
-  type ToastContent = ReactNode | Fn_Void
+  type ToastContent = ReactNode | js.Function0[Unit]
   type ToastId = Double | String
 }

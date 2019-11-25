@@ -24,8 +24,8 @@ object SodaDocumentOptions {
   @scala.inline
   def apply(key: String = null, mediaType: String = null): SodaDocumentOptions = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SodaDocumentOptions]
   }
 }

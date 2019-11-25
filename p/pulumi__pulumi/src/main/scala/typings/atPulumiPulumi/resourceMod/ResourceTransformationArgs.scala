@@ -31,8 +31,8 @@ trait ResourceTransformationArgs extends js.Object {
 object ResourceTransformationArgs {
   @scala.inline
   def apply(name: String, opts: ResourceOptions, props: Inputs, resource: Resource, `type`: String): ResourceTransformationArgs = {
-    val __obj = js.Dynamic.literal(name = name, opts = opts, props = props, resource = resource)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], opts = opts.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceTransformationArgs]
   }
 }

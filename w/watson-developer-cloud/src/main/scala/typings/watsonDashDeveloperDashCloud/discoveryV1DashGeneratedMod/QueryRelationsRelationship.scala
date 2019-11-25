@@ -25,10 +25,10 @@ object QueryRelationsRelationship {
     `type`: String = null
   ): QueryRelationsRelationship = {
     val __obj = js.Dynamic.literal()
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
-    if (evidence != null) __obj.updateDynamic("evidence")(evidence)
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
+    if (evidence != null) __obj.updateDynamic("evidence")(evidence.asInstanceOf[js.Any])
     if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryRelationsRelationship]
   }
 }

@@ -17,7 +17,7 @@ object Done {
   def apply(delay: Int | Double = null, desc: String = null): Done = {
     val __obj = js.Dynamic.literal()
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (desc != null) __obj.updateDynamic("desc")(desc)
+    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Done]
   }
 }

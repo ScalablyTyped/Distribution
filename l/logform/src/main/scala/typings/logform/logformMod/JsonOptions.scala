@@ -22,7 +22,7 @@ object JsonOptions {
     space: Int | Double = null
   ): JsonOptions = {
     val __obj = js.Dynamic.literal()
-    if (replacer != null) __obj.updateDynamic("replacer")(replacer)
+    if (replacer != null) __obj.updateDynamic("replacer")(replacer.asInstanceOf[js.Any])
     if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonOptions]
   }

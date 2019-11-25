@@ -12,7 +12,7 @@ object ListForwardingAddressesResponse {
   @scala.inline
   def apply(forwardingAddresses: js.Array[ForwardingAddress] = null): ListForwardingAddressesResponse = {
     val __obj = js.Dynamic.literal()
-    if (forwardingAddresses != null) __obj.updateDynamic("forwardingAddresses")(forwardingAddresses)
+    if (forwardingAddresses != null) __obj.updateDynamic("forwardingAddresses")(forwardingAddresses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListForwardingAddressesResponse]
   }
 }

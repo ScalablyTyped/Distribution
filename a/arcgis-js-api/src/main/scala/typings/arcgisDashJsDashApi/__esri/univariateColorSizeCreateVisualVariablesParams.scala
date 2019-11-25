@@ -123,21 +123,21 @@ object univariateColorSizeCreateVisualVariablesParams {
     view: View = null,
     worldScale: js.UndefOr[Boolean] = js.undefined
   ): univariateColorSizeCreateVisualVariablesParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
-    if (colorOptions != null) __obj.updateDynamic("colorOptions")(colorOptions)
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (colorOptions != null) __obj.updateDynamic("colorOptions")(colorOptions.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
-    if (sizeOptions != null) __obj.updateDynamic("sizeOptions")(sizeOptions)
-    if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression)
-    if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere)
-    if (statistics != null) __obj.updateDynamic("statistics")(statistics)
-    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
-    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle)
-    if (view != null) __obj.updateDynamic("view")(view)
-    if (!js.isUndefined(worldScale)) __obj.updateDynamic("worldScale")(worldScale)
+    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField.asInstanceOf[js.Any])
+    if (sizeOptions != null) __obj.updateDynamic("sizeOptions")(sizeOptions.asInstanceOf[js.Any])
+    if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression.asInstanceOf[js.Any])
+    if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere.asInstanceOf[js.Any])
+    if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression.asInstanceOf[js.Any])
+    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    if (!js.isUndefined(worldScale)) __obj.updateDynamic("worldScale")(worldScale.asInstanceOf[js.Any])
     __obj.asInstanceOf[univariateColorSizeCreateVisualVariablesParams]
   }
 }

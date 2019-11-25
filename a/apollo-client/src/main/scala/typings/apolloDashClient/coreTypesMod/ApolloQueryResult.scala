@@ -23,8 +23,8 @@ object ApolloQueryResult {
     stale: Boolean,
     errors: js.Array[GraphQLError] = null
   ): ApolloQueryResult[T] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], loading = loading, networkStatus = networkStatus, stale = stale)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], networkStatus = networkStatus.asInstanceOf[js.Any], stale = stale.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApolloQueryResult[T]]
   }
 }

@@ -17,7 +17,7 @@ object _UnmarshalledDataRetrievalPolicy {
   @scala.inline
   def apply(Rules: js.Array[_UnmarshalledDataRetrievalRule] = null): _UnmarshalledDataRetrievalPolicy = {
     val __obj = js.Dynamic.literal()
-    if (Rules != null) __obj.updateDynamic("Rules")(Rules)
+    if (Rules != null) __obj.updateDynamic("Rules")(Rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledDataRetrievalPolicy]
   }
 }

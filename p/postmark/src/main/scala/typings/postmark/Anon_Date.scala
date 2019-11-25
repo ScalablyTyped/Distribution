@@ -12,7 +12,7 @@ trait Anon_Date extends js.Object {
 object Anon_Date {
   @scala.inline
   def apply(Date: String, Sent: Double): Anon_Date = {
-    val __obj = js.Dynamic.literal(Date = Date, Sent = Sent)
+    val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], Sent = Sent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Date]
   }

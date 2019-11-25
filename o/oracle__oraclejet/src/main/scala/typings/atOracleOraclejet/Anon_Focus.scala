@@ -17,7 +17,7 @@ trait Anon_Focus extends js.Object {
 object Anon_Focus {
   @scala.inline
   def apply(footerLayout: Empty | now, showOn: focus | image, timeIncrement: String): Anon_Focus = {
-    val __obj = js.Dynamic.literal(footerLayout = footerLayout.asInstanceOf[js.Any], showOn = showOn.asInstanceOf[js.Any], timeIncrement = timeIncrement)
+    val __obj = js.Dynamic.literal(footerLayout = footerLayout.asInstanceOf[js.Any], showOn = showOn.asInstanceOf[js.Any], timeIncrement = timeIncrement.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Focus]
   }

@@ -32,10 +32,10 @@ object Anon_AmpBindInitData {
     dev: js.UndefOr[Boolean] = js.undefined,
     runtimeConfig: StringDictionary[js.Any] = null
   ): Anon_AmpBindInitData = {
-    val __obj = js.Dynamic.literal(ampBindInitData = ampBindInitData, buildId = buildId, canonicalBase = canonicalBase, documentMiddlewareEnabled = documentMiddlewareEnabled, generateEtags = generateEtags, poweredByHeader = poweredByHeader, staticMarkup = staticMarkup)
-    if (assetPrefix != null) __obj.updateDynamic("assetPrefix")(assetPrefix)
-    if (!js.isUndefined(dev)) __obj.updateDynamic("dev")(dev)
-    if (runtimeConfig != null) __obj.updateDynamic("runtimeConfig")(runtimeConfig)
+    val __obj = js.Dynamic.literal(ampBindInitData = ampBindInitData.asInstanceOf[js.Any], buildId = buildId.asInstanceOf[js.Any], canonicalBase = canonicalBase.asInstanceOf[js.Any], documentMiddlewareEnabled = documentMiddlewareEnabled.asInstanceOf[js.Any], generateEtags = generateEtags.asInstanceOf[js.Any], poweredByHeader = poweredByHeader.asInstanceOf[js.Any], staticMarkup = staticMarkup.asInstanceOf[js.Any])
+    if (assetPrefix != null) __obj.updateDynamic("assetPrefix")(assetPrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(dev)) __obj.updateDynamic("dev")(dev.asInstanceOf[js.Any])
+    if (runtimeConfig != null) __obj.updateDynamic("runtimeConfig")(runtimeConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AmpBindInitData]
   }
 }

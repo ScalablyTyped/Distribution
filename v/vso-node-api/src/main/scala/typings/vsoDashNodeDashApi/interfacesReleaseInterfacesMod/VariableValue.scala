@@ -12,7 +12,7 @@ trait VariableValue extends js.Object {
 object VariableValue {
   @scala.inline
   def apply(isSecret: Boolean, value: String): VariableValue = {
-    val __obj = js.Dynamic.literal(isSecret = isSecret, value = value)
+    val __obj = js.Dynamic.literal(isSecret = isSecret.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VariableValue]
   }

@@ -65,7 +65,7 @@ object Anon_Console {
     renderer: Renderer,
     tag: Tag
   ): Anon_Console = {
-    val __obj = js.Dynamic.literal(console = console, deployer = deployer, filter = filter, generator = generator, helper = helper, migrator = migrator, processor = processor, renderer = renderer, tag = tag)
+    val __obj = js.Dynamic.literal(console = console.asInstanceOf[js.Any], deployer = deployer.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], helper = helper.asInstanceOf[js.Any], migrator = migrator.asInstanceOf[js.Any], processor = processor.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Console]
   }

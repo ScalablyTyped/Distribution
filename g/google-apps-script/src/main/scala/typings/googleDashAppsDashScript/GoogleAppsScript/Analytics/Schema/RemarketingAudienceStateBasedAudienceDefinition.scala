@@ -16,8 +16,8 @@ object RemarketingAudienceStateBasedAudienceDefinition {
     includeConditions: IncludeConditions = null
   ): RemarketingAudienceStateBasedAudienceDefinition = {
     val __obj = js.Dynamic.literal()
-    if (excludeConditions != null) __obj.updateDynamic("excludeConditions")(excludeConditions)
-    if (includeConditions != null) __obj.updateDynamic("includeConditions")(includeConditions)
+    if (excludeConditions != null) __obj.updateDynamic("excludeConditions")(excludeConditions.asInstanceOf[js.Any])
+    if (includeConditions != null) __obj.updateDynamic("includeConditions")(includeConditions.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemarketingAudienceStateBasedAudienceDefinition]
   }
 }

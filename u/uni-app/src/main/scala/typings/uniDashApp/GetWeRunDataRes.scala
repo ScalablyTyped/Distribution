@@ -23,9 +23,9 @@ object GetWeRunDataRes {
   @scala.inline
   def apply(encryptedData: String = null, errMsg: String = null, iv: String = null): GetWeRunDataRes = {
     val __obj = js.Dynamic.literal()
-    if (encryptedData != null) __obj.updateDynamic("encryptedData")(encryptedData)
-    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg)
-    if (iv != null) __obj.updateDynamic("iv")(iv)
+    if (encryptedData != null) __obj.updateDynamic("encryptedData")(encryptedData.asInstanceOf[js.Any])
+    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
+    if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetWeRunDataRes]
   }
 }

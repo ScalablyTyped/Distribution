@@ -22,11 +22,11 @@ object ChartTooltip {
     trigger: String = null
   ): ChartTooltip = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreBounds)) __obj.updateDynamic("ignoreBounds")(ignoreBounds)
-    if (!js.isUndefined(isHtml)) __obj.updateDynamic("isHtml")(isHtml)
-    if (!js.isUndefined(showColorCode)) __obj.updateDynamic("showColorCode")(showColorCode)
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
+    if (!js.isUndefined(ignoreBounds)) __obj.updateDynamic("ignoreBounds")(ignoreBounds.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHtml)) __obj.updateDynamic("isHtml")(isHtml.asInstanceOf[js.Any])
+    if (!js.isUndefined(showColorCode)) __obj.updateDynamic("showColorCode")(showColorCode.asInstanceOf[js.Any])
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartTooltip]
   }
 }

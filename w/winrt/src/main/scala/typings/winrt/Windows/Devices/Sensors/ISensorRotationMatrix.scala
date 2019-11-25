@@ -29,7 +29,7 @@ object ISensorRotationMatrix {
     m32: Double,
     m33: Double
   ): ISensorRotationMatrix = {
-    val __obj = js.Dynamic.literal(m11 = m11, m12 = m12, m13 = m13, m21 = m21, m22 = m22, m23 = m23, m31 = m31, m32 = m32, m33 = m33)
+    val __obj = js.Dynamic.literal(m11 = m11.asInstanceOf[js.Any], m12 = m12.asInstanceOf[js.Any], m13 = m13.asInstanceOf[js.Any], m21 = m21.asInstanceOf[js.Any], m22 = m22.asInstanceOf[js.Any], m23 = m23.asInstanceOf[js.Any], m31 = m31.asInstanceOf[js.Any], m32 = m32.asInstanceOf[js.Any], m33 = m33.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISensorRotationMatrix]
   }

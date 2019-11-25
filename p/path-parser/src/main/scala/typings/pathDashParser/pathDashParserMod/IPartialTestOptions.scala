@@ -19,9 +19,9 @@ object IPartialTestOptions {
     queryParams: IOptions = null
   ): IPartialTestOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
-    if (!js.isUndefined(delimited)) __obj.updateDynamic("delimited")(delimited)
-    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams)
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(delimited)) __obj.updateDynamic("delimited")(delimited.asInstanceOf[js.Any])
+    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPartialTestOptions]
   }
 }

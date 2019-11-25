@@ -13,7 +13,7 @@ object ScheduleTransferRunsResponse {
   @scala.inline
   def apply(runs: js.Array[TransferRun] = null): ScheduleTransferRunsResponse = {
     val __obj = js.Dynamic.literal()
-    if (runs != null) __obj.updateDynamic("runs")(runs)
+    if (runs != null) __obj.updateDynamic("runs")(runs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleTransferRunsResponse]
   }
 }

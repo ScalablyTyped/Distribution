@@ -28,13 +28,13 @@ object Anon_BackgroundColorColorHeight {
     titleFontSize: Int | Double = null
   ): Anon_BackgroundColorColorHeight = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hoverColor != null) __obj.updateDynamic("hoverColor")(hoverColor)
-    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor)
-    if (menuHoverColor != null) __obj.updateDynamic("menuHoverColor")(menuHoverColor)
-    if (separatorColor != null) __obj.updateDynamic("separatorColor")(separatorColor)
+    if (hoverColor != null) __obj.updateDynamic("hoverColor")(hoverColor.asInstanceOf[js.Any])
+    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor.asInstanceOf[js.Any])
+    if (menuHoverColor != null) __obj.updateDynamic("menuHoverColor")(menuHoverColor.asInstanceOf[js.Any])
+    if (separatorColor != null) __obj.updateDynamic("separatorColor")(separatorColor.asInstanceOf[js.Any])
     if (titleFontSize != null) __obj.updateDynamic("titleFontSize")(titleFontSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackgroundColorColorHeight]
   }

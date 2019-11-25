@@ -30,15 +30,15 @@ object Anon_AddTypename {
     useFlowReadOnlyTypes: js.UndefOr[Boolean] = js.undefined
   ): Anon_AddTypename = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addTypename)) __obj.updateDynamic("addTypename")(addTypename)
-    if (customScalarsPrefix != null) __obj.updateDynamic("customScalarsPrefix")(customScalarsPrefix)
-    if (!js.isUndefined(generateOperationIds)) __obj.updateDynamic("generateOperationIds")(generateOperationIds)
-    if (!js.isUndefined(mergeInFieldsFromFragmentSpreads)) __obj.updateDynamic("mergeInFieldsFromFragmentSpreads")(mergeInFieldsFromFragmentSpreads)
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
-    if (operationIdsPath != null) __obj.updateDynamic("operationIdsPath")(operationIdsPath)
-    if (!js.isUndefined(passthroughCustomScalars)) __obj.updateDynamic("passthroughCustomScalars")(passthroughCustomScalars)
-    if (!js.isUndefined(useFlowExactObjects)) __obj.updateDynamic("useFlowExactObjects")(useFlowExactObjects)
-    if (!js.isUndefined(useFlowReadOnlyTypes)) __obj.updateDynamic("useFlowReadOnlyTypes")(useFlowReadOnlyTypes)
+    if (!js.isUndefined(addTypename)) __obj.updateDynamic("addTypename")(addTypename.asInstanceOf[js.Any])
+    if (customScalarsPrefix != null) __obj.updateDynamic("customScalarsPrefix")(customScalarsPrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(generateOperationIds)) __obj.updateDynamic("generateOperationIds")(generateOperationIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(mergeInFieldsFromFragmentSpreads)) __obj.updateDynamic("mergeInFieldsFromFragmentSpreads")(mergeInFieldsFromFragmentSpreads.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    if (operationIdsPath != null) __obj.updateDynamic("operationIdsPath")(operationIdsPath.asInstanceOf[js.Any])
+    if (!js.isUndefined(passthroughCustomScalars)) __obj.updateDynamic("passthroughCustomScalars")(passthroughCustomScalars.asInstanceOf[js.Any])
+    if (!js.isUndefined(useFlowExactObjects)) __obj.updateDynamic("useFlowExactObjects")(useFlowExactObjects.asInstanceOf[js.Any])
+    if (!js.isUndefined(useFlowReadOnlyTypes)) __obj.updateDynamic("useFlowReadOnlyTypes")(useFlowReadOnlyTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AddTypename]
   }
 }

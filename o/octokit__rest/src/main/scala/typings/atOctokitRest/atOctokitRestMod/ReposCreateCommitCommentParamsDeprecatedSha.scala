@@ -35,8 +35,8 @@ object ReposCreateCommitCommentParamsDeprecatedSha {
     path: String = null,
     position: Int | Double = null
   ): ReposCreateCommitCommentParamsDeprecatedSha = {
-    val __obj = js.Dynamic.literal(body = body, owner = owner, repo = repo, sha = sha)
-    if (path != null) __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCreateCommitCommentParamsDeprecatedSha]
   }

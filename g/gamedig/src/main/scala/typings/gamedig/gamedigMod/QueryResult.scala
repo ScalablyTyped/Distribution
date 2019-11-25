@@ -29,9 +29,9 @@ object QueryResult {
     query: js.Object = null,
     raw: js.Object = null
   ): QueryResult = {
-    val __obj = js.Dynamic.literal(bots = bots, map = map, maxplayers = maxplayers, name = name, notes = notes, password = password, players = players)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (raw != null) __obj.updateDynamic("raw")(raw)
+    val __obj = js.Dynamic.literal(bots = bots.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], maxplayers = maxplayers.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], players = players.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResult]
   }
 }

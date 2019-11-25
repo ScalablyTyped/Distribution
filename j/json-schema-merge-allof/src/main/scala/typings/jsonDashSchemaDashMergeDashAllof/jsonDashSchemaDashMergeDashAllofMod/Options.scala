@@ -58,8 +58,8 @@ object Options {
     resolvers: Partial[Resolvers[Schema]] with Anon_DefaultResolver[Schema] = null
   ): Options[Schema] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreAdditionalProperties)) __obj.updateDynamic("ignoreAdditionalProperties")(ignoreAdditionalProperties)
-    if (resolvers != null) __obj.updateDynamic("resolvers")(resolvers)
+    if (!js.isUndefined(ignoreAdditionalProperties)) __obj.updateDynamic("ignoreAdditionalProperties")(ignoreAdditionalProperties.asInstanceOf[js.Any])
+    if (resolvers != null) __obj.updateDynamic("resolvers")(resolvers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[Schema]]
   }
 }

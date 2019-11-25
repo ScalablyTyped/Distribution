@@ -32,7 +32,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(chunkOverhead: `0`, entryChunkMultiplicator: `1`, maxSize: `50000`, minSize: `30000`): Options = {
-    val __obj = js.Dynamic.literal(chunkOverhead = chunkOverhead, entryChunkMultiplicator = entryChunkMultiplicator, maxSize = maxSize, minSize = minSize)
+    val __obj = js.Dynamic.literal(chunkOverhead = chunkOverhead.asInstanceOf[js.Any], entryChunkMultiplicator = entryChunkMultiplicator.asInstanceOf[js.Any], maxSize = maxSize.asInstanceOf[js.Any], minSize = minSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

@@ -13,7 +13,7 @@ trait TrainingResult extends js.Object {
 object TrainingResult {
   @scala.inline
   def apply(error: Double, iterations: Double, time: Double): TrainingResult = {
-    val __obj = js.Dynamic.literal(error = error, iterations = iterations, time = time)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TrainingResult]
   }

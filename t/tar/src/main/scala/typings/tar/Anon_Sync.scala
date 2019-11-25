@@ -12,7 +12,7 @@ trait Anon_Sync extends js.Object {
 object Anon_Sync {
   @scala.inline
   def apply(sync: `true`): Anon_Sync = {
-    val __obj = js.Dynamic.literal(sync = sync)
+    val __obj = js.Dynamic.literal(sync = sync.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Sync]
   }

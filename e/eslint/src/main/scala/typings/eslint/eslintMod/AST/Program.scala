@@ -29,16 +29,14 @@ object Program {
     range: Range,
     sourceType: script | module,
     tokens: js.Array[Token],
-    `type`: String,
-    type_Program: typings.estree.estreeStrings.Program,
+    `type`: typings.estree.estreeStrings.Program,
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): Program = {
-    val __obj = js.Dynamic.literal(body = body, comments = comments, loc = loc, range = range, sourceType = sourceType.asInstanceOf[js.Any], tokens = tokens)
-    __obj.updateDynamic("type")(`type`)
-    __obj.updateDynamic("type")(type_Program)
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Program]
   }
 }

@@ -13,7 +13,7 @@ trait ActionMenu extends js.Object {
 object ActionMenu {
   @scala.inline
   def apply(actions: js.Array[Anon_Callback], icon: String): ActionMenu = {
-    val __obj = js.Dynamic.literal(actions = actions, icon = icon)
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ActionMenu]
   }

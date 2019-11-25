@@ -16,11 +16,11 @@ object DropzoneDictFileSizeUnits {
   @scala.inline
   def apply(b: String = null, gb: String = null, kb: String = null, mb: String = null, tb: String = null): DropzoneDictFileSizeUnits = {
     val __obj = js.Dynamic.literal()
-    if (b != null) __obj.updateDynamic("b")(b)
-    if (gb != null) __obj.updateDynamic("gb")(gb)
-    if (kb != null) __obj.updateDynamic("kb")(kb)
-    if (mb != null) __obj.updateDynamic("mb")(mb)
-    if (tb != null) __obj.updateDynamic("tb")(tb)
+    if (b != null) __obj.updateDynamic("b")(b.asInstanceOf[js.Any])
+    if (gb != null) __obj.updateDynamic("gb")(gb.asInstanceOf[js.Any])
+    if (kb != null) __obj.updateDynamic("kb")(kb.asInstanceOf[js.Any])
+    if (mb != null) __obj.updateDynamic("mb")(mb.asInstanceOf[js.Any])
+    if (tb != null) __obj.updateDynamic("tb")(tb.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropzoneDictFileSizeUnits]
   }
 }

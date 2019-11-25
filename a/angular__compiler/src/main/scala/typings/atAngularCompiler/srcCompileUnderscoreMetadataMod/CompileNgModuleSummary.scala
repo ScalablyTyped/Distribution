@@ -24,9 +24,9 @@ object CompileNgModuleSummary {
     `type`: CompileTypeMetadata,
     summaryKind: CompileSummaryKind = null
   ): CompileNgModuleSummary = {
-    val __obj = js.Dynamic.literal(entryComponents = entryComponents, exportedDirectives = exportedDirectives, exportedPipes = exportedPipes, modules = modules, providers = providers)
-    __obj.updateDynamic("type")(`type`)
-    if (summaryKind != null) __obj.updateDynamic("summaryKind")(summaryKind)
+    val __obj = js.Dynamic.literal(entryComponents = entryComponents.asInstanceOf[js.Any], exportedDirectives = exportedDirectives.asInstanceOf[js.Any], exportedPipes = exportedPipes.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], providers = providers.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (summaryKind != null) __obj.updateDynamic("summaryKind")(summaryKind.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileNgModuleSummary]
   }
 }

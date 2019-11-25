@@ -4,7 +4,7 @@ import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNode
 import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.REDUCED_REDUNDANCY
 import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.STANDARD
 import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.STANDARD_IA
-import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.requester
+import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.requester_
 import typings.atAwsDashSdkClientDashS3DashNode.typesOutputTypesUnionMod._OutputTypesUnion
 import typings.atAwsDashSdkClientDashS3DashNode.typesUnderscoreInitiatorMod._UnmarshalledInitiator
 import typings.atAwsDashSdkClientDashS3DashNode.typesUnderscoreOwnerMod._UnmarshalledOwner
@@ -66,7 +66,7 @@ trait ListPartsOutput
   /**
     * <p>If present, indicates that the requester was successfully charged for the request.</p>
     */
-  var RequestCharged: js.UndefOr[requester | String] = js.undefined
+  var RequestCharged: js.UndefOr[requester_ | String] = js.undefined
   /**
     * <p>The class of storage used to store the object.</p>
     */
@@ -92,25 +92,25 @@ object ListPartsOutput {
     Owner: _UnmarshalledOwner = null,
     PartNumberMarker: Int | Double = null,
     Parts: js.Array[_UnmarshalledPart] = null,
-    RequestCharged: requester | String = null,
+    RequestCharged: requester_ | String = null,
     StorageClass: STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | String = null,
     UploadId: String = null
   ): ListPartsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (AbortDate != null) __obj.updateDynamic("AbortDate")(AbortDate)
-    if (AbortRuleId != null) __obj.updateDynamic("AbortRuleId")(AbortRuleId)
-    if (Bucket != null) __obj.updateDynamic("Bucket")(Bucket)
-    if (Initiator != null) __obj.updateDynamic("Initiator")(Initiator)
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated)
-    if (Key != null) __obj.updateDynamic("Key")(Key)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (AbortDate != null) __obj.updateDynamic("AbortDate")(AbortDate.asInstanceOf[js.Any])
+    if (AbortRuleId != null) __obj.updateDynamic("AbortRuleId")(AbortRuleId.asInstanceOf[js.Any])
+    if (Bucket != null) __obj.updateDynamic("Bucket")(Bucket.asInstanceOf[js.Any])
+    if (Initiator != null) __obj.updateDynamic("Initiator")(Initiator.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.asInstanceOf[js.Any])
+    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
     if (MaxParts != null) __obj.updateDynamic("MaxParts")(MaxParts.asInstanceOf[js.Any])
     if (NextPartNumberMarker != null) __obj.updateDynamic("NextPartNumberMarker")(NextPartNumberMarker.asInstanceOf[js.Any])
-    if (Owner != null) __obj.updateDynamic("Owner")(Owner)
+    if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
     if (PartNumberMarker != null) __obj.updateDynamic("PartNumberMarker")(PartNumberMarker.asInstanceOf[js.Any])
-    if (Parts != null) __obj.updateDynamic("Parts")(Parts)
+    if (Parts != null) __obj.updateDynamic("Parts")(Parts.asInstanceOf[js.Any])
     if (RequestCharged != null) __obj.updateDynamic("RequestCharged")(RequestCharged.asInstanceOf[js.Any])
     if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
-    if (UploadId != null) __obj.updateDynamic("UploadId")(UploadId)
+    if (UploadId != null) __obj.updateDynamic("UploadId")(UploadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPartsOutput]
   }
 }

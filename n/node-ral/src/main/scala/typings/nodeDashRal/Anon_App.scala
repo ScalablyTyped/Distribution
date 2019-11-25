@@ -15,7 +15,7 @@ trait Anon_App extends js.Object {
 object Anon_App {
   @scala.inline
   def apply(app: String, format_wf: String, logInstance: RalLogger, log_path: String): Anon_App = {
-    val __obj = js.Dynamic.literal(app = app, format_wf = format_wf, logInstance = logInstance, log_path = log_path)
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], format_wf = format_wf.asInstanceOf[js.Any], logInstance = logInstance.asInstanceOf[js.Any], log_path = log_path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_App]
   }

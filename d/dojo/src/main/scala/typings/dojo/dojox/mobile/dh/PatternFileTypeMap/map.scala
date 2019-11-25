@@ -24,8 +24,8 @@ object map {
   @scala.inline
   def apply(`.*.html`: String, `.*.json`: String): map = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic(".*.html")(`.*.html`)
-    __obj.updateDynamic(".*.json")(`.*.json`)
+    __obj.updateDynamic(".*.html")(`.*.html`.asInstanceOf[js.Any])
+    __obj.updateDynamic(".*.json")(`.*.json`.asInstanceOf[js.Any])
     __obj.asInstanceOf[map]
   }
 }

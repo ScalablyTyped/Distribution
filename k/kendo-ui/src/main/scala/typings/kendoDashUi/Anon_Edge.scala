@@ -25,7 +25,7 @@ object Anon_Edge {
     version: String,
     webkit: Boolean
   ): Anon_Edge = {
-    val __obj = js.Dynamic.literal(edge = edge, mozilla = mozilla, msie = msie, opera = opera, safari = safari, version = version, webkit = webkit)
+    val __obj = js.Dynamic.literal(edge = edge.asInstanceOf[js.Any], mozilla = mozilla.asInstanceOf[js.Any], msie = msie.asInstanceOf[js.Any], opera = opera.asInstanceOf[js.Any], safari = safari.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], webkit = webkit.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Edge]
   }

@@ -21,9 +21,9 @@ object ChartFontOptions {
   ): ChartFontOptions = {
     val __obj = js.Dynamic.literal()
     if (defaultFontColor != null) __obj.updateDynamic("defaultFontColor")(defaultFontColor.asInstanceOf[js.Any])
-    if (defaultFontFamily != null) __obj.updateDynamic("defaultFontFamily")(defaultFontFamily)
+    if (defaultFontFamily != null) __obj.updateDynamic("defaultFontFamily")(defaultFontFamily.asInstanceOf[js.Any])
     if (defaultFontSize != null) __obj.updateDynamic("defaultFontSize")(defaultFontSize.asInstanceOf[js.Any])
-    if (defaultFontStyle != null) __obj.updateDynamic("defaultFontStyle")(defaultFontStyle)
+    if (defaultFontStyle != null) __obj.updateDynamic("defaultFontStyle")(defaultFontStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartFontOptions]
   }
 }

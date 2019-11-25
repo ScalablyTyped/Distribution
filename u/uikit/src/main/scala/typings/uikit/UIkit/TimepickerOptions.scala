@@ -33,7 +33,7 @@ object TimepickerOptions {
   def apply(end: Int | Double = null, format: String = null, start: Int | Double = null): TimepickerOptions = {
     val __obj = js.Dynamic.literal()
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimepickerOptions]
   }

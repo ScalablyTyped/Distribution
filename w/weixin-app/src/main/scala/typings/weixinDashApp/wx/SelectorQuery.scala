@@ -20,7 +20,7 @@ trait SelectorQuery extends js.Object {
   		 * （初始时，选择器仅选取页面范围的节点，不会选取任何自定义组件中的节点
   		 * @version 1.6.0
   		 */
-  def in(component: Component[js.Object, js.Object, js.Array[js.Any]]): SelectorQuery = js.native
+  def in(component: typings.weixinDashApp.wx.Component[js.Object, js.Object, js.Array[js.Any]]): SelectorQuery = js.native
   /**
   		 * 在当前页面下选择第一个匹配选择器selector的节点，返回一个NodesRef对象实例，可以用于获取节点信息。
   		 * selector类似于CSS的选择器，但仅支持下列语法。

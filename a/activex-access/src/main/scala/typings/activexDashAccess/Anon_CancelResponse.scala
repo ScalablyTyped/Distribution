@@ -12,7 +12,7 @@ trait Anon_CancelResponse extends js.Object {
 object Anon_CancelResponse {
   @scala.inline
   def apply(Cancel: Double, Response: Double): Anon_CancelResponse = {
-    val __obj = js.Dynamic.literal(Cancel = Cancel, Response = Response)
+    val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Response = Response.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CancelResponse]
   }

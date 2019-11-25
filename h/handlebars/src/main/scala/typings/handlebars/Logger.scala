@@ -26,7 +26,7 @@ object Logger {
     log: (Double, String) => Unit,
     methodMap: NumberDictionary[String]
   ): Logger = {
-    val __obj = js.Dynamic.literal(DEBUG = DEBUG, ERROR = ERROR, INFO = INFO, WARN = WARN, level = level, log = js.Any.fromFunction2(log), methodMap = methodMap)
+    val __obj = js.Dynamic.literal(DEBUG = DEBUG.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], INFO = INFO.asInstanceOf[js.Any], WARN = WARN.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], log = js.Any.fromFunction2(log), methodMap = methodMap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Logger]
   }

@@ -21,7 +21,7 @@ object DistributionMixture {
     distributions: (js.Array[Distribution | SignalRef]) | SignalRef = null,
     weights: (js.Array[Double | SignalRef]) | SignalRef = null
   ): DistributionMixture = {
-    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], function = function)
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], function = function.asInstanceOf[js.Any])
     if (distributions != null) __obj.updateDynamic("distributions")(distributions.asInstanceOf[js.Any])
     if (weights != null) __obj.updateDynamic("weights")(weights.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionMixture]

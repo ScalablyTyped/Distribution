@@ -14,7 +14,7 @@ trait _PointInTimeRecoverySpecification extends js.Object {
 object _PointInTimeRecoverySpecification {
   @scala.inline
   def apply(PointInTimeRecoveryEnabled: Boolean): _PointInTimeRecoverySpecification = {
-    val __obj = js.Dynamic.literal(PointInTimeRecoveryEnabled = PointInTimeRecoveryEnabled)
+    val __obj = js.Dynamic.literal(PointInTimeRecoveryEnabled = PointInTimeRecoveryEnabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_PointInTimeRecoverySpecification]
   }

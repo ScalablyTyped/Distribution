@@ -41,17 +41,17 @@ object PopoverProps {
     tipSize: Int | Double = null
   ): PopoverProps = {
     val __obj = js.Dynamic.literal()
-    if (appendTarget != null) __obj.updateDynamic("appendTarget")(appendTarget)
+    if (appendTarget != null) __obj.updateDynamic("appendTarget")(appendTarget.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (enterExitTransitionDurationMs != null) __obj.updateDynamic("enterExitTransitionDurationMs")(enterExitTransitionDurationMs.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
     if (onOuterAction != null) __obj.updateDynamic("onOuterAction")(js.Any.fromFunction1(onOuterAction))
-    if (place != null) __obj.updateDynamic("place")(place)
-    if (preferPlace != null) __obj.updateDynamic("preferPlace")(preferPlace)
+    if (place != null) __obj.updateDynamic("place")(place.asInstanceOf[js.Any])
+    if (preferPlace != null) __obj.updateDynamic("preferPlace")(preferPlace.asInstanceOf[js.Any])
     if (refreshIntervalMs != null) __obj.updateDynamic("refreshIntervalMs")(refreshIntervalMs.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (tipSize != null) __obj.updateDynamic("tipSize")(tipSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopoverProps]
   }

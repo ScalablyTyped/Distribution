@@ -12,7 +12,7 @@ trait BasicWriter extends Writer {
 object BasicWriter {
   @scala.inline
   def apply(command: String, handle: (BeanstalkdProtocol, Socket, /* repeated */ js.Any) => js.Promise[_]): BasicWriter = {
-    val __obj = js.Dynamic.literal(command = command, handle = js.Any.fromFunction3(handle))
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], handle = js.Any.fromFunction3(handle))
   
     __obj.asInstanceOf[BasicWriter]
   }

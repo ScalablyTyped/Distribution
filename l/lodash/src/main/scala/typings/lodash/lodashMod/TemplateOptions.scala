@@ -24,12 +24,12 @@ object TemplateOptions {
     variable: String = null
   ): TemplateOptions = {
     val __obj = js.Dynamic.literal()
-    if (escape != null) __obj.updateDynamic("escape")(escape)
-    if (evaluate != null) __obj.updateDynamic("evaluate")(evaluate)
-    if (imports != null) __obj.updateDynamic("imports")(imports)
-    if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate)
-    if (sourceURL != null) __obj.updateDynamic("sourceURL")(sourceURL)
-    if (variable != null) __obj.updateDynamic("variable")(variable)
+    if (escape != null) __obj.updateDynamic("escape")(escape.asInstanceOf[js.Any])
+    if (evaluate != null) __obj.updateDynamic("evaluate")(evaluate.asInstanceOf[js.Any])
+    if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
+    if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate.asInstanceOf[js.Any])
+    if (sourceURL != null) __obj.updateDynamic("sourceURL")(sourceURL.asInstanceOf[js.Any])
+    if (variable != null) __obj.updateDynamic("variable")(variable.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateOptions]
   }
 }

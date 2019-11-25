@@ -30,7 +30,7 @@ trait Paths extends js.Object {
 object Paths {
   @scala.inline
   def apply(cache: String, config: String, data: String, log: String, temp: String): Paths = {
-    val __obj = js.Dynamic.literal(cache = cache, config = config, data = data, log = log, temp = temp)
+    val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], temp = temp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Paths]
   }

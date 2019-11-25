@@ -13,7 +13,7 @@ trait Anon_OldRange extends js.Object {
 object Anon_OldRange {
   @scala.inline
   def apply(oldRange: js.Any, range: js.Any, source: String): Anon_OldRange = {
-    val __obj = js.Dynamic.literal(oldRange = oldRange, range = range, source = source)
+    val __obj = js.Dynamic.literal(oldRange = oldRange.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_OldRange]
   }

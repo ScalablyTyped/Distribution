@@ -25,9 +25,9 @@ object AddTraceArgs {
     documentAST: DocumentNode = null,
     queryString: String = null
   ): AddTraceArgs = {
-    val __obj = js.Dynamic.literal(operationName = operationName, queryHash = queryHash, schemaHash = schemaHash, trace = trace)
-    if (documentAST != null) __obj.updateDynamic("documentAST")(documentAST)
-    if (queryString != null) __obj.updateDynamic("queryString")(queryString)
+    val __obj = js.Dynamic.literal(operationName = operationName.asInstanceOf[js.Any], queryHash = queryHash.asInstanceOf[js.Any], schemaHash = schemaHash.asInstanceOf[js.Any], trace = trace.asInstanceOf[js.Any])
+    if (documentAST != null) __obj.updateDynamic("documentAST")(documentAST.asInstanceOf[js.Any])
+    if (queryString != null) __obj.updateDynamic("queryString")(queryString.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddTraceArgs]
   }
 }

@@ -24,7 +24,7 @@ import typings.d3DashFormat.d3DashFormatStrings.o
 import typings.d3DashFormat.d3DashFormatStrings.p
 import typings.d3DashFormat.d3DashFormatStrings.r
 import typings.d3DashFormat.d3DashFormatStrings.s
-import typings.d3DashFormat.d3DashFormatStrings.x
+import typings.d3DashFormat.d3DashFormatStrings.x_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -100,7 +100,7 @@ trait FormatSpecifier extends js.Object {
     * the type 'n' is shorthand for ',g'. For the 'g', 'n' and '' (none) types,
     * decimal notation is used if the resulting string would have precision or fewer digits; otherwise, exponent notation is used.
     */
-  var `type`: e | f | g | r | s | `%` | p | b | o | d | x | X | c | Empty | n
+  var `type`: e | f | g | r | s | `%` | p | b | o | d | x_ | X | c | Empty | n
   /**
     * The width defines the minimum field width;
     * if not specified, then the width will be determined by the content.
@@ -120,14 +120,13 @@ object FormatSpecifier {
     fill: String,
     sign: `-` | `+` | `(` | (` `),
     symbol: DOLLAR | `#` | Empty,
-    toString: () => String,
     trim: Boolean,
-    `type`: e | f | g | r | s | `%` | p | b | o | d | x | X | c | Empty | n,
+    `type`: e | f | g | r | s | `%` | p | b | o | d | x_ | X | c | Empty | n,
     zero: Boolean,
     precision: Int | Double = null,
     width: Int | Double = null
   ): FormatSpecifier = {
-    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], comma = comma, fill = fill, sign = sign.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], toString = js.Any.fromFunction0(toString), trim = trim, zero = zero)
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], comma = comma.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], sign = sign.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], trim = trim.asInstanceOf[js.Any], zero = zero.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

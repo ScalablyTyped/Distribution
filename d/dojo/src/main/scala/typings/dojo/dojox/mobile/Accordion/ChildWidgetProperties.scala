@@ -65,8 +65,8 @@ object ChildWidgetProperties {
     `lazy`: Boolean,
     selected: Boolean
   ): ChildWidgetProperties = {
-    val __obj = js.Dynamic.literal(alt = alt, icon1 = icon1, icon2 = icon2, iconPos1 = iconPos1, iconPos2 = iconPos2, label = label, selected = selected)
-    __obj.updateDynamic("lazy")(`lazy`)
+    val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], icon1 = icon1.asInstanceOf[js.Any], icon2 = icon2.asInstanceOf[js.Any], iconPos1 = iconPos1.asInstanceOf[js.Any], iconPos2 = iconPos2.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
+    __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildWidgetProperties]
   }
 }

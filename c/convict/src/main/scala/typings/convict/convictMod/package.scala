@@ -29,7 +29,7 @@ package object convictMod {
     - scala.Boolean
   */
   type PredefinedFormat = _PredefinedFormat | String | js.Object | Number | RegExp | Boolean
-  type Schema[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Schema[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias convict.convict.Schema<T[P]> * / object | convict.convict.SchemaObj<T[P]>}
     */ typings.convict.convictStrings.Schema with T
 }

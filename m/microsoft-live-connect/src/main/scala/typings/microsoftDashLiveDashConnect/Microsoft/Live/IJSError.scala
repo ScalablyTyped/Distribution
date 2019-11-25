@@ -22,7 +22,7 @@ trait IJSError extends js.Object {
 object IJSError {
   @scala.inline
   def apply(error: String, error_description: String): IJSError = {
-    val __obj = js.Dynamic.literal(error = error, error_description = error_description)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], error_description = error_description.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IJSError]
   }

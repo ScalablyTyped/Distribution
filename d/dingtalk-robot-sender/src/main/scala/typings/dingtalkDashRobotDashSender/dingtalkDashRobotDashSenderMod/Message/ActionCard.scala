@@ -15,7 +15,7 @@ trait ActionCard extends MessageType {
 object ActionCard {
   @scala.inline
   def apply(actionCard: Anon_0, msgtype: actionCard): ActionCard = {
-    val __obj = js.Dynamic.literal(actionCard = actionCard, msgtype = msgtype)
+    val __obj = js.Dynamic.literal(actionCard = actionCard.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ActionCard]
   }

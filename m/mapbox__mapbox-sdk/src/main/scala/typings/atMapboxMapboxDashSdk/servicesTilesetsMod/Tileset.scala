@@ -31,8 +31,8 @@ object Tileset {
     `type`: String,
     visibility: String
   ): Tileset = {
-    val __obj = js.Dynamic.literal(center = center, created = created, description = description, filesize = filesize, id = id, modified = modified, name = name, status = status, visibility = visibility)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], filesize = filesize.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tileset]
   }
 }

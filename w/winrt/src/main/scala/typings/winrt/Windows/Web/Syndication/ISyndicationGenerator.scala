@@ -14,7 +14,7 @@ trait ISyndicationGenerator extends js.Object {
 object ISyndicationGenerator {
   @scala.inline
   def apply(text: String, uri: Uri, version: String): ISyndicationGenerator = {
-    val __obj = js.Dynamic.literal(text = text, uri = uri, version = version)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISyndicationGenerator]
   }

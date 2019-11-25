@@ -20,8 +20,8 @@ object _UnmarshalledReplicaGlobalSecondaryIndexSettingsUpdate {
     ProvisionedReadCapacityAutoScalingSettingsUpdate: _UnmarshalledAutoScalingSettingsUpdate = null,
     ProvisionedReadCapacityUnits: Int | Double = null
   ): _UnmarshalledReplicaGlobalSecondaryIndexSettingsUpdate = {
-    val __obj = js.Dynamic.literal(IndexName = IndexName)
-    if (ProvisionedReadCapacityAutoScalingSettingsUpdate != null) __obj.updateDynamic("ProvisionedReadCapacityAutoScalingSettingsUpdate")(ProvisionedReadCapacityAutoScalingSettingsUpdate)
+    val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any])
+    if (ProvisionedReadCapacityAutoScalingSettingsUpdate != null) __obj.updateDynamic("ProvisionedReadCapacityAutoScalingSettingsUpdate")(ProvisionedReadCapacityAutoScalingSettingsUpdate.asInstanceOf[js.Any])
     if (ProvisionedReadCapacityUnits != null) __obj.updateDynamic("ProvisionedReadCapacityUnits")(ProvisionedReadCapacityUnits.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledReplicaGlobalSecondaryIndexSettingsUpdate]
   }

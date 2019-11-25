@@ -12,7 +12,7 @@ object MUIDataTableHeadRow {
   @scala.inline
   def apply(classes: js.Object = null): MUIDataTableHeadRow = {
     val __obj = js.Dynamic.literal()
-    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableHeadRow]
   }
 }

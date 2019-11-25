@@ -60,11 +60,11 @@ object EncodeOptions {
     useNamedReferences: js.UndefOr[Boolean] = js.undefined
   ): EncodeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUnsafeSymbols)) __obj.updateDynamic("allowUnsafeSymbols")(allowUnsafeSymbols)
-    if (!js.isUndefined(decimal)) __obj.updateDynamic("decimal")(decimal)
-    if (!js.isUndefined(encodeEverything)) __obj.updateDynamic("encodeEverything")(encodeEverything)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
-    if (!js.isUndefined(useNamedReferences)) __obj.updateDynamic("useNamedReferences")(useNamedReferences)
+    if (!js.isUndefined(allowUnsafeSymbols)) __obj.updateDynamic("allowUnsafeSymbols")(allowUnsafeSymbols.asInstanceOf[js.Any])
+    if (!js.isUndefined(decimal)) __obj.updateDynamic("decimal")(decimal.asInstanceOf[js.Any])
+    if (!js.isUndefined(encodeEverything)) __obj.updateDynamic("encodeEverything")(encodeEverything.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNamedReferences)) __obj.updateDynamic("useNamedReferences")(useNamedReferences.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncodeOptions]
   }
 }

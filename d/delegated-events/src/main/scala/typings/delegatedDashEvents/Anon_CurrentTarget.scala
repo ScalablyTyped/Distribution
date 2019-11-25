@@ -12,7 +12,7 @@ trait Anon_CurrentTarget extends js.Object {
 object Anon_CurrentTarget {
   @scala.inline
   def apply(currentTarget: Element): Anon_CurrentTarget = {
-    val __obj = js.Dynamic.literal(currentTarget = currentTarget)
+    val __obj = js.Dynamic.literal(currentTarget = currentTarget.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CurrentTarget]
   }

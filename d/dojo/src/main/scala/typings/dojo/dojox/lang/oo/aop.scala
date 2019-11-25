@@ -41,7 +41,7 @@ object aop {
     around: js.Object,
     before: js.Object
   ): aop = {
-    val __obj = js.Dynamic.literal(after = after, afterReturning = afterReturning, afterThrowing = afterThrowing, around = around, before = before)
+    val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], afterReturning = afterReturning.asInstanceOf[js.Any], afterThrowing = afterThrowing.asInstanceOf[js.Any], around = around.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[aop]
   }

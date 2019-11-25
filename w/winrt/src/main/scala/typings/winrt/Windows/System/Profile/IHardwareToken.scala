@@ -14,7 +14,7 @@ trait IHardwareToken extends js.Object {
 object IHardwareToken {
   @scala.inline
   def apply(certificate: IBuffer, id: IBuffer, signature: IBuffer): IHardwareToken = {
-    val __obj = js.Dynamic.literal(certificate = certificate, id = id, signature = signature)
+    val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IHardwareToken]
   }

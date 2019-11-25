@@ -57,7 +57,7 @@ object SyncAsyncFileSystemDecorator {
     readlink: (/* path */ String, /* callback */ js.Function2[/* err */ ErrnoException | Null, /* linkString */ js.UndefOr[String], Unit]) => Unit = null,
     stat: (/* path */ String, /* callback */ js.Function2[/* err */ ErrnoException | Null, /* stats */ js.UndefOr[Stats], Unit]) => Unit = null
   ): SyncAsyncFileSystemDecorator = {
-    val __obj = js.Dynamic.literal(fs = fs)
+    val __obj = js.Dynamic.literal(fs = fs.asInstanceOf[js.Any])
     if (readFile != null) __obj.updateDynamic("readFile")(js.Any.fromFunction2(readFile))
     if (readJson != null) __obj.updateDynamic("readJson")(js.Any.fromFunction2(readJson))
     if (readdir != null) __obj.updateDynamic("readdir")(js.Any.fromFunction2(readdir))

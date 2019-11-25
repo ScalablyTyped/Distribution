@@ -47,7 +47,7 @@ object APIVersions {
     serverAddressByClientCIDRs: js.Array[ServerAddressByClientCIDR],
     versions: js.Array[String]
   ): APIVersions = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, serverAddressByClientCIDRs = serverAddressByClientCIDRs, versions = versions)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], serverAddressByClientCIDRs = serverAddressByClientCIDRs.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[APIVersions]
   }

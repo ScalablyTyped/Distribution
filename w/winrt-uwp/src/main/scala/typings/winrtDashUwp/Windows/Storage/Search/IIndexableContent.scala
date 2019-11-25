@@ -21,7 +21,7 @@ trait IIndexableContent extends js.Object {
 object IIndexableContent {
   @scala.inline
   def apply(id: String, properties: IMap[String, _], stream: IRandomAccessStream, streamContentType: String): IIndexableContent = {
-    val __obj = js.Dynamic.literal(id = id, properties = properties, stream = stream, streamContentType = streamContentType)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any], streamContentType = streamContentType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IIndexableContent]
   }

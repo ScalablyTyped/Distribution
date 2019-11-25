@@ -13,7 +13,7 @@ trait IPanel extends js.Object {
 object IPanel {
   @scala.inline
   def apply(format: IFormat, margins: IMargins, transparent: Boolean): IPanel = {
-    val __obj = js.Dynamic.literal(format = format, margins = margins, transparent = transparent)
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], margins = margins.asInstanceOf[js.Any], transparent = transparent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPanel]
   }

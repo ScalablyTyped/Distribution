@@ -25,9 +25,9 @@ object PreCheckoutQuery {
     order_info: OrderInfo = null,
     shipping_option_id: String = null
   ): PreCheckoutQuery = {
-    val __obj = js.Dynamic.literal(currency = currency, from = from, id = id, invoice_payload = invoice_payload, total_amount = total_amount)
-    if (order_info != null) __obj.updateDynamic("order_info")(order_info)
-    if (shipping_option_id != null) __obj.updateDynamic("shipping_option_id")(shipping_option_id)
+    val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], invoice_payload = invoice_payload.asInstanceOf[js.Any], total_amount = total_amount.asInstanceOf[js.Any])
+    if (order_info != null) __obj.updateDynamic("order_info")(order_info.asInstanceOf[js.Any])
+    if (shipping_option_id != null) __obj.updateDynamic("shipping_option_id")(shipping_option_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreCheckoutQuery]
   }
 }

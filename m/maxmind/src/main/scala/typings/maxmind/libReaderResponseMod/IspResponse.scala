@@ -19,8 +19,8 @@ object IspResponse {
     organization: String,
     ip_address: String = null
   ): IspResponse = {
-    val __obj = js.Dynamic.literal(autonomous_system_number = autonomous_system_number, autonomous_system_organization = autonomous_system_organization, isp = isp, organization = organization)
-    if (ip_address != null) __obj.updateDynamic("ip_address")(ip_address)
+    val __obj = js.Dynamic.literal(autonomous_system_number = autonomous_system_number.asInstanceOf[js.Any], autonomous_system_organization = autonomous_system_organization.asInstanceOf[js.Any], isp = isp.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any])
+    if (ip_address != null) __obj.updateDynamic("ip_address")(ip_address.asInstanceOf[js.Any])
     __obj.asInstanceOf[IspResponse]
   }
 }

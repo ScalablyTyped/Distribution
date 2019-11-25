@@ -19,7 +19,7 @@ object DirectThreadRepositoryBroadcastResponseRootObject {
     status: String,
     status_code: String
   ): DirectThreadRepositoryBroadcastResponseRootObject = {
-    val __obj = js.Dynamic.literal(action = action, payload = payload, status = status, status_code = status_code)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], status_code = status_code.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DirectThreadRepositoryBroadcastResponseRootObject]
   }

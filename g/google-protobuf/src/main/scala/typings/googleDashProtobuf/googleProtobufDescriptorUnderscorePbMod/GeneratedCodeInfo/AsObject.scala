@@ -17,7 +17,7 @@ object AsObject {
       typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.GeneratedCodeInfo.Annotation.AsObject
     ]
   ): AsObject = {
-    val __obj = js.Dynamic.literal(annotationList = annotationList)
+    val __obj = js.Dynamic.literal(annotationList = annotationList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

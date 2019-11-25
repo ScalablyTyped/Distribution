@@ -14,7 +14,7 @@ object Anon_BoxWidth {
   def apply(boxWidth: Int | Double = null, style: Anon_Max = null): Anon_BoxWidth = {
     val __obj = js.Dynamic.literal()
     if (boxWidth != null) __obj.updateDynamic("boxWidth")(boxWidth.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BoxWidth]
   }
 }

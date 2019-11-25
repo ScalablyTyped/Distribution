@@ -28,11 +28,11 @@ object CredstashConfig {
     table: String = null
   ): CredstashConfig = {
     val __obj = js.Dynamic.literal()
-    if (awsOpts != null) __obj.updateDynamic("awsOpts")(awsOpts)
-    if (dynamoOpts != null) __obj.updateDynamic("dynamoOpts")(dynamoOpts)
-    if (kmsKey != null) __obj.updateDynamic("kmsKey")(kmsKey)
-    if (kmsOpts != null) __obj.updateDynamic("kmsOpts")(kmsOpts)
-    if (table != null) __obj.updateDynamic("table")(table)
+    if (awsOpts != null) __obj.updateDynamic("awsOpts")(awsOpts.asInstanceOf[js.Any])
+    if (dynamoOpts != null) __obj.updateDynamic("dynamoOpts")(dynamoOpts.asInstanceOf[js.Any])
+    if (kmsKey != null) __obj.updateDynamic("kmsKey")(kmsKey.asInstanceOf[js.Any])
+    if (kmsOpts != null) __obj.updateDynamic("kmsOpts")(kmsOpts.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[CredstashConfig]
   }
 }

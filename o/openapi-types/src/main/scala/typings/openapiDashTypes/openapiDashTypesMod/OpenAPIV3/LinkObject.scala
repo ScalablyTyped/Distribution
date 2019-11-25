@@ -25,12 +25,12 @@ object LinkObject {
     server: ServerObject = null
   ): LinkObject = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
-    if (operationRef != null) __obj.updateDynamic("operationRef")(operationRef)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
-    if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody)
-    if (server != null) __obj.updateDynamic("server")(server)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
+    if (operationRef != null) __obj.updateDynamic("operationRef")(operationRef.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody.asInstanceOf[js.Any])
+    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkObject]
   }
 }

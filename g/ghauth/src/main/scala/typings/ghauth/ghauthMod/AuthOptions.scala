@@ -43,13 +43,13 @@ object AuthOptions {
     scopes: js.Array[String] = null,
     userAgent: String = null
   ): AuthOptions = {
-    val __obj = js.Dynamic.literal(configName = configName)
-    if (authUrl != null) __obj.updateDynamic("authUrl")(authUrl)
-    if (!js.isUndefined(noSave)) __obj.updateDynamic("noSave")(noSave)
-    if (note != null) __obj.updateDynamic("note")(note)
-    if (promptName != null) __obj.updateDynamic("promptName")(promptName)
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
+    val __obj = js.Dynamic.literal(configName = configName.asInstanceOf[js.Any])
+    if (authUrl != null) __obj.updateDynamic("authUrl")(authUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSave)) __obj.updateDynamic("noSave")(noSave.asInstanceOf[js.Any])
+    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
+    if (promptName != null) __obj.updateDynamic("promptName")(promptName.asInstanceOf[js.Any])
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthOptions]
   }
 }

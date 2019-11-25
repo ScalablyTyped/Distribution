@@ -75,7 +75,7 @@ object IQFieldSelections {
     selectedValues: js.Array[Double],
     totalCount: Double
   ): IQFieldSelections = {
-    val __obj = js.Dynamic.literal(field = field, fieldName = fieldName, isNumeric = isNumeric, locked = locked, notSelectedValues = notSelectedValues, qSelected = qSelected, qSelectionThreshold = qSelectionThreshold, qSortIndex = qSortIndex, qStateCounts = qStateCounts, selectedCount = selectedCount, selectedValues = selectedValues, totalCount = totalCount)
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], fieldName = fieldName.asInstanceOf[js.Any], isNumeric = isNumeric.asInstanceOf[js.Any], locked = locked.asInstanceOf[js.Any], notSelectedValues = notSelectedValues.asInstanceOf[js.Any], qSelected = qSelected.asInstanceOf[js.Any], qSelectionThreshold = qSelectionThreshold.asInstanceOf[js.Any], qSortIndex = qSortIndex.asInstanceOf[js.Any], qStateCounts = qStateCounts.asInstanceOf[js.Any], selectedCount = selectedCount.asInstanceOf[js.Any], selectedValues = selectedValues.asInstanceOf[js.Any], totalCount = totalCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IQFieldSelections]
   }

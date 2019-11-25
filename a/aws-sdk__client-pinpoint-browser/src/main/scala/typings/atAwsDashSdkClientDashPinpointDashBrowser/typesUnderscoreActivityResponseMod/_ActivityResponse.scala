@@ -81,19 +81,19 @@ object _ActivityResponse {
     TreatmentId: String = null
   ): _ActivityResponse = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
-    if (CampaignId != null) __obj.updateDynamic("CampaignId")(CampaignId)
-    if (End != null) __obj.updateDynamic("End")(End)
-    if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (Result != null) __obj.updateDynamic("Result")(Result)
-    if (ScheduledStart != null) __obj.updateDynamic("ScheduledStart")(ScheduledStart)
-    if (Start != null) __obj.updateDynamic("Start")(Start)
-    if (State != null) __obj.updateDynamic("State")(State)
+    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId.asInstanceOf[js.Any])
+    if (CampaignId != null) __obj.updateDynamic("CampaignId")(CampaignId.asInstanceOf[js.Any])
+    if (End != null) __obj.updateDynamic("End")(End.asInstanceOf[js.Any])
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (Result != null) __obj.updateDynamic("Result")(Result.asInstanceOf[js.Any])
+    if (ScheduledStart != null) __obj.updateDynamic("ScheduledStart")(ScheduledStart.asInstanceOf[js.Any])
+    if (Start != null) __obj.updateDynamic("Start")(Start.asInstanceOf[js.Any])
+    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (SuccessfulEndpointCount != null) __obj.updateDynamic("SuccessfulEndpointCount")(SuccessfulEndpointCount.asInstanceOf[js.Any])
     if (TimezonesCompletedCount != null) __obj.updateDynamic("TimezonesCompletedCount")(TimezonesCompletedCount.asInstanceOf[js.Any])
     if (TimezonesTotalCount != null) __obj.updateDynamic("TimezonesTotalCount")(TimezonesTotalCount.asInstanceOf[js.Any])
     if (TotalEndpointCount != null) __obj.updateDynamic("TotalEndpointCount")(TotalEndpointCount.asInstanceOf[js.Any])
-    if (TreatmentId != null) __obj.updateDynamic("TreatmentId")(TreatmentId)
+    if (TreatmentId != null) __obj.updateDynamic("TreatmentId")(TreatmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ActivityResponse]
   }
 }

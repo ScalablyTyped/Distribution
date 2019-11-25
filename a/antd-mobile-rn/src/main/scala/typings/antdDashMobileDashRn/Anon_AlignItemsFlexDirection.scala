@@ -13,7 +13,7 @@ trait Anon_AlignItemsFlexDirection extends js.Object {
 object Anon_AlignItemsFlexDirection {
   @scala.inline
   def apply(alignItems: String, flexDirection: String, justifyContent: String): Anon_AlignItemsFlexDirection = {
-    val __obj = js.Dynamic.literal(alignItems = alignItems, flexDirection = flexDirection, justifyContent = justifyContent)
+    val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], flexDirection = flexDirection.asInstanceOf[js.Any], justifyContent = justifyContent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AlignItemsFlexDirection]
   }

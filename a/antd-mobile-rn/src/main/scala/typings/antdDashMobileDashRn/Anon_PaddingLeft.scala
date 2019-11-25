@@ -11,7 +11,7 @@ trait Anon_PaddingLeft extends js.Object {
 object Anon_PaddingLeft {
   @scala.inline
   def apply(paddingLeft: Double): Anon_PaddingLeft = {
-    val __obj = js.Dynamic.literal(paddingLeft = paddingLeft)
+    val __obj = js.Dynamic.literal(paddingLeft = paddingLeft.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PaddingLeft]
   }

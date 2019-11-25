@@ -13,7 +13,7 @@ trait Anon_Directives extends js.Object {
 object Anon_Directives {
   @scala.inline
   def apply(directives: Set[_], pipes: Set[_]): Anon_Directives = {
-    val __obj = js.Dynamic.literal(directives = directives, pipes = pipes)
+    val __obj = js.Dynamic.literal(directives = directives.asInstanceOf[js.Any], pipes = pipes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Directives]
   }

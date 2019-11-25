@@ -13,8 +13,8 @@ object Anon_Categories {
   @scala.inline
   def apply(categories: Anon_Confirmation = null, labelCloseIcon: String = null): Anon_Categories = {
     val __obj = js.Dynamic.literal()
-    if (categories != null) __obj.updateDynamic("categories")(categories)
-    if (labelCloseIcon != null) __obj.updateDynamic("labelCloseIcon")(labelCloseIcon)
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
+    if (labelCloseIcon != null) __obj.updateDynamic("labelCloseIcon")(labelCloseIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Categories]
   }
 }

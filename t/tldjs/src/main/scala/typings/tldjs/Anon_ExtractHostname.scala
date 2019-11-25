@@ -19,9 +19,9 @@ object Anon_ExtractHostname {
     validHosts: js.Array[String] = null
   ): Anon_ExtractHostname = {
     val __obj = js.Dynamic.literal()
-    if (extractHostname != null) __obj.updateDynamic("extractHostname")(extractHostname)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
-    if (validHosts != null) __obj.updateDynamic("validHosts")(validHosts)
+    if (extractHostname != null) __obj.updateDynamic("extractHostname")(extractHostname.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
+    if (validHosts != null) __obj.updateDynamic("validHosts")(validHosts.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExtractHostname]
   }
 }

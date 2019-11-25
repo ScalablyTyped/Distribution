@@ -23,7 +23,7 @@ package object jest {
   type ConfigGlobals = js.Object
   type ConsoleBuffer = js.Array[LogEntry]
   type CustomAsymmetricMatcher[TMatcher /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Function1[/* args */ RemoveFirstFromTuple[Parameters[TMatcher]], AsymmetricMatcher]
-  type CustomAsyncMatchers[TMatchers /* <: ExpectExtendMap */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type CustomAsyncMatchers[TMatchers /* <: ExpectExtendMap */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in jest.jest.jest.NonAsyncMatchers<TMatchers> ]: jest.jest.jest.CustomAsymmetricMatcher<TMatchers[K]>}
     */ typings.jest.jestStrings.CustomAsyncMatchers with TMatchers
   // should be TMatcherReturn extends void|Promise<void> but getting dtslint error
@@ -38,7 +38,7 @@ package object jest {
   type Environment = $JestEnvironment
   type EqualityTester = js.Function2[/* a */ js.Any, /* b */ js.Any, js.UndefOr[Boolean]]
   type ExpectExtendMap = StringDictionary[CustomMatcher]
-  type ExpectProperties = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type ExpectProperties = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in 'not' ]: jest.jest.jest.Expect[K]}
     */ typings.jest.jestStrings.ExpectProperties with Expect
   type ExtendedExpect[TMatchers /* <: ExpectExtendMap */] = ExpectProperties with AndNot[CustomAsyncMatchers[TMatchers]] with ExtendedExpectFunction[TMatchers]
@@ -48,7 +48,7 @@ package object jest {
   // Use the `void` type for return types only. Otherwise, use `undefined`. See: https://github.com/Microsoft/dtslint/blob/master/docs/void-return.md
   // have added issue https://github.com/microsoft/dtslint/issues/256 - Cannot have type union containing void ( to be used as return type only
   type ExtendedMatchers[TMatchers /* <: ExpectExtendMap */, TMatcherReturn, TActual] = (Matchers[TMatcherReturn, TActual]) with typings.jest.jestStrings.ExtendedMatchers with TMatchers
-  type FunctionPropertyNames[T] = (/* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: T[K] extends (args : ...any): any? K : never}[keyof T] */ js.Any) with String
+  type FunctionPropertyNames[T] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends (args : ...any): any? K : never}[keyof T] */ js.Any) with String
   type Glob = String
   // Global
   type Global = js.Object
@@ -121,9 +121,9 @@ package object jest {
   type MockedFunction[T /* <: js.Function1[/* repeated */ js.Any, _] */] = (MockInstance[ReturnType[T], ArgsType[T]]) with T
   type ModuleMap = js.Any
   type ModuleMocker = js.Any
-  type NonAsyncMatchers[TMatchers /* <: ExpectExtendMap */] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof TMatchers ]: std.ReturnType<TMatchers[K]> extends std.Promise<jest.jest.jest.CustomMatcherResult>? never : K}[keyof TMatchers] */ js.Any
+  type NonAsyncMatchers[TMatchers /* <: ExpectExtendMap */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof TMatchers ]: std.ReturnType<TMatchers[K]> extends std.Promise<jest.jest.jest.CustomMatcherResult>? never : K}[keyof TMatchers] */ js.Any
   // see https://github.com/Microsoft/TypeScript/issues/25215
-  type NonFunctionPropertyNames[T] = (/* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: T[K] extends (args : ...any): any? never : K}[keyof T] */ js.Any) with String
+  type NonFunctionPropertyNames[T] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends (args : ...any): any? never : K}[keyof T] */ js.Any) with String
   type NonPromiseMatchers[T /* <: JestMatchersShape[js.Object, js.Object] */] = Omit[T, resolves | rejects | not]
   /**
     * Construct a type with the properties of T except for those in type K.
@@ -134,7 +134,7 @@ package object jest {
   type Path = String
   type PrintLabel = js.Function1[/* string */ String, String]
   type PromiseMatchers[T /* <: JestMatchersShape[js.Object, js.Object] */] = Omit[
-    /* import warning: ImportType.apply Failed type conversion: T['resolves'] */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: T['resolves'] */ js.Any, 
     not
   ]
   type ProvidesCallback = js.Function1[/* cb */ DoneCallback, js.Any]

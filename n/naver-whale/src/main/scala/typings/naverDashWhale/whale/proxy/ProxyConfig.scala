@@ -26,9 +26,9 @@ object ProxyConfig {
     pacScript: typings.chrome.chrome.proxy.PacScript = null,
     rules: typings.chrome.chrome.proxy.ProxyRules = null
   ): ProxyConfig = {
-    val __obj = js.Dynamic.literal(mode = mode)
-    if (pacScript != null) __obj.updateDynamic("pacScript")(pacScript)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
+    if (pacScript != null) __obj.updateDynamic("pacScript")(pacScript.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyConfig]
   }
 }

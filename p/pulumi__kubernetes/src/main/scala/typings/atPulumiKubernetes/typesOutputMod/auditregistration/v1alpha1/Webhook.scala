@@ -21,7 +21,7 @@ trait Webhook extends js.Object {
 object Webhook {
   @scala.inline
   def apply(clientConfig: WebhookClientConfig, throttle: WebhookThrottleConfig): Webhook = {
-    val __obj = js.Dynamic.literal(clientConfig = clientConfig, throttle = throttle)
+    val __obj = js.Dynamic.literal(clientConfig = clientConfig.asInstanceOf[js.Any], throttle = throttle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Webhook]
   }

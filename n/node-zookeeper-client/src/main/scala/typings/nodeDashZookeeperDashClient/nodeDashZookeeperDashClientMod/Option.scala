@@ -13,7 +13,7 @@ trait Option extends js.Object {
 object Option {
   @scala.inline
   def apply(retries: Double, sessionTimeout: Double, spinDelay: Double): Option = {
-    val __obj = js.Dynamic.literal(retries = retries, sessionTimeout = sessionTimeout, spinDelay = spinDelay)
+    val __obj = js.Dynamic.literal(retries = retries.asInstanceOf[js.Any], sessionTimeout = sessionTimeout.asInstanceOf[js.Any], spinDelay = spinDelay.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Option]
   }

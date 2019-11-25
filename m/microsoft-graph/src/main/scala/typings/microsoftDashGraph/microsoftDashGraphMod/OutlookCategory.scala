@@ -21,9 +21,9 @@ object OutlookCategory {
   @scala.inline
   def apply(color: CategoryColor = null, displayName: String = null, id: String = null): OutlookCategory = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutlookCategory]
   }
 }

@@ -25,7 +25,7 @@ object Settings {
     table: Table,
     writers: Writers
   ): Settings = {
-    val __obj = js.Dynamic.literal(dataset = dataset, features = features, inputs = inputs, params = params, readers = readers, table = table, writers = writers)
+    val __obj = js.Dynamic.literal(dataset = dataset.asInstanceOf[js.Any], features = features.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], readers = readers.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], writers = writers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Settings]
   }

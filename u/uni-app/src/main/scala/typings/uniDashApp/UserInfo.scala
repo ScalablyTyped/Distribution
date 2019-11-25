@@ -23,9 +23,9 @@ object UserInfo {
   @scala.inline
   def apply(avatarUrl: String = null, nickname: String = null, openid: String = null): UserInfo = {
     val __obj = js.Dynamic.literal()
-    if (avatarUrl != null) __obj.updateDynamic("avatarUrl")(avatarUrl)
-    if (nickname != null) __obj.updateDynamic("nickname")(nickname)
-    if (openid != null) __obj.updateDynamic("openid")(openid)
+    if (avatarUrl != null) __obj.updateDynamic("avatarUrl")(avatarUrl.asInstanceOf[js.Any])
+    if (nickname != null) __obj.updateDynamic("nickname")(nickname.asInstanceOf[js.Any])
+    if (openid != null) __obj.updateDynamic("openid")(openid.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserInfo]
   }
 }

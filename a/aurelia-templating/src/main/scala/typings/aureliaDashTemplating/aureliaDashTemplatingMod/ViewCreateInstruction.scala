@@ -19,8 +19,8 @@ object ViewCreateInstruction {
   @scala.inline
   def apply(enhance: js.UndefOr[Boolean] = js.undefined, partReplacements: js.Object = null): ViewCreateInstruction = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enhance)) __obj.updateDynamic("enhance")(enhance)
-    if (partReplacements != null) __obj.updateDynamic("partReplacements")(partReplacements)
+    if (!js.isUndefined(enhance)) __obj.updateDynamic("enhance")(enhance.asInstanceOf[js.Any])
+    if (partReplacements != null) __obj.updateDynamic("partReplacements")(partReplacements.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewCreateInstruction]
   }
 }

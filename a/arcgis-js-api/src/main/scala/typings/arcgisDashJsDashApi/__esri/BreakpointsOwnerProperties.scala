@@ -59,7 +59,7 @@ object BreakpointsOwnerProperties {
     widthBreakpoint: xsmall | small | medium | large | xlarge = null
   ): BreakpointsOwnerProperties = {
     val __obj = js.Dynamic.literal()
-    if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints)
+    if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints.asInstanceOf[js.Any])
     if (heightBreakpoint != null) __obj.updateDynamic("heightBreakpoint")(heightBreakpoint.asInstanceOf[js.Any])
     if (widthBreakpoint != null) __obj.updateDynamic("widthBreakpoint")(widthBreakpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[BreakpointsOwnerProperties]

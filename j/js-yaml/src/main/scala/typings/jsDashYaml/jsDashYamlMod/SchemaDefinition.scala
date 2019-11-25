@@ -14,9 +14,9 @@ object SchemaDefinition {
   @scala.inline
   def apply(explicit: js.Array[Type] = null, `implicit`: js.Array[_] = null, include: js.Array[Schema] = null): SchemaDefinition = {
     val __obj = js.Dynamic.literal()
-    if (explicit != null) __obj.updateDynamic("explicit")(explicit)
-    if (`implicit` != null) __obj.updateDynamic("implicit")(`implicit`)
-    if (include != null) __obj.updateDynamic("include")(include)
+    if (explicit != null) __obj.updateDynamic("explicit")(explicit.asInstanceOf[js.Any])
+    if (`implicit` != null) __obj.updateDynamic("implicit")(`implicit`.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDefinition]
   }
 }

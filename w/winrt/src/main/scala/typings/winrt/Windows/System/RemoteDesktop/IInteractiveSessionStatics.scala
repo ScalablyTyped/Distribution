@@ -11,7 +11,7 @@ trait IInteractiveSessionStatics extends js.Object {
 object IInteractiveSessionStatics {
   @scala.inline
   def apply(isRemote: Boolean): IInteractiveSessionStatics = {
-    val __obj = js.Dynamic.literal(isRemote = isRemote)
+    val __obj = js.Dynamic.literal(isRemote = isRemote.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IInteractiveSessionStatics]
   }

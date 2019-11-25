@@ -13,7 +13,7 @@ trait MorphColor extends js.Object {
 object MorphColor {
   @scala.inline
   def apply(colors: js.Array[Color], name: String): MorphColor = {
-    val __obj = js.Dynamic.literal(colors = colors, name = name)
+    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MorphColor]
   }

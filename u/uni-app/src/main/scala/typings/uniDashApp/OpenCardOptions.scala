@@ -32,7 +32,7 @@ object OpenCardOptions {
     success: () => Unit = null
   ): OpenCardOptions = {
     val __obj = js.Dynamic.literal()
-    if (cardList != null) __obj.updateDynamic("cardList")(cardList)
+    if (cardList != null) __obj.updateDynamic("cardList")(cardList.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))

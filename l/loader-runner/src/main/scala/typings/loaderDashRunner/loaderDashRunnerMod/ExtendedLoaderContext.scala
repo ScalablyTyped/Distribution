@@ -54,12 +54,12 @@ object ExtendedLoaderContext {
     resourcePath: String = null,
     resourceQuery: String = null
   ): ExtendedLoaderContext = {
-    val __obj = js.Dynamic.literal(addContextDependency = js.Any.fromFunction1(addContextDependency), addDependency = js.Any.fromFunction1(addDependency), cacheable = js.Any.fromFunction1(cacheable), clearDependencies = js.Any.fromFunction0(clearDependencies), currentRequest = currentRequest, data = data, dependency = js.Any.fromFunction1(dependency), getContextDependencies = js.Any.fromFunction0(getContextDependencies), getDependencies = js.Any.fromFunction0(getDependencies), loaderIndex = loaderIndex, loaders = loaders, previousRequest = previousRequest, query = query.asInstanceOf[js.Any], remainingRequest = remainingRequest, request = request, resource = resource)
+    val __obj = js.Dynamic.literal(addContextDependency = js.Any.fromFunction1(addContextDependency), addDependency = js.Any.fromFunction1(addDependency), cacheable = js.Any.fromFunction1(cacheable), clearDependencies = js.Any.fromFunction0(clearDependencies), currentRequest = currentRequest.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], dependency = js.Any.fromFunction1(dependency), getContextDependencies = js.Any.fromFunction0(getContextDependencies), getDependencies = js.Any.fromFunction0(getDependencies), loaderIndex = loaderIndex.asInstanceOf[js.Any], loaders = loaders.asInstanceOf[js.Any], previousRequest = previousRequest.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], remainingRequest = remainingRequest.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     if (async != null) __obj.updateDynamic("async")(js.Any.fromFunction0(async))
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (resourcePath != null) __obj.updateDynamic("resourcePath")(resourcePath)
-    if (resourceQuery != null) __obj.updateDynamic("resourceQuery")(resourceQuery)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (resourcePath != null) __obj.updateDynamic("resourcePath")(resourcePath.asInstanceOf[js.Any])
+    if (resourceQuery != null) __obj.updateDynamic("resourceQuery")(resourceQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendedLoaderContext]
   }
 }

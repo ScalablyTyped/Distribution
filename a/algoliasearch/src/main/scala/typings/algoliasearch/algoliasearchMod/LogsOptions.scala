@@ -47,11 +47,11 @@ object LogsOptions {
     `type`: String = null
   ): LogsOptions = {
     val __obj = js.Dynamic.literal()
-    if (indexName != null) __obj.updateDynamic("indexName")(indexName)
+    if (indexName != null) __obj.updateDynamic("indexName")(indexName.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyErrors)) __obj.updateDynamic("onlyErrors")(onlyErrors)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(onlyErrors)) __obj.updateDynamic("onlyErrors")(onlyErrors.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogsOptions]
   }
 }

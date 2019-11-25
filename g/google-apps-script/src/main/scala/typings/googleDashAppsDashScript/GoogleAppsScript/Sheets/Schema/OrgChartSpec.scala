@@ -24,12 +24,12 @@ object OrgChartSpec {
     tooltips: ChartData = null
   ): OrgChartSpec = {
     val __obj = js.Dynamic.literal()
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (nodeColor != null) __obj.updateDynamic("nodeColor")(nodeColor)
-    if (nodeSize != null) __obj.updateDynamic("nodeSize")(nodeSize)
-    if (parentLabels != null) __obj.updateDynamic("parentLabels")(parentLabels)
-    if (selectedNodeColor != null) __obj.updateDynamic("selectedNodeColor")(selectedNodeColor)
-    if (tooltips != null) __obj.updateDynamic("tooltips")(tooltips)
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (nodeColor != null) __obj.updateDynamic("nodeColor")(nodeColor.asInstanceOf[js.Any])
+    if (nodeSize != null) __obj.updateDynamic("nodeSize")(nodeSize.asInstanceOf[js.Any])
+    if (parentLabels != null) __obj.updateDynamic("parentLabels")(parentLabels.asInstanceOf[js.Any])
+    if (selectedNodeColor != null) __obj.updateDynamic("selectedNodeColor")(selectedNodeColor.asInstanceOf[js.Any])
+    if (tooltips != null) __obj.updateDynamic("tooltips")(tooltips.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgChartSpec]
   }
 }

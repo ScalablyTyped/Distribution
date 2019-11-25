@@ -11,7 +11,7 @@ trait Anon_Languages extends js.Object {
 object Anon_Languages {
   @scala.inline
   def apply(languages: js.Array[Anon_Language]): Anon_Languages = {
-    val __obj = js.Dynamic.literal(languages = languages)
+    val __obj = js.Dynamic.literal(languages = languages.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Languages]
   }

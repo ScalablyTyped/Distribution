@@ -13,8 +13,8 @@ object CreateRequestOptions {
   @scala.inline
   def apply(proxy: String = null, ssl: SSLConfig = null): CreateRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
-    if (ssl != null) __obj.updateDynamic("ssl")(ssl)
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
+    if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRequestOptions]
   }
 }

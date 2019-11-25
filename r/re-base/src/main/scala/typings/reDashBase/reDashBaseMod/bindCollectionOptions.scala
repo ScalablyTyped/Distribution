@@ -52,13 +52,13 @@ object bindCollectionOptions {
     withIds: js.UndefOr[Boolean] = js.undefined,
     withRefs: js.UndefOr[Boolean] = js.undefined
   ): bindCollectionOptions = {
-    val __obj = js.Dynamic.literal(context = context)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
     if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction0(onFailure))
     if (query != null) __obj.updateDynamic("query")(js.Any.fromFunction0(query))
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (`then` != null) __obj.updateDynamic("then")(js.Any.fromFunction0(`then`))
-    if (!js.isUndefined(withIds)) __obj.updateDynamic("withIds")(withIds)
-    if (!js.isUndefined(withRefs)) __obj.updateDynamic("withRefs")(withRefs)
+    if (!js.isUndefined(withIds)) __obj.updateDynamic("withIds")(withIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(withRefs)) __obj.updateDynamic("withRefs")(withRefs.asInstanceOf[js.Any])
     __obj.asInstanceOf[bindCollectionOptions]
   }
 }

@@ -79,7 +79,7 @@ object FeatureLayerCapabilitiesEditing {
     supportsUpdateWithoutM: Boolean,
     supportsUploadWithItemId: Boolean
   ): FeatureLayerCapabilitiesEditing = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsDeleteByAnonymous = supportsDeleteByAnonymous, supportsDeleteByOthers = supportsDeleteByOthers, supportsGeometryUpdate = supportsGeometryUpdate, supportsGlobalId = supportsGlobalId, supportsRollbackOnFailure = supportsRollbackOnFailure, supportsUpdateByAnonymous = supportsUpdateByAnonymous, supportsUpdateByOthers = supportsUpdateByOthers, supportsUpdateWithoutM = supportsUpdateWithoutM, supportsUploadWithItemId = supportsUploadWithItemId)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsDeleteByAnonymous = supportsDeleteByAnonymous.asInstanceOf[js.Any], supportsDeleteByOthers = supportsDeleteByOthers.asInstanceOf[js.Any], supportsGeometryUpdate = supportsGeometryUpdate.asInstanceOf[js.Any], supportsGlobalId = supportsGlobalId.asInstanceOf[js.Any], supportsRollbackOnFailure = supportsRollbackOnFailure.asInstanceOf[js.Any], supportsUpdateByAnonymous = supportsUpdateByAnonymous.asInstanceOf[js.Any], supportsUpdateByOthers = supportsUpdateByOthers.asInstanceOf[js.Any], supportsUpdateWithoutM = supportsUpdateWithoutM.asInstanceOf[js.Any], supportsUploadWithItemId = supportsUploadWithItemId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FeatureLayerCapabilitiesEditing]
   }

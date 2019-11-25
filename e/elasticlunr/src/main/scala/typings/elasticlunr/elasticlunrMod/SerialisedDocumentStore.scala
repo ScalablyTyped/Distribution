@@ -16,7 +16,7 @@ object SerialisedDocumentStore {
     docInfo: StringDictionary[typings.elasticlunr.elasticlunrStrings.SerialisedDocumentStore with js.Any],
     docs: StringDictionary[T]
   ): SerialisedDocumentStore[T] = {
-    val __obj = js.Dynamic.literal(docInfo = docInfo, docs = docs)
+    val __obj = js.Dynamic.literal(docInfo = docInfo.asInstanceOf[js.Any], docs = docs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SerialisedDocumentStore[T]]
   }

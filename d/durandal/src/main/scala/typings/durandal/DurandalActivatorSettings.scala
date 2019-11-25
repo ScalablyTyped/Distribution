@@ -54,7 +54,7 @@ object DurandalActivatorSettings {
     closeOnDeactivate: Boolean,
     interpretResponse: js.Any => Boolean
   ): DurandalActivatorSettings = {
-    val __obj = js.Dynamic.literal(affirmations = affirmations, afterDeactivate = js.Any.fromFunction3(afterDeactivate), areSameItem = js.Any.fromFunction4(areSameItem), beforeActivate = js.Any.fromFunction1(beforeActivate), closeOnDeactivate = closeOnDeactivate, interpretResponse = js.Any.fromFunction1(interpretResponse))
+    val __obj = js.Dynamic.literal(affirmations = affirmations.asInstanceOf[js.Any], afterDeactivate = js.Any.fromFunction3(afterDeactivate), areSameItem = js.Any.fromFunction4(areSameItem), beforeActivate = js.Any.fromFunction1(beforeActivate), closeOnDeactivate = closeOnDeactivate.asInstanceOf[js.Any], interpretResponse = js.Any.fromFunction1(interpretResponse))
   
     __obj.asInstanceOf[DurandalActivatorSettings]
   }

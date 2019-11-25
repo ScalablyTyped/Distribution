@@ -36,10 +36,10 @@ object AzureTokenCredentialsOptions {
     tokenCache: js.Any = null
   ): AzureTokenCredentialsOptions = {
     val __obj = js.Dynamic.literal()
-    if (authorizationScheme != null) __obj.updateDynamic("authorizationScheme")(authorizationScheme)
-    if (environment != null) __obj.updateDynamic("environment")(environment)
+    if (authorizationScheme != null) __obj.updateDynamic("authorizationScheme")(authorizationScheme.asInstanceOf[js.Any])
+    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
     if (tokenAudience != null) __obj.updateDynamic("tokenAudience")(tokenAudience.asInstanceOf[js.Any])
-    if (tokenCache != null) __obj.updateDynamic("tokenCache")(tokenCache)
+    if (tokenCache != null) __obj.updateDynamic("tokenCache")(tokenCache.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzureTokenCredentialsOptions]
   }
 }

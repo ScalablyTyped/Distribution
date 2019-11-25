@@ -42,21 +42,21 @@ object Anon_Button {
     wrapper: String = null
   ): Anon_Button = {
     val __obj = js.Dynamic.literal()
-    if (button != null) __obj.updateDynamic("button")(button)
-    if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)
+    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
+    if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText.asInstanceOf[js.Any])
     if (buttons != null) __obj.updateDynamic("buttons")(js.Any.fromFunction0(buttons))
     if (closeButton != null) __obj.updateDynamic("closeButton")(js.Any.fromFunction0(closeButton))
     if (closeButtonContainer != null) __obj.updateDynamic("closeButtonContainer")(js.Any.fromFunction0(closeButtonContainer))
-    if (dismissible != null) __obj.updateDynamic("dismissible")(dismissible)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (imageContainer != null) __obj.updateDynamic("imageContainer")(imageContainer)
-    if (main != null) __obj.updateDynamic("main")(main)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (dismissible != null) __obj.updateDynamic("dismissible")(dismissible.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (imageContainer != null) __obj.updateDynamic("imageContainer")(imageContainer.asInstanceOf[js.Any])
+    if (main != null) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(js.Any.fromFunction1(status))
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Button]
   }
 }

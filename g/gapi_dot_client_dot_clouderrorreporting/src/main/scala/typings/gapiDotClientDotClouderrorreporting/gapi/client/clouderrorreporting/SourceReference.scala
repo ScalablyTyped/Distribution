@@ -21,8 +21,8 @@ object SourceReference {
   @scala.inline
   def apply(repository: String = null, revisionId: String = null): SourceReference = {
     val __obj = js.Dynamic.literal()
-    if (repository != null) __obj.updateDynamic("repository")(repository)
-    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId)
+    if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
+    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceReference]
   }
 }

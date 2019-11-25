@@ -53,14 +53,14 @@ object Anon_Colors {
     pattern: String = null
   ): Anon_Colors = {
     val __obj = js.Dynamic.literal()
-    if (colors != null) __obj.updateDynamic("colors")(colors)
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (!js.isUndefined(label)) __obj.updateDynamic("label")(label)
-    if (labelPrefix != null) __obj.updateDynamic("labelPrefix")(labelPrefix)
-    if (labelSuffix != null) __obj.updateDynamic("labelSuffix")(labelSuffix)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (!js.isUndefined(label)) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (labelPrefix != null) __obj.updateDynamic("labelPrefix")(labelPrefix.asInstanceOf[js.Any])
+    if (labelSuffix != null) __obj.updateDynamic("labelSuffix")(labelSuffix.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Colors]
   }
 }

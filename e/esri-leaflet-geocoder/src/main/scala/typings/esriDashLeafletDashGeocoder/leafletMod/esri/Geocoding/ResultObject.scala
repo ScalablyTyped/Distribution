@@ -28,12 +28,12 @@ object ResultObject {
     text: String = null
   ): ResultObject = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (geojson != null) __obj.updateDynamic("geojson")(geojson)
+    if (geojson != null) __obj.updateDynamic("geojson")(geojson.asInstanceOf[js.Any])
     if (latlng != null) __obj.updateDynamic("latlng")(latlng.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultObject]
   }
 }

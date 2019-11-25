@@ -30,7 +30,7 @@ object Anon_Assertions {
     testScripts: NewmanRunStat,
     tests: NewmanRunStat
   ): Anon_Assertions = {
-    val __obj = js.Dynamic.literal(assertions = assertions, items = items, iterations = iterations, prerequestScripts = prerequestScripts, prerequests = prerequests, requests = requests, scripts = scripts, testScripts = testScripts, tests = tests)
+    val __obj = js.Dynamic.literal(assertions = assertions.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], prerequestScripts = prerequestScripts.asInstanceOf[js.Any], prerequests = prerequests.asInstanceOf[js.Any], requests = requests.asInstanceOf[js.Any], scripts = scripts.asInstanceOf[js.Any], testScripts = testScripts.asInstanceOf[js.Any], tests = tests.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Assertions]
   }

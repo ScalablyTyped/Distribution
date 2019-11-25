@@ -51,7 +51,7 @@ object ILayoutSite {
     viewport: HTMLElement,
     viewportSize: js.Any
   ): ILayoutSite = {
-    val __obj = js.Dynamic.literal(animationsDisabled = animationsDisabled, itemSurface = itemSurface, rtl = rtl, scrollbarPos = scrollbarPos, surface = surface, viewport = viewport, viewportSize = viewportSize)
+    val __obj = js.Dynamic.literal(animationsDisabled = animationsDisabled.asInstanceOf[js.Any], itemSurface = itemSurface.asInstanceOf[js.Any], rtl = rtl.asInstanceOf[js.Any], scrollbarPos = scrollbarPos.asInstanceOf[js.Any], surface = surface.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any], viewportSize = viewportSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ILayoutSite]
   }

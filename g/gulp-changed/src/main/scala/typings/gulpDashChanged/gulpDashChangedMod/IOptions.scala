@@ -36,8 +36,8 @@ object IOptions {
     transformPath: /* destPath */ String => String = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
     if (hasChanged != null) __obj.updateDynamic("hasChanged")(js.Any.fromFunction4(hasChanged))
     if (transformPath != null) __obj.updateDynamic("transformPath")(js.Any.fromFunction1(transformPath))
     __obj.asInstanceOf[IOptions]

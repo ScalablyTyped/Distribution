@@ -14,8 +14,8 @@ object FsRoutesOptions {
   @scala.inline
   def apply(glob: String = null, indexFileRegExp: RegExp = null): FsRoutesOptions = {
     val __obj = js.Dynamic.literal()
-    if (glob != null) __obj.updateDynamic("glob")(glob)
-    if (indexFileRegExp != null) __obj.updateDynamic("indexFileRegExp")(indexFileRegExp)
+    if (glob != null) __obj.updateDynamic("glob")(glob.asInstanceOf[js.Any])
+    if (indexFileRegExp != null) __obj.updateDynamic("indexFileRegExp")(indexFileRegExp.asInstanceOf[js.Any])
     __obj.asInstanceOf[FsRoutesOptions]
   }
 }

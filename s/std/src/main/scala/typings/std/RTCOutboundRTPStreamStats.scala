@@ -33,23 +33,23 @@ object RTCOutboundRTPStreamStats {
     targetBitrate: Int | Double = null,
     transportId: java.lang.String = null
   ): RTCOutboundRTPStreamStats = {
-    val __obj = js.Dynamic.literal(id = id, timestamp = timestamp)
-    __obj.updateDynamic("type")(`type`)
-    if (associateStatsId != null) __obj.updateDynamic("associateStatsId")(associateStatsId)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (associateStatsId != null) __obj.updateDynamic("associateStatsId")(associateStatsId.asInstanceOf[js.Any])
     if (bytesSent != null) __obj.updateDynamic("bytesSent")(bytesSent.asInstanceOf[js.Any])
-    if (codecId != null) __obj.updateDynamic("codecId")(codecId)
+    if (codecId != null) __obj.updateDynamic("codecId")(codecId.asInstanceOf[js.Any])
     if (firCount != null) __obj.updateDynamic("firCount")(firCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRemote)) __obj.updateDynamic("isRemote")(isRemote)
-    if (mediaTrackId != null) __obj.updateDynamic("mediaTrackId")(mediaTrackId)
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType)
+    if (!js.isUndefined(isRemote)) __obj.updateDynamic("isRemote")(isRemote.asInstanceOf[js.Any])
+    if (mediaTrackId != null) __obj.updateDynamic("mediaTrackId")(mediaTrackId.asInstanceOf[js.Any])
+    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
     if (nackCount != null) __obj.updateDynamic("nackCount")(nackCount.asInstanceOf[js.Any])
     if (packetsSent != null) __obj.updateDynamic("packetsSent")(packetsSent.asInstanceOf[js.Any])
     if (pliCount != null) __obj.updateDynamic("pliCount")(pliCount.asInstanceOf[js.Any])
     if (roundTripTime != null) __obj.updateDynamic("roundTripTime")(roundTripTime.asInstanceOf[js.Any])
     if (sliCount != null) __obj.updateDynamic("sliCount")(sliCount.asInstanceOf[js.Any])
-    if (ssrc != null) __obj.updateDynamic("ssrc")(ssrc)
+    if (ssrc != null) __obj.updateDynamic("ssrc")(ssrc.asInstanceOf[js.Any])
     if (targetBitrate != null) __obj.updateDynamic("targetBitrate")(targetBitrate.asInstanceOf[js.Any])
-    if (transportId != null) __obj.updateDynamic("transportId")(transportId)
+    if (transportId != null) __obj.updateDynamic("transportId")(transportId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCOutboundRTPStreamStats]
   }
 }

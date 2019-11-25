@@ -36,11 +36,11 @@ object ThreatEntrySet {
     riceIndices: RiceDeltaEncoding = null
   ): ThreatEntrySet = {
     val __obj = js.Dynamic.literal()
-    if (compressionType != null) __obj.updateDynamic("compressionType")(compressionType)
-    if (rawHashes != null) __obj.updateDynamic("rawHashes")(rawHashes)
-    if (rawIndices != null) __obj.updateDynamic("rawIndices")(rawIndices)
-    if (riceHashes != null) __obj.updateDynamic("riceHashes")(riceHashes)
-    if (riceIndices != null) __obj.updateDynamic("riceIndices")(riceIndices)
+    if (compressionType != null) __obj.updateDynamic("compressionType")(compressionType.asInstanceOf[js.Any])
+    if (rawHashes != null) __obj.updateDynamic("rawHashes")(rawHashes.asInstanceOf[js.Any])
+    if (rawIndices != null) __obj.updateDynamic("rawIndices")(rawIndices.asInstanceOf[js.Any])
+    if (riceHashes != null) __obj.updateDynamic("riceHashes")(riceHashes.asInstanceOf[js.Any])
+    if (riceIndices != null) __obj.updateDynamic("riceIndices")(riceIndices.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreatEntrySet]
   }
 }

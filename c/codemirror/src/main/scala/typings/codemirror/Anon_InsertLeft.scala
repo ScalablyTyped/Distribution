@@ -17,8 +17,8 @@ object Anon_InsertLeft {
   @scala.inline
   def apply(insertLeft: js.UndefOr[Boolean] = js.undefined, widget: HTMLElement = null): Anon_InsertLeft = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(insertLeft)) __obj.updateDynamic("insertLeft")(insertLeft)
-    if (widget != null) __obj.updateDynamic("widget")(widget)
+    if (!js.isUndefined(insertLeft)) __obj.updateDynamic("insertLeft")(insertLeft.asInstanceOf[js.Any])
+    if (widget != null) __obj.updateDynamic("widget")(widget.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_InsertLeft]
   }
 }

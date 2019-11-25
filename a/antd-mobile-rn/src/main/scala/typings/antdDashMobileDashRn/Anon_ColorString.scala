@@ -11,7 +11,7 @@ trait Anon_ColorString extends js.Object {
 object Anon_ColorString {
   @scala.inline
   def apply(color: String): Anon_ColorString = {
-    val __obj = js.Dynamic.literal(color = color)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColorString]
   }

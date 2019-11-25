@@ -13,7 +13,7 @@ trait Anon_AttrChar extends js.Object {
 object Anon_AttrChar {
   @scala.inline
   def apply(attr: Attributes, char: String): Anon_AttrChar = {
-    val __obj = js.Dynamic.literal(attr = attr, char = char)
+    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AttrChar]
   }

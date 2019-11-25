@@ -22,11 +22,11 @@ object Options {
     vertex: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(edge)) __obj.updateDynamic("edge")(edge)
-    if (features != null) __obj.updateDynamic("features")(features)
+    if (!js.isUndefined(edge)) __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     if (pixelTolerance != null) __obj.updateDynamic("pixelTolerance")(pixelTolerance.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (!js.isUndefined(vertex)) __obj.updateDynamic("vertex")(vertex)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertex)) __obj.updateDynamic("vertex")(vertex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

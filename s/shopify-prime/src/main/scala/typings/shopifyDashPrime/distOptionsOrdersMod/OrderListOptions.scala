@@ -40,20 +40,20 @@ object OrderListOptions {
     updated_at_min: String = null
   ): OrderListOptions = {
     val __obj = js.Dynamic.literal()
-    if (created_at_max != null) __obj.updateDynamic("created_at_max")(created_at_max)
-    if (created_at_min != null) __obj.updateDynamic("created_at_min")(created_at_min)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (created_at_max != null) __obj.updateDynamic("created_at_max")(created_at_max.asInstanceOf[js.Any])
+    if (created_at_min != null) __obj.updateDynamic("created_at_min")(created_at_min.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (financial_status != null) __obj.updateDynamic("financial_status")(financial_status.asInstanceOf[js.Any])
     if (fulfillment_status != null) __obj.updateDynamic("fulfillment_status")(fulfillment_status.asInstanceOf[js.Any])
-    if (ids != null) __obj.updateDynamic("ids")(ids)
+    if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (processed_at_max != null) __obj.updateDynamic("processed_at_max")(processed_at_max)
-    if (processed_at_min != null) __obj.updateDynamic("processed_at_min")(processed_at_min)
+    if (processed_at_max != null) __obj.updateDynamic("processed_at_max")(processed_at_max.asInstanceOf[js.Any])
+    if (processed_at_min != null) __obj.updateDynamic("processed_at_min")(processed_at_min.asInstanceOf[js.Any])
     if (since_id != null) __obj.updateDynamic("since_id")(since_id.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (updated_at_max != null) __obj.updateDynamic("updated_at_max")(updated_at_max)
-    if (updated_at_min != null) __obj.updateDynamic("updated_at_min")(updated_at_min)
+    if (updated_at_max != null) __obj.updateDynamic("updated_at_max")(updated_at_max.asInstanceOf[js.Any])
+    if (updated_at_min != null) __obj.updateDynamic("updated_at_min")(updated_at_min.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderListOptions]
   }
 }

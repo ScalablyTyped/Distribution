@@ -51,7 +51,7 @@ object LocationServiceData {
     serviceDefinitions: js.Array[ServiceDefinition],
     serviceOwner: String
   ): LocationServiceData = {
-    val __obj = js.Dynamic.literal(accessMappings = accessMappings, clientCacheFresh = clientCacheFresh, clientCacheTimeToLive = clientCacheTimeToLive, defaultAccessMappingMoniker = defaultAccessMappingMoniker, lastChangeId = lastChangeId, lastChangeId64 = lastChangeId64, serviceDefinitions = serviceDefinitions, serviceOwner = serviceOwner)
+    val __obj = js.Dynamic.literal(accessMappings = accessMappings.asInstanceOf[js.Any], clientCacheFresh = clientCacheFresh.asInstanceOf[js.Any], clientCacheTimeToLive = clientCacheTimeToLive.asInstanceOf[js.Any], defaultAccessMappingMoniker = defaultAccessMappingMoniker.asInstanceOf[js.Any], lastChangeId = lastChangeId.asInstanceOf[js.Any], lastChangeId64 = lastChangeId64.asInstanceOf[js.Any], serviceDefinitions = serviceDefinitions.asInstanceOf[js.Any], serviceOwner = serviceOwner.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LocationServiceData]
   }

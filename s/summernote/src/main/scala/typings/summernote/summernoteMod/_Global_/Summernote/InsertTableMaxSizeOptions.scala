@@ -12,7 +12,7 @@ trait InsertTableMaxSizeOptions extends js.Object {
 object InsertTableMaxSizeOptions {
   @scala.inline
   def apply(col: Double, row: Double): InsertTableMaxSizeOptions = {
-    val __obj = js.Dynamic.literal(col = col, row = row)
+    val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsertTableMaxSizeOptions]
   }

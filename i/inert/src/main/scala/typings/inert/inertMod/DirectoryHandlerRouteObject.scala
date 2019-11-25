@@ -68,13 +68,13 @@ object DirectoryHandlerRouteObject {
     showHidden: js.UndefOr[Boolean] = js.undefined
   ): DirectoryHandlerRouteObject = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (defaultExtension != null) __obj.updateDynamic("defaultExtension")(defaultExtension)
+    if (defaultExtension != null) __obj.updateDynamic("defaultExtension")(defaultExtension.asInstanceOf[js.Any])
     if (etagMethod != null) __obj.updateDynamic("etagMethod")(etagMethod.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(listing)) __obj.updateDynamic("listing")(listing)
-    if (!js.isUndefined(lookupCompressed)) __obj.updateDynamic("lookupCompressed")(lookupCompressed)
-    if (!js.isUndefined(redirectToSlash)) __obj.updateDynamic("redirectToSlash")(redirectToSlash)
-    if (!js.isUndefined(showHidden)) __obj.updateDynamic("showHidden")(showHidden)
+    if (!js.isUndefined(listing)) __obj.updateDynamic("listing")(listing.asInstanceOf[js.Any])
+    if (!js.isUndefined(lookupCompressed)) __obj.updateDynamic("lookupCompressed")(lookupCompressed.asInstanceOf[js.Any])
+    if (!js.isUndefined(redirectToSlash)) __obj.updateDynamic("redirectToSlash")(redirectToSlash.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHidden)) __obj.updateDynamic("showHidden")(showHidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectoryHandlerRouteObject]
   }
 }

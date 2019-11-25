@@ -89,7 +89,7 @@ object GeographyProps {
   ): GeographyProps = {
     val __obj = js.Dynamic.literal()
     if (cacheId != null) __obj.updateDynamic("cacheId")(cacheId.asInstanceOf[js.Any])
-    if (geography != null) __obj.updateDynamic("geography")(geography)
+    if (geography != null) __obj.updateDynamic("geography")(geography.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction2(onBlur))
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction2(onFocus))
@@ -99,10 +99,10 @@ object GeographyProps {
     if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction2(onMouseMove))
     if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction2(onMouseUp))
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection)
-    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(tabable)) __obj.updateDynamic("tabable")(tabable)
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabable)) __obj.updateDynamic("tabable")(tabable.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeographyProps]
   }
 }

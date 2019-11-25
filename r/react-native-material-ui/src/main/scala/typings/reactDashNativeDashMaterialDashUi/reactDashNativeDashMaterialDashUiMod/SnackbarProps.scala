@@ -30,11 +30,11 @@ object SnackbarProps {
     onActionPress: () => Unit = null,
     style: Anon_ContainerMessage = null
   ): SnackbarProps = {
-    val __obj = js.Dynamic.literal(bottomNavigation = bottomNavigation, message = message, onRequestClose = js.Any.fromFunction0(onRequestClose), timeout = timeout, visible = visible)
-    if (actionText != null) __obj.updateDynamic("actionText")(actionText)
-    if (button != null) __obj.updateDynamic("button")(button)
+    val __obj = js.Dynamic.literal(bottomNavigation = bottomNavigation.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], onRequestClose = js.Any.fromFunction0(onRequestClose), timeout = timeout.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
+    if (actionText != null) __obj.updateDynamic("actionText")(actionText.asInstanceOf[js.Any])
+    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
     if (onActionPress != null) __obj.updateDynamic("onActionPress")(js.Any.fromFunction0(onActionPress))
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnackbarProps]
   }
 }

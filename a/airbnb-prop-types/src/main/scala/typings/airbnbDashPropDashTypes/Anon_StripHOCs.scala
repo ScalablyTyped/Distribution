@@ -11,7 +11,7 @@ trait Anon_StripHOCs extends js.Object {
 object Anon_StripHOCs {
   @scala.inline
   def apply(stripHOCs: js.Array[String]): Anon_StripHOCs = {
-    val __obj = js.Dynamic.literal(stripHOCs = stripHOCs)
+    val __obj = js.Dynamic.literal(stripHOCs = stripHOCs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_StripHOCs]
   }

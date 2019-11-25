@@ -19,7 +19,7 @@ object NumeralJSLocale {
     delimiters: Anon_Decimal,
     ordinal: Double => String
   ): NumeralJSLocale = {
-    val __obj = js.Dynamic.literal(abbreviations = abbreviations, currency = currency, delimiters = delimiters, ordinal = js.Any.fromFunction1(ordinal))
+    val __obj = js.Dynamic.literal(abbreviations = abbreviations.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], delimiters = delimiters.asInstanceOf[js.Any], ordinal = js.Any.fromFunction1(ordinal))
   
     __obj.asInstanceOf[NumeralJSLocale]
   }

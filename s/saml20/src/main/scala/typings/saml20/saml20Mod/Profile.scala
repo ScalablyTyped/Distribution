@@ -14,9 +14,9 @@ trait Profile extends js.Object {
 object Profile {
   @scala.inline
   def apply(claims: js.Any, issuer: String, audience: String = null, sessionIndex: String = null): Profile = {
-    val __obj = js.Dynamic.literal(claims = claims, issuer = issuer)
-    if (audience != null) __obj.updateDynamic("audience")(audience)
-    if (sessionIndex != null) __obj.updateDynamic("sessionIndex")(sessionIndex)
+    val __obj = js.Dynamic.literal(claims = claims.asInstanceOf[js.Any], issuer = issuer.asInstanceOf[js.Any])
+    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
+    if (sessionIndex != null) __obj.updateDynamic("sessionIndex")(sessionIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Profile]
   }
 }

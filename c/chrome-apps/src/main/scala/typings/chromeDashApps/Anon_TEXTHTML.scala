@@ -14,7 +14,7 @@ trait Anon_TEXTHTML extends js.Object {
 object Anon_TEXTHTML {
   @scala.inline
   def apply(TEXT_HTML: textHtml, TEXT_PLAIN: textPlain): Anon_TEXTHTML = {
-    val __obj = js.Dynamic.literal(TEXT_HTML = TEXT_HTML, TEXT_PLAIN = TEXT_PLAIN)
+    val __obj = js.Dynamic.literal(TEXT_HTML = TEXT_HTML.asInstanceOf[js.Any], TEXT_PLAIN = TEXT_PLAIN.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_TEXTHTML]
   }

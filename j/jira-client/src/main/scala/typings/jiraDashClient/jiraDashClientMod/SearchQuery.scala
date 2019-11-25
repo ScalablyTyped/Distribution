@@ -20,8 +20,8 @@ object SearchQuery {
     startAt: Int | Double = null
   ): SearchQuery = {
     val __obj = js.Dynamic.literal()
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchQuery]

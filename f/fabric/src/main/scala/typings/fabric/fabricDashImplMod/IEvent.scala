@@ -29,14 +29,14 @@ object IEvent {
     target: Object = null,
     transform: Anon_Corner = null
   ): IEvent = {
-    val __obj = js.Dynamic.literal(e = e)
-    if (absolutePointer != null) __obj.updateDynamic("absolutePointer")(absolutePointer)
+    val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any])
+    if (absolutePointer != null) __obj.updateDynamic("absolutePointer")(absolutePointer.asInstanceOf[js.Any])
     if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (!js.isUndefined(isClick)) __obj.updateDynamic("isClick")(isClick)
-    if (pointer != null) __obj.updateDynamic("pointer")(pointer)
-    if (subTargets != null) __obj.updateDynamic("subTargets")(subTargets)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (!js.isUndefined(isClick)) __obj.updateDynamic("isClick")(isClick.asInstanceOf[js.Any])
+    if (pointer != null) __obj.updateDynamic("pointer")(pointer.asInstanceOf[js.Any])
+    if (subTargets != null) __obj.updateDynamic("subTargets")(subTargets.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEvent]
   }
 }

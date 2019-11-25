@@ -34,16 +34,16 @@ object errorData {
     response: LoaderError = null,
     url: String = null
   ): errorData = {
-    val __obj = js.Dynamic.literal(details = details, fatal = fatal)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], fatal = fatal.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (frag != null) __obj.updateDynamic("frag")(frag)
-    if (!js.isUndefined(levelRetry)) __obj.updateDynamic("levelRetry")(levelRetry)
-    if (loader != null) __obj.updateDynamic("loader")(loader)
-    if (networkDetails != null) __obj.updateDynamic("networkDetails")(networkDetails)
-    if (response != null) __obj.updateDynamic("response")(response)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (frag != null) __obj.updateDynamic("frag")(frag.asInstanceOf[js.Any])
+    if (!js.isUndefined(levelRetry)) __obj.updateDynamic("levelRetry")(levelRetry.asInstanceOf[js.Any])
+    if (loader != null) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
+    if (networkDetails != null) __obj.updateDynamic("networkDetails")(networkDetails.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[errorData]
   }
 }

@@ -35,12 +35,12 @@ object Anon_Client {
     userCustomData: KeyValueObject = null,
     version: String = null
   ): Anon_Client = {
-    val __obj = js.Dynamic.literal(client = client, environment = environment, error = error, machineName = machineName, tags = tags)
-    if (groupingKey != null) __obj.updateDynamic("groupingKey")(groupingKey)
-    if (request != null) __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], machineName = machineName.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
+    if (groupingKey != null) __obj.updateDynamic("groupingKey")(groupingKey.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
-    if (userCustomData != null) __obj.updateDynamic("userCustomData")(userCustomData)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (userCustomData != null) __obj.updateDynamic("userCustomData")(userCustomData.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Client]
   }
 }

@@ -17,7 +17,7 @@ object IsNumericOptions {
   @scala.inline
   def apply(no_symbols: js.UndefOr[Boolean] = js.undefined): IsNumericOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(no_symbols)) __obj.updateDynamic("no_symbols")(no_symbols)
+    if (!js.isUndefined(no_symbols)) __obj.updateDynamic("no_symbols")(no_symbols.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsNumericOptions]
   }
 }

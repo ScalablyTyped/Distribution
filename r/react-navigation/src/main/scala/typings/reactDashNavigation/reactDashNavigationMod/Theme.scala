@@ -25,7 +25,7 @@ object Theme {
     headerBorder: String,
     label: String
   ): Theme = {
-    val __obj = js.Dynamic.literal(body = body, bodyBorder = bodyBorder, bodyContent = bodyContent, bodyContentBorder = bodyContentBorder, header = header, headerBorder = headerBorder, label = label)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], bodyBorder = bodyBorder.asInstanceOf[js.Any], bodyContent = bodyContent.asInstanceOf[js.Any], bodyContentBorder = bodyContentBorder.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], headerBorder = headerBorder.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Theme]
   }

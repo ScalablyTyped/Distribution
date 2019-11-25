@@ -24,11 +24,11 @@ object Page {
     `type`: String = null
   ): Page = {
     val __obj = js.Dynamic.literal()
-    if (declarations != null) __obj.updateDynamic("declarations")(declarations)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (selectors != null) __obj.updateDynamic("selectors")(selectors)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (declarations != null) __obj.updateDynamic("declarations")(declarations.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (selectors != null) __obj.updateDynamic("selectors")(selectors.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Page]
   }
 }

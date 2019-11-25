@@ -21,8 +21,8 @@ object DeviceIdLists {
   @scala.inline
   def apply(input: js.Array[String] = null, output: js.Array[String] = null): DeviceIdLists = {
     val __obj = js.Dynamic.literal()
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (output != null) __obj.updateDynamic("output")(output)
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceIdLists]
   }
 }

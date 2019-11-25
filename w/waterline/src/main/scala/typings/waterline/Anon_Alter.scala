@@ -36,16 +36,16 @@ object Anon_Alter {
     types: js.Any = null
   ): Anon_Alter = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (!js.isUndefined(autoCreatedAt)) __obj.updateDynamic("autoCreatedAt")(autoCreatedAt)
-    if (!js.isUndefined(autoPK)) __obj.updateDynamic("autoPK")(autoPK)
-    if (!js.isUndefined(autoUpdatedAt)) __obj.updateDynamic("autoUpdatedAt")(autoUpdatedAt)
-    if (connection != null) __obj.updateDynamic("connection")(connection)
-    if (identity != null) __obj.updateDynamic("identity")(identity)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCreatedAt)) __obj.updateDynamic("autoCreatedAt")(autoCreatedAt.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPK)) __obj.updateDynamic("autoPK")(autoPK.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoUpdatedAt)) __obj.updateDynamic("autoUpdatedAt")(autoUpdatedAt.asInstanceOf[js.Any])
+    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
+    if (identity != null) __obj.updateDynamic("identity")(identity.asInstanceOf[js.Any])
     if (migrate != null) __obj.updateDynamic("migrate")(migrate.asInstanceOf[js.Any])
-    if (!js.isUndefined(schema)) __obj.updateDynamic("schema")(schema)
-    if (tableName != null) __obj.updateDynamic("tableName")(tableName)
-    if (types != null) __obj.updateDynamic("types")(types)
+    if (!js.isUndefined(schema)) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Alter]
   }
 }

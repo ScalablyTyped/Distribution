@@ -12,7 +12,7 @@ trait Anon_GetEditorState extends js.Object {
 object Anon_GetEditorState {
   @scala.inline
   def apply(getEditorState: js.Any, setEditorState: js.Any): Anon_GetEditorState = {
-    val __obj = js.Dynamic.literal(getEditorState = getEditorState, setEditorState = setEditorState)
+    val __obj = js.Dynamic.literal(getEditorState = getEditorState.asInstanceOf[js.Any], setEditorState = setEditorState.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GetEditorState]
   }

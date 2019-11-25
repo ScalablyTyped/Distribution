@@ -52,14 +52,14 @@ object ListPopulationTerm {
     variableName: String = null
   ): ListPopulationTerm = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(contains)) __obj.updateDynamic("contains")(contains)
-    if (!js.isUndefined(negation)) __obj.updateDynamic("negation")(negation)
-    if (operator != null) __obj.updateDynamic("operator")(operator)
-    if (remarketingListId != null) __obj.updateDynamic("remarketingListId")(remarketingListId)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (variableFriendlyName != null) __obj.updateDynamic("variableFriendlyName")(variableFriendlyName)
-    if (variableName != null) __obj.updateDynamic("variableName")(variableName)
+    if (!js.isUndefined(contains)) __obj.updateDynamic("contains")(contains.asInstanceOf[js.Any])
+    if (!js.isUndefined(negation)) __obj.updateDynamic("negation")(negation.asInstanceOf[js.Any])
+    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
+    if (remarketingListId != null) __obj.updateDynamic("remarketingListId")(remarketingListId.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (variableFriendlyName != null) __obj.updateDynamic("variableFriendlyName")(variableFriendlyName.asInstanceOf[js.Any])
+    if (variableName != null) __obj.updateDynamic("variableName")(variableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPopulationTerm]
   }
 }

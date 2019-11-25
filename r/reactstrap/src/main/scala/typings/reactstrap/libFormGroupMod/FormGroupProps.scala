@@ -28,23 +28,19 @@ object FormGroupProps {
     ClassAttributes: ClassAttributes[HTMLDivElement] = null,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     check: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
     cssModule: CSSModule = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
     `inline`: js.UndefOr[Boolean] = js.undefined,
     row: js.UndefOr[Boolean] = js.undefined,
     tag: String | ReactType[_] = null
   ): FormGroupProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
-    if (!js.isUndefined(row)) __obj.updateDynamic("row")(row)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
+    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (!js.isUndefined(row)) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormGroupProps]
   }

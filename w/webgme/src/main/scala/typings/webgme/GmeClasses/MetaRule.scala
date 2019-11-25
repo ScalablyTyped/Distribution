@@ -12,7 +12,7 @@ trait MetaRule extends js.Object {
 object MetaRule {
   @scala.inline
   def apply(enum: js.Array[String], `type`: String | Double | Boolean): MetaRule = {
-    val __obj = js.Dynamic.literal(enum = enum)
+    val __obj = js.Dynamic.literal(enum = enum.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaRule]
   }

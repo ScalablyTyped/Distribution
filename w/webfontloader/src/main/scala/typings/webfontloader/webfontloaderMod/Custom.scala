@@ -19,9 +19,9 @@ object Custom {
     urls: js.Array[String] = null
   ): Custom = {
     val __obj = js.Dynamic.literal()
-    if (families != null) __obj.updateDynamic("families")(families)
-    if (testStrings != null) __obj.updateDynamic("testStrings")(testStrings)
-    if (urls != null) __obj.updateDynamic("urls")(urls)
+    if (families != null) __obj.updateDynamic("families")(families.asInstanceOf[js.Any])
+    if (testStrings != null) __obj.updateDynamic("testStrings")(testStrings.asInstanceOf[js.Any])
+    if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[Custom]
   }
 }

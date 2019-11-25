@@ -23,10 +23,10 @@ object Anon_Events {
     paths: APIPaths = null,
     scopes: js.Array[APIParentScope] = null
   ): Anon_Events = {
-    val __obj = js.Dynamic.literal(script = script)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (paths != null) __obj.updateDynamic("paths")(paths)
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    val __obj = js.Dynamic.literal(script = script.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Events]
   }
 }

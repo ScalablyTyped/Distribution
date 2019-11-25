@@ -23,7 +23,7 @@ object MatchWebFonts {
     val __obj = js.Dynamic.literal()
     if (fontCheckDelay != null) __obj.updateDynamic("fontCheckDelay")(fontCheckDelay.asInstanceOf[js.Any])
     if (fontCheckTimeout != null) __obj.updateDynamic("fontCheckTimeout")(fontCheckTimeout.asInstanceOf[js.Any])
-    if (matchFor != null) __obj.updateDynamic("matchFor")(matchFor)
+    if (matchFor != null) __obj.updateDynamic("matchFor")(matchFor.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchWebFonts]
   }
 }

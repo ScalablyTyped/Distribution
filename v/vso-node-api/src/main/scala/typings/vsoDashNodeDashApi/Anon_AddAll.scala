@@ -41,7 +41,7 @@ object Anon_AddAll {
     targetRename: Double,
     undelete: Double
   ): Anon_AddAll = {
-    val __obj = js.Dynamic.literal(add = add, all = all, branch = branch, delete = delete, edit = edit, encoding = encoding, lock = lock, merge = merge, none = none, property = property, rename = rename, rollback = rollback, sourceRename = sourceRename, targetRename = targetRename, undelete = undelete)
+    val __obj = js.Dynamic.literal(add = add.asInstanceOf[js.Any], all = all.asInstanceOf[js.Any], branch = branch.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], edit = edit.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], lock = lock.asInstanceOf[js.Any], merge = merge.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], rename = rename.asInstanceOf[js.Any], rollback = rollback.asInstanceOf[js.Any], sourceRename = sourceRename.asInstanceOf[js.Any], targetRename = targetRename.asInstanceOf[js.Any], undelete = undelete.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AddAll]
   }

@@ -12,7 +12,7 @@ trait Anon_Byob extends js.Object {
 object Anon_Byob {
   @scala.inline
   def apply(mode: byob): Anon_Byob = {
-    val __obj = js.Dynamic.literal(mode = mode)
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Byob]
   }

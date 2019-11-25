@@ -20,10 +20,10 @@ object ReportDelivery {
     recipients: js.Array[Recipient] = null
   ): ReportDelivery = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(emailOwner)) __obj.updateDynamic("emailOwner")(emailOwner)
-    if (emailOwnerDeliveryType != null) __obj.updateDynamic("emailOwnerDeliveryType")(emailOwnerDeliveryType)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (recipients != null) __obj.updateDynamic("recipients")(recipients)
+    if (!js.isUndefined(emailOwner)) __obj.updateDynamic("emailOwner")(emailOwner.asInstanceOf[js.Any])
+    if (emailOwnerDeliveryType != null) __obj.updateDynamic("emailOwnerDeliveryType")(emailOwnerDeliveryType.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (recipients != null) __obj.updateDynamic("recipients")(recipients.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportDelivery]
   }
 }

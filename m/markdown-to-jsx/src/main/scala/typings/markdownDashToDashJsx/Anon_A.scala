@@ -81,7 +81,7 @@ object Anon_A {
     ul: ComponentOverride = null
   ): Anon_A = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (a != null) __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
     if (br != null) __obj.updateDynamic("br")(br.asInstanceOf[js.Any])
     if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])

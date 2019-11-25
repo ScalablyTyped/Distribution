@@ -14,8 +14,8 @@ object PartialClassNameMapCardMediaClassKey {
   @scala.inline
   def apply(media: String = null, root: String = null): PartialClassNameMapCardMediaClassKey = {
     val __obj = js.Dynamic.literal()
-    if (media != null) __obj.updateDynamic("media")(media)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapCardMediaClassKey]
   }
 }

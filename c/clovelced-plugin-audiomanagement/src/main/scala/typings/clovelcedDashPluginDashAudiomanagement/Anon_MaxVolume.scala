@@ -11,7 +11,7 @@ trait Anon_MaxVolume extends js.Object {
 object Anon_MaxVolume {
   @scala.inline
   def apply(maxVolume: Double): Anon_MaxVolume = {
-    val __obj = js.Dynamic.literal(maxVolume = maxVolume)
+    val __obj = js.Dynamic.literal(maxVolume = maxVolume.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MaxVolume]
   }

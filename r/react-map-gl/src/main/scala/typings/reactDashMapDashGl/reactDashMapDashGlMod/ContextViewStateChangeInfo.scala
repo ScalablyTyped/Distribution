@@ -13,7 +13,7 @@ trait ContextViewStateChangeInfo extends js.Object {
 object ContextViewStateChangeInfo {
   @scala.inline
   def apply(interactionState: ExtraState, newViewState: ViewportProps, viewState: ViewportProps): ContextViewStateChangeInfo = {
-    val __obj = js.Dynamic.literal(interactionState = interactionState, newViewState = newViewState, viewState = viewState)
+    val __obj = js.Dynamic.literal(interactionState = interactionState.asInstanceOf[js.Any], newViewState = newViewState.asInstanceOf[js.Any], viewState = viewState.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContextViewStateChangeInfo]
   }

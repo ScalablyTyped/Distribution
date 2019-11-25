@@ -14,7 +14,7 @@ trait PreFinallyFlow
 object PreFinallyFlow {
   @scala.inline
   def apply(antecedent: FlowNode, flags: FlowFlags, lock: FlowLock, id: Int | Double = null): PreFinallyFlow = {
-    val __obj = js.Dynamic.literal(antecedent = antecedent, flags = flags, lock = lock)
+    val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], lock = lock.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreFinallyFlow]
   }

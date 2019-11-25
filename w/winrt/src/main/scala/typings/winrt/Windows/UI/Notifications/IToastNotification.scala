@@ -23,7 +23,7 @@ object IToastNotification {
     ondismissed: js.Any,
     onfailed: js.Any
   ): IToastNotification = {
-    val __obj = js.Dynamic.literal(content = content, expirationTime = expirationTime, onactivated = onactivated, ondismissed = ondismissed, onfailed = onfailed)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any], onactivated = onactivated.asInstanceOf[js.Any], ondismissed = ondismissed.asInstanceOf[js.Any], onfailed = onfailed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IToastNotification]
   }

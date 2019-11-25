@@ -63,7 +63,7 @@ object Typeofcompilation {
     Record: Instantiable0[Record],
     RuntimeTemplate: Instantiable0[RuntimeTemplate]
   ): Typeofcompilation = {
-    val __obj = js.Dynamic.literal(Asset = Asset, Chunk = Chunk, ChunkGroup = ChunkGroup, ChunkHash = ChunkHash, ChunkTemplate = ChunkTemplate, Compilation = Compilation, ContextModuleFactory = ContextModuleFactory, DependenciesBlock = DependenciesBlock, Dependency = Dependency, DllModuleFactory = DllModuleFactory, HotUpdateChunkTemplate = HotUpdateChunkTemplate, MainTemplate = MainTemplate, Module = Module, ModuleTemplate = ModuleTemplate, NormalModuleFactory = NormalModuleFactory, Record = Record, RuntimeTemplate = RuntimeTemplate)
+    val __obj = js.Dynamic.literal(Asset = Asset.asInstanceOf[js.Any], Chunk = Chunk.asInstanceOf[js.Any], ChunkGroup = ChunkGroup.asInstanceOf[js.Any], ChunkHash = ChunkHash.asInstanceOf[js.Any], ChunkTemplate = ChunkTemplate.asInstanceOf[js.Any], Compilation = Compilation.asInstanceOf[js.Any], ContextModuleFactory = ContextModuleFactory.asInstanceOf[js.Any], DependenciesBlock = DependenciesBlock.asInstanceOf[js.Any], Dependency = Dependency.asInstanceOf[js.Any], DllModuleFactory = DllModuleFactory.asInstanceOf[js.Any], HotUpdateChunkTemplate = HotUpdateChunkTemplate.asInstanceOf[js.Any], MainTemplate = MainTemplate.asInstanceOf[js.Any], Module = Module.asInstanceOf[js.Any], ModuleTemplate = ModuleTemplate.asInstanceOf[js.Any], NormalModuleFactory = NormalModuleFactory.asInstanceOf[js.Any], Record = Record.asInstanceOf[js.Any], RuntimeTemplate = RuntimeTemplate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofcompilation]
   }

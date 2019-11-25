@@ -49,12 +49,12 @@ object SearchAnnotationSetsRequest {
     types: js.Array[String] = null
   ): SearchAnnotationSetsRequest = {
     val __obj = js.Dynamic.literal()
-    if (datasetIds != null) __obj.updateDynamic("datasetIds")(datasetIds)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (datasetIds != null) __obj.updateDynamic("datasetIds")(datasetIds.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
-    if (referenceSetId != null) __obj.updateDynamic("referenceSetId")(referenceSetId)
-    if (types != null) __obj.updateDynamic("types")(types)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (referenceSetId != null) __obj.updateDynamic("referenceSetId")(referenceSetId.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchAnnotationSetsRequest]
   }
 }

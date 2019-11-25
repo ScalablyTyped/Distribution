@@ -31,7 +31,7 @@ trait setup extends js.Object {
 object setup {
   @scala.inline
   def apply(button: Boolean, iconClass: String, name: String, tooltip: String): setup = {
-    val __obj = js.Dynamic.literal(button = button, iconClass = iconClass, name = name, tooltip = tooltip)
+    val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], iconClass = iconClass.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[setup]
   }

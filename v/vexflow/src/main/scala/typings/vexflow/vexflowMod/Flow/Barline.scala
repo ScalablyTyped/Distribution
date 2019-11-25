@@ -12,9 +12,3 @@ class Barline protected ()
   def this(`type`: `type`, x: Double) = this()
 }
 
-@JSImport("vexflow", "Flow.Barline")
-@js.native
-object Barline extends js.Object {
-  type `type` = typings.vexflow.Vex.Flow.Barline.`type`
-}
-

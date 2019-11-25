@@ -34,7 +34,7 @@ object OnfleetAdmin {
     timeLastModified: Double,
     `type`: `super` | standard
   ): OnfleetAdmin = {
-    val __obj = js.Dynamic.literal(email = email, id = id, isActive = isActive, metadata = metadata, name = name, organization = organization, phone = phone, timeCreated = timeCreated, timeLastModified = timeLastModified)
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], timeCreated = timeCreated.asInstanceOf[js.Any], timeLastModified = timeLastModified.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnfleetAdmin]
   }

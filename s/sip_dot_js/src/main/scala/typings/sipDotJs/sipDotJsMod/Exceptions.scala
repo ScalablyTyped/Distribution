@@ -1,6 +1,5 @@
 package typings.sipDotJs.sipDotJsMod
 
-import typings.sipDotJs.libEnumsMod.SessionStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +26,7 @@ object Exceptions extends js.Object {
   @js.native
   class InvalidStateError protected ()
     extends typings.sipDotJs.libExceptionsMod.Exceptions.InvalidStateError {
-    def this(status: SessionStatus) = this()
+    def this(status: typings.sipDotJs.libEnumsMod.SessionStatus) = this()
   }
   
   @js.native

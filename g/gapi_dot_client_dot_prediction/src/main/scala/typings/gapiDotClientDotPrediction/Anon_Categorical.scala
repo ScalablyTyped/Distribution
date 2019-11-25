@@ -24,10 +24,10 @@ object Anon_Categorical {
     text: Anon_CountString = null
   ): Anon_Categorical = {
     val __obj = js.Dynamic.literal()
-    if (categorical != null) __obj.updateDynamic("categorical")(categorical)
-    if (index != null) __obj.updateDynamic("index")(index)
-    if (numeric != null) __obj.updateDynamic("numeric")(numeric)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (categorical != null) __obj.updateDynamic("categorical")(categorical.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (numeric != null) __obj.updateDynamic("numeric")(numeric.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Categorical]
   }
 }

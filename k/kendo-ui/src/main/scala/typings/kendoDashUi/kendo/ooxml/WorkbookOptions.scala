@@ -21,10 +21,10 @@ object WorkbookOptions {
     sheets: js.Array[WorkbookSheet] = null
   ): WorkbookOptions = {
     val __obj = js.Dynamic.literal()
-    if (creator != null) __obj.updateDynamic("creator")(creator)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (sheets != null) __obj.updateDynamic("sheets")(sheets)
+    if (creator != null) __obj.updateDynamic("creator")(creator.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (sheets != null) __obj.updateDynamic("sheets")(sheets.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookOptions]
   }
 }

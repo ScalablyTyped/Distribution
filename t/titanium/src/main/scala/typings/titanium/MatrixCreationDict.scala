@@ -30,7 +30,7 @@ object MatrixCreationDict {
   @scala.inline
   def apply(anchorPoint: js.Any = null, rotate: Int | Double = null, scale: Int | Double = null): MatrixCreationDict = {
     val __obj = js.Dynamic.literal()
-    if (anchorPoint != null) __obj.updateDynamic("anchorPoint")(anchorPoint)
+    if (anchorPoint != null) __obj.updateDynamic("anchorPoint")(anchorPoint.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatrixCreationDict]

@@ -23,7 +23,7 @@ object Anon_Blackberry {
     firefox: Boolean,
     opera: Boolean
   ): Anon_Blackberry = {
-    val __obj = js.Dynamic.literal(blackberry = blackberry, blackberry10 = blackberry10, chrome = chrome, device = device, firefox = firefox, opera = opera)
+    val __obj = js.Dynamic.literal(blackberry = blackberry.asInstanceOf[js.Any], blackberry10 = blackberry10.asInstanceOf[js.Any], chrome = chrome.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], firefox = firefox.asInstanceOf[js.Any], opera = opera.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Blackberry]
   }

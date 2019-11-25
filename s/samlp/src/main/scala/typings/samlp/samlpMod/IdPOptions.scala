@@ -59,23 +59,23 @@ object IdPOptions {
     signResponse: js.UndefOr[Boolean] = js.undefined,
     signatureAlgorithm: SignatureAlgorithmType = null
   ): IdPOptions = {
-    val __obj = js.Dynamic.literal(cert = cert.asInstanceOf[js.Any], getPostURL = js.Any.fromFunction4(getPostURL), issuer = issuer, key = key.asInstanceOf[js.Any])
-    if (RelayState != null) __obj.updateDynamic("RelayState")(RelayState)
-    if (audience != null) __obj.updateDynamic("audience")(audience)
-    if (authnContextClassRef != null) __obj.updateDynamic("authnContextClassRef")(authnContextClassRef)
-    if (destination != null) __obj.updateDynamic("destination")(destination)
-    if (digestAlgorithm != null) __obj.updateDynamic("digestAlgorithm")(digestAlgorithm)
-    if (encryptionAlgorithm != null) __obj.updateDynamic("encryptionAlgorithm")(encryptionAlgorithm)
+    val __obj = js.Dynamic.literal(cert = cert.asInstanceOf[js.Any], getPostURL = js.Any.fromFunction4(getPostURL), issuer = issuer.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
+    if (RelayState != null) __obj.updateDynamic("RelayState")(RelayState.asInstanceOf[js.Any])
+    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
+    if (authnContextClassRef != null) __obj.updateDynamic("authnContextClassRef")(authnContextClassRef.asInstanceOf[js.Any])
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (digestAlgorithm != null) __obj.updateDynamic("digestAlgorithm")(digestAlgorithm.asInstanceOf[js.Any])
+    if (encryptionAlgorithm != null) __obj.updateDynamic("encryptionAlgorithm")(encryptionAlgorithm.asInstanceOf[js.Any])
     if (encryptionCert != null) __obj.updateDynamic("encryptionCert")(encryptionCert.asInstanceOf[js.Any])
     if (encryptionPublicKey != null) __obj.updateDynamic("encryptionPublicKey")(encryptionPublicKey.asInstanceOf[js.Any])
     if (getUserFromRequest != null) __obj.updateDynamic("getUserFromRequest")(js.Any.fromFunction1(getUserFromRequest))
-    if (inResponseTo != null) __obj.updateDynamic("inResponseTo")(inResponseTo)
-    if (keyEncryptionAlgorighm != null) __obj.updateDynamic("keyEncryptionAlgorighm")(keyEncryptionAlgorighm)
+    if (inResponseTo != null) __obj.updateDynamic("inResponseTo")(inResponseTo.asInstanceOf[js.Any])
+    if (keyEncryptionAlgorighm != null) __obj.updateDynamic("keyEncryptionAlgorighm")(keyEncryptionAlgorighm.asInstanceOf[js.Any])
     if (lifetimeInSeconds != null) __obj.updateDynamic("lifetimeInSeconds")(lifetimeInSeconds.asInstanceOf[js.Any])
-    if (profileMapper != null) __obj.updateDynamic("profileMapper")(profileMapper)
-    if (recipient != null) __obj.updateDynamic("recipient")(recipient)
-    if (!js.isUndefined(signResponse)) __obj.updateDynamic("signResponse")(signResponse)
-    if (signatureAlgorithm != null) __obj.updateDynamic("signatureAlgorithm")(signatureAlgorithm)
+    if (profileMapper != null) __obj.updateDynamic("profileMapper")(profileMapper.asInstanceOf[js.Any])
+    if (recipient != null) __obj.updateDynamic("recipient")(recipient.asInstanceOf[js.Any])
+    if (!js.isUndefined(signResponse)) __obj.updateDynamic("signResponse")(signResponse.asInstanceOf[js.Any])
+    if (signatureAlgorithm != null) __obj.updateDynamic("signatureAlgorithm")(signatureAlgorithm.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdPOptions]
   }
 }

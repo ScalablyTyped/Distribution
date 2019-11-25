@@ -28,10 +28,10 @@ object PreviewEmailOpts {
   @scala.inline
   def apply(dir: String = null, id: String = null, open: js.Any = null, template: String = null): PreviewEmailOpts = {
     val __obj = js.Dynamic.literal()
-    if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (open != null) __obj.updateDynamic("open")(open)
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreviewEmailOpts]
   }
 }

@@ -35,15 +35,15 @@ object InfiniteScrollerProps {
     threshold: Int | Double = null
   ): InfiniteScrollerProps = {
     val __obj = js.Dynamic.literal(loadMore = js.Any.fromFunction0(loadMore))
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (containerHeight != null) __obj.updateDynamic("containerHeight")(containerHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(elementIsScrollable)) __obj.updateDynamic("elementIsScrollable")(elementIsScrollable)
-    if (!js.isUndefined(hasMore)) __obj.updateDynamic("hasMore")(hasMore)
-    if (holderType != null) __obj.updateDynamic("holderType")(holderType)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (loader != null) __obj.updateDynamic("loader")(loader)
-    if (!js.isUndefined(loadingMore)) __obj.updateDynamic("loadingMore")(loadingMore)
-    if (!js.isUndefined(showLoader)) __obj.updateDynamic("showLoader")(showLoader)
+    if (!js.isUndefined(elementIsScrollable)) __obj.updateDynamic("elementIsScrollable")(elementIsScrollable.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasMore)) __obj.updateDynamic("hasMore")(hasMore.asInstanceOf[js.Any])
+    if (holderType != null) __obj.updateDynamic("holderType")(holderType.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (loader != null) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadingMore)) __obj.updateDynamic("loadingMore")(loadingMore.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLoader)) __obj.updateDynamic("showLoader")(showLoader.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[InfiniteScrollerProps]
   }

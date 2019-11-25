@@ -39,10 +39,10 @@ object AppDetailsOptions {
   ): AppDetailsOptions = {
     val __obj = js.Dynamic.literal()
     if (appIconIndex != null) __obj.updateDynamic("appIconIndex")(appIconIndex.asInstanceOf[js.Any])
-    if (appIconPath != null) __obj.updateDynamic("appIconPath")(appIconPath)
-    if (appId != null) __obj.updateDynamic("appId")(appId)
-    if (relaunchCommand != null) __obj.updateDynamic("relaunchCommand")(relaunchCommand)
-    if (relaunchDisplayName != null) __obj.updateDynamic("relaunchDisplayName")(relaunchDisplayName)
+    if (appIconPath != null) __obj.updateDynamic("appIconPath")(appIconPath.asInstanceOf[js.Any])
+    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
+    if (relaunchCommand != null) __obj.updateDynamic("relaunchCommand")(relaunchCommand.asInstanceOf[js.Any])
+    if (relaunchDisplayName != null) __obj.updateDynamic("relaunchDisplayName")(relaunchDisplayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppDetailsOptions]
   }
 }

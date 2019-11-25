@@ -17,3 +17,14 @@ import scala.scalajs.js.annotation._
 */
 trait ContextFilter extends js.Object
 
+object ContextFilter {
+  @scala.inline
+  def INCLUDE_EXISTING_CHALLENGES: typings.facebookDashInstantDashGames.facebookDashInstantDashGamesStrings.INCLUDE_EXISTING_CHALLENGES = this.cast("INCLUDE_EXISTING_CHALLENGES")
+  @scala.inline
+  def NEW_CONTEXT_ONLY: typings.facebookDashInstantDashGames.facebookDashInstantDashGamesStrings.NEW_CONTEXT_ONLY = this.cast("NEW_CONTEXT_ONLY")
+  @scala.inline
+  def NEW_PLAYERS_ONLY: typings.facebookDashInstantDashGames.facebookDashInstantDashGamesStrings.NEW_PLAYERS_ONLY = this.cast("NEW_PLAYERS_ONLY")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -23,8 +23,8 @@ object _AutoScalingPolicyDescription {
     TargetTrackingScalingPolicyConfiguration: _AutoScalingTargetTrackingScalingPolicyConfigurationDescription = null
   ): _AutoScalingPolicyDescription = {
     val __obj = js.Dynamic.literal()
-    if (PolicyName != null) __obj.updateDynamic("PolicyName")(PolicyName)
-    if (TargetTrackingScalingPolicyConfiguration != null) __obj.updateDynamic("TargetTrackingScalingPolicyConfiguration")(TargetTrackingScalingPolicyConfiguration)
+    if (PolicyName != null) __obj.updateDynamic("PolicyName")(PolicyName.asInstanceOf[js.Any])
+    if (TargetTrackingScalingPolicyConfiguration != null) __obj.updateDynamic("TargetTrackingScalingPolicyConfiguration")(TargetTrackingScalingPolicyConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[_AutoScalingPolicyDescription]
   }
 }

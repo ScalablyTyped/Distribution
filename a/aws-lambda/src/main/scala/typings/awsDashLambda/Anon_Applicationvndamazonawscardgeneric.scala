@@ -19,7 +19,7 @@ object Anon_Applicationvndamazonawscardgeneric {
     genericAttachments: js.Array[LexGenericAttachment],
     version: Double
   ): Anon_Applicationvndamazonawscardgeneric = {
-    val __obj = js.Dynamic.literal(contentType = contentType, genericAttachments = genericAttachments, version = version)
+    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], genericAttachments = genericAttachments.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Applicationvndamazonawscardgeneric]
   }

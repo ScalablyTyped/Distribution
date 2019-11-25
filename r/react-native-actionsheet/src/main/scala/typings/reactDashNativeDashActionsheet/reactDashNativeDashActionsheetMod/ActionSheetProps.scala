@@ -25,12 +25,12 @@ object ActionSheetProps {
     tintColor: String = null,
     title: String = null
   ): ActionSheetProps = {
-    val __obj = js.Dynamic.literal(onPress = js.Any.fromFunction1(onPress), options = options)
+    val __obj = js.Dynamic.literal(onPress = js.Any.fromFunction1(onPress), options = options.asInstanceOf[js.Any])
     if (cancelButtonIndex != null) __obj.updateDynamic("cancelButtonIndex")(cancelButtonIndex.asInstanceOf[js.Any])
     if (destructiveButtonIndex != null) __obj.updateDynamic("destructiveButtonIndex")(destructiveButtonIndex.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionSheetProps]
   }
 }

@@ -20,8 +20,8 @@ object RowsRenderingEventUIParam {
   @scala.inline
   def apply(owner: js.Any = null, tbody: Element = null): RowsRenderingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (tbody != null) __obj.updateDynamic("tbody")(tbody)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (tbody != null) __obj.updateDynamic("tbody")(tbody.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowsRenderingEventUIParam]
   }
 }

@@ -11,7 +11,7 @@ trait InsightsServiceAccountResponseProfile_picture extends js.Object {
 object InsightsServiceAccountResponseProfile_picture {
   @scala.inline
   def apply(uri: String): InsightsServiceAccountResponseProfile_picture = {
-    val __obj = js.Dynamic.literal(uri = uri)
+    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServiceAccountResponseProfile_picture]
   }

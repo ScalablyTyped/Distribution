@@ -23,10 +23,10 @@ object AnswerInlineQueryOptions {
   ): AnswerInlineQueryOptions = {
     val __obj = js.Dynamic.literal()
     if (cache_time != null) __obj.updateDynamic("cache_time")(cache_time.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_personal)) __obj.updateDynamic("is_personal")(is_personal)
-    if (next_offset != null) __obj.updateDynamic("next_offset")(next_offset)
-    if (switch_pm_parameter != null) __obj.updateDynamic("switch_pm_parameter")(switch_pm_parameter)
-    if (switch_pm_text != null) __obj.updateDynamic("switch_pm_text")(switch_pm_text)
+    if (!js.isUndefined(is_personal)) __obj.updateDynamic("is_personal")(is_personal.asInstanceOf[js.Any])
+    if (next_offset != null) __obj.updateDynamic("next_offset")(next_offset.asInstanceOf[js.Any])
+    if (switch_pm_parameter != null) __obj.updateDynamic("switch_pm_parameter")(switch_pm_parameter.asInstanceOf[js.Any])
+    if (switch_pm_text != null) __obj.updateDynamic("switch_pm_text")(switch_pm_text.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnswerInlineQueryOptions]
   }
 }

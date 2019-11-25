@@ -27,9 +27,9 @@ object ReposUpdateProtectedBranchRequiredStatusChecksParams {
     contexts: js.Array[String] = null,
     strict: js.UndefOr[Boolean] = js.undefined
   ): ReposUpdateProtectedBranchRequiredStatusChecksParams = {
-    val __obj = js.Dynamic.literal(branch = branch, owner = owner, repo = repo)
-    if (contexts != null) __obj.updateDynamic("contexts")(contexts)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (contexts != null) __obj.updateDynamic("contexts")(contexts.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposUpdateProtectedBranchRequiredStatusChecksParams]
   }
 }

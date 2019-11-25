@@ -9,6 +9,8 @@ trait reactDashInstantsearchProps {
   @scala.inline
   def HitsProps: typings.reactDashInstantsearchDashDom.reactDashInstantsearchDashDomMod.HitsProps.type = typings.reactDashInstantsearchDashDom.reactDashInstantsearchDashDomMod.HitsProps
   type HitsProps[T] = typings.reactDashInstantsearchDashDom.reactDashInstantsearchDashDomMod.HitsProps[T]
+  @scala.inline
+  def InstantSearchProps: typings.reactDashInstantsearchDashDom.reactDashInstantsearchDashDomMod.InstantSearchProps.type = typings.reactDashInstantsearchDashDom.reactDashInstantsearchDashDomMod.InstantSearchProps
   type InstantSearchProps = typings.reactDashInstantsearchDashDom.reactDashInstantsearchDashDomMod.InstantSearchProps
   @scala.inline
   def SearchBoxProps: typings.reactDashInstantsearchDashDom.reactDashInstantsearchDashDomMod.SearchBoxProps.type = typings.reactDashInstantsearchDashDom.reactDashInstantsearchDashDomMod.SearchBoxProps

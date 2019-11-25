@@ -39,7 +39,7 @@ object ElementCreatorOptions {
     locale: auto | da | de | en | es | fi | fr | it | ja | no | nl | sv | zh | String = null
   ): ElementCreatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (fonts != null) __obj.updateDynamic("fonts")(fonts)
+    if (fonts != null) __obj.updateDynamic("fonts")(fonts.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementCreatorOptions]
   }

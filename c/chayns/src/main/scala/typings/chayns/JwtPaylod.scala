@@ -34,7 +34,7 @@ object JwtPaylod {
     TobitUserID: Double,
     isAdmin: Boolean
   ): JwtPaylod = {
-    val __obj = js.Dynamic.literal(FacebookUserID = FacebookUserID, FirstName = FirstName, LastName = LastName, LocationID = LocationID, LoginType = LoginType, PersonID = PersonID, TobitUserID = TobitUserID, isAdmin = isAdmin)
+    val __obj = js.Dynamic.literal(FacebookUserID = FacebookUserID.asInstanceOf[js.Any], FirstName = FirstName.asInstanceOf[js.Any], LastName = LastName.asInstanceOf[js.Any], LocationID = LocationID.asInstanceOf[js.Any], LoginType = LoginType.asInstanceOf[js.Any], PersonID = PersonID.asInstanceOf[js.Any], TobitUserID = TobitUserID.asInstanceOf[js.Any], isAdmin = isAdmin.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JwtPaylod]
   }

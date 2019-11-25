@@ -14,8 +14,8 @@ object RestType {
   @scala.inline
   def apply(`type`: typings.doctrine.doctrineStrings.RestType, expression: Type = null): RestType = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (expression != null) __obj.updateDynamic("expression")(expression)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestType]
   }
 }

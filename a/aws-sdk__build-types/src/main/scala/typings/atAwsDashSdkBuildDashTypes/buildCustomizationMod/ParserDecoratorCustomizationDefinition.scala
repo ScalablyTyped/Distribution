@@ -38,10 +38,10 @@ object ParserDecoratorCustomizationDefinition {
     configuration: ConfigurationDefinition = null,
     imports: js.Array[Import] = null
   ): ParserDecoratorCustomizationDefinition = {
-    val __obj = js.Dynamic.literal(expression = expression, priority = priority)
-    __obj.updateDynamic("type")(`type`)
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration)
-    if (imports != null) __obj.updateDynamic("imports")(imports)
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
+    if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserDecoratorCustomizationDefinition]
   }
 }

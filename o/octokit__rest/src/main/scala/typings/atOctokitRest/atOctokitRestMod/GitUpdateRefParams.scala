@@ -21,8 +21,8 @@ trait GitUpdateRefParams extends js.Object {
 object GitUpdateRefParams {
   @scala.inline
   def apply(owner: String, ref: String, repo: String, sha: String, force: js.UndefOr[Boolean] = js.undefined): GitUpdateRefParams = {
-    val __obj = js.Dynamic.literal(owner = owner, ref = ref, repo = repo, sha = sha)
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitUpdateRefParams]
   }
 }

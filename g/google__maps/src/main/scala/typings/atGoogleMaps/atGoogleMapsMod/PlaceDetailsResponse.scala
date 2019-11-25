@@ -24,7 +24,7 @@ object PlaceDetailsResponse {
     result: PlaceDetailsResult,
     status: PlaceDetailsResponseStatus
   ): PlaceDetailsResponse = {
-    val __obj = js.Dynamic.literal(html_attributions = html_attributions, result = result, status = status)
+    val __obj = js.Dynamic.literal(html_attributions = html_attributions.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PlaceDetailsResponse]
   }

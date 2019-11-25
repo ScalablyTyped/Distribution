@@ -15,7 +15,7 @@ object GoogleActionsTransactionsV3DigitalPurchaseCheckResult {
   @scala.inline
   def apply(resultType: GoogleActionsTransactionsV3DigitalPurchaseCheckResultResultType = null): GoogleActionsTransactionsV3DigitalPurchaseCheckResult = {
     val __obj = js.Dynamic.literal()
-    if (resultType != null) __obj.updateDynamic("resultType")(resultType)
+    if (resultType != null) __obj.updateDynamic("resultType")(resultType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsTransactionsV3DigitalPurchaseCheckResult]
   }
 }

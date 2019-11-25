@@ -31,11 +31,11 @@ object GeocodingComponents {
     route: String = null
   ): GeocodingComponents = {
     val __obj = js.Dynamic.literal()
-    if (administrative_area != null) __obj.updateDynamic("administrative_area")(administrative_area)
+    if (administrative_area != null) __obj.updateDynamic("administrative_area")(administrative_area.asInstanceOf[js.Any])
     if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (locality != null) __obj.updateDynamic("locality")(locality)
-    if (postal_code != null) __obj.updateDynamic("postal_code")(postal_code)
-    if (route != null) __obj.updateDynamic("route")(route)
+    if (locality != null) __obj.updateDynamic("locality")(locality.asInstanceOf[js.Any])
+    if (postal_code != null) __obj.updateDynamic("postal_code")(postal_code.asInstanceOf[js.Any])
+    if (route != null) __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeocodingComponents]
   }
 }

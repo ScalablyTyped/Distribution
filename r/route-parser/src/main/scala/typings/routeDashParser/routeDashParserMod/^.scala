@@ -27,7 +27,7 @@ class ^[TParams /* <: js.Object */] protected () extends Route[TParams] {
     * route.match('/foo/bar/') // -> {one: 'foo', two: 'bar'}
     */
   /* CompleteClass */
-  override def `match`(pathname: String): (/* import warning: ImportType.apply c Unsupported type mapping: 
+  override def `match`(pathname: String): (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof TParams ]: string}
     */ typings.routeDashParser.routeDashParserStrings.Route with js.Any) | `false` = js.native
   /**

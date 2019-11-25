@@ -12,7 +12,7 @@ object Request {
   @scala.inline
   def apply(originalMethod: String = null): Request = {
     val __obj = js.Dynamic.literal()
-    if (originalMethod != null) __obj.updateDynamic("originalMethod")(originalMethod)
+    if (originalMethod != null) __obj.updateDynamic("originalMethod")(originalMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request]
   }
 }

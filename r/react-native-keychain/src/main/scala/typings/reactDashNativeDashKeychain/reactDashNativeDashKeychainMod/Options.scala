@@ -26,13 +26,13 @@ object Options {
     service: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (accessControl != null) __obj.updateDynamic("accessControl")(accessControl)
-    if (accessGroup != null) __obj.updateDynamic("accessGroup")(accessGroup)
-    if (accessible != null) __obj.updateDynamic("accessible")(accessible)
-    if (authenticationPrompt != null) __obj.updateDynamic("authenticationPrompt")(authenticationPrompt)
-    if (authenticationType != null) __obj.updateDynamic("authenticationType")(authenticationType)
-    if (securityLevel != null) __obj.updateDynamic("securityLevel")(securityLevel)
-    if (service != null) __obj.updateDynamic("service")(service)
+    if (accessControl != null) __obj.updateDynamic("accessControl")(accessControl.asInstanceOf[js.Any])
+    if (accessGroup != null) __obj.updateDynamic("accessGroup")(accessGroup.asInstanceOf[js.Any])
+    if (accessible != null) __obj.updateDynamic("accessible")(accessible.asInstanceOf[js.Any])
+    if (authenticationPrompt != null) __obj.updateDynamic("authenticationPrompt")(authenticationPrompt.asInstanceOf[js.Any])
+    if (authenticationType != null) __obj.updateDynamic("authenticationType")(authenticationType.asInstanceOf[js.Any])
+    if (securityLevel != null) __obj.updateDynamic("securityLevel")(securityLevel.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

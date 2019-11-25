@@ -23,7 +23,7 @@ object PaginatedResult {
     items: js.Array[T],
     next: paginatedResultCallback[T] => Unit
   ): PaginatedResult[T] = {
-    val __obj = js.Dynamic.literal(current = js.Any.fromFunction1(current), first = js.Any.fromFunction1(first), hasNext = js.Any.fromFunction0(hasNext), isLast = js.Any.fromFunction0(isLast), items = items, next = js.Any.fromFunction1(next))
+    val __obj = js.Dynamic.literal(current = js.Any.fromFunction1(current), first = js.Any.fromFunction1(first), hasNext = js.Any.fromFunction0(hasNext), isLast = js.Any.fromFunction0(isLast), items = items.asInstanceOf[js.Any], next = js.Any.fromFunction1(next))
   
     __obj.asInstanceOf[PaginatedResult[T]]
   }

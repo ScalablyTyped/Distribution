@@ -43,7 +43,7 @@ object INxAppProperties {
     qThumbnail: IStaticContentUrlDef,
     qTitle: String
   ): INxAppProperties = {
-    val __obj = js.Dynamic.literal(qLastReloadTime = qLastReloadTime, qMigrationHash = qMigrationHash, qSavedInProductVersion = qSavedInProductVersion, qThumbnail = qThumbnail, qTitle = qTitle)
+    val __obj = js.Dynamic.literal(qLastReloadTime = qLastReloadTime.asInstanceOf[js.Any], qMigrationHash = qMigrationHash.asInstanceOf[js.Any], qSavedInProductVersion = qSavedInProductVersion.asInstanceOf[js.Any], qThumbnail = qThumbnail.asInstanceOf[js.Any], qTitle = qTitle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INxAppProperties]
   }

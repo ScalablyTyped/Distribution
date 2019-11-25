@@ -24,7 +24,7 @@ object GetFirstConsistentlyInteractiveOpts {
   def apply(minValue: Int | Double = null, useMutationObserver: js.UndefOr[Boolean] = js.undefined): GetFirstConsistentlyInteractiveOpts = {
     val __obj = js.Dynamic.literal()
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMutationObserver)) __obj.updateDynamic("useMutationObserver")(useMutationObserver)
+    if (!js.isUndefined(useMutationObserver)) __obj.updateDynamic("useMutationObserver")(useMutationObserver.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFirstConsistentlyInteractiveOpts]
   }
 }

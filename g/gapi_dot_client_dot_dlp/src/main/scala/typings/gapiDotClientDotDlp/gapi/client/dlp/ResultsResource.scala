@@ -11,7 +11,7 @@ trait ResultsResource extends js.Object {
 object ResultsResource {
   @scala.inline
   def apply(findings: FindingsResource): ResultsResource = {
-    val __obj = js.Dynamic.literal(findings = findings)
+    val __obj = js.Dynamic.literal(findings = findings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResultsResource]
   }

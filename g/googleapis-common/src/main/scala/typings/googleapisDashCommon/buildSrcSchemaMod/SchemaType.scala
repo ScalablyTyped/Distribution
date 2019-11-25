@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait SchemaType extends js.Object
 
+object SchemaType {
+  @scala.inline
+  def array: typings.googleapisDashCommon.googleapisDashCommonStrings.array = this.cast("array")
+  @scala.inline
+  def boolean: typings.googleapisDashCommon.googleapisDashCommonStrings.boolean = this.cast("boolean")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def integer: typings.googleapisDashCommon.googleapisDashCommonStrings.integer = this.cast("integer")
+  @scala.inline
+  def `object`: typings.googleapisDashCommon.googleapisDashCommonStrings.`object` = this.cast("object")
+  @scala.inline
+  def string: typings.googleapisDashCommon.googleapisDashCommonStrings.string = this.cast("string")
+}
+

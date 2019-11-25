@@ -24,12 +24,12 @@ object StrategyOptionsWithRequest {
     tokenParams: String = null,
     tokenQuery: String = null
   ): StrategyOptionsWithRequest = {
-    val __obj = js.Dynamic.literal(passReqToCallback = passReqToCallback)
-    if (!js.isUndefined(failedOnMissing)) __obj.updateDynamic("failedOnMissing")(failedOnMissing)
-    if (tokenField != null) __obj.updateDynamic("tokenField")(tokenField)
-    if (tokenHeader != null) __obj.updateDynamic("tokenHeader")(tokenHeader)
-    if (tokenParams != null) __obj.updateDynamic("tokenParams")(tokenParams)
-    if (tokenQuery != null) __obj.updateDynamic("tokenQuery")(tokenQuery)
+    val __obj = js.Dynamic.literal(passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
+    if (!js.isUndefined(failedOnMissing)) __obj.updateDynamic("failedOnMissing")(failedOnMissing.asInstanceOf[js.Any])
+    if (tokenField != null) __obj.updateDynamic("tokenField")(tokenField.asInstanceOf[js.Any])
+    if (tokenHeader != null) __obj.updateDynamic("tokenHeader")(tokenHeader.asInstanceOf[js.Any])
+    if (tokenParams != null) __obj.updateDynamic("tokenParams")(tokenParams.asInstanceOf[js.Any])
+    if (tokenQuery != null) __obj.updateDynamic("tokenQuery")(tokenQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrategyOptionsWithRequest]
   }
 }

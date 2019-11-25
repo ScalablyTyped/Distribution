@@ -13,8 +13,8 @@ object Anon_Async {
   @scala.inline
   def apply(async: js.UndefOr[Boolean] = js.undefined, name: String = null): Anon_Async = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Async]
   }
 }

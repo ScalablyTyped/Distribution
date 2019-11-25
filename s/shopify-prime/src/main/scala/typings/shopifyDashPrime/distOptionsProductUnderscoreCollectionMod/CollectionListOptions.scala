@@ -34,17 +34,17 @@ object CollectionListOptions {
     title: String = null
   ): CollectionListOptions = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (handle != null) __obj.updateDynamic("handle")(handle)
-    if (ids != null) __obj.updateDynamic("ids")(ids)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
+    if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (product_id != null) __obj.updateDynamic("product_id")(product_id.asInstanceOf[js.Any])
-    if (published_at_max != null) __obj.updateDynamic("published_at_max")(published_at_max)
-    if (published_at_min != null) __obj.updateDynamic("published_at_min")(published_at_min)
+    if (published_at_max != null) __obj.updateDynamic("published_at_max")(published_at_max.asInstanceOf[js.Any])
+    if (published_at_min != null) __obj.updateDynamic("published_at_min")(published_at_min.asInstanceOf[js.Any])
     if (published_status != null) __obj.updateDynamic("published_status")(published_status.asInstanceOf[js.Any])
     if (since_id != null) __obj.updateDynamic("since_id")(since_id.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionListOptions]
   }
 }

@@ -79,12 +79,12 @@ object Anon_ {
     `<@`: js.Any,
     `@>`: js.Any
   ): Anon_ = {
-    val __obj = js.Dynamic.literal($between = $between, $contained = $contained, $contains = $contains, $gt = $gt.asInstanceOf[js.Any], $gte = $gte.asInstanceOf[js.Any], $iLike = $iLike.asInstanceOf[js.Any], $ilike = $ilike.asInstanceOf[js.Any], $in = $in.asInstanceOf[js.Any], $like = $like.asInstanceOf[js.Any], $lt = $lt.asInstanceOf[js.Any], $lte = $lte.asInstanceOf[js.Any], $ne = $ne.asInstanceOf[js.Any], $not = $not.asInstanceOf[js.Any], $notBetween = $notBetween, $notILike = $notILike.asInstanceOf[js.Any], $notIn = $notIn.asInstanceOf[js.Any], $notLike = $notLike.asInstanceOf[js.Any], $overlap = $overlap)
-    __obj.updateDynamic("!..")(`!..`)
-    __obj.updateDynamic("&&")(`&&`)
-    __obj.updateDynamic("..")(`..`)
-    __obj.updateDynamic("<@")(`<@`)
-    __obj.updateDynamic("@>")(`@>`)
+    val __obj = js.Dynamic.literal($between = $between.asInstanceOf[js.Any], $contained = $contained.asInstanceOf[js.Any], $contains = $contains.asInstanceOf[js.Any], $gt = $gt.asInstanceOf[js.Any], $gte = $gte.asInstanceOf[js.Any], $iLike = $iLike.asInstanceOf[js.Any], $ilike = $ilike.asInstanceOf[js.Any], $in = $in.asInstanceOf[js.Any], $like = $like.asInstanceOf[js.Any], $lt = $lt.asInstanceOf[js.Any], $lte = $lte.asInstanceOf[js.Any], $ne = $ne.asInstanceOf[js.Any], $not = $not.asInstanceOf[js.Any], $notBetween = $notBetween.asInstanceOf[js.Any], $notILike = $notILike.asInstanceOf[js.Any], $notIn = $notIn.asInstanceOf[js.Any], $notLike = $notLike.asInstanceOf[js.Any], $overlap = $overlap.asInstanceOf[js.Any])
+    __obj.updateDynamic("!..")(`!..`.asInstanceOf[js.Any])
+    __obj.updateDynamic("&&")(`&&`.asInstanceOf[js.Any])
+    __obj.updateDynamic("..")(`..`.asInstanceOf[js.Any])
+    __obj.updateDynamic("<@")(`<@`.asInstanceOf[js.Any])
+    __obj.updateDynamic("@>")(`@>`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_]
   }
 }

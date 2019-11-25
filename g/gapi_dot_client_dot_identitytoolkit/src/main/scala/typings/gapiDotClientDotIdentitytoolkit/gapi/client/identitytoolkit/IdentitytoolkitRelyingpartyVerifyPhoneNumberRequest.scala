@@ -27,13 +27,13 @@ object IdentitytoolkitRelyingpartyVerifyPhoneNumberRequest {
     verificationProof: String = null
   ): IdentitytoolkitRelyingpartyVerifyPhoneNumberRequest = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
-    if (operation != null) __obj.updateDynamic("operation")(operation)
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
-    if (sessionInfo != null) __obj.updateDynamic("sessionInfo")(sessionInfo)
-    if (temporaryProof != null) __obj.updateDynamic("temporaryProof")(temporaryProof)
-    if (verificationProof != null) __obj.updateDynamic("verificationProof")(verificationProof)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
+    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
+    if (sessionInfo != null) __obj.updateDynamic("sessionInfo")(sessionInfo.asInstanceOf[js.Any])
+    if (temporaryProof != null) __obj.updateDynamic("temporaryProof")(temporaryProof.asInstanceOf[js.Any])
+    if (verificationProof != null) __obj.updateDynamic("verificationProof")(verificationProof.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentitytoolkitRelyingpartyVerifyPhoneNumberRequest]
   }
 }

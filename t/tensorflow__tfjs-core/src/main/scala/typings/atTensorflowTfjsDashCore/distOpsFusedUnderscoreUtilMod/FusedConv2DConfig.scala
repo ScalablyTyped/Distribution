@@ -27,10 +27,10 @@ object FusedConv2DConfig {
     bias: Tensor[Rank] = null,
     preluActivationWeights: Tensor[Rank] = null
   ): FusedConv2DConfig = {
-    val __obj = js.Dynamic.literal(convInfo = convInfo, filter = filter, input = input)
-    if (activation != null) __obj.updateDynamic("activation")(activation)
-    if (bias != null) __obj.updateDynamic("bias")(bias)
-    if (preluActivationWeights != null) __obj.updateDynamic("preluActivationWeights")(preluActivationWeights)
+    val __obj = js.Dynamic.literal(convInfo = convInfo.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any])
+    if (activation != null) __obj.updateDynamic("activation")(activation.asInstanceOf[js.Any])
+    if (bias != null) __obj.updateDynamic("bias")(bias.asInstanceOf[js.Any])
+    if (preluActivationWeights != null) __obj.updateDynamic("preluActivationWeights")(preluActivationWeights.asInstanceOf[js.Any])
     __obj.asInstanceOf[FusedConv2DConfig]
   }
 }

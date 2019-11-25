@@ -14,7 +14,7 @@ trait MessagingStatics extends js.Object {
 object MessagingStatics {
   @scala.inline
   def apply(RemoteMessage: Instantiable0[RemoteMessage]): MessagingStatics = {
-    val __obj = js.Dynamic.literal(RemoteMessage = RemoteMessage)
+    val __obj = js.Dynamic.literal(RemoteMessage = RemoteMessage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MessagingStatics]
   }

@@ -25,9 +25,9 @@ object CreateShortDynamicLinkRequest {
   @scala.inline
   def apply(dynamicLinkInfo: DynamicLinkInfo = null, longDynamicLink: String = null, suffix: Suffix = null): CreateShortDynamicLinkRequest = {
     val __obj = js.Dynamic.literal()
-    if (dynamicLinkInfo != null) __obj.updateDynamic("dynamicLinkInfo")(dynamicLinkInfo)
-    if (longDynamicLink != null) __obj.updateDynamic("longDynamicLink")(longDynamicLink)
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (dynamicLinkInfo != null) __obj.updateDynamic("dynamicLinkInfo")(dynamicLinkInfo.asInstanceOf[js.Any])
+    if (longDynamicLink != null) __obj.updateDynamic("longDynamicLink")(longDynamicLink.asInstanceOf[js.Any])
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateShortDynamicLinkRequest]
   }
 }

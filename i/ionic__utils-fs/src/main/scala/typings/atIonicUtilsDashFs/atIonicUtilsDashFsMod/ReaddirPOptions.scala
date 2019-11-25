@@ -31,7 +31,7 @@ object ReaddirPOptions {
     val __obj = js.Dynamic.literal()
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (walkerOptions != null) __obj.updateDynamic("walkerOptions")(walkerOptions)
+    if (walkerOptions != null) __obj.updateDynamic("walkerOptions")(walkerOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaddirPOptions]
   }
 }

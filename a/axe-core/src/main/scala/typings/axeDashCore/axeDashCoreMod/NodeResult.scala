@@ -27,10 +27,10 @@ object NodeResult {
     impact: ImpactValue = null,
     xpath: js.Array[String] = null
   ): NodeResult = {
-    val __obj = js.Dynamic.literal(all = all, any = any, html = html, none = none, target = target)
-    if (failureSummary != null) __obj.updateDynamic("failureSummary")(failureSummary)
-    if (impact != null) __obj.updateDynamic("impact")(impact)
-    if (xpath != null) __obj.updateDynamic("xpath")(xpath)
+    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], any = any.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    if (failureSummary != null) __obj.updateDynamic("failureSummary")(failureSummary.asInstanceOf[js.Any])
+    if (impact != null) __obj.updateDynamic("impact")(impact.asInstanceOf[js.Any])
+    if (xpath != null) __obj.updateDynamic("xpath")(xpath.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeResult]
   }
 }

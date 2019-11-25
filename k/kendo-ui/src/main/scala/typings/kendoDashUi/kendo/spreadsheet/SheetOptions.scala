@@ -14,7 +14,7 @@ object SheetOptions {
   def apply(change: /* e */ SheetChangeEvent => Unit = null, name: String = null): SheetOptions = {
     val __obj = js.Dynamic.literal()
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SheetOptions]
   }
 }

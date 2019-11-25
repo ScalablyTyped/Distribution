@@ -14,8 +14,8 @@ trait EventWatcherOptions extends js.Object {
 object EventWatcherOptions {
   @scala.inline
   def apply(emitter: js.Any => Unit, event_selector: String, update: js.Any => Unit, key: String = null): EventWatcherOptions = {
-    val __obj = js.Dynamic.literal(emitter = js.Any.fromFunction1(emitter), event_selector = event_selector, update = js.Any.fromFunction1(update))
-    if (key != null) __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(emitter = js.Any.fromFunction1(emitter), event_selector = event_selector.asInstanceOf[js.Any], update = js.Any.fromFunction1(update))
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventWatcherOptions]
   }
 }

@@ -22,7 +22,7 @@ trait AfterUpdateEvent extends js.Object {
 object AfterUpdateEvent {
   @scala.inline
   def apply(name: String, source: js.Any, timestamp: Double): AfterUpdateEvent = {
-    val __obj = js.Dynamic.literal(name = name, source = source, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AfterUpdateEvent]
   }

@@ -11,6 +11,10 @@ package object hapiMod {
   import typings.catbox.catboxMod.PolicyOptionVariants
   import typings.hapi.Anon_Cache
   import typings.hapi.Anon_Constructor
+  import typings.hapi.Anon_Default
+  import typings.hapi.Anon_ExpiresAt
+  import typings.hapi.Anon_ExpiresAtExpiresIn
+  import typings.hapi.Anon_ExpiresAtExpiresInUndefined
   import typings.hapi.hapiMod.Lifecycle.Method
   import typings.hapi.hapiMod.Util.Dictionary
   import typings.hapi.hapiNumbers.`false`
@@ -48,6 +52,7 @@ package object hapiMod {
   */
   type RouteOptionsAccessObject = _RouteOptionsAccessObject | (RouteOptionsAccessScopeObject with RouteOptionsAccessEntityObject)
   type RouteOptionsAccessScope = `false` | String | js.Array[String]
+  type RouteOptionsCache = Anon_Default with (Anon_ExpiresAt | Anon_ExpiresAtExpiresIn | Anon_ExpiresAtExpiresInUndefined)
   type RouteOptionsPreAllOptions = RouteOptionsPreObject | js.Array[RouteOptionsPreObject] | Method
   type RouteOptionsPreArray = js.Array[RouteOptionsPreAllOptions]
   type RouteOptionsResponseSchema = Boolean | ValidationObject | Schema | (js.Function2[

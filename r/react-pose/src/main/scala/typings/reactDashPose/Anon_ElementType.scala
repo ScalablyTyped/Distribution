@@ -14,7 +14,7 @@ trait Anon_ElementType extends js.Object {
 object Anon_ElementType {
   @scala.inline
   def apply(elementType: js.Any, poseConfig: DomPopmotionConfig | ConfigFactory): Anon_ElementType = {
-    val __obj = js.Dynamic.literal(elementType = elementType, poseConfig = poseConfig.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(elementType = elementType.asInstanceOf[js.Any], poseConfig = poseConfig.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ElementType]
   }

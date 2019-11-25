@@ -15,7 +15,7 @@ trait Anon_CODENAMEERROR extends js.Object {
 object Anon_CODENAMEERROR {
   @scala.inline
   def apply(CODENAME: InfiniteLeft with Infinite, ERROR: `Left is not finite`): Anon_CODENAMEERROR = {
-    val __obj = js.Dynamic.literal(CODENAME = CODENAME, ERROR = ERROR)
+    val __obj = js.Dynamic.literal(CODENAME = CODENAME.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CODENAMEERROR]
   }

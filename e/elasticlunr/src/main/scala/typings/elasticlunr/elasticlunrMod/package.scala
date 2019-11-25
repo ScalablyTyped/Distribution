@@ -11,7 +11,7 @@ package object elasticlunrMod {
 
   type DocumentReference = String | Double
   type EventHandler = js.Function1[/* repeated */ js.Any, Unit]
-  type FieldSearchConfig[T /* <: js.Object */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type FieldSearchConfig[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? {  bool? :elasticlunr.elasticlunr.Bool,   boost? :number,   expand? :boolean}}
     */ typings.elasticlunr.elasticlunrStrings.FieldSearchConfig with js.Any
   type IndexDocuments[T] = StringDictionary[T]

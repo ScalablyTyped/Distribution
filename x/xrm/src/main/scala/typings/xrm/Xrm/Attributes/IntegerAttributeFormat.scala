@@ -12,5 +12,14 @@ import scala.scalajs.js.annotation._
   - typings.xrm.xrmStrings.duration
   - typings.xrm.xrmStrings.none
 */
-trait IntegerAttributeFormat extends AttributeFormat
+trait IntegerAttributeFormat extends js.Object
+
+object IntegerAttributeFormat {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def duration: typings.xrm.xrmStrings.duration = this.cast("duration")
+  @scala.inline
+  def none: typings.xrm.xrmStrings.none = this.cast("none")
+}
 

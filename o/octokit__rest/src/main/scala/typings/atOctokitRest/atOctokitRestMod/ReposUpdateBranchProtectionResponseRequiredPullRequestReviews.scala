@@ -21,7 +21,7 @@ object ReposUpdateBranchProtectionResponseRequiredPullRequestReviews {
     required_approving_review_count: Double,
     url: String
   ): ReposUpdateBranchProtectionResponseRequiredPullRequestReviews = {
-    val __obj = js.Dynamic.literal(dismiss_stale_reviews = dismiss_stale_reviews, dismissal_restrictions = dismissal_restrictions, require_code_owner_reviews = require_code_owner_reviews, required_approving_review_count = required_approving_review_count, url = url)
+    val __obj = js.Dynamic.literal(dismiss_stale_reviews = dismiss_stale_reviews.asInstanceOf[js.Any], dismissal_restrictions = dismissal_restrictions.asInstanceOf[js.Any], require_code_owner_reviews = require_code_owner_reviews.asInstanceOf[js.Any], required_approving_review_count = required_approving_review_count.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposUpdateBranchProtectionResponseRequiredPullRequestReviews]
   }

@@ -15,8 +15,8 @@ object PlayerScoreListResponse {
   @scala.inline
   def apply(kind: String = null, submittedScores: js.Array[PlayerScoreResponse] = null): PlayerScoreListResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (submittedScores != null) __obj.updateDynamic("submittedScores")(submittedScores)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (submittedScores != null) __obj.updateDynamic("submittedScores")(submittedScores.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayerScoreListResponse]
   }
 }

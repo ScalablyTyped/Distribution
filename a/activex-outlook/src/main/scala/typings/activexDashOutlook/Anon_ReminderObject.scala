@@ -12,7 +12,7 @@ trait Anon_ReminderObject extends js.Object {
 object Anon_ReminderObject {
   @scala.inline
   def apply(ReminderObject: Reminder): Anon_ReminderObject = {
-    val __obj = js.Dynamic.literal(ReminderObject = ReminderObject)
+    val __obj = js.Dynamic.literal(ReminderObject = ReminderObject.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ReminderObject]
   }

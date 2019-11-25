@@ -23,9 +23,9 @@ object ErrorResponse {
   @scala.inline
   def apply(errorCode: String = null, errorMessage: String = null, httpStatus: String = null): ErrorResponse = {
     val __obj = js.Dynamic.literal()
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode)
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
-    if (httpStatus != null) __obj.updateDynamic("httpStatus")(httpStatus)
+    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
+    if (httpStatus != null) __obj.updateDynamic("httpStatus")(httpStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorResponse]
   }
 }

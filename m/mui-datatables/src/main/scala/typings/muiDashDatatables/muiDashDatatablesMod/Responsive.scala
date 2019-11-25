@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait Responsive extends js.Object
 
+object Responsive {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def scrollFullHeight: typings.muiDashDatatables.muiDashDatatablesStrings.scrollFullHeight = this.cast("scrollFullHeight")
+  @scala.inline
+  def scrollMaxHeight: typings.muiDashDatatables.muiDashDatatablesStrings.scrollMaxHeight = this.cast("scrollMaxHeight")
+  @scala.inline
+  def stacked: typings.muiDashDatatables.muiDashDatatablesStrings.stacked = this.cast("stacked")
+}
+

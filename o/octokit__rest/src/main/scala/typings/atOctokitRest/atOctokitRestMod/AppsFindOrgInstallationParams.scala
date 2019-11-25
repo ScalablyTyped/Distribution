@@ -11,7 +11,7 @@ trait AppsFindOrgInstallationParams extends js.Object {
 object AppsFindOrgInstallationParams {
   @scala.inline
   def apply(org: String): AppsFindOrgInstallationParams = {
-    val __obj = js.Dynamic.literal(org = org)
+    val __obj = js.Dynamic.literal(org = org.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AppsFindOrgInstallationParams]
   }

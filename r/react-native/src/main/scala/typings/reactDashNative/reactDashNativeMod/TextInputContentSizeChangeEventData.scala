@@ -12,7 +12,7 @@ trait TextInputContentSizeChangeEventData extends js.Object {
 object TextInputContentSizeChangeEventData {
   @scala.inline
   def apply(contentSize: Anon_Height): TextInputContentSizeChangeEventData = {
-    val __obj = js.Dynamic.literal(contentSize = contentSize)
+    val __obj = js.Dynamic.literal(contentSize = contentSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TextInputContentSizeChangeEventData]
   }

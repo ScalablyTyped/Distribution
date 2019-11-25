@@ -26,10 +26,10 @@ object TreeHeadProps {
     onExpandAll: /* repeated */ js.Any => Unit = null
   ): TreeHeadProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
     if (onExpandAll != null) __obj.updateDynamic("onExpandAll")(js.Any.fromFunction1(onExpandAll))
     __obj.asInstanceOf[TreeHeadProps]
   }

@@ -12,7 +12,7 @@ object Anon_Override {
   @scala.inline
   def apply(`override`: Boolean): Anon_Override = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("override")(`override`)
+    __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Override]
   }
 }

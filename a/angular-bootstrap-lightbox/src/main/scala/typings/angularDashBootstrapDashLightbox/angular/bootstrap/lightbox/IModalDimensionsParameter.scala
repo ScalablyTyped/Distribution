@@ -14,7 +14,7 @@ trait IModalDimensionsParameter extends js.Object {
 object IModalDimensionsParameter {
   @scala.inline
   def apply(imageDisplayHeight: Double, imageDisplayWidth: Double, windowHeight: Double, windowWidth: Double): IModalDimensionsParameter = {
-    val __obj = js.Dynamic.literal(imageDisplayHeight = imageDisplayHeight, imageDisplayWidth = imageDisplayWidth, windowHeight = windowHeight, windowWidth = windowWidth)
+    val __obj = js.Dynamic.literal(imageDisplayHeight = imageDisplayHeight.asInstanceOf[js.Any], imageDisplayWidth = imageDisplayWidth.asInstanceOf[js.Any], windowHeight = windowHeight.asInstanceOf[js.Any], windowWidth = windowWidth.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IModalDimensionsParameter]
   }

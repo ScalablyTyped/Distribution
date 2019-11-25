@@ -21,7 +21,7 @@ object Common {
     expandContext: Context = null
   ): Common = {
     val __obj = js.Dynamic.literal()
-    if (base != null) __obj.updateDynamic("base")(base)
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
     if (documentLoader != null) __obj.updateDynamic("documentLoader")(js.Any.fromFunction2(documentLoader))
     if (expandContext != null) __obj.updateDynamic("expandContext")(expandContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[Common]

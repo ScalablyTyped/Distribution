@@ -11,7 +11,7 @@ trait SearchOptions extends js.Object {
 object SearchOptions {
   @scala.inline
   def apply(term: String): SearchOptions = {
-    val __obj = js.Dynamic.literal(term = term)
+    val __obj = js.Dynamic.literal(term = term.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SearchOptions]
   }

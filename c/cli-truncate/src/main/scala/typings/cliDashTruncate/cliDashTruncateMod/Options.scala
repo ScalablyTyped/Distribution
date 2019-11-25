@@ -54,8 +54,8 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferTruncationOnSpace)) __obj.updateDynamic("preferTruncationOnSpace")(preferTruncationOnSpace)
-    if (!js.isUndefined(space)) __obj.updateDynamic("space")(space)
+    if (!js.isUndefined(preferTruncationOnSpace)) __obj.updateDynamic("preferTruncationOnSpace")(preferTruncationOnSpace.asInstanceOf[js.Any])
+    if (!js.isUndefined(space)) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -34,12 +34,12 @@ object DotenvSafeOptions {
     sample: String = null
   ): DotenvSafeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEmptyValues)) __obj.updateDynamic("allowEmptyValues")(allowEmptyValues)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (example != null) __obj.updateDynamic("example")(example)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (sample != null) __obj.updateDynamic("sample")(sample)
+    if (!js.isUndefined(allowEmptyValues)) __obj.updateDynamic("allowEmptyValues")(allowEmptyValues.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (example != null) __obj.updateDynamic("example")(example.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (sample != null) __obj.updateDynamic("sample")(sample.asInstanceOf[js.Any])
     __obj.asInstanceOf[DotenvSafeOptions]
   }
 }

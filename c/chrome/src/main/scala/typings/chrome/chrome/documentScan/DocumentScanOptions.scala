@@ -16,7 +16,7 @@ object DocumentScanOptions {
   def apply(maxImages: Int | Double = null, mimeTypes: js.Array[String] = null): DocumentScanOptions = {
     val __obj = js.Dynamic.literal()
     if (maxImages != null) __obj.updateDynamic("maxImages")(maxImages.asInstanceOf[js.Any])
-    if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes)
+    if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentScanOptions]
   }
 }

@@ -27,7 +27,7 @@ object Anon_Color {
     x: Double,
     y: Double
   ): Anon_Color[T] = {
-    val __obj = js.Dynamic.literal(color = color, height = height, id = id, index = index, key = key, width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Color[T]]
   }

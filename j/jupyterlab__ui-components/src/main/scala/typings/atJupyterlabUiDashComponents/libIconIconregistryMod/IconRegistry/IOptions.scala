@@ -26,8 +26,8 @@ object IOptions {
   @scala.inline
   def apply(debug: js.UndefOr[Boolean] = js.undefined, initialIcons: js.Array[IModel] = null): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (initialIcons != null) __obj.updateDynamic("initialIcons")(initialIcons)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (initialIcons != null) __obj.updateDynamic("initialIcons")(initialIcons.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

@@ -29,7 +29,7 @@ object ChartMediaInfoValueSeriesProperties {
   @scala.inline
   def apply(tooltip: String = null, x: Int | Double = null, y: Int | Double = null): ChartMediaInfoValueSeriesProperties = {
     val __obj = js.Dynamic.literal()
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartMediaInfoValueSeriesProperties]

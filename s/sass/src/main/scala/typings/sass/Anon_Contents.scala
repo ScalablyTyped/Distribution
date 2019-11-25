@@ -12,7 +12,7 @@ trait Anon_Contents extends _ImporterReturnType {
 object Anon_Contents {
   @scala.inline
   def apply(contents: String): Anon_Contents = {
-    val __obj = js.Dynamic.literal(contents = contents)
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Contents]
   }

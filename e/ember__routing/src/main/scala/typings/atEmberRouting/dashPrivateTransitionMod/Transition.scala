@@ -33,8 +33,8 @@ trait Transition extends js.Object {
 object Transition {
   @scala.inline
   def apply(abort: () => Transition, retry: () => Transition, to: RouteInfo, from: RouteInfo = null): Transition = {
-    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), retry = js.Any.fromFunction0(retry), to = to)
-    if (from != null) __obj.updateDynamic("from")(from)
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), retry = js.Any.fromFunction0(retry), to = to.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transition]
   }
 }

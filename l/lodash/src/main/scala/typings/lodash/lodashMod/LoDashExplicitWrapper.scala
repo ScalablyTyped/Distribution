@@ -153,7 +153,9 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.at
     */
   def at[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]], props: Many[String]*): LoDashExplicitWrapper[
-    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   /**
     * @see _.at
@@ -263,7 +265,9 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   def countBy[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]]): LoDashExplicitWrapper[Dictionary[Double]] = js.native
   def countBy[T /* <: js.Object */](
     `this`: LoDashExplicitWrapper[js.UndefOr[T | Null]],
-    iteratee: ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    iteratee: ValueIteratee[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ): LoDashExplicitWrapper[Dictionary[Double]] = js.native
   /**
     * @see _.countBy
@@ -661,7 +665,9 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   def filter(`this`: LoDashExplicitWrapper[js.UndefOr[String | Null]]): LoDashExplicitWrapper[js.Array[String]] = js.native
   def filter(`this`: LoDashExplicitWrapper[js.UndefOr[String | Null]], predicate: StringIterator[Boolean]): LoDashExplicitWrapper[js.Array[String]] = js.native
   def filter[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]], predicate: ObjectIterateeCustom[T, Boolean]): LoDashExplicitWrapper[
-    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   /**
     * @see _.filter
@@ -683,28 +689,36 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     */
   @JSName("filter")
   def filter_T_Object[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]]): LoDashExplicitWrapper[
-    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   /**
     * @see _.filter
     */
   @JSName("filter")
-  def filter_T_ObjectS_Any[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]], predicate: ObjectIteratorTypeGuard[T, S]): LoDashExplicitWrapper[js.Array[S]] = js.native
+  def filter_T_ObjectS_Any[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]], predicate: ObjectIteratorTypeGuard[T, S]): LoDashExplicitWrapper[js.Array[S]] = js.native
   /**
     * @see _.find
     */
   def find[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]]): LoDashExplicitWrapper[
-    js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.UndefOr[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   def find[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]], predicate: ObjectIterateeCustom[T, Boolean]): LoDashExplicitWrapper[
-    js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.UndefOr[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   def find[T /* <: js.Object */](
     `this`: LoDashExplicitWrapper[js.UndefOr[T | Null]],
     predicate: ObjectIterateeCustom[T, Boolean],
     fromIndex: Double
   ): LoDashExplicitWrapper[
-    js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.UndefOr[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   /**
     * @see _.find
@@ -737,17 +751,23 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.findLast
     */
   def findLast[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]]): LoDashExplicitWrapper[
-    js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.UndefOr[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   def findLast[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]], predicate: ObjectIterateeCustom[T, Boolean]): LoDashExplicitWrapper[
-    js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.UndefOr[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   def findLast[T /* <: js.Object */](
     `this`: LoDashExplicitWrapper[js.UndefOr[T | Null]],
     predicate: ObjectIterateeCustom[T, Boolean],
     fromIndex: Double
   ): LoDashExplicitWrapper[
-    js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.UndefOr[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   /**
     * @see _.findLast
@@ -796,9 +816,9 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.findLast
     */
   @JSName("findLast")
-  def findLast_T_ObjectS_Any[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]], predicate: ObjectIteratorTypeGuard[T, S]): LoDashExplicitWrapper[js.UndefOr[S]] = js.native
+  def findLast_T_ObjectS_Any[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]], predicate: ObjectIteratorTypeGuard[T, S]): LoDashExplicitWrapper[js.UndefOr[S]] = js.native
   @JSName("findLast")
-  def findLast_T_ObjectS_Any[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
+  def findLast_T_ObjectS_Any[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](
     `this`: LoDashExplicitWrapper[js.UndefOr[T | Null]],
     predicate: ObjectIteratorTypeGuard[T, S],
     fromIndex: Double
@@ -823,9 +843,9 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.find
     */
   @JSName("find")
-  def find_T_ObjectS_Any[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]], predicate: ObjectIteratorTypeGuard[T, S]): LoDashExplicitWrapper[js.UndefOr[S]] = js.native
+  def find_T_ObjectS_Any[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]], predicate: ObjectIteratorTypeGuard[T, S]): LoDashExplicitWrapper[js.UndefOr[S]] = js.native
   @JSName("find")
-  def find_T_ObjectS_Any[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
+  def find_T_ObjectS_Any[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](
     `this`: LoDashExplicitWrapper[js.UndefOr[T | Null]],
     predicate: ObjectIteratorTypeGuard[T, S],
     fromIndex: Double
@@ -1544,10 +1564,10 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.get
     */
   def get[TKey /* <: String */](path: TKey): LoDashExplicitWrapper[
-    /* import warning: ImportType.apply Failed type conversion: TValue[TKey] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: TValue[TKey] */ js.Any
   ] = js.native
   def get[TKey /* <: String */](path: js.Array[TKey]): LoDashExplicitWrapper[
-    /* import warning: ImportType.apply Failed type conversion: TValue[TKey] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: TValue[TKey] */ js.Any
   ] = js.native
   /**
     * @see _.get
@@ -1560,20 +1580,20 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.get
     */
-  def get[TKey1 /* <: String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TValue[TKey1] */ js.Any */](path: js.Tuple2[TKey1, TKey2]): LoDashExplicitWrapper[
-    /* import warning: ImportType.apply Failed type conversion: TValue[TKey1][TKey2] */ js.Any
+  def get[TKey1 /* <: String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TValue[TKey1] */ js.Any */](path: js.Tuple2[TKey1, TKey2]): LoDashExplicitWrapper[
+    /* import warning: importer.ImportType#apply Failed type conversion: TValue[TKey1][TKey2] */ js.Any
   ] = js.native
   /**
     * @see _.get
     */
   def get[TObject /* <: js.Object */, TKey /* <: String */](`this`: LoDashExplicitWrapper[js.UndefOr[TObject | Null]], path: TKey): LoDashExplicitWrapper[
     js.UndefOr[
-      /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
     ]
   ] = js.native
   def get[TObject /* <: js.Object */, TKey /* <: String */](`this`: LoDashExplicitWrapper[js.UndefOr[TObject | Null]], path: js.Array[TKey]): LoDashExplicitWrapper[
     js.UndefOr[
-      /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any
     ]
   ] = js.native
   /**
@@ -1587,15 +1607,15 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.get
     */
-  def get[TKey1 /* <: String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TValue[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TValue[TKey1][TKey2] */ js.Any */](path: js.Tuple3[TKey1, TKey2, TKey3]): LoDashExplicitWrapper[
-    /* import warning: ImportType.apply Failed type conversion: TValue[TKey1][TKey2][TKey3] */ js.Any
+  def get[TKey1 /* <: String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TValue[TKey1] */ js.Any */, TKey3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TValue[TKey1][TKey2] */ js.Any */](path: js.Tuple3[TKey1, TKey2, TKey3]): LoDashExplicitWrapper[
+    /* import warning: importer.ImportType#apply Failed type conversion: TValue[TKey1][TKey2][TKey3] */ js.Any
   ] = js.native
   /**
     * @see _.get
     */
   def get[TObject /* <: js.Object */, TKey /* <: String */, TDefault](`this`: LoDashExplicitWrapper[js.UndefOr[TObject | Null]], path: TKey, defaultValue: TDefault): LoDashExplicitWrapper[
     (Exclude[
-      /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any, 
       js.UndefOr[scala.Nothing]
     ]) | TDefault
   ] = js.native
@@ -1605,79 +1625,79 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     defaultValue: TDefault
   ): LoDashExplicitWrapper[
     (Exclude[
-      /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any, 
       js.UndefOr[scala.Nothing]
     ]) | TDefault
   ] = js.native
   /**
     * @see _.get
     */
-  def get[TObject /* <: js.Object */, TKey1 /* <: String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](`this`: LoDashExplicitWrapper[js.UndefOr[TObject | Null]], path: js.Tuple2[TKey1, TKey2]): LoDashExplicitWrapper[
+  def get[TObject /* <: js.Object */, TKey1 /* <: String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1] */ js.Any */](`this`: LoDashExplicitWrapper[js.UndefOr[TObject | Null]], path: js.Tuple2[TKey1, TKey2]): LoDashExplicitWrapper[
     js.UndefOr[
-      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any
     ]
   ] = js.native
   /**
     * @see _.get
     */
-  def get[TKey1 /* <: String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TValue[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TValue[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TValue[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): LoDashExplicitWrapper[
-    /* import warning: ImportType.apply Failed type conversion: TValue[TKey1][TKey2][TKey3][TKey4] */ js.Any
+  def get[TKey1 /* <: String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TValue[TKey1] */ js.Any */, TKey3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TValue[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TValue[TKey1][TKey2][TKey3] */ js.Any */](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]): LoDashExplicitWrapper[
+    /* import warning: importer.ImportType#apply Failed type conversion: TValue[TKey1][TKey2][TKey3][TKey4] */ js.Any
   ] = js.native
   /**
     * @see _.get
     */
-  def get[TObject /* <: js.Object */, TKey1 /* <: String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TDefault](
+  def get[TObject /* <: js.Object */, TKey1 /* <: String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TDefault](
     `this`: LoDashExplicitWrapper[js.UndefOr[TObject | Null]],
     path: js.Tuple2[TKey1, TKey2],
     defaultValue: TDefault
   ): LoDashExplicitWrapper[
     (Exclude[
-      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey1][TKey2] */ js.Any, 
       js.UndefOr[scala.Nothing]
     ]) | TDefault
   ] = js.native
   /**
     * @see _.get
     */
-  def get[TObject /* <: js.Object */, TKey1 /* <: String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](`this`: LoDashExplicitWrapper[js.UndefOr[TObject | Null]], path: js.Tuple3[TKey1, TKey2, TKey3]): LoDashExplicitWrapper[
+  def get[TObject /* <: js.Object */, TKey1 /* <: String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */](`this`: LoDashExplicitWrapper[js.UndefOr[TObject | Null]], path: js.Tuple3[TKey1, TKey2, TKey3]): LoDashExplicitWrapper[
     js.UndefOr[
-      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any
     ]
   ] = js.native
   /**
     * @see _.get
     */
-  def get[TObject /* <: js.Object */, TKey1 /* <: String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TDefault](
+  def get[TObject /* <: js.Object */, TKey1 /* <: String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TDefault](
     `this`: LoDashExplicitWrapper[js.UndefOr[TObject | Null]],
     path: js.Tuple3[TKey1, TKey2, TKey3],
     defaultValue: TDefault
   ): LoDashExplicitWrapper[
     (Exclude[
-      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any, 
       js.UndefOr[scala.Nothing]
     ]) | TDefault
   ] = js.native
   /**
     * @see _.get
     */
-  def get[TObject /* <: js.Object */, TKey1 /* <: String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](
+  def get[TObject /* <: js.Object */, TKey1 /* <: String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */](
     `this`: LoDashExplicitWrapper[js.UndefOr[TObject | Null]],
     path: js.Tuple4[TKey1, TKey2, TKey3, TKey4]
   ): LoDashExplicitWrapper[
     js.UndefOr[
-      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any
     ]
   ] = js.native
   /**
     * @see _.get
     */
-  def get[TObject /* <: js.Object */, TKey1 /* <: String */, TKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */, TDefault](
+  def get[TObject /* <: js.Object */, TKey1 /* <: String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1] */ js.Any */, TKey3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof TObject[TKey1][TKey2][TKey3] */ js.Any */, TDefault](
     `this`: LoDashExplicitWrapper[js.UndefOr[TObject | Null]],
     path: js.Tuple4[TKey1, TKey2, TKey3, TKey4],
     defaultValue: TDefault
   ): LoDashExplicitWrapper[
     (Exclude[
-      /* import warning: ImportType.apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey1][TKey2][TKey3][TKey4] */ js.Any, 
       js.UndefOr[scala.Nothing]
     ]) | TDefault
   ] = js.native
@@ -1686,15 +1706,21 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     */
   def groupBy[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]]): LoDashExplicitWrapper[
     Dictionary[
-      js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+      js.Array[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+      ]
     ]
   ] = js.native
   def groupBy[T /* <: js.Object */](
     `this`: LoDashExplicitWrapper[js.UndefOr[T | Null]],
-    iteratee: ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    iteratee: ValueIteratee[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ): LoDashExplicitWrapper[
     Dictionary[
-      js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+      js.Array[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+      ]
     ]
   ] = js.native
   /**
@@ -1831,7 +1857,9 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   def invertBy[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]]): LoDashExplicitWrapper[Dictionary[js.Array[String]]] = js.native
   def invertBy[T /* <: js.Object */](
     `this`: LoDashExplicitWrapper[js.UndefOr[T | Null]],
-    interatee: ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    interatee: ValueIteratee[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ): LoDashExplicitWrapper[Dictionary[js.Array[String]]] = js.native
   /**
     * @see _.invertBy
@@ -2021,16 +2049,20 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.keyBy
     */
   def keyBy[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]]): LoDashExplicitWrapper[
-    Dictionary[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    Dictionary[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   def keyBy[T /* <: js.Object */](
     `this`: LoDashExplicitWrapper[js.UndefOr[T | Null]],
     iteratee: ValueIterateeCustom[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
       PropertyName
     ]
   ): LoDashExplicitWrapper[
-    Dictionary[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    Dictionary[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   /**
     * @see _.keyBy
@@ -2094,7 +2126,9 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     `this`: LoDashExplicitWrapper[js.UndefOr[List[T] | Dictionary[T] | NumericDictionary[T] | Null]],
     iteratee: K
   ): LoDashExplicitWrapper[
-    js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ]
   ] = js.native
   /**
     * @see _.map
@@ -2104,10 +2138,14 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.mapKeys
     */
   def mapKeys[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]]): LoDashExplicitWrapper[
-    Dictionary[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    Dictionary[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   def mapKeys[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]], iteratee: ObjectIteratee[T]): LoDashExplicitWrapper[
-    Dictionary[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    Dictionary[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   /**
     * @see _.mapKeys
@@ -2128,7 +2166,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.mapValues
     */
   def mapValues[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]], iteratee: String): LoDashExplicitWrapper[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}
     */ typings.lodash.lodashStrings.LoDashExplicitWrapper with js.Any
   ] = js.native
@@ -2136,7 +2174,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.mapValues
     */
   def mapValues[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]], iteratee: js.Object): LoDashExplicitWrapper[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: boolean}
     */ typings.lodash.lodashStrings.LoDashExplicitWrapper with js.Any
   ] = js.native
@@ -2149,7 +2187,9 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     `this`: LoDashExplicitWrapper[js.UndefOr[Dictionary[T] | NumericDictionary[T] | Null]],
     iteratee: TKey
   ): LoDashExplicitWrapper[
-    Dictionary[/* import warning: ImportType.apply Failed type conversion: T[TKey] */ js.Any]
+    Dictionary[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
+    ]
   ] = js.native
   /**
     * @see _.mapValues
@@ -2198,7 +2238,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     */
   @JSName("mapValues")
   def mapValues_T_ObjectTResult[T /* <: js.Object */, TResult](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]], callback: ObjectIterator[T, TResult]): LoDashExplicitWrapper[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: TResult}
     */ typings.lodash.lodashStrings.LoDashExplicitWrapper with js.Any
   ] = js.native
@@ -2365,7 +2405,9 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     */
   def omitBy[T /* <: js.Object */](
     `this`: LoDashExplicitWrapper[js.UndefOr[T | Null]],
-    predicate: ValueKeyIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    predicate: ValueKeyIteratee[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ): LoDashExplicitWrapper[PartialObject[T]] = js.native
   @JSName("omitBy")
   def omitBy_T[T](
@@ -2386,20 +2428,26 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.orderBy
     */
   def orderBy[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]]): LoDashExplicitWrapper[
-    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   def orderBy[T /* <: js.Object */](
     `this`: LoDashExplicitWrapper[js.UndefOr[Null | T]],
     iteratees: Many[ObjectIteratee[T] | (ObjectIterator[T, NotVoid])]
   ): LoDashExplicitWrapper[
-    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   def orderBy[T /* <: js.Object */](
     `this`: LoDashExplicitWrapper[js.UndefOr[Null | T]],
     iteratees: Many[ObjectIteratee[T] | (ObjectIterator[T, NotVoid])],
     orders: Many[Boolean | asc | desc]
   ): LoDashExplicitWrapper[
-    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   /**
     * @see _.orderBy
@@ -2859,7 +2907,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   def partition[T](
     `this`: LoDashExplicitWrapper[js.UndefOr[List[T] | Null | T]],
     callback: ValueIteratee[
-      (/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any) | T
+      (/* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any) | T
     ]
   ): LoDashExplicitWrapper[js.Tuple2[js.Array[T], js.Array[T]]] = js.native
   /**
@@ -2876,7 +2924,9 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   def pickBy[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]]): LoDashExplicitWrapper[PartialObject[T]] = js.native
   def pickBy[T /* <: js.Object */](
     `this`: LoDashExplicitWrapper[js.UndefOr[T | Null]],
-    predicate: ValueKeyIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    predicate: ValueKeyIteratee[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ): LoDashExplicitWrapper[PartialObject[T]] = js.native
   /**
     * @see _.pickBy
@@ -2955,12 +3005,14 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   def reduce[T /* <: js.Object */](
     `this`: LoDashExplicitWrapper[js.UndefOr[T | Null]],
     callback: MemoObjectIterator[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
       T
     ]
   ): LoDashExplicitWrapper[
-    js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.UndefOr[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   /**
     * @see _.reduce
@@ -2968,7 +3020,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   def reduce[T /* <: js.Object */, TResult](
     `this`: LoDashExplicitWrapper[js.UndefOr[T | Null]],
     callback: MemoObjectIterator[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult, 
       T
     ],
@@ -2980,12 +3032,14 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   def reduceRight[T /* <: js.Object */](
     `this`: LoDashExplicitWrapper[js.UndefOr[T | Null]],
     callback: MemoObjectIterator[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
       T
     ]
   ): LoDashExplicitWrapper[
-    js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.UndefOr[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   /**
     * @see _.reduceRight
@@ -2993,7 +3047,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   def reduceRight[T /* <: js.Object */, TResult](
     `this`: LoDashExplicitWrapper[js.UndefOr[T | Null]],
     callback: MemoObjectIterator[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult, 
       T
     ],
@@ -3039,7 +3093,9 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   def reject(`this`: LoDashExplicitWrapper[js.UndefOr[String | Null]]): LoDashExplicitWrapper[js.Array[String]] = js.native
   def reject(`this`: LoDashExplicitWrapper[js.UndefOr[String | Null]], predicate: StringIterator[Boolean]): LoDashExplicitWrapper[js.Array[String]] = js.native
   def reject[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]], predicate: ObjectIterateeCustom[T, Boolean]): LoDashExplicitWrapper[
-    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   /**
     * @see _.reject
@@ -3056,7 +3112,9 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     */
   @JSName("reject")
   def reject_T_Object[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]]): LoDashExplicitWrapper[
-    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   /**
     * @see _.remove
@@ -3100,16 +3158,22 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.sample
     */
   def sample[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]]): LoDashExplicitWrapper[
-    js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.UndefOr[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   /**
     * @see _.sampleSize
     */
   def sampleSize[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]]): LoDashExplicitWrapper[
-    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   def sampleSize[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]], n: Double): LoDashExplicitWrapper[
-    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   /**
     * @see _.sampleSize
@@ -3152,7 +3216,9 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.shuffle
     */
   def shuffle[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]]): LoDashExplicitWrapper[
-    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   /**
     * @see _.shuffle
@@ -3197,7 +3263,9 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.sortBy
     */
   def sortBy[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]], iteratees: Many[ObjectIteratee[T]]*): LoDashExplicitWrapper[
-    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   /**
     * @see _.sortBy
@@ -3362,7 +3430,9 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.toArray
     */
   def toArray[T /* <: js.Object */](`this`: LoDashImplicitWrapper[T]): LoDashExplicitWrapper[
-    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   /**
     * @see _.toFinite
@@ -3713,13 +3783,17 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.values
     */
   def values[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]]): LoDashExplicitWrapper[
-    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   /**
     * @see _.valuesIn
     */
   def valuesIn[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | Null]]): LoDashExplicitWrapper[
-    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
   ] = js.native
   /**
     * @see _.valuesIn

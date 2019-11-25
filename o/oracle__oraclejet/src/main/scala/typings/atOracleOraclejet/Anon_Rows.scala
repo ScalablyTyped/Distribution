@@ -11,7 +11,7 @@ trait Anon_Rows[K, D] extends js.Object {
 object Anon_Rows {
   @scala.inline
   def apply[K, D](rows: Anon_DataTypesDragDragEndDragStart[K, D]): Anon_Rows[K, D] = {
-    val __obj = js.Dynamic.literal(rows = rows)
+    val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Rows[K, D]]
   }

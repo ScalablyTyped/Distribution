@@ -19,9 +19,9 @@ object Anon_Audiomuted {
     clips: js.Array[Anon_Length] = null,
     poster_frame_index: Int | Double = null
   ): Anon_Audiomuted = {
-    val __obj = js.Dynamic.literal(length = length)
-    if (!js.isUndefined(audio_muted)) __obj.updateDynamic("audio_muted")(audio_muted)
-    if (clips != null) __obj.updateDynamic("clips")(clips)
+    val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+    if (!js.isUndefined(audio_muted)) __obj.updateDynamic("audio_muted")(audio_muted.asInstanceOf[js.Any])
+    if (clips != null) __obj.updateDynamic("clips")(clips.asInstanceOf[js.Any])
     if (poster_frame_index != null) __obj.updateDynamic("poster_frame_index")(poster_frame_index.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Audiomuted]
   }

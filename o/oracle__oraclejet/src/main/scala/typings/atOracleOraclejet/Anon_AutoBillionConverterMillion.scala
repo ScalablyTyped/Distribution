@@ -30,7 +30,7 @@ object Anon_AutoBillionConverterMillion {
     scaling: none | thousand | million | billion | trillion | quadrillion | auto,
     style: js.Object
   ): Anon_AutoBillionConverterMillion = {
-    val __obj = js.Dynamic.literal(converter = converter, rendered = rendered.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scaling = scaling.asInstanceOf[js.Any], style = style)
+    val __obj = js.Dynamic.literal(converter = converter.asInstanceOf[js.Any], rendered = rendered.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scaling = scaling.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AutoBillionConverterMillion]
   }

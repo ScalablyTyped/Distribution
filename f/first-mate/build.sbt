@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "first-mate"
-version := "7.x-dt-20190212Z-134015"
+version := "7.x-dt-20190212Z-9dc9c8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "event-kit" % "2.4-dt-20180316Z-6e7856",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
+  "org.scalablytyped" %%% "event-kit" % "2.4-dt-20180316Z-1aaf8b",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

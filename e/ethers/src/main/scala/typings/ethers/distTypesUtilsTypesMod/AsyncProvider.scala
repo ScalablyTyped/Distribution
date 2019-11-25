@@ -20,9 +20,9 @@ object AsyncProvider {
     path: String = null
   ): AsyncProvider = {
     val __obj = js.Dynamic.literal(sendAsync = js.Any.fromFunction2(sendAsync))
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (!js.isUndefined(isMetaMask)) __obj.updateDynamic("isMetaMask")(isMetaMask)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMetaMask)) __obj.updateDynamic("isMetaMask")(isMetaMask.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncProvider]
   }
 }

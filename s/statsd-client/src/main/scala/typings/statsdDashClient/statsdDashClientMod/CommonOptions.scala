@@ -43,11 +43,11 @@ object CommonOptions {
     tcp: js.UndefOr[Boolean] = js.undefined
   ): CommonOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (socketTimeout != null) __obj.updateDynamic("socketTimeout")(socketTimeout.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags)
-    if (!js.isUndefined(tcp)) __obj.updateDynamic("tcp")(tcp)
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (!js.isUndefined(tcp)) __obj.updateDynamic("tcp")(tcp.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonOptions]
   }
 }

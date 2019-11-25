@@ -38,17 +38,17 @@ object Options {
     watchOptions: WatchOptions = null,
     writeToDisk: Boolean | (js.Function1[/* filename */ String, Boolean]) = null
   ): Options = {
-    val __obj = js.Dynamic.literal(publicPath = publicPath)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(publicPath = publicPath.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
-    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel)
-    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
+    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (reporter != null) __obj.updateDynamic("reporter")(js.Any.fromFunction2(reporter))
-    if (!js.isUndefined(serverSideRender)) __obj.updateDynamic("serverSideRender")(serverSideRender)
+    if (!js.isUndefined(serverSideRender)) __obj.updateDynamic("serverSideRender")(serverSideRender.asInstanceOf[js.Any])
     if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
-    if (watchOptions != null) __obj.updateDynamic("watchOptions")(watchOptions)
+    if (watchOptions != null) __obj.updateDynamic("watchOptions")(watchOptions.asInstanceOf[js.Any])
     if (writeToDisk != null) __obj.updateDynamic("writeToDisk")(writeToDisk.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

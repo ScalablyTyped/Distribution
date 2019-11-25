@@ -12,7 +12,7 @@ trait WriteFileResult extends js.Object {
 object WriteFileResult {
   @scala.inline
   def apply(content: js.Any, file: String): WriteFileResult = {
-    val __obj = js.Dynamic.literal(content = content, file = file)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WriteFileResult]
   }

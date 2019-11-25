@@ -13,8 +13,8 @@ object Anon_Command {
   @scala.inline
   def apply(command: js.Any = null, databaseName: String = null): Anon_Command = {
     val __obj = js.Dynamic.literal()
-    if (command != null) __obj.updateDynamic("command")(command)
-    if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName)
+    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
+    if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Command]
   }
 }

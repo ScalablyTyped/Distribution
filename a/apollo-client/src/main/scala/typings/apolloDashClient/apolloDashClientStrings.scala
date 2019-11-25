@@ -15,25 +15,35 @@ object apolloDashClientStrings {
   sealed trait `cache-and-network` extends WatchQueryFetchPolicy
   
   @js.native
-  sealed trait `cache-first` extends FetchPolicy
+  sealed trait `cache-first`
+    extends FetchPolicy
+       with WatchQueryFetchPolicy
   
   @js.native
-  sealed trait `cache-only` extends FetchPolicy
+  sealed trait `cache-only`
+    extends FetchPolicy
+       with WatchQueryFetchPolicy
   
   @js.native
   sealed trait ignore extends ErrorPolicy
   
   @js.native
-  sealed trait `network-only` extends FetchPolicy
+  sealed trait `network-only`
+    extends FetchPolicy
+       with WatchQueryFetchPolicy
   
   @js.native
-  sealed trait `no-cache` extends FetchPolicy
+  sealed trait `no-cache`
+    extends FetchPolicy
+       with WatchQueryFetchPolicy
   
   @js.native
   sealed trait none extends ErrorPolicy
   
   @js.native
-  sealed trait standby extends FetchPolicy
+  sealed trait standby
+    extends FetchPolicy
+       with WatchQueryFetchPolicy
   
   @scala.inline
   def all: all = "all".asInstanceOf[all]

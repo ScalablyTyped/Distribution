@@ -20,7 +20,7 @@ object AxePlugin {
     run: /* repeated */ js.Any => js.Any,
     cleanup: /* callback */ js.Function => Unit = null
   ): AxePlugin = {
-    val __obj = js.Dynamic.literal(commands = commands, id = id, run = js.Any.fromFunction1(run))
+    val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], run = js.Any.fromFunction1(run))
     if (cleanup != null) __obj.updateDynamic("cleanup")(js.Any.fromFunction1(cleanup))
     __obj.asInstanceOf[AxePlugin]
   }

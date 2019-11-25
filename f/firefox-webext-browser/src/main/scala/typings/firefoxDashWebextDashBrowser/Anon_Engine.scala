@@ -16,8 +16,8 @@ trait Anon_Engine extends js.Object {
 object Anon_Engine {
   @scala.inline
   def apply(query: String, engine: String = null, tabId: Int | Double = null): Anon_Engine = {
-    val __obj = js.Dynamic.literal(query = query)
-    if (engine != null) __obj.updateDynamic("engine")(engine)
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
+    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Engine]
   }

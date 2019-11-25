@@ -21,7 +21,7 @@ object Anon_Address {
     sessionVersion: Double,
     username: String
   ): Anon_Address = {
-    val __obj = js.Dynamic.literal(address = address, netType = netType, sessionId = sessionId.asInstanceOf[js.Any], sessionVersion = sessionVersion, username = username)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], netType = netType.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any], sessionVersion = sessionVersion.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Address]
   }

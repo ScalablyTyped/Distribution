@@ -15,7 +15,7 @@ trait SendMessageParams extends js.Object {
 object SendMessageParams {
   @scala.inline
   def apply(message: String): SendMessageParams = {
-    val __obj = js.Dynamic.literal(message = message)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SendMessageParams]
   }

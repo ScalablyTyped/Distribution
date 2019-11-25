@@ -14,7 +14,7 @@ object Config {
   @scala.inline
   def apply(get: String => js.Any, StringDictionary: /* key */ StringDictionary[js.Any] = null): Config = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Config]
   }
 }

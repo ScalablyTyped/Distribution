@@ -37,10 +37,10 @@ object ObserveResult {
     time: Int | Double = null
   ): ObserveResult = {
     val __obj = js.Dynamic.literal()
-    if (boundingClientRect != null) __obj.updateDynamic("boundingClientRect")(boundingClientRect)
+    if (boundingClientRect != null) __obj.updateDynamic("boundingClientRect")(boundingClientRect.asInstanceOf[js.Any])
     if (intersectionRatio != null) __obj.updateDynamic("intersectionRatio")(intersectionRatio.asInstanceOf[js.Any])
-    if (intersectionRect != null) __obj.updateDynamic("intersectionRect")(intersectionRect)
-    if (relativeRect != null) __obj.updateDynamic("relativeRect")(relativeRect)
+    if (intersectionRect != null) __obj.updateDynamic("intersectionRect")(intersectionRect.asInstanceOf[js.Any])
+    if (relativeRect != null) __obj.updateDynamic("relativeRect")(relativeRect.asInstanceOf[js.Any])
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObserveResult]
   }

@@ -15,8 +15,8 @@ object ListAvailableOrgPolicyConstraintsResponse {
   @scala.inline
   def apply(constraints: js.Array[Constraint] = null, nextPageToken: String = null): ListAvailableOrgPolicyConstraintsResponse = {
     val __obj = js.Dynamic.literal()
-    if (constraints != null) __obj.updateDynamic("constraints")(constraints)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAvailableOrgPolicyConstraintsResponse]
   }
 }

@@ -44,10 +44,10 @@ object IgColorPicker {
     standardColors: js.Array[_] = null
   ): IgColorPicker = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (colorSelected != null) __obj.updateDynamic("colorSelected")(js.Any.fromFunction2(colorSelected))
-    if (colors != null) __obj.updateDynamic("colors")(colors)
-    if (standardColors != null) __obj.updateDynamic("standardColors")(standardColors)
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (standardColors != null) __obj.updateDynamic("standardColors")(standardColors.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgColorPicker]
   }
 }

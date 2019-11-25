@@ -25,8 +25,8 @@ object ECCCMSSharedInfo {
     toSchema: () => js.Any,
     entityUInfo: OctetString = null
   ): ECCCMSSharedInfo = {
-    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), keyInfo = keyInfo.asInstanceOf[js.Any], suppPubInfo = suppPubInfo, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
-    if (entityUInfo != null) __obj.updateDynamic("entityUInfo")(entityUInfo)
+    val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), keyInfo = keyInfo.asInstanceOf[js.Any], suppPubInfo = suppPubInfo.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
+    if (entityUInfo != null) __obj.updateDynamic("entityUInfo")(entityUInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ECCCMSSharedInfo]
   }
 }

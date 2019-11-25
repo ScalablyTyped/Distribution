@@ -20,10 +20,10 @@ object DomainOptions {
     notNull: js.UndefOr[Boolean] = js.undefined
   ): DomainOptions = {
     val __obj = js.Dynamic.literal()
-    if (check != null) __obj.updateDynamic("check")(check)
-    if (constraintName != null) __obj.updateDynamic("constraintName")(constraintName)
+    if (check != null) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
+    if (constraintName != null) __obj.updateDynamic("constraintName")(constraintName.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (!js.isUndefined(notNull)) __obj.updateDynamic("notNull")(notNull)
+    if (!js.isUndefined(notNull)) __obj.updateDynamic("notNull")(notNull.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainOptions]
   }
 }

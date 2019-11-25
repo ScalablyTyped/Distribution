@@ -14,7 +14,7 @@ trait IEventSourceInfo extends js.Object {
 object IEventSourceInfo {
   @scala.inline
   def apply(cloneModel: js.Any, index: Double, nodeScope: ITreeNodeScope, nodesScope: ITreeNodeScope): IEventSourceInfo = {
-    val __obj = js.Dynamic.literal(cloneModel = cloneModel, index = index, nodeScope = nodeScope, nodesScope = nodesScope)
+    val __obj = js.Dynamic.literal(cloneModel = cloneModel.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], nodeScope = nodeScope.asInstanceOf[js.Any], nodesScope = nodesScope.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IEventSourceInfo]
   }

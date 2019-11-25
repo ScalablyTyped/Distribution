@@ -34,7 +34,7 @@ object InstallOptions {
     val __obj = js.Dynamic.literal()
     if (bower != null) __obj.updateDynamic("bower")(bower.asInstanceOf[js.Any])
     if (npm != null) __obj.updateDynamic("npm")(npm.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipMessage)) __obj.updateDynamic("skipMessage")(skipMessage)
+    if (!js.isUndefined(skipMessage)) __obj.updateDynamic("skipMessage")(skipMessage.asInstanceOf[js.Any])
     if (yarn != null) __obj.updateDynamic("yarn")(yarn.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstallOptions]
   }

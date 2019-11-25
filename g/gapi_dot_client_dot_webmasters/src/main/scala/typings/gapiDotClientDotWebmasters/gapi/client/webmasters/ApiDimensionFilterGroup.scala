@@ -13,8 +13,8 @@ object ApiDimensionFilterGroup {
   @scala.inline
   def apply(filters: js.Array[ApiDimensionFilter] = null, groupType: String = null): ApiDimensionFilterGroup = {
     val __obj = js.Dynamic.literal()
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (groupType != null) __obj.updateDynamic("groupType")(groupType)
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (groupType != null) __obj.updateDynamic("groupType")(groupType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiDimensionFilterGroup]
   }
 }

@@ -39,8 +39,8 @@ object IPackageMetadata {
     name: String,
     versions: StringDictionary[Anon_Deprecated]
   ): IPackageMetadata = {
-    val __obj = js.Dynamic.literal(description = description, modified = modified, name = name, versions = versions)
-    __obj.updateDynamic("dist-tags")(`dist-tags`)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
+    __obj.updateDynamic("dist-tags")(`dist-tags`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPackageMetadata]
   }
 }

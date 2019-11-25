@@ -51,11 +51,11 @@ object CognitoAuthOptions {
     TokenScopesArray: js.Array[String] = null,
     UserPoolId: String = null
   ): CognitoAuthOptions = {
-    val __obj = js.Dynamic.literal(AppWebDomain = AppWebDomain, ClientId = ClientId, RedirectUriSignIn = RedirectUriSignIn, RedirectUriSignOut = RedirectUriSignOut)
-    if (!js.isUndefined(AdvancedSecurityDataCollectionFlag)) __obj.updateDynamic("AdvancedSecurityDataCollectionFlag")(AdvancedSecurityDataCollectionFlag)
-    if (IdentityProvider != null) __obj.updateDynamic("IdentityProvider")(IdentityProvider)
-    if (TokenScopesArray != null) __obj.updateDynamic("TokenScopesArray")(TokenScopesArray)
-    if (UserPoolId != null) __obj.updateDynamic("UserPoolId")(UserPoolId)
+    val __obj = js.Dynamic.literal(AppWebDomain = AppWebDomain.asInstanceOf[js.Any], ClientId = ClientId.asInstanceOf[js.Any], RedirectUriSignIn = RedirectUriSignIn.asInstanceOf[js.Any], RedirectUriSignOut = RedirectUriSignOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(AdvancedSecurityDataCollectionFlag)) __obj.updateDynamic("AdvancedSecurityDataCollectionFlag")(AdvancedSecurityDataCollectionFlag.asInstanceOf[js.Any])
+    if (IdentityProvider != null) __obj.updateDynamic("IdentityProvider")(IdentityProvider.asInstanceOf[js.Any])
+    if (TokenScopesArray != null) __obj.updateDynamic("TokenScopesArray")(TokenScopesArray.asInstanceOf[js.Any])
+    if (UserPoolId != null) __obj.updateDynamic("UserPoolId")(UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CognitoAuthOptions]
   }
 }

@@ -25,7 +25,7 @@ object RawDraftContentState {
     blocks: js.Array[RawDraftContentBlock],
     entityMap: StringDictionary[RawDraftEntity[StringDictionary[_]]]
   ): RawDraftContentState = {
-    val __obj = js.Dynamic.literal(blocks = blocks, entityMap = entityMap)
+    val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], entityMap = entityMap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RawDraftContentState]
   }

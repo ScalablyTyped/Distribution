@@ -13,7 +13,7 @@ trait EventObject extends js.Object {
 object EventObject {
   @scala.inline
   def apply(item: Double, itemsInSlide: Double, slide: Double): EventObject = {
-    val __obj = js.Dynamic.literal(item = item, itemsInSlide = itemsInSlide, slide = slide)
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], itemsInSlide = itemsInSlide.asInstanceOf[js.Any], slide = slide.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventObject]
   }

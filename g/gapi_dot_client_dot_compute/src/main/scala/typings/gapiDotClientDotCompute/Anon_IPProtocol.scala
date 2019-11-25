@@ -23,8 +23,8 @@ object Anon_IPProtocol {
   @scala.inline
   def apply(IPProtocol: String = null, ports: js.Array[String] = null): Anon_IPProtocol = {
     val __obj = js.Dynamic.literal()
-    if (IPProtocol != null) __obj.updateDynamic("IPProtocol")(IPProtocol)
-    if (ports != null) __obj.updateDynamic("ports")(ports)
+    if (IPProtocol != null) __obj.updateDynamic("IPProtocol")(IPProtocol.asInstanceOf[js.Any])
+    if (ports != null) __obj.updateDynamic("ports")(ports.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IPProtocol]
   }
 }

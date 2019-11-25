@@ -1,7 +1,5 @@
 package typings.videoDotJs.videoDotJsMod.default
 
-import typings.videoDotJs.videoDotJsMod.videojs.Player
-import typings.videoDotJs.videoDotJsMod.videojs.TextTrackMenuItem
 import typings.videoDotJs.videoDotJsMod.videojs.TextTrackMenuItemOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("video.js", "TextTrackMenuItem")
 @js.native
-class TextTrackMenuItemCls protected () extends TextTrackMenuItem {
+class TextTrackMenuItemCls protected ()
+  extends typings.videoDotJs.videoDotJsMod.videojs.TextTrackMenuItem {
   /**
     * Creates an instance of this class.
     *
@@ -19,7 +18,7 @@ class TextTrackMenuItemCls protected () extends TextTrackMenuItem {
     * @param [options]
     *        The key/value store of player options.
     */
-  def this(player: Player) = this()
-  def this(player: Player, options: TextTrackMenuItemOptions) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player, options: TextTrackMenuItemOptions) = this()
 }
 

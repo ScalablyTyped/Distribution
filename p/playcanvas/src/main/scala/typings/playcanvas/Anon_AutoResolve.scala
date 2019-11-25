@@ -27,13 +27,13 @@ object Anon_AutoResolve {
     stencil: js.UndefOr[Boolean] = js.undefined
   ): Anon_AutoResolve = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoResolve)) __obj.updateDynamic("autoResolve")(autoResolve)
-    if (colorBuffer != null) __obj.updateDynamic("colorBuffer")(colorBuffer)
-    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth)
-    if (depthBuffer != null) __obj.updateDynamic("depthBuffer")(depthBuffer)
+    if (!js.isUndefined(autoResolve)) __obj.updateDynamic("autoResolve")(autoResolve.asInstanceOf[js.Any])
+    if (colorBuffer != null) __obj.updateDynamic("colorBuffer")(colorBuffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (depthBuffer != null) __obj.updateDynamic("depthBuffer")(depthBuffer.asInstanceOf[js.Any])
     if (face != null) __obj.updateDynamic("face")(face.asInstanceOf[js.Any])
     if (samples != null) __obj.updateDynamic("samples")(samples.asInstanceOf[js.Any])
-    if (!js.isUndefined(stencil)) __obj.updateDynamic("stencil")(stencil)
+    if (!js.isUndefined(stencil)) __obj.updateDynamic("stencil")(stencil.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoResolve]
   }
 }

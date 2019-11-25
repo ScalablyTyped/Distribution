@@ -12,7 +12,7 @@ trait KeyPairKeyObjectResult extends js.Object {
 object KeyPairKeyObjectResult {
   @scala.inline
   def apply(privateKey: KeyObject, publicKey: KeyObject): KeyPairKeyObjectResult = {
-    val __obj = js.Dynamic.literal(privateKey = privateKey, publicKey = publicKey)
+    val __obj = js.Dynamic.literal(privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KeyPairKeyObjectResult]
   }

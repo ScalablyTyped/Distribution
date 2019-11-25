@@ -27,7 +27,7 @@ object AccordionStyle {
     headerText: TextStyle,
     headerWrap: ViewStyle
   ): AccordionStyle = {
-    val __obj = js.Dynamic.literal(arrow = arrow, container = container, content = content, contentText = contentText, header = header, headerText = headerText, headerWrap = headerWrap)
+    val __obj = js.Dynamic.literal(arrow = arrow.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentText = contentText.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], headerText = headerText.asInstanceOf[js.Any], headerWrap = headerWrap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AccordionStyle]
   }

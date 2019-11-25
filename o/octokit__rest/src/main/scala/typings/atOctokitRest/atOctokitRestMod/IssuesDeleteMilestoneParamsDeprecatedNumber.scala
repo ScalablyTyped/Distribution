@@ -16,7 +16,7 @@ trait IssuesDeleteMilestoneParamsDeprecatedNumber extends js.Object {
 object IssuesDeleteMilestoneParamsDeprecatedNumber {
   @scala.inline
   def apply(number: Double, owner: String, repo: String): IssuesDeleteMilestoneParamsDeprecatedNumber = {
-    val __obj = js.Dynamic.literal(number = number, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IssuesDeleteMilestoneParamsDeprecatedNumber]
   }

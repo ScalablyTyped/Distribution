@@ -16,8 +16,8 @@ trait DeleteIndexOptions extends js.Object {
 object DeleteIndexOptions {
   @scala.inline
   def apply(ddoc: String, name: String, `type`: String = null): DeleteIndexOptions = {
-    val __obj = js.Dynamic.literal(ddoc = ddoc, name = name)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(ddoc = ddoc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteIndexOptions]
   }
 }

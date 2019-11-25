@@ -25,7 +25,7 @@ object InternalEditorMinimapOptions {
     showSlider: always | mouseover,
     side: right | left
   ): InternalEditorMinimapOptions = {
-    val __obj = js.Dynamic.literal(enabled = enabled, maxColumn = maxColumn, renderCharacters = renderCharacters, showSlider = showSlider.asInstanceOf[js.Any], side = side.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], maxColumn = maxColumn.asInstanceOf[js.Any], renderCharacters = renderCharacters.asInstanceOf[js.Any], showSlider = showSlider.asInstanceOf[js.Any], side = side.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InternalEditorMinimapOptions]
   }

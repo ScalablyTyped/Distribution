@@ -30,9 +30,9 @@ object _NotificationConfigurationDeprecated {
     TopicConfiguration: _TopicConfigurationDeprecated = null
   ): _NotificationConfigurationDeprecated = {
     val __obj = js.Dynamic.literal()
-    if (CloudFunctionConfiguration != null) __obj.updateDynamic("CloudFunctionConfiguration")(CloudFunctionConfiguration)
-    if (QueueConfiguration != null) __obj.updateDynamic("QueueConfiguration")(QueueConfiguration)
-    if (TopicConfiguration != null) __obj.updateDynamic("TopicConfiguration")(TopicConfiguration)
+    if (CloudFunctionConfiguration != null) __obj.updateDynamic("CloudFunctionConfiguration")(CloudFunctionConfiguration.asInstanceOf[js.Any])
+    if (QueueConfiguration != null) __obj.updateDynamic("QueueConfiguration")(QueueConfiguration.asInstanceOf[js.Any])
+    if (TopicConfiguration != null) __obj.updateDynamic("TopicConfiguration")(TopicConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[_NotificationConfigurationDeprecated]
   }
 }

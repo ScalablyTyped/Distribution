@@ -14,7 +14,7 @@ trait OpenAPIFrameworkPathContext extends js.Object {
 object OpenAPIFrameworkPathContext {
   @scala.inline
   def apply(basePaths: js.Array[default], getApiDoc: () => js.Any, getPathDoc: () => js.Any): OpenAPIFrameworkPathContext = {
-    val __obj = js.Dynamic.literal(basePaths = basePaths, getApiDoc = js.Any.fromFunction0(getApiDoc), getPathDoc = js.Any.fromFunction0(getPathDoc))
+    val __obj = js.Dynamic.literal(basePaths = basePaths.asInstanceOf[js.Any], getApiDoc = js.Any.fromFunction0(getApiDoc), getPathDoc = js.Any.fromFunction0(getPathDoc))
   
     __obj.asInstanceOf[OpenAPIFrameworkPathContext]
   }

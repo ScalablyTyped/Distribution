@@ -26,8 +26,8 @@ object OlapResultTupleOptions {
     members: js.Array[_] = null
   ): OlapResultTupleOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (members != null) __obj.updateDynamic("members")(members)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
     __obj.asInstanceOf[OlapResultTupleOptions]
   }
 }

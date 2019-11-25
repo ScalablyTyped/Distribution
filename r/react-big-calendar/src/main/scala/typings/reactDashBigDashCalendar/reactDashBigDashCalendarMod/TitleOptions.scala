@@ -18,9 +18,9 @@ object TitleOptions {
     StringDictionary: /* propName */ StringDictionary[js.Any] = null,
     culture: String = null
   ): TitleOptions = {
-    val __obj = js.Dynamic.literal(formats = formats)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (culture != null) __obj.updateDynamic("culture")(culture)
+    val __obj = js.Dynamic.literal(formats = formats.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
     __obj.asInstanceOf[TitleOptions]
   }
 }

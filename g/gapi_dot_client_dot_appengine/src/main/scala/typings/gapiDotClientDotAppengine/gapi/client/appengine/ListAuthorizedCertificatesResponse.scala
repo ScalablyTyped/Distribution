@@ -15,8 +15,8 @@ object ListAuthorizedCertificatesResponse {
   @scala.inline
   def apply(certificates: js.Array[AuthorizedCertificate] = null, nextPageToken: String = null): ListAuthorizedCertificatesResponse = {
     val __obj = js.Dynamic.literal()
-    if (certificates != null) __obj.updateDynamic("certificates")(certificates)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (certificates != null) __obj.updateDynamic("certificates")(certificates.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAuthorizedCertificatesResponse]
   }
 }

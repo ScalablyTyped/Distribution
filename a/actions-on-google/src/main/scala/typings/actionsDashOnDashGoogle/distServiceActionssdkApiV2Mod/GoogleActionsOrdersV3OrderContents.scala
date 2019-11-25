@@ -17,7 +17,7 @@ object GoogleActionsOrdersV3OrderContents {
   @scala.inline
   def apply(lineItems: js.Array[GoogleActionsOrdersV3LineItem] = null): GoogleActionsOrdersV3OrderContents = {
     val __obj = js.Dynamic.literal()
-    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems)
+    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3OrderContents]
   }
 }

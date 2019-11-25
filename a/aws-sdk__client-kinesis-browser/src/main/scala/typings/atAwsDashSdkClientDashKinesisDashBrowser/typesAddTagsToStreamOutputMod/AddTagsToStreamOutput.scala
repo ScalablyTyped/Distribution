@@ -17,7 +17,7 @@ trait AddTagsToStreamOutput extends OutputTypesUnion {
 object AddTagsToStreamOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): AddTagsToStreamOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AddTagsToStreamOutput]
   }

@@ -25,11 +25,11 @@ object NavbarFormProps {
     pullRight: js.UndefOr[Boolean] = js.undefined
   ): NavbarFormProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(pullLeft)) __obj.updateDynamic("pullLeft")(pullLeft)
-    if (!js.isUndefined(pullRight)) __obj.updateDynamic("pullRight")(pullRight)
+    if (!js.isUndefined(pullLeft)) __obj.updateDynamic("pullLeft")(pullLeft.asInstanceOf[js.Any])
+    if (!js.isUndefined(pullRight)) __obj.updateDynamic("pullRight")(pullRight.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavbarFormProps]
   }
 }

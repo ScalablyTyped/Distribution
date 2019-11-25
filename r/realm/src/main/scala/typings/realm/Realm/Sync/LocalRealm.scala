@@ -17,7 +17,7 @@ trait LocalRealm extends js.Object {
 object LocalRealm {
   @scala.inline
   def apply(path: String, realm: () => Realm): LocalRealm = {
-    val __obj = js.Dynamic.literal(path = path, realm = js.Any.fromFunction0(realm))
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], realm = js.Any.fromFunction0(realm))
   
     __obj.asInstanceOf[LocalRealm]
   }

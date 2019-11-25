@@ -12,7 +12,7 @@ trait Anon_KeyCode extends js.Object {
 object Anon_KeyCode {
   @scala.inline
   def apply(KeyCode: Double, Shift: Double): Anon_KeyCode = {
-    val __obj = js.Dynamic.literal(KeyCode = KeyCode, Shift = Shift)
+    val __obj = js.Dynamic.literal(KeyCode = KeyCode.asInstanceOf[js.Any], Shift = Shift.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_KeyCode]
   }

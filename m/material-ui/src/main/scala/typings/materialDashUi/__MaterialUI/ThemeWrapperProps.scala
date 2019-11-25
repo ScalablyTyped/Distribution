@@ -12,7 +12,7 @@ trait ThemeWrapperProps extends js.Object {
 object ThemeWrapperProps {
   @scala.inline
   def apply(theme: MuiTheme): ThemeWrapperProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ThemeWrapperProps]
   }

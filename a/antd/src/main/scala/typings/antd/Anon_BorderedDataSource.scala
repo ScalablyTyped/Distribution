@@ -23,7 +23,7 @@ object Anon_BorderedDataSource {
     split: Boolean,
     pagination: `false` | PaginationConfig = null
   ): Anon_BorderedDataSource = {
-    val __obj = js.Dynamic.literal(bordered = bordered, dataSource = dataSource, loading = loading, split = split)
+    val __obj = js.Dynamic.literal(bordered = bordered.asInstanceOf[js.Any], dataSource = dataSource.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], split = split.asInstanceOf[js.Any])
     if (pagination != null) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BorderedDataSource]
   }

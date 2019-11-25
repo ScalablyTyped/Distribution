@@ -21,7 +21,7 @@ object TableTooltipProps {
     renderContent: () => ReactNode = null,
     title: ReactNode = null
   ): TableTooltipProps = {
-    val __obj = js.Dynamic.literal(rows = rows, theme = theme)
+    val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     if (renderContent != null) __obj.updateDynamic("renderContent")(js.Any.fromFunction0(renderContent))
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableTooltipProps]

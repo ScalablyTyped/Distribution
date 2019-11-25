@@ -24,12 +24,12 @@ object Anon_IgnoreRoot {
     showType: js.UndefOr[Boolean] = js.undefined
   ): Anon_IgnoreRoot = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreRoot)) __obj.updateDynamic("ignoreRoot")(ignoreRoot)
-    if (!js.isUndefined(renderUIElements)) __obj.updateDynamic("renderUIElements")(renderUIElements)
-    if (!js.isUndefined(sameSelectionCharacters)) __obj.updateDynamic("sameSelectionCharacters")(sameSelectionCharacters)
-    if (!js.isUndefined(showAttributeElementId)) __obj.updateDynamic("showAttributeElementId")(showAttributeElementId)
-    if (!js.isUndefined(showPriority)) __obj.updateDynamic("showPriority")(showPriority)
-    if (!js.isUndefined(showType)) __obj.updateDynamic("showType")(showType)
+    if (!js.isUndefined(ignoreRoot)) __obj.updateDynamic("ignoreRoot")(ignoreRoot.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderUIElements)) __obj.updateDynamic("renderUIElements")(renderUIElements.asInstanceOf[js.Any])
+    if (!js.isUndefined(sameSelectionCharacters)) __obj.updateDynamic("sameSelectionCharacters")(sameSelectionCharacters.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAttributeElementId)) __obj.updateDynamic("showAttributeElementId")(showAttributeElementId.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPriority)) __obj.updateDynamic("showPriority")(showPriority.asInstanceOf[js.Any])
+    if (!js.isUndefined(showType)) __obj.updateDynamic("showType")(showType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IgnoreRoot]
   }
 }

@@ -23,7 +23,7 @@ object Anon_Animating {
     styles: StringDictionary[RegisteredStyle[_]],
     toast: Boolean
   ): Anon_Animating = {
-    val __obj = js.Dynamic.literal(animating = animating, color = color, size = size, styles = styles, toast = toast)
+    val __obj = js.Dynamic.literal(animating = animating.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], toast = toast.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Animating]
   }

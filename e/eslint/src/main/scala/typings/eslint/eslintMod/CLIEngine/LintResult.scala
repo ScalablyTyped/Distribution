@@ -28,9 +28,9 @@ object LintResult {
     output: String = null,
     source: String = null
   ): LintResult = {
-    val __obj = js.Dynamic.literal(errorCount = errorCount, filePath = filePath, fixableErrorCount = fixableErrorCount, fixableWarningCount = fixableWarningCount, messages = messages, warningCount = warningCount)
-    if (output != null) __obj.updateDynamic("output")(output)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(errorCount = errorCount.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], fixableErrorCount = fixableErrorCount.asInstanceOf[js.Any], fixableWarningCount = fixableWarningCount.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], warningCount = warningCount.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[LintResult]
   }
 }

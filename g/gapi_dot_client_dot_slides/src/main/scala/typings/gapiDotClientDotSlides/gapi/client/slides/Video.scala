@@ -27,10 +27,10 @@ object Video {
     videoProperties: VideoProperties = null
   ): Video = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (videoProperties != null) __obj.updateDynamic("videoProperties")(videoProperties)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (videoProperties != null) __obj.updateDynamic("videoProperties")(videoProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Video]
   }
 }

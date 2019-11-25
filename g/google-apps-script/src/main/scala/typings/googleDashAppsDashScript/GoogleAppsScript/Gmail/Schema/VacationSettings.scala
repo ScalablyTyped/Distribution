@@ -28,14 +28,14 @@ object VacationSettings {
     startTime: String = null
   ): VacationSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableAutoReply)) __obj.updateDynamic("enableAutoReply")(enableAutoReply)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (responseBodyHtml != null) __obj.updateDynamic("responseBodyHtml")(responseBodyHtml)
-    if (responseBodyPlainText != null) __obj.updateDynamic("responseBodyPlainText")(responseBodyPlainText)
-    if (responseSubject != null) __obj.updateDynamic("responseSubject")(responseSubject)
-    if (!js.isUndefined(restrictToContacts)) __obj.updateDynamic("restrictToContacts")(restrictToContacts)
-    if (!js.isUndefined(restrictToDomain)) __obj.updateDynamic("restrictToDomain")(restrictToDomain)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (!js.isUndefined(enableAutoReply)) __obj.updateDynamic("enableAutoReply")(enableAutoReply.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (responseBodyHtml != null) __obj.updateDynamic("responseBodyHtml")(responseBodyHtml.asInstanceOf[js.Any])
+    if (responseBodyPlainText != null) __obj.updateDynamic("responseBodyPlainText")(responseBodyPlainText.asInstanceOf[js.Any])
+    if (responseSubject != null) __obj.updateDynamic("responseSubject")(responseSubject.asInstanceOf[js.Any])
+    if (!js.isUndefined(restrictToContacts)) __obj.updateDynamic("restrictToContacts")(restrictToContacts.asInstanceOf[js.Any])
+    if (!js.isUndefined(restrictToDomain)) __obj.updateDynamic("restrictToDomain")(restrictToDomain.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[VacationSettings]
   }
 }

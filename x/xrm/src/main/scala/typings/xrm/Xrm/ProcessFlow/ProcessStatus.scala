@@ -15,3 +15,14 @@ import scala.scalajs.js.annotation._
 */
 trait ProcessStatus extends js.Object
 
+object ProcessStatus {
+  @scala.inline
+  def aborted: typings.xrm.xrmStrings.aborted = this.cast("aborted")
+  @scala.inline
+  def active: typings.xrm.xrmStrings.active = this.cast("active")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def finished: typings.xrm.xrmStrings.finished = this.cast("finished")
+}
+

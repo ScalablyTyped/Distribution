@@ -12,7 +12,7 @@ trait Anon_Apns extends js.Object {
 object Anon_Apns {
   @scala.inline
   def apply(apns: Anon_CerData, gcm: Anon_ServerApiKey): Anon_Apns = {
-    val __obj = js.Dynamic.literal(apns = apns, gcm = gcm)
+    val __obj = js.Dynamic.literal(apns = apns.asInstanceOf[js.Any], gcm = gcm.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Apns]
   }

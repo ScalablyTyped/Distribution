@@ -32,16 +32,16 @@ object VideoContentDetails {
     regionRestriction: VideoContentDetailsRegionRestriction = null
   ): VideoContentDetails = {
     val __obj = js.Dynamic.literal()
-    if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (contentRating != null) __obj.updateDynamic("contentRating")(contentRating)
-    if (countryRestriction != null) __obj.updateDynamic("countryRestriction")(countryRestriction)
-    if (definition != null) __obj.updateDynamic("definition")(definition)
-    if (dimension != null) __obj.updateDynamic("dimension")(dimension)
-    if (duration != null) __obj.updateDynamic("duration")(duration)
-    if (!js.isUndefined(hasCustomThumbnail)) __obj.updateDynamic("hasCustomThumbnail")(hasCustomThumbnail)
-    if (!js.isUndefined(licensedContent)) __obj.updateDynamic("licensedContent")(licensedContent)
-    if (projection != null) __obj.updateDynamic("projection")(projection)
-    if (regionRestriction != null) __obj.updateDynamic("regionRestriction")(regionRestriction)
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (contentRating != null) __obj.updateDynamic("contentRating")(contentRating.asInstanceOf[js.Any])
+    if (countryRestriction != null) __obj.updateDynamic("countryRestriction")(countryRestriction.asInstanceOf[js.Any])
+    if (definition != null) __obj.updateDynamic("definition")(definition.asInstanceOf[js.Any])
+    if (dimension != null) __obj.updateDynamic("dimension")(dimension.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasCustomThumbnail)) __obj.updateDynamic("hasCustomThumbnail")(hasCustomThumbnail.asInstanceOf[js.Any])
+    if (!js.isUndefined(licensedContent)) __obj.updateDynamic("licensedContent")(licensedContent.asInstanceOf[js.Any])
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    if (regionRestriction != null) __obj.updateDynamic("regionRestriction")(regionRestriction.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoContentDetails]
   }
 }

@@ -22,7 +22,7 @@ object Options {
     resolveRoute: (/* context */ C with (RouteContext[C, R]), /* params */ QueryParams) => Result[R] = null
   ): Options[C, R] = {
     val __obj = js.Dynamic.literal()
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (errorHandler != null) __obj.updateDynamic("errorHandler")(js.Any.fromFunction2(errorHandler))
     if (resolveRoute != null) __obj.updateDynamic("resolveRoute")(js.Any.fromFunction2(resolveRoute))

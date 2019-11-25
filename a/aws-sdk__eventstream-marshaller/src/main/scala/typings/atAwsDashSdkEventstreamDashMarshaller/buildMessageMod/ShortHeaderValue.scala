@@ -13,8 +13,8 @@ trait ShortHeaderValue extends MessageHeaderValue {
 object ShortHeaderValue {
   @scala.inline
   def apply(`type`: short, value: Double): ShortHeaderValue = {
-    val __obj = js.Dynamic.literal(value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShortHeaderValue]
   }
 }

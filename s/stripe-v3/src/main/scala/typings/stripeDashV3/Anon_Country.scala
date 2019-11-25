@@ -19,7 +19,7 @@ trait Anon_Country extends js.Object {
 object Anon_Country {
   @scala.inline
   def apply(country: String, preferred_language: de | en | es | it | fr | nl | pl = null): Anon_Country = {
-    val __obj = js.Dynamic.literal(country = country)
+    val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any])
     if (preferred_language != null) __obj.updateDynamic("preferred_language")(preferred_language.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Country]
   }

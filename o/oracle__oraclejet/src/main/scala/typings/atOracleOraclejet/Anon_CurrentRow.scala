@@ -19,8 +19,8 @@ object Anon_CurrentRow {
     previousCurrentRow: CurrentRow[K],
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Anon_CurrentRow[K] = {
-    val __obj = js.Dynamic.literal(currentRow = currentRow, previousCurrentRow = previousCurrentRow)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(currentRow = currentRow.asInstanceOf[js.Any], previousCurrentRow = previousCurrentRow.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_CurrentRow[K]]
   }
 }

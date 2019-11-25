@@ -19,8 +19,8 @@ object _MergeMetadata {
   @scala.inline
   def apply(isMerged: js.UndefOr[Boolean] = js.undefined, mergedBy: String = null): _MergeMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isMerged)) __obj.updateDynamic("isMerged")(isMerged)
-    if (mergedBy != null) __obj.updateDynamic("mergedBy")(mergedBy)
+    if (!js.isUndefined(isMerged)) __obj.updateDynamic("isMerged")(isMerged.asInstanceOf[js.Any])
+    if (mergedBy != null) __obj.updateDynamic("mergedBy")(mergedBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[_MergeMetadata]
   }
 }

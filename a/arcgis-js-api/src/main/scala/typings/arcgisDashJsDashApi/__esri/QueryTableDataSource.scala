@@ -58,8 +58,8 @@ object QueryTableDataSource {
     `type`: String,
     workspaceId: String
   ): QueryTableDataSource = {
-    val __obj = js.Dynamic.literal(constructor = constructor, geometryType = geometryType, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), oidFields = oidFields, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), query = query, spatialReference = spatialReference, workspaceId = workspaceId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometryType = geometryType.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), oidFields = oidFields.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), query = query.asInstanceOf[js.Any], spatialReference = spatialReference.asInstanceOf[js.Any], workspaceId = workspaceId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryTableDataSource]
   }
 }

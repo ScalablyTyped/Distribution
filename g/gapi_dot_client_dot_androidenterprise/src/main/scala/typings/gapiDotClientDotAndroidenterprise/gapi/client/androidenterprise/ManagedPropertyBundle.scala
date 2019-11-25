@@ -13,7 +13,7 @@ object ManagedPropertyBundle {
   @scala.inline
   def apply(managedProperty: js.Array[ManagedProperty] = null): ManagedPropertyBundle = {
     val __obj = js.Dynamic.literal()
-    if (managedProperty != null) __obj.updateDynamic("managedProperty")(managedProperty)
+    if (managedProperty != null) __obj.updateDynamic("managedProperty")(managedProperty.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedPropertyBundle]
   }
 }

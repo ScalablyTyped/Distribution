@@ -15,7 +15,7 @@ object TypeWithResolvers {
   def apply(`type`: GraphQLNamedType, resolvers: IResolvers[_, _] = null): TypeWithResolvers = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (resolvers != null) __obj.updateDynamic("resolvers")(resolvers)
+    if (resolvers != null) __obj.updateDynamic("resolvers")(resolvers.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeWithResolvers]
   }
 }

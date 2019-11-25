@@ -14,9 +14,9 @@ object ParticipantInfo {
   @scala.inline
   def apply(identity: IdentitySet = null, languageId: String = null, region: String = null): ParticipantInfo = {
     val __obj = js.Dynamic.literal()
-    if (identity != null) __obj.updateDynamic("identity")(identity)
-    if (languageId != null) __obj.updateDynamic("languageId")(languageId)
-    if (region != null) __obj.updateDynamic("region")(region)
+    if (identity != null) __obj.updateDynamic("identity")(identity.asInstanceOf[js.Any])
+    if (languageId != null) __obj.updateDynamic("languageId")(languageId.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParticipantInfo]
   }
 }

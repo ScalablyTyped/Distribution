@@ -13,7 +13,7 @@ object Anon_AuthData {
   @scala.inline
   def apply(authData: AuthData = null): Anon_AuthData = {
     val __obj = js.Dynamic.literal()
-    if (authData != null) __obj.updateDynamic("authData")(authData)
+    if (authData != null) __obj.updateDynamic("authData")(authData.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AuthData]
   }
 }

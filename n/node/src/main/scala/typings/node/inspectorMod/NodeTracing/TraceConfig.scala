@@ -18,8 +18,8 @@ trait TraceConfig extends js.Object {
 object TraceConfig {
   @scala.inline
   def apply(includedCategories: js.Array[java.lang.String], recordMode: java.lang.String = null): TraceConfig = {
-    val __obj = js.Dynamic.literal(includedCategories = includedCategories)
-    if (recordMode != null) __obj.updateDynamic("recordMode")(recordMode)
+    val __obj = js.Dynamic.literal(includedCategories = includedCategories.asInstanceOf[js.Any])
+    if (recordMode != null) __obj.updateDynamic("recordMode")(recordMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[TraceConfig]
   }
 }

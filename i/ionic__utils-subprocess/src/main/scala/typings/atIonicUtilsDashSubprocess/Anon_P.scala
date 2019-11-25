@@ -12,7 +12,7 @@ trait Anon_P extends js.Object {
 object Anon_P {
   @scala.inline
   def apply(p: ChildProcess): Anon_P = {
-    val __obj = js.Dynamic.literal(p = p)
+    val __obj = js.Dynamic.literal(p = p.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_P]
   }

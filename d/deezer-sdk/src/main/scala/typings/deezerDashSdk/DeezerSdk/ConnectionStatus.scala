@@ -15,3 +15,16 @@ import scala.scalajs.js.annotation._
 */
 trait ConnectionStatus extends js.Object
 
+object ConnectionStatus {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def connected: typings.deezerDashSdk.deezerDashSdkStrings.connected = this.cast("connected")
+  @scala.inline
+  def notConnected: typings.deezerDashSdk.deezerDashSdkStrings.notConnected = this.cast("notConnected")
+  @scala.inline
+  def not_authorized: typings.deezerDashSdk.deezerDashSdkStrings.not_authorized = this.cast("not_authorized")
+  @scala.inline
+  def unknown: typings.deezerDashSdk.deezerDashSdkStrings.unknown = this.cast("unknown")
+}
+

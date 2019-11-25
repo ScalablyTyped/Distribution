@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait ProgressDirection extends js.Object
 
+object ProgressDirection {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def download: typings.realm.realmStrings.download = this.cast("download")
+  @scala.inline
+  def upload: typings.realm.realmStrings.upload = this.cast("upload")
+}
+

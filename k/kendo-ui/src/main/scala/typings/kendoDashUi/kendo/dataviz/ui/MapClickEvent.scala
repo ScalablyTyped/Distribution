@@ -19,9 +19,9 @@ object MapClickEvent {
     location: Location = null,
     originalEvent: js.Any = null
   ): MapClickEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapClickEvent]
   }
 }

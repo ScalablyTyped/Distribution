@@ -18,8 +18,8 @@ object InstancesSetLabelsRequest {
   @scala.inline
   def apply(labelFingerprint: String = null, labels: Record[String, String] = null): InstancesSetLabelsRequest = {
     val __obj = js.Dynamic.literal()
-    if (labelFingerprint != null) __obj.updateDynamic("labelFingerprint")(labelFingerprint)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (labelFingerprint != null) __obj.updateDynamic("labelFingerprint")(labelFingerprint.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstancesSetLabelsRequest]
   }
 }

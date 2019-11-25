@@ -14,7 +14,7 @@ trait Anon_Info extends js.Object {
 object Anon_Info {
   @scala.inline
   def apply(info: PDFInfo, metadata: PDFMetadata): Anon_Info = {
-    val __obj = js.Dynamic.literal(info = info, metadata = metadata)
+    val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Info]
   }

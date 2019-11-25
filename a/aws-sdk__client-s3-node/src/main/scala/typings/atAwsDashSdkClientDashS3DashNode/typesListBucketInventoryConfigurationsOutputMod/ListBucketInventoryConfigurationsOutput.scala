@@ -38,11 +38,11 @@ object ListBucketInventoryConfigurationsOutput {
     IsTruncated: js.UndefOr[Boolean] = js.undefined,
     NextContinuationToken: String = null
   ): ListBucketInventoryConfigurationsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (ContinuationToken != null) __obj.updateDynamic("ContinuationToken")(ContinuationToken)
-    if (InventoryConfigurationList != null) __obj.updateDynamic("InventoryConfigurationList")(InventoryConfigurationList)
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated)
-    if (NextContinuationToken != null) __obj.updateDynamic("NextContinuationToken")(NextContinuationToken)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (ContinuationToken != null) __obj.updateDynamic("ContinuationToken")(ContinuationToken.asInstanceOf[js.Any])
+    if (InventoryConfigurationList != null) __obj.updateDynamic("InventoryConfigurationList")(InventoryConfigurationList.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.asInstanceOf[js.Any])
+    if (NextContinuationToken != null) __obj.updateDynamic("NextContinuationToken")(NextContinuationToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBucketInventoryConfigurationsOutput]
   }
 }

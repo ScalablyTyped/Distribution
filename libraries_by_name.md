@@ -247,7 +247,6 @@
 | [antd-mobile](./a/antd-mobile) | 基于 React 的移动设计规范实现 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile |
 | [antd-mobile-rn](./a/antd-mobile-rn) | 基于蚂蚁金服移动设计规范的 React Native 组件库 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile, react native |
 | [antd-native-slinky-facade](./a/antd-native-slinky-facade) | - | - |
-| [antd-slinky-facade](./a/antd-slinky-facade) | - | - |
 | [antlr4](./a/antlr4) | JavaScript runtime for ANTLR4 | lexer, parser, antlr, antlr4, grammar |
 | [antlr4-autosuggest](./a/antlr4-autosuggest) | Autosuggest engine for ANTLR4 grammars | antl4, autosuggest, autocomplete, antlr, grammar, parser, lexer |
 | [any-db](./a/any-db) | Database-agnostic connection pooling, querying, an | mysql, postgres, pg, sqlite, sqlite3 |
@@ -316,7 +315,6 @@
 | [applicationinsights](./a/applicationinsights) | Microsoft Application Insights module for Node.js | exception monitoring, request monitoring, performance monitoring, application insights, microsoft, azure, cloud, tracing, telemetry, analytics, apm |
 | [applicationinsights-js](./a/applicationinsights-js) | Microsoft Application Insights JavaScript SDK | browser performance monitoring, script errors, application insights, microsoft, azure |
 | [aqb](./a/aqb) | ArangoDB AQL query builder. | arangodb, aql, nosql, query |
-| [arangodb](./a/arangodb) | - | - |
 | [arbiter](./a/arbiter) | A Salesforce ORM powered by jsforce | ORM, Salesforce, JSForce, Query |
 | [arcgis-js-api](./a/arcgis-js-api) | Minified, unbuilt version of the ArcGIS API for Ja | esrijs, esri, arcgis, gis |
 | [arcgis-rest-api](./a/arcgis-rest-api) | - | - |
@@ -2523,6 +2521,7 @@
 | [google-cloud__precise-dat](./g/google-cloud__precise-date) | - | - |
 | [google-cloud__projectify](./g/google-cloud__projectify) | A simple utility for replacing the projectid token | - |
 | [google-cloud__promisify](./g/google-cloud__promisify) | A simple utility for promisifying functions and cl | - |
+| [google-cloud__pubsub](./g/google-cloud__pubsub) | Cloud Pub/Sub Client Library for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google pubsub, pubsub |
 | [google-cloud__storage](./g/google-cloud__storage) | Cloud Storage Client Library for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google storage, storage |
 | [google-cloud__tasks](./g/google-cloud__tasks) | Cloud Tasks API client for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google cloud-tasks, cloud-tasks, Cloud Tasks API |
 | [google-cloud__text-to-spe](./g/google-cloud__text-to-speech) | Cloud Text-to-Speech API client for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google texttospeech, texttospeech, Cloud Text-to-Speech API |
@@ -2530,6 +2529,7 @@
 | [google-drive-realtime-api](./g/google-drive-realtime-api) | - | - |
 | [google-earth](./g/google-earth) | - | - |
 | [google-fonts](./g/google-fonts) | A small helper library for embedding Google Fonts  | google, fonts, webfonts, inline, embed, append |
+| [google-gax](./g/google-gax) | Google API Extensions | grpc |
 | [google-images](./g/google-images) | Search images using Google Custom Search Engine AP | google, images, google images, image search |
 | [google-libphonenumber](./g/google-libphonenumber) | The up-to-date and reliable Google's libphonenumbe | browserify, e164, format, formatting, international, libphonenumber, number, phone, phonenumber, rfc3966, standardize, wrapper |
 | [google-map-react](./g/google-map-react) | isomorphic google map react component, allows rend | react, reactjs, google, map, maps, isomorphic, render, component, javascript, react-component |
@@ -2608,6 +2608,7 @@
 | [growing-io](./g/growing-io) | - | - |
 | [grpc](./g/grpc) | gRPC Library for Node | - |
 | [grpc-error](./g/grpc-error) | Utility Error class suitable for gRPC error respon | protocol buffer, protobuf, grpc |
+| [grpc__grpc-js](./g/grpc__grpc-js) | gRPC Library for Node - pure JS implementation | - |
 | [grpc__proto-loader](./g/grpc__proto-loader) | gRPC utility library for loading .proto files | - |
 | [grunt](./g/grunt) | The JavaScript Task Runner | task, async, cli, minify, uglify, build, lodash, unit, test, qunit, nodeunit, server, init, scaffold, make, jake, tool |
 | [gsap](./g/gsap) | GSAP is a JavaScript library for creating high-per | animation, TweenLite, TweenMax, TimelineLite, TimelineMax, GSAP, GreenSock, easing, EasePack, PixiPlugin, CustomEase, jQuery, jquery.gsap.js, Bezier, SVG, 3D, 2D, transform, morph, morphing, svg, tweening |
@@ -2964,7 +2965,6 @@
 | [imgur-rest-api](./i/imgur-rest-api) | - | - |
 | [immediate](./i/immediate) | A cross browser microtask library | - |
 | [immer](./i/immer) | Create your next immutable state by mutating the c | immutable, mutable, copy-on-write |
-| [immutability-helper](./i/immutability-helper) | mutate a copy of data without changing the origina | immutability |
 | [immutable](./i/immutable) | Immutable Data Collections | immutable, persistent, lazy, data, datastructure, functional, collection, stateless, sequence, iteration |
 | [imperium](./i/imperium) | Imperium is a role-based user's authorizations (AC | node acl, acl, auth, authorization, user acl, security, imperium |
 | [import-fresh](./i/import-fresh) | Import a module while bypassing the cache | require, cache, uncache, uncached, module, fresh, bypass |
@@ -3367,7 +3367,6 @@
 | [jquery-urlparam](./j/jquery-urlparam) | - | - |
 | [jquery-validation-unobtru](./j/jquery-validation-unobtrusive) | Add-on to jQuery Validation to enable unobtrusive  | jquery, asp.net, mvc, validation, unobtrusive |
 | [jquery_dot_address](./j/jquery_dot_address) | - | - |
-| [jquery_dot_ajaxfile](./j/jquery_dot_ajaxfile) | Allow to upload file with old browser | - |
 | [jquery_dot_appear](./j/jquery_dot_appear) | jQuery plugin to call a function when an element a | - |
 | [jquery_dot_are-you-sure](./j/jquery_dot_are-you-sure) | A light-weight jQuery "dirty forms" Plugin - it mo | dirty, form, onbeforeunload, save, check |
 | [jquery_dot_autosize](./j/jquery_dot_autosize) | - | - |
@@ -5036,8 +5035,6 @@
 | [odata](./o/odata) | o.js is a isomorphic Odata Javascript library to s | - |
 | [oembed-parser](./o/oembed-parser) | Get oEmbed data from given URL. | oembed, extractor, parser, util |
 | [ofe](./o/ofe) | Overwrite OnFatalError to produce heapdump | On Fatal Error, Fatal, Error, OnFatalError |
-| [office-js](./o/office-js) | Utility for office cloud services. | office, googleapps, office365, word, excel |
-| [office-js-preview](./o/office-js-preview) | - | - |
 | [office-runtime](./o/office-runtime) | - | - |
 | [office-ui-fabric-react](./o/office-ui-fabric-react) | Reusable React components for building experiences | - |
 | [offline-js](./o/offline-js) | Automatically detect when a browser is offline | - |
@@ -5987,7 +5984,6 @@
 | [react-mixin](./r/react-mixin) | - | react, mixin, es6, class, smart-mixin |
 | [react-modal](./r/react-modal) | Accessible modal dialog component for React.JS | react, react-component, modal, dialog |
 | [react-monaco-editor](./r/react-monaco-editor) | Monaco Editor for React | monaco, editor, react, vscode |
-| [react-mosaic-component](./r/react-mosaic-component) | A React Tiling Window Manager | ui, palantir, react, component, typescript, tiling-window-manager, window-manager |
 | [react-motion](./r/react-motion) | A spring that solves your animation problems. | react, component, react-component, transitiongroup, spring, tween, motion, animation, transition, ui |
 | [react-motion-loop](./r/react-motion-loop) | Looping animation for react-motion Spring | component, react-component, react |
 | [react-motion-slider](./r/react-motion-slider) | Slider/Carousel powered by React Motion. | react, component, slider, carousel |
@@ -6177,10 +6173,8 @@
 | [react-router-bootstrap](./r/react-router-bootstrap) | Integration between React Router and React-Bootstr | react, react-router, react-bootstrap |
 | [react-router-config](./r/react-router-config) | Static route config matching for React Router | react, router, route, routing, static routes, route config, react router |
 | [react-router-dom](./r/react-router-dom) | DOM bindings for React Router | react, router, route, routing, history, link |
-| [react-router-dom-slinky-f](./r/react-router-dom-slinky-facade) | - | - |
 | [react-router-hash-link](./r/react-router-hash-link) | Hash link scroll functionality for React Router v4 | react, react-router, link, hash-link, scroll |
 | [react-router-native](./r/react-router-native) | React Native bindings for React Router | - |
-| [react-router-native-slink](./r/react-router-native-slinky-facade) | - | - |
 | [react-router-navigation](./r/react-router-navigation) | Declarative routing for  | react-native, ios, android, router, navigation, navigator |
 | [react-router-navigation-c](./r/react-router-navigation-core) | - | web, react-native, ios, android, router, navigation, navigator |
 | [react-router-param-link](./r/react-router-param-link) | A wrapper around react-router's Link that allows p | link-component, component, parameter, dynamic, router, react |
@@ -6194,7 +6188,6 @@
 | [react-scrollbar](./r/react-scrollbar) | ScrollArea component for react | react, react-component, component, scrollbar, scroll, scrollarea |
 | [react-scrollbar-size](./r/react-scrollbar-size) | React component to calculate the size of browser s | react, scrollbar |
 | [react-scrollspy](./r/react-scrollspy) | react scrollspy component | react, react-component, component, scrollspy, scroll |
-| [react-select](./r/react-select) | A Select control built with and for ReactJS | combobox, form, input, multiselect, react, react-component, select, ui |
 | [react-shadow-dom-retarget](./r/react-shadow-dom-retarget-events) | Retargets event in a shadow root to react | - |
 | [react-share](./r/react-share) | Social media share buttons and share counts for Re | react, component, react-component, social, media, social-media, share, button, count |
 | [react-show-more](./r/react-show-more) | React component for truncating multi-line spans an | react, show more, ellipsis, multiline |
@@ -7079,6 +7072,7 @@
 | [storybook__addon-centered](./s/storybook__addon-centered) | Storybook decorator to center components | addon, storybook |
 | [storybook__addon-info](./s/storybook__addon-info) | A Storybook addon to show additional information f | addon, storybook |
 | [storybook__addon-jest](./s/storybook__addon-jest) | React storybook addon that show component jest rep | addon, jest, react, report, results, storybook, unit-testing |
+| [storybook__addon-knobs](./s/storybook__addon-knobs) | Storybook Addon Prop Editor Component | addon, storybook |
 | [storybook__addon-links](./s/storybook__addon-links) | Story Links addon for storybook | addon, storybook |
 | [storybook__addon-notes](./s/storybook__addon-notes) | Write notes for your Storybook stories. | addon, notes, storybook |
 | [storybook__addon-options](./s/storybook__addon-options) | Options addon for storybook | addon, storybook |
@@ -7524,9 +7518,6 @@
 | [typescript-collections](./t/typescript-collections) | A complete, fully tested data structure library wr | typescript, generics, data, structures, collections, linked, list, dictionary, default, dictionary, multi, dictionary, binary, search, tree, key, value, stack, queue, set, bag, binary, heap, priority, queue, array |
 | [typescript-compare](./t/typescript-compare) | TypeScript generics to compare types | compare, generic, typescript, types |
 | [typescript-deferred](./t/typescript-deferred) | A tiny Promises/A+ promise implementation written  | promise, deferred, typescript, promises-aplus |
-| [typescript-eslint__experi](./t/typescript-eslint__experimental-utils) | (Experimental) Utilities for working with TypeScri | eslint, typescript, estree |
-| [typescript-eslint__parser](./t/typescript-eslint__parser) | An ESLint custom parser which leverages TypeScript | ast, ecmascript, javascript, typescript, parser, syntax, eslint |
-| [typescript-eslint__typesc](./t/typescript-eslint__typescript-estree) | A parser that converts TypeScript source code into | ast, estree, ecmascript, javascript, typescript, parser, syntax |
 | [typescript-event-handler](./t/typescript-event-handler) | Event handler written in Typescript. | Typescript, Events |
 | [typescript-logic](./t/typescript-logic) | TypeScript generics to work with boolean types | logic, generic, typescript, boolean, true, false |
 | [typescript-optional](./t/typescript-optional) | Optional (like Java) implementation in TypeScript | java, optional, typescript |
@@ -7840,7 +7831,6 @@
 | [web3-utils](./w/web3-utils) | Collection of utility functions used in web3.js. | - |
 | [webappsec-credential-mana](./w/webappsec-credential-management) | - | - |
 | [webassembly-web-api](./w/webassembly-web-api) | - | - |
-| [webcl](./w/webcl) | OpenCL bindings for Node.js | - |
 | [webcola](./w/webcola) | WebCola ======= | Graph, Layout, Constraints, Optimization |
 | [webcomponents_dot_js](./w/webcomponents_dot_js) | webcomponents.js | - |
 | [webcrypto](./w/webcrypto) | Use the Node.js crypto module API without having t | crypto |

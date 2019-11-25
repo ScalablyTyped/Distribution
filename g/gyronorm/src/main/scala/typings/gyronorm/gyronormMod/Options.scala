@@ -47,10 +47,10 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (decimalCount != null) __obj.updateDynamic("decimalCount")(decimalCount.asInstanceOf[js.Any])
     if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
-    if (!js.isUndefined(gravityNormalized)) __obj.updateDynamic("gravityNormalized")(gravityNormalized)
+    if (!js.isUndefined(gravityNormalized)) __obj.updateDynamic("gravityNormalized")(gravityNormalized.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(js.Any.fromFunction1(logger))
-    if (orientationBase != null) __obj.updateDynamic("orientationBase")(orientationBase)
-    if (!js.isUndefined(screenAdjusted)) __obj.updateDynamic("screenAdjusted")(screenAdjusted)
+    if (orientationBase != null) __obj.updateDynamic("orientationBase")(orientationBase.asInstanceOf[js.Any])
+    if (!js.isUndefined(screenAdjusted)) __obj.updateDynamic("screenAdjusted")(screenAdjusted.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

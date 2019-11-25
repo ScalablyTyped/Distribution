@@ -41,12 +41,12 @@ object RefinementListExposed {
     showMoreLimit: Int | Double = null,
     transformItems: /* repeated */ js.Any => _ = null
   ): RefinementListExposed = {
-    val __obj = js.Dynamic.literal(attribute = attribute)
-    if (defaultRefinement != null) __obj.updateDynamic("defaultRefinement")(defaultRefinement)
+    val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any])
+    if (defaultRefinement != null) __obj.updateDynamic("defaultRefinement")(defaultRefinement.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchable)) __obj.updateDynamic("searchable")(searchable)
-    if (!js.isUndefined(showMore)) __obj.updateDynamic("showMore")(showMore)
+    if (!js.isUndefined(searchable)) __obj.updateDynamic("searchable")(searchable.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMore)) __obj.updateDynamic("showMore")(showMore.asInstanceOf[js.Any])
     if (showMoreLimit != null) __obj.updateDynamic("showMoreLimit")(showMoreLimit.asInstanceOf[js.Any])
     if (transformItems != null) __obj.updateDynamic("transformItems")(js.Any.fromFunction1(transformItems))
     __obj.asInstanceOf[RefinementListExposed]

@@ -12,7 +12,7 @@ trait Maybe[A] extends js.Object {
 object Maybe {
   @scala.inline
   def apply[A](constructor: Anon_SanctuaryMaybe): Maybe[A] = {
-    val __obj = js.Dynamic.literal(constructor = constructor)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Maybe[A]]
   }

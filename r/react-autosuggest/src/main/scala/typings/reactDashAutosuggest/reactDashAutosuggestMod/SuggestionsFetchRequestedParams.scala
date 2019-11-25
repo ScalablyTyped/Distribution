@@ -20,7 +20,7 @@ object SuggestionsFetchRequestedParams {
     reason: `input-changed` | `input-focused` | `escape-pressed` | `suggestions-revealed` | `suggestion-selected`,
     value: String
   ): SuggestionsFetchRequestedParams = {
-    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], value = value)
+    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SuggestionsFetchRequestedParams]
   }

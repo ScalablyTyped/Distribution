@@ -20,10 +20,10 @@ object ChartSeriesDefaultsNotes {
     visual: js.Function = null
   ): ChartSeriesDefaultsNotes = {
     val __obj = js.Dynamic.literal()
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (line != null) __obj.updateDynamic("line")(line)
-    if (visual != null) __obj.updateDynamic("visual")(visual)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (visual != null) __obj.updateDynamic("visual")(visual.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSeriesDefaultsNotes]
   }
 }

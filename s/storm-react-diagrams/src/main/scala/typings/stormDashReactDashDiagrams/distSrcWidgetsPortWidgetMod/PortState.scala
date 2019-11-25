@@ -11,7 +11,7 @@ trait PortState extends js.Object {
 object PortState {
   @scala.inline
   def apply(selected: Boolean): PortState = {
-    val __obj = js.Dynamic.literal(selected = selected)
+    val __obj = js.Dynamic.literal(selected = selected.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PortState]
   }

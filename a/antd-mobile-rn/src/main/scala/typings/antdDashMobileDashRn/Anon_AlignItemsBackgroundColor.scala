@@ -23,7 +23,7 @@ object Anon_AlignItemsBackgroundColor {
     justifyContent: String,
     width: Double
   ): Anon_AlignItemsBackgroundColor = {
-    val __obj = js.Dynamic.literal(alignItems = alignItems, backgroundColor = backgroundColor, borderRadius = borderRadius, height = height, justifyContent = justifyContent, width = width)
+    val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], justifyContent = justifyContent.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AlignItemsBackgroundColor]
   }

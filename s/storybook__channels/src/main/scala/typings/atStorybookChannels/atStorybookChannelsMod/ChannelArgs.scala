@@ -13,8 +13,8 @@ object ChannelArgs {
   @scala.inline
   def apply(async: js.UndefOr[Boolean] = js.undefined, transport: ChannelTransport = null): ChannelArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (transport != null) __obj.updateDynamic("transport")(transport)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelArgs]
   }
 }

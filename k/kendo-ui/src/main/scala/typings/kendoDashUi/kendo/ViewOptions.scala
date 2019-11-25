@@ -26,13 +26,13 @@ object ViewOptions {
     wrap: js.UndefOr[Boolean] = js.undefined
   ): ViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(evalTemplate)) __obj.updateDynamic("evalTemplate")(evalTemplate)
+    if (!js.isUndefined(evalTemplate)) __obj.updateDynamic("evalTemplate")(evalTemplate.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
     if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap)
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewOptions]
   }
 }

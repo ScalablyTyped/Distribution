@@ -19,8 +19,8 @@ object UpdateNodePoolRequest {
   @scala.inline
   def apply(imageType: String = null, nodeVersion: String = null): UpdateNodePoolRequest = {
     val __obj = js.Dynamic.literal()
-    if (imageType != null) __obj.updateDynamic("imageType")(imageType)
-    if (nodeVersion != null) __obj.updateDynamic("nodeVersion")(nodeVersion)
+    if (imageType != null) __obj.updateDynamic("imageType")(imageType.asInstanceOf[js.Any])
+    if (nodeVersion != null) __obj.updateDynamic("nodeVersion")(nodeVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNodePoolRequest]
   }
 }

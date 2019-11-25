@@ -15,8 +15,8 @@ object Anon_Key {
   @scala.inline
   def apply(options: StringDictionary[Boolean] = null, params: StringDictionary[SegementParams] = null): Anon_Key = {
     val __obj = js.Dynamic.literal()
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Key]
   }
 }

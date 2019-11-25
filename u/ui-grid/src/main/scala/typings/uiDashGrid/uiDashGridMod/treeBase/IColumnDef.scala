@@ -94,9 +94,9 @@ object IColumnDef {
     val __obj = js.Dynamic.literal()
     if (customTreeAggregationFinalizerFn != null) __obj.updateDynamic("customTreeAggregationFinalizerFn")(js.Any.fromFunction1(customTreeAggregationFinalizerFn))
     if (customTreeAggregationFn != null) __obj.updateDynamic("customTreeAggregationFn")(js.Any.fromFunction4(customTreeAggregationFn))
-    if (treeAggregationLabel != null) __obj.updateDynamic("treeAggregationLabel")(treeAggregationLabel)
-    if (treeAggregationType != null) __obj.updateDynamic("treeAggregationType")(treeAggregationType)
-    if (!js.isUndefined(treeAggregationUpdateEntity)) __obj.updateDynamic("treeAggregationUpdateEntity")(treeAggregationUpdateEntity)
+    if (treeAggregationLabel != null) __obj.updateDynamic("treeAggregationLabel")(treeAggregationLabel.asInstanceOf[js.Any])
+    if (treeAggregationType != null) __obj.updateDynamic("treeAggregationType")(treeAggregationType.asInstanceOf[js.Any])
+    if (!js.isUndefined(treeAggregationUpdateEntity)) __obj.updateDynamic("treeAggregationUpdateEntity")(treeAggregationUpdateEntity.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnDef[TEntity]]
   }
 }

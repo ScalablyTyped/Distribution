@@ -54,11 +54,11 @@ object Options {
     cssProcessorPluginOptions: js.Object = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (assetNameRegExp != null) __obj.updateDynamic("assetNameRegExp")(assetNameRegExp)
-    if (!js.isUndefined(canPrint)) __obj.updateDynamic("canPrint")(canPrint)
-    if (cssProcessor != null) __obj.updateDynamic("cssProcessor")(cssProcessor)
-    if (cssProcessorOptions != null) __obj.updateDynamic("cssProcessorOptions")(cssProcessorOptions)
-    if (cssProcessorPluginOptions != null) __obj.updateDynamic("cssProcessorPluginOptions")(cssProcessorPluginOptions)
+    if (assetNameRegExp != null) __obj.updateDynamic("assetNameRegExp")(assetNameRegExp.asInstanceOf[js.Any])
+    if (!js.isUndefined(canPrint)) __obj.updateDynamic("canPrint")(canPrint.asInstanceOf[js.Any])
+    if (cssProcessor != null) __obj.updateDynamic("cssProcessor")(cssProcessor.asInstanceOf[js.Any])
+    if (cssProcessorOptions != null) __obj.updateDynamic("cssProcessorOptions")(cssProcessorOptions.asInstanceOf[js.Any])
+    if (cssProcessorPluginOptions != null) __obj.updateDynamic("cssProcessorPluginOptions")(cssProcessorPluginOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

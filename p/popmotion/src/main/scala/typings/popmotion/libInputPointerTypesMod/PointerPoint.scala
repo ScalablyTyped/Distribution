@@ -16,7 +16,7 @@ trait PointerPoint extends js.Object {
 object PointerPoint {
   @scala.inline
   def apply(clientX: Double, clientY: Double, pageX: Double, pageY: Double, x: Double, y: Double): PointerPoint = {
-    val __obj = js.Dynamic.literal(clientX = clientX, clientY = clientY, pageX = pageX, pageY = pageY, x = x, y = y)
+    val __obj = js.Dynamic.literal(clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PointerPoint]
   }

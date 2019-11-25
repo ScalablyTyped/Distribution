@@ -12,8 +12,8 @@ trait UserAgentRegistrationFailedEvent extends js.Object {
 object UserAgentRegistrationFailedEvent {
   @scala.inline
   def apply(response: IncomingResponse, cause: String = null): UserAgentRegistrationFailedEvent = {
-    val __obj = js.Dynamic.literal(response = response)
-    if (cause != null) __obj.updateDynamic("cause")(cause)
+    val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any])
+    if (cause != null) __obj.updateDynamic("cause")(cause.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserAgentRegistrationFailedEvent]
   }
 }

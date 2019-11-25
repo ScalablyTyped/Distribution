@@ -18,8 +18,8 @@ object CertManagerOptions {
   @scala.inline
   def apply(defaultCertAttrs: js.Array[CertificateAttribute] = null, rootDirPath: String = null): CertManagerOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultCertAttrs != null) __obj.updateDynamic("defaultCertAttrs")(defaultCertAttrs)
-    if (rootDirPath != null) __obj.updateDynamic("rootDirPath")(rootDirPath)
+    if (defaultCertAttrs != null) __obj.updateDynamic("defaultCertAttrs")(defaultCertAttrs.asInstanceOf[js.Any])
+    if (rootDirPath != null) __obj.updateDynamic("rootDirPath")(rootDirPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertManagerOptions]
   }
 }

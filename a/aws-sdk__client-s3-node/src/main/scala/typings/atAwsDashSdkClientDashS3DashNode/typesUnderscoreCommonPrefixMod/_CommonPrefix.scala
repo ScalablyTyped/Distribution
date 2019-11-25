@@ -15,7 +15,7 @@ object _CommonPrefix {
   @scala.inline
   def apply(Prefix: String = null): _CommonPrefix = {
     val __obj = js.Dynamic.literal()
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix)
+    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[_CommonPrefix]
   }
 }

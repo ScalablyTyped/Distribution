@@ -18,7 +18,7 @@ trait CommentPosition extends js.Object {
 object CommentPosition {
   @scala.inline
   def apply(line: Double, offset: Double): CommentPosition = {
-    val __obj = js.Dynamic.literal(line = line, offset = offset)
+    val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CommentPosition]
   }

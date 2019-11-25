@@ -20,9 +20,9 @@ object WatermarkOptions {
     useNative: js.UndefOr[Boolean] = js.undefined
   ): WatermarkOptions = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(hideBeforeUnload)) __obj.updateDynamic("hideBeforeUnload")(hideBeforeUnload)
-    if (!js.isUndefined(useNative)) __obj.updateDynamic("useNative")(useNative)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideBeforeUnload)) __obj.updateDynamic("hideBeforeUnload")(hideBeforeUnload.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNative)) __obj.updateDynamic("useNative")(useNative.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatermarkOptions]
   }
 }

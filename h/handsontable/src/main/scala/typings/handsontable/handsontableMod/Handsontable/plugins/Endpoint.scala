@@ -41,9 +41,9 @@ object Endpoint {
     `type`: sum | min | max | count | average | custom,
     customFunction: js.ThisFunction1[/* this */ ColumnSummary, Endpoint, Double] = null
   ): Endpoint = {
-    val __obj = js.Dynamic.literal(destinationColumn = destinationColumn, destinationRow = destinationRow, forceNumeric = forceNumeric, ranges = ranges, readOnly = readOnly, result = result, reversedRowCoords = reversedRowCoords, roundFloat = roundFloat, sourceColumn = sourceColumn, suppressDataTypeErrors = suppressDataTypeErrors)
+    val __obj = js.Dynamic.literal(destinationColumn = destinationColumn.asInstanceOf[js.Any], destinationRow = destinationRow.asInstanceOf[js.Any], forceNumeric = forceNumeric.asInstanceOf[js.Any], ranges = ranges.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], reversedRowCoords = reversedRowCoords.asInstanceOf[js.Any], roundFloat = roundFloat.asInstanceOf[js.Any], sourceColumn = sourceColumn.asInstanceOf[js.Any], suppressDataTypeErrors = suppressDataTypeErrors.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (customFunction != null) __obj.updateDynamic("customFunction")(customFunction)
+    if (customFunction != null) __obj.updateDynamic("customFunction")(customFunction.asInstanceOf[js.Any])
     __obj.asInstanceOf[Endpoint]
   }
 }

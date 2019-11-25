@@ -14,8 +14,8 @@ trait ContextDependency[T] extends js.Object {
 object ContextDependency {
   @scala.inline
   def apply[T](context: ReactContext[T], observedBits: Double, next: ContextDependency[_] = null): ContextDependency[T] = {
-    val __obj = js.Dynamic.literal(context = context, observedBits = observedBits)
-    if (next != null) __obj.updateDynamic("next")(next)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], observedBits = observedBits.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextDependency[T]]
   }
 }

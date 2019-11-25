@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait ItemType extends js.Object
 
+object ItemType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def checkbox: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.checkbox = this.cast("checkbox")
+  @scala.inline
+  def normal: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.normal = this.cast("normal")
+  @scala.inline
+  def radio: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.radio = this.cast("radio")
+  @scala.inline
+  def separator: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.separator = this.cast("separator")
+}
+

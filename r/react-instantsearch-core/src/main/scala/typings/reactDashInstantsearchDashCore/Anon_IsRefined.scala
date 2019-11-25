@@ -14,7 +14,7 @@ trait Anon_IsRefined extends js.Object {
 object Anon_IsRefined {
   @scala.inline
   def apply(isRefined: Boolean, label: String, noRefinement: Boolean, value: String): Anon_IsRefined = {
-    val __obj = js.Dynamic.literal(isRefined = isRefined, label = label, noRefinement = noRefinement, value = value)
+    val __obj = js.Dynamic.literal(isRefined = isRefined.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], noRefinement = noRefinement.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsRefined]
   }

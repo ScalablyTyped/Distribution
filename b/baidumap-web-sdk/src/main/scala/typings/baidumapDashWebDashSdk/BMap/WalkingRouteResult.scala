@@ -21,7 +21,7 @@ object WalkingRouteResult {
     getPlan: Double => RoutePlan,
     getStart: () => LocalResultPoi
   ): WalkingRouteResult = {
-    val __obj = js.Dynamic.literal(city = city, getEnd = js.Any.fromFunction0(getEnd), getNumPlans = js.Any.fromFunction0(getNumPlans), getPlan = js.Any.fromFunction1(getPlan), getStart = js.Any.fromFunction0(getStart))
+    val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], getEnd = js.Any.fromFunction0(getEnd), getNumPlans = js.Any.fromFunction0(getNumPlans), getPlan = js.Any.fromFunction1(getPlan), getStart = js.Any.fromFunction0(getStart))
   
     __obj.asInstanceOf[WalkingRouteResult]
   }

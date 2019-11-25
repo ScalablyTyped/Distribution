@@ -13,7 +13,7 @@ trait Anon_Animation extends js.Object {
 object Anon_Animation {
   @scala.inline
   def apply(animation: TimelineAnimationOptions, focus: Boolean): Anon_Animation = {
-    val __obj = js.Dynamic.literal(animation = animation, focus = focus)
+    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Animation]
   }

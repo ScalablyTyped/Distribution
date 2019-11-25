@@ -12,7 +12,7 @@ trait Anon_Handled extends js.Object {
 object Anon_Handled {
   @scala.inline
   def apply(_handled: Double, _unhandled: Double): Anon_Handled = {
-    val __obj = js.Dynamic.literal(_handled = _handled, _unhandled = _unhandled)
+    val __obj = js.Dynamic.literal(_handled = _handled.asInstanceOf[js.Any], _unhandled = _unhandled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Handled]
   }

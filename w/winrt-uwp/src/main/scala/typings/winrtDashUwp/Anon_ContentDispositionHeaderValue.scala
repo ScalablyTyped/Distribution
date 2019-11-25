@@ -13,7 +13,7 @@ trait Anon_ContentDispositionHeaderValue extends js.Object {
 object Anon_ContentDispositionHeaderValue {
   @scala.inline
   def apply(contentDispositionHeaderValue: HttpContentDispositionHeaderValue, returnValue: Boolean): Anon_ContentDispositionHeaderValue = {
-    val __obj = js.Dynamic.literal(contentDispositionHeaderValue = contentDispositionHeaderValue, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(contentDispositionHeaderValue = contentDispositionHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContentDispositionHeaderValue]
   }

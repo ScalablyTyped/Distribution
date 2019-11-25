@@ -14,7 +14,7 @@ object ContentOptions {
   @scala.inline
   def apply(element: String | Node, attributes: js.Object = null): ContentOptions = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentOptions]
   }
 }

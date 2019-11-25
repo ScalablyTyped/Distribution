@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait DefaultOperator extends js.Object
 
+object DefaultOperator {
+  @scala.inline
+  def AND: typings.elasticsearch.elasticsearchStrings.AND = this.cast("AND")
+  @scala.inline
+  def OR: typings.elasticsearch.elasticsearchStrings.OR = this.cast("OR")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

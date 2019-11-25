@@ -25,9 +25,9 @@ object ListEventsResponse {
     timeRangeBegin: String = null
   ): ListEventsResponse = {
     val __obj = js.Dynamic.literal()
-    if (errorEvents != null) __obj.updateDynamic("errorEvents")(errorEvents)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (timeRangeBegin != null) __obj.updateDynamic("timeRangeBegin")(timeRangeBegin)
+    if (errorEvents != null) __obj.updateDynamic("errorEvents")(errorEvents.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (timeRangeBegin != null) __obj.updateDynamic("timeRangeBegin")(timeRangeBegin.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListEventsResponse]
   }
 }

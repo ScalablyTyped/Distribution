@@ -14,10 +14,10 @@ trait CustomLauncher extends js.Object {
 object CustomLauncher {
   @scala.inline
   def apply(base: String, browserName: String = null, flags: js.Array[String] = null, platform: String = null): CustomLauncher = {
-    val __obj = js.Dynamic.literal(base = base)
-    if (browserName != null) __obj.updateDynamic("browserName")(browserName)
-    if (flags != null) __obj.updateDynamic("flags")(flags)
-    if (platform != null) __obj.updateDynamic("platform")(platform)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any])
+    if (browserName != null) __obj.updateDynamic("browserName")(browserName.asInstanceOf[js.Any])
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomLauncher]
   }
 }

@@ -28,7 +28,7 @@ object DownLoadImageConfig {
     isShowProgressTips: Int | Double = null,
     success: /* res */ Anon_LocalId => Unit = null
   ): DownLoadImageConfig = {
-    val __obj = js.Dynamic.literal(serverId = serverId)
+    val __obj = js.Dynamic.literal(serverId = serverId.asInstanceOf[js.Any])
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))

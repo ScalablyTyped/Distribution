@@ -45,10 +45,10 @@ object ErrorContext {
     user: String = null
   ): ErrorContext = {
     val __obj = js.Dynamic.literal()
-    if (httpRequest != null) __obj.updateDynamic("httpRequest")(httpRequest)
-    if (reportLocation != null) __obj.updateDynamic("reportLocation")(reportLocation)
-    if (sourceReferences != null) __obj.updateDynamic("sourceReferences")(sourceReferences)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (httpRequest != null) __obj.updateDynamic("httpRequest")(httpRequest.asInstanceOf[js.Any])
+    if (reportLocation != null) __obj.updateDynamic("reportLocation")(reportLocation.asInstanceOf[js.Any])
+    if (sourceReferences != null) __obj.updateDynamic("sourceReferences")(sourceReferences.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorContext]
   }
 }

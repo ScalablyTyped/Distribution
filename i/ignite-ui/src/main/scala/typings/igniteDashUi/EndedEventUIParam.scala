@@ -20,7 +20,7 @@ object EndedEventUIParam {
   def apply(duration: Int | Double = null, source: String = null): EndedEventUIParam = {
     val __obj = js.Dynamic.literal()
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndedEventUIParam]
   }
 }

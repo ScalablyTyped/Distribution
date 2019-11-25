@@ -26,13 +26,13 @@ object ChannelSection {
     targeting: ChannelSectionTargeting = null
   ): ChannelSection = {
     val __obj = js.Dynamic.literal()
-    if (contentDetails != null) __obj.updateDynamic("contentDetails")(contentDetails)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (localizations != null) __obj.updateDynamic("localizations")(localizations)
-    if (snippet != null) __obj.updateDynamic("snippet")(snippet)
-    if (targeting != null) __obj.updateDynamic("targeting")(targeting)
+    if (contentDetails != null) __obj.updateDynamic("contentDetails")(contentDetails.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (localizations != null) __obj.updateDynamic("localizations")(localizations.asInstanceOf[js.Any])
+    if (snippet != null) __obj.updateDynamic("snippet")(snippet.asInstanceOf[js.Any])
+    if (targeting != null) __obj.updateDynamic("targeting")(targeting.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelSection]
   }
 }

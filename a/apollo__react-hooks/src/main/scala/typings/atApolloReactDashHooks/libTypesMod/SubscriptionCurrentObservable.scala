@@ -15,8 +15,8 @@ object SubscriptionCurrentObservable {
   @scala.inline
   def apply(query: Observable[_] = null, subscription: Subscription = null): SubscriptionCurrentObservable = {
     val __obj = js.Dynamic.literal()
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionCurrentObservable]
   }
 }

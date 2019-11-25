@@ -17,8 +17,8 @@ object _UnmarshalledCopyObjectResult {
   @scala.inline
   def apply(ETag: String = null, LastModified: Date = null): _UnmarshalledCopyObjectResult = {
     val __obj = js.Dynamic.literal()
-    if (ETag != null) __obj.updateDynamic("ETag")(ETag)
-    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified)
+    if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])
+    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledCopyObjectResult]
   }
 }

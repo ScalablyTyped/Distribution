@@ -14,8 +14,8 @@ trait MakeDirectoryOptions extends js.Object {
 object MakeDirectoryOptions {
   @scala.inline
   def apply(name: String, attributes: js.Object = null, key: String | Buffer = null): MakeDirectoryOptions = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[MakeDirectoryOptions]
   }

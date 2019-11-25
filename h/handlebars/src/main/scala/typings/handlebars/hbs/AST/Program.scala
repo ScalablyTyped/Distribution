@@ -12,8 +12,8 @@ trait Program extends Node {
 object Program {
   @scala.inline
   def apply(blockParams: js.Array[String], body: js.Array[Statement], loc: SourceLocation, `type`: String): Program = {
-    val __obj = js.Dynamic.literal(blockParams = blockParams, body = body, loc = loc)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(blockParams = blockParams.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Program]
   }
 }

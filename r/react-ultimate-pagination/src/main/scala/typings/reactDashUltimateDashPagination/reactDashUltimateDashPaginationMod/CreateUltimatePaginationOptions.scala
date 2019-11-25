@@ -19,7 +19,7 @@ trait CreateUltimatePaginationOptions extends js.Object {
 object CreateUltimatePaginationOptions {
   @scala.inline
   def apply(itemTypeToComponent: ItemTypeToComponent, WrapperComponent: String | ComponentType[_] = null): CreateUltimatePaginationOptions = {
-    val __obj = js.Dynamic.literal(itemTypeToComponent = itemTypeToComponent)
+    val __obj = js.Dynamic.literal(itemTypeToComponent = itemTypeToComponent.asInstanceOf[js.Any])
     if (WrapperComponent != null) __obj.updateDynamic("WrapperComponent")(WrapperComponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUltimatePaginationOptions]
   }

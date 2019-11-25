@@ -52,7 +52,7 @@ object Tip {
     name: String,
     typecode: String
   ): Tip = {
-    val __obj = js.Dynamic.literal(adcode = adcode, address = address, city = city, district = district, id = id, location = location, name = name, typecode = typecode)
+    val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any], district = district.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], typecode = typecode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Tip]
   }

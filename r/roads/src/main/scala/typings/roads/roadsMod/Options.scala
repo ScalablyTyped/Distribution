@@ -22,11 +22,11 @@ object Options {
     use_sourcemaps: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (babelify != null) __obj.updateDynamic("babelify")(babelify)
-    if (envify != null) __obj.updateDynamic("envify")(envify)
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (external != null) __obj.updateDynamic("external")(external)
-    if (!js.isUndefined(use_sourcemaps)) __obj.updateDynamic("use_sourcemaps")(use_sourcemaps)
+    if (babelify != null) __obj.updateDynamic("babelify")(babelify.asInstanceOf[js.Any])
+    if (envify != null) __obj.updateDynamic("envify")(envify.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (external != null) __obj.updateDynamic("external")(external.asInstanceOf[js.Any])
+    if (!js.isUndefined(use_sourcemaps)) __obj.updateDynamic("use_sourcemaps")(use_sourcemaps.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

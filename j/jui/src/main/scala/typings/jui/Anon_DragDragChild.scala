@@ -47,13 +47,13 @@ object Anon_DragDragChild {
     tpl: js.Any = null
   ): Anon_DragDragChild = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(drag)) __obj.updateDynamic("drag")(drag)
-    if (!js.isUndefined(dragChild)) __obj.updateDynamic("dragChild")(dragChild)
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (!js.isUndefined(rootFold)) __obj.updateDynamic("rootFold")(rootFold)
-    if (!js.isUndefined(rootHide)) __obj.updateDynamic("rootHide")(rootHide)
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    if (!js.isUndefined(drag)) __obj.updateDynamic("drag")(drag.asInstanceOf[js.Any])
+    if (!js.isUndefined(dragChild)) __obj.updateDynamic("dragChild")(dragChild.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootFold)) __obj.updateDynamic("rootFold")(rootFold.asInstanceOf[js.Any])
+    if (!js.isUndefined(rootHide)) __obj.updateDynamic("rootHide")(rootHide.asInstanceOf[js.Any])
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DragDragChild]
   }
 }

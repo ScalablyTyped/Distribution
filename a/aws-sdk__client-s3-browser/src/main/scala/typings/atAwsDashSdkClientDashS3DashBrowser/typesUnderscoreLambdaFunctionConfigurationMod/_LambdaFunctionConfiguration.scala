@@ -50,9 +50,9 @@ object _LambdaFunctionConfiguration {
     Filter: _NotificationConfigurationFilter = null,
     Id: String = null
   ): _LambdaFunctionConfiguration = {
-    val __obj = js.Dynamic.literal(Events = Events.asInstanceOf[js.Any], LambdaFunctionArn = LambdaFunctionArn)
-    if (Filter != null) __obj.updateDynamic("Filter")(Filter)
-    if (Id != null) __obj.updateDynamic("Id")(Id)
+    val __obj = js.Dynamic.literal(Events = Events.asInstanceOf[js.Any], LambdaFunctionArn = LambdaFunctionArn.asInstanceOf[js.Any])
+    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[_LambdaFunctionConfiguration]
   }
 }

@@ -15,8 +15,8 @@ trait MetadataRowGroupsColumnsInterface extends js.Object {
 object MetadataRowGroupsColumnsInterface {
   @scala.inline
   def apply(file_offset: ^, meta_data: Anon_Codec, file_path: String = null): MetadataRowGroupsColumnsInterface = {
-    val __obj = js.Dynamic.literal(file_offset = file_offset, meta_data = meta_data)
-    if (file_path != null) __obj.updateDynamic("file_path")(file_path)
+    val __obj = js.Dynamic.literal(file_offset = file_offset.asInstanceOf[js.Any], meta_data = meta_data.asInstanceOf[js.Any])
+    if (file_path != null) __obj.updateDynamic("file_path")(file_path.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetadataRowGroupsColumnsInterface]
   }
 }

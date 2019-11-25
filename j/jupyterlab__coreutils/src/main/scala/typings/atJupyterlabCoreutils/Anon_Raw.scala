@@ -13,7 +13,7 @@ trait Anon_Raw extends js.Object {
 object Anon_Raw {
   @scala.inline
   def apply(raw: String, rule: RegExp): Anon_Raw = {
-    val __obj = js.Dynamic.literal(raw = raw, rule = rule)
+    val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Raw]
   }

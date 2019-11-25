@@ -41,9 +41,9 @@ object Failure {
   /* key */ StringDictionary[js.Any] = null,
     `type`: String = null
   ): Failure = {
-    val __obj = js.Dynamic.literal(branch = branch, path = path, value = value)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Failure]
   }
 }

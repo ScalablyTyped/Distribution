@@ -57,15 +57,15 @@ object AlignLabelEventUIParam {
     width: js.Any = null
   ): AlignLabelEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (actualMaximumValue != null) __obj.updateDynamic("actualMaximumValue")(actualMaximumValue)
-    if (actualMinimumValue != null) __obj.updateDynamic("actualMinimumValue")(actualMinimumValue)
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX)
-    if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (actualMaximumValue != null) __obj.updateDynamic("actualMaximumValue")(actualMaximumValue.asInstanceOf[js.Any])
+    if (actualMinimumValue != null) __obj.updateDynamic("actualMinimumValue")(actualMinimumValue.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
+    if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlignLabelEventUIParam]
   }
 }

@@ -17,7 +17,7 @@ object PortalLayerProperties {
   @scala.inline
   def apply(portalItem: PortalItemProperties = null): PortalLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
+    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalLayerProperties]
   }
 }

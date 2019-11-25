@@ -12,7 +12,7 @@ object Credentials {
   @scala.inline
   def apply(trace: String = null): Credentials = {
     val __obj = js.Dynamic.literal()
-    if (trace != null) __obj.updateDynamic("trace")(trace)
+    if (trace != null) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credentials]
   }
 }

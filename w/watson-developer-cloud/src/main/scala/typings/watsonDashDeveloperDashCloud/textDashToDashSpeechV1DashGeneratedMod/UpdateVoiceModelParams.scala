@@ -28,12 +28,12 @@ object UpdateVoiceModelParams {
     return_response: js.UndefOr[Boolean] = js.undefined,
     words: js.Array[Word] = null
   ): UpdateVoiceModelParams = {
-    val __obj = js.Dynamic.literal(customization_id = customization_id)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
-    if (words != null) __obj.updateDynamic("words")(words)
+    val __obj = js.Dynamic.literal(customization_id = customization_id.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (words != null) __obj.updateDynamic("words")(words.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateVoiceModelParams]
   }
 }

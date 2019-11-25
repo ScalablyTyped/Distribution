@@ -60,7 +60,7 @@ object BuildReference {
     startTime: Date,
     status: BuildStatus
   ): BuildReference = {
-    val __obj = js.Dynamic.literal(_links = _links, buildNumber = buildNumber, deleted = deleted, finishTime = finishTime, id = id, queueTime = queueTime, requestedFor = requestedFor, result = result, startTime = startTime, status = status)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], buildNumber = buildNumber.asInstanceOf[js.Any], deleted = deleted.asInstanceOf[js.Any], finishTime = finishTime.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], queueTime = queueTime.asInstanceOf[js.Any], requestedFor = requestedFor.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BuildReference]
   }

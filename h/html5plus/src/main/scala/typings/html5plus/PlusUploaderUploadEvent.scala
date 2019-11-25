@@ -23,7 +23,7 @@ object PlusUploaderUploadEvent {
   @scala.inline
   def apply(statechanged: String = null): PlusUploaderUploadEvent = {
     val __obj = js.Dynamic.literal()
-    if (statechanged != null) __obj.updateDynamic("statechanged")(statechanged)
+    if (statechanged != null) __obj.updateDynamic("statechanged")(statechanged.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusUploaderUploadEvent]
   }
 }

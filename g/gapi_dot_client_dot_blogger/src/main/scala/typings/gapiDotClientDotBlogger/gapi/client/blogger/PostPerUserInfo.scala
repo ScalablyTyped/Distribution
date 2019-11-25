@@ -27,11 +27,11 @@ object PostPerUserInfo {
     userId: String = null
   ): PostPerUserInfo = {
     val __obj = js.Dynamic.literal()
-    if (blogId != null) __obj.updateDynamic("blogId")(blogId)
-    if (!js.isUndefined(hasEditAccess)) __obj.updateDynamic("hasEditAccess")(hasEditAccess)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (postId != null) __obj.updateDynamic("postId")(postId)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
+    if (blogId != null) __obj.updateDynamic("blogId")(blogId.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasEditAccess)) __obj.updateDynamic("hasEditAccess")(hasEditAccess.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (postId != null) __obj.updateDynamic("postId")(postId.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostPerUserInfo]
   }
 }

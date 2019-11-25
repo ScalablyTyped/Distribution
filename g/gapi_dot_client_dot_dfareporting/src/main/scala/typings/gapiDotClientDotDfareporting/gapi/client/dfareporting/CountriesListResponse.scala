@@ -15,8 +15,8 @@ object CountriesListResponse {
   @scala.inline
   def apply(countries: js.Array[Country] = null, kind: String = null): CountriesListResponse = {
     val __obj = js.Dynamic.literal()
-    if (countries != null) __obj.updateDynamic("countries")(countries)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (countries != null) __obj.updateDynamic("countries")(countries.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[CountriesListResponse]
   }
 }

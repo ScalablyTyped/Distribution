@@ -20,9 +20,9 @@ object SelectElement {
     value: String,
     location: Location = null
   ): SelectElement = {
-    val __obj = js.Dynamic.literal(options = options, value = value)
-    __obj.updateDynamic("type")(`type`)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectElement]
   }
 }

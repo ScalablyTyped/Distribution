@@ -12,7 +12,7 @@ trait SourceLocation extends js.Object {
 object SourceLocation {
   @scala.inline
   def apply(line: Double, uri: String): SourceLocation = {
-    val __obj = js.Dynamic.literal(line = line, uri = uri)
+    val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SourceLocation]
   }

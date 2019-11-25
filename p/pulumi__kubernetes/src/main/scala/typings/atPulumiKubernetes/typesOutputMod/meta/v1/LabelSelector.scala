@@ -26,7 +26,7 @@ trait LabelSelector extends js.Object {
 object LabelSelector {
   @scala.inline
   def apply(matchExpressions: js.Array[LabelSelectorRequirement], matchLabels: StringDictionary[String]): LabelSelector = {
-    val __obj = js.Dynamic.literal(matchExpressions = matchExpressions, matchLabels = matchLabels)
+    val __obj = js.Dynamic.literal(matchExpressions = matchExpressions.asInstanceOf[js.Any], matchLabels = matchLabels.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LabelSelector]
   }

@@ -80,12 +80,12 @@ object RouteOptionsAccess {
   ): RouteOptionsAccess = {
     val __obj = js.Dynamic.literal()
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
-    if (entity != null) __obj.updateDynamic("entity")(entity)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (strategies != null) __obj.updateDynamic("strategies")(strategies)
-    if (strategy != null) __obj.updateDynamic("strategy")(strategy)
+    if (strategies != null) __obj.updateDynamic("strategies")(strategies.asInstanceOf[js.Any])
+    if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteOptionsAccess]
   }
 }

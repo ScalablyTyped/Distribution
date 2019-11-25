@@ -12,8 +12,8 @@ trait SelectionRange extends js.Object {
 object SelectionRange {
   @scala.inline
   def apply(textSpan: TextSpan, parent: SelectionRange = null): SelectionRange = {
-    val __obj = js.Dynamic.literal(textSpan = textSpan)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(textSpan = textSpan.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionRange]
   }
 }

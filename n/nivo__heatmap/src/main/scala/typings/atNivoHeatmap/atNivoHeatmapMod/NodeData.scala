@@ -29,7 +29,7 @@ object NodeData {
     y: Double,
     yKey: String | Double
   ): NodeData = {
-    val __obj = js.Dynamic.literal(height = height, key = key, opacity = opacity, value = value, width = width, x = x, xKey = xKey.asInstanceOf[js.Any], y = y, yKey = yKey.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xKey = xKey.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yKey = yKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NodeData]
   }

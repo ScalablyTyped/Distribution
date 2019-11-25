@@ -33,7 +33,7 @@ object Anon_CONTAINS {
     SELECT: String,
     STARTS_WITH: Double
   ): Anon_CONTAINS = {
-    val __obj = js.Dynamic.literal(CONTAINS = CONTAINS, ENDS_WITH = ENDS_WITH, EXACT = EXACT, GREATER_THAN = GREATER_THAN, GREATER_THAN_OR_EQUAL = GREATER_THAN_OR_EQUAL, INPUT = INPUT, LESS_THAN = LESS_THAN, LESS_THAN_OR_EQUAL = LESS_THAN_OR_EQUAL, NOT_EQUAL = NOT_EQUAL, SELECT = SELECT, STARTS_WITH = STARTS_WITH)
+    val __obj = js.Dynamic.literal(CONTAINS = CONTAINS.asInstanceOf[js.Any], ENDS_WITH = ENDS_WITH.asInstanceOf[js.Any], EXACT = EXACT.asInstanceOf[js.Any], GREATER_THAN = GREATER_THAN.asInstanceOf[js.Any], GREATER_THAN_OR_EQUAL = GREATER_THAN_OR_EQUAL.asInstanceOf[js.Any], INPUT = INPUT.asInstanceOf[js.Any], LESS_THAN = LESS_THAN.asInstanceOf[js.Any], LESS_THAN_OR_EQUAL = LESS_THAN_OR_EQUAL.asInstanceOf[js.Any], NOT_EQUAL = NOT_EQUAL.asInstanceOf[js.Any], SELECT = SELECT.asInstanceOf[js.Any], STARTS_WITH = STARTS_WITH.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CONTAINS]
   }

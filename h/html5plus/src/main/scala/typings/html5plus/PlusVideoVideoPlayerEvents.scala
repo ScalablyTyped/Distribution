@@ -80,13 +80,13 @@ object PlusVideoVideoPlayerEvents {
     waiting: String = null
   ): PlusVideoVideoPlayerEvents = {
     val __obj = js.Dynamic.literal()
-    if (ended != null) __obj.updateDynamic("ended")(ended)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (fullscreenchange != null) __obj.updateDynamic("fullscreenchange")(fullscreenchange)
-    if (pause != null) __obj.updateDynamic("pause")(pause)
-    if (play != null) __obj.updateDynamic("play")(play)
-    if (timeupdate != null) __obj.updateDynamic("timeupdate")(timeupdate)
-    if (waiting != null) __obj.updateDynamic("waiting")(waiting)
+    if (ended != null) __obj.updateDynamic("ended")(ended.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (fullscreenchange != null) __obj.updateDynamic("fullscreenchange")(fullscreenchange.asInstanceOf[js.Any])
+    if (pause != null) __obj.updateDynamic("pause")(pause.asInstanceOf[js.Any])
+    if (play != null) __obj.updateDynamic("play")(play.asInstanceOf[js.Any])
+    if (timeupdate != null) __obj.updateDynamic("timeupdate")(timeupdate.asInstanceOf[js.Any])
+    if (waiting != null) __obj.updateDynamic("waiting")(waiting.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusVideoVideoPlayerEvents]
   }
 }

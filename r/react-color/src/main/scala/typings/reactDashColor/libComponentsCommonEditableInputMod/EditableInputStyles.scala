@@ -15,9 +15,9 @@ object EditableInputStyles {
   @scala.inline
   def apply(input: CSSProperties = null, label: CSSProperties = null, wrap: CSSProperties = null): EditableInputStyles = {
     val __obj = js.Dynamic.literal()
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (wrap != null) __obj.updateDynamic("wrap")(wrap)
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (wrap != null) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditableInputStyles]
   }
 }

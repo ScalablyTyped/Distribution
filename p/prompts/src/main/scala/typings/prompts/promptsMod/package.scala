@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object promptsMod {
   import typings.prompts.promptsNumbers.`false`
 
-  type Answers[T /* <: String */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Answers[T /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ id in T ]: any}
     */ typings.prompts.promptsStrings.Answers with js.Any
   type Falsy = js.UndefOr[`false` | Null]

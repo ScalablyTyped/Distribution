@@ -18,9 +18,9 @@ object GooglePrivacyDlpV2beta1CryptoKey {
     unwrapped: GooglePrivacyDlpV2beta1UnwrappedCryptoKey = null
   ): GooglePrivacyDlpV2beta1CryptoKey = {
     val __obj = js.Dynamic.literal()
-    if (kmsWrapped != null) __obj.updateDynamic("kmsWrapped")(kmsWrapped)
-    if (transient != null) __obj.updateDynamic("transient")(transient)
-    if (unwrapped != null) __obj.updateDynamic("unwrapped")(unwrapped)
+    if (kmsWrapped != null) __obj.updateDynamic("kmsWrapped")(kmsWrapped.asInstanceOf[js.Any])
+    if (transient != null) __obj.updateDynamic("transient")(transient.asInstanceOf[js.Any])
+    if (unwrapped != null) __obj.updateDynamic("unwrapped")(unwrapped.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1CryptoKey]
   }
 }

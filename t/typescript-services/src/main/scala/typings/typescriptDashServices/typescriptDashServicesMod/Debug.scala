@@ -1,6 +1,5 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScript.AssertionLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,6 +19,6 @@ object Debug extends js.Object {
   def assert(expression: js.Any, message: String, verboseDebugInfo: js.Function0[String]): Unit = js.native
   def fail(): Unit = js.native
   def fail(message: String): Unit = js.native
-  def shouldAssert(level: AssertionLevel): Boolean = js.native
+  def shouldAssert(level: typings.typescriptDashServices.TypeScript.AssertionLevel): Boolean = js.native
 }
 

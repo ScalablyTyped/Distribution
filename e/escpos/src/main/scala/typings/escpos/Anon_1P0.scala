@@ -16,7 +16,7 @@ trait Anon_1P0 extends js.Object {
 object Anon_1P0 {
   @scala.inline
   def apply(CMD_P1: `BACKSLASHu001D(k`, CMD_P2: `1P0`): Anon_1P0 = {
-    val __obj = js.Dynamic.literal(CMD_P1 = CMD_P1, CMD_P2 = CMD_P2)
+    val __obj = js.Dynamic.literal(CMD_P1 = CMD_P1.asInstanceOf[js.Any], CMD_P2 = CMD_P2.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_1P0]
   }

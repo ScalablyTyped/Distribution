@@ -13,7 +13,7 @@ trait Category extends js.Object {
 object Category {
   @scala.inline
   def apply(emojis: js.Array[String], id: String, name: String): Category = {
-    val __obj = js.Dynamic.literal(emojis = emojis, id = id, name = name)
+    val __obj = js.Dynamic.literal(emojis = emojis.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Category]
   }

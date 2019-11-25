@@ -29,7 +29,7 @@ trait AddCardAuthResult extends js.Object {
 object AddCardAuthResult {
   @scala.inline
   def apply(code: String, result: Anon_Appid, resultStatus: String, success: Boolean): AddCardAuthResult = {
-    val __obj = js.Dynamic.literal(code = code, result = result, resultStatus = resultStatus, success = success)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], resultStatus = resultStatus.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AddCardAuthResult]
   }

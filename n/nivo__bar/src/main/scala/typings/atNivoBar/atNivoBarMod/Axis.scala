@@ -39,7 +39,7 @@ object Axis {
   ): Axis = {
     val __obj = js.Dynamic.literal()
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend)
+    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
     if (legendOffset != null) __obj.updateDynamic("legendOffset")(legendOffset.asInstanceOf[js.Any])
     if (legendPosition != null) __obj.updateDynamic("legendPosition")(legendPosition.asInstanceOf[js.Any])
     if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])

@@ -13,7 +13,7 @@ object Request {
   @scala.inline
   def apply(useragent: Details = null): Request = {
     val __obj = js.Dynamic.literal()
-    if (useragent != null) __obj.updateDynamic("useragent")(useragent)
+    if (useragent != null) __obj.updateDynamic("useragent")(useragent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request]
   }
 }

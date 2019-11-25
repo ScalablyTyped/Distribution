@@ -20,9 +20,9 @@ object AppVersion {
   @scala.inline
   def apply(track: String = null, versionCode: Int | Double = null, versionString: String = null): AppVersion = {
     val __obj = js.Dynamic.literal()
-    if (track != null) __obj.updateDynamic("track")(track)
+    if (track != null) __obj.updateDynamic("track")(track.asInstanceOf[js.Any])
     if (versionCode != null) __obj.updateDynamic("versionCode")(versionCode.asInstanceOf[js.Any])
-    if (versionString != null) __obj.updateDynamic("versionString")(versionString)
+    if (versionString != null) __obj.updateDynamic("versionString")(versionString.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppVersion]
   }
 }

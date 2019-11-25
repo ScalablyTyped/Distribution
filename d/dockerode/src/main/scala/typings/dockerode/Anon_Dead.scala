@@ -33,7 +33,7 @@ object Anon_Dead {
     StartedAt: String,
     Status: String
   ): Anon_Dead = {
-    val __obj = js.Dynamic.literal(Dead = Dead, Error = Error, ExitCode = ExitCode, FinishedAt = FinishedAt, OOMKilled = OOMKilled, Paused = Paused, Pid = Pid, Restarting = Restarting, Running = Running, StartedAt = StartedAt, Status = Status)
+    val __obj = js.Dynamic.literal(Dead = Dead.asInstanceOf[js.Any], Error = Error.asInstanceOf[js.Any], ExitCode = ExitCode.asInstanceOf[js.Any], FinishedAt = FinishedAt.asInstanceOf[js.Any], OOMKilled = OOMKilled.asInstanceOf[js.Any], Paused = Paused.asInstanceOf[js.Any], Pid = Pid.asInstanceOf[js.Any], Restarting = Restarting.asInstanceOf[js.Any], Running = Running.asInstanceOf[js.Any], StartedAt = StartedAt.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Dead]
   }

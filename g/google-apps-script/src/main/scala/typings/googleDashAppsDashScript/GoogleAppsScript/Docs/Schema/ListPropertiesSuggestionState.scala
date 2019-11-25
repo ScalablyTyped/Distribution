@@ -12,7 +12,7 @@ object ListPropertiesSuggestionState {
   @scala.inline
   def apply(nestingLevelsSuggestionStates: js.Array[NestingLevelSuggestionState] = null): ListPropertiesSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (nestingLevelsSuggestionStates != null) __obj.updateDynamic("nestingLevelsSuggestionStates")(nestingLevelsSuggestionStates)
+    if (nestingLevelsSuggestionStates != null) __obj.updateDynamic("nestingLevelsSuggestionStates")(nestingLevelsSuggestionStates.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPropertiesSuggestionState]
   }
 }

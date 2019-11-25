@@ -23,11 +23,11 @@ object InventoryItem {
     updated_at: Int | Double = null
   ): InventoryItem = {
     val __obj = js.Dynamic.literal()
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (sku != null) __obj.updateDynamic("sku")(sku)
-    if (!js.isUndefined(tracked)) __obj.updateDynamic("tracked")(tracked)
+    if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
+    if (!js.isUndefined(tracked)) __obj.updateDynamic("tracked")(tracked.asInstanceOf[js.Any])
     if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryItem]
   }

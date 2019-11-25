@@ -12,7 +12,7 @@ trait LineTooltipProps extends js.Object {
 object LineTooltipProps {
   @scala.inline
   def apply(point: Anon_BorderColor): LineTooltipProps = {
-    val __obj = js.Dynamic.literal(point = point)
+    val __obj = js.Dynamic.literal(point = point.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LineTooltipProps]
   }

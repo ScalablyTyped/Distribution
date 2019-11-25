@@ -12,8 +12,8 @@ trait Anon_Accept extends js.Object {
 object Anon_Accept {
   @scala.inline
   def apply(accept: String, `content-type`: String): Anon_Accept = {
-    val __obj = js.Dynamic.literal(accept = accept)
-    __obj.updateDynamic("content-type")(`content-type`)
+    val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any])
+    __obj.updateDynamic("content-type")(`content-type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Accept]
   }
 }

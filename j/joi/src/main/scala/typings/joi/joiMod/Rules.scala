@@ -8,7 +8,7 @@ trait Rules[P /* <: js.Object */] extends js.Object {
   var description: js.UndefOr[String | (js.Function1[/* params */ P, String])] = js.undefined
   var name: String
   var params: js.UndefOr[
-    ObjectSchema | (/* import warning: ImportType.apply c Unsupported type mapping: 
+    ObjectSchema | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof P ]: joi.joi.SchemaLike}
     */ typings.joi.joiStrings.Rules with js.Any)
   ] = js.undefined
@@ -30,7 +30,7 @@ object Rules {
   def apply[P /* <: js.Object */](
     name: String,
     description: String | (js.Function1[/* params */ P, String]) = null,
-    params: ObjectSchema | (/* import warning: ImportType.apply c Unsupported type mapping: 
+    params: ObjectSchema | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof P ]: joi.joi.SchemaLike}
     */ typings.joi.joiStrings.Rules with js.Any) = null,
     setup: js.ThisFunction1[/* this */ ExtensionBoundSchema, /* params */ P, Schema | Unit] = null,
@@ -43,11 +43,11 @@ object Rules {
       _
     ] = null
   ): Rules[P] = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (setup != null) __obj.updateDynamic("setup")(setup)
-    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (setup != null) __obj.updateDynamic("setup")(setup.asInstanceOf[js.Any])
+    if (validate != null) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rules[P]]
   }
 }

@@ -21,8 +21,8 @@ object ThemeContextI {
     Provider: Provider[ThemeValue],
     displayName: String = null
   ): ThemeContextI = {
-    val __obj = js.Dynamic.literal(Consumer = Consumer, Extend = Extend, Provider = Provider)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    val __obj = js.Dynamic.literal(Consumer = Consumer.asInstanceOf[js.Any], Extend = Extend.asInstanceOf[js.Any], Provider = Provider.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeContextI]
   }
 }

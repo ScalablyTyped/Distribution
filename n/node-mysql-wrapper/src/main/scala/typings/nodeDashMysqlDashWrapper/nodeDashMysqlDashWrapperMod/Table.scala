@@ -1,6 +1,5 @@
 package typings.nodeDashMysqlDashWrapper.nodeDashMysqlDashWrapperMod
 
-import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,19 +63,19 @@ class Table[T] protected () extends js.Object {
   /**
     *
     */
-  def find(criteriaRawJsObject: js.Any): ^[js.Array[T]] = js.native
+  def find(criteriaRawJsObject: js.Any): typings.bluebird.bluebirdMod.^[js.Array[T]] = js.native
    // only criteria
-  def find(criteriaRawJsObject: js.Any, callback: js.Function1[/* _results */ js.Array[T], _]): ^[js.Array[T]] = js.native
-  def findAll(): ^[js.Array[T]] = js.native
+  def find(criteriaRawJsObject: js.Any, callback: js.Function1[/* _results */ js.Array[T], _]): typings.bluebird.bluebirdMod.^[js.Array[T]] = js.native
+  def findAll(): typings.bluebird.bluebirdMod.^[js.Array[T]] = js.native
    // only criteria and promise
-  def findAll(tableRules: RawRules): ^[js.Array[T]] = js.native
-  def findAll(tableRules: RawRules, callback: js.Function1[/* _results */ js.Array[T], _]): ^[js.Array[T]] = js.native
-  def findById(id: String): ^[T] = js.native
-  def findById(id: String, callback: js.Function1[/* result */ T, _]): ^[T] = js.native
-  def findById(id: Double): ^[T] = js.native
-  def findById(id: Double, callback: js.Function1[/* result */ T, _]): ^[T] = js.native
-  def findSingle(criteriaRawJsObject: js.Any): ^[T] = js.native
-  def findSingle(criteriaRawJsObject: js.Any, callback: js.Function1[/* _result */ T, _]): ^[T] = js.native
+  def findAll(tableRules: RawRules): typings.bluebird.bluebirdMod.^[js.Array[T]] = js.native
+  def findAll(tableRules: RawRules, callback: js.Function1[/* _results */ js.Array[T], _]): typings.bluebird.bluebirdMod.^[js.Array[T]] = js.native
+  def findById(id: String): typings.bluebird.bluebirdMod.^[T] = js.native
+  def findById(id: String, callback: js.Function1[/* result */ T, _]): typings.bluebird.bluebirdMod.^[T] = js.native
+  def findById(id: Double): typings.bluebird.bluebirdMod.^[T] = js.native
+  def findById(id: Double, callback: js.Function1[/* result */ T, _]): typings.bluebird.bluebirdMod.^[T] = js.native
+  def findSingle(criteriaRawJsObject: js.Any): typings.bluebird.bluebirdMod.^[T] = js.native
+  def findSingle(criteriaRawJsObject: js.Any, callback: js.Function1[/* _result */ T, _]): typings.bluebird.bluebirdMod.^[T] = js.native
   /**
     * Returns the primary key's value from an object.
     * @param {any} jsObject the object which you want to find and return the value of the primary key.
@@ -121,14 +120,14 @@ class Table[T] protected () extends js.Object {
     * @return {nothing}
     */
   def on(evtType: String, callback: js.Function1[/* rawResults */ js.Array[_], Unit]): Unit = js.native
-  def remove(criteriaOrID: String, callback: js.Function1[/* _result */ DeleteAnswer, _]): ^[DeleteAnswer] = js.native
-  def remove(criteriaOrID: js.Any, callback: js.Function1[/* _result */ DeleteAnswer, _]): ^[DeleteAnswer] = js.native
-  def remove(criteriaOrID: Double, callback: js.Function1[/* _result */ DeleteAnswer, _]): ^[DeleteAnswer] = js.native
+  def remove(criteriaOrID: String, callback: js.Function1[/* _result */ DeleteAnswer, _]): typings.bluebird.bluebirdMod.^[DeleteAnswer] = js.native
+  def remove(criteriaOrID: js.Any, callback: js.Function1[/* _result */ DeleteAnswer, _]): typings.bluebird.bluebirdMod.^[DeleteAnswer] = js.native
+  def remove(criteriaOrID: Double, callback: js.Function1[/* _result */ DeleteAnswer, _]): typings.bluebird.bluebirdMod.^[DeleteAnswer] = js.native
    // ID without callback
    // criteria obj without callback
-  def remove(criteriaRawObject: js.Any): ^[DeleteAnswer] = js.native
-  def remove(id: String): ^[DeleteAnswer] = js.native
-  def remove(id: Double): ^[DeleteAnswer] = js.native
+  def remove(criteriaRawObject: js.Any): typings.bluebird.bluebirdMod.^[DeleteAnswer] = js.native
+  def remove(id: String): typings.bluebird.bluebirdMod.^[DeleteAnswer] = js.native
+  def remove(id: Double): typings.bluebird.bluebirdMod.^[DeleteAnswer] = js.native
   /**
     * Converts and returns an object from this form: { aProperty:'dsda', otherProperty:something, anyPropertyName:true } to { a_property:..., other_property...,any_property_name...}
     * @param {any} row the raw row object.
@@ -136,7 +135,7 @@ class Table[T] protected () extends js.Object {
     * @return {any}
     */
   def rowFromObject(obj: js.Any): js.Any = js.native
-  def save(criteriaRawJsObject: js.Any): ^[_] = js.native
-  def save(criteriaRawJsObject: js.Any, callback: js.Function1[/* _result */ js.Any, _]): ^[_] = js.native
+  def save(criteriaRawJsObject: js.Any): typings.bluebird.bluebirdMod.^[_] = js.native
+  def save(criteriaRawJsObject: js.Any, callback: js.Function1[/* _result */ js.Any, _]): typings.bluebird.bluebirdMod.^[_] = js.native
 }
 

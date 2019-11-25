@@ -22,11 +22,11 @@ object Anon_Delimiter {
     qualifier: String = null
   ): Anon_Delimiter = {
     val __obj = js.Dynamic.literal()
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
-    if (!js.isUndefined(encloseNumbers)) __obj.updateDynamic("encloseNumbers")(encloseNumbers)
-    if (escape != null) __obj.updateDynamic("escape")(escape)
-    if (!js.isUndefined(keys)) __obj.updateDynamic("keys")(keys)
-    if (qualifier != null) __obj.updateDynamic("qualifier")(qualifier)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(encloseNumbers)) __obj.updateDynamic("encloseNumbers")(encloseNumbers.asInstanceOf[js.Any])
+    if (escape != null) __obj.updateDynamic("escape")(escape.asInstanceOf[js.Any])
+    if (!js.isUndefined(keys)) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
+    if (qualifier != null) __obj.updateDynamic("qualifier")(qualifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Delimiter]
   }
 }

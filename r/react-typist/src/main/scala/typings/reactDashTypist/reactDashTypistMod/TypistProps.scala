@@ -35,8 +35,8 @@ object TypistProps {
   ): TypistProps = {
     val __obj = js.Dynamic.literal()
     if (avgTypingDelay != null) __obj.updateDynamic("avgTypingDelay")(avgTypingDelay.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (delayGenerator != null) __obj.updateDynamic("delayGenerator")(js.Any.fromFunction3(delayGenerator))
     if (onCharacterTyped != null) __obj.updateDynamic("onCharacterTyped")(js.Any.fromFunction2(onCharacterTyped))
     if (onLineTyped != null) __obj.updateDynamic("onLineTyped")(js.Any.fromFunction2(onLineTyped))

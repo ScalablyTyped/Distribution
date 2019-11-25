@@ -12,7 +12,7 @@ trait Anon_MediaType extends js.Object {
 object Anon_MediaType {
   @scala.inline
   def apply(mediaType: String, onVDOMEvent: () => Unit): Anon_MediaType = {
-    val __obj = js.Dynamic.literal(mediaType = mediaType, onVDOMEvent = js.Any.fromFunction0(onVDOMEvent))
+    val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], onVDOMEvent = js.Any.fromFunction0(onVDOMEvent))
   
     __obj.asInstanceOf[Anon_MediaType]
   }

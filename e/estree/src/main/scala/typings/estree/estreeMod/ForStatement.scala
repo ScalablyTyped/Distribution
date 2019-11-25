@@ -28,15 +28,15 @@ object ForStatement {
     trailingComments: js.Array[Comment] = null,
     update: Expression = null
   ): ForStatement = {
-    val __obj = js.Dynamic.literal(body = body)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (test != null) __obj.updateDynamic("test")(test)
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForStatement]
   }
 }

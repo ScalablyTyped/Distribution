@@ -20,7 +20,7 @@ trait UDPMessage extends js.Object {
 object UDPMessage {
   @scala.inline
   def apply(message: ArrayBuffer, remoteInfo: Anon_Address): UDPMessage = {
-    val __obj = js.Dynamic.literal(message = message, remoteInfo = remoteInfo)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], remoteInfo = remoteInfo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UDPMessage]
   }

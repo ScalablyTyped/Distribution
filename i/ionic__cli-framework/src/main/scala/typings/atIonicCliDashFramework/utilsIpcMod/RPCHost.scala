@@ -12,15 +12,19 @@ class RPCHost protected () extends js.Object {
   val modulePath: String = js.native
   var rpc: RPCProcess = js.native
   def call[R /* <: RPCResponse[_, js.Object] */](
-    procedure: /* import warning: ImportType.apply Failed type conversion: R['procedure'] */ js.Any,
-    args: /* import warning: ImportType.apply Failed type conversion: R['request']['args'] */ js.Any
-  ): js.Promise[/* import warning: ImportType.apply Failed type conversion: R['data'] */ js.Any] = js.native
+    procedure: /* import warning: importer.ImportType#apply Failed type conversion: R['procedure'] */ js.Any,
+    args: /* import warning: importer.ImportType#apply Failed type conversion: R['request']['args'] */ js.Any
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: R['data'] */ js.Any
+  ] = js.native
   def end(): Unit = js.native
   def register[R /* <: RPCResponse[_, js.Object] */](
-    procedure: /* import warning: ImportType.apply Failed type conversion: R['procedure'] */ js.Any,
+    procedure: /* import warning: importer.ImportType#apply Failed type conversion: R['procedure'] */ js.Any,
     fn: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: R['request']['args'] */ /* args */ js.Any, 
-      js.Promise[/* import warning: ImportType.apply Failed type conversion: R['data'] */ js.Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: R['request']['args'] */ /* args */ js.Any, 
+      js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: R['data'] */ js.Any
+      ]
     ]
   ): Unit = js.native
   def start(): Unit = js.native

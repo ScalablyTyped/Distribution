@@ -27,9 +27,9 @@ object RenderingContextConfig {
     preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined
   ): RenderingContextConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias)
+    if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias.asInstanceOf[js.Any])
     if (antialiasSamples != null) __obj.updateDynamic("antialiasSamples")(antialiasSamples.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer)
+    if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderingContextConfig]
   }
 }

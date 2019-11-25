@@ -47,23 +47,23 @@ object ListViewOptions {
     template: js.Function = null
   ): ListViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (altTemplate != null) __obj.updateDynamic("altTemplate")(altTemplate)
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind)
+    if (altTemplate != null) __obj.updateDynamic("altTemplate")(altTemplate.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.asInstanceOf[js.Any])
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction1(dataBinding))
     if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (edit != null) __obj.updateDynamic("edit")(js.Any.fromFunction1(edit))
-    if (editTemplate != null) __obj.updateDynamic("editTemplate")(editTemplate)
+    if (editTemplate != null) __obj.updateDynamic("editTemplate")(editTemplate.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable.asInstanceOf[js.Any])
     if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
     if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction1(save))
     if (scrollable != null) __obj.updateDynamic("scrollable")(scrollable.asInstanceOf[js.Any])
     if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListViewOptions]
   }
 }

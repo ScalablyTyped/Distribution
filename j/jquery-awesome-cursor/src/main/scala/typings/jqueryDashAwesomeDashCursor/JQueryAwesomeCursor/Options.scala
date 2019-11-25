@@ -26,11 +26,11 @@ object Options {
     size: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (flip != null) __obj.updateDynamic("flip")(flip)
-    if (font != null) __obj.updateDynamic("font")(font)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (flip != null) __obj.updateDynamic("flip")(flip.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (hotspot != null) __obj.updateDynamic("hotspot")(hotspot.asInstanceOf[js.Any])
-    if (outline != null) __obj.updateDynamic("outline")(outline)
+    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

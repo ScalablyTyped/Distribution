@@ -36,16 +36,16 @@ object IContextualMenuState {
     submenuTarget: Element = null
   ): IContextualMenuState = {
     val __obj = js.Dynamic.literal()
-    if (contextualMenuItems != null) __obj.updateDynamic("contextualMenuItems")(contextualMenuItems)
-    if (contextualMenuTarget != null) __obj.updateDynamic("contextualMenuTarget")(contextualMenuTarget)
-    if (dismissedMenuItemKey != null) __obj.updateDynamic("dismissedMenuItemKey")(dismissedMenuItemKey)
-    if (!js.isUndefined(expandedByMouseClick)) __obj.updateDynamic("expandedByMouseClick")(expandedByMouseClick)
-    if (expandedMenuItemKey != null) __obj.updateDynamic("expandedMenuItemKey")(expandedMenuItemKey)
-    if (positions != null) __obj.updateDynamic("positions")(positions)
-    if (slideDirectionalClassName != null) __obj.updateDynamic("slideDirectionalClassName")(slideDirectionalClassName)
-    if (subMenuId != null) __obj.updateDynamic("subMenuId")(subMenuId)
-    if (submenuDirection != null) __obj.updateDynamic("submenuDirection")(submenuDirection)
-    if (submenuTarget != null) __obj.updateDynamic("submenuTarget")(submenuTarget)
+    if (contextualMenuItems != null) __obj.updateDynamic("contextualMenuItems")(contextualMenuItems.asInstanceOf[js.Any])
+    if (contextualMenuTarget != null) __obj.updateDynamic("contextualMenuTarget")(contextualMenuTarget.asInstanceOf[js.Any])
+    if (dismissedMenuItemKey != null) __obj.updateDynamic("dismissedMenuItemKey")(dismissedMenuItemKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandedByMouseClick)) __obj.updateDynamic("expandedByMouseClick")(expandedByMouseClick.asInstanceOf[js.Any])
+    if (expandedMenuItemKey != null) __obj.updateDynamic("expandedMenuItemKey")(expandedMenuItemKey.asInstanceOf[js.Any])
+    if (positions != null) __obj.updateDynamic("positions")(positions.asInstanceOf[js.Any])
+    if (slideDirectionalClassName != null) __obj.updateDynamic("slideDirectionalClassName")(slideDirectionalClassName.asInstanceOf[js.Any])
+    if (subMenuId != null) __obj.updateDynamic("subMenuId")(subMenuId.asInstanceOf[js.Any])
+    if (submenuDirection != null) __obj.updateDynamic("submenuDirection")(submenuDirection.asInstanceOf[js.Any])
+    if (submenuTarget != null) __obj.updateDynamic("submenuTarget")(submenuTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContextualMenuState]
   }
 }

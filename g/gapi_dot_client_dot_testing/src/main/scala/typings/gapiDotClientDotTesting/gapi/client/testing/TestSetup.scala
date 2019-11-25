@@ -41,11 +41,11 @@ object TestSetup {
     networkProfile: String = null
   ): TestSetup = {
     val __obj = js.Dynamic.literal()
-    if (account != null) __obj.updateDynamic("account")(account)
-    if (directoriesToPull != null) __obj.updateDynamic("directoriesToPull")(directoriesToPull)
-    if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables)
-    if (filesToPush != null) __obj.updateDynamic("filesToPush")(filesToPush)
-    if (networkProfile != null) __obj.updateDynamic("networkProfile")(networkProfile)
+    if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
+    if (directoriesToPull != null) __obj.updateDynamic("directoriesToPull")(directoriesToPull.asInstanceOf[js.Any])
+    if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables.asInstanceOf[js.Any])
+    if (filesToPush != null) __obj.updateDynamic("filesToPush")(filesToPush.asInstanceOf[js.Any])
+    if (networkProfile != null) __obj.updateDynamic("networkProfile")(networkProfile.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestSetup]
   }
 }

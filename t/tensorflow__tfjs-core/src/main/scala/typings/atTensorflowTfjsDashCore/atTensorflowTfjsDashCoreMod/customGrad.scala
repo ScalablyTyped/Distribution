@@ -1,7 +1,6 @@
 package typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod
 
 import typings.atTensorflowTfjsDashCore.distEngineMod.CustomGradientFunc
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,6 +47,9 @@ object customGrad extends js.Object {
     *     returns the custom gradients of `f` with respect to its inputs.
     */
   /** @doc {heading: 'Training', subheading: 'Gradients'} */
-  def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](f: CustomGradientFunc[T]): js.Function1[/* repeated */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank], T] = js.native
+  def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](f: CustomGradientFunc[T]): js.Function1[
+    /* repeated */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank], 
+    T
+  ] = js.native
 }
 

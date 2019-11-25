@@ -23,7 +23,7 @@ object Option {
     val __obj = js.Dynamic.literal()
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (loaded != null) __obj.updateDynamic("loaded")(js.Any.fromFunction1(loaded))
-    if (rootMargin != null) __obj.updateDynamic("rootMargin")(rootMargin)
+    if (rootMargin != null) __obj.updateDynamic("rootMargin")(rootMargin.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[Option]
   }

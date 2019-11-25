@@ -16,8 +16,8 @@ object IRbmSuggestedReply {
   @scala.inline
   def apply(postbackData: String = null, text: String = null): IRbmSuggestedReply = {
     val __obj = js.Dynamic.literal()
-    if (postbackData != null) __obj.updateDynamic("postbackData")(postbackData)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (postbackData != null) __obj.updateDynamic("postbackData")(postbackData.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRbmSuggestedReply]
   }
 }

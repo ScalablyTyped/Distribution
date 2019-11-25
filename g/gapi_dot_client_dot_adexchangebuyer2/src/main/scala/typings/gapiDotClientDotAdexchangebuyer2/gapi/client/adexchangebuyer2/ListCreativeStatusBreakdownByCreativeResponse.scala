@@ -25,8 +25,8 @@ object ListCreativeStatusBreakdownByCreativeResponse {
   @scala.inline
   def apply(filteredBidCreativeRows: js.Array[FilteredBidCreativeRow] = null, nextPageToken: String = null): ListCreativeStatusBreakdownByCreativeResponse = {
     val __obj = js.Dynamic.literal()
-    if (filteredBidCreativeRows != null) __obj.updateDynamic("filteredBidCreativeRows")(filteredBidCreativeRows)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (filteredBidCreativeRows != null) __obj.updateDynamic("filteredBidCreativeRows")(filteredBidCreativeRows.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCreativeStatusBreakdownByCreativeResponse]
   }
 }

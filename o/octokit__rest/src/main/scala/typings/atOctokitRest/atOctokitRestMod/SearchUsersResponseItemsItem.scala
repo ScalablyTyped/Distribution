@@ -39,8 +39,8 @@ object SearchUsersResponseItemsItem {
     `type`: String,
     url: String
   ): SearchUsersResponseItemsItem = {
-    val __obj = js.Dynamic.literal(avatar_url = avatar_url, followers_url = followers_url, gravatar_id = gravatar_id, html_url = html_url, id = id, login = login, node_id = node_id, organizations_url = organizations_url, received_events_url = received_events_url, repos_url = repos_url, score = score, subscriptions_url = subscriptions_url, url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(avatar_url = avatar_url.asInstanceOf[js.Any], followers_url = followers_url.asInstanceOf[js.Any], gravatar_id = gravatar_id.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], login = login.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], organizations_url = organizations_url.asInstanceOf[js.Any], received_events_url = received_events_url.asInstanceOf[js.Any], repos_url = repos_url.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], subscriptions_url = subscriptions_url.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchUsersResponseItemsItem]
   }
 }

@@ -12,8 +12,8 @@ trait Membership extends js.Object {
 object Membership {
   @scala.inline
   def apply(project: Resource, section: Resource = null): Membership = {
-    val __obj = js.Dynamic.literal(project = project)
-    if (section != null) __obj.updateDynamic("section")(section)
+    val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any])
+    if (section != null) __obj.updateDynamic("section")(section.asInstanceOf[js.Any])
     __obj.asInstanceOf[Membership]
   }
 }

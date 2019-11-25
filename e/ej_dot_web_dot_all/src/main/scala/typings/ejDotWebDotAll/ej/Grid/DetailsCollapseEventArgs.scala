@@ -40,13 +40,13 @@ object DetailsCollapseEventArgs {
     `type`: String = null
   ): DetailsCollapseEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (detailsRow != null) __obj.updateDynamic("detailsRow")(detailsRow)
-    if (foreignKeyData != null) __obj.updateDynamic("foreignKeyData")(foreignKeyData)
-    if (masterData != null) __obj.updateDynamic("masterData")(masterData)
-    if (masterRow != null) __obj.updateDynamic("masterRow")(masterRow)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (detailsRow != null) __obj.updateDynamic("detailsRow")(detailsRow.asInstanceOf[js.Any])
+    if (foreignKeyData != null) __obj.updateDynamic("foreignKeyData")(foreignKeyData.asInstanceOf[js.Any])
+    if (masterData != null) __obj.updateDynamic("masterData")(masterData.asInstanceOf[js.Any])
+    if (masterRow != null) __obj.updateDynamic("masterRow")(masterRow.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetailsCollapseEventArgs]
   }
 }

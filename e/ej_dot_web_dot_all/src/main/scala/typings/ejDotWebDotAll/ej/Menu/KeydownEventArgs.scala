@@ -32,11 +32,11 @@ object KeydownEventArgs {
     `type`: String = null
   ): KeydownEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (menuText != null) __obj.updateDynamic("menuText")(menuText)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (menuText != null) __obj.updateDynamic("menuText")(menuText.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeydownEventArgs]
   }
 }

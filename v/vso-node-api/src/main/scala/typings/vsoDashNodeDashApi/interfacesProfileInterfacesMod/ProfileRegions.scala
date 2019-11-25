@@ -26,7 +26,7 @@ object ProfileRegions {
     optOutContactConsentRequirementRegions: js.Array[String],
     regions: js.Array[ProfileRegion]
   ): ProfileRegions = {
-    val __obj = js.Dynamic.literal(noticeContactConsentRequirementRegions = noticeContactConsentRequirementRegions, optOutContactConsentRequirementRegions = optOutContactConsentRequirementRegions, regions = regions)
+    val __obj = js.Dynamic.literal(noticeContactConsentRequirementRegions = noticeContactConsentRequirementRegions.asInstanceOf[js.Any], optOutContactConsentRequirementRegions = optOutContactConsentRequirementRegions.asInstanceOf[js.Any], regions = regions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProfileRegions]
   }

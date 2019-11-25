@@ -15,8 +15,8 @@ object AdCode {
   @scala.inline
   def apply(adCode: String = null, kind: String = null): AdCode = {
     val __obj = js.Dynamic.literal()
-    if (adCode != null) __obj.updateDynamic("adCode")(adCode)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (adCode != null) __obj.updateDynamic("adCode")(adCode.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdCode]
   }
 }

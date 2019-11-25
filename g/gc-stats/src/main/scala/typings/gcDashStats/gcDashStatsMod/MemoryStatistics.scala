@@ -34,7 +34,7 @@ object MemoryStatistics {
     numberOfNativeContexts: Int | Double = null,
     peakMallocedMemory: Int | Double = null
   ): MemoryStatistics = {
-    val __obj = js.Dynamic.literal(heapSizeLimit = heapSizeLimit, totalAvailableSize = totalAvailableSize, totalHeapExecutableSize = totalHeapExecutableSize, totalHeapSize = totalHeapSize, totalPhysicalSize = totalPhysicalSize, usedHeapSize = usedHeapSize)
+    val __obj = js.Dynamic.literal(heapSizeLimit = heapSizeLimit.asInstanceOf[js.Any], totalAvailableSize = totalAvailableSize.asInstanceOf[js.Any], totalHeapExecutableSize = totalHeapExecutableSize.asInstanceOf[js.Any], totalHeapSize = totalHeapSize.asInstanceOf[js.Any], totalPhysicalSize = totalPhysicalSize.asInstanceOf[js.Any], usedHeapSize = usedHeapSize.asInstanceOf[js.Any])
     if (mallocedMemory != null) __obj.updateDynamic("mallocedMemory")(mallocedMemory.asInstanceOf[js.Any])
     if (numberOfDetachedContexts != null) __obj.updateDynamic("numberOfDetachedContexts")(numberOfDetachedContexts.asInstanceOf[js.Any])
     if (numberOfNativeContexts != null) __obj.updateDynamic("numberOfNativeContexts")(numberOfNativeContexts.asInstanceOf[js.Any])

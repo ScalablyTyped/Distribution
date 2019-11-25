@@ -19,7 +19,7 @@ object VerifyResult {
     data: String | (ReadableStream[String | Uint8Array]) | NodeStream | Uint8Array,
     signatures: js.Array[Anon_KeyidValid]
   ): VerifyResult = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], signatures = signatures)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], signatures = signatures.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VerifyResult]
   }

@@ -12,7 +12,7 @@ trait Webhooks extends js.Object {
 object Webhooks {
   @scala.inline
   def apply(Webhooks: js.Array[Webhook]): Webhooks = {
-    val __obj = js.Dynamic.literal(Webhooks = Webhooks)
+    val __obj = js.Dynamic.literal(Webhooks = Webhooks.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Webhooks]
   }

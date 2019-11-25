@@ -20,7 +20,7 @@ object TimeoutOptions {
   @scala.inline
   def apply(respond: js.UndefOr[Boolean] = js.undefined): TimeoutOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(respond)) __obj.updateDynamic("respond")(respond)
+    if (!js.isUndefined(respond)) __obj.updateDynamic("respond")(respond.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeoutOptions]
   }
 }

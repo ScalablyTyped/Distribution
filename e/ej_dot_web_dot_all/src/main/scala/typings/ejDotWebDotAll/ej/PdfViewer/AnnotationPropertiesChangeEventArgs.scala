@@ -45,13 +45,13 @@ object AnnotationPropertiesChangeEventArgs {
   ): AnnotationPropertiesChangeEventArgs = {
     val __obj = js.Dynamic.literal()
     if (annotationID != null) __obj.updateDynamic("annotationID")(annotationID.asInstanceOf[js.Any])
-    if (annotationType != null) __obj.updateDynamic("annotationType")(annotationType)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (!js.isUndefined(isColorChanged)) __obj.updateDynamic("isColorChanged")(isColorChanged)
-    if (!js.isUndefined(isOpacityChanged)) __obj.updateDynamic("isOpacityChanged")(isOpacityChanged)
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (annotationType != null) __obj.updateDynamic("annotationType")(annotationType.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (!js.isUndefined(isColorChanged)) __obj.updateDynamic("isColorChanged")(isColorChanged.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOpacityChanged)) __obj.updateDynamic("isOpacityChanged")(isOpacityChanged.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (pageID != null) __obj.updateDynamic("pageID")(pageID.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationPropertiesChangeEventArgs]
   }
 }

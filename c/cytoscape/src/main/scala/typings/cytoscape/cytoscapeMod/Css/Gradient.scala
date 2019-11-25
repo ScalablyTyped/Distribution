@@ -28,8 +28,8 @@ object Gradient {
     `line-gradient-stop-positions`: js.Array[PropertyValueEdge[Double]] = null
   ): Gradient = {
     val __obj = js.Dynamic.literal()
-    if (`line-gradient-stop-colours` != null) __obj.updateDynamic("line-gradient-stop-colours")(`line-gradient-stop-colours`)
-    if (`line-gradient-stop-positions` != null) __obj.updateDynamic("line-gradient-stop-positions")(`line-gradient-stop-positions`)
+    if (`line-gradient-stop-colours` != null) __obj.updateDynamic("line-gradient-stop-colours")(`line-gradient-stop-colours`.asInstanceOf[js.Any])
+    if (`line-gradient-stop-positions` != null) __obj.updateDynamic("line-gradient-stop-positions")(`line-gradient-stop-positions`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Gradient]
   }
 }

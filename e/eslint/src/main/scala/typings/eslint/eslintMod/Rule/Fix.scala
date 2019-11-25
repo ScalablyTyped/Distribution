@@ -13,7 +13,7 @@ trait Fix extends js.Object {
 object Fix {
   @scala.inline
   def apply(range: Range, text: String): Fix = {
-    val __obj = js.Dynamic.literal(range = range, text = text)
+    val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Fix]
   }

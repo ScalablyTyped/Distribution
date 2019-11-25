@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait JobStatusClean extends js.Object
 
+object JobStatusClean {
+  @scala.inline
+  def active: typings.bull.bullStrings.active = this.cast("active")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def completed: typings.bull.bullStrings.completed = this.cast("completed")
+  @scala.inline
+  def delayed: typings.bull.bullStrings.delayed = this.cast("delayed")
+  @scala.inline
+  def failed: typings.bull.bullStrings.failed = this.cast("failed")
+}
+

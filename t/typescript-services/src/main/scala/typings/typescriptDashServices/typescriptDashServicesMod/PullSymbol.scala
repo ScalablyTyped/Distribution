@@ -1,6 +1,5 @@
 package typings.typescriptDashServices.typescriptDashServicesMod
 
-import typings.typescriptDashServices.TypeScript.PullElementKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PullSymbol protected ()
   extends typings.typescriptDashServices.TypeScript.PullSymbol {
-  def this(name: String, declKind: PullElementKind) = this()
+  def this(name: String, declKind: typings.typescriptDashServices.TypeScript.PullElementKind) = this()
 }
 
 /* static members */

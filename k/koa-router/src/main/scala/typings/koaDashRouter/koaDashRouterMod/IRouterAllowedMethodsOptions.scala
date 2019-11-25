@@ -29,7 +29,7 @@ object IRouterAllowedMethodsOptions {
     val __obj = js.Dynamic.literal()
     if (methodNotAllowed != null) __obj.updateDynamic("methodNotAllowed")(js.Any.fromFunction0(methodNotAllowed))
     if (notImplemented != null) __obj.updateDynamic("notImplemented")(js.Any.fromFunction0(notImplemented))
-    if (!js.isUndefined(`throw`)) __obj.updateDynamic("throw")(`throw`)
+    if (!js.isUndefined(`throw`)) __obj.updateDynamic("throw")(`throw`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRouterAllowedMethodsOptions]
   }
 }

@@ -65,15 +65,15 @@ object NodesLane {
     zorder: Int | Double = null
   ): NodesLane = {
     val __obj = js.Dynamic.literal()
-    if (addInfo != null) __obj.updateDynamic("addInfo")(addInfo)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
-    if (header != null) __obj.updateDynamic("header")(header)
+    if (addInfo != null) __obj.updateDynamic("addInfo")(addInfo.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLane)) __obj.updateDynamic("isLane")(isLane)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (!js.isUndefined(isLane)) __obj.updateDynamic("isLane")(isLane.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (zorder != null) __obj.updateDynamic("zorder")(zorder.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesLane]

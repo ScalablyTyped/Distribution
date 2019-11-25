@@ -12,7 +12,7 @@ trait Anon_RemoveListenerListenerRegistration extends js.Object {
 object Anon_RemoveListenerListenerRegistration {
   @scala.inline
   def apply(removeListener: listenerRegistration): Anon_RemoveListenerListenerRegistration = {
-    val __obj = js.Dynamic.literal(removeListener = removeListener)
+    val __obj = js.Dynamic.literal(removeListener = removeListener.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_RemoveListenerListenerRegistration]
   }

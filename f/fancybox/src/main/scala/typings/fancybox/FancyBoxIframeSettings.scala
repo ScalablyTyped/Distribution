@@ -35,10 +35,10 @@ object FancyBoxIframeSettings {
     tpl: String = null
   ): FancyBoxIframeSettings = {
     val __obj = js.Dynamic.literal()
-    if (attr != null) __obj.updateDynamic("attr")(attr)
-    if (css != null) __obj.updateDynamic("css")(css)
-    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload)
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    if (attr != null) __obj.updateDynamic("attr")(attr.asInstanceOf[js.Any])
+    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
+    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl.asInstanceOf[js.Any])
     __obj.asInstanceOf[FancyBoxIframeSettings]
   }
 }

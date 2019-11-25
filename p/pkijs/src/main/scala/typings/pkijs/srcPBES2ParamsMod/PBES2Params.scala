@@ -21,7 +21,7 @@ object PBES2Params {
     toJSON: () => js.Any,
     toSchema: () => js.Any
   ): PBES2Params = {
-    val __obj = js.Dynamic.literal(encryptionScheme = encryptionScheme, fromSchema = js.Any.fromFunction1(fromSchema), keyDerivationFunc = keyDerivationFunc, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
+    val __obj = js.Dynamic.literal(encryptionScheme = encryptionScheme.asInstanceOf[js.Any], fromSchema = js.Any.fromFunction1(fromSchema), keyDerivationFunc = keyDerivationFunc.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[PBES2Params]
   }

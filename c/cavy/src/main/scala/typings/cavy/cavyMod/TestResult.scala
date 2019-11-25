@@ -12,7 +12,7 @@ trait TestResult extends js.Object {
 object TestResult {
   @scala.inline
   def apply(message: String, passed: Boolean): TestResult = {
-    val __obj = js.Dynamic.literal(message = message, passed = passed)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], passed = passed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestResult]
   }

@@ -43,19 +43,19 @@ object SendOptions {
     maxAge: Int | Double = null,
     maxage: Int | Double = null,
     root: String = null,
-    setHeaders: (/* import warning: ImportType.apply Failed type conversion: koa.koa.ParameterizedContext<koa.koa.DefaultState, koa.koa.DefaultContext>['res'] */ /* res */ js.Any, /* path */ String, /* stats */ Stats) => js.Any = null
+    setHeaders: (/* import warning: importer.ImportType#apply Failed type conversion: koa.koa.ParameterizedContext<koa.koa.DefaultState, koa.koa.DefaultContext>['res'] */ /* res */ js.Any, /* path */ String, /* stats */ Stats) => js.Any = null
   ): SendOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(brotli)) __obj.updateDynamic("brotli")(brotli)
+    if (!js.isUndefined(brotli)) __obj.updateDynamic("brotli")(brotli.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(format)) __obj.updateDynamic("format")(format)
-    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (!js.isUndefined(immutable)) __obj.updateDynamic("immutable")(immutable)
+    if (!js.isUndefined(format)) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(immutable)) __obj.updateDynamic("immutable")(immutable.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (maxage != null) __obj.updateDynamic("maxage")(maxage.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (setHeaders != null) __obj.updateDynamic("setHeaders")(js.Any.fromFunction3(setHeaders))
     __obj.asInstanceOf[SendOptions]
   }

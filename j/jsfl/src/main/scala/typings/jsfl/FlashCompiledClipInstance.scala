@@ -25,7 +25,7 @@ object FlashCompiledClipInstance {
     silent: Boolean,
     tabIndex: Double
   ): FlashCompiledClipInstance = {
-    val __obj = js.Dynamic.literal(accName = accName, actionScript = actionScript, description = description, forceSimple = forceSimple, shortcut = shortcut, silent = silent, tabIndex = tabIndex)
+    val __obj = js.Dynamic.literal(accName = accName.asInstanceOf[js.Any], actionScript = actionScript.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], forceSimple = forceSimple.asInstanceOf[js.Any], shortcut = shortcut.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], tabIndex = tabIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FlashCompiledClipInstance]
   }

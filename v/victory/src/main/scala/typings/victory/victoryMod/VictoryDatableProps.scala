@@ -92,8 +92,8 @@ object VictoryDatableProps {
   ): VictoryDatableProps = {
     val __obj = js.Dynamic.literal()
     if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (dataComponent != null) __obj.updateDynamic("dataComponent")(dataComponent)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (dataComponent != null) __obj.updateDynamic("dataComponent")(dataComponent.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])

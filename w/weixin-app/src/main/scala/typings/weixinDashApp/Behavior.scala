@@ -1,6 +1,5 @@
 package typings.weixinDashApp
 
-import typings.weixinDashApp.wx.Component
 import typings.weixinDashApp.wx.ThisTypedComponentOptionsWithRecordProps
 import typings.weixinDashApp.wx.UnboxBehaviorsData
 import typings.weixinDashApp.wx.UnboxBehaviorsMethods
@@ -25,7 +24,9 @@ object Behavior extends js.Object {
     P with UnboxBehaviorsProps[B], 
     M with UnboxBehaviorsMethods[B]
   ] = js.native
-  def apply[D, M, P, B /* <: js.Array[(typings.weixinDashApp.wx.Behavior[js.Object, js.Object, js.Object]) | String] */](options: ThisTypedComponentOptionsWithRecordProps[Component[D, P, B], D, M, P, B]): typings.weixinDashApp.wx.Behavior[
+  def apply[D, M, P, B /* <: js.Array[(typings.weixinDashApp.wx.Behavior[js.Object, js.Object, js.Object]) | String] */](
+    options: ThisTypedComponentOptionsWithRecordProps[typings.weixinDashApp.wx.Component[D, P, B], D, M, P, B]
+  ): typings.weixinDashApp.wx.Behavior[
     D with UnboxBehaviorsData[B], 
     P with UnboxBehaviorsProps[B], 
     M with UnboxBehaviorsMethods[B]

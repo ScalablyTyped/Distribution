@@ -12,7 +12,7 @@ object CardPropsType {
   @scala.inline
   def apply(full: js.UndefOr[Boolean] = js.undefined): CardPropsType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full)
+    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardPropsType]
   }
 }

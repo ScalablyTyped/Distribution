@@ -21,8 +21,8 @@ object PageConfig {
   ): PageConfig = {
     val __obj = js.Dynamic.literal()
     if (amp != null) __obj.updateDynamic("amp")(amp.asInstanceOf[js.Any])
-    if (api != null) __obj.updateDynamic("api")(api)
-    if (!js.isUndefined(experimentalPrerender)) __obj.updateDynamic("experimentalPrerender")(experimentalPrerender)
+    if (api != null) __obj.updateDynamic("api")(api.asInstanceOf[js.Any])
+    if (!js.isUndefined(experimentalPrerender)) __obj.updateDynamic("experimentalPrerender")(experimentalPrerender.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageConfig]
   }
 }

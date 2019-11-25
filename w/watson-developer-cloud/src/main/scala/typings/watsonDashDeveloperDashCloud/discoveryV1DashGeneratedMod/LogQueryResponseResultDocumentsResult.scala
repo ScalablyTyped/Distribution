@@ -28,9 +28,9 @@ object LogQueryResponseResultDocumentsResult {
     score: Int | Double = null
   ): LogQueryResponseResultDocumentsResult = {
     val __obj = js.Dynamic.literal()
-    if (collection_id != null) __obj.updateDynamic("collection_id")(collection_id)
+    if (collection_id != null) __obj.updateDynamic("collection_id")(collection_id.asInstanceOf[js.Any])
     if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
-    if (document_id != null) __obj.updateDynamic("document_id")(document_id)
+    if (document_id != null) __obj.updateDynamic("document_id")(document_id.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogQueryResponseResultDocumentsResult]

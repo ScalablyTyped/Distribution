@@ -13,8 +13,8 @@ object Options {
   @scala.inline
   def apply(namespace: String = null, prefix: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -33,12 +33,12 @@ object Classifier {
     status: String = null,
     status_description: String = null
   ): Classifier = {
-    val __obj = js.Dynamic.literal(classifier_id = classifier_id, url = url)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (status_description != null) __obj.updateDynamic("status_description")(status_description)
+    val __obj = js.Dynamic.literal(classifier_id = classifier_id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (status_description != null) __obj.updateDynamic("status_description")(status_description.asInstanceOf[js.Any])
     __obj.asInstanceOf[Classifier]
   }
 }

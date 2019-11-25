@@ -30,11 +30,11 @@ object Anon_A {
     transposeB: js.UndefOr[Boolean] = js.undefined
   ): Anon_A[T] = {
     val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any])
-    if (activation != null) __obj.updateDynamic("activation")(activation)
+    if (activation != null) __obj.updateDynamic("activation")(activation.asInstanceOf[js.Any])
     if (bias != null) __obj.updateDynamic("bias")(bias.asInstanceOf[js.Any])
-    if (preluActivationWeights != null) __obj.updateDynamic("preluActivationWeights")(preluActivationWeights)
-    if (!js.isUndefined(transposeA)) __obj.updateDynamic("transposeA")(transposeA)
-    if (!js.isUndefined(transposeB)) __obj.updateDynamic("transposeB")(transposeB)
+    if (preluActivationWeights != null) __obj.updateDynamic("preluActivationWeights")(preluActivationWeights.asInstanceOf[js.Any])
+    if (!js.isUndefined(transposeA)) __obj.updateDynamic("transposeA")(transposeA.asInstanceOf[js.Any])
+    if (!js.isUndefined(transposeB)) __obj.updateDynamic("transposeB")(transposeB.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_A[T]]
   }
 }

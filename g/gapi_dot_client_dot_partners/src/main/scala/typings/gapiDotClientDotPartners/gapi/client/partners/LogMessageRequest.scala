@@ -25,10 +25,10 @@ object LogMessageRequest {
     requestMetadata: RequestMetadata = null
   ): LogMessageRequest = {
     val __obj = js.Dynamic.literal()
-    if (clientInfo != null) __obj.updateDynamic("clientInfo")(clientInfo)
-    if (details != null) __obj.updateDynamic("details")(details)
-    if (level != null) __obj.updateDynamic("level")(level)
-    if (requestMetadata != null) __obj.updateDynamic("requestMetadata")(requestMetadata)
+    if (clientInfo != null) __obj.updateDynamic("clientInfo")(clientInfo.asInstanceOf[js.Any])
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (requestMetadata != null) __obj.updateDynamic("requestMetadata")(requestMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogMessageRequest]
   }
 }

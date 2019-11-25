@@ -12,8 +12,8 @@ trait ILanguageRequest extends js.Object {
 object ILanguageRequest {
   @scala.inline
   def apply(languageId: Double, languageCode: String = null): ILanguageRequest = {
-    val __obj = js.Dynamic.literal(languageId = languageId)
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
+    val __obj = js.Dynamic.literal(languageId = languageId.asInstanceOf[js.Any])
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILanguageRequest]
   }
 }

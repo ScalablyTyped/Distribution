@@ -16,8 +16,8 @@ object SequentialArgs {
   @scala.inline
   def apply(layers: js.Array[Layer] = null, name: String = null): SequentialArgs = {
     val __obj = js.Dynamic.literal()
-    if (layers != null) __obj.updateDynamic("layers")(layers)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SequentialArgs]
   }
 }

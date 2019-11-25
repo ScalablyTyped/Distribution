@@ -27,10 +27,10 @@ object ListPrefixOptions {
   @scala.inline
   def apply(delimiter: String = null, limit: Int | Double = null, marker: js.Any = null, prefix: String = null): ListPrefixOptions = {
     val __obj = js.Dynamic.literal()
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPrefixOptions]
   }
 }

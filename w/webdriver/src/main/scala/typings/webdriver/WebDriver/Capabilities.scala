@@ -30,15 +30,15 @@ object Capabilities {
     unhandledPromptBehavior: String = null
   ): Capabilities = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(acceptInsecureCerts)) __obj.updateDynamic("acceptInsecureCerts")(acceptInsecureCerts)
-    if (browserName != null) __obj.updateDynamic("browserName")(browserName)
-    if (browserVersion != null) __obj.updateDynamic("browserVersion")(browserVersion)
-    if (pageLoadStrategy != null) __obj.updateDynamic("pageLoadStrategy")(pageLoadStrategy)
-    if (platformName != null) __obj.updateDynamic("platformName")(platformName)
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
-    if (!js.isUndefined(setWindowRect)) __obj.updateDynamic("setWindowRect")(setWindowRect)
-    if (timeouts != null) __obj.updateDynamic("timeouts")(timeouts)
-    if (unhandledPromptBehavior != null) __obj.updateDynamic("unhandledPromptBehavior")(unhandledPromptBehavior)
+    if (!js.isUndefined(acceptInsecureCerts)) __obj.updateDynamic("acceptInsecureCerts")(acceptInsecureCerts.asInstanceOf[js.Any])
+    if (browserName != null) __obj.updateDynamic("browserName")(browserName.asInstanceOf[js.Any])
+    if (browserVersion != null) __obj.updateDynamic("browserVersion")(browserVersion.asInstanceOf[js.Any])
+    if (pageLoadStrategy != null) __obj.updateDynamic("pageLoadStrategy")(pageLoadStrategy.asInstanceOf[js.Any])
+    if (platformName != null) __obj.updateDynamic("platformName")(platformName.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
+    if (!js.isUndefined(setWindowRect)) __obj.updateDynamic("setWindowRect")(setWindowRect.asInstanceOf[js.Any])
+    if (timeouts != null) __obj.updateDynamic("timeouts")(timeouts.asInstanceOf[js.Any])
+    if (unhandledPromptBehavior != null) __obj.updateDynamic("unhandledPromptBehavior")(unhandledPromptBehavior.asInstanceOf[js.Any])
     __obj.asInstanceOf[Capabilities]
   }
 }

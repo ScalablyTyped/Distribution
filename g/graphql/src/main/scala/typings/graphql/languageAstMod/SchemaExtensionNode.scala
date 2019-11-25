@@ -22,10 +22,10 @@ object SchemaExtensionNode {
     loc: Location = null,
     operationTypes: js.Array[OperationTypeDefinitionNode] = null
   ): SchemaExtensionNode = {
-    val __obj = js.Dynamic.literal(kind = kind)
-    if (directives != null) __obj.updateDynamic("directives")(directives)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (operationTypes != null) __obj.updateDynamic("operationTypes")(operationTypes)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (operationTypes != null) __obj.updateDynamic("operationTypes")(operationTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExtensionNode]
   }
 }

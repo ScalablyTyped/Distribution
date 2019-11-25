@@ -44,7 +44,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction1(action))
-    if (container != null) __obj.updateDynamic("container")(container)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(js.Any.fromFunction1(target))
     if (text != null) __obj.updateDynamic("text")(js.Any.fromFunction1(text))
     __obj.asInstanceOf[Options]

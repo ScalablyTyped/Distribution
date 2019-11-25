@@ -15,7 +15,7 @@ trait EventApi extends js.Object {
 object EventApi {
   @scala.inline
   def apply(localTarget: EventTarget, path: js.Array[Node], rootTarget: EventTarget): EventApi = {
-    val __obj = js.Dynamic.literal(localTarget = localTarget, path = path, rootTarget = rootTarget)
+    val __obj = js.Dynamic.literal(localTarget = localTarget.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], rootTarget = rootTarget.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventApi]
   }

@@ -12,7 +12,7 @@ trait PieCenterLabelContext extends js.Object {
 object PieCenterLabelContext {
   @scala.inline
   def apply(subId: String): PieCenterLabelContext = {
-    val __obj = js.Dynamic.literal(subId = subId)
+    val __obj = js.Dynamic.literal(subId = subId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PieCenterLabelContext]
   }

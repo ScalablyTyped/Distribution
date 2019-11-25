@@ -19,8 +19,8 @@ object DeploymentValidateResult {
   @scala.inline
   def apply(error: ResourceManagementErrorWithDetails = null, properties: DeploymentPropertiesExtended = null): DeploymentValidateResult = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentValidateResult]
   }
 }

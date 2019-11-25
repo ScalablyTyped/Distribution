@@ -24,12 +24,12 @@ object Member {
     uniqueName: String = null
   ): Member = {
     val __obj = js.Dynamic.literal()
-    if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (hierarchyName != null) __obj.updateDynamic("hierarchyName")(hierarchyName)
-    if (!js.isUndefined(isLeaf)) __obj.updateDynamic("isLeaf")(isLeaf)
-    if (parentMember != null) __obj.updateDynamic("parentMember")(parentMember)
-    if (uniqueName != null) __obj.updateDynamic("uniqueName")(uniqueName)
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (hierarchyName != null) __obj.updateDynamic("hierarchyName")(hierarchyName.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLeaf)) __obj.updateDynamic("isLeaf")(isLeaf.asInstanceOf[js.Any])
+    if (parentMember != null) __obj.updateDynamic("parentMember")(parentMember.asInstanceOf[js.Any])
+    if (uniqueName != null) __obj.updateDynamic("uniqueName")(uniqueName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Member]
   }
 }

@@ -164,7 +164,7 @@ object MutatingWebhook {
     sideEffects: String,
     timeoutSeconds: Double
   ): MutatingWebhook = {
-    val __obj = js.Dynamic.literal(admissionReviewVersions = admissionReviewVersions, clientConfig = clientConfig, failurePolicy = failurePolicy, matchPolicy = matchPolicy, name = name, namespaceSelector = namespaceSelector, objectSelector = objectSelector, reinvocationPolicy = reinvocationPolicy, rules = rules, sideEffects = sideEffects, timeoutSeconds = timeoutSeconds)
+    val __obj = js.Dynamic.literal(admissionReviewVersions = admissionReviewVersions.asInstanceOf[js.Any], clientConfig = clientConfig.asInstanceOf[js.Any], failurePolicy = failurePolicy.asInstanceOf[js.Any], matchPolicy = matchPolicy.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespaceSelector = namespaceSelector.asInstanceOf[js.Any], objectSelector = objectSelector.asInstanceOf[js.Any], reinvocationPolicy = reinvocationPolicy.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any], sideEffects = sideEffects.asInstanceOf[js.Any], timeoutSeconds = timeoutSeconds.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MutatingWebhook]
   }

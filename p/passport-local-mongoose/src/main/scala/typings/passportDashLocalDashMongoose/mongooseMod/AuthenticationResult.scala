@@ -12,7 +12,7 @@ trait AuthenticationResult extends js.Object {
 object AuthenticationResult {
   @scala.inline
   def apply(error: js.Any, user: js.Any): AuthenticationResult = {
-    val __obj = js.Dynamic.literal(error = error, user = user)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AuthenticationResult]
   }

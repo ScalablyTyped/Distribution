@@ -13,7 +13,7 @@ object ReadWrite {
   @scala.inline
   def apply(retryTransaction: String = null): ReadWrite = {
     val __obj = js.Dynamic.literal()
-    if (retryTransaction != null) __obj.updateDynamic("retryTransaction")(retryTransaction)
+    if (retryTransaction != null) __obj.updateDynamic("retryTransaction")(retryTransaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadWrite]
   }
 }

@@ -13,8 +13,8 @@ object Anon_Language {
   @scala.inline
   def apply(language: String = null, route: js.Array[Anon_Leg] = null): Anon_Language = {
     val __obj = js.Dynamic.literal()
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (route != null) __obj.updateDynamic("route")(route)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (route != null) __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Language]
   }
 }

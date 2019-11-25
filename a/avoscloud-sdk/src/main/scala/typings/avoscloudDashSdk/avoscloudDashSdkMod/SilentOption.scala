@@ -15,7 +15,7 @@ object SilentOption {
   @scala.inline
   def apply(silent: js.UndefOr[Boolean] = js.undefined): SilentOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SilentOption]
   }
 }

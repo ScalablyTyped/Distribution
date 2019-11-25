@@ -32,12 +32,12 @@ object ErrorObject {
     propertyName: String = null,
     schema: js.Any = null
   ): ErrorObject = {
-    val __obj = js.Dynamic.literal(dataPath = dataPath, keyword = keyword, params = params, schemaPath = schemaPath)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (parentSchema != null) __obj.updateDynamic("parentSchema")(parentSchema)
-    if (propertyName != null) __obj.updateDynamic("propertyName")(propertyName)
-    if (schema != null) __obj.updateDynamic("schema")(schema)
+    val __obj = js.Dynamic.literal(dataPath = dataPath.asInstanceOf[js.Any], keyword = keyword.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], schemaPath = schemaPath.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (parentSchema != null) __obj.updateDynamic("parentSchema")(parentSchema.asInstanceOf[js.Any])
+    if (propertyName != null) __obj.updateDynamic("propertyName")(propertyName.asInstanceOf[js.Any])
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorObject]
   }
 }

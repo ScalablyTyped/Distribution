@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait TemplateBackButtonVisibility extends js.Object
 
+object TemplateBackButtonVisibility {
+  @scala.inline
+  def HIDDEN: typings.alexaDashSdk.alexaDashSdkStrings.HIDDEN = this.cast("HIDDEN")
+  @scala.inline
+  def VISIBLE: typings.alexaDashSdk.alexaDashSdkStrings.VISIBLE = this.cast("VISIBLE")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

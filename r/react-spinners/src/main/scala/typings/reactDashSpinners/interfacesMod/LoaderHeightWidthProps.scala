@@ -23,13 +23,13 @@ object LoaderHeightWidthProps {
     widthUnit: String = null
   ): LoaderHeightWidthProps = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (heightUnit != null) __obj.updateDynamic("heightUnit")(heightUnit)
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
+    if (heightUnit != null) __obj.updateDynamic("heightUnit")(heightUnit.asInstanceOf[js.Any])
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (widthUnit != null) __obj.updateDynamic("widthUnit")(widthUnit)
+    if (widthUnit != null) __obj.updateDynamic("widthUnit")(widthUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoaderHeightWidthProps]
   }
 }

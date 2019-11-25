@@ -28,10 +28,10 @@ object GroupLifecyclePolicy {
     managedGroupTypes: String = null
   ): GroupLifecyclePolicy = {
     val __obj = js.Dynamic.literal()
-    if (alternateNotificationEmails != null) __obj.updateDynamic("alternateNotificationEmails")(alternateNotificationEmails)
+    if (alternateNotificationEmails != null) __obj.updateDynamic("alternateNotificationEmails")(alternateNotificationEmails.asInstanceOf[js.Any])
     if (groupLifetimeInDays != null) __obj.updateDynamic("groupLifetimeInDays")(groupLifetimeInDays.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (managedGroupTypes != null) __obj.updateDynamic("managedGroupTypes")(managedGroupTypes)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (managedGroupTypes != null) __obj.updateDynamic("managedGroupTypes")(managedGroupTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupLifecyclePolicy]
   }
 }

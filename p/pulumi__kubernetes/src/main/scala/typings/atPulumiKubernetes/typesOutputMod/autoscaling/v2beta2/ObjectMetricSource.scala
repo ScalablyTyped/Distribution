@@ -23,7 +23,7 @@ trait ObjectMetricSource extends js.Object {
 object ObjectMetricSource {
   @scala.inline
   def apply(describedObject: CrossVersionObjectReference, metric: MetricIdentifier, target: MetricTarget): ObjectMetricSource = {
-    val __obj = js.Dynamic.literal(describedObject = describedObject, metric = metric, target = target)
+    val __obj = js.Dynamic.literal(describedObject = describedObject.asInstanceOf[js.Any], metric = metric.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ObjectMetricSource]
   }

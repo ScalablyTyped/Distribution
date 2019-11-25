@@ -21,7 +21,7 @@ object IStreamSocketControl {
     outboundUnicastHopLimit: Double,
     qualityOfService: SocketQualityOfService
   ): IStreamSocketControl = {
-    val __obj = js.Dynamic.literal(keepAlive = keepAlive, noDelay = noDelay, outboundBufferSizeInBytes = outboundBufferSizeInBytes, outboundUnicastHopLimit = outboundUnicastHopLimit, qualityOfService = qualityOfService)
+    val __obj = js.Dynamic.literal(keepAlive = keepAlive.asInstanceOf[js.Any], noDelay = noDelay.asInstanceOf[js.Any], outboundBufferSizeInBytes = outboundBufferSizeInBytes.asInstanceOf[js.Any], outboundUnicastHopLimit = outboundUnicastHopLimit.asInstanceOf[js.Any], qualityOfService = qualityOfService.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IStreamSocketControl]
   }

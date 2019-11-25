@@ -25,7 +25,7 @@ object Anon_ApprovedCanceled {
     skipped: Double,
     undefined: Double
   ): Anon_ApprovedCanceled = {
-    val __obj = js.Dynamic.literal(approved = approved, canceled = canceled, pending = pending, reassigned = reassigned, rejected = rejected, skipped = skipped, undefined = undefined)
+    val __obj = js.Dynamic.literal(approved = approved.asInstanceOf[js.Any], canceled = canceled.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], reassigned = reassigned.asInstanceOf[js.Any], rejected = rejected.asInstanceOf[js.Any], skipped = skipped.asInstanceOf[js.Any], undefined = undefined.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ApprovedCanceled]
   }

@@ -29,7 +29,7 @@ object Attributes {
   @scala.inline
   def apply(attributeMap: Record[String, AttributeValue] = null, droppedAttributesCount: Int | Double = null): Attributes = {
     val __obj = js.Dynamic.literal()
-    if (attributeMap != null) __obj.updateDynamic("attributeMap")(attributeMap)
+    if (attributeMap != null) __obj.updateDynamic("attributeMap")(attributeMap.asInstanceOf[js.Any])
     if (droppedAttributesCount != null) __obj.updateDynamic("droppedAttributesCount")(droppedAttributesCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attributes]
   }

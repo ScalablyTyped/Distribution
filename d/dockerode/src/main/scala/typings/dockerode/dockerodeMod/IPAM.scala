@@ -19,9 +19,9 @@ object IPAM {
     Config: StringDictionary[String] = null,
     Options: js.Array[StringDictionary[String]] = null
   ): IPAM = {
-    val __obj = js.Dynamic.literal(Driver = Driver)
-    if (Config != null) __obj.updateDynamic("Config")(Config)
-    if (Options != null) __obj.updateDynamic("Options")(Options)
+    val __obj = js.Dynamic.literal(Driver = Driver.asInstanceOf[js.Any])
+    if (Config != null) __obj.updateDynamic("Config")(Config.asInstanceOf[js.Any])
+    if (Options != null) __obj.updateDynamic("Options")(Options.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPAM]
   }
 }

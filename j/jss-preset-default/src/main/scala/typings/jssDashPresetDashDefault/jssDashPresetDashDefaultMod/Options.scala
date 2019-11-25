@@ -20,8 +20,8 @@ object Options {
     observable: typings.jssDashPluginDashRuleDashValueDashObservable.jssDashPluginDashRuleDashValueDashObservableMod.Options = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (defaultUnit != null) __obj.updateDynamic("defaultUnit")(defaultUnit)
-    if (observable != null) __obj.updateDynamic("observable")(observable)
+    if (defaultUnit != null) __obj.updateDynamic("defaultUnit")(defaultUnit.asInstanceOf[js.Any])
+    if (observable != null) __obj.updateDynamic("observable")(observable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

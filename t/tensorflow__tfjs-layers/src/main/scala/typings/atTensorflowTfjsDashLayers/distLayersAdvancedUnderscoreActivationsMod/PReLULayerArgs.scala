@@ -54,18 +54,18 @@ object PReLULayerArgs {
     weights: js.Array[Tensor[Rank]] = null
   ): PReLULayerArgs = {
     val __obj = js.Dynamic.literal()
-    if (alphaConstraint != null) __obj.updateDynamic("alphaConstraint")(alphaConstraint)
+    if (alphaConstraint != null) __obj.updateDynamic("alphaConstraint")(alphaConstraint.asInstanceOf[js.Any])
     if (alphaInitializer != null) __obj.updateDynamic("alphaInitializer")(alphaInitializer.asInstanceOf[js.Any])
-    if (alphaRegularizer != null) __obj.updateDynamic("alphaRegularizer")(alphaRegularizer)
-    if (batchInputShape != null) __obj.updateDynamic("batchInputShape")(batchInputShape)
+    if (alphaRegularizer != null) __obj.updateDynamic("alphaRegularizer")(alphaRegularizer.asInstanceOf[js.Any])
+    if (batchInputShape != null) __obj.updateDynamic("batchInputShape")(batchInputShape.asInstanceOf[js.Any])
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
-    if (dtype != null) __obj.updateDynamic("dtype")(dtype)
-    if (inputDType != null) __obj.updateDynamic("inputDType")(inputDType)
-    if (inputShape != null) __obj.updateDynamic("inputShape")(inputShape)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
+    if (inputDType != null) __obj.updateDynamic("inputDType")(inputDType.asInstanceOf[js.Any])
+    if (inputShape != null) __obj.updateDynamic("inputShape")(inputShape.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (sharedAxes != null) __obj.updateDynamic("sharedAxes")(sharedAxes.asInstanceOf[js.Any])
-    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable)
-    if (weights != null) __obj.updateDynamic("weights")(weights)
+    if (!js.isUndefined(trainable)) __obj.updateDynamic("trainable")(trainable.asInstanceOf[js.Any])
+    if (weights != null) __obj.updateDynamic("weights")(weights.asInstanceOf[js.Any])
     __obj.asInstanceOf[PReLULayerArgs]
   }
 }

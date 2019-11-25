@@ -22,7 +22,7 @@ object Grid {
     rowFactory: RowFactory[EntityType],
     selectionService: SelectionService[EntityType]
   ): Grid[EntityType] = {
-    val __obj = js.Dynamic.literal($$selectionPhase = $$selectionPhase, config = config, configureColumnWidths = js.Any.fromFunction0(configureColumnWidths), rowFactory = rowFactory, selectionService = selectionService)
+    val __obj = js.Dynamic.literal($$selectionPhase = $$selectionPhase.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], configureColumnWidths = js.Any.fromFunction0(configureColumnWidths), rowFactory = rowFactory.asInstanceOf[js.Any], selectionService = selectionService.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Grid[EntityType]]
   }

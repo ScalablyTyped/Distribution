@@ -19,10 +19,10 @@ object ErrorProto {
   @scala.inline
   def apply(debugInfo: String = null, location: String = null, message: String = null, reason: String = null): ErrorProto = {
     val __obj = js.Dynamic.literal()
-    if (debugInfo != null) __obj.updateDynamic("debugInfo")(debugInfo)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (debugInfo != null) __obj.updateDynamic("debugInfo")(debugInfo.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorProto]
   }
 }

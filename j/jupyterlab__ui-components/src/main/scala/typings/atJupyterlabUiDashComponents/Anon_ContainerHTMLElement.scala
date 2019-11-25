@@ -12,7 +12,7 @@ trait Anon_ContainerHTMLElement extends js.Object {
 object Anon_ContainerHTMLElement {
   @scala.inline
   def apply(container: HTMLElement): Anon_ContainerHTMLElement = {
-    val __obj = js.Dynamic.literal(container = container)
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContainerHTMLElement]
   }

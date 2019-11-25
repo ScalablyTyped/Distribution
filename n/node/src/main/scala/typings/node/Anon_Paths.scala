@@ -12,7 +12,7 @@ object Anon_Paths {
   @scala.inline
   def apply(paths: js.Array[java.lang.String] = null): Anon_Paths = {
     val __obj = js.Dynamic.literal()
-    if (paths != null) __obj.updateDynamic("paths")(paths)
+    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Paths]
   }
 }

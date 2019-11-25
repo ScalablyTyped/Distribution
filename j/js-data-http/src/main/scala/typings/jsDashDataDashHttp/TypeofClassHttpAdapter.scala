@@ -14,8 +14,8 @@ trait TypeofClassHttpAdapter
   extends Instantiable0[HttpAdapter]
      with Instantiable1[/* opts */ IBaseHttpAdapter, HttpAdapter] {
   var version: Anon_Alpha = js.native
-  def extend(): /* import warning: ImportType.apply Failed type conversion: typeof HttpAdapter */ js.Any = js.native
-  def extend(instanceProps: IDict): /* import warning: ImportType.apply Failed type conversion: typeof HttpAdapter */ js.Any = js.native
-  def extend(instanceProps: IDict, classProps: IDict): /* import warning: ImportType.apply Failed type conversion: typeof HttpAdapter */ js.Any = js.native
+  def extend(): /* import warning: importer.ImportType#apply Failed type conversion: typeof HttpAdapter */ js.Any = js.native
+  def extend(instanceProps: IDict): /* import warning: importer.ImportType#apply Failed type conversion: typeof HttpAdapter */ js.Any = js.native
+  def extend(instanceProps: IDict, classProps: IDict): /* import warning: importer.ImportType#apply Failed type conversion: typeof HttpAdapter */ js.Any = js.native
 }
 

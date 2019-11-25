@@ -27,7 +27,7 @@ object IUserGroup {
     Predefined: Boolean,
     RemoveMember: Double => Unit
   ): IUserGroup = {
-    val __obj = js.Dynamic.literal(AddMember = js.Any.fromFunction1(AddMember), Clone = js.Any.fromFunction0(Clone), CloneFrom = js.Any.fromFunction1(CloneFrom), ID = ID, Members = Members, Name = Name, Predefined = Predefined, RemoveMember = js.Any.fromFunction1(RemoveMember))
+    val __obj = js.Dynamic.literal(AddMember = js.Any.fromFunction1(AddMember), Clone = js.Any.fromFunction0(Clone), CloneFrom = js.Any.fromFunction1(CloneFrom), ID = ID.asInstanceOf[js.Any], Members = Members.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Predefined = Predefined.asInstanceOf[js.Any], RemoveMember = js.Any.fromFunction1(RemoveMember))
   
     __obj.asInstanceOf[IUserGroup]
   }

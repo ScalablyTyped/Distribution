@@ -27,8 +27,8 @@ object CryptoKey {
     versionTemplate: CryptoKeyVersionTemplate,
     nextRotationTime: AsObject = null
   ): CryptoKey = {
-    val __obj = js.Dynamic.literal(createTime = createTime, labels = labels, name = name, primary = primary, purpose = purpose, versionTemplate = versionTemplate)
-    if (nextRotationTime != null) __obj.updateDynamic("nextRotationTime")(nextRotationTime)
+    val __obj = js.Dynamic.literal(createTime = createTime.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], primary = primary.asInstanceOf[js.Any], purpose = purpose.asInstanceOf[js.Any], versionTemplate = versionTemplate.asInstanceOf[js.Any])
+    if (nextRotationTime != null) __obj.updateDynamic("nextRotationTime")(nextRotationTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[CryptoKey]
   }
 }

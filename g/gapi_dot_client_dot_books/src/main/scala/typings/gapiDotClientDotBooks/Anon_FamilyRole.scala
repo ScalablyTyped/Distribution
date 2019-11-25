@@ -24,9 +24,9 @@ object Anon_FamilyRole {
     isSharingDisabledByFop: js.UndefOr[Boolean] = js.undefined
   ): Anon_FamilyRole = {
     val __obj = js.Dynamic.literal()
-    if (familyRole != null) __obj.updateDynamic("familyRole")(familyRole)
-    if (!js.isUndefined(isSharingAllowed)) __obj.updateDynamic("isSharingAllowed")(isSharingAllowed)
-    if (!js.isUndefined(isSharingDisabledByFop)) __obj.updateDynamic("isSharingDisabledByFop")(isSharingDisabledByFop)
+    if (familyRole != null) __obj.updateDynamic("familyRole")(familyRole.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSharingAllowed)) __obj.updateDynamic("isSharingAllowed")(isSharingAllowed.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSharingDisabledByFop)) __obj.updateDynamic("isSharingDisabledByFop")(isSharingDisabledByFop.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FamilyRole]
   }
 }

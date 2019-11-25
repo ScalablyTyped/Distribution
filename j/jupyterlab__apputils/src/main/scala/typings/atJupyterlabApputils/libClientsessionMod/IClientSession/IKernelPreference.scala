@@ -50,13 +50,13 @@ object IKernelPreference {
     shutdownOnClose: js.UndefOr[Boolean] = js.undefined
   ): IKernelPreference = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoStartDefault)) __obj.updateDynamic("autoStartDefault")(autoStartDefault)
-    if (!js.isUndefined(canStart)) __obj.updateDynamic("canStart")(canStart)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(shouldStart)) __obj.updateDynamic("shouldStart")(shouldStart)
-    if (!js.isUndefined(shutdownOnClose)) __obj.updateDynamic("shutdownOnClose")(shutdownOnClose)
+    if (!js.isUndefined(autoStartDefault)) __obj.updateDynamic("autoStartDefault")(autoStartDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(canStart)) __obj.updateDynamic("canStart")(canStart.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldStart)) __obj.updateDynamic("shouldStart")(shouldStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(shutdownOnClose)) __obj.updateDynamic("shutdownOnClose")(shutdownOnClose.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKernelPreference]
   }
 }

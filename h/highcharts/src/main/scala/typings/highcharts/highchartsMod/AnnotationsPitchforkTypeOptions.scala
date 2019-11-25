@@ -41,10 +41,10 @@ object AnnotationsPitchforkTypeOptions {
     yAxis: Int | Double = null
   ): AnnotationsPitchforkTypeOptions = {
     val __obj = js.Dynamic.literal()
-    if (innerBackground != null) __obj.updateDynamic("innerBackground")(innerBackground)
-    if (line != null) __obj.updateDynamic("line")(line)
-    if (outerBackground != null) __obj.updateDynamic("outerBackground")(outerBackground)
-    if (points != null) __obj.updateDynamic("points")(points)
+    if (innerBackground != null) __obj.updateDynamic("innerBackground")(innerBackground.asInstanceOf[js.Any])
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (outerBackground != null) __obj.updateDynamic("outerBackground")(outerBackground.asInstanceOf[js.Any])
+    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
     if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsPitchforkTypeOptions]

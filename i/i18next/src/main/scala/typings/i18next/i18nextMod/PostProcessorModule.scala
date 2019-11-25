@@ -24,8 +24,8 @@ object PostProcessorModule {
     process: (String, String, TOptions[StringMap], js.Any) => String,
     `type`: postProcessor
   ): PostProcessorModule = {
-    val __obj = js.Dynamic.literal(name = name, process = js.Any.fromFunction4(process))
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], process = js.Any.fromFunction4(process))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostProcessorModule]
   }
 }

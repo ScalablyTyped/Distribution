@@ -23,10 +23,10 @@ object getUnderlyingDataOptions {
     ignoreAllColumns: js.UndefOr[Boolean] = js.undefined,
     ignoreSelection: js.UndefOr[Boolean] = js.undefined
   ): getUnderlyingDataOptions = {
-    val __obj = js.Dynamic.literal(maxRows = maxRows)
-    if (!js.isUndefined(ignoreAliases)) __obj.updateDynamic("ignoreAliases")(ignoreAliases)
-    if (!js.isUndefined(ignoreAllColumns)) __obj.updateDynamic("ignoreAllColumns")(ignoreAllColumns)
-    if (!js.isUndefined(ignoreSelection)) __obj.updateDynamic("ignoreSelection")(ignoreSelection)
+    val __obj = js.Dynamic.literal(maxRows = maxRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreAliases)) __obj.updateDynamic("ignoreAliases")(ignoreAliases.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreAllColumns)) __obj.updateDynamic("ignoreAllColumns")(ignoreAllColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreSelection)) __obj.updateDynamic("ignoreSelection")(ignoreSelection.asInstanceOf[js.Any])
     __obj.asInstanceOf[getUnderlyingDataOptions]
   }
 }

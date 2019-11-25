@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "postgres-interval"
-version := "1.2.0-e48026"
+version := "1.2.0-a14020"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

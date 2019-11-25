@@ -40,7 +40,7 @@ object CompressImageOptions {
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src)
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[CompressImageOptions]
   }

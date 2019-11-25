@@ -22,8 +22,8 @@ trait GetEncryptionConfigOutput extends OutputTypesUnion {
 object GetEncryptionConfigOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, EncryptionConfig: _UnmarshalledEncryptionConfig = null): GetEncryptionConfigOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (EncryptionConfig != null) __obj.updateDynamic("EncryptionConfig")(EncryptionConfig)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (EncryptionConfig != null) __obj.updateDynamic("EncryptionConfig")(EncryptionConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEncryptionConfigOutput]
   }
 }

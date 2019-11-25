@@ -13,8 +13,8 @@ object GridMapping {
   @scala.inline
   def apply(dataField: String = null, totalRecordsField: String = null): GridMapping = {
     val __obj = js.Dynamic.literal()
-    if (dataField != null) __obj.updateDynamic("dataField")(dataField)
-    if (totalRecordsField != null) __obj.updateDynamic("totalRecordsField")(totalRecordsField)
+    if (dataField != null) __obj.updateDynamic("dataField")(dataField.asInstanceOf[js.Any])
+    if (totalRecordsField != null) __obj.updateDynamic("totalRecordsField")(totalRecordsField.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridMapping]
   }
 }

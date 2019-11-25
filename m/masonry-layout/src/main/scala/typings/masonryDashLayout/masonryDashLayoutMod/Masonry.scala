@@ -58,7 +58,7 @@ object Masonry {
     if (getItemElements != null) __obj.updateDynamic("getItemElements")(js.Any.fromFunction0(getItemElements))
     if (layout != null) __obj.updateDynamic("layout")(js.Any.fromFunction0(layout))
     if (layoutItems != null) __obj.updateDynamic("layoutItems")(js.Any.fromFunction2(layoutItems))
-    if (masonry != null) __obj.updateDynamic("masonry")(masonry)
+    if (masonry != null) __obj.updateDynamic("masonry")(masonry.asInstanceOf[js.Any])
     if (off != null) __obj.updateDynamic("off")(js.Any.fromFunction2(off))
     if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction2(on))
     if (once != null) __obj.updateDynamic("once")(js.Any.fromFunction2(once))

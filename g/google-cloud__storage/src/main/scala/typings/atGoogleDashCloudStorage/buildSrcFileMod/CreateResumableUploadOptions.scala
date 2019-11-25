@@ -31,15 +31,15 @@ object CreateResumableUploadOptions {
     userProject: String = null
   ): CreateResumableUploadOptions = {
     val __obj = js.Dynamic.literal()
-    if (configPath != null) __obj.updateDynamic("configPath")(configPath)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (configPath != null) __obj.updateDynamic("configPath")(configPath.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (predefinedAcl != null) __obj.updateDynamic("predefinedAcl")(predefinedAcl)
-    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
-    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
-    if (userProject != null) __obj.updateDynamic("userProject")(userProject)
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (predefinedAcl != null) __obj.updateDynamic("predefinedAcl")(predefinedAcl.asInstanceOf[js.Any])
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
+    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
+    if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateResumableUploadOptions]
   }
 }

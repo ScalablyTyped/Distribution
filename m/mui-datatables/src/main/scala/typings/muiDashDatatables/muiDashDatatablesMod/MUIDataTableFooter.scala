@@ -24,9 +24,9 @@ object MUIDataTableFooter {
     rowsPerPage: Int | Double = null
   ): MUIDataTableFooter = {
     val __obj = js.Dynamic.literal()
-    if (changePage != null) __obj.updateDynamic("changePage")(changePage)
+    if (changePage != null) __obj.updateDynamic("changePage")(changePage.asInstanceOf[js.Any])
     if (changeRowsPerPage != null) __obj.updateDynamic("changeRowsPerPage")(js.Any.fromFunction1(changeRowsPerPage))
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
     if (rowsPerPage != null) __obj.updateDynamic("rowsPerPage")(rowsPerPage.asInstanceOf[js.Any])

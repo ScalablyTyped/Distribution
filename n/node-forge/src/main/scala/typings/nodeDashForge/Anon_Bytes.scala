@@ -85,19 +85,19 @@ object Anon_Bytes {
   ): Anon_Bytes = {
     val __obj = js.Dynamic.literal(closed = js.Any.fromFunction1(closed), connected = js.Any.fromFunction1(connected), dataReady = js.Any.fromFunction1(dataReady), error = js.Any.fromFunction2(error), tlsDataReady = js.Any.fromFunction1(tlsDataReady))
     if (caStore != null) __obj.updateDynamic("caStore")(caStore.asInstanceOf[js.Any])
-    if (cipherSuites != null) __obj.updateDynamic("cipherSuites")(cipherSuites)
+    if (cipherSuites != null) __obj.updateDynamic("cipherSuites")(cipherSuites.asInstanceOf[js.Any])
     if (deflate != null) __obj.updateDynamic("deflate")(js.Any.fromFunction1(deflate))
     if (getCertificate != null) __obj.updateDynamic("getCertificate")(js.Any.fromFunction2(getCertificate))
     if (getPrivateKey != null) __obj.updateDynamic("getPrivateKey")(js.Any.fromFunction2(getPrivateKey))
     if (getSignature != null) __obj.updateDynamic("getSignature")(js.Any.fromFunction3(getSignature))
     if (heartbeatReceived != null) __obj.updateDynamic("heartbeatReceived")(js.Any.fromFunction2(heartbeatReceived))
     if (inflate != null) __obj.updateDynamic("inflate")(js.Any.fromFunction1(inflate))
-    if (!js.isUndefined(server)) __obj.updateDynamic("server")(server)
+    if (!js.isUndefined(server)) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     if (sessionCache != null) __obj.updateDynamic("sessionCache")(sessionCache.asInstanceOf[js.Any])
-    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId)
+    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
     if (verify != null) __obj.updateDynamic("verify")(js.Any.fromFunction4(verify))
-    if (!js.isUndefined(verifyClient)) __obj.updateDynamic("verifyClient")(verifyClient)
-    if (virtualHost != null) __obj.updateDynamic("virtualHost")(virtualHost)
+    if (!js.isUndefined(verifyClient)) __obj.updateDynamic("verifyClient")(verifyClient.asInstanceOf[js.Any])
+    if (virtualHost != null) __obj.updateDynamic("virtualHost")(virtualHost.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bytes]
   }
 }

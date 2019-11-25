@@ -12,8 +12,8 @@ trait ImageryProvider extends js.Object {
 object ImageryProvider {
   @scala.inline
   def apply(coverageAreas: js.Array[CoverageArea], attribution: String = null): ImageryProvider = {
-    val __obj = js.Dynamic.literal(coverageAreas = coverageAreas)
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution)
+    val __obj = js.Dynamic.literal(coverageAreas = coverageAreas.asInstanceOf[js.Any])
+    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageryProvider]
   }
 }

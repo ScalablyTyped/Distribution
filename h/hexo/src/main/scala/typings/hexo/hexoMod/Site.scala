@@ -25,7 +25,7 @@ object Site {
     posts: Model[typings.hexo.hexoMod.Locals.Post],
     tags: Model[Tag]
   ): Site = {
-    val __obj = js.Dynamic.literal(categories = categories, data = data, pages = pages, posts = posts, tags = tags)
+    val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], posts = posts.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Site]
   }

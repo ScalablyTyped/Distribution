@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 trait PoiCore extends js.Object {
   var cli: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CAC */ js.Any = js.native
   /** The current running command */
-  var command: /* import warning: ImportType.apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CAC * / any['command'] */ js.Any = js.native
+  var command: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CAC * / any['command'] */ js.Any = js.native
   var config: Config = js.native
   var configLoader: ConfigLoader = js.native
   var isProd: Boolean = js.native

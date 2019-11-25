@@ -17,8 +17,8 @@ object SplitterExpandEvent {
     sender: Splitter,
     pane: Element = null
   ): SplitterExpandEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (pane != null) __obj.updateDynamic("pane")(pane)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitterExpandEvent]
   }
 }

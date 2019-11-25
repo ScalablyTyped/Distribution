@@ -14,8 +14,8 @@ trait NewsFeedResponseLinksItem extends js.Object {
 object NewsFeedResponseLinksItem {
   @scala.inline
   def apply(end: Double, id: String, start: Double, `type`: String): NewsFeedResponseLinksItem = {
-    val __obj = js.Dynamic.literal(end = end, id = id, start = start)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewsFeedResponseLinksItem]
   }
 }

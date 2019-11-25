@@ -21,7 +21,7 @@ object Anon_AutoMerged {
     undecided: Double,
     userMerged: Double
   ): Anon_AutoMerged = {
-    val __obj = js.Dynamic.literal(autoMerged = autoMerged, takeSourceContent = takeSourceContent, takeTargetContent = takeTargetContent, undecided = undecided, userMerged = userMerged)
+    val __obj = js.Dynamic.literal(autoMerged = autoMerged.asInstanceOf[js.Any], takeSourceContent = takeSourceContent.asInstanceOf[js.Any], takeTargetContent = takeTargetContent.asInstanceOf[js.Any], undecided = undecided.asInstanceOf[js.Any], userMerged = userMerged.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AutoMerged]
   }

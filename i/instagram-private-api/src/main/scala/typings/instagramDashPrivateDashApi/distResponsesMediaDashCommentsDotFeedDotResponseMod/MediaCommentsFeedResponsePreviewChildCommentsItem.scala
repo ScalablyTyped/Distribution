@@ -37,8 +37,8 @@ object MediaCommentsFeedResponsePreviewChildCommentsItem {
     `type`: Double,
     user: MediaCommentsFeedResponseUser
   ): MediaCommentsFeedResponsePreviewChildCommentsItem = {
-    val __obj = js.Dynamic.literal(comment_like_count = comment_like_count, content_type = content_type, created_at = created_at, created_at_utc = created_at_utc, has_liked_comment = has_liked_comment, media_id = media_id, parent_comment_id = parent_comment_id, pk = pk, share_enabled = share_enabled, status = status, text = text, user = user)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(comment_like_count = comment_like_count.asInstanceOf[js.Any], content_type = content_type.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], created_at_utc = created_at_utc.asInstanceOf[js.Any], has_liked_comment = has_liked_comment.asInstanceOf[js.Any], media_id = media_id.asInstanceOf[js.Any], parent_comment_id = parent_comment_id.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], share_enabled = share_enabled.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaCommentsFeedResponsePreviewChildCommentsItem]
   }
 }

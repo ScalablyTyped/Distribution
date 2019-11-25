@@ -15,7 +15,7 @@ trait Anon_DeletedRange extends js.Object {
 object Anon_DeletedRange {
   @scala.inline
   def apply(DeletedRange: Range, InUndoRedo: Boolean, OldXMLNode: XMLNode): Anon_DeletedRange = {
-    val __obj = js.Dynamic.literal(DeletedRange = DeletedRange, InUndoRedo = InUndoRedo, OldXMLNode = OldXMLNode)
+    val __obj = js.Dynamic.literal(DeletedRange = DeletedRange.asInstanceOf[js.Any], InUndoRedo = InUndoRedo.asInstanceOf[js.Any], OldXMLNode = OldXMLNode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DeletedRange]
   }

@@ -44,7 +44,7 @@ object Anon_AllowBrowserExecution {
     displayAll: Boolean,
     serverResultTimeout: Double
   ): Anon_AllowBrowserExecution = {
-    val __obj = js.Dynamic.literal(allowBrowserExecution = allowBrowserExecution, allowServerExecution = allowServerExecution, basePaths = basePaths, displayAll = displayAll, serverResultTimeout = serverResultTimeout)
+    val __obj = js.Dynamic.literal(allowBrowserExecution = allowBrowserExecution.asInstanceOf[js.Any], allowServerExecution = allowServerExecution.asInstanceOf[js.Any], basePaths = basePaths.asInstanceOf[js.Any], displayAll = displayAll.asInstanceOf[js.Any], serverResultTimeout = serverResultTimeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AllowBrowserExecution]
   }

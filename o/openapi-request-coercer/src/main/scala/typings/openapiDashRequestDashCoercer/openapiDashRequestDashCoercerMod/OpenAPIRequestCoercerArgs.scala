@@ -20,10 +20,10 @@ object OpenAPIRequestCoercerArgs {
     extensionBase: String = null,
     loggingKey: String = null
   ): OpenAPIRequestCoercerArgs = {
-    val __obj = js.Dynamic.literal(parameters = parameters)
-    if (!js.isUndefined(enableObjectCoercion)) __obj.updateDynamic("enableObjectCoercion")(enableObjectCoercion)
-    if (extensionBase != null) __obj.updateDynamic("extensionBase")(extensionBase)
-    if (loggingKey != null) __obj.updateDynamic("loggingKey")(loggingKey)
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableObjectCoercion)) __obj.updateDynamic("enableObjectCoercion")(enableObjectCoercion.asInstanceOf[js.Any])
+    if (extensionBase != null) __obj.updateDynamic("extensionBase")(extensionBase.asInstanceOf[js.Any])
+    if (loggingKey != null) __obj.updateDynamic("loggingKey")(loggingKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenAPIRequestCoercerArgs]
   }
 }

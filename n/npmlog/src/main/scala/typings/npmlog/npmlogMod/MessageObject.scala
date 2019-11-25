@@ -15,7 +15,7 @@ trait MessageObject extends js.Object {
 object MessageObject {
   @scala.inline
   def apply(id: Double, level: String, message: String, messageRaw: String, prefix: String): MessageObject = {
-    val __obj = js.Dynamic.literal(id = id, level = level, message = message, messageRaw = messageRaw, prefix = prefix)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], messageRaw = messageRaw.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MessageObject]
   }

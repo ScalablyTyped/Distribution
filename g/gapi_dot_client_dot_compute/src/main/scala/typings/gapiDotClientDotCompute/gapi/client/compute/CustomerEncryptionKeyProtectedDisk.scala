@@ -15,8 +15,8 @@ object CustomerEncryptionKeyProtectedDisk {
   @scala.inline
   def apply(diskEncryptionKey: CustomerEncryptionKey = null, source: String = null): CustomerEncryptionKeyProtectedDisk = {
     val __obj = js.Dynamic.literal()
-    if (diskEncryptionKey != null) __obj.updateDynamic("diskEncryptionKey")(diskEncryptionKey)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (diskEncryptionKey != null) __obj.updateDynamic("diskEncryptionKey")(diskEncryptionKey.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomerEncryptionKeyProtectedDisk]
   }
 }

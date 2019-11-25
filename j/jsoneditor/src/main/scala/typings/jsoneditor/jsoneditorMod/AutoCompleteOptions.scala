@@ -21,8 +21,8 @@ object AutoCompleteOptions {
     getOptions: (/* text */ String, /* path */ JSONPath, /* input */ String, /* editor */ JSONEditor) => AutoCompleteCompletion | js.Promise[AutoCompleteCompletion] = null
   ): AutoCompleteOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
-    if (confirmKeys != null) __obj.updateDynamic("confirmKeys")(confirmKeys)
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
+    if (confirmKeys != null) __obj.updateDynamic("confirmKeys")(confirmKeys.asInstanceOf[js.Any])
     if (getOptions != null) __obj.updateDynamic("getOptions")(js.Any.fromFunction4(getOptions))
     __obj.asInstanceOf[AutoCompleteOptions]
   }

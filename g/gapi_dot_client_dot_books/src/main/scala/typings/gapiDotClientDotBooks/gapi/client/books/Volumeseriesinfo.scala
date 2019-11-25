@@ -24,10 +24,10 @@ object Volumeseriesinfo {
     volumeSeries: js.Array[Anon_Issue] = null
   ): Volumeseriesinfo = {
     val __obj = js.Dynamic.literal()
-    if (bookDisplayNumber != null) __obj.updateDynamic("bookDisplayNumber")(bookDisplayNumber)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (shortSeriesBookTitle != null) __obj.updateDynamic("shortSeriesBookTitle")(shortSeriesBookTitle)
-    if (volumeSeries != null) __obj.updateDynamic("volumeSeries")(volumeSeries)
+    if (bookDisplayNumber != null) __obj.updateDynamic("bookDisplayNumber")(bookDisplayNumber.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (shortSeriesBookTitle != null) __obj.updateDynamic("shortSeriesBookTitle")(shortSeriesBookTitle.asInstanceOf[js.Any])
+    if (volumeSeries != null) __obj.updateDynamic("volumeSeries")(volumeSeries.asInstanceOf[js.Any])
     __obj.asInstanceOf[Volumeseriesinfo]
   }
 }

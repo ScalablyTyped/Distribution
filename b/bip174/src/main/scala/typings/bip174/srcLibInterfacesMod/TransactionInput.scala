@@ -14,7 +14,7 @@ trait TransactionInput extends js.Object {
 object TransactionInput {
   @scala.inline
   def apply(hash: String | Buffer, index: Double, sequence: Int | Double = null): TransactionInput = {
-    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], index = index)
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     if (sequence != null) __obj.updateDynamic("sequence")(sequence.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionInput]
   }

@@ -24,12 +24,12 @@ object JobConfigurationTableCopy {
     writeDisposition: String = null
   ): JobConfigurationTableCopy = {
     val __obj = js.Dynamic.literal()
-    if (createDisposition != null) __obj.updateDynamic("createDisposition")(createDisposition)
-    if (destinationEncryptionConfiguration != null) __obj.updateDynamic("destinationEncryptionConfiguration")(destinationEncryptionConfiguration)
-    if (destinationTable != null) __obj.updateDynamic("destinationTable")(destinationTable)
-    if (sourceTable != null) __obj.updateDynamic("sourceTable")(sourceTable)
-    if (sourceTables != null) __obj.updateDynamic("sourceTables")(sourceTables)
-    if (writeDisposition != null) __obj.updateDynamic("writeDisposition")(writeDisposition)
+    if (createDisposition != null) __obj.updateDynamic("createDisposition")(createDisposition.asInstanceOf[js.Any])
+    if (destinationEncryptionConfiguration != null) __obj.updateDynamic("destinationEncryptionConfiguration")(destinationEncryptionConfiguration.asInstanceOf[js.Any])
+    if (destinationTable != null) __obj.updateDynamic("destinationTable")(destinationTable.asInstanceOf[js.Any])
+    if (sourceTable != null) __obj.updateDynamic("sourceTable")(sourceTable.asInstanceOf[js.Any])
+    if (sourceTables != null) __obj.updateDynamic("sourceTables")(sourceTables.asInstanceOf[js.Any])
+    if (writeDisposition != null) __obj.updateDynamic("writeDisposition")(writeDisposition.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobConfigurationTableCopy]
   }
 }

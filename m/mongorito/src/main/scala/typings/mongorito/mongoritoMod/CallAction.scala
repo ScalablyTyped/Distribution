@@ -15,8 +15,8 @@ trait CallAction extends Action {
 object CallAction {
   @scala.inline
   def apply(args: js.Array[Anon_Args], method: String, `type`: CALL): CallAction = {
-    val __obj = js.Dynamic.literal(args = args, method = method)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallAction]
   }
 }

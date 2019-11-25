@@ -96,15 +96,15 @@ object heatmapCreateRendererParams {
     minRatio: Int | Double = null,
     statistics: HeatmapStatisticsResult = null
   ): heatmapCreateRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view.asInstanceOf[js.Any])
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (blurRadius != null) __obj.updateDynamic("blurRadius")(blurRadius.asInstanceOf[js.Any])
-    if (!js.isUndefined(fadeToTransparent)) __obj.updateDynamic("fadeToTransparent")(fadeToTransparent)
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (heatmapScheme != null) __obj.updateDynamic("heatmapScheme")(heatmapScheme)
+    if (!js.isUndefined(fadeToTransparent)) __obj.updateDynamic("fadeToTransparent")(fadeToTransparent.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (heatmapScheme != null) __obj.updateDynamic("heatmapScheme")(heatmapScheme.asInstanceOf[js.Any])
     if (maxRatio != null) __obj.updateDynamic("maxRatio")(maxRatio.asInstanceOf[js.Any])
     if (minRatio != null) __obj.updateDynamic("minRatio")(minRatio.asInstanceOf[js.Any])
-    if (statistics != null) __obj.updateDynamic("statistics")(statistics)
+    if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[heatmapCreateRendererParams]
   }
 }

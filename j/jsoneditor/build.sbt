@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "jsoneditor"
-version := "v5.28.2-dt-20190329Z-4cd580"
+version := "v5.28.2-dt-20190329Z-b6b528"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ace" % "0.0-unknown-dt-20190322Z-ce4e69",
-  "org.scalablytyped" %%% "ajv" % "6.10.2-52b713",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
+  "org.scalablytyped" %%% "ace" % "0.0-unknown-dt-20190322Z-224eb8",
+  "org.scalablytyped" %%% "ajv" % "6.10.2-3573c2",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

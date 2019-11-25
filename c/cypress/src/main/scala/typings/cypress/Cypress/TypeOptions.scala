@@ -49,7 +49,7 @@ object TypeOptions {
     release: Boolean,
     timeout: Double
   ): TypeOptions = {
-    val __obj = js.Dynamic.literal(delay = delay, force = force, log = log, parseSpecialCharSequences = parseSpecialCharSequences, release = release, timeout = timeout)
+    val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], parseSpecialCharSequences = parseSpecialCharSequences.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeOptions]
   }

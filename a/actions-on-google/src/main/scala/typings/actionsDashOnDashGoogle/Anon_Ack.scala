@@ -13,8 +13,8 @@ object Anon_Ack {
   @scala.inline
   def apply(ack: js.UndefOr[Boolean] = js.undefined, pin: String = null): Anon_Ack = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ack)) __obj.updateDynamic("ack")(ack)
-    if (pin != null) __obj.updateDynamic("pin")(pin)
+    if (!js.isUndefined(ack)) __obj.updateDynamic("ack")(ack.asInstanceOf[js.Any])
+    if (pin != null) __obj.updateDynamic("pin")(pin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Ack]
   }
 }

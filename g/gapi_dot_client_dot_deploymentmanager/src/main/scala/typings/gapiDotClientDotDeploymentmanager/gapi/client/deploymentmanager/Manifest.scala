@@ -40,14 +40,14 @@ object Manifest {
     selfLink: String = null
   ): Manifest = {
     val __obj = js.Dynamic.literal()
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (expandedConfig != null) __obj.updateDynamic("expandedConfig")(expandedConfig)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (imports != null) __obj.updateDynamic("imports")(imports)
-    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (expandedConfig != null) __obj.updateDynamic("expandedConfig")(expandedConfig.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
+    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[Manifest]
   }
 }

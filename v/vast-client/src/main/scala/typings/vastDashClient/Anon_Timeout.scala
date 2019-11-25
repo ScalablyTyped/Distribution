@@ -12,7 +12,7 @@ trait Anon_Timeout extends js.Object {
 object Anon_Timeout {
   @scala.inline
   def apply(timeout: Double, withCredentials: Boolean): Anon_Timeout = {
-    val __obj = js.Dynamic.literal(timeout = timeout, withCredentials = withCredentials)
+    val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any], withCredentials = withCredentials.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Timeout]
   }

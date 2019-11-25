@@ -33,8 +33,8 @@ object IgTreeGridFilteringLocale {
     filterSummaryInPagerTemplate: String = null
   ): IgTreeGridFilteringLocale = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (filterSummaryInPagerTemplate != null) __obj.updateDynamic("filterSummaryInPagerTemplate")(filterSummaryInPagerTemplate)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (filterSummaryInPagerTemplate != null) __obj.updateDynamic("filterSummaryInPagerTemplate")(filterSummaryInPagerTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTreeGridFilteringLocale]
   }
 }

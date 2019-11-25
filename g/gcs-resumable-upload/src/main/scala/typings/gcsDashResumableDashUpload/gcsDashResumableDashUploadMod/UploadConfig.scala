@@ -119,23 +119,23 @@ object UploadConfig {
     uri: String = null,
     userProject: String = null
   ): UploadConfig = {
-    val __obj = js.Dynamic.literal(bucket = bucket, file = file)
-    if (apiEndpoint != null) __obj.updateDynamic("apiEndpoint")(apiEndpoint)
-    if (authClient != null) __obj.updateDynamic("authClient")(authClient)
-    if (authConfig != null) __obj.updateDynamic("authConfig")(authConfig)
-    if (configPath != null) __obj.updateDynamic("configPath")(configPath)
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
+    if (apiEndpoint != null) __obj.updateDynamic("apiEndpoint")(apiEndpoint.asInstanceOf[js.Any])
+    if (authClient != null) __obj.updateDynamic("authClient")(authClient.asInstanceOf[js.Any])
+    if (authConfig != null) __obj.updateDynamic("authConfig")(authConfig.asInstanceOf[js.Any])
+    if (configPath != null) __obj.updateDynamic("configPath")(configPath.asInstanceOf[js.Any])
     if (generation != null) __obj.updateDynamic("generation")(generation.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (kmsKeyName != null) __obj.updateDynamic("kmsKeyName")(kmsKeyName)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (kmsKeyName != null) __obj.updateDynamic("kmsKeyName")(kmsKeyName.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (predefinedAcl != null) __obj.updateDynamic("predefinedAcl")(predefinedAcl)
-    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
-    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
-    if (userProject != null) __obj.updateDynamic("userProject")(userProject)
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (predefinedAcl != null) __obj.updateDynamic("predefinedAcl")(predefinedAcl.asInstanceOf[js.Any])
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
+    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
+    if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadConfig]
   }
 }

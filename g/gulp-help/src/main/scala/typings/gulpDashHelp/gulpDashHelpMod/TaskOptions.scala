@@ -20,8 +20,8 @@ object TaskOptions {
   @scala.inline
   def apply(aliases: js.Array[String] = null, options: StringDictionary[String] = null): TaskOptions = {
     val __obj = js.Dynamic.literal()
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskOptions]
   }
 }

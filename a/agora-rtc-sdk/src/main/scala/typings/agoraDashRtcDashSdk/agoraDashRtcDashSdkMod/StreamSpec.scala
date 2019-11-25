@@ -110,17 +110,17 @@ object StreamSpec {
     streamID: Double | String = null,
     videoSource: MediaStreamTrack = null
   ): StreamSpec = {
-    val __obj = js.Dynamic.literal(audio = audio, video = video)
-    if (audioProcessing != null) __obj.updateDynamic("audioProcessing")(audioProcessing)
-    if (audioSource != null) __obj.updateDynamic("audioSource")(audioSource)
-    if (cameraId != null) __obj.updateDynamic("cameraId")(cameraId)
-    if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId)
+    val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
+    if (audioProcessing != null) __obj.updateDynamic("audioProcessing")(audioProcessing.asInstanceOf[js.Any])
+    if (audioSource != null) __obj.updateDynamic("audioSource")(audioSource.asInstanceOf[js.Any])
+    if (cameraId != null) __obj.updateDynamic("cameraId")(cameraId.asInstanceOf[js.Any])
+    if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId.asInstanceOf[js.Any])
     if (mediaSource != null) __obj.updateDynamic("mediaSource")(mediaSource.asInstanceOf[js.Any])
-    if (microphoneId != null) __obj.updateDynamic("microphoneId")(microphoneId)
-    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror)
-    if (!js.isUndefined(screen)) __obj.updateDynamic("screen")(screen)
+    if (microphoneId != null) __obj.updateDynamic("microphoneId")(microphoneId.asInstanceOf[js.Any])
+    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror.asInstanceOf[js.Any])
+    if (!js.isUndefined(screen)) __obj.updateDynamic("screen")(screen.asInstanceOf[js.Any])
     if (streamID != null) __obj.updateDynamic("streamID")(streamID.asInstanceOf[js.Any])
-    if (videoSource != null) __obj.updateDynamic("videoSource")(videoSource)
+    if (videoSource != null) __obj.updateDynamic("videoSource")(videoSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamSpec]
   }
 }

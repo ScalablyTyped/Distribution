@@ -12,7 +12,7 @@ object LocationHookOptions {
   @scala.inline
   def apply(base: Path = null): LocationHookOptions = {
     val __obj = js.Dynamic.literal()
-    if (base != null) __obj.updateDynamic("base")(base)
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationHookOptions]
   }
 }

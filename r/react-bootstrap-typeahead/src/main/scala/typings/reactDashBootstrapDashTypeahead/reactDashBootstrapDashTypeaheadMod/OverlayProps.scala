@@ -24,11 +24,11 @@ object OverlayProps {
     referenceElement: HTMLElement = null,
     show: js.UndefOr[Boolean] = js.undefined
   ): OverlayProps = {
-    val __obj = js.Dynamic.literal(container = container)
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (referenceElement != null) __obj.updateDynamic("referenceElement")(referenceElement)
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (referenceElement != null) __obj.updateDynamic("referenceElement")(referenceElement.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverlayProps]
   }
 }

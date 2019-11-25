@@ -25,9 +25,9 @@ object DocumentAnalysis {
     warning: String = null
   ): DocumentAnalysis = {
     val __obj = js.Dynamic.literal()
-    if (tone_categories != null) __obj.updateDynamic("tone_categories")(tone_categories)
-    if (tones != null) __obj.updateDynamic("tones")(tones)
-    if (warning != null) __obj.updateDynamic("warning")(warning)
+    if (tone_categories != null) __obj.updateDynamic("tone_categories")(tone_categories.asInstanceOf[js.Any])
+    if (tones != null) __obj.updateDynamic("tones")(tones.asInstanceOf[js.Any])
+    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentAnalysis]
   }
 }

@@ -22,11 +22,11 @@ object NodeDeleteConfig {
     parentID: String = null,
     parentName: String = null
   ): NodeDeleteConfig = {
-    val __obj = js.Dynamic.literal(deletedIDFieldName = deletedIDFieldName)
-    __obj.updateDynamic("type")(`type`)
-    if (connectionName != null) __obj.updateDynamic("connectionName")(connectionName)
-    if (parentID != null) __obj.updateDynamic("parentID")(parentID)
-    if (parentName != null) __obj.updateDynamic("parentName")(parentName)
+    val __obj = js.Dynamic.literal(deletedIDFieldName = deletedIDFieldName.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (connectionName != null) __obj.updateDynamic("connectionName")(connectionName.asInstanceOf[js.Any])
+    if (parentID != null) __obj.updateDynamic("parentID")(parentID.asInstanceOf[js.Any])
+    if (parentName != null) __obj.updateDynamic("parentName")(parentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeDeleteConfig]
   }
 }

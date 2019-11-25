@@ -29,13 +29,13 @@ object DropdownOptions {
     opened: () => _ = null
   ): DropdownOptions = {
     val __obj = js.Dynamic.literal()
-    if (active_class != null) __obj.updateDynamic("active_class")(active_class)
-    if (align != null) __obj.updateDynamic("align")(align)
+    if (active_class != null) __obj.updateDynamic("active_class")(active_class.asInstanceOf[js.Any])
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (closed != null) __obj.updateDynamic("closed")(js.Any.fromFunction0(closed))
-    if (disabled_class != null) __obj.updateDynamic("disabled_class")(disabled_class)
+    if (disabled_class != null) __obj.updateDynamic("disabled_class")(disabled_class.asInstanceOf[js.Any])
     if (hover_timeout != null) __obj.updateDynamic("hover_timeout")(hover_timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_hover)) __obj.updateDynamic("is_hover")(is_hover)
-    if (mega_class != null) __obj.updateDynamic("mega_class")(mega_class)
+    if (!js.isUndefined(is_hover)) __obj.updateDynamic("is_hover")(is_hover.asInstanceOf[js.Any])
+    if (mega_class != null) __obj.updateDynamic("mega_class")(mega_class.asInstanceOf[js.Any])
     if (opened != null) __obj.updateDynamic("opened")(js.Any.fromFunction0(opened))
     __obj.asInstanceOf[DropdownOptions]
   }

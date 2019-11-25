@@ -21,10 +21,10 @@ object AuditLogRoot {
     signIns: js.Array[SignIn] = null
   ): AuditLogRoot = {
     val __obj = js.Dynamic.literal()
-    if (directoryAudits != null) __obj.updateDynamic("directoryAudits")(directoryAudits)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (restrictedSignIns != null) __obj.updateDynamic("restrictedSignIns")(restrictedSignIns)
-    if (signIns != null) __obj.updateDynamic("signIns")(signIns)
+    if (directoryAudits != null) __obj.updateDynamic("directoryAudits")(directoryAudits.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (restrictedSignIns != null) __obj.updateDynamic("restrictedSignIns")(restrictedSignIns.asInstanceOf[js.Any])
+    if (signIns != null) __obj.updateDynamic("signIns")(signIns.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuditLogRoot]
   }
 }

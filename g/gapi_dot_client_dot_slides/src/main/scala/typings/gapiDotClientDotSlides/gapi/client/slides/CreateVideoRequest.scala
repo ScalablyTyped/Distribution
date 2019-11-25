@@ -40,10 +40,10 @@ object CreateVideoRequest {
     source: String = null
   ): CreateVideoRequest = {
     val __obj = js.Dynamic.literal()
-    if (elementProperties != null) __obj.updateDynamic("elementProperties")(elementProperties)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (elementProperties != null) __obj.updateDynamic("elementProperties")(elementProperties.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVideoRequest]
   }
 }

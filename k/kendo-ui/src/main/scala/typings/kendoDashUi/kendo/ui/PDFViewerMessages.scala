@@ -20,10 +20,10 @@ object PDFViewerMessages {
     toolbar: PDFViewerMessagesToolbar = null
   ): PDFViewerMessages = {
     val __obj = js.Dynamic.literal()
-    if (defaultFileName != null) __obj.updateDynamic("defaultFileName")(defaultFileName)
-    if (dialogs != null) __obj.updateDynamic("dialogs")(dialogs)
-    if (errorMessages != null) __obj.updateDynamic("errorMessages")(errorMessages)
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar)
+    if (defaultFileName != null) __obj.updateDynamic("defaultFileName")(defaultFileName.asInstanceOf[js.Any])
+    if (dialogs != null) __obj.updateDynamic("dialogs")(dialogs.asInstanceOf[js.Any])
+    if (errorMessages != null) __obj.updateDynamic("errorMessages")(errorMessages.asInstanceOf[js.Any])
+    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerMessages]
   }
 }

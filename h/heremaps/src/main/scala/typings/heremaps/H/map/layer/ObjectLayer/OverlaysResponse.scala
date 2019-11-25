@@ -18,7 +18,7 @@ trait OverlaysResponse extends js.Object {
 object OverlaysResponse {
   @scala.inline
   def apply(overlays: js.Array[Overlay], total: Double): OverlaysResponse = {
-    val __obj = js.Dynamic.literal(overlays = overlays, total = total)
+    val __obj = js.Dynamic.literal(overlays = overlays.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OverlaysResponse]
   }

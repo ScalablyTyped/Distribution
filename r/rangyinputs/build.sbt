@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rangyinputs"
-version := "1.2.0-dt-20190322Z-96de77"
+version := "1.2.0-dt-20190322Z-0ede67"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

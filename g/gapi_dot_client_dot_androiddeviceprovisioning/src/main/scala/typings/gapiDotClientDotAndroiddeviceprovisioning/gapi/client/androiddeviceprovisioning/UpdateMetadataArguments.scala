@@ -21,9 +21,9 @@ object UpdateMetadataArguments {
     deviceMetadata: DeviceMetadata = null
   ): UpdateMetadataArguments = {
     val __obj = js.Dynamic.literal()
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
-    if (deviceIdentifier != null) __obj.updateDynamic("deviceIdentifier")(deviceIdentifier)
-    if (deviceMetadata != null) __obj.updateDynamic("deviceMetadata")(deviceMetadata)
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
+    if (deviceIdentifier != null) __obj.updateDynamic("deviceIdentifier")(deviceIdentifier.asInstanceOf[js.Any])
+    if (deviceMetadata != null) __obj.updateDynamic("deviceMetadata")(deviceMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMetadataArguments]
   }
 }

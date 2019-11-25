@@ -2,7 +2,6 @@ package typings.amqpDashConnectionDashManager.amqpDashConnectionDashManagerMod
 
 import typings.amqpDashConnectionDashManager.Anon_Name
 import typings.amqpDashConnectionDashManager.amqpDashConnectionDashManagerStrings.close
-import typings.amqpDashConnectionDashManager.amqpDashConnectionDashManagerStrings.connect
 import typings.amqpDashConnectionDashManager.amqpDashConnectionDashManagerStrings.error
 import typings.amqplib.propertiesMod.Message
 import typings.amqplib.propertiesMod.Options.Publish
@@ -26,7 +25,10 @@ trait ChannelWrapper extends EventEmitter {
   @JSName("addListener")
   def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
+  def addListener_connect(
+    event: typings.amqpDashConnectionDashManager.amqpDashConnectionDashManagerStrings.connect,
+    listener: js.Function0[Unit]
+  ): this.type = js.native
   @JSName("addListener")
   def addListener_error(event: error, listener: js.Function2[/* err */ Error, /* info */ Anon_Name, Unit]): this.type = js.native
   /**
@@ -56,25 +58,37 @@ trait ChannelWrapper extends EventEmitter {
   @JSName("on")
   def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
-  def on_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
+  def on_connect(
+    event: typings.amqpDashConnectionDashManager.amqpDashConnectionDashManagerStrings.connect,
+    listener: js.Function0[Unit]
+  ): this.type = js.native
   @JSName("on")
   def on_error(event: error, listener: js.Function2[/* err */ Error, /* info */ Anon_Name, Unit]): this.type = js.native
   @JSName("once")
   def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
-  def once_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
+  def once_connect(
+    event: typings.amqpDashConnectionDashManager.amqpDashConnectionDashManagerStrings.connect,
+    listener: js.Function0[Unit]
+  ): this.type = js.native
   @JSName("once")
   def once_error(event: error, listener: js.Function2[/* err */ Error, /* info */ Anon_Name, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
-  def prependListener_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
+  def prependListener_connect(
+    event: typings.amqpDashConnectionDashManager.amqpDashConnectionDashManagerStrings.connect,
+    listener: js.Function0[Unit]
+  ): this.type = js.native
   @JSName("prependListener")
   def prependListener_error(event: error, listener: js.Function2[/* err */ Error, /* info */ Anon_Name, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
+  def prependOnceListener_connect(
+    event: typings.amqpDashConnectionDashManager.amqpDashConnectionDashManagerStrings.connect,
+    listener: js.Function0[Unit]
+  ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_error(event: error, listener: js.Function2[/* err */ Error, /* info */ Anon_Name, Unit]): this.type = js.native
   /**

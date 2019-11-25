@@ -12,7 +12,7 @@ object OptionalAttributes {
   @scala.inline
   def apply(attributes: StringMap = null): OptionalAttributes = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionalAttributes]
   }
 }

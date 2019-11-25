@@ -45,8 +45,8 @@ object Point {
     yval_plus: Int | Double = null,
     yval_stacked: Int | Double = null
   ): Point = {
-    val __obj = js.Dynamic.literal(idx = idx, name = name)
-    if (annotation != null) __obj.updateDynamic("annotation")(annotation)
+    val __obj = js.Dynamic.literal(idx = idx.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (xval != null) __obj.updateDynamic("xval")(xval.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])

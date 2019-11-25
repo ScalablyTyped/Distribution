@@ -11,7 +11,7 @@ trait HitTestResults extends js.Object {
 object HitTestResults {
   @scala.inline
   def apply(hitTest: js.Array[HitTest]): HitTestResults = {
-    val __obj = js.Dynamic.literal(hitTest = hitTest)
+    val __obj = js.Dynamic.literal(hitTest = hitTest.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HitTestResults]
   }

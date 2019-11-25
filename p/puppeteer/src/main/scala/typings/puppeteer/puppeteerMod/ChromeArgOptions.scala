@@ -35,10 +35,10 @@ object ChromeArgOptions {
     userDataDir: String = null
   ): ChromeArgOptions = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (!js.isUndefined(devtools)) __obj.updateDynamic("devtools")(devtools)
-    if (!js.isUndefined(headless)) __obj.updateDynamic("headless")(headless)
-    if (userDataDir != null) __obj.updateDynamic("userDataDir")(userDataDir)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (!js.isUndefined(devtools)) __obj.updateDynamic("devtools")(devtools.asInstanceOf[js.Any])
+    if (!js.isUndefined(headless)) __obj.updateDynamic("headless")(headless.asInstanceOf[js.Any])
+    if (userDataDir != null) __obj.updateDynamic("userDataDir")(userDataDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChromeArgOptions]
   }
 }

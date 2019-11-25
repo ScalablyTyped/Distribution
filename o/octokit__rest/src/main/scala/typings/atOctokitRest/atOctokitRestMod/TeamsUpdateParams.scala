@@ -40,8 +40,8 @@ object TeamsUpdateParams {
     parent_team_id: Int | Double = null,
     privacy: secret | closed = null
   ): TeamsUpdateParams = {
-    val __obj = js.Dynamic.literal(name = name, team_id = team_id)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (parent_team_id != null) __obj.updateDynamic("parent_team_id")(parent_team_id.asInstanceOf[js.Any])
     if (privacy != null) __obj.updateDynamic("privacy")(privacy.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsUpdateParams]

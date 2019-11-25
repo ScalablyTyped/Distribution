@@ -24,12 +24,12 @@ object RectangleFillGradient {
     `type`: String = null
   ): RectangleFillGradient = {
     val __obj = js.Dynamic.literal()
-    if (center != null) __obj.updateDynamic("center")(center)
-    if (end != null) __obj.updateDynamic("end")(end)
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (stops != null) __obj.updateDynamic("stops")(stops)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RectangleFillGradient]
   }
 }

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait Direction extends js.Object
 
+object Direction {
+  @scala.inline
+  def backward: typings.reactDashRelay.reactDashRelayStrings.backward = this.cast("backward")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def forward: typings.reactDashRelay.reactDashRelayStrings.forward = this.cast("forward")
+}
+

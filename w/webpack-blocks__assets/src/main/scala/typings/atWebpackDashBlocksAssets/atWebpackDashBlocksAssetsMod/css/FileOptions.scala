@@ -27,13 +27,13 @@ object FileOptions {
     regExp: RegExp = null
   ): FileOptions = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (!js.isUndefined(emitFile)) __obj.updateDynamic("emitFile")(emitFile)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(emitFile)) __obj.updateDynamic("emitFile")(emitFile.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (outputPath != null) __obj.updateDynamic("outputPath")(outputPath.asInstanceOf[js.Any])
     if (postTransformPublicPath != null) __obj.updateDynamic("postTransformPublicPath")(js.Any.fromFunction1(postTransformPublicPath))
     if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath.asInstanceOf[js.Any])
-    if (regExp != null) __obj.updateDynamic("regExp")(regExp)
+    if (regExp != null) __obj.updateDynamic("regExp")(regExp.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileOptions]
   }
 }

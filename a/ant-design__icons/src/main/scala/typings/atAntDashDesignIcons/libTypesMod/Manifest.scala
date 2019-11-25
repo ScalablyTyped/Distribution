@@ -13,7 +13,7 @@ trait Manifest extends js.Object {
 object Manifest {
   @scala.inline
   def apply(fill: js.Array[String], outline: js.Array[String], twotone: js.Array[String]): Manifest = {
-    val __obj = js.Dynamic.literal(fill = fill, outline = outline, twotone = twotone)
+    val __obj = js.Dynamic.literal(fill = fill.asInstanceOf[js.Any], outline = outline.asInstanceOf[js.Any], twotone = twotone.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Manifest]
   }

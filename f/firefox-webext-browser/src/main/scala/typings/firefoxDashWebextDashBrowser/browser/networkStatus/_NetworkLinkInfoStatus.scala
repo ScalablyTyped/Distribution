@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait _NetworkLinkInfoStatus extends js.Object
 
+object _NetworkLinkInfoStatus {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def down: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.down = this.cast("down")
+  @scala.inline
+  def unknown: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.unknown = this.cast("unknown")
+  @scala.inline
+  def up: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.up = this.cast("up")
+}
+

@@ -19,7 +19,7 @@ object SerializeHandlerArguments {
   @scala.inline
   def apply[Input /* <: js.Object */, Stream](input: Input, request: HttpRequest[Stream] = null): SerializeHandlerArguments[Input, Stream] = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request)
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerializeHandlerArguments[Input, Stream]]
   }
 }

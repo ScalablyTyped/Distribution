@@ -83,7 +83,7 @@ object EventMap {
     selectChanged: Event[selectChanged, Anon_Click],
     willClear: Event[willClear, Anon_Data]
   ): EventMap = {
-    val __obj = js.Dynamic.literal(complete = complete, error = error, infoWindowClick = infoWindowClick, listElementClick = listElementClick, listElementDetroyed = listElementDetroyed, markerClick = markerClick, markerDestoryed = markerDestoryed, renderComplete = renderComplete, selectChanged = selectChanged, willClear = willClear)
+    val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], infoWindowClick = infoWindowClick.asInstanceOf[js.Any], listElementClick = listElementClick.asInstanceOf[js.Any], listElementDetroyed = listElementDetroyed.asInstanceOf[js.Any], markerClick = markerClick.asInstanceOf[js.Any], markerDestoryed = markerDestoryed.asInstanceOf[js.Any], renderComplete = renderComplete.asInstanceOf[js.Any], selectChanged = selectChanged.asInstanceOf[js.Any], willClear = willClear.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventMap]
   }

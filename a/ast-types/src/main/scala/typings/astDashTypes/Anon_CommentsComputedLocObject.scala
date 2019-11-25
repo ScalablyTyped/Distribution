@@ -25,11 +25,11 @@ object Anon_CommentsComputedLocObject {
     computed: js.UndefOr[Boolean] = js.undefined,
     loc: SourceLocationKind = null
   ): Anon_CommentsComputedLocObject = {
-    val __obj = js.Dynamic.literal(property = property)
+    val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsComputedLocObject]
   }
 }

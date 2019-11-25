@@ -19,8 +19,8 @@ object Anon_ContentHeader {
     header: Element,
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Anon_ContentHeader = {
-    val __obj = js.Dynamic.literal(content = content, header = header)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_ContentHeader]
   }
 }

@@ -1,9 +1,6 @@
 package typings.dojo.dojox.form.uploader
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dojoStrings.headerFilename
 import typings.dojo.dojoStrings.headerFilesize
 import typings.dojo.dojoStrings.headerIndex
@@ -117,18 +114,74 @@ class FileList () extends _Base {
     */
   def showProgress(animate: Boolean): Unit = js.native
   @JSName("watch")
-  def watch_headerFilename(property: headerFilename, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_headerFilename(
+    property: headerFilename,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_headerFilesize(property: headerFilesize, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_headerFilesize(
+    property: headerFilesize,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_headerIndex(property: headerIndex, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_headerIndex(
+    property: headerIndex,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_headerType(property: headerType, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_headerType(
+    property: headerType,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_rowAmt(property: rowAmt, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_rowAmt(
+    property: rowAmt,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_uploader(property: typings.dojo.dojoStrings.uploader, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_uploader(
+    property: typings.dojo.dojoStrings.uploader,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_uploaderId(property: uploaderId, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_uploaderId(
+    property: uploaderId,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

@@ -1,7 +1,6 @@
 package typings.koaDashWebsocket.koaDashWebsocketMod
 
 import typings.koaDashWebsocket.koaDashWebsocketMod.koaMod.Context
-import typings.ws.wsMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +14,8 @@ trait MiddlewareContext[StateT] extends Context {
 
 object MiddlewareContext {
   @scala.inline
-  def apply[StateT](app: App[_, js.Object], path: String, state: StateT, websocket: ^): MiddlewareContext[StateT] = {
-    val __obj = js.Dynamic.literal(app = app, path = path, state = state.asInstanceOf[js.Any], websocket = websocket)
+  def apply[StateT](app: App[_, js.Object], path: String, state: StateT, websocket: typings.ws.wsMod.^): MiddlewareContext[StateT] = {
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], websocket = websocket.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MiddlewareContext[StateT]]
   }

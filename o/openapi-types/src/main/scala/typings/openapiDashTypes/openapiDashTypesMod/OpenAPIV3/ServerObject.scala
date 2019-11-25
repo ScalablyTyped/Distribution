@@ -14,9 +14,9 @@ trait ServerObject extends js.Object {
 object ServerObject {
   @scala.inline
   def apply(url: String, description: String = null, variables: StringDictionary[ServerVariableObject] = null): ServerObject = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (variables != null) __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerObject]
   }
 }

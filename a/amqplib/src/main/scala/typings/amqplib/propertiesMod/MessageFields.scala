@@ -19,8 +19,8 @@ object MessageFields {
     consumerTag: String = null,
     messageCount: Int | Double = null
   ): MessageFields = {
-    val __obj = js.Dynamic.literal(deliveryTag = deliveryTag, exchange = exchange, redelivered = redelivered, routingKey = routingKey)
-    if (consumerTag != null) __obj.updateDynamic("consumerTag")(consumerTag)
+    val __obj = js.Dynamic.literal(deliveryTag = deliveryTag.asInstanceOf[js.Any], exchange = exchange.asInstanceOf[js.Any], redelivered = redelivered.asInstanceOf[js.Any], routingKey = routingKey.asInstanceOf[js.Any])
+    if (consumerTag != null) __obj.updateDynamic("consumerTag")(consumerTag.asInstanceOf[js.Any])
     if (messageCount != null) __obj.updateDynamic("messageCount")(messageCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageFields]
   }

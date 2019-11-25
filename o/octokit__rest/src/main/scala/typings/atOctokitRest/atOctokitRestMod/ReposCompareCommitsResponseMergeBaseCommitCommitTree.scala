@@ -12,7 +12,7 @@ trait ReposCompareCommitsResponseMergeBaseCommitCommitTree extends js.Object {
 object ReposCompareCommitsResponseMergeBaseCommitCommitTree {
   @scala.inline
   def apply(sha: String, url: String): ReposCompareCommitsResponseMergeBaseCommitCommitTree = {
-    val __obj = js.Dynamic.literal(sha = sha, url = url)
+    val __obj = js.Dynamic.literal(sha = sha.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposCompareCommitsResponseMergeBaseCommitCommitTree]
   }

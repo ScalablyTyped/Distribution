@@ -39,7 +39,7 @@ object DescribeLimitsOutput {
     TableMaxReadCapacityUnits: Int | Double = null,
     TableMaxWriteCapacityUnits: Int | Double = null
   ): DescribeLimitsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     if (AccountMaxReadCapacityUnits != null) __obj.updateDynamic("AccountMaxReadCapacityUnits")(AccountMaxReadCapacityUnits.asInstanceOf[js.Any])
     if (AccountMaxWriteCapacityUnits != null) __obj.updateDynamic("AccountMaxWriteCapacityUnits")(AccountMaxWriteCapacityUnits.asInstanceOf[js.Any])
     if (TableMaxReadCapacityUnits != null) __obj.updateDynamic("TableMaxReadCapacityUnits")(TableMaxReadCapacityUnits.asInstanceOf[js.Any])

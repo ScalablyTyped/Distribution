@@ -22,7 +22,7 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(context: Context, saveInterval: Int | Double = null): IOptions = {
-    val __obj = js.Dynamic.literal(context = context)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
     if (saveInterval != null) __obj.updateDynamic("saveInterval")(saveInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }

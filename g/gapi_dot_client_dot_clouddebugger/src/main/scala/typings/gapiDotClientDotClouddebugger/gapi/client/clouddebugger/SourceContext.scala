@@ -24,10 +24,10 @@ object SourceContext {
     git: GitSourceContext = null
   ): SourceContext = {
     val __obj = js.Dynamic.literal()
-    if (cloudRepo != null) __obj.updateDynamic("cloudRepo")(cloudRepo)
-    if (cloudWorkspace != null) __obj.updateDynamic("cloudWorkspace")(cloudWorkspace)
-    if (gerrit != null) __obj.updateDynamic("gerrit")(gerrit)
-    if (git != null) __obj.updateDynamic("git")(git)
+    if (cloudRepo != null) __obj.updateDynamic("cloudRepo")(cloudRepo.asInstanceOf[js.Any])
+    if (cloudWorkspace != null) __obj.updateDynamic("cloudWorkspace")(cloudWorkspace.asInstanceOf[js.Any])
+    if (gerrit != null) __obj.updateDynamic("gerrit")(gerrit.asInstanceOf[js.Any])
+    if (git != null) __obj.updateDynamic("git")(git.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceContext]
   }
 }

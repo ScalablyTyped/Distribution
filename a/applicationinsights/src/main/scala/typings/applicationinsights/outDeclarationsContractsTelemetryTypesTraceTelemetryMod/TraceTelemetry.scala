@@ -29,12 +29,12 @@ object TraceTelemetry {
     tagOverrides: StringDictionary[String] = null,
     time: Date = null
   ): TraceTelemetry = {
-    val __obj = js.Dynamic.literal(message = message)
-    if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (severity != null) __obj.updateDynamic("severity")(severity)
-    if (tagOverrides != null) __obj.updateDynamic("tagOverrides")(tagOverrides)
-    if (time != null) __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
+    if (tagOverrides != null) __obj.updateDynamic("tagOverrides")(tagOverrides.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[TraceTelemetry]
   }
 }

@@ -29,11 +29,11 @@ object StyleOptions {
     zIndex: Int | Double = null
   ): StyleOptions = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleOptions]
   }

@@ -13,8 +13,8 @@ object Modifiers_string {
   @scala.inline
   def apply(default: String = null, material: String = null): Modifiers_string = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (material != null) __obj.updateDynamic("material")(material)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
     __obj.asInstanceOf[Modifiers_string]
   }
 }

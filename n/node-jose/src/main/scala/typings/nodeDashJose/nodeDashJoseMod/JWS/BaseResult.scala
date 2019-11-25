@@ -25,8 +25,8 @@ trait BaseResult extends js.Object {
 object BaseResult {
   @scala.inline
   def apply(header: js.Object, key: Key, payload: Buffer, `protected`: js.Array[String]): BaseResult = {
-    val __obj = js.Dynamic.literal(header = header, key = key, payload = payload)
-    __obj.updateDynamic("protected")(`protected`)
+    val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
+    __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseResult]
   }
 }

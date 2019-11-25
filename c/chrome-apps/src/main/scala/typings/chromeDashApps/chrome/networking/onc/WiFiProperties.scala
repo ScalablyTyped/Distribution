@@ -51,18 +51,18 @@ object WiFiProperties {
     val __obj = js.Dynamic.literal()
     if (AllowGatewayARPPolling != null) __obj.updateDynamic("AllowGatewayARPPolling")(AllowGatewayARPPolling.asInstanceOf[js.Any])
     if (AutoConnect != null) __obj.updateDynamic("AutoConnect")(AutoConnect.asInstanceOf[js.Any])
-    if (BSSID != null) __obj.updateDynamic("BSSID")(BSSID)
-    if (EAP != null) __obj.updateDynamic("EAP")(EAP)
+    if (BSSID != null) __obj.updateDynamic("BSSID")(BSSID.asInstanceOf[js.Any])
+    if (EAP != null) __obj.updateDynamic("EAP")(EAP.asInstanceOf[js.Any])
     if (Frequency != null) __obj.updateDynamic("Frequency")(Frequency.asInstanceOf[js.Any])
-    if (FrequencyList != null) __obj.updateDynamic("FrequencyList")(FrequencyList)
+    if (FrequencyList != null) __obj.updateDynamic("FrequencyList")(FrequencyList.asInstanceOf[js.Any])
     if (HexSSID != null) __obj.updateDynamic("HexSSID")(HexSSID.asInstanceOf[js.Any])
     if (HiddenSSID != null) __obj.updateDynamic("HiddenSSID")(HiddenSSID.asInstanceOf[js.Any])
-    if (Passphrase != null) __obj.updateDynamic("Passphrase")(Passphrase)
+    if (Passphrase != null) __obj.updateDynamic("Passphrase")(Passphrase.asInstanceOf[js.Any])
     if (RoamTreshold != null) __obj.updateDynamic("RoamTreshold")(RoamTreshold.asInstanceOf[js.Any])
     if (SSID != null) __obj.updateDynamic("SSID")(SSID.asInstanceOf[js.Any])
     if (Security != null) __obj.updateDynamic("Security")(Security.asInstanceOf[js.Any])
     if (SignalStrength != null) __obj.updateDynamic("SignalStrength")(SignalStrength.asInstanceOf[js.Any])
-    if (TetheringState != null) __obj.updateDynamic("TetheringState")(TetheringState)
+    if (TetheringState != null) __obj.updateDynamic("TetheringState")(TetheringState.asInstanceOf[js.Any])
     __obj.asInstanceOf[WiFiProperties[M, OF, B, S, L]]
   }
 }

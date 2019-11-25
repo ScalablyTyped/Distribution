@@ -12,7 +12,7 @@ trait ParticipantIdentity extends js.Object {
 object ParticipantIdentity {
   @scala.inline
   def apply(participantId: Double, player: Player): ParticipantIdentity = {
-    val __obj = js.Dynamic.literal(participantId = participantId, player = player)
+    val __obj = js.Dynamic.literal(participantId = participantId.asInstanceOf[js.Any], player = player.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ParticipantIdentity]
   }

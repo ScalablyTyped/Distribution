@@ -33,12 +33,12 @@ object LineProperties {
     weight: Dimension = null
   ): LineProperties = {
     val __obj = js.Dynamic.literal()
-    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle)
-    if (endArrow != null) __obj.updateDynamic("endArrow")(endArrow)
-    if (lineFill != null) __obj.updateDynamic("lineFill")(lineFill)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (startArrow != null) __obj.updateDynamic("startArrow")(startArrow)
-    if (weight != null) __obj.updateDynamic("weight")(weight)
+    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
+    if (endArrow != null) __obj.updateDynamic("endArrow")(endArrow.asInstanceOf[js.Any])
+    if (lineFill != null) __obj.updateDynamic("lineFill")(lineFill.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (startArrow != null) __obj.updateDynamic("startArrow")(startArrow.asInstanceOf[js.Any])
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineProperties]
   }
 }

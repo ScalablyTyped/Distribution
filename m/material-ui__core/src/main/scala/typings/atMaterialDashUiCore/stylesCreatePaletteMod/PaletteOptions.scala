@@ -43,19 +43,19 @@ object PaletteOptions {
     `type`: PaletteType = null
   ): PaletteOptions = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (common != null) __obj.updateDynamic("common")(common)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (common != null) __obj.updateDynamic("common")(common.asInstanceOf[js.Any])
     if (contrastThreshold != null) __obj.updateDynamic("contrastThreshold")(contrastThreshold.asInstanceOf[js.Any])
-    if (divider != null) __obj.updateDynamic("divider")(divider)
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (divider != null) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (getContrastText != null) __obj.updateDynamic("getContrastText")(js.Any.fromFunction1(getContrastText))
-    if (grey != null) __obj.updateDynamic("grey")(grey)
-    if (primary != null) __obj.updateDynamic("primary")(primary)
-    if (secondary != null) __obj.updateDynamic("secondary")(secondary)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (grey != null) __obj.updateDynamic("grey")(grey.asInstanceOf[js.Any])
+    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (secondary != null) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (tonalOffset != null) __obj.updateDynamic("tonalOffset")(tonalOffset.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaletteOptions]
   }
 }

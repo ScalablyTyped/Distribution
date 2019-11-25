@@ -34,9 +34,9 @@ object IPathArc {
     `type`: String,
     layer: String = null
   ): IPathArc = {
-    val __obj = js.Dynamic.literal(endAngle = endAngle, origin = origin, radius = radius, startAngle = startAngle)
-    __obj.updateDynamic("type")(`type`)
-    if (layer != null) __obj.updateDynamic("layer")(layer)
+    val __obj = js.Dynamic.literal(endAngle = endAngle.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPathArc]
   }
 }

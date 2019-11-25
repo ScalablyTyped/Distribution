@@ -35,10 +35,10 @@ object ReEncryptOutput {
     KeyId: String = null,
     SourceKeyId: String = null
   ): ReEncryptOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (CiphertextBlob != null) __obj.updateDynamic("CiphertextBlob")(CiphertextBlob)
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId)
-    if (SourceKeyId != null) __obj.updateDynamic("SourceKeyId")(SourceKeyId)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (CiphertextBlob != null) __obj.updateDynamic("CiphertextBlob")(CiphertextBlob.asInstanceOf[js.Any])
+    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
+    if (SourceKeyId != null) __obj.updateDynamic("SourceKeyId")(SourceKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReEncryptOutput]
   }
 }

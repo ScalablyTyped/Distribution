@@ -35,10 +35,10 @@ object baseRequestConfig {
     sync: js.UndefOr[Boolean] = js.undefined
   ): baseRequestConfig = {
     val __obj = js.Dynamic.literal()
-    if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (requestUrl != null) __obj.updateDynamic("requestUrl")(requestUrl)
-    if (!js.isUndefined(suppressErrors)) __obj.updateDynamic("suppressErrors")(suppressErrors)
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (requestUrl != null) __obj.updateDynamic("requestUrl")(requestUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressErrors)) __obj.updateDynamic("suppressErrors")(suppressErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
     __obj.asInstanceOf[baseRequestConfig]
   }
 }

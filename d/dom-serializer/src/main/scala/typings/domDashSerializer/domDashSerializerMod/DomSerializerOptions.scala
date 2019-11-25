@@ -14,7 +14,7 @@ object DomSerializerOptions {
   @scala.inline
   def apply(decodeEntities: js.UndefOr[Boolean] = js.undefined, xmlMode: Boolean | foreign = null): DomSerializerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(decodeEntities)) __obj.updateDynamic("decodeEntities")(decodeEntities)
+    if (!js.isUndefined(decodeEntities)) __obj.updateDynamic("decodeEntities")(decodeEntities.asInstanceOf[js.Any])
     if (xmlMode != null) __obj.updateDynamic("xmlMode")(xmlMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomSerializerOptions]
   }

@@ -22,11 +22,11 @@ object IIconSubsetRecord {
     isRegistered: js.UndefOr[Boolean] = js.undefined,
     style: IRawStyle = null
   ): IIconSubsetRecord = {
-    val __obj = js.Dynamic.literal(icons = icons)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (fontFace != null) __obj.updateDynamic("fontFace")(fontFace)
-    if (!js.isUndefined(isRegistered)) __obj.updateDynamic("isRegistered")(isRegistered)
-    if (style != null) __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(icons = icons.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (fontFace != null) __obj.updateDynamic("fontFace")(fontFace.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRegistered)) __obj.updateDynamic("isRegistered")(isRegistered.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIconSubsetRecord]
   }
 }

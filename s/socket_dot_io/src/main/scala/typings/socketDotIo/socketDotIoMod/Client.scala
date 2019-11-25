@@ -48,7 +48,7 @@ object Client {
     server: Server,
     sockets: StringDictionary[Socket]
   ): Client = {
-    val __obj = js.Dynamic.literal(conn = conn, id = id, nsps = nsps, request = request, server = server, sockets = sockets)
+    val __obj = js.Dynamic.literal(conn = conn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], nsps = nsps.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any], sockets = sockets.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Client]
   }

@@ -34,10 +34,10 @@ object GoogleActionsV2OrdersLineItemUpdate {
     reason: String = null
   ): GoogleActionsV2OrdersLineItemUpdate = {
     val __obj = js.Dynamic.literal()
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (orderState != null) __obj.updateDynamic("orderState")(orderState)
-    if (price != null) __obj.updateDynamic("price")(price)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (orderState != null) __obj.updateDynamic("orderState")(orderState.asInstanceOf[js.Any])
+    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersLineItemUpdate]
   }
 }

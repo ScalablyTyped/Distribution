@@ -23,11 +23,11 @@ object ZoomOptions {
     zoomOutTitle: String = null
   ): ZoomOptions = {
     val __obj = js.Dynamic.literal()
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (zoomInText != null) __obj.updateDynamic("zoomInText")(zoomInText)
-    if (zoomInTitle != null) __obj.updateDynamic("zoomInTitle")(zoomInTitle)
-    if (zoomOutText != null) __obj.updateDynamic("zoomOutText")(zoomOutText)
-    if (zoomOutTitle != null) __obj.updateDynamic("zoomOutTitle")(zoomOutTitle)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (zoomInText != null) __obj.updateDynamic("zoomInText")(zoomInText.asInstanceOf[js.Any])
+    if (zoomInTitle != null) __obj.updateDynamic("zoomInTitle")(zoomInTitle.asInstanceOf[js.Any])
+    if (zoomOutText != null) __obj.updateDynamic("zoomOutText")(zoomOutText.asInstanceOf[js.Any])
+    if (zoomOutTitle != null) __obj.updateDynamic("zoomOutTitle")(zoomOutTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomOptions]
   }
 }

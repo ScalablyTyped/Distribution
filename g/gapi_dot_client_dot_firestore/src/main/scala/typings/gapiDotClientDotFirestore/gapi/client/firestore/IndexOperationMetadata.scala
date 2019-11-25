@@ -40,12 +40,12 @@ object IndexOperationMetadata {
     startTime: String = null
   ): IndexOperationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancelled)) __obj.updateDynamic("cancelled")(cancelled)
-    if (documentProgress != null) __obj.updateDynamic("documentProgress")(documentProgress)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (index != null) __obj.updateDynamic("index")(index)
-    if (operationType != null) __obj.updateDynamic("operationType")(operationType)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (!js.isUndefined(cancelled)) __obj.updateDynamic("cancelled")(cancelled.asInstanceOf[js.Any])
+    if (documentProgress != null) __obj.updateDynamic("documentProgress")(documentProgress.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexOperationMetadata]
   }
 }

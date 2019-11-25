@@ -51,19 +51,19 @@ object DialogRuntimeResponseGeneric {
     topic: String = null,
     typing: js.UndefOr[Boolean] = js.undefined
   ): DialogRuntimeResponseGeneric = {
-    val __obj = js.Dynamic.literal(response_type = response_type)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (dialog_node != null) __obj.updateDynamic("dialog_node")(dialog_node)
-    if (message_to_human_agent != null) __obj.updateDynamic("message_to_human_agent")(message_to_human_agent)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (preference != null) __obj.updateDynamic("preference")(preference)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions)
-    if (text != null) __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(response_type = response_type.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (dialog_node != null) __obj.updateDynamic("dialog_node")(dialog_node.asInstanceOf[js.Any])
+    if (message_to_human_agent != null) __obj.updateDynamic("message_to_human_agent")(message_to_human_agent.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (preference != null) __obj.updateDynamic("preference")(preference.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (topic != null) __obj.updateDynamic("topic")(topic)
-    if (!js.isUndefined(typing)) __obj.updateDynamic("typing")(typing)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (topic != null) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
+    if (!js.isUndefined(typing)) __obj.updateDynamic("typing")(typing.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogRuntimeResponseGeneric]
   }
 }

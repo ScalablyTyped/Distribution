@@ -63,18 +63,18 @@ object DirectoryAudit {
     targetResources: js.Array[TargetResource] = null
   ): DirectoryAudit = {
     val __obj = js.Dynamic.literal()
-    if (activityDateTime != null) __obj.updateDynamic("activityDateTime")(activityDateTime)
-    if (activityDisplayName != null) __obj.updateDynamic("activityDisplayName")(activityDisplayName)
-    if (additionalDetails != null) __obj.updateDynamic("additionalDetails")(additionalDetails)
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (correlationId != null) __obj.updateDynamic("correlationId")(correlationId)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (initiatedBy != null) __obj.updateDynamic("initiatedBy")(initiatedBy)
-    if (loggedByService != null) __obj.updateDynamic("loggedByService")(loggedByService)
-    if (operationType != null) __obj.updateDynamic("operationType")(operationType)
-    if (result != null) __obj.updateDynamic("result")(result)
-    if (resultReason != null) __obj.updateDynamic("resultReason")(resultReason)
-    if (targetResources != null) __obj.updateDynamic("targetResources")(targetResources)
+    if (activityDateTime != null) __obj.updateDynamic("activityDateTime")(activityDateTime.asInstanceOf[js.Any])
+    if (activityDisplayName != null) __obj.updateDynamic("activityDisplayName")(activityDisplayName.asInstanceOf[js.Any])
+    if (additionalDetails != null) __obj.updateDynamic("additionalDetails")(additionalDetails.asInstanceOf[js.Any])
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (correlationId != null) __obj.updateDynamic("correlationId")(correlationId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (initiatedBy != null) __obj.updateDynamic("initiatedBy")(initiatedBy.asInstanceOf[js.Any])
+    if (loggedByService != null) __obj.updateDynamic("loggedByService")(loggedByService.asInstanceOf[js.Any])
+    if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    if (resultReason != null) __obj.updateDynamic("resultReason")(resultReason.asInstanceOf[js.Any])
+    if (targetResources != null) __obj.updateDynamic("targetResources")(targetResources.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectoryAudit]
   }
 }

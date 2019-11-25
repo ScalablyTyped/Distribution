@@ -12,7 +12,7 @@ trait IGpioProvider extends js.Object {
 object IGpioProvider {
   @scala.inline
   def apply(getControllers: js.Any): IGpioProvider = {
-    val __obj = js.Dynamic.literal(getControllers = getControllers)
+    val __obj = js.Dynamic.literal(getControllers = getControllers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IGpioProvider]
   }

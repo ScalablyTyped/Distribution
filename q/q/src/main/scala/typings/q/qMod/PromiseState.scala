@@ -17,7 +17,7 @@ object PromiseState {
   @scala.inline
   def apply[T](state: fulfilled | rejected | pending, reason: js.Any = null, value: T = null): PromiseState[T] = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromiseState[T]]
   }

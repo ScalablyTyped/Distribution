@@ -13,7 +13,7 @@ trait ArtistRelationships extends js.Object {
 object ArtistRelationships {
   @scala.inline
   def apply(albums: Relationship[Album], genres: Relationship[Genre]): ArtistRelationships = {
-    val __obj = js.Dynamic.literal(albums = albums, genres = genres)
+    val __obj = js.Dynamic.literal(albums = albums.asInstanceOf[js.Any], genres = genres.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ArtistRelationships]
   }

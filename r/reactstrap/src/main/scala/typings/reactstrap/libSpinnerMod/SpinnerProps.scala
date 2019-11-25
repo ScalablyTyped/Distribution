@@ -26,23 +26,17 @@ object SpinnerProps {
     AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
     ClassAttributes: ClassAttributes[HTMLElement] = null,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    className: String = null,
-    color: String = null,
     cssModule: CSSModule = null,
     size: js.Any = null,
-    tag: String | ReactType[_] = null,
-    `type`: String = null
+    tag: String | ReactType[_] = null
   ): SpinnerProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SpinnerProps]
   }
 }

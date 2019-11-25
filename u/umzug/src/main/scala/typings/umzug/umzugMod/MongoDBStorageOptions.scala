@@ -35,9 +35,9 @@ object MongoDBStorageOptions {
     connection: Db = null
   ): MongoDBStorageOptions = {
     val __obj = js.Dynamic.literal(executed = js.Any.fromFunction0(executed), logMigration = js.Any.fromFunction1(logMigration), unlogMigration = js.Any.fromFunction1(unlogMigration))
-    if (collection != null) __obj.updateDynamic("collection")(collection)
-    if (collectionName != null) __obj.updateDynamic("collectionName")(collectionName)
-    if (connection != null) __obj.updateDynamic("connection")(connection)
+    if (collection != null) __obj.updateDynamic("collection")(collection.asInstanceOf[js.Any])
+    if (collectionName != null) __obj.updateDynamic("collectionName")(collectionName.asInstanceOf[js.Any])
+    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongoDBStorageOptions]
   }
 }

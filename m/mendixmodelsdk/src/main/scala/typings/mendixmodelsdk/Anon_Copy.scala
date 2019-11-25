@@ -15,7 +15,7 @@ trait Anon_Copy extends js.Object {
 object Anon_Copy {
   @scala.inline
   def apply(copy: Element, idMap: IMap[Structure]): Anon_Copy = {
-    val __obj = js.Dynamic.literal(copy = copy, idMap = idMap)
+    val __obj = js.Dynamic.literal(copy = copy.asInstanceOf[js.Any], idMap = idMap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Copy]
   }

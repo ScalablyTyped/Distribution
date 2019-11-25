@@ -19,7 +19,7 @@ trait EnqueueOptions extends js.Object {
 object EnqueueOptions {
   @scala.inline
   def apply(deliveryMode: Double, transformation: String, visibility: Double): EnqueueOptions = {
-    val __obj = js.Dynamic.literal(deliveryMode = deliveryMode, transformation = transformation, visibility = visibility)
+    val __obj = js.Dynamic.literal(deliveryMode = deliveryMode.asInstanceOf[js.Any], transformation = transformation.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EnqueueOptions]
   }

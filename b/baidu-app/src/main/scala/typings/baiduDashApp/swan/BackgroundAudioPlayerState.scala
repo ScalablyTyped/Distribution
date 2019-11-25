@@ -27,7 +27,7 @@ object BackgroundAudioPlayerState {
     duration: Double,
     status: Double
   ): BackgroundAudioPlayerState = {
-    val __obj = js.Dynamic.literal(currentPosition = currentPosition, dataUrl = dataUrl, downloadPercent = downloadPercent, duration = duration, status = status)
+    val __obj = js.Dynamic.literal(currentPosition = currentPosition.asInstanceOf[js.Any], dataUrl = dataUrl.asInstanceOf[js.Any], downloadPercent = downloadPercent.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BackgroundAudioPlayerState]
   }

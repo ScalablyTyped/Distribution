@@ -20,7 +20,7 @@ object ViterbiBuilder {
     trie: DoubleArray,
     unknown_dictionary: UnknownDictionary
   ): ViterbiBuilder = {
-    val __obj = js.Dynamic.literal(build = js.Any.fromFunction1(build), token_info_dictionary = token_info_dictionary, trie = trie, unknown_dictionary = unknown_dictionary)
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction1(build), token_info_dictionary = token_info_dictionary.asInstanceOf[js.Any], trie = trie.asInstanceOf[js.Any], unknown_dictionary = unknown_dictionary.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ViterbiBuilder]
   }

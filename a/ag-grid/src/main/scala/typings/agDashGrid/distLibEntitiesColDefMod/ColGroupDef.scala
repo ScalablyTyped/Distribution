@@ -45,20 +45,20 @@ object ColGroupDef {
     suppressToolPanel: js.UndefOr[Boolean] = js.undefined,
     toolPanelClass: String | js.Array[String] | (js.Function1[/* params */ js.Any, String | js.Array[String]]) = null
   ): ColGroupDef = {
-    val __obj = js.Dynamic.literal(children = children)
-    if (columnGroupShow != null) __obj.updateDynamic("columnGroupShow")(columnGroupShow)
-    if (groupId != null) __obj.updateDynamic("groupId")(groupId)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    if (columnGroupShow != null) __obj.updateDynamic("columnGroupShow")(columnGroupShow.asInstanceOf[js.Any])
+    if (groupId != null) __obj.updateDynamic("groupId")(groupId.asInstanceOf[js.Any])
     if (headerClass != null) __obj.updateDynamic("headerClass")(headerClass.asInstanceOf[js.Any])
     if (headerGroupComponent != null) __obj.updateDynamic("headerGroupComponent")(headerGroupComponent.asInstanceOf[js.Any])
-    if (headerGroupComponentFramework != null) __obj.updateDynamic("headerGroupComponentFramework")(headerGroupComponentFramework)
-    if (headerGroupComponentParams != null) __obj.updateDynamic("headerGroupComponentParams")(headerGroupComponentParams)
-    if (headerName != null) __obj.updateDynamic("headerName")(headerName)
-    if (headerTooltip != null) __obj.updateDynamic("headerTooltip")(headerTooltip)
+    if (headerGroupComponentFramework != null) __obj.updateDynamic("headerGroupComponentFramework")(headerGroupComponentFramework.asInstanceOf[js.Any])
+    if (headerGroupComponentParams != null) __obj.updateDynamic("headerGroupComponentParams")(headerGroupComponentParams.asInstanceOf[js.Any])
+    if (headerName != null) __obj.updateDynamic("headerName")(headerName.asInstanceOf[js.Any])
+    if (headerTooltip != null) __obj.updateDynamic("headerTooltip")(headerTooltip.asInstanceOf[js.Any])
     if (headerValueGetter != null) __obj.updateDynamic("headerValueGetter")(headerValueGetter.asInstanceOf[js.Any])
-    if (!js.isUndefined(marryChildren)) __obj.updateDynamic("marryChildren")(marryChildren)
-    if (!js.isUndefined(openByDefault)) __obj.updateDynamic("openByDefault")(openByDefault)
-    if (pivotKeys != null) __obj.updateDynamic("pivotKeys")(pivotKeys)
-    if (!js.isUndefined(suppressToolPanel)) __obj.updateDynamic("suppressToolPanel")(suppressToolPanel)
+    if (!js.isUndefined(marryChildren)) __obj.updateDynamic("marryChildren")(marryChildren.asInstanceOf[js.Any])
+    if (!js.isUndefined(openByDefault)) __obj.updateDynamic("openByDefault")(openByDefault.asInstanceOf[js.Any])
+    if (pivotKeys != null) __obj.updateDynamic("pivotKeys")(pivotKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressToolPanel)) __obj.updateDynamic("suppressToolPanel")(suppressToolPanel.asInstanceOf[js.Any])
     if (toolPanelClass != null) __obj.updateDynamic("toolPanelClass")(toolPanelClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColGroupDef]
   }

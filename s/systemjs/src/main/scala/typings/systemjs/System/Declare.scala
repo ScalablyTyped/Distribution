@@ -14,7 +14,7 @@ object Declare {
   def apply(execute: () => _ = null, setters: js.Array[SetterFn] = null): Declare = {
     val __obj = js.Dynamic.literal()
     if (execute != null) __obj.updateDynamic("execute")(js.Any.fromFunction0(execute))
-    if (setters != null) __obj.updateDynamic("setters")(setters)
+    if (setters != null) __obj.updateDynamic("setters")(setters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declare]
   }
 }

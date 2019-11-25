@@ -43,12 +43,12 @@ object ExportContext {
     uri: String = null
   ): ExportContext = {
     val __obj = js.Dynamic.literal()
-    if (csvExportOptions != null) __obj.updateDynamic("csvExportOptions")(csvExportOptions)
-    if (databases != null) __obj.updateDynamic("databases")(databases)
-    if (fileType != null) __obj.updateDynamic("fileType")(fileType)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (sqlExportOptions != null) __obj.updateDynamic("sqlExportOptions")(sqlExportOptions)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (csvExportOptions != null) __obj.updateDynamic("csvExportOptions")(csvExportOptions.asInstanceOf[js.Any])
+    if (databases != null) __obj.updateDynamic("databases")(databases.asInstanceOf[js.Any])
+    if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (sqlExportOptions != null) __obj.updateDynamic("sqlExportOptions")(sqlExportOptions.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportContext]
   }
 }

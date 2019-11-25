@@ -45,8 +45,8 @@ object EncodeStringDict {
     sourceLength: Int | Double = null,
     sourcePosition: Int | Double = null
   ): EncodeStringDict = {
-    val __obj = js.Dynamic.literal(dest = dest, source = source)
-    if (charset != null) __obj.updateDynamic("charset")(charset)
+    val __obj = js.Dynamic.literal(dest = dest.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
     if (destPosition != null) __obj.updateDynamic("destPosition")(destPosition.asInstanceOf[js.Any])
     if (sourceLength != null) __obj.updateDynamic("sourceLength")(sourceLength.asInstanceOf[js.Any])
     if (sourcePosition != null) __obj.updateDynamic("sourcePosition")(sourcePosition.asInstanceOf[js.Any])

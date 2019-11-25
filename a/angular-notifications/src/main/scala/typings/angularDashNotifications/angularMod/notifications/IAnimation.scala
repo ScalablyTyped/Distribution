@@ -12,7 +12,7 @@ trait IAnimation extends js.Object {
 object IAnimation {
   @scala.inline
   def apply(duration: Double, enabled: Boolean): IAnimation = {
-    val __obj = js.Dynamic.literal(duration = duration, enabled = enabled)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IAnimation]
   }

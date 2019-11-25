@@ -27,7 +27,7 @@ object Features {
     window: /* Base */ Instantiable0[RemoteWindow] => Instantiable0[RemoteWindow with PWindow] = null,
     workspace: /* Base */ Instantiable0[RemoteWorkspace] => Instantiable0[RemoteWorkspace with PWorkspace] = null
   ): Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] = {
-    val __obj = js.Dynamic.literal(__brand = __brand)
+    val __obj = js.Dynamic.literal(__brand = __brand.asInstanceOf[js.Any])
     if (client != null) __obj.updateDynamic("client")(js.Any.fromFunction1(client))
     if (console != null) __obj.updateDynamic("console")(js.Any.fromFunction1(console))
     if (telemetry != null) __obj.updateDynamic("telemetry")(js.Any.fromFunction1(telemetry))

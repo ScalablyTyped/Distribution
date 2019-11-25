@@ -19,7 +19,7 @@ trait TaskStartEvent extends js.Object {
 object TaskStartEvent {
   @scala.inline
   def apply(execution: TaskExecution): TaskStartEvent = {
-    val __obj = js.Dynamic.literal(execution = execution)
+    val __obj = js.Dynamic.literal(execution = execution.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TaskStartEvent]
   }

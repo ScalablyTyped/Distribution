@@ -26,10 +26,10 @@ object ImageInfo {
     iconUrl: String = null
   ): ImageInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addImageQuery)) __obj.updateDynamic("addImageQuery")(addImageQuery)
-    if (alternateText != null) __obj.updateDynamic("alternateText")(alternateText)
-    if (alternativeText != null) __obj.updateDynamic("alternativeText")(alternativeText)
-    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
+    if (!js.isUndefined(addImageQuery)) __obj.updateDynamic("addImageQuery")(addImageQuery.asInstanceOf[js.Any])
+    if (alternateText != null) __obj.updateDynamic("alternateText")(alternateText.asInstanceOf[js.Any])
+    if (alternativeText != null) __obj.updateDynamic("alternativeText")(alternativeText.asInstanceOf[js.Any])
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageInfo]
   }
 }

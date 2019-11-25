@@ -13,8 +13,8 @@ object Anon_DataKey {
   @scala.inline
   def apply(dataKey: String = null, region: String = null): Anon_DataKey = {
     val __obj = js.Dynamic.literal()
-    if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey)
-    if (region != null) __obj.updateDynamic("region")(region)
+    if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DataKey]
   }
 }

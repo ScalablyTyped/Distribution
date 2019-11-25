@@ -23,9 +23,9 @@ object PaginatorDeps {
     max: Int | Double = null,
     state: Partial[S] = null
   ): PaginatorDeps[T, S] = {
-    val __obj = js.Dynamic.literal(client = client, guard = js.Any.fromFunction1(guard), reqgen = js.Any.fromFunction0(reqgen))
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], guard = js.Any.fromFunction1(guard), reqgen = js.Any.fromFunction0(reqgen))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginatorDeps[T, S]]
   }
 }

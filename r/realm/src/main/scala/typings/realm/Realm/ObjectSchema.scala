@@ -17,8 +17,8 @@ trait ObjectSchema extends js.Object {
 object ObjectSchema {
   @scala.inline
   def apply(name: String, properties: PropertiesTypes, primaryKey: String = null): ObjectSchema = {
-    val __obj = js.Dynamic.literal(name = name, properties = properties)
-    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
+    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectSchema]
   }
 }

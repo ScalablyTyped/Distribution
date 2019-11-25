@@ -15,7 +15,7 @@ trait Anon_Context[TData, TVariables] extends js.Object {
 object Anon_Context {
   @scala.inline
   def apply[TData, TVariables](context: ApolloContextValue, forceUpdate: js.Any, options: QueryOptions[TData, TVariables]): Anon_Context[TData, TVariables] = {
-    val __obj = js.Dynamic.literal(context = context, forceUpdate = forceUpdate, options = options)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], forceUpdate = forceUpdate.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Context[TData, TVariables]]
   }

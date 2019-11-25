@@ -1,7 +1,6 @@
 package typings.dojo.dojox.mobile
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
 import typings.dojo.dojoStrings.shadow
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -39,6 +38,14 @@ class RoundRect () extends Container {
   @JSName("set")
   def set_shadow(property: shadow, value: Boolean): Unit = js.native
   @JSName("watch")
-  def watch_shadow(property: shadow, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_shadow(
+    property: shadow,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

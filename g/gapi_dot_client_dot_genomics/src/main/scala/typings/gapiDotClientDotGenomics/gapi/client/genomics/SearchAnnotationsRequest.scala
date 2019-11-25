@@ -58,13 +58,13 @@ object SearchAnnotationsRequest {
     start: String = null
   ): SearchAnnotationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (annotationSetIds != null) __obj.updateDynamic("annotationSetIds")(annotationSetIds)
-    if (end != null) __obj.updateDynamic("end")(end)
+    if (annotationSetIds != null) __obj.updateDynamic("annotationSetIds")(annotationSetIds.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
-    if (referenceId != null) __obj.updateDynamic("referenceId")(referenceId)
-    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName)
-    if (start != null) __obj.updateDynamic("start")(start)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (referenceId != null) __obj.updateDynamic("referenceId")(referenceId.asInstanceOf[js.Any])
+    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchAnnotationsRequest]
   }
 }

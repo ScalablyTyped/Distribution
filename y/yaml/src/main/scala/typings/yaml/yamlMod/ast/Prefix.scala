@@ -12,7 +12,7 @@ trait Prefix extends js.Object {
 object Prefix {
   @scala.inline
   def apply(handle: String, prefix: String): Prefix = {
-    val __obj = js.Dynamic.literal(handle = handle, prefix = prefix)
+    val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Prefix]
   }

@@ -23,8 +23,8 @@ object Anon_After {
     reference: Element,
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Anon_After = {
-    val __obj = js.Dynamic.literal(item = item, position = position.asInstanceOf[js.Any], reference = reference)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_After]
   }
 }

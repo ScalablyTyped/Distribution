@@ -12,7 +12,7 @@ object Anon_PropertyNames {
   @scala.inline
   def apply(propertyNames: js.Any = null): Anon_PropertyNames = {
     val __obj = js.Dynamic.literal()
-    if (propertyNames != null) __obj.updateDynamic("propertyNames")(propertyNames)
+    if (propertyNames != null) __obj.updateDynamic("propertyNames")(propertyNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PropertyNames]
   }
 }

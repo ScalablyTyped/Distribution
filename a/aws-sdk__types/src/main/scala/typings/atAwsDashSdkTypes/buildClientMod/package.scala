@@ -13,7 +13,7 @@ package object buildClientMod {
     /* clientMiddlewareStack */ MiddlewareStack[js.Any, js.Any, js.Any], 
     Unit
   ]
-  type ConfigurationDefinition[Configuration /* <: StringDictionary[js.Any] */, ResolvedConfiguration /* <: Configuration */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type ConfigurationDefinition[Configuration /* <: StringDictionary[js.Any] */, ResolvedConfiguration /* <: Configuration */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ P in keyof Configuration ]: @aws-sdk/types.@aws-sdk/types/build/client.ConfigurationPropertyDefinition<Configuration[P], ResolvedConfiguration[P], Configuration, ResolvedConfiguration>}
     */ typings.atAwsDashSdkTypes.atAwsDashSdkTypesStrings.ConfigurationDefinition with js.Any
 }

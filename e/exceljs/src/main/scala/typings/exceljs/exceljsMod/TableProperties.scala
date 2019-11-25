@@ -54,11 +54,11 @@ object TableProperties {
     style: TableStyleProperties = null,
     totalsRow: js.UndefOr[Boolean] = js.undefined
   ): TableProperties = {
-    val __obj = js.Dynamic.literal(columns = columns, name = name, ref = ref, rows = rows)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (!js.isUndefined(headerRow)) __obj.updateDynamic("headerRow")(headerRow)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(totalsRow)) __obj.updateDynamic("totalsRow")(totalsRow)
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(headerRow)) __obj.updateDynamic("headerRow")(headerRow.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(totalsRow)) __obj.updateDynamic("totalsRow")(totalsRow.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableProperties]
   }
 }

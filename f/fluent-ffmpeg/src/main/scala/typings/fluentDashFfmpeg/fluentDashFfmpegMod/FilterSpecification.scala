@@ -19,7 +19,7 @@ object FilterSpecification {
     options: js.Any | String | js.Array[_] = null,
     outputs: String | js.Array[String] = null
   ): FilterSpecification = {
-    val __obj = js.Dynamic.literal(filter = filter)
+    val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any])
     if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])

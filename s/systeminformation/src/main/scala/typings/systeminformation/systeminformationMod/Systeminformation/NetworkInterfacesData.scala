@@ -38,8 +38,8 @@ object NetworkInterfacesData {
     `type`: String,
     virtual: Boolean
   ): NetworkInterfacesData = {
-    val __obj = js.Dynamic.literal(carrier_changes = carrier_changes, duplex = duplex, iface = iface, ifaceName = ifaceName, internal = internal, ip4 = ip4, ip6 = ip6, mac = mac, mtu = mtu, operstate = operstate, speed = speed, virtual = virtual)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(carrier_changes = carrier_changes.asInstanceOf[js.Any], duplex = duplex.asInstanceOf[js.Any], iface = iface.asInstanceOf[js.Any], ifaceName = ifaceName.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any], ip4 = ip4.asInstanceOf[js.Any], ip6 = ip6.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], mtu = mtu.asInstanceOf[js.Any], operstate = operstate.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], virtual = virtual.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInterfacesData]
   }
 }

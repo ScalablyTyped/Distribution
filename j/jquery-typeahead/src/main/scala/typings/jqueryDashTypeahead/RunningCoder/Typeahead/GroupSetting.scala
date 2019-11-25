@@ -12,7 +12,7 @@ trait GroupSetting extends js.Object {
 object GroupSetting {
   @scala.inline
   def apply(key: String, template: String | (js.Function1[/* item */ js.Any, String])): GroupSetting = {
-    val __obj = js.Dynamic.literal(key = key, template = template.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GroupSetting]
   }

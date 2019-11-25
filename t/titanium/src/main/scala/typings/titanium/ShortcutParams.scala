@@ -42,10 +42,10 @@ object ShortcutParams {
     subtitle: String = null,
     userInfo: js.Any = null
   ): ShortcutParams = {
-    val __obj = js.Dynamic.literal(itemtype = itemtype, title = title)
+    val __obj = js.Dynamic.literal(itemtype = itemtype.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
-    if (userInfo != null) __obj.updateDynamic("userInfo")(userInfo)
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
+    if (userInfo != null) __obj.updateDynamic("userInfo")(userInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShortcutParams]
   }
 }

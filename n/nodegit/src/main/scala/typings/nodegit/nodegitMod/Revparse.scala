@@ -20,6 +20,5 @@ object Revparse extends js.Object {
     spec: String
   ): Double = js.native
   def single(repo: typings.nodegit.repositoryMod.Repository, spec: String): js.Promise[typings.nodegit.objectMod.Object] = js.native
-  type MODE = typings.nodegit.revDashParseMod.Revparse.MODE
 }
 

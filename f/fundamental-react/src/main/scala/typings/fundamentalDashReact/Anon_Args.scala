@@ -27,11 +27,11 @@ object Anon_Args {
   ): Anon_Args = {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
-    if (glyph != null) __obj.updateDynamic("glyph")(glyph)
-    if (link != null) __obj.updateDynamic("link")(link)
+    if (glyph != null) __obj.updateDynamic("glyph")(glyph.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Args]
   }
 }

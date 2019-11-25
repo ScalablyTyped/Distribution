@@ -31,7 +31,7 @@ object Analyze {
     metadata: Anon_Format,
     requestId: String
   ): Analyze = {
-    val __obj = js.Dynamic.literal(adult = adult, categories = categories, color = color, faces = faces, imageType = imageType, metadata = metadata, requestId = requestId)
+    val __obj = js.Dynamic.literal(adult = adult.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], faces = faces.asInstanceOf[js.Any], imageType = imageType.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Analyze]
   }

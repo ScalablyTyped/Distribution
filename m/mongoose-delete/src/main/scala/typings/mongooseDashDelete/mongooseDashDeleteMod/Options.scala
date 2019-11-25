@@ -38,7 +38,7 @@ object Options {
     overrideMethods: Boolean | all | js.Array[overridableMethods],
     validateBeforeDelete: Boolean
   ): Options = {
-    val __obj = js.Dynamic.literal(deletedAt = deletedAt, deletedBy = deletedBy, deletedByType = deletedByType, indexFields = indexFields.asInstanceOf[js.Any], overrideMethods = overrideMethods.asInstanceOf[js.Any], validateBeforeDelete = validateBeforeDelete)
+    val __obj = js.Dynamic.literal(deletedAt = deletedAt.asInstanceOf[js.Any], deletedBy = deletedBy.asInstanceOf[js.Any], deletedByType = deletedByType.asInstanceOf[js.Any], indexFields = indexFields.asInstanceOf[js.Any], overrideMethods = overrideMethods.asInstanceOf[js.Any], validateBeforeDelete = validateBeforeDelete.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

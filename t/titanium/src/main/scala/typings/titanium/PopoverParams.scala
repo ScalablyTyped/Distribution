@@ -27,9 +27,9 @@ trait PopoverParams extends js.Object {
 object PopoverParams {
   @scala.inline
   def apply(view: View, animated: js.UndefOr[Boolean] = js.undefined, rect: Dimension = null): PopoverParams = {
-    val __obj = js.Dynamic.literal(view = view)
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
-    if (rect != null) __obj.updateDynamic("rect")(rect)
+    val __obj = js.Dynamic.literal(view = view.asInstanceOf[js.Any])
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
+    if (rect != null) __obj.updateDynamic("rect")(rect.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopoverParams]
   }
 }

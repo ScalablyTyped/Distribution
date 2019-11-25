@@ -56,19 +56,19 @@ object ObservationReferenceRange {
     `type`: CodeableConcept = null
   ): ObservationReferenceRange = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_text != null) __obj.updateDynamic("_text")(_text)
-    if (age != null) __obj.updateDynamic("age")(age)
-    if (appliesTo != null) __obj.updateDynamic("appliesTo")(appliesTo)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (high != null) __obj.updateDynamic("high")(high)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (low != null) __obj.updateDynamic("low")(low)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_text != null) __obj.updateDynamic("_text")(_text.asInstanceOf[js.Any])
+    if (age != null) __obj.updateDynamic("age")(age.asInstanceOf[js.Any])
+    if (appliesTo != null) __obj.updateDynamic("appliesTo")(appliesTo.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (low != null) __obj.updateDynamic("low")(low.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObservationReferenceRange]
   }
 }

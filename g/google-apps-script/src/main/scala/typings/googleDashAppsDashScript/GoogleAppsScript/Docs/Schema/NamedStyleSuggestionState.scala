@@ -18,9 +18,9 @@ object NamedStyleSuggestionState {
     textStyleSuggestionState: TextStyleSuggestionState = null
   ): NamedStyleSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (namedStyleType != null) __obj.updateDynamic("namedStyleType")(namedStyleType)
-    if (paragraphStyleSuggestionState != null) __obj.updateDynamic("paragraphStyleSuggestionState")(paragraphStyleSuggestionState)
-    if (textStyleSuggestionState != null) __obj.updateDynamic("textStyleSuggestionState")(textStyleSuggestionState)
+    if (namedStyleType != null) __obj.updateDynamic("namedStyleType")(namedStyleType.asInstanceOf[js.Any])
+    if (paragraphStyleSuggestionState != null) __obj.updateDynamic("paragraphStyleSuggestionState")(paragraphStyleSuggestionState.asInstanceOf[js.Any])
+    if (textStyleSuggestionState != null) __obj.updateDynamic("textStyleSuggestionState")(textStyleSuggestionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedStyleSuggestionState]
   }
 }

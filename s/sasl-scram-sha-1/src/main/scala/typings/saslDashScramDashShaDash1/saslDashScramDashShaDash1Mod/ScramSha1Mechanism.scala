@@ -17,12 +17,12 @@ trait ScramSha1Mechanism extends Mechanism {
 object ScramSha1Mechanism {
   @scala.inline
   def apply(
-    challenge: String => ScramSha1Mechanism,
+    challenge: String => Unit,
     clientFirst: `true`,
     name: `SCRAM-SHA-1`,
     response: Credentials => String
   ): ScramSha1Mechanism = {
-    val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), clientFirst = clientFirst, name = name, response = js.Any.fromFunction1(response))
+    val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), clientFirst = clientFirst.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], response = js.Any.fromFunction1(response))
   
     __obj.asInstanceOf[ScramSha1Mechanism]
   }

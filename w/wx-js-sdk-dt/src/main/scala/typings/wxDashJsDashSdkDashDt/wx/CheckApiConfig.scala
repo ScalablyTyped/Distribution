@@ -30,7 +30,7 @@ object CheckApiConfig {
     complete: /* res */ js.UndefOr[js.Any] => Unit = null,
     fail: /* error */ js.UndefOr[js.Any] => Unit = null
   ): CheckApiConfig = {
-    val __obj = js.Dynamic.literal(jsApiList = jsApiList, success = js.Any.fromFunction1(success))
+    val __obj = js.Dynamic.literal(jsApiList = jsApiList.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))

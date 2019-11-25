@@ -21,9 +21,9 @@ object UI {
     name: String = null,
     url: String = null
   ): UI = {
-    val __obj = js.Dynamic.literal(docsMode = docsMode, enableShortcuts = enableShortcuts, sidebarAnimations = sidebarAnimations)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (url != null) __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(docsMode = docsMode.asInstanceOf[js.Any], enableShortcuts = enableShortcuts.asInstanceOf[js.Any], sidebarAnimations = sidebarAnimations.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[UI]
   }
 }

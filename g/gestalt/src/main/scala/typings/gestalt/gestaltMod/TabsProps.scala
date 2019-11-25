@@ -15,7 +15,7 @@ trait TabsProps extends js.Object {
 object TabsProps {
   @scala.inline
   def apply(activeTabIndex: Double, onChange: Anon_ActiveTabIndex => Unit, tabs: js.Array[Anon_Href]): TabsProps = {
-    val __obj = js.Dynamic.literal(activeTabIndex = activeTabIndex, onChange = js.Any.fromFunction1(onChange), tabs = tabs)
+    val __obj = js.Dynamic.literal(activeTabIndex = activeTabIndex.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), tabs = tabs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TabsProps]
   }

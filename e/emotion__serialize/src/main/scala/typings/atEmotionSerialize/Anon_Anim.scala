@@ -12,8 +12,8 @@ trait Anon_Anim extends js.Object {
 
 object Anon_Anim {
   @scala.inline
-  def apply(anim: Double, name: String, styles: String, toString: () => String): Anon_Anim = {
-    val __obj = js.Dynamic.literal(anim = anim, name = name, styles = styles, toString = js.Any.fromFunction0(toString))
+  def apply(anim: Double, name: String, styles: String): Anon_Anim = {
+    val __obj = js.Dynamic.literal(anim = anim.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Anim]
   }

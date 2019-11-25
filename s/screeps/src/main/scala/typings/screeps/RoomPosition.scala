@@ -89,8 +89,8 @@ trait RoomPosition extends js.Object {
     * @param opts An object containing pathfinding options (see Room.findPath), or one of the following: filter, algorithm
     * @returns An instance of a RoomObject.
     */
-  def findClosestByPath[K /* <: FindConstant */](`type`: K): (/* import warning: ImportType.apply Failed type conversion: screeps.FindTypes[K] */ js.Any) | Null = js.native
-  def findClosestByPath[K /* <: FindConstant */](`type`: K, opts: FindPathOpts with FilterOptions[K] with Anon_Algorithm): (/* import warning: ImportType.apply Failed type conversion: screeps.FindTypes[K] */ js.Any) | Null = js.native
+  def findClosestByPath[K /* <: FindConstant */](`type`: K): (/* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any) | Null = js.native
+  def findClosestByPath[K /* <: FindConstant */](`type`: K, opts: FindPathOpts with FilterOptions[K] with Anon_Algorithm): (/* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any) | Null = js.native
   def findClosestByPath[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES): T | Null = js.native
   def findClosestByPath[T /* <: Structure[StructureConstant] */](
     `type`: FIND_HOSTILE_STRUCTURES,
@@ -118,8 +118,8 @@ trait RoomPosition extends js.Object {
     * @param type Any of the FIND_* constants.
     * @param opts An object containing pathfinding options (see Room.findPath), or one of the following: filter, algorithm
     */
-  def findClosestByRange[K /* <: FindConstant */](`type`: K): (/* import warning: ImportType.apply Failed type conversion: screeps.FindTypes[K] */ js.Any) | Null = js.native
-  def findClosestByRange[K /* <: FindConstant */](`type`: K, opts: FilterOptions[K]): (/* import warning: ImportType.apply Failed type conversion: screeps.FindTypes[K] */ js.Any) | Null = js.native
+  def findClosestByRange[K /* <: FindConstant */](`type`: K): (/* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any) | Null = js.native
+  def findClosestByRange[K /* <: FindConstant */](`type`: K, opts: FilterOptions[K]): (/* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any) | Null = js.native
   def findClosestByRange[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES): T | Null = js.native
   def findClosestByRange[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES, opts: FilterOptions[FIND_STRUCTURES]): T | Null = js.native
   def findClosestByRange[T /* <: Structure[StructureConstant] */](`type`: FIND_MY_STRUCTURES): T | Null = js.native
@@ -141,10 +141,10 @@ trait RoomPosition extends js.Object {
     * @param opts See Room.find.
     */
   def findInRange[K /* <: FindConstant */](`type`: K, range: Double): js.Array[
-    /* import warning: ImportType.apply Failed type conversion: screeps.FindTypes[K] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any
   ] = js.native
   def findInRange[K /* <: FindConstant */](`type`: K, range: Double, opts: FilterOptions[K]): js.Array[
-    /* import warning: ImportType.apply Failed type conversion: screeps.FindTypes[K] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any
   ] = js.native
   def findInRange[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES, range: Double): js.Array[T] = js.native
   def findInRange[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES, range: Double, opts: FilterOptions[FIND_STRUCTURES]): js.Array[T] = js.native

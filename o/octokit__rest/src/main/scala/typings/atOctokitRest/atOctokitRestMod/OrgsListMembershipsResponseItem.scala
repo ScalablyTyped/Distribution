@@ -23,7 +23,7 @@ object OrgsListMembershipsResponseItem {
     url: String,
     user: OrgsListMembershipsResponseItemUser
   ): OrgsListMembershipsResponseItem = {
-    val __obj = js.Dynamic.literal(organization = organization, organization_url = organization_url, role = role, state = state, url = url, user = user)
+    val __obj = js.Dynamic.literal(organization = organization.asInstanceOf[js.Any], organization_url = organization_url.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OrgsListMembershipsResponseItem]
   }

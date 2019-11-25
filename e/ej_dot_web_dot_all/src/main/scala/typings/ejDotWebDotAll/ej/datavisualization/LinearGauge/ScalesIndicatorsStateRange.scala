@@ -41,12 +41,12 @@ object ScalesIndicatorsStateRange {
     textColor: String = null
   ): ScalesIndicatorsStateRange = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (endValue != null) __obj.updateDynamic("endValue")(endValue.asInstanceOf[js.Any])
     if (startValue != null) __obj.updateDynamic("startValue")(startValue.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalesIndicatorsStateRange]
   }
 }

@@ -29,8 +29,8 @@ object SearchLayerProperties {
   @scala.inline
   def apply(field: SearchLayerFieldProperties = null, id: String = null, subLayer: Int | Double = null): SearchLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (subLayer != null) __obj.updateDynamic("subLayer")(subLayer.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchLayerProperties]
   }

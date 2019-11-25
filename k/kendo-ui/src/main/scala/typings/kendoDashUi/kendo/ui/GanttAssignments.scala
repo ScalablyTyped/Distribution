@@ -21,10 +21,10 @@ object GanttAssignments {
     dataValueField: String = null
   ): GanttAssignments = {
     val __obj = js.Dynamic.literal()
-    if (dataResourceIdField != null) __obj.updateDynamic("dataResourceIdField")(dataResourceIdField)
+    if (dataResourceIdField != null) __obj.updateDynamic("dataResourceIdField")(dataResourceIdField.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (dataTaskIdField != null) __obj.updateDynamic("dataTaskIdField")(dataTaskIdField)
-    if (dataValueField != null) __obj.updateDynamic("dataValueField")(dataValueField)
+    if (dataTaskIdField != null) __obj.updateDynamic("dataTaskIdField")(dataTaskIdField.asInstanceOf[js.Any])
+    if (dataValueField != null) __obj.updateDynamic("dataValueField")(dataValueField.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttAssignments]
   }
 }

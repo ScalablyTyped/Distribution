@@ -68,19 +68,19 @@ object Options {
     stream: WritableStream = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (barCompleteChar != null) __obj.updateDynamic("barCompleteChar")(barCompleteChar)
-    if (barCompleteString != null) __obj.updateDynamic("barCompleteString")(barCompleteString)
-    if (barIncompleteChar != null) __obj.updateDynamic("barIncompleteChar")(barIncompleteChar)
-    if (barIncompleteString != null) __obj.updateDynamic("barIncompleteString")(barIncompleteString)
+    if (barCompleteChar != null) __obj.updateDynamic("barCompleteChar")(barCompleteChar.asInstanceOf[js.Any])
+    if (barCompleteString != null) __obj.updateDynamic("barCompleteString")(barCompleteString.asInstanceOf[js.Any])
+    if (barIncompleteChar != null) __obj.updateDynamic("barIncompleteChar")(barIncompleteChar.asInstanceOf[js.Any])
+    if (barIncompleteString != null) __obj.updateDynamic("barIncompleteString")(barIncompleteString.asInstanceOf[js.Any])
     if (barsize != null) __obj.updateDynamic("barsize")(barsize.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearOnComplete)) __obj.updateDynamic("clearOnComplete")(clearOnComplete)
+    if (!js.isUndefined(clearOnComplete)) __obj.updateDynamic("clearOnComplete")(clearOnComplete.asInstanceOf[js.Any])
     if (etaBuffer != null) __obj.updateDynamic("etaBuffer")(etaBuffer.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (fps != null) __obj.updateDynamic("fps")(fps.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideCursor)) __obj.updateDynamic("hideCursor")(hideCursor)
-    if (!js.isUndefined(linewrap)) __obj.updateDynamic("linewrap")(linewrap)
-    if (!js.isUndefined(stopOnComplete)) __obj.updateDynamic("stopOnComplete")(stopOnComplete)
-    if (stream != null) __obj.updateDynamic("stream")(stream)
+    if (!js.isUndefined(hideCursor)) __obj.updateDynamic("hideCursor")(hideCursor.asInstanceOf[js.Any])
+    if (!js.isUndefined(linewrap)) __obj.updateDynamic("linewrap")(linewrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopOnComplete)) __obj.updateDynamic("stopOnComplete")(stopOnComplete.asInstanceOf[js.Any])
+    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

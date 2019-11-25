@@ -14,7 +14,7 @@ trait Anon_ExpectedMessages extends js.Object {
 object Anon_ExpectedMessages {
   @scala.inline
   def apply(expectedMessages: Double, maxMessages: Double, pubsub: Boolean, topic: String): Anon_ExpectedMessages = {
-    val __obj = js.Dynamic.literal(expectedMessages = expectedMessages, maxMessages = maxMessages, pubsub = pubsub, topic = topic)
+    val __obj = js.Dynamic.literal(expectedMessages = expectedMessages.asInstanceOf[js.Any], maxMessages = maxMessages.asInstanceOf[js.Any], pubsub = pubsub.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ExpectedMessages]
   }

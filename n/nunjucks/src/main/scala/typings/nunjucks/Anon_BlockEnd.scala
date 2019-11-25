@@ -24,12 +24,12 @@ object Anon_BlockEnd {
     variableStart: String = null
   ): Anon_BlockEnd = {
     val __obj = js.Dynamic.literal()
-    if (blockEnd != null) __obj.updateDynamic("blockEnd")(blockEnd)
-    if (blockStart != null) __obj.updateDynamic("blockStart")(blockStart)
-    if (commentEnd != null) __obj.updateDynamic("commentEnd")(commentEnd)
-    if (commentStart != null) __obj.updateDynamic("commentStart")(commentStart)
-    if (variableEnd != null) __obj.updateDynamic("variableEnd")(variableEnd)
-    if (variableStart != null) __obj.updateDynamic("variableStart")(variableStart)
+    if (blockEnd != null) __obj.updateDynamic("blockEnd")(blockEnd.asInstanceOf[js.Any])
+    if (blockStart != null) __obj.updateDynamic("blockStart")(blockStart.asInstanceOf[js.Any])
+    if (commentEnd != null) __obj.updateDynamic("commentEnd")(commentEnd.asInstanceOf[js.Any])
+    if (commentStart != null) __obj.updateDynamic("commentStart")(commentStart.asInstanceOf[js.Any])
+    if (variableEnd != null) __obj.updateDynamic("variableEnd")(variableEnd.asInstanceOf[js.Any])
+    if (variableStart != null) __obj.updateDynamic("variableStart")(variableStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BlockEnd]
   }
 }

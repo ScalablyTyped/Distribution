@@ -27,7 +27,7 @@ object ColumnSettings {
     data: String | Double | ColumnDataGetterSetterFunction = null
   ): ColumnSettings = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnSettings]
   }

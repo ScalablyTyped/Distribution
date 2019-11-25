@@ -30,7 +30,7 @@ object ModuleImport {
     name: String,
     selections: js.Array[Selection]
   ): ModuleImport = {
-    val __obj = js.Dynamic.literal(documentName = documentName, id = id, kind = kind, loc = loc, module = module, name = name, selections = selections)
+    val __obj = js.Dynamic.literal(documentName = documentName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ModuleImport]
   }

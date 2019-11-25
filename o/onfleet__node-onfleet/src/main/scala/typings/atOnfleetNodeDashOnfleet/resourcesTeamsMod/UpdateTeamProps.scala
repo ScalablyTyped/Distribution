@@ -20,10 +20,10 @@ object UpdateTeamProps {
     workers: js.Array[String] = null
   ): UpdateTeamProps = {
     val __obj = js.Dynamic.literal()
-    if (hub != null) __obj.updateDynamic("hub")(hub)
-    if (managers != null) __obj.updateDynamic("managers")(managers)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (workers != null) __obj.updateDynamic("workers")(workers)
+    if (hub != null) __obj.updateDynamic("hub")(hub.asInstanceOf[js.Any])
+    if (managers != null) __obj.updateDynamic("managers")(managers.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (workers != null) __obj.updateDynamic("workers")(workers.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTeamProps]
   }
 }

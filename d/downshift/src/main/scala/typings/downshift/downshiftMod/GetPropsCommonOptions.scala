@@ -12,7 +12,7 @@ object GetPropsCommonOptions {
   @scala.inline
   def apply(suppressRefError: js.UndefOr[Boolean] = js.undefined): GetPropsCommonOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(suppressRefError)) __obj.updateDynamic("suppressRefError")(suppressRefError)
+    if (!js.isUndefined(suppressRefError)) __obj.updateDynamic("suppressRefError")(suppressRefError.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPropsCommonOptions]
   }
 }

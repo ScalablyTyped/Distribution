@@ -30,8 +30,8 @@ trait DecodeNumberDict extends js.Object {
 object DecodeNumberDict {
   @scala.inline
   def apply(source: Buffer, `type`: String, byteOrder: Int | Double = null, position: Int | Double = null): DecodeNumberDict = {
-    val __obj = js.Dynamic.literal(source = source)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (byteOrder != null) __obj.updateDynamic("byteOrder")(byteOrder.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecodeNumberDict]

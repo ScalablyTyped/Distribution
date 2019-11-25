@@ -38,7 +38,7 @@ object GetBackgroundAudioPlayerStateSuccessData {
   ): GetBackgroundAudioPlayerStateSuccessData = {
     val __obj = js.Dynamic.literal()
     if (currentPosition != null) __obj.updateDynamic("currentPosition")(currentPosition.asInstanceOf[js.Any])
-    if (dataUrl != null) __obj.updateDynamic("dataUrl")(dataUrl)
+    if (dataUrl != null) __obj.updateDynamic("dataUrl")(dataUrl.asInstanceOf[js.Any])
     if (downloadPercent != null) __obj.updateDynamic("downloadPercent")(downloadPercent.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

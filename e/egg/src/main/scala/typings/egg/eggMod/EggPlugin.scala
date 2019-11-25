@@ -39,7 +39,7 @@ object EggPlugin {
     watcher: EggPluginItem = null
   ): EggPlugin = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (development != null) __obj.updateDynamic("development")(development.asInstanceOf[js.Any])
     if (i18n != null) __obj.updateDynamic("i18n")(i18n.asInstanceOf[js.Any])
     if (jsonp != null) __obj.updateDynamic("jsonp")(jsonp.asInstanceOf[js.Any])

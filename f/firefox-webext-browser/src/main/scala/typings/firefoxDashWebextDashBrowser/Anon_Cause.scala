@@ -18,7 +18,7 @@ trait Anon_Cause extends js.Object {
 object Anon_Cause {
   @scala.inline
   def apply(cause: OnChangedCause, cookie: Cookie, removed: Boolean): Anon_Cause = {
-    val __obj = js.Dynamic.literal(cause = cause, cookie = cookie, removed = removed)
+    val __obj = js.Dynamic.literal(cause = cause.asInstanceOf[js.Any], cookie = cookie.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Cause]
   }

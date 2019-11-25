@@ -21,8 +21,8 @@ object DDPStatus {
     reason: String = null,
     retryTime: Int | Double = null
   ): DDPStatus = {
-    val __obj = js.Dynamic.literal(connected = connected, retryCount = retryCount, status = status)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
+    val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], retryCount = retryCount.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     if (retryTime != null) __obj.updateDynamic("retryTime")(retryTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DDPStatus]
   }

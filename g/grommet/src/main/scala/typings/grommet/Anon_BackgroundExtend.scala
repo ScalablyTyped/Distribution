@@ -18,7 +18,7 @@ object Anon_BackgroundExtend {
     val __obj = js.Dynamic.literal()
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (icons != null) __obj.updateDynamic("icons")(icons)
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackgroundExtend]
   }
 }

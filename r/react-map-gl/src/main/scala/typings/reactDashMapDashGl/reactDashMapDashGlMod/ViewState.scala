@@ -23,7 +23,7 @@ object ViewState {
     bearing: Int | Double = null,
     pitch: Int | Double = null
   ): ViewState = {
-    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude, zoom = zoom)
+    val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
     if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
     if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
     if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])

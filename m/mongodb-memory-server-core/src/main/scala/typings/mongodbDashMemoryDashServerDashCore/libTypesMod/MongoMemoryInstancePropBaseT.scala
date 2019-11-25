@@ -20,10 +20,10 @@ object MongoMemoryInstancePropBaseT {
     storageEngine: StorageEngineT = null
   ): MongoMemoryInstancePropBaseT = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (dbPath != null) __obj.updateDynamic("dbPath")(dbPath)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (dbPath != null) __obj.updateDynamic("dbPath")(dbPath.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (storageEngine != null) __obj.updateDynamic("storageEngine")(storageEngine)
+    if (storageEngine != null) __obj.updateDynamic("storageEngine")(storageEngine.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongoMemoryInstancePropBaseT]
   }
 }

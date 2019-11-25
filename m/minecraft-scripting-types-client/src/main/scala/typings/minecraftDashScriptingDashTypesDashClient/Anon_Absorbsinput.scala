@@ -47,13 +47,13 @@ object Anon_Absorbsinput {
     should_steal_mouse: js.UndefOr[Boolean] = js.undefined
   ): Anon_Absorbsinput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(absorbs_input)) __obj.updateDynamic("absorbs_input")(absorbs_input)
-    if (!js.isUndefined(always_accepts_input)) __obj.updateDynamic("always_accepts_input")(always_accepts_input)
-    if (!js.isUndefined(force_render_below)) __obj.updateDynamic("force_render_below")(force_render_below)
-    if (!js.isUndefined(is_showing_menu)) __obj.updateDynamic("is_showing_menu")(is_showing_menu)
-    if (!js.isUndefined(render_game_behind)) __obj.updateDynamic("render_game_behind")(render_game_behind)
-    if (!js.isUndefined(render_only_when_topmost)) __obj.updateDynamic("render_only_when_topmost")(render_only_when_topmost)
-    if (!js.isUndefined(should_steal_mouse)) __obj.updateDynamic("should_steal_mouse")(should_steal_mouse)
+    if (!js.isUndefined(absorbs_input)) __obj.updateDynamic("absorbs_input")(absorbs_input.asInstanceOf[js.Any])
+    if (!js.isUndefined(always_accepts_input)) __obj.updateDynamic("always_accepts_input")(always_accepts_input.asInstanceOf[js.Any])
+    if (!js.isUndefined(force_render_below)) __obj.updateDynamic("force_render_below")(force_render_below.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_showing_menu)) __obj.updateDynamic("is_showing_menu")(is_showing_menu.asInstanceOf[js.Any])
+    if (!js.isUndefined(render_game_behind)) __obj.updateDynamic("render_game_behind")(render_game_behind.asInstanceOf[js.Any])
+    if (!js.isUndefined(render_only_when_topmost)) __obj.updateDynamic("render_only_when_topmost")(render_only_when_topmost.asInstanceOf[js.Any])
+    if (!js.isUndefined(should_steal_mouse)) __obj.updateDynamic("should_steal_mouse")(should_steal_mouse.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Absorbsinput]
   }
 }

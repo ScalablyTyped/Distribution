@@ -20,8 +20,8 @@ object GooglePrivacyDlpV2beta1ReplaceConfig {
   @scala.inline
   def apply(infoType: GooglePrivacyDlpV2beta1InfoType = null, replaceWith: String = null): GooglePrivacyDlpV2beta1ReplaceConfig = {
     val __obj = js.Dynamic.literal()
-    if (infoType != null) __obj.updateDynamic("infoType")(infoType)
-    if (replaceWith != null) __obj.updateDynamic("replaceWith")(replaceWith)
+    if (infoType != null) __obj.updateDynamic("infoType")(infoType.asInstanceOf[js.Any])
+    if (replaceWith != null) __obj.updateDynamic("replaceWith")(replaceWith.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1ReplaceConfig]
   }
 }

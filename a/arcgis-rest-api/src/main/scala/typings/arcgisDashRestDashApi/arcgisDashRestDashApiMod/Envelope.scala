@@ -28,10 +28,10 @@ object Envelope {
     zmax: Int | Double = null,
     zmin: Int | Double = null
   ): Envelope = {
-    val __obj = js.Dynamic.literal(xmax = xmax, xmin = xmin, ymax = ymax, ymin = ymin)
+    val __obj = js.Dynamic.literal(xmax = xmax.asInstanceOf[js.Any], xmin = xmin.asInstanceOf[js.Any], ymax = ymax.asInstanceOf[js.Any], ymin = ymin.asInstanceOf[js.Any])
     if (mmax != null) __obj.updateDynamic("mmax")(mmax.asInstanceOf[js.Any])
     if (mmin != null) __obj.updateDynamic("mmin")(mmin.asInstanceOf[js.Any])
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     if (zmax != null) __obj.updateDynamic("zmax")(zmax.asInstanceOf[js.Any])
     if (zmin != null) __obj.updateDynamic("zmin")(zmin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Envelope]

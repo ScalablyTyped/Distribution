@@ -29,9 +29,9 @@ object Anon_ {
     uri: String,
     children: js.UndefOr[scala.Nothing] = js.undefined
   ): Anon_ = {
-    val __obj = js.Dynamic.literal(data = data, location = location, navigate = navigate, pageContext = pageContext, pageResources = pageResources, path = path, uri = uri)
-    __obj.updateDynamic("*")(`*`)
-    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], navigate = navigate.asInstanceOf[js.Any], pageContext = pageContext.asInstanceOf[js.Any], pageResources = pageResources.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    __obj.updateDynamic("*")(`*`.asInstanceOf[js.Any])
+    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_]
   }
 }

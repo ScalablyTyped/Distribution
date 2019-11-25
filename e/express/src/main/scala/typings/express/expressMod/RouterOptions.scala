@@ -31,9 +31,9 @@ object RouterOptions {
     strict: js.UndefOr[Boolean] = js.undefined
   ): RouterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
-    if (!js.isUndefined(mergeParams)) __obj.updateDynamic("mergeParams")(mergeParams)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(mergeParams)) __obj.updateDynamic("mergeParams")(mergeParams.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterOptions]
   }
 }

@@ -24,10 +24,10 @@ object RouteHandlerCallbackContext {
     params: js.Array[String] | (Record[String, String]) = null,
     request: Request = null
   ): RouteHandlerCallbackContext = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (event != null) __obj.updateDynamic("event")(event)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request)
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteHandlerCallbackContext]
   }
 }

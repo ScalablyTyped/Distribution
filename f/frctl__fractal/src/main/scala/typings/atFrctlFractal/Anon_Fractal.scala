@@ -12,7 +12,7 @@ trait Anon_Fractal extends js.Object {
 object Anon_Fractal {
   @scala.inline
   def apply(fractal: Fractal): Anon_Fractal = {
-    val __obj = js.Dynamic.literal(fractal = fractal)
+    val __obj = js.Dynamic.literal(fractal = fractal.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Fractal]
   }

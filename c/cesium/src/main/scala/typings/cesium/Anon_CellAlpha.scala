@@ -23,11 +23,11 @@ object Anon_CellAlpha {
     lineThickness: Property = null
   ): Anon_CellAlpha = {
     val __obj = js.Dynamic.literal()
-    if (cellAlpha != null) __obj.updateDynamic("cellAlpha")(cellAlpha)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (lineCount != null) __obj.updateDynamic("lineCount")(lineCount)
-    if (lineOffset != null) __obj.updateDynamic("lineOffset")(lineOffset)
-    if (lineThickness != null) __obj.updateDynamic("lineThickness")(lineThickness)
+    if (cellAlpha != null) __obj.updateDynamic("cellAlpha")(cellAlpha.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (lineCount != null) __obj.updateDynamic("lineCount")(lineCount.asInstanceOf[js.Any])
+    if (lineOffset != null) __obj.updateDynamic("lineOffset")(lineOffset.asInstanceOf[js.Any])
+    if (lineThickness != null) __obj.updateDynamic("lineThickness")(lineThickness.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CellAlpha]
   }
 }

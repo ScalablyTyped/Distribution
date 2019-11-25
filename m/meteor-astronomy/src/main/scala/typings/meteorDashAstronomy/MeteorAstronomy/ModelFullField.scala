@@ -30,12 +30,12 @@ object ModelFullField {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(js.Any.fromFunction0(default))
-    if (!js.isUndefined(immutable)) __obj.updateDynamic("immutable")(immutable)
+    if (!js.isUndefined(immutable)) __obj.updateDynamic("immutable")(immutable.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
     if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction1(resolve))
-    if (!js.isUndefined(transient)) __obj.updateDynamic("transient")(transient)
-    if (validators != null) __obj.updateDynamic("validators")(validators)
+    if (!js.isUndefined(transient)) __obj.updateDynamic("transient")(transient.asInstanceOf[js.Any])
+    if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelFullField[Field, Doc]]
   }
 }

@@ -44,7 +44,7 @@ trait FirebaseError extends js.Object {
 object FirebaseError {
   @scala.inline
   def apply(code: String, message: String, stack: String, toJSON: () => js.Object): FirebaseError = {
-    val __obj = js.Dynamic.literal(code = code, message = message, stack = stack, toJSON = js.Any.fromFunction0(toJSON))
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
   
     __obj.asInstanceOf[FirebaseError]
   }

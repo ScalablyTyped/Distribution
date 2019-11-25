@@ -43,14 +43,14 @@ object PySparkJob {
     pythonFileUris: js.Array[String] = null
   ): PySparkJob = {
     val __obj = js.Dynamic.literal()
-    if (archiveUris != null) __obj.updateDynamic("archiveUris")(archiveUris)
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (fileUris != null) __obj.updateDynamic("fileUris")(fileUris)
-    if (jarFileUris != null) __obj.updateDynamic("jarFileUris")(jarFileUris)
-    if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig)
-    if (mainPythonFileUri != null) __obj.updateDynamic("mainPythonFileUri")(mainPythonFileUri)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (pythonFileUris != null) __obj.updateDynamic("pythonFileUris")(pythonFileUris)
+    if (archiveUris != null) __obj.updateDynamic("archiveUris")(archiveUris.asInstanceOf[js.Any])
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (fileUris != null) __obj.updateDynamic("fileUris")(fileUris.asInstanceOf[js.Any])
+    if (jarFileUris != null) __obj.updateDynamic("jarFileUris")(jarFileUris.asInstanceOf[js.Any])
+    if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig.asInstanceOf[js.Any])
+    if (mainPythonFileUri != null) __obj.updateDynamic("mainPythonFileUri")(mainPythonFileUri.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (pythonFileUris != null) __obj.updateDynamic("pythonFileUris")(pythonFileUris.asInstanceOf[js.Any])
     __obj.asInstanceOf[PySparkJob]
   }
 }

@@ -66,18 +66,18 @@ object InstanceProperties {
     tags: Tags = null
   ): InstanceProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canIpForward)) __obj.updateDynamic("canIpForward")(canIpForward)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (disks != null) __obj.updateDynamic("disks")(disks)
-    if (guestAccelerators != null) __obj.updateDynamic("guestAccelerators")(guestAccelerators)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (machineType != null) __obj.updateDynamic("machineType")(machineType)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (minCpuPlatform != null) __obj.updateDynamic("minCpuPlatform")(minCpuPlatform)
-    if (networkInterfaces != null) __obj.updateDynamic("networkInterfaces")(networkInterfaces)
-    if (scheduling != null) __obj.updateDynamic("scheduling")(scheduling)
-    if (serviceAccounts != null) __obj.updateDynamic("serviceAccounts")(serviceAccounts)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (!js.isUndefined(canIpForward)) __obj.updateDynamic("canIpForward")(canIpForward.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (disks != null) __obj.updateDynamic("disks")(disks.asInstanceOf[js.Any])
+    if (guestAccelerators != null) __obj.updateDynamic("guestAccelerators")(guestAccelerators.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (machineType != null) __obj.updateDynamic("machineType")(machineType.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (minCpuPlatform != null) __obj.updateDynamic("minCpuPlatform")(minCpuPlatform.asInstanceOf[js.Any])
+    if (networkInterfaces != null) __obj.updateDynamic("networkInterfaces")(networkInterfaces.asInstanceOf[js.Any])
+    if (scheduling != null) __obj.updateDynamic("scheduling")(scheduling.asInstanceOf[js.Any])
+    if (serviceAccounts != null) __obj.updateDynamic("serviceAccounts")(serviceAccounts.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceProperties]
   }
 }

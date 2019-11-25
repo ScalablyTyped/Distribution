@@ -12,7 +12,7 @@ object Anon_DefaultExchangeName {
   @scala.inline
   def apply(defaultExchangeName: String = null): Anon_DefaultExchangeName = {
     val __obj = js.Dynamic.literal()
-    if (defaultExchangeName != null) __obj.updateDynamic("defaultExchangeName")(defaultExchangeName)
+    if (defaultExchangeName != null) __obj.updateDynamic("defaultExchangeName")(defaultExchangeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DefaultExchangeName]
   }
 }

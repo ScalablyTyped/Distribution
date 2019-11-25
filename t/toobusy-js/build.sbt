@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "toobusy-js"
-version := "0.5-dt-20181205Z-cbb741"
+version := "0.5-dt-20181205Z-478438"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

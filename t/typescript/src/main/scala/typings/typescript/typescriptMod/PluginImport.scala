@@ -11,7 +11,7 @@ trait PluginImport extends js.Object {
 object PluginImport {
   @scala.inline
   def apply(name: String): PluginImport = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PluginImport]
   }

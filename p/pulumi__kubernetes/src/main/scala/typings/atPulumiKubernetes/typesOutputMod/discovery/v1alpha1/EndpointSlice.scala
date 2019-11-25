@@ -59,7 +59,7 @@ object EndpointSlice {
     metadata: ObjectMeta,
     ports: js.Array[EndpointPort]
   ): EndpointSlice = {
-    val __obj = js.Dynamic.literal(addressType = addressType, apiVersion = apiVersion, endpoints = endpoints, kind = kind, metadata = metadata, ports = ports)
+    val __obj = js.Dynamic.literal(addressType = addressType.asInstanceOf[js.Any], apiVersion = apiVersion.asInstanceOf[js.Any], endpoints = endpoints.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], ports = ports.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EndpointSlice]
   }

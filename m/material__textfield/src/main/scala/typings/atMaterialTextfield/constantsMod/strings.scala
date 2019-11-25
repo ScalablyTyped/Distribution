@@ -32,8 +32,8 @@ object strings {
     OUTLINE_SELECTOR: `DOTmdc-notched-outline`,
     StringDictionary: StringDictionary[String] = null
   ): strings = {
-    val __obj = js.Dynamic.literal(ARIA_CONTROLS = ARIA_CONTROLS, ICON_SELECTOR = ICON_SELECTOR, INPUT_SELECTOR = INPUT_SELECTOR, LABEL_SELECTOR = LABEL_SELECTOR, LINE_RIPPLE_SELECTOR = LINE_RIPPLE_SELECTOR, OUTLINE_SELECTOR = OUTLINE_SELECTOR)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(ARIA_CONTROLS = ARIA_CONTROLS.asInstanceOf[js.Any], ICON_SELECTOR = ICON_SELECTOR.asInstanceOf[js.Any], INPUT_SELECTOR = INPUT_SELECTOR.asInstanceOf[js.Any], LABEL_SELECTOR = LABEL_SELECTOR.asInstanceOf[js.Any], LINE_RIPPLE_SELECTOR = LINE_RIPPLE_SELECTOR.asInstanceOf[js.Any], OUTLINE_SELECTOR = OUTLINE_SELECTOR.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

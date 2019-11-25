@@ -11,7 +11,7 @@ trait ReadConcern extends js.Object {
 object ReadConcern {
   @scala.inline
   def apply(level: ReadConcernLevel): ReadConcern = {
-    val __obj = js.Dynamic.literal(level = level)
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReadConcern]
   }

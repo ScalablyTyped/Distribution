@@ -14,7 +14,7 @@ trait Anon_AlignItemsFlexHeight extends js.Object {
 object Anon_AlignItemsFlexHeight {
   @scala.inline
   def apply(alignItems: String, flex: Double, height: Double, justifyContent: String): Anon_AlignItemsFlexHeight = {
-    val __obj = js.Dynamic.literal(alignItems = alignItems, flex = flex, height = height, justifyContent = justifyContent)
+    val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], flex = flex.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], justifyContent = justifyContent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AlignItemsFlexHeight]
   }

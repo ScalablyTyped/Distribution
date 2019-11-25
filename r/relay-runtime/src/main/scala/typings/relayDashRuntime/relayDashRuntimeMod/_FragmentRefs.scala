@@ -13,7 +13,7 @@ object _FragmentRefs {
   @scala.inline
   def apply[Refs /* <: String */](` $fragmentRefs`: FragmentRefs[Refs]): _FragmentRefs[Refs] = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic(" $fragmentRefs")(` $fragmentRefs`)
+    __obj.updateDynamic(" $fragmentRefs")(` $fragmentRefs`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_FragmentRefs[Refs]]
   }
 }

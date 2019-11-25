@@ -20,8 +20,8 @@ object Image {
   @scala.inline
   def apply(contentUrl: String = null, imageProperties: ImageProperties = null): Image = {
     val __obj = js.Dynamic.literal()
-    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl)
-    if (imageProperties != null) __obj.updateDynamic("imageProperties")(imageProperties)
+    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl.asInstanceOf[js.Any])
+    if (imageProperties != null) __obj.updateDynamic("imageProperties")(imageProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }
 }

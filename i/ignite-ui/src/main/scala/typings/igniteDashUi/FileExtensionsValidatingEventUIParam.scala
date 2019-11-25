@@ -23,9 +23,9 @@ object FileExtensionsValidatingEventUIParam {
   @scala.inline
   def apply(fileExtension: String = null, fileName: String = null, owner: js.Any = null): FileExtensionsValidatingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (fileExtension != null) __obj.updateDynamic("fileExtension")(fileExtension)
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (fileExtension != null) __obj.updateDynamic("fileExtension")(fileExtension.asInstanceOf[js.Any])
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileExtensionsValidatingEventUIParam]
   }
 }

@@ -24,12 +24,12 @@ object PhantomCSSTest {
     success: js.UndefOr[Boolean] = js.undefined
   ): PhantomCSSTest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
-    if (!js.isUndefined(fail)) __obj.updateDynamic("fail")(fail)
-    if (failFile != null) __obj.updateDynamic("failFile")(failFile)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (mismatch != null) __obj.updateDynamic("mismatch")(mismatch)
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(fail)) __obj.updateDynamic("fail")(fail.asInstanceOf[js.Any])
+    if (failFile != null) __obj.updateDynamic("failFile")(failFile.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (mismatch != null) __obj.updateDynamic("mismatch")(mismatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhantomCSSTest]
   }
 }

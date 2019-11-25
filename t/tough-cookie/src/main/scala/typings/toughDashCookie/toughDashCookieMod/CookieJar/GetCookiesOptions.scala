@@ -23,11 +23,11 @@ object GetCookiesOptions {
     secure: js.UndefOr[Boolean] = js.undefined
   ): GetCookiesOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allPoints)) __obj.updateDynamic("allPoints")(allPoints)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (!js.isUndefined(expire)) __obj.updateDynamic("expire")(expire)
-    if (!js.isUndefined(http)) __obj.updateDynamic("http")(http)
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (!js.isUndefined(allPoints)) __obj.updateDynamic("allPoints")(allPoints.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (!js.isUndefined(expire)) __obj.updateDynamic("expire")(expire.asInstanceOf[js.Any])
+    if (!js.isUndefined(http)) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCookiesOptions]
   }
 }

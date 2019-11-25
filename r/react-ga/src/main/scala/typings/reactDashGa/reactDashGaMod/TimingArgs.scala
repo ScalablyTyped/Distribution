@@ -14,8 +14,8 @@ trait TimingArgs extends js.Object {
 object TimingArgs {
   @scala.inline
   def apply(category: String, value: Double, variable: String, label: String = null): TimingArgs = {
-    val __obj = js.Dynamic.literal(category = category, value = value, variable = variable)
-    if (label != null) __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], variable = variable.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimingArgs]
   }
 }

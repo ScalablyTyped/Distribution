@@ -26,13 +26,13 @@ object LiaCountrySettings {
     storePickupActive: js.UndefOr[Boolean] = js.undefined
   ): LiaCountrySettings = {
     val __obj = js.Dynamic.literal()
-    if (about != null) __obj.updateDynamic("about")(about)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (!js.isUndefined(hostedLocalStorefrontActive)) __obj.updateDynamic("hostedLocalStorefrontActive")(hostedLocalStorefrontActive)
-    if (inventory != null) __obj.updateDynamic("inventory")(inventory)
-    if (onDisplayToOrder != null) __obj.updateDynamic("onDisplayToOrder")(onDisplayToOrder)
-    if (posDataProvider != null) __obj.updateDynamic("posDataProvider")(posDataProvider)
-    if (!js.isUndefined(storePickupActive)) __obj.updateDynamic("storePickupActive")(storePickupActive)
+    if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (!js.isUndefined(hostedLocalStorefrontActive)) __obj.updateDynamic("hostedLocalStorefrontActive")(hostedLocalStorefrontActive.asInstanceOf[js.Any])
+    if (inventory != null) __obj.updateDynamic("inventory")(inventory.asInstanceOf[js.Any])
+    if (onDisplayToOrder != null) __obj.updateDynamic("onDisplayToOrder")(onDisplayToOrder.asInstanceOf[js.Any])
+    if (posDataProvider != null) __obj.updateDynamic("posDataProvider")(posDataProvider.asInstanceOf[js.Any])
+    if (!js.isUndefined(storePickupActive)) __obj.updateDynamic("storePickupActive")(storePickupActive.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiaCountrySettings]
   }
 }

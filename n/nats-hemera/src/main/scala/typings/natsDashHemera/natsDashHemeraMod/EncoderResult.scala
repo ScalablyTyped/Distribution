@@ -14,7 +14,7 @@ trait EncoderResult extends js.Object {
 object EncoderResult {
   @scala.inline
   def apply(error: Error, value: String | Buffer): EncoderResult = {
-    val __obj = js.Dynamic.literal(error = error, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EncoderResult]
   }

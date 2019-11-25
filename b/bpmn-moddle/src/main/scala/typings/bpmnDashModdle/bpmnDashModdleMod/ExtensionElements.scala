@@ -23,8 +23,8 @@ object ExtensionElements {
     values: js.Array[BaseElement],
     StringDictionary: /* key */ StringDictionary[js.Any] = null
   ): ExtensionElements = {
-    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, extensionAttributeDefinition = extensionAttributeDefinition, valueRef = valueRef, values = values)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal($parent = $parent.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any], extensionAttributeDefinition = extensionAttributeDefinition.asInstanceOf[js.Any], valueRef = valueRef.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ExtensionElements]
   }
 }

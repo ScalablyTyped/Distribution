@@ -18,9 +18,9 @@ object Anon_Animation {
     icons: Anon_ColorCurrent = null
   ): Anon_Animation = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation)
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (icons != null) __obj.updateDynamic("icons")(icons)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Animation]
   }
 }

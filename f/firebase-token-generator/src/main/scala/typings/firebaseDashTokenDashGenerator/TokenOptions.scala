@@ -24,12 +24,12 @@ object TokenOptions {
     simulate: js.UndefOr[Boolean] = js.undefined
   ): TokenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(admin)) __obj.updateDynamic("admin")(admin)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(admin)) __obj.updateDynamic("admin")(admin.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
     if (iat != null) __obj.updateDynamic("iat")(iat.asInstanceOf[js.Any])
     if (notBefore != null) __obj.updateDynamic("notBefore")(notBefore.asInstanceOf[js.Any])
-    if (!js.isUndefined(simulate)) __obj.updateDynamic("simulate")(simulate)
+    if (!js.isUndefined(simulate)) __obj.updateDynamic("simulate")(simulate.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenOptions]
   }
 }

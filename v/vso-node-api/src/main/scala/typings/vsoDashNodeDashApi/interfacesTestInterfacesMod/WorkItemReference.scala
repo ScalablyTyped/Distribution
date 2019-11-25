@@ -15,8 +15,8 @@ trait WorkItemReference extends js.Object {
 object WorkItemReference {
   @scala.inline
   def apply(id: String, name: String, `type`: String, url: String, webUrl: String): WorkItemReference = {
-    val __obj = js.Dynamic.literal(id = id, name = name, url = url, webUrl = webUrl)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], webUrl = webUrl.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemReference]
   }
 }

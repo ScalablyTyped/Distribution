@@ -16,10 +16,10 @@ object RequestLogger {
   @scala.inline
   def apply(headers: js.Any = null, log: js.Any = null, properties: js.Any = null, serializers: js.Any = null): RequestLogger = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (log != null) __obj.updateDynamic("log")(log)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (serializers != null) __obj.updateDynamic("serializers")(serializers)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (serializers != null) __obj.updateDynamic("serializers")(serializers.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestLogger]
   }
 }

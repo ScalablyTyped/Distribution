@@ -28,14 +28,14 @@ object Anon_AccentColorClockCircleColor {
     textColor: String = null
   ): Anon_AccentColorClockCircleColor = {
     val __obj = js.Dynamic.literal()
-    if (accentColor != null) __obj.updateDynamic("accentColor")(accentColor)
-    if (clockCircleColor != null) __obj.updateDynamic("clockCircleColor")(clockCircleColor)
-    if (clockColor != null) __obj.updateDynamic("clockColor")(clockColor)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (headerColor != null) __obj.updateDynamic("headerColor")(headerColor)
-    if (selectColor != null) __obj.updateDynamic("selectColor")(selectColor)
-    if (selectTextColor != null) __obj.updateDynamic("selectTextColor")(selectTextColor)
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (accentColor != null) __obj.updateDynamic("accentColor")(accentColor.asInstanceOf[js.Any])
+    if (clockCircleColor != null) __obj.updateDynamic("clockCircleColor")(clockCircleColor.asInstanceOf[js.Any])
+    if (clockColor != null) __obj.updateDynamic("clockColor")(clockColor.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (headerColor != null) __obj.updateDynamic("headerColor")(headerColor.asInstanceOf[js.Any])
+    if (selectColor != null) __obj.updateDynamic("selectColor")(selectColor.asInstanceOf[js.Any])
+    if (selectTextColor != null) __obj.updateDynamic("selectTextColor")(selectTextColor.asInstanceOf[js.Any])
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AccentColorClockCircleColor]
   }
 }

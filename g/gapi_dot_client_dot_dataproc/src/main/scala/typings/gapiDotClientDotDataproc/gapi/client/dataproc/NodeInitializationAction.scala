@@ -18,8 +18,8 @@ object NodeInitializationAction {
   @scala.inline
   def apply(executableFile: String = null, executionTimeout: String = null): NodeInitializationAction = {
     val __obj = js.Dynamic.literal()
-    if (executableFile != null) __obj.updateDynamic("executableFile")(executableFile)
-    if (executionTimeout != null) __obj.updateDynamic("executionTimeout")(executionTimeout)
+    if (executableFile != null) __obj.updateDynamic("executableFile")(executableFile.asInstanceOf[js.Any])
+    if (executionTimeout != null) __obj.updateDynamic("executionTimeout")(executionTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeInitializationAction]
   }
 }

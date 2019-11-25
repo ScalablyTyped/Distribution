@@ -24,12 +24,12 @@ object BusyIndicatorOptions {
     tickerText: String = null
   ): BusyIndicatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (contentTextText != null) __obj.updateDynamic("contentTextText")(contentTextText)
-    if (contentTitle != null) __obj.updateDynamic("contentTitle")(contentTitle)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (contentTextText != null) __obj.updateDynamic("contentTextText")(contentTextText.asInstanceOf[js.Any])
+    if (contentTitle != null) __obj.updateDynamic("contentTitle")(contentTitle.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (notificationId != null) __obj.updateDynamic("notificationId")(notificationId.asInstanceOf[js.Any])
-    if (tickerText != null) __obj.updateDynamic("tickerText")(tickerText)
+    if (tickerText != null) __obj.updateDynamic("tickerText")(tickerText.asInstanceOf[js.Any])
     __obj.asInstanceOf[BusyIndicatorOptions]
   }
 }

@@ -86,16 +86,16 @@ object MatchImageSnapshotOptions {
   ): MatchImageSnapshotOptions = {
     val __obj = js.Dynamic.literal()
     if (blur != null) __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
-    if (customDiffConfig != null) __obj.updateDynamic("customDiffConfig")(customDiffConfig)
-    if (customDiffDir != null) __obj.updateDynamic("customDiffDir")(customDiffDir)
+    if (customDiffConfig != null) __obj.updateDynamic("customDiffConfig")(customDiffConfig.asInstanceOf[js.Any])
+    if (customDiffDir != null) __obj.updateDynamic("customDiffDir")(customDiffDir.asInstanceOf[js.Any])
     if (customSnapshotIdentifier != null) __obj.updateDynamic("customSnapshotIdentifier")(js.Any.fromFunction1(customSnapshotIdentifier))
-    if (customSnapshotsDir != null) __obj.updateDynamic("customSnapshotsDir")(customSnapshotsDir)
+    if (customSnapshotsDir != null) __obj.updateDynamic("customSnapshotsDir")(customSnapshotsDir.asInstanceOf[js.Any])
     if (diffDirection != null) __obj.updateDynamic("diffDirection")(diffDirection.asInstanceOf[js.Any])
     if (failureThreshold != null) __obj.updateDynamic("failureThreshold")(failureThreshold.asInstanceOf[js.Any])
     if (failureThresholdType != null) __obj.updateDynamic("failureThresholdType")(failureThresholdType.asInstanceOf[js.Any])
-    if (!js.isUndefined(noColors)) __obj.updateDynamic("noColors")(noColors)
-    if (!js.isUndefined(runInProcess)) __obj.updateDynamic("runInProcess")(runInProcess)
-    if (!js.isUndefined(updatePassedSnapshot)) __obj.updateDynamic("updatePassedSnapshot")(updatePassedSnapshot)
+    if (!js.isUndefined(noColors)) __obj.updateDynamic("noColors")(noColors.asInstanceOf[js.Any])
+    if (!js.isUndefined(runInProcess)) __obj.updateDynamic("runInProcess")(runInProcess.asInstanceOf[js.Any])
+    if (!js.isUndefined(updatePassedSnapshot)) __obj.updateDynamic("updatePassedSnapshot")(updatePassedSnapshot.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchImageSnapshotOptions]
   }
 }

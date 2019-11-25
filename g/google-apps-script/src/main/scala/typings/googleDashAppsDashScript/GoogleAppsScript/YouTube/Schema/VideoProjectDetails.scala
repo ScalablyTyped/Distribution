@@ -12,7 +12,7 @@ object VideoProjectDetails {
   @scala.inline
   def apply(tags: js.Array[String] = null): VideoProjectDetails = {
     val __obj = js.Dynamic.literal()
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoProjectDetails]
   }
 }

@@ -13,7 +13,7 @@ trait Position extends js.Object {
 object Position {
   @scala.inline
   def apply(coords: Coordinates, timestamp: Double): Position = {
-    val __obj = js.Dynamic.literal(coords = coords, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Position]
   }

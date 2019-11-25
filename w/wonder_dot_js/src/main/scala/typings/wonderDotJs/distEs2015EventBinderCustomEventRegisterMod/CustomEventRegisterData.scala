@@ -22,7 +22,7 @@ object CustomEventRegisterData {
     priority: Double,
     target: EntityObject
   ): CustomEventRegisterData = {
-    val __obj = js.Dynamic.literal(domHandler = domHandler, handler = handler, originHandler = originHandler, priority = priority, target = target)
+    val __obj = js.Dynamic.literal(domHandler = domHandler.asInstanceOf[js.Any], handler = handler.asInstanceOf[js.Any], originHandler = originHandler.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CustomEventRegisterData]
   }

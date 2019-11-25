@@ -32,11 +32,10 @@ object BaseNodeMixin {
     removed: Boolean,
     setPluginData: (String, String) => Unit,
     setSharedPluginData: (String, String, String) => Unit,
-    toString: () => String,
     parent: BaseNode with ChildrenMixin = null
   ): BaseNodeMixin = {
-    val __obj = js.Dynamic.literal(getPluginData = js.Any.fromFunction1(getPluginData), getSharedPluginData = js.Any.fromFunction2(getSharedPluginData), id = id, name = name, remove = js.Any.fromFunction0(remove), removed = removed, setPluginData = js.Any.fromFunction2(setPluginData), setSharedPluginData = js.Any.fromFunction3(setSharedPluginData), toString = js.Any.fromFunction0(toString))
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(getPluginData = js.Any.fromFunction1(getPluginData), getSharedPluginData = js.Any.fromFunction2(getSharedPluginData), id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], remove = js.Any.fromFunction0(remove), removed = removed.asInstanceOf[js.Any], setPluginData = js.Any.fromFunction2(setPluginData), setSharedPluginData = js.Any.fromFunction3(setSharedPluginData))
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseNodeMixin]
   }
 }

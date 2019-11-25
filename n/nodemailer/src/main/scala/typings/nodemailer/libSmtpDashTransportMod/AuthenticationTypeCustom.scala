@@ -14,8 +14,8 @@ trait AuthenticationTypeCustom extends Credentials {
 object AuthenticationTypeCustom {
   @scala.inline
   def apply(method: String, pass: String, `type`: CUSTOM, user: String): AuthenticationTypeCustom = {
-    val __obj = js.Dynamic.literal(method = method, pass = pass, user = user)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], pass = pass.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationTypeCustom]
   }
 }

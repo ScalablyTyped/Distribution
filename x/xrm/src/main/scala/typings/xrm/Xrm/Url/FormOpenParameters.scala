@@ -44,10 +44,10 @@ trait FormOpenParameters extends js.Object {
 object FormOpenParameters {
   @scala.inline
   def apply(etn: String, cmdbar: CmdBarDisplay = null, extraqs: String = null, navbar: NavBarDisplay = null): FormOpenParameters = {
-    val __obj = js.Dynamic.literal(etn = etn)
-    if (cmdbar != null) __obj.updateDynamic("cmdbar")(cmdbar)
-    if (extraqs != null) __obj.updateDynamic("extraqs")(extraqs)
-    if (navbar != null) __obj.updateDynamic("navbar")(navbar)
+    val __obj = js.Dynamic.literal(etn = etn.asInstanceOf[js.Any])
+    if (cmdbar != null) __obj.updateDynamic("cmdbar")(cmdbar.asInstanceOf[js.Any])
+    if (extraqs != null) __obj.updateDynamic("extraqs")(extraqs.asInstanceOf[js.Any])
+    if (navbar != null) __obj.updateDynamic("navbar")(navbar.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormOpenParameters]
   }
 }

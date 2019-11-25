@@ -22,8 +22,8 @@ object CertificateRawData {
   @scala.inline
   def apply(privateKey: String = null, publicCertificate: String = null): CertificateRawData = {
     val __obj = js.Dynamic.literal()
-    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey)
-    if (publicCertificate != null) __obj.updateDynamic("publicCertificate")(publicCertificate)
+    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
+    if (publicCertificate != null) __obj.updateDynamic("publicCertificate")(publicCertificate.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateRawData]
   }
 }

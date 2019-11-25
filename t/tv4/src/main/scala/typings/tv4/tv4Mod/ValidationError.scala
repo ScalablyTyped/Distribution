@@ -21,10 +21,10 @@ object ValidationError {
     schemaPath: String = null,
     subErrors: js.Array[ValidationError] = null
   ): ValidationError = {
-    val __obj = js.Dynamic.literal(code = code, message = message)
-    if (dataPath != null) __obj.updateDynamic("dataPath")(dataPath)
-    if (schemaPath != null) __obj.updateDynamic("schemaPath")(schemaPath)
-    if (subErrors != null) __obj.updateDynamic("subErrors")(subErrors)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    if (dataPath != null) __obj.updateDynamic("dataPath")(dataPath.asInstanceOf[js.Any])
+    if (schemaPath != null) __obj.updateDynamic("schemaPath")(schemaPath.asInstanceOf[js.Any])
+    if (subErrors != null) __obj.updateDynamic("subErrors")(subErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationError]
   }
 }

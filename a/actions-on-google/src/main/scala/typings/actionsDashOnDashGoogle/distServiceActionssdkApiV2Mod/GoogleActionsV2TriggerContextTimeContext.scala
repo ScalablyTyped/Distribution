@@ -15,7 +15,7 @@ object GoogleActionsV2TriggerContextTimeContext {
   @scala.inline
   def apply(frequency: GoogleActionsV2TriggerContextTimeContextFrequency = null): GoogleActionsV2TriggerContextTimeContext = {
     val __obj = js.Dynamic.literal()
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency)
+    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2TriggerContextTimeContext]
   }
 }

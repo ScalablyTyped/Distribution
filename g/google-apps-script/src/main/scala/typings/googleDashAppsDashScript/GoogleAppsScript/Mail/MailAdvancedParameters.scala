@@ -47,17 +47,17 @@ object MailAdvancedParameters {
     to: String = null
   ): MailAdvancedParameters = {
     val __obj = js.Dynamic.literal()
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
-    if (bcc != null) __obj.updateDynamic("bcc")(bcc)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (cc != null) __obj.updateDynamic("cc")(cc)
-    if (htmlBody != null) __obj.updateDynamic("htmlBody")(htmlBody)
-    if (inlineImages != null) __obj.updateDynamic("inlineImages")(inlineImages)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(noReply)) __obj.updateDynamic("noReply")(noReply)
-    if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
+    if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (cc != null) __obj.updateDynamic("cc")(cc.asInstanceOf[js.Any])
+    if (htmlBody != null) __obj.updateDynamic("htmlBody")(htmlBody.asInstanceOf[js.Any])
+    if (inlineImages != null) __obj.updateDynamic("inlineImages")(inlineImages.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(noReply)) __obj.updateDynamic("noReply")(noReply.asInstanceOf[js.Any])
+    if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[MailAdvancedParameters]
   }
 }

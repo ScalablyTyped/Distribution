@@ -22,7 +22,7 @@ object QueryResult {
     fragmentRef: FragmentPointer,
     operation: OperationDescriptor
   ): QueryResult = {
-    val __obj = js.Dynamic.literal(cacheKey = cacheKey, fragmentNode = fragmentNode, fragmentRef = fragmentRef, operation = operation)
+    val __obj = js.Dynamic.literal(cacheKey = cacheKey.asInstanceOf[js.Any], fragmentNode = fragmentNode.asInstanceOf[js.Any], fragmentRef = fragmentRef.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QueryResult]
   }

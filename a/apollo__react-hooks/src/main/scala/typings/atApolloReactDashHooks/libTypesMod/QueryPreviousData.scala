@@ -30,13 +30,13 @@ object QueryPreviousData {
     result: ApolloQueryResult[TData] = null
   ): QueryPreviousData[TData, TVariables] = {
     val __obj = js.Dynamic.literal()
-    if (client != null) __obj.updateDynamic("client")(client)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
-    if (observableQueryOptions != null) __obj.updateDynamic("observableQueryOptions")(observableQueryOptions)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (result != null) __obj.updateDynamic("result")(result)
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+    if (observableQueryOptions != null) __obj.updateDynamic("observableQueryOptions")(observableQueryOptions.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryPreviousData[TData, TVariables]]
   }
 }

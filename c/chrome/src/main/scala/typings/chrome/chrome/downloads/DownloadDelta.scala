@@ -59,20 +59,20 @@ object DownloadDelta {
     totalBytes: DoubleDelta = null,
     url: StringDelta = null
   ): DownloadDelta = {
-    val __obj = js.Dynamic.literal(finalUrl = finalUrl, id = id)
-    if (canResume != null) __obj.updateDynamic("canResume")(canResume)
-    if (danger != null) __obj.updateDynamic("danger")(danger)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (exists != null) __obj.updateDynamic("exists")(exists)
-    if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (mime != null) __obj.updateDynamic("mime")(mime)
-    if (paused != null) __obj.updateDynamic("paused")(paused)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (totalBytes != null) __obj.updateDynamic("totalBytes")(totalBytes)
-    if (url != null) __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(finalUrl = finalUrl.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    if (canResume != null) __obj.updateDynamic("canResume")(canResume.asInstanceOf[js.Any])
+    if (danger != null) __obj.updateDynamic("danger")(danger.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (exists != null) __obj.updateDynamic("exists")(exists.asInstanceOf[js.Any])
+    if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (mime != null) __obj.updateDynamic("mime")(mime.asInstanceOf[js.Any])
+    if (paused != null) __obj.updateDynamic("paused")(paused.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (totalBytes != null) __obj.updateDynamic("totalBytes")(totalBytes.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadDelta]
   }
 }

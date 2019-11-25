@@ -40,7 +40,7 @@ trait ResolvedIntlListFormatOptions extends js.Object {
 object ResolvedIntlListFormatOptions {
   @scala.inline
   def apply(locale: String, style: long | short | narrow, `type`: conjunction | disjunction | unit): ResolvedIntlListFormatOptions = {
-    val __obj = js.Dynamic.literal(locale = locale, style = style.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedIntlListFormatOptions]
   }

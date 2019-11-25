@@ -11,7 +11,7 @@ trait Node[Name /* <: String */, T] extends Mark[T] {
 object Node {
   @scala.inline
   def apply[Name /* <: String */, T](end: Index, name: Name, start: Index, value: T): Node[Name, T] = {
-    val __obj = js.Dynamic.literal(end = end, name = name.asInstanceOf[js.Any], start = start, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Node[Name, T]]
   }

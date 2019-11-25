@@ -13,7 +13,7 @@ object Filter {
   @scala.inline
   def apply(matches: js.Any => Boolean, `type`: String): Filter = {
     val __obj = js.Dynamic.literal(matches = js.Any.fromFunction1(matches))
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filter]
   }
 }

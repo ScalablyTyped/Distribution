@@ -27,14 +27,14 @@ object Options {
     startAt: String = null,
     strict: js.UndefOr[Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal(input = input)
-    if (!js.isUndefined(oneResult)) __obj.updateDynamic("oneResult")(oneResult)
-    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial)
-    if (!js.isUndefined(rejectTLD)) __obj.updateDynamic("rejectTLD")(rejectTLD)
-    if (!js.isUndefined(rfc6532)) __obj.updateDynamic("rfc6532")(rfc6532)
-    if (!js.isUndefined(simple)) __obj.updateDynamic("simple")(simple)
-    if (startAt != null) __obj.updateDynamic("startAt")(startAt)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
+    if (!js.isUndefined(oneResult)) __obj.updateDynamic("oneResult")(oneResult.asInstanceOf[js.Any])
+    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectTLD)) __obj.updateDynamic("rejectTLD")(rejectTLD.asInstanceOf[js.Any])
+    if (!js.isUndefined(rfc6532)) __obj.updateDynamic("rfc6532")(rfc6532.asInstanceOf[js.Any])
+    if (!js.isUndefined(simple)) __obj.updateDynamic("simple")(simple.asInstanceOf[js.Any])
+    if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

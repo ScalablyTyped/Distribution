@@ -25,8 +25,8 @@ object IntersectionObserverEntryInit {
     time: Double,
     rootBounds: DOMRectInit = null
   ): IntersectionObserverEntryInit = {
-    val __obj = js.Dynamic.literal(boundingClientRect = boundingClientRect, intersectionRatio = intersectionRatio, intersectionRect = intersectionRect, isIntersecting = isIntersecting, target = target, time = time)
-    if (rootBounds != null) __obj.updateDynamic("rootBounds")(rootBounds)
+    val __obj = js.Dynamic.literal(boundingClientRect = boundingClientRect.asInstanceOf[js.Any], intersectionRatio = intersectionRatio.asInstanceOf[js.Any], intersectionRect = intersectionRect.asInstanceOf[js.Any], isIntersecting = isIntersecting.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
+    if (rootBounds != null) __obj.updateDynamic("rootBounds")(rootBounds.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntersectionObserverEntryInit]
   }
 }

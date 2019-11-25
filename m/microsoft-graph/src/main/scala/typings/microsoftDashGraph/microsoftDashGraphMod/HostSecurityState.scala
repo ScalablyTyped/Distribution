@@ -37,15 +37,15 @@ object HostSecurityState {
     riskScore: String = null
   ): HostSecurityState = {
     val __obj = js.Dynamic.literal()
-    if (fqdn != null) __obj.updateDynamic("fqdn")(fqdn)
-    if (!js.isUndefined(isAzureAdJoined)) __obj.updateDynamic("isAzureAdJoined")(isAzureAdJoined)
-    if (!js.isUndefined(isAzureAdRegistered)) __obj.updateDynamic("isAzureAdRegistered")(isAzureAdRegistered)
-    if (!js.isUndefined(isHybridAzureDomainJoined)) __obj.updateDynamic("isHybridAzureDomainJoined")(isHybridAzureDomainJoined)
-    if (netBiosName != null) __obj.updateDynamic("netBiosName")(netBiosName)
-    if (os != null) __obj.updateDynamic("os")(os)
-    if (privateIpAddress != null) __obj.updateDynamic("privateIpAddress")(privateIpAddress)
-    if (publicIpAddress != null) __obj.updateDynamic("publicIpAddress")(publicIpAddress)
-    if (riskScore != null) __obj.updateDynamic("riskScore")(riskScore)
+    if (fqdn != null) __obj.updateDynamic("fqdn")(fqdn.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAzureAdJoined)) __obj.updateDynamic("isAzureAdJoined")(isAzureAdJoined.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAzureAdRegistered)) __obj.updateDynamic("isAzureAdRegistered")(isAzureAdRegistered.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHybridAzureDomainJoined)) __obj.updateDynamic("isHybridAzureDomainJoined")(isHybridAzureDomainJoined.asInstanceOf[js.Any])
+    if (netBiosName != null) __obj.updateDynamic("netBiosName")(netBiosName.asInstanceOf[js.Any])
+    if (os != null) __obj.updateDynamic("os")(os.asInstanceOf[js.Any])
+    if (privateIpAddress != null) __obj.updateDynamic("privateIpAddress")(privateIpAddress.asInstanceOf[js.Any])
+    if (publicIpAddress != null) __obj.updateDynamic("publicIpAddress")(publicIpAddress.asInstanceOf[js.Any])
+    if (riskScore != null) __obj.updateDynamic("riskScore")(riskScore.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostSecurityState]
   }
 }

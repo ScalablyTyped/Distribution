@@ -21,7 +21,7 @@ object GetSavedFileInfoOptions {
     fail: js.Any => Unit = null,
     success: /* res */ SavedFileInfoData => Unit = null
   ): GetSavedFileInfoOptions = {
-    val __obj = js.Dynamic.literal(apFilePath = apFilePath)
+    val __obj = js.Dynamic.literal(apFilePath = apFilePath.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

@@ -22,7 +22,7 @@ object Anon_Disabled {
     onAlign: () => Unit,
     target: () => Window
   ): Anon_Disabled = {
-    val __obj = js.Dynamic.literal(disabled = disabled, monitorBufferTime = monitorBufferTime, monitorWindowResize = monitorWindowResize, onAlign = js.Any.fromFunction0(onAlign), target = js.Any.fromFunction0(target))
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], monitorBufferTime = monitorBufferTime.asInstanceOf[js.Any], monitorWindowResize = monitorWindowResize.asInstanceOf[js.Any], onAlign = js.Any.fromFunction0(onAlign), target = js.Any.fromFunction0(target))
   
     __obj.asInstanceOf[Anon_Disabled]
   }

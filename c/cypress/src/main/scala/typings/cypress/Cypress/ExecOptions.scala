@@ -29,7 +29,7 @@ trait ExecOptions
 object ExecOptions {
   @scala.inline
   def apply(env: js.Object, failOnNonZeroExit: Boolean, log: Boolean, timeout: Double): ExecOptions = {
-    val __obj = js.Dynamic.literal(env = env, failOnNonZeroExit = failOnNonZeroExit, log = log, timeout = timeout)
+    val __obj = js.Dynamic.literal(env = env.asInstanceOf[js.Any], failOnNonZeroExit = failOnNonZeroExit.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExecOptions]
   }

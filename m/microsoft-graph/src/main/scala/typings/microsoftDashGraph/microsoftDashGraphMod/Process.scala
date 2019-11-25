@@ -55,17 +55,17 @@ object Process {
     processId: Int | Double = null
   ): Process = {
     val __obj = js.Dynamic.literal()
-    if (accountName != null) __obj.updateDynamic("accountName")(accountName)
-    if (commandLine != null) __obj.updateDynamic("commandLine")(commandLine)
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime)
-    if (fileHash != null) __obj.updateDynamic("fileHash")(fileHash)
-    if (integrityLevel != null) __obj.updateDynamic("integrityLevel")(integrityLevel)
-    if (!js.isUndefined(isElevated)) __obj.updateDynamic("isElevated")(isElevated)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (parentProcessCreatedDateTime != null) __obj.updateDynamic("parentProcessCreatedDateTime")(parentProcessCreatedDateTime)
+    if (accountName != null) __obj.updateDynamic("accountName")(accountName.asInstanceOf[js.Any])
+    if (commandLine != null) __obj.updateDynamic("commandLine")(commandLine.asInstanceOf[js.Any])
+    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
+    if (fileHash != null) __obj.updateDynamic("fileHash")(fileHash.asInstanceOf[js.Any])
+    if (integrityLevel != null) __obj.updateDynamic("integrityLevel")(integrityLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(isElevated)) __obj.updateDynamic("isElevated")(isElevated.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parentProcessCreatedDateTime != null) __obj.updateDynamic("parentProcessCreatedDateTime")(parentProcessCreatedDateTime.asInstanceOf[js.Any])
     if (parentProcessId != null) __obj.updateDynamic("parentProcessId")(parentProcessId.asInstanceOf[js.Any])
-    if (parentProcessName != null) __obj.updateDynamic("parentProcessName")(parentProcessName)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (parentProcessName != null) __obj.updateDynamic("parentProcessName")(parentProcessName.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (processId != null) __obj.updateDynamic("processId")(processId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Process]
   }

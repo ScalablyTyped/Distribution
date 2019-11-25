@@ -32,13 +32,13 @@ object SmartHomeV1SyncDevices {
     otherDeviceIds: js.Array[SmartHomeV1SyncOtherDeviceIds] = null,
     roomHint: String = null
   ): SmartHomeV1SyncDevices = {
-    val __obj = js.Dynamic.literal(id = id, name = name, traits = traits, willReportState = willReportState)
-    __obj.updateDynamic("type")(`type`)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (customData != null) __obj.updateDynamic("customData")(customData)
-    if (deviceInfo != null) __obj.updateDynamic("deviceInfo")(deviceInfo)
-    if (otherDeviceIds != null) __obj.updateDynamic("otherDeviceIds")(otherDeviceIds)
-    if (roomHint != null) __obj.updateDynamic("roomHint")(roomHint)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], traits = traits.asInstanceOf[js.Any], willReportState = willReportState.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (customData != null) __obj.updateDynamic("customData")(customData.asInstanceOf[js.Any])
+    if (deviceInfo != null) __obj.updateDynamic("deviceInfo")(deviceInfo.asInstanceOf[js.Any])
+    if (otherDeviceIds != null) __obj.updateDynamic("otherDeviceIds")(otherDeviceIds.asInstanceOf[js.Any])
+    if (roomHint != null) __obj.updateDynamic("roomHint")(roomHint.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartHomeV1SyncDevices]
   }
 }

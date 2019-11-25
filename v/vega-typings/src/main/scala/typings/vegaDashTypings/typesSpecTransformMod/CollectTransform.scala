@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CollectTransform extends Transforms {
+trait CollectTransform extends _Transforms {
   var sort: Compare
   var `type`: collect
 }
@@ -14,8 +14,8 @@ trait CollectTransform extends Transforms {
 object CollectTransform {
   @scala.inline
   def apply(sort: Compare, `type`: collect): CollectTransform = {
-    val __obj = js.Dynamic.literal(sort = sort)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(sort = sort.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectTransform]
   }
 }

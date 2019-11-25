@@ -14,7 +14,7 @@ trait Anon_Avg extends js.Object {
 object Anon_Avg {
   @scala.inline
   def apply(avg: Double, max: Double, min: Double, sum: Double): Anon_Avg = {
-    val __obj = js.Dynamic.literal(avg = avg, max = max, min = min, sum = sum)
+    val __obj = js.Dynamic.literal(avg = avg.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], sum = sum.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Avg]
   }

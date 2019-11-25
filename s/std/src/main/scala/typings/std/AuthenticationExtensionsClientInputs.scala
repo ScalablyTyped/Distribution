@@ -28,14 +28,14 @@ object AuthenticationExtensionsClientInputs {
     uvm: js.UndefOr[scala.Boolean] = js.undefined
   ): AuthenticationExtensionsClientInputs = {
     val __obj = js.Dynamic.literal()
-    if (appid != null) __obj.updateDynamic("appid")(appid)
-    if (authnSel != null) __obj.updateDynamic("authnSel")(authnSel)
-    if (!js.isUndefined(exts)) __obj.updateDynamic("exts")(exts)
-    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc)
-    if (txAuthGeneric != null) __obj.updateDynamic("txAuthGeneric")(txAuthGeneric)
-    if (txAuthSimple != null) __obj.updateDynamic("txAuthSimple")(txAuthSimple)
-    if (!js.isUndefined(uvi)) __obj.updateDynamic("uvi")(uvi)
-    if (!js.isUndefined(uvm)) __obj.updateDynamic("uvm")(uvm)
+    if (appid != null) __obj.updateDynamic("appid")(appid.asInstanceOf[js.Any])
+    if (authnSel != null) __obj.updateDynamic("authnSel")(authnSel.asInstanceOf[js.Any])
+    if (!js.isUndefined(exts)) __obj.updateDynamic("exts")(exts.asInstanceOf[js.Any])
+    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (txAuthGeneric != null) __obj.updateDynamic("txAuthGeneric")(txAuthGeneric.asInstanceOf[js.Any])
+    if (txAuthSimple != null) __obj.updateDynamic("txAuthSimple")(txAuthSimple.asInstanceOf[js.Any])
+    if (!js.isUndefined(uvi)) __obj.updateDynamic("uvi")(uvi.asInstanceOf[js.Any])
+    if (!js.isUndefined(uvm)) __obj.updateDynamic("uvm")(uvm.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationExtensionsClientInputs]
   }
 }

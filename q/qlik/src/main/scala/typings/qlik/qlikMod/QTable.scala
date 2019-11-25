@@ -27,7 +27,7 @@ object QTable {
     rows: js.Array[QRow],
     totals: js.Array[QMeasureCell]
   ): QTable = {
-    val __obj = js.Dynamic.literal(colCount = colCount, exportData = js.Any.fromFunction2(exportData), getColByName = js.Any.fromFunction1(getColByName), getMoreData = js.Any.fromFunction0(getMoreData), headers = headers, rowCount = rowCount, rows = rows, totals = totals)
+    val __obj = js.Dynamic.literal(colCount = colCount.asInstanceOf[js.Any], exportData = js.Any.fromFunction2(exportData), getColByName = js.Any.fromFunction1(getColByName), getMoreData = js.Any.fromFunction0(getMoreData), headers = headers.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], totals = totals.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QTable]
   }

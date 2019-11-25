@@ -24,7 +24,7 @@ object AutocompleteOptions {
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (onSearchComplete != null) __obj.updateDynamic("onSearchComplete")(js.Any.fromFunction1(onSearchComplete))
-    if (types != null) __obj.updateDynamic("types")(types)
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutocompleteOptions]
   }
 }

@@ -20,7 +20,7 @@ object LocaleData {
     data: Record[Locale, T],
     parentLocales: Record[String, String]
   ): LocaleData[T] = {
-    val __obj = js.Dynamic.literal(aliases = aliases, availableLocales = availableLocales, data = data, parentLocales = parentLocales)
+    val __obj = js.Dynamic.literal(aliases = aliases.asInstanceOf[js.Any], availableLocales = availableLocales.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], parentLocales = parentLocales.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LocaleData[T]]
   }

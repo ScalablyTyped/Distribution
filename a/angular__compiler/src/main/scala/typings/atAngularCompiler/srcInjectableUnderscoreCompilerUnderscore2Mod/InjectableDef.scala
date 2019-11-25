@@ -16,8 +16,8 @@ trait InjectableDef extends js.Object {
 object InjectableDef {
   @scala.inline
   def apply(expression: Expression, statements: js.Array[Statement], `type`: Type): InjectableDef = {
-    val __obj = js.Dynamic.literal(expression = expression, statements = statements)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], statements = statements.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectableDef]
   }
 }

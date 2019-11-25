@@ -36,11 +36,11 @@ object ShowPanelOptions {
     stable: js.UndefOr[Boolean] = js.undefined
   ): ShowPanelOptions = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after)
-    if (before != null) __obj.updateDynamic("before")(before)
+    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
+    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (replace != null) __obj.updateDynamic("replace")(replace)
-    if (!js.isUndefined(stable)) __obj.updateDynamic("stable")(stable)
+    if (replace != null) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
+    if (!js.isUndefined(stable)) __obj.updateDynamic("stable")(stable.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowPanelOptions]
   }
 }

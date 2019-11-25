@@ -30,9 +30,9 @@ object configRequestProxyRules {
     proxyUrl: String = null,
     urlPrefix: String = null
   ): configRequestProxyRules = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (proxyUrl != null) __obj.updateDynamic("proxyUrl")(proxyUrl)
-    if (urlPrefix != null) __obj.updateDynamic("urlPrefix")(urlPrefix)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (proxyUrl != null) __obj.updateDynamic("proxyUrl")(proxyUrl.asInstanceOf[js.Any])
+    if (urlPrefix != null) __obj.updateDynamic("urlPrefix")(urlPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[configRequestProxyRules]
   }
 }

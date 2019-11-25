@@ -13,7 +13,7 @@ object Viewport {
   @scala.inline
   def apply(center: js.Tuple2[Double, Double] = null, zoom: Int | Double = null): Viewport = {
     val __obj = js.Dynamic.literal()
-    if (center != null) __obj.updateDynamic("center")(center)
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[Viewport]
   }

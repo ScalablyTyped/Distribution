@@ -15,9 +15,9 @@ object Anon_Brandname {
   @scala.inline
   def apply(brand_name: String = null, display_phone: Phone = null, email: String = null): Anon_Brandname = {
     val __obj = js.Dynamic.literal()
-    if (brand_name != null) __obj.updateDynamic("brand_name")(brand_name)
-    if (display_phone != null) __obj.updateDynamic("display_phone")(display_phone)
-    if (email != null) __obj.updateDynamic("email")(email)
+    if (brand_name != null) __obj.updateDynamic("brand_name")(brand_name.asInstanceOf[js.Any])
+    if (display_phone != null) __obj.updateDynamic("display_phone")(display_phone.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Brandname]
   }
 }

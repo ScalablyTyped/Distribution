@@ -30,10 +30,10 @@ object UIPasteOptions {
     targetElement: HTMLElement = null
   ): UIPasteOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultName != null) __obj.updateDynamic("defaultName")(defaultName)
-    if (namePromptMessage != null) __obj.updateDynamic("namePromptMessage")(namePromptMessage)
-    if (!js.isUndefined(promptForName)) __obj.updateDynamic("promptForName")(promptForName)
-    if (targetElement != null) __obj.updateDynamic("targetElement")(targetElement)
+    if (defaultName != null) __obj.updateDynamic("defaultName")(defaultName.asInstanceOf[js.Any])
+    if (namePromptMessage != null) __obj.updateDynamic("namePromptMessage")(namePromptMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(promptForName)) __obj.updateDynamic("promptForName")(promptForName.asInstanceOf[js.Any])
+    if (targetElement != null) __obj.updateDynamic("targetElement")(targetElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIPasteOptions]
   }
 }

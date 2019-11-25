@@ -17,7 +17,7 @@ object Anon_FalseVerbose {
   @scala.inline
   def apply(verbose: `false` = null): Anon_FalseVerbose = {
     val __obj = js.Dynamic.literal()
-    if (verbose != null) __obj.updateDynamic("verbose")(verbose)
+    if (verbose != null) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FalseVerbose]
   }
 }

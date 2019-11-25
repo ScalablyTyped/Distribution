@@ -51,7 +51,7 @@ object _Impl {
     show: String,
     transition: String
   ): _Impl = {
-    val __obj = js.Dynamic.literal(active = active, dimmable = dimmable, dimmed = dimmed, disabled = disabled, hide = hide, pageDimmer = pageDimmer, show = show, transition = transition)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], dimmable = dimmable.asInstanceOf[js.Any], dimmed = dimmed.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], hide = hide.asInstanceOf[js.Any], pageDimmer = pageDimmer.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

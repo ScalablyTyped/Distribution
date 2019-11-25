@@ -13,8 +13,8 @@ object DataSourceRequestStartEvent {
   @scala.inline
   def apply(preventDefault: () => Unit, sender: DataSource = null, `type`: String = null): DataSourceRequestStartEvent = {
     val __obj = js.Dynamic.literal(preventDefault = js.Any.fromFunction0(preventDefault))
-    if (sender != null) __obj.updateDynamic("sender")(sender)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceRequestStartEvent]
   }
 }

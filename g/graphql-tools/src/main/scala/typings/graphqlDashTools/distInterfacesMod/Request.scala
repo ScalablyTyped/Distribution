@@ -15,8 +15,8 @@ trait Request extends js.Object {
 object Request {
   @scala.inline
   def apply(document: DocumentNode, variables: Record[String, _], extensions: Record[String, _] = null): Request = {
-    val __obj = js.Dynamic.literal(document = document, variables = variables)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request]
   }
 }

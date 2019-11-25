@@ -71,17 +71,17 @@ object Model {
     width: Int | Double = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (append != null) __obj.updateDynamic("append")(append)
+    if (append != null) __obj.updateDynamic("append")(append.asInstanceOf[js.Any])
     if (beforeStart != null) __obj.updateDynamic("beforeStart")(js.Any.fromFunction1(beforeStart))
-    if (docType != null) __obj.updateDynamic("docType")(docType)
-    if (excludeSelector != null) __obj.updateDynamic("excludeSelector")(excludeSelector)
-    if (externalStyles != null) __obj.updateDynamic("externalStyles")(externalStyles)
-    if (!js.isUndefined(globalStyles)) __obj.updateDynamic("globalStyles")(globalStyles)
+    if (docType != null) __obj.updateDynamic("docType")(docType.asInstanceOf[js.Any])
+    if (excludeSelector != null) __obj.updateDynamic("excludeSelector")(excludeSelector.asInstanceOf[js.Any])
+    if (externalStyles != null) __obj.updateDynamic("externalStyles")(externalStyles.asInstanceOf[js.Any])
+    if (!js.isUndefined(globalStyles)) __obj.updateDynamic("globalStyles")(globalStyles.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (prepend != null) __obj.updateDynamic("prepend")(prepend)
-    if (!js.isUndefined(printInNewWindow)) __obj.updateDynamic("printInNewWindow")(printInNewWindow)
+    if (prepend != null) __obj.updateDynamic("prepend")(prepend.asInstanceOf[js.Any])
+    if (!js.isUndefined(printInNewWindow)) __obj.updateDynamic("printInNewWindow")(printInNewWindow.asInstanceOf[js.Any])
     if (timeOutPeriod != null) __obj.updateDynamic("timeOutPeriod")(timeOutPeriod.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }

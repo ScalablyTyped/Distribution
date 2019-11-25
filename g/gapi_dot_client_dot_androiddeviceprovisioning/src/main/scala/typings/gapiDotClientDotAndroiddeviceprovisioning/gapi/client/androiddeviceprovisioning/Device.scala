@@ -33,12 +33,12 @@ object Device {
     name: String = null
   ): Device = {
     val __obj = js.Dynamic.literal()
-    if (claims != null) __obj.updateDynamic("claims")(claims)
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration)
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
-    if (deviceIdentifier != null) __obj.updateDynamic("deviceIdentifier")(deviceIdentifier)
-    if (deviceMetadata != null) __obj.updateDynamic("deviceMetadata")(deviceMetadata)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (claims != null) __obj.updateDynamic("claims")(claims.asInstanceOf[js.Any])
+    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
+    if (deviceIdentifier != null) __obj.updateDynamic("deviceIdentifier")(deviceIdentifier.asInstanceOf[js.Any])
+    if (deviceMetadata != null) __obj.updateDynamic("deviceMetadata")(deviceMetadata.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Device]
   }
 }

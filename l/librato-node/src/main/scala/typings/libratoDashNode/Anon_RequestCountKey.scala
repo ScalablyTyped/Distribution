@@ -14,9 +14,9 @@ object Anon_RequestCountKey {
   @scala.inline
   def apply(requestCountKey: String = null, responseTimeKey: String = null, statusCodeKey: String = null): Anon_RequestCountKey = {
     val __obj = js.Dynamic.literal()
-    if (requestCountKey != null) __obj.updateDynamic("requestCountKey")(requestCountKey)
-    if (responseTimeKey != null) __obj.updateDynamic("responseTimeKey")(responseTimeKey)
-    if (statusCodeKey != null) __obj.updateDynamic("statusCodeKey")(statusCodeKey)
+    if (requestCountKey != null) __obj.updateDynamic("requestCountKey")(requestCountKey.asInstanceOf[js.Any])
+    if (responseTimeKey != null) __obj.updateDynamic("responseTimeKey")(responseTimeKey.asInstanceOf[js.Any])
+    if (statusCodeKey != null) __obj.updateDynamic("statusCodeKey")(statusCodeKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_RequestCountKey]
   }
 }

@@ -14,9 +14,9 @@ trait Fixture extends js.Object {
 object Fixture {
   @scala.inline
   def apply(label: String, className: String = null, location: LatLng = null): Fixture = {
-    val __obj = js.Dynamic.literal(label = label)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fixture]
   }
 }

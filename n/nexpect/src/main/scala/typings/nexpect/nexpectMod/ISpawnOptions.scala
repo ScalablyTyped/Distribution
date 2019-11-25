@@ -24,12 +24,12 @@ object ISpawnOptions {
     verbose: js.Any = null
   ): ISpawnOptions = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (env != null) __obj.updateDynamic("env")(env)
-    if (ignoreCase != null) __obj.updateDynamic("ignoreCase")(ignoreCase)
-    if (stream != null) __obj.updateDynamic("stream")(stream)
-    if (stripColors != null) __obj.updateDynamic("stripColors")(stripColors)
-    if (verbose != null) __obj.updateDynamic("verbose")(verbose)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (ignoreCase != null) __obj.updateDynamic("ignoreCase")(ignoreCase.asInstanceOf[js.Any])
+    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
+    if (stripColors != null) __obj.updateDynamic("stripColors")(stripColors.asInstanceOf[js.Any])
+    if (verbose != null) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpawnOptions]
   }
 }

@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonBackward extends js.Object {
 object Anon_EnumValuesAnonBackward {
   @scala.inline
   def apply(enumValues: Anon_Backward): Anon_EnumValuesAnonBackward = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonBackward]
   }

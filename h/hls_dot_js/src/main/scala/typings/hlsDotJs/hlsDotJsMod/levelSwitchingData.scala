@@ -37,7 +37,7 @@ object levelSwitchingData {
     videoCodec: String,
     width: Double
   ): levelSwitchingData = {
-    val __obj = js.Dynamic.literal(attrs = attrs, audioCodec = audioCodec, bitrate = bitrate, fragmentError = fragmentError, height = height, level = level, loadError = loadError, name = name, unknownCodecs = unknownCodecs, url = url, urlId = urlId, videoCodec = videoCodec, width = width)
+    val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], audioCodec = audioCodec.asInstanceOf[js.Any], bitrate = bitrate.asInstanceOf[js.Any], fragmentError = fragmentError.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], loadError = loadError.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], unknownCodecs = unknownCodecs.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], urlId = urlId.asInstanceOf[js.Any], videoCodec = videoCodec.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[levelSwitchingData]
   }

@@ -85,7 +85,7 @@ object FileUploaderOptions {
     url: String,
     withCredentials: Boolean
   ): FileUploaderOptions = {
-    val __obj = js.Dynamic.literal(alias = alias, autoUpload = autoUpload, disableMultipart = disableMultipart, filters = filters, formData = formData, headers = headers, method = method, queue = queue, queueLimit = queueLimit, removeAfterUpload = removeAfterUpload, url = url, withCredentials = withCredentials)
+    val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], autoUpload = autoUpload.asInstanceOf[js.Any], disableMultipart = disableMultipart.asInstanceOf[js.Any], filters = filters.asInstanceOf[js.Any], formData = formData.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], queueLimit = queueLimit.asInstanceOf[js.Any], removeAfterUpload = removeAfterUpload.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], withCredentials = withCredentials.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FileUploaderOptions]
   }

@@ -14,7 +14,7 @@ trait Anon_Arrow extends js.Object {
 object Anon_Arrow {
   @scala.inline
   def apply(arrow: Anon_Left, popper: Offset, reference: Offset): Anon_Arrow = {
-    val __obj = js.Dynamic.literal(arrow = arrow, popper = popper, reference = reference)
+    val __obj = js.Dynamic.literal(arrow = arrow.asInstanceOf[js.Any], popper = popper.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Arrow]
   }

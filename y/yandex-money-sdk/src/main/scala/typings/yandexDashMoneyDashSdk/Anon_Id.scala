@@ -13,8 +13,8 @@ trait Anon_Id extends js.Object {
 object Anon_Id {
   @scala.inline
   def apply(id: String, pan_fragment: String, `type`: String): Anon_Id = {
-    val __obj = js.Dynamic.literal(id = id, pan_fragment = pan_fragment)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], pan_fragment = pan_fragment.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Id]
   }
 }

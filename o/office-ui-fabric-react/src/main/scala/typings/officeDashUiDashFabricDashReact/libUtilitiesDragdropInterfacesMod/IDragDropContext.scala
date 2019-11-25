@@ -22,8 +22,8 @@ trait IDragDropContext extends js.Object {
 object IDragDropContext {
   @scala.inline
   def apply(data: js.Any, index: Double, isGroup: js.UndefOr[Boolean] = js.undefined): IDragDropContext = {
-    val __obj = js.Dynamic.literal(data = data, index = index)
-    if (!js.isUndefined(isGroup)) __obj.updateDynamic("isGroup")(isGroup)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
+    if (!js.isUndefined(isGroup)) __obj.updateDynamic("isGroup")(isGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDragDropContext]
   }
 }

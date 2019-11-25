@@ -11,7 +11,7 @@ trait ListAllGroupsResponse extends js.Object {
 object ListAllGroupsResponse {
   @scala.inline
   def apply(groups: js.Array[String]): ListAllGroupsResponse = {
-    val __obj = js.Dynamic.literal(groups = groups)
+    val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListAllGroupsResponse]
   }

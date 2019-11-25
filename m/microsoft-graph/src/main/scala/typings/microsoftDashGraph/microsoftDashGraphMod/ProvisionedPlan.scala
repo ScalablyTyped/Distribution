@@ -17,9 +17,9 @@ object ProvisionedPlan {
   @scala.inline
   def apply(capabilityStatus: String = null, provisioningStatus: String = null, service: String = null): ProvisionedPlan = {
     val __obj = js.Dynamic.literal()
-    if (capabilityStatus != null) __obj.updateDynamic("capabilityStatus")(capabilityStatus)
-    if (provisioningStatus != null) __obj.updateDynamic("provisioningStatus")(provisioningStatus)
-    if (service != null) __obj.updateDynamic("service")(service)
+    if (capabilityStatus != null) __obj.updateDynamic("capabilityStatus")(capabilityStatus.asInstanceOf[js.Any])
+    if (provisioningStatus != null) __obj.updateDynamic("provisioningStatus")(provisioningStatus.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisionedPlan]
   }
 }

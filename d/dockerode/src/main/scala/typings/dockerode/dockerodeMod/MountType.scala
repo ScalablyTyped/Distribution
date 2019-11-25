@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait MountType extends js.Object
 
+object MountType {
+  @scala.inline
+  def bind: typings.dockerode.dockerodeStrings.bind = this.cast("bind")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def tmpfs: typings.dockerode.dockerodeStrings.tmpfs = this.cast("tmpfs")
+  @scala.inline
+  def volume: typings.dockerode.dockerodeStrings.volume = this.cast("volume")
+}
+

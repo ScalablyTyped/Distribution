@@ -13,8 +13,8 @@ object PromptOptions {
   @scala.inline
   def apply(messages: PromptMessages = null, name: String = null): PromptOptions = {
     val __obj = js.Dynamic.literal()
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromptOptions]
   }
 }

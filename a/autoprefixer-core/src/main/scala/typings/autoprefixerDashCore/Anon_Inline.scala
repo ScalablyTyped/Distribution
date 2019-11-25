@@ -13,7 +13,7 @@ object Anon_Inline {
   @scala.inline
   def apply(`inline`: js.UndefOr[Boolean] = js.undefined, prev: String | js.Object = null): Anon_Inline = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     if (prev != null) __obj.updateDynamic("prev")(prev.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Inline]
   }

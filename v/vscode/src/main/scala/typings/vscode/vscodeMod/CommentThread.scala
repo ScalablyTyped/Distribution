@@ -65,9 +65,9 @@ object CommentThread {
     contextValue: String = null,
     label: String = null
   ): CommentThread = {
-    val __obj = js.Dynamic.literal(collapsibleState = collapsibleState, comments = comments, dispose = js.Any.fromFunction0(dispose), range = range, uri = uri)
-    if (contextValue != null) __obj.updateDynamic("contextValue")(contextValue)
-    if (label != null) __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(collapsibleState = collapsibleState.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), range = range.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    if (contextValue != null) __obj.updateDynamic("contextValue")(contextValue.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentThread]
   }
 }

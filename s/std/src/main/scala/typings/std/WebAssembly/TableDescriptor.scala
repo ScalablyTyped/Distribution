@@ -13,7 +13,7 @@ trait TableDescriptor extends js.Object {
 object TableDescriptor {
   @scala.inline
   def apply(element: TableKind, initial: Double, maximum: Int | Double = null): TableDescriptor = {
-    val __obj = js.Dynamic.literal(element = element, initial = initial)
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any])
     if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableDescriptor]
   }

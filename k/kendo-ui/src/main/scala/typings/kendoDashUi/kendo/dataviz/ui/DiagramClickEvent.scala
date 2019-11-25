@@ -21,10 +21,10 @@ object DiagramClickEvent {
     meta: js.Any = null,
     point: Point = null
   ): DiagramClickEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (item != null) __obj.updateDynamic("item")(item)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (point != null) __obj.updateDynamic("point")(point)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramClickEvent]
   }
 }

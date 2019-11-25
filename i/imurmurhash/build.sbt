@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "imurmurhash"
-version := "0.1-dt-20190619Z-850712"
+version := "0.1-dt-20190619Z-a9257b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

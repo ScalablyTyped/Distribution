@@ -12,9 +12,9 @@ trait GraphNode extends GraphEntity {
 object GraphNode {
   @scala.inline
   def apply(id: String, name: String = null, `val`: js.Any = null): GraphNode = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (`val` != null) __obj.updateDynamic("val")(`val`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (`val` != null) __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphNode]
   }
 }

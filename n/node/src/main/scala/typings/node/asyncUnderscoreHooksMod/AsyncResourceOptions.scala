@@ -24,7 +24,7 @@ object AsyncResourceOptions {
   @scala.inline
   def apply(requireManualDestroy: js.UndefOr[Boolean] = js.undefined, triggerAsyncId: Int | Double = null): AsyncResourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(requireManualDestroy)) __obj.updateDynamic("requireManualDestroy")(requireManualDestroy)
+    if (!js.isUndefined(requireManualDestroy)) __obj.updateDynamic("requireManualDestroy")(requireManualDestroy.asInstanceOf[js.Any])
     if (triggerAsyncId != null) __obj.updateDynamic("triggerAsyncId")(triggerAsyncId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncResourceOptions]
   }

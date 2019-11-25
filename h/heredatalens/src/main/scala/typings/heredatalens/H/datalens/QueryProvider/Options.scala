@@ -18,8 +18,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(queryId: String, queryParams: js.Any = null): Options = {
-    val __obj = js.Dynamic.literal(queryId = queryId)
-    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams)
+    val __obj = js.Dynamic.literal(queryId = queryId.asInstanceOf[js.Any])
+    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

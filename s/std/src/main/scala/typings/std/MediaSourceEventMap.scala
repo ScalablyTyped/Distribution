@@ -13,7 +13,7 @@ trait MediaSourceEventMap extends js.Object {
 object MediaSourceEventMap {
   @scala.inline
   def apply(sourceclose: Event, sourceended: Event, sourceopen: Event): MediaSourceEventMap = {
-    val __obj = js.Dynamic.literal(sourceclose = sourceclose, sourceended = sourceended, sourceopen = sourceopen)
+    val __obj = js.Dynamic.literal(sourceclose = sourceclose.asInstanceOf[js.Any], sourceended = sourceended.asInstanceOf[js.Any], sourceopen = sourceopen.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaSourceEventMap]
   }

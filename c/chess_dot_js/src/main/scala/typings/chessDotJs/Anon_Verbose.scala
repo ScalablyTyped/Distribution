@@ -16,7 +16,7 @@ object Anon_Verbose {
   @scala.inline
   def apply(verbose: js.UndefOr[Boolean] = js.undefined): Anon_Verbose = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Verbose]
   }
 }

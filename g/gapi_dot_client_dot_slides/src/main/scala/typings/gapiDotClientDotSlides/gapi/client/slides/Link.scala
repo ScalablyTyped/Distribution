@@ -33,10 +33,10 @@ object Link {
     url: String = null
   ): Link = {
     val __obj = js.Dynamic.literal()
-    if (pageObjectId != null) __obj.updateDynamic("pageObjectId")(pageObjectId)
-    if (relativeLink != null) __obj.updateDynamic("relativeLink")(relativeLink)
+    if (pageObjectId != null) __obj.updateDynamic("pageObjectId")(pageObjectId.asInstanceOf[js.Any])
+    if (relativeLink != null) __obj.updateDynamic("relativeLink")(relativeLink.asInstanceOf[js.Any])
     if (slideIndex != null) __obj.updateDynamic("slideIndex")(slideIndex.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Link]
   }
 }

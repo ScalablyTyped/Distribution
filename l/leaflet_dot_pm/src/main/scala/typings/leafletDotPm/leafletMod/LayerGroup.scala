@@ -11,7 +11,7 @@ trait LayerGroup extends js.Object {
 object LayerGroup {
   @scala.inline
   def apply(pm: typings.leafletDotPm.leafletMod.PM.Edit.LayerGroup): LayerGroup = {
-    val __obj = js.Dynamic.literal(pm = pm)
+    val __obj = js.Dynamic.literal(pm = pm.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LayerGroup]
   }

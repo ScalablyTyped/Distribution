@@ -24,7 +24,7 @@ object PrivateKeyInput {
     `type`: pkcs1 | pkcs8 | sec1 = null
   ): PrivateKeyInput = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrivateKeyInput]

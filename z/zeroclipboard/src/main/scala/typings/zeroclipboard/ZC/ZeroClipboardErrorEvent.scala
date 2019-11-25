@@ -41,18 +41,18 @@ object ZeroClipboardErrorEvent {
     swfVersion: String = null,
     version: String = null
   ): ZeroClipboardErrorEvent = {
-    val __obj = js.Dynamic.literal(currentTarget = currentTarget, message = message, name = name, relatedTarget = relatedTarget, target = target, timeStamp = timeStamp)
-    __obj.updateDynamic("type")(`type`)
-    if (actualValue != null) __obj.updateDynamic("actualValue")(actualValue)
-    if (client != null) __obj.updateDynamic("client")(client)
-    if (configuredValue != null) __obj.updateDynamic("configuredValue")(configuredValue)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (jsVersion != null) __obj.updateDynamic("jsVersion")(jsVersion)
-    if (minimumVersion != null) __obj.updateDynamic("minimumVersion")(minimumVersion)
-    if (property != null) __obj.updateDynamic("property")(property)
-    if (swfVersion != null) __obj.updateDynamic("swfVersion")(swfVersion)
-    if (version != null) __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(currentTarget = currentTarget.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], relatedTarget = relatedTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (actualValue != null) __obj.updateDynamic("actualValue")(actualValue.asInstanceOf[js.Any])
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
+    if (configuredValue != null) __obj.updateDynamic("configuredValue")(configuredValue.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (jsVersion != null) __obj.updateDynamic("jsVersion")(jsVersion.asInstanceOf[js.Any])
+    if (minimumVersion != null) __obj.updateDynamic("minimumVersion")(minimumVersion.asInstanceOf[js.Any])
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
+    if (swfVersion != null) __obj.updateDynamic("swfVersion")(swfVersion.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZeroClipboardErrorEvent]
   }
 }

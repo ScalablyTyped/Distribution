@@ -14,8 +14,8 @@ object Context {
   @scala.inline
   def apply(facets: js.Array[js.Array[Anon_Anchor]] = null, title: String = null): Context = {
     val __obj = js.Dynamic.literal()
-    if (facets != null) __obj.updateDynamic("facets")(facets)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (facets != null) __obj.updateDynamic("facets")(facets.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context]
   }
 }

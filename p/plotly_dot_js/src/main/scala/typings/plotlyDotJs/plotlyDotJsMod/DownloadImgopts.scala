@@ -18,7 +18,7 @@ trait DownloadImgopts extends js.Object {
 object DownloadImgopts {
   @scala.inline
   def apply(filename: String, format: jpeg | png | webp | svg, height: Double, width: Double): DownloadImgopts = {
-    val __obj = js.Dynamic.literal(filename = filename, format = format.asInstanceOf[js.Any], height = height, width = width)
+    val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DownloadImgopts]
   }

@@ -126,16 +126,16 @@ object IPlan {
     transform_usage: ITransformUsage = null,
     trial_period_days: Int | Double = null
   ): IPlan = {
-    val __obj = js.Dynamic.literal(active = active, billing_scheme = billing_scheme.asInstanceOf[js.Any], created = created, currency = currency, id = id, interval = interval, interval_count = interval_count, livemode = livemode, metadata = metadata, usage_type = usage_type.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], billing_scheme = billing_scheme.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], interval_count = interval_count.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], usage_type = usage_type.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     if (aggregate_usage != null) __obj.updateDynamic("aggregate_usage")(aggregate_usage.asInstanceOf[js.Any])
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (amount_decimal != null) __obj.updateDynamic("amount_decimal")(amount_decimal)
-    if (nickname != null) __obj.updateDynamic("nickname")(nickname)
+    if (amount_decimal != null) __obj.updateDynamic("amount_decimal")(amount_decimal.asInstanceOf[js.Any])
+    if (nickname != null) __obj.updateDynamic("nickname")(nickname.asInstanceOf[js.Any])
     if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
-    if (tiers != null) __obj.updateDynamic("tiers")(tiers)
+    if (tiers != null) __obj.updateDynamic("tiers")(tiers.asInstanceOf[js.Any])
     if (tiers_mode != null) __obj.updateDynamic("tiers_mode")(tiers_mode.asInstanceOf[js.Any])
-    if (transform_usage != null) __obj.updateDynamic("transform_usage")(transform_usage)
+    if (transform_usage != null) __obj.updateDynamic("transform_usage")(transform_usage.asInstanceOf[js.Any])
     if (trial_period_days != null) __obj.updateDynamic("trial_period_days")(trial_period_days.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPlan]
   }

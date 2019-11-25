@@ -22,11 +22,11 @@ object PathToConversionReportCompatibleFields {
     perInteractionDimensions: js.Array[Dimension] = null
   ): PathToConversionReportCompatibleFields = {
     val __obj = js.Dynamic.literal()
-    if (conversionDimensions != null) __obj.updateDynamic("conversionDimensions")(conversionDimensions)
-    if (customFloodlightVariables != null) __obj.updateDynamic("customFloodlightVariables")(customFloodlightVariables)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
-    if (perInteractionDimensions != null) __obj.updateDynamic("perInteractionDimensions")(perInteractionDimensions)
+    if (conversionDimensions != null) __obj.updateDynamic("conversionDimensions")(conversionDimensions.asInstanceOf[js.Any])
+    if (customFloodlightVariables != null) __obj.updateDynamic("customFloodlightVariables")(customFloodlightVariables.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
+    if (perInteractionDimensions != null) __obj.updateDynamic("perInteractionDimensions")(perInteractionDimensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathToConversionReportCompatibleFields]
   }
 }

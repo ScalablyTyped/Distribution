@@ -42,16 +42,16 @@ object GoogleCloudMlV1__Job {
     trainingOutput: GoogleCloudMlV1__TrainingOutput = null
   ): GoogleCloudMlV1__Job = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId)
-    if (predictionInput != null) __obj.updateDynamic("predictionInput")(predictionInput)
-    if (predictionOutput != null) __obj.updateDynamic("predictionOutput")(predictionOutput)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (trainingInput != null) __obj.updateDynamic("trainingInput")(trainingInput)
-    if (trainingOutput != null) __obj.updateDynamic("trainingOutput")(trainingOutput)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
+    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
+    if (predictionInput != null) __obj.updateDynamic("predictionInput")(predictionInput.asInstanceOf[js.Any])
+    if (predictionOutput != null) __obj.updateDynamic("predictionOutput")(predictionOutput.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (trainingInput != null) __obj.updateDynamic("trainingInput")(trainingInput.asInstanceOf[js.Any])
+    if (trainingOutput != null) __obj.updateDynamic("trainingOutput")(trainingOutput.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudMlV1__Job]
   }
 }

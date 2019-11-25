@@ -14,8 +14,6 @@ import typings.atIonicCore.atIonicCoreStrings.round
 import typings.atIonicCore.atIonicCoreStrings.small
 import typings.atIonicCore.atIonicCoreStrings.solid
 import typings.atIonicCore.atIonicCoreStrings.submit
-import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouterDirection
-import typings.atIonicCore.distTypesInterfaceMod.Color
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +27,9 @@ trait IonButton extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.undefined
+  var color: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
+  ] = js.undefined
   /**
     * If `true`, the user cannot interact with the button.
     */
@@ -69,7 +69,9 @@ trait IonButton extends js.Object {
   /**
     * When using a router, it specifies the transition direction when navigating to another page using `href`.
     */
-  var routerDirection: js.UndefOr[RouterDirection] = js.undefined
+  var routerDirection: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any
+  ] = js.undefined
   /**
     * The button shape.
     */
@@ -96,7 +98,7 @@ object IonButton {
   @scala.inline
   def apply(
     buttonType: String = null,
-    color: Color = null,
+    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     download: String = null,
     expand: full | block = null,
@@ -106,7 +108,7 @@ object IonButton {
     onIonBlur: /* event */ CustomEvent[Unit] => Unit = null,
     onIonFocus: /* event */ CustomEvent[Unit] => Unit = null,
     rel: String = null,
-    routerDirection: RouterDirection = null,
+    routerDirection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any = null,
     shape: round = null,
     size: small | default | large = null,
     strong: js.UndefOr[Boolean] = js.undefined,
@@ -114,22 +116,22 @@ object IonButton {
     `type`: submit | reset | button = null
   ): IonButton = {
     val __obj = js.Dynamic.literal()
-    if (buttonType != null) __obj.updateDynamic("buttonType")(buttonType)
+    if (buttonType != null) __obj.updateDynamic("buttonType")(buttonType.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (download != null) __obj.updateDynamic("download")(download)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href)
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onIonBlur != null) __obj.updateDynamic("onIonBlur")(js.Any.fromFunction1(onIonBlur))
     if (onIonFocus != null) __obj.updateDynamic("onIonFocus")(js.Any.fromFunction1(onIonFocus))
-    if (rel != null) __obj.updateDynamic("rel")(rel)
-    if (routerDirection != null) __obj.updateDynamic("routerDirection")(routerDirection)
-    if (shape != null) __obj.updateDynamic("shape")(shape)
+    if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
+    if (routerDirection != null) __obj.updateDynamic("routerDirection")(routerDirection.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(strong)) __obj.updateDynamic("strong")(strong)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (!js.isUndefined(strong)) __obj.updateDynamic("strong")(strong.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonButton]
   }

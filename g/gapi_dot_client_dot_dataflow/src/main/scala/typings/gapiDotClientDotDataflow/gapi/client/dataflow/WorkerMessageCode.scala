@@ -48,8 +48,8 @@ object WorkerMessageCode {
   @scala.inline
   def apply(code: String = null, parameters: Record[String, _] = null): WorkerMessageCode = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkerMessageCode]
   }
 }

@@ -31,7 +31,7 @@ object ListobjectDef {
     qShowAlternatives: Boolean,
     qStateName: String
   ): ListobjectDef = {
-    val __obj = js.Dynamic.literal(qAutoSortByState = qAutoSortByState, qDef = qDef, qExpressions = qExpressions, qFrequencyMode = qFrequencyMode.asInstanceOf[js.Any], qInitialDataFetch = qInitialDataFetch, qLibraryId = qLibraryId, qShowAlternatives = qShowAlternatives, qStateName = qStateName)
+    val __obj = js.Dynamic.literal(qAutoSortByState = qAutoSortByState.asInstanceOf[js.Any], qDef = qDef.asInstanceOf[js.Any], qExpressions = qExpressions.asInstanceOf[js.Any], qFrequencyMode = qFrequencyMode.asInstanceOf[js.Any], qInitialDataFetch = qInitialDataFetch.asInstanceOf[js.Any], qLibraryId = qLibraryId.asInstanceOf[js.Any], qShowAlternatives = qShowAlternatives.asInstanceOf[js.Any], qStateName = qStateName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListobjectDef]
   }

@@ -13,7 +13,7 @@ trait Anon_Column extends js.Object {
 object Anon_Column {
   @scala.inline
   def apply(column: String, direction: SortDirection): Anon_Column = {
-    val __obj = js.Dynamic.literal(column = column, direction = direction)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Column]
   }

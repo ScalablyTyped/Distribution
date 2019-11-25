@@ -80,12 +80,12 @@ object IEngineDefinition {
   ): IEngineDefinition = {
     val __obj = js.Dynamic.literal()
     if (constraintIterations != null) __obj.updateDynamic("constraintIterations")(constraintIterations.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSleeping)) __obj.updateDynamic("enableSleeping")(enableSleeping)
-    if (grid != null) __obj.updateDynamic("grid")(grid)
+    if (!js.isUndefined(enableSleeping)) __obj.updateDynamic("enableSleeping")(enableSleeping.asInstanceOf[js.Any])
+    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
     if (positionIterations != null) __obj.updateDynamic("positionIterations")(positionIterations.asInstanceOf[js.Any])
-    if (timing != null) __obj.updateDynamic("timing")(timing)
+    if (timing != null) __obj.updateDynamic("timing")(timing.asInstanceOf[js.Any])
     if (velocityIterations != null) __obj.updateDynamic("velocityIterations")(velocityIterations.asInstanceOf[js.Any])
-    if (world != null) __obj.updateDynamic("world")(world)
+    if (world != null) __obj.updateDynamic("world")(world.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEngineDefinition]
   }
 }

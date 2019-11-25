@@ -27,9 +27,9 @@ object GoogleActionsV2PermissionValueSpec {
     updatePermissionValueSpec: GoogleActionsV2UpdatePermissionValueSpec = null
   ): GoogleActionsV2PermissionValueSpec = {
     val __obj = js.Dynamic.literal()
-    if (optContext != null) __obj.updateDynamic("optContext")(optContext)
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
-    if (updatePermissionValueSpec != null) __obj.updateDynamic("updatePermissionValueSpec")(updatePermissionValueSpec)
+    if (optContext != null) __obj.updateDynamic("optContext")(optContext.asInstanceOf[js.Any])
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
+    if (updatePermissionValueSpec != null) __obj.updateDynamic("updatePermissionValueSpec")(updatePermissionValueSpec.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2PermissionValueSpec]
   }
 }

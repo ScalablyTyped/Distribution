@@ -21,9 +21,9 @@ object LocatorProperties {
     url: String = null
   ): LocatorProperties = {
     val __obj = js.Dynamic.literal()
-    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference)
-    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference.asInstanceOf[js.Any])
+    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocatorProperties]
   }
 }

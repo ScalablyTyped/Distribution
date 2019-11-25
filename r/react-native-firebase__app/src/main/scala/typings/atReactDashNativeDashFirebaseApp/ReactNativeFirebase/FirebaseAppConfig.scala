@@ -28,9 +28,9 @@ object FirebaseAppConfig {
     name: String = null
   ): FirebaseAppConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(automaticDataCollectionEnabled)) __obj.updateDynamic("automaticDataCollectionEnabled")(automaticDataCollectionEnabled)
-    if (!js.isUndefined(automaticResourceManagement)) __obj.updateDynamic("automaticResourceManagement")(automaticResourceManagement)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(automaticDataCollectionEnabled)) __obj.updateDynamic("automaticDataCollectionEnabled")(automaticDataCollectionEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(automaticResourceManagement)) __obj.updateDynamic("automaticResourceManagement")(automaticResourceManagement.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirebaseAppConfig]
   }
 }

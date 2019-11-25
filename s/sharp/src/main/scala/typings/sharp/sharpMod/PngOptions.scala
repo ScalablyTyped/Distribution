@@ -39,14 +39,14 @@ object PngOptions {
     quality: Int | Double = null
   ): PngOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adaptiveFiltering)) __obj.updateDynamic("adaptiveFiltering")(adaptiveFiltering)
+    if (!js.isUndefined(adaptiveFiltering)) __obj.updateDynamic("adaptiveFiltering")(adaptiveFiltering.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (colours != null) __obj.updateDynamic("colours")(colours.asInstanceOf[js.Any])
     if (compressionLevel != null) __obj.updateDynamic("compressionLevel")(compressionLevel.asInstanceOf[js.Any])
     if (dither != null) __obj.updateDynamic("dither")(dither.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (!js.isUndefined(palette)) __obj.updateDynamic("palette")(palette)
-    if (!js.isUndefined(progressive)) __obj.updateDynamic("progressive")(progressive)
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(palette)) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressive)) __obj.updateDynamic("progressive")(progressive.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     __obj.asInstanceOf[PngOptions]
   }

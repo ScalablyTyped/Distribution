@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation._
 
 trait Anon_DomainHostname extends js.Object {
   var domain: ReturnType[
-    /* import warning: ImportType.apply Failed type conversion: typeof getDomain */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof getDomain */ js.Any
   ]
   var hostname: ReturnType[
-    /* import warning: ImportType.apply Failed type conversion: typeof extractHostname */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof extractHostname */ js.Any
   ]
   var isIp: Boolean
   var isValid: ReturnType[
-    /* import warning: ImportType.apply Failed type conversion: typeof isValid */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof isValid */ js.Any
   ]
   var publicSuffix: ReturnType[
-    /* import warning: ImportType.apply Failed type conversion: typeof getPublicSuffix */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof getPublicSuffix */ js.Any
   ]
   var subdomain: ReturnType[
-    /* import warning: ImportType.apply Failed type conversion: typeof getSubdomain */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof getSubdomain */ js.Any
   ]
   var tldExists: ReturnType[
-    /* import warning: ImportType.apply Failed type conversion: typeof tldExists */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: typeof tldExists */ js.Any
   ]
 }
 
@@ -31,26 +31,26 @@ object Anon_DomainHostname {
   @scala.inline
   def apply(
     domain: ReturnType[
-      /* import warning: ImportType.apply Failed type conversion: typeof getDomain */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof getDomain */ js.Any
     ],
     hostname: ReturnType[
-      /* import warning: ImportType.apply Failed type conversion: typeof extractHostname */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof extractHostname */ js.Any
     ],
     isIp: Boolean,
     isValid: ReturnType[
-      /* import warning: ImportType.apply Failed type conversion: typeof isValid */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof isValid */ js.Any
     ],
     publicSuffix: ReturnType[
-      /* import warning: ImportType.apply Failed type conversion: typeof getPublicSuffix */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof getPublicSuffix */ js.Any
     ],
     subdomain: ReturnType[
-      /* import warning: ImportType.apply Failed type conversion: typeof getSubdomain */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof getSubdomain */ js.Any
     ],
     tldExists: ReturnType[
-      /* import warning: ImportType.apply Failed type conversion: typeof tldExists */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof tldExists */ js.Any
     ]
   ): Anon_DomainHostname = {
-    val __obj = js.Dynamic.literal(domain = domain, hostname = hostname, isIp = isIp, isValid = isValid, publicSuffix = publicSuffix, subdomain = subdomain, tldExists = tldExists)
+    val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], isIp = isIp.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any], publicSuffix = publicSuffix.asInstanceOf[js.Any], subdomain = subdomain.asInstanceOf[js.Any], tldExists = tldExists.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DomainHostname]
   }

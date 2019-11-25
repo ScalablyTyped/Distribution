@@ -26,7 +26,7 @@ trait ChildWidgetProperties extends js.Object {
 object ChildWidgetProperties {
   @scala.inline
   def apply(layout: String, preventTouch: Boolean): ChildWidgetProperties = {
-    val __obj = js.Dynamic.literal(layout = layout, preventTouch = preventTouch)
+    val __obj = js.Dynamic.literal(layout = layout.asInstanceOf[js.Any], preventTouch = preventTouch.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChildWidgetProperties]
   }

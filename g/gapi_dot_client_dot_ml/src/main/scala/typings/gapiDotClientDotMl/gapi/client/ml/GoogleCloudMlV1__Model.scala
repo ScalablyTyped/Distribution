@@ -50,11 +50,11 @@ object GoogleCloudMlV1__Model {
     regions: js.Array[String] = null
   ): GoogleCloudMlV1__Model = {
     val __obj = js.Dynamic.literal()
-    if (defaultVersion != null) __obj.updateDynamic("defaultVersion")(defaultVersion)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(onlinePredictionLogging)) __obj.updateDynamic("onlinePredictionLogging")(onlinePredictionLogging)
-    if (regions != null) __obj.updateDynamic("regions")(regions)
+    if (defaultVersion != null) __obj.updateDynamic("defaultVersion")(defaultVersion.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlinePredictionLogging)) __obj.updateDynamic("onlinePredictionLogging")(onlinePredictionLogging.asInstanceOf[js.Any])
+    if (regions != null) __obj.updateDynamic("regions")(regions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudMlV1__Model]
   }
 }

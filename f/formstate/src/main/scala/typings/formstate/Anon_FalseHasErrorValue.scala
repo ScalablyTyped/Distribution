@@ -14,7 +14,7 @@ trait Anon_FalseHasErrorValue[TValue /* <: ValidatableArray */] extends js.Objec
 object Anon_FalseHasErrorValue {
   @scala.inline
   def apply[TValue /* <: ValidatableArray */](hasError: `false`, value: TValue): Anon_FalseHasErrorValue[TValue] = {
-    val __obj = js.Dynamic.literal(hasError = hasError, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hasError = hasError.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FalseHasErrorValue[TValue]]
   }

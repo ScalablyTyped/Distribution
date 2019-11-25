@@ -13,10 +13,10 @@ trait ISoapError extends Error {
 object ISoapError {
   @scala.inline
   def apply(message: String, name: String, body: js.Any = null, response: js.Any = null, stack: String = null): ISoapError = {
-    val __obj = js.Dynamic.literal(message = message, name = name)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (response != null) __obj.updateDynamic("response")(response)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISoapError]
   }
 }

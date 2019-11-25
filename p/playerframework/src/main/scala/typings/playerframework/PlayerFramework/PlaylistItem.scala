@@ -12,8 +12,8 @@ trait PlaylistItem extends js.Object {
 object PlaylistItem {
   @scala.inline
   def apply(src: String, tracks: js.Array[_] = null): PlaylistItem = {
-    val __obj = js.Dynamic.literal(src = src)
-    if (tracks != null) __obj.updateDynamic("tracks")(tracks)
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
+    if (tracks != null) __obj.updateDynamic("tracks")(tracks.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaylistItem]
   }
 }

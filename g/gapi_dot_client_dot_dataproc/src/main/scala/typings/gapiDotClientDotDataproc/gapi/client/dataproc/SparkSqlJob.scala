@@ -34,12 +34,12 @@ object SparkSqlJob {
     scriptVariables: Record[String, String] = null
   ): SparkSqlJob = {
     val __obj = js.Dynamic.literal()
-    if (jarFileUris != null) __obj.updateDynamic("jarFileUris")(jarFileUris)
-    if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (queryFileUri != null) __obj.updateDynamic("queryFileUri")(queryFileUri)
-    if (queryList != null) __obj.updateDynamic("queryList")(queryList)
-    if (scriptVariables != null) __obj.updateDynamic("scriptVariables")(scriptVariables)
+    if (jarFileUris != null) __obj.updateDynamic("jarFileUris")(jarFileUris.asInstanceOf[js.Any])
+    if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (queryFileUri != null) __obj.updateDynamic("queryFileUri")(queryFileUri.asInstanceOf[js.Any])
+    if (queryList != null) __obj.updateDynamic("queryList")(queryList.asInstanceOf[js.Any])
+    if (scriptVariables != null) __obj.updateDynamic("scriptVariables")(scriptVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparkSqlJob]
   }
 }

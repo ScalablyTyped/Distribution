@@ -53,14 +53,14 @@ object _EndpointDemographic {
     Timezone: String = null
   ): _EndpointDemographic = {
     val __obj = js.Dynamic.literal()
-    if (AppVersion != null) __obj.updateDynamic("AppVersion")(AppVersion)
-    if (Locale != null) __obj.updateDynamic("Locale")(Locale)
-    if (Make != null) __obj.updateDynamic("Make")(Make)
-    if (Model != null) __obj.updateDynamic("Model")(Model)
-    if (ModelVersion != null) __obj.updateDynamic("ModelVersion")(ModelVersion)
-    if (Platform != null) __obj.updateDynamic("Platform")(Platform)
-    if (PlatformVersion != null) __obj.updateDynamic("PlatformVersion")(PlatformVersion)
-    if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone)
+    if (AppVersion != null) __obj.updateDynamic("AppVersion")(AppVersion.asInstanceOf[js.Any])
+    if (Locale != null) __obj.updateDynamic("Locale")(Locale.asInstanceOf[js.Any])
+    if (Make != null) __obj.updateDynamic("Make")(Make.asInstanceOf[js.Any])
+    if (Model != null) __obj.updateDynamic("Model")(Model.asInstanceOf[js.Any])
+    if (ModelVersion != null) __obj.updateDynamic("ModelVersion")(ModelVersion.asInstanceOf[js.Any])
+    if (Platform != null) __obj.updateDynamic("Platform")(Platform.asInstanceOf[js.Any])
+    if (PlatformVersion != null) __obj.updateDynamic("PlatformVersion")(PlatformVersion.asInstanceOf[js.Any])
+    if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[_EndpointDemographic]
   }
 }

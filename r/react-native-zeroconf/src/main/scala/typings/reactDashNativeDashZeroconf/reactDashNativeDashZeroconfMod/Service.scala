@@ -24,7 +24,7 @@ object Service {
     port: Double,
     txt: StringDictionary[js.Any]
   ): Service = {
-    val __obj = js.Dynamic.literal(addresses = addresses, fullName = fullName, host = host, name = name, port = port, txt = txt)
+    val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], txt = txt.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Service]
   }

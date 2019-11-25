@@ -22,10 +22,10 @@ object ExecutableOptions {
     stdio: String | js.Array[String] = null
   ): ExecutableOptions = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached)
-    if (env != null) __obj.updateDynamic("env")(env)
-    if (!js.isUndefined(shell)) __obj.updateDynamic("shell")(shell)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (!js.isUndefined(shell)) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
     if (stdio != null) __obj.updateDynamic("stdio")(stdio.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutableOptions]
   }

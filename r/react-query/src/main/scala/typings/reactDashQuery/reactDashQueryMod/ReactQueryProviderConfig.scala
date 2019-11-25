@@ -27,12 +27,12 @@ object ReactQueryProviderConfig {
   ): ReactQueryProviderConfig = {
     val __obj = js.Dynamic.literal()
     if (cacheTime != null) __obj.updateDynamic("cacheTime")(cacheTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(refetchAllOnWindowFocus)) __obj.updateDynamic("refetchAllOnWindowFocus")(refetchAllOnWindowFocus)
-    if (!js.isUndefined(refetchInterval)) __obj.updateDynamic("refetchInterval")(refetchInterval)
+    if (!js.isUndefined(refetchAllOnWindowFocus)) __obj.updateDynamic("refetchAllOnWindowFocus")(refetchAllOnWindowFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(refetchInterval)) __obj.updateDynamic("refetchInterval")(refetchInterval.asInstanceOf[js.Any])
     if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
     if (retryDelay != null) __obj.updateDynamic("retryDelay")(js.Any.fromFunction1(retryDelay))
     if (staleTime != null) __obj.updateDynamic("staleTime")(staleTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(suspense)) __obj.updateDynamic("suspense")(suspense)
+    if (!js.isUndefined(suspense)) __obj.updateDynamic("suspense")(suspense.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactQueryProviderConfig]
   }
 }

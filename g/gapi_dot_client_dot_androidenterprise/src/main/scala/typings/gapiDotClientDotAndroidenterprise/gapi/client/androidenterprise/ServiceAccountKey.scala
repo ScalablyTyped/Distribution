@@ -33,11 +33,11 @@ object ServiceAccountKey {
     `type`: String = null
   ): ServiceAccountKey = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (publicData != null) __obj.updateDynamic("publicData")(publicData)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (publicData != null) __obj.updateDynamic("publicData")(publicData.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceAccountKey]
   }
 }

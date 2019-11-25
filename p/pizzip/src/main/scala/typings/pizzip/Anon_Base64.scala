@@ -29,7 +29,7 @@ trait Anon_Base64 extends js.Object {
 object Anon_Base64 {
   @scala.inline
   def apply(base64: Boolean, binary: Boolean, compression: Compression, date: Date, dir: Boolean): Anon_Base64 = {
-    val __obj = js.Dynamic.literal(base64 = base64, binary = binary, compression = compression, date = date, dir = dir)
+    val __obj = js.Dynamic.literal(base64 = base64.asInstanceOf[js.Any], binary = binary.asInstanceOf[js.Any], compression = compression.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Base64]
   }

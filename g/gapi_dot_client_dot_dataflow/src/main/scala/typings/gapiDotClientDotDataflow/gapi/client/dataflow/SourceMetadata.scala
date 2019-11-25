@@ -31,9 +31,9 @@ object SourceMetadata {
     producesSortedKeys: js.UndefOr[Boolean] = js.undefined
   ): SourceMetadata = {
     val __obj = js.Dynamic.literal()
-    if (estimatedSizeBytes != null) __obj.updateDynamic("estimatedSizeBytes")(estimatedSizeBytes)
-    if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite)
-    if (!js.isUndefined(producesSortedKeys)) __obj.updateDynamic("producesSortedKeys")(producesSortedKeys)
+    if (estimatedSizeBytes != null) __obj.updateDynamic("estimatedSizeBytes")(estimatedSizeBytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite.asInstanceOf[js.Any])
+    if (!js.isUndefined(producesSortedKeys)) __obj.updateDynamic("producesSortedKeys")(producesSortedKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceMetadata]
   }
 }

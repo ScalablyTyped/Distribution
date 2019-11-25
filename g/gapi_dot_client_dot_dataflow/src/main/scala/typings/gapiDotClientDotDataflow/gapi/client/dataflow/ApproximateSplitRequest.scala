@@ -19,7 +19,7 @@ object ApproximateSplitRequest {
   def apply(fractionConsumed: Int | Double = null, position: Position = null): ApproximateSplitRequest = {
     val __obj = js.Dynamic.literal()
     if (fractionConsumed != null) __obj.updateDynamic("fractionConsumed")(fractionConsumed.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApproximateSplitRequest]
   }
 }

@@ -15,9 +15,9 @@ object WorkbookChartSeriesFormat {
   @scala.inline
   def apply(fill: WorkbookChartFill = null, id: String = null, line: WorkbookChartLineFormat = null): WorkbookChartSeriesFormat = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (line != null) __obj.updateDynamic("line")(line)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookChartSeriesFormat]
   }
 }

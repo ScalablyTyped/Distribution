@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait ChangeType extends js.Object
 
+object ChangeType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def change: typings.fsDashTreeDashDiff.fsDashTreeDashDiffStrings.change = this.cast("change")
+  @scala.inline
+  def create: typings.fsDashTreeDashDiff.fsDashTreeDashDiffStrings.create = this.cast("create")
+  @scala.inline
+  def mkdir: typings.fsDashTreeDashDiff.fsDashTreeDashDiffStrings.mkdir = this.cast("mkdir")
+  @scala.inline
+  def rmdir: typings.fsDashTreeDashDiff.fsDashTreeDashDiffStrings.rmdir = this.cast("rmdir")
+  @scala.inline
+  def unlink: typings.fsDashTreeDashDiff.fsDashTreeDashDiffStrings.unlink = this.cast("unlink")
+}
+

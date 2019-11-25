@@ -27,7 +27,7 @@ object Anon_Change {
     shelveset: Double,
     tip: Double
   ): Anon_Change = {
-    val __obj = js.Dynamic.literal(change = change, changeset = changeset, date = date, latest = latest, mergeSource = mergeSource, none = none, shelveset = shelveset, tip = tip)
+    val __obj = js.Dynamic.literal(change = change.asInstanceOf[js.Any], changeset = changeset.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], latest = latest.asInstanceOf[js.Any], mergeSource = mergeSource.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], shelveset = shelveset.asInstanceOf[js.Any], tip = tip.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Change]
   }

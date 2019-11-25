@@ -13,7 +13,7 @@ object WithThemeStyles {
   @scala.inline
   def apply[T](styles: Partial[T] = null): WithThemeStyles[T] = {
     val __obj = js.Dynamic.literal()
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithThemeStyles[T]]
   }
 }

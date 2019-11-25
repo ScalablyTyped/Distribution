@@ -16,7 +16,7 @@ object Anon_Equals {
   def apply(equals: (_, _) => Boolean = null, fireImmediately: js.UndefOr[Boolean] = js.undefined): Anon_Equals = {
     val __obj = js.Dynamic.literal()
     if (equals != null) __obj.updateDynamic("equals")(js.Any.fromFunction2(equals))
-    if (!js.isUndefined(fireImmediately)) __obj.updateDynamic("fireImmediately")(fireImmediately)
+    if (!js.isUndefined(fireImmediately)) __obj.updateDynamic("fireImmediately")(fireImmediately.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Equals]
   }
 }

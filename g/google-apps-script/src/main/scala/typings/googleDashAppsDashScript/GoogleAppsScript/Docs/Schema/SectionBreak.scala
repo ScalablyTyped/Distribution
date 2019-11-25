@@ -18,9 +18,9 @@ object SectionBreak {
     suggestedInsertionIds: js.Array[String] = null
   ): SectionBreak = {
     val __obj = js.Dynamic.literal()
-    if (sectionStyle != null) __obj.updateDynamic("sectionStyle")(sectionStyle)
-    if (suggestedDeletionIds != null) __obj.updateDynamic("suggestedDeletionIds")(suggestedDeletionIds)
-    if (suggestedInsertionIds != null) __obj.updateDynamic("suggestedInsertionIds")(suggestedInsertionIds)
+    if (sectionStyle != null) __obj.updateDynamic("sectionStyle")(sectionStyle.asInstanceOf[js.Any])
+    if (suggestedDeletionIds != null) __obj.updateDynamic("suggestedDeletionIds")(suggestedDeletionIds.asInstanceOf[js.Any])
+    if (suggestedInsertionIds != null) __obj.updateDynamic("suggestedInsertionIds")(suggestedInsertionIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SectionBreak]
   }
 }

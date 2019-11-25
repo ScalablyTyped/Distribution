@@ -17,8 +17,8 @@ trait QueueOptions extends js.Object {
 object QueueOptions {
   @scala.inline
   def apply(name: String, hostId: String = null, prefix: bull | bq | String = null, `type`: bull | bee = null): QueueOptions = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (hostId != null) __obj.updateDynamic("hostId")(hostId)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (hostId != null) __obj.updateDynamic("hostId")(hostId.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueueOptions]

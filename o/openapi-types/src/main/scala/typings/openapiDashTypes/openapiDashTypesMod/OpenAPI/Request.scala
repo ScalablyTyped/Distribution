@@ -15,10 +15,10 @@ object Request {
   @scala.inline
   def apply(body: js.Any = null, headers: js.Object = null, params: js.Object = null, query: js.Object = null): Request = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request]
   }
 }

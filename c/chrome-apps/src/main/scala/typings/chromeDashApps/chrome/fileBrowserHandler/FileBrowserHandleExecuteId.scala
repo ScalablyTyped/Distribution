@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait FileBrowserHandleExecuteId extends js.Object
 
+object FileBrowserHandleExecuteId {
+  @scala.inline
+  def ReadOnly: typings.chromeDashApps.chromeDashAppsStrings.ReadOnly = this.cast("ReadOnly")
+  @scala.inline
+  def ReadWrite: typings.chromeDashApps.chromeDashAppsStrings.ReadWrite = this.cast("ReadWrite")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

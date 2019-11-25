@@ -30,15 +30,15 @@ object ButtonsApiExportDataParameter {
     trim: js.UndefOr[Boolean] = js.undefined
   ): ButtonsApiExportDataParameter = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (!js.isUndefined(decodeEntities)) __obj.updateDynamic("decodeEntities")(decodeEntities)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (modifier != null) __obj.updateDynamic("modifier")(modifier)
-    if (orthogonal != null) __obj.updateDynamic("orthogonal")(orthogonal)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
-    if (!js.isUndefined(stripHtml)) __obj.updateDynamic("stripHtml")(stripHtml)
-    if (!js.isUndefined(stripNewlines)) __obj.updateDynamic("stripNewlines")(stripNewlines)
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (!js.isUndefined(decodeEntities)) __obj.updateDynamic("decodeEntities")(decodeEntities.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (modifier != null) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
+    if (orthogonal != null) __obj.updateDynamic("orthogonal")(orthogonal.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripHtml)) __obj.updateDynamic("stripHtml")(stripHtml.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripNewlines)) __obj.updateDynamic("stripNewlines")(stripNewlines.asInstanceOf[js.Any])
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonsApiExportDataParameter]
   }
 }

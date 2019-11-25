@@ -27,10 +27,10 @@ object Anon_ConnectionEmail {
     email: String = null,
     phoneNumber: String = null
   ): Anon_ConnectionEmail = {
-    val __obj = js.Dynamic.literal(connection = connection, verificationCode = verificationCode)
+    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], verificationCode = verificationCode.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ConnectionEmail]
   }
 }

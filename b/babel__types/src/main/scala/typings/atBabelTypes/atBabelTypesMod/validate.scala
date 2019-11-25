@@ -11,8 +11,12 @@ object validate extends js.Object {
   def apply[T /* <: Node */, K /* <: String */](
     n: js.UndefOr[Node],
     key: K,
-    value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): Unit = js.native
-  def apply[T /* <: Node */, K /* <: String */](n: Null, key: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): Unit = js.native
+  def apply[T /* <: Node */, K /* <: String */](
+    n: Null,
+    key: K,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ): Unit = js.native
 }
 

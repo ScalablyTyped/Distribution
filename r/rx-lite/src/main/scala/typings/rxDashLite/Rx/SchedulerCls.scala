@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Rx.Scheduler")
 @js.native
-class SchedulerCls protected () extends Scheduler {
+class SchedulerCls protected () extends IScheduler {
   def this(
     now: js.Function0[Double],
     schedule: js.Function2[

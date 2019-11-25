@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 trait TypeofClassAdapter
   extends Instantiable0[Adapter]
      with Instantiable1[/* opts */ IAdapterOpts, Adapter] {
-  def extend(): /* import warning: ImportType.apply Failed type conversion: typeof Adapter */ js.Any = js.native
-  def extend(instanceProps: IDict): /* import warning: ImportType.apply Failed type conversion: typeof Adapter */ js.Any = js.native
-  def extend(instanceProps: IDict, classProps: IDict): /* import warning: ImportType.apply Failed type conversion: typeof Adapter */ js.Any = js.native
+  def extend(): /* import warning: importer.ImportType#apply Failed type conversion: typeof Adapter */ js.Any = js.native
+  def extend(instanceProps: IDict): /* import warning: importer.ImportType#apply Failed type conversion: typeof Adapter */ js.Any = js.native
+  def extend(instanceProps: IDict, classProps: IDict): /* import warning: importer.ImportType#apply Failed type conversion: typeof Adapter */ js.Any = js.native
 }
 

@@ -28,10 +28,10 @@ object ShowErrorEventArgs {
     message: String = null
   ): ShowErrorEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (detail != null) __obj.updateDynamic("detail")(detail)
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode)
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
+    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowErrorEventArgs]
   }
 }

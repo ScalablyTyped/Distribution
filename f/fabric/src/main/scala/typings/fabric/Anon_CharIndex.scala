@@ -12,7 +12,7 @@ trait Anon_CharIndex extends js.Object {
 object Anon_CharIndex {
   @scala.inline
   def apply(charIndex: Double, lineIndex: Double): Anon_CharIndex = {
-    val __obj = js.Dynamic.literal(charIndex = charIndex, lineIndex = lineIndex)
+    val __obj = js.Dynamic.literal(charIndex = charIndex.asInstanceOf[js.Any], lineIndex = lineIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CharIndex]
   }

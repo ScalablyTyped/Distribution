@@ -30,8 +30,8 @@ object DirectionsViewModelTimeAttribute {
     propertyIsEnumerable: PropertyKey => Boolean,
     units: String = null
   ): DirectionsViewModelTimeAttribute = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (units != null) __obj.updateDynamic("units")(units)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsViewModelTimeAttribute]
   }
 }

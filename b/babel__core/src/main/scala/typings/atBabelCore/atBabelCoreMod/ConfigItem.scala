@@ -39,9 +39,9 @@ object ConfigItem {
     name: String = null,
     options: js.Object | `false` = null
   ): ConfigItem = {
-    val __obj = js.Dynamic.literal(dirname = dirname, value = value.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(dirname = dirname.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigItem]
   }

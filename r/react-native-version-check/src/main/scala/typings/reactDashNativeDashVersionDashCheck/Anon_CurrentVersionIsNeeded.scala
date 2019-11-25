@@ -13,7 +13,7 @@ trait Anon_CurrentVersionIsNeeded extends js.Object {
 object Anon_CurrentVersionIsNeeded {
   @scala.inline
   def apply(currentVersion: String, isNeeded: Boolean, latestVersion: String): Anon_CurrentVersionIsNeeded = {
-    val __obj = js.Dynamic.literal(currentVersion = currentVersion, isNeeded = isNeeded, latestVersion = latestVersion)
+    val __obj = js.Dynamic.literal(currentVersion = currentVersion.asInstanceOf[js.Any], isNeeded = isNeeded.asInstanceOf[js.Any], latestVersion = latestVersion.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CurrentVersionIsNeeded]
   }

@@ -16,7 +16,7 @@ trait OpenloadConfig extends js.Object {
 object OpenloadConfig {
   @scala.inline
   def apply(api_key: String, api_login: String, api_version: Int | Double = null): OpenloadConfig = {
-    val __obj = js.Dynamic.literal(api_key = api_key, api_login = api_login)
+    val __obj = js.Dynamic.literal(api_key = api_key.asInstanceOf[js.Any], api_login = api_login.asInstanceOf[js.Any])
     if (api_version != null) __obj.updateDynamic("api_version")(api_version.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenloadConfig]
   }

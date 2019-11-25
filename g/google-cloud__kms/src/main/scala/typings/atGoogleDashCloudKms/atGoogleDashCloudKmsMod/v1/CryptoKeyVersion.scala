@@ -30,10 +30,10 @@ object CryptoKeyVersion {
     destroyEventTime: AsObject = null,
     destroyTime: AsObject = null
   ): CryptoKeyVersion = {
-    val __obj = js.Dynamic.literal(algorithm = algorithm, createTime = createTime, generateTime = generateTime, name = name, protectionLevel = protectionLevel, state = state)
-    if (attestation != null) __obj.updateDynamic("attestation")(attestation)
-    if (destroyEventTime != null) __obj.updateDynamic("destroyEventTime")(destroyEventTime)
-    if (destroyTime != null) __obj.updateDynamic("destroyTime")(destroyTime)
+    val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], createTime = createTime.asInstanceOf[js.Any], generateTime = generateTime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], protectionLevel = protectionLevel.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    if (attestation != null) __obj.updateDynamic("attestation")(attestation.asInstanceOf[js.Any])
+    if (destroyEventTime != null) __obj.updateDynamic("destroyEventTime")(destroyEventTime.asInstanceOf[js.Any])
+    if (destroyTime != null) __obj.updateDynamic("destroyTime")(destroyTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[CryptoKeyVersion]
   }
 }

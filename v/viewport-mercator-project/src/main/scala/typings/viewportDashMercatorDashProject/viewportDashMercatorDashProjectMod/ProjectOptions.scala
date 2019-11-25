@@ -12,7 +12,7 @@ object ProjectOptions {
   @scala.inline
   def apply(topLeft: js.UndefOr[Boolean] = js.undefined): ProjectOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(topLeft)) __obj.updateDynamic("topLeft")(topLeft)
+    if (!js.isUndefined(topLeft)) __obj.updateDynamic("topLeft")(topLeft.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectOptions]
   }
 }

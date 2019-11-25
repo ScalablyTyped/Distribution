@@ -19,8 +19,8 @@ object Config {
   ): Config = {
     val __obj = js.Dynamic.literal()
     if (autocomplete != null) __obj.updateDynamic("autocomplete")(js.Any.fromFunction1(autocomplete))
-    if (history != null) __obj.updateDynamic("history")(history)
-    if (!js.isUndefined(sigint)) __obj.updateDynamic("sigint")(sigint)
+    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
+    if (!js.isUndefined(sigint)) __obj.updateDynamic("sigint")(sigint.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

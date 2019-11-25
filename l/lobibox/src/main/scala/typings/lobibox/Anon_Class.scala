@@ -14,9 +14,9 @@ object Anon_Class {
   @scala.inline
   def apply(`class`: String = null, closeOnClick: js.UndefOr[Boolean] = js.undefined, text: String = null): Anon_Class = {
     val __obj = js.Dynamic.literal()
-    if (`class` != null) __obj.updateDynamic("class")(`class`)
-    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Class]
   }
 }

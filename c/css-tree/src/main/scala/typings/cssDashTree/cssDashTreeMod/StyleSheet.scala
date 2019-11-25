@@ -19,9 +19,9 @@ object StyleSheet {
     `type`: typings.cssDashTree.cssDashTreeStrings.StyleSheet,
     loc: CssLocation = null
   ): StyleSheet = {
-    val __obj = js.Dynamic.literal(children = children)
-    __obj.updateDynamic("type")(`type`)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleSheet]
   }
 }

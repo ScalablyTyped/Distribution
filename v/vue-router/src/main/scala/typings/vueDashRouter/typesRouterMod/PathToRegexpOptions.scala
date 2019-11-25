@@ -18,9 +18,9 @@ object PathToRegexpOptions {
     strict: js.UndefOr[Boolean] = js.undefined
   ): PathToRegexpOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end)
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathToRegexpOptions]
   }
 }

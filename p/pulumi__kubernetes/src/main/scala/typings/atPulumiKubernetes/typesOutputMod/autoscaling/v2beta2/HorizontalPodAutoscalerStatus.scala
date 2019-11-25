@@ -48,7 +48,7 @@ object HorizontalPodAutoscalerStatus {
     lastScaleTime: String,
     observedGeneration: Double
   ): HorizontalPodAutoscalerStatus = {
-    val __obj = js.Dynamic.literal(conditions = conditions, currentMetrics = currentMetrics, currentReplicas = currentReplicas, desiredReplicas = desiredReplicas, lastScaleTime = lastScaleTime, observedGeneration = observedGeneration)
+    val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any], currentMetrics = currentMetrics.asInstanceOf[js.Any], currentReplicas = currentReplicas.asInstanceOf[js.Any], desiredReplicas = desiredReplicas.asInstanceOf[js.Any], lastScaleTime = lastScaleTime.asInstanceOf[js.Any], observedGeneration = observedGeneration.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HorizontalPodAutoscalerStatus]
   }

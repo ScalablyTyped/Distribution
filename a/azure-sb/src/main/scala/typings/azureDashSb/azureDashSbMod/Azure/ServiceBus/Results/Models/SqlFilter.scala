@@ -23,9 +23,9 @@ object SqlFilter {
     Parameters: Dictionary[_] = null,
     RequiresPreprocessing: String = null
   ): SqlFilter = {
-    val __obj = js.Dynamic.literal(CompatibilityLevel = CompatibilityLevel, SqlExpression = SqlExpression)
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters)
-    if (RequiresPreprocessing != null) __obj.updateDynamic("RequiresPreprocessing")(RequiresPreprocessing)
+    val __obj = js.Dynamic.literal(CompatibilityLevel = CompatibilityLevel.asInstanceOf[js.Any], SqlExpression = SqlExpression.asInstanceOf[js.Any])
+    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
+    if (RequiresPreprocessing != null) __obj.updateDynamic("RequiresPreprocessing")(RequiresPreprocessing.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqlFilter]
   }
 }

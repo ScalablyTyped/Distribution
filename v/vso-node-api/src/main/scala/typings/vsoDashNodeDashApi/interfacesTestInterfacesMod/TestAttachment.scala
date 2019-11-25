@@ -24,7 +24,7 @@ object TestAttachment {
     id: Double,
     url: String
   ): TestAttachment = {
-    val __obj = js.Dynamic.literal(attachmentType = attachmentType, comment = comment, createdDate = createdDate, fileName = fileName, id = id, url = url)
+    val __obj = js.Dynamic.literal(attachmentType = attachmentType.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], createdDate = createdDate.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestAttachment]
   }

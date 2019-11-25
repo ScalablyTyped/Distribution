@@ -24,9 +24,9 @@ object Diagnostics {
   @scala.inline
   def apply(alerts: js.Array[String] = null, beaconName: String = null, estimatedLowBatteryDate: Date = null): Diagnostics = {
     val __obj = js.Dynamic.literal()
-    if (alerts != null) __obj.updateDynamic("alerts")(alerts)
-    if (beaconName != null) __obj.updateDynamic("beaconName")(beaconName)
-    if (estimatedLowBatteryDate != null) __obj.updateDynamic("estimatedLowBatteryDate")(estimatedLowBatteryDate)
+    if (alerts != null) __obj.updateDynamic("alerts")(alerts.asInstanceOf[js.Any])
+    if (beaconName != null) __obj.updateDynamic("beaconName")(beaconName.asInstanceOf[js.Any])
+    if (estimatedLowBatteryDate != null) __obj.updateDynamic("estimatedLowBatteryDate")(estimatedLowBatteryDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Diagnostics]
   }
 }

@@ -22,9 +22,9 @@ object LineContentProps {
     formatPart: /* text */ String => ReactNode = null,
     style: CSSProperties = null
   ): LineContentProps = {
-    val __obj = js.Dynamic.literal(data = data, number = number)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
     if (formatPart != null) __obj.updateDynamic("formatPart")(js.Any.fromFunction1(formatPart))
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineContentProps]
   }
 }

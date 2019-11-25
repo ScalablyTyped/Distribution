@@ -14,7 +14,7 @@ trait Anon_AspectRatio extends js.Object {
 object Anon_AspectRatio {
   @scala.inline
   def apply(aspectRatio: Double, far: Double, near: Double, width: Double): Anon_AspectRatio = {
-    val __obj = js.Dynamic.literal(aspectRatio = aspectRatio, far = far, near = near, width = width)
+    val __obj = js.Dynamic.literal(aspectRatio = aspectRatio.asInstanceOf[js.Any], far = far.asInstanceOf[js.Any], near = near.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AspectRatio]
   }

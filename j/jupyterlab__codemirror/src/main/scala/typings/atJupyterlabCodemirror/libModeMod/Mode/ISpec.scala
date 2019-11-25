@@ -17,9 +17,9 @@ trait ISpec extends js.Object {
 object ISpec {
   @scala.inline
   def apply(mime: String, mode: String, ext: js.Array[String] = null, name: String = null): ISpec = {
-    val __obj = js.Dynamic.literal(mime = mime, mode = mode)
-    if (ext != null) __obj.updateDynamic("ext")(ext)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(mime = mime.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
+    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpec]
   }
 }

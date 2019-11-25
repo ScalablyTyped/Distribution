@@ -14,8 +14,8 @@ object Anon_DebugShowBoundingVolume {
   @scala.inline
   def apply(debugShowBoundingVolume: js.UndefOr[Boolean] = js.undefined, modelMatrix: Matrix4 = null): Anon_DebugShowBoundingVolume = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debugShowBoundingVolume)) __obj.updateDynamic("debugShowBoundingVolume")(debugShowBoundingVolume)
-    if (modelMatrix != null) __obj.updateDynamic("modelMatrix")(modelMatrix)
+    if (!js.isUndefined(debugShowBoundingVolume)) __obj.updateDynamic("debugShowBoundingVolume")(debugShowBoundingVolume.asInstanceOf[js.Any])
+    if (modelMatrix != null) __obj.updateDynamic("modelMatrix")(modelMatrix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DebugShowBoundingVolume]
   }
 }

@@ -37,11 +37,11 @@ object ModalDialogButtonApplyClickEventUIParam {
     sortingExpr: js.Array[_] = null
   ): ModalDialogButtonApplyClickEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (groupedColumnLayouts != null) __obj.updateDynamic("groupedColumnLayouts")(groupedColumnLayouts)
-    if (groupedColumns != null) __obj.updateDynamic("groupedColumns")(groupedColumns)
-    if (modalDialogElement != null) __obj.updateDynamic("modalDialogElement")(modalDialogElement)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (sortingExpr != null) __obj.updateDynamic("sortingExpr")(sortingExpr)
+    if (groupedColumnLayouts != null) __obj.updateDynamic("groupedColumnLayouts")(groupedColumnLayouts.asInstanceOf[js.Any])
+    if (groupedColumns != null) __obj.updateDynamic("groupedColumns")(groupedColumns.asInstanceOf[js.Any])
+    if (modalDialogElement != null) __obj.updateDynamic("modalDialogElement")(modalDialogElement.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (sortingExpr != null) __obj.updateDynamic("sortingExpr")(sortingExpr.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalDialogButtonApplyClickEventUIParam]
   }
 }

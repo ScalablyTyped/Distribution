@@ -30,15 +30,15 @@ object LangAccessibilitySeriesTypeDescriptionsOptions {
     waterfall: String = null
   ): LangAccessibilitySeriesTypeDescriptionsOptions = {
     val __obj = js.Dynamic.literal()
-    if (arearange != null) __obj.updateDynamic("arearange")(arearange)
-    if (areasplinerange != null) __obj.updateDynamic("areasplinerange")(areasplinerange)
-    if (boxplot != null) __obj.updateDynamic("boxplot")(boxplot)
-    if (bubble != null) __obj.updateDynamic("bubble")(bubble)
-    if (columnrange != null) __obj.updateDynamic("columnrange")(columnrange)
-    if (errorbar != null) __obj.updateDynamic("errorbar")(errorbar)
-    if (funnel != null) __obj.updateDynamic("funnel")(funnel)
-    if (pyramid != null) __obj.updateDynamic("pyramid")(pyramid)
-    if (waterfall != null) __obj.updateDynamic("waterfall")(waterfall)
+    if (arearange != null) __obj.updateDynamic("arearange")(arearange.asInstanceOf[js.Any])
+    if (areasplinerange != null) __obj.updateDynamic("areasplinerange")(areasplinerange.asInstanceOf[js.Any])
+    if (boxplot != null) __obj.updateDynamic("boxplot")(boxplot.asInstanceOf[js.Any])
+    if (bubble != null) __obj.updateDynamic("bubble")(bubble.asInstanceOf[js.Any])
+    if (columnrange != null) __obj.updateDynamic("columnrange")(columnrange.asInstanceOf[js.Any])
+    if (errorbar != null) __obj.updateDynamic("errorbar")(errorbar.asInstanceOf[js.Any])
+    if (funnel != null) __obj.updateDynamic("funnel")(funnel.asInstanceOf[js.Any])
+    if (pyramid != null) __obj.updateDynamic("pyramid")(pyramid.asInstanceOf[js.Any])
+    if (waterfall != null) __obj.updateDynamic("waterfall")(waterfall.asInstanceOf[js.Any])
     __obj.asInstanceOf[LangAccessibilitySeriesTypeDescriptionsOptions]
   }
 }

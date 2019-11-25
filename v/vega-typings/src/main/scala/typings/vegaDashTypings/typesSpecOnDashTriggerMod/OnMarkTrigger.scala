@@ -14,9 +14,9 @@ trait OnMarkTrigger extends js.Object {
 object OnMarkTrigger {
   @scala.inline
   def apply(trigger: Expr, modify: Expr = null, values: Expr = null): OnMarkTrigger = {
-    val __obj = js.Dynamic.literal(trigger = trigger)
-    if (modify != null) __obj.updateDynamic("modify")(modify)
-    if (values != null) __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(trigger = trigger.asInstanceOf[js.Any])
+    if (modify != null) __obj.updateDynamic("modify")(modify.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnMarkTrigger]
   }
 }

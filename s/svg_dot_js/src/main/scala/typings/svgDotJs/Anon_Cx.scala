@@ -57,17 +57,17 @@ object Anon_Cx {
     x: Double,
     y: Double
   ): Anon_Cx = {
-    val __obj = js.Dynamic.literal(cx = cx, cy = cy, fill = fill, height = height, offset = offset, opacity = opacity, r = r, rx = rx, ry = ry, stroke = stroke, width = width, x = x, y = y)
-    __obj.updateDynamic("fill-opacity")(`fill-opacity`)
-    __obj.updateDynamic("font-family")(`font-family`)
-    __obj.updateDynamic("font-size")(`font-size`)
-    __obj.updateDynamic("stop-color")(`stop-color`)
-    __obj.updateDynamic("stop-opacity")(`stop-opacity`)
-    __obj.updateDynamic("stroke-linecap")(`stroke-linecap`)
-    __obj.updateDynamic("stroke-linejoin")(`stroke-linejoin`)
-    __obj.updateDynamic("stroke-opacity")(`stroke-opacity`)
-    __obj.updateDynamic("stroke-width")(`stroke-width`)
-    __obj.updateDynamic("text-anchor")(`text-anchor`)
+    val __obj = js.Dynamic.literal(cx = cx.asInstanceOf[js.Any], cy = cy.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], rx = rx.asInstanceOf[js.Any], ry = ry.asInstanceOf[js.Any], stroke = stroke.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.updateDynamic("fill-opacity")(`fill-opacity`.asInstanceOf[js.Any])
+    __obj.updateDynamic("font-family")(`font-family`.asInstanceOf[js.Any])
+    __obj.updateDynamic("font-size")(`font-size`.asInstanceOf[js.Any])
+    __obj.updateDynamic("stop-color")(`stop-color`.asInstanceOf[js.Any])
+    __obj.updateDynamic("stop-opacity")(`stop-opacity`.asInstanceOf[js.Any])
+    __obj.updateDynamic("stroke-linecap")(`stroke-linecap`.asInstanceOf[js.Any])
+    __obj.updateDynamic("stroke-linejoin")(`stroke-linejoin`.asInstanceOf[js.Any])
+    __obj.updateDynamic("stroke-opacity")(`stroke-opacity`.asInstanceOf[js.Any])
+    __obj.updateDynamic("stroke-width")(`stroke-width`.asInstanceOf[js.Any])
+    __obj.updateDynamic("text-anchor")(`text-anchor`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cx]
   }
 }

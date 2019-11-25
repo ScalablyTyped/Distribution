@@ -20,8 +20,8 @@ object WebEntity {
   @scala.inline
   def apply(description: String = null, entityId: String = null, score: Int | Double = null): WebEntity = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (entityId != null) __obj.updateDynamic("entityId")(entityId)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
     if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebEntity]
   }

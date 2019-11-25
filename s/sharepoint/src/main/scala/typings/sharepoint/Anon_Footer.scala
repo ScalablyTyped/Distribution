@@ -14,7 +14,7 @@ trait Anon_Footer extends js.Object {
 object Anon_Footer {
   @scala.inline
   def apply(Footer: Double, Loading: Double, Option: Double, Separator: Double): Anon_Footer = {
-    val __obj = js.Dynamic.literal(Footer = Footer, Loading = Loading, Option = Option, Separator = Separator)
+    val __obj = js.Dynamic.literal(Footer = Footer.asInstanceOf[js.Any], Loading = Loading.asInstanceOf[js.Any], Option = Option.asInstanceOf[js.Any], Separator = Separator.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Footer]
   }

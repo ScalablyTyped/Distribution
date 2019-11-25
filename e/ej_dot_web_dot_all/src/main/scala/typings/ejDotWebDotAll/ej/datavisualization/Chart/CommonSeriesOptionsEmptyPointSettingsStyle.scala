@@ -17,8 +17,8 @@ object CommonSeriesOptionsEmptyPointSettingsStyle {
   @scala.inline
   def apply(border: CommonSeriesOptionsEmptyPointSettingsStyleBorder = null, color: String = null): CommonSeriesOptionsEmptyPointSettingsStyle = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonSeriesOptionsEmptyPointSettingsStyle]
   }
 }

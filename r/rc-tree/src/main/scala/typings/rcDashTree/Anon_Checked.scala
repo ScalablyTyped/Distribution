@@ -12,7 +12,7 @@ trait Anon_Checked extends js.Object {
 object Anon_Checked {
   @scala.inline
   def apply(checked: js.Array[String], halfChecked: js.Array[String]): Anon_Checked = {
-    val __obj = js.Dynamic.literal(checked = checked, halfChecked = halfChecked)
+    val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], halfChecked = halfChecked.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Checked]
   }

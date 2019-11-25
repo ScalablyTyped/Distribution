@@ -1,8 +1,6 @@
 package typings.dojo.dojox.mobile
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dojoStrings.`lazy`
 import typings.dojo.dojoStrings.content
 import typings.dojo.dojoStrings.executeScripts
@@ -121,16 +119,64 @@ class ContentPane () extends Container {
   @JSName("set")
   def set_prog(property: prog, value: Boolean): Unit = js.native
   @JSName("watch")
-  def watch_content(property: content, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_content(
+    property: content,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_executeScripts(property: executeScripts, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_executeScripts(
+    property: executeScripts,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_href(property: href, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_href(
+    property: href,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_lazy(property: `lazy`, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_lazy(
+    property: `lazy`,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_parseOnLoad(property: parseOnLoad, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_parseOnLoad(
+    property: parseOnLoad,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_prog(property: prog, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_prog(
+    property: prog,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

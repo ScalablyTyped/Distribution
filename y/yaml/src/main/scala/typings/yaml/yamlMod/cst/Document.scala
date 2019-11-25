@@ -40,14 +40,14 @@ object Document {
     value: String = null,
     valueRange: Range = null
   ): Document = {
-    val __obj = js.Dynamic.literal(anchor = anchor, comment = comment, contents = contents, directives = directives, hasComment = hasComment, hasProps = hasProps, jsonLike = jsonLike, props = props, tag = tag, valueRangeContainsNewline = valueRangeContainsNewline)
-    __obj.updateDynamic("type")(`type`)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (rawValue != null) __obj.updateDynamic("rawValue")(rawValue)
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange)
+    val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], contents = contents.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (rawValue != null) __obj.updateDynamic("rawValue")(rawValue.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[Document]
   }
 }

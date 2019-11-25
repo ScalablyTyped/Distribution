@@ -51,8 +51,8 @@ object Anon_ArialabelCellDataGetter {
     style: Requireable[CSSProperties],
     width: Validator[Double]
   ): Anon_ArialabelCellDataGetter = {
-    val __obj = js.Dynamic.literal(cellDataGetter = cellDataGetter, cellRenderer = cellRenderer, className = className, columnData = columnData, dataKey = dataKey, disableSort = disableSort, flexGrow = flexGrow, flexShrink = flexShrink, headerClassName = headerClassName, headerRenderer = headerRenderer, id = id, label = label, maxWidth = maxWidth, minWidth = minWidth, style = style, width = width)
-    __obj.updateDynamic("aria-label")(`aria-label`)
+    val __obj = js.Dynamic.literal(cellDataGetter = cellDataGetter.asInstanceOf[js.Any], cellRenderer = cellRenderer.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], columnData = columnData.asInstanceOf[js.Any], dataKey = dataKey.asInstanceOf[js.Any], disableSort = disableSort.asInstanceOf[js.Any], flexGrow = flexGrow.asInstanceOf[js.Any], flexShrink = flexShrink.asInstanceOf[js.Any], headerClassName = headerClassName.asInstanceOf[js.Any], headerRenderer = headerRenderer.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any], minWidth = minWidth.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ArialabelCellDataGetter]
   }
 }

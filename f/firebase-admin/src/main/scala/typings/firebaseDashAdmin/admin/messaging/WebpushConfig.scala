@@ -40,10 +40,10 @@ object WebpushConfig {
     notification: WebpushNotification = null
   ): WebpushConfig = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (fcmOptions != null) __obj.updateDynamic("fcmOptions")(fcmOptions)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (notification != null) __obj.updateDynamic("notification")(notification)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (fcmOptions != null) __obj.updateDynamic("fcmOptions")(fcmOptions.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (notification != null) __obj.updateDynamic("notification")(notification.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebpushConfig]
   }
 }

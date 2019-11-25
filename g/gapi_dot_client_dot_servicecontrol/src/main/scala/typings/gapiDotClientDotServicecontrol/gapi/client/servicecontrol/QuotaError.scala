@@ -21,9 +21,9 @@ object QuotaError {
   @scala.inline
   def apply(code: String = null, description: String = null, subject: String = null): QuotaError = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaError]
   }
 }

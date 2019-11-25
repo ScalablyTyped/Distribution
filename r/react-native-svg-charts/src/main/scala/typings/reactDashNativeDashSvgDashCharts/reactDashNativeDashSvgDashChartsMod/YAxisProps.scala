@@ -33,8 +33,8 @@ object YAxisProps {
     svg: Partial[TextProps] = null,
     yAccessor: /* props */ AccessorFunctionProps[T] => _ = null
   ): YAxisProps[T] = {
-    val __obj = js.Dynamic.literal(data = data)
-    if (contentInset != null) __obj.updateDynamic("contentInset")(contentInset)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    if (contentInset != null) __obj.updateDynamic("contentInset")(contentInset.asInstanceOf[js.Any])
     if (formatLabel != null) __obj.updateDynamic("formatLabel")(js.Any.fromFunction2(formatLabel))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
@@ -43,7 +43,7 @@ object YAxisProps {
     if (spacingInner != null) __obj.updateDynamic("spacingInner")(spacingInner.asInstanceOf[js.Any])
     if (spacingOuter != null) __obj.updateDynamic("spacingOuter")(spacingOuter.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (svg != null) __obj.updateDynamic("svg")(svg)
+    if (svg != null) __obj.updateDynamic("svg")(svg.asInstanceOf[js.Any])
     if (yAccessor != null) __obj.updateDynamic("yAccessor")(js.Any.fromFunction1(yAccessor))
     __obj.asInstanceOf[YAxisProps[T]]
   }

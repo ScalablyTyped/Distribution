@@ -15,9 +15,9 @@ object OperationHistoryResult {
   @scala.inline
   def apply(error: String = null, next_record: String = null, operations: js.Array[Anon_Amount] = null): OperationHistoryResult = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (next_record != null) __obj.updateDynamic("next_record")(next_record)
-    if (operations != null) __obj.updateDynamic("operations")(operations)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (next_record != null) __obj.updateDynamic("next_record")(next_record.asInstanceOf[js.Any])
+    if (operations != null) __obj.updateDynamic("operations")(operations.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationHistoryResult]
   }
 }

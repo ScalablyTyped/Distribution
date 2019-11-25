@@ -15,8 +15,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Typeofoptimize extends js.Object {
-  var AggressiveMergingPlugin: js.Any | Instantiable0[typings.webpack.webpackMod.optimize.AggressiveMergingPlugin]
-  var AggressiveSplittingPlugin: js.Any | Instantiable0[typings.webpack.webpackMod.optimize.AggressiveSplittingPlugin]
+  var AggressiveMergingPlugin: Instantiable0[typings.webpack.webpackMod.optimize.AggressiveMergingPlugin]
+  var AggressiveSplittingPlugin: Instantiable0[typings.webpack.webpackMod.optimize.AggressiveSplittingPlugin]
   /** @deprecated */
   var DedupePlugin: Instantiable0[typings.webpack.webpackMod.optimize.DedupePlugin]
   var LimitChunkCountPlugin: Instantiable1[/* options */ js.Any, typings.webpack.webpackMod.optimize.LimitChunkCountPlugin]
@@ -27,7 +27,7 @@ trait Typeofoptimize extends js.Object {
     /* preferEntry */ Boolean, 
     typings.webpack.webpackMod.optimize.OccurrenceOrderPlugin
   ]
-  var UglifyJsPlugin: js.Any | Instantiable0[typings.webpack.webpackMod.optimize.UglifyJsPlugin]
+  var UglifyJsPlugin: Instantiable0[typings.webpack.webpackMod.optimize.UglifyJsPlugin]
 }
 
 object Typeofoptimize {
@@ -42,7 +42,7 @@ object Typeofoptimize {
     OccurrenceOrderPlugin: Instantiable1[/* preferEntry */ Boolean, OccurrenceOrderPlugin],
     UglifyJsPlugin: Instantiable0[UglifyJsPlugin]
   ): Typeofoptimize = {
-    val __obj = js.Dynamic.literal(AggressiveMergingPlugin = AggressiveMergingPlugin, AggressiveSplittingPlugin = AggressiveSplittingPlugin, DedupePlugin = DedupePlugin, LimitChunkCountPlugin = LimitChunkCountPlugin, MinChunkSizePlugin = MinChunkSizePlugin, ModuleConcatenationPlugin = ModuleConcatenationPlugin, OccurrenceOrderPlugin = OccurrenceOrderPlugin, UglifyJsPlugin = UglifyJsPlugin)
+    val __obj = js.Dynamic.literal(AggressiveMergingPlugin = AggressiveMergingPlugin.asInstanceOf[js.Any], AggressiveSplittingPlugin = AggressiveSplittingPlugin.asInstanceOf[js.Any], DedupePlugin = DedupePlugin.asInstanceOf[js.Any], LimitChunkCountPlugin = LimitChunkCountPlugin.asInstanceOf[js.Any], MinChunkSizePlugin = MinChunkSizePlugin.asInstanceOf[js.Any], ModuleConcatenationPlugin = ModuleConcatenationPlugin.asInstanceOf[js.Any], OccurrenceOrderPlugin = OccurrenceOrderPlugin.asInstanceOf[js.Any], UglifyJsPlugin = UglifyJsPlugin.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofoptimize]
   }

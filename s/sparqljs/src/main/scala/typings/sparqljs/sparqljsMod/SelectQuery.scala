@@ -43,19 +43,19 @@ object SelectQuery {
     values: js.Array[ValuePatternRow] = null,
     where: js.Array[Pattern] = null
   ): SelectQuery = {
-    val __obj = js.Dynamic.literal(prefixes = prefixes, queryType = queryType, variables = variables)
-    __obj.updateDynamic("type")(`type`)
-    if (base != null) __obj.updateDynamic("base")(base)
-    if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct)
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (having != null) __obj.updateDynamic("having")(having)
+    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (having != null) __obj.updateDynamic("having")(having.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order)
-    if (!js.isUndefined(reduced)) __obj.updateDynamic("reduced")(reduced)
-    if (values != null) __obj.updateDynamic("values")(values)
-    if (where != null) __obj.updateDynamic("where")(where)
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (!js.isUndefined(reduced)) __obj.updateDynamic("reduced")(reduced.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectQuery]
   }
 }

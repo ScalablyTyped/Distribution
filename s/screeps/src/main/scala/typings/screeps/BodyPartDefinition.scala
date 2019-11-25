@@ -27,7 +27,7 @@ trait BodyPartDefinition extends js.Object {
 object BodyPartDefinition {
   @scala.inline
   def apply(hits: Double, `type`: BodyPartConstant, boost: ResourceConstant = null): BodyPartDefinition = {
-    val __obj = js.Dynamic.literal(hits = hits)
+    val __obj = js.Dynamic.literal(hits = hits.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (boost != null) __obj.updateDynamic("boost")(boost.asInstanceOf[js.Any])
     __obj.asInstanceOf[BodyPartDefinition]

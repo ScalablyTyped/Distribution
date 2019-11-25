@@ -14,9 +14,9 @@ object ColumnarOptions {
   @scala.inline
   def apply(headers: js.Array[String] = null, hsep: String = null, vsep: String = null): ColumnarOptions = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (hsep != null) __obj.updateDynamic("hsep")(hsep)
-    if (vsep != null) __obj.updateDynamic("vsep")(vsep)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (hsep != null) __obj.updateDynamic("hsep")(hsep.asInstanceOf[js.Any])
+    if (vsep != null) __obj.updateDynamic("vsep")(vsep.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnarOptions]
   }
 }

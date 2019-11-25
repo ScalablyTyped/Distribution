@@ -48,10 +48,10 @@ object TestExecutionStep {
     toolExecution: ToolExecution = null
   ): TestExecutionStep = {
     val __obj = js.Dynamic.literal()
-    if (testIssues != null) __obj.updateDynamic("testIssues")(testIssues)
-    if (testSuiteOverviews != null) __obj.updateDynamic("testSuiteOverviews")(testSuiteOverviews)
-    if (testTiming != null) __obj.updateDynamic("testTiming")(testTiming)
-    if (toolExecution != null) __obj.updateDynamic("toolExecution")(toolExecution)
+    if (testIssues != null) __obj.updateDynamic("testIssues")(testIssues.asInstanceOf[js.Any])
+    if (testSuiteOverviews != null) __obj.updateDynamic("testSuiteOverviews")(testSuiteOverviews.asInstanceOf[js.Any])
+    if (testTiming != null) __obj.updateDynamic("testTiming")(testTiming.asInstanceOf[js.Any])
+    if (toolExecution != null) __obj.updateDynamic("toolExecution")(toolExecution.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestExecutionStep]
   }
 }

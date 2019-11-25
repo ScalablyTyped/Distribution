@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("js-to-java", "Locale")
 @js.native
 object Locale extends js.Object {
-  def apply(locale: String, handle: String): js.Object = js.native
+  def apply(locale: java.lang.String, handle: java.lang.String): js.Object = js.native
 }
 

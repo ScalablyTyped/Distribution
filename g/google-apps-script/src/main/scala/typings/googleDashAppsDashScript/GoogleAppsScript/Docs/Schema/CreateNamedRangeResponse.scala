@@ -12,7 +12,7 @@ object CreateNamedRangeResponse {
   @scala.inline
   def apply(namedRangeId: String = null): CreateNamedRangeResponse = {
     val __obj = js.Dynamic.literal()
-    if (namedRangeId != null) __obj.updateDynamic("namedRangeId")(namedRangeId)
+    if (namedRangeId != null) __obj.updateDynamic("namedRangeId")(namedRangeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateNamedRangeResponse]
   }
 }

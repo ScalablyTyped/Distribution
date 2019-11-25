@@ -21,8 +21,8 @@ object SketchUpdateEvent {
     toolEventInfo: UpdateToolEventInfo,
     `type`: String
   ): SketchUpdateEvent = {
-    val __obj = js.Dynamic.literal(graphics = graphics, state = state, tool = tool, toolEventInfo = toolEventInfo)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(graphics = graphics.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tool = tool.asInstanceOf[js.Any], toolEventInfo = toolEventInfo.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchUpdateEvent]
   }
 }

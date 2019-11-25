@@ -17,9 +17,9 @@ object Image {
   @scala.inline
   def apply(id: String = null, sha1: String = null, url: String = null): Image = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (sha1 != null) __obj.updateDynamic("sha1")(sha1)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (sha1 != null) __obj.updateDynamic("sha1")(sha1.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }
 }

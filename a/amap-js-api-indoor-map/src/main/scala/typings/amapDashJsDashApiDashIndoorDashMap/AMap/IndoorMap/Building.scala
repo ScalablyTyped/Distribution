@@ -28,7 +28,7 @@ trait Building extends js.Object {
 object Building {
   @scala.inline
   def apply(floor: Double, floor_details: FloorDetails, id: String, lnglat: LngLat, name: String): Building = {
-    val __obj = js.Dynamic.literal(floor = floor, floor_details = floor_details, id = id, lnglat = lnglat, name = name)
+    val __obj = js.Dynamic.literal(floor = floor.asInstanceOf[js.Any], floor_details = floor_details.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lnglat = lnglat.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Building]
   }

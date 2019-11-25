@@ -28,7 +28,7 @@ object ParserInline {
     skipToken: typings.markdownDashIt.libRulesUnderscoreCoreStateUnderscoreCoreMod.^ => Unit,
     tokenize: typings.markdownDashIt.libRulesUnderscoreCoreStateUnderscoreCoreMod.^ => Unit
   ): ParserInline = {
-    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction4(parse), ruler = ruler, ruler2 = ruler2, skipToken = js.Any.fromFunction1(skipToken), tokenize = js.Any.fromFunction1(tokenize))
+    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction4(parse), ruler = ruler.asInstanceOf[js.Any], ruler2 = ruler2.asInstanceOf[js.Any], skipToken = js.Any.fromFunction1(skipToken), tokenize = js.Any.fromFunction1(tokenize))
   
     __obj.asInstanceOf[ParserInline]
   }

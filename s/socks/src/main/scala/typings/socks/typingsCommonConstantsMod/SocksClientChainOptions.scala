@@ -26,8 +26,8 @@ object SocksClientChainOptions {
     randomizeChain: `false` = null,
     timeout: Int | Double = null
   ): SocksClientChainOptions = {
-    val __obj = js.Dynamic.literal(command = command, destination = destination, proxies = proxies)
-    if (randomizeChain != null) __obj.updateDynamic("randomizeChain")(randomizeChain)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], proxies = proxies.asInstanceOf[js.Any])
+    if (randomizeChain != null) __obj.updateDynamic("randomizeChain")(randomizeChain.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocksClientChainOptions]
   }

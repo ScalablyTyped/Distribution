@@ -15,8 +15,8 @@ object RepoId {
   @scala.inline
   def apply(projectRepoId: ProjectRepoId = null, uid: String = null): RepoId = {
     val __obj = js.Dynamic.literal()
-    if (projectRepoId != null) __obj.updateDynamic("projectRepoId")(projectRepoId)
-    if (uid != null) __obj.updateDynamic("uid")(uid)
+    if (projectRepoId != null) __obj.updateDynamic("projectRepoId")(projectRepoId.asInstanceOf[js.Any])
+    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepoId]
   }
 }

@@ -14,7 +14,7 @@ trait ScaledSize extends js.Object {
 object ScaledSize {
   @scala.inline
   def apply(fontScale: Double, height: Double, scale: Double, width: Double): ScaledSize = {
-    val __obj = js.Dynamic.literal(fontScale = fontScale, height = height, scale = scale, width = width)
+    val __obj = js.Dynamic.literal(fontScale = fontScale.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ScaledSize]
   }

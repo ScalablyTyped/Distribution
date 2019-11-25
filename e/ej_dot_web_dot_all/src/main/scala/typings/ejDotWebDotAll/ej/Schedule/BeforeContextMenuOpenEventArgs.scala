@@ -48,15 +48,15 @@ object BeforeContextMenuOpenEventArgs {
     `type`: String = null
   ): BeforeContextMenuOpenEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (appointment != null) __obj.updateDynamic("appointment")(appointment)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (appointment != null) __obj.updateDynamic("appointment")(appointment.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
     if (cellIndex != null) __obj.updateDynamic("cellIndex")(cellIndex.asInstanceOf[js.Any])
-    if (currentDate != null) __obj.updateDynamic("currentDate")(currentDate)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
-    if (resources != null) __obj.updateDynamic("resources")(resources)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (currentDate != null) __obj.updateDynamic("currentDate")(currentDate.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforeContextMenuOpenEventArgs]
   }
 }

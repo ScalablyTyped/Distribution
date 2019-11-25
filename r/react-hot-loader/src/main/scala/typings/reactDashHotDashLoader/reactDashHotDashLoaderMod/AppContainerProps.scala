@@ -17,7 +17,7 @@ object AppContainerProps {
     errorReporter: ComponentType[ErrorReporterProps] = null
   ): AppContainerProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(errorBoundary)) __obj.updateDynamic("errorBoundary")(errorBoundary)
+    if (!js.isUndefined(errorBoundary)) __obj.updateDynamic("errorBoundary")(errorBoundary.asInstanceOf[js.Any])
     if (errorReporter != null) __obj.updateDynamic("errorReporter")(errorReporter.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppContainerProps]
   }

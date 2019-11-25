@@ -13,8 +13,8 @@ object ObjectAndType {
   @scala.inline
   def apply(`object`: String = null, `type`: String = null): ObjectAndType = {
     val __obj = js.Dynamic.literal()
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectAndType]
   }
 }

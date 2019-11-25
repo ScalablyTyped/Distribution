@@ -21,7 +21,7 @@ object IHotkeysProps {
   @scala.inline
   def apply(className: String = null, tabIndex: Int | Double = null): IHotkeysProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHotkeysProps]
   }

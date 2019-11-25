@@ -14,7 +14,7 @@ trait SubdivisionsRecord extends js.Object {
 object SubdivisionsRecord {
   @scala.inline
   def apply(geoname_id: Double, iso_code: String, names: Names, confidence: Int | Double = null): SubdivisionsRecord = {
-    val __obj = js.Dynamic.literal(geoname_id = geoname_id, iso_code = iso_code, names = names)
+    val __obj = js.Dynamic.literal(geoname_id = geoname_id.asInstanceOf[js.Any], iso_code = iso_code.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
     if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubdivisionsRecord]
   }

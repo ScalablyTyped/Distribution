@@ -29,12 +29,12 @@ object AutocompleteOptions {
   ): AutocompleteOptions = {
     val __obj = js.Dynamic.literal()
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (componentRestrictions != null) __obj.updateDynamic("componentRestrictions")(componentRestrictions)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (!js.isUndefined(placeIdOnly)) __obj.updateDynamic("placeIdOnly")(placeIdOnly)
-    if (!js.isUndefined(strictBounds)) __obj.updateDynamic("strictBounds")(strictBounds)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (types != null) __obj.updateDynamic("types")(types)
+    if (componentRestrictions != null) __obj.updateDynamic("componentRestrictions")(componentRestrictions.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(placeIdOnly)) __obj.updateDynamic("placeIdOnly")(placeIdOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictBounds)) __obj.updateDynamic("strictBounds")(strictBounds.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutocompleteOptions]
   }
 }

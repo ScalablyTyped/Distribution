@@ -76,17 +76,17 @@ object Filter {
     nodata: js.UndefOr[Boolean] = js.undefined
   ): Filter = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(autoApply)) __obj.updateDynamic("autoApply")(autoApply)
-    if (!js.isUndefined(autoExpand)) __obj.updateDynamic("autoExpand")(autoExpand)
-    if (!js.isUndefined(counter)) __obj.updateDynamic("counter")(counter)
-    if (!js.isUndefined(fuzzy)) __obj.updateDynamic("fuzzy")(fuzzy)
-    if (!js.isUndefined(hideExpandedCounter)) __obj.updateDynamic("hideExpandedCounter")(hideExpandedCounter)
-    if (!js.isUndefined(hideExpanders)) __obj.updateDynamic("hideExpanders")(hideExpanders)
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
-    if (!js.isUndefined(leavesOnly)) __obj.updateDynamic("leavesOnly")(leavesOnly)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(autoApply)) __obj.updateDynamic("autoApply")(autoApply.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoExpand)) __obj.updateDynamic("autoExpand")(autoExpand.asInstanceOf[js.Any])
+    if (!js.isUndefined(counter)) __obj.updateDynamic("counter")(counter.asInstanceOf[js.Any])
+    if (!js.isUndefined(fuzzy)) __obj.updateDynamic("fuzzy")(fuzzy.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideExpandedCounter)) __obj.updateDynamic("hideExpandedCounter")(hideExpandedCounter.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideExpanders)) __obj.updateDynamic("hideExpanders")(hideExpanders.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
+    if (!js.isUndefined(leavesOnly)) __obj.updateDynamic("leavesOnly")(leavesOnly.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodata)) __obj.updateDynamic("nodata")(nodata)
+    if (!js.isUndefined(nodata)) __obj.updateDynamic("nodata")(nodata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filter]
   }
 }

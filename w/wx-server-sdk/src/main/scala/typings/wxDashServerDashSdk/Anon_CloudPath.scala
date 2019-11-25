@@ -14,7 +14,7 @@ trait Anon_CloudPath extends js.Object {
 object Anon_CloudPath {
   @scala.inline
   def apply(cloudPath: String, fileContent: Buffer | ReadStream): Anon_CloudPath = {
-    val __obj = js.Dynamic.literal(cloudPath = cloudPath, fileContent = fileContent.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cloudPath = cloudPath.asInstanceOf[js.Any], fileContent = fileContent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CloudPath]
   }

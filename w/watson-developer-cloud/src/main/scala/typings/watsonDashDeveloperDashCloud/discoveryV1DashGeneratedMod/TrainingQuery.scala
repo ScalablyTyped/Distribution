@@ -25,10 +25,10 @@ object TrainingQuery {
     query_id: String = null
   ): TrainingQuery = {
     val __obj = js.Dynamic.literal()
-    if (examples != null) __obj.updateDynamic("examples")(examples)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (natural_language_query != null) __obj.updateDynamic("natural_language_query")(natural_language_query)
-    if (query_id != null) __obj.updateDynamic("query_id")(query_id)
+    if (examples != null) __obj.updateDynamic("examples")(examples.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (natural_language_query != null) __obj.updateDynamic("natural_language_query")(natural_language_query.asInstanceOf[js.Any])
+    if (query_id != null) __obj.updateDynamic("query_id")(query_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrainingQuery]
   }
 }

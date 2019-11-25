@@ -57,15 +57,15 @@ object IExpandedMonarchLanguageAction {
     token: String = null
   ): IExpandedMonarchLanguageAction = {
     val __obj = js.Dynamic.literal()
-    if (bracket != null) __obj.updateDynamic("bracket")(bracket)
-    if (cases != null) __obj.updateDynamic("cases")(cases)
+    if (bracket != null) __obj.updateDynamic("bracket")(bracket.asInstanceOf[js.Any])
+    if (cases != null) __obj.updateDynamic("cases")(cases.asInstanceOf[js.Any])
     if (goBack != null) __obj.updateDynamic("goBack")(goBack.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (log != null) __obj.updateDynamic("log")(log)
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (nextEmbedded != null) __obj.updateDynamic("nextEmbedded")(nextEmbedded)
-    if (switchTo != null) __obj.updateDynamic("switchTo")(switchTo)
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (nextEmbedded != null) __obj.updateDynamic("nextEmbedded")(nextEmbedded.asInstanceOf[js.Any])
+    if (switchTo != null) __obj.updateDynamic("switchTo")(switchTo.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExpandedMonarchLanguageAction]
   }
 }

@@ -35,17 +35,17 @@ object FormatterOptionsArgs {
     writeBOM: js.UndefOr[Boolean] = js.undefined
   ): FormatterOptionsArgs = {
     val __obj = js.Dynamic.literal()
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
-    if (escape != null) __obj.updateDynamic("escape")(escape)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
+    if (escape != null) __obj.updateDynamic("escape")(escape.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeEndRowDelimiter)) __obj.updateDynamic("includeEndRowDelimiter")(includeEndRowDelimiter)
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode)
+    if (!js.isUndefined(includeEndRowDelimiter)) __obj.updateDynamic("includeEndRowDelimiter")(includeEndRowDelimiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
     if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
     if (quoteColumns != null) __obj.updateDynamic("quoteColumns")(quoteColumns.asInstanceOf[js.Any])
     if (quoteHeaders != null) __obj.updateDynamic("quoteHeaders")(quoteHeaders.asInstanceOf[js.Any])
-    if (rowDelimiter != null) __obj.updateDynamic("rowDelimiter")(rowDelimiter)
-    if (transform != null) __obj.updateDynamic("transform")(transform)
-    if (!js.isUndefined(writeBOM)) __obj.updateDynamic("writeBOM")(writeBOM)
+    if (rowDelimiter != null) __obj.updateDynamic("rowDelimiter")(rowDelimiter.asInstanceOf[js.Any])
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
+    if (!js.isUndefined(writeBOM)) __obj.updateDynamic("writeBOM")(writeBOM.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatterOptionsArgs]
   }
 }

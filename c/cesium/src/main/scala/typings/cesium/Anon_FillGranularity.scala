@@ -34,16 +34,16 @@ object Anon_FillGranularity {
     show: Property = null
   ): Anon_FillGranularity = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (granularity != null) __obj.updateDynamic("granularity")(granularity)
-    if (material != null) __obj.updateDynamic("material")(material)
-    if (maximumHeights != null) __obj.updateDynamic("maximumHeights")(maximumHeights)
-    if (minimumHeights != null) __obj.updateDynamic("minimumHeights")(minimumHeights)
-    if (outline != null) __obj.updateDynamic("outline")(outline)
-    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor)
-    if (outlineWidth != null) __obj.updateDynamic("outlineWidth")(outlineWidth)
-    if (positions != null) __obj.updateDynamic("positions")(positions)
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
+    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
+    if (maximumHeights != null) __obj.updateDynamic("maximumHeights")(maximumHeights.asInstanceOf[js.Any])
+    if (minimumHeights != null) __obj.updateDynamic("minimumHeights")(minimumHeights.asInstanceOf[js.Any])
+    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
+    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
+    if (outlineWidth != null) __obj.updateDynamic("outlineWidth")(outlineWidth.asInstanceOf[js.Any])
+    if (positions != null) __obj.updateDynamic("positions")(positions.asInstanceOf[js.Any])
+    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FillGranularity]
   }
 }

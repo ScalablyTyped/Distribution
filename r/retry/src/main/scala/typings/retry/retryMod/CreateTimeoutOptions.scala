@@ -39,7 +39,7 @@ object CreateTimeoutOptions {
     if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
     if (maxTimeout != null) __obj.updateDynamic("maxTimeout")(maxTimeout.asInstanceOf[js.Any])
     if (minTimeout != null) __obj.updateDynamic("minTimeout")(minTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(randomize)) __obj.updateDynamic("randomize")(randomize)
+    if (!js.isUndefined(randomize)) __obj.updateDynamic("randomize")(randomize.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTimeoutOptions]
   }
 }

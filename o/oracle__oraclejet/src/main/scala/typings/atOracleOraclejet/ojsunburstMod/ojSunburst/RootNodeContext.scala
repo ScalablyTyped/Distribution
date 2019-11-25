@@ -26,7 +26,7 @@ object RootNodeContext {
     itemData: D,
     outerBounds: Anon_HeightWidth
   ): RootNodeContext[K, D] = {
-    val __obj = js.Dynamic.literal(componentElement = componentElement, data = data, id = id.asInstanceOf[js.Any], innerBounds = innerBounds, itemData = itemData.asInstanceOf[js.Any], outerBounds = outerBounds)
+    val __obj = js.Dynamic.literal(componentElement = componentElement.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], innerBounds = innerBounds.asInstanceOf[js.Any], itemData = itemData.asInstanceOf[js.Any], outerBounds = outerBounds.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RootNodeContext[K, D]]
   }

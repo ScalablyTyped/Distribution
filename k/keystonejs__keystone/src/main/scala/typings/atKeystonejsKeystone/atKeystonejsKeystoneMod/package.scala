@@ -14,7 +14,7 @@ package object atKeystonejsKeystoneMod {
   type AccessCallback = js.Function1[/* context */ AuthenticationContext, Boolean | GraphQLWhereClause]
   type GraphQLWhereClause = StringDictionary[js.Any]
   type Hooks = Partial[Anon_AddFieldValidationError]
-  type KeyValues[Keys /* <: String */, Values] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type KeyValues[Keys /* <: String */, Values] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in Keys ]: Values}
     */ typings.atKeystonejsKeystone.atKeystonejsKeystoneStrings.KeyValues with js.Any
   type Plugin = js.Any

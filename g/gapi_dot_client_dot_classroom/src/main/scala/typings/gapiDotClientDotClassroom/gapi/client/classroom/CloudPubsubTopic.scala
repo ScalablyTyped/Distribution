@@ -16,7 +16,7 @@ object CloudPubsubTopic {
   @scala.inline
   def apply(topicName: String = null): CloudPubsubTopic = {
     val __obj = js.Dynamic.literal()
-    if (topicName != null) __obj.updateDynamic("topicName")(topicName)
+    if (topicName != null) __obj.updateDynamic("topicName")(topicName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudPubsubTopic]
   }
 }

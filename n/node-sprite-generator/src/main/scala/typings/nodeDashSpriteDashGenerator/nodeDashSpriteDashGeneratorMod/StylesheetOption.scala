@@ -22,8 +22,8 @@ object StylesheetOption {
     val __obj = js.Dynamic.literal()
     if (nameMapping != null) __obj.updateDynamic("nameMapping")(js.Any.fromFunction0(nameMapping))
     if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (spritePath != null) __obj.updateDynamic("spritePath")(spritePath)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (spritePath != null) __obj.updateDynamic("spritePath")(spritePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[StylesheetOption]
   }
 }

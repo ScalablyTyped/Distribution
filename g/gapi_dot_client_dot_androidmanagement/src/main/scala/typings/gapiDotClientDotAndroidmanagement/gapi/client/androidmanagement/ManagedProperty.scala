@@ -33,13 +33,13 @@ object ManagedProperty {
     `type`: String = null
   ): ManagedProperty = {
     val __obj = js.Dynamic.literal()
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (entries != null) __obj.updateDynamic("entries")(entries)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (nestedProperties != null) __obj.updateDynamic("nestedProperties")(nestedProperties)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (nestedProperties != null) __obj.updateDynamic("nestedProperties")(nestedProperties.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedProperty]
   }
 }

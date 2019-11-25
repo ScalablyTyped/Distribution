@@ -25,8 +25,8 @@ object ValueSortSettings {
     sortOrder: typings.ejDotWebDotAll.ej.PivotAnalysis.SortOrder | String = null
   ): ValueSortSettings = {
     val __obj = js.Dynamic.literal()
-    if (headerDelimiters != null) __obj.updateDynamic("headerDelimiters")(headerDelimiters)
-    if (headerText != null) __obj.updateDynamic("headerText")(headerText)
+    if (headerDelimiters != null) __obj.updateDynamic("headerDelimiters")(headerDelimiters.asInstanceOf[js.Any])
+    if (headerText != null) __obj.updateDynamic("headerText")(headerText.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueSortSettings]
   }

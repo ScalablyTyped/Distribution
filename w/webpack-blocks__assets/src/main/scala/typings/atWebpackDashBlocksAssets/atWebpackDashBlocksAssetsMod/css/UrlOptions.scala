@@ -14,9 +14,9 @@ object UrlOptions {
   @scala.inline
   def apply(fallback: String = null, limit: Double | Boolean | String = null, mimetype: String = null): UrlOptions = {
     val __obj = js.Dynamic.literal()
-    if (fallback != null) __obj.updateDynamic("fallback")(fallback)
+    if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (mimetype != null) __obj.updateDynamic("mimetype")(mimetype)
+    if (mimetype != null) __obj.updateDynamic("mimetype")(mimetype.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlOptions]
   }
 }

@@ -18,9 +18,9 @@ object ConversionsBatchInsertRequest {
     kind: String = null
   ): ConversionsBatchInsertRequest = {
     val __obj = js.Dynamic.literal()
-    if (conversions != null) __obj.updateDynamic("conversions")(conversions)
-    if (encryptionInfo != null) __obj.updateDynamic("encryptionInfo")(encryptionInfo)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (conversions != null) __obj.updateDynamic("conversions")(conversions.asInstanceOf[js.Any])
+    if (encryptionInfo != null) __obj.updateDynamic("encryptionInfo")(encryptionInfo.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConversionsBatchInsertRequest]
   }
 }

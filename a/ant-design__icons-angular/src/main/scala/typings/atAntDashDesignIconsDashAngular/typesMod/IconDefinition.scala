@@ -13,8 +13,8 @@ trait IconDefinition extends js.Object {
 object IconDefinition {
   @scala.inline
   def apply(icon: String, name: String, theme: ThemeType = null): IconDefinition = {
-    val __obj = js.Dynamic.literal(icon = icon, name = name)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconDefinition]
   }
 }

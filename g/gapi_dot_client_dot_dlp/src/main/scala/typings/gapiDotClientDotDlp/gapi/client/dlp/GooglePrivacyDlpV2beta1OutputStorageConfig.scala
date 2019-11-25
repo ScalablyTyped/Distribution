@@ -57,8 +57,8 @@ object GooglePrivacyDlpV2beta1OutputStorageConfig {
     table: GooglePrivacyDlpV2beta1BigQueryTable = null
   ): GooglePrivacyDlpV2beta1OutputStorageConfig = {
     val __obj = js.Dynamic.literal()
-    if (storagePath != null) __obj.updateDynamic("storagePath")(storagePath)
-    if (table != null) __obj.updateDynamic("table")(table)
+    if (storagePath != null) __obj.updateDynamic("storagePath")(storagePath.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1OutputStorageConfig]
   }
 }

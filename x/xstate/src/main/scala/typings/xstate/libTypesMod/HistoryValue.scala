@@ -13,7 +13,7 @@ trait HistoryValue extends js.Object {
 object HistoryValue {
   @scala.inline
   def apply(states: Record[String, js.UndefOr[HistoryValue]], current: StateValue = null): HistoryValue = {
-    val __obj = js.Dynamic.literal(states = states)
+    val __obj = js.Dynamic.literal(states = states.asInstanceOf[js.Any])
     if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryValue]
   }

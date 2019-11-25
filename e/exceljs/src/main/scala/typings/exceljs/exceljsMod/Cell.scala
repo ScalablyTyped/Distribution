@@ -117,7 +117,6 @@ object Cell {
     style: Partial[Style],
     text: String,
     toCsvString: () => String,
-    toString: () => String,
     `type`: ValueType,
     unmerge: () => Unit,
     workbook: Workbook,
@@ -125,9 +124,9 @@ object Cell {
     sheetName: String = null,
     value: CellValue = null
   ): Cell = {
-    val __obj = js.Dynamic.literal($col$row = $col$row, addMergeRef = js.Any.fromFunction0(addMergeRef), addName = js.Any.fromFunction1(addName), address = address, alignment = alignment, border = border, col = col, comment = comment, dataValidation = dataValidation, destroy = js.Any.fromFunction0(destroy), effectiveType = effectiveType, fill = fill, font = font, formula = formula, formulaType = formulaType, fullAddress = fullAddress, hyperlink = hyperlink, isHyperlink = isHyperlink, isMerged = isMerged, isMergedTo = js.Any.fromFunction1(isMergedTo), master = master, merge = js.Any.fromFunction1(merge), model = model, name = name, names = names, numFmt = numFmt, protection = protection, release = js.Any.fromFunction0(release), releaseMergeRef = js.Any.fromFunction0(releaseMergeRef), removeAllNames = js.Any.fromFunction0(removeAllNames), removeName = js.Any.fromFunction1(removeName), result = result.asInstanceOf[js.Any], row = row, style = style, text = text, toCsvString = js.Any.fromFunction0(toCsvString), toString = js.Any.fromFunction0(toString), unmerge = js.Any.fromFunction0(unmerge), workbook = workbook, worksheet = worksheet)
-    __obj.updateDynamic("type")(`type`)
-    if (sheetName != null) __obj.updateDynamic("sheetName")(sheetName)
+    val __obj = js.Dynamic.literal($col$row = $col$row.asInstanceOf[js.Any], addMergeRef = js.Any.fromFunction0(addMergeRef), addName = js.Any.fromFunction1(addName), address = address.asInstanceOf[js.Any], alignment = alignment.asInstanceOf[js.Any], border = border.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], dataValidation = dataValidation.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), effectiveType = effectiveType.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], formula = formula.asInstanceOf[js.Any], formulaType = formulaType.asInstanceOf[js.Any], fullAddress = fullAddress.asInstanceOf[js.Any], hyperlink = hyperlink.asInstanceOf[js.Any], isHyperlink = isHyperlink.asInstanceOf[js.Any], isMerged = isMerged.asInstanceOf[js.Any], isMergedTo = js.Any.fromFunction1(isMergedTo), master = master.asInstanceOf[js.Any], merge = js.Any.fromFunction1(merge), model = model.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], numFmt = numFmt.asInstanceOf[js.Any], protection = protection.asInstanceOf[js.Any], release = js.Any.fromFunction0(release), releaseMergeRef = js.Any.fromFunction0(releaseMergeRef), removeAllNames = js.Any.fromFunction0(removeAllNames), removeName = js.Any.fromFunction1(removeName), result = result.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], toCsvString = js.Any.fromFunction0(toCsvString), unmerge = js.Any.fromFunction0(unmerge), workbook = workbook.asInstanceOf[js.Any], worksheet = worksheet.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (sheetName != null) __obj.updateDynamic("sheetName")(sheetName.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cell]
   }

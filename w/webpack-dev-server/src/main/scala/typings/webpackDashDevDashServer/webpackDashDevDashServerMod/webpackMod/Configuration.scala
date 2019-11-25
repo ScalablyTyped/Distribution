@@ -17,7 +17,7 @@ object Configuration {
     devServer: typings.webpackDashDevDashServer.webpackDashDevDashServerMod.webpackMod.Configuration = null
   ): Configuration = {
     val __obj = js.Dynamic.literal()
-    if (devServer != null) __obj.updateDynamic("devServer")(devServer)
+    if (devServer != null) __obj.updateDynamic("devServer")(devServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
 }

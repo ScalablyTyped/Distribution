@@ -14,7 +14,7 @@ trait RemoveStorageParams extends js.Object {
 object RemoveStorageParams {
   @scala.inline
   def apply(key: String, complete: () => Unit = null, fail: () => Unit = null, success: () => Unit = null): RemoveStorageParams = {
-    val __obj = js.Dynamic.literal(key = key)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))

@@ -63,13 +63,13 @@ object Anon_Cache {
     validation: String = null
   ): Anon_Cache = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
-    if (compress != null) __obj.updateDynamic("compress")(compress)
-    if (encrypt != null) __obj.updateDynamic("encrypt")(encrypt)
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (compress != null) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
+    if (encrypt != null) __obj.updateDynamic("encrypt")(encrypt.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (sqlType != null) __obj.updateDynamic("sqlType")(sqlType)
-    if (validation != null) __obj.updateDynamic("validation")(validation)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (sqlType != null) __obj.updateDynamic("sqlType")(sqlType.asInstanceOf[js.Any])
+    if (validation != null) __obj.updateDynamic("validation")(validation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cache]
   }
 }

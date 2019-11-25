@@ -13,7 +13,7 @@ trait Anon_OriginalEventProgress extends js.Object {
 object Anon_OriginalEventProgress {
   @scala.inline
   def apply(originalEvent: Event, progress: js.Any): Anon_OriginalEventProgress = {
-    val __obj = js.Dynamic.literal(originalEvent = originalEvent, progress = progress)
+    val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_OriginalEventProgress]
   }

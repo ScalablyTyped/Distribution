@@ -26,12 +26,12 @@ object IEmailComposerOptions {
     subject: String = null
   ): IEmailComposerOptions = {
     val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
     if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (cc != null) __obj.updateDynamic("cc")(cc.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHtml)) __obj.updateDynamic("isHtml")(isHtml)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (!js.isUndefined(isHtml)) __obj.updateDynamic("isHtml")(isHtml.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEmailComposerOptions]
   }
 }

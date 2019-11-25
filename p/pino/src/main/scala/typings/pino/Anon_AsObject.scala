@@ -24,7 +24,7 @@ object Anon_AsObject {
   @scala.inline
   def apply(asObject: js.UndefOr[Boolean] = js.undefined, write: WriteFn | Anon_Debug = null): Anon_AsObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(asObject)) __obj.updateDynamic("asObject")(asObject)
+    if (!js.isUndefined(asObject)) __obj.updateDynamic("asObject")(asObject.asInstanceOf[js.Any])
     if (write != null) __obj.updateDynamic("write")(write.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AsObject]
   }

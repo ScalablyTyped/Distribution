@@ -28,9 +28,9 @@ object GoogleActionsV2InputPrompt {
     richInitialPrompt: GoogleActionsV2RichResponse = null
   ): GoogleActionsV2InputPrompt = {
     val __obj = js.Dynamic.literal()
-    if (initialPrompts != null) __obj.updateDynamic("initialPrompts")(initialPrompts)
-    if (noInputPrompts != null) __obj.updateDynamic("noInputPrompts")(noInputPrompts)
-    if (richInitialPrompt != null) __obj.updateDynamic("richInitialPrompt")(richInitialPrompt)
+    if (initialPrompts != null) __obj.updateDynamic("initialPrompts")(initialPrompts.asInstanceOf[js.Any])
+    if (noInputPrompts != null) __obj.updateDynamic("noInputPrompts")(noInputPrompts.asInstanceOf[js.Any])
+    if (richInitialPrompt != null) __obj.updateDynamic("richInitialPrompt")(richInitialPrompt.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2InputPrompt]
   }
 }

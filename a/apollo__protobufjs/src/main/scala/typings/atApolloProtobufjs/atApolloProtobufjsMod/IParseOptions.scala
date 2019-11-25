@@ -18,8 +18,8 @@ object IParseOptions {
     keepCase: js.UndefOr[Boolean] = js.undefined
   ): IParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alternateCommentMode)) __obj.updateDynamic("alternateCommentMode")(alternateCommentMode)
-    if (!js.isUndefined(keepCase)) __obj.updateDynamic("keepCase")(keepCase)
+    if (!js.isUndefined(alternateCommentMode)) __obj.updateDynamic("alternateCommentMode")(alternateCommentMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepCase)) __obj.updateDynamic("keepCase")(keepCase.asInstanceOf[js.Any])
     __obj.asInstanceOf[IParseOptions]
   }
 }

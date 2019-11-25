@@ -13,7 +13,7 @@ trait AddonPanelProps extends js.Object {
 object AddonPanelProps {
   @scala.inline
   def apply(active: Boolean, children: ReactNode = null): AddonPanelProps = {
-    val __obj = js.Dynamic.literal(active = active)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddonPanelProps]
   }

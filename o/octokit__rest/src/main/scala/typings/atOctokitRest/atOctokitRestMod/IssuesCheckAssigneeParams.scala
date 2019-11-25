@@ -13,7 +13,7 @@ trait IssuesCheckAssigneeParams extends js.Object {
 object IssuesCheckAssigneeParams {
   @scala.inline
   def apply(assignee: String, owner: String, repo: String): IssuesCheckAssigneeParams = {
-    val __obj = js.Dynamic.literal(assignee = assignee, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(assignee = assignee.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IssuesCheckAssigneeParams]
   }

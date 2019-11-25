@@ -24,12 +24,12 @@ object SchedulerMessagesRecurrenceEditorEnd {
     on: String = null
   ): SchedulerMessagesRecurrenceEditorEnd = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (mobileLabel != null) __obj.updateDynamic("mobileLabel")(mobileLabel)
-    if (never != null) __obj.updateDynamic("never")(never)
-    if (occurrence != null) __obj.updateDynamic("occurrence")(occurrence)
-    if (on != null) __obj.updateDynamic("on")(on)
+    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (mobileLabel != null) __obj.updateDynamic("mobileLabel")(mobileLabel.asInstanceOf[js.Any])
+    if (never != null) __obj.updateDynamic("never")(never.asInstanceOf[js.Any])
+    if (occurrence != null) __obj.updateDynamic("occurrence")(occurrence.asInstanceOf[js.Any])
+    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerMessagesRecurrenceEditorEnd]
   }
 }

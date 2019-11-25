@@ -14,9 +14,9 @@ object RoutineReference {
   @scala.inline
   def apply(datasetId: String = null, projectId: String = null, routineId: String = null): RoutineReference = {
     val __obj = js.Dynamic.literal()
-    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
-    if (routineId != null) __obj.updateDynamic("routineId")(routineId)
+    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    if (routineId != null) __obj.updateDynamic("routineId")(routineId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoutineReference]
   }
 }

@@ -43,7 +43,7 @@ object Anon_Bytes {
     path: String,
     raw: IncomingMessage
   ): Anon_Bytes = {
-    val __obj = js.Dynamic.literal(bytes = bytes, headers = headers, ip = ip, method = method, path = path, raw = raw)
+    val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Bytes]
   }

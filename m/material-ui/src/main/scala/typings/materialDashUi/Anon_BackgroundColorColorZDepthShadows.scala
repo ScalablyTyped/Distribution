@@ -14,9 +14,9 @@ object Anon_BackgroundColorColorZDepthShadows {
   @scala.inline
   def apply(backgroundColor: String = null, color: String = null, zDepthShadows: js.Array[String] = null): Anon_BackgroundColorColorZDepthShadows = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (zDepthShadows != null) __obj.updateDynamic("zDepthShadows")(zDepthShadows)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (zDepthShadows != null) __obj.updateDynamic("zDepthShadows")(zDepthShadows.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackgroundColorColorZDepthShadows]
   }
 }

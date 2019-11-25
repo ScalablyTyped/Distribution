@@ -38,10 +38,10 @@ object AssumeRoleParams {
     SerialNumber: String = null,
     TokenCode: String = null
   ): AssumeRoleParams = {
-    val __obj = js.Dynamic.literal(RoleArn = RoleArn, RoleSessionName = RoleSessionName)
-    if (ExternalId != null) __obj.updateDynamic("ExternalId")(ExternalId)
-    if (SerialNumber != null) __obj.updateDynamic("SerialNumber")(SerialNumber)
-    if (TokenCode != null) __obj.updateDynamic("TokenCode")(TokenCode)
+    val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any], RoleSessionName = RoleSessionName.asInstanceOf[js.Any])
+    if (ExternalId != null) __obj.updateDynamic("ExternalId")(ExternalId.asInstanceOf[js.Any])
+    if (SerialNumber != null) __obj.updateDynamic("SerialNumber")(SerialNumber.asInstanceOf[js.Any])
+    if (TokenCode != null) __obj.updateDynamic("TokenCode")(TokenCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssumeRoleParams]
   }
 }

@@ -20,7 +20,7 @@ object DataOptions {
   @scala.inline
   def apply(`type`: String = null, value: Int | Double = null, value2: Int | Double = null): DataOptions = {
     val __obj = js.Dynamic.literal()
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (value2 != null) __obj.updateDynamic("value2")(value2.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataOptions]

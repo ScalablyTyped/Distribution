@@ -14,8 +14,8 @@ trait DeleteChange extends js.Object {
 object DeleteChange {
   @scala.inline
   def apply(howMany: Double, index: Double, `type`: delete): DeleteChange = {
-    val __obj = js.Dynamic.literal(howMany = howMany, index = index)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(howMany = howMany.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteChange]
   }
 }

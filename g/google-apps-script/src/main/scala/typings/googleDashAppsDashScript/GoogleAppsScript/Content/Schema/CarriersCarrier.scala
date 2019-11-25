@@ -14,9 +14,9 @@ object CarriersCarrier {
   @scala.inline
   def apply(country: String = null, name: String = null, services: js.Array[String] = null): CarriersCarrier = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (services != null) __obj.updateDynamic("services")(services)
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (services != null) __obj.updateDynamic("services")(services.asInstanceOf[js.Any])
     __obj.asInstanceOf[CarriersCarrier]
   }
 }

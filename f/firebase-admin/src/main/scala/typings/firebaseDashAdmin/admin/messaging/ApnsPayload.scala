@@ -20,8 +20,8 @@ trait ApnsPayload
 object ApnsPayload {
   @scala.inline
   def apply(aps: Aps, StringDictionary: /* customData */ StringDictionary[js.Object] = null): ApnsPayload = {
-    val __obj = js.Dynamic.literal(aps = aps)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(aps = aps.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ApnsPayload]
   }
 }

@@ -22,9 +22,9 @@ object Usersettings {
     notification: Anon_MoreFromAuthors = null
   ): Usersettings = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (notesExport != null) __obj.updateDynamic("notesExport")(notesExport)
-    if (notification != null) __obj.updateDynamic("notification")(notification)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (notesExport != null) __obj.updateDynamic("notesExport")(notesExport.asInstanceOf[js.Any])
+    if (notification != null) __obj.updateDynamic("notification")(notification.asInstanceOf[js.Any])
     __obj.asInstanceOf[Usersettings]
   }
 }

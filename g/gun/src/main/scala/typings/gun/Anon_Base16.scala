@@ -29,7 +29,7 @@ object Anon_Base16 {
     name: `SHA-256` | PBKDF2,
     salt: js.Any
   ): Anon_Base16 = {
-    val __obj = js.Dynamic.literal(encode = encode.asInstanceOf[js.Any], hash = hash, iterations = iterations, length = length, name = name.asInstanceOf[js.Any], salt = salt)
+    val __obj = js.Dynamic.literal(encode = encode.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], salt = salt.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Base16]
   }

@@ -33,10 +33,10 @@ object Props_2 {
     two: ReactNode = null,
     zero: ReactNode = null
   ): Props_2 = {
-    val __obj = js.Dynamic.literal(intl = intl, value = value)
+    val __obj = js.Dynamic.literal(intl = intl.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (few != null) __obj.updateDynamic("few")(few.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (many != null) __obj.updateDynamic("many")(many.asInstanceOf[js.Any])
     if (one != null) __obj.updateDynamic("one")(one.asInstanceOf[js.Any])
     if (other != null) __obj.updateDynamic("other")(other.asInstanceOf[js.Any])

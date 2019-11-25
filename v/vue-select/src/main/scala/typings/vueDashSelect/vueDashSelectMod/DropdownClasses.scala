@@ -27,7 +27,7 @@ object DropdownClasses {
     single: Boolean,
     unsearchable: Boolean
   ): DropdownClasses = {
-    val __obj = js.Dynamic.literal(disabled = disabled, loading = loading, open = open, rtl = rtl, searchable = searchable, searching = searching, single = single, unsearchable = unsearchable)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], rtl = rtl.asInstanceOf[js.Any], searchable = searchable.asInstanceOf[js.Any], searching = searching.asInstanceOf[js.Any], single = single.asInstanceOf[js.Any], unsearchable = unsearchable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DropdownClasses]
   }

@@ -12,7 +12,7 @@ object Anon_Logout {
   @scala.inline
   def apply(logout: js.Object = null): Anon_Logout = {
     val __obj = js.Dynamic.literal()
-    if (logout != null) __obj.updateDynamic("logout")(logout)
+    if (logout != null) __obj.updateDynamic("logout")(logout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Logout]
   }
 }

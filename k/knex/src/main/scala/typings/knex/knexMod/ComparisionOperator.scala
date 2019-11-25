@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait ComparisionOperator extends js.Object
 
+object ComparisionOperator {
+  @scala.inline
+  def `<`: typings.knex.knexStrings.`<` = this.cast("<")
+  @scala.inline
+  def `<=`: typings.knex.knexStrings.`<=` = this.cast("<=")
+  @scala.inline
+  def `<>`: typings.knex.knexStrings.`<>` = this.cast("<>")
+  @scala.inline
+  def `=`: typings.knex.knexStrings.`=` = this.cast("=")
+  @scala.inline
+  def `>`: typings.knex.knexStrings.`>` = this.cast(">")
+  @scala.inline
+  def `>=`: typings.knex.knexStrings.`>=` = this.cast(">=")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -27,13 +27,13 @@ object TreeViewDragEvent {
     sourceNode: Element = null,
     statusClass: String = null
   ): TreeViewDragEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget.asInstanceOf[js.Any])
     if (pageX != null) __obj.updateDynamic("pageX")(pageX.asInstanceOf[js.Any])
     if (pageY != null) __obj.updateDynamic("pageY")(pageY.asInstanceOf[js.Any])
-    if (setStatusClass != null) __obj.updateDynamic("setStatusClass")(setStatusClass)
-    if (sourceNode != null) __obj.updateDynamic("sourceNode")(sourceNode)
-    if (statusClass != null) __obj.updateDynamic("statusClass")(statusClass)
+    if (setStatusClass != null) __obj.updateDynamic("setStatusClass")(setStatusClass.asInstanceOf[js.Any])
+    if (sourceNode != null) __obj.updateDynamic("sourceNode")(sourceNode.asInstanceOf[js.Any])
+    if (statusClass != null) __obj.updateDynamic("statusClass")(statusClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeViewDragEvent]
   }
 }

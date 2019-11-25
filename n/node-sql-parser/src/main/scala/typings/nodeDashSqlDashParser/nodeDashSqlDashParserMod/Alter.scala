@@ -14,8 +14,8 @@ trait Alter extends AST {
 object Alter {
   @scala.inline
   def apply(expr: js.Any, table: From, `type`: alter): Alter = {
-    val __obj = js.Dynamic.literal(expr = expr, table = table)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(expr = expr.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alter]
   }
 }

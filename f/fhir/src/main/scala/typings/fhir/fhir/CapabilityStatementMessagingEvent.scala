@@ -75,19 +75,19 @@ object CapabilityStatementMessagingEvent {
     id: String = null,
     modifierExtension: js.Array[Extension] = null
   ): CapabilityStatementMessagingEvent = {
-    val __obj = js.Dynamic.literal(code = code, focus = focus, mode = mode, request = request, response = response)
-    if (_category != null) __obj.updateDynamic("_category")(_category)
-    if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_focus != null) __obj.updateDynamic("_focus")(_focus)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_mode != null) __obj.updateDynamic("_mode")(_mode)
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
+    if (_category != null) __obj.updateDynamic("_category")(_category.asInstanceOf[js.Any])
+    if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_focus != null) __obj.updateDynamic("_focus")(_focus.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_mode != null) __obj.updateDynamic("_mode")(_mode.asInstanceOf[js.Any])
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapabilityStatementMessagingEvent]
   }
 }

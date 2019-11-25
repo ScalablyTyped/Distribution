@@ -12,7 +12,7 @@ trait Api extends js.Object {
 object Api {
   @scala.inline
   def apply(keys: Anon_Disable): Api = {
-    val __obj = js.Dynamic.literal(keys = keys)
+    val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Api]
   }

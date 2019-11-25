@@ -25,6 +25,5 @@ object PedalMarking extends js.Object {
   @js.native
   object GLYPHS extends /* name */ StringDictionary[Anon_CodeXshift]
   
-  type Styles = typings.vexflow.Vex.Flow.PedalMarking.Styles
 }
 

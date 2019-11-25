@@ -14,8 +14,8 @@ trait Anon_Chain extends js.Object {
 object Anon_Chain {
   @scala.inline
   def apply(chain: FormattedMessageChain, position: Position = null): Anon_Chain = {
-    val __obj = js.Dynamic.literal(chain = chain)
-    if (position != null) __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(chain = chain.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Chain]
   }
 }

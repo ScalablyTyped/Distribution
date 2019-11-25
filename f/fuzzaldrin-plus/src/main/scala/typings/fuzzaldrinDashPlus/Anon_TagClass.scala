@@ -14,9 +14,9 @@ object Anon_TagClass {
   @scala.inline
   def apply(tagClass: String = null, tagClose: String = null, tagOpen: String = null): Anon_TagClass = {
     val __obj = js.Dynamic.literal()
-    if (tagClass != null) __obj.updateDynamic("tagClass")(tagClass)
-    if (tagClose != null) __obj.updateDynamic("tagClose")(tagClose)
-    if (tagOpen != null) __obj.updateDynamic("tagOpen")(tagOpen)
+    if (tagClass != null) __obj.updateDynamic("tagClass")(tagClass.asInstanceOf[js.Any])
+    if (tagClose != null) __obj.updateDynamic("tagClose")(tagClose.asInstanceOf[js.Any])
+    if (tagOpen != null) __obj.updateDynamic("tagOpen")(tagOpen.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TagClass]
   }
 }

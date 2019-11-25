@@ -24,9 +24,9 @@ object Anon_CornerTypeEllipsoidGranularityPolylinePositions {
     ellipsoid: Ellipsoid = null,
     granularity: Int | Double = null
   ): Anon_CornerTypeEllipsoidGranularityPolylinePositions = {
-    val __obj = js.Dynamic.literal(polylinePositions = polylinePositions, shapePositions = shapePositions)
-    if (cornerType != null) __obj.updateDynamic("cornerType")(cornerType)
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    val __obj = js.Dynamic.literal(polylinePositions = polylinePositions.asInstanceOf[js.Any], shapePositions = shapePositions.asInstanceOf[js.Any])
+    if (cornerType != null) __obj.updateDynamic("cornerType")(cornerType.asInstanceOf[js.Any])
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
     if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CornerTypeEllipsoidGranularityPolylinePositions]
   }

@@ -24,8 +24,8 @@ trait _PutRecordsRequestEntry extends js.Object {
 object _PutRecordsRequestEntry {
   @scala.inline
   def apply(Data: ArrayBuffer | ArrayBufferView | String, PartitionKey: String, ExplicitHashKey: String = null): _PutRecordsRequestEntry = {
-    val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], PartitionKey = PartitionKey)
-    if (ExplicitHashKey != null) __obj.updateDynamic("ExplicitHashKey")(ExplicitHashKey)
+    val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], PartitionKey = PartitionKey.asInstanceOf[js.Any])
+    if (ExplicitHashKey != null) __obj.updateDynamic("ExplicitHashKey")(ExplicitHashKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[_PutRecordsRequestEntry]
   }
 }

@@ -13,7 +13,7 @@ trait Features extends js.Object {
 object Features {
   @scala.inline
   def apply(intl: Boolean, intlTokens: Boolean, zones: Boolean): Features = {
-    val __obj = js.Dynamic.literal(intl = intl, intlTokens = intlTokens, zones = zones)
+    val __obj = js.Dynamic.literal(intl = intl.asInstanceOf[js.Any], intlTokens = intlTokens.asInstanceOf[js.Any], zones = zones.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Features]
   }

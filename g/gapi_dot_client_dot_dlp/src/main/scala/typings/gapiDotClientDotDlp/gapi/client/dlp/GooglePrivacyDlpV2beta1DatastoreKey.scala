@@ -13,7 +13,7 @@ object GooglePrivacyDlpV2beta1DatastoreKey {
   @scala.inline
   def apply(entityKey: GooglePrivacyDlpV2beta1Key = null): GooglePrivacyDlpV2beta1DatastoreKey = {
     val __obj = js.Dynamic.literal()
-    if (entityKey != null) __obj.updateDynamic("entityKey")(entityKey)
+    if (entityKey != null) __obj.updateDynamic("entityKey")(entityKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1DatastoreKey]
   }
 }

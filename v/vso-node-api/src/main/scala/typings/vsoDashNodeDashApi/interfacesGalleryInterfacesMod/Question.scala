@@ -23,7 +23,7 @@ object Question {
     updatedDate: Date,
     user: UserIdentityRef
   ): Question = {
-    val __obj = js.Dynamic.literal(createdDate = createdDate, id = id, responses = responses, status = status, text = text, updatedDate = updatedDate, user = user)
+    val __obj = js.Dynamic.literal(createdDate = createdDate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], updatedDate = updatedDate.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Question]
   }

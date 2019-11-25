@@ -17,8 +17,8 @@ object IFlattenNode {
   @scala.inline
   def apply(node: IQueryPlanNode = null, responsePath: js.Array[IResponsePathElement] = null): IFlattenNode = {
     val __obj = js.Dynamic.literal()
-    if (node != null) __obj.updateDynamic("node")(node)
-    if (responsePath != null) __obj.updateDynamic("responsePath")(responsePath)
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    if (responsePath != null) __obj.updateDynamic("responsePath")(responsePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFlattenNode]
   }
 }

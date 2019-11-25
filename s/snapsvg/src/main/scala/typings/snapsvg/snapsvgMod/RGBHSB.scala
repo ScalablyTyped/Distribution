@@ -29,7 +29,7 @@ object RGBHSB {
     s: Double,
     v: Double
   ): RGBHSB = {
-    val __obj = js.Dynamic.literal(b = b, error = error, g = g, h = h, hex = hex, l = l, r = r, s = s, v = v)
+    val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], hex = hex.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RGBHSB]
   }

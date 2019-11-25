@@ -13,7 +13,7 @@ trait MUIDataTableTextLabelsFilter extends js.Object {
 object MUIDataTableTextLabelsFilter {
   @scala.inline
   def apply(all: String, reset: String, title: String): MUIDataTableTextLabelsFilter = {
-    val __obj = js.Dynamic.literal(all = all, reset = reset, title = title)
+    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MUIDataTableTextLabelsFilter]
   }

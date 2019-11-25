@@ -23,8 +23,8 @@ object RuleProperties {
     onSuccess: (/* event */ Event, /* almanac */ Almanac, /* ruleResult */ RuleResult) => Unit = null,
     priority: Int | Double = null
   ): RuleProperties = {
-    val __obj = js.Dynamic.literal(conditions = conditions, event = event)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction3(onFailure))
     if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction3(onSuccess))
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])

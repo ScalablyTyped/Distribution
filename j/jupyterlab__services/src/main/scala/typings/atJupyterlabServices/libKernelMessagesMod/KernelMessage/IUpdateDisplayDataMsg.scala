@@ -33,8 +33,8 @@ object IUpdateDisplayDataMsg {
     parent_header: IHeader[MessageType] | js.Object,
     buffers: js.Array[ArrayBuffer | ArrayBufferView] = null
   ): IUpdateDisplayDataMsg = {
-    val __obj = js.Dynamic.literal(channel = channel, content = content, header = header, metadata = metadata, parent_header = parent_header.asInstanceOf[js.Any])
-    if (buffers != null) __obj.updateDynamic("buffers")(buffers)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+    if (buffers != null) __obj.updateDynamic("buffers")(buffers.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUpdateDisplayDataMsg]
   }
 }

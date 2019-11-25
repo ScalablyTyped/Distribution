@@ -47,13 +47,13 @@ object ResizeOptions {
   ): ResizeOptions = {
     val __obj = js.Dynamic.literal()
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (!js.isUndefined(fastShrinkOnLoad)) __obj.updateDynamic("fastShrinkOnLoad")(fastShrinkOnLoad)
+    if (!js.isUndefined(fastShrinkOnLoad)) __obj.updateDynamic("fastShrinkOnLoad")(fastShrinkOnLoad.asInstanceOf[js.Any])
     if (fit != null) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (kernel != null) __obj.updateDynamic("kernel")(kernel.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(withoutEnlargement)) __obj.updateDynamic("withoutEnlargement")(withoutEnlargement)
+    if (!js.isUndefined(withoutEnlargement)) __obj.updateDynamic("withoutEnlargement")(withoutEnlargement.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeOptions]
   }
 }

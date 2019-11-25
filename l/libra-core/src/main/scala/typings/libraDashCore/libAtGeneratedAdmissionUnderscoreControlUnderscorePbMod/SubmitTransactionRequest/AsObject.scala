@@ -16,7 +16,7 @@ object AsObject {
     signedTxn: typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.SignedTransaction.AsObject = null
   ): AsObject = {
     val __obj = js.Dynamic.literal()
-    if (signedTxn != null) __obj.updateDynamic("signedTxn")(signedTxn)
+    if (signedTxn != null) __obj.updateDynamic("signedTxn")(signedTxn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

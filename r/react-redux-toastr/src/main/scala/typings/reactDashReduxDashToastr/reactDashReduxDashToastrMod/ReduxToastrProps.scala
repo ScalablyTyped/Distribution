@@ -38,18 +38,18 @@ object ReduxToastrProps {
     transitionOut: transitionOutType = null
   ): ReduxToastrProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(closeOnToastrClick)) __obj.updateDynamic("closeOnToastrClick")(closeOnToastrClick)
-    if (confirmOptions != null) __obj.updateDynamic("confirmOptions")(confirmOptions)
-    if (!js.isUndefined(newestOnTop)) __obj.updateDynamic("newestOnTop")(newestOnTop)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(preventDuplicates)) __obj.updateDynamic("preventDuplicates")(preventDuplicates)
-    if (!js.isUndefined(progressBar)) __obj.updateDynamic("progressBar")(progressBar)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnToastrClick)) __obj.updateDynamic("closeOnToastrClick")(closeOnToastrClick.asInstanceOf[js.Any])
+    if (confirmOptions != null) __obj.updateDynamic("confirmOptions")(confirmOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(newestOnTop)) __obj.updateDynamic("newestOnTop")(newestOnTop.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventDuplicates)) __obj.updateDynamic("preventDuplicates")(preventDuplicates.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressBar)) __obj.updateDynamic("progressBar")(progressBar.asInstanceOf[js.Any])
     if (timeOut != null) __obj.updateDynamic("timeOut")(timeOut.asInstanceOf[js.Any])
-    if (toastr != null) __obj.updateDynamic("toastr")(toastr)
-    if (transitionIn != null) __obj.updateDynamic("transitionIn")(transitionIn)
-    if (transitionOut != null) __obj.updateDynamic("transitionOut")(transitionOut)
+    if (toastr != null) __obj.updateDynamic("toastr")(toastr.asInstanceOf[js.Any])
+    if (transitionIn != null) __obj.updateDynamic("transitionIn")(transitionIn.asInstanceOf[js.Any])
+    if (transitionOut != null) __obj.updateDynamic("transitionOut")(transitionOut.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReduxToastrProps]
   }
 }

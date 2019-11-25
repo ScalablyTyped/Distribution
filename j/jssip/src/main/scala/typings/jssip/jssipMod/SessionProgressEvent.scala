@@ -12,8 +12,8 @@ trait SessionProgressEvent extends js.Object {
 object SessionProgressEvent {
   @scala.inline
   def apply(originator: String, response: IncomingResponse = null): SessionProgressEvent = {
-    val __obj = js.Dynamic.literal(originator = originator)
-    if (response != null) __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(originator = originator.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionProgressEvent]
   }
 }

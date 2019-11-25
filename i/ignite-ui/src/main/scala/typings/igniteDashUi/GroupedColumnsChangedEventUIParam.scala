@@ -42,12 +42,12 @@ object GroupedColumnsChangedEventUIParam {
     triggeredBy: String = null
   ): GroupedColumnsChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (grid != null) __obj.updateDynamic("grid")(grid)
-    if (groupedColumns != null) __obj.updateDynamic("groupedColumns")(groupedColumns)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (triggeredBy != null) __obj.updateDynamic("triggeredBy")(triggeredBy)
+    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
+    if (groupedColumns != null) __obj.updateDynamic("groupedColumns")(groupedColumns.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (triggeredBy != null) __obj.updateDynamic("triggeredBy")(triggeredBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupedColumnsChangedEventUIParam]
   }
 }

@@ -47,10 +47,10 @@ object AddressCandidateProperties {
     score: Int | Double = null
   ): AddressCandidateProperties = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (extent != null) __obj.updateDynamic("extent")(extent)
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddressCandidateProperties]
   }

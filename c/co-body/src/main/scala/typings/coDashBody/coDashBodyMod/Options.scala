@@ -31,15 +31,15 @@ object Options {
     textTypes: js.Array[String] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (formTypes != null) __obj.updateDynamic("formTypes")(formTypes)
-    if (jsonTypes != null) __obj.updateDynamic("jsonTypes")(jsonTypes)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (formTypes != null) __obj.updateDynamic("formTypes")(formTypes.asInstanceOf[js.Any])
+    if (jsonTypes != null) __obj.updateDynamic("jsonTypes")(jsonTypes.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (queryString != null) __obj.updateDynamic("queryString")(queryString)
-    if (!js.isUndefined(returnRawBody)) __obj.updateDynamic("returnRawBody")(returnRawBody)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
-    if (textTypes != null) __obj.updateDynamic("textTypes")(textTypes)
+    if (queryString != null) __obj.updateDynamic("queryString")(queryString.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnRawBody)) __obj.updateDynamic("returnRawBody")(returnRawBody.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (textTypes != null) __obj.updateDynamic("textTypes")(textTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

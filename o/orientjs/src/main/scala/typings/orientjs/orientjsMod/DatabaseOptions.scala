@@ -25,11 +25,11 @@ object DatabaseOptions {
     `type`: graph | document = null,
     username: String = null
   ): DatabaseOptions = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (password != null) __obj.updateDynamic("password")(password)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseOptions]
   }
 }

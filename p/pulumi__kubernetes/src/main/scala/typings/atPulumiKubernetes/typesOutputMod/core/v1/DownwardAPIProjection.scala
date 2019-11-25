@@ -18,7 +18,7 @@ trait DownwardAPIProjection extends js.Object {
 object DownwardAPIProjection {
   @scala.inline
   def apply(items: js.Array[DownwardAPIVolumeFile]): DownwardAPIProjection = {
-    val __obj = js.Dynamic.literal(items = items)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DownwardAPIProjection]
   }

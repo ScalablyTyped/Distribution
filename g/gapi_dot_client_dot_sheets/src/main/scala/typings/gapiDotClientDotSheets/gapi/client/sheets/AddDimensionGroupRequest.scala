@@ -13,7 +13,7 @@ object AddDimensionGroupRequest {
   @scala.inline
   def apply(range: DimensionRange = null): AddDimensionGroupRequest = {
     val __obj = js.Dynamic.literal()
-    if (range != null) __obj.updateDynamic("range")(range)
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddDimensionGroupRequest]
   }
 }

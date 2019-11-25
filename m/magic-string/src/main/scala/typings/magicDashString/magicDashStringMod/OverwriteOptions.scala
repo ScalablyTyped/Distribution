@@ -13,8 +13,8 @@ object OverwriteOptions {
   @scala.inline
   def apply(contentOnly: js.UndefOr[Boolean] = js.undefined, storeName: js.UndefOr[Boolean] = js.undefined): OverwriteOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(contentOnly)) __obj.updateDynamic("contentOnly")(contentOnly)
-    if (!js.isUndefined(storeName)) __obj.updateDynamic("storeName")(storeName)
+    if (!js.isUndefined(contentOnly)) __obj.updateDynamic("contentOnly")(contentOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(storeName)) __obj.updateDynamic("storeName")(storeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverwriteOptions]
   }
 }

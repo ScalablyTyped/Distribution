@@ -15,8 +15,8 @@ object AppEdit {
   @scala.inline
   def apply(expiryTimeSeconds: String = null, id: String = null): AppEdit = {
     val __obj = js.Dynamic.literal()
-    if (expiryTimeSeconds != null) __obj.updateDynamic("expiryTimeSeconds")(expiryTimeSeconds)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (expiryTimeSeconds != null) __obj.updateDynamic("expiryTimeSeconds")(expiryTimeSeconds.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppEdit]
   }
 }

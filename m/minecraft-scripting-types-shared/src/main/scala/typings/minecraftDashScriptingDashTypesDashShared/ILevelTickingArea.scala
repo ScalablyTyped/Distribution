@@ -19,7 +19,7 @@ trait ILevelTickingArea extends ITickingArea {
 object ILevelTickingArea {
   @scala.inline
   def apply(__type__ : level_ticking_area, level_ticking_area_id: String): ILevelTickingArea = {
-    val __obj = js.Dynamic.literal(__type__ = __type__, level_ticking_area_id = level_ticking_area_id)
+    val __obj = js.Dynamic.literal(__type__ = __type__.asInstanceOf[js.Any], level_ticking_area_id = level_ticking_area_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ILevelTickingArea]
   }

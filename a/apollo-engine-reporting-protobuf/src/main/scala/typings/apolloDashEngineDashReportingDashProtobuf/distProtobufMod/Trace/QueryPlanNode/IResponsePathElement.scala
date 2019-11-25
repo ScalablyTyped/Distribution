@@ -16,7 +16,7 @@ object IResponsePathElement {
   @scala.inline
   def apply(fieldName: String = null, index: Int | Double = null): IResponsePathElement = {
     val __obj = js.Dynamic.literal()
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResponsePathElement]
   }

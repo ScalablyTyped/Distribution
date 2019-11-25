@@ -32,7 +32,7 @@ object IELangEditDelegates {
     selectCallback: js.Function,
     selectHandler: js.Function
   ): IELangEditDelegates = {
-    val __obj = js.Dynamic.literal(btnAddClickHandler = btnAddClickHandler, btnAddHandler = btnAddHandler, insertCallback = insertCallback, insertHandler = insertHandler, modifyCallback = modifyCallback, modifyHandler = modifyHandler, removeCallback = removeCallback, removeHandler = removeHandler, selectCallback = selectCallback, selectHandler = selectHandler)
+    val __obj = js.Dynamic.literal(btnAddClickHandler = btnAddClickHandler.asInstanceOf[js.Any], btnAddHandler = btnAddHandler.asInstanceOf[js.Any], insertCallback = insertCallback.asInstanceOf[js.Any], insertHandler = insertHandler.asInstanceOf[js.Any], modifyCallback = modifyCallback.asInstanceOf[js.Any], modifyHandler = modifyHandler.asInstanceOf[js.Any], removeCallback = removeCallback.asInstanceOf[js.Any], removeHandler = removeHandler.asInstanceOf[js.Any], selectCallback = selectCallback.asInstanceOf[js.Any], selectHandler = selectHandler.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IELangEditDelegates]
   }

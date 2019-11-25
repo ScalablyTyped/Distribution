@@ -13,8 +13,8 @@ object Swagger20Response {
   @scala.inline
   def apply(description: String = null, schema: js.Any = null): Swagger20Response = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[Swagger20Response]
   }
 }

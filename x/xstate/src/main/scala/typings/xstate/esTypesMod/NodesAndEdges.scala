@@ -10,7 +10,7 @@ trait NodesAndEdges[TContext, TEvent /* <: EventObject */] extends js.Object {
     Edge[
       TContext, 
       TEvent, 
-      /* import warning: ImportType.apply Failed type conversion: TEvent['type'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any
     ]
   ]
   var nodes: js.Array[StateNode[_, _, OmniEventObject[EventObject]]]
@@ -23,12 +23,12 @@ object NodesAndEdges {
       Edge[
         TContext, 
         TEvent, 
-        /* import warning: ImportType.apply Failed type conversion: TEvent['type'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any
       ]
     ],
     nodes: js.Array[StateNode[_, _, OmniEventObject[EventObject]]]
   ): NodesAndEdges[TContext, TEvent] = {
-    val __obj = js.Dynamic.literal(edges = edges, nodes = nodes)
+    val __obj = js.Dynamic.literal(edges = edges.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NodesAndEdges[TContext, TEvent]]
   }

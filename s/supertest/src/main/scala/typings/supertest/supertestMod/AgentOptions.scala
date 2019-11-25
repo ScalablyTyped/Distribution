@@ -12,7 +12,7 @@ object AgentOptions {
   @scala.inline
   def apply(ca: js.Any = null): AgentOptions = {
     val __obj = js.Dynamic.literal()
-    if (ca != null) __obj.updateDynamic("ca")(ca)
+    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentOptions]
   }
 }

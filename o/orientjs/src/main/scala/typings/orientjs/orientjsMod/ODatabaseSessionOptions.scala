@@ -13,9 +13,9 @@ trait ODatabaseSessionOptions extends js.Object {
 object ODatabaseSessionOptions {
   @scala.inline
   def apply(name: String, password: String = null, username: String = null): ODatabaseSessionOptions = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (username != null) __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ODatabaseSessionOptions]
   }
 }

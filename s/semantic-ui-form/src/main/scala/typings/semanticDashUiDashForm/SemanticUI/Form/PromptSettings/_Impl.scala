@@ -141,8 +141,8 @@ object _Impl {
     regExp: String,
     url: String
   ): _Impl = {
-    val __obj = js.Dynamic.literal(checked = checked, contain = contain, containExactly = containExactly, creditCard = creditCard, decimal = decimal, different = different, doesntContain = doesntContain, doesntContainExactly = doesntContainExactly, email = email, empty = empty, exactCount = exactCount, exactLength = exactLength, integer = integer, is = is, isExactly = isExactly, length = length, maxCount = maxCount, maxLength = maxLength, minCount = minCount, minLength = minLength, not = not, notExactly = notExactly, number = number, regExp = regExp, url = url)
-    __obj.updateDynamic("match")(`match`)
+    val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], contain = contain.asInstanceOf[js.Any], containExactly = containExactly.asInstanceOf[js.Any], creditCard = creditCard.asInstanceOf[js.Any], decimal = decimal.asInstanceOf[js.Any], different = different.asInstanceOf[js.Any], doesntContain = doesntContain.asInstanceOf[js.Any], doesntContainExactly = doesntContainExactly.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], empty = empty.asInstanceOf[js.Any], exactCount = exactCount.asInstanceOf[js.Any], exactLength = exactLength.asInstanceOf[js.Any], integer = integer.asInstanceOf[js.Any], is = is.asInstanceOf[js.Any], isExactly = isExactly.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], maxCount = maxCount.asInstanceOf[js.Any], maxLength = maxLength.asInstanceOf[js.Any], minCount = minCount.asInstanceOf[js.Any], minLength = minLength.asInstanceOf[js.Any], not = not.asInstanceOf[js.Any], notExactly = notExactly.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], regExp = regExp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Impl]
   }
 }

@@ -31,7 +31,7 @@ package object reactDashNativeDashElementsMod {
     - java.lang.String
   */
   type IconType = _IconType | String
-  type RecursivePartial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type RecursivePartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias react-native-elements.react-native-elements.RecursivePartial<T[P]> * / object}
     */ typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.RecursivePartial with js.Any
   type ReplaceTheme = js.Function1[/* updates */ RecursivePartial[FullTheme], Unit]

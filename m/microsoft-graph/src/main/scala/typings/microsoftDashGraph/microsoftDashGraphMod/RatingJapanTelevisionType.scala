@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait RatingJapanTelevisionType extends js.Object
 
+object RatingJapanTelevisionType {
+  @scala.inline
+  def allAllowed: typings.microsoftDashGraph.microsoftDashGraphStrings.allAllowed = this.cast("allAllowed")
+  @scala.inline
+  def allBlocked: typings.microsoftDashGraph.microsoftDashGraphStrings.allBlocked = this.cast("allBlocked")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def explicitAllowed: typings.microsoftDashGraph.microsoftDashGraphStrings.explicitAllowed = this.cast("explicitAllowed")
+}
+

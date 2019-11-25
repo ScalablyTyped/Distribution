@@ -14,7 +14,7 @@ object GatewayList {
   @scala.inline
   def apply(gateways: js.Array[Gateway] = null): GatewayList = {
     val __obj = js.Dynamic.literal()
-    if (gateways != null) __obj.updateDynamic("gateways")(gateways)
+    if (gateways != null) __obj.updateDynamic("gateways")(gateways.asInstanceOf[js.Any])
     __obj.asInstanceOf[GatewayList]
   }
 }

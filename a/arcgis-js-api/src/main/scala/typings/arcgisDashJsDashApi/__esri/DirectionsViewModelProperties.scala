@@ -90,15 +90,15 @@ object DirectionsViewModelProperties {
   ): DirectionsViewModelProperties = {
     val __obj = js.Dynamic.literal()
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(js.Any.fromFunction2(goToOverride))
-    if (impedanceAttribute != null) __obj.updateDynamic("impedanceAttribute")(impedanceAttribute)
+    if (impedanceAttribute != null) __obj.updateDynamic("impedanceAttribute")(impedanceAttribute.asInstanceOf[js.Any])
     if (maxStops != null) __obj.updateDynamic("maxStops")(maxStops.asInstanceOf[js.Any])
-    if (routeParameters != null) __obj.updateDynamic("routeParameters")(routeParameters)
-    if (routeServiceUrl != null) __obj.updateDynamic("routeServiceUrl")(routeServiceUrl)
-    if (routeSymbol != null) __obj.updateDynamic("routeSymbol")(routeSymbol)
-    if (selectedTravelMode != null) __obj.updateDynamic("selectedTravelMode")(selectedTravelMode)
-    if (stopSymbols != null) __obj.updateDynamic("stopSymbols")(stopSymbols)
+    if (routeParameters != null) __obj.updateDynamic("routeParameters")(routeParameters.asInstanceOf[js.Any])
+    if (routeServiceUrl != null) __obj.updateDynamic("routeServiceUrl")(routeServiceUrl.asInstanceOf[js.Any])
+    if (routeSymbol != null) __obj.updateDynamic("routeSymbol")(routeSymbol.asInstanceOf[js.Any])
+    if (selectedTravelMode != null) __obj.updateDynamic("selectedTravelMode")(selectedTravelMode.asInstanceOf[js.Any])
+    if (stopSymbols != null) __obj.updateDynamic("stopSymbols")(stopSymbols.asInstanceOf[js.Any])
     if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
-    if (timeAttribute != null) __obj.updateDynamic("timeAttribute")(timeAttribute)
+    if (timeAttribute != null) __obj.updateDynamic("timeAttribute")(timeAttribute.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsViewModelProperties]
   }

@@ -14,7 +14,7 @@ trait QueryDetailsResponseOption extends js.Object {
 object QueryDetailsResponseOption {
   @scala.inline
   def apply(stream: Boolean): QueryDetailsResponseOption = {
-    val __obj = js.Dynamic.literal(stream = stream)
+    val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QueryDetailsResponseOption]
   }

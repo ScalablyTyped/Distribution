@@ -32,7 +32,7 @@ object IRunnerOptions {
   def apply(delta: Int | Double = null, isFixed: js.UndefOr[Boolean] = js.undefined): IRunnerOptions = {
     val __obj = js.Dynamic.literal()
     if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFixed)) __obj.updateDynamic("isFixed")(isFixed)
+    if (!js.isUndefined(isFixed)) __obj.updateDynamic("isFixed")(isFixed.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRunnerOptions]
   }
 }

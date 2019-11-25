@@ -51,11 +51,11 @@ object FormatOptions {
     wrapAt: `false` | Double = null
   ): FormatOptions = {
     val __obj = js.Dynamic.literal()
-    if (breakWith != null) __obj.updateDynamic("breakWith")(breakWith)
-    if (breaks != null) __obj.updateDynamic("breaks")(breaks)
+    if (breakWith != null) __obj.updateDynamic("breakWith")(breakWith.asInstanceOf[js.Any])
+    if (breaks != null) __obj.updateDynamic("breaks")(breaks.asInstanceOf[js.Any])
     if (indentBy != null) __obj.updateDynamic("indentBy")(indentBy.asInstanceOf[js.Any])
     if (indentWith != null) __obj.updateDynamic("indentWith")(indentWith.asInstanceOf[js.Any])
-    if (spaces != null) __obj.updateDynamic("spaces")(spaces)
+    if (spaces != null) __obj.updateDynamic("spaces")(spaces.asInstanceOf[js.Any])
     if (wrapAt != null) __obj.updateDynamic("wrapAt")(wrapAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatOptions]
   }

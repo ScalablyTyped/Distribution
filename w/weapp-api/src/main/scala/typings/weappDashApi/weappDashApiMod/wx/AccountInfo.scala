@@ -17,7 +17,7 @@ trait AccountInfo extends js.Object {
 object AccountInfo {
   @scala.inline
   def apply(Plugin: Anon_AppIdVetsion, miniProgram: Anon_AppId): AccountInfo = {
-    val __obj = js.Dynamic.literal(Plugin = Plugin, miniProgram = miniProgram)
+    val __obj = js.Dynamic.literal(Plugin = Plugin.asInstanceOf[js.Any], miniProgram = miniProgram.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AccountInfo]
   }

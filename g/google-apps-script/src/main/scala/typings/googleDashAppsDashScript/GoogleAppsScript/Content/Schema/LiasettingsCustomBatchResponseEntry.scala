@@ -25,11 +25,11 @@ object LiasettingsCustomBatchResponseEntry {
   ): LiasettingsCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
     if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (gmbAccounts != null) __obj.updateDynamic("gmbAccounts")(gmbAccounts)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (liaSettings != null) __obj.updateDynamic("liaSettings")(liaSettings)
-    if (posDataProviders != null) __obj.updateDynamic("posDataProviders")(posDataProviders)
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (gmbAccounts != null) __obj.updateDynamic("gmbAccounts")(gmbAccounts.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (liaSettings != null) __obj.updateDynamic("liaSettings")(liaSettings.asInstanceOf[js.Any])
+    if (posDataProviders != null) __obj.updateDynamic("posDataProviders")(posDataProviders.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiasettingsCustomBatchResponseEntry]
   }
 }

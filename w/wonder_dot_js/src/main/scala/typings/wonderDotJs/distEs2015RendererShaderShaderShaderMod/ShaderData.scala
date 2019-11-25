@@ -15,9 +15,9 @@ object ShaderData {
   @scala.inline
   def apply(`type`: EVariableType, textureId: String = null, value: js.Any = null): ShaderData = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (textureId != null) __obj.updateDynamic("textureId")(textureId)
-    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (textureId != null) __obj.updateDynamic("textureId")(textureId.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShaderData]
   }
 }

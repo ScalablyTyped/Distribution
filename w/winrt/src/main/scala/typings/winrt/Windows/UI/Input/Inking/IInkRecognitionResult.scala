@@ -19,7 +19,7 @@ object IInkRecognitionResult {
     getStrokes: () => IVectorView[InkStroke],
     getTextCandidates: () => IVectorView[String]
   ): IInkRecognitionResult = {
-    val __obj = js.Dynamic.literal(boundingRect = boundingRect, getStrokes = js.Any.fromFunction0(getStrokes), getTextCandidates = js.Any.fromFunction0(getTextCandidates))
+    val __obj = js.Dynamic.literal(boundingRect = boundingRect.asInstanceOf[js.Any], getStrokes = js.Any.fromFunction0(getStrokes), getTextCandidates = js.Any.fromFunction0(getTextCandidates))
   
     __obj.asInstanceOf[IInkRecognitionResult]
   }

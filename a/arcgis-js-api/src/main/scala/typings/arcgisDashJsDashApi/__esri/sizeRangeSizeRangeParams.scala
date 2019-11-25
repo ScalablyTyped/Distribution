@@ -30,7 +30,7 @@ object sizeRangeSizeRangeParams {
     propertyIsEnumerable: PropertyKey => Boolean,
     view: MapView
   ): sizeRangeSizeRangeParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[sizeRangeSizeRangeParams]
   }

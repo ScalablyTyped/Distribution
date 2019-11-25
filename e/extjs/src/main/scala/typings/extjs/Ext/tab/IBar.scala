@@ -34,10 +34,6 @@ object IBar {
   def apply(
     IHeader: IHeader = null,
     afterComponentLayout: /* width */ js.UndefOr[js.Any] => Unit = null,
-    afterLayout: () => Unit = null,
-    afterRender: () => Unit = null,
-    baseCls: java.lang.String = null,
-    getLayout: () => typings.extjs.Ext.layout.container.IContainer = null,
     isTabBar: js.UndefOr[Boolean] = js.undefined,
     maxTabWidth: Int | Double = null,
     minTabWidth: Int | Double = null,
@@ -46,18 +42,14 @@ object IBar {
     plain: js.UndefOr[Boolean] = js.undefined
   ): IBar = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IHeader)
+    if (IHeader != null) js.Dynamic.global.Object.assign(__obj, IHeader)
     if (afterComponentLayout != null) __obj.updateDynamic("afterComponentLayout")(js.Any.fromFunction1(afterComponentLayout))
-    if (afterLayout != null) __obj.updateDynamic("afterLayout")(js.Any.fromFunction0(afterLayout))
-    if (afterRender != null) __obj.updateDynamic("afterRender")(js.Any.fromFunction0(afterRender))
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (getLayout != null) __obj.updateDynamic("getLayout")(js.Any.fromFunction0(getLayout))
-    if (!js.isUndefined(isTabBar)) __obj.updateDynamic("isTabBar")(isTabBar)
+    if (!js.isUndefined(isTabBar)) __obj.updateDynamic("isTabBar")(isTabBar.asInstanceOf[js.Any])
     if (maxTabWidth != null) __obj.updateDynamic("maxTabWidth")(maxTabWidth.asInstanceOf[js.Any])
     if (minTabWidth != null) __obj.updateDynamic("minTabWidth")(minTabWidth.asInstanceOf[js.Any])
     if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
     if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction0(onRender))
-    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
+    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBar]
   }
 }

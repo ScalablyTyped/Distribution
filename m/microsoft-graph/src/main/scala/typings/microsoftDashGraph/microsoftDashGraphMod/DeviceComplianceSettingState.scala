@@ -49,18 +49,18 @@ object DeviceComplianceSettingState {
     userPrincipalName: String = null
   ): DeviceComplianceSettingState = {
     val __obj = js.Dynamic.literal()
-    if (complianceGracePeriodExpirationDateTime != null) __obj.updateDynamic("complianceGracePeriodExpirationDateTime")(complianceGracePeriodExpirationDateTime)
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
-    if (deviceModel != null) __obj.updateDynamic("deviceModel")(deviceModel)
-    if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (setting != null) __obj.updateDynamic("setting")(setting)
-    if (settingName != null) __obj.updateDynamic("settingName")(settingName)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (userEmail != null) __obj.updateDynamic("userEmail")(userEmail)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
-    if (userName != null) __obj.updateDynamic("userName")(userName)
-    if (userPrincipalName != null) __obj.updateDynamic("userPrincipalName")(userPrincipalName)
+    if (complianceGracePeriodExpirationDateTime != null) __obj.updateDynamic("complianceGracePeriodExpirationDateTime")(complianceGracePeriodExpirationDateTime.asInstanceOf[js.Any])
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
+    if (deviceModel != null) __obj.updateDynamic("deviceModel")(deviceModel.asInstanceOf[js.Any])
+    if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (setting != null) __obj.updateDynamic("setting")(setting.asInstanceOf[js.Any])
+    if (settingName != null) __obj.updateDynamic("settingName")(settingName.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (userEmail != null) __obj.updateDynamic("userEmail")(userEmail.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
+    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
+    if (userPrincipalName != null) __obj.updateDynamic("userPrincipalName")(userPrincipalName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceComplianceSettingState]
   }
 }

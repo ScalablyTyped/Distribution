@@ -23,9 +23,9 @@ object Declaration {
     value: Value | Raw,
     loc: CssLocation = null
   ): Declaration = {
-    val __obj = js.Dynamic.literal(important = important.asInstanceOf[js.Any], property = property, value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(important = important.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Declaration]
   }
 }

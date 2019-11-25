@@ -41,7 +41,7 @@ object ILayoutSite2 {
     tree: js.Any,
     visibleRange: js.Any
   ): ILayoutSite2 = {
-    val __obj = js.Dynamic.literal(groupCount = groupCount, itemCount = itemCount, realizedRange = realizedRange, tree = tree, visibleRange = visibleRange)
+    val __obj = js.Dynamic.literal(groupCount = groupCount.asInstanceOf[js.Any], itemCount = itemCount.asInstanceOf[js.Any], realizedRange = realizedRange.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any], visibleRange = visibleRange.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ILayoutSite2]
   }

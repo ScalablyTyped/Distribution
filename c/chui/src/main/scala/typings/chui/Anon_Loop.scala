@@ -19,9 +19,9 @@ object Anon_Loop {
     loop: js.UndefOr[Boolean] = js.undefined,
     pagination: js.UndefOr[Boolean] = js.undefined
   ): Anon_Loop = {
-    val __obj = js.Dynamic.literal(panels = panels, target = target)
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
-    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination)
+    val __obj = js.Dynamic.literal(panels = panels.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Loop]
   }
 }

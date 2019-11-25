@@ -16,8 +16,8 @@ trait R3ComponentDef extends js.Object {
 object R3ComponentDef {
   @scala.inline
   def apply(expression: Expression, statements: js.Array[Statement], `type`: Type): R3ComponentDef = {
-    val __obj = js.Dynamic.literal(expression = expression, statements = statements)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], statements = statements.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3ComponentDef]
   }
 }

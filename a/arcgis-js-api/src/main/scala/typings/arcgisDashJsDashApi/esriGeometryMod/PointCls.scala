@@ -1,6 +1,5 @@
 package typings.arcgisDashJsDashApi.esriGeometryMod
 
-import typings.arcgisDashJsDashApi.__esri.Point
 import typings.arcgisDashJsDashApi.__esri.PointProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation._
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html)
   */
-class PointCls () extends Point {
+class PointCls ()
+  extends typings.arcgisDashJsDashApi.__esri.Point {
   def this(properties: PointProperties) = this()
   /**
     * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#using-fromjson) topic in the Guide for more information.

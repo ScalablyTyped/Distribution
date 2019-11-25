@@ -48,13 +48,13 @@ object web3DashUtilsStrings {
   sealed trait grand extends Unit
   
   @js.native
-  sealed trait gwei extends Unit
+  sealed trait gwei_ extends Unit
   
   @js.native
   sealed trait kether extends Unit
   
   @js.native
-  sealed trait kwei extends Unit
+  sealed trait kwei_ extends Unit
   
   @js.native
   sealed trait lovelace extends Unit
@@ -75,7 +75,7 @@ object web3DashUtilsStrings {
   sealed trait milliether extends Unit
   
   @js.native
-  sealed trait mwei extends Unit
+  sealed trait mwei_ extends Unit
   
   @js.native
   sealed trait nano extends Unit
@@ -140,11 +140,11 @@ object web3DashUtilsStrings {
   @scala.inline
   def grand: grand = "grand".asInstanceOf[grand]
   @scala.inline
-  def gwei: gwei = "gwei".asInstanceOf[gwei]
+  def gwei_ : gwei_ = "gwei".asInstanceOf[gwei_]
   @scala.inline
   def kether: kether = "kether".asInstanceOf[kether]
   @scala.inline
-  def kwei: kwei = "kwei".asInstanceOf[kwei]
+  def kwei_ : kwei_ = "kwei".asInstanceOf[kwei_]
   @scala.inline
   def lovelace: lovelace = "lovelace".asInstanceOf[lovelace]
   @scala.inline
@@ -158,7 +158,7 @@ object web3DashUtilsStrings {
   @scala.inline
   def milliether: milliether = "milliether".asInstanceOf[milliether]
   @scala.inline
-  def mwei: mwei = "mwei".asInstanceOf[mwei]
+  def mwei_ : mwei_ = "mwei".asInstanceOf[mwei_]
   @scala.inline
   def nano: nano = "nano".asInstanceOf[nano]
   @scala.inline

@@ -20,10 +20,10 @@ object PivotGridMessages {
     rowFields: String = null
   ): PivotGridMessages = {
     val __obj = js.Dynamic.literal()
-    if (columnFields != null) __obj.updateDynamic("columnFields")(columnFields)
-    if (fieldMenu != null) __obj.updateDynamic("fieldMenu")(fieldMenu)
-    if (measureFields != null) __obj.updateDynamic("measureFields")(measureFields)
-    if (rowFields != null) __obj.updateDynamic("rowFields")(rowFields)
+    if (columnFields != null) __obj.updateDynamic("columnFields")(columnFields.asInstanceOf[js.Any])
+    if (fieldMenu != null) __obj.updateDynamic("fieldMenu")(fieldMenu.asInstanceOf[js.Any])
+    if (measureFields != null) __obj.updateDynamic("measureFields")(measureFields.asInstanceOf[js.Any])
+    if (rowFields != null) __obj.updateDynamic("rowFields")(rowFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotGridMessages]
   }
 }

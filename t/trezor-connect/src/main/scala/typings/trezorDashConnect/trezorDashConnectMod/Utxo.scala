@@ -36,7 +36,7 @@ object Utxo {
     vsize: Double,
     height: Int | Double = null
   ): Utxo = {
-    val __obj = js.Dynamic.literal(addressPath = addressPath, coinbase = coinbase, index = index, own = own, transactionHash = transactionHash, tsize = tsize, value = value, vsize = vsize)
+    val __obj = js.Dynamic.literal(addressPath = addressPath.asInstanceOf[js.Any], coinbase = coinbase.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], own = own.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], tsize = tsize.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], vsize = vsize.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     __obj.asInstanceOf[Utxo]
   }

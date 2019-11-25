@@ -17,9 +17,9 @@ object Anon_Camera {
   @scala.inline
   def apply(camera: Camera = null, canvas: HTMLCanvasElement = null, ellipsoid: Ellipsoid = null): Anon_Camera = {
     val __obj = js.Dynamic.literal()
-    if (camera != null) __obj.updateDynamic("camera")(camera)
-    if (canvas != null) __obj.updateDynamic("canvas")(canvas)
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    if (camera != null) __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
+    if (canvas != null) __obj.updateDynamic("canvas")(canvas.asInstanceOf[js.Any])
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Camera]
   }
 }

@@ -14,8 +14,8 @@ trait ILiteralExpectation extends Expectation {
 object ILiteralExpectation {
   @scala.inline
   def apply(ignoreCase: Boolean, text: String, `type`: literal): ILiteralExpectation = {
-    val __obj = js.Dynamic.literal(ignoreCase = ignoreCase, text = text)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(ignoreCase = ignoreCase.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILiteralExpectation]
   }
 }

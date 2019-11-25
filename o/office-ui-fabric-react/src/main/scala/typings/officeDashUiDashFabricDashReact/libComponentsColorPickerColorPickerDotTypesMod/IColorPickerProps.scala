@@ -103,19 +103,19 @@ object IColorPickerProps {
     theme: ITheme = null
   ): IColorPickerProps = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
-    if (alphaLabel != null) __obj.updateDynamic("alphaLabel")(alphaLabel)
-    if (!js.isUndefined(alphaSliderHidden)) __obj.updateDynamic("alphaSliderHidden")(alphaSliderHidden)
-    if (blueLabel != null) __obj.updateDynamic("blueLabel")(blueLabel)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (alphaLabel != null) __obj.updateDynamic("alphaLabel")(alphaLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(alphaSliderHidden)) __obj.updateDynamic("alphaSliderHidden")(alphaSliderHidden.asInstanceOf[js.Any])
+    if (blueLabel != null) __obj.updateDynamic("blueLabel")(blueLabel.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (greenLabel != null) __obj.updateDynamic("greenLabel")(greenLabel)
-    if (hexLabel != null) __obj.updateDynamic("hexLabel")(hexLabel)
+    if (greenLabel != null) __obj.updateDynamic("greenLabel")(greenLabel.asInstanceOf[js.Any])
+    if (hexLabel != null) __obj.updateDynamic("hexLabel")(hexLabel.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (redLabel != null) __obj.updateDynamic("redLabel")(redLabel)
-    if (!js.isUndefined(showPreview)) __obj.updateDynamic("showPreview")(showPreview)
-    if (strings != null) __obj.updateDynamic("strings")(strings)
+    if (redLabel != null) __obj.updateDynamic("redLabel")(redLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(showPreview)) __obj.updateDynamic("showPreview")(showPreview.asInstanceOf[js.Any])
+    if (strings != null) __obj.updateDynamic("strings")(strings.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColorPickerProps]
   }
 }

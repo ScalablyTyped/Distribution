@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait RegexpOperator extends js.Object
 
+object RegexpOperator {
+  @scala.inline
+  def REGEXP_EXACT_MATCH: typings.googleDashAppsDashScript.googleDashAppsDashScriptStrings.REGEXP_EXACT_MATCH = this.cast("REGEXP_EXACT_MATCH")
+  @scala.inline
+  def REGEXP_PARTIAL_MATCH: typings.googleDashAppsDashScript.googleDashAppsDashScriptStrings.REGEXP_PARTIAL_MATCH = this.cast("REGEXP_PARTIAL_MATCH")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

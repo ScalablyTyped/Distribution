@@ -15,7 +15,7 @@ object StockToolsGuiDefinitionsMeasureMeasureYOptions {
   @scala.inline
   def apply(symbol: String = null): StockToolsGuiDefinitionsMeasureMeasureYOptions = {
     val __obj = js.Dynamic.literal()
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockToolsGuiDefinitionsMeasureMeasureYOptions]
   }
 }

@@ -30,14 +30,14 @@ object DataSourceTransportParameterMapData {
     take: Int | Double = null
   ): DataSourceTransportParameterMapData = {
     val __obj = js.Dynamic.literal()
-    if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (models != null) __obj.updateDynamic("models")(models)
+    if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (models != null) __obj.updateDynamic("models")(models.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (take != null) __obj.updateDynamic("take")(take.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceTransportParameterMapData]
   }

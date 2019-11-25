@@ -13,7 +13,7 @@ trait Anon_ControlIndex extends js.Object {
 object Anon_ControlIndex {
   @scala.inline
   def apply(Control: Control, Index: Double): Anon_ControlIndex = {
-    val __obj = js.Dynamic.literal(Control = Control, Index = Index)
+    val __obj = js.Dynamic.literal(Control = Control.asInstanceOf[js.Any], Index = Index.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ControlIndex]
   }

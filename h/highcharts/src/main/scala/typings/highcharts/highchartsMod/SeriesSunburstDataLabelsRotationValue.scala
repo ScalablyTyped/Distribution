@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait SeriesSunburstDataLabelsRotationValue extends js.Object
 
+object SeriesSunburstDataLabelsRotationValue {
+  @scala.inline
+  def auto: typings.highcharts.highchartsStrings.auto = this.cast("auto")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def parallel: typings.highcharts.highchartsStrings.parallel = this.cast("parallel")
+  @scala.inline
+  def perpendicular: typings.highcharts.highchartsStrings.perpendicular = this.cast("perpendicular")
+}
+

@@ -18,9 +18,9 @@ object ClassificationCollection {
   @scala.inline
   def apply(classifier_id: String = null, collection: js.Array[CollectionItem] = null, url: String = null): ClassificationCollection = {
     val __obj = js.Dynamic.literal()
-    if (classifier_id != null) __obj.updateDynamic("classifier_id")(classifier_id)
-    if (collection != null) __obj.updateDynamic("collection")(collection)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (classifier_id != null) __obj.updateDynamic("classifier_id")(classifier_id.asInstanceOf[js.Any])
+    if (collection != null) __obj.updateDynamic("collection")(collection.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassificationCollection]
   }
 }

@@ -24,12 +24,12 @@ object MariaSslConfiguration {
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   ): MariaSslConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (ca != null) __obj.updateDynamic("ca")(ca)
-    if (capath != null) __obj.updateDynamic("capath")(capath)
-    if (cert != null) __obj.updateDynamic("cert")(cert)
-    if (cipher != null) __obj.updateDynamic("cipher")(cipher)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
+    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
+    if (capath != null) __obj.updateDynamic("capath")(capath.asInstanceOf[js.Any])
+    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
+    if (cipher != null) __obj.updateDynamic("cipher")(cipher.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
     __obj.asInstanceOf[MariaSslConfiguration]
   }
 }

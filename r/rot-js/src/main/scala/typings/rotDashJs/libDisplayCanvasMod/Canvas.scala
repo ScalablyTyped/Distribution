@@ -4,7 +4,7 @@ import typings.rotDashJs.libDisplayBackendMod.Backend
 import typings.rotDashJs.libDisplayTypesMod.DisplayData
 import typings.rotDashJs.libDisplayTypesMod.DisplayOptions
 import typings.std.CanvasRenderingContext2D
-import typings.std.HTMLCanvasElement
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +27,11 @@ object Canvas {
     computeSize: (Double, Double) => js.Tuple2[Double, Double],
     draw: (DisplayData, Boolean) => Unit,
     eventToPosition: (Double, Double) => js.Tuple2[Double, Double],
-    getContainer: () => HTMLCanvasElement,
+    getContainer: () => HTMLElement | Null,
     schedule: js.Function0[Unit] => Unit,
     setOptions: DisplayOptions => Unit
   ): Canvas = {
-    val __obj = js.Dynamic.literal(_ctx = _ctx, _normalizedEventToPosition = js.Any.fromFunction2(_normalizedEventToPosition), _options = _options, _updateSize = js.Any.fromFunction0(_updateSize), clear = js.Any.fromFunction0(clear), computeFontSize = js.Any.fromFunction2(computeFontSize), computeSize = js.Any.fromFunction2(computeSize), draw = js.Any.fromFunction2(draw), eventToPosition = js.Any.fromFunction2(eventToPosition), getContainer = js.Any.fromFunction0(getContainer), schedule = js.Any.fromFunction1(schedule), setOptions = js.Any.fromFunction1(setOptions))
+    val __obj = js.Dynamic.literal(_ctx = _ctx.asInstanceOf[js.Any], _normalizedEventToPosition = js.Any.fromFunction2(_normalizedEventToPosition), _options = _options.asInstanceOf[js.Any], _updateSize = js.Any.fromFunction0(_updateSize), clear = js.Any.fromFunction0(clear), computeFontSize = js.Any.fromFunction2(computeFontSize), computeSize = js.Any.fromFunction2(computeSize), draw = js.Any.fromFunction2(draw), eventToPosition = js.Any.fromFunction2(eventToPosition), getContainer = js.Any.fromFunction0(getContainer), schedule = js.Any.fromFunction1(schedule), setOptions = js.Any.fromFunction1(setOptions))
   
     __obj.asInstanceOf[Canvas]
   }

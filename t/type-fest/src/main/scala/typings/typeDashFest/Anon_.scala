@@ -110,7 +110,7 @@ trait Anon_
   	Engines that this package runs on.
   	*/
   var engines: js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ EngineName in 'npm' | 'node' | string ]: string}
     */ typings.typeDashFest.typeDashFestStrings.Anon_ with js.Any
   ] = js.undefined
@@ -218,7 +218,7 @@ object Anon_ {
     devDependencies: Dependency = null,
     directories: DirectoryLocations = null,
     engineStrict: js.UndefOr[Boolean] = js.undefined,
-    engines: /* import warning: ImportType.apply c Unsupported type mapping: 
+    engines: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ EngineName in 'npm' | 'node' | string ]: string}
     */ typings.typeDashFest.typeDashFestStrings.Anon_ with js.Any = null,
     files: js.Array[String] = null,
@@ -246,39 +246,39 @@ object Anon_ {
     version: String = null
   ): Anon_ = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
     if (bin != null) __obj.updateDynamic("bin")(bin.asInstanceOf[js.Any])
     if (bugs != null) __obj.updateDynamic("bugs")(bugs.asInstanceOf[js.Any])
-    if (bundleDependencies != null) __obj.updateDynamic("bundleDependencies")(bundleDependencies)
-    if (bundledDependencies != null) __obj.updateDynamic("bundledDependencies")(bundledDependencies)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (contributors != null) __obj.updateDynamic("contributors")(contributors)
-    if (cpu != null) __obj.updateDynamic("cpu")(cpu)
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (devDependencies != null) __obj.updateDynamic("devDependencies")(devDependencies)
-    if (directories != null) __obj.updateDynamic("directories")(directories)
-    if (!js.isUndefined(engineStrict)) __obj.updateDynamic("engineStrict")(engineStrict)
-    if (engines != null) __obj.updateDynamic("engines")(engines)
-    if (files != null) __obj.updateDynamic("files")(files)
+    if (bundleDependencies != null) __obj.updateDynamic("bundleDependencies")(bundleDependencies.asInstanceOf[js.Any])
+    if (bundledDependencies != null) __obj.updateDynamic("bundledDependencies")(bundledDependencies.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (contributors != null) __obj.updateDynamic("contributors")(contributors.asInstanceOf[js.Any])
+    if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (devDependencies != null) __obj.updateDynamic("devDependencies")(devDependencies.asInstanceOf[js.Any])
+    if (directories != null) __obj.updateDynamic("directories")(directories.asInstanceOf[js.Any])
+    if (!js.isUndefined(engineStrict)) __obj.updateDynamic("engineStrict")(engineStrict.asInstanceOf[js.Any])
+    if (engines != null) __obj.updateDynamic("engines")(engines.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     if (homepage != null) __obj.updateDynamic("homepage")(homepage.asInstanceOf[js.Any])
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords)
-    if (license != null) __obj.updateDynamic("license")(license)
-    if (licenses != null) __obj.updateDynamic("licenses")(licenses)
-    if (main != null) __obj.updateDynamic("main")(main)
-    if (maintainers != null) __obj.updateDynamic("maintainers")(maintainers)
+    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
+    if (license != null) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
+    if (licenses != null) __obj.updateDynamic("licenses")(licenses.asInstanceOf[js.Any])
+    if (main != null) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
+    if (maintainers != null) __obj.updateDynamic("maintainers")(maintainers.asInstanceOf[js.Any])
     if (man != null) __obj.updateDynamic("man")(man.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (optionalDependencies != null) __obj.updateDynamic("optionalDependencies")(optionalDependencies)
-    if (os != null) __obj.updateDynamic("os")(os)
-    if (peerDependencies != null) __obj.updateDynamic("peerDependencies")(peerDependencies)
-    if (!js.isUndefined(preferGlobal)) __obj.updateDynamic("preferGlobal")(preferGlobal)
-    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
-    if (publishConfig != null) __obj.updateDynamic("publishConfig")(publishConfig)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (optionalDependencies != null) __obj.updateDynamic("optionalDependencies")(optionalDependencies.asInstanceOf[js.Any])
+    if (os != null) __obj.updateDynamic("os")(os.asInstanceOf[js.Any])
+    if (peerDependencies != null) __obj.updateDynamic("peerDependencies")(peerDependencies.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferGlobal)) __obj.updateDynamic("preferGlobal")(preferGlobal.asInstanceOf[js.Any])
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
+    if (publishConfig != null) __obj.updateDynamic("publishConfig")(publishConfig.asInstanceOf[js.Any])
     if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
-    if (scripts != null) __obj.updateDynamic("scripts")(scripts)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_]
   }
 }

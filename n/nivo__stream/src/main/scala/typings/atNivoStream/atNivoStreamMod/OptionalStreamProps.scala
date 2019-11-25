@@ -96,14 +96,14 @@ object OptionalStreamProps {
     motionDamping: Int | Double = null,
     motionStiffness: Int | Double = null
   ): OptionalStreamProps[T] = {
-    val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], borderWidth = borderWidth, colors = colors.asInstanceOf[js.Any], curve = curve, dotBorderColor = dotBorderColor.asInstanceOf[js.Any], dotBorderWidth = dotBorderWidth.asInstanceOf[js.Any], dotColor = dotColor.asInstanceOf[js.Any], dotPosition = dotPosition.asInstanceOf[js.Any], dotSize = dotSize.asInstanceOf[js.Any], enableDots = enableDots, enableGridX = enableGridX, enableGridY = enableGridY, enableStackTooltip = enableStackTooltip, fillOpacity = fillOpacity, isInteractive = isInteractive, legends = legends, margin = margin, offsetType = offsetType, order = order, renderDot = renderDot, stack = js.Any.fromFunction1(stack), theme = theme, tooltipFormat = tooltipFormat.asInstanceOf[js.Any], tooltipLabel = js.Any.fromFunction1(tooltipLabel), xScale = xScale, yScale = yScale)
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
-    if (axisBottom != null) __obj.updateDynamic("axisBottom")(axisBottom)
-    if (axisLeft != null) __obj.updateDynamic("axisLeft")(axisLeft)
-    if (axisRight != null) __obj.updateDynamic("axisRight")(axisRight)
-    if (axisTop != null) __obj.updateDynamic("axisTop")(axisTop)
-    if (defs != null) __obj.updateDynamic("defs")(defs)
-    if (fill != null) __obj.updateDynamic("fill")(fill)
+    val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], colors = colors.asInstanceOf[js.Any], curve = curve.asInstanceOf[js.Any], dotBorderColor = dotBorderColor.asInstanceOf[js.Any], dotBorderWidth = dotBorderWidth.asInstanceOf[js.Any], dotColor = dotColor.asInstanceOf[js.Any], dotPosition = dotPosition.asInstanceOf[js.Any], dotSize = dotSize.asInstanceOf[js.Any], enableDots = enableDots.asInstanceOf[js.Any], enableGridX = enableGridX.asInstanceOf[js.Any], enableGridY = enableGridY.asInstanceOf[js.Any], enableStackTooltip = enableStackTooltip.asInstanceOf[js.Any], fillOpacity = fillOpacity.asInstanceOf[js.Any], isInteractive = isInteractive.asInstanceOf[js.Any], legends = legends.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], offsetType = offsetType.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], renderDot = renderDot.asInstanceOf[js.Any], stack = js.Any.fromFunction1(stack), theme = theme.asInstanceOf[js.Any], tooltipFormat = tooltipFormat.asInstanceOf[js.Any], tooltipLabel = js.Any.fromFunction1(tooltipLabel), xScale = xScale.asInstanceOf[js.Any], yScale = yScale.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
+    if (axisBottom != null) __obj.updateDynamic("axisBottom")(axisBottom.asInstanceOf[js.Any])
+    if (axisLeft != null) __obj.updateDynamic("axisLeft")(axisLeft.asInstanceOf[js.Any])
+    if (axisRight != null) __obj.updateDynamic("axisRight")(axisRight.asInstanceOf[js.Any])
+    if (axisTop != null) __obj.updateDynamic("axisTop")(axisTop.asInstanceOf[js.Any])
+    if (defs != null) __obj.updateDynamic("defs")(defs.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (motionDamping != null) __obj.updateDynamic("motionDamping")(motionDamping.asInstanceOf[js.Any])
     if (motionStiffness != null) __obj.updateDynamic("motionStiffness")(motionStiffness.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionalStreamProps[T]]

@@ -3,7 +3,7 @@ package typings.dexie.dexieMod.Dexie
 import org.scalablytyped.runtime.StringDictionary
 import typings.dexie.dexieStrings.abort
 import typings.dexie.dexieStrings.complete
-import typings.dexie.dexieStrings.error
+import typings.dexie.dexieStrings.error_
 import typings.std.IDBTransaction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,7 @@ trait Transaction extends js.Object {
   @JSName("on")
   def on_complete(eventName: complete, subscriber: js.Function0[_]): Unit = js.native
   @JSName("on")
-  def on_error(eventName: error, subscriber: js.Function1[/* error */ js.Any, _]): Unit = js.native
+  def on_error(eventName: error_, subscriber: js.Function1[/* error */ js.Any, _]): Unit = js.native
   def table(tableName: String): Table[_, _] = js.native
   @JSName("table")
   def table_T[T](tableName: String): Table[T, _] = js.native

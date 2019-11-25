@@ -11,7 +11,7 @@ trait LookupOptionsCode extends LookupOptions {
 object LookupOptionsCode {
   @scala.inline
   def apply(code: String): LookupOptionsCode = {
-    val __obj = js.Dynamic.literal(code = code)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LookupOptionsCode]
   }

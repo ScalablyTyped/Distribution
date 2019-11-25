@@ -29,11 +29,11 @@ object ParserError {
   ): ParserError = {
     val __obj = js.Dynamic.literal()
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserError]
   }
 }

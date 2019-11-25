@@ -15,8 +15,8 @@ object DeploymentsListResponse {
   @scala.inline
   def apply(deployments: js.Array[Deployment] = null, nextPageToken: String = null): DeploymentsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (deployments != null) __obj.updateDynamic("deployments")(deployments)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (deployments != null) __obj.updateDynamic("deployments")(deployments.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentsListResponse]
   }
 }

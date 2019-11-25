@@ -14,7 +14,7 @@ trait MemoryUsage extends js.Object {
 object MemoryUsage {
   @scala.inline
   def apply(external: Double, heapTotal: Double, heapUsed: Double, rss: Double): MemoryUsage = {
-    val __obj = js.Dynamic.literal(external = external, heapTotal = heapTotal, heapUsed = heapUsed, rss = rss)
+    val __obj = js.Dynamic.literal(external = external.asInstanceOf[js.Any], heapTotal = heapTotal.asInstanceOf[js.Any], heapUsed = heapUsed.asInstanceOf[js.Any], rss = rss.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MemoryUsage]
   }

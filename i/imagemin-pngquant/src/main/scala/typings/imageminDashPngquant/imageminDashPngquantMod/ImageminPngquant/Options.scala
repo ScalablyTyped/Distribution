@@ -31,10 +31,10 @@ object Options {
     if (dithering != null) __obj.updateDynamic("dithering")(dithering.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (posterize != null) __obj.updateDynamic("posterize")(posterize.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality)
+    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (!js.isUndefined(strip)) __obj.updateDynamic("strip")(strip)
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (!js.isUndefined(strip)) __obj.updateDynamic("strip")(strip.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

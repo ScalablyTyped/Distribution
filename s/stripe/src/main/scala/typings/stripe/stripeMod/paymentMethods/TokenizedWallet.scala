@@ -13,7 +13,7 @@ object TokenizedWallet {
   @scala.inline
   def apply(dynamic_last4: String = null): TokenizedWallet = {
     val __obj = js.Dynamic.literal()
-    if (dynamic_last4 != null) __obj.updateDynamic("dynamic_last4")(dynamic_last4)
+    if (dynamic_last4 != null) __obj.updateDynamic("dynamic_last4")(dynamic_last4.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenizedWallet]
   }
 }

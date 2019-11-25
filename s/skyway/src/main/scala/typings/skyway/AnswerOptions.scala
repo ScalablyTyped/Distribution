@@ -21,9 +21,9 @@ object AnswerOptions {
   ): AnswerOptions = {
     val __obj = js.Dynamic.literal()
     if (audioBandwidth != null) __obj.updateDynamic("audioBandwidth")(audioBandwidth.asInstanceOf[js.Any])
-    if (audioCodec != null) __obj.updateDynamic("audioCodec")(audioCodec)
+    if (audioCodec != null) __obj.updateDynamic("audioCodec")(audioCodec.asInstanceOf[js.Any])
     if (videoBandwidth != null) __obj.updateDynamic("videoBandwidth")(videoBandwidth.asInstanceOf[js.Any])
-    if (videoCodec != null) __obj.updateDynamic("videoCodec")(videoCodec)
+    if (videoCodec != null) __obj.updateDynamic("videoCodec")(videoCodec.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnswerOptions]
   }
 }

@@ -41,7 +41,7 @@ trait Typeofcore extends js.Object {
   def Dict[T](value: typings.coreDashJs.Dict[T]): typings.coreDashJs.Dict[T] = js.native
   @JSName("Dict")
   def Dict_T[T](): Dict[T] = js.native
-  def addLocale(lang: java.lang.String, locale: Locale): /* import warning: ImportType.apply Failed type conversion: typeof core */ js.Any = js.native
+  def addLocale(lang: java.lang.String, locale: Locale): /* import warning: importer.ImportType#apply Failed type conversion: typeof core */ js.Any = js.native
   def clearImmediate(handle: Double): Unit = js.native
   def delay(msec: Double): js.Promise[Unit] = js.native
   def getIterator[T](iterable: Iterable[T]): Iterator[T, _, js.UndefOr[scala.Nothing]] = js.native

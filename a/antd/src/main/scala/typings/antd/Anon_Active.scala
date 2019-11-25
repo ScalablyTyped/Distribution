@@ -41,8 +41,8 @@ object Anon_Active {
     `type`: Requireable[circle | line | dashboard],
     width: Requireable[Double]
   ): Anon_Active = {
-    val __obj = js.Dynamic.literal(format = format, gapDegree = gapDegree, percent = percent, showInfo = showInfo, status = status, strokeColor = strokeColor, strokeLinecap = strokeLinecap, strokeWidth = strokeWidth, trailColor = trailColor, width = width)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], gapDegree = gapDegree.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], showInfo = showInfo.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], strokeColor = strokeColor.asInstanceOf[js.Any], strokeLinecap = strokeLinecap.asInstanceOf[js.Any], strokeWidth = strokeWidth.asInstanceOf[js.Any], trailColor = trailColor.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Active]
   }
 }

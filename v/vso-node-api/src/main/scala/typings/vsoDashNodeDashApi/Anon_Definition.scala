@@ -12,7 +12,7 @@ trait Anon_Definition extends js.Object {
 object Anon_Definition {
   @scala.inline
   def apply(definition: Double, draft: Double): Anon_Definition = {
-    val __obj = js.Dynamic.literal(definition = definition, draft = draft)
+    val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any], draft = draft.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Definition]
   }

@@ -15,9 +15,9 @@ object S3CorsOptions {
     sendCredentials: js.UndefOr[Boolean] = js.undefined
   ): S3CorsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowXdr)) __obj.updateDynamic("allowXdr")(allowXdr)
-    if (!js.isUndefined(expected)) __obj.updateDynamic("expected")(expected)
-    if (!js.isUndefined(sendCredentials)) __obj.updateDynamic("sendCredentials")(sendCredentials)
+    if (!js.isUndefined(allowXdr)) __obj.updateDynamic("allowXdr")(allowXdr.asInstanceOf[js.Any])
+    if (!js.isUndefined(expected)) __obj.updateDynamic("expected")(expected.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendCredentials)) __obj.updateDynamic("sendCredentials")(sendCredentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3CorsOptions]
   }
 }

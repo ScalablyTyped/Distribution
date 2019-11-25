@@ -17,7 +17,7 @@ trait ReferenceObject extends js.Object {
 object ReferenceObject {
   @scala.inline
   def apply(axis: xAxis | yAxis | y2Axis, index: Double, subId: String): ReferenceObject = {
-    val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], index = index, subId = subId)
+    val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], subId = subId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReferenceObject]
   }

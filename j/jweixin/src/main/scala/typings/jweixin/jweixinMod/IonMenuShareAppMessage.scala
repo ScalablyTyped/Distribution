@@ -41,9 +41,9 @@ object IonMenuShareAppMessage {
     fail: /* repeated */ js.Any => Unit = null,
     `type`: music | videoBACKSLASHu6216link | link = null
   ): IonMenuShareAppMessage = {
-    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), desc = desc, imgUrl = imgUrl, link = link, success = js.Any.fromFunction0(success), title = title)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), desc = desc.asInstanceOf[js.Any], imgUrl = imgUrl.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], success = js.Any.fromFunction0(success), title = title.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (dataUrl != null) __obj.updateDynamic("dataUrl")(dataUrl)
+    if (dataUrl != null) __obj.updateDynamic("dataUrl")(dataUrl.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonMenuShareAppMessage]

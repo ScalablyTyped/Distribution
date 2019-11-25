@@ -27,10 +27,10 @@ object Anon_Gt {
   @scala.inline
   def apply(gt: String = null, gte: String = null, lt: String = null, lte: String = null): Anon_Gt = {
     val __obj = js.Dynamic.literal()
-    if (gt != null) __obj.updateDynamic("gt")(gt)
-    if (gte != null) __obj.updateDynamic("gte")(gte)
-    if (lt != null) __obj.updateDynamic("lt")(lt)
-    if (lte != null) __obj.updateDynamic("lte")(lte)
+    if (gt != null) __obj.updateDynamic("gt")(gt.asInstanceOf[js.Any])
+    if (gte != null) __obj.updateDynamic("gte")(gte.asInstanceOf[js.Any])
+    if (lt != null) __obj.updateDynamic("lt")(lt.asInstanceOf[js.Any])
+    if (lte != null) __obj.updateDynamic("lte")(lte.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Gt]
   }
 }

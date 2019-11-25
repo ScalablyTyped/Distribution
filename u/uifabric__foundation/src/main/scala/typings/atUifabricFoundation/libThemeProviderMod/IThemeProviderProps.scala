@@ -15,8 +15,8 @@ object IThemeProviderProps {
   @scala.inline
   def apply(scheme: ISchemeNames = null, theme: ITheme = null): IThemeProviderProps = {
     val __obj = js.Dynamic.literal()
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IThemeProviderProps]
   }
 }

@@ -31,7 +31,7 @@ object Anon_Failures {
     wallClockEndedAt: dateTimeISO,
     wallClockStartedAt: dateTimeISO
   ): Anon_Failures = {
-    val __obj = js.Dynamic.literal(failures = failures, passes = passes, pending = pending, skipped = skipped, suites = suites, tests = tests, wallClockDuration = wallClockDuration, wallClockEndedAt = wallClockEndedAt, wallClockStartedAt = wallClockStartedAt)
+    val __obj = js.Dynamic.literal(failures = failures.asInstanceOf[js.Any], passes = passes.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], skipped = skipped.asInstanceOf[js.Any], suites = suites.asInstanceOf[js.Any], tests = tests.asInstanceOf[js.Any], wallClockDuration = wallClockDuration.asInstanceOf[js.Any], wallClockEndedAt = wallClockEndedAt.asInstanceOf[js.Any], wallClockStartedAt = wallClockStartedAt.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Failures]
   }

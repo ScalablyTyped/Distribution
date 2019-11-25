@@ -19,9 +19,9 @@ object SpreadsheetUnhideColumnEvent {
     index: Int | Double = null,
     sheet: Sheet = null
   ): SpreadsheetUnhideColumnEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (sheet != null) __obj.updateDynamic("sheet")(sheet)
+    if (sheet != null) __obj.updateDynamic("sheet")(sheet.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetUnhideColumnEvent]
   }
 }

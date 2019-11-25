@@ -15,8 +15,8 @@ object DetectedBreak {
   @scala.inline
   def apply(isPrefix: js.UndefOr[Boolean] = js.undefined, `type`: String = null): DetectedBreak = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isPrefix)) __obj.updateDynamic("isPrefix")(isPrefix)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(isPrefix)) __obj.updateDynamic("isPrefix")(isPrefix.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectedBreak]
   }
 }

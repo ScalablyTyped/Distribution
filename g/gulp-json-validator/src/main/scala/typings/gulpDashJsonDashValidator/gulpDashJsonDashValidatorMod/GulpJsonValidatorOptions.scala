@@ -12,7 +12,7 @@ object GulpJsonValidatorOptions {
   @scala.inline
   def apply(allowDuplicatedKeys: js.UndefOr[Boolean] = js.undefined): GulpJsonValidatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDuplicatedKeys)) __obj.updateDynamic("allowDuplicatedKeys")(allowDuplicatedKeys)
+    if (!js.isUndefined(allowDuplicatedKeys)) __obj.updateDynamic("allowDuplicatedKeys")(allowDuplicatedKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[GulpJsonValidatorOptions]
   }
 }

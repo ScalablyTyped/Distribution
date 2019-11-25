@@ -24,9 +24,9 @@ object ExperimentOptions {
     timeout: Int | Double = null
   ): ExperimentOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(only)) __obj.updateDynamic("only")(only)
-    if (!js.isUndefined(parallel)) __obj.updateDynamic("parallel")(parallel)
-    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip)
+    if (!js.isUndefined(only)) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
+    if (!js.isUndefined(parallel)) __obj.updateDynamic("parallel")(parallel.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExperimentOptions]
   }

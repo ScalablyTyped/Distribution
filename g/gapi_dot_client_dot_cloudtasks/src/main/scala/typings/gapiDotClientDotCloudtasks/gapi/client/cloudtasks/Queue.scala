@@ -107,15 +107,15 @@ object Queue {
     retryConfig: RetryConfig = null
   ): Queue = {
     val __obj = js.Dynamic.literal()
-    if (appEngineHttpTarget != null) __obj.updateDynamic("appEngineHttpTarget")(appEngineHttpTarget)
-    if (appEngineQueueConfig != null) __obj.updateDynamic("appEngineQueueConfig")(appEngineQueueConfig)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (pullQueueConfig != null) __obj.updateDynamic("pullQueueConfig")(pullQueueConfig)
-    if (pullTarget != null) __obj.updateDynamic("pullTarget")(pullTarget)
-    if (purgeTime != null) __obj.updateDynamic("purgeTime")(purgeTime)
-    if (queueState != null) __obj.updateDynamic("queueState")(queueState)
-    if (rateLimits != null) __obj.updateDynamic("rateLimits")(rateLimits)
-    if (retryConfig != null) __obj.updateDynamic("retryConfig")(retryConfig)
+    if (appEngineHttpTarget != null) __obj.updateDynamic("appEngineHttpTarget")(appEngineHttpTarget.asInstanceOf[js.Any])
+    if (appEngineQueueConfig != null) __obj.updateDynamic("appEngineQueueConfig")(appEngineQueueConfig.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (pullQueueConfig != null) __obj.updateDynamic("pullQueueConfig")(pullQueueConfig.asInstanceOf[js.Any])
+    if (pullTarget != null) __obj.updateDynamic("pullTarget")(pullTarget.asInstanceOf[js.Any])
+    if (purgeTime != null) __obj.updateDynamic("purgeTime")(purgeTime.asInstanceOf[js.Any])
+    if (queueState != null) __obj.updateDynamic("queueState")(queueState.asInstanceOf[js.Any])
+    if (rateLimits != null) __obj.updateDynamic("rateLimits")(rateLimits.asInstanceOf[js.Any])
+    if (retryConfig != null) __obj.updateDynamic("retryConfig")(retryConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[Queue]
   }
 }

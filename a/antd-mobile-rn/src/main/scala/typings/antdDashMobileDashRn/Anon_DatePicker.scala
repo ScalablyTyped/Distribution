@@ -22,11 +22,11 @@ object Anon_DatePicker {
     Pagination: js.Object = null
   ): Anon_DatePicker = {
     val __obj = js.Dynamic.literal()
-    if (DatePicker != null) __obj.updateDynamic("DatePicker")(DatePicker)
-    if (DatePickerView != null) __obj.updateDynamic("DatePickerView")(DatePickerView)
-    if (InputItem != null) __obj.updateDynamic("InputItem")(InputItem)
-    if (Modal != null) __obj.updateDynamic("Modal")(Modal)
-    if (Pagination != null) __obj.updateDynamic("Pagination")(Pagination)
+    if (DatePicker != null) __obj.updateDynamic("DatePicker")(DatePicker.asInstanceOf[js.Any])
+    if (DatePickerView != null) __obj.updateDynamic("DatePickerView")(DatePickerView.asInstanceOf[js.Any])
+    if (InputItem != null) __obj.updateDynamic("InputItem")(InputItem.asInstanceOf[js.Any])
+    if (Modal != null) __obj.updateDynamic("Modal")(Modal.asInstanceOf[js.Any])
+    if (Pagination != null) __obj.updateDynamic("Pagination")(Pagination.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DatePicker]
   }
 }

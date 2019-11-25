@@ -23,12 +23,12 @@ object Source {
     raw: js.UndefOr[Boolean] = js.undefined,
     url: String = null
   ): Source = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (layers != null) __obj.updateDynamic("layers")(layers)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     if (maxrate != null) __obj.updateDynamic("maxrate")(maxrate.asInstanceOf[js.Any])
-    if (mbtiles != null) __obj.updateDynamic("mbtiles")(mbtiles)
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (mbtiles != null) __obj.updateDynamic("mbtiles")(mbtiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }
 }

@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait ExpandWildcards extends js.Object
 
+object ExpandWildcards {
+  @scala.inline
+  def all: typings.elasticsearch.elasticsearchStrings.all = this.cast("all")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def closed: typings.elasticsearch.elasticsearchStrings.closed = this.cast("closed")
+  @scala.inline
+  def none: typings.elasticsearch.elasticsearchStrings.none = this.cast("none")
+  @scala.inline
+  def open: typings.elasticsearch.elasticsearchStrings.open = this.cast("open")
+}
+

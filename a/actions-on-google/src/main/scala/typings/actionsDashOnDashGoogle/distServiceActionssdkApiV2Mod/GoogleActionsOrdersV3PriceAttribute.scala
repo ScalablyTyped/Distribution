@@ -47,12 +47,12 @@ object GoogleActionsOrdersV3PriceAttribute {
     `type`: GoogleActionsOrdersV3PriceAttributeType = null
   ): GoogleActionsOrdersV3PriceAttribute = {
     val __obj = js.Dynamic.literal()
-    if (amount != null) __obj.updateDynamic("amount")(amount)
+    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     if (amountMillipercentage != null) __obj.updateDynamic("amountMillipercentage")(amountMillipercentage.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (!js.isUndefined(taxIncluded)) __obj.updateDynamic("taxIncluded")(taxIncluded)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (!js.isUndefined(taxIncluded)) __obj.updateDynamic("taxIncluded")(taxIncluded.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3PriceAttribute]
   }
 }

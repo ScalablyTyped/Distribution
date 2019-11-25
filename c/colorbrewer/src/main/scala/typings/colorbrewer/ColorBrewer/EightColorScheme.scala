@@ -26,13 +26,13 @@ object EightColorScheme {
     NumberDictionary: NumberDictionary[js.Array[String]] = null
   ): EightColorScheme = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("3")(`3`)
-    __obj.updateDynamic("4")(`4`)
-    __obj.updateDynamic("5")(`5`)
-    __obj.updateDynamic("6")(`6`)
-    __obj.updateDynamic("7")(`7`)
-    __obj.updateDynamic("8")(`8`)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    __obj.updateDynamic("3")(`3`.asInstanceOf[js.Any])
+    __obj.updateDynamic("4")(`4`.asInstanceOf[js.Any])
+    __obj.updateDynamic("5")(`5`.asInstanceOf[js.Any])
+    __obj.updateDynamic("6")(`6`.asInstanceOf[js.Any])
+    __obj.updateDynamic("7")(`7`.asInstanceOf[js.Any])
+    __obj.updateDynamic("8")(`8`.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[EightColorScheme]
   }
 }

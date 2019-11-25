@@ -17,7 +17,7 @@ trait Datum extends js.Object {
 object Datum {
   @scala.inline
   def apply(color: String, index: Double, key: String, value: Double, x: Double, y1: Double, y2: Double): Datum = {
-    val __obj = js.Dynamic.literal(color = color, index = index, key = key, value = value, x = x, y1 = y1, y2 = y2)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Datum]
   }

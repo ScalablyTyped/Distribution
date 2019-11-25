@@ -22,7 +22,7 @@ object DefaultContext {
     */
   /* key */ StringDictionary[js.Any] = null): DefaultContext = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[DefaultContext]
   }
 }

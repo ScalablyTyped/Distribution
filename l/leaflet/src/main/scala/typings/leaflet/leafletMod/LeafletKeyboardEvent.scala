@@ -19,8 +19,8 @@ object LeafletKeyboardEvent {
     target: js.Any,
     `type`: String
   ): LeafletKeyboardEvent = {
-    val __obj = js.Dynamic.literal(layer = layer, originalEvent = originalEvent, propagatedFrom = propagatedFrom, sourceTarget = sourceTarget, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeafletKeyboardEvent]
   }
 }

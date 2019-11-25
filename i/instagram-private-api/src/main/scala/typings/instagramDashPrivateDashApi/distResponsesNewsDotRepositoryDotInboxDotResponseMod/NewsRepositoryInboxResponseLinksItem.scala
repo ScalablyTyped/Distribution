@@ -14,8 +14,8 @@ trait NewsRepositoryInboxResponseLinksItem extends js.Object {
 object NewsRepositoryInboxResponseLinksItem {
   @scala.inline
   def apply(end: Double, id: String | Double, start: Double, `type`: String): NewsRepositoryInboxResponseLinksItem = {
-    val __obj = js.Dynamic.literal(end = end, id = id.asInstanceOf[js.Any], start = start)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewsRepositoryInboxResponseLinksItem]
   }
 }

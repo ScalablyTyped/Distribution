@@ -14,7 +14,7 @@ trait ScanIteratorReturn[This] extends js.Object {
 object ScanIteratorReturn {
   @scala.inline
   def apply[This](idx: Double, image: This, x: Double, y: Double): ScanIteratorReturn[This] = {
-    val __obj = js.Dynamic.literal(idx = idx, image = image.asInstanceOf[js.Any], x = x, y = y)
+    val __obj = js.Dynamic.literal(idx = idx.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ScanIteratorReturn[This]]
   }

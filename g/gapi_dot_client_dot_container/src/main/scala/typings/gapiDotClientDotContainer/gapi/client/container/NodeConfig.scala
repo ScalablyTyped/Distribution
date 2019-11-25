@@ -132,18 +132,18 @@ object NodeConfig {
     tags: js.Array[String] = null
   ): NodeConfig = {
     val __obj = js.Dynamic.literal()
-    if (accelerators != null) __obj.updateDynamic("accelerators")(accelerators)
+    if (accelerators != null) __obj.updateDynamic("accelerators")(accelerators.asInstanceOf[js.Any])
     if (diskSizeGb != null) __obj.updateDynamic("diskSizeGb")(diskSizeGb.asInstanceOf[js.Any])
-    if (imageType != null) __obj.updateDynamic("imageType")(imageType)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (imageType != null) __obj.updateDynamic("imageType")(imageType.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (localSsdCount != null) __obj.updateDynamic("localSsdCount")(localSsdCount.asInstanceOf[js.Any])
-    if (machineType != null) __obj.updateDynamic("machineType")(machineType)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (minCpuPlatform != null) __obj.updateDynamic("minCpuPlatform")(minCpuPlatform)
-    if (oauthScopes != null) __obj.updateDynamic("oauthScopes")(oauthScopes)
-    if (!js.isUndefined(preemptible)) __obj.updateDynamic("preemptible")(preemptible)
-    if (serviceAccount != null) __obj.updateDynamic("serviceAccount")(serviceAccount)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (machineType != null) __obj.updateDynamic("machineType")(machineType.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (minCpuPlatform != null) __obj.updateDynamic("minCpuPlatform")(minCpuPlatform.asInstanceOf[js.Any])
+    if (oauthScopes != null) __obj.updateDynamic("oauthScopes")(oauthScopes.asInstanceOf[js.Any])
+    if (!js.isUndefined(preemptible)) __obj.updateDynamic("preemptible")(preemptible.asInstanceOf[js.Any])
+    if (serviceAccount != null) __obj.updateDynamic("serviceAccount")(serviceAccount.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeConfig]
   }
 }

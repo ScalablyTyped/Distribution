@@ -19,7 +19,7 @@ trait Typeoflab extends js.Object {
 object Typeoflab {
   @scala.inline
   def apply(channels: `3`, labels: lab, lch: LAB => LCH, xyz: LAB => XYZ): Typeoflab = {
-    val __obj = js.Dynamic.literal(channels = channels, labels = labels, lch = js.Any.fromFunction1(lch), xyz = js.Any.fromFunction1(xyz))
+    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], lch = js.Any.fromFunction1(lch), xyz = js.Any.fromFunction1(xyz))
   
     __obj.asInstanceOf[Typeoflab]
   }

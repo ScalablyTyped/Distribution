@@ -8,32 +8,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait StructuredMessage extends js.Object {
-  var buttons: js.UndefOr[js.Array[Button]] = js.undefined
-  var items: js.UndefOr[js.Array[ListItem | PanelTemplate]] = js.undefined
-  var msg: js.UndefOr[String] = js.undefined
-  var panel: js.UndefOr[Panel] = js.undefined
-  var quick_replies: js.UndefOr[js.Array[Button]] = js.undefined
-  var `type`: js.UndefOr[LIST_TEMPLATE | PANEL_TEMPLATE | PANEL_TEMPLATE_CAROUSEL | QUICK_REPLIES] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.zchatDashBrowser.Anon_Msg
+  - typings.zchatDashBrowser.Anon_Buttons
+  - typings.zchatDashBrowser.Anon_Items
+  - typings.zchatDashBrowser.Anon_ButtonsItems
+*/
+trait StructuredMessage extends js.Object
 
 object StructuredMessage {
   @scala.inline
-  def apply(
-    buttons: js.Array[Button] = null,
-    items: js.Array[PanelTemplate] = null,
-    msg: String = null,
-    panel: Panel = null,
-    quick_replies: js.Array[Button] = null,
-    `type`: QUICK_REPLIES = null
-  ): StructuredMessage = {
-    val __obj = js.Dynamic.literal()
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (msg != null) __obj.updateDynamic("msg")(msg)
-    if (panel != null) __obj.updateDynamic("panel")(panel)
-    if (quick_replies != null) __obj.updateDynamic("quick_replies")(quick_replies)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+  def Anon_Msg(msg: String, quick_replies: js.Array[Button], `type`: QUICK_REPLIES): StructuredMessage = {
+    val __obj = js.Dynamic.literal(msg = msg.asInstanceOf[js.Any], quick_replies = quick_replies.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StructuredMessage]
+  }
+  @scala.inline
+  def Anon_Buttons(buttons: js.Array[Button], panel: Panel, `type`: PANEL_TEMPLATE): StructuredMessage = {
+    val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], panel = panel.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StructuredMessage]
+  }
+  @scala.inline
+  def Anon_Items(items: js.Array[PanelTemplate], `type`: PANEL_TEMPLATE_CAROUSEL): StructuredMessage = {
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StructuredMessage]
+  }
+  @scala.inline
+  def Anon_ButtonsItems(buttons: js.Array[Button], items: js.Array[ListItem], `type`: LIST_TEMPLATE): StructuredMessage = {
+    val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StructuredMessage]
   }
 }

@@ -12,7 +12,7 @@ trait SchedulerHotkeys extends js.Object {
 object SchedulerHotkeys {
   @scala.inline
   def apply(edit_cancel: Double, edit_save: Double): SchedulerHotkeys = {
-    val __obj = js.Dynamic.literal(edit_cancel = edit_cancel, edit_save = edit_save)
+    val __obj = js.Dynamic.literal(edit_cancel = edit_cancel.asInstanceOf[js.Any], edit_save = edit_save.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SchedulerHotkeys]
   }

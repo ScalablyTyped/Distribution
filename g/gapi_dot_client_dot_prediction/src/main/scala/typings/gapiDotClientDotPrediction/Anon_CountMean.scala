@@ -17,9 +17,9 @@ object Anon_CountMean {
   @scala.inline
   def apply(count: String = null, mean: String = null, variance: String = null): Anon_CountMean = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count)
-    if (mean != null) __obj.updateDynamic("mean")(mean)
-    if (variance != null) __obj.updateDynamic("variance")(variance)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (mean != null) __obj.updateDynamic("mean")(mean.asInstanceOf[js.Any])
+    if (variance != null) __obj.updateDynamic("variance")(variance.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CountMean]
   }
 }

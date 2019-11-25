@@ -52,13 +52,13 @@ object IDateTimePickerProps {
     value: Date = null
   ): IDateTimePickerProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canClearSelection)) __obj.updateDynamic("canClearSelection")(canClearSelection)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (datePickerProps != null) __obj.updateDynamic("datePickerProps")(datePickerProps)
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (!js.isUndefined(canClearSelection)) __obj.updateDynamic("canClearSelection")(canClearSelection.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (datePickerProps != null) __obj.updateDynamic("datePickerProps")(datePickerProps.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (timePickerProps != null) __obj.updateDynamic("timePickerProps")(timePickerProps)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (timePickerProps != null) __obj.updateDynamic("timePickerProps")(timePickerProps.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDateTimePickerProps]
   }
 }

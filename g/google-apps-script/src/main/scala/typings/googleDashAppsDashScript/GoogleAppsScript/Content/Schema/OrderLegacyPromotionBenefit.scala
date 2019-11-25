@@ -22,11 +22,11 @@ object OrderLegacyPromotionBenefit {
     `type`: String = null
   ): OrderLegacyPromotionBenefit = {
     val __obj = js.Dynamic.literal()
-    if (discount != null) __obj.updateDynamic("discount")(discount)
-    if (offerIds != null) __obj.updateDynamic("offerIds")(offerIds)
-    if (subType != null) __obj.updateDynamic("subType")(subType)
-    if (taxImpact != null) __obj.updateDynamic("taxImpact")(taxImpact)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (discount != null) __obj.updateDynamic("discount")(discount.asInstanceOf[js.Any])
+    if (offerIds != null) __obj.updateDynamic("offerIds")(offerIds.asInstanceOf[js.Any])
+    if (subType != null) __obj.updateDynamic("subType")(subType.asInstanceOf[js.Any])
+    if (taxImpact != null) __obj.updateDynamic("taxImpact")(taxImpact.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderLegacyPromotionBenefit]
   }
 }

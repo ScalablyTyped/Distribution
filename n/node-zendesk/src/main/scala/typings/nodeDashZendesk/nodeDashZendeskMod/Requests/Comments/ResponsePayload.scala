@@ -11,7 +11,7 @@ trait ResponsePayload extends js.Object {
 object ResponsePayload {
   @scala.inline
   def apply(comment: typings.nodeDashZendesk.nodeDashZendeskMod.Requests.Comments.ResponseModel): ResponsePayload = {
-    val __obj = js.Dynamic.literal(comment = comment)
+    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResponsePayload]
   }

@@ -31,15 +31,15 @@ object StaticMapsOptions {
     tileSize: Int | Double = null,
     tileUrl: String = null
   ): StaticMapsOptions = {
-    val __obj = js.Dynamic.literal(height = height, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (paddingX != null) __obj.updateDynamic("paddingX")(paddingX.asInstanceOf[js.Any])
     if (paddingY != null) __obj.updateDynamic("paddingY")(paddingY.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverseY)) __obj.updateDynamic("reverseY")(reverseY)
-    if (tileRequestHeader != null) __obj.updateDynamic("tileRequestHeader")(tileRequestHeader)
+    if (!js.isUndefined(reverseY)) __obj.updateDynamic("reverseY")(reverseY.asInstanceOf[js.Any])
+    if (tileRequestHeader != null) __obj.updateDynamic("tileRequestHeader")(tileRequestHeader.asInstanceOf[js.Any])
     if (tileRequestTimeout != null) __obj.updateDynamic("tileRequestTimeout")(tileRequestTimeout.asInstanceOf[js.Any])
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
-    if (tileUrl != null) __obj.updateDynamic("tileUrl")(tileUrl)
+    if (tileUrl != null) __obj.updateDynamic("tileUrl")(tileUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticMapsOptions]
   }
 }

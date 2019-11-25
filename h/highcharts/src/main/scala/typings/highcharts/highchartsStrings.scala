@@ -162,7 +162,7 @@ object highchartsStrings {
   sealed trait Z extends SVGPathCommand
   
   @js.native
-  sealed trait a extends SVGPathCommand
+  sealed trait a_ extends SVGPathCommand
   
   @js.native
   sealed trait abands extends js.Object
@@ -285,7 +285,7 @@ object highchartsStrings {
   sealed trait butt extends _SeriesLinecapValue
   
   @js.native
-  sealed trait c extends SVGPathCommand
+  sealed trait c_ extends SVGPathCommand
   
   @js.native
   sealed trait callout
@@ -318,7 +318,7 @@ object highchartsStrings {
   sealed trait chaikin extends js.Object
   
   @js.native
-  sealed trait chart extends OptionsPosition3dValue
+  sealed trait chart_ extends OptionsPosition3dValue
   
   @js.native
   sealed trait checkboxClick extends js.Object
@@ -479,7 +479,7 @@ object highchartsStrings {
   sealed trait grabbing extends CursorValue
   
   @js.native
-  sealed trait h extends SVGPathCommand
+  sealed trait h_ extends SVGPathCommand
   
   @js.native
   sealed trait hanging extends SeriesOrganizationNodesLayoutValue
@@ -540,7 +540,7 @@ object highchartsStrings {
   sealed trait keltnerchannels extends js.Object
   
   @js.native
-  sealed trait l extends SVGPathCommand
+  sealed trait l_ extends SVGPathCommand
   
   @js.native
   sealed trait left
@@ -584,13 +584,13 @@ object highchartsStrings {
        with OptionsPointValKeyValue
   
   @js.native
-  sealed trait m extends SVGPathCommand
+  sealed trait m_ extends SVGPathCommand
   
   @js.native
   sealed trait macd extends js.Object
   
   @js.native
-  sealed trait map extends js.Object
+  sealed trait map_ extends js.Object
   
   @js.native
   sealed trait mapbubble extends js.Object
@@ -793,7 +793,7 @@ object highchartsStrings {
   sealed trait pyramid3d extends js.Object
   
   @js.native
-  sealed trait q extends SVGPathCommand
+  sealed trait q_ extends SVGPathCommand
   
   @js.native
   sealed trait radius extends VariablePieSizeByValue
@@ -837,10 +837,10 @@ object highchartsStrings {
   sealed trait rsi extends js.Object
   
   @js.native
-  sealed trait s extends SVGPathCommand
+  sealed trait `s-resize` extends CursorValue
   
   @js.native
-  sealed trait `s-resize` extends CursorValue
+  sealed trait s_ extends SVGPathCommand
   
   @js.native
   sealed trait sankey extends js.Object
@@ -881,7 +881,7 @@ object highchartsStrings {
   sealed trait sma extends js.Object
   
   @js.native
-  sealed trait solid extends PaneBackgroundShapeValue
+  sealed trait solid_ extends PaneBackgroundShapeValue
   
   @js.native
   sealed trait solidgauge extends js.Object
@@ -947,7 +947,7 @@ object highchartsStrings {
   sealed trait `sw-resize` extends CursorValue
   
   @js.native
-  sealed trait t extends SVGPathCommand
+  sealed trait t_ extends SVGPathCommand
   
   @js.native
   sealed trait tema extends js.Object
@@ -986,7 +986,7 @@ object highchartsStrings {
   sealed trait tween extends OptionsDataClassColorValue
   
   @js.native
-  sealed trait v extends SVGPathCommand
+  sealed trait v_ extends SVGPathCommand
   
   @js.native
   sealed trait value extends OptionsGapUnitValue
@@ -1080,7 +1080,7 @@ object highchartsStrings {
   sealed trait ytd extends RangeSelectorButtonTypeValue
   
   @js.native
-  sealed trait z extends SVGPathCommand
+  sealed trait z_ extends SVGPathCommand
   
   @js.native
   sealed trait zigzag extends js.Object
@@ -1159,7 +1159,7 @@ object highchartsStrings {
   @scala.inline
   def Z: Z = "Z".asInstanceOf[Z]
   @scala.inline
-  def a: a = "a".asInstanceOf[a]
+  def a_ : a_ = "a".asInstanceOf[a_]
   @scala.inline
   def abands: abands = "abands".asInstanceOf[abands]
   @scala.inline
@@ -1233,7 +1233,7 @@ object highchartsStrings {
   @scala.inline
   def butt: butt = "butt".asInstanceOf[butt]
   @scala.inline
-  def c: c = "c".asInstanceOf[c]
+  def c_ : c_ = "c".asInstanceOf[c_]
   @scala.inline
   def callout: callout = "callout".asInstanceOf[callout]
   @scala.inline
@@ -1249,7 +1249,7 @@ object highchartsStrings {
   @scala.inline
   def chaikin: chaikin = "chaikin".asInstanceOf[chaikin]
   @scala.inline
-  def chart: chart = "chart".asInstanceOf[chart]
+  def chart_ : chart_ = "chart".asInstanceOf[chart_]
   @scala.inline
   def checkboxClick: checkboxClick = "checkboxClick".asInstanceOf[checkboxClick]
   @scala.inline
@@ -1347,7 +1347,7 @@ object highchartsStrings {
   @scala.inline
   def grabbing: grabbing = "grabbing".asInstanceOf[grabbing]
   @scala.inline
-  def h: h = "h".asInstanceOf[h]
+  def h_ : h_ = "h".asInstanceOf[h_]
   @scala.inline
   def hanging: hanging = "hanging".asInstanceOf[hanging]
   @scala.inline
@@ -1381,7 +1381,7 @@ object highchartsStrings {
   @scala.inline
   def keltnerchannels: keltnerchannels = "keltnerchannels".asInstanceOf[keltnerchannels]
   @scala.inline
-  def l: l = "l".asInstanceOf[l]
+  def l_ : l_ = "l".asInstanceOf[l_]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
@@ -1403,11 +1403,11 @@ object highchartsStrings {
   @scala.inline
   def low: low = "low".asInstanceOf[low]
   @scala.inline
-  def m: m = "m".asInstanceOf[m]
+  def m_ : m_ = "m".asInstanceOf[m_]
   @scala.inline
   def macd: macd = "macd".asInstanceOf[macd]
   @scala.inline
-  def map: map = "map".asInstanceOf[map]
+  def map_ : map_ = "map".asInstanceOf[map_]
   @scala.inline
   def mapbubble: mapbubble = "mapbubble".asInstanceOf[mapbubble]
   @scala.inline
@@ -1531,7 +1531,7 @@ object highchartsStrings {
   @scala.inline
   def pyramid3d: pyramid3d = "pyramid3d".asInstanceOf[pyramid3d]
   @scala.inline
-  def q: q = "q".asInstanceOf[q]
+  def q_ : q_ = "q".asInstanceOf[q_]
   @scala.inline
   def radius: radius = "radius".asInstanceOf[radius]
   @scala.inline
@@ -1557,9 +1557,9 @@ object highchartsStrings {
   @scala.inline
   def rsi: rsi = "rsi".asInstanceOf[rsi]
   @scala.inline
-  def s: s = "s".asInstanceOf[s]
-  @scala.inline
   def `s-resize`: `s-resize` = "s-resize".asInstanceOf[`s-resize`]
+  @scala.inline
+  def s_ : s_ = "s".asInstanceOf[s_]
   @scala.inline
   def sankey: sankey = "sankey".asInstanceOf[sankey]
   @scala.inline
@@ -1585,7 +1585,7 @@ object highchartsStrings {
   @scala.inline
   def sma: sma = "sma".asInstanceOf[sma]
   @scala.inline
-  def solid: solid = "solid".asInstanceOf[solid]
+  def solid_ : solid_ = "solid".asInstanceOf[solid_]
   @scala.inline
   def solidgauge: solidgauge = "solidgauge".asInstanceOf[solidgauge]
   @scala.inline
@@ -1625,7 +1625,7 @@ object highchartsStrings {
   @scala.inline
   def `sw-resize`: `sw-resize` = "sw-resize".asInstanceOf[`sw-resize`]
   @scala.inline
-  def t: t = "t".asInstanceOf[t]
+  def t_ : t_ = "t".asInstanceOf[t_]
   @scala.inline
   def tema: tema = "tema".asInstanceOf[tema]
   @scala.inline
@@ -1651,7 +1651,7 @@ object highchartsStrings {
   @scala.inline
   def tween: tween = "tween".asInstanceOf[tween]
   @scala.inline
-  def v: v = "v".asInstanceOf[v]
+  def v_ : v_ = "v".asInstanceOf[v_]
   @scala.inline
   def value: value = "value".asInstanceOf[value]
   @scala.inline
@@ -1701,7 +1701,7 @@ object highchartsStrings {
   @scala.inline
   def ytd: ytd = "ytd".asInstanceOf[ytd]
   @scala.inline
-  def z: z = "z".asInstanceOf[z]
+  def z_ : z_ = "z".asInstanceOf[z_]
   @scala.inline
   def zigzag: zigzag = "zigzag".asInstanceOf[zigzag]
   @scala.inline

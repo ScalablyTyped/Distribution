@@ -43,7 +43,7 @@ object Schedule {
     startMinutes: Double,
     timeZoneId: String
   ): Schedule = {
-    val __obj = js.Dynamic.literal(branchFilters = branchFilters, daysToBuild = daysToBuild, scheduleJobId = scheduleJobId, scheduleOnlyWithChanges = scheduleOnlyWithChanges, startHours = startHours, startMinutes = startMinutes, timeZoneId = timeZoneId)
+    val __obj = js.Dynamic.literal(branchFilters = branchFilters.asInstanceOf[js.Any], daysToBuild = daysToBuild.asInstanceOf[js.Any], scheduleJobId = scheduleJobId.asInstanceOf[js.Any], scheduleOnlyWithChanges = scheduleOnlyWithChanges.asInstanceOf[js.Any], startHours = startHours.asInstanceOf[js.Any], startMinutes = startMinutes.asInstanceOf[js.Any], timeZoneId = timeZoneId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Schedule]
   }

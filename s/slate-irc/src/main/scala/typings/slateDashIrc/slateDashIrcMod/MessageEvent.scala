@@ -14,7 +14,7 @@ trait MessageEvent extends js.Object {
 object MessageEvent {
   @scala.inline
   def apply(from: String, hostmask: String, message: String, to: String): MessageEvent = {
-    val __obj = js.Dynamic.literal(from = from, hostmask = hostmask, message = message, to = to)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], hostmask = hostmask.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MessageEvent]
   }

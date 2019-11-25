@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait GoogleActionsOrdersV3VerticalsTicketEventCharacterType extends js.Object
 
+object GoogleActionsOrdersV3VerticalsTicketEventCharacterType {
+  @scala.inline
+  def ACTOR: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.ACTOR = this.cast("ACTOR")
+  @scala.inline
+  def DIRECTOR: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.DIRECTOR = this.cast("DIRECTOR")
+  @scala.inline
+  def ORGANIZER: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.ORGANIZER = this.cast("ORGANIZER")
+  @scala.inline
+  def PERFORMER: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.PERFORMER = this.cast("PERFORMER")
+  @scala.inline
+  def TYPE_UNKNOWN: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.TYPE_UNKNOWN = this.cast("TYPE_UNKNOWN")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

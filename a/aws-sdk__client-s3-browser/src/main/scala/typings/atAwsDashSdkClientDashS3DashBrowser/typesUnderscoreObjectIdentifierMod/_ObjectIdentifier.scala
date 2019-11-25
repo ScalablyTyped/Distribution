@@ -18,8 +18,8 @@ trait _ObjectIdentifier extends js.Object {
 object _ObjectIdentifier {
   @scala.inline
   def apply(Key: String, VersionId: String = null): _ObjectIdentifier = {
-    val __obj = js.Dynamic.literal(Key = Key)
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId)
+    val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any])
+    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ObjectIdentifier]
   }
 }

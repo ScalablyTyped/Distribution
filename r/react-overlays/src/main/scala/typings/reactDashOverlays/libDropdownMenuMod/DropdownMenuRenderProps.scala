@@ -27,8 +27,8 @@ object DropdownMenuRenderProps {
     show: Boolean,
     outOfBoundaries: js.UndefOr[Boolean] = js.undefined
   ): DropdownMenuRenderProps = {
-    val __obj = js.Dynamic.literal(alignEnd = alignEnd, arrowProps = arrowProps, close = js.Any.fromFunction1(close), placement = placement, props = props, scheduleUpdate = js.Any.fromFunction0(scheduleUpdate), show = show)
-    if (!js.isUndefined(outOfBoundaries)) __obj.updateDynamic("outOfBoundaries")(outOfBoundaries)
+    val __obj = js.Dynamic.literal(alignEnd = alignEnd.asInstanceOf[js.Any], arrowProps = arrowProps.asInstanceOf[js.Any], close = js.Any.fromFunction1(close), placement = placement.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], scheduleUpdate = js.Any.fromFunction0(scheduleUpdate), show = show.asInstanceOf[js.Any])
+    if (!js.isUndefined(outOfBoundaries)) __obj.updateDynamic("outOfBoundaries")(outOfBoundaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropdownMenuRenderProps]
   }
 }

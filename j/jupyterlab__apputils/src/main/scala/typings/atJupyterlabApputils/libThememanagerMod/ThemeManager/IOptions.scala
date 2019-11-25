@@ -36,8 +36,8 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(host: Widget, key: String, settings: ISettingRegistry, url: String, splash: ISplashScreen = null): IOptions = {
-    val __obj = js.Dynamic.literal(host = host, key = key, settings = settings, url = url)
-    if (splash != null) __obj.updateDynamic("splash")(splash)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (splash != null) __obj.updateDynamic("splash")(splash.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

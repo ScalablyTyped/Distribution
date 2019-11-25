@@ -21,7 +21,7 @@ object StackFrame {
     methodName: String,
     columnNumber: Int | Double = null
   ): StackFrame = {
-    val __obj = js.Dynamic.literal(className = className, fileName = fileName, lineNumber = lineNumber, methodName = methodName)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
     if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackFrame]
   }

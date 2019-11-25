@@ -50,7 +50,7 @@ object PartialAttemptOptionsany {
     if (handleError != null) __obj.updateDynamic("handleError")(js.Any.fromFunction3(handleError))
     if (handleTimeout != null) __obj.updateDynamic("handleTimeout")(js.Any.fromFunction2(handleTimeout))
     if (initialDelay != null) __obj.updateDynamic("initialDelay")(initialDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(jitter)) __obj.updateDynamic("jitter")(jitter)
+    if (!js.isUndefined(jitter)) __obj.updateDynamic("jitter")(jitter.asInstanceOf[js.Any])
     if (maxAttempts != null) __obj.updateDynamic("maxAttempts")(maxAttempts.asInstanceOf[js.Any])
     if (maxDelay != null) __obj.updateDynamic("maxDelay")(maxDelay.asInstanceOf[js.Any])
     if (minDelay != null) __obj.updateDynamic("minDelay")(minDelay.asInstanceOf[js.Any])

@@ -13,7 +13,7 @@ object SignBlobRequest {
   @scala.inline
   def apply(bytesToSign: String = null): SignBlobRequest = {
     val __obj = js.Dynamic.literal()
-    if (bytesToSign != null) __obj.updateDynamic("bytesToSign")(bytesToSign)
+    if (bytesToSign != null) __obj.updateDynamic("bytesToSign")(bytesToSign.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignBlobRequest]
   }
 }

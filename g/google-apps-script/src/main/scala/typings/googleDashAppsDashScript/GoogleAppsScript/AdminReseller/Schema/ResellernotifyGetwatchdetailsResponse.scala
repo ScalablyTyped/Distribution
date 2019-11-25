@@ -13,8 +13,8 @@ object ResellernotifyGetwatchdetailsResponse {
   @scala.inline
   def apply(serviceAccountEmailAddresses: js.Array[String] = null, topicName: String = null): ResellernotifyGetwatchdetailsResponse = {
     val __obj = js.Dynamic.literal()
-    if (serviceAccountEmailAddresses != null) __obj.updateDynamic("serviceAccountEmailAddresses")(serviceAccountEmailAddresses)
-    if (topicName != null) __obj.updateDynamic("topicName")(topicName)
+    if (serviceAccountEmailAddresses != null) __obj.updateDynamic("serviceAccountEmailAddresses")(serviceAccountEmailAddresses.asInstanceOf[js.Any])
+    if (topicName != null) __obj.updateDynamic("topicName")(topicName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResellernotifyGetwatchdetailsResponse]
   }
 }

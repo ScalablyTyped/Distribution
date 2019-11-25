@@ -32,16 +32,16 @@ object LangAccessibilityAxisOptions {
     yAxisDescriptionSingular: String = null
   ): LangAccessibilityAxisOptions = {
     val __obj = js.Dynamic.literal()
-    if (rangeCategories != null) __obj.updateDynamic("rangeCategories")(rangeCategories)
-    if (rangeFromTo != null) __obj.updateDynamic("rangeFromTo")(rangeFromTo)
-    if (timeRangeDays != null) __obj.updateDynamic("timeRangeDays")(timeRangeDays)
-    if (timeRangeHours != null) __obj.updateDynamic("timeRangeHours")(timeRangeHours)
-    if (timeRangeMinutes != null) __obj.updateDynamic("timeRangeMinutes")(timeRangeMinutes)
-    if (timeRangeSeconds != null) __obj.updateDynamic("timeRangeSeconds")(timeRangeSeconds)
-    if (xAxisDescriptionPlural != null) __obj.updateDynamic("xAxisDescriptionPlural")(xAxisDescriptionPlural)
-    if (xAxisDescriptionSingular != null) __obj.updateDynamic("xAxisDescriptionSingular")(xAxisDescriptionSingular)
-    if (yAxisDescriptionPlural != null) __obj.updateDynamic("yAxisDescriptionPlural")(yAxisDescriptionPlural)
-    if (yAxisDescriptionSingular != null) __obj.updateDynamic("yAxisDescriptionSingular")(yAxisDescriptionSingular)
+    if (rangeCategories != null) __obj.updateDynamic("rangeCategories")(rangeCategories.asInstanceOf[js.Any])
+    if (rangeFromTo != null) __obj.updateDynamic("rangeFromTo")(rangeFromTo.asInstanceOf[js.Any])
+    if (timeRangeDays != null) __obj.updateDynamic("timeRangeDays")(timeRangeDays.asInstanceOf[js.Any])
+    if (timeRangeHours != null) __obj.updateDynamic("timeRangeHours")(timeRangeHours.asInstanceOf[js.Any])
+    if (timeRangeMinutes != null) __obj.updateDynamic("timeRangeMinutes")(timeRangeMinutes.asInstanceOf[js.Any])
+    if (timeRangeSeconds != null) __obj.updateDynamic("timeRangeSeconds")(timeRangeSeconds.asInstanceOf[js.Any])
+    if (xAxisDescriptionPlural != null) __obj.updateDynamic("xAxisDescriptionPlural")(xAxisDescriptionPlural.asInstanceOf[js.Any])
+    if (xAxisDescriptionSingular != null) __obj.updateDynamic("xAxisDescriptionSingular")(xAxisDescriptionSingular.asInstanceOf[js.Any])
+    if (yAxisDescriptionPlural != null) __obj.updateDynamic("yAxisDescriptionPlural")(yAxisDescriptionPlural.asInstanceOf[js.Any])
+    if (yAxisDescriptionSingular != null) __obj.updateDynamic("yAxisDescriptionSingular")(yAxisDescriptionSingular.asInstanceOf[js.Any])
     __obj.asInstanceOf[LangAccessibilityAxisOptions]
   }
 }

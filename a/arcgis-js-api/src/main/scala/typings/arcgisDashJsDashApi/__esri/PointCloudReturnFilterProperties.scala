@@ -25,8 +25,8 @@ object PointCloudReturnFilterProperties {
   @scala.inline
   def apply(field: String = null, includedReturns: js.Array[firstOfMany | last | lastOfMany | single] = null): PointCloudReturnFilterProperties = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (includedReturns != null) __obj.updateDynamic("includedReturns")(includedReturns)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (includedReturns != null) __obj.updateDynamic("includedReturns")(includedReturns.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointCloudReturnFilterProperties]
   }
 }

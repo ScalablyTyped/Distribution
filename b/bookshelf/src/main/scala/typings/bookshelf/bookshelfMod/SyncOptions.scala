@@ -19,9 +19,9 @@ object SyncOptions {
     withSchema: String = null
   ): SyncOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (transacting != null) __obj.updateDynamic("transacting")(transacting)
-    if (withSchema != null) __obj.updateDynamic("withSchema")(withSchema)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (transacting != null) __obj.updateDynamic("transacting")(transacting.asInstanceOf[js.Any])
+    if (withSchema != null) __obj.updateDynamic("withSchema")(withSchema.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyncOptions]
   }
 }

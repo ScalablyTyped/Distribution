@@ -12,7 +12,7 @@ trait Anon_Lower extends js.Object {
 object Anon_Lower {
   @scala.inline
   def apply(lower: Double, upper: Double): Anon_Lower = {
-    val __obj = js.Dynamic.literal(lower = lower, upper = upper)
+    val __obj = js.Dynamic.literal(lower = lower.asInstanceOf[js.Any], upper = upper.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Lower]
   }

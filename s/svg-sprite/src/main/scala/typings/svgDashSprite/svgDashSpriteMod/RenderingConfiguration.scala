@@ -21,8 +21,8 @@ object RenderingConfiguration {
   @scala.inline
   def apply(dest: String = null, template: String = null): RenderingConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (dest != null) __obj.updateDynamic("dest")(dest)
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderingConfiguration]
   }
 }

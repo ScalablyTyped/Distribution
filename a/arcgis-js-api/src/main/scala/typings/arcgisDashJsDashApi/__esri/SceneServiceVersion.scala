@@ -37,7 +37,7 @@ object SceneServiceVersion {
     propertyIsEnumerable: PropertyKey => Boolean,
     versionString: String
   ): SceneServiceVersion = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), major = major, minor = minor, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), versionString = versionString)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), versionString = versionString.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SceneServiceVersion]
   }

@@ -62,7 +62,7 @@ object AccountRecentActivityWorkItemModel {
     title: String,
     workItemType: String
   ): AccountRecentActivityWorkItemModel = {
-    val __obj = js.Dynamic.literal(activityDate = activityDate, activityType = activityType, assignedTo = assignedTo, changedDate = changedDate, id = id, identityId = identityId, state = state, teamProject = teamProject, title = title, workItemType = workItemType)
+    val __obj = js.Dynamic.literal(activityDate = activityDate.asInstanceOf[js.Any], activityType = activityType.asInstanceOf[js.Any], assignedTo = assignedTo.asInstanceOf[js.Any], changedDate = changedDate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], identityId = identityId.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], teamProject = teamProject.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], workItemType = workItemType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AccountRecentActivityWorkItemModel]
   }

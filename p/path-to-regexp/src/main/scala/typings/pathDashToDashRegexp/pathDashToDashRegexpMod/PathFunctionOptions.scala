@@ -23,7 +23,7 @@ object PathFunctionOptions {
   ): PathFunctionOptions = {
     val __obj = js.Dynamic.literal()
     if (encode != null) __obj.updateDynamic("encode")(js.Any.fromFunction2(encode))
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate)
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathFunctionOptions]
   }
 }

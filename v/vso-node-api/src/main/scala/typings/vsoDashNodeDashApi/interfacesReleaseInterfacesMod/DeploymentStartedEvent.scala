@@ -13,7 +13,7 @@ trait DeploymentStartedEvent extends js.Object {
 object DeploymentStartedEvent {
   @scala.inline
   def apply(environment: ReleaseEnvironment, project: ProjectReference, release: Release): DeploymentStartedEvent = {
-    val __obj = js.Dynamic.literal(environment = environment, project = project, release = release)
+    val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeploymentStartedEvent]
   }

@@ -11,7 +11,7 @@ trait SetVersionByQueryParamOptions extends js.Object {
 object SetVersionByQueryParamOptions {
   @scala.inline
   def apply(removeQueryParam: Boolean): SetVersionByQueryParamOptions = {
-    val __obj = js.Dynamic.literal(removeQueryParam = removeQueryParam)
+    val __obj = js.Dynamic.literal(removeQueryParam = removeQueryParam.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SetVersionByQueryParamOptions]
   }

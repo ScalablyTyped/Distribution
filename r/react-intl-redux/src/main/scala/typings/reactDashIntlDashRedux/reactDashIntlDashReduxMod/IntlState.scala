@@ -13,8 +13,8 @@ trait IntlState extends js.Object {
 object IntlState {
   @scala.inline
   def apply(locale: String, messages: js.Any, formats: js.Any = null): IntlState = {
-    val __obj = js.Dynamic.literal(locale = locale, messages = messages)
-    if (formats != null) __obj.updateDynamic("formats")(formats)
+    val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any])
+    if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntlState]
   }
 }

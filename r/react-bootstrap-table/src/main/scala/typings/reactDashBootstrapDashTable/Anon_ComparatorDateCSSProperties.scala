@@ -13,7 +13,7 @@ trait Anon_ComparatorDateCSSProperties extends js.Object {
 object Anon_ComparatorDateCSSProperties {
   @scala.inline
   def apply(comparator: CSSProperties, date: CSSProperties): Anon_ComparatorDateCSSProperties = {
-    val __obj = js.Dynamic.literal(comparator = comparator, date = date)
+    val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ComparatorDateCSSProperties]
   }

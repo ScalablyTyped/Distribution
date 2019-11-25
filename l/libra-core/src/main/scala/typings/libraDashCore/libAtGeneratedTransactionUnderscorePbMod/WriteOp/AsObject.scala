@@ -22,8 +22,8 @@ object AsObject {
     accessPath: typings.libraDashCore.libAtGeneratedAccessUnderscorePathUnderscorePbMod.AccessPath.AsObject = null
   ): AsObject = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    if (accessPath != null) __obj.updateDynamic("accessPath")(accessPath)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (accessPath != null) __obj.updateDynamic("accessPath")(accessPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

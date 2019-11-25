@@ -14,9 +14,9 @@ object Anon_Ch {
   @scala.inline
   def apply(ch: String = null, style: js.Any = null, track: js.Any = null): Anon_Ch = {
     val __obj = js.Dynamic.literal()
-    if (ch != null) __obj.updateDynamic("ch")(ch)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (track != null) __obj.updateDynamic("track")(track)
+    if (ch != null) __obj.updateDynamic("ch")(ch.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (track != null) __obj.updateDynamic("track")(track.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Ch]
   }
 }

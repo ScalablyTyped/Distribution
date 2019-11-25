@@ -12,7 +12,7 @@ trait reactDashNavigationProps {
   def NavigationEventsProps: typings.reactDashNavigation.reactDashNavigationMod.NavigationEventsProps.type = typings.reactDashNavigation.reactDashNavigationMod.NavigationEventsProps
   type NavigationEventsProps = typings.reactDashNavigation.reactDashNavigationMod.NavigationEventsProps
   @scala.inline
-  def NavigationProviderProps: typings.reactDashNavigation.Anon_Value.type = typings.reactDashNavigation.Anon_Value
+  def NavigationProviderProps: Anon_Value.type = typings.reactDashNavigation.Anon_Value
   type NavigationProviderProps = Anon_Value
   @scala.inline
   def SafeAreaViewProps: typings.reactDashNavigation.reactDashNavigationMod.SafeAreaViewProps.type = typings.reactDashNavigation.reactDashNavigationMod.SafeAreaViewProps
@@ -26,9 +26,6 @@ trait reactDashNavigationProps {
   @scala.inline
   def SectionListProps: typings.reactDashNative.reactDashNativeMod.SectionListProps.type = typings.reactDashNative.reactDashNativeMod.SectionListProps
   type SectionListProps[ItemT] = typings.reactDashNative.reactDashNativeMod.SectionListProps[ItemT]
-  @scala.inline
-  def SectionListClsProps: typings.reactDashNative.reactDashNativeMod.SectionListProps.type = typings.reactDashNative.reactDashNativeMod.SectionListProps
-  type SectionListClsProps[ItemT] = typings.reactDashNative.reactDashNativeMod.SectionListProps[ItemT]
   type ThemedStatusBarProps = typings.reactDashNavigation.reactDashNavigationMod.ThemedStatusBarProps
   type ThemedTextProps = typings.reactDashNavigation.reactDashNavigationMod.ThemedTextProps
   type ThemedTextInputProps = typings.reactDashNavigation.reactDashNavigationMod.ThemedTextInputProps

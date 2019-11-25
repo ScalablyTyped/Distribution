@@ -22,12 +22,12 @@ object ComposeTransactionParams {
     push: js.UndefOr[Boolean] = js.undefined,
     useEmptyPassphrase: js.UndefOr[Boolean] = js.undefined
   ): ComposeTransactionParams = {
-    val __obj = js.Dynamic.literal(coin = coin, outputs = outputs)
-    if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice)
-    if (device != null) __obj.updateDynamic("device")(device)
-    if (!js.isUndefined(keepSession)) __obj.updateDynamic("keepSession")(keepSession)
-    if (!js.isUndefined(push)) __obj.updateDynamic("push")(push)
-    if (!js.isUndefined(useEmptyPassphrase)) __obj.updateDynamic("useEmptyPassphrase")(useEmptyPassphrase)
+    val __obj = js.Dynamic.literal(coin = coin.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice.asInstanceOf[js.Any])
+    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepSession)) __obj.updateDynamic("keepSession")(keepSession.asInstanceOf[js.Any])
+    if (!js.isUndefined(push)) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
+    if (!js.isUndefined(useEmptyPassphrase)) __obj.updateDynamic("useEmptyPassphrase")(useEmptyPassphrase.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComposeTransactionParams]
   }
 }

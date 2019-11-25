@@ -24,10 +24,10 @@ object Sheet2HTMLOpts {
     id: String = null
   ): Sheet2HTMLOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
-    if (footer != null) __obj.updateDynamic("footer")(footer)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sheet2HTMLOpts]
   }
 }

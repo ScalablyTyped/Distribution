@@ -16,7 +16,7 @@ trait LoginStatus extends js.Object {
 object LoginStatus {
   @scala.inline
   def apply(authResponse: Anon_AccessTokenExpire, status: ConnectionStatus): LoginStatus = {
-    val __obj = js.Dynamic.literal(authResponse = authResponse, status = status)
+    val __obj = js.Dynamic.literal(authResponse = authResponse.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LoginStatus]
   }

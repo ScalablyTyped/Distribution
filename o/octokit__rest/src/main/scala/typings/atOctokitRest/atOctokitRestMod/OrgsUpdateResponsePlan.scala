@@ -13,7 +13,7 @@ trait OrgsUpdateResponsePlan extends js.Object {
 object OrgsUpdateResponsePlan {
   @scala.inline
   def apply(name: String, private_repos: Double, space: Double): OrgsUpdateResponsePlan = {
-    val __obj = js.Dynamic.literal(name = name, private_repos = private_repos, space = space)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], private_repos = private_repos.asInstanceOf[js.Any], space = space.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OrgsUpdateResponsePlan]
   }

@@ -13,7 +13,7 @@ object TextPosition {
   @scala.inline
   def apply(horizontalAlignment: String = null): TextPosition = {
     val __obj = js.Dynamic.literal()
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextPosition]
   }
 }

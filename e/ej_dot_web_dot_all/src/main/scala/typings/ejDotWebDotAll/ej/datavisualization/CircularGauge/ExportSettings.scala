@@ -31,8 +31,8 @@ object ExportSettings {
     `type`: ExportingType | String = null
   ): ExportSettings = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportSettings]

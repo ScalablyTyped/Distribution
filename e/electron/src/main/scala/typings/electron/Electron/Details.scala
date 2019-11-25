@@ -53,14 +53,14 @@ object Details {
     secure: js.UndefOr[Boolean] = js.undefined,
     value: String = null
   ): Details = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Details]
   }
 }

@@ -27,7 +27,7 @@ object ISmsMessageBase {
     messageType: SmsMessageType,
     simIccId: String
   ): ISmsMessageBase = {
-    val __obj = js.Dynamic.literal(cellularClass = cellularClass, deviceId = deviceId, messageClass = messageClass, messageType = messageType, simIccId = simIccId)
+    val __obj = js.Dynamic.literal(cellularClass = cellularClass.asInstanceOf[js.Any], deviceId = deviceId.asInstanceOf[js.Any], messageClass = messageClass.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any], simIccId = simIccId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISmsMessageBase]
   }

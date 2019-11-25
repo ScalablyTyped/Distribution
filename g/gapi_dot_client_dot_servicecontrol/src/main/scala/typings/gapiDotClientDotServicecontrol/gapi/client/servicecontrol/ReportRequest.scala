@@ -32,8 +32,8 @@ object ReportRequest {
   @scala.inline
   def apply(operations: js.Array[Operation] = null, serviceConfigId: String = null): ReportRequest = {
     val __obj = js.Dynamic.literal()
-    if (operations != null) __obj.updateDynamic("operations")(operations)
-    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId)
+    if (operations != null) __obj.updateDynamic("operations")(operations.asInstanceOf[js.Any])
+    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportRequest]
   }
 }

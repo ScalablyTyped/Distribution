@@ -16,7 +16,7 @@ trait DataContext extends js.Object {
 object DataContext {
   @scala.inline
   def apply(color: String, label: String, selected: Boolean, size: Double, tooltip: String): DataContext = {
-    val __obj = js.Dynamic.literal(color = color, label = label, selected = selected, size = size, tooltip = tooltip)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DataContext]
   }

@@ -13,7 +13,7 @@ trait FormsOptions extends js.Object {
 object FormsOptions {
   @scala.inline
   def apply(inputs: Boolean, submit: Boolean, toggles: Boolean): FormsOptions = {
-    val __obj = js.Dynamic.literal(inputs = inputs, submit = submit, toggles = toggles)
+    val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], toggles = toggles.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FormsOptions]
   }

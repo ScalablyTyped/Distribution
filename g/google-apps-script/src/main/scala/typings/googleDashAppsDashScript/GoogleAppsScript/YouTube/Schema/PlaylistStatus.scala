@@ -12,7 +12,7 @@ object PlaylistStatus {
   @scala.inline
   def apply(privacyStatus: String = null): PlaylistStatus = {
     val __obj = js.Dynamic.literal()
-    if (privacyStatus != null) __obj.updateDynamic("privacyStatus")(privacyStatus)
+    if (privacyStatus != null) __obj.updateDynamic("privacyStatus")(privacyStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaylistStatus]
   }
 }

@@ -19,9 +19,9 @@ object DeviceAuthorizationParameters {
     scope: String = null
   ): DeviceAuthorizationParameters = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (client_id != null) __obj.updateDynamic("client_id")(client_id)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (client_id != null) __obj.updateDynamic("client_id")(client_id.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceAuthorizationParameters]
   }
 }

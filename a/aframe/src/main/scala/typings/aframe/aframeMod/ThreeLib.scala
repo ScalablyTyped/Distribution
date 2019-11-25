@@ -659,7 +659,7 @@ trait ThreeLib extends js.Object {
   ] = js.native
   var PositionalAudio: Instantiable1[/* listener */ AudioListener, typings.three.threeMod.PositionalAudio] = js.native
   var PositionalAudioHelper: Instantiable1[/* audio */ PositionalAudio, typings.three.threeMod.PositionalAudioHelper] = js.native
-  var PropertyBinding: TypeofClassPropertyBinding | TypeofPropertyBinding = js.native
+  var PropertyBinding: TypeofClassPropertyBinding with TypeofPropertyBinding = js.native
   var PropertyMixer: Instantiable3[
     /* binding */ js.Any, 
     /* typeName */ String, 

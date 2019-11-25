@@ -34,9 +34,9 @@ object TileOptions {
   ): TileOptions = {
     val __obj = js.Dynamic.literal()
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (depth != null) __obj.updateDynamic("depth")(depth)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (overlap != null) __obj.updateDynamic("overlap")(overlap.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (skipBlanks != null) __obj.updateDynamic("skipBlanks")(skipBlanks.asInstanceOf[js.Any])

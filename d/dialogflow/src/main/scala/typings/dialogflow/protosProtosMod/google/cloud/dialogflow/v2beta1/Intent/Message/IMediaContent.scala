@@ -18,8 +18,8 @@ object IMediaContent {
   @scala.inline
   def apply(mediaObjects: js.Array[IResponseMediaObject] = null, mediaType: ResponseMediaType = null): IMediaContent = {
     val __obj = js.Dynamic.literal()
-    if (mediaObjects != null) __obj.updateDynamic("mediaObjects")(mediaObjects)
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType)
+    if (mediaObjects != null) __obj.updateDynamic("mediaObjects")(mediaObjects.asInstanceOf[js.Any])
+    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMediaContent]
   }
 }

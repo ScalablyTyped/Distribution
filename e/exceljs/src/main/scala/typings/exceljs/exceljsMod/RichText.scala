@@ -13,8 +13,8 @@ trait RichText extends js.Object {
 object RichText {
   @scala.inline
   def apply(text: String, font: Partial[Font] = null): RichText = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (font != null) __obj.updateDynamic("font")(font)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     __obj.asInstanceOf[RichText]
   }
 }

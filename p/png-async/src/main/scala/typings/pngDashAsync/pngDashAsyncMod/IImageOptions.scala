@@ -28,12 +28,12 @@ object IImageOptions {
     width: Int | Double = null
   ): IImageOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkCRC)) __obj.updateDynamic("checkCRC")(checkCRC)
+    if (!js.isUndefined(checkCRC)) __obj.updateDynamic("checkCRC")(checkCRC.asInstanceOf[js.Any])
     if (deflateChunkSize != null) __obj.updateDynamic("deflateChunkSize")(deflateChunkSize.asInstanceOf[js.Any])
     if (deflateLevel != null) __obj.updateDynamic("deflateLevel")(deflateLevel.asInstanceOf[js.Any])
-    if (deflateStrategy != null) __obj.updateDynamic("deflateStrategy")(deflateStrategy)
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
-    if (filterType != null) __obj.updateDynamic("filterType")(filterType)
+    if (deflateStrategy != null) __obj.updateDynamic("deflateStrategy")(deflateStrategy.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IImageOptions]

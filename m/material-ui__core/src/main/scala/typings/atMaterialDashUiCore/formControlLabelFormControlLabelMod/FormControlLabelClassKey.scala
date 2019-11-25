@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait FormControlLabelClassKey extends js.Object
 
+object FormControlLabelClassKey {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def disabled: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.disabled = this.cast("disabled")
+  @scala.inline
+  def label: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.label = this.cast("label")
+  @scala.inline
+  def root: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.root = this.cast("root")
+  @scala.inline
+  def start: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.start = this.cast("start")
+}
+

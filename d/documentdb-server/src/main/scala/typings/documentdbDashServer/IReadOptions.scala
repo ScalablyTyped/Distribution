@@ -14,7 +14,7 @@ object IReadOptions {
   @scala.inline
   def apply(ifNoneMatch: String = null): IReadOptions = {
     val __obj = js.Dynamic.literal()
-    if (ifNoneMatch != null) __obj.updateDynamic("ifNoneMatch")(ifNoneMatch)
+    if (ifNoneMatch != null) __obj.updateDynamic("ifNoneMatch")(ifNoneMatch.asInstanceOf[js.Any])
     __obj.asInstanceOf[IReadOptions]
   }
 }

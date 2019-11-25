@@ -35,7 +35,7 @@ object AttemptOptions {
     handleError: (/* err */ js.Any, /* context */ AttemptContext, /* options */ AttemptOptions[T]) => Unit = null,
     handleTimeout: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => js.Promise[T] = null
   ): AttemptOptions[T] = {
-    val __obj = js.Dynamic.literal(delay = delay, factor = factor, initialDelay = initialDelay, jitter = jitter, maxAttempts = maxAttempts, maxDelay = maxDelay, minDelay = minDelay, timeout = timeout)
+    val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], factor = factor.asInstanceOf[js.Any], initialDelay = initialDelay.asInstanceOf[js.Any], jitter = jitter.asInstanceOf[js.Any], maxAttempts = maxAttempts.asInstanceOf[js.Any], maxDelay = maxDelay.asInstanceOf[js.Any], minDelay = minDelay.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     if (beforeAttempt != null) __obj.updateDynamic("beforeAttempt")(js.Any.fromFunction2(beforeAttempt))
     if (calculateDelay != null) __obj.updateDynamic("calculateDelay")(js.Any.fromFunction2(calculateDelay))
     if (handleError != null) __obj.updateDynamic("handleError")(js.Any.fromFunction3(handleError))

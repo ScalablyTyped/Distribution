@@ -1,7 +1,6 @@
 package typings.reactDashRouter
 
 import typings.react.reactMod.ComponentType
-import typings.reactDashRouter.reactDashRouterMod.RouteProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +13,7 @@ object reactDashRouterComponents extends reactDashRouterProps {
   @scala.inline
   def Redirect: ComponentType[RedirectProps] = js.constructorOf[typings.reactDashRouter.reactDashRouterMod.Redirect].asInstanceOf[typings.react.reactMod.ComponentType[RedirectProps]]
   @scala.inline
-  def Route[T /* <: RouteProps */]: ComponentType[T] = js.constructorOf[typings.reactDashRouter.reactDashRouterMod.Route[T]].asInstanceOf[typings.react.reactMod.ComponentType[T]]
+  def Route: ComponentType[RouteProps] = js.constructorOf[typings.reactDashRouter.reactDashRouterMod.Route[typings.reactDashRouter.reactDashRouterMod.RouteProps]].asInstanceOf[typings.react.reactMod.ComponentType[RouteProps]]
   @scala.inline
   def Router: ComponentType[RouterProps] = js.constructorOf[typings.reactDashRouter.reactDashRouterMod.Router].asInstanceOf[typings.react.reactMod.ComponentType[RouterProps]]
   @scala.inline

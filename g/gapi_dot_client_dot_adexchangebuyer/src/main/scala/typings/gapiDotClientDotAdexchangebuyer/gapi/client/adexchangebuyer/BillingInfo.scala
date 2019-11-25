@@ -28,9 +28,9 @@ object BillingInfo {
   ): BillingInfo = {
     val __obj = js.Dynamic.literal()
     if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (accountName != null) __obj.updateDynamic("accountName")(accountName)
-    if (billingId != null) __obj.updateDynamic("billingId")(billingId)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (accountName != null) __obj.updateDynamic("accountName")(accountName.asInstanceOf[js.Any])
+    if (billingId != null) __obj.updateDynamic("billingId")(billingId.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[BillingInfo]
   }
 }

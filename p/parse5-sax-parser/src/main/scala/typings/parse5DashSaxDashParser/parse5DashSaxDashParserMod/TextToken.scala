@@ -19,8 +19,8 @@ trait TextToken extends js.Object {
 object TextToken {
   @scala.inline
   def apply(text: String, sourceCodeLocation: Location = null): TextToken = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextToken]
   }
 }

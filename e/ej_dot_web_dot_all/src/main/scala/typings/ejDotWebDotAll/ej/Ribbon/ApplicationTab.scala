@@ -33,9 +33,9 @@ object ApplicationTab {
     `type`: ApplicationTabType | String = null
   ): ApplicationTab = {
     val __obj = js.Dynamic.literal()
-    if (backstageSettings != null) __obj.updateDynamic("backstageSettings")(backstageSettings)
-    if (menuItemID != null) __obj.updateDynamic("menuItemID")(menuItemID)
-    if (menuSettings != null) __obj.updateDynamic("menuSettings")(menuSettings)
+    if (backstageSettings != null) __obj.updateDynamic("backstageSettings")(backstageSettings.asInstanceOf[js.Any])
+    if (menuItemID != null) __obj.updateDynamic("menuItemID")(menuItemID.asInstanceOf[js.Any])
+    if (menuSettings != null) __obj.updateDynamic("menuSettings")(menuSettings.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationTab]
   }

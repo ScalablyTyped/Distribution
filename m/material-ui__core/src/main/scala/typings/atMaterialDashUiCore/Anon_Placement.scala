@@ -14,8 +14,8 @@ trait Anon_Placement extends js.Object {
 object Anon_Placement {
   @scala.inline
   def apply(placement: PopperPlacementType, TransitionProps: TransitionProps = null): Anon_Placement = {
-    val __obj = js.Dynamic.literal(placement = placement)
-    if (TransitionProps != null) __obj.updateDynamic("TransitionProps")(TransitionProps)
+    val __obj = js.Dynamic.literal(placement = placement.asInstanceOf[js.Any])
+    if (TransitionProps != null) __obj.updateDynamic("TransitionProps")(TransitionProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Placement]
   }
 }

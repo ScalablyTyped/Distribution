@@ -19,9 +19,9 @@ object Anon_Iterations {
     moderate: js.UndefOr[Boolean] = js.undefined,
     retries: Int | Double = null
   ): Anon_Iterations = {
-    val __obj = js.Dynamic.literal(query = query)
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
-    if (!js.isUndefined(moderate)) __obj.updateDynamic("moderate")(moderate)
+    if (!js.isUndefined(moderate)) __obj.updateDynamic("moderate")(moderate.asInstanceOf[js.Any])
     if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Iterations]
   }

@@ -17,9 +17,9 @@ trait Anon_BottomEdge extends js.Object {
 object Anon_BottomEdge {
   @scala.inline
   def apply(selector: String, edge: start | end | top | bottom = null, query: String = null): Anon_BottomEdge = {
-    val __obj = js.Dynamic.literal(selector = selector)
+    val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
     if (edge != null) __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BottomEdge]
   }
 }

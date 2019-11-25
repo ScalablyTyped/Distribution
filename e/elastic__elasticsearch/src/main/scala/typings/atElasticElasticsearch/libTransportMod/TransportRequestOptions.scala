@@ -32,16 +32,16 @@ object TransportRequestOptions {
     warnings: js.Array[String] = null
   ): TransportRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(asStream)) __obj.updateDynamic("asStream")(asStream)
-    if (compression != null) __obj.updateDynamic("compression")(compression)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
+    if (!js.isUndefined(asStream)) __obj.updateDynamic("asStream")(asStream.asInstanceOf[js.Any])
+    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (querystring != null) __obj.updateDynamic("querystring")(querystring)
+    if (querystring != null) __obj.updateDynamic("querystring")(querystring.asInstanceOf[js.Any])
     if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransportRequestOptions]
   }
 }

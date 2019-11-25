@@ -43,16 +43,16 @@ object Channel {
     `type`: String = null
   ): Channel = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (expiration != null) __obj.updateDynamic("expiration")(expiration)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (!js.isUndefined(payload)) __obj.updateDynamic("payload")(payload)
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId)
-    if (resourceUri != null) __obj.updateDynamic("resourceUri")(resourceUri)
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (!js.isUndefined(payload)) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
+    if (resourceUri != null) __obj.updateDynamic("resourceUri")(resourceUri.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Channel]
   }
 }

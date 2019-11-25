@@ -47,13 +47,13 @@ object SeriesMouseLeftButtonUpEventUIParam {
     series: js.Any = null
   ): SeriesMouseLeftButtonUpEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (actualItemBrush != null) __obj.updateDynamic("actualItemBrush")(actualItemBrush)
-    if (actualSeriesBrush != null) __obj.updateDynamic("actualSeriesBrush")(actualSeriesBrush)
-    if (chart != null) __obj.updateDynamic("chart")(chart)
-    if (item != null) __obj.updateDynamic("item")(item)
-    if (positionX != null) __obj.updateDynamic("positionX")(positionX)
-    if (positionY != null) __obj.updateDynamic("positionY")(positionY)
-    if (series != null) __obj.updateDynamic("series")(series)
+    if (actualItemBrush != null) __obj.updateDynamic("actualItemBrush")(actualItemBrush.asInstanceOf[js.Any])
+    if (actualSeriesBrush != null) __obj.updateDynamic("actualSeriesBrush")(actualSeriesBrush.asInstanceOf[js.Any])
+    if (chart != null) __obj.updateDynamic("chart")(chart.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (positionX != null) __obj.updateDynamic("positionX")(positionX.asInstanceOf[js.Any])
+    if (positionY != null) __obj.updateDynamic("positionY")(positionY.asInstanceOf[js.Any])
+    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesMouseLeftButtonUpEventUIParam]
   }
 }

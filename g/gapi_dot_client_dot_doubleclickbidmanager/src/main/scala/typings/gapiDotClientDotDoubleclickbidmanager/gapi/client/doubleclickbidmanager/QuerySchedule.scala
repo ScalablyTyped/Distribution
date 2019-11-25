@@ -24,10 +24,10 @@ object QuerySchedule {
     nextRunTimezoneCode: String = null
   ): QuerySchedule = {
     val __obj = js.Dynamic.literal()
-    if (endTimeMs != null) __obj.updateDynamic("endTimeMs")(endTimeMs)
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency)
+    if (endTimeMs != null) __obj.updateDynamic("endTimeMs")(endTimeMs.asInstanceOf[js.Any])
+    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
     if (nextRunMinuteOfDay != null) __obj.updateDynamic("nextRunMinuteOfDay")(nextRunMinuteOfDay.asInstanceOf[js.Any])
-    if (nextRunTimezoneCode != null) __obj.updateDynamic("nextRunTimezoneCode")(nextRunTimezoneCode)
+    if (nextRunTimezoneCode != null) __obj.updateDynamic("nextRunTimezoneCode")(nextRunTimezoneCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuerySchedule]
   }
 }

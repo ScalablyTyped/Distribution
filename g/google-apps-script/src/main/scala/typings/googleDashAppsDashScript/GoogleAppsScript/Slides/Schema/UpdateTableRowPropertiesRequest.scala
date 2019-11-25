@@ -20,10 +20,10 @@ object UpdateTableRowPropertiesRequest {
     tableRowProperties: TableRowProperties = null
   ): UpdateTableRowPropertiesRequest = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
-    if (rowIndices != null) __obj.updateDynamic("rowIndices")(rowIndices)
-    if (tableRowProperties != null) __obj.updateDynamic("tableRowProperties")(tableRowProperties)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
+    if (rowIndices != null) __obj.updateDynamic("rowIndices")(rowIndices.asInstanceOf[js.Any])
+    if (tableRowProperties != null) __obj.updateDynamic("tableRowProperties")(tableRowProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTableRowPropertiesRequest]
   }
 }

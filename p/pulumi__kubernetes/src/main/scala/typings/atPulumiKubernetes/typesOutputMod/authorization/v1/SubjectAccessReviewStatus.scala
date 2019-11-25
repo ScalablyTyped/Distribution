@@ -34,7 +34,7 @@ trait SubjectAccessReviewStatus extends js.Object {
 object SubjectAccessReviewStatus {
   @scala.inline
   def apply(allowed: Boolean, denied: Boolean, evaluationError: String, reason: String): SubjectAccessReviewStatus = {
-    val __obj = js.Dynamic.literal(allowed = allowed, denied = denied, evaluationError = evaluationError, reason = reason)
+    val __obj = js.Dynamic.literal(allowed = allowed.asInstanceOf[js.Any], denied = denied.asInstanceOf[js.Any], evaluationError = evaluationError.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SubjectAccessReviewStatus]
   }

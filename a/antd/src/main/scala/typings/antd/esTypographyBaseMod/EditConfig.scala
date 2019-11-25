@@ -18,7 +18,7 @@ object EditConfig {
     onStart: () => Unit = null
   ): EditConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(editing)) __obj.updateDynamic("editing")(editing)
+    if (!js.isUndefined(editing)) __obj.updateDynamic("editing")(editing.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction0(onStart))
     __obj.asInstanceOf[EditConfig]

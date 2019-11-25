@@ -23,8 +23,8 @@ object ArcGISCachedServiceProperties {
   @scala.inline
   def apply(copyright: String = null, tileInfo: TileInfoProperties = null): ArcGISCachedServiceProperties = {
     val __obj = js.Dynamic.literal()
-    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
-    if (tileInfo != null) __obj.updateDynamic("tileInfo")(tileInfo)
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
+    if (tileInfo != null) __obj.updateDynamic("tileInfo")(tileInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArcGISCachedServiceProperties]
   }
 }

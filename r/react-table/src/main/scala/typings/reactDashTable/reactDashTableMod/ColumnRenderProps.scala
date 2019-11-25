@@ -14,7 +14,7 @@ trait ColumnRenderProps[D] extends js.Object {
 object ColumnRenderProps {
   @scala.inline
   def apply[D](column: Column[D], data: js.Array[D]): ColumnRenderProps[D] = {
-    val __obj = js.Dynamic.literal(column = column, data = data)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ColumnRenderProps[D]]
   }

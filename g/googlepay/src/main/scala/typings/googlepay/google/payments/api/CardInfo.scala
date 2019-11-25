@@ -13,8 +13,8 @@ trait CardInfo extends js.Object {
 object CardInfo {
   @scala.inline
   def apply(cardDetails: String, cardNetwork: AllowedCardNetwork, billingAddress: Address = null): CardInfo = {
-    val __obj = js.Dynamic.literal(cardDetails = cardDetails, cardNetwork = cardNetwork)
-    if (billingAddress != null) __obj.updateDynamic("billingAddress")(billingAddress)
+    val __obj = js.Dynamic.literal(cardDetails = cardDetails.asInstanceOf[js.Any], cardNetwork = cardNetwork.asInstanceOf[js.Any])
+    if (billingAddress != null) __obj.updateDynamic("billingAddress")(billingAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardInfo]
   }
 }

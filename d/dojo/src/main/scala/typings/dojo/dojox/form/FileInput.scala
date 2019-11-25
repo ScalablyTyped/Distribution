@@ -1,7 +1,6 @@
 package typings.dojo.dojox.form
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dijit.form._FormWidget
 import typings.dojo.dojoStrings.cancelText
 import typings.dojo.dojoStrings.label
@@ -69,10 +68,24 @@ class FileInput () extends _FormWidget {
   @JSName("set")
   def set_value(property: value, value: String): Unit = js.native
   @JSName("watch")
-  def watch_cancelText(property: cancelText, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_cancelText(
+    property: cancelText,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_label(property: label, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_value(property: value, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_label(
+    property: label,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

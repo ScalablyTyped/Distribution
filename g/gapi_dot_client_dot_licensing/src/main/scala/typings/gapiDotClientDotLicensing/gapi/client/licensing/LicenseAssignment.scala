@@ -36,14 +36,14 @@ object LicenseAssignment {
     userId: String = null
   ): LicenseAssignment = {
     val __obj = js.Dynamic.literal()
-    if (etags != null) __obj.updateDynamic("etags")(etags)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
-    if (productName != null) __obj.updateDynamic("productName")(productName)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (skuId != null) __obj.updateDynamic("skuId")(skuId)
-    if (skuName != null) __obj.updateDynamic("skuName")(skuName)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
+    if (etags != null) __obj.updateDynamic("etags")(etags.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
+    if (productName != null) __obj.updateDynamic("productName")(productName.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (skuId != null) __obj.updateDynamic("skuId")(skuId.asInstanceOf[js.Any])
+    if (skuName != null) __obj.updateDynamic("skuName")(skuName.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LicenseAssignment]
   }
 }

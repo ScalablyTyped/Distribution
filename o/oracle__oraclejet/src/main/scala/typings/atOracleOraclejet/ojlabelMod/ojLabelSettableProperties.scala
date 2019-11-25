@@ -25,10 +25,10 @@ object ojLabelSettableProperties {
     labelId: String = null,
     showRequired: js.UndefOr[Boolean] = js.undefined
   ): ojLabelSettableProperties = {
-    val __obj = js.Dynamic.literal(help = help, translations = translations)
-    if (`for` != null) __obj.updateDynamic("for")(`for`)
-    if (labelId != null) __obj.updateDynamic("labelId")(labelId)
-    if (!js.isUndefined(showRequired)) __obj.updateDynamic("showRequired")(showRequired)
+    val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
+    if (`for` != null) __obj.updateDynamic("for")(`for`.asInstanceOf[js.Any])
+    if (labelId != null) __obj.updateDynamic("labelId")(labelId.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRequired)) __obj.updateDynamic("showRequired")(showRequired.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojLabelSettableProperties]
   }
 }

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait MovementMode extends js.Object
 
+object MovementMode {
+  @scala.inline
+  def FLUID: typings.reactDashBeautifulDashDnd.reactDashBeautifulDashDndStrings.FLUID = this.cast("FLUID")
+  @scala.inline
+  def SNAP: typings.reactDashBeautifulDashDnd.reactDashBeautifulDashDndStrings.SNAP = this.cast("SNAP")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

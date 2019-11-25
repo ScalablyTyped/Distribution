@@ -29,9 +29,9 @@ object Anon_ItemStyleLabelLabelLine {
     labelLine: Anon_EmphasisLength = null
   ): Anon_ItemStyleLabelLabelLine = {
     val __obj = js.Dynamic.literal()
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (labelLine != null) __obj.updateDynamic("labelLine")(labelLine)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (labelLine != null) __obj.updateDynamic("labelLine")(labelLine.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ItemStyleLabelLabelLine]
   }
 }

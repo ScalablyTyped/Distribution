@@ -13,8 +13,8 @@ trait HostedFieldsHostedFieldsCard extends js.Object {
 object HostedFieldsHostedFieldsCard {
   @scala.inline
   def apply(code: HostedFieldsCardCode, niceType: String, `type`: String): HostedFieldsHostedFieldsCard = {
-    val __obj = js.Dynamic.literal(code = code, niceType = niceType)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], niceType = niceType.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostedFieldsHostedFieldsCard]
   }
 }

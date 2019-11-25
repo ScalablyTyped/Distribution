@@ -12,8 +12,8 @@ trait ReflectionCategoryObject extends js.Object {
 object ReflectionCategoryObject {
   @scala.inline
   def apply(title: String, children: js.Array[Double] = null): ReflectionCategoryObject = {
-    val __obj = js.Dynamic.literal(title = title)
-    if (children != null) __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReflectionCategoryObject]
   }
 }

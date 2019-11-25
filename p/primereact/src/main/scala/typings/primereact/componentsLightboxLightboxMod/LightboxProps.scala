@@ -26,13 +26,13 @@ object LightboxProps {
     target: String = null
   ): LightboxProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (easing != null) __obj.updateDynamic("easing")(easing)
-    if (effectDuration != null) __obj.updateDynamic("effectDuration")(effectDuration)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (images != null) __obj.updateDynamic("images")(images)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
+    if (effectDuration != null) __obj.updateDynamic("effectDuration")(effectDuration.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[LightboxProps]
   }
 }

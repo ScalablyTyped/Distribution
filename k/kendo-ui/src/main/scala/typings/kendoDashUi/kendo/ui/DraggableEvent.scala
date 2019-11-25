@@ -12,7 +12,7 @@ object DraggableEvent {
   @scala.inline
   def apply(sender: Draggable = null): DraggableEvent = {
     val __obj = js.Dynamic.literal()
-    if (sender != null) __obj.updateDynamic("sender")(sender)
+    if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggableEvent]
   }
 }

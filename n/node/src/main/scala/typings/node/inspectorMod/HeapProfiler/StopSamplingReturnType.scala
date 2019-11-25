@@ -14,7 +14,7 @@ trait StopSamplingReturnType extends js.Object {
 object StopSamplingReturnType {
   @scala.inline
   def apply(profile: SamplingHeapProfile): StopSamplingReturnType = {
-    val __obj = js.Dynamic.literal(profile = profile)
+    val __obj = js.Dynamic.literal(profile = profile.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StopSamplingReturnType]
   }

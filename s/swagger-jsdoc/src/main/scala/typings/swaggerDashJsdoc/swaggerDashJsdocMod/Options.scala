@@ -21,10 +21,10 @@ object Options {
     swaggerDefinition: SwaggerDefinition = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (apis != null) __obj.updateDynamic("apis")(apis)
-    if (definition != null) __obj.updateDynamic("definition")(definition)
-    if (swaggerDefinition != null) __obj.updateDynamic("swaggerDefinition")(swaggerDefinition)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (apis != null) __obj.updateDynamic("apis")(apis.asInstanceOf[js.Any])
+    if (definition != null) __obj.updateDynamic("definition")(definition.asInstanceOf[js.Any])
+    if (swaggerDefinition != null) __obj.updateDynamic("swaggerDefinition")(swaggerDefinition.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

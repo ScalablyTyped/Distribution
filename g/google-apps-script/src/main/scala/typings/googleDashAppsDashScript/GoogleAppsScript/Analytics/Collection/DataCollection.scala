@@ -17,9 +17,9 @@ object DataCollection {
   @scala.inline
   def apply(Ga: GaCollection = null, Mcf: McfCollection = null, Realtime: RealtimeCollection = null): DataCollection = {
     val __obj = js.Dynamic.literal()
-    if (Ga != null) __obj.updateDynamic("Ga")(Ga)
-    if (Mcf != null) __obj.updateDynamic("Mcf")(Mcf)
-    if (Realtime != null) __obj.updateDynamic("Realtime")(Realtime)
+    if (Ga != null) __obj.updateDynamic("Ga")(Ga.asInstanceOf[js.Any])
+    if (Mcf != null) __obj.updateDynamic("Mcf")(Mcf.asInstanceOf[js.Any])
+    if (Realtime != null) __obj.updateDynamic("Realtime")(Realtime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataCollection]
   }
 }

@@ -23,7 +23,7 @@ object FilteredBidsResource {
     details: DetailsResource,
     list: Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetId => Request[ListFilteredBidsResponse]
   ): FilteredBidsResource = {
-    val __obj = js.Dynamic.literal(creatives = creatives, details = details, list = js.Any.fromFunction1(list))
+    val __obj = js.Dynamic.literal(creatives = creatives.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[FilteredBidsResource]
   }

@@ -27,10 +27,10 @@ object StringifyArguments {
     suffix: String = null
   ): StringifyArguments = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(escape)) __obj.updateDynamic("escape")(escape)
+    if (!js.isUndefined(escape)) __obj.updateDynamic("escape")(escape.asInstanceOf[js.Any])
     if (replacer != null) __obj.updateDynamic("replacer")(replacer.asInstanceOf[js.Any])
     if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringifyArguments]
   }
 }

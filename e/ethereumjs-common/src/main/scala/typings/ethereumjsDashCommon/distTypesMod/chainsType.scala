@@ -13,8 +13,8 @@ trait chainsType
 object chainsType {
   @scala.inline
   def apply(names: StringDictionary[String], StringDictionary: /* key */ StringDictionary[js.Any] = null): chainsType = {
-    val __obj = js.Dynamic.literal(names = names)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[chainsType]
   }
 }

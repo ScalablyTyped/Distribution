@@ -28,11 +28,11 @@ object ManagedDeviceOverview {
     mdmEnrolledCount: Int | Double = null
   ): ManagedDeviceOverview = {
     val __obj = js.Dynamic.literal()
-    if (deviceExchangeAccessStateSummary != null) __obj.updateDynamic("deviceExchangeAccessStateSummary")(deviceExchangeAccessStateSummary)
-    if (deviceOperatingSystemSummary != null) __obj.updateDynamic("deviceOperatingSystemSummary")(deviceOperatingSystemSummary)
+    if (deviceExchangeAccessStateSummary != null) __obj.updateDynamic("deviceExchangeAccessStateSummary")(deviceExchangeAccessStateSummary.asInstanceOf[js.Any])
+    if (deviceOperatingSystemSummary != null) __obj.updateDynamic("deviceOperatingSystemSummary")(deviceOperatingSystemSummary.asInstanceOf[js.Any])
     if (dualEnrolledDeviceCount != null) __obj.updateDynamic("dualEnrolledDeviceCount")(dualEnrolledDeviceCount.asInstanceOf[js.Any])
     if (enrolledDeviceCount != null) __obj.updateDynamic("enrolledDeviceCount")(enrolledDeviceCount.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (mdmEnrolledCount != null) __obj.updateDynamic("mdmEnrolledCount")(mdmEnrolledCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedDeviceOverview]
   }

@@ -23,12 +23,12 @@ object RPCLoginOptions {
     scopes: js.Array[String] = null,
     tokenEndpoint: String = null
   ): RPCLoginOptions = {
-    val __obj = js.Dynamic.literal(clientId = clientId)
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
-    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret)
-    if (rpcToken != null) __obj.updateDynamic("rpcToken")(rpcToken)
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
-    if (tokenEndpoint != null) __obj.updateDynamic("tokenEndpoint")(tokenEndpoint)
+    val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any])
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
+    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
+    if (rpcToken != null) __obj.updateDynamic("rpcToken")(rpcToken.asInstanceOf[js.Any])
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
+    if (tokenEndpoint != null) __obj.updateDynamic("tokenEndpoint")(tokenEndpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[RPCLoginOptions]
   }
 }

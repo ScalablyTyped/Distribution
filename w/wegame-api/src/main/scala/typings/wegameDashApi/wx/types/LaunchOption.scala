@@ -27,7 +27,7 @@ trait LaunchOption extends js.Object {
 object LaunchOption {
   @scala.inline
   def apply(isSticky: Boolean, query: js.Any, scene: Double, shareTicket: String): LaunchOption = {
-    val __obj = js.Dynamic.literal(isSticky = isSticky, query = query, scene = scene, shareTicket = shareTicket)
+    val __obj = js.Dynamic.literal(isSticky = isSticky.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], shareTicket = shareTicket.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LaunchOption]
   }

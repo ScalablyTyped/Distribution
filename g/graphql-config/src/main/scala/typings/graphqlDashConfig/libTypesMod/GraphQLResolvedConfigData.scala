@@ -19,10 +19,10 @@ object GraphQLResolvedConfigData {
     extensions: GraphQLConfigExtensions = null,
     includes: js.Array[String] = null
   ): GraphQLResolvedConfigData = {
-    val __obj = js.Dynamic.literal(schemaPath = schemaPath)
-    if (excludes != null) __obj.updateDynamic("excludes")(excludes)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (includes != null) __obj.updateDynamic("includes")(includes)
+    val __obj = js.Dynamic.literal(schemaPath = schemaPath.asInstanceOf[js.Any])
+    if (excludes != null) __obj.updateDynamic("excludes")(excludes.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (includes != null) __obj.updateDynamic("includes")(includes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLResolvedConfigData]
   }
 }

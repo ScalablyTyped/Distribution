@@ -14,9 +14,9 @@ object Anon_Definition {
   @scala.inline
   def apply(definition: js.Object = null, mark: js.UndefOr[Boolean] = js.undefined, scope: js.Any = null): Anon_Definition = {
     val __obj = js.Dynamic.literal()
-    if (definition != null) __obj.updateDynamic("definition")(definition)
-    if (!js.isUndefined(mark)) __obj.updateDynamic("mark")(mark)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (definition != null) __obj.updateDynamic("definition")(definition.asInstanceOf[js.Any])
+    if (!js.isUndefined(mark)) __obj.updateDynamic("mark")(mark.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Definition]
   }
 }

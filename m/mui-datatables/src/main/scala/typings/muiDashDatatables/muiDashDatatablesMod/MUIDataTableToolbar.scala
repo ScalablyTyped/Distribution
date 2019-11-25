@@ -37,19 +37,19 @@ object MUIDataTableToolbar {
     title: js.Any = null,
     toggleViewColumn: js.Any = null
   ): MUIDataTableToolbar = {
-    val __obj = js.Dynamic.literal(columns = columns)
-    if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (filterData != null) __obj.updateDynamic("filterData")(filterData)
-    if (filterList != null) __obj.updateDynamic("filterList")(filterList)
-    if (filterUpdate != null) __obj.updateDynamic("filterUpdate")(filterUpdate)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (resetFilters != null) __obj.updateDynamic("resetFilters")(resetFilters)
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (filterData != null) __obj.updateDynamic("filterData")(filterData.asInstanceOf[js.Any])
+    if (filterList != null) __obj.updateDynamic("filterList")(filterList.asInstanceOf[js.Any])
+    if (filterUpdate != null) __obj.updateDynamic("filterUpdate")(filterUpdate.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (resetFilters != null) __obj.updateDynamic("resetFilters")(resetFilters.asInstanceOf[js.Any])
     if (searchTextUpdate != null) __obj.updateDynamic("searchTextUpdate")(js.Any.fromFunction1(searchTextUpdate))
     if (setTableActions != null) __obj.updateDynamic("setTableActions")(js.Any.fromFunction1(setTableActions))
     if (tableRef != null) __obj.updateDynamic("tableRef")(js.Any.fromFunction1(tableRef))
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (toggleViewColumn != null) __obj.updateDynamic("toggleViewColumn")(toggleViewColumn)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (toggleViewColumn != null) __obj.updateDynamic("toggleViewColumn")(toggleViewColumn.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableToolbar]
   }
 }

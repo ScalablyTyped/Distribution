@@ -17,9 +17,9 @@ object AttributeDescriptor {
     collection: js.UndefOr[Boolean] = js.undefined,
     enumerable: js.UndefOr[Boolean] = js.undefined
   ): AttributeDescriptor = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (!js.isUndefined(collection)) __obj.updateDynamic("collection")(collection)
-    if (!js.isUndefined(enumerable)) __obj.updateDynamic("enumerable")(enumerable)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(collection)) __obj.updateDynamic("collection")(collection.asInstanceOf[js.Any])
+    if (!js.isUndefined(enumerable)) __obj.updateDynamic("enumerable")(enumerable.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeDescriptor]
   }
 }

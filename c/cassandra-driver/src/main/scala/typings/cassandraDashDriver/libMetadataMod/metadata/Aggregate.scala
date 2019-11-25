@@ -28,7 +28,7 @@ object Aggregate {
     stateFunction: String,
     stateType: String
   ): Aggregate = {
-    val __obj = js.Dynamic.literal(argumentTypes = argumentTypes, finalFunction = finalFunction, initCondition = initCondition, keyspaceName = keyspaceName, returnType = returnType, signature = signature, stateFunction = stateFunction, stateType = stateType)
+    val __obj = js.Dynamic.literal(argumentTypes = argumentTypes.asInstanceOf[js.Any], finalFunction = finalFunction.asInstanceOf[js.Any], initCondition = initCondition.asInstanceOf[js.Any], keyspaceName = keyspaceName.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], stateFunction = stateFunction.asInstanceOf[js.Any], stateType = stateType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Aggregate]
   }

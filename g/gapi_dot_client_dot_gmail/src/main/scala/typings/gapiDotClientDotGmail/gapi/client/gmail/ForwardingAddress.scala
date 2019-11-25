@@ -15,8 +15,8 @@ object ForwardingAddress {
   @scala.inline
   def apply(forwardingEmail: String = null, verificationStatus: String = null): ForwardingAddress = {
     val __obj = js.Dynamic.literal()
-    if (forwardingEmail != null) __obj.updateDynamic("forwardingEmail")(forwardingEmail)
-    if (verificationStatus != null) __obj.updateDynamic("verificationStatus")(verificationStatus)
+    if (forwardingEmail != null) __obj.updateDynamic("forwardingEmail")(forwardingEmail.asInstanceOf[js.Any])
+    if (verificationStatus != null) __obj.updateDynamic("verificationStatus")(verificationStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForwardingAddress]
   }
 }

@@ -21,8 +21,8 @@ trait AddPermissionOutput extends OutputTypesUnion {
 object AddPermissionOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, Statement: String = null): AddPermissionOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Statement != null) __obj.updateDynamic("Statement")(Statement)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Statement != null) __obj.updateDynamic("Statement")(Statement.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddPermissionOutput]
   }
 }

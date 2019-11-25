@@ -16,7 +16,7 @@ object ConfigOptions {
   @scala.inline
   def apply(coverageReporter: KarmaCoverageReporter with Anon_Reporters = null): ConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (coverageReporter != null) __obj.updateDynamic("coverageReporter")(coverageReporter)
+    if (coverageReporter != null) __obj.updateDynamic("coverageReporter")(coverageReporter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }
 }

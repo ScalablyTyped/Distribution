@@ -12,7 +12,7 @@ object Anon_Intermediates {
   @scala.inline
   def apply(intermediates: js.UndefOr[Boolean] = js.undefined): Anon_Intermediates = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(intermediates)) __obj.updateDynamic("intermediates")(intermediates)
+    if (!js.isUndefined(intermediates)) __obj.updateDynamic("intermediates")(intermediates.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Intermediates]
   }
 }

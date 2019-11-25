@@ -23,8 +23,8 @@ trait IHtmlLog
 object IHtmlLog {
   @scala.inline
   def apply(data: String, level: LogLevel, `type`: html): IHtmlLog = {
-    val __obj = js.Dynamic.literal(data = data, level = level)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHtmlLog]
   }
 }

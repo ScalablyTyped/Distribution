@@ -25,10 +25,10 @@ object FunctionDeclaration {
     identifier: Identifier | MemberExpression = null,
     loc: Anon_End = null
   ): FunctionDeclaration = {
-    val __obj = js.Dynamic.literal(body = body, isLocal = isLocal, parameters = parameters)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], isLocal = isLocal.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionDeclaration]
   }
 }

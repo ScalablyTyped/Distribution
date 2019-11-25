@@ -13,8 +13,8 @@ trait GetSpaceParameters extends js.Object {
 object GetSpaceParameters {
   @scala.inline
   def apply(spaceId: String, include: Anon_CustomFields = null): GetSpaceParameters = {
-    val __obj = js.Dynamic.literal(spaceId = spaceId)
-    if (include != null) __obj.updateDynamic("include")(include)
+    val __obj = js.Dynamic.literal(spaceId = spaceId.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSpaceParameters]
   }
 }

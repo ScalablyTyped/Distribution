@@ -37,11 +37,11 @@ object NodeCheckstateChangingEventUIParam {
     owner: js.Any = null
   ): NodeCheckstateChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (currentCheckedNodes != null) __obj.updateDynamic("currentCheckedNodes")(currentCheckedNodes)
-    if (currentState != null) __obj.updateDynamic("currentState")(currentState)
-    if (newState != null) __obj.updateDynamic("newState")(newState)
-    if (node != null) __obj.updateDynamic("node")(node)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (currentCheckedNodes != null) __obj.updateDynamic("currentCheckedNodes")(currentCheckedNodes.asInstanceOf[js.Any])
+    if (currentState != null) __obj.updateDynamic("currentState")(currentState.asInstanceOf[js.Any])
+    if (newState != null) __obj.updateDynamic("newState")(newState.asInstanceOf[js.Any])
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeCheckstateChangingEventUIParam]
   }
 }

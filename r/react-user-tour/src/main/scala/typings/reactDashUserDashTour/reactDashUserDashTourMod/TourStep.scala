@@ -53,7 +53,7 @@ object TourStep {
     position: left | right | top | topLeft | bottom | bottomLeft = null,
     verticalOffset: Int | Double = null
   ): TourStep = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], selector = selector, step = step, title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     if (horizontalOffset != null) __obj.updateDynamic("horizontalOffset")(horizontalOffset.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (verticalOffset != null) __obj.updateDynamic("verticalOffset")(verticalOffset.asInstanceOf[js.Any])

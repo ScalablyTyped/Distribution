@@ -12,7 +12,7 @@ trait Anon_SldRange extends js.Object {
 object Anon_SldRange {
   @scala.inline
   def apply(SldRange: SlideRange): Anon_SldRange = {
-    val __obj = js.Dynamic.literal(SldRange = SldRange)
+    val __obj = js.Dynamic.literal(SldRange = SldRange.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SldRange]
   }

@@ -43,10 +43,10 @@ object SwipeableOptions {
     if (onSwipedRight != null) __obj.updateDynamic("onSwipedRight")(js.Any.fromFunction1(onSwipedRight))
     if (onSwipedUp != null) __obj.updateDynamic("onSwipedUp")(js.Any.fromFunction1(onSwipedUp))
     if (onSwiping != null) __obj.updateDynamic("onSwiping")(js.Any.fromFunction1(onSwiping))
-    if (!js.isUndefined(preventDefaultTouchmoveEvent)) __obj.updateDynamic("preventDefaultTouchmoveEvent")(preventDefaultTouchmoveEvent)
+    if (!js.isUndefined(preventDefaultTouchmoveEvent)) __obj.updateDynamic("preventDefaultTouchmoveEvent")(preventDefaultTouchmoveEvent.asInstanceOf[js.Any])
     if (rotationAngle != null) __obj.updateDynamic("rotationAngle")(rotationAngle.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackMouse)) __obj.updateDynamic("trackMouse")(trackMouse)
-    if (!js.isUndefined(trackTouch)) __obj.updateDynamic("trackTouch")(trackTouch)
+    if (!js.isUndefined(trackMouse)) __obj.updateDynamic("trackMouse")(trackMouse.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackTouch)) __obj.updateDynamic("trackTouch")(trackTouch.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwipeableOptions]
   }
 }

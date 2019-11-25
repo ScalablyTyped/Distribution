@@ -23,9 +23,9 @@ object Definition {
   ): Definition = {
     val __obj = js.Dynamic.literal(validator = validator.asInstanceOf[js.Any])
     if (cardinality != null) __obj.updateDynamic("cardinality")(cardinality.asInstanceOf[js.Any])
-    if (casing != null) __obj.updateDynamic("casing")(casing)
-    if (definitionSymbol != null) __obj.updateDynamic("definitionSymbol")(definitionSymbol)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (casing != null) __obj.updateDynamic("casing")(casing.asInstanceOf[js.Any])
+    if (definitionSymbol != null) __obj.updateDynamic("definitionSymbol")(definitionSymbol.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     __obj.asInstanceOf[Definition]
   }
 }

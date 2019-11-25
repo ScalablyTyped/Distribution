@@ -25,7 +25,7 @@ object RunsResource {
     list: Anon_AccesstokenAltBearertokenCallback => Request[ListTransferRunsResponse],
     transferLogs: TransferLogsResource
   ): RunsResource = {
-    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), transferLogs = transferLogs)
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), transferLogs = transferLogs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RunsResource]
   }

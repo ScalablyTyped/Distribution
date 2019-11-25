@@ -12,7 +12,7 @@ trait Anon_ColId extends js.Object {
 object Anon_ColId {
   @scala.inline
   def apply(colId: String, sort: String): Anon_ColId = {
-    val __obj = js.Dynamic.literal(colId = colId, sort = sort)
+    val __obj = js.Dynamic.literal(colId = colId.asInstanceOf[js.Any], sort = sort.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColId]
   }

@@ -62,14 +62,14 @@ object RetryConfig {
   ): RetryConfig = {
     val __obj = js.Dynamic.literal()
     if (currentRetryAttempt != null) __obj.updateDynamic("currentRetryAttempt")(currentRetryAttempt.asInstanceOf[js.Any])
-    if (httpMethodsToRetry != null) __obj.updateDynamic("httpMethodsToRetry")(httpMethodsToRetry)
-    if (instance != null) __obj.updateDynamic("instance")(instance)
+    if (httpMethodsToRetry != null) __obj.updateDynamic("httpMethodsToRetry")(httpMethodsToRetry.asInstanceOf[js.Any])
+    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
     if (noResponseRetries != null) __obj.updateDynamic("noResponseRetries")(noResponseRetries.asInstanceOf[js.Any])
     if (onRetryAttempt != null) __obj.updateDynamic("onRetryAttempt")(js.Any.fromFunction1(onRetryAttempt))
     if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
     if (retryDelay != null) __obj.updateDynamic("retryDelay")(retryDelay.asInstanceOf[js.Any])
     if (shouldRetry != null) __obj.updateDynamic("shouldRetry")(js.Any.fromFunction1(shouldRetry))
-    if (statusCodesToRetry != null) __obj.updateDynamic("statusCodesToRetry")(statusCodesToRetry)
+    if (statusCodesToRetry != null) __obj.updateDynamic("statusCodesToRetry")(statusCodesToRetry.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetryConfig]
   }
 }

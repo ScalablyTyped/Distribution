@@ -20,9 +20,9 @@ trait IKeyComboProps extends IProps {
 object IKeyComboProps {
   @scala.inline
   def apply(combo: String, className: String = null, minimal: js.UndefOr[Boolean] = js.undefined): IKeyComboProps = {
-    val __obj = js.Dynamic.literal(combo = combo)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(minimal)) __obj.updateDynamic("minimal")(minimal)
+    val __obj = js.Dynamic.literal(combo = combo.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimal)) __obj.updateDynamic("minimal")(minimal.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKeyComboProps]
   }
 }

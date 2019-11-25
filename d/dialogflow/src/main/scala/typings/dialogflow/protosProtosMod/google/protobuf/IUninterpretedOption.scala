@@ -40,13 +40,13 @@ object IUninterpretedOption {
     stringValue: Uint8Array = null
   ): IUninterpretedOption = {
     val __obj = js.Dynamic.literal()
-    if (aggregateValue != null) __obj.updateDynamic("aggregateValue")(aggregateValue)
+    if (aggregateValue != null) __obj.updateDynamic("aggregateValue")(aggregateValue.asInstanceOf[js.Any])
     if (doubleValue != null) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
-    if (identifierValue != null) __obj.updateDynamic("identifierValue")(identifierValue)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (identifierValue != null) __obj.updateDynamic("identifierValue")(identifierValue.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (negativeIntValue != null) __obj.updateDynamic("negativeIntValue")(negativeIntValue.asInstanceOf[js.Any])
     if (positiveIntValue != null) __obj.updateDynamic("positiveIntValue")(positiveIntValue.asInstanceOf[js.Any])
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue)
+    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUninterpretedOption]
   }
 }

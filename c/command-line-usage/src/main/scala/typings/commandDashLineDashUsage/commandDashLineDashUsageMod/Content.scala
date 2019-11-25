@@ -31,8 +31,8 @@ object Content {
   ): Content = {
     val __obj = js.Dynamic.literal()
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[Content]
   }
 }

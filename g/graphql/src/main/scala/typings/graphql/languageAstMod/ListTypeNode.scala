@@ -16,9 +16,9 @@ trait ListTypeNode
 object ListTypeNode {
   @scala.inline
   def apply(kind: ListType, `type`: TypeNode, loc: Location = null): ListTypeNode = {
-    val __obj = js.Dynamic.literal(kind = kind)
-    __obj.updateDynamic("type")(`type`)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTypeNode]
   }
 }

@@ -13,8 +13,8 @@ object ServiceOptions {
   @scala.inline
   def apply(coordType: js.Any = null, encoding: js.Any = null): ServiceOptions = {
     val __obj = js.Dynamic.literal()
-    if (coordType != null) __obj.updateDynamic("coordType")(coordType)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (coordType != null) __obj.updateDynamic("coordType")(coordType.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceOptions]
   }
 }

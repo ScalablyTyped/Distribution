@@ -15,8 +15,8 @@ object PopSettings {
   @scala.inline
   def apply(accessWindow: String = null, disposition: String = null): PopSettings = {
     val __obj = js.Dynamic.literal()
-    if (accessWindow != null) __obj.updateDynamic("accessWindow")(accessWindow)
-    if (disposition != null) __obj.updateDynamic("disposition")(disposition)
+    if (accessWindow != null) __obj.updateDynamic("accessWindow")(accessWindow.asInstanceOf[js.Any])
+    if (disposition != null) __obj.updateDynamic("disposition")(disposition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopSettings]
   }
 }

@@ -26,7 +26,7 @@ trait WebhookConversion extends js.Object {
 object WebhookConversion {
   @scala.inline
   def apply(clientConfig: WebhookClientConfig, conversionReviewVersions: js.Array[String]): WebhookConversion = {
-    val __obj = js.Dynamic.literal(clientConfig = clientConfig, conversionReviewVersions = conversionReviewVersions)
+    val __obj = js.Dynamic.literal(clientConfig = clientConfig.asInstanceOf[js.Any], conversionReviewVersions = conversionReviewVersions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebhookConversion]
   }

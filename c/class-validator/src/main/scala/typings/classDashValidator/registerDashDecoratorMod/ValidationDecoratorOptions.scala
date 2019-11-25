@@ -48,11 +48,11 @@ object ValidationDecoratorOptions {
     name: String = null,
     options: ValidatorOptions = null
   ): ValidationDecoratorOptions = {
-    val __obj = js.Dynamic.literal(propertyName = propertyName, target = target, validator = validator.asInstanceOf[js.Any])
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (constraints != null) __obj.updateDynamic("constraints")(constraints)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(propertyName = propertyName.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], validator = validator.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationDecoratorOptions]
   }
 }

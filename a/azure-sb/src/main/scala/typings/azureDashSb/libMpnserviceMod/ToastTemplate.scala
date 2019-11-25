@@ -13,8 +13,8 @@ trait ToastTemplate extends Template {
 object ToastTemplate {
   @scala.inline
   def apply(text1: String, text2: String, param: String = null): ToastTemplate = {
-    val __obj = js.Dynamic.literal(text1 = text1, text2 = text2)
-    if (param != null) __obj.updateDynamic("param")(param)
+    val __obj = js.Dynamic.literal(text1 = text1.asInstanceOf[js.Any], text2 = text2.asInstanceOf[js.Any])
+    if (param != null) __obj.updateDynamic("param")(param.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToastTemplate]
   }
 }

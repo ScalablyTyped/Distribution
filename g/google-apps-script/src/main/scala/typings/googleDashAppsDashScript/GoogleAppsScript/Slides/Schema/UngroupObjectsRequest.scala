@@ -12,7 +12,7 @@ object UngroupObjectsRequest {
   @scala.inline
   def apply(objectIds: js.Array[String] = null): UngroupObjectsRequest = {
     val __obj = js.Dynamic.literal()
-    if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds)
+    if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[UngroupObjectsRequest]
   }
 }

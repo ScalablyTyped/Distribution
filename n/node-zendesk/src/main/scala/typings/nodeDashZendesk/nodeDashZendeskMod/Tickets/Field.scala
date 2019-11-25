@@ -12,7 +12,7 @@ trait Field extends js.Object {
 object Field {
   @scala.inline
   def apply(id: Double, value: js.Any): Field = {
-    val __obj = js.Dynamic.literal(id = id, value = value)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Field]
   }

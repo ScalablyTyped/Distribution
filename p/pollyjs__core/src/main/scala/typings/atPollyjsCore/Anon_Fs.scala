@@ -23,11 +23,11 @@ object Anon_Fs {
     rest: Anon_ApiNamespace = null
   ): Anon_Fs = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (fs != null) __obj.updateDynamic("fs")(fs)
-    if (!js.isUndefined(keepUnusedRequests)) __obj.updateDynamic("keepUnusedRequests")(keepUnusedRequests)
-    if (`local-storage` != null) __obj.updateDynamic("local-storage")(`local-storage`)
-    if (rest != null) __obj.updateDynamic("rest")(rest)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepUnusedRequests)) __obj.updateDynamic("keepUnusedRequests")(keepUnusedRequests.asInstanceOf[js.Any])
+    if (`local-storage` != null) __obj.updateDynamic("local-storage")(`local-storage`.asInstanceOf[js.Any])
+    if (rest != null) __obj.updateDynamic("rest")(rest.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Fs]
   }
 }

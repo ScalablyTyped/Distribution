@@ -13,8 +13,8 @@ trait FlowLabel
 object FlowLabel {
   @scala.inline
   def apply(flags: FlowFlags, antecedents: js.Array[FlowNode] = null, id: Int | Double = null): FlowLabel = {
-    val __obj = js.Dynamic.literal(flags = flags)
-    if (antecedents != null) __obj.updateDynamic("antecedents")(antecedents)
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
+    if (antecedents != null) __obj.updateDynamic("antecedents")(antecedents.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowLabel]
   }

@@ -31,12 +31,12 @@ object FileHandlerRouteObject {
     start: Int | Double = null
   ): FileHandlerRouteObject = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (!js.isUndefined(confine)) __obj.updateDynamic("confine")(confine)
+    if (!js.isUndefined(confine)) __obj.updateDynamic("confine")(confine.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (etagMethod != null) __obj.updateDynamic("etagMethod")(etagMethod.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (!js.isUndefined(lookupCompressed)) __obj.updateDynamic("lookupCompressed")(lookupCompressed)
-    if (lookupMap != null) __obj.updateDynamic("lookupMap")(lookupMap)
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(lookupCompressed)) __obj.updateDynamic("lookupCompressed")(lookupCompressed.asInstanceOf[js.Any])
+    if (lookupMap != null) __obj.updateDynamic("lookupMap")(lookupMap.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileHandlerRouteObject]

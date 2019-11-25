@@ -16,13 +16,13 @@ object libRelayDashExperimentalPreloadQueryMod extends js.Object {
   def preloadQuery_variables[TQuery /* <: OperationType */, TEnvironmentProviderOptions](
     environment: Environment,
     preloadableRequest: PreloadableConcreteRequest[TQuery],
-    variables: /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any
   ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
   @JSName("preloadQuery")
   def preloadQuery_variables[TQuery /* <: OperationType */, TEnvironmentProviderOptions](
     environment: Environment,
     preloadableRequest: PreloadableConcreteRequest[TQuery],
-    variables: /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any,
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any,
     options: Null,
     environmentProviderOptions: TEnvironmentProviderOptions
   ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
@@ -30,14 +30,14 @@ object libRelayDashExperimentalPreloadQueryMod extends js.Object {
   def preloadQuery_variables[TQuery /* <: OperationType */, TEnvironmentProviderOptions](
     environment: Environment,
     preloadableRequest: PreloadableConcreteRequest[TQuery],
-    variables: /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any,
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any,
     options: PreloadOptions
   ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native
   @JSName("preloadQuery")
   def preloadQuery_variables[TQuery /* <: OperationType */, TEnvironmentProviderOptions](
     environment: Environment,
     preloadableRequest: PreloadableConcreteRequest[TQuery],
-    variables: /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any,
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any,
     options: PreloadOptions,
     environmentProviderOptions: TEnvironmentProviderOptions
   ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = js.native

@@ -27,8 +27,8 @@ object TransactionOptions {
   @scala.inline
   def apply(readOnly: ReadOnly = null, readWrite: js.Any = null): TransactionOptions = {
     val __obj = js.Dynamic.literal()
-    if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly)
-    if (readWrite != null) __obj.updateDynamic("readWrite")(readWrite)
+    if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (readWrite != null) __obj.updateDynamic("readWrite")(readWrite.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionOptions]
   }
 }

@@ -98,12 +98,12 @@ object RouteOptionsResponse {
     if (disconnectStatusCode != null) __obj.updateDynamic("disconnectStatusCode")(disconnectStatusCode.asInstanceOf[js.Any])
     if (emptyStatusCode != null) __obj.updateDynamic("emptyStatusCode")(emptyStatusCode.asInstanceOf[js.Any])
     if (failAction != null) __obj.updateDynamic("failAction")(failAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(modify)) __obj.updateDynamic("modify")(modify)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (!js.isUndefined(ranges)) __obj.updateDynamic("ranges")(ranges)
+    if (!js.isUndefined(modify)) __obj.updateDynamic("modify")(modify.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (!js.isUndefined(ranges)) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
     if (sample != null) __obj.updateDynamic("sample")(sample.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteOptionsResponse]
   }
 }

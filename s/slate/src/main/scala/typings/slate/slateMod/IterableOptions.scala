@@ -39,19 +39,19 @@ object IterableOptions {
     upward: js.UndefOr[Boolean] = js.undefined
   ): IterableOptions = {
     val __obj = js.Dynamic.literal()
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (!js.isUndefined(downward)) __obj.updateDynamic("downward")(downward)
-    if (!js.isUndefined(includeBlocks)) __obj.updateDynamic("includeBlocks")(includeBlocks)
-    if (!js.isUndefined(includeDocument)) __obj.updateDynamic("includeDocument")(includeDocument)
-    if (!js.isUndefined(includeInlines)) __obj.updateDynamic("includeInlines")(includeInlines)
-    if (!js.isUndefined(includeRoot)) __obj.updateDynamic("includeRoot")(includeRoot)
-    if (!js.isUndefined(includeTarget)) __obj.updateDynamic("includeTarget")(includeTarget)
-    if (!js.isUndefined(includeTargetAncestors)) __obj.updateDynamic("includeTargetAncestors")(includeTargetAncestors)
-    if (!js.isUndefined(includeTexts)) __obj.updateDynamic("includeTexts")(includeTexts)
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (!js.isUndefined(downward)) __obj.updateDynamic("downward")(downward.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeBlocks)) __obj.updateDynamic("includeBlocks")(includeBlocks.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeDocument)) __obj.updateDynamic("includeDocument")(includeDocument.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeInlines)) __obj.updateDynamic("includeInlines")(includeInlines.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeRoot)) __obj.updateDynamic("includeRoot")(includeRoot.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeTarget)) __obj.updateDynamic("includeTarget")(includeTarget.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeTargetAncestors)) __obj.updateDynamic("includeTargetAncestors")(includeTargetAncestors.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeTexts)) __obj.updateDynamic("includeTexts")(includeTexts.asInstanceOf[js.Any])
     if (`match` != null) __obj.updateDynamic("match")(js.Any.fromFunction2(`match`))
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (!js.isUndefined(upward)) __obj.updateDynamic("upward")(upward)
+    if (!js.isUndefined(upward)) __obj.updateDynamic("upward")(upward.asInstanceOf[js.Any])
     __obj.asInstanceOf[IterableOptions]
   }
 }

@@ -58,9 +58,9 @@ object ParcelBundle {
     `type`: String,
     parentBundle: js.Any = null
   ): ParcelBundle = {
-    val __obj = js.Dynamic.literal(assets = assets, childBundles = childBundles, entryAsset = entryAsset, name = name, offsets = offsets, siblingBundles = siblingBundles, siblingBundlesMap = siblingBundlesMap)
-    __obj.updateDynamic("type")(`type`)
-    if (parentBundle != null) __obj.updateDynamic("parentBundle")(parentBundle)
+    val __obj = js.Dynamic.literal(assets = assets.asInstanceOf[js.Any], childBundles = childBundles.asInstanceOf[js.Any], entryAsset = entryAsset.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], offsets = offsets.asInstanceOf[js.Any], siblingBundles = siblingBundles.asInstanceOf[js.Any], siblingBundlesMap = siblingBundlesMap.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (parentBundle != null) __obj.updateDynamic("parentBundle")(parentBundle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParcelBundle]
   }
 }

@@ -58,8 +58,8 @@ object Change {
     timestamp: Date,
     `type`: String
   ): Change = {
-    val __obj = js.Dynamic.literal(author = author, displayUri = displayUri, id = id, location = location, message = message, messageTruncated = messageTruncated, pusher = pusher, timestamp = timestamp)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], displayUri = displayUri.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], messageTruncated = messageTruncated.asInstanceOf[js.Any], pusher = pusher.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Change]
   }
 }

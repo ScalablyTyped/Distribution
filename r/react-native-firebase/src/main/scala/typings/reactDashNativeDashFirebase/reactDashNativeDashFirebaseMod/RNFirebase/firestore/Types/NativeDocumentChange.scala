@@ -14,8 +14,8 @@ trait NativeDocumentChange extends js.Object {
 object NativeDocumentChange {
   @scala.inline
   def apply(document: NativeDocumentSnapshot, newIndex: Double, oldIndex: Double, `type`: String): NativeDocumentChange = {
-    val __obj = js.Dynamic.literal(document = document, newIndex = newIndex, oldIndex = oldIndex)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], newIndex = newIndex.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeDocumentChange]
   }
 }

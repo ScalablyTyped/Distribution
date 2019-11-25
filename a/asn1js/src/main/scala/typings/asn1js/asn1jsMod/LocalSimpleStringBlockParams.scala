@@ -12,7 +12,7 @@ object LocalSimpleStringBlockParams {
   @scala.inline
   def apply(value: String = null): LocalSimpleStringBlockParams = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalSimpleStringBlockParams]
   }
 }

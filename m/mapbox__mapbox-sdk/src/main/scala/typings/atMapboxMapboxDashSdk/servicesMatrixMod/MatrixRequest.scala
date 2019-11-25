@@ -24,11 +24,11 @@ object MatrixRequest {
     profile: DirectionsProfile = null,
     sources: js.Array[Double] = null
   ): MatrixRequest = {
-    val __obj = js.Dynamic.literal(points = points)
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations)
-    if (destinations != null) __obj.updateDynamic("destinations")(destinations)
-    if (profile != null) __obj.updateDynamic("profile")(profile)
-    if (sources != null) __obj.updateDynamic("sources")(sources)
+    val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
+    if (destinations != null) __obj.updateDynamic("destinations")(destinations.asInstanceOf[js.Any])
+    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
+    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatrixRequest]
   }
 }

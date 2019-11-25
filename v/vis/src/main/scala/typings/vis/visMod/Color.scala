@@ -21,8 +21,8 @@ object Color {
     hover: String | Anon_Background = null
   ): Color = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (border != null) __obj.updateDynamic("border")(border)
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
     if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
     __obj.asInstanceOf[Color]

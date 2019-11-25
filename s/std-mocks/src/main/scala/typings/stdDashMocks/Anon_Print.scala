@@ -12,7 +12,7 @@ object Anon_Print {
   @scala.inline
   def apply(print: js.UndefOr[Boolean] = js.undefined): Anon_Print = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(print)) __obj.updateDynamic("print")(print)
+    if (!js.isUndefined(print)) __obj.updateDynamic("print")(print.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Print]
   }
 }

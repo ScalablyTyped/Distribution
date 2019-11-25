@@ -16,7 +16,7 @@ trait BoolEnum extends js.Object {
 object BoolEnum {
   @scala.inline
   def apply(and: and, eor: eor, or: or): BoolEnum = {
-    val __obj = js.Dynamic.literal(and = and, eor = eor, or = or)
+    val __obj = js.Dynamic.literal(and = and.asInstanceOf[js.Any], eor = eor.asInstanceOf[js.Any], or = or.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BoolEnum]
   }

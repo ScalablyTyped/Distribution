@@ -14,7 +14,7 @@ trait Anon_ItemsReturnValueArrayIKeyValuePair extends js.Object {
 object Anon_ItemsReturnValueArrayIKeyValuePair {
   @scala.inline
   def apply(items: js.Array[IKeyValuePair[String, ResourceMap]], returnValue: Double): Anon_ItemsReturnValueArrayIKeyValuePair = {
-    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ItemsReturnValueArrayIKeyValuePair]
   }

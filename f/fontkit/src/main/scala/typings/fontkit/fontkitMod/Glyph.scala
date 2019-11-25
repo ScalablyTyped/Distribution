@@ -47,7 +47,7 @@ object Glyph {
     isMark: Boolean,
     path: Path
   ): Glyph = {
-    val __obj = js.Dynamic.literal(advanceWidth = advanceWidth, bbox = bbox, cbox = cbox, codePoints = codePoints, id = id, isLigature = isLigature, isMark = isMark, path = path)
+    val __obj = js.Dynamic.literal(advanceWidth = advanceWidth.asInstanceOf[js.Any], bbox = bbox.asInstanceOf[js.Any], cbox = cbox.asInstanceOf[js.Any], codePoints = codePoints.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isLigature = isLigature.asInstanceOf[js.Any], isMark = isMark.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Glyph]
   }

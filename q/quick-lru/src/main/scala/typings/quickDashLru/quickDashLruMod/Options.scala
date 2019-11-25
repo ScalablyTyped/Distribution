@@ -14,7 +14,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(maxSize: Double): Options = {
-    val __obj = js.Dynamic.literal(maxSize = maxSize)
+    val __obj = js.Dynamic.literal(maxSize = maxSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

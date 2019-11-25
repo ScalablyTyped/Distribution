@@ -12,7 +12,7 @@ trait Anon_Binary extends js.Object {
 object Anon_Binary {
   @scala.inline
   def apply(format: binary): Anon_Binary = {
-    val __obj = js.Dynamic.literal(format = format)
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Binary]
   }

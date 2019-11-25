@@ -46,12 +46,12 @@ object Anon_Cid {
     prettyprint: String = null,
     source: String = null
   ): Anon_Cid = {
-    val __obj = js.Dynamic.literal(q = q, target = target)
-    if (cid != null) __obj.updateDynamic("cid")(cid)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (prettyprint != null) __obj.updateDynamic("prettyprint")(prettyprint)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(q = q.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    if (cid != null) __obj.updateDynamic("cid")(cid.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (prettyprint != null) __obj.updateDynamic("prettyprint")(prettyprint.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cid]
   }
 }

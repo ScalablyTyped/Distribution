@@ -15,10 +15,10 @@ object Flight {
   @scala.inline
   def apply(endDate: String = null, rateOrCost: String = null, startDate: String = null, units: String = null): Flight = {
     val __obj = js.Dynamic.literal()
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
-    if (rateOrCost != null) __obj.updateDynamic("rateOrCost")(rateOrCost)
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
-    if (units != null) __obj.updateDynamic("units")(units)
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (rateOrCost != null) __obj.updateDynamic("rateOrCost")(rateOrCost.asInstanceOf[js.Any])
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[Flight]
   }
 }

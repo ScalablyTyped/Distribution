@@ -25,8 +25,8 @@ object PageIcons {
   @scala.inline
   def apply(horizontal: js.Array[String] = null, vertical: js.Array[String] = null): PageIcons = {
     val __obj = js.Dynamic.literal()
-    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal)
-    if (vertical != null) __obj.updateDynamic("vertical")(vertical)
+    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageIcons]
   }
 }

@@ -50,8 +50,8 @@ object ojTabBarSettableProperties {
     truncation: none | progressive,
     data: DataProvider[K, D] = null
   ): ojTabBarSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal(as = as, currentItem = currentItem, display = display.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], item = item, overflow = overflow.asInstanceOf[js.Any], reorderable = reorderable.asInstanceOf[js.Any], selection = selection, translations = translations, truncation = truncation.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], currentItem = currentItem.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any], reorderable = reorderable.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], truncation = truncation.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojTabBarSettableProperties[K, D]]
   }
 }

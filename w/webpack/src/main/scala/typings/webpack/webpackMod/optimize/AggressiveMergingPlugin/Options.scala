@@ -33,7 +33,7 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (entryChunkMultiplicator != null) __obj.updateDynamic("entryChunkMultiplicator")(entryChunkMultiplicator.asInstanceOf[js.Any])
     if (minSizeReduce != null) __obj.updateDynamic("minSizeReduce")(minSizeReduce.asInstanceOf[js.Any])
-    if (!js.isUndefined(moveToParents)) __obj.updateDynamic("moveToParents")(moveToParents)
+    if (!js.isUndefined(moveToParents)) __obj.updateDynamic("moveToParents")(moveToParents.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

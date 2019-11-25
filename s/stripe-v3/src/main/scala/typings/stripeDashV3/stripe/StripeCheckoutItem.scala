@@ -13,9 +13,9 @@ trait StripeCheckoutItem extends js.Object {
 object StripeCheckoutItem {
   @scala.inline
   def apply(quantity: Double, plan: String = null, sku: String = null): StripeCheckoutItem = {
-    val __obj = js.Dynamic.literal(quantity = quantity)
-    if (plan != null) __obj.updateDynamic("plan")(plan)
-    if (sku != null) __obj.updateDynamic("sku")(sku)
+    val __obj = js.Dynamic.literal(quantity = quantity.asInstanceOf[js.Any])
+    if (plan != null) __obj.updateDynamic("plan")(plan.asInstanceOf[js.Any])
+    if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripeCheckoutItem]
   }
 }

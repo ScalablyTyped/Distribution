@@ -13,8 +13,8 @@ object Anon_Height {
   @scala.inline
   def apply(height: String = null, width: String = null): Anon_Height = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Height]
   }
 }

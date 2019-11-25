@@ -14,310 +14,310 @@ trait Resolvers[Schema /* <: JSONSchema */] extends js.Object {
   @JSName("$id")
   def $id_id(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Id>['$id'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Id>['$id'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Id>['$id'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Id>['$id'] */ js.Any
   ]
   @JSName("$ref")
   def $ref_ref(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['$ref'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['$ref'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['$ref'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['$ref'] */ js.Any
   ]
   @JSName("$schema")
   def $schema_schema(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['$schema'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['$schema'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['$schema'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['$schema'] */ js.Any
   ]
   @JSName("additionalItems")
   def additionalItems_additionalItems(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['additionalItems'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['additionalItems'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['additionalItems'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['additionalItems'] */ js.Any
   ]
   @JSName("additionalProperties")
   def additionalProperties_additionalProperties(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['additionalProperties'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['additionalProperties'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['additionalProperties'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['additionalProperties'] */ js.Any
   ]
   @JSName("anyOf")
   def anyOf_anyOf(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['anyOf'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['anyOf'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['anyOf'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['anyOf'] */ js.Any
   ]
   @JSName("contains")
   def contains_contains(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Contains>['contains'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Contains>['contains'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Contains>['contains'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Contains>['contains'] */ js.Any
   ]
   @JSName("default")
   def default_default(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['default'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['default'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['default'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['default'] */ js.Any
   ]
   @JSName("definitions")
   def definitions_definitions(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['definitions'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['definitions'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['definitions'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['definitions'] */ js.Any
   ]
   @JSName("dependencies")
   def dependencies_dependencies(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['dependencies'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['dependencies'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['dependencies'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['dependencies'] */ js.Any
   ]
   @JSName("description")
   def description_description(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['description'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['description'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['description'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['description'] */ js.Any
   ]
   @JSName("enum")
   def enum_enum(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['enum'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['enum'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['enum'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['enum'] */ js.Any
   ]
   @JSName("examples")
   def examples_examples(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Examples>['examples'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Examples>['examples'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Examples>['examples'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Examples>['examples'] */ js.Any
   ]
   @JSName("exclusiveMaximum")
   def exclusiveMaximum_exclusiveMaximum(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['exclusiveMaximum'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['exclusiveMaximum'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['exclusiveMaximum'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['exclusiveMaximum'] */ js.Any
   ]
   @JSName("exclusiveMinimum")
   def exclusiveMinimum_exclusiveMinimum(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['exclusiveMinimum'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['exclusiveMinimum'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['exclusiveMinimum'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['exclusiveMinimum'] */ js.Any
   ]
   @JSName("items")
   def items_items(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['items'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['items'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['items'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['items'] */ js.Any
   ]
   @JSName("maxItems")
   def maxItems_maxItems(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['maxItems'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['maxItems'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['maxItems'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['maxItems'] */ js.Any
   ]
   @JSName("maxLength")
   def maxLength_maxLength(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['maxLength'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['maxLength'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['maxLength'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['maxLength'] */ js.Any
   ]
   @JSName("maxProperties")
   def maxProperties_maxProperties(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['maxProperties'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['maxProperties'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['maxProperties'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['maxProperties'] */ js.Any
   ]
   @JSName("maximum")
   def maximum_maximum(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['maximum'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['maximum'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['maximum'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['maximum'] */ js.Any
   ]
   @JSName("minItems")
   def minItems_minItems(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['minItems'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['minItems'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['minItems'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['minItems'] */ js.Any
   ]
   @JSName("minLength")
   def minLength_minLength(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['minLength'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['minLength'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['minLength'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['minLength'] */ js.Any
   ]
   @JSName("minProperties")
   def minProperties_minProperties(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['minProperties'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['minProperties'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['minProperties'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['minProperties'] */ js.Any
   ]
   @JSName("minimum")
   def minimum_minimum(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['minimum'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['minimum'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['minimum'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['minimum'] */ js.Any
   ]
   @JSName("multipleOf")
   def multipleOf_multipleOf(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['multipleOf'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['multipleOf'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['multipleOf'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['multipleOf'] */ js.Any
   ]
   @JSName("not")
   def not_not(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['not'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['not'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['not'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['not'] */ js.Any
   ]
   @JSName("oneOf")
   def oneOf_oneOf(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['oneOf'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['oneOf'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['oneOf'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['oneOf'] */ js.Any
   ]
   @JSName("pattern")
   def pattern_pattern(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['pattern'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['pattern'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['pattern'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['pattern'] */ js.Any
   ]
   /**
     * ### Combined resolvers
@@ -368,264 +368,232 @@ trait Resolvers[Schema /* <: JSONSchema */] extends js.Object {
   @JSName("propertyNames")
   def propertyNames_propertyNames(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_PropertyNames>['propertyNames'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_PropertyNames>['propertyNames'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_PropertyNames>['propertyNames'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_PropertyNames>['propertyNames'] */ js.Any
   ]
   @JSName("required")
   def required_required(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['required'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['required'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['required'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['required'] */ js.Any
   ]
   @JSName("title")
   def title_title(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['title'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['title'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['title'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['title'] */ js.Any
   ]
   @JSName("type")
   def type_type(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['type'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['type'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['type'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['type'] */ js.Any
   ]
   @JSName("uniqueItems")
   def uniqueItems_uniqueItems(
     values: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['uniqueItems'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['uniqueItems'] */ js.Any
     ],
     path: js.Array[String],
     mergeSchemas: MergeSchemas,
     options: Options[Schema]
   ): NonNullable[
-    /* import warning: ImportType.apply Failed type conversion: Schema['uniqueItems'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Schema['uniqueItems'] */ js.Any
   ]
 }
 
 object Resolvers {
   @scala.inline
   def apply[Schema /* <: JSONSchema */](
-    $id_id: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Id>['$id'] */ js.Any
+    $id: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Id>['$id'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Id>['$id'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Id>['$id'] */ js.Any
     ],
-    $ref_ref: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['$ref'] */ js.Any
+    $ref: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['$ref'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['$ref'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['$ref'] */ js.Any
     ],
-    $schema_schema: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['$schema'] */ js.Any
+    $schema: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['$schema'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['$schema'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['$schema'] */ js.Any
     ],
-    additionalItems_additionalItems: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['additionalItems'] */ js.Any
+    additionalItems: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['additionalItems'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['additionalItems'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['additionalItems'] */ js.Any
     ],
-    additionalProperties_additionalProperties: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['additionalProperties'] */ js.Any
+    additionalProperties: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['additionalProperties'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['additionalProperties'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['additionalProperties'] */ js.Any
     ],
-    anyOf_anyOf: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['anyOf'] */ js.Any
+    anyOf: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['anyOf'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['anyOf'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['anyOf'] */ js.Any
     ],
-    contains_contains: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Contains>['contains'] */ js.Any
+    contains: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Contains>['contains'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Contains>['contains'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Contains>['contains'] */ js.Any
     ],
-    default_default: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['default'] */ js.Any
+    default: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['default'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['default'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['default'] */ js.Any
     ],
-    definitions_definitions: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['definitions'] */ js.Any
+    definitions: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['definitions'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['definitions'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['definitions'] */ js.Any
     ],
-    dependencies_dependencies: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['dependencies'] */ js.Any
+    dependencies: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['dependencies'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['dependencies'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['dependencies'] */ js.Any
     ],
-    description_description: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['description'] */ js.Any
+    description: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['description'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['description'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['description'] */ js.Any
     ],
-    enum_enum: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['enum'] */ js.Any
+    enum: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['enum'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['enum'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['enum'] */ js.Any
     ],
-    examples_examples: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Examples>['examples'] */ js.Any
+    examples: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Examples>['examples'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Examples>['examples'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_Examples>['examples'] */ js.Any
     ],
-    exclusiveMaximum_exclusiveMaximum: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['exclusiveMaximum'] */ js.Any
+    exclusiveMaximum: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['exclusiveMaximum'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['exclusiveMaximum'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['exclusiveMaximum'] */ js.Any
     ],
-    exclusiveMinimum_exclusiveMinimum: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['exclusiveMinimum'] */ js.Any
+    exclusiveMinimum: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['exclusiveMinimum'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['exclusiveMinimum'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['exclusiveMinimum'] */ js.Any
     ],
-    items_items: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['items'] */ js.Any
+    items: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['items'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['items'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['items'] */ js.Any
     ],
-    maxItems_maxItems: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['maxItems'] */ js.Any
+    maxItems: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['maxItems'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['maxItems'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['maxItems'] */ js.Any
     ],
-    maxLength_maxLength: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['maxLength'] */ js.Any
+    maxLength: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['maxLength'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['maxLength'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['maxLength'] */ js.Any
     ],
-    maxProperties_maxProperties: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['maxProperties'] */ js.Any
+    maxProperties: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['maxProperties'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['maxProperties'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['maxProperties'] */ js.Any
     ],
-    maximum_maximum: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['maximum'] */ js.Any
+    maximum: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['maximum'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['maximum'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['maximum'] */ js.Any
     ],
-    minItems_minItems: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['minItems'] */ js.Any
+    minItems: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['minItems'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['minItems'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['minItems'] */ js.Any
     ],
-    minLength_minLength: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['minLength'] */ js.Any
+    minLength: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['minLength'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['minLength'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['minLength'] */ js.Any
     ],
-    minProperties_minProperties: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['minProperties'] */ js.Any
+    minProperties: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['minProperties'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['minProperties'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['minProperties'] */ js.Any
     ],
-    minimum_minimum: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['minimum'] */ js.Any
+    minimum: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['minimum'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['minimum'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['minimum'] */ js.Any
     ],
-    multipleOf_multipleOf: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['multipleOf'] */ js.Any
+    multipleOf: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['multipleOf'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['multipleOf'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['multipleOf'] */ js.Any
     ],
-    not_not: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['not'] */ js.Any
+    not: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['not'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['not'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['not'] */ js.Any
     ],
-    oneOf_oneOf: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['oneOf'] */ js.Any
+    oneOf: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['oneOf'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['oneOf'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['oneOf'] */ js.Any
     ],
-    pattern_pattern: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['pattern'] */ js.Any
+    pattern: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['pattern'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['pattern'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['pattern'] */ js.Any
     ],
     properties: (js.Array[Schema], js.Array[String], Anon_AdditionalProperties, Options[Schema]) => Pick[Schema, properties | patternProperties | additionalProperties],
-    propertyNames_propertyNames: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_PropertyNames>['propertyNames'] */ js.Any
+    propertyNames: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_PropertyNames>['propertyNames'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_PropertyNames>['propertyNames'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: std.Extract<Schema, json-schema-merge-allof.Anon_PropertyNames>['propertyNames'] */ js.Any
     ],
-    required_required: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['required'] */ js.Any
+    required: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['required'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['required'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['required'] */ js.Any
     ],
-    title_title: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['title'] */ js.Any
+    title: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['title'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['title'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['title'] */ js.Any
     ],
-    type_type: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['type'] */ js.Any
+    `type`: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['type'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['type'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['type'] */ js.Any
     ],
-    uniqueItems_uniqueItems: (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: Schema['uniqueItems'] */ js.Any
+    uniqueItems: (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['uniqueItems'] */ js.Any
     ], js.Array[String], MergeSchemas, Options[Schema]) => NonNullable[
-      /* import warning: ImportType.apply Failed type conversion: Schema['uniqueItems'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: Schema['uniqueItems'] */ js.Any
     ]
   ): Resolvers[Schema] = {
-    val __obj = js.Dynamic.literal(properties = js.Any.fromFunction4(properties))
-    __obj.updateDynamic("$id")(js.Any.fromFunction4($id_id))
-    __obj.updateDynamic("$ref")(js.Any.fromFunction4($ref_ref))
-    __obj.updateDynamic("$schema")(js.Any.fromFunction4($schema_schema))
-    __obj.updateDynamic("additionalItems")(js.Any.fromFunction4(additionalItems_additionalItems))
-    __obj.updateDynamic("additionalProperties")(js.Any.fromFunction4(additionalProperties_additionalProperties))
-    __obj.updateDynamic("anyOf")(js.Any.fromFunction4(anyOf_anyOf))
-    __obj.updateDynamic("contains")(js.Any.fromFunction4(contains_contains))
-    __obj.updateDynamic("default")(js.Any.fromFunction4(default_default))
-    __obj.updateDynamic("definitions")(js.Any.fromFunction4(definitions_definitions))
-    __obj.updateDynamic("dependencies")(js.Any.fromFunction4(dependencies_dependencies))
-    __obj.updateDynamic("description")(js.Any.fromFunction4(description_description))
-    __obj.updateDynamic("enum")(js.Any.fromFunction4(enum_enum))
-    __obj.updateDynamic("examples")(js.Any.fromFunction4(examples_examples))
-    __obj.updateDynamic("exclusiveMaximum")(js.Any.fromFunction4(exclusiveMaximum_exclusiveMaximum))
-    __obj.updateDynamic("exclusiveMinimum")(js.Any.fromFunction4(exclusiveMinimum_exclusiveMinimum))
-    __obj.updateDynamic("items")(js.Any.fromFunction4(items_items))
-    __obj.updateDynamic("maxItems")(js.Any.fromFunction4(maxItems_maxItems))
-    __obj.updateDynamic("maxLength")(js.Any.fromFunction4(maxLength_maxLength))
-    __obj.updateDynamic("maxProperties")(js.Any.fromFunction4(maxProperties_maxProperties))
-    __obj.updateDynamic("maximum")(js.Any.fromFunction4(maximum_maximum))
-    __obj.updateDynamic("minItems")(js.Any.fromFunction4(minItems_minItems))
-    __obj.updateDynamic("minLength")(js.Any.fromFunction4(minLength_minLength))
-    __obj.updateDynamic("minProperties")(js.Any.fromFunction4(minProperties_minProperties))
-    __obj.updateDynamic("minimum")(js.Any.fromFunction4(minimum_minimum))
-    __obj.updateDynamic("multipleOf")(js.Any.fromFunction4(multipleOf_multipleOf))
-    __obj.updateDynamic("not")(js.Any.fromFunction4(not_not))
-    __obj.updateDynamic("oneOf")(js.Any.fromFunction4(oneOf_oneOf))
-    __obj.updateDynamic("pattern")(js.Any.fromFunction4(pattern_pattern))
-    __obj.updateDynamic("propertyNames")(js.Any.fromFunction4(propertyNames_propertyNames))
-    __obj.updateDynamic("required")(js.Any.fromFunction4(required_required))
-    __obj.updateDynamic("title")(js.Any.fromFunction4(title_title))
-    __obj.updateDynamic("type")(js.Any.fromFunction4(type_type))
-    __obj.updateDynamic("uniqueItems")(js.Any.fromFunction4(uniqueItems_uniqueItems))
+    val __obj = js.Dynamic.literal($id = js.Any.fromFunction4($id), $ref = js.Any.fromFunction4($ref), $schema = js.Any.fromFunction4($schema), additionalItems = js.Any.fromFunction4(additionalItems), additionalProperties = js.Any.fromFunction4(additionalProperties), anyOf = js.Any.fromFunction4(anyOf), contains = js.Any.fromFunction4(contains), default = js.Any.fromFunction4(default), definitions = js.Any.fromFunction4(definitions), dependencies = js.Any.fromFunction4(dependencies), description = js.Any.fromFunction4(description), enum = js.Any.fromFunction4(enum), examples = js.Any.fromFunction4(examples), exclusiveMaximum = js.Any.fromFunction4(exclusiveMaximum), exclusiveMinimum = js.Any.fromFunction4(exclusiveMinimum), items = js.Any.fromFunction4(items), maxItems = js.Any.fromFunction4(maxItems), maxLength = js.Any.fromFunction4(maxLength), maxProperties = js.Any.fromFunction4(maxProperties), maximum = js.Any.fromFunction4(maximum), minItems = js.Any.fromFunction4(minItems), minLength = js.Any.fromFunction4(minLength), minProperties = js.Any.fromFunction4(minProperties), minimum = js.Any.fromFunction4(minimum), multipleOf = js.Any.fromFunction4(multipleOf), not = js.Any.fromFunction4(not), oneOf = js.Any.fromFunction4(oneOf), pattern = js.Any.fromFunction4(pattern), properties = js.Any.fromFunction4(properties), propertyNames = js.Any.fromFunction4(propertyNames), required = js.Any.fromFunction4(required), title = js.Any.fromFunction4(title), uniqueItems = js.Any.fromFunction4(uniqueItems))
+    __obj.updateDynamic("type")(js.Any.fromFunction4(`type`))
     __obj.asInstanceOf[Resolvers[Schema]]
   }
 }

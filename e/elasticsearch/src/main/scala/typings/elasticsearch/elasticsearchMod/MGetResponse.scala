@@ -12,7 +12,7 @@ object MGetResponse {
   @scala.inline
   def apply[T](docs: js.Array[GetResponse[T]] = null): MGetResponse[T] = {
     val __obj = js.Dynamic.literal()
-    if (docs != null) __obj.updateDynamic("docs")(docs)
+    if (docs != null) __obj.updateDynamic("docs")(docs.asInstanceOf[js.Any])
     __obj.asInstanceOf[MGetResponse[T]]
   }
 }

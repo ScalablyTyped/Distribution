@@ -42,13 +42,13 @@ object Anon_Args {
   ): Anon_Args = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
-    if (console != null) __obj.updateDynamic("console")(console)
+    if (console != null) __obj.updateDynamic("console")(console.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (exit != null) __obj.updateDynamic("exit")(js.Any.fromFunction1(exit))
-    if (fs != null) __obj.updateDynamic("fs")(fs)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (stdin != null) __obj.updateDynamic("stdin")(stdin)
-    if (textFormat != null) __obj.updateDynamic("textFormat")(textFormat)
+    if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (stdin != null) __obj.updateDynamic("stdin")(stdin.asInstanceOf[js.Any])
+    if (textFormat != null) __obj.updateDynamic("textFormat")(textFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Args]
   }
 }

@@ -21,8 +21,8 @@ object ListStoreInfosResponse {
     totalSize: Int | Double = null
   ): ListStoreInfosResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (storeInfos != null) __obj.updateDynamic("storeInfos")(storeInfos)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (storeInfos != null) __obj.updateDynamic("storeInfos")(storeInfos.asInstanceOf[js.Any])
     if (totalSize != null) __obj.updateDynamic("totalSize")(totalSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListStoreInfosResponse]
   }

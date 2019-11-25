@@ -15,8 +15,8 @@ trait ILink extends js.Object {
 object ILink {
   @scala.inline
   def apply(range: IRange, tooltip: String = null, url: Uri | String = null): ILink = {
-    val __obj = js.Dynamic.literal(range = range)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILink]
   }

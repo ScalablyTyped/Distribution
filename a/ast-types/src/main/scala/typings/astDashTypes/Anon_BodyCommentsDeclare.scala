@@ -32,10 +32,10 @@ object Anon_BodyCommentsDeclare {
   ): Anon_BodyCommentsDeclare = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (!js.isUndefined(declare)) __obj.updateDynamic("declare")(declare)
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (!js.isUndefined(declare)) __obj.updateDynamic("declare")(declare.asInstanceOf[js.Any])
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BodyCommentsDeclare]
   }
 }

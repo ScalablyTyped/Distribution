@@ -1,10 +1,6 @@
 package typings.dojo.dojox.dgauges
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValuePropertyAnyArray
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dojoStrings.endThickness
 import typings.dojo.dojoStrings.fill
 import typings.dojo.dojoStrings.paddingBottom
@@ -143,30 +139,134 @@ class RectangularSegmentedRangeIndicator () extends IndicatorBase {
   @JSName("set")
   def set_stroke(property: stroke, value: js.Object): Unit = js.native
   @JSName("watch")
-  def watch_endThickness(property: endThickness, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_endThickness(
+    property: endThickness,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_fill(property: fill, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_fill(
+    property: fill,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_paddingBottom(property: paddingBottom, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_paddingBottom(
+    property: paddingBottom,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_paddingLeft(property: paddingLeft, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_paddingLeft(
+    property: paddingLeft,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_paddingRight(property: paddingRight, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_paddingRight(
+    property: paddingRight,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_paddingTop(property: paddingTop, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_paddingTop(
+    property: paddingTop,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_ranges(property: ranges, callback: Fn_NewValueOldValuePropertyAnyArray): Anon_Unwatch = js.native
+  def watch_ranges(
+    property: ranges,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Array[_]], 
+      /* newValue */ js.UndefOr[js.Array[_]], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_rounded(property: rounded, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_rounded(
+    property: rounded,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_segmentSpacing(property: segmentSpacing, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_segmentSpacing(
+    property: segmentSpacing,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_segments(property: segments, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_segments(
+    property: segments,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_start(property: start, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_start(
+    property: start,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_startThickness(property: startThickness, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_startThickness(
+    property: startThickness,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_stroke(property: stroke, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_stroke(
+    property: stroke,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

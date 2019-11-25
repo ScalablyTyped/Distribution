@@ -11,7 +11,7 @@ trait Anon_TableAnonColumnManagerComponents[ValueType] extends js.Object {
 object Anon_TableAnonColumnManagerComponents {
   @scala.inline
   def apply[ValueType](table: Anon_ColumnManagerComponents[ValueType]): Anon_TableAnonColumnManagerComponents[ValueType] = {
-    val __obj = js.Dynamic.literal(table = table)
+    val __obj = js.Dynamic.literal(table = table.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_TableAnonColumnManagerComponents[ValueType]]
   }

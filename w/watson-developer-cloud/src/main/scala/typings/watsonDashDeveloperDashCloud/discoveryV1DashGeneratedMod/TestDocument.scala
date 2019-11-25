@@ -31,12 +31,12 @@ object TestDocument {
     status: String = null
   ): TestDocument = {
     val __obj = js.Dynamic.literal()
-    if (configuration_id != null) __obj.updateDynamic("configuration_id")(configuration_id)
+    if (configuration_id != null) __obj.updateDynamic("configuration_id")(configuration_id.asInstanceOf[js.Any])
     if (enriched_field_units != null) __obj.updateDynamic("enriched_field_units")(enriched_field_units.asInstanceOf[js.Any])
-    if (notices != null) __obj.updateDynamic("notices")(notices)
-    if (original_media_type != null) __obj.updateDynamic("original_media_type")(original_media_type)
-    if (snapshots != null) __obj.updateDynamic("snapshots")(snapshots)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (notices != null) __obj.updateDynamic("notices")(notices.asInstanceOf[js.Any])
+    if (original_media_type != null) __obj.updateDynamic("original_media_type")(original_media_type.asInstanceOf[js.Any])
+    if (snapshots != null) __obj.updateDynamic("snapshots")(snapshots.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestDocument]
   }
 }

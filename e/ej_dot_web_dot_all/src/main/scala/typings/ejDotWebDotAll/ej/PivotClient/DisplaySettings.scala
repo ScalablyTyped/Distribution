@@ -39,8 +39,8 @@ object DisplaySettings {
     val __obj = js.Dynamic.literal()
     if (controlPlacement != null) __obj.updateDynamic("controlPlacement")(controlPlacement.asInstanceOf[js.Any])
     if (defaultView != null) __obj.updateDynamic("defaultView")(defaultView.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableFullScreen)) __obj.updateDynamic("enableFullScreen")(enableFullScreen)
-    if (!js.isUndefined(enableTogglePanel)) __obj.updateDynamic("enableTogglePanel")(enableTogglePanel)
+    if (!js.isUndefined(enableFullScreen)) __obj.updateDynamic("enableFullScreen")(enableFullScreen.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTogglePanel)) __obj.updateDynamic("enableTogglePanel")(enableTogglePanel.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplaySettings]
   }

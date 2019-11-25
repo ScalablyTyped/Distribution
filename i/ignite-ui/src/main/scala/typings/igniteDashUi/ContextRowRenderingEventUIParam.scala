@@ -32,10 +32,10 @@ object ContextRowRenderingEventUIParam {
     owner: js.Any = null
   ): ContextRowRenderingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (contextRowMode != null) __obj.updateDynamic("contextRowMode")(contextRowMode)
+    if (contextRowMode != null) __obj.updateDynamic("contextRowMode")(contextRowMode.asInstanceOf[js.Any])
     if (currentPageIndex != null) __obj.updateDynamic("currentPageIndex")(currentPageIndex.asInstanceOf[js.Any])
-    if (dataRow != null) __obj.updateDynamic("dataRow")(dataRow)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (dataRow != null) __obj.updateDynamic("dataRow")(dataRow.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextRowRenderingEventUIParam]
   }
 }

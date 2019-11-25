@@ -23,7 +23,7 @@ object Anon_Circle {
     polyline: String,
     rectangle: String
   ): Anon_Circle = {
-    val __obj = js.Dynamic.literal(circle = circle, circlemarker = circlemarker, marker = marker, polygon = polygon, polyline = polyline, rectangle = rectangle)
+    val __obj = js.Dynamic.literal(circle = circle.asInstanceOf[js.Any], circlemarker = circlemarker.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], rectangle = rectangle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Circle]
   }

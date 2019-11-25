@@ -15,8 +15,8 @@ object Anon_ProjectNumber {
   @scala.inline
   def apply(projectNumber: String = null, team: String = null): Anon_ProjectNumber = {
     val __obj = js.Dynamic.literal()
-    if (projectNumber != null) __obj.updateDynamic("projectNumber")(projectNumber)
-    if (team != null) __obj.updateDynamic("team")(team)
+    if (projectNumber != null) __obj.updateDynamic("projectNumber")(projectNumber.asInstanceOf[js.Any])
+    if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ProjectNumber]
   }
 }

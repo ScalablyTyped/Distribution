@@ -32,15 +32,15 @@ object SchemaItem {
     `type`: SchemaType = null
   ): SchemaItem = {
     val __obj = js.Dynamic.literal()
-    if ($ref != null) __obj.updateDynamic("$ref")($ref)
-    if (additionalProperties != null) __obj.updateDynamic("additionalProperties")(additionalProperties)
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if ($ref != null) __obj.updateDynamic("$ref")($ref.asInstanceOf[js.Any])
+    if (additionalProperties != null) __obj.updateDynamic("additionalProperties")(additionalProperties.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaItem]
   }
 }

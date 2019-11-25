@@ -51,15 +51,15 @@ object Message {
     threadId: String = null
   ): Message = {
     val __obj = js.Dynamic.literal()
-    if (historyId != null) __obj.updateDynamic("historyId")(historyId)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (internalDate != null) __obj.updateDynamic("internalDate")(internalDate)
-    if (labelIds != null) __obj.updateDynamic("labelIds")(labelIds)
-    if (payload != null) __obj.updateDynamic("payload")(payload)
-    if (raw != null) __obj.updateDynamic("raw")(raw)
+    if (historyId != null) __obj.updateDynamic("historyId")(historyId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (internalDate != null) __obj.updateDynamic("internalDate")(internalDate.asInstanceOf[js.Any])
+    if (labelIds != null) __obj.updateDynamic("labelIds")(labelIds.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     if (sizeEstimate != null) __obj.updateDynamic("sizeEstimate")(sizeEstimate.asInstanceOf[js.Any])
-    if (snippet != null) __obj.updateDynamic("snippet")(snippet)
-    if (threadId != null) __obj.updateDynamic("threadId")(threadId)
+    if (snippet != null) __obj.updateDynamic("snippet")(snippet.asInstanceOf[js.Any])
+    if (threadId != null) __obj.updateDynamic("threadId")(threadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
 }

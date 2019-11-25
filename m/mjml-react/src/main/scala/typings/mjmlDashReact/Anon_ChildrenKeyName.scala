@@ -19,8 +19,8 @@ object Anon_ChildrenKeyName {
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     children: ReactNode = null
   ): Anon_ChildrenKeyName = {
-    val __obj = js.Dynamic.literal(name = name)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChildrenKeyName]
   }

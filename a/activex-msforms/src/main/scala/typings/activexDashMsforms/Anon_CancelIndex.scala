@@ -13,7 +13,7 @@ trait Anon_CancelIndex extends js.Object {
 object Anon_CancelIndex {
   @scala.inline
   def apply(Cancel: ReturnBoolean, Index: Double): Anon_CancelIndex = {
-    val __obj = js.Dynamic.literal(Cancel = Cancel, Index = Index)
+    val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Index = Index.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CancelIndex]
   }

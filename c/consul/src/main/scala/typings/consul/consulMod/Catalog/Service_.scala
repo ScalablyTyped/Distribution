@@ -1,7 +1,5 @@
 package typings.consul.consulMod.Catalog
 
-import typings.consul.Fn_CallbackDcOpts
-import typings.consul.Fn_CallbackOptsService
 import typings.consul.consulMod.Callback
 import typings.consul.consulMod.Catalog.Service.ListOptions
 import typings.consul.consulMod.Consul
@@ -14,16 +12,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Service_ extends js.Object {
   var consul: Consul = js.native
-  /**
-    * Lists services in a given DC
-    */
-  @JSName("list")
-  var list_Original: Fn_CallbackDcOpts = js.native
-  /**
-    * Lists the nodes in a given service
-    */
-  @JSName("nodes")
-  var nodes_Original: Fn_CallbackOptsService = js.native
   /**
     * Lists services in a given DC
     */

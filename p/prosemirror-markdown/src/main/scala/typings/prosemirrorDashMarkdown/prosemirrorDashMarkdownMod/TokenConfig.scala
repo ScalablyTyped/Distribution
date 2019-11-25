@@ -1,6 +1,5 @@
 package typings.prosemirrorDashMarkdown.prosemirrorDashMarkdownMod
 
-import typings.markdownDashIt.libTokenMod.^
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +25,9 @@ trait TokenConfig extends js.Object {
     * token](https://markdown-it.github.io/markdown-it/#Token) and
     * returns an attribute object.
     */
-  var getAttrs: js.UndefOr[js.Function1[/* token */ ^, Record[String, _]]] = js.undefined
+  var getAttrs: js.UndefOr[
+    js.Function1[/* token */ typings.markdownDashIt.libTokenMod.^, Record[String, _]]
+  ] = js.undefined
   /**
     * When true, ignore content for the matched token.
     */
@@ -50,18 +51,18 @@ object TokenConfig {
   def apply(
     attrs: Record[String, _] = null,
     block: String = null,
-    getAttrs: /* token */ ^ => Record[String, _] = null,
+    getAttrs: /* token */ typings.markdownDashIt.libTokenMod.^ => Record[String, _] = null,
     ignore: js.UndefOr[Boolean] = js.undefined,
     mark: String = null,
     node: String = null
   ): TokenConfig = {
     val __obj = js.Dynamic.literal()
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
-    if (block != null) __obj.updateDynamic("block")(block)
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
+    if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
     if (getAttrs != null) __obj.updateDynamic("getAttrs")(js.Any.fromFunction1(getAttrs))
-    if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore)
-    if (mark != null) __obj.updateDynamic("mark")(mark)
-    if (node != null) __obj.updateDynamic("node")(node)
+    if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (mark != null) __obj.updateDynamic("mark")(mark.asInstanceOf[js.Any])
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenConfig]
   }
 }

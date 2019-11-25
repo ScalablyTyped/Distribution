@@ -15,8 +15,8 @@ import scala.scalajs.js.annotation._
 object IntegerMapping {
   @scala.inline
   def apply(keypath: String, radix: Double, `type`: integer): IntegerMapping = {
-    val __obj = js.Dynamic.literal(keypath = keypath, radix = radix)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(keypath = keypath.asInstanceOf[js.Any], radix = radix.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegerMapping]
   }
 }

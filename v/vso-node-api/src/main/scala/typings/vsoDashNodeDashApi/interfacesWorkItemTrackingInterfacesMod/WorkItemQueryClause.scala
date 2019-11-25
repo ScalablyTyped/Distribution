@@ -46,7 +46,7 @@ object WorkItemQueryClause {
     operator: WorkItemFieldOperation,
     value: String
   ): WorkItemQueryClause = {
-    val __obj = js.Dynamic.literal(clauses = clauses, field = field, fieldValue = fieldValue, isFieldValue = isFieldValue, logicalOperator = logicalOperator, operator = operator, value = value)
+    val __obj = js.Dynamic.literal(clauses = clauses.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], fieldValue = fieldValue.asInstanceOf[js.Any], isFieldValue = isFieldValue.asInstanceOf[js.Any], logicalOperator = logicalOperator.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkItemQueryClause]
   }

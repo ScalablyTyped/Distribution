@@ -25,7 +25,7 @@ object SparklinesReferenceLineProps {
     value: Int | Double = null
   ): SparklinesReferenceLineProps = {
     val __obj = js.Dynamic.literal()
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklinesReferenceLineProps]

@@ -14,7 +14,7 @@ trait Anon_AdStatusPConnectionConnection extends js.Object {
 object Anon_AdStatusPConnectionConnection {
   @scala.inline
   def apply(adStatus: EventStatusEnum, pConnection: Connection): Anon_AdStatusPConnectionConnection = {
-    val __obj = js.Dynamic.literal(adStatus = adStatus, pConnection = pConnection)
+    val __obj = js.Dynamic.literal(adStatus = adStatus.asInstanceOf[js.Any], pConnection = pConnection.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AdStatusPConnectionConnection]
   }

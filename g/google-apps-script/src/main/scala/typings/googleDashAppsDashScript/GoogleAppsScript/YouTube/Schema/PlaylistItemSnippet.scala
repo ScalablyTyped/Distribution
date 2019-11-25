@@ -30,15 +30,15 @@ object PlaylistItemSnippet {
     title: String = null
   ): PlaylistItemSnippet = {
     val __obj = js.Dynamic.literal()
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
-    if (channelTitle != null) __obj.updateDynamic("channelTitle")(channelTitle)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (playlistId != null) __obj.updateDynamic("playlistId")(playlistId)
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
+    if (channelTitle != null) __obj.updateDynamic("channelTitle")(channelTitle.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (playlistId != null) __obj.updateDynamic("playlistId")(playlistId.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (publishedAt != null) __obj.updateDynamic("publishedAt")(publishedAt)
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId)
-    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (publishedAt != null) __obj.updateDynamic("publishedAt")(publishedAt.asInstanceOf[js.Any])
+    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
+    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaylistItemSnippet]
   }
 }

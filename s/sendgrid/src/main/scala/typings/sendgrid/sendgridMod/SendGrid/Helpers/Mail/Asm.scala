@@ -12,7 +12,7 @@ trait Asm extends js.Object {
 object Asm {
   @scala.inline
   def apply(group_id: Double, groups_to_display: js.Array[Double]): Asm = {
-    val __obj = js.Dynamic.literal(group_id = group_id, groups_to_display = groups_to_display)
+    val __obj = js.Dynamic.literal(group_id = group_id.asInstanceOf[js.Any], groups_to_display = groups_to_display.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Asm]
   }

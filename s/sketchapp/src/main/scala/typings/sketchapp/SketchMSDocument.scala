@@ -34,7 +34,7 @@ object SketchMSDocument {
     layerTextStyles: SketchMSSharedTextStyleContainer,
     pages: js.Array[SketchMSPageReference]
   ): SketchMSDocument = {
-    val __obj = js.Dynamic.literal(_class = _class, assets = assets, colorSpace = colorSpace, currentPageIndex = currentPageIndex, do_objectID = do_objectID, foreignSymbols = foreignSymbols, foreignTextStyles = foreignTextStyles, layerStyles = layerStyles, layerSymbols = layerSymbols, layerTextStyles = layerTextStyles, pages = pages)
+    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], assets = assets.asInstanceOf[js.Any], colorSpace = colorSpace.asInstanceOf[js.Any], currentPageIndex = currentPageIndex.asInstanceOf[js.Any], do_objectID = do_objectID.asInstanceOf[js.Any], foreignSymbols = foreignSymbols.asInstanceOf[js.Any], foreignTextStyles = foreignTextStyles.asInstanceOf[js.Any], layerStyles = layerStyles.asInstanceOf[js.Any], layerSymbols = layerSymbols.asInstanceOf[js.Any], layerTextStyles = layerTextStyles.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SketchMSDocument]
   }

@@ -26,9 +26,9 @@ object SideInputInfo {
   @scala.inline
   def apply(kind: Record[String, _] = null, sources: js.Array[Source] = null, tag: String = null): SideInputInfo = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (sources != null) __obj.updateDynamic("sources")(sources)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[SideInputInfo]
   }
 }

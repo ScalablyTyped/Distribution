@@ -22,11 +22,11 @@ object ChartCategoryAxisItemSelect {
     to: js.Any = null
   ): ChartCategoryAxisItemSelect = {
     val __obj = js.Dynamic.literal()
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (max != null) __obj.updateDynamic("max")(max)
-    if (min != null) __obj.updateDynamic("min")(min)
-    if (mousewheel != null) __obj.updateDynamic("mousewheel")(mousewheel)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (mousewheel != null) __obj.updateDynamic("mousewheel")(mousewheel.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartCategoryAxisItemSelect]
   }
 }

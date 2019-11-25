@@ -46,15 +46,15 @@ object IItemOptions {
     placeholder: String = null,
     renderer: IRenderer = null
   ): IItemOptions = {
-    val __obj = js.Dynamic.literal(items = items, title = title.asInstanceOf[js.Any])
-    if (cancelLabel != null) __obj.updateDynamic("cancelLabel")(cancelLabel)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (cancelLabel != null) __obj.updateDynamic("cancelLabel")(cancelLabel.asInstanceOf[js.Any])
     if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (okLabel != null) __obj.updateDynamic("okLabel")(okLabel)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (okLabel != null) __obj.updateDynamic("okLabel")(okLabel.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItemOptions]
   }
 }

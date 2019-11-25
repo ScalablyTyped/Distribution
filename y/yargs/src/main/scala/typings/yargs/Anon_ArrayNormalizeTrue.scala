@@ -13,7 +13,7 @@ trait Anon_ArrayNormalizeTrue extends js.Object {
 object Anon_ArrayNormalizeTrue {
   @scala.inline
   def apply(array: `true`, normalize: `true`): Anon_ArrayNormalizeTrue = {
-    val __obj = js.Dynamic.literal(array = array, normalize = normalize)
+    val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], normalize = normalize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ArrayNormalizeTrue]
   }

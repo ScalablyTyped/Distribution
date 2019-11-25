@@ -50,7 +50,7 @@ object TouchBarSegmentedControlConstructorOptions {
     segmentStyle: automatic | rounded | `textured-rounded` | `round-rect` | `textured-square` | capsule | `small-square` | separated = null,
     selectedIndex: Int | Double = null
   ): TouchBarSegmentedControlConstructorOptions = {
-    val __obj = js.Dynamic.literal(change = js.Any.fromFunction2(change), segments = segments)
+    val __obj = js.Dynamic.literal(change = js.Any.fromFunction2(change), segments = segments.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (segmentStyle != null) __obj.updateDynamic("segmentStyle")(segmentStyle.asInstanceOf[js.Any])
     if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])

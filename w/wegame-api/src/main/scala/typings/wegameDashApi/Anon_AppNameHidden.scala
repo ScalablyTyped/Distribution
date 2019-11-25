@@ -46,7 +46,7 @@ object Anon_AppNameHidden {
     size: Double,
     top: Double
   ): Anon_AppNameHidden = {
-    val __obj = js.Dynamic.literal(appNameHidden = appNameHidden, borderColor = borderColor, borderWidth = borderWidth, color = color, left = left, size = size, top = top)
+    val __obj = js.Dynamic.literal(appNameHidden = appNameHidden.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AppNameHidden]
   }

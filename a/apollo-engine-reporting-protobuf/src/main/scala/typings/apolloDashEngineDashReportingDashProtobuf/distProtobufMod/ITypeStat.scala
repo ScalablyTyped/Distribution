@@ -22,9 +22,9 @@ object ITypeStat {
     perFieldStat: StringDictionary[IFieldStat] = null
   ): ITypeStat = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (perFieldStat != null) __obj.updateDynamic("perFieldStat")(perFieldStat)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (perFieldStat != null) __obj.updateDynamic("perFieldStat")(perFieldStat.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITypeStat]
   }
 }

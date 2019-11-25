@@ -23,9 +23,9 @@ object CreateLeadResponse {
   @scala.inline
   def apply(lead: Lead = null, recaptchaStatus: String = null, responseMetadata: ResponseMetadata = null): CreateLeadResponse = {
     val __obj = js.Dynamic.literal()
-    if (lead != null) __obj.updateDynamic("lead")(lead)
-    if (recaptchaStatus != null) __obj.updateDynamic("recaptchaStatus")(recaptchaStatus)
-    if (responseMetadata != null) __obj.updateDynamic("responseMetadata")(responseMetadata)
+    if (lead != null) __obj.updateDynamic("lead")(lead.asInstanceOf[js.Any])
+    if (recaptchaStatus != null) __obj.updateDynamic("recaptchaStatus")(recaptchaStatus.asInstanceOf[js.Any])
+    if (responseMetadata != null) __obj.updateDynamic("responseMetadata")(responseMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLeadResponse]
   }
 }

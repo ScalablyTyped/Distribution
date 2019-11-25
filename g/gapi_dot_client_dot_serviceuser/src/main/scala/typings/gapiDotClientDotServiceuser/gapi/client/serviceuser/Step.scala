@@ -15,8 +15,8 @@ object Step {
   @scala.inline
   def apply(description: String = null, status: String = null): Step = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Step]
   }
 }

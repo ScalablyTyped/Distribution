@@ -11,7 +11,7 @@ trait IntBrand extends js.Object {
 object IntBrand {
   @scala.inline
   def apply(Int: js.Symbol): IntBrand = {
-    val __obj = js.Dynamic.literal(Int = Int)
+    val __obj = js.Dynamic.literal(Int = Int.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IntBrand]
   }

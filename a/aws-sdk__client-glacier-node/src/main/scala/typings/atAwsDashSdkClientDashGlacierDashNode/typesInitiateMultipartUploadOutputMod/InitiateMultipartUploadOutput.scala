@@ -25,9 +25,9 @@ trait InitiateMultipartUploadOutput extends _OutputTypesUnion {
 object InitiateMultipartUploadOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, location: String = null, uploadId: String = null): InitiateMultipartUploadOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (uploadId != null) __obj.updateDynamic("uploadId")(uploadId)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (uploadId != null) __obj.updateDynamic("uploadId")(uploadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitiateMultipartUploadOutput]
   }
 }

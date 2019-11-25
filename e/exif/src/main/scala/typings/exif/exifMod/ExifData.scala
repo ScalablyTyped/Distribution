@@ -29,7 +29,7 @@ object ExifData {
     makernote: Anon_AutoBracketing,
     thumbnail: Anon_Compression
   ): ExifData = {
-    val __obj = js.Dynamic.literal(exif = exif, gps = gps, image = image, interoperability = interoperability, makernote = makernote, thumbnail = thumbnail)
+    val __obj = js.Dynamic.literal(exif = exif.asInstanceOf[js.Any], gps = gps.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], interoperability = interoperability.asInstanceOf[js.Any], makernote = makernote.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExifData]
   }

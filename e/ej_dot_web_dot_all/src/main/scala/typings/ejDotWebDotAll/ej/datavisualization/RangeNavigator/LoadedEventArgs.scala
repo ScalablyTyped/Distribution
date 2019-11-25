@@ -28,10 +28,10 @@ object LoadedEventArgs {
     `type`: String = null
   ): LoadedEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (Data != null) __obj.updateDynamic("Data")(Data)
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (Data != null) __obj.updateDynamic("Data")(Data.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadedEventArgs]
   }
 }

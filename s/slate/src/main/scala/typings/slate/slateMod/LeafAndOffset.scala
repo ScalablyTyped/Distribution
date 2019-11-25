@@ -14,7 +14,7 @@ trait LeafAndOffset extends js.Object {
 object LeafAndOffset {
   @scala.inline
   def apply(endOffset: Double, index: Double, leaf: Leaf, startOffset: Double): LeafAndOffset = {
-    val __obj = js.Dynamic.literal(endOffset = endOffset, index = index, leaf = leaf, startOffset = startOffset)
+    val __obj = js.Dynamic.literal(endOffset = endOffset.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], leaf = leaf.asInstanceOf[js.Any], startOffset = startOffset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LeafAndOffset]
   }

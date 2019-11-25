@@ -49,18 +49,18 @@ object IFileDescriptorProto {
     weakDependency: js.Array[Double] = null
   ): IFileDescriptorProto = {
     val __obj = js.Dynamic.literal()
-    if (dependency != null) __obj.updateDynamic("dependency")(dependency)
-    if (enumType != null) __obj.updateDynamic("enumType")(enumType)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (messageType != null) __obj.updateDynamic("messageType")(messageType)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (`package` != null) __obj.updateDynamic("package")(`package`)
-    if (publicDependency != null) __obj.updateDynamic("publicDependency")(publicDependency)
-    if (service != null) __obj.updateDynamic("service")(service)
-    if (sourceCodeInfo != null) __obj.updateDynamic("sourceCodeInfo")(sourceCodeInfo)
-    if (syntax != null) __obj.updateDynamic("syntax")(syntax)
-    if (weakDependency != null) __obj.updateDynamic("weakDependency")(weakDependency)
+    if (dependency != null) __obj.updateDynamic("dependency")(dependency.asInstanceOf[js.Any])
+    if (enumType != null) __obj.updateDynamic("enumType")(enumType.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (messageType != null) __obj.updateDynamic("messageType")(messageType.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (`package` != null) __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
+    if (publicDependency != null) __obj.updateDynamic("publicDependency")(publicDependency.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
+    if (sourceCodeInfo != null) __obj.updateDynamic("sourceCodeInfo")(sourceCodeInfo.asInstanceOf[js.Any])
+    if (syntax != null) __obj.updateDynamic("syntax")(syntax.asInstanceOf[js.Any])
+    if (weakDependency != null) __obj.updateDynamic("weakDependency")(weakDependency.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileDescriptorProto]
   }
 }

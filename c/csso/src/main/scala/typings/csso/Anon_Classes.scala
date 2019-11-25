@@ -14,9 +14,9 @@ object Anon_Classes {
   @scala.inline
   def apply(classes: js.Array[String] = null, ids: js.Array[String] = null, tags: js.Array[String] = null): Anon_Classes = {
     val __obj = js.Dynamic.literal()
-    if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (ids != null) __obj.updateDynamic("ids")(ids)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
+    if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Classes]
   }
 }

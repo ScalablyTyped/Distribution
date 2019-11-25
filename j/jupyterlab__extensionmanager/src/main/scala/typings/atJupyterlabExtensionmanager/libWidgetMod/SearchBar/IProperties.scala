@@ -17,7 +17,7 @@ trait IProperties extends js.Object {
 object IProperties {
   @scala.inline
   def apply(placeholder: String): IProperties = {
-    val __obj = js.Dynamic.literal(placeholder = placeholder)
+    val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IProperties]
   }

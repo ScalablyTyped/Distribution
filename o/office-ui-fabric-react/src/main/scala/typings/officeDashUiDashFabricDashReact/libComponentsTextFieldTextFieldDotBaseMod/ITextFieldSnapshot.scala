@@ -16,7 +16,7 @@ object ITextFieldSnapshot {
   @scala.inline
   def apply(selection: js.Tuple2[Double | Null, Double | Null] = null): ITextFieldSnapshot = {
     val __obj = js.Dynamic.literal()
-    if (selection != null) __obj.updateDynamic("selection")(selection)
+    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITextFieldSnapshot]
   }
 }

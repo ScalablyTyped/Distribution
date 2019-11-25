@@ -31,14 +31,14 @@ object AppProperties {
     welcomePageName: String = null
   ): AppProperties = {
     val __obj = js.Dynamic.literal()
-    if (appId != null) __obj.updateDynamic("appId")(appId)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (uniqueName != null) __obj.updateDynamic("uniqueName")(uniqueName)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (webResourceId != null) __obj.updateDynamic("webResourceId")(webResourceId)
-    if (webResourceName != null) __obj.updateDynamic("webResourceName")(webResourceName)
-    if (welcomePageId != null) __obj.updateDynamic("welcomePageId")(welcomePageId)
-    if (welcomePageName != null) __obj.updateDynamic("welcomePageName")(welcomePageName)
+    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (uniqueName != null) __obj.updateDynamic("uniqueName")(uniqueName.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (webResourceId != null) __obj.updateDynamic("webResourceId")(webResourceId.asInstanceOf[js.Any])
+    if (webResourceName != null) __obj.updateDynamic("webResourceName")(webResourceName.asInstanceOf[js.Any])
+    if (welcomePageId != null) __obj.updateDynamic("welcomePageId")(welcomePageId.asInstanceOf[js.Any])
+    if (welcomePageName != null) __obj.updateDynamic("welcomePageName")(welcomePageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppProperties]
   }
 }

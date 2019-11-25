@@ -12,7 +12,7 @@ trait ReposListBranchesResponseItemProtectionRequiredStatusChecks extends js.Obj
 object ReposListBranchesResponseItemProtectionRequiredStatusChecks {
   @scala.inline
   def apply(contexts: js.Array[String], enforcement_level: String): ReposListBranchesResponseItemProtectionRequiredStatusChecks = {
-    val __obj = js.Dynamic.literal(contexts = contexts, enforcement_level = enforcement_level)
+    val __obj = js.Dynamic.literal(contexts = contexts.asInstanceOf[js.Any], enforcement_level = enforcement_level.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposListBranchesResponseItemProtectionRequiredStatusChecks]
   }

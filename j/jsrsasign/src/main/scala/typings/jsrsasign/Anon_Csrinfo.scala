@@ -12,7 +12,7 @@ trait Anon_Csrinfo extends js.Object {
 object Anon_Csrinfo {
   @scala.inline
   def apply(csrinfo: CertificationRequestInfo): Anon_Csrinfo = {
-    val __obj = js.Dynamic.literal(csrinfo = csrinfo)
+    val __obj = js.Dynamic.literal(csrinfo = csrinfo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Csrinfo]
   }

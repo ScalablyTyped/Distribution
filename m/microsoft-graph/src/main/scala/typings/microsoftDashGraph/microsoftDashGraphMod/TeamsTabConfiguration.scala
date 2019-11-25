@@ -24,10 +24,10 @@ object TeamsTabConfiguration {
     websiteUrl: String = null
   ): TeamsTabConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl)
-    if (entityId != null) __obj.updateDynamic("entityId")(entityId)
-    if (removeUrl != null) __obj.updateDynamic("removeUrl")(removeUrl)
-    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl)
+    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl.asInstanceOf[js.Any])
+    if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
+    if (removeUrl != null) __obj.updateDynamic("removeUrl")(removeUrl.asInstanceOf[js.Any])
+    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsTabConfiguration]
   }
 }

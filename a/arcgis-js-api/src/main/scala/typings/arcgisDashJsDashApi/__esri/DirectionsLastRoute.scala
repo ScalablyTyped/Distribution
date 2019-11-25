@@ -51,7 +51,7 @@ object DirectionsLastRoute {
     propertyIsEnumerable: PropertyKey => Boolean,
     routeResults: RouteResult
   ): DirectionsLastRoute = {
-    val __obj = js.Dynamic.literal(barriers = barriers, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), messages = messages, polygonBarriers = polygonBarriers, polylineBarriers = polylineBarriers, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), routeResults = routeResults)
+    val __obj = js.Dynamic.literal(barriers = barriers.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), messages = messages.asInstanceOf[js.Any], polygonBarriers = polygonBarriers.asInstanceOf[js.Any], polylineBarriers = polylineBarriers.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), routeResults = routeResults.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DirectionsLastRoute]
   }

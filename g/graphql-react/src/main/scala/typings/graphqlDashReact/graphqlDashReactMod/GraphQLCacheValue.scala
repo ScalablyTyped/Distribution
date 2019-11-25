@@ -23,10 +23,10 @@ object GraphQLCacheValue {
     parseError: String = null
   ): GraphQLCacheValue[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (fetchError != null) __obj.updateDynamic("fetchError")(fetchError)
-    if (graphQLErrors != null) __obj.updateDynamic("graphQLErrors")(graphQLErrors)
-    if (httpError != null) __obj.updateDynamic("httpError")(httpError)
-    if (parseError != null) __obj.updateDynamic("parseError")(parseError)
+    if (fetchError != null) __obj.updateDynamic("fetchError")(fetchError.asInstanceOf[js.Any])
+    if (graphQLErrors != null) __obj.updateDynamic("graphQLErrors")(graphQLErrors.asInstanceOf[js.Any])
+    if (httpError != null) __obj.updateDynamic("httpError")(httpError.asInstanceOf[js.Any])
+    if (parseError != null) __obj.updateDynamic("parseError")(parseError.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLCacheValue[T]]
   }
 }

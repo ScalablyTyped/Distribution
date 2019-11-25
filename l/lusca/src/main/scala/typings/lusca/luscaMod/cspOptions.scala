@@ -23,10 +23,10 @@ object cspOptions {
   ): cspOptions = {
     val __obj = js.Dynamic.literal()
     if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
-    if (!js.isUndefined(reportOnly)) __obj.updateDynamic("reportOnly")(reportOnly)
-    if (reportUri != null) __obj.updateDynamic("reportUri")(reportUri)
-    if (!js.isUndefined(scriptNonce)) __obj.updateDynamic("scriptNonce")(scriptNonce)
-    if (!js.isUndefined(styleNonce)) __obj.updateDynamic("styleNonce")(styleNonce)
+    if (!js.isUndefined(reportOnly)) __obj.updateDynamic("reportOnly")(reportOnly.asInstanceOf[js.Any])
+    if (reportUri != null) __obj.updateDynamic("reportUri")(reportUri.asInstanceOf[js.Any])
+    if (!js.isUndefined(scriptNonce)) __obj.updateDynamic("scriptNonce")(scriptNonce.asInstanceOf[js.Any])
+    if (!js.isUndefined(styleNonce)) __obj.updateDynamic("styleNonce")(styleNonce.asInstanceOf[js.Any])
     __obj.asInstanceOf[cspOptions]
   }
 }

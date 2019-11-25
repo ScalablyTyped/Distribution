@@ -12,7 +12,7 @@ trait keyLoadingData extends js.Object {
 object keyLoadingData {
   @scala.inline
   def apply(frag: Fragment): keyLoadingData = {
-    val __obj = js.Dynamic.literal(frag = frag)
+    val __obj = js.Dynamic.literal(frag = frag.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[keyLoadingData]
   }

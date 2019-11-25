@@ -13,7 +13,7 @@ trait ImmediateOptions extends Options {
 object ImmediateOptions {
   @scala.inline
   def apply(immediate: `true`, wait: Int | Double = null): ImmediateOptions = {
-    val __obj = js.Dynamic.literal(immediate = immediate)
+    val __obj = js.Dynamic.literal(immediate = immediate.asInstanceOf[js.Any])
     if (wait != null) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImmediateOptions]
   }

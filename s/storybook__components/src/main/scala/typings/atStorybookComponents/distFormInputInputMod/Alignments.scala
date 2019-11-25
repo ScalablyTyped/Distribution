@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait Alignments extends js.Object
 
+object Alignments {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def center: typings.atStorybookComponents.atStorybookComponentsStrings.center = this.cast("center")
+  @scala.inline
+  def end: typings.atStorybookComponents.atStorybookComponentsStrings.end = this.cast("end")
+  @scala.inline
+  def start: typings.atStorybookComponents.atStorybookComponentsStrings.start = this.cast("start")
+}
+

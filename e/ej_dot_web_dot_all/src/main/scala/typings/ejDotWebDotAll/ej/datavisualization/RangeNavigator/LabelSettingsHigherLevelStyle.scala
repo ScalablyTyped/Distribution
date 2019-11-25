@@ -18,8 +18,8 @@ object LabelSettingsHigherLevelStyle {
   @scala.inline
   def apply(font: LabelSettingsHigherLevelStyleFont = null, horizontalAlignment: String = null): LabelSettingsHigherLevelStyle = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelSettingsHigherLevelStyle]
   }
 }

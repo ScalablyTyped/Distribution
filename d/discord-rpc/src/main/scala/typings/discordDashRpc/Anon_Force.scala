@@ -13,7 +13,7 @@ object Anon_Force {
   @scala.inline
   def apply(force: js.UndefOr[Boolean] = js.undefined, timeout: Int | Double = null): Anon_Force = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Force]
   }

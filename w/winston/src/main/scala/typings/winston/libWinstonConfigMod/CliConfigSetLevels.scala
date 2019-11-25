@@ -33,8 +33,8 @@ object CliConfigSetLevels {
     warn: Double,
     StringDictionary: StringDictionary[Double] = null
   ): CliConfigSetLevels = {
-    val __obj = js.Dynamic.literal(data = data, debug = debug, error = error, help = help, info = info, input = input, prompt = prompt, silly = silly, verbose = verbose, warn = warn)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any], silly = silly.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any], warn = warn.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[CliConfigSetLevels]
   }
 }

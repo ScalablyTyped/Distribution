@@ -29,11 +29,11 @@ object Anon_Layout {
   ): Anon_Layout = {
     val __obj = js.Dynamic.literal()
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectOnClick)) __obj.updateDynamic("selectOnClick")(selectOnClick)
+    if (!js.isUndefined(selectOnClick)) __obj.updateDynamic("selectOnClick")(selectOnClick.asInstanceOf[js.Any])
     if (selectableLayout != null) __obj.updateDynamic("selectableLayout")(selectableLayout.asInstanceOf[js.Any])
     if (separatorLayout != null) __obj.updateDynamic("separatorLayout")(separatorLayout.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Layout]
   }
 }

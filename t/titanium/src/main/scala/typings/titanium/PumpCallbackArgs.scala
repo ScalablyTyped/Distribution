@@ -66,14 +66,14 @@ object PumpCallbackArgs {
     totalBytesProcessed: Int | Double = null
   ): PumpCallbackArgs = {
     val __obj = js.Dynamic.literal()
-    if (buffer != null) __obj.updateDynamic("buffer")(buffer)
+    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
     if (bytesProcessed != null) __obj.updateDynamic("bytesProcessed")(bytesProcessed.asInstanceOf[js.Any])
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (errorDescription != null) __obj.updateDynamic("errorDescription")(errorDescription)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (errorDescription != null) __obj.updateDynamic("errorDescription")(errorDescription.asInstanceOf[js.Any])
     if (errorState != null) __obj.updateDynamic("errorState")(errorState.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     if (totalBytesProcessed != null) __obj.updateDynamic("totalBytesProcessed")(totalBytesProcessed.asInstanceOf[js.Any])
     __obj.asInstanceOf[PumpCallbackArgs]
   }

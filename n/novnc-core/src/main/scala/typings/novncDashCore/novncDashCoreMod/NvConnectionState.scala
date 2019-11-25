@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait NvConnectionState extends js.Object
 
+object NvConnectionState {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def connected: typings.novncDashCore.novncDashCoreStrings.connected = this.cast("connected")
+  @scala.inline
+  def connecting: typings.novncDashCore.novncDashCoreStrings.connecting = this.cast("connecting")
+  @scala.inline
+  def disconnected: typings.novncDashCore.novncDashCoreStrings.disconnected = this.cast("disconnected")
+  @scala.inline
+  def disconnecting: typings.novncDashCore.novncDashCoreStrings.disconnecting = this.cast("disconnecting")
+}
+

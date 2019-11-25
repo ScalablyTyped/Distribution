@@ -46,8 +46,8 @@ object _SendUsersMessageResponse {
     ]) = null
   ): _SendUsersMessageResponse = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
-    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId)
+    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId.asInstanceOf[js.Any])
+    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
     if (Result != null) __obj.updateDynamic("Result")(Result.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SendUsersMessageResponse]
   }

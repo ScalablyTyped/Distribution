@@ -11,7 +11,7 @@ trait Anon_Reloaded extends js.Object {
 object Anon_Reloaded {
   @scala.inline
   def apply(reloaded: Boolean): Anon_Reloaded = {
-    val __obj = js.Dynamic.literal(reloaded = reloaded)
+    val __obj = js.Dynamic.literal(reloaded = reloaded.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Reloaded]
   }

@@ -12,7 +12,7 @@ trait Anon_ObjectType extends js.Object {
 object Anon_ObjectType {
   @scala.inline
   def apply(objectType: GraphQLInputObjectType): Anon_ObjectType = {
-    val __obj = js.Dynamic.literal(objectType = objectType)
+    val __obj = js.Dynamic.literal(objectType = objectType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ObjectType]
   }

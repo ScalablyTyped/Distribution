@@ -13,7 +13,7 @@ trait Anon_Faces extends js.Object {
 object Anon_Faces {
   @scala.inline
   def apply(faces: js.Array[Face3], vertices: js.Array[_]): Anon_Faces = {
-    val __obj = js.Dynamic.literal(faces = faces, vertices = vertices)
+    val __obj = js.Dynamic.literal(faces = faces.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Faces]
   }

@@ -44,15 +44,15 @@ object StrictItemGroupProps {
     unstackable: js.UndefOr[Boolean] = js.undefined
   ): StrictItemGroupProps = {
     val __obj = js.Dynamic.literal()
-    if (as != null) __obj.updateDynamic("as")(as)
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(divided)) __obj.updateDynamic("divided")(divided)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (!js.isUndefined(link)) __obj.updateDynamic("link")(link)
+    if (!js.isUndefined(divided)) __obj.updateDynamic("divided")(divided.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (!js.isUndefined(link)) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
     if (relaxed != null) __obj.updateDynamic("relaxed")(relaxed.asInstanceOf[js.Any])
-    if (!js.isUndefined(unstackable)) __obj.updateDynamic("unstackable")(unstackable)
+    if (!js.isUndefined(unstackable)) __obj.updateDynamic("unstackable")(unstackable.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictItemGroupProps]
   }
 }

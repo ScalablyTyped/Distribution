@@ -14,7 +14,7 @@ trait StreamingMessage extends js.Object {
 object StreamingMessage {
   @scala.inline
   def apply(event: Anon_CreatedDate, sobject: Record[_]): StreamingMessage = {
-    val __obj = js.Dynamic.literal(event = event, sobject = sobject)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], sobject = sobject.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StreamingMessage]
   }

@@ -38,13 +38,13 @@ object JSZipGeneratorOptions {
     `type`: T = null
   ): JSZipGeneratorOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (compression != null) __obj.updateDynamic("compression")(compression)
-    if (compressionOptions != null) __obj.updateDynamic("compressionOptions")(compressionOptions)
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
+    if (compressionOptions != null) __obj.updateDynamic("compressionOptions")(compressionOptions.asInstanceOf[js.Any])
     if (encodeFileName != null) __obj.updateDynamic("encodeFileName")(js.Any.fromFunction1(encodeFileName))
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (!js.isUndefined(streamFiles)) __obj.updateDynamic("streamFiles")(streamFiles)
+    if (!js.isUndefined(streamFiles)) __obj.updateDynamic("streamFiles")(streamFiles.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSZipGeneratorOptions[T]]
   }

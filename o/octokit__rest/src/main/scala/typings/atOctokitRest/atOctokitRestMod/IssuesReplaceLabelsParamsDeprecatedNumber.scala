@@ -20,8 +20,8 @@ trait IssuesReplaceLabelsParamsDeprecatedNumber extends js.Object {
 object IssuesReplaceLabelsParamsDeprecatedNumber {
   @scala.inline
   def apply(number: Double, owner: String, repo: String, labels: js.Array[String] = null): IssuesReplaceLabelsParamsDeprecatedNumber = {
-    val __obj = js.Dynamic.literal(number = number, owner = owner, repo = repo)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
+    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuesReplaceLabelsParamsDeprecatedNumber]
   }
 }

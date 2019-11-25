@@ -45,8 +45,8 @@ object VerifyOptions {
     streaming: web | node | `false` = null
   ): VerifyOptions = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], publicKeys = publicKeys.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (signature != null) __obj.updateDynamic("signature")(signature)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
     if (streaming != null) __obj.updateDynamic("streaming")(streaming.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyOptions]
   }

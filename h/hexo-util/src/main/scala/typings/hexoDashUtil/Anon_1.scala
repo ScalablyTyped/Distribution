@@ -15,7 +15,7 @@ object Anon_1 {
   @scala.inline
   def apply(separator: String = null, transform: `1` | `2` = null): Anon_1 = {
     val __obj = js.Dynamic.literal()
-    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_1]
   }

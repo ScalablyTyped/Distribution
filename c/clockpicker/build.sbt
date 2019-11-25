@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "clockpicker"
-version := "0.0-dt-20190212Z-1506b2"
+version := "0.0-dt-20190212Z-e4be93"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

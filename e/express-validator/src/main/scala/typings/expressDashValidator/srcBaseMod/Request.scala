@@ -26,12 +26,12 @@ object Request {
     query: Record[String, _] = null
   ): Request = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (cookies != null) __obj.updateDynamic("cookies")(cookies)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (cookies != null) __obj.updateDynamic("cookies")(cookies.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request]
   }
 }

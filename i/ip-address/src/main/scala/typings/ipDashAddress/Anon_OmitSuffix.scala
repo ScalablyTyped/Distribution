@@ -11,7 +11,7 @@ trait Anon_OmitSuffix extends js.Object {
 object Anon_OmitSuffix {
   @scala.inline
   def apply(omitSuffix: Boolean): Anon_OmitSuffix = {
-    val __obj = js.Dynamic.literal(omitSuffix = omitSuffix)
+    val __obj = js.Dynamic.literal(omitSuffix = omitSuffix.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_OmitSuffix]
   }

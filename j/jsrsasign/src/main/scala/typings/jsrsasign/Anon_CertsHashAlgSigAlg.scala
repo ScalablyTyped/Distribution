@@ -24,7 +24,7 @@ object Anon_CertsHashAlgSigAlg {
     signerPrvKey: String,
     tstInfo: TSTInfo
   ): Anon_CertsHashAlgSigAlg = {
-    val __obj = js.Dynamic.literal(certs = certs, hashAlg = hashAlg, sigAlg = sigAlg, signerCert = signerCert, signerPrvKey = signerPrvKey, tstInfo = tstInfo)
+    val __obj = js.Dynamic.literal(certs = certs.asInstanceOf[js.Any], hashAlg = hashAlg.asInstanceOf[js.Any], sigAlg = sigAlg.asInstanceOf[js.Any], signerCert = signerCert.asInstanceOf[js.Any], signerPrvKey = signerPrvKey.asInstanceOf[js.Any], tstInfo = tstInfo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CertsHashAlgSigAlg]
   }

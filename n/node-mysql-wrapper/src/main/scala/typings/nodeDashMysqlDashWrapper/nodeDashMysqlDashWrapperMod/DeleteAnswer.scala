@@ -12,7 +12,7 @@ trait DeleteAnswer extends js.Object {
 object DeleteAnswer {
   @scala.inline
   def apply(affectedRows: Double, table: String): DeleteAnswer = {
-    val __obj = js.Dynamic.literal(affectedRows = affectedRows, table = table)
+    val __obj = js.Dynamic.literal(affectedRows = affectedRows.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteAnswer]
   }

@@ -47,7 +47,7 @@ object WorkItemQueryResult {
     workItemRelations: js.Array[WorkItemLink],
     workItems: js.Array[WorkItemReference]
   ): WorkItemQueryResult = {
-    val __obj = js.Dynamic.literal(asOf = asOf, columns = columns, queryResultType = queryResultType, queryType = queryType, sortColumns = sortColumns, workItemRelations = workItemRelations, workItems = workItems)
+    val __obj = js.Dynamic.literal(asOf = asOf.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any], queryResultType = queryResultType.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any], sortColumns = sortColumns.asInstanceOf[js.Any], workItemRelations = workItemRelations.asInstanceOf[js.Any], workItems = workItems.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkItemQueryResult]
   }

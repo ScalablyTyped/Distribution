@@ -34,17 +34,17 @@ object BubbleChartSpec {
     series: ChartData = null
   ): BubbleChartSpec = {
     val __obj = js.Dynamic.literal()
-    if (bubbleBorderColor != null) __obj.updateDynamic("bubbleBorderColor")(bubbleBorderColor)
-    if (bubbleLabels != null) __obj.updateDynamic("bubbleLabels")(bubbleLabels)
+    if (bubbleBorderColor != null) __obj.updateDynamic("bubbleBorderColor")(bubbleBorderColor.asInstanceOf[js.Any])
+    if (bubbleLabels != null) __obj.updateDynamic("bubbleLabels")(bubbleLabels.asInstanceOf[js.Any])
     if (bubbleMaxRadiusSize != null) __obj.updateDynamic("bubbleMaxRadiusSize")(bubbleMaxRadiusSize.asInstanceOf[js.Any])
     if (bubbleMinRadiusSize != null) __obj.updateDynamic("bubbleMinRadiusSize")(bubbleMinRadiusSize.asInstanceOf[js.Any])
     if (bubbleOpacity != null) __obj.updateDynamic("bubbleOpacity")(bubbleOpacity.asInstanceOf[js.Any])
-    if (bubbleSizes != null) __obj.updateDynamic("bubbleSizes")(bubbleSizes)
-    if (bubbleTextStyle != null) __obj.updateDynamic("bubbleTextStyle")(bubbleTextStyle)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (groupIds != null) __obj.updateDynamic("groupIds")(groupIds)
-    if (legendPosition != null) __obj.updateDynamic("legendPosition")(legendPosition)
-    if (series != null) __obj.updateDynamic("series")(series)
+    if (bubbleSizes != null) __obj.updateDynamic("bubbleSizes")(bubbleSizes.asInstanceOf[js.Any])
+    if (bubbleTextStyle != null) __obj.updateDynamic("bubbleTextStyle")(bubbleTextStyle.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (groupIds != null) __obj.updateDynamic("groupIds")(groupIds.asInstanceOf[js.Any])
+    if (legendPosition != null) __obj.updateDynamic("legendPosition")(legendPosition.asInstanceOf[js.Any])
+    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     __obj.asInstanceOf[BubbleChartSpec]
   }
 }

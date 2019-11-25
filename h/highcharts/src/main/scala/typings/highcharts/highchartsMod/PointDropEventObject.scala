@@ -52,10 +52,10 @@ object PointDropEventObject {
     newPoint: PointDragDropObject = null,
     newPointId: String = null
   ): PointDropEventObject = {
-    val __obj = js.Dynamic.literal(newPoints = newPoints, numNewPoints = numNewPoints, origin = origin, preventDefault = preventDefault, target = target)
-    __obj.updateDynamic("type")(`type`)
-    if (newPoint != null) __obj.updateDynamic("newPoint")(newPoint)
-    if (newPointId != null) __obj.updateDynamic("newPointId")(newPointId)
+    val __obj = js.Dynamic.literal(newPoints = newPoints.asInstanceOf[js.Any], numNewPoints = numNewPoints.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (newPoint != null) __obj.updateDynamic("newPoint")(newPoint.asInstanceOf[js.Any])
+    if (newPointId != null) __obj.updateDynamic("newPointId")(newPointId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointDropEventObject]
   }
 }

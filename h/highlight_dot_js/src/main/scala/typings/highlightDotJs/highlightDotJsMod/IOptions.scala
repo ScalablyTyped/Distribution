@@ -20,10 +20,10 @@ object IOptions {
     useBR: js.UndefOr[Boolean] = js.undefined
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (classPrefix != null) __obj.updateDynamic("classPrefix")(classPrefix)
-    if (languages != null) __obj.updateDynamic("languages")(languages)
-    if (tabReplace != null) __obj.updateDynamic("tabReplace")(tabReplace)
-    if (!js.isUndefined(useBR)) __obj.updateDynamic("useBR")(useBR)
+    if (classPrefix != null) __obj.updateDynamic("classPrefix")(classPrefix.asInstanceOf[js.Any])
+    if (languages != null) __obj.updateDynamic("languages")(languages.asInstanceOf[js.Any])
+    if (tabReplace != null) __obj.updateDynamic("tabReplace")(tabReplace.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBR)) __obj.updateDynamic("useBR")(useBR.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

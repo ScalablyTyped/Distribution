@@ -13,7 +13,7 @@ trait CustomIcons extends js.Object {
 object CustomIcons {
   @scala.inline
   def apply(categories: Record[CategoryName, js.Function0[Component[js.Object, js.Object, _]]]): CustomIcons = {
-    val __obj = js.Dynamic.literal(categories = categories)
+    val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CustomIcons]
   }

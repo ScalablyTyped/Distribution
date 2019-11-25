@@ -19,10 +19,10 @@ object SetCommitsOptions {
     commit: String = null,
     previousCommit: String = null
   ): SetCommitsOptions = {
-    val __obj = js.Dynamic.literal(repo = repo)
-    if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto)
-    if (commit != null) __obj.updateDynamic("commit")(commit)
-    if (previousCommit != null) __obj.updateDynamic("previousCommit")(previousCommit)
+    val __obj = js.Dynamic.literal(repo = repo.asInstanceOf[js.Any])
+    if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto.asInstanceOf[js.Any])
+    if (commit != null) __obj.updateDynamic("commit")(commit.asInstanceOf[js.Any])
+    if (previousCommit != null) __obj.updateDynamic("previousCommit")(previousCommit.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetCommitsOptions]
   }
 }

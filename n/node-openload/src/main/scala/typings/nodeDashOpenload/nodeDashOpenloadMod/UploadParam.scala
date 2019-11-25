@@ -21,9 +21,9 @@ object UploadParam {
     folder: String = null
   ): UploadParam = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (folder != null) __obj.updateDynamic("folder")(folder)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadParam]
   }
 }

@@ -14,7 +14,7 @@ trait Anon_Items extends js.Object {
 object Anon_Items {
   @scala.inline
   def apply(items: js.Array[AddressItem], total: Double, userquery: js.Any): Anon_Items = {
-    val __obj = js.Dynamic.literal(items = items, total = total, userquery = userquery)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], userquery = userquery.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Items]
   }

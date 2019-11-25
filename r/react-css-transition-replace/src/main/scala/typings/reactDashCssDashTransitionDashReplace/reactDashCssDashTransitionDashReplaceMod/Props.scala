@@ -17,8 +17,8 @@ object Props {
     overflowHidden: js.UndefOr[Boolean] = js.undefined
   ): Props = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(changeWidth)) __obj.updateDynamic("changeWidth")(changeWidth)
-    if (!js.isUndefined(overflowHidden)) __obj.updateDynamic("overflowHidden")(overflowHidden)
+    if (!js.isUndefined(changeWidth)) __obj.updateDynamic("changeWidth")(changeWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(overflowHidden)) __obj.updateDynamic("overflowHidden")(overflowHidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

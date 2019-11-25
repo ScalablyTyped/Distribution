@@ -13,8 +13,8 @@ object StripOkuriganaOptions {
   @scala.inline
   def apply(leading: js.UndefOr[Boolean] = js.undefined, matchKanji: String = null): StripOkuriganaOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(leading)) __obj.updateDynamic("leading")(leading)
-    if (matchKanji != null) __obj.updateDynamic("matchKanji")(matchKanji)
+    if (!js.isUndefined(leading)) __obj.updateDynamic("leading")(leading.asInstanceOf[js.Any])
+    if (matchKanji != null) __obj.updateDynamic("matchKanji")(matchKanji.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripOkuriganaOptions]
   }
 }

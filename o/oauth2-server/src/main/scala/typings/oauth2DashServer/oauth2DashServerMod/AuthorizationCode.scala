@@ -30,8 +30,8 @@ object AuthorizationCode {
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     scope: String | js.Array[String] = null
   ): AuthorizationCode = {
-    val __obj = js.Dynamic.literal(authorizationCode = authorizationCode, client = client, expiresAt = expiresAt, redirectUri = redirectUri, user = user)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(authorizationCode = authorizationCode.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], expiresAt = expiresAt.asInstanceOf[js.Any], redirectUri = redirectUri.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizationCode]
   }

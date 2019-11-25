@@ -19,8 +19,8 @@ object IonImg {
   @scala.inline
   def apply(alt: String = null, src: String = null): IonImg = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (src != null) __obj.updateDynamic("src")(src)
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonImg]
   }
 }

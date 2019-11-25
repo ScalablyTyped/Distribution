@@ -24,10 +24,10 @@ object WebBuilderConfig {
   ): WebBuilderConfig = {
     val __obj = js.Dynamic.literal()
     if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
-    if (dest != null) __obj.updateDynamic("dest")(dest)
-    if (ext != null) __obj.updateDynamic("ext")(ext)
+    if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
+    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (urls != null) __obj.updateDynamic("urls")(urls)
+    if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebBuilderConfig]
   }
 }

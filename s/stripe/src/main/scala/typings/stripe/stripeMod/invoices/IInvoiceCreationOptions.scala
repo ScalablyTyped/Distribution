@@ -100,22 +100,22 @@ object IInvoiceCreationOptions {
     subscription: String = null,
     tax_percent: Int | Double = null
   ): IInvoiceCreationOptions = {
-    val __obj = js.Dynamic.literal(customer = customer)
+    val __obj = js.Dynamic.literal(customer = customer.asInstanceOf[js.Any])
     if (application_fee != null) __obj.updateDynamic("application_fee")(application_fee.asInstanceOf[js.Any])
-    if (!js.isUndefined(auto_advance)) __obj.updateDynamic("auto_advance")(auto_advance)
+    if (!js.isUndefined(auto_advance)) __obj.updateDynamic("auto_advance")(auto_advance.asInstanceOf[js.Any])
     if (billing != null) __obj.updateDynamic("billing")(billing.asInstanceOf[js.Any])
     if (collection_method != null) __obj.updateDynamic("collection_method")(collection_method.asInstanceOf[js.Any])
-    if (custom_fields != null) __obj.updateDynamic("custom_fields")(custom_fields)
+    if (custom_fields != null) __obj.updateDynamic("custom_fields")(custom_fields.asInstanceOf[js.Any])
     if (days_until_due != null) __obj.updateDynamic("days_until_due")(days_until_due.asInstanceOf[js.Any])
-    if (default_source != null) __obj.updateDynamic("default_source")(default_source)
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (default_source != null) __obj.updateDynamic("default_source")(default_source.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (due_date != null) __obj.updateDynamic("due_date")(due_date.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (footer != null) __obj.updateDynamic("footer")(footer)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription)
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor.asInstanceOf[js.Any])
+    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     if (tax_percent != null) __obj.updateDynamic("tax_percent")(tax_percent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInvoiceCreationOptions]
   }

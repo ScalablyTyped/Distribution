@@ -15,7 +15,7 @@ trait FilterCriteria extends js.Object {
 object FilterCriteria {
   @scala.inline
   def apply(filterType: Double, value: String): FilterCriteria = {
-    val __obj = js.Dynamic.literal(filterType = filterType, value = value)
+    val __obj = js.Dynamic.literal(filterType = filterType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FilterCriteria]
   }

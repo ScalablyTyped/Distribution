@@ -21,8 +21,8 @@ object TrackProps {
     srcLang: String,
     default: js.UndefOr[Boolean] = js.undefined
   ): TrackProps = {
-    val __obj = js.Dynamic.literal(kind = kind, label = label, src = src, srcLang = srcLang)
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], srcLang = srcLang.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackProps]
   }
 }

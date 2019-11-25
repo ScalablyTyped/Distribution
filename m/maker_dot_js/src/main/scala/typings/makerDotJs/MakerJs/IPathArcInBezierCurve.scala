@@ -22,9 +22,9 @@ object IPathArcInBezierCurve {
     `type`: String,
     layer: String = null
   ): IPathArcInBezierCurve = {
-    val __obj = js.Dynamic.literal(bezierData = bezierData, endAngle = endAngle, origin = origin, radius = radius, startAngle = startAngle)
-    __obj.updateDynamic("type")(`type`)
-    if (layer != null) __obj.updateDynamic("layer")(layer)
+    val __obj = js.Dynamic.literal(bezierData = bezierData.asInstanceOf[js.Any], endAngle = endAngle.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPathArcInBezierCurve]
   }
 }

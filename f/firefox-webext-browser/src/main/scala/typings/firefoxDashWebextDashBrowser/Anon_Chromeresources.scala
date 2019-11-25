@@ -14,7 +14,7 @@ trait Anon_Chromeresources extends js.Object {
 object Anon_Chromeresources {
   @scala.inline
   def apply(chrome_resources: StringDictionary[ExtensionURL | StringDictionary[ExtensionURL]], version: String): Anon_Chromeresources = {
-    val __obj = js.Dynamic.literal(chrome_resources = chrome_resources, version = version)
+    val __obj = js.Dynamic.literal(chrome_resources = chrome_resources.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Chromeresources]
   }

@@ -21,10 +21,10 @@ object ModelOptions {
     tables: js.Array[ModelTables | String] = null
   ): ModelOptions = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (keyspace != null) __obj.updateDynamic("keyspace")(keyspace)
-    if (mappings != null) __obj.updateDynamic("mappings")(mappings)
-    if (tables != null) __obj.updateDynamic("tables")(tables)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (keyspace != null) __obj.updateDynamic("keyspace")(keyspace.asInstanceOf[js.Any])
+    if (mappings != null) __obj.updateDynamic("mappings")(mappings.asInstanceOf[js.Any])
+    if (tables != null) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelOptions]
   }
 }

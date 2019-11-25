@@ -26,9 +26,9 @@ object OAuthCallbackChecks {
   @scala.inline
   def apply(code_verifier: String = null, response_type: String = null, state: String = null): OAuthCallbackChecks = {
     val __obj = js.Dynamic.literal()
-    if (code_verifier != null) __obj.updateDynamic("code_verifier")(code_verifier)
-    if (response_type != null) __obj.updateDynamic("response_type")(response_type)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (code_verifier != null) __obj.updateDynamic("code_verifier")(code_verifier.asInstanceOf[js.Any])
+    if (response_type != null) __obj.updateDynamic("response_type")(response_type.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuthCallbackChecks]
   }
 }

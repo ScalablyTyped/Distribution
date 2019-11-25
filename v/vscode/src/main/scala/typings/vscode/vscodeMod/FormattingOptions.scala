@@ -30,8 +30,8 @@ object FormattingOptions {
   		 */
   /* key */ StringDictionary[Boolean | Double | String] = null
   ): FormattingOptions = {
-    val __obj = js.Dynamic.literal(insertSpaces = insertSpaces, tabSize = tabSize)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(insertSpaces = insertSpaces.asInstanceOf[js.Any], tabSize = tabSize.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[FormattingOptions]
   }
 }

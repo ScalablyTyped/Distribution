@@ -35,13 +35,13 @@ object Anon_CanvasSize {
     val __obj = js.Dynamic.literal()
     if (canvasSize != null) __obj.updateDynamic("canvasSize")(canvasSize.asInstanceOf[js.Any])
     if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
-    if (glowColor != null) __obj.updateDynamic("glowColor")(glowColor)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
+    if (glowColor != null) __obj.updateDynamic("glowColor")(glowColor.asInstanceOf[js.Any])
     if (glowWidth != null) __obj.updateDynamic("glowWidth")(glowWidth.asInstanceOf[js.Any])
     if (tileHeight != null) __obj.updateDynamic("tileHeight")(tileHeight.asInstanceOf[js.Any])
     if (tileWidth != null) __obj.updateDynamic("tileWidth")(tileWidth.asInstanceOf[js.Any])
-    if (tilingScheme != null) __obj.updateDynamic("tilingScheme")(tilingScheme)
+    if (tilingScheme != null) __obj.updateDynamic("tilingScheme")(tilingScheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CanvasSize]
   }
 }

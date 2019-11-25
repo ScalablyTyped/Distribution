@@ -15,8 +15,8 @@ object FreeBusyError {
   @scala.inline
   def apply(message: String = null, responseCode: String = null): FreeBusyError = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (responseCode != null) __obj.updateDynamic("responseCode")(responseCode)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (responseCode != null) __obj.updateDynamic("responseCode")(responseCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[FreeBusyError]
   }
 }

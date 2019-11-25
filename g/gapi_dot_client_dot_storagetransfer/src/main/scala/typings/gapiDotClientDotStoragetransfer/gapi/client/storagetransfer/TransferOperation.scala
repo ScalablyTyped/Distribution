@@ -45,15 +45,15 @@ object TransferOperation {
     transferSpec: TransferSpec = null
   ): TransferOperation = {
     val __obj = js.Dynamic.literal()
-    if (counters != null) __obj.updateDynamic("counters")(counters)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (errorBreakdowns != null) __obj.updateDynamic("errorBreakdowns")(errorBreakdowns)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (transferJobName != null) __obj.updateDynamic("transferJobName")(transferJobName)
-    if (transferSpec != null) __obj.updateDynamic("transferSpec")(transferSpec)
+    if (counters != null) __obj.updateDynamic("counters")(counters.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (errorBreakdowns != null) __obj.updateDynamic("errorBreakdowns")(errorBreakdowns.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (transferJobName != null) __obj.updateDynamic("transferJobName")(transferJobName.asInstanceOf[js.Any])
+    if (transferSpec != null) __obj.updateDynamic("transferSpec")(transferSpec.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferOperation]
   }
 }

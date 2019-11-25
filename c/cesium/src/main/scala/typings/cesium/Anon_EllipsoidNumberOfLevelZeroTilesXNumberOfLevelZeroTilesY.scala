@@ -24,11 +24,11 @@ object Anon_EllipsoidNumberOfLevelZeroTilesXNumberOfLevelZeroTilesY {
     rectangleSouthwestInMeters: Cartesian2 = null
   ): Anon_EllipsoidNumberOfLevelZeroTilesXNumberOfLevelZeroTilesY = {
     val __obj = js.Dynamic.literal()
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
     if (numberOfLevelZeroTilesX != null) __obj.updateDynamic("numberOfLevelZeroTilesX")(numberOfLevelZeroTilesX.asInstanceOf[js.Any])
     if (numberOfLevelZeroTilesY != null) __obj.updateDynamic("numberOfLevelZeroTilesY")(numberOfLevelZeroTilesY.asInstanceOf[js.Any])
-    if (rectangleNortheastInMeters != null) __obj.updateDynamic("rectangleNortheastInMeters")(rectangleNortheastInMeters)
-    if (rectangleSouthwestInMeters != null) __obj.updateDynamic("rectangleSouthwestInMeters")(rectangleSouthwestInMeters)
+    if (rectangleNortheastInMeters != null) __obj.updateDynamic("rectangleNortheastInMeters")(rectangleNortheastInMeters.asInstanceOf[js.Any])
+    if (rectangleSouthwestInMeters != null) __obj.updateDynamic("rectangleSouthwestInMeters")(rectangleSouthwestInMeters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EllipsoidNumberOfLevelZeroTilesXNumberOfLevelZeroTilesY]
   }
 }

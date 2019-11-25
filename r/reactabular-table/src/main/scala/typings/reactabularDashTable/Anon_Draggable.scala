@@ -27,11 +27,11 @@ object Anon_Draggable {
     transforms: js.Array[ColumnTransform] = null
   ): Anon_Draggable = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
-    if (formatters != null) __obj.updateDynamic("formatters")(formatters)
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
-    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
-    if (transforms != null) __obj.updateDynamic("transforms")(transforms)
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (formatters != null) __obj.updateDynamic("formatters")(formatters.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
+    if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Draggable]
   }
 }

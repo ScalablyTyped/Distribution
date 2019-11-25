@@ -12,7 +12,7 @@ object Anon_Mac {
   @scala.inline
   def apply(mac: js.UndefOr[Boolean] = js.undefined): Anon_Mac = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(mac)) __obj.updateDynamic("mac")(mac)
+    if (!js.isUndefined(mac)) __obj.updateDynamic("mac")(mac.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Mac]
   }
 }

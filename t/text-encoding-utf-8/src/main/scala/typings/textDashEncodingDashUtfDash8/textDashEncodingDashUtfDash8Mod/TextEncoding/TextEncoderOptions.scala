@@ -12,7 +12,7 @@ object TextEncoderOptions {
   @scala.inline
   def apply(NONSTANDARD_allowLegacyEncoding: js.UndefOr[Boolean] = js.undefined): TextEncoderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(NONSTANDARD_allowLegacyEncoding)) __obj.updateDynamic("NONSTANDARD_allowLegacyEncoding")(NONSTANDARD_allowLegacyEncoding)
+    if (!js.isUndefined(NONSTANDARD_allowLegacyEncoding)) __obj.updateDynamic("NONSTANDARD_allowLegacyEncoding")(NONSTANDARD_allowLegacyEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextEncoderOptions]
   }
 }

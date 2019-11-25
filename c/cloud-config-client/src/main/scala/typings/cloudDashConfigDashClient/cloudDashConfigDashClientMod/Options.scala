@@ -32,15 +32,15 @@ object Options {
     profiles: String | js.Array[String] = null,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
-    if (application != null) __obj.updateDynamic("application")(application)
-    if (auth != null) __obj.updateDynamic("auth")(auth)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (profiles != null) __obj.updateDynamic("profiles")(profiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

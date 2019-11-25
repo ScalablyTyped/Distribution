@@ -13,7 +13,7 @@ trait PropertyName extends js.Object {
 object PropertyName {
   @scala.inline
   def apply(displayName: String, symbolName: __String): PropertyName = {
-    val __obj = js.Dynamic.literal(displayName = displayName, symbolName = symbolName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], symbolName = symbolName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PropertyName]
   }

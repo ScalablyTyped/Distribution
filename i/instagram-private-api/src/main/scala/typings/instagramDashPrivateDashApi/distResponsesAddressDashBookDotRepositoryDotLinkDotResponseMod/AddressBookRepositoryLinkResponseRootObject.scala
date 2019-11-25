@@ -13,7 +13,7 @@ trait AddressBookRepositoryLinkResponseRootObject extends js.Object {
 object AddressBookRepositoryLinkResponseRootObject {
   @scala.inline
   def apply(status: String, users: js.Array[AddressBookRepositoryLinkResponseUsersItem], warning: String): AddressBookRepositoryLinkResponseRootObject = {
-    val __obj = js.Dynamic.literal(status = status, users = users, warning = warning)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AddressBookRepositoryLinkResponseRootObject]
   }

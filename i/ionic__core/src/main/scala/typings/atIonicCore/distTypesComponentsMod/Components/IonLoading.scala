@@ -2,9 +2,6 @@ package typings.atIonicCore.distTypesComponentsMod.Components
 
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
-import typings.atIonicCore.distTypesComponentsSpinnerSpinnerDashConfigsMod.SpinnerTypes
-import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
-import typings.atIonicCore.distTypesUtilsOverlaysDashInterfaceMod.OverlayEventDetail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +27,9 @@ trait IonLoading extends js.Object {
   /**
     * Animation to use when the loading indicator is presented.
     */
-  var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var enterAnimation: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
+  ] = js.native
   /**
     * If `true`, the keyboard will be automatically dismissed when the overlay is presented.
     */
@@ -38,7 +37,9 @@ trait IonLoading extends js.Object {
   /**
     * Animation to use when the loading indicator is dismissed.
     */
-  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var leaveAnimation: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
+  ] = js.native
   /**
     * Optional text content to display in the loading indicator.
     */
@@ -55,7 +56,9 @@ trait IonLoading extends js.Object {
   /**
     * The name of the spinner to display.
     */
-  var spinner: js.UndefOr[SpinnerTypes | Null] = js.native
+  var spinner: js.UndefOr[
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SpinnerTypes */ js.Any) | Null
+  ] = js.native
   /**
     * If `true`, the loading indicator will be translucent. Only applies when the mode is `"ios"` and the device supports [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
     */
@@ -71,11 +74,15 @@ trait IonLoading extends js.Object {
   /**
     * Returns a promise that resolves when the loading did dismiss.
     */
-  def onDidDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
+  def onDidDismiss(): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail<any> */ _
+  ] = js.native
   /**
     * Returns a promise that resolves when the loading will dismiss.
     */
-  def onWillDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
+  def onWillDismiss(): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail<any> */ _
+  ] = js.native
   /**
     * Present the loading overlay after it has been created.
     */

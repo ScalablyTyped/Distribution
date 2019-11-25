@@ -14,8 +14,8 @@ object Anon_Attachment {
   @scala.inline
   def apply(`type`: String, StringDictionary: /* attachment */ StringDictionary[js.Any] = null): Anon_Attachment = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Attachment]
   }
 }

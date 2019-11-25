@@ -13,7 +13,7 @@ trait OfflineAudioContextOptions extends js.Object {
 object OfflineAudioContextOptions {
   @scala.inline
   def apply(length: Double, sampleRate: Double, numberOfChannels: Int | Double = null): OfflineAudioContextOptions = {
-    val __obj = js.Dynamic.literal(length = length, sampleRate = sampleRate)
+    val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], sampleRate = sampleRate.asInstanceOf[js.Any])
     if (numberOfChannels != null) __obj.updateDynamic("numberOfChannels")(numberOfChannels.asInstanceOf[js.Any])
     __obj.asInstanceOf[OfflineAudioContextOptions]
   }

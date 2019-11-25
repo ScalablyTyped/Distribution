@@ -14,8 +14,8 @@ trait State extends js.Object {
 object State {
   @scala.inline
   def apply(name: String, params: Params, path: String, meta: StateMeta = null): State = {
-    val __obj = js.Dynamic.literal(name = name, params = params, path = path)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
 }

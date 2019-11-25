@@ -57,8 +57,8 @@ object SAMLAuthProviderConfig {
     x509Certificates: js.Array[String],
     callbackURL: String = null
   ): SAMLAuthProviderConfig = {
-    val __obj = js.Dynamic.literal(displayName = displayName, enabled = enabled, idpEntityId = idpEntityId, providerId = providerId, rpEntityId = rpEntityId, ssoURL = ssoURL, x509Certificates = x509Certificates)
-    if (callbackURL != null) __obj.updateDynamic("callbackURL")(callbackURL)
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], idpEntityId = idpEntityId.asInstanceOf[js.Any], providerId = providerId.asInstanceOf[js.Any], rpEntityId = rpEntityId.asInstanceOf[js.Any], ssoURL = ssoURL.asInstanceOf[js.Any], x509Certificates = x509Certificates.asInstanceOf[js.Any])
+    if (callbackURL != null) __obj.updateDynamic("callbackURL")(callbackURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[SAMLAuthProviderConfig]
   }
 }

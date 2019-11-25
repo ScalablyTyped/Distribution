@@ -21,7 +21,7 @@ object Anon_NoScroll {
     tabId: Int | Double = null
   ): Anon_NoScroll = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(noScroll)) __obj.updateDynamic("noScroll")(noScroll)
+    if (!js.isUndefined(noScroll)) __obj.updateDynamic("noScroll")(noScroll.asInstanceOf[js.Any])
     if (rangeIndex != null) __obj.updateDynamic("rangeIndex")(rangeIndex.asInstanceOf[js.Any])
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NoScroll]

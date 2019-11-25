@@ -24,12 +24,12 @@ object AnchorSettings {
     removeDoneStepOnNavigateBack: js.UndefOr[Boolean] = js.undefined
   ): AnchorSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(anchorClickable)) __obj.updateDynamic("anchorClickable")(anchorClickable)
-    if (!js.isUndefined(enableAllAnchors)) __obj.updateDynamic("enableAllAnchors")(enableAllAnchors)
-    if (!js.isUndefined(enableAnchorOnDoneStep)) __obj.updateDynamic("enableAnchorOnDoneStep")(enableAnchorOnDoneStep)
-    if (!js.isUndefined(markAllPreviousStepsAsDone)) __obj.updateDynamic("markAllPreviousStepsAsDone")(markAllPreviousStepsAsDone)
-    if (!js.isUndefined(markDoneStep)) __obj.updateDynamic("markDoneStep")(markDoneStep)
-    if (!js.isUndefined(removeDoneStepOnNavigateBack)) __obj.updateDynamic("removeDoneStepOnNavigateBack")(removeDoneStepOnNavigateBack)
+    if (!js.isUndefined(anchorClickable)) __obj.updateDynamic("anchorClickable")(anchorClickable.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAllAnchors)) __obj.updateDynamic("enableAllAnchors")(enableAllAnchors.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAnchorOnDoneStep)) __obj.updateDynamic("enableAnchorOnDoneStep")(enableAnchorOnDoneStep.asInstanceOf[js.Any])
+    if (!js.isUndefined(markAllPreviousStepsAsDone)) __obj.updateDynamic("markAllPreviousStepsAsDone")(markAllPreviousStepsAsDone.asInstanceOf[js.Any])
+    if (!js.isUndefined(markDoneStep)) __obj.updateDynamic("markDoneStep")(markDoneStep.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeDoneStepOnNavigateBack)) __obj.updateDynamic("removeDoneStepOnNavigateBack")(removeDoneStepOnNavigateBack.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnchorSettings]
   }
 }

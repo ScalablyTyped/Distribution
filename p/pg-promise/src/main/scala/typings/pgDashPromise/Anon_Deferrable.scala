@@ -19,9 +19,9 @@ object Anon_Deferrable {
     tiLevel: isolationLevel = null
   ): Anon_Deferrable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deferrable)) __obj.updateDynamic("deferrable")(deferrable)
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (tiLevel != null) __obj.updateDynamic("tiLevel")(tiLevel)
+    if (!js.isUndefined(deferrable)) __obj.updateDynamic("deferrable")(deferrable.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (tiLevel != null) __obj.updateDynamic("tiLevel")(tiLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Deferrable]
   }
 }

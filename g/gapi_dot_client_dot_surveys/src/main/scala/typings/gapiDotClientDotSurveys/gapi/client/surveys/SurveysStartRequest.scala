@@ -13,7 +13,7 @@ object SurveysStartRequest {
   @scala.inline
   def apply(maxCostPerResponseNanos: String = null): SurveysStartRequest = {
     val __obj = js.Dynamic.literal()
-    if (maxCostPerResponseNanos != null) __obj.updateDynamic("maxCostPerResponseNanos")(maxCostPerResponseNanos)
+    if (maxCostPerResponseNanos != null) __obj.updateDynamic("maxCostPerResponseNanos")(maxCostPerResponseNanos.asInstanceOf[js.Any])
     __obj.asInstanceOf[SurveysStartRequest]
   }
 }

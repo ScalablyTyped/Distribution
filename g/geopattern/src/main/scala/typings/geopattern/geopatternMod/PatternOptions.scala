@@ -29,9 +29,9 @@ object PatternOptions {
   @scala.inline
   def apply(baseColor: String = null, color: String = null, generator: GeneratorType = null): PatternOptions = {
     val __obj = js.Dynamic.literal()
-    if (baseColor != null) __obj.updateDynamic("baseColor")(baseColor)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (generator != null) __obj.updateDynamic("generator")(generator)
+    if (baseColor != null) __obj.updateDynamic("baseColor")(baseColor.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (generator != null) __obj.updateDynamic("generator")(generator.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatternOptions]
   }
 }

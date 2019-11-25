@@ -22,7 +22,7 @@ trait IonFabList extends js.Object {
 object IonFabList {
   @scala.inline
   def apply(activated: Boolean, side: start | end | top | bottom): IonFabList = {
-    val __obj = js.Dynamic.literal(activated = activated, side = side.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(activated = activated.asInstanceOf[js.Any], side = side.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IonFabList]
   }

@@ -15,8 +15,8 @@ trait Anon_ItemKey[K]
 object Anon_ItemKey {
   @scala.inline
   def apply[K](item: Element, key: K, StringDictionary: /* propName */ StringDictionary[js.Any] = null): Anon_ItemKey[K] = {
-    val __obj = js.Dynamic.literal(item = item, key = key.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_ItemKey[K]]
   }
 }

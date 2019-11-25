@@ -39,9 +39,9 @@ object IgWidget {
     regional: String | js.Object = null
   ): IgWidget = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgWidget]
   }

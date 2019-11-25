@@ -12,8 +12,8 @@ trait Anon_Argv extends js.Object {
 object Anon_Argv {
   @scala.inline
   def apply(argv: js.Array[String], command: String = null): Anon_Argv = {
-    val __obj = js.Dynamic.literal(argv = argv)
-    if (command != null) __obj.updateDynamic("command")(command)
+    val __obj = js.Dynamic.literal(argv = argv.asInstanceOf[js.Any])
+    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Argv]
   }
 }

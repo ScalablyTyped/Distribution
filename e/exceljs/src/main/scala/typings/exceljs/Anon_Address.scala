@@ -17,7 +17,7 @@ trait Anon_Address extends js.Object {
 object Anon_Address {
   @scala.inline
   def apply(address: Address, col: Column, row: Row, sheetName: String): Anon_Address = {
-    val __obj = js.Dynamic.literal(address = address, col = col, row = row, sheetName = sheetName)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], sheetName = sheetName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Address]
   }

@@ -27,8 +27,8 @@ object SearchReposResponseItemsItemOwner {
     `type`: String,
     url: String
   ): SearchReposResponseItemsItemOwner = {
-    val __obj = js.Dynamic.literal(avatar_url = avatar_url, gravatar_id = gravatar_id, id = id, login = login, node_id = node_id, received_events_url = received_events_url, url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(avatar_url = avatar_url.asInstanceOf[js.Any], gravatar_id = gravatar_id.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], login = login.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], received_events_url = received_events_url.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchReposResponseItemsItemOwner]
   }
 }

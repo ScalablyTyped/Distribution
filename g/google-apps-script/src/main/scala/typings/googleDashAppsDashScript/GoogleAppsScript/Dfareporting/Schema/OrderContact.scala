@@ -22,11 +22,11 @@ object OrderContact {
     signatureUserProfileId: String = null
   ): OrderContact = {
     val __obj = js.Dynamic.literal()
-    if (contactInfo != null) __obj.updateDynamic("contactInfo")(contactInfo)
-    if (contactName != null) __obj.updateDynamic("contactName")(contactName)
-    if (contactTitle != null) __obj.updateDynamic("contactTitle")(contactTitle)
-    if (contactType != null) __obj.updateDynamic("contactType")(contactType)
-    if (signatureUserProfileId != null) __obj.updateDynamic("signatureUserProfileId")(signatureUserProfileId)
+    if (contactInfo != null) __obj.updateDynamic("contactInfo")(contactInfo.asInstanceOf[js.Any])
+    if (contactName != null) __obj.updateDynamic("contactName")(contactName.asInstanceOf[js.Any])
+    if (contactTitle != null) __obj.updateDynamic("contactTitle")(contactTitle.asInstanceOf[js.Any])
+    if (contactType != null) __obj.updateDynamic("contactType")(contactType.asInstanceOf[js.Any])
+    if (signatureUserProfileId != null) __obj.updateDynamic("signatureUserProfileId")(signatureUserProfileId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderContact]
   }
 }

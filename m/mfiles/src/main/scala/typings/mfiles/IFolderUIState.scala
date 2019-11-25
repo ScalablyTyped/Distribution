@@ -29,7 +29,7 @@ object IFolderUIState {
     ShowBottomPaneBar: Boolean,
     ShowRightPaneBar: Boolean
   ): IFolderUIState = {
-    val __obj = js.Dynamic.literal(BottomPaneBarMinimized = BottomPaneBarMinimized, HitHighlightingEnabled = HitHighlightingEnabled, ListingUIState = ListingUIState, MetadataEditorInRightPane = MetadataEditorInRightPane, RelativeBottomPaneHeight = RelativeBottomPaneHeight, RelativeRightPaneWidth = RelativeRightPaneWidth, RightPaneBarMinimized = RightPaneBarMinimized, ShowBottomPaneBar = ShowBottomPaneBar, ShowRightPaneBar = ShowRightPaneBar)
+    val __obj = js.Dynamic.literal(BottomPaneBarMinimized = BottomPaneBarMinimized.asInstanceOf[js.Any], HitHighlightingEnabled = HitHighlightingEnabled.asInstanceOf[js.Any], ListingUIState = ListingUIState.asInstanceOf[js.Any], MetadataEditorInRightPane = MetadataEditorInRightPane.asInstanceOf[js.Any], RelativeBottomPaneHeight = RelativeBottomPaneHeight.asInstanceOf[js.Any], RelativeRightPaneWidth = RelativeRightPaneWidth.asInstanceOf[js.Any], RightPaneBarMinimized = RightPaneBarMinimized.asInstanceOf[js.Any], ShowBottomPaneBar = ShowBottomPaneBar.asInstanceOf[js.Any], ShowRightPaneBar = ShowRightPaneBar.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IFolderUIState]
   }

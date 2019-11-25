@@ -27,7 +27,7 @@ object SourceProviderAttributes {
     supportedCapabilities: StringDictionary[Boolean],
     supportedTriggers: js.Array[SupportedTrigger]
   ): SourceProviderAttributes = {
-    val __obj = js.Dynamic.literal(name = name, supportedCapabilities = supportedCapabilities, supportedTriggers = supportedTriggers)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], supportedCapabilities = supportedCapabilities.asInstanceOf[js.Any], supportedTriggers = supportedTriggers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SourceProviderAttributes]
   }

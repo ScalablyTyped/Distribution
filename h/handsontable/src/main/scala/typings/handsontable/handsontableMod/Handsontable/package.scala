@@ -8,7 +8,7 @@ package object Handsontable {
   import org.scalablytyped.runtime.StringDictionary
   import typings.handsontable.handsontableMod.Handsontable.Hooks.Events
 
-  type Bucket = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Bucket = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof handsontable.handsontable.Handsontable.Hooks.Events ]: std.Array<handsontable.handsontable.Handsontable.Hooks.Events[P]>}
     */ typings.handsontable.handsontableStrings.Bucket with Events
   /**

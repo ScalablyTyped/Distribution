@@ -21,8 +21,8 @@ object AwsAccessKey {
   @scala.inline
   def apply(accessKeyId: String = null, secretAccessKey: String = null): AwsAccessKey = {
     val __obj = js.Dynamic.literal()
-    if (accessKeyId != null) __obj.updateDynamic("accessKeyId")(accessKeyId)
-    if (secretAccessKey != null) __obj.updateDynamic("secretAccessKey")(secretAccessKey)
+    if (accessKeyId != null) __obj.updateDynamic("accessKeyId")(accessKeyId.asInstanceOf[js.Any])
+    if (secretAccessKey != null) __obj.updateDynamic("secretAccessKey")(secretAccessKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsAccessKey]
   }
 }

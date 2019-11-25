@@ -14,7 +14,7 @@ trait SubState extends js.Object {
 object SubState {
   @scala.inline
   def apply(storiesConfigured: Boolean, storiesHash: StoriesHash, storyId: StoryId, viewMode: ViewMode = null): SubState = {
-    val __obj = js.Dynamic.literal(storiesConfigured = storiesConfigured, storiesHash = storiesHash, storyId = storyId)
+    val __obj = js.Dynamic.literal(storiesConfigured = storiesConfigured.asInstanceOf[js.Any], storiesHash = storiesHash.asInstanceOf[js.Any], storyId = storyId.asInstanceOf[js.Any])
     if (viewMode != null) __obj.updateDynamic("viewMode")(viewMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubState]
   }

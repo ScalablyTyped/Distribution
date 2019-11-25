@@ -16,7 +16,7 @@ object AllocateIdsRequest {
   @scala.inline
   def apply(keys: js.Array[Key] = null): AllocateIdsRequest = {
     val __obj = js.Dynamic.literal()
-    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllocateIdsRequest]
   }
 }

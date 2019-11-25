@@ -40,14 +40,14 @@ object IChoiceGroupOptionStyleProps {
     imageIsLarge: js.UndefOr[Boolean] = js.undefined,
     imageSize: Anon_HeightWidthNumber = null
   ): IChoiceGroupOptionStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused)
-    if (!js.isUndefined(hasIcon)) __obj.updateDynamic("hasIcon")(hasIcon)
-    if (!js.isUndefined(hasImage)) __obj.updateDynamic("hasImage")(hasImage)
-    if (!js.isUndefined(imageIsLarge)) __obj.updateDynamic("imageIsLarge")(imageIsLarge)
-    if (imageSize != null) __obj.updateDynamic("imageSize")(imageSize)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasIcon)) __obj.updateDynamic("hasIcon")(hasIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasImage)) __obj.updateDynamic("hasImage")(hasImage.asInstanceOf[js.Any])
+    if (!js.isUndefined(imageIsLarge)) __obj.updateDynamic("imageIsLarge")(imageIsLarge.asInstanceOf[js.Any])
+    if (imageSize != null) __obj.updateDynamic("imageSize")(imageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChoiceGroupOptionStyleProps]
   }
 }

@@ -32,10 +32,10 @@ object breadcrumbProviderOptions {
     templateUrl: String = null
   ): breadcrumbProviderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeAbstract)) __obj.updateDynamic("includeAbstract")(includeAbstract)
-    if (prefixStateName != null) __obj.updateDynamic("prefixStateName")(prefixStateName)
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    if (!js.isUndefined(includeAbstract)) __obj.updateDynamic("includeAbstract")(includeAbstract.asInstanceOf[js.Any])
+    if (prefixStateName != null) __obj.updateDynamic("prefixStateName")(prefixStateName.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[breadcrumbProviderOptions]
   }
 }

@@ -106,13 +106,13 @@ object Container {
     if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
     if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
     if (dockerLabels != null) __obj.updateDynamic("dockerLabels")(dockerLabels.asInstanceOf[js.Any])
-    if (environment != null) __obj.updateDynamic("environment")(environment)
+    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
     if (function != null) __obj.updateDynamic("function")(js.Any.fromFunction0(function))
     if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
     if (memoryReservation != null) __obj.updateDynamic("memoryReservation")(memoryReservation.asInstanceOf[js.Any])
-    if (ports != null) __obj.updateDynamic("ports")(ports)
-    if (volumes != null) __obj.updateDynamic("volumes")(volumes)
+    if (ports != null) __obj.updateDynamic("ports")(ports.asInstanceOf[js.Any])
+    if (volumes != null) __obj.updateDynamic("volumes")(volumes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Container]
   }
 }

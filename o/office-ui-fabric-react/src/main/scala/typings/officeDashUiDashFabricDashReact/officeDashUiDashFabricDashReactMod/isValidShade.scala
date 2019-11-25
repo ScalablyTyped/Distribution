@@ -1,6 +1,5 @@
 package typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactMod
 
-import typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object isValidShade extends js.Object {
   def apply(): Boolean = js.native
-  def apply(shade: Shade): Boolean = js.native
+  def apply(shade: typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade): Boolean = js.native
 }
 

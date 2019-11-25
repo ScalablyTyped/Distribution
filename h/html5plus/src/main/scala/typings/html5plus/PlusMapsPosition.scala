@@ -65,12 +65,12 @@ object PlusMapsPosition {
     postcode: String = null
   ): PlusMapsPosition = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (city != null) __obj.updateDynamic("city")(city)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (phone != null) __obj.updateDynamic("phone")(phone)
-    if (point != null) __obj.updateDynamic("point")(point)
-    if (postcode != null) __obj.updateDynamic("postcode")(postcode)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
+    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
+    if (postcode != null) __obj.updateDynamic("postcode")(postcode.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusMapsPosition]
   }
 }

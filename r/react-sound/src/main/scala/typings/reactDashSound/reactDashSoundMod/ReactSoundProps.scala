@@ -45,9 +45,9 @@ object ReactSoundProps {
     position: Int | Double = null,
     volume: Int | Double = null
   ): ReactSoundProps = {
-    val __obj = js.Dynamic.literal(playStatus = playStatus, url = url)
-    if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad)
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    val __obj = js.Dynamic.literal(playStatus = playStatus.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     if (onBufferChange != null) __obj.updateDynamic("onBufferChange")(js.Any.fromFunction0(onBufferChange))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction0(onError))
     if (onFinishedPlaying != null) __obj.updateDynamic("onFinishedPlaying")(js.Any.fromFunction0(onFinishedPlaying))

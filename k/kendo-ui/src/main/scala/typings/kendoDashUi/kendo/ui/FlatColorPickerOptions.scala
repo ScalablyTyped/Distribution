@@ -28,14 +28,14 @@ object FlatColorPickerOptions {
     value: String = null
   ): FlatColorPickerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoupdate)) __obj.updateDynamic("autoupdate")(autoupdate)
-    if (!js.isUndefined(buttons)) __obj.updateDynamic("buttons")(buttons)
+    if (!js.isUndefined(autoupdate)) __obj.updateDynamic("autoupdate")(autoupdate.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttons)) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity)
-    if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlatColorPickerOptions]
   }
 }

@@ -15,3 +15,16 @@ import scala.scalajs.js.annotation._
 */
 trait HeaderVisibility extends js.Object
 
+object HeaderVisibility {
+  @scala.inline
+  def all: typings.atPhosphorDatagrid.atPhosphorDatagridStrings.all = this.cast("all")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def column: typings.atPhosphorDatagrid.atPhosphorDatagridStrings.column = this.cast("column")
+  @scala.inline
+  def none: typings.atPhosphorDatagrid.atPhosphorDatagridStrings.none = this.cast("none")
+  @scala.inline
+  def row: typings.atPhosphorDatagrid.atPhosphorDatagridStrings.row = this.cast("row")
+}
+

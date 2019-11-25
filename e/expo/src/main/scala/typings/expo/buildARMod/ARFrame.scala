@@ -21,11 +21,11 @@ object ARFrame {
     lightEstimation: LightEstimation = null,
     rawFeaturePoints: js.Array[RawFeaturePoint] = null
   ): ARFrame = {
-    val __obj = js.Dynamic.literal(timestamp = timestamp)
-    if (anchors != null) __obj.updateDynamic("anchors")(anchors)
-    if (capturedDepthData != null) __obj.updateDynamic("capturedDepthData")(capturedDepthData)
-    if (lightEstimation != null) __obj.updateDynamic("lightEstimation")(lightEstimation)
-    if (rawFeaturePoints != null) __obj.updateDynamic("rawFeaturePoints")(rawFeaturePoints)
+    val __obj = js.Dynamic.literal(timestamp = timestamp.asInstanceOf[js.Any])
+    if (anchors != null) __obj.updateDynamic("anchors")(anchors.asInstanceOf[js.Any])
+    if (capturedDepthData != null) __obj.updateDynamic("capturedDepthData")(capturedDepthData.asInstanceOf[js.Any])
+    if (lightEstimation != null) __obj.updateDynamic("lightEstimation")(lightEstimation.asInstanceOf[js.Any])
+    if (rawFeaturePoints != null) __obj.updateDynamic("rawFeaturePoints")(rawFeaturePoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[ARFrame]
   }
 }

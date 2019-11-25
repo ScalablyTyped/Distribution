@@ -23,7 +23,7 @@ object Subscription {
   @scala.inline
   def apply(regId: String = null): Subscription = {
     val __obj = js.Dynamic.literal()
-    if (regId != null) __obj.updateDynamic("regId")(regId)
+    if (regId != null) __obj.updateDynamic("regId")(regId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subscription]
   }
 }

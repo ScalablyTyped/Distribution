@@ -25,7 +25,7 @@ object IGlobalizationPreferencesStatics {
     languages: IVectorView[String],
     weekStartsOn: DayOfWeek
   ): IGlobalizationPreferencesStatics = {
-    val __obj = js.Dynamic.literal(calendars = calendars, clocks = clocks, currencies = currencies, homeGeographicRegion = homeGeographicRegion, languages = languages, weekStartsOn = weekStartsOn)
+    val __obj = js.Dynamic.literal(calendars = calendars.asInstanceOf[js.Any], clocks = clocks.asInstanceOf[js.Any], currencies = currencies.asInstanceOf[js.Any], homeGeographicRegion = homeGeographicRegion.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any], weekStartsOn = weekStartsOn.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IGlobalizationPreferencesStatics]
   }

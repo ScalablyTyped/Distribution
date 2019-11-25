@@ -13,7 +13,7 @@ object AggregateResponse {
   @scala.inline
   def apply(bucket: js.Array[AggregateBucket] = null): AggregateResponse = {
     val __obj = js.Dynamic.literal()
-    if (bucket != null) __obj.updateDynamic("bucket")(bucket)
+    if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregateResponse]
   }
 }

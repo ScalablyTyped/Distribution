@@ -29,7 +29,7 @@ object ProjectSchema {
     path_with_namespace: String,
     ssh_url_to_repo: String
   ): ProjectSchema = {
-    val __obj = js.Dynamic.literal(archived = archived, http_url_to_repo = http_url_to_repo, id = id, name = name, name_with_namespace = name_with_namespace, namespace = namespace, path = path, path_with_namespace = path_with_namespace, ssh_url_to_repo = ssh_url_to_repo)
+    val __obj = js.Dynamic.literal(archived = archived.asInstanceOf[js.Any], http_url_to_repo = http_url_to_repo.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], name_with_namespace = name_with_namespace.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], path_with_namespace = path_with_namespace.asInstanceOf[js.Any], ssh_url_to_repo = ssh_url_to_repo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProjectSchema]
   }

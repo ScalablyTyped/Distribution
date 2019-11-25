@@ -29,20 +29,20 @@ object AttachSessionOptions {
     queryParams: StringDictionary[String] = null,
     user: String = null
   ): AttachSessionOptions = {
-    val __obj = js.Dynamic.literal(sessionId = sessionId)
-    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities)
+    val __obj = js.Dynamic.literal(sessionId = sessionId.asInstanceOf[js.Any])
+    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
     if (connectionRetryCount != null) __obj.updateDynamic("connectionRetryCount")(connectionRetryCount.asInstanceOf[js.Any])
     if (connectionRetryTimeout != null) __obj.updateDynamic("connectionRetryTimeout")(connectionRetryTimeout.asInstanceOf[js.Any])
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
-    if (!js.isUndefined(isW3C)) __obj.updateDynamic("isW3C")(isW3C)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel)
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
+    if (!js.isUndefined(isW3C)) __obj.updateDynamic("isW3C")(isW3C.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
     if (logOutput != null) __obj.updateDynamic("logOutput")(logOutput.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachSessionOptions]
   }
 }

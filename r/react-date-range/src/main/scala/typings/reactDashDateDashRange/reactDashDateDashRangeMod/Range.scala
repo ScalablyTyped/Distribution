@@ -16,8 +16,8 @@ object Range {
   @scala.inline
   def apply(endDate: Moment = null, startDate: Moment = null): Range = {
     val __obj = js.Dynamic.literal()
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Range]
   }
 }

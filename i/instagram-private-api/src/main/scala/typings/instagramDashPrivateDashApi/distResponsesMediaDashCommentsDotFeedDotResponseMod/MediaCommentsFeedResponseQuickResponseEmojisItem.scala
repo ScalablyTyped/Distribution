@@ -11,7 +11,7 @@ trait MediaCommentsFeedResponseQuickResponseEmojisItem extends js.Object {
 object MediaCommentsFeedResponseQuickResponseEmojisItem {
   @scala.inline
   def apply(unicode: String): MediaCommentsFeedResponseQuickResponseEmojisItem = {
-    val __obj = js.Dynamic.literal(unicode = unicode)
+    val __obj = js.Dynamic.literal(unicode = unicode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaCommentsFeedResponseQuickResponseEmojisItem]
   }

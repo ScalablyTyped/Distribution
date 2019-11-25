@@ -13,8 +13,8 @@ trait GraphQLServiceEngineConfig extends js.Object {
 object GraphQLServiceEngineConfig {
   @scala.inline
   def apply(apiKeyHash: String, graphId: String, graphVariant: String = null): GraphQLServiceEngineConfig = {
-    val __obj = js.Dynamic.literal(apiKeyHash = apiKeyHash, graphId = graphId)
-    if (graphVariant != null) __obj.updateDynamic("graphVariant")(graphVariant)
+    val __obj = js.Dynamic.literal(apiKeyHash = apiKeyHash.asInstanceOf[js.Any], graphId = graphId.asInstanceOf[js.Any])
+    if (graphVariant != null) __obj.updateDynamic("graphVariant")(graphVariant.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLServiceEngineConfig]
   }
 }

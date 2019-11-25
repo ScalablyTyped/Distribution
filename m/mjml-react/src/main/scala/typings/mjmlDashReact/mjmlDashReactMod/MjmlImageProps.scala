@@ -36,16 +36,16 @@ object MjmlImageProps {
     width: String | Double = null
   ): MjmlImageProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (containerBackgroundColor != null) __obj.updateDynamic("containerBackgroundColor")(containerBackgroundColor.asInstanceOf[js.Any])
-    if (fluidOnMobile != null) __obj.updateDynamic("fluidOnMobile")(fluidOnMobile)
+    if (fluidOnMobile != null) __obj.updateDynamic("fluidOnMobile")(fluidOnMobile.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src)
-    if (srcset != null) __obj.updateDynamic("srcset")(srcset)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
+    if (srcset != null) __obj.updateDynamic("srcset")(srcset.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MjmlImageProps]
   }

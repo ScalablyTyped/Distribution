@@ -22,11 +22,11 @@ object Anon_ApiKeyBaseUrlDomain {
     userAgent: String = null
   ): Anon_ApiKeyBaseUrlDomain = {
     val __obj = js.Dynamic.literal()
-    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (!js.isUndefined(truncate)) __obj.updateDynamic("truncate")(truncate)
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
+    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (!js.isUndefined(truncate)) __obj.updateDynamic("truncate")(truncate.asInstanceOf[js.Any])
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ApiKeyBaseUrlDomain]
   }
 }

@@ -11,7 +11,7 @@ trait Content extends js.Object {
 object Content {
   @scala.inline
   def apply(body: ContentBody): Content = {
-    val __obj = js.Dynamic.literal(body = body)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Content]
   }

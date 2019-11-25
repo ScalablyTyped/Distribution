@@ -94,15 +94,15 @@ object IPagingToolbar {
     afterPageText: java.lang.String = null,
     beforePageText: java.lang.String = null,
     bind: /* store */ js.UndefOr[IStore] => Unit = null,
-    bindStore: /* store */ js.UndefOr[js.Any] => Unit = null,
-    bindStoreListeners: /* store */ js.UndefOr[IAbstractStore] => Unit = null,
+    bindStore: js.UndefOr[js.Any] => Unit = null,
+    bindStoreListeners: js.UndefOr[IAbstractStore] => Unit = null,
     displayInfo: js.UndefOr[Boolean] = js.undefined,
     displayMsg: java.lang.String = null,
     doRefresh: () => Unit = null,
     emptyMsg: java.lang.String = null,
     firstText: java.lang.String = null,
     getStore: () => IAbstractStore = null,
-    getStoreListeners: () => _ = null,
+    getStoreListeners: js.Function0[_] | (js.Function1[/* store */ js.UndefOr[IStore], _]) = null,
     inputItemWidth: Int | Double = null,
     lastText: java.lang.String = null,
     moveFirst: () => Unit = null,
@@ -110,42 +110,42 @@ object IPagingToolbar {
     moveNext: () => Unit = null,
     movePrevious: () => Unit = null,
     nextText: java.lang.String = null,
-    onBindStore: (/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean]) => Unit = null,
-    onUnbindStore: (/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean]) => Unit = null,
+    onBindStore: (js.UndefOr[IAbstractStore], js.UndefOr[Boolean]) => Unit = null,
+    onUnbindStore: (js.UndefOr[IAbstractStore], js.UndefOr[Boolean]) => Unit = null,
     prependButtons: js.UndefOr[Boolean] = js.undefined,
     prevText: java.lang.String = null,
     refreshText: java.lang.String = null,
     store: IStore = null,
     unbind: /* store */ js.UndefOr[IStore] => Unit = null,
-    unbindStoreListeners: /* store */ js.UndefOr[IAbstractStore] => Unit = null
+    unbindStoreListeners: js.UndefOr[IAbstractStore] => Unit = null
   ): IPagingToolbar = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IToolbar)
-    if (afterPageText != null) __obj.updateDynamic("afterPageText")(afterPageText)
-    if (beforePageText != null) __obj.updateDynamic("beforePageText")(beforePageText)
+    if (IToolbar != null) js.Dynamic.global.Object.assign(__obj, IToolbar)
+    if (afterPageText != null) __obj.updateDynamic("afterPageText")(afterPageText.asInstanceOf[js.Any])
+    if (beforePageText != null) __obj.updateDynamic("beforePageText")(beforePageText.asInstanceOf[js.Any])
     if (bind != null) __obj.updateDynamic("bind")(js.Any.fromFunction1(bind))
     if (bindStore != null) __obj.updateDynamic("bindStore")(js.Any.fromFunction1(bindStore))
     if (bindStoreListeners != null) __obj.updateDynamic("bindStoreListeners")(js.Any.fromFunction1(bindStoreListeners))
-    if (!js.isUndefined(displayInfo)) __obj.updateDynamic("displayInfo")(displayInfo)
-    if (displayMsg != null) __obj.updateDynamic("displayMsg")(displayMsg)
+    if (!js.isUndefined(displayInfo)) __obj.updateDynamic("displayInfo")(displayInfo.asInstanceOf[js.Any])
+    if (displayMsg != null) __obj.updateDynamic("displayMsg")(displayMsg.asInstanceOf[js.Any])
     if (doRefresh != null) __obj.updateDynamic("doRefresh")(js.Any.fromFunction0(doRefresh))
-    if (emptyMsg != null) __obj.updateDynamic("emptyMsg")(emptyMsg)
-    if (firstText != null) __obj.updateDynamic("firstText")(firstText)
+    if (emptyMsg != null) __obj.updateDynamic("emptyMsg")(emptyMsg.asInstanceOf[js.Any])
+    if (firstText != null) __obj.updateDynamic("firstText")(firstText.asInstanceOf[js.Any])
     if (getStore != null) __obj.updateDynamic("getStore")(js.Any.fromFunction0(getStore))
-    if (getStoreListeners != null) __obj.updateDynamic("getStoreListeners")(js.Any.fromFunction0(getStoreListeners))
+    if (getStoreListeners != null) __obj.updateDynamic("getStoreListeners")(getStoreListeners.asInstanceOf[js.Any])
     if (inputItemWidth != null) __obj.updateDynamic("inputItemWidth")(inputItemWidth.asInstanceOf[js.Any])
-    if (lastText != null) __obj.updateDynamic("lastText")(lastText)
+    if (lastText != null) __obj.updateDynamic("lastText")(lastText.asInstanceOf[js.Any])
     if (moveFirst != null) __obj.updateDynamic("moveFirst")(js.Any.fromFunction0(moveFirst))
     if (moveLast != null) __obj.updateDynamic("moveLast")(js.Any.fromFunction0(moveLast))
     if (moveNext != null) __obj.updateDynamic("moveNext")(js.Any.fromFunction0(moveNext))
     if (movePrevious != null) __obj.updateDynamic("movePrevious")(js.Any.fromFunction0(movePrevious))
-    if (nextText != null) __obj.updateDynamic("nextText")(nextText)
+    if (nextText != null) __obj.updateDynamic("nextText")(nextText.asInstanceOf[js.Any])
     if (onBindStore != null) __obj.updateDynamic("onBindStore")(js.Any.fromFunction2(onBindStore))
     if (onUnbindStore != null) __obj.updateDynamic("onUnbindStore")(js.Any.fromFunction2(onUnbindStore))
-    if (!js.isUndefined(prependButtons)) __obj.updateDynamic("prependButtons")(prependButtons)
-    if (prevText != null) __obj.updateDynamic("prevText")(prevText)
-    if (refreshText != null) __obj.updateDynamic("refreshText")(refreshText)
-    if (store != null) __obj.updateDynamic("store")(store)
+    if (!js.isUndefined(prependButtons)) __obj.updateDynamic("prependButtons")(prependButtons.asInstanceOf[js.Any])
+    if (prevText != null) __obj.updateDynamic("prevText")(prevText.asInstanceOf[js.Any])
+    if (refreshText != null) __obj.updateDynamic("refreshText")(refreshText.asInstanceOf[js.Any])
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     if (unbind != null) __obj.updateDynamic("unbind")(js.Any.fromFunction1(unbind))
     if (unbindStoreListeners != null) __obj.updateDynamic("unbindStoreListeners")(js.Any.fromFunction1(unbindStoreListeners))
     __obj.asInstanceOf[IPagingToolbar]

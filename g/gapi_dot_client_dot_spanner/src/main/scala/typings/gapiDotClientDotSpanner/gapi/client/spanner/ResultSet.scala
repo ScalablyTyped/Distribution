@@ -32,9 +32,9 @@ object ResultSet {
     stats: ResultSetStats = null
   ): ResultSet = {
     val __obj = js.Dynamic.literal()
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
-    if (stats != null) __obj.updateDynamic("stats")(stats)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultSet]
   }
 }

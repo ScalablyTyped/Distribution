@@ -30,10 +30,10 @@ object GoogleCloudMlV1__TrainingOutput {
     trials: js.Array[GoogleCloudMlV1__HyperparameterOutput] = null
   ): GoogleCloudMlV1__TrainingOutput = {
     val __obj = js.Dynamic.literal()
-    if (completedTrialCount != null) __obj.updateDynamic("completedTrialCount")(completedTrialCount)
+    if (completedTrialCount != null) __obj.updateDynamic("completedTrialCount")(completedTrialCount.asInstanceOf[js.Any])
     if (consumedMLUnits != null) __obj.updateDynamic("consumedMLUnits")(consumedMLUnits.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHyperparameterTuningJob)) __obj.updateDynamic("isHyperparameterTuningJob")(isHyperparameterTuningJob)
-    if (trials != null) __obj.updateDynamic("trials")(trials)
+    if (!js.isUndefined(isHyperparameterTuningJob)) __obj.updateDynamic("isHyperparameterTuningJob")(isHyperparameterTuningJob.asInstanceOf[js.Any])
+    if (trials != null) __obj.updateDynamic("trials")(trials.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudMlV1__TrainingOutput]
   }
 }

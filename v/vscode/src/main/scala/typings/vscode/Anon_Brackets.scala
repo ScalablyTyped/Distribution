@@ -24,8 +24,8 @@ object Anon_Brackets {
   @scala.inline
   def apply(brackets: js.Any = null, docComment: Anon_Close = null): Anon_Brackets = {
     val __obj = js.Dynamic.literal()
-    if (brackets != null) __obj.updateDynamic("brackets")(brackets)
-    if (docComment != null) __obj.updateDynamic("docComment")(docComment)
+    if (brackets != null) __obj.updateDynamic("brackets")(brackets.asInstanceOf[js.Any])
+    if (docComment != null) __obj.updateDynamic("docComment")(docComment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Brackets]
   }
 }

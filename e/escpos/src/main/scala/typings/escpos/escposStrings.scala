@@ -508,7 +508,7 @@ object escposStrings {
   sealed trait `image/png` extends MIME_TYPE
   
   @js.native
-  sealed trait p extends js.Object
+  sealed trait p_ extends js.Object
   
   @scala.inline
   def ` `: ` ` = " ".asInstanceOf[` `]
@@ -841,6 +841,6 @@ object escposStrings {
   @scala.inline
   def `image/png`: `image/png` = "image/png".asInstanceOf[`image/png`]
   @scala.inline
-  def p: p = "p".asInstanceOf[p]
+  def p_ : p_ = "p".asInstanceOf[p_]
 }
 

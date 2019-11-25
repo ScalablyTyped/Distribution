@@ -39,13 +39,13 @@ object PromptOptions {
     placeholder: String = null,
     title: String = null
   ): PromptOptions = {
-    val __obj = js.Dynamic.literal(cancelButtonText = cancelButtonText, okButtonText = okButtonText, success = js.Any.fromFunction1(success))
+    val __obj = js.Dynamic.literal(cancelButtonText = cancelButtonText.asInstanceOf[js.Any], okButtonText = okButtonText.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromptOptions]
   }
 }

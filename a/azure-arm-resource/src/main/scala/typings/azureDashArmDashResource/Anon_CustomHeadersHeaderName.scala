@@ -14,8 +14,8 @@ object Anon_CustomHeadersHeaderName {
   @scala.inline
   def apply(customHeaders: StringDictionary[String] = null, skiptoken: String = null): Anon_CustomHeadersHeaderName = {
     val __obj = js.Dynamic.literal()
-    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
-    if (skiptoken != null) __obj.updateDynamic("skiptoken")(skiptoken)
+    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
+    if (skiptoken != null) __obj.updateDynamic("skiptoken")(skiptoken.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CustomHeadersHeaderName]
   }
 }

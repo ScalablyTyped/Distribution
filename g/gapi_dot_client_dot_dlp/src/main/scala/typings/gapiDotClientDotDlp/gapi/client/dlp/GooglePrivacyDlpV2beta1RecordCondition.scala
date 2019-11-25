@@ -12,7 +12,7 @@ object GooglePrivacyDlpV2beta1RecordCondition {
   @scala.inline
   def apply(expressions: GooglePrivacyDlpV2beta1Expressions = null): GooglePrivacyDlpV2beta1RecordCondition = {
     val __obj = js.Dynamic.literal()
-    if (expressions != null) __obj.updateDynamic("expressions")(expressions)
+    if (expressions != null) __obj.updateDynamic("expressions")(expressions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1RecordCondition]
   }
 }

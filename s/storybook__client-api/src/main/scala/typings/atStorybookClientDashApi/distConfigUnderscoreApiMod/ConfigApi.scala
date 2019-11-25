@@ -27,7 +27,7 @@ object ConfigApi {
     clientApi: typings.atStorybookClientDashApi.distClientUnderscoreApiMod.default,
     configure: (js.Function0[Unit], NodeModule) => Unit
   ): ConfigApi = {
-    val __obj = js.Dynamic.literal(_channel = _channel, _clearDecorators = js.Any.fromFunction0(_clearDecorators), _renderError = js.Any.fromFunction1(_renderError), _renderMain = js.Any.fromFunction0(_renderMain), _storyStore = _storyStore, clientApi = clientApi, configure = js.Any.fromFunction2(configure))
+    val __obj = js.Dynamic.literal(_channel = _channel.asInstanceOf[js.Any], _clearDecorators = js.Any.fromFunction0(_clearDecorators), _renderError = js.Any.fromFunction1(_renderError), _renderMain = js.Any.fromFunction0(_renderMain), _storyStore = _storyStore.asInstanceOf[js.Any], clientApi = clientApi.asInstanceOf[js.Any], configure = js.Any.fromFunction2(configure))
   
     __obj.asInstanceOf[ConfigApi]
   }

@@ -22,7 +22,7 @@ trait RoomObjectEffect extends js.Object {
 object RoomObjectEffect {
   @scala.inline
   def apply(level: Double, power: PowerConstant, ticksRemaining: Double): RoomObjectEffect = {
-    val __obj = js.Dynamic.literal(level = level, power = power.asInstanceOf[js.Any], ticksRemaining = ticksRemaining)
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], power = power.asInstanceOf[js.Any], ticksRemaining = ticksRemaining.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RoomObjectEffect]
   }

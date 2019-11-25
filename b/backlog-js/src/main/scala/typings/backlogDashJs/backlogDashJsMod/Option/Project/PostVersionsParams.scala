@@ -14,7 +14,7 @@ trait PostVersionsParams extends js.Object {
 object PostVersionsParams {
   @scala.inline
   def apply(description: String, name: String, releaseDueDate: String, startDate: String): PostVersionsParams = {
-    val __obj = js.Dynamic.literal(description = description, name = name, releaseDueDate = releaseDueDate, startDate = startDate)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], releaseDueDate = releaseDueDate.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PostVersionsParams]
   }

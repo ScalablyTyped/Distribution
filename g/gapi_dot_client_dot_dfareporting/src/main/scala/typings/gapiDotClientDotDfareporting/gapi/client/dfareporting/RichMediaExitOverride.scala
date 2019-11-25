@@ -21,9 +21,9 @@ object RichMediaExitOverride {
     exitId: String = null
   ): RichMediaExitOverride = {
     val __obj = js.Dynamic.literal()
-    if (clickThroughUrl != null) __obj.updateDynamic("clickThroughUrl")(clickThroughUrl)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (exitId != null) __obj.updateDynamic("exitId")(exitId)
+    if (clickThroughUrl != null) __obj.updateDynamic("clickThroughUrl")(clickThroughUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (exitId != null) __obj.updateDynamic("exitId")(exitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RichMediaExitOverride]
   }
 }

@@ -15,8 +15,8 @@ object WorkspaceProposalUser {
   @scala.inline
   def apply(gaiaId: String = null, `type`: String = null): WorkspaceProposalUser = {
     val __obj = js.Dynamic.literal()
-    if (gaiaId != null) __obj.updateDynamic("gaiaId")(gaiaId)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (gaiaId != null) __obj.updateDynamic("gaiaId")(gaiaId.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceProposalUser]
   }
 }

@@ -39,12 +39,12 @@ object DataSourceValue {
     measures: js.Array[DataSourceValuesMeasure] = null
   ): DataSourceValue = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis)
-    if (fieldCaption != null) __obj.updateDynamic("fieldCaption")(fieldCaption)
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
-    if (formula != null) __obj.updateDynamic("formula")(formula)
-    if (!js.isUndefined(isCalculatedField)) __obj.updateDynamic("isCalculatedField")(isCalculatedField)
-    if (measures != null) __obj.updateDynamic("measures")(measures)
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (fieldCaption != null) __obj.updateDynamic("fieldCaption")(fieldCaption.asInstanceOf[js.Any])
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
+    if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCalculatedField)) __obj.updateDynamic("isCalculatedField")(isCalculatedField.asInstanceOf[js.Any])
+    if (measures != null) __obj.updateDynamic("measures")(measures.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceValue]
   }
 }

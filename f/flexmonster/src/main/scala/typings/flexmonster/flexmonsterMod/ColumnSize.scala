@@ -21,8 +21,8 @@ object ColumnSize {
   ): ColumnSize = {
     val __obj = js.Dynamic.literal()
     if (idx != null) __obj.updateDynamic("idx")(idx.asInstanceOf[js.Any])
-    if (measure != null) __obj.updateDynamic("measure")(measure)
-    if (tuple != null) __obj.updateDynamic("tuple")(tuple)
+    if (measure != null) __obj.updateDynamic("measure")(measure.asInstanceOf[js.Any])
+    if (tuple != null) __obj.updateDynamic("tuple")(tuple.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnSize]
   }

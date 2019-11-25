@@ -34,8 +34,8 @@ object ChooseImageConfig {
   ): ChooseImageConfig = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (sizeType != null) __obj.updateDynamic("sizeType")(sizeType)
-    if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType)
+    if (sizeType != null) __obj.updateDynamic("sizeType")(sizeType.asInstanceOf[js.Any])
+    if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooseImageConfig]
   }
 }

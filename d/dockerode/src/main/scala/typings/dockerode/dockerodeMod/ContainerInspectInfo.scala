@@ -60,8 +60,8 @@ object ContainerInspectInfo {
     State: Anon_Dead,
     ExecIDs: js.Any = null
   ): ContainerInspectInfo = {
-    val __obj = js.Dynamic.literal(AppArmorProfile = AppArmorProfile, Args = Args, Config = Config, Created = Created, Driver = Driver, GraphDriver = GraphDriver, HostConfig = HostConfig, HostnamePath = HostnamePath, HostsPath = HostsPath, Id = Id, Image = Image, LogPath = LogPath, MountLabel = MountLabel, Mounts = Mounts, Name = Name, NetworkSettings = NetworkSettings, Path = Path, ProcessLabel = ProcessLabel, ResolvConfPath = ResolvConfPath, RestartCount = RestartCount, State = State)
-    if (ExecIDs != null) __obj.updateDynamic("ExecIDs")(ExecIDs)
+    val __obj = js.Dynamic.literal(AppArmorProfile = AppArmorProfile.asInstanceOf[js.Any], Args = Args.asInstanceOf[js.Any], Config = Config.asInstanceOf[js.Any], Created = Created.asInstanceOf[js.Any], Driver = Driver.asInstanceOf[js.Any], GraphDriver = GraphDriver.asInstanceOf[js.Any], HostConfig = HostConfig.asInstanceOf[js.Any], HostnamePath = HostnamePath.asInstanceOf[js.Any], HostsPath = HostsPath.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Image = Image.asInstanceOf[js.Any], LogPath = LogPath.asInstanceOf[js.Any], MountLabel = MountLabel.asInstanceOf[js.Any], Mounts = Mounts.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], NetworkSettings = NetworkSettings.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any], ProcessLabel = ProcessLabel.asInstanceOf[js.Any], ResolvConfPath = ResolvConfPath.asInstanceOf[js.Any], RestartCount = RestartCount.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any])
+    if (ExecIDs != null) __obj.updateDynamic("ExecIDs")(ExecIDs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerInspectInfo]
   }
 }

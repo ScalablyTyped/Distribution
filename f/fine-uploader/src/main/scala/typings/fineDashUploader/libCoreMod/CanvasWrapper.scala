@@ -34,10 +34,10 @@ object CanvasWrapper {
     `type`: MimeType = null
   ): CanvasWrapper = {
     val __obj = js.Dynamic.literal()
-    if (canvas != null) __obj.updateDynamic("canvas")(canvas)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (canvas != null) __obj.updateDynamic("canvas")(canvas.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasWrapper]
   }
 }

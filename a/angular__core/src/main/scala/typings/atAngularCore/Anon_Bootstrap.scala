@@ -42,9 +42,9 @@ object Anon_Bootstrap {
     if (bootstrap != null) __obj.updateDynamic("bootstrap")(bootstrap.asInstanceOf[js.Any])
     if (declarations != null) __obj.updateDynamic("declarations")(declarations.asInstanceOf[js.Any])
     if (exports != null) __obj.updateDynamic("exports")(exports.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
-    if (schemas != null) __obj.updateDynamic("schemas")(schemas)
+    if (schemas != null) __obj.updateDynamic("schemas")(schemas.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bootstrap[T]]
   }
 }

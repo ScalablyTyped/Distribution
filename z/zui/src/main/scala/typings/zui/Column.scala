@@ -26,12 +26,12 @@ object Column {
     width: Int | Double = null
   ): Column = {
     val __obj = js.Dynamic.literal()
-    if (colClass != null) __obj.updateDynamic("colClass")(colClass)
-    if (!js.isUndefined(flex)) __obj.updateDynamic("flex")(flex)
-    if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore)
-    if (sort != null) __obj.updateDynamic("sort")(sort)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (colClass != null) __obj.updateDynamic("colClass")(colClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(flex)) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Column]
   }

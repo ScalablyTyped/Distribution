@@ -37,18 +37,18 @@ object Style {
     transition: Transition = null,
     zoom: Int | Double = null
   ): Style = {
-    val __obj = js.Dynamic.literal(version = version)
+    val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
     if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
-    if (center != null) __obj.updateDynamic("center")(center)
-    if (glyphs != null) __obj.updateDynamic("glyphs")(glyphs)
-    if (layers != null) __obj.updateDynamic("layers")(layers)
-    if (light != null) __obj.updateDynamic("light")(light)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (glyphs != null) __obj.updateDynamic("glyphs")(glyphs.asInstanceOf[js.Any])
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
+    if (light != null) __obj.updateDynamic("light")(light.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
-    if (sources != null) __obj.updateDynamic("sources")(sources)
-    if (sprite != null) __obj.updateDynamic("sprite")(sprite)
-    if (transition != null) __obj.updateDynamic("transition")(transition)
+    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
+    if (sprite != null) __obj.updateDynamic("sprite")(sprite.asInstanceOf[js.Any])
+    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[Style]
   }

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "soundjs"
-version := "0.6.0-dt-20190322Z-73d37c"
+version := "0.6.0-dt-20190322Z-642e4f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "createjs-lib" % "0.0-unknown-dt-20190322Z-90918d",
-  "org.scalablytyped" %%% "preloadjs" % "0.6.2-dt-20190322Z-35ad42",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
+  "org.scalablytyped" %%% "createjs-lib" % "0.0-unknown-dt-20190322Z-84ef26",
+  "org.scalablytyped" %%% "preloadjs" % "0.6.2-dt-20190322Z-11c89d",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

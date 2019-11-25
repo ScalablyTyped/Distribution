@@ -31,15 +31,15 @@ object JWKECKey {
     x5t: String = null,
     `x5t#S256`: String = null
   ): JWKECKey = {
-    val __obj = js.Dynamic.literal(crv = crv, kty = kty, x = x, y = y)
-    if (alg != null) __obj.updateDynamic("alg")(alg)
-    if (d != null) __obj.updateDynamic("d")(d)
-    if (key_ops != null) __obj.updateDynamic("key_ops")(key_ops)
-    if (kid != null) __obj.updateDynamic("kid")(kid)
-    if (use != null) __obj.updateDynamic("use")(use)
-    if (x5c != null) __obj.updateDynamic("x5c")(x5c)
-    if (x5t != null) __obj.updateDynamic("x5t")(x5t)
-    if (`x5t#S256` != null) __obj.updateDynamic("x5t#S256")(`x5t#S256`)
+    val __obj = js.Dynamic.literal(crv = crv.asInstanceOf[js.Any], kty = kty.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    if (alg != null) __obj.updateDynamic("alg")(alg.asInstanceOf[js.Any])
+    if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
+    if (key_ops != null) __obj.updateDynamic("key_ops")(key_ops.asInstanceOf[js.Any])
+    if (kid != null) __obj.updateDynamic("kid")(kid.asInstanceOf[js.Any])
+    if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
+    if (x5c != null) __obj.updateDynamic("x5c")(x5c.asInstanceOf[js.Any])
+    if (x5t != null) __obj.updateDynamic("x5t")(x5t.asInstanceOf[js.Any])
+    if (`x5t#S256` != null) __obj.updateDynamic("x5t#S256")(`x5t#S256`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JWKECKey]
   }
 }

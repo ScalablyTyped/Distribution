@@ -24,10 +24,10 @@ object StockToolsGuiDefinitionsAdvancedOptions {
     pitchfork: StockToolsGuiDefinitionsAdvancedPitchforkOptions = null
   ): StockToolsGuiDefinitionsAdvancedOptions = {
     val __obj = js.Dynamic.literal()
-    if (fibonacci != null) __obj.updateDynamic("fibonacci")(fibonacci)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (parallelChannel != null) __obj.updateDynamic("parallelChannel")(parallelChannel)
-    if (pitchfork != null) __obj.updateDynamic("pitchfork")(pitchfork)
+    if (fibonacci != null) __obj.updateDynamic("fibonacci")(fibonacci.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (parallelChannel != null) __obj.updateDynamic("parallelChannel")(parallelChannel.asInstanceOf[js.Any])
+    if (pitchfork != null) __obj.updateDynamic("pitchfork")(pitchfork.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockToolsGuiDefinitionsAdvancedOptions]
   }
 }

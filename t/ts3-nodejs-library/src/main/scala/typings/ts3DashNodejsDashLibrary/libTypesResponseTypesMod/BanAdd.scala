@@ -11,7 +11,7 @@ trait BanAdd extends js.Object {
 object BanAdd {
   @scala.inline
   def apply(banid: Double): BanAdd = {
-    val __obj = js.Dynamic.literal(banid = banid)
+    val __obj = js.Dynamic.literal(banid = banid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BanAdd]
   }

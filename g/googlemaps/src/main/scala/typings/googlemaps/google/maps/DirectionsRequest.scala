@@ -91,20 +91,20 @@ object DirectionsRequest {
     waypoints: js.Array[DirectionsWaypoint] = null
   ): DirectionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(avoidFerries)) __obj.updateDynamic("avoidFerries")(avoidFerries)
-    if (!js.isUndefined(avoidHighways)) __obj.updateDynamic("avoidHighways")(avoidHighways)
-    if (!js.isUndefined(avoidTolls)) __obj.updateDynamic("avoidTolls")(avoidTolls)
+    if (!js.isUndefined(avoidFerries)) __obj.updateDynamic("avoidFerries")(avoidFerries.asInstanceOf[js.Any])
+    if (!js.isUndefined(avoidHighways)) __obj.updateDynamic("avoidHighways")(avoidHighways.asInstanceOf[js.Any])
+    if (!js.isUndefined(avoidTolls)) __obj.updateDynamic("avoidTolls")(avoidTolls.asInstanceOf[js.Any])
     if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (drivingOptions != null) __obj.updateDynamic("drivingOptions")(drivingOptions)
-    if (!js.isUndefined(durationInTraffic)) __obj.updateDynamic("durationInTraffic")(durationInTraffic)
-    if (!js.isUndefined(optimizeWaypoints)) __obj.updateDynamic("optimizeWaypoints")(optimizeWaypoints)
+    if (drivingOptions != null) __obj.updateDynamic("drivingOptions")(drivingOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(durationInTraffic)) __obj.updateDynamic("durationInTraffic")(durationInTraffic.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimizeWaypoints)) __obj.updateDynamic("optimizeWaypoints")(optimizeWaypoints.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (!js.isUndefined(provideRouteAlternatives)) __obj.updateDynamic("provideRouteAlternatives")(provideRouteAlternatives)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (transitOptions != null) __obj.updateDynamic("transitOptions")(transitOptions)
-    if (travelMode != null) __obj.updateDynamic("travelMode")(travelMode)
-    if (unitSystem != null) __obj.updateDynamic("unitSystem")(unitSystem)
-    if (waypoints != null) __obj.updateDynamic("waypoints")(waypoints)
+    if (!js.isUndefined(provideRouteAlternatives)) __obj.updateDynamic("provideRouteAlternatives")(provideRouteAlternatives.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (transitOptions != null) __obj.updateDynamic("transitOptions")(transitOptions.asInstanceOf[js.Any])
+    if (travelMode != null) __obj.updateDynamic("travelMode")(travelMode.asInstanceOf[js.Any])
+    if (unitSystem != null) __obj.updateDynamic("unitSystem")(unitSystem.asInstanceOf[js.Any])
+    if (waypoints != null) __obj.updateDynamic("waypoints")(waypoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsRequest]
   }
 }

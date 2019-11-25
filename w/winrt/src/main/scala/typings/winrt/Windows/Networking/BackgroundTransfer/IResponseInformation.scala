@@ -16,7 +16,7 @@ trait IResponseInformation extends js.Object {
 object IResponseInformation {
   @scala.inline
   def apply(actualUri: Uri, headers: IMapView[String, String], isResumable: Boolean, statusCode: Double): IResponseInformation = {
-    val __obj = js.Dynamic.literal(actualUri = actualUri, headers = headers, isResumable = isResumable, statusCode = statusCode)
+    val __obj = js.Dynamic.literal(actualUri = actualUri.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], isResumable = isResumable.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IResponseInformation]
   }

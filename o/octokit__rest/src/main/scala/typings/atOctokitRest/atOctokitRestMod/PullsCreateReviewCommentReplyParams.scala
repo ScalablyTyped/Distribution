@@ -18,7 +18,7 @@ trait PullsCreateReviewCommentReplyParams extends js.Object {
 object PullsCreateReviewCommentReplyParams {
   @scala.inline
   def apply(body: String, comment_id: Double, owner: String, pull_number: Double, repo: String): PullsCreateReviewCommentReplyParams = {
-    val __obj = js.Dynamic.literal(body = body, comment_id = comment_id, owner = owner, pull_number = pull_number, repo = repo)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], comment_id = comment_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], pull_number = pull_number.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PullsCreateReviewCommentReplyParams]
   }

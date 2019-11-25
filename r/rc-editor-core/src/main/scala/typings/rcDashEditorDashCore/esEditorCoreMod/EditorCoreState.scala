@@ -35,14 +35,14 @@ object EditorCoreState {
     toolbarPlugins: List[Plugin] = null
   ): EditorCoreState = {
     val __obj = js.Dynamic.literal()
-    if (blockRenderMap != null) __obj.updateDynamic("blockRenderMap")(blockRenderMap)
-    if (compositeDecorator != null) __obj.updateDynamic("compositeDecorator")(compositeDecorator)
-    if (customBlockStyleMap != null) __obj.updateDynamic("customBlockStyleMap")(customBlockStyleMap)
-    if (customStyleMap != null) __obj.updateDynamic("customStyleMap")(customStyleMap)
-    if (editorState != null) __obj.updateDynamic("editorState")(editorState)
-    if (inlineStyleOverride != null) __obj.updateDynamic("inlineStyleOverride")(inlineStyleOverride)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
-    if (toolbarPlugins != null) __obj.updateDynamic("toolbarPlugins")(toolbarPlugins)
+    if (blockRenderMap != null) __obj.updateDynamic("blockRenderMap")(blockRenderMap.asInstanceOf[js.Any])
+    if (compositeDecorator != null) __obj.updateDynamic("compositeDecorator")(compositeDecorator.asInstanceOf[js.Any])
+    if (customBlockStyleMap != null) __obj.updateDynamic("customBlockStyleMap")(customBlockStyleMap.asInstanceOf[js.Any])
+    if (customStyleMap != null) __obj.updateDynamic("customStyleMap")(customStyleMap.asInstanceOf[js.Any])
+    if (editorState != null) __obj.updateDynamic("editorState")(editorState.asInstanceOf[js.Any])
+    if (inlineStyleOverride != null) __obj.updateDynamic("inlineStyleOverride")(inlineStyleOverride.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (toolbarPlugins != null) __obj.updateDynamic("toolbarPlugins")(toolbarPlugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorCoreState]
   }
 }

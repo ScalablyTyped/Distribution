@@ -29,7 +29,7 @@ object HookRegOptions {
   @scala.inline
   def apply(bind: js.Any = null, invokeLimit: Int | Double = null, priority: Int | Double = null): HookRegOptions = {
     val __obj = js.Dynamic.literal()
-    if (bind != null) __obj.updateDynamic("bind")(bind)
+    if (bind != null) __obj.updateDynamic("bind")(bind.asInstanceOf[js.Any])
     if (invokeLimit != null) __obj.updateDynamic("invokeLimit")(invokeLimit.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[HookRegOptions]

@@ -50,9 +50,9 @@ object Request {
     comment: String = null,
     postData: PostData = null
   ): Request = {
-    val __obj = js.Dynamic.literal(bodySize = bodySize, cookies = cookies, headers = headers, headersSize = headersSize, httpVersion = httpVersion, method = method, queryString = queryString, url = url)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (postData != null) __obj.updateDynamic("postData")(postData)
+    val __obj = js.Dynamic.literal(bodySize = bodySize.asInstanceOf[js.Any], cookies = cookies.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], headersSize = headersSize.asInstanceOf[js.Any], httpVersion = httpVersion.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], queryString = queryString.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (postData != null) __obj.updateDynamic("postData")(postData.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request]
   }
 }

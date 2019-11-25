@@ -11,7 +11,7 @@ trait Anon_DisableCSSInjection extends js.Object {
 object Anon_DisableCSSInjection {
   @scala.inline
   def apply(disableCSSInjection: Boolean): Anon_DisableCSSInjection = {
-    val __obj = js.Dynamic.literal(disableCSSInjection = disableCSSInjection)
+    val __obj = js.Dynamic.literal(disableCSSInjection = disableCSSInjection.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DisableCSSInjection]
   }

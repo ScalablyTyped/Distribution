@@ -20,9 +20,9 @@ object Css_ {
     sourceMap: js.UndefOr[Boolean] = js.undefined
   ): Css_ = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(extract)) __obj.updateDynamic("extract")(extract)
-    if (loaderOptions != null) __obj.updateDynamic("loaderOptions")(loaderOptions)
-    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap)
+    if (!js.isUndefined(extract)) __obj.updateDynamic("extract")(extract.asInstanceOf[js.Any])
+    if (loaderOptions != null) __obj.updateDynamic("loaderOptions")(loaderOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[Css_]
   }
 }

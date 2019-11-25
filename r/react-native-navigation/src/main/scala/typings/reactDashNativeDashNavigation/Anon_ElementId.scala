@@ -14,7 +14,7 @@ trait Anon_ElementId extends js.Object {
 object Anon_ElementId {
   @scala.inline
   def apply(elementId: Validator[String], resizeMode: Requireable[String]): Anon_ElementId = {
-    val __obj = js.Dynamic.literal(elementId = elementId, resizeMode = resizeMode)
+    val __obj = js.Dynamic.literal(elementId = elementId.asInstanceOf[js.Any], resizeMode = resizeMode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ElementId]
   }

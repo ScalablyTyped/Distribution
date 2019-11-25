@@ -16,9 +16,9 @@ object Options {
   @scala.inline
   def apply(comparator: String = null, model: Object = null, query: Query = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (comparator != null) __obj.updateDynamic("comparator")(comparator)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (comparator != null) __obj.updateDynamic("comparator")(comparator.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

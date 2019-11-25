@@ -24,12 +24,12 @@ object PluginVisualizerOptions {
     title: String = null
   ): PluginVisualizerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bundlesRelative)) __obj.updateDynamic("bundlesRelative")(bundlesRelative)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
-    if (!js.isUndefined(sourcemap)) __obj.updateDynamic("sourcemap")(sourcemap)
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(bundlesRelative)) __obj.updateDynamic("bundlesRelative")(bundlesRelative.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourcemap)) __obj.updateDynamic("sourcemap")(sourcemap.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginVisualizerOptions]
   }
 }

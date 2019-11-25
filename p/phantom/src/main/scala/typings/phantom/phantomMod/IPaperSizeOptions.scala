@@ -36,13 +36,13 @@ object IPaperSizeOptions {
     width: String = null
   ): IPaperSizeOptions = {
     val __obj = js.Dynamic.literal()
-    if (footer != null) __obj.updateDynamic("footer")(footer)
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (height != null) __obj.updateDynamic("height")(height)
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaperSizeOptions]
   }
 }

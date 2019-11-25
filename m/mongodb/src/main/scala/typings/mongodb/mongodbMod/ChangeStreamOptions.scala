@@ -29,13 +29,13 @@ object ChangeStreamOptions {
   ): ChangeStreamOptions = {
     val __obj = js.Dynamic.literal()
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
-    if (collation != null) __obj.updateDynamic("collation")(collation)
-    if (fullDocument != null) __obj.updateDynamic("fullDocument")(fullDocument)
+    if (collation != null) __obj.updateDynamic("collation")(collation.asInstanceOf[js.Any])
+    if (fullDocument != null) __obj.updateDynamic("fullDocument")(fullDocument.asInstanceOf[js.Any])
     if (maxAwaitTimeMS != null) __obj.updateDynamic("maxAwaitTimeMS")(maxAwaitTimeMS.asInstanceOf[js.Any])
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
-    if (resumeAfter != null) __obj.updateDynamic("resumeAfter")(resumeAfter)
-    if (startAfter != null) __obj.updateDynamic("startAfter")(startAfter)
-    if (startAtOperationTime != null) __obj.updateDynamic("startAtOperationTime")(startAtOperationTime)
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (resumeAfter != null) __obj.updateDynamic("resumeAfter")(resumeAfter.asInstanceOf[js.Any])
+    if (startAfter != null) __obj.updateDynamic("startAfter")(startAfter.asInstanceOf[js.Any])
+    if (startAtOperationTime != null) __obj.updateDynamic("startAtOperationTime")(startAtOperationTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeStreamOptions]
   }
 }

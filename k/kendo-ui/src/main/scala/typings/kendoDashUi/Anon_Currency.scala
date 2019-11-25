@@ -25,9 +25,9 @@ object Anon_Currency {
     pattern: js.Array[String],
     percent: Anon_Decimals
   ): Anon_Currency = {
-    val __obj = js.Dynamic.literal(currency = currency, decimals = decimals, groupSize = groupSize, pattern = pattern, percent = percent)
-    __obj.updateDynamic(",")(`,`)
-    __obj.updateDynamic(".")(`.`)
+    val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], decimals = decimals.asInstanceOf[js.Any], groupSize = groupSize.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any])
+    __obj.updateDynamic(",")(`,`.asInstanceOf[js.Any])
+    __obj.updateDynamic(".")(`.`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Currency]
   }
 }

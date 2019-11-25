@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait flip extends js.Object
 
+object flip {
+  @scala.inline
+  def both: typings.jqueryDashAwesomeDashCursor.jqueryDashAwesomeDashCursorStrings.both = this.cast("both")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def horizontal: typings.jqueryDashAwesomeDashCursor.jqueryDashAwesomeDashCursorStrings.horizontal = this.cast("horizontal")
+  @scala.inline
+  def vertical: typings.jqueryDashAwesomeDashCursor.jqueryDashAwesomeDashCursorStrings.vertical = this.cast("vertical")
+}
+

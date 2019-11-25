@@ -35,7 +35,7 @@ object NormalModuleFactoryHooks {
     parser: HookMap[_, _, _],
     resolver: SyncWaterfallHook[_, _, _]
   ): NormalModuleFactoryHooks = {
-    val __obj = js.Dynamic.literal(afterResolve = afterResolve, beforeResolve = beforeResolve, createGenerator = createGenerator, createModule = createModule, createParser = createParser, factory = factory, generator = generator, module = module, parser = parser, resolver = resolver)
+    val __obj = js.Dynamic.literal(afterResolve = afterResolve.asInstanceOf[js.Any], beforeResolve = beforeResolve.asInstanceOf[js.Any], createGenerator = createGenerator.asInstanceOf[js.Any], createModule = createModule.asInstanceOf[js.Any], createParser = createParser.asInstanceOf[js.Any], factory = factory.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any], parser = parser.asInstanceOf[js.Any], resolver = resolver.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NormalModuleFactoryHooks]
   }

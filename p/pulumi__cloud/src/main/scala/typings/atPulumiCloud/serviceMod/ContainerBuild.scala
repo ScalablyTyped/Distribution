@@ -41,10 +41,10 @@ object ContainerBuild {
     dockerfile: String = null
   ): ContainerBuild = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (cacheFrom != null) __obj.updateDynamic("cacheFrom")(cacheFrom.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (dockerfile != null) __obj.updateDynamic("dockerfile")(dockerfile)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (dockerfile != null) __obj.updateDynamic("dockerfile")(dockerfile.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerBuild]
   }
 }

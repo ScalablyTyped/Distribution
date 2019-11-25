@@ -12,7 +12,7 @@ trait Anon_EnumType extends js.Object {
 object Anon_EnumType {
   @scala.inline
   def apply(enumType: GraphQLEnumType): Anon_EnumType = {
-    val __obj = js.Dynamic.literal(enumType = enumType)
+    val __obj = js.Dynamic.literal(enumType = enumType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumType]
   }

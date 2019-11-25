@@ -22,8 +22,8 @@ object GraphQLServiceContext {
     schemaHash: String,
     persistedQueries: Anon_Cache = null
   ): GraphQLServiceContext = {
-    val __obj = js.Dynamic.literal(engine = engine, schema = schema, schemaHash = schemaHash)
-    if (persistedQueries != null) __obj.updateDynamic("persistedQueries")(persistedQueries)
+    val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], schemaHash = schemaHash.asInstanceOf[js.Any])
+    if (persistedQueries != null) __obj.updateDynamic("persistedQueries")(persistedQueries.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLServiceContext]
   }
 }

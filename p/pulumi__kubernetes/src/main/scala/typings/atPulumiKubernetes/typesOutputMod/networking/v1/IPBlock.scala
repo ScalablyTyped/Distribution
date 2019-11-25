@@ -24,7 +24,7 @@ trait IPBlock extends js.Object {
 object IPBlock {
   @scala.inline
   def apply(cidr: String, except: js.Array[String]): IPBlock = {
-    val __obj = js.Dynamic.literal(cidr = cidr, except = except)
+    val __obj = js.Dynamic.literal(cidr = cidr.asInstanceOf[js.Any], except = except.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPBlock]
   }

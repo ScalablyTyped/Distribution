@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait Bounds extends js.Object
 
+object Bounds {
+  @scala.inline
+  def `()`: typings.strange.strangeStrings.`()` = this.cast("()")
+  @scala.inline
+  def `(]`: typings.strange.strangeStrings.`(]` = this.cast("(]")
+  @scala.inline
+  def `[)`: typings.strange.strangeStrings.`[)` = this.cast("[)")
+  @scala.inline
+  def `[]`: typings.strange.strangeStrings.`[]` = this.cast("[]")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

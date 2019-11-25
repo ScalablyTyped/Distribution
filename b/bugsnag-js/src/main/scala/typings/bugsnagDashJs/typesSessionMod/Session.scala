@@ -20,7 +20,7 @@ object Session {
     startedAt: String,
     trackError: typings.bugsnagDashJs.typesReportMod.default => Unit
   ): Session = {
-    val __obj = js.Dynamic.literal(events = events, id = id, startedAt = startedAt, trackError = js.Any.fromFunction1(trackError))
+    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], startedAt = startedAt.asInstanceOf[js.Any], trackError = js.Any.fromFunction1(trackError))
   
     __obj.asInstanceOf[Session]
   }

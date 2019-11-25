@@ -34,16 +34,16 @@ object IMetadata {
     spineSkeletonScale: Int | Double = null
   ): IMetadata = {
     val __obj = js.Dynamic.literal()
-    if (atlasRawData != null) __obj.updateDynamic("atlasRawData")(atlasRawData)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (imageLoader != null) __obj.updateDynamic("imageLoader")(imageLoader)
-    if (imageMetadata != null) __obj.updateDynamic("imageMetadata")(imageMetadata)
-    if (imageNamePrefix != null) __obj.updateDynamic("imageNamePrefix")(imageNamePrefix)
-    if (images != null) __obj.updateDynamic("images")(images)
-    if (spineAtlas != null) __obj.updateDynamic("spineAtlas")(spineAtlas)
-    if (spineAtlasFile != null) __obj.updateDynamic("spineAtlasFile")(spineAtlasFile)
-    if (spineAtlasSuffix != null) __obj.updateDynamic("spineAtlasSuffix")(spineAtlasSuffix)
-    if (spineMetadata != null) __obj.updateDynamic("spineMetadata")(spineMetadata)
+    if (atlasRawData != null) __obj.updateDynamic("atlasRawData")(atlasRawData.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (imageLoader != null) __obj.updateDynamic("imageLoader")(imageLoader.asInstanceOf[js.Any])
+    if (imageMetadata != null) __obj.updateDynamic("imageMetadata")(imageMetadata.asInstanceOf[js.Any])
+    if (imageNamePrefix != null) __obj.updateDynamic("imageNamePrefix")(imageNamePrefix.asInstanceOf[js.Any])
+    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
+    if (spineAtlas != null) __obj.updateDynamic("spineAtlas")(spineAtlas.asInstanceOf[js.Any])
+    if (spineAtlasFile != null) __obj.updateDynamic("spineAtlasFile")(spineAtlasFile.asInstanceOf[js.Any])
+    if (spineAtlasSuffix != null) __obj.updateDynamic("spineAtlasSuffix")(spineAtlasSuffix.asInstanceOf[js.Any])
+    if (spineMetadata != null) __obj.updateDynamic("spineMetadata")(spineMetadata.asInstanceOf[js.Any])
     if (spineSkeletonScale != null) __obj.updateDynamic("spineSkeletonScale")(spineSkeletonScale.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMetadata]
   }

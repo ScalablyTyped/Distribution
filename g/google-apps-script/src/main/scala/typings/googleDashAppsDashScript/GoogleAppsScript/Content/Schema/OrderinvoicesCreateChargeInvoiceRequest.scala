@@ -22,11 +22,11 @@ object OrderinvoicesCreateChargeInvoiceRequest {
     shipmentGroupId: String = null
   ): OrderinvoicesCreateChargeInvoiceRequest = {
     val __obj = js.Dynamic.literal()
-    if (invoiceId != null) __obj.updateDynamic("invoiceId")(invoiceId)
-    if (invoiceSummary != null) __obj.updateDynamic("invoiceSummary")(invoiceSummary)
-    if (lineItemInvoices != null) __obj.updateDynamic("lineItemInvoices")(lineItemInvoices)
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
-    if (shipmentGroupId != null) __obj.updateDynamic("shipmentGroupId")(shipmentGroupId)
+    if (invoiceId != null) __obj.updateDynamic("invoiceId")(invoiceId.asInstanceOf[js.Any])
+    if (invoiceSummary != null) __obj.updateDynamic("invoiceSummary")(invoiceSummary.asInstanceOf[js.Any])
+    if (lineItemInvoices != null) __obj.updateDynamic("lineItemInvoices")(lineItemInvoices.asInstanceOf[js.Any])
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
+    if (shipmentGroupId != null) __obj.updateDynamic("shipmentGroupId")(shipmentGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderinvoicesCreateChargeInvoiceRequest]
   }
 }

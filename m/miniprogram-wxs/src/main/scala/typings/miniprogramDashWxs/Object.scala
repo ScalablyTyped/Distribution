@@ -30,12 +30,9 @@ object Object {
     constructor: Function,
     hasOwnProperty: PropertyKey => scala.Boolean,
     isPrototypeOf: Object => scala.Boolean,
-    propertyIsEnumerable: PropertyKey => scala.Boolean,
-    toLocaleString: () => java.lang.String,
-    toString: () => java.lang.String,
-    valueOf: () => Object
+    propertyIsEnumerable: PropertyKey => scala.Boolean
   ): Object = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), isPrototypeOf = js.Any.fromFunction1(isPrototypeOf), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), toLocaleString = js.Any.fromFunction0(toLocaleString), toString = js.Any.fromFunction0(toString), valueOf = js.Any.fromFunction0(valueOf))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), isPrototypeOf = js.Any.fromFunction1(isPrototypeOf), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[Object]
   }

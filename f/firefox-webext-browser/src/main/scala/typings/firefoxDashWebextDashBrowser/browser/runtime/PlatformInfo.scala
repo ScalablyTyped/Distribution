@@ -20,8 +20,8 @@ trait PlatformInfo extends js.Object {
 object PlatformInfo {
   @scala.inline
   def apply(arch: PlatformArch, os: PlatformOs, nacl_arch: PlatformNaclArch = null): PlatformInfo = {
-    val __obj = js.Dynamic.literal(arch = arch, os = os)
-    if (nacl_arch != null) __obj.updateDynamic("nacl_arch")(nacl_arch)
+    val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any])
+    if (nacl_arch != null) __obj.updateDynamic("nacl_arch")(nacl_arch.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlatformInfo]
   }
 }

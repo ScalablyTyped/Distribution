@@ -37,7 +37,7 @@ object AuxRecordDescription {
     recordId: Double,
     tableName: String
   ): AuxRecordDescription = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), properties = properties, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), recordId = recordId, tableName = tableName)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), properties = properties.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), recordId = recordId.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AuxRecordDescription]
   }

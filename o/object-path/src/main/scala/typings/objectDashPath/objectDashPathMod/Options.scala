@@ -12,7 +12,7 @@ object Options {
   @scala.inline
   def apply(includeInheritedProps: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeInheritedProps)) __obj.updateDynamic("includeInheritedProps")(includeInheritedProps)
+    if (!js.isUndefined(includeInheritedProps)) __obj.updateDynamic("includeInheritedProps")(includeInheritedProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

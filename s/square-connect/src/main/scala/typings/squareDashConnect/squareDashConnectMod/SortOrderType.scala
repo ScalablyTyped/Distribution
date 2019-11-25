@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait SortOrderType extends js.Object
 
+object SortOrderType {
+  @scala.inline
+  def ASC: typings.squareDashConnect.squareDashConnectStrings.ASC = this.cast("ASC")
+  @scala.inline
+  def DESC: typings.squareDashConnect.squareDashConnectStrings.DESC = this.cast("DESC")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

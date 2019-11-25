@@ -25,13 +25,13 @@ object culture {
     namtiveName: String = null,
     numberFormat: formatSettings = null
   ): culture = {
-    val __obj = js.Dynamic.literal(isRTL = isRTL)
-    if (calendars != null) __obj.updateDynamic("calendars")(calendars)
-    if (englishName != null) __obj.updateDynamic("englishName")(englishName)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (namtiveName != null) __obj.updateDynamic("namtiveName")(namtiveName)
-    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat)
+    val __obj = js.Dynamic.literal(isRTL = isRTL.asInstanceOf[js.Any])
+    if (calendars != null) __obj.updateDynamic("calendars")(calendars.asInstanceOf[js.Any])
+    if (englishName != null) __obj.updateDynamic("englishName")(englishName.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namtiveName != null) __obj.updateDynamic("namtiveName")(namtiveName.asInstanceOf[js.Any])
+    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[culture]
   }
 }

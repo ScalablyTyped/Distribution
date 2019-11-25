@@ -85,11 +85,11 @@ object Step {
     pronunciation: String = null,
     ref: String = null
   ): Step = {
-    val __obj = js.Dynamic.literal(bannerInstructions = bannerInstructions, distance = distance, driving_side = driving_side, duration = duration, geometry = geometry.asInstanceOf[js.Any], intersections = intersections, maneuver = maneuver, mode = mode, name = name, voiceInstructions = voiceInstructions, weight = weight)
-    if (destinations != null) __obj.updateDynamic("destinations")(destinations)
-    if (exits != null) __obj.updateDynamic("exits")(exits)
-    if (pronunciation != null) __obj.updateDynamic("pronunciation")(pronunciation)
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    val __obj = js.Dynamic.literal(bannerInstructions = bannerInstructions.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], driving_side = driving_side.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], intersections = intersections.asInstanceOf[js.Any], maneuver = maneuver.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], voiceInstructions = voiceInstructions.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
+    if (destinations != null) __obj.updateDynamic("destinations")(destinations.asInstanceOf[js.Any])
+    if (exits != null) __obj.updateDynamic("exits")(exits.asInstanceOf[js.Any])
+    if (pronunciation != null) __obj.updateDynamic("pronunciation")(pronunciation.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[Step]
   }
 }

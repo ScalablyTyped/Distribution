@@ -19,14 +19,14 @@ object timeGridMod extends js.Object {
     var bottomRuleEl: js.Any = js.native
     var businessContainerEls: js.Any = js.native
     var businessSegs: js.Any = js.native
-    var colCnt: /* import warning: ImportType.apply Failed type conversion: fullcalendar.fullcalendar/DayTableMixin.DayTableInterface['colCnt'] */ js.Any = js.native
+    var colCnt: /* import warning: importer.ImportType#apply Failed type conversion: fullcalendar.fullcalendar/DayTableMixin.DayTableInterface['colCnt'] */ js.Any = js.native
     var colContainerEls: js.Any = js.native
     var colCoordCache: js.Any = js.native
     var colEls: js.Any = js.native
     var contentSkeletonEl: js.Any = js.native
-    var dayDates: /* import warning: ImportType.apply Failed type conversion: fullcalendar.fullcalendar/DayTableMixin.DayTableInterface['dayDates'] */ js.Any = js.native
+    var dayDates: /* import warning: importer.ImportType#apply Failed type conversion: fullcalendar.fullcalendar/DayTableMixin.DayTableInterface['dayDates'] */ js.Any = js.native
     var dayRanges: js.Any = js.native
-    var daysPerRow: /* import warning: ImportType.apply Failed type conversion: fullcalendar.fullcalendar/DayTableMixin.DayTableInterface['daysPerRow'] */ js.Any = js.native
+    var daysPerRow: /* import warning: importer.ImportType#apply Failed type conversion: fullcalendar.fullcalendar/DayTableMixin.DayTableInterface['daysPerRow'] */ js.Any = js.native
     var fgContainerEls: js.Any = js.native
     @JSName("getCellDate")
     var getCellDate_Original: js.Function2[/* row */ js.Any, /* col */ js.Any, _] = js.native

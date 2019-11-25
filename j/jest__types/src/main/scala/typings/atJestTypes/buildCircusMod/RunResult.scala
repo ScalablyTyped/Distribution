@@ -12,7 +12,7 @@ trait RunResult extends js.Object {
 object RunResult {
   @scala.inline
   def apply(testResults: TestResults, unhandledErrors: js.Array[FormattedError]): RunResult = {
-    val __obj = js.Dynamic.literal(testResults = testResults, unhandledErrors = unhandledErrors)
+    val __obj = js.Dynamic.literal(testResults = testResults.asInstanceOf[js.Any], unhandledErrors = unhandledErrors.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RunResult]
   }

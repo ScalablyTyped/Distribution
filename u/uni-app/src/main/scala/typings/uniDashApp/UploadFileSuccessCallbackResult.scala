@@ -19,7 +19,7 @@ object UploadFileSuccessCallbackResult {
   @scala.inline
   def apply(data: String = null, statusCode: Int | Double = null): UploadFileSuccessCallbackResult = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadFileSuccessCallbackResult]
   }

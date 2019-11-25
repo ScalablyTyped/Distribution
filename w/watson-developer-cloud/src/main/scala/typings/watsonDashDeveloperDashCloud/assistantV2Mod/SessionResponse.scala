@@ -13,7 +13,7 @@ trait SessionResponse extends js.Object {
 object SessionResponse {
   @scala.inline
   def apply(session_id: String): SessionResponse = {
-    val __obj = js.Dynamic.literal(session_id = session_id)
+    val __obj = js.Dynamic.literal(session_id = session_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SessionResponse]
   }

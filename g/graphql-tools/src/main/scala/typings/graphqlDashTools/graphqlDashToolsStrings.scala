@@ -16,13 +16,13 @@ object graphqlDashToolsStrings {
   sealed trait Subscription extends js.Object
   
   @js.native
-  sealed trait mutation extends Operation
+  sealed trait mutation_ extends Operation
   
   @js.native
-  sealed trait query extends Operation
+  sealed trait query_ extends Operation
   
   @js.native
-  sealed trait subscription extends Operation
+  sealed trait subscription_ extends Operation
   
   @scala.inline
   def Mutation: Mutation = "Mutation".asInstanceOf[Mutation]
@@ -31,10 +31,10 @@ object graphqlDashToolsStrings {
   @scala.inline
   def Subscription: Subscription = "Subscription".asInstanceOf[Subscription]
   @scala.inline
-  def mutation: mutation = "mutation".asInstanceOf[mutation]
+  def mutation_ : mutation_ = "mutation".asInstanceOf[mutation_]
   @scala.inline
-  def query: query = "query".asInstanceOf[query]
+  def query_ : query_ = "query".asInstanceOf[query_]
   @scala.inline
-  def subscription: subscription = "subscription".asInstanceOf[subscription]
+  def subscription_ : subscription_ = "subscription".asInstanceOf[subscription_]
 }
 

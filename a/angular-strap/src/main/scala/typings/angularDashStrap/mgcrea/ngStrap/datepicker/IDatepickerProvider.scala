@@ -11,7 +11,7 @@ trait IDatepickerProvider extends js.Object {
 object IDatepickerProvider {
   @scala.inline
   def apply(defaults: IDatepickerOptions): IDatepickerProvider = {
-    val __obj = js.Dynamic.literal(defaults = defaults)
+    val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IDatepickerProvider]
   }

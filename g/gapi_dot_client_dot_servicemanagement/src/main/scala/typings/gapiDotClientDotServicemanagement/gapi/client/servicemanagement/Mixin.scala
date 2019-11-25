@@ -18,8 +18,8 @@ object Mixin {
   @scala.inline
   def apply(name: String = null, root: String = null): Mixin = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mixin]
   }
 }

@@ -13,8 +13,8 @@ trait ICommandBarStyleProps extends js.Object {
 object ICommandBarStyleProps {
   @scala.inline
   def apply(theme: ITheme, className: String = null): ICommandBarStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICommandBarStyleProps]
   }
 }

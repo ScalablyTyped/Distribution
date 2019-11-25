@@ -21,10 +21,10 @@ object ConnectionError {
     stack: String = null,
     transport: String = null
   ): ConnectionError = {
-    val __obj = js.Dynamic.literal(context = context, message = message, name = name)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
-    if (transport != null) __obj.updateDynamic("transport")(transport)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionError]
   }
 }

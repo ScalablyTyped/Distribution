@@ -17,7 +17,7 @@ object IGridOptions {
   @scala.inline
   def apply(enableInfiniteScroll: js.UndefOr[Boolean] = js.undefined): IGridOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableInfiniteScroll)) __obj.updateDynamic("enableInfiniteScroll")(enableInfiniteScroll)
+    if (!js.isUndefined(enableInfiniteScroll)) __obj.updateDynamic("enableInfiniteScroll")(enableInfiniteScroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridOptions]
   }
 }

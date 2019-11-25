@@ -29,14 +29,14 @@ object Directive {
     selector: String = null
   ): Directive = {
     val __obj = js.Dynamic.literal()
-    if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs)
-    if (guards != null) __obj.updateDynamic("guards")(guards)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs)
-    if (providers != null) __obj.updateDynamic("providers")(providers)
-    if (queries != null) __obj.updateDynamic("queries")(queries)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
+    if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs.asInstanceOf[js.Any])
+    if (guards != null) __obj.updateDynamic("guards")(guards.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
+    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
+    if (providers != null) __obj.updateDynamic("providers")(providers.asInstanceOf[js.Any])
+    if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[Directive]
   }
 }

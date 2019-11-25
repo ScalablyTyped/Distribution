@@ -32,12 +32,12 @@ object AssertQueue {
     messageTtl: Int | Double = null
   ): AssertQueue = {
     val __obj = js.Dynamic.literal()
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
-    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete)
-    if (deadLetterExchange != null) __obj.updateDynamic("deadLetterExchange")(deadLetterExchange)
-    if (deadLetterRoutingKey != null) __obj.updateDynamic("deadLetterRoutingKey")(deadLetterRoutingKey)
-    if (!js.isUndefined(durable)) __obj.updateDynamic("durable")(durable)
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete.asInstanceOf[js.Any])
+    if (deadLetterExchange != null) __obj.updateDynamic("deadLetterExchange")(deadLetterExchange.asInstanceOf[js.Any])
+    if (deadLetterRoutingKey != null) __obj.updateDynamic("deadLetterRoutingKey")(deadLetterRoutingKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(durable)) __obj.updateDynamic("durable")(durable.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (maxPriority != null) __obj.updateDynamic("maxPriority")(maxPriority.asInstanceOf[js.Any])

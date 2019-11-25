@@ -22,7 +22,7 @@ object Anon_AnonymousIdIntegrations {
   ): Anon_AnonymousIdIntegrations = {
     val __obj = js.Dynamic.literal(previousId = previousId.asInstanceOf[js.Any])
     if (anonymousId != null) __obj.updateDynamic("anonymousId")(anonymousId.asInstanceOf[js.Any])
-    if (integrations != null) __obj.updateDynamic("integrations")(integrations)
+    if (integrations != null) __obj.updateDynamic("integrations")(integrations.asInstanceOf[js.Any])
     if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AnonymousIdIntegrations]
   }

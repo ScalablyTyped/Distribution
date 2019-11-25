@@ -15,10 +15,10 @@ object OpenGraphProfile {
   @scala.inline
   def apply(firstName: String = null, gender: String = null, lastName: String = null, username: String = null): OpenGraphProfile = {
     val __obj = js.Dynamic.literal()
-    if (firstName != null) __obj.updateDynamic("firstName")(firstName)
-    if (gender != null) __obj.updateDynamic("gender")(gender)
-    if (lastName != null) __obj.updateDynamic("lastName")(lastName)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (firstName != null) __obj.updateDynamic("firstName")(firstName.asInstanceOf[js.Any])
+    if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
+    if (lastName != null) __obj.updateDynamic("lastName")(lastName.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenGraphProfile]
   }
 }

@@ -15,7 +15,7 @@ trait HSVA extends js.Object {
 object HSVA {
   @scala.inline
   def apply(h: Double, s: Double, v: Double, a: Int | Double = null): HSVA = {
-    val __obj = js.Dynamic.literal(h = h, s = s, v = v)
+    val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
     if (a != null) __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
     __obj.asInstanceOf[HSVA]
   }

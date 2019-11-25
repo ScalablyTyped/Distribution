@@ -12,7 +12,7 @@ trait DirectRepositoryGetPresenceResponseRootObject extends js.Object {
 object DirectRepositoryGetPresenceResponseRootObject {
   @scala.inline
   def apply(status: String, user_presence: js.Any): DirectRepositoryGetPresenceResponseRootObject = {
-    val __obj = js.Dynamic.literal(status = status, user_presence = user_presence)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], user_presence = user_presence.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DirectRepositoryGetPresenceResponseRootObject]
   }

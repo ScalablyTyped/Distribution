@@ -22,11 +22,11 @@ object options {
     recurse: js.UndefOr[Boolean] = js.undefined
   ): options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(duplicates)) __obj.updateDynamic("duplicates")(duplicates)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (mapKey != null) __obj.updateDynamic("mapKey")(mapKey)
-    if (mapValue != null) __obj.updateDynamic("mapValue")(mapValue)
-    if (!js.isUndefined(recurse)) __obj.updateDynamic("recurse")(recurse)
+    if (!js.isUndefined(duplicates)) __obj.updateDynamic("duplicates")(duplicates.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (mapKey != null) __obj.updateDynamic("mapKey")(mapKey.asInstanceOf[js.Any])
+    if (mapValue != null) __obj.updateDynamic("mapValue")(mapValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(recurse)) __obj.updateDynamic("recurse")(recurse.asInstanceOf[js.Any])
     __obj.asInstanceOf[options]
   }
 }

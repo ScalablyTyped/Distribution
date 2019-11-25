@@ -53,8 +53,8 @@ object Options {
   ): Options[EmittedType] = {
     val __obj = js.Dynamic.literal()
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (!js.isUndefined(multiArgs)) __obj.updateDynamic("multiArgs")(multiArgs)
-    if (rejectionEvents != null) __obj.updateDynamic("rejectionEvents")(rejectionEvents)
+    if (!js.isUndefined(multiArgs)) __obj.updateDynamic("multiArgs")(multiArgs.asInstanceOf[js.Any])
+    if (rejectionEvents != null) __obj.updateDynamic("rejectionEvents")(rejectionEvents.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[EmittedType]]
   }

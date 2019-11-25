@@ -31,7 +31,7 @@ object Participant {
     teamId: Double,
     timeline: ParticipantTimeline
   ): Participant = {
-    val __obj = js.Dynamic.literal(championId = championId, highestAchievedSeasonTier = highestAchievedSeasonTier, masteries = masteries, participantId = participantId, runes = runes, spell1Id = spell1Id, spell2Id = spell2Id, stats = stats, teamId = teamId, timeline = timeline)
+    val __obj = js.Dynamic.literal(championId = championId.asInstanceOf[js.Any], highestAchievedSeasonTier = highestAchievedSeasonTier.asInstanceOf[js.Any], masteries = masteries.asInstanceOf[js.Any], participantId = participantId.asInstanceOf[js.Any], runes = runes.asInstanceOf[js.Any], spell1Id = spell1Id.asInstanceOf[js.Any], spell2Id = spell2Id.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], teamId = teamId.asInstanceOf[js.Any], timeline = timeline.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Participant]
   }

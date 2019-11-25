@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait PaymentSignType extends js.Object
 
+object PaymentSignType {
+  @scala.inline
+  def `HMAC-SHA256`: typings.weixinDashApp.weixinDashAppStrings.`HMAC-SHA256` = this.cast("HMAC-SHA256")
+  @scala.inline
+  def MD5: typings.weixinDashApp.weixinDashAppStrings.MD5 = this.cast("MD5")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

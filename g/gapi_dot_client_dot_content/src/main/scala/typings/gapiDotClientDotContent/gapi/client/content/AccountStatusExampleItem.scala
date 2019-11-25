@@ -27,11 +27,11 @@ object AccountStatusExampleItem {
     valueOnLandingPage: String = null
   ): AccountStatusExampleItem = {
     val __obj = js.Dynamic.literal()
-    if (itemId != null) __obj.updateDynamic("itemId")(itemId)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (submittedValue != null) __obj.updateDynamic("submittedValue")(submittedValue)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (valueOnLandingPage != null) __obj.updateDynamic("valueOnLandingPage")(valueOnLandingPage)
+    if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (submittedValue != null) __obj.updateDynamic("submittedValue")(submittedValue.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (valueOnLandingPage != null) __obj.updateDynamic("valueOnLandingPage")(valueOnLandingPage.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountStatusExampleItem]
   }
 }

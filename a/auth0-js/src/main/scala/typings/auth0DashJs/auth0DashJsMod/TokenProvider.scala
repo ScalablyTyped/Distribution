@@ -14,7 +14,7 @@ object TokenProvider {
   def apply(cacheTTLInSeconds: Int | Double = null, enableCache: js.UndefOr[Boolean] = js.undefined): TokenProvider = {
     val __obj = js.Dynamic.literal()
     if (cacheTTLInSeconds != null) __obj.updateDynamic("cacheTTLInSeconds")(cacheTTLInSeconds.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCache)) __obj.updateDynamic("enableCache")(enableCache)
+    if (!js.isUndefined(enableCache)) __obj.updateDynamic("enableCache")(enableCache.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenProvider]
   }
 }

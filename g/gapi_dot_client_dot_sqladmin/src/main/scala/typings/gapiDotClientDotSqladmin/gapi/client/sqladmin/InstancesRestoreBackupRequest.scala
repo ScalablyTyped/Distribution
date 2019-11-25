@@ -13,7 +13,7 @@ object InstancesRestoreBackupRequest {
   @scala.inline
   def apply(restoreBackupContext: RestoreBackupContext = null): InstancesRestoreBackupRequest = {
     val __obj = js.Dynamic.literal()
-    if (restoreBackupContext != null) __obj.updateDynamic("restoreBackupContext")(restoreBackupContext)
+    if (restoreBackupContext != null) __obj.updateDynamic("restoreBackupContext")(restoreBackupContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstancesRestoreBackupRequest]
   }
 }

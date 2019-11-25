@@ -46,8 +46,8 @@ object Anon_Background {
     standard: Shader,
     StringDictionary: /* name */ StringDictionary[Shader] = null
   ): Anon_Background = {
-    val __obj = js.Dynamic.literal(background = background, basic = basic, cube = cube, dashed = dashed, depth = depth, distanceRGBA = distanceRGBA, equirect = equirect, lambert = lambert, matcap = matcap, normal = normal, phong = phong, physical = physical, points = points, shadow = shadow, sprite = sprite, standard = standard)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], basic = basic.asInstanceOf[js.Any], cube = cube.asInstanceOf[js.Any], dashed = dashed.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], distanceRGBA = distanceRGBA.asInstanceOf[js.Any], equirect = equirect.asInstanceOf[js.Any], lambert = lambert.asInstanceOf[js.Any], matcap = matcap.asInstanceOf[js.Any], normal = normal.asInstanceOf[js.Any], phong = phong.asInstanceOf[js.Any], physical = physical.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any], shadow = shadow.asInstanceOf[js.Any], sprite = sprite.asInstanceOf[js.Any], standard = standard.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Background]
   }
 }

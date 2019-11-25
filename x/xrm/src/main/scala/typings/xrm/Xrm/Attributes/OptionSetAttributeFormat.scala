@@ -12,5 +12,14 @@ import scala.scalajs.js.annotation._
   - typings.xrm.xrmStrings.language
   - typings.xrm.xrmStrings.timezone
 */
-trait OptionSetAttributeFormat extends AttributeFormat
+trait OptionSetAttributeFormat extends js.Object
+
+object OptionSetAttributeFormat {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def language: typings.xrm.xrmStrings.language = this.cast("language")
+  @scala.inline
+  def timezone: typings.xrm.xrmStrings.timezone = this.cast("timezone")
+}
 

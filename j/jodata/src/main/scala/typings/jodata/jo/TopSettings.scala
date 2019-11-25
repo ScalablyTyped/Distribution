@@ -11,8 +11,8 @@ trait TopSettings extends ISettings {
 
 object TopSettings {
   @scala.inline
-  def apply(DefaultTop: Double, Top: Double, isSet: () => Boolean, reset: () => Unit, toString: () => String): TopSettings = {
-    val __obj = js.Dynamic.literal(DefaultTop = DefaultTop, Top = Top, isSet = js.Any.fromFunction0(isSet), reset = js.Any.fromFunction0(reset), toString = js.Any.fromFunction0(toString))
+  def apply(DefaultTop: Double, Top: Double, isSet: () => Boolean, reset: () => Unit): TopSettings = {
+    val __obj = js.Dynamic.literal(DefaultTop = DefaultTop.asInstanceOf[js.Any], Top = Top.asInstanceOf[js.Any], isSet = js.Any.fromFunction0(isSet), reset = js.Any.fromFunction0(reset))
   
     __obj.asInstanceOf[TopSettings]
   }

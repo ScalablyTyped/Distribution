@@ -20,7 +20,7 @@ trait InputValuesQuery extends js.Object {
 object InputValuesQuery {
   @scala.inline
   def apply(currentValues: StringDictionary[String], inputValues: js.Array[InputValues], resource: js.Any): InputValuesQuery = {
-    val __obj = js.Dynamic.literal(currentValues = currentValues, inputValues = inputValues, resource = resource)
+    val __obj = js.Dynamic.literal(currentValues = currentValues.asInstanceOf[js.Any], inputValues = inputValues.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InputValuesQuery]
   }

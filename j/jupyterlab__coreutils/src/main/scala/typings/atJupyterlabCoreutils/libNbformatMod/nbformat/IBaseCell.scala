@@ -27,7 +27,7 @@ trait IBaseCell extends JSONObject {
 object IBaseCell {
   @scala.inline
   def apply(cell_type: String, metadata: Partial[ICellMetadata], source: MultilineString): IBaseCell = {
-    val __obj = js.Dynamic.literal(cell_type = cell_type, metadata = metadata, source = source.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cell_type = cell_type.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IBaseCell]
   }

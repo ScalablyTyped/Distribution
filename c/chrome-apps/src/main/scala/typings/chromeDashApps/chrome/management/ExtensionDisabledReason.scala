@@ -1,7 +1,7 @@
 package typings.chromeDashApps.chrome.management
 
 import typings.chromeDashApps.chromeDashAppsStrings.permissions_increase
-import typings.chromeDashApps.chromeDashAppsStrings.unknown
+import typings.chromeDashApps.chromeDashAppsStrings.unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ExtensionDisabledReason extends js.Object {
   var PERMISSIONS_INCREASE: permissions_increase = js.native
-  var UNKNOWN: unknown = js.native
+  var UNKNOWN: unknown_ = js.native
 }
 

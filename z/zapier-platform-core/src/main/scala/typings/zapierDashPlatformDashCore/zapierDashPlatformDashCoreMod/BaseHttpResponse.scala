@@ -22,7 +22,7 @@ object BaseHttpResponse {
     status: Double,
     throwForStatus: () => Unit
   ): BaseHttpResponse = {
-    val __obj = js.Dynamic.literal(getHeader = js.Any.fromFunction1(getHeader), headers = headers, request = request, status = status, throwForStatus = js.Any.fromFunction0(throwForStatus))
+    val __obj = js.Dynamic.literal(getHeader = js.Any.fromFunction1(getHeader), headers = headers.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], throwForStatus = js.Any.fromFunction0(throwForStatus))
   
     __obj.asInstanceOf[BaseHttpResponse]
   }

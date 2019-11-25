@@ -1,12 +1,13 @@
 package typings.asana.asanaMod.auth
 
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("asana", "auth.OauthError")
 @js.native
-class OauthErrorCls protected () extends OauthError {
+class OauthErrorCls protected () extends Error {
   /**
     * @param options {Object} A data blob parsed from a query string or JSON
     * response from the Asana API

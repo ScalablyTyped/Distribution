@@ -12,7 +12,7 @@ trait Anon_Production extends js.Object {
 object Anon_Production {
   @scala.inline
   def apply(production: String, staging: String): Anon_Production = {
-    val __obj = js.Dynamic.literal(production = production, staging = staging)
+    val __obj = js.Dynamic.literal(production = production.asInstanceOf[js.Any], staging = staging.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Production]
   }

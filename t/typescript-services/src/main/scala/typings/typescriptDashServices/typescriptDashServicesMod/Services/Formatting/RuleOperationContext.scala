@@ -1,6 +1,5 @@
 package typings.typescriptDashServices.typescriptDashServicesMod.Services.Formatting
 
-import typings.typescriptDashServices.Fn_Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class RuleOperationContext protected ()
   extends typings.typescriptDashServices.TypeScript.Services.Formatting.RuleOperationContext {
-  def this(funcs: Fn_Context*) = this()
+  def this(funcs: (js.Function1[
+        /* context */ typings.typescriptDashServices.TypeScript.Services.Formatting.FormattingContext, 
+        Boolean
+      ])*) = this()
 }
 
 /* static members */

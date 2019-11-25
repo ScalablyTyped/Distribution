@@ -15,7 +15,7 @@ object Anon_IntervalRunning {
   def apply(interval: Int | Double = null, running: js.UndefOr[Boolean] = js.undefined): Anon_IntervalRunning = {
     val __obj = js.Dynamic.literal()
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(running)) __obj.updateDynamic("running")(running)
+    if (!js.isUndefined(running)) __obj.updateDynamic("running")(running.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IntervalRunning]
   }
 }

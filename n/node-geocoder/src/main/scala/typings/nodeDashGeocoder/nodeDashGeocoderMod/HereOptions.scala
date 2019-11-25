@@ -28,12 +28,12 @@ object HereOptions {
     production: js.UndefOr[Boolean] = js.undefined,
     state: String = null
   ): HereOptions = {
-    val __obj = js.Dynamic.literal(appCode = appCode, appId = appId, provider = provider)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (politicalView != null) __obj.updateDynamic("politicalView")(politicalView)
-    if (!js.isUndefined(production)) __obj.updateDynamic("production")(production)
-    if (state != null) __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(appCode = appCode.asInstanceOf[js.Any], appId = appId.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (politicalView != null) __obj.updateDynamic("politicalView")(politicalView.asInstanceOf[js.Any])
+    if (!js.isUndefined(production)) __obj.updateDynamic("production")(production.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[HereOptions]
   }
 }

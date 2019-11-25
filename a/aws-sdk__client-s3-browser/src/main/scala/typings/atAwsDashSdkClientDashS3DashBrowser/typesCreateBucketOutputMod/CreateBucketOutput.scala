@@ -19,8 +19,8 @@ trait CreateBucketOutput
 object CreateBucketOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, Location: String = null): CreateBucketOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Location != null) __obj.updateDynamic("Location")(Location)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Location != null) __obj.updateDynamic("Location")(Location.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBucketOutput]
   }
 }

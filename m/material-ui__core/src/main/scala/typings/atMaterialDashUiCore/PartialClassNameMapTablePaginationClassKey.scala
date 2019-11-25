@@ -33,16 +33,16 @@ object PartialClassNameMapTablePaginationClassKey {
     toolbar: String = null
   ): PartialClassNameMapTablePaginationClassKey = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (menuItem != null) __obj.updateDynamic("menuItem")(menuItem)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (select != null) __obj.updateDynamic("select")(select)
-    if (selectIcon != null) __obj.updateDynamic("selectIcon")(selectIcon)
-    if (selectRoot != null) __obj.updateDynamic("selectRoot")(selectRoot)
-    if (spacer != null) __obj.updateDynamic("spacer")(spacer)
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar)
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (menuItem != null) __obj.updateDynamic("menuItem")(menuItem.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
+    if (selectIcon != null) __obj.updateDynamic("selectIcon")(selectIcon.asInstanceOf[js.Any])
+    if (selectRoot != null) __obj.updateDynamic("selectRoot")(selectRoot.asInstanceOf[js.Any])
+    if (spacer != null) __obj.updateDynamic("spacer")(spacer.asInstanceOf[js.Any])
+    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapTablePaginationClassKey]
   }
 }

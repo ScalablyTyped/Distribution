@@ -11,7 +11,7 @@ trait Anon_Paymentmethod extends js.Object {
 object Anon_Paymentmethod {
   @scala.inline
   def apply(payment_method: String): Anon_Paymentmethod = {
-    val __obj = js.Dynamic.literal(payment_method = payment_method)
+    val __obj = js.Dynamic.literal(payment_method = payment_method.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Paymentmethod]
   }

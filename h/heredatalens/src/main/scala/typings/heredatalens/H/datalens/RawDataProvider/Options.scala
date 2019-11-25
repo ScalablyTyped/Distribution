@@ -36,7 +36,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (dataToFeatures != null) __obj.updateDynamic("dataToFeatures")(js.Any.fromFunction1(dataToFeatures))
-    if (dataUrl != null) __obj.updateDynamic("dataUrl")(dataUrl)
+    if (dataUrl != null) __obj.updateDynamic("dataUrl")(dataUrl.asInstanceOf[js.Any])
     if (featuresToRows != null) __obj.updateDynamic("featuresToRows")(js.Any.fromFunction6(featuresToRows))
     __obj.asInstanceOf[Options]
   }

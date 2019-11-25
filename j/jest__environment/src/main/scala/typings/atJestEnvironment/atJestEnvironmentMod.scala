@@ -277,7 +277,7 @@ object atJestEnvironmentMod extends js.Object {
   type Module = NodeModule
   type ModuleWrapper = js.Function8[
     /* module */ Module, 
-    /* import warning: ImportType.apply Failed type conversion: @jest/environment.@jest/environment.Module['exports'] */ /* exports */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: @jest/environment.@jest/environment.Module['exports'] */ /* exports */ js.Any, 
     /* require */ NodeRequireFunction with (js.Function1[/* id */ String, _]), 
     /* __dirname */ String, 
     /* __filename */ String, 

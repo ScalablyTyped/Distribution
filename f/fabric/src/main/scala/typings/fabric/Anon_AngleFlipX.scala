@@ -29,7 +29,7 @@ object Anon_AngleFlipX {
     skewY: Double,
     top: Double
   ): Anon_AngleFlipX = {
-    val __obj = js.Dynamic.literal(angle = angle, flipX = flipX, flipY = flipY, left = left, scaleX = scaleX, scaleY = scaleY, skewX = skewX, skewY = skewY, top = top)
+    val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], flipX = flipX.asInstanceOf[js.Any], flipY = flipY.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], scaleX = scaleX.asInstanceOf[js.Any], scaleY = scaleY.asInstanceOf[js.Any], skewX = skewX.asInstanceOf[js.Any], skewY = skewY.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AngleFlipX]
   }

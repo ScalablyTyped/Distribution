@@ -14,7 +14,7 @@ trait TagFrameFlags extends js.Object {
 object TagFrameFlags {
   @scala.inline
   def apply(format: Anon_Compression, message: Anon_Filealterpreservation): TagFrameFlags = {
-    val __obj = js.Dynamic.literal(format = format, message = message)
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TagFrameFlags]
   }

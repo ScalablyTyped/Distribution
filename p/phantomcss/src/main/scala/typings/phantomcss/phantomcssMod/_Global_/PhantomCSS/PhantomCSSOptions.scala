@@ -106,25 +106,25 @@ object PhantomCSSOptions {
     rebase: js.Any = null,
     screenshotRoot: String = null
   ): PhantomCSSOptions = {
-    val __obj = js.Dynamic.literal(addIteratorToImage = addIteratorToImage)
-    if (!js.isUndefined(addLabelToFailedImage)) __obj.updateDynamic("addLabelToFailedImage")(addLabelToFailedImage)
-    if (casper != null) __obj.updateDynamic("casper")(casper)
-    if (!js.isUndefined(cleanupComparisonImages)) __obj.updateDynamic("cleanupComparisonImages")(cleanupComparisonImages)
-    if (comparisonResultRoot != null) __obj.updateDynamic("comparisonResultRoot")(comparisonResultRoot)
-    if (failedComparisonsRoot != null) __obj.updateDynamic("failedComparisonsRoot")(failedComparisonsRoot)
+    val __obj = js.Dynamic.literal(addIteratorToImage = addIteratorToImage.asInstanceOf[js.Any])
+    if (!js.isUndefined(addLabelToFailedImage)) __obj.updateDynamic("addLabelToFailedImage")(addLabelToFailedImage.asInstanceOf[js.Any])
+    if (casper != null) __obj.updateDynamic("casper")(casper.asInstanceOf[js.Any])
+    if (!js.isUndefined(cleanupComparisonImages)) __obj.updateDynamic("cleanupComparisonImages")(cleanupComparisonImages.asInstanceOf[js.Any])
+    if (comparisonResultRoot != null) __obj.updateDynamic("comparisonResultRoot")(comparisonResultRoot.asInstanceOf[js.Any])
+    if (failedComparisonsRoot != null) __obj.updateDynamic("failedComparisonsRoot")(failedComparisonsRoot.asInstanceOf[js.Any])
     if (fileNameGetter != null) __obj.updateDynamic("fileNameGetter")(js.Any.fromFunction2(fileNameGetter))
-    if (hideElements != null) __obj.updateDynamic("hideElements")(hideElements)
-    if (libraryRoot != null) __obj.updateDynamic("libraryRoot")(libraryRoot)
+    if (hideElements != null) __obj.updateDynamic("hideElements")(hideElements.asInstanceOf[js.Any])
+    if (libraryRoot != null) __obj.updateDynamic("libraryRoot")(libraryRoot.asInstanceOf[js.Any])
     if (mismatchTolerance != null) __obj.updateDynamic("mismatchTolerance")(mismatchTolerance.asInstanceOf[js.Any])
     if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction3(onComplete))
     if (onFail != null) __obj.updateDynamic("onFail")(js.Any.fromFunction1(onFail))
     if (onNewImage != null) __obj.updateDynamic("onNewImage")(js.Any.fromFunction1(onNewImage))
     if (onPass != null) __obj.updateDynamic("onPass")(js.Any.fromFunction1(onPass))
     if (onTimeout != null) __obj.updateDynamic("onTimeout")(js.Any.fromFunction1(onTimeout))
-    if (outputSettings != null) __obj.updateDynamic("outputSettings")(outputSettings)
-    if (!js.isUndefined(prefixCount)) __obj.updateDynamic("prefixCount")(prefixCount)
-    if (rebase != null) __obj.updateDynamic("rebase")(rebase)
-    if (screenshotRoot != null) __obj.updateDynamic("screenshotRoot")(screenshotRoot)
+    if (outputSettings != null) __obj.updateDynamic("outputSettings")(outputSettings.asInstanceOf[js.Any])
+    if (!js.isUndefined(prefixCount)) __obj.updateDynamic("prefixCount")(prefixCount.asInstanceOf[js.Any])
+    if (rebase != null) __obj.updateDynamic("rebase")(rebase.asInstanceOf[js.Any])
+    if (screenshotRoot != null) __obj.updateDynamic("screenshotRoot")(screenshotRoot.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhantomCSSOptions]
   }
 }

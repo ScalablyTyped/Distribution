@@ -60,7 +60,7 @@ object Anon_IARL {
     ISRF: String,
     ITCH: String
   ): Anon_IARL = {
-    val __obj = js.Dynamic.literal(IARL = IARL, IART = IART, ICMS = ICMS, ICMT = ICMT, ICOP = ICOP, ICRD = ICRD.asInstanceOf[js.Any], ICRP = ICRP, IDIM = IDIM, IDPI = IDPI, IENG = IENG, IGNR = IGNR, IKEY = IKEY, ILGT = ILGT, ILNG = ILNG, IMED = IMED, INAM = INAM, IPLT = IPLT, IPRD = IPRD, ISBJ = ISBJ, ISFT = ISFT, ISHP = ISHP, ISRC = ISRC, ISRF = ISRF, ITCH = ITCH)
+    val __obj = js.Dynamic.literal(IARL = IARL.asInstanceOf[js.Any], IART = IART.asInstanceOf[js.Any], ICMS = ICMS.asInstanceOf[js.Any], ICMT = ICMT.asInstanceOf[js.Any], ICOP = ICOP.asInstanceOf[js.Any], ICRD = ICRD.asInstanceOf[js.Any], ICRP = ICRP.asInstanceOf[js.Any], IDIM = IDIM.asInstanceOf[js.Any], IDPI = IDPI.asInstanceOf[js.Any], IENG = IENG.asInstanceOf[js.Any], IGNR = IGNR.asInstanceOf[js.Any], IKEY = IKEY.asInstanceOf[js.Any], ILGT = ILGT.asInstanceOf[js.Any], ILNG = ILNG.asInstanceOf[js.Any], IMED = IMED.asInstanceOf[js.Any], INAM = INAM.asInstanceOf[js.Any], IPLT = IPLT.asInstanceOf[js.Any], IPRD = IPRD.asInstanceOf[js.Any], ISBJ = ISBJ.asInstanceOf[js.Any], ISFT = ISFT.asInstanceOf[js.Any], ISHP = ISHP.asInstanceOf[js.Any], ISRC = ISRC.asInstanceOf[js.Any], ISRF = ISRF.asInstanceOf[js.Any], ITCH = ITCH.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IARL]
   }

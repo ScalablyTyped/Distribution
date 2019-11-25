@@ -25,7 +25,7 @@ object IIDRange {
     SetIDs: (Double, Double) => Unit,
     SetIDs_32bit: (String, String) => Unit
   ): IIDRange = {
-    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), MaxID = MaxID, MaxID_32bit = MaxID_32bit, MinID = MinID, MinID_32bit = MinID_32bit, SetIDs = js.Any.fromFunction2(SetIDs), SetIDs_32bit = js.Any.fromFunction2(SetIDs_32bit))
+    val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), MaxID = MaxID.asInstanceOf[js.Any], MaxID_32bit = MaxID_32bit.asInstanceOf[js.Any], MinID = MinID.asInstanceOf[js.Any], MinID_32bit = MinID_32bit.asInstanceOf[js.Any], SetIDs = js.Any.fromFunction2(SetIDs), SetIDs_32bit = js.Any.fromFunction2(SetIDs_32bit))
   
     __obj.asInstanceOf[IIDRange]
   }

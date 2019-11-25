@@ -11,7 +11,7 @@ trait PullsCreateFromIssueResponseLinksComments extends js.Object {
 object PullsCreateFromIssueResponseLinksComments {
   @scala.inline
   def apply(href: String): PullsCreateFromIssueResponseLinksComments = {
-    val __obj = js.Dynamic.literal(href = href)
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PullsCreateFromIssueResponseLinksComments]
   }

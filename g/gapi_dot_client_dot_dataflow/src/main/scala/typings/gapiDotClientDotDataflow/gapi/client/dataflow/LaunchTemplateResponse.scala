@@ -16,7 +16,7 @@ object LaunchTemplateResponse {
   @scala.inline
   def apply(job: Job = null): LaunchTemplateResponse = {
     val __obj = js.Dynamic.literal()
-    if (job != null) __obj.updateDynamic("job")(job)
+    if (job != null) __obj.updateDynamic("job")(job.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplateResponse]
   }
 }

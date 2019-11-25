@@ -12,8 +12,8 @@ object MaybeDocument {
   @scala.inline
   def apply(_id: String = null, _rev: String = null): MaybeDocument = {
     val __obj = js.Dynamic.literal()
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_rev != null) __obj.updateDynamic("_rev")(_rev)
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_rev != null) __obj.updateDynamic("_rev")(_rev.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaybeDocument]
   }
 }

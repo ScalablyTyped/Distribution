@@ -15,8 +15,8 @@ object EventChild {
   @scala.inline
   def apply(childId: String = null, kind: String = null): EventChild = {
     val __obj = js.Dynamic.literal()
-    if (childId != null) __obj.updateDynamic("childId")(childId)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (childId != null) __obj.updateDynamic("childId")(childId.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventChild]
   }
 }

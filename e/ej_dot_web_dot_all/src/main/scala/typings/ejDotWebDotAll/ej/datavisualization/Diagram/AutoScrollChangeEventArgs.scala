@@ -17,8 +17,8 @@ object AutoScrollChangeEventArgs {
   @scala.inline
   def apply(delay: String = null, diagramId: String = null): AutoScrollChangeEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay)
-    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoScrollChangeEventArgs]
   }
 }

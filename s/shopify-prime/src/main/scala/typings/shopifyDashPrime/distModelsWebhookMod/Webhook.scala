@@ -52,14 +52,14 @@ object Webhook {
     metafield_namespaces: js.Array[String] = null,
     updated_at: String = null
   ): Webhook = {
-    val __obj = js.Dynamic.literal(address = address, topic = topic.asInstanceOf[js.Any])
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (metafield_namespaces != null) __obj.updateDynamic("metafield_namespaces")(metafield_namespaces)
-    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    if (metafield_namespaces != null) __obj.updateDynamic("metafield_namespaces")(metafield_namespaces.asInstanceOf[js.Any])
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[Webhook]
   }
 }

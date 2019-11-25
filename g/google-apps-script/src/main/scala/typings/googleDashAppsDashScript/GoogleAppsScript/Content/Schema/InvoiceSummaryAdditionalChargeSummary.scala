@@ -13,8 +13,8 @@ object InvoiceSummaryAdditionalChargeSummary {
   @scala.inline
   def apply(totalAmount: Amount = null, `type`: String = null): InvoiceSummaryAdditionalChargeSummary = {
     val __obj = js.Dynamic.literal()
-    if (totalAmount != null) __obj.updateDynamic("totalAmount")(totalAmount)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (totalAmount != null) __obj.updateDynamic("totalAmount")(totalAmount.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvoiceSummaryAdditionalChargeSummary]
   }
 }

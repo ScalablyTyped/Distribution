@@ -13,7 +13,7 @@ trait Anon_Artist extends js.Object {
 object Anon_Artist {
   @scala.inline
   def apply(artist: String, cover: String, title: String): Anon_Artist = {
-    val __obj = js.Dynamic.literal(artist = artist, cover = cover, title = title)
+    val __obj = js.Dynamic.literal(artist = artist.asInstanceOf[js.Any], cover = cover.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Artist]
   }

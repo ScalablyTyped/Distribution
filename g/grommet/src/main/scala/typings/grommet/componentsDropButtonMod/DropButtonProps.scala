@@ -28,13 +28,13 @@ object DropButtonProps {
     onOpen: /* repeated */ js.Any => _ = null,
     open: js.UndefOr[Boolean] = js.undefined
   ): DropButtonProps = {
-    val __obj = js.Dynamic.literal(dropContent = dropContent)
-    if (dropAlign != null) __obj.updateDynamic("dropAlign")(dropAlign)
-    if (dropProps != null) __obj.updateDynamic("dropProps")(dropProps)
-    if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget)
+    val __obj = js.Dynamic.literal(dropContent = dropContent.asInstanceOf[js.Any])
+    if (dropAlign != null) __obj.updateDynamic("dropAlign")(dropAlign.asInstanceOf[js.Any])
+    if (dropProps != null) __obj.updateDynamic("dropProps")(dropProps.asInstanceOf[js.Any])
+    if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropButtonProps]
   }
 }

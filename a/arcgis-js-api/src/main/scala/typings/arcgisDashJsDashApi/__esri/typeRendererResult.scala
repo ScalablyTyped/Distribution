@@ -58,7 +58,7 @@ object typeRendererResult {
     typeScheme: TypeScheme,
     uniqueValueInfos: js.Array[typeUniqueValueInfo]
   ): typeRendererResult = {
-    val __obj = js.Dynamic.literal(basemapId = basemapId, basemapTheme = basemapTheme, constructor = constructor, excludedUniqueValueInfos = excludedUniqueValueInfos, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer, typeScheme = typeScheme, uniqueValueInfos = uniqueValueInfos)
+    val __obj = js.Dynamic.literal(basemapId = basemapId.asInstanceOf[js.Any], basemapTheme = basemapTheme.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], excludedUniqueValueInfos = excludedUniqueValueInfos.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer.asInstanceOf[js.Any], typeScheme = typeScheme.asInstanceOf[js.Any], uniqueValueInfos = uniqueValueInfos.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[typeRendererResult]
   }

@@ -198,14 +198,14 @@ object PhotoSwipeProps {
     unbindEvents: /* instance */ PhotoSwipe => Unit = null,
     updateScrollOffset: (/* instance */ PhotoSwipe, /* _offset */ Anon_X) => Unit = null
   ): PhotoSwipeProps = {
-    val __obj = js.Dynamic.literal(isOpen = isOpen, items = items)
+    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     if (afterChange != null) __obj.updateDynamic("afterChange")(js.Any.fromFunction1(afterChange))
     if (beforeChange != null) __obj.updateDynamic("beforeChange")(js.Any.fromFunction1(beforeChange))
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1(close))
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
     if (gettingData != null) __obj.updateDynamic("gettingData")(js.Any.fromFunction3(gettingData))
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (imageLoadComplete != null) __obj.updateDynamic("imageLoadComplete")(js.Any.fromFunction3(imageLoadComplete))
     if (initialZoomIn != null) __obj.updateDynamic("initialZoomIn")(js.Any.fromFunction1(initialZoomIn))
     if (initialZoomInEnd != null) __obj.updateDynamic("initialZoomInEnd")(js.Any.fromFunction1(initialZoomInEnd))
@@ -213,7 +213,7 @@ object PhotoSwipeProps {
     if (initialZoomOutEnd != null) __obj.updateDynamic("initialZoomOutEnd")(js.Any.fromFunction1(initialZoomOutEnd))
     if (mouseUsed != null) __obj.updateDynamic("mouseUsed")(js.Any.fromFunction1(mouseUsed))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (parseVerticalMargin != null) __obj.updateDynamic("parseVerticalMargin")(js.Any.fromFunction2(parseVerticalMargin))
     if (preventDragEvent != null) __obj.updateDynamic("preventDragEvent")(js.Any.fromFunction4(preventDragEvent))
     if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction1(resize))

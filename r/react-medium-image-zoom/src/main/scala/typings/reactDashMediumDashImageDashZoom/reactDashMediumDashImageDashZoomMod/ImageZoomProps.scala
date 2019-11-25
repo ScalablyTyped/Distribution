@@ -31,15 +31,15 @@ object ImageZoomProps {
     zoomImage: ImageZoom_ZoomImage = null,
     zoomMargin: Int | Double = null
   ): ImageZoomProps = {
-    val __obj = js.Dynamic.literal(image = image)
-    if (defaultStyles != null) __obj.updateDynamic("defaultStyles")(defaultStyles)
-    if (!js.isUndefined(isZoomed)) __obj.updateDynamic("isZoomed")(isZoomed)
+    val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
+    if (defaultStyles != null) __obj.updateDynamic("defaultStyles")(defaultStyles.asInstanceOf[js.Any])
+    if (!js.isUndefined(isZoomed)) __obj.updateDynamic("isZoomed")(isZoomed.asInstanceOf[js.Any])
     if (onUnzoom != null) __obj.updateDynamic("onUnzoom")(js.Any.fromFunction0(onUnzoom))
     if (onZoom != null) __obj.updateDynamic("onZoom")(js.Any.fromFunction0(onZoom))
     if (shouldHandleZoom != null) __obj.updateDynamic("shouldHandleZoom")(js.Any.fromFunction0(shouldHandleZoom))
-    if (!js.isUndefined(shouldReplaceImage)) __obj.updateDynamic("shouldReplaceImage")(shouldReplaceImage)
-    if (!js.isUndefined(shouldRespectMaxDimension)) __obj.updateDynamic("shouldRespectMaxDimension")(shouldRespectMaxDimension)
-    if (zoomImage != null) __obj.updateDynamic("zoomImage")(zoomImage)
+    if (!js.isUndefined(shouldReplaceImage)) __obj.updateDynamic("shouldReplaceImage")(shouldReplaceImage.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldRespectMaxDimension)) __obj.updateDynamic("shouldRespectMaxDimension")(shouldRespectMaxDimension.asInstanceOf[js.Any])
+    if (zoomImage != null) __obj.updateDynamic("zoomImage")(zoomImage.asInstanceOf[js.Any])
     if (zoomMargin != null) __obj.updateDynamic("zoomMargin")(zoomMargin.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageZoomProps]
   }

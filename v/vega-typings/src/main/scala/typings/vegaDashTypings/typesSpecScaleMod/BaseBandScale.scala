@@ -29,7 +29,7 @@ object BaseBandScale {
     round: Boolean | SignalRef = null,
     `type`: ScaleType = null
   ): BaseBandScale = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
@@ -41,7 +41,7 @@ object BaseBandScale {
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (reverse != null) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
     if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseBandScale]
   }
 }

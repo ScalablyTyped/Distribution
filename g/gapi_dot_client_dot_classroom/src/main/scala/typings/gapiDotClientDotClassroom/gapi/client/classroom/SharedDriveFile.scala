@@ -15,8 +15,8 @@ object SharedDriveFile {
   @scala.inline
   def apply(driveFile: DriveFile = null, shareMode: String = null): SharedDriveFile = {
     val __obj = js.Dynamic.literal()
-    if (driveFile != null) __obj.updateDynamic("driveFile")(driveFile)
-    if (shareMode != null) __obj.updateDynamic("shareMode")(shareMode)
+    if (driveFile != null) __obj.updateDynamic("driveFile")(driveFile.asInstanceOf[js.Any])
+    if (shareMode != null) __obj.updateDynamic("shareMode")(shareMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedDriveFile]
   }
 }

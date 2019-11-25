@@ -36,12 +36,12 @@ object InProgressEventArgs {
     `type`: String = null
   ): InProgressEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (e != null) __obj.updateDynamic("e")(e)
-    if (files != null) __obj.updateDynamic("files")(files)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (percentage != null) __obj.updateDynamic("percentage")(percentage)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (e != null) __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InProgressEventArgs]
   }
 }

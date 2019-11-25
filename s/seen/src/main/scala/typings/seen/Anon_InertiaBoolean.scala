@@ -12,7 +12,7 @@ object Anon_InertiaBoolean {
   @scala.inline
   def apply(inertia: js.UndefOr[Boolean] = js.undefined): Anon_InertiaBoolean = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(inertia)) __obj.updateDynamic("inertia")(inertia)
+    if (!js.isUndefined(inertia)) __obj.updateDynamic("inertia")(inertia.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_InertiaBoolean]
   }
 }

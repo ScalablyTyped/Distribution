@@ -12,7 +12,7 @@ object Anon_Idempotent {
   @scala.inline
   def apply(idempotent: js.UndefOr[Boolean] = js.undefined): Anon_Idempotent = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(idempotent)) __obj.updateDynamic("idempotent")(idempotent)
+    if (!js.isUndefined(idempotent)) __obj.updateDynamic("idempotent")(idempotent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Idempotent]
   }
 }

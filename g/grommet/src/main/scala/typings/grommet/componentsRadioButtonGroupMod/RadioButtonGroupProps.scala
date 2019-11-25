@@ -22,9 +22,9 @@ object RadioButtonGroupProps {
     onChange: /* event */ ChangeEvent[HTMLInputElement] => Unit = null,
     value: String = null
   ): RadioButtonGroupProps = {
-    val __obj = js.Dynamic.literal(name = name, options = options)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadioButtonGroupProps]
   }
 }

@@ -26,11 +26,11 @@ object Anon_AuthorizeHost {
     revokePath: String = null,
     tokenPath: String = null
   ): Anon_AuthorizeHost = {
-    val __obj = js.Dynamic.literal(tokenHost = tokenHost)
-    if (authorizeHost != null) __obj.updateDynamic("authorizeHost")(authorizeHost)
-    if (authorizePath != null) __obj.updateDynamic("authorizePath")(authorizePath)
-    if (revokePath != null) __obj.updateDynamic("revokePath")(revokePath)
-    if (tokenPath != null) __obj.updateDynamic("tokenPath")(tokenPath)
+    val __obj = js.Dynamic.literal(tokenHost = tokenHost.asInstanceOf[js.Any])
+    if (authorizeHost != null) __obj.updateDynamic("authorizeHost")(authorizeHost.asInstanceOf[js.Any])
+    if (authorizePath != null) __obj.updateDynamic("authorizePath")(authorizePath.asInstanceOf[js.Any])
+    if (revokePath != null) __obj.updateDynamic("revokePath")(revokePath.asInstanceOf[js.Any])
+    if (tokenPath != null) __obj.updateDynamic("tokenPath")(tokenPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AuthorizeHost]
   }
 }

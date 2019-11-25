@@ -17,7 +17,7 @@ object GoogleActionsV2OrdersCustomerInfoOptions {
     customerInfoProperties: js.Array[GoogleActionsV2OrdersCustomerInfoOptionsCustomerInfoProperties] = null
   ): GoogleActionsV2OrdersCustomerInfoOptions = {
     val __obj = js.Dynamic.literal()
-    if (customerInfoProperties != null) __obj.updateDynamic("customerInfoProperties")(customerInfoProperties)
+    if (customerInfoProperties != null) __obj.updateDynamic("customerInfoProperties")(customerInfoProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersCustomerInfoOptions]
   }
 }

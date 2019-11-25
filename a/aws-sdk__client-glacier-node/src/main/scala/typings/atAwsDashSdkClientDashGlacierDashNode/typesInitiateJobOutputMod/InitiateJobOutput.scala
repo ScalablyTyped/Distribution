@@ -34,10 +34,10 @@ object InitiateJobOutput {
     jobOutputPath: String = null,
     location: String = null
   ): InitiateJobOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId)
-    if (jobOutputPath != null) __obj.updateDynamic("jobOutputPath")(jobOutputPath)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
+    if (jobOutputPath != null) __obj.updateDynamic("jobOutputPath")(jobOutputPath.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitiateJobOutput]
   }
 }

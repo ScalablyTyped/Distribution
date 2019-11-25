@@ -47,12 +47,12 @@ object Anon_Director {
     title: String = null
   ): Anon_Director = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(director)) __obj.updateDynamic("director")(director)
-    if (!js.isUndefined(executive)) __obj.updateDynamic("executive")(executive)
-    if (!js.isUndefined(owner)) __obj.updateDynamic("owner")(owner)
+    if (!js.isUndefined(director)) __obj.updateDynamic("director")(director.asInstanceOf[js.Any])
+    if (!js.isUndefined(executive)) __obj.updateDynamic("executive")(executive.asInstanceOf[js.Any])
+    if (!js.isUndefined(owner)) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     if (percent_ownership != null) __obj.updateDynamic("percent_ownership")(percent_ownership.asInstanceOf[js.Any])
-    if (!js.isUndefined(representative)) __obj.updateDynamic("representative")(representative)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(representative)) __obj.updateDynamic("representative")(representative.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Director]
   }
 }

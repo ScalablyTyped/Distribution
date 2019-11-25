@@ -84,20 +84,20 @@ object BlockoutSettings {
     templateId: String = null
   ): BlockoutSettings = {
     val __obj = js.Dynamic.literal()
-    if (customStyle != null) __obj.updateDynamic("customStyle")(customStyle)
+    if (customStyle != null) __obj.updateDynamic("customStyle")(customStyle.asInstanceOf[js.Any])
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (groupId != null) __obj.updateDynamic("groupId")(groupId)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (isAllDay != null) __obj.updateDynamic("isAllDay")(isAllDay)
-    if (isBlockAppointment != null) __obj.updateDynamic("isBlockAppointment")(isBlockAppointment)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
-    if (tableName != null) __obj.updateDynamic("tableName")(tableName)
-    if (templateId != null) __obj.updateDynamic("templateId")(templateId)
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (groupId != null) __obj.updateDynamic("groupId")(groupId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (isAllDay != null) __obj.updateDynamic("isAllDay")(isAllDay.asInstanceOf[js.Any])
+    if (isBlockAppointment != null) __obj.updateDynamic("isBlockAppointment")(isBlockAppointment.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
+    if (templateId != null) __obj.updateDynamic("templateId")(templateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockoutSettings]
   }
 }

@@ -43,16 +43,16 @@ object RequestOptions {
     header: RequestHeader = null,
     method: GET | OPTIONS | HEAD | POST | PUT | DELETE | TRACE | CONNECT = null,
     responseType: String = null,
-    success: /* res */ DataResponse => Unit = null
+    success: DataResponse => Unit = null
   ): RequestOptions = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType)
+    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (header != null) __obj.updateDynamic("header")(header)
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[RequestOptions]
   }

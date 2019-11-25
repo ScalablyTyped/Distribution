@@ -20,7 +20,7 @@ trait Result extends js.Object {
 object Result {
   @scala.inline
   def apply(info: String, locations: js.Array[LngLat]): Result = {
-    val __obj = js.Dynamic.literal(info = info, locations = locations)
+    val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Result]
   }

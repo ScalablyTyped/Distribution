@@ -14,7 +14,7 @@ trait Anon_AdultScore extends js.Object {
 object Anon_AdultScore {
   @scala.inline
   def apply(adultScore: Double, isAdultContent: Boolean, isRacyContent: Boolean, racyScore: Double): Anon_AdultScore = {
-    val __obj = js.Dynamic.literal(adultScore = adultScore, isAdultContent = isAdultContent, isRacyContent = isRacyContent, racyScore = racyScore)
+    val __obj = js.Dynamic.literal(adultScore = adultScore.asInstanceOf[js.Any], isAdultContent = isAdultContent.asInstanceOf[js.Any], isRacyContent = isRacyContent.asInstanceOf[js.Any], racyScore = racyScore.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AdultScore]
   }

@@ -14,7 +14,7 @@ trait Animation extends _AnimationProp {
 object Animation {
   @scala.inline
   def apply(from: Partial[CSSStyleDeclaration], to: Partial[CSSStyleDeclaration]): Animation = {
-    val __obj = js.Dynamic.literal(from = from, to = to)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Animation]
   }

@@ -21,6 +21,6 @@ trait Intersection[T] extends Type[T] {
 @js.native
 object intersection extends js.Object {
   def apply[T](types: js.Array[Constructor[_]]): Intersection[T] = js.native
-  def apply[T](types: js.Array[Constructor[_]], name: String): Intersection[T] = js.native
+  def apply[T](types: js.Array[Constructor[_]], name: java.lang.String): Intersection[T] = js.native
 }
 

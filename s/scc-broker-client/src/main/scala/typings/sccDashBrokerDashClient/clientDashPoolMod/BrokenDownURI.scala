@@ -14,9 +14,9 @@ trait BrokenDownURI extends js.Object {
 object BrokenDownURI {
   @scala.inline
   def apply(hostname: String, port: String = null, secure: `true` = null): BrokenDownURI = {
-    val __obj = js.Dynamic.literal(hostname = hostname)
-    if (port != null) __obj.updateDynamic("port")(port)
-    if (secure != null) __obj.updateDynamic("secure")(secure)
+    val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (secure != null) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrokenDownURI]
   }
 }

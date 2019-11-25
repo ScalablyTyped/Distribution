@@ -84,20 +84,20 @@ object DiscoveryOptions {
     statusLogsEnabled: js.UndefOr[Boolean] = js.undefined
   ): DiscoveryOptions = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (broadcast != null) __obj.updateDynamic("broadcast")(broadcast)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (broadcast != null) __obj.updateDynamic("broadcast")(broadcast.asInstanceOf[js.Any])
     if (checkInterval != null) __obj.updateDynamic("checkInterval")(checkInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableScreen)) __obj.updateDynamic("disableScreen")(disableScreen)
+    if (!js.isUndefined(disableScreen)) __obj.updateDynamic("disableScreen")(disableScreen.asInstanceOf[js.Any])
     if (helloInterval != null) __obj.updateDynamic("helloInterval")(helloInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(helloLogsEnabled)) __obj.updateDynamic("helloLogsEnabled")(helloLogsEnabled)
-    if (!js.isUndefined(ignoreProcess)) __obj.updateDynamic("ignoreProcess")(ignoreProcess)
-    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log)
+    if (!js.isUndefined(helloLogsEnabled)) __obj.updateDynamic("helloLogsEnabled")(helloLogsEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreProcess)) __obj.updateDynamic("ignoreProcess")(ignoreProcess.asInstanceOf[js.Any])
+    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     if (masterTimeout != null) __obj.updateDynamic("masterTimeout")(masterTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(monitor)) __obj.updateDynamic("monitor")(monitor)
-    if (multicast != null) __obj.updateDynamic("multicast")(multicast)
+    if (!js.isUndefined(monitor)) __obj.updateDynamic("monitor")(monitor.asInstanceOf[js.Any])
+    if (multicast != null) __obj.updateDynamic("multicast")(multicast.asInstanceOf[js.Any])
     if (nodeTimeout != null) __obj.updateDynamic("nodeTimeout")(nodeTimeout.asInstanceOf[js.Any])
     if (statusInterval != null) __obj.updateDynamic("statusInterval")(statusInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(statusLogsEnabled)) __obj.updateDynamic("statusLogsEnabled")(statusLogsEnabled)
+    if (!js.isUndefined(statusLogsEnabled)) __obj.updateDynamic("statusLogsEnabled")(statusLogsEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiscoveryOptions]
   }
 }

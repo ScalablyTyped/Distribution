@@ -42,15 +42,15 @@ object FlagIconProps {
     squared: js.UndefOr[Boolean] = js.undefined,
     styleName: String = null
   ): FlagIconProps = {
-    val __obj = js.Dynamic.literal(code = code)
-    if (Component != null) __obj.updateDynamic("Component")(Component)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+    if (Component != null) __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (flip != null) __obj.updateDynamic("flip")(flip)
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (!js.isUndefined(squared)) __obj.updateDynamic("squared")(squared)
-    if (styleName != null) __obj.updateDynamic("styleName")(styleName)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (flip != null) __obj.updateDynamic("flip")(flip.asInstanceOf[js.Any])
+    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(squared)) __obj.updateDynamic("squared")(squared.asInstanceOf[js.Any])
+    if (styleName != null) __obj.updateDynamic("styleName")(styleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlagIconProps]
   }
 }

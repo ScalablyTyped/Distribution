@@ -52,28 +52,24 @@ object IShimmerProps {
   def apply(
     AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
     ariaLabel: String = null,
-    className: String = null,
     componentRef: IRefObject[IShimmer] = null,
     customElementsGroup: ReactNode = null,
     isDataLoaded: js.UndefOr[Boolean] = js.undefined,
     shimmerColors: IShimmerColors = null,
     shimmerElements: js.Array[IShimmerElement] = null,
     styles: IStyleFunctionOrObject[IShimmerStyleProps, IShimmerStyles] = null,
-    theme: ITheme = null,
-    width: Double | String = null
+    theme: ITheme = null
   ): IShimmerProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
     if (customElementsGroup != null) __obj.updateDynamic("customElementsGroup")(customElementsGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDataLoaded)) __obj.updateDynamic("isDataLoaded")(isDataLoaded)
-    if (shimmerColors != null) __obj.updateDynamic("shimmerColors")(shimmerColors)
-    if (shimmerElements != null) __obj.updateDynamic("shimmerElements")(shimmerElements)
+    if (!js.isUndefined(isDataLoaded)) __obj.updateDynamic("isDataLoaded")(isDataLoaded.asInstanceOf[js.Any])
+    if (shimmerColors != null) __obj.updateDynamic("shimmerColors")(shimmerColors.asInstanceOf[js.Any])
+    if (shimmerElements != null) __obj.updateDynamic("shimmerElements")(shimmerElements.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShimmerProps]
   }
 }

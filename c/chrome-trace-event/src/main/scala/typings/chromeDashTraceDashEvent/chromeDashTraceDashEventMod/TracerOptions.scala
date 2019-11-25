@@ -20,10 +20,10 @@ object TracerOptions {
     parent: Tracer = null
   ): TracerOptions = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (!js.isUndefined(noStream)) __obj.updateDynamic("noStream")(noStream)
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(noStream)) __obj.updateDynamic("noStream")(noStream.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[TracerOptions]
   }
 }

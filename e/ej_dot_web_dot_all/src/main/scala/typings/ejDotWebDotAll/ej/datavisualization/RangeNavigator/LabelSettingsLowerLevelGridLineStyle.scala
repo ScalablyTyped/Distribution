@@ -23,9 +23,9 @@ object LabelSettingsLowerLevelGridLineStyle {
   @scala.inline
   def apply(color: String = null, dashArray: String = null, width: String = null): LabelSettingsLowerLevelGridLineStyle = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (dashArray != null) __obj.updateDynamic("dashArray")(dashArray)
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (dashArray != null) __obj.updateDynamic("dashArray")(dashArray.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelSettingsLowerLevelGridLineStyle]
   }
 }

@@ -13,7 +13,7 @@ trait detectTouchEvents extends js.Object {
 object detectTouchEvents {
   @scala.inline
   def apply(hasApi: Boolean, maxTouchPoints: Double, update: () => Unit): detectTouchEvents = {
-    val __obj = js.Dynamic.literal(hasApi = hasApi, maxTouchPoints = maxTouchPoints, update = js.Any.fromFunction0(update))
+    val __obj = js.Dynamic.literal(hasApi = hasApi.asInstanceOf[js.Any], maxTouchPoints = maxTouchPoints.asInstanceOf[js.Any], update = js.Any.fromFunction0(update))
   
     __obj.asInstanceOf[detectTouchEvents]
   }

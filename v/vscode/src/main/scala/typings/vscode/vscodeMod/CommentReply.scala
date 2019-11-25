@@ -18,7 +18,7 @@ trait CommentReply extends js.Object {
 object CommentReply {
   @scala.inline
   def apply(text: String, thread: CommentThread): CommentReply = {
-    val __obj = js.Dynamic.literal(text = text, thread = thread)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], thread = thread.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CommentReply]
   }

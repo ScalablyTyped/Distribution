@@ -42,14 +42,14 @@ object Options {
     statusCodes: Anon_Exclude = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (appendKey != null) __obj.updateDynamic("appendKey")(appendKey)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (defaultDuration != null) __obj.updateDynamic("defaultDuration")(defaultDuration)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (headerBlacklist != null) __obj.updateDynamic("headerBlacklist")(headerBlacklist)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (redisClient != null) __obj.updateDynamic("redisClient")(redisClient)
-    if (statusCodes != null) __obj.updateDynamic("statusCodes")(statusCodes)
+    if (appendKey != null) __obj.updateDynamic("appendKey")(appendKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (defaultDuration != null) __obj.updateDynamic("defaultDuration")(defaultDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (headerBlacklist != null) __obj.updateDynamic("headerBlacklist")(headerBlacklist.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (redisClient != null) __obj.updateDynamic("redisClient")(redisClient.asInstanceOf[js.Any])
+    if (statusCodes != null) __obj.updateDynamic("statusCodes")(statusCodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -25,8 +25,8 @@ object StackTrace {
   @scala.inline
   def apply(stackFrames: StackFrames = null, stackTraceHashId: String = null): StackTrace = {
     val __obj = js.Dynamic.literal()
-    if (stackFrames != null) __obj.updateDynamic("stackFrames")(stackFrames)
-    if (stackTraceHashId != null) __obj.updateDynamic("stackTraceHashId")(stackTraceHashId)
+    if (stackFrames != null) __obj.updateDynamic("stackFrames")(stackFrames.asInstanceOf[js.Any])
+    if (stackTraceHashId != null) __obj.updateDynamic("stackTraceHashId")(stackTraceHashId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackTrace]
   }
 }

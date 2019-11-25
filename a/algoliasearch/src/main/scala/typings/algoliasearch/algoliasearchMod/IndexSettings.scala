@@ -89,7 +89,7 @@ trait IndexSettings extends js.Object {
     * default: {de: [], nl: [], fi: []}
     */
   var decompoundedAttributes: js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in std.Partial<'nl' | 'de' | 'fi'> ]: std.Array<string>}
     */ typings.algoliasearch.algoliasearchStrings.IndexSettings with js.Any
   ] = js.undefined
@@ -281,7 +281,7 @@ object IndexSettings {
     attributesToSnippet: js.Array[String] = null,
     camelCaseAttributes: js.Array[String] = null,
     customRanking: js.Array[String] = null,
-    decompoundedAttributes: /* import warning: ImportType.apply c Unsupported type mapping: 
+    decompoundedAttributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in std.Partial<'nl' | 'de' | 'fi'> ]: std.Array<string>}
     */ typings.algoliasearch.algoliasearchStrings.IndexSettings with js.Any = null,
     disableExactOnAttributes: js.Array[String] = null,
@@ -318,50 +318,50 @@ object IndexSettings {
     unretrievableAttributes: js.Array[String] = null
   ): IndexSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(advancedSyntax)) __obj.updateDynamic("advancedSyntax")(advancedSyntax)
-    if (!js.isUndefined(allowCompressionOfIntegerArray)) __obj.updateDynamic("allowCompressionOfIntegerArray")(allowCompressionOfIntegerArray)
-    if (!js.isUndefined(allowTyposOnNumericTokens)) __obj.updateDynamic("allowTyposOnNumericTokens")(allowTyposOnNumericTokens)
-    if (altCorrections != null) __obj.updateDynamic("altCorrections")(altCorrections)
-    if (alternativesAsExact != null) __obj.updateDynamic("alternativesAsExact")(alternativesAsExact)
-    if (attributeForDistinct != null) __obj.updateDynamic("attributeForDistinct")(attributeForDistinct)
-    if (attributesForFaceting != null) __obj.updateDynamic("attributesForFaceting")(attributesForFaceting)
-    if (attributesToHighlight != null) __obj.updateDynamic("attributesToHighlight")(attributesToHighlight)
-    if (attributesToIndex != null) __obj.updateDynamic("attributesToIndex")(attributesToIndex)
-    if (attributesToRetrieve != null) __obj.updateDynamic("attributesToRetrieve")(attributesToRetrieve)
-    if (attributesToSnippet != null) __obj.updateDynamic("attributesToSnippet")(attributesToSnippet)
-    if (camelCaseAttributes != null) __obj.updateDynamic("camelCaseAttributes")(camelCaseAttributes)
-    if (customRanking != null) __obj.updateDynamic("customRanking")(customRanking)
-    if (decompoundedAttributes != null) __obj.updateDynamic("decompoundedAttributes")(decompoundedAttributes)
-    if (disableExactOnAttributes != null) __obj.updateDynamic("disableExactOnAttributes")(disableExactOnAttributes)
-    if (disablePrefixOnAttributes != null) __obj.updateDynamic("disablePrefixOnAttributes")(disablePrefixOnAttributes)
-    if (disableTypoToleranceOnAttributes != null) __obj.updateDynamic("disableTypoToleranceOnAttributes")(disableTypoToleranceOnAttributes)
+    if (!js.isUndefined(advancedSyntax)) __obj.updateDynamic("advancedSyntax")(advancedSyntax.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCompressionOfIntegerArray)) __obj.updateDynamic("allowCompressionOfIntegerArray")(allowCompressionOfIntegerArray.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowTyposOnNumericTokens)) __obj.updateDynamic("allowTyposOnNumericTokens")(allowTyposOnNumericTokens.asInstanceOf[js.Any])
+    if (altCorrections != null) __obj.updateDynamic("altCorrections")(altCorrections.asInstanceOf[js.Any])
+    if (alternativesAsExact != null) __obj.updateDynamic("alternativesAsExact")(alternativesAsExact.asInstanceOf[js.Any])
+    if (attributeForDistinct != null) __obj.updateDynamic("attributeForDistinct")(attributeForDistinct.asInstanceOf[js.Any])
+    if (attributesForFaceting != null) __obj.updateDynamic("attributesForFaceting")(attributesForFaceting.asInstanceOf[js.Any])
+    if (attributesToHighlight != null) __obj.updateDynamic("attributesToHighlight")(attributesToHighlight.asInstanceOf[js.Any])
+    if (attributesToIndex != null) __obj.updateDynamic("attributesToIndex")(attributesToIndex.asInstanceOf[js.Any])
+    if (attributesToRetrieve != null) __obj.updateDynamic("attributesToRetrieve")(attributesToRetrieve.asInstanceOf[js.Any])
+    if (attributesToSnippet != null) __obj.updateDynamic("attributesToSnippet")(attributesToSnippet.asInstanceOf[js.Any])
+    if (camelCaseAttributes != null) __obj.updateDynamic("camelCaseAttributes")(camelCaseAttributes.asInstanceOf[js.Any])
+    if (customRanking != null) __obj.updateDynamic("customRanking")(customRanking.asInstanceOf[js.Any])
+    if (decompoundedAttributes != null) __obj.updateDynamic("decompoundedAttributes")(decompoundedAttributes.asInstanceOf[js.Any])
+    if (disableExactOnAttributes != null) __obj.updateDynamic("disableExactOnAttributes")(disableExactOnAttributes.asInstanceOf[js.Any])
+    if (disablePrefixOnAttributes != null) __obj.updateDynamic("disablePrefixOnAttributes")(disablePrefixOnAttributes.asInstanceOf[js.Any])
+    if (disableTypoToleranceOnAttributes != null) __obj.updateDynamic("disableTypoToleranceOnAttributes")(disableTypoToleranceOnAttributes.asInstanceOf[js.Any])
     if (distinct != null) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
-    if (exactOnSingleWordQuery != null) __obj.updateDynamic("exactOnSingleWordQuery")(exactOnSingleWordQuery)
-    if (highlightPostTag != null) __obj.updateDynamic("highlightPostTag")(highlightPostTag)
-    if (highlightPreTag != null) __obj.updateDynamic("highlightPreTag")(highlightPreTag)
+    if (exactOnSingleWordQuery != null) __obj.updateDynamic("exactOnSingleWordQuery")(exactOnSingleWordQuery.asInstanceOf[js.Any])
+    if (highlightPostTag != null) __obj.updateDynamic("highlightPostTag")(highlightPostTag.asInstanceOf[js.Any])
+    if (highlightPreTag != null) __obj.updateDynamic("highlightPreTag")(highlightPreTag.asInstanceOf[js.Any])
     if (hitsPerPage != null) __obj.updateDynamic("hitsPerPage")(hitsPerPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignorePlurals)) __obj.updateDynamic("ignorePlurals")(ignorePlurals)
+    if (!js.isUndefined(ignorePlurals)) __obj.updateDynamic("ignorePlurals")(ignorePlurals.asInstanceOf[js.Any])
     if (maxValuesPerFacet != null) __obj.updateDynamic("maxValuesPerFacet")(maxValuesPerFacet.asInstanceOf[js.Any])
     if (minProximity != null) __obj.updateDynamic("minProximity")(minProximity.asInstanceOf[js.Any])
     if (minWordSizefor1Typo != null) __obj.updateDynamic("minWordSizefor1Typo")(minWordSizefor1Typo.asInstanceOf[js.Any])
     if (minWordSizefor2Typos != null) __obj.updateDynamic("minWordSizefor2Typos")(minWordSizefor2Typos.asInstanceOf[js.Any])
-    if (numericAttributesToIndex != null) __obj.updateDynamic("numericAttributesToIndex")(numericAttributesToIndex)
-    if (optionalWords != null) __obj.updateDynamic("optionalWords")(optionalWords)
+    if (numericAttributesToIndex != null) __obj.updateDynamic("numericAttributesToIndex")(numericAttributesToIndex.asInstanceOf[js.Any])
+    if (optionalWords != null) __obj.updateDynamic("optionalWords")(optionalWords.asInstanceOf[js.Any])
     if (paginationLimitedTo != null) __obj.updateDynamic("paginationLimitedTo")(paginationLimitedTo.asInstanceOf[js.Any])
-    if (placeholders != null) __obj.updateDynamic("placeholders")(placeholders)
-    if (queryLanguages != null) __obj.updateDynamic("queryLanguages")(queryLanguages)
+    if (placeholders != null) __obj.updateDynamic("placeholders")(placeholders.asInstanceOf[js.Any])
+    if (queryLanguages != null) __obj.updateDynamic("queryLanguages")(queryLanguages.asInstanceOf[js.Any])
     if (queryType != null) __obj.updateDynamic("queryType")(queryType.asInstanceOf[js.Any])
-    if (ranking != null) __obj.updateDynamic("ranking")(ranking)
+    if (ranking != null) __obj.updateDynamic("ranking")(ranking.asInstanceOf[js.Any])
     if (removeStopWords != null) __obj.updateDynamic("removeStopWords")(removeStopWords.asInstanceOf[js.Any])
-    if (removeWordsIfNoResults != null) __obj.updateDynamic("removeWordsIfNoResults")(removeWordsIfNoResults)
-    if (replicas != null) __obj.updateDynamic("replicas")(replicas)
-    if (!js.isUndefined(restrictHighlightAndSnippetArrays)) __obj.updateDynamic("restrictHighlightAndSnippetArrays")(restrictHighlightAndSnippetArrays)
-    if (searchableAttributes != null) __obj.updateDynamic("searchableAttributes")(searchableAttributes)
-    if (separatorsToIndex != null) __obj.updateDynamic("separatorsToIndex")(separatorsToIndex)
-    if (snippetEllipsisText != null) __obj.updateDynamic("snippetEllipsisText")(snippetEllipsisText)
+    if (removeWordsIfNoResults != null) __obj.updateDynamic("removeWordsIfNoResults")(removeWordsIfNoResults.asInstanceOf[js.Any])
+    if (replicas != null) __obj.updateDynamic("replicas")(replicas.asInstanceOf[js.Any])
+    if (!js.isUndefined(restrictHighlightAndSnippetArrays)) __obj.updateDynamic("restrictHighlightAndSnippetArrays")(restrictHighlightAndSnippetArrays.asInstanceOf[js.Any])
+    if (searchableAttributes != null) __obj.updateDynamic("searchableAttributes")(searchableAttributes.asInstanceOf[js.Any])
+    if (separatorsToIndex != null) __obj.updateDynamic("separatorsToIndex")(separatorsToIndex.asInstanceOf[js.Any])
+    if (snippetEllipsisText != null) __obj.updateDynamic("snippetEllipsisText")(snippetEllipsisText.asInstanceOf[js.Any])
     if (sortFacetValuesBy != null) __obj.updateDynamic("sortFacetValuesBy")(sortFacetValuesBy.asInstanceOf[js.Any])
     if (typoTolerance != null) __obj.updateDynamic("typoTolerance")(typoTolerance.asInstanceOf[js.Any])
-    if (unretrievableAttributes != null) __obj.updateDynamic("unretrievableAttributes")(unretrievableAttributes)
+    if (unretrievableAttributes != null) __obj.updateDynamic("unretrievableAttributes")(unretrievableAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexSettings]
   }
 }

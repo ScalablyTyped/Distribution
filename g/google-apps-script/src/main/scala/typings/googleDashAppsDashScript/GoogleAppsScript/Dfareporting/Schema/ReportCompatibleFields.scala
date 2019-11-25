@@ -22,11 +22,11 @@ object ReportCompatibleFields {
     pivotedActivityMetrics: js.Array[Metric] = null
   ): ReportCompatibleFields = {
     val __obj = js.Dynamic.literal()
-    if (dimensionFilters != null) __obj.updateDynamic("dimensionFilters")(dimensionFilters)
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
-    if (pivotedActivityMetrics != null) __obj.updateDynamic("pivotedActivityMetrics")(pivotedActivityMetrics)
+    if (dimensionFilters != null) __obj.updateDynamic("dimensionFilters")(dimensionFilters.asInstanceOf[js.Any])
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
+    if (pivotedActivityMetrics != null) __obj.updateDynamic("pivotedActivityMetrics")(pivotedActivityMetrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportCompatibleFields]
   }
 }

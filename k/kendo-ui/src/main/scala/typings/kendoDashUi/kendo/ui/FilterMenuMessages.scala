@@ -36,18 +36,18 @@ object FilterMenuMessages {
     title: String = null
   ): FilterMenuMessages = {
     val __obj = js.Dynamic.literal()
-    if (additionalOperator != null) __obj.updateDynamic("additionalOperator")(additionalOperator)
-    if (additionalValue != null) __obj.updateDynamic("additionalValue")(additionalValue)
-    if (and != null) __obj.updateDynamic("and")(and)
-    if (clear != null) __obj.updateDynamic("clear")(clear)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (info != null) __obj.updateDynamic("info")(info)
-    if (isFalse != null) __obj.updateDynamic("isFalse")(isFalse)
-    if (isTrue != null) __obj.updateDynamic("isTrue")(isTrue)
-    if (logic != null) __obj.updateDynamic("logic")(logic)
-    if (or != null) __obj.updateDynamic("or")(or)
-    if (selectValue != null) __obj.updateDynamic("selectValue")(selectValue)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (additionalOperator != null) __obj.updateDynamic("additionalOperator")(additionalOperator.asInstanceOf[js.Any])
+    if (additionalValue != null) __obj.updateDynamic("additionalValue")(additionalValue.asInstanceOf[js.Any])
+    if (and != null) __obj.updateDynamic("and")(and.asInstanceOf[js.Any])
+    if (clear != null) __obj.updateDynamic("clear")(clear.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (isFalse != null) __obj.updateDynamic("isFalse")(isFalse.asInstanceOf[js.Any])
+    if (isTrue != null) __obj.updateDynamic("isTrue")(isTrue.asInstanceOf[js.Any])
+    if (logic != null) __obj.updateDynamic("logic")(logic.asInstanceOf[js.Any])
+    if (or != null) __obj.updateDynamic("or")(or.asInstanceOf[js.Any])
+    if (selectValue != null) __obj.updateDynamic("selectValue")(selectValue.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterMenuMessages]
   }
 }

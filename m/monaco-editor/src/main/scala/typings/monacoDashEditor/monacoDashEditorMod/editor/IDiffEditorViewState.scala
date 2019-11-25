@@ -13,8 +13,8 @@ object IDiffEditorViewState {
   @scala.inline
   def apply(modified: ICodeEditorViewState = null, original: ICodeEditorViewState = null): IDiffEditorViewState = {
     val __obj = js.Dynamic.literal()
-    if (modified != null) __obj.updateDynamic("modified")(modified)
-    if (original != null) __obj.updateDynamic("original")(original)
+    if (modified != null) __obj.updateDynamic("modified")(modified.asInstanceOf[js.Any])
+    if (original != null) __obj.updateDynamic("original")(original.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDiffEditorViewState]
   }
 }

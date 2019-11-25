@@ -18,12 +18,12 @@ object WeakClientOptions {
     resource: String = null,
     transports: js.Array[_] = null
   ): WeakClientOptions = {
-    val __obj = js.Dynamic.literal(sandboxId = sandboxId)
-    if (apiUrl != null) __obj.updateDynamic("apiUrl")(apiUrl)
-    if (deploymentId != null) __obj.updateDynamic("deploymentId")(deploymentId)
-    if (!js.isUndefined(forceHttps)) __obj.updateDynamic("forceHttps")(forceHttps)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
-    if (transports != null) __obj.updateDynamic("transports")(transports)
+    val __obj = js.Dynamic.literal(sandboxId = sandboxId.asInstanceOf[js.Any])
+    if (apiUrl != null) __obj.updateDynamic("apiUrl")(apiUrl.asInstanceOf[js.Any])
+    if (deploymentId != null) __obj.updateDynamic("deploymentId")(deploymentId.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceHttps)) __obj.updateDynamic("forceHttps")(forceHttps.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
+    if (transports != null) __obj.updateDynamic("transports")(transports.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeakClientOptions]
   }
 }

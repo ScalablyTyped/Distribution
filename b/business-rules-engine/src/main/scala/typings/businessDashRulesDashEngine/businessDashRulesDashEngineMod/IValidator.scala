@@ -18,7 +18,7 @@ object IValidator {
     Validate: js.Any => IValidationFailure,
     ValidateAsync: js.Any => Promise[IValidationFailure]
   ): IValidator = {
-    val __obj = js.Dynamic.literal(Error = Error, Validate = js.Any.fromFunction1(Validate), ValidateAsync = js.Any.fromFunction1(ValidateAsync))
+    val __obj = js.Dynamic.literal(Error = Error.asInstanceOf[js.Any], Validate = js.Any.fromFunction1(Validate), ValidateAsync = js.Any.fromFunction1(ValidateAsync))
   
     __obj.asInstanceOf[IValidator]
   }

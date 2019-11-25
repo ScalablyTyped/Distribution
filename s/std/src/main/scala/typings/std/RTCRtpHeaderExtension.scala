@@ -20,10 +20,10 @@ object RTCRtpHeaderExtension {
     uri: java.lang.String = null
   ): RTCRtpHeaderExtension = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (!js.isUndefined(preferredEncrypt)) __obj.updateDynamic("preferredEncrypt")(preferredEncrypt)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferredEncrypt)) __obj.updateDynamic("preferredEncrypt")(preferredEncrypt.asInstanceOf[js.Any])
     if (preferredId != null) __obj.updateDynamic("preferredId")(preferredId.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpHeaderExtension]
   }
 }

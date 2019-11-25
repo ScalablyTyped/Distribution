@@ -13,8 +13,8 @@ object Nonprofit {
   @scala.inline
   def apply(nonprofitId: NonprofitId = null, nonprofitLegalName: String = null): Nonprofit = {
     val __obj = js.Dynamic.literal()
-    if (nonprofitId != null) __obj.updateDynamic("nonprofitId")(nonprofitId)
-    if (nonprofitLegalName != null) __obj.updateDynamic("nonprofitLegalName")(nonprofitLegalName)
+    if (nonprofitId != null) __obj.updateDynamic("nonprofitId")(nonprofitId.asInstanceOf[js.Any])
+    if (nonprofitLegalName != null) __obj.updateDynamic("nonprofitLegalName")(nonprofitLegalName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Nonprofit]
   }
 }

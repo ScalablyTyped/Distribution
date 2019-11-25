@@ -18,9 +18,9 @@ object DirectoryList {
   @scala.inline
   def apply(discoveryVersion: String = null, items: js.Array[Anon_Description] = null, kind: String = null): DirectoryList = {
     val __obj = js.Dynamic.literal()
-    if (discoveryVersion != null) __obj.updateDynamic("discoveryVersion")(discoveryVersion)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (discoveryVersion != null) __obj.updateDynamic("discoveryVersion")(discoveryVersion.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectoryList]
   }
 }

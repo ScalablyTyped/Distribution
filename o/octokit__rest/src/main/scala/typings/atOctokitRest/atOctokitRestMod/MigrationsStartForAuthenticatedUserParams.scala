@@ -26,9 +26,9 @@ object MigrationsStartForAuthenticatedUserParams {
     exclude_attachments: js.UndefOr[Boolean] = js.undefined,
     lock_repositories: js.UndefOr[Boolean] = js.undefined
   ): MigrationsStartForAuthenticatedUserParams = {
-    val __obj = js.Dynamic.literal(repositories = repositories)
-    if (!js.isUndefined(exclude_attachments)) __obj.updateDynamic("exclude_attachments")(exclude_attachments)
-    if (!js.isUndefined(lock_repositories)) __obj.updateDynamic("lock_repositories")(lock_repositories)
+    val __obj = js.Dynamic.literal(repositories = repositories.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclude_attachments)) __obj.updateDynamic("exclude_attachments")(exclude_attachments.asInstanceOf[js.Any])
+    if (!js.isUndefined(lock_repositories)) __obj.updateDynamic("lock_repositories")(lock_repositories.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationsStartForAuthenticatedUserParams]
   }
 }

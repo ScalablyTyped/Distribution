@@ -20,9 +20,9 @@ object Anon_FirstTangent {
     firstTangent: Cartesian3 = null,
     lastTangent: Cartesian3 = null
   ): Anon_FirstTangent = {
-    val __obj = js.Dynamic.literal(points = points, times = times)
-    if (firstTangent != null) __obj.updateDynamic("firstTangent")(firstTangent)
-    if (lastTangent != null) __obj.updateDynamic("lastTangent")(lastTangent)
+    val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any], times = times.asInstanceOf[js.Any])
+    if (firstTangent != null) __obj.updateDynamic("firstTangent")(firstTangent.asInstanceOf[js.Any])
+    if (lastTangent != null) __obj.updateDynamic("lastTangent")(lastTangent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FirstTangent]
   }
 }

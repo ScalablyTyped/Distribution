@@ -23,7 +23,7 @@ object PlotPivotpointsParamsOptions {
   @scala.inline
   def apply(algorithm: String = null, period: Int | Double = null): PlotPivotpointsParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
     if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotPivotpointsParamsOptions]
   }

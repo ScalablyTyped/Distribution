@@ -23,7 +23,7 @@ object Options {
   @scala.inline
   def apply(baseUrl: String = null, cache: Cache | `false` = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

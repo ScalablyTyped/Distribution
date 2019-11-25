@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object CoordinateLonLat {
   @scala.inline
   def apply(lat: Double, lon: Double): CoordinateLonLat = {
-    val __obj = js.Dynamic.literal(lat = lat, lon = lon)
+    val __obj = js.Dynamic.literal(lat = lat.asInstanceOf[js.Any], lon = lon.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CoordinateLonLat]
   }

@@ -25,11 +25,11 @@ object Anon_Ci {
     writeLevel: WriteLevel = null
   ): Anon_Ci = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ci)) __obj.updateDynamic("ci")(ci)
-    if (errorStream != null) __obj.updateDynamic("errorStream")(errorStream)
-    if (inputStream != null) __obj.updateDynamic("inputStream")(inputStream)
-    if (outputStream != null) __obj.updateDynamic("outputStream")(outputStream)
-    if (writeLevel != null) __obj.updateDynamic("writeLevel")(writeLevel)
+    if (!js.isUndefined(ci)) __obj.updateDynamic("ci")(ci.asInstanceOf[js.Any])
+    if (errorStream != null) __obj.updateDynamic("errorStream")(errorStream.asInstanceOf[js.Any])
+    if (inputStream != null) __obj.updateDynamic("inputStream")(inputStream.asInstanceOf[js.Any])
+    if (outputStream != null) __obj.updateDynamic("outputStream")(outputStream.asInstanceOf[js.Any])
+    if (writeLevel != null) __obj.updateDynamic("writeLevel")(writeLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Ci]
   }
 }

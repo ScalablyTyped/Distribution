@@ -15,8 +15,8 @@ object OnPremisesConfiguration {
   @scala.inline
   def apply(hostPort: String = null, kind: String = null): OnPremisesConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (hostPort != null) __obj.updateDynamic("hostPort")(hostPort)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (hostPort != null) __obj.updateDynamic("hostPort")(hostPort.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnPremisesConfiguration]
   }
 }

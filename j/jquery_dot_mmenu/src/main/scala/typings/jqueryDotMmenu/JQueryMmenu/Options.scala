@@ -37,10 +37,10 @@ object Options {
     slidingSubmenus: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (navbar != null) __obj.updateDynamic("navbar")(navbar)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (!js.isUndefined(slidingSubmenus)) __obj.updateDynamic("slidingSubmenus")(slidingSubmenus)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (navbar != null) __obj.updateDynamic("navbar")(navbar.asInstanceOf[js.Any])
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(slidingSubmenus)) __obj.updateDynamic("slidingSubmenus")(slidingSubmenus.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

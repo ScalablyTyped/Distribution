@@ -33,13 +33,13 @@ object GoogleCloudMlV1__OperationMetadata {
     version: GoogleCloudMlV1__Version = null
   ): GoogleCloudMlV1__OperationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (!js.isUndefined(isCancellationRequested)) __obj.updateDynamic("isCancellationRequested")(isCancellationRequested)
-    if (modelName != null) __obj.updateDynamic("modelName")(modelName)
-    if (operationType != null) __obj.updateDynamic("operationType")(operationType)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCancellationRequested)) __obj.updateDynamic("isCancellationRequested")(isCancellationRequested.asInstanceOf[js.Any])
+    if (modelName != null) __obj.updateDynamic("modelName")(modelName.asInstanceOf[js.Any])
+    if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudMlV1__OperationMetadata]
   }
 }

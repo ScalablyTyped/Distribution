@@ -12,7 +12,7 @@ trait Templates extends js.Object {
 object Templates {
   @scala.inline
   def apply(Templates: js.Array[TemplateInList], TotalCount: Double): Templates = {
-    val __obj = js.Dynamic.literal(Templates = Templates, TotalCount = TotalCount)
+    val __obj = js.Dynamic.literal(Templates = Templates.asInstanceOf[js.Any], TotalCount = TotalCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Templates]
   }

@@ -35,9 +35,9 @@ object IExecuteReply {
     execution_count: Int | Double = null,
     payload: js.Array[JSONObject] = null
   ): IExecuteReply = {
-    val __obj = js.Dynamic.literal(status = status, user_expressions = user_expressions)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], user_expressions = user_expressions.asInstanceOf[js.Any])
     if (execution_count != null) __obj.updateDynamic("execution_count")(execution_count.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload)
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExecuteReply]
   }
 }

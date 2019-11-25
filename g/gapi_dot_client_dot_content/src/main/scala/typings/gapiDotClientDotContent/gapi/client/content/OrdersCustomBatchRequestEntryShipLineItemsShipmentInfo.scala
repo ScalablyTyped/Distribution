@@ -17,9 +17,9 @@ object OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo {
   @scala.inline
   def apply(carrier: String = null, shipmentId: String = null, trackingId: String = null): OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo = {
     val __obj = js.Dynamic.literal()
-    if (carrier != null) __obj.updateDynamic("carrier")(carrier)
-    if (shipmentId != null) __obj.updateDynamic("shipmentId")(shipmentId)
-    if (trackingId != null) __obj.updateDynamic("trackingId")(trackingId)
+    if (carrier != null) __obj.updateDynamic("carrier")(carrier.asInstanceOf[js.Any])
+    if (shipmentId != null) __obj.updateDynamic("shipmentId")(shipmentId.asInstanceOf[js.Any])
+    if (trackingId != null) __obj.updateDynamic("trackingId")(trackingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo]
   }
 }

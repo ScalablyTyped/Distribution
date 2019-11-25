@@ -1,9 +1,6 @@
 package typings.dojo.dojox.mobile
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dojoStrings.ChildWidgetProperties
 import typings.dojo.dojoStrings.anchorLabel
 import typings.dojo.dojoStrings.arrowClass
@@ -253,40 +250,184 @@ class ListItem_ () extends _ItemBase {
   @JSName("set")
   def set_variableHeight(property: variableHeight, value: Boolean): Unit = js.native
   @JSName("watch")
-  def watch_ChildWidgetProperties(property: ChildWidgetProperties, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_ChildWidgetProperties(
+    property: ChildWidgetProperties,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_anchorLabel(property: anchorLabel, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_anchorLabel(
+    property: anchorLabel,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_arrowClass(property: arrowClass, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_arrowClass(
+    property: arrowClass,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_busy(property: busy, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_busy(
+    property: busy,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_checkClass(property: checkClass, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_checkClass(
+    property: checkClass,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_checked(property: checked, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_checked(
+    property: checked,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_deleteIcon(property: deleteIcon, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_deleteIcon(
+    property: deleteIcon,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_header(property: header, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_header(
+    property: header,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_noArrow(property: noArrow, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_noArrow(
+    property: noArrow,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_progStyle(property: progStyle, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_progStyle(
+    property: progStyle,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_rightIcon(property: rightIcon, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_rightIcon(
+    property: rightIcon,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_rightIcon2(property: rightIcon2, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_rightIcon2(
+    property: rightIcon2,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_rightIcon2Title(property: rightIcon2Title, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_rightIcon2Title(
+    property: rightIcon2Title,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_rightIconTitle(property: rightIconTitle, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_rightIconTitle(
+    property: rightIconTitle,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_rightText(property: rightText, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_rightText(
+    property: rightText,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_tag(property: tag, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_tag(
+    property: tag,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_uncheckClass(property: uncheckClass, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_uncheckClass(
+    property: uncheckClass,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_variableHeight(property: variableHeight, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_variableHeight(
+    property: variableHeight,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

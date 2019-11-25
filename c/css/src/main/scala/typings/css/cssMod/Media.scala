@@ -24,11 +24,11 @@ object Media {
     `type`: String = null
   ): Media = {
     val __obj = js.Dynamic.literal()
-    if (media != null) __obj.updateDynamic("media")(media)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Media]
   }
 }

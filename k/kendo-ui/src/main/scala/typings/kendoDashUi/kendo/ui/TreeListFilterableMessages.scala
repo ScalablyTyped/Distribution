@@ -28,14 +28,14 @@ object TreeListFilterableMessages {
     title: String = null
   ): TreeListFilterableMessages = {
     val __obj = js.Dynamic.literal()
-    if (and != null) __obj.updateDynamic("and")(and)
-    if (clear != null) __obj.updateDynamic("clear")(clear)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (info != null) __obj.updateDynamic("info")(info)
-    if (isFalse != null) __obj.updateDynamic("isFalse")(isFalse)
-    if (isTrue != null) __obj.updateDynamic("isTrue")(isTrue)
-    if (or != null) __obj.updateDynamic("or")(or)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (and != null) __obj.updateDynamic("and")(and.asInstanceOf[js.Any])
+    if (clear != null) __obj.updateDynamic("clear")(clear.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (isFalse != null) __obj.updateDynamic("isFalse")(isFalse.asInstanceOf[js.Any])
+    if (isTrue != null) __obj.updateDynamic("isTrue")(isTrue.asInstanceOf[js.Any])
+    if (or != null) __obj.updateDynamic("or")(or.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListFilterableMessages]
   }
 }

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Ast extends js.Object {
   @JSName("ast")
-  var ast_Original: Fn_ArgsOpts = js.native
+  var ast_Original: Fn_Args = js.native
   @JSName("expression")
   var expression_Original: TemplateBuilder[Expression] = js.native
   @JSName("program")

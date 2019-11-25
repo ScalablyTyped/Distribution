@@ -11,7 +11,7 @@ trait Anon_LineHeight extends js.Object {
 object Anon_LineHeight {
   @scala.inline
   def apply(lineHeight: Double): Anon_LineHeight = {
-    val __obj = js.Dynamic.literal(lineHeight = lineHeight)
+    val __obj = js.Dynamic.literal(lineHeight = lineHeight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_LineHeight]
   }

@@ -13,7 +13,7 @@ object Anon_Cancellationreason {
   @scala.inline
   def apply(cancellation_reason: PaymentIntentUserProvidedCancellationReason = null): Anon_Cancellationreason = {
     val __obj = js.Dynamic.literal()
-    if (cancellation_reason != null) __obj.updateDynamic("cancellation_reason")(cancellation_reason)
+    if (cancellation_reason != null) __obj.updateDynamic("cancellation_reason")(cancellation_reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cancellationreason]
   }
 }

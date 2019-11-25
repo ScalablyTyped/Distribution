@@ -36,12 +36,12 @@ object AchievementUpdateResponse {
     updateOccurred: js.UndefOr[Boolean] = js.undefined
   ): AchievementUpdateResponse = {
     val __obj = js.Dynamic.literal()
-    if (achievementId != null) __obj.updateDynamic("achievementId")(achievementId)
-    if (currentState != null) __obj.updateDynamic("currentState")(currentState)
+    if (achievementId != null) __obj.updateDynamic("achievementId")(achievementId.asInstanceOf[js.Any])
+    if (currentState != null) __obj.updateDynamic("currentState")(currentState.asInstanceOf[js.Any])
     if (currentSteps != null) __obj.updateDynamic("currentSteps")(currentSteps.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (!js.isUndefined(newlyUnlocked)) __obj.updateDynamic("newlyUnlocked")(newlyUnlocked)
-    if (!js.isUndefined(updateOccurred)) __obj.updateDynamic("updateOccurred")(updateOccurred)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (!js.isUndefined(newlyUnlocked)) __obj.updateDynamic("newlyUnlocked")(newlyUnlocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateOccurred)) __obj.updateDynamic("updateOccurred")(updateOccurred.asInstanceOf[js.Any])
     __obj.asInstanceOf[AchievementUpdateResponse]
   }
 }

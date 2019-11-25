@@ -15,8 +15,8 @@ object ITracesReport {
   @scala.inline
   def apply(header: IReportHeader = null, trace: js.Array[ITrace] = null): ITracesReport = {
     val __obj = js.Dynamic.literal()
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (trace != null) __obj.updateDynamic("trace")(trace)
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (trace != null) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITracesReport]
   }
 }

@@ -18,9 +18,9 @@ object DataFilter {
     gridRange: GridRange = null
   ): DataFilter = {
     val __obj = js.Dynamic.literal()
-    if (a1Range != null) __obj.updateDynamic("a1Range")(a1Range)
-    if (developerMetadataLookup != null) __obj.updateDynamic("developerMetadataLookup")(developerMetadataLookup)
-    if (gridRange != null) __obj.updateDynamic("gridRange")(gridRange)
+    if (a1Range != null) __obj.updateDynamic("a1Range")(a1Range.asInstanceOf[js.Any])
+    if (developerMetadataLookup != null) __obj.updateDynamic("developerMetadataLookup")(developerMetadataLookup.asInstanceOf[js.Any])
+    if (gridRange != null) __obj.updateDynamic("gridRange")(gridRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataFilter]
   }
 }

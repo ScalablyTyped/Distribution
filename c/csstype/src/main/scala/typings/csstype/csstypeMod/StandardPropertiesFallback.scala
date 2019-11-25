@@ -15,8 +15,8 @@ object StandardPropertiesFallback {
     StandardShorthandPropertiesFallback: StandardShorthandPropertiesFallback[TLength] = null
   ): StandardPropertiesFallback[TLength] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StandardLonghandPropertiesFallback)
-    js.Dynamic.global.Object.assign(__obj, StandardShorthandPropertiesFallback)
+    if (StandardLonghandPropertiesFallback != null) js.Dynamic.global.Object.assign(__obj, StandardLonghandPropertiesFallback)
+    if (StandardShorthandPropertiesFallback != null) js.Dynamic.global.Object.assign(__obj, StandardShorthandPropertiesFallback)
     __obj.asInstanceOf[StandardPropertiesFallback[TLength]]
   }
 }

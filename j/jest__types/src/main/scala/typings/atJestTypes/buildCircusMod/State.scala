@@ -34,12 +34,12 @@ object State {
     parentProcess: Process = null,
     testNamePattern: RegExp = null
   ): State = {
-    val __obj = js.Dynamic.literal(currentDescribeBlock = currentDescribeBlock, hasFocusedTests = hasFocusedTests, includeTestLocationInResult = includeTestLocationInResult, rootDescribeBlock = rootDescribeBlock, testTimeout = testTimeout, unhandledErrors = unhandledErrors)
-    if (currentlyRunningTest != null) __obj.updateDynamic("currentlyRunningTest")(currentlyRunningTest)
-    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand)
-    if (originalGlobalErrorHandlers != null) __obj.updateDynamic("originalGlobalErrorHandlers")(originalGlobalErrorHandlers)
-    if (parentProcess != null) __obj.updateDynamic("parentProcess")(parentProcess)
-    if (testNamePattern != null) __obj.updateDynamic("testNamePattern")(testNamePattern)
+    val __obj = js.Dynamic.literal(currentDescribeBlock = currentDescribeBlock.asInstanceOf[js.Any], hasFocusedTests = hasFocusedTests.asInstanceOf[js.Any], includeTestLocationInResult = includeTestLocationInResult.asInstanceOf[js.Any], rootDescribeBlock = rootDescribeBlock.asInstanceOf[js.Any], testTimeout = testTimeout.asInstanceOf[js.Any], unhandledErrors = unhandledErrors.asInstanceOf[js.Any])
+    if (currentlyRunningTest != null) __obj.updateDynamic("currentlyRunningTest")(currentlyRunningTest.asInstanceOf[js.Any])
+    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (originalGlobalErrorHandlers != null) __obj.updateDynamic("originalGlobalErrorHandlers")(originalGlobalErrorHandlers.asInstanceOf[js.Any])
+    if (parentProcess != null) __obj.updateDynamic("parentProcess")(parentProcess.asInstanceOf[js.Any])
+    if (testNamePattern != null) __obj.updateDynamic("testNamePattern")(testNamePattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
 }

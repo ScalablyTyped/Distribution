@@ -1,12 +1,11 @@
 package typings.samchon.samchonMod.protocol
 
-import typings.samchon.protocolEntityIEntityMod.IEntity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("samchon", "protocol.EntityListCollection")
 @js.native
-abstract class EntityListCollection[T /* <: IEntity */] ()
+abstract class EntityListCollection[T /* <: typings.samchon.protocolEntityIEntityMod.IEntity */] ()
   extends typings.samchon.protocolEntityEntityCollectionMod.EntityListCollection[T]
 

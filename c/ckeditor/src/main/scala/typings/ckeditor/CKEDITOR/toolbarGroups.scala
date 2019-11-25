@@ -13,8 +13,8 @@ object toolbarGroups {
   @scala.inline
   def apply(groups: js.Array[String] = null, name: String = null): toolbarGroups = {
     val __obj = js.Dynamic.literal()
-    if (groups != null) __obj.updateDynamic("groups")(groups)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[toolbarGroups]
   }
 }

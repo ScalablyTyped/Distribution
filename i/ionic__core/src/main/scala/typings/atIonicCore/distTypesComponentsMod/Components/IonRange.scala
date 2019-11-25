@@ -2,8 +2,6 @@ package typings.atIonicCore.distTypesComponentsMod.Components
 
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
-import typings.atIonicCore.distTypesComponentsRangeRangeDashInterfaceMod.RangeValue
-import typings.atIonicCore.distTypesInterfaceMod.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +10,9 @@ trait IonRange extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.undefined
+  var color: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
+  ] = js.undefined
   /**
     * How long, in milliseconds, to wait to trigger the `ionChange` event after each change in the range value.
     */
@@ -60,7 +60,7 @@ trait IonRange extends js.Object {
   /**
     * the value of the range.
     */
-  var value: RangeValue
+  var value: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RangeValue */ js.Any
 }
 
 object IonRange {
@@ -76,11 +76,11 @@ object IonRange {
     snaps: Boolean,
     step: Double,
     ticks: Boolean,
-    value: RangeValue,
-    color: Color = null,
+    value: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RangeValue */ js.Any,
+    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
     mode: ios | md = null
   ): IonRange = {
-    val __obj = js.Dynamic.literal(debounce = debounce, disabled = disabled, dualKnobs = dualKnobs, max = max, min = min, name = name, pin = pin, snaps = snaps, step = step, ticks = ticks, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(debounce = debounce.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], dualKnobs = dualKnobs.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pin = pin.asInstanceOf[js.Any], snaps = snaps.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], ticks = ticks.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRange]

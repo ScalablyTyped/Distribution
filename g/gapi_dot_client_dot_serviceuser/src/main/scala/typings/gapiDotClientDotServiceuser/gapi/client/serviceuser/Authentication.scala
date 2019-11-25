@@ -19,8 +19,8 @@ object Authentication {
   @scala.inline
   def apply(providers: js.Array[AuthProvider] = null, rules: js.Array[AuthenticationRule] = null): Authentication = {
     val __obj = js.Dynamic.literal()
-    if (providers != null) __obj.updateDynamic("providers")(providers)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (providers != null) __obj.updateDynamic("providers")(providers.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[Authentication]
   }
 }

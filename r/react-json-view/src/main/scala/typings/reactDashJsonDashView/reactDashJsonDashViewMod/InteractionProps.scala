@@ -41,9 +41,9 @@ object InteractionProps {
     name: String = null,
     new_value: js.Object | String | Double | Boolean = null
   ): InteractionProps = {
-    val __obj = js.Dynamic.literal(existing_src = existing_src, namespace = namespace, updated_src = updated_src)
+    val __obj = js.Dynamic.literal(existing_src = existing_src.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], updated_src = updated_src.asInstanceOf[js.Any])
     if (existing_value != null) __obj.updateDynamic("existing_value")(existing_value.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (new_value != null) __obj.updateDynamic("new_value")(new_value.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractionProps]
   }

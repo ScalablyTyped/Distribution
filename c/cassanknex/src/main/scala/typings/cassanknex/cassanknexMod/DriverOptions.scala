@@ -16,7 +16,7 @@ object DriverOptions {
   def apply(connection: Client | ClientOptions = null, debug: js.UndefOr[Boolean] = js.undefined): DriverOptions = {
     val __obj = js.Dynamic.literal()
     if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     __obj.asInstanceOf[DriverOptions]
   }
 }

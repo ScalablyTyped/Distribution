@@ -13,8 +13,8 @@ object PivotTransport {
   @scala.inline
   def apply(discover: js.Any = null, read: js.Any = null): PivotTransport = {
     val __obj = js.Dynamic.literal()
-    if (discover != null) __obj.updateDynamic("discover")(discover)
-    if (read != null) __obj.updateDynamic("read")(read)
+    if (discover != null) __obj.updateDynamic("discover")(discover.asInstanceOf[js.Any])
+    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotTransport]
   }
 }

@@ -8,10 +8,9 @@ trait TabProps extends TabPanelProps
 
 object TabProps {
   @scala.inline
-  def apply(TabPanelProps: TabPanelProps = null, disabled: js.UndefOr[Boolean] = js.undefined): TabProps = {
+  def apply(TabPanelProps: TabPanelProps = null): TabProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, TabPanelProps)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (TabPanelProps != null) js.Dynamic.global.Object.assign(__obj, TabPanelProps)
     __obj.asInstanceOf[TabProps]
   }
 }

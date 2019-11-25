@@ -18,8 +18,8 @@ object EmbeddedObjectPosition {
     sheetId: Int | Double = null
   ): EmbeddedObjectPosition = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(newSheet)) __obj.updateDynamic("newSheet")(newSheet)
-    if (overlayPosition != null) __obj.updateDynamic("overlayPosition")(overlayPosition)
+    if (!js.isUndefined(newSheet)) __obj.updateDynamic("newSheet")(newSheet.asInstanceOf[js.Any])
+    if (overlayPosition != null) __obj.updateDynamic("overlayPosition")(overlayPosition.asInstanceOf[js.Any])
     if (sheetId != null) __obj.updateDynamic("sheetId")(sheetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmbeddedObjectPosition]
   }

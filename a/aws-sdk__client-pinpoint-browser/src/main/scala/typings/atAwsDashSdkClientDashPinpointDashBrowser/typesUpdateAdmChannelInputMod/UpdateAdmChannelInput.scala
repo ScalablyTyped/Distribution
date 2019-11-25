@@ -45,9 +45,9 @@ object UpdateAdmChannelInput {
     $httpOptions: BrowserHttpOptions = null,
     $maxRetries: Int | Double = null
   ): UpdateAdmChannelInput = {
-    val __obj = js.Dynamic.literal(ADMChannelRequest = ADMChannelRequest, ApplicationId = ApplicationId)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(ADMChannelRequest = ADMChannelRequest.asInstanceOf[js.Any], ApplicationId = ApplicationId.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAdmChannelInput]
   }

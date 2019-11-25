@@ -14,9 +14,9 @@ trait NewCustomAttributes extends js.Object {
 object NewCustomAttributes {
   @scala.inline
   def apply(key: String, value: js.Any, source: String = null, `type`: String = null): NewCustomAttributes = {
-    val __obj = js.Dynamic.literal(key = key, value = value)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewCustomAttributes]
   }
 }

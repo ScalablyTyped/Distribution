@@ -33,8 +33,8 @@ trait Warning extends js.Object {
 
 object Warning {
   @scala.inline
-  def apply(column: Double, line: Double, node: Node, plugin: String, text: String, toString: () => String): Warning = {
-    val __obj = js.Dynamic.literal(column = column, line = line, node = node, plugin = plugin, text = text, toString = js.Any.fromFunction0(toString))
+  def apply(column: Double, line: Double, node: Node, plugin: String, text: String): Warning = {
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Warning]
   }

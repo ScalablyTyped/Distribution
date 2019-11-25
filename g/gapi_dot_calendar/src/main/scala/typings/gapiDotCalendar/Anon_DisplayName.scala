@@ -24,10 +24,10 @@ object Anon_DisplayName {
     self: js.UndefOr[Boolean] = js.undefined
   ): Anon_DisplayName = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(self)) __obj.updateDynamic("self")(self)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(self)) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DisplayName]
   }
 }

@@ -35,7 +35,7 @@ trait Type extends js.Object {
 object Type {
   @scala.inline
   def apply(DEFAULT: default, ERROR: error, INFO: info, SUCCESS: success, WARNING: warning): Type = {
-    val __obj = js.Dynamic.literal(DEFAULT = DEFAULT, ERROR = ERROR, INFO = INFO, SUCCESS = SUCCESS, WARNING = WARNING)
+    val __obj = js.Dynamic.literal(DEFAULT = DEFAULT.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], INFO = INFO.asInstanceOf[js.Any], SUCCESS = SUCCESS.asInstanceOf[js.Any], WARNING = WARNING.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Type]
   }

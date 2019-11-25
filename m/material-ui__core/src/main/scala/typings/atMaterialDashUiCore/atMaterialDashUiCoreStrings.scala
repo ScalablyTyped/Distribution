@@ -321,12 +321,14 @@ object atMaterialDashUiCoreStrings {
   
   @js.native
   sealed trait body1
-    extends ThemeStyle
+    extends Style
+       with ThemeStyle
        with TypographyClassKey
   
   @js.native
   sealed trait body2
-    extends ThemeStyle
+    extends Style
+       with ThemeStyle
        with TypographyClassKey
   
   @js.native
@@ -349,15 +351,17 @@ object atMaterialDashUiCoreStrings {
   
   @js.native
   sealed trait button
-    extends ThemeStyle
-       with LinkClassKey
+    extends LinkClassKey
        with ListItemClassKey
+       with Style
+       with ThemeStyle
        with TypographyClassKey
   
   @js.native
   sealed trait caption
-    extends ThemeStyle
+    extends Style
        with TablePaginationClassKey
+       with ThemeStyle
        with TypographyClassKey
   
   @js.native
@@ -382,7 +386,11 @@ object atMaterialDashUiCoreStrings {
        with typings.atMaterialDashUiCore.tableTableMod.Padding
   
   @js.native
-  sealed trait checked extends SwitchBaseClassKey
+  sealed trait checked
+    extends CheckboxClassKey
+       with RadioClassKey
+       with SwitchBaseClassKey
+       with SwitchClassKey
   
   @js.native
   sealed trait child extends TouchRippleClassKey
@@ -620,9 +628,9 @@ object atMaterialDashUiCoreStrings {
   
   @js.native
   sealed trait disabled
-    extends SwitchBaseClassKey
-       with ButtonBaseClassKey
+    extends ButtonBaseClassKey
        with ButtonClassKey
+       with CheckboxClassKey
        with ExpansionPanelClassKey
        with ExpansionPanelSummaryClassKey
        with FabClassKey
@@ -637,29 +645,36 @@ object atMaterialDashUiCoreStrings {
        with ListItemClassKey
        with NativeSelectClassKey
        with OutlinedInputClassKey
+       with RadioClassKey
        with SelectClassKey
        with StepConnectorClasskey
        with StepLabelClasskey
+       with SwitchBaseClassKey
+       with SwitchClassKey
        with TabClassKey
   
   @js.native
   sealed trait display1
-    extends ThemeStyle
+    extends Style
+       with ThemeStyle
        with TypographyClassKey
   
   @js.native
   sealed trait display2
-    extends ThemeStyle
+    extends Style
+       with ThemeStyle
        with TypographyClassKey
   
   @js.native
   sealed trait display3
-    extends ThemeStyle
+    extends Style
+       with ThemeStyle
        with TypographyClassKey
   
   @js.native
   sealed trait display4
-    extends ThemeStyle
+    extends Style
+       with ThemeStyle
        with TypographyClassKey
   
   @js.native
@@ -953,32 +968,38 @@ object atMaterialDashUiCoreStrings {
   
   @js.native
   sealed trait h1
-    extends ThemeStyle
+    extends Style
+       with ThemeStyle
        with TypographyClassKey
   
   @js.native
   sealed trait h2
-    extends ThemeStyle
+    extends Style
+       with ThemeStyle
        with TypographyClassKey
   
   @js.native
   sealed trait h3
-    extends ThemeStyle
+    extends Style
+       with ThemeStyle
        with TypographyClassKey
   
   @js.native
   sealed trait h4
-    extends ThemeStyle
+    extends Style
+       with ThemeStyle
        with TypographyClassKey
   
   @js.native
   sealed trait h5
-    extends ThemeStyle
+    extends Style
+       with ThemeStyle
        with TypographyClassKey
   
   @js.native
   sealed trait h6
-    extends ThemeStyle
+    extends Style
+       with ThemeStyle
        with TypographyClassKey
   
   @js.native
@@ -991,7 +1012,8 @@ object atMaterialDashUiCoreStrings {
   
   @js.native
   sealed trait headline
-    extends ThemeStyle
+    extends Style
+       with ThemeStyle
        with TypographyClassKey
   
   @js.native
@@ -1070,11 +1092,14 @@ object atMaterialDashUiCoreStrings {
   
   @js.native
   sealed trait input
-    extends SwitchBaseClassKey
+    extends CheckboxClassKey
        with FilledInputClassKey
        with InputBaseClassKey
        with InputClassKey
        with OutlinedInputClassKey
+       with RadioClassKey
+       with SwitchBaseClassKey
+       with SwitchClassKey
        with TablePaginationClassKey
   
   @js.native
@@ -1312,7 +1337,7 @@ object atMaterialDashUiCoreStrings {
   sealed trait notchedOutline extends OutlinedInputClassKey
   
   @js.native
-  sealed trait nowrap extends GridWrap
+  sealed trait nowrap_ extends GridWrap
   
   @js.native
   sealed trait numeric extends TableCellClassKey
@@ -1327,22 +1352,34 @@ object atMaterialDashUiCoreStrings {
   sealed trait onClick extends js.Object
   
   @js.native
-  sealed trait onEnter extends TransitionHandlerKeys
+  sealed trait onEnter
+    extends TransitionHandlerKeys
+       with TransitionKeys
   
   @js.native
-  sealed trait onEntered extends TransitionHandlerKeys
+  sealed trait onEntered
+    extends TransitionHandlerKeys
+       with TransitionKeys
   
   @js.native
-  sealed trait onEntering extends TransitionHandlerKeys
+  sealed trait onEntering
+    extends TransitionHandlerKeys
+       with TransitionKeys
   
   @js.native
-  sealed trait onExit extends TransitionHandlerKeys
+  sealed trait onExit
+    extends TransitionHandlerKeys
+       with TransitionKeys
   
   @js.native
-  sealed trait onExited extends TransitionHandlerKeys
+  sealed trait onExited
+    extends TransitionHandlerKeys
+       with TransitionKeys
   
   @js.native
-  sealed trait onExiting extends TransitionHandlerKeys
+  sealed trait onExiting
+    extends TransitionHandlerKeys
+       with TransitionKeys
   
   @js.native
   sealed trait onMouseDown extends js.Object
@@ -1379,7 +1416,8 @@ object atMaterialDashUiCoreStrings {
   
   @js.native
   sealed trait overline
-    extends ThemeStyle
+    extends Style
+       with ThemeStyle
        with TypographyClassKey
   
   @js.native
@@ -1567,8 +1605,7 @@ object atMaterialDashUiCoreStrings {
   
   @js.native
   sealed trait root
-    extends SwitchBaseClassKey
-       with AppBarClassKey
+    extends AppBarClassKey
        with AvatarClassKey
        with BackdropClassKey
        with BadgeClassKey
@@ -1579,6 +1616,7 @@ object atMaterialDashUiCoreStrings {
        with CardActionsClassKey
        with CardHeaderClassKey
        with CardMediaClassKey
+       with CheckboxClassKey
        with ChipClassKey
        with CircularProgressClassKey
        with DialogActionsClassKey
@@ -1615,6 +1653,7 @@ object atMaterialDashUiCoreStrings {
        with NativeSelectClassKey
        with OutlinedInputClassKey
        with PaperClassKey
+       with RadioClassKey
        with SelectClassKey
        with SnackbarClassKey
        with SnackbarContentClassKey
@@ -1626,6 +1665,8 @@ object atMaterialDashUiCoreStrings {
        with StepLabelClasskey
        with StepperClasskey
        with SvgIconClassKey
+       with SwitchBaseClassKey
+       with SwitchClassKey
        with TabClassKey
        with TabIndicatorClassKey
        with TableCellClassKey
@@ -1808,7 +1849,8 @@ object atMaterialDashUiCoreStrings {
   
   @js.native
   sealed trait subheading
-    extends ThemeStyle
+    extends Style
+       with ThemeStyle
        with TypographyClassKey
   
   @js.native
@@ -1819,12 +1861,14 @@ object atMaterialDashUiCoreStrings {
   
   @js.native
   sealed trait subtitle1
-    extends ThemeStyle
+    extends Style
+       with ThemeStyle
        with TypographyClassKey
   
   @js.native
   sealed trait subtitle2
-    extends ThemeStyle
+    extends Style
+       with ThemeStyle
        with TypographyClassKey
   
   @js.native
@@ -1885,9 +1929,10 @@ object atMaterialDashUiCoreStrings {
   
   @js.native
   sealed trait title
-    extends ThemeStyle
-       with CardHeaderClassKey
+    extends CardHeaderClassKey
        with GridListTileBarClassKey
+       with Style
+       with ThemeStyle
        with TypographyClassKey
   
   @js.native
@@ -2631,7 +2676,7 @@ object atMaterialDashUiCoreStrings {
   @scala.inline
   def notchedOutline: notchedOutline = "notchedOutline".asInstanceOf[notchedOutline]
   @scala.inline
-  def nowrap: nowrap = "nowrap".asInstanceOf[nowrap]
+  def nowrap_ : nowrap_ = "nowrap".asInstanceOf[nowrap_]
   @scala.inline
   def numeric: numeric = "numeric".asInstanceOf[numeric]
   @scala.inline

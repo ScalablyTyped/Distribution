@@ -25,9 +25,9 @@ object Options {
     printErr: /* data */ js.Any => Unit = null,
     stdin: /* data */ js.Any => Unit = null
   ): Options = {
-    val __obj = js.Dynamic.literal(arguments = arguments)
-    if (MEMFS != null) __obj.updateDynamic("MEMFS")(MEMFS)
-    if (mounts != null) __obj.updateDynamic("mounts")(mounts)
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
+    if (MEMFS != null) __obj.updateDynamic("MEMFS")(MEMFS.asInstanceOf[js.Any])
+    if (mounts != null) __obj.updateDynamic("mounts")(mounts.asInstanceOf[js.Any])
     if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction1(onExit))
     if (print != null) __obj.updateDynamic("print")(js.Any.fromFunction1(print))
     if (printErr != null) __obj.updateDynamic("printErr")(js.Any.fromFunction1(printErr))

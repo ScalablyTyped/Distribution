@@ -15,8 +15,8 @@ object Request {
   @scala.inline
   def apply(fields: Fields = null, files: Files = null): Request = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (files != null) __obj.updateDynamic("files")(files)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request]
   }
 }

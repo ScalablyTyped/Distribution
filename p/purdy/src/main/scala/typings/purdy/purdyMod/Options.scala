@@ -33,14 +33,14 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(arrayIndex)) __obj.updateDynamic("arrayIndex")(arrayIndex)
+    if (!js.isUndefined(arrayIndex)) __obj.updateDynamic("arrayIndex")(arrayIndex.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json)
-    if (!js.isUndefined(path)) __obj.updateDynamic("path")(path)
-    if (pathPrefix != null) __obj.updateDynamic("pathPrefix")(pathPrefix)
-    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
-    if (!js.isUndefined(proto)) __obj.updateDynamic("proto")(proto)
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    if (!js.isUndefined(path)) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (pathPrefix != null) __obj.updateDynamic("pathPrefix")(pathPrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
+    if (!js.isUndefined(proto)) __obj.updateDynamic("proto")(proto.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

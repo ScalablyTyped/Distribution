@@ -24,9 +24,9 @@ object AffixState {
     placeholderStyle: CSSProperties = null,
     prevTarget: Window | HTMLElement = null
   ): AffixState = {
-    val __obj = js.Dynamic.literal(lastAffix = lastAffix, status = status)
-    if (affixStyle != null) __obj.updateDynamic("affixStyle")(affixStyle)
-    if (placeholderStyle != null) __obj.updateDynamic("placeholderStyle")(placeholderStyle)
+    val __obj = js.Dynamic.literal(lastAffix = lastAffix.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (affixStyle != null) __obj.updateDynamic("affixStyle")(affixStyle.asInstanceOf[js.Any])
+    if (placeholderStyle != null) __obj.updateDynamic("placeholderStyle")(placeholderStyle.asInstanceOf[js.Any])
     if (prevTarget != null) __obj.updateDynamic("prevTarget")(prevTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[AffixState]
   }

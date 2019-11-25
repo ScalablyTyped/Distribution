@@ -25,11 +25,11 @@ object _BaseFieldArrayProps {
     warn: Validator | js.Array[Validator] = null,
     withRef: js.UndefOr[Boolean] = js.undefined
   ): _BaseFieldArrayProps[P, FieldValue] = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], name = name)
-    if (!js.isUndefined(rerenderOnEveryChange)) __obj.updateDynamic("rerenderOnEveryChange")(rerenderOnEveryChange)
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(rerenderOnEveryChange)) __obj.updateDynamic("rerenderOnEveryChange")(rerenderOnEveryChange.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     if (warn != null) __obj.updateDynamic("warn")(warn.asInstanceOf[js.Any])
-    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef)
+    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[_BaseFieldArrayProps[P, FieldValue]]
   }
 }

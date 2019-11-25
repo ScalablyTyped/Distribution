@@ -42,12 +42,12 @@ object TabTheme {
     withText: String = null
   ): TabTheme = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active)
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (hidden != null) __obj.updateDynamic("hidden")(hidden)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (withIcon != null) __obj.updateDynamic("withIcon")(withIcon)
-    if (withText != null) __obj.updateDynamic("withText")(withText)
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (hidden != null) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (withIcon != null) __obj.updateDynamic("withIcon")(withIcon.asInstanceOf[js.Any])
+    if (withText != null) __obj.updateDynamic("withText")(withText.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabTheme]
   }
 }

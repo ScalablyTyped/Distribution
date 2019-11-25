@@ -34,12 +34,12 @@ object IosInfo {
     iosIpadFallbackLink: String = null
   ): IosInfo = {
     val __obj = js.Dynamic.literal()
-    if (iosAppStoreId != null) __obj.updateDynamic("iosAppStoreId")(iosAppStoreId)
-    if (iosBundleId != null) __obj.updateDynamic("iosBundleId")(iosBundleId)
-    if (iosCustomScheme != null) __obj.updateDynamic("iosCustomScheme")(iosCustomScheme)
-    if (iosFallbackLink != null) __obj.updateDynamic("iosFallbackLink")(iosFallbackLink)
-    if (iosIpadBundleId != null) __obj.updateDynamic("iosIpadBundleId")(iosIpadBundleId)
-    if (iosIpadFallbackLink != null) __obj.updateDynamic("iosIpadFallbackLink")(iosIpadFallbackLink)
+    if (iosAppStoreId != null) __obj.updateDynamic("iosAppStoreId")(iosAppStoreId.asInstanceOf[js.Any])
+    if (iosBundleId != null) __obj.updateDynamic("iosBundleId")(iosBundleId.asInstanceOf[js.Any])
+    if (iosCustomScheme != null) __obj.updateDynamic("iosCustomScheme")(iosCustomScheme.asInstanceOf[js.Any])
+    if (iosFallbackLink != null) __obj.updateDynamic("iosFallbackLink")(iosFallbackLink.asInstanceOf[js.Any])
+    if (iosIpadBundleId != null) __obj.updateDynamic("iosIpadBundleId")(iosIpadBundleId.asInstanceOf[js.Any])
+    if (iosIpadFallbackLink != null) __obj.updateDynamic("iosIpadFallbackLink")(iosIpadFallbackLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosInfo]
   }
 }

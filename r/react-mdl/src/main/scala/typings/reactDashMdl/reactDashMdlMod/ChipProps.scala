@@ -26,8 +26,8 @@ object ChipProps {
     onClose: MouseEvent[Chip, NativeMouseEvent] => Unit = null
   ): ChipProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     __obj.asInstanceOf[ChipProps]

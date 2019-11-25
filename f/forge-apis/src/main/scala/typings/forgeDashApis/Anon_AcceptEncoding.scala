@@ -14,8 +14,8 @@ object Anon_AcceptEncoding {
   @scala.inline
   def apply(acceptEncoding: String = null, ifModifiedSince: Date = null): Anon_AcceptEncoding = {
     val __obj = js.Dynamic.literal()
-    if (acceptEncoding != null) __obj.updateDynamic("acceptEncoding")(acceptEncoding)
-    if (ifModifiedSince != null) __obj.updateDynamic("ifModifiedSince")(ifModifiedSince)
+    if (acceptEncoding != null) __obj.updateDynamic("acceptEncoding")(acceptEncoding.asInstanceOf[js.Any])
+    if (ifModifiedSince != null) __obj.updateDynamic("ifModifiedSince")(ifModifiedSince.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AcceptEncoding]
   }
 }

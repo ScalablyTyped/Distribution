@@ -16,7 +16,7 @@ trait AppsScriptEvent extends js.Object {
 object AppsScriptEvent {
   @scala.inline
   def apply(authMode: AuthMode, triggerUid: String, user: User): AppsScriptEvent = {
-    val __obj = js.Dynamic.literal(authMode = authMode, triggerUid = triggerUid, user = user)
+    val __obj = js.Dynamic.literal(authMode = authMode.asInstanceOf[js.Any], triggerUid = triggerUid.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AppsScriptEvent]
   }

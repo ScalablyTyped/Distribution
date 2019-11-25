@@ -14,7 +14,7 @@ object IDeleteAllContextsRequest {
   @scala.inline
   def apply(parent: String = null): IDeleteAllContextsRequest = {
     val __obj = js.Dynamic.literal()
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeleteAllContextsRequest]
   }
 }

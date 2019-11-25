@@ -28,11 +28,11 @@ object TableRow {
     val __obj = js.Dynamic.literal()
     if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
     if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
-    if (suggestedDeletionIds != null) __obj.updateDynamic("suggestedDeletionIds")(suggestedDeletionIds)
-    if (suggestedInsertionIds != null) __obj.updateDynamic("suggestedInsertionIds")(suggestedInsertionIds)
-    if (suggestedTableRowStyleChanges != null) __obj.updateDynamic("suggestedTableRowStyleChanges")(suggestedTableRowStyleChanges)
-    if (tableCells != null) __obj.updateDynamic("tableCells")(tableCells)
-    if (tableRowStyle != null) __obj.updateDynamic("tableRowStyle")(tableRowStyle)
+    if (suggestedDeletionIds != null) __obj.updateDynamic("suggestedDeletionIds")(suggestedDeletionIds.asInstanceOf[js.Any])
+    if (suggestedInsertionIds != null) __obj.updateDynamic("suggestedInsertionIds")(suggestedInsertionIds.asInstanceOf[js.Any])
+    if (suggestedTableRowStyleChanges != null) __obj.updateDynamic("suggestedTableRowStyleChanges")(suggestedTableRowStyleChanges.asInstanceOf[js.Any])
+    if (tableCells != null) __obj.updateDynamic("tableCells")(tableCells.asInstanceOf[js.Any])
+    if (tableRowStyle != null) __obj.updateDynamic("tableRowStyle")(tableRowStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRow]
   }
 }

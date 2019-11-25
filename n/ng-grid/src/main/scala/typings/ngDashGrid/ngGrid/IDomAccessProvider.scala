@@ -22,7 +22,7 @@ object IDomAccessProvider {
     previousColumn: IColumn,
     selectionHandlers: (IGridScope, IAugmentedJQuery) => Unit
   ): IDomAccessProvider = {
-    val __obj = js.Dynamic.literal(changeUserSelect = js.Any.fromFunction2(changeUserSelect), focusCellElement = js.Any.fromFunction2(focusCellElement), grid = grid, previousColumn = previousColumn, selectionHandlers = js.Any.fromFunction2(selectionHandlers))
+    val __obj = js.Dynamic.literal(changeUserSelect = js.Any.fromFunction2(changeUserSelect), focusCellElement = js.Any.fromFunction2(focusCellElement), grid = grid.asInstanceOf[js.Any], previousColumn = previousColumn.asInstanceOf[js.Any], selectionHandlers = js.Any.fromFunction2(selectionHandlers))
   
     __obj.asInstanceOf[IDomAccessProvider]
   }

@@ -15,7 +15,7 @@ trait ClearDropOperation extends ManagementOperation {
 object ClearDropOperation {
   @scala.inline
   def apply(graph: GraphReference, silent: Boolean, `type`: clear | drop): ClearDropOperation = {
-    val __obj = js.Dynamic.literal(graph = graph, silent = silent)
+    val __obj = js.Dynamic.literal(graph = graph.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearDropOperation]
   }

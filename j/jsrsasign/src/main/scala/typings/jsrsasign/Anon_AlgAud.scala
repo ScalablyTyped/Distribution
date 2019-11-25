@@ -23,8 +23,8 @@ object Anon_AlgAud {
     jti: String = null,
     verifyAt: String | Double = null
   ): Anon_AlgAud = {
-    val __obj = js.Dynamic.literal(alg = alg, aud = aud, iss = iss, sub = sub)
-    if (jti != null) __obj.updateDynamic("jti")(jti)
+    val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any], aud = aud.asInstanceOf[js.Any], iss = iss.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any])
+    if (jti != null) __obj.updateDynamic("jti")(jti.asInstanceOf[js.Any])
     if (verifyAt != null) __obj.updateDynamic("verifyAt")(verifyAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AlgAud]
   }

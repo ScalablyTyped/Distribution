@@ -33,7 +33,7 @@ object Block {
     text: String,
     words: js.Array[Word]
   ): Block = {
-    val __obj = js.Dynamic.literal(baseline = baseline, bbox = bbox, blocktype = blocktype, confidence = confidence, lines = lines, page = page, paragraphs = paragraphs, polygon = polygon, symbols = symbols, text = text, words = words)
+    val __obj = js.Dynamic.literal(baseline = baseline.asInstanceOf[js.Any], bbox = bbox.asInstanceOf[js.Any], blocktype = blocktype.asInstanceOf[js.Any], confidence = confidence.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], paragraphs = paragraphs.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], symbols = symbols.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Block]
   }

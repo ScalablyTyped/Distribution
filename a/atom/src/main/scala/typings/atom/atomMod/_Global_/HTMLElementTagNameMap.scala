@@ -13,7 +13,7 @@ object HTMLElementTagNameMap {
   @scala.inline
   def apply(`atom-text-editor`: TextEditorElement): HTMLElementTagNameMap = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("atom-text-editor")(`atom-text-editor`)
+    __obj.updateDynamic("atom-text-editor")(`atom-text-editor`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLElementTagNameMap]
   }
 }

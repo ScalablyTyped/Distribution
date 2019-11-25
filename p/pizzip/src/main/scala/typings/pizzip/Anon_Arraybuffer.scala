@@ -13,7 +13,7 @@ object Anon_Arraybuffer {
   @scala.inline
   def apply(`type`: arraybuffer): Anon_Arraybuffer = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Arraybuffer]
   }
 }

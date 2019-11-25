@@ -23,9 +23,9 @@ object AccountTwoFactorLoginOptions {
     trustThisDevice: `1` | `0` = null,
     verificationMethod: String = null
   ): AccountTwoFactorLoginOptions = {
-    val __obj = js.Dynamic.literal(twoFactorIdentifier = twoFactorIdentifier, username = username, verificationCode = verificationCode)
+    val __obj = js.Dynamic.literal(twoFactorIdentifier = twoFactorIdentifier.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any], verificationCode = verificationCode.asInstanceOf[js.Any])
     if (trustThisDevice != null) __obj.updateDynamic("trustThisDevice")(trustThisDevice.asInstanceOf[js.Any])
-    if (verificationMethod != null) __obj.updateDynamic("verificationMethod")(verificationMethod)
+    if (verificationMethod != null) __obj.updateDynamic("verificationMethod")(verificationMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountTwoFactorLoginOptions]
   }
 }

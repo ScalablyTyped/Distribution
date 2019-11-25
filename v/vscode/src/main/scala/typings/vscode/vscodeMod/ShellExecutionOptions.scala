@@ -44,11 +44,11 @@ object ShellExecutionOptions {
     shellQuoting: ShellQuotingOptions = null
   ): ShellExecutionOptions = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (env != null) __obj.updateDynamic("env")(env)
-    if (executable != null) __obj.updateDynamic("executable")(executable)
-    if (shellArgs != null) __obj.updateDynamic("shellArgs")(shellArgs)
-    if (shellQuoting != null) __obj.updateDynamic("shellQuoting")(shellQuoting)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (executable != null) __obj.updateDynamic("executable")(executable.asInstanceOf[js.Any])
+    if (shellArgs != null) __obj.updateDynamic("shellArgs")(shellArgs.asInstanceOf[js.Any])
+    if (shellQuoting != null) __obj.updateDynamic("shellQuoting")(shellQuoting.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShellExecutionOptions]
   }
 }

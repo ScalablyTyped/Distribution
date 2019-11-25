@@ -25,11 +25,11 @@ object SmartHomeV1ExecuteResponseCommands {
     errorCode: SmartHomeV1ExecuteErrors = null,
     states: ApiClientObjectMap[_] = null
   ): SmartHomeV1ExecuteResponseCommands = {
-    val __obj = js.Dynamic.literal(ids = ids, status = status)
-    if (challengeNeeded != null) __obj.updateDynamic("challengeNeeded")(challengeNeeded)
-    if (debugString != null) __obj.updateDynamic("debugString")(debugString)
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode)
-    if (states != null) __obj.updateDynamic("states")(states)
+    val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (challengeNeeded != null) __obj.updateDynamic("challengeNeeded")(challengeNeeded.asInstanceOf[js.Any])
+    if (debugString != null) __obj.updateDynamic("debugString")(debugString.asInstanceOf[js.Any])
+    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
+    if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartHomeV1ExecuteResponseCommands]
   }
 }

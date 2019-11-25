@@ -27,8 +27,8 @@ trait NightwatchLogEntry extends js.Object {
 object NightwatchLogEntry {
   @scala.inline
   def apply(level: SEVERE | WARNING | INFO | DEBUG, message: String, timestamp: Double, source: String = null): NightwatchLogEntry = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], message = message, timestamp = timestamp)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[NightwatchLogEntry]
   }
 }

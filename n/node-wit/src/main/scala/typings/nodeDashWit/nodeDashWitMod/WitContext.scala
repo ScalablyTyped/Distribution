@@ -22,11 +22,11 @@ object WitContext {
     timezone: String = null
   ): WitContext = {
     val __obj = js.Dynamic.literal()
-    if (entities != null) __obj.updateDynamic("entities")(entities)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (reference_time != null) __obj.updateDynamic("reference_time")(reference_time)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
+    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (reference_time != null) __obj.updateDynamic("reference_time")(reference_time.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[WitContext]
   }
 }

@@ -37,9 +37,9 @@ object ModelAndWeightsConfig {
     pathPrefix: String = null,
     weightsManifest: WeightsManifestConfig = null
   ): ModelAndWeightsConfig = {
-    val __obj = js.Dynamic.literal(modelTopology = modelTopology)
-    if (pathPrefix != null) __obj.updateDynamic("pathPrefix")(pathPrefix)
-    if (weightsManifest != null) __obj.updateDynamic("weightsManifest")(weightsManifest)
+    val __obj = js.Dynamic.literal(modelTopology = modelTopology.asInstanceOf[js.Any])
+    if (pathPrefix != null) __obj.updateDynamic("pathPrefix")(pathPrefix.asInstanceOf[js.Any])
+    if (weightsManifest != null) __obj.updateDynamic("weightsManifest")(weightsManifest.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelAndWeightsConfig]
   }
 }

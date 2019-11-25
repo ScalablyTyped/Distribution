@@ -24,9 +24,9 @@ object ClearStorageDataOptions {
   @scala.inline
   def apply(origin: String = null, quotas: js.Array[String] = null, storages: js.Array[String] = null): ClearStorageDataOptions = {
     val __obj = js.Dynamic.literal()
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (quotas != null) __obj.updateDynamic("quotas")(quotas)
-    if (storages != null) __obj.updateDynamic("storages")(storages)
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (quotas != null) __obj.updateDynamic("quotas")(quotas.asInstanceOf[js.Any])
+    if (storages != null) __obj.updateDynamic("storages")(storages.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearStorageDataOptions]
   }
 }

@@ -13,8 +13,8 @@ object FusionTablesCell {
   @scala.inline
   def apply(columnName: String = null, value: String = null): FusionTablesCell = {
     val __obj = js.Dynamic.literal()
-    if (columnName != null) __obj.updateDynamic("columnName")(columnName)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (columnName != null) __obj.updateDynamic("columnName")(columnName.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FusionTablesCell]
   }
 }

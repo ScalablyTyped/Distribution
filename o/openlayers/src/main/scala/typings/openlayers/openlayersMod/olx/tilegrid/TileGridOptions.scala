@@ -28,13 +28,13 @@ object TileGridOptions {
     tileSize: Double | Size = null,
     tileSizes: js.Array[Double | Size] = null
   ): TileGridOptions = {
-    val __obj = js.Dynamic.literal(resolutions = resolutions)
-    if (extent != null) __obj.updateDynamic("extent")(extent)
+    val __obj = js.Dynamic.literal(resolutions = resolutions.asInstanceOf[js.Any])
+    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (origins != null) __obj.updateDynamic("origins")(origins)
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (origins != null) __obj.updateDynamic("origins")(origins.asInstanceOf[js.Any])
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
-    if (tileSizes != null) __obj.updateDynamic("tileSizes")(tileSizes)
+    if (tileSizes != null) __obj.updateDynamic("tileSizes")(tileSizes.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileGridOptions]
   }
 }

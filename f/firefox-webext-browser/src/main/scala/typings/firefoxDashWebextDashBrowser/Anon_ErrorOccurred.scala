@@ -35,8 +35,8 @@ object Anon_ErrorOccurred {
     url: String,
     errorOccurred: js.UndefOr[Boolean] = js.undefined
   ): Anon_ErrorOccurred = {
-    val __obj = js.Dynamic.literal(frameId = frameId, parentFrameId = parentFrameId, tabId = tabId, url = url)
-    if (!js.isUndefined(errorOccurred)) __obj.updateDynamic("errorOccurred")(errorOccurred)
+    val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorOccurred)) __obj.updateDynamic("errorOccurred")(errorOccurred.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ErrorOccurred]
   }
 }

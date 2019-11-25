@@ -15,7 +15,7 @@ object Anon_ColorProvider {
   @scala.inline
   def apply(colorProvider: Anon_DynamicRegistration = null): Anon_ColorProvider = {
     val __obj = js.Dynamic.literal()
-    if (colorProvider != null) __obj.updateDynamic("colorProvider")(colorProvider)
+    if (colorProvider != null) __obj.updateDynamic("colorProvider")(colorProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorProvider]
   }
 }

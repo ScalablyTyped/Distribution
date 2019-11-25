@@ -27,7 +27,7 @@ object MediaInlineChildCommentsFeedResponseRootObject {
     parent_comment: MediaInlineChildCommentsFeedResponseParent_comment,
     status: String
   ): MediaInlineChildCommentsFeedResponseRootObject = {
-    val __obj = js.Dynamic.literal(child_comment_count = child_comment_count, child_comments = child_comments, has_more_head_child_comments = has_more_head_child_comments, has_more_tail_child_comments = has_more_tail_child_comments, next_max_child_cursor = next_max_child_cursor, num_tail_child_comments = num_tail_child_comments, parent_comment = parent_comment, status = status)
+    val __obj = js.Dynamic.literal(child_comment_count = child_comment_count.asInstanceOf[js.Any], child_comments = child_comments.asInstanceOf[js.Any], has_more_head_child_comments = has_more_head_child_comments.asInstanceOf[js.Any], has_more_tail_child_comments = has_more_tail_child_comments.asInstanceOf[js.Any], next_max_child_cursor = next_max_child_cursor.asInstanceOf[js.Any], num_tail_child_comments = num_tail_child_comments.asInstanceOf[js.Any], parent_comment = parent_comment.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaInlineChildCommentsFeedResponseRootObject]
   }

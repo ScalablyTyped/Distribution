@@ -21,7 +21,7 @@ object HDSignerAsync {
     publicKey: Buffer,
     sign: Buffer => js.Promise[Buffer]
   ): HDSignerAsync = {
-    val __obj = js.Dynamic.literal(derivePath = js.Any.fromFunction1(derivePath), fingerprint = fingerprint, publicKey = publicKey, sign = js.Any.fromFunction1(sign))
+    val __obj = js.Dynamic.literal(derivePath = js.Any.fromFunction1(derivePath), fingerprint = fingerprint.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any], sign = js.Any.fromFunction1(sign))
   
     __obj.asInstanceOf[HDSignerAsync]
   }

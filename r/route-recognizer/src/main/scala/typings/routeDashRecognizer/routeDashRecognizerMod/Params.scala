@@ -21,9 +21,9 @@ object Params {
     queryParams: QueryParams = null
   ): Params = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams)
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]
   }
 }

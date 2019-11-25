@@ -22,7 +22,7 @@ object Anon_DefaultValue {
     property: String,
     required: Boolean
   ): Anon_DefaultValue = {
-    val __obj = js.Dynamic.literal(defaultValue = defaultValue, description = description, propType = propType.asInstanceOf[js.Any], property = property, required = required)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], propType = propType.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DefaultValue]
   }

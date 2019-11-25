@@ -104,10 +104,10 @@ object FileUploadOptions {
     ngfValidateForce: js.UndefOr[Boolean] = js.undefined
   ): FileUploadOptions = {
     val __obj = js.Dynamic.literal()
-    if (ngfAccept != null) __obj.updateDynamic("ngfAccept")(ngfAccept)
-    if (!js.isUndefined(ngfAllowDir)) __obj.updateDynamic("ngfAllowDir")(ngfAllowDir)
-    if (!js.isUndefined(ngfEnableFirefoxPaste)) __obj.updateDynamic("ngfEnableFirefoxPaste")(ngfEnableFirefoxPaste)
-    if (!js.isUndefined(ngfHideOnDropNotAvailable)) __obj.updateDynamic("ngfHideOnDropNotAvailable")(ngfHideOnDropNotAvailable)
+    if (ngfAccept != null) __obj.updateDynamic("ngfAccept")(ngfAccept.asInstanceOf[js.Any])
+    if (!js.isUndefined(ngfAllowDir)) __obj.updateDynamic("ngfAllowDir")(ngfAllowDir.asInstanceOf[js.Any])
+    if (!js.isUndefined(ngfEnableFirefoxPaste)) __obj.updateDynamic("ngfEnableFirefoxPaste")(ngfEnableFirefoxPaste.asInstanceOf[js.Any])
+    if (!js.isUndefined(ngfHideOnDropNotAvailable)) __obj.updateDynamic("ngfHideOnDropNotAvailable")(ngfHideOnDropNotAvailable.asInstanceOf[js.Any])
     if (ngfMaxDuration != null) __obj.updateDynamic("ngfMaxDuration")(ngfMaxDuration.asInstanceOf[js.Any])
     if (ngfMaxFiles != null) __obj.updateDynamic("ngfMaxFiles")(ngfMaxFiles.asInstanceOf[js.Any])
     if (ngfMaxSize != null) __obj.updateDynamic("ngfMaxSize")(ngfMaxSize.asInstanceOf[js.Any])
@@ -115,10 +115,10 @@ object FileUploadOptions {
     if (ngfMinDuration != null) __obj.updateDynamic("ngfMinDuration")(ngfMinDuration.asInstanceOf[js.Any])
     if (ngfMinRatio != null) __obj.updateDynamic("ngfMinRatio")(ngfMinRatio.asInstanceOf[js.Any])
     if (ngfMinSize != null) __obj.updateDynamic("ngfMinSize")(ngfMinSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(ngfMultiple)) __obj.updateDynamic("ngfMultiple")(ngfMultiple)
-    if (ngfRatio != null) __obj.updateDynamic("ngfRatio")(ngfRatio)
-    if (!js.isUndefined(ngfStopPropagation)) __obj.updateDynamic("ngfStopPropagation")(ngfStopPropagation)
-    if (!js.isUndefined(ngfValidateForce)) __obj.updateDynamic("ngfValidateForce")(ngfValidateForce)
+    if (!js.isUndefined(ngfMultiple)) __obj.updateDynamic("ngfMultiple")(ngfMultiple.asInstanceOf[js.Any])
+    if (ngfRatio != null) __obj.updateDynamic("ngfRatio")(ngfRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(ngfStopPropagation)) __obj.updateDynamic("ngfStopPropagation")(ngfStopPropagation.asInstanceOf[js.Any])
+    if (!js.isUndefined(ngfValidateForce)) __obj.updateDynamic("ngfValidateForce")(ngfValidateForce.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileUploadOptions]
   }
 }

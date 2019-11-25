@@ -17,10 +17,10 @@ object TeamsAppDefinition {
   @scala.inline
   def apply(displayName: String = null, id: String = null, teamsAppId: String = null, version: String = null): TeamsAppDefinition = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (teamsAppId != null) __obj.updateDynamic("teamsAppId")(teamsAppId)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (teamsAppId != null) __obj.updateDynamic("teamsAppId")(teamsAppId.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsAppDefinition]
   }
 }

@@ -2,7 +2,6 @@ package typings.node.http2Mod
 
 import typings.node.Anon_Origin
 import typings.node.netMod.Socket
-import typings.node.nodeStrings.connect
 import typings.node.nodeStrings.stream
 import typings.node.tlsMod.TLSSocket
 import typings.node.urlMod.URL
@@ -15,7 +14,7 @@ trait ServerHttp2Session extends Http2Session {
   val server: Http2Server | Http2SecureServer = js.native
   @JSName("addListener")
   def addListener_connect(
-    event: connect,
+    event: typings.node.nodeStrings.connect,
     listener: js.Function2[/* session */ this.type, /* socket */ Socket | TLSSocket, Unit]
   ): this.type = js.native
   @JSName("addListener")
@@ -33,14 +32,14 @@ trait ServerHttp2Session extends Http2Session {
   def altsvc(alt: java.lang.String, originOrStream: AlternativeServiceOptions): Unit = js.native
   def altsvc(alt: java.lang.String, originOrStream: URL): Unit = js.native
   @JSName("emit")
-  def emit_connect(event: connect, session: ServerHttp2Session, socket: Socket): Boolean = js.native
+  def emit_connect(event: typings.node.nodeStrings.connect, session: ServerHttp2Session, socket: Socket): Boolean = js.native
   @JSName("emit")
-  def emit_connect(event: connect, session: ServerHttp2Session, socket: TLSSocket): Boolean = js.native
+  def emit_connect(event: typings.node.nodeStrings.connect, session: ServerHttp2Session, socket: TLSSocket): Boolean = js.native
   @JSName("emit")
   def emit_stream(event: stream, stream: ServerHttp2Stream, headers: IncomingHttpHeaders, flags: Double): Boolean = js.native
   @JSName("on")
   def on_connect(
-    event: connect,
+    event: typings.node.nodeStrings.connect,
     listener: js.Function2[/* session */ this.type, /* socket */ Socket | TLSSocket, Unit]
   ): this.type = js.native
   @JSName("on")
@@ -55,7 +54,7 @@ trait ServerHttp2Session extends Http2Session {
   ): this.type = js.native
   @JSName("once")
   def once_connect(
-    event: connect,
+    event: typings.node.nodeStrings.connect,
     listener: js.Function2[/* session */ this.type, /* socket */ Socket | TLSSocket, Unit]
   ): this.type = js.native
   @JSName("once")
@@ -71,7 +70,7 @@ trait ServerHttp2Session extends Http2Session {
   def origin(args: (java.lang.String | URL | Anon_Origin)*): Unit = js.native
   @JSName("prependListener")
   def prependListener_connect(
-    event: connect,
+    event: typings.node.nodeStrings.connect,
     listener: js.Function2[/* session */ this.type, /* socket */ Socket | TLSSocket, Unit]
   ): this.type = js.native
   @JSName("prependListener")
@@ -86,7 +85,7 @@ trait ServerHttp2Session extends Http2Session {
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_connect(
-    event: connect,
+    event: typings.node.nodeStrings.connect,
     listener: js.Function2[/* session */ this.type, /* socket */ Socket | TLSSocket, Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")

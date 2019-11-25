@@ -19,7 +19,7 @@ trait ShareNotificationContext extends js.Object {
 object ShareNotificationContext {
   @scala.inline
   def apply(message: String, receivers: js.Array[IdentityRef]): ShareNotificationContext = {
-    val __obj = js.Dynamic.literal(message = message, receivers = receivers)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], receivers = receivers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ShareNotificationContext]
   }

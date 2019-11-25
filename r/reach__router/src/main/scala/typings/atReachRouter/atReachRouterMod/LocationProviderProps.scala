@@ -15,7 +15,7 @@ object LocationProviderProps {
   def apply(children: ReactNode | LocationProviderRenderFn = null, history: History = null): LocationProviderProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (history != null) __obj.updateDynamic("history")(history)
+    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationProviderProps]
   }
 }

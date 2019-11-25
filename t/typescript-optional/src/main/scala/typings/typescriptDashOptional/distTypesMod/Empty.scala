@@ -12,7 +12,7 @@ trait Empty[T] extends Option[T] {
 object Empty {
   @scala.inline
   def apply[T](kind: empty): Empty[T] = {
-    val __obj = js.Dynamic.literal(kind = kind)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Empty[T]]
   }

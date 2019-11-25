@@ -14,7 +14,7 @@ object MetaTrueOptions {
   @scala.inline
   def apply(orientation: Orientation, meta: `true` = null): MetaTrueOptions = {
     val __obj = js.Dynamic.literal(orientation = orientation.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaTrueOptions]
   }
 }

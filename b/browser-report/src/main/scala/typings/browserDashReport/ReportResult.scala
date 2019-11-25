@@ -40,8 +40,8 @@ object ReportResult {
     viewport: Anon_HeightLayout,
     websockets: Boolean
   ): ReportResult = {
-    val __obj = js.Dynamic.literal(browser = browser, cookies = cookies, country = country, flash = flash, ip = ip, lang = lang, os = os, screen = screen, scripts = scripts, timestamp = timestamp, userAgent = userAgent, viewport = viewport, websockets = websockets)
-    __obj.updateDynamic("java")(java_)
+    val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], cookies = cookies.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], flash = flash.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], screen = screen.asInstanceOf[js.Any], scripts = scripts.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], userAgent = userAgent.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any], websockets = websockets.asInstanceOf[js.Any])
+    __obj.updateDynamic("java")(java_.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportResult]
   }
 }

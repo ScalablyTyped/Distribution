@@ -37,7 +37,7 @@ object TestConfig {
     minOptionalTestsToPass: Double,
     minPhraseLength: Double
   ): TestConfig = {
-    val __obj = js.Dynamic.literal(allowPassphrases = allowPassphrases, maxLength = maxLength, minLength = minLength, minOptionalTestsToPass = minOptionalTestsToPass, minPhraseLength = minPhraseLength)
+    val __obj = js.Dynamic.literal(allowPassphrases = allowPassphrases.asInstanceOf[js.Any], maxLength = maxLength.asInstanceOf[js.Any], minLength = minLength.asInstanceOf[js.Any], minOptionalTestsToPass = minOptionalTestsToPass.asInstanceOf[js.Any], minPhraseLength = minPhraseLength.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestConfig]
   }

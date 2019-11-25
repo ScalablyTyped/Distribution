@@ -43,20 +43,20 @@ object Anon_ExtrudedHeight {
     stRotation: Property = null
   ): Anon_ExtrudedHeight = {
     val __obj = js.Dynamic.literal()
-    if (extrudedHeight != null) __obj.updateDynamic("extrudedHeight")(extrudedHeight)
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
-    if (granularity != null) __obj.updateDynamic("granularity")(granularity)
-    if (height != null) __obj.updateDynamic("height")(height)
+    if (extrudedHeight != null) __obj.updateDynamic("extrudedHeight")(extrudedHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
-    if (numberOfVerticalLines != null) __obj.updateDynamic("numberOfVerticalLines")(numberOfVerticalLines)
-    if (!js.isUndefined(outline)) __obj.updateDynamic("outline")(outline)
-    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor)
+    if (numberOfVerticalLines != null) __obj.updateDynamic("numberOfVerticalLines")(numberOfVerticalLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(outline)) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
+    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
     if (outlineWidth != null) __obj.updateDynamic("outlineWidth")(outlineWidth.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation)
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (semiMajorAxis != null) __obj.updateDynamic("semiMajorAxis")(semiMajorAxis.asInstanceOf[js.Any])
     if (semiMinorAxis != null) __obj.updateDynamic("semiMinorAxis")(semiMinorAxis.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show)
-    if (stRotation != null) __obj.updateDynamic("stRotation")(stRotation)
+    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (stRotation != null) __obj.updateDynamic("stRotation")(stRotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExtrudedHeight]
   }
 }

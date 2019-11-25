@@ -13,7 +13,7 @@ trait IEXTENSION_RESPONSE extends js.Object {
 object IEXTENSION_RESPONSE {
   @scala.inline
   def apply(cmd: String, params: js.Object, sourceRoom: Double): IEXTENSION_RESPONSE = {
-    val __obj = js.Dynamic.literal(cmd = cmd, params = params, sourceRoom = sourceRoom)
+    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], sourceRoom = sourceRoom.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IEXTENSION_RESPONSE]
   }

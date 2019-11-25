@@ -17,3 +17,26 @@ import scala.scalajs.js.annotation._
 */
 trait TimelineTimeAxisScaleType extends js.Object
 
+object TimelineTimeAxisScaleType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def day: typings.vis.visStrings.day = this.cast("day")
+  @scala.inline
+  def hour: typings.vis.visStrings.hour = this.cast("hour")
+  @scala.inline
+  def millisecond: typings.vis.visStrings.millisecond = this.cast("millisecond")
+  @scala.inline
+  def minute: typings.vis.visStrings.minute = this.cast("minute")
+  @scala.inline
+  def month: typings.vis.visStrings.month = this.cast("month")
+  @scala.inline
+  def second: typings.vis.visStrings.second = this.cast("second")
+  @scala.inline
+  def week: typings.vis.visStrings.week = this.cast("week")
+  @scala.inline
+  def weekday: typings.vis.visStrings.weekday = this.cast("weekday")
+  @scala.inline
+  def year: typings.vis.visStrings.year = this.cast("year")
+}
+

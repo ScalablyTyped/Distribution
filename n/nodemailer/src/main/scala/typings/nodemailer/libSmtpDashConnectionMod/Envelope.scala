@@ -28,9 +28,9 @@ object Envelope {
     use8BitMime: js.UndefOr[Boolean] = js.undefined
   ): Envelope = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-    if (dsn != null) __obj.updateDynamic("dsn")(dsn)
+    if (dsn != null) __obj.updateDynamic("dsn")(dsn.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(use8BitMime)) __obj.updateDynamic("use8BitMime")(use8BitMime)
+    if (!js.isUndefined(use8BitMime)) __obj.updateDynamic("use8BitMime")(use8BitMime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Envelope]
   }
 }

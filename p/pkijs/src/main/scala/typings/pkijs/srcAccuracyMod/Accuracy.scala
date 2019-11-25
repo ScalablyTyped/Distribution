@@ -13,7 +13,7 @@ trait Accuracy extends js.Object {
 object Accuracy {
   @scala.inline
   def apply(micros: Double, millis: Double, seconds: Double): Accuracy = {
-    val __obj = js.Dynamic.literal(micros = micros, millis = millis, seconds = seconds)
+    val __obj = js.Dynamic.literal(micros = micros.asInstanceOf[js.Any], millis = millis.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Accuracy]
   }

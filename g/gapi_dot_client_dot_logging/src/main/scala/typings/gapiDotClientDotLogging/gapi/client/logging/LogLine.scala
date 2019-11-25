@@ -24,10 +24,10 @@ object LogLine {
     time: String = null
   ): LogLine = {
     val __obj = js.Dynamic.literal()
-    if (logMessage != null) __obj.updateDynamic("logMessage")(logMessage)
-    if (severity != null) __obj.updateDynamic("severity")(severity)
-    if (sourceLocation != null) __obj.updateDynamic("sourceLocation")(sourceLocation)
-    if (time != null) __obj.updateDynamic("time")(time)
+    if (logMessage != null) __obj.updateDynamic("logMessage")(logMessage.asInstanceOf[js.Any])
+    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
+    if (sourceLocation != null) __obj.updateDynamic("sourceLocation")(sourceLocation.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogLine]
   }
 }

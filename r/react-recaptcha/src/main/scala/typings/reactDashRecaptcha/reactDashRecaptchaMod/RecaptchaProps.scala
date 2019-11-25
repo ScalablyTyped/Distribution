@@ -57,21 +57,21 @@ object RecaptchaProps {
   ): RecaptchaProps = {
     val __obj = js.Dynamic.literal()
     if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (elementID != null) __obj.updateDynamic("elementID")(elementID)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (elementID != null) __obj.updateDynamic("elementID")(elementID.asInstanceOf[js.Any])
     if (expiredCallback != null) __obj.updateDynamic("expiredCallback")(js.Any.fromFunction0(expiredCallback))
-    if (expiredCallbackName != null) __obj.updateDynamic("expiredCallbackName")(expiredCallbackName)
-    if (hl != null) __obj.updateDynamic("hl")(hl)
+    if (expiredCallbackName != null) __obj.updateDynamic("expiredCallbackName")(expiredCallbackName.asInstanceOf[js.Any])
+    if (hl != null) __obj.updateDynamic("hl")(hl.asInstanceOf[js.Any])
     if (onloadCallback != null) __obj.updateDynamic("onloadCallback")(js.Any.fromFunction0(onloadCallback))
-    if (onloadCallbackName != null) __obj.updateDynamic("onloadCallbackName")(onloadCallbackName)
+    if (onloadCallbackName != null) __obj.updateDynamic("onloadCallbackName")(onloadCallbackName.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
-    if (sitekey != null) __obj.updateDynamic("sitekey")(sitekey)
+    if (sitekey != null) __obj.updateDynamic("sitekey")(sitekey.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (verifyCallback != null) __obj.updateDynamic("verifyCallback")(js.Any.fromFunction1(verifyCallback))
-    if (verifyCallbackName != null) __obj.updateDynamic("verifyCallbackName")(verifyCallbackName)
+    if (verifyCallbackName != null) __obj.updateDynamic("verifyCallbackName")(verifyCallbackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecaptchaProps]
   }
 }

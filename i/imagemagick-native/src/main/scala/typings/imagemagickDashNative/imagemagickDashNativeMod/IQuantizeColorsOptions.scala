@@ -20,9 +20,9 @@ object IQuantizeColorsOptions {
     debug: js.UndefOr[Boolean] = js.undefined,
     ignoreWarnings: js.UndefOr[Boolean] = js.undefined
   ): IQuantizeColorsOptions = {
-    val __obj = js.Dynamic.literal(colors = colors, srcData = srcData)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (!js.isUndefined(ignoreWarnings)) __obj.updateDynamic("ignoreWarnings")(ignoreWarnings)
+    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], srcData = srcData.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreWarnings)) __obj.updateDynamic("ignoreWarnings")(ignoreWarnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQuantizeColorsOptions]
   }
 }

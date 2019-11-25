@@ -13,7 +13,7 @@ trait ChecksUpdateResponsePullRequestsItemBaseRepo extends js.Object {
 object ChecksUpdateResponsePullRequestsItemBaseRepo {
   @scala.inline
   def apply(id: Double, name: String, url: String): ChecksUpdateResponsePullRequestsItemBaseRepo = {
-    val __obj = js.Dynamic.literal(id = id, name = name, url = url)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChecksUpdateResponsePullRequestsItemBaseRepo]
   }

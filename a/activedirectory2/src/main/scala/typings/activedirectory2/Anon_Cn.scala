@@ -69,7 +69,7 @@ object Anon_Cn {
       description
     ]
   ): Anon_Cn = {
-    val __obj = js.Dynamic.literal(group = group, user = user)
+    val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Cn]
   }

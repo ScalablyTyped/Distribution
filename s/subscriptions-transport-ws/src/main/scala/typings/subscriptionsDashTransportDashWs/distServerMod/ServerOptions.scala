@@ -44,14 +44,14 @@ object ServerOptions {
     val __obj = js.Dynamic.literal()
     if (execute != null) __obj.updateDynamic("execute")(js.Any.fromFunction7(execute))
     if (keepAlive != null) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
-    if (onConnect != null) __obj.updateDynamic("onConnect")(onConnect)
-    if (onDisconnect != null) __obj.updateDynamic("onDisconnect")(onDisconnect)
-    if (onOperation != null) __obj.updateDynamic("onOperation")(onOperation)
-    if (onOperationComplete != null) __obj.updateDynamic("onOperationComplete")(onOperationComplete)
-    if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue)
-    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (onConnect != null) __obj.updateDynamic("onConnect")(onConnect.asInstanceOf[js.Any])
+    if (onDisconnect != null) __obj.updateDynamic("onDisconnect")(onDisconnect.asInstanceOf[js.Any])
+    if (onOperation != null) __obj.updateDynamic("onOperation")(onOperation.asInstanceOf[js.Any])
+    if (onOperationComplete != null) __obj.updateDynamic("onOperationComplete")(onOperationComplete.asInstanceOf[js.Any])
+    if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue.asInstanceOf[js.Any])
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     if (subscribe != null) __obj.updateDynamic("subscribe")(js.Any.fromFunction8(subscribe))
-    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules)
+    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptions]
   }
 }

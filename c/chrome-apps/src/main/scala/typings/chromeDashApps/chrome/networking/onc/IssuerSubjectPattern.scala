@@ -30,10 +30,10 @@ object IssuerSubjectPattern {
     OrganizationalUnit: String = null
   ): IssuerSubjectPattern = {
     val __obj = js.Dynamic.literal()
-    if (CommonName != null) __obj.updateDynamic("CommonName")(CommonName)
-    if (Locality != null) __obj.updateDynamic("Locality")(Locality)
-    if (Organization != null) __obj.updateDynamic("Organization")(Organization)
-    if (OrganizationalUnit != null) __obj.updateDynamic("OrganizationalUnit")(OrganizationalUnit)
+    if (CommonName != null) __obj.updateDynamic("CommonName")(CommonName.asInstanceOf[js.Any])
+    if (Locality != null) __obj.updateDynamic("Locality")(Locality.asInstanceOf[js.Any])
+    if (Organization != null) __obj.updateDynamic("Organization")(Organization.asInstanceOf[js.Any])
+    if (OrganizationalUnit != null) __obj.updateDynamic("OrganizationalUnit")(OrganizationalUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuerSubjectPattern]
   }
 }

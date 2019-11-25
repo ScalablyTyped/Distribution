@@ -19,7 +19,7 @@ object CodePathSegment {
     prevSegments: js.Array[CodePathSegment],
     reachable: Boolean
   ): CodePathSegment = {
-    val __obj = js.Dynamic.literal(id = id, nextSegments = nextSegments, prevSegments = prevSegments, reachable = reachable)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], nextSegments = nextSegments.asInstanceOf[js.Any], prevSegments = prevSegments.asInstanceOf[js.Any], reachable = reachable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CodePathSegment]
   }

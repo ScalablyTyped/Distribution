@@ -61,13 +61,13 @@ object ITooltipOptions {
     useContentExp: js.UndefOr[Boolean] = js.undefined
   ): ITooltipOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
-    if (!js.isUndefined(appendToBody)) __obj.updateDynamic("appendToBody")(appendToBody)
-    if (placement != null) __obj.updateDynamic("placement")(placement)
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(appendToBody)) __obj.updateDynamic("appendToBody")(appendToBody.asInstanceOf[js.Any])
+    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (popupCloseDelay != null) __obj.updateDynamic("popupCloseDelay")(popupCloseDelay.asInstanceOf[js.Any])
     if (popupDelay != null) __obj.updateDynamic("popupDelay")(popupDelay.asInstanceOf[js.Any])
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
-    if (!js.isUndefined(useContentExp)) __obj.updateDynamic("useContentExp")(useContentExp)
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
+    if (!js.isUndefined(useContentExp)) __obj.updateDynamic("useContentExp")(useContentExp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITooltipOptions]
   }
 }

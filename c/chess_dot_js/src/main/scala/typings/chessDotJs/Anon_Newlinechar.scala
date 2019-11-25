@@ -30,8 +30,8 @@ object Anon_Newlinechar {
   @scala.inline
   def apply(newline_char: String = null, sloppy: js.UndefOr[Boolean] = js.undefined): Anon_Newlinechar = {
     val __obj = js.Dynamic.literal()
-    if (newline_char != null) __obj.updateDynamic("newline_char")(newline_char)
-    if (!js.isUndefined(sloppy)) __obj.updateDynamic("sloppy")(sloppy)
+    if (newline_char != null) __obj.updateDynamic("newline_char")(newline_char.asInstanceOf[js.Any])
+    if (!js.isUndefined(sloppy)) __obj.updateDynamic("sloppy")(sloppy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Newlinechar]
   }
 }

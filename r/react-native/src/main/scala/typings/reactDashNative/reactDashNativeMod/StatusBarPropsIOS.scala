@@ -30,8 +30,8 @@ object StatusBarPropsIOS {
     showHideTransition: fade | slide = null
   ): StatusBarPropsIOS = {
     val __obj = js.Dynamic.literal()
-    if (barStyle != null) __obj.updateDynamic("barStyle")(barStyle)
-    if (!js.isUndefined(networkActivityIndicatorVisible)) __obj.updateDynamic("networkActivityIndicatorVisible")(networkActivityIndicatorVisible)
+    if (barStyle != null) __obj.updateDynamic("barStyle")(barStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(networkActivityIndicatorVisible)) __obj.updateDynamic("networkActivityIndicatorVisible")(networkActivityIndicatorVisible.asInstanceOf[js.Any])
     if (showHideTransition != null) __obj.updateDynamic("showHideTransition")(showHideTransition.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatusBarPropsIOS]
   }

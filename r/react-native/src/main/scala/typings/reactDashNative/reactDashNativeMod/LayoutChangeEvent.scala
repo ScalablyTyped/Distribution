@@ -12,7 +12,7 @@ trait LayoutChangeEvent extends js.Object {
 object LayoutChangeEvent {
   @scala.inline
   def apply(nativeEvent: Anon_Layout): LayoutChangeEvent = {
-    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent)
+    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LayoutChangeEvent]
   }

@@ -14,7 +14,7 @@ object CardStackProps {
   @scala.inline
   def apply(render: CardsRendererProps => ReactNode, children: js.Array[ReactNode] = null): CardStackProps = {
     val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render))
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardStackProps]
   }
 }

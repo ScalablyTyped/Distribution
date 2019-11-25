@@ -39,8 +39,8 @@ object ApplicationTabBackstageSettings {
     val __obj = js.Dynamic.literal()
     if (headerWidth != null) __obj.updateDynamic("headerWidth")(headerWidth.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (pages != null) __obj.updateDynamic("pages")(pages)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationTabBackstageSettings]
   }

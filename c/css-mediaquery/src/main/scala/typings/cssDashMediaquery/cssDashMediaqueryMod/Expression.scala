@@ -13,7 +13,7 @@ trait Expression extends js.Object {
 object Expression {
   @scala.inline
   def apply(feature: String, modifier: String, value: String): Expression = {
-    val __obj = js.Dynamic.literal(feature = feature, modifier = modifier, value = value)
+    val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any], modifier = modifier.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Expression]
   }

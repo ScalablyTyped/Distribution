@@ -34,7 +34,7 @@ object BootstrapPopupControlEventMap {
     resize: PopupWindowResizeEventArgs,
     shown: PopupWindowEventArgs
   ): BootstrapPopupControlEventMap = {
-    val __obj = js.Dynamic.literal(afterResizing = afterResizing, beforeResizing = beforeResizing, beginCallback = beginCallback, callbackError = callbackError, closeUp = closeUp, closing = closing, endCallback = endCallback, init = init, pinnedChanged = pinnedChanged, popUp = popUp, resize = resize, shown = shown)
+    val __obj = js.Dynamic.literal(afterResizing = afterResizing.asInstanceOf[js.Any], beforeResizing = beforeResizing.asInstanceOf[js.Any], beginCallback = beginCallback.asInstanceOf[js.Any], callbackError = callbackError.asInstanceOf[js.Any], closeUp = closeUp.asInstanceOf[js.Any], closing = closing.asInstanceOf[js.Any], endCallback = endCallback.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], pinnedChanged = pinnedChanged.asInstanceOf[js.Any], popUp = popUp.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], shown = shown.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BootstrapPopupControlEventMap]
   }

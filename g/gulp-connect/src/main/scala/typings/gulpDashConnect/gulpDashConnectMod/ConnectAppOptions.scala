@@ -55,18 +55,18 @@ object ConnectAppOptions {
     silent: js.UndefOr[Boolean] = js.undefined
   ): ConnectAppOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (fallback != null) __obj.updateDynamic("fallback")(fallback)
-    if (host != null) __obj.updateDynamic("host")(host)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (https != null) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (livereload != null) __obj.updateDynamic("livereload")(livereload.asInstanceOf[js.Any])
     if (middleware != null) __obj.updateDynamic("middleware")(js.Any.fromFunction2(middleware))
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (serverInit != null) __obj.updateDynamic("serverInit")(js.Any.fromFunction1(serverInit))
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectAppOptions]
   }
 }

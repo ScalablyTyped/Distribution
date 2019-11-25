@@ -4,17 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ReportDescriptorMessage extends js.Object {
-  var message: js.UndefOr[String] = js.undefined
-  var messageId: js.UndefOr[String] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.eslint.Anon_Message
+  - typings.eslint.Anon_MessageId
+*/
+trait ReportDescriptorMessage extends js.Object
 
 object ReportDescriptorMessage {
   @scala.inline
-  def apply(message: String = null, messageId: String = null): ReportDescriptorMessage = {
-    val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId)
+  def Anon_Message(message: String): ReportDescriptorMessage = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ReportDescriptorMessage]
+  }
+  @scala.inline
+  def Anon_MessageId(messageId: String): ReportDescriptorMessage = {
+    val __obj = js.Dynamic.literal(messageId = messageId.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ReportDescriptorMessage]
   }
 }

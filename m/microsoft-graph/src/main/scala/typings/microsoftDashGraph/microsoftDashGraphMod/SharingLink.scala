@@ -22,10 +22,10 @@ object SharingLink {
   @scala.inline
   def apply(application: Identity = null, scope: String = null, `type`: String = null, webUrl: String = null): SharingLink = {
     val __obj = js.Dynamic.literal()
-    if (application != null) __obj.updateDynamic("application")(application)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (webUrl != null) __obj.updateDynamic("webUrl")(webUrl)
+    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (webUrl != null) __obj.updateDynamic("webUrl")(webUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharingLink]
   }
 }

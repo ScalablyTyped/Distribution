@@ -16,7 +16,7 @@ object AuthorizationConfig {
   @scala.inline
   def apply(provider: String = null): AuthorizationConfig = {
     val __obj = js.Dynamic.literal()
-    if (provider != null) __obj.updateDynamic("provider")(provider)
+    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizationConfig]
   }
 }

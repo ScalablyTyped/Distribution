@@ -12,7 +12,7 @@ trait Anon_Index extends js.Object {
 object Anon_Index {
   @scala.inline
   def apply(scopes: StringDictionary[Anon_Description]): Anon_Index = {
-    val __obj = js.Dynamic.literal(scopes = scopes)
+    val __obj = js.Dynamic.literal(scopes = scopes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Index]
   }

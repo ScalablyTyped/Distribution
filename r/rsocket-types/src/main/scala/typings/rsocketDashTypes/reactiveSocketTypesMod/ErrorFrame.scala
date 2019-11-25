@@ -24,8 +24,8 @@ object ErrorFrame {
     `type`: `0x0b`,
     length: Int | Double = null
   ): ErrorFrame = {
-    val __obj = js.Dynamic.literal(code = code, flags = flags, message = message, streamId = streamId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorFrame]
   }

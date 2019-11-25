@@ -4,23 +4,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GeolibInputLongitude extends js.Object {
-  var lng: js.UndefOr[GeolibLongitudeInputValue] = js.undefined
-  var lon: js.UndefOr[GeolibLongitudeInputValue] = js.undefined
-  var longitude: js.UndefOr[GeolibLongitudeInputValue] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.geolib.Anon_Lng
+  - typings.geolib.Anon_Lon
+  - typings.geolib.Anon_Longitude
+*/
+trait GeolibInputLongitude extends js.Object
 
 object GeolibInputLongitude {
   @scala.inline
-  def apply(
-    lng: GeolibLongitudeInputValue = null,
-    lon: GeolibLongitudeInputValue = null,
-    longitude: GeolibLongitudeInputValue = null
-  ): GeolibInputLongitude = {
-    val __obj = js.Dynamic.literal()
-    if (lng != null) __obj.updateDynamic("lng")(lng.asInstanceOf[js.Any])
-    if (lon != null) __obj.updateDynamic("lon")(lon.asInstanceOf[js.Any])
-    if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
+  def Anon_Lng(lng: GeolibLongitudeInputValue): GeolibInputLongitude = {
+    val __obj = js.Dynamic.literal(lng = lng.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[GeolibInputLongitude]
+  }
+  @scala.inline
+  def Anon_Lon(lon: GeolibLongitudeInputValue): GeolibInputLongitude = {
+    val __obj = js.Dynamic.literal(lon = lon.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[GeolibInputLongitude]
+  }
+  @scala.inline
+  def Anon_Longitude(longitude: GeolibLongitudeInputValue): GeolibInputLongitude = {
+    val __obj = js.Dynamic.literal(longitude = longitude.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[GeolibInputLongitude]
   }
 }

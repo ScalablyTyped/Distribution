@@ -82,20 +82,20 @@ object EditSettings {
     titleColumn: String = null
   ): EditSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowAdding)) __obj.updateDynamic("allowAdding")(allowAdding)
-    if (!js.isUndefined(allowDeleting)) __obj.updateDynamic("allowDeleting")(allowDeleting)
-    if (!js.isUndefined(allowEditOnDblClick)) __obj.updateDynamic("allowEditOnDblClick")(allowEditOnDblClick)
-    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing)
-    if (dialogEditorTemplateID != null) __obj.updateDynamic("dialogEditorTemplateID")(dialogEditorTemplateID)
+    if (!js.isUndefined(allowAdding)) __obj.updateDynamic("allowAdding")(allowAdding.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDeleting)) __obj.updateDynamic("allowDeleting")(allowDeleting.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowEditOnDblClick)) __obj.updateDynamic("allowEditOnDblClick")(allowEditOnDblClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing.asInstanceOf[js.Any])
+    if (dialogEditorTemplateID != null) __obj.updateDynamic("dialogEditorTemplateID")(dialogEditorTemplateID.asInstanceOf[js.Any])
     if (editMode != null) __obj.updateDynamic("editMode")(editMode.asInstanceOf[js.Any])
-    if (externalFormTemplateID != null) __obj.updateDynamic("externalFormTemplateID")(externalFormTemplateID)
+    if (externalFormTemplateID != null) __obj.updateDynamic("externalFormTemplateID")(externalFormTemplateID.asInstanceOf[js.Any])
     if (formPosition != null) __obj.updateDynamic("formPosition")(formPosition.asInstanceOf[js.Any])
-    if (inlineFormTemplateID != null) __obj.updateDynamic("inlineFormTemplateID")(inlineFormTemplateID)
+    if (inlineFormTemplateID != null) __obj.updateDynamic("inlineFormTemplateID")(inlineFormTemplateID.asInstanceOf[js.Any])
     if (rowPosition != null) __obj.updateDynamic("rowPosition")(rowPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAddNewRow)) __obj.updateDynamic("showAddNewRow")(showAddNewRow)
-    if (!js.isUndefined(showConfirmDialog)) __obj.updateDynamic("showConfirmDialog")(showConfirmDialog)
-    if (!js.isUndefined(showDeleteConfirmDialog)) __obj.updateDynamic("showDeleteConfirmDialog")(showDeleteConfirmDialog)
-    if (titleColumn != null) __obj.updateDynamic("titleColumn")(titleColumn)
+    if (!js.isUndefined(showAddNewRow)) __obj.updateDynamic("showAddNewRow")(showAddNewRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(showConfirmDialog)) __obj.updateDynamic("showConfirmDialog")(showConfirmDialog.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDeleteConfirmDialog)) __obj.updateDynamic("showDeleteConfirmDialog")(showDeleteConfirmDialog.asInstanceOf[js.Any])
+    if (titleColumn != null) __obj.updateDynamic("titleColumn")(titleColumn.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditSettings]
   }
 }

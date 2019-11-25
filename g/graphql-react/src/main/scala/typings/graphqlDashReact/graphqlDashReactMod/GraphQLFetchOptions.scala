@@ -16,8 +16,8 @@ trait GraphQLFetchOptions extends js.Object {
 object GraphQLFetchOptions {
   @scala.inline
   def apply(body: String | FormData, headers: Headers, url: String, credentials: String = null): GraphQLFetchOptions = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers, url = url)
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLFetchOptions]
   }
 }

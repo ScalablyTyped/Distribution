@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/styling/lib/utilities", JSImport.Namespace)
 @js.native
 object libUtilitiesMod extends js.Object {
-  def buildClassMap[T /* <: js.Object */](styles: T): /* import warning: ImportType.apply c Unsupported type mapping: 
+  def buildClassMap[T /* <: js.Object */](styles: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof T ]:? string}
     */ typings.atUifabricStyling.atUifabricStylingStrings.buildClassMap with js.Any = js.native
   def getIcon(): js.UndefOr[IIconRecord] = js.native

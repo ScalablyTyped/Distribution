@@ -26,7 +26,7 @@ object RemoveCol {
     index: Double,
     indexes: js.Array[Double]
   ): RemoveCol = {
-    val __obj = js.Dynamic.literal(actionType = actionType, amount = amount, columnPositions = columnPositions, data = data, headers = headers, index = index, indexes = indexes)
+    val __obj = js.Dynamic.literal(actionType = actionType.asInstanceOf[js.Any], amount = amount.asInstanceOf[js.Any], columnPositions = columnPositions.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], indexes = indexes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RemoveCol]
   }

@@ -23,9 +23,9 @@ object _Folder {
   @scala.inline
   def apply(absolutePath: String = null, relativePath: String = null, treeId: String = null): _Folder = {
     val __obj = js.Dynamic.literal()
-    if (absolutePath != null) __obj.updateDynamic("absolutePath")(absolutePath)
-    if (relativePath != null) __obj.updateDynamic("relativePath")(relativePath)
-    if (treeId != null) __obj.updateDynamic("treeId")(treeId)
+    if (absolutePath != null) __obj.updateDynamic("absolutePath")(absolutePath.asInstanceOf[js.Any])
+    if (relativePath != null) __obj.updateDynamic("relativePath")(relativePath.asInstanceOf[js.Any])
+    if (treeId != null) __obj.updateDynamic("treeId")(treeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Folder]
   }
 }

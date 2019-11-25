@@ -12,7 +12,7 @@ object OrdersCancelTestOrderByCustomerRequest {
   @scala.inline
   def apply(reason: String = null): OrdersCancelTestOrderByCustomerRequest = {
     val __obj = js.Dynamic.literal()
-    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrdersCancelTestOrderByCustomerRequest]
   }
 }

@@ -13,8 +13,8 @@ trait Field extends js.Object {
 object Field {
   @scala.inline
   def apply(identifier: String, rules: js.Array[Rule], optional: js.UndefOr[Boolean] = js.undefined): Field = {
-    val __obj = js.Dynamic.literal(identifier = identifier, rules = rules)
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
+    val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
     __obj.asInstanceOf[Field]
   }
 }

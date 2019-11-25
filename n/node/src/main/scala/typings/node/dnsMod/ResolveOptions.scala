@@ -11,7 +11,7 @@ trait ResolveOptions extends js.Object {
 object ResolveOptions {
   @scala.inline
   def apply(ttl: Boolean): ResolveOptions = {
-    val __obj = js.Dynamic.literal(ttl = ttl)
+    val __obj = js.Dynamic.literal(ttl = ttl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResolveOptions]
   }

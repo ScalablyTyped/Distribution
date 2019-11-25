@@ -13,7 +13,7 @@ trait AddCardConfig extends js.Object {
 object AddCardConfig {
   @scala.inline
   def apply(cardList: js.Array[Card], success: /* res */ Anon_CardList => Unit = null): AddCardConfig = {
-    val __obj = js.Dynamic.literal(cardList = cardList)
+    val __obj = js.Dynamic.literal(cardList = cardList.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[AddCardConfig]
   }

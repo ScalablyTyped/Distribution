@@ -27,7 +27,7 @@ object Anon_DeliveryPreferencesEditable {
     supportsNoDelivery: Double,
     supportsPreferredEmailAddressDelivery: Double
   ): Anon_DeliveryPreferencesEditable = {
-    val __obj = js.Dynamic.literal(deliveryPreferencesEditable = deliveryPreferencesEditable, isGroup = isGroup, isTeam = isTeam, isUser = isUser, none = none, supportsEachMemberDelivery = supportsEachMemberDelivery, supportsNoDelivery = supportsNoDelivery, supportsPreferredEmailAddressDelivery = supportsPreferredEmailAddressDelivery)
+    val __obj = js.Dynamic.literal(deliveryPreferencesEditable = deliveryPreferencesEditable.asInstanceOf[js.Any], isGroup = isGroup.asInstanceOf[js.Any], isTeam = isTeam.asInstanceOf[js.Any], isUser = isUser.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], supportsEachMemberDelivery = supportsEachMemberDelivery.asInstanceOf[js.Any], supportsNoDelivery = supportsNoDelivery.asInstanceOf[js.Any], supportsPreferredEmailAddressDelivery = supportsPreferredEmailAddressDelivery.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DeliveryPreferencesEditable]
   }

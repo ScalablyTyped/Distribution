@@ -23,7 +23,7 @@ object WeatherForecastResult {
     province: String,
     reportTime: String
   ): WeatherForecastResult = {
-    val __obj = js.Dynamic.literal(adcode = adcode, city = city, forecasts = forecasts, info = info, province = province, reportTime = reportTime)
+    val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any], forecasts = forecasts.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], province = province.asInstanceOf[js.Any], reportTime = reportTime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WeatherForecastResult]
   }

@@ -13,7 +13,7 @@ trait Anon_Algorithm extends js.Object {
 object Anon_Algorithm {
   @scala.inline
   def apply(algorithm: String, data: Uint8Array): Anon_Algorithm = {
-    val __obj = js.Dynamic.literal(algorithm = algorithm, data = data)
+    val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Algorithm]
   }

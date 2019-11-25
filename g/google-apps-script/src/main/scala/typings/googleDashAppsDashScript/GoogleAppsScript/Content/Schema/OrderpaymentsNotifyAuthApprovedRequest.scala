@@ -13,8 +13,8 @@ object OrderpaymentsNotifyAuthApprovedRequest {
   @scala.inline
   def apply(authAmountPretax: Price = null, authAmountTax: Price = null): OrderpaymentsNotifyAuthApprovedRequest = {
     val __obj = js.Dynamic.literal()
-    if (authAmountPretax != null) __obj.updateDynamic("authAmountPretax")(authAmountPretax)
-    if (authAmountTax != null) __obj.updateDynamic("authAmountTax")(authAmountTax)
+    if (authAmountPretax != null) __obj.updateDynamic("authAmountPretax")(authAmountPretax.asInstanceOf[js.Any])
+    if (authAmountTax != null) __obj.updateDynamic("authAmountTax")(authAmountTax.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderpaymentsNotifyAuthApprovedRequest]
   }
 }

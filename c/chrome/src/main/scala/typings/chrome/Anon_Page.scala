@@ -18,9 +18,9 @@ object Anon_Page {
     scripts: js.Array[String] = null
   ): Anon_Page = {
     val __obj = js.Dynamic.literal()
-    if (page != null) __obj.updateDynamic("page")(page)
-    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)
-    if (scripts != null) __obj.updateDynamic("scripts")(scripts)
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent.asInstanceOf[js.Any])
+    if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Page]
   }
 }

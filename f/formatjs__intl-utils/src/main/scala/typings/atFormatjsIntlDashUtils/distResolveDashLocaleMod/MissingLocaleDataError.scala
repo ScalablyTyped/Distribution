@@ -12,9 +12,9 @@ trait MissingLocaleDataError extends Error {
 object MissingLocaleDataError {
   @scala.inline
   def apply(message: String, name: String, `type`: String, stack: String = null): MissingLocaleDataError = {
-    val __obj = js.Dynamic.literal(message = message, name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[MissingLocaleDataError]
   }
 }

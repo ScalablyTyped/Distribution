@@ -109,14 +109,14 @@ object Anon_01 {
     success: () => Unit = null,
     zoneId: String = null
   ): Anon_01 = {
-    val __obj = js.Dynamic.literal(currencyType = currencyType, mode = mode, offerId = offerId)
+    val __obj = js.Dynamic.literal(currencyType = currencyType.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], offerId = offerId.asInstanceOf[js.Any])
     if (buyQuantity != null) __obj.updateDynamic("buyQuantity")(buyQuantity.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (platform != null) __obj.updateDynamic("platform")(platform)
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
-    if (zoneId != null) __obj.updateDynamic("zoneId")(zoneId)
+    if (zoneId != null) __obj.updateDynamic("zoneId")(zoneId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_01]
   }
 }

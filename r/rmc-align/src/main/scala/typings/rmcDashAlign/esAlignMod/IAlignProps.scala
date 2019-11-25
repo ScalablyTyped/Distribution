@@ -24,10 +24,10 @@ object IAlignProps {
     onAlign: (/* source */ js.Any, /* align */ js.Any) => Unit = null
   ): IAlignProps = {
     val __obj = js.Dynamic.literal(target = js.Any.fromFunction0(target))
-    if (childrenProps != null) __obj.updateDynamic("childrenProps")(childrenProps)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (childrenProps != null) __obj.updateDynamic("childrenProps")(childrenProps.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (monitorBufferTime != null) __obj.updateDynamic("monitorBufferTime")(monitorBufferTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(monitorWindowResize)) __obj.updateDynamic("monitorWindowResize")(monitorWindowResize)
+    if (!js.isUndefined(monitorWindowResize)) __obj.updateDynamic("monitorWindowResize")(monitorWindowResize.asInstanceOf[js.Any])
     if (onAlign != null) __obj.updateDynamic("onAlign")(js.Any.fromFunction2(onAlign))
     __obj.asInstanceOf[IAlignProps]
   }

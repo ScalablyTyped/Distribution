@@ -26,7 +26,7 @@ object Anon_Args {
     silent: Boolean,
     version: String
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal(args = args, debug = debug, env = env, init = init, safe = safe, silent = silent, version = version)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], safe = safe.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Args]
   }

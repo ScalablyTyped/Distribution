@@ -12,7 +12,7 @@ object Anon_DropTarget {
   @scala.inline
   def apply(dropTarget: js.UndefOr[Boolean] = js.undefined): Anon_DropTarget = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dropTarget)) __obj.updateDynamic("dropTarget")(dropTarget)
+    if (!js.isUndefined(dropTarget)) __obj.updateDynamic("dropTarget")(dropTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DropTarget]
   }
 }

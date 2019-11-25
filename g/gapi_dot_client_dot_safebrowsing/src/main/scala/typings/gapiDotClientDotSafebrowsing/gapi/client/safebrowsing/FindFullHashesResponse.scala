@@ -28,9 +28,9 @@ object FindFullHashesResponse {
     negativeCacheDuration: String = null
   ): FindFullHashesResponse = {
     val __obj = js.Dynamic.literal()
-    if (matches != null) __obj.updateDynamic("matches")(matches)
-    if (minimumWaitDuration != null) __obj.updateDynamic("minimumWaitDuration")(minimumWaitDuration)
-    if (negativeCacheDuration != null) __obj.updateDynamic("negativeCacheDuration")(negativeCacheDuration)
+    if (matches != null) __obj.updateDynamic("matches")(matches.asInstanceOf[js.Any])
+    if (minimumWaitDuration != null) __obj.updateDynamic("minimumWaitDuration")(minimumWaitDuration.asInstanceOf[js.Any])
+    if (negativeCacheDuration != null) __obj.updateDynamic("negativeCacheDuration")(negativeCacheDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindFullHashesResponse]
   }
 }

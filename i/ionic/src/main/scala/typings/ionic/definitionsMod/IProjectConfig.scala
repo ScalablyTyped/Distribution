@@ -24,11 +24,11 @@ object IProjectConfig {
     root: String = null,
     `type`: ProjectType = null
   ): IProjectConfig = {
-    val __obj = js.Dynamic.literal(integrations = integrations, name = name)
-    if (hooks != null) __obj.updateDynamic("hooks")(hooks)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(integrations = integrations.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProjectConfig]
   }
 }

@@ -19,8 +19,8 @@ object Anon_DisableCheckIfAllPixelsAreTransparent {
     pixelsToCheck: js.Array[Cartesian2],
     disableCheckIfAllPixelsAreTransparent: js.UndefOr[Boolean] = js.undefined
   ): Anon_DisableCheckIfAllPixelsAreTransparent = {
-    val __obj = js.Dynamic.literal(missingImageUrl = missingImageUrl.asInstanceOf[js.Any], pixelsToCheck = pixelsToCheck)
-    if (!js.isUndefined(disableCheckIfAllPixelsAreTransparent)) __obj.updateDynamic("disableCheckIfAllPixelsAreTransparent")(disableCheckIfAllPixelsAreTransparent)
+    val __obj = js.Dynamic.literal(missingImageUrl = missingImageUrl.asInstanceOf[js.Any], pixelsToCheck = pixelsToCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableCheckIfAllPixelsAreTransparent)) __obj.updateDynamic("disableCheckIfAllPixelsAreTransparent")(disableCheckIfAllPixelsAreTransparent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DisableCheckIfAllPixelsAreTransparent]
   }
 }

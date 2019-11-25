@@ -44,8 +44,8 @@ object InterfaceDescriptor {
     interfaceSubclass: integer,
     description: String = null
   ): InterfaceDescriptor = {
-    val __obj = js.Dynamic.literal(alternateSetting = alternateSetting, endpoints = endpoints, extra_data = extra_data, interfaceClass = interfaceClass, interfaceNumber = interfaceNumber, interfaceProtocol = interfaceProtocol, interfaceSubclass = interfaceSubclass)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(alternateSetting = alternateSetting.asInstanceOf[js.Any], endpoints = endpoints.asInstanceOf[js.Any], extra_data = extra_data.asInstanceOf[js.Any], interfaceClass = interfaceClass.asInstanceOf[js.Any], interfaceNumber = interfaceNumber.asInstanceOf[js.Any], interfaceProtocol = interfaceProtocol.asInstanceOf[js.Any], interfaceSubclass = interfaceSubclass.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[InterfaceDescriptor]
   }
 }

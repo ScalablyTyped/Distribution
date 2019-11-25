@@ -12,7 +12,7 @@ trait TabWindowInfo extends js.Object {
 object TabWindowInfo {
   @scala.inline
   def apply(windowId: Double): TabWindowInfo = {
-    val __obj = js.Dynamic.literal(windowId = windowId)
+    val __obj = js.Dynamic.literal(windowId = windowId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TabWindowInfo]
   }

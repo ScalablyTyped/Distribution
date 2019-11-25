@@ -14,7 +14,7 @@ object IBaseSelectedItemsList {
   @scala.inline
   def apply[T](addItems: js.Array[T] => Unit, items: js.Array[T] = null): IBaseSelectedItemsList[T] = {
     val __obj = js.Dynamic.literal(addItems = js.Any.fromFunction1(addItems))
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBaseSelectedItemsList[T]]
   }
 }

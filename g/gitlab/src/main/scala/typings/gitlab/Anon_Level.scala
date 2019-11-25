@@ -13,7 +13,7 @@ object Anon_Level {
   @scala.inline
   def apply(level: NotificationSettingLevel = null): Anon_Level = {
     val __obj = js.Dynamic.literal()
-    if (level != null) __obj.updateDynamic("level")(level)
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Level]
   }
 }

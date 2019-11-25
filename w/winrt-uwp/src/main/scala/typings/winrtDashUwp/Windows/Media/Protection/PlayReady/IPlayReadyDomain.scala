@@ -22,7 +22,7 @@ trait IPlayReadyDomain extends js.Object {
 object IPlayReadyDomain {
   @scala.inline
   def apply(accountId: String, domainJoinUrl: Uri, friendlyName: String, revision: Double, serviceId: String): IPlayReadyDomain = {
-    val __obj = js.Dynamic.literal(accountId = accountId, domainJoinUrl = domainJoinUrl, friendlyName = friendlyName, revision = revision, serviceId = serviceId)
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], domainJoinUrl = domainJoinUrl.asInstanceOf[js.Any], friendlyName = friendlyName.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPlayReadyDomain]
   }

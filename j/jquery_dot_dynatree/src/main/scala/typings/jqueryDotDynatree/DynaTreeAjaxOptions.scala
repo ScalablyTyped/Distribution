@@ -16,8 +16,8 @@ object DynaTreeAjaxOptions {
   @scala.inline
   def apply(cache: js.UndefOr[Boolean] = js.undefined, dataType: String = null, timeout: Int | Double = null): DynaTreeAjaxOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType)
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynaTreeAjaxOptions]
   }

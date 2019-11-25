@@ -12,7 +12,7 @@ trait Anon_STATECHANGED extends js.Object {
 object Anon_STATECHANGED {
   @scala.inline
   def apply(STATE_CHANGED: TaskEvent): Anon_STATECHANGED = {
-    val __obj = js.Dynamic.literal(STATE_CHANGED = STATE_CHANGED)
+    val __obj = js.Dynamic.literal(STATE_CHANGED = STATE_CHANGED.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_STATECHANGED]
   }

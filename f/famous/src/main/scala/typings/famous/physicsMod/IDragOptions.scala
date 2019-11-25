@@ -21,7 +21,7 @@ object IDragOptions {
     val __obj = js.Dynamic.literal()
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (strength != null) __obj.updateDynamic("strength")(strength.asInstanceOf[js.Any])
-    if (targets != null) __obj.updateDynamic("targets")(targets)
+    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(js.Any.fromFunction1(`type`))
     __obj.asInstanceOf[IDragOptions]
   }

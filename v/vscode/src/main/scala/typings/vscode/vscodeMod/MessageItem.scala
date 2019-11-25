@@ -22,8 +22,8 @@ trait MessageItem extends js.Object {
 object MessageItem {
   @scala.inline
   def apply(title: String, isCloseAffordance: js.UndefOr[Boolean] = js.undefined): MessageItem = {
-    val __obj = js.Dynamic.literal(title = title)
-    if (!js.isUndefined(isCloseAffordance)) __obj.updateDynamic("isCloseAffordance")(isCloseAffordance)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCloseAffordance)) __obj.updateDynamic("isCloseAffordance")(isCloseAffordance.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageItem]
   }
 }

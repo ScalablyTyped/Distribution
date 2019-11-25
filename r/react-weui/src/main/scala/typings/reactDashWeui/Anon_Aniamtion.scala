@@ -27,7 +27,7 @@ object Anon_Aniamtion {
     itemHeight: Double,
     mapKeys: Anon_Label
   ): Anon_Aniamtion = {
-    val __obj = js.Dynamic.literal(aniamtion = aniamtion, defaultIndex = defaultIndex, groupIndex = groupIndex, height = height, indicatorHeight = indicatorHeight, indicatorTop = indicatorTop, itemHeight = itemHeight, mapKeys = mapKeys)
+    val __obj = js.Dynamic.literal(aniamtion = aniamtion.asInstanceOf[js.Any], defaultIndex = defaultIndex.asInstanceOf[js.Any], groupIndex = groupIndex.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], indicatorHeight = indicatorHeight.asInstanceOf[js.Any], indicatorTop = indicatorTop.asInstanceOf[js.Any], itemHeight = itemHeight.asInstanceOf[js.Any], mapKeys = mapKeys.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Aniamtion]
   }

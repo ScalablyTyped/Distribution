@@ -14,7 +14,7 @@ object IValues {
   @scala.inline
   def apply(value: js.Array[String] = null): IValues = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValues]
   }
 }

@@ -25,8 +25,8 @@ object DeleteIdentitiesOutput {
     $metadata: ResponseMetadata,
     UnprocessedIdentityIds: js.Array[_UnmarshalledUnprocessedIdentityId] = null
   ): DeleteIdentitiesOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (UnprocessedIdentityIds != null) __obj.updateDynamic("UnprocessedIdentityIds")(UnprocessedIdentityIds)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (UnprocessedIdentityIds != null) __obj.updateDynamic("UnprocessedIdentityIds")(UnprocessedIdentityIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteIdentitiesOutput]
   }
 }

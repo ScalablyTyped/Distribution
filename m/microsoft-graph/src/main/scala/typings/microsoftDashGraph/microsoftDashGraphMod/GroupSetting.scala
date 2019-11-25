@@ -22,10 +22,10 @@ object GroupSetting {
     values: js.Array[SettingValue] = null
   ): GroupSetting = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (templateId != null) __obj.updateDynamic("templateId")(templateId)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (templateId != null) __obj.updateDynamic("templateId")(templateId.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupSetting]
   }
 }

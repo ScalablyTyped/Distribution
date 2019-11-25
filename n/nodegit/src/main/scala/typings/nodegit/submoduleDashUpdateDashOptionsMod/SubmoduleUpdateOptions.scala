@@ -25,10 +25,10 @@ object SubmoduleUpdateOptions {
     version: Int | Double = null
   ): SubmoduleUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (checkoutOpts != null) __obj.updateDynamic("checkoutOpts")(checkoutOpts)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (checkoutOpts != null) __obj.updateDynamic("checkoutOpts")(checkoutOpts.asInstanceOf[js.Any])
     if (cloneCheckoutStrategy != null) __obj.updateDynamic("cloneCheckoutStrategy")(cloneCheckoutStrategy.asInstanceOf[js.Any])
-    if (fetchOpts != null) __obj.updateDynamic("fetchOpts")(fetchOpts)
+    if (fetchOpts != null) __obj.updateDynamic("fetchOpts")(fetchOpts.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubmoduleUpdateOptions]
   }

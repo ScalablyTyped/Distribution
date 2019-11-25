@@ -13,8 +13,8 @@ trait RequestMetadataResponse extends js.Object {
 object RequestMetadataResponse {
   @scala.inline
   def apply(headers: Headers, res: GaxiosResponse[Unit] = null): RequestMetadataResponse = {
-    val __obj = js.Dynamic.literal(headers = headers)
-    if (res != null) __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
+    if (res != null) __obj.updateDynamic("res")(res.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestMetadataResponse]
   }
 }

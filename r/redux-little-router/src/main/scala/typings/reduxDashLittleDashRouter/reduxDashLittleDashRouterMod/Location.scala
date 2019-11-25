@@ -33,19 +33,19 @@ object Location {
     state: ObjectLiteral[_] = null
   ): Location = {
     val __obj = js.Dynamic.literal()
-    if (basename != null) __obj.updateDynamic("basename")(basename)
-    if (hash != null) __obj.updateDynamic("hash")(hash)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (pathname != null) __obj.updateDynamic("pathname")(pathname)
-    if (previous != null) __obj.updateDynamic("previous")(previous)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (queue != null) __obj.updateDynamic("queue")(queue)
-    if (result != null) __obj.updateDynamic("result")(result)
-    if (routes != null) __obj.updateDynamic("routes")(routes)
-    if (search != null) __obj.updateDynamic("search")(search)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (basename != null) __obj.updateDynamic("basename")(basename.asInstanceOf[js.Any])
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (pathname != null) __obj.updateDynamic("pathname")(pathname.asInstanceOf[js.Any])
+    if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (queue != null) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Location]
   }
 }

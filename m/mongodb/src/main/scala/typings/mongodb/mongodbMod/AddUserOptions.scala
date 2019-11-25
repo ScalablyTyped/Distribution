@@ -22,11 +22,11 @@ object AddUserOptions {
     w: scala.Double | majority | String = null,
     wtimeout: Int | scala.Double = null
   ): AddUserOptions = {
-    val __obj = js.Dynamic.literal(fsync = fsync)
-    if (customData != null) __obj.updateDynamic("customData")(customData)
-    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j)
-    if (roles != null) __obj.updateDynamic("roles")(roles)
-    if (session != null) __obj.updateDynamic("session")(session)
+    val __obj = js.Dynamic.literal(fsync = fsync.asInstanceOf[js.Any])
+    if (customData != null) __obj.updateDynamic("customData")(customData.asInstanceOf[js.Any])
+    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j.asInstanceOf[js.Any])
+    if (roles != null) __obj.updateDynamic("roles")(roles.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
     if (wtimeout != null) __obj.updateDynamic("wtimeout")(wtimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddUserOptions]

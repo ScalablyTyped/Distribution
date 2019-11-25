@@ -21,10 +21,10 @@ object customError {
     functionName: String = null,
     lineNumber: Int | Double = null
   ): customError = {
-    val __obj = js.Dynamic.literal(fileName = fileName)
-    if (additional != null) __obj.updateDynamic("additional")(additional)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (functionName != null) __obj.updateDynamic("functionName")(functionName)
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any])
+    if (additional != null) __obj.updateDynamic("additional")(additional.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (functionName != null) __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
     if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[customError]
   }

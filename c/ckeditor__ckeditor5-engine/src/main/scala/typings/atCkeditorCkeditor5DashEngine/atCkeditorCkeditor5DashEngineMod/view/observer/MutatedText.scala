@@ -15,8 +15,8 @@ trait MutatedText extends js.Object {
 object MutatedText {
   @scala.inline
   def apply(newText: String, node: Text, oldText: String, `type`: String): MutatedText = {
-    val __obj = js.Dynamic.literal(newText = newText, node = node, oldText = oldText)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(newText = newText.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], oldText = oldText.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutatedText]
   }
 }

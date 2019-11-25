@@ -20,8 +20,8 @@ object GoogleActionsV2DateTime {
   @scala.inline
   def apply(date: GoogleTypeDate = null, time: GoogleTypeTimeOfDay = null): GoogleActionsV2DateTime = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (time != null) __obj.updateDynamic("time")(time)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2DateTime]
   }
 }

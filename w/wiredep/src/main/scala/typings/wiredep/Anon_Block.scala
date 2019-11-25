@@ -17,7 +17,7 @@ trait Anon_Block extends js.Object {
 object Anon_Block {
   @scala.inline
   def apply(block: RegExp, detect: Anon_TypeOfBowerFile, replace: Anon_AnotherTypeOfBowerFile): Anon_Block = {
-    val __obj = js.Dynamic.literal(block = block, detect = detect, replace = replace)
+    val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], detect = detect.asInstanceOf[js.Any], replace = replace.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Block]
   }

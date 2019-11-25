@@ -33,9 +33,9 @@ object ResourceResponse {
     contentType: String = null,
     redirectURL: String = null
   ): ResourceResponse = {
-    val __obj = js.Dynamic.literal(bodySize = bodySize, headers = headers, id = id, stage = stage, status = status, statusText = statusText, time = time, url = url)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (redirectURL != null) __obj.updateDynamic("redirectURL")(redirectURL)
+    val __obj = js.Dynamic.literal(bodySize = bodySize.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (redirectURL != null) __obj.updateDynamic("redirectURL")(redirectURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceResponse]
   }
 }

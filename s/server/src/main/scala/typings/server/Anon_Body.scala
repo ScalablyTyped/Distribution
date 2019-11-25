@@ -27,11 +27,11 @@ object Anon_Body {
     text: OptionsText = null
   ): Anon_Body = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (cookie != null) __obj.updateDynamic("cookie")(cookie)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (json != null) __obj.updateDynamic("json")(json)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (json != null) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Body]
   }
 }

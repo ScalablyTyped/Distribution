@@ -20,9 +20,9 @@ object SearchUserActivityResponse {
     totalRows: Int | Double = null
   ): SearchUserActivityResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
-    if (sessions != null) __obj.updateDynamic("sessions")(sessions)
+    if (sessions != null) __obj.updateDynamic("sessions")(sessions.asInstanceOf[js.Any])
     if (totalRows != null) __obj.updateDynamic("totalRows")(totalRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchUserActivityResponse]
   }

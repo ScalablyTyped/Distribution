@@ -23,7 +23,7 @@ object Anon_Cmd {
     ppid: Int | Double = null,
     uid: Int | Double = null
   ): Anon_Cmd = {
-    val __obj = js.Dynamic.literal(cmd = cmd, name = name, pid = pid)
+    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any])
     if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
     if (ppid != null) __obj.updateDynamic("ppid")(ppid.asInstanceOf[js.Any])
     if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])

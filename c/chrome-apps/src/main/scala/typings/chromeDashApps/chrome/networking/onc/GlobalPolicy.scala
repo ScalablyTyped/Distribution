@@ -33,9 +33,9 @@ object GlobalPolicy {
     BlacklistedHexSSIDs: js.Array[String] = null
   ): GlobalPolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllowOnlyPolicyNetworksToAutoconnect)) __obj.updateDynamic("AllowOnlyPolicyNetworksToAutoconnect")(AllowOnlyPolicyNetworksToAutoconnect)
-    if (!js.isUndefined(AllowOnlyPolicyNetworksToConnect)) __obj.updateDynamic("AllowOnlyPolicyNetworksToConnect")(AllowOnlyPolicyNetworksToConnect)
-    if (BlacklistedHexSSIDs != null) __obj.updateDynamic("BlacklistedHexSSIDs")(BlacklistedHexSSIDs)
+    if (!js.isUndefined(AllowOnlyPolicyNetworksToAutoconnect)) __obj.updateDynamic("AllowOnlyPolicyNetworksToAutoconnect")(AllowOnlyPolicyNetworksToAutoconnect.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllowOnlyPolicyNetworksToConnect)) __obj.updateDynamic("AllowOnlyPolicyNetworksToConnect")(AllowOnlyPolicyNetworksToConnect.asInstanceOf[js.Any])
+    if (BlacklistedHexSSIDs != null) __obj.updateDynamic("BlacklistedHexSSIDs")(BlacklistedHexSSIDs.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalPolicy]
   }
 }

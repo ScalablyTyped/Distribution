@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonInvalidFilterClause extends js.Object {
 object Anon_EnumValuesAnonInvalidFilterClause {
   @scala.inline
   def apply(enumValues: Anon_InvalidFilterClause): Anon_EnumValuesAnonInvalidFilterClause = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonInvalidFilterClause]
   }

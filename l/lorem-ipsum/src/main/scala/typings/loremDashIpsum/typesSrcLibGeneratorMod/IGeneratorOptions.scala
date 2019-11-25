@@ -23,10 +23,10 @@ object IGeneratorOptions {
   ): IGeneratorOptions = {
     val __obj = js.Dynamic.literal()
     if (random != null) __obj.updateDynamic("random")(js.Any.fromFunction0(random))
-    if (seed != null) __obj.updateDynamic("seed")(seed)
-    if (sentencesPerParagraph != null) __obj.updateDynamic("sentencesPerParagraph")(sentencesPerParagraph)
-    if (words != null) __obj.updateDynamic("words")(words)
-    if (wordsPerSentence != null) __obj.updateDynamic("wordsPerSentence")(wordsPerSentence)
+    if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
+    if (sentencesPerParagraph != null) __obj.updateDynamic("sentencesPerParagraph")(sentencesPerParagraph.asInstanceOf[js.Any])
+    if (words != null) __obj.updateDynamic("words")(words.asInstanceOf[js.Any])
+    if (wordsPerSentence != null) __obj.updateDynamic("wordsPerSentence")(wordsPerSentence.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGeneratorOptions]
   }
 }

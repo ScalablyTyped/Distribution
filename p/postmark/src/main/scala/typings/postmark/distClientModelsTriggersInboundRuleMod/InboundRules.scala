@@ -12,7 +12,7 @@ trait InboundRules extends js.Object {
 object InboundRules {
   @scala.inline
   def apply(InboundRules: js.Array[InboundRule], TotalCount: Double): InboundRules = {
-    val __obj = js.Dynamic.literal(InboundRules = InboundRules, TotalCount = TotalCount)
+    val __obj = js.Dynamic.literal(InboundRules = InboundRules.asInstanceOf[js.Any], TotalCount = TotalCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InboundRules]
   }

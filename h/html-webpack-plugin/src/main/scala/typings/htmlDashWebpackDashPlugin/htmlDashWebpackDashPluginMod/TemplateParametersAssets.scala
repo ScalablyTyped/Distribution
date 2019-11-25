@@ -27,10 +27,10 @@ object TemplateParametersAssets {
     favicon: String = null,
     manifest: String = null
   ): TemplateParametersAssets = {
-    val __obj = js.Dynamic.literal(css = css, publicPath = publicPath)
-    __obj.updateDynamic("js")(js_)
-    if (favicon != null) __obj.updateDynamic("favicon")(favicon)
-    if (manifest != null) __obj.updateDynamic("manifest")(manifest)
+    val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], publicPath = publicPath.asInstanceOf[js.Any])
+    __obj.updateDynamic("js")(js_.asInstanceOf[js.Any])
+    if (favicon != null) __obj.updateDynamic("favicon")(favicon.asInstanceOf[js.Any])
+    if (manifest != null) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateParametersAssets]
   }
 }

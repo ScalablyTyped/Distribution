@@ -54,18 +54,18 @@ object Annotation {
     id: String = null,
     time: dateTime = null
   ): Annotation = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (_authorString != null) __obj.updateDynamic("_authorString")(_authorString)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_text != null) __obj.updateDynamic("_text")(_text)
-    if (_time != null) __obj.updateDynamic("_time")(_time)
-    if (authorReference != null) __obj.updateDynamic("authorReference")(authorReference)
-    if (authorString != null) __obj.updateDynamic("authorString")(authorString)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (time != null) __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (_authorString != null) __obj.updateDynamic("_authorString")(_authorString.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_text != null) __obj.updateDynamic("_text")(_text.asInstanceOf[js.Any])
+    if (_time != null) __obj.updateDynamic("_time")(_time.asInstanceOf[js.Any])
+    if (authorReference != null) __obj.updateDynamic("authorReference")(authorReference.asInstanceOf[js.Any])
+    if (authorString != null) __obj.updateDynamic("authorString")(authorString.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[Annotation]
   }
 }

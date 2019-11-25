@@ -12,7 +12,7 @@ trait Anon_HostIp extends js.Object {
 object Anon_HostIp {
   @scala.inline
   def apply(HostIp: String, HostPort: String): Anon_HostIp = {
-    val __obj = js.Dynamic.literal(HostIp = HostIp, HostPort = HostPort)
+    val __obj = js.Dynamic.literal(HostIp = HostIp.asInstanceOf[js.Any], HostPort = HostPort.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HostIp]
   }

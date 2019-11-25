@@ -31,12 +31,12 @@ object AddTrainingDataParams {
     natural_language_query: String = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): AddTrainingDataParams = {
-    val __obj = js.Dynamic.literal(collection_id = collection_id, environment_id = environment_id)
-    if (examples != null) __obj.updateDynamic("examples")(examples)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (natural_language_query != null) __obj.updateDynamic("natural_language_query")(natural_language_query)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    val __obj = js.Dynamic.literal(collection_id = collection_id.asInstanceOf[js.Any], environment_id = environment_id.asInstanceOf[js.Any])
+    if (examples != null) __obj.updateDynamic("examples")(examples.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (natural_language_query != null) __obj.updateDynamic("natural_language_query")(natural_language_query.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddTrainingDataParams]
   }
 }

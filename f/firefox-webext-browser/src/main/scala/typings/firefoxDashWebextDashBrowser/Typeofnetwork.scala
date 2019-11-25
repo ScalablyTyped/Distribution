@@ -26,7 +26,7 @@ trait Typeofnetwork extends js.Object {
 object Typeofnetwork {
   @scala.inline
   def apply(networkPredictionEnabled: Setting, peerConnectionEnabled: Setting, webRTCIPHandlingPolicy: Setting): Typeofnetwork = {
-    val __obj = js.Dynamic.literal(networkPredictionEnabled = networkPredictionEnabled, peerConnectionEnabled = peerConnectionEnabled, webRTCIPHandlingPolicy = webRTCIPHandlingPolicy)
+    val __obj = js.Dynamic.literal(networkPredictionEnabled = networkPredictionEnabled.asInstanceOf[js.Any], peerConnectionEnabled = peerConnectionEnabled.asInstanceOf[js.Any], webRTCIPHandlingPolicy = webRTCIPHandlingPolicy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofnetwork]
   }

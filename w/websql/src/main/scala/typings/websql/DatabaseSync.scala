@@ -21,7 +21,7 @@ object DatabaseSync {
     transaction: SQLTransactionSyncCallback => Unit,
     version: DOMString
   ): DatabaseSync = {
-    val __obj = js.Dynamic.literal(changeVersion = js.Any.fromFunction3(changeVersion), readTransaction = js.Any.fromFunction1(readTransaction), transaction = js.Any.fromFunction1(transaction), version = version)
+    val __obj = js.Dynamic.literal(changeVersion = js.Any.fromFunction3(changeVersion), readTransaction = js.Any.fromFunction1(readTransaction), transaction = js.Any.fromFunction1(transaction), version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DatabaseSync]
   }

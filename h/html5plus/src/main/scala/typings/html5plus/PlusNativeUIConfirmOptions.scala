@@ -41,9 +41,9 @@ object PlusNativeUIConfirmOptions {
   @scala.inline
   def apply(buttons: js.Array[_] = null, title: String = null, verticalAlign: String = null): PlusNativeUIConfirmOptions = {
     val __obj = js.Dynamic.literal()
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign)
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeUIConfirmOptions]
   }
 }

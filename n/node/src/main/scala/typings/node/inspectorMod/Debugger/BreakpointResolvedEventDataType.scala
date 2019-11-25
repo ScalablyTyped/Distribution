@@ -18,7 +18,7 @@ trait BreakpointResolvedEventDataType extends js.Object {
 object BreakpointResolvedEventDataType {
   @scala.inline
   def apply(breakpointId: BreakpointId, location: Location): BreakpointResolvedEventDataType = {
-    val __obj = js.Dynamic.literal(breakpointId = breakpointId, location = location)
+    val __obj = js.Dynamic.literal(breakpointId = breakpointId.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BreakpointResolvedEventDataType]
   }

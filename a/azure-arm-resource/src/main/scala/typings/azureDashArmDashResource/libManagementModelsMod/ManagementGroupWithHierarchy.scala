@@ -26,13 +26,13 @@ object ManagementGroupWithHierarchy {
     `type`: String = null
   ): ManagementGroupWithHierarchy = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (details != null) __obj.updateDynamic("details")(details)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagementGroupWithHierarchy]
   }
 }

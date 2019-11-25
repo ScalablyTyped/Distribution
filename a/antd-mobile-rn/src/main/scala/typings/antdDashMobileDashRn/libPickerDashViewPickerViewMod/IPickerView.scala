@@ -35,17 +35,17 @@ object IPickerView {
     value: js.Array[_] = null
   ): IPickerView = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade)
+    if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade.asInstanceOf[js.Any])
     if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (indicatorStyle != null) __obj.updateDynamic("indicatorStyle")(indicatorStyle)
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (indicatorStyle != null) __obj.updateDynamic("indicatorStyle")(indicatorStyle.asInstanceOf[js.Any])
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onScrollChange != null) __obj.updateDynamic("onScrollChange")(js.Any.fromFunction1(onScrollChange))
-    if (pickerPrefixCls != null) __obj.updateDynamic("pickerPrefixCls")(pickerPrefixCls)
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (pickerPrefixCls != null) __obj.updateDynamic("pickerPrefixCls")(pickerPrefixCls.asInstanceOf[js.Any])
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPickerView]
   }
 }

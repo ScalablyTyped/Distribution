@@ -6,9 +6,8 @@ import scala.scalajs.js.annotation._
 
 package object expressDashWsDashRoutesMod {
   import typings.express.expressMod.NextFunction
-  import typings.ws.wsMod.^
 
   type CbHandler = js.Function1[/* connectHandler */ WebSocketHandler | Boolean, Unit]
-  type WebSocketHandler = js.Function1[/* socket */ ^, Unit]
+  type WebSocketHandler = js.Function1[/* socket */ typings.ws.wsMod.^, Unit]
   type WebSocketRouteHandler = js.Function3[/* info */ ClientInfo, /* cb */ CbHandler, /* next */ NextFunction, Unit]
 }

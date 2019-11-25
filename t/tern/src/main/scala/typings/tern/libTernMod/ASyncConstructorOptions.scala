@@ -30,7 +30,7 @@ object ASyncConstructorOptions {
     async: `true`,
     getFile: (/* filename */ String, /* callback */ js.Function2[/* error */ js.UndefOr[Error], /* content */ js.UndefOr[String], Unit]) => Unit = null
   ): ASyncConstructorOptions = {
-    val __obj = js.Dynamic.literal(async = async)
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any])
     if (getFile != null) __obj.updateDynamic("getFile")(js.Any.fromFunction2(getFile))
     __obj.asInstanceOf[ASyncConstructorOptions]
   }

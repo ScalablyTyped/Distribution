@@ -16,9 +16,9 @@ trait SearchEngine extends js.Object {
 object SearchEngine {
   @scala.inline
   def apply(isDefault: Boolean, name: String, alias: String = null, favIconUrl: String = null): SearchEngine = {
-    val __obj = js.Dynamic.literal(isDefault = isDefault, name = name)
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (favIconUrl != null) __obj.updateDynamic("favIconUrl")(favIconUrl)
+    val __obj = js.Dynamic.literal(isDefault = isDefault.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (favIconUrl != null) __obj.updateDynamic("favIconUrl")(favIconUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchEngine]
   }
 }

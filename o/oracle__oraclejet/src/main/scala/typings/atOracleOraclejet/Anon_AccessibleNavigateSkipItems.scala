@@ -38,19 +38,19 @@ object Anon_AccessibleNavigateSkipItems {
     msgNoData: String = null
   ): Anon_AccessibleNavigateSkipItems = {
     val __obj = js.Dynamic.literal()
-    if (accessibleNavigateSkipItems != null) __obj.updateDynamic("accessibleNavigateSkipItems")(accessibleNavigateSkipItems)
-    if (accessibleReorderAfterItem != null) __obj.updateDynamic("accessibleReorderAfterItem")(accessibleReorderAfterItem)
-    if (accessibleReorderBeforeItem != null) __obj.updateDynamic("accessibleReorderBeforeItem")(accessibleReorderBeforeItem)
-    if (accessibleReorderInsideItem != null) __obj.updateDynamic("accessibleReorderInsideItem")(accessibleReorderInsideItem)
-    if (accessibleReorderTouchInstructionText != null) __obj.updateDynamic("accessibleReorderTouchInstructionText")(accessibleReorderTouchInstructionText)
-    if (indexerCharacters != null) __obj.updateDynamic("indexerCharacters")(indexerCharacters)
-    if (labelCopy != null) __obj.updateDynamic("labelCopy")(labelCopy)
-    if (labelCut != null) __obj.updateDynamic("labelCut")(labelCut)
-    if (labelPaste != null) __obj.updateDynamic("labelPaste")(labelPaste)
-    if (labelPasteAfter != null) __obj.updateDynamic("labelPasteAfter")(labelPasteAfter)
-    if (labelPasteBefore != null) __obj.updateDynamic("labelPasteBefore")(labelPasteBefore)
-    if (msgFetchingData != null) __obj.updateDynamic("msgFetchingData")(msgFetchingData)
-    if (msgNoData != null) __obj.updateDynamic("msgNoData")(msgNoData)
+    if (accessibleNavigateSkipItems != null) __obj.updateDynamic("accessibleNavigateSkipItems")(accessibleNavigateSkipItems.asInstanceOf[js.Any])
+    if (accessibleReorderAfterItem != null) __obj.updateDynamic("accessibleReorderAfterItem")(accessibleReorderAfterItem.asInstanceOf[js.Any])
+    if (accessibleReorderBeforeItem != null) __obj.updateDynamic("accessibleReorderBeforeItem")(accessibleReorderBeforeItem.asInstanceOf[js.Any])
+    if (accessibleReorderInsideItem != null) __obj.updateDynamic("accessibleReorderInsideItem")(accessibleReorderInsideItem.asInstanceOf[js.Any])
+    if (accessibleReorderTouchInstructionText != null) __obj.updateDynamic("accessibleReorderTouchInstructionText")(accessibleReorderTouchInstructionText.asInstanceOf[js.Any])
+    if (indexerCharacters != null) __obj.updateDynamic("indexerCharacters")(indexerCharacters.asInstanceOf[js.Any])
+    if (labelCopy != null) __obj.updateDynamic("labelCopy")(labelCopy.asInstanceOf[js.Any])
+    if (labelCut != null) __obj.updateDynamic("labelCut")(labelCut.asInstanceOf[js.Any])
+    if (labelPaste != null) __obj.updateDynamic("labelPaste")(labelPaste.asInstanceOf[js.Any])
+    if (labelPasteAfter != null) __obj.updateDynamic("labelPasteAfter")(labelPasteAfter.asInstanceOf[js.Any])
+    if (labelPasteBefore != null) __obj.updateDynamic("labelPasteBefore")(labelPasteBefore.asInstanceOf[js.Any])
+    if (msgFetchingData != null) __obj.updateDynamic("msgFetchingData")(msgFetchingData.asInstanceOf[js.Any])
+    if (msgNoData != null) __obj.updateDynamic("msgNoData")(msgNoData.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AccessibleNavigateSkipItems]
   }
 }

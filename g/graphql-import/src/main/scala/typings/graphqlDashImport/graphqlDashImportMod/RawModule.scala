@@ -12,7 +12,7 @@ trait RawModule extends js.Object {
 object RawModule {
   @scala.inline
   def apply(from: String, imports: js.Array[String]): RawModule = {
-    val __obj = js.Dynamic.literal(from = from, imports = imports)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RawModule]
   }

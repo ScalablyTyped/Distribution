@@ -20,8 +20,8 @@ object FilteringStats {
   @scala.inline
   def apply(date: Date = null, reasons: js.Array[Reason] = null): FilteringStats = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (reasons != null) __obj.updateDynamic("reasons")(reasons)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (reasons != null) __obj.updateDynamic("reasons")(reasons.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilteringStats]
   }
 }

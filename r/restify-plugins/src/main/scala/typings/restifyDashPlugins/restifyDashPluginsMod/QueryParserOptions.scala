@@ -58,15 +58,15 @@ object QueryParserOptions {
     strictNullHandling: js.UndefOr[Boolean] = js.undefined
   ): QueryParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDots)) __obj.updateDynamic("allowDots")(allowDots)
+    if (!js.isUndefined(allowDots)) __obj.updateDynamic("allowDots")(allowDots.asInstanceOf[js.Any])
     if (arrayLimit != null) __obj.updateDynamic("arrayLimit")(arrayLimit.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (!js.isUndefined(mapParams)) __obj.updateDynamic("mapParams")(mapParams)
-    if (!js.isUndefined(overrideParams)) __obj.updateDynamic("overrideParams")(overrideParams)
+    if (!js.isUndefined(mapParams)) __obj.updateDynamic("mapParams")(mapParams.asInstanceOf[js.Any])
+    if (!js.isUndefined(overrideParams)) __obj.updateDynamic("overrideParams")(overrideParams.asInstanceOf[js.Any])
     if (parameterLimit != null) __obj.updateDynamic("parameterLimit")(parameterLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(parseArrays)) __obj.updateDynamic("parseArrays")(parseArrays)
-    if (!js.isUndefined(plainObjects)) __obj.updateDynamic("plainObjects")(plainObjects)
-    if (!js.isUndefined(strictNullHandling)) __obj.updateDynamic("strictNullHandling")(strictNullHandling)
+    if (!js.isUndefined(parseArrays)) __obj.updateDynamic("parseArrays")(parseArrays.asInstanceOf[js.Any])
+    if (!js.isUndefined(plainObjects)) __obj.updateDynamic("plainObjects")(plainObjects.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictNullHandling)) __obj.updateDynamic("strictNullHandling")(strictNullHandling.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryParserOptions]
   }
 }

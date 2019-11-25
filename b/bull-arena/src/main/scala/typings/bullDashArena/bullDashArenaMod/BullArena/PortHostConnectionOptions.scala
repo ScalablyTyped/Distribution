@@ -14,9 +14,9 @@ trait PortHostConnectionOptions extends ConnectionOptions {
 object PortHostConnectionOptions {
   @scala.inline
   def apply(host: String, db: String = null, password: String = null, port: Int | Double = null): PortHostConnectionOptions = {
-    val __obj = js.Dynamic.literal(host = host)
-    if (db != null) __obj.updateDynamic("db")(db)
-    if (password != null) __obj.updateDynamic("password")(password)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any])
+    if (db != null) __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortHostConnectionOptions]
   }

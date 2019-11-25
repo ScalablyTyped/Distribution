@@ -125,18 +125,18 @@ object EffectsOptions {
     step: js.ThisFunction2[/* this */ TElement, /* now */ Double, /* tween */ Tween[TElement], Unit] = null
   ): EffectsOptions[TElement] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (always != null) __obj.updateDynamic("always")(always)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (done != null) __obj.updateDynamic("done")(done)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (always != null) __obj.updateDynamic("always")(always.asInstanceOf[js.Any])
+    if (complete != null) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
+    if (done != null) __obj.updateDynamic("done")(done.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing)
-    if (fail != null) __obj.updateDynamic("fail")(fail)
-    if (progress != null) __obj.updateDynamic("progress")(progress)
+    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
+    if (fail != null) __obj.updateDynamic("fail")(fail.asInstanceOf[js.Any])
+    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
     if (queue != null) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
-    if (specialEasing != null) __obj.updateDynamic("specialEasing")(specialEasing)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (step != null) __obj.updateDynamic("step")(step)
+    if (specialEasing != null) __obj.updateDynamic("specialEasing")(specialEasing.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     __obj.asInstanceOf[EffectsOptions[TElement]]
   }
 }

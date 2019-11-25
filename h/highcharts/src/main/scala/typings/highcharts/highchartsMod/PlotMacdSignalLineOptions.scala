@@ -26,8 +26,8 @@ object PlotMacdSignalLineOptions {
     zones: js.Array[PlotMacdSignalLineZonesOptions] = null
   ): PlotMacdSignalLineOptions = {
     val __obj = js.Dynamic.literal()
-    if (styles != null) __obj.updateDynamic("styles")(styles)
-    if (zones != null) __obj.updateDynamic("zones")(zones)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (zones != null) __obj.updateDynamic("zones")(zones.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotMacdSignalLineOptions]
   }
 }

@@ -13,7 +13,7 @@ trait Anon_CoverInfo extends js.Object {
 object Anon_CoverInfo {
   @scala.inline
   def apply(coverInfo: Anon_LeftImageOffset, coverPhoto: Anon_Height, layout: String): Anon_CoverInfo = {
-    val __obj = js.Dynamic.literal(coverInfo = coverInfo, coverPhoto = coverPhoto, layout = layout)
+    val __obj = js.Dynamic.literal(coverInfo = coverInfo.asInstanceOf[js.Any], coverPhoto = coverPhoto.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CoverInfo]
   }

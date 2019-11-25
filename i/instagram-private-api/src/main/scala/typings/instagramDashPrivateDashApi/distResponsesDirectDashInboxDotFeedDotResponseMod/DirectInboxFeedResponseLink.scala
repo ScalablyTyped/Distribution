@@ -19,7 +19,7 @@ object DirectInboxFeedResponseLink {
     mutation_token: String,
     text: String
   ): DirectInboxFeedResponseLink = {
-    val __obj = js.Dynamic.literal(client_context = client_context, link_context = link_context, mutation_token = mutation_token, text = text)
+    val __obj = js.Dynamic.literal(client_context = client_context.asInstanceOf[js.Any], link_context = link_context.asInstanceOf[js.Any], mutation_token = mutation_token.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DirectInboxFeedResponseLink]
   }

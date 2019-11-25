@@ -42,8 +42,8 @@ object Template {
     published: Boolean,
     last_use: String = null
   ): Template = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], description = description, id = id, last_update_time = last_update_time, name = name, options = options, published = published)
-    if (last_use != null) __obj.updateDynamic("last_use")(last_use)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last_update_time = last_update_time.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], published = published.asInstanceOf[js.Any])
+    if (last_use != null) __obj.updateDynamic("last_use")(last_use.asInstanceOf[js.Any])
     __obj.asInstanceOf[Template]
   }
 }

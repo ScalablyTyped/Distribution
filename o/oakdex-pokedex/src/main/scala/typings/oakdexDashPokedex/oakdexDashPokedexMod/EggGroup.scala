@@ -11,7 +11,7 @@ trait EggGroup extends js.Object {
 object EggGroup {
   @scala.inline
   def apply(names: Translations): EggGroup = {
-    val __obj = js.Dynamic.literal(names = names)
+    val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EggGroup]
   }

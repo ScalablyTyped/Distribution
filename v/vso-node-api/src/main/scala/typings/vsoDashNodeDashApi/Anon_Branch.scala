@@ -13,7 +13,7 @@ trait Anon_Branch extends js.Object {
 object Anon_Branch {
   @scala.inline
   def apply(branch: Double, commit: Double, tag: Double): Anon_Branch = {
-    val __obj = js.Dynamic.literal(branch = branch, commit = commit, tag = tag)
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Branch]
   }

@@ -13,7 +13,7 @@ trait ojOptgroupSettableProperties extends JetSettableProperties {
 object ojOptgroupSettableProperties {
   @scala.inline
   def apply(disabled: Boolean, label: String): ojOptgroupSettableProperties = {
-    val __obj = js.Dynamic.literal(disabled = disabled, label = label)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ojOptgroupSettableProperties]
   }

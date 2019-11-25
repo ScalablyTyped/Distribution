@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait ObservableType extends js.Object
 
+object ObservableType {
+  @scala.inline
+  def List: typings.atJupyterlabObservables.atJupyterlabObservablesStrings.List = this.cast("List")
+  @scala.inline
+  def Map: typings.atJupyterlabObservables.atJupyterlabObservablesStrings.Map = this.cast("Map")
+  @scala.inline
+  def String: typings.atJupyterlabObservables.atJupyterlabObservablesStrings.String = this.cast("String")
+  @scala.inline
+  def Value: typings.atJupyterlabObservables.atJupyterlabObservablesStrings.Value = this.cast("Value")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

@@ -95,21 +95,21 @@ object EncryptOptions {
     toUserIds: js.Array[UserID] = null,
     wildcard: js.UndefOr[Boolean] = js.undefined
   ): EncryptOptions = {
-    val __obj = js.Dynamic.literal(message = message)
-    if (!js.isUndefined(armor)) __obj.updateDynamic("armor")(armor)
-    if (compression != null) __obj.updateDynamic("compression")(compression)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached)
-    if (fromUserIds != null) __obj.updateDynamic("fromUserIds")(fromUserIds)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    if (!js.isUndefined(armor)) __obj.updateDynamic("armor")(armor.asInstanceOf[js.Any])
+    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.asInstanceOf[js.Any])
+    if (fromUserIds != null) __obj.updateDynamic("fromUserIds")(fromUserIds.asInstanceOf[js.Any])
     if (passwords != null) __obj.updateDynamic("passwords")(passwords.asInstanceOf[js.Any])
     if (privateKeys != null) __obj.updateDynamic("privateKeys")(privateKeys.asInstanceOf[js.Any])
     if (publicKeys != null) __obj.updateDynamic("publicKeys")(publicKeys.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnSessionKey)) __obj.updateDynamic("returnSessionKey")(returnSessionKey)
-    if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey)
-    if (signature != null) __obj.updateDynamic("signature")(signature)
+    if (!js.isUndefined(returnSessionKey)) __obj.updateDynamic("returnSessionKey")(returnSessionKey.asInstanceOf[js.Any])
+    if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey.asInstanceOf[js.Any])
+    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
     if (streaming != null) __obj.updateDynamic("streaming")(streaming.asInstanceOf[js.Any])
-    if (toUserIds != null) __obj.updateDynamic("toUserIds")(toUserIds)
-    if (!js.isUndefined(wildcard)) __obj.updateDynamic("wildcard")(wildcard)
+    if (toUserIds != null) __obj.updateDynamic("toUserIds")(toUserIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(wildcard)) __obj.updateDynamic("wildcard")(wildcard.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptOptions]
   }
 }

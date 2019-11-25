@@ -32,9 +32,9 @@ trait EditOptions extends js.Object {
 object EditOptions {
   @scala.inline
   def apply(featureGroup: FeatureGroup[_], edit: EditHandlerOptions | `false` = null, remove: `false` = null): EditOptions = {
-    val __obj = js.Dynamic.literal(featureGroup = featureGroup)
+    val __obj = js.Dynamic.literal(featureGroup = featureGroup.asInstanceOf[js.Any])
     if (edit != null) __obj.updateDynamic("edit")(edit.asInstanceOf[js.Any])
-    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditOptions]
   }
 }

@@ -51,12 +51,12 @@ object configWorkersLoaderConfig {
     packages: js.Array[_] = null,
     paths: js.Any = null
   ): configWorkersLoaderConfig = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
-    if (has != null) __obj.updateDynamic("has")(has)
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (packages != null) __obj.updateDynamic("packages")(packages)
-    if (paths != null) __obj.updateDynamic("paths")(paths)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
+    if (has != null) __obj.updateDynamic("has")(has.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (packages != null) __obj.updateDynamic("packages")(packages.asInstanceOf[js.Any])
+    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[configWorkersLoaderConfig]
   }
 }

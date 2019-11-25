@@ -28,8 +28,8 @@ object GoogleActionsV2OrdersActionProvidedPaymentOptions {
     paymentType: GoogleActionsV2OrdersActionProvidedPaymentOptionsPaymentType = null
   ): GoogleActionsV2OrdersActionProvidedPaymentOptions = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (paymentType != null) __obj.updateDynamic("paymentType")(paymentType)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (paymentType != null) __obj.updateDynamic("paymentType")(paymentType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersActionProvidedPaymentOptions]
   }
 }

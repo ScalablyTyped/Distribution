@@ -17,7 +17,7 @@ trait Post[TResponse] extends js.Object {
 object Post {
   @scala.inline
   def apply[TResponse](request: Anon_Method, response: Anon_Data[TResponse]): Post[TResponse] = {
-    val __obj = js.Dynamic.literal(request = request, response = response)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Post[TResponse]]
   }

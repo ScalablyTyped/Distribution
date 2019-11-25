@@ -1,6 +1,6 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeDashAppsStrings.all
+import typings.chromeDashApps.chromeDashAppsStrings.all_
 import typings.chromeDashApps.chromeDashAppsStrings.audio
 import typings.chromeDashApps.chromeDashAppsStrings.browser_action
 import typings.chromeDashApps.chromeDashAppsStrings.editable
@@ -17,7 +17,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ALL extends js.Object {
-  var ALL: all
+  var ALL: all_
   var AUDIO: audio
   var BROWSER_ACTION: browser_action
   var EDITABLE: editable
@@ -34,7 +34,7 @@ trait Anon_ALL extends js.Object {
 object Anon_ALL {
   @scala.inline
   def apply(
-    ALL: all,
+    ALL: all_,
     AUDIO: audio,
     BROWSER_ACTION: browser_action,
     EDITABLE: editable,
@@ -47,7 +47,7 @@ object Anon_ALL {
     SELECTION: selection,
     VIDEO: video
   ): Anon_ALL = {
-    val __obj = js.Dynamic.literal(ALL = ALL, AUDIO = AUDIO, BROWSER_ACTION = BROWSER_ACTION, EDITABLE = EDITABLE, FRAME = FRAME, IMAGE = IMAGE, LAUNCHER = LAUNCHER, LINK = LINK, PAGE = PAGE, PAGE_ACTION = PAGE_ACTION, SELECTION = SELECTION, VIDEO = VIDEO)
+    val __obj = js.Dynamic.literal(ALL = ALL.asInstanceOf[js.Any], AUDIO = AUDIO.asInstanceOf[js.Any], BROWSER_ACTION = BROWSER_ACTION.asInstanceOf[js.Any], EDITABLE = EDITABLE.asInstanceOf[js.Any], FRAME = FRAME.asInstanceOf[js.Any], IMAGE = IMAGE.asInstanceOf[js.Any], LAUNCHER = LAUNCHER.asInstanceOf[js.Any], LINK = LINK.asInstanceOf[js.Any], PAGE = PAGE.asInstanceOf[js.Any], PAGE_ACTION = PAGE_ACTION.asInstanceOf[js.Any], SELECTION = SELECTION.asInstanceOf[js.Any], VIDEO = VIDEO.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ALL]
   }

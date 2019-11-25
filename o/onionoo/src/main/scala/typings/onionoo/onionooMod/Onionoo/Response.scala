@@ -63,11 +63,11 @@ object Response {
     relays_skipped: Int | Double = null,
     relays_truncated: Int | Double = null
   ): Response[TRelay, TBridge] = {
-    val __obj = js.Dynamic.literal(bridges = bridges, bridges_published = bridges_published, relays = relays, relays_published = relays_published, version = version)
+    val __obj = js.Dynamic.literal(bridges = bridges.asInstanceOf[js.Any], bridges_published = bridges_published.asInstanceOf[js.Any], relays = relays.asInstanceOf[js.Any], relays_published = relays_published.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     if (bridges_skipped != null) __obj.updateDynamic("bridges_skipped")(bridges_skipped.asInstanceOf[js.Any])
     if (bridges_truncated != null) __obj.updateDynamic("bridges_truncated")(bridges_truncated.asInstanceOf[js.Any])
-    if (build_revision != null) __obj.updateDynamic("build_revision")(build_revision)
-    if (next_major_version_scheduled != null) __obj.updateDynamic("next_major_version_scheduled")(next_major_version_scheduled)
+    if (build_revision != null) __obj.updateDynamic("build_revision")(build_revision.asInstanceOf[js.Any])
+    if (next_major_version_scheduled != null) __obj.updateDynamic("next_major_version_scheduled")(next_major_version_scheduled.asInstanceOf[js.Any])
     if (relays_skipped != null) __obj.updateDynamic("relays_skipped")(relays_skipped.asInstanceOf[js.Any])
     if (relays_truncated != null) __obj.updateDynamic("relays_truncated")(relays_truncated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response[TRelay, TBridge]]

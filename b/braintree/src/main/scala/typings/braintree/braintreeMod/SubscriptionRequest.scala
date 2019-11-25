@@ -49,20 +49,20 @@ object SubscriptionRequest {
     trialDurationUnit: String = null,
     trialPeriod: js.UndefOr[Boolean] = js.undefined
   ): SubscriptionRequest = {
-    val __obj = js.Dynamic.literal(id = id, merchantAccountId = merchantAccountId, paymentMethodToken = paymentMethodToken, planId = planId)
-    if (addOns != null) __obj.updateDynamic("addOns")(addOns)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], merchantAccountId = merchantAccountId.asInstanceOf[js.Any], paymentMethodToken = paymentMethodToken.asInstanceOf[js.Any], planId = planId.asInstanceOf[js.Any])
+    if (addOns != null) __obj.updateDynamic("addOns")(addOns.asInstanceOf[js.Any])
     if (billingDayOfMonth != null) __obj.updateDynamic("billingDayOfMonth")(billingDayOfMonth.asInstanceOf[js.Any])
-    if (descriptor != null) __obj.updateDynamic("descriptor")(descriptor)
-    if (discounts != null) __obj.updateDynamic("discounts")(discounts)
-    if (firstBillingDate != null) __obj.updateDynamic("firstBillingDate")(firstBillingDate)
-    if (!js.isUndefined(neverExpires)) __obj.updateDynamic("neverExpires")(neverExpires)
+    if (descriptor != null) __obj.updateDynamic("descriptor")(descriptor.asInstanceOf[js.Any])
+    if (discounts != null) __obj.updateDynamic("discounts")(discounts.asInstanceOf[js.Any])
+    if (firstBillingDate != null) __obj.updateDynamic("firstBillingDate")(firstBillingDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(neverExpires)) __obj.updateDynamic("neverExpires")(neverExpires.asInstanceOf[js.Any])
     if (numberOfBillingCycles != null) __obj.updateDynamic("numberOfBillingCycles")(numberOfBillingCycles.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (paymentMethodNonce != null) __obj.updateDynamic("paymentMethodNonce")(paymentMethodNonce)
-    if (price != null) __obj.updateDynamic("price")(price)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (paymentMethodNonce != null) __obj.updateDynamic("paymentMethodNonce")(paymentMethodNonce.asInstanceOf[js.Any])
+    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
     if (trialDuration != null) __obj.updateDynamic("trialDuration")(trialDuration.asInstanceOf[js.Any])
-    if (trialDurationUnit != null) __obj.updateDynamic("trialDurationUnit")(trialDurationUnit)
-    if (!js.isUndefined(trialPeriod)) __obj.updateDynamic("trialPeriod")(trialPeriod)
+    if (trialDurationUnit != null) __obj.updateDynamic("trialDurationUnit")(trialDurationUnit.asInstanceOf[js.Any])
+    if (!js.isUndefined(trialPeriod)) __obj.updateDynamic("trialPeriod")(trialPeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionRequest]
   }
 }

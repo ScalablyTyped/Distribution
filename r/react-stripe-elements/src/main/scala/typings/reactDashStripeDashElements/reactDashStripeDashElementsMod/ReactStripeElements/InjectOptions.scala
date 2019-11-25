@@ -12,7 +12,7 @@ object InjectOptions {
   @scala.inline
   def apply(withRef: js.UndefOr[Boolean] = js.undefined): InjectOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef)
+    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectOptions]
   }
 }

@@ -24,14 +24,14 @@ object DateTimeOptions {
     yearRangeFrom: Int | Double = null,
     yearRangeTo: Int | Double = null
   ): DateTimeOptions = {
-    val __obj = js.Dynamic.literal(knexOptions = knexOptions)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(knexOptions = knexOptions.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (hooks != null) __obj.updateDynamic("hooks")(hooks)
-    if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired)
-    if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique)
-    if (yearPickerType != null) __obj.updateDynamic("yearPickerType")(yearPickerType)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.asInstanceOf[js.Any])
+    if (yearPickerType != null) __obj.updateDynamic("yearPickerType")(yearPickerType.asInstanceOf[js.Any])
     if (yearRangeFrom != null) __obj.updateDynamic("yearRangeFrom")(yearRangeFrom.asInstanceOf[js.Any])
     if (yearRangeTo != null) __obj.updateDynamic("yearRangeTo")(yearRangeTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimeOptions]

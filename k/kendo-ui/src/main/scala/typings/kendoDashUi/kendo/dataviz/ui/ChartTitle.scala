@@ -32,16 +32,16 @@ object ChartTitle {
     visible: js.UndefOr[Boolean] = js.undefined
   ): ChartTitle = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align)
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (margin != null) __obj.updateDynamic("margin")(margin)
-    if (padding != null) __obj.updateDynamic("padding")(padding)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartTitle]
   }
 }

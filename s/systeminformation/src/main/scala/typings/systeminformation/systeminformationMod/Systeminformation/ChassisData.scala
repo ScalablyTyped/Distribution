@@ -25,8 +25,8 @@ object ChassisData {
     `type`: String,
     version: String
   ): ChassisData = {
-    val __obj = js.Dynamic.literal(assetTag = assetTag, manufacturer = manufacturer, model = model, serial = serial, sku = sku, version = version)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(assetTag = assetTag.asInstanceOf[js.Any], manufacturer = manufacturer.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChassisData]
   }
 }

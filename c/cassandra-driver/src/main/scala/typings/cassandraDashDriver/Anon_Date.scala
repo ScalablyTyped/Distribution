@@ -13,7 +13,7 @@ trait Anon_Date extends js.Object {
 object Anon_Date {
   @scala.inline
   def apply(date: Date, ticks: Double): Anon_Date = {
-    val __obj = js.Dynamic.literal(date = date, ticks = ticks)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], ticks = ticks.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Date]
   }

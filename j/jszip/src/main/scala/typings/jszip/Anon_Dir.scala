@@ -12,7 +12,7 @@ trait Anon_Dir extends js.Object {
 object Anon_Dir {
   @scala.inline
   def apply(dir: `true`): Anon_Dir = {
-    val __obj = js.Dynamic.literal(dir = dir)
+    val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Dir]
   }

@@ -16,9 +16,9 @@ trait Anon_CommentsExpression extends js.Object {
 object Anon_CommentsExpression {
   @scala.inline
   def apply(expression: ExpressionKind, comments: js.Array[CommentKind] = null, loc: SourceLocationKind = null): Anon_CommentsExpression = {
-    val __obj = js.Dynamic.literal(expression = expression)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsExpression]
   }
 }

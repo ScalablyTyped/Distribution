@@ -12,7 +12,7 @@ trait PlatformStatic extends js.Object {
     */
   @JSName("select")
   def select_default[T](
-    specifics: /* import warning: ImportType.apply c Unsupported type mapping: 
+    specifics: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ platform in react-native.react-native.PlatformOSType | 'default' ]:? T}
     */ typings.reactDashNative.reactDashNativeStrings.PlatformStatic with js.Any
   ): T
@@ -23,12 +23,12 @@ object PlatformStatic {
   def apply(
     Version: Double | String,
     isTV: Boolean,
-    select_default: /* import warning: ImportType.apply c Unsupported type mapping: 
+    select: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ platform in react-native.react-native.PlatformOSType | 'default' ]:? T}
     */ typings.reactDashNative.reactDashNativeStrings.PlatformStatic with js.Any => js.Any
   ): PlatformStatic = {
-    val __obj = js.Dynamic.literal(Version = Version.asInstanceOf[js.Any], isTV = isTV)
-    __obj.updateDynamic("select")(js.Any.fromFunction1(select_default))
+    val __obj = js.Dynamic.literal(Version = Version.asInstanceOf[js.Any], isTV = isTV.asInstanceOf[js.Any], select = js.Any.fromFunction1(select))
+  
     __obj.asInstanceOf[PlatformStatic]
   }
 }

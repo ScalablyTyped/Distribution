@@ -46,16 +46,16 @@ object Props {
   ): Props = {
     val __obj = js.Dynamic.literal(onDateSelected = js.Any.fromFunction1(onDateSelected))
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
-    if (date != null) __obj.updateDynamic("date")(date)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate)
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
     if (monthsToDisplay != null) __obj.updateDynamic("monthsToDisplay")(monthsToDisplay.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (onOffsetChanged != null) __obj.updateDynamic("onOffsetChanged")(js.Any.fromFunction1(onOffsetChanged))
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOutsideDays)) __obj.updateDynamic("showOutsideDays")(showOutsideDays)
+    if (!js.isUndefined(showOutsideDays)) __obj.updateDynamic("showOutsideDays")(showOutsideDays.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

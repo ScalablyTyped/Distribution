@@ -47,8 +47,8 @@ object ErrorModel {
     val __obj = js.Dynamic.literal()
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (trace_id != null) __obj.updateDynamic("trace_id")(trace_id)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (trace_id != null) __obj.updateDynamic("trace_id")(trace_id.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorModel]
   }

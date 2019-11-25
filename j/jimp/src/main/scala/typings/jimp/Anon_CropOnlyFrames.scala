@@ -20,8 +20,8 @@ object Anon_CropOnlyFrames {
     tolerance: Int | Double = null
   ): Anon_CropOnlyFrames = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cropOnlyFrames)) __obj.updateDynamic("cropOnlyFrames")(cropOnlyFrames)
-    if (!js.isUndefined(cropSymmetric)) __obj.updateDynamic("cropSymmetric")(cropSymmetric)
+    if (!js.isUndefined(cropOnlyFrames)) __obj.updateDynamic("cropOnlyFrames")(cropOnlyFrames.asInstanceOf[js.Any])
+    if (!js.isUndefined(cropSymmetric)) __obj.updateDynamic("cropSymmetric")(cropSymmetric.asInstanceOf[js.Any])
     if (leaveBorder != null) __obj.updateDynamic("leaveBorder")(leaveBorder.asInstanceOf[js.Any])
     if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CropOnlyFrames]

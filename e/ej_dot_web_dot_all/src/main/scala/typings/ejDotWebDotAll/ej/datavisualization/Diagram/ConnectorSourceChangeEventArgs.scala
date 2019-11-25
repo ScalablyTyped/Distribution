@@ -40,13 +40,13 @@ object ConnectorSourceChangeEventArgs {
     port: js.Any = null
   ): ConnectorSourceChangeEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
-    if (dragState != null) __obj.updateDynamic("dragState")(dragState)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (node != null) __obj.updateDynamic("node")(node)
-    if (point != null) __obj.updateDynamic("point")(point)
-    if (port != null) __obj.updateDynamic("port")(port)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId.asInstanceOf[js.Any])
+    if (dragState != null) __obj.updateDynamic("dragState")(dragState.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectorSourceChangeEventArgs]
   }
 }

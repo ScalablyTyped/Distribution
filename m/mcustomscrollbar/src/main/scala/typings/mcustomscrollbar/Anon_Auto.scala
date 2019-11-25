@@ -63,11 +63,11 @@ object Anon_Auto {
     val __obj = js.Dynamic.literal()
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
     if (deltaFactor != null) __obj.updateDynamic("deltaFactor")(deltaFactor.asInstanceOf[js.Any])
-    if (disableOver != null) __obj.updateDynamic("disableOver")(disableOver)
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
-    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert)
-    if (!js.isUndefined(normalizeDelta)) __obj.updateDynamic("normalizeDelta")(normalizeDelta)
-    if (!js.isUndefined(preventDefault)) __obj.updateDynamic("preventDefault")(preventDefault)
+    if (disableOver != null) __obj.updateDynamic("disableOver")(disableOver.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalizeDelta)) __obj.updateDynamic("normalizeDelta")(normalizeDelta.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventDefault)) __obj.updateDynamic("preventDefault")(preventDefault.asInstanceOf[js.Any])
     if (scrollAmount != null) __obj.updateDynamic("scrollAmount")(scrollAmount.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Auto]
   }

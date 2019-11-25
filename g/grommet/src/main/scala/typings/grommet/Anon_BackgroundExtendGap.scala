@@ -28,8 +28,8 @@ object Anon_BackgroundExtendGap {
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (panel != null) __obj.updateDynamic("panel")(panel)
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackgroundExtendGap]
   }
 }

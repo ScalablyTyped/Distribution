@@ -16,8 +16,8 @@ object ListResourceResponseItem {
   @scala.inline
   def apply(endpoints: Record[String, js.Array[Double]] = null, resource: String = null): ListResourceResponseItem = {
     val __obj = js.Dynamic.literal()
-    if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResourceResponseItem]
   }
 }

@@ -37,11 +37,11 @@ object CommonLinuxOptions {
     synopsis: String = null
   ): CommonLinuxOptions = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (desktop != null) __obj.updateDynamic("desktop")(desktop)
-    if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes)
-    if (synopsis != null) __obj.updateDynamic("synopsis")(synopsis)
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (desktop != null) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
+    if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
+    if (synopsis != null) __obj.updateDynamic("synopsis")(synopsis.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonLinuxOptions]
   }
 }

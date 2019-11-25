@@ -11,7 +11,7 @@ trait Anon_IncludeDisabled extends js.Object {
 object Anon_IncludeDisabled {
   @scala.inline
   def apply(includeDisabled: Boolean): Anon_IncludeDisabled = {
-    val __obj = js.Dynamic.literal(includeDisabled = includeDisabled)
+    val __obj = js.Dynamic.literal(includeDisabled = includeDisabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IncludeDisabled]
   }

@@ -24,7 +24,7 @@ object Anon_Host {
     port: Double,
     protocol: wss | ws | typings.mqtt.mqttStrings.mqtt | mqtts | tcp | ssl | wx | wxs = null
   ): Anon_Host = {
-    val __obj = js.Dynamic.literal(host = host, port = port)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Host]
   }

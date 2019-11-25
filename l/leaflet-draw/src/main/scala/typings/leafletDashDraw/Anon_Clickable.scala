@@ -12,7 +12,7 @@ object Anon_Clickable {
   @scala.inline
   def apply(clickable: js.UndefOr[Boolean] = js.undefined): Anon_Clickable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
+    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Clickable]
   }
 }

@@ -21,9 +21,9 @@ object GooglePrivacyDlpV2beta1RiskAnalysisOperationMetadata {
     requestedSourceTable: GooglePrivacyDlpV2beta1BigQueryTable = null
   ): GooglePrivacyDlpV2beta1RiskAnalysisOperationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (requestedPrivacyMetric != null) __obj.updateDynamic("requestedPrivacyMetric")(requestedPrivacyMetric)
-    if (requestedSourceTable != null) __obj.updateDynamic("requestedSourceTable")(requestedSourceTable)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (requestedPrivacyMetric != null) __obj.updateDynamic("requestedPrivacyMetric")(requestedPrivacyMetric.asInstanceOf[js.Any])
+    if (requestedSourceTable != null) __obj.updateDynamic("requestedSourceTable")(requestedSourceTable.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1RiskAnalysisOperationMetadata]
   }
 }

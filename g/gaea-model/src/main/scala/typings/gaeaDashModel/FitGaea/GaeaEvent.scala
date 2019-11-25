@@ -12,7 +12,7 @@ trait GaeaEvent extends js.Object {
 object GaeaEvent {
   @scala.inline
   def apply(effects: js.Array[EventAction], triggers: js.Array[EventTriggerCondition]): GaeaEvent = {
-    val __obj = js.Dynamic.literal(effects = effects, triggers = triggers)
+    val __obj = js.Dynamic.literal(effects = effects.asInstanceOf[js.Any], triggers = triggers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GaeaEvent]
   }

@@ -13,7 +13,7 @@ object InstancesTruncateLogRequest {
   @scala.inline
   def apply(truncateLogContext: TruncateLogContext = null): InstancesTruncateLogRequest = {
     val __obj = js.Dynamic.literal()
-    if (truncateLogContext != null) __obj.updateDynamic("truncateLogContext")(truncateLogContext)
+    if (truncateLogContext != null) __obj.updateDynamic("truncateLogContext")(truncateLogContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstancesTruncateLogRequest]
   }
 }

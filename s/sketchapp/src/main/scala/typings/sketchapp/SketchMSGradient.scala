@@ -26,7 +26,7 @@ object SketchMSGradient {
     stops: js.Array[SketchMSGradientStop],
     to: Anon_X
   ): SketchMSGradient = {
-    val __obj = js.Dynamic.literal(_class = _class, elipseLength = elipseLength, from = from, gradientType = gradientType, shouldSmoothenOpacity = shouldSmoothenOpacity, stops = stops, to = to)
+    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], elipseLength = elipseLength.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], gradientType = gradientType.asInstanceOf[js.Any], shouldSmoothenOpacity = shouldSmoothenOpacity.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SketchMSGradient]
   }

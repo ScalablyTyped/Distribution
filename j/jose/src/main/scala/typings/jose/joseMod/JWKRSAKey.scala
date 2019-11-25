@@ -39,20 +39,20 @@ object JWKRSAKey {
     x5t: String = null,
     `x5t#S256`: String = null
   ): JWKRSAKey = {
-    val __obj = js.Dynamic.literal(e = e, kty = kty, n = n)
-    if (alg != null) __obj.updateDynamic("alg")(alg)
-    if (d != null) __obj.updateDynamic("d")(d)
-    if (dp != null) __obj.updateDynamic("dp")(dp)
-    if (dq != null) __obj.updateDynamic("dq")(dq)
-    if (key_ops != null) __obj.updateDynamic("key_ops")(key_ops)
-    if (kid != null) __obj.updateDynamic("kid")(kid)
-    if (p != null) __obj.updateDynamic("p")(p)
-    if (q != null) __obj.updateDynamic("q")(q)
-    if (qi != null) __obj.updateDynamic("qi")(qi)
-    if (use != null) __obj.updateDynamic("use")(use)
-    if (x5c != null) __obj.updateDynamic("x5c")(x5c)
-    if (x5t != null) __obj.updateDynamic("x5t")(x5t)
-    if (`x5t#S256` != null) __obj.updateDynamic("x5t#S256")(`x5t#S256`)
+    val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], kty = kty.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any])
+    if (alg != null) __obj.updateDynamic("alg")(alg.asInstanceOf[js.Any])
+    if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
+    if (dp != null) __obj.updateDynamic("dp")(dp.asInstanceOf[js.Any])
+    if (dq != null) __obj.updateDynamic("dq")(dq.asInstanceOf[js.Any])
+    if (key_ops != null) __obj.updateDynamic("key_ops")(key_ops.asInstanceOf[js.Any])
+    if (kid != null) __obj.updateDynamic("kid")(kid.asInstanceOf[js.Any])
+    if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
+    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
+    if (qi != null) __obj.updateDynamic("qi")(qi.asInstanceOf[js.Any])
+    if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
+    if (x5c != null) __obj.updateDynamic("x5c")(x5c.asInstanceOf[js.Any])
+    if (x5t != null) __obj.updateDynamic("x5t")(x5t.asInstanceOf[js.Any])
+    if (`x5t#S256` != null) __obj.updateDynamic("x5t#S256")(`x5t#S256`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JWKRSAKey]
   }
 }

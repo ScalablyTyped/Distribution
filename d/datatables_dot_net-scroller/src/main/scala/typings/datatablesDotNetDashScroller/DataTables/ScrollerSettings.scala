@@ -50,10 +50,10 @@ object ScrollerSettings {
     val __obj = js.Dynamic.literal()
     if (boundaryScale != null) __obj.updateDynamic("boundaryScale")(boundaryScale.asInstanceOf[js.Any])
     if (displayBuffer != null) __obj.updateDynamic("displayBuffer")(displayBuffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadingIndicator)) __obj.updateDynamic("loadingIndicator")(loadingIndicator)
+    if (!js.isUndefined(loadingIndicator)) __obj.updateDynamic("loadingIndicator")(loadingIndicator.asInstanceOf[js.Any])
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
     if (serverWait != null) __obj.updateDynamic("serverWait")(serverWait.asInstanceOf[js.Any])
-    if (!js.isUndefined(trace)) __obj.updateDynamic("trace")(trace)
+    if (!js.isUndefined(trace)) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollerSettings]
   }
 }

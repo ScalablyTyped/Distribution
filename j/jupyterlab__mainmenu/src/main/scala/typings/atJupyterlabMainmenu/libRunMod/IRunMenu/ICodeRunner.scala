@@ -42,7 +42,7 @@ object ICodeRunner {
     run: /* widget */ T => js.Promise[Unit] = null,
     runAll: /* widget */ T => js.Promise[Unit] = null
   ): ICodeRunner[T] = {
-    val __obj = js.Dynamic.literal(noun = noun, tracker = tracker)
+    val __obj = js.Dynamic.literal(noun = noun.asInstanceOf[js.Any], tracker = tracker.asInstanceOf[js.Any])
     if (isEnabled != null) __obj.updateDynamic("isEnabled")(js.Any.fromFunction1(isEnabled))
     if (restartAndRunAll != null) __obj.updateDynamic("restartAndRunAll")(js.Any.fromFunction1(restartAndRunAll))
     if (run != null) __obj.updateDynamic("run")(js.Any.fromFunction1(run))

@@ -18,7 +18,7 @@ trait IEventColor extends js.Object {
 object IEventColor {
   @scala.inline
   def apply(primary: String, secondary: String): IEventColor = {
-    val __obj = js.Dynamic.literal(primary = primary, secondary = secondary)
+    val __obj = js.Dynamic.literal(primary = primary.asInstanceOf[js.Any], secondary = secondary.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IEventColor]
   }

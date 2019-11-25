@@ -15,8 +15,8 @@ trait ColumnHeaderProps extends js.Object {
 object ColumnHeaderProps {
   @scala.inline
   def apply(height: Double, width: Double, columnKey: String = null): ColumnHeaderProps = {
-    val __obj = js.Dynamic.literal(height = height, width = width)
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnHeaderProps]
   }
 }

@@ -15,7 +15,7 @@ object InternalResizingEventUIParam {
   @scala.inline
   def apply(owner: js.Any = null): InternalResizingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[InternalResizingEventUIParam]
   }
 }

@@ -28,9 +28,9 @@ object DocumentSymbol {
     children: js.Array[DocumentSymbol] = null,
     containerName: String = null
   ): DocumentSymbol = {
-    val __obj = js.Dynamic.literal(detail = detail, kind = kind, name = name, range = range, selectionRange = selectionRange, tags = tags)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (containerName != null) __obj.updateDynamic("containerName")(containerName)
+    val __obj = js.Dynamic.literal(detail = detail.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], selectionRange = selectionRange.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (containerName != null) __obj.updateDynamic("containerName")(containerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentSymbol]
   }
 }

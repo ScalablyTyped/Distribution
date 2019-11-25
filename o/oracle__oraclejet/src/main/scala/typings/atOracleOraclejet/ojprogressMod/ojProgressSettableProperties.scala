@@ -19,7 +19,7 @@ trait ojProgressSettableProperties extends baseComponentSettableProperties {
 object ojProgressSettableProperties {
   @scala.inline
   def apply(max: Double, translations: Anon_AriaIndeterminateProgressText, `type`: bar | circle, value: Double): ojProgressSettableProperties = {
-    val __obj = js.Dynamic.literal(max = max, translations = translations, value = value)
+    val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojProgressSettableProperties]
   }

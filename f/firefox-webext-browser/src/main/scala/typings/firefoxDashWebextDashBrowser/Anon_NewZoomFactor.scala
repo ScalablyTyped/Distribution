@@ -15,7 +15,7 @@ trait Anon_NewZoomFactor extends js.Object {
 object Anon_NewZoomFactor {
   @scala.inline
   def apply(newZoomFactor: Double, oldZoomFactor: Double, tabId: Double, zoomSettings: ZoomSettings): Anon_NewZoomFactor = {
-    val __obj = js.Dynamic.literal(newZoomFactor = newZoomFactor, oldZoomFactor = oldZoomFactor, tabId = tabId, zoomSettings = zoomSettings)
+    val __obj = js.Dynamic.literal(newZoomFactor = newZoomFactor.asInstanceOf[js.Any], oldZoomFactor = oldZoomFactor.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], zoomSettings = zoomSettings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NewZoomFactor]
   }

@@ -25,7 +25,7 @@ object Anon_Block {
     lineno: Double,
     nodes: js.Array[Node]
   ): Anon_Block = {
-    val __obj = js.Dynamic.literal(__type = __type, block = block, column = column, filename = filename, lineno = lineno, nodes = nodes)
+    val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], block = block.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Block]
   }

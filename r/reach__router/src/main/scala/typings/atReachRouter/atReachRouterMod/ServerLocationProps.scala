@@ -11,7 +11,7 @@ trait ServerLocationProps extends js.Object {
 object ServerLocationProps {
   @scala.inline
   def apply(url: String): ServerLocationProps = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ServerLocationProps]
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GraticuleTransform extends Transforms {
+trait GraticuleTransform extends _Transforms {
   var extent: js.UndefOr[(Vector2[(Vector2[Double | SignalRef]) | SignalRef]) | SignalRef] = js.undefined
   var extentMajor: js.UndefOr[(Vector2[(Vector2[Double | SignalRef]) | SignalRef]) | SignalRef] = js.undefined
   var extentMinor: js.UndefOr[(Vector2[(Vector2[Double | SignalRef]) | SignalRef]) | SignalRef] = js.undefined
@@ -33,12 +33,12 @@ object GraticuleTransform {
     stepMinor: (Vector2[Double | SignalRef]) | SignalRef = null
   ): GraticuleTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     if (extentMajor != null) __obj.updateDynamic("extentMajor")(extentMajor.asInstanceOf[js.Any])
     if (extentMinor != null) __obj.updateDynamic("extentMinor")(extentMinor.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (signal != null) __obj.updateDynamic("signal")(signal)
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (stepMajor != null) __obj.updateDynamic("stepMajor")(stepMajor.asInstanceOf[js.Any])
     if (stepMinor != null) __obj.updateDynamic("stepMinor")(stepMinor.asInstanceOf[js.Any])

@@ -51,13 +51,13 @@ object IgPivotGridDataSourceOptions {
     xmlaOptions: IgPivotGridDataSourceOptionsXmlaOptions = null
   ): IgPivotGridDataSourceOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (flatDataOptions != null) __obj.updateDynamic("flatDataOptions")(flatDataOptions)
-    if (measures != null) __obj.updateDynamic("measures")(measures)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
-    if (xmlaOptions != null) __obj.updateDynamic("xmlaOptions")(xmlaOptions)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (flatDataOptions != null) __obj.updateDynamic("flatDataOptions")(flatDataOptions.asInstanceOf[js.Any])
+    if (measures != null) __obj.updateDynamic("measures")(measures.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (xmlaOptions != null) __obj.updateDynamic("xmlaOptions")(xmlaOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPivotGridDataSourceOptions]
   }
 }

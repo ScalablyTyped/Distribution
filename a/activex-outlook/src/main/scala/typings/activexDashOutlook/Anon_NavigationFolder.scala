@@ -12,7 +12,7 @@ trait Anon_NavigationFolder extends js.Object {
 object Anon_NavigationFolder {
   @scala.inline
   def apply(NavigationFolder: NavigationFolder): Anon_NavigationFolder = {
-    val __obj = js.Dynamic.literal(NavigationFolder = NavigationFolder)
+    val __obj = js.Dynamic.literal(NavigationFolder = NavigationFolder.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NavigationFolder]
   }

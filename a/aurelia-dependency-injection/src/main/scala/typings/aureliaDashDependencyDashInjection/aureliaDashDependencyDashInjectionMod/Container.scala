@@ -29,7 +29,7 @@ class Container () extends js.Object {
   def invoke[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](
     fn: DependencyCtorOrFunctor[TBase, TImpl, TArgs],
     dynamicDependencies: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: TArgs[number] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any
     ]
   ): ImplOrAny[TImpl] = js.native
   def makeGlobal(): Container = js.native

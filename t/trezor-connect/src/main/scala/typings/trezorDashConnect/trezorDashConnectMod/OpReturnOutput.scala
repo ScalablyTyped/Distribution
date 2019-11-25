@@ -13,8 +13,8 @@ trait OpReturnOutput extends Output {
 object OpReturnOutput {
   @scala.inline
   def apply(dataHex: String, `type`: opreturn): OpReturnOutput = {
-    val __obj = js.Dynamic.literal(dataHex = dataHex)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(dataHex = dataHex.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpReturnOutput]
   }
 }

@@ -35,10 +35,10 @@ object LoginMethodOptions {
     validateResult: js.Function = null
   ): LoginMethodOptions = {
     val __obj = js.Dynamic.literal()
-    if (methodArguments != null) __obj.updateDynamic("methodArguments")(methodArguments)
-    if (methodName != null) __obj.updateDynamic("methodName")(methodName)
+    if (methodArguments != null) __obj.updateDynamic("methodArguments")(methodArguments.asInstanceOf[js.Any])
+    if (methodName != null) __obj.updateDynamic("methodName")(methodName.asInstanceOf[js.Any])
     if (userCallback != null) __obj.updateDynamic("userCallback")(js.Any.fromFunction1(userCallback))
-    if (validateResult != null) __obj.updateDynamic("validateResult")(validateResult)
+    if (validateResult != null) __obj.updateDynamic("validateResult")(validateResult.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginMethodOptions]
   }
 }

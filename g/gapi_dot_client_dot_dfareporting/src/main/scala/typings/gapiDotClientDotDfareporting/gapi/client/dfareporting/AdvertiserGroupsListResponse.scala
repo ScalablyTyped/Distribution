@@ -21,9 +21,9 @@ object AdvertiserGroupsListResponse {
     nextPageToken: String = null
   ): AdvertiserGroupsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (advertiserGroups != null) __obj.updateDynamic("advertiserGroups")(advertiserGroups)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (advertiserGroups != null) __obj.updateDynamic("advertiserGroups")(advertiserGroups.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdvertiserGroupsListResponse]
   }
 }

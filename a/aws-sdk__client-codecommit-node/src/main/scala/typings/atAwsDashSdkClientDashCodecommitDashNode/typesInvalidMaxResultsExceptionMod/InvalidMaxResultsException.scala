@@ -6,6 +6,7 @@ import typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetCommentsForPullR
 import typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetDifferencesExceptionsUnionMod.GetDifferencesExceptionsUnion
 import typings.atAwsDashSdkClientDashCodecommitDashNode.typesListPullRequestsExceptionsUnionMod.ListPullRequestsExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
+import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,13 +25,14 @@ trait InvalidMaxResultsException
 object InvalidMaxResultsException {
   @scala.inline
   def apply(
+    $metadata: ResponseMetadata,
     details: _InvalidMaxResultsExceptionDetails,
     message: String,
     name: typings.atAwsDashSdkClientDashCodecommitDashNode.atAwsDashSdkClientDashCodecommitDashNodeStrings.InvalidMaxResultsException,
     stack: String = null
   ): InvalidMaxResultsException = {
-    val __obj = js.Dynamic.literal(details = details, message = message, name = name)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvalidMaxResultsException]
   }
 }

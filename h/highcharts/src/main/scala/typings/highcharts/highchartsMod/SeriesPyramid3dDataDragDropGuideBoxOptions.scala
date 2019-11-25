@@ -15,7 +15,7 @@ object SeriesPyramid3dDataDragDropGuideBoxOptions {
   @scala.inline
   def apply(default: SeriesPyramid3dDataDragDropGuideBoxDefaultOptions = null): SeriesPyramid3dDataDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesPyramid3dDataDragDropGuideBoxOptions]
   }
 }

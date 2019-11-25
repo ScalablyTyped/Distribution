@@ -39,11 +39,11 @@ object FittingDef {
     `type`: FittingType = null
   ): FittingDef = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (output != null) __obj.updateDynamic("output")(output)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FittingDef]
   }

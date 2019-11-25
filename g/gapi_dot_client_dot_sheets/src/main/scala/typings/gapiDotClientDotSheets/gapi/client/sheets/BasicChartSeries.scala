@@ -52,11 +52,11 @@ object BasicChartSeries {
     `type`: String = null
   ): BasicChartSeries = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
-    if (series != null) __obj.updateDynamic("series")(series)
-    if (targetAxis != null) __obj.updateDynamic("targetAxis")(targetAxis)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
+    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
+    if (targetAxis != null) __obj.updateDynamic("targetAxis")(targetAxis.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasicChartSeries]
   }
 }

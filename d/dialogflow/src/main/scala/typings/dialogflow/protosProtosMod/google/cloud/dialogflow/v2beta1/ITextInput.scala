@@ -16,8 +16,8 @@ object ITextInput {
   @scala.inline
   def apply(languageCode: String = null, text: String = null): ITextInput = {
     val __obj = js.Dynamic.literal()
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITextInput]
   }
 }

@@ -12,7 +12,7 @@ object SpinnerStyle {
   @scala.inline
   def apply(strokeColor: js.Array[String] = null): SpinnerStyle = {
     val __obj = js.Dynamic.literal()
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpinnerStyle]
   }
 }

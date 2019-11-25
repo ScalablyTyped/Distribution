@@ -42,11 +42,11 @@ object StartSoterAuthenticationOptions {
     success: /* result */ StartSoterAuthenticationRes => Unit = null
   ): StartSoterAuthenticationOptions = {
     val __obj = js.Dynamic.literal()
-    if (authContent != null) __obj.updateDynamic("authContent")(authContent)
-    if (challenge != null) __obj.updateDynamic("challenge")(challenge)
+    if (authContent != null) __obj.updateDynamic("authContent")(authContent.asInstanceOf[js.Any])
+    if (challenge != null) __obj.updateDynamic("challenge")(challenge.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (requestAuthModes != null) __obj.updateDynamic("requestAuthModes")(requestAuthModes)
+    if (requestAuthModes != null) __obj.updateDynamic("requestAuthModes")(requestAuthModes.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[StartSoterAuthenticationOptions]
   }

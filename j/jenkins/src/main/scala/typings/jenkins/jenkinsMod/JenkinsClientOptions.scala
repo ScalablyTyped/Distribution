@@ -20,9 +20,9 @@ object JenkinsClientOptions {
     promisify: Boolean | (js.Function1[/* repeated */ js.Any, _]) = null
   ): JenkinsClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
-    if (!js.isUndefined(crumbIssuer)) __obj.updateDynamic("crumbIssuer")(crumbIssuer)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(crumbIssuer)) __obj.updateDynamic("crumbIssuer")(crumbIssuer.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (promisify != null) __obj.updateDynamic("promisify")(promisify.asInstanceOf[js.Any])
     __obj.asInstanceOf[JenkinsClientOptions]
   }

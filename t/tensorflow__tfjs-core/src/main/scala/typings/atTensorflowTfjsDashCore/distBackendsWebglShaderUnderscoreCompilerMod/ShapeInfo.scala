@@ -21,7 +21,7 @@ object ShapeInfo {
     logicalShape: js.Array[Double],
     texShape: js.Tuple2[Double, Double]
   ): ShapeInfo = {
-    val __obj = js.Dynamic.literal(flatOffset = flatOffset, isPacked = isPacked, isUniform = isUniform, logicalShape = logicalShape, texShape = texShape)
+    val __obj = js.Dynamic.literal(flatOffset = flatOffset.asInstanceOf[js.Any], isPacked = isPacked.asInstanceOf[js.Any], isUniform = isUniform.asInstanceOf[js.Any], logicalShape = logicalShape.asInstanceOf[js.Any], texShape = texShape.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ShapeInfo]
   }

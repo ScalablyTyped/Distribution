@@ -22,9 +22,9 @@ object GetCorpusParams {
     headers: js.Object = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): GetCorpusParams = {
-    val __obj = js.Dynamic.literal(corpus_name = corpus_name, customization_id = customization_id)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    val __obj = js.Dynamic.literal(corpus_name = corpus_name.asInstanceOf[js.Any], customization_id = customization_id.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCorpusParams]
   }
 }

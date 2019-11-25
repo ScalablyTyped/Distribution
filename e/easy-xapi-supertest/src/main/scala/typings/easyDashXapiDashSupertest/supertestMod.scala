@@ -14,12 +14,6 @@ import scala.scalajs.js.annotation._
 @JSImport("supertest", JSImport.Namespace)
 @js.native
 object supertestMod extends js.Object {
-  /* Rewritten from type alias, can be one of: 
-    - typings.easyDashXapiDashSupertest.Fn_ErrRes
-    - typings.easyDashXapiDashSupertest.Fn_ResResponse
-  */
-  trait CallbackHandler extends js.Object
-  
   @js.native
   trait Test extends Request[Test] {
     var url: String = js.native
@@ -44,6 +38,7 @@ object supertestMod extends js.Object {
   def apply(app: js.Any): SuperTest = js.native
   def agent(): SuperTest = js.native
   def agent(app: js.Any): SuperTest = js.native
+  type CallbackHandler = (js.Function2[/* err */ js.Any, /* res */ Response, Unit]) | (js.Function1[/* res */ Response, Unit])
   type Response = typings.easyDashXapiDashSupertest.superagentMod.Response
   type SuperTest = SuperAgent[Test]
 }

@@ -23,9 +23,9 @@ object Info {
   @scala.inline
   def apply(csp: String = null, name: String = null, securityOrigin: String = null): Info = {
     val __obj = js.Dynamic.literal()
-    if (csp != null) __obj.updateDynamic("csp")(csp)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (securityOrigin != null) __obj.updateDynamic("securityOrigin")(securityOrigin)
+    if (csp != null) __obj.updateDynamic("csp")(csp.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (securityOrigin != null) __obj.updateDynamic("securityOrigin")(securityOrigin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Info]
   }
 }

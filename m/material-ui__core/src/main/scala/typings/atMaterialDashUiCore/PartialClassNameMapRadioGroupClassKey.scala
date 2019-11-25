@@ -14,8 +14,8 @@ object PartialClassNameMapRadioGroupClassKey {
   @scala.inline
   def apply(root: String = null, row: String = null): PartialClassNameMapRadioGroupClassKey = {
     val __obj = js.Dynamic.literal()
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (row != null) __obj.updateDynamic("row")(row)
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapRadioGroupClassKey]
   }
 }

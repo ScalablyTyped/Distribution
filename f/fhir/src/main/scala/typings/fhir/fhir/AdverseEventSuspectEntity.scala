@@ -65,21 +65,21 @@ object AdverseEventSuspectEntity {
     id: String = null,
     modifierExtension: js.Array[Extension] = null
   ): AdverseEventSuspectEntity = {
-    val __obj = js.Dynamic.literal(instance = instance)
-    if (_causality != null) __obj.updateDynamic("_causality")(_causality)
-    if (_causalityProductRelatedness != null) __obj.updateDynamic("_causalityProductRelatedness")(_causalityProductRelatedness)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (causality != null) __obj.updateDynamic("causality")(causality)
-    if (causalityAssessment != null) __obj.updateDynamic("causalityAssessment")(causalityAssessment)
-    if (causalityAuthor != null) __obj.updateDynamic("causalityAuthor")(causalityAuthor)
-    if (causalityMethod != null) __obj.updateDynamic("causalityMethod")(causalityMethod)
-    if (causalityProductRelatedness != null) __obj.updateDynamic("causalityProductRelatedness")(causalityProductRelatedness)
-    if (causalityResult != null) __obj.updateDynamic("causalityResult")(causalityResult)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any])
+    if (_causality != null) __obj.updateDynamic("_causality")(_causality.asInstanceOf[js.Any])
+    if (_causalityProductRelatedness != null) __obj.updateDynamic("_causalityProductRelatedness")(_causalityProductRelatedness.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (causality != null) __obj.updateDynamic("causality")(causality.asInstanceOf[js.Any])
+    if (causalityAssessment != null) __obj.updateDynamic("causalityAssessment")(causalityAssessment.asInstanceOf[js.Any])
+    if (causalityAuthor != null) __obj.updateDynamic("causalityAuthor")(causalityAuthor.asInstanceOf[js.Any])
+    if (causalityMethod != null) __obj.updateDynamic("causalityMethod")(causalityMethod.asInstanceOf[js.Any])
+    if (causalityProductRelatedness != null) __obj.updateDynamic("causalityProductRelatedness")(causalityProductRelatedness.asInstanceOf[js.Any])
+    if (causalityResult != null) __obj.updateDynamic("causalityResult")(causalityResult.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdverseEventSuspectEntity]
   }
 }

@@ -13,7 +13,7 @@ object Anon_EEvent {
   @scala.inline
   def apply(e: Event = null): Anon_EEvent = {
     val __obj = js.Dynamic.literal()
-    if (e != null) __obj.updateDynamic("e")(e)
+    if (e != null) __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EEvent]
   }
 }

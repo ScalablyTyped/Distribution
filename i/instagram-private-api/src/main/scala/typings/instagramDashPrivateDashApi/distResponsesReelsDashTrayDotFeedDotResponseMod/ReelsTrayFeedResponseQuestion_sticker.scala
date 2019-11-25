@@ -27,7 +27,7 @@ object ReelsTrayFeedResponseQuestion_sticker {
     text_color: String,
     viewer_can_interact: Boolean
   ): ReelsTrayFeedResponseQuestion_sticker = {
-    val __obj = js.Dynamic.literal(background_color = background_color, media_id = media_id, profile_pic_url = profile_pic_url, question = question, question_id = question_id, question_type = question_type, text_color = text_color, viewer_can_interact = viewer_can_interact)
+    val __obj = js.Dynamic.literal(background_color = background_color.asInstanceOf[js.Any], media_id = media_id.asInstanceOf[js.Any], profile_pic_url = profile_pic_url.asInstanceOf[js.Any], question = question.asInstanceOf[js.Any], question_id = question_id.asInstanceOf[js.Any], question_type = question_type.asInstanceOf[js.Any], text_color = text_color.asInstanceOf[js.Any], viewer_can_interact = viewer_can_interact.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReelsTrayFeedResponseQuestion_sticker]
   }

@@ -19,7 +19,7 @@ object Anon_Component {
     props: js.Any = null
   ): Anon_Component = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-    if (props != null) __obj.updateDynamic("props")(props)
+    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Component]
   }
 }

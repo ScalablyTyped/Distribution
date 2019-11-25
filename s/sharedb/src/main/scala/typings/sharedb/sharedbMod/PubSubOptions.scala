@@ -12,7 +12,7 @@ object PubSubOptions {
   @scala.inline
   def apply(prefix: String = null): PubSubOptions = {
     val __obj = js.Dynamic.literal()
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[PubSubOptions]
   }
 }

@@ -1328,7 +1328,7 @@ object antdStrings {
   sealed trait popup extends js.Object
   
   @js.native
-  sealed trait post extends js.Object
+  sealed trait post_ extends js.Object
   
   @js.native
   sealed trait pre extends js.Object
@@ -1383,7 +1383,7 @@ object antdStrings {
   sealed trait `push-button` extends js.Object
   
   @js.native
-  sealed trait put extends js.Object
+  sealed trait put_ extends js.Object
   
   @js.native
   sealed trait radio
@@ -2776,7 +2776,7 @@ object antdStrings {
   @scala.inline
   def popup: popup = "popup".asInstanceOf[popup]
   @scala.inline
-  def post: post = "post".asInstanceOf[post]
+  def post_ : post_ = "post".asInstanceOf[post_]
   @scala.inline
   def pre: pre = "pre".asInstanceOf[pre]
   @scala.inline
@@ -2810,7 +2810,7 @@ object antdStrings {
   @scala.inline
   def `push-button`: `push-button` = "push-button".asInstanceOf[`push-button`]
   @scala.inline
-  def put: put = "put".asInstanceOf[put]
+  def put_ : put_ = "put".asInstanceOf[put_]
   @scala.inline
   def radio: radio = "radio".asInstanceOf[radio]
   @scala.inline

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait ButtonType extends js.Object
 
+object ButtonType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def long: typings.googlepay.googlepayStrings.long = this.cast("long")
+  @scala.inline
+  def short: typings.googlepay.googlepayStrings.short = this.cast("short")
+}
+

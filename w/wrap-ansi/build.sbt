@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wrap-ansi"
-version := "v3.0.0-dt-20190322Z-9f390b"
+version := "v3.0.0-dt-20190322Z-0373bd"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

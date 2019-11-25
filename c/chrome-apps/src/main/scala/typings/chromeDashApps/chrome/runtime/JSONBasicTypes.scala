@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait JSONBasicTypes extends js.Object
 
+object JSONBasicTypes {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def integer: typings.chromeDashApps.chromeDashAppsStrings.integer = this.cast("integer")
+  @scala.inline
+  def number: typings.chromeDashApps.chromeDashAppsStrings.number = this.cast("number")
+  @scala.inline
+  def string: typings.chromeDashApps.chromeDashAppsStrings.string = this.cast("string")
+}
+

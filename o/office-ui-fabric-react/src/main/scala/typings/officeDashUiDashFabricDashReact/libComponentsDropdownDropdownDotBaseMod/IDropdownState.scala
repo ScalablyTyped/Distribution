@@ -21,8 +21,8 @@ object IDropdownState {
     selectedIndices: js.Array[Double],
     calloutRenderEdge: RectangleEdge = null
   ): IDropdownState = {
-    val __obj = js.Dynamic.literal(hasFocus = hasFocus, isOpen = isOpen, selectedIndices = selectedIndices)
-    if (calloutRenderEdge != null) __obj.updateDynamic("calloutRenderEdge")(calloutRenderEdge)
+    val __obj = js.Dynamic.literal(hasFocus = hasFocus.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], selectedIndices = selectedIndices.asInstanceOf[js.Any])
+    if (calloutRenderEdge != null) __obj.updateDynamic("calloutRenderEdge")(calloutRenderEdge.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDropdownState]
   }
 }

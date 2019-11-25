@@ -47,16 +47,16 @@ object TooltipsConfProviderOptions {
     tooltipTemplateUrlCache: js.UndefOr[Boolean] = js.undefined
   ): TooltipsConfProviderOptions = {
     val __obj = js.Dynamic.literal()
-    if (`class` != null) __obj.updateDynamic("class")(`class`)
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton)
-    if (hideTrigger != null) __obj.updateDynamic("hideTrigger")(hideTrigger)
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
-    if (showTrigger != null) __obj.updateDynamic("showTrigger")(showTrigger)
+    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
+    if (hideTrigger != null) __obj.updateDynamic("hideTrigger")(hideTrigger.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (showTrigger != null) __obj.updateDynamic("showTrigger")(showTrigger.asInstanceOf[js.Any])
     if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(smart)) __obj.updateDynamic("smart")(smart)
+    if (!js.isUndefined(smart)) __obj.updateDynamic("smart")(smart.asInstanceOf[js.Any])
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltipTemplateUrlCache)) __obj.updateDynamic("tooltipTemplateUrlCache")(tooltipTemplateUrlCache)
+    if (!js.isUndefined(tooltipTemplateUrlCache)) __obj.updateDynamic("tooltipTemplateUrlCache")(tooltipTemplateUrlCache.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipsConfProviderOptions]
   }
 }

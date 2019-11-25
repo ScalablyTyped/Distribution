@@ -102,21 +102,21 @@ object Options {
     styles: js.Array[String] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fallback)) __obj.updateDynamic("fallback")(fallback)
-    if (fallbackLinkAfter != null) __obj.updateDynamic("fallbackLinkAfter")(fallbackLinkAfter)
-    if (fallbackLinkHoverStyles != null) __obj.updateDynamic("fallbackLinkHoverStyles")(fallbackLinkHoverStyles)
-    if (fallbackLinkStyles != null) __obj.updateDynamic("fallbackLinkStyles")(fallbackLinkStyles)
-    if (fallbackLinkText != null) __obj.updateDynamic("fallbackLinkText")(fallbackLinkText)
-    if (fallbackParams != null) __obj.updateDynamic("fallbackParams")(fallbackParams)
-    if (fallbackStyles != null) __obj.updateDynamic("fallbackStyles")(fallbackStyles)
-    if (fallbackText != null) __obj.updateDynamic("fallbackText")(fallbackText)
+    if (!js.isUndefined(fallback)) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
+    if (fallbackLinkAfter != null) __obj.updateDynamic("fallbackLinkAfter")(fallbackLinkAfter.asInstanceOf[js.Any])
+    if (fallbackLinkHoverStyles != null) __obj.updateDynamic("fallbackLinkHoverStyles")(fallbackLinkHoverStyles.asInstanceOf[js.Any])
+    if (fallbackLinkStyles != null) __obj.updateDynamic("fallbackLinkStyles")(fallbackLinkStyles.asInstanceOf[js.Any])
+    if (fallbackLinkText != null) __obj.updateDynamic("fallbackLinkText")(fallbackLinkText.asInstanceOf[js.Any])
+    if (fallbackParams != null) __obj.updateDynamic("fallbackParams")(fallbackParams.asInstanceOf[js.Any])
+    if (fallbackStyles != null) __obj.updateDynamic("fallbackStyles")(fallbackStyles.asInstanceOf[js.Any])
+    if (fallbackText != null) __obj.updateDynamic("fallbackText")(fallbackText.asInstanceOf[js.Any])
     if (fallbackWindowHeight != null) __obj.updateDynamic("fallbackWindowHeight")(fallbackWindowHeight.asInstanceOf[js.Any])
     if (fallbackWindowWidth != null) __obj.updateDynamic("fallbackWindowWidth")(fallbackWindowWidth.asInstanceOf[js.Any])
-    if (loading != null) __obj.updateDynamic("loading")(loading)
+    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (onConnect != null) __obj.updateDynamic("onConnect")(js.Any.fromFunction1(onConnect))
-    if (!js.isUndefined(showLoadingIndicator)) __obj.updateDynamic("showLoadingIndicator")(showLoadingIndicator)
-    if (spinner != null) __obj.updateDynamic("spinner")(spinner)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (!js.isUndefined(showLoadingIndicator)) __obj.updateDynamic("showLoadingIndicator")(showLoadingIndicator.asInstanceOf[js.Any])
+    if (spinner != null) __obj.updateDynamic("spinner")(spinner.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

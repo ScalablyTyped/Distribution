@@ -22,10 +22,10 @@ object InlineQueryResultCachedSticker {
     input_message_content: InputMessageContent = null,
     reply_markup: InlineKeyboardMarkup = null
   ): InlineQueryResultCachedSticker = {
-    val __obj = js.Dynamic.literal(id = id, sticker_file_id = sticker_file_id)
-    __obj.updateDynamic("type")(`type`)
-    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content)
-    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], sticker_file_id = sticker_file_id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
+    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineQueryResultCachedSticker]
   }
 }

@@ -16,8 +16,8 @@ trait Anon_Badge extends js.Object {
 object Anon_Badge {
   @scala.inline
   def apply(badge: js.Any, device: Anon_Desktop, launcher: Anon_Keywords, priority: Double, `type`: String): Anon_Badge = {
-    val __obj = js.Dynamic.literal(badge = badge, device = device, launcher = launcher, priority = priority)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(badge = badge.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], launcher = launcher.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Badge]
   }
 }

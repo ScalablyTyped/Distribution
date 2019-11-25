@@ -25,7 +25,7 @@ object Anon_Loc {
     request: String,
     moduleId: String | Double = null
   ): Anon_Loc = {
-    val __obj = js.Dynamic.literal(loc = loc, module = module, moduleIdentifier = moduleIdentifier, moduleName = moduleName, reasons = reasons, request = request)
+    val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any], moduleIdentifier = moduleIdentifier.asInstanceOf[js.Any], moduleName = moduleName.asInstanceOf[js.Any], reasons = reasons.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
     if (moduleId != null) __obj.updateDynamic("moduleId")(moduleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Loc]
   }

@@ -28,11 +28,11 @@ object AnalysisResultsMetadata {
     title: String = null
   ): AnalysisResultsMetadata = {
     val __obj = js.Dynamic.literal()
-    if (authors != null) __obj.updateDynamic("authors")(authors)
-    if (feeds != null) __obj.updateDynamic("feeds")(feeds)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (publication_date != null) __obj.updateDynamic("publication_date")(publication_date)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (authors != null) __obj.updateDynamic("authors")(authors.asInstanceOf[js.Any])
+    if (feeds != null) __obj.updateDynamic("feeds")(feeds.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (publication_date != null) __obj.updateDynamic("publication_date")(publication_date.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalysisResultsMetadata]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sleep"
-version := "0.0-unknown-dt-20190322Z-136037"
+version := "0.0-unknown-dt-20190322Z-7632d2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

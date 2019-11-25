@@ -16,7 +16,7 @@ object Anon_Maxwidth {
   def apply(max_width: Int | Double = null, newline_char: String = null): Anon_Maxwidth = {
     val __obj = js.Dynamic.literal()
     if (max_width != null) __obj.updateDynamic("max_width")(max_width.asInstanceOf[js.Any])
-    if (newline_char != null) __obj.updateDynamic("newline_char")(newline_char)
+    if (newline_char != null) __obj.updateDynamic("newline_char")(newline_char.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Maxwidth]
   }
 }

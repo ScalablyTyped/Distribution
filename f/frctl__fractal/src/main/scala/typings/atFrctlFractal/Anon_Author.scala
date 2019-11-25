@@ -14,9 +14,9 @@ object Anon_Author {
   @scala.inline
   def apply(author: String = null, title: String = null, version: String = null): Anon_Author = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Author]
   }
 }

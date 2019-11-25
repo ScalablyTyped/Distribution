@@ -15,8 +15,8 @@ import scala.scalajs.js.annotation._
 object _BaseBnetOptions {
   @scala.inline
   def apply(clientID: String, clientSecret: String, region: String = null): _BaseBnetOptions = {
-    val __obj = js.Dynamic.literal(clientID = clientID, clientSecret = clientSecret)
-    if (region != null) __obj.updateDynamic("region")(region)
+    val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[_BaseBnetOptions]
   }
 }

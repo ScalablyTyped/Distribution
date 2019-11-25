@@ -23,8 +23,8 @@ object MeshCreateFromPolygonParams {
     propertyIsEnumerable: PropertyKey => Boolean,
     material: MeshMaterial = null
   ): MeshCreateFromPolygonParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (material != null) __obj.updateDynamic("material")(material)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeshCreateFromPolygonParams]
   }
 }

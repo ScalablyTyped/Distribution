@@ -17,7 +17,7 @@ trait DeleteQueueOutput extends OutputTypesUnion {
 object DeleteQueueOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): DeleteQueueOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteQueueOutput]
   }

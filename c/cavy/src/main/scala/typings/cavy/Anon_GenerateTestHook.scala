@@ -12,7 +12,7 @@ trait Anon_GenerateTestHook extends js.Object {
 object Anon_GenerateTestHook {
   @scala.inline
   def apply(generateTestHook: TestHookGenerator): Anon_GenerateTestHook = {
-    val __obj = js.Dynamic.literal(generateTestHook = generateTestHook)
+    val __obj = js.Dynamic.literal(generateTestHook = generateTestHook.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GenerateTestHook]
   }

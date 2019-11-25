@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait WeightGroup extends js.Object
 
+object WeightGroup {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def model: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.model = this.cast("model")
+  @scala.inline
+  def optimizer: typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.optimizer = this.cast("optimizer")
+}
+

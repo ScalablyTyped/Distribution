@@ -24,9 +24,9 @@ object ParsedTemplate {
     e: StringDictionary[js.Function] = null,
     p: StringDictionary[js.Array[_]] = null
   ): ParsedTemplate = {
-    val __obj = js.Dynamic.literal(t = t, v = v)
-    if (e != null) __obj.updateDynamic("e")(e)
-    if (p != null) __obj.updateDynamic("p")(p)
+    val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
+    if (e != null) __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
+    if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedTemplate]
   }
 }

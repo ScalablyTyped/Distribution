@@ -14,7 +14,7 @@ trait Anon_Edit extends js.Object {
 object Anon_Edit {
   @scala.inline
   def apply(edit: String, editDisabled: String, remove: String, removeDisabled: String): Anon_Edit = {
-    val __obj = js.Dynamic.literal(edit = edit, editDisabled = editDisabled, remove = remove, removeDisabled = removeDisabled)
+    val __obj = js.Dynamic.literal(edit = edit.asInstanceOf[js.Any], editDisabled = editDisabled.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], removeDisabled = removeDisabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Edit]
   }

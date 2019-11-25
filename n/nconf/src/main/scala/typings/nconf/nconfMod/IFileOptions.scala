@@ -26,13 +26,13 @@ object IFileOptions {
     `type`: String = null
   ): IFileOptions = {
     val __obj = js.Dynamic.literal()
-    if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (json_spacing != null) __obj.updateDynamic("json_spacing")(json_spacing.asInstanceOf[js.Any])
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search)
-    if (secure != null) __obj.updateDynamic("secure")(secure)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
+    if (secure != null) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileOptions]
   }
 }

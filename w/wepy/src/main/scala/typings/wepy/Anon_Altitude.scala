@@ -12,8 +12,8 @@ trait Anon_Altitude extends js.Object {
 object Anon_Altitude {
   @scala.inline
   def apply(altitude: Boolean, `type`: String): Anon_Altitude = {
-    val __obj = js.Dynamic.literal(altitude = altitude)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(altitude = altitude.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Altitude]
   }
 }

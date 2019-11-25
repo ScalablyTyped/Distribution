@@ -22,11 +22,11 @@ object Anon_Actual {
     stackStartFn: js.Function = null
   ): Anon_Actual = {
     val __obj = js.Dynamic.literal()
-    if (actual != null) __obj.updateDynamic("actual")(actual)
-    if (expected != null) __obj.updateDynamic("expected")(expected)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (operator != null) __obj.updateDynamic("operator")(operator)
-    if (stackStartFn != null) __obj.updateDynamic("stackStartFn")(stackStartFn)
+    if (actual != null) __obj.updateDynamic("actual")(actual.asInstanceOf[js.Any])
+    if (expected != null) __obj.updateDynamic("expected")(expected.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
+    if (stackStartFn != null) __obj.updateDynamic("stackStartFn")(stackStartFn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Actual]
   }
 }

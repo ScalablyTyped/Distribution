@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait PublishPolicy extends js.Object
 
+object PublishPolicy {
+  @scala.inline
+  def always: typings.electronDashPublish.electronDashPublishStrings.always = this.cast("always")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def never: typings.electronDashPublish.electronDashPublishStrings.never = this.cast("never")
+  @scala.inline
+  def onTag: typings.electronDashPublish.electronDashPublishStrings.onTag = this.cast("onTag")
+  @scala.inline
+  def onTagOrDraft: typings.electronDashPublish.electronDashPublishStrings.onTagOrDraft = this.cast("onTagOrDraft")
+}
+

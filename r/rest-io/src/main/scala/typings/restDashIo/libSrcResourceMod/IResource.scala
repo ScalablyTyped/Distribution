@@ -23,11 +23,11 @@ object IResource {
     plural: String = null,
     populate: String = null
   ): IResource = {
-    val __obj = js.Dynamic.literal(model = model, name = name)
-    if (parentRef != null) __obj.updateDynamic("parentRef")(parentRef)
-    if (parentResource != null) __obj.updateDynamic("parentResource")(parentResource)
-    if (plural != null) __obj.updateDynamic("plural")(plural)
-    if (populate != null) __obj.updateDynamic("populate")(populate)
+    val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (parentRef != null) __obj.updateDynamic("parentRef")(parentRef.asInstanceOf[js.Any])
+    if (parentResource != null) __obj.updateDynamic("parentResource")(parentResource.asInstanceOf[js.Any])
+    if (plural != null) __obj.updateDynamic("plural")(plural.asInstanceOf[js.Any])
+    if (populate != null) __obj.updateDynamic("populate")(populate.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResource]
   }
 }

@@ -21,9 +21,9 @@ object CustomTransformers {
     before: js.Array[TransformerFactory[SourceFile] | CustomTransformerFactory] = null
   ): CustomTransformers = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after)
-    if (afterDeclarations != null) __obj.updateDynamic("afterDeclarations")(afterDeclarations)
-    if (before != null) __obj.updateDynamic("before")(before)
+    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
+    if (afterDeclarations != null) __obj.updateDynamic("afterDeclarations")(afterDeclarations.asInstanceOf[js.Any])
+    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomTransformers]
   }
 }

@@ -30,9 +30,9 @@ object _GlobalSecondaryIndexUpdate {
     Update: _UpdateGlobalSecondaryIndexAction = null
   ): _GlobalSecondaryIndexUpdate = {
     val __obj = js.Dynamic.literal()
-    if (Create != null) __obj.updateDynamic("Create")(Create)
-    if (Delete != null) __obj.updateDynamic("Delete")(Delete)
-    if (Update != null) __obj.updateDynamic("Update")(Update)
+    if (Create != null) __obj.updateDynamic("Create")(Create.asInstanceOf[js.Any])
+    if (Delete != null) __obj.updateDynamic("Delete")(Delete.asInstanceOf[js.Any])
+    if (Update != null) __obj.updateDynamic("Update")(Update.asInstanceOf[js.Any])
     __obj.asInstanceOf[_GlobalSecondaryIndexUpdate]
   }
 }

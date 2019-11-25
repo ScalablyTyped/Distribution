@@ -56,17 +56,17 @@ object NodeUncheckEventArgs {
     value: String = null
   ): NodeUncheckEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (currentElement != null) __obj.updateDynamic("currentElement")(currentElement)
-    if (currentNode != null) __obj.updateDynamic("currentNode")(currentNode)
-    if (currentUncheckedNodes != null) __obj.updateDynamic("currentUncheckedNodes")(currentUncheckedNodes)
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(isChecked)) __obj.updateDynamic("isChecked")(isChecked)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (currentElement != null) __obj.updateDynamic("currentElement")(currentElement.asInstanceOf[js.Any])
+    if (currentNode != null) __obj.updateDynamic("currentNode")(currentNode.asInstanceOf[js.Any])
+    if (currentUncheckedNodes != null) __obj.updateDynamic("currentUncheckedNodes")(currentUncheckedNodes.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(isChecked)) __obj.updateDynamic("isChecked")(isChecked.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeUncheckEventArgs]
   }
 }

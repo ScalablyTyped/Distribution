@@ -13,7 +13,7 @@ trait Anon_IPC extends js.Object {
 object Anon_IPC {
   @scala.inline
   def apply(IPC: Instantiable0[IPC]): Anon_IPC = {
-    val __obj = js.Dynamic.literal(IPC = IPC)
+    val __obj = js.Dynamic.literal(IPC = IPC.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IPC]
   }

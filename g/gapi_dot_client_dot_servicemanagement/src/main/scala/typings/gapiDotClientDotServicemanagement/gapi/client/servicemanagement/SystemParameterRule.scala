@@ -26,8 +26,8 @@ object SystemParameterRule {
   @scala.inline
   def apply(parameters: js.Array[SystemParameter] = null, selector: String = null): SystemParameterRule = {
     val __obj = js.Dynamic.literal()
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemParameterRule]
   }
 }

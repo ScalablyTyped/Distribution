@@ -13,7 +13,7 @@ object DrawerMini {
   @scala.inline
   def apply(template: String = null, width: Int | Double = null): DrawerMini = {
     val __obj = js.Dynamic.literal()
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerMini]
   }

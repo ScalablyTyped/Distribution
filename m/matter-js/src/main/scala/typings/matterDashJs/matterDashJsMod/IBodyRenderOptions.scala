@@ -52,12 +52,12 @@ object IBodyRenderOptions {
     visible: js.UndefOr[Boolean] = js.undefined
   ): IBodyRenderOptions = {
     val __obj = js.Dynamic.literal()
-    if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle)
+    if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (sprite != null) __obj.updateDynamic("sprite")(sprite)
-    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (sprite != null) __obj.updateDynamic("sprite")(sprite.asInstanceOf[js.Any])
+    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBodyRenderOptions]
   }
 }

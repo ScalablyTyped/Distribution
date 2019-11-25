@@ -86,16 +86,16 @@ object summaryStatisticsSummaryStatisticsParams {
     valueExpression: String = null,
     view: View = null
   ): summaryStatisticsSummaryStatisticsParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (features != null) __obj.updateDynamic("features")(features)
-    if (field != null) __obj.updateDynamic("field")(field)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
-    if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression)
-    if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere)
-    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField.asInstanceOf[js.Any])
+    if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression.asInstanceOf[js.Any])
+    if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere.asInstanceOf[js.Any])
+    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[summaryStatisticsSummaryStatisticsParams]
   }
 }

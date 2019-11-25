@@ -12,7 +12,7 @@ trait Anon_FullPreliminary extends js.Object {
 object Anon_FullPreliminary {
   @scala.inline
   def apply(full: Double, preliminary: Double): Anon_FullPreliminary = {
-    val __obj = js.Dynamic.literal(full = full, preliminary = preliminary)
+    val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any], preliminary = preliminary.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FullPreliminary]
   }

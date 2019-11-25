@@ -49,11 +49,11 @@ object IOptions {
     username: String = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (!js.isUndefined(handleComms)) __obj.updateDynamic("handleComms")(handleComms)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (serverSettings != null) __obj.updateDynamic("serverSettings")(serverSettings)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleComms)) __obj.updateDynamic("handleComms")(handleComms.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (serverSettings != null) __obj.updateDynamic("serverSettings")(serverSettings.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

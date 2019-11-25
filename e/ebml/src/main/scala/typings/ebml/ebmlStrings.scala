@@ -34,7 +34,7 @@ object ebmlStrings {
   sealed trait i extends TagType
   
   @js.native
-  sealed trait informational extends js.Object
+  sealed trait informational_ extends js.Object
   
   @js.native
   sealed trait m extends TagType
@@ -70,7 +70,7 @@ object ebmlStrings {
   @scala.inline
   def i: i = "i".asInstanceOf[i]
   @scala.inline
-  def informational: informational = "informational".asInstanceOf[informational]
+  def informational_ : informational_ = "informational".asInstanceOf[informational_]
   @scala.inline
   def m: m = "m".asInstanceOf[m]
   @scala.inline

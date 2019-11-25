@@ -33,7 +33,7 @@ object Anon_Duration {
   ): Anon_Duration = {
     val __obj = js.Dynamic.literal()
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     if (onEnd != null) __obj.updateDynamic("onEnd")(js.Any.fromFunction1(onEnd))
     if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction1(onPause))
     if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction1(onPlay))

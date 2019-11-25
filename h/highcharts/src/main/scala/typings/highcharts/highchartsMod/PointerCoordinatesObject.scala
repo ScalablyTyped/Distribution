@@ -12,7 +12,7 @@ trait PointerCoordinatesObject extends js.Object {
 object PointerCoordinatesObject {
   @scala.inline
   def apply(chartX: Double, chartY: Double): PointerCoordinatesObject = {
-    val __obj = js.Dynamic.literal(chartX = chartX, chartY = chartY)
+    val __obj = js.Dynamic.literal(chartX = chartX.asInstanceOf[js.Any], chartY = chartY.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PointerCoordinatesObject]
   }

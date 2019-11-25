@@ -11,7 +11,7 @@ trait ICurrentTimeChangeRequestedEventArgs extends js.Object {
 object ICurrentTimeChangeRequestedEventArgs {
   @scala.inline
   def apply(time: Double): ICurrentTimeChangeRequestedEventArgs = {
-    val __obj = js.Dynamic.literal(time = time)
+    val __obj = js.Dynamic.literal(time = time.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICurrentTimeChangeRequestedEventArgs]
   }

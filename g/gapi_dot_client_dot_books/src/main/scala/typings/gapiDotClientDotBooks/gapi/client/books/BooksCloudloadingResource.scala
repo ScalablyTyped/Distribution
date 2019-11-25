@@ -20,10 +20,10 @@ object BooksCloudloadingResource {
     volumeId: String = null
   ): BooksCloudloadingResource = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (processingState != null) __obj.updateDynamic("processingState")(processingState)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId)
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (processingState != null) __obj.updateDynamic("processingState")(processingState.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BooksCloudloadingResource]
   }
 }

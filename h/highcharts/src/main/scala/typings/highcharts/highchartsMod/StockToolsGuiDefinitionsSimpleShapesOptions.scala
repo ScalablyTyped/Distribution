@@ -24,10 +24,10 @@ object StockToolsGuiDefinitionsSimpleShapesOptions {
     rectangle: StockToolsGuiDefinitionsSimpleShapesRectangleOptions = null
   ): StockToolsGuiDefinitionsSimpleShapesOptions = {
     val __obj = js.Dynamic.literal()
-    if (circle != null) __obj.updateDynamic("circle")(circle)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle)
+    if (circle != null) __obj.updateDynamic("circle")(circle.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockToolsGuiDefinitionsSimpleShapesOptions]
   }
 }

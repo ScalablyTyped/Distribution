@@ -17,9 +17,9 @@ object DebugInfo {
   @scala.inline
   def apply(serverInfo: String = null, serverTraceInfo: String = null, serviceUrl: String = null): DebugInfo = {
     val __obj = js.Dynamic.literal()
-    if (serverInfo != null) __obj.updateDynamic("serverInfo")(serverInfo)
-    if (serverTraceInfo != null) __obj.updateDynamic("serverTraceInfo")(serverTraceInfo)
-    if (serviceUrl != null) __obj.updateDynamic("serviceUrl")(serviceUrl)
+    if (serverInfo != null) __obj.updateDynamic("serverInfo")(serverInfo.asInstanceOf[js.Any])
+    if (serverTraceInfo != null) __obj.updateDynamic("serverTraceInfo")(serverTraceInfo.asInstanceOf[js.Any])
+    if (serviceUrl != null) __obj.updateDynamic("serviceUrl")(serviceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugInfo]
   }
 }

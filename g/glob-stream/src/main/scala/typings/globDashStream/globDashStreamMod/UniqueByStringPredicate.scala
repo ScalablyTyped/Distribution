@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait UniqueByStringPredicate extends js.Object
 
+object UniqueByStringPredicate {
+  @scala.inline
+  def base: typings.globDashStream.globDashStreamStrings.base = this.cast("base")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def cwd: typings.globDashStream.globDashStreamStrings.cwd = this.cast("cwd")
+  @scala.inline
+  def path: typings.globDashStream.globDashStreamStrings.path = this.cast("path")
+}
+

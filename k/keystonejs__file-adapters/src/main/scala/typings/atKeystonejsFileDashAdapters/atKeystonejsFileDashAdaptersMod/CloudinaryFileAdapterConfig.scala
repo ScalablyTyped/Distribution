@@ -14,8 +14,8 @@ trait CloudinaryFileAdapterConfig extends js.Object {
 object CloudinaryFileAdapterConfig {
   @scala.inline
   def apply(apiKey: String, apiSecret: String, cloudName: String, folder: String = null): CloudinaryFileAdapterConfig = {
-    val __obj = js.Dynamic.literal(apiKey = apiKey, apiSecret = apiSecret, cloudName = cloudName)
-    if (folder != null) __obj.updateDynamic("folder")(folder)
+    val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], apiSecret = apiSecret.asInstanceOf[js.Any], cloudName = cloudName.asInstanceOf[js.Any])
+    if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudinaryFileAdapterConfig]
   }
 }

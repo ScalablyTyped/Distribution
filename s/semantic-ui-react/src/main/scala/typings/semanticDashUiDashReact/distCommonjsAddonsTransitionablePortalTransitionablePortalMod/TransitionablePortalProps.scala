@@ -26,14 +26,14 @@ object TransitionablePortalProps {
     transition: TransitionProps = null
   ): TransitionablePortalProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2(onClose))
     if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction2(onHide))
     if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction2(onOpen))
     if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction2(onStart))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
-    if (transition != null) __obj.updateDynamic("transition")(transition)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionablePortalProps]
   }
 }

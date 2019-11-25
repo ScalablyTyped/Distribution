@@ -14,8 +14,8 @@ object Anon_ActionID {
   @scala.inline
   def apply(`type`: OSActionType, actionID: String = null): Anon_ActionID = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (actionID != null) __obj.updateDynamic("actionID")(actionID)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (actionID != null) __obj.updateDynamic("actionID")(actionID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ActionID]
   }
 }

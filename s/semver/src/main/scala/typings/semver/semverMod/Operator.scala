@@ -18,3 +18,28 @@ import scala.scalajs.js.annotation._
 */
 trait Operator extends js.Object
 
+object Operator {
+  @scala.inline
+  def `!=`: typings.semver.semverStrings.`!=` = this.cast("!=")
+  @scala.inline
+  def `!==`: typings.semver.semverStrings.`!==` = this.cast("!==")
+  @scala.inline
+  def `<`: typings.semver.semverStrings.`<` = this.cast("<")
+  @scala.inline
+  def `<=`: typings.semver.semverStrings.`<=` = this.cast("<=")
+  @scala.inline
+  def `=`: typings.semver.semverStrings.`=` = this.cast("=")
+  @scala.inline
+  def `==`: typings.semver.semverStrings.`==` = this.cast("==")
+  @scala.inline
+  def `===`: typings.semver.semverStrings.`===` = this.cast("===")
+  @scala.inline
+  def `>`: typings.semver.semverStrings.`>` = this.cast(">")
+  @scala.inline
+  def `>=`: typings.semver.semverStrings.`>=` = this.cast(">=")
+  @scala.inline
+  def Empty: typings.semver.semverStrings.Empty = this.cast("")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

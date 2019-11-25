@@ -14,7 +14,7 @@ trait IReportAccessCredentials extends js.Object {
 object IReportAccessCredentials {
   @scala.inline
   def apply(Domain: String, ExtAccount: Boolean, Password: String, UserName: String): IReportAccessCredentials = {
-    val __obj = js.Dynamic.literal(Domain = Domain, ExtAccount = ExtAccount, Password = Password, UserName = UserName)
+    val __obj = js.Dynamic.literal(Domain = Domain.asInstanceOf[js.Any], ExtAccount = ExtAccount.asInstanceOf[js.Any], Password = Password.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IReportAccessCredentials]
   }

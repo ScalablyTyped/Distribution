@@ -12,7 +12,7 @@ trait Anon_ReqSuperAgentRequest extends js.Object {
 object Anon_ReqSuperAgentRequest {
   @scala.inline
   def apply(req: SuperAgentRequest): Anon_ReqSuperAgentRequest = {
-    val __obj = js.Dynamic.literal(req = req)
+    val __obj = js.Dynamic.literal(req = req.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ReqSuperAgentRequest]
   }

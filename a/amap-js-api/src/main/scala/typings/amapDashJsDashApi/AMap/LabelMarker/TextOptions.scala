@@ -23,11 +23,11 @@ object TextOptions {
     zooms: js.Tuple2[Double, Double] = null
   ): TextOptions = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (zooms != null) __obj.updateDynamic("zooms")(zooms)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (zooms != null) __obj.updateDynamic("zooms")(zooms.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextOptions]
   }
 }

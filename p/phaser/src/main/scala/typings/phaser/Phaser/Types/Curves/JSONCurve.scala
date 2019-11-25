@@ -18,8 +18,8 @@ trait JSONCurve extends js.Object {
 object JSONCurve {
   @scala.inline
   def apply(points: js.Array[Double], `type`: String): JSONCurve = {
-    val __obj = js.Dynamic.literal(points = points)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONCurve]
   }
 }

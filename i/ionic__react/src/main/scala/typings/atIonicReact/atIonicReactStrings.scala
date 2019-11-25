@@ -181,13 +181,13 @@ object atIonicReactStrings {
   sealed trait autoSave extends js.Object
   
   @js.native
-  sealed trait autocapitalize extends js.Object
+  sealed trait autocapitalize_ extends js.Object
   
   @js.native
-  sealed trait autocorrect extends js.Object
+  sealed trait autocorrect_ extends js.Object
   
   @js.native
-  sealed trait autosave extends js.Object
+  sealed trait autosave_ extends js.Object
   
   @js.native
   sealed trait back extends RouterDirection
@@ -229,13 +229,13 @@ object atIonicReactStrings {
   sealed trait contentEditable extends js.Object
   
   @js.native
-  sealed trait contenteditable extends js.Object
+  sealed trait contenteditable_ extends js.Object
   
   @js.native
   sealed trait contextMenu extends js.Object
   
   @js.native
-  sealed trait contextmenu extends js.Object
+  sealed trait contextmenu_ extends js.Object
   
   @js.native
   sealed trait cordova extends js.Object
@@ -328,7 +328,7 @@ object atIonicReactStrings {
   sealed trait inputMode extends js.Object
   
   @js.native
-  sealed trait inputmode extends js.Object
+  sealed trait inputmode_ extends js.Object
   
   @js.native
   sealed trait ios extends js.Object
@@ -358,19 +358,19 @@ object atIonicReactStrings {
   sealed trait itemType extends js.Object
   
   @js.native
-  sealed trait itemid extends js.Object
+  sealed trait itemid_ extends js.Object
   
   @js.native
-  sealed trait itemprop extends js.Object
+  sealed trait itemprop_ extends js.Object
   
   @js.native
-  sealed trait itemref extends js.Object
+  sealed trait itemref_ extends js.Object
   
   @js.native
-  sealed trait itemscope extends js.Object
+  sealed trait itemscope_ extends js.Object
   
   @js.native
-  sealed trait itemtype extends js.Object
+  sealed trait itemtype_ extends js.Object
   
   @js.native
   sealed trait key extends js.Object
@@ -922,7 +922,7 @@ object atIonicReactStrings {
   sealed trait radioGroup extends js.Object
   
   @js.native
-  sealed trait radiogroup extends js.Object
+  sealed trait radiogroup_ extends js.Object
   
   @js.native
   sealed trait rel extends js.Object
@@ -961,7 +961,7 @@ object atIonicReactStrings {
   sealed trait spellCheck extends js.Object
   
   @js.native
-  sealed trait spellcheck extends js.Object
+  sealed trait spellcheck_ extends js.Object
   
   @js.native
   sealed trait src extends js.Object
@@ -982,7 +982,7 @@ object atIonicReactStrings {
   sealed trait tabIndex extends js.Object
   
   @js.native
-  sealed trait tabindex extends js.Object
+  sealed trait tabindex_ extends js.Object
   
   @js.native
   sealed trait tablet extends js.Object
@@ -1128,11 +1128,11 @@ object atIonicReactStrings {
   @scala.inline
   def autoSave: autoSave = "autoSave".asInstanceOf[autoSave]
   @scala.inline
-  def autocapitalize: autocapitalize = "autocapitalize".asInstanceOf[autocapitalize]
+  def autocapitalize_ : autocapitalize_ = "autocapitalize".asInstanceOf[autocapitalize_]
   @scala.inline
-  def autocorrect: autocorrect = "autocorrect".asInstanceOf[autocorrect]
+  def autocorrect_ : autocorrect_ = "autocorrect".asInstanceOf[autocorrect_]
   @scala.inline
-  def autosave: autosave = "autosave".asInstanceOf[autosave]
+  def autosave_ : autosave_ = "autosave".asInstanceOf[autosave_]
   @scala.inline
   def back: back = "back".asInstanceOf[back]
   @scala.inline
@@ -1160,11 +1160,11 @@ object atIonicReactStrings {
   @scala.inline
   def contentEditable: contentEditable = "contentEditable".asInstanceOf[contentEditable]
   @scala.inline
-  def contenteditable: contenteditable = "contenteditable".asInstanceOf[contenteditable]
+  def contenteditable_ : contenteditable_ = "contenteditable".asInstanceOf[contenteditable_]
   @scala.inline
   def contextMenu: contextMenu = "contextMenu".asInstanceOf[contextMenu]
   @scala.inline
-  def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
+  def contextmenu_ : contextmenu_ = "contextmenu".asInstanceOf[contextmenu_]
   @scala.inline
   def cordova: cordova = "cordova".asInstanceOf[cordova]
   @scala.inline
@@ -1226,7 +1226,7 @@ object atIonicReactStrings {
   @scala.inline
   def inputMode: inputMode = "inputMode".asInstanceOf[inputMode]
   @scala.inline
-  def inputmode: inputmode = "inputmode".asInstanceOf[inputmode]
+  def inputmode_ : inputmode_ = "inputmode".asInstanceOf[inputmode_]
   @scala.inline
   def ios: ios = "ios".asInstanceOf[ios]
   @scala.inline
@@ -1246,15 +1246,15 @@ object atIonicReactStrings {
   @scala.inline
   def itemType: itemType = "itemType".asInstanceOf[itemType]
   @scala.inline
-  def itemid: itemid = "itemid".asInstanceOf[itemid]
+  def itemid_ : itemid_ = "itemid".asInstanceOf[itemid_]
   @scala.inline
-  def itemprop: itemprop = "itemprop".asInstanceOf[itemprop]
+  def itemprop_ : itemprop_ = "itemprop".asInstanceOf[itemprop_]
   @scala.inline
-  def itemref: itemref = "itemref".asInstanceOf[itemref]
+  def itemref_ : itemref_ = "itemref".asInstanceOf[itemref_]
   @scala.inline
-  def itemscope: itemscope = "itemscope".asInstanceOf[itemscope]
+  def itemscope_ : itemscope_ = "itemscope".asInstanceOf[itemscope_]
   @scala.inline
-  def itemtype: itemtype = "itemtype".asInstanceOf[itemtype]
+  def itemtype_ : itemtype_ = "itemtype".asInstanceOf[itemtype_]
   @scala.inline
   def key: key = "key".asInstanceOf[key]
   @scala.inline
@@ -1622,7 +1622,7 @@ object atIonicReactStrings {
   @scala.inline
   def radioGroup: radioGroup = "radioGroup".asInstanceOf[radioGroup]
   @scala.inline
-  def radiogroup: radiogroup = "radiogroup".asInstanceOf[radiogroup]
+  def radiogroup_ : radiogroup_ = "radiogroup".asInstanceOf[radiogroup_]
   @scala.inline
   def rel: rel = "rel".asInstanceOf[rel]
   @scala.inline
@@ -1648,7 +1648,7 @@ object atIonicReactStrings {
   @scala.inline
   def spellCheck: spellCheck = "spellCheck".asInstanceOf[spellCheck]
   @scala.inline
-  def spellcheck: spellcheck = "spellcheck".asInstanceOf[spellcheck]
+  def spellcheck_ : spellcheck_ = "spellcheck".asInstanceOf[spellcheck_]
   @scala.inline
   def src: src = "src".asInstanceOf[src]
   @scala.inline
@@ -1662,7 +1662,7 @@ object atIonicReactStrings {
   @scala.inline
   def tabIndex: tabIndex = "tabIndex".asInstanceOf[tabIndex]
   @scala.inline
-  def tabindex: tabindex = "tabindex".asInstanceOf[tabindex]
+  def tabindex_ : tabindex_ = "tabindex".asInstanceOf[tabindex_]
   @scala.inline
   def tablet: tablet = "tablet".asInstanceOf[tablet]
   @scala.inline

@@ -35,10 +35,10 @@ trait TypeofHandlebars extends js.Object {
   def blockParams(obj: js.Array[_], ids: js.Array[_]): js.Array[_] = js.native
   def compile[T](input: js.Any): HandlebarsTemplateDelegate[T] = js.native
   def compile[T](input: js.Any, options: CompileOptions): HandlebarsTemplateDelegate[T] = js.native
-  def create(): /* import warning: ImportType.apply Failed type conversion: typeof Handlebars */ js.Any = js.native
+  def create(): /* import warning: importer.ImportType#apply Failed type conversion: typeof Handlebars */ js.Any = js.native
   def createFrame(`object`: js.Any): js.Any = js.native
   def log(level: Double, obj: js.Any): Unit = js.native
-  def noConflict(): /* import warning: ImportType.apply Failed type conversion: typeof Handlebars */ js.Any = js.native
+  def noConflict(): /* import warning: importer.ImportType#apply Failed type conversion: typeof Handlebars */ js.Any = js.native
   def parse(input: String): Program = js.native
   def parse(input: String, options: ParseOptions): Program = js.native
   def parseWithoutProcessing(input: String): Program = js.native

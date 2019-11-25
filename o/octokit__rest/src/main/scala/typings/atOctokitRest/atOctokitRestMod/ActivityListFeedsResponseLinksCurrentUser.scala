@@ -12,8 +12,8 @@ trait ActivityListFeedsResponseLinksCurrentUser extends js.Object {
 object ActivityListFeedsResponseLinksCurrentUser {
   @scala.inline
   def apply(href: String, `type`: String): ActivityListFeedsResponseLinksCurrentUser = {
-    val __obj = js.Dynamic.literal(href = href)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityListFeedsResponseLinksCurrentUser]
   }
 }

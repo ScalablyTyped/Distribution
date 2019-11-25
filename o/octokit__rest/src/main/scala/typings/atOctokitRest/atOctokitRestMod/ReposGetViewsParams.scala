@@ -18,7 +18,7 @@ trait ReposGetViewsParams extends js.Object {
 object ReposGetViewsParams {
   @scala.inline
   def apply(owner: String, repo: String, per: day | week = null): ReposGetViewsParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     if (per != null) __obj.updateDynamic("per")(per.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposGetViewsParams]
   }

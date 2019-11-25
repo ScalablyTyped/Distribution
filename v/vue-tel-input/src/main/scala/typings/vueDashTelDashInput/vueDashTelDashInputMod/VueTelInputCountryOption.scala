@@ -11,7 +11,7 @@ trait VueTelInputCountryOption extends js.Object {
 object VueTelInputCountryOption {
   @scala.inline
   def apply(iso2: String): VueTelInputCountryOption = {
-    val __obj = js.Dynamic.literal(iso2 = iso2)
+    val __obj = js.Dynamic.literal(iso2 = iso2.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VueTelInputCountryOption]
   }

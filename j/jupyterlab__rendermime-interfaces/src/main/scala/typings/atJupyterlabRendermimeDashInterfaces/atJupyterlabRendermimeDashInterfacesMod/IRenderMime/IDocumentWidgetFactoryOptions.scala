@@ -54,10 +54,10 @@ object IDocumentWidgetFactoryOptions {
     modelName: String = null,
     toolbarFactory: /* widget */ IRenderer => js.Array[IToolbarItem] = null
   ): IDocumentWidgetFactoryOptions = {
-    val __obj = js.Dynamic.literal(fileTypes = fileTypes, name = name, primaryFileType = primaryFileType)
-    if (defaultFor != null) __obj.updateDynamic("defaultFor")(defaultFor)
-    if (defaultRendered != null) __obj.updateDynamic("defaultRendered")(defaultRendered)
-    if (modelName != null) __obj.updateDynamic("modelName")(modelName)
+    val __obj = js.Dynamic.literal(fileTypes = fileTypes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], primaryFileType = primaryFileType.asInstanceOf[js.Any])
+    if (defaultFor != null) __obj.updateDynamic("defaultFor")(defaultFor.asInstanceOf[js.Any])
+    if (defaultRendered != null) __obj.updateDynamic("defaultRendered")(defaultRendered.asInstanceOf[js.Any])
+    if (modelName != null) __obj.updateDynamic("modelName")(modelName.asInstanceOf[js.Any])
     if (toolbarFactory != null) __obj.updateDynamic("toolbarFactory")(js.Any.fromFunction1(toolbarFactory))
     __obj.asInstanceOf[IDocumentWidgetFactoryOptions]
   }

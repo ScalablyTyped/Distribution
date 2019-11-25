@@ -13,7 +13,7 @@ trait UsersResource extends js.Object {
 object UsersResource {
   @scala.inline
   def apply(dataSources: DataSourcesResource, dataset: DatasetResource, sessions: SessionsResource): UsersResource = {
-    val __obj = js.Dynamic.literal(dataSources = dataSources, dataset = dataset, sessions = sessions)
+    val __obj = js.Dynamic.literal(dataSources = dataSources.asInstanceOf[js.Any], dataset = dataset.asInstanceOf[js.Any], sessions = sessions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UsersResource]
   }

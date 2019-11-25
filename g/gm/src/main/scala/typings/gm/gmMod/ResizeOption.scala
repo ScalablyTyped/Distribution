@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait ResizeOption extends js.Object
 
+object ResizeOption {
+  @scala.inline
+  def `!`: typings.gm.gmStrings.`!` = this.cast("!")
+  @scala.inline
+  def `%`: typings.gm.gmStrings.`%` = this.cast("%")
+  @scala.inline
+  def `<`: typings.gm.gmStrings.`<` = this.cast("<")
+  @scala.inline
+  def `>`: typings.gm.gmStrings.`>` = this.cast(">")
+  @scala.inline
+  def `@`: typings.gm.gmStrings.`@` = this.cast("@")
+  @scala.inline
+  def `_backtick^_backtick`: typings.gm.gmStrings.`_backtick^_backtick` = this.cast("^")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

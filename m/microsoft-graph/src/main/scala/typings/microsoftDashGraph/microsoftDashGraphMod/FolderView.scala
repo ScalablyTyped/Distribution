@@ -17,9 +17,9 @@ object FolderView {
   @scala.inline
   def apply(sortBy: String = null, sortOrder: String = null, viewType: String = null): FolderView = {
     val __obj = js.Dynamic.literal()
-    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy)
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
-    if (viewType != null) __obj.updateDynamic("viewType")(viewType)
+    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
+    if (viewType != null) __obj.updateDynamic("viewType")(viewType.asInstanceOf[js.Any])
     __obj.asInstanceOf[FolderView]
   }
 }

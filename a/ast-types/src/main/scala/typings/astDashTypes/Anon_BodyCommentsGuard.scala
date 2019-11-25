@@ -26,11 +26,11 @@ object Anon_BodyCommentsGuard {
     loc: SourceLocationKind = null,
     param: PatternKind = null
   ): Anon_BodyCommentsGuard = {
-    val __obj = js.Dynamic.literal(body = body)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (guard != null) __obj.updateDynamic("guard")(guard)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (param != null) __obj.updateDynamic("param")(param)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (guard != null) __obj.updateDynamic("guard")(guard.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (param != null) __obj.updateDynamic("param")(param.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BodyCommentsGuard]
   }
 }

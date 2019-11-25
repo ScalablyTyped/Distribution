@@ -13,8 +13,8 @@ object ChannelContentOwnerDetails {
   @scala.inline
   def apply(contentOwner: String = null, timeLinked: String = null): ChannelContentOwnerDetails = {
     val __obj = js.Dynamic.literal()
-    if (contentOwner != null) __obj.updateDynamic("contentOwner")(contentOwner)
-    if (timeLinked != null) __obj.updateDynamic("timeLinked")(timeLinked)
+    if (contentOwner != null) __obj.updateDynamic("contentOwner")(contentOwner.asInstanceOf[js.Any])
+    if (timeLinked != null) __obj.updateDynamic("timeLinked")(timeLinked.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelContentOwnerDetails]
   }
 }

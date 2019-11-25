@@ -19,8 +19,8 @@ object GetExtConfigRes {
   @scala.inline
   def apply(errMsg: String = null, extConfig: js.Any = null): GetExtConfigRes = {
     val __obj = js.Dynamic.literal()
-    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg)
-    if (extConfig != null) __obj.updateDynamic("extConfig")(extConfig)
+    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
+    if (extConfig != null) __obj.updateDynamic("extConfig")(extConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetExtConfigRes]
   }
 }

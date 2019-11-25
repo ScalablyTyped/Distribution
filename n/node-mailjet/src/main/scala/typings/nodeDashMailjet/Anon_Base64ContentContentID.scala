@@ -14,7 +14,7 @@ trait Anon_Base64ContentContentID extends js.Object {
 object Anon_Base64ContentContentID {
   @scala.inline
   def apply(Base64Content: String, ContentID: String, ContentType: String, Filename: String): Anon_Base64ContentContentID = {
-    val __obj = js.Dynamic.literal(Base64Content = Base64Content, ContentID = ContentID, ContentType = ContentType, Filename = Filename)
+    val __obj = js.Dynamic.literal(Base64Content = Base64Content.asInstanceOf[js.Any], ContentID = ContentID.asInstanceOf[js.Any], ContentType = ContentType.asInstanceOf[js.Any], Filename = Filename.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Base64ContentContentID]
   }

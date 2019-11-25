@@ -14,9 +14,9 @@ object Anon_Add {
   @scala.inline
   def apply(add: js.Any = null, load: js.Any = null, remove: js.Any = null): Anon_Add = {
     val __obj = js.Dynamic.literal()
-    if (add != null) __obj.updateDynamic("add")(add)
-    if (load != null) __obj.updateDynamic("load")(load)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (add != null) __obj.updateDynamic("add")(add.asInstanceOf[js.Any])
+    if (load != null) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
+    if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Add]
   }
 }

@@ -12,7 +12,7 @@ trait LoadingProcessData extends js.Object {
 object LoadingProcessData {
   @scala.inline
   def apply(loaded: Double, total: Double): LoadingProcessData = {
-    val __obj = js.Dynamic.literal(loaded = loaded, total = total)
+    val __obj = js.Dynamic.literal(loaded = loaded.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LoadingProcessData]
   }

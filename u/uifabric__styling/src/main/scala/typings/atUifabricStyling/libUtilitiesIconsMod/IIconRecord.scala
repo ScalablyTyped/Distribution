@@ -12,8 +12,8 @@ trait IIconRecord extends js.Object {
 object IIconRecord {
   @scala.inline
   def apply(subset: IIconSubsetRecord, code: String = null): IIconRecord = {
-    val __obj = js.Dynamic.literal(subset = subset)
-    if (code != null) __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(subset = subset.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIconRecord]
   }
 }

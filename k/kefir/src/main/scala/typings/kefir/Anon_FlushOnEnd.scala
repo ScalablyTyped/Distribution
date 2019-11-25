@@ -11,7 +11,7 @@ trait Anon_FlushOnEnd extends js.Object {
 object Anon_FlushOnEnd {
   @scala.inline
   def apply(flushOnEnd: Boolean): Anon_FlushOnEnd = {
-    val __obj = js.Dynamic.literal(flushOnEnd = flushOnEnd)
+    val __obj = js.Dynamic.literal(flushOnEnd = flushOnEnd.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FlushOnEnd]
   }

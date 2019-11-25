@@ -13,8 +13,8 @@ object UserAbout {
   @scala.inline
   def apply(contentType: String = null, value: String = null): UserAbout = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserAbout]
   }
 }

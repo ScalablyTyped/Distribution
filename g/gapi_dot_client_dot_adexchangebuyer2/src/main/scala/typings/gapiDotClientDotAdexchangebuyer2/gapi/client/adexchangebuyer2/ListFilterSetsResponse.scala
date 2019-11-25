@@ -22,8 +22,8 @@ object ListFilterSetsResponse {
   @scala.inline
   def apply(filterSets: js.Array[FilterSet] = null, nextPageToken: String = null): ListFilterSetsResponse = {
     val __obj = js.Dynamic.literal()
-    if (filterSets != null) __obj.updateDynamic("filterSets")(filterSets)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (filterSets != null) __obj.updateDynamic("filterSets")(filterSets.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFilterSetsResponse]
   }
 }

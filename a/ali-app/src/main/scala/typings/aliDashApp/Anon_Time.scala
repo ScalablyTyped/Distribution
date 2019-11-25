@@ -12,7 +12,7 @@ trait Anon_Time extends js.Object {
 object Anon_Time {
   @scala.inline
   def apply(time: Double): Anon_Time = {
-    val __obj = js.Dynamic.literal(time = time)
+    val __obj = js.Dynamic.literal(time = time.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Time]
   }

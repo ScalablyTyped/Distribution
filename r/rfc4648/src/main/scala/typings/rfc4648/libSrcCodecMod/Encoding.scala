@@ -14,8 +14,8 @@ trait Encoding extends js.Object {
 object Encoding {
   @scala.inline
   def apply(bits: Double, chars: String, codes: StringDictionary[Double] = null): Encoding = {
-    val __obj = js.Dynamic.literal(bits = bits, chars = chars)
-    if (codes != null) __obj.updateDynamic("codes")(codes)
+    val __obj = js.Dynamic.literal(bits = bits.asInstanceOf[js.Any], chars = chars.asInstanceOf[js.Any])
+    if (codes != null) __obj.updateDynamic("codes")(codes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Encoding]
   }
 }

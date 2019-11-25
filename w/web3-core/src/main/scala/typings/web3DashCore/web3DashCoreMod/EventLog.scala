@@ -30,8 +30,8 @@ object EventLog {
     transactionIndex: Double,
     raw: Anon_Data = null
   ): EventLog = {
-    val __obj = js.Dynamic.literal(address = address, blockHash = blockHash, blockNumber = blockNumber, event = event, logIndex = logIndex, returnValues = returnValues, transactionHash = transactionHash, transactionIndex = transactionIndex)
-    if (raw != null) __obj.updateDynamic("raw")(raw)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], blockHash = blockHash.asInstanceOf[js.Any], blockNumber = blockNumber.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], logIndex = logIndex.asInstanceOf[js.Any], returnValues = returnValues.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], transactionIndex = transactionIndex.asInstanceOf[js.Any])
+    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventLog]
   }
 }

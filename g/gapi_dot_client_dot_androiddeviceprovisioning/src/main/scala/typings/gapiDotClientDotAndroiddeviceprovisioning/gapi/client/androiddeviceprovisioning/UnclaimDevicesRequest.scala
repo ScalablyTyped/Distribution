@@ -13,7 +13,7 @@ object UnclaimDevicesRequest {
   @scala.inline
   def apply(unclaims: js.Array[PartnerUnclaim] = null): UnclaimDevicesRequest = {
     val __obj = js.Dynamic.literal()
-    if (unclaims != null) __obj.updateDynamic("unclaims")(unclaims)
+    if (unclaims != null) __obj.updateDynamic("unclaims")(unclaims.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnclaimDevicesRequest]
   }
 }

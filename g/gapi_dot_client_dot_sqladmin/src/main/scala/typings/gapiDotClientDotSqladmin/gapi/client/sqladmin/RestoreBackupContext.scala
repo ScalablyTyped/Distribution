@@ -17,9 +17,9 @@ object RestoreBackupContext {
   @scala.inline
   def apply(backupRunId: String = null, instanceId: String = null, kind: String = null): RestoreBackupContext = {
     val __obj = js.Dynamic.literal()
-    if (backupRunId != null) __obj.updateDynamic("backupRunId")(backupRunId)
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (backupRunId != null) __obj.updateDynamic("backupRunId")(backupRunId.asInstanceOf[js.Any])
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreBackupContext]
   }
 }

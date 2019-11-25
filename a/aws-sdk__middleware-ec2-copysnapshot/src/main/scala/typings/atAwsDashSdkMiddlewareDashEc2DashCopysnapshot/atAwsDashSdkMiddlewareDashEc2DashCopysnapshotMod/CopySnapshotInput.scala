@@ -13,9 +13,9 @@ trait CopySnapshotInput extends js.Object {
 object CopySnapshotInput {
   @scala.inline
   def apply(SourceRegion: String, DestinationRegion: String = null, PresignedUrl: String = null): CopySnapshotInput = {
-    val __obj = js.Dynamic.literal(SourceRegion = SourceRegion)
-    if (DestinationRegion != null) __obj.updateDynamic("DestinationRegion")(DestinationRegion)
-    if (PresignedUrl != null) __obj.updateDynamic("PresignedUrl")(PresignedUrl)
+    val __obj = js.Dynamic.literal(SourceRegion = SourceRegion.asInstanceOf[js.Any])
+    if (DestinationRegion != null) __obj.updateDynamic("DestinationRegion")(DestinationRegion.asInstanceOf[js.Any])
+    if (PresignedUrl != null) __obj.updateDynamic("PresignedUrl")(PresignedUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopySnapshotInput]
   }
 }

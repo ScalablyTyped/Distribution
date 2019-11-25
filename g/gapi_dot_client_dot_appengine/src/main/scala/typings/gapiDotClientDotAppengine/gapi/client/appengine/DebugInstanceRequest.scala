@@ -18,7 +18,7 @@ object DebugInstanceRequest {
   @scala.inline
   def apply(sshKey: String = null): DebugInstanceRequest = {
     val __obj = js.Dynamic.literal()
-    if (sshKey != null) __obj.updateDynamic("sshKey")(sshKey)
+    if (sshKey != null) __obj.updateDynamic("sshKey")(sshKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugInstanceRequest]
   }
 }

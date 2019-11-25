@@ -32,10 +32,10 @@ object StreamRecord {
   ): StreamRecord = {
     val __obj = js.Dynamic.literal()
     if (ApproximateCreationDateTime != null) __obj.updateDynamic("ApproximateCreationDateTime")(ApproximateCreationDateTime.asInstanceOf[js.Any])
-    if (Keys != null) __obj.updateDynamic("Keys")(Keys)
-    if (NewImage != null) __obj.updateDynamic("NewImage")(NewImage)
-    if (OldImage != null) __obj.updateDynamic("OldImage")(OldImage)
-    if (SequenceNumber != null) __obj.updateDynamic("SequenceNumber")(SequenceNumber)
+    if (Keys != null) __obj.updateDynamic("Keys")(Keys.asInstanceOf[js.Any])
+    if (NewImage != null) __obj.updateDynamic("NewImage")(NewImage.asInstanceOf[js.Any])
+    if (OldImage != null) __obj.updateDynamic("OldImage")(OldImage.asInstanceOf[js.Any])
+    if (SequenceNumber != null) __obj.updateDynamic("SequenceNumber")(SequenceNumber.asInstanceOf[js.Any])
     if (SizeBytes != null) __obj.updateDynamic("SizeBytes")(SizeBytes.asInstanceOf[js.Any])
     if (StreamViewType != null) __obj.updateDynamic("StreamViewType")(StreamViewType.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamRecord]

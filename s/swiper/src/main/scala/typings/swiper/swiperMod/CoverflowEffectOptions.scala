@@ -25,7 +25,7 @@ object CoverflowEffectOptions {
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (modifier != null) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (!js.isUndefined(slideShadows)) __obj.updateDynamic("slideShadows")(slideShadows)
+    if (!js.isUndefined(slideShadows)) __obj.updateDynamic("slideShadows")(slideShadows.asInstanceOf[js.Any])
     if (stretch != null) __obj.updateDynamic("stretch")(stretch.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoverflowEffectOptions]
   }

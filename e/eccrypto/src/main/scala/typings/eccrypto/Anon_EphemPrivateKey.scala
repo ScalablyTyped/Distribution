@@ -14,8 +14,8 @@ object Anon_EphemPrivateKey {
   @scala.inline
   def apply(ephemPrivateKey: Buffer = null, iv: Buffer = null): Anon_EphemPrivateKey = {
     val __obj = js.Dynamic.literal()
-    if (ephemPrivateKey != null) __obj.updateDynamic("ephemPrivateKey")(ephemPrivateKey)
-    if (iv != null) __obj.updateDynamic("iv")(iv)
+    if (ephemPrivateKey != null) __obj.updateDynamic("ephemPrivateKey")(ephemPrivateKey.asInstanceOf[js.Any])
+    if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EphemPrivateKey]
   }
 }

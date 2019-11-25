@@ -121,7 +121,7 @@ object ImagesSettings {
     rollOverScale: Double,
     selectedScale: Double
   ): ImagesSettings = {
-    val __obj = js.Dynamic.literal(alpha = alpha, balloonText = balloonText, centered = centered, color = color, descriptionWindowHeight = descriptionWindowHeight, descriptionWindowWidth = descriptionWindowWidth, descriptionWindowX = descriptionWindowX, descriptionWindowY = descriptionWindowY, labelColor = labelColor, labelPosition = labelPosition, labelRollOverColor = labelRollOverColor, labelfontSize = labelfontSize, outlineAlpha = outlineAlpha, outlineColor = outlineColor, outlineThickness = outlineThickness, rollOverColor = rollOverColor, rollOverScale = rollOverScale, selectedScale = selectedScale)
+    val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], balloonText = balloonText.asInstanceOf[js.Any], centered = centered.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], descriptionWindowHeight = descriptionWindowHeight.asInstanceOf[js.Any], descriptionWindowWidth = descriptionWindowWidth.asInstanceOf[js.Any], descriptionWindowX = descriptionWindowX.asInstanceOf[js.Any], descriptionWindowY = descriptionWindowY.asInstanceOf[js.Any], labelColor = labelColor.asInstanceOf[js.Any], labelPosition = labelPosition.asInstanceOf[js.Any], labelRollOverColor = labelRollOverColor.asInstanceOf[js.Any], labelfontSize = labelfontSize.asInstanceOf[js.Any], outlineAlpha = outlineAlpha.asInstanceOf[js.Any], outlineColor = outlineColor.asInstanceOf[js.Any], outlineThickness = outlineThickness.asInstanceOf[js.Any], rollOverColor = rollOverColor.asInstanceOf[js.Any], rollOverScale = rollOverScale.asInstanceOf[js.Any], selectedScale = selectedScale.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ImagesSettings]
   }

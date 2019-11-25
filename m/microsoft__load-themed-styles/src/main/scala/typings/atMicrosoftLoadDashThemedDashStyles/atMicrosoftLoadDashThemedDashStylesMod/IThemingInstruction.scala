@@ -14,9 +14,9 @@ object IThemingInstruction {
   @scala.inline
   def apply(defaultValue: String = null, rawString: String = null, theme: String = null): IThemingInstruction = {
     val __obj = js.Dynamic.literal()
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (rawString != null) __obj.updateDynamic("rawString")(rawString)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (rawString != null) __obj.updateDynamic("rawString")(rawString.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IThemingInstruction]
   }
 }

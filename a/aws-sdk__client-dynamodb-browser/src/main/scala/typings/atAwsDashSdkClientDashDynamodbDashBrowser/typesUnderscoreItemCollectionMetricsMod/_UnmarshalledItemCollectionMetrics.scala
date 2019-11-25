@@ -26,8 +26,8 @@ object _UnmarshalledItemCollectionMetrics {
     SizeEstimateRangeGB: js.Array[Double] = null
   ): _UnmarshalledItemCollectionMetrics = {
     val __obj = js.Dynamic.literal()
-    if (ItemCollectionKey != null) __obj.updateDynamic("ItemCollectionKey")(ItemCollectionKey)
-    if (SizeEstimateRangeGB != null) __obj.updateDynamic("SizeEstimateRangeGB")(SizeEstimateRangeGB)
+    if (ItemCollectionKey != null) __obj.updateDynamic("ItemCollectionKey")(ItemCollectionKey.asInstanceOf[js.Any])
+    if (SizeEstimateRangeGB != null) __obj.updateDynamic("SizeEstimateRangeGB")(SizeEstimateRangeGB.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledItemCollectionMetrics]
   }
 }

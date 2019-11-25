@@ -13,7 +13,7 @@ trait SuspenseConfig
 object SuspenseConfig {
   @scala.inline
   def apply(timeoutMs: Double, busyDelayMs: Int | Double = null, busyMinDurationMs: Int | Double = null): SuspenseConfig = {
-    val __obj = js.Dynamic.literal(timeoutMs = timeoutMs)
+    val __obj = js.Dynamic.literal(timeoutMs = timeoutMs.asInstanceOf[js.Any])
     if (busyDelayMs != null) __obj.updateDynamic("busyDelayMs")(busyDelayMs.asInstanceOf[js.Any])
     if (busyMinDurationMs != null) __obj.updateDynamic("busyMinDurationMs")(busyMinDurationMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuspenseConfig]

@@ -18,8 +18,8 @@ object Anon_DynHeight {
     inheritedAttrs: String | js.Array[String] = null
   ): Anon_DynHeight = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dynHeight)) __obj.updateDynamic("dynHeight")(dynHeight)
-    if (!js.isUndefined(dynWidth)) __obj.updateDynamic("dynWidth")(dynWidth)
+    if (!js.isUndefined(dynHeight)) __obj.updateDynamic("dynHeight")(dynHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynWidth)) __obj.updateDynamic("dynWidth")(dynWidth.asInstanceOf[js.Any])
     if (inheritedAttrs != null) __obj.updateDynamic("inheritedAttrs")(inheritedAttrs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DynHeight]
   }

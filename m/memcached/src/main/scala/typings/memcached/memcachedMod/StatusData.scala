@@ -17,8 +17,8 @@ object StatusData {
     server: String = null
   ): StatusData = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (server != null) __obj.updateDynamic("server")(server)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatusData]
   }
 }

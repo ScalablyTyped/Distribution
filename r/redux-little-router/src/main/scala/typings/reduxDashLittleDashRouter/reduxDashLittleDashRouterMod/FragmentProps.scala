@@ -30,14 +30,14 @@ object FragmentProps {
     withConditions: /* location */ Location => Boolean = null
   ): FragmentProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forNoMatch)) __obj.updateDynamic("forNoMatch")(forNoMatch)
-    if (forRoute != null) __obj.updateDynamic("forRoute")(forRoute)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (matchRoute != null) __obj.updateDynamic("matchRoute")(matchRoute)
-    if (matchWildcardRoute != null) __obj.updateDynamic("matchWildcardRoute")(matchWildcardRoute)
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
-    if (parentRoute != null) __obj.updateDynamic("parentRoute")(parentRoute)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(forNoMatch)) __obj.updateDynamic("forNoMatch")(forNoMatch.asInstanceOf[js.Any])
+    if (forRoute != null) __obj.updateDynamic("forRoute")(forRoute.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (matchRoute != null) __obj.updateDynamic("matchRoute")(matchRoute.asInstanceOf[js.Any])
+    if (matchWildcardRoute != null) __obj.updateDynamic("matchWildcardRoute")(matchWildcardRoute.asInstanceOf[js.Any])
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
+    if (parentRoute != null) __obj.updateDynamic("parentRoute")(parentRoute.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (withConditions != null) __obj.updateDynamic("withConditions")(js.Any.fromFunction1(withConditions))
     __obj.asInstanceOf[FragmentProps]
   }

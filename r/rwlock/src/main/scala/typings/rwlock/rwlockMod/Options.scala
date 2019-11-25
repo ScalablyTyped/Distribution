@@ -14,7 +14,7 @@ object Options {
   @scala.inline
   def apply(scope: js.Any = null, timeout: Int | Double = null, timeoutCallback: () => Unit = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (timeoutCallback != null) __obj.updateDynamic("timeoutCallback")(js.Any.fromFunction0(timeoutCallback))
     __obj.asInstanceOf[Options]

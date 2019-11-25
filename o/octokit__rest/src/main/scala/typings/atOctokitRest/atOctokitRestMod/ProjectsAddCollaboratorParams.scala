@@ -22,7 +22,7 @@ trait ProjectsAddCollaboratorParams extends js.Object {
 object ProjectsAddCollaboratorParams {
   @scala.inline
   def apply(project_id: Double, username: String, permission: read | write | admin = null): ProjectsAddCollaboratorParams = {
-    val __obj = js.Dynamic.literal(project_id = project_id, username = username)
+    val __obj = js.Dynamic.literal(project_id = project_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     if (permission != null) __obj.updateDynamic("permission")(permission.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsAddCollaboratorParams]
   }

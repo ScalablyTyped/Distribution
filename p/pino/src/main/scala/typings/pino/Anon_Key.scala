@@ -21,9 +21,9 @@ object Anon_Key {
     serializers: StringDictionary[SerializerFn] = null
   ): Anon_Key = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (serializers != null) __obj.updateDynamic("serializers")(serializers)
+    if (serializers != null) __obj.updateDynamic("serializers")(serializers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Key]
   }
 }

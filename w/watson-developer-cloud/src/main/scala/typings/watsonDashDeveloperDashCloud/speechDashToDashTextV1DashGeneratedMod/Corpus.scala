@@ -27,8 +27,8 @@ object Corpus {
     total_words: Double,
     error: String = null
   ): Corpus = {
-    val __obj = js.Dynamic.literal(name = name, out_of_vocabulary_words = out_of_vocabulary_words, status = status, total_words = total_words)
-    if (error != null) __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], out_of_vocabulary_words = out_of_vocabulary_words.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], total_words = total_words.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[Corpus]
   }
 }

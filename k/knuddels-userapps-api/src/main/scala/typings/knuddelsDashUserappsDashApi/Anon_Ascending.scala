@@ -19,8 +19,8 @@ object Anon_Ascending {
     sortIndex: Int | Double = null
   ): Anon_Ascending = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending)
-    if (labelMapping != null) __obj.updateDynamic("labelMapping")(labelMapping)
+    if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending.asInstanceOf[js.Any])
+    if (labelMapping != null) __obj.updateDynamic("labelMapping")(labelMapping.asInstanceOf[js.Any])
     if (sortIndex != null) __obj.updateDynamic("sortIndex")(sortIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Ascending]
   }

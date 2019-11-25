@@ -34,7 +34,7 @@ object DomainOptions {
     tlds: TopLevelDomainOptions | `false` = null
   ): DomainOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUnicode)) __obj.updateDynamic("allowUnicode")(allowUnicode)
+    if (!js.isUndefined(allowUnicode)) __obj.updateDynamic("allowUnicode")(allowUnicode.asInstanceOf[js.Any])
     if (minDomainSegments != null) __obj.updateDynamic("minDomainSegments")(minDomainSegments.asInstanceOf[js.Any])
     if (tlds != null) __obj.updateDynamic("tlds")(tlds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainOptions]

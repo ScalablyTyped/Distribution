@@ -14,8 +14,8 @@ trait Result extends js.Object {
 object Result {
   @scala.inline
   def apply(fileName: String, fileSize: Double, `type`: String, uri: String): Result = {
-    val __obj = js.Dynamic.literal(fileName = fileName, fileSize = fileSize, uri = uri)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], fileSize = fileSize.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
 }

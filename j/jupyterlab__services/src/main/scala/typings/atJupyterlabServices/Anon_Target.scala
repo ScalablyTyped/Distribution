@@ -24,8 +24,8 @@ object Anon_Target {
   @scala.inline
   def apply(target: String = null, target_name: String = null): Anon_Target = {
     val __obj = js.Dynamic.literal()
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (target_name != null) __obj.updateDynamic("target_name")(target_name)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (target_name != null) __obj.updateDynamic("target_name")(target_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Target]
   }
 }

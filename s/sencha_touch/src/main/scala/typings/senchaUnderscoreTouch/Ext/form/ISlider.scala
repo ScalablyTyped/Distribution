@@ -82,16 +82,13 @@ object ISlider {
   @scala.inline
   def apply(
     IField: typings.senchaUnderscoreTouch.Ext.field.IField = null,
-    cls: js.Any = null,
     getCls: () => java.lang.String = null,
     getIncrement: () => Double = null,
     getMaxValue: () => Double = null,
     getMinValue: () => Double = null,
     getReadOnly: () => Boolean = null,
-    getValue: () => _ = null,
     getValues: () => _ = null,
     increment: Int | Double = null,
-    isDirty: () => Boolean = null,
     maxValue: Int | Double = null,
     minValue: Int | Double = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
@@ -102,27 +99,21 @@ object ISlider {
     setMinValue: /* minValue */ js.UndefOr[Double] => Unit = null,
     setReadOnly: /* readOnly */ js.UndefOr[Boolean] => Unit = null,
     setTabIndex: /* tabIndex */ js.UndefOr[js.Any] => Unit = null,
-    setValue: /* value */ js.UndefOr[js.Any] => Unit = null,
     setValues: /* value */ js.UndefOr[js.Any] => Unit = null,
-    tabIndex: Int | Double = null,
-    value: js.Any = null,
     values: js.Any = null
   ): ISlider = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IField)
-    if (cls != null) __obj.updateDynamic("cls")(cls)
+    if (IField != null) js.Dynamic.global.Object.assign(__obj, IField)
     if (getCls != null) __obj.updateDynamic("getCls")(js.Any.fromFunction0(getCls))
     if (getIncrement != null) __obj.updateDynamic("getIncrement")(js.Any.fromFunction0(getIncrement))
     if (getMaxValue != null) __obj.updateDynamic("getMaxValue")(js.Any.fromFunction0(getMaxValue))
     if (getMinValue != null) __obj.updateDynamic("getMinValue")(js.Any.fromFunction0(getMinValue))
     if (getReadOnly != null) __obj.updateDynamic("getReadOnly")(js.Any.fromFunction0(getReadOnly))
-    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
     if (getValues != null) __obj.updateDynamic("getValues")(js.Any.fromFunction0(getValues))
     if (increment != null) __obj.updateDynamic("increment")(increment.asInstanceOf[js.Any])
-    if (isDirty != null) __obj.updateDynamic("isDirty")(js.Any.fromFunction0(isDirty))
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
     if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction0(reset))
     if (setCls != null) __obj.updateDynamic("setCls")(js.Any.fromFunction1(setCls))
     if (setIncrement != null) __obj.updateDynamic("setIncrement")(js.Any.fromFunction1(setIncrement))
@@ -130,11 +121,8 @@ object ISlider {
     if (setMinValue != null) __obj.updateDynamic("setMinValue")(js.Any.fromFunction1(setMinValue))
     if (setReadOnly != null) __obj.updateDynamic("setReadOnly")(js.Any.fromFunction1(setReadOnly))
     if (setTabIndex != null) __obj.updateDynamic("setTabIndex")(js.Any.fromFunction1(setTabIndex))
-    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
     if (setValues != null) __obj.updateDynamic("setValues")(js.Any.fromFunction1(setValues))
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISlider]
   }
 }

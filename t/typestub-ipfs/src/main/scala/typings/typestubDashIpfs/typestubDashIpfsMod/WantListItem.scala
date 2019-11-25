@@ -12,7 +12,7 @@ object WantListItem {
   @scala.inline
   def apply(`/`: String): WantListItem = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("/")(`/`)
+    __obj.updateDynamic("/")(`/`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WantListItem]
   }
 }

@@ -13,8 +13,8 @@ object CollapseOptions {
   @scala.inline
   def apply(parent: js.Any = null, toggle: js.UndefOr[Boolean] = js.undefined): CollapseOptions = {
     val __obj = js.Dynamic.literal()
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (!js.isUndefined(toggle)) __obj.updateDynamic("toggle")(toggle)
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(toggle)) __obj.updateDynamic("toggle")(toggle.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollapseOptions]
   }
 }

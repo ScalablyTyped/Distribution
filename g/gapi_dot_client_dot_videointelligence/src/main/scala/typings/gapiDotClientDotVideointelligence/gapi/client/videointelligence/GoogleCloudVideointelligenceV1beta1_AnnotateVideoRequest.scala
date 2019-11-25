@@ -55,12 +55,12 @@ object GoogleCloudVideointelligenceV1beta1_AnnotateVideoRequest {
     videoContext: GoogleCloudVideointelligenceV1beta1_VideoContext = null
   ): GoogleCloudVideointelligenceV1beta1_AnnotateVideoRequest = {
     val __obj = js.Dynamic.literal()
-    if (features != null) __obj.updateDynamic("features")(features)
-    if (inputContent != null) __obj.updateDynamic("inputContent")(inputContent)
-    if (inputUri != null) __obj.updateDynamic("inputUri")(inputUri)
-    if (locationId != null) __obj.updateDynamic("locationId")(locationId)
-    if (outputUri != null) __obj.updateDynamic("outputUri")(outputUri)
-    if (videoContext != null) __obj.updateDynamic("videoContext")(videoContext)
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
+    if (inputContent != null) __obj.updateDynamic("inputContent")(inputContent.asInstanceOf[js.Any])
+    if (inputUri != null) __obj.updateDynamic("inputUri")(inputUri.asInstanceOf[js.Any])
+    if (locationId != null) __obj.updateDynamic("locationId")(locationId.asInstanceOf[js.Any])
+    if (outputUri != null) __obj.updateDynamic("outputUri")(outputUri.asInstanceOf[js.Any])
+    if (videoContext != null) __obj.updateDynamic("videoContext")(videoContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta1_AnnotateVideoRequest]
   }
 }

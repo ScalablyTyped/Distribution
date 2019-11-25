@@ -20,10 +20,10 @@ object MapLayerDefaultsTile {
     urlTemplate: String = null
   ): MapLayerDefaultsTile = {
     val __obj = js.Dynamic.literal()
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution)
+    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (subdomains != null) __obj.updateDynamic("subdomains")(subdomains)
-    if (urlTemplate != null) __obj.updateDynamic("urlTemplate")(urlTemplate)
+    if (subdomains != null) __obj.updateDynamic("subdomains")(subdomains.asInstanceOf[js.Any])
+    if (urlTemplate != null) __obj.updateDynamic("urlTemplate")(urlTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapLayerDefaultsTile]
   }
 }

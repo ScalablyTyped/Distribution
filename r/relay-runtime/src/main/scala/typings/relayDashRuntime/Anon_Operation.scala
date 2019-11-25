@@ -15,7 +15,7 @@ trait Anon_Operation extends js.Object {
 object Anon_Operation {
   @scala.inline
   def apply(operation: OperationDescriptor, source: RelayObservable[GraphQLResponse]): Anon_Operation = {
-    val __obj = js.Dynamic.literal(operation = operation, source = source)
+    val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Operation]
   }

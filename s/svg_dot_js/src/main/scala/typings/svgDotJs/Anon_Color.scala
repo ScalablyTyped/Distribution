@@ -14,9 +14,9 @@ object Anon_Color {
   @scala.inline
   def apply(color: String = null, opacity: Int | Double = null, rule: String = null): Anon_Color = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (rule != null) __obj.updateDynamic("rule")(rule)
+    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Color]
   }
 }

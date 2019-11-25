@@ -21,8 +21,8 @@ object MonitorField {
   @scala.inline
   def apply(name: String = null, units: String = null): MonitorField = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (units != null) __obj.updateDynamic("units")(units)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonitorField]
   }
 }

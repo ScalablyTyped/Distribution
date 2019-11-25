@@ -39,10 +39,10 @@ object DomHandlerOptions {
     withStartIndices: js.UndefOr[Boolean] = js.undefined
   ): DomHandlerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(normalizeWhitespace)) __obj.updateDynamic("normalizeWhitespace")(normalizeWhitespace)
-    if (!js.isUndefined(withDomLvl1)) __obj.updateDynamic("withDomLvl1")(withDomLvl1)
-    if (!js.isUndefined(withEndIndices)) __obj.updateDynamic("withEndIndices")(withEndIndices)
-    if (!js.isUndefined(withStartIndices)) __obj.updateDynamic("withStartIndices")(withStartIndices)
+    if (!js.isUndefined(normalizeWhitespace)) __obj.updateDynamic("normalizeWhitespace")(normalizeWhitespace.asInstanceOf[js.Any])
+    if (!js.isUndefined(withDomLvl1)) __obj.updateDynamic("withDomLvl1")(withDomLvl1.asInstanceOf[js.Any])
+    if (!js.isUndefined(withEndIndices)) __obj.updateDynamic("withEndIndices")(withEndIndices.asInstanceOf[js.Any])
+    if (!js.isUndefined(withStartIndices)) __obj.updateDynamic("withStartIndices")(withStartIndices.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomHandlerOptions]
   }
 }

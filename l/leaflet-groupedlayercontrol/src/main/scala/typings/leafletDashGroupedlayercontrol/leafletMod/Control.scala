@@ -1,7 +1,6 @@
 package typings.leafletDashGroupedlayercontrol.leafletMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.leaflet.leafletMod.Control
 import typings.leaflet.leafletMod.Layer
 import typings.leaflet.leafletMod.LayerGroup
 import scala.scalajs.js
@@ -30,6 +29,6 @@ object control extends js.Object {
     baseLayers: StringDictionary[Layer],
     groupedOverlays: StringDictionary[StringDictionary[LayerGroup[_]]],
     options: GroupedLayersOptions
-  ): Control = js.native
+  ): typings.leaflet.leafletMod.Control = js.native
 }
 

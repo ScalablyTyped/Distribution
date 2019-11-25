@@ -1,12 +1,12 @@
 package typings.instagramDashPrivateDashApi.distCoreRequestMod
 
-import typings.instagramDashPrivateDashApi.Options
 import typings.instagramDashPrivateDashApi.PartialAttemptOptionsany
-import typings.instagramDashPrivateDashApi.PartialOptions
 import typings.instagramDashPrivateDashApi.distCoreClientMod.IgApiClient
 import typings.instagramDashPrivateDashApi.distErrorsMod.IgClientError
 import typings.instagramDashPrivateDashApi.distTypesCommonDotTypesMod.IgResponse
+import typings.request.requestMod.Options
 import typings.rxjs.rxjsMod.Subject
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ class Request protected () extends js.Object {
   def this(client: IgApiClient) = this()
   var attemptOptions: PartialAttemptOptionsany = js.native
   var client: js.Any = js.native
-  var defaults: PartialOptions = js.native
+  var defaults: Partial[Options] = js.native
   @JSName("end$")
   var end$: Subject[js.Object] = js.native
   @JSName("error$")

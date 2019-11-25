@@ -17,9 +17,9 @@ trait DialogNodeNextStep extends js.Object {
 object DialogNodeNextStep {
   @scala.inline
   def apply(behavior: String, dialog_node: String = null, selector: String = null): DialogNodeNextStep = {
-    val __obj = js.Dynamic.literal(behavior = behavior)
-    if (dialog_node != null) __obj.updateDynamic("dialog_node")(dialog_node)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(behavior = behavior.asInstanceOf[js.Any])
+    if (dialog_node != null) __obj.updateDynamic("dialog_node")(dialog_node.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogNodeNextStep]
   }
 }

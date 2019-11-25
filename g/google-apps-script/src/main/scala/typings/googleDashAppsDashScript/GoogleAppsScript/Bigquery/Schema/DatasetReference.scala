@@ -13,8 +13,8 @@ object DatasetReference {
   @scala.inline
   def apply(datasetId: String = null, projectId: String = null): DatasetReference = {
     val __obj = js.Dynamic.literal()
-    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatasetReference]
   }
 }

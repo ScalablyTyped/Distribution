@@ -22,8 +22,8 @@ object Anon_ConfigurableEnumerable {
     writable: Boolean,
     value: js.UndefOr[scala.Nothing] = js.undefined
   ): Anon_ConfigurableEnumerable = {
-    val __obj = js.Dynamic.literal(configurable = configurable, enumerable = enumerable, initializer = js.Any.fromFunction0(initializer), writable = writable)
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(configurable = configurable.asInstanceOf[js.Any], enumerable = enumerable.asInstanceOf[js.Any], initializer = js.Any.fromFunction0(initializer), writable = writable.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ConfigurableEnumerable]
   }
 }

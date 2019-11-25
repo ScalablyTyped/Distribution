@@ -30,10 +30,10 @@ object StackFrame {
     location: SourceLocation = null
   ): StackFrame = {
     val __obj = js.Dynamic.literal()
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
-    if (function != null) __obj.updateDynamic("function")(function)
-    if (locals != null) __obj.updateDynamic("locals")(locals)
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
+    if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
+    if (locals != null) __obj.updateDynamic("locals")(locals.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackFrame]
   }
 }

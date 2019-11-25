@@ -14,8 +14,8 @@ object InitStoreOptions {
   @scala.inline
   def apply(ctx: NextJSContext[_, AnyAction] = null, initialState: js.Any = null): InitStoreOptions = {
     val __obj = js.Dynamic.literal()
-    if (ctx != null) __obj.updateDynamic("ctx")(ctx)
-    if (initialState != null) __obj.updateDynamic("initialState")(initialState)
+    if (ctx != null) __obj.updateDynamic("ctx")(ctx.asInstanceOf[js.Any])
+    if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitStoreOptions]
   }
 }

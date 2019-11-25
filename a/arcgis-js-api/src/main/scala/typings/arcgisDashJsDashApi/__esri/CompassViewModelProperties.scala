@@ -30,7 +30,7 @@ object CompassViewModelProperties {
   ): CompassViewModelProperties = {
     val __obj = js.Dynamic.literal()
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(js.Any.fromFunction2(goToOverride))
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompassViewModelProperties]
   }

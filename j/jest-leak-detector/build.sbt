@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest-leak-detector"
-version := "24.9.0-e54634"
+version := "24.9.0-e77ad1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

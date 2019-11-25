@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait Type extends js.Object
 
+object Type {
+  @scala.inline
+  def boolean: typings.minimistDashOptions.minimistDashOptionsStrings.boolean = this.cast("boolean")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def string: typings.minimistDashOptions.minimistDashOptionsStrings.string = this.cast("string")
+}
+

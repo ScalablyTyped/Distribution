@@ -15,8 +15,8 @@ object StandardErrorAppender {
   @scala.inline
   def apply(`type`: stderr, layout: Layout = null): StandardErrorAppender = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     __obj.asInstanceOf[StandardErrorAppender]
   }
 }

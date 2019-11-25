@@ -28,7 +28,7 @@ object IOptions {
   @scala.inline
   def apply[T /* <: Widget */](shell: T, contextMenuRenderer: IRenderer = null): IOptions[T] = {
     val __obj = js.Dynamic.literal(shell = shell.asInstanceOf[js.Any])
-    if (contextMenuRenderer != null) __obj.updateDynamic("contextMenuRenderer")(contextMenuRenderer)
+    if (contextMenuRenderer != null) __obj.updateDynamic("contextMenuRenderer")(contextMenuRenderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions[T]]
   }
 }

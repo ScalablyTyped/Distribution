@@ -21,8 +21,8 @@ trait InitiateVaultLockOutput extends _OutputTypesUnion {
 object InitiateVaultLockOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, lockId: String = null): InitiateVaultLockOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (lockId != null) __obj.updateDynamic("lockId")(lockId)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (lockId != null) __obj.updateDynamic("lockId")(lockId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitiateVaultLockOutput]
   }
 }

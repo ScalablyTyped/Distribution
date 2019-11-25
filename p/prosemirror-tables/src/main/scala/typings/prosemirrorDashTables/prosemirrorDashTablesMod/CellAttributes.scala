@@ -18,7 +18,7 @@ object CellAttributes {
     getFromDOM: /* dom */ Element => js.Any = null,
     setDOMAttr: (/* value */ js.Any, /* attrs */ js.Any) => js.Any = null
   ): CellAttributes = {
-    val __obj = js.Dynamic.literal(default = default)
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
     if (getFromDOM != null) __obj.updateDynamic("getFromDOM")(js.Any.fromFunction1(getFromDOM))
     if (setDOMAttr != null) __obj.updateDynamic("setDOMAttr")(js.Any.fromFunction2(setDOMAttr))
     __obj.asInstanceOf[CellAttributes]

@@ -30,10 +30,10 @@ object Thumbnail {
     width: Int | Double = null
   ): Thumbnail = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (sourceItemId != null) __obj.updateDynamic("sourceItemId")(sourceItemId)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (sourceItemId != null) __obj.updateDynamic("sourceItemId")(sourceItemId.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Thumbnail]
   }

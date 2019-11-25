@@ -49,11 +49,11 @@ object IOptions {
     sanitizer: ISanitizer = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (initialFactories != null) __obj.updateDynamic("initialFactories")(initialFactories)
-    if (latexTypesetter != null) __obj.updateDynamic("latexTypesetter")(latexTypesetter)
-    if (linkHandler != null) __obj.updateDynamic("linkHandler")(linkHandler)
-    if (resolver != null) __obj.updateDynamic("resolver")(resolver)
-    if (sanitizer != null) __obj.updateDynamic("sanitizer")(sanitizer)
+    if (initialFactories != null) __obj.updateDynamic("initialFactories")(initialFactories.asInstanceOf[js.Any])
+    if (latexTypesetter != null) __obj.updateDynamic("latexTypesetter")(latexTypesetter.asInstanceOf[js.Any])
+    if (linkHandler != null) __obj.updateDynamic("linkHandler")(linkHandler.asInstanceOf[js.Any])
+    if (resolver != null) __obj.updateDynamic("resolver")(resolver.asInstanceOf[js.Any])
+    if (sanitizer != null) __obj.updateDynamic("sanitizer")(sanitizer.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

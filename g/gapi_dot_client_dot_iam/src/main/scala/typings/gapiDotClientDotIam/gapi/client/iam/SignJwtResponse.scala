@@ -15,8 +15,8 @@ object SignJwtResponse {
   @scala.inline
   def apply(keyId: String = null, signedJwt: String = null): SignJwtResponse = {
     val __obj = js.Dynamic.literal()
-    if (keyId != null) __obj.updateDynamic("keyId")(keyId)
-    if (signedJwt != null) __obj.updateDynamic("signedJwt")(signedJwt)
+    if (keyId != null) __obj.updateDynamic("keyId")(keyId.asInstanceOf[js.Any])
+    if (signedJwt != null) __obj.updateDynamic("signedJwt")(signedJwt.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignJwtResponse]
   }
 }

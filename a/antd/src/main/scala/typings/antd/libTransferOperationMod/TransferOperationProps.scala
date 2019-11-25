@@ -35,15 +35,15 @@ object TransferOperationProps {
     style: CSSProperties = null
   ): TransferOperationProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(leftActive)) __obj.updateDynamic("leftActive")(leftActive)
-    if (leftArrowText != null) __obj.updateDynamic("leftArrowText")(leftArrowText)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(leftActive)) __obj.updateDynamic("leftActive")(leftActive.asInstanceOf[js.Any])
+    if (leftArrowText != null) __obj.updateDynamic("leftArrowText")(leftArrowText.asInstanceOf[js.Any])
     if (moveToLeft != null) __obj.updateDynamic("moveToLeft")(js.Any.fromFunction1(moveToLeft))
     if (moveToRight != null) __obj.updateDynamic("moveToRight")(js.Any.fromFunction1(moveToRight))
-    if (!js.isUndefined(rightActive)) __obj.updateDynamic("rightActive")(rightActive)
-    if (rightArrowText != null) __obj.updateDynamic("rightArrowText")(rightArrowText)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(rightActive)) __obj.updateDynamic("rightActive")(rightActive.asInstanceOf[js.Any])
+    if (rightArrowText != null) __obj.updateDynamic("rightArrowText")(rightArrowText.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferOperationProps]
   }
 }

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "ngmap"
-version := "v1.17.3-dt-20190322Z-8c90c3"
+version := "v1.17.3-dt-20190322Z-2084fa"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20191119Z-fa1b72",
-  "org.scalablytyped" %%% "googlemaps" % "3.38-dt-20191018Z-3dda5f",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20191119Z-af02cb",
+  "org.scalablytyped" %%% "googlemaps" % "3.38-dt-20191018Z-ec1f0e",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

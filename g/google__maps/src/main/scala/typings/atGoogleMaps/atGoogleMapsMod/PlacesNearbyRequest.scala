@@ -83,16 +83,16 @@ object PlacesNearbyRequest {
     `type`: AddressType = null
   ): PlacesNearbyRequest = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
-    if (keyword != null) __obj.updateDynamic("keyword")(keyword)
-    if (language != null) __obj.updateDynamic("language")(language)
+    if (keyword != null) __obj.updateDynamic("keyword")(keyword.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (maxprice != null) __obj.updateDynamic("maxprice")(maxprice.asInstanceOf[js.Any])
     if (minprice != null) __obj.updateDynamic("minprice")(minprice.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(opennow)) __obj.updateDynamic("opennow")(opennow)
-    if (pagetoken != null) __obj.updateDynamic("pagetoken")(pagetoken)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(opennow)) __obj.updateDynamic("opennow")(opennow.asInstanceOf[js.Any])
+    if (pagetoken != null) __obj.updateDynamic("pagetoken")(pagetoken.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (rankby != null) __obj.updateDynamic("rankby")(rankby)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (rankby != null) __obj.updateDynamic("rankby")(rankby.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlacesNearbyRequest]
   }
 }

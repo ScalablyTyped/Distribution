@@ -50,20 +50,20 @@ object HTMLAttributesidclassNamestyleindexnumberrenderTab {
     swipeable: js.UndefOr[Boolean] = js.undefined,
     tabBorder: js.UndefOr[Boolean] = js.undefined
   ): HTMLAttributesidclassNamestyleindexnumberrenderTab = {
-    val __obj = js.Dynamic.literal(index = index, renderTabs = js.Any.fromFunction0(renderTabs))
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], renderTabs = js.Any.fromFunction0(renderTabs))
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (ignoreEdgeWidth != null) __obj.updateDynamic("ignoreEdgeWidth")(ignoreEdgeWidth.asInstanceOf[js.Any])
     if (onPostChange != null) __obj.updateDynamic("onPostChange")(js.Any.fromFunction0(onPostChange))
     if (onPreChange != null) __obj.updateDynamic("onPreChange")(js.Any.fromFunction0(onPreChange))
     if (onReactive != null) __obj.updateDynamic("onReactive")(js.Any.fromFunction0(onReactive))
     if (onSwipe != null) __obj.updateDynamic("onSwipe")(js.Any.fromFunction2(onSwipe))
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(swipeable)) __obj.updateDynamic("swipeable")(swipeable)
-    if (!js.isUndefined(tabBorder)) __obj.updateDynamic("tabBorder")(tabBorder)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipeable)) __obj.updateDynamic("swipeable")(swipeable.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabBorder)) __obj.updateDynamic("tabBorder")(tabBorder.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLAttributesidclassNamestyleindexnumberrenderTab]
   }
 }

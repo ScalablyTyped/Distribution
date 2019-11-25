@@ -18,7 +18,7 @@ trait PatternObject extends _ColorType {
 object PatternObject {
   @scala.inline
   def apply(pattern: PatternOptionsObject, animation: Boolean | AnimationOptionsObject = null): PatternObject = {
-    val __obj = js.Dynamic.literal(pattern = pattern)
+    val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatternObject]
   }

@@ -35,9 +35,9 @@ object TextOptions {
     sizeSymbols: js.Array[String] = null
   ): TextOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultResponseError != null) __obj.updateDynamic("defaultResponseError")(defaultResponseError)
-    if (fileInputTitle != null) __obj.updateDynamic("fileInputTitle")(fileInputTitle)
-    if (sizeSymbols != null) __obj.updateDynamic("sizeSymbols")(sizeSymbols)
+    if (defaultResponseError != null) __obj.updateDynamic("defaultResponseError")(defaultResponseError.asInstanceOf[js.Any])
+    if (fileInputTitle != null) __obj.updateDynamic("fileInputTitle")(fileInputTitle.asInstanceOf[js.Any])
+    if (sizeSymbols != null) __obj.updateDynamic("sizeSymbols")(sizeSymbols.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextOptions]
   }
 }

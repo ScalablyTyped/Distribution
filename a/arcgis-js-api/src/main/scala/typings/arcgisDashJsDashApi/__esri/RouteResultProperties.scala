@@ -40,10 +40,10 @@ object RouteResultProperties {
     stops: js.Array[GraphicProperties] = null
   ): RouteResultProperties = {
     val __obj = js.Dynamic.literal()
-    if (directions != null) __obj.updateDynamic("directions")(directions)
-    if (route != null) __obj.updateDynamic("route")(route)
-    if (routeName != null) __obj.updateDynamic("routeName")(routeName)
-    if (stops != null) __obj.updateDynamic("stops")(stops)
+    if (directions != null) __obj.updateDynamic("directions")(directions.asInstanceOf[js.Any])
+    if (route != null) __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
+    if (routeName != null) __obj.updateDynamic("routeName")(routeName.asInstanceOf[js.Any])
+    if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteResultProperties]
   }
 }

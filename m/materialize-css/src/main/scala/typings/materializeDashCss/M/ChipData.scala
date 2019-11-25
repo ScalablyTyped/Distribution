@@ -18,8 +18,8 @@ trait ChipData extends js.Object {
 object ChipData {
   @scala.inline
   def apply(tag: String, img: String = null): ChipData = {
-    val __obj = js.Dynamic.literal(tag = tag)
-    if (img != null) __obj.updateDynamic("img")(img)
+    val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
+    if (img != null) __obj.updateDynamic("img")(img.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChipData]
   }
 }

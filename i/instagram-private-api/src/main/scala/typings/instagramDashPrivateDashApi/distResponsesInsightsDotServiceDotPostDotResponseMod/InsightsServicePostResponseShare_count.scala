@@ -12,7 +12,7 @@ trait InsightsServicePostResponseShare_count extends js.Object {
 object InsightsServicePostResponseShare_count {
   @scala.inline
   def apply(post: InsightsServicePostResponsePost, tray: InsightsServicePostResponseTray): InsightsServicePostResponseShare_count = {
-    val __obj = js.Dynamic.literal(post = post, tray = tray)
+    val __obj = js.Dynamic.literal(post = post.asInstanceOf[js.Any], tray = tray.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServicePostResponseShare_count]
   }

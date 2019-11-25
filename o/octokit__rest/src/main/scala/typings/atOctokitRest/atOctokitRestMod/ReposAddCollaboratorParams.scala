@@ -23,7 +23,7 @@ trait ReposAddCollaboratorParams extends js.Object {
 object ReposAddCollaboratorParams {
   @scala.inline
   def apply(owner: String, repo: String, username: String, permission: pull | push | admin = null): ReposAddCollaboratorParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo, username = username)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     if (permission != null) __obj.updateDynamic("permission")(permission.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposAddCollaboratorParams]
   }

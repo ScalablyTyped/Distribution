@@ -20,9 +20,9 @@ object ElseifClause {
     `type`: typings.luaparse.luaparseStrings.ElseifClause,
     loc: Anon_End = null
   ): ElseifClause = {
-    val __obj = js.Dynamic.literal(body = body, condition = condition)
-    __obj.updateDynamic("type")(`type`)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], condition = condition.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElseifClause]
   }
 }

@@ -23,10 +23,10 @@ object AppToolbarButtonDescriptor {
     iconClass: String = null,
     titleClass: String = null
   ): AppToolbarButtonDescriptor = {
-    val __obj = js.Dynamic.literal(iconUrl = iconUrl, onClick = js.Any.fromFunction1(onClick), title = title)
-    if (arrowColor != null) __obj.updateDynamic("arrowColor")(arrowColor)
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
-    if (titleClass != null) __obj.updateDynamic("titleClass")(titleClass)
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), title = title.asInstanceOf[js.Any])
+    if (arrowColor != null) __obj.updateDynamic("arrowColor")(arrowColor.asInstanceOf[js.Any])
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
+    if (titleClass != null) __obj.updateDynamic("titleClass")(titleClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppToolbarButtonDescriptor]
   }
 }

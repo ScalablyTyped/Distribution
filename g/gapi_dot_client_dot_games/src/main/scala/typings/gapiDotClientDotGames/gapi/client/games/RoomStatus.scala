@@ -38,11 +38,11 @@ object RoomStatus {
     statusVersion: Int | Double = null
   ): RoomStatus = {
     val __obj = js.Dynamic.literal()
-    if (autoMatchingStatus != null) __obj.updateDynamic("autoMatchingStatus")(autoMatchingStatus)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (participants != null) __obj.updateDynamic("participants")(participants)
-    if (roomId != null) __obj.updateDynamic("roomId")(roomId)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (autoMatchingStatus != null) __obj.updateDynamic("autoMatchingStatus")(autoMatchingStatus.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (participants != null) __obj.updateDynamic("participants")(participants.asInstanceOf[js.Any])
+    if (roomId != null) __obj.updateDynamic("roomId")(roomId.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (statusVersion != null) __obj.updateDynamic("statusVersion")(statusVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomStatus]
   }

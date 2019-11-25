@@ -25,8 +25,8 @@ object GmailAttachmentOptions {
     includeInlineImages: js.UndefOr[Boolean] = js.undefined
   ): GmailAttachmentOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeAttachments)) __obj.updateDynamic("includeAttachments")(includeAttachments)
-    if (!js.isUndefined(includeInlineImages)) __obj.updateDynamic("includeInlineImages")(includeInlineImages)
+    if (!js.isUndefined(includeAttachments)) __obj.updateDynamic("includeAttachments")(includeAttachments.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeInlineImages)) __obj.updateDynamic("includeInlineImages")(includeInlineImages.asInstanceOf[js.Any])
     __obj.asInstanceOf[GmailAttachmentOptions]
   }
 }

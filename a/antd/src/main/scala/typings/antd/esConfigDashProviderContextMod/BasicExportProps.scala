@@ -12,7 +12,7 @@ object BasicExportProps {
   @scala.inline
   def apply(prefixCls: String = null): BasicExportProps = {
     val __obj = js.Dynamic.literal()
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasicExportProps]
   }
 }

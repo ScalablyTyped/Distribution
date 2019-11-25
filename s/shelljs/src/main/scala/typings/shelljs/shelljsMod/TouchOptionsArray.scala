@@ -13,8 +13,8 @@ object TouchOptionsArray {
   @scala.inline
   def apply(`-d`: String = null, `-r`: String = null): TouchOptionsArray = {
     val __obj = js.Dynamic.literal()
-    if (`-d` != null) __obj.updateDynamic("-d")(`-d`)
-    if (`-r` != null) __obj.updateDynamic("-r")(`-r`)
+    if (`-d` != null) __obj.updateDynamic("-d")(`-d`.asInstanceOf[js.Any])
+    if (`-r` != null) __obj.updateDynamic("-r")(`-r`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchOptionsArray]
   }
 }

@@ -13,7 +13,7 @@ object useDashCombinedDashReducersMod extends js.Object {
     combinedReducers: Record[
       String, 
       js.Tuple2[
-        /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
         Dispatch[A]
       ]
     ]

@@ -13,8 +13,8 @@ object GooglePrivacyDlpV2beta1CharsToIgnore {
   @scala.inline
   def apply(charactersToSkip: String = null, commonCharactersToIgnore: String = null): GooglePrivacyDlpV2beta1CharsToIgnore = {
     val __obj = js.Dynamic.literal()
-    if (charactersToSkip != null) __obj.updateDynamic("charactersToSkip")(charactersToSkip)
-    if (commonCharactersToIgnore != null) __obj.updateDynamic("commonCharactersToIgnore")(commonCharactersToIgnore)
+    if (charactersToSkip != null) __obj.updateDynamic("charactersToSkip")(charactersToSkip.asInstanceOf[js.Any])
+    if (commonCharactersToIgnore != null) __obj.updateDynamic("commonCharactersToIgnore")(commonCharactersToIgnore.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1CharsToIgnore]
   }
 }

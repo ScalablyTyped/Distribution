@@ -16,8 +16,8 @@ object TypeLabel {
   @scala.inline
   def apply(label: Label = null, provenance_ids: js.Array[String] = null): TypeLabel = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (provenance_ids != null) __obj.updateDynamic("provenance_ids")(provenance_ids)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (provenance_ids != null) __obj.updateDynamic("provenance_ids")(provenance_ids.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeLabel]
   }
 }

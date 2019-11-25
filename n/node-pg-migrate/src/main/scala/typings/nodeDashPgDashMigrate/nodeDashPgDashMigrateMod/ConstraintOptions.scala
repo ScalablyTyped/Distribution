@@ -29,13 +29,13 @@ object ConstraintOptions {
   ): ConstraintOptions = {
     val __obj = js.Dynamic.literal()
     if (check != null) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (!js.isUndefined(deferrable)) __obj.updateDynamic("deferrable")(deferrable)
-    if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred)
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (!js.isUndefined(deferrable)) __obj.updateDynamic("deferrable")(deferrable.asInstanceOf[js.Any])
+    if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     if (foreignKeys != null) __obj.updateDynamic("foreignKeys")(foreignKeys.asInstanceOf[js.Any])
     if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
-    if (unique != null) __obj.updateDynamic("unique")(unique)
+    if (unique != null) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstraintOptions]
   }
 }

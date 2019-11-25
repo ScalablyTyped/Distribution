@@ -29,9 +29,9 @@ object GoogleActionsTransactionsV3CompletePurchaseValue {
     purchaseToken: String = null
   ): GoogleActionsTransactionsV3CompletePurchaseValue = {
     val __obj = js.Dynamic.literal()
-    if (orderId != null) __obj.updateDynamic("orderId")(orderId)
-    if (purchaseStatus != null) __obj.updateDynamic("purchaseStatus")(purchaseStatus)
-    if (purchaseToken != null) __obj.updateDynamic("purchaseToken")(purchaseToken)
+    if (orderId != null) __obj.updateDynamic("orderId")(orderId.asInstanceOf[js.Any])
+    if (purchaseStatus != null) __obj.updateDynamic("purchaseStatus")(purchaseStatus.asInstanceOf[js.Any])
+    if (purchaseToken != null) __obj.updateDynamic("purchaseToken")(purchaseToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsTransactionsV3CompletePurchaseValue]
   }
 }

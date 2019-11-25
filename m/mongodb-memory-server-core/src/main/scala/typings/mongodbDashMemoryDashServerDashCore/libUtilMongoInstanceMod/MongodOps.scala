@@ -23,10 +23,10 @@ object MongodOps {
     debug: DebugPropT = null,
     spawn: SpawnOptions = null
   ): MongodOps = {
-    val __obj = js.Dynamic.literal(instance = instance)
-    if (binary != null) __obj.updateDynamic("binary")(binary)
+    val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any])
+    if (binary != null) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
     if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (spawn != null) __obj.updateDynamic("spawn")(spawn)
+    if (spawn != null) __obj.updateDynamic("spawn")(spawn.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongodOps]
   }
 }

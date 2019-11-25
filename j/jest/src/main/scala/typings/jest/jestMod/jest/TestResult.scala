@@ -42,12 +42,12 @@ object TestResult {
     memoryUsage: Int | Double = null,
     testExecError: SerializableError = null
   ): TestResult = {
-    val __obj = js.Dynamic.literal(numFailingTests = numFailingTests, numPassingTests = numPassingTests, numPendingTests = numPendingTests, perfStats = perfStats, skipped = skipped, snapshot = snapshot, sourceMaps = sourceMaps, testFilePath = testFilePath, testResults = testResults)
+    val __obj = js.Dynamic.literal(numFailingTests = numFailingTests.asInstanceOf[js.Any], numPassingTests = numPassingTests.asInstanceOf[js.Any], numPendingTests = numPendingTests.asInstanceOf[js.Any], perfStats = perfStats.asInstanceOf[js.Any], skipped = skipped.asInstanceOf[js.Any], snapshot = snapshot.asInstanceOf[js.Any], sourceMaps = sourceMaps.asInstanceOf[js.Any], testFilePath = testFilePath.asInstanceOf[js.Any], testResults = testResults.asInstanceOf[js.Any])
     if (console != null) __obj.updateDynamic("console")(console.asInstanceOf[js.Any])
-    if (coverage != null) __obj.updateDynamic("coverage")(coverage)
+    if (coverage != null) __obj.updateDynamic("coverage")(coverage.asInstanceOf[js.Any])
     if (failureMessage != null) __obj.updateDynamic("failureMessage")(failureMessage.asInstanceOf[js.Any])
     if (memoryUsage != null) __obj.updateDynamic("memoryUsage")(memoryUsage.asInstanceOf[js.Any])
-    if (testExecError != null) __obj.updateDynamic("testExecError")(testExecError)
+    if (testExecError != null) __obj.updateDynamic("testExecError")(testExecError.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestResult]
   }
 }

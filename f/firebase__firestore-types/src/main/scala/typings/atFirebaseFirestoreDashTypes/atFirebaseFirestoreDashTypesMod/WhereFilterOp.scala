@@ -16,3 +16,24 @@ import scala.scalajs.js.annotation._
 */
 trait WhereFilterOp extends js.Object
 
+object WhereFilterOp {
+  @scala.inline
+  def `<`: typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesStrings.`<` = this.cast("<")
+  @scala.inline
+  def `<=`: typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesStrings.`<=` = this.cast("<=")
+  @scala.inline
+  def `==`: typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesStrings.`==` = this.cast("==")
+  @scala.inline
+  def `>`: typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesStrings.`>` = this.cast(">")
+  @scala.inline
+  def `>=`: typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesStrings.`>=` = this.cast(">=")
+  @scala.inline
+  def `array-contains`: typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesStrings.`array-contains` = this.cast("array-contains")
+  @scala.inline
+  def `array-contains-any`: typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesStrings.`array-contains-any` = this.cast("array-contains-any")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def in: typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesStrings.in = this.cast("in")
+}
+

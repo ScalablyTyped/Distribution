@@ -27,7 +27,7 @@ trait IEntityCarriedItemChangedEventData extends js.Object {
 object IEntityCarriedItemChangedEventData {
   @scala.inline
   def apply(carried_item: IItemStack, entity: IEntity, previous_carried_item: IItemStack): IEntityCarriedItemChangedEventData = {
-    val __obj = js.Dynamic.literal(carried_item = carried_item, entity = entity, previous_carried_item = previous_carried_item)
+    val __obj = js.Dynamic.literal(carried_item = carried_item.asInstanceOf[js.Any], entity = entity.asInstanceOf[js.Any], previous_carried_item = previous_carried_item.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IEntityCarriedItemChangedEventData]
   }

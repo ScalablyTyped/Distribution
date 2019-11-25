@@ -59,17 +59,17 @@ object IFindNearRouteOptions {
     start: String | Location = null,
     travelMode: String = null
   ): IFindNearRouteOptions = {
-    val __obj = js.Dynamic.literal(spatialFilterType = spatialFilterType)
-    if (avoid != null) __obj.updateDynamic("avoid")(avoid)
+    val __obj = js.Dynamic.literal(spatialFilterType = spatialFilterType.asInstanceOf[js.Any])
+    if (avoid != null) __obj.updateDynamic("avoid")(avoid.asInstanceOf[js.Any])
     if (distanceBeforeFirstTurn != null) __obj.updateDynamic("distanceBeforeFirstTurn")(distanceBeforeFirstTurn.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
     if (intersects != null) __obj.updateDynamic("intersects")(intersects.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (optimize != null) __obj.updateDynamic("optimize")(optimize)
+    if (optimize != null) __obj.updateDynamic("optimize")(optimize.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (travelMode != null) __obj.updateDynamic("travelMode")(travelMode)
+    if (travelMode != null) __obj.updateDynamic("travelMode")(travelMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFindNearRouteOptions]
   }
 }

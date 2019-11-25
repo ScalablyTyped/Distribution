@@ -24,8 +24,8 @@ object Anon_FixedLineage {
     windowOffset: Anon_Bottom,
     usemapImage: HTMLImageElement = null
   ): Anon_FixedLineage = {
-    val __obj = js.Dynamic.literal(fixedLineage = fixedLineage, offset = offset, size = size, windowOffset = windowOffset)
-    if (usemapImage != null) __obj.updateDynamic("usemapImage")(usemapImage)
+    val __obj = js.Dynamic.literal(fixedLineage = fixedLineage.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], windowOffset = windowOffset.asInstanceOf[js.Any])
+    if (usemapImage != null) __obj.updateDynamic("usemapImage")(usemapImage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FixedLineage]
   }
 }

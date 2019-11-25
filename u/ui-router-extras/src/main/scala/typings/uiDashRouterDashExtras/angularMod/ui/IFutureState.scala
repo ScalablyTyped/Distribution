@@ -34,9 +34,9 @@ object IFutureState {
     url: String,
     StringDictionary: /* key */ StringDictionary[js.Any] = null
   ): IFutureState = {
-    val __obj = js.Dynamic.literal(stateName = stateName, url = url)
-    __obj.updateDynamic("type")(`type`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(stateName = stateName.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IFutureState]
   }
 }

@@ -38,7 +38,7 @@ object Onfleet {
     webhooks: typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.^,
     workers: typings.atOnfleetNodeDashOnfleet.resourcesWorkersMod.^
   ): Onfleet = {
-    val __obj = js.Dynamic.literal(admins = admins, api = api, apiKey = apiKey, containers = containers, destinations = destinations, hubs = hubs, organization = organization, recipients = recipients, tasks = tasks, teams = teams, verifyKey = js.Any.fromFunction0(verifyKey), webhooks = webhooks, workers = workers)
+    val __obj = js.Dynamic.literal(admins = admins.asInstanceOf[js.Any], api = api.asInstanceOf[js.Any], apiKey = apiKey.asInstanceOf[js.Any], containers = containers.asInstanceOf[js.Any], destinations = destinations.asInstanceOf[js.Any], hubs = hubs.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], recipients = recipients.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any], verifyKey = js.Any.fromFunction0(verifyKey), webhooks = webhooks.asInstanceOf[js.Any], workers = workers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Onfleet]
   }

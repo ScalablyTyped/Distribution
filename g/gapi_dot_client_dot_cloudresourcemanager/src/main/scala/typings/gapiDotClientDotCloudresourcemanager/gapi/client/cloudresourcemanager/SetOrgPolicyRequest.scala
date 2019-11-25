@@ -13,7 +13,7 @@ object SetOrgPolicyRequest {
   @scala.inline
   def apply(policy: OrgPolicy = null): SetOrgPolicyRequest = {
     val __obj = js.Dynamic.literal()
-    if (policy != null) __obj.updateDynamic("policy")(policy)
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetOrgPolicyRequest]
   }
 }

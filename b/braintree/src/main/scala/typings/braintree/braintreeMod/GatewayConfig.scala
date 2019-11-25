@@ -14,7 +14,7 @@ trait GatewayConfig extends js.Object {
 object GatewayConfig {
   @scala.inline
   def apply(environment: Environment, merchantId: String, privateKey: String, publicKey: String): GatewayConfig = {
-    val __obj = js.Dynamic.literal(environment = environment, merchantId = merchantId, privateKey = privateKey, publicKey = publicKey)
+    val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], merchantId = merchantId.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GatewayConfig]
   }

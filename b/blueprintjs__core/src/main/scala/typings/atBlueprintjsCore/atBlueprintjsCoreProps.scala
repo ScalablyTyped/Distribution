@@ -14,6 +14,7 @@ import typings.atBlueprintjsCore.libEsmComponentsDrawerDrawerMod.IDrawerProps
 import typings.atBlueprintjsCore.libEsmComponentsEditableDashTextEditableTextMod.IEditableTextProps
 import typings.atBlueprintjsCore.libEsmComponentsFormsControlGroupMod.IControlGroupProps
 import typings.atBlueprintjsCore.libEsmComponentsFormsControlsMod.ICheckboxProps
+import typings.atBlueprintjsCore.libEsmComponentsFormsControlsMod.IControlProps
 import typings.atBlueprintjsCore.libEsmComponentsFormsControlsMod.IRadioProps
 import typings.atBlueprintjsCore.libEsmComponentsFormsControlsMod.ISwitchProps
 import typings.atBlueprintjsCore.libEsmComponentsFormsFileInputMod.IFileInputProps
@@ -167,6 +168,8 @@ trait atBlueprintjsCoreProps {
   @scala.inline
   def ProgressBarProps: IProgressBarProps.type = typings.atBlueprintjsCore.libEsmComponentsProgressDashBarProgressBarMod.IProgressBarProps
   type ProgressBarProps = IProgressBarProps
+  @scala.inline
+  def RadioProps: IControlProps.type = typings.atBlueprintjsCore.libEsmComponentsFormsControlsMod.IControlProps
   type RadioProps = IRadioProps
   @scala.inline
   def RadioGroupProps: IRadioGroupProps.type = typings.atBlueprintjsCore.libEsmComponentsFormsRadioGroupMod.IRadioGroupProps

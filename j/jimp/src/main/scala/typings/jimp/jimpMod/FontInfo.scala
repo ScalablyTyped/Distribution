@@ -33,7 +33,7 @@ object FontInfo {
     stretchH: Double,
     unicode: Double
   ): FontInfo = {
-    val __obj = js.Dynamic.literal(aa = aa, bold = bold, charset = charset, face = face, italic = italic, padding = padding, size = size, smooth = smooth, spacing = spacing, stretchH = stretchH, unicode = unicode)
+    val __obj = js.Dynamic.literal(aa = aa.asInstanceOf[js.Any], bold = bold.asInstanceOf[js.Any], charset = charset.asInstanceOf[js.Any], face = face.asInstanceOf[js.Any], italic = italic.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], smooth = smooth.asInstanceOf[js.Any], spacing = spacing.asInstanceOf[js.Any], stretchH = stretchH.asInstanceOf[js.Any], unicode = unicode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FontInfo]
   }

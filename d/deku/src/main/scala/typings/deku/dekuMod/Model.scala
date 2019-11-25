@@ -22,11 +22,11 @@ object Model {
     props: js.Any = null
   ): Model = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (context != null) __obj.updateDynamic("context")(context)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (dispatch != null) __obj.updateDynamic("dispatch")(js.Any.fromFunction1(dispatch))
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (props != null) __obj.updateDynamic("props")(props)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

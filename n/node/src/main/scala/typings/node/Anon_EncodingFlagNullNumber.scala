@@ -13,7 +13,7 @@ object Anon_EncodingFlagNullNumber {
   @scala.inline
   def apply(encoding: Null = null, flag: java.lang.String | Double = null): Anon_EncodingFlagNullNumber = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (flag != null) __obj.updateDynamic("flag")(flag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EncodingFlagNullNumber]
   }

@@ -24,10 +24,10 @@ object ThisTypePredicate {
     parameterIndex: js.UndefOr[scala.Nothing] = js.undefined,
     parameterName: js.UndefOr[scala.Nothing] = js.undefined
   ): ThisTypePredicate = {
-    val __obj = js.Dynamic.literal(kind = kind)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(parameterIndex)) __obj.updateDynamic("parameterIndex")(parameterIndex)
-    if (!js.isUndefined(parameterName)) __obj.updateDynamic("parameterName")(parameterName)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(parameterIndex)) __obj.updateDynamic("parameterIndex")(parameterIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(parameterName)) __obj.updateDynamic("parameterName")(parameterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThisTypePredicate]
   }
 }

@@ -25,11 +25,11 @@ object TermsAndConditionsAcceptanceStatus {
     userDisplayName: String = null
   ): TermsAndConditionsAcceptanceStatus = {
     val __obj = js.Dynamic.literal()
-    if (acceptedDateTime != null) __obj.updateDynamic("acceptedDateTime")(acceptedDateTime)
+    if (acceptedDateTime != null) __obj.updateDynamic("acceptedDateTime")(acceptedDateTime.asInstanceOf[js.Any])
     if (acceptedVersion != null) __obj.updateDynamic("acceptedVersion")(acceptedVersion.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (termsAndConditions != null) __obj.updateDynamic("termsAndConditions")(termsAndConditions)
-    if (userDisplayName != null) __obj.updateDynamic("userDisplayName")(userDisplayName)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (termsAndConditions != null) __obj.updateDynamic("termsAndConditions")(termsAndConditions.asInstanceOf[js.Any])
+    if (userDisplayName != null) __obj.updateDynamic("userDisplayName")(userDisplayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TermsAndConditionsAcceptanceStatus]
   }
 }

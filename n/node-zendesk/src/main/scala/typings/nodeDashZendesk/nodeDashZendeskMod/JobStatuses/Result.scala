@@ -15,7 +15,7 @@ trait Result extends PersistableModel {
 object Result {
   @scala.inline
   def apply(action: String, id: ZendeskID, status: String, success: Boolean): Result = {
-    val __obj = js.Dynamic.literal(action = action, id = id, status = status, success = success)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Result]
   }

@@ -12,7 +12,7 @@ object baseComponentSettableProperties {
   @scala.inline
   def apply(translations: js.Object = null): baseComponentSettableProperties = {
     val __obj = js.Dynamic.literal()
-    if (translations != null) __obj.updateDynamic("translations")(translations)
+    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[baseComponentSettableProperties]
   }
 }

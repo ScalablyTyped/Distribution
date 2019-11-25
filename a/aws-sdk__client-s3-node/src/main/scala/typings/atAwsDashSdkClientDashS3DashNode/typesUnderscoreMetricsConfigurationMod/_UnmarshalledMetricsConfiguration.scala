@@ -16,8 +16,8 @@ trait _UnmarshalledMetricsConfiguration extends _MetricsConfiguration {
 object _UnmarshalledMetricsConfiguration {
   @scala.inline
   def apply(Id: String, Filter: _UnmarshalledMetricsFilter = null): _UnmarshalledMetricsConfiguration = {
-    val __obj = js.Dynamic.literal(Id = Id)
-    if (Filter != null) __obj.updateDynamic("Filter")(Filter)
+    val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
+    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledMetricsConfiguration]
   }
 }

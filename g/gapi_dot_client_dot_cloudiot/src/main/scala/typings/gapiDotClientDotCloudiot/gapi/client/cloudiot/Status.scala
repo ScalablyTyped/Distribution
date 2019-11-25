@@ -26,8 +26,8 @@ object Status {
   def apply(code: Int | Double = null, details: js.Array[Record[String, _]] = null, message: String = null): Status = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (details != null) __obj.updateDynamic("details")(details)
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[Status]
   }
 }

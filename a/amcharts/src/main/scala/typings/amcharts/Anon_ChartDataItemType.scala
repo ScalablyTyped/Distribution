@@ -15,8 +15,8 @@ trait Anon_ChartDataItemType extends js.Object {
 object Anon_ChartDataItemType {
   @scala.inline
   def apply(chart: default, dataItem: typings.amcharts.sliceMod.default, `type`: String): Anon_ChartDataItemType = {
-    val __obj = js.Dynamic.literal(chart = chart, dataItem = dataItem)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], dataItem = dataItem.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChartDataItemType]
   }
 }

@@ -66,7 +66,7 @@ object Anon_DefaultTab {
     trackingAnalyticsAccountId: String,
     unsubscribedTrailer: String
   ): Anon_DefaultTab = {
-    val __obj = js.Dynamic.literal(defaultTab = defaultTab, description = description, featuredChannelsTitle = featuredChannelsTitle, featuredChannelsUrls = featuredChannelsUrls, keywords = keywords, moderateComments = moderateComments, showBrowseView = showBrowseView, showRelatedChannels = showRelatedChannels, title = title, trackingAnalyticsAccountId = trackingAnalyticsAccountId, unsubscribedTrailer = unsubscribedTrailer)
+    val __obj = js.Dynamic.literal(defaultTab = defaultTab.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], featuredChannelsTitle = featuredChannelsTitle.asInstanceOf[js.Any], featuredChannelsUrls = featuredChannelsUrls.asInstanceOf[js.Any], keywords = keywords.asInstanceOf[js.Any], moderateComments = moderateComments.asInstanceOf[js.Any], showBrowseView = showBrowseView.asInstanceOf[js.Any], showRelatedChannels = showRelatedChannels.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], trackingAnalyticsAccountId = trackingAnalyticsAccountId.asInstanceOf[js.Any], unsubscribedTrailer = unsubscribedTrailer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DefaultTab]
   }

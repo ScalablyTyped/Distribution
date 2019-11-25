@@ -24,12 +24,12 @@ object OccupantInfo {
     status: String = null
   ): OccupantInfo = {
     val __obj = js.Dynamic.literal()
-    if (affiliation != null) __obj.updateDynamic("affiliation")(affiliation)
-    if (jid != null) __obj.updateDynamic("jid")(jid)
-    if (nick != null) __obj.updateDynamic("nick")(nick)
-    if (role != null) __obj.updateDynamic("role")(role)
-    if (show != null) __obj.updateDynamic("show")(show)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (affiliation != null) __obj.updateDynamic("affiliation")(affiliation.asInstanceOf[js.Any])
+    if (jid != null) __obj.updateDynamic("jid")(jid.asInstanceOf[js.Any])
+    if (nick != null) __obj.updateDynamic("nick")(nick.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[OccupantInfo]
   }
 }

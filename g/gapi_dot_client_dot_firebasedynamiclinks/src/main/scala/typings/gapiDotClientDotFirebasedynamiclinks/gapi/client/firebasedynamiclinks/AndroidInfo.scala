@@ -27,10 +27,10 @@ object AndroidInfo {
     androidPackageName: String = null
   ): AndroidInfo = {
     val __obj = js.Dynamic.literal()
-    if (androidFallbackLink != null) __obj.updateDynamic("androidFallbackLink")(androidFallbackLink)
-    if (androidLink != null) __obj.updateDynamic("androidLink")(androidLink)
-    if (androidMinPackageVersionCode != null) __obj.updateDynamic("androidMinPackageVersionCode")(androidMinPackageVersionCode)
-    if (androidPackageName != null) __obj.updateDynamic("androidPackageName")(androidPackageName)
+    if (androidFallbackLink != null) __obj.updateDynamic("androidFallbackLink")(androidFallbackLink.asInstanceOf[js.Any])
+    if (androidLink != null) __obj.updateDynamic("androidLink")(androidLink.asInstanceOf[js.Any])
+    if (androidMinPackageVersionCode != null) __obj.updateDynamic("androidMinPackageVersionCode")(androidMinPackageVersionCode.asInstanceOf[js.Any])
+    if (androidPackageName != null) __obj.updateDynamic("androidPackageName")(androidPackageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidInfo]
   }
 }

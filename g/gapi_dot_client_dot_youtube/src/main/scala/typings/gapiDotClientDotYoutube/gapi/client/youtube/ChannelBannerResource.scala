@@ -17,9 +17,9 @@ object ChannelBannerResource {
   @scala.inline
   def apply(etag: String = null, kind: String = null, url: String = null): ChannelBannerResource = {
     val __obj = js.Dynamic.literal()
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelBannerResource]
   }
 }

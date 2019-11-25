@@ -25,11 +25,11 @@ object Anon_Db {
     pubsub: PubSub = null
   ): Anon_Db = {
     val __obj = js.Dynamic.literal()
-    if (db != null) __obj.updateDynamic("db")(db)
-    if (!js.isUndefined(disableDocAction)) __obj.updateDynamic("disableDocAction")(disableDocAction)
-    if (!js.isUndefined(disableSpaceDelimitedActions)) __obj.updateDynamic("disableSpaceDelimitedActions")(disableSpaceDelimitedActions)
-    if (extraDbs != null) __obj.updateDynamic("extraDbs")(extraDbs)
-    if (pubsub != null) __obj.updateDynamic("pubsub")(pubsub)
+    if (db != null) __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableDocAction)) __obj.updateDynamic("disableDocAction")(disableDocAction.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableSpaceDelimitedActions)) __obj.updateDynamic("disableSpaceDelimitedActions")(disableSpaceDelimitedActions.asInstanceOf[js.Any])
+    if (extraDbs != null) __obj.updateDynamic("extraDbs")(extraDbs.asInstanceOf[js.Any])
+    if (pubsub != null) __obj.updateDynamic("pubsub")(pubsub.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Db]
   }
 }

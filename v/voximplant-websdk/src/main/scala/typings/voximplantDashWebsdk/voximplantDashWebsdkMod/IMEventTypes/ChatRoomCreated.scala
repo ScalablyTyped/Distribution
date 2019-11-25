@@ -18,7 +18,7 @@ trait ChatRoomCreated extends VoxImplantIMEvent {
 object ChatRoomCreated {
   @scala.inline
   def apply(room: String): ChatRoomCreated = {
-    val __obj = js.Dynamic.literal(room = room)
+    val __obj = js.Dynamic.literal(room = room.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChatRoomCreated]
   }

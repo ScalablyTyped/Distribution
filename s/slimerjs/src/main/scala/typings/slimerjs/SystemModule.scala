@@ -34,7 +34,7 @@ object SystemModule {
     stdin: Std,
     stdout: Std
   ): SystemModule = {
-    val __obj = js.Dynamic.literal(args = args, env = env, os = os, pid = pid, platform = platform, standarderr = standarderr, standardin = standardin, standardout = standardout, stderr = stderr, stdin = stdin, stdout = stdout)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], standarderr = standarderr.asInstanceOf[js.Any], standardin = standardin.asInstanceOf[js.Any], standardout = standardout.asInstanceOf[js.Any], stderr = stderr.asInstanceOf[js.Any], stdin = stdin.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SystemModule]
   }

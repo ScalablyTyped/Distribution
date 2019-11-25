@@ -34,12 +34,12 @@ object Anon_ClassWeightedAccuracy {
     numberLabels: String = null
   ): Anon_ClassWeightedAccuracy = {
     val __obj = js.Dynamic.literal()
-    if (classWeightedAccuracy != null) __obj.updateDynamic("classWeightedAccuracy")(classWeightedAccuracy)
-    if (classificationAccuracy != null) __obj.updateDynamic("classificationAccuracy")(classificationAccuracy)
-    if (meanSquaredError != null) __obj.updateDynamic("meanSquaredError")(meanSquaredError)
-    if (modelType != null) __obj.updateDynamic("modelType")(modelType)
-    if (numberInstances != null) __obj.updateDynamic("numberInstances")(numberInstances)
-    if (numberLabels != null) __obj.updateDynamic("numberLabels")(numberLabels)
+    if (classWeightedAccuracy != null) __obj.updateDynamic("classWeightedAccuracy")(classWeightedAccuracy.asInstanceOf[js.Any])
+    if (classificationAccuracy != null) __obj.updateDynamic("classificationAccuracy")(classificationAccuracy.asInstanceOf[js.Any])
+    if (meanSquaredError != null) __obj.updateDynamic("meanSquaredError")(meanSquaredError.asInstanceOf[js.Any])
+    if (modelType != null) __obj.updateDynamic("modelType")(modelType.asInstanceOf[js.Any])
+    if (numberInstances != null) __obj.updateDynamic("numberInstances")(numberInstances.asInstanceOf[js.Any])
+    if (numberLabels != null) __obj.updateDynamic("numberLabels")(numberLabels.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClassWeightedAccuracy]
   }
 }

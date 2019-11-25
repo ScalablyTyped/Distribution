@@ -1,7 +1,6 @@
 package typings.prettier.prettierMod.doc.builders
 
 import typings.prettier.Anon_ShouldBreak
-import typings.prettier.prettierStrings.group
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,7 @@ trait Group extends _Doc {
   var break: Boolean
   var contents: typings.prettier.prettierMod.doc.builders.Doc
   var expandedStates: js.Array[typings.prettier.prettierMod.doc.builders.Doc]
-  var `type`: group
+  var `type`: typings.prettier.prettierStrings.group
 }
 
 object Group {
@@ -19,10 +18,10 @@ object Group {
     break: Boolean,
     contents: typings.prettier.prettierMod.doc.builders.Doc,
     expandedStates: js.Array[typings.prettier.prettierMod.doc.builders.Doc],
-    `type`: group
+    `type`: typings.prettier.prettierStrings.group
   ): Group = {
-    val __obj = js.Dynamic.literal(break = break, contents = contents.asInstanceOf[js.Any], expandedStates = expandedStates)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(break = break.asInstanceOf[js.Any], contents = contents.asInstanceOf[js.Any], expandedStates = expandedStates.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Group]
   }
 }

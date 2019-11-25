@@ -20,10 +20,10 @@ object Options {
     useDefaults: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(injectPolyfill)) __obj.updateDynamic("injectPolyfill")(injectPolyfill)
+    if (!js.isUndefined(injectPolyfill)) __obj.updateDynamic("injectPolyfill")(injectPolyfill.asInstanceOf[js.Any])
     if (requestToExternal != null) __obj.updateDynamic("requestToExternal")(js.Any.fromFunction1(requestToExternal))
     if (requestToHandle != null) __obj.updateDynamic("requestToHandle")(js.Any.fromFunction1(requestToHandle))
-    if (!js.isUndefined(useDefaults)) __obj.updateDynamic("useDefaults")(useDefaults)
+    if (!js.isUndefined(useDefaults)) __obj.updateDynamic("useDefaults")(useDefaults.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

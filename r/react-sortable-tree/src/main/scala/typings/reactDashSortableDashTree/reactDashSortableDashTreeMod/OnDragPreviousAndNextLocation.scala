@@ -20,9 +20,9 @@ object OnDragPreviousAndNextLocation {
     nextParent: TreeItem = null,
     prevParent: TreeItem = null
   ): OnDragPreviousAndNextLocation = {
-    val __obj = js.Dynamic.literal(nextPath = nextPath, nextTreeIndex = nextTreeIndex, prevPath = prevPath, prevTreeIndex = prevTreeIndex)
-    if (nextParent != null) __obj.updateDynamic("nextParent")(nextParent)
-    if (prevParent != null) __obj.updateDynamic("prevParent")(prevParent)
+    val __obj = js.Dynamic.literal(nextPath = nextPath.asInstanceOf[js.Any], nextTreeIndex = nextTreeIndex.asInstanceOf[js.Any], prevPath = prevPath.asInstanceOf[js.Any], prevTreeIndex = prevTreeIndex.asInstanceOf[js.Any])
+    if (nextParent != null) __obj.updateDynamic("nextParent")(nextParent.asInstanceOf[js.Any])
+    if (prevParent != null) __obj.updateDynamic("prevParent")(prevParent.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnDragPreviousAndNextLocation]
   }
 }

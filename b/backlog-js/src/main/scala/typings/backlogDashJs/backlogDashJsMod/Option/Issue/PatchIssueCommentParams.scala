@@ -11,7 +11,7 @@ trait PatchIssueCommentParams extends js.Object {
 object PatchIssueCommentParams {
   @scala.inline
   def apply(content: String): PatchIssueCommentParams = {
-    val __obj = js.Dynamic.literal(content = content)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PatchIssueCommentParams]
   }

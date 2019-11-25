@@ -13,8 +13,8 @@ trait Anon_Multiple extends js.Object {
 object Anon_Multiple {
   @scala.inline
   def apply(name: String, values: js.Array[String], multiple: js.UndefOr[Boolean] = js.undefined): Anon_Multiple = {
-    val __obj = js.Dynamic.literal(name = name, values = values)
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Multiple]
   }
 }

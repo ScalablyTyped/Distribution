@@ -24,9 +24,9 @@ object Anon_Agentexporter {
     thenables: js.UndefOr[Boolean] = js.undefined
   ): Anon_Agentexporter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(b3)) __obj.updateDynamic("b3")(b3)
+    if (!js.isUndefined(b3)) __obj.updateDynamic("b3")(b3.asInstanceOf[js.Any])
     if (exporter != null) __obj.updateDynamic("exporter")(exporter.asInstanceOf[js.Any])
-    if (!js.isUndefined(thenables)) __obj.updateDynamic("thenables")(thenables)
+    if (!js.isUndefined(thenables)) __obj.updateDynamic("thenables")(thenables.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Agentexporter]
   }
 }

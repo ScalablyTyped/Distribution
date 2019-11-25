@@ -37,7 +37,7 @@ object AppsResetAuthorizationResponse {
     url: String,
     user: AppsResetAuthorizationResponseUser
   ): AppsResetAuthorizationResponse = {
-    val __obj = js.Dynamic.literal(app = app, created_at = created_at, fingerprint = fingerprint, hashed_token = hashed_token, id = id, note = note, note_url = note_url, scopes = scopes, token = token, token_last_eight = token_last_eight, updated_at = updated_at, url = url, user = user)
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], hashed_token = hashed_token.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], note = note.asInstanceOf[js.Any], note_url = note_url.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], token_last_eight = token_last_eight.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AppsResetAuthorizationResponse]
   }

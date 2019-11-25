@@ -27,7 +27,7 @@ object RadarPoint {
     x: Double,
     y: Double
   ): RadarPoint = {
-    val __obj = js.Dynamic.literal(angle = angle, cx = cx, cy = cy, payload = payload, radius = radius, value = value, x = x, y = y)
+    val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], cx = cx.asInstanceOf[js.Any], cy = cy.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RadarPoint]
   }

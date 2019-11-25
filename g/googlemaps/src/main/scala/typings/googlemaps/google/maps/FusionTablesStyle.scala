@@ -20,10 +20,10 @@ object FusionTablesStyle {
     where: String = null
   ): FusionTablesStyle = {
     val __obj = js.Dynamic.literal()
-    if (markerOptions != null) __obj.updateDynamic("markerOptions")(markerOptions)
-    if (polygonOptions != null) __obj.updateDynamic("polygonOptions")(polygonOptions)
-    if (polylineOptions != null) __obj.updateDynamic("polylineOptions")(polylineOptions)
-    if (where != null) __obj.updateDynamic("where")(where)
+    if (markerOptions != null) __obj.updateDynamic("markerOptions")(markerOptions.asInstanceOf[js.Any])
+    if (polygonOptions != null) __obj.updateDynamic("polygonOptions")(polygonOptions.asInstanceOf[js.Any])
+    if (polylineOptions != null) __obj.updateDynamic("polylineOptions")(polylineOptions.asInstanceOf[js.Any])
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[FusionTablesStyle]
   }
 }

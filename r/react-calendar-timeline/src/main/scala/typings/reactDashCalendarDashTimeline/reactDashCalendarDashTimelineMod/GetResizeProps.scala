@@ -21,10 +21,10 @@ object GetResizeProps {
     rightStyle: CSSProperties = null
   ): GetResizeProps = {
     val __obj = js.Dynamic.literal()
-    if (leftClassName != null) __obj.updateDynamic("leftClassName")(leftClassName)
-    if (leftStyle != null) __obj.updateDynamic("leftStyle")(leftStyle)
-    if (rightClassName != null) __obj.updateDynamic("rightClassName")(rightClassName)
-    if (rightStyle != null) __obj.updateDynamic("rightStyle")(rightStyle)
+    if (leftClassName != null) __obj.updateDynamic("leftClassName")(leftClassName.asInstanceOf[js.Any])
+    if (leftStyle != null) __obj.updateDynamic("leftStyle")(leftStyle.asInstanceOf[js.Any])
+    if (rightClassName != null) __obj.updateDynamic("rightClassName")(rightClassName.asInstanceOf[js.Any])
+    if (rightStyle != null) __obj.updateDynamic("rightStyle")(rightStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResizeProps]
   }
 }

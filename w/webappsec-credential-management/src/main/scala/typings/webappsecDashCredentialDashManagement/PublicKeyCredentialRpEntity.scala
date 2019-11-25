@@ -14,9 +14,9 @@ trait PublicKeyCredentialRpEntity extends PublicKeyCredentialEntity {
 object PublicKeyCredentialRpEntity {
   @scala.inline
   def apply(name: String, icon: String = null, id: String = null): PublicKeyCredentialRpEntity = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyCredentialRpEntity]
   }
 }

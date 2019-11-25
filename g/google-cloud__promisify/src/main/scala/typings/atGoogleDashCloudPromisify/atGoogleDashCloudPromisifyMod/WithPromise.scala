@@ -13,7 +13,7 @@ object WithPromise {
   @scala.inline
   def apply(Promise: PromiseConstructor = null): WithPromise = {
     val __obj = js.Dynamic.literal()
-    if (Promise != null) __obj.updateDynamic("Promise")(Promise)
+    if (Promise != null) __obj.updateDynamic("Promise")(Promise.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithPromise]
   }
 }

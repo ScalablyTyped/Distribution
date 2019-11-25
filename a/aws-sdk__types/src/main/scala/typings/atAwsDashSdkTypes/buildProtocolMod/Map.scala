@@ -24,10 +24,10 @@ object Map {
     flattened: js.UndefOr[scala.Boolean] = js.undefined,
     sensitive: js.UndefOr[scala.Boolean] = js.undefined
   ): Map = {
-    val __obj = js.Dynamic.literal(key = key, value = value)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(flattened)) __obj.updateDynamic("flattened")(flattened)
-    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(flattened)) __obj.updateDynamic("flattened")(flattened.asInstanceOf[js.Any])
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive.asInstanceOf[js.Any])
     __obj.asInstanceOf[Map]
   }
 }

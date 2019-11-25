@@ -80,10 +80,10 @@ object PaceOptions {
     if (initialRate != null) __obj.updateDynamic("initialRate")(initialRate.asInstanceOf[js.Any])
     if (maxProgressPerFrame != null) __obj.updateDynamic("maxProgressPerFrame")(maxProgressPerFrame.asInstanceOf[js.Any])
     if (minTime != null) __obj.updateDynamic("minTime")(minTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(restartOnPushState)) __obj.updateDynamic("restartOnPushState")(restartOnPushState)
+    if (!js.isUndefined(restartOnPushState)) __obj.updateDynamic("restartOnPushState")(restartOnPushState.asInstanceOf[js.Any])
     if (restartOnRequestAfter != null) __obj.updateDynamic("restartOnRequestAfter")(restartOnRequestAfter.asInstanceOf[js.Any])
-    if (!js.isUndefined(startOnPageLoad)) __obj.updateDynamic("startOnPageLoad")(startOnPageLoad)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (!js.isUndefined(startOnPageLoad)) __obj.updateDynamic("startOnPageLoad")(startOnPageLoad.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaceOptions]
   }
 }

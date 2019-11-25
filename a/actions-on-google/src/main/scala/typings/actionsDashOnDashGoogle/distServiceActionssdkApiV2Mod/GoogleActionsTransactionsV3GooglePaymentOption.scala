@@ -49,7 +49,7 @@ object GoogleActionsTransactionsV3GooglePaymentOption {
   @scala.inline
   def apply(facilitationSpec: String = null): GoogleActionsTransactionsV3GooglePaymentOption = {
     val __obj = js.Dynamic.literal()
-    if (facilitationSpec != null) __obj.updateDynamic("facilitationSpec")(facilitationSpec)
+    if (facilitationSpec != null) __obj.updateDynamic("facilitationSpec")(facilitationSpec.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsTransactionsV3GooglePaymentOption]
   }
 }

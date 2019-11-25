@@ -12,7 +12,7 @@ trait NesClassExports extends js.Object {
 object NesClassExports {
   @scala.inline
   def apply(Client: Anon_Options): NesClassExports = {
-    val __obj = js.Dynamic.literal(Client = Client)
+    val __obj = js.Dynamic.literal(Client = Client.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NesClassExports]
   }

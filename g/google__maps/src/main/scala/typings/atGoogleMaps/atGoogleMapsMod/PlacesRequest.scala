@@ -84,16 +84,16 @@ object PlacesRequest {
     region: String = null,
     `type`: PlaceType1 = null
   ): PlacesRequest = {
-    val __obj = js.Dynamic.literal(query = query)
-    if (language != null) __obj.updateDynamic("language")(language)
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (maxprice != null) __obj.updateDynamic("maxprice")(maxprice.asInstanceOf[js.Any])
     if (minprice != null) __obj.updateDynamic("minprice")(minprice.asInstanceOf[js.Any])
-    if (!js.isUndefined(opennow)) __obj.updateDynamic("opennow")(opennow)
-    if (pagetoken != null) __obj.updateDynamic("pagetoken")(pagetoken)
+    if (!js.isUndefined(opennow)) __obj.updateDynamic("opennow")(opennow.asInstanceOf[js.Any])
+    if (pagetoken != null) __obj.updateDynamic("pagetoken")(pagetoken.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlacesRequest]
   }
 }

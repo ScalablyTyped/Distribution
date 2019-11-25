@@ -13,8 +13,8 @@ object SizesListResponse {
   @scala.inline
   def apply(kind: String = null, sizes: js.Array[Size] = null): SizesListResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (sizes != null) __obj.updateDynamic("sizes")(sizes)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizesListResponse]
   }
 }

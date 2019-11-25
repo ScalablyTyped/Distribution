@@ -24,7 +24,7 @@ object ContainerStats {
     precpu_stats: CPUStats,
     read: String
   ): ContainerStats = {
-    val __obj = js.Dynamic.literal(cpu_stats = cpu_stats, memory_stats = memory_stats, networks = networks, pid_stats = pid_stats, precpu_stats = precpu_stats, read = read)
+    val __obj = js.Dynamic.literal(cpu_stats = cpu_stats.asInstanceOf[js.Any], memory_stats = memory_stats.asInstanceOf[js.Any], networks = networks.asInstanceOf[js.Any], pid_stats = pid_stats.asInstanceOf[js.Any], precpu_stats = precpu_stats.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContainerStats]
   }

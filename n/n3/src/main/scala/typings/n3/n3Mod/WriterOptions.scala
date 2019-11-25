@@ -18,9 +18,9 @@ object WriterOptions {
     prefixes: Prefixes[typings.rdfDashJs.rdfDashJsMod.NamedNode | String] = null
   ): WriterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (prefixes != null) __obj.updateDynamic("prefixes")(prefixes)
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (prefixes != null) __obj.updateDynamic("prefixes")(prefixes.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriterOptions]
   }
 }

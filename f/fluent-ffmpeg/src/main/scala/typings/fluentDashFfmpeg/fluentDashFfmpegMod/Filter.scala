@@ -21,7 +21,7 @@ object Filter {
     multipleOutputs: Boolean,
     output: String
   ): Filter = {
-    val __obj = js.Dynamic.literal(description = description, input = input, multipleInputs = multipleInputs, multipleOutputs = multipleOutputs, output = output)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], multipleInputs = multipleInputs.asInstanceOf[js.Any], multipleOutputs = multipleOutputs.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Filter]
   }

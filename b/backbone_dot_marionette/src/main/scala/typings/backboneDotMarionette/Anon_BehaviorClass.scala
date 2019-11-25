@@ -18,8 +18,8 @@ object Anon_BehaviorClass {
     behaviorClass: Instantiable1[js.UndefOr[/* options */ js.Any], Behavior],
     StringDictionary: /* index */ StringDictionary[js.Any] = null
   ): Anon_BehaviorClass = {
-    val __obj = js.Dynamic.literal(behaviorClass = behaviorClass)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(behaviorClass = behaviorClass.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_BehaviorClass]
   }
 }

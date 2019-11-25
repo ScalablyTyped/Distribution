@@ -45,11 +45,11 @@ object IgComboMultiSelection {
     showCheckboxes: js.UndefOr[Boolean] = js.undefined
   ): IgComboMultiSelection = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(addWithKeyModifier)) __obj.updateDynamic("addWithKeyModifier")(addWithKeyModifier)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (itemSeparator != null) __obj.updateDynamic("itemSeparator")(itemSeparator)
-    if (!js.isUndefined(showCheckboxes)) __obj.updateDynamic("showCheckboxes")(showCheckboxes)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(addWithKeyModifier)) __obj.updateDynamic("addWithKeyModifier")(addWithKeyModifier.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (itemSeparator != null) __obj.updateDynamic("itemSeparator")(itemSeparator.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCheckboxes)) __obj.updateDynamic("showCheckboxes")(showCheckboxes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgComboMultiSelection]
   }
 }

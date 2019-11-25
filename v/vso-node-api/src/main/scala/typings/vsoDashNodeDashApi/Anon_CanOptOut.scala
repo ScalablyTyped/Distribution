@@ -21,7 +21,7 @@ object Anon_CanOptOut {
     none: Double,
     teamSubscription: Double
   ): Anon_CanOptOut = {
-    val __obj = js.Dynamic.literal(canOptOut = canOptOut, contributedSubscription = contributedSubscription, groupSubscription = groupSubscription, none = none, teamSubscription = teamSubscription)
+    val __obj = js.Dynamic.literal(canOptOut = canOptOut.asInstanceOf[js.Any], contributedSubscription = contributedSubscription.asInstanceOf[js.Any], groupSubscription = groupSubscription.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], teamSubscription = teamSubscription.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CanOptOut]
   }

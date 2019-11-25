@@ -19,8 +19,8 @@ object _SimpleEmailPart {
   @scala.inline
   def apply(Charset: String = null, Data: String = null): _SimpleEmailPart = {
     val __obj = js.Dynamic.literal()
-    if (Charset != null) __obj.updateDynamic("Charset")(Charset)
-    if (Data != null) __obj.updateDynamic("Data")(Data)
+    if (Charset != null) __obj.updateDynamic("Charset")(Charset.asInstanceOf[js.Any])
+    if (Data != null) __obj.updateDynamic("Data")(Data.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SimpleEmailPart]
   }
 }

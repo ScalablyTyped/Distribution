@@ -20,9 +20,9 @@ object Anon_Compact {
     zip: js.UndefOr[Boolean] = js.undefined
   ): Anon_Compact = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(zip)) __obj.updateDynamic("zip")(zip)
+    if (!js.isUndefined(zip)) __obj.updateDynamic("zip")(zip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Compact]
   }
 }

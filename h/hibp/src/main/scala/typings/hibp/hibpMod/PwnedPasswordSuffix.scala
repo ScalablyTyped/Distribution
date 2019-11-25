@@ -12,7 +12,7 @@ trait PwnedPasswordSuffix extends js.Object {
 object PwnedPasswordSuffix {
   @scala.inline
   def apply(count: Double, suffix: String): PwnedPasswordSuffix = {
-    val __obj = js.Dynamic.literal(count = count, suffix = suffix)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], suffix = suffix.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PwnedPasswordSuffix]
   }

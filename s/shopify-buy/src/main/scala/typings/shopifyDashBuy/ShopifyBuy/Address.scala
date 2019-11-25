@@ -31,7 +31,7 @@ object Address {
     province: String,
     zip: String
   ): Address = {
-    val __obj = js.Dynamic.literal(address1 = address1, address2 = address2, city = city, company = company, country = country, firstName = firstName, lastName = lastName, phone = phone, province = province, zip = zip)
+    val __obj = js.Dynamic.literal(address1 = address1.asInstanceOf[js.Any], address2 = address2.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any], company = company.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], firstName = firstName.asInstanceOf[js.Any], lastName = lastName.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], province = province.asInstanceOf[js.Any], zip = zip.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Address]
   }

@@ -24,11 +24,11 @@ object Transform {
     typeName: String = null,
     useForSnippets: js.UndefOr[Boolean] = js.undefined
   ): Transform = {
-    val __obj = js.Dynamic.literal(regexp = regexp, transformer = js.Any.fromFunction2(transformer))
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(preferForRegexpMatch)) __obj.updateDynamic("preferForRegexpMatch")(preferForRegexpMatch)
-    if (typeName != null) __obj.updateDynamic("typeName")(typeName)
-    if (!js.isUndefined(useForSnippets)) __obj.updateDynamic("useForSnippets")(useForSnippets)
+    val __obj = js.Dynamic.literal(regexp = regexp.asInstanceOf[js.Any], transformer = js.Any.fromFunction2(transformer))
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferForRegexpMatch)) __obj.updateDynamic("preferForRegexpMatch")(preferForRegexpMatch.asInstanceOf[js.Any])
+    if (typeName != null) __obj.updateDynamic("typeName")(typeName.asInstanceOf[js.Any])
+    if (!js.isUndefined(useForSnippets)) __obj.updateDynamic("useForSnippets")(useForSnippets.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transform]
   }
 }

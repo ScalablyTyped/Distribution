@@ -20,8 +20,8 @@ object RevealDependency {
     callback: () => Unit = null,
     condition: () => Boolean = null
   ): RevealDependency = {
-    val __obj = js.Dynamic.literal(src = src)
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     if (condition != null) __obj.updateDynamic("condition")(js.Any.fromFunction0(condition))
     __obj.asInstanceOf[RevealDependency]

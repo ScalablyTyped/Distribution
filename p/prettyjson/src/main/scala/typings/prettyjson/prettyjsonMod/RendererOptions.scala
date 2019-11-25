@@ -37,15 +37,15 @@ object RendererOptions {
     stringColor: String = null
   ): RendererOptions = {
     val __obj = js.Dynamic.literal()
-    if (dashColor != null) __obj.updateDynamic("dashColor")(dashColor)
+    if (dashColor != null) __obj.updateDynamic("dashColor")(dashColor.asInstanceOf[js.Any])
     if (defaultIndentation != null) __obj.updateDynamic("defaultIndentation")(defaultIndentation.asInstanceOf[js.Any])
-    if (emptyArrayMsg != null) __obj.updateDynamic("emptyArrayMsg")(emptyArrayMsg)
-    if (!js.isUndefined(inlineArrays)) __obj.updateDynamic("inlineArrays")(inlineArrays)
-    if (keysColor != null) __obj.updateDynamic("keysColor")(keysColor)
-    if (!js.isUndefined(noAlign)) __obj.updateDynamic("noAlign")(noAlign)
-    if (!js.isUndefined(noColor)) __obj.updateDynamic("noColor")(noColor)
-    if (numberColor != null) __obj.updateDynamic("numberColor")(numberColor)
-    if (stringColor != null) __obj.updateDynamic("stringColor")(stringColor)
+    if (emptyArrayMsg != null) __obj.updateDynamic("emptyArrayMsg")(emptyArrayMsg.asInstanceOf[js.Any])
+    if (!js.isUndefined(inlineArrays)) __obj.updateDynamic("inlineArrays")(inlineArrays.asInstanceOf[js.Any])
+    if (keysColor != null) __obj.updateDynamic("keysColor")(keysColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(noAlign)) __obj.updateDynamic("noAlign")(noAlign.asInstanceOf[js.Any])
+    if (!js.isUndefined(noColor)) __obj.updateDynamic("noColor")(noColor.asInstanceOf[js.Any])
+    if (numberColor != null) __obj.updateDynamic("numberColor")(numberColor.asInstanceOf[js.Any])
+    if (stringColor != null) __obj.updateDynamic("stringColor")(stringColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[RendererOptions]
   }
 }

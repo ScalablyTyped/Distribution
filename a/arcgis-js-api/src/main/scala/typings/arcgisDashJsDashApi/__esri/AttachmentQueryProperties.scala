@@ -70,14 +70,14 @@ object AttachmentQueryProperties {
     where: String = null
   ): AttachmentQueryProperties = {
     val __obj = js.Dynamic.literal()
-    if (attachmentTypes != null) __obj.updateDynamic("attachmentTypes")(attachmentTypes)
-    if (globalIds != null) __obj.updateDynamic("globalIds")(globalIds)
+    if (attachmentTypes != null) __obj.updateDynamic("attachmentTypes")(attachmentTypes.asInstanceOf[js.Any])
+    if (globalIds != null) __obj.updateDynamic("globalIds")(globalIds.asInstanceOf[js.Any])
     if (num != null) __obj.updateDynamic("num")(num.asInstanceOf[js.Any])
-    if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds)
-    if (!js.isUndefined(returnMetadata)) __obj.updateDynamic("returnMetadata")(returnMetadata)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnMetadata)) __obj.updateDynamic("returnMetadata")(returnMetadata.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (where != null) __obj.updateDynamic("where")(where)
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentQueryProperties]
   }
 }

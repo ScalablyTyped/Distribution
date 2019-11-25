@@ -24,7 +24,7 @@ object Histogram {
   @scala.inline
   def apply(bucketCounts: js.Array[String] = null, firstBucketOffset: Int | Double = null): Histogram = {
     val __obj = js.Dynamic.literal()
-    if (bucketCounts != null) __obj.updateDynamic("bucketCounts")(bucketCounts)
+    if (bucketCounts != null) __obj.updateDynamic("bucketCounts")(bucketCounts.asInstanceOf[js.Any])
     if (firstBucketOffset != null) __obj.updateDynamic("firstBucketOffset")(firstBucketOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Histogram]
   }

@@ -11,7 +11,11 @@ object getWithDefault extends js.Object {
   def apply[T, K /* <: String */](
     obj: T,
     key: K,
-    defaultValue: UnwrapComputedPropertyGetter[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any]
-  ): UnwrapComputedPropertyGetter[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
+    defaultValue: UnwrapComputedPropertyGetter[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ]
+  ): UnwrapComputedPropertyGetter[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ] = js.native
 }
 

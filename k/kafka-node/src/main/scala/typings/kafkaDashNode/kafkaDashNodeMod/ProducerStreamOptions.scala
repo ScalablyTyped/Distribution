@@ -19,8 +19,8 @@ object ProducerStreamOptions {
   ): ProducerStreamOptions = {
     val __obj = js.Dynamic.literal()
     if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (kafkaClient != null) __obj.updateDynamic("kafkaClient")(kafkaClient)
-    if (producer != null) __obj.updateDynamic("producer")(producer)
+    if (kafkaClient != null) __obj.updateDynamic("kafkaClient")(kafkaClient.asInstanceOf[js.Any])
+    if (producer != null) __obj.updateDynamic("producer")(producer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProducerStreamOptions]
   }
 }

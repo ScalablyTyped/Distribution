@@ -24,9 +24,9 @@ object GraphQLFieldDefinition {
     deprecationReason: String = null,
     resolve: (/* source */ js.Any, /* args */ StringDictionary[js.Any], /* context */ js.Any, /* info */ GraphQLResolveInfo) => js.Any = null
   ): GraphQLFieldDefinition = {
-    val __obj = js.Dynamic.literal(args = args, description = description, name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
     if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction4(resolve))
     __obj.asInstanceOf[GraphQLFieldDefinition]
   }

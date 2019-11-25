@@ -23,9 +23,9 @@ object TemplateInList {
     Alias: String = null,
     LayoutTemplate: String = null
   ): TemplateInList = {
-    val __obj = js.Dynamic.literal(Active = Active, Name = Name, TemplateId = TemplateId, TemplateType = TemplateType)
-    if (Alias != null) __obj.updateDynamic("Alias")(Alias)
-    if (LayoutTemplate != null) __obj.updateDynamic("LayoutTemplate")(LayoutTemplate)
+    val __obj = js.Dynamic.literal(Active = Active.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], TemplateId = TemplateId.asInstanceOf[js.Any], TemplateType = TemplateType.asInstanceOf[js.Any])
+    if (Alias != null) __obj.updateDynamic("Alias")(Alias.asInstanceOf[js.Any])
+    if (LayoutTemplate != null) __obj.updateDynamic("LayoutTemplate")(LayoutTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateInList]
   }
 }

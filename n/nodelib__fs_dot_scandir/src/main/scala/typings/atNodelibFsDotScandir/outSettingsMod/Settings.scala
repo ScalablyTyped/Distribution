@@ -28,7 +28,7 @@ object Settings {
     stats: Boolean,
     throwErrorOnBrokenSymbolicLink: Boolean
   ): Settings = {
-    val __obj = js.Dynamic.literal(_getValue = _getValue, _options = _options, followSymbolicLinks = followSymbolicLinks, fs = fs, fsStatSettings = fsStatSettings, pathSegmentSeparator = pathSegmentSeparator, stats = stats, throwErrorOnBrokenSymbolicLink = throwErrorOnBrokenSymbolicLink)
+    val __obj = js.Dynamic.literal(_getValue = _getValue.asInstanceOf[js.Any], _options = _options.asInstanceOf[js.Any], followSymbolicLinks = followSymbolicLinks.asInstanceOf[js.Any], fs = fs.asInstanceOf[js.Any], fsStatSettings = fsStatSettings.asInstanceOf[js.Any], pathSegmentSeparator = pathSegmentSeparator.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], throwErrorOnBrokenSymbolicLink = throwErrorOnBrokenSymbolicLink.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Settings]
   }

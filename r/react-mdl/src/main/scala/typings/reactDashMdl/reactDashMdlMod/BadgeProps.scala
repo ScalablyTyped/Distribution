@@ -26,10 +26,10 @@ object BadgeProps {
     ref: LegacyRef[js.Any] = null
   ): BadgeProps = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(noBackground)) __obj.updateDynamic("noBackground")(noBackground)
-    if (!js.isUndefined(overlap)) __obj.updateDynamic("overlap")(overlap)
+    if (!js.isUndefined(noBackground)) __obj.updateDynamic("noBackground")(noBackground.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlap)) __obj.updateDynamic("overlap")(overlap.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[BadgeProps]
   }

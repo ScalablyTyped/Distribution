@@ -15,8 +15,8 @@ object StandardProperties {
     StandardShorthandProperties: StandardShorthandProperties[TLength] = null
   ): StandardProperties[TLength] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StandardLonghandProperties)
-    js.Dynamic.global.Object.assign(__obj, StandardShorthandProperties)
+    if (StandardLonghandProperties != null) js.Dynamic.global.Object.assign(__obj, StandardLonghandProperties)
+    if (StandardShorthandProperties != null) js.Dynamic.global.Object.assign(__obj, StandardShorthandProperties)
     __obj.asInstanceOf[StandardProperties[TLength]]
   }
 }

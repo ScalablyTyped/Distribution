@@ -5,29 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ValidationError extends js.Object {
-  var location: js.UndefOr[Location] = js.undefined
-  var msg: js.UndefOr[js.Any] = js.undefined
-  var nestedErrors: js.UndefOr[js.Array[ValidationError]] = js.undefined
-  var param: js.UndefOr[String | _error] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.expressDashValidator.Anon_Error
+  - typings.expressDashValidator.Anon_Location
+*/
+trait ValidationError extends js.Object
 
 object ValidationError {
   @scala.inline
-  def apply(
+  def Anon_Error(
+    msg: js.Any,
+    nestedErrors: js.Array[
+      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias express-validator.express-validator/src/base.ValidationError */ js.Object
+    ],
+    param: _error,
     location: js.UndefOr[scala.Nothing] = js.undefined,
-    msg: js.Any = null,
-    nestedErrors: js.Array[ValidationError] = null,
-    param: _error = null,
-    value: js.Any = null
+    value: js.UndefOr[scala.Nothing] = js.undefined
   ): ValidationError = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(location)) __obj.updateDynamic("location")(location)
-    if (msg != null) __obj.updateDynamic("msg")(msg)
-    if (nestedErrors != null) __obj.updateDynamic("nestedErrors")(nestedErrors)
-    if (param != null) __obj.updateDynamic("param")(param)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(msg = msg.asInstanceOf[js.Any], nestedErrors = nestedErrors.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any])
+    if (!js.isUndefined(location)) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ValidationError]
+  }
+  @scala.inline
+  def Anon_Location(location: Location, msg: js.Any, param: String, value: js.Any, nestedErrors: js.Array[_] = null): ValidationError = {
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (nestedErrors != null) __obj.updateDynamic("nestedErrors")(nestedErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationError]
   }
 }

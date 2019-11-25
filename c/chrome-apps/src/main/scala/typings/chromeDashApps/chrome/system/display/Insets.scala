@@ -19,7 +19,7 @@ trait Insets extends js.Object {
 object Insets {
   @scala.inline
   def apply(bottom: integer, left: integer, right: integer, top: integer): Insets = {
-    val __obj = js.Dynamic.literal(bottom = bottom, left = left, right = right, top = top)
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Insets]
   }

@@ -2,7 +2,6 @@ package typings.protractor.protractorMod
 
 import typings.seleniumDashWebdriver.libByMod.ByHash
 import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.Alert
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.By
 import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.Condition
 import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.Locator
 import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.WebElementCondition
@@ -22,7 +21,7 @@ object until extends js.Object {
   ): Condition[Boolean] = js.native
   def ableToSwitchToFrame(frame: Double): Condition[Boolean] = js.native
   def ableToSwitchToFrame(frame: ByHash): Condition[Boolean] = js.native
-  def ableToSwitchToFrame(frame: By): Condition[Boolean] = js.native
+  def ableToSwitchToFrame(frame: typings.seleniumDashWebdriver.seleniumDashWebdriverMod.By): Condition[Boolean] = js.native
   def ableToSwitchToFrame(frame: typings.seleniumDashWebdriver.seleniumDashWebdriverMod.WebElement): Condition[Boolean] = js.native
   def alertIsPresent(): Condition[Alert] = js.native
   def elementIsDisabled(element: typings.seleniumDashWebdriver.seleniumDashWebdriverMod.WebElement): WebElementCondition = js.native

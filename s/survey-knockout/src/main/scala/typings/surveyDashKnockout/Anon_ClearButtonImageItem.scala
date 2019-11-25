@@ -29,7 +29,7 @@ object Anon_ClearButtonImageItem {
     label: String,
     root: String
   ): Anon_ClearButtonImageItem = {
-    val __obj = js.Dynamic.literal(clearButton = clearButton, image = image, item = item, itemChecked = itemChecked, itemControl = itemControl, itemInline = itemInline, itemText = itemText, label = label, root = root)
+    val __obj = js.Dynamic.literal(clearButton = clearButton.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemControl = itemControl.asInstanceOf[js.Any], itemInline = itemInline.asInstanceOf[js.Any], itemText = itemText.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ClearButtonImageItem]
   }

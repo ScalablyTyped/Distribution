@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 	 * Component实例方法
 	 */
 @js.native
-trait Component[D, P, B /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */] extends js.Object {
+trait Component[D, P, B /* <: js.Array[(typings.weixinDashApp.wx.Behavior[js.Object, js.Object, js.Object]) | String] */] extends js.Object {
   /**
   		 * 组件数据，包括内部数据和属性值
   		 */
@@ -54,12 +54,12 @@ trait Component[D, P, B /* <: js.Array[(Behavior[js.Object, js.Object, js.Object
   /**
   		 * selector  使用选择器选择组件实例节点，返回匹配到的全部组件实例对象组成的数组
   		 */
-  def selectAllComponents(selector: String): js.Array[Component[_, _, js.Array[js.Any]]] = js.native
+  def selectAllComponents(selector: String): js.Array[typings.weixinDashApp.wx.Component[_, _, js.Array[js.Any]]] = js.native
   /**
   		 * 使用选择器选择组件实例节点
   		 * 返回匹配到的第一个组件实例对象
   		 */
-  def selectComponent(selector: String): Component[_, _, js.Array[js.Any]] = js.native
+  def selectComponent(selector: String): typings.weixinDashApp.wx.Component[_, _, js.Array[js.Any]] = js.native
   /**
   		 * 将数据从逻辑层发送到视图层，同时改变对应的 this.data 的值
   		 * 1. 直接修改 this.data 而不调用 this.setData 是无法改变页面的状态的，还会造成数据不一致。
@@ -69,12 +69,12 @@ trait Component[D, P, B /* <: js.Array[(Behavior[js.Object, js.Object, js.Object
   		 * @param [callback] callback 是一个回调函数，在这次setData对界面渲染完毕后调用
   		 */
   def setData(
-    data: /* import warning: ImportType.apply c Unsupported type mapping: 
+    data: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
     */ typings.weixinDashApp.weixinDashAppStrings.Component with js.Any
   ): Unit = js.native
   def setData(
-    data: /* import warning: ImportType.apply c Unsupported type mapping: 
+    data: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
     */ typings.weixinDashApp.weixinDashAppStrings.Component with js.Any,
     callback: js.Function0[Unit]

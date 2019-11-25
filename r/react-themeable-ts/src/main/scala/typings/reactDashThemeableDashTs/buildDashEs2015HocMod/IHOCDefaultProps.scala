@@ -12,8 +12,8 @@ trait IHOCDefaultProps extends IHOCDefaultNoThemeProps {
 object IHOCDefaultProps {
   @scala.inline
   def apply(t: IStaticFnReturn, theme: js.Any = null): IHOCDefaultProps = {
-    val __obj = js.Dynamic.literal(t = t)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHOCDefaultProps]
   }
 }

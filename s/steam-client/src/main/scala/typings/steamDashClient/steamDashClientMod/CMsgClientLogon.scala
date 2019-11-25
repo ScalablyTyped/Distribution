@@ -35,10 +35,10 @@ object CMsgClientLogon {
     sha_sentryfile: String = null,
     two_factor_code: String = null
   ): CMsgClientLogon = {
-    val __obj = js.Dynamic.literal(account_name = account_name)
-    if (auth_code != null) __obj.updateDynamic("auth_code")(auth_code)
-    if (sha_sentryfile != null) __obj.updateDynamic("sha_sentryfile")(sha_sentryfile)
-    if (two_factor_code != null) __obj.updateDynamic("two_factor_code")(two_factor_code)
+    val __obj = js.Dynamic.literal(account_name = account_name.asInstanceOf[js.Any])
+    if (auth_code != null) __obj.updateDynamic("auth_code")(auth_code.asInstanceOf[js.Any])
+    if (sha_sentryfile != null) __obj.updateDynamic("sha_sentryfile")(sha_sentryfile.asInstanceOf[js.Any])
+    if (two_factor_code != null) __obj.updateDynamic("two_factor_code")(two_factor_code.asInstanceOf[js.Any])
     __obj.asInstanceOf[CMsgClientLogon]
   }
 }

@@ -13,7 +13,7 @@ object TargetSslProxiesSetBackendServiceRequest {
   @scala.inline
   def apply(service: String = null): TargetSslProxiesSetBackendServiceRequest = {
     val __obj = js.Dynamic.literal()
-    if (service != null) __obj.updateDynamic("service")(service)
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetSslProxiesSetBackendServiceRequest]
   }
 }

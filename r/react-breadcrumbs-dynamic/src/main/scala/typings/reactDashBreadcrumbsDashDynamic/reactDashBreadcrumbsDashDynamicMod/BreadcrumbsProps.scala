@@ -30,12 +30,12 @@ object BreadcrumbsProps {
   ): BreadcrumbsProps = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (containerProps != null) __obj.updateDynamic("containerProps")(containerProps)
-    if (duplicateProps != null) __obj.updateDynamic("duplicateProps")(duplicateProps)
+    if (containerProps != null) __obj.updateDynamic("containerProps")(containerProps.asInstanceOf[js.Any])
+    if (duplicateProps != null) __obj.updateDynamic("duplicateProps")(duplicateProps.asInstanceOf[js.Any])
     if (finalItem != null) __obj.updateDynamic("finalItem")(finalItem.asInstanceOf[js.Any])
-    if (finalProps != null) __obj.updateDynamic("finalProps")(finalProps)
+    if (finalProps != null) __obj.updateDynamic("finalProps")(finalProps.asInstanceOf[js.Any])
     if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (renameProps != null) __obj.updateDynamic("renameProps")(renameProps)
+    if (renameProps != null) __obj.updateDynamic("renameProps")(renameProps.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[BreadcrumbsProps]
   }

@@ -39,7 +39,7 @@ object SharedPCAccountManagerPolicy {
     removeAccountsBelowDiskFreePercentage: Int | Double = null
   ): SharedPCAccountManagerPolicy = {
     val __obj = js.Dynamic.literal()
-    if (accountDeletionPolicy != null) __obj.updateDynamic("accountDeletionPolicy")(accountDeletionPolicy)
+    if (accountDeletionPolicy != null) __obj.updateDynamic("accountDeletionPolicy")(accountDeletionPolicy.asInstanceOf[js.Any])
     if (cacheAccountsAboveDiskFreePercentage != null) __obj.updateDynamic("cacheAccountsAboveDiskFreePercentage")(cacheAccountsAboveDiskFreePercentage.asInstanceOf[js.Any])
     if (inactiveThresholdDays != null) __obj.updateDynamic("inactiveThresholdDays")(inactiveThresholdDays.asInstanceOf[js.Any])
     if (removeAccountsBelowDiskFreePercentage != null) __obj.updateDynamic("removeAccountsBelowDiskFreePercentage")(removeAccountsBelowDiskFreePercentage.asInstanceOf[js.Any])

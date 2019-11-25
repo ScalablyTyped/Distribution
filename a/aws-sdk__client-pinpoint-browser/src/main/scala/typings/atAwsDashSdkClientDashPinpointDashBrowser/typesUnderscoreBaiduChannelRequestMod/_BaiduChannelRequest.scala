@@ -23,9 +23,9 @@ object _BaiduChannelRequest {
   @scala.inline
   def apply(ApiKey: String = null, Enabled: js.UndefOr[Boolean] = js.undefined, SecretKey: String = null): _BaiduChannelRequest = {
     val __obj = js.Dynamic.literal()
-    if (ApiKey != null) __obj.updateDynamic("ApiKey")(ApiKey)
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
-    if (SecretKey != null) __obj.updateDynamic("SecretKey")(SecretKey)
+    if (ApiKey != null) __obj.updateDynamic("ApiKey")(ApiKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (SecretKey != null) __obj.updateDynamic("SecretKey")(SecretKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[_BaiduChannelRequest]
   }
 }

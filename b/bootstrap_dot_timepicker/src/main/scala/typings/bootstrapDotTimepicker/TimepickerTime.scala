@@ -23,10 +23,10 @@ object TimepickerTime {
   ): TimepickerTime = {
     val __obj = js.Dynamic.literal()
     if (hours != null) __obj.updateDynamic("hours")(hours.asInstanceOf[js.Any])
-    if (meridian != null) __obj.updateDynamic("meridian")(meridian)
+    if (meridian != null) __obj.updateDynamic("meridian")(meridian.asInstanceOf[js.Any])
     if (minutes != null) __obj.updateDynamic("minutes")(minutes.asInstanceOf[js.Any])
     if (seconds != null) __obj.updateDynamic("seconds")(seconds.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimepickerTime]
   }
 }

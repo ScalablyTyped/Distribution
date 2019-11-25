@@ -26,7 +26,7 @@ object Anon_DefaultParseFunction {
     view: String,
     viewModel: ViewModelContext => Unit | js.Object
   ): Anon_DefaultParseFunction = {
-    val __obj = js.Dynamic.literal(metadata = metadata, parseFunction = js.Any.fromFunction4(parseFunction), view = view, viewModel = js.Any.fromFunction1(viewModel))
+    val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], parseFunction = js.Any.fromFunction4(parseFunction), view = view.asInstanceOf[js.Any], viewModel = js.Any.fromFunction1(viewModel))
   
     __obj.asInstanceOf[Anon_DefaultParseFunction]
   }

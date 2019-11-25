@@ -39,10 +39,10 @@ object IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchi
     name: String = null
   ): IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (caption != null) __obj.updateDynamic("caption")(caption)
-    if (memberProvider != null) __obj.updateDynamic("memberProvider")(memberProvider)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (memberProvider != null) __obj.updateDynamic("memberProvider")(memberProvider.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel]
   }
 }

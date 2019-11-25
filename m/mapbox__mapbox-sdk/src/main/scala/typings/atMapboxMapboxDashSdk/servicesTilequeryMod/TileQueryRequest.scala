@@ -44,8 +44,8 @@ object TileQueryRequest {
     radius: Double,
     layers: js.Array[String] = null
   ): TileQueryRequest = {
-    val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any], dedupe = dedupe, geometry = geometry, limit = limit, mapIds = mapIds, radius = radius)
-    if (layers != null) __obj.updateDynamic("layers")(layers)
+    val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any], dedupe = dedupe.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], mapIds = mapIds.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any])
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileQueryRequest]
   }
 }

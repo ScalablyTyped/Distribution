@@ -26,13 +26,13 @@ object MarkerClustererOptions {
     zoomOnClick: js.UndefOr[Boolean] = js.undefined
   ): MarkerClustererOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(averageCenter)) __obj.updateDynamic("averageCenter")(averageCenter)
+    if (!js.isUndefined(averageCenter)) __obj.updateDynamic("averageCenter")(averageCenter.asInstanceOf[js.Any])
     if (gridSize != null) __obj.updateDynamic("gridSize")(gridSize.asInstanceOf[js.Any])
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minClusterSize != null) __obj.updateDynamic("minClusterSize")(minClusterSize.asInstanceOf[js.Any])
     if (renderCluserMarker != null) __obj.updateDynamic("renderCluserMarker")(js.Any.fromFunction1(renderCluserMarker))
-    if (styles != null) __obj.updateDynamic("styles")(styles)
-    if (!js.isUndefined(zoomOnClick)) __obj.updateDynamic("zoomOnClick")(zoomOnClick)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomOnClick)) __obj.updateDynamic("zoomOnClick")(zoomOnClick.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerClustererOptions]
   }
 }

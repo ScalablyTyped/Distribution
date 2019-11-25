@@ -25,9 +25,9 @@ object HtmlBlockToken {
     `type`: htmlblock,
     lines: js.Tuple2[Double, Double] = null
   ): HtmlBlockToken = {
-    val __obj = js.Dynamic.literal(block = block, content = content, level = level)
-    __obj.updateDynamic("type")(`type`)
-    if (lines != null) __obj.updateDynamic("lines")(lines)
+    val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlBlockToken]
   }
 }

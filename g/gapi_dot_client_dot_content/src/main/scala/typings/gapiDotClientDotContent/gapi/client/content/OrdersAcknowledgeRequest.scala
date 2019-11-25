@@ -13,7 +13,7 @@ object OrdersAcknowledgeRequest {
   @scala.inline
   def apply(operationId: String = null): OrdersAcknowledgeRequest = {
     val __obj = js.Dynamic.literal()
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrdersAcknowledgeRequest]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_ParseBooleansTrue extends js.Object {
 object Anon_ParseBooleansTrue {
   @scala.inline
   def apply(parseBooleans: `true`): Anon_ParseBooleansTrue = {
-    val __obj = js.Dynamic.literal(parseBooleans = parseBooleans)
+    val __obj = js.Dynamic.literal(parseBooleans = parseBooleans.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ParseBooleansTrue]
   }

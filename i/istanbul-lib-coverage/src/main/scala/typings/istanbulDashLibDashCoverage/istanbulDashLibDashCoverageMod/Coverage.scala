@@ -13,7 +13,7 @@ trait Coverage extends js.Object {
 object Coverage {
   @scala.inline
   def apply(coverage: Double, covered: Double, total: Double): Coverage = {
-    val __obj = js.Dynamic.literal(coverage = coverage, covered = covered, total = total)
+    val __obj = js.Dynamic.literal(coverage = coverage.asInstanceOf[js.Any], covered = covered.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Coverage]
   }

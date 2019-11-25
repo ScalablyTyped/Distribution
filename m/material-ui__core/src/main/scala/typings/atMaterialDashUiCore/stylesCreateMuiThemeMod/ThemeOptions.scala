@@ -48,18 +48,18 @@ object ThemeOptions {
     zIndex: ZIndexOptions = null
   ): ThemeOptions = {
     val __obj = js.Dynamic.literal()
-    if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints)
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides)
-    if (palette != null) __obj.updateDynamic("palette")(palette)
-    if (props != null) __obj.updateDynamic("props")(props)
-    if (shadows != null) __obj.updateDynamic("shadows")(shadows)
-    if (shape != null) __obj.updateDynamic("shape")(shape)
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing)
-    if (transitions != null) __obj.updateDynamic("transitions")(transitions)
+    if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
+    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
+    if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
+    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
+    if (shadows != null) __obj.updateDynamic("shadows")(shadows.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (transitions != null) __obj.updateDynamic("transitions")(transitions.asInstanceOf[js.Any])
     if (typography != null) __obj.updateDynamic("typography")(typography.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeOptions]
   }
 }

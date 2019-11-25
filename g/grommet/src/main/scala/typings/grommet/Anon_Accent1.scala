@@ -12,7 +12,7 @@ trait Anon_Accent1 extends js.Object {
 object Anon_Accent1 {
   @scala.inline
   def apply(color: `accent-1`): Anon_Accent1 = {
-    val __obj = js.Dynamic.literal(color = color)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Accent1]
   }

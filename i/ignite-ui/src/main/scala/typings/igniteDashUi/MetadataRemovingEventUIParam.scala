@@ -19,8 +19,8 @@ object MetadataRemovingEventUIParam {
   @scala.inline
   def apply(metadata: js.Any = null, targetElement: String = null): MetadataRemovingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (targetElement != null) __obj.updateDynamic("targetElement")(targetElement)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (targetElement != null) __obj.updateDynamic("targetElement")(targetElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetadataRemovingEventUIParam]
   }
 }

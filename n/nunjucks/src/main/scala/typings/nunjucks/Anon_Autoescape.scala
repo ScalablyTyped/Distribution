@@ -11,7 +11,7 @@ trait Anon_Autoescape extends js.Object {
 object Anon_Autoescape {
   @scala.inline
   def apply(autoescape: Boolean): Anon_Autoescape = {
-    val __obj = js.Dynamic.literal(autoescape = autoescape)
+    val __obj = js.Dynamic.literal(autoescape = autoescape.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Autoescape]
   }

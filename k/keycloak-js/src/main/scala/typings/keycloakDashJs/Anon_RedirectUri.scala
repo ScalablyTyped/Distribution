@@ -11,7 +11,7 @@ trait Anon_RedirectUri extends js.Object {
 object Anon_RedirectUri {
   @scala.inline
   def apply(redirectUri: String): Anon_RedirectUri = {
-    val __obj = js.Dynamic.literal(redirectUri = redirectUri)
+    val __obj = js.Dynamic.literal(redirectUri = redirectUri.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_RedirectUri]
   }

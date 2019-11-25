@@ -21,11 +21,11 @@ object RequestResult {
     request_id: String = null,
     title: String = null
   ): RequestResult = {
-    val __obj = js.Dynamic.literal(status = status)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     if (contract_amount != null) __obj.updateDynamic("contract_amount")(contract_amount.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (request_id != null) __obj.updateDynamic("request_id")(request_id)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (request_id != null) __obj.updateDynamic("request_id")(request_id.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestResult]
   }
 }

@@ -19,7 +19,7 @@ object IChange {
     originalEndLineNumber: Double,
     originalStartLineNumber: Double
   ): IChange = {
-    val __obj = js.Dynamic.literal(modifiedEndLineNumber = modifiedEndLineNumber, modifiedStartLineNumber = modifiedStartLineNumber, originalEndLineNumber = originalEndLineNumber, originalStartLineNumber = originalStartLineNumber)
+    val __obj = js.Dynamic.literal(modifiedEndLineNumber = modifiedEndLineNumber.asInstanceOf[js.Any], modifiedStartLineNumber = modifiedStartLineNumber.asInstanceOf[js.Any], originalEndLineNumber = originalEndLineNumber.asInstanceOf[js.Any], originalStartLineNumber = originalStartLineNumber.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IChange]
   }

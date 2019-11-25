@@ -12,7 +12,7 @@ trait Anon_RawType extends js.Object {
 object Anon_RawType {
   @scala.inline
   def apply(rawType: js.Symbol, toPostgres: js.Symbol): Anon_RawType = {
-    val __obj = js.Dynamic.literal(rawType = rawType, toPostgres = toPostgres)
+    val __obj = js.Dynamic.literal(rawType = rawType.asInstanceOf[js.Any], toPostgres = toPostgres.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_RawType]
   }

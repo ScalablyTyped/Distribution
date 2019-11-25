@@ -37,8 +37,8 @@ object ICommandBarData {
     primaryItems: js.Array[ICommandBarItemProps],
     farItems: js.Array[ICommandBarItemProps] = null
   ): ICommandBarData = {
-    val __obj = js.Dynamic.literal(cacheKey = cacheKey, minimumOverflowItems = minimumOverflowItems, overflowItems = overflowItems, primaryItems = primaryItems)
-    if (farItems != null) __obj.updateDynamic("farItems")(farItems)
+    val __obj = js.Dynamic.literal(cacheKey = cacheKey.asInstanceOf[js.Any], minimumOverflowItems = minimumOverflowItems.asInstanceOf[js.Any], overflowItems = overflowItems.asInstanceOf[js.Any], primaryItems = primaryItems.asInstanceOf[js.Any])
+    if (farItems != null) __obj.updateDynamic("farItems")(farItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICommandBarData]
   }
 }

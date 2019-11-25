@@ -36,12 +36,12 @@ object DrawerOptions {
     if (itemClick != null) __obj.updateDynamic("itemClick")(js.Any.fromFunction1(itemClick))
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (mini != null) __obj.updateDynamic("mini")(mini.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
-    if (!js.isUndefined(swipeToOpen)) __obj.updateDynamic("swipeToOpen")(swipeToOpen)
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (!js.isUndefined(swipeToOpen)) __obj.updateDynamic("swipeToOpen")(swipeToOpen.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerOptions]
   }
 }

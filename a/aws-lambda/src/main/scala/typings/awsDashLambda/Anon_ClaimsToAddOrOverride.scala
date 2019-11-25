@@ -19,9 +19,9 @@ object Anon_ClaimsToAddOrOverride {
     groupOverrideDetails: Anon_GroupsToOverride = null
   ): Anon_ClaimsToAddOrOverride = {
     val __obj = js.Dynamic.literal()
-    if (claimsToAddOrOverride != null) __obj.updateDynamic("claimsToAddOrOverride")(claimsToAddOrOverride)
-    if (claimsToSuppress != null) __obj.updateDynamic("claimsToSuppress")(claimsToSuppress)
-    if (groupOverrideDetails != null) __obj.updateDynamic("groupOverrideDetails")(groupOverrideDetails)
+    if (claimsToAddOrOverride != null) __obj.updateDynamic("claimsToAddOrOverride")(claimsToAddOrOverride.asInstanceOf[js.Any])
+    if (claimsToSuppress != null) __obj.updateDynamic("claimsToSuppress")(claimsToSuppress.asInstanceOf[js.Any])
+    if (groupOverrideDetails != null) __obj.updateDynamic("groupOverrideDetails")(groupOverrideDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClaimsToAddOrOverride]
   }
 }

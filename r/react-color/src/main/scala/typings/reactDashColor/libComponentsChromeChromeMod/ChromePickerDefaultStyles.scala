@@ -39,19 +39,19 @@ object ChromePickerDefaultStyles {
     toggles: CSSProperties = null
   ): ChromePickerDefaultStyles = {
     val __obj = js.Dynamic.literal()
-    if (Alpha != null) __obj.updateDynamic("Alpha")(Alpha)
-    if (Hue != null) __obj.updateDynamic("Hue")(Hue)
-    if (Saturation != null) __obj.updateDynamic("Saturation")(Saturation)
-    if (active != null) __obj.updateDynamic("active")(active)
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (controls != null) __obj.updateDynamic("controls")(controls)
-    if (hue != null) __obj.updateDynamic("hue")(hue)
-    if (picker != null) __obj.updateDynamic("picker")(picker)
-    if (saturation != null) __obj.updateDynamic("saturation")(saturation)
-    if (swatch != null) __obj.updateDynamic("swatch")(swatch)
-    if (toggles != null) __obj.updateDynamic("toggles")(toggles)
+    if (Alpha != null) __obj.updateDynamic("Alpha")(Alpha.asInstanceOf[js.Any])
+    if (Hue != null) __obj.updateDynamic("Hue")(Hue.asInstanceOf[js.Any])
+    if (Saturation != null) __obj.updateDynamic("Saturation")(Saturation.asInstanceOf[js.Any])
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (controls != null) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
+    if (hue != null) __obj.updateDynamic("hue")(hue.asInstanceOf[js.Any])
+    if (picker != null) __obj.updateDynamic("picker")(picker.asInstanceOf[js.Any])
+    if (saturation != null) __obj.updateDynamic("saturation")(saturation.asInstanceOf[js.Any])
+    if (swatch != null) __obj.updateDynamic("swatch")(swatch.asInstanceOf[js.Any])
+    if (toggles != null) __obj.updateDynamic("toggles")(toggles.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChromePickerDefaultStyles]
   }
 }

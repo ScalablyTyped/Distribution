@@ -26,9 +26,9 @@ object BoundaryIdentifier {
   @scala.inline
   def apply(identifier: String = null, point1: Point = null, point2: Point = null): BoundaryIdentifier = {
     val __obj = js.Dynamic.literal()
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
-    if (point1 != null) __obj.updateDynamic("point1")(point1)
-    if (point2 != null) __obj.updateDynamic("point2")(point2)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
+    if (point1 != null) __obj.updateDynamic("point1")(point1.asInstanceOf[js.Any])
+    if (point2 != null) __obj.updateDynamic("point2")(point2.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoundaryIdentifier]
   }
 }

@@ -17,7 +17,7 @@ trait IDimensionList extends js.Object {
 object IDimensionList {
   @scala.inline
   def apply(qItems: js.Array[IDimensionItemLayout]): IDimensionList = {
-    val __obj = js.Dynamic.literal(qItems = qItems)
+    val __obj = js.Dynamic.literal(qItems = qItems.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IDimensionList]
   }

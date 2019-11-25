@@ -28,10 +28,10 @@ object ReloadOptions {
     userAgent: String = null
   ): ReloadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreCache)) __obj.updateDynamic("ignoreCache")(ignoreCache)
-    if (injectedScript != null) __obj.updateDynamic("injectedScript")(injectedScript)
-    if (preprocessorScript != null) __obj.updateDynamic("preprocessorScript")(preprocessorScript)
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
+    if (!js.isUndefined(ignoreCache)) __obj.updateDynamic("ignoreCache")(ignoreCache.asInstanceOf[js.Any])
+    if (injectedScript != null) __obj.updateDynamic("injectedScript")(injectedScript.asInstanceOf[js.Any])
+    if (preprocessorScript != null) __obj.updateDynamic("preprocessorScript")(preprocessorScript.asInstanceOf[js.Any])
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReloadOptions]
   }
 }

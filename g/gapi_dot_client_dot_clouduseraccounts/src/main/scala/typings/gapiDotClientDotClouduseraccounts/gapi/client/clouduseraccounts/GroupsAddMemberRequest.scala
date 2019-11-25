@@ -13,7 +13,7 @@ object GroupsAddMemberRequest {
   @scala.inline
   def apply(users: js.Array[String] = null): GroupsAddMemberRequest = {
     val __obj = js.Dynamic.literal()
-    if (users != null) __obj.updateDynamic("users")(users)
+    if (users != null) __obj.updateDynamic("users")(users.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupsAddMemberRequest]
   }
 }

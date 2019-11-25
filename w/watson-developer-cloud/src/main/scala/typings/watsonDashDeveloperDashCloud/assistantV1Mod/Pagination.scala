@@ -30,11 +30,11 @@ object Pagination {
     refresh_cursor: String = null,
     total: Int | Double = null
   ): Pagination = {
-    val __obj = js.Dynamic.literal(refresh_url = refresh_url)
+    val __obj = js.Dynamic.literal(refresh_url = refresh_url.asInstanceOf[js.Any])
     if (matched != null) __obj.updateDynamic("matched")(matched.asInstanceOf[js.Any])
-    if (next_cursor != null) __obj.updateDynamic("next_cursor")(next_cursor)
-    if (next_url != null) __obj.updateDynamic("next_url")(next_url)
-    if (refresh_cursor != null) __obj.updateDynamic("refresh_cursor")(refresh_cursor)
+    if (next_cursor != null) __obj.updateDynamic("next_cursor")(next_cursor.asInstanceOf[js.Any])
+    if (next_url != null) __obj.updateDynamic("next_url")(next_url.asInstanceOf[js.Any])
+    if (refresh_cursor != null) __obj.updateDynamic("refresh_cursor")(refresh_cursor.asInstanceOf[js.Any])
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pagination]
   }

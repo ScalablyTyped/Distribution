@@ -16,7 +16,7 @@ trait Anon_CalloutProps extends js.Object {
 object Anon_CalloutProps {
   @scala.inline
   def apply(calloutProps: Anon_12): Anon_CalloutProps = {
-    val __obj = js.Dynamic.literal(calloutProps = calloutProps)
+    val __obj = js.Dynamic.literal(calloutProps = calloutProps.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CalloutProps]
   }

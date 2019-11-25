@@ -37,13 +37,13 @@ object InternalColumnType {
     width: Double | String = null
   ): InternalColumnType = {
     val __obj = js.Dynamic.literal()
-    if (RC_TABLE_INTERNAL_COL_DEFINE != null) __obj.updateDynamic("RC_TABLE_INTERNAL_COL_DEFINE")(RC_TABLE_INTERNAL_COL_DEFINE)
+    if (RC_TABLE_INTERNAL_COL_DEFINE != null) __obj.updateDynamic("RC_TABLE_INTERNAL_COL_DEFINE")(RC_TABLE_INTERNAL_COL_DEFINE.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
     if (dataIndex != null) __obj.updateDynamic("dataIndex")(dataIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(ellipsis)) __obj.updateDynamic("ellipsis")(ellipsis)
+    if (!js.isUndefined(ellipsis)) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
     if (fixed != null) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onCell != null) __obj.updateDynamic("onCell")(js.Any.fromFunction2(onCell))

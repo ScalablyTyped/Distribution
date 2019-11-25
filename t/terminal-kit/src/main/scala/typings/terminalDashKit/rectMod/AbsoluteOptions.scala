@@ -14,7 +14,7 @@ trait AbsoluteOptions extends Options {
 object AbsoluteOptions {
   @scala.inline
   def apply(height: Double, width: Double, x: Int | Double = null, y: Int | Double = null): AbsoluteOptions = {
-    val __obj = js.Dynamic.literal(height = height, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbsoluteOptions]

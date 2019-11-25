@@ -52,16 +52,16 @@ object Operation {
     zone: String = null
   ): Operation = {
     val __obj = js.Dynamic.literal()
-    if (detail != null) __obj.updateDynamic("detail")(detail)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (operationType != null) __obj.updateDynamic("operationType")(operationType)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage)
-    if (targetLink != null) __obj.updateDynamic("targetLink")(targetLink)
-    if (zone != null) __obj.updateDynamic("zone")(zone)
+    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
+    if (targetLink != null) __obj.updateDynamic("targetLink")(targetLink.asInstanceOf[js.Any])
+    if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Operation]
   }
 }

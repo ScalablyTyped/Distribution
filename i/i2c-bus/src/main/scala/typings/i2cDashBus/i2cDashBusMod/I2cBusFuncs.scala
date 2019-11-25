@@ -45,7 +45,7 @@ object I2cBusFuncs {
     smbusWriteWord: Boolean,
     tenBitAddr: Boolean
   ): I2cBusFuncs = {
-    val __obj = js.Dynamic.literal(i2c = i2c, protocolMangling = protocolMangling, smbusBlockProcCall = smbusBlockProcCall, smbusPec = smbusPec, smbusProcCall = smbusProcCall, smbusQuick = smbusQuick, smbusReadBlock = smbusReadBlock, smbusReadByte = smbusReadByte, smbusReadI2cBlock = smbusReadI2cBlock, smbusReadWord = smbusReadWord, smbusReceiveByte = smbusReceiveByte, smbusSendByte = smbusSendByte, smbusWriteBlock = smbusWriteBlock, smbusWriteByte = smbusWriteByte, smbusWriteI2cBlock = smbusWriteI2cBlock, smbusWriteWord = smbusWriteWord, tenBitAddr = tenBitAddr)
+    val __obj = js.Dynamic.literal(i2c = i2c.asInstanceOf[js.Any], protocolMangling = protocolMangling.asInstanceOf[js.Any], smbusBlockProcCall = smbusBlockProcCall.asInstanceOf[js.Any], smbusPec = smbusPec.asInstanceOf[js.Any], smbusProcCall = smbusProcCall.asInstanceOf[js.Any], smbusQuick = smbusQuick.asInstanceOf[js.Any], smbusReadBlock = smbusReadBlock.asInstanceOf[js.Any], smbusReadByte = smbusReadByte.asInstanceOf[js.Any], smbusReadI2cBlock = smbusReadI2cBlock.asInstanceOf[js.Any], smbusReadWord = smbusReadWord.asInstanceOf[js.Any], smbusReceiveByte = smbusReceiveByte.asInstanceOf[js.Any], smbusSendByte = smbusSendByte.asInstanceOf[js.Any], smbusWriteBlock = smbusWriteBlock.asInstanceOf[js.Any], smbusWriteByte = smbusWriteByte.asInstanceOf[js.Any], smbusWriteI2cBlock = smbusWriteI2cBlock.asInstanceOf[js.Any], smbusWriteWord = smbusWriteWord.asInstanceOf[js.Any], tenBitAddr = tenBitAddr.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[I2cBusFuncs]
   }

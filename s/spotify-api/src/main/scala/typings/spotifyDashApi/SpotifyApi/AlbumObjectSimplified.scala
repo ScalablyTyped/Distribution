@@ -34,9 +34,9 @@ object AlbumObjectSimplified {
     uri: String,
     available_markets: js.Array[String] = null
   ): AlbumObjectSimplified = {
-    val __obj = js.Dynamic.literal(album_type = album_type, external_urls = external_urls, href = href, id = id, images = images, name = name, uri = uri)
-    __obj.updateDynamic("type")(`type`)
-    if (available_markets != null) __obj.updateDynamic("available_markets")(available_markets)
+    val __obj = js.Dynamic.literal(album_type = album_type.asInstanceOf[js.Any], external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (available_markets != null) __obj.updateDynamic("available_markets")(available_markets.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlbumObjectSimplified]
   }
 }

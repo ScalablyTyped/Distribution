@@ -12,7 +12,7 @@ trait LodashEvery extends js.Object {
   def apply[T](predicate: ValueIterateeCustom[T, Boolean]): Boolean = js.native
   def apply[T /* <: js.Object */](
     predicate: ValueIterateeCustom[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
       Boolean
     ],
     collection: T

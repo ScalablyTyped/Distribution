@@ -84,14 +84,14 @@ object PlusKeyKeyType {
     volumeupbutton: String = null
   ): PlusKeyKeyType = {
     val __obj = js.Dynamic.literal()
-    if (backbutton != null) __obj.updateDynamic("backbutton")(backbutton)
-    if (keydown != null) __obj.updateDynamic("keydown")(keydown)
-    if (keyup != null) __obj.updateDynamic("keyup")(keyup)
-    if (longpressed != null) __obj.updateDynamic("longpressed")(longpressed)
-    if (menubutton != null) __obj.updateDynamic("menubutton")(menubutton)
-    if (searchbutton != null) __obj.updateDynamic("searchbutton")(searchbutton)
-    if (volumedownbutton != null) __obj.updateDynamic("volumedownbutton")(volumedownbutton)
-    if (volumeupbutton != null) __obj.updateDynamic("volumeupbutton")(volumeupbutton)
+    if (backbutton != null) __obj.updateDynamic("backbutton")(backbutton.asInstanceOf[js.Any])
+    if (keydown != null) __obj.updateDynamic("keydown")(keydown.asInstanceOf[js.Any])
+    if (keyup != null) __obj.updateDynamic("keyup")(keyup.asInstanceOf[js.Any])
+    if (longpressed != null) __obj.updateDynamic("longpressed")(longpressed.asInstanceOf[js.Any])
+    if (menubutton != null) __obj.updateDynamic("menubutton")(menubutton.asInstanceOf[js.Any])
+    if (searchbutton != null) __obj.updateDynamic("searchbutton")(searchbutton.asInstanceOf[js.Any])
+    if (volumedownbutton != null) __obj.updateDynamic("volumedownbutton")(volumedownbutton.asInstanceOf[js.Any])
+    if (volumeupbutton != null) __obj.updateDynamic("volumeupbutton")(volumeupbutton.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusKeyKeyType]
   }
 }

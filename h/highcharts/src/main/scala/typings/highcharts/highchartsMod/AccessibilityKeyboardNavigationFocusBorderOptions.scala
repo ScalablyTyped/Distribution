@@ -40,10 +40,10 @@ object AccessibilityKeyboardNavigationFocusBorderOptions {
     style: CSSObject = null
   ): AccessibilityKeyboardNavigationFocusBorderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (!js.isUndefined(hideBrowserFocusOutline)) __obj.updateDynamic("hideBrowserFocusOutline")(hideBrowserFocusOutline)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideBrowserFocusOutline)) __obj.updateDynamic("hideBrowserFocusOutline")(hideBrowserFocusOutline.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessibilityKeyboardNavigationFocusBorderOptions]
   }
 }

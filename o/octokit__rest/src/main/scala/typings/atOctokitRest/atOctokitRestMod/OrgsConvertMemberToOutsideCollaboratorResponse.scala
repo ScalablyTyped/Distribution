@@ -12,7 +12,7 @@ trait OrgsConvertMemberToOutsideCollaboratorResponse extends js.Object {
 object OrgsConvertMemberToOutsideCollaboratorResponse {
   @scala.inline
   def apply(documentation_url: String, message: String): OrgsConvertMemberToOutsideCollaboratorResponse = {
-    val __obj = js.Dynamic.literal(documentation_url = documentation_url, message = message)
+    val __obj = js.Dynamic.literal(documentation_url = documentation_url.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OrgsConvertMemberToOutsideCollaboratorResponse]
   }

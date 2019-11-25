@@ -53,8 +53,8 @@ object PlusWebviewWebviewAnimationOptions {
   ): PlusWebviewWebviewAnimationOptions = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewAnimationOptions]
   }
 }

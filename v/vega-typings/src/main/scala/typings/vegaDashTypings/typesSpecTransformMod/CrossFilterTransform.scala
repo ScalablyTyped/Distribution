@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CrossFilterTransform extends Transforms {
+trait CrossFilterTransform extends _Transforms {
   var fields: (js.Array[String | TransformField]) | SignalRef
   var query: (js.Array[(Vector2[Double | SignalRef]) | SignalRef]) | SignalRef
   var signal: js.UndefOr[SignalName] = js.undefined
@@ -23,8 +23,8 @@ object CrossFilterTransform {
     signal: SignalName = null
   ): CrossFilterTransform = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    if (signal != null) __obj.updateDynamic("signal")(signal)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrossFilterTransform]
   }
 }

@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait ExcelDataType extends js.Object
 
+object ExcelDataType {
+  @scala.inline
+  def b: typings.xlsx.xlsxStrings.b = this.cast("b")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def d: typings.xlsx.xlsxStrings.d = this.cast("d")
+  @scala.inline
+  def e: typings.xlsx.xlsxStrings.e = this.cast("e")
+  @scala.inline
+  def n: typings.xlsx.xlsxStrings.n = this.cast("n")
+  @scala.inline
+  def s: typings.xlsx.xlsxStrings.s = this.cast("s")
+  @scala.inline
+  def z: typings.xlsx.xlsxStrings.z = this.cast("z")
+}
+

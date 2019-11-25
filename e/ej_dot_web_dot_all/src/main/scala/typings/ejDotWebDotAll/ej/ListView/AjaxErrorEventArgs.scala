@@ -44,14 +44,14 @@ object AjaxErrorEventArgs {
     `type`: String = null
   ): AjaxErrorEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (errorThrown != null) __obj.updateDynamic("errorThrown")(errorThrown)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (errorThrown != null) __obj.updateDynamic("errorThrown")(errorThrown.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (textStatus != null) __obj.updateDynamic("textStatus")(textStatus)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (textStatus != null) __obj.updateDynamic("textStatus")(textStatus.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AjaxErrorEventArgs]
   }
 }

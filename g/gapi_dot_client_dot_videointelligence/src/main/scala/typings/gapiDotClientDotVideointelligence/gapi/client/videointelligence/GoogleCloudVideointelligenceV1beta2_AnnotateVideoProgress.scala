@@ -13,7 +13,7 @@ object GoogleCloudVideointelligenceV1beta2_AnnotateVideoProgress {
   @scala.inline
   def apply(annotationProgress: js.Array[GoogleCloudVideointelligenceV1beta2_VideoAnnotationProgress] = null): GoogleCloudVideointelligenceV1beta2_AnnotateVideoProgress = {
     val __obj = js.Dynamic.literal()
-    if (annotationProgress != null) __obj.updateDynamic("annotationProgress")(annotationProgress)
+    if (annotationProgress != null) __obj.updateDynamic("annotationProgress")(annotationProgress.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2_AnnotateVideoProgress]
   }
 }

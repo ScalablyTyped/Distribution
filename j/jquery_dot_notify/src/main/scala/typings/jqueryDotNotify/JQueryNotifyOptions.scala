@@ -31,11 +31,11 @@ object JQueryNotifyOptions {
   ): JQueryNotifyOptions = {
     val __obj = js.Dynamic.literal()
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction0(close))
-    if (!js.isUndefined(custom)) __obj.updateDynamic("custom")(custom)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(custom)) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction0(open))
-    if (!js.isUndefined(queue)) __obj.updateDynamic("queue")(queue)
+    if (!js.isUndefined(queue)) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryNotifyOptions]

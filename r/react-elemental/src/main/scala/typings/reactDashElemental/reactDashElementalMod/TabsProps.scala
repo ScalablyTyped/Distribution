@@ -28,13 +28,13 @@ object TabsProps {
     value: String = null
   ): TabsProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit)
-    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert)
+    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
+    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabsProps]
   }
 }

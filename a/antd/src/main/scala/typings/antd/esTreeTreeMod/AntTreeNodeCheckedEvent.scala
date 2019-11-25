@@ -21,9 +21,9 @@ object AntTreeNodeCheckedEvent {
     checked: js.UndefOr[Boolean] = js.undefined,
     checkedNodes: js.Array[AntTreeNode] = null
   ): AntTreeNodeCheckedEvent = {
-    val __obj = js.Dynamic.literal(event = event, nativeEvent = nativeEvent, node = node)
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (checkedNodes != null) __obj.updateDynamic("checkedNodes")(checkedNodes)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (checkedNodes != null) __obj.updateDynamic("checkedNodes")(checkedNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[AntTreeNodeCheckedEvent]
   }
 }

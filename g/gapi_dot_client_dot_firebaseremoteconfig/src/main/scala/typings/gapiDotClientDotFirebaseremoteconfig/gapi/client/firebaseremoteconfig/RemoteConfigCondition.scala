@@ -31,9 +31,9 @@ object RemoteConfigCondition {
   @scala.inline
   def apply(expression: String = null, name: String = null, tagColor: String = null): RemoteConfigCondition = {
     val __obj = js.Dynamic.literal()
-    if (expression != null) __obj.updateDynamic("expression")(expression)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (tagColor != null) __obj.updateDynamic("tagColor")(tagColor)
+    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (tagColor != null) __obj.updateDynamic("tagColor")(tagColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteConfigCondition]
   }
 }

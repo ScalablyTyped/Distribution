@@ -15,7 +15,7 @@ object GoogleActionsV2OrdersCancellationInfo {
   @scala.inline
   def apply(reason: String = null): GoogleActionsV2OrdersCancellationInfo = {
     val __obj = js.Dynamic.literal()
-    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersCancellationInfo]
   }
 }

@@ -23,9 +23,9 @@ object ShareOption {
   @scala.inline
   def apply(imageUrl: String = null, query: String = null, title: String = null): ShareOption = {
     val __obj = js.Dynamic.literal()
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareOption]
   }
 }

@@ -19,10 +19,10 @@ object NavigationPushActionPayload {
     key: String = null,
     params: NavigationParams = null
   ): NavigationPushActionPayload = {
-    val __obj = js.Dynamic.literal(routeName = routeName)
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (params != null) __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(routeName = routeName.asInstanceOf[js.Any])
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationPushActionPayload]
   }
 }

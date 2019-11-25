@@ -15,7 +15,7 @@ trait ShellStream extends js.Object {
 object ShellStream {
   @scala.inline
   def apply(err: ReadableStream, stdin: WritableStream, stdout: ReadableStream): ShellStream = {
-    val __obj = js.Dynamic.literal(err = err, stdin = stdin, stdout = stdout)
+    val __obj = js.Dynamic.literal(err = err.asInstanceOf[js.Any], stdin = stdin.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ShellStream]
   }

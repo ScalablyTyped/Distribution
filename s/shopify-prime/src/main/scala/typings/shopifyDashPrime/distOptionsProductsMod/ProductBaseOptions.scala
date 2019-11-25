@@ -23,9 +23,9 @@ object ProductBaseOptions {
   @scala.inline
   def apply(collection_id: String = null, product_type: String = null, vendor: String = null): ProductBaseOptions = {
     val __obj = js.Dynamic.literal()
-    if (collection_id != null) __obj.updateDynamic("collection_id")(collection_id)
-    if (product_type != null) __obj.updateDynamic("product_type")(product_type)
-    if (vendor != null) __obj.updateDynamic("vendor")(vendor)
+    if (collection_id != null) __obj.updateDynamic("collection_id")(collection_id.asInstanceOf[js.Any])
+    if (product_type != null) __obj.updateDynamic("product_type")(product_type.asInstanceOf[js.Any])
+    if (vendor != null) __obj.updateDynamic("vendor")(vendor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductBaseOptions]
   }
 }

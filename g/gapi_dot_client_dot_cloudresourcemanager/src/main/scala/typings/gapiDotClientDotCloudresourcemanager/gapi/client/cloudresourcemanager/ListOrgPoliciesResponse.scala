@@ -21,8 +21,8 @@ object ListOrgPoliciesResponse {
   @scala.inline
   def apply(nextPageToken: String = null, policies: js.Array[OrgPolicy] = null): ListOrgPoliciesResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (policies != null) __obj.updateDynamic("policies")(policies)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (policies != null) __obj.updateDynamic("policies")(policies.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOrgPoliciesResponse]
   }
 }

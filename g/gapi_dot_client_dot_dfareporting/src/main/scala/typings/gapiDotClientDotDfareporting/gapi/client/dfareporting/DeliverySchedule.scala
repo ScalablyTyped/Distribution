@@ -30,10 +30,10 @@ object DeliverySchedule {
     priority: String = null
   ): DeliverySchedule = {
     val __obj = js.Dynamic.literal()
-    if (frequencyCap != null) __obj.updateDynamic("frequencyCap")(frequencyCap)
-    if (!js.isUndefined(hardCutoff)) __obj.updateDynamic("hardCutoff")(hardCutoff)
-    if (impressionRatio != null) __obj.updateDynamic("impressionRatio")(impressionRatio)
-    if (priority != null) __obj.updateDynamic("priority")(priority)
+    if (frequencyCap != null) __obj.updateDynamic("frequencyCap")(frequencyCap.asInstanceOf[js.Any])
+    if (!js.isUndefined(hardCutoff)) __obj.updateDynamic("hardCutoff")(hardCutoff.asInstanceOf[js.Any])
+    if (impressionRatio != null) __obj.updateDynamic("impressionRatio")(impressionRatio.asInstanceOf[js.Any])
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeliverySchedule]
   }
 }

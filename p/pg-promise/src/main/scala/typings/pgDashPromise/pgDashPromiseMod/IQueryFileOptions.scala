@@ -23,11 +23,11 @@ object IQueryFileOptions {
     params: js.Any = null
   ): IQueryFileOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (minify != null) __obj.updateDynamic("minify")(minify.asInstanceOf[js.Any])
-    if (!js.isUndefined(noWarnings)) __obj.updateDynamic("noWarnings")(noWarnings)
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (!js.isUndefined(noWarnings)) __obj.updateDynamic("noWarnings")(noWarnings.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQueryFileOptions]
   }
 }

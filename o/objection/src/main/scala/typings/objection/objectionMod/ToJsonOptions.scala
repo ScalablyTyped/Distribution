@@ -12,7 +12,7 @@ object ToJsonOptions {
   @scala.inline
   def apply(shallow: js.UndefOr[Boolean] = js.undefined, virtuals: Boolean | js.Array[String] = null): ToJsonOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(shallow)) __obj.updateDynamic("shallow")(shallow)
+    if (!js.isUndefined(shallow)) __obj.updateDynamic("shallow")(shallow.asInstanceOf[js.Any])
     if (virtuals != null) __obj.updateDynamic("virtuals")(virtuals.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToJsonOptions]
   }

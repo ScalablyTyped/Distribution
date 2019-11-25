@@ -22,7 +22,7 @@ object Anon_ClientStore {
     ],
     store: Store[_, AnyAction]
   ): Anon_ClientStore = {
-    val __obj = js.Dynamic.literal(client = client, store = store)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ClientStore]
   }

@@ -23,10 +23,10 @@ object AsObject {
     proof: typings.libraDashCore.libAtGeneratedProofUnderscorePbMod.SignedTransactionProof.AsObject = null,
     signedTransaction: typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.SignedTransaction.AsObject = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(version = version)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (proof != null) __obj.updateDynamic("proof")(proof)
-    if (signedTransaction != null) __obj.updateDynamic("signedTransaction")(signedTransaction)
+    val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (proof != null) __obj.updateDynamic("proof")(proof.asInstanceOf[js.Any])
+    if (signedTransaction != null) __obj.updateDynamic("signedTransaction")(signedTransaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

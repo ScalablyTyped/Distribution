@@ -12,7 +12,7 @@ trait FrameData extends js.Object {
 object FrameData {
   @scala.inline
   def apply(delta: Double, timestamp: Double): FrameData = {
-    val __obj = js.Dynamic.literal(delta = delta, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FrameData]
   }

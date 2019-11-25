@@ -21,8 +21,8 @@ object Anon_CacheConfig {
     cacheConfig: CacheConfig = null,
     updater: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit = null
   ): Anon_CacheConfig = {
-    val __obj = js.Dynamic.literal(operation = operation)
-    if (cacheConfig != null) __obj.updateDynamic("cacheConfig")(cacheConfig)
+    val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
+    if (cacheConfig != null) __obj.updateDynamic("cacheConfig")(cacheConfig.asInstanceOf[js.Any])
     if (updater != null) __obj.updateDynamic("updater")(js.Any.fromFunction2(updater))
     __obj.asInstanceOf[Anon_CacheConfig]
   }

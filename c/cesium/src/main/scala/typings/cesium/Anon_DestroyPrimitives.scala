@@ -13,8 +13,8 @@ object Anon_DestroyPrimitives {
   @scala.inline
   def apply(destroyPrimitives: js.UndefOr[Boolean] = js.undefined, show: js.UndefOr[Boolean] = js.undefined): Anon_DestroyPrimitives = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(destroyPrimitives)) __obj.updateDynamic("destroyPrimitives")(destroyPrimitives)
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (!js.isUndefined(destroyPrimitives)) __obj.updateDynamic("destroyPrimitives")(destroyPrimitives.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DestroyPrimitives]
   }
 }

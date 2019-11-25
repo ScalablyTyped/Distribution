@@ -2,8 +2,6 @@ package typings.vscodeDashLanguageclient.libClientMod
 
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.CodeActionParams
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.CodeActionRegistrationOptions
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CodeAction
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Command
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +11,9 @@ import scala.scalajs.js.annotation._
 object CodeActionRequest extends js.Object {
   val `type`: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.RequestType[
     CodeActionParams, 
-    (js.Array[Command | CodeAction]) | Null, 
+    (js.Array[
+      typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Command | typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CodeAction
+    ]) | Null, 
     Unit, 
     CodeActionRegistrationOptions
   ] = js.native

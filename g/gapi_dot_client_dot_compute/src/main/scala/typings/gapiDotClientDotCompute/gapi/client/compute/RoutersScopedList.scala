@@ -16,8 +16,8 @@ object RoutersScopedList {
   @scala.inline
   def apply(routers: js.Array[Router] = null, warning: Anon_Code = null): RoutersScopedList = {
     val __obj = js.Dynamic.literal()
-    if (routers != null) __obj.updateDynamic("routers")(routers)
-    if (warning != null) __obj.updateDynamic("warning")(warning)
+    if (routers != null) __obj.updateDynamic("routers")(routers.asInstanceOf[js.Any])
+    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoutersScopedList]
   }
 }

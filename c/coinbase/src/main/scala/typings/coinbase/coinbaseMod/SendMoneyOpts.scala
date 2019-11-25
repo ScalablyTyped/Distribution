@@ -63,14 +63,14 @@ object SendMoneyOpts {
     skip_notifications: js.UndefOr[Boolean] = js.undefined,
     to_financial_institution: js.UndefOr[Boolean] = js.undefined
   ): SendMoneyOpts = {
-    val __obj = js.Dynamic.literal(amount = amount, currency = currency, to = to)
-    __obj.updateDynamic("type")(`type`)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (fee != null) __obj.updateDynamic("fee")(fee)
-    if (financial_institution_website != null) __obj.updateDynamic("financial_institution_website")(financial_institution_website)
-    if (idem != null) __obj.updateDynamic("idem")(idem)
-    if (!js.isUndefined(skip_notifications)) __obj.updateDynamic("skip_notifications")(skip_notifications)
-    if (!js.isUndefined(to_financial_institution)) __obj.updateDynamic("to_financial_institution")(to_financial_institution)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (fee != null) __obj.updateDynamic("fee")(fee.asInstanceOf[js.Any])
+    if (financial_institution_website != null) __obj.updateDynamic("financial_institution_website")(financial_institution_website.asInstanceOf[js.Any])
+    if (idem != null) __obj.updateDynamic("idem")(idem.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip_notifications)) __obj.updateDynamic("skip_notifications")(skip_notifications.asInstanceOf[js.Any])
+    if (!js.isUndefined(to_financial_institution)) __obj.updateDynamic("to_financial_institution")(to_financial_institution.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendMoneyOpts]
   }
 }

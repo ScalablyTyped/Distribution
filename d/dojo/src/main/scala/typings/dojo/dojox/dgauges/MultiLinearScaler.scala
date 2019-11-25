@@ -1,8 +1,6 @@
 package typings.dojo.dojox.dgauges
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValuePropertyAnyArray
 import typings.dojo.dojo.Stateful
 import typings.dojo.dojoStrings.majorTickValues
 import typings.dojo.dojoStrings.majorTicks
@@ -86,12 +84,44 @@ class MultiLinearScaler () extends Stateful {
     */
   def valueForPosition(position: Double): js.Any = js.native
   @JSName("watch")
-  def watch_majorTickValues(property: majorTickValues, callback: Fn_NewValueOldValuePropertyAnyArray): Anon_Unwatch = js.native
+  def watch_majorTickValues(
+    property: majorTickValues,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Array[_]], 
+      /* newValue */ js.UndefOr[js.Array[_]], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_majorTicks(property: majorTicks, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_majorTicks(
+    property: majorTicks,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_minorTickCount(property: minorTickCount, callback: Fn_NewValueOldValuePropertyAnyArray): Anon_Unwatch = js.native
+  def watch_minorTickCount(
+    property: minorTickCount,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Array[_]], 
+      /* newValue */ js.UndefOr[js.Array[_]], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_minorTicks(property: minorTicks, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_minorTicks(
+    property: minorTicks,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

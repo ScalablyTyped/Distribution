@@ -14,8 +14,8 @@ trait ErrorEvent extends js.Object {
 object ErrorEvent {
   @scala.inline
   def apply(error: js.Any, message: String, target: WebSocket, `type`: String): ErrorEvent = {
-    val __obj = js.Dynamic.literal(error = error, message = message, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorEvent]
   }
 }

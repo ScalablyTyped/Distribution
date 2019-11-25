@@ -11,7 +11,7 @@ trait SetCustomObjectFormatterEnabledParameterType extends js.Object {
 object SetCustomObjectFormatterEnabledParameterType {
   @scala.inline
   def apply(enabled: Boolean): SetCustomObjectFormatterEnabledParameterType = {
-    val __obj = js.Dynamic.literal(enabled = enabled)
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SetCustomObjectFormatterEnabledParameterType]
   }

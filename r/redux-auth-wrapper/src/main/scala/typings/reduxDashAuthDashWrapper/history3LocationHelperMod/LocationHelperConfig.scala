@@ -19,7 +19,7 @@ object LocationHelperConfig {
   ): LocationHelperConfig[Props] = {
     val __obj = js.Dynamic.literal()
     if (locationSelector != null) __obj.updateDynamic("locationSelector")(js.Any.fromFunction1(locationSelector))
-    if (redirectQueryParamName != null) __obj.updateDynamic("redirectQueryParamName")(redirectQueryParamName)
+    if (redirectQueryParamName != null) __obj.updateDynamic("redirectQueryParamName")(redirectQueryParamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationHelperConfig[Props]]
   }
 }

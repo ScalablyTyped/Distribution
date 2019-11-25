@@ -18,9 +18,9 @@ object Anon_MoreFromAuthors {
     rewardExpirations: Anon_Optedstate = null
   ): Anon_MoreFromAuthors = {
     val __obj = js.Dynamic.literal()
-    if (moreFromAuthors != null) __obj.updateDynamic("moreFromAuthors")(moreFromAuthors)
-    if (moreFromSeries != null) __obj.updateDynamic("moreFromSeries")(moreFromSeries)
-    if (rewardExpirations != null) __obj.updateDynamic("rewardExpirations")(rewardExpirations)
+    if (moreFromAuthors != null) __obj.updateDynamic("moreFromAuthors")(moreFromAuthors.asInstanceOf[js.Any])
+    if (moreFromSeries != null) __obj.updateDynamic("moreFromSeries")(moreFromSeries.asInstanceOf[js.Any])
+    if (rewardExpirations != null) __obj.updateDynamic("rewardExpirations")(rewardExpirations.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MoreFromAuthors]
   }
 }

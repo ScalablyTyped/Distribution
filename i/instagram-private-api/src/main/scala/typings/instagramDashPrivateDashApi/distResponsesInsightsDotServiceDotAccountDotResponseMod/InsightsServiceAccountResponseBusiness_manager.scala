@@ -25,7 +25,7 @@ object InsightsServiceAccountResponseBusiness_manager {
     stories_unit: InsightsServiceAccountResponseStories_unit,
     top_posts_unit: InsightsServiceAccountResponseTop_posts_unit
   ): InsightsServiceAccountResponseBusiness_manager = {
-    val __obj = js.Dynamic.literal(account_insights_unit = account_insights_unit, account_summary_unit = account_summary_unit, followers_unit = followers_unit, promotions_unit = promotions_unit, status = status, stories_unit = stories_unit, top_posts_unit = top_posts_unit)
+    val __obj = js.Dynamic.literal(account_insights_unit = account_insights_unit.asInstanceOf[js.Any], account_summary_unit = account_summary_unit.asInstanceOf[js.Any], followers_unit = followers_unit.asInstanceOf[js.Any], promotions_unit = promotions_unit.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], stories_unit = stories_unit.asInstanceOf[js.Any], top_posts_unit = top_posts_unit.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServiceAccountResponseBusiness_manager]
   }

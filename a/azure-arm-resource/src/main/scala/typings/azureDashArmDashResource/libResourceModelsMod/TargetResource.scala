@@ -23,9 +23,9 @@ object TargetResource {
   @scala.inline
   def apply(id: String = null, resourceName: String = null, resourceType: String = null): TargetResource = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName)
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetResource]
   }
 }

@@ -2,14 +2,13 @@ package typings.markdownDashIt.libMod
 
 import typings.linkifyDashIt.linkifyDashItMod.LinkifyIt
 import typings.markdownDashIt.Anon_ArrayReplaceAt
-import typings.markdownDashIt.libParserUnderscoreBlockMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait MarkdownIt extends js.Object {
-  var block: ^ = js.native
+  var block: typings.markdownDashIt.libParserUnderscoreBlockMod.^ = js.native
   var core: typings.markdownDashIt.libParserUnderscoreCoreMod.^ = js.native
   var helpers: js.Any = js.native
   var `inline`: typings.markdownDashIt.libParserUnderscoreInlineMod.^ = js.native

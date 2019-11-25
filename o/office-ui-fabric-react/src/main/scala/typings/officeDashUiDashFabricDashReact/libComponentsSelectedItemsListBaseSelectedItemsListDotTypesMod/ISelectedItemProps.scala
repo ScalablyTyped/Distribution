@@ -11,9 +11,9 @@ trait ISelectedItemProps[T] extends IPickerItemProps[T] {
 
 object ISelectedItemProps {
   @scala.inline
-  def apply[T](IPickerItemProps: IPickerItemProps[T] = null, onCopyItem: T => Unit): ISelectedItemProps[T] = {
+  def apply[T](IPickerItemProps: IPickerItemProps[T], onCopyItem: T => Unit): ISelectedItemProps[T] = {
     val __obj = js.Dynamic.literal(onCopyItem = js.Any.fromFunction1(onCopyItem))
-    if (__obj != null) js.Dynamic.global.Object.assign(__obj, IPickerItemProps)
+    js.Dynamic.global.Object.assign(__obj, IPickerItemProps)
     __obj.asInstanceOf[ISelectedItemProps[T]]
   }
 }

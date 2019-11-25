@@ -21,7 +21,7 @@ object Anon_Href {
     size: js.Array[Double],
     shape: IShape | IGeometryJson = null
   ): Anon_Href = {
-    val __obj = js.Dynamic.literal(href = href, ooffset = ooffset, size = size)
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], ooffset = ooffset.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Href]
   }

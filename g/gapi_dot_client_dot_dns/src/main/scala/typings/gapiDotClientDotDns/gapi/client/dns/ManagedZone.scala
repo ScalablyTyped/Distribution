@@ -42,14 +42,14 @@ object ManagedZone {
     nameServers: js.Array[String] = null
   ): ManagedZone = {
     val __obj = js.Dynamic.literal()
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (dnsName != null) __obj.updateDynamic("dnsName")(dnsName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (nameServerSet != null) __obj.updateDynamic("nameServerSet")(nameServerSet)
-    if (nameServers != null) __obj.updateDynamic("nameServers")(nameServers)
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (dnsName != null) __obj.updateDynamic("dnsName")(dnsName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (nameServerSet != null) __obj.updateDynamic("nameServerSet")(nameServerSet.asInstanceOf[js.Any])
+    if (nameServers != null) __obj.updateDynamic("nameServers")(nameServers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedZone]
   }
 }

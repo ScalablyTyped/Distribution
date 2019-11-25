@@ -14,7 +14,7 @@ trait PutBucketNotificationConfigurationOutput
 object PutBucketNotificationConfigurationOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): PutBucketNotificationConfigurationOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PutBucketNotificationConfigurationOutput]
   }

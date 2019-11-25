@@ -24,11 +24,11 @@ object Anon_ClampToGroundClearOnDrop {
     proxy: DefaultProxy = null
   ): Anon_ClampToGroundClearOnDrop = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clampToGround)) __obj.updateDynamic("clampToGround")(clampToGround)
-    if (!js.isUndefined(clearOnDrop)) __obj.updateDynamic("clearOnDrop")(clearOnDrop)
+    if (!js.isUndefined(clampToGround)) __obj.updateDynamic("clampToGround")(clampToGround.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearOnDrop)) __obj.updateDynamic("clearOnDrop")(clearOnDrop.asInstanceOf[js.Any])
     if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget.asInstanceOf[js.Any])
-    if (!js.isUndefined(flyToOnDrop)) __obj.updateDynamic("flyToOnDrop")(flyToOnDrop)
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (!js.isUndefined(flyToOnDrop)) __obj.updateDynamic("flyToOnDrop")(flyToOnDrop.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClampToGroundClearOnDrop]
   }
 }

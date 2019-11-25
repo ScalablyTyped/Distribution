@@ -16,7 +16,7 @@ object DetectLanguageRequest {
   @scala.inline
   def apply(q: js.Array[String] = null): DetectLanguageRequest = {
     val __obj = js.Dynamic.literal()
-    if (q != null) __obj.updateDynamic("q")(q)
+    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectLanguageRequest]
   }
 }

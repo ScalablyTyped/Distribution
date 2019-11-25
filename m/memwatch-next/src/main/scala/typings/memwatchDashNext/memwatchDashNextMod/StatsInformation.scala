@@ -27,7 +27,7 @@ object StatsInformation {
     num_inc_gc: Double,
     usage_trend: Double
   ): StatsInformation = {
-    val __obj = js.Dynamic.literal(current_base = current_base, estimated_base = estimated_base, heap_compactions = heap_compactions, max = max, min = min, num_full_gc = num_full_gc, num_inc_gc = num_inc_gc, usage_trend = usage_trend)
+    val __obj = js.Dynamic.literal(current_base = current_base.asInstanceOf[js.Any], estimated_base = estimated_base.asInstanceOf[js.Any], heap_compactions = heap_compactions.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], num_full_gc = num_full_gc.asInstanceOf[js.Any], num_inc_gc = num_inc_gc.asInstanceOf[js.Any], usage_trend = usage_trend.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StatsInformation]
   }

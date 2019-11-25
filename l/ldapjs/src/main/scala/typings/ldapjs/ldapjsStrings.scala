@@ -27,7 +27,7 @@ object ldapjsStrings {
   sealed trait page extends js.Object
   
   @js.native
-  sealed trait searchEntry extends js.Object
+  sealed trait searchEntry_ extends js.Object
   
   @js.native
   sealed trait searchReference extends js.Object
@@ -50,7 +50,7 @@ object ldapjsStrings {
   @scala.inline
   def page: page = "page".asInstanceOf[page]
   @scala.inline
-  def searchEntry: searchEntry = "searchEntry".asInstanceOf[searchEntry]
+  def searchEntry_ : searchEntry_ = "searchEntry".asInstanceOf[searchEntry_]
   @scala.inline
   def searchReference: searchReference = "searchReference".asInstanceOf[searchReference]
   @scala.inline

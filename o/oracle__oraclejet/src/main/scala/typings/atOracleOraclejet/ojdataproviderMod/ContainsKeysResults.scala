@@ -13,7 +13,7 @@ trait ContainsKeysResults[K] extends js.Object {
 object ContainsKeysResults {
   @scala.inline
   def apply[K](containsParameters: FetchByKeysParameters[K], results: Set[K]): ContainsKeysResults[K] = {
-    val __obj = js.Dynamic.literal(containsParameters = containsParameters, results = results)
+    val __obj = js.Dynamic.literal(containsParameters = containsParameters.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContainsKeysResults[K]]
   }

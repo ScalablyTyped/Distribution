@@ -23,7 +23,7 @@ object Anon_CHROMEUPDATE {
     SHARED_MODULE_UPDATE: shared_module_update,
     UPDATE: update
   ): Anon_CHROMEUPDATE = {
-    val __obj = js.Dynamic.literal(CHROME_UPDATE = CHROME_UPDATE, INSTALL = INSTALL, SHARED_MODULE_UPDATE = SHARED_MODULE_UPDATE, UPDATE = UPDATE)
+    val __obj = js.Dynamic.literal(CHROME_UPDATE = CHROME_UPDATE.asInstanceOf[js.Any], INSTALL = INSTALL.asInstanceOf[js.Any], SHARED_MODULE_UPDATE = SHARED_MODULE_UPDATE.asInstanceOf[js.Any], UPDATE = UPDATE.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CHROMEUPDATE]
   }

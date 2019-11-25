@@ -20,10 +20,10 @@ object Anon_OnProgress {
     verbose: js.UndefOr[Boolean] = js.undefined
   ): Anon_OnProgress = {
     val __obj = js.Dynamic.literal()
-    if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress)
-    if (onStart != null) __obj.updateDynamic("onStart")(onStart)
-    if (output != null) __obj.updateDynamic("output")(output)
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress.asInstanceOf[js.Any])
+    if (onStart != null) __obj.updateDynamic("onStart")(onStart.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_OnProgress]
   }
 }

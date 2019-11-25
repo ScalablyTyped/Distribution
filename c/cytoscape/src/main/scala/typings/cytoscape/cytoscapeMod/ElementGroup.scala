@@ -17,3 +17,12 @@ import scala.scalajs.js.annotation._
 */
 trait ElementGroup extends js.Object
 
+object ElementGroup {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def edges: typings.cytoscape.cytoscapeStrings.edges = this.cast("edges")
+  @scala.inline
+  def nodes: typings.cytoscape.cytoscapeStrings.nodes = this.cast("nodes")
+}
+

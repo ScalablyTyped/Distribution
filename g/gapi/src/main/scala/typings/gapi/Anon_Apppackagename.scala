@@ -47,13 +47,13 @@ object Anon_Apppackagename {
     scope: js.Any = null
   ): Anon_Apppackagename = {
     val __obj = js.Dynamic.literal()
-    if (apppackagename != null) __obj.updateDynamic("apppackagename")(apppackagename)
+    if (apppackagename != null) __obj.updateDynamic("apppackagename")(apppackagename.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
-    if (clientid != null) __obj.updateDynamic("clientid")(clientid)
-    if (cookiepolicy != null) __obj.updateDynamic("cookiepolicy")(cookiepolicy)
-    if (!js.isUndefined(includegrantedscopes)) __obj.updateDynamic("includegrantedscopes")(includegrantedscopes)
-    if (requestvisibleactions != null) __obj.updateDynamic("requestvisibleactions")(requestvisibleactions)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (clientid != null) __obj.updateDynamic("clientid")(clientid.asInstanceOf[js.Any])
+    if (cookiepolicy != null) __obj.updateDynamic("cookiepolicy")(cookiepolicy.asInstanceOf[js.Any])
+    if (!js.isUndefined(includegrantedscopes)) __obj.updateDynamic("includegrantedscopes")(includegrantedscopes.asInstanceOf[js.Any])
+    if (requestvisibleactions != null) __obj.updateDynamic("requestvisibleactions")(requestvisibleactions.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Apppackagename]
   }
 }

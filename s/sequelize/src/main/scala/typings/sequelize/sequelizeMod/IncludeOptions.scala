@@ -79,17 +79,17 @@ object IncludeOptions {
   ): IncludeOptions = {
     val __obj = js.Dynamic.literal()
     if (all != null) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as)
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (association != null) __obj.updateDynamic("association")(association.asInstanceOf[js.Any])
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (!js.isUndefined(nested)) __obj.updateDynamic("nested")(nested)
-    if (!js.isUndefined(paranoid)) __obj.updateDynamic("paranoid")(paranoid)
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
-    if (!js.isUndefined(separate)) __obj.updateDynamic("separate")(separate)
-    if (through != null) __obj.updateDynamic("through")(through)
-    if (where != null) __obj.updateDynamic("where")(where)
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (!js.isUndefined(nested)) __obj.updateDynamic("nested")(nested.asInstanceOf[js.Any])
+    if (!js.isUndefined(paranoid)) __obj.updateDynamic("paranoid")(paranoid.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(separate)) __obj.updateDynamic("separate")(separate.asInstanceOf[js.Any])
+    if (through != null) __obj.updateDynamic("through")(through.asInstanceOf[js.Any])
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncludeOptions]
   }
 }

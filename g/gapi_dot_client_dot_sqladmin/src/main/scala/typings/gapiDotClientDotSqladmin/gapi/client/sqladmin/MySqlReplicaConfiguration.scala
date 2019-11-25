@@ -49,17 +49,17 @@ object MySqlReplicaConfiguration {
     verifyServerCertificate: js.UndefOr[Boolean] = js.undefined
   ): MySqlReplicaConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (caCertificate != null) __obj.updateDynamic("caCertificate")(caCertificate)
-    if (clientCertificate != null) __obj.updateDynamic("clientCertificate")(clientCertificate)
-    if (clientKey != null) __obj.updateDynamic("clientKey")(clientKey)
+    if (caCertificate != null) __obj.updateDynamic("caCertificate")(caCertificate.asInstanceOf[js.Any])
+    if (clientCertificate != null) __obj.updateDynamic("clientCertificate")(clientCertificate.asInstanceOf[js.Any])
+    if (clientKey != null) __obj.updateDynamic("clientKey")(clientKey.asInstanceOf[js.Any])
     if (connectRetryInterval != null) __obj.updateDynamic("connectRetryInterval")(connectRetryInterval.asInstanceOf[js.Any])
-    if (dumpFilePath != null) __obj.updateDynamic("dumpFilePath")(dumpFilePath)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (masterHeartbeatPeriod != null) __obj.updateDynamic("masterHeartbeatPeriod")(masterHeartbeatPeriod)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (sslCipher != null) __obj.updateDynamic("sslCipher")(sslCipher)
-    if (username != null) __obj.updateDynamic("username")(username)
-    if (!js.isUndefined(verifyServerCertificate)) __obj.updateDynamic("verifyServerCertificate")(verifyServerCertificate)
+    if (dumpFilePath != null) __obj.updateDynamic("dumpFilePath")(dumpFilePath.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (masterHeartbeatPeriod != null) __obj.updateDynamic("masterHeartbeatPeriod")(masterHeartbeatPeriod.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (sslCipher != null) __obj.updateDynamic("sslCipher")(sslCipher.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
+    if (!js.isUndefined(verifyServerCertificate)) __obj.updateDynamic("verifyServerCertificate")(verifyServerCertificate.asInstanceOf[js.Any])
     __obj.asInstanceOf[MySqlReplicaConfiguration]
   }
 }

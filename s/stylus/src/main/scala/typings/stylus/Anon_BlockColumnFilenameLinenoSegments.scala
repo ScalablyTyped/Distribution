@@ -27,9 +27,9 @@ object Anon_BlockColumnFilenameLinenoSegments {
     `type`: String,
     block: Block = null
   ): Anon_BlockColumnFilenameLinenoSegments = {
-    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno, segments = segments)
-    __obj.updateDynamic("type")(`type`)
-    if (block != null) __obj.updateDynamic("block")(block)
+    val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BlockColumnFilenameLinenoSegments]
   }
 }

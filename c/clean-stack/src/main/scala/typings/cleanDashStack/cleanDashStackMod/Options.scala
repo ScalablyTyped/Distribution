@@ -17,7 +17,7 @@ object Options {
   @scala.inline
   def apply(pretty: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -37,7 +37,7 @@ object Anon_0150 {
     style: emptyObject,
     tabIndex: `0`
   ): Anon_0150 = {
-    val __obj = js.Dynamic.literal(autoHeight = autoHeight, keyMapper = js.Any.fromFunction1(keyMapper), onCellsRendered = js.Any.fromFunction0(onCellsRendered), onScroll = js.Any.fromFunction0(onScroll), overscanByPixels = overscanByPixels, role = role, scrollingResetTimeInterval = scrollingResetTimeInterval, style = style, tabIndex = tabIndex)
+    val __obj = js.Dynamic.literal(autoHeight = autoHeight.asInstanceOf[js.Any], keyMapper = js.Any.fromFunction1(keyMapper), onCellsRendered = js.Any.fromFunction0(onCellsRendered), onScroll = js.Any.fromFunction0(onScroll), overscanByPixels = overscanByPixels.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], scrollingResetTimeInterval = scrollingResetTimeInterval.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], tabIndex = tabIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_0150]
   }

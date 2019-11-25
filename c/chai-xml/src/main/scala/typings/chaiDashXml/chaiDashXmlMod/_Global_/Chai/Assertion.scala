@@ -12,7 +12,7 @@ trait Assertion extends js.Object {
 object Assertion {
   @scala.inline
   def apply(xml: XmlAssertion): Assertion = {
-    val __obj = js.Dynamic.literal(xml = xml)
+    val __obj = js.Dynamic.literal(xml = xml.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Assertion]
   }

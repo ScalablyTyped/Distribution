@@ -32,10 +32,10 @@ object StartSoterAuthenticationRes {
     resultJSON: String = null
   ): StartSoterAuthenticationRes = {
     val __obj = js.Dynamic.literal()
-    if (authMode != null) __obj.updateDynamic("authMode")(authMode)
+    if (authMode != null) __obj.updateDynamic("authMode")(authMode.asInstanceOf[js.Any])
     if (errCode != null) __obj.updateDynamic("errCode")(errCode.asInstanceOf[js.Any])
-    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg)
-    if (resultJSON != null) __obj.updateDynamic("resultJSON")(resultJSON)
+    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
+    if (resultJSON != null) __obj.updateDynamic("resultJSON")(resultJSON.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSoterAuthenticationRes]
   }
 }

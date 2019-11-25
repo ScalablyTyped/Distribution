@@ -16,7 +16,7 @@ object InstanceGroupsListInstancesRequest {
   @scala.inline
   def apply(instanceState: String = null): InstanceGroupsListInstancesRequest = {
     val __obj = js.Dynamic.literal()
-    if (instanceState != null) __obj.updateDynamic("instanceState")(instanceState)
+    if (instanceState != null) __obj.updateDynamic("instanceState")(instanceState.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceGroupsListInstancesRequest]
   }
 }

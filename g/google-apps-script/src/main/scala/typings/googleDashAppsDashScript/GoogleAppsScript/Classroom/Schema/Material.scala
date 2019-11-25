@@ -20,10 +20,10 @@ object Material {
     youtubeVideo: YouTubeVideo = null
   ): Material = {
     val __obj = js.Dynamic.literal()
-    if (driveFile != null) __obj.updateDynamic("driveFile")(driveFile)
-    if (form != null) __obj.updateDynamic("form")(form)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (youtubeVideo != null) __obj.updateDynamic("youtubeVideo")(youtubeVideo)
+    if (driveFile != null) __obj.updateDynamic("driveFile")(driveFile.asInstanceOf[js.Any])
+    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (youtubeVideo != null) __obj.updateDynamic("youtubeVideo")(youtubeVideo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Material]
   }
 }

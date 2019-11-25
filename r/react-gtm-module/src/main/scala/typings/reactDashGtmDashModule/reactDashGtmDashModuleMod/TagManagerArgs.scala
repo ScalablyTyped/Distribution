@@ -33,12 +33,12 @@ object TagManagerArgs {
     events: js.Object = null,
     preview: String = null
   ): TagManagerArgs = {
-    val __obj = js.Dynamic.literal(gtmId = gtmId)
-    if (auth != null) __obj.updateDynamic("auth")(auth)
-    if (dataLayer != null) __obj.updateDynamic("dataLayer")(dataLayer)
-    if (dataLayerName != null) __obj.updateDynamic("dataLayerName")(dataLayerName)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (preview != null) __obj.updateDynamic("preview")(preview)
+    val __obj = js.Dynamic.literal(gtmId = gtmId.asInstanceOf[js.Any])
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
+    if (dataLayer != null) __obj.updateDynamic("dataLayer")(dataLayer.asInstanceOf[js.Any])
+    if (dataLayerName != null) __obj.updateDynamic("dataLayerName")(dataLayerName.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (preview != null) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagManagerArgs]
   }
 }

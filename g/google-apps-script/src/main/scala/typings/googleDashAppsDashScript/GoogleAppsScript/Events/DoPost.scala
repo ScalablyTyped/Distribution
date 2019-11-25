@@ -18,7 +18,7 @@ object DoPost {
     postData: AppsScriptHttpRequestEventPostData,
     queryString: String
   ): DoPost = {
-    val __obj = js.Dynamic.literal(contentLength = contentLength, contextPath = contextPath, parameter = parameter, parameters = parameters, postData = postData, queryString = queryString)
+    val __obj = js.Dynamic.literal(contentLength = contentLength.asInstanceOf[js.Any], contextPath = contextPath.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], postData = postData.asInstanceOf[js.Any], queryString = queryString.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DoPost]
   }

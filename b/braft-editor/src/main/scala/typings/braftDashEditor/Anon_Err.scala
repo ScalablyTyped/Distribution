@@ -22,7 +22,7 @@ object Anon_Err {
     progress: Double => Unit,
     success: Anon_Meta => Unit
   ): Anon_Err = {
-    val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), file = file, libraryId = libraryId, progress = js.Any.fromFunction1(progress), success = js.Any.fromFunction1(success))
+    val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), file = file.asInstanceOf[js.Any], libraryId = libraryId.asInstanceOf[js.Any], progress = js.Any.fromFunction1(progress), success = js.Any.fromFunction1(success))
   
     __obj.asInstanceOf[Anon_Err]
   }

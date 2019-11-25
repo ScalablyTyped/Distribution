@@ -15,7 +15,7 @@ trait Anon_Cancel extends js.Object {
 object Anon_Cancel {
   @scala.inline
   def apply(Cancel: Boolean, Pvw: ProtectedViewWindow, Reason: XlProtectedViewCloseReason): Anon_Cancel = {
-    val __obj = js.Dynamic.literal(Cancel = Cancel, Pvw = Pvw, Reason = Reason)
+    val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Pvw = Pvw.asInstanceOf[js.Any], Reason = Reason.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Cancel]
   }

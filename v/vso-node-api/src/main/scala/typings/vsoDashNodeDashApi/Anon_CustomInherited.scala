@@ -13,7 +13,7 @@ trait Anon_CustomInherited extends js.Object {
 object Anon_CustomInherited {
   @scala.inline
   def apply(custom: Double, inherited: Double, system: Double): Anon_CustomInherited = {
-    val __obj = js.Dynamic.literal(custom = custom, inherited = inherited, system = system)
+    val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any], inherited = inherited.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CustomInherited]
   }

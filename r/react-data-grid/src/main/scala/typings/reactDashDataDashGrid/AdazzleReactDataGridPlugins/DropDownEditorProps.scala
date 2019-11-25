@@ -12,7 +12,7 @@ trait DropDownEditorProps extends js.Object {
 object DropDownEditorProps {
   @scala.inline
   def apply(options: js.Array[String | Anon_IdText]): DropDownEditorProps = {
-    val __obj = js.Dynamic.literal(options = options)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DropDownEditorProps]
   }

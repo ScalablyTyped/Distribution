@@ -15,8 +15,8 @@ trait HighlightsRepositoryHighlightsTrayResponseVideoVersionsItem extends js.Obj
 object HighlightsRepositoryHighlightsTrayResponseVideoVersionsItem {
   @scala.inline
   def apply(height: Double, id: String, `type`: Double, url: String, width: Double): HighlightsRepositoryHighlightsTrayResponseVideoVersionsItem = {
-    val __obj = js.Dynamic.literal(height = height, id = id, url = url, width = width)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightsRepositoryHighlightsTrayResponseVideoVersionsItem]
   }
 }

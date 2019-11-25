@@ -24,8 +24,8 @@ object ColumnHiddenEventUIParam {
   def apply(columnIndex: Int | Double = null, columnKey: String = null, owner: js.Any = null): ColumnHiddenEventUIParam = {
     val __obj = js.Dynamic.literal()
     if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnHiddenEventUIParam]
   }
 }

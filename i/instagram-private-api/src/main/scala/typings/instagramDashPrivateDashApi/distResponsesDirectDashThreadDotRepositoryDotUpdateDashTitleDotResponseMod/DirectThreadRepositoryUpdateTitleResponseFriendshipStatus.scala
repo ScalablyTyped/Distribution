@@ -25,7 +25,7 @@ object DirectThreadRepositoryUpdateTitleResponseFriendshipStatus {
     is_restricted: Boolean,
     outgoing_request: Boolean
   ): DirectThreadRepositoryUpdateTitleResponseFriendshipStatus = {
-    val __obj = js.Dynamic.literal(blocking = blocking, following = following, incoming_request = incoming_request, is_bestie = is_bestie, is_private = is_private, is_restricted = is_restricted, outgoing_request = outgoing_request)
+    val __obj = js.Dynamic.literal(blocking = blocking.asInstanceOf[js.Any], following = following.asInstanceOf[js.Any], incoming_request = incoming_request.asInstanceOf[js.Any], is_bestie = is_bestie.asInstanceOf[js.Any], is_private = is_private.asInstanceOf[js.Any], is_restricted = is_restricted.asInstanceOf[js.Any], outgoing_request = outgoing_request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DirectThreadRepositoryUpdateTitleResponseFriendshipStatus]
   }

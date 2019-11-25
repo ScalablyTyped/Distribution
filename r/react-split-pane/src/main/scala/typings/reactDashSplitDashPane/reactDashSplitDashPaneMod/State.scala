@@ -12,7 +12,7 @@ trait State extends js.Object {
 object State {
   @scala.inline
   def apply(active: Boolean, resized: Boolean): State = {
-    val __obj = js.Dynamic.literal(active = active, resized = resized)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], resized = resized.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[State]
   }

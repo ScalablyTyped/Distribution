@@ -15,8 +15,8 @@ trait Document extends js.Object {
 object Document {
   @scala.inline
   def apply(children: js.Array[Page], id: String, name: String, `type`: DOCUMENT): Document = {
-    val __obj = js.Dynamic.literal(children = children, id = id, name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Document]
   }
 }

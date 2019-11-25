@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait rippleLocation extends js.Object
 
+object rippleLocation {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def center: typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitStrings.center = this.cast("center")
+  @scala.inline
+  def tapLocation: typings.reactDashNativeDashMaterialDashKit.reactDashNativeDashMaterialDashKitStrings.tapLocation = this.cast("tapLocation")
+}
+

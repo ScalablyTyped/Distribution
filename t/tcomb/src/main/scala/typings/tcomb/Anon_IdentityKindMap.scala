@@ -14,7 +14,7 @@ trait Anon_IdentityKindMap extends js.Object {
 object Anon_IdentityKindMap {
   @scala.inline
   def apply(identity: Boolean, kind: String, map: js.Object, name: String): Anon_IdentityKindMap = {
-    val __obj = js.Dynamic.literal(identity = identity, kind = kind, map = map, name = name)
+    val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IdentityKindMap]
   }

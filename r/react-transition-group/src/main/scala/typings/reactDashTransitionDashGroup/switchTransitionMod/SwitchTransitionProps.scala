@@ -23,7 +23,7 @@ trait SwitchTransitionProps extends js.Object {
 object SwitchTransitionProps {
   @scala.inline
   def apply(children: ReactElement, mode: `out-in` | `in-out` = null): SwitchTransitionProps = {
-    val __obj = js.Dynamic.literal(children = children)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchTransitionProps]
   }

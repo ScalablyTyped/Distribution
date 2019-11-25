@@ -36,7 +36,7 @@ object PointerDeviceUsage {
     usage: Double,
     usagePage: Double
   ): PointerDeviceUsage = {
-    val __obj = js.Dynamic.literal(maxLogical = maxLogical, maxPhysical = maxPhysical, minLogical = minLogical, minPhysical = minPhysical, physicalMultiplier = physicalMultiplier, unit = unit, usage = usage, usagePage = usagePage)
+    val __obj = js.Dynamic.literal(maxLogical = maxLogical.asInstanceOf[js.Any], maxPhysical = maxPhysical.asInstanceOf[js.Any], minLogical = minLogical.asInstanceOf[js.Any], minPhysical = minPhysical.asInstanceOf[js.Any], physicalMultiplier = physicalMultiplier.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any], usagePage = usagePage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PointerDeviceUsage]
   }

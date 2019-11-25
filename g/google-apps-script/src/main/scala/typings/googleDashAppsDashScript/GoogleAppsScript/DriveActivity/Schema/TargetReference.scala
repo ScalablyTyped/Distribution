@@ -13,8 +13,8 @@ object TargetReference {
   @scala.inline
   def apply(driveItem: DriveItemReference = null, teamDrive: TeamDriveReference = null): TargetReference = {
     val __obj = js.Dynamic.literal()
-    if (driveItem != null) __obj.updateDynamic("driveItem")(driveItem)
-    if (teamDrive != null) __obj.updateDynamic("teamDrive")(teamDrive)
+    if (driveItem != null) __obj.updateDynamic("driveItem")(driveItem.asInstanceOf[js.Any])
+    if (teamDrive != null) __obj.updateDynamic("teamDrive")(teamDrive.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetReference]
   }
 }

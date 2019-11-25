@@ -27,7 +27,7 @@ object ParseTweetOptions {
     val __obj = js.Dynamic.literal()
     if (defaultWeight != null) __obj.updateDynamic("defaultWeight")(defaultWeight.asInstanceOf[js.Any])
     if (maxWeightedTweetLength != null) __obj.updateDynamic("maxWeightedTweetLength")(maxWeightedTweetLength.asInstanceOf[js.Any])
-    if (ranges != null) __obj.updateDynamic("ranges")(ranges)
+    if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (transformedURLLength != null) __obj.updateDynamic("transformedURLLength")(transformedURLLength.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])

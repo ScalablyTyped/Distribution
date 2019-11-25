@@ -22,9 +22,9 @@ object Options {
     debug: js.UndefOr[Boolean] = js.undefined,
     ports: Anon_Http = null
   ): Options = {
-    val __obj = js.Dynamic.literal(agreeTos = agreeTos, domains = domains, email = email)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (ports != null) __obj.updateDynamic("ports")(ports)
+    val __obj = js.Dynamic.literal(agreeTos = agreeTos.asInstanceOf[js.Any], domains = domains.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (ports != null) __obj.updateDynamic("ports")(ports.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

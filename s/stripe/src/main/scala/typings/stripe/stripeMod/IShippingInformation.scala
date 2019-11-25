@@ -37,10 +37,10 @@ object IShippingInformation {
     phone: String = null,
     tracking_number: String = null
   ): IShippingInformation = {
-    val __obj = js.Dynamic.literal(address = address, name = name)
-    if (carrier != null) __obj.updateDynamic("carrier")(carrier)
-    if (phone != null) __obj.updateDynamic("phone")(phone)
-    if (tracking_number != null) __obj.updateDynamic("tracking_number")(tracking_number)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (carrier != null) __obj.updateDynamic("carrier")(carrier.asInstanceOf[js.Any])
+    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
+    if (tracking_number != null) __obj.updateDynamic("tracking_number")(tracking_number.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShippingInformation]
   }
 }

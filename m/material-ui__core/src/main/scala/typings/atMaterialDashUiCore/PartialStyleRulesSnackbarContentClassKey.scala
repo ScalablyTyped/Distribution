@@ -16,9 +16,9 @@ object PartialStyleRulesSnackbarContentClassKey {
   @scala.inline
   def apply(action: CSSProperties = null, message: CSSProperties = null, root: CSSProperties = null): PartialStyleRulesSnackbarContentClassKey = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesSnackbarContentClassKey]
   }
 }

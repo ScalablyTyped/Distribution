@@ -13,7 +13,7 @@ trait ToneInput extends js.Object {
 object ToneInput {
   @scala.inline
   def apply(text: String): ToneInput = {
-    val __obj = js.Dynamic.literal(text = text)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ToneInput]
   }

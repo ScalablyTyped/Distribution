@@ -21,9 +21,9 @@ object SieveFilterOptions {
     connectedness: Int | Double = null,
     mask: RasterBand = null
   ): SieveFilterOptions = {
-    val __obj = js.Dynamic.literal(dst = dst, src = src, threshold = threshold)
+    val __obj = js.Dynamic.literal(dst = dst.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any])
     if (connectedness != null) __obj.updateDynamic("connectedness")(connectedness.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask)
+    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     __obj.asInstanceOf[SieveFilterOptions]
   }
 }

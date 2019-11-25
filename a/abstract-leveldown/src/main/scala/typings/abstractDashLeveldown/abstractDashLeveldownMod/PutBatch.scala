@@ -15,7 +15,7 @@ object PutBatch {
   @scala.inline
   def apply[K, V](key: K, `type`: put, value: V): PutBatch[K, V] = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBatch[K, V]]
   }
 }

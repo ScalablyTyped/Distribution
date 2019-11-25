@@ -28,7 +28,7 @@ object SegmentDrawActionProperties {
   def apply(mode: freehand | click = null, view: MapViewProperties = null): SegmentDrawActionProperties = {
     val __obj = js.Dynamic.literal()
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentDrawActionProperties]
   }
 }

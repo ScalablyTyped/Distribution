@@ -14,7 +14,7 @@ object MessageContextGlobal {
   @scala.inline
   def apply(system: MessageContextGlobalSystem = null): MessageContextGlobal = {
     val __obj = js.Dynamic.literal()
-    if (system != null) __obj.updateDynamic("system")(system)
+    if (system != null) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageContextGlobal]
   }
 }

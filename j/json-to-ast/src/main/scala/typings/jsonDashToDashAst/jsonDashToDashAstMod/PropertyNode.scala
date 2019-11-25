@@ -15,9 +15,9 @@ trait PropertyNode extends ASTNode {
 object PropertyNode {
   @scala.inline
   def apply(key: IdentifierNode, `type`: Property, value: ValueNode, loc: Location = null): PropertyNode = {
-    val __obj = js.Dynamic.literal(key = key, value = value)
-    __obj.updateDynamic("type")(`type`)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyNode]
   }
 }

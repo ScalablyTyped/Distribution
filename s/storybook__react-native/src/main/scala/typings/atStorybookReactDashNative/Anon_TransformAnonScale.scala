@@ -11,7 +11,7 @@ trait Anon_TransformAnonScale extends js.Object {
 object Anon_TransformAnonScale {
   @scala.inline
   def apply(transform: js.Array[Anon_Scale]): Anon_TransformAnonScale = {
-    val __obj = js.Dynamic.literal(transform = transform)
+    val __obj = js.Dynamic.literal(transform = transform.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_TransformAnonScale]
   }

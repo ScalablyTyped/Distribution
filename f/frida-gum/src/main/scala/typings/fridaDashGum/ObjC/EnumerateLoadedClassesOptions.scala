@@ -16,7 +16,7 @@ object EnumerateLoadedClassesOptions {
   @scala.inline
   def apply(ownedBy: ModuleMap = null): EnumerateLoadedClassesOptions = {
     val __obj = js.Dynamic.literal()
-    if (ownedBy != null) __obj.updateDynamic("ownedBy")(ownedBy)
+    if (ownedBy != null) __obj.updateDynamic("ownedBy")(ownedBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumerateLoadedClassesOptions]
   }
 }

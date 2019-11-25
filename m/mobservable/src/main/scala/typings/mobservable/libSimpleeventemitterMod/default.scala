@@ -1,6 +1,5 @@
 package typings.mobservable.libSimpleeventemitterMod
 
-import typings.mobservable.Fn_Data
 import typings.mobservable.libInterfacesMod.Lambda
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends SimpleEventEmitter {
   /* CompleteClass */
-  override var listeners: js.Array[Fn_Data] = js.native
+  override var listeners: js.Array[js.Function1[/* repeated */ _, Unit]] = js.native
   /* CompleteClass */
   override def emit(data: js.Any*): js.Any = js.native
   /* CompleteClass */

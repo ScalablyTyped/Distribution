@@ -12,7 +12,7 @@ object OrganizerMeetingInfo {
   @scala.inline
   def apply(organizer: IdentitySet = null): OrganizerMeetingInfo = {
     val __obj = js.Dynamic.literal()
-    if (organizer != null) __obj.updateDynamic("organizer")(organizer)
+    if (organizer != null) __obj.updateDynamic("organizer")(organizer.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrganizerMeetingInfo]
   }
 }

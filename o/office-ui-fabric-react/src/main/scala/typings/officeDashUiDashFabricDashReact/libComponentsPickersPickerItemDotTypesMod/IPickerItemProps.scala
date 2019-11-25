@@ -40,17 +40,15 @@ object IPickerItemProps {
     key: String | Double = null,
     onItemChange: (/* item */ T, /* index */ Double) => Unit = null,
     onRemoveItem: () => Unit = null,
-    removeButtonAriaLabel: String = null,
-    selected: js.UndefOr[Boolean] = js.undefined
+    removeButtonAriaLabel: String = null
   ): IPickerItemProps[T] = {
-    val __obj = js.Dynamic.literal(index = index, item = item.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onItemChange != null) __obj.updateDynamic("onItemChange")(js.Any.fromFunction2(onItemChange))
     if (onRemoveItem != null) __obj.updateDynamic("onRemoveItem")(js.Any.fromFunction0(onRemoveItem))
-    if (removeButtonAriaLabel != null) __obj.updateDynamic("removeButtonAriaLabel")(removeButtonAriaLabel)
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (removeButtonAriaLabel != null) __obj.updateDynamic("removeButtonAriaLabel")(removeButtonAriaLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPickerItemProps[T]]
   }
 }

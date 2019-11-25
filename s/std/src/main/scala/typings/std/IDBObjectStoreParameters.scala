@@ -16,7 +16,7 @@ object IDBObjectStoreParameters {
     keyPath: java.lang.String | js.Array[java.lang.String] = null
   ): IDBObjectStoreParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement)
+    if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement.asInstanceOf[js.Any])
     if (keyPath != null) __obj.updateDynamic("keyPath")(keyPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDBObjectStoreParameters]
   }

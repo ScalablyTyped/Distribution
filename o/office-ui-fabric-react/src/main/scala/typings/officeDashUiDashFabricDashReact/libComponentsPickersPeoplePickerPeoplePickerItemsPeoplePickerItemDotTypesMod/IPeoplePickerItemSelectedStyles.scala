@@ -24,7 +24,7 @@ object IPeoplePickerItemSelectedStyles {
     removeButton: IStyle = null,
     root: IStyle = null
   ): IPeoplePickerItemSelectedStyles = {
-    val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles)
+    val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles.asInstanceOf[js.Any])
     if (itemContent != null) __obj.updateDynamic("itemContent")(itemContent.asInstanceOf[js.Any])
     if (removeButton != null) __obj.updateDynamic("removeButton")(removeButton.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])

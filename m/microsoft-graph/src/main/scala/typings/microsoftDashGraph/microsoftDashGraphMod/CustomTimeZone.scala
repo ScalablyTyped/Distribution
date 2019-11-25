@@ -26,9 +26,9 @@ object CustomTimeZone {
   ): CustomTimeZone = {
     val __obj = js.Dynamic.literal()
     if (bias != null) __obj.updateDynamic("bias")(bias.asInstanceOf[js.Any])
-    if (daylightOffset != null) __obj.updateDynamic("daylightOffset")(daylightOffset)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (standardOffset != null) __obj.updateDynamic("standardOffset")(standardOffset)
+    if (daylightOffset != null) __obj.updateDynamic("daylightOffset")(daylightOffset.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (standardOffset != null) __obj.updateDynamic("standardOffset")(standardOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomTimeZone]
   }
 }

@@ -19,8 +19,8 @@ object ListDividerTheme {
   @scala.inline
   def apply(divider: String = null, inset: String = null): ListDividerTheme = {
     val __obj = js.Dynamic.literal()
-    if (divider != null) __obj.updateDynamic("divider")(divider)
-    if (inset != null) __obj.updateDynamic("inset")(inset)
+    if (divider != null) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
+    if (inset != null) __obj.updateDynamic("inset")(inset.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDividerTheme]
   }
 }

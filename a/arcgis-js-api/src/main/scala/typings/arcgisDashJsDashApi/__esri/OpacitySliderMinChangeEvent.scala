@@ -13,8 +13,8 @@ trait OpacitySliderMinChangeEvent extends js.Object {
 object OpacitySliderMinChangeEvent {
   @scala.inline
   def apply(oldValue: Double, `type`: String, value: Double): OpacitySliderMinChangeEvent = {
-    val __obj = js.Dynamic.literal(oldValue = oldValue, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(oldValue = oldValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpacitySliderMinChangeEvent]
   }
 }

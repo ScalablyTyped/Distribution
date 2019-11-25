@@ -76,9 +76,9 @@ object PaymentMethodCard {
     three_d_secure_usage: Anon_Supported = null,
     wallet: Anon_Amexexpresscheckout = null
   ): PaymentMethodCard = {
-    val __obj = js.Dynamic.literal(brand = brand, checks = checks, country = country, exp_month = exp_month, exp_year = exp_year, fingerprint = fingerprint, funding = funding, generated_from = generated_from, last4 = last4)
-    if (three_d_secure_usage != null) __obj.updateDynamic("three_d_secure_usage")(three_d_secure_usage)
-    if (wallet != null) __obj.updateDynamic("wallet")(wallet)
+    val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], checks = checks.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], funding = funding.asInstanceOf[js.Any], generated_from = generated_from.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any])
+    if (three_d_secure_usage != null) __obj.updateDynamic("three_d_secure_usage")(three_d_secure_usage.asInstanceOf[js.Any])
+    if (wallet != null) __obj.updateDynamic("wallet")(wallet.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentMethodCard]
   }
 }

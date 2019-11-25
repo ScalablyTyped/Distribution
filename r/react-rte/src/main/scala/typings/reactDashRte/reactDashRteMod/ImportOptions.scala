@@ -27,7 +27,7 @@ object ImportOptions {
     val __obj = js.Dynamic.literal()
     if (customBlockFn != null) __obj.updateDynamic("customBlockFn")(js.Any.fromFunction1(customBlockFn))
     if (customInlineFn != null) __obj.updateDynamic("customInlineFn")(js.Any.fromFunction2(customInlineFn))
-    if (elementStyles != null) __obj.updateDynamic("elementStyles")(elementStyles)
+    if (elementStyles != null) __obj.updateDynamic("elementStyles")(elementStyles.asInstanceOf[js.Any])
     if (parser != null) __obj.updateDynamic("parser")(js.Any.fromFunction1(parser))
     __obj.asInstanceOf[ImportOptions]
   }

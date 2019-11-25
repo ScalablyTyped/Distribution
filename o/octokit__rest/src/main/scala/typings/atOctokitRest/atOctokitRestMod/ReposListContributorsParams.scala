@@ -30,8 +30,8 @@ object ReposListContributorsParams {
     page: Int | Double = null,
     per_page: Int | Double = null
   ): ReposListContributorsParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo)
-    if (anon != null) __obj.updateDynamic("anon")(anon)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (anon != null) __obj.updateDynamic("anon")(anon.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposListContributorsParams]

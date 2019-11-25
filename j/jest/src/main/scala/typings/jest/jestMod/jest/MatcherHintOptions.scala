@@ -28,13 +28,13 @@ object MatcherHintOptions {
     secondArgumentColor: /* arg */ String => String = null
   ): MatcherHintOptions = {
     val __obj = js.Dynamic.literal()
-    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     if (expectedColor != null) __obj.updateDynamic("expectedColor")(js.Any.fromFunction1(expectedColor))
-    if (!js.isUndefined(isDirectExpectCall)) __obj.updateDynamic("isDirectExpectCall")(isDirectExpectCall)
-    if (!js.isUndefined(isNot)) __obj.updateDynamic("isNot")(isNot)
-    if (promise != null) __obj.updateDynamic("promise")(promise)
+    if (!js.isUndefined(isDirectExpectCall)) __obj.updateDynamic("isDirectExpectCall")(isDirectExpectCall.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNot)) __obj.updateDynamic("isNot")(isNot.asInstanceOf[js.Any])
+    if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
     if (receivedColor != null) __obj.updateDynamic("receivedColor")(js.Any.fromFunction1(receivedColor))
-    if (secondArgument != null) __obj.updateDynamic("secondArgument")(secondArgument)
+    if (secondArgument != null) __obj.updateDynamic("secondArgument")(secondArgument.asInstanceOf[js.Any])
     if (secondArgumentColor != null) __obj.updateDynamic("secondArgumentColor")(js.Any.fromFunction1(secondArgumentColor))
     __obj.asInstanceOf[MatcherHintOptions]
   }

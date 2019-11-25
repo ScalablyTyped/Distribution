@@ -17,7 +17,7 @@ object Anon_Auto {
   @scala.inline
   def apply(selectOnClick: js.UndefOr[Boolean] = js.undefined, size: auto | small | medium | large = null): Anon_Auto = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(selectOnClick)) __obj.updateDynamic("selectOnClick")(selectOnClick)
+    if (!js.isUndefined(selectOnClick)) __obj.updateDynamic("selectOnClick")(selectOnClick.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Auto]
   }

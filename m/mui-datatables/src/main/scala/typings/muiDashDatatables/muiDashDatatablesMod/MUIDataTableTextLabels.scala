@@ -23,7 +23,7 @@ object MUIDataTableTextLabels {
     toolbar: MUIDataTableTextLabelsToolbar,
     viewColumns: MUIDataTableTextLabelsViewColumns
   ): MUIDataTableTextLabels = {
-    val __obj = js.Dynamic.literal(body = body, filter = filter, pagination = pagination, selectedRows = selectedRows, toolbar = toolbar, viewColumns = viewColumns)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any], selectedRows = selectedRows.asInstanceOf[js.Any], toolbar = toolbar.asInstanceOf[js.Any], viewColumns = viewColumns.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MUIDataTableTextLabels]
   }

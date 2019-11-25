@@ -19,7 +19,7 @@ trait NetStatsReceived extends VoxImplantEvent {
 object NetStatsReceived {
   @scala.inline
   def apply(stats: NetworkInfo): NetStatsReceived = {
-    val __obj = js.Dynamic.literal(stats = stats)
+    val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NetStatsReceived]
   }

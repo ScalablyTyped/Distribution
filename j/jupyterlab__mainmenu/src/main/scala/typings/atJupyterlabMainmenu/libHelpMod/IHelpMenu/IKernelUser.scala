@@ -26,7 +26,7 @@ object IKernelUser {
     tracker: IWidgetTracker[T],
     isEnabled: T => Boolean = null
   ): IKernelUser[T] = {
-    val __obj = js.Dynamic.literal(getKernel = js.Any.fromFunction1(getKernel), tracker = tracker)
+    val __obj = js.Dynamic.literal(getKernel = js.Any.fromFunction1(getKernel), tracker = tracker.asInstanceOf[js.Any])
     if (isEnabled != null) __obj.updateDynamic("isEnabled")(js.Any.fromFunction1(isEnabled))
     __obj.asInstanceOf[IKernelUser[T]]
   }

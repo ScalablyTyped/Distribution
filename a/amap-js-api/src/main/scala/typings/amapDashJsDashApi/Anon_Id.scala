@@ -23,9 +23,9 @@ object Anon_Id {
     rank: Int | Double = null,
     txt: String = null
   ): Anon_Id = {
-    val __obj = js.Dynamic.literal(id = id, name = name, position = position, zooms = zooms)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], zooms = zooms.asInstanceOf[js.Any])
     if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
-    if (txt != null) __obj.updateDynamic("txt")(txt)
+    if (txt != null) __obj.updateDynamic("txt")(txt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Id]
   }
 }

@@ -21,9 +21,9 @@ object CommonSerializeOptions {
     serializeFunctions: js.UndefOr[Boolean] = js.undefined
   ): CommonSerializeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkKeys)) __obj.updateDynamic("checkKeys")(checkKeys)
-    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined)
-    if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions)
+    if (!js.isUndefined(checkKeys)) __obj.updateDynamic("checkKeys")(checkKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined.asInstanceOf[js.Any])
+    if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonSerializeOptions]
   }
 }

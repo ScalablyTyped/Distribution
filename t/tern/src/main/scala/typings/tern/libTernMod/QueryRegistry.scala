@@ -35,8 +35,8 @@ object QueryRegistry {
     rename: Anon_QueryResultRenameQuery,
     `type`: Anon_QueryResultTypeQuery
   ): QueryRegistry = {
-    val __obj = js.Dynamic.literal(completions = completions, definition = definition, documentation = documentation, files = files, properties = properties, refs = refs, rename = rename)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(completions = completions.asInstanceOf[js.Any], definition = definition.asInstanceOf[js.Any], documentation = documentation.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], refs = refs.asInstanceOf[js.Any], rename = rename.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryRegistry]
   }
 }

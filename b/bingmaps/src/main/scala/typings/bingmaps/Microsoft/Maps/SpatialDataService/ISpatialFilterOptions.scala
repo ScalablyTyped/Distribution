@@ -41,7 +41,7 @@ object ISpatialFilterOptions {
     radius: Int | Double = null,
     start: String | Location = null
   ): ISpatialFilterOptions = {
-    val __obj = js.Dynamic.literal(spatialFilterType = spatialFilterType)
+    val __obj = js.Dynamic.literal(spatialFilterType = spatialFilterType.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (intersects != null) __obj.updateDynamic("intersects")(intersects.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])

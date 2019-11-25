@@ -29,7 +29,7 @@ object InputItemStyle {
     inputErrorColor: TextStyle,
     text: TextStyle
   ): InputItemStyle = {
-    val __obj = js.Dynamic.literal(clear = clear, container = container, errorIcon = errorIcon, extra = extra, input = input, inputDisabled = inputDisabled, inputErrorColor = inputErrorColor, text = text)
+    val __obj = js.Dynamic.literal(clear = clear.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], errorIcon = errorIcon.asInstanceOf[js.Any], extra = extra.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], inputDisabled = inputDisabled.asInstanceOf[js.Any], inputErrorColor = inputErrorColor.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InputItemStyle]
   }

@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait ButtonPosition extends js.Object
 
+object ButtonPosition {
+  @scala.inline
+  def LB: typings.amapDashJsDashApiDashGeolocation.amapDashJsDashApiDashGeolocationStrings.LB = this.cast("LB")
+  @scala.inline
+  def LT: typings.amapDashJsDashApiDashGeolocation.amapDashJsDashApiDashGeolocationStrings.LT = this.cast("LT")
+  @scala.inline
+  def RB: typings.amapDashJsDashApiDashGeolocation.amapDashJsDashApiDashGeolocationStrings.RB = this.cast("RB")
+  @scala.inline
+  def RT: typings.amapDashJsDashApiDashGeolocation.amapDashJsDashApiDashGeolocationStrings.RT = this.cast("RT")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

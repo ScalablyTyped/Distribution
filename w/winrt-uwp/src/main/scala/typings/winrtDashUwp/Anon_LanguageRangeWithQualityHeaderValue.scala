@@ -13,7 +13,7 @@ trait Anon_LanguageRangeWithQualityHeaderValue extends js.Object {
 object Anon_LanguageRangeWithQualityHeaderValue {
   @scala.inline
   def apply(languageRangeWithQualityHeaderValue: HttpLanguageRangeWithQualityHeaderValue, returnValue: Boolean): Anon_LanguageRangeWithQualityHeaderValue = {
-    val __obj = js.Dynamic.literal(languageRangeWithQualityHeaderValue = languageRangeWithQualityHeaderValue, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(languageRangeWithQualityHeaderValue = languageRangeWithQualityHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_LanguageRangeWithQualityHeaderValue]
   }

@@ -14,7 +14,7 @@ object Feed {
   @scala.inline
   def apply(link: String = null): Feed = {
     val __obj = js.Dynamic.literal()
-    if (link != null) __obj.updateDynamic("link")(link)
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
     __obj.asInstanceOf[Feed]
   }
 }

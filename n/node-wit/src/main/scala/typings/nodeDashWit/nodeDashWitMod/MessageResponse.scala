@@ -13,7 +13,7 @@ trait MessageResponse extends js.Object {
 object MessageResponse {
   @scala.inline
   def apply(_text: String, entities: js.Any, msg_id: String): MessageResponse = {
-    val __obj = js.Dynamic.literal(_text = _text, entities = entities, msg_id = msg_id)
+    val __obj = js.Dynamic.literal(_text = _text.asInstanceOf[js.Any], entities = entities.asInstanceOf[js.Any], msg_id = msg_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MessageResponse]
   }

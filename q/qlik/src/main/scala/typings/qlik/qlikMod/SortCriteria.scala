@@ -28,7 +28,7 @@ object SortCriteria {
     qSortByNumeric: `-1` | `0` | `1`,
     qSortByState: `-1` | `0` | `1`
   ): SortCriteria = {
-    val __obj = js.Dynamic.literal(qExpression = qExpression, qSortByAscii = qSortByAscii.asInstanceOf[js.Any], qSortByExpression = qSortByExpression.asInstanceOf[js.Any], qSortByFrequency = qSortByFrequency.asInstanceOf[js.Any], qSortByLoadOrder = qSortByLoadOrder.asInstanceOf[js.Any], qSortByNumeric = qSortByNumeric.asInstanceOf[js.Any], qSortByState = qSortByState.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(qExpression = qExpression.asInstanceOf[js.Any], qSortByAscii = qSortByAscii.asInstanceOf[js.Any], qSortByExpression = qSortByExpression.asInstanceOf[js.Any], qSortByFrequency = qSortByFrequency.asInstanceOf[js.Any], qSortByLoadOrder = qSortByLoadOrder.asInstanceOf[js.Any], qSortByNumeric = qSortByNumeric.asInstanceOf[js.Any], qSortByState = qSortByState.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SortCriteria]
   }

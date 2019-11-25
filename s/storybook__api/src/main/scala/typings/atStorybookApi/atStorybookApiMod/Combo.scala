@@ -12,7 +12,7 @@ trait Combo extends js.Object {
 object Combo {
   @scala.inline
   def apply(api: API, state: State): Combo = {
-    val __obj = js.Dynamic.literal(api = api, state = state)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Combo]
   }

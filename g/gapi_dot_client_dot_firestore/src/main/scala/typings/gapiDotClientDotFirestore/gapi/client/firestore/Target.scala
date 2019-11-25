@@ -47,11 +47,11 @@ object Target {
     targetId: Int | Double = null
   ): Target = {
     val __obj = js.Dynamic.literal()
-    if (documents != null) __obj.updateDynamic("documents")(documents)
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (readTime != null) __obj.updateDynamic("readTime")(readTime)
-    if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken)
+    if (documents != null) __obj.updateDynamic("documents")(documents.asInstanceOf[js.Any])
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
+    if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken.asInstanceOf[js.Any])
     if (targetId != null) __obj.updateDynamic("targetId")(targetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Target]
   }

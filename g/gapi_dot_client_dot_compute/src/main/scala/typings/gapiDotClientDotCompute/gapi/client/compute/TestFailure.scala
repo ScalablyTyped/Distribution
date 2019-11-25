@@ -20,10 +20,10 @@ object TestFailure {
     path: String = null
   ): TestFailure = {
     val __obj = js.Dynamic.literal()
-    if (actualService != null) __obj.updateDynamic("actualService")(actualService)
-    if (expectedService != null) __obj.updateDynamic("expectedService")(expectedService)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (actualService != null) __obj.updateDynamic("actualService")(actualService.asInstanceOf[js.Any])
+    if (expectedService != null) __obj.updateDynamic("expectedService")(expectedService.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestFailure]
   }
 }

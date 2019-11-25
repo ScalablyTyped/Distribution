@@ -14,7 +14,7 @@ trait SignReturn extends js.Object {
 object SignReturn {
   @scala.inline
   def apply(data: Buffer, mac: Buffer): SignReturn = {
-    val __obj = js.Dynamic.literal(data = data, mac = mac)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SignReturn]
   }

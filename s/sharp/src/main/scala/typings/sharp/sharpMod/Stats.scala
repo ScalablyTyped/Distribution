@@ -16,7 +16,7 @@ trait Stats extends js.Object {
 object Stats {
   @scala.inline
   def apply(channels: js.Array[ChannelStats], entropy: Double, isOpaque: Boolean): Stats = {
-    val __obj = js.Dynamic.literal(channels = channels, entropy = entropy, isOpaque = isOpaque)
+    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], entropy = entropy.asInstanceOf[js.Any], isOpaque = isOpaque.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Stats]
   }

@@ -13,7 +13,7 @@ object AndroidMobileAppIdentifier {
   @scala.inline
   def apply(packageId: String = null): AndroidMobileAppIdentifier = {
     val __obj = js.Dynamic.literal()
-    if (packageId != null) __obj.updateDynamic("packageId")(packageId)
+    if (packageId != null) __obj.updateDynamic("packageId")(packageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidMobileAppIdentifier]
   }
 }

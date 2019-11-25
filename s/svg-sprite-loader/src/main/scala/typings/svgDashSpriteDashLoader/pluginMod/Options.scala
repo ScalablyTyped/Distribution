@@ -16,8 +16,8 @@ object Options {
   @scala.inline
   def apply(plainSprite: js.UndefOr[Boolean] = js.undefined, spriteAttrs: StringDictionary[js.Any] = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(plainSprite)) __obj.updateDynamic("plainSprite")(plainSprite)
-    if (spriteAttrs != null) __obj.updateDynamic("spriteAttrs")(spriteAttrs)
+    if (!js.isUndefined(plainSprite)) __obj.updateDynamic("plainSprite")(plainSprite.asInstanceOf[js.Any])
+    if (spriteAttrs != null) __obj.updateDynamic("spriteAttrs")(spriteAttrs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

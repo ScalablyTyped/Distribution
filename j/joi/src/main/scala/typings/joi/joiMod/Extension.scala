@@ -53,13 +53,13 @@ object Extension {
     ] = null,
     rules: js.Array[Rules[_]] = null
   ): Extension = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (coerce != null) __obj.updateDynamic("coerce")(coerce)
-    if (describe != null) __obj.updateDynamic("describe")(describe)
+    if (coerce != null) __obj.updateDynamic("coerce")(coerce.asInstanceOf[js.Any])
+    if (describe != null) __obj.updateDynamic("describe")(describe.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (pre != null) __obj.updateDynamic("pre")(pre)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (pre != null) __obj.updateDynamic("pre")(pre.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[Extension]
   }
 }

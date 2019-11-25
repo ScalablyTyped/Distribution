@@ -45,14 +45,14 @@ object ActionSheetOptions {
     success: /* res */ Anon_Index => Unit = null,
     title: String = null
   ): ActionSheetOptions = {
-    val __obj = js.Dynamic.literal(items = items)
-    if (badges != null) __obj.updateDynamic("badges")(badges)
-    if (cancelButtonText != null) __obj.updateDynamic("cancelButtonText")(cancelButtonText)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
+    if (badges != null) __obj.updateDynamic("badges")(badges.asInstanceOf[js.Any])
+    if (cancelButtonText != null) __obj.updateDynamic("cancelButtonText")(cancelButtonText.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (destructiveBtnIndex != null) __obj.updateDynamic("destructiveBtnIndex")(destructiveBtnIndex.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionSheetOptions]
   }
 }

@@ -26,7 +26,7 @@ object SerializableModuleMap {
     mocks: js.Array[js.Tuple2[String, ValueType[MockData]]],
     rootDir: Path
   ): SerializableModuleMap = {
-    val __obj = js.Dynamic.literal(duplicates = duplicates, map = map, mocks = mocks, rootDir = rootDir)
+    val __obj = js.Dynamic.literal(duplicates = duplicates.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mocks = mocks.asInstanceOf[js.Any], rootDir = rootDir.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SerializableModuleMap]
   }

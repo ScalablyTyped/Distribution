@@ -14,9 +14,9 @@ object Anon_ModuleUrl {
   @scala.inline
   def apply(moduleUrl: String = null, styleUrls: js.Array[String] = null, styles: js.Array[String] = null): Anon_ModuleUrl = {
     val __obj = js.Dynamic.literal()
-    if (moduleUrl != null) __obj.updateDynamic("moduleUrl")(moduleUrl)
-    if (styleUrls != null) __obj.updateDynamic("styleUrls")(styleUrls)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (moduleUrl != null) __obj.updateDynamic("moduleUrl")(moduleUrl.asInstanceOf[js.Any])
+    if (styleUrls != null) __obj.updateDynamic("styleUrls")(styleUrls.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ModuleUrl]
   }
 }

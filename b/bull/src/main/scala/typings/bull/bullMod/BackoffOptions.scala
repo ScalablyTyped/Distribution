@@ -19,7 +19,7 @@ object BackoffOptions {
   @scala.inline
   def apply(`type`: String, delay: Int | Double = null): BackoffOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackoffOptions]
   }

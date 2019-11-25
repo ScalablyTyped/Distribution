@@ -14,7 +14,7 @@ trait Anon_AppIdExtraData extends js.Object {
 object Anon_AppIdExtraData {
   @scala.inline
   def apply(appId: String, extraData: js.Object): Anon_AppIdExtraData = {
-    val __obj = js.Dynamic.literal(appId = appId, extraData = extraData)
+    val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], extraData = extraData.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AppIdExtraData]
   }

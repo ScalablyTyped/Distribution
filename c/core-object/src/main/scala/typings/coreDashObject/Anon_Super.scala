@@ -12,7 +12,7 @@ trait Anon_Super[Base] extends js.Object {
 object Anon_Super {
   @scala.inline
   def apply[Base](_super: Super[Base]): Anon_Super[Base] = {
-    val __obj = js.Dynamic.literal(_super = _super)
+    val __obj = js.Dynamic.literal(_super = _super.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Super[Base]]
   }

@@ -27,8 +27,8 @@ object GoogleActionsV2LinkValueSpecLinkDialogSpec {
   @scala.inline
   def apply(destinationName: String = null, requestLinkReason: String = null): GoogleActionsV2LinkValueSpecLinkDialogSpec = {
     val __obj = js.Dynamic.literal()
-    if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName)
-    if (requestLinkReason != null) __obj.updateDynamic("requestLinkReason")(requestLinkReason)
+    if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName.asInstanceOf[js.Any])
+    if (requestLinkReason != null) __obj.updateDynamic("requestLinkReason")(requestLinkReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2LinkValueSpecLinkDialogSpec]
   }
 }

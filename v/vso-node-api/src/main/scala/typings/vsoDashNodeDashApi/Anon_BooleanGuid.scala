@@ -16,7 +16,7 @@ trait Anon_BooleanGuid extends js.Object {
 object Anon_BooleanGuid {
   @scala.inline
   def apply(boolean: Double, guid: Double, none: Double, number: Double, string: Double, uri: Double): Anon_BooleanGuid = {
-    val __obj = js.Dynamic.literal(boolean = boolean, guid = guid, none = none, number = number, string = string, uri = uri)
+    val __obj = js.Dynamic.literal(boolean = boolean.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BooleanGuid]
   }

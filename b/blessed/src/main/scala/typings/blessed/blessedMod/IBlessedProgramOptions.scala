@@ -36,17 +36,17 @@ object IBlessedProgramOptions {
     zero: js.UndefOr[Boolean] = js.undefined
   ): IBlessedProgramOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (!js.isUndefined(dump)) __obj.updateDynamic("dump")(dump)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (log != null) __obj.updateDynamic("log")(log)
-    if (output != null) __obj.updateDynamic("output")(output)
-    if (!js.isUndefined(resizeTimeout)) __obj.updateDynamic("resizeTimeout")(resizeTimeout)
-    if (term != null) __obj.updateDynamic("term")(term)
-    if (terminal != null) __obj.updateDynamic("terminal")(terminal)
-    if (tput != null) __obj.updateDynamic("tput")(tput)
-    if (!js.isUndefined(zero)) __obj.updateDynamic("zero")(zero)
+    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(dump)) __obj.updateDynamic("dump")(dump.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizeTimeout)) __obj.updateDynamic("resizeTimeout")(resizeTimeout.asInstanceOf[js.Any])
+    if (term != null) __obj.updateDynamic("term")(term.asInstanceOf[js.Any])
+    if (terminal != null) __obj.updateDynamic("terminal")(terminal.asInstanceOf[js.Any])
+    if (tput != null) __obj.updateDynamic("tput")(tput.asInstanceOf[js.Any])
+    if (!js.isUndefined(zero)) __obj.updateDynamic("zero")(zero.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBlessedProgramOptions]
   }
 }

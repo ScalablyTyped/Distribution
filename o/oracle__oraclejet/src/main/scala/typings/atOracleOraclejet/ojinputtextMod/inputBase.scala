@@ -16,8 +16,8 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.on
 import typings.atOracleOraclejet.atOracleOraclejetStrings.placeholder
 import typings.atOracleOraclejet.atOracleOraclejetStrings.placeholderChanged
 import typings.atOracleOraclejet.atOracleOraclejetStrings.rawValueChanged
-import typings.atOracleOraclejet.atOracleOraclejetStrings.readonly
-import typings.atOracleOraclejet.atOracleOraclejetStrings.readonlyChanged
+import typings.atOracleOraclejet.atOracleOraclejetStrings.readonlyChanged_
+import typings.atOracleOraclejet.atOracleOraclejetStrings.readonly_
 import typings.atOracleOraclejet.atOracleOraclejetStrings.required
 import typings.atOracleOraclejet.atOracleOraclejetStrings.requiredChanged
 import typings.atOracleOraclejet.atOracleOraclejetStrings.translations
@@ -125,12 +125,12 @@ trait inputBase[V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV] ex
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readonlyChanged(
-    `type`: readonlyChanged,
+    `type`: readonlyChanged_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readonlyChanged(
-    `type`: readonlyChanged,
+    `type`: readonlyChanged_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Boolean], _],
     useCapture: Boolean
   ): Unit = js.native
@@ -175,7 +175,7 @@ trait inputBase[V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV] ex
   @JSName("getProperty")
   def getProperty_rawValue(property: typings.atOracleOraclejet.atOracleOraclejetStrings.rawValue): RV = js.native
   @JSName("getProperty")
-  def getProperty_readonly(property: readonly): Boolean = js.native
+  def getProperty_readonly(property: readonly_): Boolean = js.native
   @JSName("getProperty")
   def getProperty_required(property: required): Boolean = js.native
   @JSName("getProperty")
@@ -194,7 +194,7 @@ trait inputBase[V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV] ex
   @JSName("setProperty")
   def setProperty_rawValue(property: typings.atOracleOraclejet.atOracleOraclejetStrings.rawValue, value: RV): Unit = js.native
   @JSName("setProperty")
-  def setProperty_readonly(property: readonly, value: Boolean): Unit = js.native
+  def setProperty_readonly(property: readonly_, value: Boolean): Unit = js.native
   @JSName("setProperty")
   def setProperty_required(property: required, value: Boolean): Unit = js.native
   @JSName("setProperty")

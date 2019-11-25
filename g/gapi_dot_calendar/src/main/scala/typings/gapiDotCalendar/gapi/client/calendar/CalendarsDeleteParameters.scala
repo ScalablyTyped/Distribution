@@ -11,7 +11,7 @@ trait CalendarsDeleteParameters extends js.Object {
 object CalendarsDeleteParameters {
   @scala.inline
   def apply(calendarId: String): CalendarsDeleteParameters = {
-    val __obj = js.Dynamic.literal(calendarId = calendarId)
+    val __obj = js.Dynamic.literal(calendarId = calendarId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CalendarsDeleteParameters]
   }

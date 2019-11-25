@@ -28,14 +28,14 @@ object FirebaseOptions {
     storageBucket: String = null
   ): FirebaseOptions = {
     val __obj = js.Dynamic.literal()
-    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
-    if (appId != null) __obj.updateDynamic("appId")(appId)
-    if (authDomain != null) __obj.updateDynamic("authDomain")(authDomain)
-    if (databaseURL != null) __obj.updateDynamic("databaseURL")(databaseURL)
-    if (measurementId != null) __obj.updateDynamic("measurementId")(measurementId)
-    if (messagingSenderId != null) __obj.updateDynamic("messagingSenderId")(messagingSenderId)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
-    if (storageBucket != null) __obj.updateDynamic("storageBucket")(storageBucket)
+    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
+    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
+    if (authDomain != null) __obj.updateDynamic("authDomain")(authDomain.asInstanceOf[js.Any])
+    if (databaseURL != null) __obj.updateDynamic("databaseURL")(databaseURL.asInstanceOf[js.Any])
+    if (measurementId != null) __obj.updateDynamic("measurementId")(measurementId.asInstanceOf[js.Any])
+    if (messagingSenderId != null) __obj.updateDynamic("messagingSenderId")(messagingSenderId.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    if (storageBucket != null) __obj.updateDynamic("storageBucket")(storageBucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirebaseOptions]
   }
 }

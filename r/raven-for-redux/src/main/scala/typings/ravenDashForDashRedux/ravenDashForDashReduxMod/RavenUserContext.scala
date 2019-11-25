@@ -14,9 +14,9 @@ object RavenUserContext {
   @scala.inline
   def apply(email: String = null, id: String = null, username: String = null): RavenUserContext = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[RavenUserContext]
   }
 }

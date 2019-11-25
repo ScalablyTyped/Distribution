@@ -19,10 +19,10 @@ object Anon_EndSeconds {
     startSeconds: Int | Double = null,
     suggestedQuality: String = null
   ): Anon_EndSeconds = {
-    val __obj = js.Dynamic.literal(videoId = videoId)
+    val __obj = js.Dynamic.literal(videoId = videoId.asInstanceOf[js.Any])
     if (endSeconds != null) __obj.updateDynamic("endSeconds")(endSeconds.asInstanceOf[js.Any])
     if (startSeconds != null) __obj.updateDynamic("startSeconds")(startSeconds.asInstanceOf[js.Any])
-    if (suggestedQuality != null) __obj.updateDynamic("suggestedQuality")(suggestedQuality)
+    if (suggestedQuality != null) __obj.updateDynamic("suggestedQuality")(suggestedQuality.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EndSeconds]
   }
 }

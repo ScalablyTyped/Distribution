@@ -32,10 +32,10 @@ object DragStopEventUIParam {
     position: js.Any = null
   ): DragStopEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (helper != null) __obj.updateDynamic("helper")(helper)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (originalPosition != null) __obj.updateDynamic("originalPosition")(originalPosition)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (helper != null) __obj.updateDynamic("helper")(helper.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (originalPosition != null) __obj.updateDynamic("originalPosition")(originalPosition.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragStopEventUIParam]
   }
 }

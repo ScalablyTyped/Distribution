@@ -30,7 +30,7 @@ trait IOperation extends js.Object {
 object IOperation {
   @scala.inline
   def apply(id: String, name: String, parentId: String, rootId: String, syntheticSource: String): IOperation = {
-    val __obj = js.Dynamic.literal(id = id, name = name, parentId = parentId, rootId = rootId, syntheticSource = syntheticSource)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any], rootId = rootId.asInstanceOf[js.Any], syntheticSource = syntheticSource.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOperation]
   }

@@ -17,7 +17,7 @@ object Anon_Data {
   def apply(data: js.Array[_] | TypedArray = null, seriesIndex: String = null): Anon_Data = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (seriesIndex != null) __obj.updateDynamic("seriesIndex")(seriesIndex)
+    if (seriesIndex != null) __obj.updateDynamic("seriesIndex")(seriesIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Data]
   }
 }

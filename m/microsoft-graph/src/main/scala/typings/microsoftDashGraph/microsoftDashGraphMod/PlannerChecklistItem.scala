@@ -31,11 +31,11 @@ object PlannerChecklistItem {
     title: String = null
   ): PlannerChecklistItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isChecked)) __obj.updateDynamic("isChecked")(isChecked)
-    if (lastModifiedBy != null) __obj.updateDynamic("lastModifiedBy")(lastModifiedBy)
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime)
-    if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(isChecked)) __obj.updateDynamic("isChecked")(isChecked.asInstanceOf[js.Any])
+    if (lastModifiedBy != null) __obj.updateDynamic("lastModifiedBy")(lastModifiedBy.asInstanceOf[js.Any])
+    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
+    if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlannerChecklistItem]
   }
 }

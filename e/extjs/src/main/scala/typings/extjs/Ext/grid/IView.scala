@@ -9,15 +9,9 @@ trait IView extends ITable
 
 object IView {
   @scala.inline
-  def apply(
-    ITable: ITable = null,
-    autoScroll: js.UndefOr[Boolean] = js.undefined,
-    stripeRows: js.UndefOr[Boolean] = js.undefined
-  ): IView = {
+  def apply(ITable: ITable = null): IView = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, ITable)
-    if (!js.isUndefined(autoScroll)) __obj.updateDynamic("autoScroll")(autoScroll)
-    if (!js.isUndefined(stripeRows)) __obj.updateDynamic("stripeRows")(stripeRows)
+    if (ITable != null) js.Dynamic.global.Object.assign(__obj, ITable)
     __obj.asInstanceOf[IView]
   }
 }

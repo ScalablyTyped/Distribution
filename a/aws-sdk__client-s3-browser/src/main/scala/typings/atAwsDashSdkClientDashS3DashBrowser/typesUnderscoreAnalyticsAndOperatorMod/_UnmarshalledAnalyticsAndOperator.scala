@@ -17,8 +17,8 @@ object _UnmarshalledAnalyticsAndOperator {
   @scala.inline
   def apply(Prefix: String = null, Tags: js.Array[_UnmarshalledTag] = null): _UnmarshalledAnalyticsAndOperator = {
     val __obj = js.Dynamic.literal()
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix)
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
+    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledAnalyticsAndOperator]
   }
 }

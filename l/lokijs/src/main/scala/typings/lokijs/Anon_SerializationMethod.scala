@@ -12,7 +12,7 @@ object Anon_SerializationMethod {
   @scala.inline
   def apply(serializationMethod: String = null): Anon_SerializationMethod = {
     val __obj = js.Dynamic.literal()
-    if (serializationMethod != null) __obj.updateDynamic("serializationMethod")(serializationMethod)
+    if (serializationMethod != null) __obj.updateDynamic("serializationMethod")(serializationMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_SerializationMethod]
   }
 }

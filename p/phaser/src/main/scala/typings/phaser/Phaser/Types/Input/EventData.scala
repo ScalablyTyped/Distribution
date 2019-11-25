@@ -23,8 +23,8 @@ trait EventData extends js.Object {
 object EventData {
   @scala.inline
   def apply(stopPropagation: js.Function, cancelled: js.UndefOr[Boolean] = js.undefined): EventData = {
-    val __obj = js.Dynamic.literal(stopPropagation = stopPropagation)
-    if (!js.isUndefined(cancelled)) __obj.updateDynamic("cancelled")(cancelled)
+    val __obj = js.Dynamic.literal(stopPropagation = stopPropagation.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelled)) __obj.updateDynamic("cancelled")(cancelled.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventData]
   }
 }

@@ -136,7 +136,7 @@ object atTensorflowTfjsDashCoreStrings {
   sealed trait round extends js.Object
   
   @js.native
-  sealed trait same extends js.Object
+  sealed trait same_ extends js.Object
   
   @js.native
   sealed trait string extends DataType
@@ -148,7 +148,7 @@ object atTensorflowTfjsDashCoreStrings {
   sealed trait uint8 extends js.Object
   
   @js.native
-  sealed trait valid extends js.Object
+  sealed trait valid_ extends js.Object
   
   @scala.inline
   def `1DOT3DOT2`: `1DOT3DOT2` = "1.3.2".asInstanceOf[`1DOT3DOT2`]
@@ -229,7 +229,7 @@ object atTensorflowTfjsDashCoreStrings {
   @scala.inline
   def round: round = "round".asInstanceOf[round]
   @scala.inline
-  def same: same = "same".asInstanceOf[same]
+  def same_ : same_ = "same".asInstanceOf[same_]
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   @scala.inline
@@ -237,6 +237,6 @@ object atTensorflowTfjsDashCoreStrings {
   @scala.inline
   def uint8: uint8 = "uint8".asInstanceOf[uint8]
   @scala.inline
-  def valid: valid = "valid".asInstanceOf[valid]
+  def valid_ : valid_ = "valid".asInstanceOf[valid_]
 }
 

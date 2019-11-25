@@ -12,7 +12,7 @@ trait Anon_CustomTaskPaneInst extends js.Object {
 object Anon_CustomTaskPaneInst {
   @scala.inline
   def apply(CustomTaskPaneInst: CustomTaskPane): Anon_CustomTaskPaneInst = {
-    val __obj = js.Dynamic.literal(CustomTaskPaneInst = CustomTaskPaneInst)
+    val __obj = js.Dynamic.literal(CustomTaskPaneInst = CustomTaskPaneInst.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CustomTaskPaneInst]
   }

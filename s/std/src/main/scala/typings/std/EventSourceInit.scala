@@ -12,7 +12,7 @@ object EventSourceInit {
   @scala.inline
   def apply(withCredentials: js.UndefOr[scala.Boolean] = js.undefined): EventSourceInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventSourceInit]
   }
 }

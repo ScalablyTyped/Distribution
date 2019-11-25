@@ -12,7 +12,7 @@ object Anon_ValidationRules {
   @scala.inline
   def apply(validationRules: js.Array[js.Any] = null): Anon_ValidationRules = {
     val __obj = js.Dynamic.literal()
-    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules)
+    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ValidationRules]
   }
 }

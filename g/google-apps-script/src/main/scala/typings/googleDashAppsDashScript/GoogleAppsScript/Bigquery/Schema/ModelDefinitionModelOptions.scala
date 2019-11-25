@@ -14,9 +14,9 @@ object ModelDefinitionModelOptions {
   @scala.inline
   def apply(labels: js.Array[String] = null, lossType: String = null, modelType: String = null): ModelDefinitionModelOptions = {
     val __obj = js.Dynamic.literal()
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (lossType != null) __obj.updateDynamic("lossType")(lossType)
-    if (modelType != null) __obj.updateDynamic("modelType")(modelType)
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (lossType != null) __obj.updateDynamic("lossType")(lossType.asInstanceOf[js.Any])
+    if (modelType != null) __obj.updateDynamic("modelType")(modelType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelDefinitionModelOptions]
   }
 }

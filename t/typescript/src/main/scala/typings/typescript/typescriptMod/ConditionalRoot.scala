@@ -33,12 +33,12 @@ object ConditionalRoot {
     instantiations: Map[Type] = null,
     outerTypeParameters: js.Array[TypeParameter] = null
   ): ConditionalRoot = {
-    val __obj = js.Dynamic.literal(checkType = checkType, extendsType = extendsType, falseType = falseType, isDistributive = isDistributive, node = node, trueType = trueType)
-    if (aliasSymbol != null) __obj.updateDynamic("aliasSymbol")(aliasSymbol)
-    if (aliasTypeArguments != null) __obj.updateDynamic("aliasTypeArguments")(aliasTypeArguments)
-    if (inferTypeParameters != null) __obj.updateDynamic("inferTypeParameters")(inferTypeParameters)
-    if (instantiations != null) __obj.updateDynamic("instantiations")(instantiations)
-    if (outerTypeParameters != null) __obj.updateDynamic("outerTypeParameters")(outerTypeParameters)
+    val __obj = js.Dynamic.literal(checkType = checkType.asInstanceOf[js.Any], extendsType = extendsType.asInstanceOf[js.Any], falseType = falseType.asInstanceOf[js.Any], isDistributive = isDistributive.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], trueType = trueType.asInstanceOf[js.Any])
+    if (aliasSymbol != null) __obj.updateDynamic("aliasSymbol")(aliasSymbol.asInstanceOf[js.Any])
+    if (aliasTypeArguments != null) __obj.updateDynamic("aliasTypeArguments")(aliasTypeArguments.asInstanceOf[js.Any])
+    if (inferTypeParameters != null) __obj.updateDynamic("inferTypeParameters")(inferTypeParameters.asInstanceOf[js.Any])
+    if (instantiations != null) __obj.updateDynamic("instantiations")(instantiations.asInstanceOf[js.Any])
+    if (outerTypeParameters != null) __obj.updateDynamic("outerTypeParameters")(outerTypeParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalRoot]
   }
 }

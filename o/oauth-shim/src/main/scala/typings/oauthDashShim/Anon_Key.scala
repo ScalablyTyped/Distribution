@@ -14,8 +14,8 @@ object Anon_Key {
   @scala.inline
   def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, path: String = null): Anon_Key = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Key]
   }
 }

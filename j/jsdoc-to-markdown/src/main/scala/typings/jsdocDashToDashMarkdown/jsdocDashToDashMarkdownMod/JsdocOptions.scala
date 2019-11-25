@@ -36,9 +36,9 @@ object JsdocOptions {
     source: String = null
   ): JsdocOptions = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
-    if (configure != null) __obj.updateDynamic("configure")(configure)
-    if (!js.isUndefined(noCache)) __obj.updateDynamic("noCache")(noCache)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (configure != null) __obj.updateDynamic("configure")(configure.asInstanceOf[js.Any])
+    if (!js.isUndefined(noCache)) __obj.updateDynamic("noCache")(noCache.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsdocOptions]
   }
 }

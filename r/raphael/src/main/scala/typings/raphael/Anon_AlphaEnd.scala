@@ -17,7 +17,7 @@ trait Anon_AlphaEnd extends js.Object {
 object Anon_AlphaEnd {
   @scala.inline
   def apply(alpha: Double, end: Anon_X, m: Anon_X, n: Anon_X, start: Anon_X, x: Double, y: Double): Anon_AlphaEnd = {
-    val __obj = js.Dynamic.literal(alpha = alpha, end = end, m = m, n = n, start = start, x = x, y = y)
+    val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AlphaEnd]
   }

@@ -20,8 +20,8 @@ trait CacheObject extends js.Object {
 object CacheObject {
   @scala.inline
   def apply(integrity: String, key: String, path: String, time: Double, metadata: js.Any = null): CacheObject = {
-    val __obj = js.Dynamic.literal(integrity = integrity, key = key, path = path, time = time)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(integrity = integrity.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheObject]
   }
 }

@@ -13,7 +13,7 @@ object IStringValue {
   @scala.inline
   def apply(value: String = null): IStringValue = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStringValue]
   }
 }

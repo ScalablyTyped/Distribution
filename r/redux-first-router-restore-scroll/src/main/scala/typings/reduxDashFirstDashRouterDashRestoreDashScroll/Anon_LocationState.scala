@@ -34,9 +34,9 @@ object Anon_LocationState {
     stateStorage: Anon_Key = null
   ): Anon_LocationState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(manual)) __obj.updateDynamic("manual")(manual)
+    if (!js.isUndefined(manual)) __obj.updateDynamic("manual")(manual.asInstanceOf[js.Any])
     if (shouldUpdateScroll != null) __obj.updateDynamic("shouldUpdateScroll")(js.Any.fromFunction2(shouldUpdateScroll))
-    if (stateStorage != null) __obj.updateDynamic("stateStorage")(stateStorage)
+    if (stateStorage != null) __obj.updateDynamic("stateStorage")(stateStorage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LocationState]
   }
 }

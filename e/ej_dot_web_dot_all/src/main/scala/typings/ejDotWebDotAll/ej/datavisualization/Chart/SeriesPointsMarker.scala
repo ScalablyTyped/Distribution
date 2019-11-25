@@ -48,14 +48,14 @@ object SeriesPointsMarker {
     visible: js.UndefOr[Boolean] = js.undefined
   ): SeriesPointsMarker = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (dataLabel != null) __obj.updateDynamic("dataLabel")(dataLabel)
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (dataLabel != null) __obj.updateDynamic("dataLabel")(dataLabel.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesPointsMarker]
   }
 }

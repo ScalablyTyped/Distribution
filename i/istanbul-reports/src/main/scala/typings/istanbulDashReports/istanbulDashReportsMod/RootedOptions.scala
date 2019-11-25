@@ -11,7 +11,7 @@ trait RootedOptions extends Options {
 object RootedOptions {
   @scala.inline
   def apply(file: String, projectRoot: String): RootedOptions = {
-    val __obj = js.Dynamic.literal(file = file, projectRoot = projectRoot)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], projectRoot = projectRoot.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RootedOptions]
   }

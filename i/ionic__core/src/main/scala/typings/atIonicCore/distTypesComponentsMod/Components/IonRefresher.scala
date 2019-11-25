@@ -56,7 +56,7 @@ object IonRefresher {
     pullMin: Double,
     snapbackDuration: String
   ): IonRefresher = {
-    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), closeDuration = closeDuration, complete = js.Any.fromFunction0(complete), disabled = disabled, getProgress = js.Any.fromFunction0(getProgress), pullFactor = pullFactor, pullMax = pullMax, pullMin = pullMin, snapbackDuration = snapbackDuration)
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), closeDuration = closeDuration.asInstanceOf[js.Any], complete = js.Any.fromFunction0(complete), disabled = disabled.asInstanceOf[js.Any], getProgress = js.Any.fromFunction0(getProgress), pullFactor = pullFactor.asInstanceOf[js.Any], pullMax = pullMax.asInstanceOf[js.Any], pullMin = pullMin.asInstanceOf[js.Any], snapbackDuration = snapbackDuration.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IonRefresher]
   }

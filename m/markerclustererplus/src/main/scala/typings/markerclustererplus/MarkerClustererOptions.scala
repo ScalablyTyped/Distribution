@@ -147,22 +147,22 @@ object MarkerClustererOptions {
     zoomOnClick: js.UndefOr[Boolean] = js.undefined
   ): MarkerClustererOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(averageCenter)) __obj.updateDynamic("averageCenter")(averageCenter)
+    if (!js.isUndefined(averageCenter)) __obj.updateDynamic("averageCenter")(averageCenter.asInstanceOf[js.Any])
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
     if (batchSizeIE != null) __obj.updateDynamic("batchSizeIE")(batchSizeIE.asInstanceOf[js.Any])
     if (calculator != null) __obj.updateDynamic("calculator")(js.Any.fromFunction2(calculator))
-    if (clusterClass != null) __obj.updateDynamic("clusterClass")(clusterClass)
-    if (!js.isUndefined(enableRetinaIcons)) __obj.updateDynamic("enableRetinaIcons")(enableRetinaIcons)
+    if (clusterClass != null) __obj.updateDynamic("clusterClass")(clusterClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRetinaIcons)) __obj.updateDynamic("enableRetinaIcons")(enableRetinaIcons.asInstanceOf[js.Any])
     if (gridSize != null) __obj.updateDynamic("gridSize")(gridSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreHidden)) __obj.updateDynamic("ignoreHidden")(ignoreHidden)
-    if (imageExtension != null) __obj.updateDynamic("imageExtension")(imageExtension)
-    if (imagePath != null) __obj.updateDynamic("imagePath")(imagePath)
-    if (imageSizes != null) __obj.updateDynamic("imageSizes")(imageSizes)
+    if (!js.isUndefined(ignoreHidden)) __obj.updateDynamic("ignoreHidden")(ignoreHidden.asInstanceOf[js.Any])
+    if (imageExtension != null) __obj.updateDynamic("imageExtension")(imageExtension.asInstanceOf[js.Any])
+    if (imagePath != null) __obj.updateDynamic("imagePath")(imagePath.asInstanceOf[js.Any])
+    if (imageSizes != null) __obj.updateDynamic("imageSizes")(imageSizes.asInstanceOf[js.Any])
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minimumClusterSize != null) __obj.updateDynamic("minimumClusterSize")(minimumClusterSize.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (!js.isUndefined(zoomOnClick)) __obj.updateDynamic("zoomOnClick")(zoomOnClick)
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomOnClick)) __obj.updateDynamic("zoomOnClick")(zoomOnClick.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerClustererOptions]
   }
 }

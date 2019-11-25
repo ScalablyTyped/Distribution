@@ -11,7 +11,7 @@ trait Anon_Full extends js.Object {
 object Anon_Full {
   @scala.inline
   def apply(full: Boolean): Anon_Full = {
-    val __obj = js.Dynamic.literal(full = full)
+    val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Full]
   }

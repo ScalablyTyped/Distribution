@@ -52,25 +52,25 @@ object MailTransportOptions {
     unique: js.UndefOr[Boolean] = js.undefined,
     username: String = null
   ): MailTransportOptions = {
-    val __obj = js.Dynamic.literal(to = to)
-    if (authentication != null) __obj.updateDynamic("authentication")(authentication)
+    val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
+    if (authentication != null) __obj.updateDynamic("authentication")(authentication.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (!js.isUndefined(handleExceptions)) __obj.updateDynamic("handleExceptions")(handleExceptions)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
-    if (level != null) __obj.updateDynamic("level")(level)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (password != null) __obj.updateDynamic("password")(password)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleExceptions)) __obj.updateDynamic("handleExceptions")(handleExceptions.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (tls != null) __obj.updateDynamic("tls")(tls.asInstanceOf[js.Any])
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[MailTransportOptions]
   }
 }

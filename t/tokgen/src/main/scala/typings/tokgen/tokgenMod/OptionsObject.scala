@@ -13,7 +13,7 @@ object OptionsObject {
   @scala.inline
   def apply(chars: String = null, length: Int | Double = null): OptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (chars != null) __obj.updateDynamic("chars")(chars)
+    if (chars != null) __obj.updateDynamic("chars")(chars.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsObject]
   }

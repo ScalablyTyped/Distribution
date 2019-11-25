@@ -14,8 +14,8 @@ object PaymentMethodResponse {
   @scala.inline
   def apply(error: Error = null, paymentMethod: PaymentMethod = null): PaymentMethodResponse = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (paymentMethod != null) __obj.updateDynamic("paymentMethod")(paymentMethod)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (paymentMethod != null) __obj.updateDynamic("paymentMethod")(paymentMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentMethodResponse]
   }
 }

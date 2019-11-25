@@ -24,9 +24,9 @@ object PubnubStatus {
     category: String = null,
     errorData: Error = null
   ): PubnubStatus = {
-    val __obj = js.Dynamic.literal(error = error, operation = operation, statusCode = statusCode)
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (errorData != null) __obj.updateDynamic("errorData")(errorData)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (errorData != null) __obj.updateDynamic("errorData")(errorData.asInstanceOf[js.Any])
     __obj.asInstanceOf[PubnubStatus]
   }
 }

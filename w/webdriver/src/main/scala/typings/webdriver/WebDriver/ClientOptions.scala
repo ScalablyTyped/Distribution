@@ -25,7 +25,7 @@ object ClientOptions {
     isW3C: Boolean,
     sessionId: String
   ): ClientOptions = {
-    val __obj = js.Dynamic.literal(capabilities = capabilities, isAndroid = isAndroid, isChrome = isChrome, isIOS = isIOS, isMobile = isMobile, isW3C = isW3C, sessionId = sessionId)
+    val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any], isAndroid = isAndroid.asInstanceOf[js.Any], isChrome = isChrome.asInstanceOf[js.Any], isIOS = isIOS.asInstanceOf[js.Any], isMobile = isMobile.asInstanceOf[js.Any], isW3C = isW3C.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClientOptions]
   }

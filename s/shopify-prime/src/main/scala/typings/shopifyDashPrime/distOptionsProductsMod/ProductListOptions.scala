@@ -29,15 +29,15 @@ object ProductListOptions {
     vendor: String = null
   ): ProductListOptions = {
     val __obj = js.Dynamic.literal()
-    if (collection_id != null) __obj.updateDynamic("collection_id")(collection_id)
-    if (created_at_max != null) __obj.updateDynamic("created_at_max")(created_at_max)
-    if (created_at_min != null) __obj.updateDynamic("created_at_min")(created_at_min)
-    if (ids != null) __obj.updateDynamic("ids")(ids)
-    if (product_type != null) __obj.updateDynamic("product_type")(product_type)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (updated_at_max != null) __obj.updateDynamic("updated_at_max")(updated_at_max)
-    if (updated_at_min != null) __obj.updateDynamic("updated_at_min")(updated_at_min)
-    if (vendor != null) __obj.updateDynamic("vendor")(vendor)
+    if (collection_id != null) __obj.updateDynamic("collection_id")(collection_id.asInstanceOf[js.Any])
+    if (created_at_max != null) __obj.updateDynamic("created_at_max")(created_at_max.asInstanceOf[js.Any])
+    if (created_at_min != null) __obj.updateDynamic("created_at_min")(created_at_min.asInstanceOf[js.Any])
+    if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
+    if (product_type != null) __obj.updateDynamic("product_type")(product_type.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (updated_at_max != null) __obj.updateDynamic("updated_at_max")(updated_at_max.asInstanceOf[js.Any])
+    if (updated_at_min != null) __obj.updateDynamic("updated_at_min")(updated_at_min.asInstanceOf[js.Any])
+    if (vendor != null) __obj.updateDynamic("vendor")(vendor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductListOptions]
   }
 }

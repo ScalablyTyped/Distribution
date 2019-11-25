@@ -18,9 +18,9 @@ object ContainerOptions {
     skipBaseClassChecks: js.UndefOr[Boolean] = js.undefined
   ): ContainerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoBindInjectable)) __obj.updateDynamic("autoBindInjectable")(autoBindInjectable)
-    if (defaultScope != null) __obj.updateDynamic("defaultScope")(defaultScope)
-    if (!js.isUndefined(skipBaseClassChecks)) __obj.updateDynamic("skipBaseClassChecks")(skipBaseClassChecks)
+    if (!js.isUndefined(autoBindInjectable)) __obj.updateDynamic("autoBindInjectable")(autoBindInjectable.asInstanceOf[js.Any])
+    if (defaultScope != null) __obj.updateDynamic("defaultScope")(defaultScope.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipBaseClassChecks)) __obj.updateDynamic("skipBaseClassChecks")(skipBaseClassChecks.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerOptions]
   }
 }

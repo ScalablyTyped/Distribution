@@ -12,7 +12,7 @@ object Anon_XAdsForce {
   @scala.inline
   def apply(xAdsForce: js.UndefOr[Boolean] = js.undefined): Anon_XAdsForce = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(xAdsForce)) __obj.updateDynamic("xAdsForce")(xAdsForce)
+    if (!js.isUndefined(xAdsForce)) __obj.updateDynamic("xAdsForce")(xAdsForce.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_XAdsForce]
   }
 }

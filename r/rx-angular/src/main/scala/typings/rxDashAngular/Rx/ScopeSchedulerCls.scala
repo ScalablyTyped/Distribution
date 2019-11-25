@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Rx.ScopeScheduler")
 @js.native
-class ScopeSchedulerCls protected () extends ScopeScheduler {
+class ScopeSchedulerCls protected () extends IScheduler {
   def this($scope: IScope) = this()
   /* CompleteClass */
   override def `catch`(handler: js.Function1[/* exception */ js.Any, Boolean]): IScheduler = js.native

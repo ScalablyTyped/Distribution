@@ -23,8 +23,8 @@ object APIRequestParams {
     requiredParams: js.Array[String],
     mediaUrl: String = null
   ): APIRequestParams[T] = {
-    val __obj = js.Dynamic.literal(context = context, options = options, params = params.asInstanceOf[js.Any], pathParams = pathParams, requiredParams = requiredParams)
-    if (mediaUrl != null) __obj.updateDynamic("mediaUrl")(mediaUrl)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], pathParams = pathParams.asInstanceOf[js.Any], requiredParams = requiredParams.asInstanceOf[js.Any])
+    if (mediaUrl != null) __obj.updateDynamic("mediaUrl")(mediaUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIRequestParams[T]]
   }
 }

@@ -19,8 +19,8 @@ object TabsGroupsContent {
   @scala.inline
   def apply(defaults: TabsGroupsContentDefaults = null, groups: js.Array[TabsGroupsContentGroup] = null): TabsGroupsContent = {
     val __obj = js.Dynamic.literal()
-    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
-    if (groups != null) __obj.updateDynamic("groups")(groups)
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabsGroupsContent]
   }
 }

@@ -14,7 +14,7 @@ trait IDeltaChange extends js.Object {
 object IDeltaChange {
   @scala.inline
   def apply(delta: Delta, reverseDelta: Delta | Error): IDeltaChange = {
-    val __obj = js.Dynamic.literal(delta = delta, reverseDelta = reverseDelta.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], reverseDelta = reverseDelta.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IDeltaChange]
   }

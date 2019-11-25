@@ -22,7 +22,7 @@ object AppointmentResizeEventArgs {
     operation: BootstrapSchedulerAppointmentOperation,
     sender: Control
   ): AppointmentResizeEventArgs = {
-    val __obj = js.Dynamic.literal(appointmentId = appointmentId, handled = handled, newInterval = newInterval, oldInterval = oldInterval, operation = operation, sender = sender)
+    val __obj = js.Dynamic.literal(appointmentId = appointmentId.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any], newInterval = newInterval.asInstanceOf[js.Any], oldInterval = oldInterval.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AppointmentResizeEventArgs]
   }

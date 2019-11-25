@@ -21,9 +21,9 @@ object Anon_AutoConverterOff {
     tooltipLabel: String = null
   ): Anon_AutoConverterOff = {
     val __obj = js.Dynamic.literal()
-    if (converter != null) __obj.updateDynamic("converter")(converter)
+    if (converter != null) __obj.updateDynamic("converter")(converter.asInstanceOf[js.Any])
     if (tooltipDisplay != null) __obj.updateDynamic("tooltipDisplay")(tooltipDisplay.asInstanceOf[js.Any])
-    if (tooltipLabel != null) __obj.updateDynamic("tooltipLabel")(tooltipLabel)
+    if (tooltipLabel != null) __obj.updateDynamic("tooltipLabel")(tooltipLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoConverterOff]
   }
 }

@@ -12,7 +12,7 @@ object AddBandingRequest {
   @scala.inline
   def apply(bandedRange: BandedRange = null): AddBandingRequest = {
     val __obj = js.Dynamic.literal()
-    if (bandedRange != null) __obj.updateDynamic("bandedRange")(bandedRange)
+    if (bandedRange != null) __obj.updateDynamic("bandedRange")(bandedRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddBandingRequest]
   }
 }

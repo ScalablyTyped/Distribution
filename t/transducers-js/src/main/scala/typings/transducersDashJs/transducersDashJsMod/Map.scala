@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("transducers-js", "Map")
 @js.native
-class Map[TResult, TInput, TOutput] protected () extends Transformer[TResult, TInput] {
+class Map[TResult, TInput, TOutput] protected () extends CompletingTransformer[TResult, TResult, TInput] {
   def this(f: js.Function1[/* x */ TInput, TOutput], xf: Transformer[TResult, TOutput]) = this()
   /* CompleteClass */
   override def `@@transducer/init`(): TResult | Unit = js.native

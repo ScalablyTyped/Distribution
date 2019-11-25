@@ -49,7 +49,7 @@ object IKeyboardLayout {
     keys: () => js.Array[String],
     name: String
   ): IKeyboardLayout = {
-    val __obj = js.Dynamic.literal(isValidKey = js.Any.fromFunction1(isValidKey), keyForKeydownEvent = js.Any.fromFunction1(keyForKeydownEvent), keys = js.Any.fromFunction0(keys), name = name)
+    val __obj = js.Dynamic.literal(isValidKey = js.Any.fromFunction1(isValidKey), keyForKeydownEvent = js.Any.fromFunction1(keyForKeydownEvent), keys = js.Any.fromFunction0(keys), name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IKeyboardLayout]
   }

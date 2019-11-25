@@ -15,7 +15,7 @@ object csrfOptionsNonAngular {
   @scala.inline
   def apply(angular: `false` = null, cookie: String | Anon_Name = null): csrfOptionsNonAngular = {
     val __obj = js.Dynamic.literal()
-    if (angular != null) __obj.updateDynamic("angular")(angular)
+    if (angular != null) __obj.updateDynamic("angular")(angular.asInstanceOf[js.Any])
     if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
     __obj.asInstanceOf[csrfOptionsNonAngular]
   }

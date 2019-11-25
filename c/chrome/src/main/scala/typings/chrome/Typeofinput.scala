@@ -19,7 +19,7 @@ trait Typeofinput extends js.Object {
 object Typeofinput {
   @scala.inline
   def apply(ime: Typeofime): Typeofinput = {
-    val __obj = js.Dynamic.literal(ime = ime)
+    val __obj = js.Dynamic.literal(ime = ime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofinput]
   }

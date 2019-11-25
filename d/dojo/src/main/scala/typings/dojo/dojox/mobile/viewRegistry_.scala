@@ -78,7 +78,7 @@ object viewRegistry_ {
     length: Double,
     remove: String => Unit
   ): viewRegistry_ = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), getChildViews = js.Any.fromFunction1(getChildViews), getEnclosingScrollable = js.Any.fromFunction1(getEnclosingScrollable), getEnclosingView = js.Any.fromFunction1(getEnclosingView), getParentView = js.Any.fromFunction1(getParentView), getViews = js.Any.fromFunction0(getViews), initialView = initialView, length = length, remove = js.Any.fromFunction1(remove))
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), getChildViews = js.Any.fromFunction1(getChildViews), getEnclosingScrollable = js.Any.fromFunction1(getEnclosingScrollable), getEnclosingView = js.Any.fromFunction1(getEnclosingView), getParentView = js.Any.fromFunction1(getParentView), getViews = js.Any.fromFunction0(getViews), initialView = initialView.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove))
   
     __obj.asInstanceOf[viewRegistry_]
   }

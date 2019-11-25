@@ -11,7 +11,7 @@ trait Anon_SkipSelf extends js.Object {
 object Anon_SkipSelf {
   @scala.inline
   def apply(skipSelf: Boolean): Anon_SkipSelf = {
-    val __obj = js.Dynamic.literal(skipSelf = skipSelf)
+    val __obj = js.Dynamic.literal(skipSelf = skipSelf.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SkipSelf]
   }

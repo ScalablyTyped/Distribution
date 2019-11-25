@@ -18,7 +18,7 @@ object Anon_Error {
     times: Double,
     errorFilter: /* error */ Error => Boolean = null
   ): Anon_Error = {
-    val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], times = times)
+    val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], times = times.asInstanceOf[js.Any])
     if (errorFilter != null) __obj.updateDynamic("errorFilter")(js.Any.fromFunction1(errorFilter))
     __obj.asInstanceOf[Anon_Error]
   }

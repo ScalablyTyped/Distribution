@@ -26,13 +26,13 @@ object Anon_AccentColor {
     weekdayColor: String = null
   ): Anon_AccentColor = {
     val __obj = js.Dynamic.literal()
-    if (accentColor != null) __obj.updateDynamic("accentColor")(accentColor)
-    if (floatingNav != null) __obj.updateDynamic("floatingNav")(floatingNav)
-    if (headerColor != null) __obj.updateDynamic("headerColor")(headerColor)
-    if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor)
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
-    if (todayColor != null) __obj.updateDynamic("todayColor")(todayColor)
-    if (weekdayColor != null) __obj.updateDynamic("weekdayColor")(weekdayColor)
+    if (accentColor != null) __obj.updateDynamic("accentColor")(accentColor.asInstanceOf[js.Any])
+    if (floatingNav != null) __obj.updateDynamic("floatingNav")(floatingNav.asInstanceOf[js.Any])
+    if (headerColor != null) __obj.updateDynamic("headerColor")(headerColor.asInstanceOf[js.Any])
+    if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor.asInstanceOf[js.Any])
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
+    if (todayColor != null) __obj.updateDynamic("todayColor")(todayColor.asInstanceOf[js.Any])
+    if (weekdayColor != null) __obj.updateDynamic("weekdayColor")(weekdayColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AccentColor]
   }
 }

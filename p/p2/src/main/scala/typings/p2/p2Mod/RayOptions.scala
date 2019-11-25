@@ -27,13 +27,13 @@ object RayOptions {
     mode: Int | Double = null,
     skipBackfaces: js.UndefOr[Boolean] = js.undefined
   ): RayOptions = {
-    val __obj = js.Dynamic.literal(from = from, to = to)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
-    if (!js.isUndefined(checkCollisionResponse)) __obj.updateDynamic("checkCollisionResponse")(checkCollisionResponse)
+    if (!js.isUndefined(checkCollisionResponse)) __obj.updateDynamic("checkCollisionResponse")(checkCollisionResponse.asInstanceOf[js.Any])
     if (collisionGroup != null) __obj.updateDynamic("collisionGroup")(collisionGroup.asInstanceOf[js.Any])
     if (collisionMask != null) __obj.updateDynamic("collisionMask")(collisionMask.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipBackfaces)) __obj.updateDynamic("skipBackfaces")(skipBackfaces)
+    if (!js.isUndefined(skipBackfaces)) __obj.updateDynamic("skipBackfaces")(skipBackfaces.asInstanceOf[js.Any])
     __obj.asInstanceOf[RayOptions]
   }
 }

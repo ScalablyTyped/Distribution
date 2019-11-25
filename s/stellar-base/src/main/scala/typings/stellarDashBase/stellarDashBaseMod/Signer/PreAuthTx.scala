@@ -13,7 +13,7 @@ trait PreAuthTx extends js.Object {
 object PreAuthTx {
   @scala.inline
   def apply(preAuthTx: Buffer, weight: Int | Double = null): PreAuthTx = {
-    val __obj = js.Dynamic.literal(preAuthTx = preAuthTx)
+    val __obj = js.Dynamic.literal(preAuthTx = preAuthTx.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreAuthTx]
   }

@@ -8,16 +8,24 @@ import scala.scalajs.js.annotation._
 
 object pinoStrings {
   @js.native
-  sealed trait debug extends Level
+  sealed trait debug
+    extends Level
+       with LevelWithSilent
   
   @js.native
-  sealed trait error extends Level
+  sealed trait error
+    extends Level
+       with LevelWithSilent
   
   @js.native
-  sealed trait fatal extends Level
+  sealed trait fatal
+    extends Level
+       with LevelWithSilent
   
   @js.native
-  sealed trait info extends Level
+  sealed trait info
+    extends Level
+       with LevelWithSilent
   
   @js.native
   sealed trait `level-change` extends js.Object
@@ -26,10 +34,14 @@ object pinoStrings {
   sealed trait silent extends LevelWithSilent
   
   @js.native
-  sealed trait trace extends Level
+  sealed trait trace
+    extends Level
+       with LevelWithSilent
   
   @js.native
-  sealed trait warn extends Level
+  sealed trait warn
+    extends Level
+       with LevelWithSilent
   
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]

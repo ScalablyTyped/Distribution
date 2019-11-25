@@ -23,12 +23,12 @@ object ParsedDiff {
     oldFileName: String = null,
     oldHeader: String = null
   ): ParsedDiff = {
-    val __obj = js.Dynamic.literal(hunks = hunks)
-    if (index != null) __obj.updateDynamic("index")(index)
-    if (newFileName != null) __obj.updateDynamic("newFileName")(newFileName)
-    if (newHeader != null) __obj.updateDynamic("newHeader")(newHeader)
-    if (oldFileName != null) __obj.updateDynamic("oldFileName")(oldFileName)
-    if (oldHeader != null) __obj.updateDynamic("oldHeader")(oldHeader)
+    val __obj = js.Dynamic.literal(hunks = hunks.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (newFileName != null) __obj.updateDynamic("newFileName")(newFileName.asInstanceOf[js.Any])
+    if (newHeader != null) __obj.updateDynamic("newHeader")(newHeader.asInstanceOf[js.Any])
+    if (oldFileName != null) __obj.updateDynamic("oldFileName")(oldFileName.asInstanceOf[js.Any])
+    if (oldHeader != null) __obj.updateDynamic("oldHeader")(oldHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedDiff]
   }
 }

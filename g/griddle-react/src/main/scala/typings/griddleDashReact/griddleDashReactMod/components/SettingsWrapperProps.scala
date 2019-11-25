@@ -28,10 +28,10 @@ object SettingsWrapperProps {
     val __obj = js.Dynamic.literal()
     if (Settings != null) __obj.updateDynamic("Settings")(Settings.asInstanceOf[js.Any])
     if (SettingsToggle != null) __obj.updateDynamic("SettingsToggle")(SettingsToggle.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(isEnabled)) __obj.updateDynamic("isEnabled")(isEnabled)
-    if (!js.isUndefined(isVisible)) __obj.updateDynamic("isVisible")(isVisible)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEnabled)) __obj.updateDynamic("isEnabled")(isEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(isVisible)) __obj.updateDynamic("isVisible")(isVisible.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingsWrapperProps]
   }
 }

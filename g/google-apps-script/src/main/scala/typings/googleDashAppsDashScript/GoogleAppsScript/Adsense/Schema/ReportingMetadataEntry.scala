@@ -26,13 +26,13 @@ object ReportingMetadataEntry {
     supportedProducts: js.Array[String] = null
   ): ReportingMetadataEntry = {
     val __obj = js.Dynamic.literal()
-    if (compatibleDimensions != null) __obj.updateDynamic("compatibleDimensions")(compatibleDimensions)
-    if (compatibleMetrics != null) __obj.updateDynamic("compatibleMetrics")(compatibleMetrics)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (requiredDimensions != null) __obj.updateDynamic("requiredDimensions")(requiredDimensions)
-    if (requiredMetrics != null) __obj.updateDynamic("requiredMetrics")(requiredMetrics)
-    if (supportedProducts != null) __obj.updateDynamic("supportedProducts")(supportedProducts)
+    if (compatibleDimensions != null) __obj.updateDynamic("compatibleDimensions")(compatibleDimensions.asInstanceOf[js.Any])
+    if (compatibleMetrics != null) __obj.updateDynamic("compatibleMetrics")(compatibleMetrics.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (requiredDimensions != null) __obj.updateDynamic("requiredDimensions")(requiredDimensions.asInstanceOf[js.Any])
+    if (requiredMetrics != null) __obj.updateDynamic("requiredMetrics")(requiredMetrics.asInstanceOf[js.Any])
+    if (supportedProducts != null) __obj.updateDynamic("supportedProducts")(supportedProducts.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportingMetadataEntry]
   }
 }

@@ -29,10 +29,10 @@ object Anon_A {
     ] = null,
     range: Range = null
   ): Anon_A = {
-    val __obj = js.Dynamic.literal(element = element)
-    if (multilineTag != null) __obj.updateDynamic("multilineTag")(multilineTag)
-    if (multilineWrapperTags != null) __obj.updateDynamic("multilineWrapperTags")(multilineWrapperTags)
-    if (range != null) __obj.updateDynamic("range")(range)
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
+    if (multilineTag != null) __obj.updateDynamic("multilineTag")(multilineTag.asInstanceOf[js.Any])
+    if (multilineWrapperTags != null) __obj.updateDynamic("multilineWrapperTags")(multilineWrapperTags.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_A]
   }
 }

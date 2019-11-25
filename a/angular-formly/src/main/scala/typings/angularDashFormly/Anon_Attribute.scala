@@ -23,11 +23,11 @@ object Anon_Attribute {
     value: js.Any = null
   ): Anon_Attribute = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (attribute != null) __obj.updateDynamic("attribute")(attribute)
-    if (bound != null) __obj.updateDynamic("bound")(bound)
-    if (expression != null) __obj.updateDynamic("expression")(expression)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (attribute != null) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
+    if (bound != null) __obj.updateDynamic("bound")(bound.asInstanceOf[js.Any])
+    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Attribute]
   }
 }

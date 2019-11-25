@@ -22,11 +22,11 @@ object UserRolePermission {
     permissionGroupId: String = null
   ): UserRolePermission = {
     val __obj = js.Dynamic.literal()
-    if (availability != null) __obj.updateDynamic("availability")(availability)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (permissionGroupId != null) __obj.updateDynamic("permissionGroupId")(permissionGroupId)
+    if (availability != null) __obj.updateDynamic("availability")(availability.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (permissionGroupId != null) __obj.updateDynamic("permissionGroupId")(permissionGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserRolePermission]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_DesiredCenter extends js.Object {
 object Anon_DesiredCenter {
   @scala.inline
   def apply(desiredCenter: Double, size: Double): Anon_DesiredCenter = {
-    val __obj = js.Dynamic.literal(desiredCenter = desiredCenter, size = size)
+    val __obj = js.Dynamic.literal(desiredCenter = desiredCenter.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DesiredCenter]
   }

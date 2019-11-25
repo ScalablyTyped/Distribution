@@ -13,7 +13,7 @@ trait Anon_Ruler extends js.Object {
 object Anon_Ruler {
   @scala.inline
   def apply(ruler: ^[InlineParsingRule]): Anon_Ruler = {
-    val __obj = js.Dynamic.literal(ruler = ruler)
+    val __obj = js.Dynamic.literal(ruler = ruler.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Ruler]
   }

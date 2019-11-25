@@ -66,13 +66,13 @@ object ReposCreateDeploymentStatusParams {
     log_url: String = null,
     target_url: String = null
   ): ReposCreateDeploymentStatusParams = {
-    val __obj = js.Dynamic.literal(deployment_id = deployment_id, owner = owner, repo = repo, state = state.asInstanceOf[js.Any])
-    if (!js.isUndefined(auto_inactive)) __obj.updateDynamic("auto_inactive")(auto_inactive)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(deployment_id = deployment_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    if (!js.isUndefined(auto_inactive)) __obj.updateDynamic("auto_inactive")(auto_inactive.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (environment_url != null) __obj.updateDynamic("environment_url")(environment_url)
-    if (log_url != null) __obj.updateDynamic("log_url")(log_url)
-    if (target_url != null) __obj.updateDynamic("target_url")(target_url)
+    if (environment_url != null) __obj.updateDynamic("environment_url")(environment_url.asInstanceOf[js.Any])
+    if (log_url != null) __obj.updateDynamic("log_url")(log_url.asInstanceOf[js.Any])
+    if (target_url != null) __obj.updateDynamic("target_url")(target_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCreateDeploymentStatusParams]
   }
 }

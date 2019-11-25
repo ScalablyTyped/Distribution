@@ -36,9 +36,9 @@ object BaseLayerViewGL2DProperties {
   ): BaseLayerViewGL2DProperties = {
     val __obj = js.Dynamic.literal()
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (tiles != null) __obj.updateDynamic("tiles")(tiles)
-    if (view != null) __obj.updateDynamic("view")(view)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (tiles != null) __obj.updateDynamic("tiles")(tiles.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseLayerViewGL2DProperties]
   }
 }

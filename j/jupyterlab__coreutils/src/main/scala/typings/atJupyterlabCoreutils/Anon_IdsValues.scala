@@ -13,7 +13,7 @@ trait Anon_IdsValues[T /* <: ReadonlyJSONValue */] extends js.Object {
 object Anon_IdsValues {
   @scala.inline
   def apply[T /* <: ReadonlyJSONValue */](ids: js.Array[String], values: js.Array[T]): Anon_IdsValues[T] = {
-    val __obj = js.Dynamic.literal(ids = ids, values = values)
+    val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IdsValues[T]]
   }

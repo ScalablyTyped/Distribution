@@ -62,8 +62,8 @@ object Options {
     outputWriter: String | OutputWriter,
     `override`: Record[String, Partial[Dependency]]
   ): Options = {
-    val __obj = js.Dynamic.literal(allow = allow, emitError = emitError, filter = filter, ignore = ignore, outputFilename = outputFilename, outputWriter = outputWriter.asInstanceOf[js.Any])
-    __obj.updateDynamic("override")(`override`)
+    val __obj = js.Dynamic.literal(allow = allow.asInstanceOf[js.Any], emitError = emitError.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], ignore = ignore.asInstanceOf[js.Any], outputFilename = outputFilename.asInstanceOf[js.Any], outputWriter = outputWriter.asInstanceOf[js.Any])
+    __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

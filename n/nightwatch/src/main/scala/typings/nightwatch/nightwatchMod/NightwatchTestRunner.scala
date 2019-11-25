@@ -14,8 +14,8 @@ object NightwatchTestRunner {
   @scala.inline
   def apply(options: Anon_Ui = null, `type`: String = null): NightwatchTestRunner = {
     val __obj = js.Dynamic.literal()
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NightwatchTestRunner]
   }
 }

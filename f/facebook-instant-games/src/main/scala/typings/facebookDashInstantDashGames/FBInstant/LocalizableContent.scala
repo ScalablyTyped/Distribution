@@ -21,7 +21,7 @@ trait LocalizableContent extends js.Object {
 object LocalizableContent {
   @scala.inline
   def apply(default: String, localizations: LocalizationsDict): LocalizableContent = {
-    val __obj = js.Dynamic.literal(default = default, localizations = localizations)
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], localizations = localizations.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LocalizableContent]
   }

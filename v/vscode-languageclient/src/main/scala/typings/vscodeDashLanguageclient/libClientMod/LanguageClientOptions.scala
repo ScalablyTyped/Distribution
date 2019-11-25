@@ -5,7 +5,6 @@ import typings.vscode.vscodeMod.OutputChannel
 import typings.vscode.vscodeMod.WorkspaceFolder
 import typings.vscodeDashLanguageclient.Anon_Code2Protocol
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.DocumentSelector
-import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.InitializeError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +35,7 @@ object LanguageClientOptions {
     diagnosticCollectionName: String = null,
     documentSelector: DocumentSelector | js.Array[String] = null,
     errorHandler: ErrorHandler = null,
-    initializationFailedHandler: /* error */ typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.ResponseError[InitializeError] | Error | js.Any => Boolean = null,
+    initializationFailedHandler: /* error */ typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.ResponseError[typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.InitializeError] | Error | js.Any => Boolean = null,
     initializationOptions: js.Any | js.Function0[_] = null,
     middleware: Middleware = null,
     outputChannel: OutputChannel = null,
@@ -48,19 +47,19 @@ object LanguageClientOptions {
     workspaceFolder: WorkspaceFolder = null
   ): LanguageClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (diagnosticCollectionName != null) __obj.updateDynamic("diagnosticCollectionName")(diagnosticCollectionName)
+    if (diagnosticCollectionName != null) __obj.updateDynamic("diagnosticCollectionName")(diagnosticCollectionName.asInstanceOf[js.Any])
     if (documentSelector != null) __obj.updateDynamic("documentSelector")(documentSelector.asInstanceOf[js.Any])
-    if (errorHandler != null) __obj.updateDynamic("errorHandler")(errorHandler)
+    if (errorHandler != null) __obj.updateDynamic("errorHandler")(errorHandler.asInstanceOf[js.Any])
     if (initializationFailedHandler != null) __obj.updateDynamic("initializationFailedHandler")(js.Any.fromFunction1(initializationFailedHandler))
     if (initializationOptions != null) __obj.updateDynamic("initializationOptions")(initializationOptions.asInstanceOf[js.Any])
-    if (middleware != null) __obj.updateDynamic("middleware")(middleware)
-    if (outputChannel != null) __obj.updateDynamic("outputChannel")(outputChannel)
-    if (outputChannelName != null) __obj.updateDynamic("outputChannelName")(outputChannelName)
-    if (revealOutputChannelOn != null) __obj.updateDynamic("revealOutputChannelOn")(revealOutputChannelOn)
-    if (stdioEncoding != null) __obj.updateDynamic("stdioEncoding")(stdioEncoding)
-    if (synchronize != null) __obj.updateDynamic("synchronize")(synchronize)
-    if (uriConverters != null) __obj.updateDynamic("uriConverters")(uriConverters)
-    if (workspaceFolder != null) __obj.updateDynamic("workspaceFolder")(workspaceFolder)
+    if (middleware != null) __obj.updateDynamic("middleware")(middleware.asInstanceOf[js.Any])
+    if (outputChannel != null) __obj.updateDynamic("outputChannel")(outputChannel.asInstanceOf[js.Any])
+    if (outputChannelName != null) __obj.updateDynamic("outputChannelName")(outputChannelName.asInstanceOf[js.Any])
+    if (revealOutputChannelOn != null) __obj.updateDynamic("revealOutputChannelOn")(revealOutputChannelOn.asInstanceOf[js.Any])
+    if (stdioEncoding != null) __obj.updateDynamic("stdioEncoding")(stdioEncoding.asInstanceOf[js.Any])
+    if (synchronize != null) __obj.updateDynamic("synchronize")(synchronize.asInstanceOf[js.Any])
+    if (uriConverters != null) __obj.updateDynamic("uriConverters")(uriConverters.asInstanceOf[js.Any])
+    if (workspaceFolder != null) __obj.updateDynamic("workspaceFolder")(workspaceFolder.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageClientOptions]
   }
 }

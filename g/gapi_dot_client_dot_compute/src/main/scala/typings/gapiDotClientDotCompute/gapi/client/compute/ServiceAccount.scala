@@ -15,8 +15,8 @@ object ServiceAccount {
   @scala.inline
   def apply(email: String = null, scopes: js.Array[String] = null): ServiceAccount = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceAccount]
   }
 }

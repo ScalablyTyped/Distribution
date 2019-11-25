@@ -27,13 +27,13 @@ object UrlData {
     priority: Double | String = null,
     video: Anon_Contentloc = null
   ): UrlData = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (chengefreq != null) __obj.updateDynamic("chengefreq")(chengefreq)
-    if (lastmod != null) __obj.updateDynamic("lastmod")(lastmod)
-    if (!js.isUndefined(lastmodInISO)) __obj.updateDynamic("lastmodInISO")(lastmodInISO)
-    if (!js.isUndefined(lastmodWithTime)) __obj.updateDynamic("lastmodWithTime")(lastmodWithTime)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (chengefreq != null) __obj.updateDynamic("chengefreq")(chengefreq.asInstanceOf[js.Any])
+    if (lastmod != null) __obj.updateDynamic("lastmod")(lastmod.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastmodInISO)) __obj.updateDynamic("lastmodInISO")(lastmodInISO.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastmodWithTime)) __obj.updateDynamic("lastmodWithTime")(lastmodWithTime.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (video != null) __obj.updateDynamic("video")(video)
+    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlData]
   }
 }

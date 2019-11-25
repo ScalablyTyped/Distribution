@@ -15,7 +15,7 @@ object PlotPyramid3dDragDropGuideBoxOptions {
   @scala.inline
   def apply(default: PlotPyramid3dDragDropGuideBoxDefaultOptions = null): PlotPyramid3dDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotPyramid3dDragDropGuideBoxOptions]
   }
 }

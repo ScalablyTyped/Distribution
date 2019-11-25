@@ -13,7 +13,7 @@ object Anon_GqcExtensions {
   @scala.inline
   def apply(_gqcExtensions: Extensions = null): Anon_GqcExtensions = {
     val __obj = js.Dynamic.literal()
-    if (_gqcExtensions != null) __obj.updateDynamic("_gqcExtensions")(_gqcExtensions)
+    if (_gqcExtensions != null) __obj.updateDynamic("_gqcExtensions")(_gqcExtensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_GqcExtensions]
   }
 }

@@ -20,8 +20,8 @@ object EmotionCache {
     registered: StringDictionary[String],
     nonce: String = null
   ): EmotionCache = {
-    val __obj = js.Dynamic.literal(inserted = inserted, key = key, registered = registered)
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    val __obj = js.Dynamic.literal(inserted = inserted.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], registered = registered.asInstanceOf[js.Any])
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmotionCache]
   }
 }

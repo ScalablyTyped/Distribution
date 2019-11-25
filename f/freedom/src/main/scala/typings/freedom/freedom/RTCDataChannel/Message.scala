@@ -17,9 +17,9 @@ object Message {
   @scala.inline
   def apply(binary: Blob = null, buffer: ArrayBuffer = null, text: String = null): Message = {
     val __obj = js.Dynamic.literal()
-    if (binary != null) __obj.updateDynamic("binary")(binary)
-    if (buffer != null) __obj.updateDynamic("buffer")(buffer)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (binary != null) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
+    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
 }

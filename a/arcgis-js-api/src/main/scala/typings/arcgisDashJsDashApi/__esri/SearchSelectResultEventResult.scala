@@ -22,7 +22,7 @@ object SearchSelectResultEventResult {
     name: String,
     propertyIsEnumerable: PropertyKey => Boolean
   ): SearchSelectResultEventResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor, extent = extent, feature = feature, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], extent = extent.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[SearchSelectResultEventResult]
   }

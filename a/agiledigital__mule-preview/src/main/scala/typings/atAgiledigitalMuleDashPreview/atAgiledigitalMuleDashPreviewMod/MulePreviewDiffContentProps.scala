@@ -12,7 +12,7 @@ trait MulePreviewDiffContentProps extends js.Object {
 object MulePreviewDiffContentProps {
   @scala.inline
   def apply(contentRoot: String, contentStrings: js.Tuple2[js.UndefOr[String], js.UndefOr[String]]): MulePreviewDiffContentProps = {
-    val __obj = js.Dynamic.literal(contentRoot = contentRoot, contentStrings = contentStrings)
+    val __obj = js.Dynamic.literal(contentRoot = contentRoot.asInstanceOf[js.Any], contentStrings = contentStrings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MulePreviewDiffContentProps]
   }

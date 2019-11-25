@@ -21,7 +21,7 @@ object _ServerSideEncryptionByDefault {
   @scala.inline
   def apply(SSEAlgorithm: AES256 | `aws:kms` | String, KMSMasterKeyID: String = null): _ServerSideEncryptionByDefault = {
     val __obj = js.Dynamic.literal(SSEAlgorithm = SSEAlgorithm.asInstanceOf[js.Any])
-    if (KMSMasterKeyID != null) __obj.updateDynamic("KMSMasterKeyID")(KMSMasterKeyID)
+    if (KMSMasterKeyID != null) __obj.updateDynamic("KMSMasterKeyID")(KMSMasterKeyID.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ServerSideEncryptionByDefault]
   }
 }

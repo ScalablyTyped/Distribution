@@ -19,8 +19,8 @@ object UsersCreatePublicKeyParams {
   @scala.inline
   def apply(key: String = null, title: String = null): UsersCreatePublicKeyParams = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersCreatePublicKeyParams]
   }
 }

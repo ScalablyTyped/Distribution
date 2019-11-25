@@ -21,7 +21,7 @@ object Helper {
     StringDictionary: /* key */ StringDictionary[js.Function1[/* repeated */ js.Any, _]] = null
   ): Helper = {
     val __obj = js.Dynamic.literal(replaceRecursiveRegExp = js.Any.fromFunction1(replaceRecursiveRegExp))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Helper]
   }
 }

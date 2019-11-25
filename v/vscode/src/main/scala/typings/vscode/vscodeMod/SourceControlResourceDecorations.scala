@@ -41,12 +41,12 @@ object SourceControlResourceDecorations {
     tooltip: String = null
   ): SourceControlResourceDecorations = {
     val __obj = js.Dynamic.literal()
-    if (dark != null) __obj.updateDynamic("dark")(dark)
-    if (!js.isUndefined(faded)) __obj.updateDynamic("faded")(faded)
+    if (dark != null) __obj.updateDynamic("dark")(dark.asInstanceOf[js.Any])
+    if (!js.isUndefined(faded)) __obj.updateDynamic("faded")(faded.asInstanceOf[js.Any])
     if (iconPath != null) __obj.updateDynamic("iconPath")(iconPath.asInstanceOf[js.Any])
-    if (light != null) __obj.updateDynamic("light")(light)
-    if (!js.isUndefined(strikeThrough)) __obj.updateDynamic("strikeThrough")(strikeThrough)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (light != null) __obj.updateDynamic("light")(light.asInstanceOf[js.Any])
+    if (!js.isUndefined(strikeThrough)) __obj.updateDynamic("strikeThrough")(strikeThrough.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceControlResourceDecorations]
   }
 }

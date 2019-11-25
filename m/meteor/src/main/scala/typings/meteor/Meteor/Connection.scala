@@ -22,7 +22,7 @@ object Connection {
     id: String,
     onClose: js.Function
   ): Connection = {
-    val __obj = js.Dynamic.literal(clientAddress = clientAddress, close = close, httpHeaders = httpHeaders, id = id, onClose = onClose)
+    val __obj = js.Dynamic.literal(clientAddress = clientAddress.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], httpHeaders = httpHeaders.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], onClose = onClose.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Connection]
   }

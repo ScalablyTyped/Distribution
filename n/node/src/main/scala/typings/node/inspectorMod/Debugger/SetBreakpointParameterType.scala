@@ -18,8 +18,8 @@ trait SetBreakpointParameterType extends js.Object {
 object SetBreakpointParameterType {
   @scala.inline
   def apply(location: Location, condition: java.lang.String = null): SetBreakpointParameterType = {
-    val __obj = js.Dynamic.literal(location = location)
-    if (condition != null) __obj.updateDynamic("condition")(condition)
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetBreakpointParameterType]
   }
 }

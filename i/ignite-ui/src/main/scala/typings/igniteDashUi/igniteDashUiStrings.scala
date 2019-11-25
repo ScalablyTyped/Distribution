@@ -681,7 +681,7 @@ object igniteDashUiStrings {
   sealed trait checkUnfixingAllowed extends js.Object
   
   @js.native
-  sealed trait checkboxMode extends js.Object
+  sealed trait checkboxMode_ extends js.Object
   
   @js.native
   sealed trait checked extends js.Object
@@ -2163,7 +2163,7 @@ object igniteDashUiStrings {
   sealed trait fixNonDataColumns extends js.Object
   
   @js.native
-  sealed trait fixNondataColumns extends js.Object
+  sealed trait fixNondataColumns_ extends js.Object
   
   @js.native
   sealed trait fixedBodyContainer extends js.Object
@@ -5634,7 +5634,7 @@ object igniteDashUiStrings {
   sealed trait showToolTipTimeout extends js.Object
   
   @js.native
-  sealed trait showTooltip extends js.Object
+  sealed trait showTooltip_ extends js.Object
   
   @js.native
   sealed trait showTopOrBottomDialogForTable extends js.Object
@@ -6129,7 +6129,7 @@ object igniteDashUiStrings {
   sealed trait toggleCheckStateById extends js.Object
   
   @js.native
-  sealed trait toggleCheckstate extends js.Object
+  sealed trait toggleCheckstate_ extends js.Object
   
   @js.native
   sealed trait toggleDropDown extends js.Object
@@ -7414,7 +7414,7 @@ object igniteDashUiStrings {
   @scala.inline
   def checkUnfixingAllowed: checkUnfixingAllowed = "checkUnfixingAllowed".asInstanceOf[checkUnfixingAllowed]
   @scala.inline
-  def checkboxMode: checkboxMode = "checkboxMode".asInstanceOf[checkboxMode]
+  def checkboxMode_ : checkboxMode_ = "checkboxMode".asInstanceOf[checkboxMode_]
   @scala.inline
   def checked: checked = "checked".asInstanceOf[checked]
   @scala.inline
@@ -8400,7 +8400,7 @@ object igniteDashUiStrings {
   @scala.inline
   def fixNonDataColumns: fixNonDataColumns = "fixNonDataColumns".asInstanceOf[fixNonDataColumns]
   @scala.inline
-  def fixNondataColumns: fixNondataColumns = "fixNondataColumns".asInstanceOf[fixNondataColumns]
+  def fixNondataColumns_ : fixNondataColumns_ = "fixNondataColumns".asInstanceOf[fixNondataColumns_]
   @scala.inline
   def fixedBodyContainer: fixedBodyContainer = "fixedBodyContainer".asInstanceOf[fixedBodyContainer]
   @scala.inline
@@ -10712,7 +10712,7 @@ object igniteDashUiStrings {
   @scala.inline
   def showToolTipTimeout: showToolTipTimeout = "showToolTipTimeout".asInstanceOf[showToolTipTimeout]
   @scala.inline
-  def showTooltip: showTooltip = "showTooltip".asInstanceOf[showTooltip]
+  def showTooltip_ : showTooltip_ = "showTooltip".asInstanceOf[showTooltip_]
   @scala.inline
   def showTopOrBottomDialogForTable: showTopOrBottomDialogForTable = "showTopOrBottomDialogForTable".asInstanceOf[showTopOrBottomDialogForTable]
   @scala.inline
@@ -11042,7 +11042,7 @@ object igniteDashUiStrings {
   @scala.inline
   def toggleCheckStateById: toggleCheckStateById = "toggleCheckStateById".asInstanceOf[toggleCheckStateById]
   @scala.inline
-  def toggleCheckstate: toggleCheckstate = "toggleCheckstate".asInstanceOf[toggleCheckstate]
+  def toggleCheckstate_ : toggleCheckstate_ = "toggleCheckstate".asInstanceOf[toggleCheckstate_]
   @scala.inline
   def toggleDropDown: toggleDropDown = "toggleDropDown".asInstanceOf[toggleDropDown]
   @scala.inline

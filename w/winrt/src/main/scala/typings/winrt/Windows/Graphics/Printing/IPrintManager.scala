@@ -11,7 +11,7 @@ trait IPrintManager extends js.Object {
 object IPrintManager {
   @scala.inline
   def apply(onprinttaskrequested: js.Any): IPrintManager = {
-    val __obj = js.Dynamic.literal(onprinttaskrequested = onprinttaskrequested)
+    val __obj = js.Dynamic.literal(onprinttaskrequested = onprinttaskrequested.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPrintManager]
   }

@@ -24,8 +24,8 @@ object Anon_HeadersIdJSONPatchOptionsResourceTypeArray {
     headers: Headers = null,
     options: Options = null
   ): Anon_HeadersIdJSONPatchOptionsResourceTypeArray = {
-    val __obj = js.Dynamic.literal(JSONPatch = JSONPatch, id = id, resourceType = resourceType.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(JSONPatch = JSONPatch.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HeadersIdJSONPatchOptionsResourceTypeArray]
   }

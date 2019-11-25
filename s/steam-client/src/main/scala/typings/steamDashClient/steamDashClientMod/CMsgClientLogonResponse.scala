@@ -18,7 +18,7 @@ trait CMsgClientLogonResponse extends js.Object {
 object CMsgClientLogonResponse {
   @scala.inline
   def apply(eresult: EResult, webapi_authenticate_user_nonce: String): CMsgClientLogonResponse = {
-    val __obj = js.Dynamic.literal(eresult = eresult, webapi_authenticate_user_nonce = webapi_authenticate_user_nonce)
+    val __obj = js.Dynamic.literal(eresult = eresult.asInstanceOf[js.Any], webapi_authenticate_user_nonce = webapi_authenticate_user_nonce.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CMsgClientLogonResponse]
   }

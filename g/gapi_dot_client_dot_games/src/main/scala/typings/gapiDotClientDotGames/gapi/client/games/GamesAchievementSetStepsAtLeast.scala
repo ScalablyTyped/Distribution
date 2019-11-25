@@ -15,7 +15,7 @@ object GamesAchievementSetStepsAtLeast {
   @scala.inline
   def apply(kind: String = null, steps: Int | Double = null): GamesAchievementSetStepsAtLeast = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
     __obj.asInstanceOf[GamesAchievementSetStepsAtLeast]
   }

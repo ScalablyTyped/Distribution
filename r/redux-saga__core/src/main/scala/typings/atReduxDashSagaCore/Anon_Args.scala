@@ -17,7 +17,7 @@ object Anon_Args {
     effectId: Double,
     saga: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Saga */ js.Any
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal(args = args, effectId = effectId, saga = saga)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], effectId = effectId.asInstanceOf[js.Any], saga = saga.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Args]
   }

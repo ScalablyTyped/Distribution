@@ -193,22 +193,22 @@ trait Instance[TAttributes] extends js.Object {
     */
   def set[K /* <: String */](
     key: K,
-    value: /* import warning: ImportType.apply Failed type conversion: TAttributes[K] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any
   ): this.type = js.native
   def set[K /* <: String */](
     key: K,
-    value: /* import warning: ImportType.apply Failed type conversion: TAttributes[K] */ js.Any,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any,
     options: InstanceSetOptions
   ): this.type = js.native
   def setAttributes(keys: js.Object): this.type = js.native
   def setAttributes(keys: js.Object, options: InstanceSetOptions): this.type = js.native
   def setAttributes[K /* <: String */](
     key: K,
-    value: /* import warning: ImportType.apply Failed type conversion: TAttributes[K] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any
   ): this.type = js.native
   def setAttributes[K /* <: String */](
     key: K,
-    value: /* import warning: ImportType.apply Failed type conversion: TAttributes[K] */ js.Any,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any,
     options: InstanceSetOptions
   ): this.type = js.native
   /**
@@ -216,7 +216,7 @@ trait Instance[TAttributes] extends js.Object {
     */
   def setDataValue[K /* <: String */](
     key: K,
-    value: /* import warning: ImportType.apply Failed type conversion: TAttributes[K] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any
   ): Unit = js.native
   /**
     * Convert the instance to a JSON representation. Proxies to calling `get` with no keys. This means get all
@@ -230,22 +230,22 @@ trait Instance[TAttributes] extends js.Object {
     */
   def update[K /* <: String */](
     key: K,
-    value: /* import warning: ImportType.apply Failed type conversion: TAttributes[K] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any
   ): typings.bluebird.bluebirdMod.^[this.type] = js.native
   def update[K /* <: String */](
     key: K,
-    value: /* import warning: ImportType.apply Failed type conversion: TAttributes[K] */ js.Any,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any,
     options: InstanceUpdateOptions
   ): typings.bluebird.bluebirdMod.^[this.type] = js.native
   def updateAttributes(keys: js.Object): typings.bluebird.bluebirdMod.^[this.type] = js.native
   def updateAttributes(keys: js.Object, options: InstanceUpdateOptions): typings.bluebird.bluebirdMod.^[this.type] = js.native
   def updateAttributes[K /* <: String */](
     key: K,
-    value: /* import warning: ImportType.apply Failed type conversion: TAttributes[K] */ js.Any
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any
   ): typings.bluebird.bluebirdMod.^[this.type] = js.native
   def updateAttributes[K /* <: String */](
     key: K,
-    value: /* import warning: ImportType.apply Failed type conversion: TAttributes[K] */ js.Any,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: TAttributes[K] */ js.Any,
     options: InstanceUpdateOptions
   ): typings.bluebird.bluebirdMod.^[this.type] = js.native
   /**

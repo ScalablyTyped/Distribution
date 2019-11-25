@@ -11,7 +11,7 @@ trait Polyfill extends js.Object {
 object Polyfill {
   @scala.inline
   def apply(flags: js.Any): Polyfill = {
-    val __obj = js.Dynamic.literal(flags = flags)
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Polyfill]
   }

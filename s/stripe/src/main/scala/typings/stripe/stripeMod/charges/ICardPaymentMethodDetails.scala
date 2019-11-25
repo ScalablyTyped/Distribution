@@ -14,8 +14,8 @@ trait ICardPaymentMethodDetails extends IPaymentMethodDetails {
 object ICardPaymentMethodDetails {
   @scala.inline
   def apply(card: Anon_Brand, `type`: card): ICardPaymentMethodDetails = {
-    val __obj = js.Dynamic.literal(card = card)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICardPaymentMethodDetails]
   }
 }

@@ -44,7 +44,7 @@ object IEffects {
     elevation8: String,
     roundedCorner2: String
   ): IEffects = {
-    val __obj = js.Dynamic.literal(elevation16 = elevation16, elevation4 = elevation4, elevation64 = elevation64, elevation8 = elevation8, roundedCorner2 = roundedCorner2)
+    val __obj = js.Dynamic.literal(elevation16 = elevation16.asInstanceOf[js.Any], elevation4 = elevation4.asInstanceOf[js.Any], elevation64 = elevation64.asInstanceOf[js.Any], elevation8 = elevation8.asInstanceOf[js.Any], roundedCorner2 = roundedCorner2.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IEffects]
   }

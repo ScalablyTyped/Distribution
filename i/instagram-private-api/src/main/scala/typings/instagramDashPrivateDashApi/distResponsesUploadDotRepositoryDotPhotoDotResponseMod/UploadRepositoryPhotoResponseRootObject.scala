@@ -13,7 +13,7 @@ trait UploadRepositoryPhotoResponseRootObject extends js.Object {
 object UploadRepositoryPhotoResponseRootObject {
   @scala.inline
   def apply(status: String, upload_id: String, xsharing_nonces: UploadRepositoryPhotoResponseXsharing_nonces): UploadRepositoryPhotoResponseRootObject = {
-    val __obj = js.Dynamic.literal(status = status, upload_id = upload_id, xsharing_nonces = xsharing_nonces)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], upload_id = upload_id.asInstanceOf[js.Any], xsharing_nonces = xsharing_nonces.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UploadRepositoryPhotoResponseRootObject]
   }

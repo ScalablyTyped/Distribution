@@ -12,7 +12,7 @@ trait StatsProvided extends js.Object {
 object StatsProvided {
   @scala.inline
   def apply(nbHits: Double, processingTimeMS: Double): StatsProvided = {
-    val __obj = js.Dynamic.literal(nbHits = nbHits, processingTimeMS = processingTimeMS)
+    val __obj = js.Dynamic.literal(nbHits = nbHits.asInstanceOf[js.Any], processingTimeMS = processingTimeMS.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StatsProvided]
   }

@@ -26,3 +26,44 @@ import scala.scalajs.js.annotation._
 */
 trait TimelineEvents extends js.Object
 
+object TimelineEvents {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def changed: typings.vis.visStrings.changed = this.cast("changed")
+  @scala.inline
+  def click: typings.vis.visStrings.click = this.cast("click")
+  @scala.inline
+  def contextmenu: typings.vis.visStrings.contextmenu = this.cast("contextmenu")
+  @scala.inline
+  def currentTimeTick: typings.vis.visStrings.currentTimeTick = this.cast("currentTimeTick")
+  @scala.inline
+  def doubleClick: typings.vis.visStrings.doubleClick = this.cast("doubleClick")
+  @scala.inline
+  def drop: typings.vis.visStrings.drop = this.cast("drop")
+  @scala.inline
+  def groupDragged: typings.vis.visStrings.groupDragged = this.cast("groupDragged")
+  @scala.inline
+  def itemout: typings.vis.visStrings.itemout = this.cast("itemout")
+  @scala.inline
+  def itemover: typings.vis.visStrings.itemover = this.cast("itemover")
+  @scala.inline
+  def mouseDown: typings.vis.visStrings.mouseDown = this.cast("mouseDown")
+  @scala.inline
+  def mouseMove: typings.vis.visStrings.mouseMove = this.cast("mouseMove")
+  @scala.inline
+  def mouseOver: typings.vis.visStrings.mouseOver = this.cast("mouseOver")
+  @scala.inline
+  def mouseUp: typings.vis.visStrings.mouseUp = this.cast("mouseUp")
+  @scala.inline
+  def rangechange: typings.vis.visStrings.rangechange = this.cast("rangechange")
+  @scala.inline
+  def rangechanged: typings.vis.visStrings.rangechanged = this.cast("rangechanged")
+  @scala.inline
+  def select: typings.vis.visStrings.select = this.cast("select")
+  @scala.inline
+  def timechange: typings.vis.visStrings.timechange = this.cast("timechange")
+  @scala.inline
+  def timechanged: typings.vis.visStrings.timechanged = this.cast("timechanged")
+}
+

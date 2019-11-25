@@ -26,9 +26,9 @@ object MirrorConfig {
   @scala.inline
   def apply(deployKeyId: String = null, url: String = null, webhookId: String = null): MirrorConfig = {
     val __obj = js.Dynamic.literal()
-    if (deployKeyId != null) __obj.updateDynamic("deployKeyId")(deployKeyId)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (webhookId != null) __obj.updateDynamic("webhookId")(webhookId)
+    if (deployKeyId != null) __obj.updateDynamic("deployKeyId")(deployKeyId.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (webhookId != null) __obj.updateDynamic("webhookId")(webhookId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MirrorConfig]
   }
 }

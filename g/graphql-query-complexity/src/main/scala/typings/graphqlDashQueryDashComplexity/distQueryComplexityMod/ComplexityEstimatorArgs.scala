@@ -22,7 +22,7 @@ object ComplexityEstimatorArgs {
     field: GraphQLField[_, _, StringDictionary[_]],
     `type`: GraphQLCompositeType
   ): ComplexityEstimatorArgs = {
-    val __obj = js.Dynamic.literal(args = args, childComplexity = childComplexity, field = field)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], childComplexity = childComplexity.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComplexityEstimatorArgs]
   }

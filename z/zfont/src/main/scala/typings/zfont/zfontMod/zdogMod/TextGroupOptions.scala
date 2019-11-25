@@ -71,20 +71,20 @@ object TextGroupOptions {
     value: T = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): TextGroupOptions[T] = {
-    val __obj = js.Dynamic.literal(font = font)
-    if (addTo != null) __obj.updateDynamic("addTo")(addTo)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
+    val __obj = js.Dynamic.literal(font = font.asInstanceOf[js.Any])
+    if (addTo != null) __obj.updateDynamic("addTo")(addTo.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate)
+    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
-    if (textBaseline != null) __obj.updateDynamic("textBaseline")(textBaseline)
-    if (translate != null) __obj.updateDynamic("translate")(translate)
-    if (!js.isUndefined(updateSort)) __obj.updateDynamic("updateSort")(updateSort)
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
+    if (textBaseline != null) __obj.updateDynamic("textBaseline")(textBaseline.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateSort)) __obj.updateDynamic("updateSort")(updateSort.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextGroupOptions[T]]
   }
 }

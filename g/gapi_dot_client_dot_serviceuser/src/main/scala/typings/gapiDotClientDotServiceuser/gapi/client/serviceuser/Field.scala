@@ -48,16 +48,16 @@ object Field {
     typeUrl: String = null
   ): Field = {
     val __obj = js.Dynamic.literal()
-    if (cardinality != null) __obj.updateDynamic("cardinality")(cardinality)
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (jsonName != null) __obj.updateDynamic("jsonName")(jsonName)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (cardinality != null) __obj.updateDynamic("cardinality")(cardinality.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (jsonName != null) __obj.updateDynamic("jsonName")(jsonName.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
     if (oneofIndex != null) __obj.updateDynamic("oneofIndex")(oneofIndex.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (!js.isUndefined(packed)) __obj.updateDynamic("packed")(packed)
-    if (typeUrl != null) __obj.updateDynamic("typeUrl")(typeUrl)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (!js.isUndefined(packed)) __obj.updateDynamic("packed")(packed.asInstanceOf[js.Any])
+    if (typeUrl != null) __obj.updateDynamic("typeUrl")(typeUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Field]
   }
 }

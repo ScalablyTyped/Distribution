@@ -16,7 +16,7 @@ object Anon_Errors {
   @scala.inline
   def apply(errors: js.Array[ErrorProto] = null, index: Int | Double = null): Anon_Errors = {
     val __obj = js.Dynamic.literal()
-    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Errors]
   }

@@ -13,7 +13,7 @@ object Anon_Batch {
   @scala.inline
   def apply(`type`: batch): Anon_Batch = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Batch]
   }
 }

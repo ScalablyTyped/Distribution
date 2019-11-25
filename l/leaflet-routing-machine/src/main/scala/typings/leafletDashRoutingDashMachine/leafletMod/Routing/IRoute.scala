@@ -24,11 +24,11 @@ object IRoute {
     waypoints: js.Array[LatLng] = null
   ): IRoute = {
     val __obj = js.Dynamic.literal()
-    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
-    if (instructions != null) __obj.updateDynamic("instructions")(instructions)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (summary != null) __obj.updateDynamic("summary")(summary)
-    if (waypoints != null) __obj.updateDynamic("waypoints")(waypoints)
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
+    if (instructions != null) __obj.updateDynamic("instructions")(instructions.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
+    if (waypoints != null) __obj.updateDynamic("waypoints")(waypoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRoute]
   }
 }

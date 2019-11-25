@@ -30,15 +30,15 @@ object City {
     regionDartId: String = null
   ): City = {
     val __obj = js.Dynamic.literal()
-    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode)
-    if (countryDartId != null) __obj.updateDynamic("countryDartId")(countryDartId)
-    if (dartId != null) __obj.updateDynamic("dartId")(dartId)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (metroCode != null) __obj.updateDynamic("metroCode")(metroCode)
-    if (metroDmaId != null) __obj.updateDynamic("metroDmaId")(metroDmaId)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode)
-    if (regionDartId != null) __obj.updateDynamic("regionDartId")(regionDartId)
+    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
+    if (countryDartId != null) __obj.updateDynamic("countryDartId")(countryDartId.asInstanceOf[js.Any])
+    if (dartId != null) __obj.updateDynamic("dartId")(dartId.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (metroCode != null) __obj.updateDynamic("metroCode")(metroCode.asInstanceOf[js.Any])
+    if (metroDmaId != null) __obj.updateDynamic("metroDmaId")(metroDmaId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode.asInstanceOf[js.Any])
+    if (regionDartId != null) __obj.updateDynamic("regionDartId")(regionDartId.asInstanceOf[js.Any])
     __obj.asInstanceOf[City]
   }
 }

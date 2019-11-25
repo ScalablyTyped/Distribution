@@ -13,7 +13,7 @@ trait Anon_ActiveAssigned extends js.Object {
 object Anon_ActiveAssigned {
   @scala.inline
   def apply(active: Double, assigned: Double, moving: Double): Anon_ActiveAssigned = {
-    val __obj = js.Dynamic.literal(active = active, assigned = assigned, moving = moving)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], assigned = assigned.asInstanceOf[js.Any], moving = moving.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ActiveAssigned]
   }

@@ -13,8 +13,8 @@ trait Anon_NotificationBody extends js.Object {
 object Anon_NotificationBody {
   @scala.inline
   def apply(notificationBody: String, notificationTitle: String, notificationColor: String = null): Anon_NotificationBody = {
-    val __obj = js.Dynamic.literal(notificationBody = notificationBody, notificationTitle = notificationTitle)
-    if (notificationColor != null) __obj.updateDynamic("notificationColor")(notificationColor)
+    val __obj = js.Dynamic.literal(notificationBody = notificationBody.asInstanceOf[js.Any], notificationTitle = notificationTitle.asInstanceOf[js.Any])
+    if (notificationColor != null) __obj.updateDynamic("notificationColor")(notificationColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NotificationBody]
   }
 }

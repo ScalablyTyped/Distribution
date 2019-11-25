@@ -22,11 +22,11 @@ object DeveloperMetadata {
     visibility: String = null
   ): DeveloperMetadata = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (metadataId != null) __obj.updateDynamic("metadataId")(metadataId.asInstanceOf[js.Any])
-    if (metadataKey != null) __obj.updateDynamic("metadataKey")(metadataKey)
-    if (metadataValue != null) __obj.updateDynamic("metadataValue")(metadataValue)
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    if (metadataKey != null) __obj.updateDynamic("metadataKey")(metadataKey.asInstanceOf[js.Any])
+    if (metadataValue != null) __obj.updateDynamic("metadataValue")(metadataValue.asInstanceOf[js.Any])
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeveloperMetadata]
   }
 }

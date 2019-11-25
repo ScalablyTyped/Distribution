@@ -18,8 +18,8 @@ trait FileChangeEvent extends js.Object {
 object FileChangeEvent {
   @scala.inline
   def apply(`type`: FileChangeType, uri: Uri): FileChangeEvent = {
-    val __obj = js.Dynamic.literal(uri = uri)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileChangeEvent]
   }
 }

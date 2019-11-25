@@ -21,9 +21,9 @@ object AppConfigurationSettingItem {
     appConfigKeyValue: String = null
   ): AppConfigurationSettingItem = {
     val __obj = js.Dynamic.literal()
-    if (appConfigKey != null) __obj.updateDynamic("appConfigKey")(appConfigKey)
-    if (appConfigKeyType != null) __obj.updateDynamic("appConfigKeyType")(appConfigKeyType)
-    if (appConfigKeyValue != null) __obj.updateDynamic("appConfigKeyValue")(appConfigKeyValue)
+    if (appConfigKey != null) __obj.updateDynamic("appConfigKey")(appConfigKey.asInstanceOf[js.Any])
+    if (appConfigKeyType != null) __obj.updateDynamic("appConfigKeyType")(appConfigKeyType.asInstanceOf[js.Any])
+    if (appConfigKeyValue != null) __obj.updateDynamic("appConfigKeyValue")(appConfigKeyValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppConfigurationSettingItem]
   }
 }

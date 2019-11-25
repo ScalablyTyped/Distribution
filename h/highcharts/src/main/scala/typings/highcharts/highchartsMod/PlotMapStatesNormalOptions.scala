@@ -15,7 +15,7 @@ object PlotMapStatesNormalOptions {
   @scala.inline
   def apply(animation: js.UndefOr[Boolean] = js.undefined): PlotMapStatesNormalOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotMapStatesNormalOptions]
   }
 }

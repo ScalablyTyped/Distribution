@@ -124,7 +124,7 @@ object CourseWorkResource {
     patch: Anon_AccesstokenAltBearertokenCallback => Request[CourseWork],
     studentSubmissions: StudentSubmissionsResource
   ): CourseWorkResource = {
-    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), modifyAssignees = js.Any.fromFunction1(modifyAssignees), patch = js.Any.fromFunction1(patch), studentSubmissions = studentSubmissions)
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), modifyAssignees = js.Any.fromFunction1(modifyAssignees), patch = js.Any.fromFunction1(patch), studentSubmissions = studentSubmissions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CourseWorkResource]
   }

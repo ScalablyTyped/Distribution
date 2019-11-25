@@ -13,8 +13,8 @@ object ReporterOptions {
   @scala.inline
   def apply(output: String = null, suiteName: String = null): ReporterOptions = {
     val __obj = js.Dynamic.literal()
-    if (output != null) __obj.updateDynamic("output")(output)
-    if (suiteName != null) __obj.updateDynamic("suiteName")(suiteName)
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
+    if (suiteName != null) __obj.updateDynamic("suiteName")(suiteName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReporterOptions]
   }
 }

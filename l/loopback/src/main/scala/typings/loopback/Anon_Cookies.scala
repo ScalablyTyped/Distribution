@@ -28,14 +28,14 @@ object Anon_Cookies {
     searchDefaultTokenKeys: js.UndefOr[Boolean] = js.undefined
   ): Anon_Cookies = {
     val __obj = js.Dynamic.literal()
-    if (cookies != null) __obj.updateDynamic("cookies")(cookies)
-    if (currentUserLiteral != null) __obj.updateDynamic("currentUserLiteral")(currentUserLiteral)
-    if (!js.isUndefined(enableDoublecheck)) __obj.updateDynamic("enableDoublecheck")(enableDoublecheck)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (cookies != null) __obj.updateDynamic("cookies")(cookies.asInstanceOf[js.Any])
+    if (currentUserLiteral != null) __obj.updateDynamic("currentUserLiteral")(currentUserLiteral.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDoublecheck)) __obj.updateDynamic("enableDoublecheck")(enableDoublecheck.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(js.Any.fromFunction0(model))
-    if (!js.isUndefined(overwriteExistingToken)) __obj.updateDynamic("overwriteExistingToken")(overwriteExistingToken)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (!js.isUndefined(searchDefaultTokenKeys)) __obj.updateDynamic("searchDefaultTokenKeys")(searchDefaultTokenKeys)
+    if (!js.isUndefined(overwriteExistingToken)) __obj.updateDynamic("overwriteExistingToken")(overwriteExistingToken.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchDefaultTokenKeys)) __obj.updateDynamic("searchDefaultTokenKeys")(searchDefaultTokenKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cookies]
   }
 }

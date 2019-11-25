@@ -17,8 +17,8 @@ object Options {
     lookup: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(lookup)) __obj.updateDynamic("lookup")(lookup)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(lookup)) __obj.updateDynamic("lookup")(lookup.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

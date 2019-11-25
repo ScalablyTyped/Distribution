@@ -21,7 +21,7 @@ trait IItem extends js.Object {
 object IItem {
   @scala.inline
   def apply(raw: String, text: String): IItem = {
-    val __obj = js.Dynamic.literal(raw = raw, text = text)
+    val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IItem]
   }

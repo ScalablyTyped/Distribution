@@ -20,10 +20,10 @@ object MetadataHistory {
     timeProvided: String = null
   ): MetadataHistory = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (origination != null) __obj.updateDynamic("origination")(origination)
-    if (timeProvided != null) __obj.updateDynamic("timeProvided")(timeProvided)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (origination != null) __obj.updateDynamic("origination")(origination.asInstanceOf[js.Any])
+    if (timeProvided != null) __obj.updateDynamic("timeProvided")(timeProvided.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetadataHistory]
   }
 }

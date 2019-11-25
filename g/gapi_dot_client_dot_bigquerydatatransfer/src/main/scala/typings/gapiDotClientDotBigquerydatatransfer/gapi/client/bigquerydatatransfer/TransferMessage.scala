@@ -17,9 +17,9 @@ object TransferMessage {
   @scala.inline
   def apply(messageText: String = null, messageTime: String = null, severity: String = null): TransferMessage = {
     val __obj = js.Dynamic.literal()
-    if (messageText != null) __obj.updateDynamic("messageText")(messageText)
-    if (messageTime != null) __obj.updateDynamic("messageTime")(messageTime)
-    if (severity != null) __obj.updateDynamic("severity")(severity)
+    if (messageText != null) __obj.updateDynamic("messageText")(messageText.asInstanceOf[js.Any])
+    if (messageTime != null) __obj.updateDynamic("messageTime")(messageTime.asInstanceOf[js.Any])
+    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferMessage]
   }
 }

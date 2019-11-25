@@ -23,7 +23,7 @@ object Anon_Render {
     renderToken: js.Any,
     rules: Anon_Codeblock
   ): Anon_Render = {
-    val __obj = js.Dynamic.literal(render = render, renderAttrs = renderAttrs, renderInline = renderInline, renderInlineAsText = renderInlineAsText, renderToken = renderToken, rules = rules)
+    val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any], renderAttrs = renderAttrs.asInstanceOf[js.Any], renderInline = renderInline.asInstanceOf[js.Any], renderInlineAsText = renderInlineAsText.asInstanceOf[js.Any], renderToken = renderToken.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Render]
   }

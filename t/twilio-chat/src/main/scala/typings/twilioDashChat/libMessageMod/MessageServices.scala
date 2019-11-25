@@ -14,7 +14,7 @@ trait MessageServices extends js.Object {
 object MessageServices {
   @scala.inline
   def apply(mcsClient: McsClient, session: Session): MessageServices = {
-    val __obj = js.Dynamic.literal(mcsClient = mcsClient, session = session)
+    val __obj = js.Dynamic.literal(mcsClient = mcsClient.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MessageServices]
   }

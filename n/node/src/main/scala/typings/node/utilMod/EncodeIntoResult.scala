@@ -18,7 +18,7 @@ trait EncodeIntoResult extends js.Object {
 object EncodeIntoResult {
   @scala.inline
   def apply(read: Double, written: Double): EncodeIntoResult = {
-    val __obj = js.Dynamic.literal(read = read, written = written)
+    val __obj = js.Dynamic.literal(read = read.asInstanceOf[js.Any], written = written.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EncodeIntoResult]
   }

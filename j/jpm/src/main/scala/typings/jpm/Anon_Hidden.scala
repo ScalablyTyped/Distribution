@@ -27,8 +27,8 @@ object Anon_Hidden {
     onHide: /* toolbar */ Toolbar => _ = null,
     onShow: /* toolbar */ Toolbar => _ = null
   ): Anon_Hidden = {
-    val __obj = js.Dynamic.literal(items = items, title = title)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (onAttach != null) __obj.updateDynamic("onAttach")(js.Any.fromFunction1(onAttach))
     if (onDetach != null) __obj.updateDynamic("onDetach")(js.Any.fromFunction1(onDetach))
     if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction1(onHide))

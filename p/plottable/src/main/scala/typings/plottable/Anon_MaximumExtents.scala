@@ -17,7 +17,7 @@ object Anon_MaximumExtents {
     maximumExtents: Map[String | Double, StackExtent[D]],
     minimumExtents: Map[String | Double, StackExtent[D]]
   ): Anon_MaximumExtents[D] = {
-    val __obj = js.Dynamic.literal(maximumExtents = maximumExtents, minimumExtents = minimumExtents)
+    val __obj = js.Dynamic.literal(maximumExtents = maximumExtents.asInstanceOf[js.Any], minimumExtents = minimumExtents.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MaximumExtents[D]]
   }

@@ -17,8 +17,8 @@ trait FTGetFileList extends js.Object {
 object FTGetFileList {
   @scala.inline
   def apply(cid: Double, datetime: Double, name: String, path: String, size: Double, `type`: Double): FTGetFileList = {
-    val __obj = js.Dynamic.literal(cid = cid, datetime = datetime, name = name, path = path, size = size)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(cid = cid.asInstanceOf[js.Any], datetime = datetime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FTGetFileList]
   }
 }

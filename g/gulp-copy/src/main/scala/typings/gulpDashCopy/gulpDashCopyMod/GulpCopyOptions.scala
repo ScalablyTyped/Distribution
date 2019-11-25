@@ -14,7 +14,7 @@ trait GulpCopyOptions extends js.Object {
 object GulpCopyOptions {
   @scala.inline
   def apply(prefix: Double): GulpCopyOptions = {
-    val __obj = js.Dynamic.literal(prefix = prefix)
+    val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GulpCopyOptions]
   }

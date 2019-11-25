@@ -37,7 +37,7 @@ object Anon_ARMv6 {
     X86: X86,
     X86_64: X86_64
   ): Anon_ARMv6 = {
-    val __obj = js.Dynamic.literal(ARMv6 = ARMv6, ARMv7 = ARMv7, ARMv8 = ARMv8, MIPS = MIPS, MIPS_64 = MIPS_64, UNKNOWN = UNKNOWN, X86 = X86, X86_64 = X86_64)
+    val __obj = js.Dynamic.literal(ARMv6 = ARMv6.asInstanceOf[js.Any], ARMv7 = ARMv7.asInstanceOf[js.Any], ARMv8 = ARMv8.asInstanceOf[js.Any], MIPS = MIPS.asInstanceOf[js.Any], MIPS_64 = MIPS_64.asInstanceOf[js.Any], UNKNOWN = UNKNOWN.asInstanceOf[js.Any], X86 = X86.asInstanceOf[js.Any], X86_64 = X86_64.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ARMv6]
   }

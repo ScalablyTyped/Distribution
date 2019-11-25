@@ -14,7 +14,7 @@ trait NotificationItem extends js.Object {
 object NotificationItem {
   @scala.inline
   def apply(message: String, title: String): NotificationItem = {
-    val __obj = js.Dynamic.literal(message = message, title = title)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NotificationItem]
   }

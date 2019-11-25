@@ -13,7 +13,7 @@ trait Hints extends js.Object {
 object Hints {
   @scala.inline
   def apply(from: Position, list: js.Array[Hint | String], to: Position): Hints = {
-    val __obj = js.Dynamic.literal(from = from, list = list, to = to)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Hints]
   }

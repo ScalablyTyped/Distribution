@@ -20,8 +20,8 @@ object CommandLineOptions {
     _unknown: js.Array[String] = null
   ): CommandLineOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (_unknown != null) __obj.updateDynamic("_unknown")(_unknown)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (_unknown != null) __obj.updateDynamic("_unknown")(_unknown.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandLineOptions]
   }
 }

@@ -27,13 +27,13 @@ object ClientConfig {
     token: String = null
   ): ClientConfig = {
     val __obj = js.Dynamic.literal()
-    if (additionalHeaders != null) __obj.updateDynamic("additionalHeaders")(additionalHeaders)
-    if (consumerKey != null) __obj.updateDynamic("consumerKey")(consumerKey)
-    if (consumerSecret != null) __obj.updateDynamic("consumerSecret")(consumerSecret)
-    if (!js.isUndefined(sandbox)) __obj.updateDynamic("sandbox")(sandbox)
-    if (secret != null) __obj.updateDynamic("secret")(secret)
-    if (serviceHost != null) __obj.updateDynamic("serviceHost")(serviceHost)
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (additionalHeaders != null) __obj.updateDynamic("additionalHeaders")(additionalHeaders.asInstanceOf[js.Any])
+    if (consumerKey != null) __obj.updateDynamic("consumerKey")(consumerKey.asInstanceOf[js.Any])
+    if (consumerSecret != null) __obj.updateDynamic("consumerSecret")(consumerSecret.asInstanceOf[js.Any])
+    if (!js.isUndefined(sandbox)) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
+    if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
+    if (serviceHost != null) __obj.updateDynamic("serviceHost")(serviceHost.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientConfig]
   }
 }

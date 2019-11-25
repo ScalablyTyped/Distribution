@@ -26,13 +26,13 @@ object DeveloperMetadataLookup {
     visibility: String = null
   ): DeveloperMetadataLookup = {
     val __obj = js.Dynamic.literal()
-    if (locationMatchingStrategy != null) __obj.updateDynamic("locationMatchingStrategy")(locationMatchingStrategy)
-    if (locationType != null) __obj.updateDynamic("locationType")(locationType)
+    if (locationMatchingStrategy != null) __obj.updateDynamic("locationMatchingStrategy")(locationMatchingStrategy.asInstanceOf[js.Any])
+    if (locationType != null) __obj.updateDynamic("locationType")(locationType.asInstanceOf[js.Any])
     if (metadataId != null) __obj.updateDynamic("metadataId")(metadataId.asInstanceOf[js.Any])
-    if (metadataKey != null) __obj.updateDynamic("metadataKey")(metadataKey)
-    if (metadataLocation != null) __obj.updateDynamic("metadataLocation")(metadataLocation)
-    if (metadataValue != null) __obj.updateDynamic("metadataValue")(metadataValue)
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    if (metadataKey != null) __obj.updateDynamic("metadataKey")(metadataKey.asInstanceOf[js.Any])
+    if (metadataLocation != null) __obj.updateDynamic("metadataLocation")(metadataLocation.asInstanceOf[js.Any])
+    if (metadataValue != null) __obj.updateDynamic("metadataValue")(metadataValue.asInstanceOf[js.Any])
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeveloperMetadataLookup]
   }
 }

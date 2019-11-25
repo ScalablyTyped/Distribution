@@ -23,9 +23,9 @@ object FormatterOptions {
   ): FormatterOptions = {
     val __obj = js.Dynamic.literal()
     if (UTCOffset != null) __obj.updateDynamic("UTCOffset")(UTCOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (locales != null) __obj.updateDynamic("locales")(locales)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (locales != null) __obj.updateDynamic("locales")(locales.asInstanceOf[js.Any])
     if (transformCode != null) __obj.updateDynamic("transformCode")(js.Any.fromFunction1(transformCode))
     __obj.asInstanceOf[FormatterOptions]
   }

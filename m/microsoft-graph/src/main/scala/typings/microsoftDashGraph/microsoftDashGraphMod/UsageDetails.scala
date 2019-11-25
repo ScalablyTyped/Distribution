@@ -13,8 +13,8 @@ object UsageDetails {
   @scala.inline
   def apply(lastAccessedDateTime: String = null, lastModifiedDateTime: String = null): UsageDetails = {
     val __obj = js.Dynamic.literal()
-    if (lastAccessedDateTime != null) __obj.updateDynamic("lastAccessedDateTime")(lastAccessedDateTime)
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime)
+    if (lastAccessedDateTime != null) __obj.updateDynamic("lastAccessedDateTime")(lastAccessedDateTime.asInstanceOf[js.Any])
+    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsageDetails]
   }
 }

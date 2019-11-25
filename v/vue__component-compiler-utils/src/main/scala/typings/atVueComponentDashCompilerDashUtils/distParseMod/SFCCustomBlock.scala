@@ -26,9 +26,9 @@ object SFCCustomBlock {
     `type`: String,
     map: RawSourceMap = null
   ): SFCCustomBlock = {
-    val __obj = js.Dynamic.literal(attrs = attrs, content = content, end = end, start = start)
-    __obj.updateDynamic("type")(`type`)
-    if (map != null) __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     __obj.asInstanceOf[SFCCustomBlock]
   }
 }

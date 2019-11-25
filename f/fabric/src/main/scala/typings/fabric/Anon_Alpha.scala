@@ -15,8 +15,8 @@ object Anon_Alpha {
   def apply(alpha: Int | Double = null, color: String = null, mode: String = null): Anon_Alpha = {
     val __obj = js.Dynamic.literal()
     if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Alpha]
   }
 }

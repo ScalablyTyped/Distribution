@@ -18,7 +18,7 @@ object RequestLoggerConfiguration {
     logFunction: /* msg */ js.Any => Unit = null
   ): RequestLoggerConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(extendErrorObjects)) __obj.updateDynamic("extendErrorObjects")(extendErrorObjects)
+    if (!js.isUndefined(extendErrorObjects)) __obj.updateDynamic("extendErrorObjects")(extendErrorObjects.asInstanceOf[js.Any])
     if (jsonSpace != null) __obj.updateDynamic("jsonSpace")(jsonSpace.asInstanceOf[js.Any])
     if (logFunction != null) __obj.updateDynamic("logFunction")(js.Any.fromFunction1(logFunction))
     __obj.asInstanceOf[RequestLoggerConfiguration]

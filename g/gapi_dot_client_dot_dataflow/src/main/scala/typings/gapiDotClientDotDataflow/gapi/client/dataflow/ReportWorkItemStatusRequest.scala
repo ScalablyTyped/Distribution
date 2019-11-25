@@ -33,10 +33,10 @@ object ReportWorkItemStatusRequest {
     workerId: String = null
   ): ReportWorkItemStatusRequest = {
     val __obj = js.Dynamic.literal()
-    if (currentWorkerTime != null) __obj.updateDynamic("currentWorkerTime")(currentWorkerTime)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (workItemStatuses != null) __obj.updateDynamic("workItemStatuses")(workItemStatuses)
-    if (workerId != null) __obj.updateDynamic("workerId")(workerId)
+    if (currentWorkerTime != null) __obj.updateDynamic("currentWorkerTime")(currentWorkerTime.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (workItemStatuses != null) __obj.updateDynamic("workItemStatuses")(workItemStatuses.asInstanceOf[js.Any])
+    if (workerId != null) __obj.updateDynamic("workerId")(workerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportWorkItemStatusRequest]
   }
 }

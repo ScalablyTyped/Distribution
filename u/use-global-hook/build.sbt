@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "use-global-hook"
-version := "0.1-dt-20191023Z-f67771"
+version := "0.1-dt-20191023Z-b9b48a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

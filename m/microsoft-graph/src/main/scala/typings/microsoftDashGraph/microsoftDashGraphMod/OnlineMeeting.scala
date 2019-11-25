@@ -31,16 +31,16 @@ object OnlineMeeting {
     videoTeleconferenceId: String = null
   ): OnlineMeeting = {
     val __obj = js.Dynamic.literal()
-    if (audioConferencing != null) __obj.updateDynamic("audioConferencing")(audioConferencing)
-    if (chatInfo != null) __obj.updateDynamic("chatInfo")(chatInfo)
-    if (creationDateTime != null) __obj.updateDynamic("creationDateTime")(creationDateTime)
-    if (endDateTime != null) __obj.updateDynamic("endDateTime")(endDateTime)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (joinUrl != null) __obj.updateDynamic("joinUrl")(joinUrl)
-    if (participants != null) __obj.updateDynamic("participants")(participants)
-    if (startDateTime != null) __obj.updateDynamic("startDateTime")(startDateTime)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
-    if (videoTeleconferenceId != null) __obj.updateDynamic("videoTeleconferenceId")(videoTeleconferenceId)
+    if (audioConferencing != null) __obj.updateDynamic("audioConferencing")(audioConferencing.asInstanceOf[js.Any])
+    if (chatInfo != null) __obj.updateDynamic("chatInfo")(chatInfo.asInstanceOf[js.Any])
+    if (creationDateTime != null) __obj.updateDynamic("creationDateTime")(creationDateTime.asInstanceOf[js.Any])
+    if (endDateTime != null) __obj.updateDynamic("endDateTime")(endDateTime.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (joinUrl != null) __obj.updateDynamic("joinUrl")(joinUrl.asInstanceOf[js.Any])
+    if (participants != null) __obj.updateDynamic("participants")(participants.asInstanceOf[js.Any])
+    if (startDateTime != null) __obj.updateDynamic("startDateTime")(startDateTime.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (videoTeleconferenceId != null) __obj.updateDynamic("videoTeleconferenceId")(videoTeleconferenceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnlineMeeting]
   }
 }

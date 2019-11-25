@@ -22,7 +22,7 @@ trait ArrayChanges extends js.Object {
 object ArrayChanges {
   @scala.inline
   def apply(deleted: js.Array[_], inserted: js.Array[_], start: Double): ArrayChanges = {
-    val __obj = js.Dynamic.literal(deleted = deleted, inserted = inserted, start = start)
+    val __obj = js.Dynamic.literal(deleted = deleted.asInstanceOf[js.Any], inserted = inserted.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ArrayChanges]
   }

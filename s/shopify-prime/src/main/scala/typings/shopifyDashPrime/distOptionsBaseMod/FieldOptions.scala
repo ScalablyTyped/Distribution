@@ -15,7 +15,7 @@ object FieldOptions {
   @scala.inline
   def apply(fields: String = null): FieldOptions = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldOptions]
   }
 }

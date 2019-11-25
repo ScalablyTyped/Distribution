@@ -14,7 +14,7 @@ object WindowDraggable {
   @scala.inline
   def apply(axis: String = null, containment: js.Any | String = null, dragHandle: js.Any | String = null): WindowDraggable = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis)
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
     if (containment != null) __obj.updateDynamic("containment")(containment.asInstanceOf[js.Any])
     if (dragHandle != null) __obj.updateDynamic("dragHandle")(dragHandle.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowDraggable]

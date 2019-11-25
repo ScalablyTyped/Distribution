@@ -18,7 +18,7 @@ trait Anon_FromLineNumber extends js.Object {
 object Anon_FromLineNumber {
   @scala.inline
   def apply(fromLineNumber: Double, toLineNumber: Double): Anon_FromLineNumber = {
-    val __obj = js.Dynamic.literal(fromLineNumber = fromLineNumber, toLineNumber = toLineNumber)
+    val __obj = js.Dynamic.literal(fromLineNumber = fromLineNumber.asInstanceOf[js.Any], toLineNumber = toLineNumber.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FromLineNumber]
   }

@@ -40,19 +40,19 @@ object ioredisStrings {
   sealed trait all extends NodeRole
   
   @js.native
-  sealed trait count extends js.Object
+  sealed trait count_ extends js.Object
   
   @js.native
-  sealed trait group extends js.Object
+  sealed trait group_ extends js.Object
   
   @js.native
   sealed trait master extends NodeRole
   
   @js.native
-  sealed trait `match` extends js.Object
+  sealed trait match_ extends js.Object
   
   @js.native
-  sealed trait maxlen extends js.Object
+  sealed trait maxlen_ extends js.Object
   
   @js.native
   sealed trait slave extends NodeRole
@@ -83,15 +83,15 @@ object ioredisStrings {
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline
-  def count: count = "count".asInstanceOf[count]
+  def count_ : count_ = "count".asInstanceOf[count_]
   @scala.inline
-  def group: group = "group".asInstanceOf[group]
+  def group_ : group_ = "group".asInstanceOf[group_]
   @scala.inline
   def master: master = "master".asInstanceOf[master]
   @scala.inline
-  def `match`: `match` = "match".asInstanceOf[`match`]
+  def match_ : match_ = "match".asInstanceOf[match_]
   @scala.inline
-  def maxlen: maxlen = "maxlen".asInstanceOf[maxlen]
+  def maxlen_ : maxlen_ = "maxlen".asInstanceOf[maxlen_]
   @scala.inline
   def slave: slave = "slave".asInstanceOf[slave]
   @scala.inline

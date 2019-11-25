@@ -47,7 +47,7 @@ object Anon_Blue {
     if (green != null) __obj.updateDynamic("green")(green.asInstanceOf[js.Any])
     if (greyscale != null) __obj.updateDynamic("greyscale")(greyscale.asInstanceOf[js.Any])
     if (lighten != null) __obj.updateDynamic("lighten")(lighten.asInstanceOf[js.Any])
-    if (mix != null) __obj.updateDynamic("mix")(mix)
+    if (mix != null) __obj.updateDynamic("mix")(mix.asInstanceOf[js.Any])
     if (red != null) __obj.updateDynamic("red")(red.asInstanceOf[js.Any])
     if (saturate != null) __obj.updateDynamic("saturate")(saturate.asInstanceOf[js.Any])
     if (shade != null) __obj.updateDynamic("shade")(shade.asInstanceOf[js.Any])

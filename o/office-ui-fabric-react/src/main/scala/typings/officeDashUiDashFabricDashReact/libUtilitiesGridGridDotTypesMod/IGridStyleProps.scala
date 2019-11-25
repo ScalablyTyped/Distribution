@@ -15,7 +15,7 @@ trait IGridStyleProps extends js.Object {
 object IGridStyleProps {
   @scala.inline
   def apply(theme: ITheme): IGridStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IGridStyleProps]
   }

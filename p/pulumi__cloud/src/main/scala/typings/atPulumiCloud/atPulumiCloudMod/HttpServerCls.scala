@@ -1,6 +1,5 @@
 package typings.atPulumiCloud.atPulumiCloudMod
 
-import typings.atPulumiCloud.httpServerMod.HttpServer
 import typings.atPulumiCloud.httpServerMod.RequestListenerFactory
 import typings.atPulumiPulumi.outputMod.Output
 import typings.atPulumiPulumi.resourceMod.ResourceOptions
@@ -10,7 +9,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@pulumi/cloud", "HttpServer")
 @js.native
-class HttpServerCls protected () extends HttpServer {
+class HttpServerCls protected ()
+  extends typings.atPulumiCloud.httpServerMod.HttpServer {
   /**
     * @param createRequestListener Function that, when called, will produce the [[requestListener]]
     * function that will be called for each http request to the server.  The function will be

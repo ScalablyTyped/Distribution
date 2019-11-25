@@ -43,16 +43,16 @@ object IHttpRule {
     selector: String = null
   ): IHttpRule = {
     val __obj = js.Dynamic.literal()
-    if (additionalBindings != null) __obj.updateDynamic("additionalBindings")(additionalBindings)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (custom != null) __obj.updateDynamic("custom")(custom)
-    if (delete != null) __obj.updateDynamic("delete")(delete)
-    if (get != null) __obj.updateDynamic("get")(get)
-    if (patch != null) __obj.updateDynamic("patch")(patch)
-    if (post != null) __obj.updateDynamic("post")(post)
-    if (put != null) __obj.updateDynamic("put")(put)
-    if (responseBody != null) __obj.updateDynamic("responseBody")(responseBody)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
+    if (additionalBindings != null) __obj.updateDynamic("additionalBindings")(additionalBindings.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (delete != null) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
+    if (get != null) __obj.updateDynamic("get")(get.asInstanceOf[js.Any])
+    if (patch != null) __obj.updateDynamic("patch")(patch.asInstanceOf[js.Any])
+    if (post != null) __obj.updateDynamic("post")(post.asInstanceOf[js.Any])
+    if (put != null) __obj.updateDynamic("put")(put.asInstanceOf[js.Any])
+    if (responseBody != null) __obj.updateDynamic("responseBody")(responseBody.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHttpRule]
   }
 }

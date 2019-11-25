@@ -23,8 +23,8 @@ object ListReelMediaViewerFeedResponseRootObject {
     users: js.Array[ListReelMediaViewerFeedResponseUsersItem],
     next_max_id: String = null
   ): ListReelMediaViewerFeedResponseRootObject = {
-    val __obj = js.Dynamic.literal(status = status, total_viewer_count = total_viewer_count, updated_media = updated_media, user_count = user_count, users = users)
-    if (next_max_id != null) __obj.updateDynamic("next_max_id")(next_max_id)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], total_viewer_count = total_viewer_count.asInstanceOf[js.Any], updated_media = updated_media.asInstanceOf[js.Any], user_count = user_count.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
+    if (next_max_id != null) __obj.updateDynamic("next_max_id")(next_max_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseRootObject]
   }
 }

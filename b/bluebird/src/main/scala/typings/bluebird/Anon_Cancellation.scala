@@ -24,9 +24,9 @@ object Anon_Cancellation {
     warnings: Boolean | Anon_WForgottenReturn = null
   ): Anon_Cancellation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancellation)) __obj.updateDynamic("cancellation")(cancellation)
-    if (!js.isUndefined(longStackTraces)) __obj.updateDynamic("longStackTraces")(longStackTraces)
-    if (!js.isUndefined(monitoring)) __obj.updateDynamic("monitoring")(monitoring)
+    if (!js.isUndefined(cancellation)) __obj.updateDynamic("cancellation")(cancellation.asInstanceOf[js.Any])
+    if (!js.isUndefined(longStackTraces)) __obj.updateDynamic("longStackTraces")(longStackTraces.asInstanceOf[js.Any])
+    if (!js.isUndefined(monitoring)) __obj.updateDynamic("monitoring")(monitoring.asInstanceOf[js.Any])
     if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cancellation]
   }

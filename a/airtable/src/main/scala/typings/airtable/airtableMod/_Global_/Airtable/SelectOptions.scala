@@ -33,14 +33,14 @@ object SelectOptions {
   ): SelectOptions = {
     val __obj = js.Dynamic.literal()
     if (cellFormat != null) __obj.updateDynamic("cellFormat")(cellFormat.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (filterByFormula != null) __obj.updateDynamic("filterByFormula")(filterByFormula)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (filterByFormula != null) __obj.updateDynamic("filterByFormula")(filterByFormula.asInstanceOf[js.Any])
     if (maxRecords != null) __obj.updateDynamic("maxRecords")(maxRecords.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort)
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
-    if (userLocale != null) __obj.updateDynamic("userLocale")(userLocale)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
+    if (userLocale != null) __obj.updateDynamic("userLocale")(userLocale.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectOptions]
   }
 }

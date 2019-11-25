@@ -35,7 +35,7 @@ object Anon_AfterOptions {
     options: SyncWaterfallHook[Options, _, _],
     transform: SyncWaterfallHook[AnyObject, WebpackAssetsManifest, _]
   ): Anon_AfterOptions = {
-    val __obj = js.Dynamic.literal(afterOptions = afterOptions, apply = apply, customize = customize, done = done, options = options, transform = transform)
+    val __obj = js.Dynamic.literal(afterOptions = afterOptions.asInstanceOf[js.Any], apply = apply.asInstanceOf[js.Any], customize = customize.asInstanceOf[js.Any], done = done.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AfterOptions]
   }

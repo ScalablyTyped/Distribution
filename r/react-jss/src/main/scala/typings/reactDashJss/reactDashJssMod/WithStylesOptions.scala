@@ -31,16 +31,16 @@ object WithStylesOptions {
     theming: Theming[js.Object] = null
   ): WithStylesOptions = {
     val __obj = js.Dynamic.literal()
-    if (classNamePrefix != null) __obj.updateDynamic("classNamePrefix")(classNamePrefix)
-    if (element != null) __obj.updateDynamic("element")(element)
+    if (classNamePrefix != null) __obj.updateDynamic("classNamePrefix")(classNamePrefix.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (generateId != null) __obj.updateDynamic("generateId")(js.Any.fromFunction2(generateId))
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(injectTheme)) __obj.updateDynamic("injectTheme")(injectTheme)
-    if (jss != null) __obj.updateDynamic("jss")(jss)
-    if (!js.isUndefined(link)) __obj.updateDynamic("link")(link)
-    if (media != null) __obj.updateDynamic("media")(media)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (theming != null) __obj.updateDynamic("theming")(theming)
+    if (!js.isUndefined(injectTheme)) __obj.updateDynamic("injectTheme")(injectTheme.asInstanceOf[js.Any])
+    if (jss != null) __obj.updateDynamic("jss")(jss.asInstanceOf[js.Any])
+    if (!js.isUndefined(link)) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (theming != null) __obj.updateDynamic("theming")(theming.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithStylesOptions]
   }
 }

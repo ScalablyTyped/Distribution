@@ -21,10 +21,10 @@ object Options {
     params: Anon_FromUri = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

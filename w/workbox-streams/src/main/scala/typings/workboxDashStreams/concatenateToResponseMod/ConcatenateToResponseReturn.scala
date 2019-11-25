@@ -13,7 +13,7 @@ trait ConcatenateToResponseReturn extends js.Object {
 object ConcatenateToResponseReturn {
   @scala.inline
   def apply(done: js.Promise[Unit], response: Response): ConcatenateToResponseReturn = {
-    val __obj = js.Dynamic.literal(done = done, response = response)
+    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConcatenateToResponseReturn]
   }

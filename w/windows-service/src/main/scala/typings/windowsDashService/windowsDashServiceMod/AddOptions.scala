@@ -37,11 +37,11 @@ object AddOptions {
     programPath: String = null
   ): AddOptions = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (nodeArgs != null) __obj.updateDynamic("nodeArgs")(nodeArgs)
-    if (nodePath != null) __obj.updateDynamic("nodePath")(nodePath)
-    if (programArgs != null) __obj.updateDynamic("programArgs")(programArgs)
-    if (programPath != null) __obj.updateDynamic("programPath")(programPath)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (nodeArgs != null) __obj.updateDynamic("nodeArgs")(nodeArgs.asInstanceOf[js.Any])
+    if (nodePath != null) __obj.updateDynamic("nodePath")(nodePath.asInstanceOf[js.Any])
+    if (programArgs != null) __obj.updateDynamic("programArgs")(programArgs.asInstanceOf[js.Any])
+    if (programPath != null) __obj.updateDynamic("programPath")(programPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddOptions]
   }
 }

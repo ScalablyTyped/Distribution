@@ -23,9 +23,9 @@ object NotifyIfUpdatedOptions {
     event: Event = null,
     oldResponse: Response = null
   ): NotifyIfUpdatedOptions = {
-    val __obj = js.Dynamic.literal(cacheName = cacheName, newResponse = newResponse, url = url)
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (oldResponse != null) __obj.updateDynamic("oldResponse")(oldResponse)
+    val __obj = js.Dynamic.literal(cacheName = cacheName.asInstanceOf[js.Any], newResponse = newResponse.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (oldResponse != null) __obj.updateDynamic("oldResponse")(oldResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotifyIfUpdatedOptions]
   }
 }

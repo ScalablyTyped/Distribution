@@ -5,47 +5,47 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Typeofdatavisualization extends js.Object {
-  val Barcode: js.Any | TypeofClassBarcode
-  val BulletGraph: js.Any | TypeofClassBulletGraph
-  val Chart: js.Any | TypeofClassChart
-  val CircularGauge: js.Any | TypeofClassCircularGauge
-  val Diagram: js.Any | TypeofClassDiagram
-  val DigitalGauge: js.Any | TypeofClassDigitalGauge
-  val HeatMap: js.Any | TypeofClassHeatMap
-  val HeatMapLegend: js.Any | TypeofClassHeatMapLegend
-  val LinearGauge: js.Any | TypeofClassLinearGauge
-  val Map: js.Any | TypeofClassMap
-  val Overview: js.Any | TypeofClassOverview
-  val RangeNavigator: js.Any | TypeofClassRangeNavigator
-  val Sparkline: js.Any | TypeofClassSparklineElement
+  val Barcode: TypeofClassBarcode
+  val BulletGraph: TypeofClassBulletGraph
+  val Chart: TypeofClassChart
+  val CircularGauge: TypeofClassCircularGauge
+  val Diagram: TypeofClassDiagram
+  val DigitalGauge: TypeofClassDigitalGauge
+  val HeatMap: TypeofClassHeatMap
+  val HeatMapLegend: TypeofClassHeatMapLegend
+  val LinearGauge: TypeofClassLinearGauge
+  val Map: TypeofClassMap
+  val Overview: TypeofClassOverview
+  val RangeNavigator: TypeofClassRangeNavigator
+  val Sparkline: TypeofClassSparklineElement
   val Sunburst: js.Any
-  val SunburstChart: js.Any | TypeofClassSunburstChartElement
-  val SymbolPalette: js.Any | TypeofClassSymbolPalette
-  val TreeMap: js.Any | TypeofClassTreeMap
+  val SunburstChart: TypeofClassSunburstChartElement
+  val SymbolPalette: TypeofClassSymbolPalette
+  val TreeMap: TypeofClassTreeMap
 }
 
 object Typeofdatavisualization {
   @scala.inline
   def apply(
-    Barcode: js.Any,
-    BulletGraph: js.Any,
-    Chart: js.Any,
-    CircularGauge: js.Any,
-    Diagram: js.Any,
-    DigitalGauge: js.Any,
-    HeatMap: js.Any,
-    HeatMapLegend: js.Any,
-    LinearGauge: js.Any,
-    Map: js.Any,
-    Overview: js.Any,
-    RangeNavigator: js.Any,
-    Sparkline: js.Any,
+    Barcode: TypeofClassBarcode,
+    BulletGraph: TypeofClassBulletGraph,
+    Chart: TypeofClassChart,
+    CircularGauge: TypeofClassCircularGauge,
+    Diagram: TypeofClassDiagram,
+    DigitalGauge: TypeofClassDigitalGauge,
+    HeatMap: TypeofClassHeatMap,
+    HeatMapLegend: TypeofClassHeatMapLegend,
+    LinearGauge: TypeofClassLinearGauge,
+    Map: TypeofClassMap,
+    Overview: TypeofClassOverview,
+    RangeNavigator: TypeofClassRangeNavigator,
+    Sparkline: TypeofClassSparklineElement,
     Sunburst: js.Any,
-    SunburstChart: js.Any,
-    SymbolPalette: js.Any,
-    TreeMap: js.Any
+    SunburstChart: TypeofClassSunburstChartElement,
+    SymbolPalette: TypeofClassSymbolPalette,
+    TreeMap: TypeofClassTreeMap
   ): Typeofdatavisualization = {
-    val __obj = js.Dynamic.literal(Barcode = Barcode, BulletGraph = BulletGraph, Chart = Chart, CircularGauge = CircularGauge, Diagram = Diagram, DigitalGauge = DigitalGauge, HeatMap = HeatMap, HeatMapLegend = HeatMapLegend, LinearGauge = LinearGauge, Map = Map, Overview = Overview, RangeNavigator = RangeNavigator, Sparkline = Sparkline, Sunburst = Sunburst, SunburstChart = SunburstChart, SymbolPalette = SymbolPalette, TreeMap = TreeMap)
+    val __obj = js.Dynamic.literal(Barcode = Barcode.asInstanceOf[js.Any], BulletGraph = BulletGraph.asInstanceOf[js.Any], Chart = Chart.asInstanceOf[js.Any], CircularGauge = CircularGauge.asInstanceOf[js.Any], Diagram = Diagram.asInstanceOf[js.Any], DigitalGauge = DigitalGauge.asInstanceOf[js.Any], HeatMap = HeatMap.asInstanceOf[js.Any], HeatMapLegend = HeatMapLegend.asInstanceOf[js.Any], LinearGauge = LinearGauge.asInstanceOf[js.Any], Map = Map.asInstanceOf[js.Any], Overview = Overview.asInstanceOf[js.Any], RangeNavigator = RangeNavigator.asInstanceOf[js.Any], Sparkline = Sparkline.asInstanceOf[js.Any], Sunburst = Sunburst.asInstanceOf[js.Any], SunburstChart = SunburstChart.asInstanceOf[js.Any], SymbolPalette = SymbolPalette.asInstanceOf[js.Any], TreeMap = TreeMap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofdatavisualization]
   }

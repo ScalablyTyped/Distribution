@@ -11,7 +11,7 @@ trait WhereNowResponse extends js.Object {
 object WhereNowResponse {
   @scala.inline
   def apply(channels: js.Array[String]): WhereNowResponse = {
-    val __obj = js.Dynamic.literal(channels = channels)
+    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WhereNowResponse]
   }

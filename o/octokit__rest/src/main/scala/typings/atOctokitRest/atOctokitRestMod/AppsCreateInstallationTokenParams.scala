@@ -23,9 +23,9 @@ object AppsCreateInstallationTokenParams {
     permissions: AppsCreateInstallationTokenParamsPermissions = null,
     repository_ids: js.Array[Double] = null
   ): AppsCreateInstallationTokenParams = {
-    val __obj = js.Dynamic.literal(installation_id = installation_id)
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
-    if (repository_ids != null) __obj.updateDynamic("repository_ids")(repository_ids)
+    val __obj = js.Dynamic.literal(installation_id = installation_id.asInstanceOf[js.Any])
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
+    if (repository_ids != null) __obj.updateDynamic("repository_ids")(repository_ids.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppsCreateInstallationTokenParams]
   }
 }

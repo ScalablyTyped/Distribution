@@ -42,10 +42,10 @@ object WampyOptions {
     ws: js.Any = null
   ): WampyOptions = {
     val __obj = js.Dynamic.literal()
-    if (authid != null) __obj.updateDynamic("authid")(authid)
-    if (authmethods != null) __obj.updateDynamic("authmethods")(authmethods)
-    if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect)
-    if (helloCustomDetails != null) __obj.updateDynamic("helloCustomDetails")(helloCustomDetails)
+    if (authid != null) __obj.updateDynamic("authid")(authid.asInstanceOf[js.Any])
+    if (authmethods != null) __obj.updateDynamic("authmethods")(authmethods.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect.asInstanceOf[js.Any])
+    if (helloCustomDetails != null) __obj.updateDynamic("helloCustomDetails")(helloCustomDetails.asInstanceOf[js.Any])
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
     if (onChallenge != null) __obj.updateDynamic("onChallenge")(js.Any.fromFunction2(onChallenge))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
@@ -53,10 +53,10 @@ object WampyOptions {
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction0(onError))
     if (onReconnect != null) __obj.updateDynamic("onReconnect")(js.Any.fromFunction0(onReconnect))
     if (onReconnectSuccess != null) __obj.updateDynamic("onReconnectSuccess")(js.Any.fromFunction0(onReconnectSuccess))
-    if (realm != null) __obj.updateDynamic("realm")(realm)
+    if (realm != null) __obj.updateDynamic("realm")(realm.asInstanceOf[js.Any])
     if (reconnectInterval != null) __obj.updateDynamic("reconnectInterval")(reconnectInterval.asInstanceOf[js.Any])
-    if (serializer != null) __obj.updateDynamic("serializer")(serializer)
-    if (ws != null) __obj.updateDynamic("ws")(ws)
+    if (serializer != null) __obj.updateDynamic("serializer")(serializer.asInstanceOf[js.Any])
+    if (ws != null) __obj.updateDynamic("ws")(ws.asInstanceOf[js.Any])
     __obj.asInstanceOf[WampyOptions]
   }
 }

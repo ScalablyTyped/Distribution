@@ -17,9 +17,9 @@ object CalculatedColumn {
   @scala.inline
   def apply(format: String = null, formula: String = null, outputType: String = null): CalculatedColumn = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (formula != null) __obj.updateDynamic("formula")(formula)
-    if (outputType != null) __obj.updateDynamic("outputType")(outputType)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
+    if (outputType != null) __obj.updateDynamic("outputType")(outputType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalculatedColumn]
   }
 }

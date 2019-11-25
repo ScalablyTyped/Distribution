@@ -40,11 +40,11 @@ object ViewTemplate {
     properties: js.Any = null
   ): ViewTemplate = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (bindId != null) __obj.updateDynamic("bindId")(bindId)
-    if (childTemplates != null) __obj.updateDynamic("childTemplates")(childTemplates)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (bindId != null) __obj.updateDynamic("bindId")(bindId.asInstanceOf[js.Any])
+    if (childTemplates != null) __obj.updateDynamic("childTemplates")(childTemplates.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewTemplate]
   }
 }

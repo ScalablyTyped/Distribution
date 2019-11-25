@@ -30,15 +30,15 @@ object SortableOption {
     trigger: String = null
   ): SortableOption = {
     val __obj = js.Dynamic.literal()
-    if (dragCssClass != null) __obj.updateDynamic("dragCssClass")(dragCssClass)
+    if (dragCssClass != null) __obj.updateDynamic("dragCssClass")(dragCssClass.asInstanceOf[js.Any])
     if (finish != null) __obj.updateDynamic("finish")(js.Any.fromFunction1(finish))
-    if (mouseButton != null) __obj.updateDynamic("mouseButton")(mouseButton)
+    if (mouseButton != null) __obj.updateDynamic("mouseButton")(mouseButton.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(js.Any.fromFunction1(order))
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
-    if (sortingClass != null) __obj.updateDynamic("sortingClass")(sortingClass)
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    if (sortingClass != null) __obj.updateDynamic("sortingClass")(sortingClass.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortableOption]
   }
 }

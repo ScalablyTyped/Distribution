@@ -11,7 +11,7 @@ trait LazyComponentProps extends js.Object {
 object LazyComponentProps {
   @scala.inline
   def apply(scrollPosition: ScrollPosition): LazyComponentProps = {
-    val __obj = js.Dynamic.literal(scrollPosition = scrollPosition)
+    val __obj = js.Dynamic.literal(scrollPosition = scrollPosition.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LazyComponentProps]
   }

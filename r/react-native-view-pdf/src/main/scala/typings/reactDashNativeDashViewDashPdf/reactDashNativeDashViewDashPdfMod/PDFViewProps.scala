@@ -42,8 +42,8 @@ object PDFViewProps {
     textEncoding: `utf-8` | `utf-16` = null,
     urlProps: URLProps = null
   ): PDFViewProps = {
-    val __obj = js.Dynamic.literal(resource = resource)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (fadeInDuration != null) __obj.updateDynamic("fadeInDuration")(fadeInDuration.asInstanceOf[js.Any])
     if (fileFrom != null) __obj.updateDynamic("fileFrom")(fileFrom.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
@@ -52,7 +52,7 @@ object PDFViewProps {
     if (onScrolled != null) __obj.updateDynamic("onScrolled")(js.Any.fromFunction1(onScrolled))
     if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
     if (textEncoding != null) __obj.updateDynamic("textEncoding")(textEncoding.asInstanceOf[js.Any])
-    if (urlProps != null) __obj.updateDynamic("urlProps")(urlProps)
+    if (urlProps != null) __obj.updateDynamic("urlProps")(urlProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewProps]
   }
 }

@@ -84,18 +84,18 @@ object _WriteCampaignRequest {
   ): _WriteCampaignRequest = {
     val __obj = js.Dynamic.literal()
     if (AdditionalTreatments != null) __obj.updateDynamic("AdditionalTreatments")(AdditionalTreatments.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description)
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (HoldoutPercent != null) __obj.updateDynamic("HoldoutPercent")(HoldoutPercent.asInstanceOf[js.Any])
-    if (Hook != null) __obj.updateDynamic("Hook")(Hook)
-    if (!js.isUndefined(IsPaused)) __obj.updateDynamic("IsPaused")(IsPaused)
-    if (Limits != null) __obj.updateDynamic("Limits")(Limits)
-    if (MessageConfiguration != null) __obj.updateDynamic("MessageConfiguration")(MessageConfiguration)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule)
-    if (SegmentId != null) __obj.updateDynamic("SegmentId")(SegmentId)
+    if (Hook != null) __obj.updateDynamic("Hook")(Hook.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsPaused)) __obj.updateDynamic("IsPaused")(IsPaused.asInstanceOf[js.Any])
+    if (Limits != null) __obj.updateDynamic("Limits")(Limits.asInstanceOf[js.Any])
+    if (MessageConfiguration != null) __obj.updateDynamic("MessageConfiguration")(MessageConfiguration.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
+    if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule.asInstanceOf[js.Any])
+    if (SegmentId != null) __obj.updateDynamic("SegmentId")(SegmentId.asInstanceOf[js.Any])
     if (SegmentVersion != null) __obj.updateDynamic("SegmentVersion")(SegmentVersion.asInstanceOf[js.Any])
-    if (TreatmentDescription != null) __obj.updateDynamic("TreatmentDescription")(TreatmentDescription)
-    if (TreatmentName != null) __obj.updateDynamic("TreatmentName")(TreatmentName)
+    if (TreatmentDescription != null) __obj.updateDynamic("TreatmentDescription")(TreatmentDescription.asInstanceOf[js.Any])
+    if (TreatmentName != null) __obj.updateDynamic("TreatmentName")(TreatmentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[_WriteCampaignRequest]
   }
 }

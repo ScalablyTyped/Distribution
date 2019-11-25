@@ -13,7 +13,7 @@ trait Anon_DefaultComponents extends js.Object {
 object Anon_DefaultComponents {
   @scala.inline
   def apply(defaultComponents: Anon_Material, mappings: StringDictionary[js.Any]): Anon_DefaultComponents = {
-    val __obj = js.Dynamic.literal(defaultComponents = defaultComponents, mappings = mappings)
+    val __obj = js.Dynamic.literal(defaultComponents = defaultComponents.asInstanceOf[js.Any], mappings = mappings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DefaultComponents]
   }

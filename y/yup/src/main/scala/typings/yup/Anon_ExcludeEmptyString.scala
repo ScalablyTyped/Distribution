@@ -17,7 +17,7 @@ object Anon_ExcludeEmptyString {
     message: TestOptionsMessage[Anon_Regex, _] = null
   ): Anon_ExcludeEmptyString = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(excludeEmptyString)) __obj.updateDynamic("excludeEmptyString")(excludeEmptyString)
+    if (!js.isUndefined(excludeEmptyString)) __obj.updateDynamic("excludeEmptyString")(excludeEmptyString.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExcludeEmptyString]
   }

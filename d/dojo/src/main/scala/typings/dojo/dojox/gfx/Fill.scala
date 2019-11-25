@@ -27,8 +27,8 @@ trait Fill extends js.Object {
 object Fill {
   @scala.inline
   def apply(color: String, `type`: js.Object): Fill = {
-    val __obj = js.Dynamic.literal(color = color)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fill]
   }
 }

@@ -22,8 +22,8 @@ object Anon_CheckBoxHeight {
   @scala.inline
   def apply(checkBoxHeight: String = null, height: String = null): Anon_CheckBoxHeight = {
     val __obj = js.Dynamic.literal()
-    if (checkBoxHeight != null) __obj.updateDynamic("checkBoxHeight")(checkBoxHeight)
-    if (height != null) __obj.updateDynamic("height")(height)
+    if (checkBoxHeight != null) __obj.updateDynamic("checkBoxHeight")(checkBoxHeight.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CheckBoxHeight]
   }
 }

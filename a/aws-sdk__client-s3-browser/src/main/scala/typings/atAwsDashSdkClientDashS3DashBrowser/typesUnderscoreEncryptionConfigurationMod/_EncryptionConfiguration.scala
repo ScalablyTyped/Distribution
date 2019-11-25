@@ -15,7 +15,7 @@ object _EncryptionConfiguration {
   @scala.inline
   def apply(ReplicaKmsKeyID: String = null): _EncryptionConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (ReplicaKmsKeyID != null) __obj.updateDynamic("ReplicaKmsKeyID")(ReplicaKmsKeyID)
+    if (ReplicaKmsKeyID != null) __obj.updateDynamic("ReplicaKmsKeyID")(ReplicaKmsKeyID.asInstanceOf[js.Any])
     __obj.asInstanceOf[_EncryptionConfiguration]
   }
 }

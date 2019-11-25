@@ -46,7 +46,7 @@ object Debug {
     setDebug: (Boolean, Boolean, Double) => Debug,
     setDebugBodyColor: Double => Debug
   ): Debug = {
-    val __obj = js.Dynamic.literal(debugBodyColor = debugBodyColor, debugShowBody = debugShowBody, debugShowVelocity = debugShowVelocity, setDebug = js.Any.fromFunction3(setDebug), setDebugBodyColor = js.Any.fromFunction1(setDebugBodyColor))
+    val __obj = js.Dynamic.literal(debugBodyColor = debugBodyColor.asInstanceOf[js.Any], debugShowBody = debugShowBody.asInstanceOf[js.Any], debugShowVelocity = debugShowVelocity.asInstanceOf[js.Any], setDebug = js.Any.fromFunction3(setDebug), setDebugBodyColor = js.Any.fromFunction1(setDebugBodyColor))
   
     __obj.asInstanceOf[Debug]
   }

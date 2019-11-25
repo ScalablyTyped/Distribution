@@ -40,7 +40,7 @@ object AmqpConnectionManagerOptions {
     reconnectTimeInSeconds: Int | Double = null
   ): AmqpConnectionManagerOptions = {
     val __obj = js.Dynamic.literal()
-    if (connectionOptions != null) __obj.updateDynamic("connectionOptions")(connectionOptions)
+    if (connectionOptions != null) __obj.updateDynamic("connectionOptions")(connectionOptions.asInstanceOf[js.Any])
     if (findServers != null) __obj.updateDynamic("findServers")(findServers.asInstanceOf[js.Any])
     if (heartbeatIntervalInSeconds != null) __obj.updateDynamic("heartbeatIntervalInSeconds")(heartbeatIntervalInSeconds.asInstanceOf[js.Any])
     if (reconnectTimeInSeconds != null) __obj.updateDynamic("reconnectTimeInSeconds")(reconnectTimeInSeconds.asInstanceOf[js.Any])

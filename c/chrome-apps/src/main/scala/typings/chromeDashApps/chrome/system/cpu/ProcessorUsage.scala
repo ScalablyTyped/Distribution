@@ -19,7 +19,7 @@ trait ProcessorUsage extends js.Object {
 object ProcessorUsage {
   @scala.inline
   def apply(idle: double, kernel: double, total: double, user: double): ProcessorUsage = {
-    val __obj = js.Dynamic.literal(idle = idle, kernel = kernel, total = total, user = user)
+    val __obj = js.Dynamic.literal(idle = idle.asInstanceOf[js.Any], kernel = kernel.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProcessorUsage]
   }

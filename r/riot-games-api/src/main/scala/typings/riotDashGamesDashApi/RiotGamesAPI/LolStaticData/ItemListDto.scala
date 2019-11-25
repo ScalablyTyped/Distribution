@@ -24,8 +24,8 @@ object ItemListDto {
     `type`: String,
     version: String
   ): ItemListDto = {
-    val __obj = js.Dynamic.literal(basic = basic, data = data, groups = groups, tree = tree, version = version)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(basic = basic.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemListDto]
   }
 }

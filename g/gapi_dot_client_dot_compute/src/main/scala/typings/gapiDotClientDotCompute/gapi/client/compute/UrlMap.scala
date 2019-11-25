@@ -52,17 +52,17 @@ object UrlMap {
     tests: js.Array[UrlMapTest] = null
   ): UrlMap = {
     val __obj = js.Dynamic.literal()
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
-    if (defaultService != null) __obj.updateDynamic("defaultService")(defaultService)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
-    if (hostRules != null) __obj.updateDynamic("hostRules")(hostRules)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (pathMatchers != null) __obj.updateDynamic("pathMatchers")(pathMatchers)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (tests != null) __obj.updateDynamic("tests")(tests)
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
+    if (defaultService != null) __obj.updateDynamic("defaultService")(defaultService.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (hostRules != null) __obj.updateDynamic("hostRules")(hostRules.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (pathMatchers != null) __obj.updateDynamic("pathMatchers")(pathMatchers.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (tests != null) __obj.updateDynamic("tests")(tests.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlMap]
   }
 }

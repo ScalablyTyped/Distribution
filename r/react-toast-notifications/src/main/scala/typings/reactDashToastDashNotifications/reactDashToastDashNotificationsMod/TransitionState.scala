@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait TransitionState extends js.Object
 
+object TransitionState {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def entered: typings.reactDashToastDashNotifications.reactDashToastDashNotificationsStrings.entered = this.cast("entered")
+  @scala.inline
+  def entering: typings.reactDashToastDashNotifications.reactDashToastDashNotificationsStrings.entering = this.cast("entering")
+  @scala.inline
+  def exited: typings.reactDashToastDashNotifications.reactDashToastDashNotificationsStrings.exited = this.cast("exited")
+  @scala.inline
+  def exiting: typings.reactDashToastDashNotifications.reactDashToastDashNotificationsStrings.exiting = this.cast("exiting")
+}
+

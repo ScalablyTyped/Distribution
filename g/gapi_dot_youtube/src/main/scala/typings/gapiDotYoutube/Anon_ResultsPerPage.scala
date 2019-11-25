@@ -18,7 +18,7 @@ trait Anon_ResultsPerPage extends js.Object {
 object Anon_ResultsPerPage {
   @scala.inline
   def apply(resultsPerPage: Double, totalResults: Double): Anon_ResultsPerPage = {
-    val __obj = js.Dynamic.literal(resultsPerPage = resultsPerPage, totalResults = totalResults)
+    val __obj = js.Dynamic.literal(resultsPerPage = resultsPerPage.asInstanceOf[js.Any], totalResults = totalResults.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ResultsPerPage]
   }

@@ -16,9 +16,9 @@ object GetObjectsParameters {
   @scala.inline
   def apply(include: Anon_CustomFields = null, limit: Int | Double = null, page: Anon_Next = null): GetObjectsParameters = {
     val __obj = js.Dynamic.literal()
-    if (include != null) __obj.updateDynamic("include")(include)
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page)
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectsParameters]
   }
 }

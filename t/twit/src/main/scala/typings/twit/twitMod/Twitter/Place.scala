@@ -35,7 +35,7 @@ object Place {
     place_type: String,
     url: String
   ): Place = {
-    val __obj = js.Dynamic.literal(attributes = attributes, bounding_box = bounding_box, contained_within = contained_within, country = country, country_code = country_code, full_name = full_name, geometry = geometry, id = id, name = name, place_type = place_type, url = url)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], bounding_box = bounding_box.asInstanceOf[js.Any], contained_within = contained_within.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], country_code = country_code.asInstanceOf[js.Any], full_name = full_name.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], place_type = place_type.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Place]
   }

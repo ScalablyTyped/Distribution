@@ -49,10 +49,10 @@ object Anon_CalloutClassName {
     calloutRenderEdge: RectangleEdge = null,
     panelClassName: String = null
   ): Anon_CalloutClassName = {
-    val __obj = js.Dynamic.literal(hasError = hasError, hasLabel = hasLabel, isOpen = isOpen, isRenderingPlaceholder = isRenderingPlaceholder)
-    if (calloutClassName != null) __obj.updateDynamic("calloutClassName")(calloutClassName)
-    if (calloutRenderEdge != null) __obj.updateDynamic("calloutRenderEdge")(calloutRenderEdge)
-    if (panelClassName != null) __obj.updateDynamic("panelClassName")(panelClassName)
+    val __obj = js.Dynamic.literal(hasError = hasError.asInstanceOf[js.Any], hasLabel = hasLabel.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], isRenderingPlaceholder = isRenderingPlaceholder.asInstanceOf[js.Any])
+    if (calloutClassName != null) __obj.updateDynamic("calloutClassName")(calloutClassName.asInstanceOf[js.Any])
+    if (calloutRenderEdge != null) __obj.updateDynamic("calloutRenderEdge")(calloutRenderEdge.asInstanceOf[js.Any])
+    if (panelClassName != null) __obj.updateDynamic("panelClassName")(panelClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CalloutClassName]
   }
 }

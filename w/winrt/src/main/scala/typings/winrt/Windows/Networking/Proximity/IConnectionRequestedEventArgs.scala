@@ -11,7 +11,7 @@ trait IConnectionRequestedEventArgs extends js.Object {
 object IConnectionRequestedEventArgs {
   @scala.inline
   def apply(peerInformation: PeerInformation): IConnectionRequestedEventArgs = {
-    val __obj = js.Dynamic.literal(peerInformation = peerInformation)
+    val __obj = js.Dynamic.literal(peerInformation = peerInformation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IConnectionRequestedEventArgs]
   }

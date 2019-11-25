@@ -20,7 +20,10 @@ trait Additions[T] extends js.Object {
   def asObject[U /* <: js.Object */, K /* <: String */](
     toKeyValue: js.Function1[
       /* item */ T, 
-      js.Tuple2[K, /* import warning: ImportType.apply Failed type conversion: U[K] */ js.Any]
+      js.Tuple2[
+        K, 
+        /* import warning: importer.ImportType#apply Failed type conversion: U[K] */ js.Any
+      ]
     ]
   ): Immutable[U, js.Object] = js.native
   def flatMap[TTarget](mapFunction: js.Function1[/* item */ T, TTarget]): Immutable[js.Array[TTarget] | TTarget, js.Object] = js.native

@@ -28,11 +28,11 @@ object IColumnProperties {
     unique: `0` | `1` | Boolean = null
   ): IColumnProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(array)) __obj.updateDynamic("array")(array)
-    if (!js.isUndefined(auto_increment)) __obj.updateDynamic("auto_increment")(auto_increment)
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (!js.isUndefined(array)) __obj.updateDynamic("array")(array.asInstanceOf[js.Any])
+    if (!js.isUndefined(auto_increment)) __obj.updateDynamic("auto_increment")(auto_increment.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable)
+    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable.asInstanceOf[js.Any])
     if (primary_key != null) __obj.updateDynamic("primary_key")(primary_key.asInstanceOf[js.Any])
     if (unique != null) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnProperties]

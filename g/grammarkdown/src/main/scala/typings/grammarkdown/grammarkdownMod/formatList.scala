@@ -1,6 +1,5 @@
 package typings.grammarkdown.grammarkdownMod
 
-import typings.grammarkdown.distTokensMod.SyntaxKind
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("grammarkdown", "formatList")
 @js.native
 object formatList extends js.Object {
-  def apply(tokens: js.Array[SyntaxKind | String]): String = js.native
+  def apply(tokens: js.Array[typings.grammarkdown.distTokensMod.SyntaxKind | String]): String = js.native
 }
 

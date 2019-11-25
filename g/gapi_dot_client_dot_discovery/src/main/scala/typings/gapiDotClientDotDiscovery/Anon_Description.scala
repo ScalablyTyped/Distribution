@@ -48,18 +48,18 @@ object Anon_Description {
     version: String = null
   ): Anon_Description = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (discoveryLink != null) __obj.updateDynamic("discoveryLink")(discoveryLink)
-    if (discoveryRestUrl != null) __obj.updateDynamic("discoveryRestUrl")(discoveryRestUrl)
-    if (documentationLink != null) __obj.updateDynamic("documentationLink")(documentationLink)
-    if (icons != null) __obj.updateDynamic("icons")(icons)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(preferred)) __obj.updateDynamic("preferred")(preferred)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (discoveryLink != null) __obj.updateDynamic("discoveryLink")(discoveryLink.asInstanceOf[js.Any])
+    if (discoveryRestUrl != null) __obj.updateDynamic("discoveryRestUrl")(discoveryRestUrl.asInstanceOf[js.Any])
+    if (documentationLink != null) __obj.updateDynamic("documentationLink")(documentationLink.asInstanceOf[js.Any])
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferred)) __obj.updateDynamic("preferred")(preferred.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Description]
   }
 }

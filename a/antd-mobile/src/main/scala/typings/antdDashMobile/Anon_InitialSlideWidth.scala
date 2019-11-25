@@ -11,7 +11,7 @@ trait Anon_InitialSlideWidth extends js.Object {
 object Anon_InitialSlideWidth {
   @scala.inline
   def apply(initialSlideWidth: Double): Anon_InitialSlideWidth = {
-    val __obj = js.Dynamic.literal(initialSlideWidth = initialSlideWidth)
+    val __obj = js.Dynamic.literal(initialSlideWidth = initialSlideWidth.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_InitialSlideWidth]
   }

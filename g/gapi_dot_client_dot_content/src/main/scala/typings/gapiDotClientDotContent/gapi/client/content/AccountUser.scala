@@ -15,8 +15,8 @@ object AccountUser {
   @scala.inline
   def apply(admin: js.UndefOr[Boolean] = js.undefined, emailAddress: String = null): AccountUser = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(admin)) __obj.updateDynamic("admin")(admin)
-    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress)
+    if (!js.isUndefined(admin)) __obj.updateDynamic("admin")(admin.asInstanceOf[js.Any])
+    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountUser]
   }
 }

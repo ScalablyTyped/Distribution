@@ -24,12 +24,12 @@ object Anon_Host {
     password: String = null,
     userId: String = null
   ): Anon_Host = {
-    val __obj = js.Dynamic.literal(port = port)
-    __obj.updateDynamic("type")(`type`)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (ipaddress != null) __obj.updateDynamic("ipaddress")(ipaddress)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (ipaddress != null) __obj.updateDynamic("ipaddress")(ipaddress.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Host]
   }
 }

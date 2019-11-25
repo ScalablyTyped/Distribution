@@ -25,10 +25,10 @@ object Anon_ErrorModel {
     wait: js.UndefOr[Boolean] = js.undefined
   ): Anon_ErrorModel = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction3(error))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction3(success))
-    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait)
+    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ErrorModel]
   }
 }

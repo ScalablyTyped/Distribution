@@ -67,16 +67,16 @@ object GoogleActionsOrdersV3VerticalsReservationReservationItemExtension {
     userVisibleStatusLabel: String = null
   ): GoogleActionsOrdersV3VerticalsReservationReservationItemExtension = {
     val __obj = js.Dynamic.literal()
-    if (confirmationCode != null) __obj.updateDynamic("confirmationCode")(confirmationCode)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (confirmationCode != null) __obj.updateDynamic("confirmationCode")(confirmationCode.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (partySize != null) __obj.updateDynamic("partySize")(partySize.asInstanceOf[js.Any])
-    if (reservationTime != null) __obj.updateDynamic("reservationTime")(reservationTime)
-    if (staffFacilitators != null) __obj.updateDynamic("staffFacilitators")(staffFacilitators)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (userAcceptableTimeRange != null) __obj.updateDynamic("userAcceptableTimeRange")(userAcceptableTimeRange)
-    if (userVisibleStatusLabel != null) __obj.updateDynamic("userVisibleStatusLabel")(userVisibleStatusLabel)
+    if (reservationTime != null) __obj.updateDynamic("reservationTime")(reservationTime.asInstanceOf[js.Any])
+    if (staffFacilitators != null) __obj.updateDynamic("staffFacilitators")(staffFacilitators.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (userAcceptableTimeRange != null) __obj.updateDynamic("userAcceptableTimeRange")(userAcceptableTimeRange.asInstanceOf[js.Any])
+    if (userVisibleStatusLabel != null) __obj.updateDynamic("userVisibleStatusLabel")(userVisibleStatusLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsReservationReservationItemExtension]
   }
 }

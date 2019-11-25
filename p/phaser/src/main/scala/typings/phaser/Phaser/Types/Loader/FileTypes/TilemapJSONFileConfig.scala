@@ -27,10 +27,10 @@ trait TilemapJSONFileConfig extends js.Object {
 object TilemapJSONFileConfig {
   @scala.inline
   def apply(key: String, extension: String = null, url: String = null, xhrSettings: XHRSettingsObject = null): TilemapJSONFileConfig = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (xhrSettings != null) __obj.updateDynamic("xhrSettings")(xhrSettings)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (xhrSettings != null) __obj.updateDynamic("xhrSettings")(xhrSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[TilemapJSONFileConfig]
   }
 }

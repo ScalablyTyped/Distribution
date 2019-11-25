@@ -37,11 +37,11 @@ object StateChangingEventUIParam {
     owner: js.Any = null
   ): StateChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (button != null) __obj.updateDynamic("button")(button)
-    if (!js.isUndefined(oldPinned)) __obj.updateDynamic("oldPinned")(oldPinned)
-    if (oldState != null) __obj.updateDynamic("oldState")(oldState)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
+    if (!js.isUndefined(oldPinned)) __obj.updateDynamic("oldPinned")(oldPinned.asInstanceOf[js.Any])
+    if (oldState != null) __obj.updateDynamic("oldState")(oldState.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateChangingEventUIParam]
   }
 }

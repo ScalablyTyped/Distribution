@@ -51,8 +51,8 @@ object Settings {
     title: String,
     navTheme: MenuTheme = null
   ): Settings = {
-    val __obj = js.Dynamic.literal(autoHideHeader = autoHideHeader, contentWidth = contentWidth, fixSiderbar = fixSiderbar, fixedHeader = fixedHeader, iconfontUrl = iconfontUrl, layout = layout.asInstanceOf[js.Any], menu = menu, title = title)
-    if (navTheme != null) __obj.updateDynamic("navTheme")(navTheme)
+    val __obj = js.Dynamic.literal(autoHideHeader = autoHideHeader.asInstanceOf[js.Any], contentWidth = contentWidth.asInstanceOf[js.Any], fixSiderbar = fixSiderbar.asInstanceOf[js.Any], fixedHeader = fixedHeader.asInstanceOf[js.Any], iconfontUrl = iconfontUrl.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (navTheme != null) __obj.updateDynamic("navTheme")(navTheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

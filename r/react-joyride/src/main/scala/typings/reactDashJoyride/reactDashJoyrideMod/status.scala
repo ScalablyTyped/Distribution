@@ -24,10 +24,6 @@ trait status extends js.Object {
   var WAITING: waiting
 }
 
-@JSImport("react-joyride", "STATUS")
-@js.native
-object STATUS extends TopLevel[status]
-
 object status {
   @scala.inline
   def apply(
@@ -40,9 +36,13 @@ object status {
     SKIPPED: skipped,
     WAITING: waiting
   ): status = {
-    val __obj = js.Dynamic.literal(ERROR = ERROR, FINISHED = FINISHED, IDLE = IDLE, PAUSED = PAUSED, READY = READY, RUNNING = RUNNING, SKIPPED = SKIPPED, WAITING = WAITING)
+    val __obj = js.Dynamic.literal(ERROR = ERROR.asInstanceOf[js.Any], FINISHED = FINISHED.asInstanceOf[js.Any], IDLE = IDLE.asInstanceOf[js.Any], PAUSED = PAUSED.asInstanceOf[js.Any], READY = READY.asInstanceOf[js.Any], RUNNING = RUNNING.asInstanceOf[js.Any], SKIPPED = SKIPPED.asInstanceOf[js.Any], WAITING = WAITING.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[status]
   }
 }
+
+@JSImport("react-joyride", "STATUS")
+@js.native
+object STATUS extends TopLevel[status]
 

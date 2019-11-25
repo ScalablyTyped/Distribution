@@ -20,7 +20,7 @@ object FileCallback {
   ): FileCallback = {
     val __obj = js.Dynamic.literal(fn = js.Any.fromFunction2(fn))
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileCallback]
   }
 }

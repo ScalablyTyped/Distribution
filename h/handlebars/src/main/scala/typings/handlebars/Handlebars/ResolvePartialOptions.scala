@@ -23,11 +23,11 @@ object ResolvePartialOptions {
     helpers: StringDictionary[js.Function] = null,
     partials: StringDictionary[HandlebarsTemplateDelegate[_]] = null
   ): ResolvePartialOptions = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators)
-    if (helpers != null) __obj.updateDynamic("helpers")(helpers)
-    if (partials != null) __obj.updateDynamic("partials")(partials)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
+    if (helpers != null) __obj.updateDynamic("helpers")(helpers.asInstanceOf[js.Any])
+    if (partials != null) __obj.updateDynamic("partials")(partials.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvePartialOptions]
   }
 }

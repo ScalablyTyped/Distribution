@@ -24,9 +24,9 @@ object WriteRecord {
     children: StringDictionary[Node] = null,
     snap: Node = null
   ): WriteRecord = {
-    val __obj = js.Dynamic.literal(path = path, visible = visible, writeId = writeId)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (snap != null) __obj.updateDynamic("snap")(snap)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], writeId = writeId.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (snap != null) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteRecord]
   }
 }

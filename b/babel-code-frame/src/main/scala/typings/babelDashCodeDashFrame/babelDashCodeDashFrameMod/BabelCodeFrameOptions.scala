@@ -28,8 +28,8 @@ object BabelCodeFrameOptions {
     linesBelow: Int | Double = null
   ): BabelCodeFrameOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(forceColor)) __obj.updateDynamic("forceColor")(forceColor)
-    if (!js.isUndefined(highlightCode)) __obj.updateDynamic("highlightCode")(highlightCode)
+    if (!js.isUndefined(forceColor)) __obj.updateDynamic("forceColor")(forceColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightCode)) __obj.updateDynamic("highlightCode")(highlightCode.asInstanceOf[js.Any])
     if (linesAbove != null) __obj.updateDynamic("linesAbove")(linesAbove.asInstanceOf[js.Any])
     if (linesBelow != null) __obj.updateDynamic("linesBelow")(linesBelow.asInstanceOf[js.Any])
     __obj.asInstanceOf[BabelCodeFrameOptions]

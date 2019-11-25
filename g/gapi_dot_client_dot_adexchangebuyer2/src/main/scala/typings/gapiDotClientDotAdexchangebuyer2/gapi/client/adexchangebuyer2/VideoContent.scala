@@ -13,7 +13,7 @@ object VideoContent {
   @scala.inline
   def apply(videoUrl: String = null): VideoContent = {
     val __obj = js.Dynamic.literal()
-    if (videoUrl != null) __obj.updateDynamic("videoUrl")(videoUrl)
+    if (videoUrl != null) __obj.updateDynamic("videoUrl")(videoUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoContent]
   }
 }

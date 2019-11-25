@@ -40,8 +40,8 @@ object IVisualizationHyperCubeDef {
     qSuppressZero: Boolean,
     qCalcCond: IValueExpr = null
   ): IVisualizationHyperCubeDef = {
-    val __obj = js.Dynamic.literal(customErrorMessage = customErrorMessage, qAlwaysFullyExpanded = qAlwaysFullyExpanded, qDimensions = qDimensions, qIndentMode = qIndentMode, qInitialDataFetch = qInitialDataFetch, qInterColumnSortOrder = qInterColumnSortOrder, qLayoutExclude = qLayoutExclude, qMaxStackedCells = qMaxStackedCells, qMeasures = qMeasures, qMode = qMode, qNoOfLeftDims = qNoOfLeftDims, qPopulateMissing = qPopulateMissing, qPseudoDimPos = qPseudoDimPos, qReductionMode = qReductionMode, qShowTotalsAbove = qShowTotalsAbove, qSortbyYValue = qSortbyYValue, qStateName = qStateName, qSuppressMissing = qSuppressMissing, qSuppressZero = qSuppressZero)
-    if (qCalcCond != null) __obj.updateDynamic("qCalcCond")(qCalcCond)
+    val __obj = js.Dynamic.literal(customErrorMessage = customErrorMessage.asInstanceOf[js.Any], qAlwaysFullyExpanded = qAlwaysFullyExpanded.asInstanceOf[js.Any], qDimensions = qDimensions.asInstanceOf[js.Any], qIndentMode = qIndentMode.asInstanceOf[js.Any], qInitialDataFetch = qInitialDataFetch.asInstanceOf[js.Any], qInterColumnSortOrder = qInterColumnSortOrder.asInstanceOf[js.Any], qLayoutExclude = qLayoutExclude.asInstanceOf[js.Any], qMaxStackedCells = qMaxStackedCells.asInstanceOf[js.Any], qMeasures = qMeasures.asInstanceOf[js.Any], qMode = qMode.asInstanceOf[js.Any], qNoOfLeftDims = qNoOfLeftDims.asInstanceOf[js.Any], qPopulateMissing = qPopulateMissing.asInstanceOf[js.Any], qPseudoDimPos = qPseudoDimPos.asInstanceOf[js.Any], qReductionMode = qReductionMode.asInstanceOf[js.Any], qShowTotalsAbove = qShowTotalsAbove.asInstanceOf[js.Any], qSortbyYValue = qSortbyYValue.asInstanceOf[js.Any], qStateName = qStateName.asInstanceOf[js.Any], qSuppressMissing = qSuppressMissing.asInstanceOf[js.Any], qSuppressZero = qSuppressZero.asInstanceOf[js.Any])
+    if (qCalcCond != null) __obj.updateDynamic("qCalcCond")(qCalcCond.asInstanceOf[js.Any])
     __obj.asInstanceOf[IVisualizationHyperCubeDef]
   }
 }

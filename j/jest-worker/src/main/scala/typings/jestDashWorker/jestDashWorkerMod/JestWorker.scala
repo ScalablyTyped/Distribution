@@ -30,7 +30,7 @@ object JestWorker {
     getStderr: () => ReadableStream,
     getStdout: () => ReadableStream
   ): JestWorker = {
-    val __obj = js.Dynamic.literal(_bindExposedWorkerMethods = _bindExposedWorkerMethods, _callFunctionWithArgs = _callFunctionWithArgs, _ending = _ending, _farm = _farm, _options = _options, _workerPool = _workerPool, end = js.Any.fromFunction0(end), getStderr = js.Any.fromFunction0(getStderr), getStdout = js.Any.fromFunction0(getStdout))
+    val __obj = js.Dynamic.literal(_bindExposedWorkerMethods = _bindExposedWorkerMethods.asInstanceOf[js.Any], _callFunctionWithArgs = _callFunctionWithArgs.asInstanceOf[js.Any], _ending = _ending.asInstanceOf[js.Any], _farm = _farm.asInstanceOf[js.Any], _options = _options.asInstanceOf[js.Any], _workerPool = _workerPool.asInstanceOf[js.Any], end = js.Any.fromFunction0(end), getStderr = js.Any.fromFunction0(getStderr), getStdout = js.Any.fromFunction0(getStdout))
   
     __obj.asInstanceOf[JestWorker]
   }

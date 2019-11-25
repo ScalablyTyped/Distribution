@@ -14,7 +14,7 @@ object Anon_PixelRatio {
   def apply(pixelRatio: Int | Double = null, sdf: js.UndefOr[Boolean] = js.undefined): Anon_PixelRatio = {
     val __obj = js.Dynamic.literal()
     if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(sdf)) __obj.updateDynamic("sdf")(sdf)
+    if (!js.isUndefined(sdf)) __obj.updateDynamic("sdf")(sdf.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PixelRatio]
   }
 }

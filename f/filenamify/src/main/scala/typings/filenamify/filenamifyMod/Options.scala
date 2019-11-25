@@ -25,7 +25,7 @@ object Options {
   def apply(maxLength: Int | Double = null, replacement: String = null): Options = {
     val __obj = js.Dynamic.literal()
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (replacement != null) __obj.updateDynamic("replacement")(replacement)
+    if (replacement != null) __obj.updateDynamic("replacement")(replacement.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

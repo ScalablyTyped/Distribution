@@ -27,8 +27,8 @@ object Anon_AreaColorEmphasis {
   @scala.inline
   def apply(areaColor: Anon_BorderColorBorderType = null, emphasis: Anon_AreaColor = null): Anon_AreaColorEmphasis = {
     val __obj = js.Dynamic.literal()
-    if (areaColor != null) __obj.updateDynamic("areaColor")(areaColor)
-    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (areaColor != null) __obj.updateDynamic("areaColor")(areaColor.asInstanceOf[js.Any])
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AreaColorEmphasis]
   }
 }

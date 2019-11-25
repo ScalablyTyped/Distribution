@@ -12,7 +12,7 @@ trait Range extends js.Object {
 object Range {
   @scala.inline
   def apply(length: Double, start: Double): Range = {
-    val __obj = js.Dynamic.literal(length = length, start = start)
+    val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Range]
   }

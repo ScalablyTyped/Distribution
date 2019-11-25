@@ -37,14 +37,14 @@ object Options {
     resolutions: js.Array[Double] = null,
     serverType: WMSServerType | String = null
   ): Options = {
-    val __obj = js.Dynamic.literal(params = params, url = url)
+    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
-    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin)
-    if (!js.isUndefined(hidpi)) __obj.updateDynamic("hidpi")(hidpi)
+    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidpi)) __obj.updateDynamic("hidpi")(hidpi.asInstanceOf[js.Any])
     if (imageLoadFunction != null) __obj.updateDynamic("imageLoadFunction")(js.Any.fromFunction2(imageLoadFunction))
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
-    if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions)
+    if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions.asInstanceOf[js.Any])
     if (serverType != null) __obj.updateDynamic("serverType")(serverType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

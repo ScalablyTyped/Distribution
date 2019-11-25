@@ -13,8 +13,8 @@ trait UrlMatchResult extends js.Object {
 object UrlMatchResult {
   @scala.inline
   def apply(consumed: js.Array[UrlSegment], posParams: StringDictionary[UrlSegment] = null): UrlMatchResult = {
-    val __obj = js.Dynamic.literal(consumed = consumed)
-    if (posParams != null) __obj.updateDynamic("posParams")(posParams)
+    val __obj = js.Dynamic.literal(consumed = consumed.asInstanceOf[js.Any])
+    if (posParams != null) __obj.updateDynamic("posParams")(posParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlMatchResult]
   }
 }

@@ -24,8 +24,8 @@ trait INxSimpleValue extends js.Object {
 object INxSimpleValue {
   @scala.inline
   def apply(qNum: Double, qText: String = null): INxSimpleValue = {
-    val __obj = js.Dynamic.literal(qNum = qNum)
-    if (qText != null) __obj.updateDynamic("qText")(qText)
+    val __obj = js.Dynamic.literal(qNum = qNum.asInstanceOf[js.Any])
+    if (qText != null) __obj.updateDynamic("qText")(qText.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxSimpleValue]
   }
 }

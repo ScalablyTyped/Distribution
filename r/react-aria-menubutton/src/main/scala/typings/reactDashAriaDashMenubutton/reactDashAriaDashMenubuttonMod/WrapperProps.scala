@@ -37,7 +37,7 @@ trait WrapperProps[T /* <: HTMLElement */]
   	 */
   var onSelection: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ SyntheticEvent[T, Event], _]] = js.undefined
   var tag: js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any
   ] = js.undefined
 }
 
@@ -51,17 +51,17 @@ object WrapperProps {
     isOpen: js.UndefOr[Boolean] = js.undefined,
     onMenuToggle: /* obj */ WrapperState => _ = null,
     onSelection: (/* value */ js.Any, /* event */ SyntheticEvent[T, Event]) => _ = null,
-    tag: /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.Any = null
+    tag: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any = null
   ): WrapperProps[T] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(closeOnBlur)) __obj.updateDynamic("closeOnBlur")(closeOnBlur)
-    if (!js.isUndefined(closeOnSelection)) __obj.updateDynamic("closeOnSelection")(closeOnSelection)
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (!js.isUndefined(closeOnBlur)) __obj.updateDynamic("closeOnBlur")(closeOnBlur.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnSelection)) __obj.updateDynamic("closeOnSelection")(closeOnSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
     if (onMenuToggle != null) __obj.updateDynamic("onMenuToggle")(js.Any.fromFunction1(onMenuToggle))
     if (onSelection != null) __obj.updateDynamic("onSelection")(js.Any.fromFunction2(onSelection))
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[WrapperProps[T]]
   }
 }

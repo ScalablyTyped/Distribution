@@ -32,11 +32,11 @@ object CFormatOptions {
     range: String = null
   ): CFormatOptions = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor)
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range)
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[CFormatOptions]
   }
 }

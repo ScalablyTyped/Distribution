@@ -20,10 +20,10 @@ object SaveAndValidateOptions {
     stopOnFirstError: js.UndefOr[Boolean] = js.undefined
   ): SaveAndValidateOptions[K] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cast)) __obj.updateDynamic("cast")(cast)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (!js.isUndefined(simulation)) __obj.updateDynamic("simulation")(simulation)
-    if (!js.isUndefined(stopOnFirstError)) __obj.updateDynamic("stopOnFirstError")(stopOnFirstError)
+    if (!js.isUndefined(cast)) __obj.updateDynamic("cast")(cast.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(simulation)) __obj.updateDynamic("simulation")(simulation.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopOnFirstError)) __obj.updateDynamic("stopOnFirstError")(stopOnFirstError.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveAndValidateOptions[K]]
   }
 }

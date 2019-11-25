@@ -35,7 +35,7 @@ trait ContentTypeMap_ extends js.Object {
 object ContentTypeMap_ {
   @scala.inline
   def apply(add: (String, String) => Unit, getHandlerClass: String => js.Any, map: js.Object): ContentTypeMap_ = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), getHandlerClass = js.Any.fromFunction1(getHandlerClass), map = map)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), getHandlerClass = js.Any.fromFunction1(getHandlerClass), map = map.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContentTypeMap_]
   }

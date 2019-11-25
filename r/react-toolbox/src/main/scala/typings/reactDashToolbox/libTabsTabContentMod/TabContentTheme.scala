@@ -19,8 +19,8 @@ object TabContentTheme {
   @scala.inline
   def apply(active: String = null, tab: String = null): TabContentTheme = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active)
-    if (tab != null) __obj.updateDynamic("tab")(tab)
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (tab != null) __obj.updateDynamic("tab")(tab.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabContentTheme]
   }
 }

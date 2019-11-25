@@ -18,8 +18,8 @@ object Anon_Additionalbackgroundsalignment {
     additional_backgrounds_tiling: js.Array[_ThemeTypeAdditionalBackgroundsTiling] = null
   ): Anon_Additionalbackgroundsalignment = {
     val __obj = js.Dynamic.literal()
-    if (additional_backgrounds_alignment != null) __obj.updateDynamic("additional_backgrounds_alignment")(additional_backgrounds_alignment)
-    if (additional_backgrounds_tiling != null) __obj.updateDynamic("additional_backgrounds_tiling")(additional_backgrounds_tiling)
+    if (additional_backgrounds_alignment != null) __obj.updateDynamic("additional_backgrounds_alignment")(additional_backgrounds_alignment.asInstanceOf[js.Any])
+    if (additional_backgrounds_tiling != null) __obj.updateDynamic("additional_backgrounds_tiling")(additional_backgrounds_tiling.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Additionalbackgroundsalignment]
   }
 }

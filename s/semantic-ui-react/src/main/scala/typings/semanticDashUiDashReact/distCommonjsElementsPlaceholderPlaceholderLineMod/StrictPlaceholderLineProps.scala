@@ -27,8 +27,8 @@ object StrictPlaceholderLineProps {
     length: full | (`very long`) | long | medium | short | (`very short`) = null
   ): StrictPlaceholderLineProps = {
     val __obj = js.Dynamic.literal()
-    if (as != null) __obj.updateDynamic("as")(as)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictPlaceholderLineProps]
   }

@@ -12,7 +12,7 @@ trait ModuleWithComponentFactories extends js.Object {
 object ModuleWithComponentFactories {
   @scala.inline
   def apply(componentFactories: js.Array[js.Object], ngModuleFactory: js.Object): ModuleWithComponentFactories = {
-    val __obj = js.Dynamic.literal(componentFactories = componentFactories, ngModuleFactory = ngModuleFactory)
+    val __obj = js.Dynamic.literal(componentFactories = componentFactories.asInstanceOf[js.Any], ngModuleFactory = ngModuleFactory.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ModuleWithComponentFactories]
   }

@@ -16,12 +16,24 @@ object combine extends js.Object {
     Observable[_, _]
   ] */](obss: T): Stream[
     js.Tuple6[
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[1] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[2] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[3] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[4] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[5] */ js.Any]
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any
+      ]
     ], 
     _
   ] = js.native

@@ -24,10 +24,10 @@ object FaceCtorOptions {
     port: Int | Double = null
   ): FaceCtorOptions = {
     val __obj = js.Dynamic.literal()
-    if (connectionInfo != null) __obj.updateDynamic("connectionInfo")(connectionInfo)
+    if (connectionInfo != null) __obj.updateDynamic("connectionInfo")(connectionInfo.asInstanceOf[js.Any])
     if (getConnectionInfo != null) __obj.updateDynamic("getConnectionInfo")(js.Any.fromFunction0(getConnectionInfo))
     if (getTransport != null) __obj.updateDynamic("getTransport")(js.Any.fromFunction0(getTransport))
-    if (host != null) __obj.updateDynamic("host")(host)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[FaceCtorOptions]
   }

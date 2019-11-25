@@ -37,8 +37,8 @@ object FlipsnapOptions {
     transitionDuration: Int | Double = null
   ): FlipsnapOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disable3d)) __obj.updateDynamic("disable3d")(disable3d)
-    if (!js.isUndefined(disableTouch)) __obj.updateDynamic("disableTouch")(disableTouch)
+    if (!js.isUndefined(disable3d)) __obj.updateDynamic("disable3d")(disable3d.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableTouch)) __obj.updateDynamic("disableTouch")(disableTouch.asInstanceOf[js.Any])
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (maxPoint != null) __obj.updateDynamic("maxPoint")(maxPoint.asInstanceOf[js.Any])
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])

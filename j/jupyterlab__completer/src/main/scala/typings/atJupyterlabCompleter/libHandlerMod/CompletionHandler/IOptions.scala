@@ -28,7 +28,7 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(completer: Completer, connector: IDataConnector[IReply, Unit, IRequest]): IOptions = {
-    val __obj = js.Dynamic.literal(completer = completer, connector = connector)
+    val __obj = js.Dynamic.literal(completer = completer.asInstanceOf[js.Any], connector = connector.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOptions]
   }

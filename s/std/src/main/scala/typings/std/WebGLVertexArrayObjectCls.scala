@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("WebGLVertexArrayObject")
 @js.native
-class WebGLVertexArrayObjectCls () extends WebGLVertexArrayObject
+class WebGLVertexArrayObjectCls () extends WebGLObject
 

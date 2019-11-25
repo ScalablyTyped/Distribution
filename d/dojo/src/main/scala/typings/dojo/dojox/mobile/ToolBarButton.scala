@@ -1,8 +1,6 @@
 package typings.dojo.dojox.mobile
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dojoStrings.arrow
 import typings.dojo.dojoStrings.defaultColor
 import typings.dojo.dojoStrings.light
@@ -87,12 +85,44 @@ class ToolBarButton () extends _ItemBase {
   @JSName("set")
   def set_selColor(property: selColor, value: String): Unit = js.native
   @JSName("watch")
-  def watch_arrow(property: arrow, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_arrow(
+    property: arrow,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_defaultColor(property: defaultColor, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_defaultColor(
+    property: defaultColor,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_light(property: light, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_light(
+    property: light,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_selColor(property: selColor, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_selColor(
+    property: selColor,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

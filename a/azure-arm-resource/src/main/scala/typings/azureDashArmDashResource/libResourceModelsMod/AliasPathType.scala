@@ -19,8 +19,8 @@ object AliasPathType {
   @scala.inline
   def apply(apiVersions: js.Array[String] = null, path: String = null): AliasPathType = {
     val __obj = js.Dynamic.literal()
-    if (apiVersions != null) __obj.updateDynamic("apiVersions")(apiVersions)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (apiVersions != null) __obj.updateDynamic("apiVersions")(apiVersions.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[AliasPathType]
   }
 }

@@ -18,7 +18,7 @@ trait Anon_Bottom extends js.Object {
 object Anon_Bottom {
   @scala.inline
   def apply(bottom: String, top: String): Anon_Bottom = {
-    val __obj = js.Dynamic.literal(bottom = bottom, top = top)
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Bottom]
   }

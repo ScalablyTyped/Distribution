@@ -20,8 +20,8 @@ object TypeScriptConfiguration {
   @scala.inline
   def apply(types: String = null, typings_ : String = null): TypeScriptConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (types != null) __obj.updateDynamic("types")(types)
-    if (typings_ != null) __obj.updateDynamic("typings")(typings_)
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
+    if (typings_ != null) __obj.updateDynamic("typings")(typings_.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeScriptConfiguration]
   }
 }

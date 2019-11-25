@@ -12,7 +12,7 @@ trait Anon_Reference extends js.Object {
 object Anon_Reference {
   @scala.inline
   def apply(Reference: Reference): Anon_Reference = {
-    val __obj = js.Dynamic.literal(Reference = Reference)
+    val __obj = js.Dynamic.literal(Reference = Reference.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Reference]
   }

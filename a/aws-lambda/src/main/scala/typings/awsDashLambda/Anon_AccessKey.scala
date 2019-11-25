@@ -39,20 +39,20 @@ object Anon_AccessKey {
     userAgent: String = null,
     userArn: String = null
   ): Anon_AccessKey = {
-    val __obj = js.Dynamic.literal(sourceIp = sourceIp)
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey)
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
-    if (apiKeyId != null) __obj.updateDynamic("apiKeyId")(apiKeyId)
-    if (caller != null) __obj.updateDynamic("caller")(caller)
-    if (cognitoAuthenticationProvider != null) __obj.updateDynamic("cognitoAuthenticationProvider")(cognitoAuthenticationProvider)
-    if (cognitoAuthenticationType != null) __obj.updateDynamic("cognitoAuthenticationType")(cognitoAuthenticationType)
-    if (cognitoIdentityId != null) __obj.updateDynamic("cognitoIdentityId")(cognitoIdentityId)
-    if (cognitoIdentityPoolId != null) __obj.updateDynamic("cognitoIdentityPoolId")(cognitoIdentityPoolId)
-    if (principalOrgId != null) __obj.updateDynamic("principalOrgId")(principalOrgId)
-    if (user != null) __obj.updateDynamic("user")(user)
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
-    if (userArn != null) __obj.updateDynamic("userArn")(userArn)
+    val __obj = js.Dynamic.literal(sourceIp = sourceIp.asInstanceOf[js.Any])
+    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
+    if (apiKeyId != null) __obj.updateDynamic("apiKeyId")(apiKeyId.asInstanceOf[js.Any])
+    if (caller != null) __obj.updateDynamic("caller")(caller.asInstanceOf[js.Any])
+    if (cognitoAuthenticationProvider != null) __obj.updateDynamic("cognitoAuthenticationProvider")(cognitoAuthenticationProvider.asInstanceOf[js.Any])
+    if (cognitoAuthenticationType != null) __obj.updateDynamic("cognitoAuthenticationType")(cognitoAuthenticationType.asInstanceOf[js.Any])
+    if (cognitoIdentityId != null) __obj.updateDynamic("cognitoIdentityId")(cognitoIdentityId.asInstanceOf[js.Any])
+    if (cognitoIdentityPoolId != null) __obj.updateDynamic("cognitoIdentityPoolId")(cognitoIdentityPoolId.asInstanceOf[js.Any])
+    if (principalOrgId != null) __obj.updateDynamic("principalOrgId")(principalOrgId.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
+    if (userArn != null) __obj.updateDynamic("userArn")(userArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AccessKey]
   }
 }

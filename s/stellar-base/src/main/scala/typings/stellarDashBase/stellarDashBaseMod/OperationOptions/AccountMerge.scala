@@ -11,8 +11,8 @@ trait AccountMerge extends BaseOptions {
 object AccountMerge {
   @scala.inline
   def apply(destination: String, source: String = null): AccountMerge = {
-    val __obj = js.Dynamic.literal(destination = destination)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountMerge]
   }
 }

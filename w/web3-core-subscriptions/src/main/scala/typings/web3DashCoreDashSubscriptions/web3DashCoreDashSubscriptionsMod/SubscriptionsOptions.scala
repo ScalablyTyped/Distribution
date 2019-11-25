@@ -13,8 +13,8 @@ trait SubscriptionsOptions extends js.Object {
 object SubscriptionsOptions {
   @scala.inline
   def apply(name: String, subscriptions: SubscriptionsModel, `type`: String): SubscriptionsOptions = {
-    val __obj = js.Dynamic.literal(name = name, subscriptions = subscriptions)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionsOptions]
   }
 }

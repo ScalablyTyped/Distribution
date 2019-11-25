@@ -14,7 +14,7 @@ trait Props extends js.Object {
 object Props {
   @scala.inline
   def apply(addonSelected: String, onPressAddon: String => Unit, panels: Collection): Props = {
-    val __obj = js.Dynamic.literal(addonSelected = addonSelected, onPressAddon = js.Any.fromFunction1(onPressAddon), panels = panels)
+    val __obj = js.Dynamic.literal(addonSelected = addonSelected.asInstanceOf[js.Any], onPressAddon = js.Any.fromFunction1(onPressAddon), panels = panels.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Props]
   }

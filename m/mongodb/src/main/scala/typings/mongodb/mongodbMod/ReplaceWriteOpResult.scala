@@ -21,7 +21,7 @@ object ReplaceWriteOpResult {
     upsertedCount: scala.Double,
     upsertedId: Anon_IdObjectId
   ): ReplaceWriteOpResult = {
-    val __obj = js.Dynamic.literal(connection = connection, matchedCount = matchedCount, modifiedCount = modifiedCount, ops = ops, result = result, upsertedCount = upsertedCount, upsertedId = upsertedId)
+    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], matchedCount = matchedCount.asInstanceOf[js.Any], modifiedCount = modifiedCount.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], upsertedCount = upsertedCount.asInstanceOf[js.Any], upsertedId = upsertedId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReplaceWriteOpResult]
   }

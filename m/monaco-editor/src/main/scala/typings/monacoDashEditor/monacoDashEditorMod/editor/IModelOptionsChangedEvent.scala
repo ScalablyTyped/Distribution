@@ -14,7 +14,7 @@ trait IModelOptionsChangedEvent extends js.Object {
 object IModelOptionsChangedEvent {
   @scala.inline
   def apply(indentSize: Boolean, insertSpaces: Boolean, tabSize: Boolean, trimAutoWhitespace: Boolean): IModelOptionsChangedEvent = {
-    val __obj = js.Dynamic.literal(indentSize = indentSize, insertSpaces = insertSpaces, tabSize = tabSize, trimAutoWhitespace = trimAutoWhitespace)
+    val __obj = js.Dynamic.literal(indentSize = indentSize.asInstanceOf[js.Any], insertSpaces = insertSpaces.asInstanceOf[js.Any], tabSize = tabSize.asInstanceOf[js.Any], trimAutoWhitespace = trimAutoWhitespace.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IModelOptionsChangedEvent]
   }

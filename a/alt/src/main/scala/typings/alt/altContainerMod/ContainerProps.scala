@@ -35,14 +35,14 @@ object ContainerProps {
     transform: (/* store */ AltStore[_], /* actions */ js.Any) => _ = null
   ): ContainerProps = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (component != null) __obj.updateDynamic("component")(component)
-    if (flux != null) __obj.updateDynamic("flux")(flux)
-    if (inject != null) __obj.updateDynamic("inject")(inject)
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (flux != null) __obj.updateDynamic("flux")(flux.asInstanceOf[js.Any])
+    if (inject != null) __obj.updateDynamic("inject")(inject.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (shouldComponentUpdate != null) __obj.updateDynamic("shouldComponentUpdate")(js.Any.fromFunction1(shouldComponentUpdate))
-    if (store != null) __obj.updateDynamic("store")(store)
-    if (stores != null) __obj.updateDynamic("stores")(stores)
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
+    if (stores != null) __obj.updateDynamic("stores")(stores.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction2(transform))
     __obj.asInstanceOf[ContainerProps]
   }

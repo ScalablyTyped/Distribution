@@ -32,8 +32,8 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRoad)) __obj.updateDynamic("showRoad")(showRoad)
-    if (!js.isUndefined(showTraffic)) __obj.updateDynamic("showTraffic")(showTraffic)
+    if (!js.isUndefined(showRoad)) __obj.updateDynamic("showRoad")(showRoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTraffic)) __obj.updateDynamic("showTraffic")(showTraffic.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

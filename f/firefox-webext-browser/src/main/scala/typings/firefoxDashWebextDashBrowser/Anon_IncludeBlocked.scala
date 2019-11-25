@@ -39,14 +39,14 @@ object Anon_IncludeBlocked {
     providers: js.Array[String] = null
   ): Anon_IncludeBlocked = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeBlocked)) __obj.updateDynamic("includeBlocked")(includeBlocked)
-    if (!js.isUndefined(includeFavicon)) __obj.updateDynamic("includeFavicon")(includeFavicon)
-    if (!js.isUndefined(includePinned)) __obj.updateDynamic("includePinned")(includePinned)
-    if (!js.isUndefined(includeSearchShortcuts)) __obj.updateDynamic("includeSearchShortcuts")(includeSearchShortcuts)
+    if (!js.isUndefined(includeBlocked)) __obj.updateDynamic("includeBlocked")(includeBlocked.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeFavicon)) __obj.updateDynamic("includeFavicon")(includeFavicon.asInstanceOf[js.Any])
+    if (!js.isUndefined(includePinned)) __obj.updateDynamic("includePinned")(includePinned.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeSearchShortcuts)) __obj.updateDynamic("includeSearchShortcuts")(includeSearchShortcuts.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(newtab)) __obj.updateDynamic("newtab")(newtab)
-    if (!js.isUndefined(onePerDomain)) __obj.updateDynamic("onePerDomain")(onePerDomain)
-    if (providers != null) __obj.updateDynamic("providers")(providers)
+    if (!js.isUndefined(newtab)) __obj.updateDynamic("newtab")(newtab.asInstanceOf[js.Any])
+    if (!js.isUndefined(onePerDomain)) __obj.updateDynamic("onePerDomain")(onePerDomain.asInstanceOf[js.Any])
+    if (providers != null) __obj.updateDynamic("providers")(providers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IncludeBlocked]
   }
 }

@@ -26,13 +26,13 @@ object TagProps {
     size: TagSize = null,
     style: CSSProperties = null
   ): TagProps = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (!js.isUndefined(dismissible)) __obj.updateDynamic("dismissible")(dismissible)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(dismissible)) __obj.updateDynamic("dismissible")(dismissible.asInstanceOf[js.Any])
     if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction0(onDismiss))
-    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagProps]
   }
 }

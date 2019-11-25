@@ -21,8 +21,8 @@ object AsciiMathInputProcessor {
   @scala.inline
   def apply(decimal: String = null, displaystyle: js.UndefOr[Boolean] = js.undefined): AsciiMathInputProcessor = {
     val __obj = js.Dynamic.literal()
-    if (decimal != null) __obj.updateDynamic("decimal")(decimal)
-    if (!js.isUndefined(displaystyle)) __obj.updateDynamic("displaystyle")(displaystyle)
+    if (decimal != null) __obj.updateDynamic("decimal")(decimal.asInstanceOf[js.Any])
+    if (!js.isUndefined(displaystyle)) __obj.updateDynamic("displaystyle")(displaystyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsciiMathInputProcessor]
   }
 }

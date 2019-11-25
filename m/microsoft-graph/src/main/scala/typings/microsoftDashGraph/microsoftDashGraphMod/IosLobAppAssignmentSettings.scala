@@ -13,7 +13,7 @@ object IosLobAppAssignmentSettings {
   @scala.inline
   def apply(vpnConfigurationId: String = null): IosLobAppAssignmentSettings = {
     val __obj = js.Dynamic.literal()
-    if (vpnConfigurationId != null) __obj.updateDynamic("vpnConfigurationId")(vpnConfigurationId)
+    if (vpnConfigurationId != null) __obj.updateDynamic("vpnConfigurationId")(vpnConfigurationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosLobAppAssignmentSettings]
   }
 }

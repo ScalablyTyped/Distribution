@@ -23,7 +23,7 @@ trait INxSimpleValue extends js.Object {
 object INxSimpleValue {
   @scala.inline
   def apply(qNum: Double, qText: String): INxSimpleValue = {
-    val __obj = js.Dynamic.literal(qNum = qNum, qText = qText)
+    val __obj = js.Dynamic.literal(qNum = qNum.asInstanceOf[js.Any], qText = qText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INxSimpleValue]
   }

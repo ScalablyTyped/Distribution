@@ -41,9 +41,9 @@ object OptionsDataTree {
     dataTreeStartExpanded: Boolean | js.Array[Boolean] | (js.Function2[/* row */ RowComponent, /* level */ Double, Boolean]) = null
   ): OptionsDataTree = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dataTree)) __obj.updateDynamic("dataTree")(dataTree)
+    if (!js.isUndefined(dataTree)) __obj.updateDynamic("dataTree")(dataTree.asInstanceOf[js.Any])
     if (dataTreeBranchElement != null) __obj.updateDynamic("dataTreeBranchElement")(dataTreeBranchElement.asInstanceOf[js.Any])
-    if (dataTreeChildField != null) __obj.updateDynamic("dataTreeChildField")(dataTreeChildField)
+    if (dataTreeChildField != null) __obj.updateDynamic("dataTreeChildField")(dataTreeChildField.asInstanceOf[js.Any])
     if (dataTreeChildIndent != null) __obj.updateDynamic("dataTreeChildIndent")(dataTreeChildIndent.asInstanceOf[js.Any])
     if (dataTreeCollapseElement != null) __obj.updateDynamic("dataTreeCollapseElement")(dataTreeCollapseElement.asInstanceOf[js.Any])
     if (dataTreeElementColumn != null) __obj.updateDynamic("dataTreeElementColumn")(dataTreeElementColumn.asInstanceOf[js.Any])

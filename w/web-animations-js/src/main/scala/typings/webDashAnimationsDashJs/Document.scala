@@ -11,7 +11,7 @@ trait Document extends js.Object {
 object Document {
   @scala.inline
   def apply(timeline: AnimationTimeline): Document = {
-    val __obj = js.Dynamic.literal(timeline = timeline)
+    val __obj = js.Dynamic.literal(timeline = timeline.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Document]
   }

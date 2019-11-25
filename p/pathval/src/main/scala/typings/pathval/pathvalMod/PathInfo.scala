@@ -14,8 +14,8 @@ trait PathInfo extends js.Object {
 object PathInfo {
   @scala.inline
   def apply(exists: Boolean, name: String, parent: js.Object, value: js.Any = null): PathInfo = {
-    val __obj = js.Dynamic.literal(exists = exists, name = name, parent = parent)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(exists = exists.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathInfo]
   }
 }

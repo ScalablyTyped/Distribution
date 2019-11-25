@@ -26,12 +26,12 @@ object Anon_EllipsoidGranularity {
     minimumHeights: js.Array[Double] = null,
     vertexFormat: VertexFormat = null
   ): Anon_EllipsoidGranularity = {
-    val __obj = js.Dynamic.literal(positions = positions)
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    val __obj = js.Dynamic.literal(positions = positions.asInstanceOf[js.Any])
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
     if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
-    if (maximumHeights != null) __obj.updateDynamic("maximumHeights")(maximumHeights)
-    if (minimumHeights != null) __obj.updateDynamic("minimumHeights")(minimumHeights)
-    if (vertexFormat != null) __obj.updateDynamic("vertexFormat")(vertexFormat)
+    if (maximumHeights != null) __obj.updateDynamic("maximumHeights")(maximumHeights.asInstanceOf[js.Any])
+    if (minimumHeights != null) __obj.updateDynamic("minimumHeights")(minimumHeights.asInstanceOf[js.Any])
+    if (vertexFormat != null) __obj.updateDynamic("vertexFormat")(vertexFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EllipsoidGranularity]
   }
 }

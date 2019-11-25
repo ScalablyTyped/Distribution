@@ -15,7 +15,7 @@ object ProductUnitPricingMeasure {
   @scala.inline
   def apply(unit: String = null, value: Int | Double = null): ProductUnitPricingMeasure = {
     val __obj = js.Dynamic.literal()
-    if (unit != null) __obj.updateDynamic("unit")(unit)
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductUnitPricingMeasure]
   }

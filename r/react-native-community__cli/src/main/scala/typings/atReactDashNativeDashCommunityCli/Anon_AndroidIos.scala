@@ -40,9 +40,9 @@ object Anon_AndroidIos {
     ios: PlatformConfig[ProjectParamsIOS, ProjectParamsIOS, ProjectConfigIOS, DependencyConfigIOS] = null
   ): Anon_AndroidIos = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (android != null) __obj.updateDynamic("android")(android)
-    if (ios != null) __obj.updateDynamic("ios")(ios)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (android != null) __obj.updateDynamic("android")(android.asInstanceOf[js.Any])
+    if (ios != null) __obj.updateDynamic("ios")(ios.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AndroidIos]
   }
 }

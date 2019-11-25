@@ -36,14 +36,14 @@ object LiveChatMessageAuthorDetails {
     profileImageUrl: String = null
   ): LiveChatMessageAuthorDetails = {
     val __obj = js.Dynamic.literal()
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
-    if (channelUrl != null) __obj.updateDynamic("channelUrl")(channelUrl)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (!js.isUndefined(isChatModerator)) __obj.updateDynamic("isChatModerator")(isChatModerator)
-    if (!js.isUndefined(isChatOwner)) __obj.updateDynamic("isChatOwner")(isChatOwner)
-    if (!js.isUndefined(isChatSponsor)) __obj.updateDynamic("isChatSponsor")(isChatSponsor)
-    if (!js.isUndefined(isVerified)) __obj.updateDynamic("isVerified")(isVerified)
-    if (profileImageUrl != null) __obj.updateDynamic("profileImageUrl")(profileImageUrl)
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
+    if (channelUrl != null) __obj.updateDynamic("channelUrl")(channelUrl.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(isChatModerator)) __obj.updateDynamic("isChatModerator")(isChatModerator.asInstanceOf[js.Any])
+    if (!js.isUndefined(isChatOwner)) __obj.updateDynamic("isChatOwner")(isChatOwner.asInstanceOf[js.Any])
+    if (!js.isUndefined(isChatSponsor)) __obj.updateDynamic("isChatSponsor")(isChatSponsor.asInstanceOf[js.Any])
+    if (!js.isUndefined(isVerified)) __obj.updateDynamic("isVerified")(isVerified.asInstanceOf[js.Any])
+    if (profileImageUrl != null) __obj.updateDynamic("profileImageUrl")(profileImageUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveChatMessageAuthorDetails]
   }
 }

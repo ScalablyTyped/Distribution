@@ -23,7 +23,7 @@ object IAutomaticValue {
     CalculationOrderNumber: Double,
     Clone: () => IAutomaticValue
   ): IAutomaticValue = {
-    val __obj = js.Dynamic.literal(ANSIncrement = ANSIncrement, ANVCode = ANVCode, CVSExpression = CVSExpression, CVVCode = CVVCode, CalculationOrderNumber = CalculationOrderNumber, Clone = js.Any.fromFunction0(Clone))
+    val __obj = js.Dynamic.literal(ANSIncrement = ANSIncrement.asInstanceOf[js.Any], ANVCode = ANVCode.asInstanceOf[js.Any], CVSExpression = CVSExpression.asInstanceOf[js.Any], CVVCode = CVVCode.asInstanceOf[js.Any], CalculationOrderNumber = CalculationOrderNumber.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone))
   
     __obj.asInstanceOf[IAutomaticValue]
   }

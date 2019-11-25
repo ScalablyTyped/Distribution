@@ -12,7 +12,7 @@ trait COMMENT_MARKER extends js.Object {
 object COMMENT_MARKER {
   @scala.inline
   def apply(marker: comment): COMMENT_MARKER = {
-    val __obj = js.Dynamic.literal(marker = marker)
+    val __obj = js.Dynamic.literal(marker = marker.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[COMMENT_MARKER]
   }

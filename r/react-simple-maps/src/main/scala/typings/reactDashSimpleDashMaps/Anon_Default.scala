@@ -15,9 +15,9 @@ object Anon_Default {
   @scala.inline
   def apply(default: CSSProperties = null, hover: CSSProperties = null, pressed: CSSProperties = null): Anon_Default = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (hover != null) __obj.updateDynamic("hover")(hover)
-    if (pressed != null) __obj.updateDynamic("pressed")(pressed)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
+    if (pressed != null) __obj.updateDynamic("pressed")(pressed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Default]
   }
 }

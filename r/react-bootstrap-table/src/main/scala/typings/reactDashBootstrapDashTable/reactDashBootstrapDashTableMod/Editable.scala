@@ -22,7 +22,9 @@ trait Editable[TRow /* <: js.Object */, K /* <: String */] extends js.Object {
   /**
   	 * Default value to show in the edit field in the Insert Modal for this column.
   	 */
-  var defaultValue: js.UndefOr[/* import warning: ImportType.apply Failed type conversion: TRow[K] */ js.Any] = js.undefined
+  var defaultValue: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ js.Any
+  ] = js.undefined
   /**
   	 * Data in a select or checkbox. If a checkbox, use a string with a ':'(colon) to separate the two values, ex: Y:N
   	 * The callback function can be used to customize the select options based on other field values within the row.
@@ -58,7 +60,7 @@ trait Editable[TRow /* <: js.Object */, K /* <: String */] extends js.Object {
   	 */
   var validator: js.UndefOr[
     js.Function2[
-      /* import warning: ImportType.apply Failed type conversion: TRow[K] */ /* cell */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ /* cell */ js.Any, 
       /* row */ TRow, 
       Boolean | String | EditValidatorObject
     ]
@@ -71,26 +73,26 @@ object Editable {
     attrs: EditableAttrs = null,
     className: String = null,
     cols: Int | Double = null,
-    defaultValue: /* import warning: ImportType.apply Failed type conversion: TRow[K] */ js.Any = null,
+    defaultValue: /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ js.Any = null,
     options: Anon_Row[TRow] = null,
     placeholder: String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     rows: Int | Double = null,
     style: CSSProperties = null,
     `type`: EditCellType = null,
-    validator: (/* import warning: ImportType.apply Failed type conversion: TRow[K] */ /* cell */ js.Any, /* row */ TRow) => Boolean | String | EditValidatorObject = null
+    validator: (/* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ /* cell */ js.Any, /* row */ TRow) => Boolean | String | EditValidatorObject = null
   ): Editable[TRow, K] = {
     val __obj = js.Dynamic.literal()
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (validator != null) __obj.updateDynamic("validator")(js.Any.fromFunction2(validator))
     __obj.asInstanceOf[Editable[TRow, K]]
   }

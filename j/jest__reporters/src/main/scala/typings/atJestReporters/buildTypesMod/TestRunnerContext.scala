@@ -14,7 +14,7 @@ object TestRunnerContext {
   @scala.inline
   def apply(changedFiles: Set[Path] = null): TestRunnerContext = {
     val __obj = js.Dynamic.literal()
-    if (changedFiles != null) __obj.updateDynamic("changedFiles")(changedFiles)
+    if (changedFiles != null) __obj.updateDynamic("changedFiles")(changedFiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestRunnerContext]
   }
 }

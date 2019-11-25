@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait Boundary extends js.Object
 
+object Boundary {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def scrollParent: typings.popperDotJs.popperDotJsStrings.scrollParent = this.cast("scrollParent")
+  @scala.inline
+  def viewport: typings.popperDotJs.popperDotJsStrings.viewport = this.cast("viewport")
+  @scala.inline
+  def window: typings.popperDotJs.popperDotJsStrings.window = this.cast("window")
+}
+

@@ -8,31 +8,49 @@ import scala.scalajs.js.annotation._
 
 object decimalDotJsNumbers {
   @js.native
-  sealed trait `0` extends Rounding
+  sealed trait `0`
+    extends Modulo
+       with Rounding
   
   @js.native
-  sealed trait `1` extends Rounding
+  sealed trait `1`
+    extends Modulo
+       with Rounding
   
   @js.native
-  sealed trait `2` extends Rounding
+  sealed trait `2`
+    extends Modulo
+       with Rounding
   
   @js.native
-  sealed trait `3` extends Rounding
+  sealed trait `3`
+    extends Modulo
+       with Rounding
   
   @js.native
-  sealed trait `4` extends Rounding
+  sealed trait `4`
+    extends Modulo
+       with Rounding
   
   @js.native
-  sealed trait `5` extends Rounding
+  sealed trait `5`
+    extends Modulo
+       with Rounding
   
   @js.native
-  sealed trait `6` extends Rounding
+  sealed trait `6`
+    extends Modulo
+       with Rounding
   
   @js.native
-  sealed trait `7` extends Rounding
+  sealed trait `7`
+    extends Modulo
+       with Rounding
   
   @js.native
-  sealed trait `8` extends Rounding
+  sealed trait `8`
+    extends Modulo
+       with Rounding
   
   @js.native
   sealed trait `9` extends Modulo

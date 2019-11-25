@@ -40,9 +40,9 @@ object SignatureHelpContext {
     activeSignatureHelp: SignatureHelp = null,
     triggerCharacter: String = null
   ): SignatureHelpContext = {
-    val __obj = js.Dynamic.literal(isRetrigger = isRetrigger, triggerKind = triggerKind)
-    if (activeSignatureHelp != null) __obj.updateDynamic("activeSignatureHelp")(activeSignatureHelp)
-    if (triggerCharacter != null) __obj.updateDynamic("triggerCharacter")(triggerCharacter)
+    val __obj = js.Dynamic.literal(isRetrigger = isRetrigger.asInstanceOf[js.Any], triggerKind = triggerKind.asInstanceOf[js.Any])
+    if (activeSignatureHelp != null) __obj.updateDynamic("activeSignatureHelp")(activeSignatureHelp.asInstanceOf[js.Any])
+    if (triggerCharacter != null) __obj.updateDynamic("triggerCharacter")(triggerCharacter.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureHelpContext]
   }
 }

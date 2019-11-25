@@ -15,7 +15,7 @@ trait IContact extends js.Object {
 object IContact {
   @scala.inline
   def apply(fields: IVector[IContactField], name: String, thumbnail: IRandomAccessStreamReference): IContact = {
-    val __obj = js.Dynamic.literal(fields = fields, name = name, thumbnail = thumbnail)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IContact]
   }

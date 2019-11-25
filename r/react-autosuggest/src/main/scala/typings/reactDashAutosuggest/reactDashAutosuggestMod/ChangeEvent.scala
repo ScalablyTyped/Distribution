@@ -18,7 +18,7 @@ trait ChangeEvent extends js.Object {
 object ChangeEvent {
   @scala.inline
   def apply(method: down | up | escape | enter | click | `type`, newValue: String): ChangeEvent = {
-    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], newValue = newValue)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChangeEvent]
   }

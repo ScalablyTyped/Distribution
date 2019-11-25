@@ -12,7 +12,7 @@ trait OrgsRemoveMemberParams extends js.Object {
 object OrgsRemoveMemberParams {
   @scala.inline
   def apply(org: String, username: String): OrgsRemoveMemberParams = {
-    val __obj = js.Dynamic.literal(org = org, username = username)
+    val __obj = js.Dynamic.literal(org = org.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OrgsRemoveMemberParams]
   }

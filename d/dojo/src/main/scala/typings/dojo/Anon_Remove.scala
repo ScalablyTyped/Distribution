@@ -4,10 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_Remove extends js.Object {
-  @JSName("remove")
-  var remove_Original: Fn_Void = js.native
-  def remove(): Unit = js.native
+  def remove(): Unit
+}
+
+object Anon_Remove {
+  @scala.inline
+  def apply(remove: () => Unit): Anon_Remove = {
+    val __obj = js.Dynamic.literal(remove = js.Any.fromFunction0(remove))
+  
+    __obj.asInstanceOf[Anon_Remove]
+  }
 }
 

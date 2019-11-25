@@ -12,7 +12,7 @@ trait CountResponse extends js.Object {
 object CountResponse {
   @scala.inline
   def apply(_shards: ShardsResponse, count: Double): CountResponse = {
-    val __obj = js.Dynamic.literal(_shards = _shards, count = count)
+    val __obj = js.Dynamic.literal(_shards = _shards.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CountResponse]
   }

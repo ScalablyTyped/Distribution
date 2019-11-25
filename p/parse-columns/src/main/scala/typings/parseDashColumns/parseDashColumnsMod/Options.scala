@@ -37,8 +37,8 @@ object Options {
     transform: (/* element */ String, /* header */ String, /* columnIndex */ Double, /* rowIndex */ Double) => ValuesType = null
   ): Options[ValuesType] = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction4(transform))
     __obj.asInstanceOf[Options[ValuesType]]
   }

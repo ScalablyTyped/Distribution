@@ -12,7 +12,7 @@ object Anon_Singleton {
   @scala.inline
   def apply(singleton: js.UndefOr[Boolean] = js.undefined): Anon_Singleton = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Singleton]
   }
 }

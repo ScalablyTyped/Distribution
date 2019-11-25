@@ -31,14 +31,14 @@ object Option {
   ): Option = {
     val __obj = js.Dynamic.literal()
     if (compositor != null) __obj.updateDynamic("compositor")(compositor.asInstanceOf[js.Any])
-    if (compositorOptions != null) __obj.updateDynamic("compositorOptions")(compositorOptions)
+    if (compositorOptions != null) __obj.updateDynamic("compositorOptions")(compositorOptions.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (layoutOptions != null) __obj.updateDynamic("layoutOptions")(layoutOptions)
-    if (spritePath != null) __obj.updateDynamic("spritePath")(spritePath)
-    if (src != null) __obj.updateDynamic("src")(src)
+    if (layoutOptions != null) __obj.updateDynamic("layoutOptions")(layoutOptions.asInstanceOf[js.Any])
+    if (spritePath != null) __obj.updateDynamic("spritePath")(spritePath.asInstanceOf[js.Any])
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     if (stylesheet != null) __obj.updateDynamic("stylesheet")(stylesheet.asInstanceOf[js.Any])
-    if (stylesheetOptions != null) __obj.updateDynamic("stylesheetOptions")(stylesheetOptions)
-    if (stylesheetPath != null) __obj.updateDynamic("stylesheetPath")(stylesheetPath)
+    if (stylesheetOptions != null) __obj.updateDynamic("stylesheetOptions")(stylesheetOptions.asInstanceOf[js.Any])
+    if (stylesheetPath != null) __obj.updateDynamic("stylesheetPath")(stylesheetPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Option]
   }
 }

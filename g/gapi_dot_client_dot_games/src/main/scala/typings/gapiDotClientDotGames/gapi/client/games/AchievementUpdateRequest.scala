@@ -34,11 +34,11 @@ object AchievementUpdateRequest {
     updateType: String = null
   ): AchievementUpdateRequest = {
     val __obj = js.Dynamic.literal()
-    if (achievementId != null) __obj.updateDynamic("achievementId")(achievementId)
-    if (incrementPayload != null) __obj.updateDynamic("incrementPayload")(incrementPayload)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (setStepsAtLeastPayload != null) __obj.updateDynamic("setStepsAtLeastPayload")(setStepsAtLeastPayload)
-    if (updateType != null) __obj.updateDynamic("updateType")(updateType)
+    if (achievementId != null) __obj.updateDynamic("achievementId")(achievementId.asInstanceOf[js.Any])
+    if (incrementPayload != null) __obj.updateDynamic("incrementPayload")(incrementPayload.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (setStepsAtLeastPayload != null) __obj.updateDynamic("setStepsAtLeastPayload")(setStepsAtLeastPayload.asInstanceOf[js.Any])
+    if (updateType != null) __obj.updateDynamic("updateType")(updateType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AchievementUpdateRequest]
   }
 }

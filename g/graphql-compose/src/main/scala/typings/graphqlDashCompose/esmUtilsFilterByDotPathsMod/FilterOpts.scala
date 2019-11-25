@@ -13,8 +13,8 @@ trait FilterOpts extends js.Object {
 object FilterOpts {
   @scala.inline
   def apply(hideFields: StringDictionary[String], hideFieldsNote: String = null): FilterOpts = {
-    val __obj = js.Dynamic.literal(hideFields = hideFields)
-    if (hideFieldsNote != null) __obj.updateDynamic("hideFieldsNote")(hideFieldsNote)
+    val __obj = js.Dynamic.literal(hideFields = hideFields.asInstanceOf[js.Any])
+    if (hideFieldsNote != null) __obj.updateDynamic("hideFieldsNote")(hideFieldsNote.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterOpts]
   }
 }

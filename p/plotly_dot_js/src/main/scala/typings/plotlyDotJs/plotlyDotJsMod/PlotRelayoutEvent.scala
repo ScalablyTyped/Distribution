@@ -13,7 +13,7 @@ trait PlotRelayoutEvent extends js.Object {
 object PlotRelayoutEvent {
   @scala.inline
   def apply(scene: PlotScene, xaxis: PlotAxis, yaxis: PlotAxis): PlotRelayoutEvent = {
-    val __obj = js.Dynamic.literal(scene = scene, xaxis = xaxis, yaxis = yaxis)
+    val __obj = js.Dynamic.literal(scene = scene.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PlotRelayoutEvent]
   }

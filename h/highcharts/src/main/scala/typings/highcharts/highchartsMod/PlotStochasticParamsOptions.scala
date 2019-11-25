@@ -15,7 +15,7 @@ object PlotStochasticParamsOptions {
   @scala.inline
   def apply(periods: js.Tuple2[Double, Double] = null): PlotStochasticParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (periods != null) __obj.updateDynamic("periods")(periods)
+    if (periods != null) __obj.updateDynamic("periods")(periods.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotStochasticParamsOptions]
   }
 }

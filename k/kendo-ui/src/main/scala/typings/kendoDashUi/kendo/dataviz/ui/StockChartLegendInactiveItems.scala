@@ -16,8 +16,8 @@ object StockChartLegendInactiveItems {
     markers: StockChartLegendInactiveItemsMarkers = null
   ): StockChartLegendInactiveItems = {
     val __obj = js.Dynamic.literal()
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (markers != null) __obj.updateDynamic("markers")(markers)
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartLegendInactiveItems]
   }
 }

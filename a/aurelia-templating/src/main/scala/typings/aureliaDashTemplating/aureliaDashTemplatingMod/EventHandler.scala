@@ -15,7 +15,7 @@ trait EventHandler extends js.Object {
 object EventHandler {
   @scala.inline
   def apply(bubbles: Boolean, capture: Boolean, dispose: js.Function, eventName: String, handler: js.Function): EventHandler = {
-    val __obj = js.Dynamic.literal(bubbles = bubbles, capture = capture, dispose = dispose, eventName = eventName, handler = handler)
+    val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], capture = capture.asInstanceOf[js.Any], dispose = dispose.asInstanceOf[js.Any], eventName = eventName.asInstanceOf[js.Any], handler = handler.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventHandler]
   }

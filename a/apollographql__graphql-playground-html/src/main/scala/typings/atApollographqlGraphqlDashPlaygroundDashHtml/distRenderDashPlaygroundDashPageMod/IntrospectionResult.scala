@@ -11,7 +11,7 @@ trait IntrospectionResult extends js.Object {
 object IntrospectionResult {
   @scala.inline
   def apply(__schema: js.Any): IntrospectionResult = {
-    val __obj = js.Dynamic.literal(__schema = __schema)
+    val __obj = js.Dynamic.literal(__schema = __schema.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IntrospectionResult]
   }

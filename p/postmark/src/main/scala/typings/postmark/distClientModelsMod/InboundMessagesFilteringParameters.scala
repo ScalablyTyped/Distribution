@@ -1,6 +1,5 @@
 package typings.postmark.distClientModelsMod
 
-import typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +15,9 @@ class InboundMessagesFilteringParameters protected ()
     recipient: js.UndefOr[String],
     fromEmail: js.UndefOr[String],
     tag: js.UndefOr[String],
-    status: js.UndefOr[InboundMessageStatus],
+    status: js.UndefOr[
+        typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus
+      ],
     fromDate: js.UndefOr[String],
     toDate: js.UndefOr[String],
     subject: js.UndefOr[String]

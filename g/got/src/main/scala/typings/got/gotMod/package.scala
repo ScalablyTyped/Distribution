@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 package object gotMod {
   import typings.got.Anon_Cancel
   import typings.got.Anon_CancelError
-  import typings.got.gotStrings.delete
-  import typings.got.gotStrings.get
-  import typings.got.gotStrings.head
+  import typings.got.gotStrings.delete_
+  import typings.got.gotStrings.get_
+  import typings.got.gotStrings.head_
   import typings.got.gotStrings.patch
-  import typings.got.gotStrings.post
-  import typings.got.gotStrings.put
+  import typings.got.gotStrings.post_
+  import typings.got.gotStrings.put_
   import typings.node.Buffer
   import typings.node.httpsMod.RequestOptions
   import typings.node.streamMod.Duplex
@@ -45,7 +45,7 @@ package object gotMod {
     * @param retryCount Number of retry.
     */
   type BeforeRetryHook[Options] = js.Function3[/* options */ Options, /* error */ GotError, /* retryCount */ Double, js.Any]
-  type GotInstance[T] = T with (Record[get | post | put | patch | head | delete, T]) with Anon_CancelError
+  type GotInstance[T] = T with (Record[get_ | post_ | put_ | patch | head_ | delete_, T]) with Anon_CancelError
   type GotPromise[B /* <: Buffer | String | js.Object */] = js.Promise[Response[B]] with Anon_Cancel
   type GotStreamFn = js.Function2[
     /* url */ GotUrl, 

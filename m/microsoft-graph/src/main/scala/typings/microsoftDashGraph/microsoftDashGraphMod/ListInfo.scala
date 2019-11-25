@@ -24,9 +24,9 @@ object ListInfo {
     template: String = null
   ): ListInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(contentTypesEnabled)) __obj.updateDynamic("contentTypesEnabled")(contentTypesEnabled)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (!js.isUndefined(contentTypesEnabled)) __obj.updateDynamic("contentTypesEnabled")(contentTypesEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListInfo]
   }
 }

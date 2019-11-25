@@ -14,7 +14,7 @@ trait Anon_Sn extends js.Object {
 object Anon_Sn {
   @scala.inline
   def apply(sn: IntegerParam, time: StringParam): Anon_Sn = {
-    val __obj = js.Dynamic.literal(sn = sn, time = time)
+    val __obj = js.Dynamic.literal(sn = sn.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Sn]
   }

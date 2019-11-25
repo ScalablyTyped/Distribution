@@ -63,19 +63,19 @@ object Application {
     servingStatus: String = null
   ): Application = {
     val __obj = js.Dynamic.literal()
-    if (authDomain != null) __obj.updateDynamic("authDomain")(authDomain)
-    if (codeBucket != null) __obj.updateDynamic("codeBucket")(codeBucket)
-    if (defaultBucket != null) __obj.updateDynamic("defaultBucket")(defaultBucket)
-    if (defaultCookieExpiration != null) __obj.updateDynamic("defaultCookieExpiration")(defaultCookieExpiration)
-    if (defaultHostname != null) __obj.updateDynamic("defaultHostname")(defaultHostname)
-    if (dispatchRules != null) __obj.updateDynamic("dispatchRules")(dispatchRules)
-    if (featureSettings != null) __obj.updateDynamic("featureSettings")(featureSettings)
-    if (gcrDomain != null) __obj.updateDynamic("gcrDomain")(gcrDomain)
-    if (iap != null) __obj.updateDynamic("iap")(iap)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (locationId != null) __obj.updateDynamic("locationId")(locationId)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (servingStatus != null) __obj.updateDynamic("servingStatus")(servingStatus)
+    if (authDomain != null) __obj.updateDynamic("authDomain")(authDomain.asInstanceOf[js.Any])
+    if (codeBucket != null) __obj.updateDynamic("codeBucket")(codeBucket.asInstanceOf[js.Any])
+    if (defaultBucket != null) __obj.updateDynamic("defaultBucket")(defaultBucket.asInstanceOf[js.Any])
+    if (defaultCookieExpiration != null) __obj.updateDynamic("defaultCookieExpiration")(defaultCookieExpiration.asInstanceOf[js.Any])
+    if (defaultHostname != null) __obj.updateDynamic("defaultHostname")(defaultHostname.asInstanceOf[js.Any])
+    if (dispatchRules != null) __obj.updateDynamic("dispatchRules")(dispatchRules.asInstanceOf[js.Any])
+    if (featureSettings != null) __obj.updateDynamic("featureSettings")(featureSettings.asInstanceOf[js.Any])
+    if (gcrDomain != null) __obj.updateDynamic("gcrDomain")(gcrDomain.asInstanceOf[js.Any])
+    if (iap != null) __obj.updateDynamic("iap")(iap.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (locationId != null) __obj.updateDynamic("locationId")(locationId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (servingStatus != null) __obj.updateDynamic("servingStatus")(servingStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[Application]
   }
 }

@@ -33,15 +33,15 @@ object IMessageOptions {
     timeToLive: Int | Double = null
   ): IMessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (collapseKey != null) __obj.updateDynamic("collapseKey")(collapseKey)
-    if (!js.isUndefined(contentAvailable)) __obj.updateDynamic("contentAvailable")(contentAvailable)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (!js.isUndefined(delayWhileIdle)) __obj.updateDynamic("delayWhileIdle")(delayWhileIdle)
-    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun)
-    if (!js.isUndefined(mutableContent)) __obj.updateDynamic("mutableContent")(mutableContent)
-    if (notification != null) __obj.updateDynamic("notification")(notification)
-    if (priority != null) __obj.updateDynamic("priority")(priority)
-    if (restrictedPackageName != null) __obj.updateDynamic("restrictedPackageName")(restrictedPackageName)
+    if (collapseKey != null) __obj.updateDynamic("collapseKey")(collapseKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentAvailable)) __obj.updateDynamic("contentAvailable")(contentAvailable.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayWhileIdle)) __obj.updateDynamic("delayWhileIdle")(delayWhileIdle.asInstanceOf[js.Any])
+    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(mutableContent)) __obj.updateDynamic("mutableContent")(mutableContent.asInstanceOf[js.Any])
+    if (notification != null) __obj.updateDynamic("notification")(notification.asInstanceOf[js.Any])
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (restrictedPackageName != null) __obj.updateDynamic("restrictedPackageName")(restrictedPackageName.asInstanceOf[js.Any])
     if (timeToLive != null) __obj.updateDynamic("timeToLive")(timeToLive.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMessageOptions]
   }

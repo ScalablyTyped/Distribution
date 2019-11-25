@@ -13,8 +13,8 @@ object GoalVisitTimeOnSiteDetails {
   @scala.inline
   def apply(comparisonType: String = null, comparisonValue: String = null): GoalVisitTimeOnSiteDetails = {
     val __obj = js.Dynamic.literal()
-    if (comparisonType != null) __obj.updateDynamic("comparisonType")(comparisonType)
-    if (comparisonValue != null) __obj.updateDynamic("comparisonValue")(comparisonValue)
+    if (comparisonType != null) __obj.updateDynamic("comparisonType")(comparisonType.asInstanceOf[js.Any])
+    if (comparisonValue != null) __obj.updateDynamic("comparisonValue")(comparisonValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoalVisitTimeOnSiteDetails]
   }
 }

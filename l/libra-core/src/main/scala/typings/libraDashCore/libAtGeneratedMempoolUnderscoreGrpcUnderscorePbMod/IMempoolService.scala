@@ -20,7 +20,7 @@ object IMempoolService {
     getBlock: IMempoolService_IGetBlock,
     healthCheck: IMempoolService_IHealthCheck
   ): IMempoolService = {
-    val __obj = js.Dynamic.literal(addTransactionWithValidation = addTransactionWithValidation, commitTransactions = commitTransactions, getBlock = getBlock, healthCheck = healthCheck)
+    val __obj = js.Dynamic.literal(addTransactionWithValidation = addTransactionWithValidation.asInstanceOf[js.Any], commitTransactions = commitTransactions.asInstanceOf[js.Any], getBlock = getBlock.asInstanceOf[js.Any], healthCheck = healthCheck.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IMempoolService]
   }

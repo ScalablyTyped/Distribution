@@ -16,7 +16,7 @@ object GetInfoForObservedBeaconsResponse {
   @scala.inline
   def apply(beacons: js.Array[BeaconInfo] = null): GetInfoForObservedBeaconsResponse = {
     val __obj = js.Dynamic.literal()
-    if (beacons != null) __obj.updateDynamic("beacons")(beacons)
+    if (beacons != null) __obj.updateDynamic("beacons")(beacons.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInfoForObservedBeaconsResponse]
   }
 }

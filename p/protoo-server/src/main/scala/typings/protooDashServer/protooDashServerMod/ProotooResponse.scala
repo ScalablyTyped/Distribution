@@ -24,10 +24,10 @@ object ProotooResponse {
     errorCode: Int | Double = null,
     errorReason: String = null
   ): ProotooResponse = {
-    val __obj = js.Dynamic.literal(id = id, ok = ok, response = response)
-    if (data != null) __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
-    if (errorReason != null) __obj.updateDynamic("errorReason")(errorReason)
+    if (errorReason != null) __obj.updateDynamic("errorReason")(errorReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProotooResponse]
   }
 }

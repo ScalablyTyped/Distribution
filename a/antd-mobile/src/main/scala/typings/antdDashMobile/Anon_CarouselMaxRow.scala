@@ -25,7 +25,7 @@ object Anon_CarouselMaxRow {
     prefixCls: String,
     square: Boolean
   ): Anon_CarouselMaxRow = {
-    val __obj = js.Dynamic.literal(carouselMaxRow = carouselMaxRow, columnNum = columnNum, data = data, hasLine = hasLine, isCarousel = isCarousel, prefixCls = prefixCls, square = square)
+    val __obj = js.Dynamic.literal(carouselMaxRow = carouselMaxRow.asInstanceOf[js.Any], columnNum = columnNum.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], hasLine = hasLine.asInstanceOf[js.Any], isCarousel = isCarousel.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], square = square.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CarouselMaxRow]
   }

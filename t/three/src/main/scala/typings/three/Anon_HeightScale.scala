@@ -25,7 +25,7 @@ object Anon_HeightScale {
     tube: Double,
     tubularSegments: Double
   ): Anon_HeightScale = {
-    val __obj = js.Dynamic.literal(heightScale = heightScale, p = p, q = q, radialSegments = radialSegments, radius = radius, tube = tube, tubularSegments = tubularSegments)
+    val __obj = js.Dynamic.literal(heightScale = heightScale.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], radialSegments = radialSegments.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], tube = tube.asInstanceOf[js.Any], tubularSegments = tubularSegments.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HeightScale]
   }

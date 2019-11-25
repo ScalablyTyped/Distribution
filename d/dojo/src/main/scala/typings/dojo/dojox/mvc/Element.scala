@@ -1,7 +1,5 @@
 package typings.dojo.dojox.mvc
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dijit._WidgetBase
 import typings.dojo.dojoStrings.style
 import typings.std.HTMLElement
@@ -38,7 +36,5 @@ class Element () extends _WidgetBase {
   def own(): js.Any = js.native
   @JSName("set")
   def set_style(property: style, value: String): Unit = js.native
-  @JSName("watch")
-  def watch_style(property: style, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
 }
 

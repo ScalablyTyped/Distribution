@@ -15,7 +15,7 @@ trait OpenTabObject extends js.Object {
 object OpenTabObject {
   @scala.inline
   def apply(close: () => Unit, closed: Boolean, onclosed: () => Unit = null): OpenTabObject = {
-    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), closed = closed)
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), closed = closed.asInstanceOf[js.Any])
     if (onclosed != null) __obj.updateDynamic("onclosed")(js.Any.fromFunction0(onclosed))
     __obj.asInstanceOf[OpenTabObject]
   }

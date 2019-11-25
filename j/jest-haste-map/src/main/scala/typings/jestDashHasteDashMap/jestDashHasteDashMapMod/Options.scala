@@ -60,23 +60,23 @@ object Options {
     useWatchman: js.UndefOr[Boolean] = js.undefined,
     watch: js.UndefOr[Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal(extensions = extensions, maxWorkers = maxWorkers, name = name, platforms = platforms, retainAllFiles = retainAllFiles, rootDir = rootDir, roots = roots)
-    if (cacheDirectory != null) __obj.updateDynamic("cacheDirectory")(cacheDirectory)
-    if (!js.isUndefined(computeDependencies)) __obj.updateDynamic("computeDependencies")(computeDependencies)
-    if (!js.isUndefined(computeSha1)) __obj.updateDynamic("computeSha1")(computeSha1)
-    if (console != null) __obj.updateDynamic("console")(console)
-    if (dependencyExtractor != null) __obj.updateDynamic("dependencyExtractor")(dependencyExtractor)
-    if (!js.isUndefined(forceNodeFilesystemAPI)) __obj.updateDynamic("forceNodeFilesystemAPI")(forceNodeFilesystemAPI)
-    if (hasteImplModulePath != null) __obj.updateDynamic("hasteImplModulePath")(hasteImplModulePath)
+    val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any], maxWorkers = maxWorkers.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], platforms = platforms.asInstanceOf[js.Any], retainAllFiles = retainAllFiles.asInstanceOf[js.Any], rootDir = rootDir.asInstanceOf[js.Any], roots = roots.asInstanceOf[js.Any])
+    if (cacheDirectory != null) __obj.updateDynamic("cacheDirectory")(cacheDirectory.asInstanceOf[js.Any])
+    if (!js.isUndefined(computeDependencies)) __obj.updateDynamic("computeDependencies")(computeDependencies.asInstanceOf[js.Any])
+    if (!js.isUndefined(computeSha1)) __obj.updateDynamic("computeSha1")(computeSha1.asInstanceOf[js.Any])
+    if (console != null) __obj.updateDynamic("console")(console.asInstanceOf[js.Any])
+    if (dependencyExtractor != null) __obj.updateDynamic("dependencyExtractor")(dependencyExtractor.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceNodeFilesystemAPI)) __obj.updateDynamic("forceNodeFilesystemAPI")(forceNodeFilesystemAPI.asInstanceOf[js.Any])
+    if (hasteImplModulePath != null) __obj.updateDynamic("hasteImplModulePath")(hasteImplModulePath.asInstanceOf[js.Any])
     if (ignorePattern != null) __obj.updateDynamic("ignorePattern")(ignorePattern.asInstanceOf[js.Any])
     if (mapper != null) __obj.updateDynamic("mapper")(js.Any.fromFunction1(mapper))
-    if (mocksPattern != null) __obj.updateDynamic("mocksPattern")(mocksPattern)
-    if (providesModuleNodeModules != null) __obj.updateDynamic("providesModuleNodeModules")(providesModuleNodeModules)
-    if (!js.isUndefined(resetCache)) __obj.updateDynamic("resetCache")(resetCache)
-    if (!js.isUndefined(skipPackageJson)) __obj.updateDynamic("skipPackageJson")(skipPackageJson)
-    if (!js.isUndefined(throwOnModuleCollision)) __obj.updateDynamic("throwOnModuleCollision")(throwOnModuleCollision)
-    if (!js.isUndefined(useWatchman)) __obj.updateDynamic("useWatchman")(useWatchman)
-    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch)
+    if (mocksPattern != null) __obj.updateDynamic("mocksPattern")(mocksPattern.asInstanceOf[js.Any])
+    if (providesModuleNodeModules != null) __obj.updateDynamic("providesModuleNodeModules")(providesModuleNodeModules.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetCache)) __obj.updateDynamic("resetCache")(resetCache.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipPackageJson)) __obj.updateDynamic("skipPackageJson")(skipPackageJson.asInstanceOf[js.Any])
+    if (!js.isUndefined(throwOnModuleCollision)) __obj.updateDynamic("throwOnModuleCollision")(throwOnModuleCollision.asInstanceOf[js.Any])
+    if (!js.isUndefined(useWatchman)) __obj.updateDynamic("useWatchman")(useWatchman.asInstanceOf[js.Any])
+    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

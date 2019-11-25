@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "superagent-bunyan"
-version := "5.2-dt-20190703Z-959705"
+version := "5.2-dt-20190703Z-a99e70"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-f2b467",
-  "org.scalablytyped" %%% "cookiejar" % "2.1-dt-20190116Z-331cfe",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-304e79",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf",
-  "org.scalablytyped" %%% "superagent" % "4.1-dt-20191028Z-0e3ffe")
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-0c825b",
+  "org.scalablytyped" %%% "cookiejar" % "2.1-dt-20190116Z-650089",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-382692",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d",
+  "org.scalablytyped" %%% "superagent" % "4.1-dt-20191028Z-eabbad")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

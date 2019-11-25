@@ -12,7 +12,7 @@ trait FnProps[R] extends js.Object {
 object FnProps {
   @scala.inline
   def apply[R](called: Boolean, value: R = null): FnProps[R] = {
-    val __obj = js.Dynamic.literal(called = called)
+    val __obj = js.Dynamic.literal(called = called.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FnProps[R]]
   }

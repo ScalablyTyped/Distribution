@@ -28,9 +28,9 @@ object Anon_AcceptanceAmount {
     notification_method: email | manual | none = null
   ): Anon_AcceptanceAmount = {
     val __obj = js.Dynamic.literal()
-    if (acceptance != null) __obj.updateDynamic("acceptance")(acceptance)
+    if (acceptance != null) __obj.updateDynamic("acceptance")(acceptance.asInstanceOf[js.Any])
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (currency != null) __obj.updateDynamic("currency")(currency)
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (notification_method != null) __obj.updateDynamic("notification_method")(notification_method.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AcceptanceAmount]

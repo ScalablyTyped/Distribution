@@ -23,7 +23,7 @@ object RequestOptions {
     method: HTTPMethods,
     port: Int | Double = null
   ): RequestOptions = {
-    val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], headers = headers, host = host, method = method)
+    val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }

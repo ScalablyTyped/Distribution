@@ -16,8 +16,8 @@ object Anon_ParameterName {
   @scala.inline
   def apply($ref: String = null, parameterName: String = null): Anon_ParameterName = {
     val __obj = js.Dynamic.literal()
-    if ($ref != null) __obj.updateDynamic("$ref")($ref)
-    if (parameterName != null) __obj.updateDynamic("parameterName")(parameterName)
+    if ($ref != null) __obj.updateDynamic("$ref")($ref.asInstanceOf[js.Any])
+    if (parameterName != null) __obj.updateDynamic("parameterName")(parameterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ParameterName]
   }
 }

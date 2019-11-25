@@ -32,13 +32,13 @@ object R3BaseRefMetaData {
     queries: js.Array[R3QueryMetadata] = null,
     viewQueries: js.Array[R3QueryMetadata] = null
   ): R3BaseRefMetaData = {
-    val __obj = js.Dynamic.literal(name = name, typeSourceSpan = typeSourceSpan)
-    __obj.updateDynamic("type")(`type`)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs)
-    if (queries != null) __obj.updateDynamic("queries")(queries)
-    if (viewQueries != null) __obj.updateDynamic("viewQueries")(viewQueries)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], typeSourceSpan = typeSourceSpan.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
+    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
+    if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
+    if (viewQueries != null) __obj.updateDynamic("viewQueries")(viewQueries.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3BaseRefMetaData]
   }
 }

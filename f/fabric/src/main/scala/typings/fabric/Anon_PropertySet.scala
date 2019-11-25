@@ -13,8 +13,8 @@ object Anon_PropertySet {
   @scala.inline
   def apply(propertySet: String = null, stateProperties: js.Array[_] = null): Anon_PropertySet = {
     val __obj = js.Dynamic.literal()
-    if (propertySet != null) __obj.updateDynamic("propertySet")(propertySet)
-    if (stateProperties != null) __obj.updateDynamic("stateProperties")(stateProperties)
+    if (propertySet != null) __obj.updateDynamic("propertySet")(propertySet.asInstanceOf[js.Any])
+    if (stateProperties != null) __obj.updateDynamic("stateProperties")(stateProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PropertySet]
   }
 }

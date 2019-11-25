@@ -12,7 +12,7 @@ object MuiThemeProviderProps {
   @scala.inline
   def apply(muiTheme: MuiTheme = null): MuiThemeProviderProps = {
     val __obj = js.Dynamic.literal()
-    if (muiTheme != null) __obj.updateDynamic("muiTheme")(muiTheme)
+    if (muiTheme != null) __obj.updateDynamic("muiTheme")(muiTheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[MuiThemeProviderProps]
   }
 }

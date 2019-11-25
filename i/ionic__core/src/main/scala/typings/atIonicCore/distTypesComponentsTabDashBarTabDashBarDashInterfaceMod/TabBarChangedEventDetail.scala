@@ -12,7 +12,7 @@ object TabBarChangedEventDetail {
   @scala.inline
   def apply(tab: String = null): TabBarChangedEventDetail = {
     val __obj = js.Dynamic.literal()
-    if (tab != null) __obj.updateDynamic("tab")(tab)
+    if (tab != null) __obj.updateDynamic("tab")(tab.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabBarChangedEventDetail]
   }
 }

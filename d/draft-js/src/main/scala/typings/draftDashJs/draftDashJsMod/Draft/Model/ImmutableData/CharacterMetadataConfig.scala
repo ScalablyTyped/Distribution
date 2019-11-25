@@ -13,8 +13,8 @@ object CharacterMetadataConfig {
   @scala.inline
   def apply(entity: String = null, style: DraftInlineStyle = null): CharacterMetadataConfig = {
     val __obj = js.Dynamic.literal()
-    if (entity != null) __obj.updateDynamic("entity")(entity)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[CharacterMetadataConfig]
   }
 }

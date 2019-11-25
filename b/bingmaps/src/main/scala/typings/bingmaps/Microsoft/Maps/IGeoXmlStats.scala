@@ -38,7 +38,7 @@ object IGeoXmlStats {
     numScreenOverlays: Double,
     processingTime: Double
   ): IGeoXmlStats = {
-    val __obj = js.Dynamic.literal(fileSize = fileSize, numGroundOverlays = numGroundOverlays, numLocations = numLocations, numNetworkLinks = numNetworkLinks, numPolygons = numPolygons, numPolylines = numPolylines, numPushpins = numPushpins, numScreenOverlays = numScreenOverlays, processingTime = processingTime)
+    val __obj = js.Dynamic.literal(fileSize = fileSize.asInstanceOf[js.Any], numGroundOverlays = numGroundOverlays.asInstanceOf[js.Any], numLocations = numLocations.asInstanceOf[js.Any], numNetworkLinks = numNetworkLinks.asInstanceOf[js.Any], numPolygons = numPolygons.asInstanceOf[js.Any], numPolylines = numPolylines.asInstanceOf[js.Any], numPushpins = numPushpins.asInstanceOf[js.Any], numScreenOverlays = numScreenOverlays.asInstanceOf[js.Any], processingTime = processingTime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IGeoXmlStats]
   }

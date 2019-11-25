@@ -27,7 +27,7 @@ object Options {
     maxDepth: Double,
     space: Int | Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal(allowClass = allowClass, allowDate = allowDate, allowFunction = allowFunction, allowRegExp = allowRegExp, allowSymbol = allowSymbol, allowUndefined = allowUndefined, maxDepth = maxDepth)
+    val __obj = js.Dynamic.literal(allowClass = allowClass.asInstanceOf[js.Any], allowDate = allowDate.asInstanceOf[js.Any], allowFunction = allowFunction.asInstanceOf[js.Any], allowRegExp = allowRegExp.asInstanceOf[js.Any], allowSymbol = allowSymbol.asInstanceOf[js.Any], allowUndefined = allowUndefined.asInstanceOf[js.Any], maxDepth = maxDepth.asInstanceOf[js.Any])
     if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

@@ -37,18 +37,18 @@ object SpreadsheetSheet {
     sort: SpreadsheetSheetSort = null
   ): SpreadsheetSheet = {
     val __obj = js.Dynamic.literal()
-    if (activeCell != null) __obj.updateDynamic("activeCell")(activeCell)
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (activeCell != null) __obj.updateDynamic("activeCell")(activeCell.asInstanceOf[js.Any])
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (frozenColumns != null) __obj.updateDynamic("frozenColumns")(frozenColumns.asInstanceOf[js.Any])
     if (frozenRows != null) __obj.updateDynamic("frozenRows")(frozenRows.asInstanceOf[js.Any])
-    if (mergedCells != null) __obj.updateDynamic("mergedCells")(mergedCells)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
-    if (selection != null) __obj.updateDynamic("selection")(selection)
-    if (!js.isUndefined(showGridLines)) __obj.updateDynamic("showGridLines")(showGridLines)
-    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (mergedCells != null) __obj.updateDynamic("mergedCells")(mergedCells.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGridLines)) __obj.updateDynamic("showGridLines")(showGridLines.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetSheet]
   }
 }

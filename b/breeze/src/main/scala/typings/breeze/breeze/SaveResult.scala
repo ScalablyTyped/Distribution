@@ -14,7 +14,7 @@ trait SaveResult extends js.Object {
 object SaveResult {
   @scala.inline
   def apply(XHR: XMLHttpRequest, entities: js.Array[Entity], keyMappings: js.Array[KeyMapping]): SaveResult = {
-    val __obj = js.Dynamic.literal(XHR = XHR, entities = entities, keyMappings = keyMappings)
+    val __obj = js.Dynamic.literal(XHR = XHR.asInstanceOf[js.Any], entities = entities.asInstanceOf[js.Any], keyMappings = keyMappings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SaveResult]
   }

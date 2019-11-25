@@ -16,8 +16,8 @@ object ISpineDisplayObject {
   @scala.inline
   def apply(attachment: Attachment = null, region: TextureRegion = null): ISpineDisplayObject = {
     val __obj = js.Dynamic.literal()
-    if (attachment != null) __obj.updateDynamic("attachment")(attachment)
-    if (region != null) __obj.updateDynamic("region")(region)
+    if (attachment != null) __obj.updateDynamic("attachment")(attachment.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpineDisplayObject]
   }
 }

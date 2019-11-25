@@ -1,6 +1,6 @@
 package typings.chromeDashApps.chrome.networking.config
 
-import typings.chromeDashApps.chromeDashAppsStrings.failed
+import typings.chromeDashApps.chromeDashAppsStrings.failed_
 import typings.chromeDashApps.chromeDashAppsStrings.rejected
 import typings.chromeDashApps.chromeDashAppsStrings.succeeded
 import typings.chromeDashApps.chromeDashAppsStrings.unhandled
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.networking.config.AuthenticationResult")
 @js.native
 object AuthenticationResult extends js.Object {
-  var FAILED: failed = js.native
+  var FAILED: failed_ = js.native
   var REJECTED: rejected = js.native
   var SUCCEEDED: succeeded = js.native
   var UNHANDLED: unhandled = js.native

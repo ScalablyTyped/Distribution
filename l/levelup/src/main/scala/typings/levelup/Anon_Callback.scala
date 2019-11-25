@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Callback extends js.Object {
   def get(
-    key: /* import warning: ImportType.apply Failed type conversion: infer K */ js.Any,
-    options: /* import warning: ImportType.apply Failed type conversion: infer O */ js.Any,
-    callback: ErrorValueCallback[/* import warning: ImportType.apply Failed type conversion: infer V */ js.Any]
+    key: /* import warning: importer.ImportType#apply Failed type conversion: infer K */ js.Any,
+    options: /* import warning: importer.ImportType#apply Failed type conversion: infer O */ js.Any,
+    callback: ErrorValueCallback[
+      /* import warning: importer.ImportType#apply Failed type conversion: infer V */ js.Any
+    ]
   ): Unit
 }
 
 object Anon_Callback {
   @scala.inline
   def apply(
-    get: (/* import warning: ImportType.apply Failed type conversion: infer K */ js.Any, /* import warning: ImportType.apply Failed type conversion: infer O */ js.Any, ErrorValueCallback[/* import warning: ImportType.apply Failed type conversion: infer V */ js.Any]) => Unit
+    get: (/* import warning: importer.ImportType#apply Failed type conversion: infer K */ js.Any, /* import warning: importer.ImportType#apply Failed type conversion: infer O */ js.Any, ErrorValueCallback[
+      /* import warning: importer.ImportType#apply Failed type conversion: infer V */ js.Any
+    ]) => Unit
   ): Anon_Callback = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction3(get))
   

@@ -18,7 +18,7 @@ trait _DeleteMessageBatchRequestEntry extends js.Object {
 object _DeleteMessageBatchRequestEntry {
   @scala.inline
   def apply(Id: String, ReceiptHandle: String): _DeleteMessageBatchRequestEntry = {
-    val __obj = js.Dynamic.literal(Id = Id, ReceiptHandle = ReceiptHandle)
+    val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], ReceiptHandle = ReceiptHandle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_DeleteMessageBatchRequestEntry]
   }

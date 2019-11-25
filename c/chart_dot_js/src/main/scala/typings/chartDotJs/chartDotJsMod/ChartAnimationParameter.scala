@@ -13,8 +13,8 @@ object ChartAnimationParameter {
   @scala.inline
   def apply(animationObject: js.Any = null, chartInstance: js.Any = null): ChartAnimationParameter = {
     val __obj = js.Dynamic.literal()
-    if (animationObject != null) __obj.updateDynamic("animationObject")(animationObject)
-    if (chartInstance != null) __obj.updateDynamic("chartInstance")(chartInstance)
+    if (animationObject != null) __obj.updateDynamic("animationObject")(animationObject.asInstanceOf[js.Any])
+    if (chartInstance != null) __obj.updateDynamic("chartInstance")(chartInstance.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAnimationParameter]
   }
 }

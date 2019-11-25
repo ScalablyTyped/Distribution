@@ -22,10 +22,10 @@ object StartEditingCellParams {
     keyPress: Int | Double = null,
     rowPinned: String = null
   ): StartEditingCellParams = {
-    val __obj = js.Dynamic.literal(colKey = colKey.asInstanceOf[js.Any], rowIndex = rowIndex)
-    if (charPress != null) __obj.updateDynamic("charPress")(charPress)
+    val __obj = js.Dynamic.literal(colKey = colKey.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any])
+    if (charPress != null) __obj.updateDynamic("charPress")(charPress.asInstanceOf[js.Any])
     if (keyPress != null) __obj.updateDynamic("keyPress")(keyPress.asInstanceOf[js.Any])
-    if (rowPinned != null) __obj.updateDynamic("rowPinned")(rowPinned)
+    if (rowPinned != null) __obj.updateDynamic("rowPinned")(rowPinned.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartEditingCellParams]
   }
 }

@@ -23,8 +23,8 @@ object NdefTag {
     techTypes: js.Array[String],
     `type`: String
   ): NdefTag = {
-    val __obj = js.Dynamic.literal(canMakeReadOnly = canMakeReadOnly, date = date, id = id, isWritable = isWritable, maxSize = maxSize, ndefMessage = ndefMessage, techTypes = techTypes)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(canMakeReadOnly = canMakeReadOnly.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isWritable = isWritable.asInstanceOf[js.Any], maxSize = maxSize.asInstanceOf[js.Any], ndefMessage = ndefMessage.asInstanceOf[js.Any], techTypes = techTypes.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NdefTag]
   }
 }

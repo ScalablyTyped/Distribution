@@ -29,12 +29,12 @@ object FixedObject {
     srcWebp: String = null,
     tracedSVG: String = null
   ): FixedObject = {
-    val __obj = js.Dynamic.literal(height = height, src = src, srcSet = srcSet, width = width)
-    if (base64 != null) __obj.updateDynamic("base64")(base64)
-    if (media != null) __obj.updateDynamic("media")(media)
-    if (srcSetWebp != null) __obj.updateDynamic("srcSetWebp")(srcSetWebp)
-    if (srcWebp != null) __obj.updateDynamic("srcWebp")(srcWebp)
-    if (tracedSVG != null) __obj.updateDynamic("tracedSVG")(tracedSVG)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], srcSet = srcSet.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (base64 != null) __obj.updateDynamic("base64")(base64.asInstanceOf[js.Any])
+    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
+    if (srcSetWebp != null) __obj.updateDynamic("srcSetWebp")(srcSetWebp.asInstanceOf[js.Any])
+    if (srcWebp != null) __obj.updateDynamic("srcWebp")(srcWebp.asInstanceOf[js.Any])
+    if (tracedSVG != null) __obj.updateDynamic("tracedSVG")(tracedSVG.asInstanceOf[js.Any])
     __obj.asInstanceOf[FixedObject]
   }
 }

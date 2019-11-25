@@ -55,7 +55,7 @@ object ResourceAttributes {
     verb: String,
     version: String
   ): ResourceAttributes = {
-    val __obj = js.Dynamic.literal(group = group, name = name, namespace = namespace, resource = resource, subresource = subresource, verb = verb, version = version)
+    val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], subresource = subresource.asInstanceOf[js.Any], verb = verb.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResourceAttributes]
   }

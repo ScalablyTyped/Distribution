@@ -25,8 +25,8 @@ object Anon_GapDegree {
     trailColor: String,
     `type`: String
   ): Anon_GapDegree = {
-    val __obj = js.Dynamic.literal(gapDegree = gapDegree, percent = percent, showInfo = showInfo, size = size, strokeLinecap = strokeLinecap, trailColor = trailColor)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(gapDegree = gapDegree.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], showInfo = showInfo.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], strokeLinecap = strokeLinecap.asInstanceOf[js.Any], trailColor = trailColor.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_GapDegree]
   }
 }

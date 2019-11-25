@@ -12,7 +12,7 @@ trait SessionMuteEvent extends js.Object {
 object SessionMuteEvent {
   @scala.inline
   def apply(audio: Boolean, video: Boolean): SessionMuteEvent = {
-    val __obj = js.Dynamic.literal(audio = audio, video = video)
+    val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SessionMuteEvent]
   }

@@ -12,7 +12,7 @@ trait ProjectsReviewUserPermissionLevelResponse extends js.Object {
 object ProjectsReviewUserPermissionLevelResponse {
   @scala.inline
   def apply(permission: String, user: ProjectsReviewUserPermissionLevelResponseUser): ProjectsReviewUserPermissionLevelResponse = {
-    val __obj = js.Dynamic.literal(permission = permission, user = user)
+    val __obj = js.Dynamic.literal(permission = permission.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProjectsReviewUserPermissionLevelResponse]
   }

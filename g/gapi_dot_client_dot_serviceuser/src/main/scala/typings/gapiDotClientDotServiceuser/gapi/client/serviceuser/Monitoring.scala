@@ -28,8 +28,8 @@ object Monitoring {
     producerDestinations: js.Array[MonitoringDestination] = null
   ): Monitoring = {
     val __obj = js.Dynamic.literal()
-    if (consumerDestinations != null) __obj.updateDynamic("consumerDestinations")(consumerDestinations)
-    if (producerDestinations != null) __obj.updateDynamic("producerDestinations")(producerDestinations)
+    if (consumerDestinations != null) __obj.updateDynamic("consumerDestinations")(consumerDestinations.asInstanceOf[js.Any])
+    if (producerDestinations != null) __obj.updateDynamic("producerDestinations")(producerDestinations.asInstanceOf[js.Any])
     __obj.asInstanceOf[Monitoring]
   }
 }

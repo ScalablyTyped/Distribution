@@ -16,7 +16,7 @@ trait PageInfo extends js.Object {
 object PageInfo {
   @scala.inline
   def apply(end: Double, start: Double): PageInfo = {
-    val __obj = js.Dynamic.literal(end = end, start = start)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PageInfo]
   }

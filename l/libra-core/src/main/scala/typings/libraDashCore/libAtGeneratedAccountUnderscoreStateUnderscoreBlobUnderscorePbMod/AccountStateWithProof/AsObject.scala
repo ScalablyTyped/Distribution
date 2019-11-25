@@ -21,9 +21,9 @@ object AsObject {
     blob: typings.libraDashCore.libAtGeneratedAccountUnderscoreStateUnderscoreBlobUnderscorePbMod.AccountStateBlob.AsObject = null,
     proof: typings.libraDashCore.libAtGeneratedProofUnderscorePbMod.AccountStateProof.AsObject = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(version = version)
-    if (blob != null) __obj.updateDynamic("blob")(blob)
-    if (proof != null) __obj.updateDynamic("proof")(proof)
+    val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+    if (blob != null) __obj.updateDynamic("blob")(blob.asInstanceOf[js.Any])
+    if (proof != null) __obj.updateDynamic("proof")(proof.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

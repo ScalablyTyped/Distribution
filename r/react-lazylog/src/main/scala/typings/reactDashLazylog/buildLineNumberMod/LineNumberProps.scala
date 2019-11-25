@@ -24,10 +24,10 @@ object LineNumberProps {
     onClick: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit = null,
     style: CSSProperties = null
   ): LineNumberProps = {
-    val __obj = js.Dynamic.literal(number = number)
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
+    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineNumberProps]
   }
 }

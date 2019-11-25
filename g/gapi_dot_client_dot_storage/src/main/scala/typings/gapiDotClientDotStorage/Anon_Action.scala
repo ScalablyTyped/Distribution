@@ -15,8 +15,8 @@ object Anon_Action {
   @scala.inline
   def apply(action: Anon_StorageClass = null, condition: Anon_Age = null): Anon_Action = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (condition != null) __obj.updateDynamic("condition")(condition)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Action]
   }
 }

@@ -22,8 +22,8 @@ trait CreateGlobalTableOutput extends OutputTypesUnion {
 object CreateGlobalTableOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, GlobalTableDescription: _UnmarshalledGlobalTableDescription = null): CreateGlobalTableOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (GlobalTableDescription != null) __obj.updateDynamic("GlobalTableDescription")(GlobalTableDescription)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (GlobalTableDescription != null) __obj.updateDynamic("GlobalTableDescription")(GlobalTableDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGlobalTableOutput]
   }
 }

@@ -11,7 +11,7 @@ trait ReactLoadablePluginOptions extends js.Object {
 object ReactLoadablePluginOptions {
   @scala.inline
   def apply(filename: String): ReactLoadablePluginOptions = {
-    val __obj = js.Dynamic.literal(filename = filename)
+    val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReactLoadablePluginOptions]
   }

@@ -61,11 +61,11 @@ object YAxisResizeOptions {
     y: Int | Double = null
   ): YAxisResizeOptions = {
     val __obj = js.Dynamic.literal()
-    if (controlledAxis != null) __obj.updateDynamic("controlledAxis")(controlledAxis)
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
-    if (lineDashStyle != null) __obj.updateDynamic("lineDashStyle")(lineDashStyle)
+    if (controlledAxis != null) __obj.updateDynamic("controlledAxis")(controlledAxis.asInstanceOf[js.Any])
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
+    if (lineDashStyle != null) __obj.updateDynamic("lineDashStyle")(lineDashStyle.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])

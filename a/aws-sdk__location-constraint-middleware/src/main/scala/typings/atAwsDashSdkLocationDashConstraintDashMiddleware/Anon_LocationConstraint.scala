@@ -12,7 +12,7 @@ object Anon_LocationConstraint {
   @scala.inline
   def apply(LocationConstraint: String = null): Anon_LocationConstraint = {
     val __obj = js.Dynamic.literal()
-    if (LocationConstraint != null) __obj.updateDynamic("LocationConstraint")(LocationConstraint)
+    if (LocationConstraint != null) __obj.updateDynamic("LocationConstraint")(LocationConstraint.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LocationConstraint]
   }
 }

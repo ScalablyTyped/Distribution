@@ -31,11 +31,11 @@ object FetchOptions {
     version: Int | Double = null
   ): FetchOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
     if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
     if (downloadTags != null) __obj.updateDynamic("downloadTags")(downloadTags.asInstanceOf[js.Any])
-    if (proxyOpts != null) __obj.updateDynamic("proxyOpts")(proxyOpts)
+    if (proxyOpts != null) __obj.updateDynamic("proxyOpts")(proxyOpts.asInstanceOf[js.Any])
     if (prune != null) __obj.updateDynamic("prune")(prune.asInstanceOf[js.Any])
     if (updateFetchhead != null) __obj.updateDynamic("updateFetchhead")(updateFetchhead.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])

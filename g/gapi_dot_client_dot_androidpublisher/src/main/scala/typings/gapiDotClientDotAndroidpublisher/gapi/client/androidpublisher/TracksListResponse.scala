@@ -14,8 +14,8 @@ object TracksListResponse {
   @scala.inline
   def apply(kind: String = null, tracks: js.Array[Track] = null): TracksListResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (tracks != null) __obj.updateDynamic("tracks")(tracks)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (tracks != null) __obj.updateDynamic("tracks")(tracks.asInstanceOf[js.Any])
     __obj.asInstanceOf[TracksListResponse]
   }
 }

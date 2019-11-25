@@ -24,7 +24,7 @@ object IGoToLiner {
     goToLine: /* widget */ T => Unit = null,
     isEnabled: T => Boolean = null
   ): IGoToLiner[T] = {
-    val __obj = js.Dynamic.literal(tracker = tracker)
+    val __obj = js.Dynamic.literal(tracker = tracker.asInstanceOf[js.Any])
     if (goToLine != null) __obj.updateDynamic("goToLine")(js.Any.fromFunction1(goToLine))
     if (isEnabled != null) __obj.updateDynamic("isEnabled")(js.Any.fromFunction1(isEnabled))
     __obj.asInstanceOf[IGoToLiner[T]]

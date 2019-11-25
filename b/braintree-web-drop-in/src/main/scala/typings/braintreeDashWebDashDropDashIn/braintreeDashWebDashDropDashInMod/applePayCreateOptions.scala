@@ -19,9 +19,9 @@ object applePayCreateOptions {
     applePaySessionVersion: Int | Double = null,
     buttonStyle: String = null
   ): applePayCreateOptions = {
-    val __obj = js.Dynamic.literal(displayName = displayName, paymentRequest = paymentRequest)
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], paymentRequest = paymentRequest.asInstanceOf[js.Any])
     if (applePaySessionVersion != null) __obj.updateDynamic("applePaySessionVersion")(applePaySessionVersion.asInstanceOf[js.Any])
-    if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle)
+    if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[applePayCreateOptions]
   }
 }

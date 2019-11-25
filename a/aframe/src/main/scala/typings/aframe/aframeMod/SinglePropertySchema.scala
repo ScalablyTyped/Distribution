@@ -23,7 +23,7 @@ object SinglePropertySchema {
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (parse != null) __obj.updateDynamic("parse")(js.Any.fromFunction1(parse))
     if (stringify != null) __obj.updateDynamic("stringify")(js.Any.fromFunction1(stringify))
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SinglePropertySchema[T]]
   }
 }

@@ -18,9 +18,9 @@ object Anon_ColumnsDrillAll {
     rows: js.Array[Anon_Measure] = null
   ): Anon_ColumnsDrillAll = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (!js.isUndefined(drillAll)) __obj.updateDynamic("drillAll")(drillAll)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (!js.isUndefined(drillAll)) __obj.updateDynamic("drillAll")(drillAll.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColumnsDrillAll]
   }
 }

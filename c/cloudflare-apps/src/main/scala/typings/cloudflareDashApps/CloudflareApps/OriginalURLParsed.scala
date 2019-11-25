@@ -17,7 +17,7 @@ trait OriginalURLParsed extends js.Object {
 object OriginalURLParsed {
   @scala.inline
   def apply(fragment: String, host: String, path: String, query: URLQuery, scheme: https | http): OriginalURLParsed = {
-    val __obj = js.Dynamic.literal(fragment = fragment, host = host, path = path, query = query, scheme = scheme.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fragment = fragment.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OriginalURLParsed]
   }

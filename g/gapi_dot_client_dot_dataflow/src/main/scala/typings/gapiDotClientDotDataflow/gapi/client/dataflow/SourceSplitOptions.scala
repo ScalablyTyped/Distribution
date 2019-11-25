@@ -18,8 +18,8 @@ object SourceSplitOptions {
   @scala.inline
   def apply(desiredBundleSizeBytes: String = null, desiredShardSizeBytes: String = null): SourceSplitOptions = {
     val __obj = js.Dynamic.literal()
-    if (desiredBundleSizeBytes != null) __obj.updateDynamic("desiredBundleSizeBytes")(desiredBundleSizeBytes)
-    if (desiredShardSizeBytes != null) __obj.updateDynamic("desiredShardSizeBytes")(desiredShardSizeBytes)
+    if (desiredBundleSizeBytes != null) __obj.updateDynamic("desiredBundleSizeBytes")(desiredBundleSizeBytes.asInstanceOf[js.Any])
+    if (desiredShardSizeBytes != null) __obj.updateDynamic("desiredShardSizeBytes")(desiredShardSizeBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceSplitOptions]
   }
 }

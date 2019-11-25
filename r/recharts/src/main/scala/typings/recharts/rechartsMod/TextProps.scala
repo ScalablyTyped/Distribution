@@ -32,10 +32,10 @@ object TextProps {
   ): TextProps = {
     val __obj = js.Dynamic.literal()
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (capHeight != null) __obj.updateDynamic("capHeight")(capHeight)
-    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight)
-    if (!js.isUndefined(scaleToFit)) __obj.updateDynamic("scaleToFit")(scaleToFit)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (capHeight != null) __obj.updateDynamic("capHeight")(capHeight.asInstanceOf[js.Any])
+    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleToFit)) __obj.updateDynamic("scaleToFit")(scaleToFit.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (textAnchor != null) __obj.updateDynamic("textAnchor")(textAnchor.asInstanceOf[js.Any])
     if (verticalAnchor != null) __obj.updateDynamic("verticalAnchor")(verticalAnchor.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextProps]

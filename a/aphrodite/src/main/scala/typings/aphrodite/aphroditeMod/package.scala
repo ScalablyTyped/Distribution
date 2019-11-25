@@ -15,7 +15,7 @@ package object aphroditeMod {
     /* callback */ js.Function1[/* selector */ String, String], 
     String | Null
   ]
-  type StyleDeclaration[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type StyleDeclaration[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: aphrodite.aphrodite/typings/css-properties.CSSProperties | aphrodite.aphrodite.StyleDeclarationMap}
     */ typings.aphrodite.aphroditeStrings.StyleDeclaration with js.Any
   type StyleDeclarationMap = Map[String, String | Double]

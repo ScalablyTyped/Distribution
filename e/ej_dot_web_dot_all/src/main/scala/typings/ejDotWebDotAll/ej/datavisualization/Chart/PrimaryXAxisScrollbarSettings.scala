@@ -31,10 +31,10 @@ object PrimaryXAxisScrollbarSettings {
     visible: js.UndefOr[Boolean] = js.undefined
   ): PrimaryXAxisScrollbarSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canResize)) __obj.updateDynamic("canResize")(canResize)
+    if (!js.isUndefined(canResize)) __obj.updateDynamic("canResize")(canResize.asInstanceOf[js.Any])
     if (pointsLength != null) __obj.updateDynamic("pointsLength")(pointsLength.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrimaryXAxisScrollbarSettings]
   }
 }

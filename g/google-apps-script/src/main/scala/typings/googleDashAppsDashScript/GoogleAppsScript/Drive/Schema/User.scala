@@ -24,12 +24,12 @@ object User {
     picture: UserPicture = null
   ): User = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress)
-    if (!js.isUndefined(isAuthenticatedUser)) __obj.updateDynamic("isAuthenticatedUser")(isAuthenticatedUser)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (permissionId != null) __obj.updateDynamic("permissionId")(permissionId)
-    if (picture != null) __obj.updateDynamic("picture")(picture)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAuthenticatedUser)) __obj.updateDynamic("isAuthenticatedUser")(isAuthenticatedUser.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (permissionId != null) __obj.updateDynamic("permissionId")(permissionId.asInstanceOf[js.Any])
+    if (picture != null) __obj.updateDynamic("picture")(picture.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
 }

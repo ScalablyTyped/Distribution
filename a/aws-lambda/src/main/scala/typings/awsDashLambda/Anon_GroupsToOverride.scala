@@ -18,9 +18,9 @@ object Anon_GroupsToOverride {
     preferredRole: String = null
   ): Anon_GroupsToOverride = {
     val __obj = js.Dynamic.literal()
-    if (groupsToOverride != null) __obj.updateDynamic("groupsToOverride")(groupsToOverride)
-    if (iamRolesToOverride != null) __obj.updateDynamic("iamRolesToOverride")(iamRolesToOverride)
-    if (preferredRole != null) __obj.updateDynamic("preferredRole")(preferredRole)
+    if (groupsToOverride != null) __obj.updateDynamic("groupsToOverride")(groupsToOverride.asInstanceOf[js.Any])
+    if (iamRolesToOverride != null) __obj.updateDynamic("iamRolesToOverride")(iamRolesToOverride.asInstanceOf[js.Any])
+    if (preferredRole != null) __obj.updateDynamic("preferredRole")(preferredRole.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_GroupsToOverride]
   }
 }

@@ -24,10 +24,10 @@ object ValidateFieldsOptions {
     scroll: DomScrollIntoViewConfig = null
   ): ValidateFieldsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(first)) __obj.updateDynamic("first")(first)
-    if (firstFields != null) __obj.updateDynamic("firstFields")(firstFields)
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (scroll != null) __obj.updateDynamic("scroll")(scroll)
+    if (!js.isUndefined(first)) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
+    if (firstFields != null) __obj.updateDynamic("firstFields")(firstFields.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidateFieldsOptions]
   }
 }

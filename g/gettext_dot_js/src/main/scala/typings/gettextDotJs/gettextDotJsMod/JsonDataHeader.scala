@@ -12,8 +12,8 @@ trait JsonDataHeader extends js.Object {
 object JsonDataHeader {
   @scala.inline
   def apply(language: String, `plural-forms`: String): JsonDataHeader = {
-    val __obj = js.Dynamic.literal(language = language)
-    __obj.updateDynamic("plural-forms")(`plural-forms`)
+    val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any])
+    __obj.updateDynamic("plural-forms")(`plural-forms`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonDataHeader]
   }
 }

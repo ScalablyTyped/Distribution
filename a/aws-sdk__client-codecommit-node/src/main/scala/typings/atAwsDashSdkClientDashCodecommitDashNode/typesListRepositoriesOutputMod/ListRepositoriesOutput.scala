@@ -30,9 +30,9 @@ object ListRepositoriesOutput {
     nextToken: String = null,
     repositories: js.Array[_UnmarshalledRepositoryNameIdPair] = null
   ): ListRepositoriesOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
-    if (repositories != null) __obj.updateDynamic("repositories")(repositories)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
+    if (repositories != null) __obj.updateDynamic("repositories")(repositories.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRepositoriesOutput]
   }
 }

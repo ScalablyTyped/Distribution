@@ -12,7 +12,7 @@ trait ValidatorStatic extends js.Object {
 object ValidatorStatic {
   @scala.inline
   def apply(unobtrusive: Validator): ValidatorStatic = {
-    val __obj = js.Dynamic.literal(unobtrusive = unobtrusive)
+    val __obj = js.Dynamic.literal(unobtrusive = unobtrusive.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ValidatorStatic]
   }

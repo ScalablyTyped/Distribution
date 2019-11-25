@@ -16,7 +16,7 @@ trait Anon_Paths extends js.Object {
 object Anon_Paths {
   @scala.inline
   def apply(paths: APIPaths, scopes: js.Array[APIChildScope], script: ExperimentURL): Anon_Paths = {
-    val __obj = js.Dynamic.literal(paths = paths, scopes = scopes, script = script)
+    val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Paths]
   }

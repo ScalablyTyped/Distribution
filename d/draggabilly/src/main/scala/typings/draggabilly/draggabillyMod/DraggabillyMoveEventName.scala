@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait DraggabillyMoveEventName extends js.Object
 
+object DraggabillyMoveEventName {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def dragMove: typings.draggabilly.draggabillyStrings.dragMove = this.cast("dragMove")
+  @scala.inline
+  def pointerMove: typings.draggabilly.draggabillyStrings.pointerMove = this.cast("pointerMove")
+}
+

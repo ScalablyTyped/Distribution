@@ -11,7 +11,7 @@ trait PositionInput extends js.Object {
 object PositionInput {
   @scala.inline
   def apply(pos: js.Tuple2[Double, Double]): PositionInput = {
-    val __obj = js.Dynamic.literal(pos = pos)
+    val __obj = js.Dynamic.literal(pos = pos.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PositionInput]
   }

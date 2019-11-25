@@ -44,9 +44,9 @@ object AutoscalingPolicy {
   ): AutoscalingPolicy = {
     val __obj = js.Dynamic.literal()
     if (coolDownPeriodSec != null) __obj.updateDynamic("coolDownPeriodSec")(coolDownPeriodSec.asInstanceOf[js.Any])
-    if (cpuUtilization != null) __obj.updateDynamic("cpuUtilization")(cpuUtilization)
-    if (customMetricUtilizations != null) __obj.updateDynamic("customMetricUtilizations")(customMetricUtilizations)
-    if (loadBalancingUtilization != null) __obj.updateDynamic("loadBalancingUtilization")(loadBalancingUtilization)
+    if (cpuUtilization != null) __obj.updateDynamic("cpuUtilization")(cpuUtilization.asInstanceOf[js.Any])
+    if (customMetricUtilizations != null) __obj.updateDynamic("customMetricUtilizations")(customMetricUtilizations.asInstanceOf[js.Any])
+    if (loadBalancingUtilization != null) __obj.updateDynamic("loadBalancingUtilization")(loadBalancingUtilization.asInstanceOf[js.Any])
     if (maxNumReplicas != null) __obj.updateDynamic("maxNumReplicas")(maxNumReplicas.asInstanceOf[js.Any])
     if (minNumReplicas != null) __obj.updateDynamic("minNumReplicas")(minNumReplicas.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoscalingPolicy]

@@ -65,15 +65,15 @@ object SearchVariantsRequest {
     variantSetIds: js.Array[String] = null
   ): SearchVariantsRequest = {
     val __obj = js.Dynamic.literal()
-    if (callSetIds != null) __obj.updateDynamic("callSetIds")(callSetIds)
-    if (end != null) __obj.updateDynamic("end")(end)
+    if (callSetIds != null) __obj.updateDynamic("callSetIds")(callSetIds.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (maxCalls != null) __obj.updateDynamic("maxCalls")(maxCalls.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
-    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (variantName != null) __obj.updateDynamic("variantName")(variantName)
-    if (variantSetIds != null) __obj.updateDynamic("variantSetIds")(variantSetIds)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (variantName != null) __obj.updateDynamic("variantName")(variantName.asInstanceOf[js.Any])
+    if (variantSetIds != null) __obj.updateDynamic("variantSetIds")(variantSetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchVariantsRequest]
   }
 }

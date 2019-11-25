@@ -13,8 +13,8 @@ object CustomerRiskData {
   @scala.inline
   def apply(customerBrowser: String = null, customerIp: String = null): CustomerRiskData = {
     val __obj = js.Dynamic.literal()
-    if (customerBrowser != null) __obj.updateDynamic("customerBrowser")(customerBrowser)
-    if (customerIp != null) __obj.updateDynamic("customerIp")(customerIp)
+    if (customerBrowser != null) __obj.updateDynamic("customerBrowser")(customerBrowser.asInstanceOf[js.Any])
+    if (customerIp != null) __obj.updateDynamic("customerIp")(customerIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomerRiskData]
   }
 }

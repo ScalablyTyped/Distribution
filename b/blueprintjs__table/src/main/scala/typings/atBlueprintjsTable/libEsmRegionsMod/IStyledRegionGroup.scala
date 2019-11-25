@@ -12,8 +12,8 @@ trait IStyledRegionGroup extends js.Object {
 object IStyledRegionGroup {
   @scala.inline
   def apply(regions: js.Array[IRegion], className: String = null): IStyledRegionGroup = {
-    val __obj = js.Dynamic.literal(regions = regions)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(regions = regions.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStyledRegionGroup]
   }
 }

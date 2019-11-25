@@ -12,7 +12,7 @@ object Anon_SmoothBoolean {
   @scala.inline
   def apply(smooth: js.UndefOr[Boolean] = js.undefined): Anon_SmoothBoolean = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(smooth)) __obj.updateDynamic("smooth")(smooth)
+    if (!js.isUndefined(smooth)) __obj.updateDynamic("smooth")(smooth.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_SmoothBoolean]
   }
 }

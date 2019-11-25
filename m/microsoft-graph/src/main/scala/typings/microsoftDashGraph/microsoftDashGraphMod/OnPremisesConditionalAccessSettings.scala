@@ -31,11 +31,11 @@ object OnPremisesConditionalAccessSettings {
     overrideDefaultRule: js.UndefOr[Boolean] = js.undefined
   ): OnPremisesConditionalAccessSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (excludedGroups != null) __obj.updateDynamic("excludedGroups")(excludedGroups)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (includedGroups != null) __obj.updateDynamic("includedGroups")(includedGroups)
-    if (!js.isUndefined(overrideDefaultRule)) __obj.updateDynamic("overrideDefaultRule")(overrideDefaultRule)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (excludedGroups != null) __obj.updateDynamic("excludedGroups")(excludedGroups.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (includedGroups != null) __obj.updateDynamic("includedGroups")(includedGroups.asInstanceOf[js.Any])
+    if (!js.isUndefined(overrideDefaultRule)) __obj.updateDynamic("overrideDefaultRule")(overrideDefaultRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnPremisesConditionalAccessSettings]
   }
 }

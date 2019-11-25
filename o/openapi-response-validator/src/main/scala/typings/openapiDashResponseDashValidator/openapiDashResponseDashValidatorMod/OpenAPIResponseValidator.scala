@@ -14,7 +14,7 @@ trait OpenAPIResponseValidator extends IOpenAPIResponseValidator {
 object OpenAPIResponseValidator {
   @scala.inline
   def apply(errorMapper: js.Any, validateResponse: (js.Any, js.Any) => Anon_Errors, validators: js.Any): OpenAPIResponseValidator = {
-    val __obj = js.Dynamic.literal(errorMapper = errorMapper, validateResponse = js.Any.fromFunction2(validateResponse), validators = validators)
+    val __obj = js.Dynamic.literal(errorMapper = errorMapper.asInstanceOf[js.Any], validateResponse = js.Any.fromFunction2(validateResponse), validators = validators.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OpenAPIResponseValidator]
   }

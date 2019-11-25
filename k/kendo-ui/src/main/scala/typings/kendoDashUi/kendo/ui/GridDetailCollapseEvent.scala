@@ -19,9 +19,9 @@ object GridDetailCollapseEvent {
     detailRow: JQuery = null,
     masterRow: JQuery = null
   ): GridDetailCollapseEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (detailRow != null) __obj.updateDynamic("detailRow")(detailRow)
-    if (masterRow != null) __obj.updateDynamic("masterRow")(masterRow)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (detailRow != null) __obj.updateDynamic("detailRow")(detailRow.asInstanceOf[js.Any])
+    if (masterRow != null) __obj.updateDynamic("masterRow")(masterRow.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridDetailCollapseEvent]
   }
 }

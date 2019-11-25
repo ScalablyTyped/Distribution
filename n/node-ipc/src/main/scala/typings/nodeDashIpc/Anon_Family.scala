@@ -37,11 +37,11 @@ object Anon_Family {
     lookup: js.UndefOr[Boolean] = js.undefined
   ): Anon_Family = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(family)) __obj.updateDynamic("family")(family)
-    if (!js.isUndefined(hints)) __obj.updateDynamic("hints")(hints)
-    if (!js.isUndefined(localAddress)) __obj.updateDynamic("localAddress")(localAddress)
-    if (!js.isUndefined(localPort)) __obj.updateDynamic("localPort")(localPort)
-    if (!js.isUndefined(lookup)) __obj.updateDynamic("lookup")(lookup)
+    if (!js.isUndefined(family)) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
+    if (!js.isUndefined(hints)) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
+    if (!js.isUndefined(localAddress)) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
+    if (!js.isUndefined(localPort)) __obj.updateDynamic("localPort")(localPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(lookup)) __obj.updateDynamic("lookup")(lookup.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Family]
   }
 }

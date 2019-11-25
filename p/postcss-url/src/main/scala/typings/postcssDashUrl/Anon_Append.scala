@@ -30,7 +30,7 @@ object Anon_Append {
     shrink: Int | Double = null
   ): Anon_Append = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append)
+    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (shrink != null) __obj.updateDynamic("shrink")(shrink.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Append]

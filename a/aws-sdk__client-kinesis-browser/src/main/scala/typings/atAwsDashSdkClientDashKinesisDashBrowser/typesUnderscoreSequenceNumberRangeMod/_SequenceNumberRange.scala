@@ -18,8 +18,8 @@ trait _SequenceNumberRange extends js.Object {
 object _SequenceNumberRange {
   @scala.inline
   def apply(StartingSequenceNumber: String, EndingSequenceNumber: String = null): _SequenceNumberRange = {
-    val __obj = js.Dynamic.literal(StartingSequenceNumber = StartingSequenceNumber)
-    if (EndingSequenceNumber != null) __obj.updateDynamic("EndingSequenceNumber")(EndingSequenceNumber)
+    val __obj = js.Dynamic.literal(StartingSequenceNumber = StartingSequenceNumber.asInstanceOf[js.Any])
+    if (EndingSequenceNumber != null) __obj.updateDynamic("EndingSequenceNumber")(EndingSequenceNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SequenceNumberRange]
   }
 }

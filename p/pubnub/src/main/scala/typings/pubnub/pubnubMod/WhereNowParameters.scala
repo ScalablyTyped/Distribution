@@ -13,7 +13,7 @@ object WhereNowParameters {
   @scala.inline
   def apply(uuid: String = null): WhereNowParameters = {
     val __obj = js.Dynamic.literal()
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid)
+    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[WhereNowParameters]
   }
 }

@@ -21,8 +21,8 @@ trait ConsoleProfileFinishedEventDataType extends js.Object {
 object ConsoleProfileFinishedEventDataType {
   @scala.inline
   def apply(id: java.lang.String, location: Location, profile: Profile, title: java.lang.String = null): ConsoleProfileFinishedEventDataType = {
-    val __obj = js.Dynamic.literal(id = id, location = location, profile = profile)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsoleProfileFinishedEventDataType]
   }
 }

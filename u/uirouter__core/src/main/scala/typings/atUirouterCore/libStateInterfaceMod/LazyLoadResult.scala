@@ -12,7 +12,7 @@ object LazyLoadResult {
   @scala.inline
   def apply(states: js.Array[StateDeclaration] = null): LazyLoadResult = {
     val __obj = js.Dynamic.literal()
-    if (states != null) __obj.updateDynamic("states")(states)
+    if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
     __obj.asInstanceOf[LazyLoadResult]
   }
 }

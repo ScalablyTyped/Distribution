@@ -13,7 +13,7 @@ trait Adapter extends js.Object {
 object Adapter {
   @scala.inline
   def apply(adapt: js.Function, name: String, params: js.Array[String]): Adapter = {
-    val __obj = js.Dynamic.literal(adapt = adapt, name = name, params = params)
+    val __obj = js.Dynamic.literal(adapt = adapt.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Adapter]
   }

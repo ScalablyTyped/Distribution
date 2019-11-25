@@ -54,7 +54,7 @@ object BindParameter {
     if (maxArraySize != null) __obj.updateDynamic("maxArraySize")(maxArraySize.asInstanceOf[js.Any])
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (`val` != null) __obj.updateDynamic("val")(`val`)
+    if (`val` != null) __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindParameter]
   }
 }

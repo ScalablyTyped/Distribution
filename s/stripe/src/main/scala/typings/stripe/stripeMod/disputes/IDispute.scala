@@ -113,9 +113,9 @@ object IDispute {
     status: warning_needs_response | warning_under_review | warning_closed | needs_response | response_disabled | under_review | charge_refunded | won | lost,
     evidence_details: Anon_Dueby = null
   ): IDispute = {
-    val __obj = js.Dynamic.literal(amount = amount, balance_transactions = balance_transactions, charge = charge.asInstanceOf[js.Any], created = created, currency = currency, evidence = evidence, id = id, is_charge_refundable = is_charge_refundable, livemode = livemode, metadata = metadata, reason = reason.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`)
-    if (evidence_details != null) __obj.updateDynamic("evidence_details")(evidence_details)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], balance_transactions = balance_transactions.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], evidence = evidence.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_charge_refundable = is_charge_refundable.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (evidence_details != null) __obj.updateDynamic("evidence_details")(evidence_details.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDispute]
   }
 }

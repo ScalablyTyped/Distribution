@@ -12,8 +12,8 @@ trait IdentifierSqlTokenType extends _SqlTokenType {
 object IdentifierSqlTokenType {
   @scala.inline
   def apply(names: js.Array[String], `type`: js.Symbol): IdentifierSqlTokenType = {
-    val __obj = js.Dynamic.literal(names = names)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentifierSqlTokenType]
   }
 }

@@ -20,9 +20,9 @@ object CompareOptions {
     tolerance: Int | Double = null
   ): CompareOptions = {
     val __obj = js.Dynamic.literal()
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (highlightColor != null) __obj.updateDynamic("highlightColor")(highlightColor)
-    if (highlightStyle != null) __obj.updateDynamic("highlightStyle")(highlightStyle)
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (highlightColor != null) __obj.updateDynamic("highlightColor")(highlightColor.asInstanceOf[js.Any])
+    if (highlightStyle != null) __obj.updateDynamic("highlightStyle")(highlightStyle.asInstanceOf[js.Any])
     if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompareOptions]
   }

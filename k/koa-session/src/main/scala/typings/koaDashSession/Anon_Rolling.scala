@@ -12,7 +12,7 @@ object Anon_Rolling {
   @scala.inline
   def apply(rolling: js.UndefOr[Boolean] = js.undefined): Anon_Rolling = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(rolling)) __obj.updateDynamic("rolling")(rolling)
+    if (!js.isUndefined(rolling)) __obj.updateDynamic("rolling")(rolling.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Rolling]
   }
 }

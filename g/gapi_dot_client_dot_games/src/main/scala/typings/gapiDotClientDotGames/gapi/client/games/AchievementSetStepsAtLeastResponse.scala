@@ -22,8 +22,8 @@ object AchievementSetStepsAtLeastResponse {
   ): AchievementSetStepsAtLeastResponse = {
     val __obj = js.Dynamic.literal()
     if (currentSteps != null) __obj.updateDynamic("currentSteps")(currentSteps.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (!js.isUndefined(newlyUnlocked)) __obj.updateDynamic("newlyUnlocked")(newlyUnlocked)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (!js.isUndefined(newlyUnlocked)) __obj.updateDynamic("newlyUnlocked")(newlyUnlocked.asInstanceOf[js.Any])
     __obj.asInstanceOf[AchievementSetStepsAtLeastResponse]
   }
 }

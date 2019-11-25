@@ -17,9 +17,9 @@ object HistoryOptions {
     silent: js.UndefOr[Boolean] = js.undefined
   ): HistoryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(pushState)) __obj.updateDynamic("pushState")(pushState)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (!js.isUndefined(pushState)) __obj.updateDynamic("pushState")(pushState.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryOptions]
   }
 }

@@ -21,7 +21,7 @@ object ResponseInformation {
     creativeTemplateId: Int | Double = null,
     lineItemId: Int | Double = null
   ): ResponseInformation = {
-    val __obj = js.Dynamic.literal(advertiserId = advertiserId, campaignId = campaignId)
+    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], campaignId = campaignId.asInstanceOf[js.Any])
     if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId.asInstanceOf[js.Any])
     if (creativeTemplateId != null) __obj.updateDynamic("creativeTemplateId")(creativeTemplateId.asInstanceOf[js.Any])
     if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId.asInstanceOf[js.Any])

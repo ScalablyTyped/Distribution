@@ -2,7 +2,7 @@ package typings.atAwsDashSdkClientDashS3DashNode.typesUploadPartCopyOutputMod
 
 import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.AES256
 import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.`aws:kms`
-import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.requester
+import typings.atAwsDashSdkClientDashS3DashNode.atAwsDashSdkClientDashS3DashNodeStrings.requester_
 import typings.atAwsDashSdkClientDashS3DashNode.typesOutputTypesUnionMod._OutputTypesUnion
 import typings.atAwsDashSdkClientDashS3DashNode.typesUnderscoreCopyPartResultMod._UnmarshalledCopyPartResult
 import typings.atAwsDashSdkTypes.buildResponseMod.MetadataBearer
@@ -25,7 +25,7 @@ trait UploadPartCopyOutput
   /**
     * <p>If present, indicates that the requester was successfully charged for the request.</p>
     */
-  var RequestCharged: js.UndefOr[requester | String] = js.undefined
+  var RequestCharged: js.UndefOr[requester_ | String] = js.undefined
   /**
     * <p>If server-side encryption with a customer-provided encryption key was requested, the response will include this header confirming the encryption algorithm used.</p>
     */
@@ -50,19 +50,19 @@ object UploadPartCopyOutput {
     $metadata: ResponseMetadata,
     CopyPartResult: _UnmarshalledCopyPartResult = null,
     CopySourceVersionId: String = null,
-    RequestCharged: requester | String = null,
+    RequestCharged: requester_ | String = null,
     SSECustomerAlgorithm: String = null,
     SSECustomerKeyMD5: String = null,
     SSEKMSKeyId: String = null,
     ServerSideEncryption: AES256 | `aws:kms` | String = null
   ): UploadPartCopyOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (CopyPartResult != null) __obj.updateDynamic("CopyPartResult")(CopyPartResult)
-    if (CopySourceVersionId != null) __obj.updateDynamic("CopySourceVersionId")(CopySourceVersionId)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (CopyPartResult != null) __obj.updateDynamic("CopyPartResult")(CopyPartResult.asInstanceOf[js.Any])
+    if (CopySourceVersionId != null) __obj.updateDynamic("CopySourceVersionId")(CopySourceVersionId.asInstanceOf[js.Any])
     if (RequestCharged != null) __obj.updateDynamic("RequestCharged")(RequestCharged.asInstanceOf[js.Any])
-    if (SSECustomerAlgorithm != null) __obj.updateDynamic("SSECustomerAlgorithm")(SSECustomerAlgorithm)
-    if (SSECustomerKeyMD5 != null) __obj.updateDynamic("SSECustomerKeyMD5")(SSECustomerKeyMD5)
-    if (SSEKMSKeyId != null) __obj.updateDynamic("SSEKMSKeyId")(SSEKMSKeyId)
+    if (SSECustomerAlgorithm != null) __obj.updateDynamic("SSECustomerAlgorithm")(SSECustomerAlgorithm.asInstanceOf[js.Any])
+    if (SSECustomerKeyMD5 != null) __obj.updateDynamic("SSECustomerKeyMD5")(SSECustomerKeyMD5.asInstanceOf[js.Any])
+    if (SSEKMSKeyId != null) __obj.updateDynamic("SSEKMSKeyId")(SSEKMSKeyId.asInstanceOf[js.Any])
     if (ServerSideEncryption != null) __obj.updateDynamic("ServerSideEncryption")(ServerSideEncryption.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadPartCopyOutput]
   }

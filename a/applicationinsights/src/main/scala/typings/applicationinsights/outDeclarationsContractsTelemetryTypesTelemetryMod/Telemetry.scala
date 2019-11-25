@@ -34,10 +34,10 @@ object Telemetry {
     time: Date = null
   ): Telemetry = {
     val __obj = js.Dynamic.literal()
-    if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (tagOverrides != null) __obj.updateDynamic("tagOverrides")(tagOverrides)
-    if (time != null) __obj.updateDynamic("time")(time)
+    if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (tagOverrides != null) __obj.updateDynamic("tagOverrides")(tagOverrides.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[Telemetry]
   }
 }

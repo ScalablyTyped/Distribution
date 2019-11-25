@@ -25,8 +25,8 @@ trait EmitterOpEaseConfig extends _EmitterOpOnUpdateType {
 object EmitterOpEaseConfig {
   @scala.inline
   def apply(end: Double, start: Double, ease: String = null): EmitterOpEaseConfig = {
-    val __obj = js.Dynamic.literal(end = end, start = start)
-    if (ease != null) __obj.updateDynamic("ease")(ease)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    if (ease != null) __obj.updateDynamic("ease")(ease.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmitterOpEaseConfig]
   }
 }

@@ -43,12 +43,12 @@ object DestinationAddress {
     state: String = null,
     unparsed: String = null
   ): DestinationAddress = {
-    val __obj = js.Dynamic.literal(city = city, country = country, number = number, street = street)
-    if (apartment != null) __obj.updateDynamic("apartment")(apartment)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (unparsed != null) __obj.updateDynamic("unparsed")(unparsed)
+    val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], street = street.asInstanceOf[js.Any])
+    if (apartment != null) __obj.updateDynamic("apartment")(apartment.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (unparsed != null) __obj.updateDynamic("unparsed")(unparsed.asInstanceOf[js.Any])
     __obj.asInstanceOf[DestinationAddress]
   }
 }

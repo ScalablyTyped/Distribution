@@ -68,14 +68,14 @@ object AttachmentInfoProperties {
     url: String = null
   ): AttachmentInfoProperties = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (exifInfo != null) __obj.updateDynamic("exifInfo")(exifInfo)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (exifInfo != null) __obj.updateDynamic("exifInfo")(exifInfo.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (parentObjectId != null) __obj.updateDynamic("parentObjectId")(parentObjectId.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentInfoProperties]
   }
 }

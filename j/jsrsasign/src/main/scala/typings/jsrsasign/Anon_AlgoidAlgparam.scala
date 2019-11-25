@@ -13,7 +13,7 @@ trait Anon_AlgoidAlgparam extends js.Object {
 object Anon_AlgoidAlgparam {
   @scala.inline
   def apply(algoid: String, algparam: String, key: String): Anon_AlgoidAlgparam = {
-    val __obj = js.Dynamic.literal(algoid = algoid, algparam = algparam, key = key)
+    val __obj = js.Dynamic.literal(algoid = algoid.asInstanceOf[js.Any], algparam = algparam.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AlgoidAlgparam]
   }

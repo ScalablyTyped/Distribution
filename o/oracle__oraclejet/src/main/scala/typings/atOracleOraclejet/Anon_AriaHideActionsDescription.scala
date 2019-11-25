@@ -18,9 +18,9 @@ object Anon_AriaHideActionsDescription {
     ariaShowStartActionsDescription: String = null
   ): Anon_AriaHideActionsDescription = {
     val __obj = js.Dynamic.literal()
-    if (ariaHideActionsDescription != null) __obj.updateDynamic("ariaHideActionsDescription")(ariaHideActionsDescription)
-    if (ariaShowEndActionsDescription != null) __obj.updateDynamic("ariaShowEndActionsDescription")(ariaShowEndActionsDescription)
-    if (ariaShowStartActionsDescription != null) __obj.updateDynamic("ariaShowStartActionsDescription")(ariaShowStartActionsDescription)
+    if (ariaHideActionsDescription != null) __obj.updateDynamic("ariaHideActionsDescription")(ariaHideActionsDescription.asInstanceOf[js.Any])
+    if (ariaShowEndActionsDescription != null) __obj.updateDynamic("ariaShowEndActionsDescription")(ariaShowEndActionsDescription.asInstanceOf[js.Any])
+    if (ariaShowStartActionsDescription != null) __obj.updateDynamic("ariaShowStartActionsDescription")(ariaShowStartActionsDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AriaHideActionsDescription]
   }
 }

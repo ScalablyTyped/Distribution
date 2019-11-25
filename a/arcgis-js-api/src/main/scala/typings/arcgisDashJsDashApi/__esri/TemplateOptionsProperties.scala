@@ -142,17 +142,17 @@ object TemplateOptionsProperties {
     width: Int | Double = null
   ): TemplateOptionsProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(attributionEnabled)) __obj.updateDynamic("attributionEnabled")(attributionEnabled)
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
-    if (dpi != null) __obj.updateDynamic("dpi")(dpi)
-    if (!js.isUndefined(forceFeatureAttributes)) __obj.updateDynamic("forceFeatureAttributes")(forceFeatureAttributes)
+    if (!js.isUndefined(attributionEnabled)) __obj.updateDynamic("attributionEnabled")(attributionEnabled.asInstanceOf[js.Any])
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
+    if (dpi != null) __obj.updateDynamic("dpi")(dpi.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceFeatureAttributes)) __obj.updateDynamic("forceFeatureAttributes")(forceFeatureAttributes.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled)
-    if (!js.isUndefined(scaleEnabled)) __obj.updateDynamic("scaleEnabled")(scaleEnabled)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleEnabled)) __obj.updateDynamic("scaleEnabled")(scaleEnabled.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateOptionsProperties]
   }

@@ -25,10 +25,10 @@ object Sod {
     qfn: js.Array[_] = null,
     reset: js.UndefOr[Boolean] = js.undefined
   ): Sod = {
-    val __obj = js.Dynamic.literal(key = key, loaded = loaded, state = state, url = url)
-    if (depkeys != null) __obj.updateDynamic("depkeys")(depkeys)
-    if (qfn != null) __obj.updateDynamic("qfn")(qfn)
-    if (!js.isUndefined(reset)) __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], loaded = loaded.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (depkeys != null) __obj.updateDynamic("depkeys")(depkeys.asInstanceOf[js.Any])
+    if (qfn != null) __obj.updateDynamic("qfn")(qfn.asInstanceOf[js.Any])
+    if (!js.isUndefined(reset)) __obj.updateDynamic("reset")(reset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sod]
   }
 }

@@ -13,7 +13,7 @@ object SocketConfig {
   @scala.inline
   def apply(address: String = null, port: Int | Double = null): SocketConfig = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketConfig]
   }

@@ -12,7 +12,7 @@ trait Anon_RenderElementTag extends js.Object {
 object Anon_RenderElementTag {
   @scala.inline
   def apply(renderElementTag: String, renderElementTo: js.Any): Anon_RenderElementTag = {
-    val __obj = js.Dynamic.literal(renderElementTag = renderElementTag, renderElementTo = renderElementTo)
+    val __obj = js.Dynamic.literal(renderElementTag = renderElementTag.asInstanceOf[js.Any], renderElementTo = renderElementTo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_RenderElementTag]
   }

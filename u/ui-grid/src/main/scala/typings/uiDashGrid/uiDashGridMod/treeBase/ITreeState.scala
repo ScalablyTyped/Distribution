@@ -12,7 +12,7 @@ trait ITreeState extends js.Object {
 object ITreeState {
   @scala.inline
   def apply(expandedState: StringDictionary[String]): ITreeState = {
-    val __obj = js.Dynamic.literal(expandedState = expandedState)
+    val __obj = js.Dynamic.literal(expandedState = expandedState.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITreeState]
   }

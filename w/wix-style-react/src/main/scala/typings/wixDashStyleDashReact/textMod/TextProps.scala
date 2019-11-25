@@ -30,15 +30,15 @@ object TextProps {
     weight: TextWeight = null
   ): TextProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(ellipsis)) __obj.updateDynamic("ellipsis")(ellipsis)
-    if (!js.isUndefined(light)) __obj.updateDynamic("light")(light)
-    if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary)
-    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (skin != null) __obj.updateDynamic("skin")(skin)
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
-    if (weight != null) __obj.updateDynamic("weight")(weight)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(ellipsis)) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
+    if (!js.isUndefined(light)) __obj.updateDynamic("light")(light.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextProps]
   }
 }

@@ -43,10 +43,10 @@ object RunQueryResponse {
     transaction: String = null
   ): RunQueryResponse = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (readTime != null) __obj.updateDynamic("readTime")(readTime)
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
     if (skippedResults != null) __obj.updateDynamic("skippedResults")(skippedResults.asInstanceOf[js.Any])
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunQueryResponse]
   }
 }

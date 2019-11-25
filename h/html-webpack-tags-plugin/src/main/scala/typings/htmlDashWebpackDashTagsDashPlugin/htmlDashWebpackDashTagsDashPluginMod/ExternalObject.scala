@@ -12,7 +12,7 @@ trait ExternalObject extends js.Object {
 object ExternalObject {
   @scala.inline
   def apply(packageName: String, variableName: String): ExternalObject = {
-    val __obj = js.Dynamic.literal(packageName = packageName, variableName = variableName)
+    val __obj = js.Dynamic.literal(packageName = packageName.asInstanceOf[js.Any], variableName = variableName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExternalObject]
   }

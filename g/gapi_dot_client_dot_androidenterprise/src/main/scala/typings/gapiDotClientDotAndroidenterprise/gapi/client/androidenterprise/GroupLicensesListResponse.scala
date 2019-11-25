@@ -15,8 +15,8 @@ object GroupLicensesListResponse {
   @scala.inline
   def apply(groupLicense: js.Array[GroupLicense] = null, kind: String = null): GroupLicensesListResponse = {
     val __obj = js.Dynamic.literal()
-    if (groupLicense != null) __obj.updateDynamic("groupLicense")(groupLicense)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (groupLicense != null) __obj.updateDynamic("groupLicense")(groupLicense.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupLicensesListResponse]
   }
 }

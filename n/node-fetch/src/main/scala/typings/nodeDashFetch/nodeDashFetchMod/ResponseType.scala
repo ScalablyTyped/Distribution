@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait ResponseType extends js.Object
 
+object ResponseType {
+  @scala.inline
+  def basic: typings.nodeDashFetch.nodeDashFetchStrings.basic = this.cast("basic")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def cors: typings.nodeDashFetch.nodeDashFetchStrings.cors = this.cast("cors")
+  @scala.inline
+  def default: typings.nodeDashFetch.nodeDashFetchStrings.default = this.cast("default")
+  @scala.inline
+  def error: typings.nodeDashFetch.nodeDashFetchStrings.error = this.cast("error")
+  @scala.inline
+  def opaque: typings.nodeDashFetch.nodeDashFetchStrings.opaque = this.cast("opaque")
+  @scala.inline
+  def opaqueredirect: typings.nodeDashFetch.nodeDashFetchStrings.opaqueredirect = this.cast("opaqueredirect")
+}
+

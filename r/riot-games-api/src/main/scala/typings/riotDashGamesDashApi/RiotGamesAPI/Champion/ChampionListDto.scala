@@ -11,7 +11,7 @@ trait ChampionListDto extends js.Object {
 object ChampionListDto {
   @scala.inline
   def apply(champions: js.Array[ChampionDto]): ChampionListDto = {
-    val __obj = js.Dynamic.literal(champions = champions)
+    val __obj = js.Dynamic.literal(champions = champions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChampionListDto]
   }

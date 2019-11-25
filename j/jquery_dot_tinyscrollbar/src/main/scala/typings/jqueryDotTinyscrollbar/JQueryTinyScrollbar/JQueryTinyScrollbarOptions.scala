@@ -47,12 +47,12 @@ object JQueryTinyScrollbarOptions {
     wheel: Int | Double = null
   ): JQueryTinyScrollbarOptions = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis)
-    if (!js.isUndefined(invertscroll)) __obj.updateDynamic("invertscroll")(invertscroll)
-    if (!js.isUndefined(lockscroll)) __obj.updateDynamic("lockscroll")(lockscroll)
-    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (sizethumb != null) __obj.updateDynamic("sizethumb")(sizethumb)
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (!js.isUndefined(invertscroll)) __obj.updateDynamic("invertscroll")(invertscroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockscroll)) __obj.updateDynamic("lockscroll")(lockscroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (sizethumb != null) __obj.updateDynamic("sizethumb")(sizethumb.asInstanceOf[js.Any])
     if (wheel != null) __obj.updateDynamic("wheel")(wheel.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryTinyScrollbarOptions]
   }

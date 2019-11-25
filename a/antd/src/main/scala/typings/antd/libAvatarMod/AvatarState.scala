@@ -13,7 +13,7 @@ trait AvatarState extends js.Object {
 object AvatarState {
   @scala.inline
   def apply(isImgExist: Boolean, mounted: Boolean, scale: Double): AvatarState = {
-    val __obj = js.Dynamic.literal(isImgExist = isImgExist, mounted = mounted, scale = scale)
+    val __obj = js.Dynamic.literal(isImgExist = isImgExist.asInstanceOf[js.Any], mounted = mounted.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AvatarState]
   }

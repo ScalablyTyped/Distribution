@@ -25,7 +25,7 @@ object Exports {
     css: /* repeated */ CSSInputTypes => String,
     flushToStyleTag: () => Unit
   ): Exports = {
-    val __obj = js.Dynamic.literal(StyleSheet = StyleSheet, StyleSheetServer = StyleSheetServer, StyleSheetTestUtils = StyleSheetTestUtils, css = js.Any.fromFunction1(css), flushToStyleTag = js.Any.fromFunction0(flushToStyleTag))
+    val __obj = js.Dynamic.literal(StyleSheet = StyleSheet.asInstanceOf[js.Any], StyleSheetServer = StyleSheetServer.asInstanceOf[js.Any], StyleSheetTestUtils = StyleSheetTestUtils.asInstanceOf[js.Any], css = js.Any.fromFunction1(css), flushToStyleTag = js.Any.fromFunction0(flushToStyleTag))
   
     __obj.asInstanceOf[Exports]
   }

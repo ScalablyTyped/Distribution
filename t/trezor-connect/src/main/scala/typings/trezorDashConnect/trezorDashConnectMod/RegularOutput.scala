@@ -13,8 +13,8 @@ trait RegularOutput extends Output {
 object RegularOutput {
   @scala.inline
   def apply(address: String, amount: String, script_type: String = null): RegularOutput = {
-    val __obj = js.Dynamic.literal(address = address, amount = amount)
-    if (script_type != null) __obj.updateDynamic("script_type")(script_type)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], amount = amount.asInstanceOf[js.Any])
+    if (script_type != null) __obj.updateDynamic("script_type")(script_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegularOutput]
   }
 }

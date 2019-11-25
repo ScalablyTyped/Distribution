@@ -2,7 +2,6 @@ package typings.asana.asanaMod.resources
 
 import typings.asana.asanaMod.resources.Stories.ShortType
 import typings.asana.asanaMod.resources.Stories.Type
-import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,10 +36,10 @@ trait Stories_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def createOnTask(task: String, data: js.Any): ^[ResourceList[ShortType]] = js.native
-  def createOnTask(task: String, data: js.Any, dispatchOptions: js.Any): ^[ResourceList[ShortType]] = js.native
-  def createOnTask(task: Double, data: js.Any): ^[ResourceList[ShortType]] = js.native
-  def createOnTask(task: Double, data: js.Any, dispatchOptions: js.Any): ^[ResourceList[ShortType]] = js.native
+  def createOnTask(task: String, data: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[ShortType]] = js.native
+  def createOnTask(task: String, data: js.Any, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[ShortType]] = js.native
+  def createOnTask(task: Double, data: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[ShortType]] = js.native
+  def createOnTask(task: Double, data: js.Any, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[ShortType]] = js.native
   /**
     * * Returns the full record for a single story.
     *   * @param {Number} story Globally unique identifier for the story.
@@ -52,9 +51,9 @@ trait Stories_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def findById(story: Double): ^[Type] = js.native
-  def findById(story: Double, params: Params): ^[Type] = js.native
-  def findById(story: Double, params: Params, dispatchOptions: js.Any): ^[Type] = js.native
+  def findById(story: Double): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def findById(story: Double, params: Params): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def findById(story: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[Type] = js.native
   /**
     * * Returns the compact records for all stories on the task.
     *   * @param {Number} task Globally unique identifier for the task.
@@ -66,11 +65,11 @@ trait Stories_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def findByTask(task: String): ^[ResourceList[Type]] = js.native
-  def findByTask(task: String, params: PaginationParams): ^[ResourceList[Type]] = js.native
-  def findByTask(task: String, params: PaginationParams, dispatchOptions: js.Any): ^[ResourceList[Type]] = js.native
-  def findByTask(task: Double): ^[ResourceList[Type]] = js.native
-  def findByTask(task: Double, params: PaginationParams): ^[ResourceList[Type]] = js.native
-  def findByTask(task: Double, params: PaginationParams, dispatchOptions: js.Any): ^[ResourceList[Type]] = js.native
+  def findByTask(task: String): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
+  def findByTask(task: String, params: PaginationParams): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
+  def findByTask(task: String, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
+  def findByTask(task: Double): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
+  def findByTask(task: Double, params: PaginationParams): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
+  def findByTask(task: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
 }
 

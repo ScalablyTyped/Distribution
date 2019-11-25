@@ -16,8 +16,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(components: StringDictionary[ComponentType[_]], createElement: Fn_A, prefix: String = null): Options = {
-    val __obj = js.Dynamic.literal(components = components, createElement = createElement)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], createElement = createElement.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

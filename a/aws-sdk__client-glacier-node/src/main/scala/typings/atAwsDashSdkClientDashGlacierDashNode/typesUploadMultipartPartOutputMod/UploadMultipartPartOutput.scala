@@ -21,8 +21,8 @@ trait UploadMultipartPartOutput extends _OutputTypesUnion {
 object UploadMultipartPartOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, checksum: String = null): UploadMultipartPartOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (checksum != null) __obj.updateDynamic("checksum")(checksum)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadMultipartPartOutput]
   }
 }

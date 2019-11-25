@@ -12,7 +12,7 @@ trait Anon_Formik extends js.Object {
 object Anon_Formik {
   @scala.inline
   def apply(formik: FormikContext[_]): Anon_Formik = {
-    val __obj = js.Dynamic.literal(formik = formik)
+    val __obj = js.Dynamic.literal(formik = formik.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Formik]
   }

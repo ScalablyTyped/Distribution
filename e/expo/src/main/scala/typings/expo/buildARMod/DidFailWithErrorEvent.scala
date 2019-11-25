@@ -12,7 +12,7 @@ trait DidFailWithErrorEvent extends js.Object {
 object DidFailWithErrorEvent {
   @scala.inline
   def apply(error: Error): DidFailWithErrorEvent = {
-    val __obj = js.Dynamic.literal(error = error)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DidFailWithErrorEvent]
   }

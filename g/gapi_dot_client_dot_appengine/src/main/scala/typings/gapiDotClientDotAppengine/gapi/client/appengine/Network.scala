@@ -36,10 +36,10 @@ object Network {
     subnetworkName: String = null
   ): Network = {
     val __obj = js.Dynamic.literal()
-    if (forwardedPorts != null) __obj.updateDynamic("forwardedPorts")(forwardedPorts)
-    if (instanceTag != null) __obj.updateDynamic("instanceTag")(instanceTag)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (subnetworkName != null) __obj.updateDynamic("subnetworkName")(subnetworkName)
+    if (forwardedPorts != null) __obj.updateDynamic("forwardedPorts")(forwardedPorts.asInstanceOf[js.Any])
+    if (instanceTag != null) __obj.updateDynamic("instanceTag")(instanceTag.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (subnetworkName != null) __obj.updateDynamic("subnetworkName")(subnetworkName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Network]
   }
 }

@@ -11,7 +11,7 @@ trait WorkerEventMap extends AbstractWorkerEventMap {
 object WorkerEventMap {
   @scala.inline
   def apply(error: ErrorEvent, message: MessageEvent): WorkerEventMap = {
-    val __obj = js.Dynamic.literal(error = error, message = message)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkerEventMap]
   }

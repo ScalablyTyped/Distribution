@@ -16,7 +16,7 @@ object FeedbackDeleted {
   @scala.inline
   def apply(message: String = null, status: Int | Double = null): FeedbackDeleted = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeedbackDeleted]
   }

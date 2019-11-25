@@ -29,7 +29,7 @@ trait ClassNamesSupport extends js.Object {
 object ClassNamesSupport {
   @scala.inline
   def apply(classNameBindings: js.Array[String], classNames: js.Array[String]): ClassNamesSupport = {
-    val __obj = js.Dynamic.literal(classNameBindings = classNameBindings, classNames = classNames)
+    val __obj = js.Dynamic.literal(classNameBindings = classNameBindings.asInstanceOf[js.Any], classNames = classNames.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClassNamesSupport]
   }

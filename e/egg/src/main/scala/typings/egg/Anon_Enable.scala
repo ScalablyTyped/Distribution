@@ -32,7 +32,7 @@ object Anon_Enable {
     queryString: Anon_ArrayLimit,
     strict: Boolean
   ): Anon_Enable = {
-    val __obj = js.Dynamic.literal(enable = enable, enableTypes = enableTypes, encoding = encoding, extendTypes = extendTypes, formLimit = formLimit, ignore = ignore.asInstanceOf[js.Any], jsonLimit = jsonLimit, queryString = queryString, strict = strict)
+    val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], enableTypes = enableTypes.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], extendTypes = extendTypes.asInstanceOf[js.Any], formLimit = formLimit.asInstanceOf[js.Any], ignore = ignore.asInstanceOf[js.Any], jsonLimit = jsonLimit.asInstanceOf[js.Any], queryString = queryString.asInstanceOf[js.Any], strict = strict.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Enable]
   }

@@ -71,22 +71,22 @@ object Options {
     startkey: js.Any = null
   ): Options[Content, Reduction] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments)
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
-    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts)
-    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending)
-    if (endkey != null) __obj.updateDynamic("endkey")(endkey)
-    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group)
+    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
+    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts.asInstanceOf[js.Any])
+    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending.asInstanceOf[js.Any])
+    if (endkey != null) __obj.updateDynamic("endkey")(endkey.asInstanceOf[js.Any])
+    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (group_level != null) __obj.updateDynamic("group_level")(group_level.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs)
-    if (!js.isUndefined(inclusive_end)) __obj.updateDynamic("inclusive_end")(inclusive_end)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs.asInstanceOf[js.Any])
+    if (!js.isUndefined(inclusive_end)) __obj.updateDynamic("inclusive_end")(inclusive_end.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (reduce != null) __obj.updateDynamic("reduce")(reduce.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
     if (stale != null) __obj.updateDynamic("stale")(stale.asInstanceOf[js.Any])
-    if (startkey != null) __obj.updateDynamic("startkey")(startkey)
+    if (startkey != null) __obj.updateDynamic("startkey")(startkey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[Content, Reduction]]
   }
 }

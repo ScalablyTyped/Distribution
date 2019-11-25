@@ -29,11 +29,11 @@ object InitOptions {
     ttl: Int | Double = null
   ): InitOptions = {
     val __obj = js.Dynamic.literal()
-    if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (expiredInterval != null) __obj.updateDynamic("expiredInterval")(expiredInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(forgiveParseErrors)) __obj.updateDynamic("forgiveParseErrors")(forgiveParseErrors)
-    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging)
+    if (!js.isUndefined(forgiveParseErrors)) __obj.updateDynamic("forgiveParseErrors")(forgiveParseErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
     if (parse != null) __obj.updateDynamic("parse")(js.Any.fromFunction1(parse))
     if (stringify != null) __obj.updateDynamic("stringify")(js.Any.fromFunction1(stringify))
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])

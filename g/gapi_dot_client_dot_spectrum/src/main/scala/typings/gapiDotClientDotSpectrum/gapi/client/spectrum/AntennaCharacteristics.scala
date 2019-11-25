@@ -21,7 +21,7 @@ object AntennaCharacteristics {
   def apply(height: Int | Double = null, heightType: String = null, heightUncertainty: Int | Double = null): AntennaCharacteristics = {
     val __obj = js.Dynamic.literal()
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (heightType != null) __obj.updateDynamic("heightType")(heightType)
+    if (heightType != null) __obj.updateDynamic("heightType")(heightType.asInstanceOf[js.Any])
     if (heightUncertainty != null) __obj.updateDynamic("heightUncertainty")(heightUncertainty.asInstanceOf[js.Any])
     __obj.asInstanceOf[AntennaCharacteristics]
   }

@@ -36,12 +36,12 @@ object Animation {
     targetResolution: Int | Double = null,
     targetRotation: Int | Double = null
   ): Animation = {
-    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), complete = complete, duration = duration, easing = js.Any.fromFunction1(easing), start = start)
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
-    if (sourceCenter != null) __obj.updateDynamic("sourceCenter")(sourceCenter)
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), complete = complete.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], easing = js.Any.fromFunction1(easing), start = start.asInstanceOf[js.Any])
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (sourceCenter != null) __obj.updateDynamic("sourceCenter")(sourceCenter.asInstanceOf[js.Any])
     if (sourceResolution != null) __obj.updateDynamic("sourceResolution")(sourceResolution.asInstanceOf[js.Any])
     if (sourceRotation != null) __obj.updateDynamic("sourceRotation")(sourceRotation.asInstanceOf[js.Any])
-    if (targetCenter != null) __obj.updateDynamic("targetCenter")(targetCenter)
+    if (targetCenter != null) __obj.updateDynamic("targetCenter")(targetCenter.asInstanceOf[js.Any])
     if (targetResolution != null) __obj.updateDynamic("targetResolution")(targetResolution.asInstanceOf[js.Any])
     if (targetRotation != null) __obj.updateDynamic("targetRotation")(targetRotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Animation]

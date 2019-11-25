@@ -29,17 +29,17 @@ object EggLoggerOptions {
     level: LoggerLevel = null,
     outputJSON: js.UndefOr[Boolean] = js.undefined
   ): EggLoggerOptions = {
-    val __obj = js.Dynamic.literal(file = file)
-    if (!js.isUndefined(allowDebugAtProd)) __obj.updateDynamic("allowDebugAtProd")(allowDebugAtProd)
-    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer)
-    if (consoleLevel != null) __obj.updateDynamic("consoleLevel")(consoleLevel)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDebugAtProd)) __obj.updateDynamic("allowDebugAtProd")(allowDebugAtProd.asInstanceOf[js.Any])
+    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
+    if (consoleLevel != null) __obj.updateDynamic("consoleLevel")(consoleLevel.asInstanceOf[js.Any])
     if (contextFormatter != null) __obj.updateDynamic("contextFormatter")(js.Any.fromFunction1(contextFormatter))
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (eol != null) __obj.updateDynamic("eol")(eol)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (eol != null) __obj.updateDynamic("eol")(eol.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
-    if (jsonFile != null) __obj.updateDynamic("jsonFile")(jsonFile)
-    if (level != null) __obj.updateDynamic("level")(level)
-    if (!js.isUndefined(outputJSON)) __obj.updateDynamic("outputJSON")(outputJSON)
+    if (jsonFile != null) __obj.updateDynamic("jsonFile")(jsonFile.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(outputJSON)) __obj.updateDynamic("outputJSON")(outputJSON.asInstanceOf[js.Any])
     __obj.asInstanceOf[EggLoggerOptions]
   }
 }

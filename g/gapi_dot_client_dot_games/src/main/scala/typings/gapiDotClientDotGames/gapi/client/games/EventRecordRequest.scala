@@ -24,10 +24,10 @@ object EventRecordRequest {
     timePeriods: js.Array[EventPeriodUpdate] = null
   ): EventRecordRequest = {
     val __obj = js.Dynamic.literal()
-    if (currentTimeMillis != null) __obj.updateDynamic("currentTimeMillis")(currentTimeMillis)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId)
-    if (timePeriods != null) __obj.updateDynamic("timePeriods")(timePeriods)
+    if (currentTimeMillis != null) __obj.updateDynamic("currentTimeMillis")(currentTimeMillis.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
+    if (timePeriods != null) __obj.updateDynamic("timePeriods")(timePeriods.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventRecordRequest]
   }
 }

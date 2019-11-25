@@ -36,7 +36,7 @@ object RecognizerOptions {
     val __obj = js.Dynamic.literal()
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (enable != null) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event)
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (pointers != null) __obj.updateDynamic("pointers")(pointers.asInstanceOf[js.Any])
     if (posThreshold != null) __obj.updateDynamic("posThreshold")(posThreshold.asInstanceOf[js.Any])

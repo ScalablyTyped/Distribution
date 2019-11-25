@@ -37,7 +37,7 @@ object PortalItemApplicationProxies {
     proxyUrl: String,
     sourceUrl: String
   ): PortalItemApplicationProxies = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), proxyId = proxyId, proxyUrl = proxyUrl, sourceUrl = sourceUrl)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), proxyId = proxyId.asInstanceOf[js.Any], proxyUrl = proxyUrl.asInstanceOf[js.Any], sourceUrl = sourceUrl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PortalItemApplicationProxies]
   }

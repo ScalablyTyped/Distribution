@@ -17,9 +17,9 @@ object CreateItem {
     data: CreateItemData = null,
     jsonapi: JsonApiVersionJsonapi = null
   ): CreateItem = {
-    val __obj = js.Dynamic.literal(included = included)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (jsonapi != null) __obj.updateDynamic("jsonapi")(jsonapi)
+    val __obj = js.Dynamic.literal(included = included.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (jsonapi != null) __obj.updateDynamic("jsonapi")(jsonapi.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateItem]
   }
 }

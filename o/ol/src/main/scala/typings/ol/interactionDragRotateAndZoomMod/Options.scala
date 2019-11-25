@@ -14,7 +14,7 @@ object Options {
   @scala.inline
   def apply(condition: Condition = null, duration: Int | Double = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (condition != null) __obj.updateDynamic("condition")(condition)
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

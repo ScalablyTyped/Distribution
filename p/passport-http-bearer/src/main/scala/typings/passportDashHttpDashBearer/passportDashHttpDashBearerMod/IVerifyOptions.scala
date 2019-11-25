@@ -12,7 +12,7 @@ trait IVerifyOptions extends js.Object {
 object IVerifyOptions {
   @scala.inline
   def apply(message: String, scope: String | js.Array[String]): IVerifyOptions = {
-    val __obj = js.Dynamic.literal(message = message, scope = scope.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IVerifyOptions]
   }

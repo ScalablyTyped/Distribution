@@ -13,7 +13,7 @@ trait Anon_Ptr extends js.Object {
 object Anon_Ptr {
   @scala.inline
   def apply(ptr: MetaCardRule with Anon_1, set: MetaCardRule with Anon_Max): Anon_Ptr = {
-    val __obj = js.Dynamic.literal(ptr = ptr, set = set)
+    val __obj = js.Dynamic.literal(ptr = ptr.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Ptr]
   }

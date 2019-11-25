@@ -51,12 +51,12 @@ object RequestResponse {
     ssl: js.UndefOr[Boolean] = js.undefined,
     url: String = null
   ): RequestResponse = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (data != null) __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (getHeader != null) __obj.updateDynamic("getHeader")(js.Any.fromFunction1(getHeader))
-    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions)
-    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestResponse]
   }
 }

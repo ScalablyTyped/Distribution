@@ -23,12 +23,12 @@ object Thunk {
     sel: String = null,
     text: String = null
   ): Thunk = {
-    val __obj = js.Dynamic.literal(data = data)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (elm != null) __obj.updateDynamic("elm")(elm)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (elm != null) __obj.updateDynamic("elm")(elm.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (sel != null) __obj.updateDynamic("sel")(sel)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (sel != null) __obj.updateDynamic("sel")(sel.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Thunk]
   }
 }

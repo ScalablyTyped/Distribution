@@ -14,7 +14,7 @@ object BasicStrategyOptions {
   def apply[req /* <: Boolean */](passReqToCallback: req = null, realm: String = null): BasicStrategyOptions[req] = {
     val __obj = js.Dynamic.literal()
     if (passReqToCallback != null) __obj.updateDynamic("passReqToCallback")(passReqToCallback.asInstanceOf[js.Any])
-    if (realm != null) __obj.updateDynamic("realm")(realm)
+    if (realm != null) __obj.updateDynamic("realm")(realm.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasicStrategyOptions[req]]
   }
 }

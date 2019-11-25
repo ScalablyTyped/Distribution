@@ -14,7 +14,7 @@ trait IteratorReturnResult[TReturn]
 object IteratorReturnResult {
   @scala.inline
   def apply[TReturn](done: `true`, value: TReturn): IteratorReturnResult[TReturn] = {
-    val __obj = js.Dynamic.literal(done = done, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IteratorReturnResult[TReturn]]
   }

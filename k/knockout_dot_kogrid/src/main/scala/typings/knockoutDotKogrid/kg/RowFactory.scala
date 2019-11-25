@@ -11,7 +11,7 @@ trait RowFactory[EntityType] extends js.Object {
 object RowFactory {
   @scala.inline
   def apply[EntityType](rowCache: js.Array[Row[EntityType]]): RowFactory[EntityType] = {
-    val __obj = js.Dynamic.literal(rowCache = rowCache)
+    val __obj = js.Dynamic.literal(rowCache = rowCache.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RowFactory[EntityType]]
   }

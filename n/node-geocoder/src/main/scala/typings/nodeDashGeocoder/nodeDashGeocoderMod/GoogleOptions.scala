@@ -26,13 +26,13 @@ object GoogleOptions {
     language: String = null,
     region: String = null
   ): GoogleOptions = {
-    val __obj = js.Dynamic.literal(provider = provider)
-    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
-    if (channel != null) __obj.updateDynamic("channel")(channel)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (!js.isUndefined(excludePartialMatches)) __obj.updateDynamic("excludePartialMatches")(excludePartialMatches)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (region != null) __obj.updateDynamic("region")(region)
+    val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
+    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludePartialMatches)) __obj.updateDynamic("excludePartialMatches")(excludePartialMatches.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleOptions]
   }
 }

@@ -14,8 +14,8 @@ trait MediaState extends js.Object {
 object MediaState {
   @scala.inline
   def apply(contentType: String, sid: String, size: Double, filename: String = null): MediaState = {
-    val __obj = js.Dynamic.literal(contentType = contentType, sid = sid, size = size)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
+    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaState]
   }
 }

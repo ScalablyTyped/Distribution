@@ -61,12 +61,12 @@ object ScaleRangeSliderViewModelProperties {
     view: MapViewProperties | SceneViewProperties = null
   ): ScaleRangeSliderViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (layer != null) __obj.updateDynamic("layer")(layer)
+    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
     if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
     if (maxScaleLimit != null) __obj.updateDynamic("maxScaleLimit")(maxScaleLimit.asInstanceOf[js.Any])
     if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
     if (minScaleLimit != null) __obj.updateDynamic("minScaleLimit")(minScaleLimit.asInstanceOf[js.Any])
-    if (sliderViewModel != null) __obj.updateDynamic("sliderViewModel")(sliderViewModel)
+    if (sliderViewModel != null) __obj.updateDynamic("sliderViewModel")(sliderViewModel.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleRangeSliderViewModelProperties]
   }

@@ -22,7 +22,7 @@ object Anon_TabId {
   def apply(tabId: Int | Double = null, `type`: ViewType = null, windowId: Int | Double = null): Anon_TabId = {
     val __obj = js.Dynamic.literal()
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TabId]
   }

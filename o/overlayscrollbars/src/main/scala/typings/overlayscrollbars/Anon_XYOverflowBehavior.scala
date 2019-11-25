@@ -14,8 +14,8 @@ object Anon_XYOverflowBehavior {
   @scala.inline
   def apply(x: OverflowBehavior = null, y: OverflowBehavior = null): Anon_XYOverflowBehavior = {
     val __obj = js.Dynamic.literal()
-    if (x != null) __obj.updateDynamic("x")(x)
-    if (y != null) __obj.updateDynamic("y")(y)
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_XYOverflowBehavior]
   }
 }

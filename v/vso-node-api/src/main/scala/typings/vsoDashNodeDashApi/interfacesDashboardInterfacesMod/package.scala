@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object interfacesDashboardInterfacesMod {
   type DashboardGroupEntry = Dashboard
-  type DashboardGroupEntryResponse = Dashboard
-  type DashboardResponse = Dashboard
+  type DashboardGroupEntryResponse = DashboardGroupEntry
+  type DashboardResponse = DashboardGroupEntry
   type WidgetResponse = Widget
 }

@@ -37,8 +37,8 @@ object TextStyle {
     textDecoration: TextDecoration,
     `type`: TEXT
   ): TextStyle = {
-    val __obj = js.Dynamic.literal(description = description, fontName = fontName, fontSize = fontSize, id = id, key = key, letterSpacing = letterSpacing, lineHeight = lineHeight, name = name, paragraphIndent = paragraphIndent, paragraphSpacing = paragraphSpacing, remote = remote, remove = js.Any.fromFunction0(remove), textCase = textCase, textDecoration = textDecoration)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], fontName = fontName.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], paragraphIndent = paragraphIndent.asInstanceOf[js.Any], paragraphSpacing = paragraphSpacing.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any], remove = js.Any.fromFunction0(remove), textCase = textCase.asInstanceOf[js.Any], textDecoration = textDecoration.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextStyle]
   }
 }

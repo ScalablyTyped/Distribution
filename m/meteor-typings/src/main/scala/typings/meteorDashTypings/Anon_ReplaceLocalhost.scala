@@ -18,9 +18,9 @@ object Anon_ReplaceLocalhost {
     secure: js.UndefOr[Boolean] = js.undefined
   ): Anon_ReplaceLocalhost = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(replaceLocalhost)) __obj.updateDynamic("replaceLocalhost")(replaceLocalhost)
-    if (rootUrl != null) __obj.updateDynamic("rootUrl")(rootUrl)
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (!js.isUndefined(replaceLocalhost)) __obj.updateDynamic("replaceLocalhost")(replaceLocalhost.asInstanceOf[js.Any])
+    if (rootUrl != null) __obj.updateDynamic("rootUrl")(rootUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ReplaceLocalhost]
   }
 }

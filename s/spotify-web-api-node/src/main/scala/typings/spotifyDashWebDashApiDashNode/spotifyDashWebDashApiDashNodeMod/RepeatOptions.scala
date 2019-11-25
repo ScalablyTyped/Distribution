@@ -15,7 +15,7 @@ object RepeatOptions {
   @scala.inline
   def apply(device_id: String = null, state: track | context | off = null): RepeatOptions = {
     val __obj = js.Dynamic.literal()
-    if (device_id != null) __obj.updateDynamic("device_id")(device_id)
+    if (device_id != null) __obj.updateDynamic("device_id")(device_id.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepeatOptions]
   }

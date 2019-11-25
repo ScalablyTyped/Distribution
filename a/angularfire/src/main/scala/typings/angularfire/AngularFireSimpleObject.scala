@@ -23,8 +23,8 @@ object AngularFireSimpleObject {
     $value: js.Any,
     StringDictionary: /* key */ StringDictionary[js.Any] = null
   ): AngularFireSimpleObject = {
-    val __obj = js.Dynamic.literal($id = $id, $priority = $priority, $value = $value)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal($id = $id.asInstanceOf[js.Any], $priority = $priority.asInstanceOf[js.Any], $value = $value.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[AngularFireSimpleObject]
   }
 }

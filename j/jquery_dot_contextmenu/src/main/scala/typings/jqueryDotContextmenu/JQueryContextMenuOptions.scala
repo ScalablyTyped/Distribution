@@ -46,22 +46,22 @@ object JQueryContextMenuOptions {
     trigger: String = null,
     zIndex: Int | Double = null
   ): JQueryContextMenuOptions = {
-    val __obj = js.Dynamic.literal(selector = selector)
-    if (animation != null) __obj.updateDynamic("animation")(animation)
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
-    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide)
+    val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.asInstanceOf[js.Any])
     if (build != null) __obj.updateDynamic("build")(js.Any.fromFunction2(build))
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (determinePosition != null) __obj.updateDynamic("determinePosition")(js.Any.fromFunction1(determinePosition))
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (itemClickEvent != null) __obj.updateDynamic("itemClickEvent")(itemClickEvent)
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (itemClickEvent != null) __obj.updateDynamic("itemClickEvent")(itemClickEvent.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(js.Any.fromFunction3(position))
     if (positionSubmenu != null) __obj.updateDynamic("positionSubmenu")(js.Any.fromFunction1(positionSubmenu))
-    if (!js.isUndefined(reposition)) __obj.updateDynamic("reposition")(reposition)
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
+    if (!js.isUndefined(reposition)) __obj.updateDynamic("reposition")(reposition.asInstanceOf[js.Any])
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryContextMenuOptions]
   }

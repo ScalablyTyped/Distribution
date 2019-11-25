@@ -25,7 +25,7 @@ object Anon_Dra {
     normal: Splitter,
     normalHandle: SplitterHandle
   ): Anon_Dra = {
-    val __obj = js.Dynamic.literal(dra = dra, dragHandle = dragHandle, hover = hover, hoverHandle = hoverHandle, normal = normal, normalHandle = normalHandle)
+    val __obj = js.Dynamic.literal(dra = dra.asInstanceOf[js.Any], dragHandle = dragHandle.asInstanceOf[js.Any], hover = hover.asInstanceOf[js.Any], hoverHandle = hoverHandle.asInstanceOf[js.Any], normal = normal.asInstanceOf[js.Any], normalHandle = normalHandle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Dra]
   }

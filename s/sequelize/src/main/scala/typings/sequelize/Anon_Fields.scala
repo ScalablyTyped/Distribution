@@ -23,11 +23,11 @@ object Anon_Fields {
     table: String = null
   ): Anon_Fields = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (index != null) __obj.updateDynamic("index")(index)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (table != null) __obj.updateDynamic("table")(table)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Fields]
   }
 }

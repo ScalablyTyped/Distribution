@@ -21,7 +21,7 @@ object ComputedTimingProperties {
     localTime: Int | Double = null,
     progress: Int | Double = null
   ): ComputedTimingProperties = {
-    val __obj = js.Dynamic.literal(activeDuration = activeDuration, endTime = endTime)
+    val __obj = js.Dynamic.literal(activeDuration = activeDuration.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any])
     if (currentIteration != null) __obj.updateDynamic("currentIteration")(currentIteration.asInstanceOf[js.Any])
     if (localTime != null) __obj.updateDynamic("localTime")(localTime.asInstanceOf[js.Any])
     if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])

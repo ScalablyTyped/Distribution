@@ -32,8 +32,8 @@ object CallbackObject {
     `object`: js.Any,
     reset: () => Unit
   ): CallbackObject = {
-    val __obj = js.Dynamic.literal(autoReset = autoReset, called = called, data = data, hook = hook, reset = js.Any.fromFunction0(reset))
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(autoReset = autoReset.asInstanceOf[js.Any], called = called.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], hook = hook.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset))
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallbackObject]
   }
 }

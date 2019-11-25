@@ -17,7 +17,7 @@ object Context {
   @scala.inline
   def apply(rules: js.Array[ContextRule] = null): Context = {
     val __obj = js.Dynamic.literal()
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context]
   }
 }

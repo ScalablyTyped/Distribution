@@ -16,8 +16,8 @@ trait ObjectValueNode
 object ObjectValueNode {
   @scala.inline
   def apply(fields: js.Array[ObjectFieldNode], kind: ObjectValue, loc: Location = null): ObjectValueNode = {
-    val __obj = js.Dynamic.literal(fields = fields, kind = kind)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectValueNode]
   }
 }

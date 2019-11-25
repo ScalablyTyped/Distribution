@@ -13,7 +13,7 @@ object Anon_SortDirection {
   @scala.inline
   def apply(sortDirection: SortDirectionType = null): Anon_SortDirection = {
     val __obj = js.Dynamic.literal()
-    if (sortDirection != null) __obj.updateDynamic("sortDirection")(sortDirection)
+    if (sortDirection != null) __obj.updateDynamic("sortDirection")(sortDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_SortDirection]
   }
 }

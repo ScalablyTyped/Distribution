@@ -15,7 +15,7 @@ object ISenderOptions {
   def apply(maxSockets: Int | Double = null, proxy: js.Any = null, timeout: Int | Double = null): ISenderOptions = {
     val __obj = js.Dynamic.literal()
     if (maxSockets != null) __obj.updateDynamic("maxSockets")(maxSockets.asInstanceOf[js.Any])
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISenderOptions]
   }

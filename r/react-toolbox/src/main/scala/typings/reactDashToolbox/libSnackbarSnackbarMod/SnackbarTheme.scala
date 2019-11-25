@@ -47,13 +47,13 @@ object SnackbarTheme {
     warning: String = null
   ): SnackbarTheme = {
     val __obj = js.Dynamic.literal()
-    if (accept != null) __obj.updateDynamic("accept")(accept)
-    if (active != null) __obj.updateDynamic("active")(active)
-    if (button != null) __obj.updateDynamic("button")(button)
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (snackbar != null) __obj.updateDynamic("snackbar")(snackbar)
-    if (warning != null) __obj.updateDynamic("warning")(warning)
+    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (snackbar != null) __obj.updateDynamic("snackbar")(snackbar.asInstanceOf[js.Any])
+    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnackbarTheme]
   }
 }

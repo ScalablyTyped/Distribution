@@ -18,7 +18,7 @@ object Anon_DataFormat {
     timeoutMs: Int | Double = null
   ): Anon_DataFormat = {
     val __obj = js.Dynamic.literal()
-    if (dataFormat != null) __obj.updateDynamic("dataFormat")(dataFormat)
+    if (dataFormat != null) __obj.updateDynamic("dataFormat")(dataFormat.asInstanceOf[js.Any])
     if (maxAvailableZoomLevel != null) __obj.updateDynamic("maxAvailableZoomLevel")(maxAvailableZoomLevel.asInstanceOf[js.Any])
     if (timeoutMs != null) __obj.updateDynamic("timeoutMs")(timeoutMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DataFormat]

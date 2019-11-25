@@ -13,7 +13,7 @@ object RegionInstanceGroupManagersListInstancesResponse {
   @scala.inline
   def apply(managedInstances: js.Array[ManagedInstance] = null): RegionInstanceGroupManagersListInstancesResponse = {
     val __obj = js.Dynamic.literal()
-    if (managedInstances != null) __obj.updateDynamic("managedInstances")(managedInstances)
+    if (managedInstances != null) __obj.updateDynamic("managedInstances")(managedInstances.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegionInstanceGroupManagersListInstancesResponse]
   }
 }

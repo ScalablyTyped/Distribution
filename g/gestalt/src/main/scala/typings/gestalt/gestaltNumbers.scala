@@ -44,43 +44,69 @@ object gestaltNumbers {
   sealed trait `-9` extends SignedUpTo12
   
   @js.native
-  sealed trait `0` extends UnsignedUpTo12
+  sealed trait `0`
+    extends SignedUpTo12
+       with UnsignedUpTo12
   
   @js.native
-  sealed trait `1` extends UnsignedUpTo12
+  sealed trait `1`
+    extends SignedUpTo12
+       with UnsignedUpTo12
   
   @js.native
-  sealed trait `10` extends UnsignedUpTo12
+  sealed trait `10`
+    extends SignedUpTo12
+       with UnsignedUpTo12
   
   @js.native
-  sealed trait `11` extends UnsignedUpTo12
+  sealed trait `11`
+    extends SignedUpTo12
+       with UnsignedUpTo12
   
   @js.native
-  sealed trait `12` extends UnsignedUpTo12
+  sealed trait `12`
+    extends SignedUpTo12
+       with UnsignedUpTo12
   
   @js.native
-  sealed trait `2` extends UnsignedUpTo12
+  sealed trait `2`
+    extends SignedUpTo12
+       with UnsignedUpTo12
   
   @js.native
-  sealed trait `3` extends UnsignedUpTo12
+  sealed trait `3`
+    extends SignedUpTo12
+       with UnsignedUpTo12
   
   @js.native
-  sealed trait `4` extends UnsignedUpTo12
+  sealed trait `4`
+    extends SignedUpTo12
+       with UnsignedUpTo12
   
   @js.native
-  sealed trait `5` extends UnsignedUpTo12
+  sealed trait `5`
+    extends SignedUpTo12
+       with UnsignedUpTo12
   
   @js.native
-  sealed trait `6` extends UnsignedUpTo12
+  sealed trait `6`
+    extends SignedUpTo12
+       with UnsignedUpTo12
   
   @js.native
-  sealed trait `7` extends UnsignedUpTo12
+  sealed trait `7`
+    extends SignedUpTo12
+       with UnsignedUpTo12
   
   @js.native
-  sealed trait `8` extends UnsignedUpTo12
+  sealed trait `8`
+    extends SignedUpTo12
+       with UnsignedUpTo12
   
   @js.native
-  sealed trait `9` extends UnsignedUpTo12
+  sealed trait `9`
+    extends SignedUpTo12
+       with UnsignedUpTo12
   
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]

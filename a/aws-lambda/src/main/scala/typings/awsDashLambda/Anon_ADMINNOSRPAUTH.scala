@@ -23,8 +23,8 @@ object Anon_ADMINNOSRPAUTH {
     challengeResult: Boolean,
     challengeMetadata: String = null
   ): Anon_ADMINNOSRPAUTH = {
-    val __obj = js.Dynamic.literal(challengeName = challengeName.asInstanceOf[js.Any], challengeResult = challengeResult)
-    if (challengeMetadata != null) __obj.updateDynamic("challengeMetadata")(challengeMetadata)
+    val __obj = js.Dynamic.literal(challengeName = challengeName.asInstanceOf[js.Any], challengeResult = challengeResult.asInstanceOf[js.Any])
+    if (challengeMetadata != null) __obj.updateDynamic("challengeMetadata")(challengeMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ADMINNOSRPAUTH]
   }
 }

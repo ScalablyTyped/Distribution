@@ -15,8 +15,8 @@ trait RouteDefinition
 object RouteDefinition {
   @scala.inline
   def apply(name: String, path: String, StringDictionary: /* key */ StringDictionary[js.Any] = null): RouteDefinition = {
-    val __obj = js.Dynamic.literal(name = name, path = path)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[RouteDefinition]
   }
 }

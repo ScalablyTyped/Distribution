@@ -58,10 +58,10 @@ object Options {
     split: /* s */ String => js.Array[String] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (isValid != null) __obj.updateDynamic("isValid")(js.Any.fromFunction2(isValid))
     if (join != null) __obj.updateDynamic("join")(js.Any.fromFunction1(join))
-    if (joinChar != null) __obj.updateDynamic("joinChar")(joinChar)
+    if (joinChar != null) __obj.updateDynamic("joinChar")(joinChar.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (split != null) __obj.updateDynamic("split")(js.Any.fromFunction1(split))
     __obj.asInstanceOf[Options]

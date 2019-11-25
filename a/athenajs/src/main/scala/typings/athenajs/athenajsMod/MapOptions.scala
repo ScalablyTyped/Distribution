@@ -28,8 +28,8 @@ object MapOptions {
     viewportH: Int | Double = null,
     viewportW: Int | Double = null
   ): MapOptions = {
-    val __obj = js.Dynamic.literal(height = height, src = src, tileHeight = tileHeight, tileWidth = tileWidth, width = width)
-    if (buffer != null) __obj.updateDynamic("buffer")(buffer)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], tileHeight = tileHeight.asInstanceOf[js.Any], tileWidth = tileWidth.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
     if (viewportH != null) __obj.updateDynamic("viewportH")(viewportH.asInstanceOf[js.Any])
     if (viewportW != null) __obj.updateDynamic("viewportW")(viewportW.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapOptions]

@@ -38,7 +38,7 @@ object Options {
     val __obj = js.Dynamic.literal(requestData = js.Any.fromFunction5(requestData))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(providesDomMarkers)) __obj.updateDynamic("providesDomMarkers")(providesDomMarkers)
+    if (!js.isUndefined(providesDomMarkers)) __obj.updateDynamic("providesDomMarkers")(providesDomMarkers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

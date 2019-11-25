@@ -98,8 +98,8 @@ object IInvoiceLineItem {
     tax_rates: js.Array[ITaxRate],
     `type`: invoiceitem | subscription
   ): IInvoiceLineItem = {
-    val __obj = js.Dynamic.literal(amount = amount, currency = currency, description = description, discountable = discountable, id = id, livemode = livemode, metadata = metadata, period = period, plan = plan, proration = proration, quantity = quantity, subscription = subscription, subscription_item = subscription_item, tax_amounts = tax_amounts, tax_rates = tax_rates)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], discountable = discountable.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any], proration = proration.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any], subscription_item = subscription_item.asInstanceOf[js.Any], tax_amounts = tax_amounts.asInstanceOf[js.Any], tax_rates = tax_rates.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInvoiceLineItem]
   }

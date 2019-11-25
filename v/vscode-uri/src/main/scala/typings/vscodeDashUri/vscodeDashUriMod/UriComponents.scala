@@ -15,7 +15,7 @@ trait UriComponents extends js.Object {
 object UriComponents {
   @scala.inline
   def apply(authority: String, fragment: String, path: String, query: String, scheme: String): UriComponents = {
-    val __obj = js.Dynamic.literal(authority = authority, fragment = fragment, path = path, query = query, scheme = scheme)
+    val __obj = js.Dynamic.literal(authority = authority.asInstanceOf[js.Any], fragment = fragment.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UriComponents]
   }

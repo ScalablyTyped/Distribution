@@ -31,9 +31,9 @@ object ChartParallelAxesAccessibilityOptions {
     rangeDescription: String = null
   ): ChartParallelAxesAccessibilityOptions = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (rangeDescription != null) __obj.updateDynamic("rangeDescription")(rangeDescription)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (rangeDescription != null) __obj.updateDynamic("rangeDescription")(rangeDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartParallelAxesAccessibilityOptions]
   }
 }

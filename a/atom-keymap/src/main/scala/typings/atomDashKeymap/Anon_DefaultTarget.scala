@@ -13,7 +13,7 @@ object Anon_DefaultTarget {
   @scala.inline
   def apply(defaultTarget: HTMLElement = null): Anon_DefaultTarget = {
     val __obj = js.Dynamic.literal()
-    if (defaultTarget != null) __obj.updateDynamic("defaultTarget")(defaultTarget)
+    if (defaultTarget != null) __obj.updateDynamic("defaultTarget")(defaultTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DefaultTarget]
   }
 }

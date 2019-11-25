@@ -18,9 +18,9 @@ object hstsOptions {
     preload: js.UndefOr[Boolean] = js.undefined
   ): hstsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeSubDomains)) __obj.updateDynamic("includeSubDomains")(includeSubDomains)
+    if (!js.isUndefined(includeSubDomains)) __obj.updateDynamic("includeSubDomains")(includeSubDomains.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
-    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload)
+    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
     __obj.asInstanceOf[hstsOptions]
   }
 }

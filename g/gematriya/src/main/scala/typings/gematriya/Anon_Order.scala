@@ -12,7 +12,7 @@ object Anon_Order {
   @scala.inline
   def apply(order: js.UndefOr[Boolean] = js.undefined): Anon_Order = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order)
+    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Order]
   }
 }

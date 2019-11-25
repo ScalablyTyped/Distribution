@@ -27,10 +27,10 @@ object Anon_CaseSensitive {
     tabId: Int | Double = null
   ): Anon_CaseSensitive = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
-    if (!js.isUndefined(entireWord)) __obj.updateDynamic("entireWord")(entireWord)
-    if (!js.isUndefined(includeRangeData)) __obj.updateDynamic("includeRangeData")(includeRangeData)
-    if (!js.isUndefined(includeRectData)) __obj.updateDynamic("includeRectData")(includeRectData)
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
+    if (!js.isUndefined(entireWord)) __obj.updateDynamic("entireWord")(entireWord.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeRangeData)) __obj.updateDynamic("includeRangeData")(includeRangeData.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeRectData)) __obj.updateDynamic("includeRectData")(includeRectData.asInstanceOf[js.Any])
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CaseSensitive]
   }

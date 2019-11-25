@@ -14,7 +14,7 @@ object IFieldMask {
   @scala.inline
   def apply(paths: js.Array[String] = null): IFieldMask = {
     val __obj = js.Dynamic.literal()
-    if (paths != null) __obj.updateDynamic("paths")(paths)
+    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldMask]
   }
 }

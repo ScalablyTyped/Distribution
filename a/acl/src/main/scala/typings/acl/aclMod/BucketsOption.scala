@@ -24,12 +24,12 @@ object BucketsOption {
     users: String = null
   ): BucketsOption = {
     val __obj = js.Dynamic.literal()
-    if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (parents != null) __obj.updateDynamic("parents")(parents)
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
-    if (resources != null) __obj.updateDynamic("resources")(resources)
-    if (roles != null) __obj.updateDynamic("roles")(roles)
-    if (users != null) __obj.updateDynamic("users")(users)
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (parents != null) __obj.updateDynamic("parents")(parents.asInstanceOf[js.Any])
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
+    if (roles != null) __obj.updateDynamic("roles")(roles.asInstanceOf[js.Any])
+    if (users != null) __obj.updateDynamic("users")(users.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketsOption]
   }
 }

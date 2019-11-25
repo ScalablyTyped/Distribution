@@ -29,11 +29,11 @@ object Anon_CommentsLocParameters {
     typeAnnotation: TSTypeAnnotationKind = null,
     typeParameters: TSTypeParameterDeclarationKind = null
   ): Anon_CommentsLocParameters = {
-    val __obj = js.Dynamic.literal(parameters = parameters)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation)
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsLocParameters]
   }
 }

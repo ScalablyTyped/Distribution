@@ -48,15 +48,15 @@ object BatchAddEventArgs {
     `type`: String = null
   ): BatchAddEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (cell != null) __obj.updateDynamic("cell")(cell)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
     if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (columnObject != null) __obj.updateDynamic("columnObject")(columnObject)
-    if (defaultData != null) __obj.updateDynamic("defaultData")(defaultData)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
-    if (row != null) __obj.updateDynamic("row")(row)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (columnObject != null) __obj.updateDynamic("columnObject")(columnObject.asInstanceOf[js.Any])
+    if (defaultData != null) __obj.updateDynamic("defaultData")(defaultData.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchAddEventArgs]
   }
 }

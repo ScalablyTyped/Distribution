@@ -109,16 +109,16 @@ object UserRecord {
     tenantId: String = null,
     tokensValidAfterTime: String = null
   ): UserRecord = {
-    val __obj = js.Dynamic.literal(disabled = disabled, emailVerified = emailVerified, metadata = metadata, providerData = providerData, toJSON = js.Any.fromFunction0(toJSON), uid = uid)
-    if (customClaims != null) __obj.updateDynamic("customClaims")(customClaims)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (passwordHash != null) __obj.updateDynamic("passwordHash")(passwordHash)
-    if (passwordSalt != null) __obj.updateDynamic("passwordSalt")(passwordSalt)
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
-    if (photoURL != null) __obj.updateDynamic("photoURL")(photoURL)
-    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId)
-    if (tokensValidAfterTime != null) __obj.updateDynamic("tokensValidAfterTime")(tokensValidAfterTime)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], emailVerified = emailVerified.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], providerData = providerData.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), uid = uid.asInstanceOf[js.Any])
+    if (customClaims != null) __obj.updateDynamic("customClaims")(customClaims.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (passwordHash != null) __obj.updateDynamic("passwordHash")(passwordHash.asInstanceOf[js.Any])
+    if (passwordSalt != null) __obj.updateDynamic("passwordSalt")(passwordSalt.asInstanceOf[js.Any])
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
+    if (photoURL != null) __obj.updateDynamic("photoURL")(photoURL.asInstanceOf[js.Any])
+    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId.asInstanceOf[js.Any])
+    if (tokensValidAfterTime != null) __obj.updateDynamic("tokensValidAfterTime")(tokensValidAfterTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserRecord]
   }
 }

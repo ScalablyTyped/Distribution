@@ -12,7 +12,7 @@ trait Anon_Ctrl extends js.Object {
 object Anon_Ctrl {
   @scala.inline
   def apply(Ctrl: CommandBarComboBox): Anon_Ctrl = {
-    val __obj = js.Dynamic.literal(Ctrl = Ctrl)
+    val __obj = js.Dynamic.literal(Ctrl = Ctrl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Ctrl]
   }

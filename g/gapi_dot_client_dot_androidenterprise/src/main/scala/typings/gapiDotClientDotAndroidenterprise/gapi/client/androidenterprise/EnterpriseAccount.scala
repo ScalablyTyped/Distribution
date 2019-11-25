@@ -15,8 +15,8 @@ object EnterpriseAccount {
   @scala.inline
   def apply(accountEmail: String = null, kind: String = null): EnterpriseAccount = {
     val __obj = js.Dynamic.literal()
-    if (accountEmail != null) __obj.updateDynamic("accountEmail")(accountEmail)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (accountEmail != null) __obj.updateDynamic("accountEmail")(accountEmail.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterpriseAccount]
   }
 }

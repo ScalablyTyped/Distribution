@@ -55,19 +55,19 @@ object MessageDefinitionFocus {
     modifierExtension: js.Array[Extension] = null,
     profile: Reference = null
   ): MessageDefinitionFocus = {
-    val __obj = js.Dynamic.literal(code = code)
-    if (_code != null) __obj.updateDynamic("_code")(_code)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_max != null) __obj.updateDynamic("_max")(_max)
-    if (_min != null) __obj.updateDynamic("_min")(_min)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (max != null) __obj.updateDynamic("max")(max)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+    if (_code != null) __obj.updateDynamic("_code")(_code.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_max != null) __obj.updateDynamic("_max")(_max.asInstanceOf[js.Any])
+    if (_min != null) __obj.updateDynamic("_min")(_min.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (profile != null) __obj.updateDynamic("profile")(profile)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageDefinitionFocus]
   }
 }

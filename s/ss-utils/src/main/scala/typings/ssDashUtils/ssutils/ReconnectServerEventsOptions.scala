@@ -20,10 +20,10 @@ object ReconnectServerEventsOptions {
     url: String = null
   ): ReconnectServerEventsOptions = {
     val __obj = js.Dynamic.literal()
-    if (errorArgs != null) __obj.updateDynamic("errorArgs")(errorArgs)
+    if (errorArgs != null) __obj.updateDynamic("errorArgs")(errorArgs.asInstanceOf[js.Any])
     if (onerror != null) __obj.updateDynamic("onerror")(js.Any.fromFunction1(onerror))
     if (onmessage != null) __obj.updateDynamic("onmessage")(js.Any.fromFunction1(onmessage))
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReconnectServerEventsOptions]
   }
 }

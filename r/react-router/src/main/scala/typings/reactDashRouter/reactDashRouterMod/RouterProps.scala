@@ -13,7 +13,7 @@ trait RouterProps extends js.Object {
 object RouterProps {
   @scala.inline
   def apply(history: History[LocationState]): RouterProps = {
-    val __obj = js.Dynamic.literal(history = history)
+    val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RouterProps]
   }

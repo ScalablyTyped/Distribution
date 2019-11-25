@@ -22,11 +22,11 @@ object LightOptions {
     point: Point = null
   ): LightOptions = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (intensity != null) __obj.updateDynamic("intensity")(intensity.asInstanceOf[js.Any])
-    if (normal != null) __obj.updateDynamic("normal")(normal)
-    if (point != null) __obj.updateDynamic("point")(point)
+    if (normal != null) __obj.updateDynamic("normal")(normal.asInstanceOf[js.Any])
+    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
     __obj.asInstanceOf[LightOptions]
   }
 }

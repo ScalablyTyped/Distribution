@@ -35,10 +35,10 @@ object TwitterIntentEventData {
     user_id: String = null
   ): TwitterIntentEventData = {
     val __obj = js.Dynamic.literal()
-    if (screen_name != null) __obj.updateDynamic("screen_name")(screen_name)
-    if (source_tweet_id != null) __obj.updateDynamic("source_tweet_id")(source_tweet_id)
-    if (tweet_id != null) __obj.updateDynamic("tweet_id")(tweet_id)
-    if (user_id != null) __obj.updateDynamic("user_id")(user_id)
+    if (screen_name != null) __obj.updateDynamic("screen_name")(screen_name.asInstanceOf[js.Any])
+    if (source_tweet_id != null) __obj.updateDynamic("source_tweet_id")(source_tweet_id.asInstanceOf[js.Any])
+    if (tweet_id != null) __obj.updateDynamic("tweet_id")(tweet_id.asInstanceOf[js.Any])
+    if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TwitterIntentEventData]
   }
 }

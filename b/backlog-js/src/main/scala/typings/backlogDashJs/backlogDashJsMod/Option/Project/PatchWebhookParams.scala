@@ -22,11 +22,11 @@ object PatchWebhookParams {
     name: String = null
   ): PatchWebhookParams = {
     val __obj = js.Dynamic.literal()
-    if (activityTypeIds != null) __obj.updateDynamic("activityTypeIds")(activityTypeIds)
-    if (!js.isUndefined(allEvent)) __obj.updateDynamic("allEvent")(allEvent)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (hookUrl != null) __obj.updateDynamic("hookUrl")(hookUrl)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (activityTypeIds != null) __obj.updateDynamic("activityTypeIds")(activityTypeIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(allEvent)) __obj.updateDynamic("allEvent")(allEvent.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (hookUrl != null) __obj.updateDynamic("hookUrl")(hookUrl.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchWebhookParams]
   }
 }

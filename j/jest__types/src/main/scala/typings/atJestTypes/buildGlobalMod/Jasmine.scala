@@ -12,7 +12,7 @@ trait Jasmine extends js.Object {
 object Jasmine {
   @scala.inline
   def apply(addMatchers: js.Function, _DEFAULT_TIMEOUT_INTERVAL: Int | Double = null): Jasmine = {
-    val __obj = js.Dynamic.literal(addMatchers = addMatchers)
+    val __obj = js.Dynamic.literal(addMatchers = addMatchers.asInstanceOf[js.Any])
     if (_DEFAULT_TIMEOUT_INTERVAL != null) __obj.updateDynamic("_DEFAULT_TIMEOUT_INTERVAL")(_DEFAULT_TIMEOUT_INTERVAL.asInstanceOf[js.Any])
     __obj.asInstanceOf[Jasmine]
   }

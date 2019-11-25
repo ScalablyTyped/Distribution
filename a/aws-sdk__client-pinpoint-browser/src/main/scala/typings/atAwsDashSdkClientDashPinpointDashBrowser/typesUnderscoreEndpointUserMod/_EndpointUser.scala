@@ -29,7 +29,7 @@ object _EndpointUser {
   ): _EndpointUser = {
     val __obj = js.Dynamic.literal()
     if (UserAttributes != null) __obj.updateDynamic("UserAttributes")(UserAttributes.asInstanceOf[js.Any])
-    if (UserId != null) __obj.updateDynamic("UserId")(UserId)
+    if (UserId != null) __obj.updateDynamic("UserId")(UserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_EndpointUser]
   }
 }

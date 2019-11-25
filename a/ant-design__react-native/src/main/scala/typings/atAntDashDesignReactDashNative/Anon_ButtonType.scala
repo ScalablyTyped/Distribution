@@ -11,7 +11,7 @@ trait Anon_ButtonType extends js.Object {
 object Anon_ButtonType {
   @scala.inline
   def apply(buttonType: String): Anon_ButtonType = {
-    val __obj = js.Dynamic.literal(buttonType = buttonType)
+    val __obj = js.Dynamic.literal(buttonType = buttonType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ButtonType]
   }

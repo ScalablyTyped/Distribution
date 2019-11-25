@@ -18,9 +18,9 @@ object Anon_ColumnsExpandAll {
     rows: js.Array[Anon_Measure] = null
   ): Anon_ColumnsExpandAll = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (!js.isUndefined(expandAll)) __obj.updateDynamic("expandAll")(expandAll)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandAll)) __obj.updateDynamic("expandAll")(expandAll.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColumnsExpandAll]
   }
 }

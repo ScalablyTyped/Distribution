@@ -14,7 +14,7 @@ trait Anon_AllApprovals extends js.Object {
 object Anon_AllApprovals {
   @scala.inline
   def apply(all: Double, approvals: Double, artifacts: Double, deploymentOnly: Double): Anon_AllApprovals = {
-    val __obj = js.Dynamic.literal(all = all, approvals = approvals, artifacts = artifacts, deploymentOnly = deploymentOnly)
+    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], approvals = approvals.asInstanceOf[js.Any], artifacts = artifacts.asInstanceOf[js.Any], deploymentOnly = deploymentOnly.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AllApprovals]
   }

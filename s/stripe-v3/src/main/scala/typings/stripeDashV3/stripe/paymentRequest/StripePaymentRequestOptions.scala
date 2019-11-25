@@ -25,13 +25,13 @@ object StripePaymentRequestOptions {
     requestShipping: js.UndefOr[Boolean] = js.undefined,
     shippingOptions: js.Array[ShippingOption] = null
   ): StripePaymentRequestOptions = {
-    val __obj = js.Dynamic.literal(country = country, currency = currency, total = total)
-    if (displayItems != null) __obj.updateDynamic("displayItems")(displayItems)
-    if (!js.isUndefined(requestPayerEmail)) __obj.updateDynamic("requestPayerEmail")(requestPayerEmail)
-    if (!js.isUndefined(requestPayerName)) __obj.updateDynamic("requestPayerName")(requestPayerName)
-    if (!js.isUndefined(requestPayerPhone)) __obj.updateDynamic("requestPayerPhone")(requestPayerPhone)
-    if (!js.isUndefined(requestShipping)) __obj.updateDynamic("requestShipping")(requestShipping)
-    if (shippingOptions != null) __obj.updateDynamic("shippingOptions")(shippingOptions)
+    val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
+    if (displayItems != null) __obj.updateDynamic("displayItems")(displayItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestPayerEmail)) __obj.updateDynamic("requestPayerEmail")(requestPayerEmail.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestPayerName)) __obj.updateDynamic("requestPayerName")(requestPayerName.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestPayerPhone)) __obj.updateDynamic("requestPayerPhone")(requestPayerPhone.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestShipping)) __obj.updateDynamic("requestShipping")(requestShipping.asInstanceOf[js.Any])
+    if (shippingOptions != null) __obj.updateDynamic("shippingOptions")(shippingOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripePaymentRequestOptions]
   }
 }

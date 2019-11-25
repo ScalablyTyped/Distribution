@@ -41,10 +41,10 @@ object ILayout {
     rightArea: ISideArea = null
   ): ILayout = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fresh)) __obj.updateDynamic("fresh")(fresh)
-    if (leftArea != null) __obj.updateDynamic("leftArea")(leftArea)
-    if (mainArea != null) __obj.updateDynamic("mainArea")(mainArea)
-    if (rightArea != null) __obj.updateDynamic("rightArea")(rightArea)
+    if (!js.isUndefined(fresh)) __obj.updateDynamic("fresh")(fresh.asInstanceOf[js.Any])
+    if (leftArea != null) __obj.updateDynamic("leftArea")(leftArea.asInstanceOf[js.Any])
+    if (mainArea != null) __obj.updateDynamic("mainArea")(mainArea.asInstanceOf[js.Any])
+    if (rightArea != null) __obj.updateDynamic("rightArea")(rightArea.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILayout]
   }
 }

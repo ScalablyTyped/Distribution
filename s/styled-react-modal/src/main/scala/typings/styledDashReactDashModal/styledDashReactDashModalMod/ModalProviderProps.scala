@@ -15,7 +15,7 @@ object ModalProviderProps {
   @scala.inline
   def apply(backgroundComponent: AnyStyledComponent = null, children: ReactNode = null): ModalProviderProps = {
     val __obj = js.Dynamic.literal()
-    if (backgroundComponent != null) __obj.updateDynamic("backgroundComponent")(backgroundComponent)
+    if (backgroundComponent != null) __obj.updateDynamic("backgroundComponent")(backgroundComponent.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalProviderProps]
   }

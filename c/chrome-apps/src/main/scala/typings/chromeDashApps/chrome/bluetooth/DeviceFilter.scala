@@ -19,7 +19,7 @@ object DeviceFilter {
   @scala.inline
   def apply(filterType: DeviceFilterType = null, limit: Int | Double = null): DeviceFilter = {
     val __obj = js.Dynamic.literal()
-    if (filterType != null) __obj.updateDynamic("filterType")(filterType)
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceFilter]
   }

@@ -20,9 +20,9 @@ object FileBrowser {
   @scala.inline
   def apply(ajaxAction: String = null, extensionAllow: String = null, filePath: String = null): FileBrowser = {
     val __obj = js.Dynamic.literal()
-    if (ajaxAction != null) __obj.updateDynamic("ajaxAction")(ajaxAction)
-    if (extensionAllow != null) __obj.updateDynamic("extensionAllow")(extensionAllow)
-    if (filePath != null) __obj.updateDynamic("filePath")(filePath)
+    if (ajaxAction != null) __obj.updateDynamic("ajaxAction")(ajaxAction.asInstanceOf[js.Any])
+    if (extensionAllow != null) __obj.updateDynamic("extensionAllow")(extensionAllow.asInstanceOf[js.Any])
+    if (filePath != null) __obj.updateDynamic("filePath")(filePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileBrowser]
   }
 }

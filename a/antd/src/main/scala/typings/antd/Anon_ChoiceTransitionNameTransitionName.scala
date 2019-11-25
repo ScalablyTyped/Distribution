@@ -12,7 +12,7 @@ trait Anon_ChoiceTransitionNameTransitionName extends js.Object {
 object Anon_ChoiceTransitionNameTransitionName {
   @scala.inline
   def apply(choiceTransitionName: String, transitionName: String): Anon_ChoiceTransitionNameTransitionName = {
-    val __obj = js.Dynamic.literal(choiceTransitionName = choiceTransitionName, transitionName = transitionName)
+    val __obj = js.Dynamic.literal(choiceTransitionName = choiceTransitionName.asInstanceOf[js.Any], transitionName = transitionName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ChoiceTransitionNameTransitionName]
   }

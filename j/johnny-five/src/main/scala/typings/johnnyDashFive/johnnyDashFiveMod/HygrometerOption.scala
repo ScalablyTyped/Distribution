@@ -13,7 +13,7 @@ object HygrometerOption {
   @scala.inline
   def apply(controller: String = null, freq: Int | Double = null): HygrometerOption = {
     val __obj = js.Dynamic.literal()
-    if (controller != null) __obj.updateDynamic("controller")(controller)
+    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
     if (freq != null) __obj.updateDynamic("freq")(freq.asInstanceOf[js.Any])
     __obj.asInstanceOf[HygrometerOption]
   }

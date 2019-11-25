@@ -120,7 +120,7 @@ trait Anon_ChangeDetection[T] extends js.Object {
     *    API will be simplified to be consistent with `output`.
     */
   var inputs: js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string | [string, string]}
     */ typings.atAngularCore.atAngularCoreStrings.Anon_ChangeDetection with js.Any
   ] = js.native
@@ -139,7 +139,7 @@ trait Anon_ChangeDetection[T] extends js.Object {
     * of properties.
     */
   var outputs: js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string}
     */ typings.atAngularCore.atAngularCoreStrings.Anon_ChangeDetection with js.Any
   ] = js.native

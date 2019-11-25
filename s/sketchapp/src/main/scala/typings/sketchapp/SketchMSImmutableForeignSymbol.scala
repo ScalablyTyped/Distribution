@@ -24,7 +24,7 @@ object SketchMSImmutableForeignSymbol {
     symbolMaster: SketchMSSymbolMasterLayer,
     symbolPrivate: Boolean
   ): SketchMSImmutableForeignSymbol = {
-    val __obj = js.Dynamic.literal(_class = _class, libraryID = libraryID, originalMaster = originalMaster, sourceLibraryName = sourceLibraryName, symbolMaster = symbolMaster, symbolPrivate = symbolPrivate)
+    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], libraryID = libraryID.asInstanceOf[js.Any], originalMaster = originalMaster.asInstanceOf[js.Any], sourceLibraryName = sourceLibraryName.asInstanceOf[js.Any], symbolMaster = symbolMaster.asInstanceOf[js.Any], symbolPrivate = symbolPrivate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SketchMSImmutableForeignSymbol]
   }

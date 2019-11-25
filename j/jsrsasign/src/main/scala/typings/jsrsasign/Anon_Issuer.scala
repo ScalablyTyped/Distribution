@@ -17,7 +17,7 @@ trait Anon_Issuer extends js.Object {
 object Anon_Issuer {
   @scala.inline
   def apply(issuer: StringParam, serial: DERInteger | IntegerParam | BigIntegerParam | HexParam | Double): Anon_Issuer = {
-    val __obj = js.Dynamic.literal(issuer = issuer, serial = serial.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(issuer = issuer.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Issuer]
   }

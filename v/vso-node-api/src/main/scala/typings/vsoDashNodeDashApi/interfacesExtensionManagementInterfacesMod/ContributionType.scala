@@ -30,7 +30,7 @@ object ContributionType {
     properties: StringDictionary[ContributionPropertyDescription],
     visibleTo: js.Array[String]
   ): ContributionType = {
-    val __obj = js.Dynamic.literal(description = description, id = id, indexed = indexed, name = name, properties = properties, visibleTo = visibleTo)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], indexed = indexed.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], visibleTo = visibleTo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContributionType]
   }

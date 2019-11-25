@@ -51,17 +51,17 @@ object VoterInfoResponse {
     state: js.Array[AdministrationRegion] = null
   ): VoterInfoResponse = {
     val __obj = js.Dynamic.literal()
-    if (contests != null) __obj.updateDynamic("contests")(contests)
-    if (dropOffLocations != null) __obj.updateDynamic("dropOffLocations")(dropOffLocations)
-    if (earlyVoteSites != null) __obj.updateDynamic("earlyVoteSites")(earlyVoteSites)
-    if (election != null) __obj.updateDynamic("election")(election)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (!js.isUndefined(mailOnly)) __obj.updateDynamic("mailOnly")(mailOnly)
-    if (normalizedInput != null) __obj.updateDynamic("normalizedInput")(normalizedInput)
-    if (otherElections != null) __obj.updateDynamic("otherElections")(otherElections)
-    if (pollingLocations != null) __obj.updateDynamic("pollingLocations")(pollingLocations)
-    if (precinctId != null) __obj.updateDynamic("precinctId")(precinctId)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (contests != null) __obj.updateDynamic("contests")(contests.asInstanceOf[js.Any])
+    if (dropOffLocations != null) __obj.updateDynamic("dropOffLocations")(dropOffLocations.asInstanceOf[js.Any])
+    if (earlyVoteSites != null) __obj.updateDynamic("earlyVoteSites")(earlyVoteSites.asInstanceOf[js.Any])
+    if (election != null) __obj.updateDynamic("election")(election.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (!js.isUndefined(mailOnly)) __obj.updateDynamic("mailOnly")(mailOnly.asInstanceOf[js.Any])
+    if (normalizedInput != null) __obj.updateDynamic("normalizedInput")(normalizedInput.asInstanceOf[js.Any])
+    if (otherElections != null) __obj.updateDynamic("otherElections")(otherElections.asInstanceOf[js.Any])
+    if (pollingLocations != null) __obj.updateDynamic("pollingLocations")(pollingLocations.asInstanceOf[js.Any])
+    if (precinctId != null) __obj.updateDynamic("precinctId")(precinctId.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoterInfoResponse]
   }
 }

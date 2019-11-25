@@ -13,7 +13,7 @@ trait TransactionTrace extends js.Object {
 object TransactionTrace {
   @scala.inline
   def apply(gas: Double, returnValue: js.Any, structLogs: js.Array[StructLog]): TransactionTrace = {
-    val __obj = js.Dynamic.literal(gas = gas, returnValue = returnValue, structLogs = structLogs)
+    val __obj = js.Dynamic.literal(gas = gas.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any], structLogs = structLogs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TransactionTrace]
   }

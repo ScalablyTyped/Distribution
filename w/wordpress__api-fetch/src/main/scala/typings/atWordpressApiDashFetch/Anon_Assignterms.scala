@@ -14,7 +14,7 @@ trait Anon_Assignterms extends js.Object {
 object Anon_Assignterms {
   @scala.inline
   def apply(assign_terms: String, delete_terms: String, edit_terms: String, manage_terms: String): Anon_Assignterms = {
-    val __obj = js.Dynamic.literal(assign_terms = assign_terms, delete_terms = delete_terms, edit_terms = edit_terms, manage_terms = manage_terms)
+    val __obj = js.Dynamic.literal(assign_terms = assign_terms.asInstanceOf[js.Any], delete_terms = delete_terms.asInstanceOf[js.Any], edit_terms = edit_terms.asInstanceOf[js.Any], manage_terms = manage_terms.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Assignterms]
   }

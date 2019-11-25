@@ -73,12 +73,12 @@ object AttachmentCommon {
     filename: String = null,
     related: js.UndefOr[Boolean] = js.undefined
   ): AttachmentCommon = {
-    val __obj = js.Dynamic.literal(checksum = checksum, content = content, contentDisposition = contentDisposition, contentType = contentType, headers = headers, size = size)
-    __obj.updateDynamic("type")(`type`)
-    if (cid != null) __obj.updateDynamic("cid")(cid)
-    if (contentId != null) __obj.updateDynamic("contentId")(contentId)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (!js.isUndefined(related)) __obj.updateDynamic("related")(related)
+    val __obj = js.Dynamic.literal(checksum = checksum.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentDisposition = contentDisposition.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (cid != null) __obj.updateDynamic("cid")(cid.asInstanceOf[js.Any])
+    if (contentId != null) __obj.updateDynamic("contentId")(contentId.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(related)) __obj.updateDynamic("related")(related.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentCommon]
   }
 }

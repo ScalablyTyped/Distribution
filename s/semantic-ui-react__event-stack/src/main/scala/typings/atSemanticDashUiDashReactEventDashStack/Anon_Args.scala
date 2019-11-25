@@ -29,7 +29,7 @@ object Anon_Args {
     pool: Requireable[String],
     target: Requireable[js.Object]
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal(name = name, on = on, pool = pool, target = target)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any], pool = pool.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Args]
   }

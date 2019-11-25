@@ -1,12 +1,13 @@
 package typings.npmDashName.npmDashNameMod
 
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("npm-name", "InvalidNameError")
 @js.native
-class InvalidNameError () extends InvalidNameErrorClass {
+class InvalidNameError () extends Error {
   /* CompleteClass */
   override var message: String = js.native
   /* CompleteClass */

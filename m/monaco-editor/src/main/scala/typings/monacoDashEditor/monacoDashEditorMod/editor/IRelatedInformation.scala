@@ -24,7 +24,7 @@ object IRelatedInformation {
     startColumn: Double,
     startLineNumber: Double
   ): IRelatedInformation = {
-    val __obj = js.Dynamic.literal(endColumn = endColumn, endLineNumber = endLineNumber, message = message, resource = resource, startColumn = startColumn, startLineNumber = startLineNumber)
+    val __obj = js.Dynamic.literal(endColumn = endColumn.asInstanceOf[js.Any], endLineNumber = endLineNumber.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], startColumn = startColumn.asInstanceOf[js.Any], startLineNumber = startLineNumber.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IRelatedInformation]
   }

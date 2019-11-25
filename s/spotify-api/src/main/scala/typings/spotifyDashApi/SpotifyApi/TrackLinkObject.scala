@@ -20,8 +20,8 @@ trait TrackLinkObject extends js.Object {
 object TrackLinkObject {
   @scala.inline
   def apply(external_urls: ExternalUrlObject, href: String, id: String, `type`: track, uri: String): TrackLinkObject = {
-    val __obj = js.Dynamic.literal(external_urls = external_urls, href = href, id = id, uri = uri)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackLinkObject]
   }
 }

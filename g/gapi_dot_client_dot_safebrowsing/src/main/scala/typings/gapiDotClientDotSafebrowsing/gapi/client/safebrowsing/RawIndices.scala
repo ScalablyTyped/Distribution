@@ -13,7 +13,7 @@ object RawIndices {
   @scala.inline
   def apply(indices: js.Array[Double] = null): RawIndices = {
     val __obj = js.Dynamic.literal()
-    if (indices != null) __obj.updateDynamic("indices")(indices)
+    if (indices != null) __obj.updateDynamic("indices")(indices.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawIndices]
   }
 }

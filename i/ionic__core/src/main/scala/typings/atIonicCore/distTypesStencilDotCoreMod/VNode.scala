@@ -35,10 +35,10 @@ object VNode {
     $key$: String | Double = null,
     $name$: String = null
   ): VNode = {
-    val __obj = js.Dynamic.literal($children$ = $children$, $elm$ = $elm$, $flags$ = $flags$, $tag$ = $tag$.asInstanceOf[js.Any], $text$ = $text$)
-    if ($attrs$ != null) __obj.updateDynamic("$attrs$")($attrs$)
+    val __obj = js.Dynamic.literal($children$ = $children$.asInstanceOf[js.Any], $elm$ = $elm$.asInstanceOf[js.Any], $flags$ = $flags$.asInstanceOf[js.Any], $tag$ = $tag$.asInstanceOf[js.Any], $text$ = $text$.asInstanceOf[js.Any])
+    if ($attrs$ != null) __obj.updateDynamic("$attrs$")($attrs$.asInstanceOf[js.Any])
     if ($key$ != null) __obj.updateDynamic("$key$")($key$.asInstanceOf[js.Any])
-    if ($name$ != null) __obj.updateDynamic("$name$")($name$)
+    if ($name$ != null) __obj.updateDynamic("$name$")($name$.asInstanceOf[js.Any])
     __obj.asInstanceOf[VNode]
   }
 }

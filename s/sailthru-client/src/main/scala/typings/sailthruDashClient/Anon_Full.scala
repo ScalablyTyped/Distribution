@@ -13,8 +13,8 @@ object Anon_Full {
   @scala.inline
   def apply(full: Anon_Url = null, thumb: Anon_Url = null): Anon_Full = {
     val __obj = js.Dynamic.literal()
-    if (full != null) __obj.updateDynamic("full")(full)
-    if (thumb != null) __obj.updateDynamic("thumb")(thumb)
+    if (full != null) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
+    if (thumb != null) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Full]
   }
 }

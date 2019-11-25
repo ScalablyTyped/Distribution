@@ -21,8 +21,8 @@ trait ApplyWorkspaceEditParams extends js.Object {
 object ApplyWorkspaceEditParams {
   @scala.inline
   def apply(edit: WorkspaceEdit, label: String = null): ApplyWorkspaceEditParams = {
-    val __obj = js.Dynamic.literal(edit = edit)
-    if (label != null) __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(edit = edit.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplyWorkspaceEditParams]
   }
 }

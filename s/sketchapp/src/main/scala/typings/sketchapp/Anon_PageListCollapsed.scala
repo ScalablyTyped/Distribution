@@ -12,7 +12,7 @@ trait Anon_PageListCollapsed extends js.Object {
 object Anon_PageListCollapsed {
   @scala.inline
   def apply(pageListCollapsed: Double, pageListHeight: Double): Anon_PageListCollapsed = {
-    val __obj = js.Dynamic.literal(pageListCollapsed = pageListCollapsed, pageListHeight = pageListHeight)
+    val __obj = js.Dynamic.literal(pageListCollapsed = pageListCollapsed.asInstanceOf[js.Any], pageListHeight = pageListHeight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PageListCollapsed]
   }

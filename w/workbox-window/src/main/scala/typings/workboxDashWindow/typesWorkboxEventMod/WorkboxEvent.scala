@@ -15,8 +15,8 @@ trait WorkboxEvent extends js.Object {
 object WorkboxEvent {
   @scala.inline
   def apply(originalEvent: Event, target: Workbox, `type`: String): WorkboxEvent = {
-    val __obj = js.Dynamic.literal(originalEvent = originalEvent, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkboxEvent]
   }
 }

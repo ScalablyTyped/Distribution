@@ -22,11 +22,11 @@ object MtlsEndpointAliases {
     userinfo_endpoint: String = null
   ): MtlsEndpointAliases = {
     val __obj = js.Dynamic.literal()
-    if (device_authorization_endpoint != null) __obj.updateDynamic("device_authorization_endpoint")(device_authorization_endpoint)
-    if (introspection_endpoint != null) __obj.updateDynamic("introspection_endpoint")(introspection_endpoint)
-    if (revocation_endpoint != null) __obj.updateDynamic("revocation_endpoint")(revocation_endpoint)
-    if (token_endpoint != null) __obj.updateDynamic("token_endpoint")(token_endpoint)
-    if (userinfo_endpoint != null) __obj.updateDynamic("userinfo_endpoint")(userinfo_endpoint)
+    if (device_authorization_endpoint != null) __obj.updateDynamic("device_authorization_endpoint")(device_authorization_endpoint.asInstanceOf[js.Any])
+    if (introspection_endpoint != null) __obj.updateDynamic("introspection_endpoint")(introspection_endpoint.asInstanceOf[js.Any])
+    if (revocation_endpoint != null) __obj.updateDynamic("revocation_endpoint")(revocation_endpoint.asInstanceOf[js.Any])
+    if (token_endpoint != null) __obj.updateDynamic("token_endpoint")(token_endpoint.asInstanceOf[js.Any])
+    if (userinfo_endpoint != null) __obj.updateDynamic("userinfo_endpoint")(userinfo_endpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[MtlsEndpointAliases]
   }
 }

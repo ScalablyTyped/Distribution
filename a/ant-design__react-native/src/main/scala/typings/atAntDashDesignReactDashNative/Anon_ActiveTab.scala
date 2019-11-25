@@ -29,7 +29,7 @@ object Anon_ActiveTab {
     tabBarInactiveTextColor: String,
     tabs: js.Array[scala.Nothing]
   ): Anon_ActiveTab = {
-    val __obj = js.Dynamic.literal(activeTab = activeTab, animated = animated, dynamicTabUnderlineWidth = dynamicTabUnderlineWidth, goToTab = js.Any.fromFunction0(goToTab), page = page, tabBarActiveTextColor = tabBarActiveTextColor, tabBarBackgroundColor = tabBarBackgroundColor, tabBarInactiveTextColor = tabBarInactiveTextColor, tabs = tabs)
+    val __obj = js.Dynamic.literal(activeTab = activeTab.asInstanceOf[js.Any], animated = animated.asInstanceOf[js.Any], dynamicTabUnderlineWidth = dynamicTabUnderlineWidth.asInstanceOf[js.Any], goToTab = js.Any.fromFunction0(goToTab), page = page.asInstanceOf[js.Any], tabBarActiveTextColor = tabBarActiveTextColor.asInstanceOf[js.Any], tabBarBackgroundColor = tabBarBackgroundColor.asInstanceOf[js.Any], tabBarInactiveTextColor = tabBarInactiveTextColor.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ActiveTab]
   }

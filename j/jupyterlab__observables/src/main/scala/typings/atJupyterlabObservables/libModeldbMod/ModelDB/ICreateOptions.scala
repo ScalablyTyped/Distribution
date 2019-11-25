@@ -23,8 +23,8 @@ object ICreateOptions {
   @scala.inline
   def apply(baseDB: typings.atJupyterlabObservables.libModeldbMod.ModelDB = null, basePath: String = null): ICreateOptions = {
     val __obj = js.Dynamic.literal()
-    if (baseDB != null) __obj.updateDynamic("baseDB")(baseDB)
-    if (basePath != null) __obj.updateDynamic("basePath")(basePath)
+    if (baseDB != null) __obj.updateDynamic("baseDB")(baseDB.asInstanceOf[js.Any])
+    if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreateOptions]
   }
 }

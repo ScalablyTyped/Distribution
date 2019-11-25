@@ -11,7 +11,7 @@ trait IPortalState extends js.Object {
 object IPortalState {
   @scala.inline
   def apply(hasMounted: Boolean): IPortalState = {
-    val __obj = js.Dynamic.literal(hasMounted = hasMounted)
+    val __obj = js.Dynamic.literal(hasMounted = hasMounted.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPortalState]
   }

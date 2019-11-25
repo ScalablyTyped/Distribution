@@ -13,8 +13,8 @@ trait Anon_MonthReactNode extends js.Object {
 object Anon_MonthReactNode {
   @scala.inline
   def apply(yearReactNode: Element, monthReactNode: Element = null): Anon_MonthReactNode = {
-    val __obj = js.Dynamic.literal(yearReactNode = yearReactNode)
-    if (monthReactNode != null) __obj.updateDynamic("monthReactNode")(monthReactNode)
+    val __obj = js.Dynamic.literal(yearReactNode = yearReactNode.asInstanceOf[js.Any])
+    if (monthReactNode != null) __obj.updateDynamic("monthReactNode")(monthReactNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MonthReactNode]
   }
 }

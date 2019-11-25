@@ -21,8 +21,8 @@ object CP$Module {
     NumberDictionary: /** Codepage Converters */
   /* cp */ NumberDictionary[CP$Conv] = null
   ): CP$Module = {
-    val __obj = js.Dynamic.literal(utils = utils, version = version)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    val __obj = js.Dynamic.literal(utils = utils.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[CP$Module]
   }
 }

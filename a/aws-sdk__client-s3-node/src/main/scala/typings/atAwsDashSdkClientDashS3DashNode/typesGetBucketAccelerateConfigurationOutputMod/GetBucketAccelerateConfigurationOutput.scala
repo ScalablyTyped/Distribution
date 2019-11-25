@@ -21,7 +21,7 @@ trait GetBucketAccelerateConfigurationOutput
 object GetBucketAccelerateConfigurationOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, Status: Enabled | Suspended | String = null): GetBucketAccelerateConfigurationOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketAccelerateConfigurationOutput]
   }

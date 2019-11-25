@@ -15,7 +15,7 @@ object Anon_Payload {
   @scala.inline
   def apply(payload: js.UndefOr[Boolean] = js.undefined): Anon_Payload = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(payload)) __obj.updateDynamic("payload")(payload)
+    if (!js.isUndefined(payload)) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Payload]
   }
 }

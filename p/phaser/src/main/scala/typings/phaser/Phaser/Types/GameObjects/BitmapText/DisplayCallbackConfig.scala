@@ -57,7 +57,7 @@ object DisplayCallbackConfig {
     x: Double,
     y: Double
   ): DisplayCallbackConfig = {
-    val __obj = js.Dynamic.literal(charCode = charCode, data = data, index = index, parent = parent, rotation = rotation, scale = scale, tint = tint, x = x, y = y)
+    val __obj = js.Dynamic.literal(charCode = charCode.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], tint = tint.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DisplayCallbackConfig]
   }

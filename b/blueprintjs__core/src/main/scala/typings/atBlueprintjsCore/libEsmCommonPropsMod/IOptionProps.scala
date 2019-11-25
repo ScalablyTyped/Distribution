@@ -22,9 +22,9 @@ object IOptionProps {
     label: String = null
   ): IOptionProps = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptionProps]
   }
 }

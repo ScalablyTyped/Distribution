@@ -18,9 +18,9 @@ object NativeFunctionOptions {
     scheduling: SchedulingBehavior = null
   ): NativeFunctionOptions = {
     val __obj = js.Dynamic.literal()
-    if (abi != null) __obj.updateDynamic("abi")(abi)
-    if (exceptions != null) __obj.updateDynamic("exceptions")(exceptions)
-    if (scheduling != null) __obj.updateDynamic("scheduling")(scheduling)
+    if (abi != null) __obj.updateDynamic("abi")(abi.asInstanceOf[js.Any])
+    if (exceptions != null) __obj.updateDynamic("exceptions")(exceptions.asInstanceOf[js.Any])
+    if (scheduling != null) __obj.updateDynamic("scheduling")(scheduling.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeFunctionOptions]
   }
 }

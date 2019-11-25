@@ -13,7 +13,7 @@ trait ViewportBreakpoint extends js.Object {
 object ViewportBreakpoint {
   @scala.inline
   def apply(name: String, size: Anon_Height): ViewportBreakpoint = {
-    val __obj = js.Dynamic.literal(name = name, size = size)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ViewportBreakpoint]
   }

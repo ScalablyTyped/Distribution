@@ -25,8 +25,8 @@ object Settings {
     truncateMessages: js.UndefOr[Boolean] = js.undefined
   ): Settings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(comparePrototypes)) __obj.updateDynamic("comparePrototypes")(comparePrototypes)
-    if (!js.isUndefined(truncateMessages)) __obj.updateDynamic("truncateMessages")(truncateMessages)
+    if (!js.isUndefined(comparePrototypes)) __obj.updateDynamic("comparePrototypes")(comparePrototypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(truncateMessages)) __obj.updateDynamic("truncateMessages")(truncateMessages.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
 }

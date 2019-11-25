@@ -68,12 +68,12 @@ object PaymentMethod {
     card_present: js.Any = null,
     customer: String = null
   ): PaymentMethod = {
-    val __obj = js.Dynamic.literal(billing_details = billing_details, created = created, id = id, livemode = livemode, metadata = metadata)
-    __obj.updateDynamic("object")(`object`)
-    __obj.updateDynamic("type")(`type`)
-    if (card != null) __obj.updateDynamic("card")(card)
-    if (card_present != null) __obj.updateDynamic("card_present")(card_present)
-    if (customer != null) __obj.updateDynamic("customer")(customer)
+    val __obj = js.Dynamic.literal(billing_details = billing_details.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
+    if (card_present != null) __obj.updateDynamic("card_present")(card_present.asInstanceOf[js.Any])
+    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentMethod]
   }
 }

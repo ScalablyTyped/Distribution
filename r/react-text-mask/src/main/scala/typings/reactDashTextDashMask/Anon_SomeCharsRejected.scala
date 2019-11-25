@@ -11,7 +11,7 @@ trait Anon_SomeCharsRejected extends js.Object {
 object Anon_SomeCharsRejected {
   @scala.inline
   def apply(someCharsRejected: Boolean): Anon_SomeCharsRejected = {
-    val __obj = js.Dynamic.literal(someCharsRejected = someCharsRejected)
+    val __obj = js.Dynamic.literal(someCharsRejected = someCharsRejected.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SomeCharsRejected]
   }

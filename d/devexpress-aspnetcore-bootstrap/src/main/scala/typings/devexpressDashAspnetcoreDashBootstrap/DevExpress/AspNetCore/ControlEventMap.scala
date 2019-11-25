@@ -11,7 +11,7 @@ trait ControlEventMap extends js.Object {
 object ControlEventMap {
   @scala.inline
   def apply(init: EventArgs): ControlEventMap = {
-    val __obj = js.Dynamic.literal(init = init)
+    val __obj = js.Dynamic.literal(init = init.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ControlEventMap]
   }

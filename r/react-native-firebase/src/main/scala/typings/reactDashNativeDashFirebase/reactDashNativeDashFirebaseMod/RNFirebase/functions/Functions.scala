@@ -39,7 +39,7 @@ object Functions {
     StringDictionary: /* key */ StringDictionary[js.Any] = null
   ): Functions = {
     val __obj = js.Dynamic.literal(httpsCallable = js.Any.fromFunction1(httpsCallable), useFunctionsEmulator = js.Any.fromFunction1(useFunctionsEmulator))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Functions]
   }
 }

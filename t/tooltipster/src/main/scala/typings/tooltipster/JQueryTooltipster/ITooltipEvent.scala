@@ -15,7 +15,7 @@ trait ITooltipEvent extends js.Object {
 object ITooltipEvent {
   @scala.inline
   def apply(event: JQueryEventObject, instance: ITooltipsterInstance, origin: HTMLElement): ITooltipEvent = {
-    val __obj = js.Dynamic.literal(event = event, instance = instance, origin = origin)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITooltipEvent]
   }

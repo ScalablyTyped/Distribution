@@ -39,7 +39,7 @@ object DeviceGeoLocation {
     if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
     if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
     if (horizontalAccuracy != null) __obj.updateDynamic("horizontalAccuracy")(horizontalAccuracy.asInstanceOf[js.Any])
-    if (lastCollectedDateTime != null) __obj.updateDynamic("lastCollectedDateTime")(lastCollectedDateTime)
+    if (lastCollectedDateTime != null) __obj.updateDynamic("lastCollectedDateTime")(lastCollectedDateTime.asInstanceOf[js.Any])
     if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
     if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])

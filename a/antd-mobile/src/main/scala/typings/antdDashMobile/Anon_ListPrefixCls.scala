@@ -12,7 +12,7 @@ trait Anon_ListPrefixCls extends js.Object {
 object Anon_ListPrefixCls {
   @scala.inline
   def apply(listPrefixCls: String, prefixCls: String): Anon_ListPrefixCls = {
-    val __obj = js.Dynamic.literal(listPrefixCls = listPrefixCls, prefixCls = prefixCls)
+    val __obj = js.Dynamic.literal(listPrefixCls = listPrefixCls.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ListPrefixCls]
   }

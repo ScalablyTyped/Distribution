@@ -20,7 +20,7 @@ object ServeStaticFiles {
     setHeaders: (/* res */ Response, /* path */ String, /* stat */ js.Any) => _ = null
   ): ServeStaticFiles = {
     val __obj = js.Dynamic.literal()
-    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (setHeaders != null) __obj.updateDynamic("setHeaders")(js.Any.fromFunction3(setHeaders))
     __obj.asInstanceOf[ServeStaticFiles]

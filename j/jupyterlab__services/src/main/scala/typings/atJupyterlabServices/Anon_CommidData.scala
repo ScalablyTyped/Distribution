@@ -13,7 +13,7 @@ trait Anon_CommidData extends js.Object {
 object Anon_CommidData {
   @scala.inline
   def apply(comm_id: String, data: JSONObject): Anon_CommidData = {
-    val __obj = js.Dynamic.literal(comm_id = comm_id, data = data)
+    val __obj = js.Dynamic.literal(comm_id = comm_id.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CommidData]
   }

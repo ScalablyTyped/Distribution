@@ -25,10 +25,10 @@ object MappingExecutionOptions {
     timestamp: Double | Long = null
   ): MappingExecutionOptions = {
     val __obj = js.Dynamic.literal()
-    if (executionProfile != null) __obj.updateDynamic("executionProfile")(executionProfile)
+    if (executionProfile != null) __obj.updateDynamic("executionProfile")(executionProfile.asInstanceOf[js.Any])
     if (fetchSize != null) __obj.updateDynamic("fetchSize")(fetchSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(isIdempotent)) __obj.updateDynamic("isIdempotent")(isIdempotent)
-    if (!js.isUndefined(logged)) __obj.updateDynamic("logged")(logged)
+    if (!js.isUndefined(isIdempotent)) __obj.updateDynamic("isIdempotent")(isIdempotent.asInstanceOf[js.Any])
+    if (!js.isUndefined(logged)) __obj.updateDynamic("logged")(logged.asInstanceOf[js.Any])
     if (pageState != null) __obj.updateDynamic("pageState")(pageState.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[MappingExecutionOptions]

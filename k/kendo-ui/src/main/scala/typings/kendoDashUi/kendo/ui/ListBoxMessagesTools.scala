@@ -26,13 +26,13 @@ object ListBoxMessagesTools {
     transferTo: String = null
   ): ListBoxMessagesTools = {
     val __obj = js.Dynamic.literal()
-    if (moveDown != null) __obj.updateDynamic("moveDown")(moveDown)
-    if (moveUp != null) __obj.updateDynamic("moveUp")(moveUp)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
-    if (transferAllFrom != null) __obj.updateDynamic("transferAllFrom")(transferAllFrom)
-    if (transferAllTo != null) __obj.updateDynamic("transferAllTo")(transferAllTo)
-    if (transferFrom != null) __obj.updateDynamic("transferFrom")(transferFrom)
-    if (transferTo != null) __obj.updateDynamic("transferTo")(transferTo)
+    if (moveDown != null) __obj.updateDynamic("moveDown")(moveDown.asInstanceOf[js.Any])
+    if (moveUp != null) __obj.updateDynamic("moveUp")(moveUp.asInstanceOf[js.Any])
+    if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
+    if (transferAllFrom != null) __obj.updateDynamic("transferAllFrom")(transferAllFrom.asInstanceOf[js.Any])
+    if (transferAllTo != null) __obj.updateDynamic("transferAllTo")(transferAllTo.asInstanceOf[js.Any])
+    if (transferFrom != null) __obj.updateDynamic("transferFrom")(transferFrom.asInstanceOf[js.Any])
+    if (transferTo != null) __obj.updateDynamic("transferTo")(transferTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBoxMessagesTools]
   }
 }

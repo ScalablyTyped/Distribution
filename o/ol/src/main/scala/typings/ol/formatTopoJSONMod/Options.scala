@@ -16,8 +16,8 @@ object Options {
   def apply(dataProjection: ProjectionLike = null, layerName: String = null, layers: js.Array[String] = null): Options = {
     val __obj = js.Dynamic.literal()
     if (dataProjection != null) __obj.updateDynamic("dataProjection")(dataProjection.asInstanceOf[js.Any])
-    if (layerName != null) __obj.updateDynamic("layerName")(layerName)
-    if (layers != null) __obj.updateDynamic("layers")(layers)
+    if (layerName != null) __obj.updateDynamic("layerName")(layerName.asInstanceOf[js.Any])
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

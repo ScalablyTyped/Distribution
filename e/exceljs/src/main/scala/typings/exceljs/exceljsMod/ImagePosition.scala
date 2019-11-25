@@ -14,7 +14,7 @@ trait ImagePosition extends js.Object {
 object ImagePosition {
   @scala.inline
   def apply(ext: Anon_Height, tl: Anon_Col): ImagePosition = {
-    val __obj = js.Dynamic.literal(ext = ext, tl = tl)
+    val __obj = js.Dynamic.literal(ext = ext.asInstanceOf[js.Any], tl = tl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ImagePosition]
   }

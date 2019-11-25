@@ -13,7 +13,7 @@ trait SjclHashes extends js.Object {
 object SjclHashes {
   @scala.inline
   def apply(sha1: SjclHashStatic, sha256: SjclHashStatic, sha512: SjclHashStatic): SjclHashes = {
-    val __obj = js.Dynamic.literal(sha1 = sha1, sha256 = sha256, sha512 = sha512)
+    val __obj = js.Dynamic.literal(sha1 = sha1.asInstanceOf[js.Any], sha256 = sha256.asInstanceOf[js.Any], sha512 = sha512.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SjclHashes]
   }

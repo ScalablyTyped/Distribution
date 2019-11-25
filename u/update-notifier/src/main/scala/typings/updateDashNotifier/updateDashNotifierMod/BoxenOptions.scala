@@ -22,9 +22,9 @@ object BoxenOptions {
     padding: Int | Double = null
   ): BoxenOptions = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
-    if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoxenOptions]

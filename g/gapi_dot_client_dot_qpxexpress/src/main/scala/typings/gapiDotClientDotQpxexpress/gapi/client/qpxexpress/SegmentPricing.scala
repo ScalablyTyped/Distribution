@@ -24,10 +24,10 @@ object SegmentPricing {
     segmentId: String = null
   ): SegmentPricing = {
     val __obj = js.Dynamic.literal()
-    if (fareId != null) __obj.updateDynamic("fareId")(fareId)
-    if (freeBaggageOption != null) __obj.updateDynamic("freeBaggageOption")(freeBaggageOption)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (segmentId != null) __obj.updateDynamic("segmentId")(segmentId)
+    if (fareId != null) __obj.updateDynamic("fareId")(fareId.asInstanceOf[js.Any])
+    if (freeBaggageOption != null) __obj.updateDynamic("freeBaggageOption")(freeBaggageOption.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (segmentId != null) __obj.updateDynamic("segmentId")(segmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentPricing]
   }
 }

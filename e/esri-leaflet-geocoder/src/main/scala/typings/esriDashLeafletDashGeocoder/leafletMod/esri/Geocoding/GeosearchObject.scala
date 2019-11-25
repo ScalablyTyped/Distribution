@@ -34,16 +34,16 @@ object GeosearchObject {
     zoomToResult: js.UndefOr[Boolean] = js.undefined
   ): GeosearchObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowMultipleResults)) __obj.updateDynamic("allowMultipleResults")(allowMultipleResults)
-    if (!js.isUndefined(collapseAfterResult)) __obj.updateDynamic("collapseAfterResult")(collapseAfterResult)
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (providers != null) __obj.updateDynamic("providers")(providers)
+    if (!js.isUndefined(allowMultipleResults)) __obj.updateDynamic("allowMultipleResults")(allowMultipleResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapseAfterResult)) __obj.updateDynamic("collapseAfterResult")(collapseAfterResult.asInstanceOf[js.Any])
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (providers != null) __obj.updateDynamic("providers")(providers.asInstanceOf[js.Any])
     if (searchBounds != null) __obj.updateDynamic("searchBounds")(searchBounds.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (useMapBounds != null) __obj.updateDynamic("useMapBounds")(useMapBounds.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomToResult)) __obj.updateDynamic("zoomToResult")(zoomToResult)
+    if (!js.isUndefined(zoomToResult)) __obj.updateDynamic("zoomToResult")(zoomToResult.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeosearchObject]
   }
 }

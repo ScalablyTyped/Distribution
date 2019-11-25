@@ -24,12 +24,12 @@ object Anon_Debug {
     uncaughtException: js.UndefOr[Boolean] = js.undefined
   ): Anon_Debug = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(SIGHUP)) __obj.updateDynamic("SIGHUP")(SIGHUP)
-    if (!js.isUndefined(SIGINT)) __obj.updateDynamic("SIGINT")(SIGINT)
-    if (!js.isUndefined(SIGQUIT)) __obj.updateDynamic("SIGQUIT")(SIGQUIT)
-    if (!js.isUndefined(SIGTERM)) __obj.updateDynamic("SIGTERM")(SIGTERM)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (!js.isUndefined(uncaughtException)) __obj.updateDynamic("uncaughtException")(uncaughtException)
+    if (!js.isUndefined(SIGHUP)) __obj.updateDynamic("SIGHUP")(SIGHUP.asInstanceOf[js.Any])
+    if (!js.isUndefined(SIGINT)) __obj.updateDynamic("SIGINT")(SIGINT.asInstanceOf[js.Any])
+    if (!js.isUndefined(SIGQUIT)) __obj.updateDynamic("SIGQUIT")(SIGQUIT.asInstanceOf[js.Any])
+    if (!js.isUndefined(SIGTERM)) __obj.updateDynamic("SIGTERM")(SIGTERM.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(uncaughtException)) __obj.updateDynamic("uncaughtException")(uncaughtException.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Debug]
   }
 }

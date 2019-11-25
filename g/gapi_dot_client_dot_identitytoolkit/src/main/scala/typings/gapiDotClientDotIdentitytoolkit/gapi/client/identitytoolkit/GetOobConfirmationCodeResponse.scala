@@ -17,9 +17,9 @@ object GetOobConfirmationCodeResponse {
   @scala.inline
   def apply(email: String = null, kind: String = null, oobCode: String = null): GetOobConfirmationCodeResponse = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (oobCode != null) __obj.updateDynamic("oobCode")(oobCode)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (oobCode != null) __obj.updateDynamic("oobCode")(oobCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOobConfirmationCodeResponse]
   }
 }

@@ -17,9 +17,9 @@ object QueryTaskProperties {
   @scala.inline
   def apply(gdbVersion: String = null, requestOptions: js.Any = null, url: String = null): QueryTaskProperties = {
     val __obj = js.Dynamic.literal()
-    if (gdbVersion != null) __obj.updateDynamic("gdbVersion")(gdbVersion)
-    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (gdbVersion != null) __obj.updateDynamic("gdbVersion")(gdbVersion.asInstanceOf[js.Any])
+    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryTaskProperties]
   }
 }

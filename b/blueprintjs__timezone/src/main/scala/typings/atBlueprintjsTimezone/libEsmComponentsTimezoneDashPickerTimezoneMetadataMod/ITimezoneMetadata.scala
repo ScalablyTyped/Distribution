@@ -21,8 +21,8 @@ object ITimezoneMetadata {
     abbreviation: String = null,
     population: Int | Double = null
   ): ITimezoneMetadata = {
-    val __obj = js.Dynamic.literal(offset = offset, offsetAsString = offsetAsString, timezone = timezone)
-    if (abbreviation != null) __obj.updateDynamic("abbreviation")(abbreviation)
+    val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], offsetAsString = offsetAsString.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any])
+    if (abbreviation != null) __obj.updateDynamic("abbreviation")(abbreviation.asInstanceOf[js.Any])
     if (population != null) __obj.updateDynamic("population")(population.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimezoneMetadata]
   }

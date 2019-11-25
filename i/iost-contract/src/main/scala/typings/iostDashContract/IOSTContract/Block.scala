@@ -14,7 +14,7 @@ trait Block extends js.Object {
 object Block {
   @scala.inline
   def apply(number: Double, parent_hash: String, time: Double, witness: String): Block = {
-    val __obj = js.Dynamic.literal(number = number, parent_hash = parent_hash, time = time, witness = witness)
+    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], parent_hash = parent_hash.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], witness = witness.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Block]
   }

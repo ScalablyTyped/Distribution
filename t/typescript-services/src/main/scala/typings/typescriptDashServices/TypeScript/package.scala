@@ -8,14 +8,14 @@ package object TypeScript {
   import org.scalablytyped.runtime.NumberDictionary
   import org.scalablytyped.runtime.StringDictionary
 
-  type IClassElementSyntax = ISyntaxNodeOrToken
+  type IClassElementSyntax = ISyntaxNode
   type IIndexable[T] = StringDictionary[T]
-  type IMemberDeclarationSyntax = ISyntaxNodeOrToken
-  type IModuleElementSyntax = ISyntaxNodeOrToken
-  type INameSyntax = ISyntaxNodeOrToken
-  type IPropertyAssignmentSyntax = ISyntaxNodeOrToken
+  type IMemberDeclarationSyntax = IClassElementSyntax
+  type IModuleElementSyntax = ISyntaxNode
+  type INameSyntax = ITypeSyntax
+  type IPropertyAssignmentSyntax = IClassElementSyntax
   type ISyntaxNode = ISyntaxNodeOrToken
-  type ITypeMemberSyntax = ISyntaxNodeOrToken
+  type ITypeMemberSyntax = ISyntaxNode
   type ITypeSyntax = ISyntaxNodeOrToken
   type TypeArgumentMap = NumberDictionary[PullTypeSymbol]
 }

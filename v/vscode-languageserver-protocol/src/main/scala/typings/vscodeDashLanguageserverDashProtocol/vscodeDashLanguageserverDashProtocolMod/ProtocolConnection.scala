@@ -2,9 +2,6 @@ package typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDas
 
 import typings.std.Error
 import typings.vscodeDashJsonrpc.Thenable
-import typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken
-import typings.vscodeDashJsonrpc.libEventsMod.Disposable
-import typings.vscodeDashJsonrpc.libEventsMod.Event
 import typings.vscodeDashJsonrpc.libMessagesMod.Message
 import typings.vscodeDashJsonrpc.libMessagesMod.NotificationMessage
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.GenericNotificationHandler
@@ -13,7 +10,6 @@ import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.NotificationHandler
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.NotificationHandler0
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.RequestHandler
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.RequestHandler0
-import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Trace
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.TraceOptions
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Tracer
 import scala.scalajs.js
@@ -26,23 +22,23 @@ trait ProtocolConnection extends js.Object {
     * An event emitter firing when the connection got closed.
     */
   @JSName("onClose")
-  var onClose_Original: Event[Unit] = js.native
+  var onClose_Original: typings.vscodeDashJsonrpc.libEventsMod.Event[Unit] = js.native
   /**
     * An event emitter firing when the connection got disposed.
     */
   @JSName("onDispose")
-  var onDispose_Original: Event[Unit] = js.native
+  var onDispose_Original: typings.vscodeDashJsonrpc.libEventsMod.Event[Unit] = js.native
   /**
     * An event emitter firing when an error occurs on the connection.
     */
   @JSName("onError")
-  var onError_Original: Event[js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]]] = js.native
+  var onError_Original: typings.vscodeDashJsonrpc.libEventsMod.Event[js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]]] = js.native
   /**
     * An event emiiter firing when the connection receives a notification that is not
     * handled.
     */
   @JSName("onUnhandledNotification")
-  var onUnhandledNotification_Original: Event[NotificationMessage] = js.native
+  var onUnhandledNotification_Original: typings.vscodeDashJsonrpc.libEventsMod.Event[NotificationMessage] = js.native
   /**
     * Actively disposes the connection.
     */
@@ -54,28 +50,36 @@ trait ProtocolConnection extends js.Object {
   /**
     * An event emitter firing when the connection got closed.
     */
-  def onClose(listener: js.Function1[/* e */ Unit, _]): Disposable = js.native
-  def onClose(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any): Disposable = js.native
-  def onClose(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onClose(listener: js.Function1[/* e */ Unit, _]): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
+  def onClose(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
+  def onClose(
+    listener: js.Function1[/* e */ Unit, _],
+    thisArgs: js.Any,
+    disposables: js.Array[typings.vscodeDashJsonrpc.libEventsMod.Disposable]
+  ): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
   /**
     * An event emitter firing when the connection got disposed.
     */
-  def onDispose(listener: js.Function1[/* e */ Unit, _]): Disposable = js.native
-  def onDispose(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any): Disposable = js.native
-  def onDispose(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDispose(listener: js.Function1[/* e */ Unit, _]): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
+  def onDispose(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
+  def onDispose(
+    listener: js.Function1[/* e */ Unit, _],
+    thisArgs: js.Any,
+    disposables: js.Array[typings.vscodeDashJsonrpc.libEventsMod.Disposable]
+  ): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
   /**
     * An event emitter firing when an error occurs on the connection.
     */
-  def onError(listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], _]): Disposable = js.native
+  def onError(listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], _]): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
   def onError(
     listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], _],
     thisArgs: js.Any
-  ): Disposable = js.native
+  ): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
   def onError(
     listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], _],
     thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
+    disposables: js.Array[typings.vscodeDashJsonrpc.libEventsMod.Disposable]
+  ): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
   /**
     * Installs a notification handler.
     *
@@ -134,13 +138,13 @@ trait ProtocolConnection extends js.Object {
     * An event emiiter firing when the connection receives a notification that is not
     * handled.
     */
-  def onUnhandledNotification(listener: js.Function1[/* e */ NotificationMessage, _]): Disposable = js.native
-  def onUnhandledNotification(listener: js.Function1[/* e */ NotificationMessage, _], thisArgs: js.Any): Disposable = js.native
+  def onUnhandledNotification(listener: js.Function1[/* e */ NotificationMessage, _]): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
+  def onUnhandledNotification(listener: js.Function1[/* e */ NotificationMessage, _], thisArgs: js.Any): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
   def onUnhandledNotification(
     listener: js.Function1[/* e */ NotificationMessage, _],
     thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
+    disposables: js.Array[typings.vscodeDashJsonrpc.libEventsMod.Disposable]
+  ): typings.vscodeDashJsonrpc.libEventsMod.Disposable = js.native
   /**
     * Sends a notification.
     *
@@ -185,8 +189,12 @@ trait ProtocolConnection extends js.Object {
     * @returns A promise resolving to the request's result.
     */
   def sendRequest[R](method: String, param: js.Any): Thenable[R] = js.native
-  def sendRequest[R](method: String, param: js.Any, token: CancellationToken): Thenable[R] = js.native
-  def sendRequest[R](method: String, token: CancellationToken): Thenable[R] = js.native
+  def sendRequest[R](
+    method: String,
+    param: js.Any,
+    token: typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken
+  ): Thenable[R] = js.native
+  def sendRequest[R](method: String, token: typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken): Thenable[R] = js.native
   /**
     * Sends a request and returns a promise resolving to the result of the request.
     *
@@ -197,7 +205,7 @@ trait ProtocolConnection extends js.Object {
   def sendRequest[R, E, RO](`type`: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.RequestType0[R, E, RO]): Thenable[R] = js.native
   def sendRequest[R, E, RO](
     `type`: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.RequestType0[R, E, RO],
-    token: CancellationToken
+    token: typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken
   ): Thenable[R] = js.native
   /**
     * Sends a request and returns a promise resolving to the result of the request.
@@ -211,13 +219,21 @@ trait ProtocolConnection extends js.Object {
   def sendRequest[P, R, E, RO](
     `type`: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.RequestType[P, R, E, RO],
     params: P,
-    token: CancellationToken
+    token: typings.vscodeDashJsonrpc.libCancellationMod.CancellationToken
   ): Thenable[R] = js.native
   /**
     * Enables tracing mode for the connection.
     */
-  def trace(value: Trace, tracer: Tracer): Unit = js.native
-  def trace(value: Trace, tracer: Tracer, sendNotification: Boolean): Unit = js.native
-  def trace(value: Trace, tracer: Tracer, traceOptions: TraceOptions): Unit = js.native
+  def trace(value: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Trace, tracer: Tracer): Unit = js.native
+  def trace(
+    value: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Trace,
+    tracer: Tracer,
+    sendNotification: Boolean
+  ): Unit = js.native
+  def trace(
+    value: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Trace,
+    tracer: Tracer,
+    traceOptions: TraceOptions
+  ): Unit = js.native
 }
 

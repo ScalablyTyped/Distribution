@@ -18,8 +18,8 @@ trait IReplaceInvalidHttpHeaderCharReturns extends js.Object {
 object IReplaceInvalidHttpHeaderCharReturns {
   @scala.inline
   def apply(invalid: Boolean, `val`: String): IReplaceInvalidHttpHeaderCharReturns = {
-    val __obj = js.Dynamic.literal(invalid = invalid)
-    __obj.updateDynamic("val")(`val`)
+    val __obj = js.Dynamic.literal(invalid = invalid.asInstanceOf[js.Any])
+    __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IReplaceInvalidHttpHeaderCharReturns]
   }
 }

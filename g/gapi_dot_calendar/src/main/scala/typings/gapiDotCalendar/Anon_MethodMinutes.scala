@@ -13,7 +13,7 @@ trait Anon_MethodMinutes extends js.Object {
 object Anon_MethodMinutes {
   @scala.inline
   def apply(method: String, minutes: integer): Anon_MethodMinutes = {
-    val __obj = js.Dynamic.literal(method = method, minutes = minutes)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], minutes = minutes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MethodMinutes]
   }

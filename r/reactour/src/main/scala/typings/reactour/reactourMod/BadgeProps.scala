@@ -13,7 +13,7 @@ object BadgeProps {
   @scala.inline
   def apply(accentColor: String = null): BadgeProps = {
     val __obj = js.Dynamic.literal()
-    if (accentColor != null) __obj.updateDynamic("accentColor")(accentColor)
+    if (accentColor != null) __obj.updateDynamic("accentColor")(accentColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[BadgeProps]
   }
 }

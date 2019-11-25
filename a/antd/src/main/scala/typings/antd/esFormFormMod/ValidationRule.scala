@@ -61,12 +61,12 @@ object ValidationRule {
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (validator != null) __obj.updateDynamic("validator")(js.Any.fromFunction5(validator))
-    if (!js.isUndefined(whitespace)) __obj.updateDynamic("whitespace")(whitespace)
+    if (!js.isUndefined(whitespace)) __obj.updateDynamic("whitespace")(whitespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationRule]
   }
 }

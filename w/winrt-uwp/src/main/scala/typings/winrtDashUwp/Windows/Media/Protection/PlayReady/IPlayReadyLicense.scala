@@ -38,7 +38,7 @@ object IPlayReadyLicense {
     getKIDAtChainDepth: Double => String,
     usableForPlay: Boolean
   ): IPlayReadyLicense = {
-    val __obj = js.Dynamic.literal(chainDepth = chainDepth, domainAccountID = domainAccountID, expirationDate = expirationDate, expireAfterFirstPlay = expireAfterFirstPlay, fullyEvaluated = fullyEvaluated, getKIDAtChainDepth = js.Any.fromFunction1(getKIDAtChainDepth), usableForPlay = usableForPlay)
+    val __obj = js.Dynamic.literal(chainDepth = chainDepth.asInstanceOf[js.Any], domainAccountID = domainAccountID.asInstanceOf[js.Any], expirationDate = expirationDate.asInstanceOf[js.Any], expireAfterFirstPlay = expireAfterFirstPlay.asInstanceOf[js.Any], fullyEvaluated = fullyEvaluated.asInstanceOf[js.Any], getKIDAtChainDepth = js.Any.fromFunction1(getKIDAtChainDepth), usableForPlay = usableForPlay.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPlayReadyLicense]
   }

@@ -1,5 +1,6 @@
 package typings.atFormatjsIntlDashRelativetimeformat
 
+import typings.atFormatjsIntlDashRelativetimeformat.distTypesMod.FormattableUnit
 import typings.atFormatjsIntlDashRelativetimeformat.distTypesMod.Unit
 import typings.atFormatjsIntlDashRelativetimeformat.distTypesMod.Units
 import scala.scalajs.js
@@ -18,28 +19,44 @@ object atFormatjsIntlDashRelativetimeformatStrings {
   
   @js.native
   sealed trait day
-    extends Unit
+    extends FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.FormattableUnit
+       with Unit
        with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Unit
        with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Unit
        with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Unit
   
   @js.native
   sealed trait days
-    extends Units
+    extends FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.FormattableUnit
+       with Units
        with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Units
        with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Units
        with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Units
   
   @js.native
   sealed trait hour
-    extends Unit
+    extends FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.FormattableUnit
+       with Unit
        with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Unit
        with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Unit
        with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Unit
   
   @js.native
   sealed trait hours
-    extends Units
+    extends FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.FormattableUnit
+       with Units
        with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Units
        with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Units
        with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Units
@@ -58,28 +75,44 @@ object atFormatjsIntlDashRelativetimeformatStrings {
   
   @js.native
   sealed trait minute
-    extends Unit
+    extends FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.FormattableUnit
+       with Unit
        with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Unit
        with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Unit
        with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Unit
   
   @js.native
   sealed trait minutes
-    extends Units
+    extends FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.FormattableUnit
+       with Units
        with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Units
        with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Units
        with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Units
   
   @js.native
   sealed trait month
-    extends Unit
+    extends FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.FormattableUnit
+       with Unit
        with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Unit
        with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Unit
        with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Unit
   
   @js.native
   sealed trait months
-    extends Units
+    extends FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.FormattableUnit
+       with Units
        with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Units
        with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Units
        with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Units
@@ -89,28 +122,44 @@ object atFormatjsIntlDashRelativetimeformatStrings {
   
   @js.native
   sealed trait quarter
-    extends Unit
+    extends FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.FormattableUnit
+       with Unit
        with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Unit
        with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Unit
        with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Unit
   
   @js.native
   sealed trait quarters
-    extends Units
+    extends FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.FormattableUnit
+       with Units
        with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Units
        with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Units
        with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Units
   
   @js.native
   sealed trait second
-    extends Unit
+    extends FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.FormattableUnit
+       with Unit
        with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Unit
        with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Unit
        with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Unit
   
   @js.native
   sealed trait seconds
-    extends Units
+    extends FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.FormattableUnit
+       with Units
        with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Units
        with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Units
        with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Units
@@ -120,28 +169,44 @@ object atFormatjsIntlDashRelativetimeformatStrings {
   
   @js.native
   sealed trait week
-    extends Unit
+    extends FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.FormattableUnit
+       with Unit
        with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Unit
        with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Unit
        with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Unit
   
   @js.native
   sealed trait weeks
-    extends Units
+    extends FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.FormattableUnit
+       with Units
        with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Units
        with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Units
        with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Units
   
   @js.native
   sealed trait year
-    extends Unit
+    extends FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.FormattableUnit
+       with Unit
        with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Unit
        with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Unit
        with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Unit
   
   @js.native
   sealed trait years
-    extends Units
+    extends FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.FormattableUnit
+       with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.FormattableUnit
+       with Units
        with typings.atFormatjsIntlDashRelativetimeformat.atFormatjsIntlDashRelativetimeformatMod.Units
        with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Units
        with typings.atFormatjsIntlDashRelativetimeformat.distDashEs6TypesMod.Units

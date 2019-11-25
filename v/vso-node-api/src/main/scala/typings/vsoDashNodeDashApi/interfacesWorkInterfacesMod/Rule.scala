@@ -21,7 +21,7 @@ object Rule {
     name: String,
     settings: attribute
   ): Rule = {
-    val __obj = js.Dynamic.literal(clauses = clauses, filter = filter, isEnabled = isEnabled, name = name, settings = settings)
+    val __obj = js.Dynamic.literal(clauses = clauses.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Rule]
   }

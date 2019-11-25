@@ -20,12 +20,12 @@ trait JdenticonCompatibleCanvas extends js.Object {
 object JdenticonCompatibleCanvas {
   @scala.inline
   def apply(
-    getContext_2d: `2d` => JdenticonCompatibleCanvasRenderingContext2D | Null,
+    getContext: `2d` => JdenticonCompatibleCanvasRenderingContext2D | Null,
     height: Double,
     width: Double
   ): JdenticonCompatibleCanvas = {
-    val __obj = js.Dynamic.literal(height = height, width = width)
-    __obj.updateDynamic("getContext")(js.Any.fromFunction1(getContext_2d))
+    val __obj = js.Dynamic.literal(getContext = js.Any.fromFunction1(getContext), height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[JdenticonCompatibleCanvas]
   }
 }

@@ -74,12 +74,12 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (completions != null) __obj.updateDynamic("completions")(js.Any.fromFunction1(completions))
-    if (configFiles != null) __obj.updateDynamic("configFiles")(configFiles)
-    if (configName != null) __obj.updateDynamic("configName")(configName)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (moduleName != null) __obj.updateDynamic("moduleName")(moduleName)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (processTitle != null) __obj.updateDynamic("processTitle")(processTitle)
+    if (configFiles != null) __obj.updateDynamic("configFiles")(configFiles.asInstanceOf[js.Any])
+    if (configName != null) __obj.updateDynamic("configName")(configName.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (moduleName != null) __obj.updateDynamic("moduleName")(moduleName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (processTitle != null) __obj.updateDynamic("processTitle")(processTitle.asInstanceOf[js.Any])
     if (v8flags != null) __obj.updateDynamic("v8flags")(v8flags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

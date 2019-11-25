@@ -138,18 +138,18 @@ object RasterInfoProperties {
     statistics: js.Array[RasterInfoStatistics] = null
   ): RasterInfoProperties = {
     val __obj = js.Dynamic.literal()
-    if (attributeTable != null) __obj.updateDynamic("attributeTable")(attributeTable)
+    if (attributeTable != null) __obj.updateDynamic("attributeTable")(attributeTable.asInstanceOf[js.Any])
     if (bandCount != null) __obj.updateDynamic("bandCount")(bandCount.asInstanceOf[js.Any])
-    if (colormap != null) __obj.updateDynamic("colormap")(colormap)
+    if (colormap != null) __obj.updateDynamic("colormap")(colormap.asInstanceOf[js.Any])
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
-    if (extent != null) __obj.updateDynamic("extent")(extent)
-    if (histograms != null) __obj.updateDynamic("histograms")(histograms)
-    if (keyProperties != null) __obj.updateDynamic("keyProperties")(keyProperties)
-    if (multidimensionalInfo != null) __obj.updateDynamic("multidimensionalInfo")(multidimensionalInfo)
-    if (pixelSize != null) __obj.updateDynamic("pixelSize")(pixelSize)
+    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
+    if (histograms != null) __obj.updateDynamic("histograms")(histograms.asInstanceOf[js.Any])
+    if (keyProperties != null) __obj.updateDynamic("keyProperties")(keyProperties.asInstanceOf[js.Any])
+    if (multidimensionalInfo != null) __obj.updateDynamic("multidimensionalInfo")(multidimensionalInfo.asInstanceOf[js.Any])
+    if (pixelSize != null) __obj.updateDynamic("pixelSize")(pixelSize.asInstanceOf[js.Any])
     if (pixelType != null) __obj.updateDynamic("pixelType")(pixelType.asInstanceOf[js.Any])
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
-    if (statistics != null) __obj.updateDynamic("statistics")(statistics)
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
+    if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[RasterInfoProperties]
   }
 }

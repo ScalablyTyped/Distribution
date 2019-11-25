@@ -73,20 +73,20 @@ object CompositionContext {
     view: js.Any = null,
     viewElements: js.Array[HTMLElement] = null
   ): CompositionContext = {
-    val __obj = js.Dynamic.literal(activeView = activeView, child = child, composingNewView = composingNewView, mode = mode, parent = parent, triggerAttach = js.Any.fromFunction0(triggerAttach))
-    if (!js.isUndefined(activate)) __obj.updateDynamic("activate")(activate)
-    if (area != null) __obj.updateDynamic("area")(area)
+    val __obj = js.Dynamic.literal(activeView = activeView.asInstanceOf[js.Any], child = child.asInstanceOf[js.Any], composingNewView = composingNewView.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], triggerAttach = js.Any.fromFunction0(triggerAttach))
+    if (!js.isUndefined(activate)) __obj.updateDynamic("activate")(activate.asInstanceOf[js.Any])
+    if (area != null) __obj.updateDynamic("area")(area.asInstanceOf[js.Any])
     if (attached != null) __obj.updateDynamic("attached")(js.Any.fromFunction3(attached))
     if (binding != null) __obj.updateDynamic("binding")(js.Any.fromFunction3(binding))
-    if (bindingContext != null) __obj.updateDynamic("bindingContext")(bindingContext)
-    if (!js.isUndefined(cacheViews)) __obj.updateDynamic("cacheViews")(cacheViews)
+    if (bindingContext != null) __obj.updateDynamic("bindingContext")(bindingContext.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheViews)) __obj.updateDynamic("cacheViews")(cacheViews.asInstanceOf[js.Any])
     if (compositionComplete != null) __obj.updateDynamic("compositionComplete")(js.Any.fromFunction3(compositionComplete))
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (!js.isUndefined(preserveContext)) __obj.updateDynamic("preserveContext")(preserveContext)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveContext)) __obj.updateDynamic("preserveContext")(preserveContext.asInstanceOf[js.Any])
     if (strategy != null) __obj.updateDynamic("strategy")(js.Any.fromFunction1(strategy))
-    if (transition != null) __obj.updateDynamic("transition")(transition)
-    if (view != null) __obj.updateDynamic("view")(view)
-    if (viewElements != null) __obj.updateDynamic("viewElements")(viewElements)
+    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    if (viewElements != null) __obj.updateDynamic("viewElements")(viewElements.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompositionContext]
   }
 }

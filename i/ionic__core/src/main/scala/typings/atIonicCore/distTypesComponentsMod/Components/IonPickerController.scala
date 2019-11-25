@@ -1,7 +1,6 @@
 package typings.atIonicCore.distTypesComponentsMod.Components
 
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonPickerElement
-import typings.atIonicCore.distTypesComponentsPickerPickerDashInterfaceMod.PickerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,9 @@ trait IonPickerController extends js.Object {
     * Create a picker overlay with picker options.
     * @param options The options to use to create the picker.
     */
-  def create(options: PickerOptions): js.Promise[HTMLIonPickerElement] = js.native
+  def create(
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PickerOptions */ js.Any
+  ): js.Promise[HTMLIonPickerElement] = js.native
   /**
     * Dismiss the open picker overlay.
     * @param data Any data to emit in the dismiss events.

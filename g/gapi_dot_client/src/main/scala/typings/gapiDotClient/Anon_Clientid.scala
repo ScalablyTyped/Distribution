@@ -32,9 +32,9 @@ object Anon_Clientid {
     scope: String | js.Array[String] = null
   ): Anon_Clientid = {
     val __obj = js.Dynamic.literal()
-    if (client_id != null) __obj.updateDynamic("client_id")(client_id)
-    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate)
-    if (response_type != null) __obj.updateDynamic("response_type")(response_type)
+    if (client_id != null) __obj.updateDynamic("client_id")(client_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate.asInstanceOf[js.Any])
+    if (response_type != null) __obj.updateDynamic("response_type")(response_type.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Clientid]
   }

@@ -31,7 +31,7 @@ object RNFetchBlobResponseInfo {
     status: Double,
     taskId: String
   ): RNFetchBlobResponseInfo = {
-    val __obj = js.Dynamic.literal(headers = headers, respType = respType.asInstanceOf[js.Any], rnfbEncode = rnfbEncode.asInstanceOf[js.Any], state = state, status = status, taskId = taskId)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], respType = respType.asInstanceOf[js.Any], rnfbEncode = rnfbEncode.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RNFetchBlobResponseInfo]
   }

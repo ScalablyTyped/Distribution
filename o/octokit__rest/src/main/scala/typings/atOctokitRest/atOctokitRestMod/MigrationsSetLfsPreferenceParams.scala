@@ -18,7 +18,7 @@ trait MigrationsSetLfsPreferenceParams extends js.Object {
 object MigrationsSetLfsPreferenceParams {
   @scala.inline
   def apply(owner: String, repo: String, use_lfs: opt_in | opt_out): MigrationsSetLfsPreferenceParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo, use_lfs = use_lfs.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], use_lfs = use_lfs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MigrationsSetLfsPreferenceParams]
   }

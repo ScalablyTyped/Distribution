@@ -11,7 +11,7 @@ trait WebGLProgram extends js.Object {
 object WebGLProgram {
   @scala.inline
   def apply(__WebGLProgram: Unit): WebGLProgram = {
-    val __obj = js.Dynamic.literal(__WebGLProgram = __WebGLProgram)
+    val __obj = js.Dynamic.literal(__WebGLProgram = __WebGLProgram.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebGLProgram]
   }

@@ -14,9 +14,9 @@ object RawTheme {
   @scala.inline
   def apply(fontFamily: String = null, palette: ThemePalette = null, spacing: Spacing = null): RawTheme = {
     val __obj = js.Dynamic.literal()
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
-    if (palette != null) __obj.updateDynamic("palette")(palette)
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing)
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
+    if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
+    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawTheme]
   }
 }

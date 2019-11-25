@@ -14,8 +14,8 @@ object Config {
   @scala.inline
   def apply(client: Client = null, target: String = null): Config = {
     val __obj = js.Dynamic.literal()
-    if (client != null) __obj.updateDynamic("client")(client)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

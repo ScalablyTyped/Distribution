@@ -12,7 +12,7 @@ trait Anon_Regex extends js.Object {
 object Anon_Regex {
   @scala.inline
   def apply(regex: Double, variable: Double): Anon_Regex = {
-    val __obj = js.Dynamic.literal(regex = regex, variable = variable)
+    val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any], variable = variable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Regex]
   }

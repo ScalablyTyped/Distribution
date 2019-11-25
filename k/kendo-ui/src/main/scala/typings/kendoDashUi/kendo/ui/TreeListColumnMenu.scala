@@ -20,10 +20,10 @@ object TreeListColumnMenu {
     sortable: js.UndefOr[Boolean] = js.undefined
   ): TreeListColumnMenu = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns)
-    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable)
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
+    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListColumnMenu]
   }
 }

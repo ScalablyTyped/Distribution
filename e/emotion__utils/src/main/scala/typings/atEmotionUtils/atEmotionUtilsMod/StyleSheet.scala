@@ -25,8 +25,8 @@ object StyleSheet {
     tags: js.Array[HTMLStyleElement],
     nonce: String = null
   ): StyleSheet = {
-    val __obj = js.Dynamic.literal(container = container, flush = js.Any.fromFunction0(flush), insert = js.Any.fromFunction1(insert), key = key, tags = tags)
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], flush = js.Any.fromFunction0(flush), insert = js.Any.fromFunction1(insert), key = key.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleSheet]
   }
 }

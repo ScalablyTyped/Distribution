@@ -23,8 +23,8 @@ object AxiosResponse {
     statusText: String,
     request: js.Any = null
   ): AxiosResponse[T] = {
-    val __obj = js.Dynamic.literal(config = config, data = data.asInstanceOf[js.Any], headers = headers, status = status, statusText = statusText)
-    if (request != null) __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxiosResponse[T]]
   }
 }

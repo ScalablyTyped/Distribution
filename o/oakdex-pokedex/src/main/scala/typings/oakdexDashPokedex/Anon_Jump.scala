@@ -22,11 +22,11 @@ object Anon_Jump {
     stamina: js.Array[Double] = null
   ): Anon_Jump = {
     val __obj = js.Dynamic.literal()
-    if (jump != null) __obj.updateDynamic("jump")(jump)
-    if (power != null) __obj.updateDynamic("power")(power)
-    if (skill != null) __obj.updateDynamic("skill")(skill)
-    if (speed != null) __obj.updateDynamic("speed")(speed)
-    if (stamina != null) __obj.updateDynamic("stamina")(stamina)
+    if (jump != null) __obj.updateDynamic("jump")(jump.asInstanceOf[js.Any])
+    if (power != null) __obj.updateDynamic("power")(power.asInstanceOf[js.Any])
+    if (skill != null) __obj.updateDynamic("skill")(skill.asInstanceOf[js.Any])
+    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (stamina != null) __obj.updateDynamic("stamina")(stamina.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Jump]
   }
 }

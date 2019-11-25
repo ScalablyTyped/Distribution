@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lodash_dot_now"
-version := "4.0-dt-20190214Z-dc7fa5"
+version := "4.0-dt-20190214Z-c81977"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

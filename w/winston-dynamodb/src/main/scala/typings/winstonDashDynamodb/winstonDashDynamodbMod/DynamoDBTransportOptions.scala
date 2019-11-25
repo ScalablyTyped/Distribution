@@ -25,12 +25,12 @@ object DynamoDBTransportOptions {
     secretAccessKey: String = null,
     useEnvironment: js.UndefOr[Boolean] = js.undefined
   ): DynamoDBTransportOptions = {
-    val __obj = js.Dynamic.literal(level = level, tableName = tableName)
-    if (accessKeyId != null) __obj.updateDynamic("accessKeyId")(accessKeyId)
-    if (!js.isUndefined(dynamoDoc)) __obj.updateDynamic("dynamoDoc")(dynamoDoc)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (secretAccessKey != null) __obj.updateDynamic("secretAccessKey")(secretAccessKey)
-    if (!js.isUndefined(useEnvironment)) __obj.updateDynamic("useEnvironment")(useEnvironment)
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any])
+    if (accessKeyId != null) __obj.updateDynamic("accessKeyId")(accessKeyId.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamoDoc)) __obj.updateDynamic("dynamoDoc")(dynamoDoc.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (secretAccessKey != null) __obj.updateDynamic("secretAccessKey")(secretAccessKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(useEnvironment)) __obj.updateDynamic("useEnvironment")(useEnvironment.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamoDBTransportOptions]
   }
 }

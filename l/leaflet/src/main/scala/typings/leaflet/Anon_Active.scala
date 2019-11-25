@@ -26,10 +26,10 @@ object Anon_Active {
     loaded: Date = null,
     retain: js.UndefOr[Boolean] = js.undefined
   ): Anon_Active = {
-    val __obj = js.Dynamic.literal(coords = coords, current = current, el = el)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (loaded != null) __obj.updateDynamic("loaded")(loaded)
-    if (!js.isUndefined(retain)) __obj.updateDynamic("retain")(retain)
+    val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], el = el.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (loaded != null) __obj.updateDynamic("loaded")(loaded.asInstanceOf[js.Any])
+    if (!js.isUndefined(retain)) __obj.updateDynamic("retain")(retain.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Active]
   }
 }

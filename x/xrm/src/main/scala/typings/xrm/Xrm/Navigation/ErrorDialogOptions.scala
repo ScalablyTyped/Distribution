@@ -29,9 +29,9 @@ object ErrorDialogOptions {
   @scala.inline
   def apply(details: String = null, errorCode: Int | Double = null, message: String = null): ErrorDialogOptions = {
     val __obj = js.Dynamic.literal()
-    if (details != null) __obj.updateDynamic("details")(details)
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
     if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorDialogOptions]
   }
 }

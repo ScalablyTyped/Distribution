@@ -24,10 +24,10 @@ object LineWidgetOptions {
     showIfHidden: js.UndefOr[Boolean] = js.undefined
   ): LineWidgetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(above)) __obj.updateDynamic("above")(above)
-    if (!js.isUndefined(coverGutter)) __obj.updateDynamic("coverGutter")(coverGutter)
-    if (!js.isUndefined(noHScroll)) __obj.updateDynamic("noHScroll")(noHScroll)
-    if (!js.isUndefined(showIfHidden)) __obj.updateDynamic("showIfHidden")(showIfHidden)
+    if (!js.isUndefined(above)) __obj.updateDynamic("above")(above.asInstanceOf[js.Any])
+    if (!js.isUndefined(coverGutter)) __obj.updateDynamic("coverGutter")(coverGutter.asInstanceOf[js.Any])
+    if (!js.isUndefined(noHScroll)) __obj.updateDynamic("noHScroll")(noHScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(showIfHidden)) __obj.updateDynamic("showIfHidden")(showIfHidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineWidgetOptions]
   }
 }

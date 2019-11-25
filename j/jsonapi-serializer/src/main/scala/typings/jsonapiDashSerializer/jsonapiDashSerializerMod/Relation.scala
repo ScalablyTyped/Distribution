@@ -18,8 +18,8 @@ object Relation {
     included: js.UndefOr[Boolean] = js.undefined
   ): Relation = {
     val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (!js.isUndefined(included)) __obj.updateDynamic("included")(included)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(included)) __obj.updateDynamic("included")(included.asInstanceOf[js.Any])
     __obj.asInstanceOf[Relation]
   }
 }

@@ -48,19 +48,19 @@ object CreateOptions {
     validate: js.UndefOr[Boolean] = js.undefined
   ): CreateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (!js.isUndefined(isNewRecord)) __obj.updateDynamic("isNewRecord")(isNewRecord)
+    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNewRecord)) __obj.updateDynamic("isNewRecord")(isNewRecord.asInstanceOf[js.Any])
     if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (onDuplicate != null) __obj.updateDynamic("onDuplicate")(onDuplicate)
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
-    if (!js.isUndefined(returning)) __obj.updateDynamic("returning")(returning)
-    if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate)
+    if (onDuplicate != null) __obj.updateDynamic("onDuplicate")(onDuplicate.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (!js.isUndefined(returning)) __obj.updateDynamic("returning")(returning.asInstanceOf[js.Any])
+    if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOptions]
   }
 }

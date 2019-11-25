@@ -22,8 +22,8 @@ trait DeleteBackupOutput extends OutputTypesUnion {
 object DeleteBackupOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, BackupDescription: _UnmarshalledBackupDescription = null): DeleteBackupOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (BackupDescription != null) __obj.updateDynamic("BackupDescription")(BackupDescription)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (BackupDescription != null) __obj.updateDynamic("BackupDescription")(BackupDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBackupOutput]
   }
 }

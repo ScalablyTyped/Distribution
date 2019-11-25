@@ -16,7 +16,7 @@ object ExternallyHostedApkUsesPermission {
   def apply(maxSdkVersion: Int | Double = null, name: String = null): ExternallyHostedApkUsesPermission = {
     val __obj = js.Dynamic.literal()
     if (maxSdkVersion != null) __obj.updateDynamic("maxSdkVersion")(maxSdkVersion.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternallyHostedApkUsesPermission]
   }
 }

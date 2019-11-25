@@ -52,20 +52,20 @@ object IToastOptions {
     toastClass: String = null
   ): IToastOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoWrap)) __obj.updateDynamic("autoWrap")(autoWrap)
-    if (!js.isUndefined(bindToController)) __obj.updateDynamic("bindToController")(bindToController)
+    if (!js.isUndefined(autoWrap)) __obj.updateDynamic("autoWrap")(autoWrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(bindToController)) __obj.updateDynamic("bindToController")(bindToController.asInstanceOf[js.Any])
     if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs)
+    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs.asInstanceOf[js.Any])
     if (hideDelay != null) __obj.updateDynamic("hideDelay")(hideDelay.asInstanceOf[js.Any])
-    if (locals != null) __obj.updateDynamic("locals")(locals)
+    if (locals != null) __obj.updateDynamic("locals")(locals.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(preserveScope)) __obj.updateDynamic("preserveScope")(preserveScope)
-    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
-    if (toastClass != null) __obj.updateDynamic("toastClass")(toastClass)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveScope)) __obj.updateDynamic("preserveScope")(preserveScope.asInstanceOf[js.Any])
+    if (resolve != null) __obj.updateDynamic("resolve")(resolve.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
+    if (toastClass != null) __obj.updateDynamic("toastClass")(toastClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToastOptions]
   }
 }

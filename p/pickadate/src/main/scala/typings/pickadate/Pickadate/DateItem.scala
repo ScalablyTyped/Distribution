@@ -31,7 +31,7 @@ trait DateItem extends Item {
 object DateItem {
   @scala.inline
   def apply(date: Double, day: Double, month: Double, obj: Date, pick: Double, year: Double): DateItem = {
-    val __obj = js.Dynamic.literal(date = date, day = day, month = month, obj = obj, pick = pick, year = year)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], day = day.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], obj = obj.asInstanceOf[js.Any], pick = pick.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DateItem]
   }

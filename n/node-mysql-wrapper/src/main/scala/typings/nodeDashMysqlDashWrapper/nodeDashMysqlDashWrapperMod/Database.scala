@@ -1,6 +1,5 @@
 package typings.nodeDashMysqlDashWrapper.nodeDashMysqlDashWrapperMod
 
-import typings.bluebird.bluebirdMod.^
 import typings.mysql.mysqlMod.MysqlError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -59,6 +58,6 @@ class Database () extends js.Object {
 @JSImport("node-mysql-wrapper", "Database")
 @js.native
 object Database extends js.Object {
-  def when(_promises: ^[_]*): ^[_] = js.native
+  def when(_promises: typings.bluebird.bluebirdMod.^[_]*): typings.bluebird.bluebirdMod.^[_] = js.native
 }
 

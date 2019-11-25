@@ -13,8 +13,8 @@ trait PropertyChangedEvent extends AgEvent {
 object PropertyChangedEvent {
   @scala.inline
   def apply(currentValue: js.Any, previousValue: js.Any, `type`: String): PropertyChangedEvent = {
-    val __obj = js.Dynamic.literal(currentValue = currentValue, previousValue = previousValue)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(currentValue = currentValue.asInstanceOf[js.Any], previousValue = previousValue.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyChangedEvent]
   }
 }

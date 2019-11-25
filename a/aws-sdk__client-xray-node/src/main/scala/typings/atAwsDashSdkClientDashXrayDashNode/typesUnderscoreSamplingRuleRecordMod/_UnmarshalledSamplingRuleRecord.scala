@@ -28,9 +28,9 @@ object _UnmarshalledSamplingRuleRecord {
   @scala.inline
   def apply(CreatedAt: Date = null, ModifiedAt: Date = null, SamplingRule: _UnmarshalledSamplingRule = null): _UnmarshalledSamplingRuleRecord = {
     val __obj = js.Dynamic.literal()
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt)
-    if (ModifiedAt != null) __obj.updateDynamic("ModifiedAt")(ModifiedAt)
-    if (SamplingRule != null) __obj.updateDynamic("SamplingRule")(SamplingRule)
+    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
+    if (ModifiedAt != null) __obj.updateDynamic("ModifiedAt")(ModifiedAt.asInstanceOf[js.Any])
+    if (SamplingRule != null) __obj.updateDynamic("SamplingRule")(SamplingRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledSamplingRuleRecord]
   }
 }

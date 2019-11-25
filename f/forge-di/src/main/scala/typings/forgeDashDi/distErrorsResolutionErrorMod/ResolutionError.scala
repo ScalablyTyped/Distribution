@@ -9,9 +9,9 @@ trait ResolutionError extends Error
 
 object ResolutionError {
   @scala.inline
-  def apply(message: String, name: String, toString: () => String, stack: String = null): ResolutionError = {
-    val __obj = js.Dynamic.literal(message = message, name = name, toString = js.Any.fromFunction0(toString))
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+  def apply(message: String, name: String, stack: String = null): ResolutionError = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolutionError]
   }
 }

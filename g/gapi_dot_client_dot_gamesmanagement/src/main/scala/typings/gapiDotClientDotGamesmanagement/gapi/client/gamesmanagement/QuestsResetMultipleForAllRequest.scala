@@ -15,8 +15,8 @@ object QuestsResetMultipleForAllRequest {
   @scala.inline
   def apply(kind: String = null, quest_ids: js.Array[String] = null): QuestsResetMultipleForAllRequest = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (quest_ids != null) __obj.updateDynamic("quest_ids")(quest_ids)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (quest_ids != null) __obj.updateDynamic("quest_ids")(quest_ids.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuestsResetMultipleForAllRequest]
   }
 }

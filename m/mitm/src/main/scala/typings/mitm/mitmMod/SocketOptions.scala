@@ -23,12 +23,12 @@ object SocketOptions {
     localAddress: String = null,
     localPort: String = null
   ): SocketOptions = {
-    val __obj = js.Dynamic.literal(port = port)
-    if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen)
+    val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen.asInstanceOf[js.Any])
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
-    if (localPort != null) __obj.updateDynamic("localPort")(localPort)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
+    if (localPort != null) __obj.updateDynamic("localPort")(localPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketOptions]
   }
 }

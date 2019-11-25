@@ -30,15 +30,15 @@ object PosSaleRequest {
     timestamp: String = null
   ): PosSaleRequest = {
     val __obj = js.Dynamic.literal()
-    if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage)
-    if (gtin != null) __obj.updateDynamic("gtin")(gtin)
-    if (itemId != null) __obj.updateDynamic("itemId")(itemId)
-    if (price != null) __obj.updateDynamic("price")(price)
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity)
-    if (saleId != null) __obj.updateDynamic("saleId")(saleId)
-    if (storeCode != null) __obj.updateDynamic("storeCode")(storeCode)
-    if (targetCountry != null) __obj.updateDynamic("targetCountry")(targetCountry)
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage.asInstanceOf[js.Any])
+    if (gtin != null) __obj.updateDynamic("gtin")(gtin.asInstanceOf[js.Any])
+    if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
+    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (saleId != null) __obj.updateDynamic("saleId")(saleId.asInstanceOf[js.Any])
+    if (storeCode != null) __obj.updateDynamic("storeCode")(storeCode.asInstanceOf[js.Any])
+    if (targetCountry != null) __obj.updateDynamic("targetCountry")(targetCountry.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[PosSaleRequest]
   }
 }

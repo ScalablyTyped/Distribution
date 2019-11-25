@@ -21,9 +21,9 @@ object GoogleCloudVideointelligenceV1beta2_Entity {
   @scala.inline
   def apply(description: String = null, entityId: String = null, languageCode: String = null): GoogleCloudVideointelligenceV1beta2_Entity = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (entityId != null) __obj.updateDynamic("entityId")(entityId)
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2_Entity]
   }
 }

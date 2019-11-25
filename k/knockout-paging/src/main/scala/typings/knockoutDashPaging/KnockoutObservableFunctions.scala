@@ -16,7 +16,7 @@ object KnockoutObservableFunctions {
     StringDictionary: /* key */ StringDictionary[KnockoutBindingHandler] = null
   ): KnockoutObservableFunctions[T] = {
     val __obj = js.Dynamic.literal(equalityComparer = js.Any.fromFunction2(equalityComparer))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[KnockoutObservableFunctions[T]]
   }
 }

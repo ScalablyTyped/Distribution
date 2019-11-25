@@ -19,10 +19,10 @@ object Anon_ArialabelIconOnly {
     iconOnly: js.UndefOr[scala.Nothing] = js.undefined,
     label: js.UndefOr[scala.Nothing] = js.undefined
   ): Anon_ArialabelIconOnly = {
-    val __obj = js.Dynamic.literal(role = role)
-    __obj.updateDynamic("aria-label")(`aria-label`)
-    if (!js.isUndefined(iconOnly)) __obj.updateDynamic("iconOnly")(iconOnly)
-    if (!js.isUndefined(label)) __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(role = role.asInstanceOf[js.Any])
+    __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconOnly)) __obj.updateDynamic("iconOnly")(iconOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(label)) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ArialabelIconOnly]
   }
 }

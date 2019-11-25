@@ -14,7 +14,7 @@ trait Anon_Dest extends js.Object {
 object Anon_Dest {
   @scala.inline
   def apply(func: (Double, Double, Vector3) => Unit, slices: Double, stacks: Double): Anon_Dest = {
-    val __obj = js.Dynamic.literal(func = js.Any.fromFunction3(func), slices = slices, stacks = stacks)
+    val __obj = js.Dynamic.literal(func = js.Any.fromFunction3(func), slices = slices.asInstanceOf[js.Any], stacks = stacks.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Dest]
   }

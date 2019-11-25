@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait LogLevel extends js.Object
 
+object LogLevel {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def debug: typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesStrings.debug = this.cast("debug")
+  @scala.inline
+  def error: typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesStrings.error = this.cast("error")
+  @scala.inline
+  def silent: typings.atFirebaseFirestoreDashTypes.atFirebaseFirestoreDashTypesStrings.silent = this.cast("silent")
+}
+

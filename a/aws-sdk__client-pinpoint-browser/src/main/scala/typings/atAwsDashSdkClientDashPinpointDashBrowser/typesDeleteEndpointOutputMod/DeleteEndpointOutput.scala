@@ -22,7 +22,7 @@ trait DeleteEndpointOutput extends OutputTypesUnion {
 object DeleteEndpointOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, EndpointResponse: _UnmarshalledEndpointResponse): DeleteEndpointOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, EndpointResponse = EndpointResponse)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], EndpointResponse = EndpointResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteEndpointOutput]
   }

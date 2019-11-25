@@ -15,7 +15,7 @@ trait Anon_Distance extends js.Object {
 object Anon_Distance {
   @scala.inline
   def apply(distance: Double, pt: point, ptIdx: Double, setIdx: Double): Anon_Distance = {
-    val __obj = js.Dynamic.literal(distance = distance, pt = pt, ptIdx = ptIdx, setIdx = setIdx)
+    val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], pt = pt.asInstanceOf[js.Any], ptIdx = ptIdx.asInstanceOf[js.Any], setIdx = setIdx.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Distance]
   }

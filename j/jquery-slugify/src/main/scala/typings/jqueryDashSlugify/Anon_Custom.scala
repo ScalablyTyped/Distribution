@@ -40,7 +40,7 @@ object Anon_Custom {
     uric: Boolean,
     uricNoSlash: Boolean
   ): Anon_Custom = {
-    val __obj = js.Dynamic.literal(custom = custom, lang = lang.asInstanceOf[js.Any], maintainCase = maintainCase, mark = mark, postSlug = js.Any.fromFunction1(postSlug), preSlug = js.Any.fromFunction1(preSlug), separator = separator, slugFunc = js.Any.fromFunction2(slugFunc), symbols = symbols, titleCase = titleCase.asInstanceOf[js.Any], truncate = truncate, uric = uric, uricNoSlash = uricNoSlash)
+    val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], maintainCase = maintainCase.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], postSlug = js.Any.fromFunction1(postSlug), preSlug = js.Any.fromFunction1(preSlug), separator = separator.asInstanceOf[js.Any], slugFunc = js.Any.fromFunction2(slugFunc), symbols = symbols.asInstanceOf[js.Any], titleCase = titleCase.asInstanceOf[js.Any], truncate = truncate.asInstanceOf[js.Any], uric = uric.asInstanceOf[js.Any], uricNoSlash = uricNoSlash.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Custom]
   }

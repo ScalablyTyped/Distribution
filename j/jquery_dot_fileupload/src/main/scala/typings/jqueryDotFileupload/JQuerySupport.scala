@@ -12,7 +12,7 @@ object JQuerySupport {
   @scala.inline
   def apply(fileInput: js.UndefOr[Boolean] = js.undefined): JQuerySupport = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fileInput)) __obj.updateDynamic("fileInput")(fileInput)
+    if (!js.isUndefined(fileInput)) __obj.updateDynamic("fileInput")(fileInput.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQuerySupport]
   }
 }

@@ -22,7 +22,7 @@ object NumberParams {
     step: Int | Double = null
   ): NumberParams = {
     val __obj = js.Dynamic.literal()
-    if (elementAttributes != null) __obj.updateDynamic("elementAttributes")(elementAttributes)
+    if (elementAttributes != null) __obj.updateDynamic("elementAttributes")(elementAttributes.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])

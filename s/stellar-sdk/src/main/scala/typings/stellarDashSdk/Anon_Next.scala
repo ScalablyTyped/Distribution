@@ -14,7 +14,7 @@ trait Anon_Next extends js.Object {
 object Anon_Next {
   @scala.inline
   def apply(next: ResponseLink, prev: ResponseLink, self: ResponseLink): Anon_Next = {
-    val __obj = js.Dynamic.literal(next = next, prev = prev, self = self)
+    val __obj = js.Dynamic.literal(next = next.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any], self = self.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Next]
   }

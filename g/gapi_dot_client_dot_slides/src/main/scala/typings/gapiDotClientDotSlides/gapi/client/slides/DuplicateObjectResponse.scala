@@ -13,7 +13,7 @@ object DuplicateObjectResponse {
   @scala.inline
   def apply(objectId: String = null): DuplicateObjectResponse = {
     val __obj = js.Dynamic.literal()
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DuplicateObjectResponse]
   }
 }

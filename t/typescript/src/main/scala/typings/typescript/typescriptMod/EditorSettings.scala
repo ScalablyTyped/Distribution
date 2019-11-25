@@ -25,10 +25,10 @@ object EditorSettings {
   ): EditorSettings = {
     val __obj = js.Dynamic.literal()
     if (baseIndentSize != null) __obj.updateDynamic("baseIndentSize")(baseIndentSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(convertTabsToSpaces)) __obj.updateDynamic("convertTabsToSpaces")(convertTabsToSpaces)
+    if (!js.isUndefined(convertTabsToSpaces)) __obj.updateDynamic("convertTabsToSpaces")(convertTabsToSpaces.asInstanceOf[js.Any])
     if (indentSize != null) __obj.updateDynamic("indentSize")(indentSize.asInstanceOf[js.Any])
-    if (indentStyle != null) __obj.updateDynamic("indentStyle")(indentStyle)
-    if (newLineCharacter != null) __obj.updateDynamic("newLineCharacter")(newLineCharacter)
+    if (indentStyle != null) __obj.updateDynamic("indentStyle")(indentStyle.asInstanceOf[js.Any])
+    if (newLineCharacter != null) __obj.updateDynamic("newLineCharacter")(newLineCharacter.asInstanceOf[js.Any])
     if (tabSize != null) __obj.updateDynamic("tabSize")(tabSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorSettings]
   }

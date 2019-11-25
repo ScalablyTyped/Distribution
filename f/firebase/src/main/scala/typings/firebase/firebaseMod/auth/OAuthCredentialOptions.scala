@@ -30,9 +30,9 @@ object OAuthCredentialOptions {
   @scala.inline
   def apply(accessToken: String = null, idToken: String = null, rawNonce: String = null): OAuthCredentialOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
-    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
-    if (rawNonce != null) __obj.updateDynamic("rawNonce")(rawNonce)
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
+    if (rawNonce != null) __obj.updateDynamic("rawNonce")(rawNonce.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuthCredentialOptions]
   }
 }

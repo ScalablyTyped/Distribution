@@ -26,12 +26,12 @@ object ICheckboxStyleProps {
     indeterminate: js.UndefOr[Boolean] = js.undefined,
     reversed: js.UndefOr[Boolean] = js.undefined
   ): ICheckboxStyleProps = {
-    val __obj = js.Dynamic.literal(isUsingCustomLabelRender = isUsingCustomLabelRender, theme = theme)
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate)
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed)
+    val __obj = js.Dynamic.literal(isUsingCustomLabelRender = isUsingCustomLabelRender.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate.asInstanceOf[js.Any])
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICheckboxStyleProps]
   }
 }

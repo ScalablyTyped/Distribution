@@ -55,11 +55,11 @@ object TimeOptions {
     useUTC: js.UndefOr[Boolean] = js.undefined
   ): TimeOptions = {
     val __obj = js.Dynamic.literal()
-    if (Date != null) __obj.updateDynamic("Date")(Date)
-    if (getTimezoneOffset != null) __obj.updateDynamic("getTimezoneOffset")(getTimezoneOffset)
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
+    if (Date != null) __obj.updateDynamic("Date")(Date.asInstanceOf[js.Any])
+    if (getTimezoneOffset != null) __obj.updateDynamic("getTimezoneOffset")(getTimezoneOffset.asInstanceOf[js.Any])
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
     if (timezoneOffset != null) __obj.updateDynamic("timezoneOffset")(timezoneOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(useUTC)) __obj.updateDynamic("useUTC")(useUTC)
+    if (!js.isUndefined(useUTC)) __obj.updateDynamic("useUTC")(useUTC.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeOptions]
   }
 }

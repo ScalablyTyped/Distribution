@@ -38,7 +38,7 @@ object Section {
     setLabel: String => Unit,
     setVisible: Boolean => Unit
   ): Section = {
-    val __obj = js.Dynamic.literal(controls = controls, getLabel = js.Any.fromFunction0(getLabel), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getVisible = js.Any.fromFunction0(getVisible), setLabel = js.Any.fromFunction1(setLabel), setVisible = js.Any.fromFunction1(setVisible))
+    val __obj = js.Dynamic.literal(controls = controls.asInstanceOf[js.Any], getLabel = js.Any.fromFunction0(getLabel), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getVisible = js.Any.fromFunction0(getVisible), setLabel = js.Any.fromFunction1(setLabel), setVisible = js.Any.fromFunction1(setVisible))
   
     __obj.asInstanceOf[Section]
   }

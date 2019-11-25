@@ -62,13 +62,13 @@ object RecognitionConfig {
     speechContexts: js.Array[SpeechContext] = null
   ): RecognitionConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableWordTimeOffsets)) __obj.updateDynamic("enableWordTimeOffsets")(enableWordTimeOffsets)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
+    if (!js.isUndefined(enableWordTimeOffsets)) __obj.updateDynamic("enableWordTimeOffsets")(enableWordTimeOffsets.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
     if (maxAlternatives != null) __obj.updateDynamic("maxAlternatives")(maxAlternatives.asInstanceOf[js.Any])
-    if (!js.isUndefined(profanityFilter)) __obj.updateDynamic("profanityFilter")(profanityFilter)
+    if (!js.isUndefined(profanityFilter)) __obj.updateDynamic("profanityFilter")(profanityFilter.asInstanceOf[js.Any])
     if (sampleRateHertz != null) __obj.updateDynamic("sampleRateHertz")(sampleRateHertz.asInstanceOf[js.Any])
-    if (speechContexts != null) __obj.updateDynamic("speechContexts")(speechContexts)
+    if (speechContexts != null) __obj.updateDynamic("speechContexts")(speechContexts.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecognitionConfig]
   }
 }

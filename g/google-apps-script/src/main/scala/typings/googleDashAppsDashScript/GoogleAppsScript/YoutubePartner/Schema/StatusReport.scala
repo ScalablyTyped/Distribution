@@ -13,8 +13,8 @@ object StatusReport {
   @scala.inline
   def apply(statusContent: String = null, statusFileName: String = null): StatusReport = {
     val __obj = js.Dynamic.literal()
-    if (statusContent != null) __obj.updateDynamic("statusContent")(statusContent)
-    if (statusFileName != null) __obj.updateDynamic("statusFileName")(statusFileName)
+    if (statusContent != null) __obj.updateDynamic("statusContent")(statusContent.asInstanceOf[js.Any])
+    if (statusFileName != null) __obj.updateDynamic("statusFileName")(statusFileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatusReport]
   }
 }

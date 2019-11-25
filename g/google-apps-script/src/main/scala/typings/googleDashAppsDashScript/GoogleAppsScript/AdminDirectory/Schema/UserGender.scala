@@ -14,9 +14,9 @@ object UserGender {
   @scala.inline
   def apply(addressMeAs: String = null, customGender: String = null, `type`: String = null): UserGender = {
     val __obj = js.Dynamic.literal()
-    if (addressMeAs != null) __obj.updateDynamic("addressMeAs")(addressMeAs)
-    if (customGender != null) __obj.updateDynamic("customGender")(customGender)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (addressMeAs != null) __obj.updateDynamic("addressMeAs")(addressMeAs.asInstanceOf[js.Any])
+    if (customGender != null) __obj.updateDynamic("customGender")(customGender.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserGender]
   }
 }

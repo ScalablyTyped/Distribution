@@ -27,7 +27,7 @@ object TripWaypoint {
     trips_index: Double,
     waypoint_index: Double
   ): TripWaypoint = {
-    val __obj = js.Dynamic.literal(distance = distance, hint = hint, location = location, name = name, trips_index = trips_index, waypoint_index = waypoint_index)
+    val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], hint = hint.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], trips_index = trips_index.asInstanceOf[js.Any], waypoint_index = waypoint_index.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TripWaypoint]
   }

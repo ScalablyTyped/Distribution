@@ -30,7 +30,7 @@ object Anon_ContainerDisabledStepTextColor {
     stepText: RegisteredStyle[TextStyle],
     stepWrap: RegisteredStyle[ViewStyle]
   ): Anon_ContainerDisabledStepTextColor = {
-    val __obj = js.Dynamic.literal(container = container, disabledStepTextColor = disabledStepTextColor, highlightStepBorderColor = highlightStepBorderColor, highlightStepTextColor = highlightStepTextColor, input = input, stepDisabled = stepDisabled, stepText = stepText, stepWrap = stepWrap)
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], disabledStepTextColor = disabledStepTextColor.asInstanceOf[js.Any], highlightStepBorderColor = highlightStepBorderColor.asInstanceOf[js.Any], highlightStepTextColor = highlightStepTextColor.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], stepDisabled = stepDisabled.asInstanceOf[js.Any], stepText = stepText.asInstanceOf[js.Any], stepWrap = stepWrap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContainerDisabledStepTextColor]
   }

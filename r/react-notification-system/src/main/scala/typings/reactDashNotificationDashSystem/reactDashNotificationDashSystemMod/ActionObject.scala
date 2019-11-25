@@ -12,7 +12,7 @@ trait ActionObject extends js.Object {
 object ActionObject {
   @scala.inline
   def apply(label: String, callback: () => Unit = null): ActionObject = {
-    val __obj = js.Dynamic.literal(label = label)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
     __obj.asInstanceOf[ActionObject]
   }

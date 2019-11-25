@@ -32,10 +32,10 @@ object ClientConstructOpts {
     version: String = null
   ): ClientConstructOpts = {
     val __obj = js.Dynamic.literal()
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
-    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
-    if (apiSecret != null) __obj.updateDynamic("apiSecret")(apiSecret)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
+    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
+    if (apiSecret != null) __obj.updateDynamic("apiSecret")(apiSecret.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientConstructOpts]
   }
 }

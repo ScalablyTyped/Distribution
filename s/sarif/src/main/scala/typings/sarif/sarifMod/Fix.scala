@@ -26,9 +26,9 @@ object Fix {
     description: Message = null,
     properties: PropertyBag = null
   ): Fix = {
-    val __obj = js.Dynamic.literal(artifactChanges = artifactChanges)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(artifactChanges = artifactChanges.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fix]
   }
 }

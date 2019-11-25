@@ -23,8 +23,8 @@ object MessagePartBody {
   @scala.inline
   def apply(attachmentId: String = null, data: String = null, size: Int | Double = null): MessagePartBody = {
     val __obj = js.Dynamic.literal()
-    if (attachmentId != null) __obj.updateDynamic("attachmentId")(attachmentId)
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (attachmentId != null) __obj.updateDynamic("attachmentId")(attachmentId.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagePartBody]
   }

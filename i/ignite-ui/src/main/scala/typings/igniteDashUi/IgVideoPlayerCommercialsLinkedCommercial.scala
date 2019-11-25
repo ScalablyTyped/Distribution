@@ -45,11 +45,11 @@ object IgVideoPlayerCommercialsLinkedCommercial {
     title: String = null
   ): IgVideoPlayerCommercialsLinkedCommercial = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (sources != null) __obj.updateDynamic("sources")(sources)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgVideoPlayerCommercialsLinkedCommercial]
   }
 }

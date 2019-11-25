@@ -45,9 +45,9 @@ object ConfigOpts {
     resourcePrefix: String = null,
     transformations: js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]] = null
   ): ConfigOpts = {
-    val __obj = js.Dynamic.literal(objs = objs)
-    if (resourcePrefix != null) __obj.updateDynamic("resourcePrefix")(resourcePrefix)
-    if (transformations != null) __obj.updateDynamic("transformations")(transformations)
+    val __obj = js.Dynamic.literal(objs = objs.asInstanceOf[js.Any])
+    if (resourcePrefix != null) __obj.updateDynamic("resourcePrefix")(resourcePrefix.asInstanceOf[js.Any])
+    if (transformations != null) __obj.updateDynamic("transformations")(transformations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOpts]
   }
 }

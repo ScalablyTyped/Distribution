@@ -42,10 +42,10 @@ object ErrorCallbackArgs {
   ): ErrorCallbackArgs = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
-    if (socket != null) __obj.updateDynamic("socket")(socket)
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    if (socket != null) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorCallbackArgs]
   }
 }

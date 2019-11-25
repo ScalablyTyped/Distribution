@@ -26,8 +26,8 @@ object NodeErrorOptions {
   def apply(index: Int | Double = null, plugin: String = null, word: String = null): NodeErrorOptions = {
     val __obj = js.Dynamic.literal()
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (plugin != null) __obj.updateDynamic("plugin")(plugin)
-    if (word != null) __obj.updateDynamic("word")(word)
+    if (plugin != null) __obj.updateDynamic("plugin")(plugin.asInstanceOf[js.Any])
+    if (word != null) __obj.updateDynamic("word")(word.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeErrorOptions]
   }
 }

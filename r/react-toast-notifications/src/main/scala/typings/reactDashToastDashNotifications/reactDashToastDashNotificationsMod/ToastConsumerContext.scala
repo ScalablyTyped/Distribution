@@ -19,7 +19,7 @@ object ToastConsumerContext {
     remove: (/* id */ String, /* callback */ js.Function0[Unit]) => Unit,
     toasts: js.Array[Anon_Appearance]
   ): ToastConsumerContext = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction3(add), remove = js.Any.fromFunction2(remove), toasts = toasts)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction3(add), remove = js.Any.fromFunction2(remove), toasts = toasts.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ToastConsumerContext]
   }

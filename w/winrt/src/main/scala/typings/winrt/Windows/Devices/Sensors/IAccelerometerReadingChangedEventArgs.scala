@@ -11,7 +11,7 @@ trait IAccelerometerReadingChangedEventArgs extends js.Object {
 object IAccelerometerReadingChangedEventArgs {
   @scala.inline
   def apply(reading: AccelerometerReading): IAccelerometerReadingChangedEventArgs = {
-    val __obj = js.Dynamic.literal(reading = reading)
+    val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IAccelerometerReadingChangedEventArgs]
   }

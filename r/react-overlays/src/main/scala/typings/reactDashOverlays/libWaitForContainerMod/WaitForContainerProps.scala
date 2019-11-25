@@ -18,7 +18,7 @@ object WaitForContainerProps {
   def apply(container: ReactNode | js.Function = null, onContainerResolved: js.Function = null): WaitForContainerProps = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (onContainerResolved != null) __obj.updateDynamic("onContainerResolved")(onContainerResolved)
+    if (onContainerResolved != null) __obj.updateDynamic("onContainerResolved")(onContainerResolved.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaitForContainerProps]
   }
 }

@@ -50,16 +50,16 @@ object Collection {
     workspace: String = null
   ): Collection = {
     val __obj = js.Dynamic.literal()
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
-    if (created_by != null) __obj.updateDynamic("created_by")(created_by)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (field_mappings != null) __obj.updateDynamic("field_mappings")(field_mappings)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
+    if (created_by != null) __obj.updateDynamic("created_by")(created_by.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (field_mappings != null) __obj.updateDynamic("field_mappings")(field_mappings.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (retention_secs != null) __obj.updateDynamic("retention_secs")(retention_secs.asInstanceOf[js.Any])
-    if (sources != null) __obj.updateDynamic("sources")(sources)
-    if (stats != null) __obj.updateDynamic("stats")(stats)
+    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
+    if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (workspace != null) __obj.updateDynamic("workspace")(workspace)
+    if (workspace != null) __obj.updateDynamic("workspace")(workspace.asInstanceOf[js.Any])
     __obj.asInstanceOf[Collection]
   }
 }

@@ -41,19 +41,19 @@ object Options {
     vaultManager: js.UndefOr[Boolean] = js.undefined,
     venmo: venmoCreateOptions | Boolean = null
   ): Options = {
-    val __obj = js.Dynamic.literal(authorization = authorization, container = container)
-    if (applePay != null) __obj.updateDynamic("applePay")(applePay)
+    val __obj = js.Dynamic.literal(authorization = authorization.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any])
+    if (applePay != null) __obj.updateDynamic("applePay")(applePay.asInstanceOf[js.Any])
     if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
-    if (dataCollector != null) __obj.updateDynamic("dataCollector")(dataCollector)
-    if (googlePay != null) __obj.updateDynamic("googlePay")(googlePay)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (paymentOptionPriority != null) __obj.updateDynamic("paymentOptionPriority")(paymentOptionPriority)
-    if (paypal != null) __obj.updateDynamic("paypal")(paypal)
-    if (paypalCredit != null) __obj.updateDynamic("paypalCredit")(paypalCredit)
-    if (!js.isUndefined(preselectVaultedPaymentMethod)) __obj.updateDynamic("preselectVaultedPaymentMethod")(preselectVaultedPaymentMethod)
-    if (threeDSecure != null) __obj.updateDynamic("threeDSecure")(threeDSecure)
-    if (translations != null) __obj.updateDynamic("translations")(translations)
-    if (!js.isUndefined(vaultManager)) __obj.updateDynamic("vaultManager")(vaultManager)
+    if (dataCollector != null) __obj.updateDynamic("dataCollector")(dataCollector.asInstanceOf[js.Any])
+    if (googlePay != null) __obj.updateDynamic("googlePay")(googlePay.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (paymentOptionPriority != null) __obj.updateDynamic("paymentOptionPriority")(paymentOptionPriority.asInstanceOf[js.Any])
+    if (paypal != null) __obj.updateDynamic("paypal")(paypal.asInstanceOf[js.Any])
+    if (paypalCredit != null) __obj.updateDynamic("paypalCredit")(paypalCredit.asInstanceOf[js.Any])
+    if (!js.isUndefined(preselectVaultedPaymentMethod)) __obj.updateDynamic("preselectVaultedPaymentMethod")(preselectVaultedPaymentMethod.asInstanceOf[js.Any])
+    if (threeDSecure != null) __obj.updateDynamic("threeDSecure")(threeDSecure.asInstanceOf[js.Any])
+    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
+    if (!js.isUndefined(vaultManager)) __obj.updateDynamic("vaultManager")(vaultManager.asInstanceOf[js.Any])
     if (venmo != null) __obj.updateDynamic("venmo")(venmo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

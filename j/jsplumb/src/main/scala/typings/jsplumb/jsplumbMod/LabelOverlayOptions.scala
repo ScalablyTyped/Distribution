@@ -21,9 +21,9 @@ object LabelOverlayOptions {
     labelStyle: Anon_BorderStyle = null,
     location: Int | Double = null
   ): LabelOverlayOptions = {
-    val __obj = js.Dynamic.literal(label = label)
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
+    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelOverlayOptions]
   }

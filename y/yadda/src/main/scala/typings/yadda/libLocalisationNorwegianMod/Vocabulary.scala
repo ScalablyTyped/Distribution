@@ -28,8 +28,8 @@ object Vocabulary {
     `then`: String,
     when: String
   ): Vocabulary = {
-    val __obj = js.Dynamic.literal(_steps = _steps, background = background, examples = examples, feature = feature, gitt = gitt, given = given, når = når, only = only, pending = pending, scenario = scenario, så = så, when = when)
-    __obj.updateDynamic("then")(`then`)
+    val __obj = js.Dynamic.literal(_steps = _steps.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], examples = examples.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], gitt = gitt.asInstanceOf[js.Any], given = given.asInstanceOf[js.Any], når = når.asInstanceOf[js.Any], only = only.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], scenario = scenario.asInstanceOf[js.Any], så = så.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any])
+    __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Vocabulary]
   }
 }

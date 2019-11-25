@@ -20,10 +20,10 @@ object InsertTextOptions {
     table: js.Array[String] = null
   ): InsertTextOptions = {
     val __obj = js.Dynamic.literal()
-    if (horizontalRule != null) __obj.updateDynamic("horizontalRule")(horizontalRule)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (table != null) __obj.updateDynamic("table")(table)
+    if (horizontalRule != null) __obj.updateDynamic("horizontalRule")(horizontalRule.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertTextOptions]
   }
 }

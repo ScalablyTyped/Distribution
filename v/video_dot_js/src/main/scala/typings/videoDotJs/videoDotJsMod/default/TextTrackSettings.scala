@@ -1,7 +1,6 @@
 package typings.videoDotJs.videoDotJsMod.default
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.videoDotJs.videoDotJsMod.videojs.Player
 import typings.videoDotJs.videoDotJsMod.videojs.TextTrackSettingsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +19,7 @@ object TextTrackSettings
   *         The key/value store of player options.
   */
 Instantiable2[
-      /* player */ Player, 
+      /* player */ typings.videoDotJs.videoDotJsMod.videojs.Player, 
       /* options */ TextTrackSettingsOptions, 
       typings.videoDotJs.videoDotJsMod.videojs.TextTrackSettings
     ]

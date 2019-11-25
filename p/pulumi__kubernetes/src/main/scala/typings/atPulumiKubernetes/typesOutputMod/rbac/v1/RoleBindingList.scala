@@ -42,7 +42,7 @@ object RoleBindingList {
     kind: typings.atPulumiKubernetes.atPulumiKubernetesStrings.RoleBindingList,
     metadata: ListMeta
   ): RoleBindingList = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion, items = items, kind = kind, metadata = metadata)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RoleBindingList]
   }

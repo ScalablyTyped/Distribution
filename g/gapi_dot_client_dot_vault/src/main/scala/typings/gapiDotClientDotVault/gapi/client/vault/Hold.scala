@@ -43,13 +43,13 @@ object Hold {
     updateTime: String = null
   ): Hold = {
     val __obj = js.Dynamic.literal()
-    if (accounts != null) __obj.updateDynamic("accounts")(accounts)
-    if (corpus != null) __obj.updateDynamic("corpus")(corpus)
-    if (holdId != null) __obj.updateDynamic("holdId")(holdId)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (orgUnit != null) __obj.updateDynamic("orgUnit")(orgUnit)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    if (accounts != null) __obj.updateDynamic("accounts")(accounts.asInstanceOf[js.Any])
+    if (corpus != null) __obj.updateDynamic("corpus")(corpus.asInstanceOf[js.Any])
+    if (holdId != null) __obj.updateDynamic("holdId")(holdId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (orgUnit != null) __obj.updateDynamic("orgUnit")(orgUnit.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hold]
   }
 }

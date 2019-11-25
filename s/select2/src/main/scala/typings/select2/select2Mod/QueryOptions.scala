@@ -14,7 +14,7 @@ object QueryOptions {
   def apply(page: Int | Double = null, term: String = null): QueryOptions = {
     val __obj = js.Dynamic.literal()
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (term != null) __obj.updateDynamic("term")(term)
+    if (term != null) __obj.updateDynamic("term")(term.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptions]
   }
 }

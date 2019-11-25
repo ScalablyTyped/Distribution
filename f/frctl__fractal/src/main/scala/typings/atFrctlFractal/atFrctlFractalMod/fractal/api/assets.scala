@@ -59,15 +59,18 @@ object assets extends js.Object {
     def config(config: js.Any): this.type = js.native
     def find(name: String): js.UndefOr[AssetSource] = js.native
     def get[K /* <: String */, V](path: K): js.UndefOr[
-        (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | Null
+        (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
       ] = js.native
     def get[K /* <: String */, V](path: K, defaultValue: V): js.UndefOr[
-        (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | Null
+        (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any) | V | Null
       ] = js.native
     def load(): js.Promise[Unit] = js.native
     def remove(name: String): this.type = js.native
     def set[K /* <: String */](path: K): this.type = js.native
-    def set[K /* <: String */](path: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): this.type = js.native
+    def set[K /* <: String */](
+      path: K,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ): this.type = js.native
     def sources(): js.Array[AssetSource] = js.native
     def toArray(): js.Array[AssetSource] = js.native
     def toJSON(): js.Object = js.native

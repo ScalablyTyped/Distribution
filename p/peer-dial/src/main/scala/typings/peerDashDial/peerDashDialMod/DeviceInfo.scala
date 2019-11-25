@@ -28,7 +28,7 @@ object DeviceInfo {
     manufacturer: String,
     modelName: String
   ): DeviceInfo = {
-    val __obj = js.Dynamic.literal(UDN = UDN, applicationUrl = applicationUrl, descriptionUrl = descriptionUrl, deviceType = deviceType, friendlyName = friendlyName, iconList = iconList.asInstanceOf[js.Any], manufacturer = manufacturer, modelName = modelName)
+    val __obj = js.Dynamic.literal(UDN = UDN.asInstanceOf[js.Any], applicationUrl = applicationUrl.asInstanceOf[js.Any], descriptionUrl = descriptionUrl.asInstanceOf[js.Any], deviceType = deviceType.asInstanceOf[js.Any], friendlyName = friendlyName.asInstanceOf[js.Any], iconList = iconList.asInstanceOf[js.Any], manufacturer = manufacturer.asInstanceOf[js.Any], modelName = modelName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeviceInfo]
   }

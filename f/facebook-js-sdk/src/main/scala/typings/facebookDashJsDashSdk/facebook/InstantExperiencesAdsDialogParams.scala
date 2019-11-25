@@ -26,10 +26,10 @@ object InstantExperiencesAdsDialogParams {
     canvas_id: String = null,
     redirect_uri: String = null
   ): InstantExperiencesAdsDialogParams = {
-    val __obj = js.Dynamic.literal(business_id = business_id, display = display, method = method, page_id = page_id)
-    if (app_id != null) __obj.updateDynamic("app_id")(app_id)
-    if (canvas_id != null) __obj.updateDynamic("canvas_id")(canvas_id)
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
+    val __obj = js.Dynamic.literal(business_id = business_id.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], page_id = page_id.asInstanceOf[js.Any])
+    if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
+    if (canvas_id != null) __obj.updateDynamic("canvas_id")(canvas_id.asInstanceOf[js.Any])
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstantExperiencesAdsDialogParams]
   }
 }

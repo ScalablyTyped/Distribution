@@ -28,7 +28,7 @@ object _ItemResponse {
     EventsItemResponse: StringDictionary[_EventItemResponse] | (Iterable[js.Tuple2[String, _EventItemResponse]]) = null
   ): _ItemResponse = {
     val __obj = js.Dynamic.literal()
-    if (EndpointItemResponse != null) __obj.updateDynamic("EndpointItemResponse")(EndpointItemResponse)
+    if (EndpointItemResponse != null) __obj.updateDynamic("EndpointItemResponse")(EndpointItemResponse.asInstanceOf[js.Any])
     if (EventsItemResponse != null) __obj.updateDynamic("EventsItemResponse")(EventsItemResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ItemResponse]
   }

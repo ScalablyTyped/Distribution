@@ -20,8 +20,8 @@ object Anon_Enabled {
     params: js.Array[_] | js.Any = null,
     paths: js.Array[_] | String | RegExp = null
   ): Anon_Enabled = {
-    val __obj = js.Dynamic.literal(phase = phase)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    val __obj = js.Dynamic.literal(phase = phase.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Enabled]

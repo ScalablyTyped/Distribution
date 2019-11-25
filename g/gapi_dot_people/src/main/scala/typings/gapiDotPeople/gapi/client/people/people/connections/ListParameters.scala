@@ -24,11 +24,11 @@ object ListParameters {
     sortOrder: SortOrder = null,
     syncToken: String = null
   ): ListParameters = {
-    val __obj = js.Dynamic.literal(personFields = personFields, resourceName = resourceName)
+    val __obj = js.Dynamic.literal(personFields = personFields.asInstanceOf[js.Any], resourceName = resourceName.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
-    if (syncToken != null) __obj.updateDynamic("syncToken")(syncToken)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
+    if (syncToken != null) __obj.updateDynamic("syncToken")(syncToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListParameters]
   }
 }

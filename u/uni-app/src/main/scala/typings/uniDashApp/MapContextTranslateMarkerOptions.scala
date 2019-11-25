@@ -48,8 +48,8 @@ object MapContextTranslateMarkerOptions {
   ): MapContextTranslateMarkerOptions = {
     val __obj = js.Dynamic.literal()
     if (animationEnd != null) __obj.updateDynamic("animationEnd")(js.Any.fromFunction0(animationEnd))
-    if (!js.isUndefined(autoRotate)) __obj.updateDynamic("autoRotate")(autoRotate)
-    if (destination != null) __obj.updateDynamic("destination")(destination)
+    if (!js.isUndefined(autoRotate)) __obj.updateDynamic("autoRotate")(autoRotate.asInstanceOf[js.Any])
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (markerId != null) __obj.updateDynamic("markerId")(markerId.asInstanceOf[js.Any])

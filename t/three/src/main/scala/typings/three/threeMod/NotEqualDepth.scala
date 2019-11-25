@@ -1,12 +1,12 @@
 package typings.three.threeMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.three.srcConstantsMod.DepthModes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("three", "NotEqualDepth")
 @js.native
-object NotEqualDepth extends TopLevel[DepthModes]
+object NotEqualDepth
+  extends TopLevel[typings.three.srcConstantsMod.DepthModes]
 

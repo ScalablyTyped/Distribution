@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait PresenceMode extends js.Object
 
+object PresenceMode {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def forbidden: typings.atHapiJoi.atHapiJoiStrings.forbidden = this.cast("forbidden")
+  @scala.inline
+  def optional: typings.atHapiJoi.atHapiJoiStrings.optional = this.cast("optional")
+  @scala.inline
+  def required: typings.atHapiJoi.atHapiJoiStrings.required = this.cast("required")
+}
+

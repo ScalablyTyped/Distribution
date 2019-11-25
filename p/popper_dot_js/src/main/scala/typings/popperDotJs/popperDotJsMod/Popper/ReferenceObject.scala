@@ -21,8 +21,8 @@ object ReferenceObject {
     getBoundingClientRect: () => ClientRect,
     referenceNode: Node = null
   ): ReferenceObject = {
-    val __obj = js.Dynamic.literal(clientHeight = clientHeight, clientWidth = clientWidth, getBoundingClientRect = js.Any.fromFunction0(getBoundingClientRect))
-    if (referenceNode != null) __obj.updateDynamic("referenceNode")(referenceNode)
+    val __obj = js.Dynamic.literal(clientHeight = clientHeight.asInstanceOf[js.Any], clientWidth = clientWidth.asInstanceOf[js.Any], getBoundingClientRect = js.Any.fromFunction0(getBoundingClientRect))
+    if (referenceNode != null) __obj.updateDynamic("referenceNode")(referenceNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceObject]
   }
 }

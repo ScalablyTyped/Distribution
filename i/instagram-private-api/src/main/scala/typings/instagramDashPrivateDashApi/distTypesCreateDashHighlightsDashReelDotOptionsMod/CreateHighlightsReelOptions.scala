@@ -15,8 +15,8 @@ trait CreateHighlightsReelOptions extends js.Object {
 object CreateHighlightsReelOptions {
   @scala.inline
   def apply(mediaIds: js.Array[String], title: String, coverId: String = null, source: IgAppModule = null): CreateHighlightsReelOptions = {
-    val __obj = js.Dynamic.literal(mediaIds = mediaIds, title = title)
-    if (coverId != null) __obj.updateDynamic("coverId")(coverId)
+    val __obj = js.Dynamic.literal(mediaIds = mediaIds.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (coverId != null) __obj.updateDynamic("coverId")(coverId.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateHighlightsReelOptions]
   }

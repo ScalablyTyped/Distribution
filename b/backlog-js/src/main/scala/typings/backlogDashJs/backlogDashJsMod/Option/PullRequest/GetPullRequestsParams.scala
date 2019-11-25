@@ -24,12 +24,12 @@ object GetPullRequestsParams {
     statusId: js.Array[Double] = null
   ): GetPullRequestsParams = {
     val __obj = js.Dynamic.literal()
-    if (assigneeId != null) __obj.updateDynamic("assigneeId")(assigneeId)
+    if (assigneeId != null) __obj.updateDynamic("assigneeId")(assigneeId.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (createdUserId != null) __obj.updateDynamic("createdUserId")(createdUserId)
-    if (issueId != null) __obj.updateDynamic("issueId")(issueId)
+    if (createdUserId != null) __obj.updateDynamic("createdUserId")(createdUserId.asInstanceOf[js.Any])
+    if (issueId != null) __obj.updateDynamic("issueId")(issueId.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (statusId != null) __obj.updateDynamic("statusId")(statusId)
+    if (statusId != null) __obj.updateDynamic("statusId")(statusId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPullRequestsParams]
   }
 }

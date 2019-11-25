@@ -21,9 +21,9 @@ object SharedTargeting {
     key: String = null
   ): SharedTargeting = {
     val __obj = js.Dynamic.literal()
-    if (exclusions != null) __obj.updateDynamic("exclusions")(exclusions)
-    if (inclusions != null) __obj.updateDynamic("inclusions")(inclusions)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (exclusions != null) __obj.updateDynamic("exclusions")(exclusions.asInstanceOf[js.Any])
+    if (inclusions != null) __obj.updateDynamic("inclusions")(inclusions.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedTargeting]
   }
 }

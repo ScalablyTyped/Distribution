@@ -24,11 +24,11 @@ object MapShapeFeatureCreatedEvent {
     layer: Shape = null,
     properties: js.Any = null
   ): MapShapeFeatureCreatedEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (dataItem != null) __obj.updateDynamic("dataItem")(dataItem)
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (layer != null) __obj.updateDynamic("layer")(layer)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (dataItem != null) __obj.updateDynamic("dataItem")(dataItem.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapShapeFeatureCreatedEvent]
   }
 }

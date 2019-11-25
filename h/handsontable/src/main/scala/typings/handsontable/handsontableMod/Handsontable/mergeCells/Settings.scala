@@ -14,7 +14,7 @@ trait Settings extends js.Object {
 object Settings {
   @scala.inline
   def apply(col: Double, colspan: Double, row: Double, rowspan: Double): Settings = {
-    val __obj = js.Dynamic.literal(col = col, colspan = colspan, row = row, rowspan = rowspan)
+    val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], colspan = colspan.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], rowspan = rowspan.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Settings]
   }

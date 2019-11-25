@@ -29,7 +29,7 @@ object TfvcShelvesetRef {
     owner: IdentityRef,
     url: String
   ): TfvcShelvesetRef = {
-    val __obj = js.Dynamic.literal(_links = _links, comment = comment, commentTruncated = commentTruncated, createdDate = createdDate, id = id, name = name, owner = owner, url = url)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], commentTruncated = commentTruncated.asInstanceOf[js.Any], createdDate = createdDate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TfvcShelvesetRef]
   }

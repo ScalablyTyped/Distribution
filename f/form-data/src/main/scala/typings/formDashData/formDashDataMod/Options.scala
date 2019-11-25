@@ -24,9 +24,9 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (dataSize != null) __obj.updateDynamic("dataSize")(dataSize.asInstanceOf[js.Any])
     if (maxDataSize != null) __obj.updateDynamic("maxDataSize")(maxDataSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(pauseStreams)) __obj.updateDynamic("pauseStreams")(pauseStreams)
-    if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable)
-    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable)
+    if (!js.isUndefined(pauseStreams)) __obj.updateDynamic("pauseStreams")(pauseStreams.asInstanceOf[js.Any])
+    if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable.asInstanceOf[js.Any])
+    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

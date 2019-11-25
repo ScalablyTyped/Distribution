@@ -12,7 +12,7 @@ trait EditorState extends js.Object {
 object EditorState {
   @scala.inline
   def apply(value: Value): EditorState = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EditorState]
   }

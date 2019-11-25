@@ -24,12 +24,12 @@ object VideoLiveStreamingDetails {
     scheduledStartTime: String = null
   ): VideoLiveStreamingDetails = {
     val __obj = js.Dynamic.literal()
-    if (activeLiveChatId != null) __obj.updateDynamic("activeLiveChatId")(activeLiveChatId)
-    if (actualEndTime != null) __obj.updateDynamic("actualEndTime")(actualEndTime)
-    if (actualStartTime != null) __obj.updateDynamic("actualStartTime")(actualStartTime)
-    if (concurrentViewers != null) __obj.updateDynamic("concurrentViewers")(concurrentViewers)
-    if (scheduledEndTime != null) __obj.updateDynamic("scheduledEndTime")(scheduledEndTime)
-    if (scheduledStartTime != null) __obj.updateDynamic("scheduledStartTime")(scheduledStartTime)
+    if (activeLiveChatId != null) __obj.updateDynamic("activeLiveChatId")(activeLiveChatId.asInstanceOf[js.Any])
+    if (actualEndTime != null) __obj.updateDynamic("actualEndTime")(actualEndTime.asInstanceOf[js.Any])
+    if (actualStartTime != null) __obj.updateDynamic("actualStartTime")(actualStartTime.asInstanceOf[js.Any])
+    if (concurrentViewers != null) __obj.updateDynamic("concurrentViewers")(concurrentViewers.asInstanceOf[js.Any])
+    if (scheduledEndTime != null) __obj.updateDynamic("scheduledEndTime")(scheduledEndTime.asInstanceOf[js.Any])
+    if (scheduledStartTime != null) __obj.updateDynamic("scheduledStartTime")(scheduledStartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoLiveStreamingDetails]
   }
 }

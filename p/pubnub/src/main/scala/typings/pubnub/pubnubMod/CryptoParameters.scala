@@ -21,10 +21,10 @@ object CryptoParameters {
     mode: String = null
   ): CryptoParameters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(encryptKey)) __obj.updateDynamic("encryptKey")(encryptKey)
-    if (keyEncoding != null) __obj.updateDynamic("keyEncoding")(keyEncoding)
+    if (!js.isUndefined(encryptKey)) __obj.updateDynamic("encryptKey")(encryptKey.asInstanceOf[js.Any])
+    if (keyEncoding != null) __obj.updateDynamic("keyEncoding")(keyEncoding.asInstanceOf[js.Any])
     if (keyLength != null) __obj.updateDynamic("keyLength")(keyLength.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CryptoParameters]
   }
 }

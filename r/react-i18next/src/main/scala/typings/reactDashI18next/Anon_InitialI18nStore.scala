@@ -13,7 +13,7 @@ trait Anon_InitialI18nStore extends js.Object {
 object Anon_InitialI18nStore {
   @scala.inline
   def apply(initialI18nStore: StringDictionary[js.Object], initialLanguage: String): Anon_InitialI18nStore = {
-    val __obj = js.Dynamic.literal(initialI18nStore = initialI18nStore, initialLanguage = initialLanguage)
+    val __obj = js.Dynamic.literal(initialI18nStore = initialI18nStore.asInstanceOf[js.Any], initialLanguage = initialLanguage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_InitialI18nStore]
   }

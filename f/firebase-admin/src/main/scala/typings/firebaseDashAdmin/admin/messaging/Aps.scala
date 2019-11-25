@@ -57,14 +57,14 @@ object Aps {
     threadId: String = null
   ): Aps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (alert != null) __obj.updateDynamic("alert")(alert.asInstanceOf[js.Any])
     if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (!js.isUndefined(contentAvailable)) __obj.updateDynamic("contentAvailable")(contentAvailable)
-    if (!js.isUndefined(mutableContent)) __obj.updateDynamic("mutableContent")(mutableContent)
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentAvailable)) __obj.updateDynamic("contentAvailable")(contentAvailable.asInstanceOf[js.Any])
+    if (!js.isUndefined(mutableContent)) __obj.updateDynamic("mutableContent")(mutableContent.asInstanceOf[js.Any])
     if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
-    if (threadId != null) __obj.updateDynamic("threadId")(threadId)
+    if (threadId != null) __obj.updateDynamic("threadId")(threadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Aps]
   }
 }

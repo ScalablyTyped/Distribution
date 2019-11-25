@@ -23,7 +23,7 @@ object Anon_Extra {
     prefixCls: String,
     use12Hours: Boolean
   ): Anon_Extra = {
-    val __obj = js.Dynamic.literal(extra = extra, minuteStep = minuteStep, mode = mode, pickerPrefixCls = pickerPrefixCls, prefixCls = prefixCls, use12Hours = use12Hours)
+    val __obj = js.Dynamic.literal(extra = extra.asInstanceOf[js.Any], minuteStep = minuteStep.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], pickerPrefixCls = pickerPrefixCls.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], use12Hours = use12Hours.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Extra]
   }

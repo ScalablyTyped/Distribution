@@ -35,16 +35,16 @@ object ImageTabs {
     tRNS: Double | js.Array[Double] = null
   ): ImageTabs = {
     val __obj = js.Dynamic.literal()
-    if (PLTE != null) __obj.updateDynamic("PLTE")(PLTE)
-    if (acTL != null) __obj.updateDynamic("acTL")(acTL)
+    if (PLTE != null) __obj.updateDynamic("PLTE")(PLTE.asInstanceOf[js.Any])
+    if (acTL != null) __obj.updateDynamic("acTL")(acTL.asInstanceOf[js.Any])
     if (bKGD != null) __obj.updateDynamic("bKGD")(bKGD.asInstanceOf[js.Any])
-    if (cHRM != null) __obj.updateDynamic("cHRM")(cHRM)
+    if (cHRM != null) __obj.updateDynamic("cHRM")(cHRM.asInstanceOf[js.Any])
     if (gAMA != null) __obj.updateDynamic("gAMA")(gAMA.asInstanceOf[js.Any])
-    if (hIST != null) __obj.updateDynamic("hIST")(hIST)
-    if (iTXt != null) __obj.updateDynamic("iTXt")(iTXt)
-    if (pHYs != null) __obj.updateDynamic("pHYs")(pHYs)
+    if (hIST != null) __obj.updateDynamic("hIST")(hIST.asInstanceOf[js.Any])
+    if (iTXt != null) __obj.updateDynamic("iTXt")(iTXt.asInstanceOf[js.Any])
+    if (pHYs != null) __obj.updateDynamic("pHYs")(pHYs.asInstanceOf[js.Any])
     if (sRGB != null) __obj.updateDynamic("sRGB")(sRGB.asInstanceOf[js.Any])
-    if (tEXt != null) __obj.updateDynamic("tEXt")(tEXt)
+    if (tEXt != null) __obj.updateDynamic("tEXt")(tEXt.asInstanceOf[js.Any])
     if (tRNS != null) __obj.updateDynamic("tRNS")(tRNS.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageTabs]
   }

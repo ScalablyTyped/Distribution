@@ -11,7 +11,7 @@ trait LinkIssueSharedFilesParams extends js.Object {
 object LinkIssueSharedFilesParams {
   @scala.inline
   def apply(fileId: js.Array[Double]): LinkIssueSharedFilesParams = {
-    val __obj = js.Dynamic.literal(fileId = fileId)
+    val __obj = js.Dynamic.literal(fileId = fileId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LinkIssueSharedFilesParams]
   }

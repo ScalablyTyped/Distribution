@@ -13,8 +13,8 @@ object UpdateSubscriberOptions {
   @scala.inline
   def apply(SubscribeChannels: String = null, UnsubscribeChannels: String = null): UpdateSubscriberOptions = {
     val __obj = js.Dynamic.literal()
-    if (SubscribeChannels != null) __obj.updateDynamic("SubscribeChannels")(SubscribeChannels)
-    if (UnsubscribeChannels != null) __obj.updateDynamic("UnsubscribeChannels")(UnsubscribeChannels)
+    if (SubscribeChannels != null) __obj.updateDynamic("SubscribeChannels")(SubscribeChannels.asInstanceOf[js.Any])
+    if (UnsubscribeChannels != null) __obj.updateDynamic("UnsubscribeChannels")(UnsubscribeChannels.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSubscriberOptions]
   }
 }

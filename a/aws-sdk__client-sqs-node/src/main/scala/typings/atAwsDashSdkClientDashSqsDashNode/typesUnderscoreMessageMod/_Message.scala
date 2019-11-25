@@ -19,7 +19,7 @@ trait _Message extends js.Object {
     * <p>A map of the attributes requested in <code> <a>ReceiveMessage</a> </code> to their respective values. Supported attributes:</p> <ul> <li> <p> <code>ApproximateReceiveCount</code> </p> </li> <li> <p> <code>ApproximateFirstReceiveTimestamp</code> </p> </li> <li> <p> <code>MessageDeduplicationId</code> </p> </li> <li> <p> <code>MessageGroupId</code> </p> </li> <li> <p> <code>SenderId</code> </p> </li> <li> <p> <code>SentTimestamp</code> </p> </li> <li> <p> <code>SequenceNumber</code> </p> </li> </ul> <p> <code>ApproximateFirstReceiveTimestamp</code> and <code>SentTimestamp</code> are each returned as an integer representing the <a href="http://en.wikipedia.org/wiki/Unix_time">epoch time</a> in milliseconds.</p>
     */
   var Attributes: js.UndefOr[
-    (/* import warning: ImportType.apply c Unsupported type mapping: 
+    (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string}
     */ typings.atAwsDashSdkClientDashSqsDashNode.atAwsDashSdkClientDashSqsDashNodeStrings._Message with js.Any) | (Iterable[
       js.Tuple2[
@@ -59,7 +59,7 @@ trait _Message extends js.Object {
 object _Message {
   @scala.inline
   def apply(
-    Attributes: (/* import warning: ImportType.apply c Unsupported type mapping: 
+    Attributes: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string}
     */ typings.atAwsDashSdkClientDashSqsDashNode.atAwsDashSdkClientDashSqsDashNodeStrings._Message with js.Any) | (Iterable[
       js.Tuple2[
@@ -76,12 +76,12 @@ object _Message {
   ): _Message = {
     val __obj = js.Dynamic.literal()
     if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
-    if (Body != null) __obj.updateDynamic("Body")(Body)
-    if (MD5OfBody != null) __obj.updateDynamic("MD5OfBody")(MD5OfBody)
-    if (MD5OfMessageAttributes != null) __obj.updateDynamic("MD5OfMessageAttributes")(MD5OfMessageAttributes)
+    if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
+    if (MD5OfBody != null) __obj.updateDynamic("MD5OfBody")(MD5OfBody.asInstanceOf[js.Any])
+    if (MD5OfMessageAttributes != null) __obj.updateDynamic("MD5OfMessageAttributes")(MD5OfMessageAttributes.asInstanceOf[js.Any])
     if (MessageAttributes != null) __obj.updateDynamic("MessageAttributes")(MessageAttributes.asInstanceOf[js.Any])
-    if (MessageId != null) __obj.updateDynamic("MessageId")(MessageId)
-    if (ReceiptHandle != null) __obj.updateDynamic("ReceiptHandle")(ReceiptHandle)
+    if (MessageId != null) __obj.updateDynamic("MessageId")(MessageId.asInstanceOf[js.Any])
+    if (ReceiptHandle != null) __obj.updateDynamic("ReceiptHandle")(ReceiptHandle.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Message]
   }
 }

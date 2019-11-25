@@ -76,7 +76,7 @@ object IController {
     if ($onDestroy != null) __obj.updateDynamic("$onDestroy")(js.Any.fromFunction0($onDestroy))
     if ($onInit != null) __obj.updateDynamic("$onInit")(js.Any.fromFunction0($onInit))
     if ($postLink != null) __obj.updateDynamic("$postLink")(js.Any.fromFunction0($postLink))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IController]
   }
 }

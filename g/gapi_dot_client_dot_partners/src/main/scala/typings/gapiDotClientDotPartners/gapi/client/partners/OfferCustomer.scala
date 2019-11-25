@@ -39,15 +39,15 @@ object OfferCustomer {
     spendXAmount: String = null
   ): OfferCustomer = {
     val __obj = js.Dynamic.literal()
-    if (adwordsUrl != null) __obj.updateDynamic("adwordsUrl")(adwordsUrl)
-    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode)
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
+    if (adwordsUrl != null) __obj.updateDynamic("adwordsUrl")(adwordsUrl.asInstanceOf[js.Any])
+    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
     if (eligibilityDaysLeft != null) __obj.updateDynamic("eligibilityDaysLeft")(eligibilityDaysLeft.asInstanceOf[js.Any])
-    if (externalCid != null) __obj.updateDynamic("externalCid")(externalCid)
-    if (getYAmount != null) __obj.updateDynamic("getYAmount")(getYAmount)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (offerType != null) __obj.updateDynamic("offerType")(offerType)
-    if (spendXAmount != null) __obj.updateDynamic("spendXAmount")(spendXAmount)
+    if (externalCid != null) __obj.updateDynamic("externalCid")(externalCid.asInstanceOf[js.Any])
+    if (getYAmount != null) __obj.updateDynamic("getYAmount")(getYAmount.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (offerType != null) __obj.updateDynamic("offerType")(offerType.asInstanceOf[js.Any])
+    if (spendXAmount != null) __obj.updateDynamic("spendXAmount")(spendXAmount.asInstanceOf[js.Any])
     __obj.asInstanceOf[OfferCustomer]
   }
 }

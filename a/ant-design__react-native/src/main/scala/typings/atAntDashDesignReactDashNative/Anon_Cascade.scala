@@ -14,7 +14,7 @@ trait Anon_Cascade extends js.Object {
 object Anon_Cascade {
   @scala.inline
   def apply(cascade: Boolean, cols: Double, onChange: () => Unit, value: js.Array[scala.Nothing]): Anon_Cascade = {
-    val __obj = js.Dynamic.literal(cascade = cascade, cols = cols, onChange = js.Any.fromFunction0(onChange), value = value)
+    val __obj = js.Dynamic.literal(cascade = cascade.asInstanceOf[js.Any], cols = cols.asInstanceOf[js.Any], onChange = js.Any.fromFunction0(onChange), value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Cascade]
   }

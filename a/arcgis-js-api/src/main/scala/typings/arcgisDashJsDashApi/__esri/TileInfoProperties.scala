@@ -79,11 +79,11 @@ object TileInfoProperties {
     val __obj = js.Dynamic.literal()
     if (dpi != null) __obj.updateDynamic("dpi")(dpi.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(isWrappable)) __obj.updateDynamic("isWrappable")(isWrappable)
-    if (lods != null) __obj.updateDynamic("lods")(lods)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (!js.isUndefined(isWrappable)) __obj.updateDynamic("isWrappable")(isWrappable.asInstanceOf[js.Any])
+    if (lods != null) __obj.updateDynamic("lods")(lods.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileInfoProperties]
   }
 }

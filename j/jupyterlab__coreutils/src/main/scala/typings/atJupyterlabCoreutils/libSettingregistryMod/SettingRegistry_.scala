@@ -147,7 +147,7 @@ class SettingRegistry_ protected () extends ISettingRegistry {
     */
   def transform(
     plugin: String,
-    transforms: /* import warning: ImportType.apply c Unsupported type mapping: 
+    transforms: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ phase in @jupyterlab/coreutils.@jupyterlab/coreutils/lib/tokens.ISettingRegistry.IPlugin.Phase ]:? @jupyterlab/coreutils.@jupyterlab/coreutils/lib/tokens.ISettingRegistry.IPlugin.Transform}
     */ typings.atJupyterlabCoreutils.atJupyterlabCoreutilsStrings.SettingRegistry with js.Any
   ): IDisposable = js.native
@@ -172,7 +172,7 @@ class SettingRegistry_ protected () extends ISettingRegistry {
   /* CompleteClass */
   override def transform(
     plugin: String,
-    transforms: /* import warning: ImportType.apply c Unsupported type mapping: 
+    transforms: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ phase in @jupyterlab/coreutils.@jupyterlab/coreutils/lib/tokens.ISettingRegistry.IPlugin.Phase ]:? @jupyterlab/coreutils.@jupyterlab/coreutils/lib/tokens.ISettingRegistry.IPlugin.Transform}
     */ typings.atJupyterlabCoreutils.atJupyterlabCoreutilsStrings.ISettingRegistry with js.Any
   ): IDisposable = js.native

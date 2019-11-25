@@ -21,8 +21,8 @@ trait ClassProvider
 object ClassProvider {
   @scala.inline
   def apply(provide: js.Any, useClass: Type[_], multi: js.UndefOr[Boolean] = js.undefined): ClassProvider = {
-    val __obj = js.Dynamic.literal(provide = provide, useClass = useClass)
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)
+    val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any], useClass = useClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassProvider]
   }
 }

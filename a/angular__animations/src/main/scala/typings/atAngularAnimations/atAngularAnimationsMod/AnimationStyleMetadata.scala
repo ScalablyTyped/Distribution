@@ -28,7 +28,7 @@ object AnimationStyleMetadata {
     offset: Int | Double = null
   ): AnimationStyleMetadata = {
     val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationStyleMetadata]
   }

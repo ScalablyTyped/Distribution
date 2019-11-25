@@ -12,7 +12,7 @@ trait RedirectRequestParams extends js.Object {
 object RedirectRequestParams {
   @scala.inline
   def apply(redirectUrl: String): RedirectRequestParams = {
-    val __obj = js.Dynamic.literal(redirectUrl = redirectUrl)
+    val __obj = js.Dynamic.literal(redirectUrl = redirectUrl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RedirectRequestParams]
   }

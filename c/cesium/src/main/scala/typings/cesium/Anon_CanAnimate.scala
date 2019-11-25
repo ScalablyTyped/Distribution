@@ -31,14 +31,14 @@ object Anon_CanAnimate {
     stopTime: JulianDate = null
   ): Anon_CanAnimate = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canAnimate)) __obj.updateDynamic("canAnimate")(canAnimate)
-    if (clockRange != null) __obj.updateDynamic("clockRange")(clockRange)
-    if (clockStep != null) __obj.updateDynamic("clockStep")(clockStep)
-    if (currentTime != null) __obj.updateDynamic("currentTime")(currentTime)
+    if (!js.isUndefined(canAnimate)) __obj.updateDynamic("canAnimate")(canAnimate.asInstanceOf[js.Any])
+    if (clockRange != null) __obj.updateDynamic("clockRange")(clockRange.asInstanceOf[js.Any])
+    if (clockStep != null) __obj.updateDynamic("clockStep")(clockStep.asInstanceOf[js.Any])
+    if (currentTime != null) __obj.updateDynamic("currentTime")(currentTime.asInstanceOf[js.Any])
     if (multiplier != null) __obj.updateDynamic("multiplier")(multiplier.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldAnimate)) __obj.updateDynamic("shouldAnimate")(shouldAnimate)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (stopTime != null) __obj.updateDynamic("stopTime")(stopTime)
+    if (!js.isUndefined(shouldAnimate)) __obj.updateDynamic("shouldAnimate")(shouldAnimate.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (stopTime != null) __obj.updateDynamic("stopTime")(stopTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CanAnimate]
   }
 }

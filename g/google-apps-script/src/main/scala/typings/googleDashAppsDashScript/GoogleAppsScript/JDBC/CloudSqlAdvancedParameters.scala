@@ -33,11 +33,11 @@ object CloudSqlAdvancedParameters {
   ): CloudSqlAdvancedParameters = {
     val __obj = js.Dynamic.literal()
     if (connectTimeoutSeconds != null) __obj.updateDynamic("connectTimeoutSeconds")(connectTimeoutSeconds.asInstanceOf[js.Any])
-    if (database != null) __obj.updateDynamic("database")(database)
-    if (instance != null) __obj.updateDynamic("instance")(instance)
-    if (password != null) __obj.updateDynamic("password")(password)
+    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
+    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (queryTimeoutSeconds != null) __obj.updateDynamic("queryTimeoutSeconds")(queryTimeoutSeconds.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudSqlAdvancedParameters]
   }
 }

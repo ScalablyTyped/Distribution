@@ -40,10 +40,10 @@ object GoogleActionsOrdersV3VerticalsPurchasePurchaseError {
   ): GoogleActionsOrdersV3VerticalsPurchasePurchaseError = {
     val __obj = js.Dynamic.literal()
     if (availableQuantity != null) __obj.updateDynamic("availableQuantity")(availableQuantity.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (entityId != null) __obj.updateDynamic("entityId")(entityId)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (updatedPrice != null) __obj.updateDynamic("updatedPrice")(updatedPrice)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (updatedPrice != null) __obj.updateDynamic("updatedPrice")(updatedPrice.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchasePurchaseError]
   }
 }

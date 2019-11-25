@@ -11,7 +11,7 @@ trait Circle extends Coordinate {
 object Circle {
   @scala.inline
   def apply(latitute: Double, longitude: Double, radius: Double): Circle = {
-    val __obj = js.Dynamic.literal(latitute = latitute, longitude = longitude, radius = radius)
+    val __obj = js.Dynamic.literal(latitute = latitute.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Circle]
   }

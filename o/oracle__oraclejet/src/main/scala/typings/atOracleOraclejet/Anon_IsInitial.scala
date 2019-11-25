@@ -15,7 +15,7 @@ trait Anon_IsInitial extends js.Object {
 object Anon_IsInitial {
   @scala.inline
   def apply(isInitial: Boolean, newViewModel: js.Object, node: Node, oldViewModel: js.Object): Anon_IsInitial = {
-    val __obj = js.Dynamic.literal(isInitial = isInitial, newViewModel = newViewModel, node = node, oldViewModel = oldViewModel)
+    val __obj = js.Dynamic.literal(isInitial = isInitial.asInstanceOf[js.Any], newViewModel = newViewModel.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], oldViewModel = oldViewModel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsInitial]
   }

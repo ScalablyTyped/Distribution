@@ -18,8 +18,8 @@ object PathRule {
   @scala.inline
   def apply(paths: js.Array[String] = null, service: String = null): PathRule = {
     val __obj = js.Dynamic.literal()
-    if (paths != null) __obj.updateDynamic("paths")(paths)
-    if (service != null) __obj.updateDynamic("service")(service)
+    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathRule]
   }
 }

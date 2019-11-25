@@ -26,7 +26,7 @@ trait AzureFileVolumeSource extends js.Object {
 object AzureFileVolumeSource {
   @scala.inline
   def apply(readOnly: Boolean, secretName: String, shareName: String): AzureFileVolumeSource = {
-    val __obj = js.Dynamic.literal(readOnly = readOnly, secretName = secretName, shareName = shareName)
+    val __obj = js.Dynamic.literal(readOnly = readOnly.asInstanceOf[js.Any], secretName = secretName.asInstanceOf[js.Any], shareName = shareName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AzureFileVolumeSource]
   }

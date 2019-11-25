@@ -32,15 +32,15 @@ object ConfigureOptions {
     web: Anon_Async = null
   ): ConfigureOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoescape)) __obj.updateDynamic("autoescape")(autoescape)
-    if (express != null) __obj.updateDynamic("express")(express)
-    if (!js.isUndefined(lstripBlocks)) __obj.updateDynamic("lstripBlocks")(lstripBlocks)
-    if (!js.isUndefined(noCache)) __obj.updateDynamic("noCache")(noCache)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
-    if (!js.isUndefined(throwOnUndefined)) __obj.updateDynamic("throwOnUndefined")(throwOnUndefined)
-    if (!js.isUndefined(trimBlocks)) __obj.updateDynamic("trimBlocks")(trimBlocks)
-    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch)
-    if (web != null) __obj.updateDynamic("web")(web)
+    if (!js.isUndefined(autoescape)) __obj.updateDynamic("autoescape")(autoescape.asInstanceOf[js.Any])
+    if (express != null) __obj.updateDynamic("express")(express.asInstanceOf[js.Any])
+    if (!js.isUndefined(lstripBlocks)) __obj.updateDynamic("lstripBlocks")(lstripBlocks.asInstanceOf[js.Any])
+    if (!js.isUndefined(noCache)) __obj.updateDynamic("noCache")(noCache.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (!js.isUndefined(throwOnUndefined)) __obj.updateDynamic("throwOnUndefined")(throwOnUndefined.asInstanceOf[js.Any])
+    if (!js.isUndefined(trimBlocks)) __obj.updateDynamic("trimBlocks")(trimBlocks.asInstanceOf[js.Any])
+    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
+    if (web != null) __obj.updateDynamic("web")(web.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigureOptions]
   }
 }

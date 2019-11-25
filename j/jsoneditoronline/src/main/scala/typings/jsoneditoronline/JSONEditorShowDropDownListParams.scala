@@ -27,7 +27,7 @@ object JSONEditorShowDropDownListParams {
     x: Double,
     y: Double
   ): JSONEditorShowDropDownListParams = {
-    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), node = node, optionClassName = optionClassName, optionSelectedClassName = optionSelectedClassName, value = value, values = values, x = x, y = y)
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), node = node.asInstanceOf[js.Any], optionClassName = optionClassName.asInstanceOf[js.Any], optionSelectedClassName = optionSelectedClassName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JSONEditorShowDropDownListParams]
   }

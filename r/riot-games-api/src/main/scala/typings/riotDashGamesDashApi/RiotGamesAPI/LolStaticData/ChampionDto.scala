@@ -45,7 +45,7 @@ object ChampionDto {
     tags: js.Array[String],
     title: String
   ): ChampionDto = {
-    val __obj = js.Dynamic.literal(allytips = allytips, blurb = blurb, enemytips = enemytips, id = id, image = image, info = info, key = key, lore = lore, name = name, partype = partype, passive = passive, recommended = recommended, skins = skins, spells = spells, stats = stats, tags = tags, title = title)
+    val __obj = js.Dynamic.literal(allytips = allytips.asInstanceOf[js.Any], blurb = blurb.asInstanceOf[js.Any], enemytips = enemytips.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], lore = lore.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], partype = partype.asInstanceOf[js.Any], passive = passive.asInstanceOf[js.Any], recommended = recommended.asInstanceOf[js.Any], skins = skins.asInstanceOf[js.Any], spells = spells.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChampionDto]
   }

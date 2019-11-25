@@ -26,7 +26,7 @@ object Anon_ChartDataPoint {
     pencent: Int | Double = null,
     total: Int | Double = null
   ): Anon_ChartDataPoint = {
-    val __obj = js.Dynamic.literal(chart = chart, dataPoint = dataPoint, dataSeries = dataSeries)
+    val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], dataPoint = dataPoint.asInstanceOf[js.Any], dataSeries = dataSeries.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (pencent != null) __obj.updateDynamic("pencent")(pencent.asInstanceOf[js.Any])
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])

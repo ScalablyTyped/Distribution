@@ -31,9 +31,9 @@ object PersistentPreferredActivity {
     receiverActivity: String = null
   ): PersistentPreferredActivity = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (categories != null) __obj.updateDynamic("categories")(categories)
-    if (receiverActivity != null) __obj.updateDynamic("receiverActivity")(receiverActivity)
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
+    if (receiverActivity != null) __obj.updateDynamic("receiverActivity")(receiverActivity.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersistentPreferredActivity]
   }
 }

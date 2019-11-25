@@ -28,14 +28,14 @@ object AuthenticationExtensionsClientOutputs {
     uvm: UvmEntries = null
   ): AuthenticationExtensionsClientOutputs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appid)) __obj.updateDynamic("appid")(appid)
-    if (!js.isUndefined(authnSel)) __obj.updateDynamic("authnSel")(authnSel)
-    if (exts != null) __obj.updateDynamic("exts")(exts)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (txAuthGeneric != null) __obj.updateDynamic("txAuthGeneric")(txAuthGeneric)
-    if (txAuthSimple != null) __obj.updateDynamic("txAuthSimple")(txAuthSimple)
-    if (uvi != null) __obj.updateDynamic("uvi")(uvi)
-    if (uvm != null) __obj.updateDynamic("uvm")(uvm)
+    if (!js.isUndefined(appid)) __obj.updateDynamic("appid")(appid.asInstanceOf[js.Any])
+    if (!js.isUndefined(authnSel)) __obj.updateDynamic("authnSel")(authnSel.asInstanceOf[js.Any])
+    if (exts != null) __obj.updateDynamic("exts")(exts.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (txAuthGeneric != null) __obj.updateDynamic("txAuthGeneric")(txAuthGeneric.asInstanceOf[js.Any])
+    if (txAuthSimple != null) __obj.updateDynamic("txAuthSimple")(txAuthSimple.asInstanceOf[js.Any])
+    if (uvi != null) __obj.updateDynamic("uvi")(uvi.asInstanceOf[js.Any])
+    if (uvm != null) __obj.updateDynamic("uvm")(uvm.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationExtensionsClientOutputs]
   }
 }

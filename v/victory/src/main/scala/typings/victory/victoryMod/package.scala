@@ -10,7 +10,6 @@ package object victoryMod {
   import typings.std.Exclude
   import typings.std.Pick
   import typings.victory.Anon_XYNumber
-  import typings.victory.Fn_DataAnyArray
 
   type AnimationData = AnimationStyle | js.Array[AnimationStyle]
   type AnimationStyle = StringDictionary[String | Double]
@@ -39,7 +38,7 @@ package object victoryMod {
   /**
     * Data getter property type
     */
-  type DataGetterPropType = Double | String | js.Array[String] | Fn_DataAnyArray
+  type DataGetterPropType = Double | String | js.Array[String] | (js.Function1[/* data */ js.Any, Double | String | js.Array[String]])
   /**
     * Domain padding
     */
@@ -62,7 +61,7 @@ package object victoryMod {
   type PaddingProps = Double | BlockProps
   // Many victory components accept string or number or callback which returns string or number
   type StringOrNumberOrCallback = String | Double | (js.Function2[/* datum */ js.Any, /* active */ Boolean, String | Double])
-  type VictoryStyleObject = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type VictoryStyleObject = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof react.react.CSSProperties ]: victory.victory.StringOrNumberOrCallback}
     */ typings.victory.victoryStrings.VictoryStyleObject with js.Any
 }

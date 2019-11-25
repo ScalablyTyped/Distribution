@@ -37,17 +37,17 @@ object PaymentMethodCreateRequest {
     number: String = null,
     options: Anon_FailOnDuplicatePaymentMethodMakeDefaultVerificationAcmount = null
   ): PaymentMethodCreateRequest = {
-    val __obj = js.Dynamic.literal(customerId = customerId, paymentMethodNonce = paymentMethodNonce)
-    if (billingAddress != null) __obj.updateDynamic("billingAddress")(billingAddress)
-    if (billingAddressId != null) __obj.updateDynamic("billingAddressId")(billingAddressId)
-    if (cardholderName != null) __obj.updateDynamic("cardholderName")(cardholderName)
-    if (cvv != null) __obj.updateDynamic("cvv")(cvv)
-    if (deviceData != null) __obj.updateDynamic("deviceData")(deviceData)
-    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate)
-    if (expirationMonth != null) __obj.updateDynamic("expirationMonth")(expirationMonth)
-    if (expirationYear != null) __obj.updateDynamic("expirationYear")(expirationYear)
-    if (number != null) __obj.updateDynamic("number")(number)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(customerId = customerId.asInstanceOf[js.Any], paymentMethodNonce = paymentMethodNonce.asInstanceOf[js.Any])
+    if (billingAddress != null) __obj.updateDynamic("billingAddress")(billingAddress.asInstanceOf[js.Any])
+    if (billingAddressId != null) __obj.updateDynamic("billingAddressId")(billingAddressId.asInstanceOf[js.Any])
+    if (cardholderName != null) __obj.updateDynamic("cardholderName")(cardholderName.asInstanceOf[js.Any])
+    if (cvv != null) __obj.updateDynamic("cvv")(cvv.asInstanceOf[js.Any])
+    if (deviceData != null) __obj.updateDynamic("deviceData")(deviceData.asInstanceOf[js.Any])
+    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
+    if (expirationMonth != null) __obj.updateDynamic("expirationMonth")(expirationMonth.asInstanceOf[js.Any])
+    if (expirationYear != null) __obj.updateDynamic("expirationYear")(expirationYear.asInstanceOf[js.Any])
+    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentMethodCreateRequest]
   }
 }

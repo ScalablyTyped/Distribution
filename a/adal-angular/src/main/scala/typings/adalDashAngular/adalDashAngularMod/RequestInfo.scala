@@ -36,7 +36,7 @@ object RequestInfo {
     stateResponse: String,
     valid: Boolean
   ): RequestInfo = {
-    val __obj = js.Dynamic.literal(parameters = parameters, requestType = requestType, stateMatch = stateMatch, stateResponse = stateResponse, valid = valid)
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestType = requestType.asInstanceOf[js.Any], stateMatch = stateMatch.asInstanceOf[js.Any], stateResponse = stateResponse.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RequestInfo]
   }

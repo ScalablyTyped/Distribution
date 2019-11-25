@@ -22,10 +22,10 @@ object IndexSchemaJson {
     unique: js.UndefOr[Boolean] = js.undefined
   ): IndexSchemaJson = {
     val __obj = js.Dynamic.literal(keyPath = keyPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiEntry)) __obj.updateDynamic("multiEntry")(multiEntry)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)
+    if (!js.isUndefined(multiEntry)) __obj.updateDynamic("multiEntry")(multiEntry.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexSchemaJson]
   }
 }

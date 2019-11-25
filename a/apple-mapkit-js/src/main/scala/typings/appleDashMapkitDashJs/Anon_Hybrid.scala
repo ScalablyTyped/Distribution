@@ -27,7 +27,7 @@ trait Anon_Hybrid extends js.Object {
 object Anon_Hybrid {
   @scala.inline
   def apply(Hybrid: String, MutedStandard: String, Satellite: String, Standard: String): Anon_Hybrid = {
-    val __obj = js.Dynamic.literal(Hybrid = Hybrid, MutedStandard = MutedStandard, Satellite = Satellite, Standard = Standard)
+    val __obj = js.Dynamic.literal(Hybrid = Hybrid.asInstanceOf[js.Any], MutedStandard = MutedStandard.asInstanceOf[js.Any], Satellite = Satellite.asInstanceOf[js.Any], Standard = Standard.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Hybrid]
   }

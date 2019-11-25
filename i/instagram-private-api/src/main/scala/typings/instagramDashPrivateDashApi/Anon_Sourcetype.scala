@@ -13,8 +13,8 @@ trait Anon_Sourcetype extends js.Object {
 object Anon_Sourcetype {
   @scala.inline
   def apply(source_type: String, upload_id: String, video: Anon_Audiomuted = null): Anon_Sourcetype = {
-    val __obj = js.Dynamic.literal(source_type = source_type, upload_id = upload_id)
-    if (video != null) __obj.updateDynamic("video")(video)
+    val __obj = js.Dynamic.literal(source_type = source_type.asInstanceOf[js.Any], upload_id = upload_id.asInstanceOf[js.Any])
+    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Sourcetype]
   }
 }

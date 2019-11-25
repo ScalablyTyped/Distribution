@@ -21,7 +21,7 @@ trait GetBucketRequestPaymentOutput
 object GetBucketRequestPaymentOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, Payer: Requester | BucketOwner | String = null): GetBucketRequestPaymentOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     if (Payer != null) __obj.updateDynamic("Payer")(Payer.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketRequestPaymentOutput]
   }

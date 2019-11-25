@@ -1,8 +1,6 @@
 package typings.dojo.dojox.dgauges
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dojoStrings.endThickness
 import typings.dojo.dojoStrings.fill
 import typings.dojo.dojoStrings.radius
@@ -79,16 +77,64 @@ class CircularRangeIndicator () extends ScaleIndicatorBase {
   @JSName("set")
   def set_stroke(property: stroke, value: js.Object): Unit = js.native
   @JSName("watch")
-  def watch_endThickness(property: endThickness, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_endThickness(
+    property: endThickness,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_fill(property: fill, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_fill(
+    property: fill,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_radius(property: radius, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_radius(
+    property: radius,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_start(property: start, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_start(
+    property: start,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_startThickness(property: startThickness, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_startThickness(
+    property: startThickness,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_stroke(property: stroke, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_stroke(
+    property: stroke,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

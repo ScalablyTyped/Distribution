@@ -15,7 +15,7 @@ trait GuildInfo extends js.Object {
 object GuildInfo {
   @scala.inline
   def apply(icon: String, id: String, name: String, owner: Boolean, permissions: Double): GuildInfo = {
-    val __obj = js.Dynamic.literal(icon = icon, id = id, name = name, owner = owner, permissions = permissions)
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GuildInfo]
   }

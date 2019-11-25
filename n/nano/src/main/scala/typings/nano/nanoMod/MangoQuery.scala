@@ -52,17 +52,17 @@ object MangoQuery {
     update: js.UndefOr[Boolean] = js.undefined,
     use_index: String | (js.Tuple2[String, String]) = null
   ): MangoQuery = {
-    val __obj = js.Dynamic.literal(selector = selector)
-    if (bookmark != null) __obj.updateDynamic("bookmark")(bookmark)
-    if (!js.isUndefined(execution_stats)) __obj.updateDynamic("execution_stats")(execution_stats)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
+    val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
+    if (bookmark != null) __obj.updateDynamic("bookmark")(bookmark.asInstanceOf[js.Any])
+    if (!js.isUndefined(execution_stats)) __obj.updateDynamic("execution_stats")(execution_stats.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort)
-    if (!js.isUndefined(stable)) __obj.updateDynamic("stable")(stable)
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    if (!js.isUndefined(stable)) __obj.updateDynamic("stable")(stable.asInstanceOf[js.Any])
     if (stale != null) __obj.updateDynamic("stale")(stale.asInstanceOf[js.Any])
-    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update)
+    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     if (use_index != null) __obj.updateDynamic("use_index")(use_index.asInstanceOf[js.Any])
     __obj.asInstanceOf[MangoQuery]
   }

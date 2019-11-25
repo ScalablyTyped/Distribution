@@ -1,7 +1,6 @@
 package typings.dojo.dojox.mobile
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dojoStrings.`lazy`
 import typings.dojo.dojoStrings.requires
 import typings.std.HTMLElement
@@ -67,8 +66,24 @@ class Opener () extends Tooltip {
     */
   def show(node: js.Any, positions: js.Any): js.Any = js.native
   @JSName("watch")
-  def watch_lazy(property: `lazy`, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_lazy(
+    property: `lazy`,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_requires(property: requires, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_requires(
+    property: requires,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

@@ -39,7 +39,7 @@ object PushNotificationConfig {
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (types != null) __obj.updateDynamic("types")(types)
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushNotificationConfig]
   }
 }

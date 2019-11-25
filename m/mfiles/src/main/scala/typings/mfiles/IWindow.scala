@@ -41,7 +41,7 @@ object IWindow {
     Title: String,
     Width: Double
   ): IWindow = {
-    val __obj = js.Dynamic.literal(Close = js.Any.fromFunction0(Close), Events = Events, Focus = js.Any.fromFunction0(Focus), Handle = Handle, Height = Height, IsFocused = IsFocused, Maximizable = Maximizable, Maximize = js.Any.fromFunction0(Maximize), Minimizable = Minimizable, Minimize = js.Any.fromFunction0(Minimize), Resizable = Resizable, Restore = js.Any.fromFunction0(Restore), SetDefaultSize = js.Any.fromFunction3(SetDefaultSize), Title = Title, Width = Width)
+    val __obj = js.Dynamic.literal(Close = js.Any.fromFunction0(Close), Events = Events.asInstanceOf[js.Any], Focus = js.Any.fromFunction0(Focus), Handle = Handle.asInstanceOf[js.Any], Height = Height.asInstanceOf[js.Any], IsFocused = IsFocused.asInstanceOf[js.Any], Maximizable = Maximizable.asInstanceOf[js.Any], Maximize = js.Any.fromFunction0(Maximize), Minimizable = Minimizable.asInstanceOf[js.Any], Minimize = js.Any.fromFunction0(Minimize), Resizable = Resizable.asInstanceOf[js.Any], Restore = js.Any.fromFunction0(Restore), SetDefaultSize = js.Any.fromFunction3(SetDefaultSize), Title = Title.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IWindow]
   }

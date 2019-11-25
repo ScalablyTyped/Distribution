@@ -18,8 +18,8 @@ object QueryTestablePermissionsResponse {
   @scala.inline
   def apply(nextPageToken: String = null, permissions: js.Array[Permission] = null): QueryTestablePermissionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryTestablePermissionsResponse]
   }
 }

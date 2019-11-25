@@ -23,7 +23,7 @@ object DisableServiceRequest {
   @scala.inline
   def apply(consumerId: String = null): DisableServiceRequest = {
     val __obj = js.Dynamic.literal()
-    if (consumerId != null) __obj.updateDynamic("consumerId")(consumerId)
+    if (consumerId != null) __obj.updateDynamic("consumerId")(consumerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisableServiceRequest]
   }
 }

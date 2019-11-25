@@ -16,7 +16,7 @@ object Anon_CommandBarStore {
     CommandBar: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any,
     Store: Store
   ): Anon_CommandBarStore = {
-    val __obj = js.Dynamic.literal(CommandBar = CommandBar, Store = Store)
+    val __obj = js.Dynamic.literal(CommandBar = CommandBar.asInstanceOf[js.Any], Store = Store.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CommandBarStore]
   }

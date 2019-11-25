@@ -20,10 +20,10 @@ object OrdersSetLineItemMetadataRequest {
     productId: String = null
   ): OrdersSetLineItemMetadataRequest = {
     val __obj = js.Dynamic.literal()
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations)
-    if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId)
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
+    if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId.asInstanceOf[js.Any])
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrdersSetLineItemMetadataRequest]
   }
 }

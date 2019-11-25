@@ -12,7 +12,7 @@ trait SizeAndPositionData extends js.Object {
 object SizeAndPositionData {
   @scala.inline
   def apply(offset: Double, size: Double): SizeAndPositionData = {
-    val __obj = js.Dynamic.literal(offset = offset, size = size)
+    val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SizeAndPositionData]
   }

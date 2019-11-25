@@ -13,8 +13,8 @@ object DialogflowV1FollowupEvent {
   @scala.inline
   def apply(data: DialogflowV1Parameters = null, name: String = null): DialogflowV1FollowupEvent = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogflowV1FollowupEvent]
   }
 }

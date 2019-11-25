@@ -15,8 +15,8 @@ trait Anon_CountOp extends _UnionSortField {
 object Anon_CountOp {
   @scala.inline
   def apply(op: count, order: SortOrder = null): Anon_CountOp = {
-    val __obj = js.Dynamic.literal(op = op)
-    if (order != null) __obj.updateDynamic("order")(order)
+    val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CountOp]
   }
 }

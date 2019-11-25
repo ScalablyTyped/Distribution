@@ -13,7 +13,7 @@ trait Anon_ProductHeaderValue extends js.Object {
 object Anon_ProductHeaderValue {
   @scala.inline
   def apply(productHeaderValue: HttpProductHeaderValue, returnValue: Boolean): Anon_ProductHeaderValue = {
-    val __obj = js.Dynamic.literal(productHeaderValue = productHeaderValue, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(productHeaderValue = productHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ProductHeaderValue]
   }

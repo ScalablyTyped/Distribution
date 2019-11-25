@@ -51,7 +51,7 @@ object IOAuthToken {
     stripe_user_id: String,
     token_type: bearer
   ): IOAuthToken = {
-    val __obj = js.Dynamic.literal(access_token = access_token, livemode = livemode, refresh_token = refresh_token, scope = scope, stripe_publishable_key = stripe_publishable_key, stripe_user_id = stripe_user_id, token_type = token_type)
+    val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], refresh_token = refresh_token.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], stripe_publishable_key = stripe_publishable_key.asInstanceOf[js.Any], stripe_user_id = stripe_user_id.asInstanceOf[js.Any], token_type = token_type.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOAuthToken]
   }

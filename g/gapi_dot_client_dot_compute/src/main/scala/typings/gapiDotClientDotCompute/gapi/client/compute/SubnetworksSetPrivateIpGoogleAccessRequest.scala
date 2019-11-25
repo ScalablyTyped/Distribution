@@ -12,7 +12,7 @@ object SubnetworksSetPrivateIpGoogleAccessRequest {
   @scala.inline
   def apply(privateIpGoogleAccess: js.UndefOr[Boolean] = js.undefined): SubnetworksSetPrivateIpGoogleAccessRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(privateIpGoogleAccess)) __obj.updateDynamic("privateIpGoogleAccess")(privateIpGoogleAccess)
+    if (!js.isUndefined(privateIpGoogleAccess)) __obj.updateDynamic("privateIpGoogleAccess")(privateIpGoogleAccess.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubnetworksSetPrivateIpGoogleAccessRequest]
   }
 }

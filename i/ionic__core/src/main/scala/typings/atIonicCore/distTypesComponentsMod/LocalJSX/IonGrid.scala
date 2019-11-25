@@ -15,7 +15,7 @@ object IonGrid {
   @scala.inline
   def apply(fixed: js.UndefOr[Boolean] = js.undefined): IonGrid = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed)
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonGrid]
   }
 }

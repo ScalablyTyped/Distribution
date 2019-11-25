@@ -12,7 +12,7 @@ trait IndirectOptions extends js.Object {
 object IndirectOptions {
   @scala.inline
   def apply(identifier: String, institution: String): IndirectOptions = {
-    val __obj = js.Dynamic.literal(identifier = identifier, institution = institution)
+    val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], institution = institution.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IndirectOptions]
   }

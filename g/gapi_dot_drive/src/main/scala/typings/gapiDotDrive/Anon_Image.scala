@@ -13,7 +13,7 @@ trait Anon_Image extends js.Object {
 object Anon_Image {
   @scala.inline
   def apply(image: Uint8Array, mimType: String): Anon_Image = {
-    val __obj = js.Dynamic.literal(image = image, mimType = mimType)
+    val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], mimType = mimType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Image]
   }

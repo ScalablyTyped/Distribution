@@ -45,16 +45,16 @@ object WebGLRenderTargetOptions {
   ): WebGLRenderTargetOptions = {
     val __obj = js.Dynamic.literal()
     if (anisotropy != null) __obj.updateDynamic("anisotropy")(anisotropy.asInstanceOf[js.Any])
-    if (!js.isUndefined(depthBuffer)) __obj.updateDynamic("depthBuffer")(depthBuffer)
-    if (depthTexture != null) __obj.updateDynamic("depthTexture")(depthTexture)
+    if (!js.isUndefined(depthBuffer)) __obj.updateDynamic("depthBuffer")(depthBuffer.asInstanceOf[js.Any])
+    if (depthTexture != null) __obj.updateDynamic("depthTexture")(depthTexture.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(generateMipmaps)) __obj.updateDynamic("generateMipmaps")(generateMipmaps)
-    if (magFilter != null) __obj.updateDynamic("magFilter")(magFilter)
-    if (minFilter != null) __obj.updateDynamic("minFilter")(minFilter)
-    if (!js.isUndefined(stencilBuffer)) __obj.updateDynamic("stencilBuffer")(stencilBuffer)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (wrapS != null) __obj.updateDynamic("wrapS")(wrapS)
-    if (wrapT != null) __obj.updateDynamic("wrapT")(wrapT)
+    if (!js.isUndefined(generateMipmaps)) __obj.updateDynamic("generateMipmaps")(generateMipmaps.asInstanceOf[js.Any])
+    if (magFilter != null) __obj.updateDynamic("magFilter")(magFilter.asInstanceOf[js.Any])
+    if (minFilter != null) __obj.updateDynamic("minFilter")(minFilter.asInstanceOf[js.Any])
+    if (!js.isUndefined(stencilBuffer)) __obj.updateDynamic("stencilBuffer")(stencilBuffer.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (wrapS != null) __obj.updateDynamic("wrapS")(wrapS.asInstanceOf[js.Any])
+    if (wrapT != null) __obj.updateDynamic("wrapT")(wrapT.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebGLRenderTargetOptions]
   }
 }

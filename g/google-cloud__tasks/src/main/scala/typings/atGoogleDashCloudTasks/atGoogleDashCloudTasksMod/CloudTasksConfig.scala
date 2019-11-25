@@ -26,12 +26,12 @@ object CloudTasksConfig {
     promise: PromiseConstructor = null
   ): CloudTasksConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoRetry)) __obj.updateDynamic("autoRetry")(autoRetry)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (libName != null) __obj.updateDynamic("libName")(libName)
-    if (libVersion != null) __obj.updateDynamic("libVersion")(libVersion)
+    if (!js.isUndefined(autoRetry)) __obj.updateDynamic("autoRetry")(autoRetry.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (libName != null) __obj.updateDynamic("libName")(libName.asInstanceOf[js.Any])
+    if (libVersion != null) __obj.updateDynamic("libVersion")(libVersion.asInstanceOf[js.Any])
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (promise != null) __obj.updateDynamic("promise")(promise)
+    if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudTasksConfig]
   }
 }

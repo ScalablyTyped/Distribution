@@ -1,6 +1,6 @@
 package typings.chromeDashApps
 
-import typings.chromeDashApps.chromeDashAppsStrings.read
+import typings.chromeDashApps.chromeDashAppsStrings.read_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait Anon_Defaulticon extends js.Object {
   /** What the button will display */
   var default_title: String
   /** ['read'] = read only mode */
-  var file_access: js.UndefOr[js.Array[read | String]] = js.undefined
+  var file_access: js.UndefOr[js.Array[read_ | String]] = js.undefined
   /**
     * To match all files, use 'filesystem:*.*'
     */
@@ -27,10 +27,10 @@ object Anon_Defaulticon {
     default_title: String,
     file_filters: js.Array[String],
     id: String,
-    file_access: js.Array[read | String] = null
+    file_access: js.Array[read_ | String] = null
   ): Anon_Defaulticon = {
-    val __obj = js.Dynamic.literal(default_icon = default_icon, default_title = default_title, file_filters = file_filters, id = id)
-    if (file_access != null) __obj.updateDynamic("file_access")(file_access)
+    val __obj = js.Dynamic.literal(default_icon = default_icon.asInstanceOf[js.Any], default_title = default_title.asInstanceOf[js.Any], file_filters = file_filters.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    if (file_access != null) __obj.updateDynamic("file_access")(file_access.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Defaulticon]
   }
 }

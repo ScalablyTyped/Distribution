@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait SameSiteSetting extends js.Object
 
+object SameSiteSetting {
+  @scala.inline
+  def Lax: typings.puppeteer.puppeteerStrings.Lax = this.cast("Lax")
+  @scala.inline
+  def Strict: typings.puppeteer.puppeteerStrings.Strict = this.cast("Strict")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

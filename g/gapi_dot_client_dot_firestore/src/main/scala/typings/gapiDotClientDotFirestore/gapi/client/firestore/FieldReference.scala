@@ -12,7 +12,7 @@ object FieldReference {
   @scala.inline
   def apply(fieldPath: String = null): FieldReference = {
     val __obj = js.Dynamic.literal()
-    if (fieldPath != null) __obj.updateDynamic("fieldPath")(fieldPath)
+    if (fieldPath != null) __obj.updateDynamic("fieldPath")(fieldPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldReference]
   }
 }

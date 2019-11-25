@@ -12,7 +12,7 @@ trait Anon_Algorithm extends js.Object {
 object Anon_Algorithm {
   @scala.inline
   def apply(algorithm: String, digest: String): Anon_Algorithm = {
-    val __obj = js.Dynamic.literal(algorithm = algorithm, digest = digest)
+    val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], digest = digest.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Algorithm]
   }

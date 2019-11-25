@@ -20,10 +20,10 @@ object Event {
     `type`: String = null
   ): Event = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (formattedType != null) __obj.updateDynamic("formattedType")(formattedType)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (formattedType != null) __obj.updateDynamic("formattedType")(formattedType.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
 }

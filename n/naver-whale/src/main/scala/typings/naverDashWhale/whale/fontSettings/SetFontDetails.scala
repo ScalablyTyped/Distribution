@@ -13,8 +13,8 @@ trait SetFontDetails
 object SetFontDetails {
   @scala.inline
   def apply(fontId: String, genericFamily: String, script: String = null): SetFontDetails = {
-    val __obj = js.Dynamic.literal(fontId = fontId, genericFamily = genericFamily)
-    if (script != null) __obj.updateDynamic("script")(script)
+    val __obj = js.Dynamic.literal(fontId = fontId.asInstanceOf[js.Any], genericFamily = genericFamily.asInstanceOf[js.Any])
+    if (script != null) __obj.updateDynamic("script")(script.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetFontDetails]
   }
 }

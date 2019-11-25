@@ -14,7 +14,7 @@ trait CellAddress extends js.Object {
 object CellAddress {
   @scala.inline
   def apply(c: Double, r: Double): CellAddress = {
-    val __obj = js.Dynamic.literal(c = c, r = r)
+    val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CellAddress]
   }

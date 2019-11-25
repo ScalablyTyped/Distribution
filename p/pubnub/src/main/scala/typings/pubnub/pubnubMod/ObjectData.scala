@@ -23,8 +23,8 @@ object ObjectData {
     updated: String,
     custom: StringDictionary[String] = null
   ): ObjectData = {
-    val __obj = js.Dynamic.literal(created = created, eTag = eTag, id = id, updated = updated)
-    if (custom != null) __obj.updateDynamic("custom")(custom)
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], eTag = eTag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectData]
   }
 }

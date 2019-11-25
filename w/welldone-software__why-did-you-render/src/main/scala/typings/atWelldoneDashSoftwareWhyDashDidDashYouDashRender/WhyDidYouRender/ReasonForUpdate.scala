@@ -13,7 +13,7 @@ trait ReasonForUpdate extends js.Object {
 object ReasonForUpdate {
   @scala.inline
   def apply(hookDifferences: js.Array[HookDifference], propsDifferences: Boolean, stateDifferences: Boolean): ReasonForUpdate = {
-    val __obj = js.Dynamic.literal(hookDifferences = hookDifferences, propsDifferences = propsDifferences, stateDifferences = stateDifferences)
+    val __obj = js.Dynamic.literal(hookDifferences = hookDifferences.asInstanceOf[js.Any], propsDifferences = propsDifferences.asInstanceOf[js.Any], stateDifferences = stateDifferences.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReasonForUpdate]
   }

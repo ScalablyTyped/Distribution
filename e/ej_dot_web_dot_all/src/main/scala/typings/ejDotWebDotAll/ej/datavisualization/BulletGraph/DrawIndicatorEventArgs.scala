@@ -28,10 +28,10 @@ object DrawIndicatorEventArgs {
     `type`: String = null
   ): DrawIndicatorEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (indicatorSettings != null) __obj.updateDynamic("indicatorSettings")(indicatorSettings)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (indicatorSettings != null) __obj.updateDynamic("indicatorSettings")(indicatorSettings.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawIndicatorEventArgs]
   }
 }

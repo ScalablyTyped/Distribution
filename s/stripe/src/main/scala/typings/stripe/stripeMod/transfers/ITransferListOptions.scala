@@ -35,13 +35,13 @@ object ITransferListOptions {
     val __obj = js.Dynamic.literal()
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (destination != null) __obj.updateDynamic("destination")(destination)
-    if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (include != null) __obj.updateDynamic("include")(include)
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after)
-    if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group)
+    if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after.asInstanceOf[js.Any])
+    if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITransferListOptions]
   }
 }

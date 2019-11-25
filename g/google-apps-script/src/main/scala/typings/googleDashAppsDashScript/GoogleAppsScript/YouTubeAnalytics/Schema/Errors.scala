@@ -14,9 +14,9 @@ object Errors {
   @scala.inline
   def apply(code: String = null, error: js.Array[ErrorProto] = null, requestId: String = null): Errors = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Errors]
   }
 }

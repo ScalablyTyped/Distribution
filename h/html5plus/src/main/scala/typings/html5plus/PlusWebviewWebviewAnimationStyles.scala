@@ -32,8 +32,8 @@ object PlusWebviewWebviewAnimationStyles {
   @scala.inline
   def apply(fromLeft: String = null, toLeft: String = null): PlusWebviewWebviewAnimationStyles = {
     val __obj = js.Dynamic.literal()
-    if (fromLeft != null) __obj.updateDynamic("fromLeft")(fromLeft)
-    if (toLeft != null) __obj.updateDynamic("toLeft")(toLeft)
+    if (fromLeft != null) __obj.updateDynamic("fromLeft")(fromLeft.asInstanceOf[js.Any])
+    if (toLeft != null) __obj.updateDynamic("toLeft")(toLeft.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewAnimationStyles]
   }
 }

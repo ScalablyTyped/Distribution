@@ -15,8 +15,8 @@ trait DownloadResult extends js.Object {
 object DownloadResult {
   @scala.inline
   def apply(headers: StringDictionary[String], status: Double, uri: String, md5: String = null): DownloadResult = {
-    val __obj = js.Dynamic.literal(headers = headers, status = status, uri = uri)
-    if (md5 != null) __obj.updateDynamic("md5")(md5)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    if (md5 != null) __obj.updateDynamic("md5")(md5.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadResult]
   }
 }

@@ -13,7 +13,7 @@ trait Interval extends js.Object {
 object Interval {
   @scala.inline
   def apply(endTime: Moment, startTime: Moment): Interval = {
-    val __obj = js.Dynamic.literal(endTime = endTime, startTime = startTime)
+    val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Interval]
   }

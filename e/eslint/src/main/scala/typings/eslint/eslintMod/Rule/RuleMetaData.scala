@@ -32,10 +32,10 @@ object RuleMetaData {
     `type`: problem | suggestion | layout = null
   ): RuleMetaData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated)
-    if (docs != null) __obj.updateDynamic("docs")(docs)
+    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (docs != null) __obj.updateDynamic("docs")(docs.asInstanceOf[js.Any])
     if (fixable != null) __obj.updateDynamic("fixable")(fixable.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleMetaData]

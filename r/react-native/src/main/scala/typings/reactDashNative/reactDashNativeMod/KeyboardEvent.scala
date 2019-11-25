@@ -21,7 +21,7 @@ object KeyboardEvent {
     isEventFromThisApp: Boolean,
     startCoordinates: ScreenRect
   ): KeyboardEvent = {
-    val __obj = js.Dynamic.literal(duration = duration, easing = easing, endCoordinates = endCoordinates, isEventFromThisApp = isEventFromThisApp, startCoordinates = startCoordinates)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any], endCoordinates = endCoordinates.asInstanceOf[js.Any], isEventFromThisApp = isEventFromThisApp.asInstanceOf[js.Any], startCoordinates = startCoordinates.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KeyboardEvent]
   }

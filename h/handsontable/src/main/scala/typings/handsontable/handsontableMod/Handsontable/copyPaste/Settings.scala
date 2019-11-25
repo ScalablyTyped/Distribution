@@ -16,7 +16,7 @@ object Settings {
   def apply(columnsLimit: Int | Double = null, pasteMode: PasteModeType = null, rowsLimit: Int | Double = null): Settings = {
     val __obj = js.Dynamic.literal()
     if (columnsLimit != null) __obj.updateDynamic("columnsLimit")(columnsLimit.asInstanceOf[js.Any])
-    if (pasteMode != null) __obj.updateDynamic("pasteMode")(pasteMode)
+    if (pasteMode != null) __obj.updateDynamic("pasteMode")(pasteMode.asInstanceOf[js.Any])
     if (rowsLimit != null) __obj.updateDynamic("rowsLimit")(rowsLimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }

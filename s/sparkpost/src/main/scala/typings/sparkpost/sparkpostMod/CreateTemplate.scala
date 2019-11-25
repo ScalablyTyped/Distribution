@@ -37,11 +37,11 @@ object CreateTemplate {
     published: js.UndefOr[Boolean] = js.undefined
   ): CreateTemplate = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (!js.isUndefined(published)) __obj.updateDynamic("published")(published)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (!js.isUndefined(published)) __obj.updateDynamic("published")(published.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTemplate]
   }
 }

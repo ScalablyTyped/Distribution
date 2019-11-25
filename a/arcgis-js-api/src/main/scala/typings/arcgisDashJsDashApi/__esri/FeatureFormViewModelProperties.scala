@@ -41,10 +41,10 @@ object FeatureFormViewModelProperties {
     valid: js.UndefOr[Boolean] = js.undefined
   ): FeatureFormViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (feature != null) __obj.updateDynamic("feature")(feature)
-    if (fieldConfig != null) __obj.updateDynamic("fieldConfig")(fieldConfig)
-    if (layer != null) __obj.updateDynamic("layer")(layer)
-    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid)
+    if (feature != null) __obj.updateDynamic("feature")(feature.asInstanceOf[js.Any])
+    if (fieldConfig != null) __obj.updateDynamic("fieldConfig")(fieldConfig.asInstanceOf[js.Any])
+    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
+    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureFormViewModelProperties]
   }
 }

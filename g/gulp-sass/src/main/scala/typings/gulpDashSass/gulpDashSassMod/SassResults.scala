@@ -14,7 +14,7 @@ trait SassResults extends js.Object {
 object SassResults {
   @scala.inline
   def apply(css: String, map: String, stats: Anon_Duration): SassResults = {
-    val __obj = js.Dynamic.literal(css = css, map = map, stats = stats)
+    val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SassResults]
   }

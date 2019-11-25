@@ -12,7 +12,7 @@ object TableFieldSchemaCategories {
   @scala.inline
   def apply(names: js.Array[String] = null): TableFieldSchemaCategories = {
     val __obj = js.Dynamic.literal()
-    if (names != null) __obj.updateDynamic("names")(names)
+    if (names != null) __obj.updateDynamic("names")(names.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableFieldSchemaCategories]
   }
 }

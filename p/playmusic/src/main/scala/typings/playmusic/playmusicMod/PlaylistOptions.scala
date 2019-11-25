@@ -14,7 +14,7 @@ object PlaylistOptions {
   def apply(limit: Int | Double = null, nextPageToken: String = null): PlaylistOptions = {
     val __obj = js.Dynamic.literal()
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaylistOptions]
   }
 }

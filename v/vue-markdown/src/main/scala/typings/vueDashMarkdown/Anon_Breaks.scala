@@ -29,7 +29,7 @@ object Anon_Breaks {
     typographer: Boolean,
     xhtmlOut: Boolean
   ): Anon_Breaks = {
-    val __obj = js.Dynamic.literal(breaks = breaks, highlight = highlight, html = html, langPrefix = langPrefix, linkify = linkify, maxNesting = maxNesting, quotes = quotes, typographer = typographer, xhtmlOut = xhtmlOut)
+    val __obj = js.Dynamic.literal(breaks = breaks.asInstanceOf[js.Any], highlight = highlight.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], langPrefix = langPrefix.asInstanceOf[js.Any], linkify = linkify.asInstanceOf[js.Any], maxNesting = maxNesting.asInstanceOf[js.Any], quotes = quotes.asInstanceOf[js.Any], typographer = typographer.asInstanceOf[js.Any], xhtmlOut = xhtmlOut.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Breaks]
   }

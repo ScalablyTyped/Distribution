@@ -36,7 +36,7 @@ object AuthenticateParameters {
     successCallback: /* result */ js.UndefOr[String] => Unit = null,
     width: Int | Double = null
   ): AuthenticateParameters = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (failureCallback != null) __obj.updateDynamic("failureCallback")(js.Any.fromFunction1(failureCallback))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (successCallback != null) __obj.updateDynamic("successCallback")(js.Any.fromFunction1(successCallback))

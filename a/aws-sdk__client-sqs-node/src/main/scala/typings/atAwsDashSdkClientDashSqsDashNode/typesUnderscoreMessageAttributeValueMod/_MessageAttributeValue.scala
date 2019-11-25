@@ -41,11 +41,11 @@ object _MessageAttributeValue {
     StringListValues: js.Array[String] | Iterable[String] = null,
     StringValue: String = null
   ): _MessageAttributeValue = {
-    val __obj = js.Dynamic.literal(DataType = DataType)
+    val __obj = js.Dynamic.literal(DataType = DataType.asInstanceOf[js.Any])
     if (BinaryListValues != null) __obj.updateDynamic("BinaryListValues")(BinaryListValues.asInstanceOf[js.Any])
     if (BinaryValue != null) __obj.updateDynamic("BinaryValue")(BinaryValue.asInstanceOf[js.Any])
     if (StringListValues != null) __obj.updateDynamic("StringListValues")(StringListValues.asInstanceOf[js.Any])
-    if (StringValue != null) __obj.updateDynamic("StringValue")(StringValue)
+    if (StringValue != null) __obj.updateDynamic("StringValue")(StringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[_MessageAttributeValue]
   }
 }

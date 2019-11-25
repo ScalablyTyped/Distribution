@@ -36,18 +36,18 @@ object OpenGraph {
     url: String = null
   ): OpenGraph = {
     val __obj = js.Dynamic.literal()
-    if (article != null) __obj.updateDynamic("article")(article)
-    if (book != null) __obj.updateDynamic("book")(book)
+    if (article != null) __obj.updateDynamic("article")(article.asInstanceOf[js.Any])
+    if (book != null) __obj.updateDynamic("book")(book.asInstanceOf[js.Any])
     if (defaultImageHeight != null) __obj.updateDynamic("defaultImageHeight")(defaultImageHeight.asInstanceOf[js.Any])
     if (defaultImageWidth != null) __obj.updateDynamic("defaultImageWidth")(defaultImageWidth.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (images != null) __obj.updateDynamic("images")(images)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (profile != null) __obj.updateDynamic("profile")(profile)
-    if (site_name != null) __obj.updateDynamic("site_name")(site_name)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
+    if (site_name != null) __obj.updateDynamic("site_name")(site_name.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenGraph]
   }
 }

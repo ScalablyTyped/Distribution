@@ -22,9 +22,9 @@ object Anon_ColorContinent {
   ): Anon_ColorContinent = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (continent != null) __obj.updateDynamic("continent")(continent)
-    if (hover != null) __obj.updateDynamic("hover")(hover)
-    if (place != null) __obj.updateDynamic("place")(place)
+    if (continent != null) __obj.updateDynamic("continent")(continent.asInstanceOf[js.Any])
+    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
+    if (place != null) __obj.updateDynamic("place")(place.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorContinent]
   }
 }

@@ -24,12 +24,12 @@ object ButtonGroupOptions {
     selection: String = null
   ): ButtonGroupOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
-    if (selection != null) __obj.updateDynamic("selection")(selection)
+    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonGroupOptions]
   }
 }

@@ -54,18 +54,18 @@ object ElementDefinitionSlicing {
     id: String = null,
     ordered: js.UndefOr[Boolean] = js.undefined
   ): ElementDefinitionSlicing = {
-    val __obj = js.Dynamic.literal(rules = rules)
-    if (_description != null) __obj.updateDynamic("_description")(_description)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_ordered != null) __obj.updateDynamic("_ordered")(_ordered)
-    if (_rules != null) __obj.updateDynamic("_rules")(_rules)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (discriminator != null) __obj.updateDynamic("discriminator")(discriminator)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered)
+    val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
+    if (_description != null) __obj.updateDynamic("_description")(_description.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_ordered != null) __obj.updateDynamic("_ordered")(_ordered.asInstanceOf[js.Any])
+    if (_rules != null) __obj.updateDynamic("_rules")(_rules.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (discriminator != null) __obj.updateDynamic("discriminator")(discriminator.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementDefinitionSlicing]
   }
 }

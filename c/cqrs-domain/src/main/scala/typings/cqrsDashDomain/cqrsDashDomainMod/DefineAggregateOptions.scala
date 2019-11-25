@@ -57,13 +57,13 @@ object DefineAggregateOptions {
     version: Int | Double = null
   ): DefineAggregateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(applyLastEvent)) __obj.updateDynamic("applyLastEvent")(applyLastEvent)
-    if (defaultCommandPayload != null) __obj.updateDynamic("defaultCommandPayload")(defaultCommandPayload)
-    if (defaultEventPayload != null) __obj.updateDynamic("defaultEventPayload")(defaultEventPayload)
-    if (defaultPreConditionPayload != null) __obj.updateDynamic("defaultPreConditionPayload")(defaultPreConditionPayload)
-    if (!js.isUndefined(disablePersistence)) __obj.updateDynamic("disablePersistence")(disablePersistence)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(skipHistory)) __obj.updateDynamic("skipHistory")(skipHistory)
+    if (!js.isUndefined(applyLastEvent)) __obj.updateDynamic("applyLastEvent")(applyLastEvent.asInstanceOf[js.Any])
+    if (defaultCommandPayload != null) __obj.updateDynamic("defaultCommandPayload")(defaultCommandPayload.asInstanceOf[js.Any])
+    if (defaultEventPayload != null) __obj.updateDynamic("defaultEventPayload")(defaultEventPayload.asInstanceOf[js.Any])
+    if (defaultPreConditionPayload != null) __obj.updateDynamic("defaultPreConditionPayload")(defaultPreConditionPayload.asInstanceOf[js.Any])
+    if (!js.isUndefined(disablePersistence)) __obj.updateDynamic("disablePersistence")(disablePersistence.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipHistory)) __obj.updateDynamic("skipHistory")(skipHistory.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineAggregateOptions]
   }

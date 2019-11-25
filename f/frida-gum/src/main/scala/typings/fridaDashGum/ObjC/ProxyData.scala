@@ -15,8 +15,8 @@ trait ProxyData extends InstanceData {
 object ProxyData {
   @scala.inline
   def apply(target: Object, StringDictionary: StringDictionary[js.Any] = null): ProxyData = {
-    val __obj = js.Dynamic.literal(target = target)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ProxyData]
   }
 }

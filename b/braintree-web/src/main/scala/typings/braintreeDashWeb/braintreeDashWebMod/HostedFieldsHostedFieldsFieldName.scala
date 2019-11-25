@@ -36,3 +36,20 @@ import scala.scalajs.js.annotation._
 */
 trait HostedFieldsHostedFieldsFieldName extends js.Object
 
+object HostedFieldsHostedFieldsFieldName {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def cvv: typings.braintreeDashWeb.braintreeDashWebStrings.cvv = this.cast("cvv")
+  @scala.inline
+  def expirationDate: typings.braintreeDashWeb.braintreeDashWebStrings.expirationDate = this.cast("expirationDate")
+  @scala.inline
+  def expirationMonth: typings.braintreeDashWeb.braintreeDashWebStrings.expirationMonth = this.cast("expirationMonth")
+  @scala.inline
+  def expirationYear: typings.braintreeDashWeb.braintreeDashWebStrings.expirationYear = this.cast("expirationYear")
+  @scala.inline
+  def number: typings.braintreeDashWeb.braintreeDashWebStrings.number = this.cast("number")
+  @scala.inline
+  def postalCode: typings.braintreeDashWeb.braintreeDashWebStrings.postalCode = this.cast("postalCode")
+}
+

@@ -17,7 +17,7 @@ object Anon_Fit {
     unfit: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias typescript-tuple.typescript-tuple/lib/utils.Repeat<Type, Count, typescript-tuple.typescript-tuple/lib/utils.Prepend<Holder, Type>> */ js.Object,
     union: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias typescript-tuple.typescript-tuple/lib/utils.Repeat<Type, Holder['length'], []> */ js.Object
   ): Anon_Fit[Holder, Count] = {
-    val __obj = js.Dynamic.literal(fit = fit.asInstanceOf[js.Any], unfit = unfit, union = union)
+    val __obj = js.Dynamic.literal(fit = fit.asInstanceOf[js.Any], unfit = unfit.asInstanceOf[js.Any], union = union.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Fit[Holder, Count]]
   }

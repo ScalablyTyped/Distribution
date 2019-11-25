@@ -13,7 +13,7 @@ object IScrollablePaneContext {
   @scala.inline
   def apply(scrollablePane: Anon_AddSticky = null): IScrollablePaneContext = {
     val __obj = js.Dynamic.literal()
-    if (scrollablePane != null) __obj.updateDynamic("scrollablePane")(scrollablePane)
+    if (scrollablePane != null) __obj.updateDynamic("scrollablePane")(scrollablePane.asInstanceOf[js.Any])
     __obj.asInstanceOf[IScrollablePaneContext]
   }
 }

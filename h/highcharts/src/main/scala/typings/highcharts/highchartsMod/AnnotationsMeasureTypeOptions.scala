@@ -53,13 +53,13 @@ object AnnotationsMeasureTypeOptions {
     yAxis: Int | Double = null
   ): AnnotationsMeasureTypeOptions = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (crosshairX != null) __obj.updateDynamic("crosshairX")(crosshairX)
-    if (crosshairY != null) __obj.updateDynamic("crosshairY")(crosshairY)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (line != null) __obj.updateDynamic("line")(line)
-    if (points != null) __obj.updateDynamic("points")(points)
-    if (selectType != null) __obj.updateDynamic("selectType")(selectType)
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (crosshairX != null) __obj.updateDynamic("crosshairX")(crosshairX.asInstanceOf[js.Any])
+    if (crosshairY != null) __obj.updateDynamic("crosshairY")(crosshairY.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
+    if (selectType != null) __obj.updateDynamic("selectType")(selectType.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
     if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsMeasureTypeOptions]

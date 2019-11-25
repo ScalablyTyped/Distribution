@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "graphql-tools"
-version := "4.0.6-a91b24"
+version := "4.0.6-ca9fe0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.13-f78773",
-  "org.scalablytyped" %%% "graphql" % "14.5.8-bafd12",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf",
-  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.20-685134")
+  "org.scalablytyped" %%% "apollo-link" % "1.2.13-aaa86d",
+  "org.scalablytyped" %%% "graphql" % "14.5.8-933f73",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d",
+  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.20-760cc5")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

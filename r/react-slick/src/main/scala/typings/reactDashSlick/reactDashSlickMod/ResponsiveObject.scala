@@ -13,7 +13,7 @@ trait ResponsiveObject extends js.Object {
 object ResponsiveObject {
   @scala.inline
   def apply(breakpoint: Double, settings: unslick | Settings): ResponsiveObject = {
-    val __obj = js.Dynamic.literal(breakpoint = breakpoint, settings = settings.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(breakpoint = breakpoint.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResponsiveObject]
   }

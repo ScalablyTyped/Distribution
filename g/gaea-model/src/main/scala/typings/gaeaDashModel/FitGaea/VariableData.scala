@@ -17,7 +17,7 @@ trait VariableData extends js.Object {
 object VariableData {
   @scala.inline
   def apply(valueType: String, variableField: String, variableType: String): VariableData = {
-    val __obj = js.Dynamic.literal(valueType = valueType, variableField = variableField, variableType = variableType)
+    val __obj = js.Dynamic.literal(valueType = valueType.asInstanceOf[js.Any], variableField = variableField.asInstanceOf[js.Any], variableType = variableType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VariableData]
   }

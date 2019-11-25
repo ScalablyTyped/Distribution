@@ -13,8 +13,8 @@ trait ToastrState extends js.Object {
 object ToastrState {
   @scala.inline
   def apply(toastrs: js.Array[Toastr], confirm: Anon_Id = null): ToastrState = {
-    val __obj = js.Dynamic.literal(toastrs = toastrs)
-    if (confirm != null) __obj.updateDynamic("confirm")(confirm)
+    val __obj = js.Dynamic.literal(toastrs = toastrs.asInstanceOf[js.Any])
+    if (confirm != null) __obj.updateDynamic("confirm")(confirm.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToastrState]
   }
 }

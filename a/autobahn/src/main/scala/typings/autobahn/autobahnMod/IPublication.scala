@@ -11,7 +11,7 @@ trait IPublication extends js.Object {
 object IPublication {
   @scala.inline
   def apply(id: Double): IPublication = {
-    val __obj = js.Dynamic.literal(id = id)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPublication]
   }

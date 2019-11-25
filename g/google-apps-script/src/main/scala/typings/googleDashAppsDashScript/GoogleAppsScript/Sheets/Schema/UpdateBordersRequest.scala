@@ -26,13 +26,13 @@ object UpdateBordersRequest {
     top: Border = null
   ): UpdateBordersRequest = {
     val __obj = js.Dynamic.literal()
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom)
-    if (innerHorizontal != null) __obj.updateDynamic("innerHorizontal")(innerHorizontal)
-    if (innerVertical != null) __obj.updateDynamic("innerVertical")(innerVertical)
-    if (left != null) __obj.updateDynamic("left")(left)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (right != null) __obj.updateDynamic("right")(right)
-    if (top != null) __obj.updateDynamic("top")(top)
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (innerHorizontal != null) __obj.updateDynamic("innerHorizontal")(innerHorizontal.asInstanceOf[js.Any])
+    if (innerVertical != null) __obj.updateDynamic("innerVertical")(innerVertical.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateBordersRequest]
   }
 }

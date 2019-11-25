@@ -28,12 +28,12 @@ object Anon_BodyCommentsInit {
     test: ExpressionKind = null,
     update: ExpressionKind = null
   ): Anon_BodyCommentsInit = {
-    val __obj = js.Dynamic.literal(body = body)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (test != null) __obj.updateDynamic("test")(test)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BodyCommentsInit]
   }
 }

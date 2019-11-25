@@ -8,7 +8,7 @@ package object loginDashWithDashAmazonDashSdkDashBrowser {
   import typings.std.Partial
 
   type AuthorizeScope = AuthorizationScopeOptions | js.Array[AuthorizationScopeOptions]
-  type AuthorizeScopeData = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type AuthorizeScopeData = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ scope in login-with-amazon-sdk-browser.AuthorizationScopeOptions ]:? {  essential  :boolean}}
     */ typings.loginDashWithDashAmazonDashSdkDashBrowser.loginDashWithDashAmazonDashSdkDashBrowserStrings.AuthorizeScopeData with js.Any
   /**

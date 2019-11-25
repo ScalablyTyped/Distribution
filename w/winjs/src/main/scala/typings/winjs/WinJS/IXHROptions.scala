@@ -30,14 +30,14 @@ object IXHROptions {
     `type`: String = null,
     user: String = null
   ): IXHROptions = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (customRequestInitializer != null) __obj.updateDynamic("customRequestInitializer")(js.Any.fromFunction1(customRequestInitializer))
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[IXHROptions]
   }
 }

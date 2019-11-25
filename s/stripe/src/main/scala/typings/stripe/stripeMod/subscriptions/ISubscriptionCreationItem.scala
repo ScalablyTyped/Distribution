@@ -34,9 +34,9 @@ object ISubscriptionCreationItem {
     metadata: IOptionsMetadata = null,
     quantity: Int | Double = null
   ): ISubscriptionCreationItem = {
-    val __obj = js.Dynamic.literal(plan = plan)
-    if (billing_thresholds != null) __obj.updateDynamic("billing_thresholds")(billing_thresholds)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(plan = plan.asInstanceOf[js.Any])
+    if (billing_thresholds != null) __obj.updateDynamic("billing_thresholds")(billing_thresholds.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubscriptionCreationItem]
   }

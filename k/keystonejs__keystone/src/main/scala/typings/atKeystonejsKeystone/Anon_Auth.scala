@@ -24,7 +24,7 @@ object Anon_Auth {
     update: Boolean | AccessCallback = null
   ): Anon_Auth = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(auth)) __obj.updateDynamic("auth")(auth)
+    if (!js.isUndefined(auth)) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (create != null) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
     if (delete != null) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
     if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])

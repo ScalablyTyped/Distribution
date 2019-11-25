@@ -24,10 +24,10 @@ object DownloadLineItemsRequest {
     format: String = null
   ): DownloadLineItemsRequest = {
     val __obj = js.Dynamic.literal()
-    if (fileSpec != null) __obj.updateDynamic("fileSpec")(fileSpec)
-    if (filterIds != null) __obj.updateDynamic("filterIds")(filterIds)
-    if (filterType != null) __obj.updateDynamic("filterType")(filterType)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (fileSpec != null) __obj.updateDynamic("fileSpec")(fileSpec.asInstanceOf[js.Any])
+    if (filterIds != null) __obj.updateDynamic("filterIds")(filterIds.asInstanceOf[js.Any])
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadLineItemsRequest]
   }
 }

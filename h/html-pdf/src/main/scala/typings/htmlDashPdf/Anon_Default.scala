@@ -20,10 +20,10 @@ object Anon_Default {
     last: String = null
   ): Anon_Default = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (first != null) __obj.updateDynamic("first")(first)
-    if (last != null) __obj.updateDynamic("last")(last)
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
+    if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Default]
   }
 }

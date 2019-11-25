@@ -66,7 +66,7 @@ object SMTPServerSession {
     tlsOptions: TlsOptions,
     transmissionType: String
   ): SMTPServerSession = {
-    val __obj = js.Dynamic.literal(clientHostname = clientHostname, envelope = envelope, hostNameAppearsAs = hostNameAppearsAs, id = id, localAddress = localAddress, localPort = localPort, openingCommand = openingCommand, remoteAddress = remoteAddress, remotePort = remotePort, secure = secure, tlsOptions = tlsOptions, transmissionType = transmissionType)
+    val __obj = js.Dynamic.literal(clientHostname = clientHostname.asInstanceOf[js.Any], envelope = envelope.asInstanceOf[js.Any], hostNameAppearsAs = hostNameAppearsAs.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], localAddress = localAddress.asInstanceOf[js.Any], localPort = localPort.asInstanceOf[js.Any], openingCommand = openingCommand.asInstanceOf[js.Any], remoteAddress = remoteAddress.asInstanceOf[js.Any], remotePort = remotePort.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any], tlsOptions = tlsOptions.asInstanceOf[js.Any], transmissionType = transmissionType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SMTPServerSession]
   }

@@ -13,7 +13,7 @@ trait Anon_Changed extends js.Object {
 object Anon_Changed {
   @scala.inline
   def apply(changed: js.Array[ViewToken], viewableItems: js.Array[ViewToken]): Anon_Changed = {
-    val __obj = js.Dynamic.literal(changed = changed, viewableItems = viewableItems)
+    val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any], viewableItems = viewableItems.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Changed]
   }

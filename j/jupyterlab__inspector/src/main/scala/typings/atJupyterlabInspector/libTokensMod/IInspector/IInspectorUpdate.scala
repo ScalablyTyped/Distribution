@@ -19,7 +19,7 @@ object IInspectorUpdate {
   @scala.inline
   def apply(content: Widget = null): IInspectorUpdate = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInspectorUpdate]
   }
 }

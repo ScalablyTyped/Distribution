@@ -15,8 +15,8 @@ trait IFrameResizedData extends js.Object {
 object IFrameResizedData {
   @scala.inline
   def apply(height: Double, iframe: IFrameComponent, `type`: String, width: Double): IFrameResizedData = {
-    val __obj = js.Dynamic.literal(height = height, iframe = iframe, width = width)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFrameResizedData]
   }
 }

@@ -25,10 +25,10 @@ object FocusNavigationEventInit {
     originWidth: Int | Double = null
   ): FocusNavigationEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed)
-    if (navigationReason != null) __obj.updateDynamic("navigationReason")(navigationReason)
+    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
+    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
+    if (navigationReason != null) __obj.updateDynamic("navigationReason")(navigationReason.asInstanceOf[js.Any])
     if (originHeight != null) __obj.updateDynamic("originHeight")(originHeight.asInstanceOf[js.Any])
     if (originLeft != null) __obj.updateDynamic("originLeft")(originLeft.asInstanceOf[js.Any])
     if (originTop != null) __obj.updateDynamic("originTop")(originTop.asInstanceOf[js.Any])

@@ -15,9 +15,9 @@ trait MinifyOutput extends js.Object {
 object MinifyOutput {
   @scala.inline
   def apply(code: String, map: String, error: Error = null, warnings: js.Array[String] = null): MinifyOutput = {
-    val __obj = js.Dynamic.literal(code = code, map = map)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[MinifyOutput]
   }
 }

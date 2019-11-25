@@ -59,18 +59,18 @@ object Metadata {
     track: Int | Double = null,
     width: Int | Double = null
   ): Metadata = {
-    val __obj = js.Dynamic.literal(attachedImages = attachedImages, mimeType = mimeType, rawTags = rawTags)
-    if (album != null) __obj.updateDynamic("album")(album)
-    if (artist != null) __obj.updateDynamic("artist")(artist)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    val __obj = js.Dynamic.literal(attachedImages = attachedImages.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any], rawTags = rawTags.asInstanceOf[js.Any])
+    if (album != null) __obj.updateDynamic("album")(album.asInstanceOf[js.Any])
+    if (artist != null) __obj.updateDynamic("artist")(artist.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
     if (disc != null) __obj.updateDynamic("disc")(disc.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (genre != null) __obj.updateDynamic("genre")(genre)
+    if (genre != null) __obj.updateDynamic("genre")(genre.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (track != null) __obj.updateDynamic("track")(track.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metadata]

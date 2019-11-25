@@ -27,7 +27,7 @@ object CarouselOptions {
     display: GoogleActionsV2UiElementsCarouselSelectImageDisplayOptions = null
   ): CarouselOptions = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display)
+    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     __obj.asInstanceOf[CarouselOptions]
   }
 }

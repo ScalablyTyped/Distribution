@@ -13,7 +13,7 @@ trait Anon_Data[P] extends js.Object {
 object Anon_Data {
   @scala.inline
   def apply[P](Resolved: StatelessComponent[P], data: js.Any): Anon_Data[P] = {
-    val __obj = js.Dynamic.literal(Resolved = Resolved, data = data)
+    val __obj = js.Dynamic.literal(Resolved = Resolved.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Data[P]]
   }

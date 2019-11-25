@@ -35,13 +35,13 @@ object MomentLongDateFormat {
     lt: String = null,
     lts: String = null
   ): MomentLongDateFormat = {
-    val __obj = js.Dynamic.literal(L = L, LL = LL, LLL = LLL, LLLL = LLLL, LT = LT, LTS = LTS)
-    if (l != null) __obj.updateDynamic("l")(l)
-    if (ll != null) __obj.updateDynamic("ll")(ll)
-    if (lll != null) __obj.updateDynamic("lll")(lll)
-    if (llll != null) __obj.updateDynamic("llll")(llll)
-    if (lt != null) __obj.updateDynamic("lt")(lt)
-    if (lts != null) __obj.updateDynamic("lts")(lts)
+    val __obj = js.Dynamic.literal(L = L.asInstanceOf[js.Any], LL = LL.asInstanceOf[js.Any], LLL = LLL.asInstanceOf[js.Any], LLLL = LLLL.asInstanceOf[js.Any], LT = LT.asInstanceOf[js.Any], LTS = LTS.asInstanceOf[js.Any])
+    if (l != null) __obj.updateDynamic("l")(l.asInstanceOf[js.Any])
+    if (ll != null) __obj.updateDynamic("ll")(ll.asInstanceOf[js.Any])
+    if (lll != null) __obj.updateDynamic("lll")(lll.asInstanceOf[js.Any])
+    if (llll != null) __obj.updateDynamic("llll")(llll.asInstanceOf[js.Any])
+    if (lt != null) __obj.updateDynamic("lt")(lt.asInstanceOf[js.Any])
+    if (lts != null) __obj.updateDynamic("lts")(lts.asInstanceOf[js.Any])
     __obj.asInstanceOf[MomentLongDateFormat]
   }
 }

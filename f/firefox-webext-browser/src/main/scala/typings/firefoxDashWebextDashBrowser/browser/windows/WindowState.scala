@@ -17,3 +17,18 @@ import scala.scalajs.js.annotation._
 */
 trait WindowState extends js.Object
 
+object WindowState {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def docked: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.docked = this.cast("docked")
+  @scala.inline
+  def fullscreen: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.fullscreen = this.cast("fullscreen")
+  @scala.inline
+  def maximized: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.maximized = this.cast("maximized")
+  @scala.inline
+  def minimized: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.minimized = this.cast("minimized")
+  @scala.inline
+  def normal: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.normal = this.cast("normal")
+}
+

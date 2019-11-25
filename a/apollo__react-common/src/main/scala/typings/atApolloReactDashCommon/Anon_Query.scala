@@ -13,7 +13,7 @@ object Anon_Query {
   @scala.inline
   def apply(query: DocumentNode = null): Anon_Query = {
     val __obj = js.Dynamic.literal()
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Query]
   }
 }

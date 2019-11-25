@@ -36,10 +36,9 @@ object Spec {
     conform: js.Any => js.Any,
     explain: (js.Array[String], js.Array[String], js.Any) => js.Array[Problem],
     name: String,
-    options: js.Object,
-    toString: () => String
+    options: js.Object
   ): Spec = {
-    val __obj = js.Dynamic.literal(conform = js.Any.fromFunction1(conform), explain = js.Any.fromFunction3(explain), name = name, options = options, toString = js.Any.fromFunction0(toString))
+    val __obj = js.Dynamic.literal(conform = js.Any.fromFunction1(conform), explain = js.Any.fromFunction3(explain), name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Spec]
   }

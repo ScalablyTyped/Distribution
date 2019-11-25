@@ -44,12 +44,12 @@ object PluginOptions {
     volatile: js.UndefOr[Boolean] = js.undefined
   ): PluginOptions = {
     val __obj = js.Dynamic.literal()
-    if (annotation != null) __obj.updateDynamic("annotation")(annotation)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(needsCache)) __obj.updateDynamic("needsCache")(needsCache)
-    if (!js.isUndefined(persistentOutput)) __obj.updateDynamic("persistentOutput")(persistentOutput)
-    if (!js.isUndefined(trackInputChanges)) __obj.updateDynamic("trackInputChanges")(trackInputChanges)
-    if (!js.isUndefined(volatile)) __obj.updateDynamic("volatile")(volatile)
+    if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(needsCache)) __obj.updateDynamic("needsCache")(needsCache.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistentOutput)) __obj.updateDynamic("persistentOutput")(persistentOutput.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackInputChanges)) __obj.updateDynamic("trackInputChanges")(trackInputChanges.asInstanceOf[js.Any])
+    if (!js.isUndefined(volatile)) __obj.updateDynamic("volatile")(volatile.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginOptions]
   }
 }

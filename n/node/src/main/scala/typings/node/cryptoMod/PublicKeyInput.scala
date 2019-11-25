@@ -17,7 +17,7 @@ object PublicKeyInput {
   @scala.inline
   def apply(key: java.lang.String | Buffer, format: KeyFormat = null, `type`: pkcs1 | spki = null): PublicKeyInput = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyInput]
   }

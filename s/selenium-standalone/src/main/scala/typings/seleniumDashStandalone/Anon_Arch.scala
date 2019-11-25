@@ -15,8 +15,8 @@ trait Anon_Arch extends js.Object {
 object Anon_Arch {
   @scala.inline
   def apply(arch: String | ia32 | x64, baseURL: String, version: String = null): Anon_Arch = {
-    val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], baseURL = baseURL)
-    if (version != null) __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], baseURL = baseURL.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Arch]
   }
 }

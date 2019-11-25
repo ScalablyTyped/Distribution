@@ -50,7 +50,7 @@ object Anon_Basis {
     stepAfter: stepAfter,
     stepBefore: stepBefore
   ): Anon_Basis = {
-    val __obj = js.Dynamic.literal(basis = basis, basisClosed = basisClosed, basisOpen = basisOpen, bundle = bundle, cardinal = cardinal, cardinalClosed = cardinalClosed, cardinalOpen = cardinalOpen, linear = linear, linearClosed = linearClosed, monotone = monotone, step = step, stepAfter = stepAfter, stepBefore = stepBefore)
+    val __obj = js.Dynamic.literal(basis = basis.asInstanceOf[js.Any], basisClosed = basisClosed.asInstanceOf[js.Any], basisOpen = basisOpen.asInstanceOf[js.Any], bundle = bundle.asInstanceOf[js.Any], cardinal = cardinal.asInstanceOf[js.Any], cardinalClosed = cardinalClosed.asInstanceOf[js.Any], cardinalOpen = cardinalOpen.asInstanceOf[js.Any], linear = linear.asInstanceOf[js.Any], linearClosed = linearClosed.asInstanceOf[js.Any], monotone = monotone.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], stepAfter = stepAfter.asInstanceOf[js.Any], stepBefore = stepBefore.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Basis]
   }

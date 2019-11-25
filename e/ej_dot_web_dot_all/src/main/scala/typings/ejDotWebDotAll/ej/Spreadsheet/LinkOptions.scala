@@ -20,9 +20,9 @@ object LinkOptions {
   @scala.inline
   def apply(cellAddress: String = null, text: String = null, webAddress: String = null): LinkOptions = {
     val __obj = js.Dynamic.literal()
-    if (cellAddress != null) __obj.updateDynamic("cellAddress")(cellAddress)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (webAddress != null) __obj.updateDynamic("webAddress")(webAddress)
+    if (cellAddress != null) __obj.updateDynamic("cellAddress")(cellAddress.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (webAddress != null) __obj.updateDynamic("webAddress")(webAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkOptions]
   }
 }

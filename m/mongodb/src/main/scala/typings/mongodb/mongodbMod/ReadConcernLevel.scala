@@ -14,3 +14,18 @@ import scala.scalajs.js.annotation._
 */
 trait ReadConcernLevel extends js.Object
 
+object ReadConcernLevel {
+  @scala.inline
+  def available: typings.mongodb.mongodbStrings.available = this.cast("available")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def linearizable: typings.mongodb.mongodbStrings.linearizable = this.cast("linearizable")
+  @scala.inline
+  def local: typings.mongodb.mongodbStrings.local = this.cast("local")
+  @scala.inline
+  def majority: typings.mongodb.mongodbStrings.majority = this.cast("majority")
+  @scala.inline
+  def snapshot: typings.mongodb.mongodbStrings.snapshot = this.cast("snapshot")
+}
+

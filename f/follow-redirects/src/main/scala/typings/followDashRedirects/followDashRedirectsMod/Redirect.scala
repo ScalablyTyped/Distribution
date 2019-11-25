@@ -14,7 +14,7 @@ trait Redirect extends js.Object {
 object Redirect {
   @scala.inline
   def apply(headers: IncomingHttpHeaders, statusCode: Double, url: String): Redirect = {
-    val __obj = js.Dynamic.literal(headers = headers, statusCode = statusCode, url = url)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Redirect]
   }

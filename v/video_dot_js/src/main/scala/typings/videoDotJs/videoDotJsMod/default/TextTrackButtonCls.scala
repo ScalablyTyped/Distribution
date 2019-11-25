@@ -1,7 +1,5 @@
 package typings.videoDotJs.videoDotJsMod.default
 
-import typings.videoDotJs.videoDotJsMod.videojs.Player
-import typings.videoDotJs.videoDotJsMod.videojs.TextTrackButton
 import typings.videoDotJs.videoDotJsMod.videojs.TrackButtonOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("video.js", "TextTrackButton")
 @js.native
-class TextTrackButtonCls protected () extends TextTrackButton {
+class TextTrackButtonCls protected ()
+  extends typings.videoDotJs.videoDotJsMod.videojs.TextTrackButton {
   /**
     * Creates an instance of this class.
     *
@@ -19,7 +18,7 @@ class TextTrackButtonCls protected () extends TextTrackButton {
     * @param [options={}]
     *        The key/value store of player options.
     */
-  def this(player: Player) = this()
-  def this(player: Player, options: TrackButtonOptions) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player) = this()
+  def this(player: typings.videoDotJs.videoDotJsMod.videojs.Player, options: TrackButtonOptions) = this()
 }
 

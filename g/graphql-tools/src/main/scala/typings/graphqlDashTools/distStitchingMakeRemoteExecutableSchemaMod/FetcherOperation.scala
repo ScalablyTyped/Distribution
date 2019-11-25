@@ -21,10 +21,10 @@ object FetcherOperation {
     operationName: String = null,
     variables: StringDictionary[js.Any] = null
   ): FetcherOperation = {
-    val __obj = js.Dynamic.literal(query = query)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (operationName != null) __obj.updateDynamic("operationName")(operationName)
-    if (variables != null) __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (operationName != null) __obj.updateDynamic("operationName")(operationName.asInstanceOf[js.Any])
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetcherOperation]
   }
 }

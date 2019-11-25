@@ -32,12 +32,12 @@ object ResolverConfig {
     platforms: js.Array[String] = null,
     resolver: Path = null
   ): ResolverConfig = {
-    val __obj = js.Dynamic.literal(extensions = extensions, hasCoreModules = hasCoreModules, moduleDirectories = moduleDirectories, modulePaths = modulePaths, rootDir = rootDir)
-    if (!js.isUndefined(browser)) __obj.updateDynamic("browser")(browser)
-    if (defaultPlatform != null) __obj.updateDynamic("defaultPlatform")(defaultPlatform)
-    if (moduleNameMapper != null) __obj.updateDynamic("moduleNameMapper")(moduleNameMapper)
-    if (platforms != null) __obj.updateDynamic("platforms")(platforms)
-    if (resolver != null) __obj.updateDynamic("resolver")(resolver)
+    val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any], hasCoreModules = hasCoreModules.asInstanceOf[js.Any], moduleDirectories = moduleDirectories.asInstanceOf[js.Any], modulePaths = modulePaths.asInstanceOf[js.Any], rootDir = rootDir.asInstanceOf[js.Any])
+    if (!js.isUndefined(browser)) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
+    if (defaultPlatform != null) __obj.updateDynamic("defaultPlatform")(defaultPlatform.asInstanceOf[js.Any])
+    if (moduleNameMapper != null) __obj.updateDynamic("moduleNameMapper")(moduleNameMapper.asInstanceOf[js.Any])
+    if (platforms != null) __obj.updateDynamic("platforms")(platforms.asInstanceOf[js.Any])
+    if (resolver != null) __obj.updateDynamic("resolver")(resolver.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolverConfig]
   }
 }

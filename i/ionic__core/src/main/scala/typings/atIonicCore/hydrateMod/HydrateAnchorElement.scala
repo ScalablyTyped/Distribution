@@ -18,9 +18,9 @@ object HydrateAnchorElement {
     target: String = null
   ): HydrateAnchorElement = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (href != null) __obj.updateDynamic("href")(href)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[HydrateAnchorElement]
   }
 }

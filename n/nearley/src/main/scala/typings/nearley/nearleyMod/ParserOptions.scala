@@ -13,8 +13,8 @@ object ParserOptions {
   @scala.inline
   def apply(keepHistory: js.UndefOr[Boolean] = js.undefined, lexer: Lexer = null): ParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(keepHistory)) __obj.updateDynamic("keepHistory")(keepHistory)
-    if (lexer != null) __obj.updateDynamic("lexer")(lexer)
+    if (!js.isUndefined(keepHistory)) __obj.updateDynamic("keepHistory")(keepHistory.asInstanceOf[js.Any])
+    if (lexer != null) __obj.updateDynamic("lexer")(lexer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserOptions]
   }
 }

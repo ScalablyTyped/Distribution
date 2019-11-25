@@ -49,7 +49,7 @@ object JobStatus {
     startTime: String,
     succeeded: Double
   ): JobStatus = {
-    val __obj = js.Dynamic.literal(active = active, completionTime = completionTime, conditions = conditions, failed = failed, startTime = startTime, succeeded = succeeded)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], completionTime = completionTime.asInstanceOf[js.Any], conditions = conditions.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JobStatus]
   }

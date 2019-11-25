@@ -25,7 +25,7 @@ object ParsedTweet {
     validRangeStart: Double,
     weightedLength: Double
   ): ParsedTweet = {
-    val __obj = js.Dynamic.literal(displayRangeEnd = displayRangeEnd, displayRangeStart = displayRangeStart, permillage = permillage, valid = valid, validRangeEnd = validRangeEnd, validRangeStart = validRangeStart, weightedLength = weightedLength)
+    val __obj = js.Dynamic.literal(displayRangeEnd = displayRangeEnd.asInstanceOf[js.Any], displayRangeStart = displayRangeStart.asInstanceOf[js.Any], permillage = permillage.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], validRangeEnd = validRangeEnd.asInstanceOf[js.Any], validRangeStart = validRangeStart.asInstanceOf[js.Any], weightedLength = weightedLength.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ParsedTweet]
   }

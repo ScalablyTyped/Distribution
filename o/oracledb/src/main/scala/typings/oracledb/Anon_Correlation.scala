@@ -34,7 +34,7 @@ object Anon_Correlation {
     payload: Buffer | DBObject,
     priority: Double
   ): Anon_Correlation = {
-    val __obj = js.Dynamic.literal(correlation = correlation, delay = delay, exceptionQueue = exceptionQueue, expiration = expiration, payload = payload.asInstanceOf[js.Any], priority = priority)
+    val __obj = js.Dynamic.literal(correlation = correlation.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], exceptionQueue = exceptionQueue.asInstanceOf[js.Any], expiration = expiration.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Correlation]
   }

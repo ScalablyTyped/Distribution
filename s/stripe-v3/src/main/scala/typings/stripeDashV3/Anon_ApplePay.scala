@@ -12,7 +12,7 @@ object Anon_ApplePay {
   @scala.inline
   def apply(applePay: js.UndefOr[Boolean] = js.undefined): Anon_ApplePay = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(applePay)) __obj.updateDynamic("applePay")(applePay)
+    if (!js.isUndefined(applePay)) __obj.updateDynamic("applePay")(applePay.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ApplePay]
   }
 }

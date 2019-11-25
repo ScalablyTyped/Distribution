@@ -45,11 +45,11 @@ object SceneViewConstraintsProperties {
     collision: SceneViewConstraintsCollision = null,
     tilt: SceneViewConstraintsTiltProperties = null
   ): SceneViewConstraintsProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (altitude != null) __obj.updateDynamic("altitude")(altitude)
-    if (clipDistance != null) __obj.updateDynamic("clipDistance")(clipDistance)
-    if (collision != null) __obj.updateDynamic("collision")(collision)
-    if (tilt != null) __obj.updateDynamic("tilt")(tilt)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
+    if (clipDistance != null) __obj.updateDynamic("clipDistance")(clipDistance.asInstanceOf[js.Any])
+    if (collision != null) __obj.updateDynamic("collision")(collision.asInstanceOf[js.Any])
+    if (tilt != null) __obj.updateDynamic("tilt")(tilt.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewConstraintsProperties]
   }
 }

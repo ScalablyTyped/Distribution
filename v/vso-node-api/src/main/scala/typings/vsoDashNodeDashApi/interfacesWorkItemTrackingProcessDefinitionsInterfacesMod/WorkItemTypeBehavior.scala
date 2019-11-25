@@ -13,7 +13,7 @@ trait WorkItemTypeBehavior extends js.Object {
 object WorkItemTypeBehavior {
   @scala.inline
   def apply(behavior: WorkItemBehaviorReference, isDefault: Boolean, url: String): WorkItemTypeBehavior = {
-    val __obj = js.Dynamic.literal(behavior = behavior, isDefault = isDefault, url = url)
+    val __obj = js.Dynamic.literal(behavior = behavior.asInstanceOf[js.Any], isDefault = isDefault.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkItemTypeBehavior]
   }

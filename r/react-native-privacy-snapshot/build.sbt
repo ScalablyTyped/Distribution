@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-privacy-snapshot"
-version := "1.0-dt-20190927Z-4b0510"
+version := "1.0-dt-20190927Z-9d0571"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

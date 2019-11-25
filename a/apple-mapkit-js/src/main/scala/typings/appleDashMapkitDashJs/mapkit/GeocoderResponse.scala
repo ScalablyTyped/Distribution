@@ -14,7 +14,7 @@ trait GeocoderResponse extends js.Object {
 object GeocoderResponse {
   @scala.inline
   def apply(results: js.Array[Place]): GeocoderResponse = {
-    val __obj = js.Dynamic.literal(results = results)
+    val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GeocoderResponse]
   }

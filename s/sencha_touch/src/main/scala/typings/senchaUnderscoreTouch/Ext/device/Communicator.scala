@@ -2,6 +2,7 @@ package typings.senchaUnderscoreTouch.Ext.device
 
 import typings.senchaUnderscoreTouch.Ext.IBase
 import typings.senchaUnderscoreTouch.Ext.IClass
+import typings.senchaUnderscoreTouch.Ext.device.communicator.IDefault
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,7 +58,7 @@ object Communicator extends js.Object {
 @JSGlobal("Ext.device.communicator")
 @js.native
 object communicator extends js.Object {
-  type IAndroid = IBase
+  type IAndroid = IDefault
   type IDefault = IBase
 }
 

@@ -14,7 +14,7 @@ trait Anon_FragCount extends js.Object {
 object Anon_FragCount {
   @scala.inline
   def apply(FragCount: Double, FragDuration: Double, PlaylistName: String, Type: String): Anon_FragCount = {
-    val __obj = js.Dynamic.literal(FragCount = FragCount, FragDuration = FragDuration, PlaylistName = PlaylistName, Type = Type)
+    val __obj = js.Dynamic.literal(FragCount = FragCount.asInstanceOf[js.Any], FragDuration = FragDuration.asInstanceOf[js.Any], PlaylistName = PlaylistName.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FragCount]
   }

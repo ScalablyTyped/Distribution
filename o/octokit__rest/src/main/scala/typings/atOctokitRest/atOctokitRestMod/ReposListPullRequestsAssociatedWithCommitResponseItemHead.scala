@@ -21,7 +21,7 @@ object ReposListPullRequestsAssociatedWithCommitResponseItemHead {
     sha: String,
     user: ReposListPullRequestsAssociatedWithCommitResponseItemHeadUser
   ): ReposListPullRequestsAssociatedWithCommitResponseItemHead = {
-    val __obj = js.Dynamic.literal(label = label, ref = ref, repo = repo, sha = sha, user = user)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposListPullRequestsAssociatedWithCommitResponseItemHead]
   }

@@ -14,7 +14,7 @@ object AuthorizeOptions {
   def apply(idLength: Int | Double = null, sessionKey: String = null): AuthorizeOptions = {
     val __obj = js.Dynamic.literal()
     if (idLength != null) __obj.updateDynamic("idLength")(idLength.asInstanceOf[js.Any])
-    if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey)
+    if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizeOptions]
   }
 }

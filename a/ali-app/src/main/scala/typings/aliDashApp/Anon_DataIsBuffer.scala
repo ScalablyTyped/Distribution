@@ -20,7 +20,7 @@ object Anon_DataIsBuffer {
   @scala.inline
   def apply(data: String | ArrayBuffer, isBuffer: js.UndefOr[Boolean] = js.undefined): Anon_DataIsBuffer = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBuffer)) __obj.updateDynamic("isBuffer")(isBuffer)
+    if (!js.isUndefined(isBuffer)) __obj.updateDynamic("isBuffer")(isBuffer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DataIsBuffer]
   }
 }

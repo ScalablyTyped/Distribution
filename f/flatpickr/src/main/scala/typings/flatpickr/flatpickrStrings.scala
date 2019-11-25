@@ -162,7 +162,7 @@ object flatpickrStrings {
   sealed trait cy extends key
   
   @js.native
-  sealed trait d extends token
+  sealed trait d_ extends token
   
   @js.native
   sealed trait da extends key
@@ -267,9 +267,6 @@ object flatpickrStrings {
   sealed trait gr extends key
   
   @js.native
-  sealed trait h extends token
-  
-  @js.native
   sealed trait h1 extends js.Object
   
   @js.native
@@ -286,6 +283,9 @@ object flatpickrStrings {
   
   @js.native
   sealed trait h6 extends js.Object
+  
+  @js.native
+  sealed trait h_ extends token
   
   @js.native
   sealed trait he extends key
@@ -336,7 +336,7 @@ object flatpickrStrings {
   sealed trait it extends key
   
   @js.native
-  sealed trait j extends token
+  sealed trait j_ extends token
   
   @js.native
   sealed trait ja extends key
@@ -378,7 +378,7 @@ object flatpickrStrings {
   sealed trait lv extends key
   
   @js.native
-  sealed trait m extends token
+  sealed trait m_ extends token
   
   @js.native
   sealed trait main extends js.Object
@@ -528,7 +528,7 @@ object flatpickrStrings {
   sealed trait ruby extends js.Object
   
   @js.native
-  sealed trait s extends token
+  sealed trait s_ extends token
   
   @js.native
   sealed trait samp extends js.Object
@@ -630,7 +630,7 @@ object flatpickrStrings {
   sealed trait track extends js.Object
   
   @js.native
-  sealed trait u extends token
+  sealed trait u_ extends token
   
   @js.native
   sealed trait uk extends key
@@ -648,13 +648,13 @@ object flatpickrStrings {
   sealed trait vn extends key
   
   @js.native
-  sealed trait w extends token
+  sealed trait w_ extends token
   
   @js.native
   sealed trait wbr extends js.Object
   
   @js.native
-  sealed trait y extends token
+  sealed trait y_ extends token
   
   @js.native
   sealed trait zh extends key
@@ -765,7 +765,7 @@ object flatpickrStrings {
   @scala.inline
   def cy: cy = "cy".asInstanceOf[cy]
   @scala.inline
-  def d: d = "d".asInstanceOf[d]
+  def d_ : d_ = "d".asInstanceOf[d_]
   @scala.inline
   def da: da = "da".asInstanceOf[da]
   @scala.inline
@@ -835,8 +835,6 @@ object flatpickrStrings {
   @scala.inline
   def gr: gr = "gr".asInstanceOf[gr]
   @scala.inline
-  def h: h = "h".asInstanceOf[h]
-  @scala.inline
   def h1: h1 = "h1".asInstanceOf[h1]
   @scala.inline
   def h2: h2 = "h2".asInstanceOf[h2]
@@ -848,6 +846,8 @@ object flatpickrStrings {
   def h5: h5 = "h5".asInstanceOf[h5]
   @scala.inline
   def h6: h6 = "h6".asInstanceOf[h6]
+  @scala.inline
+  def h_ : h_ = "h".asInstanceOf[h_]
   @scala.inline
   def he: he = "he".asInstanceOf[he]
   @scala.inline
@@ -881,7 +881,7 @@ object flatpickrStrings {
   @scala.inline
   def it: it = "it".asInstanceOf[it]
   @scala.inline
-  def j: j = "j".asInstanceOf[j]
+  def j_ : j_ = "j".asInstanceOf[j_]
   @scala.inline
   def ja: ja = "ja".asInstanceOf[ja]
   @scala.inline
@@ -909,7 +909,7 @@ object flatpickrStrings {
   @scala.inline
   def lv: lv = "lv".asInstanceOf[lv]
   @scala.inline
-  def m: m = "m".asInstanceOf[m]
+  def m_ : m_ = "m".asInstanceOf[m_]
   @scala.inline
   def main: main = "main".asInstanceOf[main]
   @scala.inline
@@ -1009,7 +1009,7 @@ object flatpickrStrings {
   @scala.inline
   def ruby: ruby = "ruby".asInstanceOf[ruby]
   @scala.inline
-  def s: s = "s".asInstanceOf[s]
+  def s_ : s_ = "s".asInstanceOf[s_]
   @scala.inline
   def samp: samp = "samp".asInstanceOf[samp]
   @scala.inline
@@ -1077,7 +1077,7 @@ object flatpickrStrings {
   @scala.inline
   def track: track = "track".asInstanceOf[track]
   @scala.inline
-  def u: u = "u".asInstanceOf[u]
+  def u_ : u_ = "u".asInstanceOf[u_]
   @scala.inline
   def uk: uk = "uk".asInstanceOf[uk]
   @scala.inline
@@ -1089,11 +1089,11 @@ object flatpickrStrings {
   @scala.inline
   def vn: vn = "vn".asInstanceOf[vn]
   @scala.inline
-  def w: w = "w".asInstanceOf[w]
+  def w_ : w_ = "w".asInstanceOf[w_]
   @scala.inline
   def wbr: wbr = "wbr".asInstanceOf[wbr]
   @scala.inline
-  def y: y = "y".asInstanceOf[y]
+  def y_ : y_ = "y".asInstanceOf[y_]
   @scala.inline
   def zh: zh = "zh".asInstanceOf[zh]
   @scala.inline

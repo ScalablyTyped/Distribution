@@ -13,7 +13,7 @@ trait Anon_Arn extends js.Object {
 object Anon_Arn {
   @scala.inline
   def apply(arn: String, name: String, ownerIdentity: Anon_PrincipalId): Anon_Arn = {
-    val __obj = js.Dynamic.literal(arn = arn, name = name, ownerIdentity = ownerIdentity)
+    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ownerIdentity = ownerIdentity.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Arn]
   }

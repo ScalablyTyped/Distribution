@@ -49,11 +49,11 @@ object FontWarnings {
     removeAfter: Int | Double = null
   ): FontWarnings = {
     val __obj = js.Dynamic.literal()
-    if (HTML != null) __obj.updateDynamic("HTML")(HTML)
-    if (Message != null) __obj.updateDynamic("Message")(Message)
+    if (HTML != null) __obj.updateDynamic("HTML")(HTML.asInstanceOf[js.Any])
+    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
     if (fadeoutSteps != null) __obj.updateDynamic("fadeoutSteps")(fadeoutSteps.asInstanceOf[js.Any])
     if (fadeoutTime != null) __obj.updateDynamic("fadeoutTime")(fadeoutTime.asInstanceOf[js.Any])
-    if (messageStyle != null) __obj.updateDynamic("messageStyle")(messageStyle)
+    if (messageStyle != null) __obj.updateDynamic("messageStyle")(messageStyle.asInstanceOf[js.Any])
     if (removeAfter != null) __obj.updateDynamic("removeAfter")(removeAfter.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontWarnings]
   }

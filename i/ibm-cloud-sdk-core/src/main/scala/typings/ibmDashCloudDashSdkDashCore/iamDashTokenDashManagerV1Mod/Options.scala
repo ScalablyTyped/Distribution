@@ -14,9 +14,9 @@ object Options {
   @scala.inline
   def apply(iamAccessToken: String = null, iamApikey: String = null, iamUrl: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (iamAccessToken != null) __obj.updateDynamic("iamAccessToken")(iamAccessToken)
-    if (iamApikey != null) __obj.updateDynamic("iamApikey")(iamApikey)
-    if (iamUrl != null) __obj.updateDynamic("iamUrl")(iamUrl)
+    if (iamAccessToken != null) __obj.updateDynamic("iamAccessToken")(iamAccessToken.asInstanceOf[js.Any])
+    if (iamApikey != null) __obj.updateDynamic("iamApikey")(iamApikey.asInstanceOf[js.Any])
+    if (iamUrl != null) __obj.updateDynamic("iamUrl")(iamUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

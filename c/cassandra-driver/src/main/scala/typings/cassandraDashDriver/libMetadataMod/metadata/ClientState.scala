@@ -16,10 +16,9 @@ object ClientState {
   def apply(
     getConnectedHosts: () => js.Array[Host],
     getInFlightQueries: Host => Double,
-    getOpenConnections: Host => Double,
-    toString: () => String
+    getOpenConnections: Host => Double
   ): ClientState = {
-    val __obj = js.Dynamic.literal(getConnectedHosts = js.Any.fromFunction0(getConnectedHosts), getInFlightQueries = js.Any.fromFunction1(getInFlightQueries), getOpenConnections = js.Any.fromFunction1(getOpenConnections), toString = js.Any.fromFunction0(toString))
+    val __obj = js.Dynamic.literal(getConnectedHosts = js.Any.fromFunction0(getConnectedHosts), getInFlightQueries = js.Any.fromFunction1(getInFlightQueries), getOpenConnections = js.Any.fromFunction1(getOpenConnections))
   
     __obj.asInstanceOf[ClientState]
   }

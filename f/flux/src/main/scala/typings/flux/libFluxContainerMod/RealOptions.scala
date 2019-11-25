@@ -21,9 +21,9 @@ object RealOptions {
     withProps: js.UndefOr[Boolean] = js.undefined
   ): RealOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(pure)) __obj.updateDynamic("pure")(pure)
-    if (!js.isUndefined(withContext)) __obj.updateDynamic("withContext")(withContext)
-    if (!js.isUndefined(withProps)) __obj.updateDynamic("withProps")(withProps)
+    if (!js.isUndefined(pure)) __obj.updateDynamic("pure")(pure.asInstanceOf[js.Any])
+    if (!js.isUndefined(withContext)) __obj.updateDynamic("withContext")(withContext.asInstanceOf[js.Any])
+    if (!js.isUndefined(withProps)) __obj.updateDynamic("withProps")(withProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[RealOptions]
   }
 }

@@ -13,8 +13,8 @@ object IConfigurationLoadResult {
   @scala.inline
   def apply(path: String = null, results: IConfigurationFile = null): IConfigurationLoadResult = {
     val __obj = js.Dynamic.literal()
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (results != null) __obj.updateDynamic("results")(results)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConfigurationLoadResult]
   }
 }

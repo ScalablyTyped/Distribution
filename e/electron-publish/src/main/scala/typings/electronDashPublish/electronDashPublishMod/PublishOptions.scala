@@ -12,7 +12,7 @@ object PublishOptions {
   @scala.inline
   def apply(publish: PublishPolicy = null): PublishOptions = {
     val __obj = js.Dynamic.literal()
-    if (publish != null) __obj.updateDynamic("publish")(publish)
+    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishOptions]
   }
 }

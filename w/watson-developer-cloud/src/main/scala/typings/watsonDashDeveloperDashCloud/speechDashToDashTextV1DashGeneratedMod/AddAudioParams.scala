@@ -39,12 +39,12 @@ object AddAudioParams {
     headers: js.Object = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): AddAudioParams = {
-    val __obj = js.Dynamic.literal(audio_name = audio_name, audio_resource = audio_resource.asInstanceOf[js.Any], customization_id = customization_id)
-    if (!js.isUndefined(allow_overwrite)) __obj.updateDynamic("allow_overwrite")(allow_overwrite)
+    val __obj = js.Dynamic.literal(audio_name = audio_name.asInstanceOf[js.Any], audio_resource = audio_resource.asInstanceOf[js.Any], customization_id = customization_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(allow_overwrite)) __obj.updateDynamic("allow_overwrite")(allow_overwrite.asInstanceOf[js.Any])
     if (contained_content_type != null) __obj.updateDynamic("contained_content_type")(contained_content_type.asInstanceOf[js.Any])
     if (content_type != null) __obj.updateDynamic("content_type")(content_type.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddAudioParams]
   }
 }

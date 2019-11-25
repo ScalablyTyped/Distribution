@@ -83,22 +83,22 @@ object Elements {
     weekNumbers: HTMLDivElement = null,
     weekWrapper: HTMLDivElement = null
   ): Elements = {
-    val __obj = js.Dynamic.literal(_hideNextMonthArrow = _hideNextMonthArrow, _hidePrevMonthArrow = _hidePrevMonthArrow, _input = _input, _positionElement = _positionElement, calendarContainer = calendarContainer, currentMonthElement = currentMonthElement, currentYearElement = currentYearElement, days = days, element = element, input = input, monthElements = monthElements, monthNav = monthNav, monthsDropdownContainer = monthsDropdownContainer, nextMonthNav = nextMonthNav, pluginElements = pluginElements, prevMonthNav = prevMonthNav, weekdayContainer = weekdayContainer, yearElements = yearElements)
-    if (altInput != null) __obj.updateDynamic("altInput")(altInput)
-    if (amPM != null) __obj.updateDynamic("amPM")(amPM)
-    if (daysContainer != null) __obj.updateDynamic("daysContainer")(daysContainer)
-    if (hourElement != null) __obj.updateDynamic("hourElement")(hourElement)
-    if (innerContainer != null) __obj.updateDynamic("innerContainer")(innerContainer)
-    if (minuteElement != null) __obj.updateDynamic("minuteElement")(minuteElement)
-    if (mobileFormatStr != null) __obj.updateDynamic("mobileFormatStr")(mobileFormatStr)
-    if (mobileInput != null) __obj.updateDynamic("mobileInput")(mobileInput)
-    if (rContainer != null) __obj.updateDynamic("rContainer")(rContainer)
-    if (secondElement != null) __obj.updateDynamic("secondElement")(secondElement)
-    if (selectedDateElem != null) __obj.updateDynamic("selectedDateElem")(selectedDateElem)
-    if (timeContainer != null) __obj.updateDynamic("timeContainer")(timeContainer)
-    if (todayDateElem != null) __obj.updateDynamic("todayDateElem")(todayDateElem)
-    if (weekNumbers != null) __obj.updateDynamic("weekNumbers")(weekNumbers)
-    if (weekWrapper != null) __obj.updateDynamic("weekWrapper")(weekWrapper)
+    val __obj = js.Dynamic.literal(_hideNextMonthArrow = _hideNextMonthArrow.asInstanceOf[js.Any], _hidePrevMonthArrow = _hidePrevMonthArrow.asInstanceOf[js.Any], _input = _input.asInstanceOf[js.Any], _positionElement = _positionElement.asInstanceOf[js.Any], calendarContainer = calendarContainer.asInstanceOf[js.Any], currentMonthElement = currentMonthElement.asInstanceOf[js.Any], currentYearElement = currentYearElement.asInstanceOf[js.Any], days = days.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], monthElements = monthElements.asInstanceOf[js.Any], monthNav = monthNav.asInstanceOf[js.Any], monthsDropdownContainer = monthsDropdownContainer.asInstanceOf[js.Any], nextMonthNav = nextMonthNav.asInstanceOf[js.Any], pluginElements = pluginElements.asInstanceOf[js.Any], prevMonthNav = prevMonthNav.asInstanceOf[js.Any], weekdayContainer = weekdayContainer.asInstanceOf[js.Any], yearElements = yearElements.asInstanceOf[js.Any])
+    if (altInput != null) __obj.updateDynamic("altInput")(altInput.asInstanceOf[js.Any])
+    if (amPM != null) __obj.updateDynamic("amPM")(amPM.asInstanceOf[js.Any])
+    if (daysContainer != null) __obj.updateDynamic("daysContainer")(daysContainer.asInstanceOf[js.Any])
+    if (hourElement != null) __obj.updateDynamic("hourElement")(hourElement.asInstanceOf[js.Any])
+    if (innerContainer != null) __obj.updateDynamic("innerContainer")(innerContainer.asInstanceOf[js.Any])
+    if (minuteElement != null) __obj.updateDynamic("minuteElement")(minuteElement.asInstanceOf[js.Any])
+    if (mobileFormatStr != null) __obj.updateDynamic("mobileFormatStr")(mobileFormatStr.asInstanceOf[js.Any])
+    if (mobileInput != null) __obj.updateDynamic("mobileInput")(mobileInput.asInstanceOf[js.Any])
+    if (rContainer != null) __obj.updateDynamic("rContainer")(rContainer.asInstanceOf[js.Any])
+    if (secondElement != null) __obj.updateDynamic("secondElement")(secondElement.asInstanceOf[js.Any])
+    if (selectedDateElem != null) __obj.updateDynamic("selectedDateElem")(selectedDateElem.asInstanceOf[js.Any])
+    if (timeContainer != null) __obj.updateDynamic("timeContainer")(timeContainer.asInstanceOf[js.Any])
+    if (todayDateElem != null) __obj.updateDynamic("todayDateElem")(todayDateElem.asInstanceOf[js.Any])
+    if (weekNumbers != null) __obj.updateDynamic("weekNumbers")(weekNumbers.asInstanceOf[js.Any])
+    if (weekWrapper != null) __obj.updateDynamic("weekWrapper")(weekWrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[Elements]
   }
 }

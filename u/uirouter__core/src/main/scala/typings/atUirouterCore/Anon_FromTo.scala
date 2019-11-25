@@ -13,8 +13,8 @@ object Anon_FromTo {
   @scala.inline
   def apply(from: js.Any = null, to: js.Any = null): Anon_FromTo = {
     val __obj = js.Dynamic.literal()
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FromTo]
   }
 }

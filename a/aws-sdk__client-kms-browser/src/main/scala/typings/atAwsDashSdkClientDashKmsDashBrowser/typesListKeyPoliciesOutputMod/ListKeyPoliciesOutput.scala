@@ -34,10 +34,10 @@ object ListKeyPoliciesOutput {
     PolicyNames: js.Array[String] = null,
     Truncated: js.UndefOr[Boolean] = js.undefined
   ): ListKeyPoliciesOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker)
-    if (PolicyNames != null) __obj.updateDynamic("PolicyNames")(PolicyNames)
-    if (!js.isUndefined(Truncated)) __obj.updateDynamic("Truncated")(Truncated)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
+    if (PolicyNames != null) __obj.updateDynamic("PolicyNames")(PolicyNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(Truncated)) __obj.updateDynamic("Truncated")(Truncated.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListKeyPoliciesOutput]
   }
 }

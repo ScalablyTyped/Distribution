@@ -45,10 +45,10 @@ object univariateColorSizeCreateVisualVariablesParamsColorOptions {
     legendOptions: univariateColorSizeCreateVisualVariablesParamsColorOptionsLegendOptions = null,
     theme: String = null
   ): univariateColorSizeCreateVisualVariablesParamsColorOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme)
-    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme.asInstanceOf[js.Any])
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[univariateColorSizeCreateVisualVariablesParamsColorOptions]
   }
 }

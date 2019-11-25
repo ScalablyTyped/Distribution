@@ -11,7 +11,7 @@ trait SQSEvent extends js.Object {
 object SQSEvent {
   @scala.inline
   def apply(Records: js.Array[SQSRecord]): SQSEvent = {
-    val __obj = js.Dynamic.literal(Records = Records)
+    val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SQSEvent]
   }

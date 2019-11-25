@@ -21,10 +21,10 @@ object ClientTokenRequest {
     version: String = null
   ): ClientTokenRequest = {
     val __obj = js.Dynamic.literal()
-    if (customerId != null) __obj.updateDynamic("customerId")(customerId)
-    if (merchantAccountId != null) __obj.updateDynamic("merchantAccountId")(merchantAccountId)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
+    if (merchantAccountId != null) __obj.updateDynamic("merchantAccountId")(merchantAccountId.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientTokenRequest]
   }
 }

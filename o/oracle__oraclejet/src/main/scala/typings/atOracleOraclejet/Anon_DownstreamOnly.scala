@@ -12,8 +12,8 @@ trait Anon_DownstreamOnly extends js.Object {
 object Anon_DownstreamOnly {
   @scala.inline
   def apply(downstreamOnly: Boolean, expr: String = null): Anon_DownstreamOnly = {
-    val __obj = js.Dynamic.literal(downstreamOnly = downstreamOnly)
-    if (expr != null) __obj.updateDynamic("expr")(expr)
+    val __obj = js.Dynamic.literal(downstreamOnly = downstreamOnly.asInstanceOf[js.Any])
+    if (expr != null) __obj.updateDynamic("expr")(expr.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DownstreamOnly]
   }
 }

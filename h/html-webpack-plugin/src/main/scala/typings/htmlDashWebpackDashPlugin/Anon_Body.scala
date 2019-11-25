@@ -21,7 +21,7 @@ object Anon_Body {
     outputName: String,
     plugin: HtmlWebpackPlugin
   ): Anon_Body = {
-    val __obj = js.Dynamic.literal(body = body, head = head, outputName = outputName, plugin = plugin)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], outputName = outputName.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Body]
   }

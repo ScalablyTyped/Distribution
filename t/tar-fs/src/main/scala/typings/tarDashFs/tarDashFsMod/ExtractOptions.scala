@@ -32,9 +32,9 @@ object ExtractOptions {
     if (ignore != null) __obj.updateDynamic("ignore")(js.Any.fromFunction2(ignore))
     if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction1(map))
     if (mapStream != null) __obj.updateDynamic("mapStream")(js.Any.fromFunction2(mapStream))
-    if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
-    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable)
+    if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtractOptions]
   }
 }

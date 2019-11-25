@@ -47,7 +47,7 @@ object Anon_CommentContent {
     titleLeftRoot: String,
     titleRequired: String
   ): Anon_CommentContent = {
-    val __obj = js.Dynamic.literal(comment = comment, content = content, contentLeft = contentLeft, description = description, descriptionUnderInput = descriptionUnderInput, flowRoot = flowRoot, formGroup = formGroup, hasError = hasError, header = header, headerLeft = headerLeft, indent = indent, mainRoot = mainRoot, number = number, required = required, requiredText = requiredText, title = title, titleLeftRoot = titleLeftRoot, titleRequired = titleRequired)
+    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentLeft = contentLeft.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], descriptionUnderInput = descriptionUnderInput.asInstanceOf[js.Any], flowRoot = flowRoot.asInstanceOf[js.Any], formGroup = formGroup.asInstanceOf[js.Any], hasError = hasError.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], headerLeft = headerLeft.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], mainRoot = mainRoot.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], requiredText = requiredText.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleLeftRoot = titleLeftRoot.asInstanceOf[js.Any], titleRequired = titleRequired.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CommentContent]
   }

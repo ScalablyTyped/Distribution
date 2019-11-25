@@ -20,8 +20,8 @@ object CaptionRenderedEventUIParam {
   @scala.inline
   def apply(captionContainer: Element = null, owner: js.Any = null): CaptionRenderedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (captionContainer != null) __obj.updateDynamic("captionContainer")(captionContainer)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (captionContainer != null) __obj.updateDynamic("captionContainer")(captionContainer.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptionRenderedEventUIParam]
   }
 }

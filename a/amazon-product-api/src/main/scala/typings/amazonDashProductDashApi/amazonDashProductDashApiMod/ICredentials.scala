@@ -13,7 +13,7 @@ trait ICredentials extends js.Object {
 object ICredentials {
   @scala.inline
   def apply(awsId: String, awsSecret: String, awsTag: String): ICredentials = {
-    val __obj = js.Dynamic.literal(awsId = awsId, awsSecret = awsSecret, awsTag = awsTag)
+    val __obj = js.Dynamic.literal(awsId = awsId.asInstanceOf[js.Any], awsSecret = awsSecret.asInstanceOf[js.Any], awsTag = awsTag.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICredentials]
   }

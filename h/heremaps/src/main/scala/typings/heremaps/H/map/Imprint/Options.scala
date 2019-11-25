@@ -20,9 +20,9 @@ object Options {
   @scala.inline
   def apply(font: String = null, href: String = null, invert: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (href != null) __obj.updateDynamic("href")(href)
-    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

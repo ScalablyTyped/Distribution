@@ -15,8 +15,8 @@ object IdentitytoolkitRelyingpartySignOutUserRequest {
   @scala.inline
   def apply(instanceId: String = null, localId: String = null): IdentitytoolkitRelyingpartySignOutUserRequest = {
     val __obj = js.Dynamic.literal()
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
-    if (localId != null) __obj.updateDynamic("localId")(localId)
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
+    if (localId != null) __obj.updateDynamic("localId")(localId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentitytoolkitRelyingpartySignOutUserRequest]
   }
 }

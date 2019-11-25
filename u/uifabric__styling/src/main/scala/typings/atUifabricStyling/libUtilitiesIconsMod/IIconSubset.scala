@@ -17,9 +17,9 @@ trait IIconSubset extends js.Object {
 object IIconSubset {
   @scala.inline
   def apply(icons: StringDictionary[String | Element], fontFace: IFontFace = null, style: IRawStyle = null): IIconSubset = {
-    val __obj = js.Dynamic.literal(icons = icons)
-    if (fontFace != null) __obj.updateDynamic("fontFace")(fontFace)
-    if (style != null) __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(icons = icons.asInstanceOf[js.Any])
+    if (fontFace != null) __obj.updateDynamic("fontFace")(fontFace.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIconSubset]
   }
 }

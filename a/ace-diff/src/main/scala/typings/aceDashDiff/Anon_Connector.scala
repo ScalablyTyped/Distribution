@@ -19,7 +19,7 @@ object Anon_Connector {
     diff: String,
     newCodeConnectorLinkContent: String
   ): Anon_Connector = {
-    val __obj = js.Dynamic.literal(connector = connector, deletedCodeConnectorLinkContent = deletedCodeConnectorLinkContent, diff = diff, newCodeConnectorLinkContent = newCodeConnectorLinkContent)
+    val __obj = js.Dynamic.literal(connector = connector.asInstanceOf[js.Any], deletedCodeConnectorLinkContent = deletedCodeConnectorLinkContent.asInstanceOf[js.Any], diff = diff.asInstanceOf[js.Any], newCodeConnectorLinkContent = newCodeConnectorLinkContent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Connector]
   }

@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait TypeaheadBsSizes extends js.Object
 
+object TypeaheadBsSizes {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def large: typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.large = this.cast("large")
+  @scala.inline
+  def lg: typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.lg = this.cast("lg")
+  @scala.inline
+  def sm: typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.sm = this.cast("sm")
+  @scala.inline
+  def small: typings.reactDashBootstrapDashTypeahead.reactDashBootstrapDashTypeaheadStrings.small = this.cast("small")
+}
+

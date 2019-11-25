@@ -16,8 +16,8 @@ object ClusterMetrics {
   @scala.inline
   def apply(hdfsMetrics: Record[String, String] = null, yarnMetrics: Record[String, String] = null): ClusterMetrics = {
     val __obj = js.Dynamic.literal()
-    if (hdfsMetrics != null) __obj.updateDynamic("hdfsMetrics")(hdfsMetrics)
-    if (yarnMetrics != null) __obj.updateDynamic("yarnMetrics")(yarnMetrics)
+    if (hdfsMetrics != null) __obj.updateDynamic("hdfsMetrics")(hdfsMetrics.asInstanceOf[js.Any])
+    if (yarnMetrics != null) __obj.updateDynamic("yarnMetrics")(yarnMetrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterMetrics]
   }
 }

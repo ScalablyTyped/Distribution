@@ -18,7 +18,7 @@ trait MoneyHash extends js.Object {
 object MoneyHash {
   @scala.inline
   def apply(amount: String, currency: String): MoneyHash = {
-    val __obj = js.Dynamic.literal(amount = amount, currency = currency)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MoneyHash]
   }

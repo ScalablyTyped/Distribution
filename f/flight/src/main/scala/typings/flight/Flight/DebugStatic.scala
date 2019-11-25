@@ -12,7 +12,7 @@ trait DebugStatic extends js.Object {
 object DebugStatic {
   @scala.inline
   def apply(events: Anon_Action): DebugStatic = {
-    val __obj = js.Dynamic.literal(events = events)
+    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DebugStatic]
   }

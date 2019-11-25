@@ -13,8 +13,8 @@ trait RemoteDocument extends js.Object {
 object RemoteDocument {
   @scala.inline
   def apply(document: JsonLd, documentUrl: Url, contextUrl: Url = null): RemoteDocument = {
-    val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], documentUrl = documentUrl)
-    if (contextUrl != null) __obj.updateDynamic("contextUrl")(contextUrl)
+    val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], documentUrl = documentUrl.asInstanceOf[js.Any])
+    if (contextUrl != null) __obj.updateDynamic("contextUrl")(contextUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteDocument]
   }
 }

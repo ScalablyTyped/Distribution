@@ -13,7 +13,7 @@ trait Anon_ContentCodingWithQualityHeaderValue extends js.Object {
 object Anon_ContentCodingWithQualityHeaderValue {
   @scala.inline
   def apply(contentCodingWithQualityHeaderValue: HttpContentCodingWithQualityHeaderValue, returnValue: Boolean): Anon_ContentCodingWithQualityHeaderValue = {
-    val __obj = js.Dynamic.literal(contentCodingWithQualityHeaderValue = contentCodingWithQualityHeaderValue, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(contentCodingWithQualityHeaderValue = contentCodingWithQualityHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContentCodingWithQualityHeaderValue]
   }

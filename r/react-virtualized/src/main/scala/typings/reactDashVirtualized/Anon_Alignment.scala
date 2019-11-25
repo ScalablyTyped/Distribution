@@ -15,7 +15,7 @@ object Anon_Alignment {
   @scala.inline
   def apply(alignment: Alignment = null, columnIndex: Int | Double = null, rowIndex: Int | Double = null): Anon_Alignment = {
     val __obj = js.Dynamic.literal()
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
     if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Alignment]

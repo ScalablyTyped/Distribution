@@ -10,5 +10,18 @@ import scala.scalajs.js.annotation._
   - typings.aliDashApp.aliDashAppStrings.animationiteration
   - typings.aliDashApp.aliDashAppStrings.animationend
 */
-trait TransitionEventType extends EventType
+trait TransitionEventType extends js.Object
+
+object TransitionEventType {
+  @scala.inline
+  def animationend: typings.aliDashApp.aliDashAppStrings.animationend = this.cast("animationend")
+  @scala.inline
+  def animationiteration: typings.aliDashApp.aliDashAppStrings.animationiteration = this.cast("animationiteration")
+  @scala.inline
+  def animationstart: typings.aliDashApp.aliDashAppStrings.animationstart = this.cast("animationstart")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def transitionend: typings.aliDashApp.aliDashAppStrings.transitionend = this.cast("transitionend")
+}
 

@@ -27,7 +27,7 @@ object SearchLabelsResponseItemsItem {
     score: Double,
     url: String
   ): SearchLabelsResponseItemsItem = {
-    val __obj = js.Dynamic.literal(color = color, default = default, description = description, id = id, name = name, node_id = node_id, score = score, url = url)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SearchLabelsResponseItemsItem]
   }

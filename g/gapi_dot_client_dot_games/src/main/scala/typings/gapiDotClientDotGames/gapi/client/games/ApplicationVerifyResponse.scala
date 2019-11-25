@@ -17,9 +17,9 @@ object ApplicationVerifyResponse {
   @scala.inline
   def apply(alternate_player_id: String = null, kind: String = null, player_id: String = null): ApplicationVerifyResponse = {
     val __obj = js.Dynamic.literal()
-    if (alternate_player_id != null) __obj.updateDynamic("alternate_player_id")(alternate_player_id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (player_id != null) __obj.updateDynamic("player_id")(player_id)
+    if (alternate_player_id != null) __obj.updateDynamic("alternate_player_id")(alternate_player_id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (player_id != null) __obj.updateDynamic("player_id")(player_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationVerifyResponse]
   }
 }

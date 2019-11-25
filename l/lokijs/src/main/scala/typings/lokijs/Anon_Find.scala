@@ -17,7 +17,7 @@ object Anon_Find {
   def apply(`type`: find | where, `val`: js.Any, uid: String | Double = null): Anon_Find = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("val")(`val`)
+    __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Find]
   }

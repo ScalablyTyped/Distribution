@@ -79,15 +79,15 @@ object IDatePickerBaseProps {
     timePrecision: TimePrecision = null
   ): IDatePickerBaseProps = {
     val __obj = js.Dynamic.literal()
-    if (initialMonth != null) __obj.updateDynamic("initialMonth")(initialMonth)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (localeUtils != null) __obj.updateDynamic("localeUtils")(localeUtils)
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate)
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
-    if (!js.isUndefined(reverseMonthAndYearMenus)) __obj.updateDynamic("reverseMonthAndYearMenus")(reverseMonthAndYearMenus)
-    if (timePickerProps != null) __obj.updateDynamic("timePickerProps")(timePickerProps)
-    if (timePrecision != null) __obj.updateDynamic("timePrecision")(timePrecision)
+    if (initialMonth != null) __obj.updateDynamic("initialMonth")(initialMonth.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (localeUtils != null) __obj.updateDynamic("localeUtils")(localeUtils.asInstanceOf[js.Any])
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
+    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseMonthAndYearMenus)) __obj.updateDynamic("reverseMonthAndYearMenus")(reverseMonthAndYearMenus.asInstanceOf[js.Any])
+    if (timePickerProps != null) __obj.updateDynamic("timePickerProps")(timePickerProps.asInstanceOf[js.Any])
+    if (timePrecision != null) __obj.updateDynamic("timePrecision")(timePrecision.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDatePickerBaseProps]
   }
 }

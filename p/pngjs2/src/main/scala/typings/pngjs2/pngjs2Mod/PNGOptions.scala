@@ -32,15 +32,15 @@ object PNGOptions {
     width: Int | Double = null
   ): PNGOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkCRC)) __obj.updateDynamic("checkCRC")(checkCRC)
+    if (!js.isUndefined(checkCRC)) __obj.updateDynamic("checkCRC")(checkCRC.asInstanceOf[js.Any])
     if (colorType != null) __obj.updateDynamic("colorType")(colorType.asInstanceOf[js.Any])
     if (deflateChunkSize != null) __obj.updateDynamic("deflateChunkSize")(deflateChunkSize.asInstanceOf[js.Any])
-    if (deflateFactory != null) __obj.updateDynamic("deflateFactory")(deflateFactory)
+    if (deflateFactory != null) __obj.updateDynamic("deflateFactory")(deflateFactory.asInstanceOf[js.Any])
     if (deflateLevel != null) __obj.updateDynamic("deflateLevel")(deflateLevel.asInstanceOf[js.Any])
     if (deflateStrategy != null) __obj.updateDynamic("deflateStrategy")(deflateStrategy.asInstanceOf[js.Any])
     if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(inputHasAlpha)) __obj.updateDynamic("inputHasAlpha")(inputHasAlpha)
+    if (!js.isUndefined(inputHasAlpha)) __obj.updateDynamic("inputHasAlpha")(inputHasAlpha.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PNGOptions]
   }

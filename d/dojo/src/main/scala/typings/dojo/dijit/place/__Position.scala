@@ -25,7 +25,7 @@ trait __Position extends js.Object {
 object __Position {
   @scala.inline
   def apply(x: Double, y: Double): __Position = {
-    val __obj = js.Dynamic.literal(x = x, y = y)
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[__Position]
   }

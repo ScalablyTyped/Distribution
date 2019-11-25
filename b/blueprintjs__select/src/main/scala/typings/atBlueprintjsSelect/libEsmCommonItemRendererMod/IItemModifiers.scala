@@ -16,7 +16,7 @@ trait IItemModifiers extends js.Object {
 object IItemModifiers {
   @scala.inline
   def apply(active: Boolean, disabled: Boolean, matchesPredicate: Boolean): IItemModifiers = {
-    val __obj = js.Dynamic.literal(active = active, disabled = disabled, matchesPredicate = matchesPredicate)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], matchesPredicate = matchesPredicate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IItemModifiers]
   }

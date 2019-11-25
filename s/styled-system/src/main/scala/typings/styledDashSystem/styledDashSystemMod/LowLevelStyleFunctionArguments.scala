@@ -26,11 +26,11 @@ object LowLevelStyleFunctionArguments {
     scale: S = null,
     transformValue: (/* n */ N, /* scale */ js.UndefOr[S]) => _ = null
   ): LowLevelStyleFunctionArguments[N, S] = {
-    val __obj = js.Dynamic.literal(prop = prop)
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (cssProperty != null) __obj.updateDynamic("cssProperty")(cssProperty)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(prop = prop.asInstanceOf[js.Any])
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (cssProperty != null) __obj.updateDynamic("cssProperty")(cssProperty.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (transformValue != null) __obj.updateDynamic("transformValue")(js.Any.fromFunction2(transformValue))
     __obj.asInstanceOf[LowLevelStyleFunctionArguments[N, S]]

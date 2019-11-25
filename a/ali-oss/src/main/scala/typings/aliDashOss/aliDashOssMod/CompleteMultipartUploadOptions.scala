@@ -14,8 +14,8 @@ object CompleteMultipartUploadOptions {
   @scala.inline
   def apply(callback: ObjectCallback = null, headers: js.Object = null, timeout: Int | Double = null): CompleteMultipartUploadOptions = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompleteMultipartUploadOptions]
   }

@@ -24,12 +24,12 @@ object Notification {
     verifyToken: String = null
   ): Notification = {
     val __obj = js.Dynamic.literal()
-    if (collection != null) __obj.updateDynamic("collection")(collection)
-    if (itemId != null) __obj.updateDynamic("itemId")(itemId)
-    if (operation != null) __obj.updateDynamic("operation")(operation)
-    if (userActions != null) __obj.updateDynamic("userActions")(userActions)
-    if (userToken != null) __obj.updateDynamic("userToken")(userToken)
-    if (verifyToken != null) __obj.updateDynamic("verifyToken")(verifyToken)
+    if (collection != null) __obj.updateDynamic("collection")(collection.asInstanceOf[js.Any])
+    if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
+    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
+    if (userActions != null) __obj.updateDynamic("userActions")(userActions.asInstanceOf[js.Any])
+    if (userToken != null) __obj.updateDynamic("userToken")(userToken.asInstanceOf[js.Any])
+    if (verifyToken != null) __obj.updateDynamic("verifyToken")(verifyToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[Notification]
   }
 }

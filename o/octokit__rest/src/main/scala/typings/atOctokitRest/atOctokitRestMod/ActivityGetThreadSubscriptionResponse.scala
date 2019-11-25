@@ -23,7 +23,7 @@ object ActivityGetThreadSubscriptionResponse {
     thread_url: String,
     url: String
   ): ActivityGetThreadSubscriptionResponse = {
-    val __obj = js.Dynamic.literal(created_at = created_at, ignored = ignored, reason = reason, subscribed = subscribed, thread_url = thread_url, url = url)
+    val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], ignored = ignored.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], subscribed = subscribed.asInstanceOf[js.Any], thread_url = thread_url.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ActivityGetThreadSubscriptionResponse]
   }

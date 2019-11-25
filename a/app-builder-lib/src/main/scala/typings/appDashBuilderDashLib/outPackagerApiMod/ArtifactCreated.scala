@@ -31,14 +31,14 @@ object ArtifactCreated {
     target: Target = null,
     updateInfo: js.Any = null
   ): ArtifactCreated = {
-    val __obj = js.Dynamic.literal(file = file, packager = packager)
-    if (arch != null) __obj.updateDynamic("arch")(arch)
-    if (fileContent != null) __obj.updateDynamic("fileContent")(fileContent)
-    if (!js.isUndefined(isWriteUpdateInfo)) __obj.updateDynamic("isWriteUpdateInfo")(isWriteUpdateInfo)
-    if (publishConfig != null) __obj.updateDynamic("publishConfig")(publishConfig)
-    if (safeArtifactName != null) __obj.updateDynamic("safeArtifactName")(safeArtifactName)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (updateInfo != null) __obj.updateDynamic("updateInfo")(updateInfo)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], packager = packager.asInstanceOf[js.Any])
+    if (arch != null) __obj.updateDynamic("arch")(arch.asInstanceOf[js.Any])
+    if (fileContent != null) __obj.updateDynamic("fileContent")(fileContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(isWriteUpdateInfo)) __obj.updateDynamic("isWriteUpdateInfo")(isWriteUpdateInfo.asInstanceOf[js.Any])
+    if (publishConfig != null) __obj.updateDynamic("publishConfig")(publishConfig.asInstanceOf[js.Any])
+    if (safeArtifactName != null) __obj.updateDynamic("safeArtifactName")(safeArtifactName.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (updateInfo != null) __obj.updateDynamic("updateInfo")(updateInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtifactCreated]
   }
 }

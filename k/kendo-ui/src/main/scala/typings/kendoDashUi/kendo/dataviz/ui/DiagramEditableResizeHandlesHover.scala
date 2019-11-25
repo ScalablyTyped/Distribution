@@ -17,7 +17,7 @@ object DiagramEditableResizeHandlesHover {
   ): DiagramEditableResizeHandlesHover = {
     val __obj = js.Dynamic.literal()
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramEditableResizeHandlesHover]
   }
 }

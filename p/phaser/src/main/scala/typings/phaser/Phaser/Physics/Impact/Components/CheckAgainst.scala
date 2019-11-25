@@ -46,7 +46,7 @@ object CheckAgainst {
     setCheckAgainstB: () => GameObject,
     setCheckAgainstNone: () => GameObject
   ): CheckAgainst = {
-    val __obj = js.Dynamic.literal(checkAgainst = checkAgainst, setAvsB = js.Any.fromFunction0(setAvsB), setBvsA = js.Any.fromFunction0(setBvsA), setCheckAgainstA = js.Any.fromFunction0(setCheckAgainstA), setCheckAgainstB = js.Any.fromFunction0(setCheckAgainstB), setCheckAgainstNone = js.Any.fromFunction0(setCheckAgainstNone))
+    val __obj = js.Dynamic.literal(checkAgainst = checkAgainst.asInstanceOf[js.Any], setAvsB = js.Any.fromFunction0(setAvsB), setBvsA = js.Any.fromFunction0(setBvsA), setCheckAgainstA = js.Any.fromFunction0(setCheckAgainstA), setCheckAgainstB = js.Any.fromFunction0(setCheckAgainstB), setCheckAgainstNone = js.Any.fromFunction0(setCheckAgainstNone))
   
     __obj.asInstanceOf[CheckAgainst]
   }

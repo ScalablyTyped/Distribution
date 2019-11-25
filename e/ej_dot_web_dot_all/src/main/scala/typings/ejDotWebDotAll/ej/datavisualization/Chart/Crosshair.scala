@@ -34,11 +34,11 @@ object Crosshair {
     visible: js.UndefOr[Boolean] = js.undefined
   ): Crosshair = {
     val __obj = js.Dynamic.literal()
-    if (line != null) __obj.updateDynamic("line")(line)
-    if (marker != null) __obj.updateDynamic("marker")(marker)
-    if (trackballTooltipSettings != null) __obj.updateDynamic("trackballTooltipSettings")(trackballTooltipSettings)
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
+    if (trackballTooltipSettings != null) __obj.updateDynamic("trackballTooltipSettings")(trackballTooltipSettings.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[Crosshair]
   }
 }

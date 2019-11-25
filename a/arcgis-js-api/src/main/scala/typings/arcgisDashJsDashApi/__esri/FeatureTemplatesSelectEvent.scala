@@ -12,7 +12,7 @@ trait FeatureTemplatesSelectEvent extends js.Object {
 object FeatureTemplatesSelectEvent {
   @scala.inline
   def apply(item: TemplateItem, template: FeatureTemplate): FeatureTemplatesSelectEvent = {
-    val __obj = js.Dynamic.literal(item = item, template = template)
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FeatureTemplatesSelectEvent]
   }

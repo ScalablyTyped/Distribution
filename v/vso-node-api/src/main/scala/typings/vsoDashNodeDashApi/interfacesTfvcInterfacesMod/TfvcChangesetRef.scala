@@ -53,7 +53,7 @@ object TfvcChangesetRef {
     createdDate: Date,
     url: String
   ): TfvcChangesetRef = {
-    val __obj = js.Dynamic.literal(_links = _links, author = author, changesetId = changesetId, checkedInBy = checkedInBy, comment = comment, commentTruncated = commentTruncated, createdDate = createdDate, url = url)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], changesetId = changesetId.asInstanceOf[js.Any], checkedInBy = checkedInBy.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], commentTruncated = commentTruncated.asInstanceOf[js.Any], createdDate = createdDate.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TfvcChangesetRef]
   }

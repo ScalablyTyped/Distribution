@@ -29,11 +29,11 @@ object CreateRecipientList {
     name: String = null,
     num_rcpt_errors: Int | Double = null
   ): CreateRecipientList = {
-    val __obj = js.Dynamic.literal(recipients = recipients)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(recipients = recipients.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (num_rcpt_errors != null) __obj.updateDynamic("num_rcpt_errors")(num_rcpt_errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRecipientList]
   }

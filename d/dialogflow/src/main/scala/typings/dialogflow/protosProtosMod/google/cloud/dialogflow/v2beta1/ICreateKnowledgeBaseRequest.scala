@@ -16,8 +16,8 @@ object ICreateKnowledgeBaseRequest {
   @scala.inline
   def apply(knowledgeBase: IKnowledgeBase = null, parent: String = null): ICreateKnowledgeBaseRequest = {
     val __obj = js.Dynamic.literal()
-    if (knowledgeBase != null) __obj.updateDynamic("knowledgeBase")(knowledgeBase)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (knowledgeBase != null) __obj.updateDynamic("knowledgeBase")(knowledgeBase.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreateKnowledgeBaseRequest]
   }
 }

@@ -18,7 +18,7 @@ object Billing {
   @scala.inline
   def apply(consumerDestinations: js.Array[BillingDestination] = null): Billing = {
     val __obj = js.Dynamic.literal()
-    if (consumerDestinations != null) __obj.updateDynamic("consumerDestinations")(consumerDestinations)
+    if (consumerDestinations != null) __obj.updateDynamic("consumerDestinations")(consumerDestinations.asInstanceOf[js.Any])
     __obj.asInstanceOf[Billing]
   }
 }

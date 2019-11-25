@@ -34,8 +34,8 @@ object PlusWebviewWebviewProgressStyles {
   @scala.inline
   def apply(color: String = null, height: String = null): PlusWebviewWebviewProgressStyles = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (height != null) __obj.updateDynamic("height")(height)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewProgressStyles]
   }
 }

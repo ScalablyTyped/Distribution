@@ -12,7 +12,7 @@ object IWithViewportState {
   @scala.inline
   def apply(viewport: IViewport = null): IWithViewportState = {
     val __obj = js.Dynamic.literal()
-    if (viewport != null) __obj.updateDynamic("viewport")(viewport)
+    if (viewport != null) __obj.updateDynamic("viewport")(viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWithViewportState]
   }
 }

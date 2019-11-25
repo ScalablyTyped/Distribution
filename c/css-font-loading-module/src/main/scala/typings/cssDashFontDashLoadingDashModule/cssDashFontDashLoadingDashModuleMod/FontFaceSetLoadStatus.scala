@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait FontFaceSetLoadStatus extends js.Object
 
+object FontFaceSetLoadStatus {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def loaded: typings.cssDashFontDashLoadingDashModule.cssDashFontDashLoadingDashModuleStrings.loaded = this.cast("loaded")
+  @scala.inline
+  def loading: typings.cssDashFontDashLoadingDashModule.cssDashFontDashLoadingDashModuleStrings.loading = this.cast("loading")
+}
+

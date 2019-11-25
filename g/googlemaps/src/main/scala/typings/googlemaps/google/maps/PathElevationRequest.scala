@@ -13,7 +13,7 @@ object PathElevationRequest {
   @scala.inline
   def apply(path: js.Array[LatLng] = null, samples: Int | Double = null): PathElevationRequest = {
     val __obj = js.Dynamic.literal()
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (samples != null) __obj.updateDynamic("samples")(samples.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathElevationRequest]
   }

@@ -67,7 +67,7 @@ object ContainerStatus {
     started: Boolean,
     state: ContainerState
   ): ContainerStatus = {
-    val __obj = js.Dynamic.literal(containerID = containerID, image = image, imageID = imageID, lastState = lastState, name = name, ready = ready, restartCount = restartCount, started = started, state = state)
+    val __obj = js.Dynamic.literal(containerID = containerID.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], imageID = imageID.asInstanceOf[js.Any], lastState = lastState.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], restartCount = restartCount.asInstanceOf[js.Any], started = started.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContainerStatus]
   }

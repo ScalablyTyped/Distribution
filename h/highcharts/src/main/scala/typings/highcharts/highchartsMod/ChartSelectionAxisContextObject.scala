@@ -22,7 +22,7 @@ trait ChartSelectionAxisContextObject extends js.Object {
 object ChartSelectionAxisContextObject {
   @scala.inline
   def apply(axis: Axis, max: Double, min: Double): ChartSelectionAxisContextObject = {
-    val __obj = js.Dynamic.literal(axis = axis, max = max, min = min)
+    val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChartSelectionAxisContextObject]
   }

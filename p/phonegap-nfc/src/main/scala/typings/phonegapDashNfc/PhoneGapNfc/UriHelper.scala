@@ -29,7 +29,7 @@ object UriHelper {
     encodePayload: String => js.Array[Double],
     protocols: js.Array[String]
   ): UriHelper = {
-    val __obj = js.Dynamic.literal(decodePayload = js.Any.fromFunction1(decodePayload), encodePayload = js.Any.fromFunction1(encodePayload), protocols = protocols)
+    val __obj = js.Dynamic.literal(decodePayload = js.Any.fromFunction1(decodePayload), encodePayload = js.Any.fromFunction1(encodePayload), protocols = protocols.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UriHelper]
   }

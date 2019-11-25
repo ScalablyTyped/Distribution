@@ -31,12 +31,12 @@ object TileOptions {
     radiuses: js.Array[Radius] = null
   ): TileOptions = {
     val __obj = js.Dynamic.literal()
-    if (ZXY != null) __obj.updateDynamic("ZXY")(ZXY)
-    if (bearings != null) __obj.updateDynamic("bearings")(bearings)
-    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
-    if (!js.isUndefined(generate_hints)) __obj.updateDynamic("generate_hints")(generate_hints)
-    if (hints != null) __obj.updateDynamic("hints")(hints)
-    if (radiuses != null) __obj.updateDynamic("radiuses")(radiuses)
+    if (ZXY != null) __obj.updateDynamic("ZXY")(ZXY.asInstanceOf[js.Any])
+    if (bearings != null) __obj.updateDynamic("bearings")(bearings.asInstanceOf[js.Any])
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
+    if (!js.isUndefined(generate_hints)) __obj.updateDynamic("generate_hints")(generate_hints.asInstanceOf[js.Any])
+    if (hints != null) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
+    if (radiuses != null) __obj.updateDynamic("radiuses")(radiuses.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileOptions]
   }
 }

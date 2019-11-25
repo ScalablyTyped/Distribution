@@ -23,11 +23,11 @@ object Options {
     safeFileNames: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(abortOnLimit)) __obj.updateDynamic("abortOnLimit")(abortOnLimit)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(abortOnLimit)) __obj.updateDynamic("abortOnLimit")(abortOnLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (preserveExtension != null) __obj.updateDynamic("preserveExtension")(preserveExtension.asInstanceOf[js.Any])
-    if (!js.isUndefined(safeFileNames)) __obj.updateDynamic("safeFileNames")(safeFileNames)
+    if (!js.isUndefined(safeFileNames)) __obj.updateDynamic("safeFileNames")(safeFileNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

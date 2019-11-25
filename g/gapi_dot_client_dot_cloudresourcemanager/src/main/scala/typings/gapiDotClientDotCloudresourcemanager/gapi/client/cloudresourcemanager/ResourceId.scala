@@ -21,8 +21,8 @@ object ResourceId {
   @scala.inline
   def apply(id: String = null, `type`: String = null): ResourceId = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceId]
   }
 }

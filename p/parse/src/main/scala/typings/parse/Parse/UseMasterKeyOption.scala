@@ -15,7 +15,7 @@ object UseMasterKeyOption {
   @scala.inline
   def apply(useMasterKey: js.UndefOr[Boolean] = js.undefined): UseMasterKeyOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(useMasterKey)) __obj.updateDynamic("useMasterKey")(useMasterKey)
+    if (!js.isUndefined(useMasterKey)) __obj.updateDynamic("useMasterKey")(useMasterKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseMasterKeyOption]
   }
 }

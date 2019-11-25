@@ -14,8 +14,8 @@ object Options {
   @scala.inline
   def apply(autostart: js.UndefOr[Boolean] = js.undefined, expose: Anon_After = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart)
-    if (expose != null) __obj.updateDynamic("expose")(expose)
+    if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart.asInstanceOf[js.Any])
+    if (expose != null) __obj.updateDynamic("expose")(expose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

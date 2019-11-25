@@ -13,8 +13,8 @@ object ChannelTopicDetails {
   @scala.inline
   def apply(topicCategories: js.Array[String] = null, topicIds: js.Array[String] = null): ChannelTopicDetails = {
     val __obj = js.Dynamic.literal()
-    if (topicCategories != null) __obj.updateDynamic("topicCategories")(topicCategories)
-    if (topicIds != null) __obj.updateDynamic("topicIds")(topicIds)
+    if (topicCategories != null) __obj.updateDynamic("topicCategories")(topicCategories.asInstanceOf[js.Any])
+    if (topicIds != null) __obj.updateDynamic("topicIds")(topicIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelTopicDetails]
   }
 }

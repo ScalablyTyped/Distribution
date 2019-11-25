@@ -16,7 +16,7 @@ trait IResult extends js.Object {
 object IResult {
   @scala.inline
   def apply(browser: IBrowser, cpu: ICPU, device: IDevice, engine: IEngine, os: IOS, ua: String): IResult = {
-    val __obj = js.Dynamic.literal(browser = browser, cpu = cpu, device = device, engine = engine, os = os, ua = ua)
+    val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], cpu = cpu.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], engine = engine.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], ua = ua.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IResult]
   }

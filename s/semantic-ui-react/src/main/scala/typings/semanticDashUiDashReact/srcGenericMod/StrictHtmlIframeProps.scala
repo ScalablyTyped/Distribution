@@ -12,7 +12,7 @@ object StrictHtmlIframeProps {
   @scala.inline
   def apply(src: String = null): StrictHtmlIframeProps = {
     val __obj = js.Dynamic.literal()
-    if (src != null) __obj.updateDynamic("src")(src)
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictHtmlIframeProps]
   }
 }

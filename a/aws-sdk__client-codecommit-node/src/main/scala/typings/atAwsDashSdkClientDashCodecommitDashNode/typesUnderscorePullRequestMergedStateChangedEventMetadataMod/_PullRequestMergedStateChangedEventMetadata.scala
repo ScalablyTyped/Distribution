@@ -28,9 +28,9 @@ object _PullRequestMergedStateChangedEventMetadata {
     repositoryName: String = null
   ): _PullRequestMergedStateChangedEventMetadata = {
     val __obj = js.Dynamic.literal()
-    if (destinationReference != null) __obj.updateDynamic("destinationReference")(destinationReference)
-    if (mergeMetadata != null) __obj.updateDynamic("mergeMetadata")(mergeMetadata)
-    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName)
+    if (destinationReference != null) __obj.updateDynamic("destinationReference")(destinationReference.asInstanceOf[js.Any])
+    if (mergeMetadata != null) __obj.updateDynamic("mergeMetadata")(mergeMetadata.asInstanceOf[js.Any])
+    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[_PullRequestMergedStateChangedEventMetadata]
   }
 }

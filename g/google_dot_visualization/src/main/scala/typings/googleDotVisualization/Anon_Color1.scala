@@ -25,8 +25,8 @@ object Anon_Color1 {
     y2: String,
     useObjectBoundingBoxUnits: js.UndefOr[Boolean] = js.undefined
   ): Anon_Color1 = {
-    val __obj = js.Dynamic.literal(color1 = color1, color2 = color2, x1 = x1, x2 = x2, y1 = y1, y2 = y2)
-    if (!js.isUndefined(useObjectBoundingBoxUnits)) __obj.updateDynamic("useObjectBoundingBoxUnits")(useObjectBoundingBoxUnits)
+    val __obj = js.Dynamic.literal(color1 = color1.asInstanceOf[js.Any], color2 = color2.asInstanceOf[js.Any], x1 = x1.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
+    if (!js.isUndefined(useObjectBoundingBoxUnits)) __obj.updateDynamic("useObjectBoundingBoxUnits")(useObjectBoundingBoxUnits.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Color1]
   }
 }

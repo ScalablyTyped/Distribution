@@ -27,13 +27,13 @@ object ForStatement {
     loopExpression: ExpressionStatement = null,
     range: js.Tuple2[Double, Double] = null
   ): ForStatement = {
-    val __obj = js.Dynamic.literal(body = body)
-    __obj.updateDynamic("type")(`type`)
-    if (conditionExpression != null) __obj.updateDynamic("conditionExpression")(conditionExpression)
-    if (initExpression != null) __obj.updateDynamic("initExpression")(initExpression)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (loopExpression != null) __obj.updateDynamic("loopExpression")(loopExpression)
-    if (range != null) __obj.updateDynamic("range")(range)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (conditionExpression != null) __obj.updateDynamic("conditionExpression")(conditionExpression.asInstanceOf[js.Any])
+    if (initExpression != null) __obj.updateDynamic("initExpression")(initExpression.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (loopExpression != null) __obj.updateDynamic("loopExpression")(loopExpression.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForStatement]
   }
 }

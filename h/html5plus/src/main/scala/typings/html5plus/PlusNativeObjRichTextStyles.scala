@@ -63,8 +63,8 @@ object PlusNativeObjRichTextStyles {
   ): PlusNativeObjRichTextStyles = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (family != null) __obj.updateDynamic("family")(family)
-    if (fontSrc != null) __obj.updateDynamic("fontSrc")(fontSrc)
+    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
+    if (fontSrc != null) __obj.updateDynamic("fontSrc")(fontSrc.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     __obj.asInstanceOf[PlusNativeObjRichTextStyles]
   }

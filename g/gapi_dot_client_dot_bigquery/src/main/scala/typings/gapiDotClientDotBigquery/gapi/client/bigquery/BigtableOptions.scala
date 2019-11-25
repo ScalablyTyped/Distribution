@@ -32,9 +32,9 @@ object BigtableOptions {
     readRowkeyAsString: js.UndefOr[Boolean] = js.undefined
   ): BigtableOptions = {
     val __obj = js.Dynamic.literal()
-    if (columnFamilies != null) __obj.updateDynamic("columnFamilies")(columnFamilies)
-    if (!js.isUndefined(ignoreUnspecifiedColumnFamilies)) __obj.updateDynamic("ignoreUnspecifiedColumnFamilies")(ignoreUnspecifiedColumnFamilies)
-    if (!js.isUndefined(readRowkeyAsString)) __obj.updateDynamic("readRowkeyAsString")(readRowkeyAsString)
+    if (columnFamilies != null) __obj.updateDynamic("columnFamilies")(columnFamilies.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUnspecifiedColumnFamilies)) __obj.updateDynamic("ignoreUnspecifiedColumnFamilies")(ignoreUnspecifiedColumnFamilies.asInstanceOf[js.Any])
+    if (!js.isUndefined(readRowkeyAsString)) __obj.updateDynamic("readRowkeyAsString")(readRowkeyAsString.asInstanceOf[js.Any])
     __obj.asInstanceOf[BigtableOptions]
   }
 }

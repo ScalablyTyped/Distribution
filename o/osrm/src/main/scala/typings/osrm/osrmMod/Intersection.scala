@@ -62,7 +62,7 @@ object Intersection {
     location: Coordinate,
     out: Double
   ): Intersection = {
-    val __obj = js.Dynamic.literal(bearings = bearings, classes = classes, entry = entry, in = in, lanes = lanes, location = location, out = out)
+    val __obj = js.Dynamic.literal(bearings = bearings.asInstanceOf[js.Any], classes = classes.asInstanceOf[js.Any], entry = entry.asInstanceOf[js.Any], in = in.asInstanceOf[js.Any], lanes = lanes.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], out = out.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Intersection]
   }

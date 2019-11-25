@@ -36,14 +36,14 @@ object MarketplaceNote {
     timestampMs: String = null
   ): MarketplaceNote = {
     val __obj = js.Dynamic.literal()
-    if (creatorRole != null) __obj.updateDynamic("creatorRole")(creatorRole)
-    if (dealId != null) __obj.updateDynamic("dealId")(dealId)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (note != null) __obj.updateDynamic("note")(note)
-    if (noteId != null) __obj.updateDynamic("noteId")(noteId)
-    if (proposalId != null) __obj.updateDynamic("proposalId")(proposalId)
-    if (proposalRevisionNumber != null) __obj.updateDynamic("proposalRevisionNumber")(proposalRevisionNumber)
-    if (timestampMs != null) __obj.updateDynamic("timestampMs")(timestampMs)
+    if (creatorRole != null) __obj.updateDynamic("creatorRole")(creatorRole.asInstanceOf[js.Any])
+    if (dealId != null) __obj.updateDynamic("dealId")(dealId.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
+    if (noteId != null) __obj.updateDynamic("noteId")(noteId.asInstanceOf[js.Any])
+    if (proposalId != null) __obj.updateDynamic("proposalId")(proposalId.asInstanceOf[js.Any])
+    if (proposalRevisionNumber != null) __obj.updateDynamic("proposalRevisionNumber")(proposalRevisionNumber.asInstanceOf[js.Any])
+    if (timestampMs != null) __obj.updateDynamic("timestampMs")(timestampMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarketplaceNote]
   }
 }

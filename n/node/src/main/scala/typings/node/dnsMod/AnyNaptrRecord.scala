@@ -22,8 +22,8 @@ object AnyNaptrRecord {
     service: java.lang.String,
     `type`: NAPTR
   ): AnyNaptrRecord = {
-    val __obj = js.Dynamic.literal(flags = flags, order = order, preference = preference, regexp = regexp, replacement = replacement, service = service)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], preference = preference.asInstanceOf[js.Any], regexp = regexp.asInstanceOf[js.Any], replacement = replacement.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyNaptrRecord]
   }
 }

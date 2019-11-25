@@ -15,7 +15,7 @@ trait ICloseNotificationEvent extends js.Object {
 object ICloseNotificationEvent {
   @scala.inline
   def apply(event: close | show | click, id: Double): ICloseNotificationEvent = {
-    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], id = id)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICloseNotificationEvent]
   }

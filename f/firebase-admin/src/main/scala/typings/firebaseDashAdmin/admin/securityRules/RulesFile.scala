@@ -18,7 +18,7 @@ trait RulesFile extends js.Object {
 object RulesFile {
   @scala.inline
   def apply(content: String, name: String): RulesFile = {
-    val __obj = js.Dynamic.literal(content = content, name = name)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RulesFile]
   }

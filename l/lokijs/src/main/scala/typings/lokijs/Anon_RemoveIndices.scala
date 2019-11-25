@@ -12,7 +12,7 @@ object Anon_RemoveIndices {
   @scala.inline
   def apply(removeIndices: js.UndefOr[Boolean] = js.undefined): Anon_RemoveIndices = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(removeIndices)) __obj.updateDynamic("removeIndices")(removeIndices)
+    if (!js.isUndefined(removeIndices)) __obj.updateDynamic("removeIndices")(removeIndices.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_RemoveIndices]
   }
 }

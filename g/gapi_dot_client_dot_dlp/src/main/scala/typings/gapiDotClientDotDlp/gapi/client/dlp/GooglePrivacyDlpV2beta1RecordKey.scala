@@ -16,8 +16,8 @@ object GooglePrivacyDlpV2beta1RecordKey {
     datastoreKey: GooglePrivacyDlpV2beta1DatastoreKey = null
   ): GooglePrivacyDlpV2beta1RecordKey = {
     val __obj = js.Dynamic.literal()
-    if (cloudStorageKey != null) __obj.updateDynamic("cloudStorageKey")(cloudStorageKey)
-    if (datastoreKey != null) __obj.updateDynamic("datastoreKey")(datastoreKey)
+    if (cloudStorageKey != null) __obj.updateDynamic("cloudStorageKey")(cloudStorageKey.asInstanceOf[js.Any])
+    if (datastoreKey != null) __obj.updateDynamic("datastoreKey")(datastoreKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1RecordKey]
   }
 }

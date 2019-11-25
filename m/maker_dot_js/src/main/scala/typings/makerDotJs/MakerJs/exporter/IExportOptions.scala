@@ -18,7 +18,7 @@ object IExportOptions {
   @scala.inline
   def apply(units: String = null): IExportOptions = {
     val __obj = js.Dynamic.literal()
-    if (units != null) __obj.updateDynamic("units")(units)
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExportOptions]
   }
 }

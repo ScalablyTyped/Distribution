@@ -10,10 +10,12 @@ object seqObj extends js.Object {
   def apply[T, Key /* <: String */](
     args: ((js.Tuple2[
       Key, 
-      Parser[/* import warning: ImportType.apply Failed type conversion: T[Key] */ js.Any]
+      Parser[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[Key] */ js.Any
+      ]
     ]) | Parser[_])*
   ): Parser[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in Key ]: T[K]}
     */ typings.parsimmon.parsimmonStrings.seqObj with T
   ] = js.native

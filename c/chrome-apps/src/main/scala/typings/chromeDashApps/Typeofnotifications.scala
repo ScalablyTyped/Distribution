@@ -98,11 +98,11 @@ trait Typeofnotifications extends js.Object {
   def getPermissionLevel(
     callback: js.Function1[
       /* level */ ToStringLiteral[
-        /* import warning: ImportType.apply Failed type conversion: typeof PermissionLevel */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof PermissionLevel */ js.Any, 
         String, 
         Exclude[
           String, 
-          /* import warning: ImportType.apply Failed type conversion: typeof PermissionLevel[keyof typeof PermissionLevel] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof PermissionLevel[keyof typeof PermissionLevel] */ js.Any
         ]
       ], 
       Unit

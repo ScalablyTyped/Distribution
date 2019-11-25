@@ -22,9 +22,9 @@ object SchemaOptions {
     schemaDelimeter: String = null
   ): SchemaOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark)
+    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark.asInstanceOf[js.Any])
     if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (schemaDelimeter != null) __obj.updateDynamic("schemaDelimeter")(schemaDelimeter)
+    if (schemaDelimeter != null) __obj.updateDynamic("schemaDelimeter")(schemaDelimeter.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOptions]
   }
 }

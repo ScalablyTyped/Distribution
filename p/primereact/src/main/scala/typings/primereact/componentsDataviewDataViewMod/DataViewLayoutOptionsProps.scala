@@ -23,10 +23,10 @@ object DataViewLayoutOptionsProps {
     style: String = null
   ): DataViewLayoutOptionsProps = {
     val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange))
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataViewLayoutOptionsProps]
   }
 }

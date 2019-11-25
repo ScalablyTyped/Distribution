@@ -13,8 +13,8 @@ object HashtagConfig {
   @scala.inline
   def apply(separator: String = null, trigger: String = null): HashtagConfig = {
     val __obj = js.Dynamic.literal()
-    if (separator != null) __obj.updateDynamic("separator")(separator)
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[HashtagConfig]
   }
 }

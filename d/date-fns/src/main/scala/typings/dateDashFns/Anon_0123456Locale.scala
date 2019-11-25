@@ -20,7 +20,7 @@ object Anon_0123456Locale {
   @scala.inline
   def apply(locale: Locale = null, weekStartsOn: `0` | `1` | `2` | `3` | `4` | `5` | `6` = null): Anon_0123456Locale = {
     val __obj = js.Dynamic.literal()
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (weekStartsOn != null) __obj.updateDynamic("weekStartsOn")(weekStartsOn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_0123456Locale]
   }

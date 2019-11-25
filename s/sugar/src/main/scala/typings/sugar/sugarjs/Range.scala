@@ -9,8 +9,11 @@ trait Range extends js.Object {
   def clamp[T](el: T): T = js.native
   def contains[T](el: T): Boolean = js.native
   def days(): Double = js.native
-  def every[T](amount: String): js.Array[T] = js.native
-  def every[T](amount: String, everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ this.type, Unit]): js.Array[T] = js.native
+  def every[T](amount: java.lang.String): js.Array[T] = js.native
+  def every[T](
+    amount: java.lang.String,
+    everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ this.type, Unit]
+  ): js.Array[T] = js.native
   def every[T](amount: Double): js.Array[T] = js.native
   def every[T](amount: Double, everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ this.type, Unit]): js.Array[T] = js.native
   def hours(): Double = js.native

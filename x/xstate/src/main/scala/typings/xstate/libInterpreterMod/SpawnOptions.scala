@@ -18,9 +18,9 @@ object SpawnOptions {
     sync: js.UndefOr[Boolean] = js.undefined
   ): SpawnOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoForward)) __obj.updateDynamic("autoForward")(autoForward)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
+    if (!js.isUndefined(autoForward)) __obj.updateDynamic("autoForward")(autoForward.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpawnOptions]
   }
 }

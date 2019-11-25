@@ -21,9 +21,9 @@ object PolymerSplice {
     removed: js.Array[js.Object],
     `type`: String
   ): PolymerSplice = {
-    val __obj = js.Dynamic.literal(addedCount = addedCount, index = index, removed = removed)
-    __obj.updateDynamic("object")(`object`)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(addedCount = addedCount.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolymerSplice]
   }
 }

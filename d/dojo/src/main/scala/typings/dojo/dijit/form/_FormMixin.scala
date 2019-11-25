@@ -1,6 +1,5 @@
 package typings.dojo.dijit.form
 
-import typings.dojo.Fn_Boolean
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,13 +18,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("dijit.form._FormMixin")
 @js.native
 class _FormMixin () extends js.Object {
-  /**
-    * Returns true if all of the widgets are valid.
-    * Deprecated, will be removed in 2.0.  Use get("state") instead.
-    * 
-    */
-  @JSName("isValid")
-  var isValid_Original: Fn_Boolean = js.native
   /**
     * Will be "Error" if one or more of the child widgets has an invalid value,
     * "Incomplete" if not all of the required child widgets are filled in.  Otherwise, "",

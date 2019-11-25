@@ -31,9 +31,9 @@ object Anon_DocumentChanges {
     resourceOperations: js.Array[ResourceOperationKind] = null
   ): Anon_DocumentChanges = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(documentChanges)) __obj.updateDynamic("documentChanges")(documentChanges)
-    if (failureHandling != null) __obj.updateDynamic("failureHandling")(failureHandling)
-    if (resourceOperations != null) __obj.updateDynamic("resourceOperations")(resourceOperations)
+    if (!js.isUndefined(documentChanges)) __obj.updateDynamic("documentChanges")(documentChanges.asInstanceOf[js.Any])
+    if (failureHandling != null) __obj.updateDynamic("failureHandling")(failureHandling.asInstanceOf[js.Any])
+    if (resourceOperations != null) __obj.updateDynamic("resourceOperations")(resourceOperations.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DocumentChanges]
   }
 }

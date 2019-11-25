@@ -21,3 +21,24 @@ import scala.scalajs.js.annotation._
 */
 trait SyncToken extends js.Object
 
+object SyncToken {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def iCalUID: typings.gapiDotCalendar.gapiDotCalendarStrings.iCalUID = this.cast("iCalUID")
+  @scala.inline
+  def orderBy: typings.gapiDotCalendar.gapiDotCalendarStrings.orderBy = this.cast("orderBy")
+  @scala.inline
+  def privateExtendedProperty: typings.gapiDotCalendar.gapiDotCalendarStrings.privateExtendedProperty = this.cast("privateExtendedProperty")
+  @scala.inline
+  def q: typings.gapiDotCalendar.gapiDotCalendarStrings.q = this.cast("q")
+  @scala.inline
+  def sharedExtendedProperty: typings.gapiDotCalendar.gapiDotCalendarStrings.sharedExtendedProperty = this.cast("sharedExtendedProperty")
+  @scala.inline
+  def timeMax: typings.gapiDotCalendar.gapiDotCalendarStrings.timeMax = this.cast("timeMax")
+  @scala.inline
+  def timeMin: typings.gapiDotCalendar.gapiDotCalendarStrings.timeMin = this.cast("timeMin")
+  @scala.inline
+  def updatedMin: typings.gapiDotCalendar.gapiDotCalendarStrings.updatedMin = this.cast("updatedMin")
+}
+

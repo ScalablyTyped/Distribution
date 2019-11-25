@@ -14,7 +14,7 @@ trait Anon_EventHTMLDivElementSyntheticEvent extends js.Object {
 object Anon_EventHTMLDivElementSyntheticEvent {
   @scala.inline
   def apply(event: SyntheticEvent[HTMLDivElement, Event]): Anon_EventHTMLDivElementSyntheticEvent = {
-    val __obj = js.Dynamic.literal(event = event)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EventHTMLDivElementSyntheticEvent]
   }

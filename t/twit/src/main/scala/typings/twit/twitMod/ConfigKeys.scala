@@ -19,9 +19,9 @@ object ConfigKeys {
     access_token: String = null,
     access_token_secret: String = null
   ): ConfigKeys = {
-    val __obj = js.Dynamic.literal(consumer_key = consumer_key, consumer_secret = consumer_secret)
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
-    if (access_token_secret != null) __obj.updateDynamic("access_token_secret")(access_token_secret)
+    val __obj = js.Dynamic.literal(consumer_key = consumer_key.asInstanceOf[js.Any], consumer_secret = consumer_secret.asInstanceOf[js.Any])
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
+    if (access_token_secret != null) __obj.updateDynamic("access_token_secret")(access_token_secret.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigKeys]
   }
 }

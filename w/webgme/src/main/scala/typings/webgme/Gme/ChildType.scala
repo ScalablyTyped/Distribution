@@ -22,7 +22,7 @@ trait ChildType extends js.Object {
 object ChildType {
   @scala.inline
   def apply(id: String, max: Double, min: Double): ChildType = {
-    val __obj = js.Dynamic.literal(id = id, max = max, min = min)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChildType]
   }

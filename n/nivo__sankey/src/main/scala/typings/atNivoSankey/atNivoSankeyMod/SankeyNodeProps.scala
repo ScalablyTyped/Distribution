@@ -25,7 +25,7 @@ object SankeyNodeProps {
     x: Double,
     y: Double
   ): SankeyNodeProps = {
-    val __obj = js.Dynamic.literal(color = color, height = height, id = id.asInstanceOf[js.Any], label = label, width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SankeyNodeProps]
   }

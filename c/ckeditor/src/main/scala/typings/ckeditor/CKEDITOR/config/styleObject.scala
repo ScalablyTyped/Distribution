@@ -22,11 +22,11 @@ object styleObject {
     overrides: StringDictionary[js.Any] = null,
     styles: StringDictionary[js.Any] = null
   ): styleObject = {
-    val __obj = js.Dynamic.literal(element = element)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[styleObject]
   }
 }

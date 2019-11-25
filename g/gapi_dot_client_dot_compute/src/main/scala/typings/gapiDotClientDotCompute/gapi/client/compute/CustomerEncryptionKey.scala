@@ -15,8 +15,8 @@ object CustomerEncryptionKey {
   @scala.inline
   def apply(rawKey: String = null, sha256: String = null): CustomerEncryptionKey = {
     val __obj = js.Dynamic.literal()
-    if (rawKey != null) __obj.updateDynamic("rawKey")(rawKey)
-    if (sha256 != null) __obj.updateDynamic("sha256")(sha256)
+    if (rawKey != null) __obj.updateDynamic("rawKey")(rawKey.asInstanceOf[js.Any])
+    if (sha256 != null) __obj.updateDynamic("sha256")(sha256.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomerEncryptionKey]
   }
 }

@@ -30,14 +30,14 @@ object TeamsAsyncOperation {
   ): TeamsAsyncOperation = {
     val __obj = js.Dynamic.literal()
     if (attemptsCount != null) __obj.updateDynamic("attemptsCount")(attemptsCount.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastActionDateTime != null) __obj.updateDynamic("lastActionDateTime")(lastActionDateTime)
-    if (operationType != null) __obj.updateDynamic("operationType")(operationType)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (targetResourceId != null) __obj.updateDynamic("targetResourceId")(targetResourceId)
-    if (targetResourceLocation != null) __obj.updateDynamic("targetResourceLocation")(targetResourceLocation)
+    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastActionDateTime != null) __obj.updateDynamic("lastActionDateTime")(lastActionDateTime.asInstanceOf[js.Any])
+    if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (targetResourceId != null) __obj.updateDynamic("targetResourceId")(targetResourceId.asInstanceOf[js.Any])
+    if (targetResourceLocation != null) __obj.updateDynamic("targetResourceLocation")(targetResourceLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsAsyncOperation]
   }
 }

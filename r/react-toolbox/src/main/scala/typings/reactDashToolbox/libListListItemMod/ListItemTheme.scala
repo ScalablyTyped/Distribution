@@ -15,7 +15,7 @@ object ListItemTheme {
   @scala.inline
   def apply(listItem: String = null): ListItemTheme = {
     val __obj = js.Dynamic.literal()
-    if (listItem != null) __obj.updateDynamic("listItem")(listItem)
+    if (listItem != null) __obj.updateDynamic("listItem")(listItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItemTheme]
   }
 }

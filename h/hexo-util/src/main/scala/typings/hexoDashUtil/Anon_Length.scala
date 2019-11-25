@@ -15,8 +15,8 @@ object Anon_Length {
   def apply(length: Int | Double = null, omission: String = null, separator: String = null): Anon_Length = {
     val __obj = js.Dynamic.literal()
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (omission != null) __obj.updateDynamic("omission")(omission)
-    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (omission != null) __obj.updateDynamic("omission")(omission.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Length]
   }
 }

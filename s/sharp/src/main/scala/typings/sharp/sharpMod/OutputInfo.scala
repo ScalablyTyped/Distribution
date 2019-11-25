@@ -30,7 +30,7 @@ object OutputInfo {
     cropOffsetLeft: Int | Double = null,
     cropOffsetTop: Int | Double = null
   ): OutputInfo = {
-    val __obj = js.Dynamic.literal(channels = channels, format = format, height = height, premultiplied = premultiplied, size = size, width = width)
+    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], premultiplied = premultiplied.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (cropOffsetLeft != null) __obj.updateDynamic("cropOffsetLeft")(cropOffsetLeft.asInstanceOf[js.Any])
     if (cropOffsetTop != null) __obj.updateDynamic("cropOffsetTop")(cropOffsetTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputInfo]

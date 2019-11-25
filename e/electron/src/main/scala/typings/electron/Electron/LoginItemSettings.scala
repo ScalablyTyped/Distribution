@@ -44,8 +44,8 @@ object LoginItemSettings {
     wasOpenedAtLogin: Boolean,
     options: Options = null
   ): LoginItemSettings = {
-    val __obj = js.Dynamic.literal(openAsHidden = openAsHidden, openAtLogin = openAtLogin, restoreState = restoreState, wasOpenedAsHidden = wasOpenedAsHidden, wasOpenedAtLogin = wasOpenedAtLogin)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(openAsHidden = openAsHidden.asInstanceOf[js.Any], openAtLogin = openAtLogin.asInstanceOf[js.Any], restoreState = restoreState.asInstanceOf[js.Any], wasOpenedAsHidden = wasOpenedAsHidden.asInstanceOf[js.Any], wasOpenedAtLogin = wasOpenedAtLogin.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginItemSettings]
   }
 }

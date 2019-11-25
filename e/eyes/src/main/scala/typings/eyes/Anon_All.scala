@@ -39,15 +39,15 @@ object Anon_All {
     string: String = null
   ): Anon_All = {
     val __obj = js.Dynamic.literal()
-    if (all != null) __obj.updateDynamic("all")(all)
-    if (bool != null) __obj.updateDynamic("bool")(bool)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (number != null) __obj.updateDynamic("number")(number)
-    if (other != null) __obj.updateDynamic("other")(other)
-    if (regexp != null) __obj.updateDynamic("regexp")(regexp)
-    if (special != null) __obj.updateDynamic("special")(special)
-    if (string != null) __obj.updateDynamic("string")(string)
+    if (all != null) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
+    if (bool != null) __obj.updateDynamic("bool")(bool.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (other != null) __obj.updateDynamic("other")(other.asInstanceOf[js.Any])
+    if (regexp != null) __obj.updateDynamic("regexp")(regexp.asInstanceOf[js.Any])
+    if (special != null) __obj.updateDynamic("special")(special.asInstanceOf[js.Any])
+    if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_All]
   }
 }

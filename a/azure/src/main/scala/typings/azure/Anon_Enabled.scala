@@ -14,7 +14,7 @@ trait Anon_Enabled extends js.Object {
 object Anon_Enabled {
   @scala.inline
   def apply(Enabled: Boolean, IncludeAPIs: Boolean, RetentionPolicy: Anon_Days, Version: Double): Anon_Enabled = {
-    val __obj = js.Dynamic.literal(Enabled = Enabled, IncludeAPIs = IncludeAPIs, RetentionPolicy = RetentionPolicy, Version = Version)
+    val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any], IncludeAPIs = IncludeAPIs.asInstanceOf[js.Any], RetentionPolicy = RetentionPolicy.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Enabled]
   }

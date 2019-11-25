@@ -12,7 +12,7 @@ trait BlobClientParamters extends js.Object {
 object BlobClientParamters {
   @scala.inline
   def apply(logger: GmeLogger): BlobClientParamters = {
-    val __obj = js.Dynamic.literal(logger = logger)
+    val __obj = js.Dynamic.literal(logger = logger.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BlobClientParamters]
   }

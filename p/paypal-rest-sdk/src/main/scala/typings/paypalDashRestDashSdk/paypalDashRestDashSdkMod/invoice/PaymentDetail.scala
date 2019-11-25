@@ -21,9 +21,9 @@ object PaymentDetail {
     `type`: String,
     note: String = null
   ): PaymentDetail = {
-    val __obj = js.Dynamic.literal(amount = amount, date = date, method = method, transaction_id = transaction_id, transaction_type = transaction_type)
-    __obj.updateDynamic("type")(`type`)
-    if (note != null) __obj.updateDynamic("note")(note)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], transaction_id = transaction_id.asInstanceOf[js.Any], transaction_type = transaction_type.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentDetail]
   }
 }

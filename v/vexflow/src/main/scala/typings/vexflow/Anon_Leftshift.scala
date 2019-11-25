@@ -13,7 +13,7 @@ trait Anon_Leftshift extends js.Object {
 object Anon_Leftshift {
   @scala.inline
   def apply(left_shift: Double, right_shift: Double, text_line: Double): Anon_Leftshift = {
-    val __obj = js.Dynamic.literal(left_shift = left_shift, right_shift = right_shift, text_line = text_line)
+    val __obj = js.Dynamic.literal(left_shift = left_shift.asInstanceOf[js.Any], right_shift = right_shift.asInstanceOf[js.Any], text_line = text_line.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Leftshift]
   }

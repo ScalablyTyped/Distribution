@@ -13,7 +13,7 @@ trait Anon_Damage extends js.Object {
 object Anon_Damage {
   @scala.inline
   def apply(damage: Anon_Rank, support: Anon_Rank, tank: Anon_Rank): Anon_Damage = {
-    val __obj = js.Dynamic.literal(damage = damage, support = support, tank = tank)
+    val __obj = js.Dynamic.literal(damage = damage.asInstanceOf[js.Any], support = support.asInstanceOf[js.Any], tank = tank.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Damage]
   }

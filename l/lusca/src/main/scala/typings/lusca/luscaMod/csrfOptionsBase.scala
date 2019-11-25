@@ -15,8 +15,8 @@ object csrfOptionsBase {
   def apply(impl: () => _ = null, key: String = null, secret: String = null): csrfOptionsBase = {
     val __obj = js.Dynamic.literal()
     if (impl != null) __obj.updateDynamic("impl")(js.Any.fromFunction0(impl))
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (secret != null) __obj.updateDynamic("secret")(secret)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
     __obj.asInstanceOf[csrfOptionsBase]
   }
 }

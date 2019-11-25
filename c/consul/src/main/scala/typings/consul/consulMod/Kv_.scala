@@ -1,10 +1,5 @@
 package typings.consul.consulMod
 
-import typings.consul.Fn_CallbackKey
-import typings.consul.Fn_CallbackKeyOpts
-import typings.consul.Fn_CallbackKeyOptsDelOptions
-import typings.consul.Fn_CallbackKeyOptsDeleteOptions
-import typings.consul.Fn_CallbackKeyOptsValue
 import typings.consul.consulMod.Kv.DelOptions
 import typings.consul.consulMod.Kv.DeleteOptions
 import typings.consul.consulMod.Kv.GetOptions
@@ -19,28 +14,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Kv_ extends js.Object {
   var consul: Consul = js.native
-  /**
-    * Delete
-    */
-  @JSName("del")
-  var del_Original: Fn_CallbackKeyOptsDelOptions = js.native
-  @JSName("delete")
-  var delete_Original: Fn_CallbackKeyOptsDeleteOptions = js.native
-  /**
-    * Get
-    */
-  @JSName("get")
-  var get_Original: Fn_CallbackKey = js.native
-  /**
-    * Keys
-    */
-  @JSName("keys")
-  var keys_Original: Fn_CallbackKeyOpts = js.native
-  /**
-    * Set
-    */
-  @JSName("set")
-  var set_Original: Fn_CallbackKeyOptsValue = js.native
   /**
     * Delete
     */

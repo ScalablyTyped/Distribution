@@ -46,9 +46,9 @@ object LaunchOptions {
     require: String | js.Array[_] = null
   ): LaunchOptions = {
     val __obj = js.Dynamic.literal()
-    if (completion != null) __obj.updateDynamic("completion")(completion)
-    if (configPath != null) __obj.updateDynamic("configPath")(configPath)
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (completion != null) __obj.updateDynamic("completion")(completion.asInstanceOf[js.Any])
+    if (configPath != null) __obj.updateDynamic("configPath")(configPath.asInstanceOf[js.Any])
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
     if (forcedFlags != null) __obj.updateDynamic("forcedFlags")(forcedFlags.asInstanceOf[js.Any])
     if (require != null) __obj.updateDynamic("require")(require.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchOptions]

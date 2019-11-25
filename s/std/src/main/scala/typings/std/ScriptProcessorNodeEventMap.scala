@@ -11,7 +11,7 @@ trait ScriptProcessorNodeEventMap extends js.Object {
 object ScriptProcessorNodeEventMap {
   @scala.inline
   def apply(audioprocess: AudioProcessingEvent): ScriptProcessorNodeEventMap = {
-    val __obj = js.Dynamic.literal(audioprocess = audioprocess)
+    val __obj = js.Dynamic.literal(audioprocess = audioprocess.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ScriptProcessorNodeEventMap]
   }

@@ -11,7 +11,7 @@ trait Anon_Page extends js.Object {
 object Anon_Page {
   @scala.inline
   def apply(page: Double): Anon_Page = {
-    val __obj = js.Dynamic.literal(page = page)
+    val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Page]
   }

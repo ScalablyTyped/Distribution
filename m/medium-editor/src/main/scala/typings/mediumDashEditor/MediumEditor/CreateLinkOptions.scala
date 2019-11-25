@@ -13,9 +13,9 @@ trait CreateLinkOptions extends js.Object {
 object CreateLinkOptions {
   @scala.inline
   def apply(value: String, buttonClass: String = null, target: String = null): CreateLinkOptions = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (buttonClass != null) __obj.updateDynamic("buttonClass")(buttonClass)
-    if (target != null) __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (buttonClass != null) __obj.updateDynamic("buttonClass")(buttonClass.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLinkOptions]
   }
 }

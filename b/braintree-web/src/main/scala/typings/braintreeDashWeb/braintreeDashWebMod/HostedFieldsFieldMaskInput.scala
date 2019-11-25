@@ -20,8 +20,8 @@ object HostedFieldsFieldMaskInput {
   @scala.inline
   def apply(character: String = null, showLastFour: js.UndefOr[Boolean] = js.undefined): HostedFieldsFieldMaskInput = {
     val __obj = js.Dynamic.literal()
-    if (character != null) __obj.updateDynamic("character")(character)
-    if (!js.isUndefined(showLastFour)) __obj.updateDynamic("showLastFour")(showLastFour)
+    if (character != null) __obj.updateDynamic("character")(character.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLastFour)) __obj.updateDynamic("showLastFour")(showLastFour.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostedFieldsFieldMaskInput]
   }
 }

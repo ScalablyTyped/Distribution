@@ -13,7 +13,7 @@ trait Triangle extends js.Object {
 object Triangle {
   @scala.inline
   def apply(source: js.Array[Coordinate], target: js.Array[Coordinate]): Triangle = {
-    val __obj = js.Dynamic.literal(source = source, target = target)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Triangle]
   }

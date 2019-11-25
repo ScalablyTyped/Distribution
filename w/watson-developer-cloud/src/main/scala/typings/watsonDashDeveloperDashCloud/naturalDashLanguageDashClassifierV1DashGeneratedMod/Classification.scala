@@ -31,11 +31,11 @@ object Classification {
     url: String = null
   ): Classification = {
     val __obj = js.Dynamic.literal()
-    if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (classifier_id != null) __obj.updateDynamic("classifier_id")(classifier_id)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (top_class != null) __obj.updateDynamic("top_class")(top_class)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
+    if (classifier_id != null) __obj.updateDynamic("classifier_id")(classifier_id.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (top_class != null) __obj.updateDynamic("top_class")(top_class.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Classification]
   }
 }

@@ -20,10 +20,10 @@ object ManagementGroupChildInfo {
     tenantId: String = null
   ): ManagementGroupChildInfo = {
     val __obj = js.Dynamic.literal()
-    if (childId != null) __obj.updateDynamic("childId")(childId)
-    if (childType != null) __obj.updateDynamic("childType")(childType)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId)
+    if (childId != null) __obj.updateDynamic("childId")(childId.asInstanceOf[js.Any])
+    if (childType != null) __obj.updateDynamic("childType")(childType.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagementGroupChildInfo]
   }
 }

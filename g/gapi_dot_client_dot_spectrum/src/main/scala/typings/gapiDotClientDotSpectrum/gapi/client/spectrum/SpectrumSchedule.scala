@@ -15,8 +15,8 @@ object SpectrumSchedule {
   @scala.inline
   def apply(eventTime: EventTime = null, spectra: js.Array[SpectrumMessage] = null): SpectrumSchedule = {
     val __obj = js.Dynamic.literal()
-    if (eventTime != null) __obj.updateDynamic("eventTime")(eventTime)
-    if (spectra != null) __obj.updateDynamic("spectra")(spectra)
+    if (eventTime != null) __obj.updateDynamic("eventTime")(eventTime.asInstanceOf[js.Any])
+    if (spectra != null) __obj.updateDynamic("spectra")(spectra.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpectrumSchedule]
   }
 }

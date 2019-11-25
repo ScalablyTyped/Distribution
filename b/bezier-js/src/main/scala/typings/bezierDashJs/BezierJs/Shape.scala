@@ -23,7 +23,7 @@ object Shape {
     intersections: Shape => js.Array[js.Array[Double | String]],
     startcap: BezierCap
   ): Shape = {
-    val __obj = js.Dynamic.literal(back = back, bbox = bbox, endcap = endcap, forward = forward, intersections = js.Any.fromFunction1(intersections), startcap = startcap)
+    val __obj = js.Dynamic.literal(back = back.asInstanceOf[js.Any], bbox = bbox.asInstanceOf[js.Any], endcap = endcap.asInstanceOf[js.Any], forward = forward.asInstanceOf[js.Any], intersections = js.Any.fromFunction1(intersections), startcap = startcap.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Shape]
   }

@@ -18,7 +18,7 @@ trait FieldReference extends js.Object {
 object FieldReference {
   @scala.inline
   def apply(referenceName: String, url: String): FieldReference = {
-    val __obj = js.Dynamic.literal(referenceName = referenceName, url = url)
+    val __obj = js.Dynamic.literal(referenceName = referenceName.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FieldReference]
   }

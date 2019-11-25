@@ -12,8 +12,8 @@ trait SdkConfig extends js.Object {
 object SdkConfig {
   @scala.inline
   def apply(accessToken: String, origin: String = null): SdkConfig = {
-    val __obj = js.Dynamic.literal(accessToken = accessToken)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
+    val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[SdkConfig]
   }
 }

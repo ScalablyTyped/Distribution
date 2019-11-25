@@ -37,18 +37,18 @@ object AuthOptions {
     responseType: String = null,
     scope: String = null
   ): AuthOptions = {
-    val __obj = js.Dynamic.literal(clientID = clientID, domain = domain)
-    if (!js.isUndefined(__tryLocalStorageFirst)) __obj.updateDynamic("__tryLocalStorageFirst")(__tryLocalStorageFirst)
-    if (!js.isUndefined(_disableDeprecationWarnings)) __obj.updateDynamic("_disableDeprecationWarnings")(_disableDeprecationWarnings)
-    if (!js.isUndefined(_sendTelemetry)) __obj.updateDynamic("_sendTelemetry")(_sendTelemetry)
-    if (_telemetryInfo != null) __obj.updateDynamic("_telemetryInfo")(_telemetryInfo)
-    if (audience != null) __obj.updateDynamic("audience")(audience)
+    val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any])
+    if (!js.isUndefined(__tryLocalStorageFirst)) __obj.updateDynamic("__tryLocalStorageFirst")(__tryLocalStorageFirst.asInstanceOf[js.Any])
+    if (!js.isUndefined(_disableDeprecationWarnings)) __obj.updateDynamic("_disableDeprecationWarnings")(_disableDeprecationWarnings.asInstanceOf[js.Any])
+    if (!js.isUndefined(_sendTelemetry)) __obj.updateDynamic("_sendTelemetry")(_sendTelemetry.asInstanceOf[js.Any])
+    if (_telemetryInfo != null) __obj.updateDynamic("_telemetryInfo")(_telemetryInfo.asInstanceOf[js.Any])
+    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
     if (leeway != null) __obj.updateDynamic("leeway")(leeway.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
-    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
-    if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode)
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri.asInstanceOf[js.Any])
+    if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthOptions]
   }
 }

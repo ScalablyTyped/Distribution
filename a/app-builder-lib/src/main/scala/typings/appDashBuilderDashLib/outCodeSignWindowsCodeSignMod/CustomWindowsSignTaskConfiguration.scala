@@ -22,11 +22,11 @@ object CustomWindowsSignTaskConfiguration {
     resultOutputPath: String = null,
     site: String = null
   ): CustomWindowsSignTaskConfiguration = {
-    val __obj = js.Dynamic.literal(computeSignToolArgs = js.Any.fromFunction1(computeSignToolArgs), hash = hash, isNest = isNest, options = options, path = path)
+    val __obj = js.Dynamic.literal(computeSignToolArgs = js.Any.fromFunction1(computeSignToolArgs), hash = hash.asInstanceOf[js.Any], isNest = isNest.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     if (cscInfo != null) __obj.updateDynamic("cscInfo")(cscInfo.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (resultOutputPath != null) __obj.updateDynamic("resultOutputPath")(resultOutputPath)
-    if (site != null) __obj.updateDynamic("site")(site)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (resultOutputPath != null) __obj.updateDynamic("resultOutputPath")(resultOutputPath.asInstanceOf[js.Any])
+    if (site != null) __obj.updateDynamic("site")(site.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomWindowsSignTaskConfiguration]
   }
 }

@@ -16,7 +16,7 @@ object Options {
   @scala.inline
   def apply(args: js.Array[String] = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

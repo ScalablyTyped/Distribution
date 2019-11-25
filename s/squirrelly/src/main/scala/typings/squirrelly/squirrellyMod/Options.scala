@@ -17,9 +17,9 @@ object Options {
   @scala.inline
   def apply($cache: js.UndefOr[Boolean] = js.undefined, $file: String = null, $name: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($cache)) __obj.updateDynamic("$cache")($cache)
-    if ($file != null) __obj.updateDynamic("$file")($file)
-    if ($name != null) __obj.updateDynamic("$name")($name)
+    if (!js.isUndefined($cache)) __obj.updateDynamic("$cache")($cache.asInstanceOf[js.Any])
+    if ($file != null) __obj.updateDynamic("$file")($file.asInstanceOf[js.Any])
+    if ($name != null) __obj.updateDynamic("$name")($name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

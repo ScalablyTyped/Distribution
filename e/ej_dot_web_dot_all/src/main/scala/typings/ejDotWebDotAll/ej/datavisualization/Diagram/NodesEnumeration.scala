@@ -18,8 +18,8 @@ object NodesEnumeration {
   @scala.inline
   def apply(members: js.Array[NodesEnumerationMember] = null, name: String = null): NodesEnumeration = {
     val __obj = js.Dynamic.literal()
-    if (members != null) __obj.updateDynamic("members")(members)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesEnumeration]
   }
 }

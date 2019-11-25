@@ -15,7 +15,7 @@ object CustomToolbarItem {
   @scala.inline
   def apply(template: String = null): CustomToolbarItem = {
     val __obj = js.Dynamic.literal()
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomToolbarItem]
   }
 }

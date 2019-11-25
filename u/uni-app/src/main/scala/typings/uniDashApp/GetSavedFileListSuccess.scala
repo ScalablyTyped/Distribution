@@ -20,7 +20,7 @@ object GetSavedFileListSuccess {
   def apply(errMsg: Int | Double = null, fileList: String = null): GetSavedFileListSuccess = {
     val __obj = js.Dynamic.literal()
     if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
-    if (fileList != null) __obj.updateDynamic("fileList")(fileList)
+    if (fileList != null) __obj.updateDynamic("fileList")(fileList.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSavedFileListSuccess]
   }
 }

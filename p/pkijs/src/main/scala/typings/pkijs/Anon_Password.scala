@@ -11,7 +11,7 @@ trait Anon_Password extends js.Object {
 object Anon_Password {
   @scala.inline
   def apply(password: String): Anon_Password = {
-    val __obj = js.Dynamic.literal(password = password)
+    val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Password]
   }

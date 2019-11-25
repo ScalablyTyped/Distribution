@@ -12,7 +12,7 @@ object esDashToDashPrimitiveMod
       (js.Function2[
         /* input */ js.Any, 
         /* hint */ js.UndefOr[
-          /* import warning: ImportType.apply Failed type conversion: typeof String */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof String */ js.Any
         ], 
         js.UndefOr[String | Double | Boolean | js.Symbol | Null]
       ]) with Anon_ES2015

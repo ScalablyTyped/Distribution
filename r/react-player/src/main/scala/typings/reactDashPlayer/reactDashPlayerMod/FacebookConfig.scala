@@ -11,7 +11,7 @@ trait FacebookConfig extends js.Object {
 object FacebookConfig {
   @scala.inline
   def apply(appId: String): FacebookConfig = {
-    val __obj = js.Dynamic.literal(appId = appId)
+    val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FacebookConfig]
   }

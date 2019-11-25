@@ -50,12 +50,12 @@ object IGetBoundaryRequestOptions {
     userRegion: String = null
   ): IGetBoundaryRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (culture != null) __obj.updateDynamic("culture")(culture)
-    if (entityType != null) __obj.updateDynamic("entityType")(entityType)
-    if (!js.isUndefined(getAllPolygons)) __obj.updateDynamic("getAllPolygons")(getAllPolygons)
-    if (!js.isUndefined(getEntityMetadata)) __obj.updateDynamic("getEntityMetadata")(getEntityMetadata)
+    if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
+    if (entityType != null) __obj.updateDynamic("entityType")(entityType.asInstanceOf[js.Any])
+    if (!js.isUndefined(getAllPolygons)) __obj.updateDynamic("getAllPolygons")(getAllPolygons.asInstanceOf[js.Any])
+    if (!js.isUndefined(getEntityMetadata)) __obj.updateDynamic("getEntityMetadata")(getEntityMetadata.asInstanceOf[js.Any])
     if (lod != null) __obj.updateDynamic("lod")(lod.asInstanceOf[js.Any])
-    if (userRegion != null) __obj.updateDynamic("userRegion")(userRegion)
+    if (userRegion != null) __obj.updateDynamic("userRegion")(userRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetBoundaryRequestOptions]
   }
 }

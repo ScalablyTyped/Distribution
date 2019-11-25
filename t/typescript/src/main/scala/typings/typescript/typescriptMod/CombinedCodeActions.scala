@@ -12,8 +12,8 @@ trait CombinedCodeActions extends js.Object {
 object CombinedCodeActions {
   @scala.inline
   def apply(changes: js.Array[FileTextChanges], commands: js.Array[CodeActionCommand] = null): CombinedCodeActions = {
-    val __obj = js.Dynamic.literal(changes = changes)
-    if (commands != null) __obj.updateDynamic("commands")(commands)
+    val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any])
+    if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
     __obj.asInstanceOf[CombinedCodeActions]
   }
 }

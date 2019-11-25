@@ -19,7 +19,7 @@ object _UnmarshalledAttributeDimension {
   def apply(AttributeType: INCLUSIVE | EXCLUSIVE | String = null, Values: js.Array[String] = null): _UnmarshalledAttributeDimension = {
     val __obj = js.Dynamic.literal()
     if (AttributeType != null) __obj.updateDynamic("AttributeType")(AttributeType.asInstanceOf[js.Any])
-    if (Values != null) __obj.updateDynamic("Values")(Values)
+    if (Values != null) __obj.updateDynamic("Values")(Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledAttributeDimension]
   }
 }

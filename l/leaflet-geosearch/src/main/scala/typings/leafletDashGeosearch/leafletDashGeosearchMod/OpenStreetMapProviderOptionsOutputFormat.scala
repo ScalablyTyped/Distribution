@@ -12,7 +12,7 @@ object OpenStreetMapProviderOptionsOutputFormat {
   @scala.inline
   def apply(json_callback: String = null): OpenStreetMapProviderOptionsOutputFormat = {
     val __obj = js.Dynamic.literal()
-    if (json_callback != null) __obj.updateDynamic("json_callback")(json_callback)
+    if (json_callback != null) __obj.updateDynamic("json_callback")(json_callback.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenStreetMapProviderOptionsOutputFormat]
   }
 }

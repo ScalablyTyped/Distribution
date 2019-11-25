@@ -12,7 +12,7 @@ object CommonMaskProps {
   @scala.inline
   def apply(mask: String = null): CommonMaskProps = {
     val __obj = js.Dynamic.literal()
-    if (mask != null) __obj.updateDynamic("mask")(mask)
+    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonMaskProps]
   }
 }

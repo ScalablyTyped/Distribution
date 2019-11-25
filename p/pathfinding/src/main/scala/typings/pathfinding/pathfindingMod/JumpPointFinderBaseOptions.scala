@@ -16,7 +16,7 @@ object JumpPointFinderBaseOptions {
   ): JumpPointFinderBaseOptions = {
     val __obj = js.Dynamic.literal()
     if (heuristic != null) __obj.updateDynamic("heuristic")(js.Any.fromFunction2(heuristic))
-    if (!js.isUndefined(trackJumpRecursion)) __obj.updateDynamic("trackJumpRecursion")(trackJumpRecursion)
+    if (!js.isUndefined(trackJumpRecursion)) __obj.updateDynamic("trackJumpRecursion")(trackJumpRecursion.asInstanceOf[js.Any])
     __obj.asInstanceOf[JumpPointFinderBaseOptions]
   }
 }

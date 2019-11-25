@@ -71,17 +71,17 @@ object IGlobalConfig {
     title: String = null
   ): IGlobalConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clickToClose)) __obj.updateDynamic("clickToClose")(clickToClose)
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
+    if (!js.isUndefined(clickToClose)) __obj.updateDynamic("clickToClose")(clickToClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (msg != null) __obj.updateDynamic("msg")(msg)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(shake)) __obj.updateDynamic("shake")(shake)
-    if (!js.isUndefined(showClose)) __obj.updateDynamic("showClose")(showClose)
-    if (!js.isUndefined(sound)) __obj.updateDynamic("sound")(sound)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(shake)) __obj.updateDynamic("shake")(shake.asInstanceOf[js.Any])
+    if (!js.isUndefined(showClose)) __obj.updateDynamic("showClose")(showClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(sound)) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGlobalConfig]
   }
 }

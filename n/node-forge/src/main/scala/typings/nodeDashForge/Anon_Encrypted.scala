@@ -13,7 +13,7 @@ trait Anon_Encrypted extends js.Object {
 object Anon_Encrypted {
   @scala.inline
   def apply(encrypted: Boolean, safeBags: js.Array[Bag]): Anon_Encrypted = {
-    val __obj = js.Dynamic.literal(encrypted = encrypted, safeBags = safeBags)
+    val __obj = js.Dynamic.literal(encrypted = encrypted.asInstanceOf[js.Any], safeBags = safeBags.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Encrypted]
   }

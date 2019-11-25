@@ -43,11 +43,11 @@ object ViewportProps {
     transitionInterpolator: TransitionInterpolator = null,
     transitionInterruption: TRANSITION_EVENTS = null
   ): ViewportProps = {
-    val __obj = js.Dynamic.literal(altitude = altitude, bearing = bearing, height = height, latitude = latitude, longitude = longitude, maxPitch = maxPitch, maxZoom = maxZoom, minPitch = minPitch, minZoom = minZoom, pitch = pitch, width = width, zoom = zoom)
+    val __obj = js.Dynamic.literal(altitude = altitude.asInstanceOf[js.Any], bearing = bearing.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], maxPitch = maxPitch.asInstanceOf[js.Any], maxZoom = maxZoom.asInstanceOf[js.Any], minPitch = minPitch.asInstanceOf[js.Any], minZoom = minZoom.asInstanceOf[js.Any], pitch = pitch.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
     if (transitionEasing != null) __obj.updateDynamic("transitionEasing")(js.Any.fromFunction1(transitionEasing))
-    if (transitionInterpolator != null) __obj.updateDynamic("transitionInterpolator")(transitionInterpolator)
-    if (transitionInterruption != null) __obj.updateDynamic("transitionInterruption")(transitionInterruption)
+    if (transitionInterpolator != null) __obj.updateDynamic("transitionInterpolator")(transitionInterpolator.asInstanceOf[js.Any])
+    if (transitionInterruption != null) __obj.updateDynamic("transitionInterruption")(transitionInterruption.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewportProps]
   }
 }

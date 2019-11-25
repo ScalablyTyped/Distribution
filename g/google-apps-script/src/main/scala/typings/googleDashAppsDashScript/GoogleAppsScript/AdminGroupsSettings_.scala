@@ -19,7 +19,7 @@ object AdminGroupsSettings_ {
     Groups: GroupsCollection = null
   ): AdminGroupsSettings_ = {
     val __obj = js.Dynamic.literal(newGroups = js.Any.fromFunction0(newGroups))
-    if (Groups != null) __obj.updateDynamic("Groups")(Groups)
+    if (Groups != null) __obj.updateDynamic("Groups")(Groups.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminGroupsSettings_]
   }
 }

@@ -30,10 +30,10 @@ object CookieSessionObject {
     isPopulated: js.UndefOr[Boolean] = js.undefined
   ): CookieSessionObject = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(isChanged)) __obj.updateDynamic("isChanged")(isChanged)
-    if (!js.isUndefined(isNew)) __obj.updateDynamic("isNew")(isNew)
-    if (!js.isUndefined(isPopulated)) __obj.updateDynamic("isPopulated")(isPopulated)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(isChanged)) __obj.updateDynamic("isChanged")(isChanged.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNew)) __obj.updateDynamic("isNew")(isNew.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPopulated)) __obj.updateDynamic("isPopulated")(isPopulated.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookieSessionObject]
   }
 }

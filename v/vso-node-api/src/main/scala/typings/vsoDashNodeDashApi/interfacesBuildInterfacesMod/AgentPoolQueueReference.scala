@@ -14,7 +14,7 @@ trait AgentPoolQueueReference extends ResourceReference {
 object AgentPoolQueueReference {
   @scala.inline
   def apply(alias: String, id: Double): AgentPoolQueueReference = {
-    val __obj = js.Dynamic.literal(alias = alias, id = id)
+    val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AgentPoolQueueReference]
   }

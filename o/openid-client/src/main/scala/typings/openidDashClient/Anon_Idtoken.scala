@@ -18,8 +18,8 @@ object Anon_Idtoken {
     userinfo: StringDictionary[Null | ClaimsParameterMember] = null
   ): Anon_Idtoken = {
     val __obj = js.Dynamic.literal()
-    if (id_token != null) __obj.updateDynamic("id_token")(id_token)
-    if (userinfo != null) __obj.updateDynamic("userinfo")(userinfo)
+    if (id_token != null) __obj.updateDynamic("id_token")(id_token.asInstanceOf[js.Any])
+    if (userinfo != null) __obj.updateDynamic("userinfo")(userinfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Idtoken]
   }
 }

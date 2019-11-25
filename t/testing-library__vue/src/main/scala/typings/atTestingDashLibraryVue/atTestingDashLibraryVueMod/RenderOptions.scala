@@ -18,9 +18,9 @@ object RenderOptions {
   @scala.inline
   def apply[V /* <: Vue */, S](props: js.Object = null, routes: js.Array[RouteConfig] = null, store: StoreOptions[S] = null): RenderOptions[V, S] = {
     val __obj = js.Dynamic.literal()
-    if (props != null) __obj.updateDynamic("props")(props)
-    if (routes != null) __obj.updateDynamic("routes")(routes)
-    if (store != null) __obj.updateDynamic("store")(store)
+    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
+    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderOptions[V, S]]
   }
 }

@@ -22,10 +22,10 @@ object WindowsInformationProtectionAppLearningSummary {
     id: String = null
   ): WindowsInformationProtectionAppLearningSummary = {
     val __obj = js.Dynamic.literal()
-    if (applicationName != null) __obj.updateDynamic("applicationName")(applicationName)
-    if (applicationType != null) __obj.updateDynamic("applicationType")(applicationType)
+    if (applicationName != null) __obj.updateDynamic("applicationName")(applicationName.asInstanceOf[js.Any])
+    if (applicationType != null) __obj.updateDynamic("applicationType")(applicationType.asInstanceOf[js.Any])
     if (deviceCount != null) __obj.updateDynamic("deviceCount")(deviceCount.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsInformationProtectionAppLearningSummary]
   }
 }

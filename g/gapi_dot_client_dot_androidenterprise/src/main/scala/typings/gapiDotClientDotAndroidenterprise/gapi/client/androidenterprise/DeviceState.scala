@@ -18,8 +18,8 @@ object DeviceState {
   @scala.inline
   def apply(accountState: String = null, kind: String = null): DeviceState = {
     val __obj = js.Dynamic.literal()
-    if (accountState != null) __obj.updateDynamic("accountState")(accountState)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (accountState != null) __obj.updateDynamic("accountState")(accountState.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceState]
   }
 }

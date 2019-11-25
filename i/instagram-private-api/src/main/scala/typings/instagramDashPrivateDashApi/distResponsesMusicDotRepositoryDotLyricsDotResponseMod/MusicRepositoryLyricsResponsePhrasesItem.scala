@@ -12,7 +12,7 @@ trait MusicRepositoryLyricsResponsePhrasesItem extends js.Object {
 object MusicRepositoryLyricsResponsePhrasesItem {
   @scala.inline
   def apply(phrase: String, start_time_in_ms: Double): MusicRepositoryLyricsResponsePhrasesItem = {
-    val __obj = js.Dynamic.literal(phrase = phrase, start_time_in_ms = start_time_in_ms)
+    val __obj = js.Dynamic.literal(phrase = phrase.asInstanceOf[js.Any], start_time_in_ms = start_time_in_ms.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MusicRepositoryLyricsResponsePhrasesItem]
   }

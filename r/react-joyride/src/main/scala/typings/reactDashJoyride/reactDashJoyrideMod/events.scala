@@ -28,10 +28,6 @@ trait events extends js.Object {
   var TOUR_STATUS: `tour:status`
 }
 
-@JSImport("react-joyride", "EVENTS")
-@js.native
-object EVENTS extends TopLevel[events]
-
 object events {
   @scala.inline
   def apply(
@@ -46,9 +42,13 @@ object events {
     TOUR_START: `tour:start`,
     TOUR_STATUS: `tour:status`
   ): events = {
-    val __obj = js.Dynamic.literal(BEACON = BEACON, ERROR = ERROR, STEP_AFTER = STEP_AFTER, STEP_BEFORE = STEP_BEFORE, TARGET_NOT_FOUND = TARGET_NOT_FOUND, TOOLTIP = TOOLTIP, TOOLTIP_CLOSE = TOOLTIP_CLOSE, TOUR_END = TOUR_END, TOUR_START = TOUR_START, TOUR_STATUS = TOUR_STATUS)
+    val __obj = js.Dynamic.literal(BEACON = BEACON.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], STEP_AFTER = STEP_AFTER.asInstanceOf[js.Any], STEP_BEFORE = STEP_BEFORE.asInstanceOf[js.Any], TARGET_NOT_FOUND = TARGET_NOT_FOUND.asInstanceOf[js.Any], TOOLTIP = TOOLTIP.asInstanceOf[js.Any], TOOLTIP_CLOSE = TOOLTIP_CLOSE.asInstanceOf[js.Any], TOUR_END = TOUR_END.asInstanceOf[js.Any], TOUR_START = TOUR_START.asInstanceOf[js.Any], TOUR_STATUS = TOUR_STATUS.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[events]
   }
 }
+
+@JSImport("react-joyride", "EVENTS")
+@js.native
+object EVENTS extends TopLevel[events]
 

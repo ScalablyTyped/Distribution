@@ -26,10 +26,10 @@ object VirtualOptions {
     val __obj = js.Dynamic.literal()
     if (addSlidesAfter != null) __obj.updateDynamic("addSlidesAfter")(addSlidesAfter.asInstanceOf[js.Any])
     if (addSlidesBefore != null) __obj.updateDynamic("addSlidesBefore")(addSlidesBefore.asInstanceOf[js.Any])
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (renderExternal != null) __obj.updateDynamic("renderExternal")(js.Any.fromFunction1(renderExternal))
     if (renderSlide != null) __obj.updateDynamic("renderSlide")(js.Any.fromFunction2(renderSlide))
-    if (slides != null) __obj.updateDynamic("slides")(slides)
+    if (slides != null) __obj.updateDynamic("slides")(slides.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualOptions]
   }
 }

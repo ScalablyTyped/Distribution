@@ -15,7 +15,7 @@ object Anon_Opacity {
   @scala.inline
   def apply(opacity: js.UndefOr[Boolean] = js.undefined): Anon_Opacity = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity)
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Opacity]
   }
 }

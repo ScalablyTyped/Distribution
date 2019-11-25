@@ -87,7 +87,7 @@ object ITable {
     notifyOwner: /* ownerContext */ js.UndefOr[IContextItem] => Unit = null,
     onContentChange: /* child */ js.UndefOr[IComponent] => Boolean = null,
     overflowPadderEl: IElement = null,
-    removeChildEls: /* testFn */ js.UndefOr[js.Any] => Unit = null,
+    removeChildEls: js.UndefOr[js.Any] => Unit = null,
     renderItems: (/* items */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any]) => Unit = null,
     requires: Array = null,
     self: IClass = null,
@@ -101,8 +101,8 @@ object ITable {
     val __obj = js.Dynamic.literal()
     if (addChildEls != null) __obj.updateDynamic("addChildEls")(js.Any.fromFunction0(addChildEls))
     if (afterRemove != null) __obj.updateDynamic("afterRemove")(js.Any.fromFunction1(afterRemove))
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
     if (beginLayout != null) __obj.updateDynamic("beginLayout")(js.Any.fromFunction1(beginLayout))
     if (beginLayoutCycle != null) __obj.updateDynamic("beginLayoutCycle")(js.Any.fromFunction2(beginLayoutCycle))
     if (calculate != null) __obj.updateDynamic("calculate")(js.Any.fromFunction1(calculate))
@@ -111,11 +111,11 @@ object ITable {
     if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (completeLayout != null) __obj.updateDynamic("completeLayout")(js.Any.fromFunction1(completeLayout))
-    if (config != null) __obj.updateDynamic("config")(config)
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (configureItem != null) __obj.updateDynamic("configureItem")(js.Any.fromFunction1(configureItem))
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done)
-    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.asInstanceOf[js.Any])
+    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (finalizeLayout != null) __obj.updateDynamic("finalizeLayout")(js.Any.fromFunction0(finalizeLayout))
     if (finishedLayout != null) __obj.updateDynamic("finishedLayout")(js.Any.fromFunction1(finishedLayout))
     if (getContainerSize != null) __obj.updateDynamic("getContainerSize")(js.Any.fromFunction2(getContainerSize))
@@ -127,26 +127,26 @@ object ITable {
     if (getRenderedItems != null) __obj.updateDynamic("getRenderedItems")(js.Any.fromFunction0(getRenderedItems))
     if (getTarget != null) __obj.updateDynamic("getTarget")(js.Any.fromFunction0(getTarget))
     if (getVisibleItems != null) __obj.updateDynamic("getVisibleItems")(js.Any.fromFunction0(getVisibleItems))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
     if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
     if (initLayout != null) __obj.updateDynamic("initLayout")(js.Any.fromFunction0(initLayout))
-    if (!js.isUndefined(isLayout)) __obj.updateDynamic("isLayout")(isLayout)
+    if (!js.isUndefined(isLayout)) __obj.updateDynamic("isLayout")(isLayout.asInstanceOf[js.Any])
     if (isValidParent != null) __obj.updateDynamic("isValidParent")(js.Any.fromFunction4(isValidParent))
-    if (itemCls != null) __obj.updateDynamic("itemCls")(itemCls)
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (itemCls != null) __obj.updateDynamic("itemCls")(itemCls.asInstanceOf[js.Any])
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (notifyOwner != null) __obj.updateDynamic("notifyOwner")(js.Any.fromFunction1(notifyOwner))
     if (onContentChange != null) __obj.updateDynamic("onContentChange")(js.Any.fromFunction1(onContentChange))
-    if (overflowPadderEl != null) __obj.updateDynamic("overflowPadderEl")(overflowPadderEl)
+    if (overflowPadderEl != null) __obj.updateDynamic("overflowPadderEl")(overflowPadderEl.asInstanceOf[js.Any])
     if (removeChildEls != null) __obj.updateDynamic("removeChildEls")(js.Any.fromFunction1(removeChildEls))
     if (renderItems != null) __obj.updateDynamic("renderItems")(js.Any.fromFunction2(renderItems))
-    if (requires != null) __obj.updateDynamic("requires")(requires)
-    if (self != null) __obj.updateDynamic("self")(self)
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
-    if (statics != null) __obj.updateDynamic("statics")(statics)
-    if (tableAttrs != null) __obj.updateDynamic("tableAttrs")(tableAttrs)
-    if (tdAttrs != null) __obj.updateDynamic("tdAttrs")(tdAttrs)
-    if (trAttrs != null) __obj.updateDynamic("trAttrs")(trAttrs)
-    if (uses != null) __obj.updateDynamic("uses")(uses)
+    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
+    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
+    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
+    if (tableAttrs != null) __obj.updateDynamic("tableAttrs")(tableAttrs.asInstanceOf[js.Any])
+    if (tdAttrs != null) __obj.updateDynamic("tdAttrs")(tdAttrs.asInstanceOf[js.Any])
+    if (trAttrs != null) __obj.updateDynamic("trAttrs")(trAttrs.asInstanceOf[js.Any])
+    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITable]
   }
 }

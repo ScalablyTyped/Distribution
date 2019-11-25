@@ -13,8 +13,8 @@ trait IOtherExpectation extends Expectation {
 object IOtherExpectation {
   @scala.inline
   def apply(description: String, `type`: other): IOtherExpectation = {
-    val __obj = js.Dynamic.literal(description = description)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOtherExpectation]
   }
 }

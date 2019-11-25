@@ -14,8 +14,8 @@ object Anon_CustomHeadersFilter {
   @scala.inline
   def apply(customHeaders: StringDictionary[String] = null, filter: String = null): Anon_CustomHeadersFilter = {
     val __obj = js.Dynamic.literal()
-    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CustomHeadersFilter]
   }
 }

@@ -39,7 +39,7 @@ object Typeofgray {
     labels: js.Array[gray],
     rgb: GRAY => RGB
   ): Typeofgray = {
-    val __obj = js.Dynamic.literal(channels = channels, cmyk = js.Any.fromFunction1(cmyk), hex = js.Any.fromFunction1(hex), hsl = js.Any.fromFunction1(hsl), hsv = js.Any.fromFunction1(hsv), hwb = js.Any.fromFunction1(hwb), lab = js.Any.fromFunction1(lab), labels = labels, rgb = js.Any.fromFunction1(rgb))
+    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], cmyk = js.Any.fromFunction1(cmyk), hex = js.Any.fromFunction1(hex), hsl = js.Any.fromFunction1(hsl), hsv = js.Any.fromFunction1(hsv), hwb = js.Any.fromFunction1(hwb), lab = js.Any.fromFunction1(lab), labels = labels.asInstanceOf[js.Any], rgb = js.Any.fromFunction1(rgb))
   
     __obj.asInstanceOf[Typeofgray]
   }

@@ -12,7 +12,7 @@ trait HttpAuth extends js.Object {
 object HttpAuth {
   @scala.inline
   def apply(Password: String, Username: String): HttpAuth = {
-    val __obj = js.Dynamic.literal(Password = Password, Username = Username)
+    val __obj = js.Dynamic.literal(Password = Password.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HttpAuth]
   }

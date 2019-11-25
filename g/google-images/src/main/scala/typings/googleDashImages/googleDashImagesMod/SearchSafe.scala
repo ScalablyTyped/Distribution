@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait SearchSafe extends js.Object
 
+object SearchSafe {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def high: typings.googleDashImages.googleDashImagesStrings.high = this.cast("high")
+  @scala.inline
+  def medium: typings.googleDashImages.googleDashImagesStrings.medium = this.cast("medium")
+  @scala.inline
+  def off: typings.googleDashImages.googleDashImagesStrings.off = this.cast("off")
+}
+

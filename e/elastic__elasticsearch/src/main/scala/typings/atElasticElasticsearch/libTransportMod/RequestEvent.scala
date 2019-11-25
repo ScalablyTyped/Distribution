@@ -22,10 +22,10 @@ object RequestEvent {
     statusCode: Int | Double = null,
     warnings: js.Array[String] = null
   ): RequestEvent[T, C] = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], meta = meta)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestEvent[T, C]]
   }
 }

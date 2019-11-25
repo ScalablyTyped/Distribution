@@ -26,10 +26,10 @@ object EventObject {
     origin: String = null,
     `type`: String = null
   ): EventObject = {
-    val __obj = js.Dynamic.literal(name = name, start = start)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventObject]
   }
 }

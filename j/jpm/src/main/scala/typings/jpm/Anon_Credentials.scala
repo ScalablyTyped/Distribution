@@ -32,14 +32,14 @@ object Anon_Credentials {
     usernameField: String = null
   ): Anon_Credentials = {
     val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction1(onComplete))
-    if (formSubmitURL != null) __obj.updateDynamic("formSubmitURL")(formSubmitURL)
+    if (formSubmitURL != null) __obj.updateDynamic("formSubmitURL")(formSubmitURL.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (passwordField != null) __obj.updateDynamic("passwordField")(passwordField)
-    if (realm != null) __obj.updateDynamic("realm")(realm)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (username != null) __obj.updateDynamic("username")(username)
-    if (usernameField != null) __obj.updateDynamic("usernameField")(usernameField)
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (passwordField != null) __obj.updateDynamic("passwordField")(passwordField.asInstanceOf[js.Any])
+    if (realm != null) __obj.updateDynamic("realm")(realm.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
+    if (usernameField != null) __obj.updateDynamic("usernameField")(usernameField.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Credentials]
   }
 }

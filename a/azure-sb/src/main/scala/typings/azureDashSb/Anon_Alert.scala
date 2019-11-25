@@ -17,7 +17,7 @@ trait Anon_Alert extends js.Object {
 object Anon_Alert {
   @scala.inline
   def apply(alert: String, aps: js.Object, badge: Double, expiry: Date, payload: js.Object, sound: String): Anon_Alert = {
-    val __obj = js.Dynamic.literal(alert = alert, aps = aps, badge = badge, expiry = expiry, payload = payload, sound = sound)
+    val __obj = js.Dynamic.literal(alert = alert.asInstanceOf[js.Any], aps = aps.asInstanceOf[js.Any], badge = badge.asInstanceOf[js.Any], expiry = expiry.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], sound = sound.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Alert]
   }

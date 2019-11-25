@@ -57,14 +57,14 @@ object _ImportJobRequest {
     SegmentName: String = null
   ): _ImportJobRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DefineSegment)) __obj.updateDynamic("DefineSegment")(DefineSegment)
-    if (ExternalId != null) __obj.updateDynamic("ExternalId")(ExternalId)
+    if (!js.isUndefined(DefineSegment)) __obj.updateDynamic("DefineSegment")(DefineSegment.asInstanceOf[js.Any])
+    if (ExternalId != null) __obj.updateDynamic("ExternalId")(ExternalId.asInstanceOf[js.Any])
     if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
-    if (!js.isUndefined(RegisterEndpoints)) __obj.updateDynamic("RegisterEndpoints")(RegisterEndpoints)
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn)
-    if (S3Url != null) __obj.updateDynamic("S3Url")(S3Url)
-    if (SegmentId != null) __obj.updateDynamic("SegmentId")(SegmentId)
-    if (SegmentName != null) __obj.updateDynamic("SegmentName")(SegmentName)
+    if (!js.isUndefined(RegisterEndpoints)) __obj.updateDynamic("RegisterEndpoints")(RegisterEndpoints.asInstanceOf[js.Any])
+    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
+    if (S3Url != null) __obj.updateDynamic("S3Url")(S3Url.asInstanceOf[js.Any])
+    if (SegmentId != null) __obj.updateDynamic("SegmentId")(SegmentId.asInstanceOf[js.Any])
+    if (SegmentName != null) __obj.updateDynamic("SegmentName")(SegmentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ImportJobRequest]
   }
 }

@@ -18,9 +18,9 @@ object FormEncodedOptions {
     sorted: js.UndefOr[Boolean] = js.undefined
   ): FormEncodedOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignorenull)) __obj.updateDynamic("ignorenull")(ignorenull)
-    if (!js.isUndefined(skipIndex)) __obj.updateDynamic("skipIndex")(skipIndex)
-    if (!js.isUndefined(sorted)) __obj.updateDynamic("sorted")(sorted)
+    if (!js.isUndefined(ignorenull)) __obj.updateDynamic("ignorenull")(ignorenull.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipIndex)) __obj.updateDynamic("skipIndex")(skipIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(sorted)) __obj.updateDynamic("sorted")(sorted.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormEncodedOptions]
   }
 }

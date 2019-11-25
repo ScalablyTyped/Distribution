@@ -33,7 +33,7 @@ object BusLineSearchOptions {
     if (onGetBusListComplete != null) __obj.updateDynamic("onGetBusListComplete")(js.Any.fromFunction1(onGetBusListComplete))
     if (onMarkersSet != null) __obj.updateDynamic("onMarkersSet")(js.Any.fromFunction1(onMarkersSet))
     if (onPolylinesSet != null) __obj.updateDynamic("onPolylinesSet")(js.Any.fromFunction1(onPolylinesSet))
-    if (renderOptions != null) __obj.updateDynamic("renderOptions")(renderOptions)
+    if (renderOptions != null) __obj.updateDynamic("renderOptions")(renderOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[BusLineSearchOptions]
   }
 }

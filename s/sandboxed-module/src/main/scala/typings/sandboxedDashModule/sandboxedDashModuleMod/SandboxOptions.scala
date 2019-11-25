@@ -61,12 +61,12 @@ object SandboxOptions {
     sourceTransformersSingleOnly: js.UndefOr[Boolean] = js.undefined
   ): SandboxOptions = {
     val __obj = js.Dynamic.literal()
-    if (globals != null) __obj.updateDynamic("globals")(globals)
-    if (locals != null) __obj.updateDynamic("locals")(locals)
-    if (requires != null) __obj.updateDynamic("requires")(requires)
-    if (!js.isUndefined(singleOnly)) __obj.updateDynamic("singleOnly")(singleOnly)
-    if (sourceTransformers != null) __obj.updateDynamic("sourceTransformers")(sourceTransformers)
-    if (!js.isUndefined(sourceTransformersSingleOnly)) __obj.updateDynamic("sourceTransformersSingleOnly")(sourceTransformersSingleOnly)
+    if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
+    if (locals != null) __obj.updateDynamic("locals")(locals.asInstanceOf[js.Any])
+    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleOnly)) __obj.updateDynamic("singleOnly")(singleOnly.asInstanceOf[js.Any])
+    if (sourceTransformers != null) __obj.updateDynamic("sourceTransformers")(sourceTransformers.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceTransformersSingleOnly)) __obj.updateDynamic("sourceTransformersSingleOnly")(sourceTransformersSingleOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[SandboxOptions]
   }
 }

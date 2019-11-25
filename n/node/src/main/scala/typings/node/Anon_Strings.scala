@@ -22,8 +22,8 @@ object Anon_Strings {
   @scala.inline
   def apply(strings: js.UndefOr[Boolean] = js.undefined, wasm: js.UndefOr[Boolean] = js.undefined): Anon_Strings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(strings)) __obj.updateDynamic("strings")(strings)
-    if (!js.isUndefined(wasm)) __obj.updateDynamic("wasm")(wasm)
+    if (!js.isUndefined(strings)) __obj.updateDynamic("strings")(strings.asInstanceOf[js.Any])
+    if (!js.isUndefined(wasm)) __obj.updateDynamic("wasm")(wasm.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Strings]
   }
 }

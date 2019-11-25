@@ -18,9 +18,9 @@ object OrderreportsListTransactionsResponse {
     transactions: js.Array[OrderReportTransaction] = null
   ): OrderreportsListTransactionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (transactions != null) __obj.updateDynamic("transactions")(transactions)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (transactions != null) __obj.updateDynamic("transactions")(transactions.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderreportsListTransactionsResponse]
   }
 }

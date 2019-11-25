@@ -12,7 +12,7 @@ trait RTCOAuthCredential extends js.Object {
 object RTCOAuthCredential {
   @scala.inline
   def apply(accessToken: java.lang.String, macKey: java.lang.String): RTCOAuthCredential = {
-    val __obj = js.Dynamic.literal(accessToken = accessToken, macKey = macKey)
+    val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], macKey = macKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RTCOAuthCredential]
   }

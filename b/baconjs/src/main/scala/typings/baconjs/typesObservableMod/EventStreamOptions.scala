@@ -11,7 +11,7 @@ trait EventStreamOptions extends js.Object {
 object EventStreamOptions {
   @scala.inline
   def apply(forceAsync: Boolean): EventStreamOptions = {
-    val __obj = js.Dynamic.literal(forceAsync = forceAsync)
+    val __obj = js.Dynamic.literal(forceAsync = forceAsync.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventStreamOptions]
   }

@@ -23,12 +23,12 @@ object ItemPokemonChange {
     conditions: js.Array[String] = null,
     revive: js.UndefOr[Boolean] = js.undefined
   ): ItemPokemonChange = {
-    val __obj = js.Dynamic.literal(field = field)
-    if (change != null) __obj.updateDynamic("change")(change)
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
+    if (change != null) __obj.updateDynamic("change")(change.asInstanceOf[js.Any])
     if (change_by != null) __obj.updateDynamic("change_by")(change_by.asInstanceOf[js.Any])
     if (change_by_percent != null) __obj.updateDynamic("change_by_percent")(change_by_percent.asInstanceOf[js.Any])
-    if (conditions != null) __obj.updateDynamic("conditions")(conditions)
-    if (!js.isUndefined(revive)) __obj.updateDynamic("revive")(revive)
+    if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
+    if (!js.isUndefined(revive)) __obj.updateDynamic("revive")(revive.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemPokemonChange]
   }
 }

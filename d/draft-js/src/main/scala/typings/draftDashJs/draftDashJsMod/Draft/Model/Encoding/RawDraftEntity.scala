@@ -18,7 +18,7 @@ trait RawDraftEntity[T] extends js.Object {
 object RawDraftEntity {
   @scala.inline
   def apply[T](data: T, mutability: DraftEntityMutability, `type`: DraftEntityType): RawDraftEntity[T] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], mutability = mutability)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], mutability = mutability.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawDraftEntity[T]]
   }

@@ -20,7 +20,7 @@ object Anon_Alg {
     val __obj = js.Dynamic.literal()
     if (alg != null) __obj.updateDynamic("alg")(alg.asInstanceOf[js.Any])
     if (lifetime_in_seconds != null) __obj.updateDynamic("lifetime_in_seconds")(lifetime_in_seconds.asInstanceOf[js.Any])
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Alg]
   }
 }

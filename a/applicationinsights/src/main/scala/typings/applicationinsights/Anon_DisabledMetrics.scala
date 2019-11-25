@@ -13,7 +13,7 @@ trait Anon_DisabledMetrics extends js.Object {
 object Anon_DisabledMetrics {
   @scala.inline
   def apply(disabledMetrics: IDisabledExtendedMetrics, isEnabled: Boolean): Anon_DisabledMetrics = {
-    val __obj = js.Dynamic.literal(disabledMetrics = disabledMetrics, isEnabled = isEnabled)
+    val __obj = js.Dynamic.literal(disabledMetrics = disabledMetrics.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DisabledMetrics]
   }

@@ -18,9 +18,9 @@ object Anon_BoundedByResults {
     strictBounds: js.UndefOr[Boolean] = js.undefined
   ): Anon_BoundedByResults = {
     val __obj = js.Dynamic.literal()
-    if (boundedBy != null) __obj.updateDynamic("boundedBy")(boundedBy)
+    if (boundedBy != null) __obj.updateDynamic("boundedBy")(boundedBy.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictBounds)) __obj.updateDynamic("strictBounds")(strictBounds)
+    if (!js.isUndefined(strictBounds)) __obj.updateDynamic("strictBounds")(strictBounds.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BoundedByResults]
   }
 }

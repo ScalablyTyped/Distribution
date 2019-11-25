@@ -57,13 +57,13 @@ object JoyrideTemplate {
     wrapper: String = null
   ): JoyrideTemplate = {
     val __obj = js.Dynamic.literal()
-    if (button != null) __obj.updateDynamic("button")(button)
-    if (exposeCover != null) __obj.updateDynamic("exposeCover")(exposeCover)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (modal != null) __obj.updateDynamic("modal")(modal)
-    if (timer != null) __obj.updateDynamic("timer")(timer)
-    if (tip != null) __obj.updateDynamic("tip")(tip)
-    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper)
+    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
+    if (exposeCover != null) __obj.updateDynamic("exposeCover")(exposeCover.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (modal != null) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
+    if (timer != null) __obj.updateDynamic("timer")(timer.asInstanceOf[js.Any])
+    if (tip != null) __obj.updateDynamic("tip")(tip.asInstanceOf[js.Any])
+    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[JoyrideTemplate]
   }
 }

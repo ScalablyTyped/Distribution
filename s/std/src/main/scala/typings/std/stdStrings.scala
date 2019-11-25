@@ -1980,7 +1980,7 @@ object stdStrings {
   sealed trait nextunique extends IDBCursorDirection
   
   @js.native
-  sealed trait nfc
+  sealed trait nfc_
     extends AuthenticatorTransport
        with Transport
   
@@ -2326,7 +2326,7 @@ object stdStrings {
   sealed trait raw extends KeyFormat
   
   @js.native
-  sealed trait readonly extends IDBTransactionMode
+  sealed trait readonly_ extends IDBTransactionMode
   
   @js.native
   sealed trait readwrite extends IDBTransactionMode
@@ -2388,7 +2388,7 @@ object stdStrings {
   sealed trait require extends RTCRtcpMuxPolicy
   
   @js.native
-  sealed trait required
+  sealed trait required_
     extends CredentialMediationRequirement
        with MediaKeysRequirement
        with UserVerificationRequirement
@@ -2897,7 +2897,7 @@ object stdStrings {
   sealed trait usable extends MediaKeyStatus
   
   @js.native
-  sealed trait usb
+  sealed trait usb_
     extends AuthenticatorTransport
        with Transport
   
@@ -4236,7 +4236,7 @@ object stdStrings {
   @scala.inline
   def nextunique: nextunique = "nextunique".asInstanceOf[nextunique]
   @scala.inline
-  def nfc: nfc = "nfc".asInstanceOf[nfc]
+  def nfc_ : nfc_ = "nfc".asInstanceOf[nfc_]
   @scala.inline
   def `no-cache`: `no-cache` = "no-cache".asInstanceOf[`no-cache`]
   @scala.inline
@@ -4454,7 +4454,7 @@ object stdStrings {
   @scala.inline
   def raw: raw = "raw".asInstanceOf[raw]
   @scala.inline
-  def readonly: readonly = "readonly".asInstanceOf[readonly]
+  def readonly_ : readonly_ = "readonly".asInstanceOf[readonly_]
   @scala.inline
   def readwrite: readwrite = "readwrite".asInstanceOf[readwrite]
   @scala.inline
@@ -4490,7 +4490,7 @@ object stdStrings {
   @scala.inline
   def require: require = "require".asInstanceOf[require]
   @scala.inline
-  def required: required = "required".asInstanceOf[required]
+  def required_ : required_ = "required".asInstanceOf[required_]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
@@ -4808,7 +4808,7 @@ object stdStrings {
   @scala.inline
   def usable: usable = "usable".asInstanceOf[usable]
   @scala.inline
-  def usb: usb = "usb".asInstanceOf[usb]
+  def usb_ : usb_ = "usb".asInstanceOf[usb_]
   @scala.inline
   def use: use = "use".asInstanceOf[use]
   @scala.inline

@@ -13,7 +13,7 @@ trait WebServerOptions[TProcessor, THandler] extends js.Object {
 object WebServerOptions {
   @scala.inline
   def apply[TProcessor, THandler](services: StringDictionary[Anon_HandlerProcessor[TProcessor, THandler]]): WebServerOptions[TProcessor, THandler] = {
-    val __obj = js.Dynamic.literal(services = services)
+    val __obj = js.Dynamic.literal(services = services.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebServerOptions[TProcessor, THandler]]
   }

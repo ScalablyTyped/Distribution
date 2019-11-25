@@ -35,7 +35,7 @@ object JsonStyle {
     quote: String,
     quote_keys: Boolean
   ): JsonStyle = {
-    val __obj = js.Dynamic.literal(has_comments = has_comments, has_newlines = has_newlines, has_trailing_comma = has_trailing_comma, has_whitespace = has_whitespace, indent = indent, newline = newline, quote = quote, quote_keys = quote_keys)
+    val __obj = js.Dynamic.literal(has_comments = has_comments.asInstanceOf[js.Any], has_newlines = has_newlines.asInstanceOf[js.Any], has_trailing_comma = has_trailing_comma.asInstanceOf[js.Any], has_whitespace = has_whitespace.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], newline = newline.asInstanceOf[js.Any], quote = quote.asInstanceOf[js.Any], quote_keys = quote_keys.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JsonStyle]
   }

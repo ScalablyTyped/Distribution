@@ -40,11 +40,11 @@ object Source {
     updateTime: String = null
   ): Source = {
     val __obj = js.Dynamic.literal()
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (profileMetadata != null) __obj.updateDynamic("profileMetadata")(profileMetadata)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (profileMetadata != null) __obj.updateDynamic("profileMetadata")(profileMetadata.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }
 }

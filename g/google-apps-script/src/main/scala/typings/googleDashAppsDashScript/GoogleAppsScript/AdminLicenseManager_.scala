@@ -24,7 +24,7 @@ object AdminLicenseManager_ {
     LicenseAssignments: LicenseAssignmentsCollection = null
   ): AdminLicenseManager_ = {
     val __obj = js.Dynamic.literal(newLicenseAssignment = js.Any.fromFunction0(newLicenseAssignment), newLicenseAssignmentInsert = js.Any.fromFunction0(newLicenseAssignmentInsert))
-    if (LicenseAssignments != null) __obj.updateDynamic("LicenseAssignments")(LicenseAssignments)
+    if (LicenseAssignments != null) __obj.updateDynamic("LicenseAssignments")(LicenseAssignments.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminLicenseManager_]
   }
 }

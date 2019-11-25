@@ -25,22 +25,16 @@ trait ResourceEvents[T] extends js.Object {
 object ResourceEvents {
   @scala.inline
   def apply[T](
-    addListener_data: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T],
-    emit_data: (data, T) => Boolean,
-    on_data: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T],
-    once_data: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T],
-    prependListener_data: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T],
-    prependOnceListener_data: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T],
-    removeListener_data: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T]
+    addListener: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T],
+    emit: (data, T) => Boolean,
+    on: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T],
+    once: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T],
+    prependListener: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T],
+    prependOnceListener: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T],
+    removeListener: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T]
   ): ResourceEvents[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addListener")(js.Any.fromFunction2(addListener_data))
-    __obj.updateDynamic("emit")(js.Any.fromFunction2(emit_data))
-    __obj.updateDynamic("on")(js.Any.fromFunction2(on_data))
-    __obj.updateDynamic("once")(js.Any.fromFunction2(once_data))
-    __obj.updateDynamic("prependListener")(js.Any.fromFunction2(prependListener_data))
-    __obj.updateDynamic("prependOnceListener")(js.Any.fromFunction2(prependOnceListener_data))
-    __obj.updateDynamic("removeListener")(js.Any.fromFunction2(removeListener_data))
+    val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), emit = js.Any.fromFunction2(emit), on = js.Any.fromFunction2(on), once = js.Any.fromFunction2(once), prependListener = js.Any.fromFunction2(prependListener), prependOnceListener = js.Any.fromFunction2(prependOnceListener), removeListener = js.Any.fromFunction2(removeListener))
+  
     __obj.asInstanceOf[ResourceEvents[T]]
   }
 }

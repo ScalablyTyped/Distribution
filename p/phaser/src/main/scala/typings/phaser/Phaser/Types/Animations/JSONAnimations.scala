@@ -18,7 +18,7 @@ trait JSONAnimations extends js.Object {
 object JSONAnimations {
   @scala.inline
   def apply(anims: js.Array[JSONAnimation], globalTimeScale: Double): JSONAnimations = {
-    val __obj = js.Dynamic.literal(anims = anims, globalTimeScale = globalTimeScale)
+    val __obj = js.Dynamic.literal(anims = anims.asInstanceOf[js.Any], globalTimeScale = globalTimeScale.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JSONAnimations]
   }

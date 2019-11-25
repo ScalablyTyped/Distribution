@@ -22,7 +22,7 @@ object ProjectsResource {
     groupStats: GroupStatsResource,
     groups: GroupsResource
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal(deleteEvents = js.Any.fromFunction1(deleteEvents), events = events, groupStats = groupStats, groups = groups)
+    val __obj = js.Dynamic.literal(deleteEvents = js.Any.fromFunction1(deleteEvents), events = events.asInstanceOf[js.Any], groupStats = groupStats.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProjectsResource]
   }

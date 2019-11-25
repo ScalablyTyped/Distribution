@@ -59,12 +59,12 @@ object ExceptionDetails {
     stackTrace: StackTrace = null,
     url: java.lang.String = null
   ): ExceptionDetails = {
-    val __obj = js.Dynamic.literal(columnNumber = columnNumber, exceptionId = exceptionId, lineNumber = lineNumber, text = text)
-    if (exception != null) __obj.updateDynamic("exception")(exception)
+    val __obj = js.Dynamic.literal(columnNumber = columnNumber.asInstanceOf[js.Any], exceptionId = exceptionId.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    if (exception != null) __obj.updateDynamic("exception")(exception.asInstanceOf[js.Any])
     if (executionContextId != null) __obj.updateDynamic("executionContextId")(executionContextId.asInstanceOf[js.Any])
-    if (scriptId != null) __obj.updateDynamic("scriptId")(scriptId)
-    if (stackTrace != null) __obj.updateDynamic("stackTrace")(stackTrace)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (scriptId != null) __obj.updateDynamic("scriptId")(scriptId.asInstanceOf[js.Any])
+    if (stackTrace != null) __obj.updateDynamic("stackTrace")(stackTrace.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExceptionDetails]
   }
 }

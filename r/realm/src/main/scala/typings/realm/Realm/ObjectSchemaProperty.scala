@@ -31,12 +31,12 @@ object ObjectSchemaProperty {
   ): ObjectSchemaProperty = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (!js.isUndefined(indexed)) __obj.updateDynamic("indexed")(indexed)
-    if (mapTo != null) __obj.updateDynamic("mapTo")(mapTo)
-    if (objectType != null) __obj.updateDynamic("objectType")(objectType)
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
-    if (property != null) __obj.updateDynamic("property")(property)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (!js.isUndefined(indexed)) __obj.updateDynamic("indexed")(indexed.asInstanceOf[js.Any])
+    if (mapTo != null) __obj.updateDynamic("mapTo")(mapTo.asInstanceOf[js.Any])
+    if (objectType != null) __obj.updateDynamic("objectType")(objectType.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectSchemaProperty]
   }
 }

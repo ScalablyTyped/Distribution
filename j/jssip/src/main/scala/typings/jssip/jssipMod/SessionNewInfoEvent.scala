@@ -14,7 +14,7 @@ trait SessionNewInfoEvent extends js.Object {
 object SessionNewInfoEvent {
   @scala.inline
   def apply(info: Info, originator: String, request: IncomingRequest | OutgoingRequest): SessionNewInfoEvent = {
-    val __obj = js.Dynamic.literal(info = info, originator = originator, request = request.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], originator = originator.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SessionNewInfoEvent]
   }

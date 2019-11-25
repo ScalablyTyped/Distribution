@@ -27,7 +27,7 @@ object Anon_BOX {
     PLANE: Double,
     SPHERE: Double
   ): Anon_BOX = {
-    val __obj = js.Dynamic.literal(BOX = BOX, COMPOUND = COMPOUND, CONVEXPOLYHEDRON = CONVEXPOLYHEDRON, CYLINDER = CYLINDER, HEIGHTFIELD = HEIGHTFIELD, PARTICLE = PARTICLE, PLANE = PLANE, SPHERE = SPHERE)
+    val __obj = js.Dynamic.literal(BOX = BOX.asInstanceOf[js.Any], COMPOUND = COMPOUND.asInstanceOf[js.Any], CONVEXPOLYHEDRON = CONVEXPOLYHEDRON.asInstanceOf[js.Any], CYLINDER = CYLINDER.asInstanceOf[js.Any], HEIGHTFIELD = HEIGHTFIELD.asInstanceOf[js.Any], PARTICLE = PARTICLE.asInstanceOf[js.Any], PLANE = PLANE.asInstanceOf[js.Any], SPHERE = SPHERE.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BOX]
   }

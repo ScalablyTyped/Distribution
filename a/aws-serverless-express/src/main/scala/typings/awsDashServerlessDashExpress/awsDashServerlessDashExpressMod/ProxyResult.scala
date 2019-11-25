@@ -11,7 +11,7 @@ trait ProxyResult extends js.Object {
 object ProxyResult {
   @scala.inline
   def apply(promise: js.Promise[Response]): ProxyResult = {
-    val __obj = js.Dynamic.literal(promise = promise)
+    val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ProxyResult]
   }

@@ -13,7 +13,7 @@ object SearchBoxExposed {
   @scala.inline
   def apply(defaultRefinement: String = null): SearchBoxExposed = {
     val __obj = js.Dynamic.literal()
-    if (defaultRefinement != null) __obj.updateDynamic("defaultRefinement")(defaultRefinement)
+    if (defaultRefinement != null) __obj.updateDynamic("defaultRefinement")(defaultRefinement.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchBoxExposed]
   }
 }

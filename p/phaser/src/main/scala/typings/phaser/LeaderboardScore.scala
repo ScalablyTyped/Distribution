@@ -51,7 +51,7 @@ object LeaderboardScore {
     scoreFormatted: String,
     timestamp: integer
   ): LeaderboardScore = {
-    val __obj = js.Dynamic.literal(data = data, playerID = playerID, playerName = playerName, playerPhotoURL = playerPhotoURL, rank = rank, score = score, scoreFormatted = scoreFormatted, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], playerID = playerID.asInstanceOf[js.Any], playerName = playerName.asInstanceOf[js.Any], playerPhotoURL = playerPhotoURL.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], scoreFormatted = scoreFormatted.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LeaderboardScore]
   }

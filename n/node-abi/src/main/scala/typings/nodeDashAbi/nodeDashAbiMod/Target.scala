@@ -14,7 +14,7 @@ trait Target extends js.Object {
 object Target {
   @scala.inline
   def apply(abi: String, lts: Boolean, runtime: Runtime, target: String): Target = {
-    val __obj = js.Dynamic.literal(abi = abi, lts = lts, runtime = runtime, target = target)
+    val __obj = js.Dynamic.literal(abi = abi.asInstanceOf[js.Any], lts = lts.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Target]
   }

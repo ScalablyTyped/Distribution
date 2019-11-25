@@ -25,7 +25,7 @@ object IPrintCustomItemListOptionDetails {
     trySetValue: js.Any => Boolean,
     value: js.Any
   ): IPrintCustomItemListOptionDetails = {
-    val __obj = js.Dynamic.literal(addItem = js.Any.fromFunction2(addItem), displayName = displayName, errorText = errorText, items = items, optionId = optionId, optionType = optionType, state = state, trySetValue = js.Any.fromFunction1(trySetValue), value = value)
+    val __obj = js.Dynamic.literal(addItem = js.Any.fromFunction2(addItem), displayName = displayName.asInstanceOf[js.Any], errorText = errorText.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], optionId = optionId.asInstanceOf[js.Any], optionType = optionType.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], trySetValue = js.Any.fromFunction1(trySetValue), value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPrintCustomItemListOptionDetails]
   }

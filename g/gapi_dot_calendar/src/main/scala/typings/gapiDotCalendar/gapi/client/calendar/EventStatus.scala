@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 */
 trait EventStatus extends js.Object
 
+object EventStatus {
+  @scala.inline
+  def cancelled: typings.gapiDotCalendar.gapiDotCalendarStrings.cancelled = this.cast("cancelled")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def confirmed: typings.gapiDotCalendar.gapiDotCalendarStrings.confirmed = this.cast("confirmed")
+  @scala.inline
+  def tentative: typings.gapiDotCalendar.gapiDotCalendarStrings.tentative = this.cast("tentative")
+}
+

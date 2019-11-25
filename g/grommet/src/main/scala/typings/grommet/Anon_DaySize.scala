@@ -20,10 +20,10 @@ object Anon_DaySize {
     slideDuration: String = null
   ): Anon_DaySize = {
     val __obj = js.Dynamic.literal()
-    if (daySize != null) __obj.updateDynamic("daySize")(daySize)
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize)
+    if (daySize != null) __obj.updateDynamic("daySize")(daySize.asInstanceOf[js.Any])
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
-    if (slideDuration != null) __obj.updateDynamic("slideDuration")(slideDuration)
+    if (slideDuration != null) __obj.updateDynamic("slideDuration")(slideDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DaySize]
   }
 }

@@ -13,8 +13,8 @@ trait JestResolverOptions extends js.Object {
 object JestResolverOptions {
   @scala.inline
   def apply(basedir: String, defaultResolver: (String, js.Any) => String, extensions: js.Array[String] = null): JestResolverOptions = {
-    val __obj = js.Dynamic.literal(basedir = basedir, defaultResolver = js.Any.fromFunction2(defaultResolver))
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    val __obj = js.Dynamic.literal(basedir = basedir.asInstanceOf[js.Any], defaultResolver = js.Any.fromFunction2(defaultResolver))
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[JestResolverOptions]
   }
 }

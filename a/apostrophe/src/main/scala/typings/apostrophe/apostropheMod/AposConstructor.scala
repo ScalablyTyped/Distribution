@@ -11,7 +11,7 @@ trait AposConstructor[M, O] extends js.Object {
   var afterListen: js.UndefOr[js.Function0[Unit]] = js.undefined
   var baseUrl: js.UndefOr[String] = js.undefined
   var initFailed: js.UndefOr[js.Function1[/* error */ js.Any, Unit]] = js.undefined
-  var modules: /* import warning: ImportType.apply c Unsupported type mapping: 
+  var modules: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in apostrophe.apostrophe.AposCoreModules & M ]:? apostrophe.apostrophe.AposModuleOptions<{}> | O}
     */ typings.apostrophe.apostropheStrings.AposConstructor with js.Any
   var prefix: js.UndefOr[String] = js.undefined
@@ -23,7 +23,7 @@ trait AposConstructor[M, O] extends js.Object {
 object AposConstructor {
   @scala.inline
   def apply[M, O](
-    modules: /* import warning: ImportType.apply c Unsupported type mapping: 
+    modules: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in apostrophe.apostrophe.AposCoreModules & M ]:? apostrophe.apostrophe.AposModuleOptions<{}> | O}
     */ typings.apostrophe.apostropheStrings.AposConstructor with js.Any,
     shortName: String,
@@ -35,14 +35,14 @@ object AposConstructor {
     root: String = null,
     rootDir: String = null
   ): AposConstructor[M, O] = {
-    val __obj = js.Dynamic.literal(modules = modules, shortName = shortName)
+    val __obj = js.Dynamic.literal(modules = modules.asInstanceOf[js.Any], shortName = shortName.asInstanceOf[js.Any])
     if (afterInit != null) __obj.updateDynamic("afterInit")(js.Any.fromFunction0(afterInit))
     if (afterListen != null) __obj.updateDynamic("afterListen")(js.Any.fromFunction0(afterListen))
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
     if (initFailed != null) __obj.updateDynamic("initFailed")(js.Any.fromFunction1(initFailed))
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (rootDir != null) __obj.updateDynamic("rootDir")(rootDir)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (rootDir != null) __obj.updateDynamic("rootDir")(rootDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[AposConstructor[M, O]]
   }
 }

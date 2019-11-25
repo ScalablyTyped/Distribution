@@ -17,3 +17,26 @@ import scala.scalajs.js.annotation._
 */
 trait HttpMethod extends js.Object
 
+object HttpMethod {
+  @scala.inline
+  def CONNECT: typings.urllib.urllibStrings.CONNECT = this.cast("CONNECT")
+  @scala.inline
+  def DELETE: typings.urllib.urllibStrings.DELETE = this.cast("DELETE")
+  @scala.inline
+  def GET: typings.urllib.urllibStrings.GET = this.cast("GET")
+  @scala.inline
+  def HEAD: typings.urllib.urllibStrings.HEAD = this.cast("HEAD")
+  @scala.inline
+  def OPTIONS: typings.urllib.urllibStrings.OPTIONS = this.cast("OPTIONS")
+  @scala.inline
+  def PATCH: typings.urllib.urllibStrings.PATCH = this.cast("PATCH")
+  @scala.inline
+  def POST: typings.urllib.urllibStrings.POST = this.cast("POST")
+  @scala.inline
+  def PUT: typings.urllib.urllibStrings.PUT = this.cast("PUT")
+  @scala.inline
+  def TRACE: typings.urllib.urllibStrings.TRACE = this.cast("TRACE")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

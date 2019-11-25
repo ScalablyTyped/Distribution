@@ -21,7 +21,7 @@ object Anon_HalfExtentsHeightSegments {
     widthSegments: Int | Double = null
   ): Anon_HalfExtentsHeightSegments = {
     val __obj = js.Dynamic.literal()
-    if (halfExtents != null) __obj.updateDynamic("halfExtents")(halfExtents)
+    if (halfExtents != null) __obj.updateDynamic("halfExtents")(halfExtents.asInstanceOf[js.Any])
     if (heightSegments != null) __obj.updateDynamic("heightSegments")(heightSegments.asInstanceOf[js.Any])
     if (lengthSegments != null) __obj.updateDynamic("lengthSegments")(lengthSegments.asInstanceOf[js.Any])
     if (widthSegments != null) __obj.updateDynamic("widthSegments")(widthSegments.asInstanceOf[js.Any])

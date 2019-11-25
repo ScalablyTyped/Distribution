@@ -16,7 +16,7 @@ object Anon_BackgroundBorder {
   @scala.inline
   def apply(background: String = null, border: BorderType = null, pad: PadType = null): Anon_BackgroundBorder = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background)
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (pad != null) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackgroundBorder]

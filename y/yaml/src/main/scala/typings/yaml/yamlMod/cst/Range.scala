@@ -21,7 +21,7 @@ object Range {
     origEnd: Int | Double = null,
     origStart: Int | Double = null
   ): Range = {
-    val __obj = js.Dynamic.literal(end = end, isEmpty = js.Any.fromFunction0(isEmpty), start = start)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], isEmpty = js.Any.fromFunction0(isEmpty), start = start.asInstanceOf[js.Any])
     if (origEnd != null) __obj.updateDynamic("origEnd")(origEnd.asInstanceOf[js.Any])
     if (origStart != null) __obj.updateDynamic("origStart")(origStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[Range]

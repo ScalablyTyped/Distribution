@@ -27,9 +27,9 @@ object Options {
     showZoomBar: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(showControlButton)) __obj.updateDynamic("showControlButton")(showControlButton)
-    if (!js.isUndefined(showZoomBar)) __obj.updateDynamic("showZoomBar")(showZoomBar)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(showControlButton)) __obj.updateDynamic("showControlButton")(showControlButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(showZoomBar)) __obj.updateDynamic("showZoomBar")(showZoomBar.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

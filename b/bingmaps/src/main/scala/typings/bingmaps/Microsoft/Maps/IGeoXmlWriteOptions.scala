@@ -33,12 +33,12 @@ object IGeoXmlWriteOptions {
     xmlFormat: GeoXmlFormat = null
   ): IGeoXmlWriteOptions = {
     val __obj = js.Dynamic.literal()
-    if (indentChars != null) __obj.updateDynamic("indentChars")(indentChars)
-    if (newLineChars != null) __obj.updateDynamic("newLineChars")(newLineChars)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (!js.isUndefined(roundLocations)) __obj.updateDynamic("roundLocations")(roundLocations)
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate)
-    if (xmlFormat != null) __obj.updateDynamic("xmlFormat")(xmlFormat)
+    if (indentChars != null) __obj.updateDynamic("indentChars")(indentChars.asInstanceOf[js.Any])
+    if (newLineChars != null) __obj.updateDynamic("newLineChars")(newLineChars.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (!js.isUndefined(roundLocations)) __obj.updateDynamic("roundLocations")(roundLocations.asInstanceOf[js.Any])
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
+    if (xmlFormat != null) __obj.updateDynamic("xmlFormat")(xmlFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGeoXmlWriteOptions]
   }
 }

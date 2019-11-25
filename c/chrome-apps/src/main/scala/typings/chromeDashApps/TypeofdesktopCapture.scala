@@ -25,11 +25,11 @@ trait TypeofdesktopCapture extends js.Object {
   def chooseDesktopMedia(
     sources: js.Array[
       ToStringLiteral[
-        /* import warning: ImportType.apply Failed type conversion: typeof DesktopCaptureSourceType */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof DesktopCaptureSourceType */ js.Any, 
         String, 
         Exclude[
           String, 
-          /* import warning: ImportType.apply Failed type conversion: typeof DesktopCaptureSourceType[keyof typeof DesktopCaptureSourceType] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof DesktopCaptureSourceType[keyof typeof DesktopCaptureSourceType] */ js.Any
         ]
       ]
     ],
@@ -44,16 +44,16 @@ object TypeofdesktopCapture {
     cancelChooseDesktopMedia: integer => Unit,
     chooseDesktopMedia: (js.Array[
       ToStringLiteral[
-        /* import warning: ImportType.apply Failed type conversion: typeof DesktopCaptureSourceType */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof DesktopCaptureSourceType */ js.Any, 
         String, 
         Exclude[
           String, 
-          /* import warning: ImportType.apply Failed type conversion: typeof DesktopCaptureSourceType[keyof typeof DesktopCaptureSourceType] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof DesktopCaptureSourceType[keyof typeof DesktopCaptureSourceType] */ js.Any
         ]
       ]
     ], js.Function1[/* streamId */ String, Unit]) => integer
   ): TypeofdesktopCapture = {
-    val __obj = js.Dynamic.literal(DesktopCaptureSourceType = DesktopCaptureSourceType, cancelChooseDesktopMedia = js.Any.fromFunction1(cancelChooseDesktopMedia), chooseDesktopMedia = js.Any.fromFunction2(chooseDesktopMedia))
+    val __obj = js.Dynamic.literal(DesktopCaptureSourceType = DesktopCaptureSourceType.asInstanceOf[js.Any], cancelChooseDesktopMedia = js.Any.fromFunction1(cancelChooseDesktopMedia), chooseDesktopMedia = js.Any.fromFunction2(chooseDesktopMedia))
   
     __obj.asInstanceOf[TypeofdesktopCapture]
   }

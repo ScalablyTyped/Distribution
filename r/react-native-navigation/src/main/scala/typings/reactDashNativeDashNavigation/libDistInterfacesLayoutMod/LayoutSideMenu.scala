@@ -38,11 +38,11 @@ object LayoutSideMenu {
     options: Options = null,
     right: LayoutStackChildren = null
   ): LayoutSideMenu = {
-    val __obj = js.Dynamic.literal(center = center)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (left != null) __obj.updateDynamic("left")(left)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (right != null) __obj.updateDynamic("right")(right)
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutSideMenu]
   }
 }

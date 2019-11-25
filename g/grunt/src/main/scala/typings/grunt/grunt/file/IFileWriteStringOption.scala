@@ -43,8 +43,8 @@ object IFileWriteStringOption {
     noProcess: js.Any = null,
     process: (/* contents */ java.lang.String, /* srcpath */ java.lang.String, /* destpath */ java.lang.String) => java.lang.String | Boolean = null
   ): IFileWriteStringOption = {
-    val __obj = js.Dynamic.literal(encoding = encoding)
-    if (noProcess != null) __obj.updateDynamic("noProcess")(noProcess)
+    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+    if (noProcess != null) __obj.updateDynamic("noProcess")(noProcess.asInstanceOf[js.Any])
     if (process != null) __obj.updateDynamic("process")(js.Any.fromFunction3(process))
     __obj.asInstanceOf[IFileWriteStringOption]
   }

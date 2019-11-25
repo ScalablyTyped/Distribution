@@ -12,8 +12,8 @@ trait InsightsQueryResponse extends js.Object {
 object InsightsQueryResponse {
   @scala.inline
   def apply(query_id: String, items: js.Array[InsightsItem] = null): InsightsQueryResponse = {
-    val __obj = js.Dynamic.literal(query_id = query_id)
-    if (items != null) __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(query_id = query_id.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightsQueryResponse]
   }
 }

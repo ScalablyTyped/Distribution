@@ -13,7 +13,7 @@ trait Anon_1[Holder /* <: js.Array[_] */, Tuple /* <: js.Array[_] */] extends js
 object Anon_1 {
   @scala.inline
   def apply[Holder /* <: js.Array[_] */, Tuple /* <: js.Array[_] */](finite: js.Tuple2[Tuple, js.Array[js.Any]], matched: js.Tuple2[Holder, Tuple], unmatched: js.Any): Anon_1[Holder, Tuple] = {
-    val __obj = js.Dynamic.literal(finite = finite, matched = matched, unmatched = unmatched)
+    val __obj = js.Dynamic.literal(finite = finite.asInstanceOf[js.Any], matched = matched.asInstanceOf[js.Any], unmatched = unmatched.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_1[Holder, Tuple]]
   }

@@ -15,7 +15,7 @@ trait _AnalyticsExportDestination extends js.Object {
 object _AnalyticsExportDestination {
   @scala.inline
   def apply(S3BucketDestination: _AnalyticsS3BucketDestination): _AnalyticsExportDestination = {
-    val __obj = js.Dynamic.literal(S3BucketDestination = S3BucketDestination)
+    val __obj = js.Dynamic.literal(S3BucketDestination = S3BucketDestination.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_AnalyticsExportDestination]
   }

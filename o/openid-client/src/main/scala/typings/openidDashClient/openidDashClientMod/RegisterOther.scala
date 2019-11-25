@@ -21,8 +21,8 @@ object RegisterOther {
   @scala.inline
   def apply(initialAccessToken: String = null, jwks: JSONWebKeySet = null): RegisterOther = {
     val __obj = js.Dynamic.literal()
-    if (initialAccessToken != null) __obj.updateDynamic("initialAccessToken")(initialAccessToken)
-    if (jwks != null) __obj.updateDynamic("jwks")(jwks)
+    if (initialAccessToken != null) __obj.updateDynamic("initialAccessToken")(initialAccessToken.asInstanceOf[js.Any])
+    if (jwks != null) __obj.updateDynamic("jwks")(jwks.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterOther]
   }
 }

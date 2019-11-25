@@ -47,12 +47,12 @@ object WorkspaceClientCapabilities {
     workspaceEdit: Anon_DocumentChanges = null
   ): WorkspaceClientCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(applyEdit)) __obj.updateDynamic("applyEdit")(applyEdit)
-    if (didChangeConfiguration != null) __obj.updateDynamic("didChangeConfiguration")(didChangeConfiguration)
-    if (didChangeWatchedFiles != null) __obj.updateDynamic("didChangeWatchedFiles")(didChangeWatchedFiles)
-    if (executeCommand != null) __obj.updateDynamic("executeCommand")(executeCommand)
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
-    if (workspaceEdit != null) __obj.updateDynamic("workspaceEdit")(workspaceEdit)
+    if (!js.isUndefined(applyEdit)) __obj.updateDynamic("applyEdit")(applyEdit.asInstanceOf[js.Any])
+    if (didChangeConfiguration != null) __obj.updateDynamic("didChangeConfiguration")(didChangeConfiguration.asInstanceOf[js.Any])
+    if (didChangeWatchedFiles != null) __obj.updateDynamic("didChangeWatchedFiles")(didChangeWatchedFiles.asInstanceOf[js.Any])
+    if (executeCommand != null) __obj.updateDynamic("executeCommand")(executeCommand.asInstanceOf[js.Any])
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
+    if (workspaceEdit != null) __obj.updateDynamic("workspaceEdit")(workspaceEdit.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceClientCapabilities]
   }
 }

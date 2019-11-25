@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait EventTransparency extends js.Object
 
+object EventTransparency {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def opaque: typings.gapiDotCalendar.gapiDotCalendarStrings.opaque = this.cast("opaque")
+  @scala.inline
+  def transparent: typings.gapiDotCalendar.gapiDotCalendarStrings.transparent = this.cast("transparent")
+}
+

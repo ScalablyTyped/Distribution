@@ -21,7 +21,7 @@ object ComponentOptions {
     subscriptions: Observables | (js.ThisFunction0[/* this */ V, Observables]) = null
   ): ComponentOptions[V] = {
     val __obj = js.Dynamic.literal()
-    if (domStreams != null) __obj.updateDynamic("domStreams")(domStreams)
+    if (domStreams != null) __obj.updateDynamic("domStreams")(domStreams.asInstanceOf[js.Any])
     if (observableMethods != null) __obj.updateDynamic("observableMethods")(observableMethods.asInstanceOf[js.Any])
     if (subscriptions != null) __obj.updateDynamic("subscriptions")(subscriptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentOptions[V]]

@@ -25,7 +25,7 @@ object PageSizeChangingEventUIParam {
     val __obj = js.Dynamic.literal()
     if (currentPageSize != null) __obj.updateDynamic("currentPageSize")(currentPageSize.asInstanceOf[js.Any])
     if (newPageSize != null) __obj.updateDynamic("newPageSize")(newPageSize.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageSizeChangingEventUIParam]
   }
 }

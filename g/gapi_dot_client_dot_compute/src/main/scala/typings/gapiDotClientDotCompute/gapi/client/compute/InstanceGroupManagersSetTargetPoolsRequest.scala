@@ -22,8 +22,8 @@ object InstanceGroupManagersSetTargetPoolsRequest {
   @scala.inline
   def apply(fingerprint: String = null, targetPools: js.Array[String] = null): InstanceGroupManagersSetTargetPoolsRequest = {
     val __obj = js.Dynamic.literal()
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
-    if (targetPools != null) __obj.updateDynamic("targetPools")(targetPools)
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (targetPools != null) __obj.updateDynamic("targetPools")(targetPools.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceGroupManagersSetTargetPoolsRequest]
   }
 }

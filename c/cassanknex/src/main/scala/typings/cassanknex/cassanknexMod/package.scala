@@ -14,7 +14,7 @@ package object cassanknexMod {
   type InsertQueryBuilder = QueryBuilder with InsertableQueryBuilder with TtlableQueryBuilder
   type KeyspaceQueryBuilder = QueryBuilder with KeyspaceableQueryBuilder
   type MappedDict[B] = StringDictionary[B]
-  type SelectAsClause[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type SelectAsClause[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: string}
     */ typings.cassanknex.cassanknexStrings.SelectAsClause with js.Any
   type SelectQueryBuilder[T] = QueryBuilder with WhereableQueryBuilder[T] with LimitableQueryBuilder with FromableQueryBuilder

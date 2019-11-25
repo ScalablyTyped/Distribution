@@ -24,11 +24,11 @@ object DownloadOptions {
     sha2: String = null,
     sha512: String = null
   ): DownloadOptions = {
-    val __obj = js.Dynamic.literal(cancellationToken = cancellationToken)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(cancellationToken = cancellationToken.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
-    if (sha2 != null) __obj.updateDynamic("sha2")(sha2)
-    if (sha512 != null) __obj.updateDynamic("sha512")(sha512)
+    if (sha2 != null) __obj.updateDynamic("sha2")(sha2.asInstanceOf[js.Any])
+    if (sha512 != null) __obj.updateDynamic("sha512")(sha512.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadOptions]
   }
 }

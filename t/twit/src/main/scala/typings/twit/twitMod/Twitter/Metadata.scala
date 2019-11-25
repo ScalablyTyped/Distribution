@@ -33,12 +33,12 @@ object Metadata {
     if (completed_in != null) __obj.updateDynamic("completed_in")(completed_in.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (max_id != null) __obj.updateDynamic("max_id")(max_id.asInstanceOf[js.Any])
-    if (max_id_str != null) __obj.updateDynamic("max_id_str")(max_id_str)
-    if (next_results != null) __obj.updateDynamic("next_results")(next_results)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (refresh_url != null) __obj.updateDynamic("refresh_url")(refresh_url)
+    if (max_id_str != null) __obj.updateDynamic("max_id_str")(max_id_str.asInstanceOf[js.Any])
+    if (next_results != null) __obj.updateDynamic("next_results")(next_results.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (refresh_url != null) __obj.updateDynamic("refresh_url")(refresh_url.asInstanceOf[js.Any])
     if (since_id != null) __obj.updateDynamic("since_id")(since_id.asInstanceOf[js.Any])
-    if (since_id_str != null) __obj.updateDynamic("since_id_str")(since_id_str)
+    if (since_id_str != null) __obj.updateDynamic("since_id_str")(since_id_str.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metadata]
   }
 }

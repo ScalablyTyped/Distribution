@@ -89,17 +89,17 @@ object ITimepickerConfig {
     templateUrl: String = null
   ): ITimepickerConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrowkeys)) __obj.updateDynamic("arrowkeys")(arrowkeys)
+    if (!js.isUndefined(arrowkeys)) __obj.updateDynamic("arrowkeys")(arrowkeys.asInstanceOf[js.Any])
     if (hourStep != null) __obj.updateDynamic("hourStep")(hourStep.asInstanceOf[js.Any])
-    if (meridians != null) __obj.updateDynamic("meridians")(meridians)
+    if (meridians != null) __obj.updateDynamic("meridians")(meridians.asInstanceOf[js.Any])
     if (minuteStep != null) __obj.updateDynamic("minuteStep")(minuteStep.asInstanceOf[js.Any])
-    if (!js.isUndefined(mousewheel)) __obj.updateDynamic("mousewheel")(mousewheel)
-    if (!js.isUndefined(readonlyInput)) __obj.updateDynamic("readonlyInput")(readonlyInput)
+    if (!js.isUndefined(mousewheel)) __obj.updateDynamic("mousewheel")(mousewheel.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonlyInput)) __obj.updateDynamic("readonlyInput")(readonlyInput.asInstanceOf[js.Any])
     if (secondStep != null) __obj.updateDynamic("secondStep")(secondStep.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMeridian)) __obj.updateDynamic("showMeridian")(showMeridian)
-    if (!js.isUndefined(showSeconds)) __obj.updateDynamic("showSeconds")(showSeconds)
-    if (!js.isUndefined(showSpinners)) __obj.updateDynamic("showSpinners")(showSpinners)
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    if (!js.isUndefined(showMeridian)) __obj.updateDynamic("showMeridian")(showMeridian.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSeconds)) __obj.updateDynamic("showSeconds")(showSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(showSpinners)) __obj.updateDynamic("showSpinners")(showSpinners.asInstanceOf[js.Any])
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimepickerConfig]
   }
 }

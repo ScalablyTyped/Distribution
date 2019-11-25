@@ -29,7 +29,7 @@ object CollapseOption {
   def apply(parent: String | JQuery[HTMLElement] | Element = null, toggle: js.UndefOr[Boolean] = js.undefined): CollapseOption = {
     val __obj = js.Dynamic.literal()
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (!js.isUndefined(toggle)) __obj.updateDynamic("toggle")(toggle)
+    if (!js.isUndefined(toggle)) __obj.updateDynamic("toggle")(toggle.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollapseOption]
   }
 }

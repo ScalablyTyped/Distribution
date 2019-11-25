@@ -23,8 +23,8 @@ object GoogleActionsV2LinkValueSpec {
     openUrlAction: GoogleActionsV2UiElementsOpenUrlAction = null
   ): GoogleActionsV2LinkValueSpec = {
     val __obj = js.Dynamic.literal()
-    if (dialogSpec != null) __obj.updateDynamic("dialogSpec")(dialogSpec)
-    if (openUrlAction != null) __obj.updateDynamic("openUrlAction")(openUrlAction)
+    if (dialogSpec != null) __obj.updateDynamic("dialogSpec")(dialogSpec.asInstanceOf[js.Any])
+    if (openUrlAction != null) __obj.updateDynamic("openUrlAction")(openUrlAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2LinkValueSpec]
   }
 }

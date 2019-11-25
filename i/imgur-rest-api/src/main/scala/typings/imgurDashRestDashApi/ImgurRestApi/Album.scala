@@ -51,11 +51,11 @@ object Album {
     deletehash: String = null,
     nsfw: js.UndefOr[Boolean] = js.undefined
   ): Album = {
-    val __obj = js.Dynamic.literal(cover = cover, cover_height = cover_height, cover_width = cover_width, datetime = datetime, description = description, favorite = favorite, id = id, images = images, images_count = images_count, layout = layout, link = link, order = order, privacy = privacy, section = section, title = title, views = views)
+    val __obj = js.Dynamic.literal(cover = cover.asInstanceOf[js.Any], cover_height = cover_height.asInstanceOf[js.Any], cover_width = cover_width.asInstanceOf[js.Any], datetime = datetime.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], favorite = favorite.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], images_count = images_count.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], privacy = privacy.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any])
     if (account_id != null) __obj.updateDynamic("account_id")(account_id.asInstanceOf[js.Any])
-    if (account_url != null) __obj.updateDynamic("account_url")(account_url)
-    if (deletehash != null) __obj.updateDynamic("deletehash")(deletehash)
-    if (!js.isUndefined(nsfw)) __obj.updateDynamic("nsfw")(nsfw)
+    if (account_url != null) __obj.updateDynamic("account_url")(account_url.asInstanceOf[js.Any])
+    if (deletehash != null) __obj.updateDynamic("deletehash")(deletehash.asInstanceOf[js.Any])
+    if (!js.isUndefined(nsfw)) __obj.updateDynamic("nsfw")(nsfw.asInstanceOf[js.Any])
     __obj.asInstanceOf[Album]
   }
 }

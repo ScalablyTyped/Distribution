@@ -41,11 +41,11 @@ object AutoAffixProps {
     viewportOffsetTop: Int | Double = null
   ): AutoAffixProps = {
     val __obj = js.Dynamic.literal()
-    if (affixClassName != null) __obj.updateDynamic("affixClassName")(affixClassName)
-    if (affixStyle != null) __obj.updateDynamic("affixStyle")(affixStyle)
-    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth)
-    if (bottomClassName != null) __obj.updateDynamic("bottomClassName")(bottomClassName)
-    if (bottomStyle != null) __obj.updateDynamic("bottomStyle")(bottomStyle)
+    if (affixClassName != null) __obj.updateDynamic("affixClassName")(affixClassName.asInstanceOf[js.Any])
+    if (affixStyle != null) __obj.updateDynamic("affixStyle")(affixStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.asInstanceOf[js.Any])
+    if (bottomClassName != null) __obj.updateDynamic("bottomClassName")(bottomClassName.asInstanceOf[js.Any])
+    if (bottomStyle != null) __obj.updateDynamic("bottomStyle")(bottomStyle.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (offsetBottom != null) __obj.updateDynamic("offsetBottom")(offsetBottom.asInstanceOf[js.Any])
     if (offsetTop != null) __obj.updateDynamic("offsetTop")(offsetTop.asInstanceOf[js.Any])
@@ -55,8 +55,8 @@ object AutoAffixProps {
     if (onAffixed != null) __obj.updateDynamic("onAffixed")(js.Any.fromFunction0(onAffixed))
     if (onAffixedBottom != null) __obj.updateDynamic("onAffixedBottom")(js.Any.fromFunction0(onAffixedBottom))
     if (onAffixedTop != null) __obj.updateDynamic("onAffixedTop")(js.Any.fromFunction0(onAffixedTop))
-    if (topClassName != null) __obj.updateDynamic("topClassName")(topClassName)
-    if (topStyle != null) __obj.updateDynamic("topStyle")(topStyle)
+    if (topClassName != null) __obj.updateDynamic("topClassName")(topClassName.asInstanceOf[js.Any])
+    if (topStyle != null) __obj.updateDynamic("topStyle")(topStyle.asInstanceOf[js.Any])
     if (viewportOffsetTop != null) __obj.updateDynamic("viewportOffsetTop")(viewportOffsetTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoAffixProps]
   }

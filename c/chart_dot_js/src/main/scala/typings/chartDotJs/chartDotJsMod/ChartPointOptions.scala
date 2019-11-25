@@ -34,7 +34,7 @@ object ChartPointOptions {
     if (hitRadius != null) __obj.updateDynamic("hitRadius")(hitRadius.asInstanceOf[js.Any])
     if (hoverBorderWidth != null) __obj.updateDynamic("hoverBorderWidth")(hoverBorderWidth.asInstanceOf[js.Any])
     if (hoverRadius != null) __obj.updateDynamic("hoverRadius")(hoverRadius.asInstanceOf[js.Any])
-    if (pointStyle != null) __obj.updateDynamic("pointStyle")(pointStyle)
+    if (pointStyle != null) __obj.updateDynamic("pointStyle")(pointStyle.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartPointOptions]
   }

@@ -20,10 +20,10 @@ object Anon_Certreq {
     nonce: String = null,
     policy: String = null
   ): Anon_Certreq = {
-    val __obj = js.Dynamic.literal(mi = mi)
-    if (!js.isUndefined(certreq)) __obj.updateDynamic("certreq")(certreq)
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
-    if (policy != null) __obj.updateDynamic("policy")(policy)
+    val __obj = js.Dynamic.literal(mi = mi.asInstanceOf[js.Any])
+    if (!js.isUndefined(certreq)) __obj.updateDynamic("certreq")(certreq.asInstanceOf[js.Any])
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Certreq]
   }
 }

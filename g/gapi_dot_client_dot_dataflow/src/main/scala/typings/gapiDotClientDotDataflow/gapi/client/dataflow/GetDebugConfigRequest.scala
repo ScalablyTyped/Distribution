@@ -20,9 +20,9 @@ object GetDebugConfigRequest {
   @scala.inline
   def apply(componentId: String = null, location: String = null, workerId: String = null): GetDebugConfigRequest = {
     val __obj = js.Dynamic.literal()
-    if (componentId != null) __obj.updateDynamic("componentId")(componentId)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (workerId != null) __obj.updateDynamic("workerId")(workerId)
+    if (componentId != null) __obj.updateDynamic("componentId")(componentId.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (workerId != null) __obj.updateDynamic("workerId")(workerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDebugConfigRequest]
   }
 }

@@ -48,18 +48,18 @@ object OdataQuery {
     StringDictionary: /* key */ StringDictionary[js.Any] = null
   ): OdataQuery = {
     val __obj = js.Dynamic.literal()
-    if ($compute != null) __obj.updateDynamic("$compute")($compute)
-    if (!js.isUndefined($count)) __obj.updateDynamic("$count")($count)
-    if ($expand != null) __obj.updateDynamic("$expand")($expand)
-    if ($filter != null) __obj.updateDynamic("$filter")($filter)
-    if ($format != null) __obj.updateDynamic("$format")($format)
+    if ($compute != null) __obj.updateDynamic("$compute")($compute.asInstanceOf[js.Any])
+    if (!js.isUndefined($count)) __obj.updateDynamic("$count")($count.asInstanceOf[js.Any])
+    if ($expand != null) __obj.updateDynamic("$expand")($expand.asInstanceOf[js.Any])
+    if ($filter != null) __obj.updateDynamic("$filter")($filter.asInstanceOf[js.Any])
+    if ($format != null) __obj.updateDynamic("$format")($format.asInstanceOf[js.Any])
     if ($index != null) __obj.updateDynamic("$index")($index.asInstanceOf[js.Any])
-    if ($orderby != null) __obj.updateDynamic("$orderby")($orderby)
-    if ($search != null) __obj.updateDynamic("$search")($search)
-    if ($select != null) __obj.updateDynamic("$select")($select)
+    if ($orderby != null) __obj.updateDynamic("$orderby")($orderby.asInstanceOf[js.Any])
+    if ($search != null) __obj.updateDynamic("$search")($search.asInstanceOf[js.Any])
+    if ($select != null) __obj.updateDynamic("$select")($select.asInstanceOf[js.Any])
     if ($skip != null) __obj.updateDynamic("$skip")($skip.asInstanceOf[js.Any])
     if ($top != null) __obj.updateDynamic("$top")($top.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[OdataQuery]
   }
 }

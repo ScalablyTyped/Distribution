@@ -11,6 +11,6 @@ object keys extends js.Object {
     * Polyfill for Object.keys
     * @deprecated Use Object.keys
     */
-  def apply(o: js.Any): Array[String] = js.native
+  def apply(o: js.Any): Array[java.lang.String] = js.native
 }
 

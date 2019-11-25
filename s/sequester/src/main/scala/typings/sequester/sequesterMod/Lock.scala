@@ -23,7 +23,7 @@ object Lock {
     share: Callback => Unit,
     unlock: () => Unit
   ): Lock = {
-    val __obj = js.Dynamic.literal(count = count, dispose = js.Any.fromFunction0(dispose), downgrade = js.Any.fromFunction0(downgrade), exclude = js.Any.fromFunction1(exclude), share = js.Any.fromFunction1(share), unlock = js.Any.fromFunction0(unlock))
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), downgrade = js.Any.fromFunction0(downgrade), exclude = js.Any.fromFunction1(exclude), share = js.Any.fromFunction1(share), unlock = js.Any.fromFunction0(unlock))
   
     __obj.asInstanceOf[Lock]
   }

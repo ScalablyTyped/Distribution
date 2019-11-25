@@ -22,7 +22,7 @@ object IPositioningContainerState {
   def apply(heightOffset: Int | Double = null, positions: IPositionedData = null): IPositioningContainerState = {
     val __obj = js.Dynamic.literal()
     if (heightOffset != null) __obj.updateDynamic("heightOffset")(heightOffset.asInstanceOf[js.Any])
-    if (positions != null) __obj.updateDynamic("positions")(positions)
+    if (positions != null) __obj.updateDynamic("positions")(positions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPositioningContainerState]
   }
 }

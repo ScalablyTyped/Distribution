@@ -12,7 +12,7 @@ object MockOptions {
   @scala.inline
   def apply(virtual: js.UndefOr[Boolean] = js.undefined): MockOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(virtual)) __obj.updateDynamic("virtual")(virtual)
+    if (!js.isUndefined(virtual)) __obj.updateDynamic("virtual")(virtual.asInstanceOf[js.Any])
     __obj.asInstanceOf[MockOptions]
   }
 }

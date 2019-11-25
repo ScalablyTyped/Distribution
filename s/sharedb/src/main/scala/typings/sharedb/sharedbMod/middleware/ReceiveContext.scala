@@ -28,7 +28,7 @@ object ReceiveContext {
     backend: typings.sharedb.sharedbMod.sharedb,
     data: StringDictionary[js.Any]
   ): ReceiveContext = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent, backend = backend, data = data)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReceiveContext]
   }

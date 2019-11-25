@@ -93,21 +93,21 @@ object AosOptions {
     useClassNames: js.UndefOr[Boolean] = js.undefined
   ): AosOptions = {
     val __obj = js.Dynamic.literal()
-    if (anchorPlacement != null) __obj.updateDynamic("anchorPlacement")(anchorPlacement)
-    if (animatedClassName != null) __obj.updateDynamic("animatedClassName")(animatedClassName)
+    if (anchorPlacement != null) __obj.updateDynamic("anchorPlacement")(anchorPlacement.asInstanceOf[js.Any])
+    if (animatedClassName != null) __obj.updateDynamic("animatedClassName")(animatedClassName.asInstanceOf[js.Any])
     if (debounceDelay != null) __obj.updateDynamic("debounceDelay")(debounceDelay.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (disable != null) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableMutationObserver)) __obj.updateDynamic("disableMutationObserver")(disableMutationObserver)
+    if (!js.isUndefined(disableMutationObserver)) __obj.updateDynamic("disableMutationObserver")(disableMutationObserver.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing)
-    if (initClassName != null) __obj.updateDynamic("initClassName")(initClassName)
-    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror)
+    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
+    if (initClassName != null) __obj.updateDynamic("initClassName")(initClassName.asInstanceOf[js.Any])
+    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once)
-    if (startEvent != null) __obj.updateDynamic("startEvent")(startEvent)
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.asInstanceOf[js.Any])
+    if (startEvent != null) __obj.updateDynamic("startEvent")(startEvent.asInstanceOf[js.Any])
     if (throttleDelay != null) __obj.updateDynamic("throttleDelay")(throttleDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(useClassNames)) __obj.updateDynamic("useClassNames")(useClassNames)
+    if (!js.isUndefined(useClassNames)) __obj.updateDynamic("useClassNames")(useClassNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[AosOptions]
   }
 }

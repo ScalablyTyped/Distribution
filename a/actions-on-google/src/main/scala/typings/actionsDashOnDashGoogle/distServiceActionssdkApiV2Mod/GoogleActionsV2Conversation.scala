@@ -31,9 +31,9 @@ object GoogleActionsV2Conversation {
     `type`: GoogleActionsV2ConversationType = null
   ): GoogleActionsV2Conversation = {
     val __obj = js.Dynamic.literal()
-    if (conversationId != null) __obj.updateDynamic("conversationId")(conversationId)
-    if (conversationToken != null) __obj.updateDynamic("conversationToken")(conversationToken)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (conversationId != null) __obj.updateDynamic("conversationId")(conversationId.asInstanceOf[js.Any])
+    if (conversationToken != null) __obj.updateDynamic("conversationToken")(conversationToken.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2Conversation]
   }
 }

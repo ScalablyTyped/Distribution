@@ -21,8 +21,8 @@ object Anon_Errors {
     styles: js.Array[String],
     errors: js.Array[ParseError] = null
   ): Anon_Errors = {
-    val __obj = js.Dynamic.literal(nodes = nodes, styleUrls = styleUrls, styles = styles)
-    if (errors != null) __obj.updateDynamic("errors")(errors)
+    val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any], styleUrls = styleUrls.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Errors]
   }
 }

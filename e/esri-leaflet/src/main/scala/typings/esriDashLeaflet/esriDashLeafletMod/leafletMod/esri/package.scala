@@ -48,7 +48,7 @@ package object esri {
   /**
     * Options for Query
     */
-  type QueryOptions = ServiceOptions
+  type QueryOptions = TaskOptions
   type ResponseCallbackHandler = js.Function2[/* error */ js.UndefOr[js.Any], /* response */ js.UndefOr[js.Any], Unit]
   type SpatialReferenceExpression = Double | SpatialReference
   type StyleCallback = js.Function1[/* feature */ js.Any, js.Any]

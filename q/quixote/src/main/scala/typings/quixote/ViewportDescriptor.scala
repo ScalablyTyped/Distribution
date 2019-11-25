@@ -36,7 +36,7 @@ object ViewportDescriptor {
     top: PositionDescriptor,
     width: SizeDescriptor
   ): ViewportDescriptor = {
-    val __obj = js.Dynamic.literal(bottom = bottom, center = center, height = height, left = left, middle = middle, right = right, top = top, width = width)
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], middle = middle.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ViewportDescriptor]
   }

@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait TableSize extends js.Object
 
+object TableSize {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def default: typings.antd.antdStrings.default = this.cast("default")
+  @scala.inline
+  def middle: typings.antd.antdStrings.middle = this.cast("middle")
+  @scala.inline
+  def small: typings.antd.antdStrings.small = this.cast("small")
+}
+

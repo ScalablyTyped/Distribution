@@ -16,7 +16,7 @@ trait ClientMoved extends js.Object {
 object ClientMoved {
   @scala.inline
   def apply(channel: TeamSpeakChannel, client: TeamSpeakClient, reasonid: ReasonIdentifier): ClientMoved = {
-    val __obj = js.Dynamic.literal(channel = channel, client = client, reasonid = reasonid)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], reasonid = reasonid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClientMoved]
   }

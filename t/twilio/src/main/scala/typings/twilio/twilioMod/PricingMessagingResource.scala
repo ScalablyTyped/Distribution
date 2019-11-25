@@ -11,7 +11,7 @@ trait PricingMessagingResource extends js.Object {
 object PricingMessagingResource {
   @scala.inline
   def apply(countries: CountryResource): PricingMessagingResource = {
-    val __obj = js.Dynamic.literal(countries = countries)
+    val __obj = js.Dynamic.literal(countries = countries.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PricingMessagingResource]
   }

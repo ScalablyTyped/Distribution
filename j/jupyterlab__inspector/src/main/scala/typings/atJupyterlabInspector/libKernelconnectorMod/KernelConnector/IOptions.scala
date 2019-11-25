@@ -18,7 +18,7 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(session: IClientSession): IOptions = {
-    val __obj = js.Dynamic.literal(session = session)
+    val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOptions]
   }

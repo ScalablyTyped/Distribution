@@ -13,7 +13,7 @@ object OptionsHexOutput {
   @scala.inline
   def apply(outputFormat: hex = null): OptionsHexOutput = {
     val __obj = js.Dynamic.literal()
-    if (outputFormat != null) __obj.updateDynamic("outputFormat")(outputFormat)
+    if (outputFormat != null) __obj.updateDynamic("outputFormat")(outputFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsHexOutput]
   }
 }

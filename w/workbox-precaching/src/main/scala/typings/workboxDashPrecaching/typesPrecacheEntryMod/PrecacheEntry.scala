@@ -13,8 +13,8 @@ trait PrecacheEntry extends js.Object {
 object PrecacheEntry {
   @scala.inline
   def apply(url: String, revision: String = null): PrecacheEntry = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (revision != null) __obj.updateDynamic("revision")(revision)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrecacheEntry]
   }
 }

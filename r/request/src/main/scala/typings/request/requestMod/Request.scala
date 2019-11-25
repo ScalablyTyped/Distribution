@@ -2,7 +2,6 @@ package typings.request.requestMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.caseless.caselessMod.Httpified
-import typings.formDashData.formDashDataMod.^
 import typings.node.Buffer
 import typings.node.httpMod.Agent
 import typings.node.httpMod.ClientRequest
@@ -94,7 +93,7 @@ trait Request
   def end(chunk: Buffer, cb: js.Function0[Unit]): Unit = js.native
   def end(str: String, encoding: String): Unit = js.native
   def end(str: String, encoding: String, cb: js.Function0[Unit]): Unit = js.native
-  def form(): ^ = js.native
+  def form(): typings.formDashData.formDashDataMod.^ = js.native
   def form(form: js.Any): Request = js.native
   def hawk(opts: HawkOptions): Unit = js.native
   def jar(jar: CookieJar): Request = js.native

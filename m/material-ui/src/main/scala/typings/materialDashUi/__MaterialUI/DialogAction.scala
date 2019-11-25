@@ -22,10 +22,10 @@ object DialogAction {
     onClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
     ref: String = null
   ): DialogAction = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogAction]
   }
 }

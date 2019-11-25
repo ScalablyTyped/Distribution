@@ -22,8 +22,8 @@ object ICustomString {
     show: valueOrfunc[Boolean],
     `type`: String
   ): ICustomString = {
-    val __obj = js.Dynamic.literal(defaultValue = defaultValue, expression = expression, label = label, maxlength = maxlength, ref = ref, show = show.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], maxlength = maxlength.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomString]
   }
 }

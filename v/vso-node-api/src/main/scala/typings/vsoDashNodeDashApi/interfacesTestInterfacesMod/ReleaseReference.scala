@@ -25,7 +25,7 @@ object ReleaseReference {
     id: Double,
     name: String
   ): ReleaseReference = {
-    val __obj = js.Dynamic.literal(definitionId = definitionId, environmentDefinitionId = environmentDefinitionId, environmentDefinitionName = environmentDefinitionName, environmentId = environmentId, environmentName = environmentName, id = id, name = name)
+    val __obj = js.Dynamic.literal(definitionId = definitionId.asInstanceOf[js.Any], environmentDefinitionId = environmentDefinitionId.asInstanceOf[js.Any], environmentDefinitionName = environmentDefinitionName.asInstanceOf[js.Any], environmentId = environmentId.asInstanceOf[js.Any], environmentName = environmentName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReleaseReference]
   }

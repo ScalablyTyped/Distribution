@@ -18,8 +18,8 @@ object KeyFrames {
     StringDictionary: /* key */ StringDictionary[js.UndefOr[CSSProperties | String]] = null
   ): KeyFrames = {
     val __obj = js.Dynamic.literal()
-    if ($debugName != null) __obj.updateDynamic("$debugName")($debugName)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if ($debugName != null) __obj.updateDynamic("$debugName")($debugName.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[KeyFrames]
   }
 }

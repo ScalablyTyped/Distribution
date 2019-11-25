@@ -16,7 +16,7 @@ object StreamingStageLocation {
   @scala.inline
   def apply(streamId: String = null): StreamingStageLocation = {
     val __obj = js.Dynamic.literal()
-    if (streamId != null) __obj.updateDynamic("streamId")(streamId)
+    if (streamId != null) __obj.updateDynamic("streamId")(streamId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamingStageLocation]
   }
 }

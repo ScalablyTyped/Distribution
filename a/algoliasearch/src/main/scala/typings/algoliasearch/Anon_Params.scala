@@ -25,9 +25,9 @@ object Anon_Params {
     userData: js.Object = null
   ): Anon_Params = {
     val __obj = js.Dynamic.literal()
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (promote != null) __obj.updateDynamic("promote")(promote)
-    if (userData != null) __obj.updateDynamic("userData")(userData)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (promote != null) __obj.updateDynamic("promote")(promote.asInstanceOf[js.Any])
+    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Params]
   }
 }

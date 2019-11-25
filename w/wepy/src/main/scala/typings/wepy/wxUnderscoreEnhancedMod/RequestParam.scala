@@ -34,10 +34,10 @@ object RequestParam {
     method: GET | OPTIONS | HEAD | POST | PUT | DELETE | TRACE | CONNECT = null,
     responseType: text | arraybuffer = null
   ): RequestParam = {
-    val __obj = js.Dynamic.literal(url = url)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header)
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestParam]

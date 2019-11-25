@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait GroupType extends js.Object
 
+object GroupType {
+  @scala.inline
+  def azureAD: typings.microsoftDashGraph.microsoftDashGraphStrings.azureAD = this.cast("azureAD")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def unifiedGroups: typings.microsoftDashGraph.microsoftDashGraphStrings.unifiedGroups = this.cast("unifiedGroups")
+  @scala.inline
+  def unknownFutureValue: typings.microsoftDashGraph.microsoftDashGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+}
+

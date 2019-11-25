@@ -24,10 +24,10 @@ object Thread {
     snippet: String = null
   ): Thread = {
     val __obj = js.Dynamic.literal()
-    if (historyId != null) __obj.updateDynamic("historyId")(historyId)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (snippet != null) __obj.updateDynamic("snippet")(snippet)
+    if (historyId != null) __obj.updateDynamic("historyId")(historyId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (snippet != null) __obj.updateDynamic("snippet")(snippet.asInstanceOf[js.Any])
     __obj.asInstanceOf[Thread]
   }
 }

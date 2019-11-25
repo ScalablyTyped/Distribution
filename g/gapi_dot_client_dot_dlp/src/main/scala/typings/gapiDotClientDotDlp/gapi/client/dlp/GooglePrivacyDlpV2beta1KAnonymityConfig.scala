@@ -27,8 +27,8 @@ object GooglePrivacyDlpV2beta1KAnonymityConfig {
     quasiIds: js.Array[GooglePrivacyDlpV2beta1FieldId] = null
   ): GooglePrivacyDlpV2beta1KAnonymityConfig = {
     val __obj = js.Dynamic.literal()
-    if (entityId != null) __obj.updateDynamic("entityId")(entityId)
-    if (quasiIds != null) __obj.updateDynamic("quasiIds")(quasiIds)
+    if (entityId != null) __obj.updateDynamic("entityId")(entityId.asInstanceOf[js.Any])
+    if (quasiIds != null) __obj.updateDynamic("quasiIds")(quasiIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1KAnonymityConfig]
   }
 }

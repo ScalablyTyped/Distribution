@@ -31,7 +31,7 @@ trait Anon_B extends js.Object {
 object Anon_B {
   @scala.inline
   def apply(BIG_PAWN: b, CAPTURE: c, EP_CAPTURE: e, KSIDE_CASTLE: k, NORMAL: n, PROMOTION: p, QSIDE_CASTLE: q): Anon_B = {
-    val __obj = js.Dynamic.literal(BIG_PAWN = BIG_PAWN, CAPTURE = CAPTURE, EP_CAPTURE = EP_CAPTURE, KSIDE_CASTLE = KSIDE_CASTLE, NORMAL = NORMAL, PROMOTION = PROMOTION, QSIDE_CASTLE = QSIDE_CASTLE)
+    val __obj = js.Dynamic.literal(BIG_PAWN = BIG_PAWN.asInstanceOf[js.Any], CAPTURE = CAPTURE.asInstanceOf[js.Any], EP_CAPTURE = EP_CAPTURE.asInstanceOf[js.Any], KSIDE_CASTLE = KSIDE_CASTLE.asInstanceOf[js.Any], NORMAL = NORMAL.asInstanceOf[js.Any], PROMOTION = PROMOTION.asInstanceOf[js.Any], QSIDE_CASTLE = QSIDE_CASTLE.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_B]
   }

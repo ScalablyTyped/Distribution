@@ -36,9 +36,9 @@ object ModuleSymbolDetails {
     `type`: ModuleSymbolType,
     section: ModuleSymbolSectionDetails = null
   ): ModuleSymbolDetails = {
-    val __obj = js.Dynamic.literal(address = address, isGlobal = isGlobal, name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (section != null) __obj.updateDynamic("section")(section)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], isGlobal = isGlobal.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (section != null) __obj.updateDynamic("section")(section.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleSymbolDetails]
   }
 }

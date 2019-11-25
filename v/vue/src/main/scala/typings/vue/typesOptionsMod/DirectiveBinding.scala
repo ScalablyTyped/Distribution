@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object DirectiveBinding {
   @scala.inline
   def apply(modifiers: StringDictionary[Boolean]): DirectiveBinding = {
-    val __obj = js.Dynamic.literal(modifiers = modifiers)
+    val __obj = js.Dynamic.literal(modifiers = modifiers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DirectiveBinding]
   }

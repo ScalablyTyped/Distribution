@@ -21,10 +21,10 @@ object DialogflowV1MessageList {
     title: String = null,
     `type`: list_card = null
   ): DialogflowV1MessageList = {
-    val __obj = js.Dynamic.literal(platform = platform)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogflowV1MessageList]
   }
 }

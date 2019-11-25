@@ -16,7 +16,7 @@ trait Anon_EventHTMLDivElement extends js.Object {
 object Anon_EventHTMLDivElement {
   @scala.inline
   def apply(event: SyntheticEvent[MouseEvent[HTMLDivElement, NativeMouseEvent], Event]): Anon_EventHTMLDivElement = {
-    val __obj = js.Dynamic.literal(event = event)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EventHTMLDivElement]
   }

@@ -25,8 +25,8 @@ object TransactionOptions {
   def apply(chain: Double | String = null, common: default = null, hardfork: String = null): TransactionOptions = {
     val __obj = js.Dynamic.literal()
     if (chain != null) __obj.updateDynamic("chain")(chain.asInstanceOf[js.Any])
-    if (common != null) __obj.updateDynamic("common")(common)
-    if (hardfork != null) __obj.updateDynamic("hardfork")(hardfork)
+    if (common != null) __obj.updateDynamic("common")(common.asInstanceOf[js.Any])
+    if (hardfork != null) __obj.updateDynamic("hardfork")(hardfork.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionOptions]
   }
 }

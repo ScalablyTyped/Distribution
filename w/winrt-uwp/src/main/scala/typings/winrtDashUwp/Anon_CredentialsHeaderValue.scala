@@ -13,7 +13,7 @@ trait Anon_CredentialsHeaderValue extends js.Object {
 object Anon_CredentialsHeaderValue {
   @scala.inline
   def apply(credentialsHeaderValue: HttpCredentialsHeaderValue, returnValue: Boolean): Anon_CredentialsHeaderValue = {
-    val __obj = js.Dynamic.literal(credentialsHeaderValue = credentialsHeaderValue, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(credentialsHeaderValue = credentialsHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CredentialsHeaderValue]
   }

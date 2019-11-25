@@ -26,13 +26,13 @@ object Anon_Code {
     thousand: String = null
   ): Anon_Code = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (decimal != null) __obj.updateDynamic("decimal")(decimal)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (decimal != null) __obj.updateDynamic("decimal")(decimal.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
-    if (thousand != null) __obj.updateDynamic("thousand")(thousand)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
+    if (thousand != null) __obj.updateDynamic("thousand")(thousand.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Code]
   }
 }

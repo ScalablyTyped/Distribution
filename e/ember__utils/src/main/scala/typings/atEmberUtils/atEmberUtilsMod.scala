@@ -25,14 +25,20 @@ object atEmberUtilsMod extends js.Object {
   def tryInvoke(obj: js.Object, methodName: String): js.UndefOr[scala.Nothing] = js.native
   def tryInvoke(obj: js.Object, methodName: String, args: js.Array[_]): js.UndefOr[scala.Nothing] = js.native
   def tryInvoke[FNAME /* <: String */, T /* <: js.Object */](obj: T, methodName: FNAME): js.UndefOr[
-    ReturnType[/* import warning: ImportType.apply Failed type conversion: T[FNAME] */ js.Any]
+    ReturnType[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[FNAME] */ js.Any
+    ]
   ] = js.native
   def tryInvoke[FNAME /* <: String */, T /* <: js.Object */](
     obj: T,
     methodName: FNAME,
-    args: FunctionArgs[/* import warning: ImportType.apply Failed type conversion: T[FNAME] */ js.Any]
+    args: FunctionArgs[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[FNAME] */ js.Any
+    ]
   ): js.UndefOr[
-    ReturnType[/* import warning: ImportType.apply Failed type conversion: T[FNAME] */ js.Any]
+    ReturnType[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[FNAME] */ js.Any
+    ]
   ] = js.native
   def typeOf(): undefined = js.native
   def typeOf(item: js.Any): String = js.native

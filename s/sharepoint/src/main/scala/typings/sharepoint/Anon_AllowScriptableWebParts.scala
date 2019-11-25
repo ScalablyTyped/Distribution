@@ -23,7 +23,7 @@ object Anon_AllowScriptableWebParts {
     PermissionCustomizePages: Boolean,
     WebUrl: String
   ): Anon_AllowScriptableWebParts = {
-    val __obj = js.Dynamic.literal(AllowScriptableWebParts = AllowScriptableWebParts, CurrentUserId = CurrentUserId, EffectivePresenceEnabled = EffectivePresenceEnabled, LCID = LCID, PermissionCustomizePages = PermissionCustomizePages, WebUrl = WebUrl)
+    val __obj = js.Dynamic.literal(AllowScriptableWebParts = AllowScriptableWebParts.asInstanceOf[js.Any], CurrentUserId = CurrentUserId.asInstanceOf[js.Any], EffectivePresenceEnabled = EffectivePresenceEnabled.asInstanceOf[js.Any], LCID = LCID.asInstanceOf[js.Any], PermissionCustomizePages = PermissionCustomizePages.asInstanceOf[js.Any], WebUrl = WebUrl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AllowScriptableWebParts]
   }

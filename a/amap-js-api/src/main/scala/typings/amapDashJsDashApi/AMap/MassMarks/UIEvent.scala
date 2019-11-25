@@ -14,7 +14,7 @@ trait UIEvent[N /* <: String */, I] extends js.Object {
 object UIEvent {
   @scala.inline
   def apply[N /* <: String */, I](`type`: N, value: Anon_Data[I]): UIEvent[N, I] = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIEvent[N, I]]
   }

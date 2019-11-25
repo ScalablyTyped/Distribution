@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait VisibilityType extends js.Object
 
+object VisibilityType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def `private`: typings.reactDashNativeDashPushDashNotification.reactDashNativeDashPushDashNotificationStrings.`private` = this.cast("private")
+  @scala.inline
+  def public: typings.reactDashNativeDashPushDashNotification.reactDashNativeDashPushDashNotificationStrings.public = this.cast("public")
+  @scala.inline
+  def secret: typings.reactDashNativeDashPushDashNotification.reactDashNativeDashPushDashNotificationStrings.secret = this.cast("secret")
+}
+

@@ -13,8 +13,8 @@ object Options {
   @scala.inline
   def apply(cwd: String = null, srcBase: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (srcBase != null) __obj.updateDynamic("srcBase")(srcBase)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (srcBase != null) __obj.updateDynamic("srcBase")(srcBase.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

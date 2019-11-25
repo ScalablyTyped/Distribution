@@ -19,7 +19,7 @@ object Options {
   @scala.inline
   def apply(ignore: js.Array[JSONSchemaKeys] = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

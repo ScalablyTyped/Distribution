@@ -13,7 +13,7 @@ object HistoryTransactionOptions {
   @scala.inline
   def apply(selectionsMarkerLayer: MarkerLayer = null): HistoryTransactionOptions = {
     val __obj = js.Dynamic.literal()
-    if (selectionsMarkerLayer != null) __obj.updateDynamic("selectionsMarkerLayer")(selectionsMarkerLayer)
+    if (selectionsMarkerLayer != null) __obj.updateDynamic("selectionsMarkerLayer")(selectionsMarkerLayer.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryTransactionOptions]
   }
 }

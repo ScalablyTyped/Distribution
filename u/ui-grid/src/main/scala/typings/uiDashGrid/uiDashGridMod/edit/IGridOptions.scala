@@ -1,6 +1,6 @@
 package typings.uiDashGrid.uiDashGridMod.edit
 
-import typings.uiDashGrid.Fn_Scope
+import typings.angular.angularMod.IScope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait IGridOptions extends js.Object {
     * If specified, either a value or function to be used by all columns before editing.
     * If falsy, then editing of cell is not allowed
     */
-  var cellEditableCondition: js.UndefOr[js.Any | Fn_Scope] = js.undefined
+  var cellEditableCondition: js.UndefOr[js.Any | (js.Function1[/* $scope */ IScope, Boolean])] = js.undefined
   /**
     * If specified, cellTemplate to use as the editor for all columns.
     * defaults to 'ui-grid/cellTextEditor'
@@ -36,16 +36,16 @@ trait IGridOptions extends js.Object {
 object IGridOptions {
   @scala.inline
   def apply(
-    cellEditableCondition: js.Any | Fn_Scope = null,
+    cellEditableCondition: js.Any | (js.Function1[/* $scope */ IScope, Boolean]) = null,
     editableCellTemplate: String = null,
     enableCellEdit: js.UndefOr[Boolean] = js.undefined,
     enableCellEditOnFocus: js.UndefOr[Boolean] = js.undefined
   ): IGridOptions = {
     val __obj = js.Dynamic.literal()
     if (cellEditableCondition != null) __obj.updateDynamic("cellEditableCondition")(cellEditableCondition.asInstanceOf[js.Any])
-    if (editableCellTemplate != null) __obj.updateDynamic("editableCellTemplate")(editableCellTemplate)
-    if (!js.isUndefined(enableCellEdit)) __obj.updateDynamic("enableCellEdit")(enableCellEdit)
-    if (!js.isUndefined(enableCellEditOnFocus)) __obj.updateDynamic("enableCellEditOnFocus")(enableCellEditOnFocus)
+    if (editableCellTemplate != null) __obj.updateDynamic("editableCellTemplate")(editableCellTemplate.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCellEdit)) __obj.updateDynamic("enableCellEdit")(enableCellEdit.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCellEditOnFocus)) __obj.updateDynamic("enableCellEditOnFocus")(enableCellEditOnFocus.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridOptions]
   }
 }

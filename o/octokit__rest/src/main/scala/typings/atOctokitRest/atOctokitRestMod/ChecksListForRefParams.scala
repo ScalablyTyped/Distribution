@@ -47,8 +47,8 @@ object ChecksListForRefParams {
     per_page: Int | Double = null,
     status: queued | in_progress | completed = null
   ): ChecksListForRefParams = {
-    val __obj = js.Dynamic.literal(owner = owner, ref = ref, repo = repo)
-    if (check_name != null) __obj.updateDynamic("check_name")(check_name)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (check_name != null) __obj.updateDynamic("check_name")(check_name.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])

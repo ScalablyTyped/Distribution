@@ -27,9 +27,9 @@ object Anon_AssetReferenceId {
     assetReferenceId: String = null,
     chunkReferenceId: String = null
   ): Anon_AssetReferenceId = {
-    val __obj = js.Dynamic.literal(chunkId = chunkId, fileName = fileName, format = format, moduleId = moduleId, referenceId = referenceId, relativePath = relativePath)
-    if (assetReferenceId != null) __obj.updateDynamic("assetReferenceId")(assetReferenceId)
-    if (chunkReferenceId != null) __obj.updateDynamic("chunkReferenceId")(chunkReferenceId)
+    val __obj = js.Dynamic.literal(chunkId = chunkId.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], moduleId = moduleId.asInstanceOf[js.Any], referenceId = referenceId.asInstanceOf[js.Any], relativePath = relativePath.asInstanceOf[js.Any])
+    if (assetReferenceId != null) __obj.updateDynamic("assetReferenceId")(assetReferenceId.asInstanceOf[js.Any])
+    if (chunkReferenceId != null) __obj.updateDynamic("chunkReferenceId")(chunkReferenceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AssetReferenceId]
   }
 }

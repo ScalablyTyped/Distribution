@@ -12,7 +12,7 @@ trait Phone extends js.Object {
 object Phone {
   @scala.inline
   def apply(country_code: String, national_number: String): Phone = {
-    val __obj = js.Dynamic.literal(country_code = country_code, national_number = national_number)
+    val __obj = js.Dynamic.literal(country_code = country_code.asInstanceOf[js.Any], national_number = national_number.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Phone]
   }

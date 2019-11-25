@@ -29,7 +29,7 @@ trait Mass extends js.Object {
 object Mass {
   @scala.inline
   def apply(centerOfMass: Vector2, setDensity: Double => GameObject, setMass: Double => GameObject): Mass = {
-    val __obj = js.Dynamic.literal(centerOfMass = centerOfMass, setDensity = js.Any.fromFunction1(setDensity), setMass = js.Any.fromFunction1(setMass))
+    val __obj = js.Dynamic.literal(centerOfMass = centerOfMass.asInstanceOf[js.Any], setDensity = js.Any.fromFunction1(setDensity), setMass = js.Any.fromFunction1(setMass))
   
     __obj.asInstanceOf[Mass]
   }

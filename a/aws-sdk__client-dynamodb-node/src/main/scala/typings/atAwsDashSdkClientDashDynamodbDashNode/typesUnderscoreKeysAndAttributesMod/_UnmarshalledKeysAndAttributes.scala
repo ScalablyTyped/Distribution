@@ -33,11 +33,11 @@ object _UnmarshalledKeysAndAttributes {
     ExpressionAttributeNames: StringDictionary[String] = null,
     ProjectionExpression: String = null
   ): _UnmarshalledKeysAndAttributes = {
-    val __obj = js.Dynamic.literal(Keys = Keys)
-    if (AttributesToGet != null) __obj.updateDynamic("AttributesToGet")(AttributesToGet)
-    if (!js.isUndefined(ConsistentRead)) __obj.updateDynamic("ConsistentRead")(ConsistentRead)
-    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames)
-    if (ProjectionExpression != null) __obj.updateDynamic("ProjectionExpression")(ProjectionExpression)
+    val __obj = js.Dynamic.literal(Keys = Keys.asInstanceOf[js.Any])
+    if (AttributesToGet != null) __obj.updateDynamic("AttributesToGet")(AttributesToGet.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConsistentRead)) __obj.updateDynamic("ConsistentRead")(ConsistentRead.asInstanceOf[js.Any])
+    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames.asInstanceOf[js.Any])
+    if (ProjectionExpression != null) __obj.updateDynamic("ProjectionExpression")(ProjectionExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledKeysAndAttributes]
   }
 }

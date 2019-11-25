@@ -14,8 +14,8 @@ trait ReaderInlineFragment extends ReaderSelection {
 object ReaderInlineFragment {
   @scala.inline
   def apply(kind: String, selections: js.Array[ReaderSelection], `type`: String): ReaderInlineFragment = {
-    val __obj = js.Dynamic.literal(kind = kind, selections = selections)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderInlineFragment]
   }
 }

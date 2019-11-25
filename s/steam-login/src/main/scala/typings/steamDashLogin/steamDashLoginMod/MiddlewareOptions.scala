@@ -14,8 +14,8 @@ trait MiddlewareOptions extends js.Object {
 object MiddlewareOptions {
   @scala.inline
   def apply(apiKey: String, realm: String, verify: String, useSession: js.UndefOr[Boolean] = js.undefined): MiddlewareOptions = {
-    val __obj = js.Dynamic.literal(apiKey = apiKey, realm = realm, verify = verify)
-    if (!js.isUndefined(useSession)) __obj.updateDynamic("useSession")(useSession)
+    val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], realm = realm.asInstanceOf[js.Any], verify = verify.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSession)) __obj.updateDynamic("useSession")(useSession.asInstanceOf[js.Any])
     __obj.asInstanceOf[MiddlewareOptions]
   }
 }

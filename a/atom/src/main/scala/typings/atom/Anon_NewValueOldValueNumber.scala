@@ -12,7 +12,7 @@ trait Anon_NewValueOldValueNumber extends js.Object {
 object Anon_NewValueOldValueNumber {
   @scala.inline
   def apply(newValue: Double, oldValue: Int | Double = null): Anon_NewValueOldValueNumber = {
-    val __obj = js.Dynamic.literal(newValue = newValue)
+    val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
     if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NewValueOldValueNumber]
   }

@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait Enablement extends js.Object
 
+object Enablement {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def disabled: typings.microsoftDashGraph.microsoftDashGraphStrings.disabled = this.cast("disabled")
+  @scala.inline
+  def enabled: typings.microsoftDashGraph.microsoftDashGraphStrings.enabled = this.cast("enabled")
+  @scala.inline
+  def notConfigured: typings.microsoftDashGraph.microsoftDashGraphStrings.notConfigured = this.cast("notConfigured")
+}
+

@@ -27,14 +27,14 @@ object GetAddressParams {
     useEmptyPassphrase: js.UndefOr[Boolean] = js.undefined
   ): GetAddressParams = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice)
-    if (coin != null) __obj.updateDynamic("coin")(coin)
-    if (!js.isUndefined(crossChain)) __obj.updateDynamic("crossChain")(crossChain)
-    if (device != null) __obj.updateDynamic("device")(device)
-    if (!js.isUndefined(keepSession)) __obj.updateDynamic("keepSession")(keepSession)
-    if (!js.isUndefined(showOnTrezor)) __obj.updateDynamic("showOnTrezor")(showOnTrezor)
-    if (!js.isUndefined(useEmptyPassphrase)) __obj.updateDynamic("useEmptyPassphrase")(useEmptyPassphrase)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice.asInstanceOf[js.Any])
+    if (coin != null) __obj.updateDynamic("coin")(coin.asInstanceOf[js.Any])
+    if (!js.isUndefined(crossChain)) __obj.updateDynamic("crossChain")(crossChain.asInstanceOf[js.Any])
+    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepSession)) __obj.updateDynamic("keepSession")(keepSession.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOnTrezor)) __obj.updateDynamic("showOnTrezor")(showOnTrezor.asInstanceOf[js.Any])
+    if (!js.isUndefined(useEmptyPassphrase)) __obj.updateDynamic("useEmptyPassphrase")(useEmptyPassphrase.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAddressParams]
   }
 }

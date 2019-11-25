@@ -55,15 +55,15 @@ object TransferJob {
     transferSpec: TransferSpec = null
   ): TransferJob = {
     val __obj = js.Dynamic.literal()
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
-    if (deletionTime != null) __obj.updateDynamic("deletionTime")(deletionTime)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (lastModificationTime != null) __obj.updateDynamic("lastModificationTime")(lastModificationTime)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (transferSpec != null) __obj.updateDynamic("transferSpec")(transferSpec)
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
+    if (deletionTime != null) __obj.updateDynamic("deletionTime")(deletionTime.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (lastModificationTime != null) __obj.updateDynamic("lastModificationTime")(lastModificationTime.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (transferSpec != null) __obj.updateDynamic("transferSpec")(transferSpec.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferJob]
   }
 }

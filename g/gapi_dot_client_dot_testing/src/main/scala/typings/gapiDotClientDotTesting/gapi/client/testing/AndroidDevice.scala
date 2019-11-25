@@ -40,10 +40,10 @@ object AndroidDevice {
     orientation: String = null
   ): AndroidDevice = {
     val __obj = js.Dynamic.literal()
-    if (androidModelId != null) __obj.updateDynamic("androidModelId")(androidModelId)
-    if (androidVersionId != null) __obj.updateDynamic("androidVersionId")(androidVersionId)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (androidModelId != null) __obj.updateDynamic("androidModelId")(androidModelId.asInstanceOf[js.Any])
+    if (androidVersionId != null) __obj.updateDynamic("androidVersionId")(androidVersionId.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidDevice]
   }
 }

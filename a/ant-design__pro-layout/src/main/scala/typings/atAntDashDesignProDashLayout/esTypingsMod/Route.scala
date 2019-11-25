@@ -21,15 +21,15 @@ object Route {
     name: String = null,
     routes: js.Array[Route] = null
   ): Route = {
-    val __obj = js.Dynamic.literal(path = path)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     if (authority != null) __obj.updateDynamic("authority")(authority.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (!js.isUndefined(hideChildrenInMenu)) __obj.updateDynamic("hideChildrenInMenu")(hideChildrenInMenu)
-    if (!js.isUndefined(hideInMenu)) __obj.updateDynamic("hideInMenu")(hideInMenu)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (routes != null) __obj.updateDynamic("routes")(routes)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideChildrenInMenu)) __obj.updateDynamic("hideChildrenInMenu")(hideChildrenInMenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideInMenu)) __obj.updateDynamic("hideInMenu")(hideInMenu.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Route]
   }
 }

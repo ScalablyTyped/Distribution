@@ -15,7 +15,7 @@ object Anon_HalfExtents {
   @scala.inline
   def apply(halfExtents: Vec2 = null, lengthSegments: Int | Double = null, widthSegments: Int | Double = null): Anon_HalfExtents = {
     val __obj = js.Dynamic.literal()
-    if (halfExtents != null) __obj.updateDynamic("halfExtents")(halfExtents)
+    if (halfExtents != null) __obj.updateDynamic("halfExtents")(halfExtents.asInstanceOf[js.Any])
     if (lengthSegments != null) __obj.updateDynamic("lengthSegments")(lengthSegments.asInstanceOf[js.Any])
     if (widthSegments != null) __obj.updateDynamic("widthSegments")(widthSegments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HalfExtents]

@@ -52,13 +52,13 @@ object IssuesUpdateParamsDeprecatedNumber {
     state: open | closed = null,
     title: String = null
   ): IssuesUpdateParamsDeprecatedNumber = {
-    val __obj = js.Dynamic.literal(number = number, owner = owner, repo = repo)
-    if (assignees != null) __obj.updateDynamic("assignees")(assignees)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
+    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (assignees != null) __obj.updateDynamic("assignees")(assignees.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (milestone != null) __obj.updateDynamic("milestone")(milestone.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuesUpdateParamsDeprecatedNumber]
   }
 }

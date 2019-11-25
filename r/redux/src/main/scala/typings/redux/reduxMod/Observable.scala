@@ -15,6 +15,6 @@ trait Observable[T] extends js.Object {
     * be used to unsubscribe the observable from the store, and prevent further
     * emission of values from the observable.
     */
-  def subscribe(observer: Observer[T]): /* import warning: ImportType.apply Failed type conversion: redux.Anon_Unsubscribe[/ * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Symbol.observable * / any] */ js.Any = js.native
+  def subscribe(observer: Observer[T]): /* import warning: importer.ImportType#apply Failed type conversion: redux.Anon_Unsubscribe[/ * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Symbol.observable * / any] */ js.Any = js.native
 }
 

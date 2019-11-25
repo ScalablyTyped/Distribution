@@ -17,7 +17,7 @@ object BootboxAlertButtonMap {
     StringDictionary: StringDictionary[BootboxButton | js.Function] = null
   ): BootboxAlertButtonMap = {
     val __obj = js.Dynamic.literal(ok = ok.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[BootboxAlertButtonMap]
   }
 }

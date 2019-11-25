@@ -17,7 +17,7 @@ object DragSourceOptions {
   @scala.inline
   def apply(dropEffect: String = null): DragSourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (dropEffect != null) __obj.updateDynamic("dropEffect")(dropEffect)
+    if (dropEffect != null) __obj.updateDynamic("dropEffect")(dropEffect.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragSourceOptions]
   }
 }

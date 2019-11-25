@@ -15,7 +15,7 @@ object LocaleMessageObject {
     StringDictionary: /* key */ StringDictionary[typings.vueDashI18n.vueDashI18nMod.VueI18n.LocaleMessage] = null
   ): LocaleMessageObject = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[LocaleMessageObject]
   }
 }

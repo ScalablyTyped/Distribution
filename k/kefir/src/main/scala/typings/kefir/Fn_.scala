@@ -18,12 +18,24 @@ trait Fn_ extends js.Object {
     Observable[_, _]
   ] */](obss: T): Stream[
     js.Tuple6[
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[1] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[2] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[3] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[4] */ js.Any], 
-      ValueOfAnObservable[/* import warning: ImportType.apply Failed type conversion: T[5] */ js.Any]
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any
+      ], 
+      ValueOfAnObservable[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any
+      ]
     ], 
     _
   ] = js.native
@@ -31,8 +43,8 @@ trait Fn_ extends js.Object {
     obss: T,
     obssP: P,
     combinator: js.Function2[
-      /* import warning: ImportType.apply Failed type conversion: T[0][''] */ /* a */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: P[0][''] */ /* b */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[0][''] */ /* a */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: P[0][''] */ /* b */ js.Any, 
       K
     ]
   ): Observable[K, _] = js.native

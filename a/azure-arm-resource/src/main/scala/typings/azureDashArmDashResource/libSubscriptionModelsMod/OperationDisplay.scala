@@ -32,10 +32,10 @@ object OperationDisplay {
     resource: String = null
   ): OperationDisplay = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (operation != null) __obj.updateDynamic("operation")(operation)
-    if (provider != null) __obj.updateDynamic("provider")(provider)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
+    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationDisplay]
   }
 }

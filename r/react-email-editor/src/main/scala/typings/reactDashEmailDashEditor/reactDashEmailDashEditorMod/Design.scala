@@ -13,8 +13,8 @@ trait Design extends js.Object {
 object Design {
   @scala.inline
   def apply(body: Anon_Rows, counters: js.Object = null): Design = {
-    val __obj = js.Dynamic.literal(body = body)
-    if (counters != null) __obj.updateDynamic("counters")(counters)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    if (counters != null) __obj.updateDynamic("counters")(counters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Design]
   }
 }

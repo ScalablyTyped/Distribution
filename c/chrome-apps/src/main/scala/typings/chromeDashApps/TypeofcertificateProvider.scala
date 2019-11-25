@@ -96,7 +96,7 @@ object TypeofcertificateProvider {
     requestPin: (RequestPinDetails, js.Function1[/* details */ js.UndefOr[PinResponseDetails], Unit]) => Unit,
     stopPinRequest: (StopRequestPinDetails, js.Function0[Unit]) => Unit
   ): TypeofcertificateProvider = {
-    val __obj = js.Dynamic.literal(PinRequestErrorType = PinRequestErrorType, PinRequestType = PinRequestType, onCertificatesRequested = onCertificatesRequested, onSignDigestRequested = onSignDigestRequested, requestPin = js.Any.fromFunction2(requestPin), stopPinRequest = js.Any.fromFunction2(stopPinRequest))
+    val __obj = js.Dynamic.literal(PinRequestErrorType = PinRequestErrorType.asInstanceOf[js.Any], PinRequestType = PinRequestType.asInstanceOf[js.Any], onCertificatesRequested = onCertificatesRequested.asInstanceOf[js.Any], onSignDigestRequested = onSignDigestRequested.asInstanceOf[js.Any], requestPin = js.Any.fromFunction2(requestPin), stopPinRequest = js.Any.fromFunction2(stopPinRequest))
   
     __obj.asInstanceOf[TypeofcertificateProvider]
   }

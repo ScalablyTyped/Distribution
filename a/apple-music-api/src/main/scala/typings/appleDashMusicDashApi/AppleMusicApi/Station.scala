@@ -32,12 +32,12 @@ object Station {
     episodeNumber: Int | Double = null,
     href: String = null
   ): Station = {
-    val __obj = js.Dynamic.literal(artwork = artwork, id = id, isLive = isLive, name = name, url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(artwork = artwork.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isLive = isLive.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (durationInMillis != null) __obj.updateDynamic("durationInMillis")(durationInMillis.asInstanceOf[js.Any])
-    if (editorialNotes != null) __obj.updateDynamic("editorialNotes")(editorialNotes)
+    if (editorialNotes != null) __obj.updateDynamic("editorialNotes")(editorialNotes.asInstanceOf[js.Any])
     if (episodeNumber != null) __obj.updateDynamic("episodeNumber")(episodeNumber.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href)
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     __obj.asInstanceOf[Station]
   }
 }

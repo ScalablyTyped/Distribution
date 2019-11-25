@@ -16,8 +16,8 @@ object MessageContextMetadata {
   @scala.inline
   def apply(deployment: String = null, user_id: String = null): MessageContextMetadata = {
     val __obj = js.Dynamic.literal()
-    if (deployment != null) __obj.updateDynamic("deployment")(deployment)
-    if (user_id != null) __obj.updateDynamic("user_id")(user_id)
+    if (deployment != null) __obj.updateDynamic("deployment")(deployment.asInstanceOf[js.Any])
+    if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageContextMetadata]
   }
 }

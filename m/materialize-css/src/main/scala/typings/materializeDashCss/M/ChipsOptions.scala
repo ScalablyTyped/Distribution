@@ -61,7 +61,7 @@ object ChipsOptions {
     placeholder: String,
     secondaryPlaceholder: String
   ): ChipsOptions = {
-    val __obj = js.Dynamic.literal(autocompleteOptions = autocompleteOptions, data = data, limit = limit, onChipAdd = js.Any.fromFunction3(onChipAdd), onChipDelete = js.Any.fromFunction3(onChipDelete), onChipSelect = js.Any.fromFunction3(onChipSelect), placeholder = placeholder, secondaryPlaceholder = secondaryPlaceholder)
+    val __obj = js.Dynamic.literal(autocompleteOptions = autocompleteOptions.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], onChipAdd = js.Any.fromFunction3(onChipAdd), onChipDelete = js.Any.fromFunction3(onChipDelete), onChipSelect = js.Any.fromFunction3(onChipSelect), placeholder = placeholder.asInstanceOf[js.Any], secondaryPlaceholder = secondaryPlaceholder.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChipsOptions]
   }

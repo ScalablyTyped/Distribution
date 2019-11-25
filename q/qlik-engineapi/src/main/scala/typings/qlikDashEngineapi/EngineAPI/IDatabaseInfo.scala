@@ -81,7 +81,7 @@ object IDatabaseInfo {
     qQuoteSuffix: String,
     qSpecialChars: String
   ): IDatabaseInfo = {
-    val __obj = js.Dynamic.literal(qDBFirst = qDBFirst, qDBMSName = qDBMSName, qDBSeparator = qDBSeparator, qDBUsage = qDBUsage, qDefaultDatabase = qDefaultDatabase, qKeywords = qKeywords, qOwnerSeparator = qOwnerSeparator, qOwnerUsage = qOwnerUsage, qQuotePreffix = qQuotePreffix, qQuoteSuffix = qQuoteSuffix, qSpecialChars = qSpecialChars)
+    val __obj = js.Dynamic.literal(qDBFirst = qDBFirst.asInstanceOf[js.Any], qDBMSName = qDBMSName.asInstanceOf[js.Any], qDBSeparator = qDBSeparator.asInstanceOf[js.Any], qDBUsage = qDBUsage.asInstanceOf[js.Any], qDefaultDatabase = qDefaultDatabase.asInstanceOf[js.Any], qKeywords = qKeywords.asInstanceOf[js.Any], qOwnerSeparator = qOwnerSeparator.asInstanceOf[js.Any], qOwnerUsage = qOwnerUsage.asInstanceOf[js.Any], qQuotePreffix = qQuotePreffix.asInstanceOf[js.Any], qQuoteSuffix = qQuoteSuffix.asInstanceOf[js.Any], qSpecialChars = qSpecialChars.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IDatabaseInfo]
   }

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait PermissionLevel extends js.Object
 
+object PermissionLevel {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def denied: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.denied = this.cast("denied")
+  @scala.inline
+  def granted: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.granted = this.cast("granted")
+}
+

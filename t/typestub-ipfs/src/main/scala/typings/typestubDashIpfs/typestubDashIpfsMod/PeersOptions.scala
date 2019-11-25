@@ -13,8 +13,8 @@ object PeersOptions {
   @scala.inline
   def apply(v: js.UndefOr[Boolean] = js.undefined, verbose: js.UndefOr[Boolean] = js.undefined): PeersOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(v)) __obj.updateDynamic("v")(v)
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (!js.isUndefined(v)) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeersOptions]
   }
 }

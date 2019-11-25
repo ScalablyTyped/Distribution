@@ -12,7 +12,7 @@ trait IPropertyDefsAdmin extends js.Object {
 object IPropertyDefsAdmin {
   @scala.inline
   def apply(Count: Double, Item: Double => IPropertyDefAdmin): IPropertyDefsAdmin = {
-    val __obj = js.Dynamic.literal(Count = Count, Item = js.Any.fromFunction1(Item))
+    val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
   
     __obj.asInstanceOf[IPropertyDefsAdmin]
   }

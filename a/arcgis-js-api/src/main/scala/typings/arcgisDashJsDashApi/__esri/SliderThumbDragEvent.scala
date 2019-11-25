@@ -18,8 +18,8 @@ trait SliderThumbDragEvent extends js.Object {
 object SliderThumbDragEvent {
   @scala.inline
   def apply(index: Double, state: drag | start | stop, `type`: `thumb-drag`, value: Double): SliderThumbDragEvent = {
-    val __obj = js.Dynamic.literal(index = index, state = state.asInstanceOf[js.Any], value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderThumbDragEvent]
   }
 }

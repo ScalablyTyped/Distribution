@@ -23,11 +23,11 @@ object InterpolationConfigType {
     extrapolateLeft: ExtrapolateType = null,
     extrapolateRight: ExtrapolateType = null
   ): InterpolationConfigType = {
-    val __obj = js.Dynamic.literal(inputRange = inputRange, outputRange = outputRange)
+    val __obj = js.Dynamic.literal(inputRange = inputRange.asInstanceOf[js.Any], outputRange = outputRange.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1(easing))
-    if (extrapolate != null) __obj.updateDynamic("extrapolate")(extrapolate)
-    if (extrapolateLeft != null) __obj.updateDynamic("extrapolateLeft")(extrapolateLeft)
-    if (extrapolateRight != null) __obj.updateDynamic("extrapolateRight")(extrapolateRight)
+    if (extrapolate != null) __obj.updateDynamic("extrapolate")(extrapolate.asInstanceOf[js.Any])
+    if (extrapolateLeft != null) __obj.updateDynamic("extrapolateLeft")(extrapolateLeft.asInstanceOf[js.Any])
+    if (extrapolateRight != null) __obj.updateDynamic("extrapolateRight")(extrapolateRight.asInstanceOf[js.Any])
     __obj.asInstanceOf[InterpolationConfigType]
   }
 }

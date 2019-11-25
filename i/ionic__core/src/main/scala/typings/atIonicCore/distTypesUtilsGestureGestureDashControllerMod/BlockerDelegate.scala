@@ -25,8 +25,8 @@ object BlockerDelegate {
     unblock: () => Unit,
     ctrl: js.Any = null
   ): BlockerDelegate = {
-    val __obj = js.Dynamic.literal(block = js.Any.fromFunction0(block), destroy = js.Any.fromFunction0(destroy), disable = disable, disableScroll = disableScroll, id = id, unblock = js.Any.fromFunction0(unblock))
-    if (ctrl != null) __obj.updateDynamic("ctrl")(ctrl)
+    val __obj = js.Dynamic.literal(block = js.Any.fromFunction0(block), destroy = js.Any.fromFunction0(destroy), disable = disable.asInstanceOf[js.Any], disableScroll = disableScroll.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], unblock = js.Any.fromFunction0(unblock))
+    if (ctrl != null) __obj.updateDynamic("ctrl")(ctrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockerDelegate]
   }
 }

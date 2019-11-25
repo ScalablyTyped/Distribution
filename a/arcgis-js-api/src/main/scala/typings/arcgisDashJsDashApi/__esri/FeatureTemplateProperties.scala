@@ -57,10 +57,10 @@ object FeatureTemplateProperties {
     thumbnail: FeatureTemplateThumbnail = null
   ): FeatureTemplateProperties = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (drawingTool != null) __obj.updateDynamic("drawingTool")(drawingTool.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureTemplateProperties]
   }
 }

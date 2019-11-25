@@ -24,11 +24,11 @@ object IVinylOptions {
     stat: IFsStats = null
   ): IVinylOptions = {
     val __obj = js.Dynamic.literal()
-    if (base != null) __obj.updateDynamic("base")(base)
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
     if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (stat != null) __obj.updateDynamic("stat")(stat)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (stat != null) __obj.updateDynamic("stat")(stat.asInstanceOf[js.Any])
     __obj.asInstanceOf[IVinylOptions]
   }
 }

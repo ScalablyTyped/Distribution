@@ -13,7 +13,7 @@ trait LogView extends js.Object {
 object LogView {
   @scala.inline
   def apply(file_size: Double, l: String, last_pos: Double): LogView = {
-    val __obj = js.Dynamic.literal(file_size = file_size, l = l, last_pos = last_pos)
+    val __obj = js.Dynamic.literal(file_size = file_size.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], last_pos = last_pos.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LogView]
   }

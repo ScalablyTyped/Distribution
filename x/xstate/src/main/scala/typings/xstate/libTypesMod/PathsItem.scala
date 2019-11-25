@@ -13,7 +13,7 @@ trait PathsItem[TContext, TEvent /* <: EventObject */] extends js.Object {
 object PathsItem {
   @scala.inline
   def apply[TContext, TEvent /* <: EventObject */](paths: js.Array[js.Array[Segment[TContext, TEvent]]], state: State[TContext, TEvent]): PathsItem[TContext, TEvent] = {
-    val __obj = js.Dynamic.literal(paths = paths, state = state)
+    val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PathsItem[TContext, TEvent]]
   }

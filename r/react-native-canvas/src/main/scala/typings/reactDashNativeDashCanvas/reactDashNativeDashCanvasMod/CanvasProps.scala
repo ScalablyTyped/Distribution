@@ -23,8 +23,8 @@ object CanvasProps {
     style: StyleProp[ViewStyle] = null
   ): CanvasProps = {
     val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
-    if (originWhitelist != null) __obj.updateDynamic("originWhitelist")(originWhitelist)
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
+    if (originWhitelist != null) __obj.updateDynamic("originWhitelist")(originWhitelist.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasProps]
   }

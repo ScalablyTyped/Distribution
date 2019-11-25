@@ -23,9 +23,9 @@ object ModalDialogUngroupingColumnEventUIParam {
   @scala.inline
   def apply(key: String = null, layout: String = null, owner: js.Any = null): ModalDialogUngroupingColumnEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalDialogUngroupingColumnEventUIParam]
   }
 }

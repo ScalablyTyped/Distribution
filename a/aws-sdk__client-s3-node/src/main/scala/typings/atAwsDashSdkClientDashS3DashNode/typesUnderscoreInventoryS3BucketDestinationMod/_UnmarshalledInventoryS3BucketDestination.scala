@@ -24,10 +24,10 @@ object _UnmarshalledInventoryS3BucketDestination {
     Encryption: _UnmarshalledInventoryEncryption = null,
     Prefix: String = null
   ): _UnmarshalledInventoryS3BucketDestination = {
-    val __obj = js.Dynamic.literal(Bucket = Bucket, Format = Format.asInstanceOf[js.Any])
-    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId)
-    if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption)
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix)
+    val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any])
+    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
+    if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
+    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledInventoryS3BucketDestination]
   }
 }

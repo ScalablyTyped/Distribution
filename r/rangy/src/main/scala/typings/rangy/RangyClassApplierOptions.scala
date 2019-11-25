@@ -32,15 +32,15 @@ object RangyClassApplierOptions {
     useExistingElements: js.UndefOr[Boolean] = js.undefined
   ): RangyClassApplierOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(applyToEditableOnly)) __obj.updateDynamic("applyToEditableOnly")(applyToEditableOnly)
-    if (elementAttributes != null) __obj.updateDynamic("elementAttributes")(elementAttributes)
-    if (elementProperties != null) __obj.updateDynamic("elementProperties")(elementProperties)
-    if (elementTagName != null) __obj.updateDynamic("elementTagName")(elementTagName)
-    if (!js.isUndefined(ignoreWhiteSpace)) __obj.updateDynamic("ignoreWhiteSpace")(ignoreWhiteSpace)
-    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize)
+    if (!js.isUndefined(applyToEditableOnly)) __obj.updateDynamic("applyToEditableOnly")(applyToEditableOnly.asInstanceOf[js.Any])
+    if (elementAttributes != null) __obj.updateDynamic("elementAttributes")(elementAttributes.asInstanceOf[js.Any])
+    if (elementProperties != null) __obj.updateDynamic("elementProperties")(elementProperties.asInstanceOf[js.Any])
+    if (elementTagName != null) __obj.updateDynamic("elementTagName")(elementTagName.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreWhiteSpace)) __obj.updateDynamic("ignoreWhiteSpace")(ignoreWhiteSpace.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize.asInstanceOf[js.Any])
     if (onElementCreate != null) __obj.updateDynamic("onElementCreate")(js.Any.fromFunction2(onElementCreate))
     if (tagNames != null) __obj.updateDynamic("tagNames")(tagNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(useExistingElements)) __obj.updateDynamic("useExistingElements")(useExistingElements)
+    if (!js.isUndefined(useExistingElements)) __obj.updateDynamic("useExistingElements")(useExistingElements.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangyClassApplierOptions]
   }
 }

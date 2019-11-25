@@ -24,12 +24,12 @@ object ModalOptions {
     showCloseButton: js.UndefOr[Boolean] = js.undefined,
     title: String = null
   ): ModalOptions = {
-    val __obj = js.Dynamic.literal(el = el)
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
-    if (!js.isUndefined(chrome)) __obj.updateDynamic("chrome")(chrome)
-    if (!js.isUndefined(constrainTitleWidth)) __obj.updateDynamic("constrainTitleWidth")(constrainTitleWidth)
-    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
+    if (!js.isUndefined(chrome)) __obj.updateDynamic("chrome")(chrome.asInstanceOf[js.Any])
+    if (!js.isUndefined(constrainTitleWidth)) __obj.updateDynamic("constrainTitleWidth")(constrainTitleWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalOptions]
   }
 }

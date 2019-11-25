@@ -14,8 +14,8 @@ object ThresholdOptions {
   @scala.inline
   def apply(coverageVariable: String = null, thresholds: Anon_Each = null): ThresholdOptions = {
     val __obj = js.Dynamic.literal()
-    if (coverageVariable != null) __obj.updateDynamic("coverageVariable")(coverageVariable)
-    if (thresholds != null) __obj.updateDynamic("thresholds")(thresholds)
+    if (coverageVariable != null) __obj.updateDynamic("coverageVariable")(coverageVariable.asInstanceOf[js.Any])
+    if (thresholds != null) __obj.updateDynamic("thresholds")(thresholds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThresholdOptions]
   }
 }

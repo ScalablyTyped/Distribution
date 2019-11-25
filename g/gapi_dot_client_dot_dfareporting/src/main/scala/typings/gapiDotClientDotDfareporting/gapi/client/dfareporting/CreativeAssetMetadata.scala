@@ -64,13 +64,13 @@ object CreativeAssetMetadata {
     warnedValidationRules: js.Array[String] = null
   ): CreativeAssetMetadata = {
     val __obj = js.Dynamic.literal()
-    if (assetIdentifier != null) __obj.updateDynamic("assetIdentifier")(assetIdentifier)
-    if (clickTags != null) __obj.updateDynamic("clickTags")(clickTags)
-    if (detectedFeatures != null) __obj.updateDynamic("detectedFeatures")(detectedFeatures)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (idDimensionValue != null) __obj.updateDynamic("idDimensionValue")(idDimensionValue)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (warnedValidationRules != null) __obj.updateDynamic("warnedValidationRules")(warnedValidationRules)
+    if (assetIdentifier != null) __obj.updateDynamic("assetIdentifier")(assetIdentifier.asInstanceOf[js.Any])
+    if (clickTags != null) __obj.updateDynamic("clickTags")(clickTags.asInstanceOf[js.Any])
+    if (detectedFeatures != null) __obj.updateDynamic("detectedFeatures")(detectedFeatures.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (idDimensionValue != null) __obj.updateDynamic("idDimensionValue")(idDimensionValue.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (warnedValidationRules != null) __obj.updateDynamic("warnedValidationRules")(warnedValidationRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreativeAssetMetadata]
   }
 }

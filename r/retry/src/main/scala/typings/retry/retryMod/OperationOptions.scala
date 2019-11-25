@@ -36,13 +36,13 @@ object OperationOptions {
   ): OperationOptions = {
     val __obj = js.Dynamic.literal()
     if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
-    if (!js.isUndefined(forever)) __obj.updateDynamic("forever")(forever)
+    if (!js.isUndefined(forever)) __obj.updateDynamic("forever")(forever.asInstanceOf[js.Any])
     if (maxRetryTime != null) __obj.updateDynamic("maxRetryTime")(maxRetryTime.asInstanceOf[js.Any])
     if (maxTimeout != null) __obj.updateDynamic("maxTimeout")(maxTimeout.asInstanceOf[js.Any])
     if (minTimeout != null) __obj.updateDynamic("minTimeout")(minTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(randomize)) __obj.updateDynamic("randomize")(randomize)
+    if (!js.isUndefined(randomize)) __obj.updateDynamic("randomize")(randomize.asInstanceOf[js.Any])
     if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
-    if (!js.isUndefined(unref)) __obj.updateDynamic("unref")(unref)
+    if (!js.isUndefined(unref)) __obj.updateDynamic("unref")(unref.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationOptions]
   }
 }

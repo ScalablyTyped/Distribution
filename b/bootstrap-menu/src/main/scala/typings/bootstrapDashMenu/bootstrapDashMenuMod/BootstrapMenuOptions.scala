@@ -69,14 +69,14 @@ object BootstrapMenuOptions {
     noActionsMessage: String = null
   ): BootstrapMenuOptions = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
-    if (_actionSelectEvent != null) __obj.updateDynamic("_actionSelectEvent")(_actionSelectEvent)
-    if (actionsGroups != null) __obj.updateDynamic("actionsGroups")(actionsGroups)
-    if (container != null) __obj.updateDynamic("container")(container)
+    if (_actionSelectEvent != null) __obj.updateDynamic("_actionSelectEvent")(_actionSelectEvent.asInstanceOf[js.Any])
+    if (actionsGroups != null) __obj.updateDynamic("actionsGroups")(actionsGroups.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (fetchElementData != null) __obj.updateDynamic("fetchElementData")(js.Any.fromFunction1(fetchElementData))
-    if (menuEvent != null) __obj.updateDynamic("menuEvent")(menuEvent)
-    if (menuPosition != null) __obj.updateDynamic("menuPosition")(menuPosition)
-    if (menuSource != null) __obj.updateDynamic("menuSource")(menuSource)
-    if (noActionsMessage != null) __obj.updateDynamic("noActionsMessage")(noActionsMessage)
+    if (menuEvent != null) __obj.updateDynamic("menuEvent")(menuEvent.asInstanceOf[js.Any])
+    if (menuPosition != null) __obj.updateDynamic("menuPosition")(menuPosition.asInstanceOf[js.Any])
+    if (menuSource != null) __obj.updateDynamic("menuSource")(menuSource.asInstanceOf[js.Any])
+    if (noActionsMessage != null) __obj.updateDynamic("noActionsMessage")(noActionsMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapMenuOptions]
   }
 }

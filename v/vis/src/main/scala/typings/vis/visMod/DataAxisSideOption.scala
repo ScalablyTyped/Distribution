@@ -15,8 +15,8 @@ object DataAxisSideOption {
   def apply(format: () => String = null, range: RangeType = null, title: TitleOption = null): DataAxisSideOption = {
     val __obj = js.Dynamic.literal()
     if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction0(format))
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataAxisSideOption]
   }
 }

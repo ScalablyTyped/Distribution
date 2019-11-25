@@ -72,18 +72,18 @@ object Annotation {
     variant: VariantAnnotation = null
   ): Annotation = {
     val __obj = js.Dynamic.literal()
-    if (annotationSetId != null) __obj.updateDynamic("annotationSetId")(annotationSetId)
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (info != null) __obj.updateDynamic("info")(info)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (referenceId != null) __obj.updateDynamic("referenceId")(referenceId)
-    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName)
-    if (!js.isUndefined(reverseStrand)) __obj.updateDynamic("reverseStrand")(reverseStrand)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (transcript != null) __obj.updateDynamic("transcript")(transcript)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (variant != null) __obj.updateDynamic("variant")(variant)
+    if (annotationSetId != null) __obj.updateDynamic("annotationSetId")(annotationSetId.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (referenceId != null) __obj.updateDynamic("referenceId")(referenceId.asInstanceOf[js.Any])
+    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseStrand)) __obj.updateDynamic("reverseStrand")(reverseStrand.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (transcript != null) __obj.updateDynamic("transcript")(transcript.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
     __obj.asInstanceOf[Annotation]
   }
 }

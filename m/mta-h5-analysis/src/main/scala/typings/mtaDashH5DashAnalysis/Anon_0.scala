@@ -33,10 +33,10 @@ object Anon_0 {
     senseHash: `0` | `1` = null,
     senseQuery: `0` | `1` = null
   ): Anon_0 = {
-    val __obj = js.Dynamic.literal(sid = sid)
+    val __obj = js.Dynamic.literal(sid = sid.asInstanceOf[js.Any])
     if (autoReport != null) __obj.updateDynamic("autoReport")(autoReport.asInstanceOf[js.Any])
-    if (cid != null) __obj.updateDynamic("cid")(cid)
-    if (ignoreParams != null) __obj.updateDynamic("ignoreParams")(ignoreParams)
+    if (cid != null) __obj.updateDynamic("cid")(cid.asInstanceOf[js.Any])
+    if (ignoreParams != null) __obj.updateDynamic("ignoreParams")(ignoreParams.asInstanceOf[js.Any])
     if (performanceMonitor != null) __obj.updateDynamic("performanceMonitor")(performanceMonitor.asInstanceOf[js.Any])
     if (senseHash != null) __obj.updateDynamic("senseHash")(senseHash.asInstanceOf[js.Any])
     if (senseQuery != null) __obj.updateDynamic("senseQuery")(senseQuery.asInstanceOf[js.Any])

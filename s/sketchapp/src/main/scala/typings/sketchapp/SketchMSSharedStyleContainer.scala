@@ -13,7 +13,7 @@ trait SketchMSSharedStyleContainer extends js.Object {
 object SketchMSSharedStyleContainer {
   @scala.inline
   def apply(_class: sharedStyleContainer, objects: js.Array[SketchMSSharedStyle]): SketchMSSharedStyleContainer = {
-    val __obj = js.Dynamic.literal(_class = _class, objects = objects)
+    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], objects = objects.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SketchMSSharedStyleContainer]
   }

@@ -13,8 +13,8 @@ object EmitOptions {
   @scala.inline
   def apply(stringifiedData: String = null, useCache: js.UndefOr[Boolean] = js.undefined): EmitOptions = {
     val __obj = js.Dynamic.literal()
-    if (stringifiedData != null) __obj.updateDynamic("stringifiedData")(stringifiedData)
-    if (!js.isUndefined(useCache)) __obj.updateDynamic("useCache")(useCache)
+    if (stringifiedData != null) __obj.updateDynamic("stringifiedData")(stringifiedData.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCache)) __obj.updateDynamic("useCache")(useCache.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmitOptions]
   }
 }

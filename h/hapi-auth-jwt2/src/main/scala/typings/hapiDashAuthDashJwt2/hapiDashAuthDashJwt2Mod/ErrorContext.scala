@@ -32,9 +32,9 @@ object ErrorContext {
     attributes: StringDictionary[String] = null,
     message: String = null
   ): ErrorContext = {
-    val __obj = js.Dynamic.literal(errorType = errorType, schema = schema)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (message != null) __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(errorType = errorType.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorContext]
   }
 }

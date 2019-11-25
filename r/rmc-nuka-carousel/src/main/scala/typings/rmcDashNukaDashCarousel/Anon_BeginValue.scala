@@ -25,7 +25,7 @@ object Anon_BeginValue {
     onEnd: js.Any,
     stackBehavior: js.Any
   ): Anon_BeginValue = {
-    val __obj = js.Dynamic.literal(beginValue = beginValue, delay = delay, duration = duration, easing = easing, endValue = endValue, onEnd = onEnd, stackBehavior = stackBehavior)
+    val __obj = js.Dynamic.literal(beginValue = beginValue.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any], endValue = endValue.asInstanceOf[js.Any], onEnd = onEnd.asInstanceOf[js.Any], stackBehavior = stackBehavior.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BeginValue]
   }

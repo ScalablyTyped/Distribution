@@ -21,8 +21,8 @@ object Anon_Kernel {
   @scala.inline
   def apply(kernel: js.Array[IKernelInstallInfo] = null, server: IInstallInfo = null): Anon_Kernel = {
     val __obj = js.Dynamic.literal()
-    if (kernel != null) __obj.updateDynamic("kernel")(kernel)
-    if (server != null) __obj.updateDynamic("server")(server)
+    if (kernel != null) __obj.updateDynamic("kernel")(kernel.asInstanceOf[js.Any])
+    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Kernel]
   }
 }

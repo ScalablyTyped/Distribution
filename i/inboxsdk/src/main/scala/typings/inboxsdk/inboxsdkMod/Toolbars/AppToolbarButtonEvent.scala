@@ -12,7 +12,7 @@ trait AppToolbarButtonEvent extends js.Object {
 object AppToolbarButtonEvent {
   @scala.inline
   def apply(dropdown: DropdownView): AppToolbarButtonEvent = {
-    val __obj = js.Dynamic.literal(dropdown = dropdown)
+    val __obj = js.Dynamic.literal(dropdown = dropdown.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AppToolbarButtonEvent]
   }

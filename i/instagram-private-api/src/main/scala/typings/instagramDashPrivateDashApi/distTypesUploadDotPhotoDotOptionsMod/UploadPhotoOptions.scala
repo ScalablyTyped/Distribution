@@ -14,9 +14,9 @@ trait UploadPhotoOptions extends js.Object {
 object UploadPhotoOptions {
   @scala.inline
   def apply(file: Buffer, isSidecar: js.UndefOr[Boolean] = js.undefined, uploadId: String = null): UploadPhotoOptions = {
-    val __obj = js.Dynamic.literal(file = file)
-    if (!js.isUndefined(isSidecar)) __obj.updateDynamic("isSidecar")(isSidecar)
-    if (uploadId != null) __obj.updateDynamic("uploadId")(uploadId)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSidecar)) __obj.updateDynamic("isSidecar")(isSidecar.asInstanceOf[js.Any])
+    if (uploadId != null) __obj.updateDynamic("uploadId")(uploadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadPhotoOptions]
   }
 }

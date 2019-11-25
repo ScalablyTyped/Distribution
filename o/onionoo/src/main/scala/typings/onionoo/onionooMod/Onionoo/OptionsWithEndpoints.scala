@@ -27,8 +27,8 @@ object OptionsWithEndpoints {
     baseUrl: String = null,
     cache: Cache | `false` = null
   ): OptionsWithEndpoints = {
-    val __obj = js.Dynamic.literal(endpoints = endpoints)
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    val __obj = js.Dynamic.literal(endpoints = endpoints.asInstanceOf[js.Any])
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsWithEndpoints]
   }

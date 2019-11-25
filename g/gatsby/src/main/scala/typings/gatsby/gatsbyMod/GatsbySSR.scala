@@ -193,11 +193,11 @@ object GatsbySSR {
     ]) = null
   ): GatsbySSR = {
     val __obj = js.Dynamic.literal()
-    if (onPreRenderHTML != null) __obj.updateDynamic("onPreRenderHTML")(onPreRenderHTML)
-    if (onRenderBody != null) __obj.updateDynamic("onRenderBody")(onRenderBody)
-    if (replaceRenderer != null) __obj.updateDynamic("replaceRenderer")(replaceRenderer)
-    if (wrapPageElement != null) __obj.updateDynamic("wrapPageElement")(wrapPageElement)
-    if (wrapRootElement != null) __obj.updateDynamic("wrapRootElement")(wrapRootElement)
+    if (onPreRenderHTML != null) __obj.updateDynamic("onPreRenderHTML")(onPreRenderHTML.asInstanceOf[js.Any])
+    if (onRenderBody != null) __obj.updateDynamic("onRenderBody")(onRenderBody.asInstanceOf[js.Any])
+    if (replaceRenderer != null) __obj.updateDynamic("replaceRenderer")(replaceRenderer.asInstanceOf[js.Any])
+    if (wrapPageElement != null) __obj.updateDynamic("wrapPageElement")(wrapPageElement.asInstanceOf[js.Any])
+    if (wrapRootElement != null) __obj.updateDynamic("wrapRootElement")(wrapRootElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[GatsbySSR]
   }
 }

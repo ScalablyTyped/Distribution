@@ -20,9 +20,9 @@ object CellClickEventArgs {
   @scala.inline
   def apply(customObject: js.Any = null, element: js.Any = null, selectedData: js.Array[_] = null): CellClickEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (customObject != null) __obj.updateDynamic("customObject")(customObject)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (selectedData != null) __obj.updateDynamic("selectedData")(selectedData)
+    if (customObject != null) __obj.updateDynamic("customObject")(customObject.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (selectedData != null) __obj.updateDynamic("selectedData")(selectedData.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellClickEventArgs]
   }
 }

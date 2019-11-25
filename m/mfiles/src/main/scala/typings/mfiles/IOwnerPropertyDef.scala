@@ -20,7 +20,7 @@ object IOwnerPropertyDef {
     IndexForAutomaticFilling: Double,
     IsRelationFiltering: Boolean
   ): IOwnerPropertyDef = {
-    val __obj = js.Dynamic.literal(DependencyRelation = DependencyRelation, ID = ID, IndexForAutomaticFilling = IndexForAutomaticFilling, IsRelationFiltering = IsRelationFiltering)
+    val __obj = js.Dynamic.literal(DependencyRelation = DependencyRelation.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], IndexForAutomaticFilling = IndexForAutomaticFilling.asInstanceOf[js.Any], IsRelationFiltering = IsRelationFiltering.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOwnerPropertyDef]
   }

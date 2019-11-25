@@ -316,8 +316,6 @@ trait atMaterialDashUiCoreProps {
   @scala.inline
   def TabsProps: typings.atMaterialDashUiCore.tabsTabsMod.TabsProps.type = typings.atMaterialDashUiCore.tabsTabsMod.TabsProps
   type TabsProps = typings.atMaterialDashUiCore.tabsTabsMod.TabsProps
-  @scala.inline
-  def TextFieldProps: typings.atMaterialDashUiCore.textFieldTextFieldMod.TextFieldProps.type = typings.atMaterialDashUiCore.textFieldTextFieldMod.TextFieldProps
   type TextFieldProps = typings.atMaterialDashUiCore.textFieldTextFieldMod.TextFieldProps
   @scala.inline
   def ToolbarProps: typings.atMaterialDashUiCore.toolbarToolbarMod.ToolbarProps.type = typings.atMaterialDashUiCore.toolbarToolbarMod.ToolbarProps

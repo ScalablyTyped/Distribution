@@ -27,12 +27,12 @@ object PartialCascaderStateFlattenOptions {
     value: js.Array[String] = null
   ): PartialCascaderStateFlattenOptions = {
     val __obj = js.Dynamic.literal()
-    if (flattenOptions != null) __obj.updateDynamic("flattenOptions")(flattenOptions)
-    if (!js.isUndefined(inputFocused)) __obj.updateDynamic("inputFocused")(inputFocused)
-    if (inputValue != null) __obj.updateDynamic("inputValue")(inputValue)
-    if (!js.isUndefined(popupVisible)) __obj.updateDynamic("popupVisible")(popupVisible)
-    if (prevProps != null) __obj.updateDynamic("prevProps")(prevProps)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (flattenOptions != null) __obj.updateDynamic("flattenOptions")(flattenOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(inputFocused)) __obj.updateDynamic("inputFocused")(inputFocused.asInstanceOf[js.Any])
+    if (inputValue != null) __obj.updateDynamic("inputValue")(inputValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(popupVisible)) __obj.updateDynamic("popupVisible")(popupVisible.asInstanceOf[js.Any])
+    if (prevProps != null) __obj.updateDynamic("prevProps")(prevProps.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialCascaderStateFlattenOptions]
   }
 }

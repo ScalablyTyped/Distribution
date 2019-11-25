@@ -21,7 +21,7 @@ object AggregatedResultsDifference {
     increaseInPassedTests: Double,
     increaseInTotalTests: Double
   ): AggregatedResultsDifference = {
-    val __obj = js.Dynamic.literal(increaseInDuration = increaseInDuration, increaseInFailures = increaseInFailures, increaseInOtherTests = increaseInOtherTests, increaseInPassedTests = increaseInPassedTests, increaseInTotalTests = increaseInTotalTests)
+    val __obj = js.Dynamic.literal(increaseInDuration = increaseInDuration.asInstanceOf[js.Any], increaseInFailures = increaseInFailures.asInstanceOf[js.Any], increaseInOtherTests = increaseInOtherTests.asInstanceOf[js.Any], increaseInPassedTests = increaseInPassedTests.asInstanceOf[js.Any], increaseInTotalTests = increaseInTotalTests.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AggregatedResultsDifference]
   }

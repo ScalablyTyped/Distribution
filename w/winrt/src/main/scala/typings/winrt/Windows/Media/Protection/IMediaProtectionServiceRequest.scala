@@ -12,8 +12,8 @@ trait IMediaProtectionServiceRequest extends js.Object {
 object IMediaProtectionServiceRequest {
   @scala.inline
   def apply(protectionSystem: String, `type`: String): IMediaProtectionServiceRequest = {
-    val __obj = js.Dynamic.literal(protectionSystem = protectionSystem)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(protectionSystem = protectionSystem.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMediaProtectionServiceRequest]
   }
 }

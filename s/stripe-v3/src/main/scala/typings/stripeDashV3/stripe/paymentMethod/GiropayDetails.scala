@@ -14,7 +14,7 @@ trait GiropayDetails extends js.Object {
 object GiropayDetails {
   @scala.inline
   def apply(bank_code: String, bank_name: String, bic: String, verified_name: String): GiropayDetails = {
-    val __obj = js.Dynamic.literal(bank_code = bank_code, bank_name = bank_name, bic = bic, verified_name = verified_name)
+    val __obj = js.Dynamic.literal(bank_code = bank_code.asInstanceOf[js.Any], bank_name = bank_name.asInstanceOf[js.Any], bic = bic.asInstanceOf[js.Any], verified_name = verified_name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GiropayDetails]
   }

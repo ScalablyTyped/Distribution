@@ -13,9 +13,9 @@ trait FeatureIdentifier extends js.Object {
 object FeatureIdentifier {
   @scala.inline
   def apply(source: String, id: String | Double = null, sourceLayer: String = null): FeatureIdentifier = {
-    val __obj = js.Dynamic.literal(source = source)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (sourceLayer != null) __obj.updateDynamic("sourceLayer")(sourceLayer)
+    if (sourceLayer != null) __obj.updateDynamic("sourceLayer")(sourceLayer.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureIdentifier]
   }
 }

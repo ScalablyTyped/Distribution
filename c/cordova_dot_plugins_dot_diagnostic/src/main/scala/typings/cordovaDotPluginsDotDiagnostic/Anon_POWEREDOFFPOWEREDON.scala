@@ -26,7 +26,7 @@ object Anon_POWEREDOFFPOWEREDON {
     POWERING_ON: powering_on,
     UNKNOWN: unknown
   ): Anon_POWEREDOFFPOWEREDON = {
-    val __obj = js.Dynamic.literal(POWERED_OFF = POWERED_OFF, POWERED_ON = POWERED_ON, POWERING_OFF = POWERING_OFF, POWERING_ON = POWERING_ON, UNKNOWN = UNKNOWN)
+    val __obj = js.Dynamic.literal(POWERED_OFF = POWERED_OFF.asInstanceOf[js.Any], POWERED_ON = POWERED_ON.asInstanceOf[js.Any], POWERING_OFF = POWERING_OFF.asInstanceOf[js.Any], POWERING_ON = POWERING_ON.asInstanceOf[js.Any], UNKNOWN = UNKNOWN.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_POWEREDOFFPOWEREDON]
   }

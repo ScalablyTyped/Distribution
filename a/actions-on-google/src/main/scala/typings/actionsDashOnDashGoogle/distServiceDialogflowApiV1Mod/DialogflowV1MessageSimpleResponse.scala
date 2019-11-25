@@ -21,10 +21,10 @@ object DialogflowV1MessageSimpleResponse {
     textToSpeech: String = null,
     `type`: simple_response = null
   ): DialogflowV1MessageSimpleResponse = {
-    val __obj = js.Dynamic.literal(platform = platform)
-    if (displayText != null) __obj.updateDynamic("displayText")(displayText)
-    if (textToSpeech != null) __obj.updateDynamic("textToSpeech")(textToSpeech)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
+    if (displayText != null) __obj.updateDynamic("displayText")(displayText.asInstanceOf[js.Any])
+    if (textToSpeech != null) __obj.updateDynamic("textToSpeech")(textToSpeech.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogflowV1MessageSimpleResponse]
   }
 }

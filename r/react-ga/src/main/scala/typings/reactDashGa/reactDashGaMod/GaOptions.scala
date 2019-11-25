@@ -42,21 +42,21 @@ object GaOptions {
     userId: String = null
   ): GaOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowAnchor)) __obj.updateDynamic("allowAnchor")(allowAnchor)
-    if (!js.isUndefined(allowLinker)) __obj.updateDynamic("allowLinker")(allowLinker)
-    if (!js.isUndefined(alwaysSendReferrer)) __obj.updateDynamic("alwaysSendReferrer")(alwaysSendReferrer)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (cookieDomain != null) __obj.updateDynamic("cookieDomain")(cookieDomain)
+    if (!js.isUndefined(allowAnchor)) __obj.updateDynamic("allowAnchor")(allowAnchor.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowLinker)) __obj.updateDynamic("allowLinker")(allowLinker.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysSendReferrer)) __obj.updateDynamic("alwaysSendReferrer")(alwaysSendReferrer.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (cookieDomain != null) __obj.updateDynamic("cookieDomain")(cookieDomain.asInstanceOf[js.Any])
     if (cookieExpires != null) __obj.updateDynamic("cookieExpires")(cookieExpires.asInstanceOf[js.Any])
-    if (cookieName != null) __obj.updateDynamic("cookieName")(cookieName)
-    if (legacyCookieDomain != null) __obj.updateDynamic("legacyCookieDomain")(legacyCookieDomain)
-    if (!js.isUndefined(legacyHistoryImport)) __obj.updateDynamic("legacyHistoryImport")(legacyHistoryImport)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (cookieName != null) __obj.updateDynamic("cookieName")(cookieName.asInstanceOf[js.Any])
+    if (legacyCookieDomain != null) __obj.updateDynamic("legacyCookieDomain")(legacyCookieDomain.asInstanceOf[js.Any])
+    if (!js.isUndefined(legacyHistoryImport)) __obj.updateDynamic("legacyHistoryImport")(legacyHistoryImport.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
     if (siteSpeedSampleRate != null) __obj.updateDynamic("siteSpeedSampleRate")(siteSpeedSampleRate.asInstanceOf[js.Any])
-    if (storage != null) __obj.updateDynamic("storage")(storage)
-    if (!js.isUndefined(storeGac)) __obj.updateDynamic("storeGac")(storeGac)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
+    if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
+    if (!js.isUndefined(storeGac)) __obj.updateDynamic("storeGac")(storeGac.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GaOptions]
   }
 }

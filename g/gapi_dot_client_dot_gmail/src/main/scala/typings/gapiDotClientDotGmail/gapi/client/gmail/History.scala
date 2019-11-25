@@ -33,12 +33,12 @@ object History {
     messagesDeleted: js.Array[HistoryMessageDeleted] = null
   ): History = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (labelsAdded != null) __obj.updateDynamic("labelsAdded")(labelsAdded)
-    if (labelsRemoved != null) __obj.updateDynamic("labelsRemoved")(labelsRemoved)
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (messagesAdded != null) __obj.updateDynamic("messagesAdded")(messagesAdded)
-    if (messagesDeleted != null) __obj.updateDynamic("messagesDeleted")(messagesDeleted)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (labelsAdded != null) __obj.updateDynamic("labelsAdded")(labelsAdded.asInstanceOf[js.Any])
+    if (labelsRemoved != null) __obj.updateDynamic("labelsRemoved")(labelsRemoved.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (messagesAdded != null) __obj.updateDynamic("messagesAdded")(messagesAdded.asInstanceOf[js.Any])
+    if (messagesDeleted != null) __obj.updateDynamic("messagesDeleted")(messagesDeleted.asInstanceOf[js.Any])
     __obj.asInstanceOf[History]
   }
 }

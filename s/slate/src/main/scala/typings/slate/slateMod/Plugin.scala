@@ -44,14 +44,14 @@ object Plugin {
     validateNode: (/* node */ Node, /* editor */ Editor, /* next */ js.Function0[Unit]) => SlateError | Unit = null
   ): Plugin = {
     val __obj = js.Dynamic.literal()
-    if (commands != null) __obj.updateDynamic("commands")(commands)
+    if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
     if (normalizeNode != null) __obj.updateDynamic("normalizeNode")(js.Any.fromFunction3(normalizeNode))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onCommand != null) __obj.updateDynamic("onCommand")(js.Any.fromFunction3(onCommand))
     if (onConstruct != null) __obj.updateDynamic("onConstruct")(js.Any.fromFunction2(onConstruct))
     if (onQuery != null) __obj.updateDynamic("onQuery")(js.Any.fromFunction3(onQuery))
-    if (queries != null) __obj.updateDynamic("queries")(queries)
-    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     if (validateNode != null) __obj.updateDynamic("validateNode")(js.Any.fromFunction3(validateNode))
     __obj.asInstanceOf[Plugin]
   }

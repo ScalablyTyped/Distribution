@@ -49,11 +49,11 @@ object Model {
     val __obj = js.Dynamic.literal()
     if (categoricalCurrentPage != null) __obj.updateDynamic("categoricalCurrentPage")(categoricalCurrentPage.asInstanceOf[js.Any])
     if (categoricalPageCount != null) __obj.updateDynamic("categoricalPageCount")(categoricalPageCount.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (seriesCurrentPage != null) __obj.updateDynamic("seriesCurrentPage")(seriesCurrentPage.asInstanceOf[js.Any])
     if (seriesPageCount != null) __obj.updateDynamic("seriesPageCount")(seriesPageCount.asInstanceOf[js.Any])
-    if (targetControlID != null) __obj.updateDynamic("targetControlID")(targetControlID)
+    if (targetControlID != null) __obj.updateDynamic("targetControlID")(targetControlID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

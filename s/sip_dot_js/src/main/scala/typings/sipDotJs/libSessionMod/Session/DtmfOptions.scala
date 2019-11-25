@@ -19,7 +19,7 @@ object DtmfOptions {
   ): DtmfOptions = {
     val __obj = js.Dynamic.literal()
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
+    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
     if (interToneGap != null) __obj.updateDynamic("interToneGap")(interToneGap.asInstanceOf[js.Any])
     __obj.asInstanceOf[DtmfOptions]
   }

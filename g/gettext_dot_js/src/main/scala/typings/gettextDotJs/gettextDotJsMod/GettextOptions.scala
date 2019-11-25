@@ -20,9 +20,9 @@ object GettextOptions {
     plural_func: /* n */ Double => Double = null
   ): GettextOptions = {
     val __obj = js.Dynamic.literal()
-    if (ctxt_delimiter != null) __obj.updateDynamic("ctxt_delimiter")(ctxt_delimiter)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (ctxt_delimiter != null) __obj.updateDynamic("ctxt_delimiter")(ctxt_delimiter.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (plural_func != null) __obj.updateDynamic("plural_func")(js.Any.fromFunction1(plural_func))
     __obj.asInstanceOf[GettextOptions]
   }

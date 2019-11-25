@@ -13,7 +13,7 @@ trait Anon_ExcludeIE extends js.Object {
 object Anon_ExcludeIE {
   @scala.inline
   def apply(excludeIE: Boolean, sortPluginsFor: js.Array[RegExp]): Anon_ExcludeIE = {
-    val __obj = js.Dynamic.literal(excludeIE = excludeIE, sortPluginsFor = sortPluginsFor)
+    val __obj = js.Dynamic.literal(excludeIE = excludeIE.asInstanceOf[js.Any], sortPluginsFor = sortPluginsFor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ExcludeIE]
   }

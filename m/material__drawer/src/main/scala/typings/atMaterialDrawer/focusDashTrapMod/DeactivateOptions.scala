@@ -13,7 +13,7 @@ object DeactivateOptions {
   @scala.inline
   def apply(returnFocus: js.UndefOr[Boolean] = js.undefined): DeactivateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(returnFocus)) __obj.updateDynamic("returnFocus")(returnFocus)
+    if (!js.isUndefined(returnFocus)) __obj.updateDynamic("returnFocus")(returnFocus.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeactivateOptions]
   }
 }

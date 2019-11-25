@@ -14,7 +14,7 @@ trait OnSuccessMetaData extends js.Object {
 object OnSuccessMetaData {
   @scala.inline
   def apply(accounts: js.Array[Account], institution: Anon_Institutionid, link_session_id: String): OnSuccessMetaData = {
-    val __obj = js.Dynamic.literal(accounts = accounts, institution = institution, link_session_id = link_session_id)
+    val __obj = js.Dynamic.literal(accounts = accounts.asInstanceOf[js.Any], institution = institution.asInstanceOf[js.Any], link_session_id = link_session_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OnSuccessMetaData]
   }

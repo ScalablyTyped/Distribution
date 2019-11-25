@@ -18,7 +18,7 @@ trait CustomPluginContainer extends js.Object {
 object CustomPluginContainer {
   @scala.inline
   def apply(key: String, plugin: js.Function): CustomPluginContainer = {
-    val __obj = js.Dynamic.literal(key = key, plugin = plugin)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CustomPluginContainer]
   }

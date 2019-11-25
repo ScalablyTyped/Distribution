@@ -31,7 +31,7 @@ object InternationalizationOptions {
     weekdaysAbbrev: js.Array[String],
     weekdaysShort: js.Array[String]
   ): InternationalizationOptions = {
-    val __obj = js.Dynamic.literal(cancel = cancel, clear = clear, done = done, months = months, monthsShort = monthsShort, nextMonth = nextMonth, previousMonth = previousMonth, weekdays = weekdays, weekdaysAbbrev = weekdaysAbbrev, weekdaysShort = weekdaysShort)
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], clear = clear.asInstanceOf[js.Any], done = done.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], monthsShort = monthsShort.asInstanceOf[js.Any], nextMonth = nextMonth.asInstanceOf[js.Any], previousMonth = previousMonth.asInstanceOf[js.Any], weekdays = weekdays.asInstanceOf[js.Any], weekdaysAbbrev = weekdaysAbbrev.asInstanceOf[js.Any], weekdaysShort = weekdaysShort.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InternationalizationOptions]
   }

@@ -38,17 +38,17 @@ object ModalDialogProps {
     onHide: js.Function = null
   ): ModalDialogProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
-    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)
-    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)
-    if (onEntered != null) __obj.updateDynamic("onEntered")(onEntered)
-    if (onEntering != null) __obj.updateDynamic("onEntering")(onEntering)
-    if (onExit != null) __obj.updateDynamic("onExit")(onExit)
-    if (onExited != null) __obj.updateDynamic("onExited")(onExited)
-    if (onExiting != null) __obj.updateDynamic("onExiting")(onExiting)
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
+    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize.asInstanceOf[js.Any])
+    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
+    if (onEntered != null) __obj.updateDynamic("onEntered")(onEntered.asInstanceOf[js.Any])
+    if (onEntering != null) __obj.updateDynamic("onEntering")(onEntering.asInstanceOf[js.Any])
+    if (onExit != null) __obj.updateDynamic("onExit")(onExit.asInstanceOf[js.Any])
+    if (onExited != null) __obj.updateDynamic("onExited")(onExited.asInstanceOf[js.Any])
+    if (onExiting != null) __obj.updateDynamic("onExiting")(onExiting.asInstanceOf[js.Any])
+    if (onHide != null) __obj.updateDynamic("onHide")(onHide.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalDialogProps]
   }
 }

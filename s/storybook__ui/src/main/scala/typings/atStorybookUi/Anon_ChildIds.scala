@@ -31,7 +31,7 @@ object Anon_ChildIds {
     onKeyUp: js.Any,
     prefix: js.Any
   ): Anon_ChildIds = {
-    val __obj = js.Dynamic.literal(childIds = childIds, children = children, id = id, isComponent = isComponent, isExpanded = isExpanded, isLeaf = isLeaf, name = name, onClick = onClick, onKeyUp = onKeyUp, prefix = prefix)
+    val __obj = js.Dynamic.literal(childIds = childIds.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isComponent = isComponent.asInstanceOf[js.Any], isExpanded = isExpanded.asInstanceOf[js.Any], isLeaf = isLeaf.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onClick = onClick.asInstanceOf[js.Any], onKeyUp = onKeyUp.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ChildIds]
   }

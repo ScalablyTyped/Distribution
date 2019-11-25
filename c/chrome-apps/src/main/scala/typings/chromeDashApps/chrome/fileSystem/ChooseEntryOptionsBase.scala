@@ -36,9 +36,9 @@ object ChooseEntryOptionsBase {
     suggestedName: String = null
   ): ChooseEntryOptionsBase = {
     val __obj = js.Dynamic.literal()
-    if (accepts != null) __obj.updateDynamic("accepts")(accepts)
-    if (!js.isUndefined(acceptsAllTypes)) __obj.updateDynamic("acceptsAllTypes")(acceptsAllTypes)
-    if (suggestedName != null) __obj.updateDynamic("suggestedName")(suggestedName)
+    if (accepts != null) __obj.updateDynamic("accepts")(accepts.asInstanceOf[js.Any])
+    if (!js.isUndefined(acceptsAllTypes)) __obj.updateDynamic("acceptsAllTypes")(acceptsAllTypes.asInstanceOf[js.Any])
+    if (suggestedName != null) __obj.updateDynamic("suggestedName")(suggestedName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooseEntryOptionsBase]
   }
 }

@@ -30,10 +30,10 @@ object Tooltip {
     templateId: String = null
   ): Tooltip = {
     val __obj = js.Dynamic.literal()
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
-    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (relativeMode != null) __obj.updateDynamic("relativeMode")(relativeMode.asInstanceOf[js.Any])
-    if (templateId != null) __obj.updateDynamic("templateId")(templateId)
+    if (templateId != null) __obj.updateDynamic("templateId")(templateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tooltip]
   }
 }

@@ -14,8 +14,8 @@ trait IAchCreditTransferPaymentMethodDetails extends IPaymentMethodDetails {
 object IAchCreditTransferPaymentMethodDetails {
   @scala.inline
   def apply(ach_credit_transfer: Anon_Accountnumber, `type`: ach_credit_transfer): IAchCreditTransferPaymentMethodDetails = {
-    val __obj = js.Dynamic.literal(ach_credit_transfer = ach_credit_transfer)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(ach_credit_transfer = ach_credit_transfer.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAchCreditTransferPaymentMethodDetails]
   }
 }

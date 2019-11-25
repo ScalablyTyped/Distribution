@@ -14,8 +14,8 @@ object Anon_FullMap {
   @scala.inline
   def apply(fullMap: StringDictionary[String] = null, keysOnly: js.Array[String] = null): Anon_FullMap = {
     val __obj = js.Dynamic.literal()
-    if (fullMap != null) __obj.updateDynamic("fullMap")(fullMap)
-    if (keysOnly != null) __obj.updateDynamic("keysOnly")(keysOnly)
+    if (fullMap != null) __obj.updateDynamic("fullMap")(fullMap.asInstanceOf[js.Any])
+    if (keysOnly != null) __obj.updateDynamic("keysOnly")(keysOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FullMap]
   }
 }

@@ -13,7 +13,7 @@ trait All extends js.Object {
 object All {
   @scala.inline
   def apply(entries: Anon_Arpa): All = {
-    val __obj = js.Dynamic.literal(entries = entries)
+    val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[All]
   }

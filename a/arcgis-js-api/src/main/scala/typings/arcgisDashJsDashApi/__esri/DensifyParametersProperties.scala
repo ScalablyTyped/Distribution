@@ -46,8 +46,8 @@ object DensifyParametersProperties {
     maxSegmentLength: Int | Double = null
   ): DensifyParametersProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic)
-    if (geometries != null) __obj.updateDynamic("geometries")(geometries)
+    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic.asInstanceOf[js.Any])
+    if (geometries != null) __obj.updateDynamic("geometries")(geometries.asInstanceOf[js.Any])
     if (lengthUnit != null) __obj.updateDynamic("lengthUnit")(lengthUnit.asInstanceOf[js.Any])
     if (maxSegmentLength != null) __obj.updateDynamic("maxSegmentLength")(maxSegmentLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[DensifyParametersProperties]

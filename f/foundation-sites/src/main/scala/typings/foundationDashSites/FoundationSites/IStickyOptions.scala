@@ -34,17 +34,17 @@ object IStickyOptions {
     topAnchor: String = null
   ): IStickyOptions = {
     val __obj = js.Dynamic.literal()
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
-    if (btmAnchor != null) __obj.updateDynamic("btmAnchor")(btmAnchor)
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (btmAnchor != null) __obj.updateDynamic("btmAnchor")(btmAnchor.asInstanceOf[js.Any])
     if (checkEvery != null) __obj.updateDynamic("checkEvery")(checkEvery.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (containerClass != null) __obj.updateDynamic("containerClass")(containerClass)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (containerClass != null) __obj.updateDynamic("containerClass")(containerClass.asInstanceOf[js.Any])
     if (marginBottom != null) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
     if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
-    if (stickTo != null) __obj.updateDynamic("stickTo")(stickTo)
-    if (stickyClass != null) __obj.updateDynamic("stickyClass")(stickyClass)
-    if (stickyOn != null) __obj.updateDynamic("stickyOn")(stickyOn)
-    if (topAnchor != null) __obj.updateDynamic("topAnchor")(topAnchor)
+    if (stickTo != null) __obj.updateDynamic("stickTo")(stickTo.asInstanceOf[js.Any])
+    if (stickyClass != null) __obj.updateDynamic("stickyClass")(stickyClass.asInstanceOf[js.Any])
+    if (stickyOn != null) __obj.updateDynamic("stickyOn")(stickyOn.asInstanceOf[js.Any])
+    if (topAnchor != null) __obj.updateDynamic("topAnchor")(topAnchor.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStickyOptions]
   }
 }

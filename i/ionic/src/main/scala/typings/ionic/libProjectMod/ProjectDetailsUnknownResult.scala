@@ -13,8 +13,8 @@ trait ProjectDetailsUnknownResult extends ProjectDetailsResultBase {
 object ProjectDetailsUnknownResult {
   @scala.inline
   def apply(context: unknown, errors: js.Array[ProjectDetailsError], `type`: ProjectType = null): ProjectDetailsUnknownResult = {
-    val __obj = js.Dynamic.literal(context = context, errors = errors)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectDetailsUnknownResult]
   }
 }

@@ -41,11 +41,11 @@ object GetServiceGraphOutput {
     Services: js.Array[_UnmarshalledService] = null,
     StartTime: Date = null
   ): GetServiceGraphOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (Services != null) __obj.updateDynamic("Services")(Services)
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (Services != null) __obj.updateDynamic("Services")(Services.asInstanceOf[js.Any])
+    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetServiceGraphOutput]
   }
 }

@@ -12,7 +12,7 @@ trait Config extends js.Object {
 object Config {
   @scala.inline
   def apply(domain: String, storefrontAccessToken: String): Config = {
-    val __obj = js.Dynamic.literal(domain = domain, storefrontAccessToken = storefrontAccessToken)
+    val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], storefrontAccessToken = storefrontAccessToken.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Config]
   }

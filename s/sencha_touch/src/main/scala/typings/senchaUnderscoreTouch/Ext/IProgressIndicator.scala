@@ -96,95 +96,59 @@ object IProgressIndicator {
   @scala.inline
   def apply(
     IContainer: IContainer = null,
-    baseCls: java.lang.String = null,
-    centered: js.UndefOr[Boolean] = js.undefined,
     dynamic: js.UndefOr[Boolean] = js.undefined,
     fallbackText: js.Any = null,
-    getBaseCls: () => java.lang.String = null,
-    getCentered: () => Boolean = null,
     getDynamic: () => Boolean = null,
-    getHidden: () => Boolean = null,
-    getHideAnimation: () => _ = null,
     getMaxProgressInput: () => Double = null,
     getMaxProgressOutput: () => Double = null,
     getMinProgressInput: () => Double = null,
     getMinProgressOutput: () => Double = null,
-    getModal: () => Boolean = null,
     getMonitoredStates: () => _ = null,
-    getShowAnimation: () => _ = null,
     getState: () => java.lang.String = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    hideAnimation: js.Any = null,
     loadingText: js.Any = null,
     maxProgressInput: Int | Double = null,
     maxProgressOutput: Int | Double = null,
     minProgressInput: Int | Double = null,
     minProgressOutput: Int | Double = null,
-    modal: js.UndefOr[Boolean] = js.undefined,
     monitoredStates: js.Any = null,
-    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => Unit = null,
-    setCentered: /* centered */ js.UndefOr[Boolean] => Unit = null,
-    setDynamic: /* dynamic */ js.UndefOr[Boolean] => Unit = null,
+    setDynamic: js.UndefOr[Boolean] => Unit = null,
     setFallbackText: /* fallbackText */ js.UndefOr[js.Any] => Unit = null,
-    setHidden: /* hidden */ js.UndefOr[Boolean] => Unit = null,
-    setHideAnimation: /* hideAnimation */ js.UndefOr[js.Any] => Unit = null,
     setLoadingText: /* loadingText */ js.UndefOr[js.Any] => Unit = null,
-    setMaxProgressInput: /* maxProgressInput */ js.UndefOr[Double] => Unit = null,
+    setMaxProgressInput: js.UndefOr[Double] => Unit = null,
     setMaxProgressOutput: /* maxProgressOutput */ js.UndefOr[Double] => Unit = null,
-    setMinProgressInput: /* minProgressInput */ js.UndefOr[Double] => Unit = null,
+    setMinProgressInput: js.UndefOr[Double] => Unit = null,
     setMinProgressOutput: /* minProgressOutput */ js.UndefOr[Double] => Unit = null,
-    setModal: /* modal */ js.UndefOr[Boolean] => Unit = null,
     setMonitoredStates: /* monitoredStates */ js.UndefOr[js.Any] => Unit = null,
-    setShowAnimation: /* showAnimation */ js.UndefOr[js.Any] => Unit = null,
     setState: /* state */ js.UndefOr[java.lang.String] => Unit = null,
-    showAnimation: js.Any = null,
     state: java.lang.String = null
   ): IProgressIndicator = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered)
-    if (!js.isUndefined(dynamic)) __obj.updateDynamic("dynamic")(dynamic)
-    if (fallbackText != null) __obj.updateDynamic("fallbackText")(fallbackText)
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
-    if (getCentered != null) __obj.updateDynamic("getCentered")(js.Any.fromFunction0(getCentered))
+    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (!js.isUndefined(dynamic)) __obj.updateDynamic("dynamic")(dynamic.asInstanceOf[js.Any])
+    if (fallbackText != null) __obj.updateDynamic("fallbackText")(fallbackText.asInstanceOf[js.Any])
     if (getDynamic != null) __obj.updateDynamic("getDynamic")(js.Any.fromFunction0(getDynamic))
-    if (getHidden != null) __obj.updateDynamic("getHidden")(js.Any.fromFunction0(getHidden))
-    if (getHideAnimation != null) __obj.updateDynamic("getHideAnimation")(js.Any.fromFunction0(getHideAnimation))
     if (getMaxProgressInput != null) __obj.updateDynamic("getMaxProgressInput")(js.Any.fromFunction0(getMaxProgressInput))
     if (getMaxProgressOutput != null) __obj.updateDynamic("getMaxProgressOutput")(js.Any.fromFunction0(getMaxProgressOutput))
     if (getMinProgressInput != null) __obj.updateDynamic("getMinProgressInput")(js.Any.fromFunction0(getMinProgressInput))
     if (getMinProgressOutput != null) __obj.updateDynamic("getMinProgressOutput")(js.Any.fromFunction0(getMinProgressOutput))
-    if (getModal != null) __obj.updateDynamic("getModal")(js.Any.fromFunction0(getModal))
     if (getMonitoredStates != null) __obj.updateDynamic("getMonitoredStates")(js.Any.fromFunction0(getMonitoredStates))
-    if (getShowAnimation != null) __obj.updateDynamic("getShowAnimation")(js.Any.fromFunction0(getShowAnimation))
     if (getState != null) __obj.updateDynamic("getState")(js.Any.fromFunction0(getState))
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (hideAnimation != null) __obj.updateDynamic("hideAnimation")(hideAnimation)
-    if (loadingText != null) __obj.updateDynamic("loadingText")(loadingText)
+    if (loadingText != null) __obj.updateDynamic("loadingText")(loadingText.asInstanceOf[js.Any])
     if (maxProgressInput != null) __obj.updateDynamic("maxProgressInput")(maxProgressInput.asInstanceOf[js.Any])
     if (maxProgressOutput != null) __obj.updateDynamic("maxProgressOutput")(maxProgressOutput.asInstanceOf[js.Any])
     if (minProgressInput != null) __obj.updateDynamic("minProgressInput")(minProgressInput.asInstanceOf[js.Any])
     if (minProgressOutput != null) __obj.updateDynamic("minProgressOutput")(minProgressOutput.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
-    if (monitoredStates != null) __obj.updateDynamic("monitoredStates")(monitoredStates)
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
-    if (setCentered != null) __obj.updateDynamic("setCentered")(js.Any.fromFunction1(setCentered))
+    if (monitoredStates != null) __obj.updateDynamic("monitoredStates")(monitoredStates.asInstanceOf[js.Any])
     if (setDynamic != null) __obj.updateDynamic("setDynamic")(js.Any.fromFunction1(setDynamic))
     if (setFallbackText != null) __obj.updateDynamic("setFallbackText")(js.Any.fromFunction1(setFallbackText))
-    if (setHidden != null) __obj.updateDynamic("setHidden")(js.Any.fromFunction1(setHidden))
-    if (setHideAnimation != null) __obj.updateDynamic("setHideAnimation")(js.Any.fromFunction1(setHideAnimation))
     if (setLoadingText != null) __obj.updateDynamic("setLoadingText")(js.Any.fromFunction1(setLoadingText))
     if (setMaxProgressInput != null) __obj.updateDynamic("setMaxProgressInput")(js.Any.fromFunction1(setMaxProgressInput))
     if (setMaxProgressOutput != null) __obj.updateDynamic("setMaxProgressOutput")(js.Any.fromFunction1(setMaxProgressOutput))
     if (setMinProgressInput != null) __obj.updateDynamic("setMinProgressInput")(js.Any.fromFunction1(setMinProgressInput))
     if (setMinProgressOutput != null) __obj.updateDynamic("setMinProgressOutput")(js.Any.fromFunction1(setMinProgressOutput))
-    if (setModal != null) __obj.updateDynamic("setModal")(js.Any.fromFunction1(setModal))
     if (setMonitoredStates != null) __obj.updateDynamic("setMonitoredStates")(js.Any.fromFunction1(setMonitoredStates))
-    if (setShowAnimation != null) __obj.updateDynamic("setShowAnimation")(js.Any.fromFunction1(setShowAnimation))
     if (setState != null) __obj.updateDynamic("setState")(js.Any.fromFunction1(setState))
-    if (showAnimation != null) __obj.updateDynamic("showAnimation")(showAnimation)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProgressIndicator]
   }
 }

@@ -1,9 +1,5 @@
 package typings.cypress.cypressMod
 
-import typings.cypress.cypressStrings.after
-import typings.cypress.cypressStrings.afterEach
-import typings.cypress.cypressStrings.before
-import typings.cypress.cypressStrings.beforeEach
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait HookInformation extends js.Object {
   var body: String
   var hookId: typings.cypress.cypressMod.hookId
-  var hookName: before | beforeEach | afterEach | after
+  var hookName: typings.cypress.cypressStrings.before | typings.cypress.cypressStrings.beforeEach | typings.cypress.cypressStrings.afterEach | typings.cypress.cypressStrings.after
   var title: js.Array[String]
 }
 
@@ -23,10 +19,10 @@ object HookInformation {
   def apply(
     body: String,
     hookId: hookId,
-    hookName: before | beforeEach | afterEach | after,
+    hookName: typings.cypress.cypressStrings.before | typings.cypress.cypressStrings.beforeEach | typings.cypress.cypressStrings.afterEach | typings.cypress.cypressStrings.after,
     title: js.Array[String]
   ): HookInformation = {
-    val __obj = js.Dynamic.literal(body = body, hookId = hookId, hookName = hookName.asInstanceOf[js.Any], title = title)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], hookId = hookId.asInstanceOf[js.Any], hookName = hookName.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HookInformation]
   }

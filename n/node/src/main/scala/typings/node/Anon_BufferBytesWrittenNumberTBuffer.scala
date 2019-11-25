@@ -13,7 +13,7 @@ trait Anon_BufferBytesWrittenNumberTBuffer[TBuffer /* <: Uint8Array */] extends 
 object Anon_BufferBytesWrittenNumberTBuffer {
   @scala.inline
   def apply[TBuffer /* <: Uint8Array */](buffer: TBuffer, bytesWritten: Double): Anon_BufferBytesWrittenNumberTBuffer[TBuffer] = {
-    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesWritten = bytesWritten)
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesWritten = bytesWritten.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BufferBytesWrittenNumberTBuffer[TBuffer]]
   }

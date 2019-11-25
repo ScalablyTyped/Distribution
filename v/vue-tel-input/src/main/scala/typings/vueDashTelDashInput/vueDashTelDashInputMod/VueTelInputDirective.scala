@@ -13,7 +13,7 @@ object VueTelInputDirective {
   @scala.inline
   def apply(`click-outside`: DirectiveOptions): VueTelInputDirective = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("click-outside")(`click-outside`)
+    __obj.updateDynamic("click-outside")(`click-outside`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VueTelInputDirective]
   }
 }

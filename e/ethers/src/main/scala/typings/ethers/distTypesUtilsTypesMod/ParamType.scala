@@ -20,10 +20,10 @@ object ParamType {
     name: String = null
   ): ParamType = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (components != null) __obj.updateDynamic("components")(components)
-    if (!js.isUndefined(indexed)) __obj.updateDynamic("indexed")(indexed)
-    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
+    if (!js.isUndefined(indexed)) __obj.updateDynamic("indexed")(indexed.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamType]
   }
 }

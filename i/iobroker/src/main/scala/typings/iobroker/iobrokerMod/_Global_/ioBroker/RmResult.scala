@@ -17,7 +17,7 @@ trait RmResult extends js.Object {
 object RmResult {
   @scala.inline
   def apply(file: String, isDir: Boolean, path: String): RmResult = {
-    val __obj = js.Dynamic.literal(file = file, isDir = isDir, path = path)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], isDir = isDir.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RmResult]
   }

@@ -49,7 +49,7 @@ object Shape {
     y0: Datum = null,
     y1: Datum = null
   ): Shape = {
-    val __obj = js.Dynamic.literal(fillcolor = fillcolor, layer = layer.asInstanceOf[js.Any], line = line, opacity = opacity, path = path, visible = visible, xref = xref.asInstanceOf[js.Any], yref = yref.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fillcolor = fillcolor.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], xref = xref.asInstanceOf[js.Any], yref = yref.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (x0 != null) __obj.updateDynamic("x0")(x0.asInstanceOf[js.Any])
     if (x1 != null) __obj.updateDynamic("x1")(x1.asInstanceOf[js.Any])

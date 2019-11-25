@@ -136,7 +136,7 @@ object JobUpdateParameters {
     user: String,
     versionName: String
   ): JobUpdateParameters = {
-    val __obj = js.Dynamic.literal(assignedTo = assignedTo, assignedType = assignedType, constructor = constructor, dataWorkspaceId = dataWorkspaceId, description = description, dueDate = dueDate, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobId = jobId, loi = loi, name = name, ownedBy = ownedBy, parentJobId = parentJobId, parentVersion = parentVersion, percent = percent, priority = priority, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), startDate = startDate, status = status, user = user, versionName = versionName)
+    val __obj = js.Dynamic.literal(assignedTo = assignedTo.asInstanceOf[js.Any], assignedType = assignedType.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], dataWorkspaceId = dataWorkspaceId.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], dueDate = dueDate.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobId = jobId.asInstanceOf[js.Any], loi = loi.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ownedBy = ownedBy.asInstanceOf[js.Any], parentJobId = parentJobId.asInstanceOf[js.Any], parentVersion = parentVersion.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), startDate = startDate.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], versionName = versionName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JobUpdateParameters]
   }

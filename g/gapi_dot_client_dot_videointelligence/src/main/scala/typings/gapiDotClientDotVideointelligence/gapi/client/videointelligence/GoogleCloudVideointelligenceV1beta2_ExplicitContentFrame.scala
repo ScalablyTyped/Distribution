@@ -18,8 +18,8 @@ object GoogleCloudVideointelligenceV1beta2_ExplicitContentFrame {
   @scala.inline
   def apply(pornographyLikelihood: String = null, timeOffset: String = null): GoogleCloudVideointelligenceV1beta2_ExplicitContentFrame = {
     val __obj = js.Dynamic.literal()
-    if (pornographyLikelihood != null) __obj.updateDynamic("pornographyLikelihood")(pornographyLikelihood)
-    if (timeOffset != null) __obj.updateDynamic("timeOffset")(timeOffset)
+    if (pornographyLikelihood != null) __obj.updateDynamic("pornographyLikelihood")(pornographyLikelihood.asInstanceOf[js.Any])
+    if (timeOffset != null) __obj.updateDynamic("timeOffset")(timeOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2_ExplicitContentFrame]
   }
 }

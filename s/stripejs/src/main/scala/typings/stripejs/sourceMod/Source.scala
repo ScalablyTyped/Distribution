@@ -129,13 +129,13 @@ object Source {
     receiver: Receiver = null,
     redirect: Redirect = null
   ): Source = {
-    val __obj = js.Dynamic.literal(amount = amount, client_secret = client_secret, created = created, currency = currency, flow = flow.asInstanceOf[js.Any], id = id, livemode = livemode, metadata = metadata, owner = owner, statement_descriptor = statement_descriptor, status = status.asInstanceOf[js.Any], usage = usage)
-    __obj.updateDynamic("object")(`object`)
-    __obj.updateDynamic("type")(`type`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (code_verification != null) __obj.updateDynamic("code_verification")(code_verification)
-    if (receiver != null) __obj.updateDynamic("receiver")(receiver)
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], client_secret = client_secret.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], flow = flow.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], statement_descriptor = statement_descriptor.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (code_verification != null) __obj.updateDynamic("code_verification")(code_verification.asInstanceOf[js.Any])
+    if (receiver != null) __obj.updateDynamic("receiver")(receiver.asInstanceOf[js.Any])
+    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }
 }

@@ -15,7 +15,7 @@ trait RTCDataChannelEventMap extends js.Object {
 object RTCDataChannelEventMap {
   @scala.inline
   def apply(bufferedamountlow: Event, close: Event, error: RTCErrorEvent, message: MessageEvent, open: Event): RTCDataChannelEventMap = {
-    val __obj = js.Dynamic.literal(bufferedamountlow = bufferedamountlow, close = close, error = error, message = message, open = open)
+    val __obj = js.Dynamic.literal(bufferedamountlow = bufferedamountlow.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RTCDataChannelEventMap]
   }

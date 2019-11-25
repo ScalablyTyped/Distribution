@@ -13,7 +13,7 @@ object Options {
   @scala.inline
   def apply(allowHttp: js.UndefOr[Boolean] = js.undefined, timeout: Int | Double = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowHttp)) __obj.updateDynamic("allowHttp")(allowHttp)
+    if (!js.isUndefined(allowHttp)) __obj.updateDynamic("allowHttp")(allowHttp.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

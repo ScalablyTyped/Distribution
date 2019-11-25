@@ -13,8 +13,8 @@ trait Anon_AroundLatLng
 object Anon_AroundLatLng {
   @scala.inline
   def apply(aroundLatLng: Boolean, StringDictionary: /* key */ StringDictionary[js.Any] = null): Anon_AroundLatLng = {
-    val __obj = js.Dynamic.literal(aroundLatLng = aroundLatLng)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(aroundLatLng = aroundLatLng.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_AroundLatLng]
   }
 }

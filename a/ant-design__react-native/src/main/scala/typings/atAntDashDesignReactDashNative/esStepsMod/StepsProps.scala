@@ -28,12 +28,12 @@ object StepsProps {
     size: String = null,
     styles: Partial[StepsStyle] = null
   ): StepsProps = {
-    val __obj = js.Dynamic.literal(children = children)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (finishIcon != null) __obj.updateDynamic("finishIcon")(finishIcon)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (finishIcon != null) __obj.updateDynamic("finishIcon")(finishIcon.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepsProps]
   }
 }

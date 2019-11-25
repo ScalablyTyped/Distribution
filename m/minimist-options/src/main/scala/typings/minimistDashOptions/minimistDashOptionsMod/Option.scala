@@ -15,8 +15,8 @@ object Option {
   def apply(alias: String | js.Array[String] = null, default: js.Any = null, `type`: Type = null): Option = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Option]
   }
 }

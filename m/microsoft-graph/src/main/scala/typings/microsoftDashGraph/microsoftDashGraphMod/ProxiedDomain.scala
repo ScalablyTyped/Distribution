@@ -15,8 +15,8 @@ object ProxiedDomain {
   @scala.inline
   def apply(ipAddressOrFQDN: String = null, proxy: String = null): ProxiedDomain = {
     val __obj = js.Dynamic.literal()
-    if (ipAddressOrFQDN != null) __obj.updateDynamic("ipAddressOrFQDN")(ipAddressOrFQDN)
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (ipAddressOrFQDN != null) __obj.updateDynamic("ipAddressOrFQDN")(ipAddressOrFQDN.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxiedDomain]
   }
 }

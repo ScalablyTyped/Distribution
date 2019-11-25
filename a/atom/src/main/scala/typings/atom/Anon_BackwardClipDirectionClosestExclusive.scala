@@ -27,7 +27,7 @@ object Anon_BackwardClipDirectionClosestExclusive {
   ): Anon_BackwardClipDirectionClosestExclusive = {
     val __obj = js.Dynamic.literal()
     if (clipDirection != null) __obj.updateDynamic("clipDirection")(clipDirection.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])
     if (invalidate != null) __obj.updateDynamic("invalidate")(invalidate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackwardClipDirectionClosestExclusive]
   }

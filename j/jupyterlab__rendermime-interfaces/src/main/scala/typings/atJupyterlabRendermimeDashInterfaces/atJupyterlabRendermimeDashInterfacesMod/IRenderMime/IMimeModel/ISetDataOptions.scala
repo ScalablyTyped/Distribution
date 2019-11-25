@@ -23,8 +23,8 @@ object ISetDataOptions {
   @scala.inline
   def apply(data: ReadonlyJSONObject = null, metadata: ReadonlyJSONObject = null): ISetDataOptions = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISetDataOptions]
   }
 }

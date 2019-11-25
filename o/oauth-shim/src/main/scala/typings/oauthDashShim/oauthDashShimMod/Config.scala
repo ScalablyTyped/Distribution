@@ -14,7 +14,7 @@ trait Config extends js.Object {
 object Config {
   @scala.inline
   def apply(client_id: String, client_secret: String, domain: String, grant_url: String): Config = {
-    val __obj = js.Dynamic.literal(client_id = client_id, client_secret = client_secret, domain = domain, grant_url = grant_url)
+    val __obj = js.Dynamic.literal(client_id = client_id.asInstanceOf[js.Any], client_secret = client_secret.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], grant_url = grant_url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Config]
   }

@@ -36,7 +36,7 @@ object ScanQRCodeConfig {
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (needResult != null) __obj.updateDynamic("needResult")(needResult.asInstanceOf[js.Any])
-    if (scanType != null) __obj.updateDynamic("scanType")(scanType)
+    if (scanType != null) __obj.updateDynamic("scanType")(scanType.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[ScanQRCodeConfig]
   }

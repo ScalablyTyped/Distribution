@@ -21,7 +21,7 @@ object MentionMatchConfig {
     serviceName: MentionServices,
     tagBuilder: AnchorTagBuilder
   ): MentionMatchConfig = {
-    val __obj = js.Dynamic.literal(matchedText = matchedText, mention = mention, offset = offset, serviceName = serviceName, tagBuilder = tagBuilder)
+    val __obj = js.Dynamic.literal(matchedText = matchedText.asInstanceOf[js.Any], mention = mention.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], tagBuilder = tagBuilder.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MentionMatchConfig]
   }

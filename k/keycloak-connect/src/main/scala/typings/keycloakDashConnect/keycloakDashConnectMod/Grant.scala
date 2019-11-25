@@ -29,11 +29,10 @@ object Grant {
     isExpired: () => Boolean,
     refresh_token: Token,
     store: (Request[ParamsDictionary], Response) => Unit,
-    toString: () => String,
     token_type: String,
     update: Grant => Unit
   ): Grant = {
-    val __obj = js.Dynamic.literal(__raw = __raw, access_token = access_token, expires_in = expires_in, id_token = id_token, isExpired = js.Any.fromFunction0(isExpired), refresh_token = refresh_token, store = js.Any.fromFunction2(store), toString = js.Any.fromFunction0(toString), token_type = token_type, update = js.Any.fromFunction1(update))
+    val __obj = js.Dynamic.literal(__raw = __raw.asInstanceOf[js.Any], access_token = access_token.asInstanceOf[js.Any], expires_in = expires_in.asInstanceOf[js.Any], id_token = id_token.asInstanceOf[js.Any], isExpired = js.Any.fromFunction0(isExpired), refresh_token = refresh_token.asInstanceOf[js.Any], store = js.Any.fromFunction2(store), token_type = token_type.asInstanceOf[js.Any], update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[Grant]
   }

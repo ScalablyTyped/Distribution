@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait Mode extends js.Object
 
+object Mode {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def center: typings.atSimonwepSelectionDashJs.atSimonwepSelectionDashJsStrings.center = this.cast("center")
+  @scala.inline
+  def cover: typings.atSimonwepSelectionDashJs.atSimonwepSelectionDashJsStrings.cover = this.cast("cover")
+  @scala.inline
+  def touch: typings.atSimonwepSelectionDashJs.atSimonwepSelectionDashJsStrings.touch = this.cast("touch")
+}
+

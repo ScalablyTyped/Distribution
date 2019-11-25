@@ -11,7 +11,7 @@ trait Anon_QDownloadInfo extends js.Object {
 object Anon_QDownloadInfo {
   @scala.inline
   def apply(qDownloadInfo: js.Any): Anon_QDownloadInfo = {
-    val __obj = js.Dynamic.literal(qDownloadInfo = qDownloadInfo)
+    val __obj = js.Dynamic.literal(qDownloadInfo = qDownloadInfo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_QDownloadInfo]
   }

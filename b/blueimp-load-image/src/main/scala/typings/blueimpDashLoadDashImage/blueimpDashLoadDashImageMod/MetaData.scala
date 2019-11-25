@@ -23,9 +23,9 @@ object MetaData {
     originalWidth: Int | Double = null
   ): MetaData = {
     val __obj = js.Dynamic.literal()
-    if (exif != null) __obj.updateDynamic("exif")(exif)
+    if (exif != null) __obj.updateDynamic("exif")(exif.asInstanceOf[js.Any])
     if (imageHead != null) __obj.updateDynamic("imageHead")(imageHead.asInstanceOf[js.Any])
-    if (iptc != null) __obj.updateDynamic("iptc")(iptc)
+    if (iptc != null) __obj.updateDynamic("iptc")(iptc.asInstanceOf[js.Any])
     if (originalHeight != null) __obj.updateDynamic("originalHeight")(originalHeight.asInstanceOf[js.Any])
     if (originalWidth != null) __obj.updateDynamic("originalWidth")(originalWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaData]

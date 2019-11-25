@@ -34,8 +34,8 @@ object REACT_STATICS {
     propTypes: `true`,
     `type`: `true`
   ): REACT_STATICS = {
-    val __obj = js.Dynamic.literal(childContextTypes = childContextTypes, contextType = contextType, contextTypes = contextTypes, defaultProps = defaultProps, displayName = displayName, getDefaultProps = getDefaultProps, getDerivedStateFromError = getDerivedStateFromError, getDerivedStateFromProps = getDerivedStateFromProps, mixins = mixins, propTypes = propTypes)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(childContextTypes = childContextTypes.asInstanceOf[js.Any], contextType = contextType.asInstanceOf[js.Any], contextTypes = contextTypes.asInstanceOf[js.Any], defaultProps = defaultProps.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], getDefaultProps = getDefaultProps.asInstanceOf[js.Any], getDerivedStateFromError = getDerivedStateFromError.asInstanceOf[js.Any], getDerivedStateFromProps = getDerivedStateFromProps.asInstanceOf[js.Any], mixins = mixins.asInstanceOf[js.Any], propTypes = propTypes.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[REACT_STATICS]
   }
 }

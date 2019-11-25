@@ -16,7 +16,7 @@ trait Notification extends js.Object {
 object Notification {
   @scala.inline
   def apply(data: js.Any, isMultiple: Boolean, origin: selected | received, remote: Boolean): Notification = {
-    val __obj = js.Dynamic.literal(data = data, isMultiple = isMultiple, origin = origin.asInstanceOf[js.Any], remote = remote)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], isMultiple = isMultiple.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Notification]
   }

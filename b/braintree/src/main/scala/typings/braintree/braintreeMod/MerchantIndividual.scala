@@ -27,10 +27,10 @@ object MerchantIndividual {
     ssn: String = null,
     ssnLast4: String = null
   ): MerchantIndividual = {
-    val __obj = js.Dynamic.literal(addressDetails = addressDetails, dateOfBirth = dateOfBirth, email = email, firstName = firstName, lastName = lastName)
-    if (phone != null) __obj.updateDynamic("phone")(phone)
-    if (ssn != null) __obj.updateDynamic("ssn")(ssn)
-    if (ssnLast4 != null) __obj.updateDynamic("ssnLast4")(ssnLast4)
+    val __obj = js.Dynamic.literal(addressDetails = addressDetails.asInstanceOf[js.Any], dateOfBirth = dateOfBirth.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], firstName = firstName.asInstanceOf[js.Any], lastName = lastName.asInstanceOf[js.Any])
+    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
+    if (ssn != null) __obj.updateDynamic("ssn")(ssn.asInstanceOf[js.Any])
+    if (ssnLast4 != null) __obj.updateDynamic("ssnLast4")(ssnLast4.asInstanceOf[js.Any])
     __obj.asInstanceOf[MerchantIndividual]
   }
 }

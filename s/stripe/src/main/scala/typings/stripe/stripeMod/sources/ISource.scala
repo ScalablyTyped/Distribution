@@ -90,18 +90,18 @@ object ISource {
     redirect: Anon_Declined = null,
     statement_descriptor: String = null
   ): ISource = {
-    val __obj = js.Dynamic.literal(client_secret = client_secret, created = created, flow = flow.asInstanceOf[js.Any], id = id, livemode = livemode, metadata = metadata, owner = owner, status = status.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(client_secret = client_secret.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], flow = flow.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (ach_credit_transfer != null) __obj.updateDynamic("ach_credit_transfer")(ach_credit_transfer)
+    if (ach_credit_transfer != null) __obj.updateDynamic("ach_credit_transfer")(ach_credit_transfer.asInstanceOf[js.Any])
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (card != null) __obj.updateDynamic("card")(card)
-    if (code_verification != null) __obj.updateDynamic("code_verification")(code_verification)
-    if (currency != null) __obj.updateDynamic("currency")(currency)
-    if (customer != null) __obj.updateDynamic("customer")(customer)
-    if (receiver != null) __obj.updateDynamic("receiver")(receiver)
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect)
-    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
+    if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
+    if (code_verification != null) __obj.updateDynamic("code_verification")(code_verification.asInstanceOf[js.Any])
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
+    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
+    if (receiver != null) __obj.updateDynamic("receiver")(receiver.asInstanceOf[js.Any])
+    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
+    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISource]
   }
 }

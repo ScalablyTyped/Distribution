@@ -52,14 +52,14 @@ object SwitchTheme {
     thumb: String = null
   ): SwitchTheme = {
     val __obj = js.Dynamic.literal()
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (off != null) __obj.updateDynamic("off")(off)
-    if (on != null) __obj.updateDynamic("on")(on)
-    if (ripple != null) __obj.updateDynamic("ripple")(ripple)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (thumb != null) __obj.updateDynamic("thumb")(thumb)
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (off != null) __obj.updateDynamic("off")(off.asInstanceOf[js.Any])
+    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
+    if (ripple != null) __obj.updateDynamic("ripple")(ripple.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (thumb != null) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchTheme]
   }
 }

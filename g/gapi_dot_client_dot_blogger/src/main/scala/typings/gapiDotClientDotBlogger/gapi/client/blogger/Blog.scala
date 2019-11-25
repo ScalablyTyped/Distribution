@@ -54,19 +54,19 @@ object Blog {
     url: String = null
   ): Blog = {
     val __obj = js.Dynamic.literal()
-    if (customMetaData != null) __obj.updateDynamic("customMetaData")(customMetaData)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (pages != null) __obj.updateDynamic("pages")(pages)
-    if (posts != null) __obj.updateDynamic("posts")(posts)
-    if (published != null) __obj.updateDynamic("published")(published)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (customMetaData != null) __obj.updateDynamic("customMetaData")(customMetaData.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
+    if (posts != null) __obj.updateDynamic("posts")(posts.asInstanceOf[js.Any])
+    if (published != null) __obj.updateDynamic("published")(published.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Blog]
   }
 }

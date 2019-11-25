@@ -24,10 +24,10 @@ object StreamingComputationConfig {
     systemName: String = null
   ): StreamingComputationConfig = {
     val __obj = js.Dynamic.literal()
-    if (computationId != null) __obj.updateDynamic("computationId")(computationId)
-    if (instructions != null) __obj.updateDynamic("instructions")(instructions)
-    if (stageName != null) __obj.updateDynamic("stageName")(stageName)
-    if (systemName != null) __obj.updateDynamic("systemName")(systemName)
+    if (computationId != null) __obj.updateDynamic("computationId")(computationId.asInstanceOf[js.Any])
+    if (instructions != null) __obj.updateDynamic("instructions")(instructions.asInstanceOf[js.Any])
+    if (stageName != null) __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
+    if (systemName != null) __obj.updateDynamic("systemName")(systemName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamingComputationConfig]
   }
 }

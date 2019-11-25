@@ -23,12 +23,12 @@ object AggregateOptions {
     varargs: js.UndefOr[Boolean] = js.undefined
   ): AggregateOptions = {
     val __obj = js.Dynamic.literal(step = js.Any.fromFunction2(step))
-    if (!js.isUndefined(deterministic)) __obj.updateDynamic("deterministic")(deterministic)
+    if (!js.isUndefined(deterministic)) __obj.updateDynamic("deterministic")(deterministic.asInstanceOf[js.Any])
     if (inverse != null) __obj.updateDynamic("inverse")(js.Any.fromFunction2(inverse))
     if (result != null) __obj.updateDynamic("result")(js.Any.fromFunction1(result))
-    if (!js.isUndefined(safeIntegers)) __obj.updateDynamic("safeIntegers")(safeIntegers)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (!js.isUndefined(varargs)) __obj.updateDynamic("varargs")(varargs)
+    if (!js.isUndefined(safeIntegers)) __obj.updateDynamic("safeIntegers")(safeIntegers.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(varargs)) __obj.updateDynamic("varargs")(varargs.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregateOptions]
   }
 }

@@ -14,7 +14,7 @@ trait ResponseCollection[T /* <: BaseResponse[scala.Nothing] */] extends js.Obje
 object ResponseCollection {
   @scala.inline
   def apply[T /* <: BaseResponse[scala.Nothing] */](_embedded: Anon_Records[T], _links: Anon_Next): ResponseCollection[T] = {
-    val __obj = js.Dynamic.literal(_embedded = _embedded, _links = _links)
+    val __obj = js.Dynamic.literal(_embedded = _embedded.asInstanceOf[js.Any], _links = _links.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResponseCollection[T]]
   }

@@ -44,15 +44,15 @@ object ModuleOptions {
     onlyLocals: js.UndefOr[Boolean] = js.undefined
   ): ModuleOptions = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (getLocalIdent != null) __obj.updateDynamic("getLocalIdent")(js.Any.fromFunction4(getLocalIdent))
-    if (hashPrefix != null) __obj.updateDynamic("hashPrefix")(hashPrefix)
+    if (hashPrefix != null) __obj.updateDynamic("hashPrefix")(hashPrefix.asInstanceOf[js.Any])
     if (importLoaders != null) __obj.updateDynamic("importLoaders")(importLoaders.asInstanceOf[js.Any])
-    if (localIdentName != null) __obj.updateDynamic("localIdentName")(localIdentName)
+    if (localIdentName != null) __obj.updateDynamic("localIdentName")(localIdentName.asInstanceOf[js.Any])
     if (localIdentRegExp != null) __obj.updateDynamic("localIdentRegExp")(localIdentRegExp.asInstanceOf[js.Any])
     if (localsConvention != null) __obj.updateDynamic("localsConvention")(localsConvention.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (!js.isUndefined(onlyLocals)) __obj.updateDynamic("onlyLocals")(onlyLocals)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyLocals)) __obj.updateDynamic("onlyLocals")(onlyLocals.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleOptions]
   }
 }

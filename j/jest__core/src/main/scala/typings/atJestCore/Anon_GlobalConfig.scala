@@ -14,7 +14,7 @@ trait Anon_GlobalConfig extends js.Object {
 object Anon_GlobalConfig {
   @scala.inline
   def apply(globalConfig: GlobalConfig, results: AggregatedResult): Anon_GlobalConfig = {
-    val __obj = js.Dynamic.literal(globalConfig = globalConfig, results = results)
+    val __obj = js.Dynamic.literal(globalConfig = globalConfig.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GlobalConfig]
   }

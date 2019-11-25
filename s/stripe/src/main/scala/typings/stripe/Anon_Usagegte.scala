@@ -14,7 +14,7 @@ trait Anon_Usagegte extends js.Object {
 object Anon_Usagegte {
   @scala.inline
   def apply(usage_gte: Double): Anon_Usagegte = {
-    val __obj = js.Dynamic.literal(usage_gte = usage_gte)
+    val __obj = js.Dynamic.literal(usage_gte = usage_gte.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Usagegte]
   }

@@ -46,12 +46,12 @@ object GoogleActionsV2OrdersOrder {
     paymentInfo: GoogleActionsV2OrdersPaymentInfo = null
   ): GoogleActionsV2OrdersOrder = {
     val __obj = js.Dynamic.literal()
-    if (actionOrderId != null) __obj.updateDynamic("actionOrderId")(actionOrderId)
-    if (customerInfo != null) __obj.updateDynamic("customerInfo")(customerInfo)
-    if (finalOrder != null) __obj.updateDynamic("finalOrder")(finalOrder)
-    if (googleOrderId != null) __obj.updateDynamic("googleOrderId")(googleOrderId)
-    if (orderDate != null) __obj.updateDynamic("orderDate")(orderDate)
-    if (paymentInfo != null) __obj.updateDynamic("paymentInfo")(paymentInfo)
+    if (actionOrderId != null) __obj.updateDynamic("actionOrderId")(actionOrderId.asInstanceOf[js.Any])
+    if (customerInfo != null) __obj.updateDynamic("customerInfo")(customerInfo.asInstanceOf[js.Any])
+    if (finalOrder != null) __obj.updateDynamic("finalOrder")(finalOrder.asInstanceOf[js.Any])
+    if (googleOrderId != null) __obj.updateDynamic("googleOrderId")(googleOrderId.asInstanceOf[js.Any])
+    if (orderDate != null) __obj.updateDynamic("orderDate")(orderDate.asInstanceOf[js.Any])
+    if (paymentInfo != null) __obj.updateDynamic("paymentInfo")(paymentInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersOrder]
   }
 }

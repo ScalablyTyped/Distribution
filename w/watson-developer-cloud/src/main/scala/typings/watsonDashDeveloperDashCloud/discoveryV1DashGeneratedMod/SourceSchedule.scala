@@ -18,9 +18,9 @@ object SourceSchedule {
   @scala.inline
   def apply(enabled: js.UndefOr[Boolean] = js.undefined, frequency: String = null, time_zone: String = null): SourceSchedule = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency)
-    if (time_zone != null) __obj.updateDynamic("time_zone")(time_zone)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
+    if (time_zone != null) __obj.updateDynamic("time_zone")(time_zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceSchedule]
   }
 }

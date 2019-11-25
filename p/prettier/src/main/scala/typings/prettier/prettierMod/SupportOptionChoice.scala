@@ -22,10 +22,10 @@ object SupportOptionChoice {
     since: String = null
   ): SupportOptionChoice = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated)
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
-    if (since != null) __obj.updateDynamic("since")(since)
+    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportOptionChoice]
   }
 }

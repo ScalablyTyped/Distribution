@@ -15,7 +15,7 @@ trait MediaTrackConstraints extends js.Object {
 object MediaTrackConstraints {
   @scala.inline
   def apply(facingMode: user | environment, mandatory: MandatoryMedia, optional: js.Array[MediaSources]): MediaTrackConstraints = {
-    val __obj = js.Dynamic.literal(facingMode = facingMode.asInstanceOf[js.Any], mandatory = mandatory, optional = optional)
+    val __obj = js.Dynamic.literal(facingMode = facingMode.asInstanceOf[js.Any], mandatory = mandatory.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaTrackConstraints]
   }

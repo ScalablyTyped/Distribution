@@ -163,22 +163,22 @@ object GeocoderOptions {
     url: String = null
   ): GeocoderOptions = {
     val __obj = js.Dynamic.literal()
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution)
-    if (!js.isUndefined(autocomplete)) __obj.updateDynamic("autocomplete")(autocomplete)
+    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
+    if (!js.isUndefined(autocomplete)) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded)
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
     if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
     if (fullWidth != null) __obj.updateDynamic("fullWidth")(fullWidth.asInstanceOf[js.Any])
     if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
-    if (!js.isUndefined(panToPoint)) __obj.updateDynamic("panToPoint")(panToPoint)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (!js.isUndefined(place)) __obj.updateDynamic("place")(place)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (!js.isUndefined(panToPoint)) __obj.updateDynamic("panToPoint")(panToPoint.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (!js.isUndefined(place)) __obj.updateDynamic("place")(place.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (polygonIcon != null) __obj.updateDynamic("polygonIcon")(polygonIcon.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeocoderOptions]
   }
 }

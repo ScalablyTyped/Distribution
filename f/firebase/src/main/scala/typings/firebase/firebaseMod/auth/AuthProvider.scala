@@ -14,7 +14,7 @@ trait AuthProvider extends js.Object {
 object AuthProvider {
   @scala.inline
   def apply(providerId: String): AuthProvider = {
-    val __obj = js.Dynamic.literal(providerId = providerId)
+    val __obj = js.Dynamic.literal(providerId = providerId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AuthProvider]
   }

@@ -24,8 +24,8 @@ object ContextLoaderOption {
     property: String,
     fieldClass: String = null
   ): ContextLoaderOption = {
-    val __obj = js.Dynamic.literal(directory = directory.asInstanceOf[js.Any], inject = inject, property = property)
-    if (fieldClass != null) __obj.updateDynamic("fieldClass")(fieldClass)
+    val __obj = js.Dynamic.literal(directory = directory.asInstanceOf[js.Any], inject = inject.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
+    if (fieldClass != null) __obj.updateDynamic("fieldClass")(fieldClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextLoaderOption]
   }
 }

@@ -27,8 +27,8 @@ object LightBoxOptions {
   def apply(duration: Int | Double = null, group: String = null, keyboard: js.UndefOr[Boolean] = js.undefined): LightBoxOptions = {
     val __obj = js.Dynamic.literal()
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
     __obj.asInstanceOf[LightBoxOptions]
   }
 }

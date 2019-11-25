@@ -15,8 +15,8 @@ trait UnlikeRequestOptions extends js.Object {
 object UnlikeRequestOptions {
   @scala.inline
   def apply(mediaId: String, moduleInfo: LikeModuleInfoOption, d: `0` = null): UnlikeRequestOptions = {
-    val __obj = js.Dynamic.literal(mediaId = mediaId, moduleInfo = moduleInfo)
-    if (d != null) __obj.updateDynamic("d")(d)
+    val __obj = js.Dynamic.literal(mediaId = mediaId.asInstanceOf[js.Any], moduleInfo = moduleInfo.asInstanceOf[js.Any])
+    if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnlikeRequestOptions]
   }
 }

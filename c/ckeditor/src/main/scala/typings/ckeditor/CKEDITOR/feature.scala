@@ -26,9 +26,9 @@ object feature {
   ): feature = {
     val __obj = js.Dynamic.literal()
     if (allowedContent != null) __obj.updateDynamic("allowedContent")(allowedContent.asInstanceOf[js.Any])
-    if (contentForms != null) __obj.updateDynamic("contentForms")(contentForms)
-    if (contentTransformations != null) __obj.updateDynamic("contentTransformations")(contentTransformations)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (contentForms != null) __obj.updateDynamic("contentForms")(contentForms.asInstanceOf[js.Any])
+    if (contentTransformations != null) __obj.updateDynamic("contentTransformations")(contentTransformations.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (requiredContent != null) __obj.updateDynamic("requiredContent")(requiredContent.asInstanceOf[js.Any])
     if (toFeature != null) __obj.updateDynamic("toFeature")(js.Any.fromFunction0(toFeature))
     __obj.asInstanceOf[feature]

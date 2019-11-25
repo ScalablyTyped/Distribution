@@ -13,8 +13,8 @@ trait QueryNode extends js.Object {
 object QueryNode {
   @scala.inline
   def apply(expressions: js.Array[Expression], inverse: Boolean, `type`: String): QueryNode = {
-    val __obj = js.Dynamic.literal(expressions = expressions, inverse = inverse)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any], inverse = inverse.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryNode]
   }
 }

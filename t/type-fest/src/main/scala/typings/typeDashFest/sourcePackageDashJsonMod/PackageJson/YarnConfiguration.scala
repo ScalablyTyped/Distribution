@@ -15,7 +15,7 @@ object YarnConfiguration {
   @scala.inline
   def apply(resolutions: Dependency = null): YarnConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions)
+    if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions.asInstanceOf[js.Any])
     __obj.asInstanceOf[YarnConfiguration]
   }
 }

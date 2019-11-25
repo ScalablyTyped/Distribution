@@ -20,10 +20,10 @@ object CandlestickData {
     openSeries: CandlestickSeries = null
   ): CandlestickData = {
     val __obj = js.Dynamic.literal()
-    if (closeSeries != null) __obj.updateDynamic("closeSeries")(closeSeries)
-    if (highSeries != null) __obj.updateDynamic("highSeries")(highSeries)
-    if (lowSeries != null) __obj.updateDynamic("lowSeries")(lowSeries)
-    if (openSeries != null) __obj.updateDynamic("openSeries")(openSeries)
+    if (closeSeries != null) __obj.updateDynamic("closeSeries")(closeSeries.asInstanceOf[js.Any])
+    if (highSeries != null) __obj.updateDynamic("highSeries")(highSeries.asInstanceOf[js.Any])
+    if (lowSeries != null) __obj.updateDynamic("lowSeries")(lowSeries.asInstanceOf[js.Any])
+    if (openSeries != null) __obj.updateDynamic("openSeries")(openSeries.asInstanceOf[js.Any])
     __obj.asInstanceOf[CandlestickData]
   }
 }

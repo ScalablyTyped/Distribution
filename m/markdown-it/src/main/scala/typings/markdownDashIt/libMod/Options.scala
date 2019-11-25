@@ -28,14 +28,14 @@ object Options {
     xhtmlOut: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(breaks)) __obj.updateDynamic("breaks")(breaks)
+    if (!js.isUndefined(breaks)) __obj.updateDynamic("breaks")(breaks.asInstanceOf[js.Any])
     if (highlight != null) __obj.updateDynamic("highlight")(js.Any.fromFunction2(highlight))
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
-    if (langPrefix != null) __obj.updateDynamic("langPrefix")(langPrefix)
-    if (!js.isUndefined(linkify)) __obj.updateDynamic("linkify")(linkify)
-    if (quotes != null) __obj.updateDynamic("quotes")(quotes)
-    if (!js.isUndefined(typographer)) __obj.updateDynamic("typographer")(typographer)
-    if (!js.isUndefined(xhtmlOut)) __obj.updateDynamic("xhtmlOut")(xhtmlOut)
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (langPrefix != null) __obj.updateDynamic("langPrefix")(langPrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkify)) __obj.updateDynamic("linkify")(linkify.asInstanceOf[js.Any])
+    if (quotes != null) __obj.updateDynamic("quotes")(quotes.asInstanceOf[js.Any])
+    if (!js.isUndefined(typographer)) __obj.updateDynamic("typographer")(typographer.asInstanceOf[js.Any])
+    if (!js.isUndefined(xhtmlOut)) __obj.updateDynamic("xhtmlOut")(xhtmlOut.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

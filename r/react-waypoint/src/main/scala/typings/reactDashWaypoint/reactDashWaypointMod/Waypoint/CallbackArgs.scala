@@ -45,8 +45,8 @@ object CallbackArgs {
     waypointTop: Double,
     event: Event = null
   ): CallbackArgs = {
-    val __obj = js.Dynamic.literal(currentPosition = currentPosition, previousPosition = previousPosition, viewportBottom = viewportBottom, viewportTop = viewportTop, waypointTop = waypointTop)
-    if (event != null) __obj.updateDynamic("event")(event)
+    val __obj = js.Dynamic.literal(currentPosition = currentPosition.asInstanceOf[js.Any], previousPosition = previousPosition.asInstanceOf[js.Any], viewportBottom = viewportBottom.asInstanceOf[js.Any], viewportTop = viewportTop.asInstanceOf[js.Any], waypointTop = waypointTop.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallbackArgs]
   }
 }

@@ -34,17 +34,17 @@ object BindingLoggerSettings {
     `type`: js.UndefOr[Boolean] = js.undefined
   ): BindingLoggerSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activated)) __obj.updateDynamic("activated")(activated)
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
-    if (!js.isUndefined(constraint)) __obj.updateDynamic("constraint")(constraint)
-    if (!js.isUndefined(dynamicValue)) __obj.updateDynamic("dynamicValue")(dynamicValue)
-    if (!js.isUndefined(factory)) __obj.updateDynamic("factory")(factory)
-    if (!js.isUndefined(implementationType)) __obj.updateDynamic("implementationType")(implementationType)
-    if (!js.isUndefined(onActivation)) __obj.updateDynamic("onActivation")(onActivation)
-    if (!js.isUndefined(provider)) __obj.updateDynamic("provider")(provider)
-    if (!js.isUndefined(scope)) __obj.updateDynamic("scope")(scope)
-    if (!js.isUndefined(serviceIdentifier)) __obj.updateDynamic("serviceIdentifier")(serviceIdentifier)
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(activated)) __obj.updateDynamic("activated")(activated.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(constraint)) __obj.updateDynamic("constraint")(constraint.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicValue)) __obj.updateDynamic("dynamicValue")(dynamicValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(factory)) __obj.updateDynamic("factory")(factory.asInstanceOf[js.Any])
+    if (!js.isUndefined(implementationType)) __obj.updateDynamic("implementationType")(implementationType.asInstanceOf[js.Any])
+    if (!js.isUndefined(onActivation)) __obj.updateDynamic("onActivation")(onActivation.asInstanceOf[js.Any])
+    if (!js.isUndefined(provider)) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
+    if (!js.isUndefined(scope)) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (!js.isUndefined(serviceIdentifier)) __obj.updateDynamic("serviceIdentifier")(serviceIdentifier.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindingLoggerSettings]
   }
 }

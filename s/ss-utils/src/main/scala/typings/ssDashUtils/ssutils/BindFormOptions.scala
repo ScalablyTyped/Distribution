@@ -25,9 +25,9 @@ object BindFormOptions {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
-    if (onSubmitDisable != null) __obj.updateDynamic("onSubmitDisable")(onSubmitDisable)
+    if (onSubmitDisable != null) __obj.updateDynamic("onSubmitDisable")(onSubmitDisable.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction1(validate))
-    if (validation != null) __obj.updateDynamic("validation")(validation)
+    if (validation != null) __obj.updateDynamic("validation")(validation.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindFormOptions]
   }
 }

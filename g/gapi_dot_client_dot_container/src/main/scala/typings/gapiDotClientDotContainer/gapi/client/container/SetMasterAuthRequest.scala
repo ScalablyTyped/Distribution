@@ -15,8 +15,8 @@ object SetMasterAuthRequest {
   @scala.inline
   def apply(action: String = null, update: MasterAuth = null): SetMasterAuthRequest = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetMasterAuthRequest]
   }
 }

@@ -45,9 +45,9 @@ object ReportResponse {
     serviceConfigId: String = null
   ): ReportResponse = {
     val __obj = js.Dynamic.literal()
-    if (reportErrors != null) __obj.updateDynamic("reportErrors")(reportErrors)
-    if (reportInfos != null) __obj.updateDynamic("reportInfos")(reportInfos)
-    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId)
+    if (reportErrors != null) __obj.updateDynamic("reportErrors")(reportErrors.asInstanceOf[js.Any])
+    if (reportInfos != null) __obj.updateDynamic("reportInfos")(reportInfos.asInstanceOf[js.Any])
+    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportResponse]
   }
 }

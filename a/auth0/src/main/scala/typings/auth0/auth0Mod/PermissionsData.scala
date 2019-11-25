@@ -11,7 +11,7 @@ trait PermissionsData extends js.Object {
 object PermissionsData {
   @scala.inline
   def apply(permissions: js.Array[PermissionData]): PermissionsData = {
-    val __obj = js.Dynamic.literal(permissions = permissions)
+    val __obj = js.Dynamic.literal(permissions = permissions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PermissionsData]
   }

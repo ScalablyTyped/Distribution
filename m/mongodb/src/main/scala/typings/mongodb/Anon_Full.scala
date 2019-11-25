@@ -14,8 +14,8 @@ object Anon_Full {
   @scala.inline
   def apply(full: js.UndefOr[Boolean] = js.undefined, readPreference: ReadPreferenceOrMode = null): Anon_Full = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full)
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
+    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Full]
   }
 }

@@ -17,8 +17,8 @@ object GridPdfExportEvent {
     sender: Grid,
     promise: JQueryPromise[_] = null
   ): GridPdfExportEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (promise != null) __obj.updateDynamic("promise")(promise)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridPdfExportEvent]
   }
 }

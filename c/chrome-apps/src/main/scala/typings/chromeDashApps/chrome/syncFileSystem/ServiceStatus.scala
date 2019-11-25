@@ -1,7 +1,7 @@
 package typings.chromeDashApps.chrome.syncFileSystem
 
 import typings.chromeDashApps.chromeDashAppsStrings.authentication_required
-import typings.chromeDashApps.chromeDashAppsStrings.disabled
+import typings.chromeDashApps.chromeDashAppsStrings.disabled_
 import typings.chromeDashApps.chromeDashAppsStrings.initializing
 import typings.chromeDashApps.chromeDashAppsStrings.running
 import typings.chromeDashApps.chromeDashAppsStrings.temporary_unavailable
@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ServiceStatus extends js.Object {
   var AUTHENTICATION_REQUIRED: authentication_required = js.native
-  var DISABLED: disabled = js.native
+  var DISABLED: disabled_ = js.native
   var INITIALIZING: initializing = js.native
   var RUNNING: running = js.native
   var TEMPORARY_UNAVAILABLE: temporary_unavailable = js.native

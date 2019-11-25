@@ -31,13 +31,13 @@ object Anon_Date {
     `x-ratelimit-remaining`: String,
     `x-ratelimit-reset`: String
   ): Anon_Date = {
-    val __obj = js.Dynamic.literal(date = date, etag = etag, link = link, status = status)
-    __obj.updateDynamic("last-modified")(`last-modified`)
-    __obj.updateDynamic("x-Octokit-media-type")(`x-Octokit-media-type`)
-    __obj.updateDynamic("x-Octokit-request-id")(`x-Octokit-request-id`)
-    __obj.updateDynamic("x-ratelimit-limit")(`x-ratelimit-limit`)
-    __obj.updateDynamic("x-ratelimit-remaining")(`x-ratelimit-remaining`)
-    __obj.updateDynamic("x-ratelimit-reset")(`x-ratelimit-reset`)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("last-modified")(`last-modified`.asInstanceOf[js.Any])
+    __obj.updateDynamic("x-Octokit-media-type")(`x-Octokit-media-type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("x-Octokit-request-id")(`x-Octokit-request-id`.asInstanceOf[js.Any])
+    __obj.updateDynamic("x-ratelimit-limit")(`x-ratelimit-limit`.asInstanceOf[js.Any])
+    __obj.updateDynamic("x-ratelimit-remaining")(`x-ratelimit-remaining`.asInstanceOf[js.Any])
+    __obj.updateDynamic("x-ratelimit-reset")(`x-ratelimit-reset`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Date]
   }
 }

@@ -27,10 +27,10 @@ object ShowingEventUIParam {
   @scala.inline
   def apply(content: String = null, element: String = null, owner: js.Any = null, popover: String = null): ShowingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (popover != null) __obj.updateDynamic("popover")(popover)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (popover != null) __obj.updateDynamic("popover")(popover.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowingEventUIParam]
   }
 }

@@ -12,7 +12,7 @@ trait TrackSearchResult extends js.Object {
 object TrackSearchResult {
   @scala.inline
   def apply(message: Anon_Body): TrackSearchResult = {
-    val __obj = js.Dynamic.literal(message = message)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TrackSearchResult]
   }

@@ -14,9 +14,9 @@ object ListHistoryResponse {
   @scala.inline
   def apply(history: js.Array[History] = null, historyId: String = null, nextPageToken: String = null): ListHistoryResponse = {
     val __obj = js.Dynamic.literal()
-    if (history != null) __obj.updateDynamic("history")(history)
-    if (historyId != null) __obj.updateDynamic("historyId")(historyId)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
+    if (historyId != null) __obj.updateDynamic("historyId")(historyId.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHistoryResponse]
   }
 }

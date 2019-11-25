@@ -42,12 +42,12 @@ object Options {
     version: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
-    if (domainSharding != null) __obj.updateDynamic("domainSharding")(domainSharding)
-    if (refresh_token != null) __obj.updateDynamic("refresh_token")(refresh_token)
-    if (subDomain != null) __obj.updateDynamic("subDomain")(subDomain)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
+    if (domainSharding != null) __obj.updateDynamic("domainSharding")(domainSharding.asInstanceOf[js.Any])
+    if (refresh_token != null) __obj.updateDynamic("refresh_token")(refresh_token.asInstanceOf[js.Any])
+    if (subDomain != null) __obj.updateDynamic("subDomain")(subDomain.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

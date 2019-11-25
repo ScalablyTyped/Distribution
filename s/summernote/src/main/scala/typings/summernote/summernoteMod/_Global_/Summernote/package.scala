@@ -9,7 +9,7 @@ package object Summernote {
   import typings.summernote.summernoteStrings.color
   import typings.summernote.summernoteStrings.float
   import typings.summernote.summernoteStrings.font
-  import typings.summernote.summernoteStrings.fontsize
+  import typings.summernote.summernoteStrings.fontsize_
   import typings.summernote.summernoteStrings.height
   import typings.summernote.summernoteStrings.help
   import typings.summernote.summernoteStrings.imagesize
@@ -45,13 +45,13 @@ package object Summernote {
   // type toolbarDef = [string, string[]][]
   type toolbarDef = js.Array[
     js.Tuple2[
-      style | font | fontsize | color | para | height | table | insert | view | help, 
+      style | font | fontsize_ | color | para | height | table | insert | view | help, 
       js.Array[
         toolbarColorGroupOptions | toolbarFontGroupOptions | toolbarFontsizeGroupOptions | toolbarHeightGroupOptions | toolbarHelpGroupOptions | toolbarInsertGroupOptions | toolbarParaGroupOptions | toolbarStyleGroupOptions | toolbarTableGroupOptions | toolbarViewGroupOptions
       ]
     ]
   ]
-  type toolbarFontsizeGroupOptions = fontsize
+  type toolbarFontsizeGroupOptions = fontsize_
   type toolbarHeightGroupOptions = height
   type toolbarHelpGroupOptions = help
   type toolbarTableGroupOptions = table

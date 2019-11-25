@@ -17,8 +17,8 @@ trait ParseError extends js.Object {
 object ParseError {
   @scala.inline
   def apply(code: String, message: String, row: Double, `type`: String): ParseError = {
-    val __obj = js.Dynamic.literal(code = code, message = message, row = row)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseError]
   }
 }

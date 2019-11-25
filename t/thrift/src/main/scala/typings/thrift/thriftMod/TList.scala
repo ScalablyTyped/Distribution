@@ -13,7 +13,7 @@ trait TList extends js.Object {
 object TList {
   @scala.inline
   def apply(etype: Type, size: Double): TList = {
-    val __obj = js.Dynamic.literal(etype = etype, size = size)
+    val __obj = js.Dynamic.literal(etype = etype.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TList]
   }

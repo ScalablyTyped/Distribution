@@ -24,10 +24,10 @@ object AndroidAppInfo {
     versionName: String = null
   ): AndroidAppInfo = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (packageName != null) __obj.updateDynamic("packageName")(packageName)
-    if (versionCode != null) __obj.updateDynamic("versionCode")(versionCode)
-    if (versionName != null) __obj.updateDynamic("versionName")(versionName)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
+    if (versionCode != null) __obj.updateDynamic("versionCode")(versionCode.asInstanceOf[js.Any])
+    if (versionName != null) __obj.updateDynamic("versionName")(versionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidAppInfo]
   }
 }

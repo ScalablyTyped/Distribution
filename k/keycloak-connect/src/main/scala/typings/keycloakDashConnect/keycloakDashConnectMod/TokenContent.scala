@@ -14,9 +14,9 @@ trait TokenContent extends js.Object {
 object TokenContent {
   @scala.inline
   def apply(exp: Double, realm_access: Anon_Roles = null, resource_access: js.Any = null): TokenContent = {
-    val __obj = js.Dynamic.literal(exp = exp)
-    if (realm_access != null) __obj.updateDynamic("realm_access")(realm_access)
-    if (resource_access != null) __obj.updateDynamic("resource_access")(resource_access)
+    val __obj = js.Dynamic.literal(exp = exp.asInstanceOf[js.Any])
+    if (realm_access != null) __obj.updateDynamic("realm_access")(realm_access.asInstanceOf[js.Any])
+    if (resource_access != null) __obj.updateDynamic("resource_access")(resource_access.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenContent]
   }
 }

@@ -30,7 +30,7 @@ object DimensionsFilters {
     `type`: INCLUDE | EXCLUDE,
     values: js.Array[String]
   ): DimensionsFilters = {
-    val __obj = js.Dynamic.literal(fieldName = fieldName, operator = operator.asInstanceOf[js.Any], values = values)
+    val __obj = js.Dynamic.literal(fieldName = fieldName.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DimensionsFilters]
   }

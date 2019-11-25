@@ -12,7 +12,7 @@ trait NestedFieldsInterface extends js.Object {
 object NestedFieldsInterface {
   @scala.inline
   def apply(fields: SchemaInterface, repeated: Boolean): NestedFieldsInterface = {
-    val __obj = js.Dynamic.literal(fields = fields, repeated = repeated)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], repeated = repeated.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NestedFieldsInterface]
   }

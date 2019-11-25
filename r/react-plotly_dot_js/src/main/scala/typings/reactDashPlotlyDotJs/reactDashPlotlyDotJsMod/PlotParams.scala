@@ -149,12 +149,12 @@ object PlotParams {
     style: CSSProperties = null,
     useResizeHandler: js.UndefOr[Boolean] = js.undefined
   ): PlotParams = {
-    val __obj = js.Dynamic.literal(data = data, layout = layout)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (divId != null) __obj.updateDynamic("divId")(divId)
-    if (frames != null) __obj.updateDynamic("frames")(frames)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (divId != null) __obj.updateDynamic("divId")(divId.asInstanceOf[js.Any])
+    if (frames != null) __obj.updateDynamic("frames")(frames.asInstanceOf[js.Any])
     if (onAfterExport != null) __obj.updateDynamic("onAfterExport")(js.Any.fromFunction0(onAfterExport))
     if (onAfterPlot != null) __obj.updateDynamic("onAfterPlot")(js.Any.fromFunction0(onAfterPlot))
     if (onAnimated != null) __obj.updateDynamic("onAnimated")(js.Any.fromFunction0(onAnimated))
@@ -187,8 +187,8 @@ object PlotParams {
     if (onUnhover != null) __obj.updateDynamic("onUnhover")(js.Any.fromFunction1(onUnhover))
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction2(onUpdate))
     if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(useResizeHandler)) __obj.updateDynamic("useResizeHandler")(useResizeHandler)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(useResizeHandler)) __obj.updateDynamic("useResizeHandler")(useResizeHandler.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotParams]
   }
 }

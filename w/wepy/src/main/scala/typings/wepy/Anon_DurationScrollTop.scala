@@ -12,7 +12,7 @@ trait Anon_DurationScrollTop extends js.Object {
 object Anon_DurationScrollTop {
   @scala.inline
   def apply(duration: Double, scrollTop: Double): Anon_DurationScrollTop = {
-    val __obj = js.Dynamic.literal(duration = duration, scrollTop = scrollTop)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], scrollTop = scrollTop.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DurationScrollTop]
   }

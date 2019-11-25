@@ -42,7 +42,7 @@ object CloneOptions {
     overrideParameters: StringDictionary[String],
     relatedLinkComment: String
   ): CloneOptions = {
-    val __obj = js.Dynamic.literal(cloneRequirements = cloneRequirements, copyAllSuites = copyAllSuites, copyAncestorHierarchy = copyAncestorHierarchy, destinationWorkItemType = destinationWorkItemType, overrideParameters = overrideParameters, relatedLinkComment = relatedLinkComment)
+    val __obj = js.Dynamic.literal(cloneRequirements = cloneRequirements.asInstanceOf[js.Any], copyAllSuites = copyAllSuites.asInstanceOf[js.Any], copyAncestorHierarchy = copyAncestorHierarchy.asInstanceOf[js.Any], destinationWorkItemType = destinationWorkItemType.asInstanceOf[js.Any], overrideParameters = overrideParameters.asInstanceOf[js.Any], relatedLinkComment = relatedLinkComment.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CloneOptions]
   }

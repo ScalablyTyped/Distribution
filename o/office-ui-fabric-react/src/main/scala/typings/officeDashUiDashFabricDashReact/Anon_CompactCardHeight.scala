@@ -13,7 +13,7 @@ trait Anon_CompactCardHeight extends js.Object {
 object Anon_CompactCardHeight {
   @scala.inline
   def apply(compactCardHeight: Double, directionalHintFixed: Boolean, expandedCardHeight: Double): Anon_CompactCardHeight = {
-    val __obj = js.Dynamic.literal(compactCardHeight = compactCardHeight, directionalHintFixed = directionalHintFixed, expandedCardHeight = expandedCardHeight)
+    val __obj = js.Dynamic.literal(compactCardHeight = compactCardHeight.asInstanceOf[js.Any], directionalHintFixed = directionalHintFixed.asInstanceOf[js.Any], expandedCardHeight = expandedCardHeight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CompactCardHeight]
   }

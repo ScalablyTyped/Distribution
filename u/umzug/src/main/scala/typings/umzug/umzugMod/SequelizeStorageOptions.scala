@@ -54,11 +54,11 @@ object SequelizeStorageOptions {
     sequelize: Sequelize = null,
     tableName: String = null
   ): SequelizeStorageOptions = {
-    val __obj = js.Dynamic.literal(columnName = columnName, columnType = columnType, executed = js.Any.fromFunction0(executed), logMigration = js.Any.fromFunction1(logMigration), unlogMigration = js.Any.fromFunction1(unlogMigration))
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (modelName != null) __obj.updateDynamic("modelName")(modelName)
-    if (sequelize != null) __obj.updateDynamic("sequelize")(sequelize)
-    if (tableName != null) __obj.updateDynamic("tableName")(tableName)
+    val __obj = js.Dynamic.literal(columnName = columnName.asInstanceOf[js.Any], columnType = columnType.asInstanceOf[js.Any], executed = js.Any.fromFunction0(executed), logMigration = js.Any.fromFunction1(logMigration), unlogMigration = js.Any.fromFunction1(unlogMigration))
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (modelName != null) __obj.updateDynamic("modelName")(modelName.asInstanceOf[js.Any])
+    if (sequelize != null) __obj.updateDynamic("sequelize")(sequelize.asInstanceOf[js.Any])
+    if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SequelizeStorageOptions]
   }
 }

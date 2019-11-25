@@ -22,9 +22,9 @@ object BemSettings {
     classMap: Record[String, String] = null,
     ns: String = null
   ): BemSettings = {
-    val __obj = js.Dynamic.literal(el = el, mod = mod, modValue = modValue)
-    if (classMap != null) __obj.updateDynamic("classMap")(classMap)
-    if (ns != null) __obj.updateDynamic("ns")(ns)
+    val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any], mod = mod.asInstanceOf[js.Any], modValue = modValue.asInstanceOf[js.Any])
+    if (classMap != null) __obj.updateDynamic("classMap")(classMap.asInstanceOf[js.Any])
+    if (ns != null) __obj.updateDynamic("ns")(ns.asInstanceOf[js.Any])
     __obj.asInstanceOf[BemSettings]
   }
 }

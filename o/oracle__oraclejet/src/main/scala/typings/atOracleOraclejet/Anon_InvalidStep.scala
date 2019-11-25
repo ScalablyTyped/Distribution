@@ -22,11 +22,11 @@ object Anon_InvalidStep {
     valueRange: String = null
   ): Anon_InvalidStep = {
     val __obj = js.Dynamic.literal()
-    if (invalidStep != null) __obj.updateDynamic("invalidStep")(invalidStep)
-    if (maxMin != null) __obj.updateDynamic("maxMin")(maxMin)
-    if (noValue != null) __obj.updateDynamic("noValue")(noValue)
-    if (optionNum != null) __obj.updateDynamic("optionNum")(optionNum)
-    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange)
+    if (invalidStep != null) __obj.updateDynamic("invalidStep")(invalidStep.asInstanceOf[js.Any])
+    if (maxMin != null) __obj.updateDynamic("maxMin")(maxMin.asInstanceOf[js.Any])
+    if (noValue != null) __obj.updateDynamic("noValue")(noValue.asInstanceOf[js.Any])
+    if (optionNum != null) __obj.updateDynamic("optionNum")(optionNum.asInstanceOf[js.Any])
+    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_InvalidStep]
   }
 }

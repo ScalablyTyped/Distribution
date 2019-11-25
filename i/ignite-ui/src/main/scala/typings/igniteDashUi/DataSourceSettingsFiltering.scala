@@ -84,17 +84,17 @@ object DataSourceSettingsFiltering {
     `type`: String = null
   ): DataSourceSettingsFiltering = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(applyToAllData)) __obj.updateDynamic("applyToAllData")(applyToAllData)
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
-    if (customConditions != null) __obj.updateDynamic("customConditions")(customConditions)
-    if (customFunc != null) __obj.updateDynamic("customFunc")(customFunc)
-    if (defaultFields != null) __obj.updateDynamic("defaultFields")(defaultFields)
-    if (exprString != null) __obj.updateDynamic("exprString")(exprString)
-    if (expressions != null) __obj.updateDynamic("expressions")(expressions)
-    if (filterExprUrlKey != null) __obj.updateDynamic("filterExprUrlKey")(filterExprUrlKey)
-    if (filterLogicUrlKey != null) __obj.updateDynamic("filterLogicUrlKey")(filterLogicUrlKey)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(applyToAllData)) __obj.updateDynamic("applyToAllData")(applyToAllData.asInstanceOf[js.Any])
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
+    if (customConditions != null) __obj.updateDynamic("customConditions")(customConditions.asInstanceOf[js.Any])
+    if (customFunc != null) __obj.updateDynamic("customFunc")(customFunc.asInstanceOf[js.Any])
+    if (defaultFields != null) __obj.updateDynamic("defaultFields")(defaultFields.asInstanceOf[js.Any])
+    if (exprString != null) __obj.updateDynamic("exprString")(exprString.asInstanceOf[js.Any])
+    if (expressions != null) __obj.updateDynamic("expressions")(expressions.asInstanceOf[js.Any])
+    if (filterExprUrlKey != null) __obj.updateDynamic("filterExprUrlKey")(filterExprUrlKey.asInstanceOf[js.Any])
+    if (filterLogicUrlKey != null) __obj.updateDynamic("filterLogicUrlKey")(filterLogicUrlKey.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceSettingsFiltering]
   }
 }

@@ -13,8 +13,8 @@ trait NewLoader extends js.Object {
 object NewLoader {
   @scala.inline
   def apply(loader: String, options: StringDictionary[js.Any] = null): NewLoader = {
-    val __obj = js.Dynamic.literal(loader = loader)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(loader = loader.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewLoader]
   }
 }

@@ -22,7 +22,7 @@ object JsonLocalBaseBlock {
     valueBeforeDecode: ArrayBuffer,
     warnings: js.Array[String]
   ): JsonLocalBaseBlock = {
-    val __obj = js.Dynamic.literal(blockLength = blockLength, blockName = blockName, error = error, valueBeforeDecode = valueBeforeDecode, warnings = warnings)
+    val __obj = js.Dynamic.literal(blockLength = blockLength.asInstanceOf[js.Any], blockName = blockName.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], valueBeforeDecode = valueBeforeDecode.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JsonLocalBaseBlock]
   }

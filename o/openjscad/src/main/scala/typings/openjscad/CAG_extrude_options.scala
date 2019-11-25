@@ -14,7 +14,7 @@ object CAG_extrude_options {
   @scala.inline
   def apply(offset: js.Array[Double] = null, twistangle: Int | Double = null, twiststeps: Int | Double = null): CAG_extrude_options = {
     val __obj = js.Dynamic.literal()
-    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (twistangle != null) __obj.updateDynamic("twistangle")(twistangle.asInstanceOf[js.Any])
     if (twiststeps != null) __obj.updateDynamic("twiststeps")(twiststeps.asInstanceOf[js.Any])
     __obj.asInstanceOf[CAG_extrude_options]

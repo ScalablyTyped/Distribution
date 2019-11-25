@@ -31,7 +31,7 @@ object FlashBitmapItem {
     useDeblocking: Boolean,
     useImportedJPEGQuality: Boolean
   ): FlashBitmapItem = {
-    val __obj = js.Dynamic.literal(allowSmoothing = allowSmoothing, compressionType = compressionType, exportToFile = js.Any.fromFunction1(exportToFile), fileLastModifiedDate = fileLastModifiedDate, originalCompressionType = originalCompressionType, sourceFileExists = sourceFileExists, sourceFileIsCurrent = sourceFileIsCurrent, sourceFilePath = sourceFilePath, useDeblocking = useDeblocking, useImportedJPEGQuality = useImportedJPEGQuality)
+    val __obj = js.Dynamic.literal(allowSmoothing = allowSmoothing.asInstanceOf[js.Any], compressionType = compressionType.asInstanceOf[js.Any], exportToFile = js.Any.fromFunction1(exportToFile), fileLastModifiedDate = fileLastModifiedDate.asInstanceOf[js.Any], originalCompressionType = originalCompressionType.asInstanceOf[js.Any], sourceFileExists = sourceFileExists.asInstanceOf[js.Any], sourceFileIsCurrent = sourceFileIsCurrent.asInstanceOf[js.Any], sourceFilePath = sourceFilePath.asInstanceOf[js.Any], useDeblocking = useDeblocking.asInstanceOf[js.Any], useImportedJPEGQuality = useImportedJPEGQuality.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FlashBitmapItem]
   }

@@ -22,9 +22,9 @@ object CardSettings {
   @scala.inline
   def apply(colorMapping: js.Any = null, externalDropTarget: String = null, template: String = null): CardSettings = {
     val __obj = js.Dynamic.literal()
-    if (colorMapping != null) __obj.updateDynamic("colorMapping")(colorMapping)
-    if (externalDropTarget != null) __obj.updateDynamic("externalDropTarget")(externalDropTarget)
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (colorMapping != null) __obj.updateDynamic("colorMapping")(colorMapping.asInstanceOf[js.Any])
+    if (externalDropTarget != null) __obj.updateDynamic("externalDropTarget")(externalDropTarget.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardSettings]
   }
 }

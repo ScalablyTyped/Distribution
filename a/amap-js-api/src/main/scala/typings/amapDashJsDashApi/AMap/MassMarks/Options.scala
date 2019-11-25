@@ -35,9 +35,9 @@ object Options {
     zIndex: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwayRender)) __obj.updateDynamic("alwayRender")(alwayRender)
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (map != null) __obj.updateDynamic("map")(map)
+    if (!js.isUndefined(alwayRender)) __obj.updateDynamic("alwayRender")(alwayRender.asInstanceOf[js.Any])
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

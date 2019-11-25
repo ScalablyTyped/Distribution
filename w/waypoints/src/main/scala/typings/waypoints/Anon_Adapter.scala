@@ -12,7 +12,7 @@ trait Anon_Adapter extends js.Object {
 object Anon_Adapter {
   @scala.inline
   def apply(Adapter: WaypointAdapter, name: String): Anon_Adapter = {
-    val __obj = js.Dynamic.literal(Adapter = Adapter, name = name)
+    val __obj = js.Dynamic.literal(Adapter = Adapter.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Adapter]
   }

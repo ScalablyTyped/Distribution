@@ -19,9 +19,9 @@ object ConvertOptions {
     resolveAliases: js.UndefOr[Boolean] = js.undefined,
     resolveMetaAliases: js.UndefOr[Boolean] = js.undefined
   ): ConvertOptions = {
-    val __obj = js.Dynamic.literal(format = format, transform = transform)
-    if (!js.isUndefined(resolveAliases)) __obj.updateDynamic("resolveAliases")(resolveAliases)
-    if (!js.isUndefined(resolveMetaAliases)) __obj.updateDynamic("resolveMetaAliases")(resolveMetaAliases)
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolveAliases)) __obj.updateDynamic("resolveAliases")(resolveAliases.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolveMetaAliases)) __obj.updateDynamic("resolveMetaAliases")(resolveMetaAliases.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConvertOptions]
   }
 }

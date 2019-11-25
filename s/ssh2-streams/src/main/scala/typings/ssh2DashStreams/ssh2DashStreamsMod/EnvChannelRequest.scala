@@ -16,8 +16,8 @@ trait EnvChannelRequest extends ChannelRequest {
 object EnvChannelRequest {
   @scala.inline
   def apply(key: String, recipient: Double, request: env, `val`: String, wantReply: Boolean): EnvChannelRequest = {
-    val __obj = js.Dynamic.literal(key = key, recipient = recipient, request = request, wantReply = wantReply)
-    __obj.updateDynamic("val")(`val`)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], wantReply = wantReply.asInstanceOf[js.Any])
+    __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvChannelRequest]
   }
 }

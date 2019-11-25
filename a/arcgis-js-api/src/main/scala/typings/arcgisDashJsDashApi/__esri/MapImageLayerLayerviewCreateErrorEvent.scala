@@ -12,7 +12,7 @@ trait MapImageLayerLayerviewCreateErrorEvent extends js.Object {
 object MapImageLayerLayerviewCreateErrorEvent {
   @scala.inline
   def apply(error: Error, view: View): MapImageLayerLayerviewCreateErrorEvent = {
-    val __obj = js.Dynamic.literal(error = error, view = view)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MapImageLayerLayerviewCreateErrorEvent]
   }

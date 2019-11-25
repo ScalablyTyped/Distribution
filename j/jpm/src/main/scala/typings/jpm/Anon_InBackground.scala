@@ -34,10 +34,10 @@ object Anon_InBackground {
     onPageShow: /* tab */ Tab => _ = null,
     onReady: /* tab */ Tab => _ = null
   ): Anon_InBackground = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (!js.isUndefined(inBackground)) __obj.updateDynamic("inBackground")(inBackground)
-    if (!js.isUndefined(inNewWindow)) __obj.updateDynamic("inNewWindow")(inNewWindow)
-    if (!js.isUndefined(isPinned)) __obj.updateDynamic("isPinned")(isPinned)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (!js.isUndefined(inBackground)) __obj.updateDynamic("inBackground")(inBackground.asInstanceOf[js.Any])
+    if (!js.isUndefined(inNewWindow)) __obj.updateDynamic("inNewWindow")(inNewWindow.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPinned)) __obj.updateDynamic("isPinned")(isPinned.asInstanceOf[js.Any])
     if (onActivate != null) __obj.updateDynamic("onActivate")(js.Any.fromFunction1(onActivate))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (onDeactivate != null) __obj.updateDynamic("onDeactivate")(js.Any.fromFunction1(onDeactivate))

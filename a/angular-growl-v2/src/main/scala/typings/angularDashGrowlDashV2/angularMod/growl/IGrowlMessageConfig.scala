@@ -39,17 +39,17 @@ object IGrowlMessageConfig {
     variables: StringDictionary[js.Any] = null
   ): IGrowlMessageConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableCloseButton)) __obj.updateDynamic("disableCloseButton")(disableCloseButton)
-    if (!js.isUndefined(disableCountDown)) __obj.updateDynamic("disableCountDown")(disableCountDown)
-    if (!js.isUndefined(disableIcons)) __obj.updateDynamic("disableIcons")(disableIcons)
-    if (onclose != null) __obj.updateDynamic("onclose")(onclose)
-    if (onopen != null) __obj.updateDynamic("onopen")(onopen)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(disableCloseButton)) __obj.updateDynamic("disableCloseButton")(disableCloseButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableCountDown)) __obj.updateDynamic("disableCountDown")(disableCountDown.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableIcons)) __obj.updateDynamic("disableIcons")(disableIcons.asInstanceOf[js.Any])
+    if (onclose != null) __obj.updateDynamic("onclose")(onclose.asInstanceOf[js.Any])
+    if (onopen != null) __obj.updateDynamic("onopen")(onopen.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (referenceId != null) __obj.updateDynamic("referenceId")(referenceId.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (!js.isUndefined(translateMessage)) __obj.updateDynamic("translateMessage")(translateMessage)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(translateMessage)) __obj.updateDynamic("translateMessage")(translateMessage.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
-    if (variables != null) __obj.updateDynamic("variables")(variables)
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGrowlMessageConfig]
   }
 }

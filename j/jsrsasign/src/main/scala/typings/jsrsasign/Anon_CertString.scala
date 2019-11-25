@@ -11,7 +11,7 @@ trait Anon_CertString extends js.Object {
 object Anon_CertString {
   @scala.inline
   def apply(cert: String): Anon_CertString = {
-    val __obj = js.Dynamic.literal(cert = cert)
+    val __obj = js.Dynamic.literal(cert = cert.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CertString]
   }

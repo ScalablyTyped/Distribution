@@ -35,7 +35,7 @@ object _MappingRule {
     RoleARN: String,
     Value: String
   ): _MappingRule = {
-    val __obj = js.Dynamic.literal(Claim = Claim, MatchType = MatchType.asInstanceOf[js.Any], RoleARN = RoleARN, Value = Value)
+    val __obj = js.Dynamic.literal(Claim = Claim.asInstanceOf[js.Any], MatchType = MatchType.asInstanceOf[js.Any], RoleARN = RoleARN.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_MappingRule]
   }

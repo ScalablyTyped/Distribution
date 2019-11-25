@@ -23,7 +23,7 @@ object IAnchor {
     nativeRowOff: Double,
     row: Double
   ): IAnchor = {
-    val __obj = js.Dynamic.literal(col = col, nativeCol = nativeCol, nativeColOff = nativeColOff, nativeRow = nativeRow, nativeRowOff = nativeRowOff, row = row)
+    val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], nativeCol = nativeCol.asInstanceOf[js.Any], nativeColOff = nativeColOff.asInstanceOf[js.Any], nativeRow = nativeRow.asInstanceOf[js.Any], nativeRowOff = nativeRowOff.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IAnchor]
   }

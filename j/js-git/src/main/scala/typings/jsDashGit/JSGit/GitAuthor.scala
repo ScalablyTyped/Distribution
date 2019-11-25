@@ -14,7 +14,7 @@ trait GitAuthor extends js.Object {
 object GitAuthor {
   @scala.inline
   def apply(date: Date, email: String, name: String): GitAuthor = {
-    val __obj = js.Dynamic.literal(date = date, email = email, name = name)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitAuthor]
   }

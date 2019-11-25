@@ -15,9 +15,9 @@ object TeamsAppInstallation {
   @scala.inline
   def apply(id: String = null, teamsApp: TeamsApp = null, teamsAppDefinition: TeamsAppDefinition = null): TeamsAppInstallation = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (teamsApp != null) __obj.updateDynamic("teamsApp")(teamsApp)
-    if (teamsAppDefinition != null) __obj.updateDynamic("teamsAppDefinition")(teamsAppDefinition)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (teamsApp != null) __obj.updateDynamic("teamsApp")(teamsApp.asInstanceOf[js.Any])
+    if (teamsAppDefinition != null) __obj.updateDynamic("teamsAppDefinition")(teamsAppDefinition.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsAppInstallation]
   }
 }

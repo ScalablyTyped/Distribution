@@ -44,7 +44,7 @@ object WorkflowTaskExecuteStepsParams {
     stepIds: js.Array[Double],
     user: String
   ): WorkflowTaskExecuteStepsParams = {
-    val __obj = js.Dynamic.literal(auto = auto, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobId = jobId, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), stepIds = stepIds, user = user)
+    val __obj = js.Dynamic.literal(auto = auto.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobId = jobId.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), stepIds = stepIds.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkflowTaskExecuteStepsParams]
   }

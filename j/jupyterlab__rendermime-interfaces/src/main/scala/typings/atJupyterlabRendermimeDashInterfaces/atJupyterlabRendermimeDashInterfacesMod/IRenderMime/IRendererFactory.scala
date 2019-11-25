@@ -43,7 +43,7 @@ object IRendererFactory {
     safe: Boolean,
     defaultRank: Int | Double = null
   ): IRendererFactory = {
-    val __obj = js.Dynamic.literal(createRenderer = js.Any.fromFunction1(createRenderer), mimeTypes = mimeTypes, safe = safe)
+    val __obj = js.Dynamic.literal(createRenderer = js.Any.fromFunction1(createRenderer), mimeTypes = mimeTypes.asInstanceOf[js.Any], safe = safe.asInstanceOf[js.Any])
     if (defaultRank != null) __obj.updateDynamic("defaultRank")(defaultRank.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRendererFactory]
   }

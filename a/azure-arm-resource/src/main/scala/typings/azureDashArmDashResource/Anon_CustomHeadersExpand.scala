@@ -19,9 +19,9 @@ object Anon_CustomHeadersExpand {
     recurse: js.UndefOr[Boolean] = js.undefined
   ): Anon_CustomHeadersExpand = {
     val __obj = js.Dynamic.literal()
-    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (!js.isUndefined(recurse)) __obj.updateDynamic("recurse")(recurse)
+    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (!js.isUndefined(recurse)) __obj.updateDynamic("recurse")(recurse.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CustomHeadersExpand]
   }
 }

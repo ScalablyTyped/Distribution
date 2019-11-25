@@ -53,18 +53,18 @@ object Anon_AltFetchUserInfo {
     userIp: String = null,
     view: String = null
   ): Anon_AltFetchUserInfo = {
-    val __obj = js.Dynamic.literal(userId = userId)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (!js.isUndefined(fetchUserInfo)) __obj.updateDynamic("fetchUserInfo")(fetchUserInfo)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
-    if (role != null) __obj.updateDynamic("role")(role)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
-    if (view != null) __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(userId = userId.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchUserInfo)) __obj.updateDynamic("fetchUserInfo")(fetchUserInfo.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AltFetchUserInfo]
   }
 }

@@ -13,7 +13,7 @@ trait TestPlansWithSelection extends js.Object {
 object TestPlansWithSelection {
   @scala.inline
   def apply(lastSelectedPlan: Double, lastSelectedSuite: Double, plans: js.Array[TestPlan]): TestPlansWithSelection = {
-    val __obj = js.Dynamic.literal(lastSelectedPlan = lastSelectedPlan, lastSelectedSuite = lastSelectedSuite, plans = plans)
+    val __obj = js.Dynamic.literal(lastSelectedPlan = lastSelectedPlan.asInstanceOf[js.Any], lastSelectedSuite = lastSelectedSuite.asInstanceOf[js.Any], plans = plans.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestPlansWithSelection]
   }

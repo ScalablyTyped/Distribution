@@ -22,10 +22,10 @@ object ChartLegendLabels {
     template: String | js.Function = null
   ): ChartLegendLabels = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (margin != null) __obj.updateDynamic("margin")(margin)
-    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartLegendLabels]
   }

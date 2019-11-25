@@ -26,9 +26,9 @@ object PluralElement {
     location: Location = null,
     pluralType: cardinal | ordinal = null
   ): PluralElement = {
-    val __obj = js.Dynamic.literal(offset = offset, options = options, value = value)
-    __obj.updateDynamic("type")(`type`)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (pluralType != null) __obj.updateDynamic("pluralType")(pluralType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluralElement]
   }

@@ -12,7 +12,7 @@ object UrlMapReference {
   @scala.inline
   def apply(urlMap: String = null): UrlMapReference = {
     val __obj = js.Dynamic.literal()
-    if (urlMap != null) __obj.updateDynamic("urlMap")(urlMap)
+    if (urlMap != null) __obj.updateDynamic("urlMap")(urlMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlMapReference]
   }
 }

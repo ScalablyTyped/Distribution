@@ -16,8 +16,8 @@ object PositionedObjectPropertiesSuggestionState {
     positioningSuggestionState: PositionedObjectPositioningSuggestionState = null
   ): PositionedObjectPropertiesSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (embeddedObjectSuggestionState != null) __obj.updateDynamic("embeddedObjectSuggestionState")(embeddedObjectSuggestionState)
-    if (positioningSuggestionState != null) __obj.updateDynamic("positioningSuggestionState")(positioningSuggestionState)
+    if (embeddedObjectSuggestionState != null) __obj.updateDynamic("embeddedObjectSuggestionState")(embeddedObjectSuggestionState.asInstanceOf[js.Any])
+    if (positioningSuggestionState != null) __obj.updateDynamic("positioningSuggestionState")(positioningSuggestionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[PositionedObjectPropertiesSuggestionState]
   }
 }

@@ -14,7 +14,7 @@ trait ResultObject extends js.Object {
 object ResultObject {
   @scala.inline
   def apply(cpu: Double, memory: Double, memoryInfo: Anon_Rss): ResultObject = {
-    val __obj = js.Dynamic.literal(cpu = cpu, memory = memory, memoryInfo = memoryInfo)
+    val __obj = js.Dynamic.literal(cpu = cpu.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any], memoryInfo = memoryInfo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResultObject]
   }

@@ -24,7 +24,7 @@ object AppStateStatic {
     currentState: AppStateStatus,
     removeEventListener: (AppStateEvent, js.Function1[/* state */ AppStateStatus, Unit]) => Unit
   ): AppStateStatic = {
-    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), currentState = currentState, removeEventListener = js.Any.fromFunction2(removeEventListener))
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), currentState = currentState.asInstanceOf[js.Any], removeEventListener = js.Any.fromFunction2(removeEventListener))
   
     __obj.asInstanceOf[AppStateStatic]
   }

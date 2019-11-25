@@ -34,11 +34,11 @@ object BasicCardOptions {
   ): BasicCardOptions = {
     val __obj = js.Dynamic.literal()
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasicCardOptions]
   }
 }

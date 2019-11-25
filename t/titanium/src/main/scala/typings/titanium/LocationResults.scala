@@ -41,10 +41,10 @@ object LocationResults {
   ): LocationResults = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (coords != null) __obj.updateDynamic("coords")(coords)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (provider != null) __obj.updateDynamic("provider")(provider)
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    if (coords != null) __obj.updateDynamic("coords")(coords.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationResults]
   }
 }

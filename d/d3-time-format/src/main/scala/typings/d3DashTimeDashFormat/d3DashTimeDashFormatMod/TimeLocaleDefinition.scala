@@ -51,7 +51,7 @@ object TimeLocaleDefinition {
     shortMonths: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String],
     time: String
   ): TimeLocaleDefinition = {
-    val __obj = js.Dynamic.literal(date = date, dateTime = dateTime, days = days, months = months, periods = periods, shortDays = shortDays, shortMonths = shortMonths, time = time)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], dateTime = dateTime.asInstanceOf[js.Any], days = days.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], periods = periods.asInstanceOf[js.Any], shortDays = shortDays.asInstanceOf[js.Any], shortMonths = shortMonths.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TimeLocaleDefinition]
   }

@@ -154,18 +154,18 @@ object IFrameOptions {
     widthCalculationMethod: WidthCalculationMethod = null
   ): IFrameOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize)
-    if (bodyBackground != null) __obj.updateDynamic("bodyBackground")(bodyBackground)
+    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.asInstanceOf[js.Any])
+    if (bodyBackground != null) __obj.updateDynamic("bodyBackground")(bodyBackground.asInstanceOf[js.Any])
     if (bodyMargin != null) __obj.updateDynamic("bodyMargin")(bodyMargin.asInstanceOf[js.Any])
     if (bodyPadding != null) __obj.updateDynamic("bodyPadding")(bodyPadding.asInstanceOf[js.Any])
     if (checkOrigin != null) __obj.updateDynamic("checkOrigin")(checkOrigin.asInstanceOf[js.Any])
     if (closedCallback != null) __obj.updateDynamic("closedCallback")(js.Any.fromFunction1(closedCallback))
-    if (heightCalculationMethod != null) __obj.updateDynamic("heightCalculationMethod")(heightCalculationMethod)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(inPageLinks)) __obj.updateDynamic("inPageLinks")(inPageLinks)
+    if (heightCalculationMethod != null) __obj.updateDynamic("heightCalculationMethod")(heightCalculationMethod.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(inPageLinks)) __obj.updateDynamic("inPageLinks")(inPageLinks.asInstanceOf[js.Any])
     if (initCallback != null) __obj.updateDynamic("initCallback")(js.Any.fromFunction1(initCallback))
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log)
+    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (messageCallback != null) __obj.updateDynamic("messageCallback")(js.Any.fromFunction1(messageCallback))
@@ -175,10 +175,10 @@ object IFrameOptions {
     if (resizedCallback != null) __obj.updateDynamic("resizedCallback")(js.Any.fromFunction1(resizedCallback))
     if (scrollCallback != null) __obj.updateDynamic("scrollCallback")(js.Any.fromFunction1(scrollCallback))
     if (scrolling != null) __obj.updateDynamic("scrolling")(scrolling.asInstanceOf[js.Any])
-    if (!js.isUndefined(sizeHeight)) __obj.updateDynamic("sizeHeight")(sizeHeight)
-    if (!js.isUndefined(sizeWidth)) __obj.updateDynamic("sizeWidth")(sizeWidth)
+    if (!js.isUndefined(sizeHeight)) __obj.updateDynamic("sizeHeight")(sizeHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(sizeWidth)) __obj.updateDynamic("sizeWidth")(sizeWidth.asInstanceOf[js.Any])
     if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
-    if (widthCalculationMethod != null) __obj.updateDynamic("widthCalculationMethod")(widthCalculationMethod)
+    if (widthCalculationMethod != null) __obj.updateDynamic("widthCalculationMethod")(widthCalculationMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFrameOptions]
   }
 }

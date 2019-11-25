@@ -21,10 +21,10 @@ object GraphQLAppOptions {
     schemaName: String = null
   ): GraphQLAppOptions = {
     val __obj = js.Dynamic.literal()
-    if (apiPath != null) __obj.updateDynamic("apiPath")(apiPath)
-    if (apollo != null) __obj.updateDynamic("apollo")(apollo)
-    if (graphiqlPath != null) __obj.updateDynamic("graphiqlPath")(graphiqlPath)
-    if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName)
+    if (apiPath != null) __obj.updateDynamic("apiPath")(apiPath.asInstanceOf[js.Any])
+    if (apollo != null) __obj.updateDynamic("apollo")(apollo.asInstanceOf[js.Any])
+    if (graphiqlPath != null) __obj.updateDynamic("graphiqlPath")(graphiqlPath.asInstanceOf[js.Any])
+    if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLAppOptions]
   }
 }

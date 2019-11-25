@@ -23,7 +23,7 @@ trait _validOverflow extends js.Object {
 object _validOverflow {
   @scala.inline
   def apply(auto: Double, scroll: Double): _validOverflow = {
-    val __obj = js.Dynamic.literal(auto = auto, scroll = scroll)
+    val __obj = js.Dynamic.literal(auto = auto.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_validOverflow]
   }

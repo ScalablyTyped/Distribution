@@ -13,8 +13,8 @@ object Anon_Bucket {
   @scala.inline
   def apply(Bucket: String = null, Key: String = null): Anon_Bucket = {
     val __obj = js.Dynamic.literal()
-    if (Bucket != null) __obj.updateDynamic("Bucket")(Bucket)
-    if (Key != null) __obj.updateDynamic("Key")(Key)
+    if (Bucket != null) __obj.updateDynamic("Bucket")(Bucket.asInstanceOf[js.Any])
+    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bucket]
   }
 }

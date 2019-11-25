@@ -11,10 +11,9 @@ trait TransientLifecycle extends Lifecycle
 object TransientLifecycle {
   @scala.inline
   def apply(
-    resolve: (typings.forgeDashDi.distResolversResolverMod.default, typings.forgeDashDi.distFrameworkContextMod.default, Arguments) => js.Any,
-    toString: () => String
+    resolve: (typings.forgeDashDi.distResolversResolverMod.default, typings.forgeDashDi.distFrameworkContextMod.default, Arguments) => js.Any
   ): TransientLifecycle = {
-    val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction3(resolve), toString = js.Any.fromFunction0(toString))
+    val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction3(resolve))
   
     __obj.asInstanceOf[TransientLifecycle]
   }

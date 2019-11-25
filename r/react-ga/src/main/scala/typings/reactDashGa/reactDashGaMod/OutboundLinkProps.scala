@@ -21,10 +21,10 @@ object OutboundLinkProps {
     target: String = null,
     trackerNames: TrackerNames = null
   ): OutboundLinkProps = {
-    val __obj = js.Dynamic.literal(eventLabel = eventLabel, to = to)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (trackerNames != null) __obj.updateDynamic("trackerNames")(trackerNames)
+    val __obj = js.Dynamic.literal(eventLabel = eventLabel.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (trackerNames != null) __obj.updateDynamic("trackerNames")(trackerNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutboundLinkProps]
   }
 }

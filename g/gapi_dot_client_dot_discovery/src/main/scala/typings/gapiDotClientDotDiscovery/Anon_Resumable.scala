@@ -15,8 +15,8 @@ object Anon_Resumable {
   @scala.inline
   def apply(resumable: Anon_Multipart = null, simple: Anon_Multipart = null): Anon_Resumable = {
     val __obj = js.Dynamic.literal()
-    if (resumable != null) __obj.updateDynamic("resumable")(resumable)
-    if (simple != null) __obj.updateDynamic("simple")(simple)
+    if (resumable != null) __obj.updateDynamic("resumable")(resumable.asInstanceOf[js.Any])
+    if (simple != null) __obj.updateDynamic("simple")(simple.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Resumable]
   }
 }

@@ -30,7 +30,7 @@ object PointMarkerStatesOptionsObject {
     normal: PointStatesNormalOptionsObject,
     select: PointStatesSelectOptionsObject
   ): PointMarkerStatesOptionsObject = {
-    val __obj = js.Dynamic.literal(hover = hover, inactive = inactive, normal = normal, select = select)
+    val __obj = js.Dynamic.literal(hover = hover.asInstanceOf[js.Any], inactive = inactive.asInstanceOf[js.Any], normal = normal.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PointMarkerStatesOptionsObject]
   }

@@ -13,7 +13,7 @@ trait Anon_Radius extends js.Object {
 object Anon_Radius {
   @scala.inline
   def apply(radius: Double, x: Double, y: Double): Anon_Radius = {
-    val __obj = js.Dynamic.literal(radius = radius, x = x, y = y)
+    val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Radius]
   }

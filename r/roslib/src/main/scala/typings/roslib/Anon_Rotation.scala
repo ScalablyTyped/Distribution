@@ -14,7 +14,7 @@ trait Anon_Rotation extends js.Object {
 object Anon_Rotation {
   @scala.inline
   def apply(rotation: Quaternion, translation: Vector3): Anon_Rotation = {
-    val __obj = js.Dynamic.literal(rotation = rotation, translation = translation)
+    val __obj = js.Dynamic.literal(rotation = rotation.asInstanceOf[js.Any], translation = translation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Rotation]
   }

@@ -11,7 +11,7 @@ trait Anon_RStyle extends js.Object {
 object Anon_RStyle {
   @scala.inline
   def apply(r: Double): Anon_RStyle = {
-    val __obj = js.Dynamic.literal(r = r)
+    val __obj = js.Dynamic.literal(r = r.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_RStyle]
   }

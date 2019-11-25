@@ -38,7 +38,7 @@ object SearchBarPlatform {
     if (inputContainerStyle != null) __obj.updateDynamic("inputContainerStyle")(inputContainerStyle.asInstanceOf[js.Any])
     if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle.asInstanceOf[js.Any])
     if (leftIconContainerStyle != null) __obj.updateDynamic("leftIconContainerStyle")(leftIconContainerStyle.asInstanceOf[js.Any])
-    if (loadingProps != null) __obj.updateDynamic("loadingProps")(loadingProps)
+    if (loadingProps != null) __obj.updateDynamic("loadingProps")(loadingProps.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
     if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction0(onCancel))
     if (onChangeText != null) __obj.updateDynamic("onChangeText")(js.Any.fromFunction1(onChangeText))
@@ -46,7 +46,7 @@ object SearchBarPlatform {
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction0(onFocus))
     if (rightIconContainerStyle != null) __obj.updateDynamic("rightIconContainerStyle")(rightIconContainerStyle.asInstanceOf[js.Any])
     if (searchIcon != null) __obj.updateDynamic("searchIcon")(searchIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLoading)) __obj.updateDynamic("showLoading")(showLoading)
+    if (!js.isUndefined(showLoading)) __obj.updateDynamic("showLoading")(showLoading.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchBarPlatform]
   }
 }

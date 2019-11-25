@@ -18,7 +18,7 @@ trait Output extends js.Object {
 object Output {
   @scala.inline
   def apply(address: String, value: Double): Output = {
-    val __obj = js.Dynamic.literal(address = address, value = value)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Output]
   }

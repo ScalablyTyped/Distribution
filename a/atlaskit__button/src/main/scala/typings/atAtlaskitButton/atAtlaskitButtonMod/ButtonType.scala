@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait ButtonType extends js.Object
 
+object ButtonType {
+  @scala.inline
+  def button: typings.atAtlaskitButton.atAtlaskitButtonStrings.button = this.cast("button")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def submit: typings.atAtlaskitButton.atAtlaskitButtonStrings.submit = this.cast("submit")
+}
+

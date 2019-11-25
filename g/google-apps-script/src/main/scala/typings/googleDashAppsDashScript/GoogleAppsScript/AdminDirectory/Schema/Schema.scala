@@ -24,12 +24,12 @@ object Schema {
     schemaName: String = null
   ): Schema = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (schemaId != null) __obj.updateDynamic("schemaId")(schemaId)
-    if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (schemaId != null) __obj.updateDynamic("schemaId")(schemaId.asInstanceOf[js.Any])
+    if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Schema]
   }
 }

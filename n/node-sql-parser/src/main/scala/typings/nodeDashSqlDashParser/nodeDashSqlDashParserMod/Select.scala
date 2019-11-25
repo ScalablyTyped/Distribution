@@ -35,16 +35,16 @@ object Select {
     orderby: js.Array[OrderBy] = null,
     `with`: With = null
   ): Select = {
-    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], where = where)
-    __obj.updateDynamic("type")(`type`)
-    if (distinct != null) __obj.updateDynamic("distinct")(distinct)
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (groupby != null) __obj.updateDynamic("groupby")(groupby)
-    if (having != null) __obj.updateDynamic("having")(having)
-    if (limit != null) __obj.updateDynamic("limit")(limit)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (orderby != null) __obj.updateDynamic("orderby")(orderby)
-    if (`with` != null) __obj.updateDynamic("with")(`with`)
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (distinct != null) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (groupby != null) __obj.updateDynamic("groupby")(groupby.asInstanceOf[js.Any])
+    if (having != null) __obj.updateDynamic("having")(having.asInstanceOf[js.Any])
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (orderby != null) __obj.updateDynamic("orderby")(orderby.asInstanceOf[js.Any])
+    if (`with` != null) __obj.updateDynamic("with")(`with`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Select]
   }
 }

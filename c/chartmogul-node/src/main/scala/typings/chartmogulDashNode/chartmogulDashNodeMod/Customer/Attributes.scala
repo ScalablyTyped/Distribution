@@ -18,10 +18,10 @@ object Attributes {
   @scala.inline
   def apply(clearbit: Map = null, custom: Map = null, stripe: Map = null, tags: Strings = null): Attributes = {
     val __obj = js.Dynamic.literal()
-    if (clearbit != null) __obj.updateDynamic("clearbit")(clearbit)
-    if (custom != null) __obj.updateDynamic("custom")(custom)
-    if (stripe != null) __obj.updateDynamic("stripe")(stripe)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (clearbit != null) __obj.updateDynamic("clearbit")(clearbit.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (stripe != null) __obj.updateDynamic("stripe")(stripe.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attributes]
   }
 }

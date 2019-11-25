@@ -65,14 +65,14 @@ object Anon_AutoReconnect {
     user: String = null
   ): Anon_AutoReconnect = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect)
+    if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect.asInstanceOf[js.Any])
     if (changePassword != null) __obj.updateDynamic("changePassword")(js.Any.fromFunction2(changePassword))
     if (connTimeout != null) __obj.updateDynamic("connTimeout")(connTimeout.asInstanceOf[js.Any])
     if (keepalive != null) __obj.updateDynamic("keepalive")(keepalive.asInstanceOf[js.Any])
     if (pasvTimeout != null) __obj.updateDynamic("pasvTimeout")(pasvTimeout.asInstanceOf[js.Any])
-    if (privateKeyFile != null) __obj.updateDynamic("privateKeyFile")(privateKeyFile)
+    if (privateKeyFile != null) __obj.updateDynamic("privateKeyFile")(privateKeyFile.asInstanceOf[js.Any])
     if (tryKeyboard != null) __obj.updateDynamic("tryKeyboard")(js.Any.fromFunction4(tryKeyboard))
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoReconnect]
   }
 }

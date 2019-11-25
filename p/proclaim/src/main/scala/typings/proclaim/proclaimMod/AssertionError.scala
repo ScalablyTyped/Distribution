@@ -15,7 +15,7 @@ trait AssertionError extends js.Object {
 object AssertionError {
   @scala.inline
   def apply(actual: js.Any, expected: js.Any, msg: String, operator: String, stackStartFunction: js.Any): AssertionError = {
-    val __obj = js.Dynamic.literal(actual = actual, expected = expected, msg = msg, operator = operator, stackStartFunction = stackStartFunction)
+    val __obj = js.Dynamic.literal(actual = actual.asInstanceOf[js.Any], expected = expected.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], stackStartFunction = stackStartFunction.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AssertionError]
   }

@@ -13,8 +13,8 @@ object SuggestedNamedStyles {
   @scala.inline
   def apply(namedStyles: NamedStyles = null, namedStylesSuggestionState: NamedStylesSuggestionState = null): SuggestedNamedStyles = {
     val __obj = js.Dynamic.literal()
-    if (namedStyles != null) __obj.updateDynamic("namedStyles")(namedStyles)
-    if (namedStylesSuggestionState != null) __obj.updateDynamic("namedStylesSuggestionState")(namedStylesSuggestionState)
+    if (namedStyles != null) __obj.updateDynamic("namedStyles")(namedStyles.asInstanceOf[js.Any])
+    if (namedStylesSuggestionState != null) __obj.updateDynamic("namedStylesSuggestionState")(namedStylesSuggestionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestedNamedStyles]
   }
 }

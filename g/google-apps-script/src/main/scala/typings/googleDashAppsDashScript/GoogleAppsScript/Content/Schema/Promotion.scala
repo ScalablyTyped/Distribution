@@ -13,8 +13,8 @@ object Promotion {
   @scala.inline
   def apply(promotionAmount: Amount = null, promotionId: String = null): Promotion = {
     val __obj = js.Dynamic.literal()
-    if (promotionAmount != null) __obj.updateDynamic("promotionAmount")(promotionAmount)
-    if (promotionId != null) __obj.updateDynamic("promotionId")(promotionId)
+    if (promotionAmount != null) __obj.updateDynamic("promotionAmount")(promotionAmount.asInstanceOf[js.Any])
+    if (promotionId != null) __obj.updateDynamic("promotionId")(promotionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Promotion]
   }
 }

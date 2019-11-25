@@ -55,16 +55,16 @@ object BrowserInfo {
     isPC: js.UndefOr[Boolean] = js.undefined,
     isSafari: js.UndefOr[Boolean] = js.undefined
   ): BrowserInfo = {
-    val __obj = js.Dynamic.literal(Select = js.Any.fromFunction1(Select), version = version, versionAtLeast = js.Any.fromFunction1(versionAtLeast))
-    if (!js.isUndefined(isChrome)) __obj.updateDynamic("isChrome")(isChrome)
-    if (!js.isUndefined(isFirefox)) __obj.updateDynamic("isFirefox")(isFirefox)
-    if (!js.isUndefined(isKonqueror)) __obj.updateDynamic("isKonqueror")(isKonqueror)
-    if (!js.isUndefined(isMSIE)) __obj.updateDynamic("isMSIE")(isMSIE)
-    if (!js.isUndefined(isMac)) __obj.updateDynamic("isMac")(isMac)
-    if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile)
-    if (!js.isUndefined(isOpera)) __obj.updateDynamic("isOpera")(isOpera)
-    if (!js.isUndefined(isPC)) __obj.updateDynamic("isPC")(isPC)
-    if (!js.isUndefined(isSafari)) __obj.updateDynamic("isSafari")(isSafari)
+    val __obj = js.Dynamic.literal(Select = js.Any.fromFunction1(Select), version = version.asInstanceOf[js.Any], versionAtLeast = js.Any.fromFunction1(versionAtLeast))
+    if (!js.isUndefined(isChrome)) __obj.updateDynamic("isChrome")(isChrome.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFirefox)) __obj.updateDynamic("isFirefox")(isFirefox.asInstanceOf[js.Any])
+    if (!js.isUndefined(isKonqueror)) __obj.updateDynamic("isKonqueror")(isKonqueror.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMSIE)) __obj.updateDynamic("isMSIE")(isMSIE.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMac)) __obj.updateDynamic("isMac")(isMac.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOpera)) __obj.updateDynamic("isOpera")(isOpera.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPC)) __obj.updateDynamic("isPC")(isPC.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSafari)) __obj.updateDynamic("isSafari")(isSafari.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowserInfo]
   }
 }

@@ -27,7 +27,7 @@ object ImageInfo {
     sequence: Boolean,
     width: Double
   ): ImageInfo = {
-    val __obj = js.Dynamic.literal(datetime_original = datetime_original, dpi = dpi, format = format, geo_location = geo_location, height = height, orientation = orientation, sequence = sequence, width = width)
+    val __obj = js.Dynamic.literal(datetime_original = datetime_original.asInstanceOf[js.Any], dpi = dpi.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], geo_location = geo_location.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ImageInfo]
   }

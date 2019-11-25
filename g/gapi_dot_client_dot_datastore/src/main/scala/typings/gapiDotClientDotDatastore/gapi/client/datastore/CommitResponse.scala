@@ -22,7 +22,7 @@ object CommitResponse {
   def apply(indexUpdates: Int | Double = null, mutationResults: js.Array[MutationResult] = null): CommitResponse = {
     val __obj = js.Dynamic.literal()
     if (indexUpdates != null) __obj.updateDynamic("indexUpdates")(indexUpdates.asInstanceOf[js.Any])
-    if (mutationResults != null) __obj.updateDynamic("mutationResults")(mutationResults)
+    if (mutationResults != null) __obj.updateDynamic("mutationResults")(mutationResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitResponse]
   }
 }

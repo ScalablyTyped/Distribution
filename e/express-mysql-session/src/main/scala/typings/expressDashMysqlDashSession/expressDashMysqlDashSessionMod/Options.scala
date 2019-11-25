@@ -34,14 +34,14 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (checkExpirationInterval != null) __obj.updateDynamic("checkExpirationInterval")(checkExpirationInterval.asInstanceOf[js.Any])
     if (connectionLimit != null) __obj.updateDynamic("connectionLimit")(connectionLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(createDatabaseTable)) __obj.updateDynamic("createDatabaseTable")(createDatabaseTable)
-    if (database != null) __obj.updateDynamic("database")(database)
+    if (!js.isUndefined(createDatabaseTable)) __obj.updateDynamic("createDatabaseTable")(createDatabaseTable.asInstanceOf[js.Any])
+    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
     if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (password != null) __obj.updateDynamic("password")(password)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

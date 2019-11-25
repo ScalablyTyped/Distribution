@@ -20,7 +20,7 @@ trait NewShippingOptions extends js.Object {
 object NewShippingOptions {
   @scala.inline
   def apply(shippingOption: ShippingOption, updateWith: UpdateOptions => Unit): NewShippingOptions = {
-    val __obj = js.Dynamic.literal(shippingOption = shippingOption, updateWith = js.Any.fromFunction1(updateWith))
+    val __obj = js.Dynamic.literal(shippingOption = shippingOption.asInstanceOf[js.Any], updateWith = js.Any.fromFunction1(updateWith))
   
     __obj.asInstanceOf[NewShippingOptions]
   }

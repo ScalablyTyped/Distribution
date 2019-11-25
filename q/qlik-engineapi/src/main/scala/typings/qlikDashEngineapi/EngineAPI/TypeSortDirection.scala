@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait TypeSortDirection extends js.Object
 
+object TypeSortDirection {
+  @scala.inline
+  def `-1`: typings.qlikDashEngineapi.qlikDashEngineapiStrings.`-1` = this.cast("-1")
+  @scala.inline
+  def `0`: typings.qlikDashEngineapi.qlikDashEngineapiStrings.`0` = this.cast("0")
+  @scala.inline
+  def `1`: typings.qlikDashEngineapi.qlikDashEngineapiStrings.`1` = this.cast("1")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

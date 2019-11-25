@@ -71,12 +71,12 @@ object AirbnbRatingProps {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (defaultRating != null) __obj.updateDynamic("defaultRating")(defaultRating.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled)
+    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled.asInstanceOf[js.Any])
     if (onFinishRating != null) __obj.updateDynamic("onFinishRating")(js.Any.fromFunction1(onFinishRating))
-    if (reviews != null) __obj.updateDynamic("reviews")(reviews)
-    if (!js.isUndefined(showRating)) __obj.updateDynamic("showRating")(showRating)
+    if (reviews != null) __obj.updateDynamic("reviews")(reviews.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRating)) __obj.updateDynamic("showRating")(showRating.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (starStyle != null) __obj.updateDynamic("starStyle")(starStyle)
+    if (starStyle != null) __obj.updateDynamic("starStyle")(starStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[AirbnbRatingProps]
   }
 }

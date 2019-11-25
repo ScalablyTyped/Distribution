@@ -43,18 +43,18 @@ object LogConfig {
     use_sub_dir: `0` | `1` = null
   ): LogConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(IS_ODP)) __obj.updateDynamic("IS_ODP")(IS_ODP)
+    if (!js.isUndefined(IS_ODP)) __obj.updateDynamic("IS_ODP")(IS_ODP.asInstanceOf[js.Any])
     if (IS_OMP != null) __obj.updateDynamic("IS_OMP")(IS_OMP.asInstanceOf[js.Any])
-    if (LogIdName != null) __obj.updateDynamic("LogIdName")(LogIdName)
-    if (access != null) __obj.updateDynamic("access")(access)
-    if (access_error_log_path != null) __obj.updateDynamic("access_error_log_path")(access_error_log_path)
-    if (access_log_path != null) __obj.updateDynamic("access_log_path")(access_log_path)
+    if (LogIdName != null) __obj.updateDynamic("LogIdName")(LogIdName.asInstanceOf[js.Any])
+    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
+    if (access_error_log_path != null) __obj.updateDynamic("access_error_log_path")(access_error_log_path.asInstanceOf[js.Any])
+    if (access_log_path != null) __obj.updateDynamic("access_log_path")(access_log_path.asInstanceOf[js.Any])
     if (auto_rotate != null) __obj.updateDynamic("auto_rotate")(auto_rotate.asInstanceOf[js.Any])
-    if (data_path != null) __obj.updateDynamic("data_path")(data_path)
+    if (data_path != null) __obj.updateDynamic("data_path")(data_path.asInstanceOf[js.Any])
     if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (format_wf != null) __obj.updateDynamic("format_wf")(format_wf)
-    if (intLevel != null) __obj.updateDynamic("intLevel")(intLevel)
-    if (log_path != null) __obj.updateDynamic("log_path")(log_path)
+    if (format_wf != null) __obj.updateDynamic("format_wf")(format_wf.asInstanceOf[js.Any])
+    if (intLevel != null) __obj.updateDynamic("intLevel")(intLevel.asInstanceOf[js.Any])
+    if (log_path != null) __obj.updateDynamic("log_path")(log_path.asInstanceOf[js.Any])
     if (use_sub_dir != null) __obj.updateDynamic("use_sub_dir")(use_sub_dir.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogConfig]
   }

@@ -26,7 +26,7 @@ object IOptions {
   def apply[T](itemCmp: (/* first */ T, /* second */ T) => Boolean = null, values: StringDictionary[T] = null): IOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (itemCmp != null) __obj.updateDynamic("itemCmp")(js.Any.fromFunction2(itemCmp))
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions[T]]
   }
 }

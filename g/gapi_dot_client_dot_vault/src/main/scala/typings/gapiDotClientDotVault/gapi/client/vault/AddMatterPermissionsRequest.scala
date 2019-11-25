@@ -28,9 +28,9 @@ object AddMatterPermissionsRequest {
     sendEmails: js.UndefOr[Boolean] = js.undefined
   ): AddMatterPermissionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ccMe)) __obj.updateDynamic("ccMe")(ccMe)
-    if (matterPermission != null) __obj.updateDynamic("matterPermission")(matterPermission)
-    if (!js.isUndefined(sendEmails)) __obj.updateDynamic("sendEmails")(sendEmails)
+    if (!js.isUndefined(ccMe)) __obj.updateDynamic("ccMe")(ccMe.asInstanceOf[js.Any])
+    if (matterPermission != null) __obj.updateDynamic("matterPermission")(matterPermission.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendEmails)) __obj.updateDynamic("sendEmails")(sendEmails.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddMatterPermissionsRequest]
   }
 }

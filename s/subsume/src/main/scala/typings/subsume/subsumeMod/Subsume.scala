@@ -43,7 +43,7 @@ object Subsume {
     prefix: String,
     regex: RegExp
   ): Subsume = {
-    val __obj = js.Dynamic.literal(compose = js.Any.fromFunction1(compose), id = id, parse = js.Any.fromFunction1(parse), postfix = postfix, prefix = prefix, regex = regex)
+    val __obj = js.Dynamic.literal(compose = js.Any.fromFunction1(compose), id = id.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse), postfix = postfix.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], regex = regex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Subsume]
   }

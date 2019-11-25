@@ -16,7 +16,7 @@ trait _UnmarshalledCORSConfiguration extends _CORSConfiguration {
 object _UnmarshalledCORSConfiguration {
   @scala.inline
   def apply(CORSRules: js.Array[_UnmarshalledCORSRule]): _UnmarshalledCORSConfiguration = {
-    val __obj = js.Dynamic.literal(CORSRules = CORSRules)
+    val __obj = js.Dynamic.literal(CORSRules = CORSRules.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_UnmarshalledCORSConfiguration]
   }

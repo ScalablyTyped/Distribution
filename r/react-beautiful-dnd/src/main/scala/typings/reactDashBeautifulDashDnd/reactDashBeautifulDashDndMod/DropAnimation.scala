@@ -21,7 +21,7 @@ object DropAnimation {
     opacity: Int | Double = null,
     scale: Int | Double = null
   ): DropAnimation = {
-    val __obj = js.Dynamic.literal(curve = curve, duration = duration, moveTo = moveTo)
+    val __obj = js.Dynamic.literal(curve = curve.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], moveTo = moveTo.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropAnimation]

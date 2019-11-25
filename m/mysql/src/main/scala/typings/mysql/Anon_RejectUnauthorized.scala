@@ -12,7 +12,7 @@ object Anon_RejectUnauthorized {
   @scala.inline
   def apply(rejectUnauthorized: js.UndefOr[Boolean] = js.undefined): Anon_RejectUnauthorized = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_RejectUnauthorized]
   }
 }

@@ -23,7 +23,7 @@ object PullCallSymbolInfo {
     resolvedSignatures: js.Array[PullSignatureSymbol],
     targetSymbol: PullSymbol
   ): PullCallSymbolInfo = {
-    val __obj = js.Dynamic.literal(ast = ast, candidateSignature = candidateSignature, enclosingScopeSymbol = enclosingScopeSymbol, isConstructorCall = isConstructorCall, resolvedSignatures = resolvedSignatures, targetSymbol = targetSymbol)
+    val __obj = js.Dynamic.literal(ast = ast.asInstanceOf[js.Any], candidateSignature = candidateSignature.asInstanceOf[js.Any], enclosingScopeSymbol = enclosingScopeSymbol.asInstanceOf[js.Any], isConstructorCall = isConstructorCall.asInstanceOf[js.Any], resolvedSignatures = resolvedSignatures.asInstanceOf[js.Any], targetSymbol = targetSymbol.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PullCallSymbolInfo]
   }

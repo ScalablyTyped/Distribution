@@ -32,11 +32,11 @@ object OutputData {
     nodes_visited: js.Array[String] = null,
     nodes_visited_details: js.Array[DialogNodeVisitedDetails] = null
   ): OutputData = {
-    val __obj = js.Dynamic.literal(log_messages = log_messages, text = text)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (generic != null) __obj.updateDynamic("generic")(generic)
-    if (nodes_visited != null) __obj.updateDynamic("nodes_visited")(nodes_visited)
-    if (nodes_visited_details != null) __obj.updateDynamic("nodes_visited_details")(nodes_visited_details)
+    val __obj = js.Dynamic.literal(log_messages = log_messages.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (generic != null) __obj.updateDynamic("generic")(generic.asInstanceOf[js.Any])
+    if (nodes_visited != null) __obj.updateDynamic("nodes_visited")(nodes_visited.asInstanceOf[js.Any])
+    if (nodes_visited_details != null) __obj.updateDynamic("nodes_visited_details")(nodes_visited_details.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputData]
   }
 }

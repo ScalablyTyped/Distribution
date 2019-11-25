@@ -21,7 +21,7 @@ object InventoryLevel {
     location_id: Int | Double = null
   ): InventoryLevel = {
     val __obj = js.Dynamic.literal()
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
     if (available != null) __obj.updateDynamic("available")(available.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inventory_item_id != null) __obj.updateDynamic("inventory_item_id")(inventory_item_id.asInstanceOf[js.Any])

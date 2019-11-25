@@ -17,9 +17,9 @@ object FieldMappingV2 {
   @scala.inline
   def apply(input_fields: js.Array[InputField] = null, name: String = null, output_field: OutputField = null): FieldMappingV2 = {
     val __obj = js.Dynamic.literal()
-    if (input_fields != null) __obj.updateDynamic("input_fields")(input_fields)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (output_field != null) __obj.updateDynamic("output_field")(output_field)
+    if (input_fields != null) __obj.updateDynamic("input_fields")(input_fields.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (output_field != null) __obj.updateDynamic("output_field")(output_field.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldMappingV2]
   }
 }

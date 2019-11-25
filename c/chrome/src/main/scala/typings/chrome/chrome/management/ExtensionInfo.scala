@@ -124,15 +124,15 @@ object ExtensionInfo {
     launchType: String = null,
     updateUrl: String = null
   ): ExtensionInfo = {
-    val __obj = js.Dynamic.literal(description = description, enabled = enabled, hostPermissions = hostPermissions, id = id, installType = installType, isApp = isApp, mayDisable = mayDisable, name = name, offlineEnabled = offlineEnabled, optionsUrl = optionsUrl, permissions = permissions, shortName = shortName, version = version)
-    __obj.updateDynamic("type")(`type`)
-    if (appLaunchUrl != null) __obj.updateDynamic("appLaunchUrl")(appLaunchUrl)
-    if (availableLaunchTypes != null) __obj.updateDynamic("availableLaunchTypes")(availableLaunchTypes)
-    if (disabledReason != null) __obj.updateDynamic("disabledReason")(disabledReason)
-    if (homepageUrl != null) __obj.updateDynamic("homepageUrl")(homepageUrl)
-    if (icons != null) __obj.updateDynamic("icons")(icons)
-    if (launchType != null) __obj.updateDynamic("launchType")(launchType)
-    if (updateUrl != null) __obj.updateDynamic("updateUrl")(updateUrl)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], hostPermissions = hostPermissions.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], installType = installType.asInstanceOf[js.Any], isApp = isApp.asInstanceOf[js.Any], mayDisable = mayDisable.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], offlineEnabled = offlineEnabled.asInstanceOf[js.Any], optionsUrl = optionsUrl.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], shortName = shortName.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (appLaunchUrl != null) __obj.updateDynamic("appLaunchUrl")(appLaunchUrl.asInstanceOf[js.Any])
+    if (availableLaunchTypes != null) __obj.updateDynamic("availableLaunchTypes")(availableLaunchTypes.asInstanceOf[js.Any])
+    if (disabledReason != null) __obj.updateDynamic("disabledReason")(disabledReason.asInstanceOf[js.Any])
+    if (homepageUrl != null) __obj.updateDynamic("homepageUrl")(homepageUrl.asInstanceOf[js.Any])
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
+    if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])
+    if (updateUrl != null) __obj.updateDynamic("updateUrl")(updateUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionInfo]
   }
 }

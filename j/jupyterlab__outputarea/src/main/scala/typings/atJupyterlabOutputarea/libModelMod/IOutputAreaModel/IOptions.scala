@@ -33,9 +33,9 @@ object IOptions {
     values: js.Array[IOutput] = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (contentFactory != null) __obj.updateDynamic("contentFactory")(contentFactory)
-    if (!js.isUndefined(trusted)) __obj.updateDynamic("trusted")(trusted)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (contentFactory != null) __obj.updateDynamic("contentFactory")(contentFactory.asInstanceOf[js.Any])
+    if (!js.isUndefined(trusted)) __obj.updateDynamic("trusted")(trusted.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

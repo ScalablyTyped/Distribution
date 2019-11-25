@@ -52,14 +52,14 @@ object ValidatedEventUIParam {
     value: js.Any = null
   ): ValidatedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (fieldOptions != null) __obj.updateDynamic("fieldOptions")(fieldOptions)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (rule != null) __obj.updateDynamic("rule")(rule)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
-    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (fieldOptions != null) __obj.updateDynamic("fieldOptions")(fieldOptions.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
+    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidatedEventUIParam]
   }
 }

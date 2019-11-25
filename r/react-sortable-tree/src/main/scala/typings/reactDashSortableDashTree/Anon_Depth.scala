@@ -27,9 +27,9 @@ object Anon_Depth {
     expandParent: js.UndefOr[Boolean] = js.undefined,
     ignoreCollapsed: js.UndefOr[Boolean] = js.undefined
   ): Anon_Depth = {
-    val __obj = js.Dynamic.literal(depth = depth, getNodeKey = js.Any.fromFunction1(getNodeKey), minimumTreeIndex = minimumTreeIndex, newNode = newNode)
-    if (!js.isUndefined(expandParent)) __obj.updateDynamic("expandParent")(expandParent)
-    if (!js.isUndefined(ignoreCollapsed)) __obj.updateDynamic("ignoreCollapsed")(ignoreCollapsed)
+    val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], getNodeKey = js.Any.fromFunction1(getNodeKey), minimumTreeIndex = minimumTreeIndex.asInstanceOf[js.Any], newNode = newNode.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandParent)) __obj.updateDynamic("expandParent")(expandParent.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCollapsed)) __obj.updateDynamic("ignoreCollapsed")(ignoreCollapsed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Depth]
   }
 }

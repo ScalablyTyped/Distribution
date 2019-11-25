@@ -32,10 +32,10 @@ object IClientPublishOptions {
     dup: js.UndefOr[Boolean] = js.undefined,
     retain: js.UndefOr[Boolean] = js.undefined
   ): IClientPublishOptions = {
-    val __obj = js.Dynamic.literal(qos = qos)
+    val __obj = js.Dynamic.literal(qos = qos.asInstanceOf[js.Any])
     if (cbStorePut != null) __obj.updateDynamic("cbStorePut")(js.Any.fromFunction0(cbStorePut))
-    if (!js.isUndefined(dup)) __obj.updateDynamic("dup")(dup)
-    if (!js.isUndefined(retain)) __obj.updateDynamic("retain")(retain)
+    if (!js.isUndefined(dup)) __obj.updateDynamic("dup")(dup.asInstanceOf[js.Any])
+    if (!js.isUndefined(retain)) __obj.updateDynamic("retain")(retain.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientPublishOptions]
   }
 }

@@ -14,8 +14,8 @@ trait NvLogo extends js.Object {
 object NvLogo {
   @scala.inline
   def apply(data: js.Array[Double], height: Double, `type`: String, width: Double): NvLogo = {
-    val __obj = js.Dynamic.literal(data = data, height = height, width = width)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NvLogo]
   }
 }

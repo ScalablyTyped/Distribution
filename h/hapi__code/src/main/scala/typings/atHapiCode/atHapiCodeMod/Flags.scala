@@ -38,7 +38,7 @@ object Flags {
     part: AssertionChain[T],
     shallow: AssertionChain[T]
   ): Flags[T] = {
-    val __obj = js.Dynamic.literal(not = not, once = once, only = only, part = part, shallow = shallow)
+    val __obj = js.Dynamic.literal(not = not.asInstanceOf[js.Any], once = once.asInstanceOf[js.Any], only = only.asInstanceOf[js.Any], part = part.asInstanceOf[js.Any], shallow = shallow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Flags[T]]
   }

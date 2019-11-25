@@ -23,8 +23,8 @@ object SessionOptions {
     defaultTransactionOptions: TransactionOptions = null
   ): SessionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(causalConsistency)) __obj.updateDynamic("causalConsistency")(causalConsistency)
-    if (defaultTransactionOptions != null) __obj.updateDynamic("defaultTransactionOptions")(defaultTransactionOptions)
+    if (!js.isUndefined(causalConsistency)) __obj.updateDynamic("causalConsistency")(causalConsistency.asInstanceOf[js.Any])
+    if (defaultTransactionOptions != null) __obj.updateDynamic("defaultTransactionOptions")(defaultTransactionOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionOptions]
   }
 }

@@ -14,7 +14,7 @@ trait FetchDidSucceedCallbackParam extends js.Object {
 object FetchDidSucceedCallbackParam {
   @scala.inline
   def apply(request: Request, response: Response): FetchDidSucceedCallbackParam = {
-    val __obj = js.Dynamic.literal(request = request, response = response)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FetchDidSucceedCallbackParam]
   }

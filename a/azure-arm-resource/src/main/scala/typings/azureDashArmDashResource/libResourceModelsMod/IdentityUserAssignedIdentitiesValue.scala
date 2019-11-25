@@ -19,8 +19,8 @@ object IdentityUserAssignedIdentitiesValue {
   @scala.inline
   def apply(clientId: String = null, principalId: String = null): IdentityUserAssignedIdentitiesValue = {
     val __obj = js.Dynamic.literal()
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (principalId != null) __obj.updateDynamic("principalId")(principalId)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (principalId != null) __obj.updateDynamic("principalId")(principalId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityUserAssignedIdentitiesValue]
   }
 }

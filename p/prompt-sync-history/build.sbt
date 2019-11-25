@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "prompt-sync-history"
-version := "1.0.1-dt-20190322Z-a27a87"
+version := "1.0.1-dt-20190322Z-ff1e31"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "prompt-sync" % "4.1.4-dt-20190322Z-bb0c8a",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
+  "org.scalablytyped" %%% "prompt-sync" % "4.1.4-dt-20190322Z-7db372",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

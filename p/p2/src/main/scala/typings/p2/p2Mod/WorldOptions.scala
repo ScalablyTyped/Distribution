@@ -20,10 +20,10 @@ object WorldOptions {
     solver: Solver = null
   ): WorldOptions = {
     val __obj = js.Dynamic.literal()
-    if (broadphase != null) __obj.updateDynamic("broadphase")(broadphase)
-    if (gravity != null) __obj.updateDynamic("gravity")(gravity)
-    if (!js.isUndefined(islandSplit)) __obj.updateDynamic("islandSplit")(islandSplit)
-    if (solver != null) __obj.updateDynamic("solver")(solver)
+    if (broadphase != null) __obj.updateDynamic("broadphase")(broadphase.asInstanceOf[js.Any])
+    if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
+    if (!js.isUndefined(islandSplit)) __obj.updateDynamic("islandSplit")(islandSplit.asInstanceOf[js.Any])
+    if (solver != null) __obj.updateDynamic("solver")(solver.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorldOptions]
   }
 }

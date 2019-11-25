@@ -24,7 +24,7 @@ object DisbursementDetails {
     settlementCurrencyIsoCode: String,
     success: Boolean
   ): DisbursementDetails = {
-    val __obj = js.Dynamic.literal(disbursementDate = disbursementDate, fundsHeld = fundsHeld, settlementAmount = settlementAmount, settlementCurrencyExchangeRate = settlementCurrencyExchangeRate, settlementCurrencyIsoCode = settlementCurrencyIsoCode, success = success)
+    val __obj = js.Dynamic.literal(disbursementDate = disbursementDate.asInstanceOf[js.Any], fundsHeld = fundsHeld.asInstanceOf[js.Any], settlementAmount = settlementAmount.asInstanceOf[js.Any], settlementCurrencyExchangeRate = settlementCurrencyExchangeRate.asInstanceOf[js.Any], settlementCurrencyIsoCode = settlementCurrencyIsoCode.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DisbursementDetails]
   }

@@ -32,10 +32,10 @@ object UglifyCSSOptions {
     uglyComments: js.UndefOr[Boolean] = js.undefined
   ): UglifyCSSOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cuteComments)) __obj.updateDynamic("cuteComments")(cuteComments)
-    if (!js.isUndefined(expandVars)) __obj.updateDynamic("expandVars")(expandVars)
+    if (!js.isUndefined(cuteComments)) __obj.updateDynamic("cuteComments")(cuteComments.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandVars)) __obj.updateDynamic("expandVars")(expandVars.asInstanceOf[js.Any])
     if (maxLineLen != null) __obj.updateDynamic("maxLineLen")(maxLineLen.asInstanceOf[js.Any])
-    if (!js.isUndefined(uglyComments)) __obj.updateDynamic("uglyComments")(uglyComments)
+    if (!js.isUndefined(uglyComments)) __obj.updateDynamic("uglyComments")(uglyComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[UglifyCSSOptions]
   }
 }

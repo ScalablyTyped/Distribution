@@ -22,11 +22,11 @@ object OperatingSystem {
     name: String = null
   ): OperatingSystem = {
     val __obj = js.Dynamic.literal()
-    if (dartId != null) __obj.updateDynamic("dartId")(dartId)
-    if (!js.isUndefined(desktop)) __obj.updateDynamic("desktop")(desktop)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (!js.isUndefined(mobile)) __obj.updateDynamic("mobile")(mobile)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (dartId != null) __obj.updateDynamic("dartId")(dartId.asInstanceOf[js.Any])
+    if (!js.isUndefined(desktop)) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (!js.isUndefined(mobile)) __obj.updateDynamic("mobile")(mobile.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperatingSystem]
   }
 }

@@ -11,7 +11,7 @@ trait UsersCheckFollowingParams extends js.Object {
 object UsersCheckFollowingParams {
   @scala.inline
   def apply(username: String): UsersCheckFollowingParams = {
-    val __obj = js.Dynamic.literal(username = username)
+    val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UsersCheckFollowingParams]
   }

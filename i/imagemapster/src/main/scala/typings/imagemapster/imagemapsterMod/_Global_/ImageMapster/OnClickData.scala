@@ -22,8 +22,8 @@ trait OnClickData extends js.Object {
 object OnClickData {
   @scala.inline
   def apply(e: JQueryEventObject, key: String, selected: Boolean, listTarget: JQuery = null): OnClickData = {
-    val __obj = js.Dynamic.literal(e = e, key = key, selected = selected)
-    if (listTarget != null) __obj.updateDynamic("listTarget")(listTarget)
+    val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
+    if (listTarget != null) __obj.updateDynamic("listTarget")(listTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnClickData]
   }
 }

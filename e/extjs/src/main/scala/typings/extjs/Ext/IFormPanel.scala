@@ -106,11 +106,10 @@ object IFormPanel {
     initFieldAncestor: () => Unit = null,
     isDirty: () => Boolean = null,
     isValid: () => Boolean = null,
-    layout: js.Any = null,
     load: /* options */ js.UndefOr[js.Any] => Unit = null,
     loadRecord: /* record */ js.UndefOr[IModel] => IBasic = null,
-    onFieldErrorChange: (/* field */ js.UndefOr[ILabelable], /* error */ js.UndefOr[java.lang.String]) => Unit = null,
-    onFieldValidityChange: (/* field */ js.UndefOr[IField], /* valid */ js.UndefOr[Boolean]) => Unit = null,
+    onFieldErrorChange: (js.UndefOr[ILabelable], js.UndefOr[java.lang.String]) => Unit = null,
+    onFieldValidityChange: (js.UndefOr[IField], js.UndefOr[Boolean]) => Unit = null,
     pollForChanges: js.UndefOr[Boolean] = js.undefined,
     pollInterval: Int | Double = null,
     startPolling: /* interval */ js.UndefOr[Double] => Unit = null,
@@ -119,9 +118,9 @@ object IFormPanel {
     updateRecord: /* record */ js.UndefOr[IModel] => IBasic = null
   ): IFormPanel = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IPanel)
+    if (IPanel != null) js.Dynamic.global.Object.assign(__obj, IPanel)
     if (checkChange != null) __obj.updateDynamic("checkChange")(js.Any.fromFunction0(checkChange))
-    if (fieldDefaults != null) __obj.updateDynamic("fieldDefaults")(fieldDefaults)
+    if (fieldDefaults != null) __obj.updateDynamic("fieldDefaults")(fieldDefaults.asInstanceOf[js.Any])
     if (getForm != null) __obj.updateDynamic("getForm")(js.Any.fromFunction0(getForm))
     if (getRecord != null) __obj.updateDynamic("getRecord")(js.Any.fromFunction0(getRecord))
     if (getValues != null) __obj.updateDynamic("getValues")(js.Any.fromFunction4(getValues))
@@ -129,12 +128,11 @@ object IFormPanel {
     if (initFieldAncestor != null) __obj.updateDynamic("initFieldAncestor")(js.Any.fromFunction0(initFieldAncestor))
     if (isDirty != null) __obj.updateDynamic("isDirty")(js.Any.fromFunction0(isDirty))
     if (isValid != null) __obj.updateDynamic("isValid")(js.Any.fromFunction0(isValid))
-    if (layout != null) __obj.updateDynamic("layout")(layout)
     if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
     if (loadRecord != null) __obj.updateDynamic("loadRecord")(js.Any.fromFunction1(loadRecord))
     if (onFieldErrorChange != null) __obj.updateDynamic("onFieldErrorChange")(js.Any.fromFunction2(onFieldErrorChange))
     if (onFieldValidityChange != null) __obj.updateDynamic("onFieldValidityChange")(js.Any.fromFunction2(onFieldValidityChange))
-    if (!js.isUndefined(pollForChanges)) __obj.updateDynamic("pollForChanges")(pollForChanges)
+    if (!js.isUndefined(pollForChanges)) __obj.updateDynamic("pollForChanges")(pollForChanges.asInstanceOf[js.Any])
     if (pollInterval != null) __obj.updateDynamic("pollInterval")(pollInterval.asInstanceOf[js.Any])
     if (startPolling != null) __obj.updateDynamic("startPolling")(js.Any.fromFunction1(startPolling))
     if (stopPolling != null) __obj.updateDynamic("stopPolling")(js.Any.fromFunction0(stopPolling))

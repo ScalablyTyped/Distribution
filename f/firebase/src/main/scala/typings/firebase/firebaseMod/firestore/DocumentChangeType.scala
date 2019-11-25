@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait DocumentChangeType extends js.Object
 
+object DocumentChangeType {
+  @scala.inline
+  def added: typings.firebase.firebaseStrings.added = this.cast("added")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def modified: typings.firebase.firebaseStrings.modified = this.cast("modified")
+  @scala.inline
+  def removed: typings.firebase.firebaseStrings.removed = this.cast("removed")
+}
+

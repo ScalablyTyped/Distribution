@@ -44,9 +44,9 @@ object StubbyResponse {
     status: Double | String = null
   ): StubbyResponse = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (latency != null) __obj.updateDynamic("latency")(latency.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[StubbyResponse]

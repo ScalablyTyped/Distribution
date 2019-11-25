@@ -52,16 +52,16 @@ object ActionBeginEventArgs {
     `type`: String = null
   ): ActionBeginEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (currentFilteringobject != null) __obj.updateDynamic("currentFilteringobject")(currentFilteringobject)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (filterCollection != null) __obj.updateDynamic("filterCollection")(filterCollection)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (originalEventType != null) __obj.updateDynamic("originalEventType")(originalEventType)
-    if (primaryKeyValue != null) __obj.updateDynamic("primaryKeyValue")(primaryKeyValue)
-    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (currentFilteringobject != null) __obj.updateDynamic("currentFilteringobject")(currentFilteringobject.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (filterCollection != null) __obj.updateDynamic("filterCollection")(filterCollection.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (originalEventType != null) __obj.updateDynamic("originalEventType")(originalEventType.asInstanceOf[js.Any])
+    if (primaryKeyValue != null) __obj.updateDynamic("primaryKeyValue")(primaryKeyValue.asInstanceOf[js.Any])
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionBeginEventArgs]
   }
 }

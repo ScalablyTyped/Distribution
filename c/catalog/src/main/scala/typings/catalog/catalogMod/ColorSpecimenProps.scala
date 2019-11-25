@@ -12,7 +12,7 @@ trait ColorSpecimenProps extends js.Object {
 object ColorSpecimenProps {
   @scala.inline
   def apply(value: String, name: String | Double = null): ColorSpecimenProps = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorSpecimenProps]
   }

@@ -20,9 +20,9 @@ object ScopedCredentialOptions {
     timeoutSeconds: Int | Double = null
   ): ScopedCredentialOptions = {
     val __obj = js.Dynamic.literal()
-    if (excludeList != null) __obj.updateDynamic("excludeList")(excludeList)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (rpId != null) __obj.updateDynamic("rpId")(rpId)
+    if (excludeList != null) __obj.updateDynamic("excludeList")(excludeList.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (rpId != null) __obj.updateDynamic("rpId")(rpId.asInstanceOf[js.Any])
     if (timeoutSeconds != null) __obj.updateDynamic("timeoutSeconds")(timeoutSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScopedCredentialOptions]
   }

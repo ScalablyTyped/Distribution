@@ -23,7 +23,7 @@ object SphereMetricOptions {
   @scala.inline
   def apply(projection: Projection = null, radius: Int | Double = null): SphereMetricOptions = {
     val __obj = js.Dynamic.literal()
-    if (projection != null) __obj.updateDynamic("projection")(projection)
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     __obj.asInstanceOf[SphereMetricOptions]
   }

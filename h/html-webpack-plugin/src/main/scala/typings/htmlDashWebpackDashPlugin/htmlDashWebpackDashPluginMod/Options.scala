@@ -142,23 +142,23 @@ object Options {
     xhtml: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (chunks != null) __obj.updateDynamic("chunks")(chunks.asInstanceOf[js.Any])
     if (chunksSortMode != null) __obj.updateDynamic("chunksSortMode")(chunksSortMode.asInstanceOf[js.Any])
-    if (excludeChunks != null) __obj.updateDynamic("excludeChunks")(excludeChunks)
+    if (excludeChunks != null) __obj.updateDynamic("excludeChunks")(excludeChunks.asInstanceOf[js.Any])
     if (favicon != null) __obj.updateDynamic("favicon")(favicon.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (!js.isUndefined(hash)) __obj.updateDynamic("hash")(hash)
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(hash)) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
     if (inject != null) __obj.updateDynamic("inject")(inject.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (minify != null) __obj.updateDynamic("minify")(minify.asInstanceOf[js.Any])
-    if (!js.isUndefined(showErrors)) __obj.updateDynamic("showErrors")(showErrors)
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (!js.isUndefined(showErrors)) __obj.updateDynamic("showErrors")(showErrors.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     if (templateContent != null) __obj.updateDynamic("templateContent")(templateContent.asInstanceOf[js.Any])
     if (templateParameters != null) __obj.updateDynamic("templateParameters")(templateParameters.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (!js.isUndefined(xhtml)) __obj.updateDynamic("xhtml")(xhtml)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(xhtml)) __obj.updateDynamic("xhtml")(xhtml.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

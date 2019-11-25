@@ -27,11 +27,11 @@ object AtomMochaOptions {
     testSuffixes: js.Array[String] = null
   ): AtomMochaOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors)
-    if (!js.isUndefined(globalAtom)) __obj.updateDynamic("globalAtom")(globalAtom)
-    if (htmlTitle != null) __obj.updateDynamic("htmlTitle")(htmlTitle)
-    if (reporter != null) __obj.updateDynamic("reporter")(reporter)
-    if (testSuffixes != null) __obj.updateDynamic("testSuffixes")(testSuffixes)
+    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (!js.isUndefined(globalAtom)) __obj.updateDynamic("globalAtom")(globalAtom.asInstanceOf[js.Any])
+    if (htmlTitle != null) __obj.updateDynamic("htmlTitle")(htmlTitle.asInstanceOf[js.Any])
+    if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
+    if (testSuffixes != null) __obj.updateDynamic("testSuffixes")(testSuffixes.asInstanceOf[js.Any])
     __obj.asInstanceOf[AtomMochaOptions]
   }
 }

@@ -12,8 +12,8 @@ trait HoverPayload extends js.Object {
 object HoverPayload {
   @scala.inline
   def apply(targetIds: js.Array[Identifier], clientOffset: XYCoord = null): HoverPayload = {
-    val __obj = js.Dynamic.literal(targetIds = targetIds)
-    if (clientOffset != null) __obj.updateDynamic("clientOffset")(clientOffset)
+    val __obj = js.Dynamic.literal(targetIds = targetIds.asInstanceOf[js.Any])
+    if (clientOffset != null) __obj.updateDynamic("clientOffset")(clientOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[HoverPayload]
   }
 }

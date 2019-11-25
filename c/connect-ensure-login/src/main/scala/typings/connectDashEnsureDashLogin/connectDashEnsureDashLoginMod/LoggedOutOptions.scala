@@ -15,7 +15,7 @@ object LoggedOutOptions {
   @scala.inline
   def apply(redirectTo: String = null): LoggedOutOptions = {
     val __obj = js.Dynamic.literal()
-    if (redirectTo != null) __obj.updateDynamic("redirectTo")(redirectTo)
+    if (redirectTo != null) __obj.updateDynamic("redirectTo")(redirectTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggedOutOptions]
   }
 }

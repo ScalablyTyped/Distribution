@@ -23,9 +23,9 @@ object CustomTimeouts {
   @scala.inline
   def apply(create: String = null, delete: String = null, update: String = null): CustomTimeouts = {
     val __obj = js.Dynamic.literal()
-    if (create != null) __obj.updateDynamic("create")(create)
-    if (delete != null) __obj.updateDynamic("delete")(delete)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (create != null) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
+    if (delete != null) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomTimeouts]
   }
 }

@@ -13,7 +13,7 @@ trait Anon_AutoCorrected extends js.Object {
 object Anon_AutoCorrected {
   @scala.inline
   def apply(autoCorrected: Boolean, didYouMean: Boolean, value: String): Anon_AutoCorrected = {
-    val __obj = js.Dynamic.literal(autoCorrected = autoCorrected, didYouMean = didYouMean, value = value)
+    val __obj = js.Dynamic.literal(autoCorrected = autoCorrected.asInstanceOf[js.Any], didYouMean = didYouMean.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AutoCorrected]
   }

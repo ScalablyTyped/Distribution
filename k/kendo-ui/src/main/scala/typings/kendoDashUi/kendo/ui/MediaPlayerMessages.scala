@@ -24,12 +24,12 @@ object MediaPlayerMessages {
     unmute: String = null
   ): MediaPlayerMessages = {
     val __obj = js.Dynamic.literal()
-    if (fullscreen != null) __obj.updateDynamic("fullscreen")(fullscreen)
-    if (mute != null) __obj.updateDynamic("mute")(mute)
-    if (pause != null) __obj.updateDynamic("pause")(pause)
-    if (play != null) __obj.updateDynamic("play")(play)
-    if (quality != null) __obj.updateDynamic("quality")(quality)
-    if (unmute != null) __obj.updateDynamic("unmute")(unmute)
+    if (fullscreen != null) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
+    if (mute != null) __obj.updateDynamic("mute")(mute.asInstanceOf[js.Any])
+    if (pause != null) __obj.updateDynamic("pause")(pause.asInstanceOf[js.Any])
+    if (play != null) __obj.updateDynamic("play")(play.asInstanceOf[js.Any])
+    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (unmute != null) __obj.updateDynamic("unmute")(unmute.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaPlayerMessages]
   }
 }

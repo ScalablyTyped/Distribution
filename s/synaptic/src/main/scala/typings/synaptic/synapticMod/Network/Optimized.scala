@@ -13,7 +13,7 @@ trait Optimized extends js.Object {
 object Optimized {
   @scala.inline
   def apply(memory: Float64Array, ownership: Float64Array => Unit): Optimized = {
-    val __obj = js.Dynamic.literal(memory = memory, ownership = js.Any.fromFunction1(ownership))
+    val __obj = js.Dynamic.literal(memory = memory.asInstanceOf[js.Any], ownership = js.Any.fromFunction1(ownership))
   
     __obj.asInstanceOf[Optimized]
   }

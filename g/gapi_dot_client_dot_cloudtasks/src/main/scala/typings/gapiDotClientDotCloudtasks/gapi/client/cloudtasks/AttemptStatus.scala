@@ -49,10 +49,10 @@ object AttemptStatus {
     scheduleTime: String = null
   ): AttemptStatus = {
     val __obj = js.Dynamic.literal()
-    if (dispatchTime != null) __obj.updateDynamic("dispatchTime")(dispatchTime)
-    if (responseStatus != null) __obj.updateDynamic("responseStatus")(responseStatus)
-    if (responseTime != null) __obj.updateDynamic("responseTime")(responseTime)
-    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime)
+    if (dispatchTime != null) __obj.updateDynamic("dispatchTime")(dispatchTime.asInstanceOf[js.Any])
+    if (responseStatus != null) __obj.updateDynamic("responseStatus")(responseStatus.asInstanceOf[js.Any])
+    if (responseTime != null) __obj.updateDynamic("responseTime")(responseTime.asInstanceOf[js.Any])
+    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttemptStatus]
   }
 }

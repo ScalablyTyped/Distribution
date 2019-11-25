@@ -52,14 +52,14 @@ object NodeDroppingEventUIParam {
     position: js.Any = null
   ): NodeDroppingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (binding != null) __obj.updateDynamic("binding")(binding)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (draggable != null) __obj.updateDynamic("draggable")(draggable)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (helper != null) __obj.updateDynamic("helper")(helper)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (binding != null) __obj.updateDynamic("binding")(binding.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (draggable != null) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (helper != null) __obj.updateDynamic("helper")(helper.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeDroppingEventUIParam]
   }
 }

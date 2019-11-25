@@ -41,7 +41,7 @@ trait IOverlay extends js.Object {
 object IOverlay {
   @scala.inline
   def apply(hide: Double => Unit, node: HTMLDivElement, show: IOverlayGeometry => Unit): IOverlay = {
-    val __obj = js.Dynamic.literal(hide = js.Any.fromFunction1(hide), node = node, show = js.Any.fromFunction1(show))
+    val __obj = js.Dynamic.literal(hide = js.Any.fromFunction1(hide), node = node.asInstanceOf[js.Any], show = js.Any.fromFunction1(show))
   
     __obj.asInstanceOf[IOverlay]
   }

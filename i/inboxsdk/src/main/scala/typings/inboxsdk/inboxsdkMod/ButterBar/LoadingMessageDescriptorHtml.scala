@@ -20,11 +20,11 @@ object LoadingMessageDescriptorHtml {
     persistent: js.UndefOr[Boolean] = js.undefined,
     priority: Int | Double = null
   ): LoadingMessageDescriptorHtml = {
-    val __obj = js.Dynamic.literal(html = html)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(hideOnViewChanged)) __obj.updateDynamic("hideOnViewChanged")(hideOnViewChanged)
+    val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideOnViewChanged)) __obj.updateDynamic("hideOnViewChanged")(hideOnViewChanged.asInstanceOf[js.Any])
     if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)
+    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadingMessageDescriptorHtml]
   }

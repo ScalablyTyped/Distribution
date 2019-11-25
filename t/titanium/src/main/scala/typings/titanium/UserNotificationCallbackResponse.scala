@@ -20,7 +20,7 @@ object UserNotificationCallbackResponse {
   @scala.inline
   def apply(notifications: js.Array[UserNotificationDictionary] = null): UserNotificationCallbackResponse = {
     val __obj = js.Dynamic.literal()
-    if (notifications != null) __obj.updateDynamic("notifications")(notifications)
+    if (notifications != null) __obj.updateDynamic("notifications")(notifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserNotificationCallbackResponse]
   }
 }

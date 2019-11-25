@@ -11,7 +11,7 @@ trait IdMeta extends js.Object {
 object IdMeta {
   @scala.inline
   def apply(_id: DocumentId): IdMeta = {
-    val __obj = js.Dynamic.literal(_id = _id)
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IdMeta]
   }

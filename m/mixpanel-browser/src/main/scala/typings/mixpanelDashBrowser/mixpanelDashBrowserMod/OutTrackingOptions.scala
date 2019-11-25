@@ -18,7 +18,7 @@ object OutTrackingOptions {
     persistence_type: Persistence,
     secure_cookie: Boolean
   ): OutTrackingOptions = {
-    val __obj = js.Dynamic.literal(cookie_expiration = cookie_expiration, cookie_prefix = cookie_prefix, cross_subdomain_cookie = cross_subdomain_cookie, delete_user = delete_user, persistence_type = persistence_type, secure_cookie = secure_cookie)
+    val __obj = js.Dynamic.literal(cookie_expiration = cookie_expiration.asInstanceOf[js.Any], cookie_prefix = cookie_prefix.asInstanceOf[js.Any], cross_subdomain_cookie = cross_subdomain_cookie.asInstanceOf[js.Any], delete_user = delete_user.asInstanceOf[js.Any], persistence_type = persistence_type.asInstanceOf[js.Any], secure_cookie = secure_cookie.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OutTrackingOptions]
   }

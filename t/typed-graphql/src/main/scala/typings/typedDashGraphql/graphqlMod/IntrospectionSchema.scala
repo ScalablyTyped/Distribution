@@ -21,9 +21,9 @@ object IntrospectionSchema {
     mutationType: IntrospectionNamedTypeRef = null,
     subscriptionType: IntrospectionNamedTypeRef = null
   ): IntrospectionSchema = {
-    val __obj = js.Dynamic.literal(directives = directives, queryType = queryType, types = types)
-    if (mutationType != null) __obj.updateDynamic("mutationType")(mutationType)
-    if (subscriptionType != null) __obj.updateDynamic("subscriptionType")(subscriptionType)
+    val __obj = js.Dynamic.literal(directives = directives.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
+    if (mutationType != null) __obj.updateDynamic("mutationType")(mutationType.asInstanceOf[js.Any])
+    if (subscriptionType != null) __obj.updateDynamic("subscriptionType")(subscriptionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionSchema]
   }
 }

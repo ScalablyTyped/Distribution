@@ -12,7 +12,7 @@ trait IErrorPosition extends js.Object {
 object IErrorPosition {
   @scala.inline
   def apply(column: Double, line: Double): IErrorPosition = {
-    val __obj = js.Dynamic.literal(column = column, line = line)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IErrorPosition]
   }

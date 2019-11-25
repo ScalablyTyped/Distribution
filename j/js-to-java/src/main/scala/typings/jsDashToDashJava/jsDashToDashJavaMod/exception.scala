@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("js-to-java", "exception")
 @js.native
 object exception extends js.Object {
-  def apply(error: Error, className: String): js.Object = js.native
+  def apply(error: Error, className: java.lang.String): js.Object = js.native
 }
 

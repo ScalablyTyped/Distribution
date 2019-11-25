@@ -14,7 +14,7 @@ trait ICountResult extends js.Object {
 object ICountResult {
   @scala.inline
   def apply($promise: IPromise[_], result: Double): ICountResult = {
-    val __obj = js.Dynamic.literal($promise = $promise, result = result)
+    val __obj = js.Dynamic.literal($promise = $promise.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICountResult]
   }

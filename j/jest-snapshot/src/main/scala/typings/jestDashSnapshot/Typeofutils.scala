@@ -39,7 +39,7 @@ object Typeofutils {
     testNameToKey: (String, Double) => String,
     unescape: String => String
   ): Typeofutils = {
-    val __obj = js.Dynamic.literal(SNAPSHOT_GUIDE_LINK = SNAPSHOT_GUIDE_LINK, SNAPSHOT_VERSION = SNAPSHOT_VERSION, SNAPSHOT_VERSION_WARNING = SNAPSHOT_VERSION_WARNING, deepMerge = js.Any.fromFunction2(deepMerge), ensureDirectoryExists = js.Any.fromFunction1(ensureDirectoryExists), escapeBacktickString = js.Any.fromFunction1(escapeBacktickString), getSnapshotData = js.Any.fromFunction2(getSnapshotData), keyToTestName = js.Any.fromFunction1(keyToTestName), saveSnapshotFile = js.Any.fromFunction2(saveSnapshotFile), serialize = js.Any.fromFunction1(serialize), testNameToKey = js.Any.fromFunction2(testNameToKey), unescape = js.Any.fromFunction1(unescape))
+    val __obj = js.Dynamic.literal(SNAPSHOT_GUIDE_LINK = SNAPSHOT_GUIDE_LINK.asInstanceOf[js.Any], SNAPSHOT_VERSION = SNAPSHOT_VERSION.asInstanceOf[js.Any], SNAPSHOT_VERSION_WARNING = SNAPSHOT_VERSION_WARNING.asInstanceOf[js.Any], deepMerge = js.Any.fromFunction2(deepMerge), ensureDirectoryExists = js.Any.fromFunction1(ensureDirectoryExists), escapeBacktickString = js.Any.fromFunction1(escapeBacktickString), getSnapshotData = js.Any.fromFunction2(getSnapshotData), keyToTestName = js.Any.fromFunction1(keyToTestName), saveSnapshotFile = js.Any.fromFunction2(saveSnapshotFile), serialize = js.Any.fromFunction1(serialize), testNameToKey = js.Any.fromFunction2(testNameToKey), unescape = js.Any.fromFunction1(unescape))
   
     __obj.asInstanceOf[Typeofutils]
   }

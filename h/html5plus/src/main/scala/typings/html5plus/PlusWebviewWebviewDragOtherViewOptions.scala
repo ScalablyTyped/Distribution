@@ -37,7 +37,7 @@ object PlusWebviewWebviewDragOtherViewOptions {
   def apply(moveMode: follow | silent = null, view: String = null): PlusWebviewWebviewDragOtherViewOptions = {
     val __obj = js.Dynamic.literal()
     if (moveMode != null) __obj.updateDynamic("moveMode")(moveMode.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewDragOtherViewOptions]
   }
 }

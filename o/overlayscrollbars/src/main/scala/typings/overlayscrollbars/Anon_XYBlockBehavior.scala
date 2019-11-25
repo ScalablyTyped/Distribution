@@ -14,8 +14,8 @@ object Anon_XYBlockBehavior {
   @scala.inline
   def apply(x: BlockBehavior = null, y: BlockBehavior = null): Anon_XYBlockBehavior = {
     val __obj = js.Dynamic.literal()
-    if (x != null) __obj.updateDynamic("x")(x)
-    if (y != null) __obj.updateDynamic("y")(y)
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_XYBlockBehavior]
   }
 }

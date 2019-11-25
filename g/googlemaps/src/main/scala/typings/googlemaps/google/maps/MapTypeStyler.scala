@@ -28,13 +28,13 @@ object MapTypeStyler {
     weight: Int | Double = null
   ): MapTypeStyler = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (gamma != null) __obj.updateDynamic("gamma")(gamma.asInstanceOf[js.Any])
-    if (hue != null) __obj.updateDynamic("hue")(hue)
-    if (!js.isUndefined(invert_lightness)) __obj.updateDynamic("invert_lightness")(invert_lightness)
+    if (hue != null) __obj.updateDynamic("hue")(hue.asInstanceOf[js.Any])
+    if (!js.isUndefined(invert_lightness)) __obj.updateDynamic("invert_lightness")(invert_lightness.asInstanceOf[js.Any])
     if (lightness != null) __obj.updateDynamic("lightness")(lightness.asInstanceOf[js.Any])
     if (saturation != null) __obj.updateDynamic("saturation")(saturation.asInstanceOf[js.Any])
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapTypeStyler]
   }

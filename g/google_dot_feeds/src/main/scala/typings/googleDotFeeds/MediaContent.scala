@@ -39,8 +39,8 @@ object MediaContent {
     url: String,
     width: Double
   ): MediaContent = {
-    val __obj = js.Dynamic.literal(bitrate = bitrate, channels = channels, duration = duration, expression = expression, fileSize = fileSize, framerate = framerate, height = height, isDefault = isDefault, lang = lang, medium = medium, samplingrate = samplingrate, url = url, width = width)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(bitrate = bitrate.asInstanceOf[js.Any], channels = channels.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], fileSize = fileSize.asInstanceOf[js.Any], framerate = framerate.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], isDefault = isDefault.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], samplingrate = samplingrate.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaContent]
   }
 }

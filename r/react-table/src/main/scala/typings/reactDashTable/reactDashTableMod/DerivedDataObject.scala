@@ -22,8 +22,8 @@ object DerivedDataObject {
     _subRows: js.Any,
     StringDictionary: /* p */ StringDictionary[js.Any] = null
   ): DerivedDataObject = {
-    val __obj = js.Dynamic.literal(_index = _index, _nestingLevel = _nestingLevel, _original = _original, _subRows = _subRows)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(_index = _index.asInstanceOf[js.Any], _nestingLevel = _nestingLevel.asInstanceOf[js.Any], _original = _original.asInstanceOf[js.Any], _subRows = _subRows.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[DerivedDataObject]
   }
 }

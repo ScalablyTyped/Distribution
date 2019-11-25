@@ -17,7 +17,7 @@ object FieldsContentProperties {
   @scala.inline
   def apply(fieldInfos: js.Array[FieldInfoProperties] = null): FieldsContentProperties = {
     val __obj = js.Dynamic.literal()
-    if (fieldInfos != null) __obj.updateDynamic("fieldInfos")(fieldInfos)
+    if (fieldInfos != null) __obj.updateDynamic("fieldInfos")(fieldInfos.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldsContentProperties]
   }
 }

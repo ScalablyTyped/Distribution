@@ -19,8 +19,8 @@ object GetReportsResponse {
   ): GetReportsResponse = {
     val __obj = js.Dynamic.literal()
     if (queryCost != null) __obj.updateDynamic("queryCost")(queryCost.asInstanceOf[js.Any])
-    if (reports != null) __obj.updateDynamic("reports")(reports)
-    if (resourceQuotasRemaining != null) __obj.updateDynamic("resourceQuotasRemaining")(resourceQuotasRemaining)
+    if (reports != null) __obj.updateDynamic("reports")(reports.asInstanceOf[js.Any])
+    if (resourceQuotasRemaining != null) __obj.updateDynamic("resourceQuotasRemaining")(resourceQuotasRemaining.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetReportsResponse]
   }
 }

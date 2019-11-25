@@ -21,7 +21,7 @@ object FormatterCache {
     number: Record[String, NumberFormat],
     pluralRules: Record[String, PluralRules]
   ): FormatterCache = {
-    val __obj = js.Dynamic.literal(dateTime = dateTime, number = number, pluralRules = pluralRules)
+    val __obj = js.Dynamic.literal(dateTime = dateTime.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], pluralRules = pluralRules.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FormatterCache]
   }

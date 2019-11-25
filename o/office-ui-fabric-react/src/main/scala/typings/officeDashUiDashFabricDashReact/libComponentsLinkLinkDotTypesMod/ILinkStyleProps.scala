@@ -20,10 +20,10 @@ object ILinkStyleProps {
     isButton: js.UndefOr[Boolean] = js.undefined,
     isDisabled: js.UndefOr[Boolean] = js.undefined
   ): ILinkStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(isButton)) __obj.updateDynamic("isButton")(isButton)
-    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(isButton)) __obj.updateDynamic("isButton")(isButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILinkStyleProps]
   }
 }

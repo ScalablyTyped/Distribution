@@ -21,7 +21,7 @@ object TypeoftabCapture {
     getCapturedTabs: js.Function1[/* result */ js.Array[CaptureInfo], Unit] => Unit,
     onStatusChanged: CaptureStatusChangedEvent
   ): TypeoftabCapture = {
-    val __obj = js.Dynamic.literal(capture = js.Any.fromFunction2(capture), getCapturedTabs = js.Any.fromFunction1(getCapturedTabs), onStatusChanged = onStatusChanged)
+    val __obj = js.Dynamic.literal(capture = js.Any.fromFunction2(capture), getCapturedTabs = js.Any.fromFunction1(getCapturedTabs), onStatusChanged = onStatusChanged.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeoftabCapture]
   }

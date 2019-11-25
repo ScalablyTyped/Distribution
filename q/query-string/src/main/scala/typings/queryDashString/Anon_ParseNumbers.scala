@@ -12,7 +12,7 @@ trait Anon_ParseNumbers extends js.Object {
 object Anon_ParseNumbers {
   @scala.inline
   def apply(parseNumbers: `true`): Anon_ParseNumbers = {
-    val __obj = js.Dynamic.literal(parseNumbers = parseNumbers)
+    val __obj = js.Dynamic.literal(parseNumbers = parseNumbers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ParseNumbers]
   }

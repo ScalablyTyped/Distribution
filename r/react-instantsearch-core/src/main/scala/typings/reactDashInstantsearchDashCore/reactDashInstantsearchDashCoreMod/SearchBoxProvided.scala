@@ -16,7 +16,7 @@ trait SearchBoxProvided extends js.Object {
 object SearchBoxProvided {
   @scala.inline
   def apply(currentRefinement: String, isSearchStalled: Boolean, refine: /* repeated */ js.Any => js.Any): SearchBoxProvided = {
-    val __obj = js.Dynamic.literal(currentRefinement = currentRefinement, isSearchStalled = isSearchStalled, refine = js.Any.fromFunction1(refine))
+    val __obj = js.Dynamic.literal(currentRefinement = currentRefinement.asInstanceOf[js.Any], isSearchStalled = isSearchStalled.asInstanceOf[js.Any], refine = js.Any.fromFunction1(refine))
   
     __obj.asInstanceOf[SearchBoxProvided]
   }

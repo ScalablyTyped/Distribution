@@ -26,8 +26,8 @@ trait TouchData extends js.Object {
 object TouchData {
   @scala.inline
   def apply(changedTouches: js.Array[Touch], timeStamp: Double, touches: js.Array[Touch], `type`: String): TouchData = {
-    val __obj = js.Dynamic.literal(changedTouches = changedTouches, timeStamp = timeStamp, touches = touches)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(changedTouches = changedTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchData]
   }
 }

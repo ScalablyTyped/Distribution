@@ -15,8 +15,8 @@ trait Translation extends js.Object {
 object Translation {
   @scala.inline
   def apply(translation: String, part_of_speech: String = null): Translation = {
-    val __obj = js.Dynamic.literal(translation = translation)
-    if (part_of_speech != null) __obj.updateDynamic("part_of_speech")(part_of_speech)
+    val __obj = js.Dynamic.literal(translation = translation.asInstanceOf[js.Any])
+    if (part_of_speech != null) __obj.updateDynamic("part_of_speech")(part_of_speech.asInstanceOf[js.Any])
     __obj.asInstanceOf[Translation]
   }
 }

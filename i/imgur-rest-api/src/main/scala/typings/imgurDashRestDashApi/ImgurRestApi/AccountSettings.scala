@@ -30,7 +30,7 @@ object AccountSettings {
     pro_expiration: js.Any,
     public_images: Boolean
   ): AccountSettings = {
-    val __obj = js.Dynamic.literal(accepted_gallery_terms = accepted_gallery_terms, active_emails = active_emails, album_privacy = album_privacy, blocked_users = blocked_users, email = email, high_quality = high_quality, messaging_enabled = messaging_enabled, pro_expiration = pro_expiration, public_images = public_images)
+    val __obj = js.Dynamic.literal(accepted_gallery_terms = accepted_gallery_terms.asInstanceOf[js.Any], active_emails = active_emails.asInstanceOf[js.Any], album_privacy = album_privacy.asInstanceOf[js.Any], blocked_users = blocked_users.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], high_quality = high_quality.asInstanceOf[js.Any], messaging_enabled = messaging_enabled.asInstanceOf[js.Any], pro_expiration = pro_expiration.asInstanceOf[js.Any], public_images = public_images.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AccountSettings]
   }

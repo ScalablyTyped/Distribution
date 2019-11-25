@@ -14,8 +14,8 @@ object Anon_Lasso {
   @scala.inline
   def apply(lasso: default = null, sendOptions: js.Any = null): Anon_Lasso = {
     val __obj = js.Dynamic.literal()
-    if (lasso != null) __obj.updateDynamic("lasso")(lasso)
-    if (sendOptions != null) __obj.updateDynamic("sendOptions")(sendOptions)
+    if (lasso != null) __obj.updateDynamic("lasso")(lasso.asInstanceOf[js.Any])
+    if (sendOptions != null) __obj.updateDynamic("sendOptions")(sendOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Lasso]
   }
 }

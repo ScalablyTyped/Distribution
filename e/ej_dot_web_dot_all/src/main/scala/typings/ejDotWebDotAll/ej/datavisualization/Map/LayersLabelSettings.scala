@@ -41,11 +41,11 @@ object LayersLabelSettings {
     smartLabelSize: LabelSize | String = null
   ): LayersLabelSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableSmartLabel)) __obj.updateDynamic("enableSmartLabel")(enableSmartLabel)
-    if (font != null) __obj.updateDynamic("font")(font)
+    if (!js.isUndefined(enableSmartLabel)) __obj.updateDynamic("enableSmartLabel")(enableSmartLabel.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (labelLength != null) __obj.updateDynamic("labelLength")(labelLength.asInstanceOf[js.Any])
-    if (labelPath != null) __obj.updateDynamic("labelPath")(labelPath)
-    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels)
+    if (labelPath != null) __obj.updateDynamic("labelPath")(labelPath.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels.asInstanceOf[js.Any])
     if (smartLabelSize != null) __obj.updateDynamic("smartLabelSize")(smartLabelSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayersLabelSettings]
   }

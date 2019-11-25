@@ -25,10 +25,10 @@ object PaginationProps {
     dotStyle: StyleProp[ViewStyle] = null,
     vertical: js.UndefOr[Boolean] = js.undefined
   ): PaginationProps = {
-    val __obj = js.Dynamic.literal(count = count, current = current, styles = styles)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     if (dotActiveStyle != null) __obj.updateDynamic("dotActiveStyle")(dotActiveStyle.asInstanceOf[js.Any])
     if (dotStyle != null) __obj.updateDynamic("dotStyle")(dotStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationProps]
   }
 }

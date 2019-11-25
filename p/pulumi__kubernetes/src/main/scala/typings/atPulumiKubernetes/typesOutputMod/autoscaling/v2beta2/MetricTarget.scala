@@ -33,8 +33,8 @@ trait MetricTarget extends js.Object {
 object MetricTarget {
   @scala.inline
   def apply(averageUtilization: Double, averageValue: String, `type`: String, value: String): MetricTarget = {
-    val __obj = js.Dynamic.literal(averageUtilization = averageUtilization, averageValue = averageValue, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(averageUtilization = averageUtilization.asInstanceOf[js.Any], averageValue = averageValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricTarget]
   }
 }

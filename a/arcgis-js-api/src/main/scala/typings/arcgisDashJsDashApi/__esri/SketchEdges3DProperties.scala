@@ -26,7 +26,7 @@ object SketchEdges3DProperties {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (extensionLength != null) __obj.updateDynamic("extensionLength")(extensionLength.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchEdges3DProperties]
   }
 }

@@ -130,7 +130,7 @@ object Props {
     renderMode: canvas | svg | none = null,
     rotate: Int | Double = null
   ): Props = {
-    val __obj = js.Dynamic.literal(file = file)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
@@ -144,7 +144,7 @@ object Props {
     if (onPassword != null) __obj.updateDynamic("onPassword")(js.Any.fromFunction1(onPassword))
     if (onSourceError != null) __obj.updateDynamic("onSourceError")(js.Any.fromFunction1(onSourceError))
     if (onSourceSuccess != null) __obj.updateDynamic("onSourceSuccess")(js.Any.fromFunction0(onSourceSuccess))
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (renderMode != null) __obj.updateDynamic("renderMode")(renderMode.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]

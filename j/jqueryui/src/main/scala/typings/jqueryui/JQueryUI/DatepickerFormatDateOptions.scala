@@ -20,10 +20,10 @@ object DatepickerFormatDateOptions {
     monthNamesShort: js.Array[String] = null
   ): DatepickerFormatDateOptions = {
     val __obj = js.Dynamic.literal()
-    if (dayNames != null) __obj.updateDynamic("dayNames")(dayNames)
-    if (dayNamesShort != null) __obj.updateDynamic("dayNamesShort")(dayNamesShort)
-    if (monthNames != null) __obj.updateDynamic("monthNames")(monthNames)
-    if (monthNamesShort != null) __obj.updateDynamic("monthNamesShort")(monthNamesShort)
+    if (dayNames != null) __obj.updateDynamic("dayNames")(dayNames.asInstanceOf[js.Any])
+    if (dayNamesShort != null) __obj.updateDynamic("dayNamesShort")(dayNamesShort.asInstanceOf[js.Any])
+    if (monthNames != null) __obj.updateDynamic("monthNames")(monthNames.asInstanceOf[js.Any])
+    if (monthNamesShort != null) __obj.updateDynamic("monthNamesShort")(monthNamesShort.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatepickerFormatDateOptions]
   }
 }

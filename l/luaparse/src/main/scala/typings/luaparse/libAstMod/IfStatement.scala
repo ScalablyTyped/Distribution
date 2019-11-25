@@ -18,9 +18,9 @@ object IfStatement {
     `type`: typings.luaparse.luaparseStrings.IfStatement,
     loc: Anon_End = null
   ): IfStatement = {
-    val __obj = js.Dynamic.literal(clauses = clauses)
-    __obj.updateDynamic("type")(`type`)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(clauses = clauses.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[IfStatement]
   }
 }

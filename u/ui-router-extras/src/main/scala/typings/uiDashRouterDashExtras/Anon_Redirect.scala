@@ -13,7 +13,7 @@ trait Anon_Redirect extends js.Object {
 object Anon_Redirect {
   @scala.inline
   def apply(redirect: IRedirectParams, to: IRedirectParams): Anon_Redirect = {
-    val __obj = js.Dynamic.literal(redirect = redirect, to = to)
+    val __obj = js.Dynamic.literal(redirect = redirect.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Redirect]
   }

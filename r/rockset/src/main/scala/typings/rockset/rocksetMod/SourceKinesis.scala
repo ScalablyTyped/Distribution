@@ -14,8 +14,8 @@ trait SourceKinesis extends js.Object {
 object SourceKinesis {
   @scala.inline
   def apply(stream_name: String, aws_region: String = null): SourceKinesis = {
-    val __obj = js.Dynamic.literal(stream_name = stream_name)
-    if (aws_region != null) __obj.updateDynamic("aws_region")(aws_region)
+    val __obj = js.Dynamic.literal(stream_name = stream_name.asInstanceOf[js.Any])
+    if (aws_region != null) __obj.updateDynamic("aws_region")(aws_region.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceKinesis]
   }
 }

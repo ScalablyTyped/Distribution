@@ -14,7 +14,7 @@ trait MessageActionItem extends js.Object {
 object MessageActionItem {
   @scala.inline
   def apply(title: String): MessageActionItem = {
-    val __obj = js.Dynamic.literal(title = title)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MessageActionItem]
   }

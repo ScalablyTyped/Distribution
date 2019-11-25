@@ -12,7 +12,7 @@ trait Anon_Block extends js.Object {
 object Anon_Block {
   @scala.inline
   def apply(block: String, pseudo: String): Anon_Block = {
-    val __obj = js.Dynamic.literal(block = block, pseudo = pseudo)
+    val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], pseudo = pseudo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Block]
   }

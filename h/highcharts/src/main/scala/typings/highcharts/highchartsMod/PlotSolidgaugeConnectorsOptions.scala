@@ -72,12 +72,12 @@ object PlotSolidgaugeConnectorsOptions {
     `type`: PathfinderTypeValue = null
   ): PlotSolidgaugeConnectorsOptions = {
     val __obj = js.Dynamic.literal()
-    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle)
-    if (endMarker != null) __obj.updateDynamic("endMarker")(endMarker)
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
+    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
+    if (endMarker != null) __obj.updateDynamic("endMarker")(endMarker.asInstanceOf[js.Any])
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker)
-    if (startMarker != null) __obj.updateDynamic("startMarker")(startMarker)
+    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
+    if (startMarker != null) __obj.updateDynamic("startMarker")(startMarker.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotSolidgaugeConnectorsOptions]
   }

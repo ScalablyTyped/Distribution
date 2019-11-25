@@ -19,7 +19,7 @@ trait SmokeTestModel extends js.Object {
 object SmokeTestModel {
   @scala.inline
   def apply(defaultRegion: String, testCases: js.Array[SmokeTestCase], version: Double): SmokeTestModel = {
-    val __obj = js.Dynamic.literal(defaultRegion = defaultRegion, testCases = testCases, version = version)
+    val __obj = js.Dynamic.literal(defaultRegion = defaultRegion.asInstanceOf[js.Any], testCases = testCases.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SmokeTestModel]
   }

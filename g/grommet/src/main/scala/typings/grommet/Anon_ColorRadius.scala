@@ -16,8 +16,8 @@ object Anon_ColorRadius {
   def apply(color: ColorType = null, radius: String = null, width: String = null): Anon_ColorRadius = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius)
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorRadius]
   }
 }

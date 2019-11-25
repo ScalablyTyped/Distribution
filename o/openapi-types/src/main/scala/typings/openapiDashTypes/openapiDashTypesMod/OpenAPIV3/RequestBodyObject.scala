@@ -18,9 +18,9 @@ object RequestBodyObject {
     description: String = null,
     required: js.UndefOr[Boolean] = js.undefined
   ): RequestBodyObject = {
-    val __obj = js.Dynamic.literal(content = content)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyObject]
   }
 }

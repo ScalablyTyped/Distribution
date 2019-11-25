@@ -15,7 +15,7 @@ trait Anon_CodeShiftdown extends js.Object {
 object Anon_CodeShiftdown {
   @scala.inline
   def apply(code: String, shift_down: Double, shift_right: Double, shift_up: Double, width: Double): Anon_CodeShiftdown = {
-    val __obj = js.Dynamic.literal(code = code, shift_down = shift_down, shift_right = shift_right, shift_up = shift_up, width = width)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], shift_down = shift_down.asInstanceOf[js.Any], shift_right = shift_right.asInstanceOf[js.Any], shift_up = shift_up.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CodeShiftdown]
   }

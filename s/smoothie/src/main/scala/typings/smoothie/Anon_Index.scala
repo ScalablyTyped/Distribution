@@ -14,7 +14,7 @@ trait Anon_Index extends js.Object {
 object Anon_Index {
   @scala.inline
   def apply(index: Double, series: TimeSeries, value: Double): Anon_Index = {
-    val __obj = js.Dynamic.literal(index = index, series = series, value = value)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Index]
   }

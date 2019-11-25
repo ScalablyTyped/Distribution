@@ -32,7 +32,7 @@ trait ShortMove extends js.Object {
 object ShortMove {
   @scala.inline
   def apply(from: Square, to: Square, promotion: n | b | r | q = null): ShortMove = {
-    val __obj = js.Dynamic.literal(from = from, to = to)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     if (promotion != null) __obj.updateDynamic("promotion")(promotion.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShortMove]
   }

@@ -12,7 +12,7 @@ object Anon_IncludeSeparated {
   @scala.inline
   def apply(includeSeparated: js.UndefOr[Boolean] = js.undefined): Anon_IncludeSeparated = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeSeparated)) __obj.updateDynamic("includeSeparated")(includeSeparated)
+    if (!js.isUndefined(includeSeparated)) __obj.updateDynamic("includeSeparated")(includeSeparated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IncludeSeparated]
   }
 }

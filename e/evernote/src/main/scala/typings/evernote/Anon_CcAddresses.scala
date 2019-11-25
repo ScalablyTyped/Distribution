@@ -25,12 +25,12 @@ object Anon_CcAddresses {
     toAddresses: js.Array[String] = null
   ): Anon_CcAddresses = {
     val __obj = js.Dynamic.literal()
-    if (ccAddresses != null) __obj.updateDynamic("ccAddresses")(ccAddresses)
-    if (guid != null) __obj.updateDynamic("guid")(guid)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (note != null) __obj.updateDynamic("note")(note)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
-    if (toAddresses != null) __obj.updateDynamic("toAddresses")(toAddresses)
+    if (ccAddresses != null) __obj.updateDynamic("ccAddresses")(ccAddresses.asInstanceOf[js.Any])
+    if (guid != null) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (toAddresses != null) __obj.updateDynamic("toAddresses")(toAddresses.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CcAddresses]
   }
 }

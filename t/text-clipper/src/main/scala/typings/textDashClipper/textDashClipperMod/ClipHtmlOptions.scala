@@ -27,10 +27,10 @@ object ClipHtmlOptions {
     indicator: String = null,
     maxLines: Int | Double = null
   ): ClipHtmlOptions = {
-    val __obj = js.Dynamic.literal(html = html)
-    if (!js.isUndefined(breakWords)) __obj.updateDynamic("breakWords")(breakWords)
+    val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
+    if (!js.isUndefined(breakWords)) __obj.updateDynamic("breakWords")(breakWords.asInstanceOf[js.Any])
     if (imageWeight != null) __obj.updateDynamic("imageWeight")(imageWeight.asInstanceOf[js.Any])
-    if (indicator != null) __obj.updateDynamic("indicator")(indicator)
+    if (indicator != null) __obj.updateDynamic("indicator")(indicator.asInstanceOf[js.Any])
     if (maxLines != null) __obj.updateDynamic("maxLines")(maxLines.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClipHtmlOptions]
   }

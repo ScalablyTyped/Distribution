@@ -12,7 +12,7 @@ trait BlockMapFile extends FileChunks {
 object BlockMapFile {
   @scala.inline
   def apply(checksums: js.Array[String], name: String, offset: Double, sizes: js.Array[Double]): BlockMapFile = {
-    val __obj = js.Dynamic.literal(checksums = checksums, name = name, offset = offset, sizes = sizes)
+    val __obj = js.Dynamic.literal(checksums = checksums.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BlockMapFile]
   }

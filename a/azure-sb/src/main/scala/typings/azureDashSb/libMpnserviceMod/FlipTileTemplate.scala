@@ -27,7 +27,7 @@ object FlipTileTemplate {
     wideBackContent: String,
     wideBackgroundImage: String
   ): FlipTileTemplate = {
-    val __obj = js.Dynamic.literal(backBackgroundImage = backBackgroundImage, backContent = backContent, backTitle = backTitle, backgroundImage = backgroundImage, count = count, id = id, smallBackgroundImage = smallBackgroundImage, title = title, wideBackBackgroundImage = wideBackBackgroundImage, wideBackContent = wideBackContent, wideBackgroundImage = wideBackgroundImage)
+    val __obj = js.Dynamic.literal(backBackgroundImage = backBackgroundImage.asInstanceOf[js.Any], backContent = backContent.asInstanceOf[js.Any], backTitle = backTitle.asInstanceOf[js.Any], backgroundImage = backgroundImage.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], smallBackgroundImage = smallBackgroundImage.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], wideBackBackgroundImage = wideBackBackgroundImage.asInstanceOf[js.Any], wideBackContent = wideBackContent.asInstanceOf[js.Any], wideBackgroundImage = wideBackgroundImage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FlipTileTemplate]
   }

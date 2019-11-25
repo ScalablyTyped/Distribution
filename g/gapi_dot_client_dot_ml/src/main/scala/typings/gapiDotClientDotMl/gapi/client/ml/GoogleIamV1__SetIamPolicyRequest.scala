@@ -26,8 +26,8 @@ object GoogleIamV1__SetIamPolicyRequest {
   @scala.inline
   def apply(policy: GoogleIamV1__Policy = null, updateMask: String = null): GoogleIamV1__SetIamPolicyRequest = {
     val __obj = js.Dynamic.literal()
-    if (policy != null) __obj.updateDynamic("policy")(policy)
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask)
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleIamV1__SetIamPolicyRequest]
   }
 }

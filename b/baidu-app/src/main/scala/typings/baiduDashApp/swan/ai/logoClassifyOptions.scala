@@ -27,9 +27,9 @@ object logoClassifyOptions {
     fail: js.Any => Unit = null,
     success: /* res */ logoClassifyResponse => Unit = null
   ): logoClassifyOptions = {
-    val __obj = js.Dynamic.literal(image = image)
+    val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (!js.isUndefined(custom_lib)) __obj.updateDynamic("custom_lib")(custom_lib)
+    if (!js.isUndefined(custom_lib)) __obj.updateDynamic("custom_lib")(custom_lib.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[logoClassifyOptions]

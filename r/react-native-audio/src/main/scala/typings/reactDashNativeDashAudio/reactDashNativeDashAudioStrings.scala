@@ -27,7 +27,9 @@ object reactDashNativeDashAudioStrings {
   sealed trait aac extends AudioEncodingType
   
   @js.native
-  sealed trait aac_eld extends AudioEncodingAndroidType
+  sealed trait aac_eld
+    extends AudioEncodingAndroidType
+       with AudioEncodingType
   
   @js.native
   sealed trait alac extends AudioEncodingIOSType
@@ -39,13 +41,19 @@ object reactDashNativeDashAudioStrings {
   sealed trait amr extends AudioEncodingIOSType
   
   @js.native
-  sealed trait amr_nb extends AudioEncodingAndroidType
+  sealed trait amr_nb
+    extends AudioEncodingAndroidType
+       with AudioEncodingType
   
   @js.native
-  sealed trait amr_wb extends AudioEncodingAndroidType
+  sealed trait amr_wb
+    extends AudioEncodingAndroidType
+       with AudioEncodingType
   
   @js.native
-  sealed trait he_aac extends AudioEncodingAndroidType
+  sealed trait he_aac
+    extends AudioEncodingAndroidType
+       with AudioEncodingType
   
   @js.native
   sealed trait ima4 extends AudioEncodingIOSType
@@ -63,7 +71,9 @@ object reactDashNativeDashAudioStrings {
   sealed trait ulaw extends AudioEncodingIOSType
   
   @js.native
-  sealed trait vorbis extends AudioEncodingAndroidType
+  sealed trait vorbis
+    extends AudioEncodingAndroidType
+       with AudioEncodingType
   
   @scala.inline
   def High: High = "High".asInstanceOf[High]

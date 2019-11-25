@@ -13,7 +13,7 @@ trait Anon_ScopeDescriptor extends js.Object {
 object Anon_ScopeDescriptor {
   @scala.inline
   def apply(scopeDescriptor: ScopeDescriptor, value: js.Array[String]): Anon_ScopeDescriptor = {
-    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor, value = value)
+    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ScopeDescriptor]
   }

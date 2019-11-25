@@ -15,8 +15,8 @@ object PropertyOrder {
   @scala.inline
   def apply(direction: String = null, property: PropertyReference = null): PropertyOrder = {
     val __obj = js.Dynamic.literal()
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (property != null) __obj.updateDynamic("property")(property)
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyOrder]
   }
 }

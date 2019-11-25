@@ -28,14 +28,14 @@ object ProductStatusItemLevelIssue {
     servability: String = null
   ): ProductStatusItemLevelIssue = {
     val __obj = js.Dynamic.literal()
-    if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName)
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (destination != null) __obj.updateDynamic("destination")(destination)
-    if (detail != null) __obj.updateDynamic("detail")(detail)
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution)
-    if (servability != null) __obj.updateDynamic("servability")(servability)
+    if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
+    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
+    if (servability != null) __obj.updateDynamic("servability")(servability.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductStatusItemLevelIssue]
   }
 }

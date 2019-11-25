@@ -14,7 +14,7 @@ object Listener {
   @scala.inline
   def apply(next: js.Any => js.Object, StringDictionary: /* key */ StringDictionary[js.Any] = null): Listener = {
     val __obj = js.Dynamic.literal(next = js.Any.fromFunction1(next))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Listener]
   }
 }

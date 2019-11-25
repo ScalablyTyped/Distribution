@@ -26,8 +26,8 @@ object Anon_BodyA {
     shapeB: Shape,
     `type`: String
   ): Anon_BodyA = {
-    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, contactEquation = contactEquation, shapeA = shapeA, shapeB = shapeB)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(bodyA = bodyA.asInstanceOf[js.Any], bodyB = bodyB.asInstanceOf[js.Any], contactEquation = contactEquation.asInstanceOf[js.Any], shapeA = shapeA.asInstanceOf[js.Any], shapeB = shapeB.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BodyA]
   }
 }

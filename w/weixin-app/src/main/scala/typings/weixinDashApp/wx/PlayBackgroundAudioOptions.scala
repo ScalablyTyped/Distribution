@@ -24,12 +24,12 @@ object PlayBackgroundAudioOptions {
     success: js.Any => Unit = null,
     title: String = null
   ): PlayBackgroundAudioOptions = {
-    val __obj = js.Dynamic.literal(dataUrl = dataUrl)
+    val __obj = js.Dynamic.literal(dataUrl = dataUrl.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (coverImgUrl != null) __obj.updateDynamic("coverImgUrl")(coverImgUrl)
+    if (coverImgUrl != null) __obj.updateDynamic("coverImgUrl")(coverImgUrl.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayBackgroundAudioOptions]
   }
 }

@@ -37,7 +37,7 @@ object WindowOptions {
     width: Int | Double = null
   ): WindowOptions = {
     val __obj = js.Dynamic.literal()
-    if (bgcolor != null) __obj.updateDynamic("bgcolor")(bgcolor)
+    if (bgcolor != null) __obj.updateDynamic("bgcolor")(bgcolor.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])

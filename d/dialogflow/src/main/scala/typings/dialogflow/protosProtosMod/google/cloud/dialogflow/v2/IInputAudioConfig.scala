@@ -31,12 +31,12 @@ object IInputAudioConfig {
     singleUtterance: js.UndefOr[Boolean] = js.undefined
   ): IInputAudioConfig = {
     val __obj = js.Dynamic.literal()
-    if (audioEncoding != null) __obj.updateDynamic("audioEncoding")(audioEncoding)
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
-    if (modelVariant != null) __obj.updateDynamic("modelVariant")(modelVariant)
-    if (phraseHints != null) __obj.updateDynamic("phraseHints")(phraseHints)
+    if (audioEncoding != null) __obj.updateDynamic("audioEncoding")(audioEncoding.asInstanceOf[js.Any])
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (modelVariant != null) __obj.updateDynamic("modelVariant")(modelVariant.asInstanceOf[js.Any])
+    if (phraseHints != null) __obj.updateDynamic("phraseHints")(phraseHints.asInstanceOf[js.Any])
     if (sampleRateHertz != null) __obj.updateDynamic("sampleRateHertz")(sampleRateHertz.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleUtterance)) __obj.updateDynamic("singleUtterance")(singleUtterance)
+    if (!js.isUndefined(singleUtterance)) __obj.updateDynamic("singleUtterance")(singleUtterance.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInputAudioConfig]
   }
 }

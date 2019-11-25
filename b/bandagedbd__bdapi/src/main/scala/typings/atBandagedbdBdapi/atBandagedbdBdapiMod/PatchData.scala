@@ -23,7 +23,7 @@ object PatchData {
     returnValue: js.Any,
     thisObject: js.Object
   ): PatchData = {
-    val __obj = js.Dynamic.literal(CancelPatch = js.Any.fromFunction0(CancelPatch), callOriginalMethod = js.Any.fromFunction0(callOriginalMethod), methodArguments = methodArguments, originalMethod = js.Any.fromFunction0(originalMethod), returnValue = returnValue, thisObject = thisObject)
+    val __obj = js.Dynamic.literal(CancelPatch = js.Any.fromFunction0(CancelPatch), callOriginalMethod = js.Any.fromFunction0(callOriginalMethod), methodArguments = methodArguments.asInstanceOf[js.Any], originalMethod = js.Any.fromFunction0(originalMethod), returnValue = returnValue.asInstanceOf[js.Any], thisObject = thisObject.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PatchData]
   }

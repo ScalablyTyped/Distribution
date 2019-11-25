@@ -33,10 +33,10 @@ object EventData {
     display_rank: Int | Double = null,
     query_id: String = null
   ): EventData = {
-    val __obj = js.Dynamic.literal(collection_id = collection_id, document_id = document_id, environment_id = environment_id, session_token = session_token)
-    if (client_timestamp != null) __obj.updateDynamic("client_timestamp")(client_timestamp)
+    val __obj = js.Dynamic.literal(collection_id = collection_id.asInstanceOf[js.Any], document_id = document_id.asInstanceOf[js.Any], environment_id = environment_id.asInstanceOf[js.Any], session_token = session_token.asInstanceOf[js.Any])
+    if (client_timestamp != null) __obj.updateDynamic("client_timestamp")(client_timestamp.asInstanceOf[js.Any])
     if (display_rank != null) __obj.updateDynamic("display_rank")(display_rank.asInstanceOf[js.Any])
-    if (query_id != null) __obj.updateDynamic("query_id")(query_id)
+    if (query_id != null) __obj.updateDynamic("query_id")(query_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventData]
   }
 }

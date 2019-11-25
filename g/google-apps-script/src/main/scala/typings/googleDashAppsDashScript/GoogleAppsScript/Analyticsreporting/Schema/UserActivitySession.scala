@@ -24,12 +24,12 @@ object UserActivitySession {
     sessionId: String = null
   ): UserActivitySession = {
     val __obj = js.Dynamic.literal()
-    if (activities != null) __obj.updateDynamic("activities")(activities)
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (deviceCategory != null) __obj.updateDynamic("deviceCategory")(deviceCategory)
-    if (platform != null) __obj.updateDynamic("platform")(platform)
-    if (sessionDate != null) __obj.updateDynamic("sessionDate")(sessionDate)
-    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId)
+    if (activities != null) __obj.updateDynamic("activities")(activities.asInstanceOf[js.Any])
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (deviceCategory != null) __obj.updateDynamic("deviceCategory")(deviceCategory.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (sessionDate != null) __obj.updateDynamic("sessionDate")(sessionDate.asInstanceOf[js.Any])
+    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserActivitySession]
   }
 }

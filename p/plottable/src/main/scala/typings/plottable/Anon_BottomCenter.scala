@@ -16,7 +16,7 @@ trait Anon_BottomCenter extends js.Object {
 object Anon_BottomCenter {
   @scala.inline
   def apply(bottom: bottom, center: center, top: top): Anon_BottomCenter = {
-    val __obj = js.Dynamic.literal(bottom = bottom, center = center, top = top)
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BottomCenter]
   }

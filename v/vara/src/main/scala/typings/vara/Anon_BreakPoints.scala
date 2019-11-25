@@ -12,7 +12,7 @@ trait Anon_BreakPoints extends js.Object {
 object Anon_BreakPoints {
   @scala.inline
   def apply(breakPoints: js.Array[js.Array[String | Double]], width: Double): Anon_BreakPoints = {
-    val __obj = js.Dynamic.literal(breakPoints = breakPoints, width = width)
+    val __obj = js.Dynamic.literal(breakPoints = breakPoints.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BreakPoints]
   }

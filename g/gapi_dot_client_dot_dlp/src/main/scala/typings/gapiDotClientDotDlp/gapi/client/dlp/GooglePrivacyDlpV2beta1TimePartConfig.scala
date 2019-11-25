@@ -12,7 +12,7 @@ object GooglePrivacyDlpV2beta1TimePartConfig {
   @scala.inline
   def apply(partToExtract: String = null): GooglePrivacyDlpV2beta1TimePartConfig = {
     val __obj = js.Dynamic.literal()
-    if (partToExtract != null) __obj.updateDynamic("partToExtract")(partToExtract)
+    if (partToExtract != null) __obj.updateDynamic("partToExtract")(partToExtract.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1TimePartConfig]
   }
 }

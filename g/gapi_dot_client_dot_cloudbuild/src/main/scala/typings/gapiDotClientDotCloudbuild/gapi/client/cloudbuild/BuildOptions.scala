@@ -21,9 +21,9 @@ object BuildOptions {
     substitutionOption: String = null
   ): BuildOptions = {
     val __obj = js.Dynamic.literal()
-    if (requestedVerifyOption != null) __obj.updateDynamic("requestedVerifyOption")(requestedVerifyOption)
-    if (sourceProvenanceHash != null) __obj.updateDynamic("sourceProvenanceHash")(sourceProvenanceHash)
-    if (substitutionOption != null) __obj.updateDynamic("substitutionOption")(substitutionOption)
+    if (requestedVerifyOption != null) __obj.updateDynamic("requestedVerifyOption")(requestedVerifyOption.asInstanceOf[js.Any])
+    if (sourceProvenanceHash != null) __obj.updateDynamic("sourceProvenanceHash")(sourceProvenanceHash.asInstanceOf[js.Any])
+    if (substitutionOption != null) __obj.updateDynamic("substitutionOption")(substitutionOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildOptions]
   }
 }

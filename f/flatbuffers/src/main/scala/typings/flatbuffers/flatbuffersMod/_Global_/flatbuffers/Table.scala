@@ -12,8 +12,8 @@ trait Table extends js.Object {
 object Table {
   @scala.inline
   def apply(bb_pos: Double, bb: ByteBuffer = null): Table = {
-    val __obj = js.Dynamic.literal(bb_pos = bb_pos)
-    if (bb != null) __obj.updateDynamic("bb")(bb)
+    val __obj = js.Dynamic.literal(bb_pos = bb_pos.asInstanceOf[js.Any])
+    if (bb != null) __obj.updateDynamic("bb")(bb.asInstanceOf[js.Any])
     __obj.asInstanceOf[Table]
   }
 }

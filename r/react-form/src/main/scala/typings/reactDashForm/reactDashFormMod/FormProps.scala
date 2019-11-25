@@ -56,11 +56,11 @@ object FormProps {
     validateWarning: /* values */ FormValues => FormErrors = null
   ): FormProps = {
     val __obj = js.Dynamic.literal()
-    if (asyncValidators != null) __obj.updateDynamic("asyncValidators")(asyncValidators)
+    if (asyncValidators != null) __obj.updateDynamic("asyncValidators")(asyncValidators.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (defaultValues != null) __obj.updateDynamic("defaultValues")(defaultValues)
-    if (!js.isUndefined(dontPreventDefault)) __obj.updateDynamic("dontPreventDefault")(dontPreventDefault)
-    if (!js.isUndefined(dontValidateOnMount)) __obj.updateDynamic("dontValidateOnMount")(dontValidateOnMount)
+    if (defaultValues != null) __obj.updateDynamic("defaultValues")(defaultValues.asInstanceOf[js.Any])
+    if (!js.isUndefined(dontPreventDefault)) __obj.updateDynamic("dontPreventDefault")(dontPreventDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(dontValidateOnMount)) __obj.updateDynamic("dontValidateOnMount")(dontValidateOnMount.asInstanceOf[js.Any])
     if (formDidUpdate != null) __obj.updateDynamic("formDidUpdate")(js.Any.fromFunction1(formDidUpdate))
     if (getApi != null) __obj.updateDynamic("getApi")(js.Any.fromFunction1(getApi))
     if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction3(onSubmit))
@@ -69,7 +69,7 @@ object FormProps {
     if (preValidate != null) __obj.updateDynamic("preValidate")(js.Any.fromFunction1(preValidate))
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (validateError != null) __obj.updateDynamic("validateError")(js.Any.fromFunction1(validateError))
-    if (!js.isUndefined(validateOnSubmit)) __obj.updateDynamic("validateOnSubmit")(validateOnSubmit)
+    if (!js.isUndefined(validateOnSubmit)) __obj.updateDynamic("validateOnSubmit")(validateOnSubmit.asInstanceOf[js.Any])
     if (validateSuccess != null) __obj.updateDynamic("validateSuccess")(js.Any.fromFunction2(validateSuccess))
     if (validateWarning != null) __obj.updateDynamic("validateWarning")(js.Any.fromFunction1(validateWarning))
     __obj.asInstanceOf[FormProps]

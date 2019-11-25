@@ -18,9 +18,9 @@ object FrontloadConnectOptions {
     onUpdate: js.UndefOr[Boolean] = js.undefined
   ): FrontloadConnectOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(noServerRender)) __obj.updateDynamic("noServerRender")(noServerRender)
-    if (!js.isUndefined(onMount)) __obj.updateDynamic("onMount")(onMount)
-    if (!js.isUndefined(onUpdate)) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (!js.isUndefined(noServerRender)) __obj.updateDynamic("noServerRender")(noServerRender.asInstanceOf[js.Any])
+    if (!js.isUndefined(onMount)) __obj.updateDynamic("onMount")(onMount.asInstanceOf[js.Any])
+    if (!js.isUndefined(onUpdate)) __obj.updateDynamic("onUpdate")(onUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrontloadConnectOptions]
   }
 }

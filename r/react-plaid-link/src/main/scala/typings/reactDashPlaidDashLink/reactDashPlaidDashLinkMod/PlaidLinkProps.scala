@@ -113,18 +113,18 @@ object PlaidLinkProps {
     user: Anon_EmailAddress = null,
     webhook: String = null
   ): PlaidLinkProps = {
-    val __obj = js.Dynamic.literal(clientName = clientName, env = env.asInstanceOf[js.Any], onSuccess = js.Any.fromFunction2(onSuccess), product = product, publicKey = publicKey)
-    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (institution != null) __obj.updateDynamic("institution")(institution)
+    val __obj = js.Dynamic.literal(clientName = clientName.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], onSuccess = js.Any.fromFunction2(onSuccess), product = product.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
+    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (institution != null) __obj.updateDynamic("institution")(institution.asInstanceOf[js.Any])
     if (onEvent != null) __obj.updateDynamic("onEvent")(js.Any.fromFunction2(onEvent))
     if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction2(onExit))
     if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))
-    if (!js.isUndefined(selectAccount)) __obj.updateDynamic("selectAccount")(selectAccount)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (user != null) __obj.updateDynamic("user")(user)
-    if (webhook != null) __obj.updateDynamic("webhook")(webhook)
+    if (!js.isUndefined(selectAccount)) __obj.updateDynamic("selectAccount")(selectAccount.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+    if (webhook != null) __obj.updateDynamic("webhook")(webhook.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaidLinkProps]
   }
 }

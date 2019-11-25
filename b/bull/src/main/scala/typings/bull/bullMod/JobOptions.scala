@@ -82,7 +82,7 @@ object JobOptions {
     if (backoff != null) __obj.updateDynamic("backoff")(backoff.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
-    if (!js.isUndefined(lifo)) __obj.updateDynamic("lifo")(lifo)
+    if (!js.isUndefined(lifo)) __obj.updateDynamic("lifo")(lifo.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (removeOnComplete != null) __obj.updateDynamic("removeOnComplete")(removeOnComplete.asInstanceOf[js.Any])
     if (removeOnFail != null) __obj.updateDynamic("removeOnFail")(removeOnFail.asInstanceOf[js.Any])

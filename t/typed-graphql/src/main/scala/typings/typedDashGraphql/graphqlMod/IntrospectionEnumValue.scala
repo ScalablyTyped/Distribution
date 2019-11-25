@@ -14,9 +14,9 @@ trait IntrospectionEnumValue extends js.Object {
 object IntrospectionEnumValue {
   @scala.inline
   def apply(isDeprecated: Boolean, name: String, deprecationReason: String = null, description: String = null): IntrospectionEnumValue = {
-    val __obj = js.Dynamic.literal(isDeprecated = isDeprecated, name = name)
-    if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(isDeprecated = isDeprecated.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionEnumValue]
   }
 }

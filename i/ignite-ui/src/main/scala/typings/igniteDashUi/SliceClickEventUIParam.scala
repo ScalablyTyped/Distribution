@@ -19,8 +19,8 @@ object SliceClickEventUIParam {
   @scala.inline
   def apply(chart: js.Any = null, slice: js.Any = null): SliceClickEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (chart != null) __obj.updateDynamic("chart")(chart)
-    if (slice != null) __obj.updateDynamic("slice")(slice)
+    if (chart != null) __obj.updateDynamic("chart")(chart.asInstanceOf[js.Any])
+    if (slice != null) __obj.updateDynamic("slice")(slice.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliceClickEventUIParam]
   }
 }

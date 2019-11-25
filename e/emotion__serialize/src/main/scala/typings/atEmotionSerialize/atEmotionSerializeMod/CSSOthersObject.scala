@@ -11,7 +11,7 @@ object CSSOthersObject {
   @scala.inline
   def apply[MP](StringDictionary: /* propertiesName */ StringDictionary[Interpolation[MP]] = null): CSSOthersObject[MP] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[CSSOthersObject[MP]]
   }
 }

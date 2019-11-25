@@ -51,7 +51,7 @@ object Report {
     propertyIsEnumerable: PropertyKey => Boolean,
     title: String
   ): Report = {
-    val __obj = js.Dynamic.literal(constructor = constructor, description = description, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), hierarchy = hierarchy, id = id, name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), title = title)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), hierarchy = hierarchy.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Report]
   }

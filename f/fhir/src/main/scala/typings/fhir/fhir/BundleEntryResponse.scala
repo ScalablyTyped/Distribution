@@ -65,21 +65,21 @@ object BundleEntryResponse {
     modifierExtension: js.Array[Extension] = null,
     outcome: Resource = null
   ): BundleEntryResponse = {
-    val __obj = js.Dynamic.literal(status = status)
-    if (_etag != null) __obj.updateDynamic("_etag")(_etag)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_lastModified != null) __obj.updateDynamic("_lastModified")(_lastModified)
-    if (_location != null) __obj.updateDynamic("_location")(_location)
-    if (_status != null) __obj.updateDynamic("_status")(_status)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
-    if (outcome != null) __obj.updateDynamic("outcome")(outcome)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
+    if (_etag != null) __obj.updateDynamic("_etag")(_etag.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_lastModified != null) __obj.updateDynamic("_lastModified")(_lastModified.asInstanceOf[js.Any])
+    if (_location != null) __obj.updateDynamic("_location")(_location.asInstanceOf[js.Any])
+    if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
+    if (outcome != null) __obj.updateDynamic("outcome")(outcome.asInstanceOf[js.Any])
     __obj.asInstanceOf[BundleEntryResponse]
   }
 }

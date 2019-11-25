@@ -35,7 +35,7 @@ object Anon_Aperture {
     shutter_speed: String,
     title: String
   ): Anon_Aperture = {
-    val __obj = js.Dynamic.literal(aperture = aperture, camera = camera, caption = caption, copyright = copyright, created_timestamp = created_timestamp, credit = credit, focal_length = focal_length, iso = iso, keywords = keywords, orientation = orientation, shutter_speed = shutter_speed, title = title)
+    val __obj = js.Dynamic.literal(aperture = aperture.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], copyright = copyright.asInstanceOf[js.Any], created_timestamp = created_timestamp.asInstanceOf[js.Any], credit = credit.asInstanceOf[js.Any], focal_length = focal_length.asInstanceOf[js.Any], iso = iso.asInstanceOf[js.Any], keywords = keywords.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], shutter_speed = shutter_speed.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Aperture]
   }

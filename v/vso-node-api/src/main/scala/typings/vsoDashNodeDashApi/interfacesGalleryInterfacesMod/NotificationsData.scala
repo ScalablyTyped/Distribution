@@ -27,8 +27,8 @@ object NotificationsData {
     identities: StringDictionary[js.Any],
     `type`: NotificationTemplateType
   ): NotificationsData = {
-    val __obj = js.Dynamic.literal(data = data, identities = identities)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], identities = identities.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationsData]
   }
 }

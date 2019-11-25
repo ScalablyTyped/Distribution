@@ -22,9 +22,9 @@ object Packument {
     versions: Record[String, PackageVersion],
     StringDictionary: /* key */ StringDictionary[js.Any] = null
   ): Packument = {
-    val __obj = js.Dynamic.literal(name = name, versions = versions)
-    __obj.updateDynamic("dist-tags")(`dist-tags`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
+    __obj.updateDynamic("dist-tags")(`dist-tags`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Packument]
   }
 }

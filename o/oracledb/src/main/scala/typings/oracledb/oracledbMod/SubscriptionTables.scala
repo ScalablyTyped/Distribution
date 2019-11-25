@@ -26,8 +26,8 @@ trait SubscriptionTables extends js.Object {
 object SubscriptionTables {
   @scala.inline
   def apply(name: String, operation: Double, rows: js.Array[Anon_Operation] = null): SubscriptionTables = {
-    val __obj = js.Dynamic.literal(name = name, operation = operation)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionTables]
   }
 }

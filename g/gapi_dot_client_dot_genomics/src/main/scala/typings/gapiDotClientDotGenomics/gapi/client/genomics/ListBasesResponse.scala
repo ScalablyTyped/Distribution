@@ -25,9 +25,9 @@ object ListBasesResponse {
   @scala.inline
   def apply(nextPageToken: String = null, offset: String = null, sequence: String = null): ListBasesResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (sequence != null) __obj.updateDynamic("sequence")(sequence)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (sequence != null) __obj.updateDynamic("sequence")(sequence.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBasesResponse]
   }
 }

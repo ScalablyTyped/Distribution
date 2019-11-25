@@ -18,9 +18,9 @@ object Anon_PreserveAnnotations {
     preserveSelection: js.UndefOr[Boolean] = js.undefined
   ): Anon_PreserveAnnotations = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(preserveAnnotations)) __obj.updateDynamic("preserveAnnotations")(preserveAnnotations)
-    if (!js.isUndefined(preserveData)) __obj.updateDynamic("preserveData")(preserveData)
-    if (!js.isUndefined(preserveSelection)) __obj.updateDynamic("preserveSelection")(preserveSelection)
+    if (!js.isUndefined(preserveAnnotations)) __obj.updateDynamic("preserveAnnotations")(preserveAnnotations.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveData)) __obj.updateDynamic("preserveData")(preserveData.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveSelection)) __obj.updateDynamic("preserveSelection")(preserveSelection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PreserveAnnotations]
   }
 }

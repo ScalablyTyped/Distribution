@@ -20,10 +20,10 @@ object Options {
     uuidVersion: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName)
-    if (headerName != null) __obj.updateDynamic("headerName")(headerName)
-    if (!js.isUndefined(setHeader)) __obj.updateDynamic("setHeader")(setHeader)
-    if (uuidVersion != null) __obj.updateDynamic("uuidVersion")(uuidVersion)
+    if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName.asInstanceOf[js.Any])
+    if (headerName != null) __obj.updateDynamic("headerName")(headerName.asInstanceOf[js.Any])
+    if (!js.isUndefined(setHeader)) __obj.updateDynamic("setHeader")(setHeader.asInstanceOf[js.Any])
+    if (uuidVersion != null) __obj.updateDynamic("uuidVersion")(uuidVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

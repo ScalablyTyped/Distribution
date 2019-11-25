@@ -18,9 +18,9 @@ object AsyncOptions {
   @scala.inline
   def apply(all: js.UndefOr[Boolean] = js.undefined, path: String = null, pathExt: String = null): AsyncOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (pathExt != null) __obj.updateDynamic("pathExt")(pathExt)
+    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (pathExt != null) __obj.updateDynamic("pathExt")(pathExt.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncOptions]
   }
 }

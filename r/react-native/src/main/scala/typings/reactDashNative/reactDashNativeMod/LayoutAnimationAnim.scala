@@ -28,9 +28,9 @@ object LayoutAnimationAnim {
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (initialVelocity != null) __obj.updateDynamic("initialVelocity")(initialVelocity.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property)
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     if (springDamping != null) __obj.updateDynamic("springDamping")(springDamping.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutAnimationAnim]
   }
 }

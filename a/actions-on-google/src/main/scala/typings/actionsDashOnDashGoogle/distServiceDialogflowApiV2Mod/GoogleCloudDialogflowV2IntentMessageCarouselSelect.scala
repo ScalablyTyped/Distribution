@@ -12,7 +12,7 @@ object GoogleCloudDialogflowV2IntentMessageCarouselSelect {
   @scala.inline
   def apply(items: js.Array[GoogleCloudDialogflowV2IntentMessageCarouselSelectItem] = null): GoogleCloudDialogflowV2IntentMessageCarouselSelect = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentMessageCarouselSelect]
   }
 }

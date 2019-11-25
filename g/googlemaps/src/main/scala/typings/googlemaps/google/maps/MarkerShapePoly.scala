@@ -17,8 +17,8 @@ trait MarkerShapePoly extends MarkerShape {
 object MarkerShapePoly {
   @scala.inline
   def apply(coords: MarkerShapePolyCoords, `type`: poly): MarkerShapePoly = {
-    val __obj = js.Dynamic.literal(coords = coords)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerShapePoly]
   }
 }

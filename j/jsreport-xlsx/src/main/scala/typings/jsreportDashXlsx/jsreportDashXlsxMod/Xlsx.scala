@@ -11,7 +11,7 @@ trait Xlsx extends js.Object {
 object Xlsx {
   @scala.inline
   def apply(shortid: String): Xlsx = {
-    val __obj = js.Dynamic.literal(shortid = shortid)
+    val __obj = js.Dynamic.literal(shortid = shortid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Xlsx]
   }

@@ -94,13 +94,13 @@ object SortablePaneProps {
     springConfig: SpringHelperConfig = null,
     style: CSSProperties = null
   ): SortablePaneProps = {
-    val __obj = js.Dynamic.literal(children = children)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (defaultOrder != null) __obj.updateDynamic("defaultOrder")(defaultOrder)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (defaultOrder != null) __obj.updateDynamic("defaultOrder")(defaultOrder.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableEffect)) __obj.updateDynamic("disableEffect")(disableEffect)
-    if (dragHandleClassName != null) __obj.updateDynamic("dragHandleClassName")(dragHandleClassName)
-    if (!js.isUndefined(isSortable)) __obj.updateDynamic("isSortable")(isSortable)
+    if (!js.isUndefined(disableEffect)) __obj.updateDynamic("disableEffect")(disableEffect.asInstanceOf[js.Any])
+    if (dragHandleClassName != null) __obj.updateDynamic("dragHandleClassName")(dragHandleClassName.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSortable)) __obj.updateDynamic("isSortable")(isSortable.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction3(onDragStart))
     if (onDragStop != null) __obj.updateDynamic("onDragStop")(js.Any.fromFunction4(onDragStop))
@@ -108,9 +108,9 @@ object SortablePaneProps {
     if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction5(onResize))
     if (onResizeStart != null) __obj.updateDynamic("onResizeStart")(js.Any.fromFunction3(onResizeStart))
     if (onResizeStop != null) __obj.updateDynamic("onResizeStop")(js.Any.fromFunction5(onResizeStop))
-    if (order != null) __obj.updateDynamic("order")(order)
-    if (springConfig != null) __obj.updateDynamic("springConfig")(springConfig)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (springConfig != null) __obj.updateDynamic("springConfig")(springConfig.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortablePaneProps]
   }
 }

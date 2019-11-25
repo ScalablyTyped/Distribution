@@ -13,7 +13,7 @@ trait Anon_ApiStateAnonCustomQueryParamsInfo extends js.Object {
 object Anon_ApiStateAnonCustomQueryParamsInfo {
   @scala.inline
   def apply(api: SubAPI, state: Anon_CustomQueryParamsInfo): Anon_ApiStateAnonCustomQueryParamsInfo = {
-    val __obj = js.Dynamic.literal(api = api, state = state)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ApiStateAnonCustomQueryParamsInfo]
   }

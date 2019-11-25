@@ -23,10 +23,10 @@ object Video {
     mime_type: String = null,
     thumb: PhotoSize = null
   ): Video = {
-    val __obj = js.Dynamic.literal(duration = duration, file_id = file_id, height = height, width = width)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], file_id = file_id.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (file_size != null) __obj.updateDynamic("file_size")(file_size.asInstanceOf[js.Any])
-    if (mime_type != null) __obj.updateDynamic("mime_type")(mime_type)
-    if (thumb != null) __obj.updateDynamic("thumb")(thumb)
+    if (mime_type != null) __obj.updateDynamic("mime_type")(mime_type.asInstanceOf[js.Any])
+    if (thumb != null) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])
     __obj.asInstanceOf[Video]
   }
 }

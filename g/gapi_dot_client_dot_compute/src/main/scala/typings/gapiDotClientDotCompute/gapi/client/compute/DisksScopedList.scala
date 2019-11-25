@@ -16,8 +16,8 @@ object DisksScopedList {
   @scala.inline
   def apply(disks: js.Array[Disk] = null, warning: Anon_Code = null): DisksScopedList = {
     val __obj = js.Dynamic.literal()
-    if (disks != null) __obj.updateDynamic("disks")(disks)
-    if (warning != null) __obj.updateDynamic("warning")(warning)
+    if (disks != null) __obj.updateDynamic("disks")(disks.asInstanceOf[js.Any])
+    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisksScopedList]
   }
 }

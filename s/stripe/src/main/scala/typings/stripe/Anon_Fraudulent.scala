@@ -21,7 +21,7 @@ object Anon_Fraudulent {
   @scala.inline
   def apply(stripe_report: fraudulent = null, user_report: fraudulent | safe = null): Anon_Fraudulent = {
     val __obj = js.Dynamic.literal()
-    if (stripe_report != null) __obj.updateDynamic("stripe_report")(stripe_report)
+    if (stripe_report != null) __obj.updateDynamic("stripe_report")(stripe_report.asInstanceOf[js.Any])
     if (user_report != null) __obj.updateDynamic("user_report")(user_report.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Fraudulent]
   }

@@ -28,7 +28,7 @@ object Anon_7 {
     preventDismissOnResize: Boolean,
     preventDismissOnScroll: Boolean
   ): Anon_7 = {
-    val __obj = js.Dynamic.literal(beakWidth = beakWidth, directionalHint = directionalHint, gapSpace = gapSpace, isBeakVisible = isBeakVisible, minPagePadding = minPagePadding, preventDismissOnLostFocus = preventDismissOnLostFocus, preventDismissOnResize = preventDismissOnResize, preventDismissOnScroll = preventDismissOnScroll)
+    val __obj = js.Dynamic.literal(beakWidth = beakWidth.asInstanceOf[js.Any], directionalHint = directionalHint.asInstanceOf[js.Any], gapSpace = gapSpace.asInstanceOf[js.Any], isBeakVisible = isBeakVisible.asInstanceOf[js.Any], minPagePadding = minPagePadding.asInstanceOf[js.Any], preventDismissOnLostFocus = preventDismissOnLostFocus.asInstanceOf[js.Any], preventDismissOnResize = preventDismissOnResize.asInstanceOf[js.Any], preventDismissOnScroll = preventDismissOnScroll.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_7]
   }

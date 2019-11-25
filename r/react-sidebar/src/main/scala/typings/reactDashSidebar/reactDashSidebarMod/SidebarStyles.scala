@@ -24,11 +24,11 @@ object SidebarStyles {
     sidebar: Partial[CSSStyleDeclaration] = null
   ): SidebarStyles = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (dragHandle != null) __obj.updateDynamic("dragHandle")(dragHandle)
-    if (overlay != null) __obj.updateDynamic("overlay")(overlay)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (sidebar != null) __obj.updateDynamic("sidebar")(sidebar)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (dragHandle != null) __obj.updateDynamic("dragHandle")(dragHandle.asInstanceOf[js.Any])
+    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (sidebar != null) __obj.updateDynamic("sidebar")(sidebar.asInstanceOf[js.Any])
     __obj.asInstanceOf[SidebarStyles]
   }
 }

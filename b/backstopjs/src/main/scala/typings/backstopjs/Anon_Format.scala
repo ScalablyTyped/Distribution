@@ -14,9 +14,9 @@ object Anon_Format {
   @scala.inline
   def apply(format: String = null, testReportFileName: String = null, testSuiteName: String = null): Anon_Format = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (testReportFileName != null) __obj.updateDynamic("testReportFileName")(testReportFileName)
-    if (testSuiteName != null) __obj.updateDynamic("testSuiteName")(testSuiteName)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (testReportFileName != null) __obj.updateDynamic("testReportFileName")(testReportFileName.asInstanceOf[js.Any])
+    if (testSuiteName != null) __obj.updateDynamic("testSuiteName")(testSuiteName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Format]
   }
 }

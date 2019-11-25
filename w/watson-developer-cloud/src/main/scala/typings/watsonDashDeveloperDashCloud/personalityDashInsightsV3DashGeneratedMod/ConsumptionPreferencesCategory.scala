@@ -21,7 +21,7 @@ object ConsumptionPreferencesCategory {
     consumption_preferences: js.Array[ConsumptionPreferences],
     name: String
   ): ConsumptionPreferencesCategory = {
-    val __obj = js.Dynamic.literal(consumption_preference_category_id = consumption_preference_category_id, consumption_preferences = consumption_preferences, name = name)
+    val __obj = js.Dynamic.literal(consumption_preference_category_id = consumption_preference_category_id.asInstanceOf[js.Any], consumption_preferences = consumption_preferences.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConsumptionPreferencesCategory]
   }

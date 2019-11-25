@@ -23,7 +23,7 @@ object ObjectStat {
     LinksSize: Double,
     NumLinks: Double
   ): ObjectStat = {
-    val __obj = js.Dynamic.literal(BlockSize = BlockSize, CumulativeSize = CumulativeSize, DataSize = DataSize, Hash = Hash.asInstanceOf[js.Any], LinksSize = LinksSize, NumLinks = NumLinks)
+    val __obj = js.Dynamic.literal(BlockSize = BlockSize.asInstanceOf[js.Any], CumulativeSize = CumulativeSize.asInstanceOf[js.Any], DataSize = DataSize.asInstanceOf[js.Any], Hash = Hash.asInstanceOf[js.Any], LinksSize = LinksSize.asInstanceOf[js.Any], NumLinks = NumLinks.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ObjectStat]
   }

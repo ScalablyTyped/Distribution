@@ -28,13 +28,13 @@ object Anon_CustomFds {
     timeout: Int | Double = null
   ): Anon_CustomFds = {
     val __obj = js.Dynamic.literal()
-    if (customFds != null) __obj.updateDynamic("customFds")(customFds)
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (env != null) __obj.updateDynamic("env")(env)
-    if (killSignal != null) __obj.updateDynamic("killSignal")(killSignal)
+    if (customFds != null) __obj.updateDynamic("customFds")(customFds.asInstanceOf[js.Any])
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (killSignal != null) __obj.updateDynamic("killSignal")(killSignal.asInstanceOf[js.Any])
     if (maxBuffer != null) __obj.updateDynamic("maxBuffer")(maxBuffer.asInstanceOf[js.Any])
-    if (stdio != null) __obj.updateDynamic("stdio")(stdio)
+    if (stdio != null) __obj.updateDynamic("stdio")(stdio.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CustomFds]
   }

@@ -17,9 +17,9 @@ object PropertyFilter {
   @scala.inline
   def apply(op: String = null, property: PropertyReference = null, value: Value = null): PropertyFilter = {
     val __obj = js.Dynamic.literal()
-    if (op != null) __obj.updateDynamic("op")(op)
-    if (property != null) __obj.updateDynamic("property")(property)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (op != null) __obj.updateDynamic("op")(op.asInstanceOf[js.Any])
+    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyFilter]
   }
 }

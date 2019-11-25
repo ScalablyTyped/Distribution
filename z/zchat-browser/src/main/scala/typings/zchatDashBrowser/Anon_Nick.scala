@@ -15,8 +15,8 @@ trait Anon_Nick extends _EventData {
 object Anon_Nick {
   @scala.inline
   def apply(nick: String, `type`: typing, typing: Boolean): Anon_Nick = {
-    val __obj = js.Dynamic.literal(nick = nick, typing = typing)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(nick = nick.asInstanceOf[js.Any], typing = typing.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Nick]
   }
 }

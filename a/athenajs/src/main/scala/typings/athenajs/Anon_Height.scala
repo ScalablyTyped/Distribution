@@ -23,8 +23,8 @@ object Anon_Height {
     hitBox: Anon_X = null,
     plane: Int | Double = null
   ): Anon_Height = {
-    val __obj = js.Dynamic.literal(height = height, offsetX = offsetX, offsetY = offsetY, width = width)
-    if (hitBox != null) __obj.updateDynamic("hitBox")(hitBox)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (hitBox != null) __obj.updateDynamic("hitBox")(hitBox.asInstanceOf[js.Any])
     if (plane != null) __obj.updateDynamic("plane")(plane.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Height]
   }

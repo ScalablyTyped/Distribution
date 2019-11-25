@@ -13,8 +13,8 @@ object OutlookUser {
   @scala.inline
   def apply(id: String = null, masterCategories: js.Array[OutlookCategory] = null): OutlookUser = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (masterCategories != null) __obj.updateDynamic("masterCategories")(masterCategories)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (masterCategories != null) __obj.updateDynamic("masterCategories")(masterCategories.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutlookUser]
   }
 }

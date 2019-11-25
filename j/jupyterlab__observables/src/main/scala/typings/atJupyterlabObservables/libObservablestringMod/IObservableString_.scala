@@ -56,8 +56,8 @@ object IObservableString_ {
     text: String,
     `type`: typings.atJupyterlabObservables.atJupyterlabObservablesStrings.String
   ): IObservableString_ = {
-    val __obj = js.Dynamic.literal(changed = changed, clear = js.Any.fromFunction0(clear), dispose = js.Any.fromFunction0(dispose), insert = js.Any.fromFunction2(insert), isDisposed = isDisposed, remove = js.Any.fromFunction2(remove), text = text)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any], clear = js.Any.fromFunction0(clear), dispose = js.Any.fromFunction0(dispose), insert = js.Any.fromFunction2(insert), isDisposed = isDisposed.asInstanceOf[js.Any], remove = js.Any.fromFunction2(remove), text = text.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IObservableString_]
   }
 }

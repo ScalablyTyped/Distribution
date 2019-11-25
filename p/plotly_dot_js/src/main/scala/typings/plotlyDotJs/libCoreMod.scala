@@ -177,7 +177,7 @@ import typings.plotlyDotJs.plotlyDotJsStrings.area
 import typings.plotlyDotJs.plotlyDotJsStrings.article
 import typings.plotlyDotJs.plotlyDotJsStrings.aside
 import typings.plotlyDotJs.plotlyDotJsStrings.audio
-import typings.plotlyDotJs.plotlyDotJsStrings.b
+import typings.plotlyDotJs.plotlyDotJsStrings.b_
 import typings.plotlyDotJs.plotlyDotJsStrings.base
 import typings.plotlyDotJs.plotlyDotJsStrings.basefont
 import typings.plotlyDotJs.plotlyDotJsStrings.bdi
@@ -713,7 +713,7 @@ object libCoreMod extends js.Object {
     @JSName("create")
     def create_audio(name: audio): Selection[HTMLAudioElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
-    def create_b(name: b): Selection[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    def create_b(name: b_): Selection[HTMLElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
     def create_base(name: base): Selection[HTMLBaseElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
     @JSName("create")
@@ -952,7 +952,7 @@ object libCoreMod extends js.Object {
     @JSName("creator")
     def creator_audio(name: audio): js.ThisFunction0[/* this */ BaseType, HTMLAudioElement] = js.native
     @JSName("creator")
-    def creator_b(name: b): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
+    def creator_b(name: b_): js.ThisFunction0[/* this */ BaseType, HTMLElement] = js.native
     @JSName("creator")
     def creator_base(name: base): js.ThisFunction0[/* this */ BaseType, HTMLBaseElement] = js.native
     @JSName("creator")
@@ -2033,7 +2033,9 @@ object libCoreMod extends js.Object {
     def partition[Datum](): PartitionLayout[Datum] = js.native
     def path(): Path = js.native
     def permute[T](array: NumberDictionary[T], keys: ArrayLike[Double]): js.Array[T] = js.native
-    def permute[T, K /* <: String */](`object`: T, keys: ArrayLike[K]): js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
+    def permute[T, K /* <: String */](`object`: T, keys: ArrayLike[K]): js.Array[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+      ] = js.native
     def pie(): Pie[_, Double | typings.d3DashShape.Anon_ValueOf] = js.native
     @JSName("pie")
     def pie_Datum[Datum](): Pie[_, Datum] = js.native

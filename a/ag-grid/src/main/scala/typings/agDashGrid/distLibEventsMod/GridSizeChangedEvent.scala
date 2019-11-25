@@ -14,8 +14,8 @@ trait GridSizeChangedEvent extends AgGridEvent {
 object GridSizeChangedEvent {
   @scala.inline
   def apply(api: GridApi, clientHeight: Double, clientWidth: Double, columnApi: ColumnApi, `type`: String): GridSizeChangedEvent = {
-    val __obj = js.Dynamic.literal(api = api, clientHeight = clientHeight, clientWidth = clientWidth, columnApi = columnApi)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], clientHeight = clientHeight.asInstanceOf[js.Any], clientWidth = clientWidth.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridSizeChangedEvent]
   }
 }

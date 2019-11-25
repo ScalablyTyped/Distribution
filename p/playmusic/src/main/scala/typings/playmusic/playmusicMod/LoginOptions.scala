@@ -14,9 +14,9 @@ object LoginOptions {
   @scala.inline
   def apply(androidId: String = null, email: String = null, password: String = null): LoginOptions = {
     val __obj = js.Dynamic.literal()
-    if (androidId != null) __obj.updateDynamic("androidId")(androidId)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (password != null) __obj.updateDynamic("password")(password)
+    if (androidId != null) __obj.updateDynamic("androidId")(androidId.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginOptions]
   }
 }

@@ -12,7 +12,7 @@ trait SearchResults extends js.Object {
 object SearchResults {
   @scala.inline
   def apply(search_metadata: Metadata, statuses: js.Array[Status]): SearchResults = {
-    val __obj = js.Dynamic.literal(search_metadata = search_metadata, statuses = statuses)
+    val __obj = js.Dynamic.literal(search_metadata = search_metadata.asInstanceOf[js.Any], statuses = statuses.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SearchResults]
   }

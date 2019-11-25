@@ -12,7 +12,7 @@ object Anon_Create {
   @scala.inline
   def apply(create: js.UndefOr[Boolean] = js.undefined): Anon_Create = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(create)) __obj.updateDynamic("create")(create)
+    if (!js.isUndefined(create)) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Create]
   }
 }

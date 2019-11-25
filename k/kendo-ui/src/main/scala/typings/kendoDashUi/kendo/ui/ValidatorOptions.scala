@@ -26,13 +26,13 @@ object ValidatorOptions {
     validateOnBlur: js.UndefOr[Boolean] = js.undefined
   ): ValidatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (errorTemplate != null) __obj.updateDynamic("errorTemplate")(errorTemplate)
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (errorTemplate != null) __obj.updateDynamic("errorTemplate")(errorTemplate.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction1(validate))
     if (validateInput != null) __obj.updateDynamic("validateInput")(js.Any.fromFunction1(validateInput))
-    if (!js.isUndefined(validateOnBlur)) __obj.updateDynamic("validateOnBlur")(validateOnBlur)
+    if (!js.isUndefined(validateOnBlur)) __obj.updateDynamic("validateOnBlur")(validateOnBlur.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidatorOptions]
   }
 }

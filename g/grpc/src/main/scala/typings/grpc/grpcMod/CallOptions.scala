@@ -51,10 +51,10 @@ object CallOptions {
     host: String = null,
     parent: Call = null
   ): CallOptions = {
-    val __obj = js.Dynamic.literal(credentials = credentials, propagate_flags = propagate_flags)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], propagate_flags = propagate_flags.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (deadline != null) __obj.updateDynamic("deadline")(deadline.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallOptions]
   }

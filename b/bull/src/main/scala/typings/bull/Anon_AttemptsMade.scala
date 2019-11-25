@@ -39,10 +39,10 @@ object Anon_AttemptsMade {
     processedOn: Int | Double = null,
     stacktrace: js.Array[String] = null
   ): Anon_AttemptsMade[T] = {
-    val __obj = js.Dynamic.literal(attemptsMade = attemptsMade, data = data.asInstanceOf[js.Any], delay = delay, failedReason = failedReason, id = id.asInstanceOf[js.Any], name = name, opts = opts, progress = progress, returnvalue = returnvalue, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(attemptsMade = attemptsMade.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], failedReason = failedReason.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], opts = opts.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], returnvalue = returnvalue.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     if (finishedOn != null) __obj.updateDynamic("finishedOn")(finishedOn.asInstanceOf[js.Any])
     if (processedOn != null) __obj.updateDynamic("processedOn")(processedOn.asInstanceOf[js.Any])
-    if (stacktrace != null) __obj.updateDynamic("stacktrace")(stacktrace)
+    if (stacktrace != null) __obj.updateDynamic("stacktrace")(stacktrace.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AttemptsMade[T]]
   }
 }

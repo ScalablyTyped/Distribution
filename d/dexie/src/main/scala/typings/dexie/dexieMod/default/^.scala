@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.dexie.Anon_IDBKeyRangeIndexedDB
 import typings.dexie.dexieMod.Dexie
 import typings.dexie.dexieMod.Dexie.DexiePromiseConstructor
-import typings.dexie.dexieMod.Dexie.Promise
 import typings.dexie.dexieMod.Dexie.Transaction
 import typings.dexie.dexieMod.ThenShortcut
 import scala.scalajs.js
@@ -27,17 +26,17 @@ object ^ extends js.Object {
   def asap(fn: js.Function): Unit = js.native
   def deepClone[T](obj: T): T = js.native
   def delByKeyPath(obj: js.Object, keyPath: String): Unit = js.native
-  def delete(dbName: String): Promise[Unit] = js.native
-  def exists(dbName: String): Promise[Boolean] = js.native
+  def delete(dbName: String): typings.dexie.dexieMod.Dexie.Promise[Unit] = js.native
+  def exists(dbName: String): typings.dexie.dexieMod.Dexie.Promise[Boolean] = js.native
   def getByKeyPath(obj: js.Object, keyPath: String): js.Any = js.native
-  def getDatabaseNames(): Promise[js.Array[String]] = js.native
-  def getDatabaseNames[R](thenShortcut: ThenShortcut[js.Array[String], R]): Promise[R] = js.native
+  def getDatabaseNames(): typings.dexie.dexieMod.Dexie.Promise[js.Array[String]] = js.native
+  def getDatabaseNames[R](thenShortcut: ThenShortcut[js.Array[String], R]): typings.dexie.dexieMod.Dexie.Promise[R] = js.native
   def `override`[F](origFunc: F, overridedFactory: js.Function1[/* fn */ js.Any, _]): F = js.native
   def setByKeyPath(obj: js.Object, keyPath: String, value: js.Any): Unit = js.native
   def shallowClone[T](obj: T): T = js.native
-  def waitFor[T](promise: T): Promise[T] = js.native
-  def waitFor[T](promise: T, timeoutMilliseconds: Double): Promise[T] = js.native
-  def waitFor[T](promise: js.Thenable[T]): Promise[T] = js.native
-  def waitFor[T](promise: js.Thenable[T], timeoutMilliseconds: Double): Promise[T] = js.native
+  def waitFor[T](promise: T): typings.dexie.dexieMod.Dexie.Promise[T] = js.native
+  def waitFor[T](promise: T, timeoutMilliseconds: Double): typings.dexie.dexieMod.Dexie.Promise[T] = js.native
+  def waitFor[T](promise: js.Thenable[T]): typings.dexie.dexieMod.Dexie.Promise[T] = js.native
+  def waitFor[T](promise: js.Thenable[T], timeoutMilliseconds: Double): typings.dexie.dexieMod.Dexie.Promise[T] = js.native
 }
 

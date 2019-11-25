@@ -12,8 +12,8 @@ trait ASTIfCondition extends js.Object {
 object ASTIfCondition {
   @scala.inline
   def apply(block: ASTElement, exp: String = null): ASTIfCondition = {
-    val __obj = js.Dynamic.literal(block = block)
-    if (exp != null) __obj.updateDynamic("exp")(exp)
+    val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any])
+    if (exp != null) __obj.updateDynamic("exp")(exp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTIfCondition]
   }
 }

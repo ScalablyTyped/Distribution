@@ -25,12 +25,12 @@ object RenderOptions {
     paths: js.Array[String] = null
   ): RenderOptions = {
     val __obj = js.Dynamic.literal()
-    if (Evaluator != null) __obj.updateDynamic("Evaluator")(Evaluator)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (functions != null) __obj.updateDynamic("functions")(functions)
-    if (globals != null) __obj.updateDynamic("globals")(globals)
-    if (imports != null) __obj.updateDynamic("imports")(imports)
-    if (paths != null) __obj.updateDynamic("paths")(paths)
+    if (Evaluator != null) __obj.updateDynamic("Evaluator")(Evaluator.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (functions != null) __obj.updateDynamic("functions")(functions.asInstanceOf[js.Any])
+    if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
+    if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
+    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderOptions]
   }
 }

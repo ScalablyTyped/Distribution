@@ -19,7 +19,7 @@ object Anon_ColumnColumnEnd {
     row: Anon_ClassNameContextLabelRendererResizable[K, D],
     rowEnd: Anon_ClassNameContextLabelRendererResizableStyle[K, D]
   ): Anon_ColumnColumnEnd[K, D] = {
-    val __obj = js.Dynamic.literal(column = column, columnEnd = columnEnd, row = row, rowEnd = rowEnd)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], columnEnd = columnEnd.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], rowEnd = rowEnd.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColumnColumnEnd[K, D]]
   }

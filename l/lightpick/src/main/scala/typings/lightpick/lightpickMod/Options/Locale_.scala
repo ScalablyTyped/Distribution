@@ -34,10 +34,10 @@ object Locale_ {
     tooltipOnDisabled: String = null
   ): Locale_ = {
     val __obj = js.Dynamic.literal()
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
     if (pluralize != null) __obj.updateDynamic("pluralize")(js.Any.fromFunction2(pluralize))
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
-    if (tooltipOnDisabled != null) __obj.updateDynamic("tooltipOnDisabled")(tooltipOnDisabled)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (tooltipOnDisabled != null) __obj.updateDynamic("tooltipOnDisabled")(tooltipOnDisabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[Locale_]
   }
 }

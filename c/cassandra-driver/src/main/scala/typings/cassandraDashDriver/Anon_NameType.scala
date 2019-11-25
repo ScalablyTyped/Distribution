@@ -12,8 +12,8 @@ trait Anon_NameType extends js.Object {
 object Anon_NameType {
   @scala.inline
   def apply(name: String, `type`: Anon_Code): Anon_NameType = {
-    val __obj = js.Dynamic.literal(name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NameType]
   }
 }

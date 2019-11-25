@@ -15,8 +15,8 @@ object GraphQLServiceDefinition {
   @scala.inline
   def apply(errors: js.Array[GraphQLError] = null, schema: GraphQLSchema = null): GraphQLServiceDefinition = {
     val __obj = js.Dynamic.literal()
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLServiceDefinition]
   }
 }

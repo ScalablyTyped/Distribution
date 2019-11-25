@@ -11,7 +11,7 @@ trait GoogleApiOAuth2TokenSessionState extends js.Object {
 object GoogleApiOAuth2TokenSessionState {
   @scala.inline
   def apply(extraQueryParams: Anon_Authuser): GoogleApiOAuth2TokenSessionState = {
-    val __obj = js.Dynamic.literal(extraQueryParams = extraQueryParams)
+    val __obj = js.Dynamic.literal(extraQueryParams = extraQueryParams.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GoogleApiOAuth2TokenSessionState]
   }

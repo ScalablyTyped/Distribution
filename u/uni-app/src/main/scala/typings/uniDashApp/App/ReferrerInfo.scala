@@ -26,8 +26,8 @@ trait ReferrerInfo extends js.Object {
 object ReferrerInfo {
   @scala.inline
   def apply(appId: String, extraData: js.Any = null): ReferrerInfo = {
-    val __obj = js.Dynamic.literal(appId = appId)
-    if (extraData != null) __obj.updateDynamic("extraData")(extraData)
+    val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
+    if (extraData != null) __obj.updateDynamic("extraData")(extraData.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferrerInfo]
   }
 }

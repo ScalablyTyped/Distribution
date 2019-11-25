@@ -12,7 +12,7 @@ trait PostalRecord extends js.Object {
 object PostalRecord {
   @scala.inline
   def apply(code: String, confidence: Int | Double = null): PostalRecord = {
-    val __obj = js.Dynamic.literal(code = code)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostalRecord]
   }

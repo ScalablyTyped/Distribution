@@ -24,10 +24,10 @@ object JobStatus {
     substate: String = null
   ): JobStatus = {
     val __obj = js.Dynamic.literal()
-    if (details != null) __obj.updateDynamic("details")(details)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (stateStartTime != null) __obj.updateDynamic("stateStartTime")(stateStartTime)
-    if (substate != null) __obj.updateDynamic("substate")(substate)
+    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (stateStartTime != null) __obj.updateDynamic("stateStartTime")(stateStartTime.asInstanceOf[js.Any])
+    if (substate != null) __obj.updateDynamic("substate")(substate.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobStatus]
   }
 }

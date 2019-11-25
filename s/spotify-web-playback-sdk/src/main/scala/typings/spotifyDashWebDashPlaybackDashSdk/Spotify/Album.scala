@@ -13,7 +13,7 @@ trait Album extends js.Object {
 object Album {
   @scala.inline
   def apply(images: js.Array[Image], name: String, uri: String): Album = {
-    val __obj = js.Dynamic.literal(images = images, name = name, uri = uri)
+    val __obj = js.Dynamic.literal(images = images.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Album]
   }

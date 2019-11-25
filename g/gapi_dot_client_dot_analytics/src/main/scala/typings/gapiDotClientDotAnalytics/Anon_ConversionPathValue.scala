@@ -15,8 +15,8 @@ object Anon_ConversionPathValue {
   @scala.inline
   def apply(conversionPathValue: js.Array[Anon_InteractionType] = null, primitiveValue: String = null): Anon_ConversionPathValue = {
     val __obj = js.Dynamic.literal()
-    if (conversionPathValue != null) __obj.updateDynamic("conversionPathValue")(conversionPathValue)
-    if (primitiveValue != null) __obj.updateDynamic("primitiveValue")(primitiveValue)
+    if (conversionPathValue != null) __obj.updateDynamic("conversionPathValue")(conversionPathValue.asInstanceOf[js.Any])
+    if (primitiveValue != null) __obj.updateDynamic("primitiveValue")(primitiveValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ConversionPathValue]
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait InsertOneWriteOpResult[TSchema /* <: Record[String, _] */] extends js.Object {
   var connection: js.Any
   var insertedCount: scala.Double
-  var insertedId: /* import warning: ImportType.apply Failed type conversion: TSchema['_id'] */ js.Any
+  var insertedId: /* import warning: importer.ImportType#apply Failed type conversion: TSchema['_id'] */ js.Any
   var ops: js.Array[TSchema]
   var result: Anon_NOk
 }
@@ -19,11 +19,11 @@ object InsertOneWriteOpResult {
   def apply[TSchema /* <: Record[String, _] */](
     connection: js.Any,
     insertedCount: scala.Double,
-    insertedId: /* import warning: ImportType.apply Failed type conversion: TSchema['_id'] */ js.Any,
+    insertedId: /* import warning: importer.ImportType#apply Failed type conversion: TSchema['_id'] */ js.Any,
     ops: js.Array[TSchema],
     result: Anon_NOk
   ): InsertOneWriteOpResult[TSchema] = {
-    val __obj = js.Dynamic.literal(connection = connection, insertedCount = insertedCount, insertedId = insertedId, ops = ops, result = result)
+    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], insertedCount = insertedCount.asInstanceOf[js.Any], insertedId = insertedId.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsertOneWriteOpResult[TSchema]]
   }

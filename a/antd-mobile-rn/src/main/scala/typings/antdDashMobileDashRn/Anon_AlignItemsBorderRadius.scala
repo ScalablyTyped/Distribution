@@ -14,7 +14,7 @@ trait Anon_AlignItemsBorderRadius extends js.Object {
 object Anon_AlignItemsBorderRadius {
   @scala.inline
   def apply(alignItems: String, borderRadius: Double, borderWidth: Double, justifyContent: String): Anon_AlignItemsBorderRadius = {
-    val __obj = js.Dynamic.literal(alignItems = alignItems, borderRadius = borderRadius, borderWidth = borderWidth, justifyContent = justifyContent)
+    val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], justifyContent = justifyContent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AlignItemsBorderRadius]
   }

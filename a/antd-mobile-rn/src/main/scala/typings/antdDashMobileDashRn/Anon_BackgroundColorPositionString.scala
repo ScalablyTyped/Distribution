@@ -12,7 +12,7 @@ trait Anon_BackgroundColorPositionString extends js.Object {
 object Anon_BackgroundColorPositionString {
   @scala.inline
   def apply(backgroundColor: String, position: String): Anon_BackgroundColorPositionString = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, position = position)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BackgroundColorPositionString]
   }

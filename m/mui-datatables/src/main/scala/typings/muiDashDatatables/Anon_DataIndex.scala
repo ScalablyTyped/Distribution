@@ -11,7 +11,7 @@ trait Anon_DataIndex extends js.Object {
 object Anon_DataIndex {
   @scala.inline
   def apply(dataIndex: Double): Anon_DataIndex = {
-    val __obj = js.Dynamic.literal(dataIndex = dataIndex)
+    val __obj = js.Dynamic.literal(dataIndex = dataIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DataIndex]
   }

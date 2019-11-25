@@ -18,7 +18,7 @@ trait Folder extends js.Object {
 object Folder {
   @scala.inline
   def apply(attribs: js.Array[String], children: MailBoxes, delimiter: String, parent: Folder): Folder = {
-    val __obj = js.Dynamic.literal(attribs = attribs, children = children, delimiter = delimiter, parent = parent)
+    val __obj = js.Dynamic.literal(attribs = attribs.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], delimiter = delimiter.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Folder]
   }

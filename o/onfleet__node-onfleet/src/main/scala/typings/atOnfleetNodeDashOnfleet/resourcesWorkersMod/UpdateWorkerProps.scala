@@ -26,11 +26,11 @@ object UpdateWorkerProps {
   ): UpdateWorkerProps = {
     val __obj = js.Dynamic.literal()
     if (capacity != null) __obj.updateDynamic("capacity")(capacity.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (teams != null) __obj.updateDynamic("teams")(teams)
-    if (vehicle != null) __obj.updateDynamic("vehicle")(vehicle)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (teams != null) __obj.updateDynamic("teams")(teams.asInstanceOf[js.Any])
+    if (vehicle != null) __obj.updateDynamic("vehicle")(vehicle.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateWorkerProps]
   }
 }

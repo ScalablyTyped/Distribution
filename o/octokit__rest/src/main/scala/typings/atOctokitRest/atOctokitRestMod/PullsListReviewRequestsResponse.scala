@@ -15,7 +15,7 @@ object PullsListReviewRequestsResponse {
     teams: js.Array[PullsListReviewRequestsResponseTeamsItem],
     users: js.Array[PullsListReviewRequestsResponseUsersItem]
   ): PullsListReviewRequestsResponse = {
-    val __obj = js.Dynamic.literal(teams = teams, users = users)
+    val __obj = js.Dynamic.literal(teams = teams.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PullsListReviewRequestsResponse]
   }

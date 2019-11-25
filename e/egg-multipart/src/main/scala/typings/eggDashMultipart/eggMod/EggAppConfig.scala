@@ -12,7 +12,7 @@ trait EggAppConfig extends js.Object {
 object EggAppConfig {
   @scala.inline
   def apply(multipart: Anon_AutoFields): EggAppConfig = {
-    val __obj = js.Dynamic.literal(multipart = multipart)
+    val __obj = js.Dynamic.literal(multipart = multipart.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EggAppConfig]
   }

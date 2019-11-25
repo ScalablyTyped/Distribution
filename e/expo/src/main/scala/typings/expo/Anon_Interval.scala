@@ -12,8 +12,8 @@ trait Anon_Interval extends js.Object {
 object Anon_Interval {
   @scala.inline
   def apply(interval: Double, repeat: js.UndefOr[Boolean] = js.undefined): Anon_Interval = {
-    val __obj = js.Dynamic.literal(interval = interval)
-    if (!js.isUndefined(repeat)) __obj.updateDynamic("repeat")(repeat)
+    val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeat)) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Interval]
   }
 }

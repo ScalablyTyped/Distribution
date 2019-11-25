@@ -12,7 +12,7 @@ trait DropColumnContext extends js.Object {
 object DropColumnContext {
   @scala.inline
   def apply(columnIndex: Double): DropColumnContext = {
-    val __obj = js.Dynamic.literal(columnIndex = columnIndex)
+    val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DropColumnContext]
   }

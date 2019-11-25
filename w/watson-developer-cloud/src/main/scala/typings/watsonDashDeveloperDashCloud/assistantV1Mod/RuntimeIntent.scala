@@ -23,8 +23,8 @@ object RuntimeIntent {
     StringDictionary: /** RuntimeIntent accepts additional properties. */
   /* propName */ StringDictionary[js.Any] = null
   ): RuntimeIntent = {
-    val __obj = js.Dynamic.literal(confidence = confidence, intent = intent)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any], intent = intent.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[RuntimeIntent]
   }
 }

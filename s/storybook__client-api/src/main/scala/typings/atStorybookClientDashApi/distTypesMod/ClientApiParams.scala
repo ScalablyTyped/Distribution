@@ -13,7 +13,7 @@ trait ClientApiParams extends js.Object {
 object ClientApiParams {
   @scala.inline
   def apply(storyStore: default, decorateStory: (/* storyFn */ js.Any, /* decorators */ js.Any) => _ = null): ClientApiParams = {
-    val __obj = js.Dynamic.literal(storyStore = storyStore)
+    val __obj = js.Dynamic.literal(storyStore = storyStore.asInstanceOf[js.Any])
     if (decorateStory != null) __obj.updateDynamic("decorateStory")(js.Any.fromFunction2(decorateStory))
     __obj.asInstanceOf[ClientApiParams]
   }

@@ -15,7 +15,7 @@ object ParseOptions {
   @scala.inline
   def apply(disableImageHead: js.UndefOr[Boolean] = js.undefined, maxMetaDataSize: Int | Double = null): ParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableImageHead)) __obj.updateDynamic("disableImageHead")(disableImageHead)
+    if (!js.isUndefined(disableImageHead)) __obj.updateDynamic("disableImageHead")(disableImageHead.asInstanceOf[js.Any])
     if (maxMetaDataSize != null) __obj.updateDynamic("maxMetaDataSize")(maxMetaDataSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }

@@ -14,9 +14,9 @@ trait Document extends NodeBase {
 object Document {
   @scala.inline
   def apply(children: js.Array[NodeBase], `type`: document, parent: NodeBase = null): Document = {
-    val __obj = js.Dynamic.literal(children = children)
-    __obj.updateDynamic("type")(`type`)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Document]
   }
 }

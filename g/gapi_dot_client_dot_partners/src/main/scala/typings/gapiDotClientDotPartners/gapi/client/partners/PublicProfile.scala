@@ -27,11 +27,11 @@ object PublicProfile {
     url: String = null
   ): PublicProfile = {
     val __obj = js.Dynamic.literal()
-    if (displayImageUrl != null) __obj.updateDynamic("displayImageUrl")(displayImageUrl)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (profileImage != null) __obj.updateDynamic("profileImage")(profileImage)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (displayImageUrl != null) __obj.updateDynamic("displayImageUrl")(displayImageUrl.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (profileImage != null) __obj.updateDynamic("profileImage")(profileImage.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicProfile]
   }
 }

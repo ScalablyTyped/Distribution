@@ -7,7 +7,7 @@ import typings.escpos.escposStrings.P
 import typings.escpos.escposStrings.` `
 import typings.escpos.escposStrings.`0`
 import typings.escpos.escposStrings.`@`
-import typings.escpos.escposStrings.p
+import typings.escpos.escposStrings.p_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait Anon_ extends js.Object {
   var `5`: `@`
   var `6`: P
   var `7`: BACKTICK
-  var `8`: p
+  var `8`: p_
 }
 
 object Anon_ {
@@ -33,17 +33,17 @@ object Anon_ {
     `5`: `@`,
     `6`: P,
     `7`: BACKTICK,
-    `8`: p
+    `8`: p_
   ): Anon_ = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("1")(`1`)
-    __obj.updateDynamic("2")(`2`)
-    __obj.updateDynamic("3")(`3`)
-    __obj.updateDynamic("4")(`4`)
-    __obj.updateDynamic("5")(`5`)
-    __obj.updateDynamic("6")(`6`)
-    __obj.updateDynamic("7")(`7`)
-    __obj.updateDynamic("8")(`8`)
+    __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
+    __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
+    __obj.updateDynamic("3")(`3`.asInstanceOf[js.Any])
+    __obj.updateDynamic("4")(`4`.asInstanceOf[js.Any])
+    __obj.updateDynamic("5")(`5`.asInstanceOf[js.Any])
+    __obj.updateDynamic("6")(`6`.asInstanceOf[js.Any])
+    __obj.updateDynamic("7")(`7`.asInstanceOf[js.Any])
+    __obj.updateDynamic("8")(`8`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_]
   }
 }

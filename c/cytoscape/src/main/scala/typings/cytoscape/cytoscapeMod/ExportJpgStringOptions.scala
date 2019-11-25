@@ -27,8 +27,8 @@ object ExportJpgStringOptions {
     scale: Int | Double = null
   ): ExportJpgStringOptions = {
     val __obj = js.Dynamic.literal()
-    if (bg != null) __obj.updateDynamic("bg")(bg)
-    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full)
+    if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
+    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])

@@ -18,9 +18,9 @@ object LocalizedProperty {
     localized: js.Array[LocalizedString] = null
   ): LocalizedProperty = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (defaultLanguage != null) __obj.updateDynamic("defaultLanguage")(defaultLanguage)
-    if (localized != null) __obj.updateDynamic("localized")(localized)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (defaultLanguage != null) __obj.updateDynamic("defaultLanguage")(defaultLanguage.asInstanceOf[js.Any])
+    if (localized != null) __obj.updateDynamic("localized")(localized.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalizedProperty]
   }
 }

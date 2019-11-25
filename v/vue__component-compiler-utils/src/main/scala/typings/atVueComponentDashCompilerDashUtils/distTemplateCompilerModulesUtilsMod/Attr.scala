@@ -12,7 +12,7 @@ trait Attr extends js.Object {
 object Attr {
   @scala.inline
   def apply(name: String, value: String): Attr = {
-    val __obj = js.Dynamic.literal(name = name, value = value)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Attr]
   }

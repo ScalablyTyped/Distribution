@@ -12,7 +12,7 @@ trait TimeZone extends js.Object {
 object TimeZone {
   @scala.inline
   def apply(displayName: String, id: String): TimeZone = {
-    val __obj = js.Dynamic.literal(displayName = displayName, id = id)
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TimeZone]
   }

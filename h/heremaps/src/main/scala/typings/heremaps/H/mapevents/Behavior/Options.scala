@@ -21,7 +21,7 @@ object Options {
   def apply(enable: Int | Double = null, kinetics: IKinetics = null): Options = {
     val __obj = js.Dynamic.literal()
     if (enable != null) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
-    if (kinetics != null) __obj.updateDynamic("kinetics")(kinetics)
+    if (kinetics != null) __obj.updateDynamic("kinetics")(kinetics.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

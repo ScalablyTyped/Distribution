@@ -41,7 +41,7 @@ object Handler {
     state: js.Any,
     t: (String, /* repeated */ js.Any) => Unit
   ): Handler[T] = {
-    val __obj = js.Dynamic.literal(attributes = attributes, callback = js.Any.fromFunction1(callback), context = context, emit = js.Any.fromFunction2(emit), emitWithState = emitWithState, event = event, handler = handler, i18n = i18n, isOverriden = isOverriden, locale = locale, name = name, on = on, response = response, state = state, t = js.Any.fromFunction2(t))
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], callback = js.Any.fromFunction1(callback), context = context.asInstanceOf[js.Any], emit = js.Any.fromFunction2(emit), emitWithState = emitWithState.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], handler = handler.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], isOverriden = isOverriden.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], t = js.Any.fromFunction2(t))
   
     __obj.asInstanceOf[Handler[T]]
   }

@@ -14,9 +14,9 @@ object DeleteUserstate {
   @scala.inline
   def apply(login: String = null, message: String = null, `target-msg-id`: String = null): DeleteUserstate = {
     val __obj = js.Dynamic.literal()
-    if (login != null) __obj.updateDynamic("login")(login)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (`target-msg-id` != null) __obj.updateDynamic("target-msg-id")(`target-msg-id`)
+    if (login != null) __obj.updateDynamic("login")(login.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (`target-msg-id` != null) __obj.updateDynamic("target-msg-id")(`target-msg-id`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteUserstate]
   }
 }

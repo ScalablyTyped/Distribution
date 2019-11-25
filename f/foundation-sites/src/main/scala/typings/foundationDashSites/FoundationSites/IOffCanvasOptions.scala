@@ -30,15 +30,15 @@ object IOffCanvasOptions {
     trapFocus: js.UndefOr[Boolean] = js.undefined
   ): IOffCanvasOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
-    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick)
-    if (!js.isUndefined(forceTop)) __obj.updateDynamic("forceTop")(forceTop)
-    if (!js.isUndefined(isRevealed)) __obj.updateDynamic("isRevealed")(isRevealed)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (revealClass != null) __obj.updateDynamic("revealClass")(revealClass)
-    if (revealOn != null) __obj.updateDynamic("revealOn")(revealOn)
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceTop)) __obj.updateDynamic("forceTop")(forceTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRevealed)) __obj.updateDynamic("isRevealed")(isRevealed.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (revealClass != null) __obj.updateDynamic("revealClass")(revealClass.asInstanceOf[js.Any])
+    if (revealOn != null) __obj.updateDynamic("revealOn")(revealOn.asInstanceOf[js.Any])
     if (transitionTime != null) __obj.updateDynamic("transitionTime")(transitionTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(trapFocus)) __obj.updateDynamic("trapFocus")(trapFocus)
+    if (!js.isUndefined(trapFocus)) __obj.updateDynamic("trapFocus")(trapFocus.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOffCanvasOptions]
   }
 }

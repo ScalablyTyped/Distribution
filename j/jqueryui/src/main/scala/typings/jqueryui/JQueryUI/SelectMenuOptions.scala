@@ -30,15 +30,15 @@ object SelectMenuOptions {
     width: Int | Double = null
   ): SelectMenuOptions = {
     val __obj = js.Dynamic.literal()
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
+    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
     if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction2(close))
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction2(focus))
-    if (icons != null) __obj.updateDynamic("icons")(icons)
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
     if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction2(open))
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction2(select))
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectMenuOptions]

@@ -18,9 +18,9 @@ object Anon_Filter {
     validate: js.UndefOr[Boolean] = js.undefined
   ): Anon_Filter = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (layers != null) __obj.updateDynamic("layers")(layers)
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Filter]
   }
 }

@@ -13,7 +13,7 @@ object Anon_Config {
   @scala.inline
   def apply(config: ReactQueryProviderConfig = null): Anon_Config = {
     val __obj = js.Dynamic.literal()
-    if (config != null) __obj.updateDynamic("config")(config)
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Config]
   }
 }

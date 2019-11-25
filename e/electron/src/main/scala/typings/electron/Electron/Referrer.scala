@@ -32,7 +32,7 @@ object Referrer {
     policy: default | `unsafe-url` | `no-referrer-when-downgrade` | `no-referrer` | origin | `strict-origin-when-cross-origin` | `same-origin` | `strict-origin`,
     url: String
   ): Referrer = {
-    val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], url = url)
+    val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Referrer]
   }

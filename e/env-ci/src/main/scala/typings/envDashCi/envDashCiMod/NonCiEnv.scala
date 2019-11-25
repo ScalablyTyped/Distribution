@@ -14,9 +14,9 @@ trait NonCiEnv extends CiEnv {
 object NonCiEnv {
   @scala.inline
   def apply(isCi: `false`, branch: String = null, commit: String = null): NonCiEnv = {
-    val __obj = js.Dynamic.literal(isCi = isCi)
-    if (branch != null) __obj.updateDynamic("branch")(branch)
-    if (commit != null) __obj.updateDynamic("commit")(commit)
+    val __obj = js.Dynamic.literal(isCi = isCi.asInstanceOf[js.Any])
+    if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
+    if (commit != null) __obj.updateDynamic("commit")(commit.asInstanceOf[js.Any])
     __obj.asInstanceOf[NonCiEnv]
   }
 }

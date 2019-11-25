@@ -20,8 +20,8 @@ object HumpsOptions {
   ): HumpsOptions = {
     val __obj = js.Dynamic.literal()
     if (process != null) __obj.updateDynamic("process")(js.Any.fromFunction3(process))
-    if (separator != null) __obj.updateDynamic("separator")(separator)
-    if (split != null) __obj.updateDynamic("split")(split)
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (split != null) __obj.updateDynamic("split")(split.asInstanceOf[js.Any])
     __obj.asInstanceOf[HumpsOptions]
   }
 }

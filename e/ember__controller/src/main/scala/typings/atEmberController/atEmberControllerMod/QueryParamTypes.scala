@@ -13,3 +13,16 @@ import scala.scalajs.js.annotation._
 */
 trait QueryParamTypes extends js.Object
 
+object QueryParamTypes {
+  @scala.inline
+  def array: typings.atEmberController.atEmberControllerStrings.array = this.cast("array")
+  @scala.inline
+  def boolean: typings.atEmberController.atEmberControllerStrings.boolean = this.cast("boolean")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def number: typings.atEmberController.atEmberControllerStrings.number = this.cast("number")
+  @scala.inline
+  def string: typings.atEmberController.atEmberControllerStrings.string = this.cast("string")
+}
+

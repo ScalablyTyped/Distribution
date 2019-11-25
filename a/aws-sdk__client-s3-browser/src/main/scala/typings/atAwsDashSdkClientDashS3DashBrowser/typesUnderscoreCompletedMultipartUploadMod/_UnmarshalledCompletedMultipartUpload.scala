@@ -17,7 +17,7 @@ object _UnmarshalledCompletedMultipartUpload {
   @scala.inline
   def apply(Parts: js.Array[_UnmarshalledCompletedPart] = null): _UnmarshalledCompletedMultipartUpload = {
     val __obj = js.Dynamic.literal()
-    if (Parts != null) __obj.updateDynamic("Parts")(Parts)
+    if (Parts != null) __obj.updateDynamic("Parts")(Parts.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledCompletedMultipartUpload]
   }
 }

@@ -12,7 +12,7 @@ object Anon_StyleAnonDataLabels {
   @scala.inline
   def apply(style: Anon_DataLabels = null): Anon_StyleAnonDataLabels = {
     val __obj = js.Dynamic.literal()
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_StyleAnonDataLabels]
   }
 }

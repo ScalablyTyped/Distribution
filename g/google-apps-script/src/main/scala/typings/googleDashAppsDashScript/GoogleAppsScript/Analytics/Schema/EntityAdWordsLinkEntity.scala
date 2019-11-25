@@ -12,7 +12,7 @@ object EntityAdWordsLinkEntity {
   @scala.inline
   def apply(webPropertyRef: WebPropertyRef = null): EntityAdWordsLinkEntity = {
     val __obj = js.Dynamic.literal()
-    if (webPropertyRef != null) __obj.updateDynamic("webPropertyRef")(webPropertyRef)
+    if (webPropertyRef != null) __obj.updateDynamic("webPropertyRef")(webPropertyRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityAdWordsLinkEntity]
   }
 }

@@ -21,9 +21,9 @@ object ExtraSchemaConfig {
     types: js.Array[GraphQLNamedType] = null
   ): ExtraSchemaConfig = {
     val __obj = js.Dynamic.literal()
-    if (astNode != null) __obj.updateDynamic("astNode")(astNode)
-    if (directives != null) __obj.updateDynamic("directives")(directives)
-    if (types != null) __obj.updateDynamic("types")(types)
+    if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
+    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtraSchemaConfig]
   }
 }

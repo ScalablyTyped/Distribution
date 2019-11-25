@@ -14,9 +14,9 @@ object IPaths {
   @scala.inline
   def apply(bowerDirectory: String = null, bowerJson: String = null, bowerrc: String = null): IPaths = {
     val __obj = js.Dynamic.literal()
-    if (bowerDirectory != null) __obj.updateDynamic("bowerDirectory")(bowerDirectory)
-    if (bowerJson != null) __obj.updateDynamic("bowerJson")(bowerJson)
-    if (bowerrc != null) __obj.updateDynamic("bowerrc")(bowerrc)
+    if (bowerDirectory != null) __obj.updateDynamic("bowerDirectory")(bowerDirectory.asInstanceOf[js.Any])
+    if (bowerJson != null) __obj.updateDynamic("bowerJson")(bowerJson.asInstanceOf[js.Any])
+    if (bowerrc != null) __obj.updateDynamic("bowerrc")(bowerrc.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaths]
   }
 }

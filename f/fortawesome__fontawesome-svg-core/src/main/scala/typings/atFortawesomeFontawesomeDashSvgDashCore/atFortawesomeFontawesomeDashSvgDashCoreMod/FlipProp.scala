@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait FlipProp extends js.Object
 
+object FlipProp {
+  @scala.inline
+  def both: typings.atFortawesomeFontawesomeDashSvgDashCore.atFortawesomeFontawesomeDashSvgDashCoreStrings.both = this.cast("both")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def horizontal: typings.atFortawesomeFontawesomeDashSvgDashCore.atFortawesomeFontawesomeDashSvgDashCoreStrings.horizontal = this.cast("horizontal")
+  @scala.inline
+  def vertical: typings.atFortawesomeFontawesomeDashSvgDashCore.atFortawesomeFontawesomeDashSvgDashCoreStrings.vertical = this.cast("vertical")
+}
+

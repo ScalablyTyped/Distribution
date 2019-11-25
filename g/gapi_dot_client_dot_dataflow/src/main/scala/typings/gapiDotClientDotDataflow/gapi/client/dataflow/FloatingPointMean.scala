@@ -15,7 +15,7 @@ object FloatingPointMean {
   @scala.inline
   def apply(count: SplitInt64 = null, sum: Int | Double = null): FloatingPointMean = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (sum != null) __obj.updateDynamic("sum")(sum.asInstanceOf[js.Any])
     __obj.asInstanceOf[FloatingPointMean]
   }

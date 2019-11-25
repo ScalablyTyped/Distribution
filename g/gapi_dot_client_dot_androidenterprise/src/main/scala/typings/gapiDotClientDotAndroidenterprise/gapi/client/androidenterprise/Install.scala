@@ -27,9 +27,9 @@ object Install {
     versionCode: Int | Double = null
   ): Install = {
     val __obj = js.Dynamic.literal()
-    if (installState != null) __obj.updateDynamic("installState")(installState)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (installState != null) __obj.updateDynamic("installState")(installState.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
     if (versionCode != null) __obj.updateDynamic("versionCode")(versionCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Install]
   }

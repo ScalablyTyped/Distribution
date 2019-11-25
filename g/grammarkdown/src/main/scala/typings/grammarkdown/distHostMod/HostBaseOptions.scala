@@ -19,9 +19,9 @@ object HostBaseOptions {
     useBuiltinGrammars: js.UndefOr[Boolean] = js.undefined
   ): HostBaseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase)
-    if (knownGrammars != null) __obj.updateDynamic("knownGrammars")(knownGrammars)
-    if (!js.isUndefined(useBuiltinGrammars)) __obj.updateDynamic("useBuiltinGrammars")(useBuiltinGrammars)
+    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.asInstanceOf[js.Any])
+    if (knownGrammars != null) __obj.updateDynamic("knownGrammars")(knownGrammars.asInstanceOf[js.Any])
+    if (!js.isUndefined(useBuiltinGrammars)) __obj.updateDynamic("useBuiltinGrammars")(useBuiltinGrammars.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostBaseOptions]
   }
 }

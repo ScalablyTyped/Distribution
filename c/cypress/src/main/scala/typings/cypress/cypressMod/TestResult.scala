@@ -42,10 +42,10 @@ object TestResult {
     failedFromHookId: hookId = null,
     stack: String = null
   ): TestResult = {
-    val __obj = js.Dynamic.literal(body = body, state = state, testId = testId, timings = timings, title = title, videoTimestamp = videoTimestamp, wallClockDuration = wallClockDuration, wallClockStartedAt = wallClockStartedAt)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (failedFromHookId != null) __obj.updateDynamic("failedFromHookId")(failedFromHookId)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], testId = testId.asInstanceOf[js.Any], timings = timings.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], videoTimestamp = videoTimestamp.asInstanceOf[js.Any], wallClockDuration = wallClockDuration.asInstanceOf[js.Any], wallClockStartedAt = wallClockStartedAt.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (failedFromHookId != null) __obj.updateDynamic("failedFromHookId")(failedFromHookId.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestResult]
   }
 }

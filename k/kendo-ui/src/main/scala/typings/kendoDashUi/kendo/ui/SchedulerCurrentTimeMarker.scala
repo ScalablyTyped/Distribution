@@ -14,7 +14,7 @@ object SchedulerCurrentTimeMarker {
   def apply(updateInterval: Int | Double = null, useLocalTimezone: js.UndefOr[Boolean] = js.undefined): SchedulerCurrentTimeMarker = {
     val __obj = js.Dynamic.literal()
     if (updateInterval != null) __obj.updateDynamic("updateInterval")(updateInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(useLocalTimezone)) __obj.updateDynamic("useLocalTimezone")(useLocalTimezone)
+    if (!js.isUndefined(useLocalTimezone)) __obj.updateDynamic("useLocalTimezone")(useLocalTimezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerCurrentTimeMarker]
   }
 }

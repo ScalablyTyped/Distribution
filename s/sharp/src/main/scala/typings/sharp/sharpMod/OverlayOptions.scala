@@ -41,14 +41,14 @@ object OverlayOptions {
     top: Int | Double = null
   ): OverlayOptions = {
     val __obj = js.Dynamic.literal()
-    if (blend != null) __obj.updateDynamic("blend")(blend)
+    if (blend != null) __obj.updateDynamic("blend")(blend.asInstanceOf[js.Any])
     if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
     if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (!js.isUndefined(premultiplied)) __obj.updateDynamic("premultiplied")(premultiplied)
-    if (raw != null) __obj.updateDynamic("raw")(raw)
-    if (!js.isUndefined(tile)) __obj.updateDynamic("tile")(tile)
+    if (!js.isUndefined(premultiplied)) __obj.updateDynamic("premultiplied")(premultiplied.asInstanceOf[js.Any])
+    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (!js.isUndefined(tile)) __obj.updateDynamic("tile")(tile.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverlayOptions]
   }

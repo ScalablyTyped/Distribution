@@ -26,10 +26,10 @@ object NormalizationLinkedHandle {
     args: js.Array[NormalizationArgument] = null,
     filters: js.Array[String] = null
   ): NormalizationLinkedHandle = {
-    val __obj = js.Dynamic.literal(handle = handle, key = key, kind = kind, name = name)
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
+    val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationLinkedHandle]
   }
 }

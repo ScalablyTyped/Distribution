@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tiny-warning"
-version := "1.0.3-538409"
+version := "1.0.3-1e520d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

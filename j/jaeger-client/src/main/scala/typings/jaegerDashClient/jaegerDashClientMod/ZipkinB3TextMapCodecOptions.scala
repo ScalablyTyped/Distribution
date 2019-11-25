@@ -18,9 +18,9 @@ object ZipkinB3TextMapCodecOptions {
     urlEncoding: js.UndefOr[Boolean] = js.undefined
   ): ZipkinB3TextMapCodecOptions = {
     val __obj = js.Dynamic.literal()
-    if (baggagePrefix != null) __obj.updateDynamic("baggagePrefix")(baggagePrefix)
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
-    if (!js.isUndefined(urlEncoding)) __obj.updateDynamic("urlEncoding")(urlEncoding)
+    if (baggagePrefix != null) __obj.updateDynamic("baggagePrefix")(baggagePrefix.asInstanceOf[js.Any])
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
+    if (!js.isUndefined(urlEncoding)) __obj.updateDynamic("urlEncoding")(urlEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZipkinB3TextMapCodecOptions]
   }
 }

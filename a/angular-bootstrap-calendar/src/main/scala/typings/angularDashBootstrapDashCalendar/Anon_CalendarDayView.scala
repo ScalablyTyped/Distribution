@@ -27,7 +27,7 @@ object Anon_CalendarDayView {
     calendarWeekView: String,
     calendarYearView: String
   ): Anon_CalendarDayView = {
-    val __obj = js.Dynamic.literal(calendarDayView = calendarDayView, calendarHourList = calendarHourList, calendarMonthCell = calendarMonthCell, calendarMonthCellEvents = calendarMonthCellEvents, calendarMonthView = calendarMonthView, calendarSlideBox = calendarSlideBox, calendarWeekView = calendarWeekView, calendarYearView = calendarYearView)
+    val __obj = js.Dynamic.literal(calendarDayView = calendarDayView.asInstanceOf[js.Any], calendarHourList = calendarHourList.asInstanceOf[js.Any], calendarMonthCell = calendarMonthCell.asInstanceOf[js.Any], calendarMonthCellEvents = calendarMonthCellEvents.asInstanceOf[js.Any], calendarMonthView = calendarMonthView.asInstanceOf[js.Any], calendarSlideBox = calendarSlideBox.asInstanceOf[js.Any], calendarWeekView = calendarWeekView.asInstanceOf[js.Any], calendarYearView = calendarYearView.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CalendarDayView]
   }

@@ -12,7 +12,7 @@ trait RawArguments extends js.Object {
 object RawArguments {
   @scala.inline
   def apply(args: js.Array[RawArgument], rest: js.Array[String]): RawArguments = {
-    val __obj = js.Dynamic.literal(args = args, rest = rest)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], rest = rest.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RawArguments]
   }

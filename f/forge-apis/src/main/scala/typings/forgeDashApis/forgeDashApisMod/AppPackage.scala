@@ -27,10 +27,10 @@ object AppPackage {
     isObjectEnabler: js.UndefOr[Boolean] = js.undefined,
     isPublic: js.UndefOr[Boolean] = js.undefined
   ): AppPackage = {
-    val __obj = js.Dynamic.literal(id = id, references = references, requiredEngineVersion = requiredEngineVersion, resource = resource, version = version)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(isObjectEnabler)) __obj.updateDynamic("isObjectEnabler")(isObjectEnabler)
-    if (!js.isUndefined(isPublic)) __obj.updateDynamic("isPublic")(isPublic)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], requiredEngineVersion = requiredEngineVersion.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(isObjectEnabler)) __obj.updateDynamic("isObjectEnabler")(isObjectEnabler.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPublic)) __obj.updateDynamic("isPublic")(isPublic.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppPackage]
   }
 }

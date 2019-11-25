@@ -71,15 +71,15 @@ object InsertModalFooterProps {
     val __obj = js.Dynamic.literal()
     if (beforeClose != null) __obj.updateDynamic("beforeClose")(js.Any.fromFunction1(beforeClose))
     if (beforeSave != null) __obj.updateDynamic("beforeSave")(js.Any.fromFunction1(beforeSave))
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (closeBtnClass != null) __obj.updateDynamic("closeBtnClass")(closeBtnClass)
-    if (closeBtnContextual != null) __obj.updateDynamic("closeBtnContextual")(closeBtnContextual)
-    if (closeBtnText != null) __obj.updateDynamic("closeBtnText")(closeBtnText)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (closeBtnClass != null) __obj.updateDynamic("closeBtnClass")(closeBtnClass.asInstanceOf[js.Any])
+    if (closeBtnContextual != null) __obj.updateDynamic("closeBtnContextual")(closeBtnContextual.asInstanceOf[js.Any])
+    if (closeBtnText != null) __obj.updateDynamic("closeBtnText")(closeBtnText.asInstanceOf[js.Any])
     if (onModalClose != null) __obj.updateDynamic("onModalClose")(js.Any.fromFunction1(onModalClose))
     if (onSave != null) __obj.updateDynamic("onSave")(js.Any.fromFunction1(onSave))
-    if (saveBtnClass != null) __obj.updateDynamic("saveBtnClass")(saveBtnClass)
-    if (saveBtnContextual != null) __obj.updateDynamic("saveBtnContextual")(saveBtnContextual)
-    if (saveBtnText != null) __obj.updateDynamic("saveBtnText")(saveBtnText)
+    if (saveBtnClass != null) __obj.updateDynamic("saveBtnClass")(saveBtnClass.asInstanceOf[js.Any])
+    if (saveBtnContextual != null) __obj.updateDynamic("saveBtnContextual")(saveBtnContextual.asInstanceOf[js.Any])
+    if (saveBtnText != null) __obj.updateDynamic("saveBtnText")(saveBtnText.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertModalFooterProps]
   }
 }

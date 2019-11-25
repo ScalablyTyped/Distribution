@@ -52,7 +52,7 @@ object AdvancedQueueMessage {
     priority: Double,
     state: Double
   ): AdvancedQueueMessage = {
-    val __obj = js.Dynamic.literal(correlation = correlation, delay = delay, deliveryMode = deliveryMode, exceptionQueue = exceptionQueue, expiration = expiration, msgId = msgId, numAttempts = numAttempts, originalMsgId = originalMsgId, payload = payload.asInstanceOf[js.Any], priority = priority, state = state)
+    val __obj = js.Dynamic.literal(correlation = correlation.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], deliveryMode = deliveryMode.asInstanceOf[js.Any], exceptionQueue = exceptionQueue.asInstanceOf[js.Any], expiration = expiration.asInstanceOf[js.Any], msgId = msgId.asInstanceOf[js.Any], numAttempts = numAttempts.asInstanceOf[js.Any], originalMsgId = originalMsgId.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AdvancedQueueMessage]
   }

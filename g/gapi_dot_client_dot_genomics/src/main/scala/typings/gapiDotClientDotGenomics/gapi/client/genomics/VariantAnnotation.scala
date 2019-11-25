@@ -51,13 +51,13 @@ object VariantAnnotation {
     `type`: String = null
   ): VariantAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (alternateBases != null) __obj.updateDynamic("alternateBases")(alternateBases)
-    if (clinicalSignificance != null) __obj.updateDynamic("clinicalSignificance")(clinicalSignificance)
-    if (conditions != null) __obj.updateDynamic("conditions")(conditions)
-    if (effect != null) __obj.updateDynamic("effect")(effect)
-    if (geneId != null) __obj.updateDynamic("geneId")(geneId)
-    if (transcriptIds != null) __obj.updateDynamic("transcriptIds")(transcriptIds)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (alternateBases != null) __obj.updateDynamic("alternateBases")(alternateBases.asInstanceOf[js.Any])
+    if (clinicalSignificance != null) __obj.updateDynamic("clinicalSignificance")(clinicalSignificance.asInstanceOf[js.Any])
+    if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
+    if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
+    if (geneId != null) __obj.updateDynamic("geneId")(geneId.asInstanceOf[js.Any])
+    if (transcriptIds != null) __obj.updateDynamic("transcriptIds")(transcriptIds.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VariantAnnotation]
   }
 }

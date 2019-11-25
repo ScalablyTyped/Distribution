@@ -34,16 +34,16 @@ object ReplSetOpts {
     storageEngine: StorageEngineT = null
   ): ReplSetOpts = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (!js.isUndefined(auth)) __obj.updateDynamic("auth")(auth)
-    if (configSettings != null) __obj.updateDynamic("configSettings")(configSettings)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (!js.isUndefined(auth)) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
+    if (configSettings != null) __obj.updateDynamic("configSettings")(configSettings.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (dbName != null) __obj.updateDynamic("dbName")(dbName)
-    if (ip != null) __obj.updateDynamic("ip")(ip)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (dbName != null) __obj.updateDynamic("dbName")(dbName.asInstanceOf[js.Any])
+    if (ip != null) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (oplogSize != null) __obj.updateDynamic("oplogSize")(oplogSize.asInstanceOf[js.Any])
-    if (spawn != null) __obj.updateDynamic("spawn")(spawn)
-    if (storageEngine != null) __obj.updateDynamic("storageEngine")(storageEngine)
+    if (spawn != null) __obj.updateDynamic("spawn")(spawn.asInstanceOf[js.Any])
+    if (storageEngine != null) __obj.updateDynamic("storageEngine")(storageEngine.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplSetOpts]
   }
 }

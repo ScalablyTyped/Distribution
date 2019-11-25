@@ -12,7 +12,7 @@ object DropDatabaseOptions {
   @scala.inline
   def apply(ifExists: js.UndefOr[Boolean] = js.undefined): DropDatabaseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ifExists)) __obj.updateDynamic("ifExists")(ifExists)
+    if (!js.isUndefined(ifExists)) __obj.updateDynamic("ifExists")(ifExists.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropDatabaseOptions]
   }
 }

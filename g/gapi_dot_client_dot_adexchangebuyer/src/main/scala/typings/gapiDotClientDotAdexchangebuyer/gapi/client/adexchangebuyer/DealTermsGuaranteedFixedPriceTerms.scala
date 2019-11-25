@@ -27,11 +27,11 @@ object DealTermsGuaranteedFixedPriceTerms {
     minimumDailyLooks: String = null
   ): DealTermsGuaranteedFixedPriceTerms = {
     val __obj = js.Dynamic.literal()
-    if (billingInfo != null) __obj.updateDynamic("billingInfo")(billingInfo)
-    if (fixedPrices != null) __obj.updateDynamic("fixedPrices")(fixedPrices)
-    if (guaranteedImpressions != null) __obj.updateDynamic("guaranteedImpressions")(guaranteedImpressions)
-    if (guaranteedLooks != null) __obj.updateDynamic("guaranteedLooks")(guaranteedLooks)
-    if (minimumDailyLooks != null) __obj.updateDynamic("minimumDailyLooks")(minimumDailyLooks)
+    if (billingInfo != null) __obj.updateDynamic("billingInfo")(billingInfo.asInstanceOf[js.Any])
+    if (fixedPrices != null) __obj.updateDynamic("fixedPrices")(fixedPrices.asInstanceOf[js.Any])
+    if (guaranteedImpressions != null) __obj.updateDynamic("guaranteedImpressions")(guaranteedImpressions.asInstanceOf[js.Any])
+    if (guaranteedLooks != null) __obj.updateDynamic("guaranteedLooks")(guaranteedLooks.asInstanceOf[js.Any])
+    if (minimumDailyLooks != null) __obj.updateDynamic("minimumDailyLooks")(minimumDailyLooks.asInstanceOf[js.Any])
     __obj.asInstanceOf[DealTermsGuaranteedFixedPriceTerms]
   }
 }

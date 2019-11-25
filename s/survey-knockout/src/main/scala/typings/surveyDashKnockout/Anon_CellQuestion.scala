@@ -12,7 +12,7 @@ trait Anon_CellQuestion extends js.Object {
 object Anon_CellQuestion {
   @scala.inline
   def apply(onCellQuestionUpdate: (js.Any, js.Any, js.Any, js.Any) => Unit, properties: js.Array[String]): Anon_CellQuestion = {
-    val __obj = js.Dynamic.literal(onCellQuestionUpdate = js.Any.fromFunction4(onCellQuestionUpdate), properties = properties)
+    val __obj = js.Dynamic.literal(onCellQuestionUpdate = js.Any.fromFunction4(onCellQuestionUpdate), properties = properties.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CellQuestion]
   }

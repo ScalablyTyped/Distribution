@@ -26,8 +26,8 @@ trait MenuPopupShowParams extends js.Object {
 object MenuPopupShowParams {
   @scala.inline
   def apply(view: View, animated: js.UndefOr[Boolean] = js.undefined, arrowDirection: Int | Double = null): MenuPopupShowParams = {
-    val __obj = js.Dynamic.literal(view = view)
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    val __obj = js.Dynamic.literal(view = view.asInstanceOf[js.Any])
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
     if (arrowDirection != null) __obj.updateDynamic("arrowDirection")(arrowDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuPopupShowParams]
   }

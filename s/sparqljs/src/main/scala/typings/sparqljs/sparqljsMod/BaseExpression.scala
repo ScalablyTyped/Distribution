@@ -13,8 +13,8 @@ object BaseExpression {
   @scala.inline
   def apply(`type`: String, distinct: js.UndefOr[Boolean] = js.undefined): BaseExpression = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseExpression]
   }
 }

@@ -17,7 +17,7 @@ trait Anon_1Equal[Left /* <: js.Array[_] */, Right /* <: js.Array[_] */] extends
 object Anon_1Equal {
   @scala.inline
   def apply[Left /* <: js.Array[_] */, Right /* <: js.Array[_] */](fitBoth: equal, fitLeft: shorterLeft, fitRight: shorterRight, unfit: js.Any): Anon_1Equal[Left, Right] = {
-    val __obj = js.Dynamic.literal(fitBoth = fitBoth, fitLeft = fitLeft, fitRight = fitRight, unfit = unfit)
+    val __obj = js.Dynamic.literal(fitBoth = fitBoth.asInstanceOf[js.Any], fitLeft = fitLeft.asInstanceOf[js.Any], fitRight = fitRight.asInstanceOf[js.Any], unfit = unfit.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_1Equal[Left, Right]]
   }

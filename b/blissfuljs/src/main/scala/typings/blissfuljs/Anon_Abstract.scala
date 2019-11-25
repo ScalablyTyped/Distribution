@@ -27,13 +27,13 @@ object Anon_Abstract {
     static: js.Object = null
   ): Anon_Abstract = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`)
-    if (constructor != null) __obj.updateDynamic("constructor")(constructor)
-    if (`extends` != null) __obj.updateDynamic("extends")(`extends`)
-    if (`lazy` != null) __obj.updateDynamic("lazy")(`lazy`)
-    if (live != null) __obj.updateDynamic("live")(live)
-    if (static != null) __obj.updateDynamic("static")(static)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`.asInstanceOf[js.Any])
+    if (constructor != null) __obj.updateDynamic("constructor")(constructor.asInstanceOf[js.Any])
+    if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
+    if (`lazy` != null) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
+    if (live != null) __obj.updateDynamic("live")(live.asInstanceOf[js.Any])
+    if (static != null) __obj.updateDynamic("static")(static.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Abstract]
   }
 }

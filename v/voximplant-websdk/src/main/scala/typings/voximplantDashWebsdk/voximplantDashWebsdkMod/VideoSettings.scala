@@ -61,13 +61,13 @@ object VideoSettings {
   ): VideoSettings = {
     val __obj = js.Dynamic.literal()
     if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
     if (facingMode != null) __obj.updateDynamic("facingMode")(facingMode.asInstanceOf[js.Any])
     if (frameRate != null) __obj.updateDynamic("frameRate")(frameRate.asInstanceOf[js.Any])
-    if (groupId != null) __obj.updateDynamic("groupId")(groupId)
+    if (groupId != null) __obj.updateDynamic("groupId")(groupId.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (mandatory != null) __obj.updateDynamic("mandatory")(mandatory)
-    if (optional != null) __obj.updateDynamic("optional")(optional)
+    if (mandatory != null) __obj.updateDynamic("mandatory")(mandatory.asInstanceOf[js.Any])
+    if (optional != null) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoSettings]
   }

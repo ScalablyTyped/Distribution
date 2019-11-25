@@ -18,7 +18,7 @@ object hideParams {
   @scala.inline
   def apply(animated: js.UndefOr[Boolean] = js.undefined): hideParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
     __obj.asInstanceOf[hideParams]
   }
 }

@@ -60,7 +60,7 @@ object Fragment {
     title: String,
     url: String
   ): Fragment = {
-    val __obj = js.Dynamic.literal(cc = cc, duration = duration, level = level, programDateTime = programDateTime, sn = sn, start = start, tagList = tagList, title = title, url = url)
+    val __obj = js.Dynamic.literal(cc = cc.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], programDateTime = programDateTime.asInstanceOf[js.Any], sn = sn.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], tagList = tagList.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Fragment]
   }

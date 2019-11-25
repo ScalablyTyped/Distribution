@@ -33,12 +33,12 @@ object LeaderboardScores {
     prevPageToken: String = null
   ): LeaderboardScores = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (numScores != null) __obj.updateDynamic("numScores")(numScores)
-    if (playerScore != null) __obj.updateDynamic("playerScore")(playerScore)
-    if (prevPageToken != null) __obj.updateDynamic("prevPageToken")(prevPageToken)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (numScores != null) __obj.updateDynamic("numScores")(numScores.asInstanceOf[js.Any])
+    if (playerScore != null) __obj.updateDynamic("playerScore")(playerScore.asInstanceOf[js.Any])
+    if (prevPageToken != null) __obj.updateDynamic("prevPageToken")(prevPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeaderboardScores]
   }
 }

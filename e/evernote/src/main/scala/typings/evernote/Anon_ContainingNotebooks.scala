@@ -24,10 +24,10 @@ object Anon_ContainingNotebooks {
     tags: js.Array[Tag] = null
   ): Anon_ContainingNotebooks = {
     val __obj = js.Dynamic.literal()
-    if (containingNotebooks != null) __obj.updateDynamic("containingNotebooks")(containingNotebooks)
-    if (notebooks != null) __obj.updateDynamic("notebooks")(notebooks)
-    if (notes != null) __obj.updateDynamic("notes")(notes)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (containingNotebooks != null) __obj.updateDynamic("containingNotebooks")(containingNotebooks.asInstanceOf[js.Any])
+    if (notebooks != null) __obj.updateDynamic("notebooks")(notebooks.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContainingNotebooks]
   }
 }

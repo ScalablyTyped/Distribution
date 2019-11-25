@@ -29,7 +29,7 @@ object ParticleEmitterFrameConfig {
     quantity: Int | Double = null
   ): ParticleEmitterFrameConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cycle)) __obj.updateDynamic("cycle")(cycle)
+    if (!js.isUndefined(cycle)) __obj.updateDynamic("cycle")(cycle.asInstanceOf[js.Any])
     if (frames != null) __obj.updateDynamic("frames")(frames.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParticleEmitterFrameConfig]

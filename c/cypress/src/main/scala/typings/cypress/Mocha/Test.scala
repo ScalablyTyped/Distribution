@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.TopLevel
 import typings.cypress.cypressStrings.fast
 import typings.cypress.cypressStrings.medium
 import typings.cypress.cypressStrings.slow
-import typings.cypress.cypressStrings.test
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +20,7 @@ class Test () extends Runnable {
    // added by reporters
   var err: js.UndefOr[Error] = js.native
   var speed: js.UndefOr[slow | medium | fast] = js.native
-  var `type`: test = js.native
+  var `type`: typings.cypress.cypressStrings.test = js.native
 }
 
 /**

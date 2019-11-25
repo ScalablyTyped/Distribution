@@ -26,10 +26,10 @@ object CachedResponseWillBeUsedCallbackParam {
     event: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ExtendableEvent */ js.Any = null,
     matchOptions: CacheQueryOptions = null
   ): CachedResponseWillBeUsedCallbackParam = {
-    val __obj = js.Dynamic.literal(cacheName = cacheName, request = request)
-    if (cachedResponse != null) __obj.updateDynamic("cachedResponse")(cachedResponse)
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (matchOptions != null) __obj.updateDynamic("matchOptions")(matchOptions)
+    val __obj = js.Dynamic.literal(cacheName = cacheName.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+    if (cachedResponse != null) __obj.updateDynamic("cachedResponse")(cachedResponse.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (matchOptions != null) __obj.updateDynamic("matchOptions")(matchOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CachedResponseWillBeUsedCallbackParam]
   }
 }

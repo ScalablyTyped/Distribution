@@ -23,8 +23,8 @@ object GetBucketReplicationOutput {
     $metadata: ResponseMetadata,
     ReplicationConfiguration: _UnmarshalledReplicationConfiguration = null
   ): GetBucketReplicationOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (ReplicationConfiguration != null) __obj.updateDynamic("ReplicationConfiguration")(ReplicationConfiguration)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (ReplicationConfiguration != null) __obj.updateDynamic("ReplicationConfiguration")(ReplicationConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketReplicationOutput]
   }
 }

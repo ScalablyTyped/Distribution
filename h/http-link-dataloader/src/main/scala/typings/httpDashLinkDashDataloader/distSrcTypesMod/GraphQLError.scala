@@ -14,9 +14,9 @@ trait GraphQLError extends js.Object {
 object GraphQLError {
   @scala.inline
   def apply(message: String, locations: js.Array[Anon_Column] = null, path: js.Array[String] = null): GraphQLError = {
-    val __obj = js.Dynamic.literal(message = message)
-    if (locations != null) __obj.updateDynamic("locations")(locations)
-    if (path != null) __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLError]
   }
 }

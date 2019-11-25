@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LookupTransform extends Transforms {
+trait LookupTransform extends _Transforms {
   var as: js.UndefOr[(js.Array[String | SignalRef]) | SignalRef] = js.undefined
   var default: js.UndefOr[js.Any] = js.undefined
   var fields: js.Array[FieldRef] | SignalRef
@@ -27,10 +27,10 @@ object LookupTransform {
     default: js.Any = null,
     values: js.Array[FieldRef] | SignalRef = null
   ): LookupTransform = {
-    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], from = from, key = key.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupTransform]
   }

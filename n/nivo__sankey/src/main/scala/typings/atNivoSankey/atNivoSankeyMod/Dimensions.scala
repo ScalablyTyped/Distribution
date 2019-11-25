@@ -12,7 +12,7 @@ trait Dimensions extends js.Object {
 object Dimensions {
   @scala.inline
   def apply(height: Double, width: Double): Dimensions = {
-    val __obj = js.Dynamic.literal(height = height, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Dimensions]
   }

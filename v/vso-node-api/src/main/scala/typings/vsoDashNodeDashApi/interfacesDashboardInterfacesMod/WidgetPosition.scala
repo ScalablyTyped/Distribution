@@ -12,7 +12,7 @@ trait WidgetPosition extends js.Object {
 object WidgetPosition {
   @scala.inline
   def apply(column: Double, row: Double): WidgetPosition = {
-    val __obj = js.Dynamic.literal(column = column, row = row)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WidgetPosition]
   }

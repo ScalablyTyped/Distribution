@@ -22,11 +22,11 @@ object Anon_Copy {
     visitedObjects: js.Any = null
   ): Anon_Copy = {
     val __obj = js.Dynamic.literal()
-    if (copy != null) __obj.updateDynamic("copy")(copy)
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (parentName != null) __obj.updateDynamic("parentName")(parentName)
-    if (visitedObjects != null) __obj.updateDynamic("visitedObjects")(visitedObjects)
+    if (copy != null) __obj.updateDynamic("copy")(copy.asInstanceOf[js.Any])
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (parentName != null) __obj.updateDynamic("parentName")(parentName.asInstanceOf[js.Any])
+    if (visitedObjects != null) __obj.updateDynamic("visitedObjects")(visitedObjects.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Copy]
   }
 }

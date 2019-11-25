@@ -85,17 +85,17 @@ object Debuggee {
     uniquifier: String = null
   ): Debuggee = {
     val __obj = js.Dynamic.literal()
-    if (agentVersion != null) __obj.updateDynamic("agentVersion")(agentVersion)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (extSourceContexts != null) __obj.updateDynamic("extSourceContexts")(extSourceContexts)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled)
-    if (!js.isUndefined(isInactive)) __obj.updateDynamic("isInactive")(isInactive)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (project != null) __obj.updateDynamic("project")(project)
-    if (sourceContexts != null) __obj.updateDynamic("sourceContexts")(sourceContexts)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (uniquifier != null) __obj.updateDynamic("uniquifier")(uniquifier)
+    if (agentVersion != null) __obj.updateDynamic("agentVersion")(agentVersion.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (extSourceContexts != null) __obj.updateDynamic("extSourceContexts")(extSourceContexts.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInactive)) __obj.updateDynamic("isInactive")(isInactive.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
+    if (sourceContexts != null) __obj.updateDynamic("sourceContexts")(sourceContexts.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (uniquifier != null) __obj.updateDynamic("uniquifier")(uniquifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[Debuggee]
   }
 }

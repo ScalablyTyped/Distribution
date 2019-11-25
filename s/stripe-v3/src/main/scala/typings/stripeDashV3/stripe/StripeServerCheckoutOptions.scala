@@ -11,7 +11,7 @@ trait StripeServerCheckoutOptions extends js.Object {
 object StripeServerCheckoutOptions {
   @scala.inline
   def apply(sessionId: String): StripeServerCheckoutOptions = {
-    val __obj = js.Dynamic.literal(sessionId = sessionId)
+    val __obj = js.Dynamic.literal(sessionId = sessionId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StripeServerCheckoutOptions]
   }

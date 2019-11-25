@@ -22,8 +22,8 @@ object AliasIpRange {
   @scala.inline
   def apply(ipCidrRange: String = null, subnetworkRangeName: String = null): AliasIpRange = {
     val __obj = js.Dynamic.literal()
-    if (ipCidrRange != null) __obj.updateDynamic("ipCidrRange")(ipCidrRange)
-    if (subnetworkRangeName != null) __obj.updateDynamic("subnetworkRangeName")(subnetworkRangeName)
+    if (ipCidrRange != null) __obj.updateDynamic("ipCidrRange")(ipCidrRange.asInstanceOf[js.Any])
+    if (subnetworkRangeName != null) __obj.updateDynamic("subnetworkRangeName")(subnetworkRangeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AliasIpRange]
   }
 }

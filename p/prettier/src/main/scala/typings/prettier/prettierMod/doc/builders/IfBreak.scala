@@ -19,7 +19,7 @@ object IfBreak {
     `type`: `if-break`
   ): IfBreak = {
     val __obj = js.Dynamic.literal(breakContents = breakContents.asInstanceOf[js.Any], flatContents = flatContents.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IfBreak]
   }
 }

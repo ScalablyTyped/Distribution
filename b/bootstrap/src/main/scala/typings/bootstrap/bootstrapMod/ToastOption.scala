@@ -33,8 +33,8 @@ object ToastOption {
     delay: Int | Double = null
   ): ToastOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
-    if (!js.isUndefined(autohide)) __obj.updateDynamic("autohide")(autohide)
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(autohide)) __obj.updateDynamic("autohide")(autohide.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToastOption]
   }

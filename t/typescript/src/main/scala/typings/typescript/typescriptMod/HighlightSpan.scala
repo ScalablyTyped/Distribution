@@ -22,10 +22,10 @@ object HighlightSpan {
     fileName: String = null,
     isInString: `true` = null
   ): HighlightSpan = {
-    val __obj = js.Dynamic.literal(kind = kind, textSpan = textSpan)
-    if (contextSpan != null) __obj.updateDynamic("contextSpan")(contextSpan)
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (isInString != null) __obj.updateDynamic("isInString")(isInString)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], textSpan = textSpan.asInstanceOf[js.Any])
+    if (contextSpan != null) __obj.updateDynamic("contextSpan")(contextSpan.asInstanceOf[js.Any])
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (isInString != null) __obj.updateDynamic("isInString")(isInString.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightSpan]
   }
 }

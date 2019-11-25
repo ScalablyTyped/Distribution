@@ -23,10 +23,10 @@ object AttributeInput {
   ): AttributeInput = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (variantId != null) __obj.updateDynamic("variantId")(variantId)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (variantId != null) __obj.updateDynamic("variantId")(variantId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeInput]
   }
 }

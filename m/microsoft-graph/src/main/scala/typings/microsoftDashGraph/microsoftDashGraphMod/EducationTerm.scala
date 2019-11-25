@@ -24,10 +24,10 @@ object EducationTerm {
     startDate: String = null
   ): EducationTerm = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
-    if (externalId != null) __obj.updateDynamic("externalId")(externalId)
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (externalId != null) __obj.updateDynamic("externalId")(externalId.asInstanceOf[js.Any])
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[EducationTerm]
   }
 }

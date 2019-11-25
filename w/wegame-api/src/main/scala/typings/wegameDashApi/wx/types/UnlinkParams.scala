@@ -20,7 +20,7 @@ object UnlinkParams {
     fail: /* res */ Anon_ErrMsg => Unit = null,
     success: () => Unit = null
   ): UnlinkParams = {
-    val __obj = js.Dynamic.literal(filePath = filePath)
+    val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))

@@ -24,7 +24,7 @@ object MetaRules {
     constraints: Dictionary[typings.webgme.Core.Constraint],
     pointers: Anon_Ptr
   ): MetaRules = {
-    val __obj = js.Dynamic.literal(aspects = aspects, attributes = attributes, children = children, constraints = constraints, pointers = pointers)
+    val __obj = js.Dynamic.literal(aspects = aspects.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], constraints = constraints.asInstanceOf[js.Any], pointers = pointers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MetaRules]
   }

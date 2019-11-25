@@ -48,7 +48,7 @@ object BuildDefinitionRevision {
     name: String,
     revision: Double
   ): BuildDefinitionRevision = {
-    val __obj = js.Dynamic.literal(changeType = changeType, changedBy = changedBy, changedDate = changedDate, comment = comment, definitionUrl = definitionUrl, name = name, revision = revision)
+    val __obj = js.Dynamic.literal(changeType = changeType.asInstanceOf[js.Any], changedBy = changedBy.asInstanceOf[js.Any], changedDate = changedDate.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], definitionUrl = definitionUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BuildDefinitionRevision]
   }

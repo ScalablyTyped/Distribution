@@ -26,7 +26,7 @@ trait TfvcMergeSource extends js.Object {
 object TfvcMergeSource {
   @scala.inline
   def apply(isRename: Boolean, serverItem: String, versionFrom: Double, versionTo: Double): TfvcMergeSource = {
-    val __obj = js.Dynamic.literal(isRename = isRename, serverItem = serverItem, versionFrom = versionFrom, versionTo = versionTo)
+    val __obj = js.Dynamic.literal(isRename = isRename.asInstanceOf[js.Any], serverItem = serverItem.asInstanceOf[js.Any], versionFrom = versionFrom.asInstanceOf[js.Any], versionTo = versionTo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TfvcMergeSource]
   }

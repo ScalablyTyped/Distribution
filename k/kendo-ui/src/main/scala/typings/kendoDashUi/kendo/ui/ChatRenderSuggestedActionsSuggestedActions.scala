@@ -13,8 +13,8 @@ object ChatRenderSuggestedActionsSuggestedActions {
   @scala.inline
   def apply(title: String = null, value: String = null): ChatRenderSuggestedActionsSuggestedActions = {
     val __obj = js.Dynamic.literal()
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatRenderSuggestedActionsSuggestedActions]
   }
 }

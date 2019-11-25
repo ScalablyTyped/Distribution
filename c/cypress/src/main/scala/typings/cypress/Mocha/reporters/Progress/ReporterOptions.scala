@@ -22,11 +22,11 @@ object ReporterOptions {
     verbose: js.UndefOr[Boolean] = js.undefined
   ): ReporterOptions = {
     val __obj = js.Dynamic.literal()
-    if (close != null) __obj.updateDynamic("close")(close)
-    if (complete != null) __obj.updateDynamic("complete")(complete)
-    if (incomplete != null) __obj.updateDynamic("incomplete")(incomplete)
-    if (open != null) __obj.updateDynamic("open")(open)
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
+    if (complete != null) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
+    if (incomplete != null) __obj.updateDynamic("incomplete")(incomplete.asInstanceOf[js.Any])
+    if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReporterOptions]
   }
 }

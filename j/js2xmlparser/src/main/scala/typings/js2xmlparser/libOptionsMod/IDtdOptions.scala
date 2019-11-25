@@ -37,10 +37,10 @@ object IDtdOptions {
     sysId: String = null
   ): IDtdOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(include)) __obj.updateDynamic("include")(include)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (pubId != null) __obj.updateDynamic("pubId")(pubId)
-    if (sysId != null) __obj.updateDynamic("sysId")(sysId)
+    if (!js.isUndefined(include)) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (pubId != null) __obj.updateDynamic("pubId")(pubId.asInstanceOf[js.Any])
+    if (sysId != null) __obj.updateDynamic("sysId")(sysId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDtdOptions]
   }
 }

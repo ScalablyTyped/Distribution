@@ -21,9 +21,9 @@ object Anon_CompactIsFixed {
     isHorizontalConstrained: js.UndefOr[Boolean] = js.undefined
   ): Anon_CompactIsFixed = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
-    if (!js.isUndefined(isFixed)) __obj.updateDynamic("isFixed")(isFixed)
-    if (!js.isUndefined(isHorizontalConstrained)) __obj.updateDynamic("isHorizontalConstrained")(isHorizontalConstrained)
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFixed)) __obj.updateDynamic("isFixed")(isFixed.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHorizontalConstrained)) __obj.updateDynamic("isHorizontalConstrained")(isHorizontalConstrained.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CompactIsFixed]
   }
 }

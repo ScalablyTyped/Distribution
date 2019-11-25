@@ -61,15 +61,15 @@ object RuntimeCacheOptions {
     plugins: js.Array[_] = null
   ): RuntimeCacheOptions = {
     val __obj = js.Dynamic.literal()
-    if (backgroundSync != null) __obj.updateDynamic("backgroundSync")(backgroundSync)
-    if (broadcastUpdate != null) __obj.updateDynamic("broadcastUpdate")(broadcastUpdate)
-    if (cacheName != null) __obj.updateDynamic("cacheName")(cacheName)
-    if (cacheableResponse != null) __obj.updateDynamic("cacheableResponse")(cacheableResponse)
-    if (expiration != null) __obj.updateDynamic("expiration")(expiration)
-    if (fetchOptions != null) __obj.updateDynamic("fetchOptions")(fetchOptions)
-    if (matchOptions != null) __obj.updateDynamic("matchOptions")(matchOptions)
+    if (backgroundSync != null) __obj.updateDynamic("backgroundSync")(backgroundSync.asInstanceOf[js.Any])
+    if (broadcastUpdate != null) __obj.updateDynamic("broadcastUpdate")(broadcastUpdate.asInstanceOf[js.Any])
+    if (cacheName != null) __obj.updateDynamic("cacheName")(cacheName.asInstanceOf[js.Any])
+    if (cacheableResponse != null) __obj.updateDynamic("cacheableResponse")(cacheableResponse.asInstanceOf[js.Any])
+    if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
+    if (fetchOptions != null) __obj.updateDynamic("fetchOptions")(fetchOptions.asInstanceOf[js.Any])
+    if (matchOptions != null) __obj.updateDynamic("matchOptions")(matchOptions.asInstanceOf[js.Any])
     if (networkTimeoutSeconds != null) __obj.updateDynamic("networkTimeoutSeconds")(networkTimeoutSeconds.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuntimeCacheOptions]
   }
 }

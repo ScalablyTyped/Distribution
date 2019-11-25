@@ -12,8 +12,8 @@ trait Anon_Result extends js.Object {
 object Anon_Result {
   @scala.inline
   def apply(verified: Boolean, result: js.Any = null): Anon_Result = {
-    val __obj = js.Dynamic.literal(verified = verified)
-    if (result != null) __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(verified = verified.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Result]
   }
 }

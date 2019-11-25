@@ -27,7 +27,7 @@ object UnixSocket {
     St: String,
     Type: String
   ): UnixSocket = {
-    val __obj = js.Dynamic.literal(Flags = Flags, Inode = Inode, Num = Num, Path = Path, Protocol = Protocol, RefCount = RefCount, St = St, Type = Type)
+    val __obj = js.Dynamic.literal(Flags = Flags.asInstanceOf[js.Any], Inode = Inode.asInstanceOf[js.Any], Num = Num.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any], Protocol = Protocol.asInstanceOf[js.Any], RefCount = RefCount.asInstanceOf[js.Any], St = St.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UnixSocket]
   }

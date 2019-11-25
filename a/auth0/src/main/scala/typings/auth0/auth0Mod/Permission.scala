@@ -20,10 +20,10 @@ object Permission {
     resource_server_name: String = null
   ): Permission = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (permission_name != null) __obj.updateDynamic("permission_name")(permission_name)
-    if (resource_server_identifier != null) __obj.updateDynamic("resource_server_identifier")(resource_server_identifier)
-    if (resource_server_name != null) __obj.updateDynamic("resource_server_name")(resource_server_name)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (permission_name != null) __obj.updateDynamic("permission_name")(permission_name.asInstanceOf[js.Any])
+    if (resource_server_identifier != null) __obj.updateDynamic("resource_server_identifier")(resource_server_identifier.asInstanceOf[js.Any])
+    if (resource_server_name != null) __obj.updateDynamic("resource_server_name")(resource_server_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Permission]
   }
 }

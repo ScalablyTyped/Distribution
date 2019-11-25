@@ -17,9 +17,9 @@ object QueryTablesOptions {
     timeoutIntervalInMs: Int | Double = null
   ): QueryTablesOptions = {
     val __obj = js.Dynamic.literal()
-    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode)
+    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode.asInstanceOf[js.Any])
     if (maximumExecutionTimeInMs != null) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.asInstanceOf[js.Any])
-    if (nextTableName != null) __obj.updateDynamic("nextTableName")(nextTableName)
+    if (nextTableName != null) __obj.updateDynamic("nextTableName")(nextTableName.asInstanceOf[js.Any])
     if (timeoutIntervalInMs != null) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryTablesOptions]
   }

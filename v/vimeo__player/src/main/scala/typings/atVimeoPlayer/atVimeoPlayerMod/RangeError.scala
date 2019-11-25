@@ -12,7 +12,7 @@ trait RangeError extends Error {
 object RangeError {
   @scala.inline
   def apply(message: String, method: String, name: typings.atVimeoPlayer.atVimeoPlayerStrings.RangeError): RangeError = {
-    val __obj = js.Dynamic.literal(message = message, method = method, name = name)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RangeError]
   }

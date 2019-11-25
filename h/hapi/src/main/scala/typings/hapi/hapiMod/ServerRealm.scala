@@ -31,8 +31,8 @@ object ServerRealm {
     settings: Anon_Bind,
     parent: ServerRealm = null
   ): ServerRealm = {
-    val __obj = js.Dynamic.literal(modifiers = modifiers, plugin = plugin, pluginOptions = pluginOptions, plugins = plugins, settings = settings)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(modifiers = modifiers.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any], pluginOptions = pluginOptions.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerRealm]
   }
 }

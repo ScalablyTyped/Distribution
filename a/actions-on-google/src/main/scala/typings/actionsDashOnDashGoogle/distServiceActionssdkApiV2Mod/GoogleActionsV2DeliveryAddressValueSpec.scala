@@ -15,7 +15,7 @@ object GoogleActionsV2DeliveryAddressValueSpec {
   @scala.inline
   def apply(addressOptions: GoogleActionsV2DeliveryAddressValueSpecAddressOptions = null): GoogleActionsV2DeliveryAddressValueSpec = {
     val __obj = js.Dynamic.literal()
-    if (addressOptions != null) __obj.updateDynamic("addressOptions")(addressOptions)
+    if (addressOptions != null) __obj.updateDynamic("addressOptions")(addressOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2DeliveryAddressValueSpec]
   }
 }

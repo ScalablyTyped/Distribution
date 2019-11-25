@@ -31,8 +31,8 @@ object ResumeFrame {
     `type`: `0x0d`,
     length: Int | Double = null
   ): ResumeFrame = {
-    val __obj = js.Dynamic.literal(clientPosition = clientPosition, flags = flags, majorVersion = majorVersion, minorVersion = minorVersion, resumeToken = resumeToken.asInstanceOf[js.Any], serverPosition = serverPosition, streamId = streamId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(clientPosition = clientPosition.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], majorVersion = majorVersion.asInstanceOf[js.Any], minorVersion = minorVersion.asInstanceOf[js.Any], resumeToken = resumeToken.asInstanceOf[js.Any], serverPosition = serverPosition.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResumeFrame]
   }

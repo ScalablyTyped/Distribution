@@ -17,7 +17,7 @@ trait IssuesRemoveLabelParamsDeprecatedNumber extends js.Object {
 object IssuesRemoveLabelParamsDeprecatedNumber {
   @scala.inline
   def apply(name: String, number: Double, owner: String, repo: String): IssuesRemoveLabelParamsDeprecatedNumber = {
-    val __obj = js.Dynamic.literal(name = name, number = number, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IssuesRemoveLabelParamsDeprecatedNumber]
   }

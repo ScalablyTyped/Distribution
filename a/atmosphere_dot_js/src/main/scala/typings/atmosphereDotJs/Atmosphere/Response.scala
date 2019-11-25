@@ -36,18 +36,18 @@ object Response {
     transport: String = null
   ): Response = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(closedByClientTimeout)) __obj.updateDynamic("closedByClientTimeout")(closedByClientTimeout)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (!js.isUndefined(errorHandled)) __obj.updateDynamic("errorHandled")(errorHandled)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (partialMessage != null) __obj.updateDynamic("partialMessage")(partialMessage)
-    if (reasonPhrase != null) __obj.updateDynamic("reasonPhrase")(reasonPhrase)
-    if (request != null) __obj.updateDynamic("request")(request)
-    if (responseBody != null) __obj.updateDynamic("responseBody")(responseBody)
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (!js.isUndefined(closedByClientTimeout)) __obj.updateDynamic("closedByClientTimeout")(closedByClientTimeout.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorHandled)) __obj.updateDynamic("errorHandled")(errorHandled.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (partialMessage != null) __obj.updateDynamic("partialMessage")(partialMessage.asInstanceOf[js.Any])
+    if (reasonPhrase != null) __obj.updateDynamic("reasonPhrase")(reasonPhrase.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
+    if (responseBody != null) __obj.updateDynamic("responseBody")(responseBody.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (transport != null) __obj.updateDynamic("transport")(transport)
+    if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
 }

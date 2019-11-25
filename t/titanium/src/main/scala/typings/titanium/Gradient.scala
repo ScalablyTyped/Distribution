@@ -55,14 +55,14 @@ object Gradient {
     `type`: String = null
   ): Gradient = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(backfillEnd)) __obj.updateDynamic("backfillEnd")(backfillEnd)
-    if (!js.isUndefined(backfillStart)) __obj.updateDynamic("backfillStart")(backfillStart)
-    if (colors != null) __obj.updateDynamic("colors")(colors)
-    if (endPoint != null) __obj.updateDynamic("endPoint")(endPoint)
+    if (!js.isUndefined(backfillEnd)) __obj.updateDynamic("backfillEnd")(backfillEnd.asInstanceOf[js.Any])
+    if (!js.isUndefined(backfillStart)) __obj.updateDynamic("backfillStart")(backfillStart.asInstanceOf[js.Any])
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (endPoint != null) __obj.updateDynamic("endPoint")(endPoint.asInstanceOf[js.Any])
     if (endRadius != null) __obj.updateDynamic("endRadius")(endRadius.asInstanceOf[js.Any])
-    if (startPoint != null) __obj.updateDynamic("startPoint")(startPoint)
+    if (startPoint != null) __obj.updateDynamic("startPoint")(startPoint.asInstanceOf[js.Any])
     if (startRadius != null) __obj.updateDynamic("startRadius")(startRadius.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Gradient]
   }
 }

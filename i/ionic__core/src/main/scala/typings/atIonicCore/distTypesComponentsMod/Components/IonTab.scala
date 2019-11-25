@@ -1,7 +1,5 @@
 package typings.atIonicCore.distTypesComponentsMod.Components
 
-import typings.atIonicCore.distTypesInterfaceMod.ComponentRef
-import typings.atIonicCore.distTypesInterfaceMod.FrameworkDelegate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,8 +9,12 @@ trait IonTab extends js.Object {
   /**
     * The component to display inside of the tab.
     */
-  var component: js.UndefOr[ComponentRef] = js.undefined
-  var delegate: js.UndefOr[FrameworkDelegate] = js.undefined
+  var component: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentRef */ js.Any
+  ] = js.undefined
+  var delegate: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FrameworkDelegate */ js.Any
+  ] = js.undefined
   /**
     * A tab id must be provided for each `ion-tab`. It's used internally to reference the selected tab or by the router to switch between them.
     */
@@ -29,12 +31,12 @@ object IonTab {
     active: Boolean,
     setActive: () => js.Promise[Unit],
     tab: String,
-    component: ComponentRef = null,
-    delegate: FrameworkDelegate = null
+    component: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentRef */ js.Any = null,
+    delegate: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FrameworkDelegate */ js.Any = null
   ): IonTab = {
-    val __obj = js.Dynamic.literal(active = active, setActive = js.Any.fromFunction0(setActive), tab = tab)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], setActive = js.Any.fromFunction0(setActive), tab = tab.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (delegate != null) __obj.updateDynamic("delegate")(delegate)
+    if (delegate != null) __obj.updateDynamic("delegate")(delegate.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonTab]
   }
 }

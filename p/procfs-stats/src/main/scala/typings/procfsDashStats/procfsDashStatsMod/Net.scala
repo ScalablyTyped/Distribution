@@ -36,7 +36,7 @@ object Net {
     multicast: Anon_ReceiveString,
     packets: Anon_Receive
   ): Net = {
-    val __obj = js.Dynamic.literal(Interface = Interface, bytes = bytes, carrier = carrier, colls = colls, compressed = compressed, drop = drop, errs = errs, fifo = fifo, frame = frame, multicast = multicast, packets = packets)
+    val __obj = js.Dynamic.literal(Interface = Interface.asInstanceOf[js.Any], bytes = bytes.asInstanceOf[js.Any], carrier = carrier.asInstanceOf[js.Any], colls = colls.asInstanceOf[js.Any], compressed = compressed.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any], errs = errs.asInstanceOf[js.Any], fifo = fifo.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], multicast = multicast.asInstanceOf[js.Any], packets = packets.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Net]
   }

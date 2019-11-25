@@ -16,7 +16,7 @@ object SimpleSegment {
   @scala.inline
   def apply(orFiltersForSegment: js.Array[OrFiltersForSegment] = null): SimpleSegment = {
     val __obj = js.Dynamic.literal()
-    if (orFiltersForSegment != null) __obj.updateDynamic("orFiltersForSegment")(orFiltersForSegment)
+    if (orFiltersForSegment != null) __obj.updateDynamic("orFiltersForSegment")(orFiltersForSegment.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleSegment]
   }
 }

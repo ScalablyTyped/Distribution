@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait AuthorizeResponseType extends js.Object
 
+object AuthorizeResponseType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def code: typings.loginDashWithDashAmazonDashSdkDashBrowser.loginDashWithDashAmazonDashSdkDashBrowserStrings.code = this.cast("code")
+  @scala.inline
+  def token: typings.loginDashWithDashAmazonDashSdkDashBrowser.loginDashWithDashAmazonDashSdkDashBrowserStrings.token = this.cast("token")
+}
+

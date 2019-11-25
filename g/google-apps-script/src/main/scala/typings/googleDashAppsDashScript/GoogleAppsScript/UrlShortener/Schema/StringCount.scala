@@ -13,8 +13,8 @@ object StringCount {
   @scala.inline
   def apply(count: String = null, id: String = null): StringCount = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringCount]
   }
 }

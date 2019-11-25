@@ -18,7 +18,7 @@ trait Anon_PrefixVhost extends js.Object {
 object Anon_PrefixVhost {
   @scala.inline
   def apply(prefix: String, vhost: String | js.Array[String] = null): Anon_PrefixVhost = {
-    val __obj = js.Dynamic.literal(prefix = prefix)
+    val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any])
     if (vhost != null) __obj.updateDynamic("vhost")(vhost.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PrefixVhost]
   }

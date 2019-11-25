@@ -20,9 +20,9 @@ object FieldInfo {
     stringify: js.UndefOr[Boolean] = js.undefined
   ): FieldInfo[T] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (!js.isUndefined(stringify)) __obj.updateDynamic("stringify")(stringify)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (!js.isUndefined(stringify)) __obj.updateDynamic("stringify")(stringify.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldInfo[T]]
   }
 }

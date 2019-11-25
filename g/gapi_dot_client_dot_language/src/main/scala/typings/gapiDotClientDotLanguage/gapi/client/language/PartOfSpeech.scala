@@ -48,18 +48,18 @@ object PartOfSpeech {
     voice: String = null
   ): PartOfSpeech = {
     val __obj = js.Dynamic.literal()
-    if (aspect != null) __obj.updateDynamic("aspect")(aspect)
-    if (`case` != null) __obj.updateDynamic("case")(`case`)
-    if (form != null) __obj.updateDynamic("form")(form)
-    if (gender != null) __obj.updateDynamic("gender")(gender)
-    if (mood != null) __obj.updateDynamic("mood")(mood)
-    if (number != null) __obj.updateDynamic("number")(number)
-    if (person != null) __obj.updateDynamic("person")(person)
-    if (proper != null) __obj.updateDynamic("proper")(proper)
-    if (reciprocity != null) __obj.updateDynamic("reciprocity")(reciprocity)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
-    if (tense != null) __obj.updateDynamic("tense")(tense)
-    if (voice != null) __obj.updateDynamic("voice")(voice)
+    if (aspect != null) __obj.updateDynamic("aspect")(aspect.asInstanceOf[js.Any])
+    if (`case` != null) __obj.updateDynamic("case")(`case`.asInstanceOf[js.Any])
+    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
+    if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
+    if (mood != null) __obj.updateDynamic("mood")(mood.asInstanceOf[js.Any])
+    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (person != null) __obj.updateDynamic("person")(person.asInstanceOf[js.Any])
+    if (proper != null) __obj.updateDynamic("proper")(proper.asInstanceOf[js.Any])
+    if (reciprocity != null) __obj.updateDynamic("reciprocity")(reciprocity.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (tense != null) __obj.updateDynamic("tense")(tense.asInstanceOf[js.Any])
+    if (voice != null) __obj.updateDynamic("voice")(voice.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartOfSpeech]
   }
 }

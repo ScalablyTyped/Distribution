@@ -27,7 +27,7 @@ object App {
     origin: String,
     receipts: js.Array[_]
   ): App = {
-    val __obj = js.Dynamic.literal(checkForUpdate = js.Any.fromFunction0(checkForUpdate), installOrigin = installOrigin, installTime = installTime, launch = js.Any.fromFunction0(launch), manifest = manifest, manifestURL = manifestURL, origin = origin, receipts = receipts)
+    val __obj = js.Dynamic.literal(checkForUpdate = js.Any.fromFunction0(checkForUpdate), installOrigin = installOrigin.asInstanceOf[js.Any], installTime = installTime.asInstanceOf[js.Any], launch = js.Any.fromFunction0(launch), manifest = manifest.asInstanceOf[js.Any], manifestURL = manifestURL.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], receipts = receipts.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[App]
   }

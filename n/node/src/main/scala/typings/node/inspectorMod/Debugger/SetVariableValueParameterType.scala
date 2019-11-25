@@ -32,7 +32,7 @@ object SetVariableValueParameterType {
     scopeNumber: Double,
     variableName: java.lang.String
   ): SetVariableValueParameterType = {
-    val __obj = js.Dynamic.literal(callFrameId = callFrameId, newValue = newValue, scopeNumber = scopeNumber, variableName = variableName)
+    val __obj = js.Dynamic.literal(callFrameId = callFrameId.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], scopeNumber = scopeNumber.asInstanceOf[js.Any], variableName = variableName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SetVariableValueParameterType]
   }

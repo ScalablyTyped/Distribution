@@ -30,9 +30,9 @@ object GetSamplingStatisticSummariesOutput {
     NextToken: String = null,
     SamplingStatisticSummaries: js.Array[_UnmarshalledSamplingStatisticSummary] = null
   ): GetSamplingStatisticSummariesOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (SamplingStatisticSummaries != null) __obj.updateDynamic("SamplingStatisticSummaries")(SamplingStatisticSummaries)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (SamplingStatisticSummaries != null) __obj.updateDynamic("SamplingStatisticSummaries")(SamplingStatisticSummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSamplingStatisticSummariesOutput]
   }
 }

@@ -32,7 +32,7 @@ object Transaction {
     objectStore: String => ObjectStore[js.Any, js.Any],
     objectStoreNames: DOMStringList
   ): Transaction = {
-    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), complete = complete, mode = mode.asInstanceOf[js.Any], objectStore = js.Any.fromFunction1(objectStore), objectStoreNames = objectStoreNames)
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), complete = complete.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], objectStore = js.Any.fromFunction1(objectStore), objectStoreNames = objectStoreNames.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Transaction]
   }

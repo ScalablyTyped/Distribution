@@ -34,7 +34,7 @@ object UsersResource {
     threads: ThreadsResource,
     watch: Anon_Alt => Request[WatchResponse]
   ): UsersResource = {
-    val __obj = js.Dynamic.literal(drafts = drafts, getProfile = js.Any.fromFunction1(getProfile), history = history, labels = labels, messages = messages, settings = settings, stop = js.Any.fromFunction1(stop), threads = threads, watch = js.Any.fromFunction1(watch))
+    val __obj = js.Dynamic.literal(drafts = drafts.asInstanceOf[js.Any], getProfile = js.Any.fromFunction1(getProfile), history = history.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], stop = js.Any.fromFunction1(stop), threads = threads.asInstanceOf[js.Any], watch = js.Any.fromFunction1(watch))
   
     __obj.asInstanceOf[UsersResource]
   }

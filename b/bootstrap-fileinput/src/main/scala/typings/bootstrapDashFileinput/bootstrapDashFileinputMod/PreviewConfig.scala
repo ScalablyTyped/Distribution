@@ -41,7 +41,7 @@ object PreviewConfig {
     url: String,
     width: String
   ): PreviewConfig = {
-    val __obj = js.Dynamic.literal(caption = caption, extra = extra.asInstanceOf[js.Any], frameClass = frameClass, key = key.asInstanceOf[js.Any], url = url, width = width)
+    val __obj = js.Dynamic.literal(caption = caption.asInstanceOf[js.Any], extra = extra.asInstanceOf[js.Any], frameClass = frameClass.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PreviewConfig]
   }

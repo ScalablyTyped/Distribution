@@ -25,7 +25,7 @@ object EventMap {
     items: Event[items, js.UndefOr[scala.Nothing]],
     open: Event[open, Anon_Target[I]]
   ): EventMap[I] = {
-    val __obj = js.Dynamic.literal(close = close, items = items, open = open)
+    val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventMap[I]]
   }

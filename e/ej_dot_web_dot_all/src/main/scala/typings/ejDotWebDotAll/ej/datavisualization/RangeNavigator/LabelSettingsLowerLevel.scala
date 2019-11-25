@@ -54,15 +54,15 @@ object LabelSettingsLowerLevel {
     visible: js.UndefOr[Boolean] = js.undefined
   ): LabelSettingsLowerLevel = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (gridLineStyle != null) __obj.updateDynamic("gridLineStyle")(gridLineStyle)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (gridLineStyle != null) __obj.updateDynamic("gridLineStyle")(gridLineStyle.asInstanceOf[js.Any])
     if (intervalType != null) __obj.updateDynamic("intervalType")(intervalType.asInstanceOf[js.Any])
     if (labelIntersectAction != null) __obj.updateDynamic("labelIntersectAction")(labelIntersectAction.asInstanceOf[js.Any])
     if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelSettingsLowerLevel]
   }
 }

@@ -5,8 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object nesMod {
-  import typings.nes.clientMod.^
-
   /**
     * TODO (if possible) use a drier, more robust way of doing this that
     * allows for:
@@ -18,7 +16,7 @@ package object nesMod {
     *          ClientOptions, ClientConnectOptions, ClientRequestOptions,
     *          ClientSubscribeFlags)
     */
-  type Client = ^
+  type Client = typings.nes.clientMod.^
   type ClientConnectOptions = typings.nes.clientMod.ClientConnectOptions
   type ClientOptions = typings.nes.clientMod.ClientOptions
   type ClientRequestOptions = typings.nes.clientMod.ClientRequestOptions

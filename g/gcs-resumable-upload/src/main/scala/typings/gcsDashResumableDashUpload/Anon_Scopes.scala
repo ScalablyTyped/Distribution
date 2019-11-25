@@ -12,7 +12,7 @@ object Anon_Scopes {
   @scala.inline
   def apply(scopes: js.Array[String] = null): Anon_Scopes = {
     val __obj = js.Dynamic.literal()
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Scopes]
   }
 }

@@ -28,7 +28,7 @@ trait Padding extends js.Object {
 object Padding {
   @scala.inline
   def apply(b: Double, editType: arraydraw, l: Double, r: Double, t: Double): Padding = {
-    val __obj = js.Dynamic.literal(b = b, editType = editType, l = l, r = r, t = t)
+    val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], editType = editType.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Padding]
   }

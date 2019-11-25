@@ -26,11 +26,11 @@ object Options {
     `type`: image_type = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (ec_level != null) __obj.updateDynamic("ec_level")(ec_level)
+    if (ec_level != null) __obj.updateDynamic("ec_level")(ec_level.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(parse_url)) __obj.updateDynamic("parse_url")(parse_url)
+    if (!js.isUndefined(parse_url)) __obj.updateDynamic("parse_url")(parse_url.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

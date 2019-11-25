@@ -36,16 +36,16 @@ object SyntaxHighlighterProps {
     useInlineStyles: js.UndefOr[Boolean] = js.undefined
   ): SyntaxHighlighterProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (codeTagProps != null) __obj.updateDynamic("codeTagProps")(codeTagProps)
-    if (customStyle != null) __obj.updateDynamic("customStyle")(customStyle)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (lineNumberStyle != null) __obj.updateDynamic("lineNumberStyle")(lineNumberStyle)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (codeTagProps != null) __obj.updateDynamic("codeTagProps")(codeTagProps.asInstanceOf[js.Any])
+    if (customStyle != null) __obj.updateDynamic("customStyle")(customStyle.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (lineNumberStyle != null) __obj.updateDynamic("lineNumberStyle")(lineNumberStyle.asInstanceOf[js.Any])
     if (lineProps != null) __obj.updateDynamic("lineProps")(lineProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLineNumbers)) __obj.updateDynamic("showLineNumbers")(showLineNumbers)
+    if (!js.isUndefined(showLineNumbers)) __obj.updateDynamic("showLineNumbers")(showLineNumbers.asInstanceOf[js.Any])
     if (startingLineNumber != null) __obj.updateDynamic("startingLineNumber")(startingLineNumber.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(useInlineStyles)) __obj.updateDynamic("useInlineStyles")(useInlineStyles)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(useInlineStyles)) __obj.updateDynamic("useInlineStyles")(useInlineStyles.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyntaxHighlighterProps]
   }
 }

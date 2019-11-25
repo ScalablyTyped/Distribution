@@ -21,10 +21,10 @@ object StorageOptions {
     autologin: js.UndefOr[Boolean] = js.undefined,
     keepalive: js.UndefOr[Boolean] = js.undefined
   ): StorageOptions = {
-    val __obj = js.Dynamic.literal(email = email, password = password)
-    if (!js.isUndefined(autoload)) __obj.updateDynamic("autoload")(autoload)
-    if (!js.isUndefined(autologin)) __obj.updateDynamic("autologin")(autologin)
-    if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive)
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoload)) __obj.updateDynamic("autoload")(autoload.asInstanceOf[js.Any])
+    if (!js.isUndefined(autologin)) __obj.updateDynamic("autologin")(autologin.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageOptions]
   }
 }

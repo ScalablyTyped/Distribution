@@ -35,7 +35,7 @@ trait SuffixFileTypeMap_ extends js.Object {
 object SuffixFileTypeMap_ {
   @scala.inline
   def apply(add: (String, String) => Unit, getContentType: String => Unit, map: js.Object): SuffixFileTypeMap_ = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), getContentType = js.Any.fromFunction1(getContentType), map = map)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), getContentType = js.Any.fromFunction1(getContentType), map = map.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SuffixFileTypeMap_]
   }

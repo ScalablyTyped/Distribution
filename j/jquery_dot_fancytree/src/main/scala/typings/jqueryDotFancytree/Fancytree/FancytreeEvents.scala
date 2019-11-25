@@ -128,7 +128,7 @@ object FancytreeEvents {
     if (renderNode != null) __obj.updateDynamic("renderNode")(js.Any.fromFunction2(renderNode))
     if (renderTitle != null) __obj.updateDynamic("renderTitle")(js.Any.fromFunction2(renderTitle))
     if (restore != null) __obj.updateDynamic("restore")(js.Any.fromFunction2(restore))
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl)
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction2(select))
     __obj.asInstanceOf[FancytreeEvents]
   }

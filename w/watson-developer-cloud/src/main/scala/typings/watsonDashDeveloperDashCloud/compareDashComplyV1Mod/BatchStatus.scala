@@ -43,16 +43,16 @@ object BatchStatus {
     updated: String = null
   ): BatchStatus = {
     val __obj = js.Dynamic.literal()
-    if (_function != null) __obj.updateDynamic("_function")(_function)
-    if (batch_id != null) __obj.updateDynamic("batch_id")(batch_id)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (document_counts != null) __obj.updateDynamic("document_counts")(document_counts)
-    if (input_bucket_location != null) __obj.updateDynamic("input_bucket_location")(input_bucket_location)
-    if (input_bucket_name != null) __obj.updateDynamic("input_bucket_name")(input_bucket_name)
-    if (output_bucket_location != null) __obj.updateDynamic("output_bucket_location")(output_bucket_location)
-    if (output_bucket_name != null) __obj.updateDynamic("output_bucket_name")(output_bucket_name)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
+    if (_function != null) __obj.updateDynamic("_function")(_function.asInstanceOf[js.Any])
+    if (batch_id != null) __obj.updateDynamic("batch_id")(batch_id.asInstanceOf[js.Any])
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (document_counts != null) __obj.updateDynamic("document_counts")(document_counts.asInstanceOf[js.Any])
+    if (input_bucket_location != null) __obj.updateDynamic("input_bucket_location")(input_bucket_location.asInstanceOf[js.Any])
+    if (input_bucket_name != null) __obj.updateDynamic("input_bucket_name")(input_bucket_name.asInstanceOf[js.Any])
+    if (output_bucket_location != null) __obj.updateDynamic("output_bucket_location")(output_bucket_location.asInstanceOf[js.Any])
+    if (output_bucket_name != null) __obj.updateDynamic("output_bucket_name")(output_bucket_name.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchStatus]
   }
 }

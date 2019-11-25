@@ -14,9 +14,9 @@ object OauthSession {
   @scala.inline
   def apply(accessToken: String = null, error: String = null, scope: String = null): OauthSession = {
     val __obj = js.Dynamic.literal()
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthSession]
   }
 }

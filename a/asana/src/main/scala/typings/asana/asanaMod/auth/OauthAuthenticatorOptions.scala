@@ -14,7 +14,7 @@ object OauthAuthenticatorOptions {
   def apply(credentials: Credentials | String = null, flowType: FlowType = null): OauthAuthenticatorOptions = {
     val __obj = js.Dynamic.literal()
     if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (flowType != null) __obj.updateDynamic("flowType")(flowType)
+    if (flowType != null) __obj.updateDynamic("flowType")(flowType.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthAuthenticatorOptions]
   }
 }

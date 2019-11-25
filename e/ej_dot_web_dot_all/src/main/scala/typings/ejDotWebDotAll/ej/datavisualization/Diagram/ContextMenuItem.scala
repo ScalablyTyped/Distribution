@@ -37,11 +37,11 @@ object ContextMenuItem {
     text: String = null
   ): ContextMenuItem = {
     val __obj = js.Dynamic.literal()
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (subItems != null) __obj.updateDynamic("subItems")(subItems)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (subItems != null) __obj.updateDynamic("subItems")(subItems.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuItem]
   }
 }

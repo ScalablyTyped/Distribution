@@ -25,7 +25,7 @@ object TaskOrchestrationContainer {
     parallel: Boolean,
     rollback: TaskOrchestrationContainer
   ): TaskOrchestrationContainer = {
-    val __obj = js.Dynamic.literal(children = children, continueOnError = continueOnError, data = data, itemType = itemType, maxConcurrency = maxConcurrency, parallel = parallel, rollback = rollback)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], continueOnError = continueOnError.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], itemType = itemType.asInstanceOf[js.Any], maxConcurrency = maxConcurrency.asInstanceOf[js.Any], parallel = parallel.asInstanceOf[js.Any], rollback = rollback.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TaskOrchestrationContainer]
   }

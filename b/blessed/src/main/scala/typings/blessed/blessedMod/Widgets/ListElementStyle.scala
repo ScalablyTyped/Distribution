@@ -13,8 +13,8 @@ object ListElementStyle {
   @scala.inline
   def apply(item: js.Any = null, selected: js.Any = null): ListElementStyle = {
     val __obj = js.Dynamic.literal()
-    if (item != null) __obj.updateDynamic("item")(item)
-    if (selected != null) __obj.updateDynamic("selected")(selected)
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListElementStyle]
   }
 }

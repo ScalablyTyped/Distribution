@@ -28,11 +28,11 @@ object ILocation {
     trailingComments: String = null
   ): ILocation = {
     val __obj = js.Dynamic.literal()
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
-    if (leadingDetachedComments != null) __obj.updateDynamic("leadingDetachedComments")(leadingDetachedComments)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (span != null) __obj.updateDynamic("span")(span)
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (leadingDetachedComments != null) __obj.updateDynamic("leadingDetachedComments")(leadingDetachedComments.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILocation]
   }
 }

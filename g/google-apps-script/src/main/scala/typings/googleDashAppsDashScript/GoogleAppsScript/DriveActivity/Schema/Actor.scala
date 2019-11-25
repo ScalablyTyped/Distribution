@@ -22,11 +22,11 @@ object Actor {
     user: User = null
   ): Actor = {
     val __obj = js.Dynamic.literal()
-    if (administrator != null) __obj.updateDynamic("administrator")(administrator)
-    if (anonymous != null) __obj.updateDynamic("anonymous")(anonymous)
-    if (impersonation != null) __obj.updateDynamic("impersonation")(impersonation)
-    if (system != null) __obj.updateDynamic("system")(system)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (administrator != null) __obj.updateDynamic("administrator")(administrator.asInstanceOf[js.Any])
+    if (anonymous != null) __obj.updateDynamic("anonymous")(anonymous.asInstanceOf[js.Any])
+    if (impersonation != null) __obj.updateDynamic("impersonation")(impersonation.asInstanceOf[js.Any])
+    if (system != null) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Actor]
   }
 }

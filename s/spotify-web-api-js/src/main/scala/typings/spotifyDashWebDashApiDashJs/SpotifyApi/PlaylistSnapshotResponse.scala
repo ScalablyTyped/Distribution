@@ -14,7 +14,7 @@ trait PlaylistSnapshotResponse extends js.Object {
 object PlaylistSnapshotResponse {
   @scala.inline
   def apply(snapshot_id: String): PlaylistSnapshotResponse = {
-    val __obj = js.Dynamic.literal(snapshot_id = snapshot_id)
+    val __obj = js.Dynamic.literal(snapshot_id = snapshot_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PlaylistSnapshotResponse]
   }

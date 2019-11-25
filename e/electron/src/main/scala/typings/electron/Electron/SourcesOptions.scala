@@ -32,9 +32,9 @@ object SourcesOptions {
     fetchWindowIcons: js.UndefOr[Boolean] = js.undefined,
     thumbnailSize: Size = null
   ): SourcesOptions = {
-    val __obj = js.Dynamic.literal(types = types)
-    if (!js.isUndefined(fetchWindowIcons)) __obj.updateDynamic("fetchWindowIcons")(fetchWindowIcons)
-    if (thumbnailSize != null) __obj.updateDynamic("thumbnailSize")(thumbnailSize)
+    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchWindowIcons)) __obj.updateDynamic("fetchWindowIcons")(fetchWindowIcons.asInstanceOf[js.Any])
+    if (thumbnailSize != null) __obj.updateDynamic("thumbnailSize")(thumbnailSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourcesOptions]
   }
 }

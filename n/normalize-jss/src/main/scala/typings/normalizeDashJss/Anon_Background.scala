@@ -12,7 +12,7 @@ trait Anon_Background extends js.Object {
 object Anon_Background {
   @scala.inline
   def apply(background: String, textDecorationSkip: String): Anon_Background = {
-    val __obj = js.Dynamic.literal(background = background, textDecorationSkip = textDecorationSkip)
+    val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], textDecorationSkip = textDecorationSkip.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Background]
   }

@@ -41,7 +41,7 @@ trait IHeader[T /* <: MessageType */] extends js.Object {
 object IHeader {
   @scala.inline
   def apply[T /* <: MessageType */](date: String, msg_id: String, msg_type: T, session: String, username: String, version: String): IHeader[T] = {
-    val __obj = js.Dynamic.literal(date = date, msg_id = msg_id, msg_type = msg_type.asInstanceOf[js.Any], session = session, username = username, version = version)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], msg_id = msg_id.asInstanceOf[js.Any], msg_type = msg_type.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IHeader[T]]
   }

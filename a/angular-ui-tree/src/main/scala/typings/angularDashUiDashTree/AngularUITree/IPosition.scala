@@ -47,7 +47,7 @@ object IPosition {
     startX: Double,
     startY: Double
   ): IPosition = {
-    val __obj = js.Dynamic.literal(dirAx = dirAx, dirX = dirX, dirY = dirY, distAxX = distAxX, distAxY = distAxY, distX = distX, distY = distY, lastDirX = lastDirX, lastDirY = lastDirY, lastX = lastX, lastY = lastY, moving = moving, nowX = nowX, nowY = nowY, offsetX = offsetX, offsetY = offsetY, startX = startX, startY = startY)
+    val __obj = js.Dynamic.literal(dirAx = dirAx.asInstanceOf[js.Any], dirX = dirX.asInstanceOf[js.Any], dirY = dirY.asInstanceOf[js.Any], distAxX = distAxX.asInstanceOf[js.Any], distAxY = distAxY.asInstanceOf[js.Any], distX = distX.asInstanceOf[js.Any], distY = distY.asInstanceOf[js.Any], lastDirX = lastDirX.asInstanceOf[js.Any], lastDirY = lastDirY.asInstanceOf[js.Any], lastX = lastX.asInstanceOf[js.Any], lastY = lastY.asInstanceOf[js.Any], moving = moving.asInstanceOf[js.Any], nowX = nowX.asInstanceOf[js.Any], nowY = nowY.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], startX = startX.asInstanceOf[js.Any], startY = startY.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPosition]
   }

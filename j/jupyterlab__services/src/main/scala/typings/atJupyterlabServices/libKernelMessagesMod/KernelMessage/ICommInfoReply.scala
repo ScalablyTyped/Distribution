@@ -24,7 +24,7 @@ trait ICommInfoReply extends IReplyOkContent {
 object ICommInfoReply {
   @scala.inline
   def apply(comms: StringDictionary[Anon_Targetname], status: ok): ICommInfoReply = {
-    val __obj = js.Dynamic.literal(comms = comms, status = status)
+    val __obj = js.Dynamic.literal(comms = comms.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICommInfoReply]
   }

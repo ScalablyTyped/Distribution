@@ -31,7 +31,7 @@ trait UI extends js.Object {
 object UI {
   @scala.inline
   def apply(activePrompt: PromptBase, close: () => Unit, onForceClose: () => Unit, rl: Interface): UI = {
-    val __obj = js.Dynamic.literal(activePrompt = activePrompt, close = js.Any.fromFunction0(close), onForceClose = js.Any.fromFunction0(onForceClose), rl = rl)
+    val __obj = js.Dynamic.literal(activePrompt = activePrompt.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), onForceClose = js.Any.fromFunction0(onForceClose), rl = rl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UI]
   }

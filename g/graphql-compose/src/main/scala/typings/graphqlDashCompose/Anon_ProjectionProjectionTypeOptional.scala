@@ -13,7 +13,7 @@ object Anon_ProjectionProjectionTypeOptional {
   @scala.inline
   def apply(projection: ProjectionType = null): Anon_ProjectionProjectionTypeOptional = {
     val __obj = js.Dynamic.literal()
-    if (projection != null) __obj.updateDynamic("projection")(projection)
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ProjectionProjectionTypeOptional]
   }
 }

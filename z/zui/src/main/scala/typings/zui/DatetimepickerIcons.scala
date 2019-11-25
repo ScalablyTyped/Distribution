@@ -15,10 +15,10 @@ object DatetimepickerIcons {
   @scala.inline
   def apply(date: String = null, down: String = null, time: String = null, up: String = null): DatetimepickerIcons = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (down != null) __obj.updateDynamic("down")(down)
-    if (time != null) __obj.updateDynamic("time")(time)
-    if (up != null) __obj.updateDynamic("up")(up)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (down != null) __obj.updateDynamic("down")(down.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (up != null) __obj.updateDynamic("up")(up.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatetimepickerIcons]
   }
 }

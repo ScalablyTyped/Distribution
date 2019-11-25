@@ -14,7 +14,7 @@ object IGCOptions {
   @scala.inline
   def apply(altitudeMode: IGCZ = null): IGCOptions = {
     val __obj = js.Dynamic.literal()
-    if (altitudeMode != null) __obj.updateDynamic("altitudeMode")(altitudeMode)
+    if (altitudeMode != null) __obj.updateDynamic("altitudeMode")(altitudeMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGCOptions]
   }
 }

@@ -18,9 +18,9 @@ object ContractType {
   @scala.inline
   def apply(confidence_level: String = null, location: Location = null, text: String = null): ContractType = {
     val __obj = js.Dynamic.literal()
-    if (confidence_level != null) __obj.updateDynamic("confidence_level")(confidence_level)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (confidence_level != null) __obj.updateDynamic("confidence_level")(confidence_level.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContractType]
   }
 }

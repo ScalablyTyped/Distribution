@@ -54,7 +54,7 @@ object HidDeviceInfo {
     serialNumber: String,
     vendorId: integer
   ): HidDeviceInfo = {
-    val __obj = js.Dynamic.literal(collections = collections, deviceId = deviceId, maxFeatureReportSize = maxFeatureReportSize, maxInputReportSize = maxInputReportSize, maxOutputReportSize = maxOutputReportSize, productId = productId, productName = productName, reportDescriptor = reportDescriptor, serialNumber = serialNumber, vendorId = vendorId)
+    val __obj = js.Dynamic.literal(collections = collections.asInstanceOf[js.Any], deviceId = deviceId.asInstanceOf[js.Any], maxFeatureReportSize = maxFeatureReportSize.asInstanceOf[js.Any], maxInputReportSize = maxInputReportSize.asInstanceOf[js.Any], maxOutputReportSize = maxOutputReportSize.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any], productName = productName.asInstanceOf[js.Any], reportDescriptor = reportDescriptor.asInstanceOf[js.Any], serialNumber = serialNumber.asInstanceOf[js.Any], vendorId = vendorId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HidDeviceInfo]
   }

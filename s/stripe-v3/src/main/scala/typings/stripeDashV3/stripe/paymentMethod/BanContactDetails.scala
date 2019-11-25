@@ -27,7 +27,7 @@ object BanContactDetails {
     preferred_language: en | de | fr | nl,
     verified_name: String
   ): BanContactDetails = {
-    val __obj = js.Dynamic.literal(bank_code = bank_code, bank_name = bank_name, bic = bic, iban_last4 = iban_last4, preferred_language = preferred_language.asInstanceOf[js.Any], verified_name = verified_name)
+    val __obj = js.Dynamic.literal(bank_code = bank_code.asInstanceOf[js.Any], bank_name = bank_name.asInstanceOf[js.Any], bic = bic.asInstanceOf[js.Any], iban_last4 = iban_last4.asInstanceOf[js.Any], preferred_language = preferred_language.asInstanceOf[js.Any], verified_name = verified_name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BanContactDetails]
   }

@@ -9,10 +9,10 @@ package object reduxDashDuckMod {
   import typings.reduxDashDuck.Anon_Payload
 
   type ActionCreator[A /* <: FSAHack */] = js.Function0[A] | (js.Function1[
-    /* import warning: ImportType.apply Failed type conversion: A['payload'] */ /* a */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: A['payload'] */ /* a */ js.Any, 
     A
   ])
-  type ActionHandlers[S, A /* <: Action[_] */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type ActionHandlers[S, A /* <: Action[_] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ T in A['type'] ]:? (x : S, y : std.Extract<A, {  type  :T}>): S}
     */ typings.reduxDashDuck.reduxDashDuckStrings.ActionHandlers with js.Any
   type ActionName = String

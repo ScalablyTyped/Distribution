@@ -14,7 +14,7 @@ object Anon_Index {
   def apply(index: Int | Double = null, pending: js.UndefOr[Boolean] = js.undefined): Anon_Index = {
     val __obj = js.Dynamic.literal()
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending)
+    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Index]
   }
 }

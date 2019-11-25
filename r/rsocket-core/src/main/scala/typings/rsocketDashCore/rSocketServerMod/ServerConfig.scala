@@ -28,10 +28,10 @@ object ServerConfig {
     leases: () => Leases[_] = null,
     serializers: PayloadSerializers[D, M] = null
   ): ServerConfig[D, M] = {
-    val __obj = js.Dynamic.literal(getRequestHandler = js.Any.fromFunction2(getRequestHandler), transport = transport)
+    val __obj = js.Dynamic.literal(getRequestHandler = js.Any.fromFunction2(getRequestHandler), transport = transport.asInstanceOf[js.Any])
     if (errorHandler != null) __obj.updateDynamic("errorHandler")(js.Any.fromFunction1(errorHandler))
     if (leases != null) __obj.updateDynamic("leases")(js.Any.fromFunction0(leases))
-    if (serializers != null) __obj.updateDynamic("serializers")(serializers)
+    if (serializers != null) __obj.updateDynamic("serializers")(serializers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerConfig[D, M]]
   }
 }

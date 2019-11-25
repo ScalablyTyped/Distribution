@@ -100,7 +100,7 @@ object IWidgetTracker {
     widgetUpdated: ISignal[IWidgetTracker[T], T],
     currentWidget: T = null
   ): IWidgetTracker[T] = {
-    val __obj = js.Dynamic.literal(currentChanged = currentChanged, dispose = js.Any.fromFunction0(dispose), filter = js.Any.fromFunction1(filter), find = js.Any.fromFunction1(find), forEach = js.Any.fromFunction1(forEach), has = js.Any.fromFunction1(has), inject = js.Any.fromFunction1(inject), isDisposed = isDisposed, restored = restored, size = size, widgetAdded = widgetAdded, widgetUpdated = widgetUpdated)
+    val __obj = js.Dynamic.literal(currentChanged = currentChanged.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), filter = js.Any.fromFunction1(filter), find = js.Any.fromFunction1(find), forEach = js.Any.fromFunction1(forEach), has = js.Any.fromFunction1(has), inject = js.Any.fromFunction1(inject), isDisposed = isDisposed.asInstanceOf[js.Any], restored = restored.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], widgetAdded = widgetAdded.asInstanceOf[js.Any], widgetUpdated = widgetUpdated.asInstanceOf[js.Any])
     if (currentWidget != null) __obj.updateDynamic("currentWidget")(currentWidget.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWidgetTracker[T]]
   }

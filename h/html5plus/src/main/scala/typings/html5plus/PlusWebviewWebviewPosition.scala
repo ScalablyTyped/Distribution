@@ -34,9 +34,9 @@ object PlusWebviewWebviewPosition {
   @scala.inline
   def apply(absolute: String = null, dock: String = null, static: String = null): PlusWebviewWebviewPosition = {
     val __obj = js.Dynamic.literal()
-    if (absolute != null) __obj.updateDynamic("absolute")(absolute)
-    if (dock != null) __obj.updateDynamic("dock")(dock)
-    if (static != null) __obj.updateDynamic("static")(static)
+    if (absolute != null) __obj.updateDynamic("absolute")(absolute.asInstanceOf[js.Any])
+    if (dock != null) __obj.updateDynamic("dock")(dock.asInstanceOf[js.Any])
+    if (static != null) __obj.updateDynamic("static")(static.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewPosition]
   }
 }

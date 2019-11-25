@@ -26,7 +26,7 @@ trait Anon_CommentCount extends js.Object {
 object Anon_CommentCount {
   @scala.inline
   def apply(commentCount: Double, subscriberCount: Double, videoCount: Double, viewCount: Double): Anon_CommentCount = {
-    val __obj = js.Dynamic.literal(commentCount = commentCount, subscriberCount = subscriberCount, videoCount = videoCount, viewCount = viewCount)
+    val __obj = js.Dynamic.literal(commentCount = commentCount.asInstanceOf[js.Any], subscriberCount = subscriberCount.asInstanceOf[js.Any], videoCount = videoCount.asInstanceOf[js.Any], viewCount = viewCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CommentCount]
   }

@@ -17,9 +17,9 @@ object WebhookExpressOptions {
   @scala.inline
   def apply(host: String = null, protocol: String = null, url: String = null): WebhookExpressOptions = {
     val __obj = js.Dynamic.literal()
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebhookExpressOptions]
   }
 }

@@ -142,18 +142,18 @@ object GenerateAuthUrlOpts {
     state: String = null
   ): GenerateAuthUrlOpts = {
     val __obj = js.Dynamic.literal()
-    if (access_type != null) __obj.updateDynamic("access_type")(access_type)
-    if (client_id != null) __obj.updateDynamic("client_id")(client_id)
-    if (code_challenge != null) __obj.updateDynamic("code_challenge")(code_challenge)
-    if (code_challenge_method != null) __obj.updateDynamic("code_challenge_method")(code_challenge_method)
-    if (hd != null) __obj.updateDynamic("hd")(hd)
-    if (!js.isUndefined(include_granted_scopes)) __obj.updateDynamic("include_granted_scopes")(include_granted_scopes)
-    if (login_hint != null) __obj.updateDynamic("login_hint")(login_hint)
-    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
-    if (response_type != null) __obj.updateDynamic("response_type")(response_type)
+    if (access_type != null) __obj.updateDynamic("access_type")(access_type.asInstanceOf[js.Any])
+    if (client_id != null) __obj.updateDynamic("client_id")(client_id.asInstanceOf[js.Any])
+    if (code_challenge != null) __obj.updateDynamic("code_challenge")(code_challenge.asInstanceOf[js.Any])
+    if (code_challenge_method != null) __obj.updateDynamic("code_challenge_method")(code_challenge_method.asInstanceOf[js.Any])
+    if (hd != null) __obj.updateDynamic("hd")(hd.asInstanceOf[js.Any])
+    if (!js.isUndefined(include_granted_scopes)) __obj.updateDynamic("include_granted_scopes")(include_granted_scopes.asInstanceOf[js.Any])
+    if (login_hint != null) __obj.updateDynamic("login_hint")(login_hint.asInstanceOf[js.Any])
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
+    if (response_type != null) __obj.updateDynamic("response_type")(response_type.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateAuthUrlOpts]
   }
 }

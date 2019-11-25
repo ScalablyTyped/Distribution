@@ -19,7 +19,7 @@ object HighlightsRepositoryEditReelResponseStoryQuizParticipantInfosItem {
     participants: js.Array[HighlightsRepositoryEditReelResponseParticipantsItem],
     quiz_id: String
   ): HighlightsRepositoryEditReelResponseStoryQuizParticipantInfosItem = {
-    val __obj = js.Dynamic.literal(max_id = max_id, more_available = more_available, participants = participants, quiz_id = quiz_id)
+    val __obj = js.Dynamic.literal(max_id = max_id.asInstanceOf[js.Any], more_available = more_available.asInstanceOf[js.Any], participants = participants.asInstanceOf[js.Any], quiz_id = quiz_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HighlightsRepositoryEditReelResponseStoryQuizParticipantInfosItem]
   }

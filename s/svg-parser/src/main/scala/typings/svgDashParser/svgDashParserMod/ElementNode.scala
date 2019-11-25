@@ -25,12 +25,12 @@ object ElementNode {
     tagName: String = null,
     value: String = null
   ): ElementNode = {
-    val __obj = js.Dynamic.literal(children = children)
-    __obj.updateDynamic("type")(`type`)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementNode]
   }
 }

@@ -19,7 +19,7 @@ object ProxyNativeModule {
     StringDictionary: /* propertyName */ StringDictionary[js.Any] = null
   ): ProxyNativeModule = {
     val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction1(addListener), removeListeners = js.Any.fromFunction1(removeListeners))
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ProxyNativeModule]
   }
 }

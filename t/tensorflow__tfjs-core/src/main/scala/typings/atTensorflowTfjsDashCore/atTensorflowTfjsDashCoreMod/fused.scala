@@ -4,7 +4,6 @@ import typings.atTensorflowTfjsDashCore.Anon_A
 import typings.atTensorflowTfjsDashCore.Anon_Activation
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor3D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor4D
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +27,7 @@ object fused extends js.Object {
   
   @js.native
   object matMul extends js.Object {
-    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](hasABTransposeATransposeBBiasActivationPreluActivationWeights: Anon_A[T]): T = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](hasABTransposeATransposeBBiasActivationPreluActivationWeights: Anon_A[T]): T = js.native
   }
   
 }

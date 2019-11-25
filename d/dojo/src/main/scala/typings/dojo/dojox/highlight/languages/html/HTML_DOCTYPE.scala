@@ -31,7 +31,7 @@ trait HTML_DOCTYPE extends js.Object {
 object HTML_DOCTYPE {
   @scala.inline
   def apply(begin: String, className: String, end: String, relevance: Double): HTML_DOCTYPE = {
-    val __obj = js.Dynamic.literal(begin = begin, className = className, end = end, relevance = relevance)
+    val __obj = js.Dynamic.literal(begin = begin.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], relevance = relevance.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HTML_DOCTYPE]
   }

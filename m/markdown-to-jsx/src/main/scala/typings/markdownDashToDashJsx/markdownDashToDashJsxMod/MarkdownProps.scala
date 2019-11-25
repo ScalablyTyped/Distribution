@@ -17,7 +17,7 @@ object MarkdownProps {
   def apply(children: ReactNode = null, options: MarkdownOptions = null): MarkdownProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkdownProps]
   }
 }

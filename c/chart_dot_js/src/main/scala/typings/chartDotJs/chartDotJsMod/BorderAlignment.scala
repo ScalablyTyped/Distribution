@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait BorderAlignment extends js.Object
 
+object BorderAlignment {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def center: typings.chartDotJs.chartDotJsStrings.center = this.cast("center")
+  @scala.inline
+  def inner: typings.chartDotJs.chartDotJsStrings.inner = this.cast("inner")
+}
+

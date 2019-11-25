@@ -121,15 +121,15 @@ object IBNFDef {
     qQvFunc: js.UndefOr[Boolean] = js.undefined,
     qScriptStatement: js.UndefOr[Boolean] = js.undefined
   ): IBNFDef = {
-    val __obj = js.Dynamic.literal(qBnf = qBnf, qFG = qFG, qHelpId = qHelpId, qMT = qMT, qName = qName, qNbr = qNbr, qPNbr = qPNbr, qStr = qStr)
-    if (!js.isUndefined(qAggrFunc)) __obj.updateDynamic("qAggrFunc")(qAggrFunc)
-    if (!js.isUndefined(qBnfLiteral)) __obj.updateDynamic("qBnfLiteral")(qBnfLiteral)
-    if (!js.isUndefined(qControlStatement)) __obj.updateDynamic("qControlStatement")(qControlStatement)
-    if (!js.isUndefined(qDepr)) __obj.updateDynamic("qDepr")(qDepr)
-    if (!js.isUndefined(qFieldFlag)) __obj.updateDynamic("qFieldFlag")(qFieldFlag)
-    if (!js.isUndefined(qIsBnfRule)) __obj.updateDynamic("qIsBnfRule")(qIsBnfRule)
-    if (!js.isUndefined(qQvFunc)) __obj.updateDynamic("qQvFunc")(qQvFunc)
-    if (!js.isUndefined(qScriptStatement)) __obj.updateDynamic("qScriptStatement")(qScriptStatement)
+    val __obj = js.Dynamic.literal(qBnf = qBnf.asInstanceOf[js.Any], qFG = qFG.asInstanceOf[js.Any], qHelpId = qHelpId.asInstanceOf[js.Any], qMT = qMT.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any], qNbr = qNbr.asInstanceOf[js.Any], qPNbr = qPNbr.asInstanceOf[js.Any], qStr = qStr.asInstanceOf[js.Any])
+    if (!js.isUndefined(qAggrFunc)) __obj.updateDynamic("qAggrFunc")(qAggrFunc.asInstanceOf[js.Any])
+    if (!js.isUndefined(qBnfLiteral)) __obj.updateDynamic("qBnfLiteral")(qBnfLiteral.asInstanceOf[js.Any])
+    if (!js.isUndefined(qControlStatement)) __obj.updateDynamic("qControlStatement")(qControlStatement.asInstanceOf[js.Any])
+    if (!js.isUndefined(qDepr)) __obj.updateDynamic("qDepr")(qDepr.asInstanceOf[js.Any])
+    if (!js.isUndefined(qFieldFlag)) __obj.updateDynamic("qFieldFlag")(qFieldFlag.asInstanceOf[js.Any])
+    if (!js.isUndefined(qIsBnfRule)) __obj.updateDynamic("qIsBnfRule")(qIsBnfRule.asInstanceOf[js.Any])
+    if (!js.isUndefined(qQvFunc)) __obj.updateDynamic("qQvFunc")(qQvFunc.asInstanceOf[js.Any])
+    if (!js.isUndefined(qScriptStatement)) __obj.updateDynamic("qScriptStatement")(qScriptStatement.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBNFDef]
   }
 }

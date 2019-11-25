@@ -51,11 +51,11 @@ object ResponseOptions {
     parse_response: Boolean | json | xml = null
   ): ResponseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(decode)) __obj.updateDynamic("decode")(decode)
-    if (!js.isUndefined(decode_response)) __obj.updateDynamic("decode_response")(decode_response)
-    if (output != null) __obj.updateDynamic("output")(output)
+    if (!js.isUndefined(decode)) __obj.updateDynamic("decode")(decode.asInstanceOf[js.Any])
+    if (!js.isUndefined(decode_response)) __obj.updateDynamic("decode_response")(decode_response.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
-    if (!js.isUndefined(parse_cookies)) __obj.updateDynamic("parse_cookies")(parse_cookies)
+    if (!js.isUndefined(parse_cookies)) __obj.updateDynamic("parse_cookies")(parse_cookies.asInstanceOf[js.Any])
     if (parse_response != null) __obj.updateDynamic("parse_response")(parse_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseOptions]
   }

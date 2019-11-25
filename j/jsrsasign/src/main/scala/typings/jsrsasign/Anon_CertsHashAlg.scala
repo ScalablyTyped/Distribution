@@ -15,7 +15,7 @@ trait Anon_CertsHashAlg extends js.Object {
 object Anon_CertsHashAlg {
   @scala.inline
   def apply(certs: js.Array[String], hashAlg: String, sigAlg: String, signerCert: String, signerPrvKey: String): Anon_CertsHashAlg = {
-    val __obj = js.Dynamic.literal(certs = certs, hashAlg = hashAlg, sigAlg = sigAlg, signerCert = signerCert, signerPrvKey = signerPrvKey)
+    val __obj = js.Dynamic.literal(certs = certs.asInstanceOf[js.Any], hashAlg = hashAlg.asInstanceOf[js.Any], sigAlg = sigAlg.asInstanceOf[js.Any], signerCert = signerCert.asInstanceOf[js.Any], signerPrvKey = signerPrvKey.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CertsHashAlg]
   }

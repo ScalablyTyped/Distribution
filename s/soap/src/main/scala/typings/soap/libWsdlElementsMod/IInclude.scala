@@ -12,7 +12,7 @@ trait IInclude extends js.Object {
 object IInclude {
   @scala.inline
   def apply(location: String, namespace: String): IInclude = {
-    val __obj = js.Dynamic.literal(location = location, namespace = namespace)
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IInclude]
   }

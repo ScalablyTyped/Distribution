@@ -33,9 +33,9 @@ object ECPrivateKey {
     namedCurve: String = null,
     publicKey: typings.pkijs.srcECPublicKeyMod.default = null
   ): ECPrivateKey = {
-    val __obj = js.Dynamic.literal(fromJSON = js.Any.fromFunction1(fromJSON), fromSchema = js.Any.fromFunction1(fromSchema), privateKey = privateKey, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), version = version)
-    if (namedCurve != null) __obj.updateDynamic("namedCurve")(namedCurve)
-    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey)
+    val __obj = js.Dynamic.literal(fromJSON = js.Any.fromFunction1(fromJSON), fromSchema = js.Any.fromFunction1(fromSchema), privateKey = privateKey.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), version = version.asInstanceOf[js.Any])
+    if (namedCurve != null) __obj.updateDynamic("namedCurve")(namedCurve.asInstanceOf[js.Any])
+    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ECPrivateKey]
   }
 }

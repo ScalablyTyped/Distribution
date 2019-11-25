@@ -26,7 +26,7 @@ object CalendarDayData {
     y: Double,
     value: Int | Double = null
   ): CalendarDayData = {
-    val __obj = js.Dynamic.literal(color = color, date = date, day = day, size = size, x = x, y = y)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], day = day.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarDayData]
   }

@@ -12,7 +12,7 @@ object ScrollOptions {
   @scala.inline
   def apply(behavior: ScrollBehavior = null): ScrollOptions = {
     val __obj = js.Dynamic.literal()
-    if (behavior != null) __obj.updateDynamic("behavior")(behavior)
+    if (behavior != null) __obj.updateDynamic("behavior")(behavior.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollOptions]
   }
 }

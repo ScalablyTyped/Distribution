@@ -13,7 +13,7 @@ trait Anon_Browser extends js.Object {
 object Anon_Browser {
   @scala.inline
   def apply(browser: Anon_Name, os: Anon_Name, version: Anon_Name): Anon_Browser = {
-    val __obj = js.Dynamic.literal(browser = browser, os = os, version = version)
+    val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Browser]
   }

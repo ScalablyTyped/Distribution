@@ -37,10 +37,10 @@ object WriteResponse {
     writeResults: js.Array[WriteResult] = null
   ): WriteResponse = {
     val __obj = js.Dynamic.literal()
-    if (commitTime != null) __obj.updateDynamic("commitTime")(commitTime)
-    if (streamId != null) __obj.updateDynamic("streamId")(streamId)
-    if (streamToken != null) __obj.updateDynamic("streamToken")(streamToken)
-    if (writeResults != null) __obj.updateDynamic("writeResults")(writeResults)
+    if (commitTime != null) __obj.updateDynamic("commitTime")(commitTime.asInstanceOf[js.Any])
+    if (streamId != null) __obj.updateDynamic("streamId")(streamId.asInstanceOf[js.Any])
+    if (streamToken != null) __obj.updateDynamic("streamToken")(streamToken.asInstanceOf[js.Any])
+    if (writeResults != null) __obj.updateDynamic("writeResults")(writeResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteResponse]
   }
 }

@@ -27,12 +27,12 @@ object RangeAddConfig {
     parentName: String = null,
     rangeBehaviors: RangeBehaviors = null
   ): RangeAddConfig = {
-    val __obj = js.Dynamic.literal(edgeName = edgeName)
-    __obj.updateDynamic("type")(`type`)
-    if (connectionInfo != null) __obj.updateDynamic("connectionInfo")(connectionInfo)
-    if (connectionName != null) __obj.updateDynamic("connectionName")(connectionName)
-    if (parentID != null) __obj.updateDynamic("parentID")(parentID)
-    if (parentName != null) __obj.updateDynamic("parentName")(parentName)
+    val __obj = js.Dynamic.literal(edgeName = edgeName.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (connectionInfo != null) __obj.updateDynamic("connectionInfo")(connectionInfo.asInstanceOf[js.Any])
+    if (connectionName != null) __obj.updateDynamic("connectionName")(connectionName.asInstanceOf[js.Any])
+    if (parentID != null) __obj.updateDynamic("parentID")(parentID.asInstanceOf[js.Any])
+    if (parentName != null) __obj.updateDynamic("parentName")(parentName.asInstanceOf[js.Any])
     if (rangeBehaviors != null) __obj.updateDynamic("rangeBehaviors")(rangeBehaviors.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeAddConfig]
   }

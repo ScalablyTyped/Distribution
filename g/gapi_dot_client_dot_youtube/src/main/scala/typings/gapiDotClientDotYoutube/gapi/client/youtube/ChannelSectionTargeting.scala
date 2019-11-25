@@ -21,9 +21,9 @@ object ChannelSectionTargeting {
     regions: js.Array[String] = null
   ): ChannelSectionTargeting = {
     val __obj = js.Dynamic.literal()
-    if (countries != null) __obj.updateDynamic("countries")(countries)
-    if (languages != null) __obj.updateDynamic("languages")(languages)
-    if (regions != null) __obj.updateDynamic("regions")(regions)
+    if (countries != null) __obj.updateDynamic("countries")(countries.asInstanceOf[js.Any])
+    if (languages != null) __obj.updateDynamic("languages")(languages.asInstanceOf[js.Any])
+    if (regions != null) __obj.updateDynamic("regions")(regions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelSectionTargeting]
   }
 }

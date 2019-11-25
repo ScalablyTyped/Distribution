@@ -39,8 +39,8 @@ object ImageCropData {
     displaySize: Anon_Height = null,
     resizeMode: contain | cover | stretch = null
   ): ImageCropData = {
-    val __obj = js.Dynamic.literal(offset = offset, size = size)
-    if (displaySize != null) __obj.updateDynamic("displaySize")(displaySize)
+    val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    if (displaySize != null) __obj.updateDynamic("displaySize")(displaySize.asInstanceOf[js.Any])
     if (resizeMode != null) __obj.updateDynamic("resizeMode")(resizeMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageCropData]
   }

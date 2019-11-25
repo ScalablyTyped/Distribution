@@ -12,7 +12,7 @@ trait MinutesObject extends js.Object {
 object MinutesObject {
   @scala.inline
   def apply(business: Double, calendar: Double): MinutesObject = {
-    val __obj = js.Dynamic.literal(business = business, calendar = calendar)
+    val __obj = js.Dynamic.literal(business = business.asInstanceOf[js.Any], calendar = calendar.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MinutesObject]
   }

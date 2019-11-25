@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait QueueMethod extends js.Object
 
+object QueueMethod {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def pop: typings.klaw.klawStrings.pop = this.cast("pop")
+  @scala.inline
+  def shift: typings.klaw.klawStrings.shift = this.cast("shift")
+}
+

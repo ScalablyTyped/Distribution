@@ -42,12 +42,12 @@ object GetUserInfoRes {
     userInfo: UserInfo = null
   ): GetUserInfoRes = {
     val __obj = js.Dynamic.literal()
-    if (encryptedData != null) __obj.updateDynamic("encryptedData")(encryptedData)
-    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg)
-    if (iv != null) __obj.updateDynamic("iv")(iv)
-    if (rawData != null) __obj.updateDynamic("rawData")(rawData)
-    if (signature != null) __obj.updateDynamic("signature")(signature)
-    if (userInfo != null) __obj.updateDynamic("userInfo")(userInfo)
+    if (encryptedData != null) __obj.updateDynamic("encryptedData")(encryptedData.asInstanceOf[js.Any])
+    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
+    if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
+    if (rawData != null) __obj.updateDynamic("rawData")(rawData.asInstanceOf[js.Any])
+    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
+    if (userInfo != null) __obj.updateDynamic("userInfo")(userInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserInfoRes]
   }
 }

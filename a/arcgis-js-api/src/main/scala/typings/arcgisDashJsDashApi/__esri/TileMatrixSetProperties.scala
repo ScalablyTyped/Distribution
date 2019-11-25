@@ -29,9 +29,9 @@ object TileMatrixSetProperties {
   @scala.inline
   def apply(fullExtent: ExtentProperties = null, id: String = null, tileInfo: TileInfoProperties = null): TileMatrixSetProperties = {
     val __obj = js.Dynamic.literal()
-    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (tileInfo != null) __obj.updateDynamic("tileInfo")(tileInfo)
+    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (tileInfo != null) __obj.updateDynamic("tileInfo")(tileInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileMatrixSetProperties]
   }
 }

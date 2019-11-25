@@ -35,14 +35,14 @@ object SimpleTextMarkerTemplateSettings {
     textColor: String = null
   ): SimpleTextMarkerTemplateSettings = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderThickness != null) __obj.updateDynamic("borderThickness")(borderThickness.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (getText != null) __obj.updateDynamic("getText")(getText)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (getText != null) __obj.updateDynamic("getText")(getText.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleTextMarkerTemplateSettings]
   }
 }

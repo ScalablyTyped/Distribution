@@ -13,8 +13,8 @@ trait Anon_NewValueOldValueFileEncoding extends js.Object {
 object Anon_NewValueOldValueFileEncoding {
   @scala.inline
   def apply(newValue: FileEncoding, oldValue: FileEncoding = null): Anon_NewValueOldValueFileEncoding = {
-    val __obj = js.Dynamic.literal(newValue = newValue)
-    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue)
+    val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
+    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NewValueOldValueFileEncoding]
   }
 }

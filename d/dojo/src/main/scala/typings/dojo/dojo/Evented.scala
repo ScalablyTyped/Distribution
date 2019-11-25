@@ -1,7 +1,6 @@
 package typings.dojo.dojo
 
 import typings.dojo.Anon_Remove
-import typings.dojo.Fn_E
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,6 +27,6 @@ class Evented () extends js.Object {
     * @param type
     * @param listener
     */
-  def on(`type`: String, listener: Fn_E): Anon_Remove = js.native
+  def on(`type`: String, listener: js.Function1[/* e */ js.Any, Unit]): Anon_Remove = js.native
 }
 

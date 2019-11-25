@@ -19,7 +19,7 @@ object IPreProcessedFileInfo {
     isLibFile: Boolean,
     referencedFiles: js.Array[IFileReference]
   ): IPreProcessedFileInfo = {
-    val __obj = js.Dynamic.literal(diagnostics = diagnostics, importedFiles = importedFiles, isLibFile = isLibFile, referencedFiles = referencedFiles)
+    val __obj = js.Dynamic.literal(diagnostics = diagnostics.asInstanceOf[js.Any], importedFiles = importedFiles.asInstanceOf[js.Any], isLibFile = isLibFile.asInstanceOf[js.Any], referencedFiles = referencedFiles.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPreProcessedFileInfo]
   }

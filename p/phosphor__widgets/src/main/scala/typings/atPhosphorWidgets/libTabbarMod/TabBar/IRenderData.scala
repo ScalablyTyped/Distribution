@@ -26,7 +26,7 @@ trait IRenderData[T] extends js.Object {
 object IRenderData {
   @scala.inline
   def apply[T](current: Boolean, title: Title[T], zIndex: Double): IRenderData[T] = {
-    val __obj = js.Dynamic.literal(current = current, title = title, zIndex = zIndex)
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IRenderData[T]]
   }

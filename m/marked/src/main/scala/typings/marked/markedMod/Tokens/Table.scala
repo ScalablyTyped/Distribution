@@ -24,8 +24,8 @@ object Table {
     header: js.Array[String],
     `type`: table
   ): Table = {
-    val __obj = js.Dynamic.literal(align = align, cells = cells, header = header)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], cells = cells.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Table]
   }
 }

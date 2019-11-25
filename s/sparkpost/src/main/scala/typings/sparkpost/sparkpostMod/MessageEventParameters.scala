@@ -62,10 +62,10 @@ object MessageEventParameters {
     val __obj = js.Dynamic.literal()
     if (bounce_classes != null) __obj.updateDynamic("bounce_classes")(bounce_classes.asInstanceOf[js.Any])
     if (campaign_ids != null) __obj.updateDynamic("campaign_ids")(campaign_ids.asInstanceOf[js.Any])
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (friendly_froms != null) __obj.updateDynamic("friendly_froms")(friendly_froms.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (message_ids != null) __obj.updateDynamic("message_ids")(message_ids.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
@@ -73,8 +73,8 @@ object MessageEventParameters {
     if (recipients != null) __obj.updateDynamic("recipients")(recipients.asInstanceOf[js.Any])
     if (subaccounts != null) __obj.updateDynamic("subaccounts")(subaccounts.asInstanceOf[js.Any])
     if (template_ids != null) __obj.updateDynamic("template_ids")(template_ids.asInstanceOf[js.Any])
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     if (transmission_ids != null) __obj.updateDynamic("transmission_ids")(transmission_ids.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageEventParameters]
   }

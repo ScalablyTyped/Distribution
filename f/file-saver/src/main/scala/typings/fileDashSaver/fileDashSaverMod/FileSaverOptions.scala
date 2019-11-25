@@ -15,7 +15,7 @@ trait FileSaverOptions extends js.Object {
 object FileSaverOptions {
   @scala.inline
   def apply(autoBom: Boolean): FileSaverOptions = {
-    val __obj = js.Dynamic.literal(autoBom = autoBom)
+    val __obj = js.Dynamic.literal(autoBom = autoBom.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FileSaverOptions]
   }

@@ -19,7 +19,7 @@ trait MediaLikeOrUnlikeOptions extends js.Object {
 object MediaLikeOrUnlikeOptions {
   @scala.inline
   def apply(action: like | unlike, mediaId: String, moduleInfo: LikeModuleInfoOption, d: `1` | `0` = null): MediaLikeOrUnlikeOptions = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], mediaId = mediaId, moduleInfo = moduleInfo)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], mediaId = mediaId.asInstanceOf[js.Any], moduleInfo = moduleInfo.asInstanceOf[js.Any])
     if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaLikeOrUnlikeOptions]
   }

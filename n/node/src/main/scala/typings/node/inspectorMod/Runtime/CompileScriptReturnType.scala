@@ -19,8 +19,8 @@ object CompileScriptReturnType {
   @scala.inline
   def apply(exceptionDetails: ExceptionDetails = null, scriptId: ScriptId = null): CompileScriptReturnType = {
     val __obj = js.Dynamic.literal()
-    if (exceptionDetails != null) __obj.updateDynamic("exceptionDetails")(exceptionDetails)
-    if (scriptId != null) __obj.updateDynamic("scriptId")(scriptId)
+    if (exceptionDetails != null) __obj.updateDynamic("exceptionDetails")(exceptionDetails.asInstanceOf[js.Any])
+    if (scriptId != null) __obj.updateDynamic("scriptId")(scriptId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileScriptReturnType]
   }
 }

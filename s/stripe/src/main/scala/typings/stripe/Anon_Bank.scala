@@ -12,7 +12,7 @@ object Anon_Bank {
   @scala.inline
   def apply(bank: String = null): Anon_Bank = {
     val __obj = js.Dynamic.literal()
-    if (bank != null) __obj.updateDynamic("bank")(bank)
+    if (bank != null) __obj.updateDynamic("bank")(bank.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bank]
   }
 }

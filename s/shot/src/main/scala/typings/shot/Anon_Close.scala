@@ -24,10 +24,10 @@ object Anon_Close {
     split: js.UndefOr[Boolean] = js.undefined
   ): Anon_Close = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(close)) __obj.updateDynamic("close")(close)
-    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end)
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
-    if (!js.isUndefined(split)) __obj.updateDynamic("split")(split)
+    if (!js.isUndefined(close)) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
+    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(split)) __obj.updateDynamic("split")(split.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Close]
   }
 }

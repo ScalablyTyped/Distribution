@@ -75,19 +75,19 @@ object Device {
     vendorId: Int | Double = null,
     vendorIdSource: DeviceVendorIdSource = null
   ): Device = {
-    val __obj = js.Dynamic.literal(address = address, inquiryRssi = inquiryRssi, inquiryTxPower = inquiryTxPower)
-    if (!js.isUndefined(connectable)) __obj.updateDynamic("connectable")(connectable)
-    if (!js.isUndefined(connected)) __obj.updateDynamic("connected")(connected)
-    if (!js.isUndefined(connecting)) __obj.updateDynamic("connecting")(connecting)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], inquiryRssi = inquiryRssi.asInstanceOf[js.Any], inquiryTxPower = inquiryTxPower.asInstanceOf[js.Any])
+    if (!js.isUndefined(connectable)) __obj.updateDynamic("connectable")(connectable.asInstanceOf[js.Any])
+    if (!js.isUndefined(connected)) __obj.updateDynamic("connected")(connected.asInstanceOf[js.Any])
+    if (!js.isUndefined(connecting)) __obj.updateDynamic("connecting")(connecting.asInstanceOf[js.Any])
     if (deviceClass != null) __obj.updateDynamic("deviceClass")(deviceClass.asInstanceOf[js.Any])
     if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(paired)) __obj.updateDynamic("paired")(paired)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(paired)) __obj.updateDynamic("paired")(paired.asInstanceOf[js.Any])
     if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (uuids != null) __obj.updateDynamic("uuids")(uuids)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (uuids != null) __obj.updateDynamic("uuids")(uuids.asInstanceOf[js.Any])
     if (vendorId != null) __obj.updateDynamic("vendorId")(vendorId.asInstanceOf[js.Any])
-    if (vendorIdSource != null) __obj.updateDynamic("vendorIdSource")(vendorIdSource)
+    if (vendorIdSource != null) __obj.updateDynamic("vendorIdSource")(vendorIdSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Device]
   }
 }

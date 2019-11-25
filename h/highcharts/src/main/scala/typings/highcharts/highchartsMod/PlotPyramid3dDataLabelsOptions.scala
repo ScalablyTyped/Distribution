@@ -12,7 +12,7 @@ object PlotPyramid3dDataLabelsOptions {
   @scala.inline
   def apply(verticalAlign: String = null): PlotPyramid3dDataLabelsOptions = {
     val __obj = js.Dynamic.literal()
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign)
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotPyramid3dDataLabelsOptions]
   }
 }

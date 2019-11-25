@@ -14,8 +14,8 @@ trait strings extends MDCStrings {
 object strings {
   @scala.inline
   def apply(CHIP_SELECTOR: `DOTmdc-chip`, StringDictionary: StringDictionary[String] = null): strings = {
-    val __obj = js.Dynamic.literal(CHIP_SELECTOR = CHIP_SELECTOR)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(CHIP_SELECTOR = CHIP_SELECTOR.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[strings]
   }
 }

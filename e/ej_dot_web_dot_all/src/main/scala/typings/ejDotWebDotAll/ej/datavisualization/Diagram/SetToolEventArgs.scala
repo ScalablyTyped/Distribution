@@ -17,8 +17,8 @@ object SetToolEventArgs {
   @scala.inline
   def apply(action: ActiveTool = null, source: js.Any = null): SetToolEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetToolEventArgs]
   }
 }

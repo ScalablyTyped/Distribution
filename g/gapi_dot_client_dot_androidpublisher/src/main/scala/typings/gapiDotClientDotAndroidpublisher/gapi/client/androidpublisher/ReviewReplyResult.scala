@@ -15,8 +15,8 @@ object ReviewReplyResult {
   @scala.inline
   def apply(lastEdited: Timestamp = null, replyText: String = null): ReviewReplyResult = {
     val __obj = js.Dynamic.literal()
-    if (lastEdited != null) __obj.updateDynamic("lastEdited")(lastEdited)
-    if (replyText != null) __obj.updateDynamic("replyText")(replyText)
+    if (lastEdited != null) __obj.updateDynamic("lastEdited")(lastEdited.asInstanceOf[js.Any])
+    if (replyText != null) __obj.updateDynamic("replyText")(replyText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReviewReplyResult]
   }
 }

@@ -40,15 +40,15 @@ object DeserializeOptions {
     promoteValues: js.UndefOr[Boolean] = js.undefined
   ): DeserializeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowObjectSmallerThanBufferSize)) __obj.updateDynamic("allowObjectSmallerThanBufferSize")(allowObjectSmallerThanBufferSize)
-    if (!js.isUndefined(bsonRegExp)) __obj.updateDynamic("bsonRegExp")(bsonRegExp)
-    if (!js.isUndefined(cacheFunctions)) __obj.updateDynamic("cacheFunctions")(cacheFunctions)
-    if (!js.isUndefined(cacheFunctionsCrc32)) __obj.updateDynamic("cacheFunctionsCrc32")(cacheFunctionsCrc32)
-    if (!js.isUndefined(evalFunctions)) __obj.updateDynamic("evalFunctions")(evalFunctions)
-    if (fieldsAsRaw != null) __obj.updateDynamic("fieldsAsRaw")(fieldsAsRaw)
-    if (!js.isUndefined(promoteBuffers)) __obj.updateDynamic("promoteBuffers")(promoteBuffers)
-    if (!js.isUndefined(promoteLongs)) __obj.updateDynamic("promoteLongs")(promoteLongs)
-    if (!js.isUndefined(promoteValues)) __obj.updateDynamic("promoteValues")(promoteValues)
+    if (!js.isUndefined(allowObjectSmallerThanBufferSize)) __obj.updateDynamic("allowObjectSmallerThanBufferSize")(allowObjectSmallerThanBufferSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(bsonRegExp)) __obj.updateDynamic("bsonRegExp")(bsonRegExp.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheFunctions)) __obj.updateDynamic("cacheFunctions")(cacheFunctions.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheFunctionsCrc32)) __obj.updateDynamic("cacheFunctionsCrc32")(cacheFunctionsCrc32.asInstanceOf[js.Any])
+    if (!js.isUndefined(evalFunctions)) __obj.updateDynamic("evalFunctions")(evalFunctions.asInstanceOf[js.Any])
+    if (fieldsAsRaw != null) __obj.updateDynamic("fieldsAsRaw")(fieldsAsRaw.asInstanceOf[js.Any])
+    if (!js.isUndefined(promoteBuffers)) __obj.updateDynamic("promoteBuffers")(promoteBuffers.asInstanceOf[js.Any])
+    if (!js.isUndefined(promoteLongs)) __obj.updateDynamic("promoteLongs")(promoteLongs.asInstanceOf[js.Any])
+    if (!js.isUndefined(promoteValues)) __obj.updateDynamic("promoteValues")(promoteValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeserializeOptions]
   }
 }

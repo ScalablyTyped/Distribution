@@ -23,8 +23,8 @@ object GoogleActionsV2StructuredResponse {
     orderUpdateV3: GoogleActionsOrdersV3OrderUpdate = null
   ): GoogleActionsV2StructuredResponse = {
     val __obj = js.Dynamic.literal()
-    if (orderUpdate != null) __obj.updateDynamic("orderUpdate")(orderUpdate)
-    if (orderUpdateV3 != null) __obj.updateDynamic("orderUpdateV3")(orderUpdateV3)
+    if (orderUpdate != null) __obj.updateDynamic("orderUpdate")(orderUpdate.asInstanceOf[js.Any])
+    if (orderUpdateV3 != null) __obj.updateDynamic("orderUpdateV3")(orderUpdateV3.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2StructuredResponse]
   }
 }

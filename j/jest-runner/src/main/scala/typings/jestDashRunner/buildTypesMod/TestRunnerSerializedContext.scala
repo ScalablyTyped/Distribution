@@ -13,7 +13,7 @@ object TestRunnerSerializedContext {
   @scala.inline
   def apply(changedFiles: js.Array[Path] = null): TestRunnerSerializedContext = {
     val __obj = js.Dynamic.literal()
-    if (changedFiles != null) __obj.updateDynamic("changedFiles")(changedFiles)
+    if (changedFiles != null) __obj.updateDynamic("changedFiles")(changedFiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestRunnerSerializedContext]
   }
 }

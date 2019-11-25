@@ -24,10 +24,10 @@ object WebServerConfig {
   ): WebServerConfig = {
     val __obj = js.Dynamic.literal()
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
-    if (syncOptions != null) __obj.updateDynamic("syncOptions")(syncOptions)
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
+    if (syncOptions != null) __obj.updateDynamic("syncOptions")(syncOptions.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch)
+    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebServerConfig]
   }
 }

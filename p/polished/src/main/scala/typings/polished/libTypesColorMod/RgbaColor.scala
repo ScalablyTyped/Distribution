@@ -14,7 +14,7 @@ trait RgbaColor extends js.Object {
 object RgbaColor {
   @scala.inline
   def apply(alpha: Double, blue: Double, green: Double, red: Double): RgbaColor = {
-    val __obj = js.Dynamic.literal(alpha = alpha, blue = blue, green = green, red = red)
+    val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], blue = blue.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RgbaColor]
   }

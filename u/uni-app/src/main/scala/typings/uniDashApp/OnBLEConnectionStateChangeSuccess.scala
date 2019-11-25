@@ -19,8 +19,8 @@ object OnBLEConnectionStateChangeSuccess {
   @scala.inline
   def apply(connected: js.UndefOr[Boolean] = js.undefined, deviceId: String = null): OnBLEConnectionStateChangeSuccess = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(connected)) __obj.updateDynamic("connected")(connected)
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
+    if (!js.isUndefined(connected)) __obj.updateDynamic("connected")(connected.asInstanceOf[js.Any])
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBLEConnectionStateChangeSuccess]
   }
 }

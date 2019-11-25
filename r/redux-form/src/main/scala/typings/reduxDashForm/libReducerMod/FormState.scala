@@ -30,15 +30,15 @@ object FormState {
     submitting: js.UndefOr[Boolean] = js.undefined,
     values: StringDictionary[js.Any] = null
   ): FormState = {
-    val __obj = js.Dynamic.literal(registeredFields = registeredFields)
-    if (active != null) __obj.updateDynamic("active")(active)
-    if (!js.isUndefined(anyTouched)) __obj.updateDynamic("anyTouched")(anyTouched)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (submitErrors != null) __obj.updateDynamic("submitErrors")(submitErrors)
-    if (!js.isUndefined(submitFailed)) __obj.updateDynamic("submitFailed")(submitFailed)
-    if (!js.isUndefined(submitting)) __obj.updateDynamic("submitting")(submitting)
-    if (values != null) __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(registeredFields = registeredFields.asInstanceOf[js.Any])
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(anyTouched)) __obj.updateDynamic("anyTouched")(anyTouched.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (submitErrors != null) __obj.updateDynamic("submitErrors")(submitErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(submitFailed)) __obj.updateDynamic("submitFailed")(submitFailed.asInstanceOf[js.Any])
+    if (!js.isUndefined(submitting)) __obj.updateDynamic("submitting")(submitting.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormState]
   }
 }

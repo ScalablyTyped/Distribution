@@ -19,7 +19,7 @@ trait PackageVersion extends js.Object {
 object PackageVersion {
   @scala.inline
   def apply(build: Double, major: Double, minor: Double, revision: Double): PackageVersion = {
-    val __obj = js.Dynamic.literal(build = build, major = major, minor = minor, revision = revision)
+    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PackageVersion]
   }

@@ -88,20 +88,20 @@ object ReportingDescriptor {
     relationships: js.Array[ReportingDescriptorRelationship] = null,
     shortDescription: MultiformatMessageString = null
   ): ReportingDescriptor = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (defaultConfiguration != null) __obj.updateDynamic("defaultConfiguration")(defaultConfiguration)
-    if (deprecatedGuids != null) __obj.updateDynamic("deprecatedGuids")(deprecatedGuids)
-    if (deprecatedIds != null) __obj.updateDynamic("deprecatedIds")(deprecatedIds)
-    if (deprecatedNames != null) __obj.updateDynamic("deprecatedNames")(deprecatedNames)
-    if (fullDescription != null) __obj.updateDynamic("fullDescription")(fullDescription)
-    if (guid != null) __obj.updateDynamic("guid")(guid)
-    if (help != null) __obj.updateDynamic("help")(help)
-    if (helpUri != null) __obj.updateDynamic("helpUri")(helpUri)
-    if (messageStrings != null) __obj.updateDynamic("messageStrings")(messageStrings)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (relationships != null) __obj.updateDynamic("relationships")(relationships)
-    if (shortDescription != null) __obj.updateDynamic("shortDescription")(shortDescription)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (defaultConfiguration != null) __obj.updateDynamic("defaultConfiguration")(defaultConfiguration.asInstanceOf[js.Any])
+    if (deprecatedGuids != null) __obj.updateDynamic("deprecatedGuids")(deprecatedGuids.asInstanceOf[js.Any])
+    if (deprecatedIds != null) __obj.updateDynamic("deprecatedIds")(deprecatedIds.asInstanceOf[js.Any])
+    if (deprecatedNames != null) __obj.updateDynamic("deprecatedNames")(deprecatedNames.asInstanceOf[js.Any])
+    if (fullDescription != null) __obj.updateDynamic("fullDescription")(fullDescription.asInstanceOf[js.Any])
+    if (guid != null) __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
+    if (help != null) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
+    if (helpUri != null) __obj.updateDynamic("helpUri")(helpUri.asInstanceOf[js.Any])
+    if (messageStrings != null) __obj.updateDynamic("messageStrings")(messageStrings.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (relationships != null) __obj.updateDynamic("relationships")(relationships.asInstanceOf[js.Any])
+    if (shortDescription != null) __obj.updateDynamic("shortDescription")(shortDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportingDescriptor]
   }
 }

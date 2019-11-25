@@ -22,7 +22,7 @@ trait GetApnsSandboxChannelOutput extends OutputTypesUnion {
 object GetApnsSandboxChannelOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, APNSSandboxChannelResponse: _UnmarshalledAPNSSandboxChannelResponse): GetApnsSandboxChannelOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, APNSSandboxChannelResponse = APNSSandboxChannelResponse)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], APNSSandboxChannelResponse = APNSSandboxChannelResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetApnsSandboxChannelOutput]
   }

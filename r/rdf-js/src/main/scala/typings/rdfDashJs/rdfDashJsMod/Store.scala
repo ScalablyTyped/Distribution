@@ -21,7 +21,7 @@ trait Store[Q /* <: BaseQuad */]
     * @return The resulting event emitter.
     */
   @JSName("deleteGraph")
-  def deleteGraph_graph(graph: /* import warning: ImportType.apply Failed type conversion: Q['graph'] */ js.Any): EventEmitter = js.native
+  def deleteGraph_graph(graph: /* import warning: importer.ImportType#apply Failed type conversion: Q['graph'] */ js.Any): EventEmitter = js.native
   /**
     * Removes all streamed quads.
     *

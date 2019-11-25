@@ -20,7 +20,7 @@ trait FlowChar extends js.Object {
 object FlowChar {
   @scala.inline
   def apply(char: `{` | `}` | `[` | `]` | `,` | `?` | `:`, offset: Double, origOffset: Int | Double = null): FlowChar = {
-    val __obj = js.Dynamic.literal(char = char.asInstanceOf[js.Any], offset = offset)
+    val __obj = js.Dynamic.literal(char = char.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
     if (origOffset != null) __obj.updateDynamic("origOffset")(origOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowChar]
   }

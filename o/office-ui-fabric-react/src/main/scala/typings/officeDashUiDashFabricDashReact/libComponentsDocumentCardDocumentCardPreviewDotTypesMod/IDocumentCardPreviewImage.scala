@@ -90,18 +90,18 @@ object IDocumentCardPreviewImage {
     width: Int | Double = null
   ): IDocumentCardPreviewImage = {
     val __obj = js.Dynamic.literal()
-    if (accentColor != null) __obj.updateDynamic("accentColor")(accentColor)
+    if (accentColor != null) __obj.updateDynamic("accentColor")(accentColor.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (errorImageSrc != null) __obj.updateDynamic("errorImageSrc")(errorImageSrc)
+    if (errorImageSrc != null) __obj.updateDynamic("errorImageSrc")(errorImageSrc.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (iconSrc != null) __obj.updateDynamic("iconSrc")(iconSrc)
-    if (imageFit != null) __obj.updateDynamic("imageFit")(imageFit)
-    if (linkProps != null) __obj.updateDynamic("linkProps")(linkProps)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (previewIconContainerClass != null) __obj.updateDynamic("previewIconContainerClass")(previewIconContainerClass)
-    if (previewIconProps != null) __obj.updateDynamic("previewIconProps")(previewIconProps)
-    if (previewImageSrc != null) __obj.updateDynamic("previewImageSrc")(previewImageSrc)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (iconSrc != null) __obj.updateDynamic("iconSrc")(iconSrc.asInstanceOf[js.Any])
+    if (imageFit != null) __obj.updateDynamic("imageFit")(imageFit.asInstanceOf[js.Any])
+    if (linkProps != null) __obj.updateDynamic("linkProps")(linkProps.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (previewIconContainerClass != null) __obj.updateDynamic("previewIconContainerClass")(previewIconContainerClass.asInstanceOf[js.Any])
+    if (previewIconProps != null) __obj.updateDynamic("previewIconProps")(previewIconProps.asInstanceOf[js.Any])
+    if (previewImageSrc != null) __obj.updateDynamic("previewImageSrc")(previewImageSrc.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocumentCardPreviewImage]
   }

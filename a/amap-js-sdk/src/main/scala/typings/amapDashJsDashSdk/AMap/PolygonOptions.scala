@@ -34,15 +34,15 @@ object PolygonOptions {
     zIndex: Int | Double = null
   ): PolygonOptions = {
     val __obj = js.Dynamic.literal()
-    if (extData != null) __obj.updateDynamic("extData")(extData)
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (extData != null) __obj.updateDynamic("extData")(extData.asInstanceOf[js.Any])
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
-    if (strokeDasharray != null) __obj.updateDynamic("strokeDasharray")(strokeDasharray)
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
+    if (strokeDasharray != null) __obj.updateDynamic("strokeDasharray")(strokeDasharray.asInstanceOf[js.Any])
     if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
-    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle)
+    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle.asInstanceOf[js.Any])
     if (strokeWeight != null) __obj.updateDynamic("strokeWeight")(strokeWeight.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolygonOptions]

@@ -40,20 +40,20 @@ object StyleOptions {
     textTransform: String = null
   ): StyleOptions = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize)
-    if (fontSmoothing != null) __obj.updateDynamic("fontSmoothing")(fontSmoothing)
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
-    if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (fontSmoothing != null) __obj.updateDynamic("fontSmoothing")(fontSmoothing.asInstanceOf[js.Any])
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
+    if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor)
-    if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing)
-    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight)
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
-    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration)
-    if (textShadow != null) __obj.updateDynamic("textShadow")(textShadow)
-    if (textTransform != null) __obj.updateDynamic("textTransform")(textTransform)
+    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor.asInstanceOf[js.Any])
+    if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
+    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
+    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
+    if (textShadow != null) __obj.updateDynamic("textShadow")(textShadow.asInstanceOf[js.Any])
+    if (textTransform != null) __obj.updateDynamic("textTransform")(textTransform.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleOptions]
   }
 }

@@ -27,8 +27,8 @@ object CellFocusedEvent {
     rowPinned: String,
     `type`: String
   ): CellFocusedEvent = {
-    val __obj = js.Dynamic.literal(api = api, column = column, columnApi = columnApi, floating = floating, forceBrowserFocus = forceBrowserFocus, rowIndex = rowIndex, rowPinned = rowPinned)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], floating = floating.asInstanceOf[js.Any], forceBrowserFocus = forceBrowserFocus.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any], rowPinned = rowPinned.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellFocusedEvent]
   }
 }

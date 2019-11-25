@@ -33,7 +33,7 @@ package object atHapiJoiMod {
   type Schema = _Schema | ObjectSchema[js.Any]
   type SchemaFunction = js.Function1[/* schema */ Schema, Schema]
   type SchemaLike = String | Double | Boolean | js.Object | Null | Schema | SchemaMap[js.Any]
-  type SchemaMap[TSchema] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type SchemaMap[TSchema] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof TSchema ]:? @hapi/joi.@hapi/joi.SchemaLike | std.Array<@hapi/joi.@hapi/joi.SchemaLike>}
     */ typings.atHapiJoi.atHapiJoiStrings.SchemaMap with js.Any
   type ValidationErrorFunction = js.Function1[/* errors */ js.Array[ValidationErrorItem], String | ValidationErrorItem | Error]

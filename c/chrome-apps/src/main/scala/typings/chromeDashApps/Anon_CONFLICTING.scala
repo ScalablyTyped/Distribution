@@ -16,7 +16,7 @@ trait Anon_CONFLICTING extends js.Object {
 object Anon_CONFLICTING {
   @scala.inline
   def apply(CONFLICTING: conflicting, PENDING: pending, SYNCED: synced): Anon_CONFLICTING = {
-    val __obj = js.Dynamic.literal(CONFLICTING = CONFLICTING, PENDING = PENDING, SYNCED = SYNCED)
+    val __obj = js.Dynamic.literal(CONFLICTING = CONFLICTING.asInstanceOf[js.Any], PENDING = PENDING.asInstanceOf[js.Any], SYNCED = SYNCED.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CONFLICTING]
   }

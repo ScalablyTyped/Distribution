@@ -12,7 +12,7 @@ trait Anon_Currency extends js.Object {
 object Anon_Currency {
   @scala.inline
   def apply(currency: Anon_Style, percent: Anon_Style): Anon_Currency = {
-    val __obj = js.Dynamic.literal(currency = currency, percent = percent)
+    val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Currency]
   }

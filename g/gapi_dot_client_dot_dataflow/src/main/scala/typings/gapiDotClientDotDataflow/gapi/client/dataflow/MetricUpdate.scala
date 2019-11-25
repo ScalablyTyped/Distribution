@@ -79,16 +79,16 @@ object MetricUpdate {
     updateTime: String = null
   ): MetricUpdate = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cumulative)) __obj.updateDynamic("cumulative")(cumulative)
-    if (distribution != null) __obj.updateDynamic("distribution")(distribution)
-    if (internal != null) __obj.updateDynamic("internal")(internal)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (meanCount != null) __obj.updateDynamic("meanCount")(meanCount)
-    if (meanSum != null) __obj.updateDynamic("meanSum")(meanSum)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (scalar != null) __obj.updateDynamic("scalar")(scalar)
-    if (set != null) __obj.updateDynamic("set")(set)
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    if (!js.isUndefined(cumulative)) __obj.updateDynamic("cumulative")(cumulative.asInstanceOf[js.Any])
+    if (distribution != null) __obj.updateDynamic("distribution")(distribution.asInstanceOf[js.Any])
+    if (internal != null) __obj.updateDynamic("internal")(internal.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (meanCount != null) __obj.updateDynamic("meanCount")(meanCount.asInstanceOf[js.Any])
+    if (meanSum != null) __obj.updateDynamic("meanSum")(meanSum.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (scalar != null) __obj.updateDynamic("scalar")(scalar.asInstanceOf[js.Any])
+    if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricUpdate]
   }
 }

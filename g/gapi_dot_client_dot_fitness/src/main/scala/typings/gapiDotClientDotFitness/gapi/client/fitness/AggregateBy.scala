@@ -21,8 +21,8 @@ object AggregateBy {
   @scala.inline
   def apply(dataSourceId: String = null, dataTypeName: String = null): AggregateBy = {
     val __obj = js.Dynamic.literal()
-    if (dataSourceId != null) __obj.updateDynamic("dataSourceId")(dataSourceId)
-    if (dataTypeName != null) __obj.updateDynamic("dataTypeName")(dataTypeName)
+    if (dataSourceId != null) __obj.updateDynamic("dataSourceId")(dataSourceId.asInstanceOf[js.Any])
+    if (dataTypeName != null) __obj.updateDynamic("dataTypeName")(dataTypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregateBy]
   }
 }

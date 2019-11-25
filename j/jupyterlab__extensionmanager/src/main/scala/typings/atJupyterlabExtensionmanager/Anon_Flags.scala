@@ -26,8 +26,8 @@ trait Anon_Flags extends js.Object {
 object Anon_Flags {
   @scala.inline
   def apply(flags: Anon_Insecure, `package`: Anon_Date, score: Anon_Detail, searchScore: Double): Anon_Flags = {
-    val __obj = js.Dynamic.literal(flags = flags, score = score, searchScore = searchScore)
-    __obj.updateDynamic("package")(`package`)
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], searchScore = searchScore.asInstanceOf[js.Any])
+    __obj.updateDynamic("package")(`package`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Flags]
   }
 }

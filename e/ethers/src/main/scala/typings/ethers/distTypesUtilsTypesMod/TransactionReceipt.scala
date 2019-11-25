@@ -35,17 +35,17 @@ object TransactionReceipt {
     transactionHash: String = null,
     transactionIndex: Int | Double = null
   ): TransactionReceipt = {
-    val __obj = js.Dynamic.literal(byzantium = byzantium)
-    if (blockHash != null) __obj.updateDynamic("blockHash")(blockHash)
+    val __obj = js.Dynamic.literal(byzantium = byzantium.asInstanceOf[js.Any])
+    if (blockHash != null) __obj.updateDynamic("blockHash")(blockHash.asInstanceOf[js.Any])
     if (blockNumber != null) __obj.updateDynamic("blockNumber")(blockNumber.asInstanceOf[js.Any])
-    if (contractAddress != null) __obj.updateDynamic("contractAddress")(contractAddress)
-    if (cumulativeGasUsed != null) __obj.updateDynamic("cumulativeGasUsed")(cumulativeGasUsed)
-    if (gasUsed != null) __obj.updateDynamic("gasUsed")(gasUsed)
-    if (logs != null) __obj.updateDynamic("logs")(logs)
-    if (logsBloom != null) __obj.updateDynamic("logsBloom")(logsBloom)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (contractAddress != null) __obj.updateDynamic("contractAddress")(contractAddress.asInstanceOf[js.Any])
+    if (cumulativeGasUsed != null) __obj.updateDynamic("cumulativeGasUsed")(cumulativeGasUsed.asInstanceOf[js.Any])
+    if (gasUsed != null) __obj.updateDynamic("gasUsed")(gasUsed.asInstanceOf[js.Any])
+    if (logs != null) __obj.updateDynamic("logs")(logs.asInstanceOf[js.Any])
+    if (logsBloom != null) __obj.updateDynamic("logsBloom")(logsBloom.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (transactionHash != null) __obj.updateDynamic("transactionHash")(transactionHash)
+    if (transactionHash != null) __obj.updateDynamic("transactionHash")(transactionHash.asInstanceOf[js.Any])
     if (transactionIndex != null) __obj.updateDynamic("transactionIndex")(transactionIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionReceipt]
   }

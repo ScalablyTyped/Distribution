@@ -40,9 +40,9 @@ object IDragOptions {
     dragHandleSelector: String = null,
     keyboardMoveIconProps: IIconProps = null
   ): IDragOptions = {
-    val __obj = js.Dynamic.literal(closeMenuItemText = closeMenuItemText, menu = menu, moveMenuItemText = moveMenuItemText)
-    if (dragHandleSelector != null) __obj.updateDynamic("dragHandleSelector")(dragHandleSelector)
-    if (keyboardMoveIconProps != null) __obj.updateDynamic("keyboardMoveIconProps")(keyboardMoveIconProps)
+    val __obj = js.Dynamic.literal(closeMenuItemText = closeMenuItemText.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], moveMenuItemText = moveMenuItemText.asInstanceOf[js.Any])
+    if (dragHandleSelector != null) __obj.updateDynamic("dragHandleSelector")(dragHandleSelector.asInstanceOf[js.Any])
+    if (keyboardMoveIconProps != null) __obj.updateDynamic("keyboardMoveIconProps")(keyboardMoveIconProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDragOptions]
   }
 }

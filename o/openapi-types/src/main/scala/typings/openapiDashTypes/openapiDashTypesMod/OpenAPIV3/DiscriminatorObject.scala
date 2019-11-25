@@ -13,8 +13,8 @@ trait DiscriminatorObject extends js.Object {
 object DiscriminatorObject {
   @scala.inline
   def apply(propertyName: String, mapping: StringDictionary[String] = null): DiscriminatorObject = {
-    val __obj = js.Dynamic.literal(propertyName = propertyName)
-    if (mapping != null) __obj.updateDynamic("mapping")(mapping)
+    val __obj = js.Dynamic.literal(propertyName = propertyName.asInstanceOf[js.Any])
+    if (mapping != null) __obj.updateDynamic("mapping")(mapping.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiscriminatorObject]
   }
 }

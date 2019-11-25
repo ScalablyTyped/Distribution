@@ -26,12 +26,12 @@ object Header {
     time: Int | Double = null
   ): Header = {
     val __obj = js.Dynamic.literal()
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (extra != null) __obj.updateDynamic("extra")(extra)
-    if (!js.isUndefined(hcrc)) __obj.updateDynamic("hcrc")(hcrc)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
+    if (!js.isUndefined(hcrc)) __obj.updateDynamic("hcrc")(hcrc.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (os != null) __obj.updateDynamic("os")(os.asInstanceOf[js.Any])
-    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[Header]
   }

@@ -77,19 +77,19 @@ object DropdownTheme {
     values: String = null
   ): DropdownTheme = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active)
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
-    if (dropdown != null) __obj.updateDynamic("dropdown")(dropdown)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (errored != null) __obj.updateDynamic("errored")(errored)
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (required != null) __obj.updateDynamic("required")(required)
-    if (selected != null) __obj.updateDynamic("selected")(selected)
-    if (templateValue != null) __obj.updateDynamic("templateValue")(templateValue)
-    if (up != null) __obj.updateDynamic("up")(up)
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (dropdown != null) __obj.updateDynamic("dropdown")(dropdown.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (errored != null) __obj.updateDynamic("errored")(errored.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (templateValue != null) __obj.updateDynamic("templateValue")(templateValue.asInstanceOf[js.Any])
+    if (up != null) __obj.updateDynamic("up")(up.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropdownTheme]
   }
 }

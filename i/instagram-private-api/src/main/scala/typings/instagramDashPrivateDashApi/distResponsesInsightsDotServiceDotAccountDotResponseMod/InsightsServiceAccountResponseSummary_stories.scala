@@ -12,7 +12,7 @@ trait InsightsServiceAccountResponseSummary_stories extends js.Object {
 object InsightsServiceAccountResponseSummary_stories {
   @scala.inline
   def apply(count: Double, edges: js.Array[_]): InsightsServiceAccountResponseSummary_stories = {
-    val __obj = js.Dynamic.literal(count = count, edges = edges)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], edges = edges.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServiceAccountResponseSummary_stories]
   }

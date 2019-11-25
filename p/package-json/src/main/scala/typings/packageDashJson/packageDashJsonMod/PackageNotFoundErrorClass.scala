@@ -17,8 +17,8 @@ object PackageNotFoundErrorClass {
     name: typings.packageDashJson.packageDashJsonStrings.PackageNotFoundError,
     stack: String = null
   ): PackageNotFoundErrorClass = {
-    val __obj = js.Dynamic.literal(message = message, name = name)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackageNotFoundErrorClass]
   }
 }

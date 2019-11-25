@@ -18,9 +18,9 @@ object IEditableCellState {
     savedValue: String = null
   ): IEditableCellState = {
     val __obj = js.Dynamic.literal()
-    if (dirtyValue != null) __obj.updateDynamic("dirtyValue")(dirtyValue)
-    if (!js.isUndefined(isEditing)) __obj.updateDynamic("isEditing")(isEditing)
-    if (savedValue != null) __obj.updateDynamic("savedValue")(savedValue)
+    if (dirtyValue != null) __obj.updateDynamic("dirtyValue")(dirtyValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEditing)) __obj.updateDynamic("isEditing")(isEditing.asInstanceOf[js.Any])
+    if (savedValue != null) __obj.updateDynamic("savedValue")(savedValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditableCellState]
   }
 }

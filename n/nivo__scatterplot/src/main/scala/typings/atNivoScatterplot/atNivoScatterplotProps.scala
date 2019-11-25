@@ -13,10 +13,10 @@ trait atNivoScatterplotProps {
   def ResponsiveScatterPlotCanvasProps: typings.atNivoScatterplot.atNivoScatterplotMod.ScatterPlotCanvasProps.type = typings.atNivoScatterplot.atNivoScatterplotMod.ScatterPlotCanvasProps
   type ResponsiveScatterPlotCanvasProps = typings.atNivoScatterplot.atNivoScatterplotMod.ScatterPlotCanvasProps
   @scala.inline
-  def ScatterPlotProps: typings.atNivoScatterplot.ScatterPlotSvgPropsDimensions.type = typings.atNivoScatterplot.ScatterPlotSvgPropsDimensions
+  def ScatterPlotProps: ScatterPlotSvgPropsDimensions.type = typings.atNivoScatterplot.ScatterPlotSvgPropsDimensions
   type ScatterPlotProps = ScatterPlotSvgPropsDimensions
   @scala.inline
-  def ScatterPlotCanvasProps: typings.atNivoScatterplot.ScatterPlotCanvasPropsDimensions.type = typings.atNivoScatterplot.ScatterPlotCanvasPropsDimensions
+  def ScatterPlotCanvasProps: ScatterPlotCanvasPropsDimensions.type = typings.atNivoScatterplot.ScatterPlotCanvasPropsDimensions
   type ScatterPlotCanvasProps = ScatterPlotCanvasPropsDimensions
 }
 

@@ -21,8 +21,8 @@ trait RenderOptions extends js.Object {
 object RenderOptions {
   @scala.inline
   def apply(E: js.Any, G: js.Any, N: js.Any, path: String, `type`: String, use: String): RenderOptions = {
-    val __obj = js.Dynamic.literal(E = E, G = G, N = N, path = path, use = use)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(E = E.asInstanceOf[js.Any], G = G.asInstanceOf[js.Any], N = N.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderOptions]
   }
 }

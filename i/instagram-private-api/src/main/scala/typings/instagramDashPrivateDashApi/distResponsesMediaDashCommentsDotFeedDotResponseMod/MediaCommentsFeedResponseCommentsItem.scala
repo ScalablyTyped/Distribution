@@ -61,12 +61,12 @@ object MediaCommentsFeedResponseCommentsItem {
     num_head_child_comments: Int | Double = null,
     num_tail_child_comments: Int | Double = null
   ): MediaCommentsFeedResponseCommentsItem = {
-    val __obj = js.Dynamic.literal(bit_flags = bit_flags, child_comment_count = child_comment_count, comment_index = comment_index, comment_like_count = comment_like_count, content_type = content_type, created_at = created_at, created_at_utc = created_at_utc, did_report_as_spam = did_report_as_spam, has_liked_comment = has_liked_comment, inline_composer_display_condition = inline_composer_display_condition, other_preview_users = other_preview_users, pk = pk, preview_child_comments = preview_child_comments, share_enabled = share_enabled, status = status, text = text, user = user, user_id = user_id)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(has_more_head_child_comments)) __obj.updateDynamic("has_more_head_child_comments")(has_more_head_child_comments)
-    if (!js.isUndefined(has_more_tail_child_comments)) __obj.updateDynamic("has_more_tail_child_comments")(has_more_tail_child_comments)
-    if (!js.isUndefined(has_translation)) __obj.updateDynamic("has_translation")(has_translation)
-    if (next_min_child_cursor != null) __obj.updateDynamic("next_min_child_cursor")(next_min_child_cursor)
+    val __obj = js.Dynamic.literal(bit_flags = bit_flags.asInstanceOf[js.Any], child_comment_count = child_comment_count.asInstanceOf[js.Any], comment_index = comment_index.asInstanceOf[js.Any], comment_like_count = comment_like_count.asInstanceOf[js.Any], content_type = content_type.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], created_at_utc = created_at_utc.asInstanceOf[js.Any], did_report_as_spam = did_report_as_spam.asInstanceOf[js.Any], has_liked_comment = has_liked_comment.asInstanceOf[js.Any], inline_composer_display_condition = inline_composer_display_condition.asInstanceOf[js.Any], other_preview_users = other_preview_users.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], preview_child_comments = preview_child_comments.asInstanceOf[js.Any], share_enabled = share_enabled.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(has_more_head_child_comments)) __obj.updateDynamic("has_more_head_child_comments")(has_more_head_child_comments.asInstanceOf[js.Any])
+    if (!js.isUndefined(has_more_tail_child_comments)) __obj.updateDynamic("has_more_tail_child_comments")(has_more_tail_child_comments.asInstanceOf[js.Any])
+    if (!js.isUndefined(has_translation)) __obj.updateDynamic("has_translation")(has_translation.asInstanceOf[js.Any])
+    if (next_min_child_cursor != null) __obj.updateDynamic("next_min_child_cursor")(next_min_child_cursor.asInstanceOf[js.Any])
     if (num_head_child_comments != null) __obj.updateDynamic("num_head_child_comments")(num_head_child_comments.asInstanceOf[js.Any])
     if (num_tail_child_comments != null) __obj.updateDynamic("num_tail_child_comments")(num_tail_child_comments.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaCommentsFeedResponseCommentsItem]

@@ -13,7 +13,7 @@ object Options {
   @scala.inline
   def apply(jsonpCallback: String = null, timeout: Int | Double = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (jsonpCallback != null) __obj.updateDynamic("jsonpCallback")(jsonpCallback)
+    if (jsonpCallback != null) __obj.updateDynamic("jsonpCallback")(jsonpCallback.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

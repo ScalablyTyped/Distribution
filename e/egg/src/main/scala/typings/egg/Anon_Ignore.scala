@@ -12,7 +12,7 @@ trait Anon_Ignore extends js.Object {
 object Anon_Ignore {
   @scala.inline
   def apply(ignore: Set[String]): Anon_Ignore = {
-    val __obj = js.Dynamic.literal(ignore = ignore)
+    val __obj = js.Dynamic.literal(ignore = ignore.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Ignore]
   }

@@ -11,7 +11,7 @@ trait INxFieldProperties extends js.Object {
 object INxFieldProperties {
   @scala.inline
   def apply(qOneAndOnlyOne: Boolean): INxFieldProperties = {
-    val __obj = js.Dynamic.literal(qOneAndOnlyOne = qOneAndOnlyOne)
+    val __obj = js.Dynamic.literal(qOneAndOnlyOne = qOneAndOnlyOne.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INxFieldProperties]
   }

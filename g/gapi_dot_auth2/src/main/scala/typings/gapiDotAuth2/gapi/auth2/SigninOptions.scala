@@ -62,12 +62,12 @@ object SigninOptions {
     ux_mode: popup | redirect = null
   ): SigninOptions = {
     val __obj = js.Dynamic.literal()
-    if (app_package_name != null) __obj.updateDynamic("app_package_name")(app_package_name)
-    if (!js.isUndefined(fetch_basic_profile)) __obj.updateDynamic("fetch_basic_profile")(fetch_basic_profile)
-    if (login_hint != null) __obj.updateDynamic("login_hint")(login_hint)
-    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (app_package_name != null) __obj.updateDynamic("app_package_name")(app_package_name.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetch_basic_profile)) __obj.updateDynamic("fetch_basic_profile")(fetch_basic_profile.asInstanceOf[js.Any])
+    if (login_hint != null) __obj.updateDynamic("login_hint")(login_hint.asInstanceOf[js.Any])
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (ux_mode != null) __obj.updateDynamic("ux_mode")(ux_mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SigninOptions]
   }

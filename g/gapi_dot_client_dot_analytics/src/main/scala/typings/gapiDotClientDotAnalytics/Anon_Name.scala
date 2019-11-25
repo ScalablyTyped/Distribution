@@ -30,11 +30,11 @@ object Anon_Name {
     won: js.UndefOr[Boolean] = js.undefined
   ): Anon_Name = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
-    if (!js.isUndefined(won)) __obj.updateDynamic("won")(won)
+    if (!js.isUndefined(won)) __obj.updateDynamic("won")(won.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Name]
   }
 }

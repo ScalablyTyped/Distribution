@@ -13,7 +13,7 @@ trait Anon_ItemsReturnValueLanguage extends js.Object {
 object Anon_ItemsReturnValueLanguage {
   @scala.inline
   def apply(items: Language, returnValue: Double): Anon_ItemsReturnValueLanguage = {
-    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ItemsReturnValueLanguage]
   }

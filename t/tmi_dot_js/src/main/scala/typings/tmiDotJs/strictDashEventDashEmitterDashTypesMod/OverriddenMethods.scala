@@ -12,7 +12,7 @@ trait OverriddenMethods[TEmitter, TEventRecord, TEmitRecord] extends js.Object {
     event: P,
     listener: js.Function1[
       /* args */ ListenerType[
-        /* import warning: ImportType.apply Failed type conversion: TEventRecord[P] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: TEventRecord[P] */ js.Any
       ], 
       Unit
     ]
@@ -23,7 +23,7 @@ trait OverriddenMethods[TEmitter, TEventRecord, TEmitRecord] extends js.Object {
     event: P,
     listener: js.Function1[
       /* args */ ListenerType[
-        /* import warning: ImportType.apply Failed type conversion: TEventRecord[P] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: TEventRecord[P] */ js.Any
       ], 
       Unit
     ]
@@ -33,7 +33,7 @@ trait OverriddenMethods[TEmitter, TEventRecord, TEmitRecord] extends js.Object {
     `this`: T,
     event: P,
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type ListenerType<TEmitRecord[P]> is not an array type */ args: ListenerType[
-      /* import warning: ImportType.apply Failed type conversion: TEmitRecord[P] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TEmitRecord[P] */ js.Any
     ]
   ): EEMethodReturnType[TEmitter, typings.tmiDotJs.tmiDotJsStrings.emit, T, Unit] = js.native
   def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
@@ -42,7 +42,7 @@ trait OverriddenMethods[TEmitter, TEventRecord, TEmitRecord] extends js.Object {
     event: P,
     listener: js.Function1[
       /* args */ ListenerType[
-        /* import warning: ImportType.apply Failed type conversion: TEventRecord[P] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: TEventRecord[P] */ js.Any
       ], 
       Unit
     ]
@@ -53,7 +53,7 @@ trait OverriddenMethods[TEmitter, TEventRecord, TEmitRecord] extends js.Object {
     event: P,
     listener: js.Function1[
       /* args */ ListenerType[
-        /* import warning: ImportType.apply Failed type conversion: TEventRecord[P] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: TEventRecord[P] */ js.Any
       ], 
       Unit
     ]

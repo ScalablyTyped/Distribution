@@ -16,7 +16,7 @@ trait Anon_True extends js.Object {
 object Anon_True {
   @scala.inline
   def apply(verbose: `true`): Anon_True = {
-    val __obj = js.Dynamic.literal(verbose = verbose)
+    val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_True]
   }

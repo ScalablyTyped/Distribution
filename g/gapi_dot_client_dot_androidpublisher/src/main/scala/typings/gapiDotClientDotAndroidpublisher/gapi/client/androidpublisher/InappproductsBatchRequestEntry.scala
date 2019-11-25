@@ -21,9 +21,9 @@ object InappproductsBatchRequestEntry {
   ): InappproductsBatchRequestEntry = {
     val __obj = js.Dynamic.literal()
     if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
-    if (inappproductsinsertrequest != null) __obj.updateDynamic("inappproductsinsertrequest")(inappproductsinsertrequest)
-    if (inappproductsupdaterequest != null) __obj.updateDynamic("inappproductsupdaterequest")(inappproductsupdaterequest)
-    if (methodName != null) __obj.updateDynamic("methodName")(methodName)
+    if (inappproductsinsertrequest != null) __obj.updateDynamic("inappproductsinsertrequest")(inappproductsinsertrequest.asInstanceOf[js.Any])
+    if (inappproductsupdaterequest != null) __obj.updateDynamic("inappproductsupdaterequest")(inappproductsupdaterequest.asInstanceOf[js.Any])
+    if (methodName != null) __obj.updateDynamic("methodName")(methodName.asInstanceOf[js.Any])
     __obj.asInstanceOf[InappproductsBatchRequestEntry]
   }
 }

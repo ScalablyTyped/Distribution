@@ -19,7 +19,7 @@ trait Anon_Namefilter extends js.Object {
 object Anon_Namefilter {
   @scala.inline
   def apply(name_filter: js.Array[String], on_named: MinecraftTrigger | String): Anon_Namefilter = {
-    val __obj = js.Dynamic.literal(name_filter = name_filter, on_named = on_named.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name_filter = name_filter.asInstanceOf[js.Any], on_named = on_named.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Namefilter]
   }

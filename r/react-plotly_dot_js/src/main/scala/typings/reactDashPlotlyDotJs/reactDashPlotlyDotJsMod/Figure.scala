@@ -17,8 +17,8 @@ trait Figure extends js.Object {
 object Figure {
   @scala.inline
   def apply(data: js.Array[Data], layout: Partial[Layout], frames: js.Array[Frame] = null): Figure = {
-    val __obj = js.Dynamic.literal(data = data, layout = layout)
-    if (frames != null) __obj.updateDynamic("frames")(frames)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any])
+    if (frames != null) __obj.updateDynamic("frames")(frames.asInstanceOf[js.Any])
     __obj.asInstanceOf[Figure]
   }
 }

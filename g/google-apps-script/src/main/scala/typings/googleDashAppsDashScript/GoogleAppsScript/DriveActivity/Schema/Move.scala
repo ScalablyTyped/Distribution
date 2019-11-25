@@ -13,8 +13,8 @@ object Move {
   @scala.inline
   def apply(addedParents: js.Array[TargetReference] = null, removedParents: js.Array[TargetReference] = null): Move = {
     val __obj = js.Dynamic.literal()
-    if (addedParents != null) __obj.updateDynamic("addedParents")(addedParents)
-    if (removedParents != null) __obj.updateDynamic("removedParents")(removedParents)
+    if (addedParents != null) __obj.updateDynamic("addedParents")(addedParents.asInstanceOf[js.Any])
+    if (removedParents != null) __obj.updateDynamic("removedParents")(removedParents.asInstanceOf[js.Any])
     __obj.asInstanceOf[Move]
   }
 }

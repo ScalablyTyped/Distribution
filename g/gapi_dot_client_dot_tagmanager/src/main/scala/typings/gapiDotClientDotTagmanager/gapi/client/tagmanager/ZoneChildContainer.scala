@@ -15,8 +15,8 @@ object ZoneChildContainer {
   @scala.inline
   def apply(nickname: String = null, publicId: String = null): ZoneChildContainer = {
     val __obj = js.Dynamic.literal()
-    if (nickname != null) __obj.updateDynamic("nickname")(nickname)
-    if (publicId != null) __obj.updateDynamic("publicId")(publicId)
+    if (nickname != null) __obj.updateDynamic("nickname")(nickname.asInstanceOf[js.Any])
+    if (publicId != null) __obj.updateDynamic("publicId")(publicId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoneChildContainer]
   }
 }

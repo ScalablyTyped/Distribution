@@ -42,16 +42,16 @@ object IPartialTheme {
     spacing: PartialISpacing = null
   ): IPartialTheme = {
     val __obj = js.Dynamic.literal()
-    if (defaultFontStyle != null) __obj.updateDynamic("defaultFontStyle")(defaultFontStyle)
-    if (!js.isUndefined(disableGlobalClassNames)) __obj.updateDynamic("disableGlobalClassNames")(disableGlobalClassNames)
-    if (effects != null) __obj.updateDynamic("effects")(effects)
-    if (fonts != null) __obj.updateDynamic("fonts")(fonts)
-    if (!js.isUndefined(isInverted)) __obj.updateDynamic("isInverted")(isInverted)
-    if (palette != null) __obj.updateDynamic("palette")(palette)
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl)
-    if (schemes != null) __obj.updateDynamic("schemes")(schemes)
-    if (semanticColors != null) __obj.updateDynamic("semanticColors")(semanticColors)
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing)
+    if (defaultFontStyle != null) __obj.updateDynamic("defaultFontStyle")(defaultFontStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableGlobalClassNames)) __obj.updateDynamic("disableGlobalClassNames")(disableGlobalClassNames.asInstanceOf[js.Any])
+    if (effects != null) __obj.updateDynamic("effects")(effects.asInstanceOf[js.Any])
+    if (fonts != null) __obj.updateDynamic("fonts")(fonts.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInverted)) __obj.updateDynamic("isInverted")(isInverted.asInstanceOf[js.Any])
+    if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
+    if (schemes != null) __obj.updateDynamic("schemes")(schemes.asInstanceOf[js.Any])
+    if (semanticColors != null) __obj.updateDynamic("semanticColors")(semanticColors.asInstanceOf[js.Any])
+    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPartialTheme]
   }
 }

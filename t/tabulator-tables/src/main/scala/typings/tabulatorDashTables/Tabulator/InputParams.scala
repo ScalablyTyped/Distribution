@@ -15,8 +15,8 @@ object InputParams {
   @scala.inline
   def apply(elementAttributes: JSONRecord = null, search: js.UndefOr[Boolean] = js.undefined): InputParams = {
     val __obj = js.Dynamic.literal()
-    if (elementAttributes != null) __obj.updateDynamic("elementAttributes")(elementAttributes)
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search)
+    if (elementAttributes != null) __obj.updateDynamic("elementAttributes")(elementAttributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputParams]
   }
 }

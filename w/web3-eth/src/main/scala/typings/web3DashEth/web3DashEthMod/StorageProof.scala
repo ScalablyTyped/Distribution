@@ -13,7 +13,7 @@ trait StorageProof extends js.Object {
 object StorageProof {
   @scala.inline
   def apply(key: String, proof: js.Array[String], value: String): StorageProof = {
-    val __obj = js.Dynamic.literal(key = key, proof = proof, value = value)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], proof = proof.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StorageProof]
   }

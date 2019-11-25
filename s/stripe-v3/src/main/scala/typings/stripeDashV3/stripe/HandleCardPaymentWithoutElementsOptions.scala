@@ -36,12 +36,12 @@ object HandleCardPaymentWithoutElementsOptions {
     source: String = null
   ): HandleCardPaymentWithoutElementsOptions = {
     val __obj = js.Dynamic.literal()
-    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method)
-    if (payment_method_data != null) __obj.updateDynamic("payment_method_data")(payment_method_data)
-    if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email)
-    if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method)
-    if (shipping != null) __obj.updateDynamic("shipping")(shipping)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
+    if (payment_method_data != null) __obj.updateDynamic("payment_method_data")(payment_method_data.asInstanceOf[js.Any])
+    if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email.asInstanceOf[js.Any])
+    if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method.asInstanceOf[js.Any])
+    if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandleCardPaymentWithoutElementsOptions]
   }
 }

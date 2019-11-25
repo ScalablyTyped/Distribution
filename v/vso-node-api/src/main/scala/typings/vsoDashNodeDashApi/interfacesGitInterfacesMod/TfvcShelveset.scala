@@ -29,7 +29,7 @@ object TfvcShelveset {
     url: String,
     workItems: js.Array[AssociatedWorkItem]
   ): TfvcShelveset = {
-    val __obj = js.Dynamic.literal(_links = _links, changes = changes, comment = comment, commentTruncated = commentTruncated, createdDate = createdDate, id = id, name = name, notes = notes, owner = owner, policyOverride = policyOverride, url = url, workItems = workItems)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], changes = changes.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], commentTruncated = commentTruncated.asInstanceOf[js.Any], createdDate = createdDate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], policyOverride = policyOverride.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], workItems = workItems.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TfvcShelveset]
   }

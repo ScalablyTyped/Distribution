@@ -21,8 +21,8 @@ object HitTest {
     `type`: Double,
     worldTransform: js.Array[Double]
   ): HitTest = {
-    val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], distance = distance, localTransform = localTransform, worldTransform = worldTransform)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], localTransform = localTransform.asInstanceOf[js.Any], worldTransform = worldTransform.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HitTest]
   }
 }

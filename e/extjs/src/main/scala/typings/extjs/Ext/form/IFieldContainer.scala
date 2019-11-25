@@ -208,8 +208,6 @@ object IFieldContainer {
     clearCls: java.lang.String = null,
     combineErrors: js.UndefOr[Boolean] = js.undefined,
     combineLabels: js.UndefOr[Boolean] = js.undefined,
-    componentCls: java.lang.String = null,
-    componentLayout: js.Any = null,
     errorEl: IElement = null,
     errorMsgCls: java.lang.String = null,
     fieldBodyCls: java.lang.String = null,
@@ -244,46 +242,43 @@ object IFieldContainer {
     labelSeparator: java.lang.String = null,
     labelStyle: java.lang.String = null,
     labelWidth: Int | Double = null,
-    maskOnDisable: js.UndefOr[Boolean] = js.undefined,
     msgTarget: java.lang.String = null,
     onAdd: /* labelable */ js.UndefOr[ILabelable] => Unit = null,
     onFieldErrorChange: (/* field */ js.UndefOr[ILabelable], /* error */ js.UndefOr[java.lang.String]) => Unit = null,
-    onFieldValidityChange: (/* field */ js.UndefOr[typings.extjs.Ext.form.field.IField], /* valid */ js.UndefOr[Boolean]) => Unit = null,
+    onFieldValidityChange: (js.UndefOr[typings.extjs.Ext.form.field.IField], js.UndefOr[Boolean]) => Unit = null,
     onRemove: /* labelable */ js.UndefOr[ILabelable] => Unit = null,
     preventMark: js.UndefOr[Boolean] = js.undefined,
-    setActiveError: /* msg */ js.UndefOr[java.lang.String] => Unit = null,
-    setActiveErrors: /* errors */ js.UndefOr[Array] => Unit = null,
-    setFieldDefaults: /* defaults */ js.UndefOr[js.Any] => Unit = null,
-    setFieldLabel: /* label */ js.UndefOr[java.lang.String] => Unit = null,
+    setActiveError: js.UndefOr[java.lang.String] => Unit = null,
+    setActiveErrors: js.UndefOr[Array] => Unit = null,
+    setFieldDefaults: js.UndefOr[js.Any] => Unit = null,
+    setFieldLabel: js.UndefOr[java.lang.String] => Unit = null,
     trimLabelSeparator: () => java.lang.String = null,
     unsetActiveError: () => Unit = null
   ): IFieldContainer = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (activeError != null) __obj.updateDynamic("activeError")(activeError)
-    if (activeErrorsTpl != null) __obj.updateDynamic("activeErrorsTpl")(activeErrorsTpl)
-    if (afterBodyEl != null) __obj.updateDynamic("afterBodyEl")(afterBodyEl)
-    if (afterLabelTextTpl != null) __obj.updateDynamic("afterLabelTextTpl")(afterLabelTextTpl)
-    if (afterLabelTpl != null) __obj.updateDynamic("afterLabelTpl")(afterLabelTpl)
-    if (afterSubTpl != null) __obj.updateDynamic("afterSubTpl")(afterSubTpl)
-    if (!js.isUndefined(autoFitErrors)) __obj.updateDynamic("autoFitErrors")(autoFitErrors)
-    if (baseBodyCls != null) __obj.updateDynamic("baseBodyCls")(baseBodyCls)
-    if (beforeBodyEl != null) __obj.updateDynamic("beforeBodyEl")(beforeBodyEl)
-    if (beforeLabelTextTpl != null) __obj.updateDynamic("beforeLabelTextTpl")(beforeLabelTextTpl)
-    if (beforeLabelTpl != null) __obj.updateDynamic("beforeLabelTpl")(beforeLabelTpl)
-    if (beforeSubTpl != null) __obj.updateDynamic("beforeSubTpl")(beforeSubTpl)
-    if (bodyEl != null) __obj.updateDynamic("bodyEl")(bodyEl)
-    if (clearCls != null) __obj.updateDynamic("clearCls")(clearCls)
-    if (!js.isUndefined(combineErrors)) __obj.updateDynamic("combineErrors")(combineErrors)
-    if (!js.isUndefined(combineLabels)) __obj.updateDynamic("combineLabels")(combineLabels)
-    if (componentCls != null) __obj.updateDynamic("componentCls")(componentCls)
-    if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
-    if (errorEl != null) __obj.updateDynamic("errorEl")(errorEl)
-    if (errorMsgCls != null) __obj.updateDynamic("errorMsgCls")(errorMsgCls)
-    if (fieldBodyCls != null) __obj.updateDynamic("fieldBodyCls")(fieldBodyCls)
-    if (fieldDefaults != null) __obj.updateDynamic("fieldDefaults")(fieldDefaults)
-    if (fieldLabel != null) __obj.updateDynamic("fieldLabel")(fieldLabel)
-    if (formItemCls != null) __obj.updateDynamic("formItemCls")(formItemCls)
+    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (activeError != null) __obj.updateDynamic("activeError")(activeError.asInstanceOf[js.Any])
+    if (activeErrorsTpl != null) __obj.updateDynamic("activeErrorsTpl")(activeErrorsTpl.asInstanceOf[js.Any])
+    if (afterBodyEl != null) __obj.updateDynamic("afterBodyEl")(afterBodyEl.asInstanceOf[js.Any])
+    if (afterLabelTextTpl != null) __obj.updateDynamic("afterLabelTextTpl")(afterLabelTextTpl.asInstanceOf[js.Any])
+    if (afterLabelTpl != null) __obj.updateDynamic("afterLabelTpl")(afterLabelTpl.asInstanceOf[js.Any])
+    if (afterSubTpl != null) __obj.updateDynamic("afterSubTpl")(afterSubTpl.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFitErrors)) __obj.updateDynamic("autoFitErrors")(autoFitErrors.asInstanceOf[js.Any])
+    if (baseBodyCls != null) __obj.updateDynamic("baseBodyCls")(baseBodyCls.asInstanceOf[js.Any])
+    if (beforeBodyEl != null) __obj.updateDynamic("beforeBodyEl")(beforeBodyEl.asInstanceOf[js.Any])
+    if (beforeLabelTextTpl != null) __obj.updateDynamic("beforeLabelTextTpl")(beforeLabelTextTpl.asInstanceOf[js.Any])
+    if (beforeLabelTpl != null) __obj.updateDynamic("beforeLabelTpl")(beforeLabelTpl.asInstanceOf[js.Any])
+    if (beforeSubTpl != null) __obj.updateDynamic("beforeSubTpl")(beforeSubTpl.asInstanceOf[js.Any])
+    if (bodyEl != null) __obj.updateDynamic("bodyEl")(bodyEl.asInstanceOf[js.Any])
+    if (clearCls != null) __obj.updateDynamic("clearCls")(clearCls.asInstanceOf[js.Any])
+    if (!js.isUndefined(combineErrors)) __obj.updateDynamic("combineErrors")(combineErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(combineLabels)) __obj.updateDynamic("combineLabels")(combineLabels.asInstanceOf[js.Any])
+    if (errorEl != null) __obj.updateDynamic("errorEl")(errorEl.asInstanceOf[js.Any])
+    if (errorMsgCls != null) __obj.updateDynamic("errorMsgCls")(errorMsgCls.asInstanceOf[js.Any])
+    if (fieldBodyCls != null) __obj.updateDynamic("fieldBodyCls")(fieldBodyCls.asInstanceOf[js.Any])
+    if (fieldDefaults != null) __obj.updateDynamic("fieldDefaults")(fieldDefaults.asInstanceOf[js.Any])
+    if (fieldLabel != null) __obj.updateDynamic("fieldLabel")(fieldLabel.asInstanceOf[js.Any])
+    if (formItemCls != null) __obj.updateDynamic("formItemCls")(formItemCls.asInstanceOf[js.Any])
     if (getActiveError != null) __obj.updateDynamic("getActiveError")(js.Any.fromFunction0(getActiveError))
     if (getActiveErrors != null) __obj.updateDynamic("getActiveErrors")(js.Any.fromFunction0(getActiveErrors))
     if (getCombinedErrors != null) __obj.updateDynamic("getCombinedErrors")(js.Any.fromFunction1(getCombinedErrors))
@@ -294,31 +289,30 @@ object IFieldContainer {
     if (getSubTplMarkup != null) __obj.updateDynamic("getSubTplMarkup")(js.Any.fromFunction0(getSubTplMarkup))
     if (hasActiveError != null) __obj.updateDynamic("hasActiveError")(js.Any.fromFunction0(hasActiveError))
     if (hasVisibleLabel != null) __obj.updateDynamic("hasVisibleLabel")(js.Any.fromFunction0(hasVisibleLabel))
-    if (!js.isUndefined(hideEmptyLabel)) __obj.updateDynamic("hideEmptyLabel")(hideEmptyLabel)
-    if (!js.isUndefined(hideLabel)) __obj.updateDynamic("hideLabel")(hideLabel)
+    if (!js.isUndefined(hideEmptyLabel)) __obj.updateDynamic("hideEmptyLabel")(hideEmptyLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideLabel)) __obj.updateDynamic("hideLabel")(hideLabel.asInstanceOf[js.Any])
     if (initFieldAncestor != null) __obj.updateDynamic("initFieldAncestor")(js.Any.fromFunction0(initFieldAncestor))
     if (initLabelable != null) __obj.updateDynamic("initLabelable")(js.Any.fromFunction0(initLabelable))
     if (initRenderData != null) __obj.updateDynamic("initRenderData")(js.Any.fromFunction0(initRenderData))
-    if (invalidCls != null) __obj.updateDynamic("invalidCls")(invalidCls)
-    if (!js.isUndefined(isFieldLabelable)) __obj.updateDynamic("isFieldLabelable")(isFieldLabelable)
-    if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign)
-    if (labelAttrTpl != null) __obj.updateDynamic("labelAttrTpl")(labelAttrTpl)
-    if (labelCell != null) __obj.updateDynamic("labelCell")(labelCell)
-    if (labelCls != null) __obj.updateDynamic("labelCls")(labelCls)
-    if (labelClsExtra != null) __obj.updateDynamic("labelClsExtra")(labelClsExtra)
-    if (labelConnector != null) __obj.updateDynamic("labelConnector")(labelConnector)
-    if (labelEl != null) __obj.updateDynamic("labelEl")(labelEl)
+    if (invalidCls != null) __obj.updateDynamic("invalidCls")(invalidCls.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFieldLabelable)) __obj.updateDynamic("isFieldLabelable")(isFieldLabelable.asInstanceOf[js.Any])
+    if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign.asInstanceOf[js.Any])
+    if (labelAttrTpl != null) __obj.updateDynamic("labelAttrTpl")(labelAttrTpl.asInstanceOf[js.Any])
+    if (labelCell != null) __obj.updateDynamic("labelCell")(labelCell.asInstanceOf[js.Any])
+    if (labelCls != null) __obj.updateDynamic("labelCls")(labelCls.asInstanceOf[js.Any])
+    if (labelClsExtra != null) __obj.updateDynamic("labelClsExtra")(labelClsExtra.asInstanceOf[js.Any])
+    if (labelConnector != null) __obj.updateDynamic("labelConnector")(labelConnector.asInstanceOf[js.Any])
+    if (labelEl != null) __obj.updateDynamic("labelEl")(labelEl.asInstanceOf[js.Any])
     if (labelPad != null) __obj.updateDynamic("labelPad")(labelPad.asInstanceOf[js.Any])
-    if (labelSeparator != null) __obj.updateDynamic("labelSeparator")(labelSeparator)
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)
+    if (labelSeparator != null) __obj.updateDynamic("labelSeparator")(labelSeparator.asInstanceOf[js.Any])
+    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
     if (labelWidth != null) __obj.updateDynamic("labelWidth")(labelWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskOnDisable)) __obj.updateDynamic("maskOnDisable")(maskOnDisable)
-    if (msgTarget != null) __obj.updateDynamic("msgTarget")(msgTarget)
+    if (msgTarget != null) __obj.updateDynamic("msgTarget")(msgTarget.asInstanceOf[js.Any])
     if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction1(onAdd))
     if (onFieldErrorChange != null) __obj.updateDynamic("onFieldErrorChange")(js.Any.fromFunction2(onFieldErrorChange))
     if (onFieldValidityChange != null) __obj.updateDynamic("onFieldValidityChange")(js.Any.fromFunction2(onFieldValidityChange))
     if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
-    if (!js.isUndefined(preventMark)) __obj.updateDynamic("preventMark")(preventMark)
+    if (!js.isUndefined(preventMark)) __obj.updateDynamic("preventMark")(preventMark.asInstanceOf[js.Any])
     if (setActiveError != null) __obj.updateDynamic("setActiveError")(js.Any.fromFunction1(setActiveError))
     if (setActiveErrors != null) __obj.updateDynamic("setActiveErrors")(js.Any.fromFunction1(setActiveErrors))
     if (setFieldDefaults != null) __obj.updateDynamic("setFieldDefaults")(js.Any.fromFunction1(setFieldDefaults))

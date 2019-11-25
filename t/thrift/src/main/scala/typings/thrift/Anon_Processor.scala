@@ -12,7 +12,7 @@ trait Anon_Processor[THandler, TProcessor] extends TProcessorConstructor[TProces
 object Anon_Processor {
   @scala.inline
   def apply[THandler, TProcessor](Processor: Anon_Handler[THandler, TProcessor]): Anon_Processor[THandler, TProcessor] = {
-    val __obj = js.Dynamic.literal(Processor = Processor)
+    val __obj = js.Dynamic.literal(Processor = Processor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Processor[THandler, TProcessor]]
   }

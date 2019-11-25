@@ -21,8 +21,8 @@ object _UnmarshalledVpcConfig {
   @scala.inline
   def apply(SecurityGroupIds: js.Array[String] = null, SubnetIds: js.Array[String] = null): _UnmarshalledVpcConfig = {
     val __obj = js.Dynamic.literal()
-    if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds)
-    if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds)
+    if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
+    if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledVpcConfig]
   }
 }

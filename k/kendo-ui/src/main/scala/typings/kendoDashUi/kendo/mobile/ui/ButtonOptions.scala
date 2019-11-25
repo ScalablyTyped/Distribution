@@ -24,12 +24,12 @@ object ButtonOptions {
     name: String = null
   ): ButtonOptions = {
     val __obj = js.Dynamic.literal()
-    if (badge != null) __obj.updateDynamic("badge")(badge)
+    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
     if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1(click))
-    if (clickOn != null) __obj.updateDynamic("clickOn")(clickOn)
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (clickOn != null) __obj.updateDynamic("clickOn")(clickOn.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonOptions]
   }
 }

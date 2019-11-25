@@ -15,7 +15,7 @@ object BannerClickEventUIParam {
   @scala.inline
   def apply(bannerElement: js.Any = null): BannerClickEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (bannerElement != null) __obj.updateDynamic("bannerElement")(bannerElement)
+    if (bannerElement != null) __obj.updateDynamic("bannerElement")(bannerElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[BannerClickEventUIParam]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_States extends js.Object {
 object Anon_States {
   @scala.inline
   def apply(states: ApiClientObjectMap[_]): Anon_States = {
-    val __obj = js.Dynamic.literal(states = states)
+    val __obj = js.Dynamic.literal(states = states.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_States]
   }

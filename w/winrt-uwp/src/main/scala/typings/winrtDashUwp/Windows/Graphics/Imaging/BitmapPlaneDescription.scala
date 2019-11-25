@@ -19,7 +19,7 @@ trait BitmapPlaneDescription extends js.Object {
 object BitmapPlaneDescription {
   @scala.inline
   def apply(height: Double, startIndex: Double, stride: Double, width: Double): BitmapPlaneDescription = {
-    val __obj = js.Dynamic.literal(height = height, startIndex = startIndex, stride = stride, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], startIndex = startIndex.asInstanceOf[js.Any], stride = stride.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BitmapPlaneDescription]
   }

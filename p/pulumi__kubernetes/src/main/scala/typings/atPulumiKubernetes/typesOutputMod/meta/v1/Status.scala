@@ -66,7 +66,7 @@ object Status {
     reason: String,
     status: String
   ): Status = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion, code = code, details = details, kind = kind, message = message, metadata = metadata, reason = reason, status = status)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Status]
   }

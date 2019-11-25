@@ -26,10 +26,10 @@ object IChartistAnimationOptions {
     id: String = null
   ): IChartistAnimationOptions = {
     val __obj = js.Dynamic.literal(dur = dur.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
-    if (begin != null) __obj.updateDynamic("begin")(begin)
+    if (begin != null) __obj.updateDynamic("begin")(begin.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChartistAnimationOptions]
   }
 }

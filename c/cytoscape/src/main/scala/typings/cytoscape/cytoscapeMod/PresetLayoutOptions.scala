@@ -38,11 +38,11 @@ object PresetLayoutOptions {
     stop: /* e */ LayoutEventObject => Unit = null,
     zoom: Int | Double = null
   ): PresetLayoutOptions = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing)
-    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit)
+    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
+    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (pan != null) __obj.updateDynamic("pan")(pan.asInstanceOf[js.Any])
     if (positions != null) __obj.updateDynamic("positions")(positions.asInstanceOf[js.Any])

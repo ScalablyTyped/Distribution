@@ -16,3 +16,14 @@ import scala.scalajs.js.annotation._
 */
 trait RequirementLevel extends js.Object
 
+object RequirementLevel {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def none: typings.xrm.xrmStrings.none = this.cast("none")
+  @scala.inline
+  def recommended: typings.xrm.xrmStrings.recommended = this.cast("recommended")
+  @scala.inline
+  def required: typings.xrm.xrmStrings.required = this.cast("required")
+}
+

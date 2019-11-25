@@ -26,9 +26,9 @@ object CustomPropertyText {
     show: Boolean | ShowFunction = null,
     `type`: string | integer | number | array | boolean | items = null
   ): CustomPropertyText = {
-    val __obj = js.Dynamic.literal(component = component)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomPropertyText]

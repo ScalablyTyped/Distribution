@@ -27,7 +27,7 @@ object AliasPlugin {
     source: String,
     target: String
   ): AliasPlugin = {
-    val __obj = js.Dynamic.literal(alias = alias, apply = js.Any.fromFunction1(apply), name = name, onlyModule = onlyModule, options = options, source = source, target = target)
+    val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], apply = js.Any.fromFunction1(apply), name = name.asInstanceOf[js.Any], onlyModule = onlyModule.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AliasPlugin]
   }

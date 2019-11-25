@@ -14,9 +14,9 @@ object ClientInfo {
   @scala.inline
   def apply(clientName: String = null, clientReferenceId: String = null, clientVersion: String = null): ClientInfo = {
     val __obj = js.Dynamic.literal()
-    if (clientName != null) __obj.updateDynamic("clientName")(clientName)
-    if (clientReferenceId != null) __obj.updateDynamic("clientReferenceId")(clientReferenceId)
-    if (clientVersion != null) __obj.updateDynamic("clientVersion")(clientVersion)
+    if (clientName != null) __obj.updateDynamic("clientName")(clientName.asInstanceOf[js.Any])
+    if (clientReferenceId != null) __obj.updateDynamic("clientReferenceId")(clientReferenceId.asInstanceOf[js.Any])
+    if (clientVersion != null) __obj.updateDynamic("clientVersion")(clientVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientInfo]
   }
 }

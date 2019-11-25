@@ -23,11 +23,11 @@ object LocalChartOpts {
     transformations: js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]] = null,
     values: Inputs = null
   ): LocalChartOpts = {
-    val __obj = js.Dynamic.literal(path = path)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (resourcePrefix != null) __obj.updateDynamic("resourcePrefix")(resourcePrefix)
-    if (transformations != null) __obj.updateDynamic("transformations")(transformations)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (resourcePrefix != null) __obj.updateDynamic("resourcePrefix")(resourcePrefix.asInstanceOf[js.Any])
+    if (transformations != null) __obj.updateDynamic("transformations")(transformations.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalChartOpts]
   }
 }

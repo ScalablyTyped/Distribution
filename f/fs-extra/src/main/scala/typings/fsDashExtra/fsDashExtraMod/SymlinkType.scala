@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait SymlinkType extends js.Object
 
+object SymlinkType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def dir: typings.fsDashExtra.fsDashExtraStrings.dir = this.cast("dir")
+  @scala.inline
+  def file: typings.fsDashExtra.fsDashExtraStrings.file = this.cast("file")
+}
+

@@ -56,7 +56,7 @@ object GitRefUpdateResult {
     success: Boolean,
     updateStatus: GitRefUpdateStatus
   ): GitRefUpdateResult = {
-    val __obj = js.Dynamic.literal(customMessage = customMessage, isLocked = isLocked, name = name, newObjectId = newObjectId, oldObjectId = oldObjectId, rejectedBy = rejectedBy, repositoryId = repositoryId, success = success, updateStatus = updateStatus)
+    val __obj = js.Dynamic.literal(customMessage = customMessage.asInstanceOf[js.Any], isLocked = isLocked.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], newObjectId = newObjectId.asInstanceOf[js.Any], oldObjectId = oldObjectId.asInstanceOf[js.Any], rejectedBy = rejectedBy.asInstanceOf[js.Any], repositoryId = repositoryId.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], updateStatus = updateStatus.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitRefUpdateResult]
   }

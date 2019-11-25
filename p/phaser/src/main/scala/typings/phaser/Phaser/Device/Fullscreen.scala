@@ -32,7 +32,7 @@ trait Fullscreen extends js.Object {
 object Fullscreen {
   @scala.inline
   def apply(available: Boolean, cancel: String, keyboard: Boolean, request: String): Fullscreen = {
-    val __obj = js.Dynamic.literal(available = available, cancel = cancel, keyboard = keyboard, request = request)
+    val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any], keyboard = keyboard.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Fullscreen]
   }

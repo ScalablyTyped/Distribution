@@ -48,8 +48,9 @@ object atMapboxMapboxDashSdkStrings {
   
   @js.native
   sealed trait cycling
-    extends MapboxProfile
-       with DirectionsMode
+    extends DirectionsMode
+       with DirectionsProfile
+       with MapboxProfile
   
   @js.native
   sealed trait depart
@@ -64,8 +65,9 @@ object atMapboxMapboxDashSdkStrings {
   
   @js.native
   sealed trait driving
-    extends MapboxProfile
-       with DirectionsMode
+    extends DirectionsMode
+       with DirectionsProfile
+       with MapboxProfile
   
   @js.native
   sealed trait `driving-traffic` extends DirectionsProfile
@@ -246,8 +248,9 @@ object atMapboxMapboxDashSdkStrings {
   
   @js.native
   sealed trait walking
-    extends MapboxProfile
-       with DirectionsMode
+    extends DirectionsMode
+       with DirectionsProfile
+       with MapboxProfile
   
   @scala.inline
   def address: address = "address".asInstanceOf[address]

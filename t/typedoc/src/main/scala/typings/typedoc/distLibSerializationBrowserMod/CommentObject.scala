@@ -20,10 +20,10 @@ object CommentObject {
     text: String = null
   ): CommentObject = {
     val __obj = js.Dynamic.literal()
-    if (returns != null) __obj.updateDynamic("returns")(returns)
-    if (shortText != null) __obj.updateDynamic("shortText")(shortText)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (returns != null) __obj.updateDynamic("returns")(returns.asInstanceOf[js.Any])
+    if (shortText != null) __obj.updateDynamic("shortText")(shortText.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentObject]
   }
 }

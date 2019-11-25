@@ -30,9 +30,9 @@ object ListMultipartUploadsOutput {
     Marker: String = null,
     UploadsList: js.Array[_UnmarshalledUploadListElement] = null
   ): ListMultipartUploadsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker)
-    if (UploadsList != null) __obj.updateDynamic("UploadsList")(UploadsList)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
+    if (UploadsList != null) __obj.updateDynamic("UploadsList")(UploadsList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMultipartUploadsOutput]
   }
 }

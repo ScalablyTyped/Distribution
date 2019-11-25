@@ -13,8 +13,8 @@ object Anon_TooLong {
   @scala.inline
   def apply(tooLong: String = null, tooShort: String = null): Anon_TooLong = {
     val __obj = js.Dynamic.literal()
-    if (tooLong != null) __obj.updateDynamic("tooLong")(tooLong)
-    if (tooShort != null) __obj.updateDynamic("tooShort")(tooShort)
+    if (tooLong != null) __obj.updateDynamic("tooLong")(tooLong.asInstanceOf[js.Any])
+    if (tooShort != null) __obj.updateDynamic("tooShort")(tooShort.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TooLong]
   }
 }

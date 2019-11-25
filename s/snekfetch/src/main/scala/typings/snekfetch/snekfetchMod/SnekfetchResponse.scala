@@ -28,7 +28,7 @@ object SnekfetchResponse {
     status: Double,
     statusText: String
   ): SnekfetchResponse = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers, ok = ok, raw = raw, request = request, status = status, statusText = statusText)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SnekfetchResponse]
   }

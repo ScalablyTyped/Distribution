@@ -42,7 +42,7 @@ object GitItem {
     path: String,
     url: String
   ): GitItem = {
-    val __obj = js.Dynamic.literal(_links = _links, commitId = commitId, contentMetadata = contentMetadata, gitObjectType = gitObjectType, isFolder = isFolder, isSymLink = isSymLink, latestProcessedChange = latestProcessedChange, objectId = objectId, originalObjectId = originalObjectId, path = path, url = url)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], commitId = commitId.asInstanceOf[js.Any], contentMetadata = contentMetadata.asInstanceOf[js.Any], gitObjectType = gitObjectType.asInstanceOf[js.Any], isFolder = isFolder.asInstanceOf[js.Any], isSymLink = isSymLink.asInstanceOf[js.Any], latestProcessedChange = latestProcessedChange.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any], originalObjectId = originalObjectId.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GitItem]
   }

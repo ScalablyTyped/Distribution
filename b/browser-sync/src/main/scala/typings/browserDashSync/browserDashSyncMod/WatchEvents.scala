@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait WatchEvents extends js.Object
 
+object WatchEvents {
+  @scala.inline
+  def add: typings.browserDashSync.browserDashSyncStrings.add = this.cast("add")
+  @scala.inline
+  def addDir: typings.browserDashSync.browserDashSyncStrings.addDir = this.cast("addDir")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def change: typings.browserDashSync.browserDashSyncStrings.change = this.cast("change")
+  @scala.inline
+  def unlink: typings.browserDashSync.browserDashSyncStrings.unlink = this.cast("unlink")
+  @scala.inline
+  def unlinkDir: typings.browserDashSync.browserDashSyncStrings.unlinkDir = this.cast("unlinkDir")
+}
+

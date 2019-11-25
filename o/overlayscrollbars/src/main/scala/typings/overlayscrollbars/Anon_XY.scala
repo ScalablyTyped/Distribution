@@ -14,8 +14,8 @@ object Anon_XY {
   @scala.inline
   def apply(x: ScrollBehavior = null, y: ScrollBehavior = null): Anon_XY = {
     val __obj = js.Dynamic.literal()
-    if (x != null) __obj.updateDynamic("x")(x)
-    if (y != null) __obj.updateDynamic("y")(y)
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_XY]
   }
 }

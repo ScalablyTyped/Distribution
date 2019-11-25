@@ -13,7 +13,7 @@ object DatePickerIcons {
   @scala.inline
   def apply(rightIcon: String = null): DatePickerIcons = {
     val __obj = js.Dynamic.literal()
-    if (rightIcon != null) __obj.updateDynamic("rightIcon")(rightIcon)
+    if (rightIcon != null) __obj.updateDynamic("rightIcon")(rightIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatePickerIcons]
   }
 }

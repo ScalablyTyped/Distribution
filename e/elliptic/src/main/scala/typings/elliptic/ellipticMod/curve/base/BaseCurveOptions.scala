@@ -27,8 +27,8 @@ object BaseCurveOptions {
     prime: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any) | String = null
   ): BaseCurveOptions = {
     val __obj = js.Dynamic.literal(p = p.asInstanceOf[js.Any])
-    if (g != null) __obj.updateDynamic("g")(g)
-    if (gRed != null) __obj.updateDynamic("gRed")(gRed)
+    if (g != null) __obj.updateDynamic("g")(g.asInstanceOf[js.Any])
+    if (gRed != null) __obj.updateDynamic("gRed")(gRed.asInstanceOf[js.Any])
     if (n != null) __obj.updateDynamic("n")(n.asInstanceOf[js.Any])
     if (prime != null) __obj.updateDynamic("prime")(prime.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseCurveOptions]

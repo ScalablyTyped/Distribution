@@ -16,8 +16,8 @@ object GridGroupEvent {
     sender: Grid,
     groups: js.Any = null
   ): GridGroupEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (groups != null) __obj.updateDynamic("groups")(groups)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridGroupEvent]
   }
 }

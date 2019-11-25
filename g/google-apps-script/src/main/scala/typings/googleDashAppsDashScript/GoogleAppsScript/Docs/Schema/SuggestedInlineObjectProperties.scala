@@ -16,8 +16,8 @@ object SuggestedInlineObjectProperties {
     inlineObjectPropertiesSuggestionState: InlineObjectPropertiesSuggestionState = null
   ): SuggestedInlineObjectProperties = {
     val __obj = js.Dynamic.literal()
-    if (inlineObjectProperties != null) __obj.updateDynamic("inlineObjectProperties")(inlineObjectProperties)
-    if (inlineObjectPropertiesSuggestionState != null) __obj.updateDynamic("inlineObjectPropertiesSuggestionState")(inlineObjectPropertiesSuggestionState)
+    if (inlineObjectProperties != null) __obj.updateDynamic("inlineObjectProperties")(inlineObjectProperties.asInstanceOf[js.Any])
+    if (inlineObjectPropertiesSuggestionState != null) __obj.updateDynamic("inlineObjectPropertiesSuggestionState")(inlineObjectPropertiesSuggestionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestedInlineObjectProperties]
   }
 }

@@ -28,7 +28,7 @@ object UserInfo {
     uniqueId: String,
     userId: String
   ): UserInfo = {
-    val __obj = js.Dynamic.literal(displayableId = displayableId, familyName = familyName, givenName = givenName, identityProvider = identityProvider, passwordChangeUrl = passwordChangeUrl, passwordExpiresOn = passwordExpiresOn, uniqueId = uniqueId, userId = userId)
+    val __obj = js.Dynamic.literal(displayableId = displayableId.asInstanceOf[js.Any], familyName = familyName.asInstanceOf[js.Any], givenName = givenName.asInstanceOf[js.Any], identityProvider = identityProvider.asInstanceOf[js.Any], passwordChangeUrl = passwordChangeUrl.asInstanceOf[js.Any], passwordExpiresOn = passwordExpiresOn.asInstanceOf[js.Any], uniqueId = uniqueId.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserInfo]
   }

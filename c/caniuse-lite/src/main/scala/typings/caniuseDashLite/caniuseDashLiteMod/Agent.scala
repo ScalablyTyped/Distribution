@@ -42,8 +42,8 @@ object Agent {
     versions: js.Array[js.Any],
     prefix_exceptions: StringDictionary[js.UndefOr[String]] = null
   ): Agent = {
-    val __obj = js.Dynamic.literal(browser = browser, prefix = prefix, release_date = release_date, usage_global = usage_global, versions = versions)
-    if (prefix_exceptions != null) __obj.updateDynamic("prefix_exceptions")(prefix_exceptions)
+    val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], release_date = release_date.asInstanceOf[js.Any], usage_global = usage_global.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
+    if (prefix_exceptions != null) __obj.updateDynamic("prefix_exceptions")(prefix_exceptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Agent]
   }
 }

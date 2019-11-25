@@ -35,7 +35,7 @@ object IEntityStopRidingEventData {
     exit_from_rider: Boolean,
     switching_rides: Boolean
   ): IEntityStopRidingEventData = {
-    val __obj = js.Dynamic.literal(entity = entity, entity_is_being_destroyed = entity_is_being_destroyed, exit_from_rider = exit_from_rider, switching_rides = switching_rides)
+    val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], entity_is_being_destroyed = entity_is_being_destroyed.asInstanceOf[js.Any], exit_from_rider = exit_from_rider.asInstanceOf[js.Any], switching_rides = switching_rides.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IEntityStopRidingEventData]
   }

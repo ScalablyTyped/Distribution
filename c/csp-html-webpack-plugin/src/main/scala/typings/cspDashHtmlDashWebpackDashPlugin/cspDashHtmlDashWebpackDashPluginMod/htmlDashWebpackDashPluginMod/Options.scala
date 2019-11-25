@@ -14,7 +14,7 @@ object Options {
   @scala.inline
   def apply(cspPlugin: AdditionalOptions with Anon_Policy = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (cspPlugin != null) __obj.updateDynamic("cspPlugin")(cspPlugin)
+    if (cspPlugin != null) __obj.updateDynamic("cspPlugin")(cspPlugin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

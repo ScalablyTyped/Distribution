@@ -26,10 +26,10 @@ object Anon_CurrentVariant {
   ): Anon_CurrentVariant = {
     val __obj = js.Dynamic.literal()
     if (currentVariant != null) __obj.updateDynamic("currentVariant")(currentVariant.asInstanceOf[js.Any])
-    if (sessionDataList != null) __obj.updateDynamic("sessionDataList")(sessionDataList)
-    if (sessionKeyList != null) __obj.updateDynamic("sessionKeyList")(sessionKeyList)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (variants != null) __obj.updateDynamic("variants")(variants)
+    if (sessionDataList != null) __obj.updateDynamic("sessionDataList")(sessionDataList.asInstanceOf[js.Any])
+    if (sessionKeyList != null) __obj.updateDynamic("sessionKeyList")(sessionKeyList.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (variants != null) __obj.updateDynamic("variants")(variants.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CurrentVariant]
   }
 }

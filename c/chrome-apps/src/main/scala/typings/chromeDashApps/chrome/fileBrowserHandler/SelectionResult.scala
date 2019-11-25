@@ -15,8 +15,8 @@ trait SelectionResult extends js.Object {
 object SelectionResult {
   @scala.inline
   def apply(success: Boolean, entry: FileEntry = null): SelectionResult = {
-    val __obj = js.Dynamic.literal(success = success)
-    if (entry != null) __obj.updateDynamic("entry")(entry)
+    val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
+    if (entry != null) __obj.updateDynamic("entry")(entry.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionResult]
   }
 }

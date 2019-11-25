@@ -33,16 +33,16 @@ object Options {
     show_no_data_row: js.UndefOr[Boolean] = js.undefined,
     tag: String = null
   ): Options = {
-    val __obj = js.Dynamic.literal(contentId = contentId, scrollId = scrollId)
+    val __obj = js.Dynamic.literal(contentId = contentId.asInstanceOf[js.Any], scrollId = scrollId.asInstanceOf[js.Any])
     if (blocks_in_cluster != null) __obj.updateDynamic("blocks_in_cluster")(blocks_in_cluster.asInstanceOf[js.Any])
-    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks)
-    if (!js.isUndefined(keep_parity)) __obj.updateDynamic("keep_parity")(keep_parity)
-    if (no_data_class != null) __obj.updateDynamic("no_data_class")(no_data_class)
-    if (no_data_text != null) __obj.updateDynamic("no_data_text")(no_data_text)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
+    if (!js.isUndefined(keep_parity)) __obj.updateDynamic("keep_parity")(keep_parity.asInstanceOf[js.Any])
+    if (no_data_class != null) __obj.updateDynamic("no_data_class")(no_data_class.asInstanceOf[js.Any])
+    if (no_data_text != null) __obj.updateDynamic("no_data_text")(no_data_text.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (rows_in_block != null) __obj.updateDynamic("rows_in_block")(rows_in_block.asInstanceOf[js.Any])
-    if (!js.isUndefined(show_no_data_row)) __obj.updateDynamic("show_no_data_row")(show_no_data_row)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (!js.isUndefined(show_no_data_row)) __obj.updateDynamic("show_no_data_row")(show_no_data_row.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

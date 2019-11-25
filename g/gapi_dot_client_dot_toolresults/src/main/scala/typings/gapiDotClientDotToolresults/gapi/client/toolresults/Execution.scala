@@ -76,13 +76,13 @@ object Execution {
     testExecutionMatrixId: String = null
   ): Execution = {
     val __obj = js.Dynamic.literal()
-    if (completionTime != null) __obj.updateDynamic("completionTime")(completionTime)
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
-    if (executionId != null) __obj.updateDynamic("executionId")(executionId)
-    if (outcome != null) __obj.updateDynamic("outcome")(outcome)
-    if (specification != null) __obj.updateDynamic("specification")(specification)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (testExecutionMatrixId != null) __obj.updateDynamic("testExecutionMatrixId")(testExecutionMatrixId)
+    if (completionTime != null) __obj.updateDynamic("completionTime")(completionTime.asInstanceOf[js.Any])
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
+    if (executionId != null) __obj.updateDynamic("executionId")(executionId.asInstanceOf[js.Any])
+    if (outcome != null) __obj.updateDynamic("outcome")(outcome.asInstanceOf[js.Any])
+    if (specification != null) __obj.updateDynamic("specification")(specification.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (testExecutionMatrixId != null) __obj.updateDynamic("testExecutionMatrixId")(testExecutionMatrixId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Execution]
   }
 }

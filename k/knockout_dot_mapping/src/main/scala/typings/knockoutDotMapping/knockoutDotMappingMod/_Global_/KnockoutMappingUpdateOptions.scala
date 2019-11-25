@@ -15,8 +15,8 @@ trait KnockoutMappingUpdateOptions extends js.Object {
 object KnockoutMappingUpdateOptions {
   @scala.inline
   def apply(data: js.Any, parent: js.Any, target: js.Any, observable: KnockoutObservable[_] = null): KnockoutMappingUpdateOptions = {
-    val __obj = js.Dynamic.literal(data = data, parent = parent, target = target)
-    if (observable != null) __obj.updateDynamic("observable")(observable)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    if (observable != null) __obj.updateDynamic("observable")(observable.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutMappingUpdateOptions]
   }
 }

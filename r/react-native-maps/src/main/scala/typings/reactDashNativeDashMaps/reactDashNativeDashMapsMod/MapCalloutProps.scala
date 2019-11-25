@@ -19,7 +19,7 @@ object MapCalloutProps {
   ): MapCalloutProps = {
     val __obj = js.Dynamic.literal()
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
-    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip)
+    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapCalloutProps]
   }
 }

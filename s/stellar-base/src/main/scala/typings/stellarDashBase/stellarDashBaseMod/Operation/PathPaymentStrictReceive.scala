@@ -29,9 +29,9 @@ object PathPaymentStrictReceive {
     `type`: typings.stellarDashBase.stellarDashBaseMod.OperationType.PathPaymentStrictReceive,
     source: String = null
   ): PathPaymentStrictReceive = {
-    val __obj = js.Dynamic.literal(destAmount = destAmount, destAsset = destAsset, destination = destination, path = path, sendAsset = sendAsset, sendMax = sendMax)
-    __obj.updateDynamic("type")(`type`)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(destAmount = destAmount.asInstanceOf[js.Any], destAsset = destAsset.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], sendAsset = sendAsset.asInstanceOf[js.Any], sendMax = sendMax.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathPaymentStrictReceive]
   }
 }

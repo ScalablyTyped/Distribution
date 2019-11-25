@@ -16,9 +16,9 @@ trait MediaImage extends js.Object {
 object MediaImage {
   @scala.inline
   def apply(src: String, sizes: String = null, `type`: String = null): MediaImage = {
-    val __obj = js.Dynamic.literal(src = src)
-    if (sizes != null) __obj.updateDynamic("sizes")(sizes)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
+    if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaImage]
   }
 }

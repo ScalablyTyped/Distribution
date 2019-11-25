@@ -37,18 +37,18 @@ object PMRMessage {
     username: String = null,
     version: Int | Double = null
   ): PMRMessage = {
-    val __obj = js.Dynamic.literal(messageType = messageType)
+    val __obj = js.Dynamic.literal(messageType = messageType.asInstanceOf[js.Any])
     if (canceledQuantity != null) __obj.updateDynamic("canceledQuantity")(canceledQuantity.asInstanceOf[js.Any])
     if (incomingOrderNumber != null) __obj.updateDynamic("incomingOrderNumber")(incomingOrderNumber.asInstanceOf[js.Any])
-    if (instrument != null) __obj.updateDynamic("instrument")(instrument)
+    if (instrument != null) __obj.updateDynamic("instrument")(instrument.asInstanceOf[js.Any])
     if (matchNumber != null) __obj.updateDynamic("matchNumber")(matchNumber.asInstanceOf[js.Any])
-    if (orderNumber != null) __obj.updateDynamic("orderNumber")(orderNumber)
+    if (orderNumber != null) __obj.updateDynamic("orderNumber")(orderNumber.asInstanceOf[js.Any])
     if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     if (restingOrderNumber != null) __obj.updateDynamic("restingOrderNumber")(restingOrderNumber.asInstanceOf[js.Any])
-    if (side != null) __obj.updateDynamic("side")(side)
+    if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PMRMessage]
   }

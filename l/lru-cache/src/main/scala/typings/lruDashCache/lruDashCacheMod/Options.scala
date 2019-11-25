@@ -76,9 +76,9 @@ object Options {
     if (length != null) __obj.updateDynamic("length")(js.Any.fromFunction2(length))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
-    if (!js.isUndefined(noDisposeOnSet)) __obj.updateDynamic("noDisposeOnSet")(noDisposeOnSet)
-    if (!js.isUndefined(stale)) __obj.updateDynamic("stale")(stale)
-    if (!js.isUndefined(updateAgeOnGet)) __obj.updateDynamic("updateAgeOnGet")(updateAgeOnGet)
+    if (!js.isUndefined(noDisposeOnSet)) __obj.updateDynamic("noDisposeOnSet")(noDisposeOnSet.asInstanceOf[js.Any])
+    if (!js.isUndefined(stale)) __obj.updateDynamic("stale")(stale.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateAgeOnGet)) __obj.updateDynamic("updateAgeOnGet")(updateAgeOnGet.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[K, V]]
   }
 }

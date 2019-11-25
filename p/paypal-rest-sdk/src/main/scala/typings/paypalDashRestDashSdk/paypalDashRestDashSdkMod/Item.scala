@@ -27,11 +27,11 @@ object Item {
     tax: String = null,
     url: String = null
   ): Item = {
-    val __obj = js.Dynamic.literal(currency = currency, name = name, price = price, quantity = quantity)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (sku != null) __obj.updateDynamic("sku")(sku)
-    if (tax != null) __obj.updateDynamic("tax")(tax)
-    if (url != null) __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
+    if (tax != null) __obj.updateDynamic("tax")(tax.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item]
   }
 }

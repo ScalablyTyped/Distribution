@@ -13,8 +13,8 @@ object Anon_Encode {
   @scala.inline
   def apply(encode: js.UndefOr[Boolean] = js.undefined, ignoreDisabled: js.UndefOr[Boolean] = js.undefined): Anon_Encode = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(encode)) __obj.updateDynamic("encode")(encode)
-    if (!js.isUndefined(ignoreDisabled)) __obj.updateDynamic("ignoreDisabled")(ignoreDisabled)
+    if (!js.isUndefined(encode)) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreDisabled)) __obj.updateDynamic("ignoreDisabled")(ignoreDisabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Encode]
   }
 }

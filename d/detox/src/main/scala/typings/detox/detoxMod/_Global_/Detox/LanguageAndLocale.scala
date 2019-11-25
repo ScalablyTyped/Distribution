@@ -13,8 +13,8 @@ object LanguageAndLocale {
   @scala.inline
   def apply(language: String = null, locale: String = null): LanguageAndLocale = {
     val __obj = js.Dynamic.literal()
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageAndLocale]
   }
 }

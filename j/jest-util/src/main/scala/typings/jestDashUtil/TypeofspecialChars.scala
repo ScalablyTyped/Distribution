@@ -14,7 +14,7 @@ trait TypeofspecialChars extends js.Object {
 object TypeofspecialChars {
   @scala.inline
   def apply(ARROW: ` BACKSLASHu203A `, CLEAR: String, ICONS: Anon_Failed): TypeofspecialChars = {
-    val __obj = js.Dynamic.literal(ARROW = ARROW, CLEAR = CLEAR, ICONS = ICONS)
+    val __obj = js.Dynamic.literal(ARROW = ARROW.asInstanceOf[js.Any], CLEAR = CLEAR.asInstanceOf[js.Any], ICONS = ICONS.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofspecialChars]
   }

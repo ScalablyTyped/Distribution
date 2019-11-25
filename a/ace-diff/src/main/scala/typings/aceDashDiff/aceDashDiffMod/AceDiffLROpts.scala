@@ -22,11 +22,11 @@ object AceDiffLROpts {
     theme: String = null
   ): AceDiffLROpts = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (!js.isUndefined(copyLinkEnabled)) __obj.updateDynamic("copyLinkEnabled")(copyLinkEnabled)
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(copyLinkEnabled)) __obj.updateDynamic("copyLinkEnabled")(copyLinkEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[AceDiffLROpts]
   }
 }

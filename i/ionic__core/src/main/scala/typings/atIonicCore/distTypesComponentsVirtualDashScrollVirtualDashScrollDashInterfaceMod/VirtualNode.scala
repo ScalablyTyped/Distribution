@@ -15,7 +15,7 @@ trait VirtualNode extends js.Object {
 object VirtualNode {
   @scala.inline
   def apply(cell: Cell, change: NodeChange, d: Boolean, top: Double, visible: Boolean): VirtualNode = {
-    val __obj = js.Dynamic.literal(cell = cell, change = change, d = d, top = top, visible = visible)
+    val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], change = change.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VirtualNode]
   }

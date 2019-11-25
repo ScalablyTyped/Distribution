@@ -14,8 +14,8 @@ object Anon_ {
   @scala.inline
   def apply(StringDictionary: /* _ */ StringDictionary[js.Any] = null, name: String = null): Anon_ = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_]
   }
 }

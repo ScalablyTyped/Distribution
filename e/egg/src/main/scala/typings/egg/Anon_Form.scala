@@ -13,7 +13,7 @@ trait Anon_Form extends js.Object {
 object Anon_Form {
   @scala.inline
   def apply(form: js.Array[String], json: js.Array[String], text: js.Array[String]): Anon_Form = {
-    val __obj = js.Dynamic.literal(form = form, json = json, text = text)
+    val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Form]
   }

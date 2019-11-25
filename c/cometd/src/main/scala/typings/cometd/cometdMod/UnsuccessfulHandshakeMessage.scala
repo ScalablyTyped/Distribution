@@ -35,18 +35,18 @@ object UnsuccessfulHandshakeMessage {
     timestamp: String = null,
     version: String = null
   ): UnsuccessfulHandshakeMessage = {
-    val __obj = js.Dynamic.literal(channel = channel, error = error, successful = successful)
-    if (advice != null) __obj.updateDynamic("advice")(advice)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (connectionType != null) __obj.updateDynamic("connectionType")(connectionType)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (ext != null) __obj.updateDynamic("ext")(ext)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (minimumVersion != null) __obj.updateDynamic("minimumVersion")(minimumVersion)
-    if (!js.isUndefined(reestablish)) __obj.updateDynamic("reestablish")(reestablish)
-    if (supportedConnectionTypes != null) __obj.updateDynamic("supportedConnectionTypes")(supportedConnectionTypes)
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
-    if (version != null) __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], successful = successful.asInstanceOf[js.Any])
+    if (advice != null) __obj.updateDynamic("advice")(advice.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (connectionType != null) __obj.updateDynamic("connectionType")(connectionType.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (minimumVersion != null) __obj.updateDynamic("minimumVersion")(minimumVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(reestablish)) __obj.updateDynamic("reestablish")(reestablish.asInstanceOf[js.Any])
+    if (supportedConnectionTypes != null) __obj.updateDynamic("supportedConnectionTypes")(supportedConnectionTypes.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnsuccessfulHandshakeMessage]
   }
 }

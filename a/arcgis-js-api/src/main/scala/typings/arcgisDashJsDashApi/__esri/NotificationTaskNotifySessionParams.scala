@@ -37,7 +37,7 @@ object NotificationTaskNotifySessionParams {
     sessionid: String,
     user: String
   ): NotificationTaskNotifySessionParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, deleteAfter = deleteAfter, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sessionid = sessionid, user = user)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], deleteAfter = deleteAfter.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sessionid = sessionid.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NotificationTaskNotifySessionParams]
   }

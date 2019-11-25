@@ -44,7 +44,7 @@ object TableRelationship {
     tableAlias: String,
     tableName: String
   ): TableRelationship = {
-    val __obj = js.Dynamic.literal(cardinality = cardinality, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), linkField = linkField, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), tableAlias = tableAlias, tableName = tableName)
+    val __obj = js.Dynamic.literal(cardinality = cardinality.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), linkField = linkField.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), tableAlias = tableAlias.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TableRelationship]
   }

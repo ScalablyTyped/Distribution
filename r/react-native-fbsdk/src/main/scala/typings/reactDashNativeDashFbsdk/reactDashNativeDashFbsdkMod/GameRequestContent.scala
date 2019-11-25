@@ -54,14 +54,14 @@ object GameRequestContent {
     suggestions: js.Array[String] = null,
     title: String = null
   ): GameRequestContent = {
-    val __obj = js.Dynamic.literal(message = message)
-    if (actionType != null) __obj.updateDynamic("actionType")(actionType)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
-    if (recipients != null) __obj.updateDynamic("recipients")(recipients)
-    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    if (actionType != null) __obj.updateDynamic("actionType")(actionType.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
+    if (recipients != null) __obj.updateDynamic("recipients")(recipients.asInstanceOf[js.Any])
+    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameRequestContent]
   }
 }

@@ -19,8 +19,8 @@ object TouchBarLabelConstructorOptions {
   @scala.inline
   def apply(label: String = null, textColor: String = null): TouchBarLabelConstructorOptions = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchBarLabelConstructorOptions]
   }
 }

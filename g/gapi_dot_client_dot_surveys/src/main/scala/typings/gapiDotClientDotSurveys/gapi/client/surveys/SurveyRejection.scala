@@ -15,8 +15,8 @@ object SurveyRejection {
   @scala.inline
   def apply(explanation: String = null, `type`: String = null): SurveyRejection = {
     val __obj = js.Dynamic.literal()
-    if (explanation != null) __obj.updateDynamic("explanation")(explanation)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (explanation != null) __obj.updateDynamic("explanation")(explanation.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SurveyRejection]
   }
 }

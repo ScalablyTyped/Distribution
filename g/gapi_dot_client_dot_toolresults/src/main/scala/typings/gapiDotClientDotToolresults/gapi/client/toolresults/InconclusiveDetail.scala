@@ -25,8 +25,8 @@ object InconclusiveDetail {
     infrastructureFailure: js.UndefOr[Boolean] = js.undefined
   ): InconclusiveDetail = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(abortedByUser)) __obj.updateDynamic("abortedByUser")(abortedByUser)
-    if (!js.isUndefined(infrastructureFailure)) __obj.updateDynamic("infrastructureFailure")(infrastructureFailure)
+    if (!js.isUndefined(abortedByUser)) __obj.updateDynamic("abortedByUser")(abortedByUser.asInstanceOf[js.Any])
+    if (!js.isUndefined(infrastructureFailure)) __obj.updateDynamic("infrastructureFailure")(infrastructureFailure.asInstanceOf[js.Any])
     __obj.asInstanceOf[InconclusiveDetail]
   }
 }

@@ -32,7 +32,7 @@ object ToastOptions {
     success: js.Any => Unit = null,
     `type`: none | success | fail | exception | String = null
   ): ToastOptions = {
-    val __obj = js.Dynamic.literal(content = content)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))

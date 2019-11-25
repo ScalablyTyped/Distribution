@@ -22,9 +22,9 @@ object IDragOptions {
     tremor: Int | Double = null
   ): IDragOptions = {
     val __obj = js.Dynamic.literal()
-    if (actionCursor != null) __obj.updateDynamic("actionCursor")(actionCursor)
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (!js.isUndefined(inertia)) __obj.updateDynamic("inertia")(inertia)
+    if (actionCursor != null) __obj.updateDynamic("actionCursor")(actionCursor.asInstanceOf[js.Any])
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (!js.isUndefined(inertia)) __obj.updateDynamic("inertia")(inertia.asInstanceOf[js.Any])
     if (inertiaDuration != null) __obj.updateDynamic("inertiaDuration")(inertiaDuration.asInstanceOf[js.Any])
     if (tremor != null) __obj.updateDynamic("tremor")(tremor.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDragOptions]

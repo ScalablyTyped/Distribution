@@ -52,7 +52,7 @@ trait Anon_Create extends js.Object {
   	Create a new Ky instance with complete new defaults.
   	@returns A new Ky instance.
   	*/
-  def create(defaultOptions: Options): /* import warning: ImportType.apply Failed type conversion: typeof ky */ js.Any = js.native
+  def create(defaultOptions: Options): /* import warning: importer.ImportType#apply Failed type conversion: typeof ky */ js.Any = js.native
   /**
   	Fetch the given `url` using the option `{method: 'delete'}`.
   	@param url - `Request` object, `URL` object, or URL string.
@@ -65,7 +65,7 @@ trait Anon_Create extends js.Object {
   	In contrast to `ky.create()`, `ky.extend()` inherits defaults from its parent.
   	@returns A new Ky instance.
   	*/
-  def extend(defaultOptions: Options): /* import warning: ImportType.apply Failed type conversion: typeof ky */ js.Any = js.native
+  def extend(defaultOptions: Options): /* import warning: importer.ImportType#apply Failed type conversion: typeof ky */ js.Any = js.native
   /**
   	Fetch the given `url` using the option `{method: 'get'}`.
   	@param url - `Request` object, `URL` object, or URL string.

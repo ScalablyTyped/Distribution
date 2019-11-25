@@ -33,10 +33,10 @@ object IKeytipDataProps {
     keytipProps: IKeytipProps = null
   ): IKeytipDataProps = {
     val __obj = js.Dynamic.literal()
-    if (ariaDescribedBy != null) __obj.updateDynamic("ariaDescribedBy")(ariaDescribedBy)
+    if (ariaDescribedBy != null) __obj.updateDynamic("ariaDescribedBy")(ariaDescribedBy.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (keytipProps != null) __obj.updateDynamic("keytipProps")(keytipProps)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (keytipProps != null) __obj.updateDynamic("keytipProps")(keytipProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKeytipDataProps]
   }
 }

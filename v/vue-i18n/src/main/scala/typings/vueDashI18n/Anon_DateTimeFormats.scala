@@ -23,10 +23,10 @@ object Anon_DateTimeFormats {
     sharedMessages: LocaleMessages = null
   ): Anon_DateTimeFormats = {
     val __obj = js.Dynamic.literal()
-    if (dateTimeFormats != null) __obj.updateDynamic("dateTimeFormats")(dateTimeFormats)
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (numberFormats != null) __obj.updateDynamic("numberFormats")(numberFormats)
-    if (sharedMessages != null) __obj.updateDynamic("sharedMessages")(sharedMessages)
+    if (dateTimeFormats != null) __obj.updateDynamic("dateTimeFormats")(dateTimeFormats.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (numberFormats != null) __obj.updateDynamic("numberFormats")(numberFormats.asInstanceOf[js.Any])
+    if (sharedMessages != null) __obj.updateDynamic("sharedMessages")(sharedMessages.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DateTimeFormats]
   }
 }

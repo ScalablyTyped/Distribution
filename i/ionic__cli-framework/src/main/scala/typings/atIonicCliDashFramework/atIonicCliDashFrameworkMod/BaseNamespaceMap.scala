@@ -11,9 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.std.Map because Already inherited
-- typings.atIonicCliDashFramework.definitionsMod.INamespaceMap because Already inherited */ @JSImport("@ionic/cli-framework", "BaseNamespaceMap")
+@JSImport("@ionic/cli-framework", "BaseNamespaceMap")
 @js.native
 class BaseNamespaceMap[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] () extends AliasedMap[String, NamespaceMapGetter[C, N, M, I, O]]
 

@@ -27,11 +27,11 @@ object AggregateStats {
     sum: String = null
   ): AggregateStats = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (max != null) __obj.updateDynamic("max")(max)
-    if (min != null) __obj.updateDynamic("min")(min)
-    if (sum != null) __obj.updateDynamic("sum")(sum)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (sum != null) __obj.updateDynamic("sum")(sum.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregateStats]
   }
 }

@@ -24,8 +24,8 @@ object SearchReadsResponse {
   @scala.inline
   def apply(alignments: js.Array[Read] = null, nextPageToken: String = null): SearchReadsResponse = {
     val __obj = js.Dynamic.literal()
-    if (alignments != null) __obj.updateDynamic("alignments")(alignments)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (alignments != null) __obj.updateDynamic("alignments")(alignments.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchReadsResponse]
   }
 }

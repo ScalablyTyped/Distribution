@@ -52,7 +52,7 @@ trait Typeofmaps extends js.Object {
   /** A circle on the Earth's surface; also known as a "spherical cap". */
   var Circle: Instantiable0[typings.googlemaps.google.maps.Circle]
   /***** Data *****/
-  var Data: Instantiable0[typings.googlemaps.google.maps.Data] | TypeofData
+  var Data: Instantiable0[typings.googlemaps.google.maps.Data] with TypeofData
   var DirectionsRenderer: Instantiable0[typings.googlemaps.google.maps.DirectionsRenderer]
   var DirectionsService: Instantiable0[typings.googlemaps.google.maps.DirectionsService]
   var DistanceMatrixService: Instantiable0[typings.googlemaps.google.maps.DistanceMatrixService]
@@ -147,7 +147,7 @@ object Typeofmaps {
   def apply(
     BicyclingLayer: Instantiable0[BicyclingLayer],
     Circle: Instantiable0[Circle],
-    Data: Instantiable0[Data],
+    Data: Instantiable0[Data] with TypeofData,
     DirectionsRenderer: Instantiable0[DirectionsRenderer],
     DirectionsService: Instantiable0[DirectionsService],
     DistanceMatrixService: Instantiable0[DistanceMatrixService],
@@ -187,7 +187,7 @@ object Typeofmaps {
     places: Typeofplaces,
     visualization: Typeofvisualization
   ): Typeofmaps = {
-    val __obj = js.Dynamic.literal(BicyclingLayer = BicyclingLayer, Circle = Circle, Data = Data, DirectionsRenderer = DirectionsRenderer, DirectionsService = DirectionsService, DistanceMatrixService = DistanceMatrixService, ElevationService = ElevationService, FusionTablesLayer = FusionTablesLayer, Geocoder = Geocoder, GroundOverlay = GroundOverlay, ImageMapType = ImageMapType, InfoWindow = InfoWindow, KmlLayer = KmlLayer, LatLng = LatLng, LatLngBounds = LatLngBounds, MVCArray = MVCArray, MVCObject = MVCObject, Map = Map, MapCanvasProjection = MapCanvasProjection, MapTypeRegistry = MapTypeRegistry, Marker = Marker, MaxZoomService = MaxZoomService, OverlayView = OverlayView, Point = Point, Polygon = Polygon, Polyline = Polyline, Rectangle = Rectangle, SaveWidget = SaveWidget, Size = Size, StreetViewCoverageLayer = StreetViewCoverageLayer, StreetViewPanorama = StreetViewPanorama, StreetViewService = StreetViewService, StyledMapType = StyledMapType, TrafficLayer = TrafficLayer, TransitLayer = TransitLayer, adsense = adsense, drawing = drawing, event = event, geometry = geometry, places = places, visualization = visualization)
+    val __obj = js.Dynamic.literal(BicyclingLayer = BicyclingLayer.asInstanceOf[js.Any], Circle = Circle.asInstanceOf[js.Any], Data = Data.asInstanceOf[js.Any], DirectionsRenderer = DirectionsRenderer.asInstanceOf[js.Any], DirectionsService = DirectionsService.asInstanceOf[js.Any], DistanceMatrixService = DistanceMatrixService.asInstanceOf[js.Any], ElevationService = ElevationService.asInstanceOf[js.Any], FusionTablesLayer = FusionTablesLayer.asInstanceOf[js.Any], Geocoder = Geocoder.asInstanceOf[js.Any], GroundOverlay = GroundOverlay.asInstanceOf[js.Any], ImageMapType = ImageMapType.asInstanceOf[js.Any], InfoWindow = InfoWindow.asInstanceOf[js.Any], KmlLayer = KmlLayer.asInstanceOf[js.Any], LatLng = LatLng.asInstanceOf[js.Any], LatLngBounds = LatLngBounds.asInstanceOf[js.Any], MVCArray = MVCArray.asInstanceOf[js.Any], MVCObject = MVCObject.asInstanceOf[js.Any], Map = Map.asInstanceOf[js.Any], MapCanvasProjection = MapCanvasProjection.asInstanceOf[js.Any], MapTypeRegistry = MapTypeRegistry.asInstanceOf[js.Any], Marker = Marker.asInstanceOf[js.Any], MaxZoomService = MaxZoomService.asInstanceOf[js.Any], OverlayView = OverlayView.asInstanceOf[js.Any], Point = Point.asInstanceOf[js.Any], Polygon = Polygon.asInstanceOf[js.Any], Polyline = Polyline.asInstanceOf[js.Any], Rectangle = Rectangle.asInstanceOf[js.Any], SaveWidget = SaveWidget.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], StreetViewCoverageLayer = StreetViewCoverageLayer.asInstanceOf[js.Any], StreetViewPanorama = StreetViewPanorama.asInstanceOf[js.Any], StreetViewService = StreetViewService.asInstanceOf[js.Any], StyledMapType = StyledMapType.asInstanceOf[js.Any], TrafficLayer = TrafficLayer.asInstanceOf[js.Any], TransitLayer = TransitLayer.asInstanceOf[js.Any], adsense = adsense.asInstanceOf[js.Any], drawing = drawing.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], places = places.asInstanceOf[js.Any], visualization = visualization.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofmaps]
   }

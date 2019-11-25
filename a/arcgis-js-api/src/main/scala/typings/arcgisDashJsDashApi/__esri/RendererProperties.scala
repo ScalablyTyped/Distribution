@@ -17,7 +17,7 @@ object RendererProperties {
   @scala.inline
   def apply(authoringInfo: AuthoringInfoProperties = null): RendererProperties = {
     val __obj = js.Dynamic.literal()
-    if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo)
+    if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[RendererProperties]
   }
 }

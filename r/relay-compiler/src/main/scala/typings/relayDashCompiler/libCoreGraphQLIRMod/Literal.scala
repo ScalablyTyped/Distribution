@@ -23,7 +23,7 @@ object Literal {
     value: js.Any,
     metadata: Metadata = null
   ): Literal = {
-    val __obj = js.Dynamic.literal(kind = kind, loc = loc, value = value)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Literal]
   }

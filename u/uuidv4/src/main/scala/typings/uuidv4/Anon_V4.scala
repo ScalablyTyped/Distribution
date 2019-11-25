@@ -13,7 +13,7 @@ trait Anon_V4 extends js.Object {
 object Anon_V4 {
   @scala.inline
   def apply(v4: RegExp, v5: RegExp): Anon_V4 = {
-    val __obj = js.Dynamic.literal(v4 = v4, v5 = v5)
+    val __obj = js.Dynamic.literal(v4 = v4.asInstanceOf[js.Any], v5 = v5.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_V4]
   }

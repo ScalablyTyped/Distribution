@@ -22,11 +22,11 @@ object UpdateTableBorderPropertiesRequest {
     tableRange: TableRange = null
   ): UpdateTableBorderPropertiesRequest = {
     val __obj = js.Dynamic.literal()
-    if (borderPosition != null) __obj.updateDynamic("borderPosition")(borderPosition)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
-    if (tableBorderProperties != null) __obj.updateDynamic("tableBorderProperties")(tableBorderProperties)
-    if (tableRange != null) __obj.updateDynamic("tableRange")(tableRange)
+    if (borderPosition != null) __obj.updateDynamic("borderPosition")(borderPosition.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
+    if (tableBorderProperties != null) __obj.updateDynamic("tableBorderProperties")(tableBorderProperties.asInstanceOf[js.Any])
+    if (tableRange != null) __obj.updateDynamic("tableRange")(tableRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTableBorderPropertiesRequest]
   }
 }

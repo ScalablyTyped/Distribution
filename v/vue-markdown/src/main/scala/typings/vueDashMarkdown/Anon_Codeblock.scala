@@ -29,7 +29,7 @@ object Anon_Codeblock {
     softbreak: js.Any,
     text: js.Any
   ): Anon_Codeblock = {
-    val __obj = js.Dynamic.literal(code_block = code_block, code_inline = code_inline, fence = fence, hardbreak = hardbreak, html_block = html_block, html_inline = html_inline, image = image, softbreak = softbreak, text = text)
+    val __obj = js.Dynamic.literal(code_block = code_block.asInstanceOf[js.Any], code_inline = code_inline.asInstanceOf[js.Any], fence = fence.asInstanceOf[js.Any], hardbreak = hardbreak.asInstanceOf[js.Any], html_block = html_block.asInstanceOf[js.Any], html_inline = html_inline.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], softbreak = softbreak.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Codeblock]
   }

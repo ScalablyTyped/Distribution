@@ -12,7 +12,7 @@ trait DateContainerType extends js.Object {
 object DateContainerType {
   @scala.inline
   def apply(date: Moment): DateContainerType = {
-    val __obj = js.Dynamic.literal(date = date)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DateContainerType]
   }

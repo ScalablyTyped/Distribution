@@ -15,8 +15,8 @@ object Bookshelves {
   @scala.inline
   def apply(items: js.Array[Bookshelf] = null, kind: String = null): Bookshelves = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bookshelves]
   }
 }

@@ -19,9 +19,9 @@ object VideoNote {
     file_size: Int | Double = null,
     thumb: PhotoSize = null
   ): VideoNote = {
-    val __obj = js.Dynamic.literal(duration = duration, file_id = file_id, length = length)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], file_id = file_id.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
     if (file_size != null) __obj.updateDynamic("file_size")(file_size.asInstanceOf[js.Any])
-    if (thumb != null) __obj.updateDynamic("thumb")(thumb)
+    if (thumb != null) __obj.updateDynamic("thumb")(thumb.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoNote]
   }
 }

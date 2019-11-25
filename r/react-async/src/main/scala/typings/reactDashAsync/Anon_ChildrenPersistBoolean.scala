@@ -15,7 +15,7 @@ object Anon_ChildrenPersistBoolean {
   def apply[T](children: RejectedChildren[T] = null, persist: js.UndefOr[Boolean] = js.undefined): Anon_ChildrenPersistBoolean[T] = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist)
+    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChildrenPersistBoolean[T]]
   }
 }

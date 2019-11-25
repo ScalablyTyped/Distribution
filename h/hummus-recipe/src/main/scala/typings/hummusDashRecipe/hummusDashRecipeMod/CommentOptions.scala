@@ -22,11 +22,11 @@ object CommentOptions {
     title: String = null
   ): CommentOptions = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (flag != null) __obj.updateDynamic("flag")(flag)
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
-    if (!js.isUndefined(richText)) __obj.updateDynamic("richText")(richText)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (flag != null) __obj.updateDynamic("flag")(flag.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (!js.isUndefined(richText)) __obj.updateDynamic("richText")(richText.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentOptions]
   }
 }

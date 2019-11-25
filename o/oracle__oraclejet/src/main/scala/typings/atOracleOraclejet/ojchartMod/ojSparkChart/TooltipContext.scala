@@ -15,7 +15,7 @@ trait TooltipContext extends js.Object {
 object TooltipContext {
   @scala.inline
   def apply(color: String, componentElement: Element, parentElement: Element): TooltipContext = {
-    val __obj = js.Dynamic.literal(color = color, componentElement = componentElement, parentElement = parentElement)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], componentElement = componentElement.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TooltipContext]
   }

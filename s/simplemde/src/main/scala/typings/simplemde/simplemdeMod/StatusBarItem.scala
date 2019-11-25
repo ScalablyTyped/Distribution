@@ -14,7 +14,7 @@ trait StatusBarItem extends js.Object {
 object StatusBarItem {
   @scala.inline
   def apply(className: String, defaultValue: HTMLElement => Unit, onUpdate: HTMLElement => Unit): StatusBarItem = {
-    val __obj = js.Dynamic.literal(className = className, defaultValue = js.Any.fromFunction1(defaultValue), onUpdate = js.Any.fromFunction1(onUpdate))
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], defaultValue = js.Any.fromFunction1(defaultValue), onUpdate = js.Any.fromFunction1(onUpdate))
   
     __obj.asInstanceOf[StatusBarItem]
   }

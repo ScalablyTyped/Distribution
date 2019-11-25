@@ -22,11 +22,11 @@ object Config {
     storeKey: String = null
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (deserializeState != null) __obj.updateDynamic("deserializeState")(js.Any.fromFunction1(deserializeState))
-    if (!js.isUndefined(overrideIsServer)) __obj.updateDynamic("overrideIsServer")(overrideIsServer)
+    if (!js.isUndefined(overrideIsServer)) __obj.updateDynamic("overrideIsServer")(overrideIsServer.asInstanceOf[js.Any])
     if (serializeState != null) __obj.updateDynamic("serializeState")(js.Any.fromFunction1(serializeState))
-    if (storeKey != null) __obj.updateDynamic("storeKey")(storeKey)
+    if (storeKey != null) __obj.updateDynamic("storeKey")(storeKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

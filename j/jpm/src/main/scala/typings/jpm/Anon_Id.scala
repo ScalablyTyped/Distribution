@@ -28,8 +28,8 @@ object Anon_Id {
     onReady: /* worker */ SidebarWorker => _ = null,
     onShow: () => _ = null
   ): Anon_Id = {
-    val __obj = js.Dynamic.literal(title = title, url = url)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (onAttach != null) __obj.updateDynamic("onAttach")(js.Any.fromFunction1(onAttach))
     if (onDetach != null) __obj.updateDynamic("onDetach")(js.Any.fromFunction0(onDetach))
     if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction0(onHide))

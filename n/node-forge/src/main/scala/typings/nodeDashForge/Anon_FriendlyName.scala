@@ -20,9 +20,9 @@ object Anon_FriendlyName {
     localKeyId: js.Array[Bag] = null
   ): Anon_FriendlyName = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName)
-    if (localKeyId != null) __obj.updateDynamic("localKeyId")(localKeyId)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName.asInstanceOf[js.Any])
+    if (localKeyId != null) __obj.updateDynamic("localKeyId")(localKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FriendlyName]
   }
 }

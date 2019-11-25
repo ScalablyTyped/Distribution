@@ -73,16 +73,16 @@ object LocationData {
     province: String = null,
     streetNumber: Anon_Number = null
   ): LocationData = {
-    val __obj = js.Dynamic.literal(accuracy = accuracy, horizontalAccuracy = horizontalAccuracy, latitude = latitude, longitude = longitude)
-    if (city != null) __obj.updateDynamic("city")(city)
-    if (cityAdcode != null) __obj.updateDynamic("cityAdcode")(cityAdcode)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode)
-    if (district != null) __obj.updateDynamic("district")(district)
-    if (districtAdcode != null) __obj.updateDynamic("districtAdcode")(districtAdcode)
-    if (pois != null) __obj.updateDynamic("pois")(pois)
-    if (province != null) __obj.updateDynamic("province")(province)
-    if (streetNumber != null) __obj.updateDynamic("streetNumber")(streetNumber)
+    val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], horizontalAccuracy = horizontalAccuracy.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
+    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
+    if (cityAdcode != null) __obj.updateDynamic("cityAdcode")(cityAdcode.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
+    if (district != null) __obj.updateDynamic("district")(district.asInstanceOf[js.Any])
+    if (districtAdcode != null) __obj.updateDynamic("districtAdcode")(districtAdcode.asInstanceOf[js.Any])
+    if (pois != null) __obj.updateDynamic("pois")(pois.asInstanceOf[js.Any])
+    if (province != null) __obj.updateDynamic("province")(province.asInstanceOf[js.Any])
+    if (streetNumber != null) __obj.updateDynamic("streetNumber")(streetNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationData]
   }
 }

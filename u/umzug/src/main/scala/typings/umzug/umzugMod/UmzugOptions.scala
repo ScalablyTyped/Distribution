@@ -46,12 +46,12 @@ object UmzugOptions {
     upName: String = null
   ): UmzugOptions = {
     val __obj = js.Dynamic.literal()
-    if (downName != null) __obj.updateDynamic("downName")(downName)
+    if (downName != null) __obj.updateDynamic("downName")(downName.asInstanceOf[js.Any])
     if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (migrations != null) __obj.updateDynamic("migrations")(migrations)
+    if (migrations != null) __obj.updateDynamic("migrations")(migrations.asInstanceOf[js.Any])
     if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
     if (storageOptions != null) __obj.updateDynamic("storageOptions")(storageOptions.asInstanceOf[js.Any])
-    if (upName != null) __obj.updateDynamic("upName")(upName)
+    if (upName != null) __obj.updateDynamic("upName")(upName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UmzugOptions]
   }
 }

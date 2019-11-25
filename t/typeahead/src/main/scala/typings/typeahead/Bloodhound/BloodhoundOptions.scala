@@ -80,7 +80,7 @@ object BloodhoundOptions {
   ): BloodhoundOptions[T] = {
     val __obj = js.Dynamic.literal(datumTokenizer = js.Any.fromFunction1(datumTokenizer), queryTokenizer = js.Any.fromFunction1(queryTokenizer))
     if (identify != null) __obj.updateDynamic("identify")(js.Any.fromFunction1(identify))
-    if (!js.isUndefined(initialize)) __obj.updateDynamic("initialize")(initialize)
+    if (!js.isUndefined(initialize)) __obj.updateDynamic("initialize")(initialize.asInstanceOf[js.Any])
     if (local != null) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])
     if (prefetch != null) __obj.updateDynamic("prefetch")(prefetch.asInstanceOf[js.Any])
     if (remote != null) __obj.updateDynamic("remote")(remote.asInstanceOf[js.Any])

@@ -13,7 +13,7 @@ object Anon_Relay {
   @scala.inline
   def apply(relay: RelayProp = null): Anon_Relay = {
     val __obj = js.Dynamic.literal()
-    if (relay != null) __obj.updateDynamic("relay")(relay)
+    if (relay != null) __obj.updateDynamic("relay")(relay.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Relay]
   }
 }

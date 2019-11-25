@@ -23,7 +23,7 @@ object IGradient {
     stops: js.Array[Double],
     visible: Boolean
   ): IGradient = {
-    val __obj = js.Dynamic.literal(chart = chart, colors = colors, direction = direction, offset = offset, stops = stops, visible = visible)
+    val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], colors = colors.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IGradient]
   }

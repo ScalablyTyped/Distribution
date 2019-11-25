@@ -30,9 +30,9 @@ object EntryMetadata {
     mimeType: String = null,
     thumbnail: String = null
   ): EntryMetadata = {
-    val __obj = js.Dynamic.literal(isDirectory = isDirectory, modificationTime = modificationTime, name = name, size = size)
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
-    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail)
+    val __obj = js.Dynamic.literal(isDirectory = isDirectory.asInstanceOf[js.Any], modificationTime = modificationTime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
+    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntryMetadata]
   }
 }

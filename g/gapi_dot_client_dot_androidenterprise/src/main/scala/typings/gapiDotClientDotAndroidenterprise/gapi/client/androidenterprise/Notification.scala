@@ -42,16 +42,16 @@ object Notification {
     timestampMillis: String = null
   ): Notification = {
     val __obj = js.Dynamic.literal()
-    if (appRestrictionsSchemaChangeEvent != null) __obj.updateDynamic("appRestrictionsSchemaChangeEvent")(appRestrictionsSchemaChangeEvent)
-    if (appUpdateEvent != null) __obj.updateDynamic("appUpdateEvent")(appUpdateEvent)
-    if (enterpriseId != null) __obj.updateDynamic("enterpriseId")(enterpriseId)
-    if (installFailureEvent != null) __obj.updateDynamic("installFailureEvent")(installFailureEvent)
-    if (newDeviceEvent != null) __obj.updateDynamic("newDeviceEvent")(newDeviceEvent)
-    if (newPermissionsEvent != null) __obj.updateDynamic("newPermissionsEvent")(newPermissionsEvent)
-    if (notificationType != null) __obj.updateDynamic("notificationType")(notificationType)
-    if (productApprovalEvent != null) __obj.updateDynamic("productApprovalEvent")(productApprovalEvent)
-    if (productAvailabilityChangeEvent != null) __obj.updateDynamic("productAvailabilityChangeEvent")(productAvailabilityChangeEvent)
-    if (timestampMillis != null) __obj.updateDynamic("timestampMillis")(timestampMillis)
+    if (appRestrictionsSchemaChangeEvent != null) __obj.updateDynamic("appRestrictionsSchemaChangeEvent")(appRestrictionsSchemaChangeEvent.asInstanceOf[js.Any])
+    if (appUpdateEvent != null) __obj.updateDynamic("appUpdateEvent")(appUpdateEvent.asInstanceOf[js.Any])
+    if (enterpriseId != null) __obj.updateDynamic("enterpriseId")(enterpriseId.asInstanceOf[js.Any])
+    if (installFailureEvent != null) __obj.updateDynamic("installFailureEvent")(installFailureEvent.asInstanceOf[js.Any])
+    if (newDeviceEvent != null) __obj.updateDynamic("newDeviceEvent")(newDeviceEvent.asInstanceOf[js.Any])
+    if (newPermissionsEvent != null) __obj.updateDynamic("newPermissionsEvent")(newPermissionsEvent.asInstanceOf[js.Any])
+    if (notificationType != null) __obj.updateDynamic("notificationType")(notificationType.asInstanceOf[js.Any])
+    if (productApprovalEvent != null) __obj.updateDynamic("productApprovalEvent")(productApprovalEvent.asInstanceOf[js.Any])
+    if (productAvailabilityChangeEvent != null) __obj.updateDynamic("productAvailabilityChangeEvent")(productAvailabilityChangeEvent.asInstanceOf[js.Any])
+    if (timestampMillis != null) __obj.updateDynamic("timestampMillis")(timestampMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[Notification]
   }
 }

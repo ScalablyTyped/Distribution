@@ -37,10 +37,10 @@ object GetSamplingTargetsOutput {
     SamplingTargetDocuments: js.Array[_UnmarshalledSamplingTargetDocument] = null,
     UnprocessedStatistics: js.Array[_UnmarshalledUnprocessedStatistics] = null
   ): GetSamplingTargetsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (LastRuleModification != null) __obj.updateDynamic("LastRuleModification")(LastRuleModification)
-    if (SamplingTargetDocuments != null) __obj.updateDynamic("SamplingTargetDocuments")(SamplingTargetDocuments)
-    if (UnprocessedStatistics != null) __obj.updateDynamic("UnprocessedStatistics")(UnprocessedStatistics)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (LastRuleModification != null) __obj.updateDynamic("LastRuleModification")(LastRuleModification.asInstanceOf[js.Any])
+    if (SamplingTargetDocuments != null) __obj.updateDynamic("SamplingTargetDocuments")(SamplingTargetDocuments.asInstanceOf[js.Any])
+    if (UnprocessedStatistics != null) __obj.updateDynamic("UnprocessedStatistics")(UnprocessedStatistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSamplingTargetsOutput]
   }
 }

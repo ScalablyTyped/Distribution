@@ -15,7 +15,7 @@ object EncryptionKeyOptions {
   def apply(encryptionKey: String | Buffer = null, kmsKeyName: String = null): EncryptionKeyOptions = {
     val __obj = js.Dynamic.literal()
     if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])
-    if (kmsKeyName != null) __obj.updateDynamic("kmsKeyName")(kmsKeyName)
+    if (kmsKeyName != null) __obj.updateDynamic("kmsKeyName")(kmsKeyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptionKeyOptions]
   }
 }

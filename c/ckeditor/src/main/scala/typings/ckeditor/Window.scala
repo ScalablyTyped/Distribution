@@ -12,7 +12,7 @@ object Window {
   @scala.inline
   def apply(CKEDITOR_BASEPATH: String = null): Window = {
     val __obj = js.Dynamic.literal()
-    if (CKEDITOR_BASEPATH != null) __obj.updateDynamic("CKEDITOR_BASEPATH")(CKEDITOR_BASEPATH)
+    if (CKEDITOR_BASEPATH != null) __obj.updateDynamic("CKEDITOR_BASEPATH")(CKEDITOR_BASEPATH.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
 }

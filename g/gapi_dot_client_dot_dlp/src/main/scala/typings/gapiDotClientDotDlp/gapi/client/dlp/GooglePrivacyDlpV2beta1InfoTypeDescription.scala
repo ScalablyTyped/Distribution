@@ -21,9 +21,9 @@ object GooglePrivacyDlpV2beta1InfoTypeDescription {
     name: String = null
   ): GooglePrivacyDlpV2beta1InfoTypeDescription = {
     val __obj = js.Dynamic.literal()
-    if (categories != null) __obj.updateDynamic("categories")(categories)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1InfoTypeDescription]
   }
 }

@@ -125,14 +125,14 @@ object IGridOptions {
     importerShowMenu: js.UndefOr[Boolean] = js.undefined
   ): IGridOptions[TEntity] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableImporter)) __obj.updateDynamic("enableImporter")(enableImporter)
+    if (!js.isUndefined(enableImporter)) __obj.updateDynamic("enableImporter")(enableImporter.asInstanceOf[js.Any])
     if (importerDataAddCallback != null) __obj.updateDynamic("importerDataAddCallback")(js.Any.fromFunction2(importerDataAddCallback))
     if (importerErrorCallback != null) __obj.updateDynamic("importerErrorCallback")(js.Any.fromFunction4(importerErrorCallback))
     if (importerHeaderFilter != null) __obj.updateDynamic("importerHeaderFilter")(js.Any.fromFunction1(importerHeaderFilter))
-    if (importerNewObject != null) __obj.updateDynamic("importerNewObject")(importerNewObject)
+    if (importerNewObject != null) __obj.updateDynamic("importerNewObject")(importerNewObject.asInstanceOf[js.Any])
     if (importerObjectCallback != null) __obj.updateDynamic("importerObjectCallback")(js.Any.fromFunction2(importerObjectCallback))
     if (importerProcessHeaders != null) __obj.updateDynamic("importerProcessHeaders")(js.Any.fromFunction2(importerProcessHeaders))
-    if (!js.isUndefined(importerShowMenu)) __obj.updateDynamic("importerShowMenu")(importerShowMenu)
+    if (!js.isUndefined(importerShowMenu)) __obj.updateDynamic("importerShowMenu")(importerShowMenu.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridOptions[TEntity]]
   }
 }

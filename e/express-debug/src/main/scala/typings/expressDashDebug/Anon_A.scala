@@ -52,12 +52,12 @@ object Anon_A {
   ): Anon_A = {
     val __obj = js.Dynamic.literal()
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (extra_attrs != null) __obj.updateDynamic("extra_attrs")(extra_attrs)
-    if (extra_panels != null) __obj.updateDynamic("extra_panels")(extra_panels)
-    if (panels != null) __obj.updateDynamic("panels")(panels)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (extra_attrs != null) __obj.updateDynamic("extra_attrs")(extra_attrs.asInstanceOf[js.Any])
+    if (extra_panels != null) __obj.updateDynamic("extra_panels")(extra_panels.asInstanceOf[js.Any])
+    if (panels != null) __obj.updateDynamic("panels")(panels.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_A]
   }
 }

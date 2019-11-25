@@ -35,8 +35,8 @@ object CryptoOperation {
     process: ArrayBufferView => Unit,
     result: ArrayBuffer = null
   ): CryptoOperation = {
-    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), algorithm = algorithm, finish = js.Any.fromFunction0(finish), key = key, onabort = js.Any.fromFunction1(onabort), oncomplete = js.Any.fromFunction1(oncomplete), onerror = js.Any.fromFunction1(onerror), onprogress = js.Any.fromFunction1(onprogress), process = js.Any.fromFunction1(process))
-    if (result != null) __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), algorithm = algorithm.asInstanceOf[js.Any], finish = js.Any.fromFunction0(finish), key = key.asInstanceOf[js.Any], onabort = js.Any.fromFunction1(onabort), oncomplete = js.Any.fromFunction1(oncomplete), onerror = js.Any.fromFunction1(onerror), onprogress = js.Any.fromFunction1(onprogress), process = js.Any.fromFunction1(process))
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[CryptoOperation]
   }
 }

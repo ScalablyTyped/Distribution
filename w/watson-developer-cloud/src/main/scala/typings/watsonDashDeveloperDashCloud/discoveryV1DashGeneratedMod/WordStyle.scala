@@ -17,7 +17,7 @@ object WordStyle {
   def apply(level: Int | Double = null, names: js.Array[String] = null): WordStyle = {
     val __obj = js.Dynamic.literal()
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (names != null) __obj.updateDynamic("names")(names)
+    if (names != null) __obj.updateDynamic("names")(names.asInstanceOf[js.Any])
     __obj.asInstanceOf[WordStyle]
   }
 }

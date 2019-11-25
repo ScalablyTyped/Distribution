@@ -18,7 +18,7 @@ object LocationContext {
   @scala.inline
   def apply(geoCriteriaIds: js.Array[Double] = null): LocationContext = {
     val __obj = js.Dynamic.literal()
-    if (geoCriteriaIds != null) __obj.updateDynamic("geoCriteriaIds")(geoCriteriaIds)
+    if (geoCriteriaIds != null) __obj.updateDynamic("geoCriteriaIds")(geoCriteriaIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationContext]
   }
 }

@@ -21,7 +21,7 @@ object ReadOptions {
   ): ReadOptions = {
     val __obj = js.Dynamic.literal()
     if (dataProjection != null) __obj.updateDynamic("dataProjection")(dataProjection.asInstanceOf[js.Any])
-    if (extent != null) __obj.updateDynamic("extent")(extent)
+    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     if (featureProjection != null) __obj.updateDynamic("featureProjection")(featureProjection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadOptions]
   }

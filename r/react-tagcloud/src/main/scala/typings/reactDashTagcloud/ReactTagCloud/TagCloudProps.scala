@@ -36,16 +36,16 @@ object TagCloudProps {
     renderer: js.Function = null,
     shuffle: js.UndefOr[Boolean] = js.undefined
   ): TagCloudProps = {
-    val __obj = js.Dynamic.literal(maxSize = maxSize, minSize = minSize, tags = tags)
+    val __obj = js.Dynamic.literal(maxSize = maxSize.asInstanceOf[js.Any], minSize = minSize.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (colorOptions != null) __obj.updateDynamic("colorOptions")(colorOptions)
-    if (!js.isUndefined(disableRandomColor)) __obj.updateDynamic("disableRandomColor")(disableRandomColor)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (colorOptions != null) __obj.updateDynamic("colorOptions")(colorOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableRandomColor)) __obj.updateDynamic("disableRandomColor")(disableRandomColor.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
-    if (!js.isUndefined(shuffle)) __obj.updateDynamic("shuffle")(shuffle)
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
+    if (!js.isUndefined(shuffle)) __obj.updateDynamic("shuffle")(shuffle.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagCloudProps]
   }
 }

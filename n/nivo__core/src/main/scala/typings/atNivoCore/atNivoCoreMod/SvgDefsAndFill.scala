@@ -15,8 +15,8 @@ object SvgDefsAndFill {
   @scala.inline
   def apply[T](defs: js.Array[Anon_Id] = null, fill: js.Array[Anon_[T]] = null): SvgDefsAndFill[T] = {
     val __obj = js.Dynamic.literal()
-    if (defs != null) __obj.updateDynamic("defs")(defs)
-    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (defs != null) __obj.updateDynamic("defs")(defs.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     __obj.asInstanceOf[SvgDefsAndFill[T]]
   }
 }

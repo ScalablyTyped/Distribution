@@ -108,7 +108,7 @@ object CoursesResource {
     teachers: TeachersResource,
     update: Anon_AccesstokenAltBearertokenCallbackFieldsId => Request[Course]
   ): CoursesResource = {
-    val __obj = js.Dynamic.literal(aliases = aliases, announcements = announcements, courseWork = courseWork, create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), students = students, teachers = teachers, update = js.Any.fromFunction1(update))
+    val __obj = js.Dynamic.literal(aliases = aliases.asInstanceOf[js.Any], announcements = announcements.asInstanceOf[js.Any], courseWork = courseWork.asInstanceOf[js.Any], create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), students = students.asInstanceOf[js.Any], teachers = teachers.asInstanceOf[js.Any], update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[CoursesResource]
   }

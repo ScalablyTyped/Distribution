@@ -29,13 +29,13 @@ object IFormOptionsAPI {
     wrapper: String | js.Array[String] = null
   ): IFormOptionsAPI = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (fieldTransform != null) __obj.updateDynamic("fieldTransform")(fieldTransform.asInstanceOf[js.Any])
-    if (formState != null) __obj.updateDynamic("formState")(formState)
-    if (!js.isUndefined(removeChromeAutoComplete)) __obj.updateDynamic("removeChromeAutoComplete")(removeChromeAutoComplete)
-    if (resetModel != null) __obj.updateDynamic("resetModel")(resetModel)
-    if (templateManipulators != null) __obj.updateDynamic("templateManipulators")(templateManipulators)
-    if (updateInitialValue != null) __obj.updateDynamic("updateInitialValue")(updateInitialValue)
+    if (formState != null) __obj.updateDynamic("formState")(formState.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeChromeAutoComplete)) __obj.updateDynamic("removeChromeAutoComplete")(removeChromeAutoComplete.asInstanceOf[js.Any])
+    if (resetModel != null) __obj.updateDynamic("resetModel")(resetModel.asInstanceOf[js.Any])
+    if (templateManipulators != null) __obj.updateDynamic("templateManipulators")(templateManipulators.asInstanceOf[js.Any])
+    if (updateInitialValue != null) __obj.updateDynamic("updateInitialValue")(updateInitialValue.asInstanceOf[js.Any])
     if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFormOptionsAPI]
   }

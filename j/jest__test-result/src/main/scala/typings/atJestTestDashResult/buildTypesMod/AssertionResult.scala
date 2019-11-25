@@ -29,10 +29,10 @@ object AssertionResult {
     invocations: Int | Double = null,
     location: Callsite = null
   ): AssertionResult = {
-    val __obj = js.Dynamic.literal(ancestorTitles = ancestorTitles, failureMessages = failureMessages, fullName = fullName, numPassingAsserts = numPassingAsserts, status = status, title = title)
+    val __obj = js.Dynamic.literal(ancestorTitles = ancestorTitles.asInstanceOf[js.Any], failureMessages = failureMessages.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], numPassingAsserts = numPassingAsserts.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (invocations != null) __obj.updateDynamic("invocations")(invocations.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssertionResult]
   }
 }

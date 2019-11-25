@@ -14,8 +14,8 @@ object NavigationDrawerOpenedAction {
   @scala.inline
   def apply(`type`: `Navigation/DRAWER_OPENED`, key: String = null): NavigationDrawerOpenedAction = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (key != null) __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationDrawerOpenedAction]
   }
 }

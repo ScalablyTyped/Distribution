@@ -27,13 +27,13 @@ object GrantParameters {
     write: js.UndefOr[Boolean] = js.undefined
   ): GrantParameters = {
     val __obj = js.Dynamic.literal()
-    if (authKeys != null) __obj.updateDynamic("authKeys")(authKeys)
-    if (channelGroups != null) __obj.updateDynamic("channelGroups")(channelGroups)
-    if (channels != null) __obj.updateDynamic("channels")(channels)
-    if (!js.isUndefined(manage)) __obj.updateDynamic("manage")(manage)
-    if (!js.isUndefined(read)) __obj.updateDynamic("read")(read)
+    if (authKeys != null) __obj.updateDynamic("authKeys")(authKeys.asInstanceOf[js.Any])
+    if (channelGroups != null) __obj.updateDynamic("channelGroups")(channelGroups.asInstanceOf[js.Any])
+    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
+    if (!js.isUndefined(manage)) __obj.updateDynamic("manage")(manage.asInstanceOf[js.Any])
+    if (!js.isUndefined(read)) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
-    if (!js.isUndefined(write)) __obj.updateDynamic("write")(write)
+    if (!js.isUndefined(write)) __obj.updateDynamic("write")(write.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrantParameters]
   }
 }

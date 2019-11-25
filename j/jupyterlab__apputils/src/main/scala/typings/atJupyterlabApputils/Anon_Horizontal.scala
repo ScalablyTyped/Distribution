@@ -14,7 +14,7 @@ object Anon_Horizontal {
   def apply(horizontal: Int | Double = null, vertical: Anon_Above = null): Anon_Horizontal = {
     val __obj = js.Dynamic.literal()
     if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (vertical != null) __obj.updateDynamic("vertical")(vertical)
+    if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Horizontal]
   }
 }

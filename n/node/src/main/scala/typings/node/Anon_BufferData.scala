@@ -12,8 +12,8 @@ trait Anon_BufferData extends js.Object {
 object Anon_BufferData {
   @scala.inline
   def apply(data: js.Array[Double], `type`: typings.node.nodeStrings.Buffer): Anon_BufferData = {
-    val __obj = js.Dynamic.literal(data = data)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BufferData]
   }
 }

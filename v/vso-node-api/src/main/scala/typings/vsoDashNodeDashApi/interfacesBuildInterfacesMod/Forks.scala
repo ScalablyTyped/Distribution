@@ -18,7 +18,7 @@ trait Forks extends js.Object {
 object Forks {
   @scala.inline
   def apply(allowSecrets: Boolean, enabled: Boolean): Forks = {
-    val __obj = js.Dynamic.literal(allowSecrets = allowSecrets, enabled = enabled)
+    val __obj = js.Dynamic.literal(allowSecrets = allowSecrets.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Forks]
   }

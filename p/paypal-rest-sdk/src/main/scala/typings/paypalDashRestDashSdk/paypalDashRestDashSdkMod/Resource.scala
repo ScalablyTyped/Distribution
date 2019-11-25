@@ -39,19 +39,19 @@ object Resource {
     state: String = null,
     update_time: String = null
   ): Resource = {
-    val __obj = js.Dynamic.literal(amount = amount, id = id)
-    if (create_time != null) __obj.updateDynamic("create_time")(create_time)
-    if (fmf_details != null) __obj.updateDynamic("fmf_details")(fmf_details)
-    if (links != null) __obj.updateDynamic("links")(links)
-    if (parent_payment != null) __obj.updateDynamic("parent_payment")(parent_payment)
-    if (payment_mode != null) __obj.updateDynamic("payment_mode")(payment_mode)
-    if (processor_response != null) __obj.updateDynamic("processor_response")(processor_response)
-    if (protection_eligibility != null) __obj.updateDynamic("protection_eligibility")(protection_eligibility)
-    if (protection_eligibility_type != null) __obj.updateDynamic("protection_eligibility_type")(protection_eligibility_type)
-    if (reason_code != null) __obj.updateDynamic("reason_code")(reason_code)
-    if (receipt_id != null) __obj.updateDynamic("receipt_id")(receipt_id)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (update_time != null) __obj.updateDynamic("update_time")(update_time)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    if (create_time != null) __obj.updateDynamic("create_time")(create_time.asInstanceOf[js.Any])
+    if (fmf_details != null) __obj.updateDynamic("fmf_details")(fmf_details.asInstanceOf[js.Any])
+    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
+    if (parent_payment != null) __obj.updateDynamic("parent_payment")(parent_payment.asInstanceOf[js.Any])
+    if (payment_mode != null) __obj.updateDynamic("payment_mode")(payment_mode.asInstanceOf[js.Any])
+    if (processor_response != null) __obj.updateDynamic("processor_response")(processor_response.asInstanceOf[js.Any])
+    if (protection_eligibility != null) __obj.updateDynamic("protection_eligibility")(protection_eligibility.asInstanceOf[js.Any])
+    if (protection_eligibility_type != null) __obj.updateDynamic("protection_eligibility_type")(protection_eligibility_type.asInstanceOf[js.Any])
+    if (reason_code != null) __obj.updateDynamic("reason_code")(reason_code.asInstanceOf[js.Any])
+    if (receipt_id != null) __obj.updateDynamic("receipt_id")(receipt_id.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (update_time != null) __obj.updateDynamic("update_time")(update_time.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
 }

@@ -12,7 +12,7 @@ trait IX509IssuerSerial extends js.Object {
 object IX509IssuerSerial {
   @scala.inline
   def apply(issuerName: String, serialNumber: String): IX509IssuerSerial = {
-    val __obj = js.Dynamic.literal(issuerName = issuerName, serialNumber = serialNumber)
+    val __obj = js.Dynamic.literal(issuerName = issuerName.asInstanceOf[js.Any], serialNumber = serialNumber.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IX509IssuerSerial]
   }

@@ -35,16 +35,16 @@ object ConnectParams {
   ): ConnectParams = {
     val __obj = js.Dynamic.literal()
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (anchors != null) __obj.updateDynamic("anchors")(anchors)
+    if (anchors != null) __obj.updateDynamic("anchors")(anchors.asInstanceOf[js.Any])
     if (connector != null) __obj.updateDynamic("connector")(connector.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleteEndpointsOnDetach)) __obj.updateDynamic("deleteEndpointsOnDetach")(deleteEndpointsOnDetach)
-    if (!js.isUndefined(detachable)) __obj.updateDynamic("detachable")(detachable)
+    if (!js.isUndefined(deleteEndpointsOnDetach)) __obj.updateDynamic("deleteEndpointsOnDetach")(deleteEndpointsOnDetach.asInstanceOf[js.Any])
+    if (!js.isUndefined(detachable)) __obj.updateDynamic("detachable")(detachable.asInstanceOf[js.Any])
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (overlays != null) __obj.updateDynamic("overlays")(overlays)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (overlays != null) __obj.updateDynamic("overlays")(overlays.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (uuids != null) __obj.updateDynamic("uuids")(uuids)
+    if (uuids != null) __obj.updateDynamic("uuids")(uuids.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectParams]
   }
 }

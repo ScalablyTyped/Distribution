@@ -97,7 +97,7 @@ object libStateNodeMod extends js.Object {
       * All the event types accepted by this state node and its descendants.
       */
     val events: js.Array[
-        /* import warning: ImportType.apply Failed type conversion: TEvent['type'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any
       ] = js.native
     var formatTransition: js.Any = js.native
     var formatTransitions: js.Any = js.native
@@ -125,7 +125,7 @@ object libStateNodeMod extends js.Object {
       * The initial state node key.
       */
     var initial: js.UndefOr[
-        /* import warning: ImportType.apply Failed type conversion: keyof TStateSchema['states'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof TStateSchema['states'] */ js.Any
       ] = js.native
     /**
       * The initial State instance, which includes all actions to be executed from
@@ -175,7 +175,7 @@ object libStateNodeMod extends js.Object {
       * Excludes any inert events.
       */
     val ownEvents: js.Array[
-        /* import warning: ImportType.apply Failed type conversion: TEvent['type'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any
       ] = js.native
     /**
       * (DEPRECATED) Whether the state node is a parallel state node.

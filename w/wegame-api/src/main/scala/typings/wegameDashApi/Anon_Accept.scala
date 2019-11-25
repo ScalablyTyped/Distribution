@@ -29,8 +29,8 @@ object Anon_Accept {
     */
   /* TEMPLATE_ID */ StringDictionary[accept | reject | ban | String] = null
   ): Anon_Accept = {
-    val __obj = js.Dynamic.literal(errMsg = errMsg)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Accept]
   }
 }

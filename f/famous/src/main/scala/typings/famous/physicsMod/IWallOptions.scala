@@ -31,11 +31,11 @@ object IWallOptions {
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
     if (mass != null) __obj.updateDynamic("mass")(mass.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (restitution != null) __obj.updateDynamic("restitution")(restitution.asInstanceOf[js.Any])
     if (restrictions != null) __obj.updateDynamic("restrictions")(restrictions.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (velocity != null) __obj.updateDynamic("velocity")(velocity.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWallOptions]
   }

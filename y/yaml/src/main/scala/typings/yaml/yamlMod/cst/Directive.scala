@@ -38,15 +38,15 @@ object Directive {
     value: String = null,
     valueRange: Range = null
   ): Directive = {
-    val __obj = js.Dynamic.literal(anchor = anchor, hasComment = hasComment, hasProps = hasProps, jsonLike = jsonLike, name = name, parameters = parameters, props = props, tag = tag, valueRangeContainsNewline = valueRangeContainsNewline)
-    __obj.updateDynamic("type")(`type`)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (rawValue != null) __obj.updateDynamic("rawValue")(rawValue)
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange)
+    val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (rawValue != null) __obj.updateDynamic("rawValue")(rawValue.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[Directive]
   }
 }

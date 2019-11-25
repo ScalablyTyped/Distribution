@@ -17,7 +17,7 @@ object IStringValidator {
   ): IStringValidator = {
     val __obj = js.Dynamic.literal(isAcceptable = js.Any.fromFunction1(isAcceptable))
     if (customMessage != null) __obj.updateDynamic("customMessage")(js.Any.fromFunction2(customMessage))
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStringValidator]
   }
 }

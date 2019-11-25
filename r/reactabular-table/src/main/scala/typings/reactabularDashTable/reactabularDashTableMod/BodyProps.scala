@@ -24,10 +24,10 @@ object BodyProps {
     onRow: (/* row */ js.Any, /* props */ Anon_RowIndex) => _ = null,
     style: Partial[CSSStyleDeclaration] = null
   ): BodyProps = {
-    val __obj = js.Dynamic.literal(rowKey = rowKey, rows = rows)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(rowKey = rowKey.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (onRow != null) __obj.updateDynamic("onRow")(js.Any.fromFunction2(onRow))
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[BodyProps]
   }
 }

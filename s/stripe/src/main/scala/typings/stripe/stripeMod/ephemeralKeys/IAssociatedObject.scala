@@ -12,8 +12,8 @@ trait IAssociatedObject extends js.Object {
 object IAssociatedObject {
   @scala.inline
   def apply(id: String, `type`: String): IAssociatedObject = {
-    val __obj = js.Dynamic.literal(id = id)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAssociatedObject]
   }
 }

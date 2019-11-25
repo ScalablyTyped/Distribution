@@ -17,3 +17,14 @@ import scala.scalajs.js.annotation._
 */
 trait MTType extends js.Object
 
+object MTType {
+  @scala.inline
+  def D: typings.qlikDashEngineapi.qlikDashEngineapiStrings.D = this.cast("D")
+  @scala.inline
+  def N: typings.qlikDashEngineapi.qlikDashEngineapiStrings.N = this.cast("N")
+  @scala.inline
+  def R: typings.qlikDashEngineapi.qlikDashEngineapiStrings.R = this.cast("R")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

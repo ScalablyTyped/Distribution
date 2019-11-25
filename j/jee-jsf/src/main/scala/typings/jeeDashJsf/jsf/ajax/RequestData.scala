@@ -12,7 +12,7 @@ trait RequestData extends js.Object {
 object RequestData {
   @scala.inline
   def apply(description: String, status: String): RequestData = {
-    val __obj = js.Dynamic.literal(description = description, status = status)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RequestData]
   }

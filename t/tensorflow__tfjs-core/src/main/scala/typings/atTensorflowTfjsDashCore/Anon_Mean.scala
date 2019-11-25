@@ -14,7 +14,7 @@ trait Anon_Mean extends js.Object {
 object Anon_Mean {
   @scala.inline
   def apply(mean: Tensor[Rank], variance: Tensor[Rank]): Anon_Mean = {
-    val __obj = js.Dynamic.literal(mean = mean, variance = variance)
+    val __obj = js.Dynamic.literal(mean = mean.asInstanceOf[js.Any], variance = variance.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Mean]
   }

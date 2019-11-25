@@ -24,7 +24,7 @@ object IFileOptions {
     manager: IDocumentManager,
     filter: /* value */ IModel => Boolean = null
   ): IFileOptions = {
-    val __obj = js.Dynamic.literal(iconRegistry = iconRegistry, manager = manager)
+    val __obj = js.Dynamic.literal(iconRegistry = iconRegistry.asInstanceOf[js.Any], manager = manager.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     __obj.asInstanceOf[IFileOptions]
   }

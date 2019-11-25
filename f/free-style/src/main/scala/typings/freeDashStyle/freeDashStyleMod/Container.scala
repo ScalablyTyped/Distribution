@@ -11,8 +11,8 @@ trait Container[T] extends js.Object {
 
 object Container {
   @scala.inline
-  def apply[T](clone: () => T, getStyles: () => String, id: String): Container[T] = {
-    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction0(clone), getStyles = js.Any.fromFunction0(getStyles), id = id)
+  def apply[T](getStyles: () => String, id: String): Container[T] = {
+    val __obj = js.Dynamic.literal(getStyles = js.Any.fromFunction0(getStyles), id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Container[T]]
   }

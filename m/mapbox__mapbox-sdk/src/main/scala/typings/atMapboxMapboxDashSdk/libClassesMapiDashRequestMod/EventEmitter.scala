@@ -23,7 +23,7 @@ object EventEmitter {
     response: MapiResponse,
     uploadProgress: ProgressEvent[EventTarget]
   ): EventEmitter = {
-    val __obj = js.Dynamic.literal(downloadProgress = downloadProgress, error = error, response = response, uploadProgress = uploadProgress)
+    val __obj = js.Dynamic.literal(downloadProgress = downloadProgress.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], uploadProgress = uploadProgress.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventEmitter]
   }

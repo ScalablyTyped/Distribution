@@ -13,8 +13,8 @@ trait Anon_Created extends /* version */ StringDictionary[String] {
 object Anon_Created {
   @scala.inline
   def apply(created: String, modified: String, StringDictionary: /* version */ StringDictionary[String] = null): Anon_Created = {
-    val __obj = js.Dynamic.literal(created = created, modified = modified)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Created]
   }
 }

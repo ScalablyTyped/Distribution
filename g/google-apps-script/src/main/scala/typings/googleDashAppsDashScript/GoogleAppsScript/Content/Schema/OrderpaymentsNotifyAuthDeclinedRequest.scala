@@ -12,7 +12,7 @@ object OrderpaymentsNotifyAuthDeclinedRequest {
   @scala.inline
   def apply(declineReason: String = null): OrderpaymentsNotifyAuthDeclinedRequest = {
     val __obj = js.Dynamic.literal()
-    if (declineReason != null) __obj.updateDynamic("declineReason")(declineReason)
+    if (declineReason != null) __obj.updateDynamic("declineReason")(declineReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderpaymentsNotifyAuthDeclinedRequest]
   }
 }

@@ -14,7 +14,7 @@ object Anon_Amount {
   def apply(amount: Int | Double = null, color: String = null): Anon_Amount = {
     val __obj = js.Dynamic.literal()
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Amount]
   }
 }

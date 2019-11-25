@@ -25,7 +25,7 @@ object PlusWebviewWebviewStatusbarStyles {
   @scala.inline
   def apply(background: String = null): PlusWebviewWebviewStatusbarStyles = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background)
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewStatusbarStyles]
   }
 }

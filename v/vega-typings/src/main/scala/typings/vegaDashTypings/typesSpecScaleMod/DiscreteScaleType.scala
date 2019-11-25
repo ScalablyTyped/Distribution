@@ -9,5 +9,16 @@ import scala.scalajs.js.annotation._
   - typings.vegaDashTypings.vegaDashTypingsStrings.band
   - typings.vegaDashTypings.vegaDashTypingsStrings.point
 */
-trait DiscreteScaleType extends ScaleType
+trait DiscreteScaleType extends js.Object
+
+object DiscreteScaleType {
+  @scala.inline
+  def band: typings.vegaDashTypings.vegaDashTypingsStrings.band = this.cast("band")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def ordinal: typings.vegaDashTypings.vegaDashTypingsStrings.ordinal = this.cast("ordinal")
+  @scala.inline
+  def point: typings.vegaDashTypings.vegaDashTypingsStrings.point = this.cast("point")
+}
 

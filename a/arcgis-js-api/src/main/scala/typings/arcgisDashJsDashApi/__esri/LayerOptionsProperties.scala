@@ -30,8 +30,8 @@ object LayerOptionsProperties {
     showNoDataRecords: js.UndefOr[Boolean] = js.undefined
   ): LayerOptionsProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(returnTopmostRaster)) __obj.updateDynamic("returnTopmostRaster")(returnTopmostRaster)
-    if (!js.isUndefined(showNoDataRecords)) __obj.updateDynamic("showNoDataRecords")(showNoDataRecords)
+    if (!js.isUndefined(returnTopmostRaster)) __obj.updateDynamic("returnTopmostRaster")(returnTopmostRaster.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNoDataRecords)) __obj.updateDynamic("showNoDataRecords")(showNoDataRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerOptionsProperties]
   }
 }

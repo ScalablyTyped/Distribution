@@ -24,7 +24,7 @@ trait SerializedResponse extends js.Object {
 object SerializedResponse {
   @scala.inline
   def apply(headers: Record[String, String], raw: ServerResponse, statusCode: Double): SerializedResponse = {
-    val __obj = js.Dynamic.literal(headers = headers, raw = raw, statusCode = statusCode)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SerializedResponse]
   }

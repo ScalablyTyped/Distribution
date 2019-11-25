@@ -21,9 +21,9 @@ object BackstageOptions {
   @scala.inline
   def apply(id: String = null, itemType: HTMLElement = null, text: String = null): BackstageOptions = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (itemType != null) __obj.updateDynamic("itemType")(itemType)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackstageOptions]
   }
 }

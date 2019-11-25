@@ -21,11 +21,11 @@ object NamedFormatConfiguration {
     keywords: js.Array[String] | (js.Tuple2[String, String]) | (js.Tuple3[String, String, String]) = null,
     `object`: js.UndefOr[Boolean] = js.undefined
   ): NamedFormatConfiguration = {
-    val __obj = js.Dynamic.literal(edit = edit, name = name, tagName = tagName, title = title)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(edit = edit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
-    if (!js.isUndefined(`object`)) __obj.updateDynamic("object")(`object`)
+    if (!js.isUndefined(`object`)) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedFormatConfiguration]
   }
 }

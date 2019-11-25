@@ -33,7 +33,7 @@ object IRouteSummary {
     time: Double,
     timeWithTraffic: Double
   ): IRouteSummary = {
-    val __obj = js.Dynamic.literal(distance = distance, monetaryCost = monetaryCost, northEast = northEast, southWest = southWest, time = time, timeWithTraffic = timeWithTraffic)
+    val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], monetaryCost = monetaryCost.asInstanceOf[js.Any], northEast = northEast.asInstanceOf[js.Any], southWest = southWest.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], timeWithTraffic = timeWithTraffic.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IRouteSummary]
   }

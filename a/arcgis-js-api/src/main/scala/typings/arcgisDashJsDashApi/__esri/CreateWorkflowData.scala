@@ -37,7 +37,7 @@ object CreateWorkflowData {
     propertyIsEnumerable: PropertyKey => Boolean,
     viewModel: EditorViewModel
   ): CreateWorkflowData = {
-    val __obj = js.Dynamic.literal(constructor = constructor, creationInfo = creationInfo, edits = edits, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), viewModel = viewModel)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], creationInfo = creationInfo.asInstanceOf[js.Any], edits = edits.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), viewModel = viewModel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CreateWorkflowData]
   }

@@ -41,7 +41,7 @@ object MigrationsStartImportResponse {
     vcs: String,
     vcs_url: String
   ): MigrationsStartImportResponse = {
-    val __obj = js.Dynamic.literal(authors_count = authors_count, authors_url = authors_url, commit_count = commit_count, has_large_files = has_large_files, html_url = html_url, large_files_count = large_files_count, large_files_size = large_files_size, percent = percent, repository_url = repository_url, status = status, status_text = status_text, url = url, use_lfs = use_lfs, vcs = vcs, vcs_url = vcs_url)
+    val __obj = js.Dynamic.literal(authors_count = authors_count.asInstanceOf[js.Any], authors_url = authors_url.asInstanceOf[js.Any], commit_count = commit_count.asInstanceOf[js.Any], has_large_files = has_large_files.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], large_files_count = large_files_count.asInstanceOf[js.Any], large_files_size = large_files_size.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], repository_url = repository_url.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], status_text = status_text.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], use_lfs = use_lfs.asInstanceOf[js.Any], vcs = vcs.asInstanceOf[js.Any], vcs_url = vcs_url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MigrationsStartImportResponse]
   }

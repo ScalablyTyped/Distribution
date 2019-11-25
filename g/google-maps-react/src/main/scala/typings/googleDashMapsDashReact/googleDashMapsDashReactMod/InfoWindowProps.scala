@@ -25,9 +25,9 @@ object InfoWindowProps {
     mapCenter: LatLng | LatLngLiteral = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): InfoWindowProps = {
-    val __obj = js.Dynamic.literal(google = google, map = map, marker = marker)
+    val __obj = js.Dynamic.literal(google = google.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any])
     if (mapCenter != null) __obj.updateDynamic("mapCenter")(mapCenter.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[InfoWindowProps]
   }
 }

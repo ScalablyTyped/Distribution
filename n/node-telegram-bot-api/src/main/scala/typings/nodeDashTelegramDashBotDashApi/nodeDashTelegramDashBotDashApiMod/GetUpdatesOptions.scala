@@ -20,7 +20,7 @@ object GetUpdatesOptions {
     timeout: Int | Double = null
   ): GetUpdatesOptions = {
     val __obj = js.Dynamic.literal()
-    if (allowed_updates != null) __obj.updateDynamic("allowed_updates")(allowed_updates)
+    if (allowed_updates != null) __obj.updateDynamic("allowed_updates")(allowed_updates.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

@@ -30,9 +30,9 @@ object ImageContext {
     latLongRect: LatLongRect = null
   ): ImageContext = {
     val __obj = js.Dynamic.literal()
-    if (cropHintsParams != null) __obj.updateDynamic("cropHintsParams")(cropHintsParams)
-    if (languageHints != null) __obj.updateDynamic("languageHints")(languageHints)
-    if (latLongRect != null) __obj.updateDynamic("latLongRect")(latLongRect)
+    if (cropHintsParams != null) __obj.updateDynamic("cropHintsParams")(cropHintsParams.asInstanceOf[js.Any])
+    if (languageHints != null) __obj.updateDynamic("languageHints")(languageHints.asInstanceOf[js.Any])
+    if (latLongRect != null) __obj.updateDynamic("latLongRect")(latLongRect.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageContext]
   }
 }

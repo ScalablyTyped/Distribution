@@ -13,9 +13,9 @@ trait SessionSendDtmfOptions extends js.Object {
 object SessionSendDtmfOptions {
   @scala.inline
   def apply(interToneGap: Double, duration: Int | Double = null, extraHeaders: js.Array[String] = null): SessionSendDtmfOptions = {
-    val __obj = js.Dynamic.literal(interToneGap = interToneGap)
+    val __obj = js.Dynamic.literal(interToneGap = interToneGap.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
+    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionSendDtmfOptions]
   }
 }

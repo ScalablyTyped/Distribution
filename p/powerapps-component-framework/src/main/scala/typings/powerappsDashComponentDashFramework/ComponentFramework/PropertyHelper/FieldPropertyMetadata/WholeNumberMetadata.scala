@@ -29,9 +29,9 @@ object WholeNumberMetadata {
     LanguageByCode: Dictionary = null,
     TimeZoneByCode: Dictionary = null
   ): WholeNumberMetadata = {
-    val __obj = js.Dynamic.literal(Description = Description, DisplayName = DisplayName, Format = Format, ImeMode = ImeMode, IsSecured = IsSecured, LogicalName = LogicalName, MaxValue = MaxValue, MinValue = MinValue, RequiredLevel = RequiredLevel, SourceType = SourceType)
-    if (LanguageByCode != null) __obj.updateDynamic("LanguageByCode")(LanguageByCode)
-    if (TimeZoneByCode != null) __obj.updateDynamic("TimeZoneByCode")(TimeZoneByCode)
+    val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], DisplayName = DisplayName.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], ImeMode = ImeMode.asInstanceOf[js.Any], IsSecured = IsSecured.asInstanceOf[js.Any], LogicalName = LogicalName.asInstanceOf[js.Any], MaxValue = MaxValue.asInstanceOf[js.Any], MinValue = MinValue.asInstanceOf[js.Any], RequiredLevel = RequiredLevel.asInstanceOf[js.Any], SourceType = SourceType.asInstanceOf[js.Any])
+    if (LanguageByCode != null) __obj.updateDynamic("LanguageByCode")(LanguageByCode.asInstanceOf[js.Any])
+    if (TimeZoneByCode != null) __obj.updateDynamic("TimeZoneByCode")(TimeZoneByCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[WholeNumberMetadata]
   }
 }

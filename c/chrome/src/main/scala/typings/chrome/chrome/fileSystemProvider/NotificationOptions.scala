@@ -29,9 +29,9 @@ object NotificationOptions {
     changes: js.Array[NotificationChange] = null,
     tag: String = null
   ): NotificationOptions = {
-    val __obj = js.Dynamic.literal(changeType = changeType, fileSystemId = fileSystemId, observedPath = observedPath, recursive = recursive)
-    if (changes != null) __obj.updateDynamic("changes")(changes)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(changeType = changeType.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], observedPath = observedPath.asInstanceOf[js.Any], recursive = recursive.asInstanceOf[js.Any])
+    if (changes != null) __obj.updateDynamic("changes")(changes.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationOptions]
   }
 }

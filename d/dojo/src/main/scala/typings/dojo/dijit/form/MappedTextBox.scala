@@ -1,6 +1,5 @@
 package typings.dojo.dijit.form
 
-import typings.dojo.Fn_IsFocused
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,14 +25,6 @@ import scala.scalajs.js.annotation._
 class MappedTextBox () extends ValidationTextBox {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
-  /**
-    * Tests if value is valid.
-    * Can override with your own routine in a subclass.
-    * 
-    * @param isFocused             
-    */
-  @JSName("isValid")
-  var isValid_Original: Fn_IsFocused = js.native
   /**
     * Tests if value is valid.
     * Can override with your own routine in a subclass.

@@ -10,5 +10,6 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("ember", "VERSION")
 @js.native
-object VERSION extends TopLevel[String]
+object VERSION
+  extends TopLevel[java.lang.String]
 

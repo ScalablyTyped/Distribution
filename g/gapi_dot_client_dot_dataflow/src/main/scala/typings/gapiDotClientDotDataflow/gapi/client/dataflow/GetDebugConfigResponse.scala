@@ -13,7 +13,7 @@ object GetDebugConfigResponse {
   @scala.inline
   def apply(config: String = null): GetDebugConfigResponse = {
     val __obj = js.Dynamic.literal()
-    if (config != null) __obj.updateDynamic("config")(config)
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDebugConfigResponse]
   }
 }

@@ -33,14 +33,14 @@ object TimelineGroup {
     visible: js.UndefOr[Boolean] = js.undefined
   ): TimelineGroup = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (nestedGroups != null) __obj.updateDynamic("nestedGroups")(nestedGroups)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (nestedGroups != null) __obj.updateDynamic("nestedGroups")(nestedGroups.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNested)) __obj.updateDynamic("showNested")(showNested)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(showNested)) __obj.updateDynamic("showNested")(showNested.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (subgroupOrder != null) __obj.updateDynamic("subgroupOrder")(subgroupOrder.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineGroup]
   }
 }

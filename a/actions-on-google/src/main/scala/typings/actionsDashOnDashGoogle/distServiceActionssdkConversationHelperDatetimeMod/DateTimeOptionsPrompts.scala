@@ -29,9 +29,9 @@ object DateTimeOptionsPrompts {
   @scala.inline
   def apply(date: String = null, initial: String = null, time: String = null): DateTimeOptionsPrompts = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (initial != null) __obj.updateDynamic("initial")(initial)
-    if (time != null) __obj.updateDynamic("time")(time)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (initial != null) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimeOptionsPrompts]
   }
 }

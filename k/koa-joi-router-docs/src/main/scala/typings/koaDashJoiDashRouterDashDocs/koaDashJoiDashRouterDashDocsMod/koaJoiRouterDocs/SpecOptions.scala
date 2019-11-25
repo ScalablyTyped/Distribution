@@ -13,7 +13,7 @@ object SpecOptions {
   @scala.inline
   def apply(defaultResponses: js.Object = null, warnFunc: () => Unit = null): SpecOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultResponses != null) __obj.updateDynamic("defaultResponses")(defaultResponses)
+    if (defaultResponses != null) __obj.updateDynamic("defaultResponses")(defaultResponses.asInstanceOf[js.Any])
     if (warnFunc != null) __obj.updateDynamic("warnFunc")(js.Any.fromFunction0(warnFunc))
     __obj.asInstanceOf[SpecOptions]
   }

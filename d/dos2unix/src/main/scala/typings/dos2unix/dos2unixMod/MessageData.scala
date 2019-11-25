@@ -11,7 +11,7 @@ trait MessageData extends FileData {
 object MessageData {
   @scala.inline
   def apply(file: String, message: String): MessageData = {
-    val __obj = js.Dynamic.literal(file = file, message = message)
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MessageData]
   }

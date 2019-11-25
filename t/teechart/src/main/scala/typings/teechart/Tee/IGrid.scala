@@ -14,7 +14,7 @@ trait IGrid extends js.Object {
 object IGrid {
   @scala.inline
   def apply(chart: IChart, format: IFormat, lineDash: Boolean, visible: Boolean): IGrid = {
-    val __obj = js.Dynamic.literal(chart = chart, format = format, lineDash = lineDash, visible = visible)
+    val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], lineDash = lineDash.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IGrid]
   }

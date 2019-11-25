@@ -50,25 +50,25 @@ object BodyOptions {
     velocity: js.Tuple2[Double, Double] = null
   ): BodyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowSleep)) __obj.updateDynamic("allowSleep")(allowSleep)
+    if (!js.isUndefined(allowSleep)) __obj.updateDynamic("allowSleep")(allowSleep.asInstanceOf[js.Any])
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (angularDamping != null) __obj.updateDynamic("angularDamping")(angularDamping.asInstanceOf[js.Any])
     if (angularForce != null) __obj.updateDynamic("angularForce")(angularForce.asInstanceOf[js.Any])
     if (angularVelocity != null) __obj.updateDynamic("angularVelocity")(angularVelocity.asInstanceOf[js.Any])
     if (ccdIterations != null) __obj.updateDynamic("ccdIterations")(ccdIterations.asInstanceOf[js.Any])
     if (ccdSpeedThreshold != null) __obj.updateDynamic("ccdSpeedThreshold")(ccdSpeedThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(collisionResponse)) __obj.updateDynamic("collisionResponse")(collisionResponse)
-    if (!js.isUndefined(fixedRotation)) __obj.updateDynamic("fixedRotation")(fixedRotation)
-    if (!js.isUndefined(fixedX)) __obj.updateDynamic("fixedX")(fixedX)
-    if (!js.isUndefined(fixedY)) __obj.updateDynamic("fixedY")(fixedY)
-    if (force != null) __obj.updateDynamic("force")(force)
+    if (!js.isUndefined(collisionResponse)) __obj.updateDynamic("collisionResponse")(collisionResponse.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedRotation)) __obj.updateDynamic("fixedRotation")(fixedRotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedX)) __obj.updateDynamic("fixedX")(fixedX.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixedY)) __obj.updateDynamic("fixedY")(fixedY.asInstanceOf[js.Any])
+    if (force != null) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
     if (gravityScale != null) __obj.updateDynamic("gravityScale")(gravityScale.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (mass != null) __obj.updateDynamic("mass")(mass.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (sleepSpeedLimit != null) __obj.updateDynamic("sleepSpeedLimit")(sleepSpeedLimit.asInstanceOf[js.Any])
     if (sleepTimeLimit != null) __obj.updateDynamic("sleepTimeLimit")(sleepTimeLimit.asInstanceOf[js.Any])
-    if (velocity != null) __obj.updateDynamic("velocity")(velocity)
+    if (velocity != null) __obj.updateDynamic("velocity")(velocity.asInstanceOf[js.Any])
     __obj.asInstanceOf[BodyOptions]
   }
 }

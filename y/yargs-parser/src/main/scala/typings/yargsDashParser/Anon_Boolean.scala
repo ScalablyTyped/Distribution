@@ -17,9 +17,9 @@ object Anon_Boolean {
     boolean: js.UndefOr[Boolean] = js.undefined,
     number: js.UndefOr[Boolean] = js.undefined
   ): Anon_Boolean = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (!js.isUndefined(boolean)) __obj.updateDynamic("boolean")(boolean)
-    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (!js.isUndefined(boolean)) __obj.updateDynamic("boolean")(boolean.asInstanceOf[js.Any])
+    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Boolean]
   }
 }

@@ -26,8 +26,8 @@ object InlineDecorationSpec {
     inclusiveStart: js.UndefOr[Boolean] = js.undefined
   ): InlineDecorationSpec = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(inclusiveEnd)) __obj.updateDynamic("inclusiveEnd")(inclusiveEnd)
-    if (!js.isUndefined(inclusiveStart)) __obj.updateDynamic("inclusiveStart")(inclusiveStart)
+    if (!js.isUndefined(inclusiveEnd)) __obj.updateDynamic("inclusiveEnd")(inclusiveEnd.asInstanceOf[js.Any])
+    if (!js.isUndefined(inclusiveStart)) __obj.updateDynamic("inclusiveStart")(inclusiveStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineDecorationSpec]
   }
 }

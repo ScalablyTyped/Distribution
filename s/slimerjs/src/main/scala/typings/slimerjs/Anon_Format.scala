@@ -20,9 +20,9 @@ object Anon_Format {
     ratio: Int | Double = null
   ): Anon_Format = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (!js.isUndefined(onlyViewport)) __obj.updateDynamic("onlyViewport")(onlyViewport)
-    if (quality != null) __obj.updateDynamic("quality")(quality)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyViewport)) __obj.updateDynamic("onlyViewport")(onlyViewport.asInstanceOf[js.Any])
+    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Format]
   }

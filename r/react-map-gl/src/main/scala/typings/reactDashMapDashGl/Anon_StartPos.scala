@@ -12,7 +12,7 @@ object Anon_StartPos {
   @scala.inline
   def apply(startPos: js.Tuple2[Double, Double] = null): Anon_StartPos = {
     val __obj = js.Dynamic.literal()
-    if (startPos != null) __obj.updateDynamic("startPos")(startPos)
+    if (startPos != null) __obj.updateDynamic("startPos")(startPos.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_StartPos]
   }
 }

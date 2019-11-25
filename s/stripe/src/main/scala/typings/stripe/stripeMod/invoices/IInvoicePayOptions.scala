@@ -44,11 +44,11 @@ object IInvoicePayOptions {
     source: String | ICardSourceCreationOptions = null
   ): IInvoicePayOptions = {
     val __obj = js.Dynamic.literal()
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (!js.isUndefined(forgive)) __obj.updateDynamic("forgive")(forgive)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (!js.isUndefined(paid_out_of_band)) __obj.updateDynamic("paid_out_of_band")(paid_out_of_band)
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (!js.isUndefined(forgive)) __obj.updateDynamic("forgive")(forgive.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(paid_out_of_band)) __obj.updateDynamic("paid_out_of_band")(paid_out_of_band.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInvoicePayOptions]
   }

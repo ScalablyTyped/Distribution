@@ -14,7 +14,7 @@ object BeforePivotEnginePopulateEventArgs {
   @scala.inline
   def apply(pivotGridObject: js.Any = null): BeforePivotEnginePopulateEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (pivotGridObject != null) __obj.updateDynamic("pivotGridObject")(pivotGridObject)
+    if (pivotGridObject != null) __obj.updateDynamic("pivotGridObject")(pivotGridObject.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforePivotEnginePopulateEventArgs]
   }
 }

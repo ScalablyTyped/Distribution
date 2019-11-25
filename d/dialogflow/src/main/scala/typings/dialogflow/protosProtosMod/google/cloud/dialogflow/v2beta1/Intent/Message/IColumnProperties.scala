@@ -17,8 +17,8 @@ object IColumnProperties {
   @scala.inline
   def apply(header: String = null, horizontalAlignment: HorizontalAlignment = null): IColumnProperties = {
     val __obj = js.Dynamic.literal()
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnProperties]
   }
 }

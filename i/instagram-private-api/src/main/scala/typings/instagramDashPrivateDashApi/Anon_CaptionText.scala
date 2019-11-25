@@ -12,7 +12,7 @@ trait Anon_CaptionText extends js.Object {
 object Anon_CaptionText {
   @scala.inline
   def apply(captionText: String, mediaId: String): Anon_CaptionText = {
-    val __obj = js.Dynamic.literal(captionText = captionText, mediaId = mediaId)
+    val __obj = js.Dynamic.literal(captionText = captionText.asInstanceOf[js.Any], mediaId = mediaId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CaptionText]
   }

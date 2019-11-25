@@ -12,7 +12,7 @@ trait Anon_ContentControl extends js.Object {
 object Anon_ContentControl {
   @scala.inline
   def apply(ContentControl: ContentControl): Anon_ContentControl = {
-    val __obj = js.Dynamic.literal(ContentControl = ContentControl)
+    val __obj = js.Dynamic.literal(ContentControl = ContentControl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ContentControl]
   }

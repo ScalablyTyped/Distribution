@@ -14,7 +14,7 @@ trait DynamsoftWebTwainAddon extends js.Object {
 object DynamsoftWebTwainAddon {
   @scala.inline
   def apply(OCR: OCR, OCRPro: OCRPro, PDF: PDF, Webcam: Webcam): DynamsoftWebTwainAddon = {
-    val __obj = js.Dynamic.literal(OCR = OCR, OCRPro = OCRPro, PDF = PDF, Webcam = Webcam)
+    val __obj = js.Dynamic.literal(OCR = OCR.asInstanceOf[js.Any], OCRPro = OCRPro.asInstanceOf[js.Any], PDF = PDF.asInstanceOf[js.Any], Webcam = Webcam.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DynamsoftWebTwainAddon]
   }

@@ -72,13 +72,13 @@ object IContextualMenuItemStyleProps {
     primaryDisabled: js.UndefOr[Boolean] = js.undefined,
     subMenuClassName: String = null
   ): IContextualMenuItemStyleProps = {
-    val __obj = js.Dynamic.literal(checked = checked, disabled = disabled, expanded = expanded, isAnchorLink = isAnchorLink, knownIcon = knownIcon, theme = theme)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (dividerClassName != null) __obj.updateDynamic("dividerClassName")(dividerClassName)
-    if (iconClassName != null) __obj.updateDynamic("iconClassName")(iconClassName)
-    if (itemClassName != null) __obj.updateDynamic("itemClassName")(itemClassName)
-    if (!js.isUndefined(primaryDisabled)) __obj.updateDynamic("primaryDisabled")(primaryDisabled)
-    if (subMenuClassName != null) __obj.updateDynamic("subMenuClassName")(subMenuClassName)
+    val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], isAnchorLink = isAnchorLink.asInstanceOf[js.Any], knownIcon = knownIcon.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (dividerClassName != null) __obj.updateDynamic("dividerClassName")(dividerClassName.asInstanceOf[js.Any])
+    if (iconClassName != null) __obj.updateDynamic("iconClassName")(iconClassName.asInstanceOf[js.Any])
+    if (itemClassName != null) __obj.updateDynamic("itemClassName")(itemClassName.asInstanceOf[js.Any])
+    if (!js.isUndefined(primaryDisabled)) __obj.updateDynamic("primaryDisabled")(primaryDisabled.asInstanceOf[js.Any])
+    if (subMenuClassName != null) __obj.updateDynamic("subMenuClassName")(subMenuClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContextualMenuItemStyleProps]
   }
 }

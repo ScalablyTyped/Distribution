@@ -18,9 +18,9 @@ object MockeryEnableArgs {
     warnOnUnregistered: js.UndefOr[Boolean] = js.undefined
   ): MockeryEnableArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(useCleanCache)) __obj.updateDynamic("useCleanCache")(useCleanCache)
-    if (!js.isUndefined(warnOnReplace)) __obj.updateDynamic("warnOnReplace")(warnOnReplace)
-    if (!js.isUndefined(warnOnUnregistered)) __obj.updateDynamic("warnOnUnregistered")(warnOnUnregistered)
+    if (!js.isUndefined(useCleanCache)) __obj.updateDynamic("useCleanCache")(useCleanCache.asInstanceOf[js.Any])
+    if (!js.isUndefined(warnOnReplace)) __obj.updateDynamic("warnOnReplace")(warnOnReplace.asInstanceOf[js.Any])
+    if (!js.isUndefined(warnOnUnregistered)) __obj.updateDynamic("warnOnUnregistered")(warnOnUnregistered.asInstanceOf[js.Any])
     __obj.asInstanceOf[MockeryEnableArgs]
   }
 }

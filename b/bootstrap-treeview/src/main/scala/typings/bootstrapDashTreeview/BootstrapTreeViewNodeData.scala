@@ -34,17 +34,17 @@ object BootstrapTreeViewNodeData {
     text: String = null
   ): BootstrapTreeViewNodeData = {
     val __obj = js.Dynamic.literal()
-    if (backColor != null) __obj.updateDynamic("backColor")(backColor)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (href != null) __obj.updateDynamic("href")(href)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (backColor != null) __obj.updateDynamic("backColor")(backColor.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (nodeId != null) __obj.updateDynamic("nodeId")(nodeId.asInstanceOf[js.Any])
-    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
-    if (selectedIcon != null) __obj.updateDynamic("selectedIcon")(selectedIcon)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
+    if (selectedIcon != null) __obj.updateDynamic("selectedIcon")(selectedIcon.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapTreeViewNodeData]
   }
 }

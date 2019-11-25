@@ -26,7 +26,7 @@ package object swan {
   type BuiltInEvent[T /* <: EventType */, Detail] = BaseEvent[T, Detail]
   type CheckSessionOption = BaseOptions[js.Any, js.Any]
   // CombinedInstance models the `this`, i.e. instance type for (user defined) component
-  type CombinedInstance[Instance /* <: Component[Data, Props] */, Data, Methods, Props] = Methods with Instance
+  type CombinedInstance[Instance /* <: typings.baiduDashApp.swan.Component[Data, Props] */, Data, Methods, Props] = Methods with Instance
   type CompassChangeCallback = js.Function1[/* res */ CompassData, Unit]
   type CompassOptions = BaseOptions[js.Any, js.Any]
   type CustomEvent[T /* <: String */, Detail] = BaseEvent[T, Detail]
@@ -47,26 +47,26 @@ package object swan {
   type DefaultData[V] = js.Object | (js.ThisFunction0[/* this */ V, js.Object])
   type DefaultMethods[V] = StringDictionary[js.ThisFunction1[/* this */ V, /* repeated */ js.Any, js.Any]]
   type DefaultProps = js.Object | (Record[String, js.Any])
-  type ExtendedComponent[Instance /* <: Component[Data, Props] */, Data, Methods, Props] = (CombinedInstance[Instance, Data, Methods, Props]) with (Component[Data, Props])
-  type FormEvent = BaseEvent[form, Anon_NameValue]
+  type ExtendedComponent[Instance /* <: typings.baiduDashApp.swan.Component[Data, Props] */, Data, Methods, Props] = (CombinedInstance[Instance, Data, Methods, Props]) with (typings.baiduDashApp.swan.Component[Data, Props])
+  type FormEvent = BuiltInEvent[form, Anon_NameValue]
   /**
   	 * 指定focus时的光标位置
   	 * @version 1.5.0
   	 */
-  type InputEvent = BaseEvent[input, Anon_Cursor]
+  type InputEvent = BuiltInEvent[input, Anon_Cursor]
   type Prop[T] = js.Function0[T] | Anon_Args[T]
   type PropValidator[T] = PropOptions[T] | Prop[T] | js.Array[Prop[T]]
   type PropsDefinition[T] = ArrayPropsDefinition[T] | RecordPropsDefinition[T]
-  type RecordPropsDefinition[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type RecordPropsDefinition[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: baidu-app.swan.PropValidator<T[K]>}
     */ typings.baiduDashApp.baiduDashAppStrings.RecordPropsDefinition with T
   // #endregion
   // #region 网络API列表
   // 发起请求
   type RequestHeader = StringDictionary[String]
-  type ScrollEvent = BaseEvent[scroll, js.Object]
+  type ScrollEvent = BuiltInEvent[scroll, js.Object]
   type TapEvent = TouchEvent[tap]
-  type ThisTypedComponentOptionsWithRecordProps[V /* <: Component[Data, Props] */, Data, Methods, Props] = js.Object with (ComponentOptions[V, Data, Methods, Props]) with (ThisType[CombinedInstance[V, Data, Methods, Props]])
+  type ThisTypedComponentOptionsWithRecordProps[V /* <: typings.baiduDashApp.swan.Component[Data, Props] */, Data, Methods, Props] = js.Object with (ComponentOptions[V, Data, Methods, Props]) with (ThisType[CombinedInstance[V, Data, Methods, Props]])
   type TouchCancelEvent = TouchEvent[touchcancel]
   type TouchEndEvent = TouchEvent[touchend]
   type TouchForceChangeEvent = TouchEvent[touchforcechange]

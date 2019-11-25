@@ -14,8 +14,8 @@ trait ActivityListNotificationsResponseItemSubject extends js.Object {
 object ActivityListNotificationsResponseItemSubject {
   @scala.inline
   def apply(latest_comment_url: String, title: String, `type`: String, url: String): ActivityListNotificationsResponseItemSubject = {
-    val __obj = js.Dynamic.literal(latest_comment_url = latest_comment_url, title = title, url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(latest_comment_url = latest_comment_url.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityListNotificationsResponseItemSubject]
   }
 }

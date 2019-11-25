@@ -23,7 +23,7 @@ object ResizeConstraints {
     right: Boolean,
     top: Boolean
   ): ResizeConstraints = {
-    val __obj = js.Dynamic.literal(bottom = bottom, fixedHeight = fixedHeight, fixedWidth = fixedWidth, left = left, right = right, top = top)
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], fixedHeight = fixedHeight.asInstanceOf[js.Any], fixedWidth = fixedWidth.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResizeConstraints]
   }

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait LogicalBooleanOperatorType extends js.Object
 
+object LogicalBooleanOperatorType {
+  @scala.inline
+  def AND: typings.slonik.slonikStrings.AND = this.cast("AND")
+  @scala.inline
+  def OR: typings.slonik.slonikStrings.OR = this.cast("OR")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

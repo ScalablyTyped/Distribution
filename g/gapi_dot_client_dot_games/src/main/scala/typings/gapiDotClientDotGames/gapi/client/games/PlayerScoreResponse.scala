@@ -39,12 +39,12 @@ object PlayerScoreResponse {
     unbeatenScores: js.Array[PlayerScore] = null
   ): PlayerScoreResponse = {
     val __obj = js.Dynamic.literal()
-    if (beatenScoreTimeSpans != null) __obj.updateDynamic("beatenScoreTimeSpans")(beatenScoreTimeSpans)
-    if (formattedScore != null) __obj.updateDynamic("formattedScore")(formattedScore)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (leaderboardId != null) __obj.updateDynamic("leaderboardId")(leaderboardId)
-    if (scoreTag != null) __obj.updateDynamic("scoreTag")(scoreTag)
-    if (unbeatenScores != null) __obj.updateDynamic("unbeatenScores")(unbeatenScores)
+    if (beatenScoreTimeSpans != null) __obj.updateDynamic("beatenScoreTimeSpans")(beatenScoreTimeSpans.asInstanceOf[js.Any])
+    if (formattedScore != null) __obj.updateDynamic("formattedScore")(formattedScore.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (leaderboardId != null) __obj.updateDynamic("leaderboardId")(leaderboardId.asInstanceOf[js.Any])
+    if (scoreTag != null) __obj.updateDynamic("scoreTag")(scoreTag.asInstanceOf[js.Any])
+    if (unbeatenScores != null) __obj.updateDynamic("unbeatenScores")(unbeatenScores.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayerScoreResponse]
   }
 }

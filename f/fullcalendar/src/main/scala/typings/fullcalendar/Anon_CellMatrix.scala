@@ -24,7 +24,7 @@ object Anon_CellMatrix {
     segs: js.Any,
     tbodyEl: JQuery
   ): Anon_CellMatrix = {
-    val __obj = js.Dynamic.literal(cellMatrix = cellMatrix, row = row, segLevels = segLevels, segMatrix = segMatrix, segs = segs, tbodyEl = tbodyEl)
+    val __obj = js.Dynamic.literal(cellMatrix = cellMatrix.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], segLevels = segLevels.asInstanceOf[js.Any], segMatrix = segMatrix.asInstanceOf[js.Any], segs = segs.asInstanceOf[js.Any], tbodyEl = tbodyEl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CellMatrix]
   }

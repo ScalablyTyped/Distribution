@@ -52,7 +52,7 @@ object PasswordRequirements {
   ): PasswordRequirements = {
     val __obj = js.Dynamic.literal()
     if (maximumFailedPasswordsForWipe != null) __obj.updateDynamic("maximumFailedPasswordsForWipe")(maximumFailedPasswordsForWipe.asInstanceOf[js.Any])
-    if (passwordExpirationTimeout != null) __obj.updateDynamic("passwordExpirationTimeout")(passwordExpirationTimeout)
+    if (passwordExpirationTimeout != null) __obj.updateDynamic("passwordExpirationTimeout")(passwordExpirationTimeout.asInstanceOf[js.Any])
     if (passwordHistoryLength != null) __obj.updateDynamic("passwordHistoryLength")(passwordHistoryLength.asInstanceOf[js.Any])
     if (passwordMinimumLength != null) __obj.updateDynamic("passwordMinimumLength")(passwordMinimumLength.asInstanceOf[js.Any])
     if (passwordMinimumLetters != null) __obj.updateDynamic("passwordMinimumLetters")(passwordMinimumLetters.asInstanceOf[js.Any])
@@ -61,7 +61,7 @@ object PasswordRequirements {
     if (passwordMinimumNumeric != null) __obj.updateDynamic("passwordMinimumNumeric")(passwordMinimumNumeric.asInstanceOf[js.Any])
     if (passwordMinimumSymbols != null) __obj.updateDynamic("passwordMinimumSymbols")(passwordMinimumSymbols.asInstanceOf[js.Any])
     if (passwordMinimumUpperCase != null) __obj.updateDynamic("passwordMinimumUpperCase")(passwordMinimumUpperCase.asInstanceOf[js.Any])
-    if (passwordQuality != null) __obj.updateDynamic("passwordQuality")(passwordQuality)
+    if (passwordQuality != null) __obj.updateDynamic("passwordQuality")(passwordQuality.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasswordRequirements]
   }
 }

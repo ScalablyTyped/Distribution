@@ -47,13 +47,13 @@ object GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption {
     subOptions: js.Array[GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption] = null
   ): GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (note != null) __obj.updateDynamic("note")(note)
-    if (prices != null) __obj.updateDynamic("prices")(prices)
-    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
+    if (prices != null) __obj.updateDynamic("prices")(prices.asInstanceOf[js.Any])
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
-    if (subOptions != null) __obj.updateDynamic("subOptions")(subOptions)
+    if (subOptions != null) __obj.updateDynamic("subOptions")(subOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionItemOption]
   }
 }

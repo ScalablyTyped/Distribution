@@ -12,7 +12,7 @@ object Anon_UpdateExisting {
   @scala.inline
   def apply(updateExisting: js.UndefOr[Boolean] = js.undefined): Anon_UpdateExisting = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(updateExisting)) __obj.updateDynamic("updateExisting")(updateExisting)
+    if (!js.isUndefined(updateExisting)) __obj.updateDynamic("updateExisting")(updateExisting.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_UpdateExisting]
   }
 }

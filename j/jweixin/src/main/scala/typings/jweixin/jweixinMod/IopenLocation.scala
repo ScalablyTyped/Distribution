@@ -33,7 +33,7 @@ object IopenLocation {
     fail: /* repeated */ js.Any => Unit = null,
     success: /* repeated */ js.Any => Unit = null
   ): IopenLocation = {
-    val __obj = js.Dynamic.literal(address = address, infoUrl = infoUrl, latitude = latitude, longitude = longitude, name = name, scale = scale)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], infoUrl = infoUrl.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

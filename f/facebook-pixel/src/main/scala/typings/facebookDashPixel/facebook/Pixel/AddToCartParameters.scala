@@ -22,10 +22,10 @@ object AddToCartParameters {
     value: Int | Double = null
   ): AddToCartParameters = {
     val __obj = js.Dynamic.literal()
-    if (content_ids != null) __obj.updateDynamic("content_ids")(content_ids)
-    if (content_name != null) __obj.updateDynamic("content_name")(content_name)
-    if (content_type != null) __obj.updateDynamic("content_type")(content_type)
-    if (currency != null) __obj.updateDynamic("currency")(currency)
+    if (content_ids != null) __obj.updateDynamic("content_ids")(content_ids.asInstanceOf[js.Any])
+    if (content_name != null) __obj.updateDynamic("content_name")(content_name.asInstanceOf[js.Any])
+    if (content_type != null) __obj.updateDynamic("content_type")(content_type.asInstanceOf[js.Any])
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddToCartParameters]
   }

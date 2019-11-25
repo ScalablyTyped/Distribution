@@ -87,12 +87,12 @@ object Mirror_ {
     Timeline: TimelineCollection = null
   ): Mirror_ = {
     val __obj = js.Dynamic.literal(newAccount = js.Any.fromFunction0(newAccount), newAttachment = js.Any.fromFunction0(newAttachment), newAuthToken = js.Any.fromFunction0(newAuthToken), newCommand = js.Any.fromFunction0(newCommand), newContact = js.Any.fromFunction0(newContact), newLocation = js.Any.fromFunction0(newLocation), newMenuItem = js.Any.fromFunction0(newMenuItem), newMenuValue = js.Any.fromFunction0(newMenuValue), newNotification = js.Any.fromFunction0(newNotification), newNotificationConfig = js.Any.fromFunction0(newNotificationConfig), newSubscription = js.Any.fromFunction0(newSubscription), newTimelineItem = js.Any.fromFunction0(newTimelineItem), newUserAction = js.Any.fromFunction0(newUserAction), newUserData = js.Any.fromFunction0(newUserData))
-    if (Accounts != null) __obj.updateDynamic("Accounts")(Accounts)
-    if (Contacts != null) __obj.updateDynamic("Contacts")(Contacts)
-    if (Locations != null) __obj.updateDynamic("Locations")(Locations)
-    if (Settings != null) __obj.updateDynamic("Settings")(Settings)
-    if (Subscriptions != null) __obj.updateDynamic("Subscriptions")(Subscriptions)
-    if (Timeline != null) __obj.updateDynamic("Timeline")(Timeline)
+    if (Accounts != null) __obj.updateDynamic("Accounts")(Accounts.asInstanceOf[js.Any])
+    if (Contacts != null) __obj.updateDynamic("Contacts")(Contacts.asInstanceOf[js.Any])
+    if (Locations != null) __obj.updateDynamic("Locations")(Locations.asInstanceOf[js.Any])
+    if (Settings != null) __obj.updateDynamic("Settings")(Settings.asInstanceOf[js.Any])
+    if (Subscriptions != null) __obj.updateDynamic("Subscriptions")(Subscriptions.asInstanceOf[js.Any])
+    if (Timeline != null) __obj.updateDynamic("Timeline")(Timeline.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mirror_]
   }
 }

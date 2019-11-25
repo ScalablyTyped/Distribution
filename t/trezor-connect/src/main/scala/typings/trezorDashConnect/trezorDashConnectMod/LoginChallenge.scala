@@ -12,7 +12,7 @@ trait LoginChallenge extends js.Object {
 object LoginChallenge {
   @scala.inline
   def apply(challengeHidden: String, challengeVisual: String): LoginChallenge = {
-    val __obj = js.Dynamic.literal(challengeHidden = challengeHidden, challengeVisual = challengeVisual)
+    val __obj = js.Dynamic.literal(challengeHidden = challengeHidden.asInstanceOf[js.Any], challengeVisual = challengeVisual.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LoginChallenge]
   }

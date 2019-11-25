@@ -36,12 +36,12 @@ object OpenEventArgs {
     `type`: String = null
   ): OpenEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (itemType != null) __obj.updateDynamic("itemType")(itemType)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenEventArgs]
   }
 }

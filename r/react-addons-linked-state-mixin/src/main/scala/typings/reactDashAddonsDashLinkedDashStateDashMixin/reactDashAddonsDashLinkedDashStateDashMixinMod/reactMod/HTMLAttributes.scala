@@ -14,8 +14,8 @@ object HTMLAttributes {
   @scala.inline
   def apply[T](checkedLink: ReactLink[Boolean] = null, valueLink: ReactLink[Boolean | String | Double] = null): HTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
-    if (checkedLink != null) __obj.updateDynamic("checkedLink")(checkedLink)
-    if (valueLink != null) __obj.updateDynamic("valueLink")(valueLink)
+    if (checkedLink != null) __obj.updateDynamic("checkedLink")(checkedLink.asInstanceOf[js.Any])
+    if (valueLink != null) __obj.updateDynamic("valueLink")(valueLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLAttributes[T]]
   }
 }

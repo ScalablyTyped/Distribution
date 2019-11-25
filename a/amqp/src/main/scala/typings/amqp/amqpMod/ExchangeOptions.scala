@@ -67,12 +67,12 @@ object ExchangeOptions {
     `type`: direct | fanout | topic = null
   ): ExchangeOptions = {
     val __obj = js.Dynamic.literal()
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
-    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete)
-    if (!js.isUndefined(confirm)) __obj.updateDynamic("confirm")(confirm)
-    if (!js.isUndefined(durable)) __obj.updateDynamic("durable")(durable)
-    if (!js.isUndefined(noDeclare)) __obj.updateDynamic("noDeclare")(noDeclare)
-    if (!js.isUndefined(passive)) __obj.updateDynamic("passive")(passive)
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete.asInstanceOf[js.Any])
+    if (!js.isUndefined(confirm)) __obj.updateDynamic("confirm")(confirm.asInstanceOf[js.Any])
+    if (!js.isUndefined(durable)) __obj.updateDynamic("durable")(durable.asInstanceOf[js.Any])
+    if (!js.isUndefined(noDeclare)) __obj.updateDynamic("noDeclare")(noDeclare.asInstanceOf[js.Any])
+    if (!js.isUndefined(passive)) __obj.updateDynamic("passive")(passive.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExchangeOptions]
   }

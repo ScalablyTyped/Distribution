@@ -29,7 +29,7 @@ object CalendarSpec {
     sameElse: CalendarSpecVal = null
   ): CalendarSpec = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (lastDay != null) __obj.updateDynamic("lastDay")(lastDay.asInstanceOf[js.Any])
     if (lastWeek != null) __obj.updateDynamic("lastWeek")(lastWeek.asInstanceOf[js.Any])
     if (nextDay != null) __obj.updateDynamic("nextDay")(nextDay.asInstanceOf[js.Any])

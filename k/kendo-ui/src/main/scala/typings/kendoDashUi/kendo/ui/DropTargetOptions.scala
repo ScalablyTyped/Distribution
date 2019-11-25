@@ -23,7 +23,7 @@ object DropTargetOptions {
     if (dragenter != null) __obj.updateDynamic("dragenter")(js.Any.fromFunction1(dragenter))
     if (dragleave != null) __obj.updateDynamic("dragleave")(js.Any.fromFunction1(dragleave))
     if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction1(drop))
-    if (group != null) __obj.updateDynamic("group")(group)
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropTargetOptions]
   }
 }

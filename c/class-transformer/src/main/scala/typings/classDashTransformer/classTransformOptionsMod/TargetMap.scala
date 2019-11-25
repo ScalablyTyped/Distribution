@@ -19,7 +19,7 @@ trait TargetMap extends js.Object {
 object TargetMap {
   @scala.inline
   def apply(properties: StringDictionary[js.Function], target: js.Function): TargetMap = {
-    val __obj = js.Dynamic.literal(properties = properties, target = target)
+    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TargetMap]
   }

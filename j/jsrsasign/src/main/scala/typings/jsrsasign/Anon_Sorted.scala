@@ -11,7 +11,7 @@ trait Anon_Sorted extends js.Object {
 object Anon_Sorted {
   @scala.inline
   def apply(sorted: Boolean): Anon_Sorted = {
-    val __obj = js.Dynamic.literal(sorted = sorted)
+    val __obj = js.Dynamic.literal(sorted = sorted.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Sorted]
   }

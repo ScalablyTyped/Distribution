@@ -19,9 +19,9 @@ object DownloadOptions {
     md5: js.UndefOr[Boolean] = js.undefined
   ): DownloadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(md5)) __obj.updateDynamic("md5")(md5)
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(md5)) __obj.updateDynamic("md5")(md5.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadOptions]
   }
 }

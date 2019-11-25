@@ -12,7 +12,7 @@ object CloseSocketOptions {
   def apply(
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null,
-    success: /* res */ js.Any => Unit = null
+    success: js.Any => Unit = null
   ): CloseSocketOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))

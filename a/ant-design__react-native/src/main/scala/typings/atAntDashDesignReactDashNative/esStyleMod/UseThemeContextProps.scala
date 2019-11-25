@@ -12,7 +12,7 @@ object UseThemeContextProps {
   @scala.inline
   def apply(theme: typings.atAntDashDesignReactDashNative.esStyleMod.PartialTheme = null): UseThemeContextProps = {
     val __obj = js.Dynamic.literal()
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseThemeContextProps]
   }
 }

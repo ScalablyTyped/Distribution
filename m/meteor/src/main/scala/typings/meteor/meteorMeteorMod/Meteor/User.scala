@@ -27,13 +27,13 @@ object User {
     services: js.Any = null,
     username: String = null
   ): User = {
-    val __obj = js.Dynamic.literal(_id = _id)
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt)
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any])
+    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
     if (dexterity != null) __obj.updateDynamic("dexterity")(dexterity.asInstanceOf[js.Any])
-    if (emails != null) __obj.updateDynamic("emails")(emails)
-    if (profile != null) __obj.updateDynamic("profile")(profile)
-    if (services != null) __obj.updateDynamic("services")(services)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (emails != null) __obj.updateDynamic("emails")(emails.asInstanceOf[js.Any])
+    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
+    if (services != null) __obj.updateDynamic("services")(services.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
 }

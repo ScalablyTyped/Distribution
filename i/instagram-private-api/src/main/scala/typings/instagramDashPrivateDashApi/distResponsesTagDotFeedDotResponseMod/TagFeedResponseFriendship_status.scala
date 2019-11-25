@@ -13,7 +13,7 @@ trait TagFeedResponseFriendship_status extends js.Object {
 object TagFeedResponseFriendship_status {
   @scala.inline
   def apply(following: Boolean, is_bestie: Boolean, outgoing_request: Boolean): TagFeedResponseFriendship_status = {
-    val __obj = js.Dynamic.literal(following = following, is_bestie = is_bestie, outgoing_request = outgoing_request)
+    val __obj = js.Dynamic.literal(following = following.asInstanceOf[js.Any], is_bestie = is_bestie.asInstanceOf[js.Any], outgoing_request = outgoing_request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TagFeedResponseFriendship_status]
   }

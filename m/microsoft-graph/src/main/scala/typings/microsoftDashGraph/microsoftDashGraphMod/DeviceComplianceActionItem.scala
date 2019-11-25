@@ -28,11 +28,11 @@ object DeviceComplianceActionItem {
     notificationTemplateId: String = null
   ): DeviceComplianceActionItem = {
     val __obj = js.Dynamic.literal()
-    if (actionType != null) __obj.updateDynamic("actionType")(actionType)
+    if (actionType != null) __obj.updateDynamic("actionType")(actionType.asInstanceOf[js.Any])
     if (gracePeriodHours != null) __obj.updateDynamic("gracePeriodHours")(gracePeriodHours.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (notificationMessageCCList != null) __obj.updateDynamic("notificationMessageCCList")(notificationMessageCCList)
-    if (notificationTemplateId != null) __obj.updateDynamic("notificationTemplateId")(notificationTemplateId)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (notificationMessageCCList != null) __obj.updateDynamic("notificationMessageCCList")(notificationMessageCCList.asInstanceOf[js.Any])
+    if (notificationTemplateId != null) __obj.updateDynamic("notificationTemplateId")(notificationTemplateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceComplianceActionItem]
   }
 }

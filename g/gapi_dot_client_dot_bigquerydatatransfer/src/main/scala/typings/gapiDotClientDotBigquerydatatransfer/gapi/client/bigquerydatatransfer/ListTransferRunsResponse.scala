@@ -20,8 +20,8 @@ object ListTransferRunsResponse {
   @scala.inline
   def apply(nextPageToken: String = null, transferRuns: js.Array[TransferRun] = null): ListTransferRunsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (transferRuns != null) __obj.updateDynamic("transferRuns")(transferRuns)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (transferRuns != null) __obj.updateDynamic("transferRuns")(transferRuns.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTransferRunsResponse]
   }
 }

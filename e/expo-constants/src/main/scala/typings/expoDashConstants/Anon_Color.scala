@@ -19,9 +19,9 @@ object Anon_Color {
     icon: String = null
   ): Anon_Color = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Color]
   }
 }

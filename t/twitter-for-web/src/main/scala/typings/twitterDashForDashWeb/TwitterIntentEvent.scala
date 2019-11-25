@@ -30,8 +30,8 @@ trait TwitterIntentEvent extends js.Object {
 object TwitterIntentEvent {
   @scala.inline
   def apply(data: TwitterIntentEventData, region: String, target: HTMLElement, `type`: String): TwitterIntentEvent = {
-    val __obj = js.Dynamic.literal(data = data, region = region, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TwitterIntentEvent]
   }
 }

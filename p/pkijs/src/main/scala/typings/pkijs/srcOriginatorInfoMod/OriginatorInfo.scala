@@ -21,7 +21,7 @@ object OriginatorInfo {
     toJSON: () => js.Any,
     toSchema: () => js.Any
   ): OriginatorInfo = {
-    val __obj = js.Dynamic.literal(certs = certs, crls = crls, fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
+    val __obj = js.Dynamic.literal(certs = certs.asInstanceOf[js.Any], crls = crls.asInstanceOf[js.Any], fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[OriginatorInfo]
   }

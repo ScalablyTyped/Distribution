@@ -37,12 +37,12 @@ object TooltipContext {
     location: String = null,
     locationName: String = null
   ): TooltipContext[K1, K2, K3, D1, D2, D3] = {
-    val __obj = js.Dynamic.literal(componentElement = componentElement, id = id.asInstanceOf[js.Any], itemData = itemData.asInstanceOf[js.Any], parentElement = parentElement, tooltip = tooltip, x = x, y = y)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (locationName != null) __obj.updateDynamic("locationName")(locationName)
+    val __obj = js.Dynamic.literal(componentElement = componentElement.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], itemData = itemData.asInstanceOf[js.Any], parentElement = parentElement.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (locationName != null) __obj.updateDynamic("locationName")(locationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipContext[K1, K2, K3, D1, D2, D3]]
   }
 }

@@ -50,11 +50,11 @@ object ICollapsibleListProps {
     visibleItemClassName: String = null,
     visibleItemCount: Int | Double = null
   ): ICollapsibleListProps = {
-    val __obj = js.Dynamic.literal(dropdownTarget = dropdownTarget, visibleItemRenderer = js.Any.fromFunction2(visibleItemRenderer))
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (collapseFrom != null) __obj.updateDynamic("collapseFrom")(collapseFrom)
-    if (dropdownProps != null) __obj.updateDynamic("dropdownProps")(dropdownProps)
-    if (visibleItemClassName != null) __obj.updateDynamic("visibleItemClassName")(visibleItemClassName)
+    val __obj = js.Dynamic.literal(dropdownTarget = dropdownTarget.asInstanceOf[js.Any], visibleItemRenderer = js.Any.fromFunction2(visibleItemRenderer))
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (collapseFrom != null) __obj.updateDynamic("collapseFrom")(collapseFrom.asInstanceOf[js.Any])
+    if (dropdownProps != null) __obj.updateDynamic("dropdownProps")(dropdownProps.asInstanceOf[js.Any])
+    if (visibleItemClassName != null) __obj.updateDynamic("visibleItemClassName")(visibleItemClassName.asInstanceOf[js.Any])
     if (visibleItemCount != null) __obj.updateDynamic("visibleItemCount")(visibleItemCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICollapsibleListProps]
   }

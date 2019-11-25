@@ -41,11 +41,11 @@ object MountRendererProps {
     wrappingComponentProps: js.Object = null
   ): MountRendererProps = {
     val __obj = js.Dynamic.literal()
-    if (attachTo != null) __obj.updateDynamic("attachTo")(attachTo)
-    if (childContextTypes != null) __obj.updateDynamic("childContextTypes")(childContextTypes)
-    if (context != null) __obj.updateDynamic("context")(context)
+    if (attachTo != null) __obj.updateDynamic("attachTo")(attachTo.asInstanceOf[js.Any])
+    if (childContextTypes != null) __obj.updateDynamic("childContextTypes")(childContextTypes.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (wrappingComponent != null) __obj.updateDynamic("wrappingComponent")(wrappingComponent.asInstanceOf[js.Any])
-    if (wrappingComponentProps != null) __obj.updateDynamic("wrappingComponentProps")(wrappingComponentProps)
+    if (wrappingComponentProps != null) __obj.updateDynamic("wrappingComponentProps")(wrappingComponentProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[MountRendererProps]
   }
 }

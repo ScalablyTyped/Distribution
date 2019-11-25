@@ -14,8 +14,8 @@ object Options {
   @scala.inline
   def apply(ecmaVersion: EcmaVersion = null, strict: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (ecmaVersion != null) __obj.updateDynamic("ecmaVersion")(ecmaVersion)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (ecmaVersion != null) __obj.updateDynamic("ecmaVersion")(ecmaVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -28,8 +28,8 @@ object ExtensionPayload {
     metadata: js.Array[Anon_KeyValueString],
     `type`: ExtensionDeploymentTechnology
   ): ExtensionPayload = {
-    val __obj = js.Dynamic.literal(description = description, displayName = displayName, fileName = fileName, installationTargets = installationTargets, isSignedByMicrosoft = isSignedByMicrosoft, isValid = isValid, metadata = metadata)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], installationTargets = installationTargets.asInstanceOf[js.Any], isSignedByMicrosoft = isSignedByMicrosoft.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionPayload]
   }
 }

@@ -12,7 +12,7 @@ trait Mappings extends js.Object {
 object Mappings {
   @scala.inline
   def apply(JSXElement: MappingMethods): Mappings = {
-    val __obj = js.Dynamic.literal(JSXElement = JSXElement)
+    val __obj = js.Dynamic.literal(JSXElement = JSXElement.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Mappings]
   }

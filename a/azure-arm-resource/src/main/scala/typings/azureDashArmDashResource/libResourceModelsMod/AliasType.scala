@@ -19,8 +19,8 @@ object AliasType {
   @scala.inline
   def apply(name: String = null, paths: js.Array[AliasPathType] = null): AliasType = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (paths != null) __obj.updateDynamic("paths")(paths)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[AliasType]
   }
 }

@@ -42,21 +42,21 @@ object CustomAuthorizerEvent {
     resource: String = null,
     stageVariables: StringDictionary[String] = null
   ): CustomAuthorizerEvent = {
-    val __obj = js.Dynamic.literal(methodArn = methodArn)
-    __obj.updateDynamic("type")(`type`)
-    if (apiId != null) __obj.updateDynamic("apiId")(apiId)
-    if (authorizationToken != null) __obj.updateDynamic("authorizationToken")(authorizationToken)
-    if (domainName != null) __obj.updateDynamic("domainName")(domainName)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod)
-    if (multiValueHeaders != null) __obj.updateDynamic("multiValueHeaders")(multiValueHeaders)
-    if (multiValueQueryStringParameters != null) __obj.updateDynamic("multiValueQueryStringParameters")(multiValueQueryStringParameters)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (pathParameters != null) __obj.updateDynamic("pathParameters")(pathParameters)
-    if (queryStringParameters != null) __obj.updateDynamic("queryStringParameters")(queryStringParameters)
-    if (requestContext != null) __obj.updateDynamic("requestContext")(requestContext)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
-    if (stageVariables != null) __obj.updateDynamic("stageVariables")(stageVariables)
+    val __obj = js.Dynamic.literal(methodArn = methodArn.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (apiId != null) __obj.updateDynamic("apiId")(apiId.asInstanceOf[js.Any])
+    if (authorizationToken != null) __obj.updateDynamic("authorizationToken")(authorizationToken.asInstanceOf[js.Any])
+    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod.asInstanceOf[js.Any])
+    if (multiValueHeaders != null) __obj.updateDynamic("multiValueHeaders")(multiValueHeaders.asInstanceOf[js.Any])
+    if (multiValueQueryStringParameters != null) __obj.updateDynamic("multiValueQueryStringParameters")(multiValueQueryStringParameters.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (pathParameters != null) __obj.updateDynamic("pathParameters")(pathParameters.asInstanceOf[js.Any])
+    if (queryStringParameters != null) __obj.updateDynamic("queryStringParameters")(queryStringParameters.asInstanceOf[js.Any])
+    if (requestContext != null) __obj.updateDynamic("requestContext")(requestContext.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
+    if (stageVariables != null) __obj.updateDynamic("stageVariables")(stageVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomAuthorizerEvent]
   }
 }

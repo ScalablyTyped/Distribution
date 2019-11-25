@@ -67,20 +67,20 @@ object Options {
     strict: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(_with)) __obj.updateDynamic("_with")(_with)
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
-    if (!js.isUndefined(client)) __obj.updateDynamic("client")(client)
-    if (!js.isUndefined(compileDebug)) __obj.updateDynamic("compileDebug")(compileDebug)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (!js.isUndefined(_with)) __obj.updateDynamic("_with")(_with.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(client)) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
+    if (!js.isUndefined(compileDebug)) __obj.updateDynamic("compileDebug")(compileDebug.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (escape != null) __obj.updateDynamic("escape")(js.Any.fromFunction1(escape))
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (localsName != null) __obj.updateDynamic("localsName")(localsName)
-    if (!js.isUndefined(rmWhitespace)) __obj.updateDynamic("rmWhitespace")(rmWhitespace)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (localsName != null) __obj.updateDynamic("localsName")(localsName.asInstanceOf[js.Any])
+    if (!js.isUndefined(rmWhitespace)) __obj.updateDynamic("rmWhitespace")(rmWhitespace.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

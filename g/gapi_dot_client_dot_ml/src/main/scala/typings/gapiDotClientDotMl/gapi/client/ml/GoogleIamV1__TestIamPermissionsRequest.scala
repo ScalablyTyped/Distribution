@@ -18,7 +18,7 @@ object GoogleIamV1__TestIamPermissionsRequest {
   @scala.inline
   def apply(permissions: js.Array[String] = null): GoogleIamV1__TestIamPermissionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleIamV1__TestIamPermissionsRequest]
   }
 }

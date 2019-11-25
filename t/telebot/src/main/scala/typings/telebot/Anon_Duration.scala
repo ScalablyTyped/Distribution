@@ -25,11 +25,11 @@ object Anon_Duration {
   ): Anon_Duration = {
     val __obj = js.Dynamic.literal()
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (!js.isUndefined(notification)) __obj.updateDynamic("notification")(notification)
-    if (replyMarkup != null) __obj.updateDynamic("replyMarkup")(replyMarkup)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (!js.isUndefined(notification)) __obj.updateDynamic("notification")(notification.asInstanceOf[js.Any])
+    if (replyMarkup != null) __obj.updateDynamic("replyMarkup")(replyMarkup.asInstanceOf[js.Any])
     if (replyToMessage != null) __obj.updateDynamic("replyToMessage")(replyToMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(serverDownload)) __obj.updateDynamic("serverDownload")(serverDownload)
+    if (!js.isUndefined(serverDownload)) __obj.updateDynamic("serverDownload")(serverDownload.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Duration]
   }
 }

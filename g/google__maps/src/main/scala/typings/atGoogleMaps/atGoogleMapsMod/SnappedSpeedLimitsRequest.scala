@@ -27,8 +27,8 @@ trait SnappedSpeedLimitsRequest extends js.Object {
 object SnappedSpeedLimitsRequest {
   @scala.inline
   def apply(path: js.Array[LatLng], units: SpeedLimitUnit = null): SnappedSpeedLimitsRequest = {
-    val __obj = js.Dynamic.literal(path = path)
-    if (units != null) __obj.updateDynamic("units")(units)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnappedSpeedLimitsRequest]
   }
 }

@@ -27,10 +27,10 @@ object TransactionParams {
     tt: String | Double = null
   ): TransactionParams = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (p != null) __obj.updateDynamic("p")(p)
-    if (ta != null) __obj.updateDynamic("ta")(ta)
-    if (ti != null) __obj.updateDynamic("ti")(ti)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
+    if (ta != null) __obj.updateDynamic("ta")(ta.asInstanceOf[js.Any])
+    if (ti != null) __obj.updateDynamic("ti")(ti.asInstanceOf[js.Any])
     if (tr != null) __obj.updateDynamic("tr")(tr.asInstanceOf[js.Any])
     if (ts != null) __obj.updateDynamic("ts")(ts.asInstanceOf[js.Any])
     if (tt != null) __obj.updateDynamic("tt")(tt.asInstanceOf[js.Any])

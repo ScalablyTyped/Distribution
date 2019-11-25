@@ -21,10 +21,10 @@ object PostCustomFieldParams {
     description: String = null,
     required: js.UndefOr[Boolean] = js.undefined
   ): PostCustomFieldParams = {
-    val __obj = js.Dynamic.literal(name = name, typeId = typeId)
-    if (applicableIssueTypes != null) __obj.updateDynamic("applicableIssueTypes")(applicableIssueTypes)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], typeId = typeId.asInstanceOf[js.Any])
+    if (applicableIssueTypes != null) __obj.updateDynamic("applicableIssueTypes")(applicableIssueTypes.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostCustomFieldParams]
   }
 }

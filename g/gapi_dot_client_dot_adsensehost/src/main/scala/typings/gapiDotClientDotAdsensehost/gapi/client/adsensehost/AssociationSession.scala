@@ -39,15 +39,15 @@ object AssociationSession {
     websiteUrl: String = null
   ): AssociationSession = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (productCodes != null) __obj.updateDynamic("productCodes")(productCodes)
-    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (userLocale != null) __obj.updateDynamic("userLocale")(userLocale)
-    if (websiteLocale != null) __obj.updateDynamic("websiteLocale")(websiteLocale)
-    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (productCodes != null) __obj.updateDynamic("productCodes")(productCodes.asInstanceOf[js.Any])
+    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (userLocale != null) __obj.updateDynamic("userLocale")(userLocale.asInstanceOf[js.Any])
+    if (websiteLocale != null) __obj.updateDynamic("websiteLocale")(websiteLocale.asInstanceOf[js.Any])
+    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociationSession]
   }
 }

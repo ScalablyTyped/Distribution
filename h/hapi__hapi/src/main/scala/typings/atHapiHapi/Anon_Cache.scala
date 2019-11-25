@@ -16,8 +16,8 @@ object Anon_Cache {
   @scala.inline
   def apply(cache: String = null, segment: String = null): Anon_Cache = {
     val __obj = js.Dynamic.literal()
-    if (cache != null) __obj.updateDynamic("cache")(cache)
-    if (segment != null) __obj.updateDynamic("segment")(segment)
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cache]
   }
 }

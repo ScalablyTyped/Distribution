@@ -13,7 +13,7 @@ object IPortalContext {
   @scala.inline
   def apply(blueprintPortalClassName: String = null): IPortalContext = {
     val __obj = js.Dynamic.literal()
-    if (blueprintPortalClassName != null) __obj.updateDynamic("blueprintPortalClassName")(blueprintPortalClassName)
+    if (blueprintPortalClassName != null) __obj.updateDynamic("blueprintPortalClassName")(blueprintPortalClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPortalContext]
   }
 }

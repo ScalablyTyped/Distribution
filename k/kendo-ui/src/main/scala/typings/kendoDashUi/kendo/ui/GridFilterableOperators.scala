@@ -20,10 +20,10 @@ object GridFilterableOperators {
     string: GridFilterableOperatorsString = null
   ): GridFilterableOperators = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (enums != null) __obj.updateDynamic("enums")(enums)
-    if (number != null) __obj.updateDynamic("number")(number)
-    if (string != null) __obj.updateDynamic("string")(string)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (enums != null) __obj.updateDynamic("enums")(enums.asInstanceOf[js.Any])
+    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridFilterableOperators]
   }
 }

@@ -18,9 +18,9 @@ object Anon_ButtonsDetailedMessage {
     buttons: StringDictionary[js.Function0[Unit]] = null,
     detailedMessage: String = null
   ): Anon_ButtonsDetailedMessage = {
-    val __obj = js.Dynamic.literal(message = message)
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
-    if (detailedMessage != null) __obj.updateDynamic("detailedMessage")(detailedMessage)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
+    if (detailedMessage != null) __obj.updateDynamic("detailedMessage")(detailedMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ButtonsDetailedMessage]
   }
 }

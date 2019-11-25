@@ -13,7 +13,7 @@ trait Anon_LightMap extends js.Object {
 object Anon_LightMap {
   @scala.inline
   def apply(lightMap: IUniform, lightMapIntensity: IUniform): Anon_LightMap = {
-    val __obj = js.Dynamic.literal(lightMap = lightMap, lightMapIntensity = lightMapIntensity)
+    val __obj = js.Dynamic.literal(lightMap = lightMap.asInstanceOf[js.Any], lightMapIntensity = lightMapIntensity.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_LightMap]
   }

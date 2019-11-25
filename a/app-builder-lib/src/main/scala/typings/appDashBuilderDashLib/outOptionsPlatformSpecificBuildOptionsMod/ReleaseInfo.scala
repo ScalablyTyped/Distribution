@@ -32,10 +32,10 @@ object ReleaseInfo {
     releaseNotesFile: String = null
   ): ReleaseInfo = {
     val __obj = js.Dynamic.literal()
-    if (releaseDate != null) __obj.updateDynamic("releaseDate")(releaseDate)
-    if (releaseName != null) __obj.updateDynamic("releaseName")(releaseName)
-    if (releaseNotes != null) __obj.updateDynamic("releaseNotes")(releaseNotes)
-    if (releaseNotesFile != null) __obj.updateDynamic("releaseNotesFile")(releaseNotesFile)
+    if (releaseDate != null) __obj.updateDynamic("releaseDate")(releaseDate.asInstanceOf[js.Any])
+    if (releaseName != null) __obj.updateDynamic("releaseName")(releaseName.asInstanceOf[js.Any])
+    if (releaseNotes != null) __obj.updateDynamic("releaseNotes")(releaseNotes.asInstanceOf[js.Any])
+    if (releaseNotesFile != null) __obj.updateDynamic("releaseNotesFile")(releaseNotesFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseInfo]
   }
 }

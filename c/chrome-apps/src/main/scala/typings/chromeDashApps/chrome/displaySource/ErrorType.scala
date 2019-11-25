@@ -4,7 +4,7 @@ import typings.chromeDashApps.chromeDashAppsStrings.capabilities_negotiation_err
 import typings.chromeDashApps.chromeDashAppsStrings.connection_error
 import typings.chromeDashApps.chromeDashAppsStrings.media_pipeline_error
 import typings.chromeDashApps.chromeDashAppsStrings.timeout_error
-import typings.chromeDashApps.chromeDashAppsStrings.unknown_error
+import typings.chromeDashApps.chromeDashAppsStrings.unknown_error_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,6 +37,6 @@ object ErrorType extends js.Object {
   var CONNECTION_ERROR: connection_error = js.native
   var MEDIA_PIPELINE_ERROR: media_pipeline_error = js.native
   var TIMEOUT_ERROR: timeout_error = js.native
-  var UNKNOWN_ERROR: unknown_error = js.native
+  var UNKNOWN_ERROR: unknown_error_ = js.native
 }
 

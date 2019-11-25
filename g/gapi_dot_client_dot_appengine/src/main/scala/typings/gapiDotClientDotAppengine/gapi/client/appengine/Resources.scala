@@ -27,7 +27,7 @@ object Resources {
     if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
     if (diskGb != null) __obj.updateDynamic("diskGb")(diskGb.asInstanceOf[js.Any])
     if (memoryGb != null) __obj.updateDynamic("memoryGb")(memoryGb.asInstanceOf[js.Any])
-    if (volumes != null) __obj.updateDynamic("volumes")(volumes)
+    if (volumes != null) __obj.updateDynamic("volumes")(volumes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resources]
   }
 }

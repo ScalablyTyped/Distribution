@@ -26,11 +26,11 @@ object Anon_IdLoop {
     width: Int | Double = null
   ): Anon_IdLoop = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
-    if (material != null) __obj.updateDynamic("material")(material)
-    if (positions != null) __obj.updateDynamic("positions")(positions)
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
+    if (positions != null) __obj.updateDynamic("positions")(positions.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IdLoop]
   }

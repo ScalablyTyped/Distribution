@@ -13,7 +13,7 @@ object Anon_QBookmarkId {
   @scala.inline
   def apply(qBookmarkId: String = null, qExpires: Int | Double = null): Anon_QBookmarkId = {
     val __obj = js.Dynamic.literal()
-    if (qBookmarkId != null) __obj.updateDynamic("qBookmarkId")(qBookmarkId)
+    if (qBookmarkId != null) __obj.updateDynamic("qBookmarkId")(qBookmarkId.asInstanceOf[js.Any])
     if (qExpires != null) __obj.updateDynamic("qExpires")(qExpires.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_QBookmarkId]
   }

@@ -17,9 +17,9 @@ object EnumValue {
   @scala.inline
   def apply(name: String = null, number: Int | Double = null, options: js.Array[Option] = null): EnumValue = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValue]
   }
 }

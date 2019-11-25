@@ -31,14 +31,14 @@ object GiraffeObject {
     dispose: () => js.Any = null,
     initialize: () => js.Any = null
   ): GiraffeObject = {
-    val __obj = js.Dynamic.literal(app = app)
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any])
     if (afterDispose != null) __obj.updateDynamic("afterDispose")(js.Any.fromFunction0(afterDispose))
     if (afterInitialize != null) __obj.updateDynamic("afterInitialize")(js.Any.fromFunction0(afterInitialize))
-    if (appEvents != null) __obj.updateDynamic("appEvents")(appEvents)
+    if (appEvents != null) __obj.updateDynamic("appEvents")(appEvents.asInstanceOf[js.Any])
     if (beforeDispose != null) __obj.updateDynamic("beforeDispose")(js.Any.fromFunction0(beforeDispose))
     if (beforeInitialize != null) __obj.updateDynamic("beforeInitialize")(js.Any.fromFunction0(beforeInitialize))
-    if (dataEvents != null) __obj.updateDynamic("dataEvents")(dataEvents)
-    if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions)
+    if (dataEvents != null) __obj.updateDynamic("dataEvents")(dataEvents.asInstanceOf[js.Any])
+    if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions.asInstanceOf[js.Any])
     if (dispose != null) __obj.updateDynamic("dispose")(js.Any.fromFunction0(dispose))
     if (initialize != null) __obj.updateDynamic("initialize")(js.Any.fromFunction0(initialize))
     __obj.asInstanceOf[GiraffeObject]

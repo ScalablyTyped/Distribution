@@ -1,6 +1,8 @@
 package typings.autolinker
 
+import typings.autolinker.distCommonjsAutolinkerMod.HashtagConfig
 import typings.autolinker.distCommonjsAutolinkerMod.HashtagServices
+import typings.autolinker.distCommonjsAutolinkerMod.MentionConfig
 import typings.autolinker.distCommonjsAutolinkerMod.MentionServices
 import typings.autolinker.distCommonjsAutolinkerMod.UrlMatchTypeOptions
 import scala.scalajs.js
@@ -15,11 +17,15 @@ object autolinkerStrings {
   sealed trait end extends js.Object
   
   @js.native
-  sealed trait facebook extends HashtagServices
+  sealed trait facebook
+    extends HashtagConfig
+       with HashtagServices
   
   @js.native
   sealed trait instagram
-    extends HashtagServices
+    extends HashtagConfig
+       with HashtagServices
+       with MentionConfig
        with MentionServices
   
   @js.native
@@ -32,14 +38,18 @@ object autolinkerStrings {
   sealed trait smart extends js.Object
   
   @js.native
-  sealed trait soundcloud extends MentionServices
+  sealed trait soundcloud
+    extends MentionConfig
+       with MentionServices
   
   @js.native
   sealed trait tld extends UrlMatchTypeOptions
   
   @js.native
   sealed trait twitter
-    extends HashtagServices
+    extends HashtagConfig
+       with HashtagServices
+       with MentionConfig
        with MentionServices
   
   @js.native

@@ -16,8 +16,8 @@ object PlotCciLastVisiblePriceOptions {
   @scala.inline
   def apply(enabled: js.UndefOr[Boolean] = js.undefined, label: PlotCciLastVisiblePriceLabelOptions = null): PlotCciLastVisiblePriceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotCciLastVisiblePriceOptions]
   }
 }

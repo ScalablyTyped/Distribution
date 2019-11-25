@@ -12,7 +12,7 @@ trait SanitizeElementHookEvent extends _HookEvent {
 object SanitizeElementHookEvent {
   @scala.inline
   def apply(allowedTags: js.Array[String], tagName: String): SanitizeElementHookEvent = {
-    val __obj = js.Dynamic.literal(allowedTags = allowedTags, tagName = tagName)
+    val __obj = js.Dynamic.literal(allowedTags = allowedTags.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SanitizeElementHookEvent]
   }

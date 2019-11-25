@@ -24,11 +24,11 @@ object ConnectionInfo {
     expires: Int | Double = null,
     idField: String = null
   ): ConnectionInfo = {
-    val __obj = js.Dynamic.literal(collection = collection, uri = uri)
-    if (connectionOptions != null) __obj.updateDynamic("connectionOptions")(connectionOptions)
-    if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName)
+    val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    if (connectionOptions != null) __obj.updateDynamic("connectionOptions")(connectionOptions.asInstanceOf[js.Any])
+    if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName.asInstanceOf[js.Any])
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (idField != null) __obj.updateDynamic("idField")(idField)
+    if (idField != null) __obj.updateDynamic("idField")(idField.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionInfo]
   }
 }

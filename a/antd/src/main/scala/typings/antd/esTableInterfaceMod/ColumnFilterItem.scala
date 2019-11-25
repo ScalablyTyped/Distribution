@@ -14,8 +14,8 @@ trait ColumnFilterItem extends js.Object {
 object ColumnFilterItem {
   @scala.inline
   def apply(value: String, children: js.Array[ColumnFilterItem] = null, text: ReactNode = null): ColumnFilterItem = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (children != null) __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnFilterItem]
   }

@@ -23,9 +23,9 @@ object SelectedItemsChangingEventUIParam {
   @scala.inline
   def apply(cancel: js.Any = null, newItems: js.Any = null, oldItems: js.Any = null): SelectedItemsChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (newItems != null) __obj.updateDynamic("newItems")(newItems)
-    if (oldItems != null) __obj.updateDynamic("oldItems")(oldItems)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (newItems != null) __obj.updateDynamic("newItems")(newItems.asInstanceOf[js.Any])
+    if (oldItems != null) __obj.updateDynamic("oldItems")(oldItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectedItemsChangingEventUIParam]
   }
 }

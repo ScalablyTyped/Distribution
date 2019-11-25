@@ -35,12 +35,12 @@ object Anon_AutoDismiss {
     modality: modal | modeless = null,
     size: String = null
   ): Anon_AutoDismiss = {
-    val __obj = js.Dynamic.literal(content = content, selector = selector)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
     if (autoDismiss != null) __obj.updateDynamic("autoDismiss")(autoDismiss.asInstanceOf[js.Any])
     if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode.asInstanceOf[js.Any])
     if (edge != null) __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
     if (modality != null) __obj.updateDynamic("modality")(modality.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoDismiss]
   }
 }

@@ -33,9 +33,9 @@ object RowDropSettings {
   ): RowDropSettings = {
     val __obj = js.Dynamic.literal()
     if (dragBehavior != null) __obj.updateDynamic("dragBehavior")(dragBehavior.asInstanceOf[js.Any])
-    if (dragMapper != null) __obj.updateDynamic("dragMapper")(dragMapper)
-    if (dropMapper != null) __obj.updateDynamic("dropMapper")(dropMapper)
-    if (dropTargetID != null) __obj.updateDynamic("dropTargetID")(dropTargetID)
+    if (dragMapper != null) __obj.updateDynamic("dragMapper")(dragMapper.asInstanceOf[js.Any])
+    if (dropMapper != null) __obj.updateDynamic("dropMapper")(dropMapper.asInstanceOf[js.Any])
+    if (dropTargetID != null) __obj.updateDynamic("dropTargetID")(dropTargetID.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowDropSettings]
   }
 }

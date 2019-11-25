@@ -13,8 +13,8 @@ trait MissingRefError extends Error {
 object MissingRefError {
   @scala.inline
   def apply(message: String, missingRef: String, missingSchema: String, name: String, stack: String = null): MissingRefError = {
-    val __obj = js.Dynamic.literal(message = message, missingRef = missingRef, missingSchema = missingSchema, name = name)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], missingRef = missingRef.asInstanceOf[js.Any], missingSchema = missingSchema.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[MissingRefError]
   }
 }

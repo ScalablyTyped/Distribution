@@ -13,8 +13,8 @@ object Anon_X {
   @scala.inline
   def apply(x: js.UndefOr[Boolean] = js.undefined, y: js.UndefOr[Boolean] = js.undefined): Anon_X = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x)
-    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y)
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_X]
   }
 }

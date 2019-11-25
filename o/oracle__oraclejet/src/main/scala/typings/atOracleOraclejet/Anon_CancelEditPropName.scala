@@ -18,8 +18,8 @@ object Anon_CancelEditPropName {
     rowContext: js.Object,
     StringDictionary: /* propName */ StringDictionary[js.Any] = null
   ): Anon_CancelEditPropName = {
-    val __obj = js.Dynamic.literal(cancelEdit = cancelEdit, rowContext = rowContext)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(cancelEdit = cancelEdit.asInstanceOf[js.Any], rowContext = rowContext.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_CancelEditPropName]
   }
 }

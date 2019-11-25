@@ -36,10 +36,10 @@ object DeviceDetails {
     deviceSecret: String = null,
     metadata: js.Any = null
   ): DeviceDetails = {
-    val __obj = js.Dynamic.literal(formFactor = formFactor.asInstanceOf[js.Any], id = id, platform = platform.asInstanceOf[js.Any], push = push)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (deviceSecret != null) __obj.updateDynamic("deviceSecret")(deviceSecret)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(formFactor = formFactor.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], push = push.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (deviceSecret != null) __obj.updateDynamic("deviceSecret")(deviceSecret.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceDetails]
   }
 }

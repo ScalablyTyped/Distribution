@@ -39,10 +39,10 @@ trait IField extends js.Object {
 object IField {
   @scala.inline
   def apply(name: String, format: String = null, title: String = null, `type`: String = null): IField = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IField]
   }
 }

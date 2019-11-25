@@ -13,7 +13,7 @@ trait Anon_Keyid extends js.Object {
 object Anon_Keyid {
   @scala.inline
   def apply(keyid: Keyid, valid: Boolean): Anon_Keyid = {
-    val __obj = js.Dynamic.literal(keyid = keyid, valid = valid)
+    val __obj = js.Dynamic.literal(keyid = keyid.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Keyid]
   }

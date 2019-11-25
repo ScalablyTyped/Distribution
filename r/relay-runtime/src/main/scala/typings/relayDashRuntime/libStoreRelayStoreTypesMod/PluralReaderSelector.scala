@@ -12,7 +12,7 @@ trait PluralReaderSelector extends ReaderSelector {
 object PluralReaderSelector {
   @scala.inline
   def apply(kind: String, selectors: js.Array[SingularReaderSelector]): PluralReaderSelector = {
-    val __obj = js.Dynamic.literal(kind = kind, selectors = selectors)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], selectors = selectors.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PluralReaderSelector]
   }

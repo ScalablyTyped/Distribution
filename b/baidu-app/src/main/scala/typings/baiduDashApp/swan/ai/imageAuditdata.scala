@@ -15,8 +15,8 @@ trait imageAuditdata extends js.Object {
 object imageAuditdata {
   @scala.inline
   def apply(msg: Double, probability: Double, stars: js.Array[imageAuditdata], `type`: Double, words: Double): imageAuditdata = {
-    val __obj = js.Dynamic.literal(msg = msg, probability = probability, stars = stars, words = words)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(msg = msg.asInstanceOf[js.Any], probability = probability.asInstanceOf[js.Any], stars = stars.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[imageAuditdata]
   }
 }

@@ -26,11 +26,11 @@ object StockToolsGuiDefinitionsCrookedLinesOptions {
     items: js.Array[_] = null
   ): StockToolsGuiDefinitionsCrookedLinesOptions = {
     val __obj = js.Dynamic.literal()
-    if (crooked3 != null) __obj.updateDynamic("crooked3")(crooked3)
-    if (crooked5 != null) __obj.updateDynamic("crooked5")(crooked5)
-    if (elliott3 != null) __obj.updateDynamic("elliott3")(elliott3)
-    if (elliott5 != null) __obj.updateDynamic("elliott5")(elliott5)
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (crooked3 != null) __obj.updateDynamic("crooked3")(crooked3.asInstanceOf[js.Any])
+    if (crooked5 != null) __obj.updateDynamic("crooked5")(crooked5.asInstanceOf[js.Any])
+    if (elliott3 != null) __obj.updateDynamic("elliott3")(elliott3.asInstanceOf[js.Any])
+    if (elliott5 != null) __obj.updateDynamic("elliott5")(elliott5.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockToolsGuiDefinitionsCrookedLinesOptions]
   }
 }

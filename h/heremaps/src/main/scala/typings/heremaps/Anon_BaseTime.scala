@@ -23,7 +23,7 @@ object Anon_BaseTime {
     trafficTime: Double,
     travelTime: Double
   ): Anon_BaseTime = {
-    val __obj = js.Dynamic.literal(baseTime = baseTime, distance = distance, flags = flags, text = text, trafficTime = trafficTime, travelTime = travelTime)
+    val __obj = js.Dynamic.literal(baseTime = baseTime.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], trafficTime = trafficTime.asInstanceOf[js.Any], travelTime = travelTime.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BaseTime]
   }

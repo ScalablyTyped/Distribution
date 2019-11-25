@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("AudioWorklet")
 @js.native
-class AudioWorkletCls () extends AudioWorklet
+class AudioWorkletCls () extends Worklet
 

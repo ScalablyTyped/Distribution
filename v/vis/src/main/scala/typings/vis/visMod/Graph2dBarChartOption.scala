@@ -20,9 +20,9 @@ object Graph2dBarChartOption {
     width: Int | Double = null
   ): Graph2dBarChartOption = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(sideBySide)) __obj.updateDynamic("sideBySide")(sideBySide)
+    if (!js.isUndefined(sideBySide)) __obj.updateDynamic("sideBySide")(sideBySide.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Graph2dBarChartOption]
   }

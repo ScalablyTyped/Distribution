@@ -22,8 +22,8 @@ object AutoUpgradeOptions {
   @scala.inline
   def apply(autoUpgradeStartTime: String = null, description: String = null): AutoUpgradeOptions = {
     val __obj = js.Dynamic.literal()
-    if (autoUpgradeStartTime != null) __obj.updateDynamic("autoUpgradeStartTime")(autoUpgradeStartTime)
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (autoUpgradeStartTime != null) __obj.updateDynamic("autoUpgradeStartTime")(autoUpgradeStartTime.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoUpgradeOptions]
   }
 }

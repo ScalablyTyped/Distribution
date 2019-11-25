@@ -28,14 +28,14 @@ object OnenoteOperation {
     status: OperationStatus = null
   ): OnenoteOperation = {
     val __obj = js.Dynamic.literal()
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastActionDateTime != null) __obj.updateDynamic("lastActionDateTime")(lastActionDateTime)
-    if (percentComplete != null) __obj.updateDynamic("percentComplete")(percentComplete)
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId)
-    if (resourceLocation != null) __obj.updateDynamic("resourceLocation")(resourceLocation)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastActionDateTime != null) __obj.updateDynamic("lastActionDateTime")(lastActionDateTime.asInstanceOf[js.Any])
+    if (percentComplete != null) __obj.updateDynamic("percentComplete")(percentComplete.asInstanceOf[js.Any])
+    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
+    if (resourceLocation != null) __obj.updateDynamic("resourceLocation")(resourceLocation.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnenoteOperation]
   }
 }

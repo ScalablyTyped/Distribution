@@ -26,9 +26,9 @@ object ScopeMiddlewareOptions {
     precedenceOptions: PrecedenceOptions = null
   ): ScopeMiddlewareOptions = {
     val __obj = js.Dynamic.literal()
-    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (onAuthorizationFailedHandler != null) __obj.updateDynamic("onAuthorizationFailedHandler")(js.Any.fromFunction5(onAuthorizationFailedHandler))
-    if (precedenceOptions != null) __obj.updateDynamic("precedenceOptions")(precedenceOptions)
+    if (precedenceOptions != null) __obj.updateDynamic("precedenceOptions")(precedenceOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScopeMiddlewareOptions]
   }
 }

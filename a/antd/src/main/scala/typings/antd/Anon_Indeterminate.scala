@@ -11,7 +11,7 @@ trait Anon_Indeterminate extends js.Object {
 object Anon_Indeterminate {
   @scala.inline
   def apply(indeterminate: Boolean): Anon_Indeterminate = {
-    val __obj = js.Dynamic.literal(indeterminate = indeterminate)
+    val __obj = js.Dynamic.literal(indeterminate = indeterminate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Indeterminate]
   }

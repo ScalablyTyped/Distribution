@@ -13,7 +13,7 @@ trait Anon_ItemsReturnValueArrayDeviceInformation extends js.Object {
 object Anon_ItemsReturnValueArrayDeviceInformation {
   @scala.inline
   def apply(items: js.Array[DeviceInformation], returnValue: Double): Anon_ItemsReturnValueArrayDeviceInformation = {
-    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ItemsReturnValueArrayDeviceInformation]
   }

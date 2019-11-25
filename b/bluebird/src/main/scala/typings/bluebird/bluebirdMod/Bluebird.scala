@@ -64,7 +64,9 @@ trait Bluebird[R]
     * </code>
     */
   def call[U /* <: String */, Q](`this`: Bluebird[Q], propertyName: U, args: js.Any*): Bluebird[
-    ReturnType[/* import warning: ImportType.apply Failed type conversion: Q[U] */ js.Any]
+    ReturnType[
+      /* import warning: importer.ImportType#apply Failed type conversion: Q[U] */ js.Any
+    ]
   ] = js.native
   /**
     * Cancel this `promise`. Will not do anything if this promise is already settled or if the cancellation feature has not been enabled
@@ -957,7 +959,9 @@ trait Bluebird[R]
     * });
     * </code>
     */
-  def get[U /* <: String */](key: U): Bluebird[/* import warning: ImportType.apply Failed type conversion: R[U] */ js.Any] = js.native
+  def get[U /* <: String */](key: U): Bluebird[
+    /* import warning: importer.ImportType#apply Failed type conversion: R[U] */ js.Any
+  ] = js.native
   /**
     * See if this `promise` is resolved -> either fulfilled or rejected.
     */

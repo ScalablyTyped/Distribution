@@ -26,11 +26,11 @@ object RawConfigFile {
     rulesDirectory: String | js.Array[String] = null
   ): RawConfigFile = {
     val __obj = js.Dynamic.literal()
-    if (defaultSeverity != null) __obj.updateDynamic("defaultSeverity")(defaultSeverity)
+    if (defaultSeverity != null) __obj.updateDynamic("defaultSeverity")(defaultSeverity.asInstanceOf[js.Any])
     if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
     if (jsRules != null) __obj.updateDynamic("jsRules")(jsRules.asInstanceOf[js.Any])
-    if (linterOptions != null) __obj.updateDynamic("linterOptions")(linterOptions)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (linterOptions != null) __obj.updateDynamic("linterOptions")(linterOptions.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     if (rulesDirectory != null) __obj.updateDynamic("rulesDirectory")(rulesDirectory.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawConfigFile]
   }

@@ -31,7 +31,7 @@ object Anon_01 {
     mode: `0` | `1` | `2`,
     quality: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11`
   ): Anon_01 = {
-    val __obj = js.Dynamic.literal(lgblock = lgblock, lgwin = lgwin, mode = mode.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(lgblock = lgblock.asInstanceOf[js.Any], lgwin = lgwin.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_01]
   }

@@ -16,8 +16,8 @@ object ChoiceOptions {
     returnNumeric: js.UndefOr[Boolean] = js.undefined
   ): ChoiceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowNoAnswer)) __obj.updateDynamic("allowNoAnswer")(allowNoAnswer)
-    if (!js.isUndefined(returnNumeric)) __obj.updateDynamic("returnNumeric")(returnNumeric)
+    if (!js.isUndefined(allowNoAnswer)) __obj.updateDynamic("allowNoAnswer")(allowNoAnswer.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnNumeric)) __obj.updateDynamic("returnNumeric")(returnNumeric.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChoiceOptions]
   }
 }

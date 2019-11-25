@@ -42,13 +42,13 @@ object OperationOption {
     withRef: js.UndefOr[Boolean] = js.undefined
   ): OperationOption[TProps, TData, TGraphQLVariables, TChildProps] = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (props != null) __obj.updateDynamic("props")(js.Any.fromFunction2(props))
     if (shouldResubscribe != null) __obj.updateDynamic("shouldResubscribe")(js.Any.fromFunction2(shouldResubscribe))
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef)
+    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationOption[TProps, TData, TGraphQLVariables, TChildProps]]
   }
 }

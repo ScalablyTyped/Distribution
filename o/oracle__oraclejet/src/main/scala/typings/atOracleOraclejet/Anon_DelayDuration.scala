@@ -24,12 +24,12 @@ object Anon_DelayDuration {
     timingFunction: String = null
   ): Anon_DelayDuration = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay)
-    if (duration != null) __obj.updateDynamic("duration")(duration)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (endOpacity != null) __obj.updateDynamic("endOpacity")(endOpacity.asInstanceOf[js.Any])
-    if (persist != null) __obj.updateDynamic("persist")(persist)
+    if (persist != null) __obj.updateDynamic("persist")(persist.asInstanceOf[js.Any])
     if (startOpacity != null) __obj.updateDynamic("startOpacity")(startOpacity.asInstanceOf[js.Any])
-    if (timingFunction != null) __obj.updateDynamic("timingFunction")(timingFunction)
+    if (timingFunction != null) __obj.updateDynamic("timingFunction")(timingFunction.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DelayDuration]
   }
 }

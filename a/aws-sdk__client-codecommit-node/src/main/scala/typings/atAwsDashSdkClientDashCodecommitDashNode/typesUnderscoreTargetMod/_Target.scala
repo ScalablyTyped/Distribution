@@ -22,8 +22,8 @@ trait _Target extends js.Object {
 object _Target {
   @scala.inline
   def apply(repositoryName: String, sourceReference: String, destinationReference: String = null): _Target = {
-    val __obj = js.Dynamic.literal(repositoryName = repositoryName, sourceReference = sourceReference)
-    if (destinationReference != null) __obj.updateDynamic("destinationReference")(destinationReference)
+    val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any], sourceReference = sourceReference.asInstanceOf[js.Any])
+    if (destinationReference != null) __obj.updateDynamic("destinationReference")(destinationReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Target]
   }
 }

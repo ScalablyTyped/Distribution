@@ -1,7 +1,5 @@
 package typings.consul.consulMod
 
-import typings.consul.Fn_CallbackOptsLeaderOptions
-import typings.consul.Fn_CallbackOptsPeersOptions
 import typings.consul.consulMod.Status.LeaderOptions
 import typings.consul.consulMod.Status.PeersOptions
 import scala.scalajs.js
@@ -11,16 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Status extends js.Object {
   var consul: Consul = js.native
-  /**
-    * Returns the current Raft leader.
-    */
-  @JSName("leader")
-  var leader_Original: Fn_CallbackOptsLeaderOptions = js.native
-  /**
-    * Returns the current Raft peer set
-    */
-  @JSName("peers")
-  var peers_Original: Fn_CallbackOptsPeersOptions = js.native
   /**
     * Returns the current Raft leader.
     */

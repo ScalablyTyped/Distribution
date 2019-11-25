@@ -18,7 +18,7 @@ object TargetPoolsRemoveHealthCheckRequest {
   @scala.inline
   def apply(healthChecks: js.Array[HealthCheckReference] = null): TargetPoolsRemoveHealthCheckRequest = {
     val __obj = js.Dynamic.literal()
-    if (healthChecks != null) __obj.updateDynamic("healthChecks")(healthChecks)
+    if (healthChecks != null) __obj.updateDynamic("healthChecks")(healthChecks.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetPoolsRemoveHealthCheckRequest]
   }
 }

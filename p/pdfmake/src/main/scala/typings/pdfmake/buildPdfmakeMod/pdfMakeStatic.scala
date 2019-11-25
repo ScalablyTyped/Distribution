@@ -18,7 +18,7 @@ object pdfMakeStatic {
     fonts: StringDictionary[TFontFamilyTypes],
     vfs: TFontFamily
   ): pdfMakeStatic = {
-    val __obj = js.Dynamic.literal(createPdf = js.Any.fromFunction1(createPdf), fonts = fonts, vfs = vfs)
+    val __obj = js.Dynamic.literal(createPdf = js.Any.fromFunction1(createPdf), fonts = fonts.asInstanceOf[js.Any], vfs = vfs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[pdfMakeStatic]
   }

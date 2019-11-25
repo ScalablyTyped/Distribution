@@ -40,19 +40,19 @@ object MapPolygonProps {
     tappable: js.UndefOr[Boolean] = js.undefined,
     zIndex: Int | Double = null
   ): MapPolygonProps = {
-    val __obj = js.Dynamic.literal(coordinates = coordinates)
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
-    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic)
-    if (holes != null) __obj.updateDynamic("holes")(holes)
-    if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap)
-    if (lineDashPattern != null) __obj.updateDynamic("lineDashPattern")(lineDashPattern)
+    val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic.asInstanceOf[js.Any])
+    if (holes != null) __obj.updateDynamic("holes")(holes.asInstanceOf[js.Any])
+    if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap.asInstanceOf[js.Any])
+    if (lineDashPattern != null) __obj.updateDynamic("lineDashPattern")(lineDashPattern.asInstanceOf[js.Any])
     if (lineDashPhase != null) __obj.updateDynamic("lineDashPhase")(lineDashPhase.asInstanceOf[js.Any])
-    if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin)
+    if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin.asInstanceOf[js.Any])
     if (miterLimit != null) __obj.updateDynamic("miterLimit")(miterLimit.asInstanceOf[js.Any])
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(tappable)) __obj.updateDynamic("tappable")(tappable)
+    if (!js.isUndefined(tappable)) __obj.updateDynamic("tappable")(tappable.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapPolygonProps]
   }

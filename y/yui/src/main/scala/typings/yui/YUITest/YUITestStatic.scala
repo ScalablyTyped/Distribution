@@ -13,7 +13,7 @@ trait YUITestStatic extends js.Object {
 object YUITestStatic {
   @scala.inline
   def apply(Assert: IAssert, Case: TestCase, Runner: TestRunner): YUITestStatic = {
-    val __obj = js.Dynamic.literal(Assert = Assert, Case = Case, Runner = Runner)
+    val __obj = js.Dynamic.literal(Assert = Assert.asInstanceOf[js.Any], Case = Case.asInstanceOf[js.Any], Runner = Runner.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[YUITestStatic]
   }

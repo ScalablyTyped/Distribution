@@ -12,7 +12,7 @@ trait BaseResult extends js.Object {
 object BaseResult {
   @scala.inline
   def apply(client: Client, response_type: String): BaseResult = {
-    val __obj = js.Dynamic.literal(client = client, response_type = response_type)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], response_type = response_type.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BaseResult]
   }

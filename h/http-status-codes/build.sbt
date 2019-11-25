@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "http-status-codes"
-version := "1.4.0-1df9a0"
+version := "1.4.0-7310ad"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

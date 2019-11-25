@@ -20,10 +20,10 @@ object DriveRestrictions {
     driveMembersOnly: js.UndefOr[Boolean] = js.undefined
   ): DriveRestrictions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adminManagedRestrictions)) __obj.updateDynamic("adminManagedRestrictions")(adminManagedRestrictions)
-    if (!js.isUndefined(copyRequiresWriterPermission)) __obj.updateDynamic("copyRequiresWriterPermission")(copyRequiresWriterPermission)
-    if (!js.isUndefined(domainUsersOnly)) __obj.updateDynamic("domainUsersOnly")(domainUsersOnly)
-    if (!js.isUndefined(driveMembersOnly)) __obj.updateDynamic("driveMembersOnly")(driveMembersOnly)
+    if (!js.isUndefined(adminManagedRestrictions)) __obj.updateDynamic("adminManagedRestrictions")(adminManagedRestrictions.asInstanceOf[js.Any])
+    if (!js.isUndefined(copyRequiresWriterPermission)) __obj.updateDynamic("copyRequiresWriterPermission")(copyRequiresWriterPermission.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainUsersOnly)) __obj.updateDynamic("domainUsersOnly")(domainUsersOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(driveMembersOnly)) __obj.updateDynamic("driveMembersOnly")(driveMembersOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[DriveRestrictions]
   }
 }

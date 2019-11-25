@@ -25,9 +25,9 @@ object AppRouterOptions {
   @scala.inline
   def apply(appRoutes: AppRoutes = null, controller: js.Any = null, routes: AppRoutes = null): AppRouterOptions = {
     val __obj = js.Dynamic.literal()
-    if (appRoutes != null) __obj.updateDynamic("appRoutes")(appRoutes)
-    if (controller != null) __obj.updateDynamic("controller")(controller)
-    if (routes != null) __obj.updateDynamic("routes")(routes)
+    if (appRoutes != null) __obj.updateDynamic("appRoutes")(appRoutes.asInstanceOf[js.Any])
+    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
+    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppRouterOptions]
   }
 }

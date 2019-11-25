@@ -22,8 +22,5 @@ object Status extends js.Object {
   def foreachExt(repo: typings.nodegit.repositoryMod.Repository, opts: StatusOptions): js.Promise[Double] = js.native
   def foreachExt(repo: typings.nodegit.repositoryMod.Repository, opts: StatusOptions, callback: js.Function): js.Promise[Double] = js.native
   def shouldIgnore(ignored: Double, repo: typings.nodegit.repositoryMod.Repository, path: String): Double = js.native
-  type OPT = typings.nodegit.statusMod.Status.OPT
-  type SHOW = typings.nodegit.statusMod.Status.SHOW
-  type STATUS = typings.nodegit.statusMod.Status.STATUS
 }
 

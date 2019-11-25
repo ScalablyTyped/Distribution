@@ -17,7 +17,7 @@ trait Anon_IsRefresh extends js.Object {
 object Anon_IsRefresh {
   @scala.inline
   def apply(IsRefresh: Boolean, Map: XmlMap, Result: XlXmlImportResult, Wb: Workbook): Anon_IsRefresh = {
-    val __obj = js.Dynamic.literal(IsRefresh = IsRefresh, Map = Map, Result = Result, Wb = Wb)
+    val __obj = js.Dynamic.literal(IsRefresh = IsRefresh.asInstanceOf[js.Any], Map = Map.asInstanceOf[js.Any], Result = Result.asInstanceOf[js.Any], Wb = Wb.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsRefresh]
   }

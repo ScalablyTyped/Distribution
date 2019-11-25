@@ -23,7 +23,7 @@ object FeatureLayerGetFieldDomainOptions {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
   ): FeatureLayerGetFieldDomainOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, feature = feature, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[FeatureLayerGetFieldDomainOptions]
   }

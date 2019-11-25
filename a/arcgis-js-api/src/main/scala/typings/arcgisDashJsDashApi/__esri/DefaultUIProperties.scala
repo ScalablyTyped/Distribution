@@ -24,8 +24,8 @@ object DefaultUIProperties {
     view: MapViewProperties | SceneViewProperties = null
   ): DefaultUIProperties = {
     val __obj = js.Dynamic.literal()
-    if (components != null) __obj.updateDynamic("components")(components)
-    if (container != null) __obj.updateDynamic("container")(container)
+    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultUIProperties]

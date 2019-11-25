@@ -33,10 +33,10 @@ object GooglePrivacyDlpV2beta1LDiversityHistogramBucket {
     sensitiveValueFrequencyUpperBound: String = null
   ): GooglePrivacyDlpV2beta1LDiversityHistogramBucket = {
     val __obj = js.Dynamic.literal()
-    if (bucketSize != null) __obj.updateDynamic("bucketSize")(bucketSize)
-    if (bucketValues != null) __obj.updateDynamic("bucketValues")(bucketValues)
-    if (sensitiveValueFrequencyLowerBound != null) __obj.updateDynamic("sensitiveValueFrequencyLowerBound")(sensitiveValueFrequencyLowerBound)
-    if (sensitiveValueFrequencyUpperBound != null) __obj.updateDynamic("sensitiveValueFrequencyUpperBound")(sensitiveValueFrequencyUpperBound)
+    if (bucketSize != null) __obj.updateDynamic("bucketSize")(bucketSize.asInstanceOf[js.Any])
+    if (bucketValues != null) __obj.updateDynamic("bucketValues")(bucketValues.asInstanceOf[js.Any])
+    if (sensitiveValueFrequencyLowerBound != null) __obj.updateDynamic("sensitiveValueFrequencyLowerBound")(sensitiveValueFrequencyLowerBound.asInstanceOf[js.Any])
+    if (sensitiveValueFrequencyUpperBound != null) __obj.updateDynamic("sensitiveValueFrequencyUpperBound")(sensitiveValueFrequencyUpperBound.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1LDiversityHistogramBucket]
   }
 }

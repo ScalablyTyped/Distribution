@@ -34,10 +34,10 @@ object Image {
     thumbnail: Thumbnail = null
   ): Image = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (sourceImage != null) __obj.updateDynamic("sourceImage")(sourceImage)
-    if (stepId != null) __obj.updateDynamic("stepId")(stepId)
-    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (sourceImage != null) __obj.updateDynamic("sourceImage")(sourceImage.asInstanceOf[js.Any])
+    if (stepId != null) __obj.updateDynamic("stepId")(stepId.asInstanceOf[js.Any])
+    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }
 }

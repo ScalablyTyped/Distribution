@@ -14,8 +14,8 @@ object ToolbarSeparatorProps {
   @scala.inline
   def apply(className: String = null, style: CSSProperties = null): ToolbarSeparatorProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarSeparatorProps]
   }
 }

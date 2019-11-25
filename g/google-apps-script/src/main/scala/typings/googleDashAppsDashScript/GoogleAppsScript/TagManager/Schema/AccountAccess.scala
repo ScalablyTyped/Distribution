@@ -12,7 +12,7 @@ object AccountAccess {
   @scala.inline
   def apply(permission: String = null): AccountAccess = {
     val __obj = js.Dynamic.literal()
-    if (permission != null) __obj.updateDynamic("permission")(permission)
+    if (permission != null) __obj.updateDynamic("permission")(permission.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountAccess]
   }
 }

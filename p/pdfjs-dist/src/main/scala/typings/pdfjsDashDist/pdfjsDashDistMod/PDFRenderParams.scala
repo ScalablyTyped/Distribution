@@ -22,11 +22,11 @@ object PDFRenderParams {
     textLayer: PDFRenderTextLayer = null,
     viewport: PDFPageViewport = null
   ): PDFRenderParams = {
-    val __obj = js.Dynamic.literal(canvasContext = canvasContext)
+    val __obj = js.Dynamic.literal(canvasContext = canvasContext.asInstanceOf[js.Any])
     if (continueCallback != null) __obj.updateDynamic("continueCallback")(js.Any.fromFunction1(continueCallback))
-    if (imageLayer != null) __obj.updateDynamic("imageLayer")(imageLayer)
-    if (textLayer != null) __obj.updateDynamic("textLayer")(textLayer)
-    if (viewport != null) __obj.updateDynamic("viewport")(viewport)
+    if (imageLayer != null) __obj.updateDynamic("imageLayer")(imageLayer.asInstanceOf[js.Any])
+    if (textLayer != null) __obj.updateDynamic("textLayer")(textLayer.asInstanceOf[js.Any])
+    if (viewport != null) __obj.updateDynamic("viewport")(viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFRenderParams]
   }
 }

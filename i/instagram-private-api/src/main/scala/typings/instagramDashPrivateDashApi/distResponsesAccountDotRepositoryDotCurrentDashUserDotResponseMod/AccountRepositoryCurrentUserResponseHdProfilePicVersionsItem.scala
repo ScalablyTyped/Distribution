@@ -13,7 +13,7 @@ trait AccountRepositoryCurrentUserResponseHdProfilePicVersionsItem extends js.Ob
 object AccountRepositoryCurrentUserResponseHdProfilePicVersionsItem {
   @scala.inline
   def apply(height: Double, url: String, width: Double): AccountRepositoryCurrentUserResponseHdProfilePicVersionsItem = {
-    val __obj = js.Dynamic.literal(height = height, url = url, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AccountRepositoryCurrentUserResponseHdProfilePicVersionsItem]
   }

@@ -46,8 +46,8 @@ object atUifabricFoundationMod extends js.Object {
   def getControlledDerivedProps[TProps, TProp /* <: String */](
     props: TProps,
     propName: TProp,
-    derivedValue: /* import warning: ImportType.apply Failed type conversion: TProps[TProp] */ js.Any
-  ): /* import warning: ImportType.apply Failed type conversion: TProps[TProp] */ js.Any = js.native
+    derivedValue: /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any
+  ): /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any = js.native
   def getSlots[TComponentProps /* <: ISlottableProps[TComponentSlots] */, TComponentSlots](userProps: TComponentProps, slots: ISlotDefinition[Required[TComponentSlots]]): ISlots[Required[TComponentSlots]] = js.native
   def legacyStyled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
     Component: ComponentClass[TComponentProps, ComponentState],
@@ -95,21 +95,21 @@ object atUifabricFoundationMod extends js.Object {
   ): StatelessComponent[TComponentProps] = js.native
   def useControlledState[TProps, TProp /* <: String */, TDefaultProp /* <: String */](props: TProps, propName: TProp): js.Tuple2[
     js.UndefOr[
-      /* import warning: ImportType.apply Failed type conversion: TProps[TProp] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any
     ], 
     Dispatch[
       SetStateAction[
-        /* import warning: ImportType.apply Failed type conversion: TProps[TProp] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any
       ]
     ]
   ] = js.native
   def useControlledState[TProps, TProp /* <: String */, TDefaultProp /* <: String */](props: TProps, propName: TProp, options: IControlledStateOptions[TProps, TProp, TDefaultProp]): js.Tuple2[
     js.UndefOr[
-      /* import warning: ImportType.apply Failed type conversion: TProps[TProp] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any
     ], 
     Dispatch[
       SetStateAction[
-        /* import warning: ImportType.apply Failed type conversion: TProps[TProp] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any
       ]
     ]
   ] = js.native

@@ -23,8 +23,8 @@ object ListResponse {
     create_time: String = null,
     total_count: Int | Double = null
   ): ListResponse = {
-    val __obj = js.Dynamic.literal(count = count, httpStatusCode = httpStatusCode, next_id = next_id, payments = payments)
-    if (create_time != null) __obj.updateDynamic("create_time")(create_time)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], httpStatusCode = httpStatusCode.asInstanceOf[js.Any], next_id = next_id.asInstanceOf[js.Any], payments = payments.asInstanceOf[js.Any])
+    if (create_time != null) __obj.updateDynamic("create_time")(create_time.asInstanceOf[js.Any])
     if (total_count != null) __obj.updateDynamic("total_count")(total_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResponse]
   }

@@ -41,7 +41,7 @@ object Anon_ArgsClassName {
     style: Requireable[js.Object],
     value: Requireable[Moment]
   ): Anon_ArgsClassName = {
-    val __obj = js.Dynamic.literal(className = className, dateCellRender = dateCellRender, dateFullCellRender = dateFullCellRender, fullscreen = fullscreen, headerRender = headerRender, locale = locale, monthCellRender = monthCellRender, monthFullCellRender = monthFullCellRender, onChange = onChange, onPanelChange = onPanelChange, onSelect = onSelect, prefixCls = prefixCls, style = style, value = value)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], dateCellRender = dateCellRender.asInstanceOf[js.Any], dateFullCellRender = dateFullCellRender.asInstanceOf[js.Any], fullscreen = fullscreen.asInstanceOf[js.Any], headerRender = headerRender.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], monthCellRender = monthCellRender.asInstanceOf[js.Any], monthFullCellRender = monthFullCellRender.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any], onPanelChange = onPanelChange.asInstanceOf[js.Any], onSelect = onSelect.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ArgsClassName]
   }

@@ -13,7 +13,7 @@ trait ParserArgument extends js.Object {
 object ParserArgument {
   @scala.inline
   def apply(cmd: Anon_Averagespeed, raw: String): ParserArgument = {
-    val __obj = js.Dynamic.literal(cmd = cmd, raw = raw)
+    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ParserArgument]
   }

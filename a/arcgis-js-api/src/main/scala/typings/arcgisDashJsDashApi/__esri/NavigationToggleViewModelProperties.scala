@@ -31,8 +31,8 @@ object NavigationToggleViewModelProperties {
   @scala.inline
   def apply(navigationMode: String = null, view: SceneViewProperties = null): NavigationToggleViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (navigationMode != null) __obj.updateDynamic("navigationMode")(navigationMode)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (navigationMode != null) __obj.updateDynamic("navigationMode")(navigationMode.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationToggleViewModelProperties]
   }
 }

@@ -33,5 +33,64 @@ import scala.scalajs.js.annotation._
   - typings.swiper.swiperStrings.setTransition
   - typings.swiper.swiperStrings.resize
 */
-trait CommonEvent extends SwiperEvent
+trait CommonEvent extends js.Object
+
+object CommonEvent {
+  @scala.inline
+  def beforeDestroy: typings.swiper.swiperStrings.beforeDestroy = this.cast("beforeDestroy")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def click: typings.swiper.swiperStrings.click = this.cast("click")
+  @scala.inline
+  def doubleTap: typings.swiper.swiperStrings.doubleTap = this.cast("doubleTap")
+  @scala.inline
+  def fromEdge: typings.swiper.swiperStrings.fromEdge = this.cast("fromEdge")
+  @scala.inline
+  def imagesReady: typings.swiper.swiperStrings.imagesReady = this.cast("imagesReady")
+  @scala.inline
+  def init: typings.swiper.swiperStrings.init = this.cast("init")
+  @scala.inline
+  def progress: typings.swiper.swiperStrings.progress = this.cast("progress")
+  @scala.inline
+  def reachBeginning: typings.swiper.swiperStrings.reachBeginning = this.cast("reachBeginning")
+  @scala.inline
+  def reachEnd: typings.swiper.swiperStrings.reachEnd = this.cast("reachEnd")
+  @scala.inline
+  def resize: typings.swiper.swiperStrings.resize = this.cast("resize")
+  @scala.inline
+  def setTransition: typings.swiper.swiperStrings.setTransition = this.cast("setTransition")
+  @scala.inline
+  def setTranslate: typings.swiper.swiperStrings.setTranslate = this.cast("setTranslate")
+  @scala.inline
+  def slideChange: typings.swiper.swiperStrings.slideChange = this.cast("slideChange")
+  @scala.inline
+  def slideChangeTransitionEnd: typings.swiper.swiperStrings.slideChangeTransitionEnd = this.cast("slideChangeTransitionEnd")
+  @scala.inline
+  def slideChangeTransitionStart: typings.swiper.swiperStrings.slideChangeTransitionStart = this.cast("slideChangeTransitionStart")
+  @scala.inline
+  def slideNextTransitionEnd: typings.swiper.swiperStrings.slideNextTransitionEnd = this.cast("slideNextTransitionEnd")
+  @scala.inline
+  def slideNextTransitionStart: typings.swiper.swiperStrings.slideNextTransitionStart = this.cast("slideNextTransitionStart")
+  @scala.inline
+  def slidePrevTransitionEnd: typings.swiper.swiperStrings.slidePrevTransitionEnd = this.cast("slidePrevTransitionEnd")
+  @scala.inline
+  def slidePrevTransitionStart: typings.swiper.swiperStrings.slidePrevTransitionStart = this.cast("slidePrevTransitionStart")
+  @scala.inline
+  def sliderMove: typings.swiper.swiperStrings.sliderMove = this.cast("sliderMove")
+  @scala.inline
+  def tap: typings.swiper.swiperStrings.tap = this.cast("tap")
+  @scala.inline
+  def touchEnd: typings.swiper.swiperStrings.touchEnd = this.cast("touchEnd")
+  @scala.inline
+  def touchMove: typings.swiper.swiperStrings.touchMove = this.cast("touchMove")
+  @scala.inline
+  def touchMoveOpposite: typings.swiper.swiperStrings.touchMoveOpposite = this.cast("touchMoveOpposite")
+  @scala.inline
+  def touchStart: typings.swiper.swiperStrings.touchStart = this.cast("touchStart")
+  @scala.inline
+  def transitionEnd: typings.swiper.swiperStrings.transitionEnd = this.cast("transitionEnd")
+  @scala.inline
+  def transitionStart: typings.swiper.swiperStrings.transitionStart = this.cast("transitionStart")
+}
 

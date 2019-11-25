@@ -37,18 +37,18 @@ object InitOptions {
     registerUser: js.UndefOr[Boolean] = js.undefined,
     useUser: APIUser = null
   ): InitOptions = {
-    val __obj = js.Dynamic.literal(systemKey = systemKey, systemSecret = systemSecret)
-    if (URI != null) __obj.updateDynamic("URI")(URI)
+    val __obj = js.Dynamic.literal(systemKey = systemKey.asInstanceOf[js.Any], systemSecret = systemSecret.asInstanceOf[js.Any])
+    if (URI != null) __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
     if (callTimeout != null) __obj.updateDynamic("callTimeout")(callTimeout.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
-    if (defaultQoS != null) __obj.updateDynamic("defaultQoS")(defaultQoS)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging)
+    if (defaultQoS != null) __obj.updateDynamic("defaultQoS")(defaultQoS.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
     if (messagingPort != null) __obj.updateDynamic("messagingPort")(messagingPort.asInstanceOf[js.Any])
-    if (messagingURI != null) __obj.updateDynamic("messagingURI")(messagingURI)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (!js.isUndefined(registerUser)) __obj.updateDynamic("registerUser")(registerUser)
-    if (useUser != null) __obj.updateDynamic("useUser")(useUser)
+    if (messagingURI != null) __obj.updateDynamic("messagingURI")(messagingURI.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (!js.isUndefined(registerUser)) __obj.updateDynamic("registerUser")(registerUser.asInstanceOf[js.Any])
+    if (useUser != null) __obj.updateDynamic("useUser")(useUser.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitOptions]
   }
 }

@@ -61,7 +61,7 @@ object GoogleApiYouTubeChannelResource {
     status: Anon_IsLinked,
     topicDetails: Anon_TopicIds
   ): GoogleApiYouTubeChannelResource = {
-    val __obj = js.Dynamic.literal(brandingSettings = brandingSettings, contentDetails = contentDetails, etag = etag, id = id, invideoPromotion = invideoPromotion, kind = kind, snippet = snippet, statistics = statistics, status = status, topicDetails = topicDetails)
+    val __obj = js.Dynamic.literal(brandingSettings = brandingSettings.asInstanceOf[js.Any], contentDetails = contentDetails.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], invideoPromotion = invideoPromotion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], snippet = snippet.asInstanceOf[js.Any], statistics = statistics.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], topicDetails = topicDetails.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GoogleApiYouTubeChannelResource]
   }

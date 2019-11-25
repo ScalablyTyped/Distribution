@@ -21,7 +21,7 @@ object ModuleInfo {
     libraryVersion: Version,
     manufacturerID: String
   ): ModuleInfo = {
-    val __obj = js.Dynamic.literal(cryptokiVersion = cryptokiVersion, flags = flags, libraryDescription = libraryDescription, libraryVersion = libraryVersion, manufacturerID = manufacturerID)
+    val __obj = js.Dynamic.literal(cryptokiVersion = cryptokiVersion.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], libraryDescription = libraryDescription.asInstanceOf[js.Any], libraryVersion = libraryVersion.asInstanceOf[js.Any], manufacturerID = manufacturerID.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ModuleInfo]
   }

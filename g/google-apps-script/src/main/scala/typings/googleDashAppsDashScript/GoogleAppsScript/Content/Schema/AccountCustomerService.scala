@@ -14,9 +14,9 @@ object AccountCustomerService {
   @scala.inline
   def apply(email: String = null, phoneNumber: String = null, url: String = null): AccountCustomerService = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountCustomerService]
   }
 }

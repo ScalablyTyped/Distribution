@@ -16,8 +16,8 @@ object IEntity {
   @scala.inline
   def apply(synonyms: js.Array[String] = null, value: String = null): IEntity = {
     val __obj = js.Dynamic.literal()
-    if (synonyms != null) __obj.updateDynamic("synonyms")(synonyms)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (synonyms != null) __obj.updateDynamic("synonyms")(synonyms.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEntity]
   }
 }

@@ -19,7 +19,7 @@ trait FlashOval extends js.Object {
 object FlashOval {
   @scala.inline
   def apply(closePath: Boolean, endAngle: Double, innerRadius: Double, startAngle: Double): FlashOval = {
-    val __obj = js.Dynamic.literal(closePath = closePath, endAngle = endAngle, innerRadius = innerRadius, startAngle = startAngle)
+    val __obj = js.Dynamic.literal(closePath = closePath.asInstanceOf[js.Any], endAngle = endAngle.asInstanceOf[js.Any], innerRadius = innerRadius.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FlashOval]
   }

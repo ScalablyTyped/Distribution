@@ -21,9 +21,9 @@ object Anon_Bankcode {
     bank_code: String = null,
     country: String = null
   ): Anon_Bankcode = {
-    val __obj = js.Dynamic.literal(fingerprint = fingerprint, last4 = last4, mandate_reference = mandate_reference)
-    if (bank_code != null) __obj.updateDynamic("bank_code")(bank_code)
-    if (country != null) __obj.updateDynamic("country")(country)
+    val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], mandate_reference = mandate_reference.asInstanceOf[js.Any])
+    if (bank_code != null) __obj.updateDynamic("bank_code")(bank_code.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bankcode]
   }
 }

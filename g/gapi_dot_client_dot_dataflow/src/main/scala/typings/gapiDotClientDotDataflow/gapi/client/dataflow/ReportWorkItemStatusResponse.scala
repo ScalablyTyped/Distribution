@@ -18,7 +18,7 @@ object ReportWorkItemStatusResponse {
   @scala.inline
   def apply(workItemServiceStates: js.Array[WorkItemServiceState] = null): ReportWorkItemStatusResponse = {
     val __obj = js.Dynamic.literal()
-    if (workItemServiceStates != null) __obj.updateDynamic("workItemServiceStates")(workItemServiceStates)
+    if (workItemServiceStates != null) __obj.updateDynamic("workItemServiceStates")(workItemServiceStates.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportWorkItemStatusResponse]
   }
 }

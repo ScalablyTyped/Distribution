@@ -24,7 +24,7 @@ object Anon_HorizontalRatio {
     right: Double,
     verticalRatio: Double
   ): Anon_HorizontalRatio = {
-    val __obj = js.Dynamic.literal(horizontalRatio = horizontalRatio, left = left, pageNumber = pageNumber, pageOrientation = pageOrientation, right = right, verticalRatio = verticalRatio)
+    val __obj = js.Dynamic.literal(horizontalRatio = horizontalRatio.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], pageNumber = pageNumber.asInstanceOf[js.Any], pageOrientation = pageOrientation.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], verticalRatio = verticalRatio.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HorizontalRatio]
   }

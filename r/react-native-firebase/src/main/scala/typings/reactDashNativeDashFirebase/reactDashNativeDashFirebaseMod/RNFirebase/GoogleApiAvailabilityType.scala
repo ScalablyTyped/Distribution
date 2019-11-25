@@ -19,9 +19,9 @@ object GoogleApiAvailabilityType {
     error: String = null,
     isUserResolvableError: js.UndefOr[Boolean] = js.undefined
   ): GoogleApiAvailabilityType = {
-    val __obj = js.Dynamic.literal(isAvailable = isAvailable, status = status)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (!js.isUndefined(isUserResolvableError)) __obj.updateDynamic("isUserResolvableError")(isUserResolvableError)
+    val __obj = js.Dynamic.literal(isAvailable = isAvailable.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUserResolvableError)) __obj.updateDynamic("isUserResolvableError")(isUserResolvableError.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleApiAvailabilityType]
   }
 }

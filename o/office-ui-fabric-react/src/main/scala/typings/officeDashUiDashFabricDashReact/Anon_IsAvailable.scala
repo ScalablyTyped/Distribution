@@ -23,7 +23,7 @@ object Anon_IsAvailable {
     isDoNotDisturb: Boolean,
     isOffline: Boolean
   ): Anon_IsAvailable = {
-    val __obj = js.Dynamic.literal(isAvailable = isAvailable, isAway = isAway, isBlocked = isBlocked, isBusy = isBusy, isDoNotDisturb = isDoNotDisturb, isOffline = isOffline)
+    val __obj = js.Dynamic.literal(isAvailable = isAvailable.asInstanceOf[js.Any], isAway = isAway.asInstanceOf[js.Any], isBlocked = isBlocked.asInstanceOf[js.Any], isBusy = isBusy.asInstanceOf[js.Any], isDoNotDisturb = isDoNotDisturb.asInstanceOf[js.Any], isOffline = isOffline.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsAvailable]
   }

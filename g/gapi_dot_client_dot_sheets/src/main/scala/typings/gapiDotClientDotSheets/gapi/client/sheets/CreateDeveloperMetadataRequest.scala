@@ -13,7 +13,7 @@ object CreateDeveloperMetadataRequest {
   @scala.inline
   def apply(developerMetadata: DeveloperMetadata = null): CreateDeveloperMetadataRequest = {
     val __obj = js.Dynamic.literal()
-    if (developerMetadata != null) __obj.updateDynamic("developerMetadata")(developerMetadata)
+    if (developerMetadata != null) __obj.updateDynamic("developerMetadata")(developerMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDeveloperMetadataRequest]
   }
 }

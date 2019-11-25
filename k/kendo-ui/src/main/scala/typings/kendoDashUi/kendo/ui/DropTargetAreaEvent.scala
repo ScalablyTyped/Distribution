@@ -11,7 +11,7 @@ trait DropTargetAreaEvent extends js.Object {
 object DropTargetAreaEvent {
   @scala.inline
   def apply(sender: DropTargetArea): DropTargetAreaEvent = {
-    val __obj = js.Dynamic.literal(sender = sender)
+    val __obj = js.Dynamic.literal(sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DropTargetAreaEvent]
   }

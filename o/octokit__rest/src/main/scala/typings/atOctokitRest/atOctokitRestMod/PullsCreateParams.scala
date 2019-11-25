@@ -45,10 +45,10 @@ object PullsCreateParams {
     draft: js.UndefOr[Boolean] = js.undefined,
     maintainer_can_modify: js.UndefOr[Boolean] = js.undefined
   ): PullsCreateParams = {
-    val __obj = js.Dynamic.literal(base = base, head = head, owner = owner, repo = repo, title = title)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (!js.isUndefined(draft)) __obj.updateDynamic("draft")(draft)
-    if (!js.isUndefined(maintainer_can_modify)) __obj.updateDynamic("maintainer_can_modify")(maintainer_can_modify)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (!js.isUndefined(draft)) __obj.updateDynamic("draft")(draft.asInstanceOf[js.Any])
+    if (!js.isUndefined(maintainer_can_modify)) __obj.updateDynamic("maintainer_can_modify")(maintainer_can_modify.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullsCreateParams]
   }
 }

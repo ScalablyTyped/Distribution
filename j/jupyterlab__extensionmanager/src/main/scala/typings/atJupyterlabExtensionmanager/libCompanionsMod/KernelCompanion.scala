@@ -19,7 +19,7 @@ trait KernelCompanion extends js.Object {
 object KernelCompanion {
   @scala.inline
   def apply(kernelInfo: IKernelInstallInfo, kernels: js.Array[ISpecModel]): KernelCompanion = {
-    val __obj = js.Dynamic.literal(kernelInfo = kernelInfo, kernels = kernels)
+    val __obj = js.Dynamic.literal(kernelInfo = kernelInfo.asInstanceOf[js.Any], kernels = kernels.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KernelCompanion]
   }

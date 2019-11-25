@@ -16,9 +16,9 @@ object Anon_As {
   @scala.inline
   def apply(as: String = null, scope: QueryParamScopeTypes = null, `type`: QueryParamTypes = null): Anon_As = {
     val __obj = js.Dynamic.literal()
-    if (as != null) __obj.updateDynamic("as")(as)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_As]
   }
 }

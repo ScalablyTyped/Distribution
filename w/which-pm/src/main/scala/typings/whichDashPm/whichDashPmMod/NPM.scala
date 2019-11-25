@@ -12,7 +12,7 @@ trait NPM extends Result {
 object NPM {
   @scala.inline
   def apply(name: npm): NPM = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NPM]
   }

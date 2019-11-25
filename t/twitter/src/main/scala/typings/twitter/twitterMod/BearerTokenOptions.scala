@@ -22,13 +22,13 @@ object BearerTokenOptions {
     stream_base: String = null,
     user_stream_base: String = null
   ): BearerTokenOptions = {
-    val __obj = js.Dynamic.literal(bearer_token = bearer_token, consumer_key = consumer_key, consumer_secret = consumer_secret)
-    if (media_base != null) __obj.updateDynamic("media_base")(media_base)
-    if (request_options != null) __obj.updateDynamic("request_options")(request_options)
-    if (rest_base != null) __obj.updateDynamic("rest_base")(rest_base)
-    if (site_stream_base != null) __obj.updateDynamic("site_stream_base")(site_stream_base)
-    if (stream_base != null) __obj.updateDynamic("stream_base")(stream_base)
-    if (user_stream_base != null) __obj.updateDynamic("user_stream_base")(user_stream_base)
+    val __obj = js.Dynamic.literal(bearer_token = bearer_token.asInstanceOf[js.Any], consumer_key = consumer_key.asInstanceOf[js.Any], consumer_secret = consumer_secret.asInstanceOf[js.Any])
+    if (media_base != null) __obj.updateDynamic("media_base")(media_base.asInstanceOf[js.Any])
+    if (request_options != null) __obj.updateDynamic("request_options")(request_options.asInstanceOf[js.Any])
+    if (rest_base != null) __obj.updateDynamic("rest_base")(rest_base.asInstanceOf[js.Any])
+    if (site_stream_base != null) __obj.updateDynamic("site_stream_base")(site_stream_base.asInstanceOf[js.Any])
+    if (stream_base != null) __obj.updateDynamic("stream_base")(stream_base.asInstanceOf[js.Any])
+    if (user_stream_base != null) __obj.updateDynamic("user_stream_base")(user_stream_base.asInstanceOf[js.Any])
     __obj.asInstanceOf[BearerTokenOptions]
   }
 }

@@ -19,9 +19,9 @@ object JQueryDrawerOptions {
     showOverlay: js.UndefOr[Boolean] = js.undefined
   ): JQueryDrawerOptions = {
     val __obj = js.Dynamic.literal()
-    if (`class` != null) __obj.updateDynamic("class")(`class`)
-    if (iscroll != null) __obj.updateDynamic("iscroll")(iscroll)
-    if (!js.isUndefined(showOverlay)) __obj.updateDynamic("showOverlay")(showOverlay)
+    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
+    if (iscroll != null) __obj.updateDynamic("iscroll")(iscroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOverlay)) __obj.updateDynamic("showOverlay")(showOverlay.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryDrawerOptions]
   }
 }

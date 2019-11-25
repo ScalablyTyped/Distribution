@@ -22,8 +22,8 @@ object MessageActionEvent {
     timetoken: String,
     subscription: String = null
   ): MessageActionEvent = {
-    val __obj = js.Dynamic.literal(channel = channel, message = message, publisher = publisher, timetoken = timetoken)
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], publisher = publisher.asInstanceOf[js.Any], timetoken = timetoken.asInstanceOf[js.Any])
+    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageActionEvent]
   }
 }

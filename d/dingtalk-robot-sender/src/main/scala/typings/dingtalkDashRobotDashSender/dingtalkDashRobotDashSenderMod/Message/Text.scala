@@ -17,8 +17,8 @@ trait Text extends MessageType {
 object Text {
   @scala.inline
   def apply(msgtype: text, text: Anon_Content, at: Anon_AtMobiles = null): Text = {
-    val __obj = js.Dynamic.literal(msgtype = msgtype, text = text)
-    if (at != null) __obj.updateDynamic("at")(at)
+    val __obj = js.Dynamic.literal(msgtype = msgtype.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    if (at != null) __obj.updateDynamic("at")(at.asInstanceOf[js.Any])
     __obj.asInstanceOf[Text]
   }
 }

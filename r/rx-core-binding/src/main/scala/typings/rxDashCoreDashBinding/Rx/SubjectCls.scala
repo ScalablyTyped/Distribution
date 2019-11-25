@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Rx.Subject")
 @js.native
-class SubjectCls[T] () extends Subject[T] {
+class SubjectCls[T] () extends ISubject[T] {
   /* CompleteClass */
   override def checked(): Observer[_] = js.native
   /* CompleteClass */

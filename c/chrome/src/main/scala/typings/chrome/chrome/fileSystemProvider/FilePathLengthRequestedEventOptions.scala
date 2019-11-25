@@ -12,7 +12,7 @@ trait FilePathLengthRequestedEventOptions extends FilePathRequestedEventOptions 
 object FilePathLengthRequestedEventOptions {
   @scala.inline
   def apply(filePath: String, fileSystemId: String, length: Double, requestId: Double): FilePathLengthRequestedEventOptions = {
-    val __obj = js.Dynamic.literal(filePath = filePath, fileSystemId = fileSystemId, length = length, requestId = requestId)
+    val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FilePathLengthRequestedEventOptions]
   }

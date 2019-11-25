@@ -36,14 +36,14 @@ object Task {
     tag: String = null
   ): Task = {
     val __obj = js.Dynamic.literal()
-    if (enqueueTimestamp != null) __obj.updateDynamic("enqueueTimestamp")(enqueueTimestamp)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (leaseTimestamp != null) __obj.updateDynamic("leaseTimestamp")(leaseTimestamp)
-    if (payloadBase64 != null) __obj.updateDynamic("payloadBase64")(payloadBase64)
-    if (queueName != null) __obj.updateDynamic("queueName")(queueName)
+    if (enqueueTimestamp != null) __obj.updateDynamic("enqueueTimestamp")(enqueueTimestamp.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (leaseTimestamp != null) __obj.updateDynamic("leaseTimestamp")(leaseTimestamp.asInstanceOf[js.Any])
+    if (payloadBase64 != null) __obj.updateDynamic("payloadBase64")(payloadBase64.asInstanceOf[js.Any])
+    if (queueName != null) __obj.updateDynamic("queueName")(queueName.asInstanceOf[js.Any])
     if (retry_count != null) __obj.updateDynamic("retry_count")(retry_count.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Task]
   }
 }

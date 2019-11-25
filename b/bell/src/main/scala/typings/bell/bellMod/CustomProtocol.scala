@@ -29,9 +29,9 @@ trait CustomProtocol extends js.Object {
 object CustomProtocol {
   @scala.inline
   def apply(auth: String, token: String, headers: StringDictionary[String] = null, name: String = null): CustomProtocol = {
-    val __obj = js.Dynamic.literal(auth = auth, token = token)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomProtocol]
   }
 }

@@ -3,28 +3,41 @@ package typings.reactDashGamepad
 import typings.reactDashGamepad.reactDashGamepadMod.Axis
 import typings.reactDashGamepad.reactDashGamepadMod.Button
 import typings.reactDashGamepad.reactDashGamepadMod.InvertedAxis
+import typings.reactDashGamepad.reactDashGamepadMod.InvertibleAxis
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashGamepadStrings {
   @js.native
-  sealed trait `-LeftStickX` extends InvertedAxis
+  sealed trait `-LeftStickX`
+    extends InvertedAxis
+       with InvertibleAxis
   
   @js.native
-  sealed trait `-LeftStickY` extends InvertedAxis
+  sealed trait `-LeftStickY`
+    extends InvertedAxis
+       with InvertibleAxis
   
   @js.native
-  sealed trait `-LeftTrigger` extends InvertedAxis
+  sealed trait `-LeftTrigger`
+    extends InvertedAxis
+       with InvertibleAxis
   
   @js.native
-  sealed trait `-RightStickX` extends InvertedAxis
+  sealed trait `-RightStickX`
+    extends InvertedAxis
+       with InvertibleAxis
   
   @js.native
-  sealed trait `-RightStickY` extends InvertedAxis
+  sealed trait `-RightStickY`
+    extends InvertedAxis
+       with InvertibleAxis
   
   @js.native
-  sealed trait `-RightTrigger` extends InvertedAxis
+  sealed trait `-RightTrigger`
+    extends InvertedAxis
+       with InvertibleAxis
   
   @js.native
   sealed trait A extends Button
@@ -57,13 +70,19 @@ object reactDashGamepadStrings {
   sealed trait LT extends Button
   
   @js.native
-  sealed trait LeftStickX extends Axis
+  sealed trait LeftStickX
+    extends Axis
+       with InvertibleAxis
   
   @js.native
-  sealed trait LeftStickY extends Axis
+  sealed trait LeftStickY
+    extends Axis
+       with InvertibleAxis
   
   @js.native
-  sealed trait LeftTrigger extends Axis
+  sealed trait LeftTrigger
+    extends Axis
+       with InvertibleAxis
   
   @js.native
   sealed trait RB extends Button
@@ -75,13 +94,19 @@ object reactDashGamepadStrings {
   sealed trait RT extends Button
   
   @js.native
-  sealed trait RightStickX extends Axis
+  sealed trait RightStickX
+    extends Axis
+       with InvertibleAxis
   
   @js.native
-  sealed trait RightStickY extends Axis
+  sealed trait RightStickY
+    extends Axis
+       with InvertibleAxis
   
   @js.native
-  sealed trait RightTrigger extends Axis
+  sealed trait RightTrigger
+    extends Axis
+       with InvertibleAxis
   
   @js.native
   sealed trait Start extends Button

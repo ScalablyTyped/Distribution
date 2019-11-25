@@ -22,8 +22,8 @@ object LegacyToolbarButtonEvent {
     threadView: ThreadView,
     dropdown: DropdownView = null
   ): LegacyToolbarButtonEvent = {
-    val __obj = js.Dynamic.literal(selectedThreadRowViews = selectedThreadRowViews, threadRowViews = threadRowViews, threadView = threadView)
-    if (dropdown != null) __obj.updateDynamic("dropdown")(dropdown)
+    val __obj = js.Dynamic.literal(selectedThreadRowViews = selectedThreadRowViews.asInstanceOf[js.Any], threadRowViews = threadRowViews.asInstanceOf[js.Any], threadView = threadView.asInstanceOf[js.Any])
+    if (dropdown != null) __obj.updateDynamic("dropdown")(dropdown.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegacyToolbarButtonEvent]
   }
 }

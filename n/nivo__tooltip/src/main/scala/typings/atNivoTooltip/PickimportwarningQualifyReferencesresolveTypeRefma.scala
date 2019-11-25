@@ -12,7 +12,7 @@ trait PickimportwarningQualifyReferencesresolveTypeRefma extends js.Object {
 object PickimportwarningQualifyReferencesresolveTypeRefma {
   @scala.inline
   def apply(tooltip: js.Any): PickimportwarningQualifyReferencesresolveTypeRefma = {
-    val __obj = js.Dynamic.literal(tooltip = tooltip)
+    val __obj = js.Dynamic.literal(tooltip = tooltip.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PickimportwarningQualifyReferencesresolveTypeRefma]
   }

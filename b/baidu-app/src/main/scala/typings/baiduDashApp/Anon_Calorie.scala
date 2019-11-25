@@ -16,7 +16,7 @@ trait Anon_Calorie extends js.Object {
 object Anon_Calorie {
   @scala.inline
   def apply(calorie: Double, name: String, probability: Double): Anon_Calorie = {
-    val __obj = js.Dynamic.literal(calorie = calorie, name = name, probability = probability)
+    val __obj = js.Dynamic.literal(calorie = calorie.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], probability = probability.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Calorie]
   }

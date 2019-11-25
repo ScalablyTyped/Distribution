@@ -11,7 +11,7 @@ trait KnockoutControlsDescendantBindings extends js.Object {
 object KnockoutControlsDescendantBindings {
   @scala.inline
   def apply(controlsDescendantBindings: Boolean): KnockoutControlsDescendantBindings = {
-    val __obj = js.Dynamic.literal(controlsDescendantBindings = controlsDescendantBindings)
+    val __obj = js.Dynamic.literal(controlsDescendantBindings = controlsDescendantBindings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KnockoutControlsDescendantBindings]
   }

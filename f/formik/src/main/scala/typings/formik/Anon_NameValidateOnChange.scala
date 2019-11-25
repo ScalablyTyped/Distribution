@@ -12,8 +12,8 @@ trait Anon_NameValidateOnChange extends js.Object {
 object Anon_NameValidateOnChange {
   @scala.inline
   def apply(name: String, validateOnChange: js.UndefOr[Boolean] = js.undefined): Anon_NameValidateOnChange = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (!js.isUndefined(validateOnChange)) __obj.updateDynamic("validateOnChange")(validateOnChange)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateOnChange)) __obj.updateDynamic("validateOnChange")(validateOnChange.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NameValidateOnChange]
   }
 }

@@ -26,8 +26,8 @@ object _UnmarshalledAnalyticsConfiguration {
     StorageClassAnalysis: _UnmarshalledStorageClassAnalysis,
     Filter: _UnmarshalledAnalyticsFilter = null
   ): _UnmarshalledAnalyticsConfiguration = {
-    val __obj = js.Dynamic.literal(Id = Id, StorageClassAnalysis = StorageClassAnalysis)
-    if (Filter != null) __obj.updateDynamic("Filter")(Filter)
+    val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], StorageClassAnalysis = StorageClassAnalysis.asInstanceOf[js.Any])
+    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledAnalyticsConfiguration]
   }
 }

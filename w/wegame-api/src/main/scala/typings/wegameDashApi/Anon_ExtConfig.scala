@@ -14,7 +14,7 @@ trait Anon_ExtConfig extends js.Object {
 object Anon_ExtConfig {
   @scala.inline
   def apply(extConfig: js.Any): Anon_ExtConfig = {
-    val __obj = js.Dynamic.literal(extConfig = extConfig)
+    val __obj = js.Dynamic.literal(extConfig = extConfig.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ExtConfig]
   }

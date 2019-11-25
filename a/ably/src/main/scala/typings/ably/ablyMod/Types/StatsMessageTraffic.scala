@@ -19,7 +19,7 @@ object StatsMessageTraffic {
     rest: StatsMessageTypes,
     webhook: StatsMessageTypes
   ): StatsMessageTraffic = {
-    val __obj = js.Dynamic.literal(all = all, realtime = realtime, rest = rest, webhook = webhook)
+    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], realtime = realtime.asInstanceOf[js.Any], rest = rest.asInstanceOf[js.Any], webhook = webhook.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StatsMessageTraffic]
   }

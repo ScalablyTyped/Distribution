@@ -13,8 +13,8 @@ object SuggestedBullet {
   @scala.inline
   def apply(bullet: Bullet = null, bulletSuggestionState: BulletSuggestionState = null): SuggestedBullet = {
     val __obj = js.Dynamic.literal()
-    if (bullet != null) __obj.updateDynamic("bullet")(bullet)
-    if (bulletSuggestionState != null) __obj.updateDynamic("bulletSuggestionState")(bulletSuggestionState)
+    if (bullet != null) __obj.updateDynamic("bullet")(bullet.asInstanceOf[js.Any])
+    if (bulletSuggestionState != null) __obj.updateDynamic("bulletSuggestionState")(bulletSuggestionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestedBullet]
   }
 }

@@ -21,7 +21,7 @@ object ListOptions {
     title: String = null
   ): ListOptions = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOptions]
   }
 }

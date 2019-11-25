@@ -17,7 +17,7 @@ object ITaskAssignmentClassInfo {
     Clone: () => ITaskAssignmentClassInfo,
     SignatureForCompletion: ISignatureSettings
   ): ITaskAssignmentClassInfo = {
-    val __obj = js.Dynamic.literal(AnyAssigneeCompletes = AnyAssigneeCompletes, Clone = js.Any.fromFunction0(Clone), SignatureForCompletion = SignatureForCompletion)
+    val __obj = js.Dynamic.literal(AnyAssigneeCompletes = AnyAssigneeCompletes.asInstanceOf[js.Any], Clone = js.Any.fromFunction0(Clone), SignatureForCompletion = SignatureForCompletion.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITaskAssignmentClassInfo]
   }

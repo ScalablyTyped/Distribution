@@ -12,7 +12,7 @@ trait StoryBucket extends js.Object {
 object StoryBucket {
   @scala.inline
   def apply(kind: String, stories: js.Array[StoryObject]): StoryBucket = {
-    val __obj = js.Dynamic.literal(kind = kind, stories = stories)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], stories = stories.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StoryBucket]
   }

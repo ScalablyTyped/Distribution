@@ -19,7 +19,7 @@ object PolyMouseEvent {
     path: Int | Double = null,
     vertex: Int | Double = null
   ): PolyMouseEvent = {
-    val __obj = js.Dynamic.literal(latLng = latLng, stop = js.Any.fromFunction0(stop))
+    val __obj = js.Dynamic.literal(latLng = latLng.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop))
     if (edge != null) __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (vertex != null) __obj.updateDynamic("vertex")(vertex.asInstanceOf[js.Any])

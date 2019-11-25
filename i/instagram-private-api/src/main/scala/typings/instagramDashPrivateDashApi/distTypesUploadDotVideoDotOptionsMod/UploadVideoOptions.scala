@@ -32,13 +32,13 @@ object UploadVideoOptions {
     mediaType: String = null,
     uploadId: String = null
   ): UploadVideoOptions = {
-    val __obj = js.Dynamic.literal(duration = duration, height = height, video = video, width = width)
-    if (!js.isUndefined(forAlbum)) __obj.updateDynamic("forAlbum")(forAlbum)
-    if (!js.isUndefined(forDirectStory)) __obj.updateDynamic("forDirectStory")(forDirectStory)
-    if (!js.isUndefined(isDirect)) __obj.updateDynamic("isDirect")(isDirect)
-    if (!js.isUndefined(isSidecar)) __obj.updateDynamic("isSidecar")(isSidecar)
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType)
-    if (uploadId != null) __obj.updateDynamic("uploadId")(uploadId)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (!js.isUndefined(forAlbum)) __obj.updateDynamic("forAlbum")(forAlbum.asInstanceOf[js.Any])
+    if (!js.isUndefined(forDirectStory)) __obj.updateDynamic("forDirectStory")(forDirectStory.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDirect)) __obj.updateDynamic("isDirect")(isDirect.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSidecar)) __obj.updateDynamic("isSidecar")(isSidecar.asInstanceOf[js.Any])
+    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
+    if (uploadId != null) __obj.updateDynamic("uploadId")(uploadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadVideoOptions]
   }
 }

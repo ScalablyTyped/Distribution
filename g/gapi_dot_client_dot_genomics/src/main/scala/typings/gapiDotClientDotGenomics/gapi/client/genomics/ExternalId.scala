@@ -15,8 +15,8 @@ object ExternalId {
   @scala.inline
   def apply(id: String = null, sourceName: String = null): ExternalId = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (sourceName != null) __obj.updateDynamic("sourceName")(sourceName)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (sourceName != null) __obj.updateDynamic("sourceName")(sourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalId]
   }
 }

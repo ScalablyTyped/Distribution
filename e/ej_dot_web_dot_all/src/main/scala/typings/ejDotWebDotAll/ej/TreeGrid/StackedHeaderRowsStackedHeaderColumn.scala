@@ -37,11 +37,11 @@ object StackedHeaderRowsStackedHeaderColumn {
     tooltip: String = null
   ): StackedHeaderRowsStackedHeaderColumn = {
     val __obj = js.Dynamic.literal()
-    if (column != null) __obj.updateDynamic("column")(column)
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (headerText != null) __obj.updateDynamic("headerText")(headerText)
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
+    if (headerText != null) __obj.updateDynamic("headerText")(headerText.asInstanceOf[js.Any])
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackedHeaderRowsStackedHeaderColumn]
   }
 }

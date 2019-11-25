@@ -14,8 +14,8 @@ object PartialCommonColors {
   @scala.inline
   def apply(black: String = null, white: String = null): PartialCommonColors = {
     val __obj = js.Dynamic.literal()
-    if (black != null) __obj.updateDynamic("black")(black)
-    if (white != null) __obj.updateDynamic("white")(white)
+    if (black != null) __obj.updateDynamic("black")(black.asInstanceOf[js.Any])
+    if (white != null) __obj.updateDynamic("white")(white.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialCommonColors]
   }
 }

@@ -27,9 +27,9 @@ object BitLockerRemovableDrivePolicy {
     requireEncryptionForWriteAccess: js.UndefOr[Boolean] = js.undefined
   ): BitLockerRemovableDrivePolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blockCrossOrganizationWriteAccess)) __obj.updateDynamic("blockCrossOrganizationWriteAccess")(blockCrossOrganizationWriteAccess)
-    if (encryptionMethod != null) __obj.updateDynamic("encryptionMethod")(encryptionMethod)
-    if (!js.isUndefined(requireEncryptionForWriteAccess)) __obj.updateDynamic("requireEncryptionForWriteAccess")(requireEncryptionForWriteAccess)
+    if (!js.isUndefined(blockCrossOrganizationWriteAccess)) __obj.updateDynamic("blockCrossOrganizationWriteAccess")(blockCrossOrganizationWriteAccess.asInstanceOf[js.Any])
+    if (encryptionMethod != null) __obj.updateDynamic("encryptionMethod")(encryptionMethod.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireEncryptionForWriteAccess)) __obj.updateDynamic("requireEncryptionForWriteAccess")(requireEncryptionForWriteAccess.asInstanceOf[js.Any])
     __obj.asInstanceOf[BitLockerRemovableDrivePolicy]
   }
 }

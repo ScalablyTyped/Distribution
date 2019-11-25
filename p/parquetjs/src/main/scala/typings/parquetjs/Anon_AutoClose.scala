@@ -30,12 +30,12 @@ object Anon_AutoClose {
     start: Int | Double = null
   ): Anon_AutoClose = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose)
+    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.asInstanceOf[js.Any])
     if (bitWidth != null) __obj.updateDynamic("bitWidth")(bitWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableEnvelope)) __obj.updateDynamic("disableEnvelope")(disableEnvelope)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (!js.isUndefined(disableEnvelope)) __obj.updateDynamic("disableEnvelope")(disableEnvelope.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (fd != null) __obj.updateDynamic("fd")(fd.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags)
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (rowGroupSize != null) __obj.updateDynamic("rowGroupSize")(rowGroupSize.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])

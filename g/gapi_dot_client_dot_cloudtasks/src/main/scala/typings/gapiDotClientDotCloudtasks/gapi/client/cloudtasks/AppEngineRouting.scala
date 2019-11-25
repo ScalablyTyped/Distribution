@@ -117,10 +117,10 @@ object AppEngineRouting {
   @scala.inline
   def apply(host: String = null, instance: String = null, service: String = null, version: String = null): AppEngineRouting = {
     val __obj = js.Dynamic.literal()
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (instance != null) __obj.updateDynamic("instance")(instance)
-    if (service != null) __obj.updateDynamic("service")(service)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppEngineRouting]
   }
 }

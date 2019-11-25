@@ -14,9 +14,9 @@ object TableCellBorder {
   @scala.inline
   def apply(color: OptionalColor = null, dashStyle: String = null, width: Dimension = null): TableCellBorder = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle)
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCellBorder]
   }
 }

@@ -20,7 +20,7 @@ object HorizontalResizeParams {
     onResizeStart: Boolean => Unit,
     onResizing: Double => Unit
   ): HorizontalResizeParams = {
-    val __obj = js.Dynamic.literal(eResizeBar = eResizeBar, onResizeEnd = js.Any.fromFunction1(onResizeEnd), onResizeStart = js.Any.fromFunction1(onResizeStart), onResizing = js.Any.fromFunction1(onResizing))
+    val __obj = js.Dynamic.literal(eResizeBar = eResizeBar.asInstanceOf[js.Any], onResizeEnd = js.Any.fromFunction1(onResizeEnd), onResizeStart = js.Any.fromFunction1(onResizeStart), onResizing = js.Any.fromFunction1(onResizing))
   
     __obj.asInstanceOf[HorizontalResizeParams]
   }

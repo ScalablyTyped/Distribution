@@ -31,8 +31,8 @@ object RadiumConfig {
   ): RadiumConfig = {
     val __obj = js.Dynamic.literal()
     if (matchMedia != null) __obj.updateDynamic("matchMedia")(js.Any.fromFunction1(matchMedia))
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadiumConfig]
   }
 }

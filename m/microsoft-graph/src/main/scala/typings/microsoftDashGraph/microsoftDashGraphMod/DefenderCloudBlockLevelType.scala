@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait DefenderCloudBlockLevelType extends js.Object
 
+object DefenderCloudBlockLevelType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def high: typings.microsoftDashGraph.microsoftDashGraphStrings.high = this.cast("high")
+  @scala.inline
+  def highPlus: typings.microsoftDashGraph.microsoftDashGraphStrings.highPlus = this.cast("highPlus")
+  @scala.inline
+  def notConfigured: typings.microsoftDashGraph.microsoftDashGraphStrings.notConfigured = this.cast("notConfigured")
+  @scala.inline
+  def zeroTolerance: typings.microsoftDashGraph.microsoftDashGraphStrings.zeroTolerance = this.cast("zeroTolerance")
+}
+

@@ -35,7 +35,7 @@ trait Lifecycle extends js.Object {
 object Lifecycle {
   @scala.inline
   def apply(postStart: Handler, preStop: Handler): Lifecycle = {
-    val __obj = js.Dynamic.literal(postStart = postStart, preStop = preStop)
+    val __obj = js.Dynamic.literal(postStart = postStart.asInstanceOf[js.Any], preStop = preStop.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Lifecycle]
   }

@@ -12,7 +12,7 @@ trait Anon_WIFI extends js.Object {
 object Anon_WIFI {
   @scala.inline
   def apply(WI_FI: WiFi): Anon_WIFI = {
-    val __obj = js.Dynamic.literal(WI_FI = WI_FI)
+    val __obj = js.Dynamic.literal(WI_FI = WI_FI.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_WIFI]
   }

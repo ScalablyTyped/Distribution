@@ -23,9 +23,9 @@ object ChildrenPopulatedEventUIParam {
   @scala.inline
   def apply(id: js.Any = null, owner: js.Any = null, parentrow: String = null): ChildrenPopulatedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (parentrow != null) __obj.updateDynamic("parentrow")(parentrow)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (parentrow != null) __obj.updateDynamic("parentrow")(parentrow.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildrenPopulatedEventUIParam]
   }
 }

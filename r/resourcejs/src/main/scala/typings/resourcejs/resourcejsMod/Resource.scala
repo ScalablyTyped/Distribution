@@ -13,7 +13,7 @@ trait Resource extends js.Object {
 object Resource {
   @scala.inline
   def apply(error: Error, item: js.Any, status: Double): Resource = {
-    val __obj = js.Dynamic.literal(error = error, item = item, status = status)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Resource]
   }

@@ -123,20 +123,20 @@ object initializeConfig {
     urls: js.Any = null
   ): initializeConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoDisconnect)) __obj.updateDynamic("autoDisconnect")(autoDisconnect)
+    if (!js.isUndefined(autoDisconnect)) __obj.updateDynamic("autoDisconnect")(autoDisconnect.asInstanceOf[js.Any])
     if (backoffInterval != null) __obj.updateDynamic("backoffInterval")(backoffInterval.asInstanceOf[js.Any])
-    if (clientFrameUrl != null) __obj.updateDynamic("clientFrameUrl")(clientFrameUrl)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (clientFrameUrl != null) __obj.updateDynamic("clientFrameUrl")(clientFrameUrl.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1(onComplete))
     if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction1(onFailure))
     if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction1(onSuccess))
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
-    if (requestUrl != null) __obj.updateDynamic("requestUrl")(requestUrl)
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
+    if (requestUrl != null) __obj.updateDynamic("requestUrl")(requestUrl.asInstanceOf[js.Any])
     if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
-    if (stream != null) __obj.updateDynamic("stream")(stream)
+    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (urls != null) __obj.updateDynamic("urls")(urls)
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[initializeConfig]
   }
 }

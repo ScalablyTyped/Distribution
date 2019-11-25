@@ -54,14 +54,14 @@ object WorkItemServiceState {
     suggestedStopPosition: Position = null
   ): WorkItemServiceState = {
     val __obj = js.Dynamic.literal()
-    if (harnessData != null) __obj.updateDynamic("harnessData")(harnessData)
-    if (leaseExpireTime != null) __obj.updateDynamic("leaseExpireTime")(leaseExpireTime)
-    if (metricShortId != null) __obj.updateDynamic("metricShortId")(metricShortId)
-    if (nextReportIndex != null) __obj.updateDynamic("nextReportIndex")(nextReportIndex)
-    if (reportStatusInterval != null) __obj.updateDynamic("reportStatusInterval")(reportStatusInterval)
-    if (splitRequest != null) __obj.updateDynamic("splitRequest")(splitRequest)
-    if (suggestedStopPoint != null) __obj.updateDynamic("suggestedStopPoint")(suggestedStopPoint)
-    if (suggestedStopPosition != null) __obj.updateDynamic("suggestedStopPosition")(suggestedStopPosition)
+    if (harnessData != null) __obj.updateDynamic("harnessData")(harnessData.asInstanceOf[js.Any])
+    if (leaseExpireTime != null) __obj.updateDynamic("leaseExpireTime")(leaseExpireTime.asInstanceOf[js.Any])
+    if (metricShortId != null) __obj.updateDynamic("metricShortId")(metricShortId.asInstanceOf[js.Any])
+    if (nextReportIndex != null) __obj.updateDynamic("nextReportIndex")(nextReportIndex.asInstanceOf[js.Any])
+    if (reportStatusInterval != null) __obj.updateDynamic("reportStatusInterval")(reportStatusInterval.asInstanceOf[js.Any])
+    if (splitRequest != null) __obj.updateDynamic("splitRequest")(splitRequest.asInstanceOf[js.Any])
+    if (suggestedStopPoint != null) __obj.updateDynamic("suggestedStopPoint")(suggestedStopPoint.asInstanceOf[js.Any])
+    if (suggestedStopPosition != null) __obj.updateDynamic("suggestedStopPosition")(suggestedStopPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemServiceState]
   }
 }

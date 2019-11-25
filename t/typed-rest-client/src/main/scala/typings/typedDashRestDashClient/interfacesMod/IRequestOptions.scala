@@ -37,17 +37,17 @@ object IRequestOptions {
     socketTimeout: Int | Double = null
   ): IRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowRedirects)) __obj.updateDynamic("allowRedirects")(allowRedirects)
-    if (!js.isUndefined(allowRetries)) __obj.updateDynamic("allowRetries")(allowRetries)
-    if (cert != null) __obj.updateDynamic("cert")(cert)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(ignoreSslError)) __obj.updateDynamic("ignoreSslError")(ignoreSslError)
-    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive)
+    if (!js.isUndefined(allowRedirects)) __obj.updateDynamic("allowRedirects")(allowRedirects.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowRetries)) __obj.updateDynamic("allowRetries")(allowRetries.asInstanceOf[js.Any])
+    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreSslError)) __obj.updateDynamic("ignoreSslError")(ignoreSslError.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
     if (maxRedirects != null) __obj.updateDynamic("maxRedirects")(maxRedirects.asInstanceOf[js.Any])
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
     if (maxSockets != null) __obj.updateDynamic("maxSockets")(maxSockets.asInstanceOf[js.Any])
-    if (presignedUrlPatterns != null) __obj.updateDynamic("presignedUrlPatterns")(presignedUrlPatterns)
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (presignedUrlPatterns != null) __obj.updateDynamic("presignedUrlPatterns")(presignedUrlPatterns.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     if (socketTimeout != null) __obj.updateDynamic("socketTimeout")(socketTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRequestOptions]
   }

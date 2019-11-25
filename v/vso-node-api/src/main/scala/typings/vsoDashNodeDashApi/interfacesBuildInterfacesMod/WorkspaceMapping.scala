@@ -41,7 +41,7 @@ object WorkspaceMapping {
     serverItem: String,
     workspaceId: Double
   ): WorkspaceMapping = {
-    val __obj = js.Dynamic.literal(definitionUri = definitionUri, depth = depth, localItem = localItem, mappingType = mappingType, serverItem = serverItem, workspaceId = workspaceId)
+    val __obj = js.Dynamic.literal(definitionUri = definitionUri.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], localItem = localItem.asInstanceOf[js.Any], mappingType = mappingType.asInstanceOf[js.Any], serverItem = serverItem.asInstanceOf[js.Any], workspaceId = workspaceId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkspaceMapping]
   }

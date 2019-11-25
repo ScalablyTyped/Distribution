@@ -21,7 +21,7 @@ object Anon_AlignItemsBackgroundColorFlexDirection {
     flexGrow: Double,
     paddingLeft: Double
   ): Anon_AlignItemsBackgroundColorFlexDirection = {
-    val __obj = js.Dynamic.literal(alignItems = alignItems, backgroundColor = backgroundColor, flexDirection = flexDirection, flexGrow = flexGrow, paddingLeft = paddingLeft)
+    val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], flexDirection = flexDirection.asInstanceOf[js.Any], flexGrow = flexGrow.asInstanceOf[js.Any], paddingLeft = paddingLeft.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AlignItemsBackgroundColorFlexDirection]
   }

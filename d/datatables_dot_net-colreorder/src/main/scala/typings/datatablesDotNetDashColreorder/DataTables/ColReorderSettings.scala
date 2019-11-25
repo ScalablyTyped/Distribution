@@ -39,8 +39,8 @@ object ColReorderSettings {
     val __obj = js.Dynamic.literal(reorderCallback = js.Any.fromFunction0(reorderCallback))
     if (fixedColumnsLeft != null) __obj.updateDynamic("fixedColumnsLeft")(fixedColumnsLeft.asInstanceOf[js.Any])
     if (fixedColumnsRight != null) __obj.updateDynamic("fixedColumnsRight")(fixedColumnsRight.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order)
-    if (!js.isUndefined(realtime)) __obj.updateDynamic("realtime")(realtime)
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (!js.isUndefined(realtime)) __obj.updateDynamic("realtime")(realtime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColReorderSettings]
   }
 }

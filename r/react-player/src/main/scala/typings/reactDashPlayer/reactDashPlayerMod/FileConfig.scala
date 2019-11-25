@@ -30,15 +30,15 @@ object FileConfig {
     tracks: js.Array[TrackProps] = null
   ): FileConfig = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (dashVersion != null) __obj.updateDynamic("dashVersion")(dashVersion)
-    if (!js.isUndefined(forceAudio)) __obj.updateDynamic("forceAudio")(forceAudio)
-    if (!js.isUndefined(forceDASH)) __obj.updateDynamic("forceDASH")(forceDASH)
-    if (!js.isUndefined(forceHLS)) __obj.updateDynamic("forceHLS")(forceHLS)
-    if (!js.isUndefined(forceVideo)) __obj.updateDynamic("forceVideo")(forceVideo)
-    if (hlsOptions != null) __obj.updateDynamic("hlsOptions")(hlsOptions)
-    if (hlsVersion != null) __obj.updateDynamic("hlsVersion")(hlsVersion)
-    if (tracks != null) __obj.updateDynamic("tracks")(tracks)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (dashVersion != null) __obj.updateDynamic("dashVersion")(dashVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceAudio)) __obj.updateDynamic("forceAudio")(forceAudio.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceDASH)) __obj.updateDynamic("forceDASH")(forceDASH.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceHLS)) __obj.updateDynamic("forceHLS")(forceHLS.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceVideo)) __obj.updateDynamic("forceVideo")(forceVideo.asInstanceOf[js.Any])
+    if (hlsOptions != null) __obj.updateDynamic("hlsOptions")(hlsOptions.asInstanceOf[js.Any])
+    if (hlsVersion != null) __obj.updateDynamic("hlsVersion")(hlsVersion.asInstanceOf[js.Any])
+    if (tracks != null) __obj.updateDynamic("tracks")(tracks.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileConfig]
   }
 }

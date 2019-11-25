@@ -36,9 +36,9 @@ object PlusWebviewWebviewLoadDataOptions {
   @scala.inline
   def apply(baseURL: String = null, encoding: String = null, mimeType: String = null): PlusWebviewWebviewLoadDataOptions = {
     val __obj = js.Dynamic.literal()
-    if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewLoadDataOptions]
   }
 }

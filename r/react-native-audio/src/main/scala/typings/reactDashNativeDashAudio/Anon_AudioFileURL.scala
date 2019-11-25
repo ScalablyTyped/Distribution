@@ -13,7 +13,7 @@ trait Anon_AudioFileURL extends js.Object {
 object Anon_AudioFileURL {
   @scala.inline
   def apply(audioFileURL: String, base64: String, status: String): Anon_AudioFileURL = {
-    val __obj = js.Dynamic.literal(audioFileURL = audioFileURL, base64 = base64, status = status)
+    val __obj = js.Dynamic.literal(audioFileURL = audioFileURL.asInstanceOf[js.Any], base64 = base64.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AudioFileURL]
   }

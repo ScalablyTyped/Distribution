@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WindowTransform extends Transforms {
+trait WindowTransform extends _Transforms {
   var as: js.UndefOr[(js.Array[String | SignalRef | Null]) | SignalRef] = js.undefined
   var fields: js.UndefOr[(js.Array[FieldRef | Null]) | SignalRef] = js.undefined
   var frame: js.UndefOr[(Vector2[Double | SignalRef | Null]) | SignalRef] = js.undefined
@@ -34,15 +34,15 @@ object WindowTransform {
     sort: Compare = null
   ): WindowTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
     if (groupby != null) __obj.updateDynamic("groupby")(groupby.asInstanceOf[js.Any])
     if (ignorePeers != null) __obj.updateDynamic("ignorePeers")(ignorePeers.asInstanceOf[js.Any])
-    if (ops != null) __obj.updateDynamic("ops")(ops)
+    if (ops != null) __obj.updateDynamic("ops")(ops.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowTransform]
   }
 }

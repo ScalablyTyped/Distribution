@@ -26,7 +26,7 @@ object Options {
     strategy: `dedicated-process` | `phantom-server`,
     timeout: Double
   ): Options = {
-    val __obj = js.Dynamic.literal(allowLocalFilesAccess = allowLocalFilesAccess, defaultPhantomjsVersion = defaultPhantomjsVersion, strategy = strategy.asInstanceOf[js.Any], timeout = timeout)
+    val __obj = js.Dynamic.literal(allowLocalFilesAccess = allowLocalFilesAccess.asInstanceOf[js.Any], defaultPhantomjsVersion = defaultPhantomjsVersion.asInstanceOf[js.Any], strategy = strategy.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

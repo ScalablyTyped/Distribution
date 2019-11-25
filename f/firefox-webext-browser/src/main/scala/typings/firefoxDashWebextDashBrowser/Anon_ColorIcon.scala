@@ -17,9 +17,9 @@ object Anon_ColorIcon {
   @scala.inline
   def apply(color: String = null, icon: String = null, name: String = null): Anon_ColorIcon = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorIcon]
   }
 }

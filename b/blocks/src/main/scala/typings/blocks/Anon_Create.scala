@@ -15,10 +15,10 @@ object Anon_Create {
   @scala.inline
   def apply(create: Anon_Url = null, destroy: Anon_Url = null, read: Anon_Url = null, update: Anon_Url = null): Anon_Create = {
     val __obj = js.Dynamic.literal()
-    if (create != null) __obj.updateDynamic("create")(create)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (read != null) __obj.updateDynamic("read")(read)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (create != null) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
+    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Create]
   }
 }

@@ -40,13 +40,13 @@ object GetSignedUrlConfig {
     version: v2 | v4 = null
   ): GetSignedUrlConfig = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any])
-    if (cname != null) __obj.updateDynamic("cname")(cname)
-    if (contentMd5 != null) __obj.updateDynamic("contentMd5")(contentMd5)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (extensionHeaders != null) __obj.updateDynamic("extensionHeaders")(extensionHeaders)
-    if (promptSaveAs != null) __obj.updateDynamic("promptSaveAs")(promptSaveAs)
-    if (responseDisposition != null) __obj.updateDynamic("responseDisposition")(responseDisposition)
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
+    if (cname != null) __obj.updateDynamic("cname")(cname.asInstanceOf[js.Any])
+    if (contentMd5 != null) __obj.updateDynamic("contentMd5")(contentMd5.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (extensionHeaders != null) __obj.updateDynamic("extensionHeaders")(extensionHeaders.asInstanceOf[js.Any])
+    if (promptSaveAs != null) __obj.updateDynamic("promptSaveAs")(promptSaveAs.asInstanceOf[js.Any])
+    if (responseDisposition != null) __obj.updateDynamic("responseDisposition")(responseDisposition.asInstanceOf[js.Any])
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSignedUrlConfig]
   }

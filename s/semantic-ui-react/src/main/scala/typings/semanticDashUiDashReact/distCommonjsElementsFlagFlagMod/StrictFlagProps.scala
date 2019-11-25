@@ -16,9 +16,9 @@ trait StrictFlagProps extends js.Object {
 object StrictFlagProps {
   @scala.inline
   def apply(name: FlagNameValues, as: js.Any = null, className: String = null): StrictFlagProps = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (as != null) __obj.updateDynamic("as")(as)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictFlagProps]
   }
 }

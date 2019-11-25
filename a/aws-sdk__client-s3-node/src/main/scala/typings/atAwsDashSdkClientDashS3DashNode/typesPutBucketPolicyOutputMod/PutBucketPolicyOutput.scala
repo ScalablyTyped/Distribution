@@ -14,7 +14,7 @@ trait PutBucketPolicyOutput
 object PutBucketPolicyOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): PutBucketPolicyOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PutBucketPolicyOutput]
   }

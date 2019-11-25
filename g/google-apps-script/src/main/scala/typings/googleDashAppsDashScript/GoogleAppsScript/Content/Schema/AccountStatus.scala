@@ -24,12 +24,12 @@ object AccountStatus {
     websiteClaimed: js.UndefOr[Boolean] = js.undefined
   ): AccountStatus = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (accountLevelIssues != null) __obj.updateDynamic("accountLevelIssues")(accountLevelIssues)
-    if (dataQualityIssues != null) __obj.updateDynamic("dataQualityIssues")(dataQualityIssues)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (products != null) __obj.updateDynamic("products")(products)
-    if (!js.isUndefined(websiteClaimed)) __obj.updateDynamic("websiteClaimed")(websiteClaimed)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (accountLevelIssues != null) __obj.updateDynamic("accountLevelIssues")(accountLevelIssues.asInstanceOf[js.Any])
+    if (dataQualityIssues != null) __obj.updateDynamic("dataQualityIssues")(dataQualityIssues.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (products != null) __obj.updateDynamic("products")(products.asInstanceOf[js.Any])
+    if (!js.isUndefined(websiteClaimed)) __obj.updateDynamic("websiteClaimed")(websiteClaimed.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountStatus]
   }
 }

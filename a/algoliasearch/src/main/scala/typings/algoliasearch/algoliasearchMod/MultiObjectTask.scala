@@ -14,7 +14,7 @@ trait MultiObjectTask extends js.Object {
 object MultiObjectTask {
   @scala.inline
   def apply(objectIDs: js.Array[String], taskID: Double): MultiObjectTask = {
-    val __obj = js.Dynamic.literal(objectIDs = objectIDs, taskID = taskID)
+    val __obj = js.Dynamic.literal(objectIDs = objectIDs.asInstanceOf[js.Any], taskID = taskID.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MultiObjectTask]
   }

@@ -30,12 +30,12 @@ object CsvParams {
     separator: String = null
   ): CsvParams = {
     val __obj = js.Dynamic.literal()
-    if (columnNames != null) __obj.updateDynamic("columnNames")(columnNames)
-    if (columnTypes != null) __obj.updateDynamic("columnTypes")(columnTypes)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (!js.isUndefined(firstLineAsColumnNames)) __obj.updateDynamic("firstLineAsColumnNames")(firstLineAsColumnNames)
-    if (quoteChar != null) __obj.updateDynamic("quoteChar")(quoteChar)
-    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (columnNames != null) __obj.updateDynamic("columnNames")(columnNames.asInstanceOf[js.Any])
+    if (columnTypes != null) __obj.updateDynamic("columnTypes")(columnTypes.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstLineAsColumnNames)) __obj.updateDynamic("firstLineAsColumnNames")(firstLineAsColumnNames.asInstanceOf[js.Any])
+    if (quoteChar != null) __obj.updateDynamic("quoteChar")(quoteChar.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[CsvParams]
   }
 }

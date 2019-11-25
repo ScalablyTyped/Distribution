@@ -14,7 +14,7 @@ object ISuggestions {
   @scala.inline
   def apply(suggestions: js.Array[ISuggestion] = null): ISuggestions = {
     val __obj = js.Dynamic.literal()
-    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions)
+    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISuggestions]
   }
 }

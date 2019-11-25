@@ -5,7 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object braintreeDashWebMod {
-  type HostedFieldsFieldDataFields = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type BraintreeError = BraintreeError_
+  type HostedFieldsFieldDataFields = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in braintree-web.braintree-web.HostedFieldsHostedFieldsFieldName ]: braintree-web.braintree-web.HostedFieldsHostedFieldsFieldData}
     */ typings.braintreeDashWeb.braintreeDashWebStrings.HostedFieldsFieldDataFields with js.Any
   /**

@@ -12,7 +12,7 @@ object Rejection {
   @scala.inline
   def apply(rejectReason: String = null): Rejection = {
     val __obj = js.Dynamic.literal()
-    if (rejectReason != null) __obj.updateDynamic("rejectReason")(rejectReason)
+    if (rejectReason != null) __obj.updateDynamic("rejectReason")(rejectReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rejection]
   }
 }

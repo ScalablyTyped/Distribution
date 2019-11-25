@@ -12,7 +12,7 @@ trait IBackgroundTaskRegistrationStatics extends js.Object {
 object IBackgroundTaskRegistrationStatics {
   @scala.inline
   def apply(allTasks: IMapView[String, IBackgroundTaskRegistration]): IBackgroundTaskRegistrationStatics = {
-    val __obj = js.Dynamic.literal(allTasks = allTasks)
+    val __obj = js.Dynamic.literal(allTasks = allTasks.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IBackgroundTaskRegistrationStatics]
   }

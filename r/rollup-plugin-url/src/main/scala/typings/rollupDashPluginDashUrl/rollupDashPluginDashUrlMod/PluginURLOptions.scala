@@ -28,14 +28,14 @@ object PluginURLOptions {
     sourceDir: String = null
   ): PluginURLOptions = {
     val __obj = js.Dynamic.literal()
-    if (destDist != null) __obj.updateDynamic("destDist")(destDist)
-    if (!js.isUndefined(emitFile)) __obj.updateDynamic("emitFile")(emitFile)
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (include != null) __obj.updateDynamic("include")(include)
+    if (destDist != null) __obj.updateDynamic("destDist")(destDist.asInstanceOf[js.Any])
+    if (!js.isUndefined(emitFile)) __obj.updateDynamic("emitFile")(emitFile.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath)
-    if (sourceDir != null) __obj.updateDynamic("sourceDir")(sourceDir)
+    if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath.asInstanceOf[js.Any])
+    if (sourceDir != null) __obj.updateDynamic("sourceDir")(sourceDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginURLOptions]
   }
 }

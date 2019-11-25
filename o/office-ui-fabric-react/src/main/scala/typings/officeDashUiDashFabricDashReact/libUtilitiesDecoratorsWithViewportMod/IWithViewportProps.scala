@@ -20,7 +20,7 @@ object IWithViewportProps {
   @scala.inline
   def apply(skipViewportMeasures: js.UndefOr[Boolean] = js.undefined): IWithViewportProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(skipViewportMeasures)) __obj.updateDynamic("skipViewportMeasures")(skipViewportMeasures)
+    if (!js.isUndefined(skipViewportMeasures)) __obj.updateDynamic("skipViewportMeasures")(skipViewportMeasures.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWithViewportProps]
   }
 }

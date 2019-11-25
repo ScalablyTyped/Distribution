@@ -13,7 +13,7 @@ trait BinaryAST extends AST {
 object BinaryAST {
   @scala.inline
   def apply(left: AST | Node, operator: Operator, right: AST | Node): BinaryAST = {
-    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator, right = right.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BinaryAST]
   }

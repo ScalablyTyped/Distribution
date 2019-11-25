@@ -32,8 +32,8 @@ object MapStore {
     verbose: Boolean,
     baseDir: String = null
   ): MapStore = {
-    val __obj = js.Dynamic.literal(data = data, dispose = js.Any.fromFunction0(dispose), registerMap = js.Any.fromFunction2(registerMap), registerURL = js.Any.fromFunction2(registerURL), sourceStore = sourceStore, transformCoverage = js.Any.fromFunction1(transformCoverage), verbose = verbose)
-    if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), registerMap = js.Any.fromFunction2(registerMap), registerURL = js.Any.fromFunction2(registerURL), sourceStore = sourceStore.asInstanceOf[js.Any], transformCoverage = js.Any.fromFunction1(transformCoverage), verbose = verbose.asInstanceOf[js.Any])
+    if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapStore]
   }
 }

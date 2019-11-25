@@ -15,9 +15,9 @@ object VideoRenderDimensions {
   @scala.inline
   def apply(high: Dimensions = null, low: Dimensions = null, standard: Dimensions = null): VideoRenderDimensions = {
     val __obj = js.Dynamic.literal()
-    if (high != null) __obj.updateDynamic("high")(high)
-    if (low != null) __obj.updateDynamic("low")(low)
-    if (standard != null) __obj.updateDynamic("standard")(standard)
+    if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
+    if (low != null) __obj.updateDynamic("low")(low.asInstanceOf[js.Any])
+    if (standard != null) __obj.updateDynamic("standard")(standard.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoRenderDimensions]
   }
 }

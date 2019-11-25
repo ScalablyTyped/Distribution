@@ -18,9 +18,9 @@ object SectionStyle {
     contentDirection: String = null
   ): SectionStyle = {
     val __obj = js.Dynamic.literal()
-    if (columnProperties != null) __obj.updateDynamic("columnProperties")(columnProperties)
-    if (columnSeparatorStyle != null) __obj.updateDynamic("columnSeparatorStyle")(columnSeparatorStyle)
-    if (contentDirection != null) __obj.updateDynamic("contentDirection")(contentDirection)
+    if (columnProperties != null) __obj.updateDynamic("columnProperties")(columnProperties.asInstanceOf[js.Any])
+    if (columnSeparatorStyle != null) __obj.updateDynamic("columnSeparatorStyle")(columnSeparatorStyle.asInstanceOf[js.Any])
+    if (contentDirection != null) __obj.updateDynamic("contentDirection")(contentDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[SectionStyle]
   }
 }

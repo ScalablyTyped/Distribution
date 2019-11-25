@@ -12,7 +12,7 @@ object IObservableObject {
   @scala.inline
   def apply(`observable-object`: IObservableObject): IObservableObject = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("observable-object")(`observable-object`)
+    __obj.updateDynamic("observable-object")(`observable-object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IObservableObject]
   }
 }

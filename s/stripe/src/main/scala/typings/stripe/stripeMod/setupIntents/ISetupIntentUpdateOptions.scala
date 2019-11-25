@@ -41,11 +41,11 @@ object ISetupIntentUpdateOptions {
     payment_method_types: js.Array[SetupIntentPaymentMethodType] = null
   ): ISetupIntentUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (customer != null) __obj.updateDynamic("customer")(customer)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method)
-    if (payment_method_types != null) __obj.updateDynamic("payment_method_types")(payment_method_types)
+    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
+    if (payment_method_types != null) __obj.updateDynamic("payment_method_types")(payment_method_types.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISetupIntentUpdateOptions]
   }
 }

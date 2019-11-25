@@ -20,8 +20,8 @@ trait SelectObjectContentOutput
 object SelectObjectContentOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, Payload: _UnmarshalledSelectObjectContentEventStream = null): SelectObjectContentOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Payload != null) __obj.updateDynamic("Payload")(Payload)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Payload != null) __obj.updateDynamic("Payload")(Payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectObjectContentOutput]
   }
 }

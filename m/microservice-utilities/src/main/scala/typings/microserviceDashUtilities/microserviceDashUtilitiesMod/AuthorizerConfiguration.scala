@@ -12,8 +12,8 @@ trait AuthorizerConfiguration extends js.Object {
 object AuthorizerConfiguration {
   @scala.inline
   def apply(jwkKeyListUrl: String, authorizerContextResolver: String = null): AuthorizerConfiguration = {
-    val __obj = js.Dynamic.literal(jwkKeyListUrl = jwkKeyListUrl)
-    if (authorizerContextResolver != null) __obj.updateDynamic("authorizerContextResolver")(authorizerContextResolver)
+    val __obj = js.Dynamic.literal(jwkKeyListUrl = jwkKeyListUrl.asInstanceOf[js.Any])
+    if (authorizerContextResolver != null) __obj.updateDynamic("authorizerContextResolver")(authorizerContextResolver.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizerConfiguration]
   }
 }

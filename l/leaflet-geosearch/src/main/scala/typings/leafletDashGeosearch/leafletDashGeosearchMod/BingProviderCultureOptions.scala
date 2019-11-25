@@ -16,8 +16,8 @@ object BingProviderCultureOptions {
   @scala.inline
   def apply(c: String = null, culture: String = null): BingProviderCultureOptions = {
     val __obj = js.Dynamic.literal()
-    if (c != null) __obj.updateDynamic("c")(c)
-    if (culture != null) __obj.updateDynamic("culture")(culture)
+    if (c != null) __obj.updateDynamic("c")(c.asInstanceOf[js.Any])
+    if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
     __obj.asInstanceOf[BingProviderCultureOptions]
   }
 }

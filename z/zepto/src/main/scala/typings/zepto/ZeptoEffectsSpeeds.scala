@@ -22,7 +22,7 @@ trait ZeptoEffectsSpeeds extends js.Object {
 object ZeptoEffectsSpeeds {
   @scala.inline
   def apply(_default: Double, fast: Double, slow: Double): ZeptoEffectsSpeeds = {
-    val __obj = js.Dynamic.literal(_default = _default, fast = fast, slow = slow)
+    val __obj = js.Dynamic.literal(_default = _default.asInstanceOf[js.Any], fast = fast.asInstanceOf[js.Any], slow = slow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ZeptoEffectsSpeeds]
   }

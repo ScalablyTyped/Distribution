@@ -18,7 +18,7 @@ trait DisposeResult extends js.Object {
 object DisposeResult {
   @scala.inline
   def apply(numDisposedVariables: Double, refCountAfterDispose: Double): DisposeResult = {
-    val __obj = js.Dynamic.literal(numDisposedVariables = numDisposedVariables, refCountAfterDispose = refCountAfterDispose)
+    val __obj = js.Dynamic.literal(numDisposedVariables = numDisposedVariables.asInstanceOf[js.Any], refCountAfterDispose = refCountAfterDispose.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DisposeResult]
   }

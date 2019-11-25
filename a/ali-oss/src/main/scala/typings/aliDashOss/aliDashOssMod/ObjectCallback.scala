@@ -27,11 +27,11 @@ object ObjectCallback {
     headers: js.Object = null,
     host: String = null
   ): ObjectCallback = {
-    val __obj = js.Dynamic.literal(body = body, url = url)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (customValue != null) __obj.updateDynamic("customValue")(customValue)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (host != null) __obj.updateDynamic("host")(host)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (customValue != null) __obj.updateDynamic("customValue")(customValue.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectCallback]
   }
 }

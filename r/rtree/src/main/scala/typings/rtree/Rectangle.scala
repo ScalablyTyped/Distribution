@@ -14,7 +14,7 @@ trait Rectangle extends js.Object {
 object Rectangle {
   @scala.inline
   def apply(h: Double, w: Double, x: Double, y: Double): Rectangle = {
-    val __obj = js.Dynamic.literal(h = h, w = w, x = x, y = y)
+    val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Rectangle]
   }

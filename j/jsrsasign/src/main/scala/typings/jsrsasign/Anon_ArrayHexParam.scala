@@ -14,7 +14,7 @@ trait Anon_ArrayHexParam extends js.Object {
 object Anon_ArrayHexParam {
   @scala.inline
   def apply(array: js.Array[ObjectIdentifierParam | HexParam | NameParam]): Anon_ArrayHexParam = {
-    val __obj = js.Dynamic.literal(array = array)
+    val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ArrayHexParam]
   }

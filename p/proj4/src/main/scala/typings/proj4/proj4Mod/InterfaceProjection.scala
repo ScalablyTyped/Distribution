@@ -29,7 +29,7 @@ object InterfaceProjection {
     rf: Double,
     sphere: Double
   ): InterfaceProjection = {
-    val __obj = js.Dynamic.literal(b = b, datum = datum, e = e, ep2 = ep2, es = es, forward = js.Any.fromFunction1(forward), inverse = js.Any.fromFunction1(inverse), rf = rf, sphere = sphere)
+    val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], datum = datum.asInstanceOf[js.Any], e = e.asInstanceOf[js.Any], ep2 = ep2.asInstanceOf[js.Any], es = es.asInstanceOf[js.Any], forward = js.Any.fromFunction1(forward), inverse = js.Any.fromFunction1(inverse), rf = rf.asInstanceOf[js.Any], sphere = sphere.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InterfaceProjection]
   }

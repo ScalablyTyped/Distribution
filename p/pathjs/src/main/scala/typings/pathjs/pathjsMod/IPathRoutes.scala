@@ -21,11 +21,11 @@ object IPathRoutes {
     rescue: js.Function = null,
     root: String = null
   ): IPathRoutes = {
-    val __obj = js.Dynamic.literal(defined = defined)
-    if (current != null) __obj.updateDynamic("current")(current)
-    if (previous != null) __obj.updateDynamic("previous")(previous)
-    if (rescue != null) __obj.updateDynamic("rescue")(rescue)
-    if (root != null) __obj.updateDynamic("root")(root)
+    val __obj = js.Dynamic.literal(defined = defined.asInstanceOf[js.Any])
+    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+    if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
+    if (rescue != null) __obj.updateDynamic("rescue")(rescue.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPathRoutes]
   }
 }

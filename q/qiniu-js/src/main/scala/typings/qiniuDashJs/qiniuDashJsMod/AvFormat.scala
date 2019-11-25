@@ -28,7 +28,7 @@ object AvFormat {
     start_time: String,
     tags: Anon_Creationtime
   ): AvFormat = {
-    val __obj = js.Dynamic.literal(bit_rate = bit_rate, duration = duration, format_long_name = format_long_name, format_name = format_name, nb_streams = nb_streams, size = size, start_time = start_time, tags = tags)
+    val __obj = js.Dynamic.literal(bit_rate = bit_rate.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], format_long_name = format_long_name.asInstanceOf[js.Any], format_name = format_name.asInstanceOf[js.Any], nb_streams = nb_streams.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], start_time = start_time.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AvFormat]
   }

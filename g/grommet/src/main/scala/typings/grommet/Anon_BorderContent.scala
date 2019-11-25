@@ -28,10 +28,10 @@ object Anon_BorderContent {
   ): Anon_BorderContent = {
     val __obj = js.Dynamic.literal()
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (help != null) __obj.updateDynamic("help")(help)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (help != null) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BorderContent]
   }

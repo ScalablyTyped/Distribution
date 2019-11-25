@@ -44,16 +44,16 @@ object PopoverProps {
     popperProps: StringDictionary[js.Any] = null
   ): PopoverProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (control != null) __obj.updateDynamic("control")(control.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(noArrow)) __obj.updateDynamic("noArrow")(noArrow)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(noArrow)) __obj.updateDynamic("noArrow")(noArrow.asInstanceOf[js.Any])
     if (onClickOutside != null) __obj.updateDynamic("onClickOutside")(js.Any.fromFunction1(onClickOutside))
     if (onEscapeKey != null) __obj.updateDynamic("onEscapeKey")(js.Any.fromFunction0(onEscapeKey))
-    if (placement != null) __obj.updateDynamic("placement")(placement)
-    if (popperProps != null) __obj.updateDynamic("popperProps")(popperProps)
+    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
+    if (popperProps != null) __obj.updateDynamic("popperProps")(popperProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopoverProps]
   }
 }

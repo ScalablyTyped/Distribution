@@ -60,13 +60,13 @@ object TextProps {
     style: StyleProp[TextStyle] = null
   ): TextProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(h1)) __obj.updateDynamic("h1")(h1)
+    if (!js.isUndefined(h1)) __obj.updateDynamic("h1")(h1.asInstanceOf[js.Any])
     if (h1Style != null) __obj.updateDynamic("h1Style")(h1Style.asInstanceOf[js.Any])
-    if (!js.isUndefined(h2)) __obj.updateDynamic("h2")(h2)
+    if (!js.isUndefined(h2)) __obj.updateDynamic("h2")(h2.asInstanceOf[js.Any])
     if (h2Style != null) __obj.updateDynamic("h2Style")(h2Style.asInstanceOf[js.Any])
-    if (!js.isUndefined(h3)) __obj.updateDynamic("h3")(h3)
+    if (!js.isUndefined(h3)) __obj.updateDynamic("h3")(h3.asInstanceOf[js.Any])
     if (h3Style != null) __obj.updateDynamic("h3Style")(h3Style.asInstanceOf[js.Any])
-    if (!js.isUndefined(h4)) __obj.updateDynamic("h4")(h4)
+    if (!js.isUndefined(h4)) __obj.updateDynamic("h4")(h4.asInstanceOf[js.Any])
     if (h4Style != null) __obj.updateDynamic("h4Style")(h4Style.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextProps]

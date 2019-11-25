@@ -12,7 +12,7 @@ object Options {
   @scala.inline
   def apply(tmpPrefix: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (tmpPrefix != null) __obj.updateDynamic("tmpPrefix")(tmpPrefix)
+    if (tmpPrefix != null) __obj.updateDynamic("tmpPrefix")(tmpPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

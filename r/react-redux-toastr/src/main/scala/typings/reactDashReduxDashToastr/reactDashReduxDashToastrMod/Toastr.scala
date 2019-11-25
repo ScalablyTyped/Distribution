@@ -24,10 +24,10 @@ object Toastr {
     message: String = null,
     title: String = null
   ): Toastr = {
-    val __obj = js.Dynamic.literal(id = id, options = options.asInstanceOf[js.Any], position = position)
-    __obj.updateDynamic("type")(`type`)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Toastr]
   }
 }

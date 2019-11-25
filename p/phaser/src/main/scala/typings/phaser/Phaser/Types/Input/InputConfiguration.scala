@@ -54,13 +54,13 @@ object InputConfiguration {
   ): InputConfiguration = {
     val __obj = js.Dynamic.literal()
     if (alphaTolerance != null) __obj.updateDynamic("alphaTolerance")(alphaTolerance.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
-    if (!js.isUndefined(dropZone)) __obj.updateDynamic("dropZone")(dropZone)
-    if (hitArea != null) __obj.updateDynamic("hitArea")(hitArea)
-    if (hitAreaCallback != null) __obj.updateDynamic("hitAreaCallback")(hitAreaCallback)
-    if (!js.isUndefined(pixelPerfect)) __obj.updateDynamic("pixelPerfect")(pixelPerfect)
-    if (!js.isUndefined(useHandCursor)) __obj.updateDynamic("useHandCursor")(useHandCursor)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropZone)) __obj.updateDynamic("dropZone")(dropZone.asInstanceOf[js.Any])
+    if (hitArea != null) __obj.updateDynamic("hitArea")(hitArea.asInstanceOf[js.Any])
+    if (hitAreaCallback != null) __obj.updateDynamic("hitAreaCallback")(hitAreaCallback.asInstanceOf[js.Any])
+    if (!js.isUndefined(pixelPerfect)) __obj.updateDynamic("pixelPerfect")(pixelPerfect.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHandCursor)) __obj.updateDynamic("useHandCursor")(useHandCursor.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputConfiguration]
   }
 }

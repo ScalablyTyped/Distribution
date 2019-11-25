@@ -14,9 +14,9 @@ object Anon_Conjunction {
   @scala.inline
   def apply(conjunction: String = null, separator: String = null, serial: js.UndefOr[Boolean] = js.undefined): Anon_Conjunction = {
     val __obj = js.Dynamic.literal()
-    if (conjunction != null) __obj.updateDynamic("conjunction")(conjunction)
-    if (separator != null) __obj.updateDynamic("separator")(separator)
-    if (!js.isUndefined(serial)) __obj.updateDynamic("serial")(serial)
+    if (conjunction != null) __obj.updateDynamic("conjunction")(conjunction.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (!js.isUndefined(serial)) __obj.updateDynamic("serial")(serial.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Conjunction]
   }
 }

@@ -20,7 +20,7 @@ trait SIMLockStatus extends js.Object {
 object SIMLockStatus {
   @scala.inline
   def apply(LockEnabled: Boolean, LockType: `sim-pin` | `sim-puk` | Empty, RetriesLeft: Int | Double = null): SIMLockStatus = {
-    val __obj = js.Dynamic.literal(LockEnabled = LockEnabled, LockType = LockType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(LockEnabled = LockEnabled.asInstanceOf[js.Any], LockType = LockType.asInstanceOf[js.Any])
     if (RetriesLeft != null) __obj.updateDynamic("RetriesLeft")(RetriesLeft.asInstanceOf[js.Any])
     __obj.asInstanceOf[SIMLockStatus]
   }

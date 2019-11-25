@@ -44,9 +44,9 @@ object ThumbnailResponse {
   ): ThumbnailResponse = {
     val __obj = js.Dynamic.literal()
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThumbnailResponse]
   }

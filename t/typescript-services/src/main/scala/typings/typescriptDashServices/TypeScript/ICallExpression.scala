@@ -19,7 +19,7 @@ object ICallExpression {
     expression: AST,
     start: () => Double
   ): ICallExpression = {
-    val __obj = js.Dynamic.literal(_end = _end, _start = _start, argumentList = argumentList, end = js.Any.fromFunction0(end), expression = expression, start = js.Any.fromFunction0(start))
+    val __obj = js.Dynamic.literal(_end = _end.asInstanceOf[js.Any], _start = _start.asInstanceOf[js.Any], argumentList = argumentList.asInstanceOf[js.Any], end = js.Any.fromFunction0(end), expression = expression.asInstanceOf[js.Any], start = js.Any.fromFunction0(start))
   
     __obj.asInstanceOf[ICallExpression]
   }

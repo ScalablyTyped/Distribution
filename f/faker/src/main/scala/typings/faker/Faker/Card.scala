@@ -29,7 +29,7 @@ object Card {
     username: String,
     website: String
   ): Card = {
-    val __obj = js.Dynamic.literal(accountHistory = accountHistory, address = address, company = company, email = email, name = name, phone = phone, posts = posts, username = username, website = website)
+    val __obj = js.Dynamic.literal(accountHistory = accountHistory.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], company = company.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], posts = posts.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any], website = website.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Card]
   }

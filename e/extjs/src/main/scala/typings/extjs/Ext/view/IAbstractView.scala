@@ -211,9 +211,8 @@ object IAbstractView {
   @scala.inline
   def apply(
     IComponent: IComponent = null,
-    afterRender: () => Unit = null,
-    bindStore: /* store */ js.UndefOr[IStore] => Unit = null,
-    bindStoreListeners: /* store */ js.UndefOr[IAbstractStore] => Unit = null,
+    bindStore: js.UndefOr[js.Any | IStore] => Unit = null,
+    bindStoreListeners: js.UndefOr[IAbstractStore] => Unit = null,
     blockRefresh: js.UndefOr[Boolean] = js.undefined,
     clearSelections: () => Unit = null,
     collectData: (/* records */ js.UndefOr[Array], /* startIndex */ js.UndefOr[Double]) => Array = null,
@@ -232,10 +231,9 @@ object IAbstractView {
     getSelectedRecords: () => Array = null,
     getSelectionCount: () => Double = null,
     getSelectionModel: () => typings.extjs.Ext.selection.IModel = null,
-    getStore: () => IStore = null,
-    getStoreListeners: () => _ = null,
+    getStore: () => IAbstractStore | IStore = null,
+    getStoreListeners: js.Function0[_] | (js.Function1[/* store */ js.UndefOr[IStore], _]) = null,
     indexOf: /* nodeInfo */ js.UndefOr[js.Any] => Double = null,
-    initComponent: () => Unit = null,
     isSelected: /* node */ js.UndefOr[js.Any] => Boolean = null,
     itemCls: java.lang.String = null,
     itemSelector: java.lang.String = null,
@@ -245,10 +243,14 @@ object IAbstractView {
     loadingHeight: Int | Double = null,
     loadingText: java.lang.String = null,
     multiSelect: js.UndefOr[Boolean] = js.undefined,
-    onBindStore: (/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any], /* propName */ js.UndefOr[js.Any]) => Unit = null,
-    onDestroy: () => Unit = null,
+    onBindStore: (js.Function2[/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean], Unit]) | (js.Function3[
+      /* store */ js.UndefOr[js.Any], 
+      /* initial */ js.UndefOr[js.Any], 
+      /* propName */ js.UndefOr[js.Any], 
+      Unit
+    ]) = null,
     onRender: () => Unit = null,
-    onUnbindStore: /* store */ js.UndefOr[js.Any] => Unit = null,
+    onUnbindStore: (js.Function1[/* store */ js.UndefOr[js.Any], Unit]) | (js.Function2[/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean], Unit]) = null,
     overItemCls: java.lang.String = null,
     prepareData: (/* data */ js.UndefOr[js.Any], /* recordIndex */ js.UndefOr[Double], /* record */ js.UndefOr[IModel]) => _ = null,
     preserveScrollOnRefresh: js.UndefOr[Boolean] = js.undefined,
@@ -259,23 +261,21 @@ object IAbstractView {
     simpleSelect: js.UndefOr[Boolean] = js.undefined,
     singleSelect: js.UndefOr[Boolean] = js.undefined,
     store: IStore = null,
-    tpl: js.Any = null,
     trackOver: js.UndefOr[Boolean] = js.undefined,
-    unbindStoreListeners: /* store */ js.UndefOr[IAbstractStore] => Unit = null
+    unbindStoreListeners: js.UndefOr[IAbstractStore] => Unit = null
   ): IAbstractView = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (afterRender != null) __obj.updateDynamic("afterRender")(js.Any.fromFunction0(afterRender))
+    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
     if (bindStore != null) __obj.updateDynamic("bindStore")(js.Any.fromFunction1(bindStore))
     if (bindStoreListeners != null) __obj.updateDynamic("bindStoreListeners")(js.Any.fromFunction1(bindStoreListeners))
-    if (!js.isUndefined(blockRefresh)) __obj.updateDynamic("blockRefresh")(blockRefresh)
+    if (!js.isUndefined(blockRefresh)) __obj.updateDynamic("blockRefresh")(blockRefresh.asInstanceOf[js.Any])
     if (clearSelections != null) __obj.updateDynamic("clearSelections")(js.Any.fromFunction0(clearSelections))
     if (collectData != null) __obj.updateDynamic("collectData")(js.Any.fromFunction2(collectData))
-    if (!js.isUndefined(deferEmptyText)) __obj.updateDynamic("deferEmptyText")(deferEmptyText)
-    if (!js.isUndefined(deferInitialRefresh)) __obj.updateDynamic("deferInitialRefresh")(deferInitialRefresh)
+    if (!js.isUndefined(deferEmptyText)) __obj.updateDynamic("deferEmptyText")(deferEmptyText.asInstanceOf[js.Any])
+    if (!js.isUndefined(deferInitialRefresh)) __obj.updateDynamic("deferInitialRefresh")(deferInitialRefresh.asInstanceOf[js.Any])
     if (deselect != null) __obj.updateDynamic("deselect")(js.Any.fromFunction2(deselect))
-    if (!js.isUndefined(disableSelection)) __obj.updateDynamic("disableSelection")(disableSelection)
-    if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText)
+    if (!js.isUndefined(disableSelection)) __obj.updateDynamic("disableSelection")(disableSelection.asInstanceOf[js.Any])
+    if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText.asInstanceOf[js.Any])
     if (findItemByChild != null) __obj.updateDynamic("findItemByChild")(js.Any.fromFunction1(findItemByChild))
     if (findTargetByEvent != null) __obj.updateDynamic("findTargetByEvent")(js.Any.fromFunction1(findTargetByEvent))
     if (getNode != null) __obj.updateDynamic("getNode")(js.Any.fromFunction1(getNode))
@@ -287,34 +287,31 @@ object IAbstractView {
     if (getSelectionCount != null) __obj.updateDynamic("getSelectionCount")(js.Any.fromFunction0(getSelectionCount))
     if (getSelectionModel != null) __obj.updateDynamic("getSelectionModel")(js.Any.fromFunction0(getSelectionModel))
     if (getStore != null) __obj.updateDynamic("getStore")(js.Any.fromFunction0(getStore))
-    if (getStoreListeners != null) __obj.updateDynamic("getStoreListeners")(js.Any.fromFunction0(getStoreListeners))
+    if (getStoreListeners != null) __obj.updateDynamic("getStoreListeners")(getStoreListeners.asInstanceOf[js.Any])
     if (indexOf != null) __obj.updateDynamic("indexOf")(js.Any.fromFunction1(indexOf))
-    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
     if (isSelected != null) __obj.updateDynamic("isSelected")(js.Any.fromFunction1(isSelected))
-    if (itemCls != null) __obj.updateDynamic("itemCls")(itemCls)
-    if (itemSelector != null) __obj.updateDynamic("itemSelector")(itemSelector)
-    if (itemTpl != null) __obj.updateDynamic("itemTpl")(itemTpl)
-    if (loadMask != null) __obj.updateDynamic("loadMask")(loadMask)
-    if (loadingCls != null) __obj.updateDynamic("loadingCls")(loadingCls)
+    if (itemCls != null) __obj.updateDynamic("itemCls")(itemCls.asInstanceOf[js.Any])
+    if (itemSelector != null) __obj.updateDynamic("itemSelector")(itemSelector.asInstanceOf[js.Any])
+    if (itemTpl != null) __obj.updateDynamic("itemTpl")(itemTpl.asInstanceOf[js.Any])
+    if (loadMask != null) __obj.updateDynamic("loadMask")(loadMask.asInstanceOf[js.Any])
+    if (loadingCls != null) __obj.updateDynamic("loadingCls")(loadingCls.asInstanceOf[js.Any])
     if (loadingHeight != null) __obj.updateDynamic("loadingHeight")(loadingHeight.asInstanceOf[js.Any])
-    if (loadingText != null) __obj.updateDynamic("loadingText")(loadingText)
-    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect)
-    if (onBindStore != null) __obj.updateDynamic("onBindStore")(js.Any.fromFunction3(onBindStore))
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
+    if (loadingText != null) __obj.updateDynamic("loadingText")(loadingText.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect.asInstanceOf[js.Any])
+    if (onBindStore != null) __obj.updateDynamic("onBindStore")(onBindStore.asInstanceOf[js.Any])
     if (onRender != null) __obj.updateDynamic("onRender")(js.Any.fromFunction0(onRender))
-    if (onUnbindStore != null) __obj.updateDynamic("onUnbindStore")(js.Any.fromFunction1(onUnbindStore))
-    if (overItemCls != null) __obj.updateDynamic("overItemCls")(overItemCls)
+    if (onUnbindStore != null) __obj.updateDynamic("onUnbindStore")(onUnbindStore.asInstanceOf[js.Any])
+    if (overItemCls != null) __obj.updateDynamic("overItemCls")(overItemCls.asInstanceOf[js.Any])
     if (prepareData != null) __obj.updateDynamic("prepareData")(js.Any.fromFunction3(prepareData))
-    if (!js.isUndefined(preserveScrollOnRefresh)) __obj.updateDynamic("preserveScrollOnRefresh")(preserveScrollOnRefresh)
+    if (!js.isUndefined(preserveScrollOnRefresh)) __obj.updateDynamic("preserveScrollOnRefresh")(preserveScrollOnRefresh.asInstanceOf[js.Any])
     if (refresh != null) __obj.updateDynamic("refresh")(js.Any.fromFunction0(refresh))
     if (refreshNode != null) __obj.updateDynamic("refreshNode")(js.Any.fromFunction1(refreshNode))
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction3(select))
-    if (selectedItemCls != null) __obj.updateDynamic("selectedItemCls")(selectedItemCls)
-    if (!js.isUndefined(simpleSelect)) __obj.updateDynamic("simpleSelect")(simpleSelect)
-    if (!js.isUndefined(singleSelect)) __obj.updateDynamic("singleSelect")(singleSelect)
-    if (store != null) __obj.updateDynamic("store")(store)
-    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
-    if (!js.isUndefined(trackOver)) __obj.updateDynamic("trackOver")(trackOver)
+    if (selectedItemCls != null) __obj.updateDynamic("selectedItemCls")(selectedItemCls.asInstanceOf[js.Any])
+    if (!js.isUndefined(simpleSelect)) __obj.updateDynamic("simpleSelect")(simpleSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(singleSelect)) __obj.updateDynamic("singleSelect")(singleSelect.asInstanceOf[js.Any])
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackOver)) __obj.updateDynamic("trackOver")(trackOver.asInstanceOf[js.Any])
     if (unbindStoreListeners != null) __obj.updateDynamic("unbindStoreListeners")(js.Any.fromFunction1(unbindStoreListeners))
     __obj.asInstanceOf[IAbstractView]
   }

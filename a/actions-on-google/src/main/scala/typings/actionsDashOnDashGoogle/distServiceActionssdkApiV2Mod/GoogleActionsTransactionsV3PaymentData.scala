@@ -25,8 +25,8 @@ object GoogleActionsTransactionsV3PaymentData {
     paymentResult: GoogleActionsTransactionsV3PaymentResult = null
   ): GoogleActionsTransactionsV3PaymentData = {
     val __obj = js.Dynamic.literal()
-    if (paymentInfo != null) __obj.updateDynamic("paymentInfo")(paymentInfo)
-    if (paymentResult != null) __obj.updateDynamic("paymentResult")(paymentResult)
+    if (paymentInfo != null) __obj.updateDynamic("paymentInfo")(paymentInfo.asInstanceOf[js.Any])
+    if (paymentResult != null) __obj.updateDynamic("paymentResult")(paymentResult.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsTransactionsV3PaymentData]
   }
 }

@@ -17,7 +17,7 @@ object pushAction {
   @scala.inline
   def apply[T /* <: Path | LocationDescriptorObject[LocationState] */](payload: T, `type`: `ROUTER/PUSH`): pushAction[T] = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[pushAction[T]]
   }
 }

@@ -1,6 +1,5 @@
 package typings.angularDashFormly.AngularFormly
 
-import typings.angularDashFormly.Fn_Field
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +15,9 @@ import scala.scalajs.js.annotation._
 trait IWatcher extends js.Object {
   var deep: js.UndefOr[Boolean] = js.undefined
    //Defaults to false
-  var expression: js.UndefOr[String | Fn_Field] = js.undefined
+  var expression: js.UndefOr[
+    String | (js.Function2[/* field */ IFieldRuntimeObject, /* scope */ ITemplateScope, Boolean])
+  ] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
   def listener(
     field: IFieldRuntimeObject,
@@ -32,13 +33,13 @@ object IWatcher {
   def apply(
     listener: (IFieldRuntimeObject, js.Any, js.Any, ITemplateScope, js.Function) => Unit,
     deep: js.UndefOr[Boolean] = js.undefined,
-    expression: String | Fn_Field = null,
+    expression: String | (js.Function2[/* field */ IFieldRuntimeObject, /* scope */ ITemplateScope, Boolean]) = null,
     `type`: String = null
   ): IWatcher = {
     val __obj = js.Dynamic.literal(listener = js.Any.fromFunction5(listener))
-    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep)
+    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep.asInstanceOf[js.Any])
     if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWatcher]
   }
 }

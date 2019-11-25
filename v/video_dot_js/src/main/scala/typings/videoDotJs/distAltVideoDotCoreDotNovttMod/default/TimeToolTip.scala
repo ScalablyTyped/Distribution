@@ -3,7 +3,6 @@ package typings.videoDotJs.distAltVideoDotCoreDotNovttMod.default
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.videoDotJs.videoDotJsMod.videojs.ComponentOptions
-import typings.videoDotJs.videoDotJsMod.videojs.Player
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,9 +19,12 @@ object TimeToolTip
   * @param [options]
   *         The key/value store of player options.
   */
-Instantiable1[/* player */ Player, typings.videoDotJs.videoDotJsMod.videojs.TimeToolTip]
+Instantiable1[
+      /* player */ typings.videoDotJs.videoDotJsMod.videojs.Player, 
+      typings.videoDotJs.videoDotJsMod.videojs.TimeToolTip
+    ]
      with Instantiable2[
-      /* player */ Player, 
+      /* player */ typings.videoDotJs.videoDotJsMod.videojs.Player, 
       /* options */ ComponentOptions, 
       typings.videoDotJs.videoDotJsMod.videojs.TimeToolTip
     ]

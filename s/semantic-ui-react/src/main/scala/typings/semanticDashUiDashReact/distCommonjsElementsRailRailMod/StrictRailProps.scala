@@ -52,15 +52,15 @@ object StrictRailProps {
     internal: js.UndefOr[Boolean] = js.undefined,
     size: mini | tiny | small | large | big | huge | massive = null
   ): StrictRailProps = {
-    val __obj = js.Dynamic.literal(position = position)
-    if (as != null) __obj.updateDynamic("as")(as)
-    if (!js.isUndefined(attached)) __obj.updateDynamic("attached")(attached)
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
+    if (!js.isUndefined(attached)) __obj.updateDynamic("attached")(attached.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(dividing)) __obj.updateDynamic("dividing")(dividing)
-    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal)
+    if (!js.isUndefined(dividing)) __obj.updateDynamic("dividing")(dividing.asInstanceOf[js.Any])
+    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictRailProps]
   }

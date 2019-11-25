@@ -41,8 +41,8 @@ object FieldModel {
     `type`: FieldType,
     url: String
   ): FieldModel = {
-    val __obj = js.Dynamic.literal(description = description, id = id, name = name, pickList = pickList, url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pickList = pickList.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldModel]
   }
 }

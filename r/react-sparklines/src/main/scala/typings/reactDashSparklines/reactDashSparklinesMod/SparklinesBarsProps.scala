@@ -34,8 +34,8 @@ object SparklinesBarsProps {
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction2(onMouseMove))
-    if (points != null) __obj.updateDynamic("points")(points)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklinesBarsProps]
   }
 }

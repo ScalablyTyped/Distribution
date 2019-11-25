@@ -12,7 +12,7 @@ object DomainOptionsCreateEn {
   @scala.inline
   def apply(collation: String = null): DomainOptionsCreateEn = {
     val __obj = js.Dynamic.literal()
-    if (collation != null) __obj.updateDynamic("collation")(collation)
+    if (collation != null) __obj.updateDynamic("collation")(collation.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainOptionsCreateEn]
   }
 }

@@ -27,7 +27,7 @@ object IgSchedulerAgendaViewSettings {
     dateRangeInterval: Int | Double = null
   ): IgSchedulerAgendaViewSettings = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (dateRangeInterval != null) __obj.updateDynamic("dateRangeInterval")(dateRangeInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgSchedulerAgendaViewSettings]
   }

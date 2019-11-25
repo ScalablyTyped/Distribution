@@ -14,8 +14,8 @@ object AsciifyOptions {
   @scala.inline
   def apply(color: String = null, font: String = null, maxWidth: Int | Double = null): AsciifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (font != null) __obj.updateDynamic("font")(font)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsciifyOptions]
   }

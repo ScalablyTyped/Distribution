@@ -15,8 +15,8 @@ object SourceGcs {
   @scala.inline
   def apply(bucket: String = null, prefix: String = null): SourceGcs = {
     val __obj = js.Dynamic.literal()
-    if (bucket != null) __obj.updateDynamic("bucket")(bucket)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceGcs]
   }
 }

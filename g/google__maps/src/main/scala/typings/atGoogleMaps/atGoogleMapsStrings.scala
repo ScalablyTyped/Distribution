@@ -341,7 +341,7 @@ object atGoogleMapsStrings {
   sealed trait bowling_alley extends PlaceType1
   
   @js.native
-  sealed trait bus extends TransitMode
+  sealed trait bus_ extends TransitMode
   
   @js.native
   sealed trait bus_station
@@ -476,10 +476,10 @@ object atGoogleMapsStrings {
   sealed trait ferries extends TravelRestriction
   
   @js.native
-  sealed trait ferry extends Maneuver
+  sealed trait `ferry-train` extends Maneuver
   
   @js.native
-  sealed trait `ferry-train` extends Maneuver
+  sealed trait ferry_ extends Maneuver
   
   @js.native
   sealed trait fewer_transfers extends TransitRoutingPreference
@@ -872,7 +872,7 @@ object atGoogleMapsStrings {
   sealed trait quality extends AspectRatingType
   
   @js.native
-  sealed trait rail extends TransitMode
+  sealed trait rail_ extends TransitMode
   
   @js.native
   sealed trait `ramp-left` extends Maneuver
@@ -998,7 +998,7 @@ object atGoogleMapsStrings {
        with PlaceType2
   
   @js.native
-  sealed trait subway extends TransitMode
+  sealed trait subway_ extends TransitMode
   
   @js.native
   sealed trait subway_station extends PlaceType1
@@ -1048,7 +1048,7 @@ object atGoogleMapsStrings {
        with PlaceType1
   
   @js.native
-  sealed trait tram extends TransitMode
+  sealed trait tram_ extends TransitMode
   
   @js.native
   sealed trait transit extends TravelMode
@@ -1280,7 +1280,7 @@ object atGoogleMapsStrings {
   @scala.inline
   def bowling_alley: bowling_alley = "bowling_alley".asInstanceOf[bowling_alley]
   @scala.inline
-  def bus: bus = "bus".asInstanceOf[bus]
+  def bus_ : bus_ = "bus".asInstanceOf[bus_]
   @scala.inline
   def bus_station: bus_station = "bus_station".asInstanceOf[bus_station]
   @scala.inline
@@ -1364,9 +1364,9 @@ object atGoogleMapsStrings {
   @scala.inline
   def ferries: ferries = "ferries".asInstanceOf[ferries]
   @scala.inline
-  def ferry: ferry = "ferry".asInstanceOf[ferry]
-  @scala.inline
   def `ferry-train`: `ferry-train` = "ferry-train".asInstanceOf[`ferry-train`]
+  @scala.inline
+  def ferry_ : ferry_ = "ferry".asInstanceOf[ferry_]
   @scala.inline
   def fewer_transfers: fewer_transfers = "fewer_transfers".asInstanceOf[fewer_transfers]
   @scala.inline
@@ -1606,7 +1606,7 @@ object atGoogleMapsStrings {
   @scala.inline
   def quality: quality = "quality".asInstanceOf[quality]
   @scala.inline
-  def rail: rail = "rail".asInstanceOf[rail]
+  def rail_ : rail_ = "rail".asInstanceOf[rail_]
   @scala.inline
   def `ramp-left`: `ramp-left` = "ramp-left".asInstanceOf[`ramp-left`]
   @scala.inline
@@ -1682,7 +1682,7 @@ object atGoogleMapsStrings {
   @scala.inline
   def subpremise: subpremise = "subpremise".asInstanceOf[subpremise]
   @scala.inline
-  def subway: subway = "subway".asInstanceOf[subway]
+  def subway_ : subway_ = "subway".asInstanceOf[subway_]
   @scala.inline
   def subway_station: subway_station = "subway_station".asInstanceOf[subway_station]
   @scala.inline
@@ -1714,7 +1714,7 @@ object atGoogleMapsStrings {
   @scala.inline
   def train_station: train_station = "train_station".asInstanceOf[train_station]
   @scala.inline
-  def tram: tram = "tram".asInstanceOf[tram]
+  def tram_ : tram_ = "tram".asInstanceOf[tram_]
   @scala.inline
   def transit: transit = "transit".asInstanceOf[transit]
   @scala.inline

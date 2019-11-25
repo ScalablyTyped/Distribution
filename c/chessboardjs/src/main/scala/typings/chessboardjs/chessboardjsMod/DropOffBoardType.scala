@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait DropOffBoardType extends js.Object
 
+object DropOffBoardType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def snapback: typings.chessboardjs.chessboardjsStrings.snapback = this.cast("snapback")
+  @scala.inline
+  def trash: typings.chessboardjs.chessboardjsStrings.trash = this.cast("trash")
+}
+

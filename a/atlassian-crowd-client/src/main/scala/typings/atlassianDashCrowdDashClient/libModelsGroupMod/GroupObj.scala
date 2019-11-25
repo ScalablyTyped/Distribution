@@ -15,8 +15,8 @@ trait GroupObj extends js.Object {
 object GroupObj {
   @scala.inline
   def apply(active: Boolean, description: String, name: String, `type`: GROUP): GroupObj = {
-    val __obj = js.Dynamic.literal(active = active, description = description, name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupObj]
   }
 }

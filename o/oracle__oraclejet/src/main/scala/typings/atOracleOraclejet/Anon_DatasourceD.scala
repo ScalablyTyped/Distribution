@@ -13,7 +13,7 @@ object Anon_DatasourceD {
   @scala.inline
   def apply[K, D](datasource: DataProvider[K, D] = null): Anon_DatasourceD[K, D] = {
     val __obj = js.Dynamic.literal()
-    if (datasource != null) __obj.updateDynamic("datasource")(datasource)
+    if (datasource != null) __obj.updateDynamic("datasource")(datasource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DatasourceD[K, D]]
   }
 }

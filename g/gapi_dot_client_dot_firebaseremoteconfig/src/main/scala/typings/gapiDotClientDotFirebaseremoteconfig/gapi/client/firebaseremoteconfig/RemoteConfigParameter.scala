@@ -26,8 +26,8 @@ object RemoteConfigParameter {
     defaultValue: RemoteConfigParameterValue = null
   ): RemoteConfigParameter = {
     val __obj = js.Dynamic.literal()
-    if (conditionalValues != null) __obj.updateDynamic("conditionalValues")(conditionalValues)
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (conditionalValues != null) __obj.updateDynamic("conditionalValues")(conditionalValues.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteConfigParameter]
   }
 }

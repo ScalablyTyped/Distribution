@@ -20,7 +20,7 @@ object DownloadSuccessData {
   def apply(statusCode: Int | Double = null, tempFilePath: String = null): DownloadSuccessData = {
     val __obj = js.Dynamic.literal()
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
-    if (tempFilePath != null) __obj.updateDynamic("tempFilePath")(tempFilePath)
+    if (tempFilePath != null) __obj.updateDynamic("tempFilePath")(tempFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadSuccessData]
   }
 }

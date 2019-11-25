@@ -27,11 +27,11 @@ object Enterprise {
     primaryDomain: String = null
   ): Enterprise = {
     val __obj = js.Dynamic.literal()
-    if (administrator != null) __obj.updateDynamic("administrator")(administrator)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (primaryDomain != null) __obj.updateDynamic("primaryDomain")(primaryDomain)
+    if (administrator != null) __obj.updateDynamic("administrator")(administrator.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (primaryDomain != null) __obj.updateDynamic("primaryDomain")(primaryDomain.asInstanceOf[js.Any])
     __obj.asInstanceOf[Enterprise]
   }
 }

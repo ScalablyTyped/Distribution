@@ -29,7 +29,7 @@ object GoToActionProps {
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     if (slide != null) __obj.updateDynamic("slide")(slide.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoToActionProps]
   }
 }

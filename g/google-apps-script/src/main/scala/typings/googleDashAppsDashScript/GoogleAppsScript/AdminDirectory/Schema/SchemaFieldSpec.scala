@@ -32,16 +32,16 @@ object SchemaFieldSpec {
     readAccessType: String = null
   ): SchemaFieldSpec = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (fieldId != null) __obj.updateDynamic("fieldId")(fieldId)
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
-    if (fieldType != null) __obj.updateDynamic("fieldType")(fieldType)
-    if (!js.isUndefined(indexed)) __obj.updateDynamic("indexed")(indexed)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (!js.isUndefined(multiValued)) __obj.updateDynamic("multiValued")(multiValued)
-    if (numericIndexingSpec != null) __obj.updateDynamic("numericIndexingSpec")(numericIndexingSpec)
-    if (readAccessType != null) __obj.updateDynamic("readAccessType")(readAccessType)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (fieldId != null) __obj.updateDynamic("fieldId")(fieldId.asInstanceOf[js.Any])
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
+    if (fieldType != null) __obj.updateDynamic("fieldType")(fieldType.asInstanceOf[js.Any])
+    if (!js.isUndefined(indexed)) __obj.updateDynamic("indexed")(indexed.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiValued)) __obj.updateDynamic("multiValued")(multiValued.asInstanceOf[js.Any])
+    if (numericIndexingSpec != null) __obj.updateDynamic("numericIndexingSpec")(numericIndexingSpec.asInstanceOf[js.Any])
+    if (readAccessType != null) __obj.updateDynamic("readAccessType")(readAccessType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFieldSpec]
   }
 }

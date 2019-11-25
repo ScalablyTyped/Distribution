@@ -23,7 +23,7 @@ object IFileUpdateRequest {
     status: FileUpdateStatus,
     updateLocalFile: IStorageFile => Unit
   ): IFileUpdateRequest = {
-    val __obj = js.Dynamic.literal(contentId = contentId, file = file, getDeferral = js.Any.fromFunction0(getDeferral), status = status, updateLocalFile = js.Any.fromFunction1(updateLocalFile))
+    val __obj = js.Dynamic.literal(contentId = contentId.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], getDeferral = js.Any.fromFunction0(getDeferral), status = status.asInstanceOf[js.Any], updateLocalFile = js.Any.fromFunction1(updateLocalFile))
   
     __obj.asInstanceOf[IFileUpdateRequest]
   }

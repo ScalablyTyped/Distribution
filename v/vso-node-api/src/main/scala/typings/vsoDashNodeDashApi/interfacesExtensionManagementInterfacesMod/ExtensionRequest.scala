@@ -48,7 +48,7 @@ object ExtensionRequest {
     resolveDate: Date,
     resolvedBy: IdentityRef
   ): ExtensionRequest = {
-    val __obj = js.Dynamic.literal(rejectMessage = rejectMessage, requestDate = requestDate, requestMessage = requestMessage, requestState = requestState, requestedBy = requestedBy, resolveDate = resolveDate, resolvedBy = resolvedBy)
+    val __obj = js.Dynamic.literal(rejectMessage = rejectMessage.asInstanceOf[js.Any], requestDate = requestDate.asInstanceOf[js.Any], requestMessage = requestMessage.asInstanceOf[js.Any], requestState = requestState.asInstanceOf[js.Any], requestedBy = requestedBy.asInstanceOf[js.Any], resolveDate = resolveDate.asInstanceOf[js.Any], resolvedBy = resolvedBy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExtensionRequest]
   }

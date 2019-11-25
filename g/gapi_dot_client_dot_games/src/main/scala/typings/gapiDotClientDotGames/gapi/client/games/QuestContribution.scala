@@ -20,9 +20,9 @@ object QuestContribution {
   @scala.inline
   def apply(formattedValue: String = null, kind: String = null, value: String = null): QuestContribution = {
     val __obj = js.Dynamic.literal()
-    if (formattedValue != null) __obj.updateDynamic("formattedValue")(formattedValue)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (formattedValue != null) __obj.updateDynamic("formattedValue")(formattedValue.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuestContribution]
   }
 }

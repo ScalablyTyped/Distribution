@@ -18,9 +18,9 @@ object Anon_IsCaseSensitive {
     usesSql92CompliantStringComparison: js.UndefOr[Boolean] = js.undefined
   ): Anon_IsCaseSensitive = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isCaseSensitive)) __obj.updateDynamic("isCaseSensitive")(isCaseSensitive)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(usesSql92CompliantStringComparison)) __obj.updateDynamic("usesSql92CompliantStringComparison")(usesSql92CompliantStringComparison)
+    if (!js.isUndefined(isCaseSensitive)) __obj.updateDynamic("isCaseSensitive")(isCaseSensitive.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(usesSql92CompliantStringComparison)) __obj.updateDynamic("usesSql92CompliantStringComparison")(usesSql92CompliantStringComparison.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IsCaseSensitive]
   }
 }

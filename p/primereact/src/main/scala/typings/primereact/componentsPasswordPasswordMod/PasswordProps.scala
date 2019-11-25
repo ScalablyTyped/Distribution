@@ -37,16 +37,16 @@ object PasswordProps {
     weakLabel: String = null
   ): PasswordProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(feedback)) __obj.updateDynamic("feedback")(feedback)
-    if (mediumLabel != null) __obj.updateDynamic("mediumLabel")(mediumLabel)
-    if (promptLabel != null) __obj.updateDynamic("promptLabel")(promptLabel)
-    if (strongLabel != null) __obj.updateDynamic("strongLabel")(strongLabel)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
-    if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions)
-    if (weakLabel != null) __obj.updateDynamic("weakLabel")(weakLabel)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(feedback)) __obj.updateDynamic("feedback")(feedback.asInstanceOf[js.Any])
+    if (mediumLabel != null) __obj.updateDynamic("mediumLabel")(mediumLabel.asInstanceOf[js.Any])
+    if (promptLabel != null) __obj.updateDynamic("promptLabel")(promptLabel.asInstanceOf[js.Any])
+    if (strongLabel != null) __obj.updateDynamic("strongLabel")(strongLabel.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions.asInstanceOf[js.Any])
+    if (weakLabel != null) __obj.updateDynamic("weakLabel")(weakLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasswordProps]
   }
 }

@@ -28,9 +28,9 @@ object IProviderConfig {
     modules: js.Array[IModuleConfig] = null
   ): IProviderConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (!js.isUndefined(events)) __obj.updateDynamic("events")(events)
-    if (modules != null) __obj.updateDynamic("modules")(modules)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(events)) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProviderConfig]
   }
 }

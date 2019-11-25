@@ -14,8 +14,8 @@ trait QueryRequestSql extends js.Object {
 object QueryRequestSql {
   @scala.inline
   def apply(query: String, parameters: js.Array[QueryParameter] = null): QueryRequestSql = {
-    val __obj = js.Dynamic.literal(query = query)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryRequestSql]
   }
 }

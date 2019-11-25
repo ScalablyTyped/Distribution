@@ -14,8 +14,8 @@ object Module {
   @scala.inline
   def apply(StringDictionary: /* exportName */ StringDictionary[js.Any] = null, default: js.Any = null): Module = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[Module]
   }
 }

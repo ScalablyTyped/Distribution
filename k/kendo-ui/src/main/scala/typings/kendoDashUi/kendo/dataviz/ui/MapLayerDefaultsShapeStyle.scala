@@ -13,8 +13,8 @@ object MapLayerDefaultsShapeStyle {
   @scala.inline
   def apply(fill: MapLayerDefaultsShapeStyleFill = null, stroke: MapLayerDefaultsShapeStyleStroke = null): MapLayerDefaultsShapeStyle = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapLayerDefaultsShapeStyle]
   }
 }

@@ -33,7 +33,7 @@ object Stat {
     pzxid: Double,
     version: Double
   ): Stat = {
-    val __obj = js.Dynamic.literal(aversion = aversion, ctime = ctime, cversion = cversion, czxid = czxid, dataLength = dataLength, ephemeralOwner = ephemeralOwner, mtime = mtime, mzxid = mzxid, numChildren = numChildren, pzxid = pzxid, version = version)
+    val __obj = js.Dynamic.literal(aversion = aversion.asInstanceOf[js.Any], ctime = ctime.asInstanceOf[js.Any], cversion = cversion.asInstanceOf[js.Any], czxid = czxid.asInstanceOf[js.Any], dataLength = dataLength.asInstanceOf[js.Any], ephemeralOwner = ephemeralOwner.asInstanceOf[js.Any], mtime = mtime.asInstanceOf[js.Any], mzxid = mzxid.asInstanceOf[js.Any], numChildren = numChildren.asInstanceOf[js.Any], pzxid = pzxid.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Stat]
   }

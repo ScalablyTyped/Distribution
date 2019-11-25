@@ -86,13 +86,13 @@ object StubbyRequest {
     post: String = null,
     query: StringDictionary[String] = null
   ): StubbyRequest = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (file != null) __obj.updateDynamic("file")(file)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (json != null) __obj.updateDynamic("json")(json)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (json != null) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (post != null) __obj.updateDynamic("post")(post)
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (post != null) __obj.updateDynamic("post")(post.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[StubbyRequest]
   }
 }

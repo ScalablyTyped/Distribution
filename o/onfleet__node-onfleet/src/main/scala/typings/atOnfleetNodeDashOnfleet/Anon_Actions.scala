@@ -27,7 +27,7 @@ object Anon_Actions {
     unavailableAttachments: js.Array[_],
     time: Int | Double = null
   ): Anon_Actions = {
-    val __obj = js.Dynamic.literal(actions = actions, events = events, failureNotes = failureNotes, failureReason = failureReason, firstLocation = firstLocation, lastLocation = lastLocation, unavailableAttachments = unavailableAttachments)
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], failureNotes = failureNotes.asInstanceOf[js.Any], failureReason = failureReason.asInstanceOf[js.Any], firstLocation = firstLocation.asInstanceOf[js.Any], lastLocation = lastLocation.asInstanceOf[js.Any], unavailableAttachments = unavailableAttachments.asInstanceOf[js.Any])
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Actions]
   }

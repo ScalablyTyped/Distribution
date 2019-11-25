@@ -13,7 +13,7 @@ trait Anon_CountMaterialIndex extends js.Object {
 object Anon_CountMaterialIndex {
   @scala.inline
   def apply(count: Double, start: Double, materialIndex: Int | Double = null): Anon_CountMaterialIndex = {
-    val __obj = js.Dynamic.literal(count = count, start = start)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     if (materialIndex != null) __obj.updateDynamic("materialIndex")(materialIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CountMaterialIndex]
   }

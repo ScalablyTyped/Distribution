@@ -35,16 +35,16 @@ object FontFace {
   ): FontFace = {
     val __obj = js.Dynamic.literal()
     if (MozFontFeatureSettings != null) __obj.updateDynamic("MozFontFeatureSettings")(MozFontFeatureSettings.asInstanceOf[js.Any])
-    if (fontDisplay != null) __obj.updateDynamic("fontDisplay")(fontDisplay)
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontDisplay != null) __obj.updateDynamic("fontDisplay")(fontDisplay.asInstanceOf[js.Any])
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     if (fontFeatureSettings != null) __obj.updateDynamic("fontFeatureSettings")(fontFeatureSettings.asInstanceOf[js.Any])
     if (fontStretch != null) __obj.updateDynamic("fontStretch")(fontStretch.asInstanceOf[js.Any])
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
     if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant.asInstanceOf[js.Any])
     if (fontVariationSettings != null) __obj.updateDynamic("fontVariationSettings")(fontVariationSettings.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src)
-    if (unicodeRange != null) __obj.updateDynamic("unicodeRange")(unicodeRange)
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
+    if (unicodeRange != null) __obj.updateDynamic("unicodeRange")(unicodeRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontFace]
   }
 }

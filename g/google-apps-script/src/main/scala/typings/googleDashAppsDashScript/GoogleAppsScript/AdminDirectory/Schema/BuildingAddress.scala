@@ -26,13 +26,13 @@ object BuildingAddress {
     sublocality: String = null
   ): BuildingAddress = {
     val __obj = js.Dynamic.literal()
-    if (addressLines != null) __obj.updateDynamic("addressLines")(addressLines)
-    if (administrativeArea != null) __obj.updateDynamic("administrativeArea")(administrativeArea)
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
-    if (locality != null) __obj.updateDynamic("locality")(locality)
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
-    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode)
-    if (sublocality != null) __obj.updateDynamic("sublocality")(sublocality)
+    if (addressLines != null) __obj.updateDynamic("addressLines")(addressLines.asInstanceOf[js.Any])
+    if (administrativeArea != null) __obj.updateDynamic("administrativeArea")(administrativeArea.asInstanceOf[js.Any])
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (locality != null) __obj.updateDynamic("locality")(locality.asInstanceOf[js.Any])
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
+    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode.asInstanceOf[js.Any])
+    if (sublocality != null) __obj.updateDynamic("sublocality")(sublocality.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildingAddress]
   }
 }

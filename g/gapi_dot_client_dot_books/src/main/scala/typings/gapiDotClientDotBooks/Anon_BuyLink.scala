@@ -42,14 +42,14 @@ object Anon_BuyLink {
     saleability: String = null
   ): Anon_BuyLink = {
     val __obj = js.Dynamic.literal()
-    if (buyLink != null) __obj.updateDynamic("buyLink")(buyLink)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (!js.isUndefined(isEbook)) __obj.updateDynamic("isEbook")(isEbook)
-    if (listPrice != null) __obj.updateDynamic("listPrice")(listPrice)
-    if (offers != null) __obj.updateDynamic("offers")(offers)
-    if (onSaleDate != null) __obj.updateDynamic("onSaleDate")(onSaleDate)
-    if (retailPrice != null) __obj.updateDynamic("retailPrice")(retailPrice)
-    if (saleability != null) __obj.updateDynamic("saleability")(saleability)
+    if (buyLink != null) __obj.updateDynamic("buyLink")(buyLink.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEbook)) __obj.updateDynamic("isEbook")(isEbook.asInstanceOf[js.Any])
+    if (listPrice != null) __obj.updateDynamic("listPrice")(listPrice.asInstanceOf[js.Any])
+    if (offers != null) __obj.updateDynamic("offers")(offers.asInstanceOf[js.Any])
+    if (onSaleDate != null) __obj.updateDynamic("onSaleDate")(onSaleDate.asInstanceOf[js.Any])
+    if (retailPrice != null) __obj.updateDynamic("retailPrice")(retailPrice.asInstanceOf[js.Any])
+    if (saleability != null) __obj.updateDynamic("saleability")(saleability.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BuyLink]
   }
 }

@@ -14,7 +14,7 @@ trait Anon_Cancelled extends js.Object {
 object Anon_Cancelled {
   @scala.inline
   def apply(cancelled: Double, error: Double, published: Double, unpublished: Double): Anon_Cancelled = {
-    val __obj = js.Dynamic.literal(cancelled = cancelled, error = error, published = published, unpublished = unpublished)
+    val __obj = js.Dynamic.literal(cancelled = cancelled.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], published = published.asInstanceOf[js.Any], unpublished = unpublished.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Cancelled]
   }

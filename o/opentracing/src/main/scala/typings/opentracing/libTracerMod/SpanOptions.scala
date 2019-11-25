@@ -44,9 +44,9 @@ object SpanOptions {
   ): SpanOptions = {
     val __obj = js.Dynamic.literal()
     if (childOf != null) __obj.updateDynamic("childOf")(childOf.asInstanceOf[js.Any])
-    if (references != null) __obj.updateDynamic("references")(references)
+    if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpanOptions]
   }
 }

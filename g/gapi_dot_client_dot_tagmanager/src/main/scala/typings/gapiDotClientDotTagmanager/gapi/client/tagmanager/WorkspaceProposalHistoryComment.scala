@@ -13,7 +13,7 @@ object WorkspaceProposalHistoryComment {
   @scala.inline
   def apply(content: String = null): WorkspaceProposalHistoryComment = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceProposalHistoryComment]
   }
 }

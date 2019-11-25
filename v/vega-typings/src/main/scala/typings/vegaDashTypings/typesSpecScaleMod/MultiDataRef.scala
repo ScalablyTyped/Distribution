@@ -5,19 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MultiDataRef extends js.Object {
-  var data: js.UndefOr[String] = js.undefined
-  var fields: js.UndefOr[
-    js.Array[(js.Array[String | Double | Boolean]) | DataRef | ScaleField | SignalRef]
-  ] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.vegaDashTypings.Anon_DataFields
+  - typings.vegaDashTypings.Anon_Fields
+*/
+trait MultiDataRef extends js.Object
 
 object MultiDataRef {
   @scala.inline
-  def apply(data: String = null, fields: js.Array[ScaleField] = null): MultiDataRef = {
-    val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
+  def Anon_DataFields(data: String, fields: js.Array[ScaleField]): MultiDataRef = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[MultiDataRef]
+  }
+  @scala.inline
+  def Anon_Fields(fields: js.Array[(js.Array[String | Double | Boolean]) | DataRef | SignalRef]): MultiDataRef = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[MultiDataRef]
   }
 }

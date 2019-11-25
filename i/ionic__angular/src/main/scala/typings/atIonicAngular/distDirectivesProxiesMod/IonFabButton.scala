@@ -7,7 +7,6 @@ import typings.atAngularCore.atAngularCoreMod.NgZone
 import typings.atIonicCore.atIonicCoreStrings.button
 import typings.atIonicCore.atIonicCoreStrings.reset
 import typings.atIonicCore.atIonicCoreStrings.submit
-import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouterDirection
 import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -36,7 +35,7 @@ class IonFabButton protected ()
     * When using a router, it specifies the transition direction when navigating to another page using `href`.
     */
   /* CompleteClass */
-  override var routerDirection: RouterDirection = js.native
+  override var routerDirection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any = js.native
   /**
     * If `true`, the fab button will show when in a fab-list.
     */

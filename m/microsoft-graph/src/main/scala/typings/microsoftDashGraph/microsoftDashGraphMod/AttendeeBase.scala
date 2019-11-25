@@ -16,8 +16,8 @@ object AttendeeBase {
   @scala.inline
   def apply(emailAddress: EmailAddress = null, `type`: AttendeeType = null): AttendeeBase = {
     val __obj = js.Dynamic.literal()
-    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttendeeBase]
   }
 }

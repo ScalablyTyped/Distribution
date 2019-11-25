@@ -19,8 +19,8 @@ trait RawTag extends js.Object {
 object RawTag {
   @scala.inline
   def apply(tags: StringDictionary[String], `type`: String): RawTag = {
-    val __obj = js.Dynamic.literal(tags = tags)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(tags = tags.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawTag]
   }
 }

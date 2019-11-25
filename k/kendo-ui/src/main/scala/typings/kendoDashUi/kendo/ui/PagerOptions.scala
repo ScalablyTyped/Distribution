@@ -41,20 +41,20 @@ object PagerOptions {
     selectTemplate: String = null
   ): PagerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind)
+    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.asInstanceOf[js.Any])
     if (buttonCount != null) __obj.updateDynamic("buttonCount")(buttonCount.asInstanceOf[js.Any])
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(info)) __obj.updateDynamic("info")(info)
-    if (!js.isUndefined(input)) __obj.updateDynamic("input")(input)
-    if (linkTemplate != null) __obj.updateDynamic("linkTemplate")(linkTemplate)
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(numeric)) __obj.updateDynamic("numeric")(numeric)
+    if (!js.isUndefined(info)) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (!js.isUndefined(input)) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (linkTemplate != null) __obj.updateDynamic("linkTemplate")(linkTemplate.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(numeric)) __obj.updateDynamic("numeric")(numeric.asInstanceOf[js.Any])
     if (pageSizes != null) __obj.updateDynamic("pageSizes")(pageSizes.asInstanceOf[js.Any])
-    if (!js.isUndefined(previousNext)) __obj.updateDynamic("previousNext")(previousNext)
-    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh)
-    if (selectTemplate != null) __obj.updateDynamic("selectTemplate")(selectTemplate)
+    if (!js.isUndefined(previousNext)) __obj.updateDynamic("previousNext")(previousNext.asInstanceOf[js.Any])
+    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh.asInstanceOf[js.Any])
+    if (selectTemplate != null) __obj.updateDynamic("selectTemplate")(selectTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PagerOptions]
   }
 }

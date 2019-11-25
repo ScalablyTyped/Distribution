@@ -12,7 +12,7 @@ trait IAuthenticationResultIntermediate extends js.Object {
 object IAuthenticationResultIntermediate {
   @scala.inline
   def apply(AttemptIdentifier: String, AuthenticationData: INamedValues): IAuthenticationResultIntermediate = {
-    val __obj = js.Dynamic.literal(AttemptIdentifier = AttemptIdentifier, AuthenticationData = AuthenticationData)
+    val __obj = js.Dynamic.literal(AttemptIdentifier = AttemptIdentifier.asInstanceOf[js.Any], AuthenticationData = AuthenticationData.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IAuthenticationResultIntermediate]
   }

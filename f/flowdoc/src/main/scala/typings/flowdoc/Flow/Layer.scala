@@ -25,9 +25,9 @@ object Layer {
     `type`: LAYER | HOTSPOT,
     connections: js.Array[Connection] = null
   ): Layer = {
-    val __obj = js.Dynamic.literal(id = id, name = name, position = position, size = size)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (connections != null) __obj.updateDynamic("connections")(connections)
+    if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layer]
   }
 }

@@ -37,11 +37,11 @@ object ActivePaneChangedEventUIParam {
     visibleRange: String = null
   ): ActivePaneChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (activeCell != null) __obj.updateDynamic("activeCell")(activeCell)
-    if (newActivePane != null) __obj.updateDynamic("newActivePane")(newActivePane)
-    if (oldActivePane != null) __obj.updateDynamic("oldActivePane")(oldActivePane)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (visibleRange != null) __obj.updateDynamic("visibleRange")(visibleRange)
+    if (activeCell != null) __obj.updateDynamic("activeCell")(activeCell.asInstanceOf[js.Any])
+    if (newActivePane != null) __obj.updateDynamic("newActivePane")(newActivePane.asInstanceOf[js.Any])
+    if (oldActivePane != null) __obj.updateDynamic("oldActivePane")(oldActivePane.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (visibleRange != null) __obj.updateDynamic("visibleRange")(visibleRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivePaneChangedEventUIParam]
   }
 }

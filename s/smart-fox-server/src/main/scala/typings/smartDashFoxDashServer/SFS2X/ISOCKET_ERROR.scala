@@ -11,7 +11,7 @@ trait ISOCKET_ERROR extends js.Object {
 object ISOCKET_ERROR {
   @scala.inline
   def apply(errorMessage: String): ISOCKET_ERROR = {
-    val __obj = js.Dynamic.literal(errorMessage = errorMessage)
+    val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISOCKET_ERROR]
   }

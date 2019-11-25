@@ -73,7 +73,7 @@ object HistogramRangeSliderViewModelProperties {
   ): HistogramRangeSliderViewModelProperties = {
     val __obj = js.Dynamic.literal()
     if (average != null) __obj.updateDynamic("average")(average.asInstanceOf[js.Any])
-    if (bins != null) __obj.updateDynamic("bins")(bins)
+    if (bins != null) __obj.updateDynamic("bins")(bins.asInstanceOf[js.Any])
     if (inputFormatFunction != null) __obj.updateDynamic("inputFormatFunction")(js.Any.fromFunction3(inputFormatFunction))
     if (inputParseFunction != null) __obj.updateDynamic("inputParseFunction")(js.Any.fromFunction3(inputParseFunction))
     if (labelFormatFunction != null) __obj.updateDynamic("labelFormatFunction")(js.Any.fromFunction3(labelFormatFunction))
@@ -82,8 +82,8 @@ object HistogramRangeSliderViewModelProperties {
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (rangeType != null) __obj.updateDynamic("rangeType")(rangeType.asInstanceOf[js.Any])
     if (standardDeviation != null) __obj.updateDynamic("standardDeviation")(standardDeviation.asInstanceOf[js.Any])
-    if (!js.isUndefined(thumbsConstrained)) __obj.updateDynamic("thumbsConstrained")(thumbsConstrained)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (!js.isUndefined(thumbsConstrained)) __obj.updateDynamic("thumbsConstrained")(thumbsConstrained.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistogramRangeSliderViewModelProperties]
   }
 }

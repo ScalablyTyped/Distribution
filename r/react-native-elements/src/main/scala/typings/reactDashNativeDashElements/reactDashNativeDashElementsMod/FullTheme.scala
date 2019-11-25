@@ -60,7 +60,7 @@ object FullTheme {
     Tooltip: Partial[TooltipProps],
     colors: RecursivePartial[Colors]
   ): FullTheme = {
-    val __obj = js.Dynamic.literal(AirbnbRating = AirbnbRating, Avatar = Avatar, Badge = Badge, Button = Button, ButtonGroup = ButtonGroup, Card = Card, CheckBox = CheckBox, Divider = Divider, Header = Header, Icon = Icon, Image = Image, Input = Input, ListItem = ListItem, Overlay = Overlay, PricingCard = PricingCard, Rating = Rating, SearchBar = SearchBar, Slider = Slider, SocialIcon = SocialIcon, Text = Text, Tile = Tile, Tooltip = Tooltip, colors = colors)
+    val __obj = js.Dynamic.literal(AirbnbRating = AirbnbRating.asInstanceOf[js.Any], Avatar = Avatar.asInstanceOf[js.Any], Badge = Badge.asInstanceOf[js.Any], Button = Button.asInstanceOf[js.Any], ButtonGroup = ButtonGroup.asInstanceOf[js.Any], Card = Card.asInstanceOf[js.Any], CheckBox = CheckBox.asInstanceOf[js.Any], Divider = Divider.asInstanceOf[js.Any], Header = Header.asInstanceOf[js.Any], Icon = Icon.asInstanceOf[js.Any], Image = Image.asInstanceOf[js.Any], Input = Input.asInstanceOf[js.Any], ListItem = ListItem.asInstanceOf[js.Any], Overlay = Overlay.asInstanceOf[js.Any], PricingCard = PricingCard.asInstanceOf[js.Any], Rating = Rating.asInstanceOf[js.Any], SearchBar = SearchBar.asInstanceOf[js.Any], Slider = Slider.asInstanceOf[js.Any], SocialIcon = SocialIcon.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any], Tile = Tile.asInstanceOf[js.Any], Tooltip = Tooltip.asInstanceOf[js.Any], colors = colors.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FullTheme]
   }

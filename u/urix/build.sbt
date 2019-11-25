@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "urix"
-version := "0.1-dt-20190101Z-f9715e"
+version := "0.1-dt-20190101Z-daa1d6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

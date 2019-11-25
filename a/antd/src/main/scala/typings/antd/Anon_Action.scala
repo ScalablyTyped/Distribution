@@ -14,7 +14,7 @@ trait Anon_Action extends js.Object {
 object Anon_Action {
   @scala.inline
   def apply(action: String, inputPrefixCls: String, prefixCls: String, visibilityToggle: Boolean): Anon_Action = {
-    val __obj = js.Dynamic.literal(action = action, inputPrefixCls = inputPrefixCls, prefixCls = prefixCls, visibilityToggle = visibilityToggle)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], inputPrefixCls = inputPrefixCls.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], visibilityToggle = visibilityToggle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Action]
   }

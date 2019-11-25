@@ -47,7 +47,7 @@ object Anon_Decorators {
     ] = null
   ): Anon_Decorators = {
     val __obj = js.Dynamic.literal()
-    if (__decorators__ != null) __obj.updateDynamic("__decorators__")(__decorators__)
+    if (__decorators__ != null) __obj.updateDynamic("__decorators__")(__decorators__.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Decorators]
   }
 }

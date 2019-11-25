@@ -33,9 +33,9 @@ trait CognitoProviderParameters extends js.Object {
 object CognitoProviderParameters {
   @scala.inline
   def apply(client: CognitoIdentityClient, customRoleArn: String = null, logins: Logins = null): CognitoProviderParameters = {
-    val __obj = js.Dynamic.literal(client = client)
-    if (customRoleArn != null) __obj.updateDynamic("customRoleArn")(customRoleArn)
-    if (logins != null) __obj.updateDynamic("logins")(logins)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
+    if (customRoleArn != null) __obj.updateDynamic("customRoleArn")(customRoleArn.asInstanceOf[js.Any])
+    if (logins != null) __obj.updateDynamic("logins")(logins.asInstanceOf[js.Any])
     __obj.asInstanceOf[CognitoProviderParameters]
   }
 }

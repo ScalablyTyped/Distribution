@@ -38,7 +38,7 @@ package object reactDashTrackingMod {
   type TrackingInfo[T, P, S] = T | (js.Function3[
     /* props */ P, 
     /* state */ S, 
-    /* import warning: ImportType.apply Failed type conversion: any[any] */ /* args */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: any[any] */ /* args */ js.Any, 
     T
   ])
 }

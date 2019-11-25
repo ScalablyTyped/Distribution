@@ -13,8 +13,8 @@ trait Anon_Href
 object Anon_Href {
   @scala.inline
   def apply(href: String, StringDictionary: /* k */ StringDictionary[js.Any] = null): Anon_Href = {
-    val __obj = js.Dynamic.literal(href = href)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Href]
   }
 }

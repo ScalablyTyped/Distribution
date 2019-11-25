@@ -13,7 +13,7 @@ trait LineComputedSerieDatum extends js.Object {
 object LineComputedSerieDatum {
   @scala.inline
   def apply(data: LineDatum, position: Anon_X): LineComputedSerieDatum = {
-    val __obj = js.Dynamic.literal(data = data, position = position)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LineComputedSerieDatum]
   }

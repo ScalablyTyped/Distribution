@@ -31,10 +31,10 @@ object IcalAttachment {
   ): IcalAttachment = {
     val __obj = js.Dynamic.literal()
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href)
-    if (method != null) __obj.updateDynamic("method")(method)
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[IcalAttachment]
   }

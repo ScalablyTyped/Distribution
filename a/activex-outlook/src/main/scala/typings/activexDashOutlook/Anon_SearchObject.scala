@@ -12,7 +12,7 @@ trait Anon_SearchObject extends js.Object {
 object Anon_SearchObject {
   @scala.inline
   def apply(SearchObject: Search): Anon_SearchObject = {
-    val __obj = js.Dynamic.literal(SearchObject = SearchObject)
+    val __obj = js.Dynamic.literal(SearchObject = SearchObject.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SearchObject]
   }

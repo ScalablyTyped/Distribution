@@ -12,7 +12,7 @@ object GridGroupableMessages {
   @scala.inline
   def apply(empty: String = null): GridGroupableMessages = {
     val __obj = js.Dynamic.literal()
-    if (empty != null) __obj.updateDynamic("empty")(empty)
+    if (empty != null) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridGroupableMessages]
   }
 }

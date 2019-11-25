@@ -162,7 +162,7 @@ object Plugin {
     validateNode: (/* node */ Node, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[Unit]) => SlateError | Unit = null
   ): Plugin = {
     val __obj = js.Dynamic.literal()
-    if (commands != null) __obj.updateDynamic("commands")(commands)
+    if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
     if (decorateNode != null) __obj.updateDynamic("decorateNode")(js.Any.fromFunction3(decorateNode))
     if (normalizeNode != null) __obj.updateDynamic("normalizeNode")(js.Any.fromFunction3(normalizeNode))
     if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(js.Any.fromFunction3(onBeforeInput))
@@ -188,7 +188,7 @@ object Plugin {
     if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction3(onPaste))
     if (onQuery != null) __obj.updateDynamic("onQuery")(js.Any.fromFunction3(onQuery))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction3(onSelect))
-    if (queries != null) __obj.updateDynamic("queries")(queries)
+    if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
     if (renderAnnotation != null) __obj.updateDynamic("renderAnnotation")(js.Any.fromFunction3(renderAnnotation))
     if (renderBlock != null) __obj.updateDynamic("renderBlock")(js.Any.fromFunction3(renderBlock))
     if (renderDecoration != null) __obj.updateDynamic("renderDecoration")(js.Any.fromFunction3(renderDecoration))
@@ -196,7 +196,7 @@ object Plugin {
     if (renderEditor != null) __obj.updateDynamic("renderEditor")(js.Any.fromFunction3(renderEditor))
     if (renderInline != null) __obj.updateDynamic("renderInline")(js.Any.fromFunction3(renderInline))
     if (renderMark != null) __obj.updateDynamic("renderMark")(js.Any.fromFunction3(renderMark))
-    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     if (shouldNodeComponentUpdate != null) __obj.updateDynamic("shouldNodeComponentUpdate")(js.Any.fromFunction4(shouldNodeComponentUpdate))
     if (validateNode != null) __obj.updateDynamic("validateNode")(js.Any.fromFunction3(validateNode))
     __obj.asInstanceOf[Plugin]

@@ -22,8 +22,8 @@ trait StaticWhichOptions extends js.Object {
 object StaticWhichOptions {
   @scala.inline
   def apply(cwd: String, env: ProcessEnv = null): StaticWhichOptions = {
-    val __obj = js.Dynamic.literal(cwd = cwd)
-    if (env != null) __obj.updateDynamic("env")(env)
+    val __obj = js.Dynamic.literal(cwd = cwd.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticWhichOptions]
   }
 }

@@ -39,7 +39,7 @@ object CallFrame {
     scriptId: ScriptId,
     url: java.lang.String
   ): CallFrame = {
-    val __obj = js.Dynamic.literal(columnNumber = columnNumber, functionName = functionName, lineNumber = lineNumber, scriptId = scriptId, url = url)
+    val __obj = js.Dynamic.literal(columnNumber = columnNumber.asInstanceOf[js.Any], functionName = functionName.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], scriptId = scriptId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CallFrame]
   }

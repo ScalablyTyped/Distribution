@@ -29,13 +29,13 @@ object ValidatorOptions {
     min: String = null,
     translationKey: String = null
   ): ValidatorOptions = {
-    val __obj = js.Dynamic.literal(converter = converter)
-    if (hint != null) __obj.updateDynamic("hint")(hint)
-    if (max != null) __obj.updateDynamic("max")(max)
-    if (messageDetail != null) __obj.updateDynamic("messageDetail")(messageDetail)
-    if (messageSummary != null) __obj.updateDynamic("messageSummary")(messageSummary)
-    if (min != null) __obj.updateDynamic("min")(min)
-    if (translationKey != null) __obj.updateDynamic("translationKey")(translationKey)
+    val __obj = js.Dynamic.literal(converter = converter.asInstanceOf[js.Any])
+    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (messageDetail != null) __obj.updateDynamic("messageDetail")(messageDetail.asInstanceOf[js.Any])
+    if (messageSummary != null) __obj.updateDynamic("messageSummary")(messageSummary.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (translationKey != null) __obj.updateDynamic("translationKey")(translationKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidatorOptions]
   }
 }

@@ -30,11 +30,11 @@ object ImageProperties {
     val __obj = js.Dynamic.literal()
     if (brightness != null) __obj.updateDynamic("brightness")(brightness.asInstanceOf[js.Any])
     if (contrast != null) __obj.updateDynamic("contrast")(contrast.asInstanceOf[js.Any])
-    if (cropProperties != null) __obj.updateDynamic("cropProperties")(cropProperties)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (outline != null) __obj.updateDynamic("outline")(outline)
-    if (recolor != null) __obj.updateDynamic("recolor")(recolor)
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow)
+    if (cropProperties != null) __obj.updateDynamic("cropProperties")(cropProperties.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
+    if (recolor != null) __obj.updateDynamic("recolor")(recolor.asInstanceOf[js.Any])
+    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
     if (transparency != null) __obj.updateDynamic("transparency")(transparency.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageProperties]
   }

@@ -15,7 +15,7 @@ object Anon_Iconemoji {
   @scala.inline
   def apply(key: icon_url | icon_emoji, `val`: String): Anon_Iconemoji = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    __obj.updateDynamic("val")(`val`)
+    __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Iconemoji]
   }
 }

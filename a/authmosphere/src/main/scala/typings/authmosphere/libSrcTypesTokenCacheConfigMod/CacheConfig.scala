@@ -11,7 +11,7 @@ trait CacheConfig extends js.Object {
 object CacheConfig {
   @scala.inline
   def apply(percentageLeft: Double): CacheConfig = {
-    val __obj = js.Dynamic.literal(percentageLeft = percentageLeft)
+    val __obj = js.Dynamic.literal(percentageLeft = percentageLeft.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CacheConfig]
   }

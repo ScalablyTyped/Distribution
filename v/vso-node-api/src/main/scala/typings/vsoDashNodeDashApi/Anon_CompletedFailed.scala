@@ -14,7 +14,7 @@ trait Anon_CompletedFailed extends js.Object {
 object Anon_CompletedFailed {
   @scala.inline
   def apply(completed: Double, failed: Double, inprogress: Double, skipped: Double): Anon_CompletedFailed = {
-    val __obj = js.Dynamic.literal(completed = completed, failed = failed, inprogress = inprogress, skipped = skipped)
+    val __obj = js.Dynamic.literal(completed = completed.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], inprogress = inprogress.asInstanceOf[js.Any], skipped = skipped.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CompletedFailed]
   }

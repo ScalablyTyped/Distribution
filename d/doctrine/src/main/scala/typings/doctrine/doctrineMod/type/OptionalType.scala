@@ -13,8 +13,8 @@ trait OptionalType extends Type {
 object OptionalType {
   @scala.inline
   def apply(expression: Type, `type`: typings.doctrine.doctrineStrings.OptionalType): OptionalType = {
-    val __obj = js.Dynamic.literal(expression = expression)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionalType]
   }
 }

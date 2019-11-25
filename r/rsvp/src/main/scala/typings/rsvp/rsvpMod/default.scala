@@ -236,7 +236,7 @@ object default extends js.Object {
   ): js.Function1[
     /* arg1 */ A, 
     typings.rsvp.rsvpMod.RSVP.Promise[
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in K1 ]: T}
     */ typings.rsvp.rsvpStrings.denodeify with js.Any
     ]
@@ -424,32 +424,32 @@ object default extends js.Object {
   ): typings.rsvp.rsvpMod.RSVP.Promise[js.Array[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10]] = js.native
   // ----- hash and hashSettled ----- //
   def hash[T](
-    `object`: /* import warning: ImportType.apply c Unsupported type mapping: 
+    `object`: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
     */ typings.rsvp.rsvpStrings.hash with T
   ): typings.rsvp.rsvpMod.RSVP.Promise[T] = js.native
   def hash[T](
-    `object`: /* import warning: ImportType.apply c Unsupported type mapping: 
+    `object`: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
     */ typings.rsvp.rsvpStrings.hash with T,
     label: String
   ): typings.rsvp.rsvpMod.RSVP.Promise[T] = js.native
   def hashSettled[T](
-    `object`: /* import warning: ImportType.apply c Unsupported type mapping: 
+    `object`: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
     */ typings.rsvp.rsvpStrings.hashSettled with T
   ): typings.rsvp.rsvpMod.RSVP.Promise[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>}
     */ typings.rsvp.rsvpStrings.hashSettled with T
   ] = js.native
   def hashSettled[T](
-    `object`: /* import warning: ImportType.apply c Unsupported type mapping: 
+    `object`: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
     */ typings.rsvp.rsvpStrings.hashSettled with T,
     label: String
   ): typings.rsvp.rsvpMod.RSVP.Promise[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>}
     */ typings.rsvp.rsvpStrings.hashSettled with T
   ] = js.native

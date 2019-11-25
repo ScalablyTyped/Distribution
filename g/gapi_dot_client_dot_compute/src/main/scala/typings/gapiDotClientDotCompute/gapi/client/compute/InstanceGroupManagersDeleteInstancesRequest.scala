@@ -13,7 +13,7 @@ object InstanceGroupManagersDeleteInstancesRequest {
   @scala.inline
   def apply(instances: js.Array[String] = null): InstanceGroupManagersDeleteInstancesRequest = {
     val __obj = js.Dynamic.literal()
-    if (instances != null) __obj.updateDynamic("instances")(instances)
+    if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceGroupManagersDeleteInstancesRequest]
   }
 }

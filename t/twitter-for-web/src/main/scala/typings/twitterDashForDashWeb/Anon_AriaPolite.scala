@@ -46,10 +46,10 @@ object Anon_AriaPolite {
   ): Anon_AriaPolite = {
     val __obj = js.Dynamic.literal()
     if (ariaPolite != null) __obj.updateDynamic("ariaPolite")(ariaPolite.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
-    if (chrome != null) __obj.updateDynamic("chrome")(chrome)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (chrome != null) __obj.updateDynamic("chrome")(chrome.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(showReplies)) __obj.updateDynamic("showReplies")(showReplies)
+    if (!js.isUndefined(showReplies)) __obj.updateDynamic("showReplies")(showReplies.asInstanceOf[js.Any])
     if (tweetLimit != null) __obj.updateDynamic("tweetLimit")(tweetLimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AriaPolite]
   }

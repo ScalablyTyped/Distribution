@@ -26,13 +26,13 @@ object Options {
     tailSpace: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (classSeparator != null) __obj.updateDynamic("classSeparator")(classSeparator)
-    if (elementSeparator != null) __obj.updateDynamic("elementSeparator")(elementSeparator)
-    if (!js.isUndefined(isFullBoolValue)) __obj.updateDynamic("isFullBoolValue")(isFullBoolValue)
-    if (!js.isUndefined(isFullModifier)) __obj.updateDynamic("isFullModifier")(isFullModifier)
-    if (modSeparator != null) __obj.updateDynamic("modSeparator")(modSeparator)
-    if (modValueSeparator != null) __obj.updateDynamic("modValueSeparator")(modValueSeparator)
-    if (tailSpace != null) __obj.updateDynamic("tailSpace")(tailSpace)
+    if (classSeparator != null) __obj.updateDynamic("classSeparator")(classSeparator.asInstanceOf[js.Any])
+    if (elementSeparator != null) __obj.updateDynamic("elementSeparator")(elementSeparator.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFullBoolValue)) __obj.updateDynamic("isFullBoolValue")(isFullBoolValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFullModifier)) __obj.updateDynamic("isFullModifier")(isFullModifier.asInstanceOf[js.Any])
+    if (modSeparator != null) __obj.updateDynamic("modSeparator")(modSeparator.asInstanceOf[js.Any])
+    if (modValueSeparator != null) __obj.updateDynamic("modValueSeparator")(modValueSeparator.asInstanceOf[js.Any])
+    if (tailSpace != null) __obj.updateDynamic("tailSpace")(tailSpace.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

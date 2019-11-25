@@ -25,12 +25,12 @@ object Anon_AdditionalGuests {
     optional: js.UndefOr[Boolean] = js.undefined,
     responseStatus: AttendeeResponseStatus = null
   ): Anon_AdditionalGuests = {
-    val __obj = js.Dynamic.literal(email = email)
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
     if (additionalGuests != null) __obj.updateDynamic("additionalGuests")(additionalGuests.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
-    if (responseStatus != null) __obj.updateDynamic("responseStatus")(responseStatus)
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (responseStatus != null) __obj.updateDynamic("responseStatus")(responseStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AdditionalGuests]
   }
 }

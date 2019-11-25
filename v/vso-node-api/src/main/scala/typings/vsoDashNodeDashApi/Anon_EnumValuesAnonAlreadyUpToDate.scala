@@ -11,7 +11,7 @@ trait Anon_EnumValuesAnonAlreadyUpToDate extends js.Object {
 object Anon_EnumValuesAnonAlreadyUpToDate {
   @scala.inline
   def apply(enumValues: Anon_AlreadyUpToDate): Anon_EnumValuesAnonAlreadyUpToDate = {
-    val __obj = js.Dynamic.literal(enumValues = enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnumValuesAnonAlreadyUpToDate]
   }

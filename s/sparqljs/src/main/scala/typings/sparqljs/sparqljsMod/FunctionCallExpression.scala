@@ -22,9 +22,9 @@ object FunctionCallExpression {
     `type`: functionCall,
     distinct: js.UndefOr[Boolean] = js.undefined
   ): FunctionCallExpression = {
-    val __obj = js.Dynamic.literal(args = args, function = function)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], function = function.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionCallExpression]
   }
 }

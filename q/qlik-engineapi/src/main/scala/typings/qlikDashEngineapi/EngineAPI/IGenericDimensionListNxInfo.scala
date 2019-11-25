@@ -16,8 +16,8 @@ trait IGenericDimensionListNxInfo extends INxInfo {
 object IGenericDimensionListNxInfo {
   @scala.inline
   def apply(qType: DimensionList, qId: String = null): IGenericDimensionListNxInfo = {
-    val __obj = js.Dynamic.literal(qType = qType)
-    if (qId != null) __obj.updateDynamic("qId")(qId)
+    val __obj = js.Dynamic.literal(qType = qType.asInstanceOf[js.Any])
+    if (qId != null) __obj.updateDynamic("qId")(qId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGenericDimensionListNxInfo]
   }
 }

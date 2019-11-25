@@ -13,7 +13,7 @@ object GetPeopleResponse {
   @scala.inline
   def apply(responses: js.Array[PersonResponse] = null): GetPeopleResponse = {
     val __obj = js.Dynamic.literal()
-    if (responses != null) __obj.updateDynamic("responses")(responses)
+    if (responses != null) __obj.updateDynamic("responses")(responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPeopleResponse]
   }
 }

@@ -28,14 +28,14 @@ object Anon_Bio {
     username: String = null
   ): Anon_Bio = {
     val __obj = js.Dynamic.literal()
-    if (bio != null) __obj.updateDynamic("bio")(bio)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (firstName != null) __obj.updateDynamic("firstName")(firstName)
-    if (instagramUsername != null) __obj.updateDynamic("instagramUsername")(instagramUsername)
-    if (lastName != null) __obj.updateDynamic("lastName")(lastName)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (bio != null) __obj.updateDynamic("bio")(bio.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (firstName != null) __obj.updateDynamic("firstName")(firstName.asInstanceOf[js.Any])
+    if (instagramUsername != null) __obj.updateDynamic("instagramUsername")(instagramUsername.asInstanceOf[js.Any])
+    if (lastName != null) __obj.updateDynamic("lastName")(lastName.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bio]
   }
 }

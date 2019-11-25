@@ -21,7 +21,7 @@ object _VaultNotificationConfig {
   def apply(Events: js.Array[String] | Iterable[String] = null, SNSTopic: String = null): _VaultNotificationConfig = {
     val __obj = js.Dynamic.literal()
     if (Events != null) __obj.updateDynamic("Events")(Events.asInstanceOf[js.Any])
-    if (SNSTopic != null) __obj.updateDynamic("SNSTopic")(SNSTopic)
+    if (SNSTopic != null) __obj.updateDynamic("SNSTopic")(SNSTopic.asInstanceOf[js.Any])
     __obj.asInstanceOf[_VaultNotificationConfig]
   }
 }

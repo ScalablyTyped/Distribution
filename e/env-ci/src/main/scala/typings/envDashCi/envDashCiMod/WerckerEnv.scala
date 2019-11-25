@@ -2,7 +2,7 @@ package typings.envDashCi.envDashCiMod
 
 import typings.envDashCi.envDashCiNumbers.`true`
 import typings.envDashCi.envDashCiStrings.Wercker
-import typings.envDashCi.envDashCiStrings.wercker
+import typings.envDashCi.envDashCiStrings.wercker_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ trait WerckerEnv
   var commit: String
   var name: Wercker
   var root: String
-  var service: wercker
+  var service: wercker_
   var slug: String
 }
 
@@ -30,10 +30,10 @@ object WerckerEnv {
     isCi: `true`,
     name: Wercker,
     root: String,
-    service: wercker,
+    service: wercker_,
     slug: String
   ): WerckerEnv = {
-    val __obj = js.Dynamic.literal(branch = branch, build = build, buildUrl = buildUrl, commit = commit, isCi = isCi, name = name, root = root, service = service, slug = slug)
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WerckerEnv]
   }

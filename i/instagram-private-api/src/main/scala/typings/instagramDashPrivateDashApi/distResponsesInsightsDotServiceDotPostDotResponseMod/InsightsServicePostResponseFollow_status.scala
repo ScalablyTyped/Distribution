@@ -11,7 +11,7 @@ trait InsightsServicePostResponseFollow_status extends js.Object {
 object InsightsServicePostResponseFollow_status {
   @scala.inline
   def apply(nodes: js.Array[InsightsServicePostResponseNodesItem]): InsightsServicePostResponseFollow_status = {
-    val __obj = js.Dynamic.literal(nodes = nodes)
+    val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServicePostResponseFollow_status]
   }

@@ -12,7 +12,7 @@ trait Anon_ForwardRef extends js.Object {
 object Anon_ForwardRef {
   @scala.inline
   def apply(forwardRef: `true`): Anon_ForwardRef = {
-    val __obj = js.Dynamic.literal(forwardRef = forwardRef)
+    val __obj = js.Dynamic.literal(forwardRef = forwardRef.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ForwardRef]
   }

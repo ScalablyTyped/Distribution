@@ -33,9 +33,9 @@ object LegendDataObject {
   @scala.inline
   def apply(icon: String = null, name: String = null, textStyle: TextStyle = null): LegendDataObject = {
     val __obj = js.Dynamic.literal()
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendDataObject]
   }
 }

@@ -17,10 +17,10 @@ object MultiCacheQueryOptions {
     ignoreVary: js.UndefOr[scala.Boolean] = js.undefined
   ): MultiCacheQueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (cacheName != null) __obj.updateDynamic("cacheName")(cacheName)
-    if (!js.isUndefined(ignoreMethod)) __obj.updateDynamic("ignoreMethod")(ignoreMethod)
-    if (!js.isUndefined(ignoreSearch)) __obj.updateDynamic("ignoreSearch")(ignoreSearch)
-    if (!js.isUndefined(ignoreVary)) __obj.updateDynamic("ignoreVary")(ignoreVary)
+    if (cacheName != null) __obj.updateDynamic("cacheName")(cacheName.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreMethod)) __obj.updateDynamic("ignoreMethod")(ignoreMethod.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreSearch)) __obj.updateDynamic("ignoreSearch")(ignoreSearch.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreVary)) __obj.updateDynamic("ignoreVary")(ignoreVary.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiCacheQueryOptions]
   }
 }

@@ -40,9 +40,9 @@ object Waypoint {
     bearing: js.Array[Double] = null,
     waypointName: String = null
   ): Waypoint = {
-    val __obj = js.Dynamic.literal(location = location, name = name)
-    if (bearing != null) __obj.updateDynamic("bearing")(bearing)
-    if (waypointName != null) __obj.updateDynamic("waypointName")(waypointName)
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
+    if (waypointName != null) __obj.updateDynamic("waypointName")(waypointName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Waypoint]
   }
 }

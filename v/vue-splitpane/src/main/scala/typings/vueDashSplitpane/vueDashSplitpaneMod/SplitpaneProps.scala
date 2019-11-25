@@ -15,7 +15,7 @@ trait SplitpaneProps extends js.Object {
 object SplitpaneProps {
   @scala.inline
   def apply(className: String, defaultPercent: Double, minPercent: Double, split: String): SplitpaneProps = {
-    val __obj = js.Dynamic.literal(className = className, defaultPercent = defaultPercent, minPercent = minPercent, split = split)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], defaultPercent = defaultPercent.asInstanceOf[js.Any], minPercent = minPercent.asInstanceOf[js.Any], split = split.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SplitpaneProps]
   }

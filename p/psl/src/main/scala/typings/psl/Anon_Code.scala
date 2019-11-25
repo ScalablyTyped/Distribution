@@ -22,7 +22,7 @@ object Anon_Code {
     code: DOMAIN_TOO_SHORT | DOMAIN_TOO_LONG | LABEL_STARTS_WITH_DASH | LABEL_ENDS_WITH_DASH | LABEL_TOO_LONG | LABEL_TOO_SHORT | LABEL_INVALID_CHARS,
     message: String
   ): Anon_Code = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Code]
   }

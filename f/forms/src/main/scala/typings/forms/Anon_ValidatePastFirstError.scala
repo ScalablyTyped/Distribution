@@ -13,7 +13,7 @@ object Anon_ValidatePastFirstError {
   @scala.inline
   def apply(validatePastFirstError: js.UndefOr[Boolean] = js.undefined): Anon_ValidatePastFirstError = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(validatePastFirstError)) __obj.updateDynamic("validatePastFirstError")(validatePastFirstError)
+    if (!js.isUndefined(validatePastFirstError)) __obj.updateDynamic("validatePastFirstError")(validatePastFirstError.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ValidatePastFirstError]
   }
 }

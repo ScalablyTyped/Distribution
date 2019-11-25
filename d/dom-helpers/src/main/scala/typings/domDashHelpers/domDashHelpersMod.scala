@@ -3798,10 +3798,12 @@ object domDashHelpersMod extends js.Object {
   ): Unit = js.native
   def scrollParent(element: HTMLElement): Document | HTMLElement = js.native
   def scrollParent(element: HTMLElement, firstPossible: Boolean): Document | HTMLElement = js.native
+  def scrollTop(node: Element): Double = js.native
+  def scrollTop(node: Element, `val`: Double): js.UndefOr[scala.Nothing] = js.native
   def style(node: HTMLElement, property: Partial[Record[Property, String]]): Unit = js.native
-  def style[T /* <: HyphenProperty */](node: HTMLElement, property: T): /* import warning: ImportType.apply Failed type conversion: csstype.csstype.PropertiesHyphen<string | 0>[T] */ js.Any = js.native
+  def style[T /* <: HyphenProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string | 0>[T] */ js.Any = js.native
   @JSName("style")
-  def style_T_CamelProperty[T /* <: CamelProperty */](node: HTMLElement, property: T): /* import warning: ImportType.apply Failed type conversion: csstype.csstype.Properties<string | 0>[T] */ js.Any = js.native
+  def style_T_CamelProperty[T /* <: CamelProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string | 0>[T] */ js.Any = js.native
   def toggleClass(element: Element, className: String): Unit = js.native
   def toggleClass(element: SVGElement, className: String): Unit = js.native
   def width(node: HTMLElement): Double = js.native
@@ -3855,8 +3857,6 @@ object domDashHelpersMod extends js.Object {
         /* firstPossible */ js.UndefOr[Boolean], 
         Document | HTMLElement
       ] = js.native
-    @JSName("scrollTop")
-    var scrollTop_Original: Fn_Node = js.native
     @JSName("style")
     var style_Original: Fn_0 = js.native
     @JSName("toggleClass")
@@ -7546,19 +7546,13 @@ object domDashHelpersMod extends js.Object {
     def scrollTop(node: Element): Double = js.native
     def scrollTop(node: Element, `val`: Double): js.UndefOr[scala.Nothing] = js.native
     def style(node: HTMLElement, property: Partial[Record[Property, String]]): Unit = js.native
-    def style[T /* <: HyphenProperty */](node: HTMLElement, property: T): /* import warning: ImportType.apply Failed type conversion: csstype.csstype.PropertiesHyphen<string | 0>[T] */ js.Any = js.native
+    def style[T /* <: HyphenProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string | 0>[T] */ js.Any = js.native
     @JSName("style")
-    def style_T_CamelProperty[T /* <: CamelProperty */](node: HTMLElement, property: T): /* import warning: ImportType.apply Failed type conversion: csstype.csstype.Properties<string | 0>[T] */ js.Any = js.native
+    def style_T_CamelProperty[T /* <: CamelProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string | 0>[T] */ js.Any = js.native
     def toggleClass(element: Element, className: String): Unit = js.native
     def toggleClass(element: SVGElement, className: String): Unit = js.native
     def width(node: HTMLElement): Double = js.native
     def width(node: HTMLElement, client: Boolean): Double = js.native
-  }
-  
-  @js.native
-  object scrollTop extends js.Object {
-    def apply(node: Element): Double = js.native
-    def apply(node: Element, `val`: Double): js.UndefOr[scala.Nothing] = js.native
   }
   
 }

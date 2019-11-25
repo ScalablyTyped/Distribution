@@ -14,7 +14,7 @@ trait CustomerCount extends js.Object {
 object CustomerCount {
   @scala.inline
   def apply(customers: Double, date: String): CustomerCount = {
-    val __obj = js.Dynamic.literal(customers = customers, date = date)
+    val __obj = js.Dynamic.literal(customers = customers.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CustomerCount]
   }

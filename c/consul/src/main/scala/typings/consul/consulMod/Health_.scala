@@ -1,9 +1,5 @@
 package typings.consul.consulMod
 
-import typings.consul.Fn_CallbackNodeOptsNodeOptions
-import typings.consul.Fn_CallbackOptsServiceChecksOptions
-import typings.consul.Fn_CallbackOptsServiceServiceOptions
-import typings.consul.Fn_CallbackOptsState
 import typings.consul.consulMod.Health.ChecksOptions
 import typings.consul.consulMod.Health.NodeOptions
 import typings.consul.consulMod.Health.ServiceOptions
@@ -15,27 +11,7 @@ import scala.scalajs.js.annotation._
 @JSName("Health")
 @js.native
 trait Health_ extends js.Object {
-  /**
-    * Returns the checks of a service
-    */
-  @JSName("checks")
-  var checks_Original: Fn_CallbackOptsServiceChecksOptions = js.native
   var consul: Consul = js.native
-  /**
-    * Returns the health info of a node
-    */
-  @JSName("node")
-  var node_Original: Fn_CallbackNodeOptsNodeOptions = js.native
-  /**
-    * Returns the nodes and health info of a service
-    */
-  @JSName("service")
-  var service_Original: Fn_CallbackOptsServiceServiceOptions = js.native
-  /**
-    * Returns the checks in a given state
-    */
-  @JSName("state")
-  var state_Original: Fn_CallbackOptsState = js.native
   /**
     * Returns the checks of a service
     */

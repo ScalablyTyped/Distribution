@@ -136,7 +136,7 @@ object JobCreationParameters {
     startDate: Date,
     user: String
   ): JobCreationParameters = {
-    val __obj = js.Dynamic.literal(assignedTo = assignedTo, assignedType = assignedType, autoCommitWorkflow = autoCommitWorkflow, autoExecute = autoExecute, constructor = constructor, dataWorkspaceId = dataWorkspaceId, description = description, dueDate = dueDate, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobTypeId = jobTypeId, loi = loi, name = name, numJobs = numJobs, ownedBy = ownedBy, parentJobId = parentJobId, parentVersion = parentVersion, priority = priority, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), startDate = startDate, user = user)
+    val __obj = js.Dynamic.literal(assignedTo = assignedTo.asInstanceOf[js.Any], assignedType = assignedType.asInstanceOf[js.Any], autoCommitWorkflow = autoCommitWorkflow.asInstanceOf[js.Any], autoExecute = autoExecute.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], dataWorkspaceId = dataWorkspaceId.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], dueDate = dueDate.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), jobTypeId = jobTypeId.asInstanceOf[js.Any], loi = loi.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], numJobs = numJobs.asInstanceOf[js.Any], ownedBy = ownedBy.asInstanceOf[js.Any], parentJobId = parentJobId.asInstanceOf[js.Any], parentVersion = parentVersion.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), startDate = startDate.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JobCreationParameters]
   }

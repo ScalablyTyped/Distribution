@@ -14,9 +14,9 @@ object UpdateVideoPropertiesRequest {
   @scala.inline
   def apply(fields: String = null, objectId: String = null, videoProperties: VideoProperties = null): UpdateVideoPropertiesRequest = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
-    if (videoProperties != null) __obj.updateDynamic("videoProperties")(videoProperties)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
+    if (videoProperties != null) __obj.updateDynamic("videoProperties")(videoProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateVideoPropertiesRequest]
   }
 }

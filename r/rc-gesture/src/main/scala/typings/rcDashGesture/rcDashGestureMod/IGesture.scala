@@ -91,8 +91,8 @@ object IGesture {
   ): IGesture = {
     val __obj = js.Dynamic.literal()
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePinch)) __obj.updateDynamic("enablePinch")(enablePinch)
-    if (!js.isUndefined(enableRotate)) __obj.updateDynamic("enableRotate")(enableRotate)
+    if (!js.isUndefined(enablePinch)) __obj.updateDynamic("enablePinch")(enablePinch.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRotate)) __obj.updateDynamic("enableRotate")(enableRotate.asInstanceOf[js.Any])
     if (onPan != null) __obj.updateDynamic("onPan")(js.Any.fromFunction1(onPan))
     if (onPanCancel != null) __obj.updateDynamic("onPanCancel")(js.Any.fromFunction1(onPanCancel))
     if (onPanDown != null) __obj.updateDynamic("onPanDown")(js.Any.fromFunction1(onPanDown))

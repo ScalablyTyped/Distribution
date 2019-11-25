@@ -25,11 +25,11 @@ object TeamsApp {
     id: String = null
   ): TeamsApp = {
     val __obj = js.Dynamic.literal()
-    if (appDefinitions != null) __obj.updateDynamic("appDefinitions")(appDefinitions)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (distributionMethod != null) __obj.updateDynamic("distributionMethod")(distributionMethod)
-    if (externalId != null) __obj.updateDynamic("externalId")(externalId)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (appDefinitions != null) __obj.updateDynamic("appDefinitions")(appDefinitions.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (distributionMethod != null) __obj.updateDynamic("distributionMethod")(distributionMethod.asInstanceOf[js.Any])
+    if (externalId != null) __obj.updateDynamic("externalId")(externalId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsApp]
   }
 }

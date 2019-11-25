@@ -20,8 +20,8 @@ object ECPairOptions {
     rng: /* arg0 */ Double => Buffer = null
   ): ECPairOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compressed)) __obj.updateDynamic("compressed")(compressed)
-    if (network != null) __obj.updateDynamic("network")(network)
+    if (!js.isUndefined(compressed)) __obj.updateDynamic("compressed")(compressed.asInstanceOf[js.Any])
+    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
     if (rng != null) __obj.updateDynamic("rng")(js.Any.fromFunction1(rng))
     __obj.asInstanceOf[ECPairOptions]
   }

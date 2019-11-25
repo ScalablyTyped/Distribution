@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait IdentifierQualifier extends js.Object
 
+object IdentifierQualifier {
+  @scala.inline
+  def OIDAsURI: typings.xadesjs.xadesjsStrings.OIDAsURI = this.cast("OIDAsURI")
+  @scala.inline
+  def OIDAsURN: typings.xadesjs.xadesjsStrings.OIDAsURN = this.cast("OIDAsURN")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

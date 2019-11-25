@@ -15,7 +15,7 @@ object GooglePrivacyDlpV2beta1KAnonymityResult {
     equivalenceClassHistogramBuckets: js.Array[GooglePrivacyDlpV2beta1KAnonymityHistogramBucket] = null
   ): GooglePrivacyDlpV2beta1KAnonymityResult = {
     val __obj = js.Dynamic.literal()
-    if (equivalenceClassHistogramBuckets != null) __obj.updateDynamic("equivalenceClassHistogramBuckets")(equivalenceClassHistogramBuckets)
+    if (equivalenceClassHistogramBuckets != null) __obj.updateDynamic("equivalenceClassHistogramBuckets")(equivalenceClassHistogramBuckets.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1KAnonymityResult]
   }
 }

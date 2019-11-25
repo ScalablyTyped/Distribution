@@ -57,39 +57,27 @@ object IDatePicker {
     getDatePicker: () => Unit = null,
     getDestroyPickerOnHide: () => Boolean = null,
     getFormattedValue: /* format */ js.UndefOr[java.lang.String] => java.lang.String = null,
-    getUi: () => java.lang.String = null,
-    getValue: () => _ = null,
     onChange: () => Unit = null,
     picker: js.Any = null,
     reset: () => ISelect = null,
     setDateFormat: /* dateFormat */ js.UndefOr[java.lang.String] => Unit = null,
     setDestroyPickerOnHide: /* destroyPickerOnHide */ js.UndefOr[Boolean] => Unit = null,
-    setPicker: /* picker */ js.UndefOr[js.Any] => Unit = null,
-    setUi: /* ui */ js.UndefOr[java.lang.String] => Unit = null,
-    setValue: /* value */ js.UndefOr[js.Any] => Unit = null,
-    ui: java.lang.String = null,
-    value: js.Any = null
+    setPicker: /* picker */ js.UndefOr[js.Any] => Unit = null
   ): IDatePicker = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, ISelect)
-    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
-    if (!js.isUndefined(destroyPickerOnHide)) __obj.updateDynamic("destroyPickerOnHide")(destroyPickerOnHide)
+    if (ISelect != null) js.Dynamic.global.Object.assign(__obj, ISelect)
+    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyPickerOnHide)) __obj.updateDynamic("destroyPickerOnHide")(destroyPickerOnHide.asInstanceOf[js.Any])
     if (getDateFormat != null) __obj.updateDynamic("getDateFormat")(js.Any.fromFunction0(getDateFormat))
     if (getDatePicker != null) __obj.updateDynamic("getDatePicker")(js.Any.fromFunction0(getDatePicker))
     if (getDestroyPickerOnHide != null) __obj.updateDynamic("getDestroyPickerOnHide")(js.Any.fromFunction0(getDestroyPickerOnHide))
     if (getFormattedValue != null) __obj.updateDynamic("getFormattedValue")(js.Any.fromFunction1(getFormattedValue))
-    if (getUi != null) __obj.updateDynamic("getUi")(js.Any.fromFunction0(getUi))
-    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction0(onChange))
-    if (picker != null) __obj.updateDynamic("picker")(picker)
+    if (picker != null) __obj.updateDynamic("picker")(picker.asInstanceOf[js.Any])
     if (reset != null) __obj.updateDynamic("reset")(js.Any.fromFunction0(reset))
     if (setDateFormat != null) __obj.updateDynamic("setDateFormat")(js.Any.fromFunction1(setDateFormat))
     if (setDestroyPickerOnHide != null) __obj.updateDynamic("setDestroyPickerOnHide")(js.Any.fromFunction1(setDestroyPickerOnHide))
     if (setPicker != null) __obj.updateDynamic("setPicker")(js.Any.fromFunction1(setPicker))
-    if (setUi != null) __obj.updateDynamic("setUi")(js.Any.fromFunction1(setUi))
-    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
-    if (ui != null) __obj.updateDynamic("ui")(ui)
-    if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[IDatePicker]
   }
 }

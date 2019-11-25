@@ -11,7 +11,7 @@ trait ConfigVersion extends js.Object {
 object ConfigVersion {
   @scala.inline
   def apply(Index: Double): ConfigVersion = {
-    val __obj = js.Dynamic.literal(Index = Index)
+    val __obj = js.Dynamic.literal(Index = Index.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConfigVersion]
   }

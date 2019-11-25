@@ -21,10 +21,10 @@ object Anon_Browser {
     server: LoggingPreferences = null
   ): Anon_Browser = {
     val __obj = js.Dynamic.literal()
-    if (browser != null) __obj.updateDynamic("browser")(browser)
-    if (client != null) __obj.updateDynamic("client")(client)
-    if (driver != null) __obj.updateDynamic("driver")(driver)
-    if (server != null) __obj.updateDynamic("server")(server)
+    if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
+    if (driver != null) __obj.updateDynamic("driver")(driver.asInstanceOf[js.Any])
+    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Browser]
   }
 }

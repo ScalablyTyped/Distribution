@@ -32,10 +32,10 @@ object CardData {
     isSuccess: js.UndefOr[Boolean] = js.undefined
   ): CardData = {
     val __obj = js.Dynamic.literal()
-    if (cardExt != null) __obj.updateDynamic("cardExt")(cardExt)
-    if (cardId != null) __obj.updateDynamic("cardId")(cardId)
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (!js.isUndefined(isSuccess)) __obj.updateDynamic("isSuccess")(isSuccess)
+    if (cardExt != null) __obj.updateDynamic("cardExt")(cardExt.asInstanceOf[js.Any])
+    if (cardId != null) __obj.updateDynamic("cardId")(cardId.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSuccess)) __obj.updateDynamic("isSuccess")(isSuccess.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardData]
   }
 }

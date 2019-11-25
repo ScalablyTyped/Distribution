@@ -19,7 +19,7 @@ object HistogramHistogramOptions {
   ): HistogramHistogramOptions = {
     val __obj = js.Dynamic.literal()
     if (bucketSize != null) __obj.updateDynamic("bucketSize")(bucketSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideBucketItems)) __obj.updateDynamic("hideBucketItems")(hideBucketItems)
+    if (!js.isUndefined(hideBucketItems)) __obj.updateDynamic("hideBucketItems")(hideBucketItems.asInstanceOf[js.Any])
     if (lastBucketPercentile != null) __obj.updateDynamic("lastBucketPercentile")(lastBucketPercentile.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistogramHistogramOptions]
   }

@@ -28,9 +28,9 @@ object GameOptions {
     sound: js.UndefOr[Boolean] = js.undefined,
     target: String | HTMLElement = null
   ): GameOptions = {
-    val __obj = js.Dynamic.literal(debug = debug, height = height, name = name, showFps = showFps, width = width)
-    if (scene != null) __obj.updateDynamic("scene")(scene)
-    if (!js.isUndefined(sound)) __obj.updateDynamic("sound")(sound)
+    val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], showFps = showFps.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (scene != null) __obj.updateDynamic("scene")(scene.asInstanceOf[js.Any])
+    if (!js.isUndefined(sound)) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameOptions]
   }

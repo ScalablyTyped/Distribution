@@ -12,7 +12,7 @@ trait HTMLElement extends js.Object {
 object HTMLElement {
   @scala.inline
   def apply(selectize: IApi[_, _]): HTMLElement = {
-    val __obj = js.Dynamic.literal(selectize = selectize)
+    val __obj = js.Dynamic.literal(selectize = selectize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HTMLElement]
   }

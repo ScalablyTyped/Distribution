@@ -24,9 +24,9 @@ object CacheDidUpdateCallbackParam {
     event: Event = null,
     oldResponse: Response = null
   ): CacheDidUpdateCallbackParam = {
-    val __obj = js.Dynamic.literal(cacheName = cacheName, newResponse = newResponse, request = request)
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (oldResponse != null) __obj.updateDynamic("oldResponse")(oldResponse)
+    val __obj = js.Dynamic.literal(cacheName = cacheName.asInstanceOf[js.Any], newResponse = newResponse.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (oldResponse != null) __obj.updateDynamic("oldResponse")(oldResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheDidUpdateCallbackParam]
   }
 }

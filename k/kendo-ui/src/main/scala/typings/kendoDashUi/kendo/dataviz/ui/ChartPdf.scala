@@ -39,19 +39,19 @@ object ChartPdf {
     title: String = null
   ): ChartPdf = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (creator != null) __obj.updateDynamic("creator")(creator)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
-    if (!js.isUndefined(forceProxy)) __obj.updateDynamic("forceProxy")(forceProxy)
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords)
-    if (!js.isUndefined(landscape)) __obj.updateDynamic("landscape")(landscape)
-    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (creator != null) __obj.updateDynamic("creator")(creator.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceProxy)) __obj.updateDynamic("forceProxy")(forceProxy.asInstanceOf[js.Any])
+    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
+    if (!js.isUndefined(landscape)) __obj.updateDynamic("landscape")(landscape.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (paperSize != null) __obj.updateDynamic("paperSize")(paperSize.asInstanceOf[js.Any])
-    if (proxyTarget != null) __obj.updateDynamic("proxyTarget")(proxyTarget)
-    if (proxyURL != null) __obj.updateDynamic("proxyURL")(proxyURL)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (proxyTarget != null) __obj.updateDynamic("proxyTarget")(proxyTarget.asInstanceOf[js.Any])
+    if (proxyURL != null) __obj.updateDynamic("proxyURL")(proxyURL.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartPdf]
   }
 }

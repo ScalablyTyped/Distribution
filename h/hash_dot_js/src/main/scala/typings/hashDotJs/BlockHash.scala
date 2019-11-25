@@ -15,7 +15,7 @@ trait BlockHash[T] extends js.Object {
 object BlockHash {
   @scala.inline
   def apply[T](endian: big | little, hmacStrength: Double, padLength: Double): BlockHash[T] = {
-    val __obj = js.Dynamic.literal(endian = endian.asInstanceOf[js.Any], hmacStrength = hmacStrength, padLength = padLength)
+    val __obj = js.Dynamic.literal(endian = endian.asInstanceOf[js.Any], hmacStrength = hmacStrength.asInstanceOf[js.Any], padLength = padLength.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BlockHash[T]]
   }

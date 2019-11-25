@@ -18,7 +18,7 @@ object Anon_K {
   @scala.inline
   def apply(modes: StringDictionary[ColorMode] = null): Anon_K = {
     val __obj = js.Dynamic.literal()
-    if (modes != null) __obj.updateDynamic("modes")(modes)
+    if (modes != null) __obj.updateDynamic("modes")(modes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_K]
   }
 }

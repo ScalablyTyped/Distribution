@@ -12,7 +12,7 @@ trait AbstractConfigSet extends js.Object {
 object AbstractConfigSet {
   @scala.inline
   def apply(colors: AbstractConfigSetColors, levels: AbstractConfigSetLevels): AbstractConfigSet = {
-    val __obj = js.Dynamic.literal(colors = colors, levels = levels)
+    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], levels = levels.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AbstractConfigSet]
   }

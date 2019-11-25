@@ -12,7 +12,7 @@ trait GraticuleLabelDataType extends js.Object {
 object GraticuleLabelDataType {
   @scala.inline
   def apply(geom: typings.ol.geomPointMod.default, text: String): GraticuleLabelDataType = {
-    val __obj = js.Dynamic.literal(geom = geom, text = text)
+    val __obj = js.Dynamic.literal(geom = geom.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GraticuleLabelDataType]
   }

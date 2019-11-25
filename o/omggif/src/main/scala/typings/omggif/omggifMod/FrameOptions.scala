@@ -22,7 +22,7 @@ object FrameOptions {
     val __obj = js.Dynamic.literal()
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (disposal != null) __obj.updateDynamic("disposal")(disposal.asInstanceOf[js.Any])
-    if (palette != null) __obj.updateDynamic("palette")(palette)
+    if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
     if (transparent != null) __obj.updateDynamic("transparent")(transparent.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameOptions]
   }

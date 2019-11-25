@@ -22,8 +22,8 @@ object ElementalProps {
   ): ElementalProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (colorOpts != null) __obj.updateDynamic("colorOpts")(colorOpts)
-    if (fontOpts != null) __obj.updateDynamic("fontOpts")(fontOpts)
+    if (colorOpts != null) __obj.updateDynamic("colorOpts")(colorOpts.asInstanceOf[js.Any])
+    if (fontOpts != null) __obj.updateDynamic("fontOpts")(fontOpts.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementalProps]
   }
 }

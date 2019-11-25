@@ -14,7 +14,7 @@ object Options {
   def apply(emitDelay: Int | Double = null, strictMode: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
     if (emitDelay != null) __obj.updateDynamic("emitDelay")(emitDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictMode)) __obj.updateDynamic("strictMode")(strictMode)
+    if (!js.isUndefined(strictMode)) __obj.updateDynamic("strictMode")(strictMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

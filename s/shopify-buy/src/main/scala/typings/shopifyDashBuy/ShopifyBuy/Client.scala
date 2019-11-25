@@ -23,7 +23,7 @@ object Client {
     product: ProductResource,
     shop: ShopResource
   ): Client = {
-    val __obj = js.Dynamic.literal(checkout = checkout, collection = collection, fetchNextPage = js.Any.fromFunction1(fetchNextPage), image = image, product = product, shop = shop)
+    val __obj = js.Dynamic.literal(checkout = checkout.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], fetchNextPage = js.Any.fromFunction1(fetchNextPage), image = image.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any], shop = shop.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Client]
   }

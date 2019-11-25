@@ -14,7 +14,7 @@ object GanttTooltip {
   def apply(template: String | js.Function = null, visible: js.UndefOr[Boolean] = js.undefined): GanttTooltip = {
     val __obj = js.Dynamic.literal()
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttTooltip]
   }
 }

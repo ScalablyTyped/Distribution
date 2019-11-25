@@ -5,7 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Page[D, P] extends Component[D, P] {
+trait Page[D, P]
+  extends typings.baiduDashApp.swan.Component[D, P] {
   def createCanvasContext(selector: String): CanvasContext = js.native
   /**
   		 * 强制更新

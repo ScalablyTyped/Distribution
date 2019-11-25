@@ -27,9 +27,9 @@ object DSNOptions {
     ret: Full | HDRS = null
   ): DSNOptions = {
     val __obj = js.Dynamic.literal()
-    if (envid != null) __obj.updateDynamic("envid")(envid)
+    if (envid != null) __obj.updateDynamic("envid")(envid.asInstanceOf[js.Any])
     if (notify != null) __obj.updateDynamic("notify")(notify.asInstanceOf[js.Any])
-    if (orcpt != null) __obj.updateDynamic("orcpt")(orcpt)
+    if (orcpt != null) __obj.updateDynamic("orcpt")(orcpt.asInstanceOf[js.Any])
     if (ret != null) __obj.updateDynamic("ret")(ret.asInstanceOf[js.Any])
     __obj.asInstanceOf[DSNOptions]
   }

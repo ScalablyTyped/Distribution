@@ -26,8 +26,8 @@ object Anon_CardDismissDelay {
     setInitialFocus: Boolean,
     `type`: HoverCardType
   ): Anon_CardDismissDelay = {
-    val __obj = js.Dynamic.literal(cardDismissDelay = cardDismissDelay, cardOpenDelay = cardOpenDelay, expandedCardOpenDelay = expandedCardOpenDelay, instantOpenOnClick = instantOpenOnClick, openHotKey = openHotKey, setInitialFocus = setInitialFocus)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(cardDismissDelay = cardDismissDelay.asInstanceOf[js.Any], cardOpenDelay = cardOpenDelay.asInstanceOf[js.Any], expandedCardOpenDelay = expandedCardOpenDelay.asInstanceOf[js.Any], instantOpenOnClick = instantOpenOnClick.asInstanceOf[js.Any], openHotKey = openHotKey.asInstanceOf[js.Any], setInitialFocus = setInitialFocus.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CardDismissDelay]
   }
 }

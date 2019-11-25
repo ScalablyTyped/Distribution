@@ -55,13 +55,13 @@ object Options {
     unwrap: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(lineNumbers)) __obj.updateDynamic("lineNumbers")(lineNumbers)
-    if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace)
-    if (!js.isUndefined(recoverable)) __obj.updateDynamic("recoverable")(recoverable)
-    if (!js.isUndefined(sloppy)) __obj.updateDynamic("sloppy")(sloppy)
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
-    if (!js.isUndefined(unwrap)) __obj.updateDynamic("unwrap")(unwrap)
+    if (!js.isUndefined(lineNumbers)) __obj.updateDynamic("lineNumbers")(lineNumbers.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.asInstanceOf[js.Any])
+    if (!js.isUndefined(recoverable)) __obj.updateDynamic("recoverable")(recoverable.asInstanceOf[js.Any])
+    if (!js.isUndefined(sloppy)) __obj.updateDynamic("sloppy")(sloppy.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (!js.isUndefined(unwrap)) __obj.updateDynamic("unwrap")(unwrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

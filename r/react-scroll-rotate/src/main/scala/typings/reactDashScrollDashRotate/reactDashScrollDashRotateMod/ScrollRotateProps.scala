@@ -36,7 +36,7 @@ object ScrollRotateProps {
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (loops != null) __obj.updateDynamic("loops")(loops.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (throttle != null) __obj.updateDynamic("throttle")(throttle.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollRotateProps]

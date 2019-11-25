@@ -20,7 +20,7 @@ object ImageProps {
     source: ImageSource = null,
     style: Style | StyleReference = null
   ): ImageProps = {
-    val __obj = js.Dynamic.literal(resizeMode = resizeMode)
+    val __obj = js.Dynamic.literal(resizeMode = resizeMode.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

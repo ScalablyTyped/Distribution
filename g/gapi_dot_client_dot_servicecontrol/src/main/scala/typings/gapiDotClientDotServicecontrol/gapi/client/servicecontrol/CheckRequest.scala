@@ -33,10 +33,10 @@ object CheckRequest {
     skipActivationCheck: js.UndefOr[Boolean] = js.undefined
   ): CheckRequest = {
     val __obj = js.Dynamic.literal()
-    if (operation != null) __obj.updateDynamic("operation")(operation)
-    if (!js.isUndefined(requestProjectSettings)) __obj.updateDynamic("requestProjectSettings")(requestProjectSettings)
-    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId)
-    if (!js.isUndefined(skipActivationCheck)) __obj.updateDynamic("skipActivationCheck")(skipActivationCheck)
+    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestProjectSettings)) __obj.updateDynamic("requestProjectSettings")(requestProjectSettings.asInstanceOf[js.Any])
+    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipActivationCheck)) __obj.updateDynamic("skipActivationCheck")(skipActivationCheck.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckRequest]
   }
 }

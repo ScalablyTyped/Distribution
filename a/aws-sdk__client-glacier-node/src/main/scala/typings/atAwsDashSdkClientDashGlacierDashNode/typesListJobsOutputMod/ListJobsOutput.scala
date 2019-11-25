@@ -30,9 +30,9 @@ object ListJobsOutput {
     JobList: js.Array[_UnmarshalledGlacierJobDescription] = null,
     Marker: String = null
   ): ListJobsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (JobList != null) __obj.updateDynamic("JobList")(JobList)
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (JobList != null) __obj.updateDynamic("JobList")(JobList.asInstanceOf[js.Any])
+    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListJobsOutput]
   }
 }

@@ -56,7 +56,9 @@ object libApiObserveMod extends js.Object {
     `object`: T,
     property: K,
     listener: js.Function1[
-      /* change */ IValueDidChange[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any], 
+      /* change */ IValueDidChange[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+      ], 
       Unit
     ]
   ): Lambda = js.native
@@ -64,7 +66,9 @@ object libApiObserveMod extends js.Object {
     `object`: T,
     property: K,
     listener: js.Function1[
-      /* change */ IValueDidChange[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any], 
+      /* change */ IValueDidChange[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+      ], 
       Unit
     ],
     fireImmediately: Boolean

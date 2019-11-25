@@ -17,9 +17,9 @@ trait Anon_TypeTypeClass extends js.Object {
 object Anon_TypeTypeClass {
   @scala.inline
   def apply(`type`: Double, typeName: String, typeClass: DBObjectClass = null): Anon_TypeTypeClass = {
-    val __obj = js.Dynamic.literal(typeName = typeName)
-    __obj.updateDynamic("type")(`type`)
-    if (typeClass != null) __obj.updateDynamic("typeClass")(typeClass)
+    val __obj = js.Dynamic.literal(typeName = typeName.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (typeClass != null) __obj.updateDynamic("typeClass")(typeClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TypeTypeClass]
   }
 }

@@ -45,12 +45,12 @@ object Subscription {
     subscriptionPolicies: SubscriptionPolicies = null
   ): Subscription = {
     val __obj = js.Dynamic.literal()
-    if (authorizationSource != null) __obj.updateDynamic("authorizationSource")(authorizationSource)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (subscriptionId != null) __obj.updateDynamic("subscriptionId")(subscriptionId)
-    if (subscriptionPolicies != null) __obj.updateDynamic("subscriptionPolicies")(subscriptionPolicies)
+    if (authorizationSource != null) __obj.updateDynamic("authorizationSource")(authorizationSource.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (subscriptionId != null) __obj.updateDynamic("subscriptionId")(subscriptionId.asInstanceOf[js.Any])
+    if (subscriptionPolicies != null) __obj.updateDynamic("subscriptionPolicies")(subscriptionPolicies.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subscription]
   }
 }

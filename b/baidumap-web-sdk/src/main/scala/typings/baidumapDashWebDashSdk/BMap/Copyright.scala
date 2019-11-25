@@ -14,8 +14,8 @@ object Copyright {
   @scala.inline
   def apply(bounds: Bounds = null, content: String = null, id: Int | Double = null): Copyright = {
     val __obj = js.Dynamic.literal()
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
-    if (content != null) __obj.updateDynamic("content")(content)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Copyright]
   }

@@ -23,7 +23,7 @@ object AccountFollowersFeedResponse {
     status: String,
     users: js.Array[AccountFollowersFeedResponseUsersItem]
   ): AccountFollowersFeedResponse = {
-    val __obj = js.Dynamic.literal(big_list = big_list, next_max_id = next_max_id, page_size = page_size, sections = sections, status = status, users = users)
+    val __obj = js.Dynamic.literal(big_list = big_list.asInstanceOf[js.Any], next_max_id = next_max_id.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], sections = sections.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AccountFollowersFeedResponse]
   }

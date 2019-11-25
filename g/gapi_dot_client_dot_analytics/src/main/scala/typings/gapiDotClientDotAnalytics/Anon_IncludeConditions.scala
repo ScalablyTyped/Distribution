@@ -14,7 +14,7 @@ object Anon_IncludeConditions {
   @scala.inline
   def apply(includeConditions: IncludeConditions = null): Anon_IncludeConditions = {
     val __obj = js.Dynamic.literal()
-    if (includeConditions != null) __obj.updateDynamic("includeConditions")(includeConditions)
+    if (includeConditions != null) __obj.updateDynamic("includeConditions")(includeConditions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IncludeConditions]
   }
 }

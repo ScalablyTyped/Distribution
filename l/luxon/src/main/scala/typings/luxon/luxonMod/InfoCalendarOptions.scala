@@ -16,9 +16,9 @@ object InfoCalendarOptions {
     outputCalendar: CalendarSystem = null
   ): InfoCalendarOptions = {
     val __obj = js.Dynamic.literal()
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (numberingSystem != null) __obj.updateDynamic("numberingSystem")(numberingSystem)
-    if (outputCalendar != null) __obj.updateDynamic("outputCalendar")(outputCalendar)
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (numberingSystem != null) __obj.updateDynamic("numberingSystem")(numberingSystem.asInstanceOf[js.Any])
+    if (outputCalendar != null) __obj.updateDynamic("outputCalendar")(outputCalendar.asInstanceOf[js.Any])
     __obj.asInstanceOf[InfoCalendarOptions]
   }
 }

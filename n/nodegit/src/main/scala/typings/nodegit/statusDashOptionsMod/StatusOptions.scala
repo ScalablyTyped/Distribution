@@ -24,7 +24,7 @@ object StatusOptions {
     version: Int | Double = null
   ): StatusOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
     if (pathspec != null) __obj.updateDynamic("pathspec")(pathspec.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])

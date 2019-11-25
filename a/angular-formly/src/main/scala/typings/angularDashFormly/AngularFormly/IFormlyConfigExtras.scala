@@ -29,7 +29,7 @@ object IFormlyConfigExtras {
     ngModelAttrsManipulatorPreferUnbound: Boolean,
     removeChromeAutoComplete: Boolean
   ): IFormlyConfigExtras = {
-    val __obj = js.Dynamic.literal(apiCheckInstance = apiCheckInstance, defaultHideDirective = defaultHideDirective, disableNgModelAttrsManipulator = disableNgModelAttrsManipulator, errorExistsAndShouldBeVisibleExpression = errorExistsAndShouldBeVisibleExpression, explicitAsync = explicitAsync, fieldTransform = fieldTransform.asInstanceOf[js.Any], getFieldId = getFieldId, ngModelAttrsManipulatorPreferUnbound = ngModelAttrsManipulatorPreferUnbound, removeChromeAutoComplete = removeChromeAutoComplete)
+    val __obj = js.Dynamic.literal(apiCheckInstance = apiCheckInstance.asInstanceOf[js.Any], defaultHideDirective = defaultHideDirective.asInstanceOf[js.Any], disableNgModelAttrsManipulator = disableNgModelAttrsManipulator.asInstanceOf[js.Any], errorExistsAndShouldBeVisibleExpression = errorExistsAndShouldBeVisibleExpression.asInstanceOf[js.Any], explicitAsync = explicitAsync.asInstanceOf[js.Any], fieldTransform = fieldTransform.asInstanceOf[js.Any], getFieldId = getFieldId.asInstanceOf[js.Any], ngModelAttrsManipulatorPreferUnbound = ngModelAttrsManipulatorPreferUnbound.asInstanceOf[js.Any], removeChromeAutoComplete = removeChromeAutoComplete.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IFormlyConfigExtras]
   }

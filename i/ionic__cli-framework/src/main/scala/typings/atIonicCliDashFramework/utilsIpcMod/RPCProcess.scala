@@ -16,15 +16,19 @@ class RPCProcess () extends js.Object {
   var responseProcedures: Map[String, js.Function1[/* args */ js.Array[_], js.Promise[_]]] = js.native
   val timeout: Double = js.native
   def call[R /* <: RPCResponse[_, js.Object] */](
-    procedure: /* import warning: ImportType.apply Failed type conversion: R['procedure'] */ js.Any,
-    args: /* import warning: ImportType.apply Failed type conversion: R['request']['args'] */ js.Any
-  ): js.Promise[/* import warning: ImportType.apply Failed type conversion: R['data'] */ js.Any] = js.native
+    procedure: /* import warning: importer.ImportType#apply Failed type conversion: R['procedure'] */ js.Any,
+    args: /* import warning: importer.ImportType#apply Failed type conversion: R['request']['args'] */ js.Any
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: R['data'] */ js.Any
+  ] = js.native
   def end(): Unit = js.native
   def register[R /* <: RPCResponse[_, js.Object] */](
-    procedure: /* import warning: ImportType.apply Failed type conversion: R['procedure'] */ js.Any,
+    procedure: /* import warning: importer.ImportType#apply Failed type conversion: R['procedure'] */ js.Any,
     fn: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: R['request']['args'] */ /* args */ js.Any, 
-      js.Promise[/* import warning: ImportType.apply Failed type conversion: R['data'] */ js.Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: R['request']['args'] */ /* args */ js.Any, 
+      js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: R['data'] */ js.Any
+      ]
     ]
   ): Unit = js.native
   def start(proc: Process): Unit = js.native

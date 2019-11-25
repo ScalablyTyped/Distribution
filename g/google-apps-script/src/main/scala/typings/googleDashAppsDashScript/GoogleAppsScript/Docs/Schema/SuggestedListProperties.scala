@@ -16,8 +16,8 @@ object SuggestedListProperties {
     listPropertiesSuggestionState: ListPropertiesSuggestionState = null
   ): SuggestedListProperties = {
     val __obj = js.Dynamic.literal()
-    if (listProperties != null) __obj.updateDynamic("listProperties")(listProperties)
-    if (listPropertiesSuggestionState != null) __obj.updateDynamic("listPropertiesSuggestionState")(listPropertiesSuggestionState)
+    if (listProperties != null) __obj.updateDynamic("listProperties")(listProperties.asInstanceOf[js.Any])
+    if (listPropertiesSuggestionState != null) __obj.updateDynamic("listPropertiesSuggestionState")(listPropertiesSuggestionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestedListProperties]
   }
 }

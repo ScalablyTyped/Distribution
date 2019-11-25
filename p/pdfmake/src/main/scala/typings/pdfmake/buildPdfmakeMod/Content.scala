@@ -45,20 +45,20 @@ object Content {
     width: String | Double = null
   ): Content = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (fit != null) __obj.updateDynamic("fit")(fit)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (fit != null) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (ol != null) __obj.updateDynamic("ol")(ol)
+    if (ol != null) __obj.updateDynamic("ol")(ol.asInstanceOf[js.Any])
     if (pageBreak != null) __obj.updateDynamic("pageBreak")(pageBreak.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table)
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (ul != null) __obj.updateDynamic("ul")(ul)
+    if (ul != null) __obj.updateDynamic("ul")(ul.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Content]
   }

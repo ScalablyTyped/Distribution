@@ -23,8 +23,8 @@ object ProductsApproveRequest {
   @scala.inline
   def apply(approvalUrlInfo: ApprovalUrlInfo = null, approvedPermissions: String = null): ProductsApproveRequest = {
     val __obj = js.Dynamic.literal()
-    if (approvalUrlInfo != null) __obj.updateDynamic("approvalUrlInfo")(approvalUrlInfo)
-    if (approvedPermissions != null) __obj.updateDynamic("approvedPermissions")(approvedPermissions)
+    if (approvalUrlInfo != null) __obj.updateDynamic("approvalUrlInfo")(approvalUrlInfo.asInstanceOf[js.Any])
+    if (approvedPermissions != null) __obj.updateDynamic("approvedPermissions")(approvedPermissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductsApproveRequest]
   }
 }

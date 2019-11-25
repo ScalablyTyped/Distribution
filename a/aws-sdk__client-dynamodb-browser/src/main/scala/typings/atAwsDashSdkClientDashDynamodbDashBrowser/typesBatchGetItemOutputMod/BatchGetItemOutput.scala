@@ -38,10 +38,10 @@ object BatchGetItemOutput {
     Responses: StringDictionary[js.Array[StringDictionary[_UnmarshalledAttributeValue]]] = null,
     UnprocessedKeys: StringDictionary[_UnmarshalledKeysAndAttributes] = null
   ): BatchGetItemOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (ConsumedCapacity != null) __obj.updateDynamic("ConsumedCapacity")(ConsumedCapacity)
-    if (Responses != null) __obj.updateDynamic("Responses")(Responses)
-    if (UnprocessedKeys != null) __obj.updateDynamic("UnprocessedKeys")(UnprocessedKeys)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (ConsumedCapacity != null) __obj.updateDynamic("ConsumedCapacity")(ConsumedCapacity.asInstanceOf[js.Any])
+    if (Responses != null) __obj.updateDynamic("Responses")(Responses.asInstanceOf[js.Any])
+    if (UnprocessedKeys != null) __obj.updateDynamic("UnprocessedKeys")(UnprocessedKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetItemOutput]
   }
 }

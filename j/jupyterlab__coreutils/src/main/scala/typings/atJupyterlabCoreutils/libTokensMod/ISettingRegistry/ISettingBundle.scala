@@ -25,7 +25,7 @@ trait ISettingBundle extends JSONObject {
 object ISettingBundle {
   @scala.inline
   def apply(composite: JSONObject, user: JSONObject): ISettingBundle = {
-    val __obj = js.Dynamic.literal(composite = composite, user = user)
+    val __obj = js.Dynamic.literal(composite = composite.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISettingBundle]
   }

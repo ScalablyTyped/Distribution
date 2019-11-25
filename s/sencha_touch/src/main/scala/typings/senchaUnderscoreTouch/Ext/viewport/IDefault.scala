@@ -113,21 +113,17 @@ object IDefault {
     getOrientation: () => java.lang.String = null,
     getPreventPanning: () => Boolean = null,
     getPreventZooming: () => Boolean = null,
-    getSize: () => _ = null,
     getUseBodyElement: () => Boolean = null,
     getWindowHeight: () => Double = null,
     getWindowWidth: () => Double = null,
     hideAllMenus: /* animation */ js.UndefOr[js.Any] => Unit = null,
     hideMenu: /* side */ js.UndefOr[java.lang.String] => Unit = null,
     hideOtherMenus: (/* side */ js.UndefOr[java.lang.String], /* animation */ js.UndefOr[java.lang.String]) => Unit = null,
-    id: java.lang.String = null,
     isReady: js.UndefOr[Boolean] = js.undefined,
-    layout: js.Any = null,
     preventPanning: js.UndefOr[Boolean] = js.undefined,
     preventZooming: js.UndefOr[Boolean] = js.undefined,
     removeMenu: /* side */ js.UndefOr[java.lang.String] => Unit = null,
     setAutoMaximize: /* autoMaximize */ js.UndefOr[Boolean] => Unit = null,
-    setLayout: /* layout */ js.UndefOr[js.Any] => Unit = null,
     setMenu: (/* menu */ js.UndefOr[IMenu], /* config */ js.UndefOr[js.Any]) => Unit = null,
     setPreventPanning: /* preventPanning */ js.UndefOr[Boolean] => Unit = null,
     setPreventZooming: /* preventZooming */ js.UndefOr[Boolean] => Unit = null,
@@ -136,28 +132,24 @@ object IDefault {
     toggleMenu: /* side */ js.UndefOr[java.lang.String] => Unit = null
   ): IDefault = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (!js.isUndefined(autoMaximize)) __obj.updateDynamic("autoMaximize")(autoMaximize)
+    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (!js.isUndefined(autoMaximize)) __obj.updateDynamic("autoMaximize")(autoMaximize.asInstanceOf[js.Any])
     if (getAutoMaximize != null) __obj.updateDynamic("getAutoMaximize")(js.Any.fromFunction0(getAutoMaximize))
     if (getLayout != null) __obj.updateDynamic("getLayout")(js.Any.fromFunction0(getLayout))
     if (getOrientation != null) __obj.updateDynamic("getOrientation")(js.Any.fromFunction0(getOrientation))
     if (getPreventPanning != null) __obj.updateDynamic("getPreventPanning")(js.Any.fromFunction0(getPreventPanning))
     if (getPreventZooming != null) __obj.updateDynamic("getPreventZooming")(js.Any.fromFunction0(getPreventZooming))
-    if (getSize != null) __obj.updateDynamic("getSize")(js.Any.fromFunction0(getSize))
     if (getUseBodyElement != null) __obj.updateDynamic("getUseBodyElement")(js.Any.fromFunction0(getUseBodyElement))
     if (getWindowHeight != null) __obj.updateDynamic("getWindowHeight")(js.Any.fromFunction0(getWindowHeight))
     if (getWindowWidth != null) __obj.updateDynamic("getWindowWidth")(js.Any.fromFunction0(getWindowWidth))
     if (hideAllMenus != null) __obj.updateDynamic("hideAllMenus")(js.Any.fromFunction1(hideAllMenus))
     if (hideMenu != null) __obj.updateDynamic("hideMenu")(js.Any.fromFunction1(hideMenu))
     if (hideOtherMenus != null) __obj.updateDynamic("hideOtherMenus")(js.Any.fromFunction2(hideOtherMenus))
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(isReady)) __obj.updateDynamic("isReady")(isReady)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (!js.isUndefined(preventPanning)) __obj.updateDynamic("preventPanning")(preventPanning)
-    if (!js.isUndefined(preventZooming)) __obj.updateDynamic("preventZooming")(preventZooming)
+    if (!js.isUndefined(isReady)) __obj.updateDynamic("isReady")(isReady.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventPanning)) __obj.updateDynamic("preventPanning")(preventPanning.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventZooming)) __obj.updateDynamic("preventZooming")(preventZooming.asInstanceOf[js.Any])
     if (removeMenu != null) __obj.updateDynamic("removeMenu")(js.Any.fromFunction1(removeMenu))
     if (setAutoMaximize != null) __obj.updateDynamic("setAutoMaximize")(js.Any.fromFunction1(setAutoMaximize))
-    if (setLayout != null) __obj.updateDynamic("setLayout")(js.Any.fromFunction1(setLayout))
     if (setMenu != null) __obj.updateDynamic("setMenu")(js.Any.fromFunction2(setMenu))
     if (setPreventPanning != null) __obj.updateDynamic("setPreventPanning")(js.Any.fromFunction1(setPreventPanning))
     if (setPreventZooming != null) __obj.updateDynamic("setPreventZooming")(js.Any.fromFunction1(setPreventZooming))

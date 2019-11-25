@@ -53,14 +53,14 @@ object NumberFormatOptions {
     suffix: String = null
   ): NumberFormatOptions = {
     val __obj = js.Dynamic.literal()
-    if (decimalSymbol != null) __obj.updateDynamic("decimalSymbol")(decimalSymbol)
+    if (decimalSymbol != null) __obj.updateDynamic("decimalSymbol")(decimalSymbol.asInstanceOf[js.Any])
     if (fractionDigits != null) __obj.updateDynamic("fractionDigits")(fractionDigits.asInstanceOf[js.Any])
-    if (groupingSymbol != null) __obj.updateDynamic("groupingSymbol")(groupingSymbol)
-    if (negativeColor != null) __obj.updateDynamic("negativeColor")(negativeColor)
-    if (!js.isUndefined(negativeParens)) __obj.updateDynamic("negativeParens")(negativeParens)
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (groupingSymbol != null) __obj.updateDynamic("groupingSymbol")(groupingSymbol.asInstanceOf[js.Any])
+    if (negativeColor != null) __obj.updateDynamic("negativeColor")(negativeColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(negativeParens)) __obj.updateDynamic("negativeParens")(negativeParens.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberFormatOptions]
   }
 }

@@ -24,10 +24,10 @@ object Application {
     title: String = null
   ): Application = {
     val __obj = js.Dynamic.literal()
-    if (managedProperties != null) __obj.updateDynamic("managedProperties")(managedProperties)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (managedProperties != null) __obj.updateDynamic("managedProperties")(managedProperties.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Application]
   }
 }

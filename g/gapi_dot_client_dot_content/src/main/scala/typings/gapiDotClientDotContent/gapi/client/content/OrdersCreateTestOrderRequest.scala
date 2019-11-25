@@ -18,8 +18,8 @@ object OrdersCreateTestOrderRequest {
   @scala.inline
   def apply(templateName: String = null, testOrder: TestOrder = null): OrdersCreateTestOrderRequest = {
     val __obj = js.Dynamic.literal()
-    if (templateName != null) __obj.updateDynamic("templateName")(templateName)
-    if (testOrder != null) __obj.updateDynamic("testOrder")(testOrder)
+    if (templateName != null) __obj.updateDynamic("templateName")(templateName.asInstanceOf[js.Any])
+    if (testOrder != null) __obj.updateDynamic("testOrder")(testOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrdersCreateTestOrderRequest]
   }
 }

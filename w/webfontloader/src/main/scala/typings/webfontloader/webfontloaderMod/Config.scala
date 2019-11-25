@@ -53,20 +53,20 @@ object Config {
   ): Config = {
     val __obj = js.Dynamic.literal()
     if (active != null) __obj.updateDynamic("active")(js.Any.fromFunction0(active))
-    if (!js.isUndefined(classes)) __obj.updateDynamic("classes")(classes)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (custom != null) __obj.updateDynamic("custom")(custom)
-    if (!js.isUndefined(events)) __obj.updateDynamic("events")(events)
+    if (!js.isUndefined(classes)) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (!js.isUndefined(events)) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (fontactive != null) __obj.updateDynamic("fontactive")(js.Any.fromFunction2(fontactive))
-    if (fontdeck != null) __obj.updateDynamic("fontdeck")(fontdeck)
+    if (fontdeck != null) __obj.updateDynamic("fontdeck")(fontdeck.asInstanceOf[js.Any])
     if (fontinactive != null) __obj.updateDynamic("fontinactive")(js.Any.fromFunction2(fontinactive))
     if (fontloading != null) __obj.updateDynamic("fontloading")(js.Any.fromFunction2(fontloading))
-    if (google != null) __obj.updateDynamic("google")(google)
+    if (google != null) __obj.updateDynamic("google")(google.asInstanceOf[js.Any])
     if (inactive != null) __obj.updateDynamic("inactive")(js.Any.fromFunction0(inactive))
     if (loading != null) __obj.updateDynamic("loading")(js.Any.fromFunction0(loading))
-    if (monotype != null) __obj.updateDynamic("monotype")(monotype)
+    if (monotype != null) __obj.updateDynamic("monotype")(monotype.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (typekit != null) __obj.updateDynamic("typekit")(typekit)
+    if (typekit != null) __obj.updateDynamic("typekit")(typekit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

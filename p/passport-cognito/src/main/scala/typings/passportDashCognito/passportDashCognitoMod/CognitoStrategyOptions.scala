@@ -13,7 +13,7 @@ trait CognitoStrategyOptions extends js.Object {
 object CognitoStrategyOptions {
   @scala.inline
   def apply(clientId: String, region: String, userPoolId: String): CognitoStrategyOptions = {
-    val __obj = js.Dynamic.literal(clientId = clientId, region = region, userPoolId = userPoolId)
+    val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CognitoStrategyOptions]
   }

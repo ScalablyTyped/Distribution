@@ -169,10 +169,10 @@ trait Room extends js.Object {
     * @returns An array with the objects found.
     */
   def find[K /* <: FindConstant */](`type`: K): js.Array[
-    /* import warning: ImportType.apply Failed type conversion: screeps.FindTypes[K] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any
   ] = js.native
   def find[K /* <: FindConstant */](`type`: K, opts: FilterOptions[K]): js.Array[
-    /* import warning: ImportType.apply Failed type conversion: screeps.FindTypes[K] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any
   ] = js.native
   def find[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES): js.Array[T] = js.native
   def find[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES, opts: FilterOptions[FIND_STRUCTURES]): js.Array[T] = js.native

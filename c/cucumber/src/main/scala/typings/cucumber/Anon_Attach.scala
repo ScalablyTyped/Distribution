@@ -13,7 +13,7 @@ trait Anon_Attach extends js.Object {
 object Anon_Attach {
   @scala.inline
   def apply(attach: js.Function, parameters: StringDictionary[js.Any]): Anon_Attach = {
-    val __obj = js.Dynamic.literal(attach = attach, parameters = parameters)
+    val __obj = js.Dynamic.literal(attach = attach.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Attach]
   }

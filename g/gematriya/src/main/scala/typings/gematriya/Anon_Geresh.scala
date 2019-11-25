@@ -18,9 +18,9 @@ object Anon_Geresh {
     punctuate: js.UndefOr[Boolean] = js.undefined
   ): Anon_Geresh = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(geresh)) __obj.updateDynamic("geresh")(geresh)
+    if (!js.isUndefined(geresh)) __obj.updateDynamic("geresh")(geresh.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(punctuate)) __obj.updateDynamic("punctuate")(punctuate)
+    if (!js.isUndefined(punctuate)) __obj.updateDynamic("punctuate")(punctuate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Geresh]
   }
 }

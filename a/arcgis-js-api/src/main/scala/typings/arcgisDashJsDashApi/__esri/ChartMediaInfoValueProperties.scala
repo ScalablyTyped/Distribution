@@ -41,10 +41,10 @@ object ChartMediaInfoValueProperties {
     tooltipField: String = null
   ): ChartMediaInfoValueProperties = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (normalizeField != null) __obj.updateDynamic("normalizeField")(normalizeField)
-    if (series != null) __obj.updateDynamic("series")(series)
-    if (tooltipField != null) __obj.updateDynamic("tooltipField")(tooltipField)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (normalizeField != null) __obj.updateDynamic("normalizeField")(normalizeField.asInstanceOf[js.Any])
+    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
+    if (tooltipField != null) __obj.updateDynamic("tooltipField")(tooltipField.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartMediaInfoValueProperties]
   }
 }

@@ -31,9 +31,9 @@ object AnimationParam {
     setTo: (/* destPos */ js.UndefOr[Axis], /* duration */ js.UndefOr[Double]) => Anon_DestPos = null,
     startTime: Int | Double = null
   ): AnimationParam = {
-    val __obj = js.Dynamic.literal(delta = delta, depaPos = depaPos, destPos = destPos, duration = duration)
+    val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], depaPos = depaPos.asInstanceOf[js.Any], destPos = destPos.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any])
     if (done != null) __obj.updateDynamic("done")(js.Any.fromFunction0(done))
-    if (inputEvent != null) __obj.updateDynamic("inputEvent")(inputEvent)
+    if (inputEvent != null) __obj.updateDynamic("inputEvent")(inputEvent.asInstanceOf[js.Any])
     if (setTo != null) __obj.updateDynamic("setTo")(js.Any.fromFunction2(setTo))
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationParam]

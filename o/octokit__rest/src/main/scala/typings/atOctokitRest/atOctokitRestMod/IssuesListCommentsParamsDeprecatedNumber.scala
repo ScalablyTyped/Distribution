@@ -35,10 +35,10 @@ object IssuesListCommentsParamsDeprecatedNumber {
     per_page: Int | Double = null,
     since: String = null
   ): IssuesListCommentsParamsDeprecatedNumber = {
-    val __obj = js.Dynamic.literal(number = number, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
-    if (since != null) __obj.updateDynamic("since")(since)
+    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuesListCommentsParamsDeprecatedNumber]
   }
 }

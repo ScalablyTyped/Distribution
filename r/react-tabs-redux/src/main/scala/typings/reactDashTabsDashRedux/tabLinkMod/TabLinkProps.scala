@@ -40,18 +40,18 @@ object TabLinkProps {
     style: js.Object = null
   ): TabLinkProps = {
     val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
-    if (activeClassName != null) __obj.updateDynamic("activeClassName")(activeClassName)
-    if (activeStyle != null) __obj.updateDynamic("activeStyle")(activeStyle)
+    if (activeClassName != null) __obj.updateDynamic("activeClassName")(activeClassName.asInstanceOf[js.Any])
+    if (activeStyle != null) __obj.updateDynamic("activeStyle")(activeStyle.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (component != null) __obj.updateDynamic("component")(component)
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default)
-    if (!js.isUndefined(disableInlineStyles)) __obj.updateDynamic("disableInlineStyles")(disableInlineStyles)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableInlineStyles)) __obj.updateDynamic("disableInlineStyles")(disableInlineStyles.asInstanceOf[js.Any])
     if (handleSelect != null) __obj.updateDynamic("handleSelect")(js.Any.fromFunction2(handleSelect))
-    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive)
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabLinkProps]
   }
 }

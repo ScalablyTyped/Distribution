@@ -63,8 +63,8 @@ object WorkItemField {
     url: String,
     usage: FieldUsage
   ): WorkItemField = {
-    val __obj = js.Dynamic.literal(_links = _links, description = description, isIdentity = isIdentity, isPicklist = isPicklist, isPicklistSuggested = isPicklistSuggested, name = name, readOnly = readOnly, referenceName = referenceName, supportedOperations = supportedOperations, url = url, usage = usage)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], isIdentity = isIdentity.asInstanceOf[js.Any], isPicklist = isPicklist.asInstanceOf[js.Any], isPicklistSuggested = isPicklistSuggested.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], referenceName = referenceName.asInstanceOf[js.Any], supportedOperations = supportedOperations.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemField]
   }
 }

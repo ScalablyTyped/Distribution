@@ -12,7 +12,7 @@ trait Anon_Profiles extends js.Object {
 object Anon_Profiles {
   @scala.inline
   def apply(profiles: js.Array[BootstrapProfile]): Anon_Profiles = {
-    val __obj = js.Dynamic.literal(profiles = profiles)
+    val __obj = js.Dynamic.literal(profiles = profiles.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Profiles]
   }

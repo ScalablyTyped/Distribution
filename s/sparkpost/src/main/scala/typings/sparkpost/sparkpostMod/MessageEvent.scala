@@ -83,8 +83,8 @@ object MessageEvent {
     transmission_id: String,
     `type`: String
   ): MessageEvent = {
-    val __obj = js.Dynamic.literal(bounce_class = bounce_class, campaign_id = campaign_id, customer_id = customer_id, delv_method = delv_method, device_token = device_token, error_code = error_code, ip_address = ip_address, message_id = message_id, msg_from = msg_from, msg_size = msg_size, num_retries = num_retries, raw_reason = raw_reason, rcpt_meta = rcpt_meta, rcpt_tags = rcpt_tags, rcpt_to = rcpt_to, rcpt_type = rcpt_type, reason = reason, routing_domain = routing_domain, subject = subject, template_id = template_id, template_version = template_version, timestamp = timestamp, transmission_id = transmission_id)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(bounce_class = bounce_class.asInstanceOf[js.Any], campaign_id = campaign_id.asInstanceOf[js.Any], customer_id = customer_id.asInstanceOf[js.Any], delv_method = delv_method.asInstanceOf[js.Any], device_token = device_token.asInstanceOf[js.Any], error_code = error_code.asInstanceOf[js.Any], ip_address = ip_address.asInstanceOf[js.Any], message_id = message_id.asInstanceOf[js.Any], msg_from = msg_from.asInstanceOf[js.Any], msg_size = msg_size.asInstanceOf[js.Any], num_retries = num_retries.asInstanceOf[js.Any], raw_reason = raw_reason.asInstanceOf[js.Any], rcpt_meta = rcpt_meta.asInstanceOf[js.Any], rcpt_tags = rcpt_tags.asInstanceOf[js.Any], rcpt_to = rcpt_to.asInstanceOf[js.Any], rcpt_type = rcpt_type.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], routing_domain = routing_domain.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], template_id = template_id.asInstanceOf[js.Any], template_version = template_version.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], transmission_id = transmission_id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageEvent]
   }
 }

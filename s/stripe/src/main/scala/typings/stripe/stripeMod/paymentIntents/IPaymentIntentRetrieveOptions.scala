@@ -16,7 +16,7 @@ trait IPaymentIntentRetrieveOptions extends js.Object {
 object IPaymentIntentRetrieveOptions {
   @scala.inline
   def apply(client_secret: String): IPaymentIntentRetrieveOptions = {
-    val __obj = js.Dynamic.literal(client_secret = client_secret)
+    val __obj = js.Dynamic.literal(client_secret = client_secret.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPaymentIntentRetrieveOptions]
   }

@@ -17,9 +17,9 @@ object UrlCrawlErrorCountsPerType {
   @scala.inline
   def apply(category: String = null, entries: js.Array[UrlCrawlErrorCount] = null, platform: String = null): UrlCrawlErrorCountsPerType = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (entries != null) __obj.updateDynamic("entries")(entries)
-    if (platform != null) __obj.updateDynamic("platform")(platform)
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlCrawlErrorCountsPerType]
   }
 }

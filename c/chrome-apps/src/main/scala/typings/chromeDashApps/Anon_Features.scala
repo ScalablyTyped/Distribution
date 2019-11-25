@@ -13,7 +13,7 @@ trait Anon_Features extends js.Object {
 object Anon_Features {
   @scala.inline
   def apply(features: js.Array[webgl]): Anon_Features = {
-    val __obj = js.Dynamic.literal(features = features)
+    val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Features]
   }

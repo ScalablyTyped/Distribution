@@ -19,10 +19,10 @@ object CityData {
   @scala.inline
   def apply(code: String = null, country: String = null, kind: String = null, name: String = null): CityData = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CityData]
   }
 }

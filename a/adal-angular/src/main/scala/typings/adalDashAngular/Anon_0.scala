@@ -18,7 +18,7 @@ trait Anon_0 extends js.Object {
 object Anon_0 {
   @scala.inline
   def apply(ERROR: `0`, INFO: `2`, VERBOSE: `3`, WARN: `1`): Anon_0 = {
-    val __obj = js.Dynamic.literal(ERROR = ERROR, INFO = INFO, VERBOSE = VERBOSE, WARN = WARN)
+    val __obj = js.Dynamic.literal(ERROR = ERROR.asInstanceOf[js.Any], INFO = INFO.asInstanceOf[js.Any], VERBOSE = VERBOSE.asInstanceOf[js.Any], WARN = WARN.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_0]
   }

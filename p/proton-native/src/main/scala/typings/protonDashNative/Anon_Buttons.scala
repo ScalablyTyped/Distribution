@@ -15,7 +15,7 @@ trait Anon_Buttons extends js.Object {
 object Anon_Buttons {
   @scala.inline
   def apply(buttons: js.Array[String], height: Double, width: Double, x: Double, y: Double): Anon_Buttons = {
-    val __obj = js.Dynamic.literal(buttons = buttons, height = height, width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Buttons]
   }

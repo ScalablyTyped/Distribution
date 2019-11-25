@@ -12,7 +12,7 @@ object LiveChatTextMessageDetails {
   @scala.inline
   def apply(messageText: String = null): LiveChatTextMessageDetails = {
     val __obj = js.Dynamic.literal()
-    if (messageText != null) __obj.updateDynamic("messageText")(messageText)
+    if (messageText != null) __obj.updateDynamic("messageText")(messageText.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveChatTextMessageDetails]
   }
 }

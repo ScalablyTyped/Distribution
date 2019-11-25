@@ -14,7 +14,7 @@ object PartialDeviceObject {
   @scala.inline
   def apply(common: Partial[DeviceCommon] = null): PartialDeviceObject = {
     val __obj = js.Dynamic.literal()
-    if (common != null) __obj.updateDynamic("common")(common)
+    if (common != null) __obj.updateDynamic("common")(common.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialDeviceObject]
   }
 }

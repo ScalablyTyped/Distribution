@@ -12,7 +12,7 @@ trait Anon_Bin extends js.Object {
 object Anon_Bin {
   @scala.inline
   def apply(bin: String, critical: Boolean): Anon_Bin = {
-    val __obj = js.Dynamic.literal(bin = bin, critical = critical)
+    val __obj = js.Dynamic.literal(bin = bin.asInstanceOf[js.Any], critical = critical.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Bin]
   }

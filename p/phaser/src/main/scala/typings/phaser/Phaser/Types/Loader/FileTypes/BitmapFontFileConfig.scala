@@ -52,14 +52,14 @@ object BitmapFontFileConfig {
     textureURL: String = null,
     textureXhrSettings: XHRSettingsObject = null
   ): BitmapFontFileConfig = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (fontDataExtension != null) __obj.updateDynamic("fontDataExtension")(fontDataExtension)
-    if (fontDataURL != null) __obj.updateDynamic("fontDataURL")(fontDataURL)
-    if (fontDataXhrSettings != null) __obj.updateDynamic("fontDataXhrSettings")(fontDataXhrSettings)
-    if (normalMap != null) __obj.updateDynamic("normalMap")(normalMap)
-    if (textureExtension != null) __obj.updateDynamic("textureExtension")(textureExtension)
-    if (textureURL != null) __obj.updateDynamic("textureURL")(textureURL)
-    if (textureXhrSettings != null) __obj.updateDynamic("textureXhrSettings")(textureXhrSettings)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (fontDataExtension != null) __obj.updateDynamic("fontDataExtension")(fontDataExtension.asInstanceOf[js.Any])
+    if (fontDataURL != null) __obj.updateDynamic("fontDataURL")(fontDataURL.asInstanceOf[js.Any])
+    if (fontDataXhrSettings != null) __obj.updateDynamic("fontDataXhrSettings")(fontDataXhrSettings.asInstanceOf[js.Any])
+    if (normalMap != null) __obj.updateDynamic("normalMap")(normalMap.asInstanceOf[js.Any])
+    if (textureExtension != null) __obj.updateDynamic("textureExtension")(textureExtension.asInstanceOf[js.Any])
+    if (textureURL != null) __obj.updateDynamic("textureURL")(textureURL.asInstanceOf[js.Any])
+    if (textureXhrSettings != null) __obj.updateDynamic("textureXhrSettings")(textureXhrSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[BitmapFontFileConfig]
   }
 }

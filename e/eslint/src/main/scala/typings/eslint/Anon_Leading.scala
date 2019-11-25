@@ -13,7 +13,7 @@ trait Anon_Leading extends js.Object {
 object Anon_Leading {
   @scala.inline
   def apply(leading: js.Array[Comment], trailing: js.Array[Comment]): Anon_Leading = {
-    val __obj = js.Dynamic.literal(leading = leading, trailing = trailing)
+    val __obj = js.Dynamic.literal(leading = leading.asInstanceOf[js.Any], trailing = trailing.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Leading]
   }

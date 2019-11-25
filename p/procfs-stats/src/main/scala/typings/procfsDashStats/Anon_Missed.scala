@@ -11,7 +11,7 @@ trait Anon_Missed extends js.Object {
 object Anon_Missed {
   @scala.inline
   def apply(Missed: String): Anon_Missed = {
-    val __obj = js.Dynamic.literal(Missed = Missed)
+    val __obj = js.Dynamic.literal(Missed = Missed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Missed]
   }

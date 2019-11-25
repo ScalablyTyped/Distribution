@@ -27,10 +27,10 @@ object DataSourceSettingsConnectionDataSourceCrudAction {
   @scala.inline
   def apply(create: String = null, destroy: String = null, read: String = null, update: String = null): DataSourceSettingsConnectionDataSourceCrudAction = {
     val __obj = js.Dynamic.literal()
-    if (create != null) __obj.updateDynamic("create")(create)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (read != null) __obj.updateDynamic("read")(read)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (create != null) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
+    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceSettingsConnectionDataSourceCrudAction]
   }
 }

@@ -51,18 +51,18 @@ object AutomaticScaling {
     requestUtilization: RequestUtilization = null
   ): AutomaticScaling = {
     val __obj = js.Dynamic.literal()
-    if (coolDownPeriod != null) __obj.updateDynamic("coolDownPeriod")(coolDownPeriod)
-    if (cpuUtilization != null) __obj.updateDynamic("cpuUtilization")(cpuUtilization)
-    if (diskUtilization != null) __obj.updateDynamic("diskUtilization")(diskUtilization)
+    if (coolDownPeriod != null) __obj.updateDynamic("coolDownPeriod")(coolDownPeriod.asInstanceOf[js.Any])
+    if (cpuUtilization != null) __obj.updateDynamic("cpuUtilization")(cpuUtilization.asInstanceOf[js.Any])
+    if (diskUtilization != null) __obj.updateDynamic("diskUtilization")(diskUtilization.asInstanceOf[js.Any])
     if (maxConcurrentRequests != null) __obj.updateDynamic("maxConcurrentRequests")(maxConcurrentRequests.asInstanceOf[js.Any])
     if (maxIdleInstances != null) __obj.updateDynamic("maxIdleInstances")(maxIdleInstances.asInstanceOf[js.Any])
-    if (maxPendingLatency != null) __obj.updateDynamic("maxPendingLatency")(maxPendingLatency)
+    if (maxPendingLatency != null) __obj.updateDynamic("maxPendingLatency")(maxPendingLatency.asInstanceOf[js.Any])
     if (maxTotalInstances != null) __obj.updateDynamic("maxTotalInstances")(maxTotalInstances.asInstanceOf[js.Any])
     if (minIdleInstances != null) __obj.updateDynamic("minIdleInstances")(minIdleInstances.asInstanceOf[js.Any])
-    if (minPendingLatency != null) __obj.updateDynamic("minPendingLatency")(minPendingLatency)
+    if (minPendingLatency != null) __obj.updateDynamic("minPendingLatency")(minPendingLatency.asInstanceOf[js.Any])
     if (minTotalInstances != null) __obj.updateDynamic("minTotalInstances")(minTotalInstances.asInstanceOf[js.Any])
-    if (networkUtilization != null) __obj.updateDynamic("networkUtilization")(networkUtilization)
-    if (requestUtilization != null) __obj.updateDynamic("requestUtilization")(requestUtilization)
+    if (networkUtilization != null) __obj.updateDynamic("networkUtilization")(networkUtilization.asInstanceOf[js.Any])
+    if (requestUtilization != null) __obj.updateDynamic("requestUtilization")(requestUtilization.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutomaticScaling]
   }
 }

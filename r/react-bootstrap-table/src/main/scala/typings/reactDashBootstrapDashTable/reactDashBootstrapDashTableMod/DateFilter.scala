@@ -39,11 +39,11 @@ object DateFilter {
     style: Anon_ComparatorDateCSSProperties = null
   ): DateFilter = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (dateComparators != null) __obj.updateDynamic("dateComparators")(dateComparators)
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (dateComparators != null) __obj.updateDynamic("dateComparators")(dateComparators.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateFilter]
   }
 }

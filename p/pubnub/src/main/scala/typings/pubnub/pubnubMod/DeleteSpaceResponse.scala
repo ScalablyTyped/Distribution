@@ -11,7 +11,7 @@ trait DeleteSpaceResponse extends js.Object {
 object DeleteSpaceResponse {
   @scala.inline
   def apply(status: Double): DeleteSpaceResponse = {
-    val __obj = js.Dynamic.literal(status = status)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteSpaceResponse]
   }

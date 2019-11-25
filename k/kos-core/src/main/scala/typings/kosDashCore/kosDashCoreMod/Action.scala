@@ -15,8 +15,8 @@ object Action {
   @scala.inline
   def apply[T](`type`: String, payload: Partial[T] with StringDictionary[js.Any] = null): Action[T] = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (payload != null) __obj.updateDynamic("payload")(payload)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action[T]]
   }
 }

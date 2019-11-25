@@ -20,9 +20,9 @@ object SessionTerminateOptions {
     status_code: Int | Double = null
   ): SessionTerminateOptions = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
-    if (reason_phrase != null) __obj.updateDynamic("reason_phrase")(reason_phrase)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
+    if (reason_phrase != null) __obj.updateDynamic("reason_phrase")(reason_phrase.asInstanceOf[js.Any])
     if (status_code != null) __obj.updateDynamic("status_code")(status_code.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionTerminateOptions]
   }

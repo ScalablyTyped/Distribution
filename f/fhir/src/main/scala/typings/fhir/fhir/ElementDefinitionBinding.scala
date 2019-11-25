@@ -54,18 +54,18 @@ object ElementDefinitionBinding {
     valueSetReference: Reference = null,
     valueSetUri: uri = null
   ): ElementDefinitionBinding = {
-    val __obj = js.Dynamic.literal(strength = strength)
-    if (_description != null) __obj.updateDynamic("_description")(_description)
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
-    if (_id != null) __obj.updateDynamic("_id")(_id)
-    if (_strength != null) __obj.updateDynamic("_strength")(_strength)
-    if (_valueSetUri != null) __obj.updateDynamic("_valueSetUri")(_valueSetUri)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (valueSetReference != null) __obj.updateDynamic("valueSetReference")(valueSetReference)
-    if (valueSetUri != null) __obj.updateDynamic("valueSetUri")(valueSetUri)
+    val __obj = js.Dynamic.literal(strength = strength.asInstanceOf[js.Any])
+    if (_description != null) __obj.updateDynamic("_description")(_description.asInstanceOf[js.Any])
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
+    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
+    if (_strength != null) __obj.updateDynamic("_strength")(_strength.asInstanceOf[js.Any])
+    if (_valueSetUri != null) __obj.updateDynamic("_valueSetUri")(_valueSetUri.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (valueSetReference != null) __obj.updateDynamic("valueSetReference")(valueSetReference.asInstanceOf[js.Any])
+    if (valueSetUri != null) __obj.updateDynamic("valueSetUri")(valueSetUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementDefinitionBinding]
   }
 }

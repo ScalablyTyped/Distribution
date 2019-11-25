@@ -15,7 +15,7 @@ object IParallelNode {
   @scala.inline
   def apply(nodes: js.Array[IQueryPlanNode] = null): IParallelNode = {
     val __obj = js.Dynamic.literal()
-    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IParallelNode]
   }
 }

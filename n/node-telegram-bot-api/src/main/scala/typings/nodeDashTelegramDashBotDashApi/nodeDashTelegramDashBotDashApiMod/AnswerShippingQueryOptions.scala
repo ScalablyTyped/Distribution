@@ -13,8 +13,8 @@ object AnswerShippingQueryOptions {
   @scala.inline
   def apply(error_message: String = null, shipping_options: js.Array[ShippingOption] = null): AnswerShippingQueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (error_message != null) __obj.updateDynamic("error_message")(error_message)
-    if (shipping_options != null) __obj.updateDynamic("shipping_options")(shipping_options)
+    if (error_message != null) __obj.updateDynamic("error_message")(error_message.asInstanceOf[js.Any])
+    if (shipping_options != null) __obj.updateDynamic("shipping_options")(shipping_options.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnswerShippingQueryOptions]
   }
 }

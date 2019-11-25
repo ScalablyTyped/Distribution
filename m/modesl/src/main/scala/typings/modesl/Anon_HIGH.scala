@@ -13,7 +13,7 @@ trait Anon_HIGH extends js.Object {
 object Anon_HIGH {
   @scala.inline
   def apply(HIGH: String, LOW: String, NORMAL: String): Anon_HIGH = {
-    val __obj = js.Dynamic.literal(HIGH = HIGH, LOW = LOW, NORMAL = NORMAL)
+    val __obj = js.Dynamic.literal(HIGH = HIGH.asInstanceOf[js.Any], LOW = LOW.asInstanceOf[js.Any], NORMAL = NORMAL.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HIGH]
   }

@@ -26,7 +26,7 @@ object ReleaseGates {
     startedOn: Date,
     status: GateStatus
   ): ReleaseGates = {
-    val __obj = js.Dynamic.literal(deploymentJobs = deploymentJobs, id = id, lastModifiedOn = lastModifiedOn, runPlanId = runPlanId, stabilizationCompletedOn = stabilizationCompletedOn, startedOn = startedOn, status = status)
+    val __obj = js.Dynamic.literal(deploymentJobs = deploymentJobs.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lastModifiedOn = lastModifiedOn.asInstanceOf[js.Any], runPlanId = runPlanId.asInstanceOf[js.Any], stabilizationCompletedOn = stabilizationCompletedOn.asInstanceOf[js.Any], startedOn = startedOn.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReleaseGates]
   }

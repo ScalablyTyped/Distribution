@@ -13,8 +13,8 @@ trait CalendarDot extends js.Object {
 object CalendarDot {
   @scala.inline
   def apply(color: String, key: String, selectedDotColor: String = null): CalendarDot = {
-    val __obj = js.Dynamic.literal(color = color, key = key)
-    if (selectedDotColor != null) __obj.updateDynamic("selectedDotColor")(selectedDotColor)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
+    if (selectedDotColor != null) __obj.updateDynamic("selectedDotColor")(selectedDotColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarDot]
   }
 }

@@ -35,8 +35,8 @@ object Hooks {
     onStateChange: () => Unit = null
   ): Hooks = {
     val __obj = js.Dynamic.literal()
-    if (extraEnhancers != null) __obj.updateDynamic("extraEnhancers")(extraEnhancers)
-    if (extraReducers != null) __obj.updateDynamic("extraReducers")(extraReducers)
+    if (extraEnhancers != null) __obj.updateDynamic("extraEnhancers")(extraEnhancers.asInstanceOf[js.Any])
+    if (extraReducers != null) __obj.updateDynamic("extraReducers")(extraReducers.asInstanceOf[js.Any])
     if (onAction != null) __obj.updateDynamic("onAction")(onAction.asInstanceOf[js.Any])
     if (onEffect != null) __obj.updateDynamic("onEffect")(js.Any.fromFunction0(onEffect))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction2(onError))

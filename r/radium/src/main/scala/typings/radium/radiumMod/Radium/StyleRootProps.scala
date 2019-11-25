@@ -20,9 +20,9 @@ object StyleRootProps {
     radiumConfig: RadiumConfig = null
   ): StyleRootProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (radiumConfig != null) __obj.updateDynamic("radiumConfig")(radiumConfig)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (radiumConfig != null) __obj.updateDynamic("radiumConfig")(radiumConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleRootProps]
   }
 }

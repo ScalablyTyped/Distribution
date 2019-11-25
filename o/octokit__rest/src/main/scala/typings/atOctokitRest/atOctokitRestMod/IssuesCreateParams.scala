@@ -40,10 +40,10 @@ object IssuesCreateParams {
     labels: js.Array[String] = null,
     milestone: Int | Double = null
   ): IssuesCreateParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo, title = title)
-    if (assignees != null) __obj.updateDynamic("assignees")(assignees)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (assignees != null) __obj.updateDynamic("assignees")(assignees.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (milestone != null) __obj.updateDynamic("milestone")(milestone.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuesCreateParams]
   }

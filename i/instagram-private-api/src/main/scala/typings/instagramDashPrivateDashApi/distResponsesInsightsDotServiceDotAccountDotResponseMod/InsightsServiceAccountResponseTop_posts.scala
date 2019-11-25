@@ -11,7 +11,7 @@ trait InsightsServiceAccountResponseTop_posts extends js.Object {
 object InsightsServiceAccountResponseTop_posts {
   @scala.inline
   def apply(edges: js.Array[_]): InsightsServiceAccountResponseTop_posts = {
-    val __obj = js.Dynamic.literal(edges = edges)
+    val __obj = js.Dynamic.literal(edges = edges.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InsightsServiceAccountResponseTop_posts]
   }

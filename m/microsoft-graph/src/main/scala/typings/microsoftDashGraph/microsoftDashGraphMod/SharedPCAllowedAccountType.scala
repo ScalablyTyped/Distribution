@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait SharedPCAllowedAccountType extends js.Object
 
+object SharedPCAllowedAccountType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def domain: typings.microsoftDashGraph.microsoftDashGraphStrings.domain = this.cast("domain")
+  @scala.inline
+  def guest: typings.microsoftDashGraph.microsoftDashGraphStrings.guest = this.cast("guest")
+}
+

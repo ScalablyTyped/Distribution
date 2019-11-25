@@ -13,7 +13,7 @@ trait Anon_Transform extends js.Object {
 object Anon_Transform {
   @scala.inline
   def apply(transform: js.Array[StringDictionary[AnimatedInterpolation]]): Anon_Transform = {
-    val __obj = js.Dynamic.literal(transform = transform)
+    val __obj = js.Dynamic.literal(transform = transform.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Transform]
   }

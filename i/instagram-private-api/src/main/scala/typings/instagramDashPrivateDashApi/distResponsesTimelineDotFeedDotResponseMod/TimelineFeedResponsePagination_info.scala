@@ -12,7 +12,7 @@ trait TimelineFeedResponsePagination_info extends js.Object {
 object TimelineFeedResponsePagination_info {
   @scala.inline
   def apply(group_id: Null, source: Null): TimelineFeedResponsePagination_info = {
-    val __obj = js.Dynamic.literal(group_id = group_id, source = source)
+    val __obj = js.Dynamic.literal(group_id = group_id.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TimelineFeedResponsePagination_info]
   }

@@ -28,11 +28,11 @@ object MessageParams {
     input: MessageInput = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): MessageParams = {
-    val __obj = js.Dynamic.literal(assistant_id = assistant_id, session_id = session_id)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    val __obj = js.Dynamic.literal(assistant_id = assistant_id.asInstanceOf[js.Any], session_id = session_id.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageParams]
   }
 }

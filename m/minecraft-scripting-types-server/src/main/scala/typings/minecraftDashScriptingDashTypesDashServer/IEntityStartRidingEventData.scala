@@ -22,7 +22,7 @@ trait IEntityStartRidingEventData extends js.Object {
 object IEntityStartRidingEventData {
   @scala.inline
   def apply(entity: IEntity, ride: IEntity): IEntityStartRidingEventData = {
-    val __obj = js.Dynamic.literal(entity = entity, ride = ride)
+    val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], ride = ride.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IEntityStartRidingEventData]
   }

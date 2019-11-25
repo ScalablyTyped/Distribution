@@ -26,14 +26,14 @@ object InteractiveLoginOptions {
     username: String = null
   ): InteractiveLoginOptions = {
     val __obj = js.Dynamic.literal()
-    if (authorizationScheme != null) __obj.updateDynamic("authorizationScheme")(authorizationScheme)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (environment != null) __obj.updateDynamic("environment")(environment)
-    if (language != null) __obj.updateDynamic("language")(language)
+    if (authorizationScheme != null) __obj.updateDynamic("authorizationScheme")(authorizationScheme.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (tokenAudience != null) __obj.updateDynamic("tokenAudience")(tokenAudience.asInstanceOf[js.Any])
-    if (tokenCache != null) __obj.updateDynamic("tokenCache")(tokenCache)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (tokenCache != null) __obj.updateDynamic("tokenCache")(tokenCache.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractiveLoginOptions]
   }
 }

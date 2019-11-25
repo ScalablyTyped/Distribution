@@ -14,7 +14,7 @@ trait UpdateIndexTask extends js.Object {
 object UpdateIndexTask {
   @scala.inline
   def apply(taskID: Double, updatedAt: String): UpdateIndexTask = {
-    val __obj = js.Dynamic.literal(taskID = taskID, updatedAt = updatedAt)
+    val __obj = js.Dynamic.literal(taskID = taskID.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UpdateIndexTask]
   }

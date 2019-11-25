@@ -19,10 +19,10 @@ trait Example extends js.Object {
 object Example {
   @scala.inline
   def apply(text: String, created: String = null, mentions: js.Array[Mention] = null, updated: String = null): Example = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (mentions != null) __obj.updateDynamic("mentions")(mentions)
-    if (updated != null) __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (mentions != null) __obj.updateDynamic("mentions")(mentions.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Example]
   }
 }

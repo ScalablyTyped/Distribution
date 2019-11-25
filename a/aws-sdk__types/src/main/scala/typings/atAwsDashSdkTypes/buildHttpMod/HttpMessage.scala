@@ -14,7 +14,7 @@ trait HttpMessage[StreamType] extends js.Object {
 object HttpMessage {
   @scala.inline
   def apply[StreamType](headers: HeaderBag, body: ArrayBuffer | ArrayBufferView | String | StreamType = null): HttpMessage[StreamType] = {
-    val __obj = js.Dynamic.literal(headers = headers)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpMessage[StreamType]]
   }

@@ -26,12 +26,12 @@ object UserInputParameters {
     include: Anon_CustomFields = null,
     profileUrl: String = null
   ): UserInputParameters = {
-    val __obj = js.Dynamic.literal(id = id, name = name)
-    if (custom != null) __obj.updateDynamic("custom")(custom)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (externalId != null) __obj.updateDynamic("externalId")(externalId)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (profileUrl != null) __obj.updateDynamic("profileUrl")(profileUrl)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (externalId != null) __obj.updateDynamic("externalId")(externalId.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (profileUrl != null) __obj.updateDynamic("profileUrl")(profileUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserInputParameters]
   }
 }

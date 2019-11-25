@@ -25,8 +25,8 @@ object FormatMessage {
   @scala.inline
   def apply(format: String = null, parameters: js.Array[String] = null): FormatMessage = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatMessage]
   }
 }

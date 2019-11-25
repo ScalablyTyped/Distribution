@@ -10,7 +10,7 @@ package object chartDotJsMod {
   import typings.std.CanvasGradient
   import typings.std.CanvasPattern
 
-  type BorderWidth = Double | (/* import warning: ImportType.apply c Unsupported type mapping: 
+  type BorderWidth = Double | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in chart.js.chart.js.PositionType ]:? number}
     */ typings.chartDotJs.chartDotJsStrings.BorderWidth with js.Any)
   type ChartColor = String | CanvasGradient | CanvasPattern | js.Array[String]

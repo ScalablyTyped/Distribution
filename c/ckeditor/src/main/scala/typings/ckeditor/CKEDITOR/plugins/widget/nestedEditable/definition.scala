@@ -24,8 +24,8 @@ object definition {
     val __obj = js.Dynamic.literal()
     if (allowedContent != null) __obj.updateDynamic("allowedContent")(allowedContent.asInstanceOf[js.Any])
     if (disallowedContent != null) __obj.updateDynamic("disallowedContent")(disallowedContent.asInstanceOf[js.Any])
-    if (pathName != null) __obj.updateDynamic("pathName")(pathName)
-    if (selector != null) __obj.updateDynamic("selector")(selector)
+    if (pathName != null) __obj.updateDynamic("pathName")(pathName.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[definition]
   }
 }

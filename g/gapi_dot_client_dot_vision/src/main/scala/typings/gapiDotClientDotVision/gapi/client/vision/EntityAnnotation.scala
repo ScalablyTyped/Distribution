@@ -68,13 +68,13 @@ object EntityAnnotation {
     topicality: Int | Double = null
   ): EntityAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (boundingPoly != null) __obj.updateDynamic("boundingPoly")(boundingPoly)
+    if (boundingPoly != null) __obj.updateDynamic("boundingPoly")(boundingPoly.asInstanceOf[js.Any])
     if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (locations != null) __obj.updateDynamic("locations")(locations)
-    if (mid != null) __obj.updateDynamic("mid")(mid)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
+    if (mid != null) __obj.updateDynamic("mid")(mid.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
     if (topicality != null) __obj.updateDynamic("topicality")(topicality.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityAnnotation]

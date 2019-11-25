@@ -12,8 +12,8 @@ trait Track extends js.Object {
 object Track {
   @scala.inline
   def apply(uri: String, positions: js.Array[Double] = null): Track = {
-    val __obj = js.Dynamic.literal(uri = uri)
-    if (positions != null) __obj.updateDynamic("positions")(positions)
+    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
+    if (positions != null) __obj.updateDynamic("positions")(positions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Track]
   }
 }

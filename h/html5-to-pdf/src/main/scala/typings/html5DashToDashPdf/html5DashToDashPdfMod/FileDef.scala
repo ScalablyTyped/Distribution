@@ -20,7 +20,7 @@ trait FileDef extends js.Object {
 object FileDef {
   @scala.inline
   def apply(filePath: String, `type`: css | JS): FileDef = {
-    val __obj = js.Dynamic.literal(filePath = filePath)
+    val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileDef]
   }

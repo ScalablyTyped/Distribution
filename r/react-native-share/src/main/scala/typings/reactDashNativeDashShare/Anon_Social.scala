@@ -12,7 +12,7 @@ trait Anon_Social extends js.Object {
 object Anon_Social {
   @scala.inline
   def apply(social: SupportedSocialApps): Anon_Social = {
-    val __obj = js.Dynamic.literal(social = social)
+    val __obj = js.Dynamic.literal(social = social.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Social]
   }

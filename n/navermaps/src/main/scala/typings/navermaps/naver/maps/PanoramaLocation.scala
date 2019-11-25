@@ -15,7 +15,7 @@ trait PanoramaLocation extends js.Object {
 object PanoramaLocation {
   @scala.inline
   def apply(address: String, coord: LatLng, panoId: String, photodate: String, title: String): PanoramaLocation = {
-    val __obj = js.Dynamic.literal(address = address, coord = coord, panoId = panoId, photodate = photodate, title = title)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], coord = coord.asInstanceOf[js.Any], panoId = panoId.asInstanceOf[js.Any], photodate = photodate.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PanoramaLocation]
   }

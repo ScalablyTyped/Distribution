@@ -12,7 +12,7 @@ object ComponentOptions {
   @scala.inline
   def apply(children: js.Array[Child] = null): ComponentOptions = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentOptions]
   }
 }

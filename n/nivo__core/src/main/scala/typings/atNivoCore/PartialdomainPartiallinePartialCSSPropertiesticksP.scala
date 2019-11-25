@@ -19,9 +19,9 @@ object PartialdomainPartiallinePartialCSSPropertiesticksP {
     ticks: PartiallinePartialCSSPropertiestextPartialCSSPrope = null
   ): PartialdomainPartiallinePartialCSSPropertiesticksP = {
     val __obj = js.Dynamic.literal()
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (legend != null) __obj.updateDynamic("legend")(legend)
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks)
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
+    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialdomainPartiallinePartialCSSPropertiesticksP]
   }
 }

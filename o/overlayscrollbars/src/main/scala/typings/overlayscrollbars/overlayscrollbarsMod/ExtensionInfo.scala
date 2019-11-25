@@ -22,8 +22,8 @@ object ExtensionInfo {
     name: String,
     defaultOptions: js.Object = null
   ): ExtensionInfo = {
-    val __obj = js.Dynamic.literal(extensionFactory = js.Any.fromFunction4(extensionFactory), name = name)
-    if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions)
+    val __obj = js.Dynamic.literal(extensionFactory = js.Any.fromFunction4(extensionFactory), name = name.asInstanceOf[js.Any])
+    if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionInfo]
   }
 }

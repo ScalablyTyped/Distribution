@@ -14,8 +14,8 @@ object LiveStreamStatus {
   @scala.inline
   def apply(healthStatus: LiveStreamHealthStatus = null, streamStatus: String = null): LiveStreamStatus = {
     val __obj = js.Dynamic.literal()
-    if (healthStatus != null) __obj.updateDynamic("healthStatus")(healthStatus)
-    if (streamStatus != null) __obj.updateDynamic("streamStatus")(streamStatus)
+    if (healthStatus != null) __obj.updateDynamic("healthStatus")(healthStatus.asInstanceOf[js.Any])
+    if (streamStatus != null) __obj.updateDynamic("streamStatus")(streamStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveStreamStatus]
   }
 }

@@ -15,8 +15,8 @@ object MetricDescriptorTypeDescriptor {
   @scala.inline
   def apply(metricType: String = null, valueType: String = null): MetricDescriptorTypeDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (metricType != null) __obj.updateDynamic("metricType")(metricType)
-    if (valueType != null) __obj.updateDynamic("valueType")(valueType)
+    if (metricType != null) __obj.updateDynamic("metricType")(metricType.asInstanceOf[js.Any])
+    if (valueType != null) __obj.updateDynamic("valueType")(valueType.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricDescriptorTypeDescriptor]
   }
 }

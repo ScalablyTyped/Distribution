@@ -12,8 +12,8 @@ trait DocsPageProps extends js.Object {
 object DocsPageProps {
   @scala.inline
   def apply(title: String, subtitle: String = null): DocsPageProps = {
-    val __obj = js.Dynamic.literal(title = title)
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocsPageProps]
   }
 }

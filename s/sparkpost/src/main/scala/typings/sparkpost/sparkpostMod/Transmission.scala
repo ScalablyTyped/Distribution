@@ -54,7 +54,7 @@ object Transmission {
     state: submitted | Generating | Success | Canceled,
     substitution_data: js.Any
   ): Transmission = {
-    val __obj = js.Dynamic.literal(campaign_id = campaign_id, content = content.asInstanceOf[js.Any], description = description, id = id, metadata = metadata, num_failed_generation = num_failed_generation, num_generated = num_generated, num_invalid_recipients = num_invalid_recipients, options = options, rcpt_list_chunk_size = rcpt_list_chunk_size, rcpt_list_total_chunks = rcpt_list_total_chunks, state = state.asInstanceOf[js.Any], substitution_data = substitution_data)
+    val __obj = js.Dynamic.literal(campaign_id = campaign_id.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], num_failed_generation = num_failed_generation.asInstanceOf[js.Any], num_generated = num_generated.asInstanceOf[js.Any], num_invalid_recipients = num_invalid_recipients.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], rcpt_list_chunk_size = rcpt_list_chunk_size.asInstanceOf[js.Any], rcpt_list_total_chunks = rcpt_list_total_chunks.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], substitution_data = substitution_data.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Transmission]
   }

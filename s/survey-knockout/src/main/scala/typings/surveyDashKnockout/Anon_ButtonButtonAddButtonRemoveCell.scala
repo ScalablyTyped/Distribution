@@ -27,7 +27,7 @@ object Anon_ButtonButtonAddButtonRemoveCell {
     iconRemove: String,
     root: String
   ): Anon_ButtonButtonAddButtonRemoveCell = {
-    val __obj = js.Dynamic.literal(button = button, buttonAdd = buttonAdd, buttonRemove = buttonRemove, cell = cell, headerCell = headerCell, iconAdd = iconAdd, iconRemove = iconRemove, root = root)
+    val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], buttonAdd = buttonAdd.asInstanceOf[js.Any], buttonRemove = buttonRemove.asInstanceOf[js.Any], cell = cell.asInstanceOf[js.Any], headerCell = headerCell.asInstanceOf[js.Any], iconAdd = iconAdd.asInstanceOf[js.Any], iconRemove = iconRemove.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ButtonButtonAddButtonRemoveCell]
   }

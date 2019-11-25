@@ -35,14 +35,14 @@ object InstallOpts {
     version: String = null
   ): InstallOpts = {
     val __obj = js.Dynamic.literal()
-    if (basePath != null) __obj.updateDynamic("basePath")(basePath)
-    if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL)
+    if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
+    if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL.asInstanceOf[js.Any])
     if (cb != null) __obj.updateDynamic("cb")(js.Any.fromFunction1(cb))
-    if (drivers != null) __obj.updateDynamic("drivers")(drivers)
+    if (drivers != null) __obj.updateDynamic("drivers")(drivers.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(js.Any.fromFunction1(logger))
     if (progressCb != null) __obj.updateDynamic("progressCb")(js.Any.fromFunction3(progressCb))
     if (requestOpts != null) __obj.updateDynamic("requestOpts")(requestOpts.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstallOpts]
   }
 }

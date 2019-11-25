@@ -37,7 +37,7 @@ object ITableViewSaveInfo {
     qTables: js.Array[ITableViewTableWinSaveInfo],
     qZoomFactor: Double
   ): ITableViewSaveInfo = {
-    val __obj = js.Dynamic.literal(qBroomPoints = qBroomPoints, qConnectionPoints = qConnectionPoints, qTables = qTables, qZoomFactor = qZoomFactor)
+    val __obj = js.Dynamic.literal(qBroomPoints = qBroomPoints.asInstanceOf[js.Any], qConnectionPoints = qConnectionPoints.asInstanceOf[js.Any], qTables = qTables.asInstanceOf[js.Any], qZoomFactor = qZoomFactor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITableViewSaveInfo]
   }

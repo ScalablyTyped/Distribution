@@ -13,7 +13,7 @@ trait Coin extends js.Object {
 object Coin {
   @scala.inline
   def apply(id: String, name: String, symbol: String): Coin = {
-    val __obj = js.Dynamic.literal(id = id, name = name, symbol = symbol)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Coin]
   }

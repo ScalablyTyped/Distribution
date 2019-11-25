@@ -66,7 +66,7 @@ trait ojTabBar_[K, D] extends baseComponent[ojTabBarSettableProperties[K, D]] {
   var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], _]) | Null = js.native
   var onCurrentItemChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['currentItem'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['currentItem'] */ js.Any
     ], 
     _
   ]) | Null = js.native
@@ -87,7 +87,7 @@ trait ojTabBar_[K, D] extends baseComponent[ojTabBarSettableProperties[K, D]] {
   var onReorderableChanged: (js.Function1[/* event */ JetElementCustomEvent[enabled | disabled], _]) | Null = js.native
   var onSelectionChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['selection'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['selection'] */ js.Any
     ], 
     _
   ]) | Null = js.native
@@ -103,7 +103,7 @@ trait ojTabBar_[K, D] extends baseComponent[ojTabBarSettableProperties[K, D]] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['currentItem'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['currentItem'] */ js.Any
       ], 
       _
     ]
@@ -113,7 +113,7 @@ trait ojTabBar_[K, D] extends baseComponent[ojTabBarSettableProperties[K, D]] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['currentItem'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['currentItem'] */ js.Any
       ], 
       _
     ],
@@ -168,7 +168,7 @@ trait ojTabBar_[K, D] extends baseComponent[ojTabBarSettableProperties[K, D]] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['selection'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['selection'] */ js.Any
       ], 
       _
     ]
@@ -178,7 +178,7 @@ trait ojTabBar_[K, D] extends baseComponent[ojTabBarSettableProperties[K, D]] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['selection'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['selection'] */ js.Any
       ], 
       _
     ],
@@ -345,7 +345,7 @@ trait ojTabBar_[K, D] extends baseComponent[ojTabBarSettableProperties[K, D]] {
   @JSName("getProperty")
   def getProperty_as(property: as): String = js.native
   @JSName("getProperty")
-  def getProperty_currentItem(property: currentItem): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['currentItem'] */ js.Any = js.native
+  def getProperty_currentItem(property: currentItem): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['currentItem'] */ js.Any = js.native
   @JSName("getProperty")
   def getProperty_data(property: data): (DataProvider[K, D]) | Null = js.native
   @JSName("getProperty")
@@ -359,7 +359,7 @@ trait ojTabBar_[K, D] extends baseComponent[ojTabBarSettableProperties[K, D]] {
   @JSName("getProperty")
   def getProperty_reorderable(property: reorderable): enabled | disabled = js.native
   @JSName("getProperty")
-  def getProperty_selection(property: selection): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['selection'] */ js.Any = js.native
+  def getProperty_selection(property: selection): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBar<K, D>['selection'] */ js.Any = js.native
   @JSName("getProperty")
   def getProperty_truncation(property: truncation): none | progressive = js.native
   def setProperties(properties: ojTabBarSettablePropertiesLenient[K, D]): Unit = js.native

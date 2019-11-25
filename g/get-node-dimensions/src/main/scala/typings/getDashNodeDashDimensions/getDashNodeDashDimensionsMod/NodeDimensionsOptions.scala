@@ -23,11 +23,11 @@ object NodeDimensionsOptions {
     width: String = null
   ): NodeDimensionsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone)
-    if (display != null) __obj.updateDynamic("display")(display)
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin)
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone.asInstanceOf[js.Any])
+    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeDimensionsOptions]
   }
 }

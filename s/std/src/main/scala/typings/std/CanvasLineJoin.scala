@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait CanvasLineJoin extends js.Object
 
+object CanvasLineJoin {
+  @scala.inline
+  def bevel: typings.std.stdStrings.bevel = this.cast("bevel")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def miter: typings.std.stdStrings.miter = this.cast("miter")
+  @scala.inline
+  def round: typings.std.stdStrings.round = this.cast("round")
+}
+

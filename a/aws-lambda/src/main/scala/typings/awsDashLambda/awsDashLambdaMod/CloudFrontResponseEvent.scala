@@ -12,7 +12,7 @@ trait CloudFrontResponseEvent extends js.Object {
 object CloudFrontResponseEvent {
   @scala.inline
   def apply(Records: js.Array[Anon_Cf]): CloudFrontResponseEvent = {
-    val __obj = js.Dynamic.literal(Records = Records)
+    val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CloudFrontResponseEvent]
   }

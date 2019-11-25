@@ -62,14 +62,14 @@ object DataSource {
     `type`: String = null
   ): DataSource = {
     val __obj = js.Dynamic.literal()
-    if (application != null) __obj.updateDynamic("application")(application)
-    if (dataQualityStandard != null) __obj.updateDynamic("dataQualityStandard")(dataQualityStandard)
-    if (dataStreamId != null) __obj.updateDynamic("dataStreamId")(dataStreamId)
-    if (dataStreamName != null) __obj.updateDynamic("dataStreamName")(dataStreamName)
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType)
-    if (device != null) __obj.updateDynamic("device")(device)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
+    if (dataQualityStandard != null) __obj.updateDynamic("dataQualityStandard")(dataQualityStandard.asInstanceOf[js.Any])
+    if (dataStreamId != null) __obj.updateDynamic("dataStreamId")(dataStreamId.asInstanceOf[js.Any])
+    if (dataStreamName != null) __obj.updateDynamic("dataStreamName")(dataStreamName.asInstanceOf[js.Any])
+    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
+    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSource]
   }
 }

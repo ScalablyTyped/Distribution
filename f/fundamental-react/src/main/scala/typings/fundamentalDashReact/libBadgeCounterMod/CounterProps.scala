@@ -23,10 +23,10 @@ object CounterProps {
     notification: js.UndefOr[Boolean] = js.undefined
   ): CounterProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (localizedText != null) __obj.updateDynamic("localizedText")(localizedText)
-    if (!js.isUndefined(notification)) __obj.updateDynamic("notification")(notification)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (localizedText != null) __obj.updateDynamic("localizedText")(localizedText.asInstanceOf[js.Any])
+    if (!js.isUndefined(notification)) __obj.updateDynamic("notification")(notification.asInstanceOf[js.Any])
     __obj.asInstanceOf[CounterProps]
   }
 }

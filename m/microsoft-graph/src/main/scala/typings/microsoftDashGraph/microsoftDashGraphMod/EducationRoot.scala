@@ -25,11 +25,11 @@ object EducationRoot {
     users: js.Array[EducationUser] = null
   ): EducationRoot = {
     val __obj = js.Dynamic.literal()
-    if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (me != null) __obj.updateDynamic("me")(me)
-    if (schools != null) __obj.updateDynamic("schools")(schools)
-    if (users != null) __obj.updateDynamic("users")(users)
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (me != null) __obj.updateDynamic("me")(me.asInstanceOf[js.Any])
+    if (schools != null) __obj.updateDynamic("schools")(schools.asInstanceOf[js.Any])
+    if (users != null) __obj.updateDynamic("users")(users.asInstanceOf[js.Any])
     __obj.asInstanceOf[EducationRoot]
   }
 }

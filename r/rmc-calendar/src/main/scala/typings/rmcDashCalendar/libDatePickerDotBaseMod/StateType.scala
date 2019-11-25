@@ -12,7 +12,7 @@ trait StateType extends js.Object {
 object StateType {
   @scala.inline
   def apply(months: js.Array[MonthData]): StateType = {
-    val __obj = js.Dynamic.literal(months = months)
+    val __obj = js.Dynamic.literal(months = months.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StateType]
   }

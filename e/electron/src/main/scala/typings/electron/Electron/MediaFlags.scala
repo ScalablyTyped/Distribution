@@ -51,7 +51,7 @@ object MediaFlags {
     isMuted: Boolean,
     isPaused: Boolean
   ): MediaFlags = {
-    val __obj = js.Dynamic.literal(canRotate = canRotate, canToggleControls = canToggleControls, hasAudio = hasAudio, inError = inError, isControlsVisible = isControlsVisible, isLooping = isLooping, isMuted = isMuted, isPaused = isPaused)
+    val __obj = js.Dynamic.literal(canRotate = canRotate.asInstanceOf[js.Any], canToggleControls = canToggleControls.asInstanceOf[js.Any], hasAudio = hasAudio.asInstanceOf[js.Any], inError = inError.asInstanceOf[js.Any], isControlsVisible = isControlsVisible.asInstanceOf[js.Any], isLooping = isLooping.asInstanceOf[js.Any], isMuted = isMuted.asInstanceOf[js.Any], isPaused = isPaused.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaFlags]
   }

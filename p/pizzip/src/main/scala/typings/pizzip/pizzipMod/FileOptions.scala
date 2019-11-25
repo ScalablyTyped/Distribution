@@ -86,16 +86,16 @@ object FileOptions {
     unixPermissions: Double | String = null
   ): FileOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(base64)) __obj.updateDynamic("base64")(base64)
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (compression != null) __obj.updateDynamic("compression")(compression)
-    if (compressionOptions != null) __obj.updateDynamic("compressionOptions")(compressionOptions)
-    if (!js.isUndefined(createFolders)) __obj.updateDynamic("createFolders")(createFolders)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (!js.isUndefined(dir)) __obj.updateDynamic("dir")(dir)
+    if (!js.isUndefined(base64)) __obj.updateDynamic("base64")(base64.asInstanceOf[js.Any])
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
+    if (compressionOptions != null) __obj.updateDynamic("compressionOptions")(compressionOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(createFolders)) __obj.updateDynamic("createFolders")(createFolders.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (!js.isUndefined(dir)) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (dosPermissions != null) __obj.updateDynamic("dosPermissions")(dosPermissions.asInstanceOf[js.Any])
-    if (!js.isUndefined(optimizedBinaryString)) __obj.updateDynamic("optimizedBinaryString")(optimizedBinaryString)
+    if (!js.isUndefined(optimizedBinaryString)) __obj.updateDynamic("optimizedBinaryString")(optimizedBinaryString.asInstanceOf[js.Any])
     if (unixPermissions != null) __obj.updateDynamic("unixPermissions")(unixPermissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileOptions]
   }

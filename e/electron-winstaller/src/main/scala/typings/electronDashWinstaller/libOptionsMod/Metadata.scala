@@ -32,13 +32,13 @@ object Metadata {
     val __obj = js.Dynamic.literal()
     if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
     if (authors != null) __obj.updateDynamic("authors")(authors.asInstanceOf[js.Any])
-    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (owners != null) __obj.updateDynamic("owners")(owners.asInstanceOf[js.Any])
-    if (productName != null) __obj.updateDynamic("productName")(productName)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (productName != null) __obj.updateDynamic("productName")(productName.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metadata]
   }
 }

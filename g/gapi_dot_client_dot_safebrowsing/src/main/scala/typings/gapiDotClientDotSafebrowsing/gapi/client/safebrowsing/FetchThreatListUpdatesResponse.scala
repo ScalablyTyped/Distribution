@@ -18,8 +18,8 @@ object FetchThreatListUpdatesResponse {
   @scala.inline
   def apply(listUpdateResponses: js.Array[ListUpdateResponse] = null, minimumWaitDuration: String = null): FetchThreatListUpdatesResponse = {
     val __obj = js.Dynamic.literal()
-    if (listUpdateResponses != null) __obj.updateDynamic("listUpdateResponses")(listUpdateResponses)
-    if (minimumWaitDuration != null) __obj.updateDynamic("minimumWaitDuration")(minimumWaitDuration)
+    if (listUpdateResponses != null) __obj.updateDynamic("listUpdateResponses")(listUpdateResponses.asInstanceOf[js.Any])
+    if (minimumWaitDuration != null) __obj.updateDynamic("minimumWaitDuration")(minimumWaitDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchThreatListUpdatesResponse]
   }
 }

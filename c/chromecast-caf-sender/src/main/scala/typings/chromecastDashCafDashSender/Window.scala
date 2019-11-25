@@ -15,7 +15,7 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(__onGCastApiAvailable: Boolean => Unit, cast: Typeofcast): Window = {
-    val __obj = js.Dynamic.literal(__onGCastApiAvailable = js.Any.fromFunction1(__onGCastApiAvailable), cast = cast)
+    val __obj = js.Dynamic.literal(__onGCastApiAvailable = js.Any.fromFunction1(__onGCastApiAvailable), cast = cast.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Window]
   }

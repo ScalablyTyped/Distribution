@@ -35,16 +35,16 @@ object Anon_Browser {
     `User-Language`: String,
     UtcOffset: Double
   ): Anon_Browser = {
-    val __obj = js.Dynamic.literal(Browser = Browser, Platform = Platform, UtcOffset = UtcOffset)
-    __obj.updateDynamic("Browser-Height")(`Browser-Height`)
-    __obj.updateDynamic("Browser-Name")(`Browser-Name`)
-    __obj.updateDynamic("Browser-Version")(`Browser-Version`)
-    __obj.updateDynamic("Browser-Width")(`Browser-Width`)
-    __obj.updateDynamic("Color-Depth")(`Color-Depth`)
-    __obj.updateDynamic("Document-Mode")(`Document-Mode`)
-    __obj.updateDynamic("Screen-Height")(`Screen-Height`)
-    __obj.updateDynamic("Screen-Width")(`Screen-Width`)
-    __obj.updateDynamic("User-Language")(`User-Language`)
+    val __obj = js.Dynamic.literal(Browser = Browser.asInstanceOf[js.Any], Platform = Platform.asInstanceOf[js.Any], UtcOffset = UtcOffset.asInstanceOf[js.Any])
+    __obj.updateDynamic("Browser-Height")(`Browser-Height`.asInstanceOf[js.Any])
+    __obj.updateDynamic("Browser-Name")(`Browser-Name`.asInstanceOf[js.Any])
+    __obj.updateDynamic("Browser-Version")(`Browser-Version`.asInstanceOf[js.Any])
+    __obj.updateDynamic("Browser-Width")(`Browser-Width`.asInstanceOf[js.Any])
+    __obj.updateDynamic("Color-Depth")(`Color-Depth`.asInstanceOf[js.Any])
+    __obj.updateDynamic("Document-Mode")(`Document-Mode`.asInstanceOf[js.Any])
+    __obj.updateDynamic("Screen-Height")(`Screen-Height`.asInstanceOf[js.Any])
+    __obj.updateDynamic("Screen-Width")(`Screen-Width`.asInstanceOf[js.Any])
+    __obj.updateDynamic("User-Language")(`User-Language`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Browser]
   }
 }

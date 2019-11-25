@@ -12,7 +12,7 @@ trait Anon_AccidentalNoteNumber extends js.Object {
 object Anon_AccidentalNoteNumber {
   @scala.inline
   def apply(accidental: Double, note: Double): Anon_AccidentalNoteNumber = {
-    val __obj = js.Dynamic.literal(accidental = accidental, note = note)
+    val __obj = js.Dynamic.literal(accidental = accidental.asInstanceOf[js.Any], note = note.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AccidentalNoteNumber]
   }

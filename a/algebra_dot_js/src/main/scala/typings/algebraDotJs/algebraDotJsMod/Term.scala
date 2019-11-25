@@ -15,10 +15,9 @@ object Term {
   def apply(
     coefficient: () => typings.algebraDotJs.algebraDotJsMod.algebra.js.Fraction,
     coefficients: js.Array[typings.algebraDotJs.algebraDotJsMod.algebra.js.Fraction],
-    toString: () => String,
     variables: js.Array[Variable]
   ): Term = {
-    val __obj = js.Dynamic.literal(coefficient = js.Any.fromFunction0(coefficient), coefficients = coefficients, toString = js.Any.fromFunction0(toString), variables = variables)
+    val __obj = js.Dynamic.literal(coefficient = js.Any.fromFunction0(coefficient), coefficients = coefficients.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Term]
   }

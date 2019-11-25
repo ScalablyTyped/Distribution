@@ -22,11 +22,11 @@ object RenderOptions {
     panel: String | HTMLElement = null,
     selectFirstResult: js.UndefOr[Boolean] = js.undefined
   ): RenderOptions = {
-    val __obj = js.Dynamic.literal(map = map)
-    if (!js.isUndefined(autoViewport)) __obj.updateDynamic("autoViewport")(autoViewport)
+    val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoViewport)) __obj.updateDynamic("autoViewport")(autoViewport.asInstanceOf[js.Any])
     if (highlightMode != null) __obj.updateDynamic("highlightMode")(highlightMode.asInstanceOf[js.Any])
     if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectFirstResult)) __obj.updateDynamic("selectFirstResult")(selectFirstResult)
+    if (!js.isUndefined(selectFirstResult)) __obj.updateDynamic("selectFirstResult")(selectFirstResult.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderOptions]
   }
 }

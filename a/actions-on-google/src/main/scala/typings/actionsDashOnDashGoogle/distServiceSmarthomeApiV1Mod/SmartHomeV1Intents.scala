@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait SmartHomeV1Intents extends js.Object
 
+object SmartHomeV1Intents {
+  @scala.inline
+  def actionDOTdevicesDOTDISCONNECT: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.actionDOTdevicesDOTDISCONNECT = this.cast("action.devices.DISCONNECT")
+  @scala.inline
+  def actionDOTdevicesDOTEXECUTE: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.actionDOTdevicesDOTEXECUTE = this.cast("action.devices.EXECUTE")
+  @scala.inline
+  def actionDOTdevicesDOTQUERY: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.actionDOTdevicesDOTQUERY = this.cast("action.devices.QUERY")
+  @scala.inline
+  def actionDOTdevicesDOTSYNC: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.actionDOTdevicesDOTSYNC = this.cast("action.devices.SYNC")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

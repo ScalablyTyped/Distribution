@@ -11,7 +11,7 @@ trait DropPayload extends js.Object {
 object DropPayload {
   @scala.inline
   def apply(dropResult: js.Any): DropPayload = {
-    val __obj = js.Dynamic.literal(dropResult = dropResult)
+    val __obj = js.Dynamic.literal(dropResult = dropResult.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DropPayload]
   }

@@ -47,13 +47,13 @@ object Role {
     title: String = null
   ): Role = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (includedPermissions != null) __obj.updateDynamic("includedPermissions")(includedPermissions)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (stage != null) __obj.updateDynamic("stage")(stage)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (includedPermissions != null) __obj.updateDynamic("includedPermissions")(includedPermissions.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (stage != null) __obj.updateDynamic("stage")(stage.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Role]
   }
 }

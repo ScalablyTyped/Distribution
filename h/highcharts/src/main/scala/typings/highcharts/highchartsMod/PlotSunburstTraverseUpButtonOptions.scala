@@ -15,7 +15,7 @@ object PlotSunburstTraverseUpButtonOptions {
   @scala.inline
   def apply(position: PlotSunburstTraverseUpButtonPositionOptions = null): PlotSunburstTraverseUpButtonOptions = {
     val __obj = js.Dynamic.literal()
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotSunburstTraverseUpButtonOptions]
   }
 }

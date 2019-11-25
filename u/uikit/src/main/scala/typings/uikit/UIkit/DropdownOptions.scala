@@ -81,7 +81,7 @@ object DropdownOptions {
     if (hoverDelayIdle != null) __obj.updateDynamic("hoverDelayIdle")(hoverDelayIdle.asInstanceOf[js.Any])
     if (justify != null) __obj.updateDynamic("justify")(justify.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (pos != null) __obj.updateDynamic("pos")(pos)
+    if (pos != null) __obj.updateDynamic("pos")(pos.asInstanceOf[js.Any])
     if (preventflip != null) __obj.updateDynamic("preventflip")(preventflip.asInstanceOf[js.Any])
     if (remaintime != null) __obj.updateDynamic("remaintime")(remaintime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropdownOptions]

@@ -22,8 +22,8 @@ object ThemableDecorationInstanceRenderOptions {
     before: ThemableDecorationAttachmentRenderOptions = null
   ): ThemableDecorationInstanceRenderOptions = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after)
-    if (before != null) __obj.updateDynamic("before")(before)
+    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
+    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemableDecorationInstanceRenderOptions]
   }
 }

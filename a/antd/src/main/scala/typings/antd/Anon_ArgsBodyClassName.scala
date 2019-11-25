@@ -59,8 +59,8 @@ object Anon_ArgsBodyClassName {
     targetKeys: Requireable[js.Array[_]],
     titles: Requireable[js.Array[_]]
   ): Anon_ArgsBodyClassName = {
-    val __obj = js.Dynamic.literal(body = body, className = className, dataSource = dataSource, disabled = disabled, filterOption = filterOption, footer = footer, height = height, listStyle = listStyle, locale = locale, notFoundContent = notFoundContent, onChange = onChange, operationStyle = operationStyle, operations = operations, prefixCls = prefixCls, render = render, rowKey = rowKey, searchPlaceholder = searchPlaceholder, showSearch = showSearch, style = style, targetKeys = targetKeys, titles = titles)
-    __obj.updateDynamic("lazy")(`lazy`)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], dataSource = dataSource.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], filterOption = filterOption.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], listStyle = listStyle.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], notFoundContent = notFoundContent.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any], operationStyle = operationStyle.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any], rowKey = rowKey.asInstanceOf[js.Any], searchPlaceholder = searchPlaceholder.asInstanceOf[js.Any], showSearch = showSearch.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], targetKeys = targetKeys.asInstanceOf[js.Any], titles = titles.asInstanceOf[js.Any])
+    __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ArgsBodyClassName]
   }
 }

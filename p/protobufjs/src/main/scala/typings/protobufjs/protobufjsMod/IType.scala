@@ -30,13 +30,13 @@ object IType {
     options: StringDictionary[js.Any] = null,
     reserved: js.Array[js.Array[Double]] = null
   ): IType = {
-    val __obj = js.Dynamic.literal(fields = fields)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group)
-    if (nested != null) __obj.updateDynamic("nested")(nested)
-    if (oneofs != null) __obj.updateDynamic("oneofs")(oneofs)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (reserved != null) __obj.updateDynamic("reserved")(reserved)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (nested != null) __obj.updateDynamic("nested")(nested.asInstanceOf[js.Any])
+    if (oneofs != null) __obj.updateDynamic("oneofs")(oneofs.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (reserved != null) __obj.updateDynamic("reserved")(reserved.asInstanceOf[js.Any])
     __obj.asInstanceOf[IType]
   }
 }

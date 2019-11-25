@@ -47,12 +47,12 @@ object ShareVideoContent {
     contentUrl: String = null,
     previewPhoto: SharePhoto = null
   ): ShareVideoContent = {
-    val __obj = js.Dynamic.literal(contentType = contentType, video = video)
-    if (commonParameters != null) __obj.updateDynamic("commonParameters")(commonParameters)
-    if (contentDescription != null) __obj.updateDynamic("contentDescription")(contentDescription)
-    if (contentTitle != null) __obj.updateDynamic("contentTitle")(contentTitle)
-    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl)
-    if (previewPhoto != null) __obj.updateDynamic("previewPhoto")(previewPhoto)
+    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
+    if (commonParameters != null) __obj.updateDynamic("commonParameters")(commonParameters.asInstanceOf[js.Any])
+    if (contentDescription != null) __obj.updateDynamic("contentDescription")(contentDescription.asInstanceOf[js.Any])
+    if (contentTitle != null) __obj.updateDynamic("contentTitle")(contentTitle.asInstanceOf[js.Any])
+    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl.asInstanceOf[js.Any])
+    if (previewPhoto != null) __obj.updateDynamic("previewPhoto")(previewPhoto.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareVideoContent]
   }
 }

@@ -15,9 +15,9 @@ object DeviceManagementTroubleshootingEvent {
   @scala.inline
   def apply(correlationId: String = null, eventDateTime: String = null, id: String = null): DeviceManagementTroubleshootingEvent = {
     val __obj = js.Dynamic.literal()
-    if (correlationId != null) __obj.updateDynamic("correlationId")(correlationId)
-    if (eventDateTime != null) __obj.updateDynamic("eventDateTime")(eventDateTime)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (correlationId != null) __obj.updateDynamic("correlationId")(correlationId.asInstanceOf[js.Any])
+    if (eventDateTime != null) __obj.updateDynamic("eventDateTime")(eventDateTime.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceManagementTroubleshootingEvent]
   }
 }

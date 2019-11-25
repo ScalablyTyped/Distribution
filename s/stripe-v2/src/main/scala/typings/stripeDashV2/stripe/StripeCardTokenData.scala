@@ -35,18 +35,18 @@ object StripeCardTokenData {
     exp_year: Int | Double = null,
     name: String = null
   ): StripeCardTokenData = {
-    val __obj = js.Dynamic.literal(number = number)
-    if (address_city != null) __obj.updateDynamic("address_city")(address_city)
-    if (address_country != null) __obj.updateDynamic("address_country")(address_country)
-    if (address_line1 != null) __obj.updateDynamic("address_line1")(address_line1)
-    if (address_line2 != null) __obj.updateDynamic("address_line2")(address_line2)
-    if (address_state != null) __obj.updateDynamic("address_state")(address_state)
-    if (address_zip != null) __obj.updateDynamic("address_zip")(address_zip)
-    if (cvc != null) __obj.updateDynamic("cvc")(cvc)
-    if (exp != null) __obj.updateDynamic("exp")(exp)
+    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any])
+    if (address_city != null) __obj.updateDynamic("address_city")(address_city.asInstanceOf[js.Any])
+    if (address_country != null) __obj.updateDynamic("address_country")(address_country.asInstanceOf[js.Any])
+    if (address_line1 != null) __obj.updateDynamic("address_line1")(address_line1.asInstanceOf[js.Any])
+    if (address_line2 != null) __obj.updateDynamic("address_line2")(address_line2.asInstanceOf[js.Any])
+    if (address_state != null) __obj.updateDynamic("address_state")(address_state.asInstanceOf[js.Any])
+    if (address_zip != null) __obj.updateDynamic("address_zip")(address_zip.asInstanceOf[js.Any])
+    if (cvc != null) __obj.updateDynamic("cvc")(cvc.asInstanceOf[js.Any])
+    if (exp != null) __obj.updateDynamic("exp")(exp.asInstanceOf[js.Any])
     if (exp_month != null) __obj.updateDynamic("exp_month")(exp_month.asInstanceOf[js.Any])
     if (exp_year != null) __obj.updateDynamic("exp_year")(exp_year.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripeCardTokenData]
   }
 }

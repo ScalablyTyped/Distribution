@@ -33,7 +33,9 @@ object distSrcDescentMod extends js.Object {
     var n: Double = js.native
     var numGridSnapNodes: Double = js.native
     var offsetDir: js.Any = js.native
-    var project: js.Array[Fn_R] = js.native
+    var project: js.Array[
+        js.Function3[/* x0 */ js.Array[Double], /* y0 */ js.Array[Double], /* r */ js.Array[Double], Unit]
+      ] = js.native
     var random: js.Any = js.native
     var scaleSnapByMaxH: Boolean = js.native
     var snapGridSize: Double = js.native

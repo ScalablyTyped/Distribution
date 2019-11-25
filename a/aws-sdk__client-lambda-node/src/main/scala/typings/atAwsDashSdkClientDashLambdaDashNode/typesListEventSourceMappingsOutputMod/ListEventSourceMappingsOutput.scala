@@ -30,9 +30,9 @@ object ListEventSourceMappingsOutput {
     EventSourceMappings: js.Array[_UnmarshalledEventSourceMappingConfiguration] = null,
     NextMarker: String = null
   ): ListEventSourceMappingsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (EventSourceMappings != null) __obj.updateDynamic("EventSourceMappings")(EventSourceMappings)
-    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (EventSourceMappings != null) __obj.updateDynamic("EventSourceMappings")(EventSourceMappings.asInstanceOf[js.Any])
+    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListEventSourceMappingsOutput]
   }
 }

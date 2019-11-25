@@ -24,12 +24,12 @@ object Anon_BorderRadiusEnd {
     svgStyle: js.Object = null
   ): Anon_BorderRadiusEnd = {
     val __obj = js.Dynamic.literal()
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius)
-    if (end != null) __obj.updateDynamic("end")(end)
+    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName)
-    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
+    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BorderRadiusEnd]
   }
 }

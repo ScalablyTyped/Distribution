@@ -22,8 +22,8 @@ object Anon_EndInclusionStates {
   ): Anon_EndInclusionStates = {
     val __obj = js.Dynamic.literal()
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(inclusionStates)) __obj.updateDynamic("inclusionStates")(inclusionStates)
-    if (security != null) __obj.updateDynamic("security")(security)
+    if (!js.isUndefined(inclusionStates)) __obj.updateDynamic("inclusionStates")(inclusionStates.asInstanceOf[js.Any])
+    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EndInclusionStates]
   }

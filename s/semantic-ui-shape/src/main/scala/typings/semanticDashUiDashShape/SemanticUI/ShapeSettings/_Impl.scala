@@ -102,7 +102,7 @@ object _Impl {
     verbose: Boolean,
     width: next | initial | Double
   ): _Impl = {
-    val __obj = js.Dynamic.literal(beforeChange = js.Any.fromFunction1(beforeChange), className = className, debug = debug, duration = duration, error = error, height = height.asInstanceOf[js.Any], name = name, namespace = namespace, onChange = js.Any.fromFunction1(onChange), performance = performance, selector = selector, silent = silent, verbose = verbose, width = width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(beforeChange = js.Any.fromFunction1(beforeChange), className = className.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), performance = performance.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

@@ -46,9 +46,9 @@ object IOptions {
     spacing: Int | Double = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }

@@ -12,7 +12,7 @@ trait ExecInfo extends js.Object {
 object ExecInfo {
   @scala.inline
   def apply(command: String): ExecInfo = {
-    val __obj = js.Dynamic.literal(command = command)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExecInfo]
   }

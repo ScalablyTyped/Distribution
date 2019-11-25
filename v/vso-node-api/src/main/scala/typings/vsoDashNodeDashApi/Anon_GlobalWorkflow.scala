@@ -12,7 +12,7 @@ trait Anon_GlobalWorkflow extends js.Object {
 object Anon_GlobalWorkflow {
   @scala.inline
   def apply(globalWorkflow: Double, workItemType: Double): Anon_GlobalWorkflow = {
-    val __obj = js.Dynamic.literal(globalWorkflow = globalWorkflow, workItemType = workItemType)
+    val __obj = js.Dynamic.literal(globalWorkflow = globalWorkflow.asInstanceOf[js.Any], workItemType = workItemType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GlobalWorkflow]
   }

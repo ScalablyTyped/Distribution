@@ -48,13 +48,13 @@ object ISuggestOptions {
     snippetsPreventQuickSuggestions: js.UndefOr[Boolean] = js.undefined
   ): ISuggestOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(filterGraceful)) __obj.updateDynamic("filterGraceful")(filterGraceful)
-    if (filteredTypes != null) __obj.updateDynamic("filteredTypes")(filteredTypes)
-    if (!js.isUndefined(localityBonus)) __obj.updateDynamic("localityBonus")(localityBonus)
-    if (!js.isUndefined(maxVisibleSuggestions)) __obj.updateDynamic("maxVisibleSuggestions")(maxVisibleSuggestions)
-    if (!js.isUndefined(shareSuggestSelections)) __obj.updateDynamic("shareSuggestSelections")(shareSuggestSelections)
-    if (!js.isUndefined(showIcons)) __obj.updateDynamic("showIcons")(showIcons)
-    if (!js.isUndefined(snippetsPreventQuickSuggestions)) __obj.updateDynamic("snippetsPreventQuickSuggestions")(snippetsPreventQuickSuggestions)
+    if (!js.isUndefined(filterGraceful)) __obj.updateDynamic("filterGraceful")(filterGraceful.asInstanceOf[js.Any])
+    if (filteredTypes != null) __obj.updateDynamic("filteredTypes")(filteredTypes.asInstanceOf[js.Any])
+    if (!js.isUndefined(localityBonus)) __obj.updateDynamic("localityBonus")(localityBonus.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxVisibleSuggestions)) __obj.updateDynamic("maxVisibleSuggestions")(maxVisibleSuggestions.asInstanceOf[js.Any])
+    if (!js.isUndefined(shareSuggestSelections)) __obj.updateDynamic("shareSuggestSelections")(shareSuggestSelections.asInstanceOf[js.Any])
+    if (!js.isUndefined(showIcons)) __obj.updateDynamic("showIcons")(showIcons.asInstanceOf[js.Any])
+    if (!js.isUndefined(snippetsPreventQuickSuggestions)) __obj.updateDynamic("snippetsPreventQuickSuggestions")(snippetsPreventQuickSuggestions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISuggestOptions]
   }
 }

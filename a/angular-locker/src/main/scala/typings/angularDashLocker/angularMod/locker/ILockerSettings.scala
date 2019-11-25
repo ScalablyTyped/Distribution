@@ -22,11 +22,11 @@ object ILockerSettings {
     separator: String = null
   ): ILockerSettings = {
     val __obj = js.Dynamic.literal()
-    if (driver != null) __obj.updateDynamic("driver")(driver)
-    if (!js.isUndefined(eventsEnabled)) __obj.updateDynamic("eventsEnabled")(eventsEnabled)
-    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (driver != null) __obj.updateDynamic("driver")(driver.asInstanceOf[js.Any])
+    if (!js.isUndefined(eventsEnabled)) __obj.updateDynamic("eventsEnabled")(eventsEnabled.asInstanceOf[js.Any])
+    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
     if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILockerSettings]
   }
 }

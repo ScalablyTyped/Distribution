@@ -12,7 +12,7 @@ trait Anon_EnableMask extends js.Object {
 object Anon_EnableMask {
   @scala.inline
   def apply(enableMask: Boolean, show: Boolean): Anon_EnableMask = {
-    val __obj = js.Dynamic.literal(enableMask = enableMask, show = show)
+    val __obj = js.Dynamic.literal(enableMask = enableMask.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnableMask]
   }

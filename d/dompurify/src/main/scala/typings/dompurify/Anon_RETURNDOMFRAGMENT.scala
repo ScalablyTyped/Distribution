@@ -12,7 +12,7 @@ trait Anon_RETURNDOMFRAGMENT extends js.Object {
 object Anon_RETURNDOMFRAGMENT {
   @scala.inline
   def apply(RETURN_DOM_FRAGMENT: `true`): Anon_RETURNDOMFRAGMENT = {
-    val __obj = js.Dynamic.literal(RETURN_DOM_FRAGMENT = RETURN_DOM_FRAGMENT)
+    val __obj = js.Dynamic.literal(RETURN_DOM_FRAGMENT = RETURN_DOM_FRAGMENT.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_RETURNDOMFRAGMENT]
   }

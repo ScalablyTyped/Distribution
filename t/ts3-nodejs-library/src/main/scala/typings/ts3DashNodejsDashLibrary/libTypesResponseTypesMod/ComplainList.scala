@@ -16,7 +16,7 @@ trait ComplainList extends js.Object {
 object ComplainList {
   @scala.inline
   def apply(fcldbid: Double, fname: String, message: String, tcldbid: Double, timestamp: Double, tname: String): ComplainList = {
-    val __obj = js.Dynamic.literal(fcldbid = fcldbid, fname = fname, message = message, tcldbid = tcldbid, timestamp = timestamp, tname = tname)
+    val __obj = js.Dynamic.literal(fcldbid = fcldbid.asInstanceOf[js.Any], fname = fname.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], tcldbid = tcldbid.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], tname = tname.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ComplainList]
   }

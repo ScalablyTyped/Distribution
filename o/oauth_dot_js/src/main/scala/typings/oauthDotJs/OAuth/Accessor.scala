@@ -26,8 +26,8 @@ object Accessor {
     tokenSecret: String,
     accessorSecret: String = null
   ): Accessor = {
-    val __obj = js.Dynamic.literal(consumerKey = consumerKey, consumerSecret = consumerSecret, token = token, tokenSecret = tokenSecret)
-    if (accessorSecret != null) __obj.updateDynamic("accessorSecret")(accessorSecret)
+    val __obj = js.Dynamic.literal(consumerKey = consumerKey.asInstanceOf[js.Any], consumerSecret = consumerSecret.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], tokenSecret = tokenSecret.asInstanceOf[js.Any])
+    if (accessorSecret != null) __obj.updateDynamic("accessorSecret")(accessorSecret.asInstanceOf[js.Any])
     __obj.asInstanceOf[Accessor]
   }
 }

@@ -1,8 +1,8 @@
 package typings.atIonicReact
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.atIonicCore.atIonicCoreMod.ComponentRef
 import typings.atIonicCore.distTypesComponentsModalModalDashInterfaceMod.ModalOptions
-import typings.atIonicCore.distTypesInterfaceMod.ComponentRef
 import typings.atIonicReact.atIonicReactStrings.animated
 import typings.atIonicReact.atIonicReactStrings.backdropDismiss
 import typings.atIonicReact.atIonicReactStrings.component
@@ -46,6 +46,11 @@ object distTypesComponentsIonModalMod extends js.Object {
     val displayName: String = js.native
   }
   
-  type ReactModalOptions = (Omit[ModalOptions[ComponentRef], component | componentProps]) with Anon_ChildrenReactNode
+  type ReactModalOptions = (Omit[
+    ModalOptions[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentRef */ _
+    ], 
+    component | componentProps
+  ]) with Anon_ChildrenReactNode
 }
 

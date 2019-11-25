@@ -23,9 +23,9 @@ object Anon_CreditEllipsoidMetadataUrl {
     credit: Credit | String = null,
     ellipsoid: Ellipsoid = null
   ): Anon_CreditEllipsoidMetadataUrl = {
-    val __obj = js.Dynamic.literal(metadata = metadata, url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CreditEllipsoidMetadataUrl]
   }
 }

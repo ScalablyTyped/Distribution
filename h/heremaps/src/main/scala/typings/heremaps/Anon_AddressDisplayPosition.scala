@@ -23,7 +23,7 @@ object Anon_AddressDisplayPosition {
     MapView: Anon_BottomRight,
     NavigationPosition: js.Array[Anon_LatitudeLongitude]
   ): Anon_AddressDisplayPosition = {
-    val __obj = js.Dynamic.literal(Address = Address, DisplayPosition = DisplayPosition, LocationId = LocationId, LocationType = LocationType, MapView = MapView, NavigationPosition = NavigationPosition)
+    val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any], DisplayPosition = DisplayPosition.asInstanceOf[js.Any], LocationId = LocationId.asInstanceOf[js.Any], LocationType = LocationType.asInstanceOf[js.Any], MapView = MapView.asInstanceOf[js.Any], NavigationPosition = NavigationPosition.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AddressDisplayPosition]
   }

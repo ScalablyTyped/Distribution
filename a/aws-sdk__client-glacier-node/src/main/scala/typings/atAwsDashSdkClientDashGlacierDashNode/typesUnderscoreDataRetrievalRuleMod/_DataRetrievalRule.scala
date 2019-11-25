@@ -20,7 +20,7 @@ object _DataRetrievalRule {
   def apply(BytesPerHour: Int | Double = null, Strategy: String = null): _DataRetrievalRule = {
     val __obj = js.Dynamic.literal()
     if (BytesPerHour != null) __obj.updateDynamic("BytesPerHour")(BytesPerHour.asInstanceOf[js.Any])
-    if (Strategy != null) __obj.updateDynamic("Strategy")(Strategy)
+    if (Strategy != null) __obj.updateDynamic("Strategy")(Strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[_DataRetrievalRule]
   }
 }

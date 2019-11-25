@@ -34,7 +34,7 @@ object EnableNetworkEmulationOptions {
     val __obj = js.Dynamic.literal()
     if (downloadThroughput != null) __obj.updateDynamic("downloadThroughput")(downloadThroughput.asInstanceOf[js.Any])
     if (latency != null) __obj.updateDynamic("latency")(latency.asInstanceOf[js.Any])
-    if (!js.isUndefined(offline)) __obj.updateDynamic("offline")(offline)
+    if (!js.isUndefined(offline)) __obj.updateDynamic("offline")(offline.asInstanceOf[js.Any])
     if (uploadThroughput != null) __obj.updateDynamic("uploadThroughput")(uploadThroughput.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableNetworkEmulationOptions]
   }

@@ -42,16 +42,15 @@ object TwitchExtConfiguration {
   @scala.inline
   def apply(
     onChanged: js.Function0[Unit] => Unit,
-    set_broadcaster: (broadcaster, String, String) => Unit,
+    set: (broadcaster, String, String) => Unit,
     broadcaster: Anon_Content = null,
     developer: Anon_Content = null,
     global: Anon_Content = null
   ): TwitchExtConfiguration = {
-    val __obj = js.Dynamic.literal(onChanged = js.Any.fromFunction1(onChanged))
-    __obj.updateDynamic("set")(js.Any.fromFunction3(set_broadcaster))
-    if (broadcaster != null) __obj.updateDynamic("broadcaster")(broadcaster)
-    if (developer != null) __obj.updateDynamic("developer")(developer)
-    if (global != null) __obj.updateDynamic("global")(global)
+    val __obj = js.Dynamic.literal(onChanged = js.Any.fromFunction1(onChanged), set = js.Any.fromFunction3(set))
+    if (broadcaster != null) __obj.updateDynamic("broadcaster")(broadcaster.asInstanceOf[js.Any])
+    if (developer != null) __obj.updateDynamic("developer")(developer.asInstanceOf[js.Any])
+    if (global != null) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
     __obj.asInstanceOf[TwitchExtConfiguration]
   }
 }

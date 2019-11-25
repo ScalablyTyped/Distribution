@@ -14,7 +14,7 @@ trait SignalChannelRequest extends ChannelRequest {
 object SignalChannelRequest {
   @scala.inline
   def apply(recipient: Double, request: signal, signal: String): SignalChannelRequest = {
-    val __obj = js.Dynamic.literal(recipient = recipient, request = request, signal = signal)
+    val __obj = js.Dynamic.literal(recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], signal = signal.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SignalChannelRequest]
   }

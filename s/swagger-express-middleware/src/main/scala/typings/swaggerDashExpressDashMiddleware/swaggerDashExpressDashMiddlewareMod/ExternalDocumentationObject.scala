@@ -18,9 +18,9 @@ object ExternalDocumentationObject {
     StringDictionary: /* index */ StringDictionary[js.Any] = null,
     description: String = null
   ): ExternalDocumentationObject = {
-    val __obj = js.Dynamic.literal(url = url)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalDocumentationObject]
   }
 }

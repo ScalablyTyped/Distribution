@@ -57,10 +57,10 @@ object AcceptOptions {
     onUnaccepted: /* info */ HotNotifierInfo => Unit = null
   ): AcceptOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoApply)) __obj.updateDynamic("autoApply")(autoApply)
-    if (!js.isUndefined(ignoreDeclined)) __obj.updateDynamic("ignoreDeclined")(ignoreDeclined)
-    if (!js.isUndefined(ignoreErrored)) __obj.updateDynamic("ignoreErrored")(ignoreErrored)
-    if (!js.isUndefined(ignoreUnaccepted)) __obj.updateDynamic("ignoreUnaccepted")(ignoreUnaccepted)
+    if (!js.isUndefined(autoApply)) __obj.updateDynamic("autoApply")(autoApply.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreDeclined)) __obj.updateDynamic("ignoreDeclined")(ignoreDeclined.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreErrored)) __obj.updateDynamic("ignoreErrored")(ignoreErrored.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUnaccepted)) __obj.updateDynamic("ignoreUnaccepted")(ignoreUnaccepted.asInstanceOf[js.Any])
     if (onAccepted != null) __obj.updateDynamic("onAccepted")(js.Any.fromFunction1(onAccepted))
     if (onDeclined != null) __obj.updateDynamic("onDeclined")(js.Any.fromFunction1(onDeclined))
     if (onDisposed != null) __obj.updateDynamic("onDisposed")(js.Any.fromFunction1(onDisposed))

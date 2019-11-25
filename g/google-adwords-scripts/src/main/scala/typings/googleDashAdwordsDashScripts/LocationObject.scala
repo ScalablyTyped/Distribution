@@ -12,7 +12,7 @@ trait LocationObject extends js.Object {
 object LocationObject {
   @scala.inline
   def apply(id: Double, bidModifier: Int | Double = null): LocationObject = {
-    val __obj = js.Dynamic.literal(id = id)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (bidModifier != null) __obj.updateDynamic("bidModifier")(bidModifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationObject]
   }

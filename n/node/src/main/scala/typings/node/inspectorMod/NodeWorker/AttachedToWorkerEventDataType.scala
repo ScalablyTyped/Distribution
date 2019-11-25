@@ -16,7 +16,7 @@ trait AttachedToWorkerEventDataType extends js.Object {
 object AttachedToWorkerEventDataType {
   @scala.inline
   def apply(sessionId: SessionID, waitingForDebugger: Boolean, workerInfo: WorkerInfo): AttachedToWorkerEventDataType = {
-    val __obj = js.Dynamic.literal(sessionId = sessionId, waitingForDebugger = waitingForDebugger, workerInfo = workerInfo)
+    val __obj = js.Dynamic.literal(sessionId = sessionId.asInstanceOf[js.Any], waitingForDebugger = waitingForDebugger.asInstanceOf[js.Any], workerInfo = workerInfo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AttachedToWorkerEventDataType]
   }

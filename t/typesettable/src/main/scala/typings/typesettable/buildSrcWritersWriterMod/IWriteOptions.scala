@@ -47,8 +47,8 @@ object IWriteOptions {
     val __obj = js.Dynamic.literal()
     if (textRotation != null) __obj.updateDynamic("textRotation")(textRotation.asInstanceOf[js.Any])
     if (textShear != null) __obj.updateDynamic("textShear")(textShear.asInstanceOf[js.Any])
-    if (xAlign != null) __obj.updateDynamic("xAlign")(xAlign)
-    if (yAlign != null) __obj.updateDynamic("yAlign")(yAlign)
+    if (xAlign != null) __obj.updateDynamic("xAlign")(xAlign.asInstanceOf[js.Any])
+    if (yAlign != null) __obj.updateDynamic("yAlign")(yAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWriteOptions]
   }
 }

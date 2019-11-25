@@ -14,9 +14,9 @@ object GraphQLEnumValueConfig {
   @scala.inline
   def apply(deprecationReason: String = null, description: String = null, value: js.Any = null): GraphQLEnumValueConfig = {
     val __obj = js.Dynamic.literal()
-    if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLEnumValueConfig]
   }
 }

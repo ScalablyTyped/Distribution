@@ -32,10 +32,10 @@ object _PullRequestCreatedEventMetadata {
     sourceCommitId: String = null
   ): _PullRequestCreatedEventMetadata = {
     val __obj = js.Dynamic.literal()
-    if (destinationCommitId != null) __obj.updateDynamic("destinationCommitId")(destinationCommitId)
-    if (mergeBase != null) __obj.updateDynamic("mergeBase")(mergeBase)
-    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName)
-    if (sourceCommitId != null) __obj.updateDynamic("sourceCommitId")(sourceCommitId)
+    if (destinationCommitId != null) __obj.updateDynamic("destinationCommitId")(destinationCommitId.asInstanceOf[js.Any])
+    if (mergeBase != null) __obj.updateDynamic("mergeBase")(mergeBase.asInstanceOf[js.Any])
+    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
+    if (sourceCommitId != null) __obj.updateDynamic("sourceCommitId")(sourceCommitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[_PullRequestCreatedEventMetadata]
   }
 }

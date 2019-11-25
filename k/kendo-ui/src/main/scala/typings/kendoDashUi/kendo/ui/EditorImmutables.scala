@@ -13,7 +13,7 @@ object EditorImmutables {
   @scala.inline
   def apply(deserialization: js.Function = null, serialization: String | js.Function = null): EditorImmutables = {
     val __obj = js.Dynamic.literal()
-    if (deserialization != null) __obj.updateDynamic("deserialization")(deserialization)
+    if (deserialization != null) __obj.updateDynamic("deserialization")(deserialization.asInstanceOf[js.Any])
     if (serialization != null) __obj.updateDynamic("serialization")(serialization.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorImmutables]
   }

@@ -17,7 +17,7 @@ trait ArtistsTopTracksResponse extends js.Object {
 object ArtistsTopTracksResponse {
   @scala.inline
   def apply(tracks: js.Array[TrackObjectFull]): ArtistsTopTracksResponse = {
-    val __obj = js.Dynamic.literal(tracks = tracks)
+    val __obj = js.Dynamic.literal(tracks = tracks.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ArtistsTopTracksResponse]
   }

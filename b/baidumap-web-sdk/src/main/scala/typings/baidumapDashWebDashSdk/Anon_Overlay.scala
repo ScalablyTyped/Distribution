@@ -18,8 +18,8 @@ trait Anon_Overlay extends js.Object {
 object Anon_Overlay {
   @scala.inline
   def apply(overlay: Overlay, pixel: Pixel, point: Point, target: js.Any, `type`: String): Anon_Overlay = {
-    val __obj = js.Dynamic.literal(overlay = overlay, pixel = pixel, point = point, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any], pixel = pixel.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Overlay]
   }
 }

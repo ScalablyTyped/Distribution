@@ -17,9 +17,9 @@ object ServiceAccount {
   @scala.inline
   def apply(key: ServiceAccountKey = null, kind: String = null, name: String = null): ServiceAccount = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceAccount]
   }
 }

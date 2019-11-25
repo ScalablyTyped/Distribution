@@ -18,8 +18,8 @@ object ListRulesetsResponse {
   @scala.inline
   def apply(nextPageToken: String = null, rulesets: js.Array[Ruleset] = null): ListRulesetsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (rulesets != null) __obj.updateDynamic("rulesets")(rulesets)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (rulesets != null) __obj.updateDynamic("rulesets")(rulesets.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRulesetsResponse]
   }
 }

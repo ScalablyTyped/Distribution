@@ -11,7 +11,7 @@ trait EXT_shader_texture_lod extends js.Object {
 object EXT_shader_texture_lod {
   @scala.inline
   def apply(__EXT_shader_texture_lod: Unit): EXT_shader_texture_lod = {
-    val __obj = js.Dynamic.literal(__EXT_shader_texture_lod = __EXT_shader_texture_lod)
+    val __obj = js.Dynamic.literal(__EXT_shader_texture_lod = __EXT_shader_texture_lod.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EXT_shader_texture_lod]
   }

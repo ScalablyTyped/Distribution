@@ -24,7 +24,7 @@ object Parser {
     hasPragma: /* text */ String => Boolean = null,
     preprocess: (/* text */ String, /* options */ ParserOptions) => String = null
   ): Parser = {
-    val __obj = js.Dynamic.literal(astFormat = astFormat, locEnd = js.Any.fromFunction1(locEnd), locStart = js.Any.fromFunction1(locStart), parse = js.Any.fromFunction3(parse))
+    val __obj = js.Dynamic.literal(astFormat = astFormat.asInstanceOf[js.Any], locEnd = js.Any.fromFunction1(locEnd), locStart = js.Any.fromFunction1(locStart), parse = js.Any.fromFunction3(parse))
     if (hasPragma != null) __obj.updateDynamic("hasPragma")(js.Any.fromFunction1(hasPragma))
     if (preprocess != null) __obj.updateDynamic("preprocess")(js.Any.fromFunction2(preprocess))
     __obj.asInstanceOf[Parser]

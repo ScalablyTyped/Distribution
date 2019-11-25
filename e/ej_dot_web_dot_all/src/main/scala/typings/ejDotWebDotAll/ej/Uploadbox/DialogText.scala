@@ -23,10 +23,10 @@ object DialogText {
   @scala.inline
   def apply(name: String = null, size: String = null, status: String = null, title: String = null): DialogText = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogText]
   }
 }

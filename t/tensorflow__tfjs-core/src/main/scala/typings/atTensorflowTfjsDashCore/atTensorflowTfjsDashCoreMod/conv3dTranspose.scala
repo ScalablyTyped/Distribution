@@ -1,7 +1,7 @@
 package typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod
 
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.same
-import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.valid
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.same_
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.valid_
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor4D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor5D
 import typings.atTensorflowTfjsDashCore.distTypesMod.TensorLike
@@ -17,7 +17,7 @@ object conv3dTranspose extends js.Object {
     filter: Tensor5D | TensorLike,
     outputShape: (js.Tuple5[Double, Double, Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double]),
     strides: (js.Tuple3[Double, Double, Double]) | Double,
-    pad: valid | same
+    pad: valid_ | same_
   ): T = js.native
 }
 

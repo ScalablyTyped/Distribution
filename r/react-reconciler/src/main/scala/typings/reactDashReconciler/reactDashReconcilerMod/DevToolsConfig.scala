@@ -26,7 +26,7 @@ object DevToolsConfig {
     findFiberByHostInstance: /* instance */ Instance | TextInstance => Fiber = null,
     getInspectorDataForViewTag: /* tag */ Double => js.Object = null
   ): DevToolsConfig[Instance, TextInstance] = {
-    val __obj = js.Dynamic.literal(bundleType = bundleType, rendererPackageName = rendererPackageName, version = version)
+    val __obj = js.Dynamic.literal(bundleType = bundleType.asInstanceOf[js.Any], rendererPackageName = rendererPackageName.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     if (findFiberByHostInstance != null) __obj.updateDynamic("findFiberByHostInstance")(js.Any.fromFunction1(findFiberByHostInstance))
     if (getInspectorDataForViewTag != null) __obj.updateDynamic("getInspectorDataForViewTag")(js.Any.fromFunction1(getInspectorDataForViewTag))
     __obj.asInstanceOf[DevToolsConfig[Instance, TextInstance]]

@@ -23,8 +23,8 @@ trait DrillupAllEventObject extends js.Object {
 object DrillupAllEventObject {
   @scala.inline
   def apply(preventDefault: js.Function, target: Chart, `type`: drillupall): DrillupAllEventObject = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrillupAllEventObject]
   }
 }

@@ -101,10 +101,10 @@ object NodeView {
     update: (/* node */ typings.prosemirrorDashModel.prosemirrorDashModelMod.Node[S], /* decorations */ js.Array[Decoration[StringDictionary[_]]]) => Boolean = null
   ): NodeView[S] = {
     val __obj = js.Dynamic.literal()
-    if (contentDOM != null) __obj.updateDynamic("contentDOM")(contentDOM)
+    if (contentDOM != null) __obj.updateDynamic("contentDOM")(contentDOM.asInstanceOf[js.Any])
     if (deselectNode != null) __obj.updateDynamic("deselectNode")(js.Any.fromFunction0(deselectNode))
     if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (dom != null) __obj.updateDynamic("dom")(dom)
+    if (dom != null) __obj.updateDynamic("dom")(dom.asInstanceOf[js.Any])
     if (ignoreMutation != null) __obj.updateDynamic("ignoreMutation")(js.Any.fromFunction1(ignoreMutation))
     if (selectNode != null) __obj.updateDynamic("selectNode")(js.Any.fromFunction0(selectNode))
     if (setSelection != null) __obj.updateDynamic("setSelection")(js.Any.fromFunction3(setSelection))

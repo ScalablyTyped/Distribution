@@ -28,7 +28,7 @@ object Anon_ApiVersion {
     KernelVersion: String,
     Os: String
   ): Anon_ApiVersion = {
-    val __obj = js.Dynamic.literal(ApiVersion = ApiVersion, Arch = Arch, BuildTime = BuildTime, Experimental = Experimental, GitCommit = GitCommit, GoVersion = GoVersion, KernelVersion = KernelVersion, Os = Os)
+    val __obj = js.Dynamic.literal(ApiVersion = ApiVersion.asInstanceOf[js.Any], Arch = Arch.asInstanceOf[js.Any], BuildTime = BuildTime.asInstanceOf[js.Any], Experimental = Experimental.asInstanceOf[js.Any], GitCommit = GitCommit.asInstanceOf[js.Any], GoVersion = GoVersion.asInstanceOf[js.Any], KernelVersion = KernelVersion.asInstanceOf[js.Any], Os = Os.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ApiVersion]
   }

@@ -16,7 +16,7 @@ trait FuseOptions[T] extends js.Object {
   var includeMatches: js.UndefOr[Boolean] = js.undefined
   var includeScore: js.UndefOr[Boolean] = js.undefined
   var keys: js.UndefOr[
-    (js.Array[Anon_Name[T] | String]) | (/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any)
+    (js.Array[Anon_Name[T] | String]) | (/* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any)
   ] = js.undefined
   var location: js.UndefOr[Double] = js.undefined
   var matchAllTokens: js.UndefOr[Boolean] = js.undefined
@@ -40,7 +40,7 @@ object FuseOptions {
     id: String = null,
     includeMatches: js.UndefOr[Boolean] = js.undefined,
     includeScore: js.UndefOr[Boolean] = js.undefined,
-    keys: (js.Array[Anon_Name[T] | String]) | (/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any) = null,
+    keys: (js.Array[Anon_Name[T] | String]) | (/* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any) = null,
     location: Int | Double = null,
     matchAllTokens: js.UndefOr[Boolean] = js.undefined,
     maxPatternLength: Int | Double = null,
@@ -53,24 +53,24 @@ object FuseOptions {
     verbose: js.UndefOr[Boolean] = js.undefined
   ): FuseOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (!js.isUndefined(findAllMatches)) __obj.updateDynamic("findAllMatches")(findAllMatches)
+    if (!js.isUndefined(findAllMatches)) __obj.updateDynamic("findAllMatches")(findAllMatches.asInstanceOf[js.Any])
     if (getFn != null) __obj.updateDynamic("getFn")(js.Any.fromFunction2(getFn))
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(includeMatches)) __obj.updateDynamic("includeMatches")(includeMatches)
-    if (!js.isUndefined(includeScore)) __obj.updateDynamic("includeScore")(includeScore)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeMatches)) __obj.updateDynamic("includeMatches")(includeMatches.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeScore)) __obj.updateDynamic("includeScore")(includeScore.asInstanceOf[js.Any])
     if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchAllTokens)) __obj.updateDynamic("matchAllTokens")(matchAllTokens)
+    if (!js.isUndefined(matchAllTokens)) __obj.updateDynamic("matchAllTokens")(matchAllTokens.asInstanceOf[js.Any])
     if (maxPatternLength != null) __obj.updateDynamic("maxPatternLength")(maxPatternLength.asInstanceOf[js.Any])
     if (minMatchCharLength != null) __obj.updateDynamic("minMatchCharLength")(minMatchCharLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldSort)) __obj.updateDynamic("shouldSort")(shouldSort)
+    if (!js.isUndefined(shouldSort)) __obj.updateDynamic("shouldSort")(shouldSort.asInstanceOf[js.Any])
     if (sortFn != null) __obj.updateDynamic("sortFn")(js.Any.fromFunction2(sortFn))
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
-    if (tokenSeparator != null) __obj.updateDynamic("tokenSeparator")(tokenSeparator)
-    if (!js.isUndefined(tokenize)) __obj.updateDynamic("tokenize")(tokenize)
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (tokenSeparator != null) __obj.updateDynamic("tokenSeparator")(tokenSeparator.asInstanceOf[js.Any])
+    if (!js.isUndefined(tokenize)) __obj.updateDynamic("tokenize")(tokenize.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[FuseOptions[T]]
   }
 }

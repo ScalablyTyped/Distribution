@@ -12,7 +12,7 @@ trait Anon_BodyBuffer extends js.Object {
 object Anon_BodyBuffer {
   @scala.inline
   def apply(body: Buffer): Anon_BodyBuffer = {
-    val __obj = js.Dynamic.literal(body = body)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BodyBuffer]
   }

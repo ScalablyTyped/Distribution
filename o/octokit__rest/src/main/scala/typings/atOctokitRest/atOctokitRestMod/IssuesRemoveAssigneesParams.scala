@@ -17,8 +17,8 @@ trait IssuesRemoveAssigneesParams extends js.Object {
 object IssuesRemoveAssigneesParams {
   @scala.inline
   def apply(issue_number: Double, owner: String, repo: String, assignees: js.Array[String] = null): IssuesRemoveAssigneesParams = {
-    val __obj = js.Dynamic.literal(issue_number = issue_number, owner = owner, repo = repo)
-    if (assignees != null) __obj.updateDynamic("assignees")(assignees)
+    val __obj = js.Dynamic.literal(issue_number = issue_number.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (assignees != null) __obj.updateDynamic("assignees")(assignees.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuesRemoveAssigneesParams]
   }
 }

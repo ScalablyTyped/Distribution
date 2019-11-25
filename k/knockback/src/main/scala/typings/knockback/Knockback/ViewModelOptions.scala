@@ -31,14 +31,14 @@ object ViewModelOptions {
   ): ViewModelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("if")(js.Any.fromFunction1(`if`))
-    if (factories != null) __obj.updateDynamic("factories")(factories)
-    if (factory != null) __obj.updateDynamic("factory")(factory)
-    if (internals != null) __obj.updateDynamic("internals")(internals)
-    if (keys != null) __obj.updateDynamic("keys")(keys)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (requires != null) __obj.updateDynamic("requires")(requires)
-    if (store != null) __obj.updateDynamic("store")(store)
+    if (factories != null) __obj.updateDynamic("factories")(factories.asInstanceOf[js.Any])
+    if (factory != null) __obj.updateDynamic("factory")(factory.asInstanceOf[js.Any])
+    if (internals != null) __obj.updateDynamic("internals")(internals.asInstanceOf[js.Any])
+    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewModelOptions]
   }
 }

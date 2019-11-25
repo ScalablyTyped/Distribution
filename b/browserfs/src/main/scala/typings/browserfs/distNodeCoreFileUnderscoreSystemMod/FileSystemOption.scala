@@ -19,9 +19,9 @@ object FileSystemOption {
     optional: js.UndefOr[Boolean] = js.undefined,
     validator: (/* opt */ T, /* cb */ BFSOneArgCallback) => Unit = null
   ): FileSystemOption[T] = {
-    val __obj = js.Dynamic.literal(description = description)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
     if (validator != null) __obj.updateDynamic("validator")(js.Any.fromFunction2(validator))
     __obj.asInstanceOf[FileSystemOption[T]]
   }

@@ -13,7 +13,7 @@ trait Anon_NewChunks extends js.Object {
 object Anon_NewChunks {
   @scala.inline
   def apply(newChunks: js.Array[Chunk], oldChunk: Chunk): Anon_NewChunks = {
-    val __obj = js.Dynamic.literal(newChunks = newChunks, oldChunk = oldChunk)
+    val __obj = js.Dynamic.literal(newChunks = newChunks.asInstanceOf[js.Any], oldChunk = oldChunk.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NewChunks]
   }

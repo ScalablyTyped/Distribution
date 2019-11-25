@@ -48,8 +48,8 @@ object SearchLayerFieldProperties {
     `type`: `small-integer` | integer | single | double | long | string | date | oid | typings.arcgisDashJsDashApi.arcgisDashJsDashApiStrings.geometry | blob | raster | guid | `global-id` | xml = null
   ): SearchLayerFieldProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exactMatch)) __obj.updateDynamic("exactMatch")(exactMatch)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(exactMatch)) __obj.updateDynamic("exactMatch")(exactMatch.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchLayerFieldProperties]
   }

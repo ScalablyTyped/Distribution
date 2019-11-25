@@ -33,7 +33,7 @@ object DebuggeesResource {
     list: Anon_AccesstokenAltBearertokenCallbackClientVersion => Request[ListDebuggeesResponse],
     register: Anon_AccesstokenAltBearertokenCallbackFields => Request[RegisterDebuggeeResponse]
   ): DebuggeesResource = {
-    val __obj = js.Dynamic.literal(breakpoints = breakpoints, list = js.Any.fromFunction1(list), register = js.Any.fromFunction1(register))
+    val __obj = js.Dynamic.literal(breakpoints = breakpoints.asInstanceOf[js.Any], list = js.Any.fromFunction1(list), register = js.Any.fromFunction1(register))
   
     __obj.asInstanceOf[DebuggeesResource]
   }

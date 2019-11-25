@@ -13,6 +13,6 @@ object Double extends js.Object {
 @JSImport("js-to-java", "double")
 @js.native
 object double extends js.Object {
-  def apply(value: Double): js.Object = js.native
+  def apply(value: scala.Double): js.Object = js.native
 }
 

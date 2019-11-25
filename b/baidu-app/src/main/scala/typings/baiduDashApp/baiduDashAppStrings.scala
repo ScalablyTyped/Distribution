@@ -73,13 +73,19 @@ object baiduDashAppStrings {
   sealed trait ancestor extends js.Object
   
   @js.native
-  sealed trait animationend extends TransitionEventType
+  sealed trait animationend
+    extends EventType
+       with TransitionEventType
   
   @js.native
-  sealed trait animationiteration extends TransitionEventType
+  sealed trait animationiteration
+    extends EventType
+       with TransitionEventType
   
   @js.native
-  sealed trait animationstart extends TransitionEventType
+  sealed trait animationstart
+    extends EventType
+       with TransitionEventType
   
   @js.native
   sealed trait back extends CameraDevice
@@ -253,30 +259,43 @@ object baiduDashAppStrings {
   @js.native
   sealed trait success extends js.Object
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.baiduDashApp.swan.EventType because Already inherited */ @js.native
-  sealed trait tap extends TouchEventType
+  @js.native
+  sealed trait tap
+    extends EventType
+       with TouchEventType
   
   @js.native
   sealed trait top extends js.Object
   
   @js.native
-  sealed trait touchcancel extends TouchEventType
+  sealed trait touchcancel
+    extends EventType
+       with TouchEventType
   
   @js.native
-  sealed trait touchend extends TouchEventType
+  sealed trait touchend
+    extends EventType
+       with TouchEventType
   
   @js.native
-  sealed trait touchforcechange extends TouchEventType
+  sealed trait touchforcechange
+    extends EventType
+       with TouchEventType
   
   @js.native
-  sealed trait touchmove extends TouchEventType
+  sealed trait touchmove
+    extends EventType
+       with TouchEventType
   
   @js.native
-  sealed trait touchstart extends TouchEventType
+  sealed trait touchstart
+    extends EventType
+       with TouchEventType
   
   @js.native
-  sealed trait transitionend extends TransitionEventType
+  sealed trait transitionend
+    extends EventType
+       with TransitionEventType
   
   @js.native
   sealed trait ui extends js.Object

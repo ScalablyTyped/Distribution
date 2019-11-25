@@ -45,19 +45,19 @@ object Anon_ChunkHighUSN {
     searches: js.Array[SavedSearch] = null,
     tags: js.Array[Tag] = null
   ): Anon_ChunkHighUSN = {
-    val __obj = js.Dynamic.literal(currentTime = currentTime, updateCount = updateCount)
+    val __obj = js.Dynamic.literal(currentTime = currentTime.asInstanceOf[js.Any], updateCount = updateCount.asInstanceOf[js.Any])
     if (chunkHighUSN != null) __obj.updateDynamic("chunkHighUSN")(chunkHighUSN.asInstanceOf[js.Any])
-    if (expungedLinkedNotebooks != null) __obj.updateDynamic("expungedLinkedNotebooks")(expungedLinkedNotebooks)
-    if (expungedNotebooks != null) __obj.updateDynamic("expungedNotebooks")(expungedNotebooks)
-    if (expungedNotes != null) __obj.updateDynamic("expungedNotes")(expungedNotes)
-    if (expungedSearches != null) __obj.updateDynamic("expungedSearches")(expungedSearches)
-    if (expungedTags != null) __obj.updateDynamic("expungedTags")(expungedTags)
-    if (linkedNotebooks != null) __obj.updateDynamic("linkedNotebooks")(linkedNotebooks)
-    if (notebooks != null) __obj.updateDynamic("notebooks")(notebooks)
-    if (notes != null) __obj.updateDynamic("notes")(notes)
-    if (resources != null) __obj.updateDynamic("resources")(resources)
-    if (searches != null) __obj.updateDynamic("searches")(searches)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (expungedLinkedNotebooks != null) __obj.updateDynamic("expungedLinkedNotebooks")(expungedLinkedNotebooks.asInstanceOf[js.Any])
+    if (expungedNotebooks != null) __obj.updateDynamic("expungedNotebooks")(expungedNotebooks.asInstanceOf[js.Any])
+    if (expungedNotes != null) __obj.updateDynamic("expungedNotes")(expungedNotes.asInstanceOf[js.Any])
+    if (expungedSearches != null) __obj.updateDynamic("expungedSearches")(expungedSearches.asInstanceOf[js.Any])
+    if (expungedTags != null) __obj.updateDynamic("expungedTags")(expungedTags.asInstanceOf[js.Any])
+    if (linkedNotebooks != null) __obj.updateDynamic("linkedNotebooks")(linkedNotebooks.asInstanceOf[js.Any])
+    if (notebooks != null) __obj.updateDynamic("notebooks")(notebooks.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
+    if (searches != null) __obj.updateDynamic("searches")(searches.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChunkHighUSN]
   }
 }

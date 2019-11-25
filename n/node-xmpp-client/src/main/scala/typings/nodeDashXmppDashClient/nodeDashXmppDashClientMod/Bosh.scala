@@ -14,7 +14,7 @@ object Bosh {
   def apply(prebind: (/* error */ js.Any, /* data */ js.Any) => Unit = null, url: String = null): Bosh = {
     val __obj = js.Dynamic.literal()
     if (prebind != null) __obj.updateDynamic("prebind")(js.Any.fromFunction2(prebind))
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bosh]
   }
 }

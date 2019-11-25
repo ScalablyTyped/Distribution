@@ -22,11 +22,11 @@ object IProblemLocation {
     unitId: String = null
   ): IProblemLocation = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (elementId != null) __obj.updateDynamic("elementId")(elementId)
-    if (module != null) __obj.updateDynamic("module")(module)
-    if (unitId != null) __obj.updateDynamic("unitId")(unitId)
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (elementId != null) __obj.updateDynamic("elementId")(elementId.asInstanceOf[js.Any])
+    if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
+    if (unitId != null) __obj.updateDynamic("unitId")(unitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProblemLocation]
   }
 }

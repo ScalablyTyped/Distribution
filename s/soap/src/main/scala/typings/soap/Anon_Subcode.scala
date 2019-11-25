@@ -12,8 +12,8 @@ trait Anon_Subcode extends js.Object {
 object Anon_Subcode {
   @scala.inline
   def apply(Value: String, Subcode: Anon_Value = null): Anon_Subcode = {
-    val __obj = js.Dynamic.literal(Value = Value)
-    if (Subcode != null) __obj.updateDynamic("Subcode")(Subcode)
+    val __obj = js.Dynamic.literal(Value = Value.asInstanceOf[js.Any])
+    if (Subcode != null) __obj.updateDynamic("Subcode")(Subcode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Subcode]
   }
 }

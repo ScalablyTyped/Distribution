@@ -25,7 +25,7 @@ object IHeaderContainer {
     getRefItems: () => Unit = null
   ): IHeaderContainer = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
     if (getGridColumns != null) __obj.updateDynamic("getGridColumns")(js.Any.fromFunction0(getGridColumns))
     if (getRefItems != null) __obj.updateDynamic("getRefItems")(js.Any.fromFunction0(getRefItems))
     __obj.asInstanceOf[IHeaderContainer]

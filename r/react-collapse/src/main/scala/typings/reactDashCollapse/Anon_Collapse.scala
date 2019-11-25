@@ -13,8 +13,8 @@ object Anon_Collapse {
   @scala.inline
   def apply(collapse: String = null, content: String = null): Anon_Collapse = {
     val __obj = js.Dynamic.literal()
-    if (collapse != null) __obj.updateDynamic("collapse")(collapse)
-    if (content != null) __obj.updateDynamic("content")(content)
+    if (collapse != null) __obj.updateDynamic("collapse")(collapse.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Collapse]
   }
 }

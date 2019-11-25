@@ -13,8 +13,8 @@ trait AuthJWT extends js.Object {
 object AuthJWT {
   @scala.inline
   def apply(token: String, `type`: app): AuthJWT = {
-    val __obj = js.Dynamic.literal(token = token)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthJWT]
   }
 }

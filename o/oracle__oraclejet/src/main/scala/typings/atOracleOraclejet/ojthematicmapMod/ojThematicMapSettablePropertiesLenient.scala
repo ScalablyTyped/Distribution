@@ -13,7 +13,7 @@ object ojThematicMapSettablePropertiesLenient {
   @scala.inline
   def apply[K1, K2, K3, D1, D2, D3](StringDictionary: /* key */ StringDictionary[js.Any] = null): ojThematicMapSettablePropertiesLenient[K1, K2, K3, D1, D2, D3] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ojThematicMapSettablePropertiesLenient[K1, K2, K3, D1, D2, D3]]
   }
 }

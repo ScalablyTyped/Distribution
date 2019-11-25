@@ -12,7 +12,7 @@ trait EXT_blend_minmax extends js.Object {
 object EXT_blend_minmax {
   @scala.inline
   def apply(MAX_EXT: GLenum, MIN_EXT: GLenum): EXT_blend_minmax = {
-    val __obj = js.Dynamic.literal(MAX_EXT = MAX_EXT, MIN_EXT = MIN_EXT)
+    val __obj = js.Dynamic.literal(MAX_EXT = MAX_EXT.asInstanceOf[js.Any], MIN_EXT = MIN_EXT.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EXT_blend_minmax]
   }

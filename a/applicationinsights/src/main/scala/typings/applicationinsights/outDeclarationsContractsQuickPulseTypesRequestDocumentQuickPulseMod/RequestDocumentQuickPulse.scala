@@ -28,8 +28,8 @@ object RequestDocumentQuickPulse {
     __type: String,
     Success: js.UndefOr[Boolean] = js.undefined
   ): RequestDocumentQuickPulse = {
-    val __obj = js.Dynamic.literal(DocumentType = DocumentType, Duration = Duration, Name = Name, OperationId = OperationId, OperationName = OperationName, Properties = Properties, ResponseCode = ResponseCode, Version = Version, __type = __type)
-    if (!js.isUndefined(Success)) __obj.updateDynamic("Success")(Success)
+    val __obj = js.Dynamic.literal(DocumentType = DocumentType.asInstanceOf[js.Any], Duration = Duration.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], OperationId = OperationId.asInstanceOf[js.Any], OperationName = OperationName.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], ResponseCode = ResponseCode.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any], __type = __type.asInstanceOf[js.Any])
+    if (!js.isUndefined(Success)) __obj.updateDynamic("Success")(Success.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestDocumentQuickPulse]
   }
 }

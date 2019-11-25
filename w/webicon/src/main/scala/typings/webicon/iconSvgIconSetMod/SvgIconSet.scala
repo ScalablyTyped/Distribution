@@ -22,10 +22,10 @@ object SvgIconSet {
     viewBox: String = null
   ): SvgIconSet = {
     val __obj = js.Dynamic.literal()
-    if (cumulative != null) __obj.updateDynamic("cumulative")(cumulative)
+    if (cumulative != null) __obj.updateDynamic("cumulative")(cumulative.asInstanceOf[js.Any])
     if (iconIdParser != null) __obj.updateDynamic("iconIdParser")(js.Any.fromFunction2(iconIdParser))
     if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
-    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox)
+    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
     __obj.asInstanceOf[SvgIconSet]
   }
 }

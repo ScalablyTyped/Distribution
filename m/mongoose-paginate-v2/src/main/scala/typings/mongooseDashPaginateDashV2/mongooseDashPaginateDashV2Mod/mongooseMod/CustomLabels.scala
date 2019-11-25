@@ -26,13 +26,13 @@ object CustomLabels {
     totalPages: String = null
   ): CustomLabels = {
     val __obj = js.Dynamic.literal()
-    if (docs != null) __obj.updateDynamic("docs")(docs)
-    if (limit != null) __obj.updateDynamic("limit")(limit)
-    if (nextPage != null) __obj.updateDynamic("nextPage")(nextPage)
-    if (page != null) __obj.updateDynamic("page")(page)
-    if (prevPage != null) __obj.updateDynamic("prevPage")(prevPage)
-    if (totalDocs != null) __obj.updateDynamic("totalDocs")(totalDocs)
-    if (totalPages != null) __obj.updateDynamic("totalPages")(totalPages)
+    if (docs != null) __obj.updateDynamic("docs")(docs.asInstanceOf[js.Any])
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (nextPage != null) __obj.updateDynamic("nextPage")(nextPage.asInstanceOf[js.Any])
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (prevPage != null) __obj.updateDynamic("prevPage")(prevPage.asInstanceOf[js.Any])
+    if (totalDocs != null) __obj.updateDynamic("totalDocs")(totalDocs.asInstanceOf[js.Any])
+    if (totalPages != null) __obj.updateDynamic("totalPages")(totalPages.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomLabels]
   }
 }

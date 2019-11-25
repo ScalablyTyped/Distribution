@@ -51,17 +51,17 @@ object InAppProduct {
     trialPeriod: String = null
   ): InAppProduct = {
     val __obj = js.Dynamic.literal()
-    if (defaultLanguage != null) __obj.updateDynamic("defaultLanguage")(defaultLanguage)
-    if (defaultPrice != null) __obj.updateDynamic("defaultPrice")(defaultPrice)
-    if (listings != null) __obj.updateDynamic("listings")(listings)
-    if (packageName != null) __obj.updateDynamic("packageName")(packageName)
-    if (prices != null) __obj.updateDynamic("prices")(prices)
-    if (purchaseType != null) __obj.updateDynamic("purchaseType")(purchaseType)
-    if (season != null) __obj.updateDynamic("season")(season)
-    if (sku != null) __obj.updateDynamic("sku")(sku)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (subscriptionPeriod != null) __obj.updateDynamic("subscriptionPeriod")(subscriptionPeriod)
-    if (trialPeriod != null) __obj.updateDynamic("trialPeriod")(trialPeriod)
+    if (defaultLanguage != null) __obj.updateDynamic("defaultLanguage")(defaultLanguage.asInstanceOf[js.Any])
+    if (defaultPrice != null) __obj.updateDynamic("defaultPrice")(defaultPrice.asInstanceOf[js.Any])
+    if (listings != null) __obj.updateDynamic("listings")(listings.asInstanceOf[js.Any])
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
+    if (prices != null) __obj.updateDynamic("prices")(prices.asInstanceOf[js.Any])
+    if (purchaseType != null) __obj.updateDynamic("purchaseType")(purchaseType.asInstanceOf[js.Any])
+    if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
+    if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (subscriptionPeriod != null) __obj.updateDynamic("subscriptionPeriod")(subscriptionPeriod.asInstanceOf[js.Any])
+    if (trialPeriod != null) __obj.updateDynamic("trialPeriod")(trialPeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[InAppProduct]
   }
 }

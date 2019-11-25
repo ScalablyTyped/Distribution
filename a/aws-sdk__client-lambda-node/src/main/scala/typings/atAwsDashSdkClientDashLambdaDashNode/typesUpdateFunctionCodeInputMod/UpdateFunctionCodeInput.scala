@@ -76,16 +76,16 @@ object UpdateFunctionCodeInput {
     S3ObjectVersion: String = null,
     ZipFile: ArrayBuffer | ArrayBufferView | String = null
   ): UpdateFunctionCodeInput = {
-    val __obj = js.Dynamic.literal(FunctionName = FunctionName)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
-    if (!js.isUndefined(Publish)) __obj.updateDynamic("Publish")(Publish)
-    if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId)
-    if (S3Bucket != null) __obj.updateDynamic("S3Bucket")(S3Bucket)
-    if (S3Key != null) __obj.updateDynamic("S3Key")(S3Key)
-    if (S3ObjectVersion != null) __obj.updateDynamic("S3ObjectVersion")(S3ObjectVersion)
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (!js.isUndefined(Publish)) __obj.updateDynamic("Publish")(Publish.asInstanceOf[js.Any])
+    if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId.asInstanceOf[js.Any])
+    if (S3Bucket != null) __obj.updateDynamic("S3Bucket")(S3Bucket.asInstanceOf[js.Any])
+    if (S3Key != null) __obj.updateDynamic("S3Key")(S3Key.asInstanceOf[js.Any])
+    if (S3ObjectVersion != null) __obj.updateDynamic("S3ObjectVersion")(S3ObjectVersion.asInstanceOf[js.Any])
     if (ZipFile != null) __obj.updateDynamic("ZipFile")(ZipFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFunctionCodeInput]
   }

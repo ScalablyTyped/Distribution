@@ -60,12 +60,12 @@ object DataSourceSettingsSummaries {
     `type`: String = null
   ): DataSourceSettingsSummaries = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
-    if (summariesResponseKey != null) __obj.updateDynamic("summariesResponseKey")(summariesResponseKey)
-    if (summaryExecution != null) __obj.updateDynamic("summaryExecution")(summaryExecution)
-    if (summaryExprUrlKey != null) __obj.updateDynamic("summaryExprUrlKey")(summaryExprUrlKey)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings.asInstanceOf[js.Any])
+    if (summariesResponseKey != null) __obj.updateDynamic("summariesResponseKey")(summariesResponseKey.asInstanceOf[js.Any])
+    if (summaryExecution != null) __obj.updateDynamic("summaryExecution")(summaryExecution.asInstanceOf[js.Any])
+    if (summaryExprUrlKey != null) __obj.updateDynamic("summaryExprUrlKey")(summaryExprUrlKey.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceSettingsSummaries]
   }
 }

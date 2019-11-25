@@ -18,9 +18,9 @@ object WalkSyncOptions {
     ignore: js.Array[String] = null
   ): WalkSyncOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(directories)) __obj.updateDynamic("directories")(directories)
-    if (globs != null) __obj.updateDynamic("globs")(globs)
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
+    if (!js.isUndefined(directories)) __obj.updateDynamic("directories")(directories.asInstanceOf[js.Any])
+    if (globs != null) __obj.updateDynamic("globs")(globs.asInstanceOf[js.Any])
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     __obj.asInstanceOf[WalkSyncOptions]
   }
 }

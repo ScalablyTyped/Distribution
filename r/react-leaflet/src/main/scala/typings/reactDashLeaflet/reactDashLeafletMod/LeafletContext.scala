@@ -21,10 +21,10 @@ object LeafletContext {
     popupContainer: Layer = null
   ): LeafletContext = {
     val __obj = js.Dynamic.literal()
-    if (layerContainer != null) __obj.updateDynamic("layerContainer")(layerContainer)
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (pane != null) __obj.updateDynamic("pane")(pane)
-    if (popupContainer != null) __obj.updateDynamic("popupContainer")(popupContainer)
+    if (layerContainer != null) __obj.updateDynamic("layerContainer")(layerContainer.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
+    if (popupContainer != null) __obj.updateDynamic("popupContainer")(popupContainer.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeafletContext]
   }
 }

@@ -12,7 +12,7 @@ trait DrawerLayoutSlideEvent extends js.Object {
 object DrawerLayoutSlideEvent {
   @scala.inline
   def apply(nativeEvent: Anon_Offset): DrawerLayoutSlideEvent = {
-    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent)
+    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DrawerLayoutSlideEvent]
   }

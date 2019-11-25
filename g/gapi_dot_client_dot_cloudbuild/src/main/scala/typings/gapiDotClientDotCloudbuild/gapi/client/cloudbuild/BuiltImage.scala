@@ -18,8 +18,8 @@ object BuiltImage {
   @scala.inline
   def apply(digest: String = null, name: String = null): BuiltImage = {
     val __obj = js.Dynamic.literal()
-    if (digest != null) __obj.updateDynamic("digest")(digest)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuiltImage]
   }
 }

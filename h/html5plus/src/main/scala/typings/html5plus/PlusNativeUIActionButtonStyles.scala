@@ -49,9 +49,9 @@ object PlusNativeUIActionButtonStyles {
   @scala.inline
   def apply(color: String = null, style: destructive | default = null, title: String = null): PlusNativeUIActionButtonStyles = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeUIActionButtonStyles]
   }
 }

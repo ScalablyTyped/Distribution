@@ -25,7 +25,7 @@ trait ColorPresentationParams extends js.Object {
 object ColorPresentationParams {
   @scala.inline
   def apply(color: Color, range: Range, textDocument: TextDocumentIdentifier): ColorPresentationParams = {
-    val __obj = js.Dynamic.literal(color = color, range = range, textDocument = textDocument)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ColorPresentationParams]
   }

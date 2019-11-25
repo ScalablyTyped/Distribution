@@ -19,7 +19,7 @@ object SketchMSFlowConnection {
     animationType: Double,
     destinationArtboardID: String | back = null
   ): SketchMSFlowConnection = {
-    val __obj = js.Dynamic.literal(_class = _class, animationType = animationType)
+    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], animationType = animationType.asInstanceOf[js.Any])
     if (destinationArtboardID != null) __obj.updateDynamic("destinationArtboardID")(destinationArtboardID.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSFlowConnection]
   }

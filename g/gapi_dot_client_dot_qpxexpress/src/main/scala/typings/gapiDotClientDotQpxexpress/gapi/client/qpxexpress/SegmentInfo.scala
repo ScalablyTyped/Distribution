@@ -54,17 +54,17 @@ object SegmentInfo {
     subjectToGovernmentApproval: js.UndefOr[Boolean] = js.undefined
   ): SegmentInfo = {
     val __obj = js.Dynamic.literal()
-    if (bookingCode != null) __obj.updateDynamic("bookingCode")(bookingCode)
+    if (bookingCode != null) __obj.updateDynamic("bookingCode")(bookingCode.asInstanceOf[js.Any])
     if (bookingCodeCount != null) __obj.updateDynamic("bookingCodeCount")(bookingCodeCount.asInstanceOf[js.Any])
-    if (cabin != null) __obj.updateDynamic("cabin")(cabin)
+    if (cabin != null) __obj.updateDynamic("cabin")(cabin.asInstanceOf[js.Any])
     if (connectionDuration != null) __obj.updateDynamic("connectionDuration")(connectionDuration.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (flight != null) __obj.updateDynamic("flight")(flight)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (leg != null) __obj.updateDynamic("leg")(leg)
-    if (marriedSegmentGroup != null) __obj.updateDynamic("marriedSegmentGroup")(marriedSegmentGroup)
-    if (!js.isUndefined(subjectToGovernmentApproval)) __obj.updateDynamic("subjectToGovernmentApproval")(subjectToGovernmentApproval)
+    if (flight != null) __obj.updateDynamic("flight")(flight.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (leg != null) __obj.updateDynamic("leg")(leg.asInstanceOf[js.Any])
+    if (marriedSegmentGroup != null) __obj.updateDynamic("marriedSegmentGroup")(marriedSegmentGroup.asInstanceOf[js.Any])
+    if (!js.isUndefined(subjectToGovernmentApproval)) __obj.updateDynamic("subjectToGovernmentApproval")(subjectToGovernmentApproval.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentInfo]
   }
 }

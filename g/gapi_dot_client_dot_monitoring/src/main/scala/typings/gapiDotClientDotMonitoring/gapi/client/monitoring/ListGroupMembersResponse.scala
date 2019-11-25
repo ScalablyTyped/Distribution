@@ -24,8 +24,8 @@ object ListGroupMembersResponse {
     totalSize: Int | Double = null
   ): ListGroupMembersResponse = {
     val __obj = js.Dynamic.literal()
-    if (members != null) __obj.updateDynamic("members")(members)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     if (totalSize != null) __obj.updateDynamic("totalSize")(totalSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGroupMembersResponse]
   }

@@ -12,7 +12,7 @@ trait Anon_Created[T] extends js.Object {
 object Anon_Created {
   @scala.inline
   def apply[T](created: Boolean, instance: T): Anon_Created[T] = {
-    val __obj = js.Dynamic.literal(created = created, instance = instance.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Created[T]]
   }

@@ -12,7 +12,7 @@ trait Anon_Y extends _CategoryPropType {
 object Anon_Y {
   @scala.inline
   def apply(y: js.Array[String]): Anon_Y = {
-    val __obj = js.Dynamic.literal(y = y)
+    val __obj = js.Dynamic.literal(y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Y]
   }

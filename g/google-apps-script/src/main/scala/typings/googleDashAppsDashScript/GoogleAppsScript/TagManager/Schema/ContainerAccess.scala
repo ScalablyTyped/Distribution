@@ -13,8 +13,8 @@ object ContainerAccess {
   @scala.inline
   def apply(containerId: String = null, permission: String = null): ContainerAccess = {
     val __obj = js.Dynamic.literal()
-    if (containerId != null) __obj.updateDynamic("containerId")(containerId)
-    if (permission != null) __obj.updateDynamic("permission")(permission)
+    if (containerId != null) __obj.updateDynamic("containerId")(containerId.asInstanceOf[js.Any])
+    if (permission != null) __obj.updateDynamic("permission")(permission.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerAccess]
   }
 }

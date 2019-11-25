@@ -14,7 +14,7 @@ trait IonButtons extends js.Object {
 object IonButtons {
   @scala.inline
   def apply(collapse: Boolean): IonButtons = {
-    val __obj = js.Dynamic.literal(collapse = collapse)
+    val __obj = js.Dynamic.literal(collapse = collapse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IonButtons]
   }

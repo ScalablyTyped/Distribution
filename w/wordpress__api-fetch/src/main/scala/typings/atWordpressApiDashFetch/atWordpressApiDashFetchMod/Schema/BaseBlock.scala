@@ -46,9 +46,9 @@ object BaseBlock {
     `type`: String,
     _embedded: Record[String, js.Array[_]] = null
   ): BaseBlock[T] = {
-    val __obj = js.Dynamic.literal(_links = _links, content = content, date = date, date_gmt = date_gmt, guid = guid.asInstanceOf[js.Any], id = id, link = link, modified = modified, modified_gmt = modified_gmt, password = password, slug = slug, status = status, template = template, title = title.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    if (_embedded != null) __obj.updateDynamic("_embedded")(_embedded)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], date_gmt = date_gmt.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], modified_gmt = modified_gmt.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (_embedded != null) __obj.updateDynamic("_embedded")(_embedded.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseBlock[T]]
   }
 }

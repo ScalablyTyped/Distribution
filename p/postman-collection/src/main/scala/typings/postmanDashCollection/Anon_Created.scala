@@ -13,7 +13,7 @@ trait Anon_Created extends js.Object {
 object Anon_Created {
   @scala.inline
   def apply(created: js.Array[String], deleted: js.Array[String], updated: js.Array[String]): Anon_Created = {
-    val __obj = js.Dynamic.literal(created = created, deleted = deleted, updated = updated)
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], deleted = deleted.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Created]
   }

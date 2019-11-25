@@ -12,8 +12,8 @@ trait Validator extends js.Object {
 object Validator {
   @scala.inline
   def apply(param: js.Any, `type`: String): Validator = {
-    val __obj = js.Dynamic.literal(param = param)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(param = param.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Validator]
   }
 }

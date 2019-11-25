@@ -3,7 +3,7 @@ package typings.mapboxDashGl.mapboxDashGlMod
 import typings.mapboxDashGl.mapboxDashGlStrings.`raster-dem`
 import typings.mapboxDashGl.mapboxDashGlStrings.canvas
 import typings.mapboxDashGl.mapboxDashGlStrings.geojson
-import typings.mapboxDashGl.mapboxDashGlStrings.image
+import typings.mapboxDashGl.mapboxDashGlStrings.image_
 import typings.mapboxDashGl.mapboxDashGlStrings.raster
 import typings.mapboxDashGl.mapboxDashGlStrings.vector
 import typings.mapboxDashGl.mapboxDashGlStrings.video
@@ -22,7 +22,7 @@ class CanvasSource ()
   /* CompleteClass */
   override var coordinates: js.Array[js.Array[Double]] = js.native
   /* CompleteClass */
-  override var `type`: vector | raster | `raster-dem` | geojson | image | video | canvas = js.native
+  override var `type`: vector | raster | `raster-dem` | geojson | image_ | video | canvas = js.native
   /* CompleteClass */
   @JSName("type")
   override var type_CanvasSourceRaw: canvas = js.native

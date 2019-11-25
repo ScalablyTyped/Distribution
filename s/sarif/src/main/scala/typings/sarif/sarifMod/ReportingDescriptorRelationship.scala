@@ -32,10 +32,10 @@ object ReportingDescriptorRelationship {
     kinds: js.Array[String] = null,
     properties: PropertyBag = null
   ): ReportingDescriptorRelationship = {
-    val __obj = js.Dynamic.literal(target = target)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (kinds != null) __obj.updateDynamic("kinds")(kinds)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (kinds != null) __obj.updateDynamic("kinds")(kinds.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportingDescriptorRelationship]
   }
 }

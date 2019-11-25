@@ -15,7 +15,7 @@ trait Anon_Cell extends js.Object {
 object Anon_Cell {
   @scala.inline
   def apply(cell: String, item: String, itemTitle: String, root: String, row: String): Anon_Cell = {
-    val __obj = js.Dynamic.literal(cell = cell, item = item, itemTitle = itemTitle, root = root, row = row)
+    val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemTitle = itemTitle.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Cell]
   }

@@ -12,7 +12,7 @@ trait Anon_OffsetX extends js.Object {
 object Anon_OffsetX {
   @scala.inline
   def apply(offsetX: Double, offsetY: Double): Anon_OffsetX = {
-    val __obj = js.Dynamic.literal(offsetX = offsetX, offsetY = offsetY)
+    val __obj = js.Dynamic.literal(offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_OffsetX]
   }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "localtunnel"
-version := "1.9-dt-20190411Z-2f2124"
+version := "1.9-dt-20190411Z-a98aab"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

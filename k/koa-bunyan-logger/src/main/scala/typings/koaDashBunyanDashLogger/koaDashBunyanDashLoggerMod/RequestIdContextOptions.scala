@@ -15,10 +15,10 @@ object RequestIdContextOptions {
   @scala.inline
   def apply(field: String = null, header: String = null, prop: String = null, requestProp: String = null): RequestIdContextOptions = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (prop != null) __obj.updateDynamic("prop")(prop)
-    if (requestProp != null) __obj.updateDynamic("requestProp")(requestProp)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (prop != null) __obj.updateDynamic("prop")(prop.asInstanceOf[js.Any])
+    if (requestProp != null) __obj.updateDynamic("requestProp")(requestProp.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestIdContextOptions]
   }
 }

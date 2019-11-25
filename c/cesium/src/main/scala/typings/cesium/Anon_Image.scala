@@ -14,8 +14,8 @@ object Anon_Image {
   @scala.inline
   def apply(image: Property = null, repeat: Property = null): Anon_Image = {
     val __obj = js.Dynamic.literal()
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (repeat != null) __obj.updateDynamic("repeat")(repeat)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Image]
   }
 }

@@ -24,7 +24,7 @@ object ExtractField {
     transformResult: /* result */ Result => Result = null,
     transformSchema: /* schema */ GraphQLSchema => GraphQLSchema = null
   ): ExtractField = {
-    val __obj = js.Dynamic.literal(from = from, to = to, transformRequest = js.Any.fromFunction1(transformRequest))
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], transformRequest = js.Any.fromFunction1(transformRequest))
     if (transformResult != null) __obj.updateDynamic("transformResult")(js.Any.fromFunction1(transformResult))
     if (transformSchema != null) __obj.updateDynamic("transformSchema")(js.Any.fromFunction1(transformSchema))
     __obj.asInstanceOf[ExtractField]

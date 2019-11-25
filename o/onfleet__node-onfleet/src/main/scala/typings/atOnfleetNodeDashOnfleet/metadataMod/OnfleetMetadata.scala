@@ -21,10 +21,10 @@ object OnfleetMetadata {
     subtype: MetadataSubType = null,
     visibility: js.Array[MetadataVisibility] = null
   ): OnfleetMetadata = {
-    val __obj = js.Dynamic.literal(name = name, value = value)
-    __obj.updateDynamic("type")(`type`)
-    if (subtype != null) __obj.updateDynamic("subtype")(subtype)
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (subtype != null) __obj.updateDynamic("subtype")(subtype.asInstanceOf[js.Any])
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnfleetMetadata]
   }
 }

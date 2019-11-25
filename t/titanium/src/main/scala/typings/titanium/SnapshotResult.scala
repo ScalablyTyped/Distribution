@@ -27,9 +27,9 @@ object SnapshotResult {
   @scala.inline
   def apply(error: String = null, snapshot: Blob = null, success: js.UndefOr[Boolean] = js.undefined): SnapshotResult = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (snapshot != null) __obj.updateDynamic("snapshot")(snapshot)
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (snapshot != null) __obj.updateDynamic("snapshot")(snapshot.asInstanceOf[js.Any])
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotResult]
   }
 }

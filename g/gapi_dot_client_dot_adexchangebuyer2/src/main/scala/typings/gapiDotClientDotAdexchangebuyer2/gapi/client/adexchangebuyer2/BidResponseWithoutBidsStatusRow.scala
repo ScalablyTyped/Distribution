@@ -23,9 +23,9 @@ object BidResponseWithoutBidsStatusRow {
   @scala.inline
   def apply(impressionCount: MetricValue = null, rowDimensions: RowDimensions = null, status: String = null): BidResponseWithoutBidsStatusRow = {
     val __obj = js.Dynamic.literal()
-    if (impressionCount != null) __obj.updateDynamic("impressionCount")(impressionCount)
-    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (impressionCount != null) __obj.updateDynamic("impressionCount")(impressionCount.asInstanceOf[js.Any])
+    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[BidResponseWithoutBidsStatusRow]
   }
 }

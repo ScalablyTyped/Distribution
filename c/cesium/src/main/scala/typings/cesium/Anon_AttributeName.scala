@@ -22,11 +22,11 @@ object Anon_AttributeName {
     renderState: RenderState = null,
     vertexShaderSource: String = null
   ): Anon_AttributeName = {
-    val __obj = js.Dynamic.literal(attributeName = attributeName)
-    if (fragmentShaderSource != null) __obj.updateDynamic("fragmentShaderSource")(fragmentShaderSource)
-    if (glslDatatype != null) __obj.updateDynamic("glslDatatype")(glslDatatype)
-    if (renderState != null) __obj.updateDynamic("renderState")(renderState)
-    if (vertexShaderSource != null) __obj.updateDynamic("vertexShaderSource")(vertexShaderSource)
+    val __obj = js.Dynamic.literal(attributeName = attributeName.asInstanceOf[js.Any])
+    if (fragmentShaderSource != null) __obj.updateDynamic("fragmentShaderSource")(fragmentShaderSource.asInstanceOf[js.Any])
+    if (glslDatatype != null) __obj.updateDynamic("glslDatatype")(glslDatatype.asInstanceOf[js.Any])
+    if (renderState != null) __obj.updateDynamic("renderState")(renderState.asInstanceOf[js.Any])
+    if (vertexShaderSource != null) __obj.updateDynamic("vertexShaderSource")(vertexShaderSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AttributeName]
   }
 }

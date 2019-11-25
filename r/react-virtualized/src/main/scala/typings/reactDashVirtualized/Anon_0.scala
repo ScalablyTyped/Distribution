@@ -18,7 +18,7 @@ trait Anon_0 extends js.Object {
 object Anon_0 {
   @scala.inline
   def apply(disabled: `false`, isControlled: `false`, mode: edges, scrollToColumn: `0`, scrollToRow: `0`): Anon_0 = {
-    val __obj = js.Dynamic.literal(disabled = disabled, isControlled = isControlled, mode = mode, scrollToColumn = scrollToColumn, scrollToRow = scrollToRow)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], isControlled = isControlled.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], scrollToColumn = scrollToColumn.asInstanceOf[js.Any], scrollToRow = scrollToRow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_0]
   }

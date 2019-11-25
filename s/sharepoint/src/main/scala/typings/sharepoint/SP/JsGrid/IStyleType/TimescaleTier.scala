@@ -33,7 +33,7 @@ object TimescaleTier {
     verticalBorderColor: js.Any,
     verticalBorderStyle: js.Any
   ): TimescaleTier = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, font = font, fontSize = fontSize, fontWeight = fontWeight, horizontalBorderColor = horizontalBorderColor, horizontalBorderStyle = horizontalBorderStyle, outerBorderColor = outerBorderColor, textColor = textColor, todayLineColor = todayLineColor, verticalBorderColor = verticalBorderColor, verticalBorderStyle = verticalBorderStyle)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], horizontalBorderColor = horizontalBorderColor.asInstanceOf[js.Any], horizontalBorderStyle = horizontalBorderStyle.asInstanceOf[js.Any], outerBorderColor = outerBorderColor.asInstanceOf[js.Any], textColor = textColor.asInstanceOf[js.Any], todayLineColor = todayLineColor.asInstanceOf[js.Any], verticalBorderColor = verticalBorderColor.asInstanceOf[js.Any], verticalBorderStyle = verticalBorderStyle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TimescaleTier]
   }

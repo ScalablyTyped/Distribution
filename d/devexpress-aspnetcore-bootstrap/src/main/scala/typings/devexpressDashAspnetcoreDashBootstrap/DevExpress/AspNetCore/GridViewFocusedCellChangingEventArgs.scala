@@ -11,7 +11,7 @@ trait GridViewFocusedCellChangingEventArgs extends CancelEventArgs {
 object GridViewFocusedCellChangingEventArgs {
   @scala.inline
   def apply(cancel: Boolean, cellInfo: BootstrapGridViewCellInfo, sender: Control): GridViewFocusedCellChangingEventArgs = {
-    val __obj = js.Dynamic.literal(cancel = cancel, cellInfo = cellInfo, sender = sender)
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], cellInfo = cellInfo.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GridViewFocusedCellChangingEventArgs]
   }

@@ -13,7 +13,7 @@ trait Anon_ParseBooleans extends js.Object {
 object Anon_ParseBooleans {
   @scala.inline
   def apply(parseBooleans: `true`, parseNumbers: `true`): Anon_ParseBooleans = {
-    val __obj = js.Dynamic.literal(parseBooleans = parseBooleans, parseNumbers = parseNumbers)
+    val __obj = js.Dynamic.literal(parseBooleans = parseBooleans.asInstanceOf[js.Any], parseNumbers = parseNumbers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ParseBooleans]
   }

@@ -20,10 +20,10 @@ object DropTargetAreaDragleaveEvent {
     dropTarget: JQuery = null,
     target: Element = null
   ): DropTargetAreaDragleaveEvent = {
-    val __obj = js.Dynamic.literal(sender = sender)
-    if (draggable != null) __obj.updateDynamic("draggable")(draggable)
-    if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget)
-    if (target != null) __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(sender = sender.asInstanceOf[js.Any])
+    if (draggable != null) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropTargetAreaDragleaveEvent]
   }
 }

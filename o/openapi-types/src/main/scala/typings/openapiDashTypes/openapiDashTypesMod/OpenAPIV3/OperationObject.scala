@@ -38,18 +38,18 @@ object OperationObject {
     tags: js.Array[String] = null
   ): OperationObject = {
     val __obj = js.Dynamic.literal()
-    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks)
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (externalDocs != null) __obj.updateDynamic("externalDocs")(externalDocs)
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
+    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (externalDocs != null) __obj.updateDynamic("externalDocs")(externalDocs.asInstanceOf[js.Any])
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody.asInstanceOf[js.Any])
-    if (responses != null) __obj.updateDynamic("responses")(responses)
-    if (security != null) __obj.updateDynamic("security")(security)
-    if (servers != null) __obj.updateDynamic("servers")(servers)
-    if (summary != null) __obj.updateDynamic("summary")(summary)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (responses != null) __obj.updateDynamic("responses")(responses.asInstanceOf[js.Any])
+    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
+    if (servers != null) __obj.updateDynamic("servers")(servers.asInstanceOf[js.Any])
+    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationObject]
   }
 }

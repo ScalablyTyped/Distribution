@@ -38,16 +38,16 @@ object KnownOption {
     `type`: String | (Map[String, _]) = null,
     validate: (/* key */ String, /* value */ String, /* raw */ RawArguments) => Boolean = null
   ): KnownOption = {
-    val __obj = js.Dynamic.literal(longName = longName)
-    if (aliasFor != null) __obj.updateDynamic("aliasFor")(aliasFor)
+    val __obj = js.Dynamic.literal(longName = longName.asInstanceOf[js.Any])
+    if (aliasFor != null) __obj.updateDynamic("aliasFor")(aliasFor.asInstanceOf[js.Any])
     if (convert != null) __obj.updateDynamic("convert")(js.Any.fromFunction3(convert))
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (!js.isUndefined(isUsage)) __obj.updateDynamic("isUsage")(isUsage)
-    if (!js.isUndefined(many)) __obj.updateDynamic("many")(many)
-    if (param != null) __obj.updateDynamic("param")(param)
-    if (shortName != null) __obj.updateDynamic("shortName")(shortName)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(isUsage)) __obj.updateDynamic("isUsage")(isUsage.asInstanceOf[js.Any])
+    if (!js.isUndefined(many)) __obj.updateDynamic("many")(many.asInstanceOf[js.Any])
+    if (param != null) __obj.updateDynamic("param")(param.asInstanceOf[js.Any])
+    if (shortName != null) __obj.updateDynamic("shortName")(shortName.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction3(validate))
     __obj.asInstanceOf[KnownOption]

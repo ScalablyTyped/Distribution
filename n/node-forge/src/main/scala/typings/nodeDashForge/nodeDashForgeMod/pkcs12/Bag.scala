@@ -18,9 +18,9 @@ trait Bag extends js.Object {
 object Bag {
   @scala.inline
   def apply(asn1: Asn1, attributes: js.Any, `type`: String, cert: Certificate = null, key: PrivateKey = null): Bag = {
-    val __obj = js.Dynamic.literal(asn1 = asn1, attributes = attributes)
-    __obj.updateDynamic("type")(`type`)
-    if (cert != null) __obj.updateDynamic("cert")(cert)
+    val __obj = js.Dynamic.literal(asn1 = asn1.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bag]
   }

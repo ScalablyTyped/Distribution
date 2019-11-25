@@ -13,8 +13,8 @@ trait ISession extends js.Object {
 object ISession {
   @scala.inline
   def apply(id: String, startedAt: String, user: js.Object = null): ISession = {
-    val __obj = js.Dynamic.literal(id = id, startedAt = startedAt)
-    if (user != null) __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], startedAt = startedAt.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISession]
   }
 }

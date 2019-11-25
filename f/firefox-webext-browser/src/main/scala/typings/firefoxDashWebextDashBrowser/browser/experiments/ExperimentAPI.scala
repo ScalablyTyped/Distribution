@@ -16,9 +16,9 @@ trait ExperimentAPI extends js.Object {
 object ExperimentAPI {
   @scala.inline
   def apply(schema: ExperimentURL, child: Anon_Paths = null, parent: Anon_Events = null): ExperimentAPI = {
-    val __obj = js.Dynamic.literal(schema = schema)
-    if (child != null) __obj.updateDynamic("child")(child)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
+    if (child != null) __obj.updateDynamic("child")(child.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExperimentAPI]
   }
 }

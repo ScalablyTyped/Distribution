@@ -16,7 +16,7 @@ trait IntercomConfig extends js.Object {
 object IntercomConfig {
   @scala.inline
   def apply(text: String): IntercomConfig = {
-    val __obj = js.Dynamic.literal(text = text)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IntercomConfig]
   }

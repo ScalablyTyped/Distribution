@@ -13,7 +13,7 @@ trait ResponseModel extends PersistableModel {
 object ResponseModel {
   @scala.inline
   def apply(id: ZendeskID, name: String): ResponseModel = {
-    val __obj = js.Dynamic.literal(id = id, name = name)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResponseModel]
   }

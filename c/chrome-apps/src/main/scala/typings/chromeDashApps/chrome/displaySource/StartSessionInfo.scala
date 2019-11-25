@@ -20,10 +20,10 @@ object StartSessionInfo {
     authenticationInfo: AuthenticationInfo = null,
     videoTrack: js.Object = null
   ): StartSessionInfo = {
-    val __obj = js.Dynamic.literal(sinkId = sinkId)
-    if (audioTrack != null) __obj.updateDynamic("audioTrack")(audioTrack)
-    if (authenticationInfo != null) __obj.updateDynamic("authenticationInfo")(authenticationInfo)
-    if (videoTrack != null) __obj.updateDynamic("videoTrack")(videoTrack)
+    val __obj = js.Dynamic.literal(sinkId = sinkId.asInstanceOf[js.Any])
+    if (audioTrack != null) __obj.updateDynamic("audioTrack")(audioTrack.asInstanceOf[js.Any])
+    if (authenticationInfo != null) __obj.updateDynamic("authenticationInfo")(authenticationInfo.asInstanceOf[js.Any])
+    if (videoTrack != null) __obj.updateDynamic("videoTrack")(videoTrack.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSessionInfo]
   }
 }

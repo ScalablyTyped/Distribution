@@ -39,7 +39,7 @@ object Request {
     url: String,
     withCredentials: Boolean
   ): Request = {
-    val __obj = js.Dynamic.literal(config = config, headers = headers, respondWith = js.Any.fromFunction1(respondWith), respondWithTimeout = js.Any.fromFunction0(respondWithTimeout), responseType = responseType, timeout = timeout, url = url, withCredentials = withCredentials)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], respondWith = js.Any.fromFunction1(respondWith), respondWithTimeout = js.Any.fromFunction0(respondWithTimeout), responseType = responseType.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], withCredentials = withCredentials.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Request]
   }

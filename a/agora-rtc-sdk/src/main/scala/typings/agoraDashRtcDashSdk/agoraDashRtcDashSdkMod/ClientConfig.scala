@@ -1,10 +1,10 @@
 package typings.agoraDashRtcDashSdk.agoraDashRtcDashSdkMod
 
 import typings.agoraDashRtcDashSdk.Anon_Forceturn
-import typings.agoraDashRtcDashSdk.agoraDashRtcDashSdkStrings.h264
+import typings.agoraDashRtcDashSdk.agoraDashRtcDashSdkStrings.h264_
 import typings.agoraDashRtcDashSdk.agoraDashRtcDashSdkStrings.live
 import typings.agoraDashRtcDashSdk.agoraDashRtcDashSdkStrings.rtc
-import typings.agoraDashRtcDashSdk.agoraDashRtcDashSdkStrings.vp8
+import typings.agoraDashRtcDashSdk.agoraDashRtcDashSdkStrings.vp8_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,7 +46,7 @@ trait ClientConfig extends js.Object {
     *
     * Set {@link codec} as `"h264"` as long as Safari is involved in the session.
     */
-  var codec: vp8 | h264
+  var codec: vp8_ | h264_
   /**
     * The channel profile.
     *
@@ -88,10 +88,15 @@ trait ClientConfig extends js.Object {
 
 object ClientConfig {
   @scala.inline
-  def apply(codec: vp8 | h264, mode: live | rtc, proxyServer: String = null, turnServer: Anon_Forceturn = null): ClientConfig = {
+  def apply(
+    codec: vp8_ | h264_,
+    mode: live | rtc,
+    proxyServer: String = null,
+    turnServer: Anon_Forceturn = null
+  ): ClientConfig = {
     val __obj = js.Dynamic.literal(codec = codec.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
-    if (proxyServer != null) __obj.updateDynamic("proxyServer")(proxyServer)
-    if (turnServer != null) __obj.updateDynamic("turnServer")(turnServer)
+    if (proxyServer != null) __obj.updateDynamic("proxyServer")(proxyServer.asInstanceOf[js.Any])
+    if (turnServer != null) __obj.updateDynamic("turnServer")(turnServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientConfig]
   }
 }

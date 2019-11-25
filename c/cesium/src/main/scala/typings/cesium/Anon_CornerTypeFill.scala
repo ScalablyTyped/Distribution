@@ -34,16 +34,16 @@ object Anon_CornerTypeFill {
     show: Property = null
   ): Anon_CornerTypeFill = {
     val __obj = js.Dynamic.literal()
-    if (cornerType != null) __obj.updateDynamic("cornerType")(cornerType)
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (granularity != null) __obj.updateDynamic("granularity")(granularity)
-    if (material != null) __obj.updateDynamic("material")(material)
-    if (outline != null) __obj.updateDynamic("outline")(outline)
-    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor)
-    if (outlineWidth != null) __obj.updateDynamic("outlineWidth")(outlineWidth)
-    if (positions != null) __obj.updateDynamic("positions")(positions)
-    if (shape != null) __obj.updateDynamic("shape")(shape)
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (cornerType != null) __obj.updateDynamic("cornerType")(cornerType.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
+    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
+    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
+    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
+    if (outlineWidth != null) __obj.updateDynamic("outlineWidth")(outlineWidth.asInstanceOf[js.Any])
+    if (positions != null) __obj.updateDynamic("positions")(positions.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CornerTypeFill]
   }
 }

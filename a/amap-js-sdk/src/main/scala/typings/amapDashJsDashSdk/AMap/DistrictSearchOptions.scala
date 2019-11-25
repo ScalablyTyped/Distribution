@@ -19,9 +19,9 @@ object DistrictSearchOptions {
     showbiz: js.UndefOr[Boolean] = js.undefined,
     subdistrict: Int | Double = null
   ): DistrictSearchOptions = {
-    val __obj = js.Dynamic.literal(level = level)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (!js.isUndefined(showbiz)) __obj.updateDynamic("showbiz")(showbiz)
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(showbiz)) __obj.updateDynamic("showbiz")(showbiz.asInstanceOf[js.Any])
     if (subdistrict != null) __obj.updateDynamic("subdistrict")(subdistrict.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistrictSearchOptions]
   }

@@ -14,7 +14,7 @@ trait Anon_BorderRadiusOverflowPaddingTop extends js.Object {
 object Anon_BorderRadiusOverflowPaddingTop {
   @scala.inline
   def apply(borderRadius: Double, overflow: String, paddingTop: Double, width: Double): Anon_BorderRadiusOverflowPaddingTop = {
-    val __obj = js.Dynamic.literal(borderRadius = borderRadius, overflow = overflow, paddingTop = paddingTop, width = width)
+    val __obj = js.Dynamic.literal(borderRadius = borderRadius.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any], paddingTop = paddingTop.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BorderRadiusOverflowPaddingTop]
   }

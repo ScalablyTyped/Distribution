@@ -15,7 +15,7 @@ trait Failure
 object Failure {
   @scala.inline
   def apply(expected: js.Array[String], index: Index, status: `false`): Failure = {
-    val __obj = js.Dynamic.literal(expected = expected, index = index, status = status)
+    val __obj = js.Dynamic.literal(expected = expected.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Failure]
   }

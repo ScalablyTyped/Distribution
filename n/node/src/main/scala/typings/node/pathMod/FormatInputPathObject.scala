@@ -37,11 +37,11 @@ object FormatInputPathObject {
     root: java.lang.String = null
   ): FormatInputPathObject = {
     val __obj = js.Dynamic.literal()
-    if (base != null) __obj.updateDynamic("base")(base)
-    if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (ext != null) __obj.updateDynamic("ext")(ext)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatInputPathObject]
   }
 }

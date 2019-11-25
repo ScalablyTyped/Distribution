@@ -72,14 +72,14 @@ object FindParametersProperties {
     searchText: String = null
   ): FindParametersProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(contains)) __obj.updateDynamic("contains")(contains)
+    if (!js.isUndefined(contains)) __obj.updateDynamic("contains")(contains.asInstanceOf[js.Any])
     if (geometryPrecision != null) __obj.updateDynamic("geometryPrecision")(geometryPrecision.asInstanceOf[js.Any])
-    if (layerIds != null) __obj.updateDynamic("layerIds")(layerIds)
+    if (layerIds != null) __obj.updateDynamic("layerIds")(layerIds.asInstanceOf[js.Any])
     if (maxAllowableOffset != null) __obj.updateDynamic("maxAllowableOffset")(maxAllowableOffset.asInstanceOf[js.Any])
-    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference)
-    if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry)
-    if (searchFields != null) __obj.updateDynamic("searchFields")(searchFields)
-    if (searchText != null) __obj.updateDynamic("searchText")(searchText)
+    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry.asInstanceOf[js.Any])
+    if (searchFields != null) __obj.updateDynamic("searchFields")(searchFields.asInstanceOf[js.Any])
+    if (searchText != null) __obj.updateDynamic("searchText")(searchText.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindParametersProperties]
   }
 }

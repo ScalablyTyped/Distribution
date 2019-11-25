@@ -13,7 +13,7 @@ trait Anon_OriginalEventValueBoolean extends js.Object {
 object Anon_OriginalEventValueBoolean {
   @scala.inline
   def apply(originalEvent: Event, value: Boolean): Anon_OriginalEventValueBoolean = {
-    val __obj = js.Dynamic.literal(originalEvent = originalEvent, value = value)
+    val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_OriginalEventValueBoolean]
   }

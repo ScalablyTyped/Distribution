@@ -38,8 +38,8 @@ object SinonSandboxConfig {
     useFakeTimers: Boolean | Partial[SinonFakeTimersConfig],
     injectInto: js.Object = null
   ): SinonSandboxConfig = {
-    val __obj = js.Dynamic.literal(properties = properties, useFakeServer = useFakeServer.asInstanceOf[js.Any], useFakeTimers = useFakeTimers.asInstanceOf[js.Any])
-    if (injectInto != null) __obj.updateDynamic("injectInto")(injectInto)
+    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], useFakeServer = useFakeServer.asInstanceOf[js.Any], useFakeTimers = useFakeTimers.asInstanceOf[js.Any])
+    if (injectInto != null) __obj.updateDynamic("injectInto")(injectInto.asInstanceOf[js.Any])
     __obj.asInstanceOf[SinonSandboxConfig]
   }
 }

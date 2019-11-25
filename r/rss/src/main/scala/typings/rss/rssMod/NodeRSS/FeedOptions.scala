@@ -101,21 +101,21 @@ object FeedOptions {
     ttl: Int | Double = null,
     webMaster: String = null
   ): FeedOptions = {
-    val __obj = js.Dynamic.literal(feed_url = feed_url, site_url = site_url, title = title)
-    if (categories != null) __obj.updateDynamic("categories")(categories)
-    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
-    if (custom_elements != null) __obj.updateDynamic("custom_elements")(custom_elements)
-    if (custom_namespaces != null) __obj.updateDynamic("custom_namespaces")(custom_namespaces)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (docs != null) __obj.updateDynamic("docs")(docs)
-    if (generator != null) __obj.updateDynamic("generator")(generator)
-    if (hub != null) __obj.updateDynamic("hub")(hub)
-    if (image_url != null) __obj.updateDynamic("image_url")(image_url)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (managingEditor != null) __obj.updateDynamic("managingEditor")(managingEditor)
+    val __obj = js.Dynamic.literal(feed_url = feed_url.asInstanceOf[js.Any], site_url = site_url.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
+    if (custom_elements != null) __obj.updateDynamic("custom_elements")(custom_elements.asInstanceOf[js.Any])
+    if (custom_namespaces != null) __obj.updateDynamic("custom_namespaces")(custom_namespaces.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (docs != null) __obj.updateDynamic("docs")(docs.asInstanceOf[js.Any])
+    if (generator != null) __obj.updateDynamic("generator")(generator.asInstanceOf[js.Any])
+    if (hub != null) __obj.updateDynamic("hub")(hub.asInstanceOf[js.Any])
+    if (image_url != null) __obj.updateDynamic("image_url")(image_url.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (managingEditor != null) __obj.updateDynamic("managingEditor")(managingEditor.asInstanceOf[js.Any])
     if (pubDate != null) __obj.updateDynamic("pubDate")(pubDate.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
-    if (webMaster != null) __obj.updateDynamic("webMaster")(webMaster)
+    if (webMaster != null) __obj.updateDynamic("webMaster")(webMaster.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeedOptions]
   }
 }

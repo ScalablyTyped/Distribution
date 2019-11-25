@@ -31,7 +31,7 @@ object Anon_AdditionalData {
     State: String,
     Street: String
   ): Anon_AdditionalData = {
-    val __obj = js.Dynamic.literal(AdditionalData = AdditionalData, City = City, Country = Country, County = County, District = District, HouseNumber = HouseNumber, Label = Label, PostalCode = PostalCode, State = State, Street = Street)
+    val __obj = js.Dynamic.literal(AdditionalData = AdditionalData.asInstanceOf[js.Any], City = City.asInstanceOf[js.Any], Country = Country.asInstanceOf[js.Any], County = County.asInstanceOf[js.Any], District = District.asInstanceOf[js.Any], HouseNumber = HouseNumber.asInstanceOf[js.Any], Label = Label.asInstanceOf[js.Any], PostalCode = PostalCode.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], Street = Street.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AdditionalData]
   }

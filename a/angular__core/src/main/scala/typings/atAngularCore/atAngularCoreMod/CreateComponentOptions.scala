@@ -60,11 +60,11 @@ object CreateComponentOptions {
   ): CreateComponentOptions = {
     val __obj = js.Dynamic.literal()
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (hostFeatures != null) __obj.updateDynamic("hostFeatures")(hostFeatures)
-    if (injector != null) __obj.updateDynamic("injector")(injector)
-    if (playerHandler != null) __obj.updateDynamic("playerHandler")(playerHandler)
-    if (rendererFactory != null) __obj.updateDynamic("rendererFactory")(rendererFactory)
-    if (sanitizer != null) __obj.updateDynamic("sanitizer")(sanitizer)
+    if (hostFeatures != null) __obj.updateDynamic("hostFeatures")(hostFeatures.asInstanceOf[js.Any])
+    if (injector != null) __obj.updateDynamic("injector")(injector.asInstanceOf[js.Any])
+    if (playerHandler != null) __obj.updateDynamic("playerHandler")(playerHandler.asInstanceOf[js.Any])
+    if (rendererFactory != null) __obj.updateDynamic("rendererFactory")(rendererFactory.asInstanceOf[js.Any])
+    if (sanitizer != null) __obj.updateDynamic("sanitizer")(sanitizer.asInstanceOf[js.Any])
     if (scheduler != null) __obj.updateDynamic("scheduler")(js.Any.fromFunction1(scheduler))
     __obj.asInstanceOf[CreateComponentOptions]
   }

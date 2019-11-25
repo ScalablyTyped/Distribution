@@ -13,7 +13,7 @@ trait Anon_Friction extends js.Object {
 object Anon_Friction {
   @scala.inline
   def apply(friction: Double, id: Double, restriction: Double): Anon_Friction = {
-    val __obj = js.Dynamic.literal(friction = friction, id = id, restriction = restriction)
+    val __obj = js.Dynamic.literal(friction = friction.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], restriction = restriction.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Friction]
   }

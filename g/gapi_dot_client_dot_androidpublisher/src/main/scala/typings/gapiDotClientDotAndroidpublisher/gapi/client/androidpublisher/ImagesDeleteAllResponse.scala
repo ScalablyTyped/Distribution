@@ -12,7 +12,7 @@ object ImagesDeleteAllResponse {
   @scala.inline
   def apply(deleted: js.Array[Image] = null): ImagesDeleteAllResponse = {
     val __obj = js.Dynamic.literal()
-    if (deleted != null) __obj.updateDynamic("deleted")(deleted)
+    if (deleted != null) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagesDeleteAllResponse]
   }
 }

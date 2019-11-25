@@ -57,15 +57,15 @@ object ChooseAddressRes {
     userName: String = null
   ): ChooseAddressRes = {
     val __obj = js.Dynamic.literal()
-    if (cityName != null) __obj.updateDynamic("cityName")(cityName)
-    if (countyName != null) __obj.updateDynamic("countyName")(countyName)
-    if (detailInfo != null) __obj.updateDynamic("detailInfo")(detailInfo)
-    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg)
-    if (nationalCode != null) __obj.updateDynamic("nationalCode")(nationalCode)
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
-    if (provinceName != null) __obj.updateDynamic("provinceName")(provinceName)
-    if (telNumber != null) __obj.updateDynamic("telNumber")(telNumber)
-    if (userName != null) __obj.updateDynamic("userName")(userName)
+    if (cityName != null) __obj.updateDynamic("cityName")(cityName.asInstanceOf[js.Any])
+    if (countyName != null) __obj.updateDynamic("countyName")(countyName.asInstanceOf[js.Any])
+    if (detailInfo != null) __obj.updateDynamic("detailInfo")(detailInfo.asInstanceOf[js.Any])
+    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
+    if (nationalCode != null) __obj.updateDynamic("nationalCode")(nationalCode.asInstanceOf[js.Any])
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
+    if (provinceName != null) __obj.updateDynamic("provinceName")(provinceName.asInstanceOf[js.Any])
+    if (telNumber != null) __obj.updateDynamic("telNumber")(telNumber.asInstanceOf[js.Any])
+    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooseAddressRes]
   }
 }

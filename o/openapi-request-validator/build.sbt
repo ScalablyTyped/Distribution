@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "openapi-request-validator"
-version := "4.1.0-af956b"
+version := "4.1.0-84310e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ajv" % "6.10.2-52b713",
-  "org.scalablytyped" %%% "openapi-types" % "1.3.5-47c407",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf",
-  "org.scalablytyped" %%% "ts-log" % "2.1.4-8a79a7")
+  "org.scalablytyped" %%% "ajv" % "6.10.2-3573c2",
+  "org.scalablytyped" %%% "openapi-types" % "1.3.5-559860",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d",
+  "org.scalablytyped" %%% "ts-log" % "2.1.4-3dd486")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

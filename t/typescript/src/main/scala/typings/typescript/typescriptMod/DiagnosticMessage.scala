@@ -21,8 +21,8 @@ object DiagnosticMessage {
     message: String,
     reportsUnnecessary: js.Object = null
   ): DiagnosticMessage = {
-    val __obj = js.Dynamic.literal(category = category, code = code, key = key, message = message)
-    if (reportsUnnecessary != null) __obj.updateDynamic("reportsUnnecessary")(reportsUnnecessary)
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    if (reportsUnnecessary != null) __obj.updateDynamic("reportsUnnecessary")(reportsUnnecessary.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagnosticMessage]
   }
 }

@@ -12,8 +12,8 @@ trait UrlOptions extends js.Object {
 object UrlOptions {
   @scala.inline
   def apply(path: String, limit: String = null): UrlOptions = {
-    val __obj = js.Dynamic.literal(path = path)
-    if (limit != null) __obj.updateDynamic("limit")(limit)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlOptions]
   }
 }

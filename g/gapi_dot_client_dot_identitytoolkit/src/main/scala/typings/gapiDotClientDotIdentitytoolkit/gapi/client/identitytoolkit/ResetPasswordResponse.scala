@@ -19,10 +19,10 @@ object ResetPasswordResponse {
   @scala.inline
   def apply(email: String = null, kind: String = null, newEmail: String = null, requestType: String = null): ResetPasswordResponse = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (newEmail != null) __obj.updateDynamic("newEmail")(newEmail)
-    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (newEmail != null) __obj.updateDynamic("newEmail")(newEmail.asInstanceOf[js.Any])
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResetPasswordResponse]
   }
 }

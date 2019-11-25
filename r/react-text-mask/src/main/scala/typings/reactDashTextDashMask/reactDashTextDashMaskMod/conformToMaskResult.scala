@@ -13,7 +13,7 @@ trait conformToMaskResult extends js.Object {
 object conformToMaskResult {
   @scala.inline
   def apply(conformedValue: String, meta: Anon_SomeCharsRejected): conformToMaskResult = {
-    val __obj = js.Dynamic.literal(conformedValue = conformedValue, meta = meta)
+    val __obj = js.Dynamic.literal(conformedValue = conformedValue.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[conformToMaskResult]
   }

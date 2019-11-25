@@ -13,7 +13,7 @@ trait RateLimitGetResponseRate extends js.Object {
 object RateLimitGetResponseRate {
   @scala.inline
   def apply(limit: Double, remaining: Double, reset: Double): RateLimitGetResponseRate = {
-    val __obj = js.Dynamic.literal(limit = limit, remaining = remaining, reset = reset)
+    val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any], remaining = remaining.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RateLimitGetResponseRate]
   }

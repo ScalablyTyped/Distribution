@@ -19,9 +19,9 @@ object Anon_ErrorRecovery {
     notification: js.Any = null
   ): Anon_ErrorRecovery = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (errorRecovery != null) __obj.updateDynamic("errorRecovery")(errorRecovery)
-    if (notification != null) __obj.updateDynamic("notification")(notification)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (errorRecovery != null) __obj.updateDynamic("errorRecovery")(errorRecovery.asInstanceOf[js.Any])
+    if (notification != null) __obj.updateDynamic("notification")(notification.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ErrorRecovery]
   }
 }

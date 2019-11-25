@@ -12,7 +12,7 @@ trait MediaKeySessionEventMap extends js.Object {
 object MediaKeySessionEventMap {
   @scala.inline
   def apply(keystatuseschange: Event, message: MessageEvent): MediaKeySessionEventMap = {
-    val __obj = js.Dynamic.literal(keystatuseschange = keystatuseschange, message = message)
+    val __obj = js.Dynamic.literal(keystatuseschange = keystatuseschange.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaKeySessionEventMap]
   }

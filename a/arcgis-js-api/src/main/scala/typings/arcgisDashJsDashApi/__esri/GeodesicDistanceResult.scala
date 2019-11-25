@@ -37,7 +37,7 @@ object GeodesicDistanceResult {
     distance: Int | Double = null,
     reverseAzimuth: Int | Double = null
   ): GeodesicDistanceResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (azimuth != null) __obj.updateDynamic("azimuth")(azimuth.asInstanceOf[js.Any])
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (reverseAzimuth != null) __obj.updateDynamic("reverseAzimuth")(reverseAzimuth.asInstanceOf[js.Any])

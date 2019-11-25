@@ -13,7 +13,7 @@ object CreateBuiltInVariableResponse {
   @scala.inline
   def apply(builtInVariable: js.Array[BuiltInVariable] = null): CreateBuiltInVariableResponse = {
     val __obj = js.Dynamic.literal()
-    if (builtInVariable != null) __obj.updateDynamic("builtInVariable")(builtInVariable)
+    if (builtInVariable != null) __obj.updateDynamic("builtInVariable")(builtInVariable.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBuiltInVariableResponse]
   }
 }

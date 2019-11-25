@@ -31,9 +31,9 @@ object GetAccountSettingsOutput {
     AccountLimit: _UnmarshalledAccountLimit = null,
     AccountUsage: _UnmarshalledAccountUsage = null
   ): GetAccountSettingsOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (AccountLimit != null) __obj.updateDynamic("AccountLimit")(AccountLimit)
-    if (AccountUsage != null) __obj.updateDynamic("AccountUsage")(AccountUsage)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (AccountLimit != null) __obj.updateDynamic("AccountLimit")(AccountLimit.asInstanceOf[js.Any])
+    if (AccountUsage != null) __obj.updateDynamic("AccountUsage")(AccountUsage.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAccountSettingsOutput]
   }
 }

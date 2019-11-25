@@ -79,8 +79,8 @@ object IInteractComponent {
     use_item: Boolean,
     transform_to_item: String = null
   ): IInteractComponent = {
-    val __obj = js.Dynamic.literal(add_items = add_items, cooldown = cooldown, hurt_item = hurt_item, interact_text = interact_text, on_interact = on_interact.asInstanceOf[js.Any], particle_on_start = particle_on_start, play_sounds = play_sounds, spawn_entities = spawn_entities, spawn_items = spawn_items, swing = swing, use_item = use_item)
-    if (transform_to_item != null) __obj.updateDynamic("transform_to_item")(transform_to_item)
+    val __obj = js.Dynamic.literal(add_items = add_items.asInstanceOf[js.Any], cooldown = cooldown.asInstanceOf[js.Any], hurt_item = hurt_item.asInstanceOf[js.Any], interact_text = interact_text.asInstanceOf[js.Any], on_interact = on_interact.asInstanceOf[js.Any], particle_on_start = particle_on_start.asInstanceOf[js.Any], play_sounds = play_sounds.asInstanceOf[js.Any], spawn_entities = spawn_entities.asInstanceOf[js.Any], spawn_items = spawn_items.asInstanceOf[js.Any], swing = swing.asInstanceOf[js.Any], use_item = use_item.asInstanceOf[js.Any])
+    if (transform_to_item != null) __obj.updateDynamic("transform_to_item")(transform_to_item.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInteractComponent]
   }
 }

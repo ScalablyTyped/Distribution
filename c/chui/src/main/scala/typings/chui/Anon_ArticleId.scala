@@ -20,9 +20,9 @@ object Anon_ArticleId {
     results: Int | Double = null
   ): Anon_ArticleId = {
     val __obj = js.Dynamic.literal()
-    if (articleId != null) __obj.updateDynamic("articleId")(articleId)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (articleId != null) __obj.updateDynamic("articleId")(articleId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ArticleId]
   }

@@ -16,8 +16,8 @@ object Anon_ActionClear {
   @scala.inline
   def apply(action: clear | input, lastSearchTerm: String = null, originalEvent: js.Any = null): Anon_ActionClear = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
-    if (lastSearchTerm != null) __obj.updateDynamic("lastSearchTerm")(lastSearchTerm)
-    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    if (lastSearchTerm != null) __obj.updateDynamic("lastSearchTerm")(lastSearchTerm.asInstanceOf[js.Any])
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ActionClear]
   }
 }

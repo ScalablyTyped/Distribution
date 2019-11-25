@@ -23,8 +23,8 @@ trait _bool extends js.Object {
 object _bool {
   @scala.inline
   def apply(t: Double, `true`: Double): _bool = {
-    val __obj = js.Dynamic.literal(t = t)
-    __obj.updateDynamic("true")(`true`)
+    val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any])
+    __obj.updateDynamic("true")(`true`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_bool]
   }
 }

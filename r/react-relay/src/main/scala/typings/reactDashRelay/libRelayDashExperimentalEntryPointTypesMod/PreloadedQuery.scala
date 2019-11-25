@@ -15,7 +15,7 @@ trait PreloadedQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions]
   val fetchPolicy: PreloadFetchPolicy
   val name: String
   val source: js.UndefOr[Observable[GraphQLResponse] | Null] = js.undefined
-  val variables: /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any
+  val variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any
 }
 
 object PreloadedQuery {
@@ -24,15 +24,15 @@ object PreloadedQuery {
     environment: Environment,
     fetchPolicy: PreloadFetchPolicy,
     name: String,
-    variables: /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any,
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any,
     environmentProviderOptions: TEnvironmentProviderOptions = null,
     fetchKey: String | Double = null,
     source: Observable[GraphQLResponse] = null
   ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = {
-    val __obj = js.Dynamic.literal(environment = environment, fetchPolicy = fetchPolicy, name = name, variables = variables)
+    val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], fetchPolicy = fetchPolicy.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
     if (environmentProviderOptions != null) __obj.updateDynamic("environmentProviderOptions")(environmentProviderOptions.asInstanceOf[js.Any])
     if (fetchKey != null) __obj.updateDynamic("fetchKey")(fetchKey.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreloadedQuery[TQuery, TEnvironmentProviderOptions]]
   }
 }

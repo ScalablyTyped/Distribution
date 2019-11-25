@@ -16,7 +16,7 @@ object GoogleActionsV2TransactionRequirementsCheckResult {
   @scala.inline
   def apply(resultType: GoogleActionsV2TransactionRequirementsCheckResultResultType = null): GoogleActionsV2TransactionRequirementsCheckResult = {
     val __obj = js.Dynamic.literal()
-    if (resultType != null) __obj.updateDynamic("resultType")(resultType)
+    if (resultType != null) __obj.updateDynamic("resultType")(resultType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2TransactionRequirementsCheckResult]
   }
 }

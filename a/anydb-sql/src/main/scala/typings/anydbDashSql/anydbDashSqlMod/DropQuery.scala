@@ -1,6 +1,5 @@
 package typings.anydbDashSql.anydbDashSqlMod
 
-import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,12 +11,12 @@ trait DropQuery extends Executable[Unit] {
 object DropQuery {
   @scala.inline
   def apply(
-    all: () => ^[js.Array[Unit]],
-    allWithin: DatabaseConnection => ^[js.Array[Unit]],
-    exec: () => ^[Unit],
-    execWithin: DatabaseConnection => ^[Unit],
-    get: () => ^[Unit],
-    getWithin: DatabaseConnection => ^[Unit],
+    all: () => typings.bluebird.bluebirdMod.^[js.Array[Unit]],
+    allWithin: DatabaseConnection => typings.bluebird.bluebirdMod.^[js.Array[Unit]],
+    exec: () => typings.bluebird.bluebirdMod.^[Unit],
+    execWithin: DatabaseConnection => typings.bluebird.bluebirdMod.^[Unit],
+    get: () => typings.bluebird.bluebirdMod.^[Unit],
+    getWithin: DatabaseConnection => typings.bluebird.bluebirdMod.^[Unit],
     ifExists: () => Executable[Unit],
     toQuery: () => QueryLike
   ): DropQuery = {

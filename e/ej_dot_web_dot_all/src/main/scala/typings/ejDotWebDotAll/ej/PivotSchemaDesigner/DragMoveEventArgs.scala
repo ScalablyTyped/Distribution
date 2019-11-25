@@ -28,10 +28,10 @@ object DragMoveEventArgs {
     model: js.Any = null
   ): DragMoveEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (dragTarget != null) __obj.updateDynamic("dragTarget")(dragTarget)
-    if (draggedElementData != null) __obj.updateDynamic("draggedElementData")(draggedElementData)
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (dragTarget != null) __obj.updateDynamic("dragTarget")(dragTarget.asInstanceOf[js.Any])
+    if (draggedElementData != null) __obj.updateDynamic("draggedElementData")(draggedElementData.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragMoveEventArgs]
   }
 }

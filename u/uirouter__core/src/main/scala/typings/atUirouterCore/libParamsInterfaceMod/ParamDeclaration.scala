@@ -306,15 +306,15 @@ object ParamDeclaration {
     value: js.Any = null
   ): ParamDeclaration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(array)) __obj.updateDynamic("array")(array)
-    if (!js.isUndefined(dynamic)) __obj.updateDynamic("dynamic")(dynamic)
-    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
-    if (!js.isUndefined(isOptional)) __obj.updateDynamic("isOptional")(isOptional)
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
-    if (replace != null) __obj.updateDynamic("replace")(replace)
+    if (!js.isUndefined(array)) __obj.updateDynamic("array")(array.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamic)) __obj.updateDynamic("dynamic")(dynamic.asInstanceOf[js.Any])
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOptional)) __obj.updateDynamic("isOptional")(isOptional.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (replace != null) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
     if (squash != null) __obj.updateDynamic("squash")(squash.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamDeclaration]
   }
 }

@@ -20,7 +20,7 @@ object ReminderSettings {
   def apply(alertBefore: Int | Double = null, enable: js.UndefOr[Boolean] = js.undefined): ReminderSettings = {
     val __obj = js.Dynamic.literal()
     if (alertBefore != null) __obj.updateDynamic("alertBefore")(alertBefore.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReminderSettings]
   }
 }

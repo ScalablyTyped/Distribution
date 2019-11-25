@@ -15,8 +15,8 @@ object Anon_Apnsdevicetoken {
   @scala.inline
   def apply(apns_device_token: String = null, apns_environment: String = null): Anon_Apnsdevicetoken = {
     val __obj = js.Dynamic.literal()
-    if (apns_device_token != null) __obj.updateDynamic("apns_device_token")(apns_device_token)
-    if (apns_environment != null) __obj.updateDynamic("apns_environment")(apns_environment)
+    if (apns_device_token != null) __obj.updateDynamic("apns_device_token")(apns_device_token.asInstanceOf[js.Any])
+    if (apns_environment != null) __obj.updateDynamic("apns_environment")(apns_environment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Apnsdevicetoken]
   }
 }

@@ -1,6 +1,6 @@
 package typings.chromeDashApps.chrome.app
 
-import typings.chromeDashApps.chromeDashAppsStrings.none
+import typings.chromeDashApps.chromeDashAppsStrings.none_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,15 +19,15 @@ trait FrameOptions extends js.Object {
     * For none, the -webkit-app-region CSS property can be used to apply draggability to the app's window.
     * -webkit-app-region: drag can be used to mark regions draggable. no-drag can be used to disable this style on nested elements.
     */
-  var `type`: none
+  var `type`: none_
 }
 
 object FrameOptions {
   @scala.inline
-  def apply(`type`: none, alphaEnabled: js.UndefOr[Boolean] = js.undefined): FrameOptions = {
+  def apply(`type`: none_, alphaEnabled: js.UndefOr[Boolean] = js.undefined): FrameOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(alphaEnabled)) __obj.updateDynamic("alphaEnabled")(alphaEnabled)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(alphaEnabled)) __obj.updateDynamic("alphaEnabled")(alphaEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameOptions]
   }
 }

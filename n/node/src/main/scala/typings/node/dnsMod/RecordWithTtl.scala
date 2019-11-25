@@ -12,7 +12,7 @@ trait RecordWithTtl extends js.Object {
 object RecordWithTtl {
   @scala.inline
   def apply(address: java.lang.String, ttl: Double): RecordWithTtl = {
-    val __obj = js.Dynamic.literal(address = address, ttl = ttl)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RecordWithTtl]
   }

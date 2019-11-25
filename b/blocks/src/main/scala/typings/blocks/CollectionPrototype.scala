@@ -14,8 +14,8 @@ object CollectionPrototype {
   @scala.inline
   def apply(StringDictionary: /* propertyName */ StringDictionary[js.Any] = null, options: Anon_Create = null): CollectionPrototype = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionPrototype]
   }
 }

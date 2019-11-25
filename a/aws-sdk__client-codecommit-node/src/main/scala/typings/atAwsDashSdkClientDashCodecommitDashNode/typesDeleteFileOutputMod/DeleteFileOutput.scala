@@ -33,7 +33,7 @@ trait DeleteFileOutput extends OutputTypesUnion {
 object DeleteFileOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, blobId: String, commitId: String, filePath: String, treeId: String): DeleteFileOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, blobId = blobId, commitId = commitId, filePath = filePath, treeId = treeId)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], blobId = blobId.asInstanceOf[js.Any], commitId = commitId.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], treeId = treeId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteFileOutput]
   }

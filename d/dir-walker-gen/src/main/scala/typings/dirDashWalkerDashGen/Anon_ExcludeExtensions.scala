@@ -46,12 +46,12 @@ object Anon_ExcludeExtensions {
     includeExtensions: js.Array[String] = null,
     silent: js.UndefOr[Boolean] = js.undefined
   ): Anon_ExcludeExtensions = {
-    val __obj = js.Dynamic.literal(folders = folders)
-    if (excludeExtensions != null) __obj.updateDynamic("excludeExtensions")(excludeExtensions)
-    if (excludeFolders != null) __obj.updateDynamic("excludeFolders")(excludeFolders)
-    if (!js.isUndefined(ignoreDotDir)) __obj.updateDynamic("ignoreDotDir")(ignoreDotDir)
-    if (includeExtensions != null) __obj.updateDynamic("includeExtensions")(includeExtensions)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    val __obj = js.Dynamic.literal(folders = folders.asInstanceOf[js.Any])
+    if (excludeExtensions != null) __obj.updateDynamic("excludeExtensions")(excludeExtensions.asInstanceOf[js.Any])
+    if (excludeFolders != null) __obj.updateDynamic("excludeFolders")(excludeFolders.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreDotDir)) __obj.updateDynamic("ignoreDotDir")(ignoreDotDir.asInstanceOf[js.Any])
+    if (includeExtensions != null) __obj.updateDynamic("includeExtensions")(includeExtensions.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ExcludeExtensions]
   }
 }

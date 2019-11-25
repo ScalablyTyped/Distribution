@@ -46,8 +46,8 @@ object DeprecatablePropTypes {
     shape: ValidationMap[_] => Requireable[_] with Deprecatable[_],
     string: Requireable[_] with Deprecatable[_]
   ): DeprecatablePropTypes = {
-    val __obj = js.Dynamic.literal(any = any, array = array, arrayOf = js.Any.fromFunction1(arrayOf), bool = bool, element = element, func = func, instanceOf = js.Any.fromFunction1(instanceOf), node = node, number = number, objectOf = js.Any.fromFunction1(objectOf), oneOf = js.Any.fromFunction1(oneOf), oneOfType = js.Any.fromFunction1(oneOfType), shape = js.Any.fromFunction1(shape), string = string)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(any = any.asInstanceOf[js.Any], array = array.asInstanceOf[js.Any], arrayOf = js.Any.fromFunction1(arrayOf), bool = bool.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], func = func.asInstanceOf[js.Any], instanceOf = js.Any.fromFunction1(instanceOf), node = node.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], objectOf = js.Any.fromFunction1(objectOf), oneOf = js.Any.fromFunction1(oneOf), oneOfType = js.Any.fromFunction1(oneOfType), shape = js.Any.fromFunction1(shape), string = string.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeprecatablePropTypes]
   }
 }

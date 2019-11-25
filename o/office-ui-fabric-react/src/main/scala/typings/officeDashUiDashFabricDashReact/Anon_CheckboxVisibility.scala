@@ -29,7 +29,7 @@ object Anon_CheckboxVisibility {
     selectionMode: SelectionMode,
     useFastIcons: Boolean
   ): Anon_CheckboxVisibility = {
-    val __obj = js.Dynamic.literal(checkboxVisibility = checkboxVisibility, compact = compact, constrainMode = constrainMode, isHeaderVisible = isHeaderVisible, layoutMode = layoutMode, selectionMode = selectionMode, useFastIcons = useFastIcons)
+    val __obj = js.Dynamic.literal(checkboxVisibility = checkboxVisibility.asInstanceOf[js.Any], compact = compact.asInstanceOf[js.Any], constrainMode = constrainMode.asInstanceOf[js.Any], isHeaderVisible = isHeaderVisible.asInstanceOf[js.Any], layoutMode = layoutMode.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], useFastIcons = useFastIcons.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CheckboxVisibility]
   }

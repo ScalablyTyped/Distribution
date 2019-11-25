@@ -36,13 +36,13 @@ object Activity {
     ownerDomain: String = null
   ): Activity = {
     val __obj = js.Dynamic.literal()
-    if (actor != null) __obj.updateDynamic("actor")(actor)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (ownerDomain != null) __obj.updateDynamic("ownerDomain")(ownerDomain)
+    if (actor != null) __obj.updateDynamic("actor")(actor.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (ownerDomain != null) __obj.updateDynamic("ownerDomain")(ownerDomain.asInstanceOf[js.Any])
     __obj.asInstanceOf[Activity]
   }
 }

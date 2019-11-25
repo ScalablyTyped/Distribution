@@ -17,9 +17,9 @@ object Anon_ColumnType {
   @scala.inline
   def apply(columnType: String = null, dataType: String = null, name: String = null): Anon_ColumnType = {
     val __obj = js.Dynamic.literal()
-    if (columnType != null) __obj.updateDynamic("columnType")(columnType)
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (columnType != null) __obj.updateDynamic("columnType")(columnType.asInstanceOf[js.Any])
+    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColumnType]
   }
 }

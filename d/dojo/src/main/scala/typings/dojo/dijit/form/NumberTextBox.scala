@@ -1,9 +1,6 @@
 package typings.dojo.dijit.form
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_IsFocused
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dojoStrings.editOptions
 import typings.dojo.dojoStrings.value
 import typings.std.HTMLElement
@@ -60,9 +57,15 @@ class NumberTextBox () extends RangeBoundTextBox {
   @JSName("set")
   def set_value(property: value, value: String): Unit = js.native
   @JSName("watch")
-  def watch_editOptions(property: editOptions, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_value(property: value, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_editOptions(
+    property: editOptions,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 
 @JSGlobal("dijit.form.NumberTextBox")
@@ -91,12 +94,6 @@ object NumberTextBox extends js.Object {
       * 
       */
     var editOptions: js.Object = js.native
-    /**
-      * 
-      * @param isFocused             
-      */
-    @JSName("isValid")
-    var isValid_Original: Fn_IsFocused = js.native
     /**
       * The value of this NumberTextBox as a Javascript Number (i.e., not a String).
       * If the displayed value is blank, the value is NaN, and if the user types in

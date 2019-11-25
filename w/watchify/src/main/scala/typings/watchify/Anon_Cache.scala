@@ -12,7 +12,7 @@ trait Anon_Cache extends js.Object {
 object Anon_Cache {
   @scala.inline
   def apply(cache: js.Any, packageCache: js.Any): Anon_Cache = {
-    val __obj = js.Dynamic.literal(cache = cache, packageCache = packageCache)
+    val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], packageCache = packageCache.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Cache]
   }

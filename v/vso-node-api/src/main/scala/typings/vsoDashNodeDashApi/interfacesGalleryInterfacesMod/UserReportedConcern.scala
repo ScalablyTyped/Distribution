@@ -37,7 +37,7 @@ object UserReportedConcern {
     submittedDate: Date,
     userId: String
   ): UserReportedConcern = {
-    val __obj = js.Dynamic.literal(category = category, concernText = concernText, reviewId = reviewId, submittedDate = submittedDate, userId = userId)
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], concernText = concernText.asInstanceOf[js.Any], reviewId = reviewId.asInstanceOf[js.Any], submittedDate = submittedDate.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserReportedConcern]
   }

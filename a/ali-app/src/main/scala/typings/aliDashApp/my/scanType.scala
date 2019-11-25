@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait scanType extends js.Object
 
+object scanType {
+  @scala.inline
+  def bar: typings.aliDashApp.aliDashAppStrings.bar = this.cast("bar")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def qr: typings.aliDashApp.aliDashAppStrings.qr = this.cast("qr")
+}
+

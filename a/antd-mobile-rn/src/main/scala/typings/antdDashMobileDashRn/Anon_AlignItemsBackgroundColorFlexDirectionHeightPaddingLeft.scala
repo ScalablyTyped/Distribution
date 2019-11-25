@@ -23,7 +23,7 @@ object Anon_AlignItemsBackgroundColorFlexDirectionHeightPaddingLeft {
     paddingLeft: Double,
     paddingRight: Double
   ): Anon_AlignItemsBackgroundColorFlexDirectionHeightPaddingLeft = {
-    val __obj = js.Dynamic.literal(alignItems = alignItems, backgroundColor = backgroundColor, flexDirection = flexDirection, height = height, paddingLeft = paddingLeft, paddingRight = paddingRight)
+    val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], flexDirection = flexDirection.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], paddingLeft = paddingLeft.asInstanceOf[js.Any], paddingRight = paddingRight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AlignItemsBackgroundColorFlexDirectionHeightPaddingLeft]
   }

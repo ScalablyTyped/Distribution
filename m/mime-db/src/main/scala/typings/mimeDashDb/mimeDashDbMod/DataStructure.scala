@@ -24,10 +24,10 @@ object DataStructure {
     source: String = null
   ): DataStructure = {
     val __obj = js.Dynamic.literal()
-    if (charset != null) __obj.updateDynamic("charset")(charset)
-    if (!js.isUndefined(compressible)) __obj.updateDynamic("compressible")(compressible)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
+    if (!js.isUndefined(compressible)) __obj.updateDynamic("compressible")(compressible.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataStructure]
   }
 }

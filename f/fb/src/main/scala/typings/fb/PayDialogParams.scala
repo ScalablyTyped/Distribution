@@ -31,13 +31,13 @@ object PayDialogParams {
     request_id: String = null,
     test_currency: String = null
   ): PayDialogParams = {
-    val __obj = js.Dynamic.literal(action = action, method = method, product = product)
-    if (pricepoint_id != null) __obj.updateDynamic("pricepoint_id")(pricepoint_id)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any])
+    if (pricepoint_id != null) __obj.updateDynamic("pricepoint_id")(pricepoint_id.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     if (quantity_max != null) __obj.updateDynamic("quantity_max")(quantity_max.asInstanceOf[js.Any])
     if (quantity_min != null) __obj.updateDynamic("quantity_min")(quantity_min.asInstanceOf[js.Any])
-    if (request_id != null) __obj.updateDynamic("request_id")(request_id)
-    if (test_currency != null) __obj.updateDynamic("test_currency")(test_currency)
+    if (request_id != null) __obj.updateDynamic("request_id")(request_id.asInstanceOf[js.Any])
+    if (test_currency != null) __obj.updateDynamic("test_currency")(test_currency.asInstanceOf[js.Any])
     __obj.asInstanceOf[PayDialogParams]
   }
 }

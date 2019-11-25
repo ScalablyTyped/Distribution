@@ -16,7 +16,7 @@ trait CompositionParameterSegment extends js.Object {
 object CompositionParameterSegment {
   @scala.inline
   def apply(end: Double, start: Double, style: String): CompositionParameterSegment = {
-    val __obj = js.Dynamic.literal(end = end, start = start, style = style)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CompositionParameterSegment]
   }

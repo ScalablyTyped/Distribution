@@ -21,9 +21,9 @@ object ChecksCreateResponseOutput {
     annotations_count: Int | Double = null,
     annotations_url: String = null
   ): ChecksCreateResponseOutput = {
-    val __obj = js.Dynamic.literal(summary = summary, text = text, title = title)
+    val __obj = js.Dynamic.literal(summary = summary.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     if (annotations_count != null) __obj.updateDynamic("annotations_count")(annotations_count.asInstanceOf[js.Any])
-    if (annotations_url != null) __obj.updateDynamic("annotations_url")(annotations_url)
+    if (annotations_url != null) __obj.updateDynamic("annotations_url")(annotations_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChecksCreateResponseOutput]
   }
 }

@@ -14,8 +14,8 @@ object Anon_Editor {
   @scala.inline
   def apply(StringDictionary: /* str */ StringDictionary[js.Any] = null, editor: js.Any = null): Anon_Editor = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (editor != null) __obj.updateDynamic("editor")(editor)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Editor]
   }
 }

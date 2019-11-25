@@ -22,8 +22,8 @@ object AttachmentParams {
     knownLength: Int | Double = null
   ): AttachmentParams = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (knownLength != null) __obj.updateDynamic("knownLength")(knownLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentParams]
   }

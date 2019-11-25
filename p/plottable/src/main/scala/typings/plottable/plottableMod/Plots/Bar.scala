@@ -1,6 +1,5 @@
 package typings.plottable.plottableMod.Plots
 
-import typings.plottable.buildSrcPlotsBarPlotMod.BarOrientation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation._
   */
 class Bar[X, Y] ()
   extends typings.plottable.buildSrcPlotsMod.Bar[X, Y] {
-  def this(orientation: BarOrientation) = this()
+  def this(orientation: typings.plottable.buildSrcPlotsBarPlotMod.BarOrientation) = this()
 }
 
 /* static members */

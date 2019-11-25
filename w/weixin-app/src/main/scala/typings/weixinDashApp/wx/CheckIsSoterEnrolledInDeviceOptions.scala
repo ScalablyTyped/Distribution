@@ -21,7 +21,7 @@ object CheckIsSoterEnrolledInDeviceOptions {
     fail: js.Any => Unit = null,
     success: /* res */ Anon_ErrMsgIsEnrolled => Unit = null
   ): CheckIsSoterEnrolledInDeviceOptions = {
-    val __obj = js.Dynamic.literal(checkAuthMode = checkAuthMode)
+    val __obj = js.Dynamic.literal(checkAuthMode = checkAuthMode.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

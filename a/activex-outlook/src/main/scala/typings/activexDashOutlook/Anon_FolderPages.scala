@@ -14,7 +14,7 @@ trait Anon_FolderPages extends js.Object {
 object Anon_FolderPages {
   @scala.inline
   def apply(Folder: Folder, Pages: PropertyPages): Anon_FolderPages = {
-    val __obj = js.Dynamic.literal(Folder = Folder, Pages = Pages)
+    val __obj = js.Dynamic.literal(Folder = Folder.asInstanceOf[js.Any], Pages = Pages.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FolderPages]
   }

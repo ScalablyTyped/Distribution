@@ -15,9 +15,9 @@ trait ParameterMetadata extends js.Object {
 object ParameterMetadata {
   @scala.inline
   def apply(index: Double, injectRoot: Boolean, `type`: PARAMETER_TYPE, parameterName: String = null): ParameterMetadata = {
-    val __obj = js.Dynamic.literal(index = index, injectRoot = injectRoot)
-    __obj.updateDynamic("type")(`type`)
-    if (parameterName != null) __obj.updateDynamic("parameterName")(parameterName)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], injectRoot = injectRoot.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (parameterName != null) __obj.updateDynamic("parameterName")(parameterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterMetadata]
   }
 }

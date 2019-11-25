@@ -24,9 +24,9 @@ trait Anon_Date extends js.Object {
 object Anon_Date {
   @scala.inline
   def apply(date: Double, ip: String = null, user_agent: String = null): Anon_Date = {
-    val __obj = js.Dynamic.literal(date = date)
-    if (ip != null) __obj.updateDynamic("ip")(ip)
-    if (user_agent != null) __obj.updateDynamic("user_agent")(user_agent)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
+    if (ip != null) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
+    if (user_agent != null) __obj.updateDynamic("user_agent")(user_agent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Date]
   }
 }

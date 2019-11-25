@@ -13,7 +13,7 @@ trait ExcelBorder extends js.Object {
 object ExcelBorder {
   @scala.inline
   def apply(color: String, lineStyle: String, weight: Double): ExcelBorder = {
-    val __obj = js.Dynamic.literal(color = color, lineStyle = lineStyle, weight = weight)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], lineStyle = lineStyle.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExcelBorder]
   }

@@ -36,14 +36,14 @@ object PeerChannelDiagnostics {
     roundtripLatencyMillis: AggregateStats = null
   ): PeerChannelDiagnostics = {
     val __obj = js.Dynamic.literal()
-    if (bytesReceived != null) __obj.updateDynamic("bytesReceived")(bytesReceived)
-    if (bytesSent != null) __obj.updateDynamic("bytesSent")(bytesSent)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (bytesReceived != null) __obj.updateDynamic("bytesReceived")(bytesReceived.asInstanceOf[js.Any])
+    if (bytesSent != null) __obj.updateDynamic("bytesSent")(bytesSent.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (numMessagesLost != null) __obj.updateDynamic("numMessagesLost")(numMessagesLost.asInstanceOf[js.Any])
     if (numMessagesReceived != null) __obj.updateDynamic("numMessagesReceived")(numMessagesReceived.asInstanceOf[js.Any])
     if (numMessagesSent != null) __obj.updateDynamic("numMessagesSent")(numMessagesSent.asInstanceOf[js.Any])
     if (numSendFailures != null) __obj.updateDynamic("numSendFailures")(numSendFailures.asInstanceOf[js.Any])
-    if (roundtripLatencyMillis != null) __obj.updateDynamic("roundtripLatencyMillis")(roundtripLatencyMillis)
+    if (roundtripLatencyMillis != null) __obj.updateDynamic("roundtripLatencyMillis")(roundtripLatencyMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeerChannelDiagnostics]
   }
 }

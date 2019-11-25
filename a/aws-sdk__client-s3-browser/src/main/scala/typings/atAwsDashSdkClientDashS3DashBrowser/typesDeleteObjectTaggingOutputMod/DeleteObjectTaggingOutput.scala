@@ -19,8 +19,8 @@ trait DeleteObjectTaggingOutput
 object DeleteObjectTaggingOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, VersionId: String = null): DeleteObjectTaggingOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteObjectTaggingOutput]
   }
 }

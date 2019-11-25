@@ -15,7 +15,7 @@ object SeriesAreaDataDragDropGuideBoxOptions {
   @scala.inline
   def apply(default: SeriesAreaDataDragDropGuideBoxDefaultOptions = null): SeriesAreaDataDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesAreaDataDragDropGuideBoxOptions]
   }
 }

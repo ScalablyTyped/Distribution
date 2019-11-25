@@ -24,12 +24,12 @@ object OpenGraphArticle {
     tags: js.Array[String] = null
   ): OpenGraphArticle = {
     val __obj = js.Dynamic.literal()
-    if (authors != null) __obj.updateDynamic("authors")(authors)
-    if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime)
-    if (modifiedTime != null) __obj.updateDynamic("modifiedTime")(modifiedTime)
-    if (publishedTime != null) __obj.updateDynamic("publishedTime")(publishedTime)
-    if (section != null) __obj.updateDynamic("section")(section)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (authors != null) __obj.updateDynamic("authors")(authors.asInstanceOf[js.Any])
+    if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime.asInstanceOf[js.Any])
+    if (modifiedTime != null) __obj.updateDynamic("modifiedTime")(modifiedTime.asInstanceOf[js.Any])
+    if (publishedTime != null) __obj.updateDynamic("publishedTime")(publishedTime.asInstanceOf[js.Any])
+    if (section != null) __obj.updateDynamic("section")(section.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenGraphArticle]
   }
 }

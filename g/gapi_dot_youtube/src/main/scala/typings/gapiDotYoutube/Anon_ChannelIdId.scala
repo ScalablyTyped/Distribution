@@ -41,11 +41,11 @@ object Anon_ChannelIdId {
     maxResults: Int | Double = null,
     mine: js.UndefOr[Boolean] = js.undefined
   ): Anon_ChannelIdId = {
-    val __obj = js.Dynamic.literal(pagetoken = pagetoken, part = part)
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(pagetoken = pagetoken.asInstanceOf[js.Any], part = part.asInstanceOf[js.Any])
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (!js.isUndefined(mine)) __obj.updateDynamic("mine")(mine)
+    if (!js.isUndefined(mine)) __obj.updateDynamic("mine")(mine.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChannelIdId]
   }
 }

@@ -18,8 +18,8 @@ object DragAndZoomToolOptions {
     zoomType: Int | Double = null
   ): DragAndZoomToolOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose)
-    if (followText != null) __obj.updateDynamic("followText")(followText)
+    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.asInstanceOf[js.Any])
+    if (followText != null) __obj.updateDynamic("followText")(followText.asInstanceOf[js.Any])
     if (zoomType != null) __obj.updateDynamic("zoomType")(zoomType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragAndZoomToolOptions]
   }

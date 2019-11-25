@@ -11,7 +11,7 @@ trait Anon_TransformAnonTranslateXTranslateY extends js.Object {
 object Anon_TransformAnonTranslateXTranslateY {
   @scala.inline
   def apply(transform: js.Array[Anon_TranslateXTranslateY | Anon_TranslateXTranslateYAnimatedInterpolation]): Anon_TransformAnonTranslateXTranslateY = {
-    val __obj = js.Dynamic.literal(transform = transform)
+    val __obj = js.Dynamic.literal(transform = transform.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_TransformAnonTranslateXTranslateY]
   }

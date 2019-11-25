@@ -19,7 +19,7 @@ object Listeners {
     newListener: js.Array[Func],
     removeListener: js.Array[Func]
   ): Listeners = {
-    val __obj = js.Dynamic.literal(error = error, interrupt = interrupt, newListener = newListener, removeListener = removeListener)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], interrupt = interrupt.asInstanceOf[js.Any], newListener = newListener.asInstanceOf[js.Any], removeListener = removeListener.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Listeners]
   }

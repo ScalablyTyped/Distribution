@@ -19,9 +19,9 @@ object NestedCSSProperties {
   @scala.inline
   def apply($debugName: String = null, $nest: NestedCSSSelectors = null, CSSProperties: CSSProperties = null): NestedCSSProperties = {
     val __obj = js.Dynamic.literal()
-    if ($debugName != null) __obj.updateDynamic("$debugName")($debugName)
-    if ($nest != null) __obj.updateDynamic("$nest")($nest)
-    js.Dynamic.global.Object.assign(__obj, CSSProperties)
+    if ($debugName != null) __obj.updateDynamic("$debugName")($debugName.asInstanceOf[js.Any])
+    if ($nest != null) __obj.updateDynamic("$nest")($nest.asInstanceOf[js.Any])
+    if (CSSProperties != null) js.Dynamic.global.Object.assign(__obj, CSSProperties)
     __obj.asInstanceOf[NestedCSSProperties]
   }
 }

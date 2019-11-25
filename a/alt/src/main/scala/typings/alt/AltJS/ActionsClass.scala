@@ -18,7 +18,7 @@ object ActionsClass {
     generateActions: /* repeated */ String => Unit = null
   ): ActionsClass = {
     val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch))
-    if (actions != null) __obj.updateDynamic("actions")(actions)
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (generateActions != null) __obj.updateDynamic("generateActions")(js.Any.fromFunction1(generateActions))
     __obj.asInstanceOf[ActionsClass]
   }

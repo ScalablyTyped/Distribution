@@ -12,8 +12,8 @@ trait FormattedNumberPart extends js.Object {
 object FormattedNumberPart {
   @scala.inline
   def apply(`type`: FormattedNumberPartType, value: String): FormattedNumberPart = {
-    val __obj = js.Dynamic.literal(value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormattedNumberPart]
   }
 }

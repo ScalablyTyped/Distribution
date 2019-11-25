@@ -21,8 +21,8 @@ trait ProcessInfo extends js.Object {
 object ProcessInfo {
   @scala.inline
   def apply(name: String, pid: Double, ppid: Double, commandLine: String = null, memory: Int | Double = null): ProcessInfo = {
-    val __obj = js.Dynamic.literal(name = name, pid = pid, ppid = ppid)
-    if (commandLine != null) __obj.updateDynamic("commandLine")(commandLine)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], ppid = ppid.asInstanceOf[js.Any])
+    if (commandLine != null) __obj.updateDynamic("commandLine")(commandLine.asInstanceOf[js.Any])
     if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessInfo]
   }

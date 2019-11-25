@@ -17,7 +17,7 @@ trait IBrowserExtJSCore extends js.Object {
 object IBrowserExtJSCore {
   @scala.inline
   def apply(coverageUnit: String, excludeCoverageUnits: RegExp, installLoaderInstrumentationHook: Boolean): IBrowserExtJSCore = {
-    val __obj = js.Dynamic.literal(coverageUnit = coverageUnit, excludeCoverageUnits = excludeCoverageUnits, installLoaderInstrumentationHook = installLoaderInstrumentationHook)
+    val __obj = js.Dynamic.literal(coverageUnit = coverageUnit.asInstanceOf[js.Any], excludeCoverageUnits = excludeCoverageUnits.asInstanceOf[js.Any], installLoaderInstrumentationHook = installLoaderInstrumentationHook.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IBrowserExtJSCore]
   }

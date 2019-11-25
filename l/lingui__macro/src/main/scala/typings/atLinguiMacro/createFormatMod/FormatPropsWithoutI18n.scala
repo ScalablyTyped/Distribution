@@ -21,8 +21,8 @@ object FormatPropsWithoutI18n {
     render: ReactNode = null
   ): FormatPropsWithoutI18n[V, FormatOptions] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatPropsWithoutI18n[V, FormatOptions]]

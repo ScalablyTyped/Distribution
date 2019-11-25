@@ -12,7 +12,7 @@ trait Anon_Count[TInstance] extends js.Object {
 object Anon_Count {
   @scala.inline
   def apply[TInstance](count: Double, rows: js.Array[TInstance]): Anon_Count[TInstance] = {
-    val __obj = js.Dynamic.literal(count = count, rows = rows)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Count[TInstance]]
   }

@@ -15,7 +15,7 @@ object Anon_MaxTimeMS {
   def apply(maxTimeMS: Int | Double = null, readPreference: ReadPreferenceOrMode = null): Anon_MaxTimeMS = {
     val __obj = js.Dynamic.literal()
     if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MaxTimeMS]
   }
 }

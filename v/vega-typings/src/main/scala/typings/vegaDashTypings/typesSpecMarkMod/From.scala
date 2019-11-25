@@ -12,7 +12,7 @@ object From {
   @scala.inline
   def apply(data: String = null): From = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[From]
   }
 }

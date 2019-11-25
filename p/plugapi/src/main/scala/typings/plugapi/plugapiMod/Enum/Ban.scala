@@ -16,7 +16,7 @@ trait Ban extends js.Object {
 object Ban {
   @scala.inline
   def apply(DAY: d, HOUR: h, PERMA: f): Ban = {
-    val __obj = js.Dynamic.literal(DAY = DAY, HOUR = HOUR, PERMA = PERMA)
+    val __obj = js.Dynamic.literal(DAY = DAY.asInstanceOf[js.Any], HOUR = HOUR.asInstanceOf[js.Any], PERMA = PERMA.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Ban]
   }

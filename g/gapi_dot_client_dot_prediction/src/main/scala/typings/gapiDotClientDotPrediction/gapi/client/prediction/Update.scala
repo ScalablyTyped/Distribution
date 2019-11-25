@@ -15,8 +15,8 @@ object Update {
   @scala.inline
   def apply(csvInstance: js.Array[_] = null, output: String = null): Update = {
     val __obj = js.Dynamic.literal()
-    if (csvInstance != null) __obj.updateDynamic("csvInstance")(csvInstance)
-    if (output != null) __obj.updateDynamic("output")(output)
+    if (csvInstance != null) __obj.updateDynamic("csvInstance")(csvInstance.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     __obj.asInstanceOf[Update]
   }
 }

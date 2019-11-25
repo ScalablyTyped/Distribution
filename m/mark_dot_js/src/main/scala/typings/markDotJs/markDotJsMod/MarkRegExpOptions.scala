@@ -47,18 +47,18 @@ object MarkRegExpOptions {
     noMatch: /* term */ String => Unit = null
   ): MarkRegExpOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(acrossElements)) __obj.updateDynamic("acrossElements")(acrossElements)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(acrossElements)) __obj.updateDynamic("acrossElements")(acrossElements.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (done != null) __obj.updateDynamic("done")(js.Any.fromFunction1(done))
     if (each != null) __obj.updateDynamic("each")(js.Any.fromFunction1(each))
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction4(filter))
-    if (!js.isUndefined(iframes)) __obj.updateDynamic("iframes")(iframes)
+    if (!js.isUndefined(iframes)) __obj.updateDynamic("iframes")(iframes.asInstanceOf[js.Any])
     if (iframesTimeout != null) __obj.updateDynamic("iframesTimeout")(iframesTimeout.asInstanceOf[js.Any])
     if (ignoreGroups != null) __obj.updateDynamic("ignoreGroups")(ignoreGroups.asInstanceOf[js.Any])
-    if (log != null) __obj.updateDynamic("log")(log)
+    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     if (noMatch != null) __obj.updateDynamic("noMatch")(js.Any.fromFunction1(noMatch))
     __obj.asInstanceOf[MarkRegExpOptions]
   }

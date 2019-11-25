@@ -29,7 +29,7 @@ trait BoundObjectReference extends js.Object {
 object BoundObjectReference {
   @scala.inline
   def apply(apiVersion: String, kind: String, name: String, uid: String): BoundObjectReference = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, name = name, uid = uid)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BoundObjectReference]
   }

@@ -20,10 +20,10 @@ object Anon_LeftIconColor {
     secondaryTextColor: String = null
   ): Anon_LeftIconColor = {
     val __obj = js.Dynamic.literal()
-    if (leftIconColor != null) __obj.updateDynamic("leftIconColor")(leftIconColor)
+    if (leftIconColor != null) __obj.updateDynamic("leftIconColor")(leftIconColor.asInstanceOf[js.Any])
     if (nestedLevelDepth != null) __obj.updateDynamic("nestedLevelDepth")(nestedLevelDepth.asInstanceOf[js.Any])
-    if (rightIconColor != null) __obj.updateDynamic("rightIconColor")(rightIconColor)
-    if (secondaryTextColor != null) __obj.updateDynamic("secondaryTextColor")(secondaryTextColor)
+    if (rightIconColor != null) __obj.updateDynamic("rightIconColor")(rightIconColor.asInstanceOf[js.Any])
+    if (secondaryTextColor != null) __obj.updateDynamic("secondaryTextColor")(secondaryTextColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LeftIconColor]
   }
 }

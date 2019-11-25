@@ -14,7 +14,7 @@ trait DeploymentGroupReference extends js.Object {
 object DeploymentGroupReference {
   @scala.inline
   def apply(id: Double, name: String, pool: TaskAgentPoolReference, project: ProjectReference): DeploymentGroupReference = {
-    val __obj = js.Dynamic.literal(id = id, name = name, pool = pool, project = project)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pool = pool.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeploymentGroupReference]
   }

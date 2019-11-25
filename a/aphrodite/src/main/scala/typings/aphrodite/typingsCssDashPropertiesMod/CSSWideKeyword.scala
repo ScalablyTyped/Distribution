@@ -14,3 +14,14 @@ import scala.scalajs.js.annotation._
 */
 trait CSSWideKeyword extends js.Object
 
+object CSSWideKeyword {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def inherit: typings.aphrodite.aphroditeStrings.inherit = this.cast("inherit")
+  @scala.inline
+  def initial: typings.aphrodite.aphroditeStrings.initial = this.cast("initial")
+  @scala.inline
+  def unset: typings.aphrodite.aphroditeStrings.unset = this.cast("unset")
+}
+

@@ -29,12 +29,12 @@ object CreateCollectionRequest {
     retention_secs: Int | Double = null,
     sources: js.Array[Source] = null
   ): CreateCollectionRequest = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (event_time_info != null) __obj.updateDynamic("event_time_info")(event_time_info)
-    if (field_mappings != null) __obj.updateDynamic("field_mappings")(field_mappings)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (event_time_info != null) __obj.updateDynamic("event_time_info")(event_time_info.asInstanceOf[js.Any])
+    if (field_mappings != null) __obj.updateDynamic("field_mappings")(field_mappings.asInstanceOf[js.Any])
     if (retention_secs != null) __obj.updateDynamic("retention_secs")(retention_secs.asInstanceOf[js.Any])
-    if (sources != null) __obj.updateDynamic("sources")(sources)
+    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCollectionRequest]
   }
 }

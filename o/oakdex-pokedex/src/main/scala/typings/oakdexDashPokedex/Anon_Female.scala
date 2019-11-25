@@ -12,7 +12,7 @@ trait Anon_Female extends js.Object {
 object Anon_Female {
   @scala.inline
   def apply(female: Double, male: Double): Anon_Female = {
-    val __obj = js.Dynamic.literal(female = female, male = male)
+    val __obj = js.Dynamic.literal(female = female.asInstanceOf[js.Any], male = male.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Female]
   }

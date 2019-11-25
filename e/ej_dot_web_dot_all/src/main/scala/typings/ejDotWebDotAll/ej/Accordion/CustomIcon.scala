@@ -17,8 +17,8 @@ object CustomIcon {
   @scala.inline
   def apply(header: String = null, selectedHeader: String = null): CustomIcon = {
     val __obj = js.Dynamic.literal()
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (selectedHeader != null) __obj.updateDynamic("selectedHeader")(selectedHeader)
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (selectedHeader != null) __obj.updateDynamic("selectedHeader")(selectedHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomIcon]
   }
 }

@@ -114,7 +114,6 @@ object ITable {
     afterCollapse: () => Unit = null,
     afterExpand: () => Unit = null,
     allowDeselect: js.UndefOr[Boolean] = js.undefined,
-    applyState: /* state */ js.UndefOr[js.Any] => Unit = null,
     columnLines: js.UndefOr[Boolean] = js.undefined,
     columns: js.Any = null,
     deferRowRender: js.UndefOr[Boolean] = js.undefined,
@@ -128,19 +127,16 @@ object ITable {
     features: js.Any = null,
     forceFit: js.UndefOr[Boolean] = js.undefined,
     getSelectionModel: () => IModel = null,
-    getState: () => _ = null,
     getStore: () => IStore = null,
     getView: () => ITable = null,
     hasView: js.UndefOr[Boolean] = js.undefined,
     hideHeaders: js.UndefOr[Boolean] = js.undefined,
     invalidateScroller: () => Unit = null,
-    layout: js.Any = null,
     lockedGridConfig: js.Any = null,
     lockedViewConfig: js.Any = null,
     multiSelect: js.UndefOr[Boolean] = js.undefined,
     normalGridConfig: js.Any = null,
     normalViewConfig: js.Any = null,
-    onDestroy: () => Unit = null,
     optimizedColumnMove: js.UndefOr[Boolean] = js.undefined,
     rowLines: js.UndefOr[Boolean] = js.undefined,
     scroll: js.Any = null,
@@ -160,54 +156,50 @@ object ITable {
     viewType: java.lang.String = null
   ): ITable = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IPanel)
+    if (IPanel != null) js.Dynamic.global.Object.assign(__obj, IPanel)
     if (afterCollapse != null) __obj.updateDynamic("afterCollapse")(js.Any.fromFunction0(afterCollapse))
     if (afterExpand != null) __obj.updateDynamic("afterExpand")(js.Any.fromFunction0(afterExpand))
-    if (!js.isUndefined(allowDeselect)) __obj.updateDynamic("allowDeselect")(allowDeselect)
-    if (applyState != null) __obj.updateDynamic("applyState")(js.Any.fromFunction1(applyState))
-    if (!js.isUndefined(columnLines)) __obj.updateDynamic("columnLines")(columnLines)
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (!js.isUndefined(deferRowRender)) __obj.updateDynamic("deferRowRender")(deferRowRender)
+    if (!js.isUndefined(allowDeselect)) __obj.updateDynamic("allowDeselect")(allowDeselect.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnLines)) __obj.updateDynamic("columnLines")(columnLines.asInstanceOf[js.Any])
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (!js.isUndefined(deferRowRender)) __obj.updateDynamic("deferRowRender")(deferRowRender.asInstanceOf[js.Any])
     if (determineScrollbars != null) __obj.updateDynamic("determineScrollbars")(js.Any.fromFunction0(determineScrollbars))
-    if (!js.isUndefined(disableSelection)) __obj.updateDynamic("disableSelection")(disableSelection)
-    if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText)
-    if (!js.isUndefined(enableColumnHide)) __obj.updateDynamic("enableColumnHide")(enableColumnHide)
-    if (!js.isUndefined(enableColumnMove)) __obj.updateDynamic("enableColumnMove")(enableColumnMove)
-    if (!js.isUndefined(enableColumnResize)) __obj.updateDynamic("enableColumnResize")(enableColumnResize)
-    if (!js.isUndefined(enableLocking)) __obj.updateDynamic("enableLocking")(enableLocking)
-    if (features != null) __obj.updateDynamic("features")(features)
-    if (!js.isUndefined(forceFit)) __obj.updateDynamic("forceFit")(forceFit)
+    if (!js.isUndefined(disableSelection)) __obj.updateDynamic("disableSelection")(disableSelection.asInstanceOf[js.Any])
+    if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableColumnHide)) __obj.updateDynamic("enableColumnHide")(enableColumnHide.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableColumnMove)) __obj.updateDynamic("enableColumnMove")(enableColumnMove.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableColumnResize)) __obj.updateDynamic("enableColumnResize")(enableColumnResize.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableLocking)) __obj.updateDynamic("enableLocking")(enableLocking.asInstanceOf[js.Any])
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceFit)) __obj.updateDynamic("forceFit")(forceFit.asInstanceOf[js.Any])
     if (getSelectionModel != null) __obj.updateDynamic("getSelectionModel")(js.Any.fromFunction0(getSelectionModel))
-    if (getState != null) __obj.updateDynamic("getState")(js.Any.fromFunction0(getState))
     if (getStore != null) __obj.updateDynamic("getStore")(js.Any.fromFunction0(getStore))
     if (getView != null) __obj.updateDynamic("getView")(js.Any.fromFunction0(getView))
-    if (!js.isUndefined(hasView)) __obj.updateDynamic("hasView")(hasView)
-    if (!js.isUndefined(hideHeaders)) __obj.updateDynamic("hideHeaders")(hideHeaders)
+    if (!js.isUndefined(hasView)) __obj.updateDynamic("hasView")(hasView.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideHeaders)) __obj.updateDynamic("hideHeaders")(hideHeaders.asInstanceOf[js.Any])
     if (invalidateScroller != null) __obj.updateDynamic("invalidateScroller")(js.Any.fromFunction0(invalidateScroller))
-    if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (lockedGridConfig != null) __obj.updateDynamic("lockedGridConfig")(lockedGridConfig)
-    if (lockedViewConfig != null) __obj.updateDynamic("lockedViewConfig")(lockedViewConfig)
-    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect)
-    if (normalGridConfig != null) __obj.updateDynamic("normalGridConfig")(normalGridConfig)
-    if (normalViewConfig != null) __obj.updateDynamic("normalViewConfig")(normalViewConfig)
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
-    if (!js.isUndefined(optimizedColumnMove)) __obj.updateDynamic("optimizedColumnMove")(optimizedColumnMove)
-    if (!js.isUndefined(rowLines)) __obj.updateDynamic("rowLines")(rowLines)
-    if (scroll != null) __obj.updateDynamic("scroll")(scroll)
+    if (lockedGridConfig != null) __obj.updateDynamic("lockedGridConfig")(lockedGridConfig.asInstanceOf[js.Any])
+    if (lockedViewConfig != null) __obj.updateDynamic("lockedViewConfig")(lockedViewConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect.asInstanceOf[js.Any])
+    if (normalGridConfig != null) __obj.updateDynamic("normalGridConfig")(normalGridConfig.asInstanceOf[js.Any])
+    if (normalViewConfig != null) __obj.updateDynamic("normalViewConfig")(normalViewConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimizedColumnMove)) __obj.updateDynamic("optimizedColumnMove")(optimizedColumnMove.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowLines)) __obj.updateDynamic("rowLines")(rowLines.asInstanceOf[js.Any])
+    if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
     if (scrollDelta != null) __obj.updateDynamic("scrollDelta")(scrollDelta.asInstanceOf[js.Any])
-    if (!js.isUndefined(sealedColumns)) __obj.updateDynamic("sealedColumns")(sealedColumns)
-    if (selModel != null) __obj.updateDynamic("selModel")(selModel)
-    if (selType != null) __obj.updateDynamic("selType")(selType)
-    if (!js.isUndefined(simpleSelect)) __obj.updateDynamic("simpleSelect")(simpleSelect)
-    if (!js.isUndefined(sortableColumns)) __obj.updateDynamic("sortableColumns")(sortableColumns)
-    if (store != null) __obj.updateDynamic("store")(store)
-    if (subGridXType != null) __obj.updateDynamic("subGridXType")(subGridXType)
-    if (!js.isUndefined(syncRowHeight)) __obj.updateDynamic("syncRowHeight")(syncRowHeight)
+    if (!js.isUndefined(sealedColumns)) __obj.updateDynamic("sealedColumns")(sealedColumns.asInstanceOf[js.Any])
+    if (selModel != null) __obj.updateDynamic("selModel")(selModel.asInstanceOf[js.Any])
+    if (selType != null) __obj.updateDynamic("selType")(selType.asInstanceOf[js.Any])
+    if (!js.isUndefined(simpleSelect)) __obj.updateDynamic("simpleSelect")(simpleSelect.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortableColumns)) __obj.updateDynamic("sortableColumns")(sortableColumns.asInstanceOf[js.Any])
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
+    if (subGridXType != null) __obj.updateDynamic("subGridXType")(subGridXType.asInstanceOf[js.Any])
+    if (!js.isUndefined(syncRowHeight)) __obj.updateDynamic("syncRowHeight")(syncRowHeight.asInstanceOf[js.Any])
     if (syncRowHeights != null) __obj.updateDynamic("syncRowHeights")(js.Any.fromFunction0(syncRowHeights))
-    if (verticalScroller != null) __obj.updateDynamic("verticalScroller")(verticalScroller)
-    if (view != null) __obj.updateDynamic("view")(view)
-    if (viewConfig != null) __obj.updateDynamic("viewConfig")(viewConfig)
-    if (viewType != null) __obj.updateDynamic("viewType")(viewType)
+    if (verticalScroller != null) __obj.updateDynamic("verticalScroller")(verticalScroller.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    if (viewConfig != null) __obj.updateDynamic("viewConfig")(viewConfig.asInstanceOf[js.Any])
+    if (viewType != null) __obj.updateDynamic("viewType")(viewType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITable]
   }
 }

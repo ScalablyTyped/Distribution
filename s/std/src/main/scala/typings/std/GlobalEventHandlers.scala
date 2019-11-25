@@ -6,13 +6,11 @@ import typings.std.stdStrings.animationend
 import typings.std.stdStrings.animationiteration
 import typings.std.stdStrings.animationstart
 import typings.std.stdStrings.auxclick
-import typings.std.stdStrings.blur
 import typings.std.stdStrings.cancel
 import typings.std.stdStrings.canplay
 import typings.std.stdStrings.canplaythrough
 import typings.std.stdStrings.change
 import typings.std.stdStrings.click
-import typings.std.stdStrings.close
 import typings.std.stdStrings.contextmenu
 import typings.std.stdStrings.cuechange
 import typings.std.stdStrings.dblclick
@@ -28,7 +26,6 @@ import typings.std.stdStrings.durationchange
 import typings.std.stdStrings.emptied
 import typings.std.stdStrings.ended
 import typings.std.stdStrings.error
-import typings.std.stdStrings.focus
 import typings.std.stdStrings.focusin
 import typings.std.stdStrings.focusout
 import typings.std.stdStrings.gotpointercapture
@@ -65,7 +62,6 @@ import typings.std.stdStrings.progress
 import typings.std.stdStrings.ratechange
 import typings.std.stdStrings.reset
 import typings.std.stdStrings.resize
-import typings.std.stdStrings.scroll
 import typings.std.stdStrings.securitypolicyviolation
 import typings.std.stdStrings.seeked
 import typings.std.stdStrings.seeking
@@ -461,16 +457,19 @@ trait GlobalEventHandlers extends js.Object {
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_blur(`type`: blur, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]): Unit = js.native
+  def addEventListener_blur(
+    `type`: typings.std.stdStrings.blur,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_blur(
-    `type`: blur,
+    `type`: typings.std.stdStrings.blur,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_blur(
-    `type`: blur,
+    `type`: typings.std.stdStrings.blur,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -545,16 +544,19 @@ trait GlobalEventHandlers extends js.Object {
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_close(`type`: close, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_close(
+    `type`: typings.std.stdStrings.close,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_close(
-    `type`: close,
+    `type`: typings.std.stdStrings.close,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_close(
-    `type`: close,
+    `type`: typings.std.stdStrings.close,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -769,16 +771,19 @@ trait GlobalEventHandlers extends js.Object {
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_focus(`type`: focus, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]): Unit = js.native
+  def addEventListener_focus(
+    `type`: typings.std.stdStrings.focus,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_focus(
-    `type`: focus,
+    `type`: typings.std.stdStrings.focus,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_focus(
-    `type`: focus,
+    `type`: typings.std.stdStrings.focus,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -1299,16 +1304,19 @@ trait GlobalEventHandlers extends js.Object {
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_scroll(`type`: scroll, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_scroll(
+    `type`: typings.std.stdStrings.scroll,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scroll(
-    `type`: scroll,
+    `type`: typings.std.stdStrings.scroll,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scroll(
-    `type`: scroll,
+    `type`: typings.std.stdStrings.scroll,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): Unit = js.native
@@ -1736,16 +1744,19 @@ trait GlobalEventHandlers extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_blur(`type`: blur, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]): Unit = js.native
+  def removeEventListener_blur(
+    `type`: typings.std.stdStrings.blur,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_blur(
-    `type`: blur,
+    `type`: typings.std.stdStrings.blur,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_blur(
-    `type`: blur,
+    `type`: typings.std.stdStrings.blur,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
     options: EventListenerOptions
   ): Unit = js.native
@@ -1820,16 +1831,19 @@ trait GlobalEventHandlers extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_close(`type`: close, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_close(
+    `type`: typings.std.stdStrings.close,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_close(
-    `type`: close,
+    `type`: typings.std.stdStrings.close,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_close(
-    `type`: close,
+    `type`: typings.std.stdStrings.close,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native
@@ -2044,16 +2058,19 @@ trait GlobalEventHandlers extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_focus(`type`: focus, listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]): Unit = js.native
+  def removeEventListener_focus(
+    `type`: typings.std.stdStrings.focus,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_focus(
-    `type`: focus,
+    `type`: typings.std.stdStrings.focus,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_focus(
-    `type`: focus,
+    `type`: typings.std.stdStrings.focus,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _],
     options: EventListenerOptions
   ): Unit = js.native
@@ -2574,16 +2591,19 @@ trait GlobalEventHandlers extends js.Object {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_scroll(`type`: scroll, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_scroll(
+    `type`: typings.std.stdStrings.scroll,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_scroll(
-    `type`: scroll,
+    `type`: typings.std.stdStrings.scroll,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_scroll(
-    `type`: scroll,
+    `type`: typings.std.stdStrings.scroll,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): Unit = js.native

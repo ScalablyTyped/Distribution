@@ -16,7 +16,7 @@ object BatchCreateAnnotationsResponse {
   @scala.inline
   def apply(entries: js.Array[Entry] = null): BatchCreateAnnotationsResponse = {
     val __obj = js.Dynamic.literal()
-    if (entries != null) __obj.updateDynamic("entries")(entries)
+    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchCreateAnnotationsResponse]
   }
 }

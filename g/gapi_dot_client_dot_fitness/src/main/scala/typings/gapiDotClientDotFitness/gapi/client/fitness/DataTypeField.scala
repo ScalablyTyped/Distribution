@@ -16,9 +16,9 @@ object DataTypeField {
   @scala.inline
   def apply(format: String = null, name: String = null, optional: js.UndefOr[Boolean] = js.undefined): DataTypeField = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTypeField]
   }
 }

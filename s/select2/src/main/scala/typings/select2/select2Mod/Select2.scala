@@ -36,7 +36,7 @@ object Select2 {
     results: js.Any,
     selection: js.Any
   ): Select2 = {
-    val __obj = js.Dynamic.literal($container = $container, $dropdown = $dropdown, $results = $results, $selection = $selection, dropdown = dropdown, id = id, options = options, results = results, selection = selection)
+    val __obj = js.Dynamic.literal($container = $container.asInstanceOf[js.Any], $dropdown = $dropdown.asInstanceOf[js.Any], $results = $results.asInstanceOf[js.Any], $selection = $selection.asInstanceOf[js.Any], dropdown = dropdown.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Select2]
   }

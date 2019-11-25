@@ -18,10 +18,10 @@ object OptionsBase {
   @scala.inline
   def apply(factory: Factory = null, options: js.Any = null, path: String = null, store: Store = null): OptionsBase = {
     val __obj = js.Dynamic.literal()
-    if (factory != null) __obj.updateDynamic("factory")(factory)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (store != null) __obj.updateDynamic("store")(store)
+    if (factory != null) __obj.updateDynamic("factory")(factory.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsBase]
   }
 }

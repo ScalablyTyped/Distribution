@@ -24,10 +24,10 @@ object AggregateExpression {
     distinct: js.UndefOr[Boolean] = js.undefined,
     separator: String = null
   ): AggregateExpression = {
-    val __obj = js.Dynamic.literal(aggregation = aggregation, expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct)
-    if (separator != null) __obj.updateDynamic("separator")(separator)
+    val __obj = js.Dynamic.literal(aggregation = aggregation.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregateExpression]
   }
 }

@@ -19,8 +19,8 @@ object ErrorLogEntry {
   @scala.inline
   def apply(errorDetails: js.Array[String] = null, url: String = null): ErrorLogEntry = {
     val __obj = js.Dynamic.literal()
-    if (errorDetails != null) __obj.updateDynamic("errorDetails")(errorDetails)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (errorDetails != null) __obj.updateDynamic("errorDetails")(errorDetails.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorLogEntry]
   }
 }

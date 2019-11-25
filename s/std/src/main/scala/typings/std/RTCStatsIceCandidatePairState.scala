@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait RTCStatsIceCandidatePairState extends js.Object
 
+object RTCStatsIceCandidatePairState {
+  @scala.inline
+  def cancelled: typings.std.stdStrings.cancelled = this.cast("cancelled")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def failed: typings.std.stdStrings.failed = this.cast("failed")
+  @scala.inline
+  def frozen: typings.std.stdStrings.frozen = this.cast("frozen")
+  @scala.inline
+  def inprogress: typings.std.stdStrings.inprogress = this.cast("inprogress")
+  @scala.inline
+  def succeeded: typings.std.stdStrings.succeeded = this.cast("succeeded")
+  @scala.inline
+  def waiting: typings.std.stdStrings.waiting = this.cast("waiting")
+}
+

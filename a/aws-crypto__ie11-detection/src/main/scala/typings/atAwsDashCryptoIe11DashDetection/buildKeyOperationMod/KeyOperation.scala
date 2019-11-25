@@ -16,7 +16,7 @@ object KeyOperation {
   @scala.inline
   def apply(oncomplete: Event => Unit, onerror: Event => Unit, result: Key = null): KeyOperation = {
     val __obj = js.Dynamic.literal(oncomplete = js.Any.fromFunction1(oncomplete), onerror = js.Any.fromFunction1(onerror))
-    if (result != null) __obj.updateDynamic("result")(result)
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyOperation]
   }
 }

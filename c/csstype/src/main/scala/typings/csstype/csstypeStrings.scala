@@ -8,7 +8,17 @@ import typings.csstype.csstypeMod.AtRules
 import typings.csstype.csstypeMod.Attachment
 import typings.csstype.csstypeMod.BackfaceVisibilityProperty
 import typings.csstype.csstypeMod.BlendMode
+import typings.csstype.csstypeMod.BorderBlockEndStyleProperty
+import typings.csstype.csstypeMod.BorderBlockStartStyleProperty
+import typings.csstype.csstypeMod.BorderBlockStyleProperty
+import typings.csstype.csstypeMod.BorderBottomStyleProperty
 import typings.csstype.csstypeMod.BorderCollapseProperty
+import typings.csstype.csstypeMod.BorderInlineEndStyleProperty
+import typings.csstype.csstypeMod.BorderInlineStartStyleProperty
+import typings.csstype.csstypeMod.BorderInlineStyleProperty
+import typings.csstype.csstypeMod.BorderLeftStyleProperty
+import typings.csstype.csstypeMod.BorderRightStyleProperty
+import typings.csstype.csstypeMod.BorderTopStyleProperty
 import typings.csstype.csstypeMod.Box
 import typings.csstype.csstypeMod.BoxAlignProperty
 import typings.csstype.csstypeMod.BoxDecorationBreakProperty
@@ -65,6 +75,7 @@ import typings.csstype.csstypeMod.ListStylePositionProperty
 import typings.csstype.csstypeMod.MaskBorderModeProperty
 import typings.csstype.csstypeMod.MaskTypeProperty
 import typings.csstype.csstypeMod.MaskingMode
+import typings.csstype.csstypeMod.MixBlendModeProperty
 import typings.csstype.csstypeMod.MozAppearanceProperty
 import typings.csstype.csstypeMod.MozFloatEdgeProperty
 import typings.csstype.csstypeMod.MozOrientProperty
@@ -108,6 +119,7 @@ import typings.csstype.csstypeMod.PageBreakBeforeProperty
 import typings.csstype.csstypeMod.PageBreakInsideProperty
 import typings.csstype.csstypeMod.PointerEventsProperty
 import typings.csstype.csstypeMod.PositionProperty
+import typings.csstype.csstypeMod.Pseudos
 import typings.csstype.csstypeMod.Quote
 import typings.csstype.csstypeMod.ResizeProperty
 import typings.csstype.csstypeMod.RubyAlignProperty
@@ -401,7 +413,140 @@ object csstypeStrings {
   sealed trait `-moz-grab` extends _CursorProperty
   
   @js.native
-  sealed trait `-moz-initial` extends Globals
+  sealed trait `-moz-initial`
+    extends Globals
+       with AlignmentBaselineProperty
+       with AppearanceProperty
+       with BackfaceVisibilityProperty
+       with BorderBlockEndStyleProperty
+       with BorderBlockStartStyleProperty
+       with BorderBlockStyleProperty
+       with BorderBottomStyleProperty
+       with BorderCollapseProperty
+       with BorderInlineEndStyleProperty
+       with BorderInlineStartStyleProperty
+       with BorderInlineStyleProperty
+       with BorderLeftStyleProperty
+       with BorderRightStyleProperty
+       with BorderTopStyleProperty
+       with BoxAlignProperty
+       with BoxDecorationBreakProperty
+       with BoxDirectionProperty
+       with BoxLinesProperty
+       with BoxOrientProperty
+       with BoxPackProperty
+       with BoxSizingProperty
+       with BreakAfterProperty
+       with BreakBeforeProperty
+       with BreakInsideProperty
+       with CaptionSideProperty
+       with ClearProperty
+       with ClipRuleProperty
+       with ColorAdjustProperty
+       with ColorInterpolationProperty
+       with ColorRenderingProperty
+       with ColumnFillProperty
+       with ColumnSpanProperty
+       with DirectionProperty
+       with DominantBaselineProperty
+       with EmptyCellsProperty
+       with FillRuleProperty
+       with FlexDirectionProperty
+       with FlexWrapProperty
+       with FloatProperty
+       with FontKerningProperty
+       with FontOpticalSizingProperty
+       with FontVariantCapsProperty
+       with FontVariantPositionProperty
+       with HyphensProperty
+       with ImageRenderingProperty
+       with ImeModeProperty
+       with IsolationProperty
+       with LineBreakProperty
+       with ListStylePositionProperty
+       with MaskBorderModeProperty
+       with MaskTypeProperty
+       with MixBlendModeProperty
+       with MozAppearanceProperty
+       with MozFloatEdgeProperty
+       with MozOrientProperty
+       with MozStackSizingProperty
+       with MozTextBlinkProperty
+       with MozUserFocusProperty
+       with MozUserInputProperty
+       with MozUserModifyProperty
+       with MozWindowDraggingProperty
+       with MozWindowShadowProperty
+       with MsAcceleratorProperty
+       with MsBlockProgressionProperty
+       with MsContentZoomChainingProperty
+       with MsContentZoomSnapTypeProperty
+       with MsContentZoomingProperty
+       with MsHighContrastAdjustProperty
+       with MsImeAlignProperty
+       with MsOverflowStyleProperty
+       with MsScrollChainingProperty
+       with MsScrollRailsProperty
+       with MsScrollSnapTypeProperty
+       with MsScrollTranslationProperty
+       with MsTextAutospaceProperty
+       with MsTouchSelectProperty
+       with MsUserSelectProperty
+       with MsWrapFlowProperty
+       with MsWrapThroughProperty
+       with ObjectFitProperty
+       with OverflowAnchorProperty
+       with OverflowBlockProperty
+       with OverflowClipBoxProperty
+       with OverflowInlineProperty
+       with OverflowWrapProperty
+       with OverflowXProperty
+       with OverflowYProperty
+       with OverscrollBehaviorXProperty
+       with OverscrollBehaviorYProperty
+       with PageBreakAfterProperty
+       with PageBreakBeforeProperty
+       with PageBreakInsideProperty
+       with PointerEventsProperty
+       with PositionProperty
+       with ResizeProperty
+       with RubyAlignProperty
+       with RubyMergeProperty
+       with RubyPositionProperty
+       with ScrollBehaviorProperty
+       with ScrollSnapStopProperty
+       with ScrollSnapTypeXProperty
+       with ScrollSnapTypeYProperty
+       with ScrollbarWidthProperty
+       with ShapeRenderingProperty
+       with StrokeLinecapProperty
+       with StrokeLinejoinProperty
+       with TableLayoutProperty
+       with TextAlignLastProperty
+       with TextAlignProperty
+       with TextAnchorProperty
+       with TextDecorationSkipInkProperty
+       with TextDecorationStyleProperty
+       with TextJustifyProperty
+       with TextOrientationProperty
+       with TextRenderingProperty
+       with TextTransformProperty
+       with TransformBoxProperty
+       with TransformStyleProperty
+       with UnicodeBidiProperty
+       with UserSelectProperty
+       with VectorEffectProperty
+       with VisibilityProperty
+       with WebkitAppearanceProperty
+       with WebkitMaskRepeatXProperty
+       with WebkitMaskRepeatYProperty
+       with WebkitOverflowScrollingProperty
+       with WebkitTouchCalloutProperty
+       with WebkitUserModifyProperty
+       with WhiteSpaceProperty
+       with WordBreakProperty
+       with WordWrapProperty
+       with WritingModeProperty
   
   @js.native
   sealed trait `-moz-isolate` extends UnicodeBidiProperty
@@ -595,333 +740,550 @@ object csstypeStrings {
   sealed trait `-webkit-sticky` extends PositionProperty
   
   @js.native
-  sealed trait `:-moz-any()` extends AdvancedPseudos
+  sealed trait `:-moz-any()`
+    extends AdvancedPseudos
+       with Pseudos
   
   @js.native
-  sealed trait `:-moz-any-link` extends SimplePseudos
+  sealed trait `:-moz-any-link`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:-moz-dir` extends AdvancedPseudos
+  sealed trait `:-moz-dir`
+    extends AdvancedPseudos
+       with Pseudos
   
   @js.native
-  sealed trait `:-moz-focusring` extends SimplePseudos
+  sealed trait `:-moz-focusring`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:-moz-full-screen` extends SimplePseudos
+  sealed trait `:-moz-full-screen`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:-moz-placeholder` extends SimplePseudos
+  sealed trait `:-moz-placeholder`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:-moz-read-only` extends SimplePseudos
+  sealed trait `:-moz-read-only`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:-moz-read-write` extends SimplePseudos
+  sealed trait `:-moz-read-write`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:-ms-fullscreen` extends SimplePseudos
+  sealed trait `:-ms-fullscreen`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:-ms-input-placeholder` extends SimplePseudos
+  sealed trait `:-ms-input-placeholder`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:-webkit-any()` extends AdvancedPseudos
+  sealed trait `:-webkit-any()`
+    extends AdvancedPseudos
+       with Pseudos
   
   @js.native
-  sealed trait `:-webkit-any-link` extends SimplePseudos
+  sealed trait `:-webkit-any-link`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:-webkit-full-screen` extends SimplePseudos
+  sealed trait `:-webkit-full-screen`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-moz-placeholder` extends SimplePseudos
+  sealed trait `::-moz-placeholder`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-moz-progress-bar` extends SimplePseudos
+  sealed trait `::-moz-progress-bar`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-moz-range-progress` extends SimplePseudos
+  sealed trait `::-moz-range-progress`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-moz-range-thumb` extends SimplePseudos
+  sealed trait `::-moz-range-thumb`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-moz-range-track` extends SimplePseudos
+  sealed trait `::-moz-range-track`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-moz-selection` extends SimplePseudos
+  sealed trait `::-moz-selection`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-ms-backdrop` extends SimplePseudos
+  sealed trait `::-ms-backdrop`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-ms-browse` extends SimplePseudos
+  sealed trait `::-ms-browse`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-ms-check` extends SimplePseudos
+  sealed trait `::-ms-check`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-ms-clear` extends SimplePseudos
+  sealed trait `::-ms-clear`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-ms-fill` extends SimplePseudos
+  sealed trait `::-ms-fill`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-ms-fill-lower` extends SimplePseudos
+  sealed trait `::-ms-fill-lower`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-ms-fill-upper` extends SimplePseudos
+  sealed trait `::-ms-fill-upper`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-ms-input-placeholder` extends SimplePseudos
+  sealed trait `::-ms-input-placeholder`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-ms-reveal` extends SimplePseudos
+  sealed trait `::-ms-reveal`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-ms-thumb` extends SimplePseudos
+  sealed trait `::-ms-thumb`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-ms-ticks-after` extends SimplePseudos
+  sealed trait `::-ms-ticks-after`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-ms-ticks-before` extends SimplePseudos
+  sealed trait `::-ms-ticks-before`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-ms-tooltip` extends SimplePseudos
+  sealed trait `::-ms-tooltip`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-ms-track` extends SimplePseudos
+  sealed trait `::-ms-track`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-ms-value` extends SimplePseudos
+  sealed trait `::-ms-value`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-webkit-backdrop` extends SimplePseudos
+  sealed trait `::-webkit-backdrop`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-webkit-input-placeholder` extends SimplePseudos
+  sealed trait `::-webkit-input-placeholder`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-webkit-progress-bar` extends SimplePseudos
+  sealed trait `::-webkit-progress-bar`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-webkit-progress-inner-value` extends SimplePseudos
+  sealed trait `::-webkit-progress-inner-value`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-webkit-progress-value` extends SimplePseudos
+  sealed trait `::-webkit-progress-value`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-webkit-slider-runnable-track` extends SimplePseudos
+  sealed trait `::-webkit-slider-runnable-track`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::-webkit-slider-thumb` extends SimplePseudos
+  sealed trait `::-webkit-slider-thumb`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::after` extends SimplePseudos
+  sealed trait `::after`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::backdrop` extends SimplePseudos
+  sealed trait `::backdrop`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::before` extends SimplePseudos
+  sealed trait `::before`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
   sealed trait `::cue`
     extends AdvancedPseudos
+       with Pseudos
        with SimplePseudos
   
   @js.native
-  sealed trait `::first-letter` extends SimplePseudos
+  sealed trait `::first-letter`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::first-line` extends SimplePseudos
+  sealed trait `::first-line`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::grammar-error` extends SimplePseudos
+  sealed trait `::grammar-error`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::marker` extends SimplePseudos
+  sealed trait `::marker`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::part` extends AdvancedPseudos
+  sealed trait `::part`
+    extends AdvancedPseudos
+       with Pseudos
   
   @js.native
-  sealed trait `::placeholder` extends SimplePseudos
+  sealed trait `::placeholder`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::selection` extends SimplePseudos
+  sealed trait `::selection`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `::slotted` extends AdvancedPseudos
+  sealed trait `::slotted`
+    extends AdvancedPseudos
+       with Pseudos
   
   @js.native
-  sealed trait `::spelling-error` extends SimplePseudos
+  sealed trait `::spelling-error`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:active` extends SimplePseudos
+  sealed trait `:active`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:after` extends SimplePseudos
+  sealed trait `:after`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:any-link` extends SimplePseudos
+  sealed trait `:any-link`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:before` extends SimplePseudos
+  sealed trait `:before`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:blank` extends SimplePseudos
+  sealed trait `:blank`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:checked` extends SimplePseudos
+  sealed trait `:checked`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:default` extends SimplePseudos
+  sealed trait `:default`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:defined` extends SimplePseudos
+  sealed trait `:defined`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:dir` extends AdvancedPseudos
+  sealed trait `:dir`
+    extends AdvancedPseudos
+       with Pseudos
   
   @js.native
-  sealed trait `:disabled` extends SimplePseudos
+  sealed trait `:disabled`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:empty` extends SimplePseudos
+  sealed trait `:empty`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:enabled` extends SimplePseudos
+  sealed trait `:enabled`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:first` extends SimplePseudos
+  sealed trait `:first`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:first-child` extends SimplePseudos
+  sealed trait `:first-child`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:first-letter` extends SimplePseudos
+  sealed trait `:first-letter`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:first-line` extends SimplePseudos
+  sealed trait `:first-line`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:first-of-type` extends SimplePseudos
+  sealed trait `:first-of-type`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:focus` extends SimplePseudos
+  sealed trait `:focus`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:focus-visible` extends SimplePseudos
+  sealed trait `:focus-visible`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:focus-within` extends SimplePseudos
+  sealed trait `:focus-within`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:fullscreen` extends SimplePseudos
+  sealed trait `:fullscreen`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:has` extends AdvancedPseudos
+  sealed trait `:has`
+    extends AdvancedPseudos
+       with Pseudos
   
   @js.native
-  sealed trait `:host` extends AdvancedPseudos
+  sealed trait `:host`
+    extends AdvancedPseudos
+       with Pseudos
   
   @js.native
-  sealed trait `:host-context` extends AdvancedPseudos
+  sealed trait `:host-context`
+    extends AdvancedPseudos
+       with Pseudos
   
   @js.native
-  sealed trait `:hover` extends SimplePseudos
+  sealed trait `:hover`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:in-range` extends SimplePseudos
+  sealed trait `:in-range`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:indeterminate` extends SimplePseudos
+  sealed trait `:indeterminate`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:invalid` extends SimplePseudos
+  sealed trait `:invalid`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:is` extends AdvancedPseudos
+  sealed trait `:is`
+    extends AdvancedPseudos
+       with Pseudos
   
   @js.native
-  sealed trait `:lang` extends AdvancedPseudos
+  sealed trait `:lang`
+    extends AdvancedPseudos
+       with Pseudos
   
   @js.native
-  sealed trait `:last-child` extends SimplePseudos
+  sealed trait `:last-child`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:last-of-type` extends SimplePseudos
+  sealed trait `:last-of-type`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:left` extends SimplePseudos
+  sealed trait `:left`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:link` extends SimplePseudos
+  sealed trait `:link`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:matches()` extends AdvancedPseudos
+  sealed trait `:matches()`
+    extends AdvancedPseudos
+       with Pseudos
   
   @js.native
-  sealed trait `:not` extends AdvancedPseudos
+  sealed trait `:not`
+    extends AdvancedPseudos
+       with Pseudos
   
   @js.native
-  sealed trait `:nth-child` extends AdvancedPseudos
+  sealed trait `:nth-child`
+    extends AdvancedPseudos
+       with Pseudos
   
   @js.native
-  sealed trait `:nth-last-child` extends AdvancedPseudos
+  sealed trait `:nth-last-child`
+    extends AdvancedPseudos
+       with Pseudos
   
   @js.native
-  sealed trait `:nth-last-of-type` extends AdvancedPseudos
+  sealed trait `:nth-last-of-type`
+    extends AdvancedPseudos
+       with Pseudos
   
   @js.native
-  sealed trait `:nth-of-type` extends AdvancedPseudos
+  sealed trait `:nth-of-type`
+    extends AdvancedPseudos
+       with Pseudos
   
   @js.native
-  sealed trait `:only-child` extends SimplePseudos
+  sealed trait `:only-child`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:only-of-type` extends SimplePseudos
+  sealed trait `:only-of-type`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:optional` extends SimplePseudos
+  sealed trait `:optional`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:out-of-range` extends SimplePseudos
+  sealed trait `:out-of-range`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:placeholder-shown` extends SimplePseudos
+  sealed trait `:placeholder-shown`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:read-only` extends SimplePseudos
+  sealed trait `:read-only`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:read-write` extends SimplePseudos
+  sealed trait `:read-write`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:required` extends SimplePseudos
+  sealed trait `:required`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:right` extends SimplePseudos
+  sealed trait `:right`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:root` extends SimplePseudos
+  sealed trait `:root`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:scope` extends SimplePseudos
+  sealed trait `:scope`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:target` extends SimplePseudos
+  sealed trait `:target`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:valid` extends SimplePseudos
+  sealed trait `:valid`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:visited` extends SimplePseudos
+  sealed trait `:visited`
+    extends Pseudos
+       with SimplePseudos
   
   @js.native
-  sealed trait `:where` extends AdvancedPseudos
+  sealed trait `:where`
+    extends AdvancedPseudos
+       with Pseudos
   
   @js.native
   sealed trait `@charset` extends AtRules
@@ -1990,7 +2352,7 @@ object csstypeStrings {
        with SvgAttributes
   
   @js.native
-  sealed trait `[referrerpolicy]` extends HtmlAttributes
+  sealed trait `[referrerpolicy]_` extends HtmlAttributes
   
   @js.native
   sealed trait `[rel]`
@@ -2775,6 +3137,7 @@ object csstypeStrings {
   sealed trait `border-box`
     extends Box
        with BoxSizingProperty
+       with GeometryBox
        with MozFloatEdgeProperty
        with TransformBoxProperty
   
@@ -2843,7 +3206,8 @@ object csstypeStrings {
   
   @js.native
   sealed trait `button-bevel`
-    extends Compat
+    extends AppearanceProperty
+       with Compat
        with MozAppearanceProperty
        with WebkitAppearanceProperty
   
@@ -2900,7 +3264,8 @@ object csstypeStrings {
   
   @js.native
   sealed trait checkbox
-    extends Compat
+    extends AppearanceProperty
+       with Compat
        with MozAppearanceProperty
        with WebkitAppearanceProperty
   
@@ -2955,13 +3320,19 @@ object csstypeStrings {
        with VisibilityProperty
   
   @js.native
-  sealed trait color extends BlendMode
+  sealed trait color
+    extends BlendMode
+       with MixBlendModeProperty
   
   @js.native
-  sealed trait `color-burn` extends BlendMode
+  sealed trait `color-burn`
+    extends BlendMode
+       with MixBlendModeProperty
   
   @js.native
-  sealed trait `color-dodge` extends BlendMode
+  sealed trait `color-dodge`
+    extends BlendMode
+       with MixBlendModeProperty
   
   @js.native
   sealed trait column
@@ -3007,6 +3378,7 @@ object csstypeStrings {
   sealed trait `content-box`
     extends Box
        with BoxSizingProperty
+       with GeometryBox
        with MozFloatEdgeProperty
        with OverflowClipBoxProperty
   
@@ -3075,7 +3447,7 @@ object csstypeStrings {
        with _StopColorProperty
   
   @js.native
-  sealed trait currentcolor extends _Color
+  sealed trait currentcolor_ extends _Color
   
   @js.native
   sealed trait cursive extends GenericFamily
@@ -3096,7 +3468,9 @@ object csstypeStrings {
   sealed trait darkcyan extends NamedColor
   
   @js.native
-  sealed trait darken extends BlendMode
+  sealed trait darken
+    extends BlendMode
+       with MixBlendModeProperty
   
   @js.native
   sealed trait darkgoldenrod extends NamedColor
@@ -3152,6 +3526,16 @@ object csstypeStrings {
   @js.native
   sealed trait dashed
     extends LineStyle
+       with BorderBlockEndStyleProperty
+       with BorderBlockStartStyleProperty
+       with BorderBlockStyleProperty
+       with BorderBottomStyleProperty
+       with BorderInlineEndStyleProperty
+       with BorderInlineStartStyleProperty
+       with BorderInlineStyleProperty
+       with BorderLeftStyleProperty
+       with BorderRightStyleProperty
+       with BorderTopStyleProperty
        with TextDecorationStyleProperty
        with _TextDecorationProperty
   
@@ -3192,7 +3576,9 @@ object csstypeStrings {
        with _FontVariantProperty
   
   @js.native
-  sealed trait difference extends BlendMode
+  sealed trait difference
+    extends BlendMode
+       with MixBlendModeProperty
   
   @js.native
   sealed trait digits extends _TextCombineUprightProperty
@@ -3225,12 +3611,32 @@ object csstypeStrings {
   @js.native
   sealed trait dotted
     extends LineStyle
+       with BorderBlockEndStyleProperty
+       with BorderBlockStartStyleProperty
+       with BorderBlockStyleProperty
+       with BorderBottomStyleProperty
+       with BorderInlineEndStyleProperty
+       with BorderInlineStartStyleProperty
+       with BorderInlineStyleProperty
+       with BorderLeftStyleProperty
+       with BorderRightStyleProperty
+       with BorderTopStyleProperty
        with TextDecorationStyleProperty
        with _TextDecorationProperty
   
   @js.native
   sealed trait double
     extends LineStyle
+       with BorderBlockEndStyleProperty
+       with BorderBlockStartStyleProperty
+       with BorderBlockStyleProperty
+       with BorderBottomStyleProperty
+       with BorderInlineEndStyleProperty
+       with BorderInlineStartStyleProperty
+       with BorderInlineStyleProperty
+       with BorderLeftStyleProperty
+       with BorderRightStyleProperty
+       with BorderTopStyleProperty
        with TextDecorationStyleProperty
        with _TextDecorationProperty
   
@@ -3309,7 +3715,9 @@ object csstypeStrings {
   sealed trait exclude extends CompositingOperator
   
   @js.native
-  sealed trait exclusion extends BlendMode
+  sealed trait exclusion
+    extends BlendMode
+       with MixBlendModeProperty
   
   @js.native
   sealed trait expanded extends _FontStretchAbsolute
@@ -3488,7 +3896,18 @@ object csstypeStrings {
   sealed trait grippers extends MsTouchSelectProperty
   
   @js.native
-  sealed trait groove extends LineStyle
+  sealed trait groove
+    extends LineStyle
+       with BorderBlockEndStyleProperty
+       with BorderBlockStartStyleProperty
+       with BorderBlockStyleProperty
+       with BorderBottomStyleProperty
+       with BorderInlineEndStyleProperty
+       with BorderInlineStartStyleProperty
+       with BorderInlineStyleProperty
+       with BorderLeftStyleProperty
+       with BorderRightStyleProperty
+       with BorderTopStyleProperty
   
   @js.native
   sealed trait groupbox extends MozAppearanceProperty
@@ -3499,7 +3918,9 @@ object csstypeStrings {
        with DominantBaselineProperty
   
   @js.native
-  sealed trait `hard-light` extends BlendMode
+  sealed trait `hard-light`
+    extends BlendMode
+       with MixBlendModeProperty
   
   @js.native
   sealed trait help extends _CursorProperty
@@ -3508,6 +3929,16 @@ object csstypeStrings {
   sealed trait hidden
     extends LineStyle
        with BackfaceVisibilityProperty
+       with BorderBlockEndStyleProperty
+       with BorderBlockStartStyleProperty
+       with BorderBlockStyleProperty
+       with BorderBottomStyleProperty
+       with BorderInlineEndStyleProperty
+       with BorderInlineStartStyleProperty
+       with BorderInlineStyleProperty
+       with BorderLeftStyleProperty
+       with BorderRightStyleProperty
+       with BorderTopStyleProperty
        with OverflowBlockProperty
        with OverflowInlineProperty
        with OverflowXProperty
@@ -3546,7 +3977,9 @@ object csstypeStrings {
   sealed trait hotpink extends NamedColor
   
   @js.native
-  sealed trait hue extends BlendMode
+  sealed trait hue
+    extends BlendMode
+       with MixBlendModeProperty
   
   @js.native
   sealed trait icon extends _FontProperty
@@ -3588,14 +4021,277 @@ object csstypeStrings {
        with _AnimationIterationCountProperty
        with _CounterStyleRangeProperty
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.csstype.csstypeMod.PointerEventsProperty because Already inherited
-  - typings.csstype.csstypeMod.BoxOrientProperty because Already inherited
-  - typings.csstype.csstypeMod.BoxDirectionProperty because Already inherited */ @js.native
-  sealed trait inherit extends Globals
+  @js.native
+  sealed trait inherit
+    extends Globals
+       with AlignmentBaselineProperty
+       with AppearanceProperty
+       with BackfaceVisibilityProperty
+       with BorderBlockEndStyleProperty
+       with BorderBlockStartStyleProperty
+       with BorderBlockStyleProperty
+       with BorderBottomStyleProperty
+       with BorderCollapseProperty
+       with BorderInlineEndStyleProperty
+       with BorderInlineStartStyleProperty
+       with BorderInlineStyleProperty
+       with BorderLeftStyleProperty
+       with BorderRightStyleProperty
+       with BorderTopStyleProperty
+       with BoxAlignProperty
+       with BoxDecorationBreakProperty
+       with BoxDirectionProperty
+       with BoxLinesProperty
+       with BoxOrientProperty
+       with BoxPackProperty
+       with BoxSizingProperty
+       with BreakAfterProperty
+       with BreakBeforeProperty
+       with BreakInsideProperty
+       with CaptionSideProperty
+       with ClearProperty
+       with ClipRuleProperty
+       with ColorAdjustProperty
+       with ColorInterpolationProperty
+       with ColorRenderingProperty
+       with ColumnFillProperty
+       with ColumnSpanProperty
+       with DirectionProperty
+       with DominantBaselineProperty
+       with EmptyCellsProperty
+       with FillRuleProperty
+       with FlexDirectionProperty
+       with FlexWrapProperty
+       with FloatProperty
+       with FontKerningProperty
+       with FontOpticalSizingProperty
+       with FontVariantCapsProperty
+       with FontVariantPositionProperty
+       with HyphensProperty
+       with ImageRenderingProperty
+       with ImeModeProperty
+       with IsolationProperty
+       with LineBreakProperty
+       with ListStylePositionProperty
+       with MaskBorderModeProperty
+       with MaskTypeProperty
+       with MixBlendModeProperty
+       with MozAppearanceProperty
+       with MozFloatEdgeProperty
+       with MozOrientProperty
+       with MozStackSizingProperty
+       with MozTextBlinkProperty
+       with MozUserFocusProperty
+       with MozUserInputProperty
+       with MozUserModifyProperty
+       with MozWindowDraggingProperty
+       with MozWindowShadowProperty
+       with MsAcceleratorProperty
+       with MsBlockProgressionProperty
+       with MsContentZoomChainingProperty
+       with MsContentZoomSnapTypeProperty
+       with MsContentZoomingProperty
+       with MsHighContrastAdjustProperty
+       with MsImeAlignProperty
+       with MsOverflowStyleProperty
+       with MsScrollChainingProperty
+       with MsScrollRailsProperty
+       with MsScrollSnapTypeProperty
+       with MsScrollTranslationProperty
+       with MsTextAutospaceProperty
+       with MsTouchSelectProperty
+       with MsUserSelectProperty
+       with MsWrapFlowProperty
+       with MsWrapThroughProperty
+       with ObjectFitProperty
+       with OverflowAnchorProperty
+       with OverflowBlockProperty
+       with OverflowClipBoxProperty
+       with OverflowInlineProperty
+       with OverflowWrapProperty
+       with OverflowXProperty
+       with OverflowYProperty
+       with OverscrollBehaviorXProperty
+       with OverscrollBehaviorYProperty
+       with PageBreakAfterProperty
+       with PageBreakBeforeProperty
+       with PageBreakInsideProperty
+       with PointerEventsProperty
+       with PositionProperty
+       with ResizeProperty
+       with RubyAlignProperty
+       with RubyMergeProperty
+       with RubyPositionProperty
+       with ScrollBehaviorProperty
+       with ScrollSnapStopProperty
+       with ScrollSnapTypeXProperty
+       with ScrollSnapTypeYProperty
+       with ScrollbarWidthProperty
+       with ShapeRenderingProperty
+       with StrokeLinecapProperty
+       with StrokeLinejoinProperty
+       with TableLayoutProperty
+       with TextAlignLastProperty
+       with TextAlignProperty
+       with TextAnchorProperty
+       with TextDecorationSkipInkProperty
+       with TextDecorationStyleProperty
+       with TextJustifyProperty
+       with TextOrientationProperty
+       with TextRenderingProperty
+       with TextTransformProperty
+       with TransformBoxProperty
+       with TransformStyleProperty
+       with UnicodeBidiProperty
+       with UserSelectProperty
+       with VectorEffectProperty
+       with VisibilityProperty
+       with WebkitAppearanceProperty
+       with WebkitMaskRepeatXProperty
+       with WebkitMaskRepeatYProperty
+       with WebkitOverflowScrollingProperty
+       with WebkitTouchCalloutProperty
+       with WebkitUserModifyProperty
+       with WhiteSpaceProperty
+       with WordBreakProperty
+       with WordWrapProperty
+       with WritingModeProperty
   
   @js.native
-  sealed trait initial extends Globals
+  sealed trait initial
+    extends Globals
+       with AlignmentBaselineProperty
+       with AppearanceProperty
+       with BackfaceVisibilityProperty
+       with BorderBlockEndStyleProperty
+       with BorderBlockStartStyleProperty
+       with BorderBlockStyleProperty
+       with BorderBottomStyleProperty
+       with BorderCollapseProperty
+       with BorderInlineEndStyleProperty
+       with BorderInlineStartStyleProperty
+       with BorderInlineStyleProperty
+       with BorderLeftStyleProperty
+       with BorderRightStyleProperty
+       with BorderTopStyleProperty
+       with BoxAlignProperty
+       with BoxDecorationBreakProperty
+       with BoxDirectionProperty
+       with BoxLinesProperty
+       with BoxOrientProperty
+       with BoxPackProperty
+       with BoxSizingProperty
+       with BreakAfterProperty
+       with BreakBeforeProperty
+       with BreakInsideProperty
+       with CaptionSideProperty
+       with ClearProperty
+       with ClipRuleProperty
+       with ColorAdjustProperty
+       with ColorInterpolationProperty
+       with ColorRenderingProperty
+       with ColumnFillProperty
+       with ColumnSpanProperty
+       with DirectionProperty
+       with DominantBaselineProperty
+       with EmptyCellsProperty
+       with FillRuleProperty
+       with FlexDirectionProperty
+       with FlexWrapProperty
+       with FloatProperty
+       with FontKerningProperty
+       with FontOpticalSizingProperty
+       with FontVariantCapsProperty
+       with FontVariantPositionProperty
+       with HyphensProperty
+       with ImageRenderingProperty
+       with ImeModeProperty
+       with IsolationProperty
+       with LineBreakProperty
+       with ListStylePositionProperty
+       with MaskBorderModeProperty
+       with MaskTypeProperty
+       with MixBlendModeProperty
+       with MozAppearanceProperty
+       with MozFloatEdgeProperty
+       with MozOrientProperty
+       with MozStackSizingProperty
+       with MozTextBlinkProperty
+       with MozUserFocusProperty
+       with MozUserInputProperty
+       with MozUserModifyProperty
+       with MozWindowDraggingProperty
+       with MozWindowShadowProperty
+       with MsAcceleratorProperty
+       with MsBlockProgressionProperty
+       with MsContentZoomChainingProperty
+       with MsContentZoomSnapTypeProperty
+       with MsContentZoomingProperty
+       with MsHighContrastAdjustProperty
+       with MsImeAlignProperty
+       with MsOverflowStyleProperty
+       with MsScrollChainingProperty
+       with MsScrollRailsProperty
+       with MsScrollSnapTypeProperty
+       with MsScrollTranslationProperty
+       with MsTextAutospaceProperty
+       with MsTouchSelectProperty
+       with MsUserSelectProperty
+       with MsWrapFlowProperty
+       with MsWrapThroughProperty
+       with ObjectFitProperty
+       with OverflowAnchorProperty
+       with OverflowBlockProperty
+       with OverflowClipBoxProperty
+       with OverflowInlineProperty
+       with OverflowWrapProperty
+       with OverflowXProperty
+       with OverflowYProperty
+       with OverscrollBehaviorXProperty
+       with OverscrollBehaviorYProperty
+       with PageBreakAfterProperty
+       with PageBreakBeforeProperty
+       with PageBreakInsideProperty
+       with PointerEventsProperty
+       with PositionProperty
+       with ResizeProperty
+       with RubyAlignProperty
+       with RubyMergeProperty
+       with RubyPositionProperty
+       with ScrollBehaviorProperty
+       with ScrollSnapStopProperty
+       with ScrollSnapTypeXProperty
+       with ScrollSnapTypeYProperty
+       with ScrollbarWidthProperty
+       with ShapeRenderingProperty
+       with StrokeLinecapProperty
+       with StrokeLinejoinProperty
+       with TableLayoutProperty
+       with TextAlignLastProperty
+       with TextAlignProperty
+       with TextAnchorProperty
+       with TextDecorationSkipInkProperty
+       with TextDecorationStyleProperty
+       with TextJustifyProperty
+       with TextOrientationProperty
+       with TextRenderingProperty
+       with TextTransformProperty
+       with TransformBoxProperty
+       with TransformStyleProperty
+       with UnicodeBidiProperty
+       with UserSelectProperty
+       with VectorEffectProperty
+       with VisibilityProperty
+       with WebkitAppearanceProperty
+       with WebkitMaskRepeatXProperty
+       with WebkitMaskRepeatYProperty
+       with WebkitOverflowScrollingProperty
+       with WebkitTouchCalloutProperty
+       with WebkitUserModifyProperty
+       with WhiteSpaceProperty
+       with WordBreakProperty
+       with WordWrapProperty
+       with WritingModeProperty
   
   @js.native
   sealed trait `inline`
@@ -3638,7 +4334,18 @@ object csstypeStrings {
   sealed trait `inner-spin-button` extends WebkitAppearanceProperty
   
   @js.native
-  sealed trait inset extends LineStyle
+  sealed trait inset
+    extends LineStyle
+       with BorderBlockEndStyleProperty
+       with BorderBlockStartStyleProperty
+       with BorderBlockStyleProperty
+       with BorderBottomStyleProperty
+       with BorderInlineEndStyleProperty
+       with BorderInlineStartStyleProperty
+       with BorderInlineStyleProperty
+       with BorderLeftStyleProperty
+       with BorderRightStyleProperty
+       with BorderTopStyleProperty
   
   @js.native
   sealed trait inside
@@ -3775,7 +4482,9 @@ object csstypeStrings {
   sealed trait lightcyan extends NamedColor
   
   @js.native
-  sealed trait lighten extends BlendMode
+  sealed trait lighten
+    extends BlendMode
+       with MixBlendModeProperty
   
   @js.native
   sealed trait lighter extends _FontWeightProperty
@@ -3847,7 +4556,8 @@ object csstypeStrings {
   
   @js.native
   sealed trait listbox
-    extends Compat
+    extends AppearanceProperty
+       with Compat
        with MozAppearanceProperty
        with WebkitAppearanceProperty
   
@@ -3879,7 +4589,9 @@ object csstypeStrings {
        with _MaskBorderProperty
   
   @js.native
-  sealed trait luminosity extends BlendMode
+  sealed trait luminosity
+    extends BlendMode
+       with MixBlendModeProperty
   
   @js.native
   sealed trait magenta extends NamedColor
@@ -4029,7 +4741,7 @@ object csstypeStrings {
   sealed trait mediumvioletred extends NamedColor
   
   @js.native
-  sealed trait menu
+  sealed trait menu_
     extends MozWindowShadowProperty
        with _FontProperty
   
@@ -4053,13 +4765,15 @@ object csstypeStrings {
   
   @js.native
   sealed trait menulist
-    extends Compat
+    extends AppearanceProperty
+       with Compat
        with MozAppearanceProperty
        with WebkitAppearanceProperty
   
   @js.native
   sealed trait `menulist-button`
-    extends Compat
+    extends AppearanceProperty
+       with Compat
        with MozAppearanceProperty
        with WebkitAppearanceProperty
   
@@ -4087,7 +4801,8 @@ object csstypeStrings {
   
   @js.native
   sealed trait meter
-    extends Compat
+    extends AppearanceProperty
+       with Compat
        with WebkitAppearanceProperty
   
   @js.native
@@ -4154,7 +4869,9 @@ object csstypeStrings {
   sealed trait multiple extends BoxLinesProperty
   
   @js.native
-  sealed trait multiply extends BlendMode
+  sealed trait multiply
+    extends BlendMode
+       with MixBlendModeProperty
   
   @js.native
   sealed trait `n-resize` extends _CursorProperty
@@ -4233,6 +4950,16 @@ object csstypeStrings {
   sealed trait none
     extends LineStyle
        with AppearanceProperty
+       with BorderBlockEndStyleProperty
+       with BorderBlockStartStyleProperty
+       with BorderBlockStyleProperty
+       with BorderBottomStyleProperty
+       with BorderInlineEndStyleProperty
+       with BorderInlineStartStyleProperty
+       with BorderInlineStyleProperty
+       with BorderLeftStyleProperty
+       with BorderRightStyleProperty
+       with BorderTopStyleProperty
        with ClearProperty
        with ColumnSpanProperty
        with FloatProperty
@@ -4376,6 +5103,7 @@ object csstypeStrings {
        with FontVariantPositionProperty
        with ImeModeProperty
        with LineBreakProperty
+       with MixBlendModeProperty
        with MozUserFocusProperty
        with OverflowWrapProperty
        with ScrollSnapStopProperty
@@ -4502,7 +5230,18 @@ object csstypeStrings {
        with _FontVariantProperty
   
   @js.native
-  sealed trait outset extends LineStyle
+  sealed trait outset
+    extends LineStyle
+       with BorderBlockEndStyleProperty
+       with BorderBlockStartStyleProperty
+       with BorderBlockStyleProperty
+       with BorderBottomStyleProperty
+       with BorderInlineEndStyleProperty
+       with BorderInlineStartStyleProperty
+       with BorderInlineStyleProperty
+       with BorderLeftStyleProperty
+       with BorderRightStyleProperty
+       with BorderTopStyleProperty
   
   @js.native
   sealed trait outside
@@ -4513,7 +5252,9 @@ object csstypeStrings {
   sealed trait over extends RubyPositionProperty
   
   @js.native
-  sealed trait overlay extends BlendMode
+  sealed trait overlay
+    extends BlendMode
+       with MixBlendModeProperty
   
   @js.native
   sealed trait overline
@@ -4529,6 +5270,7 @@ object csstypeStrings {
   @js.native
   sealed trait `padding-box`
     extends Box
+       with GeometryBox
        with MozFloatEdgeProperty
        with OverflowClipBoxProperty
   
@@ -4634,7 +5376,8 @@ object csstypeStrings {
   
   @js.native
   sealed trait `progress-bar`
-    extends Compat
+    extends AppearanceProperty
+       with Compat
        with WebkitAppearanceProperty
   
   @js.native
@@ -4677,12 +5420,14 @@ object csstypeStrings {
   
   @js.native
   sealed trait `push-button`
-    extends Compat
+    extends AppearanceProperty
+       with Compat
        with WebkitAppearanceProperty
   
   @js.native
   sealed trait radio
-    extends Compat
+    extends AppearanceProperty
+       with Compat
        with MozAppearanceProperty
        with WebkitAppearanceProperty
   
@@ -4773,10 +5518,154 @@ object csstypeStrings {
        with _OffsetRotateProperty
   
   @js.native
-  sealed trait revert extends Globals
+  sealed trait revert
+    extends Globals
+       with AlignmentBaselineProperty
+       with AppearanceProperty
+       with BackfaceVisibilityProperty
+       with BorderBlockEndStyleProperty
+       with BorderBlockStartStyleProperty
+       with BorderBlockStyleProperty
+       with BorderBottomStyleProperty
+       with BorderCollapseProperty
+       with BorderInlineEndStyleProperty
+       with BorderInlineStartStyleProperty
+       with BorderInlineStyleProperty
+       with BorderLeftStyleProperty
+       with BorderRightStyleProperty
+       with BorderTopStyleProperty
+       with BoxAlignProperty
+       with BoxDecorationBreakProperty
+       with BoxDirectionProperty
+       with BoxLinesProperty
+       with BoxOrientProperty
+       with BoxPackProperty
+       with BoxSizingProperty
+       with BreakAfterProperty
+       with BreakBeforeProperty
+       with BreakInsideProperty
+       with CaptionSideProperty
+       with ClearProperty
+       with ClipRuleProperty
+       with ColorAdjustProperty
+       with ColorInterpolationProperty
+       with ColorRenderingProperty
+       with ColumnFillProperty
+       with ColumnSpanProperty
+       with DirectionProperty
+       with DominantBaselineProperty
+       with EmptyCellsProperty
+       with FillRuleProperty
+       with FlexDirectionProperty
+       with FlexWrapProperty
+       with FloatProperty
+       with FontKerningProperty
+       with FontOpticalSizingProperty
+       with FontVariantCapsProperty
+       with FontVariantPositionProperty
+       with HyphensProperty
+       with ImageRenderingProperty
+       with ImeModeProperty
+       with IsolationProperty
+       with LineBreakProperty
+       with ListStylePositionProperty
+       with MaskBorderModeProperty
+       with MaskTypeProperty
+       with MixBlendModeProperty
+       with MozAppearanceProperty
+       with MozFloatEdgeProperty
+       with MozOrientProperty
+       with MozStackSizingProperty
+       with MozTextBlinkProperty
+       with MozUserFocusProperty
+       with MozUserInputProperty
+       with MozUserModifyProperty
+       with MozWindowDraggingProperty
+       with MozWindowShadowProperty
+       with MsAcceleratorProperty
+       with MsBlockProgressionProperty
+       with MsContentZoomChainingProperty
+       with MsContentZoomSnapTypeProperty
+       with MsContentZoomingProperty
+       with MsHighContrastAdjustProperty
+       with MsImeAlignProperty
+       with MsOverflowStyleProperty
+       with MsScrollChainingProperty
+       with MsScrollRailsProperty
+       with MsScrollSnapTypeProperty
+       with MsScrollTranslationProperty
+       with MsTextAutospaceProperty
+       with MsTouchSelectProperty
+       with MsUserSelectProperty
+       with MsWrapFlowProperty
+       with MsWrapThroughProperty
+       with ObjectFitProperty
+       with OverflowAnchorProperty
+       with OverflowBlockProperty
+       with OverflowClipBoxProperty
+       with OverflowInlineProperty
+       with OverflowWrapProperty
+       with OverflowXProperty
+       with OverflowYProperty
+       with OverscrollBehaviorXProperty
+       with OverscrollBehaviorYProperty
+       with PageBreakAfterProperty
+       with PageBreakBeforeProperty
+       with PageBreakInsideProperty
+       with PointerEventsProperty
+       with PositionProperty
+       with ResizeProperty
+       with RubyAlignProperty
+       with RubyMergeProperty
+       with RubyPositionProperty
+       with ScrollBehaviorProperty
+       with ScrollSnapStopProperty
+       with ScrollSnapTypeXProperty
+       with ScrollSnapTypeYProperty
+       with ScrollbarWidthProperty
+       with ShapeRenderingProperty
+       with StrokeLinecapProperty
+       with StrokeLinejoinProperty
+       with TableLayoutProperty
+       with TextAlignLastProperty
+       with TextAlignProperty
+       with TextAnchorProperty
+       with TextDecorationSkipInkProperty
+       with TextDecorationStyleProperty
+       with TextJustifyProperty
+       with TextOrientationProperty
+       with TextRenderingProperty
+       with TextTransformProperty
+       with TransformBoxProperty
+       with TransformStyleProperty
+       with UnicodeBidiProperty
+       with UserSelectProperty
+       with VectorEffectProperty
+       with VisibilityProperty
+       with WebkitAppearanceProperty
+       with WebkitMaskRepeatXProperty
+       with WebkitMaskRepeatYProperty
+       with WebkitOverflowScrollingProperty
+       with WebkitTouchCalloutProperty
+       with WebkitUserModifyProperty
+       with WhiteSpaceProperty
+       with WordBreakProperty
+       with WordWrapProperty
+       with WritingModeProperty
   
   @js.native
-  sealed trait ridge extends LineStyle
+  sealed trait ridge
+    extends LineStyle
+       with BorderBlockEndStyleProperty
+       with BorderBlockStartStyleProperty
+       with BorderBlockStyleProperty
+       with BorderBottomStyleProperty
+       with BorderInlineEndStyleProperty
+       with BorderInlineStartStyleProperty
+       with BorderInlineStyleProperty
+       with BorderLeftStyleProperty
+       with BorderRightStyleProperty
+       with BorderTopStyleProperty
   
   @js.native
   sealed trait right
@@ -4883,7 +5772,9 @@ object csstypeStrings {
   sealed trait `sans-serif` extends GenericFamily
   
   @js.native
-  sealed trait saturation extends BlendMode
+  sealed trait saturation
+    extends BlendMode
+       with MixBlendModeProperty
   
   @js.native
   sealed trait `scale-down` extends ObjectFitProperty
@@ -4910,7 +5801,9 @@ object csstypeStrings {
   sealed trait scalethumbtick extends MozAppearanceProperty
   
   @js.native
-  sealed trait screen extends BlendMode
+  sealed trait screen
+    extends BlendMode
+       with MixBlendModeProperty
   
   @js.native
   sealed trait scroll
@@ -4925,7 +5818,7 @@ object csstypeStrings {
   sealed trait `scroll-position` extends _AnimateableFeature
   
   @js.native
-  sealed trait scrollbar extends MsOverflowStyleProperty
+  sealed trait scrollbar_ extends MsOverflowStyleProperty
   
   @js.native
   sealed trait `scrollbarbutton-down` extends MozAppearanceProperty
@@ -4959,7 +5852,8 @@ object csstypeStrings {
   
   @js.native
   sealed trait searchfield
-    extends Compat
+    extends AppearanceProperty
+       with Compat
        with MozAppearanceProperty
        with WebkitAppearanceProperty
   
@@ -5076,7 +5970,8 @@ object csstypeStrings {
   
   @js.native
   sealed trait `slider-horizontal`
-    extends Compat
+    extends AppearanceProperty
+       with Compat
        with WebkitAppearanceProperty
   
   @js.native
@@ -5111,11 +6006,23 @@ object csstypeStrings {
   sealed trait snow extends NamedColor
   
   @js.native
-  sealed trait `soft-light` extends BlendMode
+  sealed trait `soft-light`
+    extends BlendMode
+       with MixBlendModeProperty
   
   @js.native
   sealed trait solid
     extends LineStyle
+       with BorderBlockEndStyleProperty
+       with BorderBlockStartStyleProperty
+       with BorderBlockStyleProperty
+       with BorderBottomStyleProperty
+       with BorderInlineEndStyleProperty
+       with BorderInlineStartStyleProperty
+       with BorderInlineStyleProperty
+       with BorderLeftStyleProperty
+       with BorderRightStyleProperty
+       with BorderTopStyleProperty
        with TextDecorationStyleProperty
        with _TextDecorationProperty
   
@@ -5183,7 +6090,8 @@ object csstypeStrings {
   
   @js.native
   sealed trait `square-button`
-    extends Compat
+    extends AppearanceProperty
+       with Compat
        with WebkitAppearanceProperty
   
   @js.native
@@ -5378,7 +6286,8 @@ object csstypeStrings {
   
   @js.native
   sealed trait textarea
-    extends Compat
+    extends AppearanceProperty
+       with Compat
        with WebkitAppearanceProperty
   
   @js.native
@@ -5511,7 +6420,140 @@ object csstypeStrings {
        with _FontVariantProperty
   
   @js.native
-  sealed trait unset extends Globals
+  sealed trait unset
+    extends Globals
+       with AlignmentBaselineProperty
+       with AppearanceProperty
+       with BackfaceVisibilityProperty
+       with BorderBlockEndStyleProperty
+       with BorderBlockStartStyleProperty
+       with BorderBlockStyleProperty
+       with BorderBottomStyleProperty
+       with BorderCollapseProperty
+       with BorderInlineEndStyleProperty
+       with BorderInlineStartStyleProperty
+       with BorderInlineStyleProperty
+       with BorderLeftStyleProperty
+       with BorderRightStyleProperty
+       with BorderTopStyleProperty
+       with BoxAlignProperty
+       with BoxDecorationBreakProperty
+       with BoxDirectionProperty
+       with BoxLinesProperty
+       with BoxOrientProperty
+       with BoxPackProperty
+       with BoxSizingProperty
+       with BreakAfterProperty
+       with BreakBeforeProperty
+       with BreakInsideProperty
+       with CaptionSideProperty
+       with ClearProperty
+       with ClipRuleProperty
+       with ColorAdjustProperty
+       with ColorInterpolationProperty
+       with ColorRenderingProperty
+       with ColumnFillProperty
+       with ColumnSpanProperty
+       with DirectionProperty
+       with DominantBaselineProperty
+       with EmptyCellsProperty
+       with FillRuleProperty
+       with FlexDirectionProperty
+       with FlexWrapProperty
+       with FloatProperty
+       with FontKerningProperty
+       with FontOpticalSizingProperty
+       with FontVariantCapsProperty
+       with FontVariantPositionProperty
+       with HyphensProperty
+       with ImageRenderingProperty
+       with ImeModeProperty
+       with IsolationProperty
+       with LineBreakProperty
+       with ListStylePositionProperty
+       with MaskBorderModeProperty
+       with MaskTypeProperty
+       with MixBlendModeProperty
+       with MozAppearanceProperty
+       with MozFloatEdgeProperty
+       with MozOrientProperty
+       with MozStackSizingProperty
+       with MozTextBlinkProperty
+       with MozUserFocusProperty
+       with MozUserInputProperty
+       with MozUserModifyProperty
+       with MozWindowDraggingProperty
+       with MozWindowShadowProperty
+       with MsAcceleratorProperty
+       with MsBlockProgressionProperty
+       with MsContentZoomChainingProperty
+       with MsContentZoomSnapTypeProperty
+       with MsContentZoomingProperty
+       with MsHighContrastAdjustProperty
+       with MsImeAlignProperty
+       with MsOverflowStyleProperty
+       with MsScrollChainingProperty
+       with MsScrollRailsProperty
+       with MsScrollSnapTypeProperty
+       with MsScrollTranslationProperty
+       with MsTextAutospaceProperty
+       with MsTouchSelectProperty
+       with MsUserSelectProperty
+       with MsWrapFlowProperty
+       with MsWrapThroughProperty
+       with ObjectFitProperty
+       with OverflowAnchorProperty
+       with OverflowBlockProperty
+       with OverflowClipBoxProperty
+       with OverflowInlineProperty
+       with OverflowWrapProperty
+       with OverflowXProperty
+       with OverflowYProperty
+       with OverscrollBehaviorXProperty
+       with OverscrollBehaviorYProperty
+       with PageBreakAfterProperty
+       with PageBreakBeforeProperty
+       with PageBreakInsideProperty
+       with PointerEventsProperty
+       with PositionProperty
+       with ResizeProperty
+       with RubyAlignProperty
+       with RubyMergeProperty
+       with RubyPositionProperty
+       with ScrollBehaviorProperty
+       with ScrollSnapStopProperty
+       with ScrollSnapTypeXProperty
+       with ScrollSnapTypeYProperty
+       with ScrollbarWidthProperty
+       with ShapeRenderingProperty
+       with StrokeLinecapProperty
+       with StrokeLinejoinProperty
+       with TableLayoutProperty
+       with TextAlignLastProperty
+       with TextAlignProperty
+       with TextAnchorProperty
+       with TextDecorationSkipInkProperty
+       with TextDecorationStyleProperty
+       with TextJustifyProperty
+       with TextOrientationProperty
+       with TextRenderingProperty
+       with TextTransformProperty
+       with TransformBoxProperty
+       with TransformStyleProperty
+       with UnicodeBidiProperty
+       with UserSelectProperty
+       with VectorEffectProperty
+       with VisibilityProperty
+       with WebkitAppearanceProperty
+       with WebkitMaskRepeatXProperty
+       with WebkitMaskRepeatYProperty
+       with WebkitOverflowScrollingProperty
+       with WebkitTouchCalloutProperty
+       with WebkitUserModifyProperty
+       with WhiteSpaceProperty
+       with WordBreakProperty
+       with WordWrapProperty
+       with WritingModeProperty
   
   @js.native
   sealed trait uppercase extends TextTransformProperty
@@ -6684,7 +7726,7 @@ object csstypeStrings {
   @scala.inline
   def `[referrerPolicy]`: `[referrerPolicy]` = "[referrerPolicy]".asInstanceOf[`[referrerPolicy]`]
   @scala.inline
-  def `[referrerpolicy]`: `[referrerpolicy]` = "[referrerpolicy]".asInstanceOf[`[referrerpolicy]`]
+  def `[referrerpolicy]_`: `[referrerpolicy]_` = "[referrerpolicy]".asInstanceOf[`[referrerpolicy]_`]
   @scala.inline
   def `[rel]`: `[rel]` = "[rel]".asInstanceOf[`[rel]`]
   @scala.inline
@@ -7198,7 +8240,7 @@ object csstypeStrings {
   @scala.inline
   def currentColor: currentColor = "currentColor".asInstanceOf[currentColor]
   @scala.inline
-  def currentcolor: currentcolor = "currentcolor".asInstanceOf[currentcolor]
+  def currentcolor_ : currentcolor_ = "currentcolor".asInstanceOf[currentcolor_]
   @scala.inline
   def cursive: cursive = "cursive".asInstanceOf[cursive]
   @scala.inline
@@ -7700,7 +8742,7 @@ object csstypeStrings {
   @scala.inline
   def mediumvioletred: mediumvioletred = "mediumvioletred".asInstanceOf[mediumvioletred]
   @scala.inline
-  def menu: menu = "menu".asInstanceOf[menu]
+  def menu_ : menu_ = "menu".asInstanceOf[menu_]
   @scala.inline
   def menuarrow: menuarrow = "menuarrow".asInstanceOf[menuarrow]
   @scala.inline
@@ -8066,7 +9108,7 @@ object csstypeStrings {
   @scala.inline
   def `scroll-position`: `scroll-position` = "scroll-position".asInstanceOf[`scroll-position`]
   @scala.inline
-  def scrollbar: scrollbar = "scrollbar".asInstanceOf[scrollbar]
+  def scrollbar_ : scrollbar_ = "scrollbar".asInstanceOf[scrollbar_]
   @scala.inline
   def `scrollbarbutton-down`: `scrollbarbutton-down` = "scrollbarbutton-down".asInstanceOf[`scrollbarbutton-down`]
   @scala.inline

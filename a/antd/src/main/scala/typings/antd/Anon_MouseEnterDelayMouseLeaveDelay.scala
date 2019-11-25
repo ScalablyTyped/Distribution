@@ -23,7 +23,7 @@ object Anon_MouseEnterDelayMouseLeaveDelay {
     transitionName: String,
     trigger: TooltipTrigger
   ): Anon_MouseEnterDelayMouseLeaveDelay = {
-    val __obj = js.Dynamic.literal(mouseEnterDelay = mouseEnterDelay, mouseLeaveDelay = mouseLeaveDelay, placement = placement, transitionName = transitionName, trigger = trigger)
+    val __obj = js.Dynamic.literal(mouseEnterDelay = mouseEnterDelay.asInstanceOf[js.Any], mouseLeaveDelay = mouseLeaveDelay.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], transitionName = transitionName.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MouseEnterDelayMouseLeaveDelay]
   }

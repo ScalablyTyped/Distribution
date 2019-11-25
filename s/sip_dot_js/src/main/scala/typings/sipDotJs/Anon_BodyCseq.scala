@@ -15,9 +15,9 @@ object Anon_BodyCseq {
   @scala.inline
   def apply(body: Body = null, cseq: Int | Double = null, extraHeaders: js.Array[String] = null): Anon_BodyCseq = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (cseq != null) __obj.updateDynamic("cseq")(cseq.asInstanceOf[js.Any])
-    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
+    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BodyCseq]
   }
 }

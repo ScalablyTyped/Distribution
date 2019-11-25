@@ -30,11 +30,11 @@ object RepoSource {
     tagName: String = null
   ): RepoSource = {
     val __obj = js.Dynamic.literal()
-    if (branchName != null) __obj.updateDynamic("branchName")(branchName)
-    if (commitSha != null) __obj.updateDynamic("commitSha")(commitSha)
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
-    if (repoName != null) __obj.updateDynamic("repoName")(repoName)
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (branchName != null) __obj.updateDynamic("branchName")(branchName.asInstanceOf[js.Any])
+    if (commitSha != null) __obj.updateDynamic("commitSha")(commitSha.asInstanceOf[js.Any])
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
+    if (repoName != null) __obj.updateDynamic("repoName")(repoName.asInstanceOf[js.Any])
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepoSource]
   }
 }

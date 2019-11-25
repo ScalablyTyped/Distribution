@@ -11,7 +11,7 @@ trait IAnchorScrollProvider extends IServiceProvider {
 object IAnchorScrollProvider {
   @scala.inline
   def apply($get: js.Any, disableAutoScrolling: () => Unit): IAnchorScrollProvider = {
-    val __obj = js.Dynamic.literal($get = $get, disableAutoScrolling = js.Any.fromFunction0(disableAutoScrolling))
+    val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], disableAutoScrolling = js.Any.fromFunction0(disableAutoScrolling))
   
     __obj.asInstanceOf[IAnchorScrollProvider]
   }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ɵSWITCH_ELEMENT_REF_FACTORY__POST_R3__
   extends TopLevel[
       js.Function1[
-        /* import warning: ImportType.apply Failed type conversion: typeof ElementRef */ /* ElementRefToken */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof ElementRef */ /* ElementRefToken */ js.Any, 
         ElementRef[js.Any]
       ]
     ]

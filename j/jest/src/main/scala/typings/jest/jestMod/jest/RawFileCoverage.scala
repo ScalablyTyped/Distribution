@@ -31,8 +31,8 @@ object RawFileCoverage {
     statementMap: NumberDictionary[js.Any],
     inputSourceMap: js.Object = null
   ): RawFileCoverage = {
-    val __obj = js.Dynamic.literal(b = b, branchMap = branchMap, f = f, fnMap = fnMap, l = l, path = path, s = s, statementMap = statementMap)
-    if (inputSourceMap != null) __obj.updateDynamic("inputSourceMap")(inputSourceMap)
+    val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], branchMap = branchMap.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], fnMap = fnMap.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], statementMap = statementMap.asInstanceOf[js.Any])
+    if (inputSourceMap != null) __obj.updateDynamic("inputSourceMap")(inputSourceMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawFileCoverage]
   }
 }

@@ -121,8 +121,8 @@ object IOptions {
     unique: Boolean,
     transform: /* entry */ EntryItem => T = null
   ): IOptions[T] = {
-    val __obj = js.Dynamic.literal(absolute = absolute, brace = brace, cwd = cwd, deep = deep.asInstanceOf[js.Any], dot = dot, extension = extension, followSymlinkedDirectories = followSymlinkedDirectories, globstar = globstar, ignore = ignore, markDirectories = markDirectories, matchBase = matchBase, nobrace = nobrace, nocase = nocase, noext = noext, noglobstar = noglobstar, onlyDirectories = onlyDirectories, onlyFiles = onlyFiles, stats = stats, unique = unique)
-    __obj.updateDynamic("case")(`case`)
+    val __obj = js.Dynamic.literal(absolute = absolute.asInstanceOf[js.Any], brace = brace.asInstanceOf[js.Any], cwd = cwd.asInstanceOf[js.Any], deep = deep.asInstanceOf[js.Any], dot = dot.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], followSymlinkedDirectories = followSymlinkedDirectories.asInstanceOf[js.Any], globstar = globstar.asInstanceOf[js.Any], ignore = ignore.asInstanceOf[js.Any], markDirectories = markDirectories.asInstanceOf[js.Any], matchBase = matchBase.asInstanceOf[js.Any], nobrace = nobrace.asInstanceOf[js.Any], nocase = nocase.asInstanceOf[js.Any], noext = noext.asInstanceOf[js.Any], noglobstar = noglobstar.asInstanceOf[js.Any], onlyDirectories = onlyDirectories.asInstanceOf[js.Any], onlyFiles = onlyFiles.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], unique = unique.asInstanceOf[js.Any])
+    __obj.updateDynamic("case")(`case`.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
     __obj.asInstanceOf[IOptions[T]]
   }

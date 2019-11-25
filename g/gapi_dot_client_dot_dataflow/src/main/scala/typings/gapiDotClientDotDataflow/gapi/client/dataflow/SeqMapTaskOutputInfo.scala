@@ -15,8 +15,8 @@ object SeqMapTaskOutputInfo {
   @scala.inline
   def apply(sink: Sink = null, tag: String = null): SeqMapTaskOutputInfo = {
     val __obj = js.Dynamic.literal()
-    if (sink != null) __obj.updateDynamic("sink")(sink)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (sink != null) __obj.updateDynamic("sink")(sink.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeqMapTaskOutputInfo]
   }
 }

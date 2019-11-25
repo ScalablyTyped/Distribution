@@ -20,7 +20,7 @@ object Anon_Constants {
     initialState: js.Array[SymbolicTensor | Tensor[Rank]],
     inputs: Tensor[Rank] | SymbolicTensor
   ): Anon_Constants = {
-    val __obj = js.Dynamic.literal(constants = constants, initialState = initialState, inputs = inputs.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constants = constants.asInstanceOf[js.Any], initialState = initialState.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Constants]
   }

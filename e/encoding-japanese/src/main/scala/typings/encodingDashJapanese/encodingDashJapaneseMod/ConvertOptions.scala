@@ -22,9 +22,9 @@ object ConvertOptions {
     from: Encoding = null,
     `type`: string | arraybuffer | array = null
   ): ConvertOptions = {
-    val __obj = js.Dynamic.literal(to = to)
+    val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
     if (bom != null) __obj.updateDynamic("bom")(bom.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConvertOptions]
   }

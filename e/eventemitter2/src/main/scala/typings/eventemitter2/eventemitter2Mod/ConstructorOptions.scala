@@ -42,11 +42,11 @@ object ConstructorOptions {
     wildcard: js.UndefOr[Boolean] = js.undefined
   ): ConstructorOptions = {
     val __obj = js.Dynamic.literal()
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (maxListeners != null) __obj.updateDynamic("maxListeners")(maxListeners.asInstanceOf[js.Any])
-    if (!js.isUndefined(newListener)) __obj.updateDynamic("newListener")(newListener)
-    if (!js.isUndefined(verboseMemoryLeak)) __obj.updateDynamic("verboseMemoryLeak")(verboseMemoryLeak)
-    if (!js.isUndefined(wildcard)) __obj.updateDynamic("wildcard")(wildcard)
+    if (!js.isUndefined(newListener)) __obj.updateDynamic("newListener")(newListener.asInstanceOf[js.Any])
+    if (!js.isUndefined(verboseMemoryLeak)) __obj.updateDynamic("verboseMemoryLeak")(verboseMemoryLeak.asInstanceOf[js.Any])
+    if (!js.isUndefined(wildcard)) __obj.updateDynamic("wildcard")(wildcard.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorOptions]
   }
 }

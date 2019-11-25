@@ -24,9 +24,9 @@ object IOptions {
   @scala.inline
   def apply(mimeType: String = null, modelDB: IModelDB = null, value: String = null): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
-    if (modelDB != null) __obj.updateDynamic("modelDB")(modelDB)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
+    if (modelDB != null) __obj.updateDynamic("modelDB")(modelDB.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

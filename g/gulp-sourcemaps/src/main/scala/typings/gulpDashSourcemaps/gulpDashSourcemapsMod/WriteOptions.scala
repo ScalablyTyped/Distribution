@@ -23,9 +23,9 @@ object WriteOptions {
     sourceRoot: String | WriteMapper = null
   ): WriteOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addComment)) __obj.updateDynamic("addComment")(addComment)
+    if (!js.isUndefined(addComment)) __obj.updateDynamic("addComment")(addComment.asInstanceOf[js.Any])
     if (clone != null) __obj.updateDynamic("clone")(clone.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeContent)) __obj.updateDynamic("includeContent")(includeContent)
+    if (!js.isUndefined(includeContent)) __obj.updateDynamic("includeContent")(includeContent.asInstanceOf[js.Any])
     if (sourceMappingURLPrefix != null) __obj.updateDynamic("sourceMappingURLPrefix")(sourceMappingURLPrefix.asInstanceOf[js.Any])
     if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteOptions]

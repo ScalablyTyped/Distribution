@@ -30,15 +30,15 @@ object ParagraphStyle {
     spacingMode: String = null
   ): ParagraphStyle = {
     val __obj = js.Dynamic.literal()
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (indentEnd != null) __obj.updateDynamic("indentEnd")(indentEnd)
-    if (indentFirstLine != null) __obj.updateDynamic("indentFirstLine")(indentFirstLine)
-    if (indentStart != null) __obj.updateDynamic("indentStart")(indentStart)
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (indentEnd != null) __obj.updateDynamic("indentEnd")(indentEnd.asInstanceOf[js.Any])
+    if (indentFirstLine != null) __obj.updateDynamic("indentFirstLine")(indentFirstLine.asInstanceOf[js.Any])
+    if (indentStart != null) __obj.updateDynamic("indentStart")(indentStart.asInstanceOf[js.Any])
     if (lineSpacing != null) __obj.updateDynamic("lineSpacing")(lineSpacing.asInstanceOf[js.Any])
-    if (spaceAbove != null) __obj.updateDynamic("spaceAbove")(spaceAbove)
-    if (spaceBelow != null) __obj.updateDynamic("spaceBelow")(spaceBelow)
-    if (spacingMode != null) __obj.updateDynamic("spacingMode")(spacingMode)
+    if (spaceAbove != null) __obj.updateDynamic("spaceAbove")(spaceAbove.asInstanceOf[js.Any])
+    if (spaceBelow != null) __obj.updateDynamic("spaceBelow")(spaceBelow.asInstanceOf[js.Any])
+    if (spacingMode != null) __obj.updateDynamic("spacingMode")(spacingMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParagraphStyle]
   }
 }

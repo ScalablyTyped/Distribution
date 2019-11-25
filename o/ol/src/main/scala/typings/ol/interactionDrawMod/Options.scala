@@ -49,23 +49,23 @@ object Options {
     wrapX: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (clickTolerance != null) __obj.updateDynamic("clickTolerance")(clickTolerance.asInstanceOf[js.Any])
-    if (condition != null) __obj.updateDynamic("condition")(condition)
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
     if (dragVertexDelay != null) __obj.updateDynamic("dragVertexDelay")(dragVertexDelay.asInstanceOf[js.Any])
-    if (features != null) __obj.updateDynamic("features")(features)
-    if (finishCondition != null) __obj.updateDynamic("finishCondition")(finishCondition)
-    if (!js.isUndefined(freehand)) __obj.updateDynamic("freehand")(freehand)
-    if (freehandCondition != null) __obj.updateDynamic("freehandCondition")(freehandCondition)
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
+    if (finishCondition != null) __obj.updateDynamic("finishCondition")(finishCondition.asInstanceOf[js.Any])
+    if (!js.isUndefined(freehand)) __obj.updateDynamic("freehand")(freehand.asInstanceOf[js.Any])
+    if (freehandCondition != null) __obj.updateDynamic("freehandCondition")(freehandCondition.asInstanceOf[js.Any])
     if (geometryFunction != null) __obj.updateDynamic("geometryFunction")(js.Any.fromFunction2(geometryFunction))
-    if (geometryName != null) __obj.updateDynamic("geometryName")(geometryName)
+    if (geometryName != null) __obj.updateDynamic("geometryName")(geometryName.asInstanceOf[js.Any])
     if (maxPoints != null) __obj.updateDynamic("maxPoints")(maxPoints.asInstanceOf[js.Any])
     if (minPoints != null) __obj.updateDynamic("minPoints")(minPoints.asInstanceOf[js.Any])
     if (snapTolerance != null) __obj.updateDynamic("snapTolerance")(snapTolerance.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (!js.isUndefined(stopClick)) __obj.updateDynamic("stopClick")(stopClick)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopClick)) __obj.updateDynamic("stopClick")(stopClick.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX)
+    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

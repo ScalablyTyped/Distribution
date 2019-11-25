@@ -12,7 +12,7 @@ trait Anon_InitialProps extends js.Object {
 object Anon_InitialProps {
   @scala.inline
   def apply(initialState: js.Any, isServer: Boolean): Anon_InitialProps = {
-    val __obj = js.Dynamic.literal(initialState = initialState, isServer = isServer)
+    val __obj = js.Dynamic.literal(initialState = initialState.asInstanceOf[js.Any], isServer = isServer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_InitialProps]
   }

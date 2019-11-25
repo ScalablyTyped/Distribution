@@ -26,11 +26,11 @@ object PlaygroundOptions {
     width: Int | Double = null
   ): PlaygroundOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableCollision)) __obj.updateDynamic("disableCollision")(disableCollision)
+    if (!js.isUndefined(disableCollision)) __obj.updateDynamic("disableCollision")(disableCollision.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyTracker)) __obj.updateDynamic("keyTracker")(keyTracker)
-    if (!js.isUndefined(mouseTracker)) __obj.updateDynamic("mouseTracker")(mouseTracker)
-    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(keyTracker)) __obj.updateDynamic("keyTracker")(keyTracker.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseTracker)) __obj.updateDynamic("mouseTracker")(mouseTracker.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (refreshRate != null) __obj.updateDynamic("refreshRate")(refreshRate.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaygroundOptions]

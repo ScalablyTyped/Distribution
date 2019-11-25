@@ -32,11 +32,11 @@ object QueryCellInfoEventArgs {
     data: js.Any = null
   ): QueryCellInfoEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (cellElement != null) __obj.updateDynamic("cellElement")(cellElement)
-    if (cellValue != null) __obj.updateDynamic("cellValue")(cellValue)
-    if (column != null) __obj.updateDynamic("column")(column)
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (cellElement != null) __obj.updateDynamic("cellElement")(cellElement.asInstanceOf[js.Any])
+    if (cellValue != null) __obj.updateDynamic("cellValue")(cellValue.asInstanceOf[js.Any])
+    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryCellInfoEventArgs]
   }
 }

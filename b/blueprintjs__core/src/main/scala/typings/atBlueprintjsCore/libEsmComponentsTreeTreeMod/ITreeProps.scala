@@ -59,8 +59,8 @@ object ITreeProps {
     onNodeMouseEnter: (/* node */ ITreeNode[T], /* nodePath */ js.Array[Double], /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
     onNodeMouseLeave: (/* node */ ITreeNode[T], /* nodePath */ js.Array[Double], /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null
   ): ITreeProps[T] = {
-    val __obj = js.Dynamic.literal(contents = contents)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (onNodeClick != null) __obj.updateDynamic("onNodeClick")(js.Any.fromFunction3(onNodeClick))
     if (onNodeCollapse != null) __obj.updateDynamic("onNodeCollapse")(js.Any.fromFunction3(onNodeCollapse))
     if (onNodeContextMenu != null) __obj.updateDynamic("onNodeContextMenu")(js.Any.fromFunction3(onNodeContextMenu))

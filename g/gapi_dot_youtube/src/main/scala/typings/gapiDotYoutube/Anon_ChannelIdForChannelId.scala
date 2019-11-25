@@ -56,15 +56,15 @@ object Anon_ChannelIdForChannelId {
     order: String = null,
     pageToken: String = null
   ): Anon_ChannelIdForChannelId = {
-    val __obj = js.Dynamic.literal(part = part)
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
-    if (forChannelId != null) __obj.updateDynamic("forChannelId")(forChannelId)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(part = part.asInstanceOf[js.Any])
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
+    if (forChannelId != null) __obj.updateDynamic("forChannelId")(forChannelId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (!js.isUndefined(mine)) __obj.updateDynamic("mine")(mine)
-    if (!js.isUndefined(mySubscripbers)) __obj.updateDynamic("mySubscripbers")(mySubscripbers)
-    if (order != null) __obj.updateDynamic("order")(order)
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (!js.isUndefined(mine)) __obj.updateDynamic("mine")(mine.asInstanceOf[js.Any])
+    if (!js.isUndefined(mySubscripbers)) __obj.updateDynamic("mySubscripbers")(mySubscripbers.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChannelIdForChannelId]
   }
 }

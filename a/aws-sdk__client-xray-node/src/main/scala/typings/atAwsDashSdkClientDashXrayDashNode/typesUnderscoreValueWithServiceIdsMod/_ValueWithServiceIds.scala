@@ -25,7 +25,7 @@ object _ValueWithServiceIds {
     ServiceIds: js.Array[_ServiceId] | Iterable[_ServiceId] = null
   ): _ValueWithServiceIds = {
     val __obj = js.Dynamic.literal()
-    if (AnnotationValue != null) __obj.updateDynamic("AnnotationValue")(AnnotationValue)
+    if (AnnotationValue != null) __obj.updateDynamic("AnnotationValue")(AnnotationValue.asInstanceOf[js.Any])
     if (ServiceIds != null) __obj.updateDynamic("ServiceIds")(ServiceIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ValueWithServiceIds]
   }

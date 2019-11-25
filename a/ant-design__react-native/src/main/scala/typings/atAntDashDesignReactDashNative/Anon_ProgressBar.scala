@@ -14,7 +14,7 @@ trait Anon_ProgressBar extends js.Object {
 object Anon_ProgressBar {
   @scala.inline
   def apply(progressBar: RegisteredStyle[ViewStyle], progressOuter: RegisteredStyle[ViewStyle]): Anon_ProgressBar = {
-    val __obj = js.Dynamic.literal(progressBar = progressBar, progressOuter = progressOuter)
+    val __obj = js.Dynamic.literal(progressBar = progressBar.asInstanceOf[js.Any], progressOuter = progressOuter.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ProgressBar]
   }

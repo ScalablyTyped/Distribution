@@ -27,8 +27,8 @@ object Any {
   @scala.inline
   def apply(typeUrl: String = null, value: String = null): Any = {
     val __obj = js.Dynamic.literal()
-    if (typeUrl != null) __obj.updateDynamic("typeUrl")(typeUrl)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (typeUrl != null) __obj.updateDynamic("typeUrl")(typeUrl.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Any]
   }
 }

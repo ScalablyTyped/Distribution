@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
 object IDirectoryOptions {
   @scala.inline
   def apply(iconRegistry: IIconRegistry, manager: IDocumentManager): IDirectoryOptions = {
-    val __obj = js.Dynamic.literal(iconRegistry = iconRegistry, manager = manager)
+    val __obj = js.Dynamic.literal(iconRegistry = iconRegistry.asInstanceOf[js.Any], manager = manager.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IDirectoryOptions]
   }

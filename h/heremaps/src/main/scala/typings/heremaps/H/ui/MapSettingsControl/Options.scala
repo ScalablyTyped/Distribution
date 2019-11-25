@@ -20,9 +20,9 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(incidents: Layer, alignment: LayoutAlignment = null, entries: js.Array[MapTypeEntry] = null): Options = {
-    val __obj = js.Dynamic.literal(incidents = incidents)
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
-    if (entries != null) __obj.updateDynamic("entries")(entries)
+    val __obj = js.Dynamic.literal(incidents = incidents.asInstanceOf[js.Any])
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

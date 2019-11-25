@@ -32,13 +32,13 @@ object TypeQueryResult {
     origin: String = null,
     url: String = null
   ): TypeQueryResult = {
-    val __obj = js.Dynamic.literal(guess = guess)
-    __obj.updateDynamic("type")(`type`)
-    if (doc != null) __obj.updateDynamic("doc")(doc)
-    if (exprName != null) __obj.updateDynamic("exprName")(exprName)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (url != null) __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(guess = guess.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (doc != null) __obj.updateDynamic("doc")(doc.asInstanceOf[js.Any])
+    if (exprName != null) __obj.updateDynamic("exprName")(exprName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeQueryResult]
   }
 }

@@ -64,8 +64,8 @@ object RideStep {
     time: Double,
     assist_action: String = null
   ): RideStep = {
-    val __obj = js.Dynamic.literal(action = action, distance = distance, end_location = end_location, instruction = instruction, orientation = orientation, path = path, road = road, start_location = start_location, time = time)
-    if (assist_action != null) __obj.updateDynamic("assist_action")(assist_action)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], end_location = end_location.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], road = road.asInstanceOf[js.Any], start_location = start_location.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
+    if (assist_action != null) __obj.updateDynamic("assist_action")(assist_action.asInstanceOf[js.Any])
     __obj.asInstanceOf[RideStep]
   }
 }

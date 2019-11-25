@@ -18,9 +18,9 @@ object GridMessages {
     noRecords: String = null
   ): GridMessages = {
     val __obj = js.Dynamic.literal()
-    if (commands != null) __obj.updateDynamic("commands")(commands)
-    if (expandCollapseColumnHeader != null) __obj.updateDynamic("expandCollapseColumnHeader")(expandCollapseColumnHeader)
-    if (noRecords != null) __obj.updateDynamic("noRecords")(noRecords)
+    if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
+    if (expandCollapseColumnHeader != null) __obj.updateDynamic("expandCollapseColumnHeader")(expandCollapseColumnHeader.asInstanceOf[js.Any])
+    if (noRecords != null) __obj.updateDynamic("noRecords")(noRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridMessages]
   }
 }

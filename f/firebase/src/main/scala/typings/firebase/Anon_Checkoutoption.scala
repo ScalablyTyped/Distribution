@@ -28,12 +28,12 @@ object Anon_Checkoutoption {
     value: Int | Double = null
   ): Anon_Checkoutoption = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (checkout_option != null) __obj.updateDynamic("checkout_option")(checkout_option)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (checkout_option != null) __obj.updateDynamic("checkout_option")(checkout_option.asInstanceOf[js.Any])
     if (checkout_step != null) __obj.updateDynamic("checkout_step")(checkout_step.asInstanceOf[js.Any])
-    if (coupon != null) __obj.updateDynamic("coupon")(coupon)
-    if (currency != null) __obj.updateDynamic("currency")(currency)
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (coupon != null) __obj.updateDynamic("coupon")(coupon.asInstanceOf[js.Any])
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Checkoutoption]
   }

@@ -20,8 +20,8 @@ object Anon_Context {
   ): Anon_Context = {
     val __obj = js.Dynamic.literal()
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(lastRangeBackward)) __obj.updateDynamic("lastRangeBackward")(lastRangeBackward)
-    if (selectionAttributes != null) __obj.updateDynamic("selectionAttributes")(selectionAttributes)
+    if (!js.isUndefined(lastRangeBackward)) __obj.updateDynamic("lastRangeBackward")(lastRangeBackward.asInstanceOf[js.Any])
+    if (selectionAttributes != null) __obj.updateDynamic("selectionAttributes")(selectionAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Context]
   }
 }

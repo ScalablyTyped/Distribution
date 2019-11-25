@@ -19,8 +19,8 @@ object IEnumValueOptions {
     uninterpretedOption: js.Array[IUninterpretedOption] = null
   ): IEnumValueOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated)
-    if (uninterpretedOption != null) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption)
+    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (uninterpretedOption != null) __obj.updateDynamic("uninterpretedOption")(uninterpretedOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEnumValueOptions]
   }
 }

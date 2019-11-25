@@ -25,9 +25,9 @@ object NextArgs {
     key: String | Double | js.Symbol = null,
     value: js.Any = null
   ): NextArgs = {
-    val __obj = js.Dynamic.literal(avoidConstraints = avoidConstraints, contextInterceptor = js.Any.fromFunction1(contextInterceptor), isMultiInject = isMultiInject, serviceIdentifier = serviceIdentifier.asInstanceOf[js.Any], targetType = targetType)
+    val __obj = js.Dynamic.literal(avoidConstraints = avoidConstraints.asInstanceOf[js.Any], contextInterceptor = js.Any.fromFunction1(contextInterceptor), isMultiInject = isMultiInject.asInstanceOf[js.Any], serviceIdentifier = serviceIdentifier.asInstanceOf[js.Any], targetType = targetType.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[NextArgs]
   }
 }

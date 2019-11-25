@@ -54,7 +54,7 @@ object TestResult {
     testerDNS: String,
     url: String
   ): TestResult = {
-    val __obj = js.Dynamic.literal(average = average, bwDown = bwDown, bwUp = bwUp, completed = completed, connectivity = connectivity, from = from, fvonly = fvonly, id = id, latency = latency, location = location, median = median, mobile = mobile, plr = plr, runs = runs, standardDeviation = standardDeviation, successfulFVRuns = successfulFVRuns, summary = summary, testUrl = testUrl, tester = tester, testerDNS = testerDNS, url = url)
+    val __obj = js.Dynamic.literal(average = average.asInstanceOf[js.Any], bwDown = bwDown.asInstanceOf[js.Any], bwUp = bwUp.asInstanceOf[js.Any], completed = completed.asInstanceOf[js.Any], connectivity = connectivity.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], fvonly = fvonly.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], latency = latency.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], median = median.asInstanceOf[js.Any], mobile = mobile.asInstanceOf[js.Any], plr = plr.asInstanceOf[js.Any], runs = runs.asInstanceOf[js.Any], standardDeviation = standardDeviation.asInstanceOf[js.Any], successfulFVRuns = successfulFVRuns.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], testUrl = testUrl.asInstanceOf[js.Any], tester = tester.asInstanceOf[js.Any], testerDNS = testerDNS.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestResult]
   }

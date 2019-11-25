@@ -36,10 +36,10 @@ object CredentialCreationOptions {
     signal: AbortSignal = null
   ): CredentialCreationOptions = {
     val __obj = js.Dynamic.literal()
-    if (federated != null) __obj.updateDynamic("federated")(federated)
+    if (federated != null) __obj.updateDynamic("federated")(federated.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey)
-    if (signal != null) __obj.updateDynamic("signal")(signal)
+    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     __obj.asInstanceOf[CredentialCreationOptions]
   }
 }

@@ -17,7 +17,7 @@ trait Anon_CompleteFailName extends js.Object {
 object Anon_CompleteFailName {
   @scala.inline
   def apply(name: String, complete: () => Unit = null, fail: () => Unit = null, success: () => Unit = null): Anon_CompleteFailName = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))

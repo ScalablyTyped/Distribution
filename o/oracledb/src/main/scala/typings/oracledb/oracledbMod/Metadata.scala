@@ -64,7 +64,7 @@ object Metadata {
     precision: Double,
     scale: Double
   ): Metadata = {
-    val __obj = js.Dynamic.literal(byteSize = byteSize, dbType = dbType, dbTypeClass = dbTypeClass, dbTypeName = dbTypeName, fetchType = fetchType, name = name, nullable = nullable, precision = precision, scale = scale)
+    val __obj = js.Dynamic.literal(byteSize = byteSize.asInstanceOf[js.Any], dbType = dbType.asInstanceOf[js.Any], dbTypeClass = dbTypeClass.asInstanceOf[js.Any], dbTypeName = dbTypeName.asInstanceOf[js.Any], fetchType = fetchType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], precision = precision.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Metadata]
   }

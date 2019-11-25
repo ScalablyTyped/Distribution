@@ -18,7 +18,7 @@ trait TestResultsGroupsForBuild extends js.Object {
 object TestResultsGroupsForBuild {
   @scala.inline
   def apply(buildId: Double, fields: js.Array[FieldDetailsForTestResults]): TestResultsGroupsForBuild = {
-    val __obj = js.Dynamic.literal(buildId = buildId, fields = fields)
+    val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestResultsGroupsForBuild]
   }

@@ -31,13 +31,13 @@ object ContactFolder {
     singleValueExtendedProperties: js.Array[SingleValueLegacyExtendedProperty] = null
   ): ContactFolder = {
     val __obj = js.Dynamic.literal()
-    if (childFolders != null) __obj.updateDynamic("childFolders")(childFolders)
-    if (contacts != null) __obj.updateDynamic("contacts")(contacts)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (multiValueExtendedProperties != null) __obj.updateDynamic("multiValueExtendedProperties")(multiValueExtendedProperties)
-    if (parentFolderId != null) __obj.updateDynamic("parentFolderId")(parentFolderId)
-    if (singleValueExtendedProperties != null) __obj.updateDynamic("singleValueExtendedProperties")(singleValueExtendedProperties)
+    if (childFolders != null) __obj.updateDynamic("childFolders")(childFolders.asInstanceOf[js.Any])
+    if (contacts != null) __obj.updateDynamic("contacts")(contacts.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (multiValueExtendedProperties != null) __obj.updateDynamic("multiValueExtendedProperties")(multiValueExtendedProperties.asInstanceOf[js.Any])
+    if (parentFolderId != null) __obj.updateDynamic("parentFolderId")(parentFolderId.asInstanceOf[js.Any])
+    if (singleValueExtendedProperties != null) __obj.updateDynamic("singleValueExtendedProperties")(singleValueExtendedProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactFolder]
   }
 }

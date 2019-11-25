@@ -13,8 +13,8 @@ object Condition {
   @scala.inline
   def apply(parameter: js.Array[Parameter] = null, `type`: String = null): Condition = {
     val __obj = js.Dynamic.literal()
-    if (parameter != null) __obj.updateDynamic("parameter")(parameter)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (parameter != null) __obj.updateDynamic("parameter")(parameter.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Condition]
   }
 }

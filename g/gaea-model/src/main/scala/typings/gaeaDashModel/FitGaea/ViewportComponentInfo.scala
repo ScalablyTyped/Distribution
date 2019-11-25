@@ -23,8 +23,8 @@ trait ViewportComponentInfo extends js.Object {
 object ViewportComponentInfo {
   @scala.inline
   def apply(parentMapUniqueKey: String, props: ComponentProps, layoutChilds: js.Array[String] = null): ViewportComponentInfo = {
-    val __obj = js.Dynamic.literal(parentMapUniqueKey = parentMapUniqueKey, props = props)
-    if (layoutChilds != null) __obj.updateDynamic("layoutChilds")(layoutChilds)
+    val __obj = js.Dynamic.literal(parentMapUniqueKey = parentMapUniqueKey.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+    if (layoutChilds != null) __obj.updateDynamic("layoutChilds")(layoutChilds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewportComponentInfo]
   }
 }

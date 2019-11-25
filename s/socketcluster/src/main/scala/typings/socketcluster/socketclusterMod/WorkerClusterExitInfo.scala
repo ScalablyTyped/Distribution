@@ -15,7 +15,7 @@ trait WorkerClusterExitInfo extends js.Object {
 object WorkerClusterExitInfo {
   @scala.inline
   def apply(childProcess: ChildProcess, code: Double, pid: Double, signal: String): WorkerClusterExitInfo = {
-    val __obj = js.Dynamic.literal(childProcess = childProcess, code = code, pid = pid, signal = signal)
+    val __obj = js.Dynamic.literal(childProcess = childProcess.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], signal = signal.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkerClusterExitInfo]
   }

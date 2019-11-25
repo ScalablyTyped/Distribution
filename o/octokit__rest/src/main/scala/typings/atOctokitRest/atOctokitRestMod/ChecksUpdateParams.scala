@@ -72,15 +72,15 @@ object ChecksUpdateParams {
     started_at: String = null,
     status: queued | in_progress | completed = null
   ): ChecksUpdateParams = {
-    val __obj = js.Dynamic.literal(check_run_id = check_run_id, owner = owner, repo = repo)
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (completed_at != null) __obj.updateDynamic("completed_at")(completed_at)
+    val __obj = js.Dynamic.literal(check_run_id = check_run_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (completed_at != null) __obj.updateDynamic("completed_at")(completed_at.asInstanceOf[js.Any])
     if (conclusion != null) __obj.updateDynamic("conclusion")(conclusion.asInstanceOf[js.Any])
-    if (details_url != null) __obj.updateDynamic("details_url")(details_url)
-    if (external_id != null) __obj.updateDynamic("external_id")(external_id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (output != null) __obj.updateDynamic("output")(output)
-    if (started_at != null) __obj.updateDynamic("started_at")(started_at)
+    if (details_url != null) __obj.updateDynamic("details_url")(details_url.asInstanceOf[js.Any])
+    if (external_id != null) __obj.updateDynamic("external_id")(external_id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
+    if (started_at != null) __obj.updateDynamic("started_at")(started_at.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChecksUpdateParams]
   }

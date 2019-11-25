@@ -13,8 +13,8 @@ trait Anon_ByterangeUri extends js.Object {
 object Anon_ByterangeUri {
   @scala.inline
   def apply(uri: String, byterange: Byterange = null): Anon_ByterangeUri = {
-    val __obj = js.Dynamic.literal(uri = uri)
-    if (byterange != null) __obj.updateDynamic("byterange")(byterange)
+    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
+    if (byterange != null) __obj.updateDynamic("byterange")(byterange.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ByterangeUri]
   }
 }

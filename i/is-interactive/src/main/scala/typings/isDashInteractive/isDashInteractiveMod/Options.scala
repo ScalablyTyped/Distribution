@@ -17,7 +17,7 @@ object Options {
   @scala.inline
   def apply(stream: WritableStream = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (stream != null) __obj.updateDynamic("stream")(stream)
+    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

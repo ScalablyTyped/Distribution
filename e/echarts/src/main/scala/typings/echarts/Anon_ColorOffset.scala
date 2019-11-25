@@ -12,7 +12,7 @@ trait Anon_ColorOffset extends js.Object {
 object Anon_ColorOffset {
   @scala.inline
   def apply(color: String, offset: Double): Anon_ColorOffset = {
-    val __obj = js.Dynamic.literal(color = color, offset = offset)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColorOffset]
   }

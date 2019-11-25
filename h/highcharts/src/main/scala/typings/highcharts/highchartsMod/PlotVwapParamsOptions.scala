@@ -24,7 +24,7 @@ object PlotVwapParamsOptions {
   def apply(period: Int | Double = null, volumeSeriesID: String = null): PlotVwapParamsOptions = {
     val __obj = js.Dynamic.literal()
     if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (volumeSeriesID != null) __obj.updateDynamic("volumeSeriesID")(volumeSeriesID)
+    if (volumeSeriesID != null) __obj.updateDynamic("volumeSeriesID")(volumeSeriesID.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotVwapParamsOptions]
   }
 }

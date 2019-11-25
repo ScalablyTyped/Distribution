@@ -48,9 +48,9 @@ object IComponentOptions {
     tokens: ITokenFunctionOrObject[TViewProps, TTokens] = null
   ): IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics] = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (factoryOptions != null) __obj.updateDynamic("factoryOptions")(factoryOptions)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (factoryOptions != null) __obj.updateDynamic("factoryOptions")(factoryOptions.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(js.Any.fromFunction1(state))
     if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])

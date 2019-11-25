@@ -11,7 +11,7 @@ trait Anon_Placeholder extends js.Object {
 object Anon_Placeholder {
   @scala.inline
   def apply(placeholder: String): Anon_Placeholder = {
-    val __obj = js.Dynamic.literal(placeholder = placeholder)
+    val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Placeholder]
   }

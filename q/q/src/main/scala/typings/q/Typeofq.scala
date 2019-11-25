@@ -75,7 +75,7 @@ trait Typeofq extends js.Object {
   def nfbind[T](nodeFunction: js.Function1[/* repeated */ js.Any, _], args: js.Any*): js.Function1[/* repeated */ js.Any, Promise[T]] = js.native
   def nfcall[T](nodeFunction: js.Function1[/* repeated */ js.Any, _], args: js.Any*): Promise[T] = js.native
   def ninvoke[T](nodeModule: js.Any, functionName: String, args: js.Any*): Promise[T] = js.native
-  def noConflict(): /* import warning: ImportType.apply Failed type conversion: typeof Q */ js.Any = js.native
+  def noConflict(): /* import warning: importer.ImportType#apply Failed type conversion: typeof Q */ js.Any = js.native
   def npost[T](nodeModule: js.Any, functionName: String, args: js.Array[_]): Promise[T] = js.native
   def nsend[T](nodeModule: js.Any, functionName: String, args: js.Any*): Promise[T] = js.native
   def onerror(reason: js.Any): Unit = js.native

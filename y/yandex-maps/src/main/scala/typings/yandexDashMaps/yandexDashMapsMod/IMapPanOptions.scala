@@ -22,13 +22,13 @@ object IMapPanOptions {
     useMapMargin: js.UndefOr[Boolean] = js.undefined
   ): IMapPanOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkZoomRange)) __obj.updateDynamic("checkZoomRange")(checkZoomRange)
+    if (!js.isUndefined(checkZoomRange)) __obj.updateDynamic("checkZoomRange")(checkZoomRange.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(flying)) __obj.updateDynamic("flying")(flying)
-    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe)
-    if (timingFunction != null) __obj.updateDynamic("timingFunction")(timingFunction)
-    if (!js.isUndefined(useMapMargin)) __obj.updateDynamic("useMapMargin")(useMapMargin)
+    if (!js.isUndefined(flying)) __obj.updateDynamic("flying")(flying.asInstanceOf[js.Any])
+    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe.asInstanceOf[js.Any])
+    if (timingFunction != null) __obj.updateDynamic("timingFunction")(timingFunction.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMapMargin)) __obj.updateDynamic("useMapMargin")(useMapMargin.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMapPanOptions]
   }
 }

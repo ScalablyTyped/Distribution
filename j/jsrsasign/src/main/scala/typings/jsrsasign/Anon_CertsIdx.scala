@@ -12,7 +12,7 @@ trait Anon_CertsIdx extends js.Object {
 object Anon_CertsIdx {
   @scala.inline
   def apply(certsIdx: Double, signerInfos: js.Array[_]): Anon_CertsIdx = {
-    val __obj = js.Dynamic.literal(certsIdx = certsIdx, signerInfos = signerInfos)
+    val __obj = js.Dynamic.literal(certsIdx = certsIdx.asInstanceOf[js.Any], signerInfos = signerInfos.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CertsIdx]
   }

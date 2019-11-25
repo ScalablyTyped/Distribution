@@ -12,7 +12,7 @@ object TableRowProperties {
   @scala.inline
   def apply(minRowHeight: Dimension = null): TableRowProperties = {
     val __obj = js.Dynamic.literal()
-    if (minRowHeight != null) __obj.updateDynamic("minRowHeight")(minRowHeight)
+    if (minRowHeight != null) __obj.updateDynamic("minRowHeight")(minRowHeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRowProperties]
   }
 }

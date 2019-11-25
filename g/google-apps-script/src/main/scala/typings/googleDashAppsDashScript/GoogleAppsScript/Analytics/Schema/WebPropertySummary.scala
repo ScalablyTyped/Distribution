@@ -28,14 +28,14 @@ object WebPropertySummary {
     websiteUrl: String = null
   ): WebPropertySummary = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (internalWebPropertyId != null) __obj.updateDynamic("internalWebPropertyId")(internalWebPropertyId)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (level != null) __obj.updateDynamic("level")(level)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (profiles != null) __obj.updateDynamic("profiles")(profiles)
-    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred)
-    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (internalWebPropertyId != null) __obj.updateDynamic("internalWebPropertyId")(internalWebPropertyId.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (profiles != null) __obj.updateDynamic("profiles")(profiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred.asInstanceOf[js.Any])
+    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebPropertySummary]
   }
 }

@@ -33,7 +33,7 @@ object NodeAffinity {
     preferredDuringSchedulingIgnoredDuringExecution: js.Array[PreferredSchedulingTerm],
     requiredDuringSchedulingIgnoredDuringExecution: NodeSelector
   ): NodeAffinity = {
-    val __obj = js.Dynamic.literal(preferredDuringSchedulingIgnoredDuringExecution = preferredDuringSchedulingIgnoredDuringExecution, requiredDuringSchedulingIgnoredDuringExecution = requiredDuringSchedulingIgnoredDuringExecution)
+    val __obj = js.Dynamic.literal(preferredDuringSchedulingIgnoredDuringExecution = preferredDuringSchedulingIgnoredDuringExecution.asInstanceOf[js.Any], requiredDuringSchedulingIgnoredDuringExecution = requiredDuringSchedulingIgnoredDuringExecution.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NodeAffinity]
   }

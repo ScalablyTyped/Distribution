@@ -12,7 +12,7 @@ trait BitsRange extends _SingleQubitOperatorTargetQubits {
 object BitsRange {
   @scala.inline
   def apply(from: Double, to: Double): BitsRange = {
-    val __obj = js.Dynamic.literal(from = from, to = to)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BitsRange]
   }

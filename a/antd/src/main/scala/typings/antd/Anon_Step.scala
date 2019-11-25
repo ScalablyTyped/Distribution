@@ -11,7 +11,7 @@ trait Anon_Step extends js.Object {
 object Anon_Step {
   @scala.inline
   def apply(step: Double): Anon_Step = {
-    val __obj = js.Dynamic.literal(step = step)
+    val __obj = js.Dynamic.literal(step = step.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Step]
   }

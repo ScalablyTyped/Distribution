@@ -58,7 +58,7 @@ object TestSequencer {
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Test */ _
     ]
   ): TestSequencer = {
-    val __obj = js.Dynamic.literal(_cache = _cache, _getCache = js.Any.fromFunction1(_getCache), _getCachePath = js.Any.fromFunction1(_getCachePath), cacheResults = js.Any.fromFunction2(cacheResults), sort = js.Any.fromFunction1(sort))
+    val __obj = js.Dynamic.literal(_cache = _cache.asInstanceOf[js.Any], _getCache = js.Any.fromFunction1(_getCache), _getCachePath = js.Any.fromFunction1(_getCachePath), cacheResults = js.Any.fromFunction2(cacheResults), sort = js.Any.fromFunction1(sort))
   
     __obj.asInstanceOf[TestSequencer]
   }

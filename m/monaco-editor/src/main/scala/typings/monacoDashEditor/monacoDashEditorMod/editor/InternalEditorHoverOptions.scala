@@ -13,7 +13,7 @@ trait InternalEditorHoverOptions extends js.Object {
 object InternalEditorHoverOptions {
   @scala.inline
   def apply(delay: Double, enabled: Boolean, sticky: Boolean): InternalEditorHoverOptions = {
-    val __obj = js.Dynamic.literal(delay = delay, enabled = enabled, sticky = sticky)
+    val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], sticky = sticky.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InternalEditorHoverOptions]
   }

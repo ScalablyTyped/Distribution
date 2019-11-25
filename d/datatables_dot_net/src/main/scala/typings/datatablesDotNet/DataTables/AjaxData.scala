@@ -21,9 +21,9 @@ object AjaxData {
     recordsFiltered: Int | Double = null,
     recordsTotal: Int | Double = null
   ): AjaxData = {
-    val __obj = js.Dynamic.literal(data = data)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (draw != null) __obj.updateDynamic("draw")(draw.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (recordsFiltered != null) __obj.updateDynamic("recordsFiltered")(recordsFiltered.asInstanceOf[js.Any])
     if (recordsTotal != null) __obj.updateDynamic("recordsTotal")(recordsTotal.asInstanceOf[js.Any])
     __obj.asInstanceOf[AjaxData]

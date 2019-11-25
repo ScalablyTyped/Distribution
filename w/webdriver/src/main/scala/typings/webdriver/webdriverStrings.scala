@@ -45,7 +45,7 @@ object webdriverStrings {
   sealed trait autodetect extends ProxyTypes
   
   @js.native
-  sealed trait config extends FirefoxLogLevels
+  sealed trait config_ extends FirefoxLogLevels
   
   @js.native
   sealed trait debug
@@ -67,7 +67,7 @@ object webdriverStrings {
   sealed trait `implicit` extends Timeouts
   
   @js.native
-  sealed trait info
+  sealed trait info_
     extends FirefoxLogLevels
        with WebDriverLogTypes
   
@@ -131,7 +131,7 @@ object webdriverStrings {
   @scala.inline
   def autodetect: autodetect = "autodetect".asInstanceOf[autodetect]
   @scala.inline
-  def config: config = "config".asInstanceOf[config]
+  def config_ : config_ = "config".asInstanceOf[config_]
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
   @scala.inline
@@ -143,7 +143,7 @@ object webdriverStrings {
   @scala.inline
   def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
   @scala.inline
-  def info: info = "info".asInstanceOf[info]
+  def info_ : info_ = "info".asInstanceOf[info_]
   @scala.inline
   def manual: manual = "manual".asInstanceOf[manual]
   @scala.inline

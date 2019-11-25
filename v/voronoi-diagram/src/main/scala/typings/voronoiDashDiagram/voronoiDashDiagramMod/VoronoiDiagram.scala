@@ -12,7 +12,7 @@ trait VoronoiDiagram extends js.Object {
 object VoronoiDiagram {
   @scala.inline
   def apply(cells: js.Array[Cell], positions: js.Array[Point]): VoronoiDiagram = {
-    val __obj = js.Dynamic.literal(cells = cells, positions = positions)
+    val __obj = js.Dynamic.literal(cells = cells.asInstanceOf[js.Any], positions = positions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VoronoiDiagram]
   }

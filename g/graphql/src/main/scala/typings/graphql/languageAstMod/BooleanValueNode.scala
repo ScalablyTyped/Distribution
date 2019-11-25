@@ -16,8 +16,8 @@ trait BooleanValueNode
 object BooleanValueNode {
   @scala.inline
   def apply(kind: BooleanValue, value: Boolean, loc: Location = null): BooleanValueNode = {
-    val __obj = js.Dynamic.literal(kind = kind, value = value)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[BooleanValueNode]
   }
 }

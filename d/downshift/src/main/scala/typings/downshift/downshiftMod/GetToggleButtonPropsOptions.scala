@@ -15,13 +15,11 @@ object GetToggleButtonPropsOptions {
   @scala.inline
   def apply(
     AllHTMLAttributes: AllHTMLAttributes[HTMLButtonElement] = null,
-    ClassAttributes: ClassAttributes[HTMLButtonElement] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined
+    ClassAttributes: ClassAttributes[HTMLButtonElement] = null
   ): GetToggleButtonPropsOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     __obj.asInstanceOf[GetToggleButtonPropsOptions]
   }
 }

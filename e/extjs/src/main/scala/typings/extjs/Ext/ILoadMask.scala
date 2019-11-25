@@ -109,41 +109,34 @@ object ILoadMask {
   @scala.inline
   def apply(
     IComponent: IComponent = null,
-    afterRender: () => Unit = null,
     afterShow: () => Unit = null,
-    baseCls: java.lang.String = null,
-    bindStore: /* store */ js.UndefOr[IStore] => Unit = null,
-    bindStoreListeners: /* store */ js.UndefOr[IAbstractStore] => Unit = null,
+    bindStore: js.UndefOr[js.Any | IStore] => Unit = null,
+    bindStoreListeners: js.UndefOr[IAbstractStore] => Unit = null,
     center: () => IComponent = null,
     doConstrain: /* constrainTo */ js.UndefOr[js.Any] => Unit = null,
     getStore: () => IAbstractStore = null,
-    getStoreListeners: /* store */ js.UndefOr[js.Any] => _ = null,
+    getStoreListeners: js.UndefOr[js.Any | IStore] => _ = null,
     hide: () => IComponent = null,
     maskCls: java.lang.String = null,
     msg: java.lang.String = null,
     msgCls: java.lang.String = null,
-    onBindStore: (/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean]) => Unit = null,
-    onDestroy: () => Unit = null,
-    onDisable: () => Unit = null,
+    onBindStore: (js.UndefOr[IAbstractStore], js.UndefOr[Boolean]) => Unit = null,
     onHide: () => Unit = null,
     onShow: () => Unit = null,
-    onUnbindStore: (/* store */ js.UndefOr[IAbstractStore], /* initial */ js.UndefOr[Boolean]) => Unit = null,
-    renderTpl: js.Any = null,
+    onUnbindStore: (js.UndefOr[IAbstractStore], js.UndefOr[Boolean]) => Unit = null,
     setActive: (/* active */ js.UndefOr[Boolean], /* newActive */ js.UndefOr[IComponent]) => Unit = null,
     show: () => IComponent = null,
     store: IStore = null,
     target: IComponent = null,
     toBack: () => IComponent = null,
     toFront: /* preventFocus */ js.UndefOr[Boolean] => IComponent = null,
-    unbindStoreListeners: /* store */ js.UndefOr[IAbstractStore] => Unit = null,
+    unbindStoreListeners: js.UndefOr[IAbstractStore] => Unit = null,
     useMsg: js.UndefOr[Boolean] = js.undefined,
     useTargetEl: js.UndefOr[Boolean] = js.undefined
   ): ILoadMask = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (afterRender != null) __obj.updateDynamic("afterRender")(js.Any.fromFunction0(afterRender))
+    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
     if (afterShow != null) __obj.updateDynamic("afterShow")(js.Any.fromFunction0(afterShow))
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
     if (bindStore != null) __obj.updateDynamic("bindStore")(js.Any.fromFunction1(bindStore))
     if (bindStoreListeners != null) __obj.updateDynamic("bindStoreListeners")(js.Any.fromFunction1(bindStoreListeners))
     if (center != null) __obj.updateDynamic("center")(js.Any.fromFunction0(center))
@@ -151,25 +144,22 @@ object ILoadMask {
     if (getStore != null) __obj.updateDynamic("getStore")(js.Any.fromFunction0(getStore))
     if (getStoreListeners != null) __obj.updateDynamic("getStoreListeners")(js.Any.fromFunction1(getStoreListeners))
     if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction0(hide))
-    if (maskCls != null) __obj.updateDynamic("maskCls")(maskCls)
-    if (msg != null) __obj.updateDynamic("msg")(msg)
-    if (msgCls != null) __obj.updateDynamic("msgCls")(msgCls)
+    if (maskCls != null) __obj.updateDynamic("maskCls")(maskCls.asInstanceOf[js.Any])
+    if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])
+    if (msgCls != null) __obj.updateDynamic("msgCls")(msgCls.asInstanceOf[js.Any])
     if (onBindStore != null) __obj.updateDynamic("onBindStore")(js.Any.fromFunction2(onBindStore))
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
-    if (onDisable != null) __obj.updateDynamic("onDisable")(js.Any.fromFunction0(onDisable))
     if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction0(onHide))
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
     if (onUnbindStore != null) __obj.updateDynamic("onUnbindStore")(js.Any.fromFunction2(onUnbindStore))
-    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
     if (setActive != null) __obj.updateDynamic("setActive")(js.Any.fromFunction2(setActive))
     if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction0(show))
-    if (store != null) __obj.updateDynamic("store")(store)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (toBack != null) __obj.updateDynamic("toBack")(js.Any.fromFunction0(toBack))
     if (toFront != null) __obj.updateDynamic("toFront")(js.Any.fromFunction1(toFront))
     if (unbindStoreListeners != null) __obj.updateDynamic("unbindStoreListeners")(js.Any.fromFunction1(unbindStoreListeners))
-    if (!js.isUndefined(useMsg)) __obj.updateDynamic("useMsg")(useMsg)
-    if (!js.isUndefined(useTargetEl)) __obj.updateDynamic("useTargetEl")(useTargetEl)
+    if (!js.isUndefined(useMsg)) __obj.updateDynamic("useMsg")(useMsg.asInstanceOf[js.Any])
+    if (!js.isUndefined(useTargetEl)) __obj.updateDynamic("useTargetEl")(useTargetEl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILoadMask]
   }
 }

@@ -42,12 +42,12 @@ object PluginFileConfig {
     url: String = null,
     xhrSettings: XHRSettingsObject = null
   ): PluginFileConfig = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (mapping != null) __obj.updateDynamic("mapping")(mapping)
-    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start)
-    if (url != null) __obj.updateDynamic("url")(url)
-    if (xhrSettings != null) __obj.updateDynamic("xhrSettings")(xhrSettings)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (mapping != null) __obj.updateDynamic("mapping")(mapping.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (xhrSettings != null) __obj.updateDynamic("xhrSettings")(xhrSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginFileConfig]
   }
 }

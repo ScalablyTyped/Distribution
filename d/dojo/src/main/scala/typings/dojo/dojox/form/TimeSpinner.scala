@@ -1,6 +1,5 @@
 package typings.dojo.dojox.form
 
-import typings.dojo.Fn_Boolean
 import typings.dojo.dijit.form._Spinner
 import typings.std.Date
 import typings.std.HTMLElement
@@ -22,11 +21,6 @@ import scala.scalajs.js.annotation._
 class TimeSpinner () extends _Spinner {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
-  /**
-    *
-    */
-  @JSName("isValid")
-  var isValid_Original_TimeSpinner: Fn_Boolean = js.native
   /**
     *
     * @param time

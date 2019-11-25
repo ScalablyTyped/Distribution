@@ -55,10 +55,10 @@ object EmailOptions {
     tlds: TopLevelDomainOptions | `false` = null
   ): EmailOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUnicode)) __obj.updateDynamic("allowUnicode")(allowUnicode)
-    if (!js.isUndefined(ignoreLength)) __obj.updateDynamic("ignoreLength")(ignoreLength)
+    if (!js.isUndefined(allowUnicode)) __obj.updateDynamic("allowUnicode")(allowUnicode.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreLength)) __obj.updateDynamic("ignoreLength")(ignoreLength.asInstanceOf[js.Any])
     if (minDomainSegments != null) __obj.updateDynamic("minDomainSegments")(minDomainSegments.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (tlds != null) __obj.updateDynamic("tlds")(tlds.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailOptions]

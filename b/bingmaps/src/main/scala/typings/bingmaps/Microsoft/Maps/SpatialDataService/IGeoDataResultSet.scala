@@ -17,7 +17,7 @@ trait IGeoDataResultSet extends js.Object {
 object IGeoDataResultSet {
   @scala.inline
   def apply(Copyright: String, location: String | Location, results: js.Array[IGeoDataResult]): IGeoDataResultSet = {
-    val __obj = js.Dynamic.literal(Copyright = Copyright, location = location.asInstanceOf[js.Any], results = results)
+    val __obj = js.Dynamic.literal(Copyright = Copyright.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IGeoDataResultSet]
   }

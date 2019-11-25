@@ -47,13 +47,13 @@ object LoginRes {
     errMsg: String = null
   ): LoginRes = {
     val __obj = js.Dynamic.literal()
-    if (anonymousCode != null) __obj.updateDynamic("anonymousCode")(anonymousCode)
-    if (authCode != null) __obj.updateDynamic("authCode")(authCode)
-    if (authErrorScope != null) __obj.updateDynamic("authErrorScope")(authErrorScope)
-    if (authResult != null) __obj.updateDynamic("authResult")(authResult)
-    if (authSucessScope != null) __obj.updateDynamic("authSucessScope")(authSucessScope)
-    if (code != null) __obj.updateDynamic("code")(code)
-    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg)
+    if (anonymousCode != null) __obj.updateDynamic("anonymousCode")(anonymousCode.asInstanceOf[js.Any])
+    if (authCode != null) __obj.updateDynamic("authCode")(authCode.asInstanceOf[js.Any])
+    if (authErrorScope != null) __obj.updateDynamic("authErrorScope")(authErrorScope.asInstanceOf[js.Any])
+    if (authResult != null) __obj.updateDynamic("authResult")(authResult.asInstanceOf[js.Any])
+    if (authSucessScope != null) __obj.updateDynamic("authSucessScope")(authSucessScope.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginRes]
   }
 }

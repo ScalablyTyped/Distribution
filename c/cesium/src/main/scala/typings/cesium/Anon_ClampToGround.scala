@@ -29,13 +29,13 @@ object Anon_ClampToGround {
     strokeWidth: Int | Double = null
   ): Anon_ClampToGround = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clampToGround)) __obj.updateDynamic("clampToGround")(clampToGround)
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (markerColor != null) __obj.updateDynamic("markerColor")(markerColor)
+    if (!js.isUndefined(clampToGround)) __obj.updateDynamic("clampToGround")(clampToGround.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (markerColor != null) __obj.updateDynamic("markerColor")(markerColor.asInstanceOf[js.Any])
     if (markerSize != null) __obj.updateDynamic("markerSize")(markerSize.asInstanceOf[js.Any])
-    if (markerSymbol != null) __obj.updateDynamic("markerSymbol")(markerSymbol)
-    if (sourceUri != null) __obj.updateDynamic("sourceUri")(sourceUri)
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (markerSymbol != null) __obj.updateDynamic("markerSymbol")(markerSymbol.asInstanceOf[js.Any])
+    if (sourceUri != null) __obj.updateDynamic("sourceUri")(sourceUri.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClampToGround]
   }

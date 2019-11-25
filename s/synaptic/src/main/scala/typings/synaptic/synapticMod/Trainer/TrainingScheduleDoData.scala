@@ -16,7 +16,7 @@ trait TrainingScheduleDoData extends js.Object {
 object TrainingScheduleDoData {
   @scala.inline
   def apply(error: js.Any, iterations: js.Any, rate: js.Any): TrainingScheduleDoData = {
-    val __obj = js.Dynamic.literal(error = error, iterations = iterations, rate = rate)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], rate = rate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TrainingScheduleDoData]
   }

@@ -14,7 +14,7 @@ trait DropdownToggleRenderProps extends js.Object {
 object DropdownToggleRenderProps {
   @scala.inline
   def apply(props: Anon_Ariaexpanded, show: Boolean, toggle: Boolean => Unit): DropdownToggleRenderProps = {
-    val __obj = js.Dynamic.literal(props = props, show = show, toggle = js.Any.fromFunction1(toggle))
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any], toggle = js.Any.fromFunction1(toggle))
   
     __obj.asInstanceOf[DropdownToggleRenderProps]
   }

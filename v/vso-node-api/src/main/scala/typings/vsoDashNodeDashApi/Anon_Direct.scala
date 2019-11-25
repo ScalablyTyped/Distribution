@@ -15,7 +15,7 @@ trait Anon_Direct extends js.Object {
 object Anon_Direct {
   @scala.inline
   def apply(direct: Double, expanded: Double, expandedDown: Double, expandedUp: Double, none: Double): Anon_Direct = {
-    val __obj = js.Dynamic.literal(direct = direct, expanded = expanded, expandedDown = expandedDown, expandedUp = expandedUp, none = none)
+    val __obj = js.Dynamic.literal(direct = direct.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], expandedDown = expandedDown.asInstanceOf[js.Any], expandedUp = expandedUp.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Direct]
   }

@@ -37,8 +37,8 @@ object WebviewPanelOptions {
     retainContextWhenHidden: js.UndefOr[Boolean] = js.undefined
   ): WebviewPanelOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableFindWidget)) __obj.updateDynamic("enableFindWidget")(enableFindWidget)
-    if (!js.isUndefined(retainContextWhenHidden)) __obj.updateDynamic("retainContextWhenHidden")(retainContextWhenHidden)
+    if (!js.isUndefined(enableFindWidget)) __obj.updateDynamic("enableFindWidget")(enableFindWidget.asInstanceOf[js.Any])
+    if (!js.isUndefined(retainContextWhenHidden)) __obj.updateDynamic("retainContextWhenHidden")(retainContextWhenHidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebviewPanelOptions]
   }
 }

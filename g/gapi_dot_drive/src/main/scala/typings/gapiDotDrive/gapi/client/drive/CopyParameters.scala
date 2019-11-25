@@ -31,16 +31,16 @@ object CopyParameters {
     timedTextTrackName: String = null,
     visibility: String = null
   ): CopyParameters = {
-    val __obj = js.Dynamic.literal(fileId = fileId)
-    if (!js.isUndefined(convert)) __obj.updateDynamic("convert")(convert)
-    if (!js.isUndefined(ocr)) __obj.updateDynamic("ocr")(ocr)
-    if (ocrLanguage != null) __obj.updateDynamic("ocrLanguage")(ocrLanguage)
-    if (!js.isUndefined(pinned)) __obj.updateDynamic("pinned")(pinned)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
-    if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives)
-    if (timedTextLanguage != null) __obj.updateDynamic("timedTextLanguage")(timedTextLanguage)
-    if (timedTextTrackName != null) __obj.updateDynamic("timedTextTrackName")(timedTextTrackName)
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    val __obj = js.Dynamic.literal(fileId = fileId.asInstanceOf[js.Any])
+    if (!js.isUndefined(convert)) __obj.updateDynamic("convert")(convert.asInstanceOf[js.Any])
+    if (!js.isUndefined(ocr)) __obj.updateDynamic("ocr")(ocr.asInstanceOf[js.Any])
+    if (ocrLanguage != null) __obj.updateDynamic("ocrLanguage")(ocrLanguage.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinned)) __obj.updateDynamic("pinned")(pinned.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
+    if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives.asInstanceOf[js.Any])
+    if (timedTextLanguage != null) __obj.updateDynamic("timedTextLanguage")(timedTextLanguage.asInstanceOf[js.Any])
+    if (timedTextTrackName != null) __obj.updateDynamic("timedTextTrackName")(timedTextTrackName.asInstanceOf[js.Any])
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyParameters]
   }
 }

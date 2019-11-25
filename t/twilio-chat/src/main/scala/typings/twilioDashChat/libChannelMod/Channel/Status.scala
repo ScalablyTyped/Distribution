@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait Status extends js.Object
 
+object Status {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def invited: typings.twilioDashChat.twilioDashChatStrings.invited = this.cast("invited")
+  @scala.inline
+  def joined: typings.twilioDashChat.twilioDashChatStrings.joined = this.cast("joined")
+  @scala.inline
+  def known: typings.twilioDashChat.twilioDashChatStrings.known = this.cast("known")
+  @scala.inline
+  def unknown: typings.twilioDashChat.twilioDashChatStrings.unknown = this.cast("unknown")
+}
+

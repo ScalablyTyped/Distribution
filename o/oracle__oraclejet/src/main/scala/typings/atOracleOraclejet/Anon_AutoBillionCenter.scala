@@ -45,12 +45,12 @@ object Anon_AutoBillionCenter {
     textType: percent | number = null
   ): Anon_AutoBillionCenter = {
     val __obj = js.Dynamic.literal()
-    if (converter != null) __obj.updateDynamic("converter")(converter)
+    if (converter != null) __obj.updateDynamic("converter")(converter.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (rendered != null) __obj.updateDynamic("rendered")(rendered.asInstanceOf[js.Any])
     if (scaling != null) __obj.updateDynamic("scaling")(scaling.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textType != null) __obj.updateDynamic("textType")(textType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoBillionCenter]
   }

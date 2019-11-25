@@ -1308,7 +1308,7 @@ object cjsAddEventListenerMod extends js.Object {
   ): Unit = js.native
   type EventHandler[K /* <: String */] = js.ThisFunction1[
     /* this */ HTMLElement, 
-    /* import warning: ImportType.apply Failed type conversion: std.HTMLElementEventMap[K] */ /* event */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap[K] */ /* event */ js.Any, 
     js.Any
   ]
   type TaggedEventHandler[K /* <: String */] = EventHandler[K] with Anon_Once[K]

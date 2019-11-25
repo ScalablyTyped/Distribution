@@ -27,12 +27,12 @@ object BrowserOptions {
     resolverSequence: js.Array[js.Function2[/* service */ Service, /* next */ js.Function0[Unit], Boolean]] = null
   ): BrowserOptions = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (flags != null) __obj.updateDynamic("flags")(flags)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
     if (interfaceIndex != null) __obj.updateDynamic("interfaceIndex")(interfaceIndex.asInstanceOf[js.Any])
-    if (networkInterface != null) __obj.updateDynamic("networkInterface")(networkInterface)
-    if (resolverSequence != null) __obj.updateDynamic("resolverSequence")(resolverSequence)
+    if (networkInterface != null) __obj.updateDynamic("networkInterface")(networkInterface.asInstanceOf[js.Any])
+    if (resolverSequence != null) __obj.updateDynamic("resolverSequence")(resolverSequence.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowserOptions]
   }
 }

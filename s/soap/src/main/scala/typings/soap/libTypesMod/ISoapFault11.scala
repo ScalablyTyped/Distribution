@@ -19,8 +19,8 @@ object ISoapFault11 {
     detail: String = null,
     statusCode: Int | Double = null
   ): ISoapFault11 = {
-    val __obj = js.Dynamic.literal(faultcode = faultcode.asInstanceOf[js.Any], faultstring = faultstring)
-    if (detail != null) __obj.updateDynamic("detail")(detail)
+    val __obj = js.Dynamic.literal(faultcode = faultcode.asInstanceOf[js.Any], faultstring = faultstring.asInstanceOf[js.Any])
+    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISoapFault11]
   }

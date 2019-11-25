@@ -14,7 +14,7 @@ trait Anon_HaOutline extends js.Object {
 object Anon_HaOutline {
   @scala.inline
   def apply(ha: Double, outline: js.Array[Double], x_max: Double, x_min: Double): Anon_HaOutline = {
-    val __obj = js.Dynamic.literal(ha = ha, outline = outline, x_max = x_max, x_min = x_min)
+    val __obj = js.Dynamic.literal(ha = ha.asInstanceOf[js.Any], outline = outline.asInstanceOf[js.Any], x_max = x_max.asInstanceOf[js.Any], x_min = x_min.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HaOutline]
   }

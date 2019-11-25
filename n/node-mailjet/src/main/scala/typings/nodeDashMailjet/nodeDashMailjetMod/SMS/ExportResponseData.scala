@@ -25,12 +25,12 @@ object ExportResponseData {
     ToTs: Int | Double = null,
     URL: String = null
   ): ExportResponseData = {
-    val __obj = js.Dynamic.literal(ID = ID, Status = Status)
+    val __obj = js.Dynamic.literal(ID = ID.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     if (CreationTS != null) __obj.updateDynamic("CreationTS")(CreationTS.asInstanceOf[js.Any])
     if (ExpirationTS != null) __obj.updateDynamic("ExpirationTS")(ExpirationTS.asInstanceOf[js.Any])
     if (FromTs != null) __obj.updateDynamic("FromTs")(FromTs.asInstanceOf[js.Any])
     if (ToTs != null) __obj.updateDynamic("ToTs")(ToTs.asInstanceOf[js.Any])
-    if (URL != null) __obj.updateDynamic("URL")(URL)
+    if (URL != null) __obj.updateDynamic("URL")(URL.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportResponseData]
   }
 }

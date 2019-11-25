@@ -27,8 +27,8 @@ object Anon_LineStyleShowAnonColorOpacityShadowBlurShadowColor {
   @scala.inline
   def apply(lineStyle: Anon_ColorOpacityShadowBlurShadowColor = null, show: js.UndefOr[Boolean] = js.undefined): Anon_LineStyleShowAnonColorOpacityShadowBlurShadowColor = {
     val __obj = js.Dynamic.literal()
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LineStyleShowAnonColorOpacityShadowBlurShadowColor]
   }
 }

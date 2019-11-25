@@ -20,10 +20,10 @@ object OrderInfo {
     shipping_address: ShippingAddress = null
   ): OrderInfo = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (phone_number != null) __obj.updateDynamic("phone_number")(phone_number)
-    if (shipping_address != null) __obj.updateDynamic("shipping_address")(shipping_address)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (phone_number != null) __obj.updateDynamic("phone_number")(phone_number.asInstanceOf[js.Any])
+    if (shipping_address != null) __obj.updateDynamic("shipping_address")(shipping_address.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderInfo]
   }
 }

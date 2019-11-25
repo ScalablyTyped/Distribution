@@ -21,8 +21,8 @@ object ProcessTreeNode {
     commandLine: String = null,
     memory: Int | Double = null
   ): ProcessTreeNode = {
-    val __obj = js.Dynamic.literal(children = children, name = name, pid = pid)
-    if (commandLine != null) __obj.updateDynamic("commandLine")(commandLine)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any])
+    if (commandLine != null) __obj.updateDynamic("commandLine")(commandLine.asInstanceOf[js.Any])
     if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessTreeNode]
   }

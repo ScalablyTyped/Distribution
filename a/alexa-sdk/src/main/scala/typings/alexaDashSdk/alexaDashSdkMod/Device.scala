@@ -12,7 +12,7 @@ trait Device extends js.Object {
 object Device {
   @scala.inline
   def apply(deviceId: String, supportedInterfaces: DeviceInterfaces): Device = {
-    val __obj = js.Dynamic.literal(deviceId = deviceId, supportedInterfaces = supportedInterfaces)
+    val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], supportedInterfaces = supportedInterfaces.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Device]
   }

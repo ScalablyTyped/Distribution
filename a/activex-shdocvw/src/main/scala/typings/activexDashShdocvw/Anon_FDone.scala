@@ -13,7 +13,7 @@ trait Anon_FDone extends js.Object {
 object Anon_FDone {
   @scala.inline
   def apply(fDone: js.Any, nPage: js.Any, pDisp: js.Any): Anon_FDone = {
-    val __obj = js.Dynamic.literal(fDone = fDone, nPage = nPage, pDisp = pDisp)
+    val __obj = js.Dynamic.literal(fDone = fDone.asInstanceOf[js.Any], nPage = nPage.asInstanceOf[js.Any], pDisp = pDisp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FDone]
   }

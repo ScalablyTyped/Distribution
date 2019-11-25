@@ -24,9 +24,9 @@ object InflateOptions {
   ): InflateOptions = {
     val __obj = js.Dynamic.literal()
     if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
-    if (dictionary != null) __obj.updateDynamic("dictionary")(dictionary)
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (dictionary != null) __obj.updateDynamic("dictionary")(dictionary.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     if (windowBits != null) __obj.updateDynamic("windowBits")(windowBits.asInstanceOf[js.Any])
     __obj.asInstanceOf[InflateOptions]
   }

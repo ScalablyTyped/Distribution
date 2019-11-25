@@ -31,16 +31,16 @@ object Options {
     visited: DependencyObj = null,
     webpackConfig: String = null
   ): Options = {
-    val __obj = js.Dynamic.literal(filename = filename)
-    if (detective != null) __obj.updateDynamic("detective")(detective)
-    if (directory != null) __obj.updateDynamic("directory")(directory)
+    val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
+    if (detective != null) __obj.updateDynamic("detective")(detective.asInstanceOf[js.Any])
+    if (directory != null) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (!js.isUndefined(isListForm)) __obj.updateDynamic("isListForm")(isListForm)
-    if (nodeModulesConfig != null) __obj.updateDynamic("nodeModulesConfig")(nodeModulesConfig)
-    if (nonExistent != null) __obj.updateDynamic("nonExistent")(nonExistent)
-    if (requireConfig != null) __obj.updateDynamic("requireConfig")(requireConfig)
-    if (visited != null) __obj.updateDynamic("visited")(visited)
-    if (webpackConfig != null) __obj.updateDynamic("webpackConfig")(webpackConfig)
+    if (!js.isUndefined(isListForm)) __obj.updateDynamic("isListForm")(isListForm.asInstanceOf[js.Any])
+    if (nodeModulesConfig != null) __obj.updateDynamic("nodeModulesConfig")(nodeModulesConfig.asInstanceOf[js.Any])
+    if (nonExistent != null) __obj.updateDynamic("nonExistent")(nonExistent.asInstanceOf[js.Any])
+    if (requireConfig != null) __obj.updateDynamic("requireConfig")(requireConfig.asInstanceOf[js.Any])
+    if (visited != null) __obj.updateDynamic("visited")(visited.asInstanceOf[js.Any])
+    if (webpackConfig != null) __obj.updateDynamic("webpackConfig")(webpackConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

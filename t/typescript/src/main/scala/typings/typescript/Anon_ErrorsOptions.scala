@@ -14,7 +14,7 @@ trait Anon_ErrorsOptions extends js.Object {
 object Anon_ErrorsOptions {
   @scala.inline
   def apply(errors: js.Array[Diagnostic], options: TypeAcquisition): Anon_ErrorsOptions = {
-    val __obj = js.Dynamic.literal(errors = errors, options = options)
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ErrorsOptions]
   }

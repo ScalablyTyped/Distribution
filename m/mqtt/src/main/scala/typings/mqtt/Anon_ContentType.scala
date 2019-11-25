@@ -27,12 +27,12 @@ object Anon_ContentType {
     willDelayInterval: Int | Double = null
   ): Anon_ContentType = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (correlationData != null) __obj.updateDynamic("correlationData")(correlationData)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (correlationData != null) __obj.updateDynamic("correlationData")(correlationData.asInstanceOf[js.Any])
     if (messageExpiryInterval != null) __obj.updateDynamic("messageExpiryInterval")(messageExpiryInterval.asInstanceOf[js.Any])
     if (payloadFormatIndicator != null) __obj.updateDynamic("payloadFormatIndicator")(payloadFormatIndicator.asInstanceOf[js.Any])
-    if (responseTopic != null) __obj.updateDynamic("responseTopic")(responseTopic)
-    if (userProperties != null) __obj.updateDynamic("userProperties")(userProperties)
+    if (responseTopic != null) __obj.updateDynamic("responseTopic")(responseTopic.asInstanceOf[js.Any])
+    if (userProperties != null) __obj.updateDynamic("userProperties")(userProperties.asInstanceOf[js.Any])
     if (willDelayInterval != null) __obj.updateDynamic("willDelayInterval")(willDelayInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContentType]
   }

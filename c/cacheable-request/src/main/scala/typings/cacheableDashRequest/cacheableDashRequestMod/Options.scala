@@ -47,11 +47,11 @@ object Options {
     strictTtl: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(automaticFailover)) __obj.updateDynamic("automaticFailover")(automaticFailover)
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
-    if (!js.isUndefined(forceRefresh)) __obj.updateDynamic("forceRefresh")(forceRefresh)
+    if (!js.isUndefined(automaticFailover)) __obj.updateDynamic("automaticFailover")(automaticFailover.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceRefresh)) __obj.updateDynamic("forceRefresh")(forceRefresh.asInstanceOf[js.Any])
     if (maxTtl != null) __obj.updateDynamic("maxTtl")(maxTtl.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictTtl)) __obj.updateDynamic("strictTtl")(strictTtl)
+    if (!js.isUndefined(strictTtl)) __obj.updateDynamic("strictTtl")(strictTtl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

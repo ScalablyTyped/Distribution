@@ -24,8 +24,8 @@ trait ReposMergeParams extends js.Object {
 object ReposMergeParams {
   @scala.inline
   def apply(base: String, head: String, owner: String, repo: String, commit_message: String = null): ReposMergeParams = {
-    val __obj = js.Dynamic.literal(base = base, head = head, owner = owner, repo = repo)
-    if (commit_message != null) __obj.updateDynamic("commit_message")(commit_message)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (commit_message != null) __obj.updateDynamic("commit_message")(commit_message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposMergeParams]
   }
 }

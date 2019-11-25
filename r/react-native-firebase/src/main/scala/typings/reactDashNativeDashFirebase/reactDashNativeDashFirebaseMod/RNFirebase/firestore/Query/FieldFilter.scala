@@ -13,7 +13,7 @@ trait FieldFilter extends js.Object {
 object FieldFilter {
   @scala.inline
   def apply(fieldPath: NativeFieldPath, operator: String, value: js.Any): FieldFilter = {
-    val __obj = js.Dynamic.literal(fieldPath = fieldPath, operator = operator, value = value)
+    val __obj = js.Dynamic.literal(fieldPath = fieldPath.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FieldFilter]
   }

@@ -14,9 +14,9 @@ object AssetMatchPolicy {
   @scala.inline
   def apply(kind: String = null, policyId: String = null, rules: js.Array[PolicyRule] = null): AssetMatchPolicy = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (policyId != null) __obj.updateDynamic("policyId")(policyId)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (policyId != null) __obj.updateDynamic("policyId")(policyId.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetMatchPolicy]
   }
 }

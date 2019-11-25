@@ -18,8 +18,8 @@ object ListClustersResponse {
   @scala.inline
   def apply(clusters: js.Array[Cluster] = null, nextPageToken: String = null): ListClustersResponse = {
     val __obj = js.Dynamic.literal()
-    if (clusters != null) __obj.updateDynamic("clusters")(clusters)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (clusters != null) __obj.updateDynamic("clusters")(clusters.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListClustersResponse]
   }
 }

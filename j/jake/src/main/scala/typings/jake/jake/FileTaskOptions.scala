@@ -16,7 +16,7 @@ object FileTaskOptions {
   @scala.inline
   def apply(async: js.UndefOr[Boolean] = js.undefined): FileTaskOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileTaskOptions]
   }
 }

@@ -25,8 +25,8 @@ object FileInputProps {
     placeholder: String,
     disabled: js.UndefOr[Boolean] = js.undefined
   ): FileInputProps = {
-    val __obj = js.Dynamic.literal(accept = accept, className = className, name = name, onChange = js.Any.fromFunction1(onChange), placeholder = placeholder)
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), placeholder = placeholder.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileInputProps]
   }
 }

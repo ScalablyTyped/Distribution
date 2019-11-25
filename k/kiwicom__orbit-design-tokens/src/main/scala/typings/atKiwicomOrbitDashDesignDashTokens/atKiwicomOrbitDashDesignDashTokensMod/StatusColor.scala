@@ -31,7 +31,7 @@ object StatusColor {
     normalActive: String,
     normalHover: String
   ): StatusColor = {
-    val __obj = js.Dynamic.literal(dark = dark, darkActive = darkActive, darkHover = darkHover, darker = darker, light = light, lightActive = lightActive, lightHover = lightHover, normal = normal, normalActive = normalActive, normalHover = normalHover)
+    val __obj = js.Dynamic.literal(dark = dark.asInstanceOf[js.Any], darkActive = darkActive.asInstanceOf[js.Any], darkHover = darkHover.asInstanceOf[js.Any], darker = darker.asInstanceOf[js.Any], light = light.asInstanceOf[js.Any], lightActive = lightActive.asInstanceOf[js.Any], lightHover = lightHover.asInstanceOf[js.Any], normal = normal.asInstanceOf[js.Any], normalActive = normalActive.asInstanceOf[js.Any], normalHover = normalHover.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StatusColor]
   }

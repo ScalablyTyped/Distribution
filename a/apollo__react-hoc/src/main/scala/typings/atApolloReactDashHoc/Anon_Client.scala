@@ -12,7 +12,7 @@ trait Anon_Client extends js.Object {
 object Anon_Client {
   @scala.inline
   def apply(client: ApolloClient[_]): Anon_Client = {
-    val __obj = js.Dynamic.literal(client = client)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Client]
   }

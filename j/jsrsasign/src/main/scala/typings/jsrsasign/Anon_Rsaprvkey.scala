@@ -14,7 +14,7 @@ trait Anon_Rsaprvkey extends js.Object {
 object Anon_Rsaprvkey {
   @scala.inline
   def apply(rsaprvkey: RSAKey, tbsobj: TBSCertList): Anon_Rsaprvkey = {
-    val __obj = js.Dynamic.literal(rsaprvkey = rsaprvkey, tbsobj = tbsobj)
+    val __obj = js.Dynamic.literal(rsaprvkey = rsaprvkey.asInstanceOf[js.Any], tbsobj = tbsobj.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Rsaprvkey]
   }

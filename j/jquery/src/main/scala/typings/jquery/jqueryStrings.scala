@@ -2,6 +2,7 @@ package typings.jquery
 
 import typings.jquery.JQuery.Ajax.ErrorTextStatus
 import typings.jquery.JQuery.Ajax.SuccessTextStatus
+import typings.jquery.JQuery.Ajax.TextStatus
 import typings.jquery.JQuery._Duration
 import typings.jquery.JQuery.__Falsy
 import scala.scalajs.js
@@ -19,7 +20,9 @@ object jqueryStrings {
   sealed trait _TypeEventHandlers extends js.Object
   
   @js.native
-  sealed trait abort extends ErrorTextStatus
+  sealed trait abort
+    extends ErrorTextStatus
+       with TextStatus
   
   @js.native
   sealed trait array extends js.Object
@@ -70,7 +73,9 @@ object jqueryStrings {
   sealed trait drop extends js.Object
   
   @js.native
-  sealed trait error extends ErrorTextStatus
+  sealed trait error
+    extends ErrorTextStatus
+       with TextStatus
   
   @js.native
   sealed trait fast extends _Duration
@@ -133,10 +138,14 @@ object jqueryStrings {
   sealed trait mouseup extends js.Object
   
   @js.native
-  sealed trait nocontent extends SuccessTextStatus
+  sealed trait nocontent
+    extends SuccessTextStatus
+       with TextStatus
   
   @js.native
-  sealed trait notmodified extends SuccessTextStatus
+  sealed trait notmodified
+    extends SuccessTextStatus
+       with TextStatus
   
   @js.native
   sealed trait `null` extends js.Object
@@ -148,7 +157,9 @@ object jqueryStrings {
   sealed trait `object` extends js.Object
   
   @js.native
-  sealed trait parsererror extends ErrorTextStatus
+  sealed trait parsererror
+    extends ErrorTextStatus
+       with TextStatus
   
   @js.native
   sealed trait pending extends js.Object
@@ -187,7 +198,9 @@ object jqueryStrings {
   sealed trait submit extends js.Object
   
   @js.native
-  sealed trait success extends SuccessTextStatus
+  sealed trait success
+    extends SuccessTextStatus
+       with TextStatus
   
   @js.native
   sealed trait symbol extends js.Object
@@ -196,7 +209,9 @@ object jqueryStrings {
   sealed trait text extends js.Object
   
   @js.native
-  sealed trait timeout extends ErrorTextStatus
+  sealed trait timeout
+    extends ErrorTextStatus
+       with TextStatus
   
   @js.native
   sealed trait top extends js.Object

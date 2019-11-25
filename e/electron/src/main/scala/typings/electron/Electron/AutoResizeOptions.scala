@@ -30,7 +30,7 @@ trait AutoResizeOptions extends js.Object {
 object AutoResizeOptions {
   @scala.inline
   def apply(height: Boolean, horizontal: Boolean, vertical: Boolean, width: Boolean): AutoResizeOptions = {
-    val __obj = js.Dynamic.literal(height = height, horizontal = horizontal, vertical = vertical, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], horizontal = horizontal.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AutoResizeOptions]
   }

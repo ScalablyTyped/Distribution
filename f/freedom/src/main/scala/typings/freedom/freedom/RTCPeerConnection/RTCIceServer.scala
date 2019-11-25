@@ -13,9 +13,9 @@ trait RTCIceServer extends js.Object {
 object RTCIceServer {
   @scala.inline
   def apply(urls: js.Array[String], credential: String = null, username: String = null): RTCIceServer = {
-    val __obj = js.Dynamic.literal(urls = urls)
-    if (credential != null) __obj.updateDynamic("credential")(credential)
-    if (username != null) __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(urls = urls.asInstanceOf[js.Any])
+    if (credential != null) __obj.updateDynamic("credential")(credential.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCIceServer]
   }
 }

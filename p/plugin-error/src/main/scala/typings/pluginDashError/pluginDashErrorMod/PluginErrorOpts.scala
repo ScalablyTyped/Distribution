@@ -19,8 +19,8 @@ object PluginErrorOpts {
   @scala.inline
   def apply(showProperties: js.UndefOr[Boolean] = js.undefined, showStack: js.UndefOr[Boolean] = js.undefined): PluginErrorOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(showProperties)) __obj.updateDynamic("showProperties")(showProperties)
-    if (!js.isUndefined(showStack)) __obj.updateDynamic("showStack")(showStack)
+    if (!js.isUndefined(showProperties)) __obj.updateDynamic("showProperties")(showProperties.asInstanceOf[js.Any])
+    if (!js.isUndefined(showStack)) __obj.updateDynamic("showStack")(showStack.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginErrorOpts]
   }
 }

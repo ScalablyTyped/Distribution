@@ -33,11 +33,11 @@ object Options {
     smtpPort: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (devHost != null) __obj.updateDynamic("devHost")(devHost)
+    if (devHost != null) __obj.updateDynamic("devHost")(devHost.asInstanceOf[js.Any])
     if (devPort != null) __obj.updateDynamic("devPort")(devPort.asInstanceOf[js.Any])
     if (dkim != null) __obj.updateDynamic("dkim")(dkim.asInstanceOf[js.Any])
-    if (logger != null) __obj.updateDynamic("logger")(logger)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     if (smtpHost != null) __obj.updateDynamic("smtpHost")(smtpHost.asInstanceOf[js.Any])
     if (smtpPort != null) __obj.updateDynamic("smtpPort")(smtpPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

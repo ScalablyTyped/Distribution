@@ -12,7 +12,9 @@ object jimpStrings {
   sealed trait any extends ListenableName
   
   @js.native
-  sealed trait background extends ChangeName
+  sealed trait background
+    extends ChangeName
+       with ListenableName
   
   @js.native
   sealed trait `before-change` extends ListenableName
@@ -45,7 +47,9 @@ object jimpStrings {
   sealed trait constructor extends js.Object
   
   @js.native
-  sealed trait crop extends ChangeName
+  sealed trait crop
+    extends ChangeName
+       with ListenableName
   
   @js.native
   sealed trait green extends ColorActionName
@@ -90,7 +94,9 @@ object jimpStrings {
   sealed trait red extends ColorActionName
   
   @js.native
-  sealed trait scan extends ChangeName
+  sealed trait scan
+    extends ChangeName
+       with ListenableName
   
   @js.native
   sealed trait shade extends ColorActionName

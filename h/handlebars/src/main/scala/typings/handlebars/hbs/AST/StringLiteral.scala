@@ -19,8 +19,8 @@ object StringLiteral {
     `type`: typings.handlebars.handlebarsStrings.StringLiteral,
     value: String
   ): StringLiteral = {
-    val __obj = js.Dynamic.literal(loc = loc, original = original, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringLiteral]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_Region extends js.Object {
 object Anon_Region {
   @scala.inline
   def apply(region: `true`): Anon_Region = {
-    val __obj = js.Dynamic.literal(region = region)
+    val __obj = js.Dynamic.literal(region = region.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Region]
   }

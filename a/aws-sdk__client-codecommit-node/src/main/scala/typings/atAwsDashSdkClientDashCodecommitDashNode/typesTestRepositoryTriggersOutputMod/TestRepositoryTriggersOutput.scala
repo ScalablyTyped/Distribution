@@ -30,9 +30,9 @@ object TestRepositoryTriggersOutput {
     failedExecutions: js.Array[_UnmarshalledRepositoryTriggerExecutionFailure] = null,
     successfulExecutions: js.Array[String] = null
   ): TestRepositoryTriggersOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (failedExecutions != null) __obj.updateDynamic("failedExecutions")(failedExecutions)
-    if (successfulExecutions != null) __obj.updateDynamic("successfulExecutions")(successfulExecutions)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (failedExecutions != null) __obj.updateDynamic("failedExecutions")(failedExecutions.asInstanceOf[js.Any])
+    if (successfulExecutions != null) __obj.updateDynamic("successfulExecutions")(successfulExecutions.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestRepositoryTriggersOutput]
   }
 }

@@ -49,7 +49,7 @@ object Data {
     video: String | js.Array[String] | ImageVideoMetadata = null
   ): Data = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (determiner != null) __obj.updateDynamic("determiner")(determiner.asInstanceOf[js.Any])

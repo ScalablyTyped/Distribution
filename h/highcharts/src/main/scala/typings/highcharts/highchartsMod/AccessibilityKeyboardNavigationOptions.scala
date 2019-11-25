@@ -59,12 +59,12 @@ object AccessibilityKeyboardNavigationOptions {
     wrapAround: js.UndefOr[Boolean] = js.undefined
   ): AccessibilityKeyboardNavigationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (focusBorder != null) __obj.updateDynamic("focusBorder")(focusBorder)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (order != null) __obj.updateDynamic("order")(order)
-    if (!js.isUndefined(skipNullPoints)) __obj.updateDynamic("skipNullPoints")(skipNullPoints)
-    if (!js.isUndefined(wrapAround)) __obj.updateDynamic("wrapAround")(wrapAround)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (focusBorder != null) __obj.updateDynamic("focusBorder")(focusBorder.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipNullPoints)) __obj.updateDynamic("skipNullPoints")(skipNullPoints.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapAround)) __obj.updateDynamic("wrapAround")(wrapAround.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessibilityKeyboardNavigationOptions]
   }
 }

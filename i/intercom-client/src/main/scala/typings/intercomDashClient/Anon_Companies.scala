@@ -14,8 +14,8 @@ trait Anon_Companies extends js.Object {
 object Anon_Companies {
   @scala.inline
   def apply(companies: js.Array[Company], `type`: companyDOTlist): Anon_Companies = {
-    val __obj = js.Dynamic.literal(companies = companies)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(companies = companies.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Companies]
   }
 }

@@ -12,7 +12,7 @@ trait TypeofdeclarativeWebRequest extends js.Object {
 object TypeofdeclarativeWebRequest {
   @scala.inline
   def apply(onRequest: RequestedEvent): TypeofdeclarativeWebRequest = {
-    val __obj = js.Dynamic.literal(onRequest = onRequest)
+    val __obj = js.Dynamic.literal(onRequest = onRequest.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofdeclarativeWebRequest]
   }

@@ -29,7 +29,7 @@ object Matching {
     weight: Double,
     weight_name: String
   ): Matching = {
-    val __obj = js.Dynamic.literal(confidence = confidence, distance = distance, duration = duration, geometry = geometry, legs = legs, weight = weight, weight_name = weight_name)
+    val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], legs = legs.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any], weight_name = weight_name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Matching]
   }

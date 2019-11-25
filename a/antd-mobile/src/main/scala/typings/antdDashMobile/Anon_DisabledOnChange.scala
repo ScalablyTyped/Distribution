@@ -25,7 +25,7 @@ object Anon_DisabledOnChange {
     tintColor: String,
     values: js.Array[scala.Nothing]
   ): Anon_DisabledOnChange = {
-    val __obj = js.Dynamic.literal(disabled = disabled, onChange = js.Any.fromFunction0(onChange), onValueChange = js.Any.fromFunction0(onValueChange), prefixCls = prefixCls, selectedIndex = selectedIndex, tintColor = tintColor, values = values)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], onChange = js.Any.fromFunction0(onChange), onValueChange = js.Any.fromFunction0(onValueChange), prefixCls = prefixCls.asInstanceOf[js.Any], selectedIndex = selectedIndex.asInstanceOf[js.Any], tintColor = tintColor.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DisabledOnChange]
   }

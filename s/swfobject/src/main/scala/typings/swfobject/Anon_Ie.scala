@@ -17,7 +17,7 @@ trait Anon_Ie extends js.Object {
 object Anon_Ie {
   @scala.inline
   def apply(ie: Boolean, mac: Boolean, pv: js.Array[Double], w3: Boolean, win: Boolean, wk: js.Any): Anon_Ie = {
-    val __obj = js.Dynamic.literal(ie = ie, mac = mac, pv = pv, w3 = w3, win = win, wk = wk)
+    val __obj = js.Dynamic.literal(ie = ie.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], pv = pv.asInstanceOf[js.Any], w3 = w3.asInstanceOf[js.Any], win = win.asInstanceOf[js.Any], wk = wk.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Ie]
   }

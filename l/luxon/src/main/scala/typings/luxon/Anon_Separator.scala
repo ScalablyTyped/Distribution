@@ -12,7 +12,7 @@ object Anon_Separator {
   @scala.inline
   def apply(separator: String = null): Anon_Separator = {
     val __obj = js.Dynamic.literal()
-    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Separator]
   }
 }

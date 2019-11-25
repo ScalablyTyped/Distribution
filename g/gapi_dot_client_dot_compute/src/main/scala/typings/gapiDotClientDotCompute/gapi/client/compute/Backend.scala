@@ -82,10 +82,10 @@ object Backend {
     maxUtilization: Int | Double = null
   ): Backend = {
     val __obj = js.Dynamic.literal()
-    if (balancingMode != null) __obj.updateDynamic("balancingMode")(balancingMode)
+    if (balancingMode != null) __obj.updateDynamic("balancingMode")(balancingMode.asInstanceOf[js.Any])
     if (capacityScaler != null) __obj.updateDynamic("capacityScaler")(capacityScaler.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (group != null) __obj.updateDynamic("group")(group)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (maxConnections != null) __obj.updateDynamic("maxConnections")(maxConnections.asInstanceOf[js.Any])
     if (maxConnectionsPerInstance != null) __obj.updateDynamic("maxConnectionsPerInstance")(maxConnectionsPerInstance.asInstanceOf[js.Any])
     if (maxRate != null) __obj.updateDynamic("maxRate")(maxRate.asInstanceOf[js.Any])

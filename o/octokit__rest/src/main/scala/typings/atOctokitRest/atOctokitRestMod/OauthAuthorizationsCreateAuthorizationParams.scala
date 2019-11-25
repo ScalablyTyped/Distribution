@@ -41,12 +41,12 @@ object OauthAuthorizationsCreateAuthorizationParams {
     note_url: String = null,
     scopes: js.Array[String] = null
   ): OauthAuthorizationsCreateAuthorizationParams = {
-    val __obj = js.Dynamic.literal(note = note)
-    if (client_id != null) __obj.updateDynamic("client_id")(client_id)
-    if (client_secret != null) __obj.updateDynamic("client_secret")(client_secret)
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
-    if (note_url != null) __obj.updateDynamic("note_url")(note_url)
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    val __obj = js.Dynamic.literal(note = note.asInstanceOf[js.Any])
+    if (client_id != null) __obj.updateDynamic("client_id")(client_id.asInstanceOf[js.Any])
+    if (client_secret != null) __obj.updateDynamic("client_secret")(client_secret.asInstanceOf[js.Any])
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (note_url != null) __obj.updateDynamic("note_url")(note_url.asInstanceOf[js.Any])
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthAuthorizationsCreateAuthorizationParams]
   }
 }

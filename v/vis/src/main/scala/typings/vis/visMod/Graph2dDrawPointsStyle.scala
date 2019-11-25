@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait Graph2dDrawPointsStyle extends js.Object
 
+object Graph2dDrawPointsStyle {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def circle: typings.vis.visStrings.circle = this.cast("circle")
+  @scala.inline
+  def square: typings.vis.visStrings.square = this.cast("square")
+}
+

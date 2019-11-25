@@ -14,7 +14,7 @@ object GroupOptions {
   @scala.inline
   def apply(name: String = null, x: Int | Double = null, y: Int | Double = null): GroupOptions = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupOptions]

@@ -24,12 +24,12 @@ object MerchantOrderReturn {
     returnShipments: js.Array[ReturnShipment] = null
   ): MerchantOrderReturn = {
     val __obj = js.Dynamic.literal()
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate)
-    if (merchantOrderId != null) __obj.updateDynamic("merchantOrderId")(merchantOrderId)
-    if (orderId != null) __obj.updateDynamic("orderId")(orderId)
-    if (orderReturnId != null) __obj.updateDynamic("orderReturnId")(orderReturnId)
-    if (returnItems != null) __obj.updateDynamic("returnItems")(returnItems)
-    if (returnShipments != null) __obj.updateDynamic("returnShipments")(returnShipments)
+    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
+    if (merchantOrderId != null) __obj.updateDynamic("merchantOrderId")(merchantOrderId.asInstanceOf[js.Any])
+    if (orderId != null) __obj.updateDynamic("orderId")(orderId.asInstanceOf[js.Any])
+    if (orderReturnId != null) __obj.updateDynamic("orderReturnId")(orderReturnId.asInstanceOf[js.Any])
+    if (returnItems != null) __obj.updateDynamic("returnItems")(returnItems.asInstanceOf[js.Any])
+    if (returnShipments != null) __obj.updateDynamic("returnShipments")(returnShipments.asInstanceOf[js.Any])
     __obj.asInstanceOf[MerchantOrderReturn]
   }
 }

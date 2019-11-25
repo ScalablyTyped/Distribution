@@ -27,14 +27,14 @@ object ManagementClientOptions {
     token: String = null,
     tokenProvider: TokenProvider = null
   ): ManagementClientOptions = {
-    val __obj = js.Dynamic.literal(domain = domain)
-    if (audience != null) __obj.updateDynamic("audience")(audience)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret)
-    if (retry != null) __obj.updateDynamic("retry")(retry)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (tokenProvider != null) __obj.updateDynamic("tokenProvider")(tokenProvider)
+    val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
+    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
+    if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (tokenProvider != null) __obj.updateDynamic("tokenProvider")(tokenProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagementClientOptions]
   }
 }

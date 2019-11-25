@@ -11,7 +11,7 @@ trait SubState extends js.Object {
 object SubState {
   @scala.inline
   def apply(shortcuts: Shortcuts): SubState = {
-    val __obj = js.Dynamic.literal(shortcuts = shortcuts)
+    val __obj = js.Dynamic.literal(shortcuts = shortcuts.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SubState]
   }

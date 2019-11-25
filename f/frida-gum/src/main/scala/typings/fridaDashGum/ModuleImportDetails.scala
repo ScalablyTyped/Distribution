@@ -36,11 +36,11 @@ object ModuleImportDetails {
     slot: NativePointer = null,
     `type`: ModuleImportType = null
   ): ModuleImportDetails = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (module != null) __obj.updateDynamic("module")(module)
-    if (slot != null) __obj.updateDynamic("slot")(slot)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
+    if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleImportDetails]
   }
 }

@@ -27,7 +27,7 @@ object item {
     series: dataSeries,
     seriesIndex: Double
   ): item = {
-    val __obj = js.Dynamic.literal(dataIndex = dataIndex, datapoint = datapoint, pageX = pageX, pageY = pageY, series = series, seriesIndex = seriesIndex)
+    val __obj = js.Dynamic.literal(dataIndex = dataIndex.asInstanceOf[js.Any], datapoint = datapoint.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any], seriesIndex = seriesIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[item]
   }

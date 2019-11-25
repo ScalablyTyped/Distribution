@@ -21,11 +21,11 @@ object DependencyInfo {
     isValid: js.UndefOr[Boolean] = js.undefined,
     supportedRange: String = null
   ): DependencyInfo = {
-    val __obj = js.Dynamic.literal(pkgPath = pkgPath)
-    if (installedVersion != null) __obj.updateDynamic("installedVersion")(installedVersion)
-    if (!js.isUndefined(isInstalled)) __obj.updateDynamic("isInstalled")(isInstalled)
-    if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid)
-    if (supportedRange != null) __obj.updateDynamic("supportedRange")(supportedRange)
+    val __obj = js.Dynamic.literal(pkgPath = pkgPath.asInstanceOf[js.Any])
+    if (installedVersion != null) __obj.updateDynamic("installedVersion")(installedVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(isInstalled)) __obj.updateDynamic("isInstalled")(isInstalled.asInstanceOf[js.Any])
+    if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid.asInstanceOf[js.Any])
+    if (supportedRange != null) __obj.updateDynamic("supportedRange")(supportedRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[DependencyInfo]
   }
 }

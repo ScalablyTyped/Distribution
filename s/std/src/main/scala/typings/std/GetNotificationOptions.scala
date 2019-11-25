@@ -12,7 +12,7 @@ object GetNotificationOptions {
   @scala.inline
   def apply(tag: java.lang.String = null): GetNotificationOptions = {
     val __obj = js.Dynamic.literal()
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetNotificationOptions]
   }
 }

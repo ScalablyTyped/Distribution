@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait LabelDirection extends js.Object
 
+object LabelDirection {
+  @scala.inline
+  def bottom: typings.amapDashJsDashApi.amapDashJsDashApiStrings.bottom = this.cast("bottom")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def center: typings.amapDashJsDashApi.amapDashJsDashApiStrings.center = this.cast("center")
+  @scala.inline
+  def left: typings.amapDashJsDashApi.amapDashJsDashApiStrings.left = this.cast("left")
+  @scala.inline
+  def right: typings.amapDashJsDashApi.amapDashJsDashApiStrings.right = this.cast("right")
+  @scala.inline
+  def top: typings.amapDashJsDashApi.amapDashJsDashApiStrings.top = this.cast("top")
+}
+

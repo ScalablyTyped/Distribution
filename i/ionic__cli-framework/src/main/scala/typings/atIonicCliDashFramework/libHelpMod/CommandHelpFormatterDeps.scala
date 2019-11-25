@@ -31,8 +31,8 @@ object CommandHelpFormatterDeps {
     colors: Colors = null,
     metadata: HydratedCommandMetadata[C, N, M, I, O] = null
   ): CommandHelpFormatterDeps[C, N, M, I, O] = {
-    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], location = location)
-    if (colors != null) __obj.updateDynamic("colors")(colors)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandHelpFormatterDeps[C, N, M, I, O]]
   }

@@ -17,7 +17,7 @@ trait DeleteFunctionConcurrencyOutput extends OutputTypesUnion {
 object DeleteFunctionConcurrencyOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): DeleteFunctionConcurrencyOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteFunctionConcurrencyOutput]
   }

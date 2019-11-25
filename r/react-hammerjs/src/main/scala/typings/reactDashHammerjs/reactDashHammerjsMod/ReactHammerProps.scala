@@ -98,9 +98,9 @@ object ReactHammerProps {
     if (onRotateStart != null) __obj.updateDynamic("onRotateStart")(js.Any.fromFunction1(onRotateStart))
     if (onSwipe != null) __obj.updateDynamic("onSwipe")(js.Any.fromFunction1(onSwipe))
     if (onTap != null) __obj.updateDynamic("onTap")(js.Any.fromFunction1(onTap))
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (recognizeWith != null) __obj.updateDynamic("recognizeWith")(recognizeWith)
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (recognizeWith != null) __obj.updateDynamic("recognizeWith")(recognizeWith.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactHammerProps]
   }
 }

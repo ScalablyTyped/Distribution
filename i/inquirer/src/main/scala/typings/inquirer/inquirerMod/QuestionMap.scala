@@ -62,7 +62,7 @@ object QuestionMap {
     password: PasswordQuestion[T],
     rawList: RawListQuestion[T]
   ): QuestionMap[T] = {
-    val __obj = js.Dynamic.literal(checkbox = checkbox, confirm = confirm, editor = editor, expand = expand, input = input, list = list, number = number, password = password, rawList = rawList)
+    val __obj = js.Dynamic.literal(checkbox = checkbox.asInstanceOf[js.Any], confirm = confirm.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any], expand = expand.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], rawList = rawList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QuestionMap[T]]
   }

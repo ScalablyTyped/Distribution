@@ -20,9 +20,9 @@ object Schemas {
     schemas: js.Array[typings.googleDashAppsDashScript.GoogleAppsScript.AdminDirectory.Schema.Schema] = null
   ): Schemas = {
     val __obj = js.Dynamic.literal()
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (schemas != null) __obj.updateDynamic("schemas")(schemas)
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (schemas != null) __obj.updateDynamic("schemas")(schemas.asInstanceOf[js.Any])
     __obj.asInstanceOf[Schemas]
   }
 }

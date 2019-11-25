@@ -12,7 +12,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(ignore: js.Array[String | RegExp | (js.Function1[/* queryDepths */ js.Array[_], Boolean])]): Options = {
-    val __obj = js.Dynamic.literal(ignore = ignore)
+    val __obj = js.Dynamic.literal(ignore = ignore.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

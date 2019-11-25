@@ -30,7 +30,7 @@ trait INxPatch extends js.Object {
 object INxPatch {
   @scala.inline
   def apply(qOp: PatchType, qPath: String, qValue: String): INxPatch = {
-    val __obj = js.Dynamic.literal(qOp = qOp, qPath = qPath, qValue = qValue)
+    val __obj = js.Dynamic.literal(qOp = qOp.asInstanceOf[js.Any], qPath = qPath.asInstanceOf[js.Any], qValue = qValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[INxPatch]
   }

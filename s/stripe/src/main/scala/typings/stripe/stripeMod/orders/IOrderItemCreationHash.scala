@@ -46,10 +46,10 @@ object IOrderItemCreationHash {
     quantity: Int | Double = null,
     `type`: sku | tax | shipping | discount = null
   ): IOrderItemCreationHash = {
-    val __obj = js.Dynamic.literal(parent = parent)
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (currency != null) __obj.updateDynamic("currency")(currency)
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOrderItemCreationHash]

@@ -55,11 +55,11 @@ object PlusPaymentIAPTransaction {
     transactionState: String = null
   ): PlusPaymentIAPTransaction = {
     val __obj = js.Dynamic.literal()
-    if (payment != null) __obj.updateDynamic("payment")(payment)
-    if (transactionDate != null) __obj.updateDynamic("transactionDate")(transactionDate)
-    if (transactionIdentifier != null) __obj.updateDynamic("transactionIdentifier")(transactionIdentifier)
-    if (transactionReceipt != null) __obj.updateDynamic("transactionReceipt")(transactionReceipt)
-    if (transactionState != null) __obj.updateDynamic("transactionState")(transactionState)
+    if (payment != null) __obj.updateDynamic("payment")(payment.asInstanceOf[js.Any])
+    if (transactionDate != null) __obj.updateDynamic("transactionDate")(transactionDate.asInstanceOf[js.Any])
+    if (transactionIdentifier != null) __obj.updateDynamic("transactionIdentifier")(transactionIdentifier.asInstanceOf[js.Any])
+    if (transactionReceipt != null) __obj.updateDynamic("transactionReceipt")(transactionReceipt.asInstanceOf[js.Any])
+    if (transactionState != null) __obj.updateDynamic("transactionState")(transactionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusPaymentIAPTransaction]
   }
 }

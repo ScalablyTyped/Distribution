@@ -12,7 +12,7 @@ trait ColorStop extends js.Object {
 object ColorStop {
   @scala.inline
   def apply(color: RGBA, position: Double): ColorStop = {
-    val __obj = js.Dynamic.literal(color = color, position = position)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ColorStop]
   }

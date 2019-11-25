@@ -19,10 +19,10 @@ object AppListItem {
   @scala.inline
   def apply(appId: String = null, appStoreUrl: String = null, name: String = null, publisher: String = null): AppListItem = {
     val __obj = js.Dynamic.literal()
-    if (appId != null) __obj.updateDynamic("appId")(appId)
-    if (appStoreUrl != null) __obj.updateDynamic("appStoreUrl")(appStoreUrl)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (publisher != null) __obj.updateDynamic("publisher")(publisher)
+    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
+    if (appStoreUrl != null) __obj.updateDynamic("appStoreUrl")(appStoreUrl.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppListItem]
   }
 }

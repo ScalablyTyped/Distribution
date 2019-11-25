@@ -11,7 +11,7 @@ trait BaseAudioContextEventMap extends js.Object {
 object BaseAudioContextEventMap {
   @scala.inline
   def apply(statechange: Event): BaseAudioContextEventMap = {
-    val __obj = js.Dynamic.literal(statechange = statechange)
+    val __obj = js.Dynamic.literal(statechange = statechange.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BaseAudioContextEventMap]
   }

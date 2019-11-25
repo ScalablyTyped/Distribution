@@ -230,6 +230,5 @@ object distMod extends js.Object {
     var formats: Anon_Date = js.native
   }
   
-  type PART_TYPE = typings.intlDashMessageformat.distFormattersMod.PART_TYPE
 }
 

@@ -27,10 +27,10 @@ object IProperties {
     labels: ILabels = null
   ): IProperties = {
     val __obj = js.Dynamic.literal()
-    if (buttonFocus != null) __obj.updateDynamic("buttonFocus")(buttonFocus)
-    if (!js.isUndefined(buttonReverse)) __obj.updateDynamic("buttonReverse")(buttonReverse)
+    if (buttonFocus != null) __obj.updateDynamic("buttonFocus")(buttonFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttonReverse)) __obj.updateDynamic("buttonReverse")(buttonReverse.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProperties]
   }
 }

@@ -17,9 +17,9 @@ object OnenoteEntitySchemaObjectModel {
   @scala.inline
   def apply(createdDateTime: String = null, id: String = null, self: String = null): OnenoteEntitySchemaObjectModel = {
     val __obj = js.Dynamic.literal()
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (self != null) __obj.updateDynamic("self")(self)
+    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnenoteEntitySchemaObjectModel]
   }
 }

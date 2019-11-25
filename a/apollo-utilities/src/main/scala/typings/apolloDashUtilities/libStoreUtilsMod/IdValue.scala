@@ -15,9 +15,9 @@ trait IdValue extends _StoreValue {
 object IdValue {
   @scala.inline
   def apply(generated: Boolean, id: String, `type`: id, typename: String = null): IdValue = {
-    val __obj = js.Dynamic.literal(generated = generated, id = id)
-    __obj.updateDynamic("type")(`type`)
-    if (typename != null) __obj.updateDynamic("typename")(typename)
+    val __obj = js.Dynamic.literal(generated = generated.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (typename != null) __obj.updateDynamic("typename")(typename.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdValue]
   }
 }

@@ -13,8 +13,8 @@ object Anon_Iban {
   @scala.inline
   def apply(iban: String = null, ideal: String = null): Anon_Iban = {
     val __obj = js.Dynamic.literal()
-    if (iban != null) __obj.updateDynamic("iban")(iban)
-    if (ideal != null) __obj.updateDynamic("ideal")(ideal)
+    if (iban != null) __obj.updateDynamic("iban")(iban.asInstanceOf[js.Any])
+    if (ideal != null) __obj.updateDynamic("ideal")(ideal.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Iban]
   }
 }

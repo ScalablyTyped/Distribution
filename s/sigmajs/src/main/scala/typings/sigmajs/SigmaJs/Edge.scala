@@ -24,9 +24,9 @@ object Edge {
     color: String = null,
     size: Int | Double = null
   ): Edge = {
-    val __obj = js.Dynamic.literal(id = id, source = source, target = target)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (color != null) __obj.updateDynamic("color")(color)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Edge]
   }

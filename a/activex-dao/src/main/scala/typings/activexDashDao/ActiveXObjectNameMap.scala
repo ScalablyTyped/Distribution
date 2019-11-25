@@ -38,15 +38,15 @@ object ActiveXObjectNameMap {
     `DAO.User`: User
   ): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DAO.DBEngine")(`DAO.DBEngine`)
-    __obj.updateDynamic("DAO.Field")(`DAO.Field`)
-    __obj.updateDynamic("DAO.Group")(`DAO.Group`)
-    __obj.updateDynamic("DAO.Index")(`DAO.Index`)
-    __obj.updateDynamic("DAO.PrivateDBEngine")(`DAO.PrivateDBEngine`)
-    __obj.updateDynamic("DAO.QueryDef")(`DAO.QueryDef`)
-    __obj.updateDynamic("DAO.Relation")(`DAO.Relation`)
-    __obj.updateDynamic("DAO.TableDef")(`DAO.TableDef`)
-    __obj.updateDynamic("DAO.User")(`DAO.User`)
+    __obj.updateDynamic("DAO.DBEngine")(`DAO.DBEngine`.asInstanceOf[js.Any])
+    __obj.updateDynamic("DAO.Field")(`DAO.Field`.asInstanceOf[js.Any])
+    __obj.updateDynamic("DAO.Group")(`DAO.Group`.asInstanceOf[js.Any])
+    __obj.updateDynamic("DAO.Index")(`DAO.Index`.asInstanceOf[js.Any])
+    __obj.updateDynamic("DAO.PrivateDBEngine")(`DAO.PrivateDBEngine`.asInstanceOf[js.Any])
+    __obj.updateDynamic("DAO.QueryDef")(`DAO.QueryDef`.asInstanceOf[js.Any])
+    __obj.updateDynamic("DAO.Relation")(`DAO.Relation`.asInstanceOf[js.Any])
+    __obj.updateDynamic("DAO.TableDef")(`DAO.TableDef`.asInstanceOf[js.Any])
+    __obj.updateDynamic("DAO.User")(`DAO.User`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

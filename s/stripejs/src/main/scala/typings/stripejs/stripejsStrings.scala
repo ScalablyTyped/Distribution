@@ -366,7 +366,7 @@ object stripejsStrings {
   sealed trait unchecked extends checkStatus
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown_ extends js.Object
   
   @js.native
   sealed trait unset extends js.Object
@@ -621,7 +621,7 @@ object stripejsStrings {
   @scala.inline
   def unchecked: unchecked = "unchecked".asInstanceOf[unchecked]
   @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  def unknown_ : unknown_ = "unknown".asInstanceOf[unknown_]
   @scala.inline
   def unset: unset = "unset".asInstanceOf[unset]
   @scala.inline

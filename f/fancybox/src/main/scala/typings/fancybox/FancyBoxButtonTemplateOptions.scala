@@ -28,12 +28,12 @@ object FancyBoxButtonTemplateOptions {
     zoom: String = null
   ): FancyBoxButtonTemplateOptions = {
     val __obj = js.Dynamic.literal()
-    if (arrowLeft != null) __obj.updateDynamic("arrowLeft")(arrowLeft)
-    if (arrowRight != null) __obj.updateDynamic("arrowRight")(arrowRight)
-    if (close != null) __obj.updateDynamic("close")(close)
-    if (download != null) __obj.updateDynamic("download")(download)
-    if (smallBtn != null) __obj.updateDynamic("smallBtn")(smallBtn)
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom)
+    if (arrowLeft != null) __obj.updateDynamic("arrowLeft")(arrowLeft.asInstanceOf[js.Any])
+    if (arrowRight != null) __obj.updateDynamic("arrowRight")(arrowRight.asInstanceOf[js.Any])
+    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
+    if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
+    if (smallBtn != null) __obj.updateDynamic("smallBtn")(smallBtn.asInstanceOf[js.Any])
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[FancyBoxButtonTemplateOptions]
   }
 }

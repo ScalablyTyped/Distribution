@@ -22,11 +22,11 @@ object RelatedResources {
     sale: SaleResource = null
   ): RelatedResources = {
     val __obj = js.Dynamic.literal()
-    if (authorization != null) __obj.updateDynamic("authorization")(authorization)
-    if (capture != null) __obj.updateDynamic("capture")(capture)
-    if (order != null) __obj.updateDynamic("order")(order)
-    if (refund != null) __obj.updateDynamic("refund")(refund)
-    if (sale != null) __obj.updateDynamic("sale")(sale)
+    if (authorization != null) __obj.updateDynamic("authorization")(authorization.asInstanceOf[js.Any])
+    if (capture != null) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (refund != null) __obj.updateDynamic("refund")(refund.asInstanceOf[js.Any])
+    if (sale != null) __obj.updateDynamic("sale")(sale.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelatedResources]
   }
 }

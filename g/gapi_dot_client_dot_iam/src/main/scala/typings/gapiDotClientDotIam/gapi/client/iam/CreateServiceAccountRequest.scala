@@ -24,8 +24,8 @@ object CreateServiceAccountRequest {
   @scala.inline
   def apply(accountId: String = null, serviceAccount: ServiceAccount = null): CreateServiceAccountRequest = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (serviceAccount != null) __obj.updateDynamic("serviceAccount")(serviceAccount)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (serviceAccount != null) __obj.updateDynamic("serviceAccount")(serviceAccount.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateServiceAccountRequest]
   }
 }

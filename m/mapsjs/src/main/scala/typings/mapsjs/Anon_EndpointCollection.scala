@@ -24,7 +24,7 @@ object Anon_EndpointCollection {
     ulX: Double,
     ulY: Double
   ): Anon_EndpointCollection = {
-    val __obj = js.Dynamic.literal(endpointCollection = endpointCollection, idxMinX = idxMinX, idxMinY = idxMinY, quadCollection = quadCollection, ulX = ulX, ulY = ulY)
+    val __obj = js.Dynamic.literal(endpointCollection = endpointCollection.asInstanceOf[js.Any], idxMinX = idxMinX.asInstanceOf[js.Any], idxMinY = idxMinY.asInstanceOf[js.Any], quadCollection = quadCollection.asInstanceOf[js.Any], ulX = ulX.asInstanceOf[js.Any], ulY = ulY.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EndpointCollection]
   }

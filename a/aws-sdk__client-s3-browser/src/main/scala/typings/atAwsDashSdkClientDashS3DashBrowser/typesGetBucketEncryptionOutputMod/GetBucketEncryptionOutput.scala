@@ -23,8 +23,8 @@ object GetBucketEncryptionOutput {
     $metadata: ResponseMetadata,
     ServerSideEncryptionConfiguration: _UnmarshalledServerSideEncryptionConfiguration = null
   ): GetBucketEncryptionOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (ServerSideEncryptionConfiguration != null) __obj.updateDynamic("ServerSideEncryptionConfiguration")(ServerSideEncryptionConfiguration)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (ServerSideEncryptionConfiguration != null) __obj.updateDynamic("ServerSideEncryptionConfiguration")(ServerSideEncryptionConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketEncryptionOutput]
   }
 }

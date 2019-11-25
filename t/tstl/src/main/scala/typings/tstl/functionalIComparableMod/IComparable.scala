@@ -16,8 +16,8 @@ trait IComparable[T] extends js.Object {
 
 object IComparable {
   @scala.inline
-  def apply[T](equals: T => Boolean, hashCode: () => Double, less: T => Boolean): IComparable[T] = {
-    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals), hashCode = js.Any.fromFunction0(hashCode), less = js.Any.fromFunction1(less))
+  def apply[T](less: T => Boolean): IComparable[T] = {
+    val __obj = js.Dynamic.literal(less = js.Any.fromFunction1(less))
   
     __obj.asInstanceOf[IComparable[T]]
   }

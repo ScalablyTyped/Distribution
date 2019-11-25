@@ -20,7 +20,7 @@ trait VideoData extends js.Object {
 object VideoData {
   @scala.inline
   def apply(duration: Double, height: Double, size: Double, tempFilePath: String, width: Double): VideoData = {
-    val __obj = js.Dynamic.literal(duration = duration, height = height, size = size, tempFilePath = tempFilePath, width = width)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], tempFilePath = tempFilePath.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VideoData]
   }

@@ -62,12 +62,12 @@ object CredentialProperties {
   ): CredentialProperties = {
     val __obj = js.Dynamic.literal()
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAdmin)) __obj.updateDynamic("isAdmin")(isAdmin)
-    if (oAuthState != null) __obj.updateDynamic("oAuthState")(oAuthState)
-    if (server != null) __obj.updateDynamic("server")(server)
-    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl)
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (userId != null) __obj.updateDynamic("userId")(userId)
+    if (!js.isUndefined(isAdmin)) __obj.updateDynamic("isAdmin")(isAdmin.asInstanceOf[js.Any])
+    if (oAuthState != null) __obj.updateDynamic("oAuthState")(oAuthState.asInstanceOf[js.Any])
+    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CredentialProperties]
   }
 }

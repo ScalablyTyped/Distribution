@@ -15,7 +15,7 @@ object _VaultAccessPolicy {
   @scala.inline
   def apply(Policy: String = null): _VaultAccessPolicy = {
     val __obj = js.Dynamic.literal()
-    if (Policy != null) __obj.updateDynamic("Policy")(Policy)
+    if (Policy != null) __obj.updateDynamic("Policy")(Policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[_VaultAccessPolicy]
   }
 }

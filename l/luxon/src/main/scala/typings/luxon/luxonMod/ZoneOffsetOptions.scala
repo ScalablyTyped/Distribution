@@ -16,7 +16,7 @@ object ZoneOffsetOptions {
   def apply(format: short | long = null, locale: String = null): ZoneOffsetOptions = {
     val __obj = js.Dynamic.literal()
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoneOffsetOptions]
   }
 }

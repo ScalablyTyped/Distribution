@@ -21,8 +21,8 @@ object Anon_MaxTimeMSReadPreference {
   ): Anon_MaxTimeMSReadPreference = {
     val __obj = js.Dynamic.literal()
     if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
-    if (session != null) __obj.updateDynamic("session")(session)
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MaxTimeMSReadPreference]
   }
 }

@@ -29,9 +29,9 @@ object BreakLocation {
     columnNumber: Int | Double = null,
     `type`: java.lang.String = null
   ): BreakLocation = {
-    val __obj = js.Dynamic.literal(lineNumber = lineNumber, scriptId = scriptId)
+    val __obj = js.Dynamic.literal(lineNumber = lineNumber.asInstanceOf[js.Any], scriptId = scriptId.asInstanceOf[js.Any])
     if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BreakLocation]
   }
 }

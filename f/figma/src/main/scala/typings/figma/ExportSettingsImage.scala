@@ -23,9 +23,9 @@ object ExportSettingsImage {
     suffix: String = null
   ): ExportSettingsImage = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
-    if (constraint != null) __obj.updateDynamic("constraint")(constraint)
-    if (!js.isUndefined(contentsOnly)) __obj.updateDynamic("contentsOnly")(contentsOnly)
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (constraint != null) __obj.updateDynamic("constraint")(constraint.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentsOnly)) __obj.updateDynamic("contentsOnly")(contentsOnly.asInstanceOf[js.Any])
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportSettingsImage]
   }
 }

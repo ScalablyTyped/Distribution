@@ -48,7 +48,7 @@ object DroppableProps {
     if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction0(onDragEnter))
     if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(js.Any.fromFunction0(onDragLeave))
     if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction1(onDrop))
-    if (subscribeTo != null) __obj.updateDynamic("subscribeTo")(subscribeTo)
+    if (subscribeTo != null) __obj.updateDynamic("subscribeTo")(subscribeTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[DroppableProps]
   }
 }

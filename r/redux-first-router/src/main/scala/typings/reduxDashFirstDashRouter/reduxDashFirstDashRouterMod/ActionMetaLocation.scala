@@ -19,7 +19,7 @@ object ActionMetaLocation {
     history: Nullable[HistoryData] = null,
     kind: Nullable[String] = null
   ): ActionMetaLocation = {
-    val __obj = js.Dynamic.literal(current = current, prev = prev)
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any])
     if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionMetaLocation]

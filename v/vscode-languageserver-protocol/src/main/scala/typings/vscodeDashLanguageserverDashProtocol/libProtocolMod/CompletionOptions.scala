@@ -27,8 +27,8 @@ object CompletionOptions {
   @scala.inline
   def apply(resolveProvider: js.UndefOr[Boolean] = js.undefined, triggerCharacters: js.Array[String] = null): CompletionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(resolveProvider)) __obj.updateDynamic("resolveProvider")(resolveProvider)
-    if (triggerCharacters != null) __obj.updateDynamic("triggerCharacters")(triggerCharacters)
+    if (!js.isUndefined(resolveProvider)) __obj.updateDynamic("resolveProvider")(resolveProvider.asInstanceOf[js.Any])
+    if (triggerCharacters != null) __obj.updateDynamic("triggerCharacters")(triggerCharacters.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionOptions]
   }
 }

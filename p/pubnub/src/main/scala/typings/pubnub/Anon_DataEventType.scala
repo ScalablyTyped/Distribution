@@ -14,8 +14,8 @@ trait Anon_DataEventType extends js.Object {
 object Anon_DataEventType {
   @scala.inline
   def apply(data: MembershipData, event: String, `type`: String): Anon_DataEventType = {
-    val __obj = js.Dynamic.literal(data = data, event = event)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DataEventType]
   }
 }

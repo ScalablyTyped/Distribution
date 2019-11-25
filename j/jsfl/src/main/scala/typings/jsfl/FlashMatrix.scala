@@ -16,7 +16,7 @@ trait FlashMatrix extends js.Object {
 object FlashMatrix {
   @scala.inline
   def apply(a: Double, b: Double, c: Double, d: Double, tx: Double, ty: Double): FlashMatrix = {
-    val __obj = js.Dynamic.literal(a = a, b = b, c = c, d = d, tx = tx, ty = ty)
+    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], c = c.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], tx = tx.asInstanceOf[js.Any], ty = ty.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FlashMatrix]
   }

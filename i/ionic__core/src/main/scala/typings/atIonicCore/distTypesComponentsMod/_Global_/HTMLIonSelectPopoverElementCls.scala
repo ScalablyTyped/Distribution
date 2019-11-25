@@ -1,6 +1,5 @@
 package typings.atIonicCore.distTypesComponentsMod._Global_
 
-import typings.atIonicCore.distTypesComponentsSelectDashPopoverSelectDashPopoverDashInterfaceMod.SelectPopoverOption
 import typings.std.CSSStyleDeclaration
 import typings.std.Element
 import typings.std.HTMLSlotElement
@@ -30,7 +29,9 @@ class HTMLIonSelectPopoverElementCls () extends HTMLIonSelectPopoverElement {
     * Array of options for the popover
     */
   /* CompleteClass */
-  override var options: js.Array[SelectPopoverOption] = js.native
+  override var options: js.Array[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SelectPopoverOption */ _
+  ] = js.native
   /**
     * Returns the first preceding sibling that is an element, and null otherwise.
     */

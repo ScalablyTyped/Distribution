@@ -53,7 +53,7 @@ object MarkerProps {
     tabable: js.UndefOr[Boolean] = js.undefined
   ): MarkerProps = {
     val __obj = js.Dynamic.literal()
-    if (marker != null) __obj.updateDynamic("marker")(marker)
+    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction2(onBlur))
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction2(onFocus))
@@ -62,9 +62,9 @@ object MarkerProps {
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction2(onMouseLeave))
     if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction2(onMouseMove))
     if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction2(onMouseUp))
-    if (!js.isUndefined(preserveMarkerAspect)) __obj.updateDynamic("preserveMarkerAspect")(preserveMarkerAspect)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(tabable)) __obj.updateDynamic("tabable")(tabable)
+    if (!js.isUndefined(preserveMarkerAspect)) __obj.updateDynamic("preserveMarkerAspect")(preserveMarkerAspect.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabable)) __obj.updateDynamic("tabable")(tabable.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerProps]
   }
 }

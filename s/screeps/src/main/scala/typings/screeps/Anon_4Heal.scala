@@ -13,7 +13,7 @@ trait Anon_4Heal extends js.Object {
 object Anon_4Heal {
   @scala.inline
   def apply(heal: `4`, rangedHeal: `4`): Anon_4Heal = {
-    val __obj = js.Dynamic.literal(heal = heal, rangedHeal = rangedHeal)
+    val __obj = js.Dynamic.literal(heal = heal.asInstanceOf[js.Any], rangedHeal = rangedHeal.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_4Heal]
   }

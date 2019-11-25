@@ -14,8 +14,8 @@ trait VersionData extends StatusData {
 object VersionData {
   @scala.inline
   def apply(bugfix: String, major: String, minor: String, version: String, server: String = null): VersionData = {
-    val __obj = js.Dynamic.literal(bugfix = bugfix, major = major, minor = minor, version = version)
-    if (server != null) __obj.updateDynamic("server")(server)
+    val __obj = js.Dynamic.literal(bugfix = bugfix.asInstanceOf[js.Any], major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     __obj.asInstanceOf[VersionData]
   }
 }

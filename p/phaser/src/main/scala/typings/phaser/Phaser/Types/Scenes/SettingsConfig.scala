@@ -68,16 +68,16 @@ object SettingsConfig {
     visible: js.UndefOr[Boolean] = js.undefined
   ): SettingsConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
     if (cameras != null) __obj.updateDynamic("cameras")(cameras.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (loader != null) __obj.updateDynamic("loader")(loader)
-    if (map != null) __obj.updateDynamic("map")(map)
-    if (mapAdd != null) __obj.updateDynamic("mapAdd")(mapAdd)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (loader != null) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (mapAdd != null) __obj.updateDynamic("mapAdd")(mapAdd.asInstanceOf[js.Any])
     if (pack != null) __obj.updateDynamic("pack")(pack.asInstanceOf[js.Any])
-    if (physics != null) __obj.updateDynamic("physics")(physics)
+    if (physics != null) __obj.updateDynamic("physics")(physics.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingsConfig]
   }
 }

@@ -12,7 +12,7 @@ trait FBResponseObject extends js.Object {
 object FBResponseObject {
   @scala.inline
   def apply(data: js.Any, error: js.Any): FBResponseObject = {
-    val __obj = js.Dynamic.literal(data = data, error = error)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FBResponseObject]
   }

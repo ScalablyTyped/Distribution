@@ -13,8 +13,8 @@ object PlannerBucketTaskBoardTaskFormat {
   @scala.inline
   def apply(id: String = null, orderHint: String = null): PlannerBucketTaskBoardTaskFormat = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlannerBucketTaskBoardTaskFormat]
   }
 }

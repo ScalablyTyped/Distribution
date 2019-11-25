@@ -35,12 +35,12 @@ object TriggerOptions {
     when: BEFORE | AFTER | (`INSTEAD OF`) = null
   ): TriggerOptions = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
-    if (condition != null) __obj.updateDynamic("condition")(condition)
-    if (!js.isUndefined(constraint)) __obj.updateDynamic("constraint")(constraint)
-    if (!js.isUndefined(deferrable)) __obj.updateDynamic("deferrable")(deferrable)
-    if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred)
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
+    if (!js.isUndefined(constraint)) __obj.updateDynamic("constraint")(constraint.asInstanceOf[js.Any])
+    if (!js.isUndefined(deferrable)) __obj.updateDynamic("deferrable")(deferrable.asInstanceOf[js.Any])
+    if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred.asInstanceOf[js.Any])
     if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
-    if (functionParams != null) __obj.updateDynamic("functionParams")(functionParams)
+    if (functionParams != null) __obj.updateDynamic("functionParams")(functionParams.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggerOptions]

@@ -15,8 +15,8 @@ object CertificationControl {
   @scala.inline
   def apply(name: String = null, url: String = null): CertificationControl = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificationControl]
   }
 }

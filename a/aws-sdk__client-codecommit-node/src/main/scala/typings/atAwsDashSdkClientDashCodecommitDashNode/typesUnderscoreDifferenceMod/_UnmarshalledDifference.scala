@@ -29,8 +29,8 @@ object _UnmarshalledDifference {
     changeType: A | M | D | String = null
   ): _UnmarshalledDifference = {
     val __obj = js.Dynamic.literal()
-    if (afterBlob != null) __obj.updateDynamic("afterBlob")(afterBlob)
-    if (beforeBlob != null) __obj.updateDynamic("beforeBlob")(beforeBlob)
+    if (afterBlob != null) __obj.updateDynamic("afterBlob")(afterBlob.asInstanceOf[js.Any])
+    if (beforeBlob != null) __obj.updateDynamic("beforeBlob")(beforeBlob.asInstanceOf[js.Any])
     if (changeType != null) __obj.updateDynamic("changeType")(changeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledDifference]
   }

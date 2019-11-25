@@ -70,9 +70,9 @@ object PaymentMethod {
     `type`: PaymentMethodType,
     limits: PaymentMethodLimits = null
   ): PaymentMethod = {
-    val __obj = js.Dynamic.literal(allow_buy = allow_buy, allow_sell = allow_sell, currency = currency, instant_buy = instant_buy, instant_sell = instant_sell, name = name, primary_buy = primary_buy, primary_sell = primary_sell, resource = resource)
-    __obj.updateDynamic("type")(`type`)
-    if (limits != null) __obj.updateDynamic("limits")(limits)
+    val __obj = js.Dynamic.literal(allow_buy = allow_buy.asInstanceOf[js.Any], allow_sell = allow_sell.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], instant_buy = instant_buy.asInstanceOf[js.Any], instant_sell = instant_sell.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], primary_buy = primary_buy.asInstanceOf[js.Any], primary_sell = primary_sell.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (limits != null) __obj.updateDynamic("limits")(limits.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentMethod]
   }
 }

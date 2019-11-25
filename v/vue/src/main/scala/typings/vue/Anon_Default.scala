@@ -14,7 +14,7 @@ object Anon_Default {
   @scala.inline
   def apply(default: js.Any = null, from: InjectKey = null): Anon_Default = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Default]
   }

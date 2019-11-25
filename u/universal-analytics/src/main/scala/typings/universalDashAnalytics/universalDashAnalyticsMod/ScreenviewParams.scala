@@ -25,12 +25,12 @@ object ScreenviewParams {
     cd: String = null
   ): ScreenviewParams = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (aid != null) __obj.updateDynamic("aid")(aid)
-    if (aiid != null) __obj.updateDynamic("aiid")(aiid)
-    if (an != null) __obj.updateDynamic("an")(an)
-    if (av != null) __obj.updateDynamic("av")(av)
-    if (cd != null) __obj.updateDynamic("cd")(cd)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (aid != null) __obj.updateDynamic("aid")(aid.asInstanceOf[js.Any])
+    if (aiid != null) __obj.updateDynamic("aiid")(aiid.asInstanceOf[js.Any])
+    if (an != null) __obj.updateDynamic("an")(an.asInstanceOf[js.Any])
+    if (av != null) __obj.updateDynamic("av")(av.asInstanceOf[js.Any])
+    if (cd != null) __obj.updateDynamic("cd")(cd.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScreenviewParams]
   }
 }

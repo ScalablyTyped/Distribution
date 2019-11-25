@@ -19,7 +19,7 @@ object Anon_AtomExperimental {
     scopeDescriptor: ScopeDescriptor,
     value: native | experimental | poll | typings.atom.atomStrings.atom
   ): Anon_AtomExperimental = {
-    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AtomExperimental]
   }

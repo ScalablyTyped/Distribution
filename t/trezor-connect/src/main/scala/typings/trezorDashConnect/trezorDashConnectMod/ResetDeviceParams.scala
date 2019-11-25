@@ -31,17 +31,17 @@ object ResetDeviceParams {
     useEmptyPassphrase: js.UndefOr[Boolean] = js.undefined
   ): ResetDeviceParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice)
-    if (device != null) __obj.updateDynamic("device")(device)
-    if (!js.isUndefined(keepSession)) __obj.updateDynamic("keepSession")(keepSession)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (!js.isUndefined(noBackup)) __obj.updateDynamic("noBackup")(noBackup)
-    if (!js.isUndefined(passphraseProtection)) __obj.updateDynamic("passphraseProtection")(passphraseProtection)
-    if (!js.isUndefined(pinProtection)) __obj.updateDynamic("pinProtection")(pinProtection)
-    if (!js.isUndefined(skipBackup)) __obj.updateDynamic("skipBackup")(skipBackup)
+    if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice.asInstanceOf[js.Any])
+    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepSession)) __obj.updateDynamic("keepSession")(keepSession.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (!js.isUndefined(noBackup)) __obj.updateDynamic("noBackup")(noBackup.asInstanceOf[js.Any])
+    if (!js.isUndefined(passphraseProtection)) __obj.updateDynamic("passphraseProtection")(passphraseProtection.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinProtection)) __obj.updateDynamic("pinProtection")(pinProtection.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipBackup)) __obj.updateDynamic("skipBackup")(skipBackup.asInstanceOf[js.Any])
     if (strength != null) __obj.updateDynamic("strength")(strength.asInstanceOf[js.Any])
     if (u2fCounter != null) __obj.updateDynamic("u2fCounter")(u2fCounter.asInstanceOf[js.Any])
-    if (!js.isUndefined(useEmptyPassphrase)) __obj.updateDynamic("useEmptyPassphrase")(useEmptyPassphrase)
+    if (!js.isUndefined(useEmptyPassphrase)) __obj.updateDynamic("useEmptyPassphrase")(useEmptyPassphrase.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResetDeviceParams]
   }
 }

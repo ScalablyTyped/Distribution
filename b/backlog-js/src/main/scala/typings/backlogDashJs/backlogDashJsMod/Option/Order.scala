@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait Order extends js.Object
 
+object Order {
+  @scala.inline
+  def asc: typings.backlogDashJs.backlogDashJsStrings.asc = this.cast("asc")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def desc: typings.backlogDashJs.backlogDashJsStrings.desc = this.cast("desc")
+}
+

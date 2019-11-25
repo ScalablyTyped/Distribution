@@ -17,7 +17,7 @@ object SerializerOptions {
   @scala.inline
   def apply(treeAdapter: TreeAdapter = null): SerializerOptions = {
     val __obj = js.Dynamic.literal()
-    if (treeAdapter != null) __obj.updateDynamic("treeAdapter")(treeAdapter)
+    if (treeAdapter != null) __obj.updateDynamic("treeAdapter")(treeAdapter.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerializerOptions]
   }
 }

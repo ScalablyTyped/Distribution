@@ -20,10 +20,10 @@ object PageInfo {
     startCursor: ConnectionCursor = null
   ): PageInfo = {
     val __obj = js.Dynamic.literal()
-    if (endCursor != null) __obj.updateDynamic("endCursor")(endCursor)
-    if (!js.isUndefined(hasNextPage)) __obj.updateDynamic("hasNextPage")(hasNextPage)
-    if (!js.isUndefined(hasPreviousPage)) __obj.updateDynamic("hasPreviousPage")(hasPreviousPage)
-    if (startCursor != null) __obj.updateDynamic("startCursor")(startCursor)
+    if (endCursor != null) __obj.updateDynamic("endCursor")(endCursor.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasNextPage)) __obj.updateDynamic("hasNextPage")(hasNextPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasPreviousPage)) __obj.updateDynamic("hasPreviousPage")(hasPreviousPage.asInstanceOf[js.Any])
+    if (startCursor != null) __obj.updateDynamic("startCursor")(startCursor.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageInfo]
   }
 }

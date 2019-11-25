@@ -12,7 +12,7 @@ object DiagramExportSVGOptions {
   @scala.inline
   def apply(raw: js.UndefOr[Boolean] = js.undefined): DiagramExportSVGOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramExportSVGOptions]
   }
 }

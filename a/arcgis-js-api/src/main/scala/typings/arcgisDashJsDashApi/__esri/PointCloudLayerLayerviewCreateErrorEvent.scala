@@ -12,7 +12,7 @@ trait PointCloudLayerLayerviewCreateErrorEvent extends js.Object {
 object PointCloudLayerLayerviewCreateErrorEvent {
   @scala.inline
   def apply(error: Error, view: View): PointCloudLayerLayerviewCreateErrorEvent = {
-    val __obj = js.Dynamic.literal(error = error, view = view)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PointCloudLayerLayerviewCreateErrorEvent]
   }

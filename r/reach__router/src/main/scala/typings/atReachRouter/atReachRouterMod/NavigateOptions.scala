@@ -13,7 +13,7 @@ object NavigateOptions {
   @scala.inline
   def apply[TState](replace: js.UndefOr[Boolean] = js.undefined, state: TState = null): NavigateOptions[TState] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace)
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigateOptions[TState]]
   }

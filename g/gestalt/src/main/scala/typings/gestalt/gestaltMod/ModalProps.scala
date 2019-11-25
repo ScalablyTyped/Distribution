@@ -33,7 +33,7 @@ object ModalProps {
     role: alertdialog | dialog = null,
     size: sm | md | lg = null
   ): ModalProps = {
-    val __obj = js.Dynamic.literal(accessibilityCloseLabel = accessibilityCloseLabel, accessibilityModalLabel = accessibilityModalLabel, heading = heading, onDismiss = js.Any.fromFunction0(onDismiss))
+    val __obj = js.Dynamic.literal(accessibilityCloseLabel = accessibilityCloseLabel.asInstanceOf[js.Any], accessibilityModalLabel = accessibilityModalLabel.asInstanceOf[js.Any], heading = heading.asInstanceOf[js.Any], onDismiss = js.Any.fromFunction0(onDismiss))
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])

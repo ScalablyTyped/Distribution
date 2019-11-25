@@ -13,7 +13,7 @@ trait PlotMouseEvent extends js.Object {
 object PlotMouseEvent {
   @scala.inline
   def apply(event: MouseEvent, points: js.Array[PlotDatum]): PlotMouseEvent = {
-    val __obj = js.Dynamic.literal(event = event, points = points)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PlotMouseEvent]
   }

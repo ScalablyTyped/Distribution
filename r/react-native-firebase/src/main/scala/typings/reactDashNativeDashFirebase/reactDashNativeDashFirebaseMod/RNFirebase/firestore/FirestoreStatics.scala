@@ -6,7 +6,7 @@ import typings.reactDashNativeDashFirebase.TypeofClassFieldPath
 import typings.reactDashNativeDashFirebase.TypeofClassFieldValue
 import typings.reactDashNativeDashFirebase.TypeofClassTimestamp
 import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.debug
-import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.error
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.error_
 import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseStrings.silent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +27,7 @@ trait FirestoreStatics extends js.Object {
   @JSName("setLogLevel")
   def setLogLevel_debug(logLevel: debug): Unit = js.native
   @JSName("setLogLevel")
-  def setLogLevel_error(logLevel: error): Unit = js.native
+  def setLogLevel_error(logLevel: error_): Unit = js.native
   @JSName("setLogLevel")
   def setLogLevel_silent(logLevel: silent): Unit = js.native
 }

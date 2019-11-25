@@ -12,7 +12,7 @@ trait RequestWillFetchCallbackParam extends js.Object {
 object RequestWillFetchCallbackParam {
   @scala.inline
   def apply(request: Request): RequestWillFetchCallbackParam = {
-    val __obj = js.Dynamic.literal(request = request)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RequestWillFetchCallbackParam]
   }

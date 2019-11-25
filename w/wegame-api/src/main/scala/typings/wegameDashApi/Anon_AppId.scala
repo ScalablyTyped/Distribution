@@ -39,10 +39,10 @@ object Anon_AppId {
     extraData: js.Any = null,
     path: String = null
   ): Anon_AppId = {
-    val __obj = js.Dynamic.literal(appId = appId)
+    val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
     if (envVersion != null) __obj.updateDynamic("envVersion")(envVersion.asInstanceOf[js.Any])
-    if (extraData != null) __obj.updateDynamic("extraData")(extraData)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (extraData != null) __obj.updateDynamic("extraData")(extraData.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AppId]
   }
 }

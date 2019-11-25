@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait FieldSelectionModeType extends js.Object
 
+object FieldSelectionModeType {
+  @scala.inline
+  def AND: typings.qlikDashEngineapi.qlikDashEngineapiStrings.AND = this.cast("AND")
+  @scala.inline
+  def NORMAL: typings.qlikDashEngineapi.qlikDashEngineapiStrings.NORMAL = this.cast("NORMAL")
+  @scala.inline
+  def NOT: typings.qlikDashEngineapi.qlikDashEngineapiStrings.NOT = this.cast("NOT")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

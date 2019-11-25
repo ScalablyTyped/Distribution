@@ -14,7 +14,7 @@ object Options {
   def apply(errorHandler: ErrorHandlerFunction | ErrorHandlerObject = null, locator: js.Any = null): Options = {
     val __obj = js.Dynamic.literal()
     if (errorHandler != null) __obj.updateDynamic("errorHandler")(errorHandler.asInstanceOf[js.Any])
-    if (locator != null) __obj.updateDynamic("locator")(locator)
+    if (locator != null) __obj.updateDynamic("locator")(locator.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait ObjectType extends js.Object
 
+object ObjectType {
+  @scala.inline
+  def OBJECT_TYPE_UNSPECIFIED: typings.gapiDotPeople.gapiDotPeopleStrings.OBJECT_TYPE_UNSPECIFIED = this.cast("OBJECT_TYPE_UNSPECIFIED")
+  @scala.inline
+  def PAGE: typings.gapiDotPeople.gapiDotPeopleStrings.PAGE = this.cast("PAGE")
+  @scala.inline
+  def PERSON: typings.gapiDotPeople.gapiDotPeopleStrings.PERSON = this.cast("PERSON")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

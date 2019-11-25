@@ -51,14 +51,14 @@ object IChargeUpdateOptions {
     transfer_group: String = null
   ): IChargeUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (fraud_details != null) __obj.updateDynamic("fraud_details")(fraud_details)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email)
-    if (shipping != null) __obj.updateDynamic("shipping")(shipping)
-    if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (fraud_details != null) __obj.updateDynamic("fraud_details")(fraud_details.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email.asInstanceOf[js.Any])
+    if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
+    if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChargeUpdateOptions]
   }
 }

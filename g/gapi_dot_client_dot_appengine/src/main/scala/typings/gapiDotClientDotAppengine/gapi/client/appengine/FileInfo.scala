@@ -20,9 +20,9 @@ object FileInfo {
   @scala.inline
   def apply(mimeType: String = null, sha1Sum: String = null, sourceUrl: String = null): FileInfo = {
     val __obj = js.Dynamic.literal()
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
-    if (sha1Sum != null) __obj.updateDynamic("sha1Sum")(sha1Sum)
-    if (sourceUrl != null) __obj.updateDynamic("sourceUrl")(sourceUrl)
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
+    if (sha1Sum != null) __obj.updateDynamic("sha1Sum")(sha1Sum.asInstanceOf[js.Any])
+    if (sourceUrl != null) __obj.updateDynamic("sourceUrl")(sourceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileInfo]
   }
 }

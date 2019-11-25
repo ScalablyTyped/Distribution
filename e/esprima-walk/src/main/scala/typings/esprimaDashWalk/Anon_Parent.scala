@@ -13,7 +13,7 @@ object Anon_Parent {
   @scala.inline
   def apply(parent: Node = null): Anon_Parent = {
     val __obj = js.Dynamic.literal()
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Parent]
   }
 }

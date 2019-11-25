@@ -23,10 +23,10 @@ object UnlinkAccountsResponse {
     isSocial: js.UndefOr[Boolean] = js.undefined,
     profileData: UnlinkAccountsResponseProfile = null
   ): UnlinkAccountsResponse = {
-    val __obj = js.Dynamic.literal(connection = connection, provider = provider, user_id = user_id)
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
-    if (!js.isUndefined(isSocial)) __obj.updateDynamic("isSocial")(isSocial)
-    if (profileData != null) __obj.updateDynamic("profileData")(profileData)
+    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any])
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSocial)) __obj.updateDynamic("isSocial")(isSocial.asInstanceOf[js.Any])
+    if (profileData != null) __obj.updateDynamic("profileData")(profileData.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnlinkAccountsResponse]
   }
 }

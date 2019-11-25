@@ -29,14 +29,14 @@ object Anon_Delay {
     startTime: JulianDate = null,
     stopTime: JulianDate = null
   ): Anon_Delay = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (loop != null) __obj.updateDynamic("loop")(loop)
-    if (!js.isUndefined(removeOnStop)) __obj.updateDynamic("removeOnStop")(removeOnStop)
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
+    if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeOnStop)) __obj.updateDynamic("removeOnStop")(removeOnStop.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
     if (speedup != null) __obj.updateDynamic("speedup")(speedup.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (stopTime != null) __obj.updateDynamic("stopTime")(stopTime)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (stopTime != null) __obj.updateDynamic("stopTime")(stopTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Delay]
   }
 }

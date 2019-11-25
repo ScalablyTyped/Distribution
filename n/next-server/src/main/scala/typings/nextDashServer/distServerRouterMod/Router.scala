@@ -20,7 +20,7 @@ object Router {
     `match`: (IncomingMessage, ServerResponse, UrlWithParsedQuery) => js.UndefOr[js.Function0[Unit]],
     routes: js.Array[Route]
   ): Router = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), routes = routes)
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), routes = routes.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(js.Any.fromFunction3(`match`))
     __obj.asInstanceOf[Router]
   }

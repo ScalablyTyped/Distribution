@@ -12,7 +12,7 @@ trait HandlerArgs extends js.Object {
 object HandlerArgs {
   @scala.inline
   def apply(task: Task, taskService: TaskService): HandlerArgs = {
-    val __obj = js.Dynamic.literal(task = task, taskService = taskService)
+    val __obj = js.Dynamic.literal(task = task.asInstanceOf[js.Any], taskService = taskService.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HandlerArgs]
   }

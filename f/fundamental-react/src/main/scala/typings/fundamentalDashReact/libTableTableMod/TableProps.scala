@@ -38,14 +38,14 @@ object TableProps {
     tableHeaderProps: StringDictionary[js.Any] = null,
     tableHeaderRowProps: StringDictionary[js.Any] = null
   ): TableProps = {
-    val __obj = js.Dynamic.literal(headers = headers)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (tableBodyProps != null) __obj.updateDynamic("tableBodyProps")(tableBodyProps)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (tableBodyProps != null) __obj.updateDynamic("tableBodyProps")(tableBodyProps.asInstanceOf[js.Any])
     if (tableBodyRowProps != null) __obj.updateDynamic("tableBodyRowProps")(tableBodyRowProps.asInstanceOf[js.Any])
-    if (tableData != null) __obj.updateDynamic("tableData")(tableData)
-    if (tableHeaderProps != null) __obj.updateDynamic("tableHeaderProps")(tableHeaderProps)
-    if (tableHeaderRowProps != null) __obj.updateDynamic("tableHeaderRowProps")(tableHeaderRowProps)
+    if (tableData != null) __obj.updateDynamic("tableData")(tableData.asInstanceOf[js.Any])
+    if (tableHeaderProps != null) __obj.updateDynamic("tableHeaderProps")(tableHeaderProps.asInstanceOf[js.Any])
+    if (tableHeaderRowProps != null) __obj.updateDynamic("tableHeaderRowProps")(tableHeaderRowProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableProps]
   }
 }

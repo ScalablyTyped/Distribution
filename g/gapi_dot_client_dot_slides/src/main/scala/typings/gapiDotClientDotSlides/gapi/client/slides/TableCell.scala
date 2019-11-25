@@ -28,10 +28,10 @@ object TableCell {
   ): TableCell = {
     val __obj = js.Dynamic.literal()
     if (columnSpan != null) __obj.updateDynamic("columnSpan")(columnSpan.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
-    if (tableCellProperties != null) __obj.updateDynamic("tableCellProperties")(tableCellProperties)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (tableCellProperties != null) __obj.updateDynamic("tableCellProperties")(tableCellProperties.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCell]
   }
 }

@@ -21,8 +21,8 @@ object NegotiateLanguageOptions {
     strategy: filtering | matching | lookup = null
   ): NegotiateLanguageOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultLocale != null) __obj.updateDynamic("defaultLocale")(defaultLocale)
-    if (likelySubtags != null) __obj.updateDynamic("likelySubtags")(likelySubtags)
+    if (defaultLocale != null) __obj.updateDynamic("defaultLocale")(defaultLocale.asInstanceOf[js.Any])
+    if (likelySubtags != null) __obj.updateDynamic("likelySubtags")(likelySubtags.asInstanceOf[js.Any])
     if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[NegotiateLanguageOptions]
   }

@@ -16,3 +16,14 @@ import scala.scalajs.js.annotation._
 */
 trait Terrain extends js.Object
 
+object Terrain {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def plain: typings.screeps.screepsStrings.plain = this.cast("plain")
+  @scala.inline
+  def swamp: typings.screeps.screepsStrings.swamp = this.cast("swamp")
+  @scala.inline
+  def wall: typings.screeps.screepsStrings.wall = this.cast("wall")
+}
+

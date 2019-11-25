@@ -41,8 +41,8 @@ object Anon_Api {
   @scala.inline
   def apply(api: Anon_BarLayout = null, params: js.Object = null): Anon_Api = {
     val __obj = js.Dynamic.literal()
-    if (api != null) __obj.updateDynamic("api")(api)
-    if (params != null) __obj.updateDynamic("params")(params)
+    if (api != null) __obj.updateDynamic("api")(api.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Api]
   }
 }

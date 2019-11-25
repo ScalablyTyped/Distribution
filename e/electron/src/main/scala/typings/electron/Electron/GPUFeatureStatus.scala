@@ -77,8 +77,8 @@ object GPUFeatureStatus {
     webgl: String,
     webgl2: String
   ): GPUFeatureStatus = {
-    val __obj = js.Dynamic.literal(flash_3d = flash_3d, flash_stage3d = flash_stage3d, flash_stage3d_baseline = flash_stage3d_baseline, gpu_compositing = gpu_compositing, multiple_raster_threads = multiple_raster_threads, native_gpu_memory_buffers = native_gpu_memory_buffers, rasterization = rasterization, video_decode = video_decode, video_encode = video_encode, vpx_decode = vpx_decode, webgl = webgl, webgl2 = webgl2)
-    __obj.updateDynamic("2d_canvas")(`2d_canvas`)
+    val __obj = js.Dynamic.literal(flash_3d = flash_3d.asInstanceOf[js.Any], flash_stage3d = flash_stage3d.asInstanceOf[js.Any], flash_stage3d_baseline = flash_stage3d_baseline.asInstanceOf[js.Any], gpu_compositing = gpu_compositing.asInstanceOf[js.Any], multiple_raster_threads = multiple_raster_threads.asInstanceOf[js.Any], native_gpu_memory_buffers = native_gpu_memory_buffers.asInstanceOf[js.Any], rasterization = rasterization.asInstanceOf[js.Any], video_decode = video_decode.asInstanceOf[js.Any], video_encode = video_encode.asInstanceOf[js.Any], vpx_decode = vpx_decode.asInstanceOf[js.Any], webgl = webgl.asInstanceOf[js.Any], webgl2 = webgl2.asInstanceOf[js.Any])
+    __obj.updateDynamic("2d_canvas")(`2d_canvas`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GPUFeatureStatus]
   }
 }

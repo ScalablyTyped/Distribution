@@ -14,7 +14,7 @@ trait CloudFrontEvent extends js.Object {
 object CloudFrontEvent {
   @scala.inline
   def apply(config: Anon_DistributionDomainName with (Anon_EventType | Anon_EventTypeRequestId)): CloudFrontEvent = {
-    val __obj = js.Dynamic.literal(config = config)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CloudFrontEvent]
   }

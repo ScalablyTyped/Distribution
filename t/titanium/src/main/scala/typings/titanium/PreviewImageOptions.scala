@@ -32,7 +32,7 @@ object PreviewImageOptions {
   ): PreviewImageOptions = {
     val __obj = js.Dynamic.literal()
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
-    if (image != null) __obj.updateDynamic("image")(image)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[PreviewImageOptions]
   }

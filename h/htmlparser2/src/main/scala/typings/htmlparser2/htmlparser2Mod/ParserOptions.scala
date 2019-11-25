@@ -47,12 +47,12 @@ object ParserOptions {
     xmlMode: js.UndefOr[Boolean] = js.undefined
   ): ParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(decodeEntities)) __obj.updateDynamic("decodeEntities")(decodeEntities)
-    if (!js.isUndefined(lowerCaseAttributeNames)) __obj.updateDynamic("lowerCaseAttributeNames")(lowerCaseAttributeNames)
-    if (!js.isUndefined(lowerCaseTags)) __obj.updateDynamic("lowerCaseTags")(lowerCaseTags)
-    if (!js.isUndefined(recognizeCDATA)) __obj.updateDynamic("recognizeCDATA")(recognizeCDATA)
-    if (!js.isUndefined(recognizeSelfClosing)) __obj.updateDynamic("recognizeSelfClosing")(recognizeSelfClosing)
-    if (!js.isUndefined(xmlMode)) __obj.updateDynamic("xmlMode")(xmlMode)
+    if (!js.isUndefined(decodeEntities)) __obj.updateDynamic("decodeEntities")(decodeEntities.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowerCaseAttributeNames)) __obj.updateDynamic("lowerCaseAttributeNames")(lowerCaseAttributeNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowerCaseTags)) __obj.updateDynamic("lowerCaseTags")(lowerCaseTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(recognizeCDATA)) __obj.updateDynamic("recognizeCDATA")(recognizeCDATA.asInstanceOf[js.Any])
+    if (!js.isUndefined(recognizeSelfClosing)) __obj.updateDynamic("recognizeSelfClosing")(recognizeSelfClosing.asInstanceOf[js.Any])
+    if (!js.isUndefined(xmlMode)) __obj.updateDynamic("xmlMode")(xmlMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserOptions]
   }
 }

@@ -1,5 +1,6 @@
 package typings.materialDashUi
 
+import typings.react.reactMod.HTMLAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -3833,6 +3834,8 @@ trait materialDashUiProps {
   @scala.inline
   def LinkedDashCameraProps: typings.materialDashUi.__MaterialUI.SvgIconProps.type = typings.materialDashUi.__MaterialUI.SvgIconProps
   type LinkedDashCameraProps = typings.materialDashUi.__MaterialUI.SvgIconProps
+  @scala.inline
+  def ListProps: HTMLAttributes.type = typings.react.reactMod.HTMLAttributes
   type ListProps = typings.materialDashUi.__MaterialUI.List.ListProps
   @scala.inline
   def ListItemProps: typings.materialDashUi.__MaterialUI.List.ListItemProps.type = typings.materialDashUi.__MaterialUI.List.ListItemProps

@@ -61,13 +61,13 @@ object FeatureSetProperties {
     spatialReference: SpatialReferenceProperties = null
   ): FeatureSetProperties = {
     val __obj = js.Dynamic.literal()
-    if (displayFieldName != null) __obj.updateDynamic("displayFieldName")(displayFieldName)
-    if (!js.isUndefined(exceededTransferLimit)) __obj.updateDynamic("exceededTransferLimit")(exceededTransferLimit)
-    if (features != null) __obj.updateDynamic("features")(features)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType)
-    if (queryGeometry != null) __obj.updateDynamic("queryGeometry")(queryGeometry)
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (displayFieldName != null) __obj.updateDynamic("displayFieldName")(displayFieldName.asInstanceOf[js.Any])
+    if (!js.isUndefined(exceededTransferLimit)) __obj.updateDynamic("exceededTransferLimit")(exceededTransferLimit.asInstanceOf[js.Any])
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType.asInstanceOf[js.Any])
+    if (queryGeometry != null) __obj.updateDynamic("queryGeometry")(queryGeometry.asInstanceOf[js.Any])
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureSetProperties]
   }
 }

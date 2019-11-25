@@ -23,7 +23,7 @@ object Anon_EnableUtmcampaign {
     utm_source: String,
     utm_term: String
   ): Anon_EnableUtmcampaign = {
-    val __obj = js.Dynamic.literal(enable = enable, utm_campaign = utm_campaign, utm_content = utm_content, utm_medium = utm_medium, utm_source = utm_source, utm_term = utm_term)
+    val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], utm_campaign = utm_campaign.asInstanceOf[js.Any], utm_content = utm_content.asInstanceOf[js.Any], utm_medium = utm_medium.asInstanceOf[js.Any], utm_source = utm_source.asInstanceOf[js.Any], utm_term = utm_term.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EnableUtmcampaign]
   }

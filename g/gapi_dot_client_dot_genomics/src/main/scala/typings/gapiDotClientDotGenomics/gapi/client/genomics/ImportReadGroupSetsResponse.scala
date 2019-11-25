@@ -13,7 +13,7 @@ object ImportReadGroupSetsResponse {
   @scala.inline
   def apply(readGroupSetIds: js.Array[String] = null): ImportReadGroupSetsResponse = {
     val __obj = js.Dynamic.literal()
-    if (readGroupSetIds != null) __obj.updateDynamic("readGroupSetIds")(readGroupSetIds)
+    if (readGroupSetIds != null) __obj.updateDynamic("readGroupSetIds")(readGroupSetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportReadGroupSetsResponse]
   }
 }

@@ -11,7 +11,7 @@ trait SecretVersion extends js.Object {
 object SecretVersion {
   @scala.inline
   def apply(Index: Double): SecretVersion = {
-    val __obj = js.Dynamic.literal(Index = Index)
+    val __obj = js.Dynamic.literal(Index = Index.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SecretVersion]
   }

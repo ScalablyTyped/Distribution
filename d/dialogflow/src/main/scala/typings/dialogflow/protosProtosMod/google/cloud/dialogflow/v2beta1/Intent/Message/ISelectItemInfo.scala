@@ -16,8 +16,8 @@ object ISelectItemInfo {
   @scala.inline
   def apply(key: String = null, synonyms: js.Array[String] = null): ISelectItemInfo = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (synonyms != null) __obj.updateDynamic("synonyms")(synonyms)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (synonyms != null) __obj.updateDynamic("synonyms")(synonyms.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISelectItemInfo]
   }
 }

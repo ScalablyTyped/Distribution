@@ -15,8 +15,8 @@ object EncryptResponse {
   @scala.inline
   def apply(ciphertext: String = null, name: String = null): EncryptResponse = {
     val __obj = js.Dynamic.literal()
-    if (ciphertext != null) __obj.updateDynamic("ciphertext")(ciphertext)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (ciphertext != null) __obj.updateDynamic("ciphertext")(ciphertext.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptResponse]
   }
 }

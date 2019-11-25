@@ -16,7 +16,7 @@ object SortSpec {
   def apply(dimensionIndex: Int | Double = null, sortOrder: String = null): SortSpec = {
     val __obj = js.Dynamic.literal()
     if (dimensionIndex != null) __obj.updateDynamic("dimensionIndex")(dimensionIndex.asInstanceOf[js.Any])
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortSpec]
   }
 }

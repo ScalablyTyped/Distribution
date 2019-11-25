@@ -37,7 +37,7 @@ object AppsListAccountsUserOrOrgOnPlanParams {
     per_page: Int | Double = null,
     sort: created | updated = null
   ): AppsListAccountsUserOrOrgOnPlanParams = {
-    val __obj = js.Dynamic.literal(plan_id = plan_id)
+    val __obj = js.Dynamic.literal(plan_id = plan_id.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])

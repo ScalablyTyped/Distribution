@@ -44,14 +44,14 @@ object ServerUrl {
     timeout: Int | Double = null,
     withCredentials: js.UndefOr[Boolean] = js.undefined
   ): ServerUrl = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (ondata != null) __obj.updateDynamic("ondata")(js.Any.fromFunction1(ondata))
     if (onerror != null) __obj.updateDynamic("onerror")(js.Any.fromFunction1(onerror))
     if (onload != null) __obj.updateDynamic("onload")(js.Any.fromFunction0(onload))
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerUrl]
   }
 }

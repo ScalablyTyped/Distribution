@@ -24,7 +24,7 @@ object SketchShadow {
     shadowRadius: Double,
     shadowSpread: Double
   ): SketchShadow = {
-    val __obj = js.Dynamic.literal(shadowColor = shadowColor.asInstanceOf[js.Any], shadowInner = shadowInner, shadowOffset = shadowOffset, shadowOpacity = shadowOpacity, shadowRadius = shadowRadius, shadowSpread = shadowSpread)
+    val __obj = js.Dynamic.literal(shadowColor = shadowColor.asInstanceOf[js.Any], shadowInner = shadowInner.asInstanceOf[js.Any], shadowOffset = shadowOffset.asInstanceOf[js.Any], shadowOpacity = shadowOpacity.asInstanceOf[js.Any], shadowRadius = shadowRadius.asInstanceOf[js.Any], shadowSpread = shadowSpread.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SketchShadow]
   }

@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait BootstrapMenuEvent extends js.Object
 
+object BootstrapMenuEvent {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def click: typings.bootstrapDashMenu.bootstrapDashMenuStrings.click = this.cast("click")
+  @scala.inline
+  def hover: typings.bootstrapDashMenu.bootstrapDashMenuStrings.hover = this.cast("hover")
+  @scala.inline
+  def `right-click`: typings.bootstrapDashMenu.bootstrapDashMenuStrings.`right-click` = this.cast("right-click")
+}
+

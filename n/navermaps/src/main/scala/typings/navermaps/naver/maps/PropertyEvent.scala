@@ -14,7 +14,7 @@ trait PropertyEvent extends js.Object {
 object PropertyEvent {
   @scala.inline
   def apply(feature: Feature, name: String, newValue: js.Any, oldValue: js.Any): PropertyEvent = {
-    val __obj = js.Dynamic.literal(feature = feature, name = name, newValue = newValue, oldValue = oldValue)
+    val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PropertyEvent]
   }

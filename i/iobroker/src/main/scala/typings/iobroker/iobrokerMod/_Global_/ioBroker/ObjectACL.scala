@@ -17,8 +17,8 @@ trait ObjectACL extends js.Object {
 object ObjectACL {
   @scala.inline
   def apply(`object`: Double, owner: String, ownerGroup: String): ObjectACL = {
-    val __obj = js.Dynamic.literal(owner = owner, ownerGroup = ownerGroup)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], ownerGroup = ownerGroup.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectACL]
   }
 }

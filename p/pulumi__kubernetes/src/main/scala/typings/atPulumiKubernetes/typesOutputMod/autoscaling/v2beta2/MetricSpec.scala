@@ -50,9 +50,9 @@ object MetricSpec {
     resource: ResourceMetricSource,
     `type`: String
   ): MetricSpec = {
-    val __obj = js.Dynamic.literal(external = external, pods = pods, resource = resource)
-    __obj.updateDynamic("object")(`object`)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(external = external.asInstanceOf[js.Any], pods = pods.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricSpec]
   }
 }

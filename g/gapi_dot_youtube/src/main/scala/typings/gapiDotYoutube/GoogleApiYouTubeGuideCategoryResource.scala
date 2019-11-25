@@ -26,7 +26,7 @@ trait GoogleApiYouTubeGuideCategoryResource extends js.Object {
 object GoogleApiYouTubeGuideCategoryResource {
   @scala.inline
   def apply(etag: String, id: String, kind: String, snippet: Anon_ChannelIdTitle): GoogleApiYouTubeGuideCategoryResource = {
-    val __obj = js.Dynamic.literal(etag = etag, id = id, kind = kind, snippet = snippet)
+    val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], snippet = snippet.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GoogleApiYouTubeGuideCategoryResource]
   }

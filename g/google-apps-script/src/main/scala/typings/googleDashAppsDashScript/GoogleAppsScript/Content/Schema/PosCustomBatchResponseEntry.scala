@@ -25,11 +25,11 @@ object PosCustomBatchResponseEntry {
   ): PosCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
     if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (inventory != null) __obj.updateDynamic("inventory")(inventory)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (sale != null) __obj.updateDynamic("sale")(sale)
-    if (store != null) __obj.updateDynamic("store")(store)
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (inventory != null) __obj.updateDynamic("inventory")(inventory.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (sale != null) __obj.updateDynamic("sale")(sale.asInstanceOf[js.Any])
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     __obj.asInstanceOf[PosCustomBatchResponseEntry]
   }
 }

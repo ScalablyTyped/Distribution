@@ -12,7 +12,7 @@ object AssignmentSubmission {
   @scala.inline
   def apply(attachments: js.Array[Attachment] = null): AssignmentSubmission = {
     val __obj = js.Dynamic.literal()
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssignmentSubmission]
   }
 }

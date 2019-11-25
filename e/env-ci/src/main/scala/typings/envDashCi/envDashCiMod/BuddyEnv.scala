@@ -2,7 +2,7 @@ package typings.envDashCi.envDashCiMod
 
 import typings.envDashCi.envDashCiNumbers.`true`
 import typings.envDashCi.envDashCiStrings.Buddy
-import typings.envDashCi.envDashCiStrings.buddy
+import typings.envDashCi.envDashCiStrings.buddy_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait BuddyEnv
   var isPr: Boolean
   var name: Buddy
   var pr: js.UndefOr[String] = js.undefined
-  var service: buddy
+  var service: buddy_
   var slug: String
   var tag: js.UndefOr[String] = js.undefined
 }
@@ -31,16 +31,16 @@ object BuddyEnv {
     isCi: `true`,
     isPr: Boolean,
     name: Buddy,
-    service: buddy,
+    service: buddy_,
     slug: String,
     branch: String = null,
     pr: String = null,
     tag: String = null
   ): BuddyEnv = {
-    val __obj = js.Dynamic.literal(build = build, buildUrl = buildUrl, commit = commit, isCi = isCi, isPr = isPr, name = name, service = service, slug = slug)
-    if (branch != null) __obj.updateDynamic("branch")(branch)
-    if (pr != null) __obj.updateDynamic("pr")(pr)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+    if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
+    if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuddyEnv]
   }
 }

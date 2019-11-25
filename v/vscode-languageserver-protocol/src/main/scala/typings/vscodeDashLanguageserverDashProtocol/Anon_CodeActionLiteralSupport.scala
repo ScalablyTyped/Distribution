@@ -23,8 +23,8 @@ object Anon_CodeActionLiteralSupport {
     dynamicRegistration: js.UndefOr[Boolean] = js.undefined
   ): Anon_CodeActionLiteralSupport = {
     val __obj = js.Dynamic.literal()
-    if (codeActionLiteralSupport != null) __obj.updateDynamic("codeActionLiteralSupport")(codeActionLiteralSupport)
-    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration)
+    if (codeActionLiteralSupport != null) __obj.updateDynamic("codeActionLiteralSupport")(codeActionLiteralSupport.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CodeActionLiteralSupport]
   }
 }

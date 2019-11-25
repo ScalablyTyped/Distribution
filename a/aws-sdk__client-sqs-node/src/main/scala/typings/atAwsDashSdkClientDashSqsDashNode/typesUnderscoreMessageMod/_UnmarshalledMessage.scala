@@ -12,7 +12,7 @@ trait _UnmarshalledMessage extends _Message {
     */
   @JSName("Attributes")
   var Attributes__UnmarshalledMessage: js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string}
     */ typings.atAwsDashSdkClientDashSqsDashNode.atAwsDashSdkClientDashSqsDashNodeStrings._UnmarshalledMessage with js.Any
   ] = js.undefined
@@ -26,7 +26,7 @@ trait _UnmarshalledMessage extends _Message {
 object _UnmarshalledMessage {
   @scala.inline
   def apply(
-    Attributes: /* import warning: ImportType.apply c Unsupported type mapping: 
+    Attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string}
     */ typings.atAwsDashSdkClientDashSqsDashNode.atAwsDashSdkClientDashSqsDashNodeStrings._UnmarshalledMessage with js.Any = null,
     Body: String = null,
@@ -37,13 +37,13 @@ object _UnmarshalledMessage {
     ReceiptHandle: String = null
   ): _UnmarshalledMessage = {
     val __obj = js.Dynamic.literal()
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes)
-    if (Body != null) __obj.updateDynamic("Body")(Body)
-    if (MD5OfBody != null) __obj.updateDynamic("MD5OfBody")(MD5OfBody)
-    if (MD5OfMessageAttributes != null) __obj.updateDynamic("MD5OfMessageAttributes")(MD5OfMessageAttributes)
-    if (MessageAttributes != null) __obj.updateDynamic("MessageAttributes")(MessageAttributes)
-    if (MessageId != null) __obj.updateDynamic("MessageId")(MessageId)
-    if (ReceiptHandle != null) __obj.updateDynamic("ReceiptHandle")(ReceiptHandle)
+    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
+    if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
+    if (MD5OfBody != null) __obj.updateDynamic("MD5OfBody")(MD5OfBody.asInstanceOf[js.Any])
+    if (MD5OfMessageAttributes != null) __obj.updateDynamic("MD5OfMessageAttributes")(MD5OfMessageAttributes.asInstanceOf[js.Any])
+    if (MessageAttributes != null) __obj.updateDynamic("MessageAttributes")(MessageAttributes.asInstanceOf[js.Any])
+    if (MessageId != null) __obj.updateDynamic("MessageId")(MessageId.asInstanceOf[js.Any])
+    if (ReceiptHandle != null) __obj.updateDynamic("ReceiptHandle")(ReceiptHandle.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledMessage]
   }
 }

@@ -35,15 +35,15 @@ object Anon_AssetPrefix {
     touch: TouchDevice = null
   ): Anon_AssetPrefix = {
     val __obj = js.Dynamic.literal()
-    if (assetPrefix != null) __obj.updateDynamic("assetPrefix")(assetPrefix)
-    if (elementInput != null) __obj.updateDynamic("elementInput")(elementInput)
-    if (gamepads != null) __obj.updateDynamic("gamepads")(gamepads)
-    if (graphicsDeviceOptions != null) __obj.updateDynamic("graphicsDeviceOptions")(graphicsDeviceOptions)
-    if (keyboard != null) __obj.updateDynamic("keyboard")(keyboard)
-    if (mouse != null) __obj.updateDynamic("mouse")(mouse)
-    if (scriptPrefix != null) __obj.updateDynamic("scriptPrefix")(scriptPrefix)
-    if (scriptsOrder != null) __obj.updateDynamic("scriptsOrder")(scriptsOrder)
-    if (touch != null) __obj.updateDynamic("touch")(touch)
+    if (assetPrefix != null) __obj.updateDynamic("assetPrefix")(assetPrefix.asInstanceOf[js.Any])
+    if (elementInput != null) __obj.updateDynamic("elementInput")(elementInput.asInstanceOf[js.Any])
+    if (gamepads != null) __obj.updateDynamic("gamepads")(gamepads.asInstanceOf[js.Any])
+    if (graphicsDeviceOptions != null) __obj.updateDynamic("graphicsDeviceOptions")(graphicsDeviceOptions.asInstanceOf[js.Any])
+    if (keyboard != null) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
+    if (mouse != null) __obj.updateDynamic("mouse")(mouse.asInstanceOf[js.Any])
+    if (scriptPrefix != null) __obj.updateDynamic("scriptPrefix")(scriptPrefix.asInstanceOf[js.Any])
+    if (scriptsOrder != null) __obj.updateDynamic("scriptsOrder")(scriptsOrder.asInstanceOf[js.Any])
+    if (touch != null) __obj.updateDynamic("touch")(touch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AssetPrefix]
   }
 }

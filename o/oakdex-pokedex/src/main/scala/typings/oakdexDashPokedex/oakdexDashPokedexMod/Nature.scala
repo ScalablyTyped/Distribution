@@ -21,11 +21,11 @@ object Nature {
     favorite_flavor: String = null,
     increased_stat: String = null
   ): Nature = {
-    val __obj = js.Dynamic.literal(names = names)
-    if (decreased_stat != null) __obj.updateDynamic("decreased_stat")(decreased_stat)
-    if (disliked_flavor != null) __obj.updateDynamic("disliked_flavor")(disliked_flavor)
-    if (favorite_flavor != null) __obj.updateDynamic("favorite_flavor")(favorite_flavor)
-    if (increased_stat != null) __obj.updateDynamic("increased_stat")(increased_stat)
+    val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any])
+    if (decreased_stat != null) __obj.updateDynamic("decreased_stat")(decreased_stat.asInstanceOf[js.Any])
+    if (disliked_flavor != null) __obj.updateDynamic("disliked_flavor")(disliked_flavor.asInstanceOf[js.Any])
+    if (favorite_flavor != null) __obj.updateDynamic("favorite_flavor")(favorite_flavor.asInstanceOf[js.Any])
+    if (increased_stat != null) __obj.updateDynamic("increased_stat")(increased_stat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Nature]
   }
 }

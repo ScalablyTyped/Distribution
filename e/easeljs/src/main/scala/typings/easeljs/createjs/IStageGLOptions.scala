@@ -22,11 +22,11 @@ object IStageGLOptions {
     transparent: js.UndefOr[Boolean] = js.undefined
   ): IStageGLOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias)
+    if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias.asInstanceOf[js.Any])
     if (autoPurge != null) __obj.updateDynamic("autoPurge")(autoPurge.asInstanceOf[js.Any])
-    if (!js.isUndefined(premultiply)) __obj.updateDynamic("premultiply")(premultiply)
-    if (!js.isUndefined(preserveBuffer)) __obj.updateDynamic("preserveBuffer")(preserveBuffer)
-    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)
+    if (!js.isUndefined(premultiply)) __obj.updateDynamic("premultiply")(premultiply.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveBuffer)) __obj.updateDynamic("preserveBuffer")(preserveBuffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStageGLOptions]
   }
 }

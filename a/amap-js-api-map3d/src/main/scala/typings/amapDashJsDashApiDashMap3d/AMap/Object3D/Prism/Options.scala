@@ -21,7 +21,7 @@ object Options {
     color2: String | (js.Array[js.Array[Double] | Double | String]) = null,
     height: Int | Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], path = path)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     if (color2 != null) __obj.updateDynamic("color2")(color2.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

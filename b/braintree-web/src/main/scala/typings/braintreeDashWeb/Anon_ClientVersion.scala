@@ -13,7 +13,7 @@ trait Anon_ClientVersion extends js.Object {
 object Anon_ClientVersion {
   @scala.inline
   def apply(client: Client, version: Double): Anon_ClientVersion = {
-    val __obj = js.Dynamic.literal(client = client, version = version)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ClientVersion]
   }

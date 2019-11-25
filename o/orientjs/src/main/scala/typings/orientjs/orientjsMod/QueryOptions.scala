@@ -31,13 +31,13 @@ object QueryOptions {
     token: js.Any = null
   ): QueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (`class` != null) __obj.updateDynamic("class")(`class`)
-    if (fetchPlan != null) __obj.updateDynamic("fetchPlan")(fetchPlan)
+    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
+    if (fetchPlan != null) __obj.updateDynamic("fetchPlan")(fetchPlan.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptions]
   }
 }

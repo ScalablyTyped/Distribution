@@ -34,10 +34,10 @@ object LockOptions {
     update: Int | Double = null
   ): LockOptions = {
     val __obj = js.Dynamic.literal()
-    if (fs != null) __obj.updateDynamic("fs")(fs)
-    if (lockfilePath != null) __obj.updateDynamic("lockfilePath")(lockfilePath)
+    if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
+    if (lockfilePath != null) __obj.updateDynamic("lockfilePath")(lockfilePath.asInstanceOf[js.Any])
     if (onCompromised != null) __obj.updateDynamic("onCompromised")(js.Any.fromFunction1(onCompromised))
-    if (!js.isUndefined(realpath)) __obj.updateDynamic("realpath")(realpath)
+    if (!js.isUndefined(realpath)) __obj.updateDynamic("realpath")(realpath.asInstanceOf[js.Any])
     if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
     if (stale != null) __obj.updateDynamic("stale")(stale.asInstanceOf[js.Any])
     if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])

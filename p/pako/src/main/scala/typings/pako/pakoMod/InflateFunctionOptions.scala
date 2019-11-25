@@ -15,8 +15,8 @@ object InflateFunctionOptions {
   @scala.inline
   def apply(raw: js.UndefOr[Boolean] = js.undefined, to: string = null, windowBits: Int | Double = null): InflateFunctionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     if (windowBits != null) __obj.updateDynamic("windowBits")(windowBits.asInstanceOf[js.Any])
     __obj.asInstanceOf[InflateFunctionOptions]
   }

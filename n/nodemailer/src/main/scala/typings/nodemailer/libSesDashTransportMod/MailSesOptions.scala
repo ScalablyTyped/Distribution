@@ -54,14 +54,14 @@ object MailSesOptions {
     Tags: js.Array[Anon_Name] = null
   ): MailSesOptions = {
     val __obj = js.Dynamic.literal()
-    if (ConfigurationSetName != null) __obj.updateDynamic("ConfigurationSetName")(ConfigurationSetName)
-    if (Destinations != null) __obj.updateDynamic("Destinations")(Destinations)
-    if (FromArn != null) __obj.updateDynamic("FromArn")(FromArn)
-    if (RawMessage != null) __obj.updateDynamic("RawMessage")(RawMessage)
-    if (ReturnPathArn != null) __obj.updateDynamic("ReturnPathArn")(ReturnPathArn)
-    if (Source != null) __obj.updateDynamic("Source")(Source)
-    if (SourceArn != null) __obj.updateDynamic("SourceArn")(SourceArn)
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
+    if (ConfigurationSetName != null) __obj.updateDynamic("ConfigurationSetName")(ConfigurationSetName.asInstanceOf[js.Any])
+    if (Destinations != null) __obj.updateDynamic("Destinations")(Destinations.asInstanceOf[js.Any])
+    if (FromArn != null) __obj.updateDynamic("FromArn")(FromArn.asInstanceOf[js.Any])
+    if (RawMessage != null) __obj.updateDynamic("RawMessage")(RawMessage.asInstanceOf[js.Any])
+    if (ReturnPathArn != null) __obj.updateDynamic("ReturnPathArn")(ReturnPathArn.asInstanceOf[js.Any])
+    if (Source != null) __obj.updateDynamic("Source")(Source.asInstanceOf[js.Any])
+    if (SourceArn != null) __obj.updateDynamic("SourceArn")(SourceArn.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[MailSesOptions]
   }
 }

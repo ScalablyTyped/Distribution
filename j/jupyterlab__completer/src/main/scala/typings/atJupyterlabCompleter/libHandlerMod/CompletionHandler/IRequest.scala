@@ -21,7 +21,7 @@ trait IRequest extends js.Object {
 object IRequest {
   @scala.inline
   def apply(offset: Double, text: String): IRequest = {
-    val __obj = js.Dynamic.literal(offset = offset, text = text)
+    val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IRequest]
   }

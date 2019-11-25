@@ -52,8 +52,8 @@ object DirectLineMeasurement3DViewModelProperties {
   ): DirectLineMeasurement3DViewModelProperties = {
     val __obj = js.Dynamic.literal()
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (unitOptions != null) __obj.updateDynamic("unitOptions")(unitOptions)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (unitOptions != null) __obj.updateDynamic("unitOptions")(unitOptions.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectLineMeasurement3DViewModelProperties]
   }
 }

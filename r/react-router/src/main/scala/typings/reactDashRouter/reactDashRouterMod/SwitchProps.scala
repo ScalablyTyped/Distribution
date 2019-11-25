@@ -17,7 +17,7 @@ object SwitchProps {
   def apply(children: ReactNode = null, location: Location[LocationState] = null): SwitchProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchProps]
   }
 }

@@ -82,14 +82,14 @@ object IEditorScrollbarOptions {
   ): IEditorScrollbarOptions = {
     val __obj = js.Dynamic.literal()
     if (arrowSize != null) __obj.updateDynamic("arrowSize")(arrowSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleMouseWheel)) __obj.updateDynamic("handleMouseWheel")(handleMouseWheel)
+    if (!js.isUndefined(handleMouseWheel)) __obj.updateDynamic("handleMouseWheel")(handleMouseWheel.asInstanceOf[js.Any])
     if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontalHasArrows)) __obj.updateDynamic("horizontalHasArrows")(horizontalHasArrows)
+    if (!js.isUndefined(horizontalHasArrows)) __obj.updateDynamic("horizontalHasArrows")(horizontalHasArrows.asInstanceOf[js.Any])
     if (horizontalScrollbarSize != null) __obj.updateDynamic("horizontalScrollbarSize")(horizontalScrollbarSize.asInstanceOf[js.Any])
     if (horizontalSliderSize != null) __obj.updateDynamic("horizontalSliderSize")(horizontalSliderSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(useShadows)) __obj.updateDynamic("useShadows")(useShadows)
+    if (!js.isUndefined(useShadows)) __obj.updateDynamic("useShadows")(useShadows.asInstanceOf[js.Any])
     if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticalHasArrows)) __obj.updateDynamic("verticalHasArrows")(verticalHasArrows)
+    if (!js.isUndefined(verticalHasArrows)) __obj.updateDynamic("verticalHasArrows")(verticalHasArrows.asInstanceOf[js.Any])
     if (verticalScrollbarSize != null) __obj.updateDynamic("verticalScrollbarSize")(verticalScrollbarSize.asInstanceOf[js.Any])
     if (verticalSliderSize != null) __obj.updateDynamic("verticalSliderSize")(verticalSliderSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditorScrollbarOptions]

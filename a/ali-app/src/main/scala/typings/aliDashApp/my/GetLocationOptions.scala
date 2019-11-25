@@ -35,7 +35,7 @@ object GetLocationOptions {
     complete: /* res */ js.Any => Unit = null,
     fail: js.Any => Unit = null
   ): GetLocationOptions = {
-    val __obj = js.Dynamic.literal(cacheTimeout = cacheTimeout, success = js.Any.fromFunction1(success))
+    val __obj = js.Dynamic.literal(cacheTimeout = cacheTimeout.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))

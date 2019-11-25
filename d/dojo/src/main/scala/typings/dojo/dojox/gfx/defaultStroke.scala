@@ -47,8 +47,8 @@ trait defaultStroke extends js.Object {
 object defaultStroke {
   @scala.inline
   def apply(cap: String, color: String, join: Double, style: String, `type`: String, width: Double): defaultStroke = {
-    val __obj = js.Dynamic.literal(cap = cap, color = color, join = join, style = style, width = width)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(cap = cap.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], join = join.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[defaultStroke]
   }
 }

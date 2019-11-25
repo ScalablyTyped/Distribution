@@ -24,3 +24,40 @@ import scala.scalajs.js.annotation._
 */
 trait DefaultMethods extends js.Object
 
+object DefaultMethods {
+  @scala.inline
+  def await: typings.signale.signaleStrings.await = this.cast("await")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def complete: typings.signale.signaleStrings.complete = this.cast("complete")
+  @scala.inline
+  def debug: typings.signale.signaleStrings.debug = this.cast("debug")
+  @scala.inline
+  def error: typings.signale.signaleStrings.error = this.cast("error")
+  @scala.inline
+  def fatal: typings.signale.signaleStrings.fatal = this.cast("fatal")
+  @scala.inline
+  def fav: typings.signale.signaleStrings.fav = this.cast("fav")
+  @scala.inline
+  def info: typings.signale.signaleStrings.info = this.cast("info")
+  @scala.inline
+  def log: typings.signale.signaleStrings.log = this.cast("log")
+  @scala.inline
+  def note: typings.signale.signaleStrings.note = this.cast("note")
+  @scala.inline
+  def pause: typings.signale.signaleStrings.pause = this.cast("pause")
+  @scala.inline
+  def pending: typings.signale.signaleStrings.pending = this.cast("pending")
+  @scala.inline
+  def star: typings.signale.signaleStrings.star = this.cast("star")
+  @scala.inline
+  def start: typings.signale.signaleStrings.start = this.cast("start")
+  @scala.inline
+  def success: typings.signale.signaleStrings.success = this.cast("success")
+  @scala.inline
+  def warn: typings.signale.signaleStrings.warn = this.cast("warn")
+  @scala.inline
+  def watch: typings.signale.signaleStrings.watch = this.cast("watch")
+}
+

@@ -19,8 +19,8 @@ object CameraContextStopRecordResult {
   @scala.inline
   def apply(tempThumbPath: String = null, tempVideoPath: String = null): CameraContextStopRecordResult = {
     val __obj = js.Dynamic.literal()
-    if (tempThumbPath != null) __obj.updateDynamic("tempThumbPath")(tempThumbPath)
-    if (tempVideoPath != null) __obj.updateDynamic("tempVideoPath")(tempVideoPath)
+    if (tempThumbPath != null) __obj.updateDynamic("tempThumbPath")(tempThumbPath.asInstanceOf[js.Any])
+    if (tempVideoPath != null) __obj.updateDynamic("tempVideoPath")(tempVideoPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraContextStopRecordResult]
   }
 }

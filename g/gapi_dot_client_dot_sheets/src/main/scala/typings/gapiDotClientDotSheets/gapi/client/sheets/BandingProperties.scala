@@ -36,10 +36,10 @@ object BandingProperties {
     secondBandColor: Color = null
   ): BandingProperties = {
     val __obj = js.Dynamic.literal()
-    if (firstBandColor != null) __obj.updateDynamic("firstBandColor")(firstBandColor)
-    if (footerColor != null) __obj.updateDynamic("footerColor")(footerColor)
-    if (headerColor != null) __obj.updateDynamic("headerColor")(headerColor)
-    if (secondBandColor != null) __obj.updateDynamic("secondBandColor")(secondBandColor)
+    if (firstBandColor != null) __obj.updateDynamic("firstBandColor")(firstBandColor.asInstanceOf[js.Any])
+    if (footerColor != null) __obj.updateDynamic("footerColor")(footerColor.asInstanceOf[js.Any])
+    if (headerColor != null) __obj.updateDynamic("headerColor")(headerColor.asInstanceOf[js.Any])
+    if (secondBandColor != null) __obj.updateDynamic("secondBandColor")(secondBandColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[BandingProperties]
   }
 }

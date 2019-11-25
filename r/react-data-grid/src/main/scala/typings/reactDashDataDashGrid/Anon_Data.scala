@@ -25,7 +25,7 @@ object Anon_Data {
     Menu: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Menu */ js.Any,
     Toolbar: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Toolbar */ js.Any
   ): Anon_Data = {
-    val __obj = js.Dynamic.literal(Data = Data, DraggableHeader = DraggableHeader, Editors = Editors, Filters = Filters, Formatters = Formatters, Menu = Menu, Toolbar = Toolbar)
+    val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], DraggableHeader = DraggableHeader.asInstanceOf[js.Any], Editors = Editors.asInstanceOf[js.Any], Filters = Filters.asInstanceOf[js.Any], Formatters = Formatters.asInstanceOf[js.Any], Menu = Menu.asInstanceOf[js.Any], Toolbar = Toolbar.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Data]
   }

@@ -63,20 +63,20 @@ object CounterUpdate {
     structuredNameAndMetadata: CounterStructuredNameAndMetadata = null
   ): CounterUpdate = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(boolean)) __obj.updateDynamic("boolean")(boolean)
-    if (!js.isUndefined(cumulative)) __obj.updateDynamic("cumulative")(cumulative)
-    if (distribution != null) __obj.updateDynamic("distribution")(distribution)
+    if (!js.isUndefined(boolean)) __obj.updateDynamic("boolean")(boolean.asInstanceOf[js.Any])
+    if (!js.isUndefined(cumulative)) __obj.updateDynamic("cumulative")(cumulative.asInstanceOf[js.Any])
+    if (distribution != null) __obj.updateDynamic("distribution")(distribution.asInstanceOf[js.Any])
     if (floatingPoint != null) __obj.updateDynamic("floatingPoint")(floatingPoint.asInstanceOf[js.Any])
-    if (floatingPointList != null) __obj.updateDynamic("floatingPointList")(floatingPointList)
-    if (floatingPointMean != null) __obj.updateDynamic("floatingPointMean")(floatingPointMean)
-    if (integer != null) __obj.updateDynamic("integer")(integer)
-    if (integerList != null) __obj.updateDynamic("integerList")(integerList)
-    if (integerMean != null) __obj.updateDynamic("integerMean")(integerMean)
-    if (internal != null) __obj.updateDynamic("internal")(internal)
-    if (nameAndKind != null) __obj.updateDynamic("nameAndKind")(nameAndKind)
-    if (shortId != null) __obj.updateDynamic("shortId")(shortId)
-    if (stringList != null) __obj.updateDynamic("stringList")(stringList)
-    if (structuredNameAndMetadata != null) __obj.updateDynamic("structuredNameAndMetadata")(structuredNameAndMetadata)
+    if (floatingPointList != null) __obj.updateDynamic("floatingPointList")(floatingPointList.asInstanceOf[js.Any])
+    if (floatingPointMean != null) __obj.updateDynamic("floatingPointMean")(floatingPointMean.asInstanceOf[js.Any])
+    if (integer != null) __obj.updateDynamic("integer")(integer.asInstanceOf[js.Any])
+    if (integerList != null) __obj.updateDynamic("integerList")(integerList.asInstanceOf[js.Any])
+    if (integerMean != null) __obj.updateDynamic("integerMean")(integerMean.asInstanceOf[js.Any])
+    if (internal != null) __obj.updateDynamic("internal")(internal.asInstanceOf[js.Any])
+    if (nameAndKind != null) __obj.updateDynamic("nameAndKind")(nameAndKind.asInstanceOf[js.Any])
+    if (shortId != null) __obj.updateDynamic("shortId")(shortId.asInstanceOf[js.Any])
+    if (stringList != null) __obj.updateDynamic("stringList")(stringList.asInstanceOf[js.Any])
+    if (structuredNameAndMetadata != null) __obj.updateDynamic("structuredNameAndMetadata")(structuredNameAndMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[CounterUpdate]
   }
 }

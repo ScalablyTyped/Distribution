@@ -22,7 +22,7 @@ object StaticMapEnums {
     MarkerSize: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MarkerSize */ js.Any,
     Type: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Type */ js.Any
   ): StaticMapEnums = {
-    val __obj = js.Dynamic.literal(Color = Color, Format = Format, MarkerSize = MarkerSize, Type = Type)
+    val __obj = js.Dynamic.literal(Color = Color.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], MarkerSize = MarkerSize.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StaticMapEnums]
   }

@@ -19,7 +19,7 @@ object BootboxConfirmPromptButtonMap {
     StringDictionary: StringDictionary[BootboxButton | js.Function] = null
   ): BootboxConfirmPromptButtonMap = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], confirm = confirm.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[BootboxConfirmPromptButtonMap]
   }
 }

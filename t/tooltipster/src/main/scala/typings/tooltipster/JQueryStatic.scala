@@ -12,7 +12,7 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(tooltipster: ITooltipsterStatic): JQueryStatic = {
-    val __obj = js.Dynamic.literal(tooltipster = tooltipster)
+    val __obj = js.Dynamic.literal(tooltipster = tooltipster.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JQueryStatic]
   }

@@ -17,9 +17,9 @@ object AnnotateTextRequest {
   @scala.inline
   def apply(document: Document = null, encodingType: String = null, features: Features = null): AnnotateTextRequest = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (encodingType != null) __obj.updateDynamic("encodingType")(encodingType)
-    if (features != null) __obj.updateDynamic("features")(features)
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (encodingType != null) __obj.updateDynamic("encodingType")(encodingType.asInstanceOf[js.Any])
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotateTextRequest]
   }
 }

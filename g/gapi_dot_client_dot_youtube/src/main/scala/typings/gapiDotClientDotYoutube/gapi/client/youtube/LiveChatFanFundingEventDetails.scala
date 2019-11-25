@@ -24,10 +24,10 @@ object LiveChatFanFundingEventDetails {
     userComment: String = null
   ): LiveChatFanFundingEventDetails = {
     val __obj = js.Dynamic.literal()
-    if (amountDisplayString != null) __obj.updateDynamic("amountDisplayString")(amountDisplayString)
-    if (amountMicros != null) __obj.updateDynamic("amountMicros")(amountMicros)
-    if (currency != null) __obj.updateDynamic("currency")(currency)
-    if (userComment != null) __obj.updateDynamic("userComment")(userComment)
+    if (amountDisplayString != null) __obj.updateDynamic("amountDisplayString")(amountDisplayString.asInstanceOf[js.Any])
+    if (amountMicros != null) __obj.updateDynamic("amountMicros")(amountMicros.asInstanceOf[js.Any])
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
+    if (userComment != null) __obj.updateDynamic("userComment")(userComment.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveChatFanFundingEventDetails]
   }
 }

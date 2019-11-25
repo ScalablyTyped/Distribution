@@ -36,9 +36,9 @@ object SlickGridCheckBoxSelectColumnOptions {
     width: Int | Double = null
   ): SlickGridCheckBoxSelectColumnOptions = {
     val __obj = js.Dynamic.literal()
-    if (columnId != null) __obj.updateDynamic("columnId")(columnId)
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip)
+    if (columnId != null) __obj.updateDynamic("columnId")(columnId.asInstanceOf[js.Any])
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
+    if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlickGridCheckBoxSelectColumnOptions]
   }

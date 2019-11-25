@@ -15,7 +15,7 @@ object ThirdPartyModule {
   @scala.inline
   def apply(init: i18n => Unit, `type`: `3rdParty`): ThirdPartyModule = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init))
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThirdPartyModule]
   }
 }

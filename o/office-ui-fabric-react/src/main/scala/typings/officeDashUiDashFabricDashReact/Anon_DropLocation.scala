@@ -13,7 +13,7 @@ object Anon_DropLocation {
   @scala.inline
   def apply(dropLocation: ColumnDragEndLocation = null): Anon_DropLocation = {
     val __obj = js.Dynamic.literal()
-    if (dropLocation != null) __obj.updateDynamic("dropLocation")(dropLocation)
+    if (dropLocation != null) __obj.updateDynamic("dropLocation")(dropLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DropLocation]
   }
 }

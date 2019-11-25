@@ -11,7 +11,7 @@ trait AsObject extends js.Object {
 object AsObject {
   @scala.inline
   def apply(eventsList: js.Array[typings.libraDashCore.libAtGeneratedEventsUnderscorePbMod.Event.AsObject]): AsObject = {
-    val __obj = js.Dynamic.literal(eventsList = eventsList)
+    val __obj = js.Dynamic.literal(eventsList = eventsList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

@@ -44,11 +44,11 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
-    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (safe != null) __obj.updateDynamic("safe")(safe.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
-    if (!js.isUndefined(systemvars)) __obj.updateDynamic("systemvars")(systemvars)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(systemvars)) __obj.updateDynamic("systemvars")(systemvars.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

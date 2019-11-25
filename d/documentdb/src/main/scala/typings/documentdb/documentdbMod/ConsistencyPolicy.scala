@@ -17,7 +17,7 @@ object ConsistencyPolicy {
     maxStalenessIntervalInSeconds: Double,
     maxStalenessPrefix: Double
   ): ConsistencyPolicy = {
-    val __obj = js.Dynamic.literal(defaultConsistencyLevel = defaultConsistencyLevel, maxStalenessIntervalInSeconds = maxStalenessIntervalInSeconds, maxStalenessPrefix = maxStalenessPrefix)
+    val __obj = js.Dynamic.literal(defaultConsistencyLevel = defaultConsistencyLevel.asInstanceOf[js.Any], maxStalenessIntervalInSeconds = maxStalenessIntervalInSeconds.asInstanceOf[js.Any], maxStalenessPrefix = maxStalenessPrefix.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConsistencyPolicy]
   }

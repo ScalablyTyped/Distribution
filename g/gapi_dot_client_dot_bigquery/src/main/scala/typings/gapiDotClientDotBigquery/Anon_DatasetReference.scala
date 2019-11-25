@@ -29,11 +29,11 @@ object Anon_DatasetReference {
     labels: Record[String, String] = null
   ): Anon_DatasetReference = {
     val __obj = js.Dynamic.literal()
-    if (datasetReference != null) __obj.updateDynamic("datasetReference")(datasetReference)
-    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (datasetReference != null) __obj.updateDynamic("datasetReference")(datasetReference.asInstanceOf[js.Any])
+    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DatasetReference]
   }
 }

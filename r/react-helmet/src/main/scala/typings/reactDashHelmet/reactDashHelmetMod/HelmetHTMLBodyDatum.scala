@@ -12,8 +12,8 @@ trait HelmetHTMLBodyDatum extends js.Object {
 
 object HelmetHTMLBodyDatum {
   @scala.inline
-  def apply(toComponent: () => HTMLAttributes[HTMLBodyElement], toString: () => String): HelmetHTMLBodyDatum = {
-    val __obj = js.Dynamic.literal(toComponent = js.Any.fromFunction0(toComponent), toString = js.Any.fromFunction0(toString))
+  def apply(toComponent: () => HTMLAttributes[HTMLBodyElement]): HelmetHTMLBodyDatum = {
+    val __obj = js.Dynamic.literal(toComponent = js.Any.fromFunction0(toComponent))
   
     __obj.asInstanceOf[HelmetHTMLBodyDatum]
   }

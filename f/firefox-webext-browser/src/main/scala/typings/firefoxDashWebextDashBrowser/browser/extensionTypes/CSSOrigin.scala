@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 */
 trait CSSOrigin extends js.Object
 
+object CSSOrigin {
+  @scala.inline
+  def author: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.author = this.cast("author")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def user: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.user = this.cast("user")
+}
+

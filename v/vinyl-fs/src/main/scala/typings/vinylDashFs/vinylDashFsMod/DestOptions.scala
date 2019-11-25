@@ -47,13 +47,13 @@ object DestOptions {
     useJunctions: js.UndefOr[Boolean] = js.undefined
   ): DestOptions = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
     if (dirMode != null) __obj.updateDynamic("dirMode")(dirMode.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite)
-    if (!js.isUndefined(relativeSymlinks)) __obj.updateDynamic("relativeSymlinks")(relativeSymlinks)
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
+    if (!js.isUndefined(relativeSymlinks)) __obj.updateDynamic("relativeSymlinks")(relativeSymlinks.asInstanceOf[js.Any])
     if (sourcemaps != null) __obj.updateDynamic("sourcemaps")(sourcemaps.asInstanceOf[js.Any])
-    if (!js.isUndefined(useJunctions)) __obj.updateDynamic("useJunctions")(useJunctions)
+    if (!js.isUndefined(useJunctions)) __obj.updateDynamic("useJunctions")(useJunctions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DestOptions]
   }
 }

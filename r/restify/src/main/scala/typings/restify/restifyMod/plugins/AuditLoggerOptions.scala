@@ -5,7 +5,6 @@ import typings.restify.restifyMod.Request
 import typings.restify.restifyMod.Response
 import typings.restify.restifyMod.Server
 import typings.restify.restifyStrings.after
-import typings.restify.restifyStrings.pre
 import typings.restify.restifyStrings.routed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,7 +24,7 @@ trait AuditLoggerOptions extends js.Object {
     * The event from the server which initiates the
     * log, one of 'pre', 'routed', or 'after'
     */
-  var event: pre | routed | after
+  var event: typings.restify.restifyStrings.pre | routed | after
   /**
     * Bunyan logger
     */
@@ -47,7 +46,7 @@ trait AuditLoggerOptions extends js.Object {
 object AuditLoggerOptions {
   @scala.inline
   def apply(
-    event: pre | routed | after,
+    event: typings.restify.restifyStrings.pre | routed | after,
     log: ^,
     body: js.UndefOr[Boolean] = js.undefined,
     context: (/* req */ Request, /* res */ Response, /* route */ js.Any, /* error */ js.Any) => js.Any = null,
@@ -55,12 +54,12 @@ object AuditLoggerOptions {
     printLog: js.UndefOr[Boolean] = js.undefined,
     server: Server = null
   ): AuditLoggerOptions = {
-    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], log = log)
-    if (!js.isUndefined(body)) __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any])
+    if (!js.isUndefined(body)) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(js.Any.fromFunction4(context))
-    if (logBuffer != null) __obj.updateDynamic("logBuffer")(logBuffer)
-    if (!js.isUndefined(printLog)) __obj.updateDynamic("printLog")(printLog)
-    if (server != null) __obj.updateDynamic("server")(server)
+    if (logBuffer != null) __obj.updateDynamic("logBuffer")(logBuffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(printLog)) __obj.updateDynamic("printLog")(printLog.asInstanceOf[js.Any])
+    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuditLoggerOptions]
   }
 }

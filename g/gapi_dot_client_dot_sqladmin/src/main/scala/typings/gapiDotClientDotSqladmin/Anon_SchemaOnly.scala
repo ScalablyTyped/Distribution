@@ -15,8 +15,8 @@ object Anon_SchemaOnly {
   @scala.inline
   def apply(schemaOnly: js.UndefOr[Boolean] = js.undefined, tables: js.Array[String] = null): Anon_SchemaOnly = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(schemaOnly)) __obj.updateDynamic("schemaOnly")(schemaOnly)
-    if (tables != null) __obj.updateDynamic("tables")(tables)
+    if (!js.isUndefined(schemaOnly)) __obj.updateDynamic("schemaOnly")(schemaOnly.asInstanceOf[js.Any])
+    if (tables != null) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_SchemaOnly]
   }
 }

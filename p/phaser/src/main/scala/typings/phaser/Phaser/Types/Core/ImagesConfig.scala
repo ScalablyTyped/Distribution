@@ -19,8 +19,8 @@ object ImagesConfig {
   @scala.inline
   def apply(default: String = null, missing: String = null): ImagesConfig = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (missing != null) __obj.updateDynamic("missing")(missing)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (missing != null) __obj.updateDynamic("missing")(missing.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagesConfig]
   }
 }

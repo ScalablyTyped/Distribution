@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object expandProperties
   extends TopLevel[
-      js.Function2[/* pattern */ String, /* callback */ js.Function1[/* expanded */ String, Unit], Unit]
+      js.Function2[
+        /* pattern */ java.lang.String, 
+        /* callback */ js.Function1[/* expanded */ java.lang.String, Unit], 
+        Unit
+      ]
     ]
 

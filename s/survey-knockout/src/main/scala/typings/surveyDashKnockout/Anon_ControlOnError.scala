@@ -23,7 +23,7 @@ object Anon_ControlOnError {
     selectWrapper: String,
     small: String
   ): Anon_ControlOnError = {
-    val __obj = js.Dynamic.literal(control = control, onError = onError, other = other, root = root, selectWrapper = selectWrapper, small = small)
+    val __obj = js.Dynamic.literal(control = control.asInstanceOf[js.Any], onError = onError.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], selectWrapper = selectWrapper.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ControlOnError]
   }

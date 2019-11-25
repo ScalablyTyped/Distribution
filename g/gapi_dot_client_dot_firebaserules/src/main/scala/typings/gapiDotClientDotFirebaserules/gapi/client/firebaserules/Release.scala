@@ -58,10 +58,10 @@ object Release {
     updateTime: String = null
   ): Release = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (rulesetName != null) __obj.updateDynamic("rulesetName")(rulesetName)
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (rulesetName != null) __obj.updateDynamic("rulesetName")(rulesetName.asInstanceOf[js.Any])
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Release]
   }
 }

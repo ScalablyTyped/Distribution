@@ -47,10 +47,10 @@ object RowGroupSettings {
     startRender: (/* rows */ Api, /* group */ String) => String | HTMLElement | JQuery = null
   ): RowGroupSettings = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (dataSrc != null) __obj.updateDynamic("dataSrc")(dataSrc.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
-    if (endClassName != null) __obj.updateDynamic("endClassName")(endClassName)
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    if (endClassName != null) __obj.updateDynamic("endClassName")(endClassName.asInstanceOf[js.Any])
     if (endRender != null) __obj.updateDynamic("endRender")(js.Any.fromFunction2(endRender))
     if (startRender != null) __obj.updateDynamic("startRender")(js.Any.fromFunction2(startRender))
     __obj.asInstanceOf[RowGroupSettings]

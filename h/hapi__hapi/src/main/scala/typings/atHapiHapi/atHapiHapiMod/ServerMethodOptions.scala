@@ -30,8 +30,8 @@ object ServerMethodOptions {
     generateKey: /* repeated */ js.Any => String | Null = null
   ): ServerMethodOptions = {
     val __obj = js.Dynamic.literal()
-    if (bind != null) __obj.updateDynamic("bind")(bind)
-    if (cache != null) __obj.updateDynamic("cache")(cache)
+    if (bind != null) __obj.updateDynamic("bind")(bind.asInstanceOf[js.Any])
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (generateKey != null) __obj.updateDynamic("generateKey")(js.Any.fromFunction1(generateKey))
     __obj.asInstanceOf[ServerMethodOptions]
   }

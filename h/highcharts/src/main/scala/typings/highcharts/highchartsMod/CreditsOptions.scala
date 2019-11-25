@@ -54,13 +54,13 @@ object CreditsOptions {
     text: String = null
   ): CreditsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (href != null) __obj.updateDynamic("href")(href)
-    if (mapText != null) __obj.updateDynamic("mapText")(mapText)
-    if (mapTextFull != null) __obj.updateDynamic("mapTextFull")(mapTextFull)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (mapText != null) __obj.updateDynamic("mapText")(mapText.asInstanceOf[js.Any])
+    if (mapTextFull != null) __obj.updateDynamic("mapTextFull")(mapTextFull.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreditsOptions]
   }
 }

@@ -17,9 +17,9 @@ object LocationPreference {
   @scala.inline
   def apply(followGaeApplication: String = null, kind: String = null, zone: String = null): LocationPreference = {
     val __obj = js.Dynamic.literal()
-    if (followGaeApplication != null) __obj.updateDynamic("followGaeApplication")(followGaeApplication)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (zone != null) __obj.updateDynamic("zone")(zone)
+    if (followGaeApplication != null) __obj.updateDynamic("followGaeApplication")(followGaeApplication.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationPreference]
   }
 }

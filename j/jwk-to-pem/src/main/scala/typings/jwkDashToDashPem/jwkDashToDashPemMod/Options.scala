@@ -12,7 +12,7 @@ object Options {
   @scala.inline
   def apply(`private`: Boolean): Options = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("private")(`private`)
+    __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

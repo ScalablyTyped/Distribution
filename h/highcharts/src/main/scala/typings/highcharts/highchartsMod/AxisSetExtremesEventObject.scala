@@ -26,8 +26,8 @@ object AxisSetExtremesEventObject {
     userMax: Double,
     userMin: Double
   ): AxisSetExtremesEventObject = {
-    val __obj = js.Dynamic.literal(dataMax = dataMax, dataMin = dataMin, max = max, min = min, preventDefault = preventDefault, target = target, trigger = trigger.asInstanceOf[js.Any], userMax = userMax, userMin = userMin)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(dataMax = dataMax.asInstanceOf[js.Any], dataMin = dataMin.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any], userMax = userMax.asInstanceOf[js.Any], userMin = userMin.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxisSetExtremesEventObject]
   }
 }

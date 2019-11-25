@@ -43,7 +43,7 @@ object Anon_Aborted {
     unspecified: Double,
     warning: Double
   ): Anon_Aborted = {
-    val __obj = js.Dynamic.literal(aborted = aborted, blocked = blocked, error = error, failed = failed, inProgress = inProgress, inconclusive = inconclusive, maxValue = maxValue, none = none, notApplicable = notApplicable, notExecuted = notExecuted, notImpacted = notImpacted, passed = passed, paused = paused, timeout = timeout, unspecified = unspecified, warning = warning)
+    val __obj = js.Dynamic.literal(aborted = aborted.asInstanceOf[js.Any], blocked = blocked.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], inProgress = inProgress.asInstanceOf[js.Any], inconclusive = inconclusive.asInstanceOf[js.Any], maxValue = maxValue.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], notApplicable = notApplicable.asInstanceOf[js.Any], notExecuted = notExecuted.asInstanceOf[js.Any], notImpacted = notImpacted.asInstanceOf[js.Any], passed = passed.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any], unspecified = unspecified.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Aborted]
   }

@@ -33,19 +33,19 @@ object GetOptions {
     wait: String = null,
     wan: js.UndefOr[Boolean] = js.undefined
   ): GetOptions = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer)
-    if (!js.isUndefined(consistent)) __obj.updateDynamic("consistent")(consistent)
-    if (ctx != null) __obj.updateDynamic("ctx")(ctx)
-    if (dc != null) __obj.updateDynamic("dc")(dc)
-    if (index != null) __obj.updateDynamic("index")(index)
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
-    if (!js.isUndefined(recurse)) __obj.updateDynamic("recurse")(recurse)
-    if (!js.isUndefined(stale)) __obj.updateDynamic("stale")(stale)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(consistent)) __obj.updateDynamic("consistent")(consistent.asInstanceOf[js.Any])
+    if (ctx != null) __obj.updateDynamic("ctx")(ctx.asInstanceOf[js.Any])
+    if (dc != null) __obj.updateDynamic("dc")(dc.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (!js.isUndefined(recurse)) __obj.updateDynamic("recurse")(recurse.asInstanceOf[js.Any])
+    if (!js.isUndefined(stale)) __obj.updateDynamic("stale")(stale.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (wait != null) __obj.updateDynamic("wait")(wait)
-    if (!js.isUndefined(wan)) __obj.updateDynamic("wan")(wan)
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (wait != null) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
+    if (!js.isUndefined(wan)) __obj.updateDynamic("wan")(wan.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOptions]
   }
 }

@@ -25,9 +25,9 @@ object Route {
     `type`: String,
     statusCode: Int | Double = null
   ): Route = {
-    val __obj = js.Dynamic.literal(fn = js.Any.fromFunction4(fn), name = name)
+    val __obj = js.Dynamic.literal(fn = js.Any.fromFunction4(fn), name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(js.Any.fromFunction1(`match`))
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Route]
   }

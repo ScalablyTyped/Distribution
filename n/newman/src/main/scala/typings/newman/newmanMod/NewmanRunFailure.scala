@@ -13,7 +13,7 @@ trait NewmanRunFailure extends js.Object {
 object NewmanRunFailure {
   @scala.inline
   def apply(at: String, error: NewmanRunExecutionAssertionError): NewmanRunFailure = {
-    val __obj = js.Dynamic.literal(at = at, error = error)
+    val __obj = js.Dynamic.literal(at = at.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NewmanRunFailure]
   }

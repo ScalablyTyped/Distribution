@@ -23,9 +23,9 @@ object SliderOptions {
     vertical: js.UndefOr[Boolean] = js.undefined
   ): SliderOptions = {
     val __obj = js.Dynamic.literal()
-    if (barName != null) __obj.updateDynamic("barName")(barName)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    if (barName != null) __obj.updateDynamic("barName")(barName.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderOptions]
   }
 }

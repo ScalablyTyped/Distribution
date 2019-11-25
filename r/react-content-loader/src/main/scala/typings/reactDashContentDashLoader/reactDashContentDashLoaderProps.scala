@@ -21,5 +21,8 @@ trait reactDashContentDashLoaderProps {
   @scala.inline
   def ListProps: IContentLoaderProps.type = typings.reactDashContentDashLoader.nativeMod.IContentLoaderProps
   type ListProps = IContentLoaderProps
+  @scala.inline
+  def NativeProps: IContentLoaderProps.type = typings.reactDashContentDashLoader.nativeMod.IContentLoaderProps
+  type NativeProps = IContentLoaderProps
 }
 

@@ -23,7 +23,7 @@ object Anon_Follow {
     parent: Walker | WalkerSync,
     path: String
   ): Anon_Follow = {
-    val __obj = js.Dynamic.literal(follow = follow, ignoreFiles = ignoreFiles, includeEmpty = includeEmpty, parent = parent.asInstanceOf[js.Any], path = path)
+    val __obj = js.Dynamic.literal(follow = follow.asInstanceOf[js.Any], ignoreFiles = ignoreFiles.asInstanceOf[js.Any], includeEmpty = includeEmpty.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Follow]
   }

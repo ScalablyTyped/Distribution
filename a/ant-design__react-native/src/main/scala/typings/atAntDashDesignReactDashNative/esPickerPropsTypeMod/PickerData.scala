@@ -13,8 +13,8 @@ trait PickerData extends js.Object {
 object PickerData {
   @scala.inline
   def apply(label: String, value: String | Double, children: js.Array[PickerData] = null): PickerData = {
-    val __obj = js.Dynamic.literal(label = label, value = value.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickerData]
   }
 }

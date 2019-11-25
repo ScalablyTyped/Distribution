@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait resizeareaEventName extends js.Object
 
+object resizeareaEventName {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def onResize: typings.webix.webixStrings.onResize = this.cast("onResize")
+  @scala.inline
+  def onResizeEnd: typings.webix.webixStrings.onResizeEnd = this.cast("onResizeEnd")
+}
+

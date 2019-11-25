@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait AosEventType extends js.Object
 
+object AosEventType {
+  @scala.inline
+  def `aos:in`: typings.aos.aosStrings.`aos:in` = this.cast("aos:in")
+  @scala.inline
+  def `aos:out`: typings.aos.aosStrings.`aos:out` = this.cast("aos:out")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

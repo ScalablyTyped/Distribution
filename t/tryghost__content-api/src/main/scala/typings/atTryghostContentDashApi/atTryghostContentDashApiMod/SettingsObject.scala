@@ -11,7 +11,7 @@ trait SettingsObject extends js.Object {
 object SettingsObject {
   @scala.inline
   def apply(settings: Setting): SettingsObject = {
-    val __obj = js.Dynamic.literal(settings = settings)
+    val __obj = js.Dynamic.literal(settings = settings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SettingsObject]
   }

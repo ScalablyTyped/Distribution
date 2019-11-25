@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 object Props {
   @scala.inline
   def apply[T](channel: String, children: /* state */ T => ReactNode = null): Props[T] = {
-    val __obj = js.Dynamic.literal(channel = channel)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     __obj.asInstanceOf[Props[T]]
   }

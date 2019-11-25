@@ -23,10 +23,10 @@ object LoadEventArgs {
   @scala.inline
   def apply(action: String = null, customObject: js.Any = null, element: js.Any = null, model: js.Any = null): LoadEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action)
-    if (customObject != null) __obj.updateDynamic("customObject")(customObject)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (customObject != null) __obj.updateDynamic("customObject")(customObject.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadEventArgs]
   }
 }

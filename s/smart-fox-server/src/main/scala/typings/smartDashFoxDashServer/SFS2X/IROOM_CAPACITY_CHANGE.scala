@@ -12,7 +12,7 @@ trait IROOM_CAPACITY_CHANGE extends js.Object {
 object IROOM_CAPACITY_CHANGE {
   @scala.inline
   def apply(room: SFSRoom): IROOM_CAPACITY_CHANGE = {
-    val __obj = js.Dynamic.literal(room = room)
+    val __obj = js.Dynamic.literal(room = room.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IROOM_CAPACITY_CHANGE]
   }

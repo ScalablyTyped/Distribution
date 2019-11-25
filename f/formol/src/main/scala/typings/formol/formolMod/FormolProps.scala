@@ -22,7 +22,7 @@ trait FormolProps[V] extends js.Object {
   var validator: js.UndefOr[
     js.Function1[
       /* v */ V, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof V ]:? string | null}
     */ typings.formol.formolStrings.FormolProps with js.Any
     ]
@@ -44,23 +44,23 @@ object FormolProps {
     readOnly: js.UndefOr[Boolean] = js.undefined,
     submitText: js.Any = null,
     types: js.Array[String] = null,
-    validator: /* v */ V => /* import warning: ImportType.apply c Unsupported type mapping: 
+    validator: /* v */ V => /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof V ]:? string | null}
     */ typings.formol.formolStrings.FormolProps with js.Any = null
   ): FormolProps[V] = {
     val __obj = js.Dynamic.literal()
-    if (allowUnmodifiedSubmit != null) __obj.updateDynamic("allowUnmodifiedSubmit")(allowUnmodifiedSubmit)
-    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (allowUnmodifiedSubmit != null) __obj.updateDynamic("allowUnmodifiedSubmit")(allowUnmodifiedSubmit.asInstanceOf[js.Any])
+    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (i18n != null) __obj.updateDynamic("i18n")(i18n)
+    if (i18n != null) __obj.updateDynamic("i18n")(i18n.asInstanceOf[js.Any])
     if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (noCancel != null) __obj.updateDynamic("noCancel")(noCancel)
+    if (noCancel != null) __obj.updateDynamic("noCancel")(noCancel.asInstanceOf[js.Any])
     if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (submitText != null) __obj.updateDynamic("submitText")(submitText)
-    if (types != null) __obj.updateDynamic("types")(types)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (submitText != null) __obj.updateDynamic("submitText")(submitText.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     if (validator != null) __obj.updateDynamic("validator")(js.Any.fromFunction1(validator))
     __obj.asInstanceOf[FormolProps[V]]
   }

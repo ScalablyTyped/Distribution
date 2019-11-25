@@ -60,17 +60,17 @@ object Deployment {
     update: DeploymentUpdate = null
   ): Deployment = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
-    if (manifest != null) __obj.updateDynamic("manifest")(manifest)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (operation != null) __obj.updateDynamic("operation")(operation)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (manifest != null) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[Deployment]
   }
 }

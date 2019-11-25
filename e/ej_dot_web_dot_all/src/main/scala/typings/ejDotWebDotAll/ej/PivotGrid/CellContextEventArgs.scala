@@ -40,13 +40,13 @@ object CellContextEventArgs {
     uniqueName: String = null
   ): CellContextEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (cellPosition != null) __obj.updateDynamic("cellPosition")(cellPosition)
-    if (cellType != null) __obj.updateDynamic("cellType")(cellType)
-    if (cellValue != null) __obj.updateDynamic("cellValue")(cellValue)
-    if (rawdata != null) __obj.updateDynamic("rawdata")(rawdata)
-    if (role != null) __obj.updateDynamic("role")(role)
-    if (uniqueName != null) __obj.updateDynamic("uniqueName")(uniqueName)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (cellPosition != null) __obj.updateDynamic("cellPosition")(cellPosition.asInstanceOf[js.Any])
+    if (cellType != null) __obj.updateDynamic("cellType")(cellType.asInstanceOf[js.Any])
+    if (cellValue != null) __obj.updateDynamic("cellValue")(cellValue.asInstanceOf[js.Any])
+    if (rawdata != null) __obj.updateDynamic("rawdata")(rawdata.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (uniqueName != null) __obj.updateDynamic("uniqueName")(uniqueName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellContextEventArgs]
   }
 }

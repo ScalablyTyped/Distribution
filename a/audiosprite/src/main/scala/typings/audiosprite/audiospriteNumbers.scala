@@ -9,44 +9,64 @@ import scala.scalajs.js.annotation._
 
 object audiospriteNumbers {
   @js.native
-  sealed trait `-1` extends VBR
+  sealed trait `-1`
+    extends VBR
+       with VBR_Vorbis
   
   @js.native
-  sealed trait `0` extends VBR
+  sealed trait `0`
+    extends VBR
+       with VBR_Vorbis
   
   @js.native
   sealed trait `1`
-    extends VBR
-       with Channels
+    extends Channels
+       with VBR
+       with VBR_Vorbis
   
   @js.native
   sealed trait `10` extends VBR_Vorbis
   
   @js.native
   sealed trait `2`
+    extends Channels
+       with VBR
+       with VBR_Vorbis
+  
+  @js.native
+  sealed trait `3`
     extends VBR
-       with Channels
+       with VBR_Vorbis
   
   @js.native
-  sealed trait `3` extends VBR
+  sealed trait `4`
+    extends VBR
+       with VBR_Vorbis
   
   @js.native
-  sealed trait `4` extends VBR
+  sealed trait `5`
+    extends VBR
+       with VBR_Vorbis
   
   @js.native
-  sealed trait `5` extends VBR
+  sealed trait `6`
+    extends VBR
+       with VBR_Vorbis
   
   @js.native
-  sealed trait `6` extends VBR
+  sealed trait `7`
+    extends VBR
+       with VBR_Vorbis
   
   @js.native
-  sealed trait `7` extends VBR
+  sealed trait `8`
+    extends VBR
+       with VBR_Vorbis
   
   @js.native
-  sealed trait `8` extends VBR
-  
-  @js.native
-  sealed trait `9` extends VBR
+  sealed trait `9`
+    extends VBR
+       with VBR_Vorbis
   
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]

@@ -26,9 +26,9 @@ trait GenerateDataKeyWithoutPlaintextOutput extends OutputTypesUnion {
 object GenerateDataKeyWithoutPlaintextOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, CiphertextBlob: Uint8Array = null, KeyId: String = null): GenerateDataKeyWithoutPlaintextOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (CiphertextBlob != null) __obj.updateDynamic("CiphertextBlob")(CiphertextBlob)
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (CiphertextBlob != null) __obj.updateDynamic("CiphertextBlob")(CiphertextBlob.asInstanceOf[js.Any])
+    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateDataKeyWithoutPlaintextOutput]
   }
 }

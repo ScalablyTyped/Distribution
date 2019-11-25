@@ -12,7 +12,7 @@ trait APIResponseSuccess extends APIResponse {
 object APIResponseSuccess {
   @scala.inline
   def apply(data: APIResponseData, meta: APIResponseMeta): APIResponseSuccess = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], meta = meta)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[APIResponseSuccess]
   }

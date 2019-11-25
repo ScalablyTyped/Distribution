@@ -17,7 +17,7 @@ object ApplicationPropertiesProperties {
   @scala.inline
   def apply(viewing: ViewingProperties = null): ApplicationPropertiesProperties = {
     val __obj = js.Dynamic.literal()
-    if (viewing != null) __obj.updateDynamic("viewing")(viewing)
+    if (viewing != null) __obj.updateDynamic("viewing")(viewing.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationPropertiesProperties]
   }
 }

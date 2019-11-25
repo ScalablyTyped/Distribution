@@ -14,7 +14,7 @@ trait HookScenarioResult extends js.Object {
 object HookScenarioResult {
   @scala.inline
   def apply(pickle: Pickle, result: ScenarioResult, sourceLocation: SourceLocation): HookScenarioResult = {
-    val __obj = js.Dynamic.literal(pickle = pickle, result = result, sourceLocation = sourceLocation)
+    val __obj = js.Dynamic.literal(pickle = pickle.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], sourceLocation = sourceLocation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HookScenarioResult]
   }

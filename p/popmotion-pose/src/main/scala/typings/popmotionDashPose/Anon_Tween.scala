@@ -13,7 +13,7 @@ object Anon_Tween {
   @scala.inline
   def apply(`type`: tween): Anon_Tween = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Tween]
   }
 }

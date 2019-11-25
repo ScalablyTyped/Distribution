@@ -46,12 +46,12 @@ object IStyleSheetConfig {
     rtl: js.UndefOr[Boolean] = js.undefined
   ): IStyleSheetConfig = {
     val __obj = js.Dynamic.literal()
-    if (cspSettings != null) __obj.updateDynamic("cspSettings")(cspSettings)
-    if (defaultPrefix != null) __obj.updateDynamic("defaultPrefix")(defaultPrefix)
-    if (injectionMode != null) __obj.updateDynamic("injectionMode")(injectionMode)
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    if (cspSettings != null) __obj.updateDynamic("cspSettings")(cspSettings.asInstanceOf[js.Any])
+    if (defaultPrefix != null) __obj.updateDynamic("defaultPrefix")(defaultPrefix.asInstanceOf[js.Any])
+    if (injectionMode != null) __obj.updateDynamic("injectionMode")(injectionMode.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     if (onInsertRule != null) __obj.updateDynamic("onInsertRule")(js.Any.fromFunction1(onInsertRule))
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl)
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStyleSheetConfig]
   }
 }

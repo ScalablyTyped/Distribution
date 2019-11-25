@@ -14,7 +14,7 @@ object IDeleteAgentRequest {
   @scala.inline
   def apply(parent: String = null): IDeleteAgentRequest = {
     val __obj = js.Dynamic.literal()
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeleteAgentRequest]
   }
 }

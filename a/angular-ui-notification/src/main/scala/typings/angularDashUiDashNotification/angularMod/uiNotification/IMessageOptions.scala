@@ -30,15 +30,15 @@ object IMessageOptions {
     `type`: MessageType = null
   ): IMessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick)
+    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (positionX != null) __obj.updateDynamic("positionX")(positionX)
-    if (positionY != null) __obj.updateDynamic("positionY")(positionY)
-    if (!js.isUndefined(replaceMessage)) __obj.updateDynamic("replaceMessage")(replaceMessage)
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (positionX != null) __obj.updateDynamic("positionX")(positionX.asInstanceOf[js.Any])
+    if (positionY != null) __obj.updateDynamic("positionY")(positionY.asInstanceOf[js.Any])
+    if (!js.isUndefined(replaceMessage)) __obj.updateDynamic("replaceMessage")(replaceMessage.asInstanceOf[js.Any])
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMessageOptions]
   }
 }

@@ -16,9 +16,9 @@ trait Algorithms extends js.Object {
 object Algorithms {
   @scala.inline
   def apply(`aes-128-ctr`: Anon_IvBits, `aes-256-cbc`: Anon_IvBits, sha256: Anon_KeyBits): Algorithms = {
-    val __obj = js.Dynamic.literal(sha256 = sha256)
-    __obj.updateDynamic("aes-128-ctr")(`aes-128-ctr`)
-    __obj.updateDynamic("aes-256-cbc")(`aes-256-cbc`)
+    val __obj = js.Dynamic.literal(sha256 = sha256.asInstanceOf[js.Any])
+    __obj.updateDynamic("aes-128-ctr")(`aes-128-ctr`.asInstanceOf[js.Any])
+    __obj.updateDynamic("aes-256-cbc")(`aes-256-cbc`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Algorithms]
   }
 }

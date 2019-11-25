@@ -40,9 +40,9 @@ object ExceptionDetails {
     `type`: ExceptionType,
     memory: ExceptionMemoryDetails = null
   ): ExceptionDetails = {
-    val __obj = js.Dynamic.literal(address = address, context = context, nativeContext = nativeContext)
-    __obj.updateDynamic("type")(`type`)
-    if (memory != null) __obj.updateDynamic("memory")(memory)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], nativeContext = nativeContext.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExceptionDetails]
   }
 }

@@ -27,8 +27,8 @@ object Anon_ActiveTab {
     if (activeTab != null) __obj.updateDynamic("activeTab")(activeTab.asInstanceOf[js.Any])
     if (containerWidth != null) __obj.updateDynamic("containerWidth")(containerWidth.asInstanceOf[js.Any])
     if (goToPage != null) __obj.updateDynamic("goToPage")(js.Any.fromFunction1(goToPage))
-    if (scrollValue != null) __obj.updateDynamic("scrollValue")(scrollValue)
-    if (tabs != null) __obj.updateDynamic("tabs")(tabs)
+    if (scrollValue != null) __obj.updateDynamic("scrollValue")(scrollValue.asInstanceOf[js.Any])
+    if (tabs != null) __obj.updateDynamic("tabs")(tabs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ActiveTab]
   }
 }

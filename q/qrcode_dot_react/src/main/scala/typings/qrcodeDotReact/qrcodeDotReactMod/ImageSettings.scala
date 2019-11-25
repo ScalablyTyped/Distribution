@@ -23,8 +23,8 @@ object ImageSettings {
     x: Int | Double = null,
     y: Int | Double = null
   ): ImageSettings = {
-    val __obj = js.Dynamic.literal(src = src)
-    if (!js.isUndefined(excavate)) __obj.updateDynamic("excavate")(excavate)
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
+    if (!js.isUndefined(excavate)) __obj.updateDynamic("excavate")(excavate.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])

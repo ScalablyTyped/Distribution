@@ -22,10 +22,10 @@ object StorageOptions {
     size: Int | Double = null
   ): StorageOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoSchema)) __obj.updateDynamic("autoSchema")(autoSchema)
-    if (!js.isUndefined(isSerial)) __obj.updateDynamic("isSerial")(isSerial)
-    if (mechanisms != null) __obj.updateDynamic("mechanisms")(mechanisms)
-    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (!js.isUndefined(autoSchema)) __obj.updateDynamic("autoSchema")(autoSchema.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSerial)) __obj.updateDynamic("isSerial")(isSerial.asInstanceOf[js.Any])
+    if (mechanisms != null) __obj.updateDynamic("mechanisms")(mechanisms.asInstanceOf[js.Any])
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageOptions]
   }

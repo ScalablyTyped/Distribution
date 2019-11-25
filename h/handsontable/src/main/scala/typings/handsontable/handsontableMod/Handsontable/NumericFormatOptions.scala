@@ -12,8 +12,8 @@ trait NumericFormatOptions extends js.Object {
 object NumericFormatOptions {
   @scala.inline
   def apply(pattern: String, culture: String = null): NumericFormatOptions = {
-    val __obj = js.Dynamic.literal(pattern = pattern)
-    if (culture != null) __obj.updateDynamic("culture")(culture)
+    val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
+    if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumericFormatOptions]
   }
 }

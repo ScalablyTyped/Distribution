@@ -13,8 +13,8 @@ trait SwitchProps extends js.Object {
 object SwitchProps {
   @scala.inline
   def apply(children: js.Array[VNode[RouteProps[DefaultParams]]], location: String = null): SwitchProps = {
-    val __obj = js.Dynamic.literal(children = children)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchProps]
   }
 }

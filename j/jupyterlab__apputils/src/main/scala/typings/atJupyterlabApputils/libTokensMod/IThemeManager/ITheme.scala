@@ -46,8 +46,8 @@ object ITheme {
     unload: () => js.Promise[Unit],
     themeScrollbars: js.UndefOr[Boolean] = js.undefined
   ): ITheme = {
-    val __obj = js.Dynamic.literal(isLight = isLight, load = js.Any.fromFunction0(load), name = name, unload = js.Any.fromFunction0(unload))
-    if (!js.isUndefined(themeScrollbars)) __obj.updateDynamic("themeScrollbars")(themeScrollbars)
+    val __obj = js.Dynamic.literal(isLight = isLight.asInstanceOf[js.Any], load = js.Any.fromFunction0(load), name = name.asInstanceOf[js.Any], unload = js.Any.fromFunction0(unload))
+    if (!js.isUndefined(themeScrollbars)) __obj.updateDynamic("themeScrollbars")(themeScrollbars.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITheme]
   }
 }

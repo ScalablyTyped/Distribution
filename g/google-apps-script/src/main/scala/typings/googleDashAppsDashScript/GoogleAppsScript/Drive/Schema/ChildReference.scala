@@ -15,10 +15,10 @@ object ChildReference {
   @scala.inline
   def apply(childLink: String = null, id: String = null, kind: String = null, selfLink: String = null): ChildReference = {
     val __obj = js.Dynamic.literal()
-    if (childLink != null) __obj.updateDynamic("childLink")(childLink)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (childLink != null) __obj.updateDynamic("childLink")(childLink.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildReference]
   }
 }

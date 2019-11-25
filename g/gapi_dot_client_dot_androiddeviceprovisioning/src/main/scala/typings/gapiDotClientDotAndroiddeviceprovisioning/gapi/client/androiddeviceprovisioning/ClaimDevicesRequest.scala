@@ -13,7 +13,7 @@ object ClaimDevicesRequest {
   @scala.inline
   def apply(claims: js.Array[PartnerClaim] = null): ClaimDevicesRequest = {
     val __obj = js.Dynamic.literal()
-    if (claims != null) __obj.updateDynamic("claims")(claims)
+    if (claims != null) __obj.updateDynamic("claims")(claims.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimDevicesRequest]
   }
 }

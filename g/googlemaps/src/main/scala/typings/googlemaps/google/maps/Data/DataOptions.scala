@@ -27,11 +27,11 @@ object DataOptions {
     style: StylingFunction | StyleOptions = null
   ): DataOptions = {
     val __obj = js.Dynamic.literal()
-    if (controlPosition != null) __obj.updateDynamic("controlPosition")(controlPosition)
-    if (controls != null) __obj.updateDynamic("controls")(controls)
-    if (drawingMode != null) __obj.updateDynamic("drawingMode")(drawingMode)
+    if (controlPosition != null) __obj.updateDynamic("controlPosition")(controlPosition.asInstanceOf[js.Any])
+    if (controls != null) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
+    if (drawingMode != null) __obj.updateDynamic("drawingMode")(drawingMode.asInstanceOf[js.Any])
     if (featureFactory != null) __obj.updateDynamic("featureFactory")(js.Any.fromFunction1(featureFactory))
-    if (map != null) __obj.updateDynamic("map")(map)
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataOptions]
   }

@@ -16,7 +16,7 @@ object AlbumTracksParams {
     val __obj = js.Dynamic.literal()
     if (album_id != null) __obj.updateDynamic("album_id")(album_id.asInstanceOf[js.Any])
     if (album_mbid != null) __obj.updateDynamic("album_mbid")(album_mbid.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlbumTracksParams]
   }
 }

@@ -18,7 +18,7 @@ trait RefreshAccessTokenResponse extends js.Object {
 object RefreshAccessTokenResponse {
   @scala.inline
   def apply(access_token: String, expires_in: Double, scope: String, token_type: String): RefreshAccessTokenResponse = {
-    val __obj = js.Dynamic.literal(access_token = access_token, expires_in = expires_in, scope = scope, token_type = token_type)
+    val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], expires_in = expires_in.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], token_type = token_type.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RefreshAccessTokenResponse]
   }

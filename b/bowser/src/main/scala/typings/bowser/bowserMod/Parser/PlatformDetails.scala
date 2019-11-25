@@ -14,9 +14,9 @@ object PlatformDetails {
   @scala.inline
   def apply(model: String = null, `type`: String = null, vendor: String = null): PlatformDetails = {
     val __obj = js.Dynamic.literal()
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (vendor != null) __obj.updateDynamic("vendor")(vendor)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (vendor != null) __obj.updateDynamic("vendor")(vendor.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlatformDetails]
   }
 }

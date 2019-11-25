@@ -13,7 +13,7 @@ trait ManagedProperty[T] extends js.Object {
 object ManagedProperty {
   @scala.inline
   def apply[T](CanBeChanged: scala.Boolean, ManagedPropertyLogicalName: java.lang.String, Value: T): ManagedProperty[T] = {
-    val __obj = js.Dynamic.literal(CanBeChanged = CanBeChanged, ManagedPropertyLogicalName = ManagedPropertyLogicalName, Value = Value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(CanBeChanged = CanBeChanged.asInstanceOf[js.Any], ManagedPropertyLogicalName = ManagedPropertyLogicalName.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ManagedProperty[T]]
   }

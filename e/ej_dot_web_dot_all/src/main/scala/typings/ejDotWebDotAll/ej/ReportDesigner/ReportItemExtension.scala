@@ -42,12 +42,12 @@ object ReportItemExtension {
     toolTip: js.Any = null
   ): ReportItemExtension = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip)
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportItemExtension]
   }
 }

@@ -21,7 +21,7 @@ object FbsearchRepositoryTopsearchFlatResponsePlace {
     subtitle: String,
     title: String
   ): FbsearchRepositoryTopsearchFlatResponsePlace = {
-    val __obj = js.Dynamic.literal(header_media = header_media, location = location, media_bundles = media_bundles, subtitle = subtitle, title = title)
+    val __obj = js.Dynamic.literal(header_media = header_media.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], media_bundles = media_bundles.asInstanceOf[js.Any], subtitle = subtitle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FbsearchRepositoryTopsearchFlatResponsePlace]
   }

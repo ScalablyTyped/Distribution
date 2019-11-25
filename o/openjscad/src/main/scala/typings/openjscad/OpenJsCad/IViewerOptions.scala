@@ -23,10 +23,10 @@ object IViewerOptions {
   ): IViewerOptions = {
     val __obj = js.Dynamic.literal()
     if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(drawFaces)) __obj.updateDynamic("drawFaces")(drawFaces)
-    if (!js.isUndefined(drawLines)) __obj.updateDynamic("drawLines")(drawLines)
-    if (!js.isUndefined(noWebGL)) __obj.updateDynamic("noWebGL")(noWebGL)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawFaces)) __obj.updateDynamic("drawFaces")(drawFaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawLines)) __obj.updateDynamic("drawLines")(drawLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(noWebGL)) __obj.updateDynamic("noWebGL")(noWebGL.asInstanceOf[js.Any])
     __obj.asInstanceOf[IViewerOptions]
   }
 }

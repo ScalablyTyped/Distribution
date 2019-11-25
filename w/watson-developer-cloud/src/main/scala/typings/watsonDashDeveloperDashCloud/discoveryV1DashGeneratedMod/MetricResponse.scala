@@ -14,7 +14,7 @@ object MetricResponse {
   @scala.inline
   def apply(aggregations: js.Array[MetricAggregation] = null): MetricResponse = {
     val __obj = js.Dynamic.literal()
-    if (aggregations != null) __obj.updateDynamic("aggregations")(aggregations)
+    if (aggregations != null) __obj.updateDynamic("aggregations")(aggregations.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricResponse]
   }
 }

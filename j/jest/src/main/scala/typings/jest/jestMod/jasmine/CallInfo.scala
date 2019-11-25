@@ -22,8 +22,8 @@ trait CallInfo extends js.Object {
 object CallInfo {
   @scala.inline
   def apply(args: js.Array[_], `object`: js.Any, returnValue: js.Any): CallInfo = {
-    val __obj = js.Dynamic.literal(args = args, returnValue = returnValue)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallInfo]
   }
 }

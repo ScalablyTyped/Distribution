@@ -57,8 +57,8 @@ object SearchReposResponseItemsItem {
     url: String,
     watchers_count: Double
   ): SearchReposResponseItemsItem = {
-    val __obj = js.Dynamic.literal(created_at = created_at, default_branch = default_branch, description = description, fork = fork, forks_count = forks_count, full_name = full_name, homepage = homepage, html_url = html_url, id = id, language = language, master_branch = master_branch, name = name, node_id = node_id, open_issues_count = open_issues_count, owner = owner, pushed_at = pushed_at, score = score, size = size, stargazers_count = stargazers_count, updated_at = updated_at, url = url, watchers_count = watchers_count)
-    __obj.updateDynamic("private")(`private`)
+    val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], default_branch = default_branch.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], fork = fork.asInstanceOf[js.Any], forks_count = forks_count.asInstanceOf[js.Any], full_name = full_name.asInstanceOf[js.Any], homepage = homepage.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], master_branch = master_branch.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], open_issues_count = open_issues_count.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], pushed_at = pushed_at.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], stargazers_count = stargazers_count.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], watchers_count = watchers_count.asInstanceOf[js.Any])
+    __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchReposResponseItemsItem]
   }
 }

@@ -40,10 +40,10 @@ object PrintParametersProperties {
     view: MapViewProperties = null
   ): PrintParametersProperties = {
     val __obj = js.Dynamic.literal()
-    if (extraParameters != null) __obj.updateDynamic("extraParameters")(extraParameters)
-    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference)
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (extraParameters != null) __obj.updateDynamic("extraParameters")(extraParameters.asInstanceOf[js.Any])
+    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintParametersProperties]
   }
 }

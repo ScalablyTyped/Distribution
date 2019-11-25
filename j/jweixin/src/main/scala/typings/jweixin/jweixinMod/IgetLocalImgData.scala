@@ -21,7 +21,7 @@ object IgetLocalImgData {
     complete: /* repeated */ js.Any => Unit = null,
     fail: /* repeated */ js.Any => Unit = null
   ): IgetLocalImgData = {
-    val __obj = js.Dynamic.literal(localId = localId, success = js.Any.fromFunction1(success))
+    val __obj = js.Dynamic.literal(localId = localId.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     __obj.asInstanceOf[IgetLocalImgData]

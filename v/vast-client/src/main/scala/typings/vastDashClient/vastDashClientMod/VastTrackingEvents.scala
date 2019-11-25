@@ -22,8 +22,8 @@ object VastTrackingEvents {
     thirdQuartile: js.Array[String],
     StringDictionary: /* key */ StringDictionary[js.Array[String]] = null
   ): VastTrackingEvents = {
-    val __obj = js.Dynamic.literal(complete = complete, firstQuartile = firstQuartile, midpoint = midpoint, thirdQuartile = thirdQuartile)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], firstQuartile = firstQuartile.asInstanceOf[js.Any], midpoint = midpoint.asInstanceOf[js.Any], thirdQuartile = thirdQuartile.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[VastTrackingEvents]
   }
 }

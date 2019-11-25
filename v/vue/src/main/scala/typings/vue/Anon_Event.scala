@@ -13,8 +13,8 @@ object Anon_Event {
   @scala.inline
   def apply(event: String = null, prop: String = null): Anon_Event = {
     val __obj = js.Dynamic.literal()
-    if (event != null) __obj.updateDynamic("event")(event)
-    if (prop != null) __obj.updateDynamic("prop")(prop)
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (prop != null) __obj.updateDynamic("prop")(prop.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Event]
   }
 }

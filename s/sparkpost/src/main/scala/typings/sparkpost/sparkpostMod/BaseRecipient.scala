@@ -24,10 +24,10 @@ object BaseRecipient {
     tags: js.Array[String] = null
   ): BaseRecipient = {
     val __obj = js.Dynamic.literal()
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (return_path != null) __obj.updateDynamic("return_path")(return_path)
-    if (substitution_data != null) __obj.updateDynamic("substitution_data")(substitution_data)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (return_path != null) __obj.updateDynamic("return_path")(return_path.asInstanceOf[js.Any])
+    if (substitution_data != null) __obj.updateDynamic("substitution_data")(substitution_data.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseRecipient]
   }
 }

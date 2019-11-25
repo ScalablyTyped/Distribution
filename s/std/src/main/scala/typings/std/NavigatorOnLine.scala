@@ -11,7 +11,7 @@ trait NavigatorOnLine extends js.Object {
 object NavigatorOnLine {
   @scala.inline
   def apply(onLine: scala.Boolean): NavigatorOnLine = {
-    val __obj = js.Dynamic.literal(onLine = onLine)
+    val __obj = js.Dynamic.literal(onLine = onLine.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NavigatorOnLine]
   }

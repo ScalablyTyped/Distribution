@@ -11,7 +11,7 @@ trait PopupWindowResizeEventArgs extends PopupWindowEventArgs {
 object PopupWindowResizeEventArgs {
   @scala.inline
   def apply(resizeState: Double, sender: Control, window: BootstrapPopupWindow): PopupWindowResizeEventArgs = {
-    val __obj = js.Dynamic.literal(resizeState = resizeState, sender = sender, window = window)
+    val __obj = js.Dynamic.literal(resizeState = resizeState.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PopupWindowResizeEventArgs]
   }

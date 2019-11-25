@@ -14,8 +14,8 @@ trait Header extends js.Object {
 object Header {
   @scala.inline
   def apply(name: String, value: String, comment: String = null): Header = {
-    val __obj = js.Dynamic.literal(name = name, value = value)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Header]
   }
 }

@@ -26,10 +26,10 @@ object Anon_CreditEllipsoidMetadata {
     ellipsoid: Ellipsoid = null,
     tileDiscardPolicy: TileDiscardPolicy = null
   ): Anon_CreditEllipsoidMetadata = {
-    val __obj = js.Dynamic.literal(metadata = metadata, url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
-    if (tileDiscardPolicy != null) __obj.updateDynamic("tileDiscardPolicy")(tileDiscardPolicy)
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
+    if (tileDiscardPolicy != null) __obj.updateDynamic("tileDiscardPolicy")(tileDiscardPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CreditEllipsoidMetadata]
   }
 }

@@ -13,7 +13,7 @@ object InstancesFailoverRequest {
   @scala.inline
   def apply(failoverContext: FailoverContext = null): InstancesFailoverRequest = {
     val __obj = js.Dynamic.literal()
-    if (failoverContext != null) __obj.updateDynamic("failoverContext")(failoverContext)
+    if (failoverContext != null) __obj.updateDynamic("failoverContext")(failoverContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstancesFailoverRequest]
   }
 }

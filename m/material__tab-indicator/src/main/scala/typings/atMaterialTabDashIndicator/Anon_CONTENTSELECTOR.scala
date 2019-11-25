@@ -11,7 +11,7 @@ trait Anon_CONTENTSELECTOR extends js.Object {
 object Anon_CONTENTSELECTOR {
   @scala.inline
   def apply(CONTENT_SELECTOR: String): Anon_CONTENTSELECTOR = {
-    val __obj = js.Dynamic.literal(CONTENT_SELECTOR = CONTENT_SELECTOR)
+    val __obj = js.Dynamic.literal(CONTENT_SELECTOR = CONTENT_SELECTOR.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CONTENTSELECTOR]
   }

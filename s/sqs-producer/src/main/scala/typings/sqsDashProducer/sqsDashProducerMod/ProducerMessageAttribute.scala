@@ -17,8 +17,8 @@ object ProducerMessageAttribute {
   @scala.inline
   def apply(DataType: String | Binary, BinaryValue: Buffer = null, StringValue: java.lang.String = null): ProducerMessageAttribute = {
     val __obj = js.Dynamic.literal(DataType = DataType.asInstanceOf[js.Any])
-    if (BinaryValue != null) __obj.updateDynamic("BinaryValue")(BinaryValue)
-    if (StringValue != null) __obj.updateDynamic("StringValue")(StringValue)
+    if (BinaryValue != null) __obj.updateDynamic("BinaryValue")(BinaryValue.asInstanceOf[js.Any])
+    if (StringValue != null) __obj.updateDynamic("StringValue")(StringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProducerMessageAttribute]
   }
 }

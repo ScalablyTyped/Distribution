@@ -30,12 +30,12 @@ object ServerOptions {
     val __obj = js.Dynamic.literal()
     if (disconnect_delay != null) __obj.updateDynamic("disconnect_delay")(disconnect_delay.asInstanceOf[js.Any])
     if (heartbeat_delay != null) __obj.updateDynamic("heartbeat_delay")(heartbeat_delay.asInstanceOf[js.Any])
-    if (jsessionid != null) __obj.updateDynamic("jsessionid")(jsessionid)
+    if (jsessionid != null) __obj.updateDynamic("jsessionid")(jsessionid.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction2(log))
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (response_limit != null) __obj.updateDynamic("response_limit")(response_limit.asInstanceOf[js.Any])
-    if (sockjs_url != null) __obj.updateDynamic("sockjs_url")(sockjs_url)
-    if (!js.isUndefined(websocket)) __obj.updateDynamic("websocket")(websocket)
+    if (sockjs_url != null) __obj.updateDynamic("sockjs_url")(sockjs_url.asInstanceOf[js.Any])
+    if (!js.isUndefined(websocket)) __obj.updateDynamic("websocket")(websocket.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptions]
   }
 }

@@ -30,9 +30,9 @@ object AndroidDeviceCatalog {
     versions: js.Array[AndroidVersion] = null
   ): AndroidDeviceCatalog = {
     val __obj = js.Dynamic.literal()
-    if (models != null) __obj.updateDynamic("models")(models)
-    if (runtimeConfiguration != null) __obj.updateDynamic("runtimeConfiguration")(runtimeConfiguration)
-    if (versions != null) __obj.updateDynamic("versions")(versions)
+    if (models != null) __obj.updateDynamic("models")(models.asInstanceOf[js.Any])
+    if (runtimeConfiguration != null) __obj.updateDynamic("runtimeConfiguration")(runtimeConfiguration.asInstanceOf[js.Any])
+    if (versions != null) __obj.updateDynamic("versions")(versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidDeviceCatalog]
   }
 }

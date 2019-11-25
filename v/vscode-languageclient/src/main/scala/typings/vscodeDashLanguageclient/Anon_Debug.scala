@@ -14,7 +14,7 @@ trait Anon_Debug extends _ServerOptions {
 object Anon_Debug {
   @scala.inline
   def apply(debug: Executable, run: Executable): Anon_Debug = {
-    val __obj = js.Dynamic.literal(debug = debug, run = run)
+    val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], run = run.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Debug]
   }

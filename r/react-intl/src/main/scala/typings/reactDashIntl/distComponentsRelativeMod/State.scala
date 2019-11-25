@@ -14,8 +14,8 @@ trait State extends js.Object {
 object State {
   @scala.inline
   def apply(currentValueInSeconds: Double, prevUnit: Unit = null, prevValue: Int | Double = null): State = {
-    val __obj = js.Dynamic.literal(currentValueInSeconds = currentValueInSeconds)
-    if (prevUnit != null) __obj.updateDynamic("prevUnit")(prevUnit)
+    val __obj = js.Dynamic.literal(currentValueInSeconds = currentValueInSeconds.asInstanceOf[js.Any])
+    if (prevUnit != null) __obj.updateDynamic("prevUnit")(prevUnit.asInstanceOf[js.Any])
     if (prevValue != null) __obj.updateDynamic("prevValue")(prevValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }

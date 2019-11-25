@@ -27,11 +27,11 @@ object PlayerExperienceInfo {
     nextLevel: PlayerLevel = null
   ): PlayerExperienceInfo = {
     val __obj = js.Dynamic.literal()
-    if (currentExperiencePoints != null) __obj.updateDynamic("currentExperiencePoints")(currentExperiencePoints)
-    if (currentLevel != null) __obj.updateDynamic("currentLevel")(currentLevel)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (lastLevelUpTimestampMillis != null) __obj.updateDynamic("lastLevelUpTimestampMillis")(lastLevelUpTimestampMillis)
-    if (nextLevel != null) __obj.updateDynamic("nextLevel")(nextLevel)
+    if (currentExperiencePoints != null) __obj.updateDynamic("currentExperiencePoints")(currentExperiencePoints.asInstanceOf[js.Any])
+    if (currentLevel != null) __obj.updateDynamic("currentLevel")(currentLevel.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (lastLevelUpTimestampMillis != null) __obj.updateDynamic("lastLevelUpTimestampMillis")(lastLevelUpTimestampMillis.asInstanceOf[js.Any])
+    if (nextLevel != null) __obj.updateDynamic("nextLevel")(nextLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayerExperienceInfo]
   }
 }

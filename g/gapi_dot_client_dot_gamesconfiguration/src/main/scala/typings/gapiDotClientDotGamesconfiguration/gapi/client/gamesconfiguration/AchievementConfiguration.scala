@@ -47,14 +47,14 @@ object AchievementConfiguration {
     token: String = null
   ): AchievementConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (achievementType != null) __obj.updateDynamic("achievementType")(achievementType)
-    if (draft != null) __obj.updateDynamic("draft")(draft)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (initialState != null) __obj.updateDynamic("initialState")(initialState)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (published != null) __obj.updateDynamic("published")(published)
+    if (achievementType != null) __obj.updateDynamic("achievementType")(achievementType.asInstanceOf[js.Any])
+    if (draft != null) __obj.updateDynamic("draft")(draft.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (published != null) __obj.updateDynamic("published")(published.asInstanceOf[js.Any])
     if (stepsToUnlock != null) __obj.updateDynamic("stepsToUnlock")(stepsToUnlock.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token)
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[AchievementConfiguration]
   }
 }

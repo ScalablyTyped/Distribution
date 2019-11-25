@@ -49,9 +49,9 @@ object NavigationLeafRoute {
     params: Params = null,
     path: String = null
   ): NavigationLeafRoute[Params] = {
-    val __obj = js.Dynamic.literal(index = index, isTransitioning = isTransitioning, key = key, routeName = routeName, routes = routes)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], isTransitioning = isTransitioning.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeName = routeName.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationLeafRoute[Params]]
   }
 }

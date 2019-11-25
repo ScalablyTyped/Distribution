@@ -36,8 +36,8 @@ trait ShareButtonData extends js.Object {
 object ShareButtonData {
   @scala.inline
   def apply(id: String, label: String, url: String, download: js.UndefOr[Boolean] = js.undefined): ShareButtonData = {
-    val __obj = js.Dynamic.literal(id = id, label = label, url = url)
-    if (!js.isUndefined(download)) __obj.updateDynamic("download")(download)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (!js.isUndefined(download)) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareButtonData]
   }
 }

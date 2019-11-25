@@ -13,7 +13,7 @@ trait CandidateWindowParameter extends js.Object {
 object CandidateWindowParameter {
   @scala.inline
   def apply(engineID: String, properties: CandidateWindowParameterProperties): CandidateWindowParameter = {
-    val __obj = js.Dynamic.literal(engineID = engineID, properties = properties)
+    val __obj = js.Dynamic.literal(engineID = engineID.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CandidateWindowParameter]
   }

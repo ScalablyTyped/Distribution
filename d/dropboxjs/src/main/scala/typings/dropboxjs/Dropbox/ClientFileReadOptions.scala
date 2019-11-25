@@ -30,15 +30,15 @@ object ClientFileReadOptions {
     versionTag: String = null
   ): ClientFileReadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrayBuffer)) __obj.updateDynamic("arrayBuffer")(arrayBuffer)
-    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
-    if (!js.isUndefined(blob)) __obj.updateDynamic("blob")(blob)
-    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer)
-    if (!js.isUndefined(httpCache)) __obj.updateDynamic("httpCache")(httpCache)
+    if (!js.isUndefined(arrayBuffer)) __obj.updateDynamic("arrayBuffer")(arrayBuffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary.asInstanceOf[js.Any])
+    if (!js.isUndefined(blob)) __obj.updateDynamic("blob")(blob.asInstanceOf[js.Any])
+    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpCache)) __obj.updateDynamic("httpCache")(httpCache.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (rev != null) __obj.updateDynamic("rev")(rev)
+    if (rev != null) __obj.updateDynamic("rev")(rev.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (versionTag != null) __obj.updateDynamic("versionTag")(versionTag)
+    if (versionTag != null) __obj.updateDynamic("versionTag")(versionTag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientFileReadOptions]
   }
 }

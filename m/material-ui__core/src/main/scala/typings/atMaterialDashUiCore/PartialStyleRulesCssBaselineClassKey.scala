@@ -14,7 +14,7 @@ object PartialStyleRulesCssBaselineClassKey {
   @scala.inline
   def apply(`@global`: CSSProperties = null): PartialStyleRulesCssBaselineClassKey = {
     val __obj = js.Dynamic.literal()
-    if (`@global` != null) __obj.updateDynamic("@global")(`@global`)
+    if (`@global` != null) __obj.updateDynamic("@global")(`@global`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesCssBaselineClassKey]
   }
 }

@@ -29,11 +29,11 @@ object Anon_FontFamilyFontSizeFontWeightLetterSpacingLineHeightMediaminwidth42re
     letterSpacing: Double,
     lineHeight: String
   ): Anon_FontFamilyFontSizeFontWeightLetterSpacingLineHeightMediaminwidth42remMediaminwidth66remMediaminwidth82rem = {
-    val __obj = js.Dynamic.literal(fontFamily = fontFamily, fontSize = fontSize, fontWeight = fontWeight, letterSpacing = letterSpacing, lineHeight = lineHeight)
-    __obj.updateDynamic("@media (min-width: 42rem)")(`@media (min-width: 42rem)`)
-    __obj.updateDynamic("@media (min-width: 66rem)")(`@media (min-width: 66rem)`)
-    __obj.updateDynamic("@media (min-width: 82rem)")(`@media (min-width: 82rem)`)
-    __obj.updateDynamic("@media (min-width: 99rem)")(`@media (min-width: 99rem)`)
+    val __obj = js.Dynamic.literal(fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any])
+    __obj.updateDynamic("@media (min-width: 42rem)")(`@media (min-width: 42rem)`.asInstanceOf[js.Any])
+    __obj.updateDynamic("@media (min-width: 66rem)")(`@media (min-width: 66rem)`.asInstanceOf[js.Any])
+    __obj.updateDynamic("@media (min-width: 82rem)")(`@media (min-width: 82rem)`.asInstanceOf[js.Any])
+    __obj.updateDynamic("@media (min-width: 99rem)")(`@media (min-width: 99rem)`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FontFamilyFontSizeFontWeightLetterSpacingLineHeightMediaminwidth42remMediaminwidth66remMediaminwidth82rem]
   }
 }

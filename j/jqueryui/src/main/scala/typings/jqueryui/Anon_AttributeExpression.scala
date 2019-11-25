@@ -15,9 +15,9 @@ object Anon_AttributeExpression {
   @scala.inline
   def apply(attribute: String = null, expression: RegExp = null, key: String = null): Anon_AttributeExpression = {
     val __obj = js.Dynamic.literal()
-    if (attribute != null) __obj.updateDynamic("attribute")(attribute)
-    if (expression != null) __obj.updateDynamic("expression")(expression)
-    if (key != null) __obj.updateDynamic("key")(key)
+    if (attribute != null) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
+    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AttributeExpression]
   }
 }

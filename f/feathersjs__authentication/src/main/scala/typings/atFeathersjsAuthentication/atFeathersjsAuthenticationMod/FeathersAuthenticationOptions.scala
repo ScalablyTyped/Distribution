@@ -30,14 +30,14 @@ object FeathersAuthenticationOptions {
     session: js.UndefOr[Boolean] = js.undefined
   ): FeathersAuthenticationOptions = {
     val __obj = js.Dynamic.literal()
-    if (cookie != null) __obj.updateDynamic("cookie")(cookie)
-    if (entity != null) __obj.updateDynamic("entity")(entity)
-    if (header != null) __obj.updateDynamic("header")(header)
-    if (jwt != null) __obj.updateDynamic("jwt")(jwt)
-    if (!js.isUndefined(passReqToCallback)) __obj.updateDynamic("passReqToCallback")(passReqToCallback)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (service != null) __obj.updateDynamic("service")(service)
-    if (!js.isUndefined(session)) __obj.updateDynamic("session")(session)
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
+    if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (jwt != null) __obj.updateDynamic("jwt")(jwt.asInstanceOf[js.Any])
+    if (!js.isUndefined(passReqToCallback)) __obj.updateDynamic("passReqToCallback")(passReqToCallback.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
+    if (!js.isUndefined(session)) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeathersAuthenticationOptions]
   }
 }

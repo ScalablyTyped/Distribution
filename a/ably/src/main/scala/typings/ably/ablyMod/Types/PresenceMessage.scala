@@ -25,7 +25,7 @@ object PresenceMessage {
     id: String,
     timestamp: Double
   ): PresenceMessage = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], clientId = clientId, connectionId = connectionId, data = data, encoding = encoding, id = id, timestamp = timestamp)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], connectionId = connectionId.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PresenceMessage]
   }

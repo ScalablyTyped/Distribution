@@ -28,10 +28,10 @@ object ImageMediaInfoProperties {
     value: ImageMediaInfoValueProperties = null
   ): ImageMediaInfoProperties = {
     val __obj = js.Dynamic.literal()
-    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageMediaInfoProperties]
   }
 }

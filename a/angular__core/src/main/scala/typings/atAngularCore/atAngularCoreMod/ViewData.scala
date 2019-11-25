@@ -42,12 +42,12 @@ object ViewData {
     parentNodeDef: NodeDef = null,
     viewContainerParent: ViewData = null
   ): ViewData = {
-    val __obj = js.Dynamic.literal(component = component, context = context, initIndex = initIndex, nodes = nodes, oldValues = oldValues, renderer = renderer, root = root, state = state)
-    __obj.updateDynamic("def")(`def`)
-    if (disposables != null) __obj.updateDynamic("disposables")(disposables)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (parentNodeDef != null) __obj.updateDynamic("parentNodeDef")(parentNodeDef)
-    if (viewContainerParent != null) __obj.updateDynamic("viewContainerParent")(viewContainerParent)
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], initIndex = initIndex.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], oldValues = oldValues.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    __obj.updateDynamic("def")(`def`.asInstanceOf[js.Any])
+    if (disposables != null) __obj.updateDynamic("disposables")(disposables.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (parentNodeDef != null) __obj.updateDynamic("parentNodeDef")(parentNodeDef.asInstanceOf[js.Any])
+    if (viewContainerParent != null) __obj.updateDynamic("viewContainerParent")(viewContainerParent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewData]
   }
 }

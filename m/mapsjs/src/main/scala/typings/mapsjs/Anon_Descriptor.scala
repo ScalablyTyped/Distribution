@@ -44,21 +44,21 @@ object Anon_Descriptor {
     visible: js.UndefOr[Boolean] = js.undefined
   ): Anon_Descriptor = {
     val __obj = js.Dynamic.literal()
-    if (descriptor != null) __obj.updateDynamic("descriptor")(descriptor)
-    if (!js.isUndefined(enableTileFadeIn)) __obj.updateDynamic("enableTileFadeIn")(enableTileFadeIn)
+    if (descriptor != null) __obj.updateDynamic("descriptor")(descriptor.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTileFadeIn)) __obj.updateDynamic("enableTileFadeIn")(enableTileFadeIn.asInstanceOf[js.Any])
     if (maxConcurrentRequests != null) __obj.updateDynamic("maxConcurrentRequests")(maxConcurrentRequests.asInstanceOf[js.Any])
     if (maxZoomLevel != null) __obj.updateDynamic("maxZoomLevel")(maxZoomLevel.asInstanceOf[js.Any])
     if (minZoomLevel != null) __obj.updateDynamic("minZoomLevel")(minZoomLevel.asInstanceOf[js.Any])
     if (notifyErrorAction != null) __obj.updateDynamic("notifyErrorAction")(js.Any.fromFunction1(notifyErrorAction))
     if (notifyLoadingQueueHasEmptiedAction != null) __obj.updateDynamic("notifyLoadingQueueHasEmptiedAction")(js.Any.fromFunction0(notifyLoadingQueueHasEmptiedAction))
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
-    if (requestProcessor != null) __obj.updateDynamic("requestProcessor")(requestProcessor)
-    if (requestor != null) __obj.updateDynamic("requestor")(requestor)
-    if (!js.isUndefined(retainInterlevelContent)) __obj.updateDynamic("retainInterlevelContent")(retainInterlevelContent)
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
+    if (requestProcessor != null) __obj.updateDynamic("requestProcessor")(requestProcessor.asInstanceOf[js.Any])
+    if (requestor != null) __obj.updateDynamic("requestor")(requestor.asInstanceOf[js.Any])
+    if (!js.isUndefined(retainInterlevelContent)) __obj.updateDynamic("retainInterlevelContent")(retainInterlevelContent.asInstanceOf[js.Any])
     if (tileBleedPix != null) __obj.updateDynamic("tileBleedPix")(tileBleedPix.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBackdrop)) __obj.updateDynamic("useBackdrop")(useBackdrop)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(useBackdrop)) __obj.updateDynamic("useBackdrop")(useBackdrop.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Descriptor]
   }
 }

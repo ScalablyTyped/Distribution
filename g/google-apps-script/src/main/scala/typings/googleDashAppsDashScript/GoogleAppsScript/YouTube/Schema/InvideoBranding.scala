@@ -22,11 +22,11 @@ object InvideoBranding {
     timing: InvideoTiming = null
   ): InvideoBranding = {
     val __obj = js.Dynamic.literal()
-    if (imageBytes != null) __obj.updateDynamic("imageBytes")(imageBytes)
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (targetChannelId != null) __obj.updateDynamic("targetChannelId")(targetChannelId)
-    if (timing != null) __obj.updateDynamic("timing")(timing)
+    if (imageBytes != null) __obj.updateDynamic("imageBytes")(imageBytes.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (targetChannelId != null) __obj.updateDynamic("targetChannelId")(targetChannelId.asInstanceOf[js.Any])
+    if (timing != null) __obj.updateDynamic("timing")(timing.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvideoBranding]
   }
 }

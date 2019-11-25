@@ -45,7 +45,7 @@ object DatabaseGetResponse {
     sizes: Anon_Active,
     update_seq: Double
   ): DatabaseGetResponse = {
-    val __obj = js.Dynamic.literal(compact_running = compact_running, data_size = data_size, db_name = db_name, disk_format_version = disk_format_version, disk_size = disk_size, doc_count = doc_count, doc_del_count = doc_del_count, instance_start_time = instance_start_time, purge_seq = purge_seq, sizes = sizes, update_seq = update_seq)
+    val __obj = js.Dynamic.literal(compact_running = compact_running.asInstanceOf[js.Any], data_size = data_size.asInstanceOf[js.Any], db_name = db_name.asInstanceOf[js.Any], disk_format_version = disk_format_version.asInstanceOf[js.Any], disk_size = disk_size.asInstanceOf[js.Any], doc_count = doc_count.asInstanceOf[js.Any], doc_del_count = doc_del_count.asInstanceOf[js.Any], instance_start_time = instance_start_time.asInstanceOf[js.Any], purge_seq = purge_seq.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any], update_seq = update_seq.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DatabaseGetResponse]
   }

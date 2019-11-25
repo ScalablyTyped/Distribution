@@ -23,10 +23,10 @@ object Election {
   @scala.inline
   def apply(electionDay: String = null, id: String = null, name: String = null, ocdDivisionId: String = null): Election = {
     val __obj = js.Dynamic.literal()
-    if (electionDay != null) __obj.updateDynamic("electionDay")(electionDay)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (ocdDivisionId != null) __obj.updateDynamic("ocdDivisionId")(ocdDivisionId)
+    if (electionDay != null) __obj.updateDynamic("electionDay")(electionDay.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (ocdDivisionId != null) __obj.updateDynamic("ocdDivisionId")(ocdDivisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Election]
   }
 }

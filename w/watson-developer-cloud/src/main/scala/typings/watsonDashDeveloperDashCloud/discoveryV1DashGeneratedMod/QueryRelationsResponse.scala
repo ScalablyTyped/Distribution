@@ -14,7 +14,7 @@ object QueryRelationsResponse {
   @scala.inline
   def apply(relations: js.Array[QueryRelationsRelationship] = null): QueryRelationsResponse = {
     val __obj = js.Dynamic.literal()
-    if (relations != null) __obj.updateDynamic("relations")(relations)
+    if (relations != null) __obj.updateDynamic("relations")(relations.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryRelationsResponse]
   }
 }

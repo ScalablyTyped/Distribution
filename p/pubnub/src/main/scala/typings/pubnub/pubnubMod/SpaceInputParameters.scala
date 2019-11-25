@@ -22,10 +22,10 @@ object SpaceInputParameters {
     description: String = null,
     include: Anon_CustomFields = null
   ): SpaceInputParameters = {
-    val __obj = js.Dynamic.literal(id = id, name = name)
-    if (custom != null) __obj.updateDynamic("custom")(custom)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (include != null) __obj.updateDynamic("include")(include)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpaceInputParameters]
   }
 }

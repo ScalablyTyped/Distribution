@@ -14,8 +14,8 @@ object Anon_Accesstoken {
   @scala.inline
   def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, access_token: String = null): Anon_Accesstoken = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Accesstoken]
   }
 }

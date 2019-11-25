@@ -21,7 +21,7 @@ object Anon_AlignItemsBackgroundColorFlexDirectionHeight {
     height: Double,
     overflow: String
   ): Anon_AlignItemsBackgroundColorFlexDirectionHeight = {
-    val __obj = js.Dynamic.literal(alignItems = alignItems, backgroundColor = backgroundColor, flexDirection = flexDirection, height = height, overflow = overflow)
+    val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], flexDirection = flexDirection.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AlignItemsBackgroundColorFlexDirectionHeight]
   }

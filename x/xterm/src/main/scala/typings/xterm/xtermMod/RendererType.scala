@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait RendererType extends js.Object
 
+object RendererType {
+  @scala.inline
+  def canvas: typings.xterm.xtermStrings.canvas = this.cast("canvas")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def dom: typings.xterm.xtermStrings.dom = this.cast("dom")
+}
+

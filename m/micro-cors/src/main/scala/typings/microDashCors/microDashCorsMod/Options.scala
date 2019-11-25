@@ -22,11 +22,11 @@ object Options {
     origin: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (allowHeaders != null) __obj.updateDynamic("allowHeaders")(allowHeaders)
-    if (allowMethods != null) __obj.updateDynamic("allowMethods")(allowMethods)
-    if (exposeHeaders != null) __obj.updateDynamic("exposeHeaders")(exposeHeaders)
-    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (allowHeaders != null) __obj.updateDynamic("allowHeaders")(allowHeaders.asInstanceOf[js.Any])
+    if (allowMethods != null) __obj.updateDynamic("allowMethods")(allowMethods.asInstanceOf[js.Any])
+    if (exposeHeaders != null) __obj.updateDynamic("exposeHeaders")(exposeHeaders.asInstanceOf[js.Any])
+    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

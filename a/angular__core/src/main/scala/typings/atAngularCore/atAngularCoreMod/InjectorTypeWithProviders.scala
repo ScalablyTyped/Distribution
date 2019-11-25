@@ -29,8 +29,8 @@ object InjectorTypeWithProviders {
       Type[_] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[_]
     ] = null
   ): InjectorTypeWithProviders[T] = {
-    val __obj = js.Dynamic.literal(ngModule = ngModule)
-    if (providers != null) __obj.updateDynamic("providers")(providers)
+    val __obj = js.Dynamic.literal(ngModule = ngModule.asInstanceOf[js.Any])
+    if (providers != null) __obj.updateDynamic("providers")(providers.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectorTypeWithProviders[T]]
   }
 }

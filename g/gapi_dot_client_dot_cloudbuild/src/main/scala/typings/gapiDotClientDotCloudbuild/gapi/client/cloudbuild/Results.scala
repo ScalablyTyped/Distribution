@@ -15,8 +15,8 @@ object Results {
   @scala.inline
   def apply(buildStepImages: js.Array[String] = null, images: js.Array[BuiltImage] = null): Results = {
     val __obj = js.Dynamic.literal()
-    if (buildStepImages != null) __obj.updateDynamic("buildStepImages")(buildStepImages)
-    if (images != null) __obj.updateDynamic("images")(images)
+    if (buildStepImages != null) __obj.updateDynamic("buildStepImages")(buildStepImages.asInstanceOf[js.Any])
+    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
     __obj.asInstanceOf[Results]
   }
 }

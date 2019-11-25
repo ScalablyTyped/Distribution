@@ -37,10 +37,10 @@ object StackFrame {
     threadId: Int | Double = null
   ): StackFrame = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (module != null) __obj.updateDynamic("module")(module)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (threadId != null) __obj.updateDynamic("threadId")(threadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackFrame]
   }

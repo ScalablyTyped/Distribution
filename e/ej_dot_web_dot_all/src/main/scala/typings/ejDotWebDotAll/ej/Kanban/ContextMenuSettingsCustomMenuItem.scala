@@ -24,8 +24,8 @@ object ContextMenuSettingsCustomMenuItem {
   def apply(target: Target | String = null, template: String = null, text: String = null): ContextMenuSettingsCustomMenuItem = {
     val __obj = js.Dynamic.literal()
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuSettingsCustomMenuItem]
   }
 }

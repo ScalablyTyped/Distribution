@@ -23,11 +23,11 @@ object VastCreative {
     id: String = null,
     sequence: String | Double = null
   ): VastCreative = {
-    val __obj = js.Dynamic.literal(trackingEvents = trackingEvents)
-    __obj.updateDynamic("type")(`type`)
-    if (adId != null) __obj.updateDynamic("adId")(adId)
-    if (apiFramework != null) __obj.updateDynamic("apiFramework")(apiFramework)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(trackingEvents = trackingEvents.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (adId != null) __obj.updateDynamic("adId")(adId.asInstanceOf[js.Any])
+    if (apiFramework != null) __obj.updateDynamic("apiFramework")(apiFramework.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (sequence != null) __obj.updateDynamic("sequence")(sequence.asInstanceOf[js.Any])
     __obj.asInstanceOf[VastCreative]
   }

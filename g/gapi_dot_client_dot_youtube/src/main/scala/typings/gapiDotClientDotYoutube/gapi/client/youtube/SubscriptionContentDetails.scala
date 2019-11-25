@@ -21,7 +21,7 @@ object SubscriptionContentDetails {
     totalItemCount: Int | Double = null
   ): SubscriptionContentDetails = {
     val __obj = js.Dynamic.literal()
-    if (activityType != null) __obj.updateDynamic("activityType")(activityType)
+    if (activityType != null) __obj.updateDynamic("activityType")(activityType.asInstanceOf[js.Any])
     if (newItemCount != null) __obj.updateDynamic("newItemCount")(newItemCount.asInstanceOf[js.Any])
     if (totalItemCount != null) __obj.updateDynamic("totalItemCount")(totalItemCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionContentDetails]

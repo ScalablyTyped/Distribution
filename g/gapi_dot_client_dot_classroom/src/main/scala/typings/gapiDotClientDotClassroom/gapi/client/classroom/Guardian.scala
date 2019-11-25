@@ -27,10 +27,10 @@ object Guardian {
     studentId: String = null
   ): Guardian = {
     val __obj = js.Dynamic.literal()
-    if (guardianId != null) __obj.updateDynamic("guardianId")(guardianId)
-    if (guardianProfile != null) __obj.updateDynamic("guardianProfile")(guardianProfile)
-    if (invitedEmailAddress != null) __obj.updateDynamic("invitedEmailAddress")(invitedEmailAddress)
-    if (studentId != null) __obj.updateDynamic("studentId")(studentId)
+    if (guardianId != null) __obj.updateDynamic("guardianId")(guardianId.asInstanceOf[js.Any])
+    if (guardianProfile != null) __obj.updateDynamic("guardianProfile")(guardianProfile.asInstanceOf[js.Any])
+    if (invitedEmailAddress != null) __obj.updateDynamic("invitedEmailAddress")(invitedEmailAddress.asInstanceOf[js.Any])
+    if (studentId != null) __obj.updateDynamic("studentId")(studentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Guardian]
   }
 }

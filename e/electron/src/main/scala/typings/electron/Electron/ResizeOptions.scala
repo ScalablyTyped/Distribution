@@ -28,7 +28,7 @@ object ResizeOptions {
   def apply(height: Int | Double = null, quality: String = null, width: Int | Double = null): ResizeOptions = {
     val __obj = js.Dynamic.literal()
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality)
+    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeOptions]
   }

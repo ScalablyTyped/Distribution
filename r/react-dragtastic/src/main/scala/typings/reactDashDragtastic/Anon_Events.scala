@@ -13,7 +13,7 @@ trait Anon_Events extends js.Object {
 object Anon_Events {
   @scala.inline
   def apply(events: Anon_OnMouseDown, isActive: Boolean): Anon_Events = {
-    val __obj = js.Dynamic.literal(events = events, isActive = isActive)
+    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Events]
   }

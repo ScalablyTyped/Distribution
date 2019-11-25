@@ -24,10 +24,10 @@ object ClassifiedImages {
     images_processed: Int | Double = null,
     warnings: js.Array[WarningInfo] = null
   ): ClassifiedImages = {
-    val __obj = js.Dynamic.literal(images = images)
+    val __obj = js.Dynamic.literal(images = images.asInstanceOf[js.Any])
     if (custom_classes != null) __obj.updateDynamic("custom_classes")(custom_classes.asInstanceOf[js.Any])
     if (images_processed != null) __obj.updateDynamic("images_processed")(images_processed.asInstanceOf[js.Any])
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifiedImages]
   }
 }

@@ -16,7 +16,7 @@ trait QRCodeSegment extends js.Object {
 object QRCodeSegment {
   @scala.inline
   def apply(data: String, mode: alphanumeric | numeric | kanji | byte): QRCodeSegment = {
-    val __obj = js.Dynamic.literal(data = data, mode = mode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QRCodeSegment]
   }

@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 object Consolidate {
   @scala.inline
   def apply(clearCache: () => Unit, requires: RequiresType): Consolidate = {
-    val __obj = js.Dynamic.literal(clearCache = js.Any.fromFunction0(clearCache), requires = requires)
+    val __obj = js.Dynamic.literal(clearCache = js.Any.fromFunction0(clearCache), requires = requires.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Consolidate]
   }

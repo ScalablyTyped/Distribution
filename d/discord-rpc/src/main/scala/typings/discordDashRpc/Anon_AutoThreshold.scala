@@ -14,7 +14,7 @@ trait Anon_AutoThreshold extends js.Object {
 object Anon_AutoThreshold {
   @scala.inline
   def apply(autoThreshold: Boolean, delay: Double, shortcut: js.Array[Anon_Code], threshold: Double): Anon_AutoThreshold = {
-    val __obj = js.Dynamic.literal(autoThreshold = autoThreshold, delay = delay, shortcut = shortcut, threshold = threshold)
+    val __obj = js.Dynamic.literal(autoThreshold = autoThreshold.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], shortcut = shortcut.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AutoThreshold]
   }

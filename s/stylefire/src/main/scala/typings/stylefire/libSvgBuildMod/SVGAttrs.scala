@@ -15,8 +15,8 @@ object SVGAttrs {
   @scala.inline
   def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, style: Anon_Transform = null): SVGAttrs = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGAttrs]
   }
 }

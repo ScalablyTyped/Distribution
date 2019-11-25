@@ -20,10 +20,10 @@ object ITimelineDate {
     classname: String = null,
     tag: String = null
   ): ITimelineDate = {
-    val __obj = js.Dynamic.literal(endDate = endDate, headline = headline, startDate = startDate, text = text)
-    if (asset != null) __obj.updateDynamic("asset")(asset)
-    if (classname != null) __obj.updateDynamic("classname")(classname)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(endDate = endDate.asInstanceOf[js.Any], headline = headline.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    if (asset != null) __obj.updateDynamic("asset")(asset.asInstanceOf[js.Any])
+    if (classname != null) __obj.updateDynamic("classname")(classname.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimelineDate]
   }
 }

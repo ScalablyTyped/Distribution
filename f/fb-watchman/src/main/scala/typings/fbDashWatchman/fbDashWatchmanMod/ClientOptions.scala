@@ -17,7 +17,7 @@ object ClientOptions {
   @scala.inline
   def apply(watchmanBinaryPath: String = null): ClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (watchmanBinaryPath != null) __obj.updateDynamic("watchmanBinaryPath")(watchmanBinaryPath)
+    if (watchmanBinaryPath != null) __obj.updateDynamic("watchmanBinaryPath")(watchmanBinaryPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
 }

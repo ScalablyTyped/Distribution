@@ -1,9 +1,6 @@
 package typings.dojo.dojox.form
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dojoStrings.dropDown
 import typings.dojo.dojoStrings.invalidMessage
 import typings.dojo.dojoStrings.labelText
@@ -112,14 +109,54 @@ class CheckedMultiSelect ()
     */
   def validator(): js.Any = js.native
   @JSName("watch")
-  def watch_dropDown(property: dropDown, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_dropDown(
+    property: dropDown,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_invalidMessage(property: invalidMessage, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_invalidMessage(
+    property: invalidMessage,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_labelText(property: labelText, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_labelText(
+    property: labelText,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_required(property: required, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_required(
+    property: required,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_tooltipPosition(property: tooltipPosition, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_tooltipPosition(
+    property: tooltipPosition,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

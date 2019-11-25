@@ -11,7 +11,7 @@ trait Anon_Iban extends js.Object {
 object Anon_Iban {
   @scala.inline
   def apply(iban: String): Anon_Iban = {
-    val __obj = js.Dynamic.literal(iban = iban)
+    val __obj = js.Dynamic.literal(iban = iban.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Iban]
   }

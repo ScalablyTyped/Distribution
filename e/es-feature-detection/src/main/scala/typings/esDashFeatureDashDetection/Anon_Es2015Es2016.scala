@@ -21,7 +21,7 @@ object Anon_Es2015Es2016 {
     es2016: Record[ES2016Syntax, Boolean],
     es2017: Record[ES2017Syntax, Boolean]
   ): Anon_Es2015Es2016 = {
-    val __obj = js.Dynamic.literal(es2015 = es2015, es2016 = es2016, es2017 = es2017)
+    val __obj = js.Dynamic.literal(es2015 = es2015.asInstanceOf[js.Any], es2016 = es2016.asInstanceOf[js.Any], es2017 = es2017.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Es2015Es2016]
   }

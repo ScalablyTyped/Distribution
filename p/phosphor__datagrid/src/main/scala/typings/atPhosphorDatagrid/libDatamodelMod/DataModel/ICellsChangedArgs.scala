@@ -49,8 +49,8 @@ object ICellsChangedArgs {
     rowSpan: Double,
     `type`: `cells-changed`
   ): ICellsChangedArgs = {
-    val __obj = js.Dynamic.literal(columnIndex = columnIndex, columnSpan = columnSpan, region = region, rowIndex = rowIndex, rowSpan = rowSpan)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], columnSpan = columnSpan.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any], rowSpan = rowSpan.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICellsChangedArgs]
   }
 }

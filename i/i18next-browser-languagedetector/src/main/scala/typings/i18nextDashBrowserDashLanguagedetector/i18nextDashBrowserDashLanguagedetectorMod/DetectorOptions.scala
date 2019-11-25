@@ -56,15 +56,15 @@ object DetectorOptions {
     order: js.Array[querystring | cookie | localStorage | navigator | htmlTag | String] = null
   ): DetectorOptions = {
     val __obj = js.Dynamic.literal()
-    if (caches != null) __obj.updateDynamic("caches")(caches)
-    if (cookieDomain != null) __obj.updateDynamic("cookieDomain")(cookieDomain)
+    if (caches != null) __obj.updateDynamic("caches")(caches.asInstanceOf[js.Any])
+    if (cookieDomain != null) __obj.updateDynamic("cookieDomain")(cookieDomain.asInstanceOf[js.Any])
     if (cookieMinutes != null) __obj.updateDynamic("cookieMinutes")(cookieMinutes.asInstanceOf[js.Any])
-    if (excludeCacheFor != null) __obj.updateDynamic("excludeCacheFor")(excludeCacheFor)
-    if (htmlTag != null) __obj.updateDynamic("htmlTag")(htmlTag)
-    if (lookupCookie != null) __obj.updateDynamic("lookupCookie")(lookupCookie)
-    if (lookupLocalStorage != null) __obj.updateDynamic("lookupLocalStorage")(lookupLocalStorage)
-    if (lookupQuerystring != null) __obj.updateDynamic("lookupQuerystring")(lookupQuerystring)
-    if (order != null) __obj.updateDynamic("order")(order)
+    if (excludeCacheFor != null) __obj.updateDynamic("excludeCacheFor")(excludeCacheFor.asInstanceOf[js.Any])
+    if (htmlTag != null) __obj.updateDynamic("htmlTag")(htmlTag.asInstanceOf[js.Any])
+    if (lookupCookie != null) __obj.updateDynamic("lookupCookie")(lookupCookie.asInstanceOf[js.Any])
+    if (lookupLocalStorage != null) __obj.updateDynamic("lookupLocalStorage")(lookupLocalStorage.asInstanceOf[js.Any])
+    if (lookupQuerystring != null) __obj.updateDynamic("lookupQuerystring")(lookupQuerystring.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectorOptions]
   }
 }

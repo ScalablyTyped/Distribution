@@ -20,7 +20,7 @@ trait DefaultTreeDocument extends DefaultTreeParentNode {
 object DefaultTreeDocument {
   @scala.inline
   def apply(childNodes: js.Array[DefaultTreeNode], mode: DocumentMode, nodeName: `#document`): DefaultTreeDocument = {
-    val __obj = js.Dynamic.literal(childNodes = childNodes, mode = mode, nodeName = nodeName)
+    val __obj = js.Dynamic.literal(childNodes = childNodes.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DefaultTreeDocument]
   }

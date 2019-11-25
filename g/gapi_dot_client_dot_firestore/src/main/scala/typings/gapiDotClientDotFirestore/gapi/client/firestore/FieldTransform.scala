@@ -18,8 +18,8 @@ object FieldTransform {
   @scala.inline
   def apply(fieldPath: String = null, setToServerValue: String = null): FieldTransform = {
     val __obj = js.Dynamic.literal()
-    if (fieldPath != null) __obj.updateDynamic("fieldPath")(fieldPath)
-    if (setToServerValue != null) __obj.updateDynamic("setToServerValue")(setToServerValue)
+    if (fieldPath != null) __obj.updateDynamic("fieldPath")(fieldPath.asInstanceOf[js.Any])
+    if (setToServerValue != null) __obj.updateDynamic("setToServerValue")(setToServerValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldTransform]
   }
 }

@@ -12,7 +12,7 @@ object csrfOptionsWhitelist {
   @scala.inline
   def apply(whitelist: js.Array[String] = null): csrfOptionsWhitelist = {
     val __obj = js.Dynamic.literal()
-    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist)
+    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[csrfOptionsWhitelist]
   }
 }

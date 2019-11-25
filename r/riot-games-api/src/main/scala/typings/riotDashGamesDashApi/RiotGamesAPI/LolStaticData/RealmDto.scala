@@ -30,7 +30,7 @@ object RealmDto {
     storage: String,
     v: String
   ): RealmDto = {
-    val __obj = js.Dynamic.literal(cdn = cdn, css = css, dd = dd, l = l, lg = lg, n = n, profileiconmax = profileiconmax, storage = storage, v = v)
+    val __obj = js.Dynamic.literal(cdn = cdn.asInstanceOf[js.Any], css = css.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], lg = lg.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], profileiconmax = profileiconmax.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RealmDto]
   }

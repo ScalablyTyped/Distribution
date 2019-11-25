@@ -21,8 +21,8 @@ object FindOptions {
   @scala.inline
   def apply(backward: js.UndefOr[Boolean] = js.undefined, matchCase: js.UndefOr[Boolean] = js.undefined): FindOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(backward)) __obj.updateDynamic("backward")(backward)
-    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase)
+    if (!js.isUndefined(backward)) __obj.updateDynamic("backward")(backward.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindOptions]
   }
 }

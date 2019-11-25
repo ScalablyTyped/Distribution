@@ -12,7 +12,7 @@ trait Anon_Docs[Content /* <: js.Object */] extends js.Object {
 object Anon_Docs {
   @scala.inline
   def apply[Content /* <: js.Object */](docs: js.Array[Anon_Ok[Content] | Anon_Error], id: String): Anon_Docs[Content] = {
-    val __obj = js.Dynamic.literal(docs = docs, id = id)
+    val __obj = js.Dynamic.literal(docs = docs.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Docs[Content]]
   }

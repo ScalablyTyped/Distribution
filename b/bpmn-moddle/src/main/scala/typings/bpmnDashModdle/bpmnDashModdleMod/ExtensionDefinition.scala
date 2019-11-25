@@ -17,7 +17,7 @@ object ExtensionDefinition {
     extensionAttributeDefinitions: js.Array[ExtensionAttributeDefinition],
     name: String
   ): ExtensionDefinition = {
-    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, extensionAttributeDefinitions = extensionAttributeDefinitions, name = name)
+    val __obj = js.Dynamic.literal($parent = $parent.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any], extensionAttributeDefinitions = extensionAttributeDefinitions.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExtensionDefinition]
   }

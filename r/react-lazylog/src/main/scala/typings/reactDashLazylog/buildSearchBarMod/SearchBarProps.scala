@@ -24,8 +24,8 @@ object SearchBarProps {
     resultsCount: Int | Double = null
   ): SearchBarProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(filterActive)) __obj.updateDynamic("filterActive")(filterActive)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterActive)) __obj.updateDynamic("filterActive")(filterActive.asInstanceOf[js.Any])
     if (onClearSearch != null) __obj.updateDynamic("onClearSearch")(js.Any.fromFunction0(onClearSearch))
     if (onFilterLinesWithMatches != null) __obj.updateDynamic("onFilterLinesWithMatches")(js.Any.fromFunction1(onFilterLinesWithMatches))
     if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction1(onSearch))

@@ -19,9 +19,9 @@ object Anon_Host {
     sandbox: js.UndefOr[Boolean] = js.undefined,
     token: js.UndefOr[Boolean] = js.undefined
   ): Anon_Host = {
-    val __obj = js.Dynamic.literal(host = host, port = port)
-    if (!js.isUndefined(sandbox)) __obj.updateDynamic("sandbox")(sandbox)
-    if (!js.isUndefined(token)) __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
+    if (!js.isUndefined(sandbox)) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
+    if (!js.isUndefined(token)) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Host]
   }
 }

@@ -22,9 +22,9 @@ trait ShowMessageRequestParams extends js.Object {
 object ShowMessageRequestParams {
   @scala.inline
   def apply(message: String, `type`: MessageType, actions: js.Array[MessageActionItem] = null): ShowMessageRequestParams = {
-    val __obj = js.Dynamic.literal(message = message)
-    __obj.updateDynamic("type")(`type`)
-    if (actions != null) __obj.updateDynamic("actions")(actions)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowMessageRequestParams]
   }
 }

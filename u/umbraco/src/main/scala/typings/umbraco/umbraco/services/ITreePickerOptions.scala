@@ -21,7 +21,7 @@ trait ITreePickerOptions extends js.Object {
 object ITreePickerOptions {
   @scala.inline
   def apply(callback: js.Function, multiPicker: Boolean, section: String, treeAlias: String): ITreePickerOptions = {
-    val __obj = js.Dynamic.literal(callback = callback, multiPicker = multiPicker, section = section, treeAlias = treeAlias)
+    val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], multiPicker = multiPicker.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], treeAlias = treeAlias.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITreePickerOptions]
   }

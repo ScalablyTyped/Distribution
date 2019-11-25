@@ -13,7 +13,7 @@ trait IResolvedFile extends js.Object {
 object IResolvedFile {
   @scala.inline
   def apply(importedFiles: js.Array[String], path: String, referencedFiles: js.Array[String]): IResolvedFile = {
-    val __obj = js.Dynamic.literal(importedFiles = importedFiles, path = path, referencedFiles = referencedFiles)
+    val __obj = js.Dynamic.literal(importedFiles = importedFiles.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], referencedFiles = referencedFiles.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IResolvedFile]
   }

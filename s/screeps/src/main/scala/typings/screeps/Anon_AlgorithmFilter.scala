@@ -13,7 +13,7 @@ object Anon_AlgorithmFilter {
   @scala.inline
   def apply(algorithm: String = null, filter: js.Any | String = null): Anon_AlgorithmFilter = {
     val __obj = js.Dynamic.literal()
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AlgorithmFilter]
   }

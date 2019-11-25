@@ -25,8 +25,8 @@ object Anon_AllFirstParty {
     public: Double,
     released: Double
   ): Anon_AllFirstParty = {
-    val __obj = js.Dynamic.literal(all = all, firstParty = firstParty, none = none, preview = preview, public = public, released = released)
-    __obj.updateDynamic("private")(`private`)
+    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], firstParty = firstParty.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], preview = preview.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any], released = released.asInstanceOf[js.Any])
+    __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AllFirstParty]
   }
 }

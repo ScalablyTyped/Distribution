@@ -20,12 +20,12 @@ object RecordOperation {
     status: OperationStatus = null
   ): RecordOperation = {
     val __obj = js.Dynamic.literal()
-    if (clientContext != null) __obj.updateDynamic("clientContext")(clientContext)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (recordingAccessToken != null) __obj.updateDynamic("recordingAccessToken")(recordingAccessToken)
-    if (recordingLocation != null) __obj.updateDynamic("recordingLocation")(recordingLocation)
-    if (resultInfo != null) __obj.updateDynamic("resultInfo")(resultInfo)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (clientContext != null) __obj.updateDynamic("clientContext")(clientContext.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (recordingAccessToken != null) __obj.updateDynamic("recordingAccessToken")(recordingAccessToken.asInstanceOf[js.Any])
+    if (recordingLocation != null) __obj.updateDynamic("recordingLocation")(recordingLocation.asInstanceOf[js.Any])
+    if (resultInfo != null) __obj.updateDynamic("resultInfo")(resultInfo.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordOperation]
   }
 }

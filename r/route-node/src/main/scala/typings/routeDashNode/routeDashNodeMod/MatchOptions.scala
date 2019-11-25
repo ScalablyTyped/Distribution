@@ -25,12 +25,12 @@ object MatchOptions {
     trailingSlashMode: TrailingSlashMode = null
   ): MatchOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
-    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams)
-    if (queryParamsMode != null) __obj.updateDynamic("queryParamsMode")(queryParamsMode)
-    if (!js.isUndefined(strictTrailingSlash)) __obj.updateDynamic("strictTrailingSlash")(strictTrailingSlash)
-    if (!js.isUndefined(strongMatching)) __obj.updateDynamic("strongMatching")(strongMatching)
-    if (trailingSlashMode != null) __obj.updateDynamic("trailingSlashMode")(trailingSlashMode)
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.asInstanceOf[js.Any])
+    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
+    if (queryParamsMode != null) __obj.updateDynamic("queryParamsMode")(queryParamsMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictTrailingSlash)) __obj.updateDynamic("strictTrailingSlash")(strictTrailingSlash.asInstanceOf[js.Any])
+    if (!js.isUndefined(strongMatching)) __obj.updateDynamic("strongMatching")(strongMatching.asInstanceOf[js.Any])
+    if (trailingSlashMode != null) __obj.updateDynamic("trailingSlashMode")(trailingSlashMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchOptions]
   }
 }

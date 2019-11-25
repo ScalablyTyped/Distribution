@@ -24,9 +24,9 @@ object ISetupIntentSessionSubset {
   @scala.inline
   def apply(description: String = null, metadata: IMetadata = null, on_behalf_of: String = null): ISetupIntentSessionSubset = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISetupIntentSessionSubset]
   }
 }

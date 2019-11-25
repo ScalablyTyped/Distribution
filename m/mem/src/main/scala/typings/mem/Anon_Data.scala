@@ -12,7 +12,7 @@ trait Anon_Data[ReturnType] extends js.Object {
 object Anon_Data {
   @scala.inline
   def apply[ReturnType](data: ReturnType, maxAge: Double): Anon_Data[ReturnType] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], maxAge = maxAge)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], maxAge = maxAge.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Data[ReturnType]]
   }

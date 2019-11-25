@@ -18,9 +18,9 @@ object ToISOTimeOptions {
     suppressSeconds: js.UndefOr[Boolean] = js.undefined
   ): ToISOTimeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeOffset)) __obj.updateDynamic("includeOffset")(includeOffset)
-    if (!js.isUndefined(suppressMilliseconds)) __obj.updateDynamic("suppressMilliseconds")(suppressMilliseconds)
-    if (!js.isUndefined(suppressSeconds)) __obj.updateDynamic("suppressSeconds")(suppressSeconds)
+    if (!js.isUndefined(includeOffset)) __obj.updateDynamic("includeOffset")(includeOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressMilliseconds)) __obj.updateDynamic("suppressMilliseconds")(suppressMilliseconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressSeconds)) __obj.updateDynamic("suppressSeconds")(suppressSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToISOTimeOptions]
   }
 }

@@ -38,12 +38,12 @@ object NonComplianceDetail {
     settingName: String = null
   ): NonComplianceDetail = {
     val __obj = js.Dynamic.literal()
-    if (currentValue != null) __obj.updateDynamic("currentValue")(currentValue)
-    if (fieldPath != null) __obj.updateDynamic("fieldPath")(fieldPath)
-    if (installationFailureReason != null) __obj.updateDynamic("installationFailureReason")(installationFailureReason)
-    if (nonComplianceReason != null) __obj.updateDynamic("nonComplianceReason")(nonComplianceReason)
-    if (packageName != null) __obj.updateDynamic("packageName")(packageName)
-    if (settingName != null) __obj.updateDynamic("settingName")(settingName)
+    if (currentValue != null) __obj.updateDynamic("currentValue")(currentValue.asInstanceOf[js.Any])
+    if (fieldPath != null) __obj.updateDynamic("fieldPath")(fieldPath.asInstanceOf[js.Any])
+    if (installationFailureReason != null) __obj.updateDynamic("installationFailureReason")(installationFailureReason.asInstanceOf[js.Any])
+    if (nonComplianceReason != null) __obj.updateDynamic("nonComplianceReason")(nonComplianceReason.asInstanceOf[js.Any])
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
+    if (settingName != null) __obj.updateDynamic("settingName")(settingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[NonComplianceDetail]
   }
 }

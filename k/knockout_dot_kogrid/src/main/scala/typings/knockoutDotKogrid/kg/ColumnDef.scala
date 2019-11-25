@@ -53,18 +53,18 @@ object ColumnDef {
     sortable: js.UndefOr[Boolean] = js.undefined,
     width: String = null
   ): ColumnDef = {
-    val __obj = js.Dynamic.literal(field = field)
-    if (cellClass != null) __obj.updateDynamic("cellClass")(cellClass)
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
+    if (cellClass != null) __obj.updateDynamic("cellClass")(cellClass.asInstanceOf[js.Any])
     if (cellFormatter != null) __obj.updateDynamic("cellFormatter")(js.Any.fromFunction1(cellFormatter))
     if (cellTemplate != null) __obj.updateDynamic("cellTemplate")(cellTemplate.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (headerCellTemplate != null) __obj.updateDynamic("headerCellTemplate")(headerCellTemplate.asInstanceOf[js.Any])
-    if (headerClass != null) __obj.updateDynamic("headerClass")(headerClass)
+    if (headerClass != null) __obj.updateDynamic("headerClass")(headerClass.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
     if (sortFn != null) __obj.updateDynamic("sortFn")(js.Any.fromFunction2(sortFn))
-    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnDef]
   }
 }

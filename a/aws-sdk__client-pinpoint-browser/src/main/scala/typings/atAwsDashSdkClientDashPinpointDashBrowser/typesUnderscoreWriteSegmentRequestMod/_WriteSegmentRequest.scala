@@ -29,9 +29,9 @@ object _WriteSegmentRequest {
     SegmentGroups: _SegmentGroupList = null
   ): _WriteSegmentRequest = {
     val __obj = js.Dynamic.literal()
-    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (SegmentGroups != null) __obj.updateDynamic("SegmentGroups")(SegmentGroups)
+    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
+    if (SegmentGroups != null) __obj.updateDynamic("SegmentGroups")(SegmentGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[_WriteSegmentRequest]
   }
 }

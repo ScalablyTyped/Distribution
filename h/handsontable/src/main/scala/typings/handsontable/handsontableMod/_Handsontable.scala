@@ -125,22 +125,22 @@ object _Handsontable extends js.Object {
     var table: HTMLTableElement = js.native
     def addHook[K /* <: String */](
       key: K,
-      callback: /* import warning: ImportType.apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
+      callback: /* import warning: importer.ImportType#apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
     ): Unit = js.native
     def addHook[K /* <: String */](
       key: K,
       callback: js.Array[
-          /* import warning: ImportType.apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
         ]
     ): Unit = js.native
     def addHookOnce[K /* <: String */](
       key: K,
-      callback: /* import warning: ImportType.apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
+      callback: /* import warning: importer.ImportType#apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
     ): Unit = js.native
     def addHookOnce[K /* <: String */](
       key: K,
       callback: js.Array[
-          /* import warning: ImportType.apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
         ]
     ): Unit = js.native
     @JSName("alter")
@@ -423,7 +423,7 @@ object _Handsontable extends js.Object {
     def removeCellMeta_valid(row: Double, col: Double, key: valid): Unit = js.native
     def removeHook[K /* <: String */](
       key: K,
-      callback: /* import warning: ImportType.apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
+      callback: /* import warning: importer.ImportType#apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
     ): Unit = js.native
     def render(): Unit = js.native
     def rowOffset(): Double = js.native

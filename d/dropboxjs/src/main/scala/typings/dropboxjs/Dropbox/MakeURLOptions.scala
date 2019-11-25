@@ -20,10 +20,10 @@ object MakeURLOptions {
     longUrl: js.UndefOr[Boolean] = js.undefined
   ): MakeURLOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(download)) __obj.updateDynamic("download")(download)
-    if (!js.isUndefined(downloadHack)) __obj.updateDynamic("downloadHack")(downloadHack)
-    if (!js.isUndefined(long)) __obj.updateDynamic("long")(long)
-    if (!js.isUndefined(longUrl)) __obj.updateDynamic("longUrl")(longUrl)
+    if (!js.isUndefined(download)) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
+    if (!js.isUndefined(downloadHack)) __obj.updateDynamic("downloadHack")(downloadHack.asInstanceOf[js.Any])
+    if (!js.isUndefined(long)) __obj.updateDynamic("long")(long.asInstanceOf[js.Any])
+    if (!js.isUndefined(longUrl)) __obj.updateDynamic("longUrl")(longUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[MakeURLOptions]
   }
 }

@@ -30,10 +30,10 @@ object ocrVehicleLicenseOptions {
     fail: js.Any => Unit = null,
     success: /* res */ ocrVehicleLicenseResponse => Unit = null
   ): ocrVehicleLicenseOptions = {
-    val __obj = js.Dynamic.literal(image = image)
-    if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy)
+    val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
+    if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (!js.isUndefined(detect_direction)) __obj.updateDynamic("detect_direction")(detect_direction)
+    if (!js.isUndefined(detect_direction)) __obj.updateDynamic("detect_direction")(detect_direction.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[ocrVehicleLicenseOptions]

@@ -20,10 +20,10 @@ object TagSetting {
     keywordOption: String = null
   ): TagSetting = {
     val __obj = js.Dynamic.literal()
-    if (additionalKeyValues != null) __obj.updateDynamic("additionalKeyValues")(additionalKeyValues)
-    if (!js.isUndefined(includeClickThroughUrls)) __obj.updateDynamic("includeClickThroughUrls")(includeClickThroughUrls)
-    if (!js.isUndefined(includeClickTracking)) __obj.updateDynamic("includeClickTracking")(includeClickTracking)
-    if (keywordOption != null) __obj.updateDynamic("keywordOption")(keywordOption)
+    if (additionalKeyValues != null) __obj.updateDynamic("additionalKeyValues")(additionalKeyValues.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeClickThroughUrls)) __obj.updateDynamic("includeClickThroughUrls")(includeClickThroughUrls.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeClickTracking)) __obj.updateDynamic("includeClickTracking")(includeClickTracking.asInstanceOf[js.Any])
+    if (keywordOption != null) __obj.updateDynamic("keywordOption")(keywordOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagSetting]
   }
 }

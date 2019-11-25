@@ -14,7 +14,7 @@ trait Anon_DEFAULTS extends js.Object {
 object Anon_DEFAULTS {
   @scala.inline
   def apply(DEFAULTS: MessageBoxesDefault, OPTIONS: MessageBoxesOptions): Anon_DEFAULTS = {
-    val __obj = js.Dynamic.literal(DEFAULTS = DEFAULTS, OPTIONS = OPTIONS)
+    val __obj = js.Dynamic.literal(DEFAULTS = DEFAULTS.asInstanceOf[js.Any], OPTIONS = OPTIONS.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DEFAULTS]
   }

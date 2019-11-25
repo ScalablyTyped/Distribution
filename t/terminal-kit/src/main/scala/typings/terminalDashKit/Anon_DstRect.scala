@@ -18,7 +18,7 @@ trait Anon_DstRect extends js.Object {
 object Anon_DstRect {
   @scala.inline
   def apply(dstRect: Rect, offsetX: Double, offsetY: Double, srcRect: Rect, wrapOnly: x | y = null): Anon_DstRect = {
-    val __obj = js.Dynamic.literal(dstRect = dstRect, offsetX = offsetX, offsetY = offsetY, srcRect = srcRect)
+    val __obj = js.Dynamic.literal(dstRect = dstRect.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], srcRect = srcRect.asInstanceOf[js.Any])
     if (wrapOnly != null) __obj.updateDynamic("wrapOnly")(wrapOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DstRect]
   }

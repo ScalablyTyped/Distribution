@@ -24,8 +24,8 @@ trait GetObjectTaggingOutput
 object GetObjectTaggingOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, TagSet: js.Array[_UnmarshalledTag], VersionId: String = null): GetObjectTaggingOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, TagSet = TagSet)
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], TagSet = TagSet.asInstanceOf[js.Any])
+    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectTaggingOutput]
   }
 }

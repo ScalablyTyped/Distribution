@@ -37,7 +37,7 @@ object TextRotation {
   def apply(angle: Int | Double = null, vertical: js.UndefOr[Boolean] = js.undefined): TextRotation = {
     val __obj = js.Dynamic.literal()
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextRotation]
   }
 }

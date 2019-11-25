@@ -35,17 +35,17 @@ object LineChartSeriesOptions {
     visibleInLegend: js.UndefOr[Boolean] = js.undefined
   ): LineChartSeriesOptions = {
     val __obj = js.Dynamic.literal()
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations)
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (curveType != null) __obj.updateDynamic("curveType")(curveType.asInstanceOf[js.Any])
-    if (labelInLegend != null) __obj.updateDynamic("labelInLegend")(labelInLegend)
-    if (lineDashStyle != null) __obj.updateDynamic("lineDashStyle")(lineDashStyle)
+    if (labelInLegend != null) __obj.updateDynamic("labelInLegend")(labelInLegend.asInstanceOf[js.Any])
+    if (lineDashStyle != null) __obj.updateDynamic("lineDashStyle")(lineDashStyle.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (pointShape != null) __obj.updateDynamic("pointShape")(pointShape)
+    if (pointShape != null) __obj.updateDynamic("pointShape")(pointShape.asInstanceOf[js.Any])
     if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointsVisible)) __obj.updateDynamic("pointsVisible")(pointsVisible)
+    if (!js.isUndefined(pointsVisible)) __obj.updateDynamic("pointsVisible")(pointsVisible.asInstanceOf[js.Any])
     if (targetAxisIndex != null) __obj.updateDynamic("targetAxisIndex")(targetAxisIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibleInLegend)) __obj.updateDynamic("visibleInLegend")(visibleInLegend)
+    if (!js.isUndefined(visibleInLegend)) __obj.updateDynamic("visibleInLegend")(visibleInLegend.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineChartSeriesOptions]
   }
 }

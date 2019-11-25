@@ -20,7 +20,7 @@ object Anon_ControllerMetadata {
     methodMetadata: js.Array[ControllerMethodMetadata],
     parameterMetadata: ControllerParameterMetadata
   ): Anon_ControllerMetadata = {
-    val __obj = js.Dynamic.literal(controllerMetadata = controllerMetadata, methodMetadata = methodMetadata, parameterMetadata = parameterMetadata)
+    val __obj = js.Dynamic.literal(controllerMetadata = controllerMetadata.asInstanceOf[js.Any], methodMetadata = methodMetadata.asInstanceOf[js.Any], parameterMetadata = parameterMetadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ControllerMetadata]
   }

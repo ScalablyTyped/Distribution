@@ -15,8 +15,8 @@ object Anon_Columns {
   @scala.inline
   def apply(columns: js.Array[String] = null, table: String = null): Anon_Columns = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (table != null) __obj.updateDynamic("table")(table)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Columns]
   }
 }

@@ -26,7 +26,7 @@ object IItemRendererProps {
     query: String,
     index: Int | Double = null
   ): IItemRendererProps = {
-    val __obj = js.Dynamic.literal(handleClick = js.Any.fromFunction1(handleClick), modifiers = modifiers, query = query)
+    val __obj = js.Dynamic.literal(handleClick = js.Any.fromFunction1(handleClick), modifiers = modifiers.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItemRendererProps]
   }

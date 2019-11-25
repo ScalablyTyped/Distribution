@@ -63,8 +63,8 @@ object StalkerOptions {
     transform: StalkerTransformCallback = null
   ): StalkerOptions = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (events != null) __obj.updateDynamic("events")(events)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (onCallSummary != null) __obj.updateDynamic("onCallSummary")(js.Any.fromFunction1(onCallSummary))
     if (onReceive != null) __obj.updateDynamic("onReceive")(js.Any.fromFunction1(onReceive))
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])

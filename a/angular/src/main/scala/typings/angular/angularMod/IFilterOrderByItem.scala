@@ -13,8 +13,8 @@ trait IFilterOrderByItem extends js.Object {
 object IFilterOrderByItem {
   @scala.inline
   def apply(index: js.Any, `type`: String, value: js.Any): IFilterOrderByItem = {
-    val __obj = js.Dynamic.literal(index = index, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFilterOrderByItem]
   }
 }

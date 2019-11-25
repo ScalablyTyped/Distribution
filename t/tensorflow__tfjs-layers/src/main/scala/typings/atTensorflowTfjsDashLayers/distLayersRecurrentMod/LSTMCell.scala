@@ -2,9 +2,9 @@ package typings.atTensorflowTfjsDashLayers.distLayersRecurrentMod
 
 import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.glorotNormal
 import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.hardSigmoid
-import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.orthogonal
+import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.orthogonal_
 import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.tanh
-import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.zeros
+import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.zeros_
 import typings.atTensorflowTfjsDashLayers.distActivationsMod.Activation
 import typings.atTensorflowTfjsDashLayers.distConstraintsMod.Constraint
 import typings.atTensorflowTfjsDashLayers.distInitializersMod.Initializer
@@ -19,10 +19,10 @@ import scala.scalajs.js.annotation._
 class LSTMCell protected () extends RNNCell {
   def this(args: LSTMCellLayerArgs) = this()
   val DEFAULT_ACTIVATION: tanh = js.native
-  val DEFAULT_BIAS_INITIALIZER: zeros = js.native
+  val DEFAULT_BIAS_INITIALIZER: zeros_ = js.native
   val DEFAULT_KERNEL_INITIALIZER: glorotNormal = js.native
   val DEFAULT_RECURRENT_ACTIVATION: hardSigmoid = js.native
-  val DEFAULT_RECURRENT_INITIALIZER: orthogonal = js.native
+  val DEFAULT_RECURRENT_INITIALIZER: orthogonal_ = js.native
   val activation: Activation = js.native
   var bias: LayerVariable = js.native
   val biasConstraint: Constraint = js.native

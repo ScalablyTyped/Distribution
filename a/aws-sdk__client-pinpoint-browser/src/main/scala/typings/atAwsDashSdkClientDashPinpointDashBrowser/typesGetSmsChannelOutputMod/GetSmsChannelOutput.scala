@@ -22,7 +22,7 @@ trait GetSmsChannelOutput extends OutputTypesUnion {
 object GetSmsChannelOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, SMSChannelResponse: _UnmarshalledSMSChannelResponse): GetSmsChannelOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, SMSChannelResponse = SMSChannelResponse)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], SMSChannelResponse = SMSChannelResponse.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetSmsChannelOutput]
   }

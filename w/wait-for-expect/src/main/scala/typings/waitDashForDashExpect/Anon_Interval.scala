@@ -12,7 +12,7 @@ trait Anon_Interval extends js.Object {
 object Anon_Interval {
   @scala.inline
   def apply(interval: Double, timeout: Double): Anon_Interval = {
-    val __obj = js.Dynamic.literal(interval = interval, timeout = timeout)
+    val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Interval]
   }

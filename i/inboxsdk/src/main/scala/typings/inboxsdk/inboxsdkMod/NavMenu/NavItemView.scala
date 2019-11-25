@@ -21,12 +21,12 @@ object NavItemView {
     addNavItem: NavItemDescriptor => NavItemView,
     destroyed: Boolean,
     isCollapsed: () => Boolean,
-    on_destroy: (destroy, js.Function0[Unit]) => Unit,
+    on: (destroy, js.Function0[Unit]) => Unit,
     remove: () => Unit,
     setCollapsed: Boolean => Unit
   ): NavItemView = {
-    val __obj = js.Dynamic.literal(addNavItem = js.Any.fromFunction1(addNavItem), destroyed = destroyed, isCollapsed = js.Any.fromFunction0(isCollapsed), remove = js.Any.fromFunction0(remove), setCollapsed = js.Any.fromFunction1(setCollapsed))
-    __obj.updateDynamic("on")(js.Any.fromFunction2(on_destroy))
+    val __obj = js.Dynamic.literal(addNavItem = js.Any.fromFunction1(addNavItem), destroyed = destroyed.asInstanceOf[js.Any], isCollapsed = js.Any.fromFunction0(isCollapsed), on = js.Any.fromFunction2(on), remove = js.Any.fromFunction0(remove), setCollapsed = js.Any.fromFunction1(setCollapsed))
+  
     __obj.asInstanceOf[NavItemView]
   }
 }

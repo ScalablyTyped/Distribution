@@ -45,8 +45,8 @@ object ITemplateScope {
     to: ITemplateOptions,
     model: StringDictionary[js.Any] = null
   ): ITemplateScope = {
-    val __obj = js.Dynamic.literal(fc = fc.asInstanceOf[js.Any], fields = fields, form = form, formState = formState, id = id, index = index, options = options, showError = showError, to = to)
-    if (model != null) __obj.updateDynamic("model")(model)
+    val __obj = js.Dynamic.literal(fc = fc.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], formState = formState.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], showError = showError.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITemplateScope]
   }
 }

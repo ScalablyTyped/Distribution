@@ -52,18 +52,18 @@ object CustomResourceGetOptions {
     version: String = null
   ): CustomResourceGetOptions = {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
-    if (additionalSecretOutputs != null) __obj.updateDynamic("additionalSecretOutputs")(additionalSecretOutputs)
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
-    if (customTimeouts != null) __obj.updateDynamic("customTimeouts")(customTimeouts)
-    if (!js.isUndefined(deleteBeforeReplace)) __obj.updateDynamic("deleteBeforeReplace")(deleteBeforeReplace)
+    if (additionalSecretOutputs != null) __obj.updateDynamic("additionalSecretOutputs")(additionalSecretOutputs.asInstanceOf[js.Any])
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
+    if (customTimeouts != null) __obj.updateDynamic("customTimeouts")(customTimeouts.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteBeforeReplace)) __obj.updateDynamic("deleteBeforeReplace")(deleteBeforeReplace.asInstanceOf[js.Any])
     if (dependsOn != null) __obj.updateDynamic("dependsOn")(dependsOn.asInstanceOf[js.Any])
-    if (ignoreChanges != null) __obj.updateDynamic("ignoreChanges")(ignoreChanges)
-    if (`import` != null) __obj.updateDynamic("import")(`import`)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (!js.isUndefined(protect)) __obj.updateDynamic("protect")(protect)
-    if (provider != null) __obj.updateDynamic("provider")(provider)
-    if (transformations != null) __obj.updateDynamic("transformations")(transformations)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (ignoreChanges != null) __obj.updateDynamic("ignoreChanges")(ignoreChanges.asInstanceOf[js.Any])
+    if (`import` != null) __obj.updateDynamic("import")(`import`.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(protect)) __obj.updateDynamic("protect")(protect.asInstanceOf[js.Any])
+    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
+    if (transformations != null) __obj.updateDynamic("transformations")(transformations.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomResourceGetOptions]
   }
 }

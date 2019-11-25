@@ -78,7 +78,7 @@ object Theme {
     if (fonts != null) __obj.updateDynamic("fonts")(fonts.asInstanceOf[js.Any])
     if (letterSpacings != null) __obj.updateDynamic("letterSpacings")(letterSpacings.asInstanceOf[js.Any])
     if (lineHeights != null) __obj.updateDynamic("lineHeights")(lineHeights.asInstanceOf[js.Any])
-    if (mediaQueries != null) __obj.updateDynamic("mediaQueries")(mediaQueries)
+    if (mediaQueries != null) __obj.updateDynamic("mediaQueries")(mediaQueries.asInstanceOf[js.Any])
     if (radii != null) __obj.updateDynamic("radii")(radii.asInstanceOf[js.Any])
     if (shadows != null) __obj.updateDynamic("shadows")(shadows.asInstanceOf[js.Any])
     if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])

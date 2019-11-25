@@ -21,7 +21,7 @@ object SiderMenuState {
     val __obj = js.Dynamic.literal()
     if (flatMenuKeysLen != null) __obj.updateDynamic("flatMenuKeysLen")(flatMenuKeysLen.asInstanceOf[js.Any])
     if (openKeys != null) __obj.updateDynamic("openKeys")(openKeys.asInstanceOf[js.Any])
-    if (pathname != null) __obj.updateDynamic("pathname")(pathname)
+    if (pathname != null) __obj.updateDynamic("pathname")(pathname.asInstanceOf[js.Any])
     __obj.asInstanceOf[SiderMenuState]
   }
 }

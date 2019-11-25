@@ -13,7 +13,7 @@ trait TableColumnAst extends js.Object {
 object TableColumnAst {
   @scala.inline
   def apply(ast: js.Array[AST] | AST, columnsList: js.Array[String], tableList: js.Array[String]): TableColumnAst = {
-    val __obj = js.Dynamic.literal(ast = ast.asInstanceOf[js.Any], columnsList = columnsList, tableList = tableList)
+    val __obj = js.Dynamic.literal(ast = ast.asInstanceOf[js.Any], columnsList = columnsList.asInstanceOf[js.Any], tableList = tableList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TableColumnAst]
   }

@@ -44,11 +44,11 @@ object MonacoEditorBaseProps {
     width: String | Double = null
   ): MonacoEditorBaseProps = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonacoEditorBaseProps]
   }

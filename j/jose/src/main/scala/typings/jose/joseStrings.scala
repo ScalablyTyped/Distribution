@@ -70,10 +70,14 @@ object joseStrings {
   sealed trait oct extends keyType
   
   @js.native
-  sealed trait `private` extends asymmetricKeyObjectTypes
+  sealed trait `private`
+    extends asymmetricKeyObjectTypes
+       with keyObjectTypes
   
   @js.native
-  sealed trait public extends asymmetricKeyObjectTypes
+  sealed trait public
+    extends asymmetricKeyObjectTypes
+       with keyObjectTypes
   
   @js.native
   sealed trait secp256k1 extends ECCurve

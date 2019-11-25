@@ -42,10 +42,10 @@ object FeatureEffectProperties {
     includedEffect: String = null
   ): FeatureEffectProperties = {
     val __obj = js.Dynamic.literal()
-    if (excludedEffect != null) __obj.updateDynamic("excludedEffect")(excludedEffect)
-    if (!js.isUndefined(excludedLabelsVisible)) __obj.updateDynamic("excludedLabelsVisible")(excludedLabelsVisible)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (includedEffect != null) __obj.updateDynamic("includedEffect")(includedEffect)
+    if (excludedEffect != null) __obj.updateDynamic("excludedEffect")(excludedEffect.asInstanceOf[js.Any])
+    if (!js.isUndefined(excludedLabelsVisible)) __obj.updateDynamic("excludedLabelsVisible")(excludedLabelsVisible.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (includedEffect != null) __obj.updateDynamic("includedEffect")(includedEffect.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureEffectProperties]
   }
 }

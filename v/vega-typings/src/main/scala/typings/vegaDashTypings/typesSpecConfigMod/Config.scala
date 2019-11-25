@@ -41,16 +41,16 @@ object Config {
     title: TitleConfig = null
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (autosize != null) __obj.updateDynamic("autosize")(autosize)
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (legend != null) __obj.updateDynamic("legend")(legend)
-    if (projection != null) __obj.updateDynamic("projection")(projection)
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (signals != null) __obj.updateDynamic("signals")(signals)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (autosize != null) __obj.updateDynamic("autosize")(autosize.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (signals != null) __obj.updateDynamic("signals")(signals.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

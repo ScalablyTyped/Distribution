@@ -30,7 +30,7 @@ object ColorSchemeForPointColorsForClassBreaks {
     numClasses: Double,
     propertyIsEnumerable: PropertyKey => Boolean
   ): ColorSchemeForPointColorsForClassBreaks = {
-    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), numClasses = numClasses, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), numClasses = numClasses.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[ColorSchemeForPointColorsForClassBreaks]
   }

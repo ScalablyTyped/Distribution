@@ -54,7 +54,7 @@ trait ojRadioset_[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojradioset.ojRadioset<K, D>['value'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojradioset.ojRadioset<K, D>['value'] */ js.Any
       ], 
       _
     ]
@@ -64,7 +64,7 @@ trait ojRadioset_[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojradioset.ojRadioset<K, D>['value'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojradioset.ojRadioset<K, D>['value'] */ js.Any
       ], 
       _
     ],

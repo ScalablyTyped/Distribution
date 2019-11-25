@@ -2,7 +2,6 @@ package typings.atIonicCore.distTypesComponentsMod.Components
 
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
-import typings.atIonicCore.distTypesComponentsDatetimeDatetimeDashInterfaceMod.DatetimeOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -79,7 +78,9 @@ trait IonDatetime extends js.Object {
   /**
     * Any additional options that the picker interface can accept. See the [Picker API docs](../picker) for the picker options.
     */
-  var pickerOptions: js.UndefOr[DatetimeOptions] = js.undefined
+  var pickerOptions: js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DatetimeOptions */ js.Any
+  ] = js.undefined
   /**
     * The text to display when there's no date selected yet. Using lowercase to match the input attribute
     */
@@ -124,27 +125,27 @@ object IonDatetime {
     monthShortNames: js.Array[String] | String = null,
     monthValues: js.Array[Double] | Double | String = null,
     pickerFormat: String = null,
-    pickerOptions: DatetimeOptions = null,
+    pickerOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DatetimeOptions */ js.Any = null,
     placeholder: String = null,
     value: String = null,
     yearValues: js.Array[Double] | Double | String = null
   ): IonDatetime = {
-    val __obj = js.Dynamic.literal(cancelText = cancelText, disabled = disabled, displayFormat = displayFormat, doneText = doneText, name = name, open = js.Any.fromFunction0(open), readonly = readonly)
+    val __obj = js.Dynamic.literal(cancelText = cancelText.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], displayFormat = displayFormat.asInstanceOf[js.Any], doneText = doneText.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), readonly = readonly.asInstanceOf[js.Any])
     if (dayNames != null) __obj.updateDynamic("dayNames")(dayNames.asInstanceOf[js.Any])
     if (dayShortNames != null) __obj.updateDynamic("dayShortNames")(dayShortNames.asInstanceOf[js.Any])
     if (dayValues != null) __obj.updateDynamic("dayValues")(dayValues.asInstanceOf[js.Any])
     if (hourValues != null) __obj.updateDynamic("hourValues")(hourValues.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max)
-    if (min != null) __obj.updateDynamic("min")(min)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (minuteValues != null) __obj.updateDynamic("minuteValues")(minuteValues.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (monthNames != null) __obj.updateDynamic("monthNames")(monthNames.asInstanceOf[js.Any])
     if (monthShortNames != null) __obj.updateDynamic("monthShortNames")(monthShortNames.asInstanceOf[js.Any])
     if (monthValues != null) __obj.updateDynamic("monthValues")(monthValues.asInstanceOf[js.Any])
-    if (pickerFormat != null) __obj.updateDynamic("pickerFormat")(pickerFormat)
-    if (pickerOptions != null) __obj.updateDynamic("pickerOptions")(pickerOptions)
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (pickerFormat != null) __obj.updateDynamic("pickerFormat")(pickerFormat.asInstanceOf[js.Any])
+    if (pickerOptions != null) __obj.updateDynamic("pickerOptions")(pickerOptions.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (yearValues != null) __obj.updateDynamic("yearValues")(yearValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonDatetime]
   }

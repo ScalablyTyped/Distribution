@@ -15,7 +15,7 @@ object PointDistributionUnderflowBucket {
   @scala.inline
   def apply(count: String = null, upperBound: Int | Double = null): PointDistributionUnderflowBucket = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (upperBound != null) __obj.updateDynamic("upperBound")(upperBound.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointDistributionUnderflowBucket]
   }

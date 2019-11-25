@@ -1,7 +1,6 @@
 package typings.dojo.dijit
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dojoStrings.dndType
 import typings.dojo.dojoStrings.observer
 import typings.dojo.dojoStrings.slideFrom
@@ -221,10 +220,34 @@ class _Widget () extends _WidgetBase {
   @JSName("set")
   def set_slideFrom(property: slideFrom, value: String): Unit = js.native
   @JSName("watch")
-  def watch_dndType(property: dndType, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_dndType(
+    property: dndType,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_observer(property: observer, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_observer(
+    property: observer,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_slideFrom(property: slideFrom, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_slideFrom(
+    property: slideFrom,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

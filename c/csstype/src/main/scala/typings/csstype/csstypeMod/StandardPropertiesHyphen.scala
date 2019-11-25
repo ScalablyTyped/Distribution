@@ -15,8 +15,8 @@ object StandardPropertiesHyphen {
     StandardShorthandPropertiesHyphen: StandardShorthandPropertiesHyphen[TLength] = null
   ): StandardPropertiesHyphen[TLength] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StandardLonghandPropertiesHyphen)
-    js.Dynamic.global.Object.assign(__obj, StandardShorthandPropertiesHyphen)
+    if (StandardLonghandPropertiesHyphen != null) js.Dynamic.global.Object.assign(__obj, StandardLonghandPropertiesHyphen)
+    if (StandardShorthandPropertiesHyphen != null) js.Dynamic.global.Object.assign(__obj, StandardShorthandPropertiesHyphen)
     __obj.asInstanceOf[StandardPropertiesHyphen[TLength]]
   }
 }

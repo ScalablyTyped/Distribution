@@ -19,9 +19,9 @@ object Anon_CollNameRetainDirtyFlags {
     throttledSaves: js.UndefOr[Boolean] = js.undefined
   ): Anon_CollNameRetainDirtyFlags = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(retainDirtyFlags)) __obj.updateDynamic("retainDirtyFlags")(retainDirtyFlags)
-    if (!js.isUndefined(throttledSaves)) __obj.updateDynamic("throttledSaves")(throttledSaves)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(retainDirtyFlags)) __obj.updateDynamic("retainDirtyFlags")(retainDirtyFlags.asInstanceOf[js.Any])
+    if (!js.isUndefined(throttledSaves)) __obj.updateDynamic("throttledSaves")(throttledSaves.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CollNameRetainDirtyFlags]
   }
 }

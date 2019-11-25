@@ -41,10 +41,10 @@ object Organization {
     tier: FREE | BASIC | PRO | ENTERPRISE = null
   ): Organization = {
     val __obj = js.Dynamic.literal()
-    if (company_name != null) __obj.updateDynamic("company_name")(company_name)
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
-    if (display_name != null) __obj.updateDynamic("display_name")(display_name)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (company_name != null) __obj.updateDynamic("company_name")(company_name.asInstanceOf[js.Any])
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
+    if (display_name != null) __obj.updateDynamic("display_name")(display_name.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (qcu != null) __obj.updateDynamic("qcu")(qcu.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (tier != null) __obj.updateDynamic("tier")(tier.asInstanceOf[js.Any])

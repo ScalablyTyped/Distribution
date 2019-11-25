@@ -15,7 +15,7 @@ object Anon_RelatedInformation {
   @scala.inline
   def apply(relatedInformation: js.UndefOr[Boolean] = js.undefined): Anon_RelatedInformation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(relatedInformation)) __obj.updateDynamic("relatedInformation")(relatedInformation)
+    if (!js.isUndefined(relatedInformation)) __obj.updateDynamic("relatedInformation")(relatedInformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_RelatedInformation]
   }
 }

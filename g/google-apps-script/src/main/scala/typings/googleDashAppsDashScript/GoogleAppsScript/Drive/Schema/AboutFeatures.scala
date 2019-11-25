@@ -13,7 +13,7 @@ object AboutFeatures {
   @scala.inline
   def apply(featureName: String = null, featureRate: Int | Double = null): AboutFeatures = {
     val __obj = js.Dynamic.literal()
-    if (featureName != null) __obj.updateDynamic("featureName")(featureName)
+    if (featureName != null) __obj.updateDynamic("featureName")(featureName.asInstanceOf[js.Any])
     if (featureRate != null) __obj.updateDynamic("featureRate")(featureRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[AboutFeatures]
   }

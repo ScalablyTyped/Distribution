@@ -14,7 +14,7 @@ trait AttemptContext extends js.Object {
 object AttemptContext {
   @scala.inline
   def apply(abort: () => Unit, aborted: Boolean, attemptNum: Double, attemptsRemaining: Double): AttemptContext = {
-    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), aborted = aborted, attemptNum = attemptNum, attemptsRemaining = attemptsRemaining)
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), aborted = aborted.asInstanceOf[js.Any], attemptNum = attemptNum.asInstanceOf[js.Any], attemptsRemaining = attemptsRemaining.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AttemptContext]
   }

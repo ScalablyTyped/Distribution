@@ -17,9 +17,9 @@ object WidgetParameters {
   @scala.inline
   def apply(classes: js.Array[String] = null, labelClasses: js.Array[String] = null, `type`: String = null): WidgetParameters = {
     val __obj = js.Dynamic.literal()
-    if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (labelClasses != null) __obj.updateDynamic("labelClasses")(labelClasses)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
+    if (labelClasses != null) __obj.updateDynamic("labelClasses")(labelClasses.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WidgetParameters]
   }
 }

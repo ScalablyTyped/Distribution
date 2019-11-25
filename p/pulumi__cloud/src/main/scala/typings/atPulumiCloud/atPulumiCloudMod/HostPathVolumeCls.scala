@@ -1,13 +1,13 @@
 package typings.atPulumiCloud.atPulumiCloudMod
 
-import typings.atPulumiCloud.serviceMod.HostPathVolume
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("@pulumi/cloud", "HostPathVolume")
 @js.native
-class HostPathVolumeCls protected () extends HostPathVolume {
+class HostPathVolumeCls protected ()
+  extends typings.atPulumiCloud.serviceMod.HostPathVolume {
   /**
     * Construct a new Volume with the given unique name.
     */

@@ -12,7 +12,7 @@ trait Anon_Beacons extends js.Object {
 object Anon_Beacons {
   @scala.inline
   def apply(beacons: js.Array[Beacon]): Anon_Beacons = {
-    val __obj = js.Dynamic.literal(beacons = beacons)
+    val __obj = js.Dynamic.literal(beacons = beacons.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Beacons]
   }

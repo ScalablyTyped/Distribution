@@ -19,10 +19,10 @@ object XmlElement {
     properties: XmlAttributes = null,
     textNode: String = null
   ): XmlElement = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (textNode != null) __obj.updateDynamic("textNode")(textNode)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (textNode != null) __obj.updateDynamic("textNode")(textNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[XmlElement]
   }
 }

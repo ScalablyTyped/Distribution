@@ -12,7 +12,7 @@ trait Error extends js.Object {
 object Error {
   @scala.inline
   def apply(errcode: String, message: String): Error = {
-    val __obj = js.Dynamic.literal(errcode = errcode, message = message)
+    val __obj = js.Dynamic.literal(errcode = errcode.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Error]
   }

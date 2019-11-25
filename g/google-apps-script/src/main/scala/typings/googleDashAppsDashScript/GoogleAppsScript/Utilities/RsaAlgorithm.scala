@@ -14,14 +14,18 @@ sealed trait RsaAlgorithm extends js.Object
 @js.native
 object RsaAlgorithm extends js.Object {
   @js.native
-  sealed trait RSA_SHA_1 extends RsaAlgorithm
+  sealed trait RSA_SHA_1
+    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.RsaAlgorithm
   
   @js.native
-  sealed trait RSA_SHA_256 extends RsaAlgorithm
+  sealed trait RSA_SHA_256
+    extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.RsaAlgorithm
   
   /* 0 */ val RSA_SHA_1: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.RsaAlgorithm.RSA_SHA_1 with Double = js.native
   /* 1 */ val RSA_SHA_256: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.RsaAlgorithm.RSA_SHA_256 with Double = js.native
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RsaAlgorithm with Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.RsaAlgorithm with Double
+  ] = js.native
 }
 

@@ -53,7 +53,7 @@ object TeamsRequestObject {
     if (program != null) __obj.updateDynamic("program")(program.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (robot_name != null) __obj.updateDynamic("robot_name")(robot_name.asInstanceOf[js.Any])
-    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single)
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single.asInstanceOf[js.Any])
     if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
     if (team != null) __obj.updateDynamic("team")(team.asInstanceOf[js.Any])
     if (team_name != null) __obj.updateDynamic("team_name")(team_name.asInstanceOf[js.Any])

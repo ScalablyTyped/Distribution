@@ -16,8 +16,8 @@ trait DirectTcpipChannelInfo extends ChannelOpenInfo {
 object DirectTcpipChannelInfo {
   @scala.inline
   def apply(data: TcpipChannelData, packetSize: Double, sender: Double, `type`: `direct-tcpip`, window: Double): DirectTcpipChannelInfo = {
-    val __obj = js.Dynamic.literal(data = data, packetSize = packetSize, sender = sender, window = window)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], packetSize = packetSize.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectTcpipChannelInfo]
   }
 }

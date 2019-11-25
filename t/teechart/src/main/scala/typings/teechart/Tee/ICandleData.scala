@@ -22,7 +22,7 @@ object ICandleData {
     source: js.Any,
     values: js.Array[Double]
   ): ICandleData = {
-    val __obj = js.Dynamic.literal(close = close, high = high, labels = labels, low = low, open = open, source = source, values = values)
+    val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], high = high.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], low = low.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICandleData]
   }

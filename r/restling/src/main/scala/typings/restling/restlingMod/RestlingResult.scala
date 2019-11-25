@@ -14,8 +14,8 @@ object RestlingResult {
   @scala.inline
   def apply(data: js.Any = null, response: ServerResponse = null): RestlingResult = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (response != null) __obj.updateDynamic("response")(response)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestlingResult]
   }
 }

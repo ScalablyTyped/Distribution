@@ -22,6 +22,6 @@ trait Union[T] extends Type[T] {
 @js.native
 object union extends js.Object {
   def apply[T](types: js.Array[Constructor[T]]): Union[T] = js.native
-  def apply[T](types: js.Array[Constructor[T]], name: String): Union[T] = js.native
+  def apply[T](types: js.Array[Constructor[T]], name: java.lang.String): Union[T] = js.native
 }
 

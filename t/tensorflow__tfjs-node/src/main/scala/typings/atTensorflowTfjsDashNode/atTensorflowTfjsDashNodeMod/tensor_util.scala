@@ -1,7 +1,6 @@
 package typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeMod
 
 import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.TensorContainer
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,14 +9,18 @@ import scala.scalajs.js.annotation._
 @js.native
 object tensor_util extends js.Object {
   def assertTypesMatch(
-    a: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-    b: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+    a: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+    b: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
   ): Unit = js.native
-  def getTensorsInContainer(result: TensorContainer): js.Array[typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]] = js.native
+  def getTensorsInContainer(result: TensorContainer): js.Array[
+    typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
+  ] = js.native
   def isTensorInList(
-    tensor: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank],
-    tensorList: js.Array[typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]]
+    tensor: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank],
+    tensorList: js.Array[
+      typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
+    ]
   ): Boolean = js.native
-  def makeTypesMatch[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](a: T, b: T): js.Tuple2[T, T] = js.native
+  def makeTypesMatch[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](a: T, b: T): js.Tuple2[T, T] = js.native
 }
 

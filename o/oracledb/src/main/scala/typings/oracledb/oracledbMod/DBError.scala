@@ -28,7 +28,7 @@ trait DBError extends js.Object {
 object DBError {
   @scala.inline
   def apply(message: String, errorNum: Int | Double = null, offset: Int | Double = null): DBError = {
-    val __obj = js.Dynamic.literal(message = message)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     if (errorNum != null) __obj.updateDynamic("errorNum")(errorNum.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBError]

@@ -20,10 +20,10 @@ object Options {
     useTabs: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(expandUsers)) __obj.updateDynamic("expandUsers")(expandUsers)
+    if (!js.isUndefined(expandUsers)) __obj.updateDynamic("expandUsers")(expandUsers.asInstanceOf[js.Any])
     if (keyOrder != null) __obj.updateDynamic("keyOrder")(keyOrder.asInstanceOf[js.Any])
     if (tabWidth != null) __obj.updateDynamic("tabWidth")(tabWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTabs)) __obj.updateDynamic("useTabs")(useTabs)
+    if (!js.isUndefined(useTabs)) __obj.updateDynamic("useTabs")(useTabs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

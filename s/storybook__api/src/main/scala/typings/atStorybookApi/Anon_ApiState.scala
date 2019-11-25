@@ -13,7 +13,7 @@ trait Anon_ApiState extends js.Object {
 object Anon_ApiState {
   @scala.inline
   def apply(api: SubAPI, state: Anon_Addons): Anon_ApiState = {
-    val __obj = js.Dynamic.literal(api = api, state = state)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ApiState]
   }

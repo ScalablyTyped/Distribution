@@ -25,10 +25,10 @@ object SearchStatus {
     status_description: String = null
   ): SearchStatus = {
     val __obj = js.Dynamic.literal()
-    if (last_trained != null) __obj.updateDynamic("last_trained")(last_trained)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (status_description != null) __obj.updateDynamic("status_description")(status_description)
+    if (last_trained != null) __obj.updateDynamic("last_trained")(last_trained.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (status_description != null) __obj.updateDynamic("status_description")(status_description.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchStatus]
   }
 }

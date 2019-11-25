@@ -31,8 +31,8 @@ object StretchedPictureFill {
   @scala.inline
   def apply(contentUrl: String = null, size: Size = null): StretchedPictureFill = {
     val __obj = js.Dynamic.literal()
-    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[StretchedPictureFill]
   }
 }

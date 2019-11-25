@@ -12,64 +12,89 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "computed")
 @js.native
 object computed extends js.Object {
-  def apply(deps: String*): MethodDecorator = js.native
-  def apply(k1: String, k2: String, k3: String, k4: String, k5: String, k6: String, k7: String, rest: js.Any*): typings.atEmberObject.computedMod.ComputedProperty[_, _] = js.native
+  def apply(deps: java.lang.String*): MethodDecorator = js.native
+  def apply(
+    k1: java.lang.String,
+    k2: java.lang.String,
+    k3: java.lang.String,
+    k4: java.lang.String,
+    k5: java.lang.String,
+    k6: java.lang.String,
+    k7: java.lang.String,
+    rest: js.Any*
+  ): typings.atEmberObject.computedMod.ComputedProperty[_, _] = js.native
   def apply[T](cb: ComputedPropertyCallback[T]): typings.atEmberObject.computedMod.ComputedProperty[T, T] = js.native
-  def apply[T](k1: String, cb: ComputedPropertyCallback[T]): typings.atEmberObject.computedMod.ComputedProperty[T, T] = js.native
-  def apply[T](k1: String, k2: String, cb: ComputedPropertyCallback[T]): typings.atEmberObject.computedMod.ComputedProperty[T, T] = js.native
-  def apply[T](k1: String, k2: String, k3: String, cb: ComputedPropertyCallback[T]): typings.atEmberObject.computedMod.ComputedProperty[T, T] = js.native
-  def apply[T](k1: String, k2: String, k3: String, k4: String, cb: ComputedPropertyCallback[T]): typings.atEmberObject.computedMod.ComputedProperty[T, T] = js.native
-  def apply[T](k1: String, k2: String, k3: String, k4: String, k5: String, cb: ComputedPropertyCallback[T]): typings.atEmberObject.computedMod.ComputedProperty[T, T] = js.native
+  def apply[T](k1: java.lang.String, cb: ComputedPropertyCallback[T]): typings.atEmberObject.computedMod.ComputedProperty[T, T] = js.native
+  def apply[T](k1: java.lang.String, k2: java.lang.String, cb: ComputedPropertyCallback[T]): typings.atEmberObject.computedMod.ComputedProperty[T, T] = js.native
+  def apply[T](k1: java.lang.String, k2: java.lang.String, k3: java.lang.String, cb: ComputedPropertyCallback[T]): typings.atEmberObject.computedMod.ComputedProperty[T, T] = js.native
   def apply[T](
-    k1: String,
-    k2: String,
-    k3: String,
-    k4: String,
-    k5: String,
-    k6: String,
+    k1: java.lang.String,
+    k2: java.lang.String,
+    k3: java.lang.String,
+    k4: java.lang.String,
     cb: ComputedPropertyCallback[T]
   ): typings.atEmberObject.computedMod.ComputedProperty[T, T] = js.native
-  def alias(dependentKey: String): typings.atEmberObject.computedMod.ComputedProperty[_, _] = js.native
-  def and(dependentKeys: String*): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
-  def bool(dependentKey: String): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
-  def collect(dependentKeys: String*): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
-  def deprecatingAlias(dependentKey: String): typings.atEmberObject.computedMod.ComputedProperty[_, _] = js.native
-  def deprecatingAlias(dependentKey: String, options: Anon_Id): typings.atEmberObject.computedMod.ComputedProperty[_, _] = js.native
-  def deprecatingAlias(dependentKey: String, options: Anon_IdUntil): typings.atEmberObject.computedMod.ComputedProperty[_, _] = js.native
-  def empty(dependentKey: String): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
-  def equal(dependentKey: String, value: js.Any): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
+  def apply[T](
+    k1: java.lang.String,
+    k2: java.lang.String,
+    k3: java.lang.String,
+    k4: java.lang.String,
+    k5: java.lang.String,
+    cb: ComputedPropertyCallback[T]
+  ): typings.atEmberObject.computedMod.ComputedProperty[T, T] = js.native
+  def apply[T](
+    k1: java.lang.String,
+    k2: java.lang.String,
+    k3: java.lang.String,
+    k4: java.lang.String,
+    k5: java.lang.String,
+    k6: java.lang.String,
+    cb: ComputedPropertyCallback[T]
+  ): typings.atEmberObject.computedMod.ComputedProperty[T, T] = js.native
+  def alias(dependentKey: java.lang.String): typings.atEmberObject.computedMod.ComputedProperty[_, _] = js.native
+  def and(dependentKeys: java.lang.String*): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
+  def bool(dependentKey: java.lang.String): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
+  def collect(dependentKeys: java.lang.String*): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  def deprecatingAlias(dependentKey: java.lang.String): typings.atEmberObject.computedMod.ComputedProperty[_, _] = js.native
+  def deprecatingAlias(dependentKey: java.lang.String, options: Anon_Id): typings.atEmberObject.computedMod.ComputedProperty[_, _] = js.native
+  def deprecatingAlias(dependentKey: java.lang.String, options: Anon_IdUntil): typings.atEmberObject.computedMod.ComputedProperty[_, _] = js.native
+  def empty(dependentKey: java.lang.String): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
+  def equal(dependentKey: java.lang.String, value: js.Any): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
   def filter(
-    dependentKey: String,
+    dependentKey: java.lang.String,
     callback: js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[_], Boolean]
   ): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
-  def filterBy(dependentKey: String, propertyKey: String): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
-  def filterBy(dependentKey: String, propertyKey: String, value: js.Any): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
-  def gt(dependentKey: String, value: Double): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
-  def gte(dependentKey: String, value: Double): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
-  def intersect(propertyKeys: String*): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
-  def lt(dependentKey: String, value: Double): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
-  def lte(dependentKey: String, value: Double): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
+  def filterBy(dependentKey: java.lang.String, propertyKey: java.lang.String): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  def filterBy(dependentKey: java.lang.String, propertyKey: java.lang.String, value: js.Any): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  def gt(dependentKey: java.lang.String, value: Double): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
+  def gte(dependentKey: java.lang.String, value: Double): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
+  def intersect(propertyKeys: java.lang.String*): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  def lt(dependentKey: java.lang.String, value: Double): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
+  def lte(dependentKey: java.lang.String, value: Double): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
   def map[U](
-    dependentKey: String,
+    dependentKey: java.lang.String,
     callback: js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[_], U]
   ): typings.atEmberObject.computedMod.ComputedProperty[js.Array[U], js.Array[U]] = js.native
-  def mapBy(dependentKey: String, propertyKey: String): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
-  def `match`(dependentKey: String, regexp: RegExp): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
-  def max(dependentKey: String): typings.atEmberObject.computedMod.ComputedProperty[Double, Double] = js.native
-  def min(dependentKey: String): typings.atEmberObject.computedMod.ComputedProperty[Double, Double] = js.native
-  def none(dependentKey: String): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
-  def not(dependentKey: String): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
-  def notEmpty(dependentKey: String): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
-  def oneWay(dependentKey: String): typings.atEmberObject.computedMod.ComputedProperty[_, _] = js.native
-  def or(dependentKeys: String*): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
-  def readOnly(dependentKey: String): typings.atEmberObject.computedMod.ComputedProperty[_, _] = js.native
-  def reads(dependentKey: String): typings.atEmberObject.computedMod.ComputedProperty[_, _] = js.native
-  def setDiff(setAProperty: String, setBProperty: String): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
-  def sort(itemsKey: String, sortDefinition: String): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
-  def sort(itemsKey: String, sortDefinition: js.Function2[/* itemA */ js.Any, /* itemB */ js.Any, Double]): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
-  def sum(dependentKey: String): typings.atEmberObject.computedMod.ComputedProperty[Double, Double] = js.native
-  def union(propertyKeys: String*): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
-  def uniq(propertyKey: String): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
-  def uniqBy(dependentKey: String, propertyKey: String): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  def mapBy(dependentKey: java.lang.String, propertyKey: java.lang.String): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  def `match`(dependentKey: java.lang.String, regexp: RegExp): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
+  def max(dependentKey: java.lang.String): typings.atEmberObject.computedMod.ComputedProperty[Double, Double] = js.native
+  def min(dependentKey: java.lang.String): typings.atEmberObject.computedMod.ComputedProperty[Double, Double] = js.native
+  def none(dependentKey: java.lang.String): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
+  def not(dependentKey: java.lang.String): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
+  def notEmpty(dependentKey: java.lang.String): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
+  def oneWay(dependentKey: java.lang.String): typings.atEmberObject.computedMod.ComputedProperty[_, _] = js.native
+  def or(dependentKeys: java.lang.String*): typings.atEmberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
+  def readOnly(dependentKey: java.lang.String): typings.atEmberObject.computedMod.ComputedProperty[_, _] = js.native
+  def reads(dependentKey: java.lang.String): typings.atEmberObject.computedMod.ComputedProperty[_, _] = js.native
+  def setDiff(setAProperty: java.lang.String, setBProperty: java.lang.String): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  def sort(itemsKey: java.lang.String, sortDefinition: java.lang.String): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  def sort(
+    itemsKey: java.lang.String,
+    sortDefinition: js.Function2[/* itemA */ js.Any, /* itemB */ js.Any, Double]
+  ): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  def sum(dependentKey: java.lang.String): typings.atEmberObject.computedMod.ComputedProperty[Double, Double] = js.native
+  def union(propertyKeys: java.lang.String*): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  def uniq(propertyKey: java.lang.String): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  def uniqBy(dependentKey: java.lang.String, propertyKey: java.lang.String): typings.atEmberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
 }
 

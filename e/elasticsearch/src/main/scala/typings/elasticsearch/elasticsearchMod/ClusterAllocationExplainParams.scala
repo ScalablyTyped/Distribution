@@ -22,13 +22,13 @@ object ClusterAllocationExplainParams {
     requestTimeout: Int | Double = null
   ): ClusterAllocationExplainParams = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeDiskInfo)) __obj.updateDynamic("includeDiskInfo")(includeDiskInfo)
-    if (!js.isUndefined(includeYesDecisions)) __obj.updateDynamic("includeYesDecisions")(includeYesDecisions)
+    if (!js.isUndefined(includeDiskInfo)) __obj.updateDynamic("includeDiskInfo")(includeDiskInfo.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeYesDecisions)) __obj.updateDynamic("includeYesDecisions")(includeYesDecisions.asInstanceOf[js.Any])
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterAllocationExplainParams]
   }

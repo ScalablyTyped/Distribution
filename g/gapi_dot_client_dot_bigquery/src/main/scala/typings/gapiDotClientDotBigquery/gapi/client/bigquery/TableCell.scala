@@ -12,7 +12,7 @@ object TableCell {
   @scala.inline
   def apply(v: js.Any = null): TableCell = {
     val __obj = js.Dynamic.literal()
-    if (v != null) __obj.updateDynamic("v")(v)
+    if (v != null) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCell]
   }
 }

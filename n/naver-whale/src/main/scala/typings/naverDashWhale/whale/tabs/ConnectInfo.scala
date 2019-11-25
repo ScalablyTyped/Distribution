@@ -19,7 +19,7 @@ object ConnectInfo {
   def apply(frameId: Int | Double = null, name: String = null): ConnectInfo = {
     val __obj = js.Dynamic.literal()
     if (frameId != null) __obj.updateDynamic("frameId")(frameId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectInfo]
   }
 }

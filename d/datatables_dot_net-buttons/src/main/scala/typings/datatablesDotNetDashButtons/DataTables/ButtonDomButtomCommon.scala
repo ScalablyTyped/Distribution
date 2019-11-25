@@ -13,8 +13,8 @@ object ButtonDomButtomCommon {
   @scala.inline
   def apply(className: String = null, tag: String = null): ButtonDomButtomCommon = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonDomButtomCommon]
   }
 }

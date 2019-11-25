@@ -16,7 +16,7 @@ object WorkspaceFoldersClientCapabilities {
   @scala.inline
   def apply(workspace: Anon_WorkspaceFolders = null): WorkspaceFoldersClientCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (workspace != null) __obj.updateDynamic("workspace")(workspace)
+    if (workspace != null) __obj.updateDynamic("workspace")(workspace.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceFoldersClientCapabilities]
   }
 }

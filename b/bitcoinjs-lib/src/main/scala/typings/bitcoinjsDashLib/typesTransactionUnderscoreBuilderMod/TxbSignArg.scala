@@ -27,10 +27,10 @@ object TxbSignArg {
     witnessScript: Buffer = null,
     witnessValue: Int | Double = null
   ): TxbSignArg = {
-    val __obj = js.Dynamic.literal(keyPair = keyPair, prevOutScriptType = prevOutScriptType, vin = vin)
+    val __obj = js.Dynamic.literal(keyPair = keyPair.asInstanceOf[js.Any], prevOutScriptType = prevOutScriptType.asInstanceOf[js.Any], vin = vin.asInstanceOf[js.Any])
     if (hashType != null) __obj.updateDynamic("hashType")(hashType.asInstanceOf[js.Any])
-    if (redeemScript != null) __obj.updateDynamic("redeemScript")(redeemScript)
-    if (witnessScript != null) __obj.updateDynamic("witnessScript")(witnessScript)
+    if (redeemScript != null) __obj.updateDynamic("redeemScript")(redeemScript.asInstanceOf[js.Any])
+    if (witnessScript != null) __obj.updateDynamic("witnessScript")(witnessScript.asInstanceOf[js.Any])
     if (witnessValue != null) __obj.updateDynamic("witnessValue")(witnessValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[TxbSignArg]
   }

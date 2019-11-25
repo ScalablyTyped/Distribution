@@ -23,9 +23,9 @@ object MousewheelOptions {
   ): MousewheelOptions = {
     val __obj = js.Dynamic.literal()
     if (eventsTarged != null) __obj.updateDynamic("eventsTarged")(eventsTarged.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceToAxis)) __obj.updateDynamic("forceToAxis")(forceToAxis)
-    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert)
-    if (!js.isUndefined(releaseOnEdges)) __obj.updateDynamic("releaseOnEdges")(releaseOnEdges)
+    if (!js.isUndefined(forceToAxis)) __obj.updateDynamic("forceToAxis")(forceToAxis.asInstanceOf[js.Any])
+    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert.asInstanceOf[js.Any])
+    if (!js.isUndefined(releaseOnEdges)) __obj.updateDynamic("releaseOnEdges")(releaseOnEdges.asInstanceOf[js.Any])
     if (sensitivity != null) __obj.updateDynamic("sensitivity")(sensitivity.asInstanceOf[js.Any])
     __obj.asInstanceOf[MousewheelOptions]
   }

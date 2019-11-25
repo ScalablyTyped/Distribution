@@ -21,7 +21,7 @@ object LoggingCallbackTools {
     val __obj = js.Dynamic.literal()
     if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction1(log))
     if (missing != null) __obj.updateDynamic("missing")(missing.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggingCallbackTools]
   }
 }

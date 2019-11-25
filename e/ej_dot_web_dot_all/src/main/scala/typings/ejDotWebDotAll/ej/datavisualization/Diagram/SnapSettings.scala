@@ -39,12 +39,12 @@ object SnapSettings {
     verticalGridLines: SnapSettingsVerticalGridLines = null
   ): SnapSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableSnapToObject)) __obj.updateDynamic("enableSnapToObject")(enableSnapToObject)
-    if (horizontalGridLines != null) __obj.updateDynamic("horizontalGridLines")(horizontalGridLines)
+    if (!js.isUndefined(enableSnapToObject)) __obj.updateDynamic("enableSnapToObject")(enableSnapToObject.asInstanceOf[js.Any])
+    if (horizontalGridLines != null) __obj.updateDynamic("horizontalGridLines")(horizontalGridLines.asInstanceOf[js.Any])
     if (snapAngle != null) __obj.updateDynamic("snapAngle")(snapAngle.asInstanceOf[js.Any])
     if (snapConstraints != null) __obj.updateDynamic("snapConstraints")(snapConstraints.asInstanceOf[js.Any])
     if (snapObjectDistance != null) __obj.updateDynamic("snapObjectDistance")(snapObjectDistance.asInstanceOf[js.Any])
-    if (verticalGridLines != null) __obj.updateDynamic("verticalGridLines")(verticalGridLines)
+    if (verticalGridLines != null) __obj.updateDynamic("verticalGridLines")(verticalGridLines.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapSettings]
   }
 }

@@ -26,8 +26,8 @@ trait IModel extends js.Object {
 object IModel {
   @scala.inline
   def apply(name: String, svg: String, className: String = null): IModel = {
-    val __obj = js.Dynamic.literal(name = name, svg = svg)
-    if (className != null) __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModel]
   }
 }

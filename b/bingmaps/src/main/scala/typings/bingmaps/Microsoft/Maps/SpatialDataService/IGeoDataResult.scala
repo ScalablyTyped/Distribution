@@ -33,7 +33,7 @@ object IGeoDataResult {
     Polygons: js.Array[Polygon],
     Primitives: js.Array[IGeoDataPrimitive]
   ): IGeoDataResult = {
-    val __obj = js.Dynamic.literal(Copyright = Copyright, EntityID = EntityID, EntityMetadata = EntityMetadata, Name = Name, Polygons = Polygons, Primitives = Primitives)
+    val __obj = js.Dynamic.literal(Copyright = Copyright.asInstanceOf[js.Any], EntityID = EntityID.asInstanceOf[js.Any], EntityMetadata = EntityMetadata.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Polygons = Polygons.asInstanceOf[js.Any], Primitives = Primitives.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IGeoDataResult]
   }

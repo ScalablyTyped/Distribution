@@ -14,8 +14,8 @@ trait Anon_Next extends js.Object {
 object Anon_Next {
   @scala.inline
   def apply(next: ContentMatch[_], `type`: NodeType[_]): Anon_Next = {
-    val __obj = js.Dynamic.literal(next = next)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(next = next.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Next]
   }
 }

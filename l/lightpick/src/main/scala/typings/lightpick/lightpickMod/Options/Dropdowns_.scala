@@ -21,7 +21,7 @@ object Dropdowns_ {
   @scala.inline
   def apply(months: js.UndefOr[Boolean] = js.undefined, years: Boolean | Years = null): Dropdowns_ = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(months)) __obj.updateDynamic("months")(months)
+    if (!js.isUndefined(months)) __obj.updateDynamic("months")(months.asInstanceOf[js.Any])
     if (years != null) __obj.updateDynamic("years")(years.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dropdowns_]
   }

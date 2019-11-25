@@ -26,8 +26,8 @@ object Options {
   @scala.inline
   def apply(console: Console = null, methods: js.Array[log | debug | info | warn | error] = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (console != null) __obj.updateDynamic("console")(console)
-    if (methods != null) __obj.updateDynamic("methods")(methods)
+    if (console != null) __obj.updateDynamic("console")(console.asInstanceOf[js.Any])
+    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -62,11 +62,11 @@ object Issue {
     closedBy: UserSummary = null,
     milestone: Milestone = null
   ): Issue = {
-    val __obj = js.Dynamic.literal(age = age, assignees = assignees, body = body, comments = comments, created = created, createdBy = createdBy, htmlUri = htmlUri, id = id, isOpen = isOpen, isPullRequest = isPullRequest, labels = labels, loadAsync = js.Any.fromFunction0(loadAsync), loadRepositoryAsync = js.Any.fromFunction0(loadRepositoryAsync), locked = locked, number = number, state = state.asInstanceOf[js.Any], title = title, updated = updated, wasOpen = js.Any.fromFunction1(wasOpen))
-    if (assignee != null) __obj.updateDynamic("assignee")(assignee)
-    if (closed != null) __obj.updateDynamic("closed")(closed)
-    if (closedBy != null) __obj.updateDynamic("closedBy")(closedBy)
-    if (milestone != null) __obj.updateDynamic("milestone")(milestone)
+    val __obj = js.Dynamic.literal(age = age.asInstanceOf[js.Any], assignees = assignees.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], createdBy = createdBy.asInstanceOf[js.Any], htmlUri = htmlUri.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], isPullRequest = isPullRequest.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], loadAsync = js.Any.fromFunction0(loadAsync), loadRepositoryAsync = js.Any.fromFunction0(loadRepositoryAsync), locked = locked.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any], wasOpen = js.Any.fromFunction1(wasOpen))
+    if (assignee != null) __obj.updateDynamic("assignee")(assignee.asInstanceOf[js.Any])
+    if (closed != null) __obj.updateDynamic("closed")(closed.asInstanceOf[js.Any])
+    if (closedBy != null) __obj.updateDynamic("closedBy")(closedBy.asInstanceOf[js.Any])
+    if (milestone != null) __obj.updateDynamic("milestone")(milestone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Issue]
   }
 }

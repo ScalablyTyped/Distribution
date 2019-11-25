@@ -24,8 +24,8 @@ object AwsS3Data {
   @scala.inline
   def apply(awsAccessKey: AwsAccessKey = null, bucketName: String = null): AwsS3Data = {
     val __obj = js.Dynamic.literal()
-    if (awsAccessKey != null) __obj.updateDynamic("awsAccessKey")(awsAccessKey)
-    if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName)
+    if (awsAccessKey != null) __obj.updateDynamic("awsAccessKey")(awsAccessKey.asInstanceOf[js.Any])
+    if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsS3Data]
   }
 }

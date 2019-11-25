@@ -11,7 +11,7 @@ trait CreateManyPayload extends js.Object {
 object CreateManyPayload {
   @scala.inline
   def apply(users: js.Array[CreateModel]): CreateManyPayload = {
-    val __obj = js.Dynamic.literal(users = users)
+    val __obj = js.Dynamic.literal(users = users.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CreateManyPayload]
   }

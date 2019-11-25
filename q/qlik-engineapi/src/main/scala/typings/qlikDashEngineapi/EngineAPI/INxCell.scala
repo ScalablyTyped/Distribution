@@ -104,14 +104,14 @@ object INxCell {
     qNum: Int | Double = null,
     qText: String = null
   ): INxCell = {
-    val __obj = js.Dynamic.literal(qAttrDims = qAttrDims, qAttrExps = qAttrExps, qElemNumber = qElemNumber, qIsNull = qIsNull, qState = qState)
-    if (qFrequency != null) __obj.updateDynamic("qFrequency")(qFrequency)
-    if (qHighlightRanges != null) __obj.updateDynamic("qHighlightRanges")(qHighlightRanges)
-    if (!js.isUndefined(qIsEmpty)) __obj.updateDynamic("qIsEmpty")(qIsEmpty)
-    if (!js.isUndefined(qIsOtherCell)) __obj.updateDynamic("qIsOtherCell")(qIsOtherCell)
-    if (!js.isUndefined(qIsTotalCell)) __obj.updateDynamic("qIsTotalCell")(qIsTotalCell)
+    val __obj = js.Dynamic.literal(qAttrDims = qAttrDims.asInstanceOf[js.Any], qAttrExps = qAttrExps.asInstanceOf[js.Any], qElemNumber = qElemNumber.asInstanceOf[js.Any], qIsNull = qIsNull.asInstanceOf[js.Any], qState = qState.asInstanceOf[js.Any])
+    if (qFrequency != null) __obj.updateDynamic("qFrequency")(qFrequency.asInstanceOf[js.Any])
+    if (qHighlightRanges != null) __obj.updateDynamic("qHighlightRanges")(qHighlightRanges.asInstanceOf[js.Any])
+    if (!js.isUndefined(qIsEmpty)) __obj.updateDynamic("qIsEmpty")(qIsEmpty.asInstanceOf[js.Any])
+    if (!js.isUndefined(qIsOtherCell)) __obj.updateDynamic("qIsOtherCell")(qIsOtherCell.asInstanceOf[js.Any])
+    if (!js.isUndefined(qIsTotalCell)) __obj.updateDynamic("qIsTotalCell")(qIsTotalCell.asInstanceOf[js.Any])
     if (qNum != null) __obj.updateDynamic("qNum")(qNum.asInstanceOf[js.Any])
-    if (qText != null) __obj.updateDynamic("qText")(qText)
+    if (qText != null) __obj.updateDynamic("qText")(qText.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxCell]
   }
 }

@@ -13,8 +13,8 @@ trait ChecksUpdateParamsOutputImages extends js.Object {
 object ChecksUpdateParamsOutputImages {
   @scala.inline
   def apply(alt: String, image_url: String, caption: String = null): ChecksUpdateParamsOutputImages = {
-    val __obj = js.Dynamic.literal(alt = alt, image_url = image_url)
-    if (caption != null) __obj.updateDynamic("caption")(caption)
+    val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], image_url = image_url.asInstanceOf[js.Any])
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChecksUpdateParamsOutputImages]
   }
 }

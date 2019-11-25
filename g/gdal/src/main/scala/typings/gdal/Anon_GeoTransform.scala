@@ -12,7 +12,7 @@ trait Anon_GeoTransform extends js.Object {
 object Anon_GeoTransform {
   @scala.inline
   def apply(geoTransform: js.Any, rasterSize: js.Any): Anon_GeoTransform = {
-    val __obj = js.Dynamic.literal(geoTransform = geoTransform, rasterSize = rasterSize)
+    val __obj = js.Dynamic.literal(geoTransform = geoTransform.asInstanceOf[js.Any], rasterSize = rasterSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_GeoTransform]
   }

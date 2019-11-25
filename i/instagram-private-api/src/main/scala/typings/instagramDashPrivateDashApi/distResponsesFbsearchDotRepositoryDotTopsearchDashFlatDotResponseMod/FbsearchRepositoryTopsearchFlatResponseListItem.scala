@@ -19,10 +19,10 @@ object FbsearchRepositoryTopsearchFlatResponseListItem {
     place: FbsearchRepositoryTopsearchFlatResponsePlace = null,
     user: FbsearchRepositoryTopsearchFlatResponseUser = null
   ): FbsearchRepositoryTopsearchFlatResponseListItem = {
-    val __obj = js.Dynamic.literal(position = position)
-    if (hashtag != null) __obj.updateDynamic("hashtag")(hashtag)
-    if (place != null) __obj.updateDynamic("place")(place)
-    if (user != null) __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
+    if (hashtag != null) __obj.updateDynamic("hashtag")(hashtag.asInstanceOf[js.Any])
+    if (place != null) __obj.updateDynamic("place")(place.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[FbsearchRepositoryTopsearchFlatResponseListItem]
   }
 }

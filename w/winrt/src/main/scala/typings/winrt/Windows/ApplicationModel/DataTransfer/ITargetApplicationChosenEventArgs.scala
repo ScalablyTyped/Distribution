@@ -11,7 +11,7 @@ trait ITargetApplicationChosenEventArgs extends js.Object {
 object ITargetApplicationChosenEventArgs {
   @scala.inline
   def apply(applicationName: String): ITargetApplicationChosenEventArgs = {
-    val __obj = js.Dynamic.literal(applicationName = applicationName)
+    val __obj = js.Dynamic.literal(applicationName = applicationName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITargetApplicationChosenEventArgs]
   }

@@ -26,7 +26,7 @@ object IContactPickerUI {
     removeContact: String => Unit,
     selectionMode: ContactSelectionMode
   ): IContactPickerUI = {
-    val __obj = js.Dynamic.literal(addContact = js.Any.fromFunction2(addContact), containsContact = js.Any.fromFunction1(containsContact), desiredFields = desiredFields, oncontactremoved = oncontactremoved, removeContact = js.Any.fromFunction1(removeContact), selectionMode = selectionMode)
+    val __obj = js.Dynamic.literal(addContact = js.Any.fromFunction2(addContact), containsContact = js.Any.fromFunction1(containsContact), desiredFields = desiredFields.asInstanceOf[js.Any], oncontactremoved = oncontactremoved.asInstanceOf[js.Any], removeContact = js.Any.fromFunction1(removeContact), selectionMode = selectionMode.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IContactPickerUI]
   }

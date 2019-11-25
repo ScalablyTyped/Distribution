@@ -36,18 +36,18 @@ object Options {
     usePrecompiledGzip: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer)
-    if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl)
-    if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (!js.isUndefined(dynamic)) __obj.updateDynamic("dynamic")(dynamic)
-    if (files != null) __obj.updateDynamic("files")(files)
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
+    if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (!js.isUndefined(dynamic)) __obj.updateDynamic("dynamic")(dynamic.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip)
+    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload)
-    if (!js.isUndefined(usePrecompiledGzip)) __obj.updateDynamic("usePrecompiledGzip")(usePrecompiledGzip)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePrecompiledGzip)) __obj.updateDynamic("usePrecompiledGzip")(usePrecompiledGzip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

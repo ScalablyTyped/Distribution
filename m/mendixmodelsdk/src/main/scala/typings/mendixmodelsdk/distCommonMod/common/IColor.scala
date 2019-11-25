@@ -17,7 +17,7 @@ trait IColor extends _PrimitiveValue {
 object IColor {
   @scala.inline
   def apply(blue: Double, green: Double, red: Double): IColor = {
-    val __obj = js.Dynamic.literal(blue = blue, green = green, red = red)
+    val __obj = js.Dynamic.literal(blue = blue.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IColor]
   }

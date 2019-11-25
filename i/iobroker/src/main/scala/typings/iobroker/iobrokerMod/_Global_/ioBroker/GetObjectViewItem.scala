@@ -14,7 +14,7 @@ trait GetObjectViewItem extends js.Object {
 object GetObjectViewItem {
   @scala.inline
   def apply(id: String, value: Object | js.Any): GetObjectViewItem = {
-    val __obj = js.Dynamic.literal(id = id, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetObjectViewItem]
   }

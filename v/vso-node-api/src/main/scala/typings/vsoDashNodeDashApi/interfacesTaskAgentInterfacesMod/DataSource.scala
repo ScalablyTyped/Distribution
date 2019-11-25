@@ -13,7 +13,7 @@ trait DataSource extends js.Object {
 object DataSource {
   @scala.inline
   def apply(endpointUrl: String, name: String, resultSelector: String): DataSource = {
-    val __obj = js.Dynamic.literal(endpointUrl = endpointUrl, name = name, resultSelector = resultSelector)
+    val __obj = js.Dynamic.literal(endpointUrl = endpointUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resultSelector = resultSelector.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DataSource]
   }

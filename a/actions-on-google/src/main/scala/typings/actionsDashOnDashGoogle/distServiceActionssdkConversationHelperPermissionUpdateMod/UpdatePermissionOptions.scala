@@ -22,8 +22,8 @@ trait UpdatePermissionOptions extends js.Object {
 object UpdatePermissionOptions {
   @scala.inline
   def apply(intent: String, arguments: js.Array[GoogleActionsV2Argument] = null): UpdatePermissionOptions = {
-    val __obj = js.Dynamic.literal(intent = intent)
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
+    val __obj = js.Dynamic.literal(intent = intent.asInstanceOf[js.Any])
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePermissionOptions]
   }
 }

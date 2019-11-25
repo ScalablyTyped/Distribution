@@ -12,8 +12,8 @@ trait MeasureObject extends js.Object {
 object MeasureObject {
   @scala.inline
   def apply(uniqueName: String, aggregation: String = null): MeasureObject = {
-    val __obj = js.Dynamic.literal(uniqueName = uniqueName)
-    if (aggregation != null) __obj.updateDynamic("aggregation")(aggregation)
+    val __obj = js.Dynamic.literal(uniqueName = uniqueName.asInstanceOf[js.Any])
+    if (aggregation != null) __obj.updateDynamic("aggregation")(aggregation.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeasureObject]
   }
 }

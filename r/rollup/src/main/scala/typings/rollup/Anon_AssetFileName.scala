@@ -21,7 +21,7 @@ object Anon_AssetFileName {
     moduleId: String,
     relativeAssetPath: String
   ): Anon_AssetFileName = {
-    val __obj = js.Dynamic.literal(assetFileName = assetFileName, chunkId = chunkId, format = format, moduleId = moduleId, relativeAssetPath = relativeAssetPath)
+    val __obj = js.Dynamic.literal(assetFileName = assetFileName.asInstanceOf[js.Any], chunkId = chunkId.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], moduleId = moduleId.asInstanceOf[js.Any], relativeAssetPath = relativeAssetPath.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AssetFileName]
   }

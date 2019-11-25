@@ -12,7 +12,7 @@ object ResolveContext {
   @scala.inline
   def apply(issuer: String = null): ResolveContext = {
     val __obj = js.Dynamic.literal()
-    if (issuer != null) __obj.updateDynamic("issuer")(issuer)
+    if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolveContext]
   }
 }

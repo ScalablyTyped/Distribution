@@ -18,7 +18,7 @@ trait ConfigurationVariableValue extends js.Object {
 object ConfigurationVariableValue {
   @scala.inline
   def apply(isSecret: Boolean, value: String): ConfigurationVariableValue = {
-    val __obj = js.Dynamic.literal(isSecret = isSecret, value = value)
+    val __obj = js.Dynamic.literal(isSecret = isSecret.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConfigurationVariableValue]
   }

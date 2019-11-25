@@ -26,7 +26,7 @@ trait ISelectionStyle extends JSONObject {
 object ISelectionStyle {
   @scala.inline
   def apply(className: String, color: String, displayName: String): ISelectionStyle = {
-    val __obj = js.Dynamic.literal(className = className, color = color, displayName = displayName)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISelectionStyle]
   }

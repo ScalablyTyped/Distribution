@@ -52,16 +52,16 @@ object SignaturePropertiesChangeEventArgs {
     `type`: String = null
   ): SignaturePropertiesChangeEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (currentColor != null) __obj.updateDynamic("currentColor")(currentColor)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (currentColor != null) __obj.updateDynamic("currentColor")(currentColor.asInstanceOf[js.Any])
     if (currentOpacity != null) __obj.updateDynamic("currentOpacity")(currentOpacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(isColorChange)) __obj.updateDynamic("isColorChange")(isColorChange)
-    if (!js.isUndefined(isOpacityChange)) __obj.updateDynamic("isOpacityChange")(isOpacityChange)
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (!js.isUndefined(isColorChange)) __obj.updateDynamic("isColorChange")(isColorChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOpacityChange)) __obj.updateDynamic("isOpacityChange")(isOpacityChange.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     if (pageID != null) __obj.updateDynamic("pageID")(pageID.asInstanceOf[js.Any])
-    if (previousColor != null) __obj.updateDynamic("previousColor")(previousColor)
+    if (previousColor != null) __obj.updateDynamic("previousColor")(previousColor.asInstanceOf[js.Any])
     if (previousOpacity != null) __obj.updateDynamic("previousOpacity")(previousOpacity.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignaturePropertiesChangeEventArgs]
   }
 }

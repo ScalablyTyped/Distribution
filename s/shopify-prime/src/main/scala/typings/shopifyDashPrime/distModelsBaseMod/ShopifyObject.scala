@@ -19,7 +19,7 @@ object ShopifyObject {
   @scala.inline
   def apply(admin_graphql_api_id: String = null, id: Int | Double = null): ShopifyObject = {
     val __obj = js.Dynamic.literal()
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShopifyObject]
   }

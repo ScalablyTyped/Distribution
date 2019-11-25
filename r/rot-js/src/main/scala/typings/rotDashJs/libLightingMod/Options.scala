@@ -16,7 +16,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(emissionThreshold: Double, passes: Double, range: Double): Options = {
-    val __obj = js.Dynamic.literal(emissionThreshold = emissionThreshold, passes = passes, range = range)
+    val __obj = js.Dynamic.literal(emissionThreshold = emissionThreshold.asInstanceOf[js.Any], passes = passes.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

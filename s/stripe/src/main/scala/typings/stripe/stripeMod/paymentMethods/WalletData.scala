@@ -26,7 +26,7 @@ trait WalletData extends js.Object {
 object WalletData {
   @scala.inline
   def apply(billing_address: WalletAddress, email: String, name: String, shipping_address: WalletAddress): WalletData = {
-    val __obj = js.Dynamic.literal(billing_address = billing_address, email = email, name = name, shipping_address = shipping_address)
+    val __obj = js.Dynamic.literal(billing_address = billing_address.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], shipping_address = shipping_address.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WalletData]
   }

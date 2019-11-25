@@ -21,11 +21,11 @@ object OpenListOptions {
     ttl: Int | Double = null
   ): OpenListOptions = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(includeItems)) __obj.updateDynamic("includeItems")(includeItems)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (purpose != null) __obj.updateDynamic("purpose")(purpose)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeItems)) __obj.updateDynamic("includeItems")(includeItems.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (purpose != null) __obj.updateDynamic("purpose")(purpose.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenListOptions]
   }

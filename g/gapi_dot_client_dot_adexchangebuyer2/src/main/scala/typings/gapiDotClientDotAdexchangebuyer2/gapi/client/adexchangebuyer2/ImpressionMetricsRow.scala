@@ -42,12 +42,12 @@ object ImpressionMetricsRow {
     successfulResponses: MetricValue = null
   ): ImpressionMetricsRow = {
     val __obj = js.Dynamic.literal()
-    if (availableImpressions != null) __obj.updateDynamic("availableImpressions")(availableImpressions)
-    if (bidRequests != null) __obj.updateDynamic("bidRequests")(bidRequests)
-    if (inventoryMatches != null) __obj.updateDynamic("inventoryMatches")(inventoryMatches)
-    if (responsesWithBids != null) __obj.updateDynamic("responsesWithBids")(responsesWithBids)
-    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions)
-    if (successfulResponses != null) __obj.updateDynamic("successfulResponses")(successfulResponses)
+    if (availableImpressions != null) __obj.updateDynamic("availableImpressions")(availableImpressions.asInstanceOf[js.Any])
+    if (bidRequests != null) __obj.updateDynamic("bidRequests")(bidRequests.asInstanceOf[js.Any])
+    if (inventoryMatches != null) __obj.updateDynamic("inventoryMatches")(inventoryMatches.asInstanceOf[js.Any])
+    if (responsesWithBids != null) __obj.updateDynamic("responsesWithBids")(responsesWithBids.asInstanceOf[js.Any])
+    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions.asInstanceOf[js.Any])
+    if (successfulResponses != null) __obj.updateDynamic("successfulResponses")(successfulResponses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImpressionMetricsRow]
   }
 }

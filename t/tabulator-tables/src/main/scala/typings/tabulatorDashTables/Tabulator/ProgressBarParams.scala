@@ -25,7 +25,7 @@ object ProgressBarParams {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (legendAlign != null) __obj.updateDynamic("legendAlign")(legendAlign)
+    if (legendAlign != null) __obj.updateDynamic("legendAlign")(legendAlign.asInstanceOf[js.Any])
     if (legendColor != null) __obj.updateDynamic("legendColor")(legendColor.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])

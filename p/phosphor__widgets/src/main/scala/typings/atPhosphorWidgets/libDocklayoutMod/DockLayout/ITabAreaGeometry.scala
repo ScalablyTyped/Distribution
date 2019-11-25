@@ -91,7 +91,7 @@ object ITabAreaGeometry {
     x: Double,
     y: Double
   ): ITabAreaGeometry = {
-    val __obj = js.Dynamic.literal(bottom = bottom, height = height, left = left, right = right, tabBar = tabBar, top = top, width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], tabBar = tabBar.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITabAreaGeometry]
   }

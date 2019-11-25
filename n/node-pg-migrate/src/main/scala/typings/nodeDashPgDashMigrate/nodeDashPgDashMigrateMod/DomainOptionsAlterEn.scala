@@ -12,7 +12,7 @@ object DomainOptionsAlterEn {
   @scala.inline
   def apply(allowNull: js.UndefOr[Boolean] = js.undefined): DomainOptionsAlterEn = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowNull)) __obj.updateDynamic("allowNull")(allowNull)
+    if (!js.isUndefined(allowNull)) __obj.updateDynamic("allowNull")(allowNull.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainOptionsAlterEn]
   }
 }

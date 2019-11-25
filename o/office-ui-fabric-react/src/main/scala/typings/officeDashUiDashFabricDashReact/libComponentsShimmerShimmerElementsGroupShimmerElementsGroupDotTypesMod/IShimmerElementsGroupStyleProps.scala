@@ -17,8 +17,8 @@ trait IShimmerElementsGroupStyleProps extends js.Object {
 object IShimmerElementsGroupStyleProps {
   @scala.inline
   def apply(theme: ITheme, flexWrap: js.UndefOr[Boolean] = js.undefined): IShimmerElementsGroupStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (!js.isUndefined(flexWrap)) __obj.updateDynamic("flexWrap")(flexWrap)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (!js.isUndefined(flexWrap)) __obj.updateDynamic("flexWrap")(flexWrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShimmerElementsGroupStyleProps]
   }
 }

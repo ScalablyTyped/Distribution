@@ -15,8 +15,8 @@ object ManagedConfigurationsForUserListResponse {
   @scala.inline
   def apply(kind: String = null, managedConfigurationForUser: js.Array[ManagedConfiguration] = null): ManagedConfigurationsForUserListResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (managedConfigurationForUser != null) __obj.updateDynamic("managedConfigurationForUser")(managedConfigurationForUser)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (managedConfigurationForUser != null) __obj.updateDynamic("managedConfigurationForUser")(managedConfigurationForUser.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedConfigurationsForUserListResponse]
   }
 }

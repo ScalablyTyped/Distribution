@@ -12,7 +12,7 @@ trait ExtractedICSS extends js.Object {
 object ExtractedICSS {
   @scala.inline
   def apply(icssExports: CSSExports, icssImports: CSSImports): ExtractedICSS = {
-    val __obj = js.Dynamic.literal(icssExports = icssExports, icssImports = icssImports)
+    val __obj = js.Dynamic.literal(icssExports = icssExports.asInstanceOf[js.Any], icssImports = icssImports.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExtractedICSS]
   }

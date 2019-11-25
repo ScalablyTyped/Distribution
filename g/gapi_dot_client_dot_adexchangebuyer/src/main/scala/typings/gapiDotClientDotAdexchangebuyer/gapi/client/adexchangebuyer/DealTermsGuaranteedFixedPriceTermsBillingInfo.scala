@@ -30,10 +30,10 @@ object DealTermsGuaranteedFixedPriceTermsBillingInfo {
     price: Price = null
   ): DealTermsGuaranteedFixedPriceTermsBillingInfo = {
     val __obj = js.Dynamic.literal()
-    if (currencyConversionTimeMs != null) __obj.updateDynamic("currencyConversionTimeMs")(currencyConversionTimeMs)
-    if (dfpLineItemId != null) __obj.updateDynamic("dfpLineItemId")(dfpLineItemId)
-    if (originalContractedQuantity != null) __obj.updateDynamic("originalContractedQuantity")(originalContractedQuantity)
-    if (price != null) __obj.updateDynamic("price")(price)
+    if (currencyConversionTimeMs != null) __obj.updateDynamic("currencyConversionTimeMs")(currencyConversionTimeMs.asInstanceOf[js.Any])
+    if (dfpLineItemId != null) __obj.updateDynamic("dfpLineItemId")(dfpLineItemId.asInstanceOf[js.Any])
+    if (originalContractedQuantity != null) __obj.updateDynamic("originalContractedQuantity")(originalContractedQuantity.asInstanceOf[js.Any])
+    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
     __obj.asInstanceOf[DealTermsGuaranteedFixedPriceTermsBillingInfo]
   }
 }

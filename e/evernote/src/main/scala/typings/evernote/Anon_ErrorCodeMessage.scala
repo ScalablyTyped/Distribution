@@ -14,8 +14,8 @@ trait Anon_ErrorCodeMessage extends js.Object {
 object Anon_ErrorCodeMessage {
   @scala.inline
   def apply(errorCode: EDAMErrorCode, message: String = null, rateLimitDuration: Int | Double = null): Anon_ErrorCodeMessage = {
-    val __obj = js.Dynamic.literal(errorCode = errorCode)
-    if (message != null) __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (rateLimitDuration != null) __obj.updateDynamic("rateLimitDuration")(rateLimitDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ErrorCodeMessage]
   }

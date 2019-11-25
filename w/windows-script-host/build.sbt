@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "windows-script-host"
-version := "5.8-dt-20190213Z-7a702b"
+version := "5.8-dt-20190213Z-f778a8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "activex-interop" % "0.0-dt-20190213Z-7f1d52",
-  "org.scalablytyped" %%% "activex-iwshruntimelibrary" % "0.0-dt-20190213Z-707db4",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
+  "org.scalablytyped" %%% "activex-interop" % "0.0-dt-20190213Z-5f8032",
+  "org.scalablytyped" %%% "activex-iwshruntimelibrary" % "0.0-dt-20190213Z-6e6035",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

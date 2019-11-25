@@ -22,8 +22,8 @@ object PartialObserver {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
-    if (registerParent != null) __obj.updateDynamic("registerParent")(registerParent)
-    if (update != null) __obj.updateDynamic("update")(update)
+    if (registerParent != null) __obj.updateDynamic("registerParent")(registerParent.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialObserver]
   }
 }

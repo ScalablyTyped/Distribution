@@ -23,8 +23,8 @@ trait TeamsCreateDiscussionParams extends js.Object {
 object TeamsCreateDiscussionParams {
   @scala.inline
   def apply(body: String, team_id: Double, title: String, `private`: js.UndefOr[Boolean] = js.undefined): TeamsCreateDiscussionParams = {
-    val __obj = js.Dynamic.literal(body = body, team_id = team_id, title = title)
-    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsCreateDiscussionParams]
   }
 }

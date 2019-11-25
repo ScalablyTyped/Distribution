@@ -12,7 +12,7 @@ trait Firmware extends js.Object {
 object Firmware {
   @scala.inline
   def apply(name: String, version: Version): Firmware = {
-    val __obj = js.Dynamic.literal(name = name, version = version)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Firmware]
   }

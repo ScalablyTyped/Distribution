@@ -18,7 +18,7 @@ object RootCategoriesResource {
     infoTypes: InfoTypesResource,
     list: Anon_AccesstokenAltBearertokenCallbackFields => Request[GooglePrivacyDlpV2beta1ListRootCategoriesResponse]
   ): RootCategoriesResource = {
-    val __obj = js.Dynamic.literal(infoTypes = infoTypes, list = js.Any.fromFunction1(list))
+    val __obj = js.Dynamic.literal(infoTypes = infoTypes.asInstanceOf[js.Any], list = js.Any.fromFunction1(list))
   
     __obj.asInstanceOf[RootCategoriesResource]
   }

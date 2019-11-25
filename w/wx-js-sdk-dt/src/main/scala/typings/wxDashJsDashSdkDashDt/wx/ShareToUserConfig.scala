@@ -44,12 +44,12 @@ object ShareToUserConfig {
     val __obj = js.Dynamic.literal()
     if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction0(cancel))
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (desc != null) __obj.updateDynamic("desc")(desc)
+    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (imgUrl != null) __obj.updateDynamic("imgUrl")(imgUrl)
-    if (link != null) __obj.updateDynamic("link")(link)
+    if (imgUrl != null) __obj.updateDynamic("imgUrl")(imgUrl.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(js.Any.fromFunction0(trigger))
     __obj.asInstanceOf[ShareToUserConfig]
   }

@@ -20,9 +20,9 @@ object NodesInterfaceAttribute {
   @scala.inline
   def apply(name: String = null, scope: String = null, `type`: String = null): NodesInterfaceAttribute = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesInterfaceAttribute]
   }
 }

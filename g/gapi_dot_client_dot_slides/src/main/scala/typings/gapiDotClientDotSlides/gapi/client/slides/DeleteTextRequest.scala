@@ -35,9 +35,9 @@ object DeleteTextRequest {
   @scala.inline
   def apply(cellLocation: TableCellLocation = null, objectId: String = null, textRange: Range = null): DeleteTextRequest = {
     val __obj = js.Dynamic.literal()
-    if (cellLocation != null) __obj.updateDynamic("cellLocation")(cellLocation)
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
-    if (textRange != null) __obj.updateDynamic("textRange")(textRange)
+    if (cellLocation != null) __obj.updateDynamic("cellLocation")(cellLocation.asInstanceOf[js.Any])
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
+    if (textRange != null) __obj.updateDynamic("textRange")(textRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTextRequest]
   }
 }

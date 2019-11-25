@@ -62,16 +62,16 @@ object ShowModalOptions {
     title: String = null
   ): ShowModalOptions = {
     val __obj = js.Dynamic.literal()
-    if (cancelColor != null) __obj.updateDynamic("cancelColor")(cancelColor)
-    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText)
+    if (cancelColor != null) __obj.updateDynamic("cancelColor")(cancelColor.asInstanceOf[js.Any])
+    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
-    if (confirmColor != null) __obj.updateDynamic("confirmColor")(confirmColor)
-    if (confirmText != null) __obj.updateDynamic("confirmText")(confirmText)
-    if (content != null) __obj.updateDynamic("content")(content)
+    if (confirmColor != null) __obj.updateDynamic("confirmColor")(confirmColor.asInstanceOf[js.Any])
+    if (confirmText != null) __obj.updateDynamic("confirmText")(confirmText.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (!js.isUndefined(showCancel)) __obj.updateDynamic("showCancel")(showCancel)
+    if (!js.isUndefined(showCancel)) __obj.updateDynamic("showCancel")(showCancel.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowModalOptions]
   }
 }

@@ -41,11 +41,11 @@ object CandidateTemplate {
     parentId: Int | Double = null,
     usage: CandidateUsage = null
   ): CandidateTemplate = {
-    val __obj = js.Dynamic.literal(candidate = candidate, id = id)
-    if (annotation != null) __obj.updateDynamic("annotation")(annotation)
-    if (label != null) __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(candidate = candidate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
-    if (usage != null) __obj.updateDynamic("usage")(usage)
+    if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
     __obj.asInstanceOf[CandidateTemplate]
   }
 }

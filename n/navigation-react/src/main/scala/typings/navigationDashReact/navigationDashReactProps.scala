@@ -12,7 +12,7 @@ trait navigationDashReactProps {
   def NavigationBackLinkProps: typings.navigationDashReact.navigationDashReactMod.NavigationBackLinkProps.type = typings.navigationDashReact.navigationDashReactMod.NavigationBackLinkProps
   type NavigationBackLinkProps = typings.navigationDashReact.navigationDashReactMod.NavigationBackLinkProps
   @scala.inline
-  def NavigationHandlerProps: typings.navigationDashReact.Anon_StateNavigator.type = typings.navigationDashReact.Anon_StateNavigator
+  def NavigationHandlerProps: Anon_StateNavigator.type = typings.navigationDashReact.Anon_StateNavigator
   type NavigationHandlerProps = Anon_StateNavigator
   @scala.inline
   def NavigationLinkProps: typings.navigationDashReact.navigationDashReactMod.NavigationLinkProps.type = typings.navigationDashReact.navigationDashReactMod.NavigationLinkProps

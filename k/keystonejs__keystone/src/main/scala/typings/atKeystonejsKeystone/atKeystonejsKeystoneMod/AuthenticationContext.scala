@@ -12,7 +12,7 @@ trait AuthenticationContext extends js.Object {
 object AuthenticationContext {
   @scala.inline
   def apply(authentication: Anon_Item): AuthenticationContext = {
-    val __obj = js.Dynamic.literal(authentication = authentication)
+    val __obj = js.Dynamic.literal(authentication = authentication.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AuthenticationContext]
   }

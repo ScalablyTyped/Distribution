@@ -19,9 +19,9 @@ trait GetPooledConnectionOptions extends js.Object {
 object GetPooledConnectionOptions {
   @scala.inline
   def apply(user: String, password: String = null, tag: String = null): GetPooledConnectionOptions = {
-    val __obj = js.Dynamic.literal(user = user)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(user = user.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPooledConnectionOptions]
   }
 }

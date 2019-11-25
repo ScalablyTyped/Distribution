@@ -15,8 +15,8 @@ object Anon_Icon {
   @scala.inline
   def apply(icon: Anon_Ios = null, ref: RefObject[HTMLIonBackButtonElement] = null): Anon_Icon = {
     val __obj = js.Dynamic.literal()
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Icon]
   }
 }

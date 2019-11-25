@@ -31,9 +31,9 @@ object LayersBubbleSettingsColorMappingsRangeColorMapping {
     to: Int | Double = null
   ): LayersBubbleSettingsColorMappingsRangeColorMapping = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (gradientColors != null) __obj.updateDynamic("gradientColors")(gradientColors)
+    if (gradientColors != null) __obj.updateDynamic("gradientColors")(gradientColors.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayersBubbleSettingsColorMappingsRangeColorMapping]
   }

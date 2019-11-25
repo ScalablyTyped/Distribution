@@ -14,9 +14,9 @@ trait Configuration extends js.Object {
 object Configuration {
   @scala.inline
   def apply(uri: String, options: ClientOptions = null, webSocketImpl: js.Any = null): Configuration = {
-    val __obj = js.Dynamic.literal(uri = uri)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (webSocketImpl != null) __obj.updateDynamic("webSocketImpl")(webSocketImpl)
+    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (webSocketImpl != null) __obj.updateDynamic("webSocketImpl")(webSocketImpl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
 }

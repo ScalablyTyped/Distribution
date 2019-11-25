@@ -17,7 +17,7 @@ object CloseProps {
   @scala.inline
   def apply(onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit, className: String = null): CloseProps = {
     val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick))
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseProps]
   }
 }

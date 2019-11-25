@@ -30,14 +30,14 @@ object Iconfig {
     start: Int | Double = null
   ): Iconfig = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (filterExpression != null) __obj.updateDynamic("filterExpression")(filterExpression)
-    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging)
+    if (filterExpression != null) __obj.updateDynamic("filterExpression")(filterExpression.asInstanceOf[js.Any])
+    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
     if (maxUnitsUsage != null) __obj.updateDynamic("maxUnitsUsage")(maxUnitsUsage.asInstanceOf[js.Any])
-    if (recordType != null) __obj.updateDynamic("recordType")(recordType)
-    if (searchId != null) __obj.updateDynamic("searchId")(searchId)
-    if (!js.isUndefined(smartConvert)) __obj.updateDynamic("smartConvert")(smartConvert)
+    if (recordType != null) __obj.updateDynamic("recordType")(recordType.asInstanceOf[js.Any])
+    if (searchId != null) __obj.updateDynamic("searchId")(searchId.asInstanceOf[js.Any])
+    if (!js.isUndefined(smartConvert)) __obj.updateDynamic("smartConvert")(smartConvert.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Iconfig]
   }

@@ -25,7 +25,7 @@ object PollOptions {
     if (ceiling != null) __obj.updateDynamic("ceiling")(ceiling.asInstanceOf[js.Any])
     if (floor != null) __obj.updateDynamic("floor")(floor.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (onceBlock != null) __obj.updateDynamic("onceBlock")(onceBlock)
+    if (onceBlock != null) __obj.updateDynamic("onceBlock")(onceBlock.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[PollOptions]
   }

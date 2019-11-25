@@ -16,8 +16,8 @@ trait ApiKey extends js.Object {
 object ApiKey {
   @scala.inline
   def apply(key: String, name: String, created_at: String = null): ApiKey = {
-    val __obj = js.Dynamic.literal(key = key, name = name)
-    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiKey]
   }
 }

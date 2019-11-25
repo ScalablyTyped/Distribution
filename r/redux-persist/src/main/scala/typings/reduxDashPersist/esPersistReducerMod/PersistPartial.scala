@@ -12,7 +12,7 @@ trait PersistPartial extends js.Object {
 object PersistPartial {
   @scala.inline
   def apply(_persist: PersistState): PersistPartial = {
-    val __obj = js.Dynamic.literal(_persist = _persist)
+    val __obj = js.Dynamic.literal(_persist = _persist.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PersistPartial]
   }

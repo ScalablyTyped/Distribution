@@ -13,7 +13,7 @@ object FormatOptions {
   @scala.inline
   def apply(colors: js.UndefOr[Boolean] = js.undefined, indent: Int | Double = null): FormatOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors)
+    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatOptions]
   }

@@ -13,7 +13,7 @@ object HasRules {
   @scala.inline
   def apply(rules: StringDictionary[RuleLevel | RuleLevelAndOptions] = null): HasRules = {
     val __obj = js.Dynamic.literal()
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasRules]
   }
 }

@@ -11,7 +11,7 @@ trait Anon_Hinv extends js.Object {
 object Anon_Hinv {
   @scala.inline
   def apply(Hinv: Matrix): Anon_Hinv = {
-    val __obj = js.Dynamic.literal(Hinv = Hinv)
+    val __obj = js.Dynamic.literal(Hinv = Hinv.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Hinv]
   }

@@ -11,7 +11,7 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(fancybox: FancyBoxJQueryMethods): JQueryStatic = {
-    val __obj = js.Dynamic.literal(fancybox = fancybox)
+    val __obj = js.Dynamic.literal(fancybox = fancybox.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JQueryStatic]
   }

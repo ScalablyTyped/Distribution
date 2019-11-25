@@ -37,19 +37,19 @@ object CrossOriginLoginOptions {
     state: String = null,
     username: String = null
   ): CrossOriginLoginOptions = {
-    val __obj = js.Dynamic.literal(password = password)
-    if (audience != null) __obj.updateDynamic("audience")(audience)
-    if (clientID != null) __obj.updateDynamic("clientID")(clientID)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
-    if (realm != null) __obj.updateDynamic("realm")(realm)
-    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
-    if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode)
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (username != null) __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any])
+    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
+    if (clientID != null) __obj.updateDynamic("clientID")(clientID.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
+    if (realm != null) __obj.updateDynamic("realm")(realm.asInstanceOf[js.Any])
+    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri.asInstanceOf[js.Any])
+    if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrossOriginLoginOptions]
   }
 }

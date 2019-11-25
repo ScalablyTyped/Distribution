@@ -23,11 +23,11 @@ object ISPClientAutoFillData {
     AutoFillTitleText: String = null
   ): ISPClientAutoFillData = {
     val __obj = js.Dynamic.literal()
-    if (AutoFillDisplayText != null) __obj.updateDynamic("AutoFillDisplayText")(AutoFillDisplayText)
-    if (AutoFillKey != null) __obj.updateDynamic("AutoFillKey")(AutoFillKey)
+    if (AutoFillDisplayText != null) __obj.updateDynamic("AutoFillDisplayText")(AutoFillDisplayText.asInstanceOf[js.Any])
+    if (AutoFillKey != null) __obj.updateDynamic("AutoFillKey")(AutoFillKey.asInstanceOf[js.Any])
     if (AutoFillMenuOptionType != null) __obj.updateDynamic("AutoFillMenuOptionType")(AutoFillMenuOptionType.asInstanceOf[js.Any])
-    if (AutoFillSubDisplayText != null) __obj.updateDynamic("AutoFillSubDisplayText")(AutoFillSubDisplayText)
-    if (AutoFillTitleText != null) __obj.updateDynamic("AutoFillTitleText")(AutoFillTitleText)
+    if (AutoFillSubDisplayText != null) __obj.updateDynamic("AutoFillSubDisplayText")(AutoFillSubDisplayText.asInstanceOf[js.Any])
+    if (AutoFillTitleText != null) __obj.updateDynamic("AutoFillTitleText")(AutoFillTitleText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISPClientAutoFillData]
   }
 }

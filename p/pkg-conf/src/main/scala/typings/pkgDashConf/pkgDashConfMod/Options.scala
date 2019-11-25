@@ -35,9 +35,9 @@ object Options {
   @scala.inline
   def apply[ConfigType /* <: Config */](cwd: String = null, defaults: ConfigType = null, skipOnFalse: js.UndefOr[Boolean] = js.undefined): Options[ConfigType] = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
     if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipOnFalse)) __obj.updateDynamic("skipOnFalse")(skipOnFalse)
+    if (!js.isUndefined(skipOnFalse)) __obj.updateDynamic("skipOnFalse")(skipOnFalse.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[ConfigType]]
   }
 }

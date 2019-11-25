@@ -23,9 +23,9 @@ object ColumnLayout {
     visible: js.UndefOr[Boolean] = js.undefined,
     width: Double | String = null
   ): ColumnLayout = {
-    val __obj = js.Dynamic.literal(title = title)
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnLayout]
   }

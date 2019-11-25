@@ -54,9 +54,9 @@ object AccessibilityAnnounceNewDataOptions {
     minAnnounceInterval: Int | Double = null
   ): AccessibilityAnnounceNewDataOptions = {
     val __obj = js.Dynamic.literal()
-    if (announcementFormatter != null) __obj.updateDynamic("announcementFormatter")(announcementFormatter)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (!js.isUndefined(interruptUser)) __obj.updateDynamic("interruptUser")(interruptUser)
+    if (announcementFormatter != null) __obj.updateDynamic("announcementFormatter")(announcementFormatter.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(interruptUser)) __obj.updateDynamic("interruptUser")(interruptUser.asInstanceOf[js.Any])
     if (minAnnounceInterval != null) __obj.updateDynamic("minAnnounceInterval")(minAnnounceInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessibilityAnnounceNewDataOptions]
   }

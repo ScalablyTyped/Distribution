@@ -27,8 +27,8 @@ object LanguagesResource {
     name: String = null
   ): LanguagesResource = {
     val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguagesResource]
   }
 }

@@ -14,7 +14,7 @@ object IIntentProps {
   @scala.inline
   def apply(intent: Intent = null): IIntentProps = {
     val __obj = js.Dynamic.literal()
-    if (intent != null) __obj.updateDynamic("intent")(intent)
+    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIntentProps]
   }
 }

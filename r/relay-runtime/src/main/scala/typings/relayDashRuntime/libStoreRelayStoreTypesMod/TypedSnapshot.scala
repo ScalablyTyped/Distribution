@@ -14,7 +14,7 @@ trait TypedSnapshot[TData] extends js.Object {
 object TypedSnapshot {
   @scala.inline
   def apply[TData](data: TData, isMissingData: Boolean, seenRecords: RecordMap, selector: SingularReaderSelector): TypedSnapshot[TData] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], isMissingData = isMissingData, seenRecords = seenRecords, selector = selector)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], isMissingData = isMissingData.asInstanceOf[js.Any], seenRecords = seenRecords.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypedSnapshot[TData]]
   }

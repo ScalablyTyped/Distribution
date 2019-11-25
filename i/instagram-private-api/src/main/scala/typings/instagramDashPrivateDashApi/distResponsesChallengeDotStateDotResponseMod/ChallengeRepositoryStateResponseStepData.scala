@@ -29,7 +29,7 @@ object ChallengeRepositoryStateResponseStepData {
     resend_delay: Double,
     security_code: String
   ): ChallengeRepositoryStateResponseStepData = {
-    val __obj = js.Dynamic.literal(big_blue_token = big_blue_token, choice = choice, contact_point = contact_point, email = email, fb_access_token = fb_access_token, form_type = form_type, google_oauth_token = google_oauth_token, resend_delay = resend_delay, security_code = security_code)
+    val __obj = js.Dynamic.literal(big_blue_token = big_blue_token.asInstanceOf[js.Any], choice = choice.asInstanceOf[js.Any], contact_point = contact_point.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], fb_access_token = fb_access_token.asInstanceOf[js.Any], form_type = form_type.asInstanceOf[js.Any], google_oauth_token = google_oauth_token.asInstanceOf[js.Any], resend_delay = resend_delay.asInstanceOf[js.Any], security_code = security_code.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChallengeRepositoryStateResponseStepData]
   }

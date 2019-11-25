@@ -14,7 +14,7 @@ trait FileExistsPlugin extends js.Object {
 object FileExistsPlugin {
   @scala.inline
   def apply(apply: typings.enhancedDashResolve.libResolverMod.^ => Unit, source: String, target: String): FileExistsPlugin = {
-    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), source = source, target = target)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FileExistsPlugin]
   }

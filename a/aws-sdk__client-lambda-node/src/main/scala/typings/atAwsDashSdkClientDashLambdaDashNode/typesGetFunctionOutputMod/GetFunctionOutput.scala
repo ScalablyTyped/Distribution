@@ -43,11 +43,11 @@ object GetFunctionOutput {
     Configuration: _UnmarshalledFunctionConfiguration = null,
     Tags: StringDictionary[String] = null
   ): GetFunctionOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (Code != null) __obj.updateDynamic("Code")(Code)
-    if (Concurrency != null) __obj.updateDynamic("Concurrency")(Concurrency)
-    if (Configuration != null) __obj.updateDynamic("Configuration")(Configuration)
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (Code != null) __obj.updateDynamic("Code")(Code.asInstanceOf[js.Any])
+    if (Concurrency != null) __obj.updateDynamic("Concurrency")(Concurrency.asInstanceOf[js.Any])
+    if (Configuration != null) __obj.updateDynamic("Configuration")(Configuration.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFunctionOutput]
   }
 }

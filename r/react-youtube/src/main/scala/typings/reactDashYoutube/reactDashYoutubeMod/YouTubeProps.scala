@@ -41,9 +41,9 @@ object YouTubeProps {
     videoId: String = null
   ): YouTubeProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (onEnd != null) __obj.updateDynamic("onEnd")(js.Any.fromFunction1(onEnd))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction1(onPause))
@@ -52,8 +52,8 @@ object YouTubeProps {
     if (onPlaybackRateChange != null) __obj.updateDynamic("onPlaybackRateChange")(js.Any.fromFunction1(onPlaybackRateChange))
     if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction1(onReady))
     if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction1(onStateChange))
-    if (opts != null) __obj.updateDynamic("opts")(opts)
-    if (videoId != null) __obj.updateDynamic("videoId")(videoId)
+    if (opts != null) __obj.updateDynamic("opts")(opts.asInstanceOf[js.Any])
+    if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])
     __obj.asInstanceOf[YouTubeProps]
   }
 }

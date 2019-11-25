@@ -29,12 +29,12 @@ object ExpandChoiceOptions {
     value: js.Any = null
   ): ExpandChoiceOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (extra != null) __obj.updateDynamic("extra")(extra)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (short != null) __obj.updateDynamic("short")(short)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (short != null) __obj.updateDynamic("short")(short.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpandChoiceOptions[T]]
   }
 }

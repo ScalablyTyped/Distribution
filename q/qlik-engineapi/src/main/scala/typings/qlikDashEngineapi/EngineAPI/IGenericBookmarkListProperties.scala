@@ -16,7 +16,7 @@ trait IGenericBookmarkListProperties extends IGenericProperties {
 object IGenericBookmarkListProperties {
   @scala.inline
   def apply(qBookmarkListDef: IBookmarkListDef, qInfo: IGenericBookmarkListNxInfo): IGenericBookmarkListProperties = {
-    val __obj = js.Dynamic.literal(qBookmarkListDef = qBookmarkListDef, qInfo = qInfo)
+    val __obj = js.Dynamic.literal(qBookmarkListDef = qBookmarkListDef.asInstanceOf[js.Any], qInfo = qInfo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IGenericBookmarkListProperties]
   }

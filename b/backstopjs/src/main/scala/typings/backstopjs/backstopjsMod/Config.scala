@@ -54,21 +54,21 @@ object Config {
     report: js.Array[browser | CI | json] = null,
     resembleOutputOptions: Anon_ErrorColor = null
   ): Config = {
-    val __obj = js.Dynamic.literal(id = id, scenarios = scenarios, viewports = viewports)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], scenarios = scenarios.asInstanceOf[js.Any], viewports = viewports.asInstanceOf[js.Any])
     if (asyncCaptureLimit != null) __obj.updateDynamic("asyncCaptureLimit")(asyncCaptureLimit.asInstanceOf[js.Any])
     if (asyncCompareLimit != null) __obj.updateDynamic("asyncCompareLimit")(asyncCompareLimit.asInstanceOf[js.Any])
-    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
-    if (ci != null) __obj.updateDynamic("ci")(ci)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (!js.isUndefined(debugWindow)) __obj.updateDynamic("debugWindow")(debugWindow)
-    if (dockerCommandTemplate != null) __obj.updateDynamic("dockerCommandTemplate")(dockerCommandTemplate)
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
+    if (ci != null) __obj.updateDynamic("ci")(ci.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (!js.isUndefined(debugWindow)) __obj.updateDynamic("debugWindow")(debugWindow.asInstanceOf[js.Any])
+    if (dockerCommandTemplate != null) __obj.updateDynamic("dockerCommandTemplate")(dockerCommandTemplate.asInstanceOf[js.Any])
     if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
-    if (engineOptions != null) __obj.updateDynamic("engineOptions")(engineOptions)
-    if (onBeforeScript != null) __obj.updateDynamic("onBeforeScript")(onBeforeScript)
-    if (onReadyScript != null) __obj.updateDynamic("onReadyScript")(onReadyScript)
-    if (paths != null) __obj.updateDynamic("paths")(paths)
-    if (report != null) __obj.updateDynamic("report")(report)
-    if (resembleOutputOptions != null) __obj.updateDynamic("resembleOutputOptions")(resembleOutputOptions)
+    if (engineOptions != null) __obj.updateDynamic("engineOptions")(engineOptions.asInstanceOf[js.Any])
+    if (onBeforeScript != null) __obj.updateDynamic("onBeforeScript")(onBeforeScript.asInstanceOf[js.Any])
+    if (onReadyScript != null) __obj.updateDynamic("onReadyScript")(onReadyScript.asInstanceOf[js.Any])
+    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
+    if (report != null) __obj.updateDynamic("report")(report.asInstanceOf[js.Any])
+    if (resembleOutputOptions != null) __obj.updateDynamic("resembleOutputOptions")(resembleOutputOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

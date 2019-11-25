@@ -18,9 +18,9 @@ object IOptions {
     nullFormat: nullFormat = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (arrayFormat != null) __obj.updateDynamic("arrayFormat")(arrayFormat)
-    if (booleanFormat != null) __obj.updateDynamic("booleanFormat")(booleanFormat)
-    if (nullFormat != null) __obj.updateDynamic("nullFormat")(nullFormat)
+    if (arrayFormat != null) __obj.updateDynamic("arrayFormat")(arrayFormat.asInstanceOf[js.Any])
+    if (booleanFormat != null) __obj.updateDynamic("booleanFormat")(booleanFormat.asInstanceOf[js.Any])
+    if (nullFormat != null) __obj.updateDynamic("nullFormat")(nullFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

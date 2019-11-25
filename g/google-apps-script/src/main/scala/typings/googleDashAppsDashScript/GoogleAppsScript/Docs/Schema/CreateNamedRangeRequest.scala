@@ -13,8 +13,8 @@ object CreateNamedRangeRequest {
   @scala.inline
   def apply(name: String = null, range: Range = null): CreateNamedRangeRequest = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (range != null) __obj.updateDynamic("range")(range)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateNamedRangeRequest]
   }
 }

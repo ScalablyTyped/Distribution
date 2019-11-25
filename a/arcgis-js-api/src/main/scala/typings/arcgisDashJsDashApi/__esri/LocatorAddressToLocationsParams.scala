@@ -106,16 +106,16 @@ object LocatorAddressToLocationsParams {
     outFields: js.Array[String] = null,
     searchExtent: Extent = null
   ): LocatorAddressToLocationsParams = {
-    val __obj = js.Dynamic.literal(address = address, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (categories != null) __obj.updateDynamic("categories")(categories)
-    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode)
-    if (!js.isUndefined(forStorage)) __obj.updateDynamic("forStorage")(forStorage)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (locationType != null) __obj.updateDynamic("locationType")(locationType)
-    if (magicKey != null) __obj.updateDynamic("magicKey")(magicKey)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
+    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(forStorage)) __obj.updateDynamic("forStorage")(forStorage.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (locationType != null) __obj.updateDynamic("locationType")(locationType.asInstanceOf[js.Any])
+    if (magicKey != null) __obj.updateDynamic("magicKey")(magicKey.asInstanceOf[js.Any])
     if (maxLocations != null) __obj.updateDynamic("maxLocations")(maxLocations.asInstanceOf[js.Any])
-    if (outFields != null) __obj.updateDynamic("outFields")(outFields)
-    if (searchExtent != null) __obj.updateDynamic("searchExtent")(searchExtent)
+    if (outFields != null) __obj.updateDynamic("outFields")(outFields.asInstanceOf[js.Any])
+    if (searchExtent != null) __obj.updateDynamic("searchExtent")(searchExtent.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocatorAddressToLocationsParams]
   }
 }

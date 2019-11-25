@@ -11,7 +11,7 @@ trait audioTrackSwitchingData extends js.Object {
 object audioTrackSwitchingData {
   @scala.inline
   def apply(id: String): audioTrackSwitchingData = {
-    val __obj = js.Dynamic.literal(id = id)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[audioTrackSwitchingData]
   }

@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait PermissionState extends js.Object
 
+object PermissionState {
+  @scala.inline
+  def NO: typings.detox.detoxStrings.NO = this.cast("NO")
+  @scala.inline
+  def YES: typings.detox.detoxStrings.YES = this.cast("YES")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def unset: typings.detox.detoxStrings.unset = this.cast("unset")
+}
+

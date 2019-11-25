@@ -97,7 +97,7 @@ object CypressRunOptions {
     reporterOptions: js.Any,
     spec: String
   ): CypressRunOptions = {
-    val __obj = js.Dynamic.literal(browser = browser, ciBuildId = ciBuildId, config = config, configFile = configFile.asInstanceOf[js.Any], env = env, group = group, headed = headed, key = key, noExit = noExit, parallel = parallel, port = port, project = project, record = record, reporter = reporter, reporterOptions = reporterOptions, spec = spec)
+    val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], ciBuildId = ciBuildId.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], configFile = configFile.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], headed = headed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], noExit = noExit.asInstanceOf[js.Any], parallel = parallel.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], record = record.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], reporterOptions = reporterOptions.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CypressRunOptions]
   }

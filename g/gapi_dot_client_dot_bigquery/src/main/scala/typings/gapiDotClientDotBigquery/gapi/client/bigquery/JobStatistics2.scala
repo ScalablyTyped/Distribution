@@ -46,16 +46,16 @@ object JobStatistics2 {
   ): JobStatistics2 = {
     val __obj = js.Dynamic.literal()
     if (billingTier != null) __obj.updateDynamic("billingTier")(billingTier.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheHit)) __obj.updateDynamic("cacheHit")(cacheHit)
-    if (numDmlAffectedRows != null) __obj.updateDynamic("numDmlAffectedRows")(numDmlAffectedRows)
-    if (queryPlan != null) __obj.updateDynamic("queryPlan")(queryPlan)
-    if (referencedTables != null) __obj.updateDynamic("referencedTables")(referencedTables)
-    if (schema != null) __obj.updateDynamic("schema")(schema)
-    if (statementType != null) __obj.updateDynamic("statementType")(statementType)
-    if (totalBytesBilled != null) __obj.updateDynamic("totalBytesBilled")(totalBytesBilled)
-    if (totalBytesProcessed != null) __obj.updateDynamic("totalBytesProcessed")(totalBytesProcessed)
-    if (totalSlotMs != null) __obj.updateDynamic("totalSlotMs")(totalSlotMs)
-    if (undeclaredQueryParameters != null) __obj.updateDynamic("undeclaredQueryParameters")(undeclaredQueryParameters)
+    if (!js.isUndefined(cacheHit)) __obj.updateDynamic("cacheHit")(cacheHit.asInstanceOf[js.Any])
+    if (numDmlAffectedRows != null) __obj.updateDynamic("numDmlAffectedRows")(numDmlAffectedRows.asInstanceOf[js.Any])
+    if (queryPlan != null) __obj.updateDynamic("queryPlan")(queryPlan.asInstanceOf[js.Any])
+    if (referencedTables != null) __obj.updateDynamic("referencedTables")(referencedTables.asInstanceOf[js.Any])
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    if (statementType != null) __obj.updateDynamic("statementType")(statementType.asInstanceOf[js.Any])
+    if (totalBytesBilled != null) __obj.updateDynamic("totalBytesBilled")(totalBytesBilled.asInstanceOf[js.Any])
+    if (totalBytesProcessed != null) __obj.updateDynamic("totalBytesProcessed")(totalBytesProcessed.asInstanceOf[js.Any])
+    if (totalSlotMs != null) __obj.updateDynamic("totalSlotMs")(totalSlotMs.asInstanceOf[js.Any])
+    if (undeclaredQueryParameters != null) __obj.updateDynamic("undeclaredQueryParameters")(undeclaredQueryParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobStatistics2]
   }
 }

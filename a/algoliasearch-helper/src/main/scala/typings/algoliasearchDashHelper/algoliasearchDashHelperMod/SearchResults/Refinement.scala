@@ -30,7 +30,7 @@ object Refinement {
     operator: String,
     `type`: numeric | facet | exclude | disjunctive | hierarchical
   ): Refinement = {
-    val __obj = js.Dynamic.literal(attributeName = attributeName, count = count, exhaustive = exhaustive, name = name, numericValue = numericValue, operator = operator)
+    val __obj = js.Dynamic.literal(attributeName = attributeName.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], exhaustive = exhaustive.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], numericValue = numericValue.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Refinement]
   }

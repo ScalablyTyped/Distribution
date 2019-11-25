@@ -37,15 +37,15 @@ object LocationRepositoryStoryResponseLocation {
     profile_pic_username: String = null,
     `type`: String = null
   ): LocationRepositoryStoryResponseLocation = {
-    val __obj = js.Dynamic.literal(lat = lat, lng = lng.asInstanceOf[js.Any], name = name, pk = pk, short_name = short_name)
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (city != null) __obj.updateDynamic("city")(city)
-    if (external_source != null) __obj.updateDynamic("external_source")(external_source)
+    val __obj = js.Dynamic.literal(lat = lat.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], short_name = short_name.asInstanceOf[js.Any])
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
+    if (external_source != null) __obj.updateDynamic("external_source")(external_source.asInstanceOf[js.Any])
     if (facebook_places_id != null) __obj.updateDynamic("facebook_places_id")(facebook_places_id.asInstanceOf[js.Any])
-    if (location_dict != null) __obj.updateDynamic("location_dict")(location_dict)
-    if (profile_pic_url != null) __obj.updateDynamic("profile_pic_url")(profile_pic_url)
-    if (profile_pic_username != null) __obj.updateDynamic("profile_pic_username")(profile_pic_username)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (location_dict != null) __obj.updateDynamic("location_dict")(location_dict.asInstanceOf[js.Any])
+    if (profile_pic_url != null) __obj.updateDynamic("profile_pic_url")(profile_pic_url.asInstanceOf[js.Any])
+    if (profile_pic_username != null) __obj.updateDynamic("profile_pic_username")(profile_pic_username.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationRepositoryStoryResponseLocation]
   }
 }

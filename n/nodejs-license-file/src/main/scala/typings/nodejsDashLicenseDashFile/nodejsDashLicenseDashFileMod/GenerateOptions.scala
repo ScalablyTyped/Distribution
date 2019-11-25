@@ -14,9 +14,9 @@ trait GenerateOptions extends js.Object {
 object GenerateOptions {
   @scala.inline
   def apply(data: js.Any, template: String, privateKey: String = null, privateKeyPath: String = null): GenerateOptions = {
-    val __obj = js.Dynamic.literal(data = data, template = template)
-    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey)
-    if (privateKeyPath != null) __obj.updateDynamic("privateKeyPath")(privateKeyPath)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
+    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
+    if (privateKeyPath != null) __obj.updateDynamic("privateKeyPath")(privateKeyPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateOptions]
   }
 }

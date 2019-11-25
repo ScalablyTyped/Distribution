@@ -56,7 +56,7 @@ object ContributedFeature {
     scopes: js.Array[ContributedFeatureSettingScope],
     serviceInstanceType: String
   ): ContributedFeature = {
-    val __obj = js.Dynamic.literal(_links = _links, defaultState = defaultState, defaultValueRules = defaultValueRules, description = description, id = id, name = name, overrideRules = overrideRules, scopes = scopes, serviceInstanceType = serviceInstanceType)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], defaultState = defaultState.asInstanceOf[js.Any], defaultValueRules = defaultValueRules.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], overrideRules = overrideRules.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any], serviceInstanceType = serviceInstanceType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContributedFeature]
   }

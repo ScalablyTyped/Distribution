@@ -26,7 +26,7 @@ trait TeamsAddOrUpdateRepoParams extends js.Object {
 object TeamsAddOrUpdateRepoParams {
   @scala.inline
   def apply(owner: String, repo: String, team_id: Double, permission: pull | push | admin = null): TeamsAddOrUpdateRepoParams = {
-    val __obj = js.Dynamic.literal(owner = owner, repo = repo, team_id = team_id)
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
     if (permission != null) __obj.updateDynamic("permission")(permission.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsAddOrUpdateRepoParams]
   }

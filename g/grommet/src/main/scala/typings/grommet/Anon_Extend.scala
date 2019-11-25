@@ -15,7 +15,7 @@ object Anon_Extend {
   def apply(extend: ExtendType = null, textDecoration: String = null): Anon_Extend = {
     val __obj = js.Dynamic.literal()
     if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration)
+    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Extend]
   }
 }

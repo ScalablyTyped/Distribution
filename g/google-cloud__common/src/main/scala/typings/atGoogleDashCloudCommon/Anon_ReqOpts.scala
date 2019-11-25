@@ -13,7 +13,7 @@ object Anon_ReqOpts {
   @scala.inline
   def apply(reqOpts: CoreOptions = null): Anon_ReqOpts = {
     val __obj = js.Dynamic.literal()
-    if (reqOpts != null) __obj.updateDynamic("reqOpts")(reqOpts)
+    if (reqOpts != null) __obj.updateDynamic("reqOpts")(reqOpts.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ReqOpts]
   }
 }

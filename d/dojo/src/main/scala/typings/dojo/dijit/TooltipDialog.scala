@@ -1,13 +1,9 @@
 package typings.dojo.dijit
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_Boolean
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dijit.layout.ContentPane
 import typings.dojo.dojoStrings.attachScope
-import typings.dojo.dojoStrings.autofocus
+import typings.dojo.dojoStrings.autofocus_
 import typings.dojo.dojoStrings.searchContainerNode
 import typings.dojo.dojoStrings.state
 import typings.dojo.dojoStrings.templatePath
@@ -29,7 +25,7 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.dojo.dijit._AttachMixin because Inheritance from two classes. Inlined 
 - typings.dojo.dijit._DialogMixin because Inheritance from two classes. Inlined execute, onCancel, onExecute
-- typings.dojo.dijit.form._FormMixin because Inheritance from two classes. Inlined state, connectChildren, destroy, disconnectChildren, getValues, isValid_Original, reset, setValues, startup, validate, onValidStateChange
+- typings.dojo.dijit.form._FormMixin because Inheritance from two classes. Inlined state, connectChildren, destroy, disconnectChildren, getValues, reset, setValues, startup, validate, onValidStateChange
 - typings.dojo.dijit._TemplatedMixin because Inheritance from two classes. Inlined attachScope, searchContainerNode, templatePath, templateString, buildRendering, destroyRendering, getCachedTemplate, getCachedTemplate */ @JSGlobal("dijit.TooltipDialog")
 @js.native
 class TooltipDialog () extends ContentPane {
@@ -48,13 +44,6 @@ class TooltipDialog () extends ContentPane {
     * 
     */
   var autofocus: Boolean = js.native
-  /**
-    * Returns true if all of the widgets are valid.
-    * Deprecated, will be removed in 2.0.  Use get("state") instead.
-    * 
-    */
-  @JSName("isValid")
-  var isValid_Original: Fn_Boolean = js.native
   /**
     * 
     */
@@ -142,7 +131,7 @@ class TooltipDialog () extends ContentPane {
   @JSName("get")
   def get_attachScope(property: attachScope): js.Object = js.native
   @JSName("get")
-  def get_autofocus(property: autofocus): Boolean = js.native
+  def get_autofocus(property: autofocus_): Boolean = js.native
   @JSName("get")
   def get_searchContainerNode(property: searchContainerNode): Boolean = js.native
   @JSName("get")
@@ -229,7 +218,7 @@ class TooltipDialog () extends ContentPane {
   @JSName("set")
   def set_attachScope(property: attachScope, value: js.Object): Unit = js.native
   @JSName("set")
-  def set_autofocus(property: autofocus, value: Boolean): Unit = js.native
+  def set_autofocus(property: autofocus_, value: Boolean): Unit = js.native
   @JSName("set")
   def set_searchContainerNode(property: searchContainerNode, value: Boolean): Unit = js.native
   @JSName("set")
@@ -256,16 +245,64 @@ class TooltipDialog () extends ContentPane {
     */
   def validate(): js.Any = js.native
   @JSName("watch")
-  def watch_attachScope(property: attachScope, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_attachScope(
+    property: attachScope,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_autofocus(property: autofocus, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_autofocus(
+    property: autofocus_,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_searchContainerNode(property: searchContainerNode, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_searchContainerNode(
+    property: searchContainerNode,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_state(property: state, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_state(
+    property: state,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_templatePath(property: templatePath, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_templatePath(
+    property: templatePath,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_templateString(property: templateString, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_templateString(
+    property: templateString,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

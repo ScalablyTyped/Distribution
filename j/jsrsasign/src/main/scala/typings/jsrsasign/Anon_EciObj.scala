@@ -15,7 +15,7 @@ trait Anon_EciObj extends js.Object {
 object Anon_EciObj {
   @scala.inline
   def apply(eciObj: EncapsulatedContentInfo, hashAlg: String, sdobj: SignedData): Anon_EciObj = {
-    val __obj = js.Dynamic.literal(eciObj = eciObj, hashAlg = hashAlg, sdobj = sdobj)
+    val __obj = js.Dynamic.literal(eciObj = eciObj.asInstanceOf[js.Any], hashAlg = hashAlg.asInstanceOf[js.Any], sdobj = sdobj.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_EciObj]
   }

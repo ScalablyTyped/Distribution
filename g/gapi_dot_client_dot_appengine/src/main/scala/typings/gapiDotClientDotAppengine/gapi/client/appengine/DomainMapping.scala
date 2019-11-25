@@ -27,10 +27,10 @@ object DomainMapping {
     sslSettings: SslSettings = null
   ): DomainMapping = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (resourceRecords != null) __obj.updateDynamic("resourceRecords")(resourceRecords)
-    if (sslSettings != null) __obj.updateDynamic("sslSettings")(sslSettings)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (resourceRecords != null) __obj.updateDynamic("resourceRecords")(resourceRecords.asInstanceOf[js.Any])
+    if (sslSettings != null) __obj.updateDynamic("sslSettings")(sslSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainMapping]
   }
 }

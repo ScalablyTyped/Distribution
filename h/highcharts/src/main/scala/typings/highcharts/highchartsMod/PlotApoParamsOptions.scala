@@ -26,7 +26,7 @@ object PlotApoParamsOptions {
   def apply(index: Int | Double = null, periods: js.Array[Double] = null): PlotApoParamsOptions = {
     val __obj = js.Dynamic.literal()
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (periods != null) __obj.updateDynamic("periods")(periods)
+    if (periods != null) __obj.updateDynamic("periods")(periods.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotApoParamsOptions]
   }
 }

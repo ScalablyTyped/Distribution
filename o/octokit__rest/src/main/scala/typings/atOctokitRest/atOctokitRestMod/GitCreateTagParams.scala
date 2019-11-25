@@ -43,10 +43,10 @@ object GitCreateTagParams {
     `type`: commit | tree | blob,
     tagger: GitCreateTagParamsTagger = null
   ): GitCreateTagParams = {
-    val __obj = js.Dynamic.literal(message = message, owner = owner, repo = repo, tag = tag)
-    __obj.updateDynamic("object")(`object`)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (tagger != null) __obj.updateDynamic("tagger")(tagger)
+    if (tagger != null) __obj.updateDynamic("tagger")(tagger.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitCreateTagParams]
   }
 }

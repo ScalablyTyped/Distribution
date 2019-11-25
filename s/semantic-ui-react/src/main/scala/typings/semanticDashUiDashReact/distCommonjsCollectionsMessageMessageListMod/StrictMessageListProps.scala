@@ -27,10 +27,10 @@ object StrictMessageListProps {
     items: SemanticShorthandCollection[MessageItemProps] = null
   ): StrictMessageListProps = {
     val __obj = js.Dynamic.literal()
-    if (as != null) __obj.updateDynamic("as")(as)
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictMessageListProps]
   }
 }

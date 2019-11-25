@@ -33,7 +33,7 @@ object IColumnNameProps {
     nameRenderer: (/* name */ String, /* index */ js.UndefOr[Double]) => ReactElement = null
   ): IColumnNameProps = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (nameRenderer != null) __obj.updateDynamic("nameRenderer")(js.Any.fromFunction2(nameRenderer))
     __obj.asInstanceOf[IColumnNameProps]
   }

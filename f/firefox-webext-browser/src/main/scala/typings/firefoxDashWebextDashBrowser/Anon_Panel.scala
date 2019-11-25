@@ -17,7 +17,7 @@ object Anon_Panel {
   @scala.inline
   def apply(panel: String = null, tabId: Int | Double = null, windowId: Int | Double = null): Anon_Panel = {
     val __obj = js.Dynamic.literal()
-    if (panel != null) __obj.updateDynamic("panel")(panel)
+    if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
     if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Panel]

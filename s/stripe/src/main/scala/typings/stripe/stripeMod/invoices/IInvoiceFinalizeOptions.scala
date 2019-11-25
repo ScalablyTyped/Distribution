@@ -18,9 +18,9 @@ trait IInvoiceFinalizeOptions extends IDataOptions {
 object IInvoiceFinalizeOptions {
   @scala.inline
   def apply(auto_advance: Boolean, expand: js.Array[String] = null, include: js.Array[String] = null): IInvoiceFinalizeOptions = {
-    val __obj = js.Dynamic.literal(auto_advance = auto_advance)
-    if (expand != null) __obj.updateDynamic("expand")(expand)
-    if (include != null) __obj.updateDynamic("include")(include)
+    val __obj = js.Dynamic.literal(auto_advance = auto_advance.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInvoiceFinalizeOptions]
   }
 }

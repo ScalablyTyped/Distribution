@@ -23,7 +23,7 @@ object Anon_Acquisition {
     sales: Double,
     uninstall: Double
   ): Anon_Acquisition = {
-    val __obj = js.Dynamic.literal(acquisition = acquisition, install = install, other = other, review = review, sales = sales, uninstall = uninstall)
+    val __obj = js.Dynamic.literal(acquisition = acquisition.asInstanceOf[js.Any], install = install.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], review = review.asInstanceOf[js.Any], sales = sales.asInstanceOf[js.Any], uninstall = uninstall.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Acquisition]
   }

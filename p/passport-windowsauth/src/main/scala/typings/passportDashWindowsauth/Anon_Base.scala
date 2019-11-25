@@ -38,18 +38,18 @@ object Anon_Base {
     url: String = null
   ): Anon_Base = {
     val __obj = js.Dynamic.literal()
-    if (base != null) __obj.updateDynamic("base")(base)
-    if (bindCredentials != null) __obj.updateDynamic("bindCredentials")(bindCredentials)
-    if (bindDN != null) __obj.updateDynamic("bindDN")(bindDN)
-    if (binder != null) __obj.updateDynamic("binder")(binder)
-    if (client != null) __obj.updateDynamic("client")(client)
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (bindCredentials != null) __obj.updateDynamic("bindCredentials")(bindCredentials.asInstanceOf[js.Any])
+    if (bindDN != null) __obj.updateDynamic("bindDN")(bindDN.asInstanceOf[js.Any])
+    if (binder != null) __obj.updateDynamic("binder")(binder.asInstanceOf[js.Any])
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
     if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
     if (idleTimeout != null) __obj.updateDynamic("idleTimeout")(idleTimeout.asInstanceOf[js.Any])
     if (maxConnections != null) __obj.updateDynamic("maxConnections")(maxConnections.asInstanceOf[js.Any])
     if (reconnect != null) __obj.updateDynamic("reconnect")(reconnect.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (tlsOptions != null) __obj.updateDynamic("tlsOptions")(tlsOptions)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (tlsOptions != null) __obj.updateDynamic("tlsOptions")(tlsOptions.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Base]
   }
 }

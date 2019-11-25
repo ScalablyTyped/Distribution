@@ -47,13 +47,13 @@ object SurveyAudience {
     populationSource: String = null
   ): SurveyAudience = {
     val __obj = js.Dynamic.literal()
-    if (ages != null) __obj.updateDynamic("ages")(ages)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (countrySubdivision != null) __obj.updateDynamic("countrySubdivision")(countrySubdivision)
-    if (gender != null) __obj.updateDynamic("gender")(gender)
-    if (languages != null) __obj.updateDynamic("languages")(languages)
-    if (mobileAppPanelId != null) __obj.updateDynamic("mobileAppPanelId")(mobileAppPanelId)
-    if (populationSource != null) __obj.updateDynamic("populationSource")(populationSource)
+    if (ages != null) __obj.updateDynamic("ages")(ages.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (countrySubdivision != null) __obj.updateDynamic("countrySubdivision")(countrySubdivision.asInstanceOf[js.Any])
+    if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
+    if (languages != null) __obj.updateDynamic("languages")(languages.asInstanceOf[js.Any])
+    if (mobileAppPanelId != null) __obj.updateDynamic("mobileAppPanelId")(mobileAppPanelId.asInstanceOf[js.Any])
+    if (populationSource != null) __obj.updateDynamic("populationSource")(populationSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[SurveyAudience]
   }
 }

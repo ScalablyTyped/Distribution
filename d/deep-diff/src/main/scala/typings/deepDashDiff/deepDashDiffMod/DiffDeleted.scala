@@ -15,8 +15,8 @@ trait DiffDeleted[LHS]
 object DiffDeleted {
   @scala.inline
   def apply[LHS](kind: D, lhs: LHS, path: js.Array[_] = null): DiffDeleted[LHS] = {
-    val __obj = js.Dynamic.literal(kind = kind, lhs = lhs.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], lhs = lhs.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiffDeleted[LHS]]
   }
 }

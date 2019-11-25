@@ -35,14 +35,14 @@ object SetOptions {
     val __obj = js.Dynamic.literal()
     if (clearFlags != null) __obj.updateDynamic("clearFlags")(clearFlags.asInstanceOf[js.Any])
     if (highThreshold != null) __obj.updateDynamic("highThreshold")(highThreshold.asInstanceOf[js.Any])
-    if (homeDomain != null) __obj.updateDynamic("homeDomain")(homeDomain)
-    if (inflationDest != null) __obj.updateDynamic("inflationDest")(inflationDest)
+    if (homeDomain != null) __obj.updateDynamic("homeDomain")(homeDomain.asInstanceOf[js.Any])
+    if (inflationDest != null) __obj.updateDynamic("inflationDest")(inflationDest.asInstanceOf[js.Any])
     if (lowThreshold != null) __obj.updateDynamic("lowThreshold")(lowThreshold.asInstanceOf[js.Any])
     if (masterWeight != null) __obj.updateDynamic("masterWeight")(masterWeight.asInstanceOf[js.Any])
     if (medThreshold != null) __obj.updateDynamic("medThreshold")(medThreshold.asInstanceOf[js.Any])
     if (setFlags != null) __obj.updateDynamic("setFlags")(setFlags.asInstanceOf[js.Any])
     if (signer != null) __obj.updateDynamic("signer")(signer.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetOptions[T]]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_Defaults extends js.Object {
 object Anon_Defaults {
   @scala.inline
   def apply(defaults: String, raw: js.UndefOr[Boolean] = js.undefined): Anon_Defaults = {
-    val __obj = js.Dynamic.literal(defaults = defaults)
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Defaults]
   }
 }

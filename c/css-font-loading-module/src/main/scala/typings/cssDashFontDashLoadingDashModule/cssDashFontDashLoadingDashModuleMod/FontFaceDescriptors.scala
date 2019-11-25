@@ -24,12 +24,12 @@ object FontFaceDescriptors {
     weight: String = null
   ): FontFaceDescriptors = {
     val __obj = js.Dynamic.literal()
-    if (featureSettings != null) __obj.updateDynamic("featureSettings")(featureSettings)
-    if (stretch != null) __obj.updateDynamic("stretch")(stretch)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (unicodeRange != null) __obj.updateDynamic("unicodeRange")(unicodeRange)
-    if (variant != null) __obj.updateDynamic("variant")(variant)
-    if (weight != null) __obj.updateDynamic("weight")(weight)
+    if (featureSettings != null) __obj.updateDynamic("featureSettings")(featureSettings.asInstanceOf[js.Any])
+    if (stretch != null) __obj.updateDynamic("stretch")(stretch.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (unicodeRange != null) __obj.updateDynamic("unicodeRange")(unicodeRange.asInstanceOf[js.Any])
+    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontFaceDescriptors]
   }
 }

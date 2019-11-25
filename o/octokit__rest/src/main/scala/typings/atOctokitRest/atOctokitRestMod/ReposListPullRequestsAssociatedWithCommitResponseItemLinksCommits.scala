@@ -11,7 +11,7 @@ trait ReposListPullRequestsAssociatedWithCommitResponseItemLinksCommits extends 
 object ReposListPullRequestsAssociatedWithCommitResponseItemLinksCommits {
   @scala.inline
   def apply(href: String): ReposListPullRequestsAssociatedWithCommitResponseItemLinksCommits = {
-    val __obj = js.Dynamic.literal(href = href)
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposListPullRequestsAssociatedWithCommitResponseItemLinksCommits]
   }

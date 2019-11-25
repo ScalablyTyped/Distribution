@@ -17,9 +17,9 @@ object Anon_BackgroundImageLink {
   @scala.inline
   def apply(backgroundImageLink: String = null, colorRgb: String = null, id: String = null): Anon_BackgroundImageLink = {
     val __obj = js.Dynamic.literal()
-    if (backgroundImageLink != null) __obj.updateDynamic("backgroundImageLink")(backgroundImageLink)
-    if (colorRgb != null) __obj.updateDynamic("colorRgb")(colorRgb)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (backgroundImageLink != null) __obj.updateDynamic("backgroundImageLink")(backgroundImageLink.asInstanceOf[js.Any])
+    if (colorRgb != null) __obj.updateDynamic("colorRgb")(colorRgb.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackgroundImageLink]
   }
 }

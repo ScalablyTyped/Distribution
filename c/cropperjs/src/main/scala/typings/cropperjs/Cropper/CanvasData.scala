@@ -23,7 +23,7 @@ object CanvasData {
     top: Double,
     width: Double
   ): CanvasData = {
-    val __obj = js.Dynamic.literal(height = height, left = left, naturalHeight = naturalHeight, naturalWidth = naturalWidth, top = top, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], naturalHeight = naturalHeight.asInstanceOf[js.Any], naturalWidth = naturalWidth.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CanvasData]
   }

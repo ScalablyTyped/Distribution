@@ -16,8 +16,8 @@ object IPersonaState {
     isImageLoaded: js.UndefOr[Boolean] = js.undefined
   ): IPersonaState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isImageError)) __obj.updateDynamic("isImageError")(isImageError)
-    if (!js.isUndefined(isImageLoaded)) __obj.updateDynamic("isImageLoaded")(isImageLoaded)
+    if (!js.isUndefined(isImageError)) __obj.updateDynamic("isImageError")(isImageError.asInstanceOf[js.Any])
+    if (!js.isUndefined(isImageLoaded)) __obj.updateDynamic("isImageLoaded")(isImageLoaded.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPersonaState]
   }
 }

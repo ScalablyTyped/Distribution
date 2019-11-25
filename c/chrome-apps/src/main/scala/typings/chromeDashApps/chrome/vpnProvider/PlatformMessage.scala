@@ -1,7 +1,7 @@
 package typings.chromeDashApps.chrome.vpnProvider
 
-import typings.chromeDashApps.chromeDashAppsStrings.connected
-import typings.chromeDashApps.chromeDashAppsStrings.disconnected
+import typings.chromeDashApps.chromeDashAppsStrings.connected_
+import typings.chromeDashApps.chromeDashAppsStrings.disconnected_
 import typings.chromeDashApps.chromeDashAppsStrings.error
 import typings.chromeDashApps.chromeDashAppsStrings.linkChanged
 import typings.chromeDashApps.chromeDashAppsStrings.linkDown
@@ -38,8 +38,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.vpnProvider.PlatformMessage")
 @js.native
 object PlatformMessage extends js.Object {
-  var CONNECTED: connected = js.native
-  var DISCONNECTED: disconnected = js.native
+  var CONNECTED: connected_ = js.native
+  var DISCONNECTED: disconnected_ = js.native
   var ERROR: error = js.native
   var LINK_CHANGED: linkChanged = js.native
   var LINK_DOWN: linkDown = js.native

@@ -39,7 +39,7 @@ object DiskStat {
     writes_completed: String,
     writes_merged: String
   ): DiskStat = {
-    val __obj = js.Dynamic.literal(device = device, device_number = device_number, device_number_minor = device_number_minor, ios_pending = ios_pending, ms_io = ms_io, ms_reading = ms_reading, ms_weighted_io = ms_weighted_io, ms_writing = ms_writing, reads_completed = reads_completed, reads_merged = reads_merged, sectors_read = sectors_read, sectors_written = sectors_written, writes_completed = writes_completed, writes_merged = writes_merged)
+    val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], device_number = device_number.asInstanceOf[js.Any], device_number_minor = device_number_minor.asInstanceOf[js.Any], ios_pending = ios_pending.asInstanceOf[js.Any], ms_io = ms_io.asInstanceOf[js.Any], ms_reading = ms_reading.asInstanceOf[js.Any], ms_weighted_io = ms_weighted_io.asInstanceOf[js.Any], ms_writing = ms_writing.asInstanceOf[js.Any], reads_completed = reads_completed.asInstanceOf[js.Any], reads_merged = reads_merged.asInstanceOf[js.Any], sectors_read = sectors_read.asInstanceOf[js.Any], sectors_written = sectors_written.asInstanceOf[js.Any], writes_completed = writes_completed.asInstanceOf[js.Any], writes_merged = writes_merged.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DiskStat]
   }

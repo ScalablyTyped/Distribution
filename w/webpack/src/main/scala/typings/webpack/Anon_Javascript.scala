@@ -13,7 +13,7 @@ trait Anon_Javascript extends js.Object {
 object Anon_Javascript {
   @scala.inline
   def apply(javascript: ModuleTemplate, webassembly: ModuleTemplate): Anon_Javascript = {
-    val __obj = js.Dynamic.literal(javascript = javascript, webassembly = webassembly)
+    val __obj = js.Dynamic.literal(javascript = javascript.asInstanceOf[js.Any], webassembly = webassembly.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Javascript]
   }

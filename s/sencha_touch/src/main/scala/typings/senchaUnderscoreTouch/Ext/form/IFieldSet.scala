@@ -29,25 +29,19 @@ object IFieldSet {
   @scala.inline
   def apply(
     IContainer: IContainer = null,
-    baseCls: java.lang.String = null,
     doSetDisabled: /* newDisabled */ js.UndefOr[js.Any] => IFieldSet = null,
-    getBaseCls: () => java.lang.String = null,
     instructions: java.lang.String = null,
-    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => Unit = null,
     setInstructions: /* instructions */ js.UndefOr[java.lang.String] => Unit = null,
     setTitle: /* title */ js.UndefOr[java.lang.String] => Unit = null,
     title: java.lang.String = null
   ): IFieldSet = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
     if (doSetDisabled != null) __obj.updateDynamic("doSetDisabled")(js.Any.fromFunction1(doSetDisabled))
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
-    if (instructions != null) __obj.updateDynamic("instructions")(instructions)
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
+    if (instructions != null) __obj.updateDynamic("instructions")(instructions.asInstanceOf[js.Any])
     if (setInstructions != null) __obj.updateDynamic("setInstructions")(js.Any.fromFunction1(setInstructions))
     if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction1(setTitle))
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldSet]
   }
 }

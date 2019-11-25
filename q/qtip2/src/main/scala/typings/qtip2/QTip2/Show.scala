@@ -34,7 +34,7 @@ object Show {
     if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (modal != null) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
-    if (!js.isUndefined(ready)) __obj.updateDynamic("ready")(ready)
+    if (!js.isUndefined(ready)) __obj.updateDynamic("ready")(ready.asInstanceOf[js.Any])
     if (solo != null) __obj.updateDynamic("solo")(solo.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Show]

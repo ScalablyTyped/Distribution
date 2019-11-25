@@ -12,7 +12,7 @@ trait Anon_Epoch extends js.Object {
 object Anon_Epoch {
   @scala.inline
   def apply(epoch: Double, iso: String): Anon_Epoch = {
-    val __obj = js.Dynamic.literal(epoch = epoch, iso = iso)
+    val __obj = js.Dynamic.literal(epoch = epoch.asInstanceOf[js.Any], iso = iso.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Epoch]
   }

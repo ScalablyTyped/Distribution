@@ -18,8 +18,8 @@ trait Request extends js.Object {
 object Request {
   @scala.inline
   def apply(device: RequestDevice, requestId: integer, value: ArrayBuffer = null): Request = {
-    val __obj = js.Dynamic.literal(device = device, requestId = requestId)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request]
   }
 }

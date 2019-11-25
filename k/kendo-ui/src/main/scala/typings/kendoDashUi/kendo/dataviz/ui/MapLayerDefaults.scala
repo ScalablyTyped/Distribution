@@ -24,11 +24,11 @@ object MapLayerDefaults {
     tileSize: Int | Double = null
   ): MapLayerDefaults = {
     val __obj = js.Dynamic.literal()
-    if (bing != null) __obj.updateDynamic("bing")(bing)
-    if (bubble != null) __obj.updateDynamic("bubble")(bubble)
-    if (marker != null) __obj.updateDynamic("marker")(marker)
-    if (shape != null) __obj.updateDynamic("shape")(shape)
-    if (tile != null) __obj.updateDynamic("tile")(tile)
+    if (bing != null) __obj.updateDynamic("bing")(bing.asInstanceOf[js.Any])
+    if (bubble != null) __obj.updateDynamic("bubble")(bubble.asInstanceOf[js.Any])
+    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (tile != null) __obj.updateDynamic("tile")(tile.asInstanceOf[js.Any])
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapLayerDefaults]
   }

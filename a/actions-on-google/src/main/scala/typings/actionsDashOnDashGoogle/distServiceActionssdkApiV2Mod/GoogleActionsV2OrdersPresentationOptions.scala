@@ -28,7 +28,7 @@ object GoogleActionsV2OrdersPresentationOptions {
   @scala.inline
   def apply(callToAction: String = null): GoogleActionsV2OrdersPresentationOptions = {
     val __obj = js.Dynamic.literal()
-    if (callToAction != null) __obj.updateDynamic("callToAction")(callToAction)
+    if (callToAction != null) __obj.updateDynamic("callToAction")(callToAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersPresentationOptions]
   }
 }

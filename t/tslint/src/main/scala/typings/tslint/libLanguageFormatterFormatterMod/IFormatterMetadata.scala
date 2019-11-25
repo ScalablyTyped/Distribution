@@ -36,8 +36,8 @@ object IFormatterMetadata {
     sample: String,
     descriptionDetails: String = null
   ): IFormatterMetadata = {
-    val __obj = js.Dynamic.literal(consumer = consumer, description = description, formatterName = formatterName, sample = sample)
-    if (descriptionDetails != null) __obj.updateDynamic("descriptionDetails")(descriptionDetails)
+    val __obj = js.Dynamic.literal(consumer = consumer.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], formatterName = formatterName.asInstanceOf[js.Any], sample = sample.asInstanceOf[js.Any])
+    if (descriptionDetails != null) __obj.updateDynamic("descriptionDetails")(descriptionDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFormatterMetadata]
   }
 }

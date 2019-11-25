@@ -29,11 +29,11 @@ object EyesOptions {
     styles: Anon_All = null
   ): EyesOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hideFunctions)) __obj.updateDynamic("hideFunctions")(hideFunctions)
+    if (!js.isUndefined(hideFunctions)) __obj.updateDynamic("hideFunctions")(hideFunctions.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
-    if (stream != null) __obj.updateDynamic("stream")(stream)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
+    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[EyesOptions]
   }
 }

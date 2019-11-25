@@ -1,8 +1,8 @@
 package typings.atIonicReact.atIonicReactMod
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.atIonicCore.atIonicCoreMod.ComponentRef
 import typings.atIonicCore.distTypesComponentsPopoverPopoverDashInterfaceMod.PopoverOptions
-import typings.atIonicCore.distTypesInterfaceMod.ComponentRef
 import typings.atIonicReact.Anon_AnimatedBackdropDismiss
 import typings.atIonicReact.Anon_ChildrenReactNode
 import typings.atIonicReact.atIonicReactStrings.animated

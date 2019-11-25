@@ -19,10 +19,10 @@ object ItemAnalytics {
     lastSevenDays: ItemActivityStat = null
   ): ItemAnalytics = {
     val __obj = js.Dynamic.literal()
-    if (allTime != null) __obj.updateDynamic("allTime")(allTime)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (itemActivityStats != null) __obj.updateDynamic("itemActivityStats")(itemActivityStats)
-    if (lastSevenDays != null) __obj.updateDynamic("lastSevenDays")(lastSevenDays)
+    if (allTime != null) __obj.updateDynamic("allTime")(allTime.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (itemActivityStats != null) __obj.updateDynamic("itemActivityStats")(itemActivityStats.asInstanceOf[js.Any])
+    if (lastSevenDays != null) __obj.updateDynamic("lastSevenDays")(lastSevenDays.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemAnalytics]
   }
 }

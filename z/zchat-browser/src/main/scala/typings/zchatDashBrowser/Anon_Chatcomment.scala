@@ -15,9 +15,9 @@ object Anon_Chatcomment {
   @scala.inline
   def apply(`type`: chatDOTcomment, comment: String = null, new_comment: String = null): Anon_Chatcomment = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (new_comment != null) __obj.updateDynamic("new_comment")(new_comment)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (new_comment != null) __obj.updateDynamic("new_comment")(new_comment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Chatcomment]
   }
 }

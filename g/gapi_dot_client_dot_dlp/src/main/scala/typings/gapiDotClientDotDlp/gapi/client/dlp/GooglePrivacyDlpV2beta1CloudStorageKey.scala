@@ -15,8 +15,8 @@ object GooglePrivacyDlpV2beta1CloudStorageKey {
   @scala.inline
   def apply(filePath: String = null, startOffset: String = null): GooglePrivacyDlpV2beta1CloudStorageKey = {
     val __obj = js.Dynamic.literal()
-    if (filePath != null) __obj.updateDynamic("filePath")(filePath)
-    if (startOffset != null) __obj.updateDynamic("startOffset")(startOffset)
+    if (filePath != null) __obj.updateDynamic("filePath")(filePath.asInstanceOf[js.Any])
+    if (startOffset != null) __obj.updateDynamic("startOffset")(startOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1CloudStorageKey]
   }
 }

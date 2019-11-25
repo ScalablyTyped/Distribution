@@ -28,11 +28,11 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (getUserNameFromHeader != null) __obj.updateDynamic("getUserNameFromHeader")(js.Any.fromFunction1(getUserNameFromHeader))
-    if (!js.isUndefined(integrated)) __obj.updateDynamic("integrated")(integrated)
-    if (ldap != null) __obj.updateDynamic("ldap")(ldap)
-    if (!js.isUndefined(passReqToCallback)) __obj.updateDynamic("passReqToCallback")(passReqToCallback)
-    if (passwordField != null) __obj.updateDynamic("passwordField")(passwordField)
-    if (usernameField != null) __obj.updateDynamic("usernameField")(usernameField)
+    if (!js.isUndefined(integrated)) __obj.updateDynamic("integrated")(integrated.asInstanceOf[js.Any])
+    if (ldap != null) __obj.updateDynamic("ldap")(ldap.asInstanceOf[js.Any])
+    if (!js.isUndefined(passReqToCallback)) __obj.updateDynamic("passReqToCallback")(passReqToCallback.asInstanceOf[js.Any])
+    if (passwordField != null) __obj.updateDynamic("passwordField")(passwordField.asInstanceOf[js.Any])
+    if (usernameField != null) __obj.updateDynamic("usernameField")(usernameField.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

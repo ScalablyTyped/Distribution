@@ -55,13 +55,13 @@ object GoogleCloudMlV1__ParameterSpec {
     `type`: String = null
   ): GoogleCloudMlV1__ParameterSpec = {
     val __obj = js.Dynamic.literal()
-    if (categoricalValues != null) __obj.updateDynamic("categoricalValues")(categoricalValues)
-    if (discreteValues != null) __obj.updateDynamic("discreteValues")(discreteValues)
+    if (categoricalValues != null) __obj.updateDynamic("categoricalValues")(categoricalValues.asInstanceOf[js.Any])
+    if (discreteValues != null) __obj.updateDynamic("discreteValues")(discreteValues.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (parameterName != null) __obj.updateDynamic("parameterName")(parameterName)
-    if (scaleType != null) __obj.updateDynamic("scaleType")(scaleType)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (parameterName != null) __obj.updateDynamic("parameterName")(parameterName.asInstanceOf[js.Any])
+    if (scaleType != null) __obj.updateDynamic("scaleType")(scaleType.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudMlV1__ParameterSpec]
   }
 }

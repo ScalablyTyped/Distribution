@@ -30,10 +30,10 @@ object ObjectSelectorModifier {
   @scala.inline
   def apply(order: String = null, page: String = null, search: String = null, searchPlaceholder: String = null): ObjectSelectorModifier = {
     val __obj = js.Dynamic.literal()
-    if (order != null) __obj.updateDynamic("order")(order)
-    if (page != null) __obj.updateDynamic("page")(page)
-    if (search != null) __obj.updateDynamic("search")(search)
-    if (searchPlaceholder != null) __obj.updateDynamic("searchPlaceholder")(searchPlaceholder)
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
+    if (searchPlaceholder != null) __obj.updateDynamic("searchPlaceholder")(searchPlaceholder.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectSelectorModifier]
   }
 }

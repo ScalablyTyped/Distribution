@@ -39,7 +39,7 @@ object TestResult {
     requiredTestErrors: js.Array[String],
     strong: Boolean
   ): TestResult = {
-    val __obj = js.Dynamic.literal(errors = errors, failedTests = failedTests, isPassphrase = isPassphrase, optionalTestErrors = optionalTestErrors, optionalTestsPassed = optionalTestsPassed, passedTests = passedTests, requiredTestErrors = requiredTestErrors, strong = strong)
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], failedTests = failedTests.asInstanceOf[js.Any], isPassphrase = isPassphrase.asInstanceOf[js.Any], optionalTestErrors = optionalTestErrors.asInstanceOf[js.Any], optionalTestsPassed = optionalTestsPassed.asInstanceOf[js.Any], passedTests = passedTests.asInstanceOf[js.Any], requiredTestErrors = requiredTestErrors.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestResult]
   }

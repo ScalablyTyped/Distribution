@@ -55,18 +55,18 @@ object Player {
     title: String = null
   ): Player = {
     val __obj = js.Dynamic.literal()
-    if (avatarImageUrl != null) __obj.updateDynamic("avatarImageUrl")(avatarImageUrl)
-    if (bannerUrlLandscape != null) __obj.updateDynamic("bannerUrlLandscape")(bannerUrlLandscape)
-    if (bannerUrlPortrait != null) __obj.updateDynamic("bannerUrlPortrait")(bannerUrlPortrait)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (experienceInfo != null) __obj.updateDynamic("experienceInfo")(experienceInfo)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (lastPlayedWith != null) __obj.updateDynamic("lastPlayedWith")(lastPlayedWith)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (originalPlayerId != null) __obj.updateDynamic("originalPlayerId")(originalPlayerId)
-    if (playerId != null) __obj.updateDynamic("playerId")(playerId)
-    if (profileSettings != null) __obj.updateDynamic("profileSettings")(profileSettings)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (avatarImageUrl != null) __obj.updateDynamic("avatarImageUrl")(avatarImageUrl.asInstanceOf[js.Any])
+    if (bannerUrlLandscape != null) __obj.updateDynamic("bannerUrlLandscape")(bannerUrlLandscape.asInstanceOf[js.Any])
+    if (bannerUrlPortrait != null) __obj.updateDynamic("bannerUrlPortrait")(bannerUrlPortrait.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (experienceInfo != null) __obj.updateDynamic("experienceInfo")(experienceInfo.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (lastPlayedWith != null) __obj.updateDynamic("lastPlayedWith")(lastPlayedWith.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (originalPlayerId != null) __obj.updateDynamic("originalPlayerId")(originalPlayerId.asInstanceOf[js.Any])
+    if (playerId != null) __obj.updateDynamic("playerId")(playerId.asInstanceOf[js.Any])
+    if (profileSettings != null) __obj.updateDynamic("profileSettings")(profileSettings.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Player]
   }
 }

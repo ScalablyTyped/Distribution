@@ -29,13 +29,13 @@ object IThemeSlotRule {
     isCustomized: js.UndefOr[Boolean] = js.undefined,
     value: String = null
   ): IThemeSlotRule = {
-    val __obj = js.Dynamic.literal(dependentRules = dependentRules, name = name)
-    if (asShade != null) __obj.updateDynamic("asShade")(asShade)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (inherits != null) __obj.updateDynamic("inherits")(inherits)
-    if (!js.isUndefined(isBackgroundShade)) __obj.updateDynamic("isBackgroundShade")(isBackgroundShade)
-    if (!js.isUndefined(isCustomized)) __obj.updateDynamic("isCustomized")(isCustomized)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(dependentRules = dependentRules.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (asShade != null) __obj.updateDynamic("asShade")(asShade.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (inherits != null) __obj.updateDynamic("inherits")(inherits.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBackgroundShade)) __obj.updateDynamic("isBackgroundShade")(isBackgroundShade.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCustomized)) __obj.updateDynamic("isCustomized")(isCustomized.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IThemeSlotRule]
   }
 }

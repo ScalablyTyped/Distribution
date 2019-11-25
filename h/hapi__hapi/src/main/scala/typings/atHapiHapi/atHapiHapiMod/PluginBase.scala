@@ -36,9 +36,9 @@ object PluginBase {
   ): PluginBase[T] = {
     val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register))
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once)
-    if (requirements != null) __obj.updateDynamic("requirements")(requirements)
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.asInstanceOf[js.Any])
+    if (requirements != null) __obj.updateDynamic("requirements")(requirements.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginBase[T]]
   }
 }

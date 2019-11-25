@@ -23,7 +23,7 @@ object CellData {
     selected: SelectType,
     tick: Double
   ): CellData = {
-    val __obj = js.Dynamic.literal(dayOfMonth = dayOfMonth, isFirstOfMonth = isFirstOfMonth, isLastOfMonth = isLastOfMonth, outOfDate = outOfDate, selected = selected, tick = tick)
+    val __obj = js.Dynamic.literal(dayOfMonth = dayOfMonth.asInstanceOf[js.Any], isFirstOfMonth = isFirstOfMonth.asInstanceOf[js.Any], isLastOfMonth = isLastOfMonth.asInstanceOf[js.Any], outOfDate = outOfDate.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], tick = tick.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CellData]
   }

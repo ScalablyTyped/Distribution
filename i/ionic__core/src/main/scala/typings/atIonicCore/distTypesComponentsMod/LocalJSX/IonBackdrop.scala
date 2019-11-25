@@ -34,9 +34,9 @@ object IonBackdrop {
   ): IonBackdrop = {
     val __obj = js.Dynamic.literal()
     if (onIonBackdropTap != null) __obj.updateDynamic("onIonBackdropTap")(js.Any.fromFunction1(onIonBackdropTap))
-    if (!js.isUndefined(stopPropagation)) __obj.updateDynamic("stopPropagation")(stopPropagation)
-    if (!js.isUndefined(tappable)) __obj.updateDynamic("tappable")(tappable)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(stopPropagation)) __obj.updateDynamic("stopPropagation")(stopPropagation.asInstanceOf[js.Any])
+    if (!js.isUndefined(tappable)) __obj.updateDynamic("tappable")(tappable.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonBackdrop]
   }
 }

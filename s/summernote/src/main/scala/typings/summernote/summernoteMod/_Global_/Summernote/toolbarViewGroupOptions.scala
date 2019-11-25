@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait toolbarViewGroupOptions extends js.Object
 
+object toolbarViewGroupOptions {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def codeview: typings.summernote.summernoteStrings.codeview = this.cast("codeview")
+  @scala.inline
+  def fullscreen: typings.summernote.summernoteStrings.fullscreen = this.cast("fullscreen")
+}
+

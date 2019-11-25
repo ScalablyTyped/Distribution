@@ -15,7 +15,7 @@ trait NetworkUsageStates extends js.Object {
 object NetworkUsageStates {
   @scala.inline
   def apply(roaming: TriStates, shared: TriStates): NetworkUsageStates = {
-    val __obj = js.Dynamic.literal(roaming = roaming, shared = shared)
+    val __obj = js.Dynamic.literal(roaming = roaming.asInstanceOf[js.Any], shared = shared.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NetworkUsageStates]
   }

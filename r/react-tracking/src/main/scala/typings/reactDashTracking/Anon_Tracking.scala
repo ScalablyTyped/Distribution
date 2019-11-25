@@ -12,7 +12,7 @@ trait Anon_Tracking[T] extends js.Object {
 object Anon_Tracking {
   @scala.inline
   def apply[T](tracking: Options[T] with Anon_Data): Anon_Tracking[T] = {
-    val __obj = js.Dynamic.literal(tracking = tracking)
+    val __obj = js.Dynamic.literal(tracking = tracking.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Tracking[T]]
   }

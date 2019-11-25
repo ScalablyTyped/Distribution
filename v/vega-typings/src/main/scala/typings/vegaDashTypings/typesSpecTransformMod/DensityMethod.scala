@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait DensityMethod extends js.Object
 
+object DensityMethod {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def cdf: typings.vegaDashTypings.vegaDashTypingsStrings.cdf = this.cast("cdf")
+  @scala.inline
+  def pdf: typings.vegaDashTypings.vegaDashTypingsStrings.pdf = this.cast("pdf")
+}
+

@@ -64,11 +64,11 @@ object PlusMapsRoute {
   ): PlusMapsRoute = {
     val __obj = js.Dynamic.literal()
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (endPoint != null) __obj.updateDynamic("endPoint")(endPoint)
-    if (pointCount != null) __obj.updateDynamic("pointCount")(pointCount)
-    if (pointList != null) __obj.updateDynamic("pointList")(pointList)
-    if (routeTip != null) __obj.updateDynamic("routeTip")(routeTip)
-    if (startPoint != null) __obj.updateDynamic("startPoint")(startPoint)
+    if (endPoint != null) __obj.updateDynamic("endPoint")(endPoint.asInstanceOf[js.Any])
+    if (pointCount != null) __obj.updateDynamic("pointCount")(pointCount.asInstanceOf[js.Any])
+    if (pointList != null) __obj.updateDynamic("pointList")(pointList.asInstanceOf[js.Any])
+    if (routeTip != null) __obj.updateDynamic("routeTip")(routeTip.asInstanceOf[js.Any])
+    if (startPoint != null) __obj.updateDynamic("startPoint")(startPoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusMapsRoute]
   }
 }

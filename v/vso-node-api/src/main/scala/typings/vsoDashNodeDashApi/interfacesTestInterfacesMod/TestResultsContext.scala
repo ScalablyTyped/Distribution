@@ -13,7 +13,7 @@ trait TestResultsContext extends js.Object {
 object TestResultsContext {
   @scala.inline
   def apply(build: BuildReference, contextType: TestResultsContextType, release: ReleaseReference): TestResultsContext = {
-    val __obj = js.Dynamic.literal(build = build, contextType = contextType, release = release)
+    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], contextType = contextType.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TestResultsContext]
   }

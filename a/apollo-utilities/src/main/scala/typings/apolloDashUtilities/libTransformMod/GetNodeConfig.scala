@@ -13,7 +13,7 @@ object GetNodeConfig {
   @scala.inline
   def apply[N](name: String = null, test: /* node */ N => Boolean = null): GetNodeConfig[N] = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (test != null) __obj.updateDynamic("test")(js.Any.fromFunction1(test))
     __obj.asInstanceOf[GetNodeConfig[N]]
   }

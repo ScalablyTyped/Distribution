@@ -21,9 +21,9 @@ object StackTrace {
   @scala.inline
   def apply(clusterId: String = null, exception: String = null, reportId: String = null): StackTrace = {
     val __obj = js.Dynamic.literal()
-    if (clusterId != null) __obj.updateDynamic("clusterId")(clusterId)
-    if (exception != null) __obj.updateDynamic("exception")(exception)
-    if (reportId != null) __obj.updateDynamic("reportId")(reportId)
+    if (clusterId != null) __obj.updateDynamic("clusterId")(clusterId.asInstanceOf[js.Any])
+    if (exception != null) __obj.updateDynamic("exception")(exception.asInstanceOf[js.Any])
+    if (reportId != null) __obj.updateDynamic("reportId")(reportId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackTrace]
   }
 }

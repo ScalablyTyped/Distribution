@@ -13,7 +13,7 @@ trait IWebAuthenticationResult extends js.Object {
 object IWebAuthenticationResult {
   @scala.inline
   def apply(responseData: String, responseErrorDetail: Double, responseStatus: WebAuthenticationStatus): IWebAuthenticationResult = {
-    val __obj = js.Dynamic.literal(responseData = responseData, responseErrorDetail = responseErrorDetail, responseStatus = responseStatus)
+    val __obj = js.Dynamic.literal(responseData = responseData.asInstanceOf[js.Any], responseErrorDetail = responseErrorDetail.asInstanceOf[js.Any], responseStatus = responseStatus.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IWebAuthenticationResult]
   }

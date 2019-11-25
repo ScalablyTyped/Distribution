@@ -21,7 +21,7 @@ object ClientRequest {
     payload: HemeraMessagePayload,
     transport: Anon_ExpectedMessages
   ): ClientRequest = {
-    val __obj = js.Dynamic.literal(error = error, pattern = pattern, payload = payload, transport = transport)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], transport = transport.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClientRequest]
   }

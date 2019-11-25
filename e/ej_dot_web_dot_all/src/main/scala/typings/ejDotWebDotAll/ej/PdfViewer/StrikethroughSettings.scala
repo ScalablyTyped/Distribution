@@ -36,12 +36,12 @@ object StrikethroughSettings {
     subject: String = null
   ): StrikethroughSettings = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(isLocked)) __obj.updateDynamic("isLocked")(isLocked)
-    if (modifiedDate != null) __obj.updateDynamic("modifiedDate")(modifiedDate)
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLocked)) __obj.updateDynamic("isLocked")(isLocked.asInstanceOf[js.Any])
+    if (modifiedDate != null) __obj.updateDynamic("modifiedDate")(modifiedDate.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrikethroughSettings]
   }
 }

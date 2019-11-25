@@ -64,12 +64,12 @@ object PreviewImageOptions {
   ): PreviewImageOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
-    if (count != null) __obj.updateDynamic("count")(count)
-    if (current != null) __obj.updateDynamic("current")(current)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (indicator != null) __obj.updateDynamic("indicator")(indicator.asInstanceOf[js.Any])
-    if (longPressActions != null) __obj.updateDynamic("longPressActions")(longPressActions)
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (longPressActions != null) __obj.updateDynamic("longPressActions")(longPressActions.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreviewImageOptions]

@@ -15,9 +15,9 @@ trait HeapDiffDetail extends js.Object {
 object HeapDiffDetail {
   @scala.inline
   def apply(`+`: Double, `-`: Double, size: String, size_bytes: Double, what: String): HeapDiffDetail = {
-    val __obj = js.Dynamic.literal(size = size, size_bytes = size_bytes, what = what)
-    __obj.updateDynamic("+")(`+`)
-    __obj.updateDynamic("-")(`-`)
+    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], size_bytes = size_bytes.asInstanceOf[js.Any], what = what.asInstanceOf[js.Any])
+    __obj.updateDynamic("+")(`+`.asInstanceOf[js.Any])
+    __obj.updateDynamic("-")(`-`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeapDiffDetail]
   }
 }

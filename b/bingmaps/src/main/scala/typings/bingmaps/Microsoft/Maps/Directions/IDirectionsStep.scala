@@ -57,7 +57,7 @@ object IDirectionsStep {
     transitTerminus: String,
     warnings: js.Array[IDirectionsStepWarning]
   ): IDirectionsStep = {
-    val __obj = js.Dynamic.literal(childItineraryItems = childItineraryItems, coordinate = coordinate, distance = distance, durationInSeconds = durationInSeconds, formattedText = formattedText, isImageRoadShield = isImageRoadShield, maneuver = maneuver, postIntersectionHints = postIntersectionHints, preIntersectionHints = preIntersectionHints, startStopName = startStopName, transitLine = transitLine, transitStepIcon = transitStepIcon, transitStopId = transitStopId, transitTerminus = transitTerminus, warnings = warnings)
+    val __obj = js.Dynamic.literal(childItineraryItems = childItineraryItems.asInstanceOf[js.Any], coordinate = coordinate.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], durationInSeconds = durationInSeconds.asInstanceOf[js.Any], formattedText = formattedText.asInstanceOf[js.Any], isImageRoadShield = isImageRoadShield.asInstanceOf[js.Any], maneuver = maneuver.asInstanceOf[js.Any], postIntersectionHints = postIntersectionHints.asInstanceOf[js.Any], preIntersectionHints = preIntersectionHints.asInstanceOf[js.Any], startStopName = startStopName.asInstanceOf[js.Any], transitLine = transitLine.asInstanceOf[js.Any], transitStepIcon = transitStepIcon.asInstanceOf[js.Any], transitStopId = transitStopId.asInstanceOf[js.Any], transitTerminus = transitTerminus.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IDirectionsStep]
   }

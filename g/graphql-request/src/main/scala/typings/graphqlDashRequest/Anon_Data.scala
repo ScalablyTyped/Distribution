@@ -23,10 +23,10 @@ object Anon_Data {
     errors: js.Array[GraphQLError] = null,
     extensions: js.Any = null
   ): Anon_Data[T] = {
-    val __obj = js.Dynamic.literal(headers = headers, status = status)
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Data[T]]
   }
 }

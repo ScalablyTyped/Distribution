@@ -17,8 +17,8 @@ object TreeViewDragstartEvent {
     sender: TreeView,
     sourceNode: Element = null
   ): TreeViewDragstartEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (sourceNode != null) __obj.updateDynamic("sourceNode")(sourceNode)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (sourceNode != null) __obj.updateDynamic("sourceNode")(sourceNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeViewDragstartEvent]
   }
 }

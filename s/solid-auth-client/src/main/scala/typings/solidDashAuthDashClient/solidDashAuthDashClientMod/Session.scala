@@ -11,7 +11,7 @@ trait Session extends js.Object {
 object Session {
   @scala.inline
   def apply(webId: String): Session = {
-    val __obj = js.Dynamic.literal(webId = webId)
+    val __obj = js.Dynamic.literal(webId = webId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Session]
   }

@@ -19,7 +19,7 @@ object InteractiveButtons {
     reset: () => Unit,
     send: (InteractiveButtonUrl, T) => js.Promise[Unit]
   ): InteractiveButtons[T] = {
-    val __obj = js.Dynamic.literal(addResponse = js.Any.fromFunction1(addResponse), calls = calls, reset = js.Any.fromFunction0(reset), send = js.Any.fromFunction2(send))
+    val __obj = js.Dynamic.literal(addResponse = js.Any.fromFunction1(addResponse), calls = calls.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), send = js.Any.fromFunction2(send))
   
     __obj.asInstanceOf[InteractiveButtons[T]]
   }

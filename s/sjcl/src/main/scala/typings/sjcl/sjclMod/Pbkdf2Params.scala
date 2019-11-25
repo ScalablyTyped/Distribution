@@ -15,7 +15,7 @@ object Pbkdf2Params {
   def apply(iter: Int | Double = null, salt: BitArray = null): Pbkdf2Params = {
     val __obj = js.Dynamic.literal()
     if (iter != null) __obj.updateDynamic("iter")(iter.asInstanceOf[js.Any])
-    if (salt != null) __obj.updateDynamic("salt")(salt)
+    if (salt != null) __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pbkdf2Params]
   }
 }

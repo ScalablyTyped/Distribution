@@ -21,12 +21,12 @@ object FullscreenControlProps {
     container: HTMLElement = null
   ): FullscreenControlProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(captureClick)) __obj.updateDynamic("captureClick")(captureClick)
-    if (!js.isUndefined(captureDoubleClick)) __obj.updateDynamic("captureDoubleClick")(captureDoubleClick)
-    if (!js.isUndefined(captureDrag)) __obj.updateDynamic("captureDrag")(captureDrag)
-    if (!js.isUndefined(captureScroll)) __obj.updateDynamic("captureScroll")(captureScroll)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (container != null) __obj.updateDynamic("container")(container)
+    if (!js.isUndefined(captureClick)) __obj.updateDynamic("captureClick")(captureClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(captureDoubleClick)) __obj.updateDynamic("captureDoubleClick")(captureDoubleClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(captureDrag)) __obj.updateDynamic("captureDrag")(captureDrag.asInstanceOf[js.Any])
+    if (!js.isUndefined(captureScroll)) __obj.updateDynamic("captureScroll")(captureScroll.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullscreenControlProps]
   }
 }

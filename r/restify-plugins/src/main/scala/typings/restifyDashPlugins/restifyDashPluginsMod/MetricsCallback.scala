@@ -25,7 +25,7 @@ trait MetricsCallback extends js.Object {
 object MetricsCallback {
   @scala.inline
   def apply(err: Error, metrics: MetricsCallbackOptions, req: Request, res: Response, route: Route): MetricsCallback = {
-    val __obj = js.Dynamic.literal(err = err, metrics = metrics, req = req, res = res, route = route)
+    val __obj = js.Dynamic.literal(err = err.asInstanceOf[js.Any], metrics = metrics.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MetricsCallback]
   }

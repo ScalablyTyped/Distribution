@@ -14,9 +14,9 @@ object Anon_Force {
   @scala.inline
   def apply(force: String = null, migrationsPath: String = null, table: String = null): Anon_Force = {
     val __obj = js.Dynamic.literal()
-    if (force != null) __obj.updateDynamic("force")(force)
-    if (migrationsPath != null) __obj.updateDynamic("migrationsPath")(migrationsPath)
-    if (table != null) __obj.updateDynamic("table")(table)
+    if (force != null) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (migrationsPath != null) __obj.updateDynamic("migrationsPath")(migrationsPath.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Force]
   }
 }

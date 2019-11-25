@@ -24,3 +24,14 @@ import scala.scalajs.js.annotation._
 */
 trait ContextType extends js.Object
 
+object ContextType {
+  @scala.inline
+  def Cleared: typings.qlikDashEngineapi.qlikDashEngineapiStrings.Cleared = this.cast("Cleared")
+  @scala.inline
+  def CurrentSelections: typings.qlikDashEngineapi.qlikDashEngineapiStrings.CurrentSelections = this.cast("CurrentSelections")
+  @scala.inline
+  def LockedFieldsOnly: typings.qlikDashEngineapi.qlikDashEngineapiStrings.LockedFieldsOnly = this.cast("LockedFieldsOnly")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

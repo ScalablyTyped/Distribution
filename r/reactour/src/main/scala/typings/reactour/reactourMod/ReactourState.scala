@@ -44,11 +44,11 @@ object ReactourState {
     helperWidth: Int | Double = null,
     observer: MutationObserver = null
   ): ReactourState = {
-    val __obj = js.Dynamic.literal(bottom = bottom, current = current, focusUnlocked = focusUnlocked, h = h, height = height, inDOM = inDOM, isOpen = isOpen, left = left, right = right, top = top, w = w, width = width)
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], focusUnlocked = focusUnlocked.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], inDOM = inDOM.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (helperHeight != null) __obj.updateDynamic("helperHeight")(helperHeight.asInstanceOf[js.Any])
-    if (helperPosition != null) __obj.updateDynamic("helperPosition")(helperPosition)
+    if (helperPosition != null) __obj.updateDynamic("helperPosition")(helperPosition.asInstanceOf[js.Any])
     if (helperWidth != null) __obj.updateDynamic("helperWidth")(helperWidth.asInstanceOf[js.Any])
-    if (observer != null) __obj.updateDynamic("observer")(observer)
+    if (observer != null) __obj.updateDynamic("observer")(observer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactourState]
   }
 }

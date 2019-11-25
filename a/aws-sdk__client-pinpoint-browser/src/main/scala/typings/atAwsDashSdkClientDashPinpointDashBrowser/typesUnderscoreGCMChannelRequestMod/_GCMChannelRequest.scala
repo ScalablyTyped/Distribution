@@ -19,8 +19,8 @@ object _GCMChannelRequest {
   @scala.inline
   def apply(ApiKey: String = null, Enabled: js.UndefOr[Boolean] = js.undefined): _GCMChannelRequest = {
     val __obj = js.Dynamic.literal()
-    if (ApiKey != null) __obj.updateDynamic("ApiKey")(ApiKey)
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
+    if (ApiKey != null) __obj.updateDynamic("ApiKey")(ApiKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[_GCMChannelRequest]
   }
 }

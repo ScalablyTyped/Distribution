@@ -37,18 +37,18 @@ object IShepherdTourStepOptions {
     when: js.Any = null
   ): IShepherdTourStepOptions = {
     val __obj = js.Dynamic.literal()
-    if (advanceOn != null) __obj.updateDynamic("advanceOn")(advanceOn)
-    if (attachTo != null) __obj.updateDynamic("attachTo")(attachTo)
-    if (beforeShowPromise != null) __obj.updateDynamic("beforeShowPromise")(beforeShowPromise)
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
-    if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (!js.isUndefined(scrollTo)) __obj.updateDynamic("scrollTo")(scrollTo)
-    if (!js.isUndefined(showCancelLink)) __obj.updateDynamic("showCancelLink")(showCancelLink)
+    if (advanceOn != null) __obj.updateDynamic("advanceOn")(advanceOn.asInstanceOf[js.Any])
+    if (attachTo != null) __obj.updateDynamic("attachTo")(attachTo.asInstanceOf[js.Any])
+    if (beforeShowPromise != null) __obj.updateDynamic("beforeShowPromise")(beforeShowPromise.asInstanceOf[js.Any])
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollTo)) __obj.updateDynamic("scrollTo")(scrollTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCancelLink)) __obj.updateDynamic("showCancelLink")(showCancelLink.asInstanceOf[js.Any])
     if (showOn != null) __obj.updateDynamic("showOn")(js.Any.fromFunction0(showOn))
-    if (tetherOptions != null) __obj.updateDynamic("tetherOptions")(tetherOptions)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (when != null) __obj.updateDynamic("when")(when)
+    if (tetherOptions != null) __obj.updateDynamic("tetherOptions")(tetherOptions.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShepherdTourStepOptions]
   }
 }

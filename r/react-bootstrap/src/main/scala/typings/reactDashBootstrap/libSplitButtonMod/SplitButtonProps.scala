@@ -29,12 +29,12 @@ object SplitButtonProps {
     pullRight: js.UndefOr[Boolean] = js.undefined,
     title: ReactNode = null
   ): SplitButtonProps = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)
-    if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle)
-    if (dropdownTitle != null) __obj.updateDynamic("dropdownTitle")(dropdownTitle)
-    if (!js.isUndefined(dropup)) __obj.updateDynamic("dropup")(dropup)
-    if (!js.isUndefined(pullRight)) __obj.updateDynamic("pullRight")(pullRight)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize.asInstanceOf[js.Any])
+    if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle.asInstanceOf[js.Any])
+    if (dropdownTitle != null) __obj.updateDynamic("dropdownTitle")(dropdownTitle.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropup)) __obj.updateDynamic("dropup")(dropup.asInstanceOf[js.Any])
+    if (!js.isUndefined(pullRight)) __obj.updateDynamic("pullRight")(pullRight.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitButtonProps]
   }

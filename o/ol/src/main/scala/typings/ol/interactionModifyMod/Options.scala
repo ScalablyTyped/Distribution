@@ -30,14 +30,14 @@ object Options {
     wrapX: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (condition != null) __obj.updateDynamic("condition")(condition)
-    if (deleteCondition != null) __obj.updateDynamic("deleteCondition")(deleteCondition)
-    if (features != null) __obj.updateDynamic("features")(features)
-    if (insertVertexCondition != null) __obj.updateDynamic("insertVertexCondition")(insertVertexCondition)
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
+    if (deleteCondition != null) __obj.updateDynamic("deleteCondition")(deleteCondition.asInstanceOf[js.Any])
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
+    if (insertVertexCondition != null) __obj.updateDynamic("insertVertexCondition")(insertVertexCondition.asInstanceOf[js.Any])
     if (pixelTolerance != null) __obj.updateDynamic("pixelTolerance")(pixelTolerance.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX)
+    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

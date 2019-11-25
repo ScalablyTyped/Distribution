@@ -16,8 +16,8 @@ object UploadData {
   @scala.inline
   def apply(bytes: js.Any = null, file: String = null): UploadData = {
     val __obj = js.Dynamic.literal()
-    if (bytes != null) __obj.updateDynamic("bytes")(bytes)
-    if (file != null) __obj.updateDynamic("file")(file)
+    if (bytes != null) __obj.updateDynamic("bytes")(bytes.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadData]
   }
 }

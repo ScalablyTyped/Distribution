@@ -21,7 +21,7 @@ trait IProgressMessage extends js.Object {
 object IProgressMessage {
   @scala.inline
   def apply(qMessageCode: Double, qMessageParameters: js.Array[String]): IProgressMessage = {
-    val __obj = js.Dynamic.literal(qMessageCode = qMessageCode, qMessageParameters = qMessageParameters)
+    val __obj = js.Dynamic.literal(qMessageCode = qMessageCode.asInstanceOf[js.Any], qMessageParameters = qMessageParameters.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IProgressMessage]
   }

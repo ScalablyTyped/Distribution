@@ -13,7 +13,7 @@ trait Anon_Format extends js.Object {
 object Anon_Format {
   @scala.inline
   def apply(format: String, height: Double, width: Double): Anon_Format = {
-    val __obj = js.Dynamic.literal(format = format, height = height, width = width)
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Format]
   }

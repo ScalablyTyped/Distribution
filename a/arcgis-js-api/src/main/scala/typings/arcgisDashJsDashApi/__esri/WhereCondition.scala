@@ -37,7 +37,7 @@ object WhereCondition {
     operator: String,
     propertyIsEnumerable: PropertyKey => Boolean
   ): WhereCondition = {
-    val __obj = js.Dynamic.literal(compareValue = compareValue, constructor = constructor, field = field, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), operator = operator, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(compareValue = compareValue.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), operator = operator.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[WhereCondition]
   }

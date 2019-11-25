@@ -18,10 +18,10 @@ object IIRFilterOptions {
     channelCountMode: ChannelCountMode = null,
     channelInterpretation: ChannelInterpretation = null
   ): IIRFilterOptions = {
-    val __obj = js.Dynamic.literal(feedback = feedback, feedforward = feedforward)
+    val __obj = js.Dynamic.literal(feedback = feedback.asInstanceOf[js.Any], feedforward = feedforward.asInstanceOf[js.Any])
     if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
-    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode)
-    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation)
+    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
+    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIRFilterOptions]
   }
 }

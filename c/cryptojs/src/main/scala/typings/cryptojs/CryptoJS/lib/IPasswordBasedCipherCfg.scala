@@ -22,11 +22,11 @@ object IPasswordBasedCipherCfg {
     padding: IPaddingImpl = null
   ): IPasswordBasedCipherCfg = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (iv != null) __obj.updateDynamic("iv")(iv)
-    if (kdf != null) __obj.updateDynamic("kdf")(kdf)
-    if (mode != null) __obj.updateDynamic("mode")(mode)
-    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
+    if (kdf != null) __obj.updateDynamic("kdf")(kdf.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPasswordBasedCipherCfg]
   }
 }

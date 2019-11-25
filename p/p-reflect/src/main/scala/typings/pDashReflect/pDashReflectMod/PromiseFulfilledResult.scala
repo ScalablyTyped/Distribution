@@ -15,7 +15,7 @@ trait PromiseFulfilledResult[ValueType] extends PromiseResult[ValueType] {
 object PromiseFulfilledResult {
   @scala.inline
   def apply[ValueType](isFulfilled: `true`, isRejected: `false`, value: ValueType): PromiseFulfilledResult[ValueType] = {
-    val __obj = js.Dynamic.literal(isFulfilled = isFulfilled, isRejected = isRejected, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(isFulfilled = isFulfilled.asInstanceOf[js.Any], isRejected = isRejected.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PromiseFulfilledResult[ValueType]]
   }

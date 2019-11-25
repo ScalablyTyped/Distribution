@@ -25,13 +25,13 @@ object Reference {
     transforms: js.Array[String] = null,
     uri: String = null
   ): Reference = {
-    val __obj = js.Dynamic.literal(xpath = xpath)
-    if (digestAlgorithm != null) __obj.updateDynamic("digestAlgorithm")(digestAlgorithm)
-    if (digestValue != null) __obj.updateDynamic("digestValue")(digestValue)
-    if (inclusiveNamespacesPrefixList != null) __obj.updateDynamic("inclusiveNamespacesPrefixList")(inclusiveNamespacesPrefixList)
-    if (!js.isUndefined(isEmptyUri)) __obj.updateDynamic("isEmptyUri")(isEmptyUri)
-    if (transforms != null) __obj.updateDynamic("transforms")(transforms)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(xpath = xpath.asInstanceOf[js.Any])
+    if (digestAlgorithm != null) __obj.updateDynamic("digestAlgorithm")(digestAlgorithm.asInstanceOf[js.Any])
+    if (digestValue != null) __obj.updateDynamic("digestValue")(digestValue.asInstanceOf[js.Any])
+    if (inclusiveNamespacesPrefixList != null) __obj.updateDynamic("inclusiveNamespacesPrefixList")(inclusiveNamespacesPrefixList.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEmptyUri)) __obj.updateDynamic("isEmptyUri")(isEmptyUri.asInstanceOf[js.Any])
+    if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reference]
   }
 }

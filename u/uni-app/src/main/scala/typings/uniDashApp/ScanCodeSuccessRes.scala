@@ -27,10 +27,10 @@ object ScanCodeSuccessRes {
   @scala.inline
   def apply(charSet: String = null, path: String = null, result: String = null, scanType: String = null): ScanCodeSuccessRes = {
     val __obj = js.Dynamic.literal()
-    if (charSet != null) __obj.updateDynamic("charSet")(charSet)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (result != null) __obj.updateDynamic("result")(result)
-    if (scanType != null) __obj.updateDynamic("scanType")(scanType)
+    if (charSet != null) __obj.updateDynamic("charSet")(charSet.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    if (scanType != null) __obj.updateDynamic("scanType")(scanType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScanCodeSuccessRes]
   }
 }

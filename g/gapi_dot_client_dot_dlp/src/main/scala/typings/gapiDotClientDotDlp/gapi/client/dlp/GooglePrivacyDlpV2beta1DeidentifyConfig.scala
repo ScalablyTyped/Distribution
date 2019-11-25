@@ -25,8 +25,8 @@ object GooglePrivacyDlpV2beta1DeidentifyConfig {
     recordTransformations: GooglePrivacyDlpV2beta1RecordTransformations = null
   ): GooglePrivacyDlpV2beta1DeidentifyConfig = {
     val __obj = js.Dynamic.literal()
-    if (infoTypeTransformations != null) __obj.updateDynamic("infoTypeTransformations")(infoTypeTransformations)
-    if (recordTransformations != null) __obj.updateDynamic("recordTransformations")(recordTransformations)
+    if (infoTypeTransformations != null) __obj.updateDynamic("infoTypeTransformations")(infoTypeTransformations.asInstanceOf[js.Any])
+    if (recordTransformations != null) __obj.updateDynamic("recordTransformations")(recordTransformations.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1DeidentifyConfig]
   }
 }

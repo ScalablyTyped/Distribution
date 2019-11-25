@@ -21,10 +21,10 @@ object Body {
     variables: Record[String, _] = null
   ): Body = {
     val __obj = js.Dynamic.literal()
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (operationName != null) __obj.updateDynamic("operationName")(operationName)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (variables != null) __obj.updateDynamic("variables")(variables)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (operationName != null) __obj.updateDynamic("operationName")(operationName.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[Body]
   }
 }

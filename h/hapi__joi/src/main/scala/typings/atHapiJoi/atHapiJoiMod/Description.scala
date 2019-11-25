@@ -39,19 +39,19 @@ object Description {
     valids: js.Array[_] = null
   ): Description = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (example != null) __obj.updateDynamic("example")(example)
-    if (flags != null) __obj.updateDynamic("flags")(flags)
-    if (invalids != null) __obj.updateDynamic("invalids")(invalids)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (notes != null) __obj.updateDynamic("notes")(notes)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (example != null) __obj.updateDynamic("example")(example.asInstanceOf[js.Any])
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (invalids != null) __obj.updateDynamic("invalids")(invalids.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit)
-    if (valids != null) __obj.updateDynamic("valids")(valids)
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
+    if (valids != null) __obj.updateDynamic("valids")(valids.asInstanceOf[js.Any])
     __obj.asInstanceOf[Description]
   }
 }

@@ -13,7 +13,7 @@ object Anon_Root {
   @scala.inline
   def apply(`type`: root): Anon_Root = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Root]
   }
 }

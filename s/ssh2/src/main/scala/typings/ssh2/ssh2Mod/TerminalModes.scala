@@ -215,7 +215,7 @@ object TerminalModes {
     if (PARMRK != null) __obj.updateDynamic("PARMRK")(PARMRK.asInstanceOf[js.Any])
     if (PARODD != null) __obj.updateDynamic("PARODD")(PARODD.asInstanceOf[js.Any])
     if (PENDIN != null) __obj.updateDynamic("PENDIN")(PENDIN.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (TOSTOP != null) __obj.updateDynamic("TOSTOP")(TOSTOP.asInstanceOf[js.Any])
     if (TTY_OP_ISPEED != null) __obj.updateDynamic("TTY_OP_ISPEED")(TTY_OP_ISPEED.asInstanceOf[js.Any])
     if (TTY_OP_OSPEED != null) __obj.updateDynamic("TTY_OP_OSPEED")(TTY_OP_OSPEED.asInstanceOf[js.Any])

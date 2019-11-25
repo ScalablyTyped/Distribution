@@ -12,7 +12,7 @@ object RunTaskRequest {
   @scala.inline
   def apply(responseView: View = null): RunTaskRequest = {
     val __obj = js.Dynamic.literal()
-    if (responseView != null) __obj.updateDynamic("responseView")(responseView)
+    if (responseView != null) __obj.updateDynamic("responseView")(responseView.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunTaskRequest]
   }
 }

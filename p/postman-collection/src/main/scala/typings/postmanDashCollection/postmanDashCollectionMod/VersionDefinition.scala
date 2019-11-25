@@ -27,14 +27,14 @@ object VersionDefinition {
     version: String = null
   ): VersionDefinition = {
     val __obj = js.Dynamic.literal()
-    if (build != null) __obj.updateDynamic("build")(build)
+    if (build != null) __obj.updateDynamic("build")(build.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (major != null) __obj.updateDynamic("major")(major)
-    if (minor != null) __obj.updateDynamic("minor")(minor)
-    if (patch != null) __obj.updateDynamic("patch")(patch)
-    if (prerelease != null) __obj.updateDynamic("prerelease")(prerelease)
-    if (raw != null) __obj.updateDynamic("raw")(raw)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (major != null) __obj.updateDynamic("major")(major.asInstanceOf[js.Any])
+    if (minor != null) __obj.updateDynamic("minor")(minor.asInstanceOf[js.Any])
+    if (patch != null) __obj.updateDynamic("patch")(patch.asInstanceOf[js.Any])
+    if (prerelease != null) __obj.updateDynamic("prerelease")(prerelease.asInstanceOf[js.Any])
+    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[VersionDefinition]
   }
 }

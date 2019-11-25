@@ -23,7 +23,7 @@ package object _Global_ {
     ], 
     js.Object
   ]
-  type TypeDeclarationBuilders = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type TypeDeclarationBuilders = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in string ]: eslint-plugin-react.eslint-plugin-react/lib/types._Global_.TypeDeclarationBuilder}
     */ typings.eslintDashPluginDashReact.eslintDashPluginDashReactStrings.TypeDeclarationBuilders with js.Any
   type UnionTypeDefinitionChildren = js.Array[js.Any]

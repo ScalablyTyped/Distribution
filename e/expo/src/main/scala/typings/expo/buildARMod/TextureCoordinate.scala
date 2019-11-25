@@ -12,7 +12,7 @@ trait TextureCoordinate extends js.Object {
 object TextureCoordinate {
   @scala.inline
   def apply(u: Double, v: Double): TextureCoordinate = {
-    val __obj = js.Dynamic.literal(u = u, v = v)
+    val __obj = js.Dynamic.literal(u = u.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TextureCoordinate]
   }

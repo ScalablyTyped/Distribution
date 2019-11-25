@@ -17,7 +17,7 @@ object Options {
   @scala.inline
   def apply(suffix: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

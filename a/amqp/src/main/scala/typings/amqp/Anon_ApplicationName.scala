@@ -25,11 +25,11 @@ object Anon_ApplicationName {
     version: String = null
   ): Anon_ApplicationName = {
     val __obj = js.Dynamic.literal()
-    if (applicationName != null) __obj.updateDynamic("applicationName")(applicationName)
-    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities)
-    if (platform != null) __obj.updateDynamic("platform")(platform)
-    if (product != null) __obj.updateDynamic("product")(product)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (applicationName != null) __obj.updateDynamic("applicationName")(applicationName.asInstanceOf[js.Any])
+    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ApplicationName]
   }
 }

@@ -25,13 +25,13 @@ object IOptions {
     suggested: ISuggested | IJQuerySuggested = null,
     topLevelDomains: js.Array[String] = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal(email = email)
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
     if (distanceFunction != null) __obj.updateDynamic("distanceFunction")(js.Any.fromFunction2(distanceFunction))
-    if (domains != null) __obj.updateDynamic("domains")(domains)
+    if (domains != null) __obj.updateDynamic("domains")(domains.asInstanceOf[js.Any])
     if (empty != null) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
-    if (secondLevelDomains != null) __obj.updateDynamic("secondLevelDomains")(secondLevelDomains)
+    if (secondLevelDomains != null) __obj.updateDynamic("secondLevelDomains")(secondLevelDomains.asInstanceOf[js.Any])
     if (suggested != null) __obj.updateDynamic("suggested")(suggested.asInstanceOf[js.Any])
-    if (topLevelDomains != null) __obj.updateDynamic("topLevelDomains")(topLevelDomains)
+    if (topLevelDomains != null) __obj.updateDynamic("topLevelDomains")(topLevelDomains.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

@@ -17,10 +17,10 @@ object LoadOptions {
     transacting: Transaction[_, _] = null,
     withSchema: String = null
   ): LoadOptions = {
-    val __obj = js.Dynamic.literal(withRelated = withRelated)
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
-    if (transacting != null) __obj.updateDynamic("transacting")(transacting)
-    if (withSchema != null) __obj.updateDynamic("withSchema")(withSchema)
+    val __obj = js.Dynamic.literal(withRelated = withRelated.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (transacting != null) __obj.updateDynamic("transacting")(transacting.asInstanceOf[js.Any])
+    if (withSchema != null) __obj.updateDynamic("withSchema")(withSchema.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadOptions]
   }
 }

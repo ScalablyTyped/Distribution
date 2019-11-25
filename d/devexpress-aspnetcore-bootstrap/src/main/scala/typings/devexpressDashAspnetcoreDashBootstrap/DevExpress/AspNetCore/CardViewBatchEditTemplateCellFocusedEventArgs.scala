@@ -12,7 +12,7 @@ trait CardViewBatchEditTemplateCellFocusedEventArgs extends EventArgs {
 object CardViewBatchEditTemplateCellFocusedEventArgs {
   @scala.inline
   def apply(column: BootstrapCardViewColumn, handled: Boolean, sender: Control): CardViewBatchEditTemplateCellFocusedEventArgs = {
-    val __obj = js.Dynamic.literal(column = column, handled = handled, sender = sender)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CardViewBatchEditTemplateCellFocusedEventArgs]
   }

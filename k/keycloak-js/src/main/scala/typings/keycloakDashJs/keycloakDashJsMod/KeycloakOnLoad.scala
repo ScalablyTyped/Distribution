@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait KeycloakOnLoad extends js.Object
 
+object KeycloakOnLoad {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def `check-sso`: typings.keycloakDashJs.keycloakDashJsStrings.`check-sso` = this.cast("check-sso")
+  @scala.inline
+  def `login-required`: typings.keycloakDashJs.keycloakDashJsStrings.`login-required` = this.cast("login-required")
+}
+

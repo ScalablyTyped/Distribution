@@ -15,7 +15,7 @@ trait IotaClass extends js.Object {
 object IotaClass {
   @scala.inline
   def apply(api: IotaApi, multisig: IotaMultisig, utils: IotaUtils, valid: IotaValid, version: String): IotaClass = {
-    val __obj = js.Dynamic.literal(api = api, multisig = multisig, utils = utils, valid = valid, version = version)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], multisig = multisig.asInstanceOf[js.Any], utils = utils.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IotaClass]
   }

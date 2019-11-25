@@ -34,11 +34,11 @@ object UpdateTrainingExampleParams {
     relevance: Int | Double = null,
     return_response: js.UndefOr[Boolean] = js.undefined
   ): UpdateTrainingExampleParams = {
-    val __obj = js.Dynamic.literal(collection_id = collection_id, environment_id = environment_id, example_id = example_id, query_id = query_id)
-    if (cross_reference != null) __obj.updateDynamic("cross_reference")(cross_reference)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(collection_id = collection_id.asInstanceOf[js.Any], environment_id = environment_id.asInstanceOf[js.Any], example_id = example_id.asInstanceOf[js.Any], query_id = query_id.asInstanceOf[js.Any])
+    if (cross_reference != null) __obj.updateDynamic("cross_reference")(cross_reference.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (relevance != null) __obj.updateDynamic("relevance")(relevance.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTrainingExampleParams]
   }
 }

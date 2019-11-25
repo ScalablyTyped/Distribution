@@ -15,7 +15,7 @@ trait FieldInstance extends js.Object {
 object FieldInstance {
   @scala.inline
   def apply(location: Location, originalPath: String, originalValue: js.Any, path: String, value: js.Any): FieldInstance = {
-    val __obj = js.Dynamic.literal(location = location, originalPath = originalPath, originalValue = originalValue, path = path, value = value)
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], originalPath = originalPath.asInstanceOf[js.Any], originalValue = originalValue.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FieldInstance]
   }

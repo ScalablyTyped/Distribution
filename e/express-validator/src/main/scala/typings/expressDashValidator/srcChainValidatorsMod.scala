@@ -131,6 +131,8 @@ object srcChainValidatorsMod extends js.Object {
     def matches(pattern: RegExp): Return = js.native
     def matches(pattern: RegExp, modifiers: String): Return = js.native
     def not(): Return = js.native
+    def notEmpty(): Return = js.native
+    def notEmpty(options: IsEmptyOptions): Return = js.native
     def withMessage(message: js.Any): Return = js.native
     def withMessage(message: DynamicMessageCreator): Return = js.native
   }

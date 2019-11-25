@@ -21,7 +21,7 @@ object Anon_Leg {
     summary: Anon_BaseTime,
     waypoint: js.Array[Anon_Label]
   ): Anon_Leg = {
-    val __obj = js.Dynamic.literal(leg = leg, mode = mode, shape = shape, summary = summary, waypoint = waypoint)
+    val __obj = js.Dynamic.literal(leg = leg.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], waypoint = waypoint.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Leg]
   }

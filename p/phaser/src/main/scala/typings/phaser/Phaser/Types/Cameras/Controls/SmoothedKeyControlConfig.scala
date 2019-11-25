@@ -65,14 +65,14 @@ object SmoothedKeyControlConfig {
   ): SmoothedKeyControlConfig = {
     val __obj = js.Dynamic.literal()
     if (acceleration != null) __obj.updateDynamic("acceleration")(acceleration.asInstanceOf[js.Any])
-    if (camera != null) __obj.updateDynamic("camera")(camera)
+    if (camera != null) __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
     if (drag != null) __obj.updateDynamic("drag")(drag.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left)
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (maxSpeed != null) __obj.updateDynamic("maxSpeed")(maxSpeed.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right)
-    if (up != null) __obj.updateDynamic("up")(up)
-    if (zoomIn != null) __obj.updateDynamic("zoomIn")(zoomIn)
-    if (zoomOut != null) __obj.updateDynamic("zoomOut")(zoomOut)
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (up != null) __obj.updateDynamic("up")(up.asInstanceOf[js.Any])
+    if (zoomIn != null) __obj.updateDynamic("zoomIn")(zoomIn.asInstanceOf[js.Any])
+    if (zoomOut != null) __obj.updateDynamic("zoomOut")(zoomOut.asInstanceOf[js.Any])
     if (zoomSpeed != null) __obj.updateDynamic("zoomSpeed")(zoomSpeed.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmoothedKeyControlConfig]
   }

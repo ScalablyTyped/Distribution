@@ -23,11 +23,11 @@ object UriObject {
     password: String = null,
     username: String = null
   ): UriObject = {
-    val __obj = js.Dynamic.literal(hosts = hosts, scheme = scheme)
-    if (database != null) __obj.updateDynamic("database")(database)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (username != null) __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(hosts = hosts.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
+    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[UriObject]
   }
 }

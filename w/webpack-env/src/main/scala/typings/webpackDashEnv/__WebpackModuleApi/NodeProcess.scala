@@ -15,7 +15,7 @@ object NodeProcess {
   @scala.inline
   def apply(env: js.Any = null): NodeProcess = {
     val __obj = js.Dynamic.literal()
-    if (env != null) __obj.updateDynamic("env")(env)
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeProcess]
   }
 }

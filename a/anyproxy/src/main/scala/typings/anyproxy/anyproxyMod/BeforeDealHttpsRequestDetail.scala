@@ -13,7 +13,7 @@ trait BeforeDealHttpsRequestDetail extends js.Object {
 object BeforeDealHttpsRequestDetail {
   @scala.inline
   def apply(_req: IncomingMessage, host: String): BeforeDealHttpsRequestDetail = {
-    val __obj = js.Dynamic.literal(_req = _req, host = host)
+    val __obj = js.Dynamic.literal(_req = _req.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BeforeDealHttpsRequestDetail]
   }

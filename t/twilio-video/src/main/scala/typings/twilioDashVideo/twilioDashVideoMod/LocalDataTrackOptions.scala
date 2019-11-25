@@ -20,7 +20,7 @@ object LocalDataTrackOptions {
     val __obj = js.Dynamic.literal()
     if (maxPacketLifeTime != null) __obj.updateDynamic("maxPacketLifeTime")(maxPacketLifeTime.asInstanceOf[js.Any])
     if (maxRetransmits != null) __obj.updateDynamic("maxRetransmits")(maxRetransmits.asInstanceOf[js.Any])
-    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered)
+    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalDataTrackOptions]
   }
 }

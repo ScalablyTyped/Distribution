@@ -43,12 +43,12 @@ object Location {
     subscriptionId: String = null
   ): Location = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (latitude != null) __obj.updateDynamic("latitude")(latitude)
-    if (longitude != null) __obj.updateDynamic("longitude")(longitude)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (subscriptionId != null) __obj.updateDynamic("subscriptionId")(subscriptionId)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
+    if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (subscriptionId != null) __obj.updateDynamic("subscriptionId")(subscriptionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Location]
   }
 }

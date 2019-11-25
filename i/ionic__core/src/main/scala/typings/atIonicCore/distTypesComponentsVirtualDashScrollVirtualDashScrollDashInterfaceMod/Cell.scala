@@ -25,8 +25,8 @@ object Cell {
     value: js.Any,
     visible: Boolean
   ): Cell = {
-    val __obj = js.Dynamic.literal(height = height, i = i, index = index, reads = reads, value = value, visible = visible)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], reads = reads.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cell]
   }
 }

@@ -31,9 +31,9 @@ object Anon_Statementdescriptor {
     statement_descriptor_kanji: String = null
   ): Anon_Statementdescriptor = {
     val __obj = js.Dynamic.literal()
-    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
-    if (statement_descriptor_kana != null) __obj.updateDynamic("statement_descriptor_kana")(statement_descriptor_kana)
-    if (statement_descriptor_kanji != null) __obj.updateDynamic("statement_descriptor_kanji")(statement_descriptor_kanji)
+    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor.asInstanceOf[js.Any])
+    if (statement_descriptor_kana != null) __obj.updateDynamic("statement_descriptor_kana")(statement_descriptor_kana.asInstanceOf[js.Any])
+    if (statement_descriptor_kanji != null) __obj.updateDynamic("statement_descriptor_kanji")(statement_descriptor_kanji.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Statementdescriptor]
   }
 }

@@ -21,8 +21,8 @@ trait Anon_Amount extends js.Object {
 object Anon_Amount {
   @scala.inline
   def apply(amount: Double, application: String, currency: String, description: String, `type`: String): Anon_Amount = {
-    val __obj = js.Dynamic.literal(amount = amount, application = application, currency = currency, description = description)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], application = application.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Amount]
   }
 }

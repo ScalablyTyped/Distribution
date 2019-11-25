@@ -14,7 +14,7 @@ trait Anon_DisableHeight extends js.Object {
 object Anon_DisableHeight {
   @scala.inline
   def apply(disableHeight: `false`, disableWidth: `false`, onResize: () => Unit): Anon_DisableHeight = {
-    val __obj = js.Dynamic.literal(disableHeight = disableHeight, disableWidth = disableWidth, onResize = js.Any.fromFunction0(onResize))
+    val __obj = js.Dynamic.literal(disableHeight = disableHeight.asInstanceOf[js.Any], disableWidth = disableWidth.asInstanceOf[js.Any], onResize = js.Any.fromFunction0(onResize))
   
     __obj.asInstanceOf[Anon_DisableHeight]
   }

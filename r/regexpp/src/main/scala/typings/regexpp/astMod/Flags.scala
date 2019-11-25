@@ -34,9 +34,9 @@ object Flags {
     unicode: Boolean,
     parent: RegExpLiteral = null
   ): Flags = {
-    val __obj = js.Dynamic.literal(dotAll = dotAll, end = end, global = global, ignoreCase = ignoreCase, multiline = multiline, raw = raw, start = start, sticky = sticky, unicode = unicode)
-    __obj.updateDynamic("type")(`type`)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(dotAll = dotAll.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], ignoreCase = ignoreCase.asInstanceOf[js.Any], multiline = multiline.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], sticky = sticky.asInstanceOf[js.Any], unicode = unicode.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Flags]
   }
 }

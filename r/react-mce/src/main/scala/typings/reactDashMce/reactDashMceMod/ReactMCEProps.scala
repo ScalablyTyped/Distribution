@@ -145,8 +145,8 @@ object ReactMCEProps {
     onUndo: (/* event */ js.Any, /* editor */ Editor) => Unit = null,
     onVisualAid: (/* event */ js.Any, /* editor */ Editor) => Unit = null
   ): ReactMCEProps = {
-    val __obj = js.Dynamic.literal(config = config)
-    if (content != null) __obj.updateDynamic("content")(content)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (onActivate != null) __obj.updateDynamic("onActivate")(js.Any.fromFunction2(onActivate))
     if (onAddUndo != null) __obj.updateDynamic("onAddUndo")(js.Any.fromFunction2(onAddUndo))
     if (onBeforeAddUndo != null) __obj.updateDynamic("onBeforeAddUndo")(js.Any.fromFunction2(onBeforeAddUndo))

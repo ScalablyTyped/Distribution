@@ -13,8 +13,8 @@ object MaterializedViewDefinition {
   @scala.inline
   def apply(lastRefreshTime: String = null, query: String = null): MaterializedViewDefinition = {
     val __obj = js.Dynamic.literal()
-    if (lastRefreshTime != null) __obj.updateDynamic("lastRefreshTime")(lastRefreshTime)
-    if (query != null) __obj.updateDynamic("query")(query)
+    if (lastRefreshTime != null) __obj.updateDynamic("lastRefreshTime")(lastRefreshTime.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaterializedViewDefinition]
   }
 }

@@ -35,7 +35,7 @@ object SearchResultBase {
     waypoints: js.Array[Poi with Anon_IsWaypoint],
     taxi_cost: Int | Double = null
   ): SearchResultBase = {
-    val __obj = js.Dynamic.literal(destination = destination, end = end, info = info, origin = origin, routes = routes, start = start, waypoints = waypoints)
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], waypoints = waypoints.asInstanceOf[js.Any])
     if (taxi_cost != null) __obj.updateDynamic("taxi_cost")(taxi_cost.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchResultBase]
   }

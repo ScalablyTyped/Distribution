@@ -48,12 +48,12 @@ object YarOptions {
     name: String = null,
     storeBlank: js.UndefOr[Boolean] = js.undefined
   ): YarOptions = {
-    val __obj = js.Dynamic.literal(cookieOptions = cookieOptions)
-    if (cache != null) __obj.updateDynamic("cache")(cache)
-    if (!js.isUndefined(errorOnCacheNotReady)) __obj.updateDynamic("errorOnCacheNotReady")(errorOnCacheNotReady)
+    val __obj = js.Dynamic.literal(cookieOptions = cookieOptions.asInstanceOf[js.Any])
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorOnCacheNotReady)) __obj.updateDynamic("errorOnCacheNotReady")(errorOnCacheNotReady.asInstanceOf[js.Any])
     if (maxCookieSize != null) __obj.updateDynamic("maxCookieSize")(maxCookieSize.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(storeBlank)) __obj.updateDynamic("storeBlank")(storeBlank)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(storeBlank)) __obj.updateDynamic("storeBlank")(storeBlank.asInstanceOf[js.Any])
     __obj.asInstanceOf[YarOptions]
   }
 }

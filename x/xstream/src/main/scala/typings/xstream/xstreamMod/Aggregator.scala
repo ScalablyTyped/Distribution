@@ -21,8 +21,8 @@ object Aggregator {
     out: Stream[U],
     `type`: String
   ): Aggregator[T, U] = {
-    val __obj = js.Dynamic.literal(_start = js.Any.fromFunction1(_start), _stop = js.Any.fromFunction0(_stop), insArr = insArr, out = out)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(_start = js.Any.fromFunction1(_start), _stop = js.Any.fromFunction0(_stop), insArr = insArr.asInstanceOf[js.Any], out = out.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Aggregator[T, U]]
   }
 }

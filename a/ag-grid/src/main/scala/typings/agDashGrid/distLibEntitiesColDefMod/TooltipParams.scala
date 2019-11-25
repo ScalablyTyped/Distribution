@@ -32,7 +32,7 @@ object TooltipParams {
     value: js.Any,
     valueFormatted: js.Any
   ): TooltipParams = {
-    val __obj = js.Dynamic.literal($scope = $scope, api = api, colDef = colDef, context = context, data = data, node = node, rowIndex = rowIndex, value = value, valueFormatted = valueFormatted)
+    val __obj = js.Dynamic.literal($scope = $scope.asInstanceOf[js.Any], api = api.asInstanceOf[js.Any], colDef = colDef.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueFormatted = valueFormatted.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TooltipParams]
   }

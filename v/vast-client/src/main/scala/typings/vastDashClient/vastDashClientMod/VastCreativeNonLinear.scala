@@ -19,11 +19,11 @@ object VastCreativeNonLinear {
     id: String = null,
     sequence: String | Double = null
   ): VastCreativeNonLinear = {
-    val __obj = js.Dynamic.literal(trackingEvents = trackingEvents, variations = variations)
-    __obj.updateDynamic("type")(`type`)
-    if (adId != null) __obj.updateDynamic("adId")(adId)
-    if (apiFramework != null) __obj.updateDynamic("apiFramework")(apiFramework)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(trackingEvents = trackingEvents.asInstanceOf[js.Any], variations = variations.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (adId != null) __obj.updateDynamic("adId")(adId.asInstanceOf[js.Any])
+    if (apiFramework != null) __obj.updateDynamic("apiFramework")(apiFramework.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (sequence != null) __obj.updateDynamic("sequence")(sequence.asInstanceOf[js.Any])
     __obj.asInstanceOf[VastCreativeNonLinear]
   }

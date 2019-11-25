@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait ProductType extends js.Object
 
+object ProductType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def good: typings.stripe.stripeStrings.good = this.cast("good")
+  @scala.inline
+  def service: typings.stripe.stripeStrings.service = this.cast("service")
+}
+

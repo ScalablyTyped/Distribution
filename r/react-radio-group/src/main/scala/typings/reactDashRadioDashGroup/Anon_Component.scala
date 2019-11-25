@@ -25,7 +25,7 @@ object Anon_Component {
     val __obj = js.Dynamic.literal()
     if (Component != null) __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (selectedValue != null) __obj.updateDynamic("selectedValue")(selectedValue)
+    if (selectedValue != null) __obj.updateDynamic("selectedValue")(selectedValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Component]
   }
 }

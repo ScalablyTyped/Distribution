@@ -70,7 +70,7 @@ object FakerStatic {
     system: Anon_CommonFileExt,
     vehicle: Anon_ColorFuel
   ): FakerStatic = {
-    val __obj = js.Dynamic.literal(address = address, commerce = commerce, company = company, database = database, date = date, fake = js.Any.fromFunction1(fake), finance = finance, git = git, hacker = hacker, helpers = helpers, image = image, internet = internet, locale = locale, lorem = lorem, name = name, phone = phone, random = random, seed = js.Any.fromFunction1(seed), setLocale = js.Any.fromFunction1(setLocale), system = system, vehicle = vehicle)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], commerce = commerce.asInstanceOf[js.Any], company = company.asInstanceOf[js.Any], database = database.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], fake = js.Any.fromFunction1(fake), finance = finance.asInstanceOf[js.Any], git = git.asInstanceOf[js.Any], hacker = hacker.asInstanceOf[js.Any], helpers = helpers.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], internet = internet.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], lorem = lorem.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], random = random.asInstanceOf[js.Any], seed = js.Any.fromFunction1(seed), setLocale = js.Any.fromFunction1(setLocale), system = system.asInstanceOf[js.Any], vehicle = vehicle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FakerStatic]
   }

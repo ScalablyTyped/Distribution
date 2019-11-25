@@ -14,7 +14,7 @@ trait QMeasureCell extends js.Object {
 object QMeasureCell {
   @scala.inline
   def apply(getPercent: () => Double, getPercentOfMax: () => Double, qText: String, qNum: Int | Double = null): QMeasureCell = {
-    val __obj = js.Dynamic.literal(getPercent = js.Any.fromFunction0(getPercent), getPercentOfMax = js.Any.fromFunction0(getPercentOfMax), qText = qText)
+    val __obj = js.Dynamic.literal(getPercent = js.Any.fromFunction0(getPercent), getPercentOfMax = js.Any.fromFunction0(getPercentOfMax), qText = qText.asInstanceOf[js.Any])
     if (qNum != null) __obj.updateDynamic("qNum")(qNum.asInstanceOf[js.Any])
     __obj.asInstanceOf[QMeasureCell]
   }

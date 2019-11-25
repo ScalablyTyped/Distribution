@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait AlertTransition extends js.Object
 
+object AlertTransition {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def fade: typings.reactDashAlert.reactDashAlertStrings.fade = this.cast("fade")
+  @scala.inline
+  def scale: typings.reactDashAlert.reactDashAlertStrings.scale = this.cast("scale")
+}
+

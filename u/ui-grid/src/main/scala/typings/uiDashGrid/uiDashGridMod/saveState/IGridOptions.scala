@@ -143,19 +143,19 @@ object IGridOptions {
     saveWidths: js.UndefOr[Boolean] = js.undefined
   ): IGridOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(saveFilter)) __obj.updateDynamic("saveFilter")(saveFilter)
-    if (!js.isUndefined(saveFocus)) __obj.updateDynamic("saveFocus")(saveFocus)
-    if (!js.isUndefined(saveGrouping)) __obj.updateDynamic("saveGrouping")(saveGrouping)
-    if (!js.isUndefined(saveGroupingExpandedStates)) __obj.updateDynamic("saveGroupingExpandedStates")(saveGroupingExpandedStates)
-    if (!js.isUndefined(saveOrder)) __obj.updateDynamic("saveOrder")(saveOrder)
-    if (!js.isUndefined(savePinning)) __obj.updateDynamic("savePinning")(savePinning)
-    if (!js.isUndefined(saveRowIdentity)) __obj.updateDynamic("saveRowIdentity")(saveRowIdentity)
-    if (!js.isUndefined(saveScroll)) __obj.updateDynamic("saveScroll")(saveScroll)
-    if (!js.isUndefined(saveSelection)) __obj.updateDynamic("saveSelection")(saveSelection)
-    if (!js.isUndefined(saveSort)) __obj.updateDynamic("saveSort")(saveSort)
-    if (!js.isUndefined(saveTreeView)) __obj.updateDynamic("saveTreeView")(saveTreeView)
-    if (!js.isUndefined(saveVisible)) __obj.updateDynamic("saveVisible")(saveVisible)
-    if (!js.isUndefined(saveWidths)) __obj.updateDynamic("saveWidths")(saveWidths)
+    if (!js.isUndefined(saveFilter)) __obj.updateDynamic("saveFilter")(saveFilter.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveFocus)) __obj.updateDynamic("saveFocus")(saveFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveGrouping)) __obj.updateDynamic("saveGrouping")(saveGrouping.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveGroupingExpandedStates)) __obj.updateDynamic("saveGroupingExpandedStates")(saveGroupingExpandedStates.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveOrder)) __obj.updateDynamic("saveOrder")(saveOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(savePinning)) __obj.updateDynamic("savePinning")(savePinning.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveRowIdentity)) __obj.updateDynamic("saveRowIdentity")(saveRowIdentity.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveScroll)) __obj.updateDynamic("saveScroll")(saveScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveSelection)) __obj.updateDynamic("saveSelection")(saveSelection.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveSort)) __obj.updateDynamic("saveSort")(saveSort.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveTreeView)) __obj.updateDynamic("saveTreeView")(saveTreeView.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveVisible)) __obj.updateDynamic("saveVisible")(saveVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveWidths)) __obj.updateDynamic("saveWidths")(saveWidths.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridOptions]
   }
 }

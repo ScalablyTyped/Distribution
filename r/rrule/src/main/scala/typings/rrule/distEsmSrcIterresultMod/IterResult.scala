@@ -45,16 +45,15 @@ object IterResult {
     accept: Date => Boolean,
     add: Date => Boolean,
     args: Partial[IterArgs],
-    clone: () => IterResult[M],
     getValue: () => IterResultType[M],
     method: M,
     total: Double,
     maxDate: Date = null,
     minDate: Date = null
   ): IterResult[M] = {
-    val __obj = js.Dynamic.literal(_result = _result, accept = js.Any.fromFunction1(accept), add = js.Any.fromFunction1(add), args = args, clone = js.Any.fromFunction0(clone), getValue = js.Any.fromFunction0(getValue), method = method.asInstanceOf[js.Any], total = total)
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate)
+    val __obj = js.Dynamic.literal(_result = _result.asInstanceOf[js.Any], accept = js.Any.fromFunction1(accept), add = js.Any.fromFunction1(add), args = args.asInstanceOf[js.Any], getValue = js.Any.fromFunction0(getValue), method = method.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[IterResult[M]]
   }
 }

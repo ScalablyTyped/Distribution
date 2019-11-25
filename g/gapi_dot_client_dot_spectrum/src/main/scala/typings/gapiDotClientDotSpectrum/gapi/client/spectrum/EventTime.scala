@@ -15,8 +15,8 @@ object EventTime {
   @scala.inline
   def apply(startTime: String = null, stopTime: String = null): EventTime = {
     val __obj = js.Dynamic.literal()
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (stopTime != null) __obj.updateDynamic("stopTime")(stopTime)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (stopTime != null) __obj.updateDynamic("stopTime")(stopTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventTime]
   }
 }

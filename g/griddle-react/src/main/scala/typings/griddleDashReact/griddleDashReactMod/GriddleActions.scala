@@ -26,7 +26,7 @@ object GriddleActions {
     setFilter: /* filter */ GriddleFilter => Unit = null
   ): GriddleActions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (onGetPage != null) __obj.updateDynamic("onGetPage")(js.Any.fromFunction1(onGetPage))
     if (onNext != null) __obj.updateDynamic("onNext")(js.Any.fromFunction0(onNext))
     if (onPrevious != null) __obj.updateDynamic("onPrevious")(js.Any.fromFunction0(onPrevious))

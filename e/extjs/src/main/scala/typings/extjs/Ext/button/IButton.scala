@@ -212,50 +212,39 @@ object IButton {
     allowDepress: js.UndefOr[Boolean] = js.undefined,
     arrowAlign: java.lang.String = null,
     arrowCls: java.lang.String = null,
-    baseCls: java.lang.String = null,
     baseParams: js.Any = null,
-    child: /* selector */ js.UndefOr[js.Any] => _ = null,
+    child: js.UndefOr[js.Any] => _ = null,
     clickEvent: java.lang.String = null,
-    cls: java.lang.String = null,
-    componentLayout: js.Any = null,
     destroyMenu: js.UndefOr[Boolean] = js.undefined,
     disable: /* silent */ js.UndefOr[js.Any] => Unit = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    down: /* selector */ js.UndefOr[js.Any] => _ = null,
+    down: js.UndefOr[js.Any] => _ = null,
     enable: /* silent */ js.UndefOr[js.Any] => Unit = null,
     enableToggle: js.UndefOr[Boolean] = js.undefined,
     focusCls: java.lang.String = null,
-    frame: js.UndefOr[Boolean] = js.undefined,
     getTemplateArgs: () => _ = null,
     getText: () => java.lang.String = null,
     glyph: js.Any = null,
     handleMouseEvents: js.UndefOr[Boolean] = js.undefined,
     handler: js.Any = null,
     hasVisibleMenu: () => Boolean = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
     hideMenu: () => typings.extjs.Ext.button.IButton = null,
     href: java.lang.String = null,
     hrefTarget: java.lang.String = null,
     icon: java.lang.String = null,
     iconAlign: java.lang.String = null,
     iconCls: java.lang.String = null,
-    initComponent: () => Unit = null,
     isAction: js.UndefOr[Boolean] = js.undefined,
     menu: js.Any = null,
     menuActiveCls: java.lang.String = null,
     menuAlign: java.lang.String = null,
-    minWidth: Int | Double = null,
-    onDisable: () => Unit = null,
-    overCls: java.lang.String = null,
     overflowText: java.lang.String = null,
     params: js.Any = null,
     pressed: js.UndefOr[Boolean] = js.undefined,
     pressedCls: java.lang.String = null,
     preventDefault: js.UndefOr[Boolean] = js.undefined,
-    query: /* selector */ js.UndefOr[java.lang.String] => Array = null,
-    queryBy: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Array = null,
-    queryById: /* id */ js.UndefOr[java.lang.String] => IComponent = null,
-    renderTpl: js.Any = null,
+    query: js.UndefOr[java.lang.String] => Array = null,
+    queryBy: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => Array = null,
+    queryById: js.UndefOr[java.lang.String] => IComponent = null,
     repeat: js.Any = null,
     scale: js.Any = null,
     scope: js.Any = null,
@@ -272,7 +261,6 @@ object IButton {
     setUI: /* ui */ js.UndefOr[js.Any] => Unit = null,
     showEmptyMenu: js.UndefOr[Boolean] = js.undefined,
     showMenu: /* fromEvent */ js.UndefOr[js.Any] => Unit = null,
-    shrinkWrap: js.Any = null,
     tabIndex: Int | Double = null,
     template: ITemplate = null,
     text: java.lang.String = null,
@@ -284,57 +272,46 @@ object IButton {
     tooltipType: java.lang.String = null
   ): IButton = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (!js.isUndefined(allowDepress)) __obj.updateDynamic("allowDepress")(allowDepress)
-    if (arrowAlign != null) __obj.updateDynamic("arrowAlign")(arrowAlign)
-    if (arrowCls != null) __obj.updateDynamic("arrowCls")(arrowCls)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (baseParams != null) __obj.updateDynamic("baseParams")(baseParams)
+    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (!js.isUndefined(allowDepress)) __obj.updateDynamic("allowDepress")(allowDepress.asInstanceOf[js.Any])
+    if (arrowAlign != null) __obj.updateDynamic("arrowAlign")(arrowAlign.asInstanceOf[js.Any])
+    if (arrowCls != null) __obj.updateDynamic("arrowCls")(arrowCls.asInstanceOf[js.Any])
+    if (baseParams != null) __obj.updateDynamic("baseParams")(baseParams.asInstanceOf[js.Any])
     if (child != null) __obj.updateDynamic("child")(js.Any.fromFunction1(child))
-    if (clickEvent != null) __obj.updateDynamic("clickEvent")(clickEvent)
-    if (cls != null) __obj.updateDynamic("cls")(cls)
-    if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
-    if (!js.isUndefined(destroyMenu)) __obj.updateDynamic("destroyMenu")(destroyMenu)
+    if (clickEvent != null) __obj.updateDynamic("clickEvent")(clickEvent.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyMenu)) __obj.updateDynamic("destroyMenu")(destroyMenu.asInstanceOf[js.Any])
     if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction1(disable))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (down != null) __obj.updateDynamic("down")(js.Any.fromFunction1(down))
     if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction1(enable))
-    if (!js.isUndefined(enableToggle)) __obj.updateDynamic("enableToggle")(enableToggle)
-    if (focusCls != null) __obj.updateDynamic("focusCls")(focusCls)
-    if (!js.isUndefined(frame)) __obj.updateDynamic("frame")(frame)
+    if (!js.isUndefined(enableToggle)) __obj.updateDynamic("enableToggle")(enableToggle.asInstanceOf[js.Any])
+    if (focusCls != null) __obj.updateDynamic("focusCls")(focusCls.asInstanceOf[js.Any])
     if (getTemplateArgs != null) __obj.updateDynamic("getTemplateArgs")(js.Any.fromFunction0(getTemplateArgs))
     if (getText != null) __obj.updateDynamic("getText")(js.Any.fromFunction0(getText))
-    if (glyph != null) __obj.updateDynamic("glyph")(glyph)
-    if (!js.isUndefined(handleMouseEvents)) __obj.updateDynamic("handleMouseEvents")(handleMouseEvents)
-    if (handler != null) __obj.updateDynamic("handler")(handler)
+    if (glyph != null) __obj.updateDynamic("glyph")(glyph.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleMouseEvents)) __obj.updateDynamic("handleMouseEvents")(handleMouseEvents.asInstanceOf[js.Any])
+    if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
     if (hasVisibleMenu != null) __obj.updateDynamic("hasVisibleMenu")(js.Any.fromFunction0(hasVisibleMenu))
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     if (hideMenu != null) __obj.updateDynamic("hideMenu")(js.Any.fromFunction0(hideMenu))
-    if (href != null) __obj.updateDynamic("href")(href)
-    if (hrefTarget != null) __obj.updateDynamic("hrefTarget")(hrefTarget)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (iconAlign != null) __obj.updateDynamic("iconAlign")(iconAlign)
-    if (iconCls != null) __obj.updateDynamic("iconCls")(iconCls)
-    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
-    if (!js.isUndefined(isAction)) __obj.updateDynamic("isAction")(isAction)
-    if (menu != null) __obj.updateDynamic("menu")(menu)
-    if (menuActiveCls != null) __obj.updateDynamic("menuActiveCls")(menuActiveCls)
-    if (menuAlign != null) __obj.updateDynamic("menuAlign")(menuAlign)
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (onDisable != null) __obj.updateDynamic("onDisable")(js.Any.fromFunction0(onDisable))
-    if (overCls != null) __obj.updateDynamic("overCls")(overCls)
-    if (overflowText != null) __obj.updateDynamic("overflowText")(overflowText)
-    if (params != null) __obj.updateDynamic("params")(params)
-    if (!js.isUndefined(pressed)) __obj.updateDynamic("pressed")(pressed)
-    if (pressedCls != null) __obj.updateDynamic("pressedCls")(pressedCls)
-    if (!js.isUndefined(preventDefault)) __obj.updateDynamic("preventDefault")(preventDefault)
+    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    if (hrefTarget != null) __obj.updateDynamic("hrefTarget")(hrefTarget.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (iconAlign != null) __obj.updateDynamic("iconAlign")(iconAlign.asInstanceOf[js.Any])
+    if (iconCls != null) __obj.updateDynamic("iconCls")(iconCls.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAction)) __obj.updateDynamic("isAction")(isAction.asInstanceOf[js.Any])
+    if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
+    if (menuActiveCls != null) __obj.updateDynamic("menuActiveCls")(menuActiveCls.asInstanceOf[js.Any])
+    if (menuAlign != null) __obj.updateDynamic("menuAlign")(menuAlign.asInstanceOf[js.Any])
+    if (overflowText != null) __obj.updateDynamic("overflowText")(overflowText.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (!js.isUndefined(pressed)) __obj.updateDynamic("pressed")(pressed.asInstanceOf[js.Any])
+    if (pressedCls != null) __obj.updateDynamic("pressedCls")(pressedCls.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventDefault)) __obj.updateDynamic("preventDefault")(preventDefault.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(js.Any.fromFunction1(query))
     if (queryBy != null) __obj.updateDynamic("queryBy")(js.Any.fromFunction2(queryBy))
     if (queryById != null) __obj.updateDynamic("queryById")(js.Any.fromFunction1(queryById))
-    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
-    if (repeat != null) __obj.updateDynamic("repeat")(repeat)
-    if (scale != null) __obj.updateDynamic("scale")(scale)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (setGlyph != null) __obj.updateDynamic("setGlyph")(js.Any.fromFunction1(setGlyph))
     if (setHandler != null) __obj.updateDynamic("setHandler")(js.Any.fromFunction2(setHandler))
     if (setHref != null) __obj.updateDynamic("setHref")(js.Any.fromFunction1(setHref))
@@ -346,18 +323,17 @@ object IButton {
     if (setTextAlign != null) __obj.updateDynamic("setTextAlign")(js.Any.fromFunction1(setTextAlign))
     if (setTooltip != null) __obj.updateDynamic("setTooltip")(js.Any.fromFunction1(setTooltip))
     if (setUI != null) __obj.updateDynamic("setUI")(js.Any.fromFunction1(setUI))
-    if (!js.isUndefined(showEmptyMenu)) __obj.updateDynamic("showEmptyMenu")(showEmptyMenu)
+    if (!js.isUndefined(showEmptyMenu)) __obj.updateDynamic("showEmptyMenu")(showEmptyMenu.asInstanceOf[js.Any])
     if (showMenu != null) __obj.updateDynamic("showMenu")(js.Any.fromFunction1(showMenu))
-    if (shrinkWrap != null) __obj.updateDynamic("shrinkWrap")(shrinkWrap)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
     if (toggle != null) __obj.updateDynamic("toggle")(js.Any.fromFunction2(toggle))
-    if (toggleGroup != null) __obj.updateDynamic("toggleGroup")(toggleGroup)
-    if (toggleHandler != null) __obj.updateDynamic("toggleHandler")(toggleHandler)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
-    if (tooltipType != null) __obj.updateDynamic("tooltipType")(tooltipType)
+    if (toggleGroup != null) __obj.updateDynamic("toggleGroup")(toggleGroup.asInstanceOf[js.Any])
+    if (toggleHandler != null) __obj.updateDynamic("toggleHandler")(toggleHandler.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (tooltipType != null) __obj.updateDynamic("tooltipType")(tooltipType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IButton]
   }
 }

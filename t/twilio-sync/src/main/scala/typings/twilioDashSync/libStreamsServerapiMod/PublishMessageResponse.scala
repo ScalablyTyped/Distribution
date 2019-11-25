@@ -11,7 +11,7 @@ trait PublishMessageResponse extends js.Object {
 object PublishMessageResponse {
   @scala.inline
   def apply(sid: String): PublishMessageResponse = {
-    val __obj = js.Dynamic.literal(sid = sid)
+    val __obj = js.Dynamic.literal(sid = sid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PublishMessageResponse]
   }

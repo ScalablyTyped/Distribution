@@ -55,12 +55,12 @@ object INavLinkGroup {
     name: String = null,
     onHeaderClick: (/* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], /* isCollapsing */ js.UndefOr[Boolean]) => Unit = null
   ): INavLinkGroup = {
-    val __obj = js.Dynamic.literal(links = links)
-    if (automationId != null) __obj.updateDynamic("automationId")(automationId)
-    if (collapseAriaLabel != null) __obj.updateDynamic("collapseAriaLabel")(collapseAriaLabel)
-    if (!js.isUndefined(collapseByDefault)) __obj.updateDynamic("collapseByDefault")(collapseByDefault)
-    if (expandAriaLabel != null) __obj.updateDynamic("expandAriaLabel")(expandAriaLabel)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any])
+    if (automationId != null) __obj.updateDynamic("automationId")(automationId.asInstanceOf[js.Any])
+    if (collapseAriaLabel != null) __obj.updateDynamic("collapseAriaLabel")(collapseAriaLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapseByDefault)) __obj.updateDynamic("collapseByDefault")(collapseByDefault.asInstanceOf[js.Any])
+    if (expandAriaLabel != null) __obj.updateDynamic("expandAriaLabel")(expandAriaLabel.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onHeaderClick != null) __obj.updateDynamic("onHeaderClick")(js.Any.fromFunction2(onHeaderClick))
     __obj.asInstanceOf[INavLinkGroup]
   }

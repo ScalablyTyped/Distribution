@@ -33,10 +33,10 @@ object GoogleActionsV2TransactionDecisionValueSpec {
     proposedOrder: GoogleActionsV2OrdersProposedOrder = null
   ): GoogleActionsV2TransactionDecisionValueSpec = {
     val __obj = js.Dynamic.literal()
-    if (orderOptions != null) __obj.updateDynamic("orderOptions")(orderOptions)
-    if (paymentOptions != null) __obj.updateDynamic("paymentOptions")(paymentOptions)
-    if (presentationOptions != null) __obj.updateDynamic("presentationOptions")(presentationOptions)
-    if (proposedOrder != null) __obj.updateDynamic("proposedOrder")(proposedOrder)
+    if (orderOptions != null) __obj.updateDynamic("orderOptions")(orderOptions.asInstanceOf[js.Any])
+    if (paymentOptions != null) __obj.updateDynamic("paymentOptions")(paymentOptions.asInstanceOf[js.Any])
+    if (presentationOptions != null) __obj.updateDynamic("presentationOptions")(presentationOptions.asInstanceOf[js.Any])
+    if (proposedOrder != null) __obj.updateDynamic("proposedOrder")(proposedOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2TransactionDecisionValueSpec]
   }
 }

@@ -27,11 +27,11 @@ object Anon_FollowSurface {
     width: Int | Double = null
   ): Anon_FollowSurface = {
     val __obj = js.Dynamic.literal()
-    if (followSurface != null) __obj.updateDynamic("followSurface")(followSurface)
-    if (granularity != null) __obj.updateDynamic("granularity")(granularity)
-    if (material != null) __obj.updateDynamic("material")(material)
-    if (positions != null) __obj.updateDynamic("positions")(positions)
-    if (show != null) __obj.updateDynamic("show")(show)
+    if (followSurface != null) __obj.updateDynamic("followSurface")(followSurface.asInstanceOf[js.Any])
+    if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
+    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
+    if (positions != null) __obj.updateDynamic("positions")(positions.asInstanceOf[js.Any])
+    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FollowSurface]
   }

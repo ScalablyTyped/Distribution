@@ -12,7 +12,7 @@ object SheetsChartProperties {
   @scala.inline
   def apply(chartImageProperties: ImageProperties = null): SheetsChartProperties = {
     val __obj = js.Dynamic.literal()
-    if (chartImageProperties != null) __obj.updateDynamic("chartImageProperties")(chartImageProperties)
+    if (chartImageProperties != null) __obj.updateDynamic("chartImageProperties")(chartImageProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[SheetsChartProperties]
   }
 }

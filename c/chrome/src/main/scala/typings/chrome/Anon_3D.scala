@@ -13,8 +13,8 @@ object Anon_3D {
   @scala.inline
   def apply(`3D`: Anon_Features = null, plugins: Anon_Npapi = null): Anon_3D = {
     val __obj = js.Dynamic.literal()
-    if (`3D` != null) __obj.updateDynamic("3D")(`3D`)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (`3D` != null) __obj.updateDynamic("3D")(`3D`.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_3D]
   }
 }

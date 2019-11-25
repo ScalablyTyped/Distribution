@@ -19,7 +19,7 @@ trait ILocalizableStrings extends js.Object {
 object ILocalizableStrings {
   @scala.inline
   def apply(promptLabel: String, tooMuchOutput: String): ILocalizableStrings = {
-    val __obj = js.Dynamic.literal(promptLabel = promptLabel, tooMuchOutput = tooMuchOutput)
+    val __obj = js.Dynamic.literal(promptLabel = promptLabel.asInstanceOf[js.Any], tooMuchOutput = tooMuchOutput.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ILocalizableStrings]
   }

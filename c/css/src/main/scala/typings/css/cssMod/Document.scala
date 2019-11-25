@@ -27,12 +27,12 @@ object Document {
     vendor: String = null
   ): Document = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
-    if (position != null) __obj.updateDynamic("position")(position)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (vendor != null) __obj.updateDynamic("vendor")(vendor)
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (vendor != null) __obj.updateDynamic("vendor")(vendor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Document]
   }
 }

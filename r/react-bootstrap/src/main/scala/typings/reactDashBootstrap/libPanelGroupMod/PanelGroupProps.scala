@@ -27,18 +27,16 @@ object PanelGroupProps {
     activeKey: js.Any = null,
     defaultActiveKey: js.Any = null,
     generateChildId: js.Function = null,
-    onSelect: SelectCallback = null,
-    role: String = null
+    onSelect: SelectCallback = null
   ): PanelGroupProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(accordion)) __obj.updateDynamic("accordion")(accordion)
-    if (activeKey != null) __obj.updateDynamic("activeKey")(activeKey)
-    if (defaultActiveKey != null) __obj.updateDynamic("defaultActiveKey")(defaultActiveKey)
-    if (generateChildId != null) __obj.updateDynamic("generateChildId")(generateChildId)
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
-    if (role != null) __obj.updateDynamic("role")(role)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (!js.isUndefined(accordion)) __obj.updateDynamic("accordion")(accordion.asInstanceOf[js.Any])
+    if (activeKey != null) __obj.updateDynamic("activeKey")(activeKey.asInstanceOf[js.Any])
+    if (defaultActiveKey != null) __obj.updateDynamic("defaultActiveKey")(defaultActiveKey.asInstanceOf[js.Any])
+    if (generateChildId != null) __obj.updateDynamic("generateChildId")(generateChildId.asInstanceOf[js.Any])
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanelGroupProps]
   }
 }

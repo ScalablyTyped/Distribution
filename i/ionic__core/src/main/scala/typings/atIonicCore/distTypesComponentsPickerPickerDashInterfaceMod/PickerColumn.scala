@@ -37,18 +37,18 @@ object PickerColumn {
     suffix: String = null,
     suffixWidth: String = null
   ): PickerColumn = {
-    val __obj = js.Dynamic.literal(name = name, options = options)
-    if (align != null) __obj.updateDynamic("align")(align)
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (optionsWidth != null) __obj.updateDynamic("optionsWidth")(optionsWidth)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (prefixWidth != null) __obj.updateDynamic("prefixWidth")(prefixWidth)
+    if (optionsWidth != null) __obj.updateDynamic("optionsWidth")(optionsWidth.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (prefixWidth != null) __obj.updateDynamic("prefixWidth")(prefixWidth.asInstanceOf[js.Any])
     if (prevSelected != null) __obj.updateDynamic("prevSelected")(prevSelected.asInstanceOf[js.Any])
     if (refresh != null) __obj.updateDynamic("refresh")(js.Any.fromFunction0(refresh))
     if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
-    if (suffixWidth != null) __obj.updateDynamic("suffixWidth")(suffixWidth)
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
+    if (suffixWidth != null) __obj.updateDynamic("suffixWidth")(suffixWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickerColumn]
   }
 }

@@ -22,10 +22,10 @@ object SearchParameters {
     value: Int | Double = null
   ): SearchParameters = {
     val __obj = js.Dynamic.literal()
-    if (content_category != null) __obj.updateDynamic("content_category")(content_category)
-    if (content_ids != null) __obj.updateDynamic("content_ids")(content_ids)
-    if (currency != null) __obj.updateDynamic("currency")(currency)
-    if (search_string != null) __obj.updateDynamic("search_string")(search_string)
+    if (content_category != null) __obj.updateDynamic("content_category")(content_category.asInstanceOf[js.Any])
+    if (content_ids != null) __obj.updateDynamic("content_ids")(content_ids.asInstanceOf[js.Any])
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
+    if (search_string != null) __obj.updateDynamic("search_string")(search_string.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchParameters]
   }

@@ -61,7 +61,7 @@ object ICellConfig {
     x: Double,
     y: Double
   ): ICellConfig = {
-    val __obj = js.Dynamic.literal(column = column, height = height, metadata = metadata, region = region, row = row, value = value, width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICellConfig]
   }

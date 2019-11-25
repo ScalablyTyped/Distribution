@@ -26,15 +26,15 @@ object PatchCustomFieldWithDateParams {
     required: js.UndefOr[Boolean] = js.undefined
   ): PatchCustomFieldWithDateParams = {
     val __obj = js.Dynamic.literal()
-    if (applicableIssueTypes != null) __obj.updateDynamic("applicableIssueTypes")(applicableIssueTypes)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (initialDate != null) __obj.updateDynamic("initialDate")(initialDate)
+    if (applicableIssueTypes != null) __obj.updateDynamic("applicableIssueTypes")(applicableIssueTypes.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (initialDate != null) __obj.updateDynamic("initialDate")(initialDate.asInstanceOf[js.Any])
     if (initialShift != null) __obj.updateDynamic("initialShift")(initialShift.asInstanceOf[js.Any])
     if (initialValueType != null) __obj.updateDynamic("initialValueType")(initialValueType.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max)
-    if (min != null) __obj.updateDynamic("min")(min)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchCustomFieldWithDateParams]
   }
 }

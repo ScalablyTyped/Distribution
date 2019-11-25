@@ -12,7 +12,7 @@ trait URLAction extends Action {
 object URLAction {
   @scala.inline
   def apply(label: String, url: String): URLAction = {
-    val __obj = js.Dynamic.literal(label = label, url = url)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[URLAction]
   }

@@ -13,7 +13,7 @@ trait Anon_DateOrDeltaHeaderValue extends js.Object {
 object Anon_DateOrDeltaHeaderValue {
   @scala.inline
   def apply(dateOrDeltaHeaderValue: HttpDateOrDeltaHeaderValue, returnValue: Boolean): Anon_DateOrDeltaHeaderValue = {
-    val __obj = js.Dynamic.literal(dateOrDeltaHeaderValue = dateOrDeltaHeaderValue, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(dateOrDeltaHeaderValue = dateOrDeltaHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DateOrDeltaHeaderValue]
   }

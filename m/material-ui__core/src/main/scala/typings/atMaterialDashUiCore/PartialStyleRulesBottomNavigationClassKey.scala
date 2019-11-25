@@ -14,7 +14,7 @@ object PartialStyleRulesBottomNavigationClassKey {
   @scala.inline
   def apply(root: CSSProperties = null): PartialStyleRulesBottomNavigationClassKey = {
     val __obj = js.Dynamic.literal()
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesBottomNavigationClassKey]
   }
 }

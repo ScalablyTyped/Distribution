@@ -130,7 +130,7 @@ trait ojSunburst_[K, D] extends dvtBaseComponent[ojSunburstSettableProperties[K,
   var onOjRotateInput: (js.Function1[/* event */ ojRotateInput, _]) | Null = js.native
   var onRootNodeChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojsunburst.ojSunburst<K, D>['rootNode'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojsunburst.ojSunburst<K, D>['rootNode'] */ js.Any
     ], 
     _
   ]) | Null = js.native
@@ -208,7 +208,7 @@ trait ojSunburst_[K, D] extends dvtBaseComponent[ojSunburstSettableProperties[K,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojsunburst.ojSunburst<K, D>['rootNode'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojsunburst.ojSunburst<K, D>['rootNode'] */ js.Any
       ], 
       _
     ]
@@ -218,7 +218,7 @@ trait ojSunburst_[K, D] extends dvtBaseComponent[ojSunburstSettableProperties[K,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojsunburst.ojSunburst<K, D>['rootNode'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojsunburst.ojSunburst<K, D>['rootNode'] */ js.Any
       ], 
       _
     ],
@@ -580,7 +580,7 @@ trait ojSunburst_[K, D] extends dvtBaseComponent[ojSunburstSettableProperties[K,
   @JSName("getProperty")
   def getProperty_nodeDefaults(property: nodeDefaults): Anon_AutoBorderColorBorderWidth = js.native
   @JSName("getProperty")
-  def getProperty_rootNode(property: rootNode): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojsunburst.ojSunburst<K, D>['rootNode'] */ js.Any = js.native
+  def getProperty_rootNode(property: rootNode): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojsunburst.ojSunburst<K, D>['rootNode'] */ js.Any = js.native
   @JSName("getProperty")
   def getProperty_rootNodeContent(property: rootNodeContent): Anon_ContextRendererAnonInsertD[K, D] = js.native
   @JSName("getProperty")

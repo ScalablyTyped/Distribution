@@ -42,10 +42,10 @@ object TimeInfoProperties {
     startField: String = null
   ): TimeInfoProperties = {
     val __obj = js.Dynamic.literal()
-    if (endField != null) __obj.updateDynamic("endField")(endField)
-    if (fullTimeExtent != null) __obj.updateDynamic("fullTimeExtent")(fullTimeExtent)
-    if (interval != null) __obj.updateDynamic("interval")(interval)
-    if (startField != null) __obj.updateDynamic("startField")(startField)
+    if (endField != null) __obj.updateDynamic("endField")(endField.asInstanceOf[js.Any])
+    if (fullTimeExtent != null) __obj.updateDynamic("fullTimeExtent")(fullTimeExtent.asInstanceOf[js.Any])
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (startField != null) __obj.updateDynamic("startField")(startField.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeInfoProperties]
   }
 }

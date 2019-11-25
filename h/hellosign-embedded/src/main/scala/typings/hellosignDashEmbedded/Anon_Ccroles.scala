@@ -19,7 +19,7 @@ object Anon_Ccroles {
     signer_roles: js.Array[Anon_Name],
     title: String
   ): Anon_Ccroles = {
-    val __obj = js.Dynamic.literal(cc_roles = cc_roles, message = message, signer_roles = signer_roles, title = title)
+    val __obj = js.Dynamic.literal(cc_roles = cc_roles.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], signer_roles = signer_roles.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Ccroles]
   }

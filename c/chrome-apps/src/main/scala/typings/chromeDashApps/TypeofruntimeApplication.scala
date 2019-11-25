@@ -68,11 +68,11 @@ trait TypeofruntimeApplication extends js.Object {
   val onRestartRequired: Event[
     js.Function1[
       /* reason */ ToStringLiteral[
-        /* import warning: ImportType.apply Failed type conversion: typeof OnRestartRequiredReason */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof OnRestartRequiredReason */ js.Any, 
         String, 
         Exclude[
           String, 
-          /* import warning: ImportType.apply Failed type conversion: typeof OnRestartRequiredReason[keyof typeof OnRestartRequiredReason] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof OnRestartRequiredReason[keyof typeof OnRestartRequiredReason] */ js.Any
         ]
       ], 
       Unit
@@ -168,11 +168,11 @@ trait TypeofruntimeApplication extends js.Object {
   def requestUpdateCheck(
     callback: js.Function2[
       /* status */ ToStringLiteral[
-        /* import warning: ImportType.apply Failed type conversion: typeof RequestUpdateCheckStatus */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof RequestUpdateCheckStatus */ js.Any, 
         String, 
         Exclude[
           String, 
-          /* import warning: ImportType.apply Failed type conversion: typeof RequestUpdateCheckStatus[keyof typeof RequestUpdateCheckStatus] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: typeof RequestUpdateCheckStatus[keyof typeof RequestUpdateCheckStatus] */ js.Any
         ]
       ], 
       /* details */ js.UndefOr[UpdateCheckDetails], 

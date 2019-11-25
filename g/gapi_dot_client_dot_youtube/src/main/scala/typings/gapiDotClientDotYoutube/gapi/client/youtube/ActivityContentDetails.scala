@@ -57,17 +57,17 @@ object ActivityContentDetails {
     upload: ActivityContentDetailsUpload = null
   ): ActivityContentDetails = {
     val __obj = js.Dynamic.literal()
-    if (bulletin != null) __obj.updateDynamic("bulletin")(bulletin)
-    if (channelItem != null) __obj.updateDynamic("channelItem")(channelItem)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (favorite != null) __obj.updateDynamic("favorite")(favorite)
-    if (like != null) __obj.updateDynamic("like")(like)
-    if (playlistItem != null) __obj.updateDynamic("playlistItem")(playlistItem)
-    if (promotedItem != null) __obj.updateDynamic("promotedItem")(promotedItem)
-    if (recommendation != null) __obj.updateDynamic("recommendation")(recommendation)
-    if (social != null) __obj.updateDynamic("social")(social)
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription)
-    if (upload != null) __obj.updateDynamic("upload")(upload)
+    if (bulletin != null) __obj.updateDynamic("bulletin")(bulletin.asInstanceOf[js.Any])
+    if (channelItem != null) __obj.updateDynamic("channelItem")(channelItem.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (favorite != null) __obj.updateDynamic("favorite")(favorite.asInstanceOf[js.Any])
+    if (like != null) __obj.updateDynamic("like")(like.asInstanceOf[js.Any])
+    if (playlistItem != null) __obj.updateDynamic("playlistItem")(playlistItem.asInstanceOf[js.Any])
+    if (promotedItem != null) __obj.updateDynamic("promotedItem")(promotedItem.asInstanceOf[js.Any])
+    if (recommendation != null) __obj.updateDynamic("recommendation")(recommendation.asInstanceOf[js.Any])
+    if (social != null) __obj.updateDynamic("social")(social.asInstanceOf[js.Any])
+    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
+    if (upload != null) __obj.updateDynamic("upload")(upload.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityContentDetails]
   }
 }

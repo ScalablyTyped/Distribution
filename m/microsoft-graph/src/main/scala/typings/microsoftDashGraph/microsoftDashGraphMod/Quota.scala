@@ -29,7 +29,7 @@ object Quota {
     val __obj = js.Dynamic.literal()
     if (deleted != null) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
     if (remaining != null) __obj.updateDynamic("remaining")(remaining.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     if (used != null) __obj.updateDynamic("used")(used.asInstanceOf[js.Any])
     __obj.asInstanceOf[Quota]

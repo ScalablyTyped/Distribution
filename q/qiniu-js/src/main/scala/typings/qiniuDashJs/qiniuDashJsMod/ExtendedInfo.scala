@@ -18,8 +18,8 @@ object ExtendedInfo {
     error: String,
     StringDictionary: /* key */ StringDictionary[Anon_Type | Double | String] = null
   ): ExtendedInfo = {
-    val __obj = js.Dynamic.literal(code = code, error = error)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ExtendedInfo]
   }
 }

@@ -16,8 +16,8 @@ trait MatchResult extends js.Object {
 object MatchResult {
   @scala.inline
   def apply(`match`: js.Any, rule: UrlRule, weight: Double): MatchResult = {
-    val __obj = js.Dynamic.literal(rule = rule, weight = weight)
-    __obj.updateDynamic("match")(`match`)
+    val __obj = js.Dynamic.literal(rule = rule.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
+    __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchResult]
   }
 }

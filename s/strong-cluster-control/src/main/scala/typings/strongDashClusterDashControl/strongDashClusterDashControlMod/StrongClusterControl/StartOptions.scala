@@ -22,7 +22,7 @@ object StartOptions {
     throttleDelay: Int | Double = null
   ): StartOptions = {
     val __obj = js.Dynamic.literal()
-    if (env != null) __obj.updateDynamic("env")(env)
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (shutdownTimeout != null) __obj.updateDynamic("shutdownTimeout")(shutdownTimeout.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (terminateTimeout != null) __obj.updateDynamic("terminateTimeout")(terminateTimeout.asInstanceOf[js.Any])

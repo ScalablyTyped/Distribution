@@ -135,18 +135,18 @@ object ChartEventsOptions {
     selection: ChartSelectionCallbackFunction = null
   ): ChartEventsOptions = {
     val __obj = js.Dynamic.literal()
-    if (addSeries != null) __obj.updateDynamic("addSeries")(addSeries)
+    if (addSeries != null) __obj.updateDynamic("addSeries")(addSeries.asInstanceOf[js.Any])
     if (afterPrint != null) __obj.updateDynamic("afterPrint")(js.Any.fromFunction2(afterPrint))
     if (beforePrint != null) __obj.updateDynamic("beforePrint")(js.Any.fromFunction2(beforePrint))
-    if (click != null) __obj.updateDynamic("click")(click)
-    if (drilldown != null) __obj.updateDynamic("drilldown")(drilldown)
-    if (drillup != null) __obj.updateDynamic("drillup")(drillup)
-    if (drillupall != null) __obj.updateDynamic("drillupall")(drillupall)
-    if (exportData != null) __obj.updateDynamic("exportData")(exportData)
-    if (load != null) __obj.updateDynamic("load")(load)
-    if (redraw != null) __obj.updateDynamic("redraw")(redraw)
-    if (render != null) __obj.updateDynamic("render")(render)
-    if (selection != null) __obj.updateDynamic("selection")(selection)
+    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
+    if (drilldown != null) __obj.updateDynamic("drilldown")(drilldown.asInstanceOf[js.Any])
+    if (drillup != null) __obj.updateDynamic("drillup")(drillup.asInstanceOf[js.Any])
+    if (drillupall != null) __obj.updateDynamic("drillupall")(drillupall.asInstanceOf[js.Any])
+    if (exportData != null) __obj.updateDynamic("exportData")(exportData.asInstanceOf[js.Any])
+    if (load != null) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
+    if (redraw != null) __obj.updateDynamic("redraw")(redraw.asInstanceOf[js.Any])
+    if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
+    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartEventsOptions]
   }
 }

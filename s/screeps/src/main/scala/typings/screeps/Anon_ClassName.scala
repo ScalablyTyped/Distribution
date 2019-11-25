@@ -25,9 +25,9 @@ object Anon_ClassName {
     ops: Double | js.Array[Double] = null,
     range: Int | Double = null
   ): Anon_ClassName = {
-    val __obj = js.Dynamic.literal(className = className, cooldown = cooldown, level = level)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], cooldown = cooldown.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (effect != null) __obj.updateDynamic("effect")(effect)
+    if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
     if (ops != null) __obj.updateDynamic("ops")(ops.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClassName]

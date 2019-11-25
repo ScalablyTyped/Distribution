@@ -23,8 +23,8 @@ object Filter {
   @scala.inline
   def apply(isActive: js.UndefOr[Boolean] = js.undefined, streamTypes: js.Array[StreamType] = null): Filter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive)
-    if (streamTypes != null) __obj.updateDynamic("streamTypes")(streamTypes)
+    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.asInstanceOf[js.Any])
+    if (streamTypes != null) __obj.updateDynamic("streamTypes")(streamTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filter]
   }
 }

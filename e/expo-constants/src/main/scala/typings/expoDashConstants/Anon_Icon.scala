@@ -14,8 +14,8 @@ object Anon_Icon {
   @scala.inline
   def apply(StringDictionary: /* key */ StringDictionary[js.Any] = null, icon: String = null): Anon_Icon = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Icon]
   }
 }

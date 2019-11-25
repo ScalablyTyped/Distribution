@@ -90,7 +90,7 @@ import typings.atOracleOraclejet.atOracleOraclejetStrings.toggle
 import typings.atOracleOraclejet.atOracleOraclejetStrings.touchcancel
 import typings.atOracleOraclejet.atOracleOraclejetStrings.touchend
 import typings.atOracleOraclejet.atOracleOraclejetStrings.touchmove
-import typings.atOracleOraclejet.atOracleOraclejetStrings.touchstart
+import typings.atOracleOraclejet.atOracleOraclejetStrings.touchstart_
 import typings.atOracleOraclejet.atOracleOraclejetStrings.transitioncancel
 import typings.atOracleOraclejet.atOracleOraclejetStrings.transitionend
 import typings.atOracleOraclejet.atOracleOraclejetStrings.transitionrun
@@ -127,7 +127,7 @@ trait ojOption extends JetElement[ojOptionSettableProperties] {
   var onDisabledChanged: (js.Function1[/* event */ JetElementCustomEvent[Boolean], _]) | Null = js.native
   var onValueChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojoption.ojOption['value'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojoption.ojOption['value'] */ js.Any
     ], 
     _
   ]) | Null = js.native
@@ -137,7 +137,7 @@ trait ojOption extends JetElement[ojOptionSettableProperties] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojoption.ojOption['value'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojoption.ojOption['value'] */ js.Any
       ], 
       _
     ]
@@ -147,7 +147,7 @@ trait ojOption extends JetElement[ojOptionSettableProperties] {
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojoption.ojOption['value'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojoption.ojOption['value'] */ js.Any
       ], 
       _
     ],
@@ -875,10 +875,10 @@ trait ojOption extends JetElement[ojOptionSettableProperties] {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchstart(`type`: touchstart, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _]): Unit = js.native
+  def addEventListener_touchstart(`type`: touchstart_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_touchstart(
-    `type`: touchstart,
+    `type`: touchstart_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, _],
     useCapture: Boolean
   ): Unit = js.native
@@ -954,7 +954,7 @@ trait ojOption extends JetElement[ojOptionSettableProperties] {
   @JSName("getProperty")
   def getProperty_disabled(property: disabled): Boolean = js.native
   @JSName("getProperty")
-  def getProperty_value(property: value): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojoption.ojOption['value'] */ js.Any = js.native
+  def getProperty_value(property: value): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojoption.ojOption['value'] */ js.Any = js.native
   def refresh(): Unit = js.native
   def setProperties(properties: ojOptionSettablePropertiesLenient): Unit = js.native
   def setProperty[T /* <: String */](property: T, value: JetSetPropertyType[T, ojOptionSettableProperties]): Unit = js.native

@@ -37,9 +37,9 @@ object Symbol3DStyleOrigin {
     styleName: String = null,
     styleUrl: String = null
   ): Symbol3DStyleOrigin = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (styleName != null) __obj.updateDynamic("styleName")(styleName)
-    if (styleUrl != null) __obj.updateDynamic("styleUrl")(styleUrl)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (styleName != null) __obj.updateDynamic("styleName")(styleName.asInstanceOf[js.Any])
+    if (styleUrl != null) __obj.updateDynamic("styleUrl")(styleUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Symbol3DStyleOrigin]
   }
 }

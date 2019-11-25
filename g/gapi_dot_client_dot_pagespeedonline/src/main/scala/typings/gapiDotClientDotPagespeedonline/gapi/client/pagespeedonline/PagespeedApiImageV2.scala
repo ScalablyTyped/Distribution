@@ -31,11 +31,11 @@ object PagespeedApiImageV2 {
     width: Int | Double = null
   ): PagespeedApiImageV2 = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (mime_type != null) __obj.updateDynamic("mime_type")(mime_type)
-    if (page_rect != null) __obj.updateDynamic("page_rect")(page_rect)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (mime_type != null) __obj.updateDynamic("mime_type")(mime_type.asInstanceOf[js.Any])
+    if (page_rect != null) __obj.updateDynamic("page_rect")(page_rect.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PagespeedApiImageV2]
   }

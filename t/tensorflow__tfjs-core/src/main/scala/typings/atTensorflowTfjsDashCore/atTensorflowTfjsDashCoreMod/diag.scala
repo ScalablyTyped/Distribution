@@ -1,7 +1,6 @@
 package typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,8 +10,8 @@ import scala.scalajs.js.annotation._
 object diag
   extends TopLevel[
       js.Function1[
-        /* x */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank], 
-        typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]
+        /* x */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank], 
+        typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
       ]
     ]
 

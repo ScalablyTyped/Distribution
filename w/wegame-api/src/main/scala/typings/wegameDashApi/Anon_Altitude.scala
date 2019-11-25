@@ -30,7 +30,7 @@ object Anon_Altitude {
     `type`: wgs84 | gcj02 = null
   ): Anon_Altitude = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude)
+    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))

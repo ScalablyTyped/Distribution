@@ -15,8 +15,8 @@ object GraphicsStatsBucket {
   @scala.inline
   def apply(frameCount: String = null, renderMillis: String = null): GraphicsStatsBucket = {
     val __obj = js.Dynamic.literal()
-    if (frameCount != null) __obj.updateDynamic("frameCount")(frameCount)
-    if (renderMillis != null) __obj.updateDynamic("renderMillis")(renderMillis)
+    if (frameCount != null) __obj.updateDynamic("frameCount")(frameCount.asInstanceOf[js.Any])
+    if (renderMillis != null) __obj.updateDynamic("renderMillis")(renderMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphicsStatsBucket]
   }
 }

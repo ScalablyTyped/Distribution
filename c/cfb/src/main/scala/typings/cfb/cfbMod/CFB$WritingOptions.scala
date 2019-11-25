@@ -29,10 +29,10 @@ object CFB$WritingOptions {
     `type`: base64 | binary | buffer | file | array = null
   ): CFB$WritingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(WTF)) __obj.updateDynamic("WTF")(WTF)
-    if (!js.isUndefined(compression)) __obj.updateDynamic("compression")(compression)
+    if (!js.isUndefined(WTF)) __obj.updateDynamic("WTF")(WTF.asInstanceOf[js.Any])
+    if (!js.isUndefined(compression)) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
     if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CFB$WritingOptions]
   }

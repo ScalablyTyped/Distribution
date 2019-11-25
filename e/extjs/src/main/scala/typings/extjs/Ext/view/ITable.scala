@@ -144,10 +144,7 @@ object ITable {
     IView: IView = null,
     addRowCls: (/* rowInfo */ js.UndefOr[js.Any], /* cls */ js.UndefOr[java.lang.String]) => Unit = null,
     autoSizeColumn: /* header */ js.UndefOr[js.Any] => Unit = null,
-    baseCls: java.lang.String = null,
-    beforeDestroy: () => Unit = null,
     collectData: (/* records */ js.UndefOr[js.Any], /* startIndex */ js.UndefOr[js.Any]) => Array = null,
-    componentLayout: js.Any = null,
     enableTextSelection: js.UndefOr[Boolean] = js.undefined,
     expandToFit: /* header */ js.UndefOr[js.Any] => Unit = null,
     firstCls: java.lang.String = null,
@@ -162,34 +159,22 @@ object ITable {
     getNode: (/* nodeInfo */ js.UndefOr[js.Any], /* dataRow */ js.UndefOr[Boolean]) => HTMLElement = null,
     getNodeContainerSelector: () => Unit = null,
     getPosition: (/* record */ js.UndefOr[js.Any], /* header */ js.UndefOr[js.Any]) => Array = null,
-    getRecord: /* node */ js.UndefOr[js.Any] => IModel = null,
     getRowClass: (/* record */ js.UndefOr[IModel], /* index */ js.UndefOr[Double], /* rowParams */ js.UndefOr[js.Any], /* store */ js.UndefOr[IStore]) => java.lang.String = null,
-    indexOf: /* node */ js.UndefOr[js.Any] => Double = null,
-    initComponent: () => Unit = null,
-    itemSelector: java.lang.String = null,
     lastCls: java.lang.String = null,
     markDirty: js.UndefOr[Boolean] = js.undefined,
-    onDestroy: () => Unit = null,
-    overItemCls: java.lang.String = null,
-    refresh: () => Unit = null,
     removeRowCls: (/* rowInfo */ js.UndefOr[js.Any], /* cls */ js.UndefOr[java.lang.String]) => Unit = null,
-    selectedItemCls: java.lang.String = null,
     stripeRows: js.UndefOr[Boolean] = js.undefined,
-    trackOver: js.UndefOr[Boolean] = js.undefined,
     walkRecs: (/* startRec */ js.UndefOr[IModel], /* distance */ js.UndefOr[Double]) => Unit = null,
     walkRows: (/* startRow */ js.UndefOr[Double], /* distance */ js.UndefOr[Double]) => Unit = null
   ): ITable = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IView)
+    if (IView != null) js.Dynamic.global.Object.assign(__obj, IView)
     if (addRowCls != null) __obj.updateDynamic("addRowCls")(js.Any.fromFunction2(addRowCls))
     if (autoSizeColumn != null) __obj.updateDynamic("autoSizeColumn")(js.Any.fromFunction1(autoSizeColumn))
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (beforeDestroy != null) __obj.updateDynamic("beforeDestroy")(js.Any.fromFunction0(beforeDestroy))
     if (collectData != null) __obj.updateDynamic("collectData")(js.Any.fromFunction2(collectData))
-    if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
-    if (!js.isUndefined(enableTextSelection)) __obj.updateDynamic("enableTextSelection")(enableTextSelection)
+    if (!js.isUndefined(enableTextSelection)) __obj.updateDynamic("enableTextSelection")(enableTextSelection.asInstanceOf[js.Any])
     if (expandToFit != null) __obj.updateDynamic("expandToFit")(js.Any.fromFunction1(expandToFit))
-    if (firstCls != null) __obj.updateDynamic("firstCls")(firstCls)
+    if (firstCls != null) __obj.updateDynamic("firstCls")(firstCls.asInstanceOf[js.Any])
     if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction2(focus))
     if (focusRow != null) __obj.updateDynamic("focusRow")(js.Any.fromFunction2(focusRow))
     if (getBodySelector != null) __obj.updateDynamic("getBodySelector")(js.Any.fromFunction0(getBodySelector))
@@ -201,20 +186,11 @@ object ITable {
     if (getNode != null) __obj.updateDynamic("getNode")(js.Any.fromFunction2(getNode))
     if (getNodeContainerSelector != null) __obj.updateDynamic("getNodeContainerSelector")(js.Any.fromFunction0(getNodeContainerSelector))
     if (getPosition != null) __obj.updateDynamic("getPosition")(js.Any.fromFunction2(getPosition))
-    if (getRecord != null) __obj.updateDynamic("getRecord")(js.Any.fromFunction1(getRecord))
     if (getRowClass != null) __obj.updateDynamic("getRowClass")(js.Any.fromFunction4(getRowClass))
-    if (indexOf != null) __obj.updateDynamic("indexOf")(js.Any.fromFunction1(indexOf))
-    if (initComponent != null) __obj.updateDynamic("initComponent")(js.Any.fromFunction0(initComponent))
-    if (itemSelector != null) __obj.updateDynamic("itemSelector")(itemSelector)
-    if (lastCls != null) __obj.updateDynamic("lastCls")(lastCls)
-    if (!js.isUndefined(markDirty)) __obj.updateDynamic("markDirty")(markDirty)
-    if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction0(onDestroy))
-    if (overItemCls != null) __obj.updateDynamic("overItemCls")(overItemCls)
-    if (refresh != null) __obj.updateDynamic("refresh")(js.Any.fromFunction0(refresh))
+    if (lastCls != null) __obj.updateDynamic("lastCls")(lastCls.asInstanceOf[js.Any])
+    if (!js.isUndefined(markDirty)) __obj.updateDynamic("markDirty")(markDirty.asInstanceOf[js.Any])
     if (removeRowCls != null) __obj.updateDynamic("removeRowCls")(js.Any.fromFunction2(removeRowCls))
-    if (selectedItemCls != null) __obj.updateDynamic("selectedItemCls")(selectedItemCls)
-    if (!js.isUndefined(stripeRows)) __obj.updateDynamic("stripeRows")(stripeRows)
-    if (!js.isUndefined(trackOver)) __obj.updateDynamic("trackOver")(trackOver)
+    if (!js.isUndefined(stripeRows)) __obj.updateDynamic("stripeRows")(stripeRows.asInstanceOf[js.Any])
     if (walkRecs != null) __obj.updateDynamic("walkRecs")(js.Any.fromFunction2(walkRecs))
     if (walkRows != null) __obj.updateDynamic("walkRows")(js.Any.fromFunction2(walkRows))
     __obj.asInstanceOf[ITable]

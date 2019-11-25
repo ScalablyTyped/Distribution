@@ -20,9 +20,9 @@ object ListViewCancelEvent {
     container: JQuery = null,
     model: Model = null
   ): ListViewCancelEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (model != null) __obj.updateDynamic("model")(model)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListViewCancelEvent]
   }
 }

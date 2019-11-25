@@ -21,12 +21,12 @@ object RepoUrlOptions {
     target: String = null,
     title: String = null
   ): RepoUrlOptions = {
-    val __obj = js.Dynamic.literal(repoUrl = repoUrl)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (!js.isUndefined(isPrerelease)) __obj.updateDynamic("isPrerelease")(isPrerelease)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
-    if (target != null) __obj.updateDynamic("target")(target)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(repoUrl = repoUrl.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPrerelease)) __obj.updateDynamic("isPrerelease")(isPrerelease.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepoUrlOptions]
   }
 }

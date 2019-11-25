@@ -24,9 +24,9 @@ object ListObjectsQuery {
   ): ListObjectsQuery = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("max-keys")(`max-keys`.asInstanceOf[js.Any])
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
-    if (marker != null) __obj.updateDynamic("marker")(marker)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
+    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListObjectsQuery]
   }
 }

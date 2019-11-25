@@ -16,8 +16,8 @@ trait Anon_Count extends js.Object {
 object Anon_Count {
   @scala.inline
   def apply(count: Double, endDate: Date, predefinedPeriod: String, startDate: Date, `type`: String): Anon_Count = {
-    val __obj = js.Dynamic.literal(count = count, endDate = endDate, predefinedPeriod = predefinedPeriod, startDate = startDate)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], endDate = endDate.asInstanceOf[js.Any], predefinedPeriod = predefinedPeriod.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Count]
   }
 }

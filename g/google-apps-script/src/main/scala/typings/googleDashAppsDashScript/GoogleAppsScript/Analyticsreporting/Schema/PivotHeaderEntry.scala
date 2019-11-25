@@ -18,9 +18,9 @@ object PivotHeaderEntry {
     metric: MetricHeaderEntry = null
   ): PivotHeaderEntry = {
     val __obj = js.Dynamic.literal()
-    if (dimensionNames != null) __obj.updateDynamic("dimensionNames")(dimensionNames)
-    if (dimensionValues != null) __obj.updateDynamic("dimensionValues")(dimensionValues)
-    if (metric != null) __obj.updateDynamic("metric")(metric)
+    if (dimensionNames != null) __obj.updateDynamic("dimensionNames")(dimensionNames.asInstanceOf[js.Any])
+    if (dimensionValues != null) __obj.updateDynamic("dimensionValues")(dimensionValues.asInstanceOf[js.Any])
+    if (metric != null) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotHeaderEntry]
   }
 }

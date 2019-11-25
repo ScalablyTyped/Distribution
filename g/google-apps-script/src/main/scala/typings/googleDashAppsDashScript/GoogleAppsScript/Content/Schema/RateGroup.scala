@@ -24,12 +24,12 @@ object RateGroup {
     subtables: js.Array[Table] = null
   ): RateGroup = {
     val __obj = js.Dynamic.literal()
-    if (applicableShippingLabels != null) __obj.updateDynamic("applicableShippingLabels")(applicableShippingLabels)
-    if (carrierRates != null) __obj.updateDynamic("carrierRates")(carrierRates)
-    if (mainTable != null) __obj.updateDynamic("mainTable")(mainTable)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (singleValue != null) __obj.updateDynamic("singleValue")(singleValue)
-    if (subtables != null) __obj.updateDynamic("subtables")(subtables)
+    if (applicableShippingLabels != null) __obj.updateDynamic("applicableShippingLabels")(applicableShippingLabels.asInstanceOf[js.Any])
+    if (carrierRates != null) __obj.updateDynamic("carrierRates")(carrierRates.asInstanceOf[js.Any])
+    if (mainTable != null) __obj.updateDynamic("mainTable")(mainTable.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (singleValue != null) __obj.updateDynamic("singleValue")(singleValue.asInstanceOf[js.Any])
+    if (subtables != null) __obj.updateDynamic("subtables")(subtables.asInstanceOf[js.Any])
     __obj.asInstanceOf[RateGroup]
   }
 }

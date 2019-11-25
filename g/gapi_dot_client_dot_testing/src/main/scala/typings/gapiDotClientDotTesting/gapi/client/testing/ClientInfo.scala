@@ -18,8 +18,8 @@ object ClientInfo {
   @scala.inline
   def apply(clientInfoDetails: js.Array[ClientInfoDetail] = null, name: String = null): ClientInfo = {
     val __obj = js.Dynamic.literal()
-    if (clientInfoDetails != null) __obj.updateDynamic("clientInfoDetails")(clientInfoDetails)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (clientInfoDetails != null) __obj.updateDynamic("clientInfoDetails")(clientInfoDetails.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientInfo]
   }
 }

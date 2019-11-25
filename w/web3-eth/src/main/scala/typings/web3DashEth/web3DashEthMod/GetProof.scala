@@ -14,7 +14,7 @@ trait GetProof extends js.Object {
 object GetProof {
   @scala.inline
   def apply(id: Double, jsonrpc: String, result: Anon_AccountProof): GetProof = {
-    val __obj = js.Dynamic.literal(id = id, jsonrpc = jsonrpc, result = result)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], jsonrpc = jsonrpc.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetProof]
   }

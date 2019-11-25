@@ -93,15 +93,15 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (delayIn != null) __obj.updateDynamic("delayIn")(delayIn.asInstanceOf[js.Any])
     if (delayOut != null) __obj.updateDynamic("delayOut")(delayOut.asInstanceOf[js.Any])
-    if (!js.isUndefined(fade)) __obj.updateDynamic("fade")(fade)
-    if (fallback != null) __obj.updateDynamic("fallback")(fallback)
-    if (gravity != null) __obj.updateDynamic("gravity")(gravity)
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
-    if (!js.isUndefined(live)) __obj.updateDynamic("live")(live)
+    if (!js.isUndefined(fade)) __obj.updateDynamic("fade")(fade.asInstanceOf[js.Any])
+    if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
+    if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (!js.isUndefined(live)) __obj.updateDynamic("live")(live.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -13,7 +13,7 @@ trait TwitterTimelineWidgetCollectionDataSource extends _TwitterTimelineWidgetDa
 object TwitterTimelineWidgetCollectionDataSource {
   @scala.inline
   def apply(id: String, sourceType: collection): TwitterTimelineWidgetCollectionDataSource = {
-    val __obj = js.Dynamic.literal(id = id, sourceType = sourceType)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TwitterTimelineWidgetCollectionDataSource]
   }

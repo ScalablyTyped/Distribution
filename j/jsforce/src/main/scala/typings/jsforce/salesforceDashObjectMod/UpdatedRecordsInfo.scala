@@ -12,7 +12,7 @@ trait UpdatedRecordsInfo extends js.Object {
 object UpdatedRecordsInfo {
   @scala.inline
   def apply(ids: js.Array[String], latestDateCovered: String): UpdatedRecordsInfo = {
-    val __obj = js.Dynamic.literal(ids = ids, latestDateCovered = latestDateCovered)
+    val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any], latestDateCovered = latestDateCovered.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UpdatedRecordsInfo]
   }

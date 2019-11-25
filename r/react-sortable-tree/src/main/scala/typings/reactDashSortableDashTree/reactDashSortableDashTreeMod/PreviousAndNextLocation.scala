@@ -20,7 +20,7 @@ object PreviousAndNextLocation {
     prevPath: NumberOrStringArray,
     prevTreeIndex: Double
   ): PreviousAndNextLocation = {
-    val __obj = js.Dynamic.literal(nextPath = nextPath, nextTreeIndex = nextTreeIndex, prevPath = prevPath, prevTreeIndex = prevTreeIndex)
+    val __obj = js.Dynamic.literal(nextPath = nextPath.asInstanceOf[js.Any], nextTreeIndex = nextTreeIndex.asInstanceOf[js.Any], prevPath = prevPath.asInstanceOf[js.Any], prevTreeIndex = prevTreeIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PreviousAndNextLocation]
   }

@@ -28,8 +28,8 @@ object GoogleActionsOrdersV3VerticalsPurchasePurchaseReturnsInfo {
   ): GoogleActionsOrdersV3VerticalsPurchasePurchaseReturnsInfo = {
     val __obj = js.Dynamic.literal()
     if (daysToReturn != null) __obj.updateDynamic("daysToReturn")(daysToReturn.asInstanceOf[js.Any])
-    if (!js.isUndefined(isReturnable)) __obj.updateDynamic("isReturnable")(isReturnable)
-    if (policyUrl != null) __obj.updateDynamic("policyUrl")(policyUrl)
+    if (!js.isUndefined(isReturnable)) __obj.updateDynamic("isReturnable")(isReturnable.asInstanceOf[js.Any])
+    if (policyUrl != null) __obj.updateDynamic("policyUrl")(policyUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchasePurchaseReturnsInfo]
   }
 }

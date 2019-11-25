@@ -14,9 +14,9 @@ object Anon_External {
   @scala.inline
   def apply(external: String = null, local: String = null, ui: String = null): Anon_External = {
     val __obj = js.Dynamic.literal()
-    if (external != null) __obj.updateDynamic("external")(external)
-    if (local != null) __obj.updateDynamic("local")(local)
-    if (ui != null) __obj.updateDynamic("ui")(ui)
+    if (external != null) __obj.updateDynamic("external")(external.asInstanceOf[js.Any])
+    if (local != null) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])
+    if (ui != null) __obj.updateDynamic("ui")(ui.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_External]
   }
 }

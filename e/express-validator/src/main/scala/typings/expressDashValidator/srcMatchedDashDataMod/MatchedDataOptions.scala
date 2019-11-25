@@ -14,7 +14,7 @@ trait MatchedDataOptions extends js.Object {
 object MatchedDataOptions {
   @scala.inline
   def apply(includeOptionals: Boolean, locations: js.Array[Location], onlyValidData: Boolean): MatchedDataOptions = {
-    val __obj = js.Dynamic.literal(includeOptionals = includeOptionals, locations = locations, onlyValidData = onlyValidData)
+    val __obj = js.Dynamic.literal(includeOptionals = includeOptionals.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], onlyValidData = onlyValidData.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MatchedDataOptions]
   }

@@ -28,11 +28,11 @@ object AtRuleNewProps {
     source: NodeSource = null
   ): AtRuleNewProps = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (raws != null) __obj.updateDynamic("raws")(raws)
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (raws != null) __obj.updateDynamic("raws")(raws.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[AtRuleNewProps]
   }
 }

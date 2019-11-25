@@ -13,8 +13,8 @@ object MapMarkerDefaults {
   @scala.inline
   def apply(shape: String = null, tooltip: MapMarkerDefaultsTooltip = null): MapMarkerDefaults = {
     val __obj = js.Dynamic.literal()
-    if (shape != null) __obj.updateDynamic("shape")(shape)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapMarkerDefaults]
   }
 }

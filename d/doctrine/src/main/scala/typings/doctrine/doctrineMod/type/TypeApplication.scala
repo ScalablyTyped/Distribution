@@ -18,8 +18,8 @@ object TypeApplication {
     expression: Type,
     `type`: typings.doctrine.doctrineStrings.TypeApplication
   ): TypeApplication = {
-    val __obj = js.Dynamic.literal(applications = applications, expression = expression)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(applications = applications.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeApplication]
   }
 }

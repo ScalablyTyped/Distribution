@@ -14,7 +14,7 @@ trait Anon_Attributes extends js.Object {
 object Anon_Attributes {
   @scala.inline
   def apply(attributes: js.Any, fshader: String, useTransformFeedback: Boolean, vshader: String): Anon_Attributes = {
-    val __obj = js.Dynamic.literal(attributes = attributes, fshader = fshader, useTransformFeedback = useTransformFeedback, vshader = vshader)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], fshader = fshader.asInstanceOf[js.Any], useTransformFeedback = useTransformFeedback.asInstanceOf[js.Any], vshader = vshader.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Attributes]
   }

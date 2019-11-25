@@ -27,7 +27,7 @@ object Chain {
     networkId: Double,
     url: String
   ): Chain = {
-    val __obj = js.Dynamic.literal(bootstrapNodes = bootstrapNodes, chainId = chainId, comment = comment, genesis = genesis, hardforks = hardforks, name = name, networkId = networkId, url = url)
+    val __obj = js.Dynamic.literal(bootstrapNodes = bootstrapNodes.asInstanceOf[js.Any], chainId = chainId.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], genesis = genesis.asInstanceOf[js.Any], hardforks = hardforks.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], networkId = networkId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Chain]
   }

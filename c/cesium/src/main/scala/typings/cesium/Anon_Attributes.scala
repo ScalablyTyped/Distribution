@@ -24,10 +24,10 @@ object Anon_Attributes {
     indices: Uint16Array | Uint32Array = null,
     primitiveType: PrimitiveType = null
   ): Anon_Attributes = {
-    val __obj = js.Dynamic.literal(attributes = attributes)
-    if (boundingSphere != null) __obj.updateDynamic("boundingSphere")(boundingSphere)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any])
+    if (boundingSphere != null) __obj.updateDynamic("boundingSphere")(boundingSphere.asInstanceOf[js.Any])
     if (indices != null) __obj.updateDynamic("indices")(indices.asInstanceOf[js.Any])
-    if (primitiveType != null) __obj.updateDynamic("primitiveType")(primitiveType)
+    if (primitiveType != null) __obj.updateDynamic("primitiveType")(primitiveType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Attributes]
   }
 }

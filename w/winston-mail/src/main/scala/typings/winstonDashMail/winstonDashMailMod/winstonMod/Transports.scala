@@ -12,7 +12,7 @@ trait Transports extends js.Object {
 object Transports {
   @scala.inline
   def apply(Mail: Mail): Transports = {
-    val __obj = js.Dynamic.literal(Mail = Mail)
+    val __obj = js.Dynamic.literal(Mail = Mail.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Transports]
   }

@@ -24,12 +24,12 @@ object Addresses {
     to: js.Array[String] = null
   ): Addresses = {
     val __obj = js.Dynamic.literal()
-    if (bcc != null) __obj.updateDynamic("bcc")(bcc)
-    if (cc != null) __obj.updateDynamic("cc")(cc)
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (`reply-to` != null) __obj.updateDynamic("reply-to")(`reply-to`)
-    if (sender != null) __obj.updateDynamic("sender")(sender)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])
+    if (cc != null) __obj.updateDynamic("cc")(cc.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (`reply-to` != null) __obj.updateDynamic("reply-to")(`reply-to`.asInstanceOf[js.Any])
+    if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[Addresses]
   }
 }

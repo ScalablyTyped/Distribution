@@ -31,7 +31,7 @@ object ConnectionConfig {
     val __obj = js.Dynamic.literal(nodeType = nodeType.asInstanceOf[js.Any])
     if (connectionFields != null) __obj.updateDynamic("connectionFields")(connectionFields.asInstanceOf[js.Any])
     if (edgeFields != null) __obj.updateDynamic("edgeFields")(edgeFields.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (resolveCursor != null) __obj.updateDynamic("resolveCursor")(js.Any.fromFunction4(resolveCursor))
     if (resolveNode != null) __obj.updateDynamic("resolveNode")(js.Any.fromFunction4(resolveNode))
     __obj.asInstanceOf[ConnectionConfig]

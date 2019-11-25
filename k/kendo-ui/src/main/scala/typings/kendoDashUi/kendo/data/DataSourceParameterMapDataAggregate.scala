@@ -13,8 +13,8 @@ object DataSourceParameterMapDataAggregate {
   @scala.inline
   def apply(aggregate: String = null, field: String = null): DataSourceParameterMapDataAggregate = {
     val __obj = js.Dynamic.literal()
-    if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate)
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceParameterMapDataAggregate]
   }
 }

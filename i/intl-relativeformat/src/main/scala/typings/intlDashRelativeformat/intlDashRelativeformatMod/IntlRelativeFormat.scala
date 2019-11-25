@@ -31,11 +31,11 @@ trait IntlRelativeFormat
   def __addLocaleData(data: LocaleData*): Unit = js.native
   @JSName("format")
   def format_0(
-    date: /* import warning: ImportType.apply Failed type conversion: std.ConstructorParameters<std.DateConstructor>[0] */ js.Any
+    date: /* import warning: importer.ImportType#apply Failed type conversion: std.ConstructorParameters<std.DateConstructor>[0] */ js.Any
   ): String = js.native
   @JSName("format")
   def format_0(
-    date: /* import warning: ImportType.apply Failed type conversion: std.ConstructorParameters<std.DateConstructor>[0] */ js.Any,
+    date: /* import warning: importer.ImportType#apply Failed type conversion: std.ConstructorParameters<std.DateConstructor>[0] */ js.Any,
     opts: Anon_Now
   ): String = js.native
   def resolvedOptions(): Anon_Locale = js.native

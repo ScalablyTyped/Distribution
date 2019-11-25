@@ -33,13 +33,13 @@ object BoundingBoxOptions {
     includeTargetLabels: js.UndefOr[Boolean] = js.undefined
   ): BoundingBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeEdges)) __obj.updateDynamic("includeEdges")(includeEdges)
-    if (!js.isUndefined(includeLabels)) __obj.updateDynamic("includeLabels")(includeLabels)
-    if (!js.isUndefined(includeMainLabels)) __obj.updateDynamic("includeMainLabels")(includeMainLabels)
-    if (!js.isUndefined(includeNodes)) __obj.updateDynamic("includeNodes")(includeNodes)
-    if (!js.isUndefined(includeOverlays)) __obj.updateDynamic("includeOverlays")(includeOverlays)
-    if (!js.isUndefined(includeSourceLabels)) __obj.updateDynamic("includeSourceLabels")(includeSourceLabels)
-    if (!js.isUndefined(includeTargetLabels)) __obj.updateDynamic("includeTargetLabels")(includeTargetLabels)
+    if (!js.isUndefined(includeEdges)) __obj.updateDynamic("includeEdges")(includeEdges.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeLabels)) __obj.updateDynamic("includeLabels")(includeLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeMainLabels)) __obj.updateDynamic("includeMainLabels")(includeMainLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeNodes)) __obj.updateDynamic("includeNodes")(includeNodes.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeOverlays)) __obj.updateDynamic("includeOverlays")(includeOverlays.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeSourceLabels)) __obj.updateDynamic("includeSourceLabels")(includeSourceLabels.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeTargetLabels)) __obj.updateDynamic("includeTargetLabels")(includeTargetLabels.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoundingBoxOptions]
   }
 }

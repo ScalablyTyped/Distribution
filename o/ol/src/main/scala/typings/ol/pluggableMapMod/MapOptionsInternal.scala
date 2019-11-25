@@ -24,9 +24,9 @@ object MapOptionsInternal {
     controls: typings.ol.collectionMod.default[typings.ol.controlControlMod.default] = null,
     interactions: typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default] = null
   ): MapOptionsInternal = {
-    val __obj = js.Dynamic.literal(keyboardEventTarget = keyboardEventTarget.asInstanceOf[js.Any], overlays = overlays, values = values)
-    if (controls != null) __obj.updateDynamic("controls")(controls)
-    if (interactions != null) __obj.updateDynamic("interactions")(interactions)
+    val __obj = js.Dynamic.literal(keyboardEventTarget = keyboardEventTarget.asInstanceOf[js.Any], overlays = overlays.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+    if (controls != null) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
+    if (interactions != null) __obj.updateDynamic("interactions")(interactions.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapOptionsInternal]
   }
 }

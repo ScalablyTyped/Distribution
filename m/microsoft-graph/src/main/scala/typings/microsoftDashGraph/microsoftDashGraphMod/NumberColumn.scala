@@ -24,8 +24,8 @@ object NumberColumn {
     minimum: Int | Double = null
   ): NumberColumn = {
     val __obj = js.Dynamic.literal()
-    if (decimalPlaces != null) __obj.updateDynamic("decimalPlaces")(decimalPlaces)
-    if (displayAs != null) __obj.updateDynamic("displayAs")(displayAs)
+    if (decimalPlaces != null) __obj.updateDynamic("decimalPlaces")(decimalPlaces.asInstanceOf[js.Any])
+    if (displayAs != null) __obj.updateDynamic("displayAs")(displayAs.asInstanceOf[js.Any])
     if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
     if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberColumn]

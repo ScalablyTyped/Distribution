@@ -18,9 +18,9 @@ object Features {
     undoRedo: js.UndefOr[Boolean] = js.undefined
   ): Features = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(imageEditor)) __obj.updateDynamic("imageEditor")(imageEditor)
-    if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview)
-    if (!js.isUndefined(undoRedo)) __obj.updateDynamic("undoRedo")(undoRedo)
+    if (!js.isUndefined(imageEditor)) __obj.updateDynamic("imageEditor")(imageEditor.asInstanceOf[js.Any])
+    if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
+    if (!js.isUndefined(undoRedo)) __obj.updateDynamic("undoRedo")(undoRedo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Features]
   }
 }

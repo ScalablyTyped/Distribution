@@ -40,13 +40,13 @@ object AbstractColDef {
     toolPanelClass: String | js.Array[String] | (js.Function1[/* params */ js.Any, String | js.Array[String]]) = null
   ): AbstractColDef = {
     val __obj = js.Dynamic.literal()
-    if (columnGroupShow != null) __obj.updateDynamic("columnGroupShow")(columnGroupShow)
+    if (columnGroupShow != null) __obj.updateDynamic("columnGroupShow")(columnGroupShow.asInstanceOf[js.Any])
     if (headerClass != null) __obj.updateDynamic("headerClass")(headerClass.asInstanceOf[js.Any])
-    if (headerName != null) __obj.updateDynamic("headerName")(headerName)
-    if (headerTooltip != null) __obj.updateDynamic("headerTooltip")(headerTooltip)
+    if (headerName != null) __obj.updateDynamic("headerName")(headerName.asInstanceOf[js.Any])
+    if (headerTooltip != null) __obj.updateDynamic("headerTooltip")(headerTooltip.asInstanceOf[js.Any])
     if (headerValueGetter != null) __obj.updateDynamic("headerValueGetter")(headerValueGetter.asInstanceOf[js.Any])
-    if (pivotKeys != null) __obj.updateDynamic("pivotKeys")(pivotKeys)
-    if (!js.isUndefined(suppressToolPanel)) __obj.updateDynamic("suppressToolPanel")(suppressToolPanel)
+    if (pivotKeys != null) __obj.updateDynamic("pivotKeys")(pivotKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressToolPanel)) __obj.updateDynamic("suppressToolPanel")(suppressToolPanel.asInstanceOf[js.Any])
     if (toolPanelClass != null) __obj.updateDynamic("toolPanelClass")(toolPanelClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractColDef]
   }

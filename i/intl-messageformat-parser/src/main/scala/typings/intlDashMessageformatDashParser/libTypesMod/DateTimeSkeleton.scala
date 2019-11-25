@@ -14,9 +14,9 @@ trait DateTimeSkeleton extends Skeleton {
 object DateTimeSkeleton {
   @scala.inline
   def apply(pattern: String, `type`: `1`, location: Location = null): DateTimeSkeleton = {
-    val __obj = js.Dynamic.literal(pattern = pattern)
-    __obj.updateDynamic("type")(`type`)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimeSkeleton]
   }
 }

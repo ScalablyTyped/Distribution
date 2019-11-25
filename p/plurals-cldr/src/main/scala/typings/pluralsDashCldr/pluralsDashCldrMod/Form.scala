@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
 */
 trait Form extends js.Object
 
+object Form {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def few: typings.pluralsDashCldr.pluralsDashCldrStrings.few = this.cast("few")
+  @scala.inline
+  def many: typings.pluralsDashCldr.pluralsDashCldrStrings.many = this.cast("many")
+  @scala.inline
+  def one: typings.pluralsDashCldr.pluralsDashCldrStrings.one = this.cast("one")
+  @scala.inline
+  def other: typings.pluralsDashCldr.pluralsDashCldrStrings.other = this.cast("other")
+  @scala.inline
+  def two: typings.pluralsDashCldr.pluralsDashCldrStrings.two = this.cast("two")
+  @scala.inline
+  def zero: typings.pluralsDashCldr.pluralsDashCldrStrings.zero = this.cast("zero")
+}
+

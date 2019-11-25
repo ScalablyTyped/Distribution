@@ -25,7 +25,7 @@ object ShadowEffect {
     `type`: DROP_SHADOW | INNER_SHADOW,
     visible: Boolean
   ): ShadowEffect = {
-    val __obj = js.Dynamic.literal(blendMode = blendMode, color = color, offset = offset, radius = radius, visible = visible)
+    val __obj = js.Dynamic.literal(blendMode = blendMode.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShadowEffect]
   }

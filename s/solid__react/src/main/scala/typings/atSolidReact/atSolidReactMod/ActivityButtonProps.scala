@@ -26,11 +26,11 @@ object ActivityButtonProps {
   ): ActivityButtonProps = {
     val __obj = js.Dynamic.literal()
     if (activateLabel != null) __obj.updateDynamic("activateLabel")(activateLabel.asInstanceOf[js.Any])
-    if (activateText != null) __obj.updateDynamic("activateText")(activateText)
+    if (activateText != null) __obj.updateDynamic("activateText")(activateText.asInstanceOf[js.Any])
     if (deactivateLabel != null) __obj.updateDynamic("deactivateLabel")(deactivateLabel.asInstanceOf[js.Any])
-    if (deactivateText != null) __obj.updateDynamic("deactivateText")(deactivateText)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
-    if (shortName != null) __obj.updateDynamic("shortName")(shortName)
+    if (deactivateText != null) __obj.updateDynamic("deactivateText")(deactivateText.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (shortName != null) __obj.updateDynamic("shortName")(shortName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityButtonProps]
   }
 }

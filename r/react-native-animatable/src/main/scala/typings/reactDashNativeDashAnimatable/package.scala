@@ -8,7 +8,7 @@ package object reactDashNativeDashAnimatable {
   import typings.std.Partial
 
   type AnimatableAnimationMethods = Partial[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in std.Animation ]: (duration? : number): std.Promise<{  finished  :boolean}>}
     */ typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.AnimatableAnimationMethods with js.Any
   ]

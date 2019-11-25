@@ -23,12 +23,12 @@ object Credentials {
     token: String = null,
     username: String = null
   ): Credentials = {
-    val __obj = js.Dynamic.literal(scope = scope)
-    if (auth != null) __obj.updateDynamic("auth")(auth)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (token != null) __obj.updateDynamic("token")(token)
-    if (username != null) __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credentials]
   }
 }

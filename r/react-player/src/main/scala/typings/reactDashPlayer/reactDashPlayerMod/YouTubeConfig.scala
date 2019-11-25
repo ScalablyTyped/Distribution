@@ -18,9 +18,9 @@ object YouTubeConfig {
     preload: js.UndefOr[Boolean] = js.undefined
   ): YouTubeConfig = {
     val __obj = js.Dynamic.literal()
-    if (embedOptions != null) __obj.updateDynamic("embedOptions")(embedOptions)
-    if (playerVars != null) __obj.updateDynamic("playerVars")(playerVars)
-    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload)
+    if (embedOptions != null) __obj.updateDynamic("embedOptions")(embedOptions.asInstanceOf[js.Any])
+    if (playerVars != null) __obj.updateDynamic("playerVars")(playerVars.asInstanceOf[js.Any])
+    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
     __obj.asInstanceOf[YouTubeConfig]
   }
 }

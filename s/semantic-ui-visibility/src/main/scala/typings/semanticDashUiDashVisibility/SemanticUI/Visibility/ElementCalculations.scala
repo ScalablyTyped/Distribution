@@ -41,8 +41,8 @@ object ElementCalculations {
     width: Double,
     margin: Anon_Bottom = null
   ): ElementCalculations = {
-    val __obj = js.Dynamic.literal(bottom = bottom, bottomPassed = bottomPassed, bottomVisible = bottomVisible, fits = fits, height = height, offScreen = offScreen, offset = offset, onScreen = onScreen, passing = passing, percentagePassed = percentagePassed, pixelsPassed = pixelsPassed, top = top, topPassed = topPassed, topVisible = topVisible, width = width)
-    if (margin != null) __obj.updateDynamic("margin")(margin)
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], bottomPassed = bottomPassed.asInstanceOf[js.Any], bottomVisible = bottomVisible.asInstanceOf[js.Any], fits = fits.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], offScreen = offScreen.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], onScreen = onScreen.asInstanceOf[js.Any], passing = passing.asInstanceOf[js.Any], percentagePassed = percentagePassed.asInstanceOf[js.Any], pixelsPassed = pixelsPassed.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], topPassed = topPassed.asInstanceOf[js.Any], topVisible = topVisible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementCalculations]
   }
 }

@@ -43,11 +43,11 @@ object Anon_Complete {
     header: StringDictionary[String] = null,
     success: /* res */ Anon_DataStatusCode => Unit = null
   ): Anon_Complete = {
-    val __obj = js.Dynamic.literal(filePath = filePath, name = name, url = url)
+    val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
-    if (formData != null) __obj.updateDynamic("formData")(formData)
-    if (header != null) __obj.updateDynamic("header")(header)
+    if (formData != null) __obj.updateDynamic("formData")(formData.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[Anon_Complete]
   }

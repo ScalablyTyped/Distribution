@@ -17,7 +17,7 @@ trait Typeofcmyk extends js.Object {
 object Typeofcmyk {
   @scala.inline
   def apply(channels: `4`, labels: cmyk, rgb: CMYK => RGB): Typeofcmyk = {
-    val __obj = js.Dynamic.literal(channels = channels, labels = labels, rgb = js.Any.fromFunction1(rgb))
+    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], rgb = js.Any.fromFunction1(rgb))
   
     __obj.asInstanceOf[Typeofcmyk]
   }

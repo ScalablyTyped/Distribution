@@ -52,11 +52,11 @@ object _InitializeParams {
     rootUri: String = null,
     trace: off | messages | verbose = null
   ): _InitializeParams = {
-    val __obj = js.Dynamic.literal(capabilities = capabilities)
-    if (initializationOptions != null) __obj.updateDynamic("initializationOptions")(initializationOptions)
+    val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any])
+    if (initializationOptions != null) __obj.updateDynamic("initializationOptions")(initializationOptions.asInstanceOf[js.Any])
     if (processId != null) __obj.updateDynamic("processId")(processId.asInstanceOf[js.Any])
-    if (rootPath != null) __obj.updateDynamic("rootPath")(rootPath)
-    if (rootUri != null) __obj.updateDynamic("rootUri")(rootUri)
+    if (rootPath != null) __obj.updateDynamic("rootPath")(rootPath.asInstanceOf[js.Any])
+    if (rootUri != null) __obj.updateDynamic("rootUri")(rootUri.asInstanceOf[js.Any])
     if (trace != null) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
     __obj.asInstanceOf[_InitializeParams]
   }

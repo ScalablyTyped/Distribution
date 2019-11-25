@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 object Pricing {
   @scala.inline
   def apply(local: Price[FiatCurrency]): Pricing = {
-    val __obj = js.Dynamic.literal(local = local)
+    val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Pricing]
   }

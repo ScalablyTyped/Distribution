@@ -15,7 +15,7 @@ trait AVSParams extends js.Object {
 object AVSParams {
   @scala.inline
   def apply(clientId: String, clientSecret: String, debug: Boolean, deviceId: String, refreshToken: String): AVSParams = {
-    val __obj = js.Dynamic.literal(clientId = clientId, clientSecret = clientSecret, debug = debug, deviceId = deviceId, refreshToken = refreshToken)
+    val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], deviceId = deviceId.asInstanceOf[js.Any], refreshToken = refreshToken.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AVSParams]
   }

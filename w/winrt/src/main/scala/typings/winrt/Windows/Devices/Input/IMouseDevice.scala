@@ -11,7 +11,7 @@ trait IMouseDevice extends js.Object {
 object IMouseDevice {
   @scala.inline
   def apply(onmousemoved: js.Any): IMouseDevice = {
-    val __obj = js.Dynamic.literal(onmousemoved = onmousemoved)
+    val __obj = js.Dynamic.literal(onmousemoved = onmousemoved.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IMouseDevice]
   }

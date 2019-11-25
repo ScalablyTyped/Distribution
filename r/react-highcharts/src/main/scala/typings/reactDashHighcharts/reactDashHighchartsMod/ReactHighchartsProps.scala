@@ -36,9 +36,9 @@ object ReactHighchartsProps {
     callback: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Highcharts.ChartObject */ /* chart */ js.Any => Unit = null,
     isPureConfig: js.UndefOr[Boolean] = js.undefined
   ): ReactHighchartsProps = {
-    val __obj = js.Dynamic.literal(config = config)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
-    if (!js.isUndefined(isPureConfig)) __obj.updateDynamic("isPureConfig")(isPureConfig)
+    if (!js.isUndefined(isPureConfig)) __obj.updateDynamic("isPureConfig")(isPureConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactHighchartsProps]
   }
 }

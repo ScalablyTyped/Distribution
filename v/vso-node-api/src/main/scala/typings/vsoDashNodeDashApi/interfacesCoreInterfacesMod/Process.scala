@@ -23,8 +23,8 @@ object Process {
     `type`: ProcessType,
     url: String
   ): Process = {
-    val __obj = js.Dynamic.literal(_links = _links, description = description, id = id, isDefault = isDefault, name = name, url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isDefault = isDefault.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Process]
   }
 }

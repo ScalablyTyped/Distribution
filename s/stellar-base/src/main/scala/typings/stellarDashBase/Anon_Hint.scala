@@ -14,7 +14,7 @@ trait Anon_Hint extends js.Object {
 object Anon_Hint {
   @scala.inline
   def apply(hint: SignatureHint, signature: Signature): Anon_Hint = {
-    val __obj = js.Dynamic.literal(hint = hint, signature = signature)
+    val __obj = js.Dynamic.literal(hint = hint.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Hint]
   }

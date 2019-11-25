@@ -18,9 +18,9 @@ object TransitTable {
     transitTimeLabels: js.Array[String] = null
   ): TransitTable = {
     val __obj = js.Dynamic.literal()
-    if (postalCodeGroupNames != null) __obj.updateDynamic("postalCodeGroupNames")(postalCodeGroupNames)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
-    if (transitTimeLabels != null) __obj.updateDynamic("transitTimeLabels")(transitTimeLabels)
+    if (postalCodeGroupNames != null) __obj.updateDynamic("postalCodeGroupNames")(postalCodeGroupNames.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (transitTimeLabels != null) __obj.updateDynamic("transitTimeLabels")(transitTimeLabels.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitTable]
   }
 }

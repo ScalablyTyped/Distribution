@@ -14,7 +14,7 @@ trait Anon_ECDSASIGN extends js.Object {
 object Anon_ECDSASIGN {
   @scala.inline
   def apply(ECDSA_SIGN: ecdsaSign, RSA_SIGN: rsaSign): Anon_ECDSASIGN = {
-    val __obj = js.Dynamic.literal(ECDSA_SIGN = ECDSA_SIGN, RSA_SIGN = RSA_SIGN)
+    val __obj = js.Dynamic.literal(ECDSA_SIGN = ECDSA_SIGN.asInstanceOf[js.Any], RSA_SIGN = RSA_SIGN.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ECDSASIGN]
   }

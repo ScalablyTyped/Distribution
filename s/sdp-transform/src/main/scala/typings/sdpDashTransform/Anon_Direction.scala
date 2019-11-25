@@ -13,8 +13,8 @@ trait Anon_Direction extends js.Object {
 object Anon_Direction {
   @scala.inline
   def apply(direction: String, id: Double | String, params: String = null): Anon_Direction = {
-    val __obj = js.Dynamic.literal(direction = direction, id = id.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Direction]
   }
 }

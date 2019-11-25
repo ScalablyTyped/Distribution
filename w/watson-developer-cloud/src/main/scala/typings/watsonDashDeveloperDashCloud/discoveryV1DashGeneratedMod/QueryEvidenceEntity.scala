@@ -27,8 +27,8 @@ object QueryEvidenceEntity {
     val __obj = js.Dynamic.literal()
     if (end_offset != null) __obj.updateDynamic("end_offset")(end_offset.asInstanceOf[js.Any])
     if (start_offset != null) __obj.updateDynamic("start_offset")(start_offset.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryEvidenceEntity]
   }
 }

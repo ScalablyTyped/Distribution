@@ -14,7 +14,7 @@ trait RequestBody[T /* <: Request */] extends js.Object {
 object RequestBody {
   @scala.inline
   def apply[T /* <: Request */](context: RequestContext, request: T, session: Session, version: String): RequestBody[T] = {
-    val __obj = js.Dynamic.literal(context = context, request = request.asInstanceOf[js.Any], session = session, version = version)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RequestBody[T]]
   }

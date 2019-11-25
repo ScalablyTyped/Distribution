@@ -14,9 +14,9 @@ trait axes extends js.Object {
 object axes {
   @scala.inline
   def apply(xaxis: axis, yaxis: axis, x2axis: axis = null, y2axis: axis = null): axes = {
-    val __obj = js.Dynamic.literal(xaxis = xaxis, yaxis = yaxis)
-    if (x2axis != null) __obj.updateDynamic("x2axis")(x2axis)
-    if (y2axis != null) __obj.updateDynamic("y2axis")(y2axis)
+    val __obj = js.Dynamic.literal(xaxis = xaxis.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any])
+    if (x2axis != null) __obj.updateDynamic("x2axis")(x2axis.asInstanceOf[js.Any])
+    if (y2axis != null) __obj.updateDynamic("y2axis")(y2axis.asInstanceOf[js.Any])
     __obj.asInstanceOf[axes]
   }
 }

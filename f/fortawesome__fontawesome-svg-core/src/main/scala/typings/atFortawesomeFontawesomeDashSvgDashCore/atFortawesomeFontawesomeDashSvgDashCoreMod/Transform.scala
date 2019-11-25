@@ -24,8 +24,8 @@ object Transform {
     y: Int | Double = null
   ): Transform = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(flipX)) __obj.updateDynamic("flipX")(flipX)
-    if (!js.isUndefined(flipY)) __obj.updateDynamic("flipY")(flipY)
+    if (!js.isUndefined(flipX)) __obj.updateDynamic("flipX")(flipX.asInstanceOf[js.Any])
+    if (!js.isUndefined(flipY)) __obj.updateDynamic("flipY")(flipY.asInstanceOf[js.Any])
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])

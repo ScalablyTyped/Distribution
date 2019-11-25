@@ -46,10 +46,10 @@ object EnvironmentProperties {
     starsEnabled: js.UndefOr[Boolean] = js.undefined
   ): EnvironmentProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(atmosphereEnabled)) __obj.updateDynamic("atmosphereEnabled")(atmosphereEnabled)
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (lighting != null) __obj.updateDynamic("lighting")(lighting)
-    if (!js.isUndefined(starsEnabled)) __obj.updateDynamic("starsEnabled")(starsEnabled)
+    if (!js.isUndefined(atmosphereEnabled)) __obj.updateDynamic("atmosphereEnabled")(atmosphereEnabled.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (lighting != null) __obj.updateDynamic("lighting")(lighting.asInstanceOf[js.Any])
+    if (!js.isUndefined(starsEnabled)) __obj.updateDynamic("starsEnabled")(starsEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentProperties]
   }
 }

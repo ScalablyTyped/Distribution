@@ -26,9 +26,9 @@ object GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec {
   @scala.inline
   def apply(requestDateText: String = null, requestDatetimeText: String = null, requestTimeText: String = null): GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec = {
     val __obj = js.Dynamic.literal()
-    if (requestDateText != null) __obj.updateDynamic("requestDateText")(requestDateText)
-    if (requestDatetimeText != null) __obj.updateDynamic("requestDatetimeText")(requestDatetimeText)
-    if (requestTimeText != null) __obj.updateDynamic("requestTimeText")(requestTimeText)
+    if (requestDateText != null) __obj.updateDynamic("requestDateText")(requestDateText.asInstanceOf[js.Any])
+    if (requestDatetimeText != null) __obj.updateDynamic("requestDatetimeText")(requestDatetimeText.asInstanceOf[js.Any])
+    if (requestTimeText != null) __obj.updateDynamic("requestTimeText")(requestTimeText.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec]
   }
 }

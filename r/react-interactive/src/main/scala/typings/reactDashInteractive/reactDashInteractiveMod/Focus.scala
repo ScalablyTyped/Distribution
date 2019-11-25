@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait Focus extends js.Object
 
+object Focus {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def `false`: typings.reactDashInteractive.reactDashInteractiveNumbers.`false` = this.cast(false)
+  @scala.inline
+  def mouse: typings.reactDashInteractive.reactDashInteractiveStrings.mouse = this.cast("mouse")
+  @scala.inline
+  def tab: typings.reactDashInteractive.reactDashInteractiveStrings.tab = this.cast("tab")
+  @scala.inline
+  def touch: typings.reactDashInteractive.reactDashInteractiveStrings.touch = this.cast("touch")
+}
+

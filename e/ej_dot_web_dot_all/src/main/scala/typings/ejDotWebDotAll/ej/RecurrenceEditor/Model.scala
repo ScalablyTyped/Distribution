@@ -73,17 +73,17 @@ object Model {
   ): Model = {
     val __obj = js.Dynamic.literal()
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
-    if (!js.isUndefined(enableSpinners)) __obj.updateDynamic("enableSpinners")(enableSpinners)
-    if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek)
-    if (frequencies != null) __obj.updateDynamic("frequencies")(frequencies)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
+    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSpinners)) __obj.updateDynamic("enableSpinners")(enableSpinners.asInstanceOf[js.Any])
+    if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
+    if (frequencies != null) __obj.updateDynamic("frequencies")(frequencies.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
     if (selectedRecurrenceType != null) __obj.updateDynamic("selectedRecurrenceType")(selectedRecurrenceType.asInstanceOf[js.Any])
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
 }

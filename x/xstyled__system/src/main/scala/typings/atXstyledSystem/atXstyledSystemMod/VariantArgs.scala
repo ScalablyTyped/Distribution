@@ -21,9 +21,9 @@ object VariantArgs {
   ): VariantArgs = {
     val __obj = js.Dynamic.literal()
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (prop != null) __obj.updateDynamic("prop")(prop)
-    if (variants != null) __obj.updateDynamic("variants")(variants)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (prop != null) __obj.updateDynamic("prop")(prop.asInstanceOf[js.Any])
+    if (variants != null) __obj.updateDynamic("variants")(variants.asInstanceOf[js.Any])
     __obj.asInstanceOf[VariantArgs]
   }
 }

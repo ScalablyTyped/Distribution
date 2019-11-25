@@ -15,7 +15,7 @@ trait IAngularStatic extends js.Object {
 object IAngularStatic {
   @scala.inline
   def apply(mock: IMockStatic): IAngularStatic = {
-    val __obj = js.Dynamic.literal(mock = mock)
+    val __obj = js.Dynamic.literal(mock = mock.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IAngularStatic]
   }

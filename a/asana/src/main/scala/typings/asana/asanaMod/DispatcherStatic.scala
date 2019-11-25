@@ -2,7 +2,6 @@ package typings.asana.asanaMod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,6 +39,6 @@ Instantiable0[Dispatcher]
     * @return {Promise<boolean>} True iff refresh was successful, false if not.
     * @return
     */
-  def maybeReauthorize(): ^[Boolean] = js.native
+  def maybeReauthorize(): typings.bluebird.bluebirdMod.^[Boolean] = js.native
 }
 

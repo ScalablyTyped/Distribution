@@ -2594,10 +2594,10 @@ object atOracleOraclejetStrings {
   sealed trait readOnlyChanged extends js.Object
   
   @js.native
-  sealed trait readonly extends js.Object
+  sealed trait readonlyChanged_ extends js.Object
   
   @js.native
-  sealed trait readonlyChanged extends js.Object
+  sealed trait readonly_ extends js.Object
   
   @js.native
   sealed trait rectangle extends js.Object
@@ -3383,7 +3383,7 @@ object atOracleOraclejetStrings {
   sealed trait touchmove extends js.Object
   
   @js.native
-  sealed trait touchstart extends js.Object
+  sealed trait touchstart_ extends js.Object
   
   @js.native
   sealed trait trackResize extends js.Object
@@ -5429,9 +5429,9 @@ object atOracleOraclejetStrings {
   @scala.inline
   def readOnlyChanged: readOnlyChanged = "readOnlyChanged".asInstanceOf[readOnlyChanged]
   @scala.inline
-  def readonly: readonly = "readonly".asInstanceOf[readonly]
+  def readonlyChanged_ : readonlyChanged_ = "readonlyChanged".asInstanceOf[readonlyChanged_]
   @scala.inline
-  def readonlyChanged: readonlyChanged = "readonlyChanged".asInstanceOf[readonlyChanged]
+  def readonly_ : readonly_ = "readonly".asInstanceOf[readonly_]
   @scala.inline
   def rectangle: rectangle = "rectangle".asInstanceOf[rectangle]
   @scala.inline
@@ -5955,7 +5955,7 @@ object atOracleOraclejetStrings {
   @scala.inline
   def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
   @scala.inline
-  def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
+  def touchstart_ : touchstart_ = "touchstart".asInstanceOf[touchstart_]
   @scala.inline
   def trackResize: trackResize = "trackResize".asInstanceOf[trackResize]
   @scala.inline

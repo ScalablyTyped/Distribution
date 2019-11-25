@@ -27,7 +27,7 @@ trait IRenderOptions extends js.Object {
 object IRenderOptions {
   @scala.inline
   def apply(host: HTMLElement, sanitizer: ISanitizer, source: String): IRenderOptions = {
-    val __obj = js.Dynamic.literal(host = host, sanitizer = sanitizer, source = source)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], sanitizer = sanitizer.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IRenderOptions]
   }

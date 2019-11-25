@@ -14,7 +14,7 @@ trait Anon_BstrMessageIdFRemovedFromReceiveFolder extends js.Object {
 object Anon_BstrMessageIdFRemovedFromReceiveFolder {
   @scala.inline
   def apply(bstrMessageId: String, fRemovedFromReceiveFolder: Boolean, pFaxAccount: FaxAccount): Anon_BstrMessageIdFRemovedFromReceiveFolder = {
-    val __obj = js.Dynamic.literal(bstrMessageId = bstrMessageId, fRemovedFromReceiveFolder = fRemovedFromReceiveFolder, pFaxAccount = pFaxAccount)
+    val __obj = js.Dynamic.literal(bstrMessageId = bstrMessageId.asInstanceOf[js.Any], fRemovedFromReceiveFolder = fRemovedFromReceiveFolder.asInstanceOf[js.Any], pFaxAccount = pFaxAccount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BstrMessageIdFRemovedFromReceiveFolder]
   }

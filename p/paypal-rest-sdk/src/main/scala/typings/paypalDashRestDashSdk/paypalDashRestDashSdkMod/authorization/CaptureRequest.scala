@@ -19,9 +19,9 @@ object CaptureRequest {
     is_final_capture: js.UndefOr[Boolean] = js.undefined
   ): CaptureRequest = {
     val __obj = js.Dynamic.literal()
-    if (amount != null) __obj.updateDynamic("amount")(amount)
-    if (invoice_number != null) __obj.updateDynamic("invoice_number")(invoice_number)
-    if (!js.isUndefined(is_final_capture)) __obj.updateDynamic("is_final_capture")(is_final_capture)
+    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (invoice_number != null) __obj.updateDynamic("invoice_number")(invoice_number.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_final_capture)) __obj.updateDynamic("is_final_capture")(is_final_capture.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptureRequest]
   }
 }

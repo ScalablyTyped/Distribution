@@ -12,8 +12,8 @@ trait PostGroupsParams extends js.Object {
 object PostGroupsParams {
   @scala.inline
   def apply(name: String, members: js.Array[String] = null): PostGroupsParams = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (members != null) __obj.updateDynamic("members")(members)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostGroupsParams]
   }
 }

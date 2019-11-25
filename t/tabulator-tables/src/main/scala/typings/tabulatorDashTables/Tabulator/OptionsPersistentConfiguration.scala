@@ -33,11 +33,11 @@ object OptionsPersistentConfiguration {
     persistentSort: js.UndefOr[Boolean] = js.undefined
   ): OptionsPersistentConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (persistenceID != null) __obj.updateDynamic("persistenceID")(persistenceID)
+    if (persistenceID != null) __obj.updateDynamic("persistenceID")(persistenceID.asInstanceOf[js.Any])
     if (persistenceMode != null) __obj.updateDynamic("persistenceMode")(persistenceMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(persistentFilter)) __obj.updateDynamic("persistentFilter")(persistentFilter)
-    if (!js.isUndefined(persistentLayout)) __obj.updateDynamic("persistentLayout")(persistentLayout)
-    if (!js.isUndefined(persistentSort)) __obj.updateDynamic("persistentSort")(persistentSort)
+    if (!js.isUndefined(persistentFilter)) __obj.updateDynamic("persistentFilter")(persistentFilter.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistentLayout)) __obj.updateDynamic("persistentLayout")(persistentLayout.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistentSort)) __obj.updateDynamic("persistentSort")(persistentSort.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsPersistentConfiguration]
   }
 }

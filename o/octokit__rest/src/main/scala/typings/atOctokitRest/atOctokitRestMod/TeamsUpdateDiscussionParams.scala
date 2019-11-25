@@ -20,9 +20,9 @@ trait TeamsUpdateDiscussionParams extends js.Object {
 object TeamsUpdateDiscussionParams {
   @scala.inline
   def apply(discussion_number: Double, team_id: Double, body: String = null, title: String = null): TeamsUpdateDiscussionParams = {
-    val __obj = js.Dynamic.literal(discussion_number = discussion_number, team_id = team_id)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (title != null) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(discussion_number = discussion_number.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsUpdateDiscussionParams]
   }
 }

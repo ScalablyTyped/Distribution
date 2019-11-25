@@ -15,8 +15,8 @@ object DialogflowV1Context {
   def apply(lifespan: Int | Double = null, name: String = null, parameters: DialogflowV1Parameters = null): DialogflowV1Context = {
     val __obj = js.Dynamic.literal()
     if (lifespan != null) __obj.updateDynamic("lifespan")(lifespan.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogflowV1Context]
   }
 }

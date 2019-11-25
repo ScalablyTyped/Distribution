@@ -16,7 +16,7 @@ object SplitterSideOptions {
   @scala.inline
   def apply(callback: js.Function = null): SplitterSideOptions = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitterSideOptions]
   }
 }

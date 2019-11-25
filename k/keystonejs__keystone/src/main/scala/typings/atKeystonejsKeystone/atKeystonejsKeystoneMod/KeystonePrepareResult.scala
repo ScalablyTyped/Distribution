@@ -13,7 +13,7 @@ trait KeystonePrepareResult extends js.Object {
 object KeystonePrepareResult {
   @scala.inline
   def apply(middlewares: js.Array[RequestHandler[ParamsDictionary]]): KeystonePrepareResult = {
-    val __obj = js.Dynamic.literal(middlewares = middlewares)
+    val __obj = js.Dynamic.literal(middlewares = middlewares.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KeystonePrepareResult]
   }

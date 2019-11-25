@@ -10,7 +10,7 @@ package object distEsTypesMod {
   import typings.std.Window
 
   type EventHandler[T /* <: EventTypes */] = js.Function1[
-    /* import warning: ImportType.apply Failed type conversion: std.DocumentEventMap[T] */ /* e */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.DocumentEventMap[T] */ /* e */ js.Any, 
     Unit
   ]
   type TargetRef = RefObject[Node | Window]

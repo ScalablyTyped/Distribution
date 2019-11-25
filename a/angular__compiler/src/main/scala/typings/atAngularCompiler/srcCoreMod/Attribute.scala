@@ -12,7 +12,7 @@ object Attribute {
   @scala.inline
   def apply(attributeName: String = null): Attribute = {
     val __obj = js.Dynamic.literal()
-    if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName)
+    if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attribute]
   }
 }

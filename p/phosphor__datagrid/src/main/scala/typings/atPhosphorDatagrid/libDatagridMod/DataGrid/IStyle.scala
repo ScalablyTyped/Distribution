@@ -97,17 +97,17 @@ object IStyle {
     voidColor: String = null
   ): IStyle = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (columnBackgroundColor != null) __obj.updateDynamic("columnBackgroundColor")(js.Any.fromFunction1(columnBackgroundColor))
-    if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor)
-    if (headerBackgroundColor != null) __obj.updateDynamic("headerBackgroundColor")(headerBackgroundColor)
-    if (headerGridLineColor != null) __obj.updateDynamic("headerGridLineColor")(headerGridLineColor)
-    if (headerHorizontalGridLineColor != null) __obj.updateDynamic("headerHorizontalGridLineColor")(headerHorizontalGridLineColor)
-    if (headerVerticalGridLineColor != null) __obj.updateDynamic("headerVerticalGridLineColor")(headerVerticalGridLineColor)
-    if (horizontalGridLineColor != null) __obj.updateDynamic("horizontalGridLineColor")(horizontalGridLineColor)
+    if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor.asInstanceOf[js.Any])
+    if (headerBackgroundColor != null) __obj.updateDynamic("headerBackgroundColor")(headerBackgroundColor.asInstanceOf[js.Any])
+    if (headerGridLineColor != null) __obj.updateDynamic("headerGridLineColor")(headerGridLineColor.asInstanceOf[js.Any])
+    if (headerHorizontalGridLineColor != null) __obj.updateDynamic("headerHorizontalGridLineColor")(headerHorizontalGridLineColor.asInstanceOf[js.Any])
+    if (headerVerticalGridLineColor != null) __obj.updateDynamic("headerVerticalGridLineColor")(headerVerticalGridLineColor.asInstanceOf[js.Any])
+    if (horizontalGridLineColor != null) __obj.updateDynamic("horizontalGridLineColor")(horizontalGridLineColor.asInstanceOf[js.Any])
     if (rowBackgroundColor != null) __obj.updateDynamic("rowBackgroundColor")(js.Any.fromFunction1(rowBackgroundColor))
-    if (verticalGridLineColor != null) __obj.updateDynamic("verticalGridLineColor")(verticalGridLineColor)
-    if (voidColor != null) __obj.updateDynamic("voidColor")(voidColor)
+    if (verticalGridLineColor != null) __obj.updateDynamic("verticalGridLineColor")(verticalGridLineColor.asInstanceOf[js.Any])
+    if (voidColor != null) __obj.updateDynamic("voidColor")(voidColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStyle]
   }
 }

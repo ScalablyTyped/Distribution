@@ -18,9 +18,9 @@ object Anon_Chromestyle {
     page: String = null
   ): Anon_Chromestyle = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(chrome_style)) __obj.updateDynamic("chrome_style")(chrome_style)
-    if (!js.isUndefined(open_in_tab)) __obj.updateDynamic("open_in_tab")(open_in_tab)
-    if (page != null) __obj.updateDynamic("page")(page)
+    if (!js.isUndefined(chrome_style)) __obj.updateDynamic("chrome_style")(chrome_style.asInstanceOf[js.Any])
+    if (!js.isUndefined(open_in_tab)) __obj.updateDynamic("open_in_tab")(open_in_tab.asInstanceOf[js.Any])
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Chromestyle]
   }
 }

@@ -16,7 +16,7 @@ object Control {
   @scala.inline
   def apply(environment: String = null): Control = {
     val __obj = js.Dynamic.literal()
-    if (environment != null) __obj.updateDynamic("environment")(environment)
+    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Control]
   }
 }

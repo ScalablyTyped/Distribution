@@ -11,7 +11,7 @@ trait Anon_Merge extends js.Object {
 object Anon_Merge {
   @scala.inline
   def apply(merge: Boolean): Anon_Merge = {
-    val __obj = js.Dynamic.literal(merge = merge)
+    val __obj = js.Dynamic.literal(merge = merge.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Merge]
   }

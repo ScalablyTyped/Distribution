@@ -66,14 +66,14 @@ object symbolPreviewRenderPreviewHTMLOptions {
     size: Int | Double = null,
     symbolConfig: String = null
   ): symbolPreviewRenderPreviewHTMLOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(disableUpsampling)) __obj.updateDynamic("disableUpsampling")(disableUpsampling)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (!js.isUndefined(disableUpsampling)) __obj.updateDynamic("disableUpsampling")(disableUpsampling.asInstanceOf[js.Any])
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (node != null) __obj.updateDynamic("node")(node)
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale)
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (symbolConfig != null) __obj.updateDynamic("symbolConfig")(symbolConfig)
+    if (symbolConfig != null) __obj.updateDynamic("symbolConfig")(symbolConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[symbolPreviewRenderPreviewHTMLOptions]
   }
 }

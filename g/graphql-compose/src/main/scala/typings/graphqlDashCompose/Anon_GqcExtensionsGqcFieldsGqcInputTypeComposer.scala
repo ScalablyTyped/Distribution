@@ -24,10 +24,10 @@ object Anon_GqcExtensionsGqcFieldsGqcInputTypeComposer {
     _gqcTypeResolvers: InterfaceTypeResolversMap[TContext] = null
   ): Anon_GqcExtensionsGqcFieldsGqcInputTypeComposer[TSource, TContext] = {
     val __obj = js.Dynamic.literal()
-    if (_gqcExtensions != null) __obj.updateDynamic("_gqcExtensions")(_gqcExtensions)
-    if (_gqcFields != null) __obj.updateDynamic("_gqcFields")(_gqcFields)
-    if (_gqcInputTypeComposer != null) __obj.updateDynamic("_gqcInputTypeComposer")(_gqcInputTypeComposer)
-    if (_gqcTypeResolvers != null) __obj.updateDynamic("_gqcTypeResolvers")(_gqcTypeResolvers)
+    if (_gqcExtensions != null) __obj.updateDynamic("_gqcExtensions")(_gqcExtensions.asInstanceOf[js.Any])
+    if (_gqcFields != null) __obj.updateDynamic("_gqcFields")(_gqcFields.asInstanceOf[js.Any])
+    if (_gqcInputTypeComposer != null) __obj.updateDynamic("_gqcInputTypeComposer")(_gqcInputTypeComposer.asInstanceOf[js.Any])
+    if (_gqcTypeResolvers != null) __obj.updateDynamic("_gqcTypeResolvers")(_gqcTypeResolvers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_GqcExtensionsGqcFieldsGqcInputTypeComposer[TSource, TContext]]
   }
 }

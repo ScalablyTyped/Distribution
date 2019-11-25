@@ -14,9 +14,9 @@ object Options {
   @scala.inline
   def apply(defaults: js.Any = null, env: String = null, root: String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
-    if (env != null) __obj.updateDynamic("env")(env)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

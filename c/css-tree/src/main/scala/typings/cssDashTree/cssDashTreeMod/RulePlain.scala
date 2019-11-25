@@ -21,9 +21,9 @@ object RulePlain {
     `type`: typings.cssDashTree.cssDashTreeStrings.Rule,
     loc: CssLocation = null
   ): RulePlain = {
-    val __obj = js.Dynamic.literal(block = block, prelude = prelude.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], prelude = prelude.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[RulePlain]
   }
 }

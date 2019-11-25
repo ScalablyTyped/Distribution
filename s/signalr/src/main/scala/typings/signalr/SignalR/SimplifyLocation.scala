@@ -12,7 +12,7 @@ trait SimplifyLocation extends js.Object {
 object SimplifyLocation {
   @scala.inline
   def apply(host: String, protocol: String): SimplifyLocation = {
-    val __obj = js.Dynamic.literal(host = host, protocol = protocol)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SimplifyLocation]
   }

@@ -15,7 +15,7 @@ object DatabaseCreateParams {
   def apply(n: Int | Double = null, partitioned: js.UndefOr[Boolean] = js.undefined, q: Int | Double = null): DatabaseCreateParams = {
     val __obj = js.Dynamic.literal()
     if (n != null) __obj.updateDynamic("n")(n.asInstanceOf[js.Any])
-    if (!js.isUndefined(partitioned)) __obj.updateDynamic("partitioned")(partitioned)
+    if (!js.isUndefined(partitioned)) __obj.updateDynamic("partitioned")(partitioned.asInstanceOf[js.Any])
     if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseCreateParams]
   }

@@ -26,7 +26,7 @@ trait RenameParams extends js.Object {
 object RenameParams {
   @scala.inline
   def apply(newName: String, position: Position, textDocument: TextDocumentIdentifier): RenameParams = {
-    val __obj = js.Dynamic.literal(newName = newName, position = position, textDocument = textDocument)
+    val __obj = js.Dynamic.literal(newName = newName.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RenameParams]
   }

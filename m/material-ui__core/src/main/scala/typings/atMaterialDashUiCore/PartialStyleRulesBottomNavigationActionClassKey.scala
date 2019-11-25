@@ -24,11 +24,11 @@ object PartialStyleRulesBottomNavigationActionClassKey {
     wrapper: CSSProperties = null
   ): PartialStyleRulesBottomNavigationActionClassKey = {
     val __obj = js.Dynamic.literal()
-    if (iconOnly != null) __obj.updateDynamic("iconOnly")(iconOnly)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (selected != null) __obj.updateDynamic("selected")(selected)
-    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper)
+    if (iconOnly != null) __obj.updateDynamic("iconOnly")(iconOnly.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesBottomNavigationActionClassKey]
   }
 }

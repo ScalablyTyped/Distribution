@@ -22,11 +22,11 @@ object ListRouteView {
     getParams: () => RouteParams,
     getRouteID: () => String,
     getRouteType: () => RouteTypes,
-    on_destroy: (destroy, js.Function0[Unit]) => Unit,
+    on: (destroy, js.Function0[Unit]) => Unit,
     refresh: () => Unit
   ): ListRouteView = {
-    val __obj = js.Dynamic.literal(addCollapsibleSection = js.Any.fromFunction1(addCollapsibleSection), addSection = js.Any.fromFunction1(addSection), destroyed = destroyed, getParams = js.Any.fromFunction0(getParams), getRouteID = js.Any.fromFunction0(getRouteID), getRouteType = js.Any.fromFunction0(getRouteType), refresh = js.Any.fromFunction0(refresh))
-    __obj.updateDynamic("on")(js.Any.fromFunction2(on_destroy))
+    val __obj = js.Dynamic.literal(addCollapsibleSection = js.Any.fromFunction1(addCollapsibleSection), addSection = js.Any.fromFunction1(addSection), destroyed = destroyed.asInstanceOf[js.Any], getParams = js.Any.fromFunction0(getParams), getRouteID = js.Any.fromFunction0(getRouteID), getRouteType = js.Any.fromFunction0(getRouteType), on = js.Any.fromFunction2(on), refresh = js.Any.fromFunction0(refresh))
+  
     __obj.asInstanceOf[ListRouteView]
   }
 }

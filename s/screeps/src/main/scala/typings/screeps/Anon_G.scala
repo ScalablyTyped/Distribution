@@ -22,7 +22,7 @@ trait Anon_G extends js.Object {
 object Anon_G {
   @scala.inline
   def apply(G: GH, K: KH, L: LH, O: OH, U: UH, Z: ZH): Anon_G = {
-    val __obj = js.Dynamic.literal(G = G, K = K, L = L, O = O, U = U, Z = Z)
+    val __obj = js.Dynamic.literal(G = G.asInstanceOf[js.Any], K = K.asInstanceOf[js.Any], L = L.asInstanceOf[js.Any], O = O.asInstanceOf[js.Any], U = U.asInstanceOf[js.Any], Z = Z.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_G]
   }

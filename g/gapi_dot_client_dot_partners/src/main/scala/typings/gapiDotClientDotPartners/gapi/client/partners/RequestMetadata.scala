@@ -30,11 +30,11 @@ object RequestMetadata {
     userOverrides: UserOverrides = null
   ): RequestMetadata = {
     val __obj = js.Dynamic.literal()
-    if (experimentIds != null) __obj.updateDynamic("experimentIds")(experimentIds)
-    if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (partnersSessionId != null) __obj.updateDynamic("partnersSessionId")(partnersSessionId)
-    if (trafficSource != null) __obj.updateDynamic("trafficSource")(trafficSource)
-    if (userOverrides != null) __obj.updateDynamic("userOverrides")(userOverrides)
+    if (experimentIds != null) __obj.updateDynamic("experimentIds")(experimentIds.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (partnersSessionId != null) __obj.updateDynamic("partnersSessionId")(partnersSessionId.asInstanceOf[js.Any])
+    if (trafficSource != null) __obj.updateDynamic("trafficSource")(trafficSource.asInstanceOf[js.Any])
+    if (userOverrides != null) __obj.updateDynamic("userOverrides")(userOverrides.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestMetadata]
   }
 }

@@ -30,12 +30,12 @@ object Anon_CommentsConstraint {
     optional: js.UndefOr[Boolean] = js.undefined,
     typeAnnotation: TypeAnnotationKind | TSTypeAnnotationKind = null
   ): Anon_CommentsConstraint = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (constraint != null) __obj.updateDynamic("constraint")(constraint)
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (constraint != null) __obj.updateDynamic("constraint")(constraint.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
     if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentsConstraint]
   }

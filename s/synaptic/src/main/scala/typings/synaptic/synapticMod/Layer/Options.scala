@@ -20,7 +20,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (bias != null) __obj.updateDynamic("bias")(bias.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (squash != null) __obj.updateDynamic("squash")(js.Any.fromFunction2(squash))
     __obj.asInstanceOf[Options]
   }

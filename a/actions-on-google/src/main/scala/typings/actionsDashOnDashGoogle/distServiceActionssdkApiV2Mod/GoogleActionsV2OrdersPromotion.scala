@@ -15,7 +15,7 @@ object GoogleActionsV2OrdersPromotion {
   @scala.inline
   def apply(coupon: String = null): GoogleActionsV2OrdersPromotion = {
     val __obj = js.Dynamic.literal()
-    if (coupon != null) __obj.updateDynamic("coupon")(coupon)
+    if (coupon != null) __obj.updateDynamic("coupon")(coupon.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersPromotion]
   }
 }

@@ -37,12 +37,12 @@ object SeqMapTask {
     userFn: Record[String, _] = null
   ): SeqMapTask = {
     val __obj = js.Dynamic.literal()
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (outputInfos != null) __obj.updateDynamic("outputInfos")(outputInfos)
-    if (stageName != null) __obj.updateDynamic("stageName")(stageName)
-    if (systemName != null) __obj.updateDynamic("systemName")(systemName)
-    if (userFn != null) __obj.updateDynamic("userFn")(userFn)
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (outputInfos != null) __obj.updateDynamic("outputInfos")(outputInfos.asInstanceOf[js.Any])
+    if (stageName != null) __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
+    if (systemName != null) __obj.updateDynamic("systemName")(systemName.asInstanceOf[js.Any])
+    if (userFn != null) __obj.updateDynamic("userFn")(userFn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeqMapTask]
   }
 }

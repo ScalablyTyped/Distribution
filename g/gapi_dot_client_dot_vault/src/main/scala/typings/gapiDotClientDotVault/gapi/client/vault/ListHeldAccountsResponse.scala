@@ -13,7 +13,7 @@ object ListHeldAccountsResponse {
   @scala.inline
   def apply(accounts: js.Array[HeldAccount] = null): ListHeldAccountsResponse = {
     val __obj = js.Dynamic.literal()
-    if (accounts != null) __obj.updateDynamic("accounts")(accounts)
+    if (accounts != null) __obj.updateDynamic("accounts")(accounts.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHeldAccountsResponse]
   }
 }

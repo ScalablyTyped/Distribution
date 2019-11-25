@@ -15,7 +15,7 @@ trait OnBeforeRedirectFilter extends js.Object {
 object OnBeforeRedirectFilter {
   @scala.inline
   def apply(urls: js.Array[String]): OnBeforeRedirectFilter = {
-    val __obj = js.Dynamic.literal(urls = urls)
+    val __obj = js.Dynamic.literal(urls = urls.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OnBeforeRedirectFilter]
   }

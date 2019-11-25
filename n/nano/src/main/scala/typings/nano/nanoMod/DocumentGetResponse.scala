@@ -40,14 +40,14 @@ object DocumentGetResponse {
     _revisions: js.Any = null,
     _revs_info: js.Array[_] = null
   ): DocumentGetResponse = {
-    val __obj = js.Dynamic.literal(_id = _id, _rev = _rev)
-    if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments)
-    if (_conflicts != null) __obj.updateDynamic("_conflicts")(_conflicts)
-    if (!js.isUndefined(_deleted)) __obj.updateDynamic("_deleted")(_deleted)
-    if (_deleted_conflicts != null) __obj.updateDynamic("_deleted_conflicts")(_deleted_conflicts)
-    if (_local_seq != null) __obj.updateDynamic("_local_seq")(_local_seq)
-    if (_revisions != null) __obj.updateDynamic("_revisions")(_revisions)
-    if (_revs_info != null) __obj.updateDynamic("_revs_info")(_revs_info)
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], _rev = _rev.asInstanceOf[js.Any])
+    if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments.asInstanceOf[js.Any])
+    if (_conflicts != null) __obj.updateDynamic("_conflicts")(_conflicts.asInstanceOf[js.Any])
+    if (!js.isUndefined(_deleted)) __obj.updateDynamic("_deleted")(_deleted.asInstanceOf[js.Any])
+    if (_deleted_conflicts != null) __obj.updateDynamic("_deleted_conflicts")(_deleted_conflicts.asInstanceOf[js.Any])
+    if (_local_seq != null) __obj.updateDynamic("_local_seq")(_local_seq.asInstanceOf[js.Any])
+    if (_revisions != null) __obj.updateDynamic("_revisions")(_revisions.asInstanceOf[js.Any])
+    if (_revs_info != null) __obj.updateDynamic("_revs_info")(_revs_info.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentGetResponse]
   }
 }

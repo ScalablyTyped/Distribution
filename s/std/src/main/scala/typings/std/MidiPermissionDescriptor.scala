@@ -14,8 +14,8 @@ trait MidiPermissionDescriptor extends PermissionDescriptor {
 object MidiPermissionDescriptor {
   @scala.inline
   def apply(name: midi, sysex: js.UndefOr[scala.Boolean] = js.undefined): MidiPermissionDescriptor = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (!js.isUndefined(sysex)) __obj.updateDynamic("sysex")(sysex)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(sysex)) __obj.updateDynamic("sysex")(sysex.asInstanceOf[js.Any])
     __obj.asInstanceOf[MidiPermissionDescriptor]
   }
 }

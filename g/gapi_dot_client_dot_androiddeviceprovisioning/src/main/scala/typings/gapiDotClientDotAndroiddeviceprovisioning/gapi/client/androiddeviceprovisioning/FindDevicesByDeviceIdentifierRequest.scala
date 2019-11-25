@@ -17,9 +17,9 @@ object FindDevicesByDeviceIdentifierRequest {
   @scala.inline
   def apply(deviceIdentifier: DeviceIdentifier = null, limit: String = null, pageToken: String = null): FindDevicesByDeviceIdentifierRequest = {
     val __obj = js.Dynamic.literal()
-    if (deviceIdentifier != null) __obj.updateDynamic("deviceIdentifier")(deviceIdentifier)
-    if (limit != null) __obj.updateDynamic("limit")(limit)
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (deviceIdentifier != null) __obj.updateDynamic("deviceIdentifier")(deviceIdentifier.asInstanceOf[js.Any])
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindDevicesByDeviceIdentifierRequest]
   }
 }

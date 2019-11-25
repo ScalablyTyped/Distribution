@@ -27,9 +27,9 @@ object Pagination {
     next_uri: String = null,
     previous_uri: String = null
   ): Pagination = {
-    val __obj = js.Dynamic.literal(cursor_range = cursor_range, total = total, yielded = yielded)
-    if (next_uri != null) __obj.updateDynamic("next_uri")(next_uri)
-    if (previous_uri != null) __obj.updateDynamic("previous_uri")(previous_uri)
+    val __obj = js.Dynamic.literal(cursor_range = cursor_range.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], yielded = yielded.asInstanceOf[js.Any])
+    if (next_uri != null) __obj.updateDynamic("next_uri")(next_uri.asInstanceOf[js.Any])
+    if (previous_uri != null) __obj.updateDynamic("previous_uri")(previous_uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pagination]
   }
 }

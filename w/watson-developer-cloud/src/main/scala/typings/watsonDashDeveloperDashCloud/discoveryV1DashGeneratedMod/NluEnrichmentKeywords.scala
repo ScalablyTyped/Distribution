@@ -22,9 +22,9 @@ object NluEnrichmentKeywords {
     sentiment: js.UndefOr[Boolean] = js.undefined
   ): NluEnrichmentKeywords = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(emotion)) __obj.updateDynamic("emotion")(emotion)
+    if (!js.isUndefined(emotion)) __obj.updateDynamic("emotion")(emotion.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(sentiment)) __obj.updateDynamic("sentiment")(sentiment)
+    if (!js.isUndefined(sentiment)) __obj.updateDynamic("sentiment")(sentiment.asInstanceOf[js.Any])
     __obj.asInstanceOf[NluEnrichmentKeywords]
   }
 }

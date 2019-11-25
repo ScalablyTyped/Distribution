@@ -22,8 +22,8 @@ object RenderTagProps {
     tag: Tag,
     StringDictionary: StringDictionary[js.Any] = null
   ): RenderTagProps = {
-    val __obj = js.Dynamic.literal(disabled = disabled, getTagDisplayValue = js.Any.fromFunction1(getTagDisplayValue), onRemove = js.Any.fromFunction1(onRemove), tag = tag)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], getTagDisplayValue = js.Any.fromFunction1(getTagDisplayValue), onRemove = js.Any.fromFunction1(onRemove), tag = tag.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[RenderTagProps]
   }
 }

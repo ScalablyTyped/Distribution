@@ -19,8 +19,8 @@ object Options {
   @scala.inline
   def apply(createCwd: js.UndefOr[Boolean] = js.undefined, createTmp: js.UndefOr[Boolean] = js.undefined): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(createCwd)) __obj.updateDynamic("createCwd")(createCwd)
-    if (!js.isUndefined(createTmp)) __obj.updateDynamic("createTmp")(createTmp)
+    if (!js.isUndefined(createCwd)) __obj.updateDynamic("createCwd")(createCwd.asInstanceOf[js.Any])
+    if (!js.isUndefined(createTmp)) __obj.updateDynamic("createTmp")(createTmp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

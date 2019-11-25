@@ -14,8 +14,8 @@ trait ClassedSizeSliderThumbDragEvent extends js.Object {
 object ClassedSizeSliderThumbDragEvent {
   @scala.inline
   def apply(index: Double, state: String, `type`: String, value: Double): ClassedSizeSliderThumbDragEvent = {
-    val __obj = js.Dynamic.literal(index = index, state = state, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassedSizeSliderThumbDragEvent]
   }
 }

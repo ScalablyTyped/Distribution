@@ -26,13 +26,13 @@ object StockChartAxisLabelClickEvent {
     text: js.Any = null,
     value: js.Any = null
   ): StockChartAxisLabelClickEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (axis != null) __obj.updateDynamic("axis")(axis)
-    if (dataItem != null) __obj.updateDynamic("dataItem")(dataItem)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (index != null) __obj.updateDynamic("index")(index)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (dataItem != null) __obj.updateDynamic("dataItem")(dataItem.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartAxisLabelClickEvent]
   }
 }

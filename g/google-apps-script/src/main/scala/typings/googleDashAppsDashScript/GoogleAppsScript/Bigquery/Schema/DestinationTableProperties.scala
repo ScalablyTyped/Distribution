@@ -14,9 +14,9 @@ object DestinationTableProperties {
   @scala.inline
   def apply(description: String = null, friendlyName: String = null, labels: js.Object = null): DestinationTableProperties = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     __obj.asInstanceOf[DestinationTableProperties]
   }
 }

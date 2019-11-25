@@ -15,8 +15,8 @@ object TextFilterData {
     `type`: typings.reactDashBootstrapDashTable.reactDashBootstrapDashTableStrings.TextFilter,
     value: String
   ): TextFilterData = {
-    val __obj = js.Dynamic.literal(value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextFilterData]
   }
 }

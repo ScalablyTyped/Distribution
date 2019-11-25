@@ -19,7 +19,7 @@ trait GlyphIconOptions extends IconOptions {
 object GlyphIconOptions {
   @scala.inline
   def apply(
-    iconUrl_IconOptions: String,
+    iconUrl: String,
     attribution: String = null,
     bgPos: PointExpression = null,
     bgSize: PointExpression = null,
@@ -31,7 +31,6 @@ object GlyphIconOptions {
     iconAnchor: PointExpression = null,
     iconRetinaUrl: String = null,
     iconSize: PointExpression = null,
-    iconUrl: String = null,
     pane: String = null,
     popupAnchor: PointExpression = null,
     prefix: String = null,
@@ -41,27 +40,25 @@ object GlyphIconOptions {
     shadowUrl: String = null,
     tooltipAnchor: PointExpression = null
   ): GlyphIconOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iconUrl")(iconUrl_IconOptions)
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution)
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any])
+    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
     if (bgPos != null) __obj.updateDynamic("bgPos")(bgPos.asInstanceOf[js.Any])
     if (bgSize != null) __obj.updateDynamic("bgSize")(bgSize.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (glyph != null) __obj.updateDynamic("glyph")(glyph)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (glyph != null) __obj.updateDynamic("glyph")(glyph.asInstanceOf[js.Any])
     if (glyphAnchor != null) __obj.updateDynamic("glyphAnchor")(glyphAnchor.asInstanceOf[js.Any])
-    if (glyphColor != null) __obj.updateDynamic("glyphColor")(glyphColor)
-    if (glyphSize != null) __obj.updateDynamic("glyphSize")(glyphSize)
+    if (glyphColor != null) __obj.updateDynamic("glyphColor")(glyphColor.asInstanceOf[js.Any])
+    if (glyphSize != null) __obj.updateDynamic("glyphSize")(glyphSize.asInstanceOf[js.Any])
     if (iconAnchor != null) __obj.updateDynamic("iconAnchor")(iconAnchor.asInstanceOf[js.Any])
-    if (iconRetinaUrl != null) __obj.updateDynamic("iconRetinaUrl")(iconRetinaUrl)
+    if (iconRetinaUrl != null) __obj.updateDynamic("iconRetinaUrl")(iconRetinaUrl.asInstanceOf[js.Any])
     if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
-    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
-    if (pane != null) __obj.updateDynamic("pane")(pane)
+    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
     if (popupAnchor != null) __obj.updateDynamic("popupAnchor")(popupAnchor.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (shadowAnchor != null) __obj.updateDynamic("shadowAnchor")(shadowAnchor.asInstanceOf[js.Any])
-    if (shadowRetinaUrl != null) __obj.updateDynamic("shadowRetinaUrl")(shadowRetinaUrl)
+    if (shadowRetinaUrl != null) __obj.updateDynamic("shadowRetinaUrl")(shadowRetinaUrl.asInstanceOf[js.Any])
     if (shadowSize != null) __obj.updateDynamic("shadowSize")(shadowSize.asInstanceOf[js.Any])
-    if (shadowUrl != null) __obj.updateDynamic("shadowUrl")(shadowUrl)
+    if (shadowUrl != null) __obj.updateDynamic("shadowUrl")(shadowUrl.asInstanceOf[js.Any])
     if (tooltipAnchor != null) __obj.updateDynamic("tooltipAnchor")(tooltipAnchor.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlyphIconOptions]
   }

@@ -34,17 +34,17 @@ object PivotGridMessagesFieldMenu {
     title: String = null
   ): PivotGridMessagesFieldMenu = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (clear != null) __obj.updateDynamic("clear")(clear)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (filterFields != null) __obj.updateDynamic("filterFields")(filterFields)
-    if (include != null) __obj.updateDynamic("include")(include)
-    if (info != null) __obj.updateDynamic("info")(info)
-    if (ok != null) __obj.updateDynamic("ok")(ok)
-    if (operators != null) __obj.updateDynamic("operators")(operators)
-    if (sortAscending != null) __obj.updateDynamic("sortAscending")(sortAscending)
-    if (sortDescending != null) __obj.updateDynamic("sortDescending")(sortDescending)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (clear != null) __obj.updateDynamic("clear")(clear.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (filterFields != null) __obj.updateDynamic("filterFields")(filterFields.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (ok != null) __obj.updateDynamic("ok")(ok.asInstanceOf[js.Any])
+    if (operators != null) __obj.updateDynamic("operators")(operators.asInstanceOf[js.Any])
+    if (sortAscending != null) __obj.updateDynamic("sortAscending")(sortAscending.asInstanceOf[js.Any])
+    if (sortDescending != null) __obj.updateDynamic("sortDescending")(sortDescending.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotGridMessagesFieldMenu]
   }
 }

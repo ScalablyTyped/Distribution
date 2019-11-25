@@ -42,14 +42,14 @@ object AppRestrictionsSchemaRestriction {
     title: String = null
   ): AppRestrictionsSchemaRestriction = {
     val __obj = js.Dynamic.literal()
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (entry != null) __obj.updateDynamic("entry")(entry)
-    if (entryValue != null) __obj.updateDynamic("entryValue")(entryValue)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (nestedRestriction != null) __obj.updateDynamic("nestedRestriction")(nestedRestriction)
-    if (restrictionType != null) __obj.updateDynamic("restrictionType")(restrictionType)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (entry != null) __obj.updateDynamic("entry")(entry.asInstanceOf[js.Any])
+    if (entryValue != null) __obj.updateDynamic("entryValue")(entryValue.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (nestedRestriction != null) __obj.updateDynamic("nestedRestriction")(nestedRestriction.asInstanceOf[js.Any])
+    if (restrictionType != null) __obj.updateDynamic("restrictionType")(restrictionType.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppRestrictionsSchemaRestriction]
   }
 }

@@ -1,7 +1,6 @@
 package typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod
 
 import typings.atTensorflowTfjsDashCore.Anon_GradsValueArray
-import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,8 +38,15 @@ object valueAndGrads extends js.Object {
     * ```
     */
   /** @doc {heading: 'Training', subheading: 'Gradients'} */
-  def apply[O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank] */](f: js.Function1[/* repeated */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank], O]): js.Function2[
-    /* args */ js.Array[typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[Rank]], 
+  def apply[O /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](
+    f: js.Function1[
+      /* repeated */ typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank], 
+      O
+    ]
+  ): js.Function2[
+    /* args */ js.Array[
+      typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
+    ], 
     /* dy */ js.UndefOr[O], 
     Anon_GradsValueArray[O]
   ] = js.native

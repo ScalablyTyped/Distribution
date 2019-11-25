@@ -19,9 +19,9 @@ object IncomingTransferAcceptResult {
     ext_action_uri: String = null,
     protection_code_attempts_available: Int | Double = null
   ): IncomingTransferAcceptResult = {
-    val __obj = js.Dynamic.literal(status = status)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (ext_action_uri != null) __obj.updateDynamic("ext_action_uri")(ext_action_uri)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (ext_action_uri != null) __obj.updateDynamic("ext_action_uri")(ext_action_uri.asInstanceOf[js.Any])
     if (protection_code_attempts_available != null) __obj.updateDynamic("protection_code_attempts_available")(protection_code_attempts_available.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncomingTransferAcceptResult]
   }

@@ -29,12 +29,12 @@ object Options {
     transmissionDelay: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal(uploadDir = uploadDir.asInstanceOf[js.Any])
-    if (accepts != null) __obj.updateDynamic("accepts")(accepts)
+    if (accepts != null) __obj.updateDynamic("accepts")(accepts.asInstanceOf[js.Any])
     if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
     if (maxFileSize != null) __obj.updateDynamic("maxFileSize")(maxFileSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite)
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
     if (rename != null) __obj.updateDynamic("rename")(js.Any.fromFunction2(rename))
-    if (!js.isUndefined(resume)) __obj.updateDynamic("resume")(resume)
+    if (!js.isUndefined(resume)) __obj.updateDynamic("resume")(resume.asInstanceOf[js.Any])
     if (transmissionDelay != null) __obj.updateDynamic("transmissionDelay")(transmissionDelay.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

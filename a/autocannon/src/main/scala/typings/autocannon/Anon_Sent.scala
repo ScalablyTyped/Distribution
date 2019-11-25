@@ -11,7 +11,7 @@ trait Anon_Sent extends js.Object {
 object Anon_Sent {
   @scala.inline
   def apply(sent: Double): Anon_Sent = {
-    val __obj = js.Dynamic.literal(sent = sent)
+    val __obj = js.Dynamic.literal(sent = sent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Sent]
   }

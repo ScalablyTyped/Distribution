@@ -37,8 +37,8 @@ object ServerExtEventsRequestObject {
   @scala.inline
   def apply(method: Method | js.Array[Method], `type`: ServerRequestExtType, options: ServerExtOptions = null): ServerExtEventsRequestObject = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerExtEventsRequestObject]
   }
 }

@@ -14,8 +14,8 @@ object NavigationAnnotationsControlPointStyleOptions {
   @scala.inline
   def apply(fill: String = null, stroke: String = null, `stroke-width`: Int | Double = null): NavigationAnnotationsControlPointStyleOptions = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (`stroke-width` != null) __obj.updateDynamic("stroke-width")(`stroke-width`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationAnnotationsControlPointStyleOptions]
   }

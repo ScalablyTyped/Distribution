@@ -57,15 +57,15 @@ object Icons {
     up: String = null
   ): Icons = {
     val __obj = js.Dynamic.literal()
-    if (clear != null) __obj.updateDynamic("clear")(clear)
-    if (close != null) __obj.updateDynamic("close")(close)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (down != null) __obj.updateDynamic("down")(down)
-    if (next != null) __obj.updateDynamic("next")(next)
-    if (previous != null) __obj.updateDynamic("previous")(previous)
-    if (time != null) __obj.updateDynamic("time")(time)
-    if (today != null) __obj.updateDynamic("today")(today)
-    if (up != null) __obj.updateDynamic("up")(up)
+    if (clear != null) __obj.updateDynamic("clear")(clear.asInstanceOf[js.Any])
+    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (down != null) __obj.updateDynamic("down")(down.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
+    if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (today != null) __obj.updateDynamic("today")(today.asInstanceOf[js.Any])
+    if (up != null) __obj.updateDynamic("up")(up.asInstanceOf[js.Any])
     __obj.asInstanceOf[Icons]
   }
 }

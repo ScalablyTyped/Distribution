@@ -13,8 +13,8 @@ trait ArtifactFilter extends BaseSubscriptionFilter {
 object ArtifactFilter {
   @scala.inline
   def apply(artifactId: String, artifactType: String, artifactUri: String, eventType: String, `type`: String): ArtifactFilter = {
-    val __obj = js.Dynamic.literal(artifactId = artifactId, artifactType = artifactType, artifactUri = artifactUri, eventType = eventType)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(artifactId = artifactId.asInstanceOf[js.Any], artifactType = artifactType.asInstanceOf[js.Any], artifactUri = artifactUri.asInstanceOf[js.Any], eventType = eventType.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtifactFilter]
   }
 }

@@ -22,9 +22,9 @@ object Anon_Id {
     traceparent: ^ = null,
     tracestate: typings.applicationinsights.outLibraryTracestateMod.^ = null
   ): Anon_Id = {
-    val __obj = js.Dynamic.literal(id = id, name = name, parentId = parentId)
-    if (traceparent != null) __obj.updateDynamic("traceparent")(traceparent)
-    if (tracestate != null) __obj.updateDynamic("tracestate")(tracestate)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any])
+    if (traceparent != null) __obj.updateDynamic("traceparent")(traceparent.asInstanceOf[js.Any])
+    if (tracestate != null) __obj.updateDynamic("tracestate")(tracestate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Id]
   }
 }

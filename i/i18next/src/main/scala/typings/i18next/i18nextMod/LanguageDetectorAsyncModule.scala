@@ -31,8 +31,8 @@ object LanguageDetectorAsyncModule {
     init: (Services, js.Object, InitOptions) => Unit,
     `type`: languageDetector
   ): LanguageDetectorAsyncModule = {
-    val __obj = js.Dynamic.literal(async = async, cacheUserLanguage = js.Any.fromFunction1(cacheUserLanguage), detect = js.Any.fromFunction1(detect), init = js.Any.fromFunction3(init))
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], cacheUserLanguage = js.Any.fromFunction1(cacheUserLanguage), detect = js.Any.fromFunction1(detect), init = js.Any.fromFunction3(init))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageDetectorAsyncModule]
   }
 }

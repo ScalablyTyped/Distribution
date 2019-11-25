@@ -28,8 +28,8 @@ object _UnmarshalledPointInTimeRecoveryDescription {
     PointInTimeRecoveryStatus: ENABLED | DISABLED | String = null
   ): _UnmarshalledPointInTimeRecoveryDescription = {
     val __obj = js.Dynamic.literal()
-    if (EarliestRestorableDateTime != null) __obj.updateDynamic("EarliestRestorableDateTime")(EarliestRestorableDateTime)
-    if (LatestRestorableDateTime != null) __obj.updateDynamic("LatestRestorableDateTime")(LatestRestorableDateTime)
+    if (EarliestRestorableDateTime != null) __obj.updateDynamic("EarliestRestorableDateTime")(EarliestRestorableDateTime.asInstanceOf[js.Any])
+    if (LatestRestorableDateTime != null) __obj.updateDynamic("LatestRestorableDateTime")(LatestRestorableDateTime.asInstanceOf[js.Any])
     if (PointInTimeRecoveryStatus != null) __obj.updateDynamic("PointInTimeRecoveryStatus")(PointInTimeRecoveryStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledPointInTimeRecoveryDescription]
   }

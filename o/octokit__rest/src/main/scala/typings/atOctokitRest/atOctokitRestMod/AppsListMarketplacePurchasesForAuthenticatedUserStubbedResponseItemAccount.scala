@@ -23,8 +23,8 @@ object AppsListMarketplacePurchasesForAuthenticatedUserStubbedResponseItemAccoun
     `type`: String,
     url: String
   ): AppsListMarketplacePurchasesForAuthenticatedUserStubbedResponseItemAccount = {
-    val __obj = js.Dynamic.literal(email = email, id = id, login = login, organization_billing_email = organization_billing_email, url = url)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], login = login.asInstanceOf[js.Any], organization_billing_email = organization_billing_email.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppsListMarketplacePurchasesForAuthenticatedUserStubbedResponseItemAccount]
   }
 }

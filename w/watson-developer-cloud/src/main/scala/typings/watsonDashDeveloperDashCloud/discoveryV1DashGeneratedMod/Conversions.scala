@@ -28,11 +28,11 @@ object Conversions {
     word: WordSettings = null
   ): Conversions = {
     val __obj = js.Dynamic.literal()
-    if (html != null) __obj.updateDynamic("html")(html)
-    if (json_normalizations != null) __obj.updateDynamic("json_normalizations")(json_normalizations)
-    if (pdf != null) __obj.updateDynamic("pdf")(pdf)
-    if (segment != null) __obj.updateDynamic("segment")(segment)
-    if (word != null) __obj.updateDynamic("word")(word)
+    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (json_normalizations != null) __obj.updateDynamic("json_normalizations")(json_normalizations.asInstanceOf[js.Any])
+    if (pdf != null) __obj.updateDynamic("pdf")(pdf.asInstanceOf[js.Any])
+    if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
+    if (word != null) __obj.updateDynamic("word")(word.asInstanceOf[js.Any])
     __obj.asInstanceOf[Conversions]
   }
 }

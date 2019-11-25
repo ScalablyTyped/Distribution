@@ -11,7 +11,7 @@ trait DataArgs extends Args {
 object DataArgs {
   @scala.inline
   def apply(argsDict: Dict, argsList: js.Array[_], details: Dict): DataArgs = {
-    val __obj = js.Dynamic.literal(argsDict = argsDict, argsList = argsList, details = details)
+    val __obj = js.Dynamic.literal(argsDict = argsDict.asInstanceOf[js.Any], argsList = argsList.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DataArgs]
   }

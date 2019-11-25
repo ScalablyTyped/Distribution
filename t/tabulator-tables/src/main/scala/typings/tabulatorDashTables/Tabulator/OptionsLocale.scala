@@ -23,7 +23,7 @@ object OptionsLocale {
     localized: (/* locale */ String, /* lang */ js.Any) => Unit = null
   ): OptionsLocale = {
     val __obj = js.Dynamic.literal()
-    if (langs != null) __obj.updateDynamic("langs")(langs)
+    if (langs != null) __obj.updateDynamic("langs")(langs.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (localized != null) __obj.updateDynamic("localized")(js.Any.fromFunction2(localized))
     __obj.asInstanceOf[OptionsLocale]

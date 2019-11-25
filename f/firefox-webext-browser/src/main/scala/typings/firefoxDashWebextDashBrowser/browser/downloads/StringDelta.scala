@@ -13,8 +13,8 @@ object StringDelta {
   @scala.inline
   def apply(current: String = null, previous: String = null): StringDelta = {
     val __obj = js.Dynamic.literal()
-    if (current != null) __obj.updateDynamic("current")(current)
-    if (previous != null) __obj.updateDynamic("previous")(previous)
+    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+    if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringDelta]
   }
 }

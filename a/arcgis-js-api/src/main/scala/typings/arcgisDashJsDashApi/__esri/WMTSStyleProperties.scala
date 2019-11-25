@@ -35,10 +35,10 @@ object WMTSStyleProperties {
   @scala.inline
   def apply(description: String = null, id: String = null, legendUrl: String = null, title: String = null): WMTSStyleProperties = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (legendUrl != null) __obj.updateDynamic("legendUrl")(legendUrl)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (legendUrl != null) __obj.updateDynamic("legendUrl")(legendUrl.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[WMTSStyleProperties]
   }
 }

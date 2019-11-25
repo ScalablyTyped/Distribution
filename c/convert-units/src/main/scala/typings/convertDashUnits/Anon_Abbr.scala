@@ -17,7 +17,7 @@ trait Anon_Abbr[T /* <: unit */] extends js.Object {
 object Anon_Abbr {
   @scala.inline
   def apply[T /* <: unit */](abbr: T, measure: measure, system: system, unit: Anon_Name): Anon_Abbr[T] = {
-    val __obj = js.Dynamic.literal(abbr = abbr.asInstanceOf[js.Any], measure = measure, system = system, unit = unit)
+    val __obj = js.Dynamic.literal(abbr = abbr.asInstanceOf[js.Any], measure = measure.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Abbr[T]]
   }

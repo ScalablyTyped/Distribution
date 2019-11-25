@@ -35,7 +35,7 @@ object FeedItem {
     published: String,
     title: String
   ): FeedItem = {
-    val __obj = js.Dynamic.literal(authors = authors, categories = categories, content = content, description = description, enclosures = enclosures, id = id, itunes = itunes, links = links, published = published, title = title)
+    val __obj = js.Dynamic.literal(authors = authors.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], enclosures = enclosures.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], itunes = itunes.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], published = published.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FeedItem]
   }

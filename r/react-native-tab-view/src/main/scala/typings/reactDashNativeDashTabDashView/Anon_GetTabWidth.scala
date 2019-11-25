@@ -24,7 +24,7 @@ object Anon_GetTabWidth {
     width: String,
     style: StyleProp[ViewStyle] = null
   ): Anon_GetTabWidth[T] = {
-    val __obj = js.Dynamic.literal(getTabWidth = js.Any.fromFunction1(getTabWidth), navigationState = navigationState, width = width)
+    val __obj = js.Dynamic.literal(getTabWidth = js.Any.fromFunction1(getTabWidth), navigationState = navigationState.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_GetTabWidth[T]]
   }

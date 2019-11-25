@@ -12,7 +12,7 @@ object CreateSheetsChartResponse {
   @scala.inline
   def apply(objectId: String = null): CreateSheetsChartResponse = {
     val __obj = js.Dynamic.literal()
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSheetsChartResponse]
   }
 }

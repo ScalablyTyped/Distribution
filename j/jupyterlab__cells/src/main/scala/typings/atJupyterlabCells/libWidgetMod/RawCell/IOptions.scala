@@ -28,10 +28,10 @@ object IOptions {
     editorConfig: Partial[IConfig] = null,
     updateEditorOnShow: js.UndefOr[Boolean] = js.undefined
   ): IOptions = {
-    val __obj = js.Dynamic.literal(model = model)
-    if (contentFactory != null) __obj.updateDynamic("contentFactory")(contentFactory)
-    if (editorConfig != null) __obj.updateDynamic("editorConfig")(editorConfig)
-    if (!js.isUndefined(updateEditorOnShow)) __obj.updateDynamic("updateEditorOnShow")(updateEditorOnShow)
+    val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
+    if (contentFactory != null) __obj.updateDynamic("contentFactory")(contentFactory.asInstanceOf[js.Any])
+    if (editorConfig != null) __obj.updateDynamic("editorConfig")(editorConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateEditorOnShow)) __obj.updateDynamic("updateEditorOnShow")(updateEditorOnShow.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

@@ -46,9 +46,9 @@ object GeometryServiceFromGeoCoordinateStringParams {
     conversionMode: String = null,
     conversionType: String = null
   ): GeometryServiceFromGeoCoordinateStringParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sr = sr.asInstanceOf[js.Any], strings = strings)
-    if (conversionMode != null) __obj.updateDynamic("conversionMode")(conversionMode)
-    if (conversionType != null) __obj.updateDynamic("conversionType")(conversionType)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), sr = sr.asInstanceOf[js.Any], strings = strings.asInstanceOf[js.Any])
+    if (conversionMode != null) __obj.updateDynamic("conversionMode")(conversionMode.asInstanceOf[js.Any])
+    if (conversionType != null) __obj.updateDynamic("conversionType")(conversionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeometryServiceFromGeoCoordinateStringParams]
   }
 }

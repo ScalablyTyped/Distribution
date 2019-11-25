@@ -19,7 +19,7 @@ object CommonSeriesOptionsOutlierSettings {
   def apply(shape: Shape | String = null, size: CommonSeriesOptionsOutlierSettingsSize = null): CommonSeriesOptionsOutlierSettings = {
     val __obj = js.Dynamic.literal()
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonSeriesOptionsOutlierSettings]
   }
 }

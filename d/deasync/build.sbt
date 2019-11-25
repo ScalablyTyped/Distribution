@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "deasync"
-version := "0.1-dt-20180214Z-bd6091"
+version := "0.1-dt-20180214Z-bd82e8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

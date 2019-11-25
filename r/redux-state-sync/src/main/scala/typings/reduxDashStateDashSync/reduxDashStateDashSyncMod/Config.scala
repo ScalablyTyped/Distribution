@@ -22,11 +22,11 @@ object Config {
     whitelist: js.Array[String] = null
   ): Config = {
     val __obj = js.Dynamic.literal()
-    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist)
-    if (broadcastChannelOption != null) __obj.updateDynamic("broadcastChannelOption")(broadcastChannelOption)
-    if (channel != null) __obj.updateDynamic("channel")(channel)
+    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist.asInstanceOf[js.Any])
+    if (broadcastChannelOption != null) __obj.updateDynamic("broadcastChannelOption")(broadcastChannelOption.asInstanceOf[js.Any])
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
     if (predicate != null) __obj.updateDynamic("predicate")(js.Any.fromFunction1(predicate))
-    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist)
+    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
 }

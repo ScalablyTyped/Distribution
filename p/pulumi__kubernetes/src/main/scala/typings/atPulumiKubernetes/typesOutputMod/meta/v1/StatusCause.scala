@@ -35,7 +35,7 @@ trait StatusCause extends js.Object {
 object StatusCause {
   @scala.inline
   def apply(field: String, message: String, reason: String): StatusCause = {
-    val __obj = js.Dynamic.literal(field = field, message = message, reason = reason)
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StatusCause]
   }

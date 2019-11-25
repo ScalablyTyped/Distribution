@@ -20,8 +20,8 @@ object IDotDotDotOptionsLastCharacter {
   @scala.inline
   def apply(noEllipsis: js.Array[String] = null, remove: js.Array[String] = null): IDotDotDotOptionsLastCharacter = {
     val __obj = js.Dynamic.literal()
-    if (noEllipsis != null) __obj.updateDynamic("noEllipsis")(noEllipsis)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (noEllipsis != null) __obj.updateDynamic("noEllipsis")(noEllipsis.asInstanceOf[js.Any])
+    if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDotDotDotOptionsLastCharacter]
   }
 }

@@ -36,12 +36,12 @@ object EndEditEventArgs {
     rowElement: js.Any = null
   ): EndEditEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (cellElement != null) __obj.updateDynamic("cellElement")(cellElement)
-    if (columnName != null) __obj.updateDynamic("columnName")(columnName)
-    if (columnObject != null) __obj.updateDynamic("columnObject")(columnObject)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (rowElement != null) __obj.updateDynamic("rowElement")(rowElement)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (cellElement != null) __obj.updateDynamic("cellElement")(cellElement.asInstanceOf[js.Any])
+    if (columnName != null) __obj.updateDynamic("columnName")(columnName.asInstanceOf[js.Any])
+    if (columnObject != null) __obj.updateDynamic("columnObject")(columnObject.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (rowElement != null) __obj.updateDynamic("rowElement")(rowElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndEditEventArgs]
   }
 }

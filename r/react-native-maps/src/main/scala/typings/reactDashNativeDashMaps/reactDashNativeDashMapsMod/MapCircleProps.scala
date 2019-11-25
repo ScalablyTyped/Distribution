@@ -36,15 +36,15 @@ object MapCircleProps {
     strokeWidth: Int | Double = null,
     zIndex: Int | Double = null
   ): MapCircleProps = {
-    val __obj = js.Dynamic.literal(center = center, radius = radius)
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
-    if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap)
-    if (lineDashPattern != null) __obj.updateDynamic("lineDashPattern")(lineDashPattern)
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any])
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
+    if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap.asInstanceOf[js.Any])
+    if (lineDashPattern != null) __obj.updateDynamic("lineDashPattern")(lineDashPattern.asInstanceOf[js.Any])
     if (lineDashPhase != null) __obj.updateDynamic("lineDashPhase")(lineDashPhase.asInstanceOf[js.Any])
-    if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin)
+    if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin.asInstanceOf[js.Any])
     if (miterLimit != null) __obj.updateDynamic("miterLimit")(miterLimit.asInstanceOf[js.Any])
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapCircleProps]

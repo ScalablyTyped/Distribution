@@ -16,8 +16,8 @@ trait Anon_History extends js.Object {
 object Anon_History {
   @scala.inline
   def apply(history: History[LocationState], location: Location[LocationState], `match`: Anon_IsExact): Anon_History = {
-    val __obj = js.Dynamic.literal(history = history, location = location)
-    __obj.updateDynamic("match")(`match`)
+    val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
+    __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_History]
   }
 }

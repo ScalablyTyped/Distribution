@@ -12,7 +12,7 @@ trait Global extends js.Object {
 object Global {
   @scala.inline
   def apply(any: StringDictionary[js.Any]): Global = {
-    val __obj = js.Dynamic.literal(any = any)
+    val __obj = js.Dynamic.literal(any = any.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Global]
   }

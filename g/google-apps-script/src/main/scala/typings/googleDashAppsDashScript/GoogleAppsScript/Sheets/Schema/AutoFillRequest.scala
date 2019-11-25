@@ -18,9 +18,9 @@ object AutoFillRequest {
     useAlternateSeries: js.UndefOr[Boolean] = js.undefined
   ): AutoFillRequest = {
     val __obj = js.Dynamic.literal()
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (sourceAndDestination != null) __obj.updateDynamic("sourceAndDestination")(sourceAndDestination)
-    if (!js.isUndefined(useAlternateSeries)) __obj.updateDynamic("useAlternateSeries")(useAlternateSeries)
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (sourceAndDestination != null) __obj.updateDynamic("sourceAndDestination")(sourceAndDestination.asInstanceOf[js.Any])
+    if (!js.isUndefined(useAlternateSeries)) __obj.updateDynamic("useAlternateSeries")(useAlternateSeries.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoFillRequest]
   }
 }

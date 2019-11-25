@@ -75,9 +75,9 @@ object Hooks {
     beforeRetry: js.Array[BeforeRetryHook] = null
   ): Hooks = {
     val __obj = js.Dynamic.literal()
-    if (afterResponse != null) __obj.updateDynamic("afterResponse")(afterResponse)
-    if (beforeRequest != null) __obj.updateDynamic("beforeRequest")(beforeRequest)
-    if (beforeRetry != null) __obj.updateDynamic("beforeRetry")(beforeRetry)
+    if (afterResponse != null) __obj.updateDynamic("afterResponse")(afterResponse.asInstanceOf[js.Any])
+    if (beforeRequest != null) __obj.updateDynamic("beforeRequest")(beforeRequest.asInstanceOf[js.Any])
+    if (beforeRetry != null) __obj.updateDynamic("beforeRetry")(beforeRetry.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hooks]
   }
 }

@@ -26,10 +26,10 @@ object ForNumericStatement {
     loc: Anon_End = null,
     step: Expression = null
   ): ForNumericStatement = {
-    val __obj = js.Dynamic.literal(body = body, end = end, start = start, variable = variable)
-    __obj.updateDynamic("type")(`type`)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (step != null) __obj.updateDynamic("step")(step)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], variable = variable.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForNumericStatement]
   }
 }

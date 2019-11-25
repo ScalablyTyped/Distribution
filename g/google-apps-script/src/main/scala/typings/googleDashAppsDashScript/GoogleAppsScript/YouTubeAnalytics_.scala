@@ -50,9 +50,9 @@ object YouTubeAnalytics_ {
     Reports: ReportsCollection = null
   ): YouTubeAnalytics_ = {
     val __obj = js.Dynamic.literal(newErrorProto = js.Any.fromFunction0(newErrorProto), newErrors = js.Any.fromFunction0(newErrors), newGroup = js.Any.fromFunction0(newGroup), newGroupContentDetails = js.Any.fromFunction0(newGroupContentDetails), newGroupItem = js.Any.fromFunction0(newGroupItem), newGroupItemResource = js.Any.fromFunction0(newGroupItemResource), newGroupSnippet = js.Any.fromFunction0(newGroupSnippet))
-    if (GroupItems != null) __obj.updateDynamic("GroupItems")(GroupItems)
-    if (Groups != null) __obj.updateDynamic("Groups")(Groups)
-    if (Reports != null) __obj.updateDynamic("Reports")(Reports)
+    if (GroupItems != null) __obj.updateDynamic("GroupItems")(GroupItems.asInstanceOf[js.Any])
+    if (Groups != null) __obj.updateDynamic("Groups")(Groups.asInstanceOf[js.Any])
+    if (Reports != null) __obj.updateDynamic("Reports")(Reports.asInstanceOf[js.Any])
     __obj.asInstanceOf[YouTubeAnalytics_]
   }
 }

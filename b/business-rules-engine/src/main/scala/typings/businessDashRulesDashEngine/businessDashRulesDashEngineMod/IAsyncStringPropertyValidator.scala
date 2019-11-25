@@ -17,9 +17,9 @@ object IAsyncStringPropertyValidator {
     customMessage: (/* config */ js.Any, /* args */ js.Any) => String = null,
     tagName: String = null
   ): IAsyncStringPropertyValidator = {
-    val __obj = js.Dynamic.literal(isAcceptable = js.Any.fromFunction1(isAcceptable), isAsync = isAsync)
+    val __obj = js.Dynamic.literal(isAcceptable = js.Any.fromFunction1(isAcceptable), isAsync = isAsync.asInstanceOf[js.Any])
     if (customMessage != null) __obj.updateDynamic("customMessage")(js.Any.fromFunction2(customMessage))
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAsyncStringPropertyValidator]
   }
 }

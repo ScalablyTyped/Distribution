@@ -35,7 +35,7 @@ object WebApiProject {
     url: String,
     visibility: ProjectVisibility
   ): WebApiProject = {
-    val __obj = js.Dynamic.literal(abbreviation = abbreviation, capabilities = capabilities, collection = collection, defaultTeam = defaultTeam, description = description, id = id, name = name, revision = revision, state = state, url = url, visibility = visibility)
+    val __obj = js.Dynamic.literal(abbreviation = abbreviation.asInstanceOf[js.Any], capabilities = capabilities.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], defaultTeam = defaultTeam.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebApiProject]
   }

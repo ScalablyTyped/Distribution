@@ -49,17 +49,17 @@ object About {
     user: User = null
   ): About = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appInstalled)) __obj.updateDynamic("appInstalled")(appInstalled)
-    if (!js.isUndefined(canCreateTeamDrives)) __obj.updateDynamic("canCreateTeamDrives")(canCreateTeamDrives)
-    if (exportFormats != null) __obj.updateDynamic("exportFormats")(exportFormats)
-    if (folderColorPalette != null) __obj.updateDynamic("folderColorPalette")(folderColorPalette)
-    if (importFormats != null) __obj.updateDynamic("importFormats")(importFormats)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (maxImportSizes != null) __obj.updateDynamic("maxImportSizes")(maxImportSizes)
-    if (maxUploadSize != null) __obj.updateDynamic("maxUploadSize")(maxUploadSize)
-    if (storageQuota != null) __obj.updateDynamic("storageQuota")(storageQuota)
-    if (teamDriveThemes != null) __obj.updateDynamic("teamDriveThemes")(teamDriveThemes)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (!js.isUndefined(appInstalled)) __obj.updateDynamic("appInstalled")(appInstalled.asInstanceOf[js.Any])
+    if (!js.isUndefined(canCreateTeamDrives)) __obj.updateDynamic("canCreateTeamDrives")(canCreateTeamDrives.asInstanceOf[js.Any])
+    if (exportFormats != null) __obj.updateDynamic("exportFormats")(exportFormats.asInstanceOf[js.Any])
+    if (folderColorPalette != null) __obj.updateDynamic("folderColorPalette")(folderColorPalette.asInstanceOf[js.Any])
+    if (importFormats != null) __obj.updateDynamic("importFormats")(importFormats.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (maxImportSizes != null) __obj.updateDynamic("maxImportSizes")(maxImportSizes.asInstanceOf[js.Any])
+    if (maxUploadSize != null) __obj.updateDynamic("maxUploadSize")(maxUploadSize.asInstanceOf[js.Any])
+    if (storageQuota != null) __obj.updateDynamic("storageQuota")(storageQuota.asInstanceOf[js.Any])
+    if (teamDriveThemes != null) __obj.updateDynamic("teamDriveThemes")(teamDriveThemes.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[About]
   }
 }

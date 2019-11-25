@@ -36,12 +36,12 @@ object RowDeselectedEventArgs {
     `type`: String = null
   ): RowDeselectedEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (row != null) __obj.updateDynamic("row")(row)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
-    if (selectedData != null) __obj.updateDynamic("selectedData")(selectedData)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (selectedData != null) __obj.updateDynamic("selectedData")(selectedData.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowDeselectedEventArgs]
   }
 }

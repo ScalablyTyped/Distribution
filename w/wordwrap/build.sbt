@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wordwrap"
-version := "1.0-dt-20190302Z-209e7a"
+version := "1.0-dt-20190302Z-7bd6b7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

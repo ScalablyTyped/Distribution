@@ -45,9 +45,9 @@ object IOptions {
     state: IStateDB[ReadonlyJSONValue] = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (driveName != null) __obj.updateDynamic("driveName")(driveName)
+    if (driveName != null) __obj.updateDynamic("driveName")(driveName.asInstanceOf[js.Any])
     if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
 }

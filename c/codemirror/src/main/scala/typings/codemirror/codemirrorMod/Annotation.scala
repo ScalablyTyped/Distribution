@@ -18,10 +18,10 @@ trait Annotation extends js.Object {
 object Annotation {
   @scala.inline
   def apply(from: Position, message: String = null, severity: String = null, to: Position = null): Annotation = {
-    val __obj = js.Dynamic.literal(from = from)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (severity != null) __obj.updateDynamic("severity")(severity)
-    if (to != null) __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[Annotation]
   }
 }

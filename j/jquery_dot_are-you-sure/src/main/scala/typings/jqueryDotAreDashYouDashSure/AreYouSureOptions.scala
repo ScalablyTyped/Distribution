@@ -28,11 +28,11 @@ object AreYouSureOptions {
     silent: js.UndefOr[Boolean] = js.undefined
   ): AreYouSureOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(change)
-    if (dirtyClass != null) __obj.updateDynamic("dirtyClass")(dirtyClass)
-    if (fieldSelector != null) __obj.updateDynamic("fieldSelector")(fieldSelector)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (change != null) __obj.updateDynamic("change")(change.asInstanceOf[js.Any])
+    if (dirtyClass != null) __obj.updateDynamic("dirtyClass")(dirtyClass.asInstanceOf[js.Any])
+    if (fieldSelector != null) __obj.updateDynamic("fieldSelector")(fieldSelector.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[AreYouSureOptions]
   }
 }

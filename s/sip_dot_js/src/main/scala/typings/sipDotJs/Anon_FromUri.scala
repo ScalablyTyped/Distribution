@@ -16,7 +16,7 @@ object Anon_FromUri {
   def apply(fromUri: String | URI = null, toDisplayName: String = null, toUri: String | URI = null): Anon_FromUri = {
     val __obj = js.Dynamic.literal()
     if (fromUri != null) __obj.updateDynamic("fromUri")(fromUri.asInstanceOf[js.Any])
-    if (toDisplayName != null) __obj.updateDynamic("toDisplayName")(toDisplayName)
+    if (toDisplayName != null) __obj.updateDynamic("toDisplayName")(toDisplayName.asInstanceOf[js.Any])
     if (toUri != null) __obj.updateDynamic("toUri")(toUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FromUri]
   }

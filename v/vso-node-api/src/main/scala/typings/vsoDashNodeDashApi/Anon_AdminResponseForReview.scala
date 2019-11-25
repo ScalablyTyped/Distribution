@@ -23,7 +23,7 @@ object Anon_AdminResponseForReview {
     replyToReview: Double,
     updateReview: Double
   ): Anon_AdminResponseForReview = {
-    val __obj = js.Dynamic.literal(adminResponseForReview = adminResponseForReview, deleteAdminReply = deleteAdminReply, deletePublisherReply = deletePublisherReply, flagReview = flagReview, replyToReview = replyToReview, updateReview = updateReview)
+    val __obj = js.Dynamic.literal(adminResponseForReview = adminResponseForReview.asInstanceOf[js.Any], deleteAdminReply = deleteAdminReply.asInstanceOf[js.Any], deletePublisherReply = deletePublisherReply.asInstanceOf[js.Any], flagReview = flagReview.asInstanceOf[js.Any], replyToReview = replyToReview.asInstanceOf[js.Any], updateReview = updateReview.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AdminResponseForReview]
   }

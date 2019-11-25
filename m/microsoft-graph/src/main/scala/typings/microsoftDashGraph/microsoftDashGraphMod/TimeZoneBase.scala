@@ -16,7 +16,7 @@ object TimeZoneBase {
   @scala.inline
   def apply(name: String = null): TimeZoneBase = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeZoneBase]
   }
 }

@@ -1,7 +1,7 @@
 package typings.atTensorflowTfjsDashLayers.distLayersRecurrentMod
 
 import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.glorotNormal
-import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.orthogonal
+import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.orthogonal_
 import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.tanh
 import typings.atTensorflowTfjsDashLayers.distActivationsMod.Activation
 import typings.atTensorflowTfjsDashLayers.distConstraintsMod.Constraint
@@ -22,7 +22,7 @@ class GRUCell protected () extends RNNCell {
   val DEFAULT_BIAS_INITIALIZER: InitializerIdentifier = js.native
   val DEFAULT_KERNEL_INITIALIZER: glorotNormal = js.native
   val DEFAULT_RECURRENT_ACTIVATION: ActivationIdentifier = js.native
-  val DEFAULT_RECURRENT_INITIALIZER: orthogonal = js.native
+  val DEFAULT_RECURRENT_INITIALIZER: orthogonal_ = js.native
   val activation: Activation = js.native
   var bias: LayerVariable = js.native
   val biasConstraint: Constraint = js.native

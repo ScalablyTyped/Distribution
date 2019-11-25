@@ -28,17 +28,17 @@ object Command {
     `type`: String = null,
     uri: String = null
   ): Command = {
-    val __obj = js.Dynamic.literal(method = method)
-    if (from != null) __obj.updateDynamic("from")(from)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (pp != null) __obj.updateDynamic("pp")(pp)
-    if (reason != null) __obj.updateDynamic("reason")(reason)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (to != null) __obj.updateDynamic("to")(to)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (pp != null) __obj.updateDynamic("pp")(pp.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Command]
   }
 }

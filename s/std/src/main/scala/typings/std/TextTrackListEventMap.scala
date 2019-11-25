@@ -11,7 +11,7 @@ trait TextTrackListEventMap extends js.Object {
 object TextTrackListEventMap {
   @scala.inline
   def apply(addtrack: TrackEvent): TextTrackListEventMap = {
-    val __obj = js.Dynamic.literal(addtrack = addtrack)
+    val __obj = js.Dynamic.literal(addtrack = addtrack.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TextTrackListEventMap]
   }

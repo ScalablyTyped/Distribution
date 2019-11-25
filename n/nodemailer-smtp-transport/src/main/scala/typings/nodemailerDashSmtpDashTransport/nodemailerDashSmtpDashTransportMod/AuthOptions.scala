@@ -45,17 +45,17 @@ object AuthOptions {
     user: String = null
   ): AuthOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
-    if (accessUrl != null) __obj.updateDynamic("accessUrl")(accessUrl)
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret)
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
+    if (accessUrl != null) __obj.updateDynamic("accessUrl")(accessUrl.asInstanceOf[js.Any])
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (pass != null) __obj.updateDynamic("pass")(pass)
-    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey)
-    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
-    if (serviceClient != null) __obj.updateDynamic("serviceClient")(serviceClient)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (pass != null) __obj.updateDynamic("pass")(pass.asInstanceOf[js.Any])
+    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
+    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])
+    if (serviceClient != null) __obj.updateDynamic("serviceClient")(serviceClient.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthOptions]
   }
 }

@@ -22,10 +22,10 @@ object MapShapeCreatedEvent {
     originalEvent: js.Any = null,
     shape: Element = null
   ): MapShapeCreatedEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (layer != null) __obj.updateDynamic("layer")(layer)
-    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
-    if (shape != null) __obj.updateDynamic("shape")(shape)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapShapeCreatedEvent]
   }
 }

@@ -37,10 +37,10 @@ object ListAnalyticsResponse {
     responseMetadata: ResponseMetadata = null
   ): ListAnalyticsResponse = {
     val __obj = js.Dynamic.literal()
-    if (analytics != null) __obj.updateDynamic("analytics")(analytics)
-    if (analyticsSummary != null) __obj.updateDynamic("analyticsSummary")(analyticsSummary)
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (responseMetadata != null) __obj.updateDynamic("responseMetadata")(responseMetadata)
+    if (analytics != null) __obj.updateDynamic("analytics")(analytics.asInstanceOf[js.Any])
+    if (analyticsSummary != null) __obj.updateDynamic("analyticsSummary")(analyticsSummary.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (responseMetadata != null) __obj.updateDynamic("responseMetadata")(responseMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAnalyticsResponse]
   }
 }

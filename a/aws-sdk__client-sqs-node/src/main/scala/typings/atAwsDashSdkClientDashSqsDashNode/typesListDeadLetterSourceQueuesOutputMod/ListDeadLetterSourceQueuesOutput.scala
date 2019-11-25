@@ -21,7 +21,7 @@ trait ListDeadLetterSourceQueuesOutput extends OutputTypesUnion {
 object ListDeadLetterSourceQueuesOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata, queueUrls: js.Array[String]): ListDeadLetterSourceQueuesOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata, queueUrls = queueUrls)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], queueUrls = queueUrls.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListDeadLetterSourceQueuesOutput]
   }

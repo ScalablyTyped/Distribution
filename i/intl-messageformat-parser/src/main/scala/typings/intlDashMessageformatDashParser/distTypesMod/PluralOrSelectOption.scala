@@ -12,8 +12,8 @@ trait PluralOrSelectOption extends js.Object {
 object PluralOrSelectOption {
   @scala.inline
   def apply(value: js.Array[MessageFormatElement], location: Location = null): PluralOrSelectOption = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluralOrSelectOption]
   }
 }

@@ -22,10 +22,10 @@ object Anon_FetchOptionsOverride {
     reloadOnLoad: js.UndefOr[Boolean] = js.undefined,
     resetOnLoad: js.UndefOr[Boolean] = js.undefined
   ): Anon_FetchOptionsOverride[V] = {
-    val __obj = js.Dynamic.literal(operation = operation)
+    val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
     if (fetchOptionsOverride != null) __obj.updateDynamic("fetchOptionsOverride")(js.Any.fromFunction1(fetchOptionsOverride))
-    if (!js.isUndefined(reloadOnLoad)) __obj.updateDynamic("reloadOnLoad")(reloadOnLoad)
-    if (!js.isUndefined(resetOnLoad)) __obj.updateDynamic("resetOnLoad")(resetOnLoad)
+    if (!js.isUndefined(reloadOnLoad)) __obj.updateDynamic("reloadOnLoad")(reloadOnLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetOnLoad)) __obj.updateDynamic("resetOnLoad")(resetOnLoad.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FetchOptionsOverride[V]]
   }
 }

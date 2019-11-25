@@ -22,7 +22,7 @@ trait CacheStatisticsObject extends js.Object {
 object CacheStatisticsObject {
   @scala.inline
   def apply(errors: Double, generates: Double, gets: Double, hits: Double, sets: Double, stales: Double): CacheStatisticsObject = {
-    val __obj = js.Dynamic.literal(errors = errors, generates = generates, gets = gets, hits = hits, sets = sets, stales = stales)
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], generates = generates.asInstanceOf[js.Any], gets = gets.asInstanceOf[js.Any], hits = hits.asInstanceOf[js.Any], sets = sets.asInstanceOf[js.Any], stales = stales.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CacheStatisticsObject]
   }

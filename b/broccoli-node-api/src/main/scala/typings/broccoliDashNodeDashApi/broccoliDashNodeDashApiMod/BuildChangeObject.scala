@@ -11,7 +11,7 @@ trait BuildChangeObject extends js.Object {
 object BuildChangeObject {
   @scala.inline
   def apply(changedNodes: js.Array[Boolean]): BuildChangeObject = {
-    val __obj = js.Dynamic.literal(changedNodes = changedNodes)
+    val __obj = js.Dynamic.literal(changedNodes = changedNodes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BuildChangeObject]
   }

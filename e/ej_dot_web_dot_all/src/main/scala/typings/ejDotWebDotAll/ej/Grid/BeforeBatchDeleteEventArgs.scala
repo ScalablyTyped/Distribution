@@ -36,12 +36,12 @@ object BeforeBatchDeleteEventArgs {
     `type`: String = null
   ): BeforeBatchDeleteEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
-    if (row != null) __obj.updateDynamic("row")(row)
-    if (rowData != null) __obj.updateDynamic("rowData")(rowData)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    if (rowData != null) __obj.updateDynamic("rowData")(rowData.asInstanceOf[js.Any])
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforeBatchDeleteEventArgs]
   }
 }

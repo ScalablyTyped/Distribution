@@ -49,15 +49,15 @@ object ClassifyParams {
   ): ClassifyParams = {
     val __obj = js.Dynamic.literal()
     if (accept_language != null) __obj.updateDynamic("accept_language")(accept_language.asInstanceOf[js.Any])
-    if (classifier_ids != null) __obj.updateDynamic("classifier_ids")(classifier_ids)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (classifier_ids != null) __obj.updateDynamic("classifier_ids")(classifier_ids.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (images_file != null) __obj.updateDynamic("images_file")(images_file.asInstanceOf[js.Any])
-    if (images_file_content_type != null) __obj.updateDynamic("images_file_content_type")(images_file_content_type)
-    if (images_filename != null) __obj.updateDynamic("images_filename")(images_filename)
-    if (owners != null) __obj.updateDynamic("owners")(owners)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    if (images_file_content_type != null) __obj.updateDynamic("images_file_content_type")(images_file_content_type.asInstanceOf[js.Any])
+    if (images_filename != null) __obj.updateDynamic("images_filename")(images_filename.asInstanceOf[js.Any])
+    if (owners != null) __obj.updateDynamic("owners")(owners.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifyParams]
   }
 }

@@ -27,10 +27,10 @@ object DataSourceUpdatedEventUIParam {
   @scala.inline
   def apply(dataSource: js.Any = null, error: String = null, owner: js.Any = null, result: js.Any = null): DataSourceUpdatedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (result != null) __obj.updateDynamic("result")(result)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceUpdatedEventUIParam]
   }
 }

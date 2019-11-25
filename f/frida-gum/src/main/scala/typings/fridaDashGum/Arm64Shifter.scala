@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait Arm64Shifter extends js.Object
 
+object Arm64Shifter {
+  @scala.inline
+  def asr: typings.fridaDashGum.fridaDashGumStrings.asr = this.cast("asr")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def lsl: typings.fridaDashGum.fridaDashGumStrings.lsl = this.cast("lsl")
+  @scala.inline
+  def lsr: typings.fridaDashGum.fridaDashGumStrings.lsr = this.cast("lsr")
+  @scala.inline
+  def msl: typings.fridaDashGum.fridaDashGumStrings.msl = this.cast("msl")
+  @scala.inline
+  def ror: typings.fridaDashGum.fridaDashGumStrings.ror = this.cast("ror")
+}
+

@@ -46,23 +46,23 @@ object Task {
     topicName: String = null,
     workerId: String = null
   ): Task = {
-    val __obj = js.Dynamic.literal(variables = variables)
-    if (activityId != null) __obj.updateDynamic("activityId")(activityId)
-    if (activityInstanceId != null) __obj.updateDynamic("activityInstanceId")(activityInstanceId)
-    if (businessKey != null) __obj.updateDynamic("businessKey")(businessKey)
-    if (errorDetails != null) __obj.updateDynamic("errorDetails")(errorDetails)
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
-    if (executionId != null) __obj.updateDynamic("executionId")(executionId)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lockExpirationTime != null) __obj.updateDynamic("lockExpirationTime")(lockExpirationTime)
+    val __obj = js.Dynamic.literal(variables = variables.asInstanceOf[js.Any])
+    if (activityId != null) __obj.updateDynamic("activityId")(activityId.asInstanceOf[js.Any])
+    if (activityInstanceId != null) __obj.updateDynamic("activityInstanceId")(activityInstanceId.asInstanceOf[js.Any])
+    if (businessKey != null) __obj.updateDynamic("businessKey")(businessKey.asInstanceOf[js.Any])
+    if (errorDetails != null) __obj.updateDynamic("errorDetails")(errorDetails.asInstanceOf[js.Any])
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
+    if (executionId != null) __obj.updateDynamic("executionId")(executionId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lockExpirationTime != null) __obj.updateDynamic("lockExpirationTime")(lockExpirationTime.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (processDefinitionId != null) __obj.updateDynamic("processDefinitionId")(processDefinitionId)
-    if (processDefinitionKey != null) __obj.updateDynamic("processDefinitionKey")(processDefinitionKey)
-    if (processInstanceId != null) __obj.updateDynamic("processInstanceId")(processInstanceId)
+    if (processDefinitionId != null) __obj.updateDynamic("processDefinitionId")(processDefinitionId.asInstanceOf[js.Any])
+    if (processDefinitionKey != null) __obj.updateDynamic("processDefinitionKey")(processDefinitionKey.asInstanceOf[js.Any])
+    if (processInstanceId != null) __obj.updateDynamic("processInstanceId")(processInstanceId.asInstanceOf[js.Any])
     if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
-    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId)
-    if (topicName != null) __obj.updateDynamic("topicName")(topicName)
-    if (workerId != null) __obj.updateDynamic("workerId")(workerId)
+    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId.asInstanceOf[js.Any])
+    if (topicName != null) __obj.updateDynamic("topicName")(topicName.asInstanceOf[js.Any])
+    if (workerId != null) __obj.updateDynamic("workerId")(workerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Task]
   }
 }

@@ -17,9 +17,9 @@ object CreativeDealAssociation {
   @scala.inline
   def apply(accountId: String = null, creativeId: String = null, dealsId: String = null): CreativeDealAssociation = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
-    if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId)
-    if (dealsId != null) __obj.updateDynamic("dealsId")(dealsId)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId.asInstanceOf[js.Any])
+    if (dealsId != null) __obj.updateDynamic("dealsId")(dealsId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreativeDealAssociation]
   }
 }

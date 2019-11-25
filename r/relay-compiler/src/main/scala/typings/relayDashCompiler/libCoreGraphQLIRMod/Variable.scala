@@ -26,7 +26,7 @@ object Variable {
     metadata: Metadata = null,
     `type`: GraphQLInputType = null
   ): Variable = {
-    val __obj = js.Dynamic.literal(kind = kind, loc = loc, variableName = variableName)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], variableName = variableName.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Variable]

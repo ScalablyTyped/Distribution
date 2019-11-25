@@ -25,8 +25,8 @@ object Encoder {
     sliceMT: Boolean,
     `type`: String
   ): Encoder = {
-    val __obj = js.Dynamic.literal(description = description, directRendering = directRendering, drawHorizBand = drawHorizBand, experimental = experimental, frameMT = frameMT, sliceMT = sliceMT)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], directRendering = directRendering.asInstanceOf[js.Any], drawHorizBand = drawHorizBand.asInstanceOf[js.Any], experimental = experimental.asInstanceOf[js.Any], frameMT = frameMT.asInstanceOf[js.Any], sliceMT = sliceMT.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Encoder]
   }
 }

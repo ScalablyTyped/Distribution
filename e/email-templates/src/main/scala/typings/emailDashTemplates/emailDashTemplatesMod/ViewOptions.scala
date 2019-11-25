@@ -24,9 +24,9 @@ object ViewOptions {
   @scala.inline
   def apply(engineSource: js.Any = null, extension: String = null, map: js.Any = null): ViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (engineSource != null) __obj.updateDynamic("engineSource")(engineSource)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (map != null) __obj.updateDynamic("map")(map)
+    if (engineSource != null) __obj.updateDynamic("engineSource")(engineSource.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewOptions]
   }
 }

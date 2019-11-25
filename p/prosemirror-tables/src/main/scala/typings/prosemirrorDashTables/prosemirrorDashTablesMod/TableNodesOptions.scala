@@ -14,8 +14,8 @@ trait TableNodesOptions extends js.Object {
 object TableNodesOptions {
   @scala.inline
   def apply(cellAttributes: StringDictionary[CellAttributes], cellContent: String, tableGroup: String = null): TableNodesOptions = {
-    val __obj = js.Dynamic.literal(cellAttributes = cellAttributes, cellContent = cellContent)
-    if (tableGroup != null) __obj.updateDynamic("tableGroup")(tableGroup)
+    val __obj = js.Dynamic.literal(cellAttributes = cellAttributes.asInstanceOf[js.Any], cellContent = cellContent.asInstanceOf[js.Any])
+    if (tableGroup != null) __obj.updateDynamic("tableGroup")(tableGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableNodesOptions]
   }
 }

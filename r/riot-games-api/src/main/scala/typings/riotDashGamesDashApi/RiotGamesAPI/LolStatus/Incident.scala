@@ -14,7 +14,7 @@ trait Incident extends js.Object {
 object Incident {
   @scala.inline
   def apply(active: Boolean, created_at: String, id: Double, updates: js.Array[Message]): Incident = {
-    val __obj = js.Dynamic.literal(active = active, created_at = created_at, id = id, updates = updates)
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], updates = updates.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Incident]
   }

@@ -14,7 +14,7 @@ trait Hardfork extends js.Object {
 object Hardfork {
   @scala.inline
   def apply(consensus: String, finality: js.Any, name: String, block: Int | Double = null): Hardfork = {
-    val __obj = js.Dynamic.literal(consensus = consensus, finality = finality, name = name)
+    val __obj = js.Dynamic.literal(consensus = consensus.asInstanceOf[js.Any], finality = finality.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hardfork]
   }

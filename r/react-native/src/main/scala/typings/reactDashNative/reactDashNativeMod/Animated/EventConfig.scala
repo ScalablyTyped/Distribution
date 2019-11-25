@@ -18,7 +18,7 @@ object EventConfig {
   ): EventConfig[T] = {
     val __obj = js.Dynamic.literal()
     if (listener != null) __obj.updateDynamic("listener")(js.Any.fromFunction1(listener))
-    if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver)
+    if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventConfig[T]]
   }
 }

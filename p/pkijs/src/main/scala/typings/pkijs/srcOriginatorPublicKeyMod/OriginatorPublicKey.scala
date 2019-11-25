@@ -22,7 +22,7 @@ object OriginatorPublicKey {
     toJSON: () => js.Any,
     toSchema: () => js.Any
   ): OriginatorPublicKey = {
-    val __obj = js.Dynamic.literal(algorithm = algorithm, fromSchema = js.Any.fromFunction1(fromSchema), publicKey = publicKey, toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
+    val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], fromSchema = js.Any.fromFunction1(fromSchema), publicKey = publicKey.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
   
     __obj.asInstanceOf[OriginatorPublicKey]
   }

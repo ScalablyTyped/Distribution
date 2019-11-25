@@ -15,7 +15,7 @@ object AuthConfig {
   def apply(AuthenticatingComponent: ReactType[_] = null, wrapperDisplayName: String = null): AuthConfig = {
     val __obj = js.Dynamic.literal()
     if (AuthenticatingComponent != null) __obj.updateDynamic("AuthenticatingComponent")(AuthenticatingComponent.asInstanceOf[js.Any])
-    if (wrapperDisplayName != null) __obj.updateDynamic("wrapperDisplayName")(wrapperDisplayName)
+    if (wrapperDisplayName != null) __obj.updateDynamic("wrapperDisplayName")(wrapperDisplayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthConfig]
   }
 }

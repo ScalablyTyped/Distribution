@@ -1,11 +1,6 @@
 package typings.dojo.dojox.form
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
-import typings.dojo.Fn_NewValueOldValuePropertyFunction
-import typings.dojo.Fn_NewValueOldValuePropertyNumber
 import typings.dojo.dijit.form._FormValueWidget
 import typings.dojo.dojoStrings.constraints
 import typings.dojo.dojoStrings.delimiter
@@ -248,42 +243,184 @@ class ListInput () extends _FormValueWidget {
   @JSName("set")
   def set_value(property: value, value: String): Unit = js.native
   @JSName("watch")
-  def watch_constraints(property: constraints, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+  def watch_constraints(
+    property: constraints,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Object], 
+      /* newValue */ js.UndefOr[js.Object], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_delimiter(property: delimiter, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_delimiter(
+    property: delimiter,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_duration(property: duration, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_duration(
+    property: duration,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_easingIn(property: easingIn, callback: Fn_NewValueOldValuePropertyFunction): Anon_Unwatch = js.native
+  def watch_easingIn(
+    property: easingIn,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Function], 
+      /* newValue */ js.UndefOr[js.Function], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_easingOut(property: easingOut, callback: Fn_NewValueOldValuePropertyFunction): Anon_Unwatch = js.native
+  def watch_easingOut(
+    property: easingOut,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[js.Function], 
+      /* newValue */ js.UndefOr[js.Function], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_inputClass(property: inputClass, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_inputClass(
+    property: inputClass,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_inputHandler(property: inputHandler, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_inputHandler(
+    property: inputHandler,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_inputProperties(property: inputProperties, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_inputProperties(
+    property: inputProperties,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_maxItems(property: maxItems, callback: Fn_NewValueOldValuePropertyNumber): Anon_Unwatch = js.native
+  def watch_maxItems(
+    property: maxItems,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Double], 
+      /* newValue */ js.UndefOr[Double], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_readOnlyInput(property: readOnlyInput, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_readOnlyInput(
+    property: readOnlyInput,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_readOnlyItem(property: readOnlyItem, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_readOnlyItem(
+    property: readOnlyItem,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_regExp(property: regExp, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_regExp(
+    property: regExp,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[String], 
+      /* newValue */ js.UndefOr[String], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_showCloseButtonWhenInvalid(property: showCloseButtonWhenInvalid, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_showCloseButtonWhenInvalid(
+    property: showCloseButtonWhenInvalid,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_showCloseButtonWhenValid(property: showCloseButtonWhenValid, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_showCloseButtonWhenValid(
+    property: showCloseButtonWhenValid,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_submitOnlyValidValue(property: submitOnlyValidValue, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_submitOnlyValidValue(
+    property: submitOnlyValidValue,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_useAnim(property: useAnim, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_useAnim(
+    property: useAnim,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_useArrowForEdit(property: useArrowForEdit, callback: Fn_NewValue): Anon_Unwatch = js.native
+  def watch_useArrowForEdit(
+    property: useArrowForEdit,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
   @JSName("watch")
-  def watch_useOnBlur(property: useOnBlur, callback: Fn_NewValue): Anon_Unwatch = js.native
-  @JSName("watch")
-  def watch_value(property: value, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+  def watch_useOnBlur(
+    property: useOnBlur,
+    callback: js.Function3[
+      /* property */ js.UndefOr[String], 
+      /* oldValue */ js.UndefOr[Boolean], 
+      /* newValue */ js.UndefOr[Boolean], 
+      Unit
+    ]
+  ): Anon_Unwatch = js.native
 }
 

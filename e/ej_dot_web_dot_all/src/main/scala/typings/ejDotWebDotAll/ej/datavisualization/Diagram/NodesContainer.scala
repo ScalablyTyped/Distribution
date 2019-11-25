@@ -19,7 +19,7 @@ object NodesContainer {
   @scala.inline
   def apply(orientation: String = null, `type`: ContainerType | String = null): NodesContainer = {
     val __obj = js.Dynamic.literal()
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesContainer]
   }

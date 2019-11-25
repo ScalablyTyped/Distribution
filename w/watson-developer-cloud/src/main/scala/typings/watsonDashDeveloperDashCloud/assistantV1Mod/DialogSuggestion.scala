@@ -19,9 +19,9 @@ trait DialogSuggestion extends js.Object {
 object DialogSuggestion {
   @scala.inline
   def apply(label: String, value: DialogSuggestionValue, dialog_node: String = null, output: js.Object = null): DialogSuggestion = {
-    val __obj = js.Dynamic.literal(label = label, value = value)
-    if (dialog_node != null) __obj.updateDynamic("dialog_node")(dialog_node)
-    if (output != null) __obj.updateDynamic("output")(output)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (dialog_node != null) __obj.updateDynamic("dialog_node")(dialog_node.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogSuggestion]
   }
 }

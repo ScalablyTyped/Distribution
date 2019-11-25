@@ -28,14 +28,14 @@ object BasicOptions {
     noRevoke: js.UndefOr[Boolean] = js.undefined
   ): BasicOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(contain)) __obj.updateDynamic("contain")(contain)
-    if (!js.isUndefined(cover)) __obj.updateDynamic("cover")(cover)
-    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin)
+    if (!js.isUndefined(contain)) __obj.updateDynamic("contain")(contain.asInstanceOf[js.Any])
+    if (!js.isUndefined(cover)) __obj.updateDynamic("cover")(cover.asInstanceOf[js.Any])
+    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(noRevoke)) __obj.updateDynamic("noRevoke")(noRevoke)
+    if (!js.isUndefined(noRevoke)) __obj.updateDynamic("noRevoke")(noRevoke.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasicOptions]
   }
 }

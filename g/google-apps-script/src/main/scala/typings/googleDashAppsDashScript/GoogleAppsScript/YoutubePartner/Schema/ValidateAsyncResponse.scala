@@ -14,9 +14,9 @@ object ValidateAsyncResponse {
   @scala.inline
   def apply(kind: String = null, status: String = null, validationId: String = null): ValidateAsyncResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (validationId != null) __obj.updateDynamic("validationId")(validationId)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (validationId != null) __obj.updateDynamic("validationId")(validationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidateAsyncResponse]
   }
 }

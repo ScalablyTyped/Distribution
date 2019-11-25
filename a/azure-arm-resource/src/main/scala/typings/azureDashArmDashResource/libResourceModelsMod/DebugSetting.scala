@@ -20,7 +20,7 @@ object DebugSetting {
   @scala.inline
   def apply(detailLevel: String = null): DebugSetting = {
     val __obj = js.Dynamic.literal()
-    if (detailLevel != null) __obj.updateDynamic("detailLevel")(detailLevel)
+    if (detailLevel != null) __obj.updateDynamic("detailLevel")(detailLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugSetting]
   }
 }

@@ -83,7 +83,9 @@ object gapiDotCalendarStrings {
   sealed trait eventResponse extends NotificationType
   
   @js.native
-  sealed trait freeBusyReader extends AccessRoleWithoutNone
+  sealed trait freeBusyReader
+    extends AccessRole
+       with AccessRoleWithoutNone
   
   @js.native
   sealed trait group extends ScopeType
@@ -107,7 +109,9 @@ object gapiDotCalendarStrings {
   sealed trait orderBy extends SyncToken
   
   @js.native
-  sealed trait owner extends AccessRoleWithoutNone
+  sealed trait owner
+    extends AccessRole
+       with AccessRoleWithoutNone
   
   @js.native
   sealed trait popup extends ReminderMethod
@@ -125,7 +129,9 @@ object gapiDotCalendarStrings {
   sealed trait q extends SyncToken
   
   @js.native
-  sealed trait reader extends AccessRoleWithoutNone
+  sealed trait reader
+    extends AccessRole
+       with AccessRoleWithoutNone
   
   @js.native
   sealed trait sharedExtendedProperty extends SyncToken
@@ -160,7 +166,9 @@ object gapiDotCalendarStrings {
   sealed trait user extends ScopeType
   
   @js.native
-  sealed trait writer extends AccessRoleWithoutNone
+  sealed trait writer
+    extends AccessRole
+       with AccessRoleWithoutNone
   
   @scala.inline
   def accepted: accepted = "accepted".asInstanceOf[accepted]

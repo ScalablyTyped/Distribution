@@ -15,8 +15,8 @@ trait NormalizationLiteral extends NormalizationArgument {
 object NormalizationLiteral {
   @scala.inline
   def apply(kind: String, name: String, value: js.Any, `type`: String = null): NormalizationLiteral = {
-    val __obj = js.Dynamic.literal(kind = kind, name = name, value = value)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationLiteral]
   }
 }

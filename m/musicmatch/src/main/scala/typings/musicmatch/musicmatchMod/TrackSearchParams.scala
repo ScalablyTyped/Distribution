@@ -36,16 +36,16 @@ object TrackSearchParams {
     val __obj = js.Dynamic.literal()
     if (f_artist_id != null) __obj.updateDynamic("f_artist_id")(f_artist_id.asInstanceOf[js.Any])
     if (f_artist_mbid != null) __obj.updateDynamic("f_artist_mbid")(f_artist_mbid.asInstanceOf[js.Any])
-    if (f_has_lyrics != null) __obj.updateDynamic("f_has_lyrics")(f_has_lyrics)
-    if (f_lyrics_language != null) __obj.updateDynamic("f_lyrics_language")(f_lyrics_language)
+    if (f_has_lyrics != null) __obj.updateDynamic("f_has_lyrics")(f_has_lyrics.asInstanceOf[js.Any])
+    if (f_lyrics_language != null) __obj.updateDynamic("f_lyrics_language")(f_lyrics_language.asInstanceOf[js.Any])
     if (f_music_genre_id != null) __obj.updateDynamic("f_music_genre_id")(f_music_genre_id.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (page_size != null) __obj.updateDynamic("page_size")(page_size.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q)
-    if (q_lyrics != null) __obj.updateDynamic("q_lyrics")(q_lyrics)
+    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
+    if (q_lyrics != null) __obj.updateDynamic("q_lyrics")(q_lyrics.asInstanceOf[js.Any])
     if (quorum_factor != null) __obj.updateDynamic("quorum_factor")(quorum_factor.asInstanceOf[js.Any])
-    if (s_artist_rating != null) __obj.updateDynamic("s_artist_rating")(s_artist_rating)
-    if (s_track_rating != null) __obj.updateDynamic("s_track_rating")(s_track_rating)
+    if (s_artist_rating != null) __obj.updateDynamic("s_artist_rating")(s_artist_rating.asInstanceOf[js.Any])
+    if (s_track_rating != null) __obj.updateDynamic("s_track_rating")(s_track_rating.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackSearchParams]
   }
 }

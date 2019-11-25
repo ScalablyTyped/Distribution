@@ -29,7 +29,7 @@ object MaskProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (!js.isUndefined(wash)) __obj.updateDynamic("wash")(wash)
+    if (!js.isUndefined(wash)) __obj.updateDynamic("wash")(wash.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaskProps]
   }

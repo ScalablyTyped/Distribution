@@ -13,7 +13,7 @@ trait ChecksGetSuiteResponseRepositoryPermissions extends js.Object {
 object ChecksGetSuiteResponseRepositoryPermissions {
   @scala.inline
   def apply(admin: Boolean, pull: Boolean, push: Boolean): ChecksGetSuiteResponseRepositoryPermissions = {
-    val __obj = js.Dynamic.literal(admin = admin, pull = pull, push = push)
+    val __obj = js.Dynamic.literal(admin = admin.asInstanceOf[js.Any], pull = pull.asInstanceOf[js.Any], push = push.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChecksGetSuiteResponseRepositoryPermissions]
   }

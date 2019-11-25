@@ -30,9 +30,9 @@ trait ReactGitHubButtonProps extends js.Object {
 object ReactGitHubButtonProps {
   @scala.inline
   def apply(namespace: String, repo: String, `type`: stargazers | watchers | forks, size: large = null): ReactGitHubButtonProps = {
-    val __obj = js.Dynamic.literal(namespace = namespace, repo = repo)
+    val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactGitHubButtonProps]
   }
 }

@@ -25,12 +25,12 @@ object PartialClassNameMapSpeedDialIconClassKey {
     root: String = null
   ): PartialClassNameMapSpeedDialIconClassKey = {
     val __obj = js.Dynamic.literal()
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (iconOpen != null) __obj.updateDynamic("iconOpen")(iconOpen)
-    if (iconWithOpenIconOpen != null) __obj.updateDynamic("iconWithOpenIconOpen")(iconWithOpenIconOpen)
-    if (openIcon != null) __obj.updateDynamic("openIcon")(openIcon)
-    if (openIconOpen != null) __obj.updateDynamic("openIconOpen")(openIconOpen)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (iconOpen != null) __obj.updateDynamic("iconOpen")(iconOpen.asInstanceOf[js.Any])
+    if (iconWithOpenIconOpen != null) __obj.updateDynamic("iconWithOpenIconOpen")(iconWithOpenIconOpen.asInstanceOf[js.Any])
+    if (openIcon != null) __obj.updateDynamic("openIcon")(openIcon.asInstanceOf[js.Any])
+    if (openIconOpen != null) __obj.updateDynamic("openIconOpen")(openIconOpen.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapSpeedDialIconClassKey]
   }
 }

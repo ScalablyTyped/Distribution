@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DensityTransform extends Transforms {
+trait DensityTransform extends _Transforms {
   var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   var distribution: js.UndefOr[Distribution | SignalRef] = js.undefined
   var extent: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.undefined
@@ -31,7 +31,7 @@ object DensityTransform {
     steps: Double | SignalRef = null
   ): DensityTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (distribution != null) __obj.updateDynamic("distribution")(distribution.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])

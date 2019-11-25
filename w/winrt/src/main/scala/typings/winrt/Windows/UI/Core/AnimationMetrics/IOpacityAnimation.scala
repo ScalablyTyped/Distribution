@@ -21,8 +21,8 @@ object IOpacityAnimation {
     initialOpacity: Double,
     `type`: PropertyAnimationType
   ): IOpacityAnimation = {
-    val __obj = js.Dynamic.literal(control1 = control1, control2 = control2, delay = delay, duration = duration, finalOpacity = finalOpacity, initialOpacity = initialOpacity)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(control1 = control1.asInstanceOf[js.Any], control2 = control2.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], finalOpacity = finalOpacity.asInstanceOf[js.Any], initialOpacity = initialOpacity.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOpacityAnimation]
   }
 }

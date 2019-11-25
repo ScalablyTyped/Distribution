@@ -19,8 +19,8 @@ object JSONSchemaArrayType {
     id: String = null
   ): JSONSchemaArrayType = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
-    if (id != null) __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONSchemaArrayType]
   }
 }

@@ -25,7 +25,7 @@ object Io {
     wchar: String,
     write_bytes: String
   ): Io = {
-    val __obj = js.Dynamic.literal(cancelled_write_bytes = cancelled_write_bytes, rchar = rchar, read_bytes = read_bytes, syscr = syscr, syscw = syscw, wchar = wchar, write_bytes = write_bytes)
+    val __obj = js.Dynamic.literal(cancelled_write_bytes = cancelled_write_bytes.asInstanceOf[js.Any], rchar = rchar.asInstanceOf[js.Any], read_bytes = read_bytes.asInstanceOf[js.Any], syscr = syscr.asInstanceOf[js.Any], syscw = syscw.asInstanceOf[js.Any], wchar = wchar.asInstanceOf[js.Any], write_bytes = write_bytes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Io]
   }

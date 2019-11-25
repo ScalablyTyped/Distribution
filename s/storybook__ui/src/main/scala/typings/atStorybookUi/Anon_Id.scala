@@ -14,7 +14,7 @@ trait Anon_Id extends js.Object {
 object Anon_Id {
   @scala.inline
   def apply(id: String, onClick: /* repeated */ js.Any => Unit, title: String): Anon_Id = {
-    val __obj = js.Dynamic.literal(id = id, onClick = js.Any.fromFunction1(onClick), title = title)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Id]
   }

@@ -18,7 +18,7 @@ object RTCPeerConnectionConfiguration {
     iceServers: js.Array[ConfigurationParamWithUrl | ConfigurationParamWithUrls],
     iceTransportPolicy: all | public | relay = null
   ): RTCPeerConnectionConfiguration = {
-    val __obj = js.Dynamic.literal(iceServers = iceServers)
+    val __obj = js.Dynamic.literal(iceServers = iceServers.asInstanceOf[js.Any])
     if (iceTransportPolicy != null) __obj.updateDynamic("iceTransportPolicy")(iceTransportPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCPeerConnectionConfiguration]
   }

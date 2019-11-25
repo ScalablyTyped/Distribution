@@ -34,9 +34,9 @@ object ApnsConfig {
     payload: ApnsPayload = null
   ): ApnsConfig = {
     val __obj = js.Dynamic.literal()
-    if (fcmOptions != null) __obj.updateDynamic("fcmOptions")(fcmOptions)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (payload != null) __obj.updateDynamic("payload")(payload)
+    if (fcmOptions != null) __obj.updateDynamic("fcmOptions")(fcmOptions.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApnsConfig]
   }
 }

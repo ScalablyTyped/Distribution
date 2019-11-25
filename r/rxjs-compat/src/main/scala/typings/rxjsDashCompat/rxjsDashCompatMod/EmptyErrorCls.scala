@@ -1,13 +1,13 @@
 package typings.rxjsDashCompat.rxjsDashCompatMod
 
-import typings.rxjs.internalUtilEmptyErrorMod.EmptyError
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("rxjs-compat", "EmptyError")
 @js.native
-class EmptyErrorCls () extends EmptyError {
+class EmptyErrorCls () extends Error {
   /* CompleteClass */
   override var message: String = js.native
   /* CompleteClass */

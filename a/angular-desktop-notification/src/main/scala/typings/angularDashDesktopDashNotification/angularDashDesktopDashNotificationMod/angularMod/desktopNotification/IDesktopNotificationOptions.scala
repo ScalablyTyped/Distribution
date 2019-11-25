@@ -19,9 +19,9 @@ object IDesktopNotificationOptions {
     showOnPageHidden: js.UndefOr[Boolean] = js.undefined
   ): IDesktopNotificationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose)
+    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOnPageHidden)) __obj.updateDynamic("showOnPageHidden")(showOnPageHidden)
+    if (!js.isUndefined(showOnPageHidden)) __obj.updateDynamic("showOnPageHidden")(showOnPageHidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDesktopNotificationOptions]
   }
 }

@@ -27,13 +27,13 @@ object DialogflowV1WebhookResponse {
     speech: String = null
   ): DialogflowV1WebhookResponse = {
     val __obj = js.Dynamic.literal()
-    if (contextOut != null) __obj.updateDynamic("contextOut")(contextOut)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (displayText != null) __obj.updateDynamic("displayText")(displayText)
-    if (followupEvent != null) __obj.updateDynamic("followupEvent")(followupEvent)
-    if (messages != null) __obj.updateDynamic("messages")(messages)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (speech != null) __obj.updateDynamic("speech")(speech)
+    if (contextOut != null) __obj.updateDynamic("contextOut")(contextOut.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (displayText != null) __obj.updateDynamic("displayText")(displayText.asInstanceOf[js.Any])
+    if (followupEvent != null) __obj.updateDynamic("followupEvent")(followupEvent.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (speech != null) __obj.updateDynamic("speech")(speech.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogflowV1WebhookResponse]
   }
 }

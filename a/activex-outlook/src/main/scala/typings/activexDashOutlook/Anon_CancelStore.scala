@@ -13,7 +13,7 @@ trait Anon_CancelStore extends js.Object {
 object Anon_CancelStore {
   @scala.inline
   def apply(Cancel: Boolean, Store: Store): Anon_CancelStore = {
-    val __obj = js.Dynamic.literal(Cancel = Cancel, Store = Store)
+    val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Store = Store.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CancelStore]
   }

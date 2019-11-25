@@ -17,7 +17,7 @@ object _UnmarshalledOutputLocation {
   @scala.inline
   def apply(S3: _UnmarshalledS3Location = null): _UnmarshalledOutputLocation = {
     val __obj = js.Dynamic.literal()
-    if (S3 != null) __obj.updateDynamic("S3")(S3)
+    if (S3 != null) __obj.updateDynamic("S3")(S3.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledOutputLocation]
   }
 }

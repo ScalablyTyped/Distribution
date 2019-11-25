@@ -52,10 +52,10 @@ object DateFormatterOptions {
     val __obj = js.Dynamic.literal()
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (datetime != null) __obj.updateDynamic("datetime")(datetime.asInstanceOf[js.Any])
-    if (raw != null) __obj.updateDynamic("raw")(raw)
-    if (skeleton != null) __obj.updateDynamic("skeleton")(skeleton)
+    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (skeleton != null) __obj.updateDynamic("skeleton")(skeleton.asInstanceOf[js.Any])
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateFormatterOptions]
   }
 }

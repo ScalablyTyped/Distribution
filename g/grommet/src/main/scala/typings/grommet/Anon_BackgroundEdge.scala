@@ -13,8 +13,8 @@ object Anon_BackgroundEdge {
   @scala.inline
   def apply(background: Anon_Invert = null, edge: Anon_Type = null): Anon_BackgroundEdge = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background)
-    if (edge != null) __obj.updateDynamic("edge")(edge)
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (edge != null) __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackgroundEdge]
   }
 }

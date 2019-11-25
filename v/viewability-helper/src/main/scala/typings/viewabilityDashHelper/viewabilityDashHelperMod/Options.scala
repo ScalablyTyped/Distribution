@@ -24,12 +24,12 @@ object Options {
     unobserve: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (callbackParams != null) __obj.updateDynamic("callbackParams")(callbackParams)
+    if (callbackParams != null) __obj.updateDynamic("callbackParams")(callbackParams.asInstanceOf[js.Any])
     if (intersectionPercentage != null) __obj.updateDynamic("intersectionPercentage")(intersectionPercentage.asInstanceOf[js.Any])
-    if (rootMargin != null) __obj.updateDynamic("rootMargin")(rootMargin)
+    if (rootMargin != null) __obj.updateDynamic("rootMargin")(rootMargin.asInstanceOf[js.Any])
     if (scrollDimmer != null) __obj.updateDynamic("scrollDimmer")(scrollDimmer.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold)
-    if (!js.isUndefined(unobserve)) __obj.updateDynamic("unobserve")(unobserve)
+    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(unobserve)) __obj.updateDynamic("unobserve")(unobserve.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

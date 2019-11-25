@@ -11,7 +11,7 @@ trait Anon_FileID extends js.Object {
 object Anon_FileID {
   @scala.inline
   def apply(fileID: String): Anon_FileID = {
-    val __obj = js.Dynamic.literal(fileID = fileID)
+    val __obj = js.Dynamic.literal(fileID = fileID.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FileID]
   }

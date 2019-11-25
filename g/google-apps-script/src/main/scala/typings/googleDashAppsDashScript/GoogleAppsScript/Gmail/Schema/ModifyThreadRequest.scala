@@ -13,8 +13,8 @@ object ModifyThreadRequest {
   @scala.inline
   def apply(addLabelIds: js.Array[String] = null, removeLabelIds: js.Array[String] = null): ModifyThreadRequest = {
     val __obj = js.Dynamic.literal()
-    if (addLabelIds != null) __obj.updateDynamic("addLabelIds")(addLabelIds)
-    if (removeLabelIds != null) __obj.updateDynamic("removeLabelIds")(removeLabelIds)
+    if (addLabelIds != null) __obj.updateDynamic("addLabelIds")(addLabelIds.asInstanceOf[js.Any])
+    if (removeLabelIds != null) __obj.updateDynamic("removeLabelIds")(removeLabelIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyThreadRequest]
   }
 }

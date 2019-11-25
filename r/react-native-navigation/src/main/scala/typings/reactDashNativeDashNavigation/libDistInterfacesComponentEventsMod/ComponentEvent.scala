@@ -11,7 +11,7 @@ trait ComponentEvent extends js.Object {
 object ComponentEvent {
   @scala.inline
   def apply(componentId: String): ComponentEvent = {
-    val __obj = js.Dynamic.literal(componentId = componentId)
+    val __obj = js.Dynamic.literal(componentId = componentId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ComponentEvent]
   }

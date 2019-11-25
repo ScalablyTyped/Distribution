@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait HttpMethod extends js.Object
 
+object HttpMethod {
+  @scala.inline
+  def GET: typings.tabulatorDashTables.tabulatorDashTablesStrings.GET = this.cast("GET")
+  @scala.inline
+  def POST: typings.tabulatorDashTables.tabulatorDashTablesStrings.POST = this.cast("POST")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

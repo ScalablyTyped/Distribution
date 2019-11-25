@@ -13,8 +13,8 @@ object Directory {
   @scala.inline
   def apply(deletedItems: js.Array[DirectoryObject] = null, id: String = null): Directory = {
     val __obj = js.Dynamic.literal()
-    if (deletedItems != null) __obj.updateDynamic("deletedItems")(deletedItems)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (deletedItems != null) __obj.updateDynamic("deletedItems")(deletedItems.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Directory]
   }
 }

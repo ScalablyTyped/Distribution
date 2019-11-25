@@ -20,7 +20,7 @@ trait BuildOption extends js.Object {
 object BuildOption {
   @scala.inline
   def apply(definition: BuildOptionDefinitionReference, enabled: Boolean, inputs: StringDictionary[String]): BuildOption = {
-    val __obj = js.Dynamic.literal(definition = definition, enabled = enabled, inputs = inputs)
+    val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BuildOption]
   }

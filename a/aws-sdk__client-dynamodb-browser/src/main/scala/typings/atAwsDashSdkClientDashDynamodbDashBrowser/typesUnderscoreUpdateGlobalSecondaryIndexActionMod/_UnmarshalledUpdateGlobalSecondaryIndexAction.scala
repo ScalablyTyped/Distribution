@@ -16,7 +16,7 @@ trait _UnmarshalledUpdateGlobalSecondaryIndexAction extends _UpdateGlobalSeconda
 object _UnmarshalledUpdateGlobalSecondaryIndexAction {
   @scala.inline
   def apply(IndexName: String, ProvisionedThroughput: _UnmarshalledProvisionedThroughput): _UnmarshalledUpdateGlobalSecondaryIndexAction = {
-    val __obj = js.Dynamic.literal(IndexName = IndexName, ProvisionedThroughput = ProvisionedThroughput)
+    val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any], ProvisionedThroughput = ProvisionedThroughput.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_UnmarshalledUpdateGlobalSecondaryIndexAction]
   }

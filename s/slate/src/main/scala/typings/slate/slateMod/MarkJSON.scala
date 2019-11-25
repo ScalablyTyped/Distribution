@@ -16,9 +16,9 @@ object MarkJSON {
   @scala.inline
   def apply(`type`: String, data: StringDictionary[js.Any] = null, `object`: mark = null): MarkJSON = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkJSON]
   }
 }

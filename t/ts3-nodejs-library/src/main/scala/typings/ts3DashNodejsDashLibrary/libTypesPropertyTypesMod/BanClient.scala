@@ -17,8 +17,8 @@ trait BanClient extends js.Object {
 object BanClient {
   @scala.inline
   def apply(banreason: String, clid: Double, mytsid: String = null, time: Int | Double = null): BanClient = {
-    val __obj = js.Dynamic.literal(banreason = banreason, clid = clid)
-    if (mytsid != null) __obj.updateDynamic("mytsid")(mytsid)
+    val __obj = js.Dynamic.literal(banreason = banreason.asInstanceOf[js.Any], clid = clid.asInstanceOf[js.Any])
+    if (mytsid != null) __obj.updateDynamic("mytsid")(mytsid.asInstanceOf[js.Any])
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[BanClient]
   }

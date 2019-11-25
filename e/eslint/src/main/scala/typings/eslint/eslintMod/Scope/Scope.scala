@@ -46,9 +46,9 @@ object Scope {
     variables: js.Array[Variable],
     upper: typings.eslint.eslintMod.Scope.Scope = null
   ): Scope = {
-    val __obj = js.Dynamic.literal(block = block, childScopes = childScopes, functionExpressionScope = functionExpressionScope, isStrict = isStrict, references = references, set = set, through = through, variableScope = variableScope, variables = variables)
+    val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], childScopes = childScopes.asInstanceOf[js.Any], functionExpressionScope = functionExpressionScope.asInstanceOf[js.Any], isStrict = isStrict.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any], through = through.asInstanceOf[js.Any], variableScope = variableScope.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (upper != null) __obj.updateDynamic("upper")(upper)
+    if (upper != null) __obj.updateDynamic("upper")(upper.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scope]
   }
 }

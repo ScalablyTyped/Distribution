@@ -18,9 +18,9 @@ object Anon_Private {
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   ): Anon_Private = {
     val __obj = js.Dynamic.literal()
-    if (`private` != null) __obj.updateDynamic("private")(`private`)
-    if (public != null) __obj.updateDynamic("public")(public)
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
+    if (`private` != null) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
+    if (public != null) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Private]
   }
 }

@@ -14,7 +14,7 @@ trait ConvertedFile extends js.Object {
 object ConvertedFile {
   @scala.inline
   def apply(index: Double, name: String, page: Double, path: String): ConvertedFile = {
-    val __obj = js.Dynamic.literal(index = index, name = name, page = page, path = path)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConvertedFile]
   }

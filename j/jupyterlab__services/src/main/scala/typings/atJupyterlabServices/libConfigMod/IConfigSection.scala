@@ -32,7 +32,7 @@ object IConfigSection {
     serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any,
     update: JSONObject => js.Promise[JSONObject]
   ): IConfigSection = {
-    val __obj = js.Dynamic.literal(data = data, serverSettings = serverSettings, update = js.Any.fromFunction1(update))
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], serverSettings = serverSettings.asInstanceOf[js.Any], update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[IConfigSection]
   }

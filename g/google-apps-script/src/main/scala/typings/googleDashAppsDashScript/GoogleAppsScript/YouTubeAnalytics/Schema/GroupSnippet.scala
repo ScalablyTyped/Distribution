@@ -13,8 +13,8 @@ object GroupSnippet {
   @scala.inline
   def apply(publishedAt: String = null, title: String = null): GroupSnippet = {
     val __obj = js.Dynamic.literal()
-    if (publishedAt != null) __obj.updateDynamic("publishedAt")(publishedAt)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (publishedAt != null) __obj.updateDynamic("publishedAt")(publishedAt.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupSnippet]
   }
 }

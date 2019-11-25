@@ -20,10 +20,10 @@ object PromotedItemId {
     websiteUrl: String = null
   ): PromotedItemId = {
     val __obj = js.Dynamic.literal()
-    if (recentlyUploadedBy != null) __obj.updateDynamic("recentlyUploadedBy")(recentlyUploadedBy)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (videoId != null) __obj.updateDynamic("videoId")(videoId)
-    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl)
+    if (recentlyUploadedBy != null) __obj.updateDynamic("recentlyUploadedBy")(recentlyUploadedBy.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])
+    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromotedItemId]
   }
 }

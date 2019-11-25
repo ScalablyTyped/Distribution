@@ -44,9 +44,9 @@ object GoogleActionsOrdersV3PhoneNumber {
     preferredDomesticCarrierCode: String = null
   ): GoogleActionsOrdersV3PhoneNumber = {
     val __obj = js.Dynamic.literal()
-    if (e164PhoneNumber != null) __obj.updateDynamic("e164PhoneNumber")(e164PhoneNumber)
-    if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (preferredDomesticCarrierCode != null) __obj.updateDynamic("preferredDomesticCarrierCode")(preferredDomesticCarrierCode)
+    if (e164PhoneNumber != null) __obj.updateDynamic("e164PhoneNumber")(e164PhoneNumber.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (preferredDomesticCarrierCode != null) __obj.updateDynamic("preferredDomesticCarrierCode")(preferredDomesticCarrierCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3PhoneNumber]
   }
 }

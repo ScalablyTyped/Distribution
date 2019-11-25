@@ -23,9 +23,9 @@ object EditRangePasswordNeededEventUIParam {
   @scala.inline
   def apply(owner: js.Any = null, ranges: js.Array[_] = null, unprotect: js.Any = null): EditRangePasswordNeededEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (ranges != null) __obj.updateDynamic("ranges")(ranges)
-    if (unprotect != null) __obj.updateDynamic("unprotect")(unprotect)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
+    if (unprotect != null) __obj.updateDynamic("unprotect")(unprotect.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditRangePasswordNeededEventUIParam]
   }
 }

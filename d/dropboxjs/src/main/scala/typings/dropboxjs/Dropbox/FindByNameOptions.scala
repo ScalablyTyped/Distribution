@@ -20,10 +20,10 @@ object FindByNameOptions {
     removed: js.UndefOr[Boolean] = js.undefined
   ): FindByNameOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
-    if (!js.isUndefined(httpCache)) __obj.updateDynamic("httpCache")(httpCache)
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpCache)) __obj.updateDynamic("httpCache")(httpCache.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(removed)) __obj.updateDynamic("removed")(removed)
+    if (!js.isUndefined(removed)) __obj.updateDynamic("removed")(removed.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindByNameOptions]
   }
 }

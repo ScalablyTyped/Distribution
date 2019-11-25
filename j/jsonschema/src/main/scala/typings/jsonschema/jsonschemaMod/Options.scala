@@ -24,12 +24,12 @@ object Options {
     throwError: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUnknownAttributes)) __obj.updateDynamic("allowUnknownAttributes")(allowUnknownAttributes)
-    if (base != null) __obj.updateDynamic("base")(base)
-    if (propertyName != null) __obj.updateDynamic("propertyName")(propertyName)
+    if (!js.isUndefined(allowUnknownAttributes)) __obj.updateDynamic("allowUnknownAttributes")(allowUnknownAttributes.asInstanceOf[js.Any])
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (propertyName != null) __obj.updateDynamic("propertyName")(propertyName.asInstanceOf[js.Any])
     if (rewrite != null) __obj.updateDynamic("rewrite")(js.Any.fromFunction4(rewrite))
-    if (skipAttributes != null) __obj.updateDynamic("skipAttributes")(skipAttributes)
-    if (!js.isUndefined(throwError)) __obj.updateDynamic("throwError")(throwError)
+    if (skipAttributes != null) __obj.updateDynamic("skipAttributes")(skipAttributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(throwError)) __obj.updateDynamic("throwError")(throwError.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

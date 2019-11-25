@@ -13,8 +13,8 @@ trait Anon_Suggestion extends js.Object {
 object Anon_Suggestion {
   @scala.inline
   def apply(suggestion: js.Any, target: HTMLElement = null): Anon_Suggestion = {
-    val __obj = js.Dynamic.literal(suggestion = suggestion)
-    if (target != null) __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(suggestion = suggestion.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Suggestion]
   }
 }

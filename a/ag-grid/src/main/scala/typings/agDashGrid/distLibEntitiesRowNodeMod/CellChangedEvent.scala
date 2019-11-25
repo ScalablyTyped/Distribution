@@ -13,8 +13,8 @@ trait CellChangedEvent extends RowNodeEvent {
 object CellChangedEvent {
   @scala.inline
   def apply(column: Column, newValue: js.Any, node: RowNode, `type`: String): CellChangedEvent = {
-    val __obj = js.Dynamic.literal(column = column, newValue = newValue, node = node)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellChangedEvent]
   }
 }

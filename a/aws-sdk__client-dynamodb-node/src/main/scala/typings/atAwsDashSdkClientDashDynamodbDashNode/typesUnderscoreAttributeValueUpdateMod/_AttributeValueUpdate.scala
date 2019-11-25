@@ -24,7 +24,7 @@ object _AttributeValueUpdate {
   def apply(Action: ADD | PUT | DELETE | String = null, Value: _AttributeValue = null): _AttributeValueUpdate = {
     val __obj = js.Dynamic.literal()
     if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
-    if (Value != null) __obj.updateDynamic("Value")(Value)
+    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[_AttributeValueUpdate]
   }
 }

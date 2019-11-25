@@ -14,7 +14,7 @@ trait Anon_ColorFontSizeFontWeight extends js.Object {
 object Anon_ColorFontSizeFontWeight {
   @scala.inline
   def apply(color: String, fontSize: Double, fontWeight: String, lineHeight: Double): Anon_ColorFontSizeFontWeight = {
-    val __obj = js.Dynamic.literal(color = color, fontSize = fontSize, fontWeight = fontWeight, lineHeight = lineHeight)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ColorFontSizeFontWeight]
   }

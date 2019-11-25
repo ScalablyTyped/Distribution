@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait BodyType extends js.Object
 
+object BodyType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def html: typings.microsoftDashGraph.microsoftDashGraphStrings.html = this.cast("html")
+  @scala.inline
+  def text: typings.microsoftDashGraph.microsoftDashGraphStrings.text = this.cast("text")
+}
+

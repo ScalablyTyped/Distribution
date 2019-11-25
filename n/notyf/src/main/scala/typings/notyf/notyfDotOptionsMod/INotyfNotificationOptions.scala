@@ -26,8 +26,8 @@ object INotyfNotificationOptions {
     ripple: Boolean,
     `type`: String
   ): INotyfNotificationOptions = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, className = className, duration = duration, icon = icon.asInstanceOf[js.Any], message = message, ripple = ripple)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], ripple = ripple.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[INotyfNotificationOptions]
   }
 }

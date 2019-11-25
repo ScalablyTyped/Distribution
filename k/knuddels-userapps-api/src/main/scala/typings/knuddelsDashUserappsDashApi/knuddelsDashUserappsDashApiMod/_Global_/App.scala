@@ -179,7 +179,7 @@ object App {
     onUserLeft: /* user */ User => Unit = null
   ): App = {
     val __obj = js.Dynamic.literal()
-    if (chatCommands != null) __obj.updateDynamic("chatCommands")(chatCommands)
+    if (chatCommands != null) __obj.updateDynamic("chatCommands")(chatCommands.asInstanceOf[js.Any])
     if (mayJoinChannel != null) __obj.updateDynamic("mayJoinChannel")(js.Any.fromFunction1(mayJoinChannel))
     if (mayShowPublicActionMessage != null) __obj.updateDynamic("mayShowPublicActionMessage")(js.Any.fromFunction1(mayShowPublicActionMessage))
     if (mayShowPublicMessage != null) __obj.updateDynamic("mayShowPublicMessage")(js.Any.fromFunction1(mayShowPublicMessage))

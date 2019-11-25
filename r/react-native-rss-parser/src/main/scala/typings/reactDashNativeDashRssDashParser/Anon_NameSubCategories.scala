@@ -13,7 +13,7 @@ trait Anon_NameSubCategories extends js.Object {
 object Anon_NameSubCategories {
   @scala.inline
   def apply(name: String, subCategories: js.Array[Maybe[Anon_Name]]): Anon_NameSubCategories = {
-    val __obj = js.Dynamic.literal(name = name, subCategories = subCategories)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], subCategories = subCategories.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NameSubCategories]
   }

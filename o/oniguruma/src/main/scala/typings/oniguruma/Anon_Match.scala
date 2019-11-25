@@ -12,7 +12,7 @@ object Anon_Match {
   @scala.inline
   def apply(`match`: String): Anon_Match = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("match")(`match`)
+    __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Match]
   }
 }

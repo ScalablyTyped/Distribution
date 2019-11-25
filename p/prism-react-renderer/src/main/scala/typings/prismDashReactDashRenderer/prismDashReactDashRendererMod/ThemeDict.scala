@@ -13,8 +13,8 @@ trait ThemeDict extends /* type */ StringDictionary[StyleObj] {
 object ThemeDict {
   @scala.inline
   def apply(plain: StyleObj, root: StyleObj, StringDictionary: /* type */ StringDictionary[StyleObj] = null): ThemeDict = {
-    val __obj = js.Dynamic.literal(plain = plain, root = root)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(plain = plain.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ThemeDict]
   }
 }

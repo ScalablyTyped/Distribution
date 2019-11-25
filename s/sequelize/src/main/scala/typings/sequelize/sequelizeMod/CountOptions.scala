@@ -53,15 +53,15 @@ object CountOptions {
     where: AnyWhereOptions | js.Array[String] = null
   ): CountOptions = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark)
-    if (col != null) __obj.updateDynamic("col")(col)
-    if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct)
-    if (group != null) __obj.updateDynamic("group")(group)
-    if (include != null) __obj.updateDynamic("include")(include)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark.asInstanceOf[js.Any])
+    if (col != null) __obj.updateDynamic("col")(col.asInstanceOf[js.Any])
+    if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath)
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath.asInstanceOf[js.Any])
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[CountOptions]
   }

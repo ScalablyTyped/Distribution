@@ -13,7 +13,7 @@ trait OnSeekData extends js.Object {
 object OnSeekData {
   @scala.inline
   def apply(currentTime: Double, seekTime: Double, target: Int | Double = null): OnSeekData = {
-    val __obj = js.Dynamic.literal(currentTime = currentTime, seekTime = seekTime)
+    val __obj = js.Dynamic.literal(currentTime = currentTime.asInstanceOf[js.Any], seekTime = seekTime.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnSeekData]
   }

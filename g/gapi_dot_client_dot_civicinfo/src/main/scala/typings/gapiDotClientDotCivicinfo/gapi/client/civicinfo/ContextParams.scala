@@ -12,7 +12,7 @@ object ContextParams {
   @scala.inline
   def apply(clientProfile: String = null): ContextParams = {
     val __obj = js.Dynamic.literal()
-    if (clientProfile != null) __obj.updateDynamic("clientProfile")(clientProfile)
+    if (clientProfile != null) __obj.updateDynamic("clientProfile")(clientProfile.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextParams]
   }
 }

@@ -55,12 +55,12 @@ object IHeatMapLayerOptions {
     visible: js.UndefOr[Boolean] = js.undefined
   ): IHeatMapLayerOptions = {
     val __obj = js.Dynamic.literal()
-    if (colorGradient != null) __obj.updateDynamic("colorGradient")(colorGradient)
+    if (colorGradient != null) __obj.updateDynamic("colorGradient")(colorGradient.asInstanceOf[js.Any])
     if (intensity != null) __obj.updateDynamic("intensity")(intensity.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHeatMapLayerOptions]
   }
 }

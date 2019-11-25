@@ -15,9 +15,9 @@ object NotyAnimationOptions {
   @scala.inline
   def apply(close: js.Any = null, easing: String = null, open: js.Any = null, speed: Int | Double = null): NotyAnimationOptions = {
     val __obj = js.Dynamic.literal()
-    if (close != null) __obj.updateDynamic("close")(close)
-    if (easing != null) __obj.updateDynamic("easing")(easing)
-    if (open != null) __obj.updateDynamic("open")(open)
+    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
+    if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotyAnimationOptions]
   }

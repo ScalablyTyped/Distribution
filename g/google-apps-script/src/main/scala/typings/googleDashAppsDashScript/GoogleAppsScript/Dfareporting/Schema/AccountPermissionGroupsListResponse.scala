@@ -13,8 +13,8 @@ object AccountPermissionGroupsListResponse {
   @scala.inline
   def apply(accountPermissionGroups: js.Array[AccountPermissionGroup] = null, kind: String = null): AccountPermissionGroupsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (accountPermissionGroups != null) __obj.updateDynamic("accountPermissionGroups")(accountPermissionGroups)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (accountPermissionGroups != null) __obj.updateDynamic("accountPermissionGroups")(accountPermissionGroups.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountPermissionGroupsListResponse]
   }
 }

@@ -18,9 +18,9 @@ object ClearNodeStatus {
     text: js.UndefOr[scala.Nothing] = js.undefined
   ): ClearNodeStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
-    if (!js.isUndefined(shape)) __obj.updateDynamic("shape")(shape)
-    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (!js.isUndefined(shape)) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearNodeStatus]
   }
 }

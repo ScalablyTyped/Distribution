@@ -13,7 +13,7 @@ object Request {
   @scala.inline
   def apply(brute: Anon_Callback = null): Request = {
     val __obj = js.Dynamic.literal()
-    if (brute != null) __obj.updateDynamic("brute")(brute)
+    if (brute != null) __obj.updateDynamic("brute")(brute.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request]
   }
 }

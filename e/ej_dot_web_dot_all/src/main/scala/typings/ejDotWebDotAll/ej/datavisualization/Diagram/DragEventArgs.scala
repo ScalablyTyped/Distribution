@@ -40,13 +40,13 @@ object DragEventArgs {
     oldValue: js.Any = null
   ): DragEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
-    if (dragState != null) __obj.updateDynamic("dragState")(dragState)
-    if (element != null) __obj.updateDynamic("element")(element)
-    if (newValue != null) __obj.updateDynamic("newValue")(newValue)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
-    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId.asInstanceOf[js.Any])
+    if (dragState != null) __obj.updateDynamic("dragState")(dragState.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (newValue != null) __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragEventArgs]
   }
 }

@@ -180,7 +180,7 @@ object stripeDashV3Strings {
   sealed trait diners extends paymentMethodCardBrand
   
   @js.native
-  sealed trait discover extends paymentMethodCardBrand
+  sealed trait discover_ extends paymentMethodCardBrand
   
   @js.native
   sealed trait donate extends js.Object
@@ -278,7 +278,7 @@ object stripeDashV3Strings {
   sealed trait it extends js.Object
   
   @js.native
-  sealed trait jcb extends paymentMethodCardBrand
+  sealed trait jcb_ extends paymentMethodCardBrand
   
   @js.native
   sealed trait knab extends js.Object
@@ -302,7 +302,7 @@ object stripeDashV3Strings {
   sealed trait manual_review extends js.Object
   
   @js.native
-  sealed trait mastercard extends paymentMethodCardBrand
+  sealed trait mastercard_ extends paymentMethodCardBrand
   
   @js.native
   sealed trait masterpass extends js.Object
@@ -503,7 +503,7 @@ object stripeDashV3Strings {
   sealed trait unionpay extends paymentMethodCardBrand
   
   @js.native
-  sealed trait unknown
+  sealed trait unknown_
     extends fundingType
        with paymentMethodCardBrand
   
@@ -523,7 +523,7 @@ object stripeDashV3Strings {
   sealed trait verified extends statusType
   
   @js.native
-  sealed trait visa extends paymentMethodCardBrand
+  sealed trait visa_ extends paymentMethodCardBrand
   
   @js.native
   sealed trait visa_checkout extends js.Object
@@ -637,7 +637,7 @@ object stripeDashV3Strings {
   @scala.inline
   def diners: diners = "diners".asInstanceOf[diners]
   @scala.inline
-  def discover: discover = "discover".asInstanceOf[discover]
+  def discover_ : discover_ = "discover".asInstanceOf[discover_]
   @scala.inline
   def donate: donate = "donate".asInstanceOf[donate]
   @scala.inline
@@ -701,7 +701,7 @@ object stripeDashV3Strings {
   @scala.inline
   def it: it = "it".asInstanceOf[it]
   @scala.inline
-  def jcb: jcb = "jcb".asInstanceOf[jcb]
+  def jcb_ : jcb_ = "jcb".asInstanceOf[jcb_]
   @scala.inline
   def knab: knab = "knab".asInstanceOf[knab]
   @scala.inline
@@ -717,7 +717,7 @@ object stripeDashV3Strings {
   @scala.inline
   def manual_review: manual_review = "manual_review".asInstanceOf[manual_review]
   @scala.inline
-  def mastercard: mastercard = "mastercard".asInstanceOf[mastercard]
+  def mastercard_ : mastercard_ = "mastercard".asInstanceOf[mastercard_]
   @scala.inline
   def masterpass: masterpass = "masterpass".asInstanceOf[masterpass]
   @scala.inline
@@ -843,7 +843,7 @@ object stripeDashV3Strings {
   @scala.inline
   def unionpay: unionpay = "unionpay".asInstanceOf[unionpay]
   @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  def unknown_ : unknown_ = "unknown".asInstanceOf[unknown_]
   @scala.inline
   def use_stripe_sdk: use_stripe_sdk = "use_stripe_sdk".asInstanceOf[use_stripe_sdk]
   @scala.inline
@@ -855,7 +855,7 @@ object stripeDashV3Strings {
   @scala.inline
   def verified: verified = "verified".asInstanceOf[verified]
   @scala.inline
-  def visa: visa = "visa".asInstanceOf[visa]
+  def visa_ : visa_ = "visa".asInstanceOf[visa_]
   @scala.inline
   def visa_checkout: visa_checkout = "visa_checkout".asInstanceOf[visa_checkout]
   @scala.inline

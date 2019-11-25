@@ -23,8 +23,8 @@ object ResponseObject {
   ): ResponseObject = {
     val __obj = js.Dynamic.literal()
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response)
-    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders)
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
+    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseObject]

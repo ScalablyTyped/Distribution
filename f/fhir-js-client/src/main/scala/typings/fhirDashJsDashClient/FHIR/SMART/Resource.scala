@@ -28,8 +28,8 @@ object Resource {
     */
   /* propName */ StringDictionary[js.Any] = null
   ): Resource = {
-    val __obj = js.Dynamic.literal(resourceType = resourceType)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(resourceType = resourceType.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Resource]
   }
 }

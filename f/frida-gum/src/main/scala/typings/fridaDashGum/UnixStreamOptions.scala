@@ -16,7 +16,7 @@ object UnixStreamOptions {
   @scala.inline
   def apply(autoClose: js.UndefOr[Boolean] = js.undefined): UnixStreamOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose)
+    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnixStreamOptions]
   }
 }

@@ -14,7 +14,7 @@ trait IProductLicense extends js.Object {
 object IProductLicense {
   @scala.inline
   def apply(expirationDate: Date, isActive: Boolean, productId: String): IProductLicense = {
-    val __obj = js.Dynamic.literal(expirationDate = expirationDate, isActive = isActive, productId = productId)
+    val __obj = js.Dynamic.literal(expirationDate = expirationDate.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IProductLicense]
   }

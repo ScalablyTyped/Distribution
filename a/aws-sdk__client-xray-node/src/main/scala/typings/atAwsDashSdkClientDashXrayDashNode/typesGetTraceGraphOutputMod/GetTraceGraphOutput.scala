@@ -30,9 +30,9 @@ object GetTraceGraphOutput {
     NextToken: String = null,
     Services: js.Array[_UnmarshalledService] = null
   ): GetTraceGraphOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (Services != null) __obj.updateDynamic("Services")(Services)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (Services != null) __obj.updateDynamic("Services")(Services.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTraceGraphOutput]
   }
 }

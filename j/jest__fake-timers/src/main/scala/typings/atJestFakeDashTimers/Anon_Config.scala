@@ -25,7 +25,7 @@ object Anon_Config {
     timerConfig: TimerConfig[TimerRef],
     maxLoops: Int | Double = null
   ): Anon_Config[TimerRef] = {
-    val __obj = js.Dynamic.literal(config = config, global = global, moduleMocker = moduleMocker, timerConfig = timerConfig)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], moduleMocker = moduleMocker.asInstanceOf[js.Any], timerConfig = timerConfig.asInstanceOf[js.Any])
     if (maxLoops != null) __obj.updateDynamic("maxLoops")(maxLoops.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Config[TimerRef]]
   }

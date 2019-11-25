@@ -66,12 +66,12 @@ object PlusPaymentPaymentResult {
     url: js.UndefOr[Boolean] = js.undefined
   ): PlusPaymentPaymentResult = {
     val __obj = js.Dynamic.literal()
-    if (channel != null) __obj.updateDynamic("channel")(channel)
-    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description)
-    if (rawdata != null) __obj.updateDynamic("rawdata")(rawdata)
-    if (signature != null) __obj.updateDynamic("signature")(signature)
-    if (tradeno != null) __obj.updateDynamic("tradeno")(tradeno)
-    if (!js.isUndefined(url)) __obj.updateDynamic("url")(url)
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (rawdata != null) __obj.updateDynamic("rawdata")(rawdata.asInstanceOf[js.Any])
+    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
+    if (tradeno != null) __obj.updateDynamic("tradeno")(tradeno.asInstanceOf[js.Any])
+    if (!js.isUndefined(url)) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusPaymentPaymentResult]
   }
 }

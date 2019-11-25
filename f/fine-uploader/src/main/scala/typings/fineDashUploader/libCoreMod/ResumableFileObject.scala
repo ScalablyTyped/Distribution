@@ -37,8 +37,8 @@ object ResumableFileObject {
     uuid: Int | Double = null
   ): ResumableFileObject = {
     val __obj = js.Dynamic.literal()
-    if (customResumeData != null) __obj.updateDynamic("customResumeData")(customResumeData)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (customResumeData != null) __obj.updateDynamic("customResumeData")(customResumeData.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (remaining != null) __obj.updateDynamic("remaining")(remaining.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])

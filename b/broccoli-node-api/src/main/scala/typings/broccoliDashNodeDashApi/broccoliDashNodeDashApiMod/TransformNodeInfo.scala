@@ -86,8 +86,8 @@ object TransformNodeInfo {
     volatile: Boolean,
     annotation: String = null
   ): TransformNodeInfo = {
-    val __obj = js.Dynamic.literal(getCallbackObject = js.Any.fromFunction0(getCallbackObject), inputNodes = inputNodes, instantiationStack = instantiationStack, name = name, needsCache = needsCache, nodeType = nodeType, persistentOutput = persistentOutput, setup = js.Any.fromFunction2(setup), trackInputChanges = trackInputChanges, volatile = volatile)
-    if (annotation != null) __obj.updateDynamic("annotation")(annotation)
+    val __obj = js.Dynamic.literal(getCallbackObject = js.Any.fromFunction0(getCallbackObject), inputNodes = inputNodes.asInstanceOf[js.Any], instantiationStack = instantiationStack.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], needsCache = needsCache.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], persistentOutput = persistentOutput.asInstanceOf[js.Any], setup = js.Any.fromFunction2(setup), trackInputChanges = trackInputChanges.asInstanceOf[js.Any], volatile = volatile.asInstanceOf[js.Any])
+    if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformNodeInfo]
   }
 }

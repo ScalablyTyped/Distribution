@@ -12,7 +12,7 @@ object SwitchDatabaseOptions {
   @scala.inline
   def apply(database: String = null): SwitchDatabaseOptions = {
     val __obj = js.Dynamic.literal()
-    if (database != null) __obj.updateDynamic("database")(database)
+    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchDatabaseOptions]
   }
 }

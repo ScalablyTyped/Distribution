@@ -78,23 +78,23 @@ object ColumnDefinitionProps {
     visible: js.UndefOr[Boolean] = js.undefined,
     width: Double | String = null
   ): ColumnDefinitionProps = {
-    val __obj = js.Dynamic.literal(id = id)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
     if (cssClassName != null) __obj.updateDynamic("cssClassName")(cssClassName.asInstanceOf[js.Any])
     if (customComponent != null) __obj.updateDynamic("customComponent")(customComponent.asInstanceOf[js.Any])
     if (customHeadingComponent != null) __obj.updateDynamic("customHeadingComponent")(customHeadingComponent.asInstanceOf[js.Any])
-    if (extraData != null) __obj.updateDynamic("extraData")(extraData)
-    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable)
+    if (extraData != null) __obj.updateDynamic("extraData")(extraData.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
     if (headerCssClassName != null) __obj.updateDynamic("headerCssClassName")(headerCssClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMetadata)) __obj.updateDynamic("isMetadata")(isMetadata)
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked)
+    if (!js.isUndefined(isMetadata)) __obj.updateDynamic("isMetadata")(isMetadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (sortMethod != null) __obj.updateDynamic("sortMethod")(js.Any.fromFunction3(sortMethod))
-    if (sortType != null) __obj.updateDynamic("sortType")(sortType)
-    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (sortType != null) __obj.updateDynamic("sortType")(sortType.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnDefinitionProps]
   }

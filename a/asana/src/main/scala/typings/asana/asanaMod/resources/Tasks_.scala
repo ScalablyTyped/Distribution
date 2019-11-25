@@ -9,7 +9,6 @@ import typings.asana.asanaMod.resources.Tasks.FindAllParams
 import typings.asana.asanaMod.resources.Tasks.FollowersParams
 import typings.asana.asanaMod.resources.Tasks.RemoveProjectParams
 import typings.asana.asanaMod.resources.Tasks.TagParams
-import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,10 +40,10 @@ trait Tasks_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def addComment(task: String, data: CommentParams): ^[Type] = js.native
-  def addComment(task: String, data: CommentParams, dispatchOptions: js.Any): ^[Type] = js.native
-  def addComment(task: Double, data: CommentParams): ^[Type] = js.native
-  def addComment(task: Double, data: CommentParams, dispatchOptions: js.Any): ^[Type] = js.native
+  def addComment(task: String, data: CommentParams): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def addComment(task: String, data: CommentParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def addComment(task: Double, data: CommentParams): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def addComment(task: Double, data: CommentParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[Type] = js.native
   /**
     * * Adds each of the specified followers to the task, if they are not already
     * * following. Returns the complete, updated record for the affected task.
@@ -58,10 +57,10 @@ trait Tasks_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def addFollowers(task: String, data: FollowersParams): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
-  def addFollowers(task: String, data: FollowersParams, dispatchOptions: js.Any): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
-  def addFollowers(task: Double, data: FollowersParams): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
-  def addFollowers(task: Double, data: FollowersParams, dispatchOptions: js.Any): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def addFollowers(task: String, data: FollowersParams): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def addFollowers(task: String, data: FollowersParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def addFollowers(task: Double, data: FollowersParams): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def addFollowers(task: Double, data: FollowersParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
   /**
     * * Adds the task to the specified project, in the optional location
     * * specified. If no location arguments are given, the task will be added to
@@ -87,10 +86,10 @@ trait Tasks_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def addProject(task: String, data: AddProjectParams): ^[js.Object] = js.native
-  def addProject(task: String, data: AddProjectParams, dispatchOptions: js.Any): ^[js.Object] = js.native
-  def addProject(task: Double, data: AddProjectParams): ^[js.Object] = js.native
-  def addProject(task: Double, data: AddProjectParams, dispatchOptions: js.Any): ^[js.Object] = js.native
+  def addProject(task: String, data: AddProjectParams): typings.bluebird.bluebirdMod.^[js.Object] = js.native
+  def addProject(task: String, data: AddProjectParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[js.Object] = js.native
+  def addProject(task: Double, data: AddProjectParams): typings.bluebird.bluebirdMod.^[js.Object] = js.native
+  def addProject(task: Double, data: AddProjectParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[js.Object] = js.native
   /**
     * * Creates a new subtask and adds it to the parent task. Returns the full record
     * * for the newly created subtask.
@@ -103,10 +102,10 @@ trait Tasks_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def addSubtask(task: String, data: CreateParams): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
-  def addSubtask(task: String, data: CreateParams, dispatchOptions: js.Any): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
-  def addSubtask(task: Double, data: CreateParams): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
-  def addSubtask(task: Double, data: CreateParams, dispatchOptions: js.Any): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def addSubtask(task: String, data: CreateParams): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def addSubtask(task: String, data: CreateParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def addSubtask(task: Double, data: CreateParams): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def addSubtask(task: Double, data: CreateParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
   /**
     * * Adds a tag to a task. Returns an empty data block.
     *   * @param {Number} task The task to add a tag to.
@@ -119,10 +118,10 @@ trait Tasks_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def addTag(task: String, data: TagParams): ^[js.Object] = js.native
-  def addTag(task: String, data: TagParams, dispatchOptions: js.Any): ^[js.Object] = js.native
-  def addTag(task: Double, data: TagParams): ^[js.Object] = js.native
-  def addTag(task: Double, data: TagParams, dispatchOptions: js.Any): ^[js.Object] = js.native
+  def addTag(task: String, data: TagParams): typings.bluebird.bluebirdMod.^[js.Object] = js.native
+  def addTag(task: String, data: TagParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[js.Object] = js.native
+  def addTag(task: Double, data: TagParams): typings.bluebird.bluebirdMod.^[js.Object] = js.native
+  def addTag(task: Double, data: TagParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[js.Object] = js.native
   /**
     * * Creating a new task is as easy as POSTing to the `/tasks` endpoint
     * * with a data block containing the fields you'd like to set on the task.
@@ -139,8 +138,8 @@ trait Tasks_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def create(data: CreateParams with Anon_WorkspaceString): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
-  def create(data: CreateParams with Anon_WorkspaceString, dispatchOptions: js.Any): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def create(data: CreateParams with Anon_WorkspaceString): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def create(data: CreateParams with Anon_WorkspaceString, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
   /**
     * * Creating a new task is as easy as POSTing to the `/tasks` endpoint
     * * with a data block containing the fields you'd like to set on the task.
@@ -158,8 +157,8 @@ trait Tasks_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def createInWorkspace(workspace: Double, data: CreateParams): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
-  def createInWorkspace(workspace: Double, data: CreateParams, dispatchOptions: js.Any): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def createInWorkspace(workspace: Double, data: CreateParams): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def createInWorkspace(workspace: Double, data: CreateParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
   /**
     * * A specific, existing task can be deleted by making a DELETE request on the
     * * URL for that task. Deleted tasks go into the "trash" of the user making
@@ -174,10 +173,10 @@ trait Tasks_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def delete(task: String): ^[Unit] = js.native
-  def delete(task: String, dispatchOptions: js.Any): ^[Unit] = js.native
-  def delete(task: Double): ^[Unit] = js.native
-  def delete(task: Double, dispatchOptions: js.Any): ^[Unit] = js.native
+  def delete(task: String): typings.bluebird.bluebirdMod.^[Unit] = js.native
+  def delete(task: String, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[Unit] = js.native
+  def delete(task: Double): typings.bluebird.bluebirdMod.^[Unit] = js.native
+  def delete(task: Double, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[Unit] = js.native
   /**
     * * Returns the compact task records for some filtered set of tasks. Use one
     * * or more of the parameters provided to filter the tasks returned.
@@ -193,9 +192,9 @@ trait Tasks_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def findAll(): ^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
-  def findAll(params: FindAllParams): ^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
-  def findAll(params: FindAllParams, dispatchOptions: js.Any): ^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
+  def findAll(): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
+  def findAll(params: FindAllParams): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
+  def findAll(params: FindAllParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
   /**
     * * Returns the complete task record for a single task.
     *   * @param {Number} task The task to get.
@@ -207,12 +206,12 @@ trait Tasks_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def findById(task: String): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
-  def findById(task: String, params: Params): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
-  def findById(task: String, params: Params, dispatchOptions: js.Any): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
-  def findById(task: Double): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
-  def findById(task: Double, params: Params): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
-  def findById(task: Double, params: Params, dispatchOptions: js.Any): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def findById(task: String): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def findById(task: String, params: Params): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def findById(task: String, params: Params, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def findById(task: Double): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def findById(task: Double, params: Params): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def findById(task: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
   /**
     * * Returns the compact task records for all tasks within the given project,
     * * ordered by their priority within the project.
@@ -225,12 +224,12 @@ trait Tasks_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def findByProject(projectId: String): ^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
-  def findByProject(projectId: String, params: PaginationParams): ^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
-  def findByProject(projectId: String, params: PaginationParams, dispatchOptions: js.Any): ^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
-  def findByProject(projectId: Double): ^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
-  def findByProject(projectId: Double, params: PaginationParams): ^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
-  def findByProject(projectId: Double, params: PaginationParams, dispatchOptions: js.Any): ^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
+  def findByProject(projectId: String): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
+  def findByProject(projectId: String, params: PaginationParams): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
+  def findByProject(projectId: String, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
+  def findByProject(projectId: Double): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
+  def findByProject(projectId: Double, params: PaginationParams): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
+  def findByProject(projectId: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
   /**
     * * Returns the compact task records for all tasks with the given tag.
     *   * @param {Number} tag The tag in which to search for tasks.
@@ -242,9 +241,9 @@ trait Tasks_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def findByTag(tag: Double): ^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
-  def findByTag(tag: Double, params: PaginationParams): ^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
-  def findByTag(tag: Double, params: PaginationParams, dispatchOptions: js.Any): ^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
+  def findByTag(tag: Double): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
+  def findByTag(tag: Double, params: PaginationParams): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
+  def findByTag(tag: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
   /**
     * * Returns a compact representation of all of the projects the task is in.
     *   * @param {Number} task The task to get projects on.
@@ -256,12 +255,12 @@ trait Tasks_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def projects(task: String): ^[ResourceList[typings.asana.asanaMod.resources.Projects.Type]] = js.native
-  def projects(task: String, params: PaginationParams): ^[ResourceList[typings.asana.asanaMod.resources.Projects.Type]] = js.native
-  def projects(task: String, params: PaginationParams, dispatchOptions: js.Any): ^[ResourceList[typings.asana.asanaMod.resources.Projects.Type]] = js.native
-  def projects(task: Double): ^[ResourceList[typings.asana.asanaMod.resources.Projects.Type]] = js.native
-  def projects(task: Double, params: PaginationParams): ^[ResourceList[typings.asana.asanaMod.resources.Projects.Type]] = js.native
-  def projects(task: Double, params: PaginationParams, dispatchOptions: js.Any): ^[ResourceList[typings.asana.asanaMod.resources.Projects.Type]] = js.native
+  def projects(task: String): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Projects.Type]] = js.native
+  def projects(task: String, params: PaginationParams): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Projects.Type]] = js.native
+  def projects(task: String, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Projects.Type]] = js.native
+  def projects(task: Double): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Projects.Type]] = js.native
+  def projects(task: Double, params: PaginationParams): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Projects.Type]] = js.native
+  def projects(task: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Projects.Type]] = js.native
   /**
     * * Removes each of the specified followers from the task if they are
     * * following. Returns the complete, updated record for the affected task.
@@ -275,10 +274,10 @@ trait Tasks_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def removeFollowers(task: String, data: FollowersParams): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
-  def removeFollowers(task: String, data: FollowersParams, dispatchOptions: js.Any): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
-  def removeFollowers(task: Double, data: FollowersParams): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
-  def removeFollowers(task: Double, data: FollowersParams, dispatchOptions: js.Any): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def removeFollowers(task: String, data: FollowersParams): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def removeFollowers(task: String, data: FollowersParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def removeFollowers(task: Double, data: FollowersParams): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def removeFollowers(task: Double, data: FollowersParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
   /**
     * * Removes the task from the specified project. The task will still exist
     * * in the system, but it will not be in the project anymore.
@@ -294,10 +293,10 @@ trait Tasks_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def removeProject(task: String, data: RemoveProjectParams): ^[js.Object] = js.native
-  def removeProject(task: String, data: RemoveProjectParams, dispatchOptions: js.Any): ^[js.Object] = js.native
-  def removeProject(task: Double, data: RemoveProjectParams): ^[js.Object] = js.native
-  def removeProject(task: Double, data: RemoveProjectParams, dispatchOptions: js.Any): ^[js.Object] = js.native
+  def removeProject(task: String, data: RemoveProjectParams): typings.bluebird.bluebirdMod.^[js.Object] = js.native
+  def removeProject(task: String, data: RemoveProjectParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[js.Object] = js.native
+  def removeProject(task: Double, data: RemoveProjectParams): typings.bluebird.bluebirdMod.^[js.Object] = js.native
+  def removeProject(task: Double, data: RemoveProjectParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[js.Object] = js.native
   /**
     * * Removes a tag from the task. Returns an empty data block.
     *   * @param {Number} task The task to remove a tag from.
@@ -310,10 +309,10 @@ trait Tasks_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def removeTag(task: String, data: TagParams): ^[js.Object] = js.native
-  def removeTag(task: String, data: TagParams, dispatchOptions: js.Any): ^[js.Object] = js.native
-  def removeTag(task: Double, data: TagParams): ^[js.Object] = js.native
-  def removeTag(task: Double, data: TagParams, dispatchOptions: js.Any): ^[js.Object] = js.native
+  def removeTag(task: String, data: TagParams): typings.bluebird.bluebirdMod.^[js.Object] = js.native
+  def removeTag(task: String, data: TagParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[js.Object] = js.native
+  def removeTag(task: Double, data: TagParams): typings.bluebird.bluebirdMod.^[js.Object] = js.native
+  def removeTag(task: Double, data: TagParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[js.Object] = js.native
   /**
     * * Returns a compact representation of all of the stories on the task.
     *   * @param {Number} task The task containing the stories to get.
@@ -325,12 +324,12 @@ trait Tasks_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def stories(task: String): ^[ResourceList[Type]] = js.native
-  def stories(task: String, params: PaginationParams): ^[ResourceList[Type]] = js.native
-  def stories(task: String, params: PaginationParams, dispatchOptions: js.Any): ^[ResourceList[Type]] = js.native
-  def stories(task: Double): ^[ResourceList[Type]] = js.native
-  def stories(task: Double, params: PaginationParams): ^[ResourceList[Type]] = js.native
-  def stories(task: Double, params: PaginationParams, dispatchOptions: js.Any): ^[ResourceList[Type]] = js.native
+  def stories(task: String): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
+  def stories(task: String, params: PaginationParams): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
+  def stories(task: String, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
+  def stories(task: Double): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
+  def stories(task: Double, params: PaginationParams): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
+  def stories(task: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
   /**
     * * Returns a compact representation of all of the subtasks of a task.
     *   * @param {Number} task The task to get the subtasks of.
@@ -342,12 +341,12 @@ trait Tasks_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def subtasks(task: String): ^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
-  def subtasks(task: String, params: PaginationParams): ^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
-  def subtasks(task: String, params: PaginationParams, dispatchOptions: js.Any): ^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
-  def subtasks(task: Double): ^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
-  def subtasks(task: Double, params: PaginationParams): ^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
-  def subtasks(task: Double, params: PaginationParams, dispatchOptions: js.Any): ^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
+  def subtasks(task: String): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
+  def subtasks(task: String, params: PaginationParams): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
+  def subtasks(task: String, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
+  def subtasks(task: Double): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
+  def subtasks(task: Double, params: PaginationParams): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
+  def subtasks(task: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
   /**
     * * Returns a compact representation of all of the tags the task has.
     *   * @param {Number} task The task to get tags on.
@@ -359,12 +358,12 @@ trait Tasks_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def tags(task: String): ^[ResourceList[typings.asana.asanaMod.resources.Tags.Type]] = js.native
-  def tags(task: String, params: PaginationParams): ^[ResourceList[typings.asana.asanaMod.resources.Tags.Type]] = js.native
-  def tags(task: String, params: PaginationParams, dispatchOptions: js.Any): ^[ResourceList[typings.asana.asanaMod.resources.Tags.Type]] = js.native
-  def tags(task: Double): ^[ResourceList[typings.asana.asanaMod.resources.Tags.Type]] = js.native
-  def tags(task: Double, params: PaginationParams): ^[ResourceList[typings.asana.asanaMod.resources.Tags.Type]] = js.native
-  def tags(task: Double, params: PaginationParams, dispatchOptions: js.Any): ^[ResourceList[typings.asana.asanaMod.resources.Tags.Type]] = js.native
+  def tags(task: String): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tags.Type]] = js.native
+  def tags(task: String, params: PaginationParams): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tags.Type]] = js.native
+  def tags(task: String, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tags.Type]] = js.native
+  def tags(task: Double): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tags.Type]] = js.native
+  def tags(task: Double, params: PaginationParams): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tags.Type]] = js.native
+  def tags(task: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tags.Type]] = js.native
   /**
     * * A specific, existing task can be updated by making a PUT request on the
     * * URL for that task. Only the fields provided in the `data` block will be
@@ -384,9 +383,9 @@ trait Tasks_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def update(task: String, data: CreateParams): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
-  def update(task: String, data: CreateParams, dispatchOptions: js.Any): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
-  def update(task: Double, data: CreateParams): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
-  def update(task: Double, data: CreateParams, dispatchOptions: js.Any): ^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def update(task: String, data: CreateParams): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def update(task: String, data: CreateParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def update(task: Double, data: CreateParams): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
+  def update(task: Double, data: CreateParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[typings.asana.asanaMod.resources.Tasks.Type] = js.native
 }
 

@@ -14,7 +14,7 @@ trait BulkOptions extends js.Object {
 object BulkOptions {
   @scala.inline
   def apply(extIdField: String, concurrencyMode: Serial | Parallel = null): BulkOptions = {
-    val __obj = js.Dynamic.literal(extIdField = extIdField)
+    val __obj = js.Dynamic.literal(extIdField = extIdField.asInstanceOf[js.Any])
     if (concurrencyMode != null) __obj.updateDynamic("concurrencyMode")(concurrencyMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkOptions]
   }

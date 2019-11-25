@@ -10,8 +10,8 @@ trait IState extends js.Object {
 
 object IState {
   @scala.inline
-  def apply(clone: () => IState, equals: IState => Boolean): IState = {
-    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction0(clone), equals = js.Any.fromFunction1(equals))
+  def apply(equals: IState => Boolean): IState = {
+    val __obj = js.Dynamic.literal(equals = js.Any.fromFunction1(equals))
   
     __obj.asInstanceOf[IState]
   }

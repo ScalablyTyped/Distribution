@@ -14,7 +14,7 @@ object UpdateSlidesPositionRequest {
   def apply(insertionIndex: Int | Double = null, slideObjectIds: js.Array[String] = null): UpdateSlidesPositionRequest = {
     val __obj = js.Dynamic.literal()
     if (insertionIndex != null) __obj.updateDynamic("insertionIndex")(insertionIndex.asInstanceOf[js.Any])
-    if (slideObjectIds != null) __obj.updateDynamic("slideObjectIds")(slideObjectIds)
+    if (slideObjectIds != null) __obj.updateDynamic("slideObjectIds")(slideObjectIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSlidesPositionRequest]
   }
 }

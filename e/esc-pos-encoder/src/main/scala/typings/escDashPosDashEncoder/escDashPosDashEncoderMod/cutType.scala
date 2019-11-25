@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait cutType extends js.Object
 
+object cutType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def full: typings.escDashPosDashEncoder.escDashPosDashEncoderStrings.full = this.cast("full")
+  @scala.inline
+  def partial: typings.escDashPosDashEncoder.escDashPosDashEncoderStrings.partial = this.cast("partial")
+}
+

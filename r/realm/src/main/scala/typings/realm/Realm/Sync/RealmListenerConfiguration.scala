@@ -14,8 +14,8 @@ trait RealmListenerConfiguration extends js.Object {
 object RealmListenerConfiguration {
   @scala.inline
   def apply(adminUser: User, filterRegex: String, serverUrl: String, sslConfiguration: SSLConfiguration = null): RealmListenerConfiguration = {
-    val __obj = js.Dynamic.literal(adminUser = adminUser, filterRegex = filterRegex, serverUrl = serverUrl)
-    if (sslConfiguration != null) __obj.updateDynamic("sslConfiguration")(sslConfiguration)
+    val __obj = js.Dynamic.literal(adminUser = adminUser.asInstanceOf[js.Any], filterRegex = filterRegex.asInstanceOf[js.Any], serverUrl = serverUrl.asInstanceOf[js.Any])
+    if (sslConfiguration != null) __obj.updateDynamic("sslConfiguration")(sslConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[RealmListenerConfiguration]
   }
 }

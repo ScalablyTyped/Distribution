@@ -19,7 +19,7 @@ trait Typeofapple extends js.Object {
 object Typeofapple {
   @scala.inline
   def apply(channels: `3`, labels: js.Tuple3[r16, g16, b16], rgb: APPLE => RGB): Typeofapple = {
-    val __obj = js.Dynamic.literal(channels = channels, labels = labels, rgb = js.Any.fromFunction1(rgb))
+    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], rgb = js.Any.fromFunction1(rgb))
   
     __obj.asInstanceOf[Typeofapple]
   }

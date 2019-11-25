@@ -13,7 +13,7 @@ trait MotorPins extends js.Object {
 object MotorPins {
   @scala.inline
   def apply(IN1: Double, IN2: Double, PWM: Double): MotorPins = {
-    val __obj = js.Dynamic.literal(IN1 = IN1, IN2 = IN2, PWM = PWM)
+    val __obj = js.Dynamic.literal(IN1 = IN1.asInstanceOf[js.Any], IN2 = IN2.asInstanceOf[js.Any], PWM = PWM.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MotorPins]
   }

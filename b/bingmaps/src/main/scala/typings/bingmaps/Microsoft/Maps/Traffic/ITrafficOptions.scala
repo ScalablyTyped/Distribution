@@ -27,9 +27,9 @@ object ITrafficOptions {
     opacity: Int | Double = null
   ): ITrafficOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(flowVisible)) __obj.updateDynamic("flowVisible")(flowVisible)
-    if (!js.isUndefined(incidentsVisible)) __obj.updateDynamic("incidentsVisible")(incidentsVisible)
-    if (!js.isUndefined(legendVisible)) __obj.updateDynamic("legendVisible")(legendVisible)
+    if (!js.isUndefined(flowVisible)) __obj.updateDynamic("flowVisible")(flowVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(incidentsVisible)) __obj.updateDynamic("incidentsVisible")(incidentsVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(legendVisible)) __obj.updateDynamic("legendVisible")(legendVisible.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITrafficOptions]
   }

@@ -40,15 +40,15 @@ object IInputAudioConfig {
     speechContexts: js.Array[ISpeechContext] = null
   ): IInputAudioConfig = {
     val __obj = js.Dynamic.literal()
-    if (audioEncoding != null) __obj.updateDynamic("audioEncoding")(audioEncoding)
-    if (!js.isUndefined(enableWordInfo)) __obj.updateDynamic("enableWordInfo")(enableWordInfo)
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (modelVariant != null) __obj.updateDynamic("modelVariant")(modelVariant)
-    if (phraseHints != null) __obj.updateDynamic("phraseHints")(phraseHints)
+    if (audioEncoding != null) __obj.updateDynamic("audioEncoding")(audioEncoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableWordInfo)) __obj.updateDynamic("enableWordInfo")(enableWordInfo.asInstanceOf[js.Any])
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (modelVariant != null) __obj.updateDynamic("modelVariant")(modelVariant.asInstanceOf[js.Any])
+    if (phraseHints != null) __obj.updateDynamic("phraseHints")(phraseHints.asInstanceOf[js.Any])
     if (sampleRateHertz != null) __obj.updateDynamic("sampleRateHertz")(sampleRateHertz.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleUtterance)) __obj.updateDynamic("singleUtterance")(singleUtterance)
-    if (speechContexts != null) __obj.updateDynamic("speechContexts")(speechContexts)
+    if (!js.isUndefined(singleUtterance)) __obj.updateDynamic("singleUtterance")(singleUtterance.asInstanceOf[js.Any])
+    if (speechContexts != null) __obj.updateDynamic("speechContexts")(speechContexts.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInputAudioConfig]
   }
 }

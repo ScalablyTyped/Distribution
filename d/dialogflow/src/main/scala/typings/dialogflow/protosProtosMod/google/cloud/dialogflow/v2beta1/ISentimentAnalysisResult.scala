@@ -14,7 +14,7 @@ object ISentimentAnalysisResult {
   @scala.inline
   def apply(queryTextSentiment: ISentiment = null): ISentimentAnalysisResult = {
     val __obj = js.Dynamic.literal()
-    if (queryTextSentiment != null) __obj.updateDynamic("queryTextSentiment")(queryTextSentiment)
+    if (queryTextSentiment != null) __obj.updateDynamic("queryTextSentiment")(queryTextSentiment.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISentimentAnalysisResult]
   }
 }

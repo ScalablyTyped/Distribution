@@ -29,10 +29,10 @@ object GoogleCloudVideointelligenceV1beta2_LabelAnnotation {
     segments: js.Array[GoogleCloudVideointelligenceV1beta2_LabelSegment] = null
   ): GoogleCloudVideointelligenceV1beta2_LabelAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (categoryEntities != null) __obj.updateDynamic("categoryEntities")(categoryEntities)
-    if (entity != null) __obj.updateDynamic("entity")(entity)
-    if (frames != null) __obj.updateDynamic("frames")(frames)
-    if (segments != null) __obj.updateDynamic("segments")(segments)
+    if (categoryEntities != null) __obj.updateDynamic("categoryEntities")(categoryEntities.asInstanceOf[js.Any])
+    if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
+    if (frames != null) __obj.updateDynamic("frames")(frames.asInstanceOf[js.Any])
+    if (segments != null) __obj.updateDynamic("segments")(segments.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2_LabelAnnotation]
   }
 }

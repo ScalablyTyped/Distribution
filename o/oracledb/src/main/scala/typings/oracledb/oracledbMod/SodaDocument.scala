@@ -70,10 +70,10 @@ object SodaDocument {
     key: String = null,
     mediaType: String = null
   ): SodaDocument = {
-    val __obj = js.Dynamic.literal(getContent = js.Any.fromFunction0(getContent), getContentAsBuffer = js.Any.fromFunction0(getContentAsBuffer), getContentAsString = js.Any.fromFunction0(getContentAsString), lastModified = lastModified, version = version)
-    if (createdOn != null) __obj.updateDynamic("createdOn")(createdOn)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType)
+    val __obj = js.Dynamic.literal(getContent = js.Any.fromFunction0(getContent), getContentAsBuffer = js.Any.fromFunction0(getContentAsBuffer), getContentAsString = js.Any.fromFunction0(getContentAsString), lastModified = lastModified.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (createdOn != null) __obj.updateDynamic("createdOn")(createdOn.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SodaDocument]
   }
 }

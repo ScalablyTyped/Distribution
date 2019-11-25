@@ -32,16 +32,16 @@ object DeployOptions {
     singlePackage: js.UndefOr[Boolean] = js.undefined
   ): DeployOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowMissingFiles)) __obj.updateDynamic("allowMissingFiles")(allowMissingFiles)
-    if (!js.isUndefined(autoUpdatePackage)) __obj.updateDynamic("autoUpdatePackage")(autoUpdatePackage)
-    if (!js.isUndefined(checkOnly)) __obj.updateDynamic("checkOnly")(checkOnly)
-    if (!js.isUndefined(ignoreWarnings)) __obj.updateDynamic("ignoreWarnings")(ignoreWarnings)
-    if (!js.isUndefined(performRetrieve)) __obj.updateDynamic("performRetrieve")(performRetrieve)
-    if (!js.isUndefined(purgeOnDelete)) __obj.updateDynamic("purgeOnDelete")(purgeOnDelete)
-    if (!js.isUndefined(rollbackOnError)) __obj.updateDynamic("rollbackOnError")(rollbackOnError)
-    if (!js.isUndefined(runAllTests)) __obj.updateDynamic("runAllTests")(runAllTests)
-    if (runTests != null) __obj.updateDynamic("runTests")(runTests)
-    if (!js.isUndefined(singlePackage)) __obj.updateDynamic("singlePackage")(singlePackage)
+    if (!js.isUndefined(allowMissingFiles)) __obj.updateDynamic("allowMissingFiles")(allowMissingFiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoUpdatePackage)) __obj.updateDynamic("autoUpdatePackage")(autoUpdatePackage.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkOnly)) __obj.updateDynamic("checkOnly")(checkOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreWarnings)) __obj.updateDynamic("ignoreWarnings")(ignoreWarnings.asInstanceOf[js.Any])
+    if (!js.isUndefined(performRetrieve)) __obj.updateDynamic("performRetrieve")(performRetrieve.asInstanceOf[js.Any])
+    if (!js.isUndefined(purgeOnDelete)) __obj.updateDynamic("purgeOnDelete")(purgeOnDelete.asInstanceOf[js.Any])
+    if (!js.isUndefined(rollbackOnError)) __obj.updateDynamic("rollbackOnError")(rollbackOnError.asInstanceOf[js.Any])
+    if (!js.isUndefined(runAllTests)) __obj.updateDynamic("runAllTests")(runAllTests.asInstanceOf[js.Any])
+    if (runTests != null) __obj.updateDynamic("runTests")(runTests.asInstanceOf[js.Any])
+    if (!js.isUndefined(singlePackage)) __obj.updateDynamic("singlePackage")(singlePackage.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeployOptions]
   }
 }

@@ -28,14 +28,14 @@ object PassportLocalErrorMessages {
     UserExistsError: String = null
   ): PassportLocalErrorMessages = {
     val __obj = js.Dynamic.literal()
-    if (AttemptTooSoonError != null) __obj.updateDynamic("AttemptTooSoonError")(AttemptTooSoonError)
-    if (IncorrectPasswordError != null) __obj.updateDynamic("IncorrectPasswordError")(IncorrectPasswordError)
-    if (IncorrectUsernameError != null) __obj.updateDynamic("IncorrectUsernameError")(IncorrectUsernameError)
-    if (MissingPasswordError != null) __obj.updateDynamic("MissingPasswordError")(MissingPasswordError)
-    if (MissingUsernameError != null) __obj.updateDynamic("MissingUsernameError")(MissingUsernameError)
-    if (NoSaltValueStoredError != null) __obj.updateDynamic("NoSaltValueStoredError")(NoSaltValueStoredError)
-    if (TooManyAttemptsError != null) __obj.updateDynamic("TooManyAttemptsError")(TooManyAttemptsError)
-    if (UserExistsError != null) __obj.updateDynamic("UserExistsError")(UserExistsError)
+    if (AttemptTooSoonError != null) __obj.updateDynamic("AttemptTooSoonError")(AttemptTooSoonError.asInstanceOf[js.Any])
+    if (IncorrectPasswordError != null) __obj.updateDynamic("IncorrectPasswordError")(IncorrectPasswordError.asInstanceOf[js.Any])
+    if (IncorrectUsernameError != null) __obj.updateDynamic("IncorrectUsernameError")(IncorrectUsernameError.asInstanceOf[js.Any])
+    if (MissingPasswordError != null) __obj.updateDynamic("MissingPasswordError")(MissingPasswordError.asInstanceOf[js.Any])
+    if (MissingUsernameError != null) __obj.updateDynamic("MissingUsernameError")(MissingUsernameError.asInstanceOf[js.Any])
+    if (NoSaltValueStoredError != null) __obj.updateDynamic("NoSaltValueStoredError")(NoSaltValueStoredError.asInstanceOf[js.Any])
+    if (TooManyAttemptsError != null) __obj.updateDynamic("TooManyAttemptsError")(TooManyAttemptsError.asInstanceOf[js.Any])
+    if (UserExistsError != null) __obj.updateDynamic("UserExistsError")(UserExistsError.asInstanceOf[js.Any])
     __obj.asInstanceOf[PassportLocalErrorMessages]
   }
 }

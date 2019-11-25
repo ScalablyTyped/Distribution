@@ -31,9 +31,9 @@ trait SendResponse extends js.Object {
 object SendResponse {
   @scala.inline
   def apply(success: Boolean, error: FirebaseError = null, messageId: String = null): SendResponse = {
-    val __obj = js.Dynamic.literal(success = success)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId)
+    val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendResponse]
   }
 }

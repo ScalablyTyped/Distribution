@@ -26,9 +26,9 @@ object AsyncValidateCallback {
     asyncErrors: FormErrors[FormData, ErrorType] = null,
     blurredField: String = null
   ): AsyncValidateCallback[FormData, ErrorType] = {
-    val __obj = js.Dynamic.literal(initialized = initialized, pristine = pristine, syncValidationPasses = syncValidationPasses, trigger = trigger.asInstanceOf[js.Any])
-    if (asyncErrors != null) __obj.updateDynamic("asyncErrors")(asyncErrors)
-    if (blurredField != null) __obj.updateDynamic("blurredField")(blurredField)
+    val __obj = js.Dynamic.literal(initialized = initialized.asInstanceOf[js.Any], pristine = pristine.asInstanceOf[js.Any], syncValidationPasses = syncValidationPasses.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any])
+    if (asyncErrors != null) __obj.updateDynamic("asyncErrors")(asyncErrors.asInstanceOf[js.Any])
+    if (blurredField != null) __obj.updateDynamic("blurredField")(blurredField.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncValidateCallback[FormData, ErrorType]]
   }
 }

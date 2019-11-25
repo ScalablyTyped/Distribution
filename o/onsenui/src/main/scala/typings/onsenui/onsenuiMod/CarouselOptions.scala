@@ -14,9 +14,9 @@ object CarouselOptions {
   @scala.inline
   def apply(animation: String = null, animationOptions: js.Object = null, callback: js.Function = null): CarouselOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation)
-    if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions)
-    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions.asInstanceOf[js.Any])
+    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
     __obj.asInstanceOf[CarouselOptions]
   }
 }

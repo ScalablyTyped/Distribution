@@ -1,6 +1,5 @@
 package typings.angular.angularMod
 
-import typings.angular.Fn_Scope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -214,7 +213,7 @@ trait IRootScopeService extends js.Object {
   ): js.Function0[Unit] = js.native
   @JSName("$watchGroup")
   def $watchGroup(
-    watchExpressions: js.Array[_ | Fn_Scope],
+    watchExpressions: js.Array[_ | (js.Function1[/* scope */ IScope, _])],
     listener: js.Function3[/* newValue */ js.Any, /* oldValue */ js.Any, /* scope */ IScope, _]
   ): js.Function0[Unit] = js.native
   @JSName("$watch")

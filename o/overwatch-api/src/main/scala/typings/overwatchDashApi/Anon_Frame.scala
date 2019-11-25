@@ -24,7 +24,7 @@ object Anon_Frame {
     sportsmanship: Endorsement,
     teammate: Endorsement
   ): Anon_Frame = {
-    val __obj = js.Dynamic.literal(frame = frame, icon = icon, level = level, shotcaller = shotcaller, sportsmanship = sportsmanship, teammate = teammate)
+    val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], shotcaller = shotcaller.asInstanceOf[js.Any], sportsmanship = sportsmanship.asInstanceOf[js.Any], teammate = teammate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Frame]
   }

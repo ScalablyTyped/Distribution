@@ -62,17 +62,17 @@ object _UnmarshalledPublicEndpoint {
     User: _UnmarshalledEndpointUser = null
   ): _UnmarshalledPublicEndpoint = {
     val __obj = js.Dynamic.literal()
-    if (Address != null) __obj.updateDynamic("Address")(Address)
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes)
+    if (Address != null) __obj.updateDynamic("Address")(Address.asInstanceOf[js.Any])
+    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
     if (ChannelType != null) __obj.updateDynamic("ChannelType")(ChannelType.asInstanceOf[js.Any])
-    if (Demographic != null) __obj.updateDynamic("Demographic")(Demographic)
-    if (EffectiveDate != null) __obj.updateDynamic("EffectiveDate")(EffectiveDate)
-    if (EndpointStatus != null) __obj.updateDynamic("EndpointStatus")(EndpointStatus)
-    if (Location != null) __obj.updateDynamic("Location")(Location)
-    if (Metrics != null) __obj.updateDynamic("Metrics")(Metrics)
-    if (OptOut != null) __obj.updateDynamic("OptOut")(OptOut)
-    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId)
-    if (User != null) __obj.updateDynamic("User")(User)
+    if (Demographic != null) __obj.updateDynamic("Demographic")(Demographic.asInstanceOf[js.Any])
+    if (EffectiveDate != null) __obj.updateDynamic("EffectiveDate")(EffectiveDate.asInstanceOf[js.Any])
+    if (EndpointStatus != null) __obj.updateDynamic("EndpointStatus")(EndpointStatus.asInstanceOf[js.Any])
+    if (Location != null) __obj.updateDynamic("Location")(Location.asInstanceOf[js.Any])
+    if (Metrics != null) __obj.updateDynamic("Metrics")(Metrics.asInstanceOf[js.Any])
+    if (OptOut != null) __obj.updateDynamic("OptOut")(OptOut.asInstanceOf[js.Any])
+    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
+    if (User != null) __obj.updateDynamic("User")(User.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledPublicEndpoint]
   }
 }

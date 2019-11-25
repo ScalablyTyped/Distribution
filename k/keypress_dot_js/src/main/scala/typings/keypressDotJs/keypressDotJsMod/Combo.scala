@@ -40,18 +40,18 @@ object Combo {
     `this`: Element = null
   ): Combo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(is_counting)) __obj.updateDynamic("is_counting")(is_counting)
-    if (!js.isUndefined(is_exclusive)) __obj.updateDynamic("is_exclusive")(is_exclusive)
-    if (!js.isUndefined(is_sequence)) __obj.updateDynamic("is_sequence")(is_sequence)
-    if (!js.isUndefined(is_solitary)) __obj.updateDynamic("is_solitary")(is_solitary)
-    if (!js.isUndefined(is_unordered)) __obj.updateDynamic("is_unordered")(is_unordered)
-    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (!js.isUndefined(is_counting)) __obj.updateDynamic("is_counting")(is_counting.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_exclusive)) __obj.updateDynamic("is_exclusive")(is_exclusive.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_sequence)) __obj.updateDynamic("is_sequence")(is_sequence.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_solitary)) __obj.updateDynamic("is_solitary")(is_solitary.asInstanceOf[js.Any])
+    if (!js.isUndefined(is_unordered)) __obj.updateDynamic("is_unordered")(is_unordered.asInstanceOf[js.Any])
+    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     if (on_keydown != null) __obj.updateDynamic("on_keydown")(js.Any.fromFunction2(on_keydown))
     if (on_keyup != null) __obj.updateDynamic("on_keyup")(js.Any.fromFunction1(on_keyup))
     if (on_release != null) __obj.updateDynamic("on_release")(js.Any.fromFunction1(on_release))
-    if (!js.isUndefined(prevent_default)) __obj.updateDynamic("prevent_default")(prevent_default)
-    if (!js.isUndefined(prevent_repeat)) __obj.updateDynamic("prevent_repeat")(prevent_repeat)
-    if (`this` != null) __obj.updateDynamic("this")(`this`)
+    if (!js.isUndefined(prevent_default)) __obj.updateDynamic("prevent_default")(prevent_default.asInstanceOf[js.Any])
+    if (!js.isUndefined(prevent_repeat)) __obj.updateDynamic("prevent_repeat")(prevent_repeat.asInstanceOf[js.Any])
+    if (`this` != null) __obj.updateDynamic("this")(`this`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Combo]
   }
 }

@@ -12,7 +12,7 @@ trait BeforeSendResponseResult extends js.Object {
 object BeforeSendResponseResult {
   @scala.inline
   def apply(response: Partial[Response]): BeforeSendResponseResult = {
-    val __obj = js.Dynamic.literal(response = response)
+    val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BeforeSendResponseResult]
   }

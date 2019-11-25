@@ -21,7 +21,7 @@ object EventMap {
     message: MessageEvent,
     open: OpenEvent
   ): EventMap = {
-    val __obj = js.Dynamic.literal(close = close, connecting = connecting, error = error, message = message, open = open)
+    val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], connecting = connecting.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EventMap]
   }

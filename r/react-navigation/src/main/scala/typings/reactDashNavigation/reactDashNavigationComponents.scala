@@ -21,8 +21,6 @@ object reactDashNavigationComponents extends reactDashNavigationProps {
   @scala.inline
   def SectionList: ComponentType[SectionListProps[js.Any]] = typings.reactDashNavigation.reactDashNavigationMod.SectionList.asInstanceOf[typings.react.reactMod.ComponentType[SectionListProps[js.Any]]]
   @scala.inline
-  def SectionListCls: ComponentType[SectionListClsProps[js.Any]] = js.constructorOf[typings.reactDashNavigation.reactDashNavigationMod.SectionListCls].asInstanceOf[typings.react.reactMod.ComponentType[SectionListClsProps[js.Any]]]
-  @scala.inline
   def ThemedStatusBar: ComponentType[ThemedStatusBarProps] = js.constructorOf[typings.reactDashNavigation.reactDashNavigationMod.Themed.StatusBar].asInstanceOf[typings.react.reactMod.ComponentType[ThemedStatusBarProps]]
   @scala.inline
   def ThemedText: ComponentType[ThemedTextProps] = js.constructorOf[typings.reactDashNavigation.reactDashNavigationMod.Themed.Text].asInstanceOf[typings.react.reactMod.ComponentType[ThemedTextProps]]

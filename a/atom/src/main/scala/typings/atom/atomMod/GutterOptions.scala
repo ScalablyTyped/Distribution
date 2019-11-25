@@ -59,14 +59,14 @@ object GutterOptions {
     `type`: decorated | `line-number` = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): GutterOptions = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (`class` != null) __obj.updateDynamic("class")(`class`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     if (labelFn != null) __obj.updateDynamic("labelFn")(js.Any.fromFunction1(labelFn))
     if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
     if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[GutterOptions]
   }
 }

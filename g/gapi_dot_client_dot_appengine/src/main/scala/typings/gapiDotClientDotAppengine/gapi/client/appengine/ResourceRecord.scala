@@ -17,9 +17,9 @@ object ResourceRecord {
   @scala.inline
   def apply(name: String = null, rrdata: String = null, `type`: String = null): ResourceRecord = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (rrdata != null) __obj.updateDynamic("rrdata")(rrdata)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (rrdata != null) __obj.updateDynamic("rrdata")(rrdata.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceRecord]
   }
 }

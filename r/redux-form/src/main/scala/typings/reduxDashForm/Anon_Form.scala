@@ -12,8 +12,8 @@ trait Anon_Form extends js.Object {
 object Anon_Form {
   @scala.inline
   def apply(form: String, sectionPrefix: String = null): Anon_Form = {
-    val __obj = js.Dynamic.literal(form = form)
-    if (sectionPrefix != null) __obj.updateDynamic("sectionPrefix")(sectionPrefix)
+    val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any])
+    if (sectionPrefix != null) __obj.updateDynamic("sectionPrefix")(sectionPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Form]
   }
 }

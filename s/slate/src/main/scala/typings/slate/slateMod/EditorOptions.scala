@@ -18,9 +18,9 @@ object EditorOptions {
     normalize: js.UndefOr[Boolean] = js.undefined
   ): EditorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(construct)) __obj.updateDynamic("construct")(construct)
-    if (controller != null) __obj.updateDynamic("controller")(controller)
-    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize)
+    if (!js.isUndefined(construct)) __obj.updateDynamic("construct")(construct.asInstanceOf[js.Any])
+    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
+    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorOptions]
   }
 }

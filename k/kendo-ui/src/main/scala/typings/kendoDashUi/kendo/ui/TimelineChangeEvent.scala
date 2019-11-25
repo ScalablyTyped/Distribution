@@ -20,9 +20,9 @@ object TimelineChangeEvent {
     dataItem: Model = null,
     eventContainer: JQuery = null
   ): TimelineChangeEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (dataItem != null) __obj.updateDynamic("dataItem")(dataItem)
-    if (eventContainer != null) __obj.updateDynamic("eventContainer")(eventContainer)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (dataItem != null) __obj.updateDynamic("dataItem")(dataItem.asInstanceOf[js.Any])
+    if (eventContainer != null) __obj.updateDynamic("eventContainer")(eventContainer.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineChangeEvent]
   }
 }

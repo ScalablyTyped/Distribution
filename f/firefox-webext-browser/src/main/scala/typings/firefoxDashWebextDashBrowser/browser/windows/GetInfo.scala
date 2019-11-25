@@ -23,8 +23,8 @@ object GetInfo {
   @scala.inline
   def apply(populate: js.UndefOr[Boolean] = js.undefined, windowTypes: js.Array[WindowType] = null): GetInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(populate)) __obj.updateDynamic("populate")(populate)
-    if (windowTypes != null) __obj.updateDynamic("windowTypes")(windowTypes)
+    if (!js.isUndefined(populate)) __obj.updateDynamic("populate")(populate.asInstanceOf[js.Any])
+    if (windowTypes != null) __obj.updateDynamic("windowTypes")(windowTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInfo]
   }
 }

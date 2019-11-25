@@ -13,8 +13,8 @@ object LabelProps {
   @scala.inline
   def apply(label: String = null, sublabel: String = null): LabelProps = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (sublabel != null) __obj.updateDynamic("sublabel")(sublabel)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (sublabel != null) __obj.updateDynamic("sublabel")(sublabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelProps]
   }
 }

@@ -1,8 +1,5 @@
 package typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod
 
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CodeActionKind
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Command
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.WorkspaceEdit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,8 +14,15 @@ object CodeAction extends js.Object {
     * @param command The command to execute.
     * @param kind The kind of the code action.
     */
-  def create(title: String, command: Command): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CodeAction = js.native
-  def create(title: String, command: Command, kind: CodeActionKind): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CodeAction = js.native
+  def create(
+    title: String,
+    command: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Command
+  ): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CodeAction = js.native
+  def create(
+    title: String,
+    command: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Command,
+    kind: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CodeActionKind
+  ): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CodeAction = js.native
   /**
     * Creates a new code action.
     *
@@ -26,8 +30,15 @@ object CodeAction extends js.Object {
     * @param command The command to execute.
     * @param kind The kind of the code action.
     */
-  def create(title: String, edit: WorkspaceEdit): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CodeAction = js.native
-  def create(title: String, edit: WorkspaceEdit, kind: CodeActionKind): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CodeAction = js.native
+  def create(
+    title: String,
+    edit: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.WorkspaceEdit
+  ): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CodeAction = js.native
+  def create(
+    title: String,
+    edit: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.WorkspaceEdit,
+    kind: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CodeActionKind
+  ): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CodeAction = js.native
   def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeAction */ Boolean = js.native
 }
 

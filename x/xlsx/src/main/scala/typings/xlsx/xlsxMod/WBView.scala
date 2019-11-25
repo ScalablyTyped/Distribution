@@ -13,7 +13,7 @@ object WBView {
   @scala.inline
   def apply(RTL: js.UndefOr[Boolean] = js.undefined): WBView = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(RTL)) __obj.updateDynamic("RTL")(RTL)
+    if (!js.isUndefined(RTL)) __obj.updateDynamic("RTL")(RTL.asInstanceOf[js.Any])
     __obj.asInstanceOf[WBView]
   }
 }

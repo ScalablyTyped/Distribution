@@ -34,7 +34,7 @@ object Anon_Descriptors {
     navigationConfig: Options,
     screenProps: ScreenProps = null
   ): Anon_Descriptors[Options, ScreenProps] = {
-    val __obj = js.Dynamic.literal(descriptors = descriptors, navigationConfig = navigationConfig.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(descriptors = descriptors.asInstanceOf[js.Any], navigationConfig = navigationConfig.asInstanceOf[js.Any])
     if (screenProps != null) __obj.updateDynamic("screenProps")(screenProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Descriptors[Options, ScreenProps]]
   }

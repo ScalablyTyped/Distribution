@@ -13,7 +13,7 @@ object ojNavigationListSettablePropertiesLenient {
   @scala.inline
   def apply[K, D](StringDictionary: /* key */ StringDictionary[js.Any] = null): ojNavigationListSettablePropertiesLenient[K, D] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ojNavigationListSettablePropertiesLenient[K, D]]
   }
 }

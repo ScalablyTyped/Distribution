@@ -12,7 +12,7 @@ trait Anon_BaseUrl extends js.Object {
 object Anon_BaseUrl {
   @scala.inline
   def apply(baseUrl: String, isCompressed: Boolean): Anon_BaseUrl = {
-    val __obj = js.Dynamic.literal(baseUrl = baseUrl, isCompressed = isCompressed)
+    val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any], isCompressed = isCompressed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BaseUrl]
   }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pngquant-bin"
-version := "4.0-dt-20180420Z-6e9ce5"
+version := "4.0-dt-20180420Z-d8aac8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -30,8 +30,8 @@ object LabelClassLabelExpressionInfo {
     propertyIsEnumerable: PropertyKey => Boolean,
     value: String = null
   ): LabelClassLabelExpressionInfo = {
-    val __obj = js.Dynamic.literal(constructor = constructor, expression = expression, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (value != null) __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelClassLabelExpressionInfo]
   }
 }

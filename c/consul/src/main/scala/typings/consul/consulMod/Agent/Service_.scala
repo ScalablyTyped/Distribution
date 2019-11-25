@@ -1,9 +1,5 @@
 package typings.consul.consulMod.Agent
 
-import typings.consul.Fn_CallbackIdOptsDeregisterOptionsString
-import typings.consul.Fn_CallbackName
-import typings.consul.Fn_CallbackOptsListOptionsTDataThenable
-import typings.consul.Fn_CallbackOptsMaintenanceOptions
 import typings.consul.consulMod.Agent.Service.DeregisterOptions
 import typings.consul.consulMod.Agent.Service.ListOptions
 import typings.consul.consulMod.Agent.Service.RegisterOptions
@@ -18,26 +14,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Service_ extends js.Object {
   var consul: Consul = js.native
-  /**
-    * Deregister a local service
-    */
-  @JSName("deregister")
-  var deregister_Original: Fn_CallbackIdOptsDeregisterOptionsString = js.native
-  /**
-    * Returns the services local agent is managing
-    */
-  @JSName("list")
-  var list_Original: Fn_CallbackOptsListOptionsTDataThenable = js.native
-  /**
-    * Manages node maintenance mode
-    */
-  @JSName("maintenance")
-  var maintenance_Original: Fn_CallbackOptsMaintenanceOptions = js.native
-  /**
-    * Registers a new local service
-    */
-  @JSName("register")
-  var register_Original: Fn_CallbackName = js.native
   /**
     * Deregister a local service
     */

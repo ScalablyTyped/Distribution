@@ -68,16 +68,16 @@ object IgPivotDataSelectorDataSourceOptionsXmlaOptions {
     serverUrl: String = null
   ): IgPivotDataSelectorDataSourceOptionsXmlaOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (catalog != null) __obj.updateDynamic("catalog")(catalog)
-    if (cube != null) __obj.updateDynamic("cube")(cube)
-    if (discoverProperties != null) __obj.updateDynamic("discoverProperties")(discoverProperties)
-    if (!js.isUndefined(enableResultCache)) __obj.updateDynamic("enableResultCache")(enableResultCache)
-    if (executeProperties != null) __obj.updateDynamic("executeProperties")(executeProperties)
-    if (mdxSettings != null) __obj.updateDynamic("mdxSettings")(mdxSettings)
-    if (measureGroup != null) __obj.updateDynamic("measureGroup")(measureGroup)
-    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions)
-    if (serverUrl != null) __obj.updateDynamic("serverUrl")(serverUrl)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (catalog != null) __obj.updateDynamic("catalog")(catalog.asInstanceOf[js.Any])
+    if (cube != null) __obj.updateDynamic("cube")(cube.asInstanceOf[js.Any])
+    if (discoverProperties != null) __obj.updateDynamic("discoverProperties")(discoverProperties.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableResultCache)) __obj.updateDynamic("enableResultCache")(enableResultCache.asInstanceOf[js.Any])
+    if (executeProperties != null) __obj.updateDynamic("executeProperties")(executeProperties.asInstanceOf[js.Any])
+    if (mdxSettings != null) __obj.updateDynamic("mdxSettings")(mdxSettings.asInstanceOf[js.Any])
+    if (measureGroup != null) __obj.updateDynamic("measureGroup")(measureGroup.asInstanceOf[js.Any])
+    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
+    if (serverUrl != null) __obj.updateDynamic("serverUrl")(serverUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPivotDataSelectorDataSourceOptionsXmlaOptions]
   }
 }

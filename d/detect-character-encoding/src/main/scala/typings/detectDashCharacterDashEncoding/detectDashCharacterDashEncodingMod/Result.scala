@@ -12,7 +12,7 @@ trait Result extends js.Object {
 object Result {
   @scala.inline
   def apply(confidence: Double, encoding: String): Result = {
-    val __obj = js.Dynamic.literal(confidence = confidence, encoding = encoding)
+    val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Result]
   }

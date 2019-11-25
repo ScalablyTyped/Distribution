@@ -22,11 +22,11 @@ object Anon_IncludeContainingNotebooks {
     writableNotebooksOnly: js.UndefOr[Boolean] = js.undefined
   ): Anon_IncludeContainingNotebooks = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeContainingNotebooks)) __obj.updateDynamic("includeContainingNotebooks")(includeContainingNotebooks)
+    if (!js.isUndefined(includeContainingNotebooks)) __obj.updateDynamic("includeContainingNotebooks")(includeContainingNotebooks.asInstanceOf[js.Any])
     if (maxNotebooks != null) __obj.updateDynamic("maxNotebooks")(maxNotebooks.asInstanceOf[js.Any])
     if (maxNotes != null) __obj.updateDynamic("maxNotes")(maxNotes.asInstanceOf[js.Any])
     if (maxTags != null) __obj.updateDynamic("maxTags")(maxTags.asInstanceOf[js.Any])
-    if (!js.isUndefined(writableNotebooksOnly)) __obj.updateDynamic("writableNotebooksOnly")(writableNotebooksOnly)
+    if (!js.isUndefined(writableNotebooksOnly)) __obj.updateDynamic("writableNotebooksOnly")(writableNotebooksOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IncludeContainingNotebooks]
   }
 }

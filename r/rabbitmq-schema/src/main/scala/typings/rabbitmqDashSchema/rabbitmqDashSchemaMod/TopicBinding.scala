@@ -12,8 +12,8 @@ trait TopicBinding extends Binding {
 object TopicBinding {
   @scala.inline
   def apply(destination: Exchange | Queue, routingPattern: String, source: Exchange, args: js.Object = null): TopicBinding = {
-    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], routingPattern = routingPattern, source = source)
-    if (args != null) __obj.updateDynamic("args")(args)
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], routingPattern = routingPattern.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicBinding]
   }
 }

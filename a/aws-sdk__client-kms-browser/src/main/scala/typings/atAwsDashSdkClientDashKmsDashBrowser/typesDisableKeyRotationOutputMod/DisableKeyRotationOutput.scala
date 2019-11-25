@@ -17,7 +17,7 @@ trait DisableKeyRotationOutput extends OutputTypesUnion {
 object DisableKeyRotationOutput {
   @scala.inline
   def apply($metadata: ResponseMetadata): DisableKeyRotationOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DisableKeyRotationOutput]
   }

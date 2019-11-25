@@ -17,7 +17,7 @@ trait NodeDaemonEndpoints extends js.Object {
 object NodeDaemonEndpoints {
   @scala.inline
   def apply(kubeletEndpoint: DaemonEndpoint): NodeDaemonEndpoints = {
-    val __obj = js.Dynamic.literal(kubeletEndpoint = kubeletEndpoint)
+    val __obj = js.Dynamic.literal(kubeletEndpoint = kubeletEndpoint.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NodeDaemonEndpoints]
   }

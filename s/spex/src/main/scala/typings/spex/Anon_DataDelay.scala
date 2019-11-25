@@ -20,7 +20,7 @@ object Anon_DataDelay {
     val __obj = js.Dynamic.literal()
     if (dest != null) __obj.updateDynamic("dest")(js.Any.fromFunction3(dest))
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(track)) __obj.updateDynamic("track")(track)
+    if (!js.isUndefined(track)) __obj.updateDynamic("track")(track.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DataDelay]
   }
 }

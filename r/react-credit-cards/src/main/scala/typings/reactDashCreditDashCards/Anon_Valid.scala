@@ -11,7 +11,7 @@ trait Anon_Valid extends js.Object {
 object Anon_Valid {
   @scala.inline
   def apply(valid: String): Anon_Valid = {
-    val __obj = js.Dynamic.literal(valid = valid)
+    val __obj = js.Dynamic.literal(valid = valid.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Valid]
   }

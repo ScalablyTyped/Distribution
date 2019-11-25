@@ -14,9 +14,9 @@ object VideoPlayer {
   @scala.inline
   def apply(embedHeight: String = null, embedHtml: String = null, embedWidth: String = null): VideoPlayer = {
     val __obj = js.Dynamic.literal()
-    if (embedHeight != null) __obj.updateDynamic("embedHeight")(embedHeight)
-    if (embedHtml != null) __obj.updateDynamic("embedHtml")(embedHtml)
-    if (embedWidth != null) __obj.updateDynamic("embedWidth")(embedWidth)
+    if (embedHeight != null) __obj.updateDynamic("embedHeight")(embedHeight.asInstanceOf[js.Any])
+    if (embedHtml != null) __obj.updateDynamic("embedHtml")(embedHtml.asInstanceOf[js.Any])
+    if (embedWidth != null) __obj.updateDynamic("embedWidth")(embedWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoPlayer]
   }
 }

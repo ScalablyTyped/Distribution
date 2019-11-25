@@ -113,17 +113,17 @@ object IgChartLegend {
     width: String | Double = null
   ): IgChartLegend = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (legendItemMouseEnter != null) __obj.updateDynamic("legendItemMouseEnter")(js.Any.fromFunction2(legendItemMouseEnter))
     if (legendItemMouseLeave != null) __obj.updateDynamic("legendItemMouseLeave")(js.Any.fromFunction2(legendItemMouseLeave))
     if (legendItemMouseLeftButtonDown != null) __obj.updateDynamic("legendItemMouseLeftButtonDown")(js.Any.fromFunction2(legendItemMouseLeftButtonDown))
     if (legendItemMouseLeftButtonUp != null) __obj.updateDynamic("legendItemMouseLeftButtonUp")(js.Any.fromFunction2(legendItemMouseLeftButtonUp))
-    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgChartLegend]
   }

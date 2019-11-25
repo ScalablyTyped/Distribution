@@ -18,7 +18,7 @@ trait MessageBoxReturnValue extends js.Object {
 object MessageBoxReturnValue {
   @scala.inline
   def apply(checkboxChecked: Boolean, response: Double): MessageBoxReturnValue = {
-    val __obj = js.Dynamic.literal(checkboxChecked = checkboxChecked, response = response)
+    val __obj = js.Dynamic.literal(checkboxChecked = checkboxChecked.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MessageBoxReturnValue]
   }

@@ -34,8 +34,8 @@ object BuildingSublayerProperties {
   def apply(opacity: Int | Double = null, title: String = null, visible: js.UndefOr[Boolean] = js.undefined): BuildingSublayerProperties = {
     val __obj = js.Dynamic.literal()
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildingSublayerProperties]
   }
 }

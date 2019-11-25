@@ -13,3 +13,14 @@ import scala.scalajs.js.annotation._
 */
 trait MutedInfoReason extends js.Object
 
+object MutedInfoReason {
+  @scala.inline
+  def capture: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.capture = this.cast("capture")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def extension: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.extension = this.cast("extension")
+  @scala.inline
+  def user: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.user = this.cast("user")
+}
+

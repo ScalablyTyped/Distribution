@@ -23,8 +23,8 @@ object Anon_EntityErrors {
     stack: String = null,
     status: Int | Double = null
   ): Anon_EntityErrors = {
-    val __obj = js.Dynamic.literal(entityErrors = entityErrors, httpResponse = httpResponse, message = message)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(entityErrors = entityErrors.asInstanceOf[js.Any], httpResponse = httpResponse.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EntityErrors]
   }

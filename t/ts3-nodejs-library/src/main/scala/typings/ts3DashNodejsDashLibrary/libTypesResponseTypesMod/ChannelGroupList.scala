@@ -31,8 +31,8 @@ object ChannelGroupList {
     sortid: Double,
     `type`: Double
   ): ChannelGroupList = {
-    val __obj = js.Dynamic.literal(cgid = cgid, iconid = iconid, n_member_addp = n_member_addp, n_member_removep = n_member_removep, n_modifyp = n_modifyp, name = name, namemode = namemode, savedb = savedb, sortid = sortid)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(cgid = cgid.asInstanceOf[js.Any], iconid = iconid.asInstanceOf[js.Any], n_member_addp = n_member_addp.asInstanceOf[js.Any], n_member_removep = n_member_removep.asInstanceOf[js.Any], n_modifyp = n_modifyp.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namemode = namemode.asInstanceOf[js.Any], savedb = savedb.asInstanceOf[js.Any], sortid = sortid.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelGroupList]
   }
 }

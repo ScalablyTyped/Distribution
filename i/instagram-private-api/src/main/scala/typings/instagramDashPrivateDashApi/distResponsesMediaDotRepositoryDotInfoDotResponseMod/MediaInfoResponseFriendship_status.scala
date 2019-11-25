@@ -14,7 +14,7 @@ trait MediaInfoResponseFriendship_status extends js.Object {
 object MediaInfoResponseFriendship_status {
   @scala.inline
   def apply(following: Boolean, is_bestie: Boolean, is_restricted: Boolean, outgoing_request: Boolean): MediaInfoResponseFriendship_status = {
-    val __obj = js.Dynamic.literal(following = following, is_bestie = is_bestie, is_restricted = is_restricted, outgoing_request = outgoing_request)
+    val __obj = js.Dynamic.literal(following = following.asInstanceOf[js.Any], is_bestie = is_bestie.asInstanceOf[js.Any], is_restricted = is_restricted.asInstanceOf[js.Any], outgoing_request = outgoing_request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MediaInfoResponseFriendship_status]
   }

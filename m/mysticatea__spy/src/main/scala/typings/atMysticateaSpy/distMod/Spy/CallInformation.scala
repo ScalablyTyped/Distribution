@@ -42,13 +42,13 @@ object CallInformation {
     lastReturnedCall: ReturnedCall[T] = null,
     lastThrownCall: ThrownCall[T] = null
   ): CallInformation[T] = {
-    val __obj = js.Dynamic.literal(calls = calls, reset = js.Any.fromFunction0(reset), returnedCalls = returnedCalls, thrownCalls = thrownCalls)
-    if (firstCall != null) __obj.updateDynamic("firstCall")(firstCall)
-    if (firstReturnedCall != null) __obj.updateDynamic("firstReturnedCall")(firstReturnedCall)
-    if (firstThrownCall != null) __obj.updateDynamic("firstThrownCall")(firstThrownCall)
-    if (lastCall != null) __obj.updateDynamic("lastCall")(lastCall)
-    if (lastReturnedCall != null) __obj.updateDynamic("lastReturnedCall")(lastReturnedCall)
-    if (lastThrownCall != null) __obj.updateDynamic("lastThrownCall")(lastThrownCall)
+    val __obj = js.Dynamic.literal(calls = calls.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), returnedCalls = returnedCalls.asInstanceOf[js.Any], thrownCalls = thrownCalls.asInstanceOf[js.Any])
+    if (firstCall != null) __obj.updateDynamic("firstCall")(firstCall.asInstanceOf[js.Any])
+    if (firstReturnedCall != null) __obj.updateDynamic("firstReturnedCall")(firstReturnedCall.asInstanceOf[js.Any])
+    if (firstThrownCall != null) __obj.updateDynamic("firstThrownCall")(firstThrownCall.asInstanceOf[js.Any])
+    if (lastCall != null) __obj.updateDynamic("lastCall")(lastCall.asInstanceOf[js.Any])
+    if (lastReturnedCall != null) __obj.updateDynamic("lastReturnedCall")(lastReturnedCall.asInstanceOf[js.Any])
+    if (lastThrownCall != null) __obj.updateDynamic("lastThrownCall")(lastThrownCall.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallInformation[T]]
   }
 }

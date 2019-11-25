@@ -14,7 +14,7 @@ trait Anon_MeridiemAM extends js.Object {
 object Anon_MeridiemAM {
   @scala.inline
   def apply(meridiemAM: String, meridiemPM: String): Anon_MeridiemAM = {
-    val __obj = js.Dynamic.literal(meridiemAM = meridiemAM, meridiemPM = meridiemPM)
+    val __obj = js.Dynamic.literal(meridiemAM = meridiemAM.asInstanceOf[js.Any], meridiemPM = meridiemPM.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_MeridiemAM]
   }

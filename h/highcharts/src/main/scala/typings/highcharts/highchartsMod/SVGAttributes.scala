@@ -43,11 +43,11 @@ object SVGAttributes {
     zIndex: Int | Double = null
   ): SVGAttributes = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted)
-    if (matrix != null) __obj.updateDynamic("matrix")(matrix)
+    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.asInstanceOf[js.Any])
+    if (matrix != null) __obj.updateDynamic("matrix")(matrix.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (rotationOriginX != null) __obj.updateDynamic("rotationOriginX")(rotationOriginX.asInstanceOf[js.Any])
     if (rotationOriginY != null) __obj.updateDynamic("rotationOriginY")(rotationOriginY.asInstanceOf[js.Any])

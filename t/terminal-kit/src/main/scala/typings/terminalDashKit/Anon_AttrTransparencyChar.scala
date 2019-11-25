@@ -14,7 +14,7 @@ trait Anon_AttrTransparencyChar extends js.Object {
 object Anon_AttrTransparencyChar {
   @scala.inline
   def apply(attr: Double | Attributes, transparencyChar: String, transparencyType: Double): Anon_AttrTransparencyChar = {
-    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], transparencyChar = transparencyChar, transparencyType = transparencyType)
+    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], transparencyChar = transparencyChar.asInstanceOf[js.Any], transparencyType = transparencyType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AttrTransparencyChar]
   }

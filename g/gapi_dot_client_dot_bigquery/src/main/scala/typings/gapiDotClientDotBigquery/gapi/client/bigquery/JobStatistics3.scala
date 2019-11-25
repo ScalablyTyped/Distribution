@@ -30,11 +30,11 @@ object JobStatistics3 {
     outputRows: String = null
   ): JobStatistics3 = {
     val __obj = js.Dynamic.literal()
-    if (badRecords != null) __obj.updateDynamic("badRecords")(badRecords)
-    if (inputFileBytes != null) __obj.updateDynamic("inputFileBytes")(inputFileBytes)
-    if (inputFiles != null) __obj.updateDynamic("inputFiles")(inputFiles)
-    if (outputBytes != null) __obj.updateDynamic("outputBytes")(outputBytes)
-    if (outputRows != null) __obj.updateDynamic("outputRows")(outputRows)
+    if (badRecords != null) __obj.updateDynamic("badRecords")(badRecords.asInstanceOf[js.Any])
+    if (inputFileBytes != null) __obj.updateDynamic("inputFileBytes")(inputFileBytes.asInstanceOf[js.Any])
+    if (inputFiles != null) __obj.updateDynamic("inputFiles")(inputFiles.asInstanceOf[js.Any])
+    if (outputBytes != null) __obj.updateDynamic("outputBytes")(outputBytes.asInstanceOf[js.Any])
+    if (outputRows != null) __obj.updateDynamic("outputRows")(outputRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobStatistics3]
   }
 }

@@ -66,16 +66,16 @@ object SupressionSearchParameters {
     types: String = null
   ): SupressionSearchParameters = {
     val __obj = js.Dynamic.literal()
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (domain != null) __obj.updateDynamic("domain")(domain)
-    if (from != null) __obj.updateDynamic("from")(from)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
-    if (sources != null) __obj.updateDynamic("sources")(sources)
-    if (to != null) __obj.updateDynamic("to")(to)
-    if (types != null) __obj.updateDynamic("types")(types)
+    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupressionSearchParameters]
   }
 }

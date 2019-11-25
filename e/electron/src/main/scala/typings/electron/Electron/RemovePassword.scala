@@ -49,12 +49,12 @@ object RemovePassword {
     username: String = null
   ): RemovePassword = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (realm != null) __obj.updateDynamic("realm")(realm)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (realm != null) __obj.updateDynamic("realm")(realm.asInstanceOf[js.Any])
     if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemovePassword]
   }
 }

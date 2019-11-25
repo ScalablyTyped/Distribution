@@ -34,17 +34,17 @@ object beginDigitizeOptions {
     styledGeometry: styledGeometry = null,
     suppressNodeAdd: js.UndefOr[Boolean] = js.undefined
   ): beginDigitizeOptions = {
-    val __obj = js.Dynamic.literal(shapeType = shapeType)
+    val __obj = js.Dynamic.literal(shapeType = shapeType.asInstanceOf[js.Any])
     if (circleEndAction != null) __obj.updateDynamic("circleEndAction")(js.Any.fromFunction1(circleEndAction))
     if (envelopeEndAction != null) __obj.updateDynamic("envelopeEndAction")(js.Any.fromFunction1(envelopeEndAction))
-    if (geometryStyle != null) __obj.updateDynamic("geometryStyle")(geometryStyle)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (!js.isUndefined(leavePath)) __obj.updateDynamic("leavePath")(leavePath)
+    if (geometryStyle != null) __obj.updateDynamic("geometryStyle")(geometryStyle.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(leavePath)) __obj.updateDynamic("leavePath")(leavePath.asInstanceOf[js.Any])
     if (nodeMoveAction != null) __obj.updateDynamic("nodeMoveAction")(js.Any.fromFunction3(nodeMoveAction))
     if (nodeTapAndHoldAction != null) __obj.updateDynamic("nodeTapAndHoldAction")(js.Any.fromFunction2(nodeTapAndHoldAction))
     if (shapeChangeAction != null) __obj.updateDynamic("shapeChangeAction")(js.Any.fromFunction0(shapeChangeAction))
-    if (styledGeometry != null) __obj.updateDynamic("styledGeometry")(styledGeometry)
-    if (!js.isUndefined(suppressNodeAdd)) __obj.updateDynamic("suppressNodeAdd")(suppressNodeAdd)
+    if (styledGeometry != null) __obj.updateDynamic("styledGeometry")(styledGeometry.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressNodeAdd)) __obj.updateDynamic("suppressNodeAdd")(suppressNodeAdd.asInstanceOf[js.Any])
     __obj.asInstanceOf[beginDigitizeOptions]
   }
 }

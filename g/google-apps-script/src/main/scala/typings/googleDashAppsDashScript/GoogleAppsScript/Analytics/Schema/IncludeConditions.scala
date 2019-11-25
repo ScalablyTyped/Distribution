@@ -23,10 +23,10 @@ object IncludeConditions {
   ): IncludeConditions = {
     val __obj = js.Dynamic.literal()
     if (daysToLookBack != null) __obj.updateDynamic("daysToLookBack")(daysToLookBack.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSmartList)) __obj.updateDynamic("isSmartList")(isSmartList)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (!js.isUndefined(isSmartList)) __obj.updateDynamic("isSmartList")(isSmartList.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (membershipDurationDays != null) __obj.updateDynamic("membershipDurationDays")(membershipDurationDays.asInstanceOf[js.Any])
-    if (segment != null) __obj.updateDynamic("segment")(segment)
+    if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncludeConditions]
   }
 }

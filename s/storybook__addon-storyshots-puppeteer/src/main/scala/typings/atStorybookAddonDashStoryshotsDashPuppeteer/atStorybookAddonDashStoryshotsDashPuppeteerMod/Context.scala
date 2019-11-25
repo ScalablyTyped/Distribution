@@ -13,7 +13,7 @@ trait Context extends js.Object {
 object Context {
   @scala.inline
   def apply(context: StoryContext, url: String): Context = {
-    val __obj = js.Dynamic.literal(context = context, url = url)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Context]
   }

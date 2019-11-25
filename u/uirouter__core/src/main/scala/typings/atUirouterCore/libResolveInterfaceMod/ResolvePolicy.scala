@@ -92,7 +92,7 @@ object ResolvePolicy {
   def apply(async: PolicyAsync = null, when: PolicyWhen = null): ResolvePolicy = {
     val __obj = js.Dynamic.literal()
     if (async != null) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
-    if (when != null) __obj.updateDynamic("when")(when)
+    if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvePolicy]
   }
 }

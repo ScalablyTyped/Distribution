@@ -14,9 +14,9 @@ object MatchSegment {
   @scala.inline
   def apply(channel: String = null, reference_segment: Segment = null, video_segment: Segment = null): MatchSegment = {
     val __obj = js.Dynamic.literal()
-    if (channel != null) __obj.updateDynamic("channel")(channel)
-    if (reference_segment != null) __obj.updateDynamic("reference_segment")(reference_segment)
-    if (video_segment != null) __obj.updateDynamic("video_segment")(video_segment)
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (reference_segment != null) __obj.updateDynamic("reference_segment")(reference_segment.asInstanceOf[js.Any])
+    if (video_segment != null) __obj.updateDynamic("video_segment")(video_segment.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchSegment]
   }
 }

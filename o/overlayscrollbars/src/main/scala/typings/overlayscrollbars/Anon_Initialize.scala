@@ -16,8 +16,8 @@ object Anon_Initialize {
     showNativeScrollbars: js.UndefOr[Boolean] = js.undefined
   ): Anon_Initialize = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(initialize)) __obj.updateDynamic("initialize")(initialize)
-    if (!js.isUndefined(showNativeScrollbars)) __obj.updateDynamic("showNativeScrollbars")(showNativeScrollbars)
+    if (!js.isUndefined(initialize)) __obj.updateDynamic("initialize")(initialize.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNativeScrollbars)) __obj.updateDynamic("showNativeScrollbars")(showNativeScrollbars.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Initialize]
   }
 }

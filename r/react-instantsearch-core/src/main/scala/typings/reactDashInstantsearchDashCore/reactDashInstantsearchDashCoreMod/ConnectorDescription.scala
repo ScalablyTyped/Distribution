@@ -147,14 +147,14 @@ object ConnectorDescription {
       _
     ] = null
   ): ConnectorDescription[TProvided, TExposed] = {
-    val __obj = js.Dynamic.literal(displayName = displayName, getProvidedProps = js.Any.fromFunction6(getProvidedProps))
-    if (cleanUp != null) __obj.updateDynamic("cleanUp")(cleanUp)
-    if (defaultProps != null) __obj.updateDynamic("defaultProps")(defaultProps)
-    if (getMetadata != null) __obj.updateDynamic("getMetadata")(getMetadata)
-    if (getSearchParameters != null) __obj.updateDynamic("getSearchParameters")(getSearchParameters)
-    if (propTypes != null) __obj.updateDynamic("propTypes")(propTypes)
-    if (refine != null) __obj.updateDynamic("refine")(refine)
-    if (searchForFacetValues != null) __obj.updateDynamic("searchForFacetValues")(searchForFacetValues)
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], getProvidedProps = js.Any.fromFunction6(getProvidedProps))
+    if (cleanUp != null) __obj.updateDynamic("cleanUp")(cleanUp.asInstanceOf[js.Any])
+    if (defaultProps != null) __obj.updateDynamic("defaultProps")(defaultProps.asInstanceOf[js.Any])
+    if (getMetadata != null) __obj.updateDynamic("getMetadata")(getMetadata.asInstanceOf[js.Any])
+    if (getSearchParameters != null) __obj.updateDynamic("getSearchParameters")(getSearchParameters.asInstanceOf[js.Any])
+    if (propTypes != null) __obj.updateDynamic("propTypes")(propTypes.asInstanceOf[js.Any])
+    if (refine != null) __obj.updateDynamic("refine")(refine.asInstanceOf[js.Any])
+    if (searchForFacetValues != null) __obj.updateDynamic("searchForFacetValues")(searchForFacetValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectorDescription[TProvided, TExposed]]
   }
 }

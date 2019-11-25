@@ -17,9 +17,9 @@ object SerializationData {
     requestTypeMetadata: ContractMetadata = null,
     responseTypeMetadata: ContractMetadata = null
   ): SerializationData = {
-    val __obj = js.Dynamic.literal(responseIsCollection = responseIsCollection)
-    if (requestTypeMetadata != null) __obj.updateDynamic("requestTypeMetadata")(requestTypeMetadata)
-    if (responseTypeMetadata != null) __obj.updateDynamic("responseTypeMetadata")(responseTypeMetadata)
+    val __obj = js.Dynamic.literal(responseIsCollection = responseIsCollection.asInstanceOf[js.Any])
+    if (requestTypeMetadata != null) __obj.updateDynamic("requestTypeMetadata")(requestTypeMetadata.asInstanceOf[js.Any])
+    if (responseTypeMetadata != null) __obj.updateDynamic("responseTypeMetadata")(responseTypeMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerializationData]
   }
 }

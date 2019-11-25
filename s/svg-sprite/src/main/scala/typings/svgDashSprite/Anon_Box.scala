@@ -19,7 +19,7 @@ object Anon_Box {
   @scala.inline
   def apply(box: String = null, padding: Double | js.Array[Double] = null): Anon_Box = {
     val __obj = js.Dynamic.literal()
-    if (box != null) __obj.updateDynamic("box")(box)
+    if (box != null) __obj.updateDynamic("box")(box.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Box]
   }

@@ -34,17 +34,17 @@ object ChangingKeyNames {
     typeKey: String = null
   ): ChangingKeyNames = {
     val __obj = js.Dynamic.literal()
-    if (attributesKey != null) __obj.updateDynamic("attributesKey")(attributesKey)
-    if (cdataKey != null) __obj.updateDynamic("cdataKey")(cdataKey)
-    if (commentKey != null) __obj.updateDynamic("commentKey")(commentKey)
-    if (declarationKey != null) __obj.updateDynamic("declarationKey")(declarationKey)
-    if (doctypeKey != null) __obj.updateDynamic("doctypeKey")(doctypeKey)
-    if (elementsKey != null) __obj.updateDynamic("elementsKey")(elementsKey)
-    if (instructionKey != null) __obj.updateDynamic("instructionKey")(instructionKey)
-    if (nameKey != null) __obj.updateDynamic("nameKey")(nameKey)
-    if (parentKey != null) __obj.updateDynamic("parentKey")(parentKey)
-    if (textKey != null) __obj.updateDynamic("textKey")(textKey)
-    if (typeKey != null) __obj.updateDynamic("typeKey")(typeKey)
+    if (attributesKey != null) __obj.updateDynamic("attributesKey")(attributesKey.asInstanceOf[js.Any])
+    if (cdataKey != null) __obj.updateDynamic("cdataKey")(cdataKey.asInstanceOf[js.Any])
+    if (commentKey != null) __obj.updateDynamic("commentKey")(commentKey.asInstanceOf[js.Any])
+    if (declarationKey != null) __obj.updateDynamic("declarationKey")(declarationKey.asInstanceOf[js.Any])
+    if (doctypeKey != null) __obj.updateDynamic("doctypeKey")(doctypeKey.asInstanceOf[js.Any])
+    if (elementsKey != null) __obj.updateDynamic("elementsKey")(elementsKey.asInstanceOf[js.Any])
+    if (instructionKey != null) __obj.updateDynamic("instructionKey")(instructionKey.asInstanceOf[js.Any])
+    if (nameKey != null) __obj.updateDynamic("nameKey")(nameKey.asInstanceOf[js.Any])
+    if (parentKey != null) __obj.updateDynamic("parentKey")(parentKey.asInstanceOf[js.Any])
+    if (textKey != null) __obj.updateDynamic("textKey")(textKey.asInstanceOf[js.Any])
+    if (typeKey != null) __obj.updateDynamic("typeKey")(typeKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangingKeyNames]
   }
 }

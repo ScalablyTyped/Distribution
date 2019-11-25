@@ -25,7 +25,7 @@ object Anon_ActionRequired {
     uninstalled: Double,
     versionUpdated: Double
   ): Anon_ActionRequired = {
-    val __obj = js.Dynamic.literal(actionRequired = actionRequired, actionResolved = actionResolved, disabled = disabled, enabled = enabled, installed = installed, uninstalled = uninstalled, versionUpdated = versionUpdated)
+    val __obj = js.Dynamic.literal(actionRequired = actionRequired.asInstanceOf[js.Any], actionResolved = actionResolved.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], installed = installed.asInstanceOf[js.Any], uninstalled = uninstalled.asInstanceOf[js.Any], versionUpdated = versionUpdated.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ActionRequired]
   }

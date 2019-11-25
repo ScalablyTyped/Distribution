@@ -11,7 +11,7 @@ trait ASN1ObjectParam extends js.Object {
 object ASN1ObjectParam {
   @scala.inline
   def apply(obj: ASN1Object): ASN1ObjectParam = {
-    val __obj = js.Dynamic.literal(obj = obj)
+    val __obj = js.Dynamic.literal(obj = obj.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ASN1ObjectParam]
   }

@@ -18,7 +18,7 @@ trait Anon_Dropchance extends js.Object {
 object Anon_Dropchance {
   @scala.inline
   def apply(drop_chance: Double, slot: Double): Anon_Dropchance = {
-    val __obj = js.Dynamic.literal(drop_chance = drop_chance, slot = slot)
+    val __obj = js.Dynamic.literal(drop_chance = drop_chance.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Dropchance]
   }

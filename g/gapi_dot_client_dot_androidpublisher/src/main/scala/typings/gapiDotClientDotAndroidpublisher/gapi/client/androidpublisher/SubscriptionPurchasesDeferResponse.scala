@@ -13,7 +13,7 @@ object SubscriptionPurchasesDeferResponse {
   @scala.inline
   def apply(newExpiryTimeMillis: String = null): SubscriptionPurchasesDeferResponse = {
     val __obj = js.Dynamic.literal()
-    if (newExpiryTimeMillis != null) __obj.updateDynamic("newExpiryTimeMillis")(newExpiryTimeMillis)
+    if (newExpiryTimeMillis != null) __obj.updateDynamic("newExpiryTimeMillis")(newExpiryTimeMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionPurchasesDeferResponse]
   }
 }

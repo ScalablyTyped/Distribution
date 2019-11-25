@@ -14,7 +14,7 @@ trait WrappableResponse extends js.Object {
 object WrappableResponse {
   @scala.inline
   def apply(destroy: () => js.Any, headers: Anon_Location, statusCode: Int | Double = null): WrappableResponse = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), headers = headers)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), headers = headers.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[WrappableResponse]
   }

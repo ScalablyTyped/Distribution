@@ -13,7 +13,7 @@ trait Anon_HeightMarginRight extends js.Object {
 object Anon_HeightMarginRight {
   @scala.inline
   def apply(height: Double, marginRight: Double, width: Double): Anon_HeightMarginRight = {
-    val __obj = js.Dynamic.literal(height = height, marginRight = marginRight, width = width)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], marginRight = marginRight.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_HeightMarginRight]
   }

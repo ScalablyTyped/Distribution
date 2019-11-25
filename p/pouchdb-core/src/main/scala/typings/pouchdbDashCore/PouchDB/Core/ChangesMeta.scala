@@ -18,9 +18,9 @@ object ChangesMeta {
     _deleted: js.UndefOr[Boolean] = js.undefined
   ): ChangesMeta = {
     val __obj = js.Dynamic.literal()
-    if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments)
-    if (_conflicts != null) __obj.updateDynamic("_conflicts")(_conflicts)
-    if (!js.isUndefined(_deleted)) __obj.updateDynamic("_deleted")(_deleted)
+    if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments.asInstanceOf[js.Any])
+    if (_conflicts != null) __obj.updateDynamic("_conflicts")(_conflicts.asInstanceOf[js.Any])
+    if (!js.isUndefined(_deleted)) __obj.updateDynamic("_deleted")(_deleted.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangesMeta]
   }
 }

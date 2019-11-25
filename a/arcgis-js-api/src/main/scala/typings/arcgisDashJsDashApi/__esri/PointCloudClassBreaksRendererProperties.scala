@@ -50,12 +50,12 @@ object PointCloudClassBreaksRendererProperties {
     pointsPerInch: Int | Double = null
   ): PointCloudClassBreaksRendererProperties = {
     val __obj = js.Dynamic.literal()
-    if (colorClassBreakInfos != null) __obj.updateDynamic("colorClassBreakInfos")(colorClassBreakInfos)
-    if (colorModulation != null) __obj.updateDynamic("colorModulation")(colorModulation)
-    if (field != null) __obj.updateDynamic("field")(field)
+    if (colorClassBreakInfos != null) __obj.updateDynamic("colorClassBreakInfos")(colorClassBreakInfos.asInstanceOf[js.Any])
+    if (colorModulation != null) __obj.updateDynamic("colorModulation")(colorModulation.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (fieldTransformType != null) __obj.updateDynamic("fieldTransformType")(fieldTransformType.asInstanceOf[js.Any])
-    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
-    if (pointSizeAlgorithm != null) __obj.updateDynamic("pointSizeAlgorithm")(pointSizeAlgorithm)
+    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
+    if (pointSizeAlgorithm != null) __obj.updateDynamic("pointSizeAlgorithm")(pointSizeAlgorithm.asInstanceOf[js.Any])
     if (pointsPerInch != null) __obj.updateDynamic("pointsPerInch")(pointsPerInch.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointCloudClassBreaksRendererProperties]
   }

@@ -13,8 +13,8 @@ object Anon_Hi {
   @scala.inline
   def apply(hi: Anon_Latitude = null, lo: Anon_Latitude = null): Anon_Hi = {
     val __obj = js.Dynamic.literal()
-    if (hi != null) __obj.updateDynamic("hi")(hi)
-    if (lo != null) __obj.updateDynamic("lo")(lo)
+    if (hi != null) __obj.updateDynamic("hi")(hi.asInstanceOf[js.Any])
+    if (lo != null) __obj.updateDynamic("lo")(lo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Hi]
   }
 }

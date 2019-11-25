@@ -29,8 +29,8 @@ trait Event extends js.Object {
 object Event {
   @scala.inline
   def apply(bubbles: Boolean, cancelBubble: Boolean, source: js.Any, `type`: String): Event = {
-    val __obj = js.Dynamic.literal(bubbles = bubbles, cancelBubble = cancelBubble, source = source)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
 }

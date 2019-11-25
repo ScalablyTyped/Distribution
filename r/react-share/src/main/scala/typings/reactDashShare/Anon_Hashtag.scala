@@ -19,8 +19,8 @@ object Anon_Hashtag {
   @scala.inline
   def apply(hashtag: String = null, quote: String = null): Anon_Hashtag = {
     val __obj = js.Dynamic.literal()
-    if (hashtag != null) __obj.updateDynamic("hashtag")(hashtag)
-    if (quote != null) __obj.updateDynamic("quote")(quote)
+    if (hashtag != null) __obj.updateDynamic("hashtag")(hashtag.asInstanceOf[js.Any])
+    if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Hashtag]
   }
 }

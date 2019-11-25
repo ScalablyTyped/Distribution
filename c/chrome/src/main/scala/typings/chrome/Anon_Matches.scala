@@ -13,8 +13,8 @@ object Anon_Matches {
   @scala.inline
   def apply(matches: js.Array[String] = null, permissions: js.Array[String] = null): Anon_Matches = {
     val __obj = js.Dynamic.literal()
-    if (matches != null) __obj.updateDynamic("matches")(matches)
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    if (matches != null) __obj.updateDynamic("matches")(matches.asInstanceOf[js.Any])
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Matches]
   }
 }

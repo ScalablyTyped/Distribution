@@ -17,8 +17,8 @@ object DrillThroughEventArgs {
   @scala.inline
   def apply(data: js.Any = null, element: js.Any = null): DrillThroughEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (element != null) __obj.updateDynamic("element")(element)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrillThroughEventArgs]
   }
 }

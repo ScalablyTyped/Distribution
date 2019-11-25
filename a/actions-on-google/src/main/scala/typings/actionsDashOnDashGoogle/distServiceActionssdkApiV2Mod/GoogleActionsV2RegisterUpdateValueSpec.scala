@@ -29,9 +29,9 @@ object GoogleActionsV2RegisterUpdateValueSpec {
     triggerContext: GoogleActionsV2TriggerContext = null
   ): GoogleActionsV2RegisterUpdateValueSpec = {
     val __obj = js.Dynamic.literal()
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
-    if (intent != null) __obj.updateDynamic("intent")(intent)
-    if (triggerContext != null) __obj.updateDynamic("triggerContext")(triggerContext)
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
+    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
+    if (triggerContext != null) __obj.updateDynamic("triggerContext")(triggerContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2RegisterUpdateValueSpec]
   }
 }

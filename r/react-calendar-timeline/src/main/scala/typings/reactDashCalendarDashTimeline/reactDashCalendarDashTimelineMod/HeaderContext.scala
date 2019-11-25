@@ -13,7 +13,7 @@ trait HeaderContext extends js.Object {
 object HeaderContext {
   @scala.inline
   def apply(intervals: js.Array[Anon_EndTimeStartTime], unit: String): HeaderContext = {
-    val __obj = js.Dynamic.literal(intervals = intervals, unit = unit)
+    val __obj = js.Dynamic.literal(intervals = intervals.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HeaderContext]
   }

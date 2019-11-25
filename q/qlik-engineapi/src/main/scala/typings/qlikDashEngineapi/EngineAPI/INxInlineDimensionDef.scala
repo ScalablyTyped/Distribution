@@ -61,12 +61,12 @@ object INxInlineDimensionDef {
   ): INxInlineDimensionDef = {
     val __obj = js.Dynamic.literal()
     if (qActiveField != null) __obj.updateDynamic("qActiveField")(qActiveField.asInstanceOf[js.Any])
-    if (qFieldDefs != null) __obj.updateDynamic("qFieldDefs")(qFieldDefs)
-    if (qFieldLabels != null) __obj.updateDynamic("qFieldLabels")(qFieldLabels)
+    if (qFieldDefs != null) __obj.updateDynamic("qFieldDefs")(qFieldDefs.asInstanceOf[js.Any])
+    if (qFieldLabels != null) __obj.updateDynamic("qFieldLabels")(qFieldLabels.asInstanceOf[js.Any])
     if (qGrouping != null) __obj.updateDynamic("qGrouping")(qGrouping.asInstanceOf[js.Any])
-    if (qNumberPresentations != null) __obj.updateDynamic("qNumberPresentations")(qNumberPresentations)
-    if (!js.isUndefined(qReverseSort)) __obj.updateDynamic("qReverseSort")(qReverseSort)
-    if (qSortCriterias != null) __obj.updateDynamic("qSortCriterias")(qSortCriterias)
+    if (qNumberPresentations != null) __obj.updateDynamic("qNumberPresentations")(qNumberPresentations.asInstanceOf[js.Any])
+    if (!js.isUndefined(qReverseSort)) __obj.updateDynamic("qReverseSort")(qReverseSort.asInstanceOf[js.Any])
+    if (qSortCriterias != null) __obj.updateDynamic("qSortCriterias")(qSortCriterias.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxInlineDimensionDef]
   }
 }

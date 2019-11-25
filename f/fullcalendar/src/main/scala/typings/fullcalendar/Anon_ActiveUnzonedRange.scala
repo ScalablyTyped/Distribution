@@ -33,7 +33,7 @@ object Anon_ActiveUnzonedRange {
     renderUnzonedRange: js.Any,
     validUnzonedRange: js.Any
   ): Anon_ActiveUnzonedRange = {
-    val __obj = js.Dynamic.literal(activeUnzonedRange = activeUnzonedRange, currentRangeUnit = currentRangeUnit, currentUnzonedRange = currentUnzonedRange, date = date, dateIncrement = dateIncrement, isRangeAllDay = isRangeAllDay, isValid = isValid, maxTime = maxTime, minTime = minTime, renderUnzonedRange = renderUnzonedRange, validUnzonedRange = validUnzonedRange)
+    val __obj = js.Dynamic.literal(activeUnzonedRange = activeUnzonedRange.asInstanceOf[js.Any], currentRangeUnit = currentRangeUnit.asInstanceOf[js.Any], currentUnzonedRange = currentUnzonedRange.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], dateIncrement = dateIncrement.asInstanceOf[js.Any], isRangeAllDay = isRangeAllDay.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any], maxTime = maxTime.asInstanceOf[js.Any], minTime = minTime.asInstanceOf[js.Any], renderUnzonedRange = renderUnzonedRange.asInstanceOf[js.Any], validUnzonedRange = validUnzonedRange.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ActiveUnzonedRange]
   }

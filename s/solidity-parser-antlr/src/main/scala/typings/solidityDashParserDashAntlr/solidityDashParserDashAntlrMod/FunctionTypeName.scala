@@ -27,10 +27,10 @@ object FunctionTypeName {
     loc: Location = null,
     range: js.Tuple2[Double, Double] = null
   ): FunctionTypeName = {
-    val __obj = js.Dynamic.literal(parameterTypes = parameterTypes, returnTypes = returnTypes, stateMutability = stateMutability, visibility = visibility)
-    __obj.updateDynamic("type")(`type`)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (range != null) __obj.updateDynamic("range")(range)
+    val __obj = js.Dynamic.literal(parameterTypes = parameterTypes.asInstanceOf[js.Any], returnTypes = returnTypes.asInstanceOf[js.Any], stateMutability = stateMutability.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionTypeName]
   }
 }

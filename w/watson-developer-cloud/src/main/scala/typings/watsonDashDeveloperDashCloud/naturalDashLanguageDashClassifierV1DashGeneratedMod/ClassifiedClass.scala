@@ -16,7 +16,7 @@ object ClassifiedClass {
   @scala.inline
   def apply(class_name: String = null, confidence: Int | Double = null): ClassifiedClass = {
     val __obj = js.Dynamic.literal()
-    if (class_name != null) __obj.updateDynamic("class_name")(class_name)
+    if (class_name != null) __obj.updateDynamic("class_name")(class_name.asInstanceOf[js.Any])
     if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifiedClass]
   }

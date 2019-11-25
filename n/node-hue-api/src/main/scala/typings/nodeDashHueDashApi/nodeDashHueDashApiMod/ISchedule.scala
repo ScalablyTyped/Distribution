@@ -16,7 +16,7 @@ trait ISchedule extends js.Object {
 object ISchedule {
   @scala.inline
   def apply(command: Anon_Address, description: String, name: String, time: Date): ISchedule = {
-    val __obj = js.Dynamic.literal(command = command, description = description, name = name, time = time)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISchedule]
   }

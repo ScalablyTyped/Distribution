@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ContextSession extends js.Object {
-  var app: /* import warning: ImportType.apply Failed type conversion: koa-session.koa-session.koa.Context['app'] */ js.Any
+  var app: /* import warning: importer.ImportType#apply Failed type conversion: koa-session.koa-session.koa.Context['app'] */ js.Any
   var ctx: Context
   var opts: typings.koaDashSession.koaDashSessionMod.opts
   var prevHash: String
@@ -35,7 +35,7 @@ trait ContextSession extends js.Object {
 object ContextSession {
   @scala.inline
   def apply(
-    app: /* import warning: ImportType.apply Failed type conversion: koa-session.koa-session.koa.Context['app'] */ js.Any,
+    app: /* import warning: importer.ImportType#apply Failed type conversion: koa-session.koa-session.koa.Context['app'] */ js.Any,
     commit: () => js.Promise[Unit],
     ctx: Context,
     get: () => Session,
@@ -46,7 +46,7 @@ object ContextSession {
     set: js.Any => Unit,
     store: stores
   ): ContextSession = {
-    val __obj = js.Dynamic.literal(app = app, commit = js.Any.fromFunction0(commit), ctx = ctx, get = js.Any.fromFunction0(get), initFromExternal = js.Any.fromFunction0(initFromExternal), opts = opts, prevHash = prevHash, session = session.asInstanceOf[js.Any], set = js.Any.fromFunction1(set), store = store)
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], commit = js.Any.fromFunction0(commit), ctx = ctx.asInstanceOf[js.Any], get = js.Any.fromFunction0(get), initFromExternal = js.Any.fromFunction0(initFromExternal), opts = opts.asInstanceOf[js.Any], prevHash = prevHash.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], set = js.Any.fromFunction1(set), store = store.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContextSession]
   }

@@ -13,7 +13,7 @@ trait Anon_Quotient extends js.Object {
 object Anon_Quotient {
   @scala.inline
   def apply(quotient: BigInteger, remainder: BigInteger): Anon_Quotient = {
-    val __obj = js.Dynamic.literal(quotient = quotient, remainder = remainder)
+    val __obj = js.Dynamic.literal(quotient = quotient.asInstanceOf[js.Any], remainder = remainder.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Quotient]
   }

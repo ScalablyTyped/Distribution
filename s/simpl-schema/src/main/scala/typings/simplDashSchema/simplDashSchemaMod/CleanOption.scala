@@ -28,14 +28,14 @@ object CleanOption {
     trimStrings: js.UndefOr[Boolean] = js.undefined
   ): CleanOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoConvert)) __obj.updateDynamic("autoConvert")(autoConvert)
-    if (!js.isUndefined(extendAutoValueContext)) __obj.updateDynamic("extendAutoValueContext")(extendAutoValueContext)
-    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter)
-    if (!js.isUndefined(getAutoValues)) __obj.updateDynamic("getAutoValues")(getAutoValues)
-    if (!js.isUndefined(isModifier)) __obj.updateDynamic("isModifier")(isModifier)
-    if (!js.isUndefined(removeEmptyStrings)) __obj.updateDynamic("removeEmptyStrings")(removeEmptyStrings)
-    if (!js.isUndefined(removeNullsFromArrays)) __obj.updateDynamic("removeNullsFromArrays")(removeNullsFromArrays)
-    if (!js.isUndefined(trimStrings)) __obj.updateDynamic("trimStrings")(trimStrings)
+    if (!js.isUndefined(autoConvert)) __obj.updateDynamic("autoConvert")(autoConvert.asInstanceOf[js.Any])
+    if (!js.isUndefined(extendAutoValueContext)) __obj.updateDynamic("extendAutoValueContext")(extendAutoValueContext.asInstanceOf[js.Any])
+    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (!js.isUndefined(getAutoValues)) __obj.updateDynamic("getAutoValues")(getAutoValues.asInstanceOf[js.Any])
+    if (!js.isUndefined(isModifier)) __obj.updateDynamic("isModifier")(isModifier.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeEmptyStrings)) __obj.updateDynamic("removeEmptyStrings")(removeEmptyStrings.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeNullsFromArrays)) __obj.updateDynamic("removeNullsFromArrays")(removeNullsFromArrays.asInstanceOf[js.Any])
+    if (!js.isUndefined(trimStrings)) __obj.updateDynamic("trimStrings")(trimStrings.asInstanceOf[js.Any])
     __obj.asInstanceOf[CleanOption]
   }
 }

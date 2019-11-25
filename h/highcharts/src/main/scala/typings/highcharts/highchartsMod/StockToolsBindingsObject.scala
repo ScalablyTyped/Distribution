@@ -38,11 +38,11 @@ object StockToolsBindingsObject {
     steps: js.Array[js.Function] = null
   ): StockToolsBindingsObject = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (init != null) __obj.updateDynamic("init")(init)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (steps != null) __obj.updateDynamic("steps")(steps)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockToolsBindingsObject]
   }
 }

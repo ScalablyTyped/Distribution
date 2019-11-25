@@ -15,8 +15,8 @@ object ParseOptions {
   def apply(concurrency: Int | Double = null, path: String = null, verbose: js.UndefOr[Boolean] = js.undefined): ParseOptions = {
     val __obj = js.Dynamic.literal()
     if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }
 }

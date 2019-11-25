@@ -15,7 +15,7 @@ trait IState extends js.Object {
 object IState {
   @scala.inline
   def apply(content: String, hasCache: Boolean, status: String, element: ReactNode = null): IState = {
-    val __obj = js.Dynamic.literal(content = content, hasCache = hasCache, status = status)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], hasCache = hasCache.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     __obj.asInstanceOf[IState]
   }

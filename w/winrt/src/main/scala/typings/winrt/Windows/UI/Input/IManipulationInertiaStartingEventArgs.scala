@@ -23,7 +23,7 @@ object IManipulationInertiaStartingEventArgs {
     position: Point,
     velocities: ManipulationVelocities
   ): IManipulationInertiaStartingEventArgs = {
-    val __obj = js.Dynamic.literal(cumulative = cumulative, delta = delta, pointerDeviceType = pointerDeviceType, position = position, velocities = velocities)
+    val __obj = js.Dynamic.literal(cumulative = cumulative.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], pointerDeviceType = pointerDeviceType.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], velocities = velocities.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IManipulationInertiaStartingEventArgs]
   }

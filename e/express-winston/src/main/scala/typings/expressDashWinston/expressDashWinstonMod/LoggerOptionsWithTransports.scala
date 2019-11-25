@@ -6,7 +6,6 @@ import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDash
 import typings.expressDashWinston.Anon_Error
 import typings.logform.logformMod.Format
 import typings.std.Error
-import typings.winstonDashTransport.winstonDashTransportMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,13 +13,13 @@ import scala.scalajs.js.annotation._
 trait LoggerOptionsWithTransports
   extends BaseLoggerOptions
      with LoggerOptions {
-  var transports: js.Array[^]
+  var transports: js.Array[typings.winstonDashTransport.winstonDashTransportMod.^]
 }
 
 object LoggerOptionsWithTransports {
   @scala.inline
   def apply(
-    transports: js.Array[^],
+    transports: js.Array[typings.winstonDashTransport.winstonDashTransportMod.^],
     baseMeta: js.Object = null,
     bodyBlacklist: js.Array[String] = null,
     bodyWhitelist: js.Array[String] = null,
@@ -44,29 +43,29 @@ object LoggerOptionsWithTransports {
     skip: (/* req */ Request[ParamsDictionary], /* res */ Response) => Boolean = null,
     statusLevels: Anon_Error = null
   ): LoggerOptionsWithTransports = {
-    val __obj = js.Dynamic.literal(transports = transports)
-    if (baseMeta != null) __obj.updateDynamic("baseMeta")(baseMeta)
-    if (bodyBlacklist != null) __obj.updateDynamic("bodyBlacklist")(bodyBlacklist)
-    if (bodyWhitelist != null) __obj.updateDynamic("bodyWhitelist")(bodyWhitelist)
-    if (!js.isUndefined(colorize)) __obj.updateDynamic("colorize")(colorize)
+    val __obj = js.Dynamic.literal(transports = transports.asInstanceOf[js.Any])
+    if (baseMeta != null) __obj.updateDynamic("baseMeta")(baseMeta.asInstanceOf[js.Any])
+    if (bodyBlacklist != null) __obj.updateDynamic("bodyBlacklist")(bodyBlacklist.asInstanceOf[js.Any])
+    if (bodyWhitelist != null) __obj.updateDynamic("bodyWhitelist")(bodyWhitelist.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorize)) __obj.updateDynamic("colorize")(colorize.asInstanceOf[js.Any])
     if (dynamicMeta != null) __obj.updateDynamic("dynamicMeta")(js.Any.fromFunction3(dynamicMeta))
-    if (!js.isUndefined(expressFormat)) __obj.updateDynamic("expressFormat")(expressFormat)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (headerBlacklist != null) __obj.updateDynamic("headerBlacklist")(headerBlacklist)
+    if (!js.isUndefined(expressFormat)) __obj.updateDynamic("expressFormat")(expressFormat.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (headerBlacklist != null) __obj.updateDynamic("headerBlacklist")(headerBlacklist.asInstanceOf[js.Any])
     if (ignoreRoute != null) __obj.updateDynamic("ignoreRoute")(js.Any.fromFunction2(ignoreRoute))
-    if (ignoredRoutes != null) __obj.updateDynamic("ignoredRoutes")(ignoredRoutes)
+    if (ignoredRoutes != null) __obj.updateDynamic("ignoredRoutes")(ignoredRoutes.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(meta)) __obj.updateDynamic("meta")(meta)
-    if (metaField != null) __obj.updateDynamic("metaField")(metaField)
+    if (!js.isUndefined(meta)) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (metaField != null) __obj.updateDynamic("metaField")(metaField.asInstanceOf[js.Any])
     if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])
-    if (requestField != null) __obj.updateDynamic("requestField")(requestField)
+    if (requestField != null) __obj.updateDynamic("requestField")(requestField.asInstanceOf[js.Any])
     if (requestFilter != null) __obj.updateDynamic("requestFilter")(js.Any.fromFunction2(requestFilter))
-    if (requestWhitelist != null) __obj.updateDynamic("requestWhitelist")(requestWhitelist)
-    if (responseField != null) __obj.updateDynamic("responseField")(responseField)
+    if (requestWhitelist != null) __obj.updateDynamic("requestWhitelist")(requestWhitelist.asInstanceOf[js.Any])
+    if (responseField != null) __obj.updateDynamic("responseField")(responseField.asInstanceOf[js.Any])
     if (responseFilter != null) __obj.updateDynamic("responseFilter")(js.Any.fromFunction2(responseFilter))
-    if (responseWhitelist != null) __obj.updateDynamic("responseWhitelist")(responseWhitelist)
+    if (responseWhitelist != null) __obj.updateDynamic("responseWhitelist")(responseWhitelist.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(js.Any.fromFunction2(skip))
-    if (statusLevels != null) __obj.updateDynamic("statusLevels")(statusLevels)
+    if (statusLevels != null) __obj.updateDynamic("statusLevels")(statusLevels.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggerOptionsWithTransports]
   }
 }

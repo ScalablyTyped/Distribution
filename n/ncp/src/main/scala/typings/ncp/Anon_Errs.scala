@@ -12,7 +12,7 @@ object Anon_Errs {
   @scala.inline
   def apply(errs: js.UndefOr[scala.Nothing] = js.undefined): Anon_Errs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(errs)) __obj.updateDynamic("errs")(errs)
+    if (!js.isUndefined(errs)) __obj.updateDynamic("errs")(errs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Errs]
   }
 }

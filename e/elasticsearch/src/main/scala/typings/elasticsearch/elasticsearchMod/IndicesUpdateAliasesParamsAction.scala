@@ -17,9 +17,9 @@ object IndicesUpdateAliasesParamsAction {
   @scala.inline
   def apply(add: Anon_Alias = null, remove: Anon_AliasIndex = null, remove_index: Anon_IndexString = null): IndicesUpdateAliasesParamsAction = {
     val __obj = js.Dynamic.literal()
-    if (add != null) __obj.updateDynamic("add")(add)
-    if (remove != null) __obj.updateDynamic("remove")(remove)
-    if (remove_index != null) __obj.updateDynamic("remove_index")(remove_index)
+    if (add != null) __obj.updateDynamic("add")(add.asInstanceOf[js.Any])
+    if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
+    if (remove_index != null) __obj.updateDynamic("remove_index")(remove_index.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesUpdateAliasesParamsAction]
   }
 }

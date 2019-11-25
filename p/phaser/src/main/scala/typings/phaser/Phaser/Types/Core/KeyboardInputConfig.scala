@@ -20,8 +20,8 @@ object KeyboardInputConfig {
   @scala.inline
   def apply(capture: js.Array[integer] = null, target: js.Any = null): KeyboardInputConfig = {
     val __obj = js.Dynamic.literal()
-    if (capture != null) __obj.updateDynamic("capture")(capture)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (capture != null) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardInputConfig]
   }
 }

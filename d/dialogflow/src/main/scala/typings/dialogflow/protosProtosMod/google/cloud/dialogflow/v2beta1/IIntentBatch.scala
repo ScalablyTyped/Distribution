@@ -14,7 +14,7 @@ object IIntentBatch {
   @scala.inline
   def apply(intents: js.Array[IIntent] = null): IIntentBatch = {
     val __obj = js.Dynamic.literal()
-    if (intents != null) __obj.updateDynamic("intents")(intents)
+    if (intents != null) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIntentBatch]
   }
 }

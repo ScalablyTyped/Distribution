@@ -14,7 +14,7 @@ trait Anon_NodeOriginalEvent extends js.Object {
 object Anon_NodeOriginalEvent {
   @scala.inline
   def apply(node: TreeNode, originalEvent: Event): Anon_NodeOriginalEvent = {
-    val __obj = js.Dynamic.literal(node = node, originalEvent = originalEvent)
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NodeOriginalEvent]
   }

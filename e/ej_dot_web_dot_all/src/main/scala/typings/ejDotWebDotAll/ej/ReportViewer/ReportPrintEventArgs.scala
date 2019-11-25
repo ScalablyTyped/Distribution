@@ -14,7 +14,7 @@ object ReportPrintEventArgs {
   @scala.inline
   def apply(isStyleLoad: js.UndefOr[Boolean] = js.undefined): ReportPrintEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isStyleLoad)) __obj.updateDynamic("isStyleLoad")(isStyleLoad)
+    if (!js.isUndefined(isStyleLoad)) __obj.updateDynamic("isStyleLoad")(isStyleLoad.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportPrintEventArgs]
   }
 }

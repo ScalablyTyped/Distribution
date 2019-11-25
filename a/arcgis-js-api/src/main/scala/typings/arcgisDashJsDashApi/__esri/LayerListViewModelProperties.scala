@@ -23,7 +23,7 @@ object LayerListViewModelProperties {
   @scala.inline
   def apply(listItemCreatedFunction: js.Function = null, view: MapViewProperties | SceneViewProperties = null): LayerListViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (listItemCreatedFunction != null) __obj.updateDynamic("listItemCreatedFunction")(listItemCreatedFunction)
+    if (listItemCreatedFunction != null) __obj.updateDynamic("listItemCreatedFunction")(listItemCreatedFunction.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerListViewModelProperties]
   }

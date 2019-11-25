@@ -20,8 +20,8 @@ object EnumTypeDefinition {
     format: `Protocol Buffer 3 EnumDescriptorProto`,
     `type`: js.Object
   ): EnumTypeDefinition = {
-    val __obj = js.Dynamic.literal(fileDescriptorProtos = fileDescriptorProtos, format = format)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(fileDescriptorProtos = fileDescriptorProtos.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumTypeDefinition]
   }
 }

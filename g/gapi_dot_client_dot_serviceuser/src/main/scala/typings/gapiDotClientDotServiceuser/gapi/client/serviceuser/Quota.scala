@@ -18,8 +18,8 @@ object Quota {
   @scala.inline
   def apply(limits: js.Array[QuotaLimit] = null, metricRules: js.Array[MetricRule] = null): Quota = {
     val __obj = js.Dynamic.literal()
-    if (limits != null) __obj.updateDynamic("limits")(limits)
-    if (metricRules != null) __obj.updateDynamic("metricRules")(metricRules)
+    if (limits != null) __obj.updateDynamic("limits")(limits.asInstanceOf[js.Any])
+    if (metricRules != null) __obj.updateDynamic("metricRules")(metricRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[Quota]
   }
 }

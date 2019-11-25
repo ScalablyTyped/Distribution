@@ -25,12 +25,12 @@ object OfflineOptions {
     interceptRequests: js.UndefOr[Boolean] = js.undefined,
     requests: js.UndefOr[Boolean] = js.undefined
   ): OfflineOptions = {
-    val __obj = js.Dynamic.literal(reconnect = reconnect)
-    if (!js.isUndefined(checkOnLoad)) __obj.updateDynamic("checkOnLoad")(checkOnLoad)
-    if (checks != null) __obj.updateDynamic("checks")(checks)
-    if (!js.isUndefined(game)) __obj.updateDynamic("game")(game)
-    if (!js.isUndefined(interceptRequests)) __obj.updateDynamic("interceptRequests")(interceptRequests)
-    if (!js.isUndefined(requests)) __obj.updateDynamic("requests")(requests)
+    val __obj = js.Dynamic.literal(reconnect = reconnect.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkOnLoad)) __obj.updateDynamic("checkOnLoad")(checkOnLoad.asInstanceOf[js.Any])
+    if (checks != null) __obj.updateDynamic("checks")(checks.asInstanceOf[js.Any])
+    if (!js.isUndefined(game)) __obj.updateDynamic("game")(game.asInstanceOf[js.Any])
+    if (!js.isUndefined(interceptRequests)) __obj.updateDynamic("interceptRequests")(interceptRequests.asInstanceOf[js.Any])
+    if (!js.isUndefined(requests)) __obj.updateDynamic("requests")(requests.asInstanceOf[js.Any])
     __obj.asInstanceOf[OfflineOptions]
   }
 }

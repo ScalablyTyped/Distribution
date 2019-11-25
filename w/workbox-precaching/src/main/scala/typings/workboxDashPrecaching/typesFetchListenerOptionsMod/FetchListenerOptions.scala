@@ -24,9 +24,9 @@ object FetchListenerOptions {
     urlManipulation: /* url */ Anon_Url => js.Array[URL] = null
   ): FetchListenerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cleanURLs)) __obj.updateDynamic("cleanURLs")(cleanURLs)
-    if (directoryIndex != null) __obj.updateDynamic("directoryIndex")(directoryIndex)
-    if (ignoreURLParametersMatching != null) __obj.updateDynamic("ignoreURLParametersMatching")(ignoreURLParametersMatching)
+    if (!js.isUndefined(cleanURLs)) __obj.updateDynamic("cleanURLs")(cleanURLs.asInstanceOf[js.Any])
+    if (directoryIndex != null) __obj.updateDynamic("directoryIndex")(directoryIndex.asInstanceOf[js.Any])
+    if (ignoreURLParametersMatching != null) __obj.updateDynamic("ignoreURLParametersMatching")(ignoreURLParametersMatching.asInstanceOf[js.Any])
     if (urlManipulation != null) __obj.updateDynamic("urlManipulation")(js.Any.fromFunction1(urlManipulation))
     __obj.asInstanceOf[FetchListenerOptions]
   }

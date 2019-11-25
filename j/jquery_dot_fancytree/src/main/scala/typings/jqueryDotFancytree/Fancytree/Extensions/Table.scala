@@ -38,8 +38,8 @@ object Table {
     */
   /* key */ StringDictionary[js.Any] = null
   ): Table = {
-    val __obj = js.Dynamic.literal(checkboxColumnIdx = checkboxColumnIdx, indentation = indentation, nodeColumnIdx = nodeColumnIdx)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(checkboxColumnIdx = checkboxColumnIdx.asInstanceOf[js.Any], indentation = indentation.asInstanceOf[js.Any], nodeColumnIdx = nodeColumnIdx.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Table]
   }
 }

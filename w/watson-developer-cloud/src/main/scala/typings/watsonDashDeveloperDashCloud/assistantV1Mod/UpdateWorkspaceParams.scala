@@ -52,20 +52,20 @@ object UpdateWorkspaceParams {
     return_response: js.UndefOr[Boolean] = js.undefined,
     system_settings: WorkspaceSystemSettings = null
   ): UpdateWorkspaceParams = {
-    val __obj = js.Dynamic.literal(workspace_id = workspace_id)
-    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append)
-    if (counterexamples != null) __obj.updateDynamic("counterexamples")(counterexamples)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (dialog_nodes != null) __obj.updateDynamic("dialog_nodes")(dialog_nodes)
-    if (entities != null) __obj.updateDynamic("entities")(entities)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (intents != null) __obj.updateDynamic("intents")(intents)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (!js.isUndefined(learning_opt_out)) __obj.updateDynamic("learning_opt_out")(learning_opt_out)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
-    if (system_settings != null) __obj.updateDynamic("system_settings")(system_settings)
+    val __obj = js.Dynamic.literal(workspace_id = workspace_id.asInstanceOf[js.Any])
+    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append.asInstanceOf[js.Any])
+    if (counterexamples != null) __obj.updateDynamic("counterexamples")(counterexamples.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (dialog_nodes != null) __obj.updateDynamic("dialog_nodes")(dialog_nodes.asInstanceOf[js.Any])
+    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (intents != null) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (!js.isUndefined(learning_opt_out)) __obj.updateDynamic("learning_opt_out")(learning_opt_out.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
+    if (system_settings != null) __obj.updateDynamic("system_settings")(system_settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateWorkspaceParams]
   }
 }

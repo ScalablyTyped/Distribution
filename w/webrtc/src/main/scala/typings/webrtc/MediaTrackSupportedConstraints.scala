@@ -36,18 +36,18 @@ object MediaTrackSupportedConstraints {
     width: js.UndefOr[Boolean] = js.undefined
   ): MediaTrackSupportedConstraints = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(aspectRatio)) __obj.updateDynamic("aspectRatio")(aspectRatio)
-    if (!js.isUndefined(deviceId)) __obj.updateDynamic("deviceId")(deviceId)
-    if (!js.isUndefined(echoCancellation)) __obj.updateDynamic("echoCancellation")(echoCancellation)
-    if (!js.isUndefined(facingMode)) __obj.updateDynamic("facingMode")(facingMode)
-    if (!js.isUndefined(frameRate)) __obj.updateDynamic("frameRate")(frameRate)
-    if (!js.isUndefined(groupId)) __obj.updateDynamic("groupId")(groupId)
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
-    if (!js.isUndefined(latency)) __obj.updateDynamic("latency")(latency)
-    if (!js.isUndefined(sampleRate)) __obj.updateDynamic("sampleRate")(sampleRate)
-    if (!js.isUndefined(sampleSize)) __obj.updateDynamic("sampleSize")(sampleSize)
-    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume)
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
+    if (!js.isUndefined(aspectRatio)) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(deviceId)) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
+    if (!js.isUndefined(echoCancellation)) __obj.updateDynamic("echoCancellation")(echoCancellation.asInstanceOf[js.Any])
+    if (!js.isUndefined(facingMode)) __obj.updateDynamic("facingMode")(facingMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(frameRate)) __obj.updateDynamic("frameRate")(frameRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(groupId)) __obj.updateDynamic("groupId")(groupId.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(latency)) __obj.updateDynamic("latency")(latency.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleRate)) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(sampleSize)) __obj.updateDynamic("sampleSize")(sampleSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaTrackSupportedConstraints]
   }
 }

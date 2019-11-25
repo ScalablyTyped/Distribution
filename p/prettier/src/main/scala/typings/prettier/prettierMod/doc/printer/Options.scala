@@ -22,7 +22,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(printWidth: Double, tabWidth: Double, useTabs: Boolean): Options = {
-    val __obj = js.Dynamic.literal(printWidth = printWidth, tabWidth = tabWidth, useTabs = useTabs)
+    val __obj = js.Dynamic.literal(printWidth = printWidth.asInstanceOf[js.Any], tabWidth = tabWidth.asInstanceOf[js.Any], useTabs = useTabs.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Options]
   }

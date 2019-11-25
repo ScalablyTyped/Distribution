@@ -30,12 +30,12 @@ object ReadonlyIcon {
     scaledSize: Size = null,
     size: Size = null
   ): ReadonlyIcon = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
-    if (labelOrigin != null) __obj.updateDynamic("labelOrigin")(labelOrigin)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (scaledSize != null) __obj.updateDynamic("scaledSize")(scaledSize)
-    if (size != null) __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (labelOrigin != null) __obj.updateDynamic("labelOrigin")(labelOrigin.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (scaledSize != null) __obj.updateDynamic("scaledSize")(scaledSize.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyIcon]
   }
 }

@@ -30,9 +30,9 @@ object GetDifferencesOutput {
     NextToken: String = null,
     differences: js.Array[_UnmarshalledDifference] = null
   ): GetDifferencesOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (differences != null) __obj.updateDynamic("differences")(differences)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (differences != null) __obj.updateDynamic("differences")(differences.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDifferencesOutput]
   }
 }

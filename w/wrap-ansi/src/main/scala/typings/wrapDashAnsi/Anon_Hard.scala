@@ -18,9 +18,9 @@ object Anon_Hard {
     wordWrap: js.UndefOr[Boolean] = js.undefined
   ): Anon_Hard = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hard)) __obj.updateDynamic("hard")(hard)
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim)
-    if (!js.isUndefined(wordWrap)) __obj.updateDynamic("wordWrap")(wordWrap)
+    if (!js.isUndefined(hard)) __obj.updateDynamic("hard")(hard.asInstanceOf[js.Any])
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
+    if (!js.isUndefined(wordWrap)) __obj.updateDynamic("wordWrap")(wordWrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Hard]
   }
 }

@@ -28,9 +28,9 @@ object MetricStructuredName {
   @scala.inline
   def apply(context: Record[String, String] = null, name: String = null, origin: String = null): MetricStructuredName = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricStructuredName]
   }
 }

@@ -12,7 +12,7 @@ trait PushNotification extends js.Object {
 object PushNotification {
   @scala.inline
   def apply(messageType: String, payload: js.Any): PushNotification = {
-    val __obj = js.Dynamic.literal(messageType = messageType, payload = payload)
+    val __obj = js.Dynamic.literal(messageType = messageType.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PushNotification]
   }

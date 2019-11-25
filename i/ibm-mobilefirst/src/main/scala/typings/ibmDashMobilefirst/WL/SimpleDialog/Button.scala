@@ -12,8 +12,8 @@ trait Button extends js.Object {
 object Button {
   @scala.inline
   def apply(text: String, handler: js.Function = null): Button = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (handler != null) __obj.updateDynamic("handler")(handler)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
     __obj.asInstanceOf[Button]
   }
 }

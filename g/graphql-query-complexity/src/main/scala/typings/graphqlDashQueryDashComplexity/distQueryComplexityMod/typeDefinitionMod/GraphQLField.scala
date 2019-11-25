@@ -13,7 +13,7 @@ object GraphQLField {
   @scala.inline
   def apply[TSource, TContext, TArgs](complexity: Complexity = null): GraphQLField[TSource, TContext, TArgs] = {
     val __obj = js.Dynamic.literal()
-    if (complexity != null) __obj.updateDynamic("complexity")(complexity)
+    if (complexity != null) __obj.updateDynamic("complexity")(complexity.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLField[TSource, TContext, TArgs]]
   }
 }

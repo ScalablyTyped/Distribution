@@ -47,7 +47,7 @@ object IDateTimeFormatter {
     resolvedLanguage: String,
     template: String
   ): IDateTimeFormatter = {
-    val __obj = js.Dynamic.literal(calendar = calendar, clock = clock, format = js.Any.fromFunction1(format), geographicRegion = geographicRegion, includeDay = includeDay, includeDayOfWeek = includeDayOfWeek, includeHour = includeHour, includeMinute = includeMinute, includeMonth = includeMonth, includeSecond = includeSecond, includeYear = includeYear, languages = languages, numeralSystem = numeralSystem, patterns = patterns, resolvedGeographicRegion = resolvedGeographicRegion, resolvedLanguage = resolvedLanguage, template = template)
+    val __obj = js.Dynamic.literal(calendar = calendar.asInstanceOf[js.Any], clock = clock.asInstanceOf[js.Any], format = js.Any.fromFunction1(format), geographicRegion = geographicRegion.asInstanceOf[js.Any], includeDay = includeDay.asInstanceOf[js.Any], includeDayOfWeek = includeDayOfWeek.asInstanceOf[js.Any], includeHour = includeHour.asInstanceOf[js.Any], includeMinute = includeMinute.asInstanceOf[js.Any], includeMonth = includeMonth.asInstanceOf[js.Any], includeSecond = includeSecond.asInstanceOf[js.Any], includeYear = includeYear.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any], numeralSystem = numeralSystem.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any], resolvedGeographicRegion = resolvedGeographicRegion.asInstanceOf[js.Any], resolvedLanguage = resolvedLanguage.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IDateTimeFormatter]
   }

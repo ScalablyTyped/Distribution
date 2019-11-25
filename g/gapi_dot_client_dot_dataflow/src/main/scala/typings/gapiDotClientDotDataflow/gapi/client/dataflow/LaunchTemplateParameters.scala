@@ -22,9 +22,9 @@ object LaunchTemplateParameters {
     parameters: Record[String, String] = null
   ): LaunchTemplateParameters = {
     val __obj = js.Dynamic.literal()
-    if (environment != null) __obj.updateDynamic("environment")(environment)
-    if (jobName != null) __obj.updateDynamic("jobName")(jobName)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
+    if (jobName != null) __obj.updateDynamic("jobName")(jobName.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplateParameters]
   }
 }

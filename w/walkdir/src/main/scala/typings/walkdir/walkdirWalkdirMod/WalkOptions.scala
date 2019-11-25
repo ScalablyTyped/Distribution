@@ -71,15 +71,15 @@ object WalkOptions {
   ): WalkOptions = {
     val __obj = js.Dynamic.literal()
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
-    if (!js.isUndefined(find_links)) __obj.updateDynamic("find_links")(find_links)
-    if (!js.isUndefined(follow_symlinks)) __obj.updateDynamic("follow_symlinks")(follow_symlinks)
-    if (fs != null) __obj.updateDynamic("fs")(fs)
+    if (!js.isUndefined(find_links)) __obj.updateDynamic("find_links")(find_links.asInstanceOf[js.Any])
+    if (!js.isUndefined(follow_symlinks)) __obj.updateDynamic("follow_symlinks")(follow_symlinks.asInstanceOf[js.Any])
+    if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
     if (max_depth != null) __obj.updateDynamic("max_depth")(max_depth.asInstanceOf[js.Any])
-    if (!js.isUndefined(no_recurse)) __obj.updateDynamic("no_recurse")(no_recurse)
-    if (!js.isUndefined(no_return)) __obj.updateDynamic("no_return")(no_return)
-    if (!js.isUndefined(return_object)) __obj.updateDynamic("return_object")(return_object)
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
-    if (!js.isUndefined(track_inodes)) __obj.updateDynamic("track_inodes")(track_inodes)
+    if (!js.isUndefined(no_recurse)) __obj.updateDynamic("no_recurse")(no_recurse.asInstanceOf[js.Any])
+    if (!js.isUndefined(no_return)) __obj.updateDynamic("no_return")(no_return.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_object)) __obj.updateDynamic("return_object")(return_object.asInstanceOf[js.Any])
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
+    if (!js.isUndefined(track_inodes)) __obj.updateDynamic("track_inodes")(track_inodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[WalkOptions]
   }
 }

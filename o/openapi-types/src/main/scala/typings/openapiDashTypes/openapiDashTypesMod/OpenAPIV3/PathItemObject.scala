@@ -39,19 +39,19 @@ object PathItemObject {
     trace: OperationObject = null
   ): PathItemObject = {
     val __obj = js.Dynamic.literal()
-    if ($ref != null) __obj.updateDynamic("$ref")($ref)
-    if (delete != null) __obj.updateDynamic("delete")(delete)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (get != null) __obj.updateDynamic("get")(get)
-    if (head != null) __obj.updateDynamic("head")(head)
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
-    if (patch != null) __obj.updateDynamic("patch")(patch)
-    if (post != null) __obj.updateDynamic("post")(post)
-    if (put != null) __obj.updateDynamic("put")(put)
-    if (servers != null) __obj.updateDynamic("servers")(servers)
-    if (summary != null) __obj.updateDynamic("summary")(summary)
-    if (trace != null) __obj.updateDynamic("trace")(trace)
+    if ($ref != null) __obj.updateDynamic("$ref")($ref.asInstanceOf[js.Any])
+    if (delete != null) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (get != null) __obj.updateDynamic("get")(get.asInstanceOf[js.Any])
+    if (head != null) __obj.updateDynamic("head")(head.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (patch != null) __obj.updateDynamic("patch")(patch.asInstanceOf[js.Any])
+    if (post != null) __obj.updateDynamic("post")(post.asInstanceOf[js.Any])
+    if (put != null) __obj.updateDynamic("put")(put.asInstanceOf[js.Any])
+    if (servers != null) __obj.updateDynamic("servers")(servers.asInstanceOf[js.Any])
+    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
+    if (trace != null) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathItemObject]
   }
 }

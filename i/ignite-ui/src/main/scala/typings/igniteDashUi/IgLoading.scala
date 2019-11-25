@@ -25,9 +25,9 @@ object IgLoading {
     includeVerticalOffset: js.UndefOr[Boolean] = js.undefined
   ): IgLoading = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
-    if (!js.isUndefined(includeVerticalOffset)) __obj.updateDynamic("includeVerticalOffset")(includeVerticalOffset)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeVerticalOffset)) __obj.updateDynamic("includeVerticalOffset")(includeVerticalOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgLoading]
   }
 }

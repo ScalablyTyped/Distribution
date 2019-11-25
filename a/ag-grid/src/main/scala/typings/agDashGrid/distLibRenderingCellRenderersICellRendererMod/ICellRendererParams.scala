@@ -54,7 +54,7 @@ object ICellRendererParams {
     value: js.Any,
     valueFormatted: js.Any
   ): ICellRendererParams = {
-    val __obj = js.Dynamic.literal($scope = $scope, addRenderedRowListener = js.Any.fromFunction2(addRenderedRowListener), api = api, colDef = colDef, column = column, columnApi = columnApi, context = context, data = data, eGridCell = eGridCell, eParentOfValue = eParentOfValue, formatValue = js.Any.fromFunction1(formatValue), getValue = js.Any.fromFunction0(getValue), node = node, refreshCell = js.Any.fromFunction0(refreshCell), rowIndex = rowIndex, setValue = js.Any.fromFunction1(setValue), value = value, valueFormatted = valueFormatted)
+    val __obj = js.Dynamic.literal($scope = $scope.asInstanceOf[js.Any], addRenderedRowListener = js.Any.fromFunction2(addRenderedRowListener), api = api.asInstanceOf[js.Any], colDef = colDef.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], eGridCell = eGridCell.asInstanceOf[js.Any], eParentOfValue = eParentOfValue.asInstanceOf[js.Any], formatValue = js.Any.fromFunction1(formatValue), getValue = js.Any.fromFunction0(getValue), node = node.asInstanceOf[js.Any], refreshCell = js.Any.fromFunction0(refreshCell), rowIndex = rowIndex.asInstanceOf[js.Any], setValue = js.Any.fromFunction1(setValue), value = value.asInstanceOf[js.Any], valueFormatted = valueFormatted.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICellRendererParams]
   }

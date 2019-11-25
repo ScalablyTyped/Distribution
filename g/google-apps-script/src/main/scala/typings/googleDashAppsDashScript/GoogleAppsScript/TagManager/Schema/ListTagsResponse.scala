@@ -13,8 +13,8 @@ object ListTagsResponse {
   @scala.inline
   def apply(nextPageToken: String = null, tag: js.Array[Tag] = null): ListTagsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsResponse]
   }
 }

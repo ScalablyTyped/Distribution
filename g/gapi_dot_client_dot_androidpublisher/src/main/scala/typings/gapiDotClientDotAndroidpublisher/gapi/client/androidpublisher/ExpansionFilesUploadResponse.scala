@@ -12,7 +12,7 @@ object ExpansionFilesUploadResponse {
   @scala.inline
   def apply(expansionFile: ExpansionFile = null): ExpansionFilesUploadResponse = {
     val __obj = js.Dynamic.literal()
-    if (expansionFile != null) __obj.updateDynamic("expansionFile")(expansionFile)
+    if (expansionFile != null) __obj.updateDynamic("expansionFile")(expansionFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpansionFilesUploadResponse]
   }
 }

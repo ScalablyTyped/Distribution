@@ -26,8 +26,8 @@ object ObbFile {
   @scala.inline
   def apply(obb: FileReference = null, obbFileName: String = null): ObbFile = {
     val __obj = js.Dynamic.literal()
-    if (obb != null) __obj.updateDynamic("obb")(obb)
-    if (obbFileName != null) __obj.updateDynamic("obbFileName")(obbFileName)
+    if (obb != null) __obj.updateDynamic("obb")(obb.asInstanceOf[js.Any])
+    if (obbFileName != null) __obj.updateDynamic("obbFileName")(obbFileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObbFile]
   }
 }

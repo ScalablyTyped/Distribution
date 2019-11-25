@@ -34,10 +34,10 @@ object VolumeInspectInfo {
     Status: StringDictionary[String] = null,
     UsageData: Anon_RefCount = null
   ): VolumeInspectInfo = {
-    val __obj = js.Dynamic.literal(Driver = Driver, Labels = Labels, Mountpoint = Mountpoint, Name = Name, Scope = Scope.asInstanceOf[js.Any])
-    if (Options != null) __obj.updateDynamic("Options")(Options)
-    if (Status != null) __obj.updateDynamic("Status")(Status)
-    if (UsageData != null) __obj.updateDynamic("UsageData")(UsageData)
+    val __obj = js.Dynamic.literal(Driver = Driver.asInstanceOf[js.Any], Labels = Labels.asInstanceOf[js.Any], Mountpoint = Mountpoint.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Scope = Scope.asInstanceOf[js.Any])
+    if (Options != null) __obj.updateDynamic("Options")(Options.asInstanceOf[js.Any])
+    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (UsageData != null) __obj.updateDynamic("UsageData")(UsageData.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeInspectInfo]
   }
 }

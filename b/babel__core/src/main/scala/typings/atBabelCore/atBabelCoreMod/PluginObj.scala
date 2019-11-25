@@ -24,12 +24,12 @@ object PluginObj {
     post: js.ThisFunction1[/* this */ S, /* state */ js.Any, Unit] = null,
     pre: js.ThisFunction1[/* this */ S, /* state */ js.Any, Unit] = null
   ): PluginObj[S] = {
-    val __obj = js.Dynamic.literal(visitor = visitor)
-    if (inherits != null) __obj.updateDynamic("inherits")(inherits)
+    val __obj = js.Dynamic.literal(visitor = visitor.asInstanceOf[js.Any])
+    if (inherits != null) __obj.updateDynamic("inherits")(inherits.asInstanceOf[js.Any])
     if (manipulateOptions != null) __obj.updateDynamic("manipulateOptions")(js.Any.fromFunction2(manipulateOptions))
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (post != null) __obj.updateDynamic("post")(post)
-    if (pre != null) __obj.updateDynamic("pre")(pre)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (post != null) __obj.updateDynamic("post")(post.asInstanceOf[js.Any])
+    if (pre != null) __obj.updateDynamic("pre")(pre.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginObj[S]]
   }
 }

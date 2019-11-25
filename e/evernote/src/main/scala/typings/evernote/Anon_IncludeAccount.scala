@@ -18,9 +18,9 @@ object Anon_IncludeAccount {
     includePersonalLinkedNotebooks: js.UndefOr[Boolean] = js.undefined
   ): Anon_IncludeAccount = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeAccount)) __obj.updateDynamic("includeAccount")(includeAccount)
-    if (!js.isUndefined(includeBusinessLinkedNotebooks)) __obj.updateDynamic("includeBusinessLinkedNotebooks")(includeBusinessLinkedNotebooks)
-    if (!js.isUndefined(includePersonalLinkedNotebooks)) __obj.updateDynamic("includePersonalLinkedNotebooks")(includePersonalLinkedNotebooks)
+    if (!js.isUndefined(includeAccount)) __obj.updateDynamic("includeAccount")(includeAccount.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeBusinessLinkedNotebooks)) __obj.updateDynamic("includeBusinessLinkedNotebooks")(includeBusinessLinkedNotebooks.asInstanceOf[js.Any])
+    if (!js.isUndefined(includePersonalLinkedNotebooks)) __obj.updateDynamic("includePersonalLinkedNotebooks")(includePersonalLinkedNotebooks.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IncludeAccount]
   }
 }

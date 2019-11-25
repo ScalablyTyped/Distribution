@@ -11,7 +11,7 @@ trait Anon_IsFocusVisible extends js.Object {
 object Anon_IsFocusVisible {
   @scala.inline
   def apply(isFocusVisible: Boolean): Anon_IsFocusVisible = {
-    val __obj = js.Dynamic.literal(isFocusVisible = isFocusVisible)
+    val __obj = js.Dynamic.literal(isFocusVisible = isFocusVisible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsFocusVisible]
   }

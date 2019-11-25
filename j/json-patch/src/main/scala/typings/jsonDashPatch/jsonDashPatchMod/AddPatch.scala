@@ -15,7 +15,7 @@ trait AddPatch
 object AddPatch {
   @scala.inline
   def apply(op: add, path: String, value: js.Any): AddPatch = {
-    val __obj = js.Dynamic.literal(op = op, path = path, value = value)
+    val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AddPatch]
   }

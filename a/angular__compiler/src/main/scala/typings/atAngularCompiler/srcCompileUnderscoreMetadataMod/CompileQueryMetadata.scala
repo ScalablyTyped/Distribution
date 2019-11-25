@@ -23,8 +23,8 @@ object CompileQueryMetadata {
     selectors: js.Array[CompileTokenMetadata],
     static: js.UndefOr[Boolean] = js.undefined
   ): CompileQueryMetadata = {
-    val __obj = js.Dynamic.literal(descendants = descendants, first = first, propertyName = propertyName, read = read, selectors = selectors)
-    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static)
+    val __obj = js.Dynamic.literal(descendants = descendants.asInstanceOf[js.Any], first = first.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], selectors = selectors.asInstanceOf[js.Any])
+    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileQueryMetadata]
   }
 }

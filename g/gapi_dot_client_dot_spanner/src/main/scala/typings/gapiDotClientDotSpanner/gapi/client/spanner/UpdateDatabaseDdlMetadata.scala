@@ -28,9 +28,9 @@ object UpdateDatabaseDdlMetadata {
     statements: js.Array[String] = null
   ): UpdateDatabaseDdlMetadata = {
     val __obj = js.Dynamic.literal()
-    if (commitTimestamps != null) __obj.updateDynamic("commitTimestamps")(commitTimestamps)
-    if (database != null) __obj.updateDynamic("database")(database)
-    if (statements != null) __obj.updateDynamic("statements")(statements)
+    if (commitTimestamps != null) __obj.updateDynamic("commitTimestamps")(commitTimestamps.asInstanceOf[js.Any])
+    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
+    if (statements != null) __obj.updateDynamic("statements")(statements.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDatabaseDdlMetadata]
   }
 }

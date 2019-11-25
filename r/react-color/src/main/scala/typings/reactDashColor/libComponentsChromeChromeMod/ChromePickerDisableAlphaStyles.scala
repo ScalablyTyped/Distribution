@@ -21,10 +21,10 @@ object ChromePickerDisableAlphaStyles {
     swatch: CSSProperties = null
   ): ChromePickerDisableAlphaStyles = {
     val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (hue != null) __obj.updateDynamic("hue")(hue)
-    if (swatch != null) __obj.updateDynamic("swatch")(swatch)
+    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (hue != null) __obj.updateDynamic("hue")(hue.asInstanceOf[js.Any])
+    if (swatch != null) __obj.updateDynamic("swatch")(swatch.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChromePickerDisableAlphaStyles]
   }
 }

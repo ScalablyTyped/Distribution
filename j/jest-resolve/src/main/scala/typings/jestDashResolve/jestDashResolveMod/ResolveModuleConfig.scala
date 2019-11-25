@@ -14,8 +14,8 @@ object ResolveModuleConfig {
   @scala.inline
   def apply(paths: js.Array[Path] = null, skipNodeResolution: js.UndefOr[Boolean] = js.undefined): ResolveModuleConfig = {
     val __obj = js.Dynamic.literal()
-    if (paths != null) __obj.updateDynamic("paths")(paths)
-    if (!js.isUndefined(skipNodeResolution)) __obj.updateDynamic("skipNodeResolution")(skipNodeResolution)
+    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipNodeResolution)) __obj.updateDynamic("skipNodeResolution")(skipNodeResolution.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolveModuleConfig]
   }
 }

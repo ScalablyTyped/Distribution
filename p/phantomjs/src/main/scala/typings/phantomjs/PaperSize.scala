@@ -21,11 +21,11 @@ object PaperSize {
     orientation: String = null,
     width: String = null
   ): PaperSize = {
-    val __obj = js.Dynamic.literal(border = border)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
-    if (width != null) __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(border = border.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaperSize]
   }
 }

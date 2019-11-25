@@ -114,86 +114,54 @@ object IMessageBox {
   def apply(
     ISheet: ISheet = null,
     alert: (/* title */ js.UndefOr[java.lang.String], /* message */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMessageBox = null,
-    baseCls: java.lang.String = null,
     buttons: js.Any = null,
     confirm: (/* title */ js.UndefOr[java.lang.String], /* message */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMessageBox = null,
     defaultTextHeight: Int | Double = null,
-    getBaseCls: () => java.lang.String = null,
     getButtons: () => _ = null,
     getDefaultTextHeight: () => Double = null,
     getLayout: () => _ = null,
     getPrompt: () => _ = null,
     getTitle: () => java.lang.String = null,
-    getUi: () => java.lang.String = null,
-    getZIndex: () => Double = null,
-    hideAnimation: js.Any = null,
     icon: java.lang.String = null,
     iconCls: java.lang.String = null,
-    layout: js.Any = null,
     message: java.lang.String = null,
     msg: java.lang.String = null,
     prompt: js.Any = null,
-    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => Unit = null,
     setButtons: /* buttons */ js.UndefOr[js.Any] => Unit = null,
     setDefaultTextHeight: /* defaultTextHeight */ js.UndefOr[Double] => Unit = null,
-    setHideAnimation: /* hideAnimation */ js.UndefOr[js.Any] => Unit = null,
     setIcon: /* iconCls */ js.UndefOr[java.lang.String] => IMessageBox = null,
     setIconCls: /* iconCls */ js.UndefOr[java.lang.String] => Unit = null,
-    setLayout: /* layout */ js.UndefOr[js.Any] => Unit = null,
     setMessage: /* message */ js.UndefOr[java.lang.String] => Unit = null,
     setPrompt: /* prompt */ js.UndefOr[js.Any] => Unit = null,
-    setShowAnimation: /* showAnimation */ js.UndefOr[js.Any] => Unit = null,
     setTitle: /* title */ js.UndefOr[java.lang.String] => Unit = null,
-    setUi: /* ui */ js.UndefOr[java.lang.String] => Unit = null,
-    setZIndex: /* zIndex */ js.UndefOr[Double] => Unit = null,
-    show: /* config */ js.UndefOr[js.Any] => IMessageBox = null,
-    showAnimation: js.Any = null,
     title: java.lang.String = null,
-    ui: java.lang.String = null,
-    updateText: /* message */ js.UndefOr[java.lang.String] => IMessageBox = null,
-    zIndex: Int | Double = null
+    updateText: /* message */ js.UndefOr[java.lang.String] => IMessageBox = null
   ): IMessageBox = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, ISheet)
+    if (ISheet != null) js.Dynamic.global.Object.assign(__obj, ISheet)
     if (alert != null) __obj.updateDynamic("alert")(js.Any.fromFunction4(alert))
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
     if (confirm != null) __obj.updateDynamic("confirm")(js.Any.fromFunction4(confirm))
     if (defaultTextHeight != null) __obj.updateDynamic("defaultTextHeight")(defaultTextHeight.asInstanceOf[js.Any])
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
     if (getButtons != null) __obj.updateDynamic("getButtons")(js.Any.fromFunction0(getButtons))
     if (getDefaultTextHeight != null) __obj.updateDynamic("getDefaultTextHeight")(js.Any.fromFunction0(getDefaultTextHeight))
     if (getLayout != null) __obj.updateDynamic("getLayout")(js.Any.fromFunction0(getLayout))
     if (getPrompt != null) __obj.updateDynamic("getPrompt")(js.Any.fromFunction0(getPrompt))
     if (getTitle != null) __obj.updateDynamic("getTitle")(js.Any.fromFunction0(getTitle))
-    if (getUi != null) __obj.updateDynamic("getUi")(js.Any.fromFunction0(getUi))
-    if (getZIndex != null) __obj.updateDynamic("getZIndex")(js.Any.fromFunction0(getZIndex))
-    if (hideAnimation != null) __obj.updateDynamic("hideAnimation")(hideAnimation)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (iconCls != null) __obj.updateDynamic("iconCls")(iconCls)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (msg != null) __obj.updateDynamic("msg")(msg)
-    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (iconCls != null) __obj.updateDynamic("iconCls")(iconCls.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
     if (setButtons != null) __obj.updateDynamic("setButtons")(js.Any.fromFunction1(setButtons))
     if (setDefaultTextHeight != null) __obj.updateDynamic("setDefaultTextHeight")(js.Any.fromFunction1(setDefaultTextHeight))
-    if (setHideAnimation != null) __obj.updateDynamic("setHideAnimation")(js.Any.fromFunction1(setHideAnimation))
     if (setIcon != null) __obj.updateDynamic("setIcon")(js.Any.fromFunction1(setIcon))
     if (setIconCls != null) __obj.updateDynamic("setIconCls")(js.Any.fromFunction1(setIconCls))
-    if (setLayout != null) __obj.updateDynamic("setLayout")(js.Any.fromFunction1(setLayout))
     if (setMessage != null) __obj.updateDynamic("setMessage")(js.Any.fromFunction1(setMessage))
     if (setPrompt != null) __obj.updateDynamic("setPrompt")(js.Any.fromFunction1(setPrompt))
-    if (setShowAnimation != null) __obj.updateDynamic("setShowAnimation")(js.Any.fromFunction1(setShowAnimation))
     if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction1(setTitle))
-    if (setUi != null) __obj.updateDynamic("setUi")(js.Any.fromFunction1(setUi))
-    if (setZIndex != null) __obj.updateDynamic("setZIndex")(js.Any.fromFunction1(setZIndex))
-    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
-    if (showAnimation != null) __obj.updateDynamic("showAnimation")(showAnimation)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (ui != null) __obj.updateDynamic("ui")(ui)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (updateText != null) __obj.updateDynamic("updateText")(js.Any.fromFunction1(updateText))
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMessageBox]
   }
 }

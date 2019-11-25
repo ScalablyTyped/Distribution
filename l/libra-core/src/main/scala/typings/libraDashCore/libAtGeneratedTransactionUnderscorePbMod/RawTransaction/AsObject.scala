@@ -26,9 +26,9 @@ object AsObject {
     program: typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.Program.AsObject = null,
     writeSet: typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.WriteSet.AsObject = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal(expirationTime = expirationTime, gasUnitPrice = gasUnitPrice, maxGasAmount = maxGasAmount, senderAccount = senderAccount.asInstanceOf[js.Any], sequenceNumber = sequenceNumber)
-    if (program != null) __obj.updateDynamic("program")(program)
-    if (writeSet != null) __obj.updateDynamic("writeSet")(writeSet)
+    val __obj = js.Dynamic.literal(expirationTime = expirationTime.asInstanceOf[js.Any], gasUnitPrice = gasUnitPrice.asInstanceOf[js.Any], maxGasAmount = maxGasAmount.asInstanceOf[js.Any], senderAccount = senderAccount.asInstanceOf[js.Any], sequenceNumber = sequenceNumber.asInstanceOf[js.Any])
+    if (program != null) __obj.updateDynamic("program")(program.asInstanceOf[js.Any])
+    if (writeSet != null) __obj.updateDynamic("writeSet")(writeSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

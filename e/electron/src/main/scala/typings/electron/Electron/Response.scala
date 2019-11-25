@@ -17,8 +17,8 @@ object Response {
   @scala.inline
   def apply(cancel: js.UndefOr[Boolean] = js.undefined, redirectURL: String = null): Response = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (redirectURL != null) __obj.updateDynamic("redirectURL")(redirectURL)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (redirectURL != null) __obj.updateDynamic("redirectURL")(redirectURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
 }

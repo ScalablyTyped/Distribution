@@ -18,9 +18,9 @@ object Options {
     useDefaultPath: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging)
-    if (qs != null) __obj.updateDynamic("qs")(qs)
-    if (!js.isUndefined(useDefaultPath)) __obj.updateDynamic("useDefaultPath")(useDefaultPath)
+    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
+    if (qs != null) __obj.updateDynamic("qs")(qs.asInstanceOf[js.Any])
+    if (!js.isUndefined(useDefaultPath)) __obj.updateDynamic("useDefaultPath")(useDefaultPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

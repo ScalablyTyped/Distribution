@@ -22,10 +22,10 @@ object LinkLayerProps {
     className: String = null,
     extraProps: js.Any = null
   ): LinkLayerProps = {
-    val __obj = js.Dynamic.literal(diagramEngine = diagramEngine, pointAdded = js.Any.fromFunction2(pointAdded))
-    if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps)
+    val __obj = js.Dynamic.literal(diagramEngine = diagramEngine.asInstanceOf[js.Any], pointAdded = js.Any.fromFunction2(pointAdded))
+    if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkLayerProps]
   }
 }

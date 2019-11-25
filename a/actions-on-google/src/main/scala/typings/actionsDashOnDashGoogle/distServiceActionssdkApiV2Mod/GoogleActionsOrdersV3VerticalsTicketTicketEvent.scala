@@ -60,15 +60,15 @@ object GoogleActionsOrdersV3VerticalsTicketTicketEvent {
     url: String = null
   ): GoogleActionsOrdersV3VerticalsTicketTicketEvent = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (doorTime != null) __obj.updateDynamic("doorTime")(doorTime)
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
-    if (eventCharacters != null) __obj.updateDynamic("eventCharacters")(eventCharacters)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (doorTime != null) __obj.updateDynamic("doorTime")(doorTime.asInstanceOf[js.Any])
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (eventCharacters != null) __obj.updateDynamic("eventCharacters")(eventCharacters.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsTicketTicketEvent]
   }
 }

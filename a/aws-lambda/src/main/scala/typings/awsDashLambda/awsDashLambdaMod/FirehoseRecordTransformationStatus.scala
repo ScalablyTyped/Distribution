@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait FirehoseRecordTransformationStatus extends js.Object
 
+object FirehoseRecordTransformationStatus {
+  @scala.inline
+  def Dropped: typings.awsDashLambda.awsDashLambdaStrings.Dropped = this.cast("Dropped")
+  @scala.inline
+  def Ok: typings.awsDashLambda.awsDashLambdaStrings.Ok = this.cast("Ok")
+  @scala.inline
+  def ProcessingFailed: typings.awsDashLambda.awsDashLambdaStrings.ProcessingFailed = this.cast("ProcessingFailed")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

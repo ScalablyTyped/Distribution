@@ -12,7 +12,7 @@ object MutateResponses {
   @scala.inline
   def apply(mutate_response: js.Array[MutateResponse] = null): MutateResponses = {
     val __obj = js.Dynamic.literal()
-    if (mutate_response != null) __obj.updateDynamic("mutate_response")(mutate_response)
+    if (mutate_response != null) __obj.updateDynamic("mutate_response")(mutate_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutateResponses]
   }
 }

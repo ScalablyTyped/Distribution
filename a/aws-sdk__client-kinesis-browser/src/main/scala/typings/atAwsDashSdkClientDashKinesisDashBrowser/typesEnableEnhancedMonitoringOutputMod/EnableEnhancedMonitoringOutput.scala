@@ -54,10 +54,10 @@ object EnableEnhancedMonitoringOutput {
     ] = null,
     StreamName: String = null
   ): EnableEnhancedMonitoringOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (CurrentShardLevelMetrics != null) __obj.updateDynamic("CurrentShardLevelMetrics")(CurrentShardLevelMetrics)
-    if (DesiredShardLevelMetrics != null) __obj.updateDynamic("DesiredShardLevelMetrics")(DesiredShardLevelMetrics)
-    if (StreamName != null) __obj.updateDynamic("StreamName")(StreamName)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (CurrentShardLevelMetrics != null) __obj.updateDynamic("CurrentShardLevelMetrics")(CurrentShardLevelMetrics.asInstanceOf[js.Any])
+    if (DesiredShardLevelMetrics != null) __obj.updateDynamic("DesiredShardLevelMetrics")(DesiredShardLevelMetrics.asInstanceOf[js.Any])
+    if (StreamName != null) __obj.updateDynamic("StreamName")(StreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableEnhancedMonitoringOutput]
   }
 }

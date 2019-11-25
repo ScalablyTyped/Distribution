@@ -29,7 +29,7 @@ object Rect {
     ymax: Double,
     ymin: Double
   ): Rect = {
-    val __obj = js.Dynamic.literal(clip = js.Any.fromFunction4(clip), height = height, isNull = isNull, set = js.Any.fromFunction1(set), width = width, xmax = xmax, xmin = xmin, ymax = ymax, ymin = ymin)
+    val __obj = js.Dynamic.literal(clip = js.Any.fromFunction4(clip), height = height.asInstanceOf[js.Any], isNull = isNull.asInstanceOf[js.Any], set = js.Any.fromFunction1(set), width = width.asInstanceOf[js.Any], xmax = xmax.asInstanceOf[js.Any], xmin = xmin.asInstanceOf[js.Any], ymax = ymax.asInstanceOf[js.Any], ymin = ymin.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Rect]
   }

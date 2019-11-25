@@ -18,9 +18,9 @@ object Anon_Filter {
     sort: js.UndefOr[Boolean] = js.undefined
   ): Anon_Filter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter)
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search)
-    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort)
+    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
+    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Filter]
   }
 }

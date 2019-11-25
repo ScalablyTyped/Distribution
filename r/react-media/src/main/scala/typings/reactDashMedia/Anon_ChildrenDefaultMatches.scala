@@ -23,7 +23,7 @@ object Anon_ChildrenDefaultMatches {
   ): Anon_ChildrenDefaultMatches = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultMatches)) __obj.updateDynamic("defaultMatches")(defaultMatches)
+    if (!js.isUndefined(defaultMatches)) __obj.updateDynamic("defaultMatches")(defaultMatches.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[Anon_ChildrenDefaultMatches]
   }

@@ -33,8 +33,8 @@ object ControllerOptions {
   def apply(by: slide | container = null, control: Swiper = null, inverse: js.UndefOr[Boolean] = js.undefined): ControllerOptions = {
     val __obj = js.Dynamic.literal()
     if (by != null) __obj.updateDynamic("by")(by.asInstanceOf[js.Any])
-    if (control != null) __obj.updateDynamic("control")(control)
-    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse)
+    if (control != null) __obj.updateDynamic("control")(control.asInstanceOf[js.Any])
+    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControllerOptions]
   }
 }

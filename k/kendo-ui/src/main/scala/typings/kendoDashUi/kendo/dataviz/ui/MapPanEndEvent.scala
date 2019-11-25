@@ -21,10 +21,10 @@ object MapPanEndEvent {
     origin: Location = null,
     originalEvent: js.Any = null
   ): MapPanEndEvent = {
-    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault, sender = sender)
-    if (center != null) __obj.updateDynamic("center")(center)
-    if (origin != null) __obj.updateDynamic("origin")(origin)
-    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapPanEndEvent]
   }
 }

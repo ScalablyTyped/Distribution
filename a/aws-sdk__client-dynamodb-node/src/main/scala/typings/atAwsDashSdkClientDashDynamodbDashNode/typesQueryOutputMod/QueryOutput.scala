@@ -47,11 +47,11 @@ object QueryOutput {
     LastEvaluatedKey: StringDictionary[_UnmarshalledAttributeValue] = null,
     ScannedCount: Int | Double = null
   ): QueryOutput = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
-    if (ConsumedCapacity != null) __obj.updateDynamic("ConsumedCapacity")(ConsumedCapacity)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    if (ConsumedCapacity != null) __obj.updateDynamic("ConsumedCapacity")(ConsumedCapacity.asInstanceOf[js.Any])
     if (Count != null) __obj.updateDynamic("Count")(Count.asInstanceOf[js.Any])
-    if (Items != null) __obj.updateDynamic("Items")(Items)
-    if (LastEvaluatedKey != null) __obj.updateDynamic("LastEvaluatedKey")(LastEvaluatedKey)
+    if (Items != null) __obj.updateDynamic("Items")(Items.asInstanceOf[js.Any])
+    if (LastEvaluatedKey != null) __obj.updateDynamic("LastEvaluatedKey")(LastEvaluatedKey.asInstanceOf[js.Any])
     if (ScannedCount != null) __obj.updateDynamic("ScannedCount")(ScannedCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOutput]
   }

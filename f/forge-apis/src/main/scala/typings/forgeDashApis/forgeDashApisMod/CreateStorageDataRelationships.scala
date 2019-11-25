@@ -12,7 +12,7 @@ object CreateStorageDataRelationships {
   @scala.inline
   def apply(target: CreateStorageDataRelationshipsTarget = null): CreateStorageDataRelationships = {
     val __obj = js.Dynamic.literal()
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStorageDataRelationships]
   }
 }

@@ -13,7 +13,7 @@ trait ReposGetPagesBuildParams extends js.Object {
 object ReposGetPagesBuildParams {
   @scala.inline
   def apply(build_id: Double, owner: String, repo: String): ReposGetPagesBuildParams = {
-    val __obj = js.Dynamic.literal(build_id = build_id, owner = owner, repo = repo)
+    val __obj = js.Dynamic.literal(build_id = build_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReposGetPagesBuildParams]
   }

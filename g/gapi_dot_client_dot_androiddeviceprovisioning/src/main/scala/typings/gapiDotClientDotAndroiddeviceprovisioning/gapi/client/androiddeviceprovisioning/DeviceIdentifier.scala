@@ -23,10 +23,10 @@ object DeviceIdentifier {
   @scala.inline
   def apply(imei: String = null, manufacturer: String = null, meid: String = null, serialNumber: String = null): DeviceIdentifier = {
     val __obj = js.Dynamic.literal()
-    if (imei != null) __obj.updateDynamic("imei")(imei)
-    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer)
-    if (meid != null) __obj.updateDynamic("meid")(meid)
-    if (serialNumber != null) __obj.updateDynamic("serialNumber")(serialNumber)
+    if (imei != null) __obj.updateDynamic("imei")(imei.asInstanceOf[js.Any])
+    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer.asInstanceOf[js.Any])
+    if (meid != null) __obj.updateDynamic("meid")(meid.asInstanceOf[js.Any])
+    if (serialNumber != null) __obj.updateDynamic("serialNumber")(serialNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceIdentifier]
   }
 }

@@ -13,7 +13,7 @@ trait Anon_DataSourceListStyle extends js.Object {
 object Anon_DataSourceListStyle {
   @scala.inline
   def apply(dataSource: js.Array[scala.Nothing], listStyle: () => Unit, showSearch: Boolean): Anon_DataSourceListStyle = {
-    val __obj = js.Dynamic.literal(dataSource = dataSource, listStyle = js.Any.fromFunction0(listStyle), showSearch = showSearch)
+    val __obj = js.Dynamic.literal(dataSource = dataSource.asInstanceOf[js.Any], listStyle = js.Any.fromFunction0(listStyle), showSearch = showSearch.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DataSourceListStyle]
   }

@@ -12,8 +12,8 @@ trait ResponseLink extends js.Object {
 object ResponseLink {
   @scala.inline
   def apply(href: String, templated: js.UndefOr[Boolean] = js.undefined): ResponseLink = {
-    val __obj = js.Dynamic.literal(href = href)
-    if (!js.isUndefined(templated)) __obj.updateDynamic("templated")(templated)
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
+    if (!js.isUndefined(templated)) __obj.updateDynamic("templated")(templated.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseLink]
   }
 }

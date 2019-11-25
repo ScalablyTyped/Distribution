@@ -11,7 +11,7 @@ trait Anon_Maneuver extends js.Object {
 object Anon_Maneuver {
   @scala.inline
   def apply(maneuver: js.Array[Anon_Id]): Anon_Maneuver = {
-    val __obj = js.Dynamic.literal(maneuver = maneuver)
+    val __obj = js.Dynamic.literal(maneuver = maneuver.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Maneuver]
   }

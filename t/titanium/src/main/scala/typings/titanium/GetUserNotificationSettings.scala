@@ -84,13 +84,13 @@ object GetUserNotificationSettings {
     if (authorizationStatus != null) __obj.updateDynamic("authorizationStatus")(authorizationStatus.asInstanceOf[js.Any])
     if (badgeSetting != null) __obj.updateDynamic("badgeSetting")(badgeSetting.asInstanceOf[js.Any])
     if (carPlaySetting != null) __obj.updateDynamic("carPlaySetting")(carPlaySetting.asInstanceOf[js.Any])
-    if (categories != null) __obj.updateDynamic("categories")(categories)
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
     if (criticalAlertSetting != null) __obj.updateDynamic("criticalAlertSetting")(criticalAlertSetting.asInstanceOf[js.Any])
     if (lockScreenSetting != null) __obj.updateDynamic("lockScreenSetting")(lockScreenSetting.asInstanceOf[js.Any])
     if (notificationCenterSetting != null) __obj.updateDynamic("notificationCenterSetting")(notificationCenterSetting.asInstanceOf[js.Any])
     if (providesAppNotificationSettings != null) __obj.updateDynamic("providesAppNotificationSettings")(providesAppNotificationSettings.asInstanceOf[js.Any])
     if (soundSetting != null) __obj.updateDynamic("soundSetting")(soundSetting.asInstanceOf[js.Any])
-    if (types != null) __obj.updateDynamic("types")(types)
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserNotificationSettings]
   }
 }

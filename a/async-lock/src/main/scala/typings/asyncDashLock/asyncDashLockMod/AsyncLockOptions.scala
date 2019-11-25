@@ -20,8 +20,8 @@ object AsyncLockOptions {
     timeout: Int | Double = null
   ): AsyncLockOptions = {
     val __obj = js.Dynamic.literal()
-    if (Promise != null) __obj.updateDynamic("Promise")(Promise)
-    if (!js.isUndefined(domainReentrant)) __obj.updateDynamic("domainReentrant")(domainReentrant)
+    if (Promise != null) __obj.updateDynamic("Promise")(Promise.asInstanceOf[js.Any])
+    if (!js.isUndefined(domainReentrant)) __obj.updateDynamic("domainReentrant")(domainReentrant.asInstanceOf[js.Any])
     if (maxPending != null) __obj.updateDynamic("maxPending")(maxPending.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncLockOptions]

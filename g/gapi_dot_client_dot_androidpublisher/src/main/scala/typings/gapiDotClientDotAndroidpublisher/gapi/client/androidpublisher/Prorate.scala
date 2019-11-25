@@ -18,8 +18,8 @@ object Prorate {
   @scala.inline
   def apply(defaultPrice: Price = null, start: MonthDay = null): Prorate = {
     val __obj = js.Dynamic.literal()
-    if (defaultPrice != null) __obj.updateDynamic("defaultPrice")(defaultPrice)
-    if (start != null) __obj.updateDynamic("start")(start)
+    if (defaultPrice != null) __obj.updateDynamic("defaultPrice")(defaultPrice.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Prorate]
   }
 }

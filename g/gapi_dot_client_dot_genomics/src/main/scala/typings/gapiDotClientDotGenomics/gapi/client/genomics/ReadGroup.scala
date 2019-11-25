@@ -58,16 +58,16 @@ object ReadGroup {
     sampleId: String = null
   ): ReadGroup = {
     val __obj = js.Dynamic.literal()
-    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (experiment != null) __obj.updateDynamic("experiment")(experiment)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (info != null) __obj.updateDynamic("info")(info)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (experiment != null) __obj.updateDynamic("experiment")(experiment.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (predictedInsertSize != null) __obj.updateDynamic("predictedInsertSize")(predictedInsertSize.asInstanceOf[js.Any])
-    if (programs != null) __obj.updateDynamic("programs")(programs)
-    if (referenceSetId != null) __obj.updateDynamic("referenceSetId")(referenceSetId)
-    if (sampleId != null) __obj.updateDynamic("sampleId")(sampleId)
+    if (programs != null) __obj.updateDynamic("programs")(programs.asInstanceOf[js.Any])
+    if (referenceSetId != null) __obj.updateDynamic("referenceSetId")(referenceSetId.asInstanceOf[js.Any])
+    if (sampleId != null) __obj.updateDynamic("sampleId")(sampleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadGroup]
   }
 }

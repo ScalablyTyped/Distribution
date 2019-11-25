@@ -13,9 +13,9 @@ trait MapStyleItem extends js.Object {
 object MapStyleItem {
   @scala.inline
   def apply(stylers: MapStyleItemStylers, elementType: String = null, featureType: String = null): MapStyleItem = {
-    val __obj = js.Dynamic.literal(stylers = stylers)
-    if (elementType != null) __obj.updateDynamic("elementType")(elementType)
-    if (featureType != null) __obj.updateDynamic("featureType")(featureType)
+    val __obj = js.Dynamic.literal(stylers = stylers.asInstanceOf[js.Any])
+    if (elementType != null) __obj.updateDynamic("elementType")(elementType.asInstanceOf[js.Any])
+    if (featureType != null) __obj.updateDynamic("featureType")(featureType.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapStyleItem]
   }
 }

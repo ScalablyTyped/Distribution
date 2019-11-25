@@ -61,19 +61,19 @@ object Options {
     string: js.Array[String] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (array != null) __obj.updateDynamic("array")(array)
-    if (boolean != null) __obj.updateDynamic("boolean")(boolean)
-    if (coerce != null) __obj.updateDynamic("coerce")(coerce)
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (array != null) __obj.updateDynamic("array")(array.asInstanceOf[js.Any])
+    if (boolean != null) __obj.updateDynamic("boolean")(boolean.asInstanceOf[js.Any])
+    if (coerce != null) __obj.updateDynamic("coerce")(coerce.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration)
-    if (count != null) __obj.updateDynamic("count")(count)
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (envPrefix != null) __obj.updateDynamic("envPrefix")(envPrefix)
-    if (narg != null) __obj.updateDynamic("narg")(narg)
-    if (normalize != null) __obj.updateDynamic("normalize")(normalize)
-    if (number != null) __obj.updateDynamic("number")(number)
-    if (string != null) __obj.updateDynamic("string")(string)
+    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (envPrefix != null) __obj.updateDynamic("envPrefix")(envPrefix.asInstanceOf[js.Any])
+    if (narg != null) __obj.updateDynamic("narg")(narg.asInstanceOf[js.Any])
+    if (normalize != null) __obj.updateDynamic("normalize")(normalize.asInstanceOf[js.Any])
+    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

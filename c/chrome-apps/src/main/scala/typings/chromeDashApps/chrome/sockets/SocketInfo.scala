@@ -42,12 +42,12 @@ object SocketInfo {
     peerAddress: String = null,
     peerPort: Int | Double = null
   ): SocketInfo = {
-    val __obj = js.Dynamic.literal(connected = connected, paused = paused, persistent = persistent, socketId = socketId)
+    val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any], persistent = persistent.asInstanceOf[js.Any], socketId = socketId.asInstanceOf[js.Any])
     if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
-    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
     if (localPort != null) __obj.updateDynamic("localPort")(localPort.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (peerAddress != null) __obj.updateDynamic("peerAddress")(peerAddress)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (peerAddress != null) __obj.updateDynamic("peerAddress")(peerAddress.asInstanceOf[js.Any])
     if (peerPort != null) __obj.updateDynamic("peerPort")(peerPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketInfo]
   }

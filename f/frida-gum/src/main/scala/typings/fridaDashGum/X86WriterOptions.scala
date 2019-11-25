@@ -19,7 +19,7 @@ object X86WriterOptions {
   @scala.inline
   def apply(pc: NativePointer = null): X86WriterOptions = {
     val __obj = js.Dynamic.literal()
-    if (pc != null) __obj.updateDynamic("pc")(pc)
+    if (pc != null) __obj.updateDynamic("pc")(pc.asInstanceOf[js.Any])
     __obj.asInstanceOf[X86WriterOptions]
   }
 }

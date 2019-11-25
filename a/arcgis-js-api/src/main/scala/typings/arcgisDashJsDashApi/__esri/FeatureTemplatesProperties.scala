@@ -73,15 +73,15 @@ object FeatureTemplatesProperties {
   ): FeatureTemplatesProperties = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
-    if (!js.isUndefined(filterEnabled)) __obj.updateDynamic("filterEnabled")(filterEnabled)
+    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterEnabled)) __obj.updateDynamic("filterEnabled")(filterEnabled.asInstanceOf[js.Any])
     if (filterFunction != null) __obj.updateDynamic("filterFunction")(js.Any.fromFunction1(filterFunction))
-    if (filterText != null) __obj.updateDynamic("filterText")(filterText)
+    if (filterText != null) __obj.updateDynamic("filterText")(filterText.asInstanceOf[js.Any])
     if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (layers != null) __obj.updateDynamic("layers")(layers)
-    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureTemplatesProperties]
   }
 }

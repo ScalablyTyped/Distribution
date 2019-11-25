@@ -29,7 +29,7 @@ object IUndoer {
     redo: /* widget */ T => Unit = null,
     undo: /* widget */ T => Unit = null
   ): IUndoer[T] = {
-    val __obj = js.Dynamic.literal(tracker = tracker)
+    val __obj = js.Dynamic.literal(tracker = tracker.asInstanceOf[js.Any])
     if (isEnabled != null) __obj.updateDynamic("isEnabled")(js.Any.fromFunction1(isEnabled))
     if (redo != null) __obj.updateDynamic("redo")(js.Any.fromFunction1(redo))
     if (undo != null) __obj.updateDynamic("undo")(js.Any.fromFunction1(undo))

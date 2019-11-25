@@ -28,13 +28,13 @@ object Route {
     encodeParams: /* stateParams */ Params => Params = null,
     forwardTo: String = null
   ): Route = {
-    val __obj = js.Dynamic.literal(name = name, path = path)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     if (canActivate != null) __obj.updateDynamic("canActivate")(js.Any.fromFunction2(canActivate))
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (decodeParams != null) __obj.updateDynamic("decodeParams")(js.Any.fromFunction1(decodeParams))
-    if (defaultParams != null) __obj.updateDynamic("defaultParams")(defaultParams)
+    if (defaultParams != null) __obj.updateDynamic("defaultParams")(defaultParams.asInstanceOf[js.Any])
     if (encodeParams != null) __obj.updateDynamic("encodeParams")(js.Any.fromFunction1(encodeParams))
-    if (forwardTo != null) __obj.updateDynamic("forwardTo")(forwardTo)
+    if (forwardTo != null) __obj.updateDynamic("forwardTo")(forwardTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Route]
   }
 }

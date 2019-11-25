@@ -12,7 +12,7 @@ object Anon_SpecNameString {
   @scala.inline
   def apply(specName: String = null): Anon_SpecNameString = {
     val __obj = js.Dynamic.literal()
-    if (specName != null) __obj.updateDynamic("specName")(specName)
+    if (specName != null) __obj.updateDynamic("specName")(specName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_SpecNameString]
   }
 }

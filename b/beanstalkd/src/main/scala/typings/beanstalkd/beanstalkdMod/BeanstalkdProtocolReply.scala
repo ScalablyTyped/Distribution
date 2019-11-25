@@ -12,7 +12,7 @@ trait BeanstalkdProtocolReply extends js.Object {
 object BeanstalkdProtocolReply {
   @scala.inline
   def apply(args: js.Array[_], reply: String): BeanstalkdProtocolReply = {
-    val __obj = js.Dynamic.literal(args = args, reply = reply)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], reply = reply.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BeanstalkdProtocolReply]
   }

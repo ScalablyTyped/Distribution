@@ -12,7 +12,7 @@ trait options extends js.Object {
 object options {
   @scala.inline
   def apply(basedir: String, protocols: ProtocolsSetPrivate): options = {
-    val __obj = js.Dynamic.literal(basedir = basedir, protocols = protocols)
+    val __obj = js.Dynamic.literal(basedir = basedir.asInstanceOf[js.Any], protocols = protocols.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[options]
   }

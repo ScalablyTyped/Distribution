@@ -12,7 +12,7 @@ object Anon_IncludeNonWordCharactersBoolean {
   @scala.inline
   def apply(includeNonWordCharacters: js.UndefOr[Boolean] = js.undefined): Anon_IncludeNonWordCharactersBoolean = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeNonWordCharacters)) __obj.updateDynamic("includeNonWordCharacters")(includeNonWordCharacters)
+    if (!js.isUndefined(includeNonWordCharacters)) __obj.updateDynamic("includeNonWordCharacters")(includeNonWordCharacters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IncludeNonWordCharactersBoolean]
   }
 }

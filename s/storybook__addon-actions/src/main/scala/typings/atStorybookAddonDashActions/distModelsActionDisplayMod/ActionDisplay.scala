@@ -16,7 +16,7 @@ trait ActionDisplay extends js.Object {
 object ActionDisplay {
   @scala.inline
   def apply(count: Double, data: Anon_Args, id: String, options: ActionOptions): ActionDisplay = {
-    val __obj = js.Dynamic.literal(count = count, data = data, id = id, options = options)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ActionDisplay]
   }

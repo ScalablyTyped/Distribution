@@ -27,9 +27,9 @@ object LayoutBottomTabsChildren {
     stack: LayoutStack = null
   ): LayoutBottomTabsChildren = {
     val __obj = js.Dynamic.literal()
-    if (component != null) __obj.updateDynamic("component")(component)
-    if (externalComponent != null) __obj.updateDynamic("externalComponent")(externalComponent)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (externalComponent != null) __obj.updateDynamic("externalComponent")(externalComponent.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutBottomTabsChildren]
   }
 }

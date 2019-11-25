@@ -25,8 +25,8 @@ object NotificationStatisticsQueryConditions {
     `type`: NotificationStatisticType,
     user: IdentityRef
   ): NotificationStatisticsQueryConditions = {
-    val __obj = js.Dynamic.literal(endDate = endDate, hitCountMinimum = hitCountMinimum, path = path, startDate = startDate, user = user)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(endDate = endDate.asInstanceOf[js.Any], hitCountMinimum = hitCountMinimum.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationStatisticsQueryConditions]
   }
 }

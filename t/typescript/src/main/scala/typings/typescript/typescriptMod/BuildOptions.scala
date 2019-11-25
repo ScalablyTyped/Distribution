@@ -25,12 +25,12 @@ object BuildOptions {
     verbose: js.UndefOr[Boolean] = js.undefined
   ): BuildOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(dry)) __obj.updateDynamic("dry")(dry)
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (!js.isUndefined(incremental)) __obj.updateDynamic("incremental")(incremental)
-    if (!js.isUndefined(traceResolution)) __obj.updateDynamic("traceResolution")(traceResolution)
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(dry)) __obj.updateDynamic("dry")(dry.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (!js.isUndefined(incremental)) __obj.updateDynamic("incremental")(incremental.asInstanceOf[js.Any])
+    if (!js.isUndefined(traceResolution)) __obj.updateDynamic("traceResolution")(traceResolution.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildOptions]
   }
 }

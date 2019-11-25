@@ -22,7 +22,7 @@ object FileReference {
   @scala.inline
   def apply(fileUri: String = null): FileReference = {
     val __obj = js.Dynamic.literal()
-    if (fileUri != null) __obj.updateDynamic("fileUri")(fileUri)
+    if (fileUri != null) __obj.updateDynamic("fileUri")(fileUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileReference]
   }
 }

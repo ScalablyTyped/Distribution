@@ -12,7 +12,7 @@ trait ErrorLike extends js.Object {
 object ErrorLike {
   @scala.inline
   def apply(message: String, stack: String): ErrorLike = {
-    val __obj = js.Dynamic.literal(message = message, stack = stack)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ErrorLike]
   }

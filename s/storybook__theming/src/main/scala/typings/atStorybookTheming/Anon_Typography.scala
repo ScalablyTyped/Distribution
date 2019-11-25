@@ -11,7 +11,7 @@ trait Anon_Typography extends js.Object {
 object Anon_Typography {
   @scala.inline
   def apply(typography: Anon_Fonts): Anon_Typography = {
-    val __obj = js.Dynamic.literal(typography = typography)
+    val __obj = js.Dynamic.literal(typography = typography.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Typography]
   }

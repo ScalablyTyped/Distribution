@@ -11,7 +11,7 @@ trait Anon_Version extends js.Object {
 object Anon_Version {
   @scala.inline
   def apply(version: String): Anon_Version = {
-    val __obj = js.Dynamic.literal(version = version)
+    val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Version]
   }

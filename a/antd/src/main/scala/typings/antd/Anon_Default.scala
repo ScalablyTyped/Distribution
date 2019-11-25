@@ -16,7 +16,7 @@ trait Anon_Default extends js.Object {
 object Anon_Default {
   @scala.inline
   def apply(size: small | default | large, spinning: Boolean, wrapperClassName: String): Anon_Default = {
-    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], spinning = spinning, wrapperClassName = wrapperClassName)
+    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], spinning = spinning.asInstanceOf[js.Any], wrapperClassName = wrapperClassName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Default]
   }

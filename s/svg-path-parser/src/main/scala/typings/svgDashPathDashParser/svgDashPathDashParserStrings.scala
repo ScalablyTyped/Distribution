@@ -36,10 +36,10 @@ object svgDashPathDashParserStrings {
   sealed trait Z extends js.Object
   
   @js.native
-  sealed trait a extends js.Object
+  sealed trait a_ extends js.Object
   
   @js.native
-  sealed trait c extends js.Object
+  sealed trait c_ extends js.Object
   
   @js.native
   sealed trait closepath extends js.Object
@@ -51,31 +51,31 @@ object svgDashPathDashParserStrings {
   sealed trait `elliptical arc` extends js.Object
   
   @js.native
-  sealed trait h extends js.Object
+  sealed trait h_ extends js.Object
   
   @js.native
   sealed trait `horizontal lineto` extends js.Object
   
   @js.native
-  sealed trait l extends js.Object
+  sealed trait l_ extends js.Object
   
   @js.native
   sealed trait lineto extends js.Object
   
   @js.native
-  sealed trait m extends js.Object
+  sealed trait m_ extends js.Object
   
   @js.native
   sealed trait moveto extends js.Object
   
   @js.native
-  sealed trait q extends js.Object
+  sealed trait q_ extends js.Object
   
   @js.native
   sealed trait `quadratic curveto` extends js.Object
   
   @js.native
-  sealed trait s extends js.Object
+  sealed trait s_ extends js.Object
   
   @js.native
   sealed trait `smooth curveto` extends js.Object
@@ -84,16 +84,16 @@ object svgDashPathDashParserStrings {
   sealed trait `smooth quadratic curveto` extends js.Object
   
   @js.native
-  sealed trait t extends js.Object
+  sealed trait t_ extends js.Object
   
   @js.native
-  sealed trait v extends js.Object
+  sealed trait v_ extends js.Object
   
   @js.native
   sealed trait `vertical lineto` extends js.Object
   
   @js.native
-  sealed trait z extends js.Object
+  sealed trait z_ extends js.Object
   
   @scala.inline
   def A: A = "A".asInstanceOf[A]
@@ -116,9 +116,9 @@ object svgDashPathDashParserStrings {
   @scala.inline
   def Z: Z = "Z".asInstanceOf[Z]
   @scala.inline
-  def a: a = "a".asInstanceOf[a]
+  def a_ : a_ = "a".asInstanceOf[a_]
   @scala.inline
-  def c: c = "c".asInstanceOf[c]
+  def c_ : c_ = "c".asInstanceOf[c_]
   @scala.inline
   def closepath: closepath = "closepath".asInstanceOf[closepath]
   @scala.inline
@@ -126,34 +126,34 @@ object svgDashPathDashParserStrings {
   @scala.inline
   def `elliptical arc`: `elliptical arc` = "elliptical arc".asInstanceOf[`elliptical arc`]
   @scala.inline
-  def h: h = "h".asInstanceOf[h]
+  def h_ : h_ = "h".asInstanceOf[h_]
   @scala.inline
   def `horizontal lineto`: `horizontal lineto` = "horizontal lineto".asInstanceOf[`horizontal lineto`]
   @scala.inline
-  def l: l = "l".asInstanceOf[l]
+  def l_ : l_ = "l".asInstanceOf[l_]
   @scala.inline
   def lineto: lineto = "lineto".asInstanceOf[lineto]
   @scala.inline
-  def m: m = "m".asInstanceOf[m]
+  def m_ : m_ = "m".asInstanceOf[m_]
   @scala.inline
   def moveto: moveto = "moveto".asInstanceOf[moveto]
   @scala.inline
-  def q: q = "q".asInstanceOf[q]
+  def q_ : q_ = "q".asInstanceOf[q_]
   @scala.inline
   def `quadratic curveto`: `quadratic curveto` = "quadratic curveto".asInstanceOf[`quadratic curveto`]
   @scala.inline
-  def s: s = "s".asInstanceOf[s]
+  def s_ : s_ = "s".asInstanceOf[s_]
   @scala.inline
   def `smooth curveto`: `smooth curveto` = "smooth curveto".asInstanceOf[`smooth curveto`]
   @scala.inline
   def `smooth quadratic curveto`: `smooth quadratic curveto` = "smooth quadratic curveto".asInstanceOf[`smooth quadratic curveto`]
   @scala.inline
-  def t: t = "t".asInstanceOf[t]
+  def t_ : t_ = "t".asInstanceOf[t_]
   @scala.inline
-  def v: v = "v".asInstanceOf[v]
+  def v_ : v_ = "v".asInstanceOf[v_]
   @scala.inline
   def `vertical lineto`: `vertical lineto` = "vertical lineto".asInstanceOf[`vertical lineto`]
   @scala.inline
-  def z: z = "z".asInstanceOf[z]
+  def z_ : z_ = "z".asInstanceOf[z_]
 }
 

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait TextContentType extends js.Object
 
+object TextContentType {
+  @scala.inline
+  def PlainText: typings.alexaDashSdk.alexaDashSdkStrings.PlainText = this.cast("PlainText")
+  @scala.inline
+  def RichText: typings.alexaDashSdk.alexaDashSdkStrings.RichText = this.cast("RichText")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

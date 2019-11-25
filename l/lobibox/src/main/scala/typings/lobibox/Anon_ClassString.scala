@@ -12,7 +12,7 @@ object Anon_ClassString {
   @scala.inline
   def apply(`class`: String = null): Anon_ClassString = {
     val __obj = js.Dynamic.literal()
-    if (`class` != null) __obj.updateDynamic("class")(`class`)
+    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClassString]
   }
 }

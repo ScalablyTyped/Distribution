@@ -36,10 +36,10 @@ object GeocoderLookupOptions {
     region: CoordinateRegion = null
   ): GeocoderLookupOptions = {
     val __obj = js.Dynamic.literal()
-    if (coordinate != null) __obj.updateDynamic("coordinate")(coordinate)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (limitToCountries != null) __obj.updateDynamic("limitToCountries")(limitToCountries)
-    if (region != null) __obj.updateDynamic("region")(region)
+    if (coordinate != null) __obj.updateDynamic("coordinate")(coordinate.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (limitToCountries != null) __obj.updateDynamic("limitToCountries")(limitToCountries.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeocoderLookupOptions]
   }
 }

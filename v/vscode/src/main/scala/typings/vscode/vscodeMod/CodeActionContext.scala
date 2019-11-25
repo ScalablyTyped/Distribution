@@ -20,8 +20,8 @@ trait CodeActionContext extends js.Object {
 object CodeActionContext {
   @scala.inline
   def apply(diagnostics: js.Array[Diagnostic], only: CodeActionKind = null): CodeActionContext = {
-    val __obj = js.Dynamic.literal(diagnostics = diagnostics)
-    if (only != null) __obj.updateDynamic("only")(only)
+    val __obj = js.Dynamic.literal(diagnostics = diagnostics.asInstanceOf[js.Any])
+    if (only != null) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeActionContext]
   }
 }

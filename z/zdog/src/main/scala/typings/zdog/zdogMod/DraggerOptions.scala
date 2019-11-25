@@ -24,9 +24,9 @@ object DraggerOptions {
     startElement: String | Element = null
   ): DraggerOptions = {
     val __obj = js.Dynamic.literal()
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd)
-    if (onDragMove != null) __obj.updateDynamic("onDragMove")(onDragMove)
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
+    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd.asInstanceOf[js.Any])
+    if (onDragMove != null) __obj.updateDynamic("onDragMove")(onDragMove.asInstanceOf[js.Any])
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart.asInstanceOf[js.Any])
     if (startElement != null) __obj.updateDynamic("startElement")(startElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggerOptions]
   }

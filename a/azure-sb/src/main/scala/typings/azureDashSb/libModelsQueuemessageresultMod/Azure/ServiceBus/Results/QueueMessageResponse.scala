@@ -24,11 +24,11 @@ object QueueMessageResponse {
     customProperties: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Dictionary<any> */ js.Any = null,
     location: String = null
   ): QueueMessageResponse = {
-    val __obj = js.Dynamic.literal(body = body)
-    if (brokerProperties != null) __obj.updateDynamic("brokerProperties")(brokerProperties)
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (customProperties != null) __obj.updateDynamic("customProperties")(customProperties)
-    if (location != null) __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    if (brokerProperties != null) __obj.updateDynamic("brokerProperties")(brokerProperties.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (customProperties != null) __obj.updateDynamic("customProperties")(customProperties.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueueMessageResponse]
   }
 }

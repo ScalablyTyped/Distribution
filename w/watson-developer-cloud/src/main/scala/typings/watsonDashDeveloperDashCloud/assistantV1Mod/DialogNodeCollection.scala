@@ -15,7 +15,7 @@ trait DialogNodeCollection extends js.Object {
 object DialogNodeCollection {
   @scala.inline
   def apply(dialog_nodes: js.Array[DialogNode], pagination: Pagination): DialogNodeCollection = {
-    val __obj = js.Dynamic.literal(dialog_nodes = dialog_nodes, pagination = pagination)
+    val __obj = js.Dynamic.literal(dialog_nodes = dialog_nodes.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DialogNodeCollection]
   }

@@ -19,7 +19,7 @@ object Workflow {
   @scala.inline
   def apply(allowedTransitions: String = null, key: String | Double = null): Workflow = {
     val __obj = js.Dynamic.literal()
-    if (allowedTransitions != null) __obj.updateDynamic("allowedTransitions")(allowedTransitions)
+    if (allowedTransitions != null) __obj.updateDynamic("allowedTransitions")(allowedTransitions.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Workflow]
   }

@@ -18,9 +18,9 @@ object Feed {
     feedType: String = null
   ): Feed = {
     val __obj = js.Dynamic.literal()
-    if (courseRosterChangesInfo != null) __obj.updateDynamic("courseRosterChangesInfo")(courseRosterChangesInfo)
-    if (courseWorkChangesInfo != null) __obj.updateDynamic("courseWorkChangesInfo")(courseWorkChangesInfo)
-    if (feedType != null) __obj.updateDynamic("feedType")(feedType)
+    if (courseRosterChangesInfo != null) __obj.updateDynamic("courseRosterChangesInfo")(courseRosterChangesInfo.asInstanceOf[js.Any])
+    if (courseWorkChangesInfo != null) __obj.updateDynamic("courseWorkChangesInfo")(courseWorkChangesInfo.asInstanceOf[js.Any])
+    if (feedType != null) __obj.updateDynamic("feedType")(feedType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Feed]
   }
 }

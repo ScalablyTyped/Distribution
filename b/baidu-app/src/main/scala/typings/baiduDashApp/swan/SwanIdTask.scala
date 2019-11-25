@@ -13,7 +13,7 @@ trait SwanIdTask extends js.Object {
 object SwanIdTask {
   @scala.inline
   def apply(data: Anon_Swanid, errno: String): SwanIdTask = {
-    val __obj = js.Dynamic.literal(data = data, errno = errno)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], errno = errno.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SwanIdTask]
   }

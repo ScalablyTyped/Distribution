@@ -11,7 +11,7 @@ trait PostProjectAdministrators extends js.Object {
 object PostProjectAdministrators {
   @scala.inline
   def apply(userId: Double): PostProjectAdministrators = {
-    val __obj = js.Dynamic.literal(userId = userId)
+    val __obj = js.Dynamic.literal(userId = userId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PostProjectAdministrators]
   }

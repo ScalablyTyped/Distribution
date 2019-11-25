@@ -25,9 +25,9 @@ object LifecycleRule {
     days: Double | String = null,
     id: String = null
   ): LifecycleRule = {
-    val __obj = js.Dynamic.literal(date = date, prefix = prefix, status = status)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[LifecycleRule]
   }
 }

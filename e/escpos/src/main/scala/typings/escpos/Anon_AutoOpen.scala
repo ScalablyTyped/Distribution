@@ -12,7 +12,7 @@ trait Anon_AutoOpen extends js.Object {
 object Anon_AutoOpen {
   @scala.inline
   def apply(autoOpen: Boolean, baudRate: Double): Anon_AutoOpen = {
-    val __obj = js.Dynamic.literal(autoOpen = autoOpen, baudRate = baudRate)
+    val __obj = js.Dynamic.literal(autoOpen = autoOpen.asInstanceOf[js.Any], baudRate = baudRate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AutoOpen]
   }

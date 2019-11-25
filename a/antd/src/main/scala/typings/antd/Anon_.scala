@@ -42,7 +42,7 @@ object Anon_ {
     validateStatus: Requireable[Empty | error | success | warning | validating],
     wrapperCol: Requireable[js.Object]
   ): Anon_ = {
-    val __obj = js.Dynamic.literal(children = children, className = className, colon = colon, hasFeedback = hasFeedback, help = help, id = id, label = label, labelCol = labelCol, prefixCls = prefixCls, validateStatus = validateStatus, wrapperCol = wrapperCol)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], colon = colon.asInstanceOf[js.Any], hasFeedback = hasFeedback.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelCol = labelCol.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], validateStatus = validateStatus.asInstanceOf[js.Any], wrapperCol = wrapperCol.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_]
   }

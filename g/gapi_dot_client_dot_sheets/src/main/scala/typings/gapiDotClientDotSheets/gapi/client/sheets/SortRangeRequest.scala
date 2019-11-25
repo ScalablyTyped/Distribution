@@ -18,8 +18,8 @@ object SortRangeRequest {
   @scala.inline
   def apply(range: GridRange = null, sortSpecs: js.Array[SortSpec] = null): SortRangeRequest = {
     val __obj = js.Dynamic.literal()
-    if (range != null) __obj.updateDynamic("range")(range)
-    if (sortSpecs != null) __obj.updateDynamic("sortSpecs")(sortSpecs)
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (sortSpecs != null) __obj.updateDynamic("sortSpecs")(sortSpecs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortRangeRequest]
   }
 }

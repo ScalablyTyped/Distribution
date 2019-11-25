@@ -23,7 +23,7 @@ object LoggerOptions {
   ): LoggerOptions = {
     val __obj = js.Dynamic.literal()
     if (logger != null) __obj.updateDynamic("logger")(js.Any.fromFunction2(logger))
-    if (loggerLevel != null) __obj.updateDynamic("loggerLevel")(loggerLevel)
+    if (loggerLevel != null) __obj.updateDynamic("loggerLevel")(loggerLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggerOptions]
   }
 }

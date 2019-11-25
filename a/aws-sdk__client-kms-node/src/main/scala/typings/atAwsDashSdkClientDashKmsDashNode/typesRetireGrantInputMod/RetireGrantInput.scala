@@ -50,12 +50,12 @@ object RetireGrantInput {
     KeyId: String = null
   ): RetireGrantInput = {
     val __obj = js.Dynamic.literal()
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
-    if (GrantId != null) __obj.updateDynamic("GrantId")(GrantId)
-    if (GrantToken != null) __obj.updateDynamic("GrantToken")(GrantToken)
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId)
+    if (GrantId != null) __obj.updateDynamic("GrantId")(GrantId.asInstanceOf[js.Any])
+    if (GrantToken != null) __obj.updateDynamic("GrantToken")(GrantToken.asInstanceOf[js.Any])
+    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetireGrantInput]
   }
 }

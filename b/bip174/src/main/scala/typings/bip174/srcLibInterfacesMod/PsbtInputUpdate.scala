@@ -32,16 +32,16 @@ object PsbtInputUpdate {
     witnessUtxo: WitnessUtxo = null
   ): PsbtInputUpdate = {
     val __obj = js.Dynamic.literal()
-    if (bip32Derivation != null) __obj.updateDynamic("bip32Derivation")(bip32Derivation)
-    if (finalScriptSig != null) __obj.updateDynamic("finalScriptSig")(finalScriptSig)
-    if (finalScriptWitness != null) __obj.updateDynamic("finalScriptWitness")(finalScriptWitness)
-    if (nonWitnessUtxo != null) __obj.updateDynamic("nonWitnessUtxo")(nonWitnessUtxo)
-    if (partialSig != null) __obj.updateDynamic("partialSig")(partialSig)
-    if (porCommitment != null) __obj.updateDynamic("porCommitment")(porCommitment)
-    if (redeemScript != null) __obj.updateDynamic("redeemScript")(redeemScript)
+    if (bip32Derivation != null) __obj.updateDynamic("bip32Derivation")(bip32Derivation.asInstanceOf[js.Any])
+    if (finalScriptSig != null) __obj.updateDynamic("finalScriptSig")(finalScriptSig.asInstanceOf[js.Any])
+    if (finalScriptWitness != null) __obj.updateDynamic("finalScriptWitness")(finalScriptWitness.asInstanceOf[js.Any])
+    if (nonWitnessUtxo != null) __obj.updateDynamic("nonWitnessUtxo")(nonWitnessUtxo.asInstanceOf[js.Any])
+    if (partialSig != null) __obj.updateDynamic("partialSig")(partialSig.asInstanceOf[js.Any])
+    if (porCommitment != null) __obj.updateDynamic("porCommitment")(porCommitment.asInstanceOf[js.Any])
+    if (redeemScript != null) __obj.updateDynamic("redeemScript")(redeemScript.asInstanceOf[js.Any])
     if (sighashType != null) __obj.updateDynamic("sighashType")(sighashType.asInstanceOf[js.Any])
-    if (witnessScript != null) __obj.updateDynamic("witnessScript")(witnessScript)
-    if (witnessUtxo != null) __obj.updateDynamic("witnessUtxo")(witnessUtxo)
+    if (witnessScript != null) __obj.updateDynamic("witnessScript")(witnessScript.asInstanceOf[js.Any])
+    if (witnessUtxo != null) __obj.updateDynamic("witnessUtxo")(witnessUtxo.asInstanceOf[js.Any])
     __obj.asInstanceOf[PsbtInputUpdate]
   }
 }

@@ -14,9 +14,9 @@ trait JsonRpcResponse extends js.Object {
 object JsonRpcResponse {
   @scala.inline
   def apply(id: Double, jsonrpc: String, error: String = null, result: js.Any = null): JsonRpcResponse = {
-    val __obj = js.Dynamic.literal(id = id, jsonrpc = jsonrpc)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (result != null) __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], jsonrpc = jsonrpc.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonRpcResponse]
   }
 }

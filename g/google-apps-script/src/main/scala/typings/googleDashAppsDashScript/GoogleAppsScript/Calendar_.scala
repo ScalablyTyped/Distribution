@@ -152,14 +152,14 @@ object Calendar_ {
     Settings: SettingsCollection = null
   ): Calendar_ = {
     val __obj = js.Dynamic.literal(newAclRule = js.Any.fromFunction0(newAclRule), newAclRuleScope = js.Any.fromFunction0(newAclRuleScope), newCalendar = js.Any.fromFunction0(newCalendar), newCalendarListEntry = js.Any.fromFunction0(newCalendarListEntry), newCalendarListEntryNotificationSettings = js.Any.fromFunction0(newCalendarListEntryNotificationSettings), newCalendarNotification = js.Any.fromFunction0(newCalendarNotification), newChannel = js.Any.fromFunction0(newChannel), newConferenceData = js.Any.fromFunction0(newConferenceData), newConferenceParameters = js.Any.fromFunction0(newConferenceParameters), newConferenceParametersAddOnParameters = js.Any.fromFunction0(newConferenceParametersAddOnParameters), newConferenceProperties = js.Any.fromFunction0(newConferenceProperties), newConferenceRequestStatus = js.Any.fromFunction0(newConferenceRequestStatus), newConferenceSolution = js.Any.fromFunction0(newConferenceSolution), newConferenceSolutionKey = js.Any.fromFunction0(newConferenceSolutionKey), newCreateConferenceRequest = js.Any.fromFunction0(newCreateConferenceRequest), newEntryPoint = js.Any.fromFunction0(newEntryPoint), newEvent = js.Any.fromFunction0(newEvent), newEventAttachment = js.Any.fromFunction0(newEventAttachment), newEventAttendee = js.Any.fromFunction0(newEventAttendee), newEventCreator = js.Any.fromFunction0(newEventCreator), newEventDateTime = js.Any.fromFunction0(newEventDateTime), newEventExtendedProperties = js.Any.fromFunction0(newEventExtendedProperties), newEventGadget = js.Any.fromFunction0(newEventGadget), newEventOrganizer = js.Any.fromFunction0(newEventOrganizer), newEventReminder = js.Any.fromFunction0(newEventReminder), newEventReminders = js.Any.fromFunction0(newEventReminders), newEventSource = js.Any.fromFunction0(newEventSource), newFreeBusyRequest = js.Any.fromFunction0(newFreeBusyRequest), newFreeBusyRequestItem = js.Any.fromFunction0(newFreeBusyRequestItem))
-    if (Acl != null) __obj.updateDynamic("Acl")(Acl)
-    if (CalendarList != null) __obj.updateDynamic("CalendarList")(CalendarList)
-    if (Calendars != null) __obj.updateDynamic("Calendars")(Calendars)
-    if (Channels != null) __obj.updateDynamic("Channels")(Channels)
-    if (Colors != null) __obj.updateDynamic("Colors")(Colors)
-    if (Events != null) __obj.updateDynamic("Events")(Events)
-    if (Freebusy != null) __obj.updateDynamic("Freebusy")(Freebusy)
-    if (Settings != null) __obj.updateDynamic("Settings")(Settings)
+    if (Acl != null) __obj.updateDynamic("Acl")(Acl.asInstanceOf[js.Any])
+    if (CalendarList != null) __obj.updateDynamic("CalendarList")(CalendarList.asInstanceOf[js.Any])
+    if (Calendars != null) __obj.updateDynamic("Calendars")(Calendars.asInstanceOf[js.Any])
+    if (Channels != null) __obj.updateDynamic("Channels")(Channels.asInstanceOf[js.Any])
+    if (Colors != null) __obj.updateDynamic("Colors")(Colors.asInstanceOf[js.Any])
+    if (Events != null) __obj.updateDynamic("Events")(Events.asInstanceOf[js.Any])
+    if (Freebusy != null) __obj.updateDynamic("Freebusy")(Freebusy.asInstanceOf[js.Any])
+    if (Settings != null) __obj.updateDynamic("Settings")(Settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[Calendar_]
   }
 }

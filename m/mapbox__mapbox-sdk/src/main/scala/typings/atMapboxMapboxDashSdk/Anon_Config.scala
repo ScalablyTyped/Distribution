@@ -21,10 +21,10 @@ object Anon_Config {
     scrollZoom: js.UndefOr[Boolean] = js.undefined,
     title: js.UndefOr[Boolean] = js.undefined
   ): Anon_Config = {
-    val __obj = js.Dynamic.literal(config = config, styleId = styleId)
-    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId)
-    if (!js.isUndefined(scrollZoom)) __obj.updateDynamic("scrollZoom")(scrollZoom)
-    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], styleId = styleId.asInstanceOf[js.Any])
+    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollZoom)) __obj.updateDynamic("scrollZoom")(scrollZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Config]
   }
 }

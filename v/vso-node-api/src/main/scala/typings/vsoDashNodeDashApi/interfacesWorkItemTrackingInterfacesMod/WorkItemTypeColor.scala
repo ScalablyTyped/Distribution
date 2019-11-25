@@ -22,7 +22,7 @@ trait WorkItemTypeColor extends js.Object {
 object WorkItemTypeColor {
   @scala.inline
   def apply(primaryColor: String, secondaryColor: String, workItemTypeName: String): WorkItemTypeColor = {
-    val __obj = js.Dynamic.literal(primaryColor = primaryColor, secondaryColor = secondaryColor, workItemTypeName = workItemTypeName)
+    val __obj = js.Dynamic.literal(primaryColor = primaryColor.asInstanceOf[js.Any], secondaryColor = secondaryColor.asInstanceOf[js.Any], workItemTypeName = workItemTypeName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkItemTypeColor]
   }

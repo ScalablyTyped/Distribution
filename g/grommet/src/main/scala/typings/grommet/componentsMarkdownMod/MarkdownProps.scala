@@ -12,7 +12,7 @@ object MarkdownProps {
   @scala.inline
   def apply(components: js.Object = null): MarkdownProps = {
     val __obj = js.Dynamic.literal()
-    if (components != null) __obj.updateDynamic("components")(components)
+    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkdownProps]
   }
 }

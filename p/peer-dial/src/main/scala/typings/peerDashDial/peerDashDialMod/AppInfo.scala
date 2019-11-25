@@ -15,7 +15,7 @@ trait AppInfo extends js.Object {
 object AppInfo {
   @scala.inline
   def apply(dialVer: String, name: String, options: AppInfoOptions, state: String, xmlns: String): AppInfo = {
-    val __obj = js.Dynamic.literal(dialVer = dialVer, name = name, options = options, state = state, xmlns = xmlns)
+    val __obj = js.Dynamic.literal(dialVer = dialVer.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], xmlns = xmlns.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AppInfo]
   }

@@ -21,8 +21,8 @@ object ViewportOptions {
   ): ViewportOptions = {
     val __obj = js.Dynamic.literal()
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (projectionMatrix != null) __obj.updateDynamic("projectionMatrix")(projectionMatrix)
-    if (viewMatrix != null) __obj.updateDynamic("viewMatrix")(viewMatrix)
+    if (projectionMatrix != null) __obj.updateDynamic("projectionMatrix")(projectionMatrix.asInstanceOf[js.Any])
+    if (viewMatrix != null) __obj.updateDynamic("viewMatrix")(viewMatrix.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewportOptions]
   }

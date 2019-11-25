@@ -29,10 +29,10 @@ object RunQueryRequest {
     readOptions: ReadOptions = null
   ): RunQueryRequest = {
     val __obj = js.Dynamic.literal()
-    if (gqlQuery != null) __obj.updateDynamic("gqlQuery")(gqlQuery)
-    if (partitionId != null) __obj.updateDynamic("partitionId")(partitionId)
-    if (query != null) __obj.updateDynamic("query")(query)
-    if (readOptions != null) __obj.updateDynamic("readOptions")(readOptions)
+    if (gqlQuery != null) __obj.updateDynamic("gqlQuery")(gqlQuery.asInstanceOf[js.Any])
+    if (partitionId != null) __obj.updateDynamic("partitionId")(partitionId.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (readOptions != null) __obj.updateDynamic("readOptions")(readOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunQueryRequest]
   }
 }

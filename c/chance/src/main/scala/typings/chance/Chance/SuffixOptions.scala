@@ -11,7 +11,7 @@ trait SuffixOptions extends js.Object {
 object SuffixOptions {
   @scala.inline
   def apply(full: Boolean): SuffixOptions = {
-    val __obj = js.Dynamic.literal(full = full)
+    val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SuffixOptions]
   }

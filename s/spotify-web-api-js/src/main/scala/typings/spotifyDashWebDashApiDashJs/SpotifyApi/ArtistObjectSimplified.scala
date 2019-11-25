@@ -28,8 +28,8 @@ object ArtistObjectSimplified {
     `type`: artist,
     uri: String
   ): ArtistObjectSimplified = {
-    val __obj = js.Dynamic.literal(external_urls = external_urls, href = href, id = id, name = name, uri = uri)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtistObjectSimplified]
   }
 }

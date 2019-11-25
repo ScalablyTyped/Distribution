@@ -59,12 +59,12 @@ object CompleteMultipartUploadInput {
     archiveSize: String = null,
     checksum: String = null
   ): CompleteMultipartUploadInput = {
-    val __obj = js.Dynamic.literal(accountId = accountId, uploadId = uploadId, vaultName = vaultName)
-    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal)
-    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions)
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], uploadId = uploadId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
+    if ($abortSignal != null) __obj.updateDynamic("$abortSignal")($abortSignal.asInstanceOf[js.Any])
+    if ($httpOptions != null) __obj.updateDynamic("$httpOptions")($httpOptions.asInstanceOf[js.Any])
     if ($maxRetries != null) __obj.updateDynamic("$maxRetries")($maxRetries.asInstanceOf[js.Any])
-    if (archiveSize != null) __obj.updateDynamic("archiveSize")(archiveSize)
-    if (checksum != null) __obj.updateDynamic("checksum")(checksum)
+    if (archiveSize != null) __obj.updateDynamic("archiveSize")(archiveSize.asInstanceOf[js.Any])
+    if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompleteMultipartUploadInput]
   }
 }

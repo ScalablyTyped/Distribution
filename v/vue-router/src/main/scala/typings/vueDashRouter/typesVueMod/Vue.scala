@@ -16,7 +16,7 @@ trait Vue extends js.Object {
 object Vue {
   @scala.inline
   def apply($route: Route, $router: default): Vue = {
-    val __obj = js.Dynamic.literal($route = $route, $router = $router)
+    val __obj = js.Dynamic.literal($route = $route.asInstanceOf[js.Any], $router = $router.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Vue]
   }

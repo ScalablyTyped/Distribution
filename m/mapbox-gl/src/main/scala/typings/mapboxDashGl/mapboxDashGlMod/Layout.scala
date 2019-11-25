@@ -12,7 +12,7 @@ object Layout {
   @scala.inline
   def apply(visibility: Visibility = null): Layout = {
     val __obj = js.Dynamic.literal()
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layout]
   }
 }

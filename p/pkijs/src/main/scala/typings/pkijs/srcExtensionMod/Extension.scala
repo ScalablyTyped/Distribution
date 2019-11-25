@@ -26,8 +26,8 @@ object Extension {
     toSchema: () => js.Any,
     parsedValue: js.Any = null
   ): Extension = {
-    val __obj = js.Dynamic.literal(critical = critical, extnID = extnID, extnValue = extnValue, fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
-    if (parsedValue != null) __obj.updateDynamic("parsedValue")(parsedValue)
+    val __obj = js.Dynamic.literal(critical = critical.asInstanceOf[js.Any], extnID = extnID.asInstanceOf[js.Any], extnValue = extnValue.asInstanceOf[js.Any], fromSchema = js.Any.fromFunction1(fromSchema), toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
+    if (parsedValue != null) __obj.updateDynamic("parsedValue")(parsedValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Extension]
   }
 }

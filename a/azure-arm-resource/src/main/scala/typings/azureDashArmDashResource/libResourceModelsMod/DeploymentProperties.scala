@@ -58,13 +58,13 @@ object DeploymentProperties {
     template: js.Any = null,
     templateLink: TemplateLink = null
   ): DeploymentProperties = {
-    val __obj = js.Dynamic.literal(mode = mode)
-    if (debugSetting != null) __obj.updateDynamic("debugSetting")(debugSetting)
-    if (onErrorDeployment != null) __obj.updateDynamic("onErrorDeployment")(onErrorDeployment)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
-    if (parametersLink != null) __obj.updateDynamic("parametersLink")(parametersLink)
-    if (template != null) __obj.updateDynamic("template")(template)
-    if (templateLink != null) __obj.updateDynamic("templateLink")(templateLink)
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
+    if (debugSetting != null) __obj.updateDynamic("debugSetting")(debugSetting.asInstanceOf[js.Any])
+    if (onErrorDeployment != null) __obj.updateDynamic("onErrorDeployment")(onErrorDeployment.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (parametersLink != null) __obj.updateDynamic("parametersLink")(parametersLink.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (templateLink != null) __obj.updateDynamic("templateLink")(templateLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentProperties]
   }
 }

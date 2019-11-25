@@ -30,15 +30,15 @@ object ConnectionOptions {
     user: String = null
   ): ConnectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (application_name != null) __obj.updateDynamic("application_name")(application_name)
-    if (client_encoding != null) __obj.updateDynamic("client_encoding")(client_encoding)
-    if (database != null) __obj.updateDynamic("database")(database)
-    if (fallback_application_name != null) __obj.updateDynamic("fallback_application_name")(fallback_application_name)
-    if (host != null) __obj.updateDynamic("host")(host)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (port != null) __obj.updateDynamic("port")(port)
+    if (application_name != null) __obj.updateDynamic("application_name")(application_name.asInstanceOf[js.Any])
+    if (client_encoding != null) __obj.updateDynamic("client_encoding")(client_encoding.asInstanceOf[js.Any])
+    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
+    if (fallback_application_name != null) __obj.updateDynamic("fallback_application_name")(fallback_application_name.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user)
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionOptions]
   }
 }

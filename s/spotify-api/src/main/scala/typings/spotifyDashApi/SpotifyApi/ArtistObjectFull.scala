@@ -30,8 +30,8 @@ object ArtistObjectFull {
     `type`: artist,
     uri: String
   ): ArtistObjectFull = {
-    val __obj = js.Dynamic.literal(external_urls = external_urls, followers = followers, genres = genres, href = href, id = id, images = images, name = name, popularity = popularity, uri = uri)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(external_urls = external_urls.asInstanceOf[js.Any], followers = followers.asInstanceOf[js.Any], genres = genres.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], popularity = popularity.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtistObjectFull]
   }
 }

@@ -28,10 +28,10 @@ object OutputChunk {
     facadeModuleId: String = null,
     map: SourceMap = null
   ): OutputChunk = {
-    val __obj = js.Dynamic.literal(code = code, dynamicImports = dynamicImports, exports = exports, fileName = fileName, imports = imports, isDynamicEntry = isDynamicEntry, isEntry = isEntry, modules = modules, name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (facadeModuleId != null) __obj.updateDynamic("facadeModuleId")(facadeModuleId)
-    if (map != null) __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], dynamicImports = dynamicImports.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], isDynamicEntry = isDynamicEntry.asInstanceOf[js.Any], isEntry = isEntry.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (facadeModuleId != null) __obj.updateDynamic("facadeModuleId")(facadeModuleId.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputChunk]
   }
 }

@@ -69,14 +69,14 @@ object TweenConfigDefaults {
     val __obj = js.Dynamic.literal(targets = targets.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (ease != null) __obj.updateDynamic("ease")(ease)
-    if (easeParams != null) __obj.updateDynamic("easeParams")(easeParams)
-    if (!js.isUndefined(flipX)) __obj.updateDynamic("flipX")(flipX)
-    if (!js.isUndefined(flipY)) __obj.updateDynamic("flipY")(flipY)
+    if (ease != null) __obj.updateDynamic("ease")(ease.asInstanceOf[js.Any])
+    if (easeParams != null) __obj.updateDynamic("easeParams")(easeParams.asInstanceOf[js.Any])
+    if (!js.isUndefined(flipX)) __obj.updateDynamic("flipX")(flipX.asInstanceOf[js.Any])
+    if (!js.isUndefined(flipY)) __obj.updateDynamic("flipY")(flipY.asInstanceOf[js.Any])
     if (hold != null) __obj.updateDynamic("hold")(hold.asInstanceOf[js.Any])
     if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
     if (repeatDelay != null) __obj.updateDynamic("repeatDelay")(repeatDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo)
+    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo.asInstanceOf[js.Any])
     __obj.asInstanceOf[TweenConfigDefaults]
   }
 }

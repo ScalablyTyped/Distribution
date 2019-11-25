@@ -34,8 +34,8 @@ object SearchClosenessCentralityNormalizedOptions {
     weight: /* edge */ EdgeSingular => Double = null
   ): SearchClosenessCentralityNormalizedOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed)
-    if (!js.isUndefined(harmonic)) __obj.updateDynamic("harmonic")(harmonic)
+    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed.asInstanceOf[js.Any])
+    if (!js.isUndefined(harmonic)) __obj.updateDynamic("harmonic")(harmonic.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(js.Any.fromFunction1(weight))
     __obj.asInstanceOf[SearchClosenessCentralityNormalizedOptions]
   }

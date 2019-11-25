@@ -24,10 +24,10 @@ object ImportDirective {
     loc: Location = null,
     range: js.Tuple2[Double, Double] = null
   ): ImportDirective = {
-    val __obj = js.Dynamic.literal(path = path, symbolAliases = symbolAliases, unitAlias = unitAlias)
-    __obj.updateDynamic("type")(`type`)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (range != null) __obj.updateDynamic("range")(range)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], symbolAliases = symbolAliases.asInstanceOf[js.Any], unitAlias = unitAlias.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportDirective]
   }
 }

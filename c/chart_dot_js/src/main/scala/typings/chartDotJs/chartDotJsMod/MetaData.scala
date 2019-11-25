@@ -29,9 +29,9 @@ object MetaData {
     _start: js.Any = null,
     hidden: js.UndefOr[Boolean] = js.undefined
   ): MetaData = {
-    val __obj = js.Dynamic.literal(_chart = _chart, _datasetIndex = _datasetIndex, _index = _index, _model = _model, _view = _view, _xScale = _xScale, _yScale = _yScale)
-    if (_start != null) __obj.updateDynamic("_start")(_start)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    val __obj = js.Dynamic.literal(_chart = _chart.asInstanceOf[js.Any], _datasetIndex = _datasetIndex.asInstanceOf[js.Any], _index = _index.asInstanceOf[js.Any], _model = _model.asInstanceOf[js.Any], _view = _view.asInstanceOf[js.Any], _xScale = _xScale.asInstanceOf[js.Any], _yScale = _yScale.asInstanceOf[js.Any])
+    if (_start != null) __obj.updateDynamic("_start")(_start.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaData]
   }
 }

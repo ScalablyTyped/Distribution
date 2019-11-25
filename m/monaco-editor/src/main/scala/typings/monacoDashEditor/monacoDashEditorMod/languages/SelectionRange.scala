@@ -12,7 +12,7 @@ trait SelectionRange extends js.Object {
 object SelectionRange {
   @scala.inline
   def apply(range: IRange): SelectionRange = {
-    val __obj = js.Dynamic.literal(range = range)
+    val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SelectionRange]
   }

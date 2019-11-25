@@ -52,14 +52,14 @@ object NodeField {
     size: js.UndefOr[Boolean] = js.undefined
   ): NodeField = {
     val __obj = js.Dynamic.literal()
-    if (computedStyle != null) __obj.updateDynamic("computedStyle")(computedStyle)
-    if (!js.isUndefined(context)) __obj.updateDynamic("context")(context)
-    if (!js.isUndefined(dataset)) __obj.updateDynamic("dataset")(dataset)
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (!js.isUndefined(rect)) __obj.updateDynamic("rect")(rect)
-    if (!js.isUndefined(scrollOffset)) __obj.updateDynamic("scrollOffset")(scrollOffset)
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size)
+    if (computedStyle != null) __obj.updateDynamic("computedStyle")(computedStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(context)) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (!js.isUndefined(dataset)) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (!js.isUndefined(rect)) __obj.updateDynamic("rect")(rect.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollOffset)) __obj.updateDynamic("scrollOffset")(scrollOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeField]
   }
 }

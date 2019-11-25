@@ -1,9 +1,9 @@
 package typings.chromeDashApps.chrome.usb
 
-import typings.chromeDashApps.chromeDashAppsStrings.device
+import typings.chromeDashApps.chromeDashAppsStrings.device_
 import typings.chromeDashApps.chromeDashAppsStrings.endpoint
 import typings.chromeDashApps.chromeDashAppsStrings.interface
-import typings.chromeDashApps.chromeDashAppsStrings.other
+import typings.chromeDashApps.chromeDashAppsStrings.other_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.usb.Recipient")
 @js.native
 object Recipient extends js.Object {
-  var DEVICE: device = js.native
+  var DEVICE: device_ = js.native
   var ENDPOINT: endpoint = js.native
   var INTERFACE: interface = js.native
-  var OTHER: other = js.native
+  var OTHER: other_ = js.native
 }
 

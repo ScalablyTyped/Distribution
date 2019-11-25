@@ -24,12 +24,12 @@ object CollatorOptions {
     usage: java.lang.String = null
   ): CollatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (caseFirst != null) __obj.updateDynamic("caseFirst")(caseFirst)
-    if (!js.isUndefined(ignorePunctuation)) __obj.updateDynamic("ignorePunctuation")(ignorePunctuation)
-    if (localeMatcher != null) __obj.updateDynamic("localeMatcher")(localeMatcher)
-    if (!js.isUndefined(numeric)) __obj.updateDynamic("numeric")(numeric)
-    if (sensitivity != null) __obj.updateDynamic("sensitivity")(sensitivity)
-    if (usage != null) __obj.updateDynamic("usage")(usage)
+    if (caseFirst != null) __obj.updateDynamic("caseFirst")(caseFirst.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignorePunctuation)) __obj.updateDynamic("ignorePunctuation")(ignorePunctuation.asInstanceOf[js.Any])
+    if (localeMatcher != null) __obj.updateDynamic("localeMatcher")(localeMatcher.asInstanceOf[js.Any])
+    if (!js.isUndefined(numeric)) __obj.updateDynamic("numeric")(numeric.asInstanceOf[js.Any])
+    if (sensitivity != null) __obj.updateDynamic("sensitivity")(sensitivity.asInstanceOf[js.Any])
+    if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollatorOptions]
   }
 }

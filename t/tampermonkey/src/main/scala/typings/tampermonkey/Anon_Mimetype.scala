@@ -13,8 +13,8 @@ object Anon_Mimetype {
   @scala.inline
   def apply(mimetype: String = null, `type`: String = null): Anon_Mimetype = {
     val __obj = js.Dynamic.literal()
-    if (mimetype != null) __obj.updateDynamic("mimetype")(mimetype)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (mimetype != null) __obj.updateDynamic("mimetype")(mimetype.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Mimetype]
   }
 }

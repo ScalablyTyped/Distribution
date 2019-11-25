@@ -25,7 +25,7 @@ object GistsListCommentsResponseItem {
     url: String,
     user: GistsListCommentsResponseItemUser
   ): GistsListCommentsResponseItem = {
-    val __obj = js.Dynamic.literal(body = body, created_at = created_at, id = id, node_id = node_id, updated_at = updated_at, url = url, user = user)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GistsListCommentsResponseItem]
   }

@@ -12,7 +12,7 @@ trait TemporaryTokenRequest extends js.Object {
 object TemporaryTokenRequest {
   @scala.inline
   def apply(expires: String, scopes: js.Array[String]): TemporaryTokenRequest = {
-    val __obj = js.Dynamic.literal(expires = expires, scopes = scopes)
+    val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TemporaryTokenRequest]
   }

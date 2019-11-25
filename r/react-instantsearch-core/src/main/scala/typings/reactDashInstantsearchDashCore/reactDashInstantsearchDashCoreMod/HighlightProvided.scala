@@ -1,6 +1,6 @@
 package typings.reactDashInstantsearchDashCore.reactDashInstantsearchDashCoreMod
 
-import typings.reactDashInstantsearchDashCore.Anon_Attribute
+import typings.reactDashInstantsearchDashCore.Anon_AttributeHighlightProperty
 import typings.reactDashInstantsearchDashCore.Anon_IsHighlighted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,12 +23,12 @@ trait HighlightProvided[TDoc] extends js.Object {
     * }) as Array<Array<{value: string, isHighlighted: boolean}>>
     * ```
     */
-  def highlight(configuration: Anon_Attribute[TDoc]): js.Array[Anon_IsHighlighted]
+  def highlight(configuration: Anon_AttributeHighlightProperty[TDoc]): js.Array[Anon_IsHighlighted]
 }
 
 object HighlightProvided {
   @scala.inline
-  def apply[TDoc](highlight: Anon_Attribute[TDoc] => js.Array[Anon_IsHighlighted]): HighlightProvided[TDoc] = {
+  def apply[TDoc](highlight: Anon_AttributeHighlightProperty[TDoc] => js.Array[Anon_IsHighlighted]): HighlightProvided[TDoc] = {
     val __obj = js.Dynamic.literal(highlight = js.Any.fromFunction1(highlight))
   
     __obj.asInstanceOf[HighlightProvided[TDoc]]

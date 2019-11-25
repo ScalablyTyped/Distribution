@@ -33,7 +33,7 @@ object TMC {
     polyline: String,
     status: String
   ): TMC = {
-    val __obj = js.Dynamic.literal(distance = distance, lcode = lcode.asInstanceOf[js.Any], path = path, polyline = polyline, status = status)
+    val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], lcode = lcode.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TMC]
   }

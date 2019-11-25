@@ -14,8 +14,8 @@ trait DownloadFilenameSuggestion extends js.Object {
 object DownloadFilenameSuggestion {
   @scala.inline
   def apply(filename: String, conflictAction: String = null): DownloadFilenameSuggestion = {
-    val __obj = js.Dynamic.literal(filename = filename)
-    if (conflictAction != null) __obj.updateDynamic("conflictAction")(conflictAction)
+    val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
+    if (conflictAction != null) __obj.updateDynamic("conflictAction")(conflictAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadFilenameSuggestion]
   }
 }

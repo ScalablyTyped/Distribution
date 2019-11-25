@@ -26,9 +26,9 @@ object RadioMixinOptions {
   @scala.inline
   def apply(channelName: String = null, radioEvents: js.Any = null, radioRequests: js.Any = null): RadioMixinOptions = {
     val __obj = js.Dynamic.literal()
-    if (channelName != null) __obj.updateDynamic("channelName")(channelName)
-    if (radioEvents != null) __obj.updateDynamic("radioEvents")(radioEvents)
-    if (radioRequests != null) __obj.updateDynamic("radioRequests")(radioRequests)
+    if (channelName != null) __obj.updateDynamic("channelName")(channelName.asInstanceOf[js.Any])
+    if (radioEvents != null) __obj.updateDynamic("radioEvents")(radioEvents.asInstanceOf[js.Any])
+    if (radioRequests != null) __obj.updateDynamic("radioRequests")(radioRequests.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadioMixinOptions]
   }
 }

@@ -139,20 +139,20 @@ object ParseRule {
     tag: String = null
   ): ParseRule = {
     val __obj = js.Dynamic.literal()
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
     if (contentElement != null) __obj.updateDynamic("contentElement")(contentElement.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (getAttrs != null) __obj.updateDynamic("getAttrs")(js.Any.fromFunction1(getAttrs))
     if (getContent != null) __obj.updateDynamic("getContent")(js.Any.fromFunction2(getContent))
-    if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore)
-    if (mark != null) __obj.updateDynamic("mark")(mark)
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
-    if (node != null) __obj.updateDynamic("node")(node)
+    if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (mark != null) __obj.updateDynamic("mark")(mark.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
     if (preserveWhitespace != null) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseRule]
   }
 }

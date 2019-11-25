@@ -11,7 +11,7 @@ object ExpandedRows {
   @scala.inline
   def apply(NumberDictionary: /* idx */ NumberDictionary[Boolean | ExpandedRows] = null): ExpandedRows = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[ExpandedRows]
   }
 }

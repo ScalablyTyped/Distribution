@@ -18,10 +18,10 @@ object Anon_Content {
   @scala.inline
   def apply(content: String = null, end: Position = null, source: String = null, start: Position = null): Anon_Content = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (source != null) __obj.updateDynamic("source")(source)
-    if (start != null) __obj.updateDynamic("start")(start)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Content]
   }
 }

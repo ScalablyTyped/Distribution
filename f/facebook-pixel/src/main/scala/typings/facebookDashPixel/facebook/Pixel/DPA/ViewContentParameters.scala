@@ -22,10 +22,10 @@ object ViewContentParameters {
     currency: String = null,
     value: Int | Double = null
   ): ViewContentParameters = {
-    val __obj = js.Dynamic.literal(content_ids = content_ids, content_type = content_type)
-    if (content_category != null) __obj.updateDynamic("content_category")(content_category)
-    if (content_name != null) __obj.updateDynamic("content_name")(content_name)
-    if (currency != null) __obj.updateDynamic("currency")(currency)
+    val __obj = js.Dynamic.literal(content_ids = content_ids.asInstanceOf[js.Any], content_type = content_type.asInstanceOf[js.Any])
+    if (content_category != null) __obj.updateDynamic("content_category")(content_category.asInstanceOf[js.Any])
+    if (content_name != null) __obj.updateDynamic("content_name")(content_name.asInstanceOf[js.Any])
+    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewContentParameters]
   }

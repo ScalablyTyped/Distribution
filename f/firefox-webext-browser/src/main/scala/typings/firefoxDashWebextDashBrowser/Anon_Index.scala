@@ -14,7 +14,7 @@ object Anon_Index {
   def apply(index: Int | Double = null, parentId: String = null): Anon_Index = {
     val __obj = js.Dynamic.literal()
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Index]
   }
 }

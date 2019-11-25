@@ -14,9 +14,9 @@ object OperationDisplay {
   @scala.inline
   def apply(operation: String = null, provider: String = null, resource: String = null): OperationDisplay = {
     val __obj = js.Dynamic.literal()
-    if (operation != null) __obj.updateDynamic("operation")(operation)
-    if (provider != null) __obj.updateDynamic("provider")(provider)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
+    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationDisplay]
   }
 }

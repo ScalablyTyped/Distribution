@@ -11,7 +11,7 @@ trait Typeofimported_gun extends js.Object {
 object Typeofimported_gun {
   @scala.inline
   def apply(Gun: js.Any): Typeofimported_gun = {
-    val __obj = js.Dynamic.literal(Gun = Gun)
+    val __obj = js.Dynamic.literal(Gun = Gun.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofimported_gun]
   }

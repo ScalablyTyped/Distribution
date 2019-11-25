@@ -55,7 +55,7 @@ object QueryTypes {
     UPSERT: String,
     VERSION: String
   ): QueryTypes = {
-    val __obj = js.Dynamic.literal(BULKDELETE = BULKDELETE, BULKUPDATE = BULKUPDATE, DELETE = DELETE, DESCRIBE = DESCRIBE, FOREIGNKEYS = FOREIGNKEYS, INSERT = INSERT, RAW = RAW, SELECT = SELECT, SHOWINDEXES = SHOWINDEXES, SHOWTABLES = SHOWTABLES, UPDATE = UPDATE, UPSERT = UPSERT, VERSION = VERSION)
+    val __obj = js.Dynamic.literal(BULKDELETE = BULKDELETE.asInstanceOf[js.Any], BULKUPDATE = BULKUPDATE.asInstanceOf[js.Any], DELETE = DELETE.asInstanceOf[js.Any], DESCRIBE = DESCRIBE.asInstanceOf[js.Any], FOREIGNKEYS = FOREIGNKEYS.asInstanceOf[js.Any], INSERT = INSERT.asInstanceOf[js.Any], RAW = RAW.asInstanceOf[js.Any], SELECT = SELECT.asInstanceOf[js.Any], SHOWINDEXES = SHOWINDEXES.asInstanceOf[js.Any], SHOWTABLES = SHOWTABLES.asInstanceOf[js.Any], UPDATE = UPDATE.asInstanceOf[js.Any], UPSERT = UPSERT.asInstanceOf[js.Any], VERSION = VERSION.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QueryTypes]
   }

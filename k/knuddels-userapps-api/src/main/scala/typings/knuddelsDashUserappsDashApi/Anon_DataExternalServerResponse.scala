@@ -24,7 +24,7 @@ object Anon_DataExternalServerResponse {
     onSuccess: (/* responseData */ String, /* externalServerResponse */ ExternalServerResponse) => Unit = null
   ): Anon_DataExternalServerResponse = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction2(onFailure))
     if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction2(onSuccess))
     __obj.asInstanceOf[Anon_DataExternalServerResponse]

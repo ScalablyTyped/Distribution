@@ -14,7 +14,7 @@ object MoveDimensionRequest {
   def apply(destinationIndex: Int | Double = null, source: DimensionRange = null): MoveDimensionRequest = {
     val __obj = js.Dynamic.literal()
     if (destinationIndex != null) __obj.updateDynamic("destinationIndex")(destinationIndex.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoveDimensionRequest]
   }
 }

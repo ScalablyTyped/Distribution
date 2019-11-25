@@ -12,7 +12,7 @@ trait SetIamPolicyRequest extends js.Object {
 object SetIamPolicyRequest {
   @scala.inline
   def apply(policy: Partial[Policy]): SetIamPolicyRequest = {
-    val __obj = js.Dynamic.literal(policy = policy)
+    val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SetIamPolicyRequest]
   }

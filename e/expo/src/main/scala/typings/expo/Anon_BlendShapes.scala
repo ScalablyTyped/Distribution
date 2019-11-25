@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_BlendShapes extends js.Object {
   var blendShapes: js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ shape in expo.expo/build/AR.BlendShape ]:? number}
     */ typings.expo.expoStrings.Anon_BlendShapes with js.Any
   ] = js.undefined
@@ -22,15 +22,15 @@ object Anon_BlendShapes {
   def apply(
     isTracked: Boolean,
     `type`: Face,
-    blendShapes: /* import warning: ImportType.apply c Unsupported type mapping: 
+    blendShapes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ shape in expo.expo/build/AR.BlendShape ]:? number}
     */ typings.expo.expoStrings.Anon_BlendShapes with js.Any = null,
     geometry: FaceGeometry = null
   ): Anon_BlendShapes = {
-    val __obj = js.Dynamic.literal(isTracked = isTracked)
-    __obj.updateDynamic("type")(`type`)
-    if (blendShapes != null) __obj.updateDynamic("blendShapes")(blendShapes)
-    if (geometry != null) __obj.updateDynamic("geometry")(geometry)
+    val __obj = js.Dynamic.literal(isTracked = isTracked.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (blendShapes != null) __obj.updateDynamic("blendShapes")(blendShapes.asInstanceOf[js.Any])
+    if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BlendShapes]
   }
 }

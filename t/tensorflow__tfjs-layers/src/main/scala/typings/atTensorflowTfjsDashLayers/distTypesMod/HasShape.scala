@@ -12,7 +12,7 @@ trait HasShape extends js.Object {
 object HasShape {
   @scala.inline
   def apply(shape: Shape): HasShape = {
-    val __obj = js.Dynamic.literal(shape = shape)
+    val __obj = js.Dynamic.literal(shape = shape.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HasShape]
   }

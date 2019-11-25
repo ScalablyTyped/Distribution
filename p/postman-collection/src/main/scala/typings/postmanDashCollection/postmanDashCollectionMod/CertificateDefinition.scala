@@ -27,12 +27,12 @@ object CertificateDefinition {
     val __obj = js.Dynamic.literal()
     if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (matches != null) __obj.updateDynamic("matches")(matches.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateDefinition]
   }
 }

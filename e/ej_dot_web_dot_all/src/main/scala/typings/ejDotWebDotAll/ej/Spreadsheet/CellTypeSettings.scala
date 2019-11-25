@@ -44,14 +44,14 @@ object CellTypeSettings {
     value: String = null
   ): CellTypeSettings = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
-    if (dataSourceRange != null) __obj.updateDynamic("dataSourceRange")(dataSourceRange)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (dataSourceRange != null) __obj.updateDynamic("dataSourceRange")(dataSourceRange.asInstanceOf[js.Any])
     if (dataSourceSheetIndex != null) __obj.updateDynamic("dataSourceSheetIndex")(dataSourceSheetIndex.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (!js.isUndefined(isChecked)) __obj.updateDynamic("isChecked")(isChecked)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (!js.isUndefined(isChecked)) __obj.updateDynamic("isChecked")(isChecked.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellTypeSettings]
   }
 }

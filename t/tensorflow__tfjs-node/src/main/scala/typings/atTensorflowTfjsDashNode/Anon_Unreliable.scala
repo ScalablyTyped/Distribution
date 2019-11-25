@@ -11,7 +11,7 @@ trait Anon_Unreliable extends js.Object {
 object Anon_Unreliable {
   @scala.inline
   def apply(unreliable: Boolean): Anon_Unreliable = {
-    val __obj = js.Dynamic.literal(unreliable = unreliable)
+    val __obj = js.Dynamic.literal(unreliable = unreliable.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Unreliable]
   }

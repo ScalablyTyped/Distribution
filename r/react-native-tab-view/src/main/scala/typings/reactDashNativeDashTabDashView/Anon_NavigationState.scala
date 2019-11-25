@@ -13,7 +13,7 @@ trait Anon_NavigationState[T /* <: Route */] extends js.Object {
 object Anon_NavigationState {
   @scala.inline
   def apply[T /* <: Route */](navigationState: NavigationState[T]): Anon_NavigationState[T] = {
-    val __obj = js.Dynamic.literal(navigationState = navigationState)
+    val __obj = js.Dynamic.literal(navigationState = navigationState.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NavigationState[T]]
   }

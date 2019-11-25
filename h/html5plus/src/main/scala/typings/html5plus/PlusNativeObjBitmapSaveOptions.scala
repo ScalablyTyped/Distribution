@@ -57,9 +57,9 @@ object PlusNativeObjBitmapSaveOptions {
     quality: Int | Double = null
   ): PlusNativeObjBitmapSaveOptions = {
     val __obj = js.Dynamic.literal()
-    if (clip != null) __obj.updateDynamic("clip")(clip)
+    if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite)
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeObjBitmapSaveOptions]
   }

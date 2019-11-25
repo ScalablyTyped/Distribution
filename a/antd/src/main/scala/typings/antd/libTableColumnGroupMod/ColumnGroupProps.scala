@@ -14,7 +14,7 @@ object ColumnGroupProps {
   @scala.inline
   def apply(className: String = null, title: ReactNode = null): ColumnGroupProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnGroupProps]
   }

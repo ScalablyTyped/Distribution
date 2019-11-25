@@ -20,8 +20,8 @@ object PanInputOption {
     thresholdAngle: Int | Double = null
   ): PanInputOption = {
     val __obj = js.Dynamic.literal()
-    if (inputType != null) __obj.updateDynamic("inputType")(inputType)
-    if (scale != null) __obj.updateDynamic("scale")(scale)
+    if (inputType != null) __obj.updateDynamic("inputType")(inputType.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     if (thresholdAngle != null) __obj.updateDynamic("thresholdAngle")(thresholdAngle.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanInputOption]

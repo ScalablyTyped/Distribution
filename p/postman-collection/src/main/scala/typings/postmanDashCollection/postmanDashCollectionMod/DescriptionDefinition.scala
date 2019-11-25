@@ -12,8 +12,8 @@ trait DescriptionDefinition extends js.Object {
 object DescriptionDefinition {
   @scala.inline
   def apply(content: String, `type`: String = null): DescriptionDefinition = {
-    val __obj = js.Dynamic.literal(content = content)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescriptionDefinition]
   }
 }

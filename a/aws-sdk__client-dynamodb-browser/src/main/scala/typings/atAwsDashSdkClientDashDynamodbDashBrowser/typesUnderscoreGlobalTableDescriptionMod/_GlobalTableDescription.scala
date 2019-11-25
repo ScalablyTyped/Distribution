@@ -45,8 +45,8 @@ object _GlobalTableDescription {
   ): _GlobalTableDescription = {
     val __obj = js.Dynamic.literal()
     if (CreationDateTime != null) __obj.updateDynamic("CreationDateTime")(CreationDateTime.asInstanceOf[js.Any])
-    if (GlobalTableArn != null) __obj.updateDynamic("GlobalTableArn")(GlobalTableArn)
-    if (GlobalTableName != null) __obj.updateDynamic("GlobalTableName")(GlobalTableName)
+    if (GlobalTableArn != null) __obj.updateDynamic("GlobalTableArn")(GlobalTableArn.asInstanceOf[js.Any])
+    if (GlobalTableName != null) __obj.updateDynamic("GlobalTableName")(GlobalTableName.asInstanceOf[js.Any])
     if (GlobalTableStatus != null) __obj.updateDynamic("GlobalTableStatus")(GlobalTableStatus.asInstanceOf[js.Any])
     if (ReplicationGroup != null) __obj.updateDynamic("ReplicationGroup")(ReplicationGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[_GlobalTableDescription]

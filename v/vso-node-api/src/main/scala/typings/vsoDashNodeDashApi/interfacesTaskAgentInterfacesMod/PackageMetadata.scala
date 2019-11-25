@@ -52,8 +52,8 @@ object PackageMetadata {
     `type`: String,
     version: PackageVersion
   ): PackageMetadata = {
-    val __obj = js.Dynamic.literal(createdOn = createdOn, downloadUrl = downloadUrl, filename = filename, hashValue = hashValue, infoUrl = infoUrl, platform = platform, version = version)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(createdOn = createdOn.asInstanceOf[js.Any], downloadUrl = downloadUrl.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], hashValue = hashValue.asInstanceOf[js.Any], infoUrl = infoUrl.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackageMetadata]
   }
 }

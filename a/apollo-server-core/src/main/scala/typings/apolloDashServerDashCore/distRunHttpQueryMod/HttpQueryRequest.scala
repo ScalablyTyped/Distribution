@@ -27,7 +27,7 @@ object HttpQueryRequest {
     query: (Record[String, _]) | (js.Array[Record[String, _]]),
     request: Pick[Request, url | method | headers]
   ): HttpQueryRequest = {
-    val __obj = js.Dynamic.literal(method = method, options = options.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], request = request)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HttpQueryRequest]
   }

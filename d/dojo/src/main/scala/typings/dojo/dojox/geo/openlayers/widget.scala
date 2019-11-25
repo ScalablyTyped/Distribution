@@ -1,9 +1,6 @@
 package typings.dojo.dojox.geo.openlayers
 
 import typings.dojo.Anon_Unwatch
-import typings.dojo.Fn_NewValue
-import typings.dojo.Fn_NewValueOldValue
-import typings.dojo.Fn_NewValueOldValueProperty
 import typings.dojo.dijit._Widget
 import typings.dojo.dojoStrings.baseLayerType
 import typings.dojo.dojoStrings.initialLocation
@@ -126,15 +123,45 @@ object widget extends js.Object {
     @JSName("set")
     def set_touchHandler(property: touchHandler, value: Boolean): Unit = js.native
     @JSName("watch")
-    def watch_baseLayerType(property: baseLayerType, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+    def watch_baseLayerType(
+      property: baseLayerType,
+      callback: js.Function3[
+          /* property */ js.UndefOr[String], 
+          /* oldValue */ js.UndefOr[String], 
+          /* newValue */ js.UndefOr[String], 
+          Unit
+        ]
+    ): Anon_Unwatch = js.native
     @JSName("watch")
-    def watch_initialLocation(property: initialLocation, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
+    def watch_initialLocation(
+      property: initialLocation,
+      callback: js.Function3[
+          /* property */ js.UndefOr[String], 
+          /* oldValue */ js.UndefOr[String], 
+          /* newValue */ js.UndefOr[String], 
+          Unit
+        ]
+    ): Anon_Unwatch = js.native
     @JSName("watch")
-    def watch_map(property: map, callback: Fn_NewValueOldValue): Anon_Unwatch = js.native
+    def watch_map(
+      property: map,
+      callback: js.Function3[
+          /* property */ js.UndefOr[String], 
+          /* oldValue */ js.UndefOr[js.Object], 
+          /* newValue */ js.UndefOr[js.Object], 
+          Unit
+        ]
+    ): Anon_Unwatch = js.native
     @JSName("watch")
-    def watch_style(property: style, callback: Fn_NewValueOldValueProperty): Anon_Unwatch = js.native
-    @JSName("watch")
-    def watch_touchHandler(property: touchHandler, callback: Fn_NewValue): Anon_Unwatch = js.native
+    def watch_touchHandler(
+      property: touchHandler,
+      callback: js.Function3[
+          /* property */ js.UndefOr[String], 
+          /* oldValue */ js.UndefOr[Boolean], 
+          /* newValue */ js.UndefOr[Boolean], 
+          Unit
+        ]
+    ): Anon_Unwatch = js.native
   }
   
 }

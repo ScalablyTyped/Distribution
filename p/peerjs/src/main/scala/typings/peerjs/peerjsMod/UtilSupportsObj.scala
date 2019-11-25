@@ -23,7 +23,7 @@ object UtilSupportsObj {
     reliable: Boolean,
     webRTC: Boolean
   ): UtilSupportsObj = {
-    val __obj = js.Dynamic.literal(audioVideo = audioVideo, binaryBlob = binaryBlob, browser = browser, data = data, reliable = reliable, webRTC = webRTC)
+    val __obj = js.Dynamic.literal(audioVideo = audioVideo.asInstanceOf[js.Any], binaryBlob = binaryBlob.asInstanceOf[js.Any], browser = browser.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], reliable = reliable.asInstanceOf[js.Any], webRTC = webRTC.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UtilSupportsObj]
   }

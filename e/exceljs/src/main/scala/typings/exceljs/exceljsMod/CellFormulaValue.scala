@@ -15,7 +15,7 @@ trait CellFormulaValue extends _CellValue {
 object CellFormulaValue {
   @scala.inline
   def apply(date1904: Boolean, formula: String, result: Double | String | Date | Anon_Error = null): CellFormulaValue = {
-    val __obj = js.Dynamic.literal(date1904 = date1904, formula = formula)
+    val __obj = js.Dynamic.literal(date1904 = date1904.asInstanceOf[js.Any], formula = formula.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellFormulaValue]
   }

@@ -13,7 +13,7 @@ trait Anon_PDocumentPfCancel extends js.Object {
 object Anon_PDocumentPfCancel {
   @scala.inline
   def apply(pDocument: _XDocument, pfCancel: Boolean): Anon_PDocumentPfCancel = {
-    val __obj = js.Dynamic.literal(pDocument = pDocument, pfCancel = pfCancel)
+    val __obj = js.Dynamic.literal(pDocument = pDocument.asInstanceOf[js.Any], pfCancel = pfCancel.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PDocumentPfCancel]
   }

@@ -25,9 +25,9 @@ trait SiteBoundCredentialData extends CredentialData {
 object SiteBoundCredentialData {
   @scala.inline
   def apply(id: String, iconURL: String = null, name: String = null): SiteBoundCredentialData = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (iconURL != null) __obj.updateDynamic("iconURL")(iconURL)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (iconURL != null) __obj.updateDynamic("iconURL")(iconURL.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SiteBoundCredentialData]
   }
 }

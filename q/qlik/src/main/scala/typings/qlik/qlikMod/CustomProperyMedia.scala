@@ -25,11 +25,11 @@ object CustomProperyMedia {
     ref: String = null,
     show: Boolean | ShowFunction = null
   ): CustomProperyMedia = {
-    val __obj = js.Dynamic.literal(component = component)
-    __obj.updateDynamic("type")(`type`)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (layoutRef != null) __obj.updateDynamic("layoutRef")(layoutRef)
-    if (ref != null) __obj.updateDynamic("ref")(ref)
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (layoutRef != null) __obj.updateDynamic("layoutRef")(layoutRef.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomProperyMedia]
   }

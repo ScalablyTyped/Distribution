@@ -30,12 +30,12 @@ object DirectoryRole {
     roleTemplateId: String = null
   ): DirectoryRole = {
     val __obj = js.Dynamic.literal()
-    if (deletedDateTime != null) __obj.updateDynamic("deletedDateTime")(deletedDateTime)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (members != null) __obj.updateDynamic("members")(members)
-    if (roleTemplateId != null) __obj.updateDynamic("roleTemplateId")(roleTemplateId)
+    if (deletedDateTime != null) __obj.updateDynamic("deletedDateTime")(deletedDateTime.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
+    if (roleTemplateId != null) __obj.updateDynamic("roleTemplateId")(roleTemplateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectoryRole]
   }
 }

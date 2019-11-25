@@ -25,9 +25,9 @@ object PlusDomainsAclentryResource {
   @scala.inline
   def apply(displayName: String = null, id: String = null, `type`: String = null): PlusDomainsAclentryResource = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusDomainsAclentryResource]
   }
 }

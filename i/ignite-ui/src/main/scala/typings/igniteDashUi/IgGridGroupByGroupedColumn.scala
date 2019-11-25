@@ -44,11 +44,11 @@ object IgGridGroupByGroupedColumn {
     layout: String = null
   ): IgGridGroupByGroupedColumn = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (col != null) __obj.updateDynamic("col")(col)
-    if (dir != null) __obj.updateDynamic("dir")(dir)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (col != null) __obj.updateDynamic("col")(col.asInstanceOf[js.Any])
+    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridGroupByGroupedColumn]
   }
 }

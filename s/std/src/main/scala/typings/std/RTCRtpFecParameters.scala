@@ -13,7 +13,7 @@ object RTCRtpFecParameters {
   @scala.inline
   def apply(mechanism: java.lang.String = null, ssrc: Int | Double = null): RTCRtpFecParameters = {
     val __obj = js.Dynamic.literal()
-    if (mechanism != null) __obj.updateDynamic("mechanism")(mechanism)
+    if (mechanism != null) __obj.updateDynamic("mechanism")(mechanism.asInstanceOf[js.Any])
     if (ssrc != null) __obj.updateDynamic("ssrc")(ssrc.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpFecParameters]
   }

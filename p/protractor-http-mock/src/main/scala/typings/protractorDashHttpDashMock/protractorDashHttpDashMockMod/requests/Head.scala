@@ -17,7 +17,7 @@ trait Head[TResponse] extends js.Object {
 object Head {
   @scala.inline
   def apply[TResponse](request: Anon_HEAD, response: Anon_Data[TResponse]): Head[TResponse] = {
-    val __obj = js.Dynamic.literal(request = request, response = response)
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Head[TResponse]]
   }

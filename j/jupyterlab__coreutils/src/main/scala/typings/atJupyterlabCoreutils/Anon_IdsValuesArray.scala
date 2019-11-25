@@ -12,7 +12,7 @@ trait Anon_IdsValuesArray extends js.Object {
 object Anon_IdsValuesArray {
   @scala.inline
   def apply(ids: js.Array[String], values: js.Array[String]): Anon_IdsValuesArray = {
-    val __obj = js.Dynamic.literal(ids = ids, values = values)
+    val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IdsValuesArray]
   }

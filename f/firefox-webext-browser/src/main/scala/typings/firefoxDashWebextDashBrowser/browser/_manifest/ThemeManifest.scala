@@ -23,11 +23,11 @@ object ThemeManifest {
     icons: NumberDictionary[String] = null,
     theme_experiment: ThemeExperiment = null
   ): ThemeManifest = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (dark_theme != null) __obj.updateDynamic("dark_theme")(dark_theme)
-    if (default_locale != null) __obj.updateDynamic("default_locale")(default_locale)
-    if (icons != null) __obj.updateDynamic("icons")(icons)
-    if (theme_experiment != null) __obj.updateDynamic("theme_experiment")(theme_experiment)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (dark_theme != null) __obj.updateDynamic("dark_theme")(dark_theme.asInstanceOf[js.Any])
+    if (default_locale != null) __obj.updateDynamic("default_locale")(default_locale.asInstanceOf[js.Any])
+    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
+    if (theme_experiment != null) __obj.updateDynamic("theme_experiment")(theme_experiment.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeManifest]
   }
 }

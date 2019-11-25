@@ -17,9 +17,9 @@ object DynamicLinkWarning {
   @scala.inline
   def apply(warningCode: String = null, warningDocumentLink: String = null, warningMessage: String = null): DynamicLinkWarning = {
     val __obj = js.Dynamic.literal()
-    if (warningCode != null) __obj.updateDynamic("warningCode")(warningCode)
-    if (warningDocumentLink != null) __obj.updateDynamic("warningDocumentLink")(warningDocumentLink)
-    if (warningMessage != null) __obj.updateDynamic("warningMessage")(warningMessage)
+    if (warningCode != null) __obj.updateDynamic("warningCode")(warningCode.asInstanceOf[js.Any])
+    if (warningDocumentLink != null) __obj.updateDynamic("warningDocumentLink")(warningDocumentLink.asInstanceOf[js.Any])
+    if (warningMessage != null) __obj.updateDynamic("warningMessage")(warningMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamicLinkWarning]
   }
 }

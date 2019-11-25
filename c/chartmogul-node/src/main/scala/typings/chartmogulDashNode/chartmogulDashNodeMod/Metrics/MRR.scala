@@ -27,12 +27,12 @@ object MRR {
     `mrr-new-business`: Double,
     `mrr-reactivation`: Double
   ): MRR = {
-    val __obj = js.Dynamic.literal(date = date, mrr = mrr)
-    __obj.updateDynamic("mrr-churn")(`mrr-churn`)
-    __obj.updateDynamic("mrr-contraction")(`mrr-contraction`)
-    __obj.updateDynamic("mrr-expansion")(`mrr-expansion`)
-    __obj.updateDynamic("mrr-new-business")(`mrr-new-business`)
-    __obj.updateDynamic("mrr-reactivation")(`mrr-reactivation`)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], mrr = mrr.asInstanceOf[js.Any])
+    __obj.updateDynamic("mrr-churn")(`mrr-churn`.asInstanceOf[js.Any])
+    __obj.updateDynamic("mrr-contraction")(`mrr-contraction`.asInstanceOf[js.Any])
+    __obj.updateDynamic("mrr-expansion")(`mrr-expansion`.asInstanceOf[js.Any])
+    __obj.updateDynamic("mrr-new-business")(`mrr-new-business`.asInstanceOf[js.Any])
+    __obj.updateDynamic("mrr-reactivation")(`mrr-reactivation`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MRR]
   }
 }

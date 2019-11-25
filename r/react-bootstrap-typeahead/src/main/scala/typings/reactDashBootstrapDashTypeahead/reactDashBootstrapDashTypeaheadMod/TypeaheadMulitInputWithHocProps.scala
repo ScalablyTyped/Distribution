@@ -21,7 +21,7 @@ object TypeaheadMulitInputWithHocProps {
     role: Empty,
     selected: js.Array[T]
   ): TypeaheadMulitInputWithHocProps[T] = {
-    val __obj = js.Dynamic.literal(inputClassName = inputClassName, labelKey = labelKey.asInstanceOf[js.Any], onRemove = js.Any.fromFunction1(onRemove), renderToken = js.Any.fromFunction3(renderToken), role = role, selected = selected)
+    val __obj = js.Dynamic.literal(inputClassName = inputClassName.asInstanceOf[js.Any], labelKey = labelKey.asInstanceOf[js.Any], onRemove = js.Any.fromFunction1(onRemove), renderToken = js.Any.fromFunction3(renderToken), role = role.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeaheadMulitInputWithHocProps[T]]
   }

@@ -20,8 +20,8 @@ object ErrorEvent {
     target: js.Any,
     `type`: String
   ): ErrorEvent = {
-    val __obj = js.Dynamic.literal(code = code, layer = layer, message = message, propagatedFrom = propagatedFrom, sourceTarget = sourceTarget, target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorEvent]
   }
 }

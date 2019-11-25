@@ -13,7 +13,7 @@ object QuotaProperties {
   @scala.inline
   def apply(quotaMode: String = null): QuotaProperties = {
     val __obj = js.Dynamic.literal()
-    if (quotaMode != null) __obj.updateDynamic("quotaMode")(quotaMode)
+    if (quotaMode != null) __obj.updateDynamic("quotaMode")(quotaMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaProperties]
   }
 }

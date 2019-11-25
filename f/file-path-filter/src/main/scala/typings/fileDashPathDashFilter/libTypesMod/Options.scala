@@ -26,7 +26,7 @@ object Options {
   def apply(map: /* repeated */ js.Any => String = null, sep: String = null): Options = {
     val __obj = js.Dynamic.literal()
     if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction1(map))
-    if (sep != null) __obj.updateDynamic("sep")(sep)
+    if (sep != null) __obj.updateDynamic("sep")(sep.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

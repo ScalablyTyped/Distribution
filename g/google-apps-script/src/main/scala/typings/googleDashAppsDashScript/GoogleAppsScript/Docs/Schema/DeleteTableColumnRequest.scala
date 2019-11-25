@@ -12,7 +12,7 @@ object DeleteTableColumnRequest {
   @scala.inline
   def apply(tableCellLocation: TableCellLocation = null): DeleteTableColumnRequest = {
     val __obj = js.Dynamic.literal()
-    if (tableCellLocation != null) __obj.updateDynamic("tableCellLocation")(tableCellLocation)
+    if (tableCellLocation != null) __obj.updateDynamic("tableCellLocation")(tableCellLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTableColumnRequest]
   }
 }

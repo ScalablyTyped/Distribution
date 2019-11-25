@@ -21,7 +21,7 @@ object ConnectorSearchResults {
     searching: Boolean,
     searchingForFacetValues: Boolean
   ): ConnectorSearchResults[TDoc] = {
-    val __obj = js.Dynamic.literal(error = error, isSearchStalled = isSearchStalled, results = results, searching = searching, searchingForFacetValues = searchingForFacetValues)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], isSearchStalled = isSearchStalled.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], searching = searching.asInstanceOf[js.Any], searchingForFacetValues = searchingForFacetValues.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConnectorSearchResults[TDoc]]
   }

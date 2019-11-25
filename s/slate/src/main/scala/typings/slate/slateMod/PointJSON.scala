@@ -21,10 +21,10 @@ object PointJSON {
     path: js.Array[Double] = null
   ): PointJSON = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointJSON]
   }
 }

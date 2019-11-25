@@ -14,9 +14,9 @@ object ItemPreviewInfo {
   @scala.inline
   def apply(getUrl: String = null, postParameters: String = null, postUrl: String = null): ItemPreviewInfo = {
     val __obj = js.Dynamic.literal()
-    if (getUrl != null) __obj.updateDynamic("getUrl")(getUrl)
-    if (postParameters != null) __obj.updateDynamic("postParameters")(postParameters)
-    if (postUrl != null) __obj.updateDynamic("postUrl")(postUrl)
+    if (getUrl != null) __obj.updateDynamic("getUrl")(getUrl.asInstanceOf[js.Any])
+    if (postParameters != null) __obj.updateDynamic("postParameters")(postParameters.asInstanceOf[js.Any])
+    if (postUrl != null) __obj.updateDynamic("postUrl")(postUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemPreviewInfo]
   }
 }

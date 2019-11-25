@@ -12,7 +12,7 @@ trait IGrouping[TKey, T] extends js.Object {
 object IGrouping {
   @scala.inline
   def apply[TKey, T](Elements: js.Array[T], Key: TKey): IGrouping[TKey, T] = {
-    val __obj = js.Dynamic.literal(Elements = Elements, Key = Key.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Elements = Elements.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IGrouping[TKey, T]]
   }

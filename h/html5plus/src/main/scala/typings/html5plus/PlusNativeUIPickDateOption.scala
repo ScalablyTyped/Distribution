@@ -60,11 +60,11 @@ object PlusNativeUIPickDateOption {
     title: String = null
   ): PlusNativeUIPickDateOption = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate)
-    if (popover != null) __obj.updateDynamic("popover")(popover)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
+    if (popover != null) __obj.updateDynamic("popover")(popover.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeUIPickDateOption]
   }
 }

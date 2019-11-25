@@ -40,18 +40,18 @@ object Options {
     timeout: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart)
+    if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart.asInstanceOf[js.Any])
     if (customExceedCheck != null) __obj.updateDynamic("customExceedCheck")(js.Any.fromFunction1(customExceedCheck))
     if (defaultDelay != null) __obj.updateDynamic("defaultDelay")(defaultDelay.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (invisibletime != null) __obj.updateDynamic("invisibletime")(invisibletime.asInstanceOf[js.Any])
     if (maxReceiveCount != null) __obj.updateDynamic("maxReceiveCount")(maxReceiveCount.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (redis != null) __obj.updateDynamic("redis")(redis)
-    if (redisPrefix != null) __obj.updateDynamic("redisPrefix")(redisPrefix)
-    if (rsmq != null) __obj.updateDynamic("rsmq")(rsmq)
+    if (redis != null) __obj.updateDynamic("redis")(redis.asInstanceOf[js.Any])
+    if (redisPrefix != null) __obj.updateDynamic("redisPrefix")(redisPrefix.asInstanceOf[js.Any])
+    if (rsmq != null) __obj.updateDynamic("rsmq")(rsmq.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

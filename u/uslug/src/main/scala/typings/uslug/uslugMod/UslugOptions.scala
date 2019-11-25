@@ -18,9 +18,9 @@ object UslugOptions {
     spaces: js.UndefOr[Boolean] = js.undefined
   ): UslugOptions = {
     val __obj = js.Dynamic.literal()
-    if (allowedChars != null) __obj.updateDynamic("allowedChars")(allowedChars)
-    if (!js.isUndefined(lower)) __obj.updateDynamic("lower")(lower)
-    if (!js.isUndefined(spaces)) __obj.updateDynamic("spaces")(spaces)
+    if (allowedChars != null) __obj.updateDynamic("allowedChars")(allowedChars.asInstanceOf[js.Any])
+    if (!js.isUndefined(lower)) __obj.updateDynamic("lower")(lower.asInstanceOf[js.Any])
+    if (!js.isUndefined(spaces)) __obj.updateDynamic("spaces")(spaces.asInstanceOf[js.Any])
     __obj.asInstanceOf[UslugOptions]
   }
 }

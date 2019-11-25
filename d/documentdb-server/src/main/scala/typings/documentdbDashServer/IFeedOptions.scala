@@ -28,9 +28,9 @@ object IFeedOptions {
     pageSize: Int | Double = null
   ): IFeedOptions = {
     val __obj = js.Dynamic.literal()
-    if (continuation != null) __obj.updateDynamic("continuation")(continuation)
-    if (!js.isUndefined(enableLowPrecisionOrderBy)) __obj.updateDynamic("enableLowPrecisionOrderBy")(enableLowPrecisionOrderBy)
-    if (!js.isUndefined(enableScan)) __obj.updateDynamic("enableScan")(enableScan)
+    if (continuation != null) __obj.updateDynamic("continuation")(continuation.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableLowPrecisionOrderBy)) __obj.updateDynamic("enableLowPrecisionOrderBy")(enableLowPrecisionOrderBy.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableScan)) __obj.updateDynamic("enableScan")(enableScan.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFeedOptions]
   }

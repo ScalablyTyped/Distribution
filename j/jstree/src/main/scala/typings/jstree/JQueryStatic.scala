@@ -23,8 +23,8 @@ object JQueryStatic {
   @scala.inline
   def apply(jstree: JSTreeStatic = null, vakata: VakataStatic = null): JQueryStatic = {
     val __obj = js.Dynamic.literal()
-    if (jstree != null) __obj.updateDynamic("jstree")(jstree)
-    if (vakata != null) __obj.updateDynamic("vakata")(vakata)
+    if (jstree != null) __obj.updateDynamic("jstree")(jstree.asInstanceOf[js.Any])
+    if (vakata != null) __obj.updateDynamic("vakata")(vakata.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
 }

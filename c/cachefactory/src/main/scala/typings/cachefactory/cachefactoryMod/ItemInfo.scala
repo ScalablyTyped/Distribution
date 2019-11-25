@@ -23,7 +23,7 @@ object ItemInfo {
     if (accessed != null) __obj.updateDynamic("accessed")(accessed.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExpired)) __obj.updateDynamic("isExpired")(isExpired)
+    if (!js.isUndefined(isExpired)) __obj.updateDynamic("isExpired")(isExpired.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemInfo]
   }
 }

@@ -21,7 +21,7 @@ object Anon_Legend {
     y2Axis: Anon_DataTypesDragEnter,
     yAxis: Anon_DataTypesDragEnter
   ): Anon_Legend = {
-    val __obj = js.Dynamic.literal(legend = legend, plotArea = plotArea, xAxis = xAxis, y2Axis = y2Axis, yAxis = yAxis)
+    val __obj = js.Dynamic.literal(legend = legend.asInstanceOf[js.Any], plotArea = plotArea.asInstanceOf[js.Any], xAxis = xAxis.asInstanceOf[js.Any], y2Axis = y2Axis.asInstanceOf[js.Any], yAxis = yAxis.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Legend]
   }

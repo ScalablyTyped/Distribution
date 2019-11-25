@@ -13,7 +13,7 @@ trait DatabaseStatics extends js.Object {
 object DatabaseStatics {
   @scala.inline
   def apply(ServerValue: Anon_Key): DatabaseStatics = {
-    val __obj = js.Dynamic.literal(ServerValue = ServerValue)
+    val __obj = js.Dynamic.literal(ServerValue = ServerValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DatabaseStatics]
   }

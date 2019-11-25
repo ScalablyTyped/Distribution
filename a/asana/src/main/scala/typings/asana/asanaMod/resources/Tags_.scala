@@ -3,7 +3,6 @@ package typings.asana.asanaMod.resources
 import typings.asana.Anon_WorkspaceString
 import typings.asana.asanaMod.resources.Tags.FindAllParams
 import typings.asana.asanaMod.resources.Tags.Type
-import typings.bluebird.bluebirdMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,8 +38,8 @@ trait Tags_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def create(data: Type with Anon_WorkspaceString): ^[Type] = js.native
-  def create(data: Type with Anon_WorkspaceString, dispatchOptions: js.Any): ^[Type] = js.native
+  def create(data: Type with Anon_WorkspaceString): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def create(data: Type with Anon_WorkspaceString, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[Type] = js.native
   /**
     * * Creates a new tag in a workspace or organization.
     * *
@@ -59,8 +58,8 @@ trait Tags_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def createInWorkspace(workspace: Double, data: Type): ^[Type] = js.native
-  def createInWorkspace(workspace: Double, data: Type, dispatchOptions: js.Any): ^[Type] = js.native
+  def createInWorkspace(workspace: Double, data: Type): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def createInWorkspace(workspace: Double, data: Type, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[Type] = js.native
   /**
     * * A specific, existing tag can be deleted by making a DELETE request
     * * on the URL for that tag.
@@ -73,8 +72,8 @@ trait Tags_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def delete(tag: Double): ^[Unit] = js.native
-  def delete(tag: Double, dispatchOptions: js.Any): ^[Unit] = js.native
+  def delete(tag: Double): typings.bluebird.bluebirdMod.^[Unit] = js.native
+  def delete(tag: Double, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[Unit] = js.native
   /**
     * * Returns the compact tag records for some filtered set of tags.
     * * Use one or more of the parameters provided to filter the tags returned.
@@ -89,9 +88,9 @@ trait Tags_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def findAll(): ^[ResourceList[Type]] = js.native
-  def findAll(params: FindAllParams): ^[ResourceList[Type]] = js.native
-  def findAll(params: FindAllParams, dispatchOptions: js.Any): ^[ResourceList[Type]] = js.native
+  def findAll(): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
+  def findAll(params: FindAllParams): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
+  def findAll(params: FindAllParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
   /**
     * * Returns the complete tag record for a single tag.
     *   * @param {Number} tag The tag to get.
@@ -103,9 +102,9 @@ trait Tags_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def findById(tag: Double): ^[Type] = js.native
-  def findById(tag: Double, params: Params): ^[Type] = js.native
-  def findById(tag: Double, params: Params, dispatchOptions: js.Any): ^[Type] = js.native
+  def findById(tag: Double): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def findById(tag: Double, params: Params): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def findById(tag: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[Type] = js.native
   /**
     * * Returns the compact tag records for all tags in the workspace.
     *   * @param {Number} workspace The workspace or organization to find tags in.
@@ -117,9 +116,9 @@ trait Tags_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def findByWorkspace(workspace: Double): ^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: Double, params: PaginationParams): ^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: Double, params: PaginationParams, dispatchOptions: js.Any): ^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: Double): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: Double, params: PaginationParams): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[Type]] = js.native
   /**
     * * Returns the compact task records for all tasks with the given tag.
     * * Tasks can have more than one tag at a time.
@@ -132,9 +131,9 @@ trait Tags_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def getTasksWithTag(tag: Double): ^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
-  def getTasksWithTag(tag: Double, params: PaginationParams): ^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
-  def getTasksWithTag(tag: Double, params: PaginationParams, dispatchOptions: js.Any): ^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
+  def getTasksWithTag(tag: Double): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
+  def getTasksWithTag(tag: Double, params: PaginationParams): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
+  def getTasksWithTag(tag: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[ResourceList[typings.asana.asanaMod.resources.Tasks.Type]] = js.native
   /**
     * * Updates the properties of a tag. Only the fields provided in the `data`
     * * block will be updated; any unspecified fields will remain unchanged.
@@ -153,7 +152,7 @@ trait Tags_ extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def update(tag: Double, data: Type): ^[Type] = js.native
-  def update(tag: Double, data: Type, dispatchOptions: js.Any): ^[Type] = js.native
+  def update(tag: Double, data: Type): typings.bluebird.bluebirdMod.^[Type] = js.native
+  def update(tag: Double, data: Type, dispatchOptions: js.Any): typings.bluebird.bluebirdMod.^[Type] = js.native
 }
 

@@ -11,9 +11,9 @@ trait DefaultDirectoryLoginOptions extends LoginOptions {
 object DefaultDirectoryLoginOptions {
   @scala.inline
   def apply(password: String, username: String, audience: String = null, scope: String = null): DefaultDirectoryLoginOptions = {
-    val __obj = js.Dynamic.literal(password = password, username = username)
-    if (audience != null) __obj.updateDynamic("audience")(audience)
-    if (scope != null) __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultDirectoryLoginOptions]
   }
 }

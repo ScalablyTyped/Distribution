@@ -14,8 +14,8 @@ object ParserOptions {
   @scala.inline
   def apply(allowMemberAccess: js.UndefOr[Boolean] = js.undefined, operators: Anon_Abs = null): ParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowMemberAccess)) __obj.updateDynamic("allowMemberAccess")(allowMemberAccess)
-    if (operators != null) __obj.updateDynamic("operators")(operators)
+    if (!js.isUndefined(allowMemberAccess)) __obj.updateDynamic("allowMemberAccess")(allowMemberAccess.asInstanceOf[js.Any])
+    if (operators != null) __obj.updateDynamic("operators")(operators.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserOptions]
   }
 }

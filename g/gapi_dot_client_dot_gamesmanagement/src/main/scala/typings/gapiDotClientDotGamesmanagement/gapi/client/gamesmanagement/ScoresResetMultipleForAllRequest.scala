@@ -15,8 +15,8 @@ object ScoresResetMultipleForAllRequest {
   @scala.inline
   def apply(kind: String = null, leaderboard_ids: js.Array[String] = null): ScoresResetMultipleForAllRequest = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (leaderboard_ids != null) __obj.updateDynamic("leaderboard_ids")(leaderboard_ids)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (leaderboard_ids != null) __obj.updateDynamic("leaderboard_ids")(leaderboard_ids.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScoresResetMultipleForAllRequest]
   }
 }

@@ -11,7 +11,7 @@ trait Anon_ExportDependencies extends js.Object {
 object Anon_ExportDependencies {
   @scala.inline
   def apply(exportDependencies: Boolean): Anon_ExportDependencies = {
-    val __obj = js.Dynamic.literal(exportDependencies = exportDependencies)
+    val __obj = js.Dynamic.literal(exportDependencies = exportDependencies.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ExportDependencies]
   }

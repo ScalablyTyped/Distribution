@@ -36,14 +36,14 @@ object TransmissionOptions {
     transactional: js.UndefOr[Boolean] = js.undefined
   ): TransmissionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(click_tracking)) __obj.updateDynamic("click_tracking")(click_tracking)
-    if (!js.isUndefined(inline_css)) __obj.updateDynamic("inline_css")(inline_css)
-    if (ip_pool != null) __obj.updateDynamic("ip_pool")(ip_pool)
-    if (!js.isUndefined(open_tracking)) __obj.updateDynamic("open_tracking")(open_tracking)
-    if (!js.isUndefined(sandbox)) __obj.updateDynamic("sandbox")(sandbox)
-    if (!js.isUndefined(skip_suppression)) __obj.updateDynamic("skip_suppression")(skip_suppression)
-    if (start_time != null) __obj.updateDynamic("start_time")(start_time)
-    if (!js.isUndefined(transactional)) __obj.updateDynamic("transactional")(transactional)
+    if (!js.isUndefined(click_tracking)) __obj.updateDynamic("click_tracking")(click_tracking.asInstanceOf[js.Any])
+    if (!js.isUndefined(inline_css)) __obj.updateDynamic("inline_css")(inline_css.asInstanceOf[js.Any])
+    if (ip_pool != null) __obj.updateDynamic("ip_pool")(ip_pool.asInstanceOf[js.Any])
+    if (!js.isUndefined(open_tracking)) __obj.updateDynamic("open_tracking")(open_tracking.asInstanceOf[js.Any])
+    if (!js.isUndefined(sandbox)) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip_suppression)) __obj.updateDynamic("skip_suppression")(skip_suppression.asInstanceOf[js.Any])
+    if (start_time != null) __obj.updateDynamic("start_time")(start_time.asInstanceOf[js.Any])
+    if (!js.isUndefined(transactional)) __obj.updateDynamic("transactional")(transactional.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransmissionOptions]
   }
 }

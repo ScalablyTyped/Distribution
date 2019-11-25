@@ -24,10 +24,10 @@ object Data {
   ): Data = {
     val __obj = js.Dynamic.literal()
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (slug != null) __obj.updateDynamic("slug")(slug)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (slug != null) __obj.updateDynamic("slug")(slug.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data]
   }
 }

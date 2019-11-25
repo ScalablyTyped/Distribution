@@ -18,9 +18,9 @@ object ResolveDebugOpts {
     showHidden: js.UndefOr[Boolean] = js.undefined
   ): ResolveDebugOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors)
+    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHidden)) __obj.updateDynamic("showHidden")(showHidden)
+    if (!js.isUndefined(showHidden)) __obj.updateDynamic("showHidden")(showHidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolveDebugOpts]
   }
 }

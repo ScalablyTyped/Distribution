@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait SmartHomeV1ExecuteStatus extends js.Object
 
+object SmartHomeV1ExecuteStatus {
+  @scala.inline
+  def ERROR: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.ERROR = this.cast("ERROR")
+  @scala.inline
+  def OFFLINE: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.OFFLINE = this.cast("OFFLINE")
+  @scala.inline
+  def PENDING: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.PENDING = this.cast("PENDING")
+  @scala.inline
+  def SUCCESS: typings.actionsDashOnDashGoogle.actionsDashOnDashGoogleStrings.SUCCESS = this.cast("SUCCESS")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

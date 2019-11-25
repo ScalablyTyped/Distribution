@@ -21,7 +21,7 @@ object CollectionChangeSet {
     newModifications: js.Array[Double],
     oldModifications: js.Array[Double]
   ): CollectionChangeSet = {
-    val __obj = js.Dynamic.literal(deletions = deletions, insertions = insertions, modifications = modifications, newModifications = newModifications, oldModifications = oldModifications)
+    val __obj = js.Dynamic.literal(deletions = deletions.asInstanceOf[js.Any], insertions = insertions.asInstanceOf[js.Any], modifications = modifications.asInstanceOf[js.Any], newModifications = newModifications.asInstanceOf[js.Any], oldModifications = oldModifications.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CollectionChangeSet]
   }

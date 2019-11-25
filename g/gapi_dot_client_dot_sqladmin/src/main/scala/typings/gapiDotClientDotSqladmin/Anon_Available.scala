@@ -21,8 +21,8 @@ object Anon_Available {
   @scala.inline
   def apply(available: js.UndefOr[Boolean] = js.undefined, name: String = null): Anon_Available = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(available)) __obj.updateDynamic("available")(available)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(available)) __obj.updateDynamic("available")(available.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Available]
   }
 }

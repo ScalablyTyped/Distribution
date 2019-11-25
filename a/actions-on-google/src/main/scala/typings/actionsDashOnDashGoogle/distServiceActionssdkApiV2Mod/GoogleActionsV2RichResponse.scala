@@ -43,9 +43,9 @@ object GoogleActionsV2RichResponse {
     suggestions: js.Array[GoogleActionsV2UiElementsSuggestion] = null
   ): GoogleActionsV2RichResponse = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (linkOutSuggestion != null) __obj.updateDynamic("linkOutSuggestion")(linkOutSuggestion)
-    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (linkOutSuggestion != null) __obj.updateDynamic("linkOutSuggestion")(linkOutSuggestion.asInstanceOf[js.Any])
+    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2RichResponse]
   }
 }

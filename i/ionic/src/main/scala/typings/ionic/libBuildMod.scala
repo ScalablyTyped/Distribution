@@ -24,7 +24,7 @@ import typings.ionic.ionicStrings.Yarn
 import typings.ionic.ionicStrings.`ionic:build`
 import typings.ionic.ionicStrings.`npm CLI`
 import typings.ionic.ionicStrings.npm
-import typings.ionic.ionicStrings.yarn
+import typings.ionic.ionicStrings.yarn_
 import typings.ionic.libBuildMod.BuildCLI
 import typings.ionic.libBuildMod.BuildRunnerDeps
 import typings.ionic.libBuildMod.PkgManagerBuildCLI
@@ -128,9 +128,9 @@ object libBuildMod extends js.Object {
     @JSName("name")
     val name_YarnBuildCLI: Yarn = js.native
     @JSName("pkg")
-    val pkg_YarnBuildCLI: yarn = js.native
+    val pkg_YarnBuildCLI: yarn_ = js.native
     @JSName("program")
-    val program_YarnBuildCLI: yarn = js.native
+    val program_YarnBuildCLI: yarn_ = js.native
   }
   
   val BUILD_SCRIPT: `ionic:build` = js.native

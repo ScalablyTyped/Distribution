@@ -50,8 +50,8 @@ object ViewShotProperties {
     if (captureMode != null) __obj.updateDynamic("captureMode")(captureMode.asInstanceOf[js.Any])
     if (onCapture != null) __obj.updateDynamic("onCapture")(js.Any.fromFunction1(onCapture))
     if (onCaptureFailure != null) __obj.updateDynamic("onCaptureFailure")(js.Any.fromFunction1(onCaptureFailure))
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewShotProperties]
   }
 }

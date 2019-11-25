@@ -14,9 +14,9 @@ object Locale {
   @scala.inline
   def apply(checks: CheckLocale = null, lang: String = null, rules: RuleLocale = null): Locale = {
     val __obj = js.Dynamic.literal()
-    if (checks != null) __obj.updateDynamic("checks")(checks)
-    if (lang != null) __obj.updateDynamic("lang")(lang)
-    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (checks != null) __obj.updateDynamic("checks")(checks.asInstanceOf[js.Any])
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[Locale]
   }
 }

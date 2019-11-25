@@ -11,7 +11,7 @@ object getVisitFn extends js.Object {
   def apply(
     visitor: Visitor[
       _, 
-      /* import warning: ImportType.apply Failed type conversion: any[keyof any] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any
     ],
     kind: String,
     isLeaving: Boolean

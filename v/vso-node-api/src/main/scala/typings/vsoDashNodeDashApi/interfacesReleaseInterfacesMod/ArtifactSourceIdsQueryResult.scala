@@ -11,7 +11,7 @@ trait ArtifactSourceIdsQueryResult extends js.Object {
 object ArtifactSourceIdsQueryResult {
   @scala.inline
   def apply(artifactSourceIds: js.Array[ArtifactSourceId]): ArtifactSourceIdsQueryResult = {
-    val __obj = js.Dynamic.literal(artifactSourceIds = artifactSourceIds)
+    val __obj = js.Dynamic.literal(artifactSourceIds = artifactSourceIds.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ArtifactSourceIdsQueryResult]
   }

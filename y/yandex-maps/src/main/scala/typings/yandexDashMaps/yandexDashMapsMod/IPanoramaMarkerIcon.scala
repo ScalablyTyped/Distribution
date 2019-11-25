@@ -14,7 +14,7 @@ trait IPanoramaMarkerIcon extends js.Object {
 object IPanoramaMarkerIcon {
   @scala.inline
   def apply(image: HTMLCanvasElement | HTMLImageElement, offset: js.Array[Double]): IPanoramaMarkerIcon = {
-    val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], offset = offset)
+    val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPanoramaMarkerIcon]
   }

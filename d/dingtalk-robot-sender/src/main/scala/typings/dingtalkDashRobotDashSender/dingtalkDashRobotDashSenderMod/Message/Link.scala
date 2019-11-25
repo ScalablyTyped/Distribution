@@ -15,7 +15,7 @@ trait Link extends MessageType {
 object Link {
   @scala.inline
   def apply(link: Anon_MessageUrl, msgtype: link): Link = {
-    val __obj = js.Dynamic.literal(link = link, msgtype = msgtype)
+    val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], msgtype = msgtype.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Link]
   }

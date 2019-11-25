@@ -24,12 +24,12 @@ object WorkerOptions {
     workerData: js.Any = null
   ): WorkerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(eval)) __obj.updateDynamic("eval")(eval)
-    if (execArgv != null) __obj.updateDynamic("execArgv")(execArgv)
-    if (!js.isUndefined(stderr)) __obj.updateDynamic("stderr")(stderr)
-    if (!js.isUndefined(stdin)) __obj.updateDynamic("stdin")(stdin)
-    if (!js.isUndefined(stdout)) __obj.updateDynamic("stdout")(stdout)
-    if (workerData != null) __obj.updateDynamic("workerData")(workerData)
+    if (!js.isUndefined(eval)) __obj.updateDynamic("eval")(eval.asInstanceOf[js.Any])
+    if (execArgv != null) __obj.updateDynamic("execArgv")(execArgv.asInstanceOf[js.Any])
+    if (!js.isUndefined(stderr)) __obj.updateDynamic("stderr")(stderr.asInstanceOf[js.Any])
+    if (!js.isUndefined(stdin)) __obj.updateDynamic("stdin")(stdin.asInstanceOf[js.Any])
+    if (!js.isUndefined(stdout)) __obj.updateDynamic("stdout")(stdout.asInstanceOf[js.Any])
+    if (workerData != null) __obj.updateDynamic("workerData")(workerData.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkerOptions]
   }
 }

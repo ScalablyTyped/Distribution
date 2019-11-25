@@ -34,16 +34,16 @@ object PushData {
     where: Query = null
   ): PushData = {
     val __obj = js.Dynamic.literal()
-    if (alert != null) __obj.updateDynamic("alert")(alert)
-    if (badge != null) __obj.updateDynamic("badge")(badge)
-    if (channels != null) __obj.updateDynamic("channels")(channels)
-    if (data != null) __obj.updateDynamic("data")(data)
+    if (alert != null) __obj.updateDynamic("alert")(alert.asInstanceOf[js.Any])
+    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
+    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (expiration_interval != null) __obj.updateDynamic("expiration_interval")(expiration_interval.asInstanceOf[js.Any])
-    if (expiration_time != null) __obj.updateDynamic("expiration_time")(expiration_time)
-    if (push_time != null) __obj.updateDynamic("push_time")(push_time)
-    if (sound != null) __obj.updateDynamic("sound")(sound)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (where != null) __obj.updateDynamic("where")(where)
+    if (expiration_time != null) __obj.updateDynamic("expiration_time")(expiration_time.asInstanceOf[js.Any])
+    if (push_time != null) __obj.updateDynamic("push_time")(push_time.asInstanceOf[js.Any])
+    if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushData]
   }
 }

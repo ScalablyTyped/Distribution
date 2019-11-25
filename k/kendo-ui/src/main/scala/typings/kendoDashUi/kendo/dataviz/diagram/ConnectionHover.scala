@@ -12,7 +12,7 @@ object ConnectionHover {
   @scala.inline
   def apply(stroke: ConnectionHoverStroke = null): ConnectionHover = {
     val __obj = js.Dynamic.literal()
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionHover]
   }
 }

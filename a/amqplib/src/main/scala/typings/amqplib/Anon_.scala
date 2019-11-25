@@ -13,8 +13,8 @@ trait Anon_ extends js.Object {
 object Anon_ {
   @scala.inline
   def apply(`!`: timestamp, value: Double): Anon_ = {
-    val __obj = js.Dynamic.literal(value = value)
-    __obj.updateDynamic("!")(`!`)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("!")(`!`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_]
   }
 }

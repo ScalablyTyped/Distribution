@@ -3,7 +3,6 @@ package typings.d3DashZoom.d3DashZoomMod
 import typings.d3DashSelection.d3DashSelectionMod.Selection
 import typings.d3DashZoom.d3DashZoomStrings.end
 import typings.d3DashZoom.d3DashZoomStrings.start
-import typings.d3DashZoom.d3DashZoomStrings.zoom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +26,7 @@ trait D3ZoomEvent[ZoomRefElement /* <: ZoomedElementBaseType */, Datum] extends 
   /**
     * The event type for the zoom event
     */
-  var `type`: start | zoom | end | String = js.native
+  var `type`: start | typings.d3DashZoom.d3DashZoomStrings.zoom | end | String = js.native
   /**
     * Applies this zoom behavior to the specified selection, binding the necessary event listeners to
     * allow panning and zooming, and initializing the zoom transform on each selected element to the identity transform if not already defined. This function is typically not invoked directly,

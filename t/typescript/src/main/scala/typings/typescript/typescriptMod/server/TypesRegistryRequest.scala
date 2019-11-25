@@ -12,7 +12,7 @@ trait TypesRegistryRequest extends js.Object {
 object TypesRegistryRequest {
   @scala.inline
   def apply(kind: typesRegistry): TypesRegistryRequest = {
-    val __obj = js.Dynamic.literal(kind = kind)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypesRegistryRequest]
   }

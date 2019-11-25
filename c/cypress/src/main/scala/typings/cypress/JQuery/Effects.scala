@@ -134,7 +134,7 @@ object Effects {
     tick: () => Unit,
     timer: TickFunction[_] => Unit
   ): Effects = {
-    val __obj = js.Dynamic.literal(interval = interval, off = off, step = step, stop = js.Any.fromFunction0(stop), tick = js.Any.fromFunction0(tick), timer = js.Any.fromFunction1(timer))
+    val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], off = off.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop), tick = js.Any.fromFunction0(tick), timer = js.Any.fromFunction1(timer))
   
     __obj.asInstanceOf[Effects]
   }

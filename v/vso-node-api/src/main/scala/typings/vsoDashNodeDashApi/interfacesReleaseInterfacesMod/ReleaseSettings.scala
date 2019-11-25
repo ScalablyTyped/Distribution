@@ -11,7 +11,7 @@ trait ReleaseSettings extends js.Object {
 object ReleaseSettings {
   @scala.inline
   def apply(retentionSettings: RetentionSettings): ReleaseSettings = {
-    val __obj = js.Dynamic.literal(retentionSettings = retentionSettings)
+    val __obj = js.Dynamic.literal(retentionSettings = retentionSettings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ReleaseSettings]
   }

@@ -18,8 +18,8 @@ object SelectProps {
     value: String,
     StringDictionary: /* selectForm */ StringDictionary[String | MessageDescriptor] = null
   ): SelectProps = {
-    val __obj = js.Dynamic.literal(other = other.asInstanceOf[js.Any], value = value)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(other = other.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[SelectProps]
   }
 }

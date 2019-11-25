@@ -39,10 +39,10 @@ object Province {
     region: String = null,
     short: String = null
   ): Province = {
-    val __obj = js.Dynamic.literal(country = country, name = name)
-    if (alt != null) __obj.updateDynamic("alt")(alt)
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (short != null) __obj.updateDynamic("short")(short)
+    val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (short != null) __obj.updateDynamic("short")(short.asInstanceOf[js.Any])
     __obj.asInstanceOf[Province]
   }
 }

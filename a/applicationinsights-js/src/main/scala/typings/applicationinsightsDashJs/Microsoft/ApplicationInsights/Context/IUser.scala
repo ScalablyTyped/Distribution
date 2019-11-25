@@ -46,7 +46,7 @@ object IUser {
     id: String,
     storeRegion: String
   ): IUser = {
-    val __obj = js.Dynamic.literal(accountAcquisitionDate = accountAcquisitionDate, accountId = accountId, agent = agent, authenticatedId = authenticatedId, config = config, id = id, storeRegion = storeRegion)
+    val __obj = js.Dynamic.literal(accountAcquisitionDate = accountAcquisitionDate.asInstanceOf[js.Any], accountId = accountId.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], authenticatedId = authenticatedId.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], storeRegion = storeRegion.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IUser]
   }

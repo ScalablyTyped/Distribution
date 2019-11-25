@@ -22,11 +22,11 @@ object UserDeletionRequest {
     webPropertyId: String = null
   ): UserDeletionRequest = {
     val __obj = js.Dynamic.literal()
-    if (deletionRequestTime != null) __obj.updateDynamic("deletionRequestTime")(deletionRequestTime)
-    if (firebaseProjectId != null) __obj.updateDynamic("firebaseProjectId")(firebaseProjectId)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId)
+    if (deletionRequestTime != null) __obj.updateDynamic("deletionRequestTime")(deletionRequestTime.asInstanceOf[js.Any])
+    if (firebaseProjectId != null) __obj.updateDynamic("firebaseProjectId")(firebaseProjectId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserDeletionRequest]
   }
 }

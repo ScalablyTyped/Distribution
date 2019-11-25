@@ -38,13 +38,13 @@ object EntitiesResult {
   ): EntitiesResult = {
     val __obj = js.Dynamic.literal()
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (disambiguation != null) __obj.updateDynamic("disambiguation")(disambiguation)
-    if (emotion != null) __obj.updateDynamic("emotion")(emotion)
-    if (mentions != null) __obj.updateDynamic("mentions")(mentions)
+    if (disambiguation != null) __obj.updateDynamic("disambiguation")(disambiguation.asInstanceOf[js.Any])
+    if (emotion != null) __obj.updateDynamic("emotion")(emotion.asInstanceOf[js.Any])
+    if (mentions != null) __obj.updateDynamic("mentions")(mentions.asInstanceOf[js.Any])
     if (relevance != null) __obj.updateDynamic("relevance")(relevance.asInstanceOf[js.Any])
-    if (sentiment != null) __obj.updateDynamic("sentiment")(sentiment)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (sentiment != null) __obj.updateDynamic("sentiment")(sentiment.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntitiesResult]
   }
 }

@@ -23,7 +23,7 @@ object Anon_Body {
     headerBorder: String,
     label: String
   ): Anon_Body = {
-    val __obj = js.Dynamic.literal(body = body, bodyBorder = bodyBorder, bodyContent = bodyContent, header = header, headerBorder = headerBorder, label = label)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], bodyBorder = bodyBorder.asInstanceOf[js.Any], bodyContent = bodyContent.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], headerBorder = headerBorder.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Body]
   }

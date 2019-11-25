@@ -45,7 +45,7 @@ object GroundProperties {
   ): GroundProperties = {
     val __obj = js.Dynamic.literal()
     if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
-    if (navigationConstraint != null) __obj.updateDynamic("navigationConstraint")(navigationConstraint)
+    if (navigationConstraint != null) __obj.updateDynamic("navigationConstraint")(navigationConstraint.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (surfaceColor != null) __obj.updateDynamic("surfaceColor")(surfaceColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroundProperties]

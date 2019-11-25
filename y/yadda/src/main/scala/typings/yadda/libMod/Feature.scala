@@ -19,7 +19,7 @@ object Feature {
     scenarios: js.Array[Scenario],
     title: String
   ): Feature = {
-    val __obj = js.Dynamic.literal(annotations = annotations, description = description, scenarios = scenarios, title = title)
+    val __obj = js.Dynamic.literal(annotations = annotations.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], scenarios = scenarios.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Feature]
   }

@@ -28,14 +28,14 @@ object ISettings {
     `tracing.hideTracingResponse`: Boolean
   ): ISettings = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("editor.cursorShape")(`editor.cursorShape`)
-    __obj.updateDynamic("editor.fontFamily")(`editor.fontFamily`)
-    __obj.updateDynamic("editor.fontSize")(`editor.fontSize`)
-    __obj.updateDynamic("editor.reuseHeaders")(`editor.reuseHeaders`)
-    __obj.updateDynamic("editor.theme")(`editor.theme`)
-    __obj.updateDynamic("general.betaUpdates")(`general.betaUpdates`)
-    __obj.updateDynamic("request.credentials")(`request.credentials`)
-    __obj.updateDynamic("tracing.hideTracingResponse")(`tracing.hideTracingResponse`)
+    __obj.updateDynamic("editor.cursorShape")(`editor.cursorShape`.asInstanceOf[js.Any])
+    __obj.updateDynamic("editor.fontFamily")(`editor.fontFamily`.asInstanceOf[js.Any])
+    __obj.updateDynamic("editor.fontSize")(`editor.fontSize`.asInstanceOf[js.Any])
+    __obj.updateDynamic("editor.reuseHeaders")(`editor.reuseHeaders`.asInstanceOf[js.Any])
+    __obj.updateDynamic("editor.theme")(`editor.theme`.asInstanceOf[js.Any])
+    __obj.updateDynamic("general.betaUpdates")(`general.betaUpdates`.asInstanceOf[js.Any])
+    __obj.updateDynamic("request.credentials")(`request.credentials`.asInstanceOf[js.Any])
+    __obj.updateDynamic("tracing.hideTracingResponse")(`tracing.hideTracingResponse`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISettings]
   }
 }

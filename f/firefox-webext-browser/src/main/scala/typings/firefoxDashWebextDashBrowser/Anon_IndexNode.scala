@@ -14,7 +14,7 @@ trait Anon_IndexNode extends js.Object {
 object Anon_IndexNode {
   @scala.inline
   def apply(index: Double, node: BookmarkTreeNode, parentId: String): Anon_IndexNode = {
-    val __obj = js.Dynamic.literal(index = index, node = node, parentId = parentId)
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IndexNode]
   }

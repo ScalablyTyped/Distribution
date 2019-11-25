@@ -32,13 +32,13 @@ object Analyze {
     url: String = null
   ): Analyze = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Adult)) __obj.updateDynamic("Adult")(Adult)
-    if (!js.isUndefined(Categories)) __obj.updateDynamic("Categories")(Categories)
-    if (!js.isUndefined(Color)) __obj.updateDynamic("Color")(Color)
-    if (!js.isUndefined(Faces)) __obj.updateDynamic("Faces")(Faces)
-    if (!js.isUndefined(ImageType)) __obj.updateDynamic("ImageType")(ImageType)
-    if (path != null) __obj.updateDynamic("path")(path)
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(Adult)) __obj.updateDynamic("Adult")(Adult.asInstanceOf[js.Any])
+    if (!js.isUndefined(Categories)) __obj.updateDynamic("Categories")(Categories.asInstanceOf[js.Any])
+    if (!js.isUndefined(Color)) __obj.updateDynamic("Color")(Color.asInstanceOf[js.Any])
+    if (!js.isUndefined(Faces)) __obj.updateDynamic("Faces")(Faces.asInstanceOf[js.Any])
+    if (!js.isUndefined(ImageType)) __obj.updateDynamic("ImageType")(ImageType.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Analyze]
   }
 }

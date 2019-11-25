@@ -14,7 +14,7 @@ object DocumentEmotionResults {
   @scala.inline
   def apply(emotion: EmotionScores = null): DocumentEmotionResults = {
     val __obj = js.Dynamic.literal()
-    if (emotion != null) __obj.updateDynamic("emotion")(emotion)
+    if (emotion != null) __obj.updateDynamic("emotion")(emotion.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentEmotionResults]
   }
 }

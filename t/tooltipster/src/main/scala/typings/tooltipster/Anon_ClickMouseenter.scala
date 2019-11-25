@@ -34,10 +34,10 @@ object Anon_ClickMouseenter {
     touchstart: js.UndefOr[Boolean] = js.undefined
   ): Anon_ClickMouseenter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(click)) __obj.updateDynamic("click")(click)
-    if (!js.isUndefined(mouseenter)) __obj.updateDynamic("mouseenter")(mouseenter)
-    if (!js.isUndefined(tap)) __obj.updateDynamic("tap")(tap)
-    if (!js.isUndefined(touchstart)) __obj.updateDynamic("touchstart")(touchstart)
+    if (!js.isUndefined(click)) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseenter)) __obj.updateDynamic("mouseenter")(mouseenter.asInstanceOf[js.Any])
+    if (!js.isUndefined(tap)) __obj.updateDynamic("tap")(tap.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchstart)) __obj.updateDynamic("touchstart")(touchstart.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClickMouseenter]
   }
 }

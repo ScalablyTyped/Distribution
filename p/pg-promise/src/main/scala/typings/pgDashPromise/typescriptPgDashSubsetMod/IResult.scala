@@ -27,7 +27,7 @@ object IResult {
     rowCount: Double,
     rows: js.Array[_]
   ): IResult = {
-    val __obj = js.Dynamic.literal(_parsers = _parsers, _types = _types, command = command, fields = fields, rowAsArray = rowAsArray, rowCount = rowCount, rows = rows)
+    val __obj = js.Dynamic.literal(_parsers = _parsers.asInstanceOf[js.Any], _types = _types.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], rowAsArray = rowAsArray.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IResult]
   }

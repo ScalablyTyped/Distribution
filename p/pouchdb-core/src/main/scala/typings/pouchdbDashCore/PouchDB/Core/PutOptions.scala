@@ -18,7 +18,7 @@ object PutOptions {
   ): PutOptions = {
     val __obj = js.Dynamic.literal()
     if (fetch != null) __obj.updateDynamic("fetch")(js.Any.fromFunction2(fetch))
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutOptions]
   }
 }

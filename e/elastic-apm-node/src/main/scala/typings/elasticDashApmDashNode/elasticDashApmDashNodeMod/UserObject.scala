@@ -14,9 +14,9 @@ object UserObject {
   @scala.inline
   def apply(email: String = null, id: String | Double = null, username: String = null): UserObject = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email)
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserObject]
   }
 }

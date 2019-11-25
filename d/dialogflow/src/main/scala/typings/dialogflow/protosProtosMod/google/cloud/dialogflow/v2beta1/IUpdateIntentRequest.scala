@@ -26,10 +26,10 @@ object IUpdateIntentRequest {
     updateMask: IFieldMask = null
   ): IUpdateIntentRequest = {
     val __obj = js.Dynamic.literal()
-    if (intent != null) __obj.updateDynamic("intent")(intent)
-    if (intentView != null) __obj.updateDynamic("intentView")(intentView)
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask)
+    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
+    if (intentView != null) __obj.updateDynamic("intentView")(intentView.asInstanceOf[js.Any])
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
+    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUpdateIntentRequest]
   }
 }

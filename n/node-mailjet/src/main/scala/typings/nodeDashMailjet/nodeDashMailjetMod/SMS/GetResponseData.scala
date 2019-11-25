@@ -11,7 +11,7 @@ trait GetResponseData extends js.Object {
 object GetResponseData {
   @scala.inline
   def apply(Data: js.Array[GetResponseDataData]): GetResponseData = {
-    val __obj = js.Dynamic.literal(Data = Data)
+    val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetResponseData]
   }

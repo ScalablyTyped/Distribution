@@ -12,7 +12,7 @@ trait PathsResult extends js.Object {
 object PathsResult {
   @scala.inline
   def apply(dirs: js.Array[String], files: js.Array[String]): PathsResult = {
-    val __obj = js.Dynamic.literal(dirs = dirs, files = files)
+    val __obj = js.Dynamic.literal(dirs = dirs.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PathsResult]
   }

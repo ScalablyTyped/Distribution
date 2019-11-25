@@ -26,7 +26,7 @@ trait IRenderer[T] extends js.Object {
 object IRenderer {
   @scala.inline
   def apply[T](closeIconSelector: String, renderTab: IRenderData[T] => VirtualElement): IRenderer[T] = {
-    val __obj = js.Dynamic.literal(closeIconSelector = closeIconSelector, renderTab = js.Any.fromFunction1(renderTab))
+    val __obj = js.Dynamic.literal(closeIconSelector = closeIconSelector.asInstanceOf[js.Any], renderTab = js.Any.fromFunction1(renderTab))
   
     __obj.asInstanceOf[IRenderer[T]]
   }

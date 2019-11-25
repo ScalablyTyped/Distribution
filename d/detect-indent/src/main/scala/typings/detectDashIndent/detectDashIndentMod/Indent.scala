@@ -24,7 +24,7 @@ trait Indent extends js.Object {
 object Indent {
   @scala.inline
   def apply(amount: Double, indent: String, `type`: tab | space = null): Indent = {
-    val __obj = js.Dynamic.literal(amount = amount, indent = indent)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Indent]
   }

@@ -25,7 +25,7 @@ object Options {
     if (favicon != null) __obj.updateDynamic("favicon")(favicon.asInstanceOf[js.Any])
     if (icns != null) __obj.updateDynamic("icns")(icns.asInstanceOf[js.Any])
     if (ico != null) __obj.updateDynamic("ico")(ico.asInstanceOf[js.Any])
-    if (!js.isUndefined(report)) __obj.updateDynamic("report")(report)
+    if (!js.isUndefined(report)) __obj.updateDynamic("report")(report.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -24,8 +24,8 @@ object IStructureJSON {
       PrimitiveValue | (js.Array[IStructureJSON | PrimitiveValue]) | IStructureJSON | Null
     ] = null
   ): IStructureJSON = {
-    val __obj = js.Dynamic.literal($ID = $ID, $Type = $Type)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal($ID = $ID.asInstanceOf[js.Any], $Type = $Type.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IStructureJSON]
   }
 }

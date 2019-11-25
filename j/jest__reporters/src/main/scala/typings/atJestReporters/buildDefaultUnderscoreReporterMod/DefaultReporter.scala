@@ -44,19 +44,19 @@ object DefaultReporter {
     _status: js.Any,
     _wrapStdio: js.Any,
     forceFlushBufferedOutput: () => Unit,
-    getLastError: () => js.UndefOr[Error],
+    getLastError: () => Error | Unit,
     log: String => Unit,
     onRunComplete: () => Unit,
-    onRunStart: (AggregatedResult, ReporterOnStartOptions) => Unit,
-    onTestResult: (Test, TestResult, AggregatedResult) => Unit,
-    onTestStart: Test => Unit,
+    onRunStart: (AggregatedResult, ReporterOnStartOptions) => js.Promise[Unit] | Unit,
+    onTestResult: (Test, TestResult, AggregatedResult) => js.Promise[Unit] | Unit,
+    onTestStart: Test => js.Promise[Unit] | Unit,
     printTestFileFailureMessage: (Path, ProjectConfig, TestResult) => Unit,
     printTestFileHeader: (Path, ProjectConfig, TestResult) => Unit,
     testFinished: (ProjectConfig, TestResult, AggregatedResult) => Unit,
     _error: js.Any = null
   ): DefaultReporter = {
-    val __obj = js.Dynamic.literal(_bufferedOutput = _bufferedOutput, _clear = _clear, _clearStatus = _clearStatus, _err = _err, _globalConfig = _globalConfig, _out = _out, _printStatus = _printStatus, _setError = js.Any.fromFunction1(_setError), _status = _status, _wrapStdio = _wrapStdio, forceFlushBufferedOutput = js.Any.fromFunction0(forceFlushBufferedOutput), getLastError = js.Any.fromFunction0(getLastError), log = js.Any.fromFunction1(log), onRunComplete = js.Any.fromFunction0(onRunComplete), onRunStart = js.Any.fromFunction2(onRunStart), onTestResult = js.Any.fromFunction3(onTestResult), onTestStart = js.Any.fromFunction1(onTestStart), printTestFileFailureMessage = js.Any.fromFunction3(printTestFileFailureMessage), printTestFileHeader = js.Any.fromFunction3(printTestFileHeader), testFinished = js.Any.fromFunction3(testFinished))
-    if (_error != null) __obj.updateDynamic("_error")(_error)
+    val __obj = js.Dynamic.literal(_bufferedOutput = _bufferedOutput.asInstanceOf[js.Any], _clear = _clear.asInstanceOf[js.Any], _clearStatus = _clearStatus.asInstanceOf[js.Any], _err = _err.asInstanceOf[js.Any], _globalConfig = _globalConfig.asInstanceOf[js.Any], _out = _out.asInstanceOf[js.Any], _printStatus = _printStatus.asInstanceOf[js.Any], _setError = js.Any.fromFunction1(_setError), _status = _status.asInstanceOf[js.Any], _wrapStdio = _wrapStdio.asInstanceOf[js.Any], forceFlushBufferedOutput = js.Any.fromFunction0(forceFlushBufferedOutput), getLastError = js.Any.fromFunction0(getLastError), log = js.Any.fromFunction1(log), onRunComplete = js.Any.fromFunction0(onRunComplete), onRunStart = js.Any.fromFunction2(onRunStart), onTestResult = js.Any.fromFunction3(onTestResult), onTestStart = js.Any.fromFunction1(onTestStart), printTestFileFailureMessage = js.Any.fromFunction3(printTestFileFailureMessage), printTestFileHeader = js.Any.fromFunction3(printTestFileHeader), testFinished = js.Any.fromFunction3(testFinished))
+    if (_error != null) __obj.updateDynamic("_error")(_error.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultReporter]
   }
 }

@@ -1,6 +1,6 @@
 package typings.msDashRest.msDashRestMod
 
-import typings.msDashRest.Fn_Err
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +17,6 @@ class TokenCredentials protected () extends ServiceClientCredentials {
     * @param {function(error)}  callback  The callback function.
     */
   /* CompleteClass */
-  override def signRequest(webResource: WebResource, callback: Fn_Err): Unit = js.native
+  override def signRequest(webResource: WebResource, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
 }
 

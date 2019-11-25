@@ -25,11 +25,11 @@ object DialogSelectConfig {
     multiselect: js.UndefOr[Boolean] = js.undefined,
     quickfind: js.UndefOr[Boolean] = js.undefined
   ): DialogSelectConfig = {
-    val __obj = js.Dynamic.literal(list = list, title = title)
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (!js.isUndefined(multiselect)) __obj.updateDynamic("multiselect")(multiselect)
-    if (!js.isUndefined(quickfind)) __obj.updateDynamic("quickfind")(quickfind)
+    val __obj = js.Dynamic.literal(list = list.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiselect)) __obj.updateDynamic("multiselect")(multiselect.asInstanceOf[js.Any])
+    if (!js.isUndefined(quickfind)) __obj.updateDynamic("quickfind")(quickfind.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogSelectConfig]
   }
 }

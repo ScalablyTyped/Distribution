@@ -28,10 +28,10 @@ object ResponseModel {
     metadata: Metadata = null,
     via: Via = null
   ): ResponseModel = {
-    val __obj = js.Dynamic.literal(attachments = attachments, author_id = author_id, body = body, created_at = created_at, html_body = html_body, id = id, plain_body = plain_body, public = public, request_id = request_id, url = url)
-    __obj.updateDynamic("type")(`type`)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (via != null) __obj.updateDynamic("via")(via)
+    val __obj = js.Dynamic.literal(attachments = attachments.asInstanceOf[js.Any], author_id = author_id.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], html_body = html_body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], plain_body = plain_body.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any], request_id = request_id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (via != null) __obj.updateDynamic("via")(via.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseModel]
   }
 }

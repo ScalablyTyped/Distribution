@@ -1,7 +1,6 @@
 package typings.atAngularCompiler.publicUnderscoreApiMod
 
 import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.ClassGetter
-import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,7 +32,7 @@ class ClassStmt protected ()
     getters: js.Array[ClassGetter],
     constructorMethod: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.ClassMethod,
     methods: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.ClassMethod],
-    modifiers: js.Array[StmtModifier]
+    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier]
   ) = this()
   def this(
     name: String,
@@ -42,7 +41,7 @@ class ClassStmt protected ()
     getters: js.Array[ClassGetter],
     constructorMethod: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.ClassMethod,
     methods: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.ClassMethod],
-    modifiers: js.Array[StmtModifier]
+    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier]
   ) = this()
   def this(
     name: String,
@@ -51,7 +50,7 @@ class ClassStmt protected ()
     getters: js.Array[ClassGetter],
     constructorMethod: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.ClassMethod,
     methods: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.ClassMethod],
-    modifiers: js.Array[StmtModifier],
+    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier],
     sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan
   ) = this()
   def this(
@@ -71,7 +70,7 @@ class ClassStmt protected ()
     getters: js.Array[ClassGetter],
     constructorMethod: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.ClassMethod,
     methods: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.ClassMethod],
-    modifiers: js.Array[StmtModifier],
+    modifiers: js.Array[typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.StmtModifier],
     sourceSpan: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan
   ) = this()
   def this(

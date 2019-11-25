@@ -18,7 +18,7 @@ trait TypeofBlockBackgroundType extends js.Object {
 object TypeofBlockBackgroundType {
   @scala.inline
   def apply(Default: js.Any, Light: js.Any): TypeofBlockBackgroundType = {
-    val __obj = js.Dynamic.literal(Default = Default, Light = Light)
+    val __obj = js.Dynamic.literal(Default = Default.asInstanceOf[js.Any], Light = Light.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofBlockBackgroundType]
   }

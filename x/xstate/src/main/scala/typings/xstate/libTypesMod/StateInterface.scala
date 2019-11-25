@@ -43,11 +43,11 @@ object StateInterface {
     historyValue: HistoryValue = null,
     tree: StateTree = null
   ): StateInterface[TContext, TEvent] = {
-    val __obj = js.Dynamic.literal(actions = actions, activities = activities, context = context.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], events = events, inert = inert, matches = js.Any.fromFunction1(matches), meta = meta, nextEvents = nextEvents, toStrings = js.Any.fromFunction0(toStrings), value = value.asInstanceOf[js.Any])
-    if (!js.isUndefined(changed)) __obj.updateDynamic("changed")(changed)
-    if (history != null) __obj.updateDynamic("history")(history)
-    if (historyValue != null) __obj.updateDynamic("historyValue")(historyValue)
-    if (tree != null) __obj.updateDynamic("tree")(tree)
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], activities = activities.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], inert = inert.asInstanceOf[js.Any], matches = js.Any.fromFunction1(matches), meta = meta.asInstanceOf[js.Any], nextEvents = nextEvents.asInstanceOf[js.Any], toStrings = js.Any.fromFunction0(toStrings), value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(changed)) __obj.updateDynamic("changed")(changed.asInstanceOf[js.Any])
+    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
+    if (historyValue != null) __obj.updateDynamic("historyValue")(historyValue.asInstanceOf[js.Any])
+    if (tree != null) __obj.updateDynamic("tree")(tree.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateInterface[TContext, TEvent]]
   }
 }

@@ -264,8 +264,6 @@ object INestedList {
     allowDeselect: js.UndefOr[Boolean] = js.undefined,
     backButton: js.Any = null,
     backText: java.lang.String = null,
-    baseCls: java.lang.String = null,
-    cardSwitchAnimation: js.Any = null,
     clearSelectionDelay: Int | Double = null,
     detailCard: IComponent = null,
     detailContainer: IContainer = null,
@@ -274,7 +272,6 @@ object INestedList {
     getAllowDeselect: () => Boolean = null,
     getBackButton: () => _ = null,
     getBackText: () => java.lang.String = null,
-    getBaseCls: () => java.lang.String = null,
     getClearSelectionOnListChange: () => Boolean = null,
     getDetailCard: () => IComponent = null,
     getDetailContainer: () => IContainer = null,
@@ -306,7 +303,6 @@ object INestedList {
     setAllowDeselect: /* allowDeselect */ js.UndefOr[Boolean] => Unit = null,
     setBackButton: /* backButton */ js.UndefOr[js.Any] => Unit = null,
     setBackText: /* backText */ js.UndefOr[java.lang.String] => Unit = null,
-    setBaseCls: /* baseCls */ js.UndefOr[java.lang.String] => Unit = null,
     setClearSelectionOnListChange: /* clearSelectionOnListChange */ js.UndefOr[Boolean] => Unit = null,
     setDetailCard: /* detailCard */ js.UndefOr[IComponent] => Unit = null,
     setDetailContainer: /* detailContainer */ js.UndefOr[IContainer] => Unit = null,
@@ -328,7 +324,6 @@ object INestedList {
     store: js.Any = null,
     title: java.lang.String = null,
     toolbar: js.Any = null,
-    ui: java.lang.String = null,
     updateTitleText: js.UndefOr[Boolean] = js.undefined,
     useSimpleItems: js.UndefOr[Boolean] = js.undefined,
     useTitleAsBackText: js.UndefOr[Boolean] = js.undefined,
@@ -336,21 +331,18 @@ object INestedList {
     variableHeights: js.UndefOr[Boolean] = js.undefined
   ): INestedList = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (!js.isUndefined(allowDeselect)) __obj.updateDynamic("allowDeselect")(allowDeselect)
-    if (backButton != null) __obj.updateDynamic("backButton")(backButton)
-    if (backText != null) __obj.updateDynamic("backText")(backText)
-    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
-    if (cardSwitchAnimation != null) __obj.updateDynamic("cardSwitchAnimation")(cardSwitchAnimation)
+    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (!js.isUndefined(allowDeselect)) __obj.updateDynamic("allowDeselect")(allowDeselect.asInstanceOf[js.Any])
+    if (backButton != null) __obj.updateDynamic("backButton")(backButton.asInstanceOf[js.Any])
+    if (backText != null) __obj.updateDynamic("backText")(backText.asInstanceOf[js.Any])
     if (clearSelectionDelay != null) __obj.updateDynamic("clearSelectionDelay")(clearSelectionDelay.asInstanceOf[js.Any])
-    if (detailCard != null) __obj.updateDynamic("detailCard")(detailCard)
-    if (detailContainer != null) __obj.updateDynamic("detailContainer")(detailContainer)
-    if (displayField != null) __obj.updateDynamic("displayField")(displayField)
-    if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText)
+    if (detailCard != null) __obj.updateDynamic("detailCard")(detailCard.asInstanceOf[js.Any])
+    if (detailContainer != null) __obj.updateDynamic("detailContainer")(detailContainer.asInstanceOf[js.Any])
+    if (displayField != null) __obj.updateDynamic("displayField")(displayField.asInstanceOf[js.Any])
+    if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText.asInstanceOf[js.Any])
     if (getAllowDeselect != null) __obj.updateDynamic("getAllowDeselect")(js.Any.fromFunction0(getAllowDeselect))
     if (getBackButton != null) __obj.updateDynamic("getBackButton")(js.Any.fromFunction0(getBackButton))
     if (getBackText != null) __obj.updateDynamic("getBackText")(js.Any.fromFunction0(getBackText))
-    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(js.Any.fromFunction0(getBaseCls))
     if (getClearSelectionOnListChange != null) __obj.updateDynamic("getClearSelectionOnListChange")(js.Any.fromFunction0(getClearSelectionOnListChange))
     if (getDetailCard != null) __obj.updateDynamic("getDetailCard")(js.Any.fromFunction0(getDetailCard))
     if (getDetailContainer != null) __obj.updateDynamic("getDetailContainer")(js.Any.fromFunction0(getDetailContainer))
@@ -374,15 +366,14 @@ object INestedList {
     if (goToLeaf != null) __obj.updateDynamic("goToLeaf")(js.Any.fromFunction1(goToLeaf))
     if (goToNode != null) __obj.updateDynamic("goToNode")(js.Any.fromFunction1(goToNode))
     if (itemHeight != null) __obj.updateDynamic("itemHeight")(itemHeight.asInstanceOf[js.Any])
-    if (listConfig != null) __obj.updateDynamic("listConfig")(listConfig)
-    if (loadingText != null) __obj.updateDynamic("loadingText")(loadingText)
+    if (listConfig != null) __obj.updateDynamic("listConfig")(listConfig.asInstanceOf[js.Any])
+    if (loadingText != null) __obj.updateDynamic("loadingText")(loadingText.asInstanceOf[js.Any])
     if (onBackTap != null) __obj.updateDynamic("onBackTap")(js.Any.fromFunction0(onBackTap))
-    if (onItemDisclosure != null) __obj.updateDynamic("onItemDisclosure")(onItemDisclosure)
+    if (onItemDisclosure != null) __obj.updateDynamic("onItemDisclosure")(onItemDisclosure.asInstanceOf[js.Any])
     if (onItemTap != null) __obj.updateDynamic("onItemTap")(js.Any.fromFunction5(onItemTap))
     if (setAllowDeselect != null) __obj.updateDynamic("setAllowDeselect")(js.Any.fromFunction1(setAllowDeselect))
     if (setBackButton != null) __obj.updateDynamic("setBackButton")(js.Any.fromFunction1(setBackButton))
     if (setBackText != null) __obj.updateDynamic("setBackText")(js.Any.fromFunction1(setBackText))
-    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(js.Any.fromFunction1(setBaseCls))
     if (setClearSelectionOnListChange != null) __obj.updateDynamic("setClearSelectionOnListChange")(js.Any.fromFunction1(setClearSelectionOnListChange))
     if (setDetailCard != null) __obj.updateDynamic("setDetailCard")(js.Any.fromFunction1(setDetailCard))
     if (setDetailContainer != null) __obj.updateDynamic("setDetailContainer")(js.Any.fromFunction1(setDetailContainer))
@@ -401,15 +392,14 @@ object INestedList {
     if (setUseTitleAsBackText != null) __obj.updateDynamic("setUseTitleAsBackText")(js.Any.fromFunction1(setUseTitleAsBackText))
     if (setUseToolbar != null) __obj.updateDynamic("setUseToolbar")(js.Any.fromFunction1(setUseToolbar))
     if (setVariableHeights != null) __obj.updateDynamic("setVariableHeights")(js.Any.fromFunction1(setVariableHeights))
-    if (store != null) __obj.updateDynamic("store")(store)
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar)
-    if (ui != null) __obj.updateDynamic("ui")(ui)
-    if (!js.isUndefined(updateTitleText)) __obj.updateDynamic("updateTitleText")(updateTitleText)
-    if (!js.isUndefined(useSimpleItems)) __obj.updateDynamic("useSimpleItems")(useSimpleItems)
-    if (!js.isUndefined(useTitleAsBackText)) __obj.updateDynamic("useTitleAsBackText")(useTitleAsBackText)
-    if (!js.isUndefined(useToolbar)) __obj.updateDynamic("useToolbar")(useToolbar)
-    if (!js.isUndefined(variableHeights)) __obj.updateDynamic("variableHeights")(variableHeights)
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateTitleText)) __obj.updateDynamic("updateTitleText")(updateTitleText.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSimpleItems)) __obj.updateDynamic("useSimpleItems")(useSimpleItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(useTitleAsBackText)) __obj.updateDynamic("useTitleAsBackText")(useTitleAsBackText.asInstanceOf[js.Any])
+    if (!js.isUndefined(useToolbar)) __obj.updateDynamic("useToolbar")(useToolbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(variableHeights)) __obj.updateDynamic("variableHeights")(variableHeights.asInstanceOf[js.Any])
     __obj.asInstanceOf[INestedList]
   }
 }

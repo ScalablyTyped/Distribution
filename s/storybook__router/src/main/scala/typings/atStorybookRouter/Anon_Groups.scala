@@ -12,7 +12,7 @@ trait Anon_Groups extends js.Object {
 object Anon_Groups {
   @scala.inline
   def apply(groups: js.Array[String], root: String): Anon_Groups = {
-    val __obj = js.Dynamic.literal(groups = groups, root = root)
+    val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Groups]
   }

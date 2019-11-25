@@ -15,8 +15,8 @@ object Anon_Exclude {
   @scala.inline
   def apply(exclude: js.Array[Double] = null, include: js.Array[Double] = null): Anon_Exclude = {
     val __obj = js.Dynamic.literal()
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
-    if (include != null) __obj.updateDynamic("include")(include)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Exclude]
   }
 }

@@ -14,7 +14,7 @@ trait GetObjectsItem[T /* <: BaseObject */] extends js.Object {
 object GetObjectsItem {
   @scala.inline
   def apply[T /* <: BaseObject */](id: String, value: T): GetObjectsItem[T] = {
-    val __obj = js.Dynamic.literal(id = id, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetObjectsItem[T]]
   }

@@ -28,10 +28,10 @@ object ReportType {
     systemManaged: js.UndefOr[Boolean] = js.undefined
   ): ReportType = {
     val __obj = js.Dynamic.literal()
-    if (deprecateTime != null) __obj.updateDynamic("deprecateTime")(deprecateTime)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(systemManaged)) __obj.updateDynamic("systemManaged")(systemManaged)
+    if (deprecateTime != null) __obj.updateDynamic("deprecateTime")(deprecateTime.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(systemManaged)) __obj.updateDynamic("systemManaged")(systemManaged.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportType]
   }
 }

@@ -15,7 +15,7 @@ trait Ecies extends js.Object {
 object Ecies {
   @scala.inline
   def apply(ciphertext: Buffer, ephemPublicKey: Buffer, iv: Buffer, mac: Buffer): Ecies = {
-    val __obj = js.Dynamic.literal(ciphertext = ciphertext, ephemPublicKey = ephemPublicKey, iv = iv, mac = mac)
+    val __obj = js.Dynamic.literal(ciphertext = ciphertext.asInstanceOf[js.Any], ephemPublicKey = ephemPublicKey.asInstanceOf[js.Any], iv = iv.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Ecies]
   }

@@ -13,8 +13,8 @@ trait MessageEvent extends js.Object {
 object MessageEvent {
   @scala.inline
   def apply(data: Data, target: WebSocket, `type`: String): MessageEvent = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], target = target)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageEvent]
   }
 }

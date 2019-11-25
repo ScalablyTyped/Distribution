@@ -12,7 +12,7 @@ trait SceneNodeMixin extends js.Object {
 object SceneNodeMixin {
   @scala.inline
   def apply(locked: Boolean, visible: Boolean): SceneNodeMixin = {
-    val __obj = js.Dynamic.literal(locked = locked, visible = visible)
+    val __obj = js.Dynamic.literal(locked = locked.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SceneNodeMixin]
   }

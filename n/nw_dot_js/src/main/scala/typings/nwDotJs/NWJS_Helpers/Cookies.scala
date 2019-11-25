@@ -62,7 +62,7 @@ object Cookies {
     remove: (CookiesRemoveDetails, js.Function1[/* details */ js.UndefOr[CookiesRemovedDetails], Unit]) => Unit,
     set: (CookiesSetDetails, js.Function1[/* cookie */ js.UndefOr[Cookie], Unit]) => Unit
   ): Cookies = {
-    val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), getAll = js.Any.fromFunction2(getAll), onChanged = onChanged, remove = js.Any.fromFunction2(remove), set = js.Any.fromFunction2(set))
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), getAll = js.Any.fromFunction2(getAll), onChanged = onChanged.asInstanceOf[js.Any], remove = js.Any.fromFunction2(remove), set = js.Any.fromFunction2(set))
   
     __obj.asInstanceOf[Cookies]
   }

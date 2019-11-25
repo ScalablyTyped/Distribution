@@ -13,8 +13,8 @@ object NuxtOptions {
   @scala.inline
   def apply(buildDir: String = null, srcDir: String = null): NuxtOptions = {
     val __obj = js.Dynamic.literal()
-    if (buildDir != null) __obj.updateDynamic("buildDir")(buildDir)
-    if (srcDir != null) __obj.updateDynamic("srcDir")(srcDir)
+    if (buildDir != null) __obj.updateDynamic("buildDir")(buildDir.asInstanceOf[js.Any])
+    if (srcDir != null) __obj.updateDynamic("srcDir")(srcDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[NuxtOptions]
   }
 }

@@ -13,7 +13,7 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(defaultRendermime: IRenderMimeRegistry, maxLength: Double): IOptions = {
-    val __obj = js.Dynamic.literal(defaultRendermime = defaultRendermime, maxLength = maxLength)
+    val __obj = js.Dynamic.literal(defaultRendermime = defaultRendermime.asInstanceOf[js.Any], maxLength = maxLength.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IOptions]
   }

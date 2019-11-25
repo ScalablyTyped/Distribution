@@ -14,7 +14,7 @@ trait Anon_ScopeDescriptorValueInvisibles extends js.Object {
 object Anon_ScopeDescriptorValueInvisibles {
   @scala.inline
   def apply(scopeDescriptor: ScopeDescriptor, value: Invisibles): Anon_ScopeDescriptorValueInvisibles = {
-    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor, value = value)
+    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ScopeDescriptorValueInvisibles]
   }

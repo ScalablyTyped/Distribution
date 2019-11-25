@@ -13,8 +13,8 @@ object LevelDownGetOptions {
   @scala.inline
   def apply(asBuffer: js.UndefOr[Boolean] = js.undefined, fillCache: js.UndefOr[Boolean] = js.undefined): LevelDownGetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(asBuffer)) __obj.updateDynamic("asBuffer")(asBuffer)
-    if (!js.isUndefined(fillCache)) __obj.updateDynamic("fillCache")(fillCache)
+    if (!js.isUndefined(asBuffer)) __obj.updateDynamic("asBuffer")(asBuffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillCache)) __obj.updateDynamic("fillCache")(fillCache.asInstanceOf[js.Any])
     __obj.asInstanceOf[LevelDownGetOptions]
   }
 }

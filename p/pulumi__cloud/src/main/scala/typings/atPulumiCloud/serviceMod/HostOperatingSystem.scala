@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait HostOperatingSystem extends js.Object
 
+object HostOperatingSystem {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def linux: typings.atPulumiCloud.atPulumiCloudStrings.linux = this.cast("linux")
+  @scala.inline
+  def windows: typings.atPulumiCloud.atPulumiCloudStrings.windows = this.cast("windows")
+}
+

@@ -43,7 +43,7 @@ object Phantom {
     waitForJS: Boolean,
     width: String
   ): Phantom = {
-    val __obj = js.Dynamic.literal(blockJavaScript = blockJavaScript, customPhantomJS = customPhantomJS, fitToPage = fitToPage, footer = footer, footerHeight = footerHeight, format = format, header = header, headerHeight = headerHeight, height = height, margin = margin.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], phantomjsVersion = phantomjsVersion, resourceTimeout = resourceTimeout, waitForJS = waitForJS, width = width)
+    val __obj = js.Dynamic.literal(blockJavaScript = blockJavaScript.asInstanceOf[js.Any], customPhantomJS = customPhantomJS.asInstanceOf[js.Any], fitToPage = fitToPage.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], footerHeight = footerHeight.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], headerHeight = headerHeight.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], phantomjsVersion = phantomjsVersion.asInstanceOf[js.Any], resourceTimeout = resourceTimeout.asInstanceOf[js.Any], waitForJS = waitForJS.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Phantom]
   }

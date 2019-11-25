@@ -34,17 +34,17 @@ object IconProps {
     spin: js.UndefOr[Boolean] = js.undefined,
     stack: IconStackSize = null
   ): IconProps = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (Component != null) __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, SizeOverrideHTMLProps)
-    if (!js.isUndefined(fixedWidth)) __obj.updateDynamic("fixedWidth")(fixedWidth)
-    if (flip != null) __obj.updateDynamic("flip")(flip)
-    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse)
-    if (!js.isUndefined(pulse)) __obj.updateDynamic("pulse")(pulse)
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate)
-    if (size != null) __obj.updateDynamic("size")(size)
-    if (!js.isUndefined(spin)) __obj.updateDynamic("spin")(spin)
-    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (SizeOverrideHTMLProps != null) js.Dynamic.global.Object.assign(__obj, SizeOverrideHTMLProps)
+    if (!js.isUndefined(fixedWidth)) __obj.updateDynamic("fixedWidth")(fixedWidth.asInstanceOf[js.Any])
+    if (flip != null) __obj.updateDynamic("flip")(flip.asInstanceOf[js.Any])
+    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(pulse)) __obj.updateDynamic("pulse")(pulse.asInstanceOf[js.Any])
+    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(spin)) __obj.updateDynamic("spin")(spin.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconProps]
   }
 }

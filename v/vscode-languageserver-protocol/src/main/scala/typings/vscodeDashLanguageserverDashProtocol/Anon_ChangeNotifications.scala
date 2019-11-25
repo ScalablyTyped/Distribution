@@ -26,7 +26,7 @@ object Anon_ChangeNotifications {
   def apply(changeNotifications: String | Boolean = null, supported: js.UndefOr[Boolean] = js.undefined): Anon_ChangeNotifications = {
     val __obj = js.Dynamic.literal()
     if (changeNotifications != null) __obj.updateDynamic("changeNotifications")(changeNotifications.asInstanceOf[js.Any])
-    if (!js.isUndefined(supported)) __obj.updateDynamic("supported")(supported)
+    if (!js.isUndefined(supported)) __obj.updateDynamic("supported")(supported.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChangeNotifications]
   }
 }

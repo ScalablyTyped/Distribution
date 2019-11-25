@@ -15,7 +15,7 @@ trait OnResponseStartedFilter extends js.Object {
 object OnResponseStartedFilter {
   @scala.inline
   def apply(urls: js.Array[String]): OnResponseStartedFilter = {
-    val __obj = js.Dynamic.literal(urls = urls)
+    val __obj = js.Dynamic.literal(urls = urls.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OnResponseStartedFilter]
   }

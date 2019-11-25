@@ -32,16 +32,16 @@ object Group {
     nonEditableAliases: js.Array[String] = null
   ): Group = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(adminCreated)) __obj.updateDynamic("adminCreated")(adminCreated)
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (directMembersCount != null) __obj.updateDynamic("directMembersCount")(directMembersCount)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (etag != null) __obj.updateDynamic("etag")(etag)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (nonEditableAliases != null) __obj.updateDynamic("nonEditableAliases")(nonEditableAliases)
+    if (!js.isUndefined(adminCreated)) __obj.updateDynamic("adminCreated")(adminCreated.asInstanceOf[js.Any])
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (directMembersCount != null) __obj.updateDynamic("directMembersCount")(directMembersCount.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (nonEditableAliases != null) __obj.updateDynamic("nonEditableAliases")(nonEditableAliases.asInstanceOf[js.Any])
     __obj.asInstanceOf[Group]
   }
 }

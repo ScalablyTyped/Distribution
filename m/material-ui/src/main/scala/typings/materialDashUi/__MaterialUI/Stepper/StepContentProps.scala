@@ -19,9 +19,9 @@ object StepContentProps {
     style: CSSProperties = null
   ): StepContentProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (!js.isUndefined(last)) __obj.updateDynamic("last")(last)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (!js.isUndefined(last)) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepContentProps]
   }
 }

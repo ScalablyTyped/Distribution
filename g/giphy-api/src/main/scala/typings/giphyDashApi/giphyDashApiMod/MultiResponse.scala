@@ -13,7 +13,7 @@ trait MultiResponse extends BaseResponse {
 object MultiResponse {
   @scala.inline
   def apply(data: js.Array[GIFObject], meta: Anon_Msg, pagination: Anon_Count): MultiResponse = {
-    val __obj = js.Dynamic.literal(data = data, meta = meta, pagination = pagination)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MultiResponse]
   }

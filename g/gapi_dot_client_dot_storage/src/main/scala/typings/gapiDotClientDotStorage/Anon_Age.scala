@@ -37,9 +37,9 @@ object Anon_Age {
   ): Anon_Age = {
     val __obj = js.Dynamic.literal()
     if (age != null) __obj.updateDynamic("age")(age.asInstanceOf[js.Any])
-    if (createdBefore != null) __obj.updateDynamic("createdBefore")(createdBefore)
-    if (!js.isUndefined(isLive)) __obj.updateDynamic("isLive")(isLive)
-    if (matchesStorageClass != null) __obj.updateDynamic("matchesStorageClass")(matchesStorageClass)
+    if (createdBefore != null) __obj.updateDynamic("createdBefore")(createdBefore.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLive)) __obj.updateDynamic("isLive")(isLive.asInstanceOf[js.Any])
+    if (matchesStorageClass != null) __obj.updateDynamic("matchesStorageClass")(matchesStorageClass.asInstanceOf[js.Any])
     if (numNewerVersions != null) __obj.updateDynamic("numNewerVersions")(numNewerVersions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Age]
   }

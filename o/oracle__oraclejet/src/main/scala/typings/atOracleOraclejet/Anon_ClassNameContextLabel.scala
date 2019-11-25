@@ -30,7 +30,7 @@ object Anon_ClassNameContextLabel {
     sortable: (js.Function1[/* context */ HeaderContext[K, D], String]) | String = null,
     style: (js.Function1[/* context */ HeaderContext[K, D], String | Unit | Null]) | String = null
   ): Anon_ClassNameContextLabel[K, D] = {
-    val __obj = js.Dynamic.literal(label = label, resizable = resizable)
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], resizable = resizable.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (renderer != null) __obj.updateDynamic("renderer")(js.Any.fromFunction1(renderer))
     if (sortable != null) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])

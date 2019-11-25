@@ -14,7 +14,7 @@ trait SketchMSGradientStop extends js.Object {
 object SketchMSGradientStop {
   @scala.inline
   def apply(_class: gradientStop, color: SketchMSColor, position: Double): SketchMSGradientStop = {
-    val __obj = js.Dynamic.literal(_class = _class, color = color, position = position)
+    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SketchMSGradientStop]
   }

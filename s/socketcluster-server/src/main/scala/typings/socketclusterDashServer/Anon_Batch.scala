@@ -12,7 +12,7 @@ object Anon_Batch {
   @scala.inline
   def apply(batch: js.UndefOr[Boolean] = js.undefined): Anon_Batch = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(batch)) __obj.updateDynamic("batch")(batch)
+    if (!js.isUndefined(batch)) __obj.updateDynamic("batch")(batch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Batch]
   }
 }

@@ -11,7 +11,7 @@ trait InputState extends js.Object {
 object InputState {
   @scala.inline
   def apply(value: js.Any): InputState = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InputState]
   }

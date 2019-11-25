@@ -18,8 +18,8 @@ object TeamGuestSettings {
     allowDeleteChannels: js.UndefOr[Boolean] = js.undefined
   ): TeamGuestSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowCreateUpdateChannels)) __obj.updateDynamic("allowCreateUpdateChannels")(allowCreateUpdateChannels)
-    if (!js.isUndefined(allowDeleteChannels)) __obj.updateDynamic("allowDeleteChannels")(allowDeleteChannels)
+    if (!js.isUndefined(allowCreateUpdateChannels)) __obj.updateDynamic("allowCreateUpdateChannels")(allowCreateUpdateChannels.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowDeleteChannels)) __obj.updateDynamic("allowDeleteChannels")(allowDeleteChannels.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamGuestSettings]
   }
 }

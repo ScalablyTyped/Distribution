@@ -30,7 +30,7 @@ object GraphNode {
     y: Double,
     fixedWeight: Int | Double = null
   ): GraphNode = {
-    val __obj = js.Dynamic.literal(bounds = bounds, fixed = fixed, height = height, px = px, py = py, variable = variable, width = width, x = x, y = y)
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], fixed = fixed.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], px = px.asInstanceOf[js.Any], py = py.asInstanceOf[js.Any], variable = variable.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     if (fixedWeight != null) __obj.updateDynamic("fixedWeight")(fixedWeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphNode]
   }

@@ -27,12 +27,12 @@ object SketchMSArtboard {
     isFlowHome: js.UndefOr[Boolean] = js.undefined,
     verticalRulerData: SketchMSRulerData = null
   ): SketchMSArtboard = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, frame = frame, hasBackgroundColor = hasBackgroundColor)
-    if (horizontalRulerData != null) __obj.updateDynamic("horizontalRulerData")(horizontalRulerData)
-    if (!js.isUndefined(includeBackgroundColorInExport)) __obj.updateDynamic("includeBackgroundColorInExport")(includeBackgroundColorInExport)
-    if (!js.isUndefined(includeInCloudUpload)) __obj.updateDynamic("includeInCloudUpload")(includeInCloudUpload)
-    if (!js.isUndefined(isFlowHome)) __obj.updateDynamic("isFlowHome")(isFlowHome)
-    if (verticalRulerData != null) __obj.updateDynamic("verticalRulerData")(verticalRulerData)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], hasBackgroundColor = hasBackgroundColor.asInstanceOf[js.Any])
+    if (horizontalRulerData != null) __obj.updateDynamic("horizontalRulerData")(horizontalRulerData.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeBackgroundColorInExport)) __obj.updateDynamic("includeBackgroundColorInExport")(includeBackgroundColorInExport.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeInCloudUpload)) __obj.updateDynamic("includeInCloudUpload")(includeInCloudUpload.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFlowHome)) __obj.updateDynamic("isFlowHome")(isFlowHome.asInstanceOf[js.Any])
+    if (verticalRulerData != null) __obj.updateDynamic("verticalRulerData")(verticalRulerData.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSArtboard]
   }
 }

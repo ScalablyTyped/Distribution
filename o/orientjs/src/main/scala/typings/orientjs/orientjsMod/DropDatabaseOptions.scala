@@ -14,9 +14,9 @@ object DropDatabaseOptions {
   @scala.inline
   def apply(options: DatabaseOptions = null, password: String = null, username: String = null): DropDatabaseOptions = {
     val __obj = js.Dynamic.literal()
-    if (options != null) __obj.updateDynamic("options")(options)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropDatabaseOptions]
   }
 }

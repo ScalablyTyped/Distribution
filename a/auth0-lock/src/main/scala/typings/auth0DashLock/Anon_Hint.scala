@@ -12,8 +12,8 @@ trait Anon_Hint extends js.Object {
 object Anon_Hint {
   @scala.inline
   def apply(valid: Boolean, hint: String = null): Anon_Hint = {
-    val __obj = js.Dynamic.literal(valid = valid)
-    if (hint != null) __obj.updateDynamic("hint")(hint)
+    val __obj = js.Dynamic.literal(valid = valid.asInstanceOf[js.Any])
+    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Hint]
   }
 }

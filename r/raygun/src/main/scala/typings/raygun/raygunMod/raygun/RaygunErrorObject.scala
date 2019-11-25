@@ -19,8 +19,8 @@ object RaygunErrorObject {
     stackTrace: js.Array[StackFrame],
     innerError: RaygunErrorObject = null
   ): RaygunErrorObject = {
-    val __obj = js.Dynamic.literal(className = className, message = message, stackTrace = stackTrace)
-    if (innerError != null) __obj.updateDynamic("innerError")(innerError)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], stackTrace = stackTrace.asInstanceOf[js.Any])
+    if (innerError != null) __obj.updateDynamic("innerError")(innerError.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaygunErrorObject]
   }
 }

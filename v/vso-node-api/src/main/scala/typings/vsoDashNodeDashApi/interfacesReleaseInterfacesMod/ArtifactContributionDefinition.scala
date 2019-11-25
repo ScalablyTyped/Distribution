@@ -33,7 +33,7 @@ object ArtifactContributionDefinition {
     name: String,
     uniqueSourceIdentifier: String
   ): ArtifactContributionDefinition = {
-    val __obj = js.Dynamic.literal(artifactType = artifactType, artifactTypeStreamMapping = artifactTypeStreamMapping, browsableArtifactTypeMapping = browsableArtifactTypeMapping, dataSourceBindings = dataSourceBindings, displayName = displayName, downloadTaskId = downloadTaskId, endpointTypeId = endpointTypeId, inputDescriptors = inputDescriptors, name = name, uniqueSourceIdentifier = uniqueSourceIdentifier)
+    val __obj = js.Dynamic.literal(artifactType = artifactType.asInstanceOf[js.Any], artifactTypeStreamMapping = artifactTypeStreamMapping.asInstanceOf[js.Any], browsableArtifactTypeMapping = browsableArtifactTypeMapping.asInstanceOf[js.Any], dataSourceBindings = dataSourceBindings.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], downloadTaskId = downloadTaskId.asInstanceOf[js.Any], endpointTypeId = endpointTypeId.asInstanceOf[js.Any], inputDescriptors = inputDescriptors.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], uniqueSourceIdentifier = uniqueSourceIdentifier.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ArtifactContributionDefinition]
   }

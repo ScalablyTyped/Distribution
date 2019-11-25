@@ -23,11 +23,11 @@ object CacheConfig {
     transactionId: String = null
   ): CacheConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
-    if (liveConfigId != null) __obj.updateDynamic("liveConfigId")(liveConfigId)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
+    if (liveConfigId != null) __obj.updateDynamic("liveConfigId")(liveConfigId.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (poll != null) __obj.updateDynamic("poll")(poll.asInstanceOf[js.Any])
-    if (transactionId != null) __obj.updateDynamic("transactionId")(transactionId)
+    if (transactionId != null) __obj.updateDynamic("transactionId")(transactionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheConfig]
   }
 }

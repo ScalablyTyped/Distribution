@@ -19,8 +19,8 @@ object CommentRule {
   @scala.inline
   def apply(blockComment: CharacterPair = null, lineComment: String = null): CommentRule = {
     val __obj = js.Dynamic.literal()
-    if (blockComment != null) __obj.updateDynamic("blockComment")(blockComment)
-    if (lineComment != null) __obj.updateDynamic("lineComment")(lineComment)
+    if (blockComment != null) __obj.updateDynamic("blockComment")(blockComment.asInstanceOf[js.Any])
+    if (lineComment != null) __obj.updateDynamic("lineComment")(lineComment.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentRule]
   }
 }

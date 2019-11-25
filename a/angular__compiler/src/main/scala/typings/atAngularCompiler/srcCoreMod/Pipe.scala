@@ -12,8 +12,8 @@ trait Pipe extends js.Object {
 object Pipe {
   @scala.inline
   def apply(name: String, pure: js.UndefOr[Boolean] = js.undefined): Pipe = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (!js.isUndefined(pure)) __obj.updateDynamic("pure")(pure)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (!js.isUndefined(pure)) __obj.updateDynamic("pure")(pure.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pipe]
   }
 }

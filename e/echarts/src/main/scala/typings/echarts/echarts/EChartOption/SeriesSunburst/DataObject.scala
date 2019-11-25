@@ -168,15 +168,15 @@ object DataObject {
     value: Int | Double = null
   ): DataObject = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (downplay != null) __obj.updateDynamic("downplay")(downplay)
-    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
-    if (highlight != null) __obj.updateDynamic("highlight")(highlight)
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (link != null) __obj.updateDynamic("link")(link)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (downplay != null) __obj.updateDynamic("downplay")(downplay.asInstanceOf[js.Any])
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
+    if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataObject]
   }

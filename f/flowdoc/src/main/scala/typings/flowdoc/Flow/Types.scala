@@ -38,7 +38,7 @@ object Types {
     RECTANGLE: RECT,
     SCREEN: SCREEN
   ): Types = {
-    val __obj = js.Dynamic.literal(DIAMOND = DIAMOND, DOCUMENT = DOCUMENT, ELLIPSE = ELLIPSE, HOTSPOT = HOTSPOT, IMAGE = IMAGE, LAYER = LAYER, PAGE = PAGE, RECTANGLE = RECTANGLE, SCREEN = SCREEN)
+    val __obj = js.Dynamic.literal(DIAMOND = DIAMOND.asInstanceOf[js.Any], DOCUMENT = DOCUMENT.asInstanceOf[js.Any], ELLIPSE = ELLIPSE.asInstanceOf[js.Any], HOTSPOT = HOTSPOT.asInstanceOf[js.Any], IMAGE = IMAGE.asInstanceOf[js.Any], LAYER = LAYER.asInstanceOf[js.Any], PAGE = PAGE.asInstanceOf[js.Any], RECTANGLE = RECTANGLE.asInstanceOf[js.Any], SCREEN = SCREEN.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Types]
   }

@@ -13,8 +13,8 @@ object Anon_Analog {
   @scala.inline
   def apply(analog: Anon_ExtendHour = null, digital: Anon_Text = null): Anon_Analog = {
     val __obj = js.Dynamic.literal()
-    if (analog != null) __obj.updateDynamic("analog")(analog)
-    if (digital != null) __obj.updateDynamic("digital")(digital)
+    if (analog != null) __obj.updateDynamic("analog")(analog.asInstanceOf[js.Any])
+    if (digital != null) __obj.updateDynamic("digital")(digital.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Analog]
   }
 }

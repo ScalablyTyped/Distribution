@@ -67,7 +67,7 @@ object ComponentInterface {
     render: () => _ = null
   ): ComponentInterface = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (componentDidLoad != null) __obj.updateDynamic("componentDidLoad")(js.Any.fromFunction0(componentDidLoad))
     if (componentDidRender != null) __obj.updateDynamic("componentDidRender")(js.Any.fromFunction0(componentDidRender))
     if (componentDidUpdate != null) __obj.updateDynamic("componentDidUpdate")(js.Any.fromFunction0(componentDidUpdate))

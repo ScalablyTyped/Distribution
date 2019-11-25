@@ -19,7 +19,7 @@ object DataObject {
     endDate: String | Double | Date,
     startDate: String | Double | Date
   ): DataObject = {
-    val __obj = js.Dynamic.literal(additionalData = additionalData, endDate = endDate.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(additionalData = additionalData.asInstanceOf[js.Any], endDate = endDate.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DataObject]
   }

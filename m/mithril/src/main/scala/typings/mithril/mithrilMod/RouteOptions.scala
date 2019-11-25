@@ -17,9 +17,9 @@ object RouteOptions {
   @scala.inline
   def apply(replace: js.UndefOr[Boolean] = js.undefined, state: js.Any = null, title: String = null): RouteOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace)
-    if (state != null) __obj.updateDynamic("state")(state)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteOptions]
   }
 }

@@ -16,9 +16,9 @@ object BumpSequence {
     `type`: typings.stellarDashBase.stellarDashBaseMod.OperationType.BumpSequence,
     source: String = null
   ): BumpSequence = {
-    val __obj = js.Dynamic.literal(bumpTo = bumpTo)
-    __obj.updateDynamic("type")(`type`)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(bumpTo = bumpTo.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[BumpSequence]
   }
 }

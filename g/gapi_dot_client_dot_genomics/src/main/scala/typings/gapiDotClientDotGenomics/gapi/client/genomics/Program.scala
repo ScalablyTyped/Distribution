@@ -33,11 +33,11 @@ object Program {
     version: String = null
   ): Program = {
     val __obj = js.Dynamic.literal()
-    if (commandLine != null) __obj.updateDynamic("commandLine")(commandLine)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (prevProgramId != null) __obj.updateDynamic("prevProgramId")(prevProgramId)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (commandLine != null) __obj.updateDynamic("commandLine")(commandLine.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (prevProgramId != null) __obj.updateDynamic("prevProgramId")(prevProgramId.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Program]
   }
 }

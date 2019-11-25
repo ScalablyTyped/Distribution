@@ -40,7 +40,7 @@ object VideoInfo {
     tags: Anon_Creationtime,
     width: Double
   ): VideoInfo = {
-    val __obj = js.Dynamic.literal(bit_rate = bit_rate, codec_name = codec_name, codec_type = codec_type, display_aspect_ratio = display_aspect_ratio, duration = duration, height = height, index = index, nb_frames = nb_frames, pix_fmt = pix_fmt, r_frame_rate = r_frame_rate, sample_aspect_ratio = sample_aspect_ratio, start_time = start_time, tags = tags, width = width)
+    val __obj = js.Dynamic.literal(bit_rate = bit_rate.asInstanceOf[js.Any], codec_name = codec_name.asInstanceOf[js.Any], codec_type = codec_type.asInstanceOf[js.Any], display_aspect_ratio = display_aspect_ratio.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], nb_frames = nb_frames.asInstanceOf[js.Any], pix_fmt = pix_fmt.asInstanceOf[js.Any], r_frame_rate = r_frame_rate.asInstanceOf[js.Any], sample_aspect_ratio = sample_aspect_ratio.asInstanceOf[js.Any], start_time = start_time.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[VideoInfo]
   }

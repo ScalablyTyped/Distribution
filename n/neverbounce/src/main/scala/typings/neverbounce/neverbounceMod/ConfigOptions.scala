@@ -21,9 +21,9 @@ object ConfigOptions {
     port: Int | Double = null
   ): ConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (acceptedType != null) __obj.updateDynamic("acceptedType")(acceptedType)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (host != null) __obj.updateDynamic("host")(host)
+    if (acceptedType != null) __obj.updateDynamic("acceptedType")(acceptedType.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }

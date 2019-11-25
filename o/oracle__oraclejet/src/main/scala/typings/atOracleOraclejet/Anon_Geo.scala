@@ -12,7 +12,7 @@ trait Anon_Geo extends js.Object {
 object Anon_Geo {
   @scala.inline
   def apply(geo: js.Object, propertiesKeys: Anon_IdLongLabel): Anon_Geo = {
-    val __obj = js.Dynamic.literal(geo = geo, propertiesKeys = propertiesKeys)
+    val __obj = js.Dynamic.literal(geo = geo.asInstanceOf[js.Any], propertiesKeys = propertiesKeys.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Geo]
   }

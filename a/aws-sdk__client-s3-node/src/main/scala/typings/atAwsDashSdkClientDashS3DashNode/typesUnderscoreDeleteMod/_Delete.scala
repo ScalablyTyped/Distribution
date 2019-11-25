@@ -24,7 +24,7 @@ object _Delete {
     Quiet: js.UndefOr[Boolean] = js.undefined
   ): _Delete = {
     val __obj = js.Dynamic.literal(Objects = Objects.asInstanceOf[js.Any])
-    if (!js.isUndefined(Quiet)) __obj.updateDynamic("Quiet")(Quiet)
+    if (!js.isUndefined(Quiet)) __obj.updateDynamic("Quiet")(Quiet.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Delete]
   }
 }

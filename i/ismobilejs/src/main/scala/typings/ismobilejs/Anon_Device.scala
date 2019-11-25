@@ -14,7 +14,7 @@ trait Anon_Device extends js.Object {
 object Anon_Device {
   @scala.inline
   def apply(device: Boolean, ipod: Boolean, phone: Boolean, tablet: Boolean): Anon_Device = {
-    val __obj = js.Dynamic.literal(device = device, ipod = ipod, phone = phone, tablet = tablet)
+    val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], ipod = ipod.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], tablet = tablet.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Device]
   }

@@ -14,7 +14,7 @@ trait IPartiallyWrittenTypeArgumentListInformation extends js.Object {
 object IPartiallyWrittenTypeArgumentListInformation {
   @scala.inline
   def apply(argumentIndex: Double, genericIdentifer: PositionedToken, lessThanToken: PositionedToken): IPartiallyWrittenTypeArgumentListInformation = {
-    val __obj = js.Dynamic.literal(argumentIndex = argumentIndex, genericIdentifer = genericIdentifer, lessThanToken = lessThanToken)
+    val __obj = js.Dynamic.literal(argumentIndex = argumentIndex.asInstanceOf[js.Any], genericIdentifer = genericIdentifer.asInstanceOf[js.Any], lessThanToken = lessThanToken.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IPartiallyWrittenTypeArgumentListInformation]
   }

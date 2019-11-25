@@ -27,9 +27,9 @@ object ModuleOptions {
     http: js.Object = null,
     options: Anon_AuthorizationMethod = null
   ): ModuleOptions[ClientIdName] = {
-    val __obj = js.Dynamic.literal(auth = auth, client = client)
-    if (http != null) __obj.updateDynamic("http")(http)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any])
+    if (http != null) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleOptions[ClientIdName]]
   }
 }

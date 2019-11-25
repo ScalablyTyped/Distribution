@@ -29,11 +29,11 @@ object ManagedAppPolicyDeploymentSummary {
   ): ManagedAppPolicyDeploymentSummary = {
     val __obj = js.Dynamic.literal()
     if (configurationDeployedUserCount != null) __obj.updateDynamic("configurationDeployedUserCount")(configurationDeployedUserCount.asInstanceOf[js.Any])
-    if (configurationDeploymentSummaryPerApp != null) __obj.updateDynamic("configurationDeploymentSummaryPerApp")(configurationDeploymentSummaryPerApp)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastRefreshTime != null) __obj.updateDynamic("lastRefreshTime")(lastRefreshTime)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (configurationDeploymentSummaryPerApp != null) __obj.updateDynamic("configurationDeploymentSummaryPerApp")(configurationDeploymentSummaryPerApp.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastRefreshTime != null) __obj.updateDynamic("lastRefreshTime")(lastRefreshTime.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedAppPolicyDeploymentSummary]
   }
 }

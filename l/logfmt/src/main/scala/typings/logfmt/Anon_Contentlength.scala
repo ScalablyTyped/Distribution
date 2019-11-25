@@ -27,10 +27,10 @@ object Anon_Contentlength {
     content_type: String = null,
     request_id: String = null
   ): Anon_Contentlength = {
-    val __obj = js.Dynamic.literal(ip = ip, method = method, path = path, status = status, time = time)
-    if (content_length != null) __obj.updateDynamic("content_length")(content_length)
-    if (content_type != null) __obj.updateDynamic("content_type")(content_type)
-    if (request_id != null) __obj.updateDynamic("request_id")(request_id)
+    val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
+    if (content_length != null) __obj.updateDynamic("content_length")(content_length.asInstanceOf[js.Any])
+    if (content_type != null) __obj.updateDynamic("content_type")(content_type.asInstanceOf[js.Any])
+    if (request_id != null) __obj.updateDynamic("request_id")(request_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Contentlength]
   }
 }

@@ -29,9 +29,9 @@ trait bindDocOptions extends js.Object {
 object bindDocOptions {
   @scala.inline
   def apply(context: js.Object, onFailure: () => Unit = null, state: String = null, `then`: () => Unit = null): bindDocOptions = {
-    val __obj = js.Dynamic.literal(context = context)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
     if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction0(onFailure))
-    if (state != null) __obj.updateDynamic("state")(state)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (`then` != null) __obj.updateDynamic("then")(js.Any.fromFunction0(`then`))
     __obj.asInstanceOf[bindDocOptions]
   }

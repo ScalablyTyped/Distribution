@@ -14,9 +14,9 @@ object Anon_EmptyUpdate {
   @scala.inline
   def apply(emptyUpdate: js.Any = null, tableAlias: String = null, valueAlias: String = null): Anon_EmptyUpdate = {
     val __obj = js.Dynamic.literal()
-    if (emptyUpdate != null) __obj.updateDynamic("emptyUpdate")(emptyUpdate)
-    if (tableAlias != null) __obj.updateDynamic("tableAlias")(tableAlias)
-    if (valueAlias != null) __obj.updateDynamic("valueAlias")(valueAlias)
+    if (emptyUpdate != null) __obj.updateDynamic("emptyUpdate")(emptyUpdate.asInstanceOf[js.Any])
+    if (tableAlias != null) __obj.updateDynamic("tableAlias")(tableAlias.asInstanceOf[js.Any])
+    if (valueAlias != null) __obj.updateDynamic("valueAlias")(valueAlias.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EmptyUpdate]
   }
 }

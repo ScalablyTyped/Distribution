@@ -41,21 +41,21 @@ object ReactScrollLinkProps {
     smooth: Boolean | String = null,
     spy: js.UndefOr[Boolean] = js.undefined
   ): ReactScrollLinkProps = {
-    val __obj = js.Dynamic.literal(to = to)
-    if (!js.isUndefined(absolute)) __obj.updateDynamic("absolute")(absolute)
-    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass)
-    if (containerId != null) __obj.updateDynamic("containerId")(containerId)
+    val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
+    if (!js.isUndefined(absolute)) __obj.updateDynamic("absolute")(absolute.asInstanceOf[js.Any])
+    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass.asInstanceOf[js.Any])
+    if (containerId != null) __obj.updateDynamic("containerId")(containerId.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(hashSpy)) __obj.updateDynamic("hashSpy")(hashSpy)
-    if (!js.isUndefined(ignoreCancelEvents)) __obj.updateDynamic("ignoreCancelEvents")(ignoreCancelEvents)
-    if (!js.isUndefined(isDynamic)) __obj.updateDynamic("isDynamic")(isDynamic)
+    if (!js.isUndefined(hashSpy)) __obj.updateDynamic("hashSpy")(hashSpy.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCancelEvents)) __obj.updateDynamic("ignoreCancelEvents")(ignoreCancelEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDynamic)) __obj.updateDynamic("isDynamic")(isDynamic.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction0(onClick))
     if (onSetActive != null) __obj.updateDynamic("onSetActive")(js.Any.fromFunction1(onSetActive))
     if (onSetInactive != null) __obj.updateDynamic("onSetInactive")(js.Any.fromFunction0(onSetInactive))
     if (smooth != null) __obj.updateDynamic("smooth")(smooth.asInstanceOf[js.Any])
-    if (!js.isUndefined(spy)) __obj.updateDynamic("spy")(spy)
+    if (!js.isUndefined(spy)) __obj.updateDynamic("spy")(spy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactScrollLinkProps]
   }
 }

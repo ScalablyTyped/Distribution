@@ -24,10 +24,10 @@ object InteractionIdentificationConfig {
     delay: Int | Double = null,
     resetOnInteraction: js.UndefOr[Boolean] = js.undefined
   ): InteractionIdentificationConfig = {
-    val __obj = js.Dynamic.literal(callback = callback, duration = duration, foregroundColor = foregroundColor)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], foregroundColor = foregroundColor.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetOnInteraction)) __obj.updateDynamic("resetOnInteraction")(resetOnInteraction)
+    if (!js.isUndefined(resetOnInteraction)) __obj.updateDynamic("resetOnInteraction")(resetOnInteraction.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractionIdentificationConfig]
   }
 }

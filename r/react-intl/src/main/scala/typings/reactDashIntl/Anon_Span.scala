@@ -12,7 +12,7 @@ trait Anon_Span extends js.Object {
 object Anon_Span {
   @scala.inline
   def apply(tagName: span): Anon_Span = {
-    val __obj = js.Dynamic.literal(tagName = tagName)
+    val __obj = js.Dynamic.literal(tagName = tagName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Span]
   }

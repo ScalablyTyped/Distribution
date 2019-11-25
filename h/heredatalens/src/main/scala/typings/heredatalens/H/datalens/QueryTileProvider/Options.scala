@@ -21,8 +21,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(queryId: String, tileParamNames: TileParamNames, queryParams: String = null): Options = {
-    val __obj = js.Dynamic.literal(queryId = queryId, tileParamNames = tileParamNames)
-    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams)
+    val __obj = js.Dynamic.literal(queryId = queryId.asInstanceOf[js.Any], tileParamNames = tileParamNames.asInstanceOf[js.Any])
+    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -43,20 +43,20 @@ object ClientConfig {
     ssl: js.Any = null,
     unixSocket: String = null
   ): ClientConfig = {
-    val __obj = js.Dynamic.literal(host = host, password = password, user = user)
-    if (charset != null) __obj.updateDynamic("charset")(charset)
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
+    val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
     if (connTimeout != null) __obj.updateDynamic("connTimeout")(connTimeout.asInstanceOf[js.Any])
-    if (db != null) __obj.updateDynamic("db")(db)
-    if (!js.isUndefined(keepQueries)) __obj.updateDynamic("keepQueries")(keepQueries)
-    if (!js.isUndefined(local_infile)) __obj.updateDynamic("local_infile")(local_infile)
-    if (!js.isUndefined(multiStatements)) __obj.updateDynamic("multiStatements")(multiStatements)
+    if (db != null) __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepQueries)) __obj.updateDynamic("keepQueries")(keepQueries.asInstanceOf[js.Any])
+    if (!js.isUndefined(local_infile)) __obj.updateDynamic("local_infile")(local_infile.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiStatements)) __obj.updateDynamic("multiStatements")(multiStatements.asInstanceOf[js.Any])
     if (pingInterval != null) __obj.updateDynamic("pingInterval")(pingInterval.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (read_default_group != null) __obj.updateDynamic("read_default_group")(read_default_group)
-    if (!js.isUndefined(secureAuth)) __obj.updateDynamic("secureAuth")(secureAuth)
-    if (ssl != null) __obj.updateDynamic("ssl")(ssl)
-    if (unixSocket != null) __obj.updateDynamic("unixSocket")(unixSocket)
+    if (read_default_group != null) __obj.updateDynamic("read_default_group")(read_default_group.asInstanceOf[js.Any])
+    if (!js.isUndefined(secureAuth)) __obj.updateDynamic("secureAuth")(secureAuth.asInstanceOf[js.Any])
+    if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
+    if (unixSocket != null) __obj.updateDynamic("unixSocket")(unixSocket.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientConfig]
   }
 }

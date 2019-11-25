@@ -21,8 +21,8 @@ object CheckboxSettings {
   ): CheckboxSettings = {
     val __obj = js.Dynamic.literal()
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
-    if (iconsLibrary != null) __obj.updateDynamic("iconsLibrary")(iconsLibrary)
-    if (uiLibrary != null) __obj.updateDynamic("uiLibrary")(uiLibrary)
+    if (iconsLibrary != null) __obj.updateDynamic("iconsLibrary")(iconsLibrary.asInstanceOf[js.Any])
+    if (uiLibrary != null) __obj.updateDynamic("uiLibrary")(uiLibrary.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckboxSettings]
   }
 }

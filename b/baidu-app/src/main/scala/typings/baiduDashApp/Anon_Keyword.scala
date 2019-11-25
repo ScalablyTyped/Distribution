@@ -16,7 +16,7 @@ trait Anon_Keyword extends js.Object {
 object Anon_Keyword {
   @scala.inline
   def apply(keyword: String, root: String, score: Double): Anon_Keyword = {
-    val __obj = js.Dynamic.literal(keyword = keyword, root = root, score = score)
+    val __obj = js.Dynamic.literal(keyword = keyword.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Keyword]
   }

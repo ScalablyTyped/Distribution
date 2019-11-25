@@ -25,13 +25,13 @@ object SharedInsight {
     sharingHistory: js.Array[SharingDetail] = null
   ): SharedInsight = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastShared != null) __obj.updateDynamic("lastShared")(lastShared)
-    if (lastSharedMethod != null) __obj.updateDynamic("lastSharedMethod")(lastSharedMethod)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
-    if (resourceReference != null) __obj.updateDynamic("resourceReference")(resourceReference)
-    if (resourceVisualization != null) __obj.updateDynamic("resourceVisualization")(resourceVisualization)
-    if (sharingHistory != null) __obj.updateDynamic("sharingHistory")(sharingHistory)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastShared != null) __obj.updateDynamic("lastShared")(lastShared.asInstanceOf[js.Any])
+    if (lastSharedMethod != null) __obj.updateDynamic("lastSharedMethod")(lastSharedMethod.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
+    if (resourceReference != null) __obj.updateDynamic("resourceReference")(resourceReference.asInstanceOf[js.Any])
+    if (resourceVisualization != null) __obj.updateDynamic("resourceVisualization")(resourceVisualization.asInstanceOf[js.Any])
+    if (sharingHistory != null) __obj.updateDynamic("sharingHistory")(sharingHistory.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedInsight]
   }
 }

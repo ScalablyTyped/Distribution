@@ -23,11 +23,11 @@ object ActionCodeSettings {
     handleCodeInApp: js.UndefOr[Boolean] = js.undefined,
     iOS: Anon_BundleId = null
   ): ActionCodeSettings = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (android != null) __obj.updateDynamic("android")(android)
-    if (dynamicLinkDomain != null) __obj.updateDynamic("dynamicLinkDomain")(dynamicLinkDomain)
-    if (!js.isUndefined(handleCodeInApp)) __obj.updateDynamic("handleCodeInApp")(handleCodeInApp)
-    if (iOS != null) __obj.updateDynamic("iOS")(iOS)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (android != null) __obj.updateDynamic("android")(android.asInstanceOf[js.Any])
+    if (dynamicLinkDomain != null) __obj.updateDynamic("dynamicLinkDomain")(dynamicLinkDomain.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleCodeInApp)) __obj.updateDynamic("handleCodeInApp")(handleCodeInApp.asInstanceOf[js.Any])
+    if (iOS != null) __obj.updateDynamic("iOS")(iOS.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionCodeSettings]
   }
 }

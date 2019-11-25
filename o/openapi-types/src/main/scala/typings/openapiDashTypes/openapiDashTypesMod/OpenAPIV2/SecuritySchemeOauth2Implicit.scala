@@ -25,9 +25,9 @@ object SecuritySchemeOauth2Implicit {
     `type`: basic | apiKey | oauth2,
     description: String = null
   ): SecuritySchemeOauth2Implicit = {
-    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl, flow = flow, scopes = scopes)
+    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl.asInstanceOf[js.Any], flow = flow.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecuritySchemeOauth2Implicit]
   }
 }

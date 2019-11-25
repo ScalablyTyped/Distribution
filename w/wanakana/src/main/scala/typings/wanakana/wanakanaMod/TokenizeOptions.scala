@@ -13,8 +13,8 @@ object TokenizeOptions {
   @scala.inline
   def apply(compact: js.UndefOr[Boolean] = js.undefined, detailed: js.UndefOr[Boolean] = js.undefined): TokenizeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
-    if (!js.isUndefined(detailed)) __obj.updateDynamic("detailed")(detailed)
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (!js.isUndefined(detailed)) __obj.updateDynamic("detailed")(detailed.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenizeOptions]
   }
 }

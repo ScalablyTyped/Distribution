@@ -25,11 +25,11 @@ object ParseOptions {
     needMap: js.UndefOr[Boolean] = js.undefined,
     sourceRoot: String = null
   ): ParseOptions = {
-    val __obj = js.Dynamic.literal(compiler = compiler, source = source)
-    if (compilerParseOptions != null) __obj.updateDynamic("compilerParseOptions")(compilerParseOptions)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (!js.isUndefined(needMap)) __obj.updateDynamic("needMap")(needMap)
-    if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot)
+    val __obj = js.Dynamic.literal(compiler = compiler.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    if (compilerParseOptions != null) __obj.updateDynamic("compilerParseOptions")(compilerParseOptions.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (!js.isUndefined(needMap)) __obj.updateDynamic("needMap")(needMap.asInstanceOf[js.Any])
+    if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }
 }

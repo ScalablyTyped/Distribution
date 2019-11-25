@@ -80,22 +80,22 @@ object momentDashDurationDashFormatStrings {
   sealed trait long extends DurationLabelType
   
   @js.native
-  sealed trait m extends DurationToken
+  sealed trait m_ extends DurationToken
   
   @js.native
   sealed trait mid extends UnitOfTrim
   
   @js.native
-  sealed trait mm extends DurationToken
+  sealed trait mm_ extends DurationToken
   
   @js.native
-  sealed trait mmm extends DurationToken
+  sealed trait mmm_ extends DurationToken
   
   @js.native
   sealed trait right extends UnitOfTrimV1
   
   @js.native
-  sealed trait s extends DurationToken
+  sealed trait s_ extends DurationToken
   
   @js.native
   sealed trait short extends DurationLabelType
@@ -104,10 +104,10 @@ object momentDashDurationDashFormatStrings {
   sealed trait small extends UnitOfTrim
   
   @js.native
-  sealed trait ss extends DurationToken
+  sealed trait ss_ extends DurationToken
   
   @js.native
-  sealed trait sss extends DurationToken
+  sealed trait sss_ extends DurationToken
   
   @js.native
   sealed trait standard extends DurationLabelType
@@ -177,25 +177,25 @@ object momentDashDurationDashFormatStrings {
   @scala.inline
   def long: long = "long".asInstanceOf[long]
   @scala.inline
-  def m: m = "m".asInstanceOf[m]
+  def m_ : m_ = "m".asInstanceOf[m_]
   @scala.inline
   def mid: mid = "mid".asInstanceOf[mid]
   @scala.inline
-  def mm: mm = "mm".asInstanceOf[mm]
+  def mm_ : mm_ = "mm".asInstanceOf[mm_]
   @scala.inline
-  def mmm: mmm = "mmm".asInstanceOf[mmm]
+  def mmm_ : mmm_ = "mmm".asInstanceOf[mmm_]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
-  def s: s = "s".asInstanceOf[s]
+  def s_ : s_ = "s".asInstanceOf[s_]
   @scala.inline
   def short: short = "short".asInstanceOf[short]
   @scala.inline
   def small: small = "small".asInstanceOf[small]
   @scala.inline
-  def ss: ss = "ss".asInstanceOf[ss]
+  def ss_ : ss_ = "ss".asInstanceOf[ss_]
   @scala.inline
-  def sss: sss = "sss".asInstanceOf[sss]
+  def sss_ : sss_ = "sss".asInstanceOf[sss_]
   @scala.inline
   def standard: standard = "standard".asInstanceOf[standard]
   @scala.inline

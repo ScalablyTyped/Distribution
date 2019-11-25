@@ -16,7 +16,7 @@ object BlobOptions {
   def apply(endings: transparent | native = null, `type`: String = null): BlobOptions = {
     val __obj = js.Dynamic.literal()
     if (endings != null) __obj.updateDynamic("endings")(endings.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlobOptions]
   }
 }

@@ -1,6 +1,5 @@
 package typings.baiduDashApp
 
-import typings.baiduDashApp.swan.Component
 import typings.baiduDashApp.swan.ExtendedComponent
 import typings.baiduDashApp.swan.ThisTypedComponentOptionsWithRecordProps
 import scala.scalajs.js
@@ -18,7 +17,9 @@ object Behavior extends js.Object {
     * 每个组件可以引用多个 behavior
     * behavior 也可以引用其他 behavior
     */
-  def apply[D, M, P](): ExtendedComponent[Component[D, P], D, M, P] = js.native
-  def apply[D, M, P](options: ThisTypedComponentOptionsWithRecordProps[Component[D, P], D, M, P]): ExtendedComponent[Component[D, P], D, M, P] = js.native
+  def apply[D, M, P](): ExtendedComponent[typings.baiduDashApp.swan.Component[D, P], D, M, P] = js.native
+  def apply[D, M, P](
+    options: ThisTypedComponentOptionsWithRecordProps[typings.baiduDashApp.swan.Component[D, P], D, M, P]
+  ): ExtendedComponent[typings.baiduDashApp.swan.Component[D, P], D, M, P] = js.native
 }
 

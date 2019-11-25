@@ -62,9 +62,9 @@ object INxTreeNode {
     qAttrDims: INxAttributeDimValues = null,
     qAttrExps: INxAttributeExpressionValues = null
   ): INxTreeNode = {
-    val __obj = js.Dynamic.literal(qElemNo = qElemNo, qNodeNr = qNodeNr, qNodes = qNodes, qParentNode = qParentNode, qRow = qRow, qText = qText, qType = qType, qValues = qValues)
-    if (qAttrDims != null) __obj.updateDynamic("qAttrDims")(qAttrDims)
-    if (qAttrExps != null) __obj.updateDynamic("qAttrExps")(qAttrExps)
+    val __obj = js.Dynamic.literal(qElemNo = qElemNo.asInstanceOf[js.Any], qNodeNr = qNodeNr.asInstanceOf[js.Any], qNodes = qNodes.asInstanceOf[js.Any], qParentNode = qParentNode.asInstanceOf[js.Any], qRow = qRow.asInstanceOf[js.Any], qText = qText.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any], qValues = qValues.asInstanceOf[js.Any])
+    if (qAttrDims != null) __obj.updateDynamic("qAttrDims")(qAttrDims.asInstanceOf[js.Any])
+    if (qAttrExps != null) __obj.updateDynamic("qAttrExps")(qAttrExps.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxTreeNode]
   }
 }

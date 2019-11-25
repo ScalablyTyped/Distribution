@@ -27,7 +27,7 @@ object DetailedPeerCertificate {
     valid_from: java.lang.String,
     valid_to: java.lang.String
   ): DetailedPeerCertificate = {
-    val __obj = js.Dynamic.literal(exponent = exponent, ext_key_usage = ext_key_usage, fingerprint = fingerprint, infoAccess = infoAccess, issuer = issuer, issuerCertificate = issuerCertificate, modulus = modulus, raw = raw, serialNumber = serialNumber, subject = subject, subjectaltname = subjectaltname, valid_from = valid_from, valid_to = valid_to)
+    val __obj = js.Dynamic.literal(exponent = exponent.asInstanceOf[js.Any], ext_key_usage = ext_key_usage.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], infoAccess = infoAccess.asInstanceOf[js.Any], issuer = issuer.asInstanceOf[js.Any], issuerCertificate = issuerCertificate.asInstanceOf[js.Any], modulus = modulus.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], serialNumber = serialNumber.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], subjectaltname = subjectaltname.asInstanceOf[js.Any], valid_from = valid_from.asInstanceOf[js.Any], valid_to = valid_to.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DetailedPeerCertificate]
   }

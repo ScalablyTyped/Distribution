@@ -12,7 +12,7 @@ object Anon_ReadAny {
   @scala.inline
   def apply(read: js.Any = null): Anon_ReadAny = {
     val __obj = js.Dynamic.literal()
-    if (read != null) __obj.updateDynamic("read")(read)
+    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ReadAny]
   }
 }

@@ -28,12 +28,12 @@ object ApplePushNotificationCertificate {
     topicIdentifier: String = null
   ): ApplePushNotificationCertificate = {
     val __obj = js.Dynamic.literal()
-    if (appleIdentifier != null) __obj.updateDynamic("appleIdentifier")(appleIdentifier)
-    if (certificate != null) __obj.updateDynamic("certificate")(certificate)
-    if (expirationDateTime != null) __obj.updateDynamic("expirationDateTime")(expirationDateTime)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime)
-    if (topicIdentifier != null) __obj.updateDynamic("topicIdentifier")(topicIdentifier)
+    if (appleIdentifier != null) __obj.updateDynamic("appleIdentifier")(appleIdentifier.asInstanceOf[js.Any])
+    if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
+    if (expirationDateTime != null) __obj.updateDynamic("expirationDateTime")(expirationDateTime.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
+    if (topicIdentifier != null) __obj.updateDynamic("topicIdentifier")(topicIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplePushNotificationCertificate]
   }
 }

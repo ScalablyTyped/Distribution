@@ -26,7 +26,7 @@ object NpmConfigSetColors {
     StringDictionary: StringDictionary[String | js.Array[String]] = null
   ): NpmConfigSetColors = {
     val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], silly = silly.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any], warn = warn.asInstanceOf[js.Any])
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[NpmConfigSetColors]
   }
 }

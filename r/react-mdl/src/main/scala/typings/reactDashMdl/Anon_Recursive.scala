@@ -12,7 +12,7 @@ object Anon_Recursive {
   @scala.inline
   def apply(recursive: js.UndefOr[Boolean] = js.undefined): Anon_Recursive = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Recursive]
   }
 }

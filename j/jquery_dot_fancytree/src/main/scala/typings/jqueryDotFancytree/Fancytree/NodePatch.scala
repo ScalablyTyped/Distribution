@@ -19,9 +19,9 @@ object NodePatch {
   @scala.inline
   def apply(appendChildren: NodeData = null, insertChildren: NodeData = null, replaceChildren: NodeData = null): NodePatch = {
     val __obj = js.Dynamic.literal()
-    if (appendChildren != null) __obj.updateDynamic("appendChildren")(appendChildren)
-    if (insertChildren != null) __obj.updateDynamic("insertChildren")(insertChildren)
-    if (replaceChildren != null) __obj.updateDynamic("replaceChildren")(replaceChildren)
+    if (appendChildren != null) __obj.updateDynamic("appendChildren")(appendChildren.asInstanceOf[js.Any])
+    if (insertChildren != null) __obj.updateDynamic("insertChildren")(insertChildren.asInstanceOf[js.Any])
+    if (replaceChildren != null) __obj.updateDynamic("replaceChildren")(replaceChildren.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodePatch]
   }
 }

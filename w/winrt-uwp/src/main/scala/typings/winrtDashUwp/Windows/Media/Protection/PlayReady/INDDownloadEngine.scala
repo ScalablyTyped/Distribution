@@ -47,7 +47,7 @@ object INDDownloadEngine {
     resume: () => Unit,
     seek: Double => Unit
   ): INDDownloadEngine = {
-    val __obj = js.Dynamic.literal(bufferFullMaxThresholdInSamples = bufferFullMaxThresholdInSamples, bufferFullMinThresholdInSamples = bufferFullMinThresholdInSamples, canSeek = canSeek, close = js.Any.fromFunction0(close), notifier = notifier, open = js.Any.fromFunction2(open), pause = js.Any.fromFunction0(pause), resume = js.Any.fromFunction0(resume), seek = js.Any.fromFunction1(seek))
+    val __obj = js.Dynamic.literal(bufferFullMaxThresholdInSamples = bufferFullMaxThresholdInSamples.asInstanceOf[js.Any], bufferFullMinThresholdInSamples = bufferFullMinThresholdInSamples.asInstanceOf[js.Any], canSeek = canSeek.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), notifier = notifier.asInstanceOf[js.Any], open = js.Any.fromFunction2(open), pause = js.Any.fromFunction0(pause), resume = js.Any.fromFunction0(resume), seek = js.Any.fromFunction1(seek))
   
     __obj.asInstanceOf[INDDownloadEngine]
   }

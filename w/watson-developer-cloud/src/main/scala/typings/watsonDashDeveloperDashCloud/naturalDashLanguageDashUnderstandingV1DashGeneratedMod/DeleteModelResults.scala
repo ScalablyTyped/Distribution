@@ -14,7 +14,7 @@ object DeleteModelResults {
   @scala.inline
   def apply(deleted: String = null): DeleteModelResults = {
     val __obj = js.Dynamic.literal()
-    if (deleted != null) __obj.updateDynamic("deleted")(deleted)
+    if (deleted != null) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteModelResults]
   }
 }

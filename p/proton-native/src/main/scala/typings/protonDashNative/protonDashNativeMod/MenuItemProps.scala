@@ -46,8 +46,8 @@ object MenuItemProps {
     `type`: Check | Quit | About | Preferences | typings.protonDashNative.protonDashNativeStrings.Separator | Item = null
   ): MenuItemProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (children != null) __obj.updateDynamic("children")(children)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuItemProps]

@@ -23,10 +23,10 @@ object SignedTransaction {
     rawTransaction: String = null,
     transactionHash: String = null
   ): SignedTransaction = {
-    val __obj = js.Dynamic.literal(r = r, s = s, v = v)
-    if (messageHash != null) __obj.updateDynamic("messageHash")(messageHash)
-    if (rawTransaction != null) __obj.updateDynamic("rawTransaction")(rawTransaction)
-    if (transactionHash != null) __obj.updateDynamic("transactionHash")(transactionHash)
+    val __obj = js.Dynamic.literal(r = r.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
+    if (messageHash != null) __obj.updateDynamic("messageHash")(messageHash.asInstanceOf[js.Any])
+    if (rawTransaction != null) __obj.updateDynamic("rawTransaction")(rawTransaction.asInstanceOf[js.Any])
+    if (transactionHash != null) __obj.updateDynamic("transactionHash")(transactionHash.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignedTransaction]
   }
 }

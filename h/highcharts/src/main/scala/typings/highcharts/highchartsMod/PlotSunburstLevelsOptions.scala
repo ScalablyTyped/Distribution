@@ -66,15 +66,15 @@ object PlotSunburstLevelsOptions {
     rotationMode: String = null
   ): PlotSunburstLevelsOptions = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
-    if (borderDashStyle != null) __obj.updateDynamic("borderDashStyle")(borderDashStyle)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (borderDashStyle != null) __obj.updateDynamic("borderDashStyle")(borderDashStyle.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (colorVariation != null) __obj.updateDynamic("colorVariation")(colorVariation)
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
-    if (levelSize != null) __obj.updateDynamic("levelSize")(levelSize)
+    if (colorVariation != null) __obj.updateDynamic("colorVariation")(colorVariation.asInstanceOf[js.Any])
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
+    if (levelSize != null) __obj.updateDynamic("levelSize")(levelSize.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (rotationMode != null) __obj.updateDynamic("rotationMode")(rotationMode)
+    if (rotationMode != null) __obj.updateDynamic("rotationMode")(rotationMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotSunburstLevelsOptions]
   }
 }

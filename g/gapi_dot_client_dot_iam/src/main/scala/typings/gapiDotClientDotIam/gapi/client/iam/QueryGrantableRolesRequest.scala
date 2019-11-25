@@ -32,10 +32,10 @@ object QueryGrantableRolesRequest {
     view: String = null
   ): QueryGrantableRolesRequest = {
     val __obj = js.Dynamic.literal()
-    if (fullResourceName != null) __obj.updateDynamic("fullResourceName")(fullResourceName)
+    if (fullResourceName != null) __obj.updateDynamic("fullResourceName")(fullResourceName.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryGrantableRolesRequest]
   }
 }

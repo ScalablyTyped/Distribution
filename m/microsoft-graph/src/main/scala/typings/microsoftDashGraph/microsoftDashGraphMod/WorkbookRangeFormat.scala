@@ -49,16 +49,16 @@ object WorkbookRangeFormat {
     wrapText: js.UndefOr[Boolean] = js.undefined
   ): WorkbookRangeFormat = {
     val __obj = js.Dynamic.literal()
-    if (borders != null) __obj.updateDynamic("borders")(borders)
+    if (borders != null) __obj.updateDynamic("borders")(borders.asInstanceOf[js.Any])
     if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (protection != null) __obj.updateDynamic("protection")(protection)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (protection != null) __obj.updateDynamic("protection")(protection.asInstanceOf[js.Any])
     if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment)
-    if (!js.isUndefined(wrapText)) __obj.updateDynamic("wrapText")(wrapText)
+    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapText)) __obj.updateDynamic("wrapText")(wrapText.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookRangeFormat]
   }
 }

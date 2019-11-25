@@ -13,7 +13,7 @@ trait DefineEvent extends js.Object {
 object DefineEvent {
   @scala.inline
   def apply(data: DefineEventData, name: __ON_DEFINE__): DefineEvent = {
-    val __obj = js.Dynamic.literal(data = data, name = name)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DefineEvent]
   }

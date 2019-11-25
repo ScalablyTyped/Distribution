@@ -44,16 +44,16 @@ object ReqProps {
     strictDN: js.UndefOr[Boolean] = js.undefined,
     timeout: Int | Double = null
   ): ReqProps = {
-    val __obj = js.Dynamic.literal(attributes = attributes, filter = filter.asInstanceOf[js.Any], includeMembership = includeMembership, sizeLimit = sizeLimit, timeLimit = timeLimit, tlsOptions = tlsOptions, url = url)
-    if (baseDN != null) __obj.updateDynamic("baseDN")(baseDN)
-    if (bindCredentials != null) __obj.updateDynamic("bindCredentials")(bindCredentials)
-    if (bindDN != null) __obj.updateDynamic("bindDN")(bindDN)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], includeMembership = includeMembership.asInstanceOf[js.Any], sizeLimit = sizeLimit.asInstanceOf[js.Any], timeLimit = timeLimit.asInstanceOf[js.Any], tlsOptions = tlsOptions.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    if (baseDN != null) __obj.updateDynamic("baseDN")(baseDN.asInstanceOf[js.Any])
+    if (bindCredentials != null) __obj.updateDynamic("bindCredentials")(bindCredentials.asInstanceOf[js.Any])
+    if (bindDN != null) __obj.updateDynamic("bindDN")(bindDN.asInstanceOf[js.Any])
     if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
     if (idleTimeout != null) __obj.updateDynamic("idleTimeout")(idleTimeout.asInstanceOf[js.Any])
-    if (log != null) __obj.updateDynamic("log")(log)
+    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath)
-    if (!js.isUndefined(strictDN)) __obj.updateDynamic("strictDN")(strictDN)
+    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictDN)) __obj.updateDynamic("strictDN")(strictDN.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReqProps]
   }

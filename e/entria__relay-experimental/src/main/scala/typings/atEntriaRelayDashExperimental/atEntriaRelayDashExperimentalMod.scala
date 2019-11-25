@@ -25,18 +25,18 @@ object atEntriaRelayDashExperimentalMod extends js.Object {
   def fetchQuery_variables[TQuery /* <: OperationType */](
     environment: Environment,
     query: GraphQLTaggedNode,
-    variables: /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any
   ): Observable[
-    /* import warning: ImportType.apply Failed type conversion: TQuery['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any
   ] = js.native
   @JSName("fetchQuery")
   def fetchQuery_variables[TQuery /* <: OperationType */](
     environment: Environment,
     query: GraphQLTaggedNode,
-    variables: /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any,
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any,
     options: Anon_NetworkCacheConfig
   ): Observable[
-    /* import warning: ImportType.apply Failed type conversion: TQuery['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any
   ] = js.native
   def useFragment(fragmentInput: GraphQLTaggedNode): NullableArrayFragmentReturn[Null] = js.native
   def useFragment(fragmentInput: GraphQLTaggedNode, fragmentRef: js.Array[StringDictionary[_]]): NullableArrayFragmentReturn[js.Array[StringDictionary[_]]] = js.native
@@ -57,19 +57,19 @@ object atEntriaRelayDashExperimentalMod extends js.Object {
     TKey, 
     typings.atEntriaRelayDashExperimental.libUseLegacyPaginationFragmentMod.NonNullableFragmentReturn[TKey] with typings.atEntriaRelayDashExperimental.libUseLegacyPaginationFragmentMod.NullableFragmentReturn[TKey]
   ] = js.native
-  def useQuery[TQuery /* <: OperationType */](gqlQuery: GraphQLTaggedNode): /* import warning: ImportType.apply Failed type conversion: TQuery['response'] */ js.Any = js.native
-  def useQuery[TQuery /* <: OperationType */](gqlQuery: GraphQLTaggedNode, variables: Null, options: Anon_FetchKey): /* import warning: ImportType.apply Failed type conversion: TQuery['response'] */ js.Any = js.native
+  def useQuery[TQuery /* <: OperationType */](gqlQuery: GraphQLTaggedNode): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = js.native
+  def useQuery[TQuery /* <: OperationType */](gqlQuery: GraphQLTaggedNode, variables: Null, options: Anon_FetchKey): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = js.native
   @JSName("useQuery")
   def useQuery_variables[TQuery /* <: OperationType */](
     gqlQuery: GraphQLTaggedNode,
-    variables: /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any
-  ): /* import warning: ImportType.apply Failed type conversion: TQuery['response'] */ js.Any = js.native
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any
+  ): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = js.native
   @JSName("useQuery")
   def useQuery_variables[TQuery /* <: OperationType */](
     gqlQuery: GraphQLTaggedNode,
-    variables: /* import warning: ImportType.apply Failed type conversion: TQuery['variables'] */ js.Any,
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any,
     options: Anon_FetchKey
-  ): /* import warning: ImportType.apply Failed type conversion: TQuery['response'] */ js.Any = js.native
+  ): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = js.native
   def useRefetchableFragment[TQuery /* <: OperationType */, TKey /* <: StringDictionary[js.Any] | Null */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): ReturnTypeRefetchableFragment[TQuery, TKey] = js.native
   def useRelayEnvironment(): Environment = js.native
 }

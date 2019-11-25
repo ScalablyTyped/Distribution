@@ -27,9 +27,9 @@ object DecorationOptions {
     hoverMessage: MarkedString | js.Array[MarkedString] = null,
     renderOptions: DecorationInstanceRenderOptions = null
   ): DecorationOptions = {
-    val __obj = js.Dynamic.literal(range = range)
+    val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
     if (hoverMessage != null) __obj.updateDynamic("hoverMessage")(hoverMessage.asInstanceOf[js.Any])
-    if (renderOptions != null) __obj.updateDynamic("renderOptions")(renderOptions)
+    if (renderOptions != null) __obj.updateDynamic("renderOptions")(renderOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecorationOptions]
   }
 }

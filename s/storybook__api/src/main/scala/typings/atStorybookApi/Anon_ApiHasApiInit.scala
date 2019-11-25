@@ -18,7 +18,7 @@ object Anon_ApiHasApiInit {
     init: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify API */ js.Any => js.Promise[Unit],
     state: Anon_DismissedVersionNotification
   ): Anon_ApiHasApiInit = {
-    val __obj = js.Dynamic.literal(api = api, init = js.Any.fromFunction1(init), state = state)
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], init = js.Any.fromFunction1(init), state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ApiHasApiInit]
   }

@@ -12,7 +12,7 @@ object Output {
   @scala.inline
   def apply(bindingPropertyName: String = null): Output = {
     val __obj = js.Dynamic.literal()
-    if (bindingPropertyName != null) __obj.updateDynamic("bindingPropertyName")(bindingPropertyName)
+    if (bindingPropertyName != null) __obj.updateDynamic("bindingPropertyName")(bindingPropertyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Output]
   }
 }

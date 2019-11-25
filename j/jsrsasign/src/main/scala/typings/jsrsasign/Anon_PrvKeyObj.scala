@@ -13,18 +13,18 @@ trait Anon_PrvKeyObj extends js.Object {
   var pubKeyObj: RSAKey
 }
 
-trait Anon_Prvkeyobj extends js.Object {
-  var prvkeyobj: js.UndefOr[RSAKey | ECDSA | DSA] = js.undefined
-  var tbscertobj: js.UndefOr[TBSCertificate] = js.undefined
-}
-
 object Anon_PrvKeyObj {
   @scala.inline
   def apply(prvKeyObj: RSAKey, pubKeyObj: RSAKey): Anon_PrvKeyObj = {
-    val __obj = js.Dynamic.literal(prvKeyObj = prvKeyObj, pubKeyObj = pubKeyObj)
+    val __obj = js.Dynamic.literal(prvKeyObj = prvKeyObj.asInstanceOf[js.Any], pubKeyObj = pubKeyObj.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_PrvKeyObj]
   }
+}
+
+trait Anon_Prvkeyobj extends js.Object {
+  var prvkeyobj: js.UndefOr[RSAKey | ECDSA | DSA] = js.undefined
+  var tbscertobj: js.UndefOr[TBSCertificate] = js.undefined
 }
 
 object Anon_Prvkeyobj {
@@ -32,7 +32,7 @@ object Anon_Prvkeyobj {
   def apply(prvkeyobj: RSAKey | ECDSA | DSA = null, tbscertobj: TBSCertificate = null): Anon_Prvkeyobj = {
     val __obj = js.Dynamic.literal()
     if (prvkeyobj != null) __obj.updateDynamic("prvkeyobj")(prvkeyobj.asInstanceOf[js.Any])
-    if (tbscertobj != null) __obj.updateDynamic("tbscertobj")(tbscertobj)
+    if (tbscertobj != null) __obj.updateDynamic("tbscertobj")(tbscertobj.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Prvkeyobj]
   }
 }

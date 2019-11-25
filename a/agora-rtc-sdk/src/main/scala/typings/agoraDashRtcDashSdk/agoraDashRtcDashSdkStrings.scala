@@ -84,7 +84,7 @@ object agoraDashRtcDashSdkStrings {
   sealed trait exception extends js.Object
   
   @js.native
-  sealed trait h264 extends js.Object
+  sealed trait h264_ extends js.Object
   
   @js.native
   sealed trait high_quality extends js.Object
@@ -216,7 +216,7 @@ object agoraDashRtcDashSdkStrings {
   sealed trait `volume-indicator` extends js.Object
   
   @js.native
-  sealed trait vp8 extends js.Object
+  sealed trait vp8_ extends js.Object
   
   @js.native
   sealed trait wifi extends js.Object
@@ -280,7 +280,7 @@ object agoraDashRtcDashSdkStrings {
   @scala.inline
   def exception: exception = "exception".asInstanceOf[exception]
   @scala.inline
-  def h264: h264 = "h264".asInstanceOf[h264]
+  def h264_ : h264_ = "h264".asInstanceOf[h264_]
   @scala.inline
   def high_quality: high_quality = "high_quality".asInstanceOf[high_quality]
   @scala.inline
@@ -368,7 +368,7 @@ object agoraDashRtcDashSdkStrings {
   @scala.inline
   def `volume-indicator`: `volume-indicator` = "volume-indicator".asInstanceOf[`volume-indicator`]
   @scala.inline
-  def vp8: vp8 = "vp8".asInstanceOf[vp8]
+  def vp8_ : vp8_ = "vp8".asInstanceOf[vp8_]
   @scala.inline
   def wifi: wifi = "wifi".asInstanceOf[wifi]
   @scala.inline

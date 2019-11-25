@@ -28,8 +28,8 @@ object SymbolMap {
     ok: String,
     StringDictionary: /* key */ StringDictionary[String] = null
   ): SymbolMap = {
-    val __obj = js.Dynamic.literal(bang = bang, comma = comma, dot = dot, err = err, ok = ok)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(bang = bang.asInstanceOf[js.Any], comma = comma.asInstanceOf[js.Any], dot = dot.asInstanceOf[js.Any], err = err.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[SymbolMap]
   }
 }

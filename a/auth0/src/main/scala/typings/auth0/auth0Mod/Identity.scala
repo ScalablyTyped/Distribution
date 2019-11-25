@@ -24,9 +24,9 @@ object Identity {
     access_token: String = null,
     profileData: Anon_Email = null
   ): Identity = {
-    val __obj = js.Dynamic.literal(connection = connection, isSocial = isSocial, provider = provider, user_id = user_id)
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
-    if (profileData != null) __obj.updateDynamic("profileData")(profileData)
+    val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], isSocial = isSocial.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any])
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
+    if (profileData != null) __obj.updateDynamic("profileData")(profileData.asInstanceOf[js.Any])
     __obj.asInstanceOf[Identity]
   }
 }

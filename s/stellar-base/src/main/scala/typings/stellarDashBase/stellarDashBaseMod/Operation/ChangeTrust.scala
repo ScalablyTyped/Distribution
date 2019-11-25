@@ -19,9 +19,9 @@ object ChangeTrust {
     `type`: typings.stellarDashBase.stellarDashBaseMod.OperationType.ChangeTrust,
     source: String = null
   ): ChangeTrust = {
-    val __obj = js.Dynamic.literal(limit = limit, line = line)
-    __obj.updateDynamic("type")(`type`)
-    if (source != null) __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeTrust]
   }
 }

@@ -30,7 +30,7 @@ object StorePackageUpdateStatus {
     packageUpdateState: StorePackageUpdateState,
     totalDownloadProgress: Double
   ): StorePackageUpdateStatus = {
-    val __obj = js.Dynamic.literal(packageBytesDownloaded = packageBytesDownloaded, packageDownloadProgress = packageDownloadProgress, packageDownloadSizeInBytes = packageDownloadSizeInBytes, packageFamilyName = packageFamilyName, packageUpdateState = packageUpdateState, totalDownloadProgress = totalDownloadProgress)
+    val __obj = js.Dynamic.literal(packageBytesDownloaded = packageBytesDownloaded.asInstanceOf[js.Any], packageDownloadProgress = packageDownloadProgress.asInstanceOf[js.Any], packageDownloadSizeInBytes = packageDownloadSizeInBytes.asInstanceOf[js.Any], packageFamilyName = packageFamilyName.asInstanceOf[js.Any], packageUpdateState = packageUpdateState.asInstanceOf[js.Any], totalDownloadProgress = totalDownloadProgress.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StorePackageUpdateStatus]
   }

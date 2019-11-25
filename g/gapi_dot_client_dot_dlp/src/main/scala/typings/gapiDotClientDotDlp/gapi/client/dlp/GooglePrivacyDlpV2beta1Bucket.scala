@@ -27,9 +27,9 @@ object GooglePrivacyDlpV2beta1Bucket {
     replacementValue: GooglePrivacyDlpV2beta1Value = null
   ): GooglePrivacyDlpV2beta1Bucket = {
     val __obj = js.Dynamic.literal()
-    if (max != null) __obj.updateDynamic("max")(max)
-    if (min != null) __obj.updateDynamic("min")(min)
-    if (replacementValue != null) __obj.updateDynamic("replacementValue")(replacementValue)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (replacementValue != null) __obj.updateDynamic("replacementValue")(replacementValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1Bucket]
   }
 }

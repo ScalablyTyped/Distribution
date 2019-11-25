@@ -34,10 +34,10 @@ object FancyThumbsOptions {
     parentEl: String = null
   ): FancyThumbsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart)
+    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.asInstanceOf[js.Any])
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnClose)) __obj.updateDynamic("hideOnClose")(hideOnClose)
-    if (parentEl != null) __obj.updateDynamic("parentEl")(parentEl)
+    if (!js.isUndefined(hideOnClose)) __obj.updateDynamic("hideOnClose")(hideOnClose.asInstanceOf[js.Any])
+    if (parentEl != null) __obj.updateDynamic("parentEl")(parentEl.asInstanceOf[js.Any])
     __obj.asInstanceOf[FancyThumbsOptions]
   }
 }

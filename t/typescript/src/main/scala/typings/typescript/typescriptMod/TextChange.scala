@@ -12,7 +12,7 @@ trait TextChange extends js.Object {
 object TextChange {
   @scala.inline
   def apply(newText: String, span: TextSpan): TextChange = {
-    val __obj = js.Dynamic.literal(newText = newText, span = span)
+    val __obj = js.Dynamic.literal(newText = newText.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TextChange]
   }

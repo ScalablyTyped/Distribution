@@ -25,8 +25,8 @@ object ProductVisibility {
   @scala.inline
   def apply(productId: String = null, tracks: js.Array[String] = null): ProductVisibility = {
     val __obj = js.Dynamic.literal()
-    if (productId != null) __obj.updateDynamic("productId")(productId)
-    if (tracks != null) __obj.updateDynamic("tracks")(tracks)
+    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
+    if (tracks != null) __obj.updateDynamic("tracks")(tracks.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductVisibility]
   }
 }

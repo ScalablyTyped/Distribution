@@ -23,8 +23,8 @@ object AudioConfig {
     speakingRate: Int | Double = null,
     volumeGainDb: Int | Double = null
   ): AudioConfig = {
-    val __obj = js.Dynamic.literal(audioEncoding = audioEncoding)
-    if (effectsProfileId != null) __obj.updateDynamic("effectsProfileId")(effectsProfileId)
+    val __obj = js.Dynamic.literal(audioEncoding = audioEncoding.asInstanceOf[js.Any])
+    if (effectsProfileId != null) __obj.updateDynamic("effectsProfileId")(effectsProfileId.asInstanceOf[js.Any])
     if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
     if (sampleRateHertz != null) __obj.updateDynamic("sampleRateHertz")(sampleRateHertz.asInstanceOf[js.Any])
     if (speakingRate != null) __obj.updateDynamic("speakingRate")(speakingRate.asInstanceOf[js.Any])

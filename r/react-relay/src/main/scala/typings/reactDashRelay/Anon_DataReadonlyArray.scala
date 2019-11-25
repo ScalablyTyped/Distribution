@@ -13,7 +13,7 @@ object Anon_DataReadonlyArray {
   @scala.inline
   def apply(` $data`: js.Array[_] = null): Anon_DataReadonlyArray = {
     val __obj = js.Dynamic.literal()
-    if (` $data` != null) __obj.updateDynamic(" $data")(` $data`)
+    if (` $data` != null) __obj.updateDynamic(" $data")(` $data`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DataReadonlyArray]
   }
 }

@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait Alignment extends js.Object
 
+object Alignment {
+  @scala.inline
+  def auto: typings.reactDashVirtualized.reactDashVirtualizedStrings.auto = this.cast("auto")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def center: typings.reactDashVirtualized.reactDashVirtualizedStrings.center = this.cast("center")
+  @scala.inline
+  def end: typings.reactDashVirtualized.reactDashVirtualizedStrings.end = this.cast("end")
+  @scala.inline
+  def start: typings.reactDashVirtualized.reactDashVirtualizedStrings.start = this.cast("start")
+}
+

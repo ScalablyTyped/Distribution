@@ -20,8 +20,8 @@ object OperationHandlerArray {
     apiDoc: typings.openapiDashTypes.openapiDashTypesMod.OpenAPI.Operation = null
   ): OperationHandlerArray = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
-    if (apiDoc != null) __obj.updateDynamic("apiDoc")(apiDoc)
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    if (apiDoc != null) __obj.updateDynamic("apiDoc")(apiDoc.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationHandlerArray]
   }
 }

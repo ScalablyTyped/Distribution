@@ -12,7 +12,7 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(Finger: JQueryFingerOptions): JQueryStatic = {
-    val __obj = js.Dynamic.literal(Finger = Finger)
+    val __obj = js.Dynamic.literal(Finger = Finger.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[JQueryStatic]
   }

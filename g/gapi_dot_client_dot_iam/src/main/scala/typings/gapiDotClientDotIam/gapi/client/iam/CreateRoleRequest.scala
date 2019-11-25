@@ -15,8 +15,8 @@ object CreateRoleRequest {
   @scala.inline
   def apply(role: Role = null, roleId: String = null): CreateRoleRequest = {
     val __obj = js.Dynamic.literal()
-    if (role != null) __obj.updateDynamic("role")(role)
-    if (roleId != null) __obj.updateDynamic("roleId")(roleId)
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (roleId != null) __obj.updateDynamic("roleId")(roleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRoleRequest]
   }
 }

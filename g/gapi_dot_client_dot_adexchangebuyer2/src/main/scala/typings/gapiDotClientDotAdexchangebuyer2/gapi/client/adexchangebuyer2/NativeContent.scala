@@ -51,19 +51,19 @@ object NativeContent {
     videoUrl: String = null
   ): NativeContent = {
     val __obj = js.Dynamic.literal()
-    if (advertiserName != null) __obj.updateDynamic("advertiserName")(advertiserName)
-    if (appIcon != null) __obj.updateDynamic("appIcon")(appIcon)
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (callToAction != null) __obj.updateDynamic("callToAction")(callToAction)
-    if (clickLinkUrl != null) __obj.updateDynamic("clickLinkUrl")(clickLinkUrl)
-    if (clickTrackingUrl != null) __obj.updateDynamic("clickTrackingUrl")(clickTrackingUrl)
-    if (headline != null) __obj.updateDynamic("headline")(headline)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (logo != null) __obj.updateDynamic("logo")(logo)
-    if (priceDisplayText != null) __obj.updateDynamic("priceDisplayText")(priceDisplayText)
+    if (advertiserName != null) __obj.updateDynamic("advertiserName")(advertiserName.asInstanceOf[js.Any])
+    if (appIcon != null) __obj.updateDynamic("appIcon")(appIcon.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (callToAction != null) __obj.updateDynamic("callToAction")(callToAction.asInstanceOf[js.Any])
+    if (clickLinkUrl != null) __obj.updateDynamic("clickLinkUrl")(clickLinkUrl.asInstanceOf[js.Any])
+    if (clickTrackingUrl != null) __obj.updateDynamic("clickTrackingUrl")(clickTrackingUrl.asInstanceOf[js.Any])
+    if (headline != null) __obj.updateDynamic("headline")(headline.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
+    if (priceDisplayText != null) __obj.updateDynamic("priceDisplayText")(priceDisplayText.asInstanceOf[js.Any])
     if (starRating != null) __obj.updateDynamic("starRating")(starRating.asInstanceOf[js.Any])
-    if (storeUrl != null) __obj.updateDynamic("storeUrl")(storeUrl)
-    if (videoUrl != null) __obj.updateDynamic("videoUrl")(videoUrl)
+    if (storeUrl != null) __obj.updateDynamic("storeUrl")(storeUrl.asInstanceOf[js.Any])
+    if (videoUrl != null) __obj.updateDynamic("videoUrl")(videoUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeContent]
   }
 }

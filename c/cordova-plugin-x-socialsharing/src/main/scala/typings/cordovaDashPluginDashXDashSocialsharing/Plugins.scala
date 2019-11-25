@@ -11,7 +11,7 @@ trait Plugins extends js.Object {
 object Plugins {
   @scala.inline
   def apply(socialsharing: SocialSharing): Plugins = {
-    val __obj = js.Dynamic.literal(socialsharing = socialsharing)
+    val __obj = js.Dynamic.literal(socialsharing = socialsharing.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Plugins]
   }

@@ -21,7 +21,7 @@ object CPUInfo {
     numberOfCores: Int | Double = null
   ): CPUInfo = {
     val __obj = js.Dynamic.literal()
-    if (cpuProcessor != null) __obj.updateDynamic("cpuProcessor")(cpuProcessor)
+    if (cpuProcessor != null) __obj.updateDynamic("cpuProcessor")(cpuProcessor.asInstanceOf[js.Any])
     if (cpuSpeedInGhz != null) __obj.updateDynamic("cpuSpeedInGhz")(cpuSpeedInGhz.asInstanceOf[js.Any])
     if (numberOfCores != null) __obj.updateDynamic("numberOfCores")(numberOfCores.asInstanceOf[js.Any])
     __obj.asInstanceOf[CPUInfo]

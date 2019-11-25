@@ -11,7 +11,7 @@ trait threeDSecureOptions extends js.Object {
 object threeDSecureOptions {
   @scala.inline
   def apply(amount: String): threeDSecureOptions = {
-    val __obj = js.Dynamic.literal(amount = amount)
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[threeDSecureOptions]
   }

@@ -1,6 +1,6 @@
 package typings.msDashRestDashAzure.msDashRestDashAzureMod
 
-import typings.msDashRestDashAzure.Fn_CredentialsErrSubscriptions
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +9,23 @@ import scala.scalajs.js.annotation._
 @js.native
 object loginWithAuthFile extends js.Object {
   def apply(): js.Promise[ApplicationTokenCredentials] = js.native
-  def apply(callback: Fn_CredentialsErrSubscriptions): Unit = js.native
+  def apply(
+    callback: js.Function3[
+      /* err */ Error, 
+      /* credentials */ ApplicationTokenCredentials, 
+      /* subscriptions */ js.Array[LinkedSubscription], 
+      Unit
+    ]
+  ): Unit = js.native
   def apply(options: AuthFileOptions): js.Promise[ApplicationTokenCredentials] = js.native
-  def apply(options: AuthFileOptions, callback: Fn_CredentialsErrSubscriptions): Unit = js.native
+  def apply(
+    options: AuthFileOptions,
+    callback: js.Function3[
+      /* err */ Error, 
+      /* credentials */ ApplicationTokenCredentials, 
+      /* subscriptions */ js.Array[LinkedSubscription], 
+      Unit
+    ]
+  ): Unit = js.native
 }
 

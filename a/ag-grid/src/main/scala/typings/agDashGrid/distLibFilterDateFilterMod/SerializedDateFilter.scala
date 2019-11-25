@@ -14,8 +14,8 @@ trait SerializedDateFilter extends SerializedFilter {
 object SerializedDateFilter {
   @scala.inline
   def apply(dateFrom: String, dateTo: String, filterType: String, `type`: String): SerializedDateFilter = {
-    val __obj = js.Dynamic.literal(dateFrom = dateFrom, dateTo = dateTo, filterType = filterType)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(dateFrom = dateFrom.asInstanceOf[js.Any], dateTo = dateTo.asInstanceOf[js.Any], filterType = filterType.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerializedDateFilter]
   }
 }

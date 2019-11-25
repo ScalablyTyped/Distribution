@@ -13,7 +13,7 @@ trait Anon_Context extends js.Object {
 object Anon_Context {
   @scala.inline
   def apply(context: HotspotAuthenticationContext, returnValue: Boolean): Anon_Context = {
-    val __obj = js.Dynamic.literal(context = context, returnValue = returnValue)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Context]
   }

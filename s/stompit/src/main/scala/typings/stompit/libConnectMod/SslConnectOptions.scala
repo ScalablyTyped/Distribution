@@ -10,7 +10,6 @@ import typings.node.tlsMod.PeerCertificate
 import typings.node.tlsMod.SecureContext
 import typings.node.tlsMod.SecureVersion
 import typings.std.Uint8Array
-import typings.stompit.libOutgoingFrameStreamMod.^
 import typings.stompit.libSocketMod.CommandHandlers
 import typings.stompit.libSocketMod.Heartbeat
 import typings.stompit.stompitNumbers.`true`
@@ -54,7 +53,7 @@ object SslConnectOptions {
     maxVersion: SecureVersion = null,
     minDHSize: Int | Double = null,
     minVersion: SecureVersion = null,
-    outgoingFrameStream: ^ = null,
+    outgoingFrameStream: typings.stompit.libOutgoingFrameStreamMod.^ = null,
     passphrase: String = null,
     path: String = null,
     pfx: String | Buffer | (js.Array[String | Buffer | js.Object]) = null,
@@ -72,46 +71,46 @@ object SslConnectOptions {
     timeout: Int | Double = null,
     unknownCommand: () => Unit = null
   ): SslConnectOptions = {
-    val __obj = js.Dynamic.literal(ssl = ssl)
+    val __obj = js.Dynamic.literal(ssl = ssl.asInstanceOf[js.Any])
     if (ALPNProtocols != null) __obj.updateDynamic("ALPNProtocols")(ALPNProtocols.asInstanceOf[js.Any])
     if (SNICallback != null) __obj.updateDynamic("SNICallback")(js.Any.fromFunction2(SNICallback))
     if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
     if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
     if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(js.Any.fromFunction2(checkServerIdentity))
-    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers)
-    if (clientCertEngine != null) __obj.updateDynamic("clientCertEngine")(clientCertEngine)
-    if (commandHandlers != null) __obj.updateDynamic("commandHandlers")(commandHandlers)
+    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers.asInstanceOf[js.Any])
+    if (clientCertEngine != null) __obj.updateDynamic("clientCertEngine")(clientCertEngine.asInstanceOf[js.Any])
+    if (commandHandlers != null) __obj.updateDynamic("commandHandlers")(commandHandlers.asInstanceOf[js.Any])
     if (connect != null) __obj.updateDynamic("connect")(js.Any.fromFunction2(connect))
-    if (connectHeaders != null) __obj.updateDynamic("connectHeaders")(connectHeaders)
+    if (connectHeaders != null) __obj.updateDynamic("connectHeaders")(connectHeaders.asInstanceOf[js.Any])
     if (crl != null) __obj.updateDynamic("crl")(crl.asInstanceOf[js.Any])
     if (dhparam != null) __obj.updateDynamic("dhparam")(dhparam.asInstanceOf[js.Any])
-    if (ecdhCurve != null) __obj.updateDynamic("ecdhCurve")(ecdhCurve)
-    if (!js.isUndefined(enableTrace)) __obj.updateDynamic("enableTrace")(enableTrace)
-    if (heartbeat != null) __obj.updateDynamic("heartbeat")(heartbeat)
+    if (ecdhCurve != null) __obj.updateDynamic("ecdhCurve")(ecdhCurve.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTrace)) __obj.updateDynamic("enableTrace")(enableTrace.asInstanceOf[js.Any])
+    if (heartbeat != null) __obj.updateDynamic("heartbeat")(heartbeat.asInstanceOf[js.Any])
     if (heartbeatDelayMargin != null) __obj.updateDynamic("heartbeatDelayMargin")(heartbeatDelayMargin.asInstanceOf[js.Any])
     if (heartbeatOutputMargin != null) __obj.updateDynamic("heartbeatOutputMargin")(heartbeatOutputMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(honorCipherOrder)) __obj.updateDynamic("honorCipherOrder")(honorCipherOrder)
-    if (host != null) __obj.updateDynamic("host")(host)
+    if (!js.isUndefined(honorCipherOrder)) __obj.updateDynamic("honorCipherOrder")(honorCipherOrder.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (lookup != null) __obj.updateDynamic("lookup")(js.Any.fromFunction3(lookup))
-    if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion)
+    if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion.asInstanceOf[js.Any])
     if (minDHSize != null) __obj.updateDynamic("minDHSize")(minDHSize.asInstanceOf[js.Any])
-    if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion)
-    if (outgoingFrameStream != null) __obj.updateDynamic("outgoingFrameStream")(outgoingFrameStream)
-    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase)
-    if (path != null) __obj.updateDynamic("path")(path)
+    if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion.asInstanceOf[js.Any])
+    if (outgoingFrameStream != null) __obj.updateDynamic("outgoingFrameStream")(outgoingFrameStream.asInstanceOf[js.Any])
+    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
-    if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert)
-    if (!js.isUndefined(resetDisconnect)) __obj.updateDynamic("resetDisconnect")(resetDisconnect)
-    if (secureContext != null) __obj.updateDynamic("secureContext")(secureContext)
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert.asInstanceOf[js.Any])
+    if (!js.isUndefined(resetDisconnect)) __obj.updateDynamic("resetDisconnect")(resetDisconnect.asInstanceOf[js.Any])
+    if (secureContext != null) __obj.updateDynamic("secureContext")(secureContext.asInstanceOf[js.Any])
     if (secureOptions != null) __obj.updateDynamic("secureOptions")(secureOptions.asInstanceOf[js.Any])
-    if (secureProtocol != null) __obj.updateDynamic("secureProtocol")(secureProtocol)
-    if (servername != null) __obj.updateDynamic("servername")(servername)
-    if (session != null) __obj.updateDynamic("session")(session)
-    if (sessionIdContext != null) __obj.updateDynamic("sessionIdContext")(sessionIdContext)
-    if (socket != null) __obj.updateDynamic("socket")(socket)
+    if (secureProtocol != null) __obj.updateDynamic("secureProtocol")(secureProtocol.asInstanceOf[js.Any])
+    if (servername != null) __obj.updateDynamic("servername")(servername.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    if (sessionIdContext != null) __obj.updateDynamic("sessionIdContext")(sessionIdContext.asInstanceOf[js.Any])
+    if (socket != null) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (unknownCommand != null) __obj.updateDynamic("unknownCommand")(js.Any.fromFunction0(unknownCommand))
     __obj.asInstanceOf[SslConnectOptions]

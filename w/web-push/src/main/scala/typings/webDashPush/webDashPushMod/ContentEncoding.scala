@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait ContentEncoding extends js.Object
 
+object ContentEncoding {
+  @scala.inline
+  def aes128gcm: typings.webDashPush.webDashPushStrings.aes128gcm = this.cast("aes128gcm")
+  @scala.inline
+  def aesgcm: typings.webDashPush.webDashPushStrings.aesgcm = this.cast("aesgcm")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

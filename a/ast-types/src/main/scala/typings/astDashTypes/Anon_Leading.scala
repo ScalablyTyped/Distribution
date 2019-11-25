@@ -20,10 +20,10 @@ object Anon_Leading {
     loc: SourceLocationKind = null,
     trailing: js.UndefOr[Boolean] = js.undefined
   ): Anon_Leading = {
-    val __obj = js.Dynamic.literal(value = value)
-    if (!js.isUndefined(leading)) __obj.updateDynamic("leading")(leading)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
-    if (!js.isUndefined(trailing)) __obj.updateDynamic("trailing")(trailing)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    if (!js.isUndefined(leading)) __obj.updateDynamic("leading")(leading.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (!js.isUndefined(trailing)) __obj.updateDynamic("trailing")(trailing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Leading]
   }
 }

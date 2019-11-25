@@ -13,8 +13,8 @@ object Anon_Post {
   @scala.inline
   def apply(post: String = null, redirect: String = null): Anon_Post = {
     val __obj = js.Dynamic.literal()
-    if (post != null) __obj.updateDynamic("post")(post)
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect)
+    if (post != null) __obj.updateDynamic("post")(post.asInstanceOf[js.Any])
+    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Post]
   }
 }

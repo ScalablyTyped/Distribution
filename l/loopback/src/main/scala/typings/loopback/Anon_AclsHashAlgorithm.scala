@@ -15,7 +15,7 @@ trait Anon_AclsHashAlgorithm extends js.Object {
 object Anon_AclsHashAlgorithm {
   @scala.inline
   def apply(acls: js.Array[ACL], hashAlgorithm: String, http: Anon_Path, ignoreErrors: Boolean): Anon_AclsHashAlgorithm = {
-    val __obj = js.Dynamic.literal(acls = acls, hashAlgorithm = hashAlgorithm, http = http, ignoreErrors = ignoreErrors)
+    val __obj = js.Dynamic.literal(acls = acls.asInstanceOf[js.Any], hashAlgorithm = hashAlgorithm.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any], ignoreErrors = ignoreErrors.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AclsHashAlgorithm]
   }

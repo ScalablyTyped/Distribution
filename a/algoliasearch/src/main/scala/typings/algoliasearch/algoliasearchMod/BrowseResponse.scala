@@ -21,8 +21,8 @@ object BrowseResponse {
     query: String,
     cursor: String = null
   ): BrowseResponse = {
-    val __obj = js.Dynamic.literal(hits = hits, params = params, processingTimeMS = processingTimeMS, query = query)
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    val __obj = js.Dynamic.literal(hits = hits.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], processingTimeMS = processingTimeMS.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowseResponse]
   }
 }

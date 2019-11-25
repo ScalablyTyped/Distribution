@@ -44,12 +44,12 @@ object AnimatePropTypeInterface {
     onExit: Anon_Before = null,
     onLoad: Anon_After = null
   ): AnimatePropTypeInterface = {
-    val __obj = js.Dynamic.literal(duration = duration)
-    if (easing != null) __obj.updateDynamic("easing")(easing)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (onEnd != null) __obj.updateDynamic("onEnd")(js.Any.fromFunction0(onEnd))
-    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)
-    if (onExit != null) __obj.updateDynamic("onExit")(onExit)
-    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
+    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
+    if (onExit != null) __obj.updateDynamic("onExit")(onExit.asInstanceOf[js.Any])
+    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimatePropTypeInterface]
   }
 }

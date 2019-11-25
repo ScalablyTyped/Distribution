@@ -13,8 +13,8 @@ object PopupSettings {
   @scala.inline
   def apply(features: String = null, target: String = null): PopupSettings = {
     val __obj = js.Dynamic.literal()
-    if (features != null) __obj.updateDynamic("features")(features)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupSettings]
   }
 }

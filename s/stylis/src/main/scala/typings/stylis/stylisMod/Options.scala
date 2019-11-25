@@ -28,13 +28,13 @@ object Options {
     semicolon: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade)
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
-    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
-    if (!js.isUndefined(keyframe)) __obj.updateDynamic("keyframe")(keyframe)
+    if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade.asInstanceOf[js.Any])
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyframe)) __obj.updateDynamic("keyframe")(keyframe.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserve)) __obj.updateDynamic("preserve")(preserve)
-    if (!js.isUndefined(semicolon)) __obj.updateDynamic("semicolon")(semicolon)
+    if (!js.isUndefined(preserve)) __obj.updateDynamic("preserve")(preserve.asInstanceOf[js.Any])
+    if (!js.isUndefined(semicolon)) __obj.updateDynamic("semicolon")(semicolon.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -13,9 +13,9 @@ trait Descendant extends BinarySelector {
 object Descendant {
   @scala.inline
   def apply(left: Selector, right: Selector, `type`: descendant, subject: js.UndefOr[Boolean] = js.undefined): Descendant = {
-    val __obj = js.Dynamic.literal(left = left, right = right)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[Descendant]
   }
 }

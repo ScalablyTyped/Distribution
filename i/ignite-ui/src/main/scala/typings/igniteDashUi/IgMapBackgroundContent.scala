@@ -58,13 +58,13 @@ object IgMapBackgroundContent {
     `type`: String = null
   ): IgMapBackgroundContent = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (bingUrl != null) __obj.updateDynamic("bingUrl")(bingUrl)
-    if (imagerySet != null) __obj.updateDynamic("imagerySet")(imagerySet)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (parameter != null) __obj.updateDynamic("parameter")(parameter)
-    if (tilePath != null) __obj.updateDynamic("tilePath")(tilePath)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (bingUrl != null) __obj.updateDynamic("bingUrl")(bingUrl.asInstanceOf[js.Any])
+    if (imagerySet != null) __obj.updateDynamic("imagerySet")(imagerySet.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (parameter != null) __obj.updateDynamic("parameter")(parameter.asInstanceOf[js.Any])
+    if (tilePath != null) __obj.updateDynamic("tilePath")(tilePath.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgMapBackgroundContent]
   }
 }

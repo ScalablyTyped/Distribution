@@ -35,10 +35,10 @@ object ReposCreateHookParams {
     events: js.Array[String] = null,
     name: String = null
   ): ReposCreateHookParams = {
-    val __obj = js.Dynamic.literal(config = config, owner = owner, repo = repo)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCreateHookParams]
   }
 }

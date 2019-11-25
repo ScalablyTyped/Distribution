@@ -1,6 +1,5 @@
 package typings.plottable.buildSrcPlotsMod
 
-import typings.plottable.buildSrcPlotsBarPlotMod.BarOrientation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +18,7 @@ import scala.scalajs.js.annotation._
   */
 class StackedBar[X, Y] ()
   extends typings.plottable.buildSrcPlotsStackedBarPlotMod.StackedBar[X, Y] {
-  def this(orientation: BarOrientation) = this()
+  def this(orientation: typings.plottable.buildSrcPlotsBarPlotMod.BarOrientation) = this()
 }
 
 /* static members */

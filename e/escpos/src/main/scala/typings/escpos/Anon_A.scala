@@ -32,7 +32,7 @@ object Anon_A {
     position: OFF | ABV | BLW | BTH,
     width: Double
   ): Anon_A = {
-    val __obj = js.Dynamic.literal(font = font.asInstanceOf[js.Any], height = height, includeParity = includeParity, position = position.asInstanceOf[js.Any], width = width)
+    val __obj = js.Dynamic.literal(font = font.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], includeParity = includeParity.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_A]
   }

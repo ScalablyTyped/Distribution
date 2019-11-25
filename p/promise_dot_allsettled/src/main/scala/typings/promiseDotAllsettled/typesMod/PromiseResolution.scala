@@ -14,7 +14,7 @@ trait PromiseResolution[T]
 object PromiseResolution {
   @scala.inline
   def apply[T](status: fulfilled, value: T): PromiseResolution[T] = {
-    val __obj = js.Dynamic.literal(status = status, value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PromiseResolution[T]]
   }

@@ -29,11 +29,11 @@ object IMapState {
     zoom: Int | Double = null
   ): IMapState = {
     val __obj = js.Dynamic.literal()
-    if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors)
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
-    if (center != null) __obj.updateDynamic("center")(center)
-    if (controls != null) __obj.updateDynamic("controls")(controls)
-    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors.asInstanceOf[js.Any])
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (controls != null) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMapState]

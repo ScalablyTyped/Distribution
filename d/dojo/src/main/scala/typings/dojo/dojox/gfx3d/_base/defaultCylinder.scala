@@ -31,8 +31,8 @@ trait defaultCylinder extends js.Object {
 object defaultCylinder {
   @scala.inline
   def apply(center: Object, height: Double, radius: Double, `type`: String): defaultCylinder = {
-    val __obj = js.Dynamic.literal(center = center, height = height, radius = radius)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[defaultCylinder]
   }
 }

@@ -34,13 +34,13 @@ object StateConfig {
     tree: StateTree = null
   ): StateConfig[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (activities != null) __obj.updateDynamic("activities")(activities)
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (history != null) __obj.updateDynamic("history")(history)
-    if (historyValue != null) __obj.updateDynamic("historyValue")(historyValue)
-    if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (tree != null) __obj.updateDynamic("tree")(tree)
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (activities != null) __obj.updateDynamic("activities")(activities.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
+    if (historyValue != null) __obj.updateDynamic("historyValue")(historyValue.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (tree != null) __obj.updateDynamic("tree")(tree.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateConfig[TContext, TEvent]]
   }
 }

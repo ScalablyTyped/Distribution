@@ -13,8 +13,8 @@ trait CreateAction extends Action {
 object CreateAction {
   @scala.inline
   def apply(id: js.Object, `type`: CREATE): CreateAction = {
-    val __obj = js.Dynamic.literal(id = id)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAction]
   }
 }

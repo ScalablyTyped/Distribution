@@ -21,7 +21,7 @@ object Anon_AddToast {
     removeToast: (/* id */ String, /* callback */ js.Function0[Unit]) => Unit,
     toastStack: js.Array[Anon_Appearance]
   ): Anon_AddToast = {
-    val __obj = js.Dynamic.literal(addToast = js.Any.fromFunction3(addToast), removeToast = js.Any.fromFunction2(removeToast), toastStack = toastStack)
+    val __obj = js.Dynamic.literal(addToast = js.Any.fromFunction3(addToast), removeToast = js.Any.fromFunction2(removeToast), toastStack = toastStack.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AddToast]
   }

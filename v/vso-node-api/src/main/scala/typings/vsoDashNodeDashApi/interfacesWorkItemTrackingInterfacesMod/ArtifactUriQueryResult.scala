@@ -15,7 +15,7 @@ trait ArtifactUriQueryResult extends js.Object {
 object ArtifactUriQueryResult {
   @scala.inline
   def apply(artifactUrisQueryResult: StringDictionary[js.Array[WorkItemReference]]): ArtifactUriQueryResult = {
-    val __obj = js.Dynamic.literal(artifactUrisQueryResult = artifactUrisQueryResult)
+    val __obj = js.Dynamic.literal(artifactUrisQueryResult = artifactUrisQueryResult.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ArtifactUriQueryResult]
   }

@@ -37,11 +37,11 @@ object Anon_408 {
     statusCodes: js.Array[`408` | `413` | `429` | `500` | `502` | `503` | `504`] = null
   ): Anon_408 = {
     val __obj = js.Dynamic.literal()
-    if (errorCodes != null) __obj.updateDynamic("errorCodes")(errorCodes)
+    if (errorCodes != null) __obj.updateDynamic("errorCodes")(errorCodes.asInstanceOf[js.Any])
     if (maxRetryAfter != null) __obj.updateDynamic("maxRetryAfter")(maxRetryAfter.asInstanceOf[js.Any])
-    if (methods != null) __obj.updateDynamic("methods")(methods)
+    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
     if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
-    if (statusCodes != null) __obj.updateDynamic("statusCodes")(statusCodes)
+    if (statusCodes != null) __obj.updateDynamic("statusCodes")(statusCodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_408]
   }
 }

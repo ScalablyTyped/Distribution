@@ -18,7 +18,7 @@ object ThemedComponentProps {
   def apply(innerRef: Ref[_] | RefObject[_] = null, theme: Theme = null): ThemedComponentProps = {
     val __obj = js.Dynamic.literal()
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemedComponentProps]
   }
 }

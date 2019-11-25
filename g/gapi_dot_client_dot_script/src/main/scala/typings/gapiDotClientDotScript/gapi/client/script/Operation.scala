@@ -34,10 +34,10 @@ object Operation {
     response: Record[String, _] = null
   ): Operation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done)
-    if (error != null) __obj.updateDynamic("error")(error)
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (response != null) __obj.updateDynamic("response")(response)
+    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     __obj.asInstanceOf[Operation]
   }
 }

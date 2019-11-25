@@ -17,8 +17,8 @@ object BucketByTime {
   @scala.inline
   def apply(durationMillis: String = null, period: BucketByTimePeriod = null): BucketByTime = {
     val __obj = js.Dynamic.literal()
-    if (durationMillis != null) __obj.updateDynamic("durationMillis")(durationMillis)
-    if (period != null) __obj.updateDynamic("period")(period)
+    if (durationMillis != null) __obj.updateDynamic("durationMillis")(durationMillis.asInstanceOf[js.Any])
+    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketByTime]
   }
 }

@@ -23,7 +23,7 @@ object Anon_InnerRadius {
     thetaSegments: Double,
     thetaStart: Double
   ): Anon_InnerRadius = {
-    val __obj = js.Dynamic.literal(innerRadius = innerRadius, outerRadius = outerRadius, phiSegments = phiSegments, thetaLength = thetaLength, thetaSegments = thetaSegments, thetaStart = thetaStart)
+    val __obj = js.Dynamic.literal(innerRadius = innerRadius.asInstanceOf[js.Any], outerRadius = outerRadius.asInstanceOf[js.Any], phiSegments = phiSegments.asInstanceOf[js.Any], thetaLength = thetaLength.asInstanceOf[js.Any], thetaSegments = thetaSegments.asInstanceOf[js.Any], thetaStart = thetaStart.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_InnerRadius]
   }

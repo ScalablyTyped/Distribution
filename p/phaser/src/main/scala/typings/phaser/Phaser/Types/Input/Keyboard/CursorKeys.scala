@@ -43,12 +43,12 @@ object CursorKeys {
     up: Key = null
   ): CursorKeys = {
     val __obj = js.Dynamic.literal()
-    if (down != null) __obj.updateDynamic("down")(down)
-    if (left != null) __obj.updateDynamic("left")(left)
-    if (right != null) __obj.updateDynamic("right")(right)
-    if (shift != null) __obj.updateDynamic("shift")(shift)
-    if (space != null) __obj.updateDynamic("space")(space)
-    if (up != null) __obj.updateDynamic("up")(up)
+    if (down != null) __obj.updateDynamic("down")(down.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
+    if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
+    if (up != null) __obj.updateDynamic("up")(up.asInstanceOf[js.Any])
     __obj.asInstanceOf[CursorKeys]
   }
 }

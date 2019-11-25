@@ -12,7 +12,7 @@ trait Anon_ForceTimeout extends js.Object {
 object Anon_ForceTimeout {
   @scala.inline
   def apply(force: Boolean, timeout: Double): Anon_ForceTimeout = {
-    val __obj = js.Dynamic.literal(force = force, timeout = timeout)
+    val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ForceTimeout]
   }

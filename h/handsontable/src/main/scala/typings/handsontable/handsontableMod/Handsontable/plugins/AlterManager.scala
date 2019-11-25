@@ -26,7 +26,7 @@ object AlterManager {
     sheet: Sheet,
     triggerAlter: (String, js.Any) => Unit
   ): AlterManager = {
-    val __obj = js.Dynamic.literal(dataProvider = dataProvider, destroy = js.Any.fromFunction0(destroy), hot = hot, matrix = matrix, prepareAlter = js.Any.fromFunction2(prepareAlter), sheet = sheet, triggerAlter = js.Any.fromFunction2(triggerAlter))
+    val __obj = js.Dynamic.literal(dataProvider = dataProvider.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), hot = hot.asInstanceOf[js.Any], matrix = matrix.asInstanceOf[js.Any], prepareAlter = js.Any.fromFunction2(prepareAlter), sheet = sheet.asInstanceOf[js.Any], triggerAlter = js.Any.fromFunction2(triggerAlter))
   
     __obj.asInstanceOf[AlterManager]
   }

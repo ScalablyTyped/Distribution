@@ -20,7 +20,7 @@ object ZonesResource {
     getServerconfig: Anon_AccesstokenAltBearertoken => Request[ServerConfig],
     operations: OperationsResource
   ): ZonesResource = {
-    val __obj = js.Dynamic.literal(clusters = clusters, getServerconfig = js.Any.fromFunction1(getServerconfig), operations = operations)
+    val __obj = js.Dynamic.literal(clusters = clusters.asInstanceOf[js.Any], getServerconfig = js.Any.fromFunction1(getServerconfig), operations = operations.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ZonesResource]
   }

@@ -18,8 +18,8 @@ object OptimisticResponseConfig {
     response: PayloadData = null,
     updater: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit = null
   ): OptimisticResponseConfig = {
-    val __obj = js.Dynamic.literal(operation = operation)
-    if (response != null) __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     if (updater != null) __obj.updateDynamic("updater")(js.Any.fromFunction2(updater))
     __obj.asInstanceOf[OptimisticResponseConfig]
   }

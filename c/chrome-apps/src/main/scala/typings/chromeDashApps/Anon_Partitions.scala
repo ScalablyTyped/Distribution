@@ -13,7 +13,7 @@ trait Anon_Partitions extends js.Object {
 object Anon_Partitions {
   @scala.inline
   def apply(partitions: js.Array[WebViewPartition]): Anon_Partitions = {
-    val __obj = js.Dynamic.literal(partitions = partitions)
+    val __obj = js.Dynamic.literal(partitions = partitions.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Partitions]
   }

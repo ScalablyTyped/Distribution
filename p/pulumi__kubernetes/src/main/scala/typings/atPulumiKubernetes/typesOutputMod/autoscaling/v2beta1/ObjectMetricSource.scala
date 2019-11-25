@@ -44,7 +44,7 @@ object ObjectMetricSource {
     target: CrossVersionObjectReference,
     targetValue: String
   ): ObjectMetricSource = {
-    val __obj = js.Dynamic.literal(averageValue = averageValue, metricName = metricName, selector = selector, target = target, targetValue = targetValue)
+    val __obj = js.Dynamic.literal(averageValue = averageValue.asInstanceOf[js.Any], metricName = metricName.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], targetValue = targetValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ObjectMetricSource]
   }

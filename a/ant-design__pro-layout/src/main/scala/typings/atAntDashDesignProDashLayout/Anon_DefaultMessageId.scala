@@ -12,8 +12,8 @@ trait Anon_DefaultMessageId extends js.Object {
 object Anon_DefaultMessageId {
   @scala.inline
   def apply(id: js.Any, defaultMessage: String = null): Anon_DefaultMessageId = {
-    val __obj = js.Dynamic.literal(id = id)
-    if (defaultMessage != null) __obj.updateDynamic("defaultMessage")(defaultMessage)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (defaultMessage != null) __obj.updateDynamic("defaultMessage")(defaultMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DefaultMessageId]
   }
 }

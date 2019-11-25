@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("transducers-js", "Wrap")
 @js.native
-class Wrap[TResult, TInput] protected () extends Transformer[TResult, TInput] {
+class Wrap[TResult, TInput] protected () extends CompletingTransformer[TResult, TResult, TInput] {
   def this(stepFn: Reducer[TResult, TInput]) = this()
   /* CompleteClass */
   override def `@@transducer/init`(): TResult | Unit = js.native

@@ -21,10 +21,10 @@ object GroupColumnOptions {
     id: String = null,
     label: String = null
   ): GroupColumnOptions = {
-    val __obj = js.Dynamic.literal(aggregation = js.Any.fromFunction1(aggregation), column = column)
-    __obj.updateDynamic("type")(`type`)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (label != null) __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(aggregation = js.Any.fromFunction1(aggregation), column = column.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupColumnOptions]
   }
 }

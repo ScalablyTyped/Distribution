@@ -46,11 +46,11 @@ object SocketOptions {
     sendBufferSize: Int | Double = null
   ): SocketOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(ipv6Only)) __obj.updateDynamic("ipv6Only")(ipv6Only)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(ipv6Only)) __obj.updateDynamic("ipv6Only")(ipv6Only.asInstanceOf[js.Any])
     if (lookup != null) __obj.updateDynamic("lookup")(js.Any.fromFunction3(lookup))
     if (recvBufferSize != null) __obj.updateDynamic("recvBufferSize")(recvBufferSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(reuseAddr)) __obj.updateDynamic("reuseAddr")(reuseAddr)
+    if (!js.isUndefined(reuseAddr)) __obj.updateDynamic("reuseAddr")(reuseAddr.asInstanceOf[js.Any])
     if (sendBufferSize != null) __obj.updateDynamic("sendBufferSize")(sendBufferSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketOptions]
   }

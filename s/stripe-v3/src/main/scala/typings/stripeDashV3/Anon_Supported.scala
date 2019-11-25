@@ -12,7 +12,7 @@ object Anon_Supported {
   @scala.inline
   def apply(supported: js.UndefOr[Boolean] = js.undefined): Anon_Supported = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(supported)) __obj.updateDynamic("supported")(supported)
+    if (!js.isUndefined(supported)) __obj.updateDynamic("supported")(supported.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Supported]
   }
 }

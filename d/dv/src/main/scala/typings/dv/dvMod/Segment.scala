@@ -13,7 +13,7 @@ trait Segment extends js.Object {
 object Segment {
   @scala.inline
   def apply(error: Double, p1: Point, p2: Point): Segment = {
-    val __obj = js.Dynamic.literal(error = error, p1 = p1, p2 = p2)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], p1 = p1.asInstanceOf[js.Any], p2 = p2.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Segment]
   }

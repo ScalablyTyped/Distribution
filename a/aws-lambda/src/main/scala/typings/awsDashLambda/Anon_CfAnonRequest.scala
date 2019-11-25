@@ -12,7 +12,7 @@ trait Anon_CfAnonRequest extends js.Object {
 object Anon_CfAnonRequest {
   @scala.inline
   def apply(cf: CloudFrontEvent with Anon_Request): Anon_CfAnonRequest = {
-    val __obj = js.Dynamic.literal(cf = cf)
+    val __obj = js.Dynamic.literal(cf = cf.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CfAnonRequest]
   }

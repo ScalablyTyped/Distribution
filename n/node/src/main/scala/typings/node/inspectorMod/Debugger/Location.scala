@@ -26,7 +26,7 @@ trait Location extends js.Object {
 object Location {
   @scala.inline
   def apply(lineNumber: Double, scriptId: ScriptId, columnNumber: Int | Double = null): Location = {
-    val __obj = js.Dynamic.literal(lineNumber = lineNumber, scriptId = scriptId)
+    val __obj = js.Dynamic.literal(lineNumber = lineNumber.asInstanceOf[js.Any], scriptId = scriptId.asInstanceOf[js.Any])
     if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[Location]
   }

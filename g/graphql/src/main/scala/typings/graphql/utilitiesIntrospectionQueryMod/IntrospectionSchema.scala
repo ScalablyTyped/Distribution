@@ -22,7 +22,7 @@ object IntrospectionSchema {
     mutationType: Maybe[IntrospectionNamedTypeRef[IntrospectionObjectType]] = null,
     subscriptionType: Maybe[IntrospectionNamedTypeRef[IntrospectionObjectType]] = null
   ): IntrospectionSchema = {
-    val __obj = js.Dynamic.literal(directives = directives, queryType = queryType, types = types)
+    val __obj = js.Dynamic.literal(directives = directives.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
     if (mutationType != null) __obj.updateDynamic("mutationType")(mutationType.asInstanceOf[js.Any])
     if (subscriptionType != null) __obj.updateDynamic("subscriptionType")(subscriptionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionSchema]

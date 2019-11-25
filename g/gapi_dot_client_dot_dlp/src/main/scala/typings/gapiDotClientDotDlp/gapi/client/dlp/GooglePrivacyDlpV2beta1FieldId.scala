@@ -13,7 +13,7 @@ object GooglePrivacyDlpV2beta1FieldId {
   @scala.inline
   def apply(columnName: String = null): GooglePrivacyDlpV2beta1FieldId = {
     val __obj = js.Dynamic.literal()
-    if (columnName != null) __obj.updateDynamic("columnName")(columnName)
+    if (columnName != null) __obj.updateDynamic("columnName")(columnName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1FieldId]
   }
 }

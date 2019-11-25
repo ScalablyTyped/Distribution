@@ -29,12 +29,12 @@ object LegacyToolbarButtonDescriptor {
     iconUrl: String = null,
     keyboardShortcutHandle: KeyboardShortcutHandle = null
   ): LegacyToolbarButtonDescriptor = {
-    val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick), section = section, title = title)
-    if (!js.isUndefined(hasDropdown)) __obj.updateDynamic("hasDropdown")(hasDropdown)
+    val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick), section = section.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasDropdown)) __obj.updateDynamic("hasDropdown")(hasDropdown.asInstanceOf[js.Any])
     if (hideFor != null) __obj.updateDynamic("hideFor")(js.Any.fromFunction1(hideFor))
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
-    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
-    if (keyboardShortcutHandle != null) __obj.updateDynamic("keyboardShortcutHandle")(keyboardShortcutHandle)
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
+    if (keyboardShortcutHandle != null) __obj.updateDynamic("keyboardShortcutHandle")(keyboardShortcutHandle.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegacyToolbarButtonDescriptor]
   }
 }

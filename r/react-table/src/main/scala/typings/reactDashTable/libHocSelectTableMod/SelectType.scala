@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait SelectType extends js.Object
 
+object SelectType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def checkbox: typings.reactDashTable.reactDashTableStrings.checkbox = this.cast("checkbox")
+  @scala.inline
+  def radio: typings.reactDashTable.reactDashTableStrings.radio = this.cast("radio")
+}
+

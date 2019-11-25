@@ -19,8 +19,8 @@ object Versions {
   @scala.inline
   def apply(chrome: String = null, electron: String = null): Versions = {
     val __obj = js.Dynamic.literal()
-    if (chrome != null) __obj.updateDynamic("chrome")(chrome)
-    if (electron != null) __obj.updateDynamic("electron")(electron)
+    if (chrome != null) __obj.updateDynamic("chrome")(chrome.asInstanceOf[js.Any])
+    if (electron != null) __obj.updateDynamic("electron")(electron.asInstanceOf[js.Any])
     __obj.asInstanceOf[Versions]
   }
 }

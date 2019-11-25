@@ -11,7 +11,7 @@ trait Anon_Utf8 extends js.Object {
 object Anon_Utf8 {
   @scala.inline
   def apply(utf8: String): Anon_Utf8 = {
-    val __obj = js.Dynamic.literal(utf8 = utf8)
+    val __obj = js.Dynamic.literal(utf8 = utf8.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Utf8]
   }

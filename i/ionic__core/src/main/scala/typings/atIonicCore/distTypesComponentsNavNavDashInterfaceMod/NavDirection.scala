@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait NavDirection extends js.Object
 
+object NavDirection {
+  @scala.inline
+  def back: typings.atIonicCore.atIonicCoreStrings.back = this.cast("back")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def forward: typings.atIonicCore.atIonicCoreStrings.forward = this.cast("forward")
+}
+

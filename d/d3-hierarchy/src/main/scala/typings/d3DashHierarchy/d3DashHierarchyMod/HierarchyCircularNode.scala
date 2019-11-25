@@ -33,7 +33,7 @@ object HierarchyCircularNode {
     eachBefore: js.Function1[HierarchyCircularNode[Datum], Unit] => HierarchyCircularNode[Datum],
     height: Double,
     leaves: () => js.Array[HierarchyCircularNode[Datum]],
-    links: () => js.Array[HierarchyCircularLink[Datum]],
+    links: () => js.Array[HierarchyLink[Datum]],
     path: HierarchyCircularNode[Datum] => js.Array[HierarchyCircularNode[Datum]],
     r: Double,
     sort: js.Function2[HierarchyCircularNode[Datum], HierarchyCircularNode[Datum], Double] => HierarchyCircularNode[Datum],
@@ -45,10 +45,10 @@ object HierarchyCircularNode {
     parent: HierarchyCircularNode[Datum] = null,
     value: Int | Double = null
   ): HierarchyCircularNode[Datum] = {
-    val __obj = js.Dynamic.literal(ancestors = js.Any.fromFunction0(ancestors), copy = js.Any.fromFunction0(copy), count = js.Any.fromFunction0(count), data = data.asInstanceOf[js.Any], depth = depth, descendants = js.Any.fromFunction0(descendants), each = js.Any.fromFunction1(each), eachAfter = js.Any.fromFunction1(eachAfter), eachBefore = js.Any.fromFunction1(eachBefore), height = height, leaves = js.Any.fromFunction0(leaves), links = js.Any.fromFunction0(links), path = js.Any.fromFunction1(path), r = r, sort = js.Any.fromFunction1(sort), sum = js.Any.fromFunction1(sum), x = x, y = y)
-    if (children != null) __obj.updateDynamic("children")(children)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(ancestors = js.Any.fromFunction0(ancestors), copy = js.Any.fromFunction0(copy), count = js.Any.fromFunction0(count), data = data.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], descendants = js.Any.fromFunction0(descendants), each = js.Any.fromFunction1(each), eachAfter = js.Any.fromFunction1(eachAfter), eachBefore = js.Any.fromFunction1(eachBefore), height = height.asInstanceOf[js.Any], leaves = js.Any.fromFunction0(leaves), links = js.Any.fromFunction0(links), path = js.Any.fromFunction1(path), r = r.asInstanceOf[js.Any], sort = js.Any.fromFunction1(sort), sum = js.Any.fromFunction1(sum), x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[HierarchyCircularNode[Datum]]
   }

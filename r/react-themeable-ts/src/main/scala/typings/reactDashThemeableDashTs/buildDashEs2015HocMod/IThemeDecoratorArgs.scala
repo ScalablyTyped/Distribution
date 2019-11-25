@@ -21,9 +21,9 @@ object IThemeDecoratorArgs {
   ): IThemeDecoratorArgs = {
     val __obj = js.Dynamic.literal()
     if (contextPath != null) __obj.updateDynamic("contextPath")(contextPath.asInstanceOf[js.Any])
-    if (memoizeeOpts != null) __obj.updateDynamic("memoizeeOpts")(memoizeeOpts)
-    if (themeKey != null) __obj.updateDynamic("themeKey")(themeKey)
-    if (themeProp != null) __obj.updateDynamic("themeProp")(themeProp)
+    if (memoizeeOpts != null) __obj.updateDynamic("memoizeeOpts")(memoizeeOpts.asInstanceOf[js.Any])
+    if (themeKey != null) __obj.updateDynamic("themeKey")(themeKey.asInstanceOf[js.Any])
+    if (themeProp != null) __obj.updateDynamic("themeProp")(themeProp.asInstanceOf[js.Any])
     __obj.asInstanceOf[IThemeDecoratorArgs]
   }
 }

@@ -121,8 +121,8 @@ object IFile {
     updated_time: String,
     upload_location: String
   ): IFile = {
-    val __obj = js.Dynamic.literal(client_updated_time = client_updated_time, comments_count = comments_count, comments_enabled = comments_enabled, created_time = created_time, description = description, from = from, id = id, is_embeddable = is_embeddable, link = link, name = name, parent_id = parent_id, shared_with = shared_with, size = size, sort_by = sort_by, source = source, updated_time = updated_time, upload_location = upload_location)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(client_updated_time = client_updated_time.asInstanceOf[js.Any], comments_count = comments_count.asInstanceOf[js.Any], comments_enabled = comments_enabled.asInstanceOf[js.Any], created_time = created_time.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_embeddable = is_embeddable.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent_id = parent_id.asInstanceOf[js.Any], shared_with = shared_with.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], sort_by = sort_by.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], updated_time = updated_time.asInstanceOf[js.Any], upload_location = upload_location.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFile]
   }
 }

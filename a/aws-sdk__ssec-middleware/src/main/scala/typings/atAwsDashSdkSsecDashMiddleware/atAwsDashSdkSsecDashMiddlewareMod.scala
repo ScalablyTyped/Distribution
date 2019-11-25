@@ -26,7 +26,7 @@ object atAwsDashSdkSsecDashMiddlewareMod extends js.Object {
   }
   
   def ssecMiddleware[Input /* <: js.Object */](hasUtf8DecoderBase64EncoderHashConstructorSsecProperties: SsecMiddlewareConfiguration[Input]): Middleware[Input, _] = js.native
-  type SsecPropertiesConfiguration[Input /* <: js.Object */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type SsecPropertiesConfiguration[Input /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ sourceProperty in keyof Input ]:? {  targetProperty  :string,   hashTargetProperty  :string}}
     */ typings.atAwsDashSdkSsecDashMiddleware.atAwsDashSdkSsecDashMiddlewareStrings.SsecPropertiesConfiguration with js.Any
 }

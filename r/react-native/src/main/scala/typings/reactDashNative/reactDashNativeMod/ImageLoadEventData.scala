@@ -12,8 +12,8 @@ trait ImageLoadEventData extends ImageLoadEventDataAndroid {
 object ImageLoadEventData {
   @scala.inline
   def apply(source: Anon_HeightUrl, uri: String = null): ImageLoadEventData = {
-    val __obj = js.Dynamic.literal(source = source)
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageLoadEventData]
   }
 }

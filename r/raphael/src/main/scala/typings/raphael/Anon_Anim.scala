@@ -12,7 +12,7 @@ trait Anon_Anim extends js.Object {
 object Anon_Anim {
   @scala.inline
   def apply(anim: RaphaelAnimation, status: Double): Anon_Anim = {
-    val __obj = js.Dynamic.literal(anim = anim, status = status)
+    val __obj = js.Dynamic.literal(anim = anim.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Anim]
   }

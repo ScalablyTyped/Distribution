@@ -12,7 +12,7 @@ trait Anon_Npapi extends js.Object {
 object Anon_Npapi {
   @scala.inline
   def apply(npapi: Boolean): Anon_Npapi = {
-    val __obj = js.Dynamic.literal(npapi = npapi)
+    val __obj = js.Dynamic.literal(npapi = npapi.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Npapi]
   }

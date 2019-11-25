@@ -31,7 +31,7 @@ object GPGPUBinary {
     uniformLocations: StringDictionary[WebGLUniformLocation],
     webGLProgram: WebGLProgram
   ): GPGPUBinary = {
-    val __obj = js.Dynamic.literal(inShapeInfos = inShapeInfos, infLoc = infLoc, nanLoc = nanLoc, outShapeInfo = outShapeInfo, program = program, source = source, uniformLocations = uniformLocations, webGLProgram = webGLProgram)
+    val __obj = js.Dynamic.literal(inShapeInfos = inShapeInfos.asInstanceOf[js.Any], infLoc = infLoc.asInstanceOf[js.Any], nanLoc = nanLoc.asInstanceOf[js.Any], outShapeInfo = outShapeInfo.asInstanceOf[js.Any], program = program.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], uniformLocations = uniformLocations.asInstanceOf[js.Any], webGLProgram = webGLProgram.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GPGPUBinary]
   }

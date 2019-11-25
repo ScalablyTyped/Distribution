@@ -27,10 +27,10 @@ object SafeSearchAnnotation {
   @scala.inline
   def apply(adult: String = null, medical: String = null, spoof: String = null, violence: String = null): SafeSearchAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (adult != null) __obj.updateDynamic("adult")(adult)
-    if (medical != null) __obj.updateDynamic("medical")(medical)
-    if (spoof != null) __obj.updateDynamic("spoof")(spoof)
-    if (violence != null) __obj.updateDynamic("violence")(violence)
+    if (adult != null) __obj.updateDynamic("adult")(adult.asInstanceOf[js.Any])
+    if (medical != null) __obj.updateDynamic("medical")(medical.asInstanceOf[js.Any])
+    if (spoof != null) __obj.updateDynamic("spoof")(spoof.asInstanceOf[js.Any])
+    if (violence != null) __obj.updateDynamic("violence")(violence.asInstanceOf[js.Any])
     __obj.asInstanceOf[SafeSearchAnnotation]
   }
 }

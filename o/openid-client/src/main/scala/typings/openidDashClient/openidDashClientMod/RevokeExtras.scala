@@ -20,8 +20,8 @@ object RevokeExtras {
   @scala.inline
   def apply(clientAssertionPayload: js.Object = null, revokeBody: js.Object = null): RevokeExtras = {
     val __obj = js.Dynamic.literal()
-    if (clientAssertionPayload != null) __obj.updateDynamic("clientAssertionPayload")(clientAssertionPayload)
-    if (revokeBody != null) __obj.updateDynamic("revokeBody")(revokeBody)
+    if (clientAssertionPayload != null) __obj.updateDynamic("clientAssertionPayload")(clientAssertionPayload.asInstanceOf[js.Any])
+    if (revokeBody != null) __obj.updateDynamic("revokeBody")(revokeBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevokeExtras]
   }
 }

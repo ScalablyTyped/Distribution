@@ -22,11 +22,11 @@ object Options {
     maxAttempts: Int | Double = null,
     options: CommonOptions with WatchOptions = null
   ): Options = {
-    val __obj = js.Dynamic.literal(method = method)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
     if (backoffFactor != null) __obj.updateDynamic("backoffFactor")(backoffFactor.asInstanceOf[js.Any])
     if (backoffMax != null) __obj.updateDynamic("backoffMax")(backoffMax.asInstanceOf[js.Any])
     if (maxAttempts != null) __obj.updateDynamic("maxAttempts")(maxAttempts.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

@@ -18,9 +18,9 @@ object CredentialRequestOptions {
     signal: AbortSignal = null
   ): CredentialRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (mediation != null) __obj.updateDynamic("mediation")(mediation)
-    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey)
-    if (signal != null) __obj.updateDynamic("signal")(signal)
+    if (mediation != null) __obj.updateDynamic("mediation")(mediation.asInstanceOf[js.Any])
+    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     __obj.asInstanceOf[CredentialRequestOptions]
   }
 }

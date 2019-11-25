@@ -31,7 +31,7 @@ object TypeofTabController {
       TabButton
     ]
   ): TypeofTabController = {
-    val __obj = js.Dynamic.literal(TabButton = TabButton)
+    val __obj = js.Dynamic.literal(TabButton = TabButton.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofTabController]
   }

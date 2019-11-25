@@ -14,8 +14,8 @@ object Anon_IssuerCertificate {
   @scala.inline
   def apply(issuerCertificate: default = null, publicKeyInfo: typings.pkijs.srcPublicKeyInfoMod.default = null): Anon_IssuerCertificate = {
     val __obj = js.Dynamic.literal()
-    if (issuerCertificate != null) __obj.updateDynamic("issuerCertificate")(issuerCertificate)
-    if (publicKeyInfo != null) __obj.updateDynamic("publicKeyInfo")(publicKeyInfo)
+    if (issuerCertificate != null) __obj.updateDynamic("issuerCertificate")(issuerCertificate.asInstanceOf[js.Any])
+    if (publicKeyInfo != null) __obj.updateDynamic("publicKeyInfo")(publicKeyInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IssuerCertificate]
   }
 }

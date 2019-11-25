@@ -23,9 +23,9 @@ object ContextMenuSettingsSubContextMenu {
   @scala.inline
   def apply(contextMenuItem: String = null, subMenu: js.Array[_] = null, template: String = null): ContextMenuSettingsSubContextMenu = {
     val __obj = js.Dynamic.literal()
-    if (contextMenuItem != null) __obj.updateDynamic("contextMenuItem")(contextMenuItem)
-    if (subMenu != null) __obj.updateDynamic("subMenu")(subMenu)
-    if (template != null) __obj.updateDynamic("template")(template)
+    if (contextMenuItem != null) __obj.updateDynamic("contextMenuItem")(contextMenuItem.asInstanceOf[js.Any])
+    if (subMenu != null) __obj.updateDynamic("subMenu")(subMenu.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuSettingsSubContextMenu]
   }
 }

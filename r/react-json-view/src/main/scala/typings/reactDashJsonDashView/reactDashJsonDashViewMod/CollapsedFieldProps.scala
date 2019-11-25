@@ -28,9 +28,9 @@ trait CollapsedFieldProps extends js.Object {
 object CollapsedFieldProps {
   @scala.inline
   def apply(namespace: js.Array[String | Null], src: js.Object, `type`: array | `object`, name: String = null): CollapsedFieldProps = {
-    val __obj = js.Dynamic.literal(namespace = namespace, src = src)
+    val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollapsedFieldProps]
   }
 }

@@ -122,7 +122,7 @@ object ISettings {
     validate: String => js.Array[IError] | Null,
     version: String
   ): ISettings = {
-    val __obj = js.Dynamic.literal(annotatedDefaults = js.Any.fromFunction0(annotatedDefaults), changed = changed, composite = composite, default = js.Any.fromFunction1(default), dispose = js.Any.fromFunction0(dispose), get = js.Any.fromFunction1(get), id = id, isDisposed = isDisposed, plugin = plugin, raw = raw, remove = js.Any.fromFunction1(remove), save = js.Any.fromFunction1(save), schema = schema, set = js.Any.fromFunction2(set), user = user, validate = js.Any.fromFunction1(validate), version = version)
+    val __obj = js.Dynamic.literal(annotatedDefaults = js.Any.fromFunction0(annotatedDefaults), changed = changed.asInstanceOf[js.Any], composite = composite.asInstanceOf[js.Any], default = js.Any.fromFunction1(default), dispose = js.Any.fromFunction0(dispose), get = js.Any.fromFunction1(get), id = id.asInstanceOf[js.Any], isDisposed = isDisposed.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove), save = js.Any.fromFunction1(save), schema = schema.asInstanceOf[js.Any], set = js.Any.fromFunction2(set), user = user.asInstanceOf[js.Any], validate = js.Any.fromFunction1(validate), version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ISettings]
   }

@@ -13,7 +13,7 @@ trait BestMatch extends js.Object {
 object BestMatch {
   @scala.inline
   def apply(bestMatch: Rating, bestMatchIndex: Double, ratings: js.Array[Rating]): BestMatch = {
-    val __obj = js.Dynamic.literal(bestMatch = bestMatch, bestMatchIndex = bestMatchIndex, ratings = ratings)
+    val __obj = js.Dynamic.literal(bestMatch = bestMatch.asInstanceOf[js.Any], bestMatchIndex = bestMatchIndex.asInstanceOf[js.Any], ratings = ratings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BestMatch]
   }

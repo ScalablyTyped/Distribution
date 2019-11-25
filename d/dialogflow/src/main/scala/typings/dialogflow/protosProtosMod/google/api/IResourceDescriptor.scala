@@ -26,10 +26,10 @@ object IResourceDescriptor {
     `type`: String = null
   ): IResourceDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (history != null) __obj.updateDynamic("history")(history)
-    if (nameField != null) __obj.updateDynamic("nameField")(nameField)
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
+    if (nameField != null) __obj.updateDynamic("nameField")(nameField.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResourceDescriptor]
   }
 }

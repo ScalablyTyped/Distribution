@@ -10,7 +10,7 @@ package object atReduxDashSagaTypesTypesMod {
   import typings.std.IterableIterator
 
   type ActionMatchingPattern[P /* <: ActionPattern[Action[_]] */] = ActionMatchingSubPattern[
-    (/* import warning: ImportType.apply Failed type conversion: P[number] */ js.Any) | P
+    (/* import warning: importer.ImportType#apply Failed type conversion: P[number] */ js.Any) | P
   ]
   type ActionMatchingSubPattern[P /* <: ActionSubPattern[Action[_]] */] = Action[js.Any]
   type ActionPattern[Guard /* <: Action[_] */] = ActionSubPattern[Guard] | js.Array[ActionSubPattern[Guard]]

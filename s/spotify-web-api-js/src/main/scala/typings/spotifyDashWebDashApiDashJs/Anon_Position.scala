@@ -14,7 +14,7 @@ object Anon_Position {
   def apply(position: Int | Double = null, uri: String = null): Anon_Position = {
     val __obj = js.Dynamic.literal()
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Position]
   }
 }

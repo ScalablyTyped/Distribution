@@ -1,7 +1,6 @@
 package typings.uiDashGrid.uiDashGridMod.exporter
 
 import typings.angular.angularMod.IPromise
-import typings.uiDashGrid.Fn_CurrentPage
 import typings.uiDashGrid.uiDashGridMod.IGridColumnOf
 import typings.uiDashGrid.uiDashGridMod.IGridInstanceOf
 import typings.uiDashGrid.uiDashGridMod.IGridRowOf
@@ -138,13 +137,17 @@ trait IGridOptions[TEntity] extends js.Object {
     * can be a function, allowing page numbers and the like
     * @todo replace any with pdfmake format
     */
-  var exporterPdfFooter: js.UndefOr[String | js.Any | Fn_CurrentPage] = js.undefined
+  var exporterPdfFooter: js.UndefOr[
+    String | js.Any | (js.Function2[/* currentPage */ Double, /* pageCount */ Double, String])
+  ] = js.undefined
   /**
     * The header section for pdf exports. Can be simple text, a more complex object in pdfMake format, or it
     * can be a function, allowing page numbers and the like
     * @todo replace any with pdfmake format
     */
-  var exporterPdfHeader: js.UndefOr[String | js.Any | Fn_CurrentPage] = js.undefined
+  var exporterPdfHeader: js.UndefOr[
+    String | js.Any | (js.Function2[/* currentPage */ Double, /* pageCount */ Double, String])
+  ] = js.undefined
   /**
     * The maxium grid width - the current grid width will be scaled to match this,
     * with any fixed width columns being adjusted accordingly.
@@ -222,8 +225,8 @@ object IGridOptions {
     exporterPdfCustomFormatter: /* docDefinition */ js.Any => _ = null,
     exporterPdfDefaultStyle: js.Any = null,
     exporterPdfFilename: String = null,
-    exporterPdfFooter: String | js.Any | Fn_CurrentPage = null,
-    exporterPdfHeader: String | js.Any | Fn_CurrentPage = null,
+    exporterPdfFooter: String | js.Any | (js.Function2[/* currentPage */ Double, /* pageCount */ Double, String]) = null,
+    exporterPdfHeader: String | js.Any | (js.Function2[/* currentPage */ Double, /* pageCount */ Double, String]) = null,
     exporterPdfMaxGridWidth: Int | Double = null,
     exporterPdfOrientation: String = null,
     exporterPdfPageSize: String = null,
@@ -236,30 +239,30 @@ object IGridOptions {
     val __obj = js.Dynamic.literal()
     if (exporterAllDataFn != null) __obj.updateDynamic("exporterAllDataFn")(js.Any.fromFunction0(exporterAllDataFn))
     if (exporterAllDataPromise != null) __obj.updateDynamic("exporterAllDataPromise")(js.Any.fromFunction0(exporterAllDataPromise))
-    if (exporterCsvColumnSeparator != null) __obj.updateDynamic("exporterCsvColumnSeparator")(exporterCsvColumnSeparator)
-    if (exporterCsvFilename != null) __obj.updateDynamic("exporterCsvFilename")(exporterCsvFilename)
+    if (exporterCsvColumnSeparator != null) __obj.updateDynamic("exporterCsvColumnSeparator")(exporterCsvColumnSeparator.asInstanceOf[js.Any])
+    if (exporterCsvFilename != null) __obj.updateDynamic("exporterCsvFilename")(exporterCsvFilename.asInstanceOf[js.Any])
     if (exporterFieldCallback != null) __obj.updateDynamic("exporterFieldCallback")(js.Any.fromFunction4(exporterFieldCallback))
     if (exporterHeaderFilter != null) __obj.updateDynamic("exporterHeaderFilter")(js.Any.fromFunction1(exporterHeaderFilter))
-    if (!js.isUndefined(exporterHeaderFilterUseName)) __obj.updateDynamic("exporterHeaderFilterUseName")(exporterHeaderFilterUseName)
-    if (!js.isUndefined(exporterMenuCsv)) __obj.updateDynamic("exporterMenuCsv")(exporterMenuCsv)
-    if (!js.isUndefined(exporterMenuExcel)) __obj.updateDynamic("exporterMenuExcel")(exporterMenuExcel)
+    if (!js.isUndefined(exporterHeaderFilterUseName)) __obj.updateDynamic("exporterHeaderFilterUseName")(exporterHeaderFilterUseName.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterMenuCsv)) __obj.updateDynamic("exporterMenuCsv")(exporterMenuCsv.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterMenuExcel)) __obj.updateDynamic("exporterMenuExcel")(exporterMenuExcel.asInstanceOf[js.Any])
     if (exporterMenuItemOrder != null) __obj.updateDynamic("exporterMenuItemOrder")(exporterMenuItemOrder.asInstanceOf[js.Any])
-    if (exporterMenuLabel != null) __obj.updateDynamic("exporterMenuLabel")(exporterMenuLabel)
-    if (!js.isUndefined(exporterMenuPdf)) __obj.updateDynamic("exporterMenuPdf")(exporterMenuPdf)
-    if (!js.isUndefined(exporterOlderExcelCompatibility)) __obj.updateDynamic("exporterOlderExcelCompatibility")(exporterOlderExcelCompatibility)
+    if (exporterMenuLabel != null) __obj.updateDynamic("exporterMenuLabel")(exporterMenuLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterMenuPdf)) __obj.updateDynamic("exporterMenuPdf")(exporterMenuPdf.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterOlderExcelCompatibility)) __obj.updateDynamic("exporterOlderExcelCompatibility")(exporterOlderExcelCompatibility.asInstanceOf[js.Any])
     if (exporterPdfCustomFormatter != null) __obj.updateDynamic("exporterPdfCustomFormatter")(js.Any.fromFunction1(exporterPdfCustomFormatter))
-    if (exporterPdfDefaultStyle != null) __obj.updateDynamic("exporterPdfDefaultStyle")(exporterPdfDefaultStyle)
-    if (exporterPdfFilename != null) __obj.updateDynamic("exporterPdfFilename")(exporterPdfFilename)
+    if (exporterPdfDefaultStyle != null) __obj.updateDynamic("exporterPdfDefaultStyle")(exporterPdfDefaultStyle.asInstanceOf[js.Any])
+    if (exporterPdfFilename != null) __obj.updateDynamic("exporterPdfFilename")(exporterPdfFilename.asInstanceOf[js.Any])
     if (exporterPdfFooter != null) __obj.updateDynamic("exporterPdfFooter")(exporterPdfFooter.asInstanceOf[js.Any])
     if (exporterPdfHeader != null) __obj.updateDynamic("exporterPdfHeader")(exporterPdfHeader.asInstanceOf[js.Any])
     if (exporterPdfMaxGridWidth != null) __obj.updateDynamic("exporterPdfMaxGridWidth")(exporterPdfMaxGridWidth.asInstanceOf[js.Any])
-    if (exporterPdfOrientation != null) __obj.updateDynamic("exporterPdfOrientation")(exporterPdfOrientation)
-    if (exporterPdfPageSize != null) __obj.updateDynamic("exporterPdfPageSize")(exporterPdfPageSize)
-    if (exporterPdfTableHeaderStyle != null) __obj.updateDynamic("exporterPdfTableHeaderStyle")(exporterPdfTableHeaderStyle)
-    if (exporterPdfTableLayout != null) __obj.updateDynamic("exporterPdfTableLayout")(exporterPdfTableLayout)
-    if (exporterPdfTableStyle != null) __obj.updateDynamic("exporterPdfTableStyle")(exporterPdfTableStyle)
-    if (exporterSuppressColumns != null) __obj.updateDynamic("exporterSuppressColumns")(exporterSuppressColumns)
-    if (!js.isUndefined(exporterSuppressMenu)) __obj.updateDynamic("exporterSuppressMenu")(exporterSuppressMenu)
+    if (exporterPdfOrientation != null) __obj.updateDynamic("exporterPdfOrientation")(exporterPdfOrientation.asInstanceOf[js.Any])
+    if (exporterPdfPageSize != null) __obj.updateDynamic("exporterPdfPageSize")(exporterPdfPageSize.asInstanceOf[js.Any])
+    if (exporterPdfTableHeaderStyle != null) __obj.updateDynamic("exporterPdfTableHeaderStyle")(exporterPdfTableHeaderStyle.asInstanceOf[js.Any])
+    if (exporterPdfTableLayout != null) __obj.updateDynamic("exporterPdfTableLayout")(exporterPdfTableLayout.asInstanceOf[js.Any])
+    if (exporterPdfTableStyle != null) __obj.updateDynamic("exporterPdfTableStyle")(exporterPdfTableStyle.asInstanceOf[js.Any])
+    if (exporterSuppressColumns != null) __obj.updateDynamic("exporterSuppressColumns")(exporterSuppressColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(exporterSuppressMenu)) __obj.updateDynamic("exporterSuppressMenu")(exporterSuppressMenu.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGridOptions[TEntity]]
   }
 }

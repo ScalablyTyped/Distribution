@@ -55,7 +55,7 @@ object IBuffer {
     length: Double,
     viewportY: Double
   ): IBuffer = {
-    val __obj = js.Dynamic.literal(baseY = baseY, cursorX = cursorX, cursorY = cursorY, getLine = js.Any.fromFunction1(getLine), length = length, viewportY = viewportY)
+    val __obj = js.Dynamic.literal(baseY = baseY.asInstanceOf[js.Any], cursorX = cursorX.asInstanceOf[js.Any], cursorY = cursorY.asInstanceOf[js.Any], getLine = js.Any.fromFunction1(getLine), length = length.asInstanceOf[js.Any], viewportY = viewportY.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IBuffer]
   }

@@ -31,8 +31,8 @@ trait Failed extends VoxImplantCallEvent {
 object Failed {
   @scala.inline
   def apply(call: Call, code: Double, reason: String, headers: js.Object = null): Failed = {
-    val __obj = js.Dynamic.literal(call = call, code = code, reason = reason)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Failed]
   }
 }

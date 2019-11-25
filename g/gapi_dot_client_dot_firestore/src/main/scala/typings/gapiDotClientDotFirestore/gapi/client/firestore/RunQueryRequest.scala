@@ -32,10 +32,10 @@ object RunQueryRequest {
     transaction: String = null
   ): RunQueryRequest = {
     val __obj = js.Dynamic.literal()
-    if (newTransaction != null) __obj.updateDynamic("newTransaction")(newTransaction)
-    if (readTime != null) __obj.updateDynamic("readTime")(readTime)
-    if (structuredQuery != null) __obj.updateDynamic("structuredQuery")(structuredQuery)
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    if (newTransaction != null) __obj.updateDynamic("newTransaction")(newTransaction.asInstanceOf[js.Any])
+    if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
+    if (structuredQuery != null) __obj.updateDynamic("structuredQuery")(structuredQuery.asInstanceOf[js.Any])
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunQueryRequest]
   }
 }

@@ -26,13 +26,13 @@ object TokenOptions {
     sub: String = null
   ): TokenOptions = {
     val __obj = js.Dynamic.literal()
-    if (additionalClaims != null) __obj.updateDynamic("additionalClaims")(additionalClaims)
-    if (email != null) __obj.updateDynamic("email")(email)
-    if (iss != null) __obj.updateDynamic("iss")(iss)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (keyFile != null) __obj.updateDynamic("keyFile")(keyFile)
+    if (additionalClaims != null) __obj.updateDynamic("additionalClaims")(additionalClaims.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (iss != null) __obj.updateDynamic("iss")(iss.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (keyFile != null) __obj.updateDynamic("keyFile")(keyFile.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (sub != null) __obj.updateDynamic("sub")(sub)
+    if (sub != null) __obj.updateDynamic("sub")(sub.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenOptions]
   }
 }

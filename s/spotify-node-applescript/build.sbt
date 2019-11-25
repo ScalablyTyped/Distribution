@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "spotify-node-applescript"
-version := "1.1-dt-20191023Z-563843"
+version := "1.1-dt-20191023Z-d84fc3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

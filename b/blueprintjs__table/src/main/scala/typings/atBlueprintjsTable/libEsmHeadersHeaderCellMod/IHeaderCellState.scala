@@ -11,7 +11,7 @@ trait IHeaderCellState extends js.Object {
 object IHeaderCellState {
   @scala.inline
   def apply(isActive: Boolean): IHeaderCellState = {
-    val __obj = js.Dynamic.literal(isActive = isActive)
+    val __obj = js.Dynamic.literal(isActive = isActive.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IHeaderCellState]
   }

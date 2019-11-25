@@ -21,10 +21,10 @@ object Format {
     unregisteredAttributes: Record[String, String] = null
   ): Format = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (!js.isUndefined(`object`)) __obj.updateDynamic("object")(`object`)
-    if (unregisteredAttributes != null) __obj.updateDynamic("unregisteredAttributes")(unregisteredAttributes)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (!js.isUndefined(`object`)) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (unregisteredAttributes != null) __obj.updateDynamic("unregisteredAttributes")(unregisteredAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Format]
   }
 }

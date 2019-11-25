@@ -136,7 +136,9 @@ object atJestTypesStrings {
   sealed trait add_test extends js.Object
   
   @js.native
-  sealed trait afterAll extends SharedHookType
+  sealed trait afterAll
+    extends HookType
+       with SharedHookType
   
   @js.native
   sealed trait afterEach extends HookType
@@ -148,7 +150,9 @@ object atJestTypesStrings {
   sealed trait always extends NotifyMode
   
   @js.native
-  sealed trait beforeAll extends SharedHookType
+  sealed trait beforeAll
+    extends HookType
+       with SharedHookType
   
   @js.native
   sealed trait beforeEach extends HookType
@@ -247,7 +251,7 @@ object atJestTypesStrings {
   sealed trait encodeURIComponent extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error_ extends js.Object
   
   @js.native
   sealed trait eval extends js.Object
@@ -265,7 +269,7 @@ object atJestTypesStrings {
   sealed trait finish_describe_definition extends js.Object
   
   @js.native
-  sealed trait global extends js.Object
+  sealed trait global_ extends js.Object
   
   @js.native
   sealed trait gray extends DisplayNameColor
@@ -301,10 +305,10 @@ object atJestTypesStrings {
   sealed trait isNaN extends js.Object
   
   @js.native
-  sealed trait json extends js.Object
+  sealed trait `json-summary` extends js.Object
   
   @js.native
-  sealed trait `json-summary` extends js.Object
+  sealed trait json_ extends js.Object
   
   @js.native
   sealed trait lcovonly extends js.Object
@@ -596,7 +600,7 @@ object atJestTypesStrings {
   @scala.inline
   def encodeURIComponent: encodeURIComponent = "encodeURIComponent".asInstanceOf[encodeURIComponent]
   @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  def error_ : error_ = "error".asInstanceOf[error_]
   @scala.inline
   def eval: eval = "eval".asInstanceOf[eval]
   @scala.inline
@@ -608,7 +612,7 @@ object atJestTypesStrings {
   @scala.inline
   def finish_describe_definition: finish_describe_definition = "finish_describe_definition".asInstanceOf[finish_describe_definition]
   @scala.inline
-  def global: global = "global".asInstanceOf[global]
+  def global_ : global_ = "global".asInstanceOf[global_]
   @scala.inline
   def gray: gray = "gray".asInstanceOf[gray]
   @scala.inline
@@ -632,9 +636,9 @@ object atJestTypesStrings {
   @scala.inline
   def isNaN: isNaN = "isNaN".asInstanceOf[isNaN]
   @scala.inline
-  def json: json = "json".asInstanceOf[json]
-  @scala.inline
   def `json-summary`: `json-summary` = "json-summary".asInstanceOf[`json-summary`]
+  @scala.inline
+  def json_ : json_ = "json".asInstanceOf[json_]
   @scala.inline
   def lcovonly: lcovonly = "lcovonly".asInstanceOf[lcovonly]
   @scala.inline

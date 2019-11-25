@@ -13,7 +13,7 @@ object AsObject {
   def apply(
     valuesList: js.Array[typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value.AsObject]
   ): AsObject = {
-    val __obj = js.Dynamic.literal(valuesList = valuesList)
+    val __obj = js.Dynamic.literal(valuesList = valuesList.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AsObject]
   }

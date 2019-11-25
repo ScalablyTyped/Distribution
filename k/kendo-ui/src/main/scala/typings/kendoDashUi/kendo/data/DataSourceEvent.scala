@@ -12,7 +12,7 @@ object DataSourceEvent {
   @scala.inline
   def apply(sender: DataSource = null): DataSourceEvent = {
     val __obj = js.Dynamic.literal()
-    if (sender != null) __obj.updateDynamic("sender")(sender)
+    if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceEvent]
   }
 }

@@ -61,13 +61,13 @@ object ParseOptions {
     topNode: ProsemirrorNode[S] = null
   ): ParseOptions[S] = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (findPositions != null) __obj.updateDynamic("findPositions")(findPositions)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (findPositions != null) __obj.updateDynamic("findPositions")(findPositions.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (preserveWhitespace != null) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
-    if (topMatch != null) __obj.updateDynamic("topMatch")(topMatch)
-    if (topNode != null) __obj.updateDynamic("topNode")(topNode)
+    if (topMatch != null) __obj.updateDynamic("topMatch")(topMatch.asInstanceOf[js.Any])
+    if (topNode != null) __obj.updateDynamic("topNode")(topNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions[S]]
   }
 }

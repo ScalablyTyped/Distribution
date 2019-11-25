@@ -18,8 +18,8 @@ trait PropfindOptions extends js.Object {
 object PropfindOptions {
   @scala.inline
   def apply(props: js.Array[js.Object], depth: String = null): PropfindOptions = {
-    val __obj = js.Dynamic.literal(props = props)
-    if (depth != null) __obj.updateDynamic("depth")(depth)
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropfindOptions]
   }
 }

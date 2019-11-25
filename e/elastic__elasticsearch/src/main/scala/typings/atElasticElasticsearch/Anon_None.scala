@@ -13,7 +13,7 @@ trait Anon_None extends js.Object {
 object Anon_None {
   @scala.inline
   def apply(none: Double, optimistic: Double, ping: Double): Anon_None = {
-    val __obj = js.Dynamic.literal(none = none, optimistic = optimistic, ping = ping)
+    val __obj = js.Dynamic.literal(none = none.asInstanceOf[js.Any], optimistic = optimistic.asInstanceOf[js.Any], ping = ping.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_None]
   }

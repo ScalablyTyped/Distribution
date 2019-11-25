@@ -33,7 +33,7 @@ object Anon_Context {
     time: Timestamp,
     context: UNDERPAID | OVERPAID | DELAYED | MULTIPLE | MANUAL | OTHER = null
   ): Anon_Context = {
-    val __obj = js.Dynamic.literal(status = status, time = time)
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Context]
   }

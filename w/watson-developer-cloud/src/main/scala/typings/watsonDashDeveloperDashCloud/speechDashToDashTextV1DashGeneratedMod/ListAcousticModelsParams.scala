@@ -20,9 +20,9 @@ object ListAcousticModelsParams {
     return_response: js.UndefOr[Boolean] = js.undefined
   ): ListAcousticModelsParams = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (language != null) __obj.updateDynamic("language")(language)
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAcousticModelsParams]
   }
 }

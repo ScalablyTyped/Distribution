@@ -13,7 +13,7 @@ object GooglePrivacyDlpV2beta1ListInfoTypesResponse {
   @scala.inline
   def apply(infoTypes: js.Array[GooglePrivacyDlpV2beta1InfoTypeDescription] = null): GooglePrivacyDlpV2beta1ListInfoTypesResponse = {
     val __obj = js.Dynamic.literal()
-    if (infoTypes != null) __obj.updateDynamic("infoTypes")(infoTypes)
+    if (infoTypes != null) __obj.updateDynamic("infoTypes")(infoTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1ListInfoTypesResponse]
   }
 }

@@ -11,7 +11,7 @@ trait ExecuteRequest extends js.Object {
 object ExecuteRequest {
   @scala.inline
   def apply(payer_id: String): ExecuteRequest = {
-    val __obj = js.Dynamic.literal(payer_id = payer_id)
+    val __obj = js.Dynamic.literal(payer_id = payer_id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExecuteRequest]
   }

@@ -11,7 +11,7 @@ trait Anon_OutlineWidth extends js.Object {
 object Anon_OutlineWidth {
   @scala.inline
   def apply(outlineWidth: Double): Anon_OutlineWidth = {
-    val __obj = js.Dynamic.literal(outlineWidth = outlineWidth)
+    val __obj = js.Dynamic.literal(outlineWidth = outlineWidth.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_OutlineWidth]
   }

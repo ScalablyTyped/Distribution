@@ -12,8 +12,8 @@ trait BingProviderResultPoint extends js.Object {
 object BingProviderResultPoint {
   @scala.inline
   def apply(coordinates: PointTuple, `type`: String): BingProviderResultPoint = {
-    val __obj = js.Dynamic.literal(coordinates = coordinates)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BingProviderResultPoint]
   }
 }

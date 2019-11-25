@@ -24,12 +24,12 @@ object ITimeLine {
     `type`: String = null
   ): ITimeLine = {
     val __obj = js.Dynamic.literal()
-    if (asset != null) __obj.updateDynamic("asset")(asset)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (era != null) __obj.updateDynamic("era")(era)
-    if (headline != null) __obj.updateDynamic("headline")(headline)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (asset != null) __obj.updateDynamic("asset")(asset.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (era != null) __obj.updateDynamic("era")(era.asInstanceOf[js.Any])
+    if (headline != null) __obj.updateDynamic("headline")(headline.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimeLine]
   }
 }

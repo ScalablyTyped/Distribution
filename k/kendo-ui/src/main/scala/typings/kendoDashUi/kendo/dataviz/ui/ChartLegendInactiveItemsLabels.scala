@@ -14,8 +14,8 @@ object ChartLegendInactiveItemsLabels {
   @scala.inline
   def apply(color: String = null, font: String = null, template: String | js.Function = null): ChartLegendInactiveItemsLabels = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (font != null) __obj.updateDynamic("font")(font)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartLegendInactiveItemsLabels]
   }

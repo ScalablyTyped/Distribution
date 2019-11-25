@@ -15,3 +15,14 @@ import scala.scalajs.js.annotation._
 */
 trait ZoomSettingsMode extends js.Object
 
+object ZoomSettingsMode {
+  @scala.inline
+  def automatic: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.automatic = this.cast("automatic")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def disabled: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.disabled = this.cast("disabled")
+  @scala.inline
+  def manual: typings.firefoxDashWebextDashBrowser.firefoxDashWebextDashBrowserStrings.manual = this.cast("manual")
+}
+

@@ -28,10 +28,10 @@ object GooglePrivacyDlpV2beta1ContentItem {
     value: String = null
   ): GooglePrivacyDlpV2beta1ContentItem = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (table != null) __obj.updateDynamic("table")(table)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1ContentItem]
   }
 }

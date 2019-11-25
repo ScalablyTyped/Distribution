@@ -18,7 +18,7 @@ object ServerDeploymentInput {
     parallelExecution: ExecutionInput,
     timeoutInMinutes: Double
   ): ServerDeploymentInput = {
-    val __obj = js.Dynamic.literal(condition = condition, jobCancelTimeoutInMinutes = jobCancelTimeoutInMinutes, overrideInputs = overrideInputs, parallelExecution = parallelExecution, timeoutInMinutes = timeoutInMinutes)
+    val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], jobCancelTimeoutInMinutes = jobCancelTimeoutInMinutes.asInstanceOf[js.Any], overrideInputs = overrideInputs.asInstanceOf[js.Any], parallelExecution = parallelExecution.asInstanceOf[js.Any], timeoutInMinutes = timeoutInMinutes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ServerDeploymentInput]
   }

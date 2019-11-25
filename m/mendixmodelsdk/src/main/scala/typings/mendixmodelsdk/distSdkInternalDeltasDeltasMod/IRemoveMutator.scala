@@ -13,7 +13,7 @@ trait IRemoveMutator extends Mutator {
 object IRemoveMutator {
   @scala.inline
   def apply(mutatorType: REMOVE, removalIndex: Double): IRemoveMutator = {
-    val __obj = js.Dynamic.literal(mutatorType = mutatorType, removalIndex = removalIndex)
+    val __obj = js.Dynamic.literal(mutatorType = mutatorType.asInstanceOf[js.Any], removalIndex = removalIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IRemoveMutator]
   }

@@ -13,7 +13,7 @@ object RolePermission {
   @scala.inline
   def apply(resourceActions: js.Array[ResourceAction] = null): RolePermission = {
     val __obj = js.Dynamic.literal()
-    if (resourceActions != null) __obj.updateDynamic("resourceActions")(resourceActions)
+    if (resourceActions != null) __obj.updateDynamic("resourceActions")(resourceActions.asInstanceOf[js.Any])
     __obj.asInstanceOf[RolePermission]
   }
 }

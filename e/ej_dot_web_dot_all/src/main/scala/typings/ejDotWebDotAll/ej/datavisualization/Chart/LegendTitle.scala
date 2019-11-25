@@ -21,8 +21,8 @@ object LegendTitle {
   @scala.inline
   def apply(font: LegendTitleFont = null, text: String = null, textAlignment: Alignment | String = null): LegendTitle = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (textAlignment != null) __obj.updateDynamic("textAlignment")(textAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendTitle]
   }

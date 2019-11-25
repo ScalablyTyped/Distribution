@@ -14,7 +14,7 @@ trait StorageCapacityInfo extends js.Object {
 object StorageCapacityInfo {
   @scala.inline
   def apply(availableCapacity: Double, id: String): StorageCapacityInfo = {
-    val __obj = js.Dynamic.literal(availableCapacity = availableCapacity, id = id)
+    val __obj = js.Dynamic.literal(availableCapacity = availableCapacity.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StorageCapacityInfo]
   }

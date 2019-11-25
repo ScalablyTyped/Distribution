@@ -28,7 +28,7 @@ object PivotGroupSortValueBucket {
   @scala.inline
   def apply(buckets: js.Array[ExtendedValue] = null, valuesIndex: Int | Double = null): PivotGroupSortValueBucket = {
     val __obj = js.Dynamic.literal()
-    if (buckets != null) __obj.updateDynamic("buckets")(buckets)
+    if (buckets != null) __obj.updateDynamic("buckets")(buckets.asInstanceOf[js.Any])
     if (valuesIndex != null) __obj.updateDynamic("valuesIndex")(valuesIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotGroupSortValueBucket]
   }

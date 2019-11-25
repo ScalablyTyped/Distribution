@@ -17,7 +17,7 @@ object StickyBodyProps {
   def apply(onScroll: /* e */ Partial[UIEvent] => Unit = null, tableHeader: HTMLElement = null): StickyBodyProps = {
     val __obj = js.Dynamic.literal()
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
-    if (tableHeader != null) __obj.updateDynamic("tableHeader")(tableHeader)
+    if (tableHeader != null) __obj.updateDynamic("tableHeader")(tableHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[StickyBodyProps]
   }
 }

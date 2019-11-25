@@ -15,7 +15,7 @@ trait OutputSettings extends js.Object {
 object OutputSettings {
   @scala.inline
   def apply(errorColor: Anon_Blue, errorType: String, largeImageThreshold: Double, transparency: Double): OutputSettings = {
-    val __obj = js.Dynamic.literal(errorColor = errorColor, errorType = errorType, largeImageThreshold = largeImageThreshold, transparency = transparency)
+    val __obj = js.Dynamic.literal(errorColor = errorColor.asInstanceOf[js.Any], errorType = errorType.asInstanceOf[js.Any], largeImageThreshold = largeImageThreshold.asInstanceOf[js.Any], transparency = transparency.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OutputSettings]
   }

@@ -15,7 +15,7 @@ object MarkerOptions {
   def apply(rotationAngle: Int | Double = null, rotationOrigin: String = null): MarkerOptions = {
     val __obj = js.Dynamic.literal()
     if (rotationAngle != null) __obj.updateDynamic("rotationAngle")(rotationAngle.asInstanceOf[js.Any])
-    if (rotationOrigin != null) __obj.updateDynamic("rotationOrigin")(rotationOrigin)
+    if (rotationOrigin != null) __obj.updateDynamic("rotationOrigin")(rotationOrigin.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerOptions]
   }
 }

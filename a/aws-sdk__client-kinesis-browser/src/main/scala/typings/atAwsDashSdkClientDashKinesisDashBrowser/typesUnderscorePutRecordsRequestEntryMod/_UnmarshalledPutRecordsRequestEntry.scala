@@ -16,8 +16,8 @@ trait _UnmarshalledPutRecordsRequestEntry extends _PutRecordsRequestEntry {
 object _UnmarshalledPutRecordsRequestEntry {
   @scala.inline
   def apply(Data: Uint8Array, PartitionKey: String, ExplicitHashKey: String = null): _UnmarshalledPutRecordsRequestEntry = {
-    val __obj = js.Dynamic.literal(Data = Data, PartitionKey = PartitionKey)
-    if (ExplicitHashKey != null) __obj.updateDynamic("ExplicitHashKey")(ExplicitHashKey)
+    val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], PartitionKey = PartitionKey.asInstanceOf[js.Any])
+    if (ExplicitHashKey != null) __obj.updateDynamic("ExplicitHashKey")(ExplicitHashKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledPutRecordsRequestEntry]
   }
 }

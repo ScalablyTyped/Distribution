@@ -22,11 +22,11 @@ object TrayballoonOptions {
     title: String = null,
     wait: js.UndefOr[Boolean] = js.undefined
   ): TrayballoonOptions = {
-    val __obj = js.Dynamic.literal(text = text)
-    if (icon != null) __obj.updateDynamic("icon")(icon)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrayballoonOptions]
   }
 }

@@ -14,9 +14,9 @@ object OrderBy {
   @scala.inline
   def apply(fieldName: String = null, orderType: String = null, sortOrder: String = null): OrderBy = {
     val __obj = js.Dynamic.literal()
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
-    if (orderType != null) __obj.updateDynamic("orderType")(orderType)
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
+    if (orderType != null) __obj.updateDynamic("orderType")(orderType.asInstanceOf[js.Any])
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderBy]
   }
 }

@@ -15,7 +15,7 @@ trait CreditCardInfo extends js.Object {
 object CreditCardInfo {
   @scala.inline
   def apply(billingAddress: Anon_PostalCode, cvv: String, expirationDate: String, number: String): CreditCardInfo = {
-    val __obj = js.Dynamic.literal(billingAddress = billingAddress, cvv = cvv, expirationDate = expirationDate, number = number)
+    val __obj = js.Dynamic.literal(billingAddress = billingAddress.asInstanceOf[js.Any], cvv = cvv.asInstanceOf[js.Any], expirationDate = expirationDate.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CreditCardInfo]
   }

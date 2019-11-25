@@ -20,10 +20,10 @@ object ResolvedTypeReferenceDirective {
     packageId: PackageId = null,
     resolvedFileName: String = null
   ): ResolvedTypeReferenceDirective = {
-    val __obj = js.Dynamic.literal(primary = primary)
-    if (!js.isUndefined(isExternalLibraryImport)) __obj.updateDynamic("isExternalLibraryImport")(isExternalLibraryImport)
-    if (packageId != null) __obj.updateDynamic("packageId")(packageId)
-    if (resolvedFileName != null) __obj.updateDynamic("resolvedFileName")(resolvedFileName)
+    val __obj = js.Dynamic.literal(primary = primary.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExternalLibraryImport)) __obj.updateDynamic("isExternalLibraryImport")(isExternalLibraryImport.asInstanceOf[js.Any])
+    if (packageId != null) __obj.updateDynamic("packageId")(packageId.asInstanceOf[js.Any])
+    if (resolvedFileName != null) __obj.updateDynamic("resolvedFileName")(resolvedFileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedTypeReferenceDirective]
   }
 }

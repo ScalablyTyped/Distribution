@@ -19,8 +19,8 @@ object AnalyzeEntitySentimentResponse {
   @scala.inline
   def apply(entities: js.Array[Entity] = null, language: String = null): AnalyzeEntitySentimentResponse = {
     val __obj = js.Dynamic.literal()
-    if (entities != null) __obj.updateDynamic("entities")(entities)
-    if (language != null) __obj.updateDynamic("language")(language)
+    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyzeEntitySentimentResponse]
   }
 }

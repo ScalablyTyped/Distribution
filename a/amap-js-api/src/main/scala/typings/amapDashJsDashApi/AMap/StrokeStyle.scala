@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait StrokeStyle extends js.Object
 
+object StrokeStyle {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def dashed: typings.amapDashJsDashApi.amapDashJsDashApiStrings.dashed = this.cast("dashed")
+  @scala.inline
+  def solid: typings.amapDashJsDashApi.amapDashJsDashApiStrings.solid = this.cast("solid")
+}
+

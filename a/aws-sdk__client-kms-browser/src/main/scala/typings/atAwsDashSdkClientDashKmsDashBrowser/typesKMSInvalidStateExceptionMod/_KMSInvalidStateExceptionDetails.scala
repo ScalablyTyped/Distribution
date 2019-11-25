@@ -15,7 +15,7 @@ object _KMSInvalidStateExceptionDetails {
   @scala.inline
   def apply(message: String = null): _KMSInvalidStateExceptionDetails = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[_KMSInvalidStateExceptionDetails]
   }
 }

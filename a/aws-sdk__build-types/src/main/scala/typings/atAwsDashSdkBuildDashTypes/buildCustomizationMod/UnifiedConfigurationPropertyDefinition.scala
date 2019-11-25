@@ -64,14 +64,14 @@ object UnifiedConfigurationPropertyDefinition {
     normalize: String = null,
     resolvedType: String = null
   ): UnifiedConfigurationPropertyDefinition = {
-    val __obj = js.Dynamic.literal(documentation = documentation, inputType = inputType, required = required)
-    __obj.updateDynamic("type")(`type`)
-    if (apply != null) __obj.updateDynamic("apply")(apply)
+    val __obj = js.Dynamic.literal(documentation = documentation.asInstanceOf[js.Any], inputType = inputType.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (apply != null) __obj.updateDynamic("apply")(apply.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (imports != null) __obj.updateDynamic("imports")(imports)
-    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal)
-    if (normalize != null) __obj.updateDynamic("normalize")(normalize)
-    if (resolvedType != null) __obj.updateDynamic("resolvedType")(resolvedType)
+    if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
+    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal.asInstanceOf[js.Any])
+    if (normalize != null) __obj.updateDynamic("normalize")(normalize.asInstanceOf[js.Any])
+    if (resolvedType != null) __obj.updateDynamic("resolvedType")(resolvedType.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnifiedConfigurationPropertyDefinition]
   }
 }

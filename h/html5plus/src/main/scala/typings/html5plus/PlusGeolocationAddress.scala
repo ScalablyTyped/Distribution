@@ -89,15 +89,15 @@ object PlusGeolocationAddress {
     streetNum: String = null
   ): PlusGeolocationAddress = {
     val __obj = js.Dynamic.literal()
-    if (city != null) __obj.updateDynamic("city")(city)
-    if (cityCode != null) __obj.updateDynamic("cityCode")(cityCode)
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (district != null) __obj.updateDynamic("district")(district)
-    if (poiName != null) __obj.updateDynamic("poiName")(poiName)
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
-    if (province != null) __obj.updateDynamic("province")(province)
-    if (street != null) __obj.updateDynamic("street")(street)
-    if (streetNum != null) __obj.updateDynamic("streetNum")(streetNum)
+    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
+    if (cityCode != null) __obj.updateDynamic("cityCode")(cityCode.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (district != null) __obj.updateDynamic("district")(district.asInstanceOf[js.Any])
+    if (poiName != null) __obj.updateDynamic("poiName")(poiName.asInstanceOf[js.Any])
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
+    if (province != null) __obj.updateDynamic("province")(province.asInstanceOf[js.Any])
+    if (street != null) __obj.updateDynamic("street")(street.asInstanceOf[js.Any])
+    if (streetNum != null) __obj.updateDynamic("streetNum")(streetNum.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusGeolocationAddress]
   }
 }

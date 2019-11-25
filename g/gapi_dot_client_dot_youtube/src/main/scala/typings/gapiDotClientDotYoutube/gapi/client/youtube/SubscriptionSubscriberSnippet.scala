@@ -24,10 +24,10 @@ object SubscriptionSubscriberSnippet {
     title: String = null
   ): SubscriptionSubscriberSnippet = {
     val __obj = js.Dynamic.literal()
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionSubscriberSnippet]
   }
 }

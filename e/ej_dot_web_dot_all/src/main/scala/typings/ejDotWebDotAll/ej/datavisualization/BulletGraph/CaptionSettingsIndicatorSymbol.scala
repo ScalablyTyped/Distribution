@@ -38,12 +38,12 @@ object CaptionSettingsIndicatorSymbol {
     size: CaptionSettingsIndicatorSymbolSize = null
   ): CaptionSettingsIndicatorSymbol = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (imageURL != null) __obj.updateDynamic("imageURL")(imageURL)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (imageURL != null) __obj.updateDynamic("imageURL")(imageURL.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptionSettingsIndicatorSymbol]
   }
 }

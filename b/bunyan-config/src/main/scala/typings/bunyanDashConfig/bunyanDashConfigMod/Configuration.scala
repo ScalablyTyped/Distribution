@@ -28,12 +28,12 @@ object Configuration {
     stream: WritableStream = null,
     streams: js.Array[Stream] = null
   ): Configuration = {
-    val __obj = js.Dynamic.literal(name = name)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (serializers != null) __obj.updateDynamic("serializers")(serializers)
-    if (!js.isUndefined(src)) __obj.updateDynamic("src")(src)
-    if (stream != null) __obj.updateDynamic("stream")(stream)
-    if (streams != null) __obj.updateDynamic("streams")(streams)
+    if (serializers != null) __obj.updateDynamic("serializers")(serializers.asInstanceOf[js.Any])
+    if (!js.isUndefined(src)) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
+    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
+    if (streams != null) __obj.updateDynamic("streams")(streams.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
 }

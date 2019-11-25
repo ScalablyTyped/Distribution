@@ -12,7 +12,7 @@ trait TimingInfo extends BackendTimingInfo {
 object TimingInfo {
   @scala.inline
   def apply(kernelMs: Double, wallMs: Double, getExtraProfileInfo: () => String = null): TimingInfo = {
-    val __obj = js.Dynamic.literal(kernelMs = kernelMs, wallMs = wallMs)
+    val __obj = js.Dynamic.literal(kernelMs = kernelMs.asInstanceOf[js.Any], wallMs = wallMs.asInstanceOf[js.Any])
     if (getExtraProfileInfo != null) __obj.updateDynamic("getExtraProfileInfo")(js.Any.fromFunction0(getExtraProfileInfo))
     __obj.asInstanceOf[TimingInfo]
   }

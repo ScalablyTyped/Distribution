@@ -50,13 +50,13 @@ object _CommentsForComparedCommit {
     repositoryName: String = null
   ): _CommentsForComparedCommit = {
     val __obj = js.Dynamic.literal()
-    if (afterBlobId != null) __obj.updateDynamic("afterBlobId")(afterBlobId)
-    if (afterCommitId != null) __obj.updateDynamic("afterCommitId")(afterCommitId)
-    if (beforeBlobId != null) __obj.updateDynamic("beforeBlobId")(beforeBlobId)
-    if (beforeCommitId != null) __obj.updateDynamic("beforeCommitId")(beforeCommitId)
+    if (afterBlobId != null) __obj.updateDynamic("afterBlobId")(afterBlobId.asInstanceOf[js.Any])
+    if (afterCommitId != null) __obj.updateDynamic("afterCommitId")(afterCommitId.asInstanceOf[js.Any])
+    if (beforeBlobId != null) __obj.updateDynamic("beforeBlobId")(beforeBlobId.asInstanceOf[js.Any])
+    if (beforeCommitId != null) __obj.updateDynamic("beforeCommitId")(beforeCommitId.asInstanceOf[js.Any])
     if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[_CommentsForComparedCommit]
   }
 }

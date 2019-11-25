@@ -117,7 +117,7 @@ class ShallowWrapper[P, S, C] protected () extends CommonWrapper[P, S, C] {
     */
   def renderProp[PropName /* <: String */](prop: PropName): js.Function1[
     /* params */ Parameters[
-      /* import warning: ImportType.apply Failed type conversion: P[PropName] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: P[PropName] */ js.Any
     ], 
     ShallowWrapper[_, scala.Nothing, Component[js.Object, js.Object, _]]
   ] = js.native

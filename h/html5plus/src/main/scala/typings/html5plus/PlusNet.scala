@@ -28,8 +28,8 @@ object PlusNet {
   @scala.inline
   def apply(ProgressEvent: PlusNetProgressEvent = null, XMLHttpRequest: PlusNetXMLHttpRequest = null): PlusNet = {
     val __obj = js.Dynamic.literal()
-    if (ProgressEvent != null) __obj.updateDynamic("ProgressEvent")(ProgressEvent)
-    if (XMLHttpRequest != null) __obj.updateDynamic("XMLHttpRequest")(XMLHttpRequest)
+    if (ProgressEvent != null) __obj.updateDynamic("ProgressEvent")(ProgressEvent.asInstanceOf[js.Any])
+    if (XMLHttpRequest != null) __obj.updateDynamic("XMLHttpRequest")(XMLHttpRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNet]
   }
 }

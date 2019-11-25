@@ -32,16 +32,16 @@ object GanttMessages {
     views: GanttMessagesViews = null
   ): GanttMessages = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions)
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
-    if (deleteDependencyConfirmation != null) __obj.updateDynamic("deleteDependencyConfirmation")(deleteDependencyConfirmation)
-    if (deleteDependencyWindowTitle != null) __obj.updateDynamic("deleteDependencyWindowTitle")(deleteDependencyWindowTitle)
-    if (deleteTaskConfirmation != null) __obj.updateDynamic("deleteTaskConfirmation")(deleteTaskConfirmation)
-    if (deleteTaskWindowTitle != null) __obj.updateDynamic("deleteTaskWindowTitle")(deleteTaskWindowTitle)
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
-    if (editor != null) __obj.updateDynamic("editor")(editor)
-    if (save != null) __obj.updateDynamic("save")(save)
-    if (views != null) __obj.updateDynamic("views")(views)
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
+    if (deleteDependencyConfirmation != null) __obj.updateDynamic("deleteDependencyConfirmation")(deleteDependencyConfirmation.asInstanceOf[js.Any])
+    if (deleteDependencyWindowTitle != null) __obj.updateDynamic("deleteDependencyWindowTitle")(deleteDependencyWindowTitle.asInstanceOf[js.Any])
+    if (deleteTaskConfirmation != null) __obj.updateDynamic("deleteTaskConfirmation")(deleteTaskConfirmation.asInstanceOf[js.Any])
+    if (deleteTaskWindowTitle != null) __obj.updateDynamic("deleteTaskWindowTitle")(deleteTaskWindowTitle.asInstanceOf[js.Any])
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
+    if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
+    if (save != null) __obj.updateDynamic("save")(save.asInstanceOf[js.Any])
+    if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttMessages]
   }
 }

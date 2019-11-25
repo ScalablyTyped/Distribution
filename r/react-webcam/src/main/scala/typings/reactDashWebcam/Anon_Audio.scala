@@ -25,7 +25,7 @@ object Anon_Audio {
     screenshotFormat: String,
     screenshotQuality: Double
   ): Anon_Audio = {
-    val __obj = js.Dynamic.literal(audio = audio, imageSmoothing = imageSmoothing, mirrored = mirrored, onUserMedia = js.Any.fromFunction0(onUserMedia), onUserMediaError = js.Any.fromFunction0(onUserMediaError), screenshotFormat = screenshotFormat, screenshotQuality = screenshotQuality)
+    val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], imageSmoothing = imageSmoothing.asInstanceOf[js.Any], mirrored = mirrored.asInstanceOf[js.Any], onUserMedia = js.Any.fromFunction0(onUserMedia), onUserMediaError = js.Any.fromFunction0(onUserMediaError), screenshotFormat = screenshotFormat.asInstanceOf[js.Any], screenshotQuality = screenshotQuality.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Audio]
   }

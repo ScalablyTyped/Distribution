@@ -43,12 +43,12 @@ object MediaDownload {
     useDirectDownload: js.UndefOr[Boolean] = js.undefined
   ): MediaDownload = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(completeNotification)) __obj.updateDynamic("completeNotification")(completeNotification)
-    if (downloadService != null) __obj.updateDynamic("downloadService")(downloadService)
-    if (dropzone != null) __obj.updateDynamic("dropzone")(dropzone)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (maxDirectDownloadSize != null) __obj.updateDynamic("maxDirectDownloadSize")(maxDirectDownloadSize)
-    if (!js.isUndefined(useDirectDownload)) __obj.updateDynamic("useDirectDownload")(useDirectDownload)
+    if (!js.isUndefined(completeNotification)) __obj.updateDynamic("completeNotification")(completeNotification.asInstanceOf[js.Any])
+    if (downloadService != null) __obj.updateDynamic("downloadService")(downloadService.asInstanceOf[js.Any])
+    if (dropzone != null) __obj.updateDynamic("dropzone")(dropzone.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (maxDirectDownloadSize != null) __obj.updateDynamic("maxDirectDownloadSize")(maxDirectDownloadSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(useDirectDownload)) __obj.updateDynamic("useDirectDownload")(useDirectDownload.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaDownload]
   }
 }

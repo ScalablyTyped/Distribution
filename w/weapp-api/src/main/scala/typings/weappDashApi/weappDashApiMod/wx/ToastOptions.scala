@@ -29,12 +29,12 @@ object ToastOptions {
     imgage: String = null,
     success: /* res */ js.Any => Unit = null
   ): ToastOptions = {
-    val __obj = js.Dynamic.literal(mask = mask, title = title)
+    val __obj = js.Dynamic.literal(mask = mask.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (imgage != null) __obj.updateDynamic("imgage")(imgage)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (imgage != null) __obj.updateDynamic("imgage")(imgage.asInstanceOf[js.Any])
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[ToastOptions]
   }

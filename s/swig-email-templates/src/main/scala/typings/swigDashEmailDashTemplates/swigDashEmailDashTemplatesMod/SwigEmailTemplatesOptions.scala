@@ -30,17 +30,17 @@ object SwigEmailTemplatesOptions {
     varControls: js.Array[String] = null
   ): SwigEmailTemplatesOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoescape)) __obj.updateDynamic("autoescape")(autoescape)
-    if (cache != null) __obj.updateDynamic("cache")(cache)
-    if (cmtControls != null) __obj.updateDynamic("cmtControls")(cmtControls)
-    if (juice != null) __obj.updateDynamic("juice")(juice)
-    if (loader != null) __obj.updateDynamic("loader")(loader)
-    if (locals != null) __obj.updateDynamic("locals")(locals)
+    if (!js.isUndefined(autoescape)) __obj.updateDynamic("autoescape")(autoescape.asInstanceOf[js.Any])
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (cmtControls != null) __obj.updateDynamic("cmtControls")(cmtControls.asInstanceOf[js.Any])
+    if (juice != null) __obj.updateDynamic("juice")(juice.asInstanceOf[js.Any])
+    if (loader != null) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
+    if (locals != null) __obj.updateDynamic("locals")(locals.asInstanceOf[js.Any])
     if (rewrite != null) __obj.updateDynamic("rewrite")(js.Any.fromFunction1(rewrite))
     if (rewriteUrl != null) __obj.updateDynamic("rewriteUrl")(js.Any.fromFunction1(rewriteUrl))
-    if (root != null) __obj.updateDynamic("root")(root)
-    if (tagControls != null) __obj.updateDynamic("tagControls")(tagControls)
-    if (varControls != null) __obj.updateDynamic("varControls")(varControls)
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (tagControls != null) __obj.updateDynamic("tagControls")(tagControls.asInstanceOf[js.Any])
+    if (varControls != null) __obj.updateDynamic("varControls")(varControls.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwigEmailTemplatesOptions]
   }
 }

@@ -38,13 +38,13 @@ object IDialogContentStyleProps {
     isLargeHeader: js.UndefOr[Boolean] = js.undefined,
     isMultiline: js.UndefOr[Boolean] = js.undefined
   ): IDialogContentStyleProps = {
-    val __obj = js.Dynamic.literal(theme = theme)
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (draggableHeaderClassName != null) __obj.updateDynamic("draggableHeaderClassName")(draggableHeaderClassName)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (!js.isUndefined(isClose)) __obj.updateDynamic("isClose")(isClose)
-    if (!js.isUndefined(isLargeHeader)) __obj.updateDynamic("isLargeHeader")(isLargeHeader)
-    if (!js.isUndefined(isMultiline)) __obj.updateDynamic("isMultiline")(isMultiline)
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (draggableHeaderClassName != null) __obj.updateDynamic("draggableHeaderClassName")(draggableHeaderClassName.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(isClose)) __obj.updateDynamic("isClose")(isClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLargeHeader)) __obj.updateDynamic("isLargeHeader")(isLargeHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMultiline)) __obj.updateDynamic("isMultiline")(isMultiline.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDialogContentStyleProps]
   }
 }

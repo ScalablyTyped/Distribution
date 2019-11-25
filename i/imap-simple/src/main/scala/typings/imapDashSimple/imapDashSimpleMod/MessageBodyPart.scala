@@ -13,7 +13,7 @@ trait MessageBodyPart extends ImapMessageBodyInfo {
 object MessageBodyPart {
   @scala.inline
   def apply(body: js.Any, size: Double, which: String): MessageBodyPart = {
-    val __obj = js.Dynamic.literal(body = body, size = size, which = which)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MessageBodyPart]
   }

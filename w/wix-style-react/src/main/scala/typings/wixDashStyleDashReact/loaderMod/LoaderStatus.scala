@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 */
 trait LoaderStatus extends js.Object
 
+object LoaderStatus {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def error: typings.wixDashStyleDashReact.wixDashStyleDashReactStrings.error = this.cast("error")
+  @scala.inline
+  def loading: typings.wixDashStyleDashReact.wixDashStyleDashReactStrings.loading = this.cast("loading")
+  @scala.inline
+  def success: typings.wixDashStyleDashReact.wixDashStyleDashReactStrings.success = this.cast("success")
+}
+

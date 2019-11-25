@@ -23,11 +23,11 @@ object Event {
     title: String = null
   ): Event = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allDay)) __obj.updateDynamic("allDay")(allDay)
-    if (end != null) __obj.updateDynamic("end")(end)
-    if (resource != null) __obj.updateDynamic("resource")(resource)
-    if (start != null) __obj.updateDynamic("start")(start)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(allDay)) __obj.updateDynamic("allDay")(allDay.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
 }

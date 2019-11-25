@@ -32,7 +32,7 @@ object Publisher {
     publisherName: String,
     shortDescription: String
   ): Publisher = {
-    val __obj = js.Dynamic.literal(displayName = displayName, emailAddress = emailAddress, extensions = extensions, flags = flags, lastUpdated = lastUpdated, links = links, longDescription = longDescription, publisherId = publisherId, publisherName = publisherName, shortDescription = shortDescription)
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], emailAddress = emailAddress.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], lastUpdated = lastUpdated.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], longDescription = longDescription.asInstanceOf[js.Any], publisherId = publisherId.asInstanceOf[js.Any], publisherName = publisherName.asInstanceOf[js.Any], shortDescription = shortDescription.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Publisher]
   }

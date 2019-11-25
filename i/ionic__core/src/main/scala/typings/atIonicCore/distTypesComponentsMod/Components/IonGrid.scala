@@ -14,7 +14,7 @@ trait IonGrid extends js.Object {
 object IonGrid {
   @scala.inline
   def apply(fixed: Boolean): IonGrid = {
-    val __obj = js.Dynamic.literal(fixed = fixed)
+    val __obj = js.Dynamic.literal(fixed = fixed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IonGrid]
   }

@@ -35,9 +35,9 @@ object CommitRequest {
     transactionId: String = null
   ): CommitRequest = {
     val __obj = js.Dynamic.literal()
-    if (mutations != null) __obj.updateDynamic("mutations")(mutations)
-    if (singleUseTransaction != null) __obj.updateDynamic("singleUseTransaction")(singleUseTransaction)
-    if (transactionId != null) __obj.updateDynamic("transactionId")(transactionId)
+    if (mutations != null) __obj.updateDynamic("mutations")(mutations.asInstanceOf[js.Any])
+    if (singleUseTransaction != null) __obj.updateDynamic("singleUseTransaction")(singleUseTransaction.asInstanceOf[js.Any])
+    if (transactionId != null) __obj.updateDynamic("transactionId")(transactionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitRequest]
   }
 }

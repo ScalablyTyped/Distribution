@@ -29,8 +29,8 @@ object SearchResult {
     infocode: String,
     inRange: js.Array[Boolean] = null
   ): SearchResult = {
-    val __obj = js.Dynamic.literal(bounds = bounds, info = info, infocode = infocode)
-    if (inRange != null) __obj.updateDynamic("inRange")(inRange)
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], infocode = infocode.asInstanceOf[js.Any])
+    if (inRange != null) __obj.updateDynamic("inRange")(inRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchResult]
   }
 }

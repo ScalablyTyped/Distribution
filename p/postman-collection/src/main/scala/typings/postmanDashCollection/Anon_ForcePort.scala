@@ -11,7 +11,7 @@ trait Anon_ForcePort extends js.Object {
 object Anon_ForcePort {
   @scala.inline
   def apply(forcePort: Boolean): Anon_ForcePort = {
-    val __obj = js.Dynamic.literal(forcePort = forcePort)
+    val __obj = js.Dynamic.literal(forcePort = forcePort.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ForcePort]
   }

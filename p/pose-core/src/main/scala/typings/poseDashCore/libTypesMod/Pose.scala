@@ -39,10 +39,10 @@ object Pose {
     transition: (TransitionMap[A, TD]) | (TransitionMapFactory[A, TD]) = null
   ): Pose[A, TD] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (afterChildren != null) __obj.updateDynamic("afterChildren")(afterChildren.asInstanceOf[js.Any])
-    if (applyAtEnd != null) __obj.updateDynamic("applyAtEnd")(applyAtEnd)
-    if (applyAtStart != null) __obj.updateDynamic("applyAtStart")(applyAtStart)
+    if (applyAtEnd != null) __obj.updateDynamic("applyAtEnd")(applyAtEnd.asInstanceOf[js.Any])
+    if (applyAtStart != null) __obj.updateDynamic("applyAtStart")(applyAtStart.asInstanceOf[js.Any])
     if (beforeChildren != null) __obj.updateDynamic("beforeChildren")(beforeChildren.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (delayChildren != null) __obj.updateDynamic("delayChildren")(delayChildren.asInstanceOf[js.Any])

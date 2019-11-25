@@ -31,14 +31,14 @@ object UserParams {
     remove_groups: js.Array[String] = null,
     username: String = null
   ): UserParams = {
-    val __obj = js.Dynamic.literal(email = email, external_id = external_id, nonce = nonce)
-    if (add_groups != null) __obj.updateDynamic("add_groups")(add_groups)
-    if (!js.isUndefined(admin)) __obj.updateDynamic("admin")(admin)
-    if (avatar_url != null) __obj.updateDynamic("avatar_url")(avatar_url)
-    if (!js.isUndefined(moderator)) __obj.updateDynamic("moderator")(moderator)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (remove_groups != null) __obj.updateDynamic("remove_groups")(remove_groups)
-    if (username != null) __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], external_id = external_id.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
+    if (add_groups != null) __obj.updateDynamic("add_groups")(add_groups.asInstanceOf[js.Any])
+    if (!js.isUndefined(admin)) __obj.updateDynamic("admin")(admin.asInstanceOf[js.Any])
+    if (avatar_url != null) __obj.updateDynamic("avatar_url")(avatar_url.asInstanceOf[js.Any])
+    if (!js.isUndefined(moderator)) __obj.updateDynamic("moderator")(moderator.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (remove_groups != null) __obj.updateDynamic("remove_groups")(remove_groups.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserParams]
   }
 }

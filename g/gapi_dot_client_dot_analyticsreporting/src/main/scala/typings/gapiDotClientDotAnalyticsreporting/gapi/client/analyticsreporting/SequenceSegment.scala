@@ -21,8 +21,8 @@ object SequenceSegment {
     segmentSequenceSteps: js.Array[SegmentSequenceStep] = null
   ): SequenceSegment = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(firstStepShouldMatchFirstHit)) __obj.updateDynamic("firstStepShouldMatchFirstHit")(firstStepShouldMatchFirstHit)
-    if (segmentSequenceSteps != null) __obj.updateDynamic("segmentSequenceSteps")(segmentSequenceSteps)
+    if (!js.isUndefined(firstStepShouldMatchFirstHit)) __obj.updateDynamic("firstStepShouldMatchFirstHit")(firstStepShouldMatchFirstHit.asInstanceOf[js.Any])
+    if (segmentSequenceSteps != null) __obj.updateDynamic("segmentSequenceSteps")(segmentSequenceSteps.asInstanceOf[js.Any])
     __obj.asInstanceOf[SequenceSegment]
   }
 }

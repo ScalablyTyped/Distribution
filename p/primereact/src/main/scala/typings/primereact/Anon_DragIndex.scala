@@ -15,7 +15,7 @@ trait Anon_DragIndex extends js.Object {
 object Anon_DragIndex {
   @scala.inline
   def apply(dragIndex: Double, dropIndex: Double, originalEvent: Event, value: js.Any): Anon_DragIndex = {
-    val __obj = js.Dynamic.literal(dragIndex = dragIndex, dropIndex = dropIndex, originalEvent = originalEvent, value = value)
+    val __obj = js.Dynamic.literal(dragIndex = dragIndex.asInstanceOf[js.Any], dropIndex = dropIndex.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DragIndex]
   }

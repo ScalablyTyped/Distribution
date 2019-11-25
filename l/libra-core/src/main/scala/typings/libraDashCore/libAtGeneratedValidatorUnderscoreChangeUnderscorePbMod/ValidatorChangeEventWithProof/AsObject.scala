@@ -20,8 +20,8 @@ object AsObject {
     ledgerInfoWithSigs: typings.libraDashCore.libAtGeneratedLedgerUnderscoreInfoUnderscorePbMod.LedgerInfoWithSignatures.AsObject = null
   ): AsObject = {
     val __obj = js.Dynamic.literal()
-    if (eventWithProof != null) __obj.updateDynamic("eventWithProof")(eventWithProof)
-    if (ledgerInfoWithSigs != null) __obj.updateDynamic("ledgerInfoWithSigs")(ledgerInfoWithSigs)
+    if (eventWithProof != null) __obj.updateDynamic("eventWithProof")(eventWithProof.asInstanceOf[js.Any])
+    if (ledgerInfoWithSigs != null) __obj.updateDynamic("ledgerInfoWithSigs")(ledgerInfoWithSigs.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
 }

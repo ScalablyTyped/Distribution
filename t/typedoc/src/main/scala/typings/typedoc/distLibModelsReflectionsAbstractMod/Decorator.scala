@@ -14,9 +14,9 @@ trait Decorator extends js.Object {
 object Decorator {
   @scala.inline
   def apply(name: String, arguments: js.Any = null, `type`: Type = null): Decorator = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Decorator]
   }
 }

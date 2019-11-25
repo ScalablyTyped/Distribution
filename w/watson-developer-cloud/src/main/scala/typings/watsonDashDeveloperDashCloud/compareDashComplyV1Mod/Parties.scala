@@ -28,11 +28,11 @@ object Parties {
     role: String = null
   ): Parties = {
     val __obj = js.Dynamic.literal()
-    if (addresses != null) __obj.updateDynamic("addresses")(addresses)
-    if (contacts != null) __obj.updateDynamic("contacts")(contacts)
-    if (importance != null) __obj.updateDynamic("importance")(importance)
-    if (party != null) __obj.updateDynamic("party")(party)
-    if (role != null) __obj.updateDynamic("role")(role)
+    if (addresses != null) __obj.updateDynamic("addresses")(addresses.asInstanceOf[js.Any])
+    if (contacts != null) __obj.updateDynamic("contacts")(contacts.asInstanceOf[js.Any])
+    if (importance != null) __obj.updateDynamic("importance")(importance.asInstanceOf[js.Any])
+    if (party != null) __obj.updateDynamic("party")(party.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parties]
   }
 }

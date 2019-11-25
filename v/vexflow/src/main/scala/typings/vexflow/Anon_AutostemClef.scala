@@ -27,13 +27,13 @@ object Anon_AutostemClef {
     stem_direction: Int | Double = null,
     `type`: String = null
   ): Anon_AutostemClef = {
-    val __obj = js.Dynamic.literal(duration = duration, keys = keys)
-    if (!js.isUndefined(auto_stem)) __obj.updateDynamic("auto_stem")(auto_stem)
-    if (clef != null) __obj.updateDynamic("clef")(clef)
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any])
+    if (!js.isUndefined(auto_stem)) __obj.updateDynamic("auto_stem")(auto_stem.asInstanceOf[js.Any])
+    if (clef != null) __obj.updateDynamic("clef")(clef.asInstanceOf[js.Any])
     if (dots != null) __obj.updateDynamic("dots")(dots.asInstanceOf[js.Any])
     if (octave_shift != null) __obj.updateDynamic("octave_shift")(octave_shift.asInstanceOf[js.Any])
     if (stem_direction != null) __obj.updateDynamic("stem_direction")(stem_direction.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutostemClef]
   }
 }

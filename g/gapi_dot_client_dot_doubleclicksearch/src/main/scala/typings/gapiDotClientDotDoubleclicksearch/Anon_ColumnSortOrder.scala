@@ -16,8 +16,8 @@ object Anon_ColumnSortOrder {
   @scala.inline
   def apply(column: ReportApiColumnSpec = null, sortOrder: String = null): Anon_ColumnSortOrder = {
     val __obj = js.Dynamic.literal()
-    if (column != null) __obj.updateDynamic("column")(column)
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
+    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColumnSortOrder]
   }
 }

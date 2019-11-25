@@ -28,11 +28,11 @@ object PropObjectType {
   ): PropObjectType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (computed != null) __obj.updateDynamic("computed")(computed)
-    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify)
-    if (observer != null) __obj.updateDynamic("observer")(observer)
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
-    if (!js.isUndefined(reflectToAttribute)) __obj.updateDynamic("reflectToAttribute")(reflectToAttribute)
+    if (computed != null) __obj.updateDynamic("computed")(computed.asInstanceOf[js.Any])
+    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify.asInstanceOf[js.Any])
+    if (observer != null) __obj.updateDynamic("observer")(observer.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(reflectToAttribute)) __obj.updateDynamic("reflectToAttribute")(reflectToAttribute.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropObjectType]
   }

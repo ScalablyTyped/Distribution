@@ -52,9 +52,9 @@ object PlusWebviewWebviewExtraOptions {
     otherCapture: PlusNativeObjBitmap = null
   ): PlusWebviewWebviewExtraOptions = {
     val __obj = js.Dynamic.literal()
-    if (acceleration != null) __obj.updateDynamic("acceleration")(acceleration)
-    if (capture != null) __obj.updateDynamic("capture")(capture)
-    if (otherCapture != null) __obj.updateDynamic("otherCapture")(otherCapture)
+    if (acceleration != null) __obj.updateDynamic("acceleration")(acceleration.asInstanceOf[js.Any])
+    if (capture != null) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
+    if (otherCapture != null) __obj.updateDynamic("otherCapture")(otherCapture.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewExtraOptions]
   }
 }

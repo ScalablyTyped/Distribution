@@ -28,13 +28,13 @@ object PartialStyleRulesTouchRippleClassKey {
     root: CSSProperties = null
   ): PartialStyleRulesTouchRippleClassKey = {
     val __obj = js.Dynamic.literal()
-    if (child != null) __obj.updateDynamic("child")(child)
-    if (childLeaving != null) __obj.updateDynamic("childLeaving")(childLeaving)
-    if (childPulsate != null) __obj.updateDynamic("childPulsate")(childPulsate)
-    if (ripple != null) __obj.updateDynamic("ripple")(ripple)
-    if (ripplePulsate != null) __obj.updateDynamic("ripplePulsate")(ripplePulsate)
-    if (rippleVisible != null) __obj.updateDynamic("rippleVisible")(rippleVisible)
-    if (root != null) __obj.updateDynamic("root")(root)
+    if (child != null) __obj.updateDynamic("child")(child.asInstanceOf[js.Any])
+    if (childLeaving != null) __obj.updateDynamic("childLeaving")(childLeaving.asInstanceOf[js.Any])
+    if (childPulsate != null) __obj.updateDynamic("childPulsate")(childPulsate.asInstanceOf[js.Any])
+    if (ripple != null) __obj.updateDynamic("ripple")(ripple.asInstanceOf[js.Any])
+    if (ripplePulsate != null) __obj.updateDynamic("ripplePulsate")(ripplePulsate.asInstanceOf[js.Any])
+    if (rippleVisible != null) __obj.updateDynamic("rippleVisible")(rippleVisible.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesTouchRippleClassKey]
   }
 }

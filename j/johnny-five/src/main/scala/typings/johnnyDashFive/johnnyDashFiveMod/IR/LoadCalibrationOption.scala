@@ -12,7 +12,7 @@ trait LoadCalibrationOption extends js.Object {
 object LoadCalibrationOption {
   @scala.inline
   def apply(max: js.Array[Double], min: js.Array[Double]): LoadCalibrationOption = {
-    val __obj = js.Dynamic.literal(max = max, min = min)
+    val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LoadCalibrationOption]
   }

@@ -20,10 +20,10 @@ object DrilldownActiveDataLabelStyleOptions {
     textDecoration: String = null
   ): DrilldownActiveDataLabelStyleOptions = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
-    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
+    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrilldownActiveDataLabelStyleOptions]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_ProcessedBytes extends js.Object {
 object Anon_ProcessedBytes {
   @scala.inline
   def apply(processedBytes: Double, totalBytes: Double): Anon_ProcessedBytes = {
-    val __obj = js.Dynamic.literal(processedBytes = processedBytes, totalBytes = totalBytes)
+    val __obj = js.Dynamic.literal(processedBytes = processedBytes.asInstanceOf[js.Any], totalBytes = totalBytes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ProcessedBytes]
   }

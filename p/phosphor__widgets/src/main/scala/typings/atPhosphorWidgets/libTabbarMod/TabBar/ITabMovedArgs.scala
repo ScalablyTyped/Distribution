@@ -26,7 +26,7 @@ trait ITabMovedArgs[T] extends js.Object {
 object ITabMovedArgs {
   @scala.inline
   def apply[T](fromIndex: Double, title: Title[T], toIndex: Double): ITabMovedArgs[T] = {
-    val __obj = js.Dynamic.literal(fromIndex = fromIndex, title = title, toIndex = toIndex)
+    val __obj = js.Dynamic.literal(fromIndex = fromIndex.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], toIndex = toIndex.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ITabMovedArgs[T]]
   }

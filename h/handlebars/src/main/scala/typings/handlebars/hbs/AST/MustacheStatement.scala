@@ -25,8 +25,8 @@ object MustacheStatement {
     strip: StripFlags,
     `type`: typings.handlebars.handlebarsStrings.MustacheStatement
   ): MustacheStatement = {
-    val __obj = js.Dynamic.literal(escaped = escaped, hash = hash, loc = loc, params = params, path = path.asInstanceOf[js.Any], strip = strip)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(escaped = escaped.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], strip = strip.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MustacheStatement]
   }
 }

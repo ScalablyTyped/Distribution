@@ -11,7 +11,7 @@ trait ItemOrder extends js.Object {
 object ItemOrder {
   @scala.inline
   def apply(itemOrder: js.Array[OrderedItem]): ItemOrder = {
-    val __obj = js.Dynamic.literal(itemOrder = itemOrder)
+    val __obj = js.Dynamic.literal(itemOrder = itemOrder.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ItemOrder]
   }

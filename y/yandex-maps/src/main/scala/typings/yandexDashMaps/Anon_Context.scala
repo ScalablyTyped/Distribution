@@ -20,9 +20,9 @@ object Anon_Context {
     parent: IEventManager = null
   ): Anon_Context = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (controllers != null) __obj.updateDynamic("controllers")(controllers)
-    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (controllers != null) __obj.updateDynamic("controllers")(controllers.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Context]
   }
 }

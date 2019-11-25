@@ -288,16 +288,12 @@ object IButtonProps {
     ariaHidden: js.UndefOr[Boolean] = js.undefined,
     ariaLabel: String = null,
     buttonType: ButtonType = null,
-    checked: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
     componentRef: IRefObject[IButton] = null,
     data: js.Any = null,
     defaultRender: js.Any = null,
     description: IStyle = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
     getClassNames: (/* theme */ ITheme, /* className */ String, /* variantClassName */ String, /* iconClassName */ js.UndefOr[String], /* menuIconClassName */ js.UndefOr[String], /* disabled */ Boolean, /* checked */ Boolean, /* expanded */ Boolean, /* hasMenu */ Boolean, /* isSplit */ js.UndefOr[Boolean], /* allowDisabledFocus */ Boolean) => IButtonClassNames = null,
     getSplitButtonClassNames: (/* disabled */ Boolean, /* expanded */ Boolean, /* checked */ Boolean, /* allowDisabledFocus */ Boolean) => ISplitButtonClassNames = null,
-    href: String = null,
     iconProps: IIconProps = null,
     keytipProps: IKeytipProps = null,
     menuAs: IComponentAs[IContextualMenuProps] = null,
@@ -331,27 +327,23 @@ object IButtonProps {
     uniqueId: String | Double = null
   ): IButtonProps = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (!js.isUndefined(allowDisabledFocus)) __obj.updateDynamic("allowDisabledFocus")(allowDisabledFocus)
-    if (ariaDescription != null) __obj.updateDynamic("ariaDescription")(ariaDescription)
-    if (!js.isUndefined(ariaHidden)) __obj.updateDynamic("ariaHidden")(ariaHidden)
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
-    if (buttonType != null) __obj.updateDynamic("buttonType")(buttonType)
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
-    if (className != null) __obj.updateDynamic("className")(className)
+    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (!js.isUndefined(allowDisabledFocus)) __obj.updateDynamic("allowDisabledFocus")(allowDisabledFocus.asInstanceOf[js.Any])
+    if (ariaDescription != null) __obj.updateDynamic("ariaDescription")(ariaDescription.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaHidden)) __obj.updateDynamic("ariaHidden")(ariaHidden.asInstanceOf[js.Any])
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
+    if (buttonType != null) __obj.updateDynamic("buttonType")(buttonType.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (defaultRender != null) __obj.updateDynamic("defaultRender")(defaultRender)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (defaultRender != null) __obj.updateDynamic("defaultRender")(defaultRender.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (getClassNames != null) __obj.updateDynamic("getClassNames")(js.Any.fromFunction11(getClassNames))
     if (getSplitButtonClassNames != null) __obj.updateDynamic("getSplitButtonClassNames")(js.Any.fromFunction4(getSplitButtonClassNames))
-    if (href != null) __obj.updateDynamic("href")(href)
-    if (iconProps != null) __obj.updateDynamic("iconProps")(iconProps)
-    if (keytipProps != null) __obj.updateDynamic("keytipProps")(keytipProps)
+    if (iconProps != null) __obj.updateDynamic("iconProps")(iconProps.asInstanceOf[js.Any])
+    if (keytipProps != null) __obj.updateDynamic("keytipProps")(keytipProps.asInstanceOf[js.Any])
     if (menuAs != null) __obj.updateDynamic("menuAs")(menuAs.asInstanceOf[js.Any])
-    if (menuIconProps != null) __obj.updateDynamic("menuIconProps")(menuIconProps)
-    if (menuProps != null) __obj.updateDynamic("menuProps")(menuProps)
+    if (menuIconProps != null) __obj.updateDynamic("menuIconProps")(menuIconProps.asInstanceOf[js.Any])
+    if (menuProps != null) __obj.updateDynamic("menuProps")(menuProps.asInstanceOf[js.Any])
     if (menuTriggerKeyCode != null) __obj.updateDynamic("menuTriggerKeyCode")(menuTriggerKeyCode.asInstanceOf[js.Any])
     if (onAfterMenuDismiss != null) __obj.updateDynamic("onAfterMenuDismiss")(js.Any.fromFunction0(onAfterMenuDismiss))
     if (onMenuClick != null) __obj.updateDynamic("onMenuClick")(js.Any.fromFunction2(onMenuClick))
@@ -362,21 +354,21 @@ object IButtonProps {
     if (onRenderMenu != null) __obj.updateDynamic("onRenderMenu")(js.Any.fromFunction2(onRenderMenu))
     if (onRenderMenuIcon != null) __obj.updateDynamic("onRenderMenuIcon")(js.Any.fromFunction2(onRenderMenuIcon))
     if (onRenderText != null) __obj.updateDynamic("onRenderText")(js.Any.fromFunction2(onRenderText))
-    if (!js.isUndefined(persistMenu)) __obj.updateDynamic("persistMenu")(persistMenu)
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
-    if (primaryActionButtonProps != null) __obj.updateDynamic("primaryActionButtonProps")(primaryActionButtonProps)
-    if (!js.isUndefined(primaryDisabled)) __obj.updateDynamic("primaryDisabled")(primaryDisabled)
-    if (!js.isUndefined(renderPersistedMenuHiddenOnMount)) __obj.updateDynamic("renderPersistedMenuHiddenOnMount")(renderPersistedMenuHiddenOnMount)
+    if (!js.isUndefined(persistMenu)) __obj.updateDynamic("persistMenu")(persistMenu.asInstanceOf[js.Any])
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (primaryActionButtonProps != null) __obj.updateDynamic("primaryActionButtonProps")(primaryActionButtonProps.asInstanceOf[js.Any])
+    if (!js.isUndefined(primaryDisabled)) __obj.updateDynamic("primaryDisabled")(primaryDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderPersistedMenuHiddenOnMount)) __obj.updateDynamic("renderPersistedMenuHiddenOnMount")(renderPersistedMenuHiddenOnMount.asInstanceOf[js.Any])
     if (rootProps != null) __obj.updateDynamic("rootProps")(rootProps.asInstanceOf[js.Any])
-    if (secondaryText != null) __obj.updateDynamic("secondaryText")(secondaryText)
-    if (!js.isUndefined(split)) __obj.updateDynamic("split")(split)
-    if (splitButtonAriaLabel != null) __obj.updateDynamic("splitButtonAriaLabel")(splitButtonAriaLabel)
-    if (splitButtonMenuProps != null) __obj.updateDynamic("splitButtonMenuProps")(splitButtonMenuProps)
-    if (styles != null) __obj.updateDynamic("styles")(styles)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (!js.isUndefined(toggle)) __obj.updateDynamic("toggle")(toggle)
-    if (!js.isUndefined(toggled)) __obj.updateDynamic("toggled")(toggled)
+    if (secondaryText != null) __obj.updateDynamic("secondaryText")(secondaryText.asInstanceOf[js.Any])
+    if (!js.isUndefined(split)) __obj.updateDynamic("split")(split.asInstanceOf[js.Any])
+    if (splitButtonAriaLabel != null) __obj.updateDynamic("splitButtonAriaLabel")(splitButtonAriaLabel.asInstanceOf[js.Any])
+    if (splitButtonMenuProps != null) __obj.updateDynamic("splitButtonMenuProps")(splitButtonMenuProps.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (!js.isUndefined(toggle)) __obj.updateDynamic("toggle")(toggle.asInstanceOf[js.Any])
+    if (!js.isUndefined(toggled)) __obj.updateDynamic("toggled")(toggled.asInstanceOf[js.Any])
     if (uniqueId != null) __obj.updateDynamic("uniqueId")(uniqueId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IButtonProps]
   }

@@ -15,8 +15,8 @@ trait BarCode extends js.Object {
 object BarCode {
   @scala.inline
   def apply(buffer: Buffer, data: String, points: js.Array[Point], `type`: String): BarCode = {
-    val __obj = js.Dynamic.literal(buffer = buffer, data = data, points = points)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarCode]
   }
 }

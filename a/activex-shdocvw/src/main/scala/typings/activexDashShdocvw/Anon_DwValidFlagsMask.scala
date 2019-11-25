@@ -12,7 +12,7 @@ trait Anon_DwValidFlagsMask extends js.Object {
 object Anon_DwValidFlagsMask {
   @scala.inline
   def apply(dwValidFlagsMask: Double, dwWindowStateFlags: Double): Anon_DwValidFlagsMask = {
-    val __obj = js.Dynamic.literal(dwValidFlagsMask = dwValidFlagsMask, dwWindowStateFlags = dwWindowStateFlags)
+    val __obj = js.Dynamic.literal(dwValidFlagsMask = dwValidFlagsMask.asInstanceOf[js.Any], dwWindowStateFlags = dwWindowStateFlags.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DwValidFlagsMask]
   }

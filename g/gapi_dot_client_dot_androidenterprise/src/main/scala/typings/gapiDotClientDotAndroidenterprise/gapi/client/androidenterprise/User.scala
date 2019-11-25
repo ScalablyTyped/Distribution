@@ -45,13 +45,13 @@ object User {
     primaryEmail: String = null
   ): User = {
     val __obj = js.Dynamic.literal()
-    if (accountIdentifier != null) __obj.updateDynamic("accountIdentifier")(accountIdentifier)
-    if (accountType != null) __obj.updateDynamic("accountType")(accountType)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (managementType != null) __obj.updateDynamic("managementType")(managementType)
-    if (primaryEmail != null) __obj.updateDynamic("primaryEmail")(primaryEmail)
+    if (accountIdentifier != null) __obj.updateDynamic("accountIdentifier")(accountIdentifier.asInstanceOf[js.Any])
+    if (accountType != null) __obj.updateDynamic("accountType")(accountType.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (managementType != null) __obj.updateDynamic("managementType")(managementType.asInstanceOf[js.Any])
+    if (primaryEmail != null) __obj.updateDynamic("primaryEmail")(primaryEmail.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
 }

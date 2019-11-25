@@ -34,9 +34,9 @@ object ProxySpec {
     protocols: js.Array[Protocol] = null
   ): ProxySpec[D, T, S] = {
     val __obj = js.Dynamic.literal()
-    if (events != null) __obj.updateDynamic("events")(events)
-    if (methods != null) __obj.updateDynamic("methods")(methods)
-    if (protocols != null) __obj.updateDynamic("protocols")(protocols)
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
+    if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxySpec[D, T, S]]
   }
 }

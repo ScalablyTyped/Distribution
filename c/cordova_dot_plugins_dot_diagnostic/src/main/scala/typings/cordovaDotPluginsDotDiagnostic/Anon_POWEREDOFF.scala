@@ -38,7 +38,7 @@ object Anon_POWEREDOFF {
     UNKNOWN: unknown,
     UNSUPPORTED: unsupported
   ): Anon_POWEREDOFF = {
-    val __obj = js.Dynamic.literal(POWERED_OFF = POWERED_OFF, POWERED_ON = POWERED_ON, POWERING_OFF = POWERING_OFF, POWERING_ON = POWERING_ON, RESETTING = RESETTING, UNAUTHORIZED = UNAUTHORIZED, UNKNOWN = UNKNOWN, UNSUPPORTED = UNSUPPORTED)
+    val __obj = js.Dynamic.literal(POWERED_OFF = POWERED_OFF.asInstanceOf[js.Any], POWERED_ON = POWERED_ON.asInstanceOf[js.Any], POWERING_OFF = POWERING_OFF.asInstanceOf[js.Any], POWERING_ON = POWERING_ON.asInstanceOf[js.Any], RESETTING = RESETTING.asInstanceOf[js.Any], UNAUTHORIZED = UNAUTHORIZED.asInstanceOf[js.Any], UNKNOWN = UNKNOWN.asInstanceOf[js.Any], UNSUPPORTED = UNSUPPORTED.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_POWEREDOFF]
   }

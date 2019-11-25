@@ -14,9 +14,9 @@ object ServerOptions {
   @scala.inline
   def apply(certificate: js.Any = null, key: js.Any = null, log: js.Any = null): ServerOptions = {
     val __obj = js.Dynamic.literal()
-    if (certificate != null) __obj.updateDynamic("certificate")(certificate)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (log != null) __obj.updateDynamic("log")(log)
+    if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptions]
   }
 }

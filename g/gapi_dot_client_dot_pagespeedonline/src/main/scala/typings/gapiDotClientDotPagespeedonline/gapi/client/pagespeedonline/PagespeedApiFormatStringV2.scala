@@ -19,8 +19,8 @@ object PagespeedApiFormatStringV2 {
   @scala.inline
   def apply(args: js.Array[Anon_Key] = null, format: String = null): PagespeedApiFormatStringV2 = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args)
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     __obj.asInstanceOf[PagespeedApiFormatStringV2]
   }
 }

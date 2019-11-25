@@ -12,7 +12,7 @@ object Anon_Webkitappearance {
   @scala.inline
   def apply(`-webkit-appearance`: String): Anon_Webkitappearance = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("-webkit-appearance")(`-webkit-appearance`)
+    __obj.updateDynamic("-webkit-appearance")(`-webkit-appearance`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Webkitappearance]
   }
 }

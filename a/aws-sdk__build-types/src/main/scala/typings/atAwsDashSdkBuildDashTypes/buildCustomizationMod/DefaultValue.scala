@@ -20,8 +20,8 @@ trait DefaultValue extends js.Object {
 object DefaultValue {
   @scala.inline
   def apply(expression: String, `type`: value): DefaultValue = {
-    val __obj = js.Dynamic.literal(expression = expression)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultValue]
   }
 }

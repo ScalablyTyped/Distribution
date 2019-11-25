@@ -12,8 +12,8 @@ trait Anon_Curve extends js.Object {
 object Anon_Curve {
   @scala.inline
   def apply(curve: String, pub: String = null): Anon_Curve = {
-    val __obj = js.Dynamic.literal(curve = curve)
-    if (pub != null) __obj.updateDynamic("pub")(pub)
+    val __obj = js.Dynamic.literal(curve = curve.asInstanceOf[js.Any])
+    if (pub != null) __obj.updateDynamic("pub")(pub.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Curve]
   }
 }

@@ -14,8 +14,8 @@ object ILayerBaseState {
   @scala.inline
   def apply(hostId: String = null, layerElement: HTMLElement = null): ILayerBaseState = {
     val __obj = js.Dynamic.literal()
-    if (hostId != null) __obj.updateDynamic("hostId")(hostId)
-    if (layerElement != null) __obj.updateDynamic("layerElement")(layerElement)
+    if (hostId != null) __obj.updateDynamic("hostId")(hostId.asInstanceOf[js.Any])
+    if (layerElement != null) __obj.updateDynamic("layerElement")(layerElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILayerBaseState]
   }
 }

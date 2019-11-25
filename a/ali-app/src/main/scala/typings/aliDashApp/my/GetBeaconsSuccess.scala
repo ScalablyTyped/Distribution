@@ -19,7 +19,7 @@ trait GetBeaconsSuccess extends js.Object {
 object GetBeaconsSuccess {
   @scala.inline
   def apply(beacons: js.Array[Beacon], errCode: String, errMsg: String): GetBeaconsSuccess = {
-    val __obj = js.Dynamic.literal(beacons = beacons, errCode = errCode, errMsg = errMsg)
+    val __obj = js.Dynamic.literal(beacons = beacons.asInstanceOf[js.Any], errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetBeaconsSuccess]
   }

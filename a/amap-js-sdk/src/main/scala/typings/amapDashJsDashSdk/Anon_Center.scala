@@ -24,7 +24,7 @@ object Anon_Center {
     zoom: Int | Double = null
   ): Anon_Center = {
     val __obj = js.Dynamic.literal()
-    if (center != null) __obj.updateDynamic("center")(center)
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (crs != null) __obj.updateDynamic("crs")(crs.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])

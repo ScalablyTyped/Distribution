@@ -22,11 +22,11 @@ object CryptexOpts {
     file: String = null
   ): CryptexOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cacheKey)) __obj.updateDynamic("cacheKey")(cacheKey)
+    if (!js.isUndefined(cacheKey)) __obj.updateDynamic("cacheKey")(cacheKey.asInstanceOf[js.Any])
     if (cacheKeyTimeout != null) __obj.updateDynamic("cacheKeyTimeout")(cacheKeyTimeout.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config)
-    if (env != null) __obj.updateDynamic("env")(env)
-    if (file != null) __obj.updateDynamic("file")(file)
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     __obj.asInstanceOf[CryptexOpts]
   }
 }

@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 */
 trait Breakpoint extends js.Object
 
+object Breakpoint {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def lg: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.lg = this.cast("lg")
+  @scala.inline
+  def md: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.md = this.cast("md")
+  @scala.inline
+  def sm: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.sm = this.cast("sm")
+  @scala.inline
+  def xl: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.xl = this.cast("xl")
+  @scala.inline
+  def xs: typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.xs = this.cast("xs")
+}
+

@@ -19,8 +19,8 @@ object SearchPathOptions {
   @scala.inline
   def apply(searchPath: String = null, transaction: Transaction = null): SearchPathOptions = {
     val __obj = js.Dynamic.literal()
-    if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath)
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath.asInstanceOf[js.Any])
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchPathOptions]
   }
 }

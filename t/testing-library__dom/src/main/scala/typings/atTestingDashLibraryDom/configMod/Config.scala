@@ -19,7 +19,7 @@ object Config {
     defaultHidden: Boolean,
     testIdAttribute: String
   ): Config = {
-    val __obj = js.Dynamic.literal(asyncUtilTimeout = asyncUtilTimeout, asyncWrapper = js.Any.fromFunction1(asyncWrapper), defaultHidden = defaultHidden, testIdAttribute = testIdAttribute)
+    val __obj = js.Dynamic.literal(asyncUtilTimeout = asyncUtilTimeout.asInstanceOf[js.Any], asyncWrapper = js.Any.fromFunction1(asyncWrapper), defaultHidden = defaultHidden.asInstanceOf[js.Any], testIdAttribute = testIdAttribute.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Config]
   }

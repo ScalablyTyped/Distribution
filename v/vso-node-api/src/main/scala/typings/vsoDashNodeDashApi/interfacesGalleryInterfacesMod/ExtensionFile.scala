@@ -13,7 +13,7 @@ trait ExtensionFile extends js.Object {
 object ExtensionFile {
   @scala.inline
   def apply(assetType: String, language: String, source: String): ExtensionFile = {
-    val __obj = js.Dynamic.literal(assetType = assetType, language = language, source = source)
+    val __obj = js.Dynamic.literal(assetType = assetType.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExtensionFile]
   }

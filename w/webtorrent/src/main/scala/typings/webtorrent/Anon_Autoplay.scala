@@ -18,8 +18,8 @@ object Anon_Autoplay {
     maxBlobLength: Int | Double = null
   ): Anon_Autoplay = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls)
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
+    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
     if (maxBlobLength != null) __obj.updateDynamic("maxBlobLength")(maxBlobLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Autoplay]
   }

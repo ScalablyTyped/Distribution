@@ -49,10 +49,10 @@ object ToolExecution {
     toolOutputs: js.Array[ToolOutputReference] = null
   ): ToolExecution = {
     val __obj = js.Dynamic.literal()
-    if (commandLineArguments != null) __obj.updateDynamic("commandLineArguments")(commandLineArguments)
-    if (exitCode != null) __obj.updateDynamic("exitCode")(exitCode)
-    if (toolLogs != null) __obj.updateDynamic("toolLogs")(toolLogs)
-    if (toolOutputs != null) __obj.updateDynamic("toolOutputs")(toolOutputs)
+    if (commandLineArguments != null) __obj.updateDynamic("commandLineArguments")(commandLineArguments.asInstanceOf[js.Any])
+    if (exitCode != null) __obj.updateDynamic("exitCode")(exitCode.asInstanceOf[js.Any])
+    if (toolLogs != null) __obj.updateDynamic("toolLogs")(toolLogs.asInstanceOf[js.Any])
+    if (toolOutputs != null) __obj.updateDynamic("toolOutputs")(toolOutputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolExecution]
   }
 }

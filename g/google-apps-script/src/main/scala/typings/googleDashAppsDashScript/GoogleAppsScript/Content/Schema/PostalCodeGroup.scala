@@ -14,9 +14,9 @@ object PostalCodeGroup {
   @scala.inline
   def apply(country: String = null, name: String = null, postalCodeRanges: js.Array[PostalCodeRange] = null): PostalCodeGroup = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (postalCodeRanges != null) __obj.updateDynamic("postalCodeRanges")(postalCodeRanges)
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (postalCodeRanges != null) __obj.updateDynamic("postalCodeRanges")(postalCodeRanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostalCodeGroup]
   }
 }

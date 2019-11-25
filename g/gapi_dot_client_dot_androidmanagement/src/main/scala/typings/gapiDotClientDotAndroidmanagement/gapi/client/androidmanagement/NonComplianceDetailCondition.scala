@@ -17,9 +17,9 @@ object NonComplianceDetailCondition {
   @scala.inline
   def apply(nonComplianceReason: String = null, packageName: String = null, settingName: String = null): NonComplianceDetailCondition = {
     val __obj = js.Dynamic.literal()
-    if (nonComplianceReason != null) __obj.updateDynamic("nonComplianceReason")(nonComplianceReason)
-    if (packageName != null) __obj.updateDynamic("packageName")(packageName)
-    if (settingName != null) __obj.updateDynamic("settingName")(settingName)
+    if (nonComplianceReason != null) __obj.updateDynamic("nonComplianceReason")(nonComplianceReason.asInstanceOf[js.Any])
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
+    if (settingName != null) __obj.updateDynamic("settingName")(settingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[NonComplianceDetailCondition]
   }
 }

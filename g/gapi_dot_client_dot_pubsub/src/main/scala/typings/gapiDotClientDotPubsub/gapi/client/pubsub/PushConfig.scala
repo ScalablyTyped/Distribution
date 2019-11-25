@@ -41,8 +41,8 @@ object PushConfig {
   @scala.inline
   def apply(attributes: Record[String, String] = null, pushEndpoint: String = null): PushConfig = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (pushEndpoint != null) __obj.updateDynamic("pushEndpoint")(pushEndpoint)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (pushEndpoint != null) __obj.updateDynamic("pushEndpoint")(pushEndpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushConfig]
   }
 }

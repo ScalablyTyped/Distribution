@@ -18,7 +18,7 @@ trait Anon_NeedLoadMoreData extends js.Object {
 object Anon_NeedLoadMoreData {
   @scala.inline
   def apply(needLoadMoreData: js.Function, needLoadMoreDataTop: js.Function): Anon_NeedLoadMoreData = {
-    val __obj = js.Dynamic.literal(needLoadMoreData = needLoadMoreData, needLoadMoreDataTop = needLoadMoreDataTop)
+    val __obj = js.Dynamic.literal(needLoadMoreData = needLoadMoreData.asInstanceOf[js.Any], needLoadMoreDataTop = needLoadMoreDataTop.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_NeedLoadMoreData]
   }

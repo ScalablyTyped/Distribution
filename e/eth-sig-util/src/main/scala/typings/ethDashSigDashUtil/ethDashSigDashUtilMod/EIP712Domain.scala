@@ -23,10 +23,10 @@ object EIP712Domain {
   ): EIP712Domain = {
     val __obj = js.Dynamic.literal()
     if (chainId != null) __obj.updateDynamic("chainId")(chainId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (salt != null) __obj.updateDynamic("salt")(salt)
-    if (verifyingContract != null) __obj.updateDynamic("verifyingContract")(verifyingContract)
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (salt != null) __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])
+    if (verifyingContract != null) __obj.updateDynamic("verifyingContract")(verifyingContract.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[EIP712Domain]
   }
 }

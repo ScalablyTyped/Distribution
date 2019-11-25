@@ -13,7 +13,7 @@ trait ZoomControlOptions extends js.Object {
 object ZoomControlOptions {
   @scala.inline
   def apply(legendDisabled: Boolean, position: Position, style: ZoomControlStyle): ZoomControlOptions = {
-    val __obj = js.Dynamic.literal(legendDisabled = legendDisabled, position = position, style = style)
+    val __obj = js.Dynamic.literal(legendDisabled = legendDisabled.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ZoomControlOptions]
   }

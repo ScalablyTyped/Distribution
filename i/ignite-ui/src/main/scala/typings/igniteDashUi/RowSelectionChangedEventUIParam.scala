@@ -23,9 +23,9 @@ object RowSelectionChangedEventUIParam {
   @scala.inline
   def apply(owner: js.Any = null, row: js.Any = null, selectedRows: js.Array[_] = null): RowSelectionChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (row != null) __obj.updateDynamic("row")(row)
-    if (selectedRows != null) __obj.updateDynamic("selectedRows")(selectedRows)
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    if (selectedRows != null) __obj.updateDynamic("selectedRows")(selectedRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowSelectionChangedEventUIParam]
   }
 }

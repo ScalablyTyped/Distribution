@@ -20,9 +20,9 @@ object TimeOfDayRange {
   @scala.inline
   def apply(earliestTime: String = null, kind: String = null, latestTime: String = null): TimeOfDayRange = {
     val __obj = js.Dynamic.literal()
-    if (earliestTime != null) __obj.updateDynamic("earliestTime")(earliestTime)
-    if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (latestTime != null) __obj.updateDynamic("latestTime")(latestTime)
+    if (earliestTime != null) __obj.updateDynamic("earliestTime")(earliestTime.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (latestTime != null) __obj.updateDynamic("latestTime")(latestTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeOfDayRange]
   }
 }

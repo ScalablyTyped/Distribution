@@ -19,7 +19,7 @@ trait Typeofadsense extends js.Object {
 object Typeofadsense {
   @scala.inline
   def apply(AdUnit: Instantiable2[/* container */ Element, /* opts */ AdUnitOptions, AdUnit]): Typeofadsense = {
-    val __obj = js.Dynamic.literal(AdUnit = AdUnit)
+    val __obj = js.Dynamic.literal(AdUnit = AdUnit.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofadsense]
   }

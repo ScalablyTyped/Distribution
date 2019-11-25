@@ -38,10 +38,10 @@ object OnFormDataSubmitEventUIParam {
   ): OnFormDataSubmitEventUIParam = {
     val __obj = js.Dynamic.literal()
     if (fileId != null) __obj.updateDynamic("fileId")(fileId.asInstanceOf[js.Any])
-    if (fileInfo != null) __obj.updateDynamic("fileInfo")(fileInfo)
-    if (formData != null) __obj.updateDynamic("formData")(formData)
-    if (owner != null) __obj.updateDynamic("owner")(owner)
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    if (fileInfo != null) __obj.updateDynamic("fileInfo")(fileInfo.asInstanceOf[js.Any])
+    if (formData != null) __obj.updateDynamic("formData")(formData.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnFormDataSubmitEventUIParam]
   }
 }

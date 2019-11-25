@@ -55,11 +55,11 @@ object BasemapProperties {
   ): BasemapProperties = {
     val __obj = js.Dynamic.literal()
     if (baseLayers != null) __obj.updateDynamic("baseLayers")(baseLayers.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem.asInstanceOf[js.Any])
     if (referenceLayers != null) __obj.updateDynamic("referenceLayers")(referenceLayers.asInstanceOf[js.Any])
-    if (thumbnailUrl != null) __obj.updateDynamic("thumbnailUrl")(thumbnailUrl)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (thumbnailUrl != null) __obj.updateDynamic("thumbnailUrl")(thumbnailUrl.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasemapProperties]
   }
 }

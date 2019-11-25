@@ -16,7 +16,7 @@ trait ExecOutputReturnValue extends js.Object {
 object ExecOutputReturnValue {
   @scala.inline
   def apply(code: Double, stderr: String, stdout: String): ExecOutputReturnValue = {
-    val __obj = js.Dynamic.literal(code = code, stderr = stderr, stdout = stdout)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ExecOutputReturnValue]
   }

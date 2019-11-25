@@ -41,11 +41,11 @@ object RequestInfo {
     operationName: String = null,
     variables: StringDictionary[js.Any] = null
   ): RequestInfo = {
-    val __obj = js.Dynamic.literal(result = result)
-    if (context != null) __obj.updateDynamic("context")(context)
-    if (document != null) __obj.updateDynamic("document")(document)
-    if (operationName != null) __obj.updateDynamic("operationName")(operationName)
-    if (variables != null) __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (operationName != null) __obj.updateDynamic("operationName")(operationName.asInstanceOf[js.Any])
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestInfo]
   }
 }

@@ -23,8 +23,8 @@ object ResourcesImageConfig {
     density: String = null,
     orientation: landscape | portrait = null
   ): ResourcesImageConfig = {
-    val __obj = js.Dynamic.literal(height = height, name = name, width = width)
-    if (density != null) __obj.updateDynamic("density")(density)
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourcesImageConfig]
   }

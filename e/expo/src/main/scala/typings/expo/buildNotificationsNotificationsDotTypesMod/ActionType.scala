@@ -24,11 +24,11 @@ object ActionType {
     isDestructive: js.UndefOr[Boolean] = js.undefined,
     textInput: Anon_Placeholder = null
   ): ActionType = {
-    val __obj = js.Dynamic.literal(actionId = actionId, buttonTitle = buttonTitle)
-    if (!js.isUndefined(doNotOpenInForeground)) __obj.updateDynamic("doNotOpenInForeground")(doNotOpenInForeground)
-    if (!js.isUndefined(isAuthenticationRequired)) __obj.updateDynamic("isAuthenticationRequired")(isAuthenticationRequired)
-    if (!js.isUndefined(isDestructive)) __obj.updateDynamic("isDestructive")(isDestructive)
-    if (textInput != null) __obj.updateDynamic("textInput")(textInput)
+    val __obj = js.Dynamic.literal(actionId = actionId.asInstanceOf[js.Any], buttonTitle = buttonTitle.asInstanceOf[js.Any])
+    if (!js.isUndefined(doNotOpenInForeground)) __obj.updateDynamic("doNotOpenInForeground")(doNotOpenInForeground.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAuthenticationRequired)) __obj.updateDynamic("isAuthenticationRequired")(isAuthenticationRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDestructive)) __obj.updateDynamic("isDestructive")(isDestructive.asInstanceOf[js.Any])
+    if (textInput != null) __obj.updateDynamic("textInput")(textInput.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionType]
   }
 }

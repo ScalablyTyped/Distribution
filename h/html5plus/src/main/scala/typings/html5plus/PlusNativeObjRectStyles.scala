@@ -58,10 +58,10 @@ object PlusNativeObjRectStyles {
     radius: String = null
   ): PlusNativeObjRectStyles = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth)
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (radius != null) __obj.updateDynamic("radius")(radius)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeObjRectStyles]
   }
 }

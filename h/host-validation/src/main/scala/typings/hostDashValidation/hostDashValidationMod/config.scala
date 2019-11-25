@@ -30,9 +30,9 @@ object config {
   ): config = {
     val __obj = js.Dynamic.literal()
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction3(fail))
-    if (hosts != null) __obj.updateDynamic("hosts")(hosts)
+    if (hosts != null) __obj.updateDynamic("hosts")(hosts.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (referers != null) __obj.updateDynamic("referers")(referers)
+    if (referers != null) __obj.updateDynamic("referers")(referers.asInstanceOf[js.Any])
     __obj.asInstanceOf[config]
   }
 }

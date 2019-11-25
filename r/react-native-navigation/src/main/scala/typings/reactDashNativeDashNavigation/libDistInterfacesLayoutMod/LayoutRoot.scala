@@ -16,9 +16,9 @@ trait LayoutRoot extends js.Object {
 object LayoutRoot {
   @scala.inline
   def apply(root: Layout[js.Object], modals: js.Any = null, overlays: js.Any = null): LayoutRoot = {
-    val __obj = js.Dynamic.literal(root = root)
-    if (modals != null) __obj.updateDynamic("modals")(modals)
-    if (overlays != null) __obj.updateDynamic("overlays")(overlays)
+    val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
+    if (modals != null) __obj.updateDynamic("modals")(modals.asInstanceOf[js.Any])
+    if (overlays != null) __obj.updateDynamic("overlays")(overlays.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutRoot]
   }
 }

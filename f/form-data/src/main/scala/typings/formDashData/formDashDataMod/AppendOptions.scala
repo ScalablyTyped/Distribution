@@ -22,9 +22,9 @@ object AppendOptions {
     knownLength: Int | Double = null
   ): AppendOptions = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
-    if (filename != null) __obj.updateDynamic("filename")(filename)
-    if (filepath != null) __obj.updateDynamic("filepath")(filepath)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (filepath != null) __obj.updateDynamic("filepath")(filepath.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (knownLength != null) __obj.updateDynamic("knownLength")(knownLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppendOptions]

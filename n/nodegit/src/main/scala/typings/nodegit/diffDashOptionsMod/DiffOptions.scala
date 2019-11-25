@@ -42,19 +42,19 @@ object DiffOptions {
     version: Int | Double = null
   ): DiffOptions = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (contextLines != null) __obj.updateDynamic("contextLines")(contextLines.asInstanceOf[js.Any])
     if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
     if (idAbbrev != null) __obj.updateDynamic("idAbbrev")(idAbbrev.asInstanceOf[js.Any])
     if (ignoreSubmodules != null) __obj.updateDynamic("ignoreSubmodules")(ignoreSubmodules.asInstanceOf[js.Any])
     if (interhunkLines != null) __obj.updateDynamic("interhunkLines")(interhunkLines.asInstanceOf[js.Any])
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    if (newPrefix != null) __obj.updateDynamic("newPrefix")(newPrefix)
-    if (notifyCb != null) __obj.updateDynamic("notifyCb")(notifyCb)
-    if (oldPrefix != null) __obj.updateDynamic("oldPrefix")(oldPrefix)
+    if (newPrefix != null) __obj.updateDynamic("newPrefix")(newPrefix.asInstanceOf[js.Any])
+    if (notifyCb != null) __obj.updateDynamic("notifyCb")(notifyCb.asInstanceOf[js.Any])
+    if (oldPrefix != null) __obj.updateDynamic("oldPrefix")(oldPrefix.asInstanceOf[js.Any])
     if (pathspec != null) __obj.updateDynamic("pathspec")(pathspec.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload)
-    if (progressCb != null) __obj.updateDynamic("progressCb")(progressCb)
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (progressCb != null) __obj.updateDynamic("progressCb")(progressCb.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiffOptions]
   }

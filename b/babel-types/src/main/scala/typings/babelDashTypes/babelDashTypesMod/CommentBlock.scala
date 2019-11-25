@@ -17,8 +17,8 @@ object CommentBlock {
     `type`: typings.babelDashTypes.babelDashTypesStrings.CommentBlock,
     value: String
   ): CommentBlock = {
-    val __obj = js.Dynamic.literal(end = end, loc = loc, start = start, value = value)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentBlock]
   }
 }

@@ -53,13 +53,13 @@ object OptionDefinition {
     multiple: js.UndefOr[Boolean] = js.undefined,
     `type`: /* input */ String => _ = null
   ): OptionDefinition = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (!js.isUndefined(defaultOption)) __obj.updateDynamic("defaultOption")(defaultOption)
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultOption)) __obj.updateDynamic("defaultOption")(defaultOption.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (!js.isUndefined(lazyMultiple)) __obj.updateDynamic("lazyMultiple")(lazyMultiple)
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (!js.isUndefined(lazyMultiple)) __obj.updateDynamic("lazyMultiple")(lazyMultiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(js.Any.fromFunction1(`type`))
     __obj.asInstanceOf[OptionDefinition]
   }

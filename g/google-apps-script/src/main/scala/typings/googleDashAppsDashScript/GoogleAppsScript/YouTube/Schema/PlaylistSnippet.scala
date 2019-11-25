@@ -30,15 +30,15 @@ object PlaylistSnippet {
     title: String = null
   ): PlaylistSnippet = {
     val __obj = js.Dynamic.literal()
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
-    if (channelTitle != null) __obj.updateDynamic("channelTitle")(channelTitle)
-    if (defaultLanguage != null) __obj.updateDynamic("defaultLanguage")(defaultLanguage)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (localized != null) __obj.updateDynamic("localized")(localized)
-    if (publishedAt != null) __obj.updateDynamic("publishedAt")(publishedAt)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
-    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
+    if (channelTitle != null) __obj.updateDynamic("channelTitle")(channelTitle.asInstanceOf[js.Any])
+    if (defaultLanguage != null) __obj.updateDynamic("defaultLanguage")(defaultLanguage.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (localized != null) __obj.updateDynamic("localized")(localized.asInstanceOf[js.Any])
+    if (publishedAt != null) __obj.updateDynamic("publishedAt")(publishedAt.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaylistSnippet]
   }
 }

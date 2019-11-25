@@ -16,7 +16,7 @@ object ContainerInfo {
   @scala.inline
   def apply(image: String = null): ContainerInfo = {
     val __obj = js.Dynamic.literal()
-    if (image != null) __obj.updateDynamic("image")(image)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerInfo]
   }
 }

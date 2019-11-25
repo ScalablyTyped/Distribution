@@ -24,7 +24,7 @@ object EmscriptenFSNode {
     parent: EmscriptenFSNode,
     stream_ops: EmscriptenStreamOps
   ): EmscriptenFSNode = {
-    val __obj = js.Dynamic.literal(mode = mode, mount = mount, name = name, node_ops = node_ops, parent = parent, stream_ops = stream_ops)
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], mount = mount.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_ops = node_ops.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], stream_ops = stream_ops.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EmscriptenFSNode]
   }

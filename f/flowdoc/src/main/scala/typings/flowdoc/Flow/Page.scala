@@ -24,9 +24,9 @@ object Page {
     `type`: PAGE,
     startNodeID: String = null
   ): Page = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, children = children, id = id, name = name)
-    __obj.updateDynamic("type")(`type`)
-    if (startNodeID != null) __obj.updateDynamic("startNodeID")(startNodeID)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (startNodeID != null) __obj.updateDynamic("startNodeID")(startNodeID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Page]
   }
 }

@@ -11,7 +11,7 @@ trait GridGrouping extends js.Object {
 object GridGrouping {
   @scala.inline
   def apply(groupBy: String): GridGrouping = {
-    val __obj = js.Dynamic.literal(groupBy = groupBy)
+    val __obj = js.Dynamic.literal(groupBy = groupBy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GridGrouping]
   }

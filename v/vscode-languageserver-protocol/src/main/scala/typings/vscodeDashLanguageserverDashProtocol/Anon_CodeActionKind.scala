@@ -15,7 +15,7 @@ trait Anon_CodeActionKind extends js.Object {
 object Anon_CodeActionKind {
   @scala.inline
   def apply(codeActionKind: Anon_ValueSetArrayCodeActionKind): Anon_CodeActionKind = {
-    val __obj = js.Dynamic.literal(codeActionKind = codeActionKind)
+    val __obj = js.Dynamic.literal(codeActionKind = codeActionKind.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CodeActionKind]
   }

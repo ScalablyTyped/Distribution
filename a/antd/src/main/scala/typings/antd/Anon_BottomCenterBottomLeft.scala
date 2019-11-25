@@ -23,7 +23,7 @@ object Anon_BottomCenterBottomLeft {
     mouseLeaveDelay: Double,
     placement: bottomRight | topLeft | topCenter | topRight | bottomLeft | bottomCenter
   ): Anon_BottomCenterBottomLeft = {
-    val __obj = js.Dynamic.literal(mouseEnterDelay = mouseEnterDelay, mouseLeaveDelay = mouseLeaveDelay, placement = placement.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(mouseEnterDelay = mouseEnterDelay.asInstanceOf[js.Any], mouseLeaveDelay = mouseLeaveDelay.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BottomCenterBottomLeft]
   }

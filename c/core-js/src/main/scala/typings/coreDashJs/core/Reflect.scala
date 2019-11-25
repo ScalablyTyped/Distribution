@@ -1,9 +1,6 @@
 package typings.coreDashJs.core
 
-import typings.coreDashJs.Array
 import typings.coreDashJs.Fn_Target
-import typings.coreDashJs.Function
-import typings.coreDashJs.Object
 import typings.std.ArrayLike
 import typings.std.IterableIterator
 import typings.std.PropertyDescriptor
@@ -16,8 +13,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object Reflect extends js.Object {
   @JSName("apply")
-  def apply(target: Function, thisArgument: js.Any, argumentsList: ArrayLike[_]): js.Any = js.native
-  def construct(target: Function, argumentsList: ArrayLike[_]): js.Any = js.native
+  def apply(target: typings.coreDashJs.Function, thisArgument: js.Any, argumentsList: ArrayLike[_]): js.Any = js.native
+  def construct(target: typings.coreDashJs.Function, argumentsList: ArrayLike[_]): js.Any = js.native
   /**
     * Define a unique metadata entry on the target.
     * @param metadataKey A key used to store and retrieve metadata.
@@ -40,9 +37,19 @@ object Reflect extends js.Object {
     *  }
     * ```
     */
-  def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: Object): Unit = js.native
-  def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: Object, targetKey: java.lang.String): Unit = js.native
-  def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: Object, targetKey: js.Symbol): Unit = js.native
+  def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: typings.coreDashJs.Object): Unit = js.native
+  def defineMetadata(
+    metadataKey: js.Any,
+    metadataValue: js.Any,
+    target: typings.coreDashJs.Object,
+    targetKey: java.lang.String
+  ): Unit = js.native
+  def defineMetadata(
+    metadataKey: js.Any,
+    metadataValue: js.Any,
+    target: typings.coreDashJs.Object,
+    targetKey: js.Symbol
+  ): Unit = js.native
   def defineProperty(target: js.Any, propertyKey: PropertyKey, attributes: PropertyDescriptor): Boolean = js.native
   /**
     * Deletes the metadata entry from the target object with the provided key.
@@ -61,9 +68,9 @@ object Reflect extends js.Object {
     *  result = Reflect.deleteMetadata("custom:annotation", Example);
     * ```
     */
-  def deleteMetadata(metadataKey: js.Any, target: Object): Boolean = js.native
-  def deleteMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): Boolean = js.native
-  def deleteMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): Boolean = js.native
+  def deleteMetadata(metadataKey: js.Any, target: typings.coreDashJs.Object): Boolean = js.native
+  def deleteMetadata(metadataKey: js.Any, target: typings.coreDashJs.Object, targetKey: java.lang.String): Boolean = js.native
+  def deleteMetadata(metadataKey: js.Any, target: typings.coreDashJs.Object, targetKey: js.Symbol): Boolean = js.native
   def deleteProperty(target: js.Any, propertyKey: PropertyKey): Boolean = js.native
   def enumerate(target: js.Any): IterableIterator[_] = js.native
   def get(target: js.Any, propertyKey: PropertyKey): js.Any = js.native
@@ -85,9 +92,9 @@ object Reflect extends js.Object {
     *  result = Reflect.getMetadata("custom:annotation", Example);
     * ```
     */
-  def getMetadata(metadataKey: js.Any, target: Object): js.Any = js.native
-  def getMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): js.Any = js.native
-  def getMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): js.Any = js.native
+  def getMetadata(metadataKey: js.Any, target: typings.coreDashJs.Object): js.Any = js.native
+  def getMetadata(metadataKey: js.Any, target: typings.coreDashJs.Object, targetKey: java.lang.String): js.Any = js.native
+  def getMetadata(metadataKey: js.Any, target: typings.coreDashJs.Object, targetKey: js.Symbol): js.Any = js.native
   /**
     * Gets the metadata keys defined on the target object or its prototype chain.
     * @param target The target object on which the metadata is defined.
@@ -104,9 +111,9 @@ object Reflect extends js.Object {
     *  result = Reflect.getMetadataKeys(Example);
     * ```
     */
-  def getMetadataKeys(target: Object): Array[_] = js.native
-  def getMetadataKeys(target: Object, targetKey: java.lang.String): Array[_] = js.native
-  def getMetadataKeys(target: Object, targetKey: js.Symbol): Array[_] = js.native
+  def getMetadataKeys(target: typings.coreDashJs.Object): typings.coreDashJs.Array[_] = js.native
+  def getMetadataKeys(target: typings.coreDashJs.Object, targetKey: java.lang.String): typings.coreDashJs.Array[_] = js.native
+  def getMetadataKeys(target: typings.coreDashJs.Object, targetKey: js.Symbol): typings.coreDashJs.Array[_] = js.native
   /**
     * Gets the metadata value for the provided metadata key on the target object.
     * @param metadataKey A key used to store and retrieve metadata.
@@ -124,9 +131,9 @@ object Reflect extends js.Object {
     *  result = Reflect.getOwnMetadata("custom:annotation", Example);
     * ```
     */
-  def getOwnMetadata(metadataKey: js.Any, target: Object): js.Any = js.native
-  def getOwnMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): js.Any = js.native
-  def getOwnMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): js.Any = js.native
+  def getOwnMetadata(metadataKey: js.Any, target: typings.coreDashJs.Object): js.Any = js.native
+  def getOwnMetadata(metadataKey: js.Any, target: typings.coreDashJs.Object, targetKey: java.lang.String): js.Any = js.native
+  def getOwnMetadata(metadataKey: js.Any, target: typings.coreDashJs.Object, targetKey: js.Symbol): js.Any = js.native
   /**
     * Gets the unique metadata keys defined on the target object.
     * @param target The target object on which the metadata is defined.
@@ -143,9 +150,9 @@ object Reflect extends js.Object {
     *  result = Reflect.getOwnMetadataKeys(Example);
     * ```
     */
-  def getOwnMetadataKeys(target: Object): Array[_] = js.native
-  def getOwnMetadataKeys(target: Object, targetKey: java.lang.String): Array[_] = js.native
-  def getOwnMetadataKeys(target: Object, targetKey: js.Symbol): Array[_] = js.native
+  def getOwnMetadataKeys(target: typings.coreDashJs.Object): typings.coreDashJs.Array[_] = js.native
+  def getOwnMetadataKeys(target: typings.coreDashJs.Object, targetKey: java.lang.String): typings.coreDashJs.Array[_] = js.native
+  def getOwnMetadataKeys(target: typings.coreDashJs.Object, targetKey: js.Symbol): typings.coreDashJs.Array[_] = js.native
   def getOwnPropertyDescriptor(target: js.Any, propertyKey: PropertyKey): PropertyDescriptor = js.native
   def getPrototypeOf(target: js.Any): js.Any = js.native
   def has(target: js.Any, propertyKey: java.lang.String): Boolean = js.native
@@ -167,9 +174,9 @@ object Reflect extends js.Object {
     *  result = Reflect.hasMetadata("custom:annotation", Example);
     * ```
     */
-  def hasMetadata(metadataKey: js.Any, target: Object): Boolean = js.native
-  def hasMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): Boolean = js.native
-  def hasMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): Boolean = js.native
+  def hasMetadata(metadataKey: js.Any, target: typings.coreDashJs.Object): Boolean = js.native
+  def hasMetadata(metadataKey: js.Any, target: typings.coreDashJs.Object, targetKey: java.lang.String): Boolean = js.native
+  def hasMetadata(metadataKey: js.Any, target: typings.coreDashJs.Object, targetKey: js.Symbol): Boolean = js.native
   /**
     * Gets a value indicating whether the target object has the provided metadata key defined.
     * @param metadataKey A key used to store and retrieve metadata.
@@ -188,9 +195,9 @@ object Reflect extends js.Object {
     *  result = Reflect.hasOwnMetadata("custom:annotation", Example);
     * ```
     */
-  def hasOwnMetadata(metadataKey: js.Any, target: Object): Boolean = js.native
-  def hasOwnMetadata(metadataKey: js.Any, target: Object, targetKey: java.lang.String): Boolean = js.native
-  def hasOwnMetadata(metadataKey: js.Any, target: Object, targetKey: js.Symbol): Boolean = js.native
+  def hasOwnMetadata(metadataKey: js.Any, target: typings.coreDashJs.Object): Boolean = js.native
+  def hasOwnMetadata(metadataKey: js.Any, target: typings.coreDashJs.Object, targetKey: java.lang.String): Boolean = js.native
+  def hasOwnMetadata(metadataKey: js.Any, target: typings.coreDashJs.Object, targetKey: js.Symbol): Boolean = js.native
   def isExtensible(target: js.Any): Boolean = js.native
   /**
     * A default metadata decorator factory that can be used on a class, class member, or parameter.
@@ -236,7 +243,7 @@ object Reflect extends js.Object {
     * ```
     */
   def metadata(metadataKey: js.Any, metadataValue: js.Any): Fn_Target = js.native
-  def ownKeys(target: js.Any): Array[PropertyKey] = js.native
+  def ownKeys(target: js.Any): typings.coreDashJs.Array[PropertyKey] = js.native
   def preventExtensions(target: js.Any): Boolean = js.native
   def set(target: js.Any, propertyKey: PropertyKey, value: js.Any): Boolean = js.native
   def set(target: js.Any, propertyKey: PropertyKey, value: js.Any, receiver: js.Any): Boolean = js.native

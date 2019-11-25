@@ -12,7 +12,7 @@ trait _Impl extends js.Object {
 object _Impl {
   @scala.inline
   def apply(computer: ComputerSettings, mobile: MobileSettings): _Impl = {
-    val __obj = js.Dynamic.literal(computer = computer, mobile = mobile)
+    val __obj = js.Dynamic.literal(computer = computer.asInstanceOf[js.Any], mobile = mobile.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

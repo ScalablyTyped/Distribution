@@ -14,8 +14,8 @@ object NotDraggingStyle {
   @scala.inline
   def apply(transform: String = null, transition: none = null): NotDraggingStyle = {
     val __obj = js.Dynamic.literal()
-    if (transform != null) __obj.updateDynamic("transform")(transform)
-    if (transition != null) __obj.updateDynamic("transition")(transition)
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
+    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotDraggingStyle]
   }
 }

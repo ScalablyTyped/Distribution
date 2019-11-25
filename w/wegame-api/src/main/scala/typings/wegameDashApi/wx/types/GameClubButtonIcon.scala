@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait GameClubButtonIcon extends js.Object
 
+object GameClubButtonIcon {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def dark: typings.wegameDashApi.wegameDashApiStrings.dark = this.cast("dark")
+  @scala.inline
+  def green: typings.wegameDashApi.wegameDashApiStrings.green = this.cast("green")
+  @scala.inline
+  def light: typings.wegameDashApi.wegameDashApiStrings.light = this.cast("light")
+  @scala.inline
+  def white: typings.wegameDashApi.wegameDashApiStrings.white = this.cast("white")
+}
+

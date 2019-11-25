@@ -36,9 +36,9 @@ object _UnmarshalledCORSRule {
     ExposeHeaders: js.Array[String] = null,
     MaxAgeSeconds: Int | Double = null
   ): _UnmarshalledCORSRule = {
-    val __obj = js.Dynamic.literal(AllowedMethods = AllowedMethods, AllowedOrigins = AllowedOrigins)
-    if (AllowedHeaders != null) __obj.updateDynamic("AllowedHeaders")(AllowedHeaders)
-    if (ExposeHeaders != null) __obj.updateDynamic("ExposeHeaders")(ExposeHeaders)
+    val __obj = js.Dynamic.literal(AllowedMethods = AllowedMethods.asInstanceOf[js.Any], AllowedOrigins = AllowedOrigins.asInstanceOf[js.Any])
+    if (AllowedHeaders != null) __obj.updateDynamic("AllowedHeaders")(AllowedHeaders.asInstanceOf[js.Any])
+    if (ExposeHeaders != null) __obj.updateDynamic("ExposeHeaders")(ExposeHeaders.asInstanceOf[js.Any])
     if (MaxAgeSeconds != null) __obj.updateDynamic("MaxAgeSeconds")(MaxAgeSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[_UnmarshalledCORSRule]
   }

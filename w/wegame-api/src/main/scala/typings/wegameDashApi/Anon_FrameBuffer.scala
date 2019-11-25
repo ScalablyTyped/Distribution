@@ -13,7 +13,7 @@ trait Anon_FrameBuffer extends js.Object {
 object Anon_FrameBuffer {
   @scala.inline
   def apply(frameBuffer: ArrayBuffer, isLastFrame: Boolean): Anon_FrameBuffer = {
-    val __obj = js.Dynamic.literal(frameBuffer = frameBuffer, isLastFrame = isLastFrame)
+    val __obj = js.Dynamic.literal(frameBuffer = frameBuffer.asInstanceOf[js.Any], isLastFrame = isLastFrame.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_FrameBuffer]
   }

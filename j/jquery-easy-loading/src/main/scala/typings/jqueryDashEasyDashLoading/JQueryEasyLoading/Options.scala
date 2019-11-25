@@ -90,16 +90,16 @@ object Options {
     zIndex: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (hiddenClass != null) __obj.updateDynamic("hiddenClass")(hiddenClass)
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (hiddenClass != null) __obj.updateDynamic("hiddenClass")(hiddenClass.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
     if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction1(onStart))
     if (onStop != null) __obj.updateDynamic("onStop")(js.Any.fromFunction1(onStop))
-    if (overlay != null) __obj.updateDynamic("overlay")(overlay)
-    if (shownClass != null) __obj.updateDynamic("shownClass")(shownClass)
-    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start)
-    if (!js.isUndefined(stoppable)) __obj.updateDynamic("stoppable")(stoppable)
-    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
+    if (shownClass != null) __obj.updateDynamic("shownClass")(shownClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(stoppable)) __obj.updateDynamic("stoppable")(stoppable.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

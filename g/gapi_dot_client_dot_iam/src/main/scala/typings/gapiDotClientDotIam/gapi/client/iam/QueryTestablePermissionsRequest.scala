@@ -27,9 +27,9 @@ object QueryTestablePermissionsRequest {
   @scala.inline
   def apply(fullResourceName: String = null, pageSize: Int | Double = null, pageToken: String = null): QueryTestablePermissionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (fullResourceName != null) __obj.updateDynamic("fullResourceName")(fullResourceName)
+    if (fullResourceName != null) __obj.updateDynamic("fullResourceName")(fullResourceName.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryTestablePermissionsRequest]
   }
 }

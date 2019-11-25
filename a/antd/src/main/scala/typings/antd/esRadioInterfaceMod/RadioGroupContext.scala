@@ -12,7 +12,7 @@ trait RadioGroupContext extends js.Object {
 object RadioGroupContext {
   @scala.inline
   def apply(radioGroup: Anon_DisabledName): RadioGroupContext = {
-    val __obj = js.Dynamic.literal(radioGroup = radioGroup)
+    val __obj = js.Dynamic.literal(radioGroup = radioGroup.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RadioGroupContext]
   }

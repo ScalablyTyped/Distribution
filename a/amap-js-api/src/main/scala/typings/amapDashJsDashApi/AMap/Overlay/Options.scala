@@ -43,12 +43,12 @@ object Options {
     map: Map = null
   ): Options[ExtraData] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubble)) __obj.updateDynamic("bubble")(bubble)
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (!js.isUndefined(bubble)) __obj.updateDynamic("bubble")(bubble.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.asInstanceOf[js.Any])
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
     if (extData != null) __obj.updateDynamic("extData")(extData.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map)
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options[ExtraData]]
   }
 }

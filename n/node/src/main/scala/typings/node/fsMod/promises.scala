@@ -18,7 +18,7 @@ import typings.node.Buffer
 import typings.node.BufferEncoding
 import typings.node.NodeJS.ArrayBufferView
 import typings.node.fsMod.promises.FileHandle
-import typings.node.nodeStrings.buffer
+import typings.node.nodeStrings.buffer_
 import typings.std.Date
 import typings.std.Uint8Array
 import scala.scalajs.js
@@ -326,7 +326,7 @@ object promises extends js.Object {
   def mkdtemp(prefix: java.lang.String, options: Anon_EncodingNull): js.Promise[java.lang.String | Buffer] = js.native
   def mkdtemp(prefix: java.lang.String, options: BufferEncoding): js.Promise[java.lang.String] = js.native
   @JSName("mkdtemp")
-  def mkdtemp_buffer(prefix: java.lang.String, options: buffer): js.Promise[Buffer] = js.native
+  def mkdtemp_buffer(prefix: java.lang.String, options: buffer_): js.Promise[Buffer] = js.native
   /**
     * Asynchronous open(2) - open and possibly create a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -407,7 +407,7 @@ object promises extends js.Object {
   def readdir(path: PathLike, options: Anon_EncodingTrue): js.Promise[js.Array[Dirent]] = js.native
   def readdir(path: PathLike, options: BufferEncoding): js.Promise[js.Array[java.lang.String]] = js.native
   @JSName("readdir")
-  def readdir_buffer(path: PathLike, options: buffer): js.Promise[js.Array[Buffer]] = js.native
+  def readdir_buffer(path: PathLike, options: buffer_): js.Promise[js.Array[Buffer]] = js.native
   /**
     * Asynchronous readlink(2) - read value of a symbolic link.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -425,7 +425,7 @@ object promises extends js.Object {
   def readlink(path: PathLike, options: Anon_EncodingNull): js.Promise[java.lang.String | Buffer] = js.native
   def readlink(path: PathLike, options: BufferEncoding): js.Promise[java.lang.String] = js.native
   @JSName("readlink")
-  def readlink_buffer(path: PathLike, options: buffer): js.Promise[Buffer] = js.native
+  def readlink_buffer(path: PathLike, options: buffer_): js.Promise[Buffer] = js.native
   /**
     * Asynchronous realpath(3) - return the canonicalized absolute pathname.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -443,7 +443,7 @@ object promises extends js.Object {
   def realpath(path: PathLike, options: Anon_EncodingNull): js.Promise[java.lang.String | Buffer] = js.native
   def realpath(path: PathLike, options: BufferEncoding): js.Promise[java.lang.String] = js.native
   @JSName("realpath")
-  def realpath_buffer(path: PathLike, options: buffer): js.Promise[Buffer] = js.native
+  def realpath_buffer(path: PathLike, options: buffer_): js.Promise[Buffer] = js.native
   /**
     * Asynchronous rename(2) - Change the name or location of a file or directory.
     * @param oldPath A path to a file. If a URL is provided, it must use the `file:` protocol.

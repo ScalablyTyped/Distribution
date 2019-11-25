@@ -11,7 +11,7 @@ trait SetTraceParams extends js.Object {
 object SetTraceParams {
   @scala.inline
   def apply(value: TraceValues): SetTraceParams = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SetTraceParams]
   }

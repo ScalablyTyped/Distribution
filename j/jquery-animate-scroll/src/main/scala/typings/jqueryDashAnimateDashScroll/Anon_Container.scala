@@ -15,7 +15,7 @@ trait Anon_Container extends js.Object {
 object Anon_Container {
   @scala.inline
   def apply($container: JQuery, offset: Double, speed: Double): Anon_Container = {
-    val __obj = js.Dynamic.literal($container = $container, offset = offset, speed = speed)
+    val __obj = js.Dynamic.literal($container = $container.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Container]
   }

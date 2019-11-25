@@ -23,7 +23,7 @@ object IWorkflowAssignment {
     Description_DEPRECATED: IPropertyValue,
     MonitoredBy_DEPRECATED: IPropertyValue
   ): IWorkflowAssignment = {
-    val __obj = js.Dynamic.literal(AssignedTo_DEPRECATED = AssignedTo_DEPRECATED, Clone_DEPRECATED = js.Any.fromFunction0(Clone_DEPRECATED), CompletedBy_DEPRECATED = CompletedBy_DEPRECATED, Deadline_DEPRECATED = Deadline_DEPRECATED, Description_DEPRECATED = Description_DEPRECATED, MonitoredBy_DEPRECATED = MonitoredBy_DEPRECATED)
+    val __obj = js.Dynamic.literal(AssignedTo_DEPRECATED = AssignedTo_DEPRECATED.asInstanceOf[js.Any], Clone_DEPRECATED = js.Any.fromFunction0(Clone_DEPRECATED), CompletedBy_DEPRECATED = CompletedBy_DEPRECATED.asInstanceOf[js.Any], Deadline_DEPRECATED = Deadline_DEPRECATED.asInstanceOf[js.Any], Description_DEPRECATED = Description_DEPRECATED.asInstanceOf[js.Any], MonitoredBy_DEPRECATED = MonitoredBy_DEPRECATED.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IWorkflowAssignment]
   }

@@ -14,3 +14,14 @@ import scala.scalajs.js.annotation._
 */
 trait ChangeType extends js.Object
 
+object ChangeType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def insert: typings.atJupyterlabObservables.atJupyterlabObservablesStrings.insert = this.cast("insert")
+  @scala.inline
+  def remove: typings.atJupyterlabObservables.atJupyterlabObservablesStrings.remove = this.cast("remove")
+  @scala.inline
+  def set: typings.atJupyterlabObservables.atJupyterlabObservablesStrings.set = this.cast("set")
+}
+

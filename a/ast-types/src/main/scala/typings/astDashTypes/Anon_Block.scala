@@ -29,13 +29,13 @@ object Anon_Block {
     handlers: js.Array[CatchClauseKind] = null,
     loc: SourceLocationKind = null
   ): Anon_Block = {
-    val __obj = js.Dynamic.literal(block = block)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (finalizer != null) __obj.updateDynamic("finalizer")(finalizer)
-    if (guardedHandlers != null) __obj.updateDynamic("guardedHandlers")(guardedHandlers)
-    if (handler != null) __obj.updateDynamic("handler")(handler)
-    if (handlers != null) __obj.updateDynamic("handlers")(handlers)
-    if (loc != null) __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (finalizer != null) __obj.updateDynamic("finalizer")(finalizer.asInstanceOf[js.Any])
+    if (guardedHandlers != null) __obj.updateDynamic("guardedHandlers")(guardedHandlers.asInstanceOf[js.Any])
+    if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
+    if (handlers != null) __obj.updateDynamic("handlers")(handlers.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Block]
   }
 }

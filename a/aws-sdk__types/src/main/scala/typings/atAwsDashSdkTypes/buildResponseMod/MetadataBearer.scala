@@ -15,7 +15,7 @@ trait MetadataBearer extends js.Object {
 object MetadataBearer {
   @scala.inline
   def apply($metadata: ResponseMetadata): MetadataBearer = {
-    val __obj = js.Dynamic.literal($metadata = $metadata)
+    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MetadataBearer]
   }

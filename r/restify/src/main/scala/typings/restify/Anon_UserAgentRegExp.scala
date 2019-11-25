@@ -11,7 +11,7 @@ trait Anon_UserAgentRegExp extends js.Object {
 object Anon_UserAgentRegExp {
   @scala.inline
   def apply(userAgentRegExp: js.Any): Anon_UserAgentRegExp = {
-    val __obj = js.Dynamic.literal(userAgentRegExp = userAgentRegExp)
+    val __obj = js.Dynamic.literal(userAgentRegExp = userAgentRegExp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_UserAgentRegExp]
   }

@@ -63,13 +63,13 @@ object AjaxChainConfiguration {
     label: String = null,
     transform: /* response */ js.Any => String | js.Object | js.Array[js.Object] = null
   ): AjaxChainConfiguration = {
-    val __obj = js.Dynamic.literal(ajaxSettings = ajaxSettings)
+    val __obj = js.Dynamic.literal(ajaxSettings = ajaxSettings.asInstanceOf[js.Any])
     if (appendToUrl != null) __obj.updateDynamic("appendToUrl")(js.Any.fromFunction1(appendToUrl))
     if (hasCache != null) __obj.updateDynamic("hasCache")(js.Any.fromFunction1(hasCache))
     if (hasErrors != null) __obj.updateDynamic("hasErrors")(js.Any.fromFunction1(hasErrors))
     if (hasHaltingCapabilities != null) __obj.updateDynamic("hasHaltingCapabilities")(js.Any.fromFunction1(hasHaltingCapabilities))
     if (isSkippable != null) __obj.updateDynamic("isSkippable")(js.Any.fromFunction1(isSkippable))
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
     __obj.asInstanceOf[AjaxChainConfiguration]
   }

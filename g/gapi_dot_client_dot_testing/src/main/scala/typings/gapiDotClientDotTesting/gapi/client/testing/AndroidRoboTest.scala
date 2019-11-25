@@ -53,12 +53,12 @@ object AndroidRoboTest {
     roboDirectives: js.Array[RoboDirective] = null
   ): AndroidRoboTest = {
     val __obj = js.Dynamic.literal()
-    if (appApk != null) __obj.updateDynamic("appApk")(appApk)
-    if (appInitialActivity != null) __obj.updateDynamic("appInitialActivity")(appInitialActivity)
-    if (appPackageId != null) __obj.updateDynamic("appPackageId")(appPackageId)
+    if (appApk != null) __obj.updateDynamic("appApk")(appApk.asInstanceOf[js.Any])
+    if (appInitialActivity != null) __obj.updateDynamic("appInitialActivity")(appInitialActivity.asInstanceOf[js.Any])
+    if (appPackageId != null) __obj.updateDynamic("appPackageId")(appPackageId.asInstanceOf[js.Any])
     if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
     if (maxSteps != null) __obj.updateDynamic("maxSteps")(maxSteps.asInstanceOf[js.Any])
-    if (roboDirectives != null) __obj.updateDynamic("roboDirectives")(roboDirectives)
+    if (roboDirectives != null) __obj.updateDynamic("roboDirectives")(roboDirectives.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidRoboTest]
   }
 }

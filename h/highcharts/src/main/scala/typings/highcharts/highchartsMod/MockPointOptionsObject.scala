@@ -26,7 +26,7 @@ trait MockPointOptionsObject extends js.Object {
 object MockPointOptionsObject {
   @scala.inline
   def apply(x: Double, y: Double, yAxis: js.Any, xAxis: Double | String | Axis = null): MockPointOptionsObject = {
-    val __obj = js.Dynamic.literal(x = x, y = y, yAxis = yAxis)
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yAxis = yAxis.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[MockPointOptionsObject]
   }

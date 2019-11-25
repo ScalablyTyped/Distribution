@@ -17,7 +17,7 @@ trait Anon_Event extends js.Object {
 object Anon_Event {
   @scala.inline
   def apply(event: SyntheticEvent[Element, Event], nextState: State, prevState: State): Anon_Event = {
-    val __obj = js.Dynamic.literal(event = event, nextState = nextState, prevState = prevState)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], nextState = nextState.asInstanceOf[js.Any], prevState = prevState.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Event]
   }

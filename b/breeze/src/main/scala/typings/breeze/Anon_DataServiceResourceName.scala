@@ -13,7 +13,7 @@ trait Anon_DataServiceResourceName extends js.Object {
 object Anon_DataServiceResourceName {
   @scala.inline
   def apply(dataService: DataService, resourceName: String): Anon_DataServiceResourceName = {
-    val __obj = js.Dynamic.literal(dataService = dataService, resourceName = resourceName)
+    val __obj = js.Dynamic.literal(dataService = dataService.asInstanceOf[js.Any], resourceName = resourceName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_DataServiceResourceName]
   }

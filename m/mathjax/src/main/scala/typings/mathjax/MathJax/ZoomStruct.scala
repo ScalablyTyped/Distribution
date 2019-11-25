@@ -20,7 +20,7 @@ trait ZoomStruct extends js.Object {
 object ZoomStruct {
   @scala.inline
   def apply(Y: Double, mH: Double, mW: Double, zH: Double, zW: Double): ZoomStruct = {
-    val __obj = js.Dynamic.literal(Y = Y, mH = mH, mW = mW, zH = zH, zW = zW)
+    val __obj = js.Dynamic.literal(Y = Y.asInstanceOf[js.Any], mH = mH.asInstanceOf[js.Any], mW = mW.asInstanceOf[js.Any], zH = zH.asInstanceOf[js.Any], zW = zW.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ZoomStruct]
   }

@@ -41,7 +41,7 @@ object _Record {
     ApproximateArrivalTimestamp: Date | String | Double = null,
     EncryptionType: NONE | KMS | String = null
   ): _Record = {
-    val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], PartitionKey = PartitionKey, SequenceNumber = SequenceNumber)
+    val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], PartitionKey = PartitionKey.asInstanceOf[js.Any], SequenceNumber = SequenceNumber.asInstanceOf[js.Any])
     if (ApproximateArrivalTimestamp != null) __obj.updateDynamic("ApproximateArrivalTimestamp")(ApproximateArrivalTimestamp.asInstanceOf[js.Any])
     if (EncryptionType != null) __obj.updateDynamic("EncryptionType")(EncryptionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Record]

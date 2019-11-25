@@ -18,8 +18,8 @@ trait Error extends js.Object {
 object Error {
   @scala.inline
   def apply(code: Double, message: String, reqId: String, isRequestError: `true` = null): Error = {
-    val __obj = js.Dynamic.literal(code = code, message = message, reqId = reqId)
-    if (isRequestError != null) __obj.updateDynamic("isRequestError")(isRequestError)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], reqId = reqId.asInstanceOf[js.Any])
+    if (isRequestError != null) __obj.updateDynamic("isRequestError")(isRequestError.asInstanceOf[js.Any])
     __obj.asInstanceOf[Error]
   }
 }

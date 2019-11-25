@@ -21,8 +21,8 @@ object SubscriptionDeferralInfo {
   @scala.inline
   def apply(desiredExpiryTimeMillis: String = null, expectedExpiryTimeMillis: String = null): SubscriptionDeferralInfo = {
     val __obj = js.Dynamic.literal()
-    if (desiredExpiryTimeMillis != null) __obj.updateDynamic("desiredExpiryTimeMillis")(desiredExpiryTimeMillis)
-    if (expectedExpiryTimeMillis != null) __obj.updateDynamic("expectedExpiryTimeMillis")(expectedExpiryTimeMillis)
+    if (desiredExpiryTimeMillis != null) __obj.updateDynamic("desiredExpiryTimeMillis")(desiredExpiryTimeMillis.asInstanceOf[js.Any])
+    if (expectedExpiryTimeMillis != null) __obj.updateDynamic("expectedExpiryTimeMillis")(expectedExpiryTimeMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionDeferralInfo]
   }
 }

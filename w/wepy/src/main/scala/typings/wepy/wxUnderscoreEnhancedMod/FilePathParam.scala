@@ -11,7 +11,7 @@ trait FilePathParam extends js.Object {
 object FilePathParam {
   @scala.inline
   def apply(filePath: String): FilePathParam = {
-    val __obj = js.Dynamic.literal(filePath = filePath)
+    val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FilePathParam]
   }

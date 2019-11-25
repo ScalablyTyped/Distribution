@@ -11,7 +11,7 @@ trait NavigatorCookies extends js.Object {
 object NavigatorCookies {
   @scala.inline
   def apply(cookieEnabled: scala.Boolean): NavigatorCookies = {
-    val __obj = js.Dynamic.literal(cookieEnabled = cookieEnabled)
+    val __obj = js.Dynamic.literal(cookieEnabled = cookieEnabled.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[NavigatorCookies]
   }

@@ -16,16 +16,16 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Typeofej extends js.Object {
-  val Accordion: js.Any | TypeofClassAccordion = js.native
+  val Accordion: TypeofClassAccordion = js.native
   var Adaptor: Instantiable1[/* ds */ js.Any, typings.ejDotWebDotAll.ej.Adaptor] = js.native
-  val Autocomplete: js.Any | TypeofClassAutocomplete = js.native
-  val Button: js.Any | TypeofClassButton = js.native
+  val Autocomplete: TypeofClassAutocomplete = js.native
+  val Button: TypeofClassButton = js.native
   var CacheAdaptor: Instantiable0[typings.ejDotWebDotAll.ej.CacheAdaptor] = js.native
-  val Calculate: js.Any | TypeofClassCalculate = js.native
-  val Captcha: js.Any | TypeofClassCaptcha = js.native
-  val CheckBox: js.Any | TypeofClassCheckBox = js.native
-  val ColorPicker: js.Any | TypeofClassColorPicker = js.native
-  val ComboBox: js.Any | TypeofClassComboBox = js.native
+  val Calculate: TypeofClassCalculate = js.native
+  val Captcha: TypeofClassCaptcha = js.native
+  val CheckBox: TypeofClassCheckBox = js.native
+  val ColorPicker: TypeofClassColorPicker = js.native
+  val ComboBox: TypeofClassComboBox = js.native
   var CurrencyTextbox: Instantiable0[typings.ejDotWebDotAll.ej.CurrencyTextbox] = js.native
   var DataManager: Instantiable3[
     js.UndefOr[/* dataSource */ js.Any], 
@@ -33,76 +33,76 @@ trait Typeofej extends js.Object {
     js.UndefOr[/* adaptor */ js.Any], 
     typings.ejDotWebDotAll.ej.DataManager
   ] = js.native
-  val DatePicker: js.Any | TypeofClassDatePicker = js.native
-  val DateRangePicker: js.Any | TypeofClassDateRangePicker = js.native
-  val DateTimePicker: js.Any | TypeofClassDateTimePicker = js.native
-  val Dialog: js.Any | TypeofClassDialog = js.native
-  val DocumentEditor: js.Any | TypeofClassDocumentEditor = js.native
-  val Draggable: js.Any | TypeofClassDraggable = js.native
-  val DropDownList: js.Any | TypeofClassDropDownList = js.native
-  val DropDownTree: js.Any | TypeofClassDropDownTree = js.native
-  val Droppable: js.Any | TypeofClassDroppable = js.native
-  val Editor: js.Any | TypeofClassEditor = js.native
-  val FileExplorer: js.Any | TypeofClassFileExplorer = js.native
+  val DatePicker: TypeofClassDatePicker = js.native
+  val DateRangePicker: TypeofClassDateRangePicker = js.native
+  val DateTimePicker: TypeofClassDateTimePicker = js.native
+  val Dialog: TypeofClassDialog = js.native
+  val DocumentEditor: TypeofClassDocumentEditor = js.native
+  val Draggable: TypeofClassDraggable = js.native
+  val DropDownList: TypeofClassDropDownList = js.native
+  val DropDownTree: TypeofClassDropDownTree = js.native
+  val Droppable: TypeofClassDroppable = js.native
+  val Editor: TypeofClassEditor = js.native
+  val FileExplorer: TypeofClassFileExplorer = js.native
   var ForeignKeyAdaptor: Instantiable2[/* data */ js.Any, /* type */ String, typings.ejDotWebDotAll.ej.ForeignKeyAdaptor] = js.native
-  val Gantt: js.Any | TypeofClassGantt = js.native
-  val Grid: js.Any | TypeofClassGrid = js.native
-  val GroupButton: js.Any | TypeofClassGroupButton = js.native
+  val Gantt: TypeofClassGantt = js.native
+  val Grid: TypeofClassGrid = js.native
+  val GroupButton: TypeofClassGroupButton = js.native
   var JsonAdaptor: Instantiable0[typings.ejDotWebDotAll.ej.JsonAdaptor] = js.native
-  val Kanban: js.Any | TypeofClassKanban = js.native
-  val ListBox: js.Any | TypeofClassListBox = js.native
-  val ListView: js.Any | TypeofClassListView = js.native
-  val MaskEdit: js.Any | TypeofClassMaskEdit = js.native
-  val Menu: js.Any | TypeofClassMenu = js.native
+  val Kanban: TypeofClassKanban = js.native
+  val ListBox: TypeofClassListBox = js.native
+  val ListView: TypeofClassListView = js.native
+  val MaskEdit: TypeofClassMaskEdit = js.native
+  val Menu: TypeofClassMenu = js.native
   var Model: Instantiable3[
     /* json */ js.Any, 
     /* table */ String, 
     /* name */ String, 
     typings.ejDotWebDotAll.ej.Model
   ] = js.native
-  val NavigationDrawer: js.Any | TypeofClassNavigationDrawer = js.native
+  val NavigationDrawer: TypeofClassNavigationDrawer = js.native
   var NumericTextbox: Instantiable0[typings.ejDotWebDotAll.ej.NumericTextbox] = js.native
   var ODataAdaptor: Instantiable0[typings.ejDotWebDotAll.ej.ODataAdaptor] = js.native
   var ODataV4Adaptor: Instantiable0[typings.ejDotWebDotAll.ej.ODataV4Adaptor] = js.native
-  val Pager: js.Any | TypeofClassPager = js.native
-  val PdfViewer: js.Any | TypeofClassPdfViewer = js.native
+  val Pager: TypeofClassPager = js.native
+  val PdfViewer: TypeofClassPdfViewer = js.native
   var PercentageTextbox: Instantiable0[typings.ejDotWebDotAll.ej.PercentageTextbox] = js.native
   val Pivot: js.Any = js.native
   val PivotAnalysis: js.Any = js.native
-  val PivotChart: js.Any | TypeofClassPivotChart = js.native
-  val PivotClient: js.Any | TypeofClassPivotClient = js.native
-  val PivotGauge: js.Any | TypeofClassPivotGauge = js.native
-  val PivotGrid: js.Any | TypeofClassPivotGrid = js.native
-  val PivotPager: js.Any | TypeofClassPivotPager = js.native
-  val PivotSchemaDesigner: js.Any | TypeofClassPivotSchemaDesigner = js.native
-  val PivotTreeMap: js.Any | TypeofClassPivotTreeMap = js.native
+  val PivotChart: TypeofClassPivotChart = js.native
+  val PivotClient: TypeofClassPivotClient = js.native
+  val PivotGauge: TypeofClassPivotGauge = js.native
+  val PivotGrid: TypeofClassPivotGrid = js.native
+  val PivotPager: TypeofClassPivotPager = js.native
+  val PivotSchemaDesigner: TypeofClassPivotSchemaDesigner = js.native
+  val PivotTreeMap: TypeofClassPivotTreeMap = js.native
   var Predicate: Instantiable0[typings.ejDotWebDotAll.ej.Predicate] = js.native
-  val Print: js.Any | TypeofClassPrint = js.native
-  val ProgressBar: js.Any | TypeofClassProgressBar = js.native
+  val Print: TypeofClassPrint = js.native
+  val ProgressBar: TypeofClassProgressBar = js.native
   var Query: TypeofClassQuery = js.native
-  val RTE: js.Any | TypeofClassRTE = js.native
-  val RadialMenu: js.Any | TypeofClassRadialMenu = js.native
-  val RadialSlider: js.Any | TypeofClassRadialSlider = js.native
-  val RadioButton: js.Any | TypeofClassRadioButton = js.native
-  val Rating: js.Any | TypeofClassRating = js.native
-  val RecurrenceEditor: js.Any | TypeofClassRecurrenceEditor = js.native
-  val ReportDesigner: js.Any | TypeofClassReportDesigner = js.native
-  val ReportViewer: js.Any | TypeofClassReportViewer = js.native
-  val Resizable: js.Any | TypeofClassResizable = js.native
-  val Ribbon: js.Any | TypeofClassRibbon = js.native
-  val Rotator: js.Any | TypeofClassRotator = js.native
-  val Schedule: js.Any | TypeofClassSchedule = js.native
-  val Scroller: js.Any | TypeofClassScroller = js.native
-  val Signature: js.Any | TypeofClassSignature = js.native
-  val Slider: js.Any | TypeofClassSlider = js.native
-  val Sparkline: js.Any | TypeofClassSparkline = js.native
-  val SpellCheck: js.Any | TypeofClassSpellCheck = js.native
-  val SplitButton: js.Any | TypeofClassSplitButton = js.native
-  val Splitter: js.Any | TypeofClassSplitter = js.native
-  val Spreadsheet: js.Any | TypeofClassSpreadsheet = js.native
+  val RTE: TypeofClassRTE = js.native
+  val RadialMenu: TypeofClassRadialMenu = js.native
+  val RadialSlider: TypeofClassRadialSlider = js.native
+  val RadioButton: TypeofClassRadioButton = js.native
+  val Rating: TypeofClassRating = js.native
+  val RecurrenceEditor: TypeofClassRecurrenceEditor = js.native
+  val ReportDesigner: TypeofClassReportDesigner = js.native
+  val ReportViewer: TypeofClassReportViewer = js.native
+  val Resizable: TypeofClassResizable = js.native
+  val Ribbon: TypeofClassRibbon = js.native
+  val Rotator: TypeofClassRotator = js.native
+  val Schedule: TypeofClassSchedule = js.native
+  val Scroller: TypeofClassScroller = js.native
+  val Signature: TypeofClassSignature = js.native
+  val Slider: TypeofClassSlider = js.native
+  val Sparkline: TypeofClassSparkline = js.native
+  val SpellCheck: TypeofClassSpellCheck = js.native
+  val SplitButton: TypeofClassSplitButton = js.native
+  val Splitter: TypeofClassSplitter = js.native
+  val Spreadsheet: TypeofClassSpreadsheet = js.native
   val Sunburst: js.Any = js.native
-  val SunburstChart: js.Any | TypeofClassSunburstChart = js.native
-  val Tab: js.Any | TypeofClassTab = js.native
+  val SunburstChart: TypeofClassSunburstChart = js.native
+  val Tab: TypeofClassTab = js.native
   var TableModel: Instantiable4[
     /* name */ String, 
     /* jsonArray */ js.Array[js.Any], 
@@ -110,17 +110,17 @@ trait Typeofej extends js.Object {
     /* modelComputed */ js.Any, 
     typings.ejDotWebDotAll.ej.TableModel
   ] = js.native
-  val TagCloud: js.Any | TypeofClassTagCloud = js.native
-  val Tile: js.Any | TypeofClassTile = js.native
-  val TimePicker: js.Any | TypeofClassTimePicker = js.native
-  val ToggleButton: js.Any | TypeofClassToggleButton = js.native
-  val Toolbar: js.Any | TypeofClassToolbar = js.native
-  val Tooltip: js.Any | TypeofClassTooltip = js.native
-  val TreeGrid: js.Any | TypeofClassTreeGrid = js.native
-  val TreeView: js.Any | TypeofClassTreeView = js.native
-  val Uploadbox: js.Any | TypeofClassUploadbox = js.native
+  val TagCloud: TypeofClassTagCloud = js.native
+  val Tile: TypeofClassTile = js.native
+  val TimePicker: TypeofClassTimePicker = js.native
+  val ToggleButton: TypeofClassToggleButton = js.native
+  val Toolbar: TypeofClassToolbar = js.native
+  val Tooltip: TypeofClassTooltip = js.native
+  val TreeGrid: TypeofClassTreeGrid = js.native
+  val TreeView: TypeofClassTreeView = js.native
+  val Uploadbox: TypeofClassUploadbox = js.native
   var UrlAdaptor: Instantiable0[typings.ejDotWebDotAll.ej.UrlAdaptor] = js.native
-  val WaitingPopup: js.Any | TypeofClassWaitingPopup = js.native
+  val WaitingPopup: TypeofClassWaitingPopup = js.native
   var WebApiAdaptor: Instantiable0[typings.ejDotWebDotAll.ej.WebApiAdaptor] = js.native
   var WebMethodAdaptor: Instantiable0[typings.ejDotWebDotAll.ej.WebMethodAdaptor] = js.native
   var Widget: TypeofClassWidget = js.native
