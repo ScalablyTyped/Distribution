@@ -26,8 +26,8 @@ object ChartGridlinesUpdateData {
   @scala.inline
   def apply(format: ChartGridlinesFormatUpdateData = null, visible: js.UndefOr[Boolean] = js.undefined): ChartGridlinesUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartGridlinesUpdateData]
   }
 }

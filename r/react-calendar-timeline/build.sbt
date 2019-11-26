@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-calendar-timeline"
-version := "v0.26.6-dt-20190927Z-c2b991"
+version := "v0.26.6-dt-20190927Z-84815a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

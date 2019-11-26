@@ -58,11 +58,11 @@ object NotificationMessageDetails {
     key: String = null,
     persistent: js.UndefOr[Boolean] = js.undefined
   ): NotificationMessageDetails = {
-    val __obj = js.Dynamic.literal(message = message)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationMessageDetails]
   }
 }

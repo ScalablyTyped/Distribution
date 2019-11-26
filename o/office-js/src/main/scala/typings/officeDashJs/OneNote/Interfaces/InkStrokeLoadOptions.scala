@@ -37,9 +37,9 @@ object InkStrokeLoadOptions {
     id: js.UndefOr[Boolean] = js.undefined
   ): InkStrokeLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (floatingInk != null) __obj.updateDynamic("floatingInk")(floatingInk)
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (floatingInk != null) __obj.updateDynamic("floatingInk")(floatingInk.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[InkStrokeLoadOptions]
   }
 }

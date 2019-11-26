@@ -939,6 +939,9 @@ object officeDashJsStrings {
   sealed trait Empty extends js.Object
   
   @js.native
+  sealed trait Empty_ extends js.Object
+  
+  @js.native
   sealed trait End extends js.Object
   
   @js.native
@@ -3183,7 +3186,7 @@ object officeDashJsStrings {
   sealed trait UniqueValues extends js.Object
   
   @js.native
-  sealed trait Unknown extends js.Object
+  sealed trait Unknown_ extends js.Object
   
   @js.native
   sealed trait Unlocked extends js.Object
@@ -4025,7 +4028,9 @@ object officeDashJsStrings {
   @scala.inline
   def Emphasis: Emphasis = "Emphasis".asInstanceOf[Emphasis]
   @scala.inline
-  def Empty: Empty = "Empty".asInstanceOf[Empty]
+  def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
+  def Empty_ : Empty_ = "Empty".asInstanceOf[Empty_]
   @scala.inline
   def End: End = "End".asInstanceOf[End]
   @scala.inline
@@ -5523,7 +5528,7 @@ object officeDashJsStrings {
   @scala.inline
   def UniqueValues: UniqueValues = "UniqueValues".asInstanceOf[UniqueValues]
   @scala.inline
-  def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
+  def Unknown_ : Unknown_ = "Unknown".asInstanceOf[Unknown_]
   @scala.inline
   def Unlocked: Unlocked = "Unlocked".asInstanceOf[Unlocked]
   @scala.inline

@@ -19,7 +19,7 @@ object CommentUpdateData {
   @scala.inline
   def apply(content: String = null): CommentUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentUpdateData]
   }
 }

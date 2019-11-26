@@ -85,15 +85,15 @@ object DocumentPropertiesUpdateData {
     title: String = null
   ): DocumentPropertiesUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (category != null) __obj.updateDynamic("category")(category)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (company != null) __obj.updateDynamic("company")(company)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords)
-    if (manager != null) __obj.updateDynamic("manager")(manager)
-    if (subject != null) __obj.updateDynamic("subject")(subject)
-    if (title != null) __obj.updateDynamic("title")(title)
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (company != null) __obj.updateDynamic("company")(company.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
+    if (manager != null) __obj.updateDynamic("manager")(manager.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentPropertiesUpdateData]
   }
 }

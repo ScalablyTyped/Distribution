@@ -40,10 +40,10 @@ object AuthOptions {
     forceConsent: js.UndefOr[Boolean] = js.undefined
   ): AuthOptions = {
     val __obj = js.Dynamic.literal()
-    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext)
-    if (authChallenge != null) __obj.updateDynamic("authChallenge")(authChallenge)
-    if (!js.isUndefined(forceAddAccount)) __obj.updateDynamic("forceAddAccount")(forceAddAccount)
-    if (!js.isUndefined(forceConsent)) __obj.updateDynamic("forceConsent")(forceConsent)
+    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext.asInstanceOf[js.Any])
+    if (authChallenge != null) __obj.updateDynamic("authChallenge")(authChallenge.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceAddAccount)) __obj.updateDynamic("forceAddAccount")(forceAddAccount.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceConsent)) __obj.updateDynamic("forceConsent")(forceConsent.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthOptions]
   }
 }

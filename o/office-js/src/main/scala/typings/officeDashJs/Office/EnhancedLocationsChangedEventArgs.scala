@@ -23,8 +23,8 @@ trait EnhancedLocationsChangedEventArgs extends js.Object {
 object EnhancedLocationsChangedEventArgs {
   @scala.inline
   def apply(enhancedLocations: js.Array[LocationDetails], `type`: olkEnhancedLocationsChanged): EnhancedLocationsChangedEventArgs = {
-    val __obj = js.Dynamic.literal(enhancedLocations = enhancedLocations)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(enhancedLocations = enhancedLocations.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnhancedLocationsChangedEventArgs]
   }
 }

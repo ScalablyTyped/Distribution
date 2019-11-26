@@ -74,11 +74,11 @@ object PageContentData {
     `type`: PageContentType | typings.officeDashJs.officeDashJsStrings.Outline | typings.officeDashJs.officeDashJsStrings.Image | Ink | Other = null
   ): PageContentData = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (ink != null) __obj.updateDynamic("ink")(ink)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (ink != null) __obj.updateDynamic("ink")(ink.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (outline != null) __obj.updateDynamic("outline")(outline)
+    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageContentData]

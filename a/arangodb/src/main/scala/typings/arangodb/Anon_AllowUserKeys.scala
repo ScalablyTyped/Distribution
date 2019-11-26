@@ -21,10 +21,10 @@ object Anon_AllowUserKeys {
     `type`: KeyGeneratorType = null
   ): Anon_AllowUserKeys = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUserKeys)) __obj.updateDynamic("allowUserKeys")(allowUserKeys)
+    if (!js.isUndefined(allowUserKeys)) __obj.updateDynamic("allowUserKeys")(allowUserKeys.asInstanceOf[js.Any])
     if (increment != null) __obj.updateDynamic("increment")(increment.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AllowUserKeys]
   }
 }

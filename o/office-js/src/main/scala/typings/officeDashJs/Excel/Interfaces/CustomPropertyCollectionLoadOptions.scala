@@ -48,10 +48,10 @@ object CustomPropertyCollectionLoadOptions {
     value: js.UndefOr[Boolean] = js.undefined
   ): CustomPropertyCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key)
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomPropertyCollectionLoadOptions]
   }
 }

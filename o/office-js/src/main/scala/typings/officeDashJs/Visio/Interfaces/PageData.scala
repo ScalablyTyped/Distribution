@@ -85,14 +85,14 @@ object PageData {
     width: Int | Double = null
   ): PageData = {
     val __obj = js.Dynamic.literal()
-    if (allShapes != null) __obj.updateDynamic("allShapes")(allShapes)
-    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (allShapes != null) __obj.updateDynamic("allShapes")(allShapes.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBackground)) __obj.updateDynamic("isBackground")(isBackground)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (shapes != null) __obj.updateDynamic("shapes")(shapes)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (!js.isUndefined(isBackground)) __obj.updateDynamic("isBackground")(isBackground.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (shapes != null) __obj.updateDynamic("shapes")(shapes.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageData]
   }

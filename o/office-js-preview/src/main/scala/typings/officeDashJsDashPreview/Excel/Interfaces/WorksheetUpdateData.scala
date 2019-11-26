@@ -95,14 +95,14 @@ object WorksheetUpdateData {
     visibility: SheetVisibility | Visible | Hidden | VeryHidden = null
   ): WorksheetUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableCalculation)) __obj.updateDynamic("enableCalculation")(enableCalculation)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (pageLayout != null) __obj.updateDynamic("pageLayout")(pageLayout)
+    if (!js.isUndefined(enableCalculation)) __obj.updateDynamic("enableCalculation")(enableCalculation.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (pageLayout != null) __obj.updateDynamic("pageLayout")(pageLayout.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGridlines)) __obj.updateDynamic("showGridlines")(showGridlines)
-    if (!js.isUndefined(showHeadings)) __obj.updateDynamic("showHeadings")(showHeadings)
+    if (!js.isUndefined(showGridlines)) __obj.updateDynamic("showGridlines")(showGridlines.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHeadings)) __obj.updateDynamic("showHeadings")(showHeadings.asInstanceOf[js.Any])
     if (standardWidth != null) __obj.updateDynamic("standardWidth")(standardWidth.asInstanceOf[js.Any])
-    if (tabColor != null) __obj.updateDynamic("tabColor")(tabColor)
+    if (tabColor != null) __obj.updateDynamic("tabColor")(tabColor.asInstanceOf[js.Any])
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorksheetUpdateData]
   }

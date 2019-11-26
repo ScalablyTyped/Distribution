@@ -73,14 +73,14 @@ object SetBindingDataOptions {
     tableOptions: js.Object = null
   ): SetBindingDataOptions = {
     val __obj = js.Dynamic.literal()
-    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext)
-    if (cellFormat != null) __obj.updateDynamic("cellFormat")(cellFormat)
+    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext.asInstanceOf[js.Any])
+    if (cellFormat != null) __obj.updateDynamic("cellFormat")(cellFormat.asInstanceOf[js.Any])
     if (coercionType != null) __obj.updateDynamic("coercionType")(coercionType.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (startColumn != null) __obj.updateDynamic("startColumn")(startColumn.asInstanceOf[js.Any])
     if (startRow != null) __obj.updateDynamic("startRow")(startRow.asInstanceOf[js.Any])
-    if (tableOptions != null) __obj.updateDynamic("tableOptions")(tableOptions)
+    if (tableOptions != null) __obj.updateDynamic("tableOptions")(tableOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetBindingDataOptions]
   }
 }

@@ -19,8 +19,8 @@ object ThreeTrafficLights2Set {
     yellowTrafficLight: Icon,
     NumberDictionary: /* index */ NumberDictionary[Icon] = null
   ): ThreeTrafficLights2Set = {
-    val __obj = js.Dynamic.literal(greenTrafficLight = greenTrafficLight, redTrafficLight = redTrafficLight, yellowTrafficLight = yellowTrafficLight)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    val __obj = js.Dynamic.literal(greenTrafficLight = greenTrafficLight.asInstanceOf[js.Any], redTrafficLight = redTrafficLight.asInstanceOf[js.Any], yellowTrafficLight = yellowTrafficLight.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[ThreeTrafficLights2Set]
   }
 }

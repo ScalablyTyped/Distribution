@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 object reactDashReduxComponents extends reactDashReduxProps {
   @scala.inline
-  def Provider: ComponentType[ProviderProps[Action[_]]] = js.constructorOf[typings.reactDashRedux.reactDashReduxMod.Provider[typings.redux.reduxMod.Action[_]]].asInstanceOf[typings.react.reactMod.ComponentType[ProviderProps[typings.redux.reduxMod.Action[_]]]]
+  def Provider: ComponentType[ProviderProps[Action[js.Any]]] = js.constructorOf[typings.reactDashRedux.reactDashReduxMod.Provider[typings.redux.reduxMod.Action[_]]].asInstanceOf[typings.react.reactMod.ComponentType[ProviderProps[typings.redux.reduxMod.Action[js.Any]]]]
 }
 

@@ -45,10 +45,10 @@ object InkAnalysisLineCollectionLoadOptions {
     words: InkAnalysisWordCollectionLoadOptions = null
   ): InkAnalysisLineCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
-    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph)
-    if (words != null) __obj.updateDynamic("words")(words)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph.asInstanceOf[js.Any])
+    if (words != null) __obj.updateDynamic("words")(words.asInstanceOf[js.Any])
     __obj.asInstanceOf[InkAnalysisLineCollectionLoadOptions]
   }
 }

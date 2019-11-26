@@ -23,7 +23,7 @@ trait DocumentLoadCompleteEventArgs extends js.Object {
 object DocumentLoadCompleteEventArgs {
   @scala.inline
   def apply(success: Boolean): DocumentLoadCompleteEventArgs = {
-    val __obj = js.Dynamic.literal(success = success)
+    val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DocumentLoadCompleteEventArgs]
   }

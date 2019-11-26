@@ -88,15 +88,15 @@ object ChartPointsCollectionLoadOptions {
     value: js.UndefOr[Boolean] = js.undefined
   ): ChartPointsCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (dataLabel != null) __obj.updateDynamic("dataLabel")(dataLabel)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (!js.isUndefined(hasDataLabel)) __obj.updateDynamic("hasDataLabel")(hasDataLabel)
-    if (!js.isUndefined(markerBackgroundColor)) __obj.updateDynamic("markerBackgroundColor")(markerBackgroundColor)
-    if (!js.isUndefined(markerForegroundColor)) __obj.updateDynamic("markerForegroundColor")(markerForegroundColor)
-    if (!js.isUndefined(markerSize)) __obj.updateDynamic("markerSize")(markerSize)
-    if (!js.isUndefined(markerStyle)) __obj.updateDynamic("markerStyle")(markerStyle)
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (dataLabel != null) __obj.updateDynamic("dataLabel")(dataLabel.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasDataLabel)) __obj.updateDynamic("hasDataLabel")(hasDataLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerBackgroundColor)) __obj.updateDynamic("markerBackgroundColor")(markerBackgroundColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerForegroundColor)) __obj.updateDynamic("markerForegroundColor")(markerForegroundColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerSize)) __obj.updateDynamic("markerSize")(markerSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(markerStyle)) __obj.updateDynamic("markerStyle")(markerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartPointsCollectionLoadOptions]
   }
 }

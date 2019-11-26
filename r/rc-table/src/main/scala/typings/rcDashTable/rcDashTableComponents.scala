@@ -14,14 +14,14 @@ object rcDashTableComponents extends rcDashTableProps {
   @scala.inline
   def Es[ValueType]: ComponentType[EsProps[ValueType]] = js.constructorOf[typings.rcDashTable.esMod.default[ValueType]].asInstanceOf[typings.react.reactMod.ComponentType[EsProps[ValueType]]]
   @scala.inline
-  def EsColumn: ComponentType[EsColumnProps[Record[String, _]]] = typings.rcDashTable.esMod.default.Column.asInstanceOf[typings.react.reactMod.ComponentType[EsColumnProps[typings.std.Record[java.lang.String, _]]]]
+  def EsColumn: ComponentType[EsColumnProps[Record[String, js.Any]]] = typings.rcDashTable.esMod.default.Column.asInstanceOf[typings.react.reactMod.ComponentType[EsColumnProps[typings.std.Record[java.lang.String, js.Any]]]]
   @scala.inline
   def Lib[ValueType]: ComponentType[LibProps[ValueType]] = js.constructorOf[typings.rcDashTable.libMod.default[ValueType]].asInstanceOf[typings.react.reactMod.ComponentType[LibProps[ValueType]]]
   @scala.inline
-  def LibColumn: ComponentType[LibColumnProps[Record[String, _]]] = typings.rcDashTable.libMod.default.Column.asInstanceOf[typings.react.reactMod.ComponentType[LibColumnProps[typings.std.Record[java.lang.String, _]]]]
+  def LibColumn: ComponentType[LibColumnProps[Record[String, js.Any]]] = typings.rcDashTable.libMod.default.Column.asInstanceOf[typings.react.reactMod.ComponentType[LibColumnProps[typings.std.Record[java.lang.String, js.Any]]]]
   @scala.inline
   def Table[ValueType]: ComponentType[TableProps[ValueType]] = js.constructorOf[typings.rcDashTable.esTableMod.default[ValueType]].asInstanceOf[typings.react.reactMod.ComponentType[TableProps[ValueType]]]
   @scala.inline
-  def TableColumn: ComponentType[TableColumnProps[Record[String, _]]] = typings.rcDashTable.esTableMod.default.Column.asInstanceOf[typings.react.reactMod.ComponentType[TableColumnProps[typings.std.Record[java.lang.String, _]]]]
+  def TableColumn: ComponentType[TableColumnProps[Record[String, js.Any]]] = typings.rcDashTable.esTableMod.default.Column.asInstanceOf[typings.react.reactMod.ComponentType[TableColumnProps[typings.std.Record[java.lang.String, js.Any]]]]
 }
 

@@ -26,9 +26,9 @@ object AddBindingFromSelectionOptions {
   @scala.inline
   def apply(asyncContext: js.Any = null, columns: js.Array[String] = null, id: String = null): AddBindingFromSelectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext)
-    if (columns != null) __obj.updateDynamic("columns")(columns)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext.asInstanceOf[js.Any])
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddBindingFromSelectionOptions]
   }
 }

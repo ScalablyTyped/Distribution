@@ -48,10 +48,10 @@ object ChartLineFormatLoadOptions {
     weight: js.UndefOr[Boolean] = js.undefined
   ): ChartLineFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(lineStyle)) __obj.updateDynamic("lineStyle")(lineStyle)
-    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineStyle)) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartLineFormatLoadOptions]
   }
 }

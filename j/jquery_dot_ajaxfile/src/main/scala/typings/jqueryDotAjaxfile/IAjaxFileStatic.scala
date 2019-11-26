@@ -15,7 +15,7 @@ object IAjaxFileStatic {
     DataType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataType */ js.Any,
     send: IOption => IAjaxFilePromise[js.Any]
   ): IAjaxFileStatic = {
-    val __obj = js.Dynamic.literal(DataType = DataType, send = js.Any.fromFunction1(send))
+    val __obj = js.Dynamic.literal(DataType = DataType.asInstanceOf[js.Any], send = js.Any.fromFunction1(send))
   
     __obj.asInstanceOf[IAjaxFileStatic]
   }

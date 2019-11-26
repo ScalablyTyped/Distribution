@@ -68,8 +68,8 @@ object WorksheetFormatChangedEventArgs {
     `type`: WorksheetFormatChanged,
     worksheetId: String
   ): WorksheetFormatChangedEventArgs = {
-    val __obj = js.Dynamic.literal(address = address, getRange = js.Any.fromFunction1(getRange), getRangeOrNullObject = js.Any.fromFunction1(getRangeOrNullObject), source = source.asInstanceOf[js.Any], worksheetId = worksheetId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], getRange = js.Any.fromFunction1(getRange), getRangeOrNullObject = js.Any.fromFunction1(getRangeOrNullObject), source = source.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorksheetFormatChangedEventArgs]
   }
 }

@@ -19,7 +19,7 @@ object ChartPlotAreaFormatUpdateData {
   @scala.inline
   def apply(border: ChartBorderUpdateData = null): ChartPlotAreaFormatUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartPlotAreaFormatUpdateData]
   }
 }

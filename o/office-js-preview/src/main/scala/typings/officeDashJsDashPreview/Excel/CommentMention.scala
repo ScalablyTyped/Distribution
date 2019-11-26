@@ -41,7 +41,7 @@ trait CommentMention extends js.Object {
 object CommentMention {
   @scala.inline
   def apply(email: String, id: Double, name: String): CommentMention = {
-    val __obj = js.Dynamic.literal(email = email, id = id, name = name)
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CommentMention]
   }

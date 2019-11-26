@@ -18,7 +18,7 @@ object AsyncContextOptions {
   @scala.inline
   def apply(asyncContext: js.Any = null): AsyncContextOptions = {
     val __obj = js.Dynamic.literal()
-    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext)
+    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncContextOptions]
   }
 }

@@ -43,9 +43,9 @@ object NumberFormatInfoLoadOptions {
     numberGroupSeparator: js.UndefOr[Boolean] = js.undefined
   ): NumberFormatInfoLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(numberDecimalSeparator)) __obj.updateDynamic("numberDecimalSeparator")(numberDecimalSeparator)
-    if (!js.isUndefined(numberGroupSeparator)) __obj.updateDynamic("numberGroupSeparator")(numberGroupSeparator)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberDecimalSeparator)) __obj.updateDynamic("numberDecimalSeparator")(numberDecimalSeparator.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberGroupSeparator)) __obj.updateDynamic("numberGroupSeparator")(numberGroupSeparator.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberFormatInfoLoadOptions]
   }
 }

@@ -88,14 +88,14 @@ object NamedItemData {
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): NamedItemData = {
     val __obj = js.Dynamic.literal()
-    if (arrayValues != null) __obj.updateDynamic("arrayValues")(arrayValues)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (formula != null) __obj.updateDynamic("formula")(formula)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (arrayValues != null) __obj.updateDynamic("arrayValues")(arrayValues.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedItemData]
   }
 }

@@ -85,15 +85,15 @@ object PageContentCollectionLoadOptions {
     `type`: js.UndefOr[Boolean] = js.undefined
   ): PageContentCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (ink != null) __obj.updateDynamic("ink")(ink)
-    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left)
-    if (outline != null) __obj.updateDynamic("outline")(outline)
-    if (parentPage != null) __obj.updateDynamic("parentPage")(parentPage)
-    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top)
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (ink != null) __obj.updateDynamic("ink")(ink.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
+    if (parentPage != null) __obj.updateDynamic("parentPage")(parentPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageContentCollectionLoadOptions]
   }
 }

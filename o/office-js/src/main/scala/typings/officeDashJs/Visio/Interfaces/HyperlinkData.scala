@@ -45,10 +45,10 @@ object HyperlinkData {
     subAddress: String = null
   ): HyperlinkData = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (extraInfo != null) __obj.updateDynamic("extraInfo")(extraInfo)
-    if (subAddress != null) __obj.updateDynamic("subAddress")(subAddress)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (extraInfo != null) __obj.updateDynamic("extraInfo")(extraInfo.asInstanceOf[js.Any])
+    if (subAddress != null) __obj.updateDynamic("subAddress")(subAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[HyperlinkData]
   }
 }

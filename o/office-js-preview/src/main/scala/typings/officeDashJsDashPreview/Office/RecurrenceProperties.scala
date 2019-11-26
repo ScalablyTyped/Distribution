@@ -61,7 +61,7 @@ object RecurrenceProperties {
     month: Month | String,
     weekNumber: WeekNumber | String
   ): RecurrenceProperties = {
-    val __obj = js.Dynamic.literal(dayOfMonth = dayOfMonth, dayOfWeek = dayOfWeek.asInstanceOf[js.Any], days = days, firstDayOfWeek = firstDayOfWeek.asInstanceOf[js.Any], interval = interval, month = month.asInstanceOf[js.Any], weekNumber = weekNumber.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dayOfMonth = dayOfMonth.asInstanceOf[js.Any], dayOfWeek = dayOfWeek.asInstanceOf[js.Any], days = days.asInstanceOf[js.Any], firstDayOfWeek = firstDayOfWeek.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], weekNumber = weekNumber.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RecurrenceProperties]
   }

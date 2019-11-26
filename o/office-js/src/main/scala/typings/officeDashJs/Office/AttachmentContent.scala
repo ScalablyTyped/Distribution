@@ -38,7 +38,7 @@ trait AttachmentContent extends js.Object {
 object AttachmentContent {
   @scala.inline
   def apply(content: String, format: AttachmentContentFormat | String): AttachmentContent = {
-    val __obj = js.Dynamic.literal(content = content, format = format.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AttachmentContent]
   }

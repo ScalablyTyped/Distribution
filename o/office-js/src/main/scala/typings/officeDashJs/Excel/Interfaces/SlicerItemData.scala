@@ -47,10 +47,10 @@ object SlicerItemData {
     name: String = null
   ): SlicerItemData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasData)) __obj.updateDynamic("hasData")(hasData)
-    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected)
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(hasData)) __obj.updateDynamic("hasData")(hasData.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlicerItemData]
   }
 }

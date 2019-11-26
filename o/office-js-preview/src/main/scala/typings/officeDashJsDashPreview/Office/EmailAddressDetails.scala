@@ -46,7 +46,7 @@ object EmailAddressDetails {
     emailAddress: String,
     recipientType: RecipientType | String
   ): EmailAddressDetails = {
-    val __obj = js.Dynamic.literal(appointmentResponse = appointmentResponse.asInstanceOf[js.Any], displayName = displayName, emailAddress = emailAddress, recipientType = recipientType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(appointmentResponse = appointmentResponse.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], emailAddress = emailAddress.asInstanceOf[js.Any], recipientType = recipientType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EmailAddressDetails]
   }

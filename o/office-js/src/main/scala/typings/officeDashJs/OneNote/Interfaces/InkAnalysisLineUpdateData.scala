@@ -19,7 +19,7 @@ object InkAnalysisLineUpdateData {
   @scala.inline
   def apply(paragraph: InkAnalysisParagraphUpdateData = null): InkAnalysisLineUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph)
+    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph.asInstanceOf[js.Any])
     __obj.asInstanceOf[InkAnalysisLineUpdateData]
   }
 }

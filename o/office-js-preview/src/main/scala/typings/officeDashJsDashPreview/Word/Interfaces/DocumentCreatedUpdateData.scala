@@ -28,8 +28,8 @@ object DocumentCreatedUpdateData {
   @scala.inline
   def apply(body: BodyUpdateData = null, properties: DocumentPropertiesUpdateData = null): DocumentCreatedUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentCreatedUpdateData]
   }
 }

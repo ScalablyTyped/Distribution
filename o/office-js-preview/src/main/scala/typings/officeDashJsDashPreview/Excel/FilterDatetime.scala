@@ -36,7 +36,7 @@ trait FilterDatetime extends js.Object {
 object FilterDatetime {
   @scala.inline
   def apply(date: String, specificity: FilterDatetimeSpecificity | Year | Month | Day | Hour | Minute | Second): FilterDatetime = {
-    val __obj = js.Dynamic.literal(date = date, specificity = specificity.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], specificity = specificity.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FilterDatetime]
   }

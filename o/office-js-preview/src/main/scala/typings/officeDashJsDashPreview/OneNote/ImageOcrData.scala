@@ -30,7 +30,7 @@ trait ImageOcrData extends js.Object {
 object ImageOcrData {
   @scala.inline
   def apply(ocrLanguageId: String, ocrText: String): ImageOcrData = {
-    val __obj = js.Dynamic.literal(ocrLanguageId = ocrLanguageId, ocrText = ocrText)
+    val __obj = js.Dynamic.literal(ocrLanguageId = ocrLanguageId.asInstanceOf[js.Any], ocrText = ocrText.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ImageOcrData]
   }

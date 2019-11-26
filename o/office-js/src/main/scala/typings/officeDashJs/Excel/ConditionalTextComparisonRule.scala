@@ -38,7 +38,7 @@ object ConditionalTextComparisonRule {
     operator: ConditionalTextOperator | Invalid | Contains | NotContains | BeginsWith | EndsWith,
     text: String
   ): ConditionalTextComparisonRule = {
-    val __obj = js.Dynamic.literal(operator = operator.asInstanceOf[js.Any], text = text)
+    val __obj = js.Dynamic.literal(operator = operator.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ConditionalTextComparisonRule]
   }

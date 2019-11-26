@@ -30,7 +30,7 @@ trait Highlight extends js.Object {
 object Highlight {
   @scala.inline
   def apply(color: String, width: Double): Highlight = {
-    val __obj = js.Dynamic.literal(color = color, width = width)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Highlight]
   }

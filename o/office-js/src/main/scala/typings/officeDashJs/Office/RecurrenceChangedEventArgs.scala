@@ -23,8 +23,8 @@ trait RecurrenceChangedEventArgs extends js.Object {
 object RecurrenceChangedEventArgs {
   @scala.inline
   def apply(recurrence: Recurrence, `type`: olkRecurrenceChanged): RecurrenceChangedEventArgs = {
-    val __obj = js.Dynamic.literal(recurrence = recurrence)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(recurrence = recurrence.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecurrenceChangedEventArgs]
   }
 }

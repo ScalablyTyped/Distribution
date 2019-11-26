@@ -69,13 +69,13 @@ object SectionData {
     webUrl: String = null
   ): SectionData = {
     val __obj = js.Dynamic.literal()
-    if (clientUrl != null) __obj.updateDynamic("clientUrl")(clientUrl)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(isEncrypted)) __obj.updateDynamic("isEncrypted")(isEncrypted)
-    if (!js.isUndefined(isLocked)) __obj.updateDynamic("isLocked")(isLocked)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (pages != null) __obj.updateDynamic("pages")(pages)
-    if (webUrl != null) __obj.updateDynamic("webUrl")(webUrl)
+    if (clientUrl != null) __obj.updateDynamic("clientUrl")(clientUrl.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEncrypted)) __obj.updateDynamic("isEncrypted")(isEncrypted.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLocked)) __obj.updateDynamic("isLocked")(isLocked.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
+    if (webUrl != null) __obj.updateDynamic("webUrl")(webUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SectionData]
   }
 }

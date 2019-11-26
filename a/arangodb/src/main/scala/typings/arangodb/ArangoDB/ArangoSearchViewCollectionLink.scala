@@ -25,11 +25,11 @@ object ArangoSearchViewCollectionLink {
     trackListPositions: js.UndefOr[Boolean] = js.undefined
   ): ArangoSearchViewCollectionLink = {
     val __obj = js.Dynamic.literal()
-    if (analyzers != null) __obj.updateDynamic("analyzers")(analyzers)
-    if (fields != null) __obj.updateDynamic("fields")(fields)
-    if (!js.isUndefined(includeAllFields)) __obj.updateDynamic("includeAllFields")(includeAllFields)
+    if (analyzers != null) __obj.updateDynamic("analyzers")(analyzers.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeAllFields)) __obj.updateDynamic("includeAllFields")(includeAllFields.asInstanceOf[js.Any])
     if (storeValues != null) __obj.updateDynamic("storeValues")(storeValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackListPositions)) __obj.updateDynamic("trackListPositions")(trackListPositions)
+    if (!js.isUndefined(trackListPositions)) __obj.updateDynamic("trackListPositions")(trackListPositions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArangoSearchViewCollectionLink]
   }
 }

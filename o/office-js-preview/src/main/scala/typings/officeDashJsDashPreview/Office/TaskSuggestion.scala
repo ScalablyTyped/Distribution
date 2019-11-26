@@ -32,7 +32,7 @@ trait TaskSuggestion extends js.Object {
 object TaskSuggestion {
   @scala.inline
   def apply(assignees: js.Array[EmailUser], taskString: String): TaskSuggestion = {
-    val __obj = js.Dynamic.literal(assignees = assignees, taskString = taskString)
+    val __obj = js.Dynamic.literal(assignees = assignees.asInstanceOf[js.Any], taskString = taskString.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TaskSuggestion]
   }

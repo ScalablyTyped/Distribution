@@ -58,8 +58,8 @@ object WorksheetSingleClickedEventArgs {
     `type`: WorksheetSingleClicked,
     worksheetId: String
   ): WorksheetSingleClickedEventArgs = {
-    val __obj = js.Dynamic.literal(address = address, offsetX = offsetX, offsetY = offsetY, worksheetId = worksheetId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorksheetSingleClickedEventArgs]
   }
 }

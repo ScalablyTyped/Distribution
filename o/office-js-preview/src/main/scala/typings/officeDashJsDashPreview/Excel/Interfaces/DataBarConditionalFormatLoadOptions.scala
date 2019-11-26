@@ -91,15 +91,15 @@ object DataBarConditionalFormatLoadOptions {
     upperBoundRule: js.UndefOr[Boolean] = js.undefined
   ): DataBarConditionalFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(axisColor)) __obj.updateDynamic("axisColor")(axisColor)
-    if (!js.isUndefined(axisFormat)) __obj.updateDynamic("axisFormat")(axisFormat)
-    if (!js.isUndefined(barDirection)) __obj.updateDynamic("barDirection")(barDirection)
-    if (!js.isUndefined(lowerBoundRule)) __obj.updateDynamic("lowerBoundRule")(lowerBoundRule)
-    if (negativeFormat != null) __obj.updateDynamic("negativeFormat")(negativeFormat)
-    if (positiveFormat != null) __obj.updateDynamic("positiveFormat")(positiveFormat)
-    if (!js.isUndefined(showDataBarOnly)) __obj.updateDynamic("showDataBarOnly")(showDataBarOnly)
-    if (!js.isUndefined(upperBoundRule)) __obj.updateDynamic("upperBoundRule")(upperBoundRule)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(axisColor)) __obj.updateDynamic("axisColor")(axisColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(axisFormat)) __obj.updateDynamic("axisFormat")(axisFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(barDirection)) __obj.updateDynamic("barDirection")(barDirection.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowerBoundRule)) __obj.updateDynamic("lowerBoundRule")(lowerBoundRule.asInstanceOf[js.Any])
+    if (negativeFormat != null) __obj.updateDynamic("negativeFormat")(negativeFormat.asInstanceOf[js.Any])
+    if (positiveFormat != null) __obj.updateDynamic("positiveFormat")(positiveFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDataBarOnly)) __obj.updateDynamic("showDataBarOnly")(showDataBarOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(upperBoundRule)) __obj.updateDynamic("upperBoundRule")(upperBoundRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataBarConditionalFormatLoadOptions]
   }
 }

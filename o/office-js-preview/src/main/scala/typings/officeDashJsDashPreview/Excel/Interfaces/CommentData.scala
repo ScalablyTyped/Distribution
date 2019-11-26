@@ -90,15 +90,15 @@ object CommentData {
     richContent: String = null
   ): CommentData = {
     val __obj = js.Dynamic.literal()
-    if (authorEmail != null) __obj.updateDynamic("authorEmail")(authorEmail)
-    if (authorName != null) __obj.updateDynamic("authorName")(authorName)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (mentions != null) __obj.updateDynamic("mentions")(mentions)
-    if (replies != null) __obj.updateDynamic("replies")(replies)
-    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved)
-    if (richContent != null) __obj.updateDynamic("richContent")(richContent)
+    if (authorEmail != null) __obj.updateDynamic("authorEmail")(authorEmail.asInstanceOf[js.Any])
+    if (authorName != null) __obj.updateDynamic("authorName")(authorName.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (mentions != null) __obj.updateDynamic("mentions")(mentions.asInstanceOf[js.Any])
+    if (replies != null) __obj.updateDynamic("replies")(replies.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved.asInstanceOf[js.Any])
+    if (richContent != null) __obj.updateDynamic("richContent")(richContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentData]
   }
 }

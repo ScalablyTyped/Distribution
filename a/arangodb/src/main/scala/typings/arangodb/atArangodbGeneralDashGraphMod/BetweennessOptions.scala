@@ -16,8 +16,8 @@ object BetweennessOptions {
   def apply(defaultWeight: Int | Double = null, direction: EdgeDirection = null, weight: String = null): BetweennessOptions = {
     val __obj = js.Dynamic.literal()
     if (defaultWeight != null) __obj.updateDynamic("defaultWeight")(defaultWeight.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (weight != null) __obj.updateDynamic("weight")(weight)
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[BetweennessOptions]
   }
 }

@@ -40,9 +40,9 @@ object CustomConditionalFormatLoadOptions {
     rule: ConditionalFormatRuleLoadOptions = null
   ): CustomConditionalFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (rule != null) __obj.updateDynamic("rule")(rule)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomConditionalFormatLoadOptions]
   }
 }

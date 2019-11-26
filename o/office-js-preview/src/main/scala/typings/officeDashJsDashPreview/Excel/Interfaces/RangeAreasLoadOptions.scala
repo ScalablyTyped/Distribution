@@ -107,17 +107,17 @@ object RangeAreasLoadOptions {
     worksheet: WorksheetLoadOptions = null
   ): RangeAreasLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(address)) __obj.updateDynamic("address")(address)
-    if (!js.isUndefined(addressLocal)) __obj.updateDynamic("addressLocal")(addressLocal)
-    if (!js.isUndefined(areaCount)) __obj.updateDynamic("areaCount")(areaCount)
-    if (!js.isUndefined(cellCount)) __obj.updateDynamic("cellCount")(cellCount)
-    if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (!js.isUndefined(isEntireColumn)) __obj.updateDynamic("isEntireColumn")(isEntireColumn)
-    if (!js.isUndefined(isEntireRow)) __obj.updateDynamic("isEntireRow")(isEntireRow)
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style)
-    if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(address)) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (!js.isUndefined(addressLocal)) __obj.updateDynamic("addressLocal")(addressLocal.asInstanceOf[js.Any])
+    if (!js.isUndefined(areaCount)) __obj.updateDynamic("areaCount")(areaCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellCount)) __obj.updateDynamic("cellCount")(cellCount.asInstanceOf[js.Any])
+    if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEntireColumn)) __obj.updateDynamic("isEntireColumn")(isEntireColumn.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEntireRow)) __obj.updateDynamic("isEntireRow")(isEntireRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeAreasLoadOptions]
   }
 }

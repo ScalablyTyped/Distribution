@@ -950,7 +950,7 @@ object arangodbStrings {
   sealed trait PUT extends HttpMethod
   
   @js.native
-  sealed trait Patch extends js.Object
+  sealed trait Patch_ extends js.Object
   
   @js.native
   sealed trait SIMPLE_CLIENT_COULD_NOT_CONNECT extends ErrorName
@@ -1878,7 +1878,7 @@ object arangodbStrings {
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   @scala.inline
-  def Patch: Patch = "Patch".asInstanceOf[Patch]
+  def Patch_ : Patch_ = "Patch".asInstanceOf[Patch_]
   @scala.inline
   def SIMPLE_CLIENT_COULD_NOT_CONNECT: SIMPLE_CLIENT_COULD_NOT_CONNECT = "SIMPLE_CLIENT_COULD_NOT_CONNECT".asInstanceOf[SIMPLE_CLIENT_COULD_NOT_CONNECT]
   @scala.inline

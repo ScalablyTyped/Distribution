@@ -15,7 +15,7 @@ import typings.officeDashJs.officeDashJsStrings.PercentRunningTotal
 import typings.officeDashJs.officeDashJsStrings.RankAscending
 import typings.officeDashJs.officeDashJsStrings.RankDecending
 import typings.officeDashJs.officeDashJsStrings.RunningTotal
-import typings.officeDashJs.officeDashJsStrings.Unknown
+import typings.officeDashJs.officeDashJsStrings.Unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,19 +44,19 @@ trait ShowAsRule extends js.Object {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var calculation: ShowAsCalculation | Unknown | None | PercentOfGrandTotal | PercentOfRowTotal | PercentOfColumnTotal | PercentOfParentRowTotal | PercentOfParentColumnTotal | PercentOfParentTotal | PercentOf | RunningTotal | PercentRunningTotal | DifferenceFrom | PercentDifferenceFrom | RankAscending | RankDecending | Index
+  var calculation: ShowAsCalculation | Unknown_ | None | PercentOfGrandTotal | PercentOfRowTotal | PercentOfColumnTotal | PercentOfParentRowTotal | PercentOfParentColumnTotal | PercentOfParentTotal | PercentOf | RunningTotal | PercentRunningTotal | DifferenceFrom | PercentDifferenceFrom | RankAscending | RankDecending | Index
 }
 
 object ShowAsRule {
   @scala.inline
   def apply(
-    calculation: ShowAsCalculation | Unknown | None | PercentOfGrandTotal | PercentOfRowTotal | PercentOfColumnTotal | PercentOfParentRowTotal | PercentOfParentColumnTotal | PercentOfParentTotal | PercentOf | RunningTotal | PercentRunningTotal | DifferenceFrom | PercentDifferenceFrom | RankAscending | RankDecending | Index,
+    calculation: ShowAsCalculation | Unknown_ | None | PercentOfGrandTotal | PercentOfRowTotal | PercentOfColumnTotal | PercentOfParentRowTotal | PercentOfParentColumnTotal | PercentOfParentTotal | PercentOf | RunningTotal | PercentRunningTotal | DifferenceFrom | PercentDifferenceFrom | RankAscending | RankDecending | Index,
     baseField: PivotField = null,
     baseItem: PivotItem = null
   ): ShowAsRule = {
     val __obj = js.Dynamic.literal(calculation = calculation.asInstanceOf[js.Any])
-    if (baseField != null) __obj.updateDynamic("baseField")(baseField)
-    if (baseItem != null) __obj.updateDynamic("baseItem")(baseItem)
+    if (baseField != null) __obj.updateDynamic("baseField")(baseField.asInstanceOf[js.Any])
+    if (baseItem != null) __obj.updateDynamic("baseItem")(baseItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowAsRule]
   }
 }

@@ -67,12 +67,12 @@ object HeaderFooterData {
     rightHeader: String = null
   ): HeaderFooterData = {
     val __obj = js.Dynamic.literal()
-    if (centerFooter != null) __obj.updateDynamic("centerFooter")(centerFooter)
-    if (centerHeader != null) __obj.updateDynamic("centerHeader")(centerHeader)
-    if (leftFooter != null) __obj.updateDynamic("leftFooter")(leftFooter)
-    if (leftHeader != null) __obj.updateDynamic("leftHeader")(leftHeader)
-    if (rightFooter != null) __obj.updateDynamic("rightFooter")(rightFooter)
-    if (rightHeader != null) __obj.updateDynamic("rightHeader")(rightHeader)
+    if (centerFooter != null) __obj.updateDynamic("centerFooter")(centerFooter.asInstanceOf[js.Any])
+    if (centerHeader != null) __obj.updateDynamic("centerHeader")(centerHeader.asInstanceOf[js.Any])
+    if (leftFooter != null) __obj.updateDynamic("leftFooter")(leftFooter.asInstanceOf[js.Any])
+    if (leftHeader != null) __obj.updateDynamic("leftHeader")(leftHeader.asInstanceOf[js.Any])
+    if (rightFooter != null) __obj.updateDynamic("rightFooter")(rightFooter.asInstanceOf[js.Any])
+    if (rightHeader != null) __obj.updateDynamic("rightHeader")(rightHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderFooterData]
   }
 }

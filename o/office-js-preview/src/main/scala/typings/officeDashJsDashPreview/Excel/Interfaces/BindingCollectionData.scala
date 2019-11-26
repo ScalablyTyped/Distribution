@@ -13,7 +13,7 @@ object BindingCollectionData {
   @scala.inline
   def apply(items: js.Array[BindingData] = null): BindingCollectionData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindingCollectionData]
   }
 }

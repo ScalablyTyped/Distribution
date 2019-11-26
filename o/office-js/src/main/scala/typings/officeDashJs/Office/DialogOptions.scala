@@ -46,10 +46,10 @@ object DialogOptions {
     width: Int | Double = null
   ): DialogOptions = {
     val __obj = js.Dynamic.literal()
-    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext)
-    if (!js.isUndefined(displayInIframe)) __obj.updateDynamic("displayInIframe")(displayInIframe)
+    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayInIframe)) __obj.updateDynamic("displayInIframe")(displayInIframe.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(promptBeforeOpen)) __obj.updateDynamic("promptBeforeOpen")(promptBeforeOpen)
+    if (!js.isUndefined(promptBeforeOpen)) __obj.updateDynamic("promptBeforeOpen")(promptBeforeOpen.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogOptions]
   }

@@ -23,8 +23,8 @@ object FiveBoxesSet {
     twoFilledBoxes: Icon,
     NumberDictionary: /* index */ NumberDictionary[Icon] = null
   ): FiveBoxesSet = {
-    val __obj = js.Dynamic.literal(fourFilledBoxes = fourFilledBoxes, noFilledBoxes = noFilledBoxes, oneFilledBox = oneFilledBox, threeFilledBoxes = threeFilledBoxes, twoFilledBoxes = twoFilledBoxes)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    val __obj = js.Dynamic.literal(fourFilledBoxes = fourFilledBoxes.asInstanceOf[js.Any], noFilledBoxes = noFilledBoxes.asInstanceOf[js.Any], oneFilledBox = oneFilledBox.asInstanceOf[js.Any], threeFilledBoxes = threeFilledBoxes.asInstanceOf[js.Any], twoFilledBoxes = twoFilledBoxes.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[FiveBoxesSet]
   }
 }

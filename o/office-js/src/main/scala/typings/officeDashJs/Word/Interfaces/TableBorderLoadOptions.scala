@@ -45,10 +45,10 @@ object TableBorderLoadOptions {
     width: js.UndefOr[Boolean] = js.undefined
   ): TableBorderLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableBorderLoadOptions]
   }
 }

@@ -13,7 +13,7 @@ object DataPivotHierarchyCollectionUpdateData {
   @scala.inline
   def apply(items: js.Array[DataPivotHierarchyData] = null): DataPivotHierarchyCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataPivotHierarchyCollectionUpdateData]
   }
 }

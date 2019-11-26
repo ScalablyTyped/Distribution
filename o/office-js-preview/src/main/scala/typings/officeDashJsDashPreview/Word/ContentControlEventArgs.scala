@@ -43,7 +43,7 @@ object ContentControlEventArgs {
     contentControl: ContentControl,
     eventType: EventType | ContentControlDeleted | ContentControlSelectionChanged | ContentControlDataChanged | ContentControlAdded | AnnotationAdded | AnnotationChanged | AnnotationDeleted
   ): ContentControlEventArgs = {
-    val __obj = js.Dynamic.literal(contentControl = contentControl, eventType = eventType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(contentControl = contentControl.asInstanceOf[js.Any], eventType = eventType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ContentControlEventArgs]
   }

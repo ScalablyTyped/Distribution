@@ -19,7 +19,7 @@ object ChartFormatStringUpdateData {
   @scala.inline
   def apply(font: ChartFontUpdateData = null): ChartFormatStringUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartFormatStringUpdateData]
   }
 }

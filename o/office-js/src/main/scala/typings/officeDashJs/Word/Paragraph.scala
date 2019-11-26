@@ -27,7 +27,7 @@ import typings.officeDashJs.officeDashJsStrings.SectionNext
 import typings.officeDashJs.officeDashJsStrings.SectionOdd
 import typings.officeDashJs.officeDashJsStrings.Select
 import typings.officeDashJs.officeDashJsStrings.Start
-import typings.officeDashJs.officeDashJsStrings.Unknown
+import typings.officeDashJs.officeDashJsStrings.Unknown_
 import typings.officeDashJs.officeDashJsStrings.Whole
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -48,7 +48,7 @@ class Paragraph () extends ClientObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var alignment: Alignment | Mixed | Unknown | Left | Centered | Right | Justified = js.native
+  var alignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = js.native
   /**
     *
     * Gets the collection of content control objects in the paragraph. Read-only.

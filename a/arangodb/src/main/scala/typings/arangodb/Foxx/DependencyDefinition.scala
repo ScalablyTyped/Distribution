@@ -15,8 +15,8 @@ trait DependencyDefinition extends js.Object {
 object DependencyDefinition {
   @scala.inline
   def apply(multiple: Boolean, name: String, required: Boolean, version: String, description: String = null): DependencyDefinition = {
-    val __obj = js.Dynamic.literal(multiple = multiple, name = name, required = required, version = version)
-    if (description != null) __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(multiple = multiple.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[DependencyDefinition]
   }
 }

@@ -12,7 +12,7 @@ trait Anon_CountFileSize extends js.Object {
 object Anon_CountFileSize {
   @scala.inline
   def apply(count: Double, fileSize: Double): Anon_CountFileSize = {
-    val __obj = js.Dynamic.literal(count = count, fileSize = fileSize)
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], fileSize = fileSize.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_CountFileSize]
   }

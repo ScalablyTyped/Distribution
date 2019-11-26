@@ -26,8 +26,8 @@ object ParagraphUpdateData {
   @scala.inline
   def apply(image: ImageUpdateData = null, table: TableUpdateData = null): ParagraphUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (table != null) __obj.updateDynamic("table")(table)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParagraphUpdateData]
   }
 }

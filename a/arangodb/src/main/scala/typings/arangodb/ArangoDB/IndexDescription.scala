@@ -21,11 +21,11 @@ object IndexDescription {
     sparse: js.UndefOr[Boolean] = js.undefined,
     unique: js.UndefOr[Boolean] = js.undefined
   ): IndexDescription[T] = {
-    val __obj = js.Dynamic.literal(fields = fields)
-    __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(deduplicate)) __obj.updateDynamic("deduplicate")(deduplicate)
-    if (!js.isUndefined(sparse)) __obj.updateDynamic("sparse")(sparse)
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(deduplicate)) __obj.updateDynamic("deduplicate")(deduplicate.asInstanceOf[js.Any])
+    if (!js.isUndefined(sparse)) __obj.updateDynamic("sparse")(sparse.asInstanceOf[js.Any])
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexDescription[T]]
   }
 }

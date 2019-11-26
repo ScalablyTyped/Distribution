@@ -20,7 +20,7 @@ object FilterData {
   @scala.inline
   def apply(criteria: FilterCriteria = null): FilterData = {
     val __obj = js.Dynamic.literal()
-    if (criteria != null) __obj.updateDynamic("criteria")(criteria)
+    if (criteria != null) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterData]
   }
 }

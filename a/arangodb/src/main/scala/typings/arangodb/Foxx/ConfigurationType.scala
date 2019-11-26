@@ -16,3 +16,24 @@ import scala.scalajs.js.annotation._
 */
 trait ConfigurationType extends js.Object
 
+object ConfigurationType {
+  @scala.inline
+  def bool: typings.arangodb.arangodbStrings.bool = this.cast("bool")
+  @scala.inline
+  def boolean: typings.arangodb.arangodbStrings.boolean = this.cast("boolean")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def int: typings.arangodb.arangodbStrings.int = this.cast("int")
+  @scala.inline
+  def integer: typings.arangodb.arangodbStrings.integer = this.cast("integer")
+  @scala.inline
+  def json: typings.arangodb.arangodbStrings.json = this.cast("json")
+  @scala.inline
+  def number: typings.arangodb.arangodbStrings.number = this.cast("number")
+  @scala.inline
+  def password: typings.arangodb.arangodbStrings.password = this.cast("password")
+  @scala.inline
+  def string: typings.arangodb.arangodbStrings.string = this.cast("string")
+}
+

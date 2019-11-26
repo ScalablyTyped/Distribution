@@ -33,9 +33,9 @@ object InkWordData {
   @scala.inline
   def apply(id: String = null, languageId: String = null, wordAlternates: js.Array[String] = null): InkWordData = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (languageId != null) __obj.updateDynamic("languageId")(languageId)
-    if (wordAlternates != null) __obj.updateDynamic("wordAlternates")(wordAlternates)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (languageId != null) __obj.updateDynamic("languageId")(languageId.asInstanceOf[js.Any])
+    if (wordAlternates != null) __obj.updateDynamic("wordAlternates")(wordAlternates.asInstanceOf[js.Any])
     __obj.asInstanceOf[InkWordData]
   }
 }

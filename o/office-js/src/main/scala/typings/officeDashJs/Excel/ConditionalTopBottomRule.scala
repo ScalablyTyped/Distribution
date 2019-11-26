@@ -38,7 +38,7 @@ object ConditionalTopBottomRule {
     rank: Double,
     `type`: ConditionalTopBottomCriterionType | Invalid | TopItems | TopPercent | BottomItems | BottomPercent
   ): ConditionalTopBottomRule = {
-    val __obj = js.Dynamic.literal(rank = rank)
+    val __obj = js.Dynamic.literal(rank = rank.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalTopBottomRule]
   }

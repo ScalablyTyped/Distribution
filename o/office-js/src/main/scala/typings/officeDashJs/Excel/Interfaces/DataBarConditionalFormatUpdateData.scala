@@ -89,14 +89,14 @@ object DataBarConditionalFormatUpdateData {
     upperBoundRule: ConditionalDataBarRule = null
   ): DataBarConditionalFormatUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (axisColor != null) __obj.updateDynamic("axisColor")(axisColor)
+    if (axisColor != null) __obj.updateDynamic("axisColor")(axisColor.asInstanceOf[js.Any])
     if (axisFormat != null) __obj.updateDynamic("axisFormat")(axisFormat.asInstanceOf[js.Any])
     if (barDirection != null) __obj.updateDynamic("barDirection")(barDirection.asInstanceOf[js.Any])
-    if (lowerBoundRule != null) __obj.updateDynamic("lowerBoundRule")(lowerBoundRule)
-    if (negativeFormat != null) __obj.updateDynamic("negativeFormat")(negativeFormat)
-    if (positiveFormat != null) __obj.updateDynamic("positiveFormat")(positiveFormat)
-    if (!js.isUndefined(showDataBarOnly)) __obj.updateDynamic("showDataBarOnly")(showDataBarOnly)
-    if (upperBoundRule != null) __obj.updateDynamic("upperBoundRule")(upperBoundRule)
+    if (lowerBoundRule != null) __obj.updateDynamic("lowerBoundRule")(lowerBoundRule.asInstanceOf[js.Any])
+    if (negativeFormat != null) __obj.updateDynamic("negativeFormat")(negativeFormat.asInstanceOf[js.Any])
+    if (positiveFormat != null) __obj.updateDynamic("positiveFormat")(positiveFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDataBarOnly)) __obj.updateDynamic("showDataBarOnly")(showDataBarOnly.asInstanceOf[js.Any])
+    if (upperBoundRule != null) __obj.updateDynamic("upperBoundRule")(upperBoundRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataBarConditionalFormatUpdateData]
   }
 }

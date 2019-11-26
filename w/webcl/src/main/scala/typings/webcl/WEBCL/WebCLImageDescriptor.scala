@@ -22,7 +22,7 @@ object WebCLImageDescriptor {
     rowPitch: Double,
     width: Double
   ): WebCLImageDescriptor = {
-    val __obj = js.Dynamic.literal(channelOrder = channelOrder, channelType = channelType, height = height, rowPitch = rowPitch, width = width)
+    val __obj = js.Dynamic.literal(channelOrder = channelOrder.asInstanceOf[js.Any], channelType = channelType.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], rowPitch = rowPitch.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WebCLImageDescriptor]
   }

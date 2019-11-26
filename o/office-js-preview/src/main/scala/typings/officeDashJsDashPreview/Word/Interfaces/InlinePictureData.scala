@@ -1,16 +1,16 @@
 package typings.officeDashJsDashPreview.Word.Interfaces
 
 import typings.officeDashJsDashPreview.Word.ImageFormat
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Bmp
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Bmp_
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Emf
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Exif
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Gif
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Gif_
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Icon
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Jpeg
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Jpeg_
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Pdf
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Pict
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Png
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Svg
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Png_
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Svg_
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Tiff
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Undefined
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unsupported
@@ -57,7 +57,7 @@ trait InlinePictureData extends js.Object {
     * @beta
     */
   var imageFormat: js.UndefOr[
-    ImageFormat | Unsupported | Undefined | Bmp | Jpeg | Gif | Tiff | Png | Icon | Exif | Wmf | Emf | Pict | Pdf | Svg
+    ImageFormat | Unsupported | Undefined | Bmp_ | Jpeg_ | Gif_ | Tiff | Png_ | Icon | Exif | Wmf | Emf | Pict | Pdf | Svg_
   ] = js.undefined
   /**
     *
@@ -82,17 +82,17 @@ object InlinePictureData {
     altTextTitle: String = null,
     height: Int | Double = null,
     hyperlink: String = null,
-    imageFormat: ImageFormat | Unsupported | Undefined | Bmp | Jpeg | Gif | Tiff | Png | Icon | Exif | Wmf | Emf | Pict | Pdf | Svg = null,
+    imageFormat: ImageFormat | Unsupported | Undefined | Bmp_ | Jpeg_ | Gif_ | Tiff | Png_ | Icon | Exif | Wmf | Emf | Pict | Pdf | Svg_ = null,
     lockAspectRatio: js.UndefOr[Boolean] = js.undefined,
     width: Int | Double = null
   ): InlinePictureData = {
     val __obj = js.Dynamic.literal()
-    if (altTextDescription != null) __obj.updateDynamic("altTextDescription")(altTextDescription)
-    if (altTextTitle != null) __obj.updateDynamic("altTextTitle")(altTextTitle)
+    if (altTextDescription != null) __obj.updateDynamic("altTextDescription")(altTextDescription.asInstanceOf[js.Any])
+    if (altTextTitle != null) __obj.updateDynamic("altTextTitle")(altTextTitle.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
+    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
     if (imageFormat != null) __obj.updateDynamic("imageFormat")(imageFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockAspectRatio)) __obj.updateDynamic("lockAspectRatio")(lockAspectRatio)
+    if (!js.isUndefined(lockAspectRatio)) __obj.updateDynamic("lockAspectRatio")(lockAspectRatio.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlinePictureData]
   }

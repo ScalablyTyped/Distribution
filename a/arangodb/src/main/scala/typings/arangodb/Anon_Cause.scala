@@ -14,8 +14,8 @@ object Anon_Cause {
   @scala.inline
   def apply(cause: Error = null, extra: js.Any = null): Anon_Cause = {
     val __obj = js.Dynamic.literal()
-    if (cause != null) __obj.updateDynamic("cause")(cause)
-    if (extra != null) __obj.updateDynamic("extra")(extra)
+    if (cause != null) __obj.updateDynamic("cause")(cause.asInstanceOf[js.Any])
+    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cause]
   }
 }

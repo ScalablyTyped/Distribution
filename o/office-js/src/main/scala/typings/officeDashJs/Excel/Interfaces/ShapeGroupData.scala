@@ -26,8 +26,8 @@ object ShapeGroupData {
   @scala.inline
   def apply(id: String = null, shapes: js.Array[ShapeData] = null): ShapeGroupData = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (shapes != null) __obj.updateDynamic("shapes")(shapes)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (shapes != null) __obj.updateDynamic("shapes")(shapes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeGroupData]
   }
 }

@@ -85,15 +85,15 @@ object ShapeData {
     view: ShapeViewData = null
   ): ShapeData = {
     val __obj = js.Dynamic.literal()
-    if (comments != null) __obj.updateDynamic("comments")(comments)
-    if (hyperlinks != null) __obj.updateDynamic("hyperlinks")(hyperlinks)
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (hyperlinks != null) __obj.updateDynamic("hyperlinks")(hyperlinks.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select)
-    if (shapeDataItems != null) __obj.updateDynamic("shapeDataItems")(shapeDataItems)
-    if (subShapes != null) __obj.updateDynamic("subShapes")(subShapes)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
+    if (shapeDataItems != null) __obj.updateDynamic("shapeDataItems")(shapeDataItems.asInstanceOf[js.Any])
+    if (subShapes != null) __obj.updateDynamic("subShapes")(subShapes.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeData]
   }
 }

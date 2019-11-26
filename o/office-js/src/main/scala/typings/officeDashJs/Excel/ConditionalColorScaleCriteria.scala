@@ -41,8 +41,8 @@ object ConditionalColorScaleCriteria {
     minimum: ConditionalColorScaleCriterion,
     midpoint: ConditionalColorScaleCriterion = null
   ): ConditionalColorScaleCriteria = {
-    val __obj = js.Dynamic.literal(maximum = maximum, minimum = minimum)
-    if (midpoint != null) __obj.updateDynamic("midpoint")(midpoint)
+    val __obj = js.Dynamic.literal(maximum = maximum.asInstanceOf[js.Any], minimum = minimum.asInstanceOf[js.Any])
+    if (midpoint != null) __obj.updateDynamic("midpoint")(midpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalColorScaleCriteria]
   }
 }

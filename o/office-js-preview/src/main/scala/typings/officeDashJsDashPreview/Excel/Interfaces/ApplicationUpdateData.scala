@@ -36,7 +36,7 @@ object ApplicationUpdateData {
   ): ApplicationUpdateData = {
     val __obj = js.Dynamic.literal()
     if (calculationMode != null) __obj.updateDynamic("calculationMode")(calculationMode.asInstanceOf[js.Any])
-    if (iterativeCalculation != null) __obj.updateDynamic("iterativeCalculation")(iterativeCalculation)
+    if (iterativeCalculation != null) __obj.updateDynamic("iterativeCalculation")(iterativeCalculation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationUpdateData]
   }
 }

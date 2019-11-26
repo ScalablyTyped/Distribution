@@ -33,7 +33,7 @@ object PageContentUpdateData {
   @scala.inline
   def apply(image: ImageUpdateData = null, left: Int | Double = null, top: Int | Double = null): PageContentUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (image != null) __obj.updateDynamic("image")(image)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageContentUpdateData]

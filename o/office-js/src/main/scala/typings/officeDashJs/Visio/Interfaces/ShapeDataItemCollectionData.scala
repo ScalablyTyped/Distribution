@@ -13,7 +13,7 @@ object ShapeDataItemCollectionData {
   @scala.inline
   def apply(items: js.Array[ShapeDataItemData] = null): ShapeDataItemCollectionData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeDataItemCollectionData]
   }
 }

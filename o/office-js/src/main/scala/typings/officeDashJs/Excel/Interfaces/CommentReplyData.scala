@@ -54,11 +54,11 @@ object CommentReplyData {
     id: String = null
   ): CommentReplyData = {
     val __obj = js.Dynamic.literal()
-    if (authorEmail != null) __obj.updateDynamic("authorEmail")(authorEmail)
-    if (authorName != null) __obj.updateDynamic("authorName")(authorName)
-    if (content != null) __obj.updateDynamic("content")(content)
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (authorEmail != null) __obj.updateDynamic("authorEmail")(authorEmail.asInstanceOf[js.Any])
+    if (authorName != null) __obj.updateDynamic("authorName")(authorName.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentReplyData]
   }
 }

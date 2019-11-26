@@ -1132,6 +1132,6 @@ object webclNumbers {
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
   @scala.inline
-  def _0xFFFFFFFF: _0xFFFFFFFF = _0xFFFFFFFF.asInstanceOf[_0xFFFFFFFF]
+  def _0xFFFFFFFF: _0xFFFFFFFF = 4294967295.0.asInstanceOf[_0xFFFFFFFF]
 }
 

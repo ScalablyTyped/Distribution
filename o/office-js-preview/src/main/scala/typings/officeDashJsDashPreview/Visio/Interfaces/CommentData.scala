@@ -33,9 +33,9 @@ object CommentData {
   @scala.inline
   def apply(author: String = null, date: String = null, text: String = null): CommentData = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentData]
   }
 }

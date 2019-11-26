@@ -13,7 +13,7 @@ object ChartPointsCollectionData {
   @scala.inline
   def apply(items: js.Array[ChartPointData] = null): ChartPointsCollectionData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartPointsCollectionData]
   }
 }

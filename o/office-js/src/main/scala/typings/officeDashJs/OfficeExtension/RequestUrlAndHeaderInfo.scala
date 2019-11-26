@@ -18,8 +18,8 @@ trait RequestUrlAndHeaderInfo extends js.Object {
 object RequestUrlAndHeaderInfo {
   @scala.inline
   def apply(url: String, headers: StringDictionary[String] = null): RequestUrlAndHeaderInfo = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestUrlAndHeaderInfo]
   }
 }

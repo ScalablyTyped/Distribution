@@ -20,10 +20,10 @@ object UpdateByExampleOptions {
     waitForSync: js.UndefOr[Boolean] = js.undefined
   ): UpdateByExampleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(keepNull)) __obj.updateDynamic("keepNull")(keepNull)
+    if (!js.isUndefined(keepNull)) __obj.updateDynamic("keepNull")(keepNull.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(mergeObjects)) __obj.updateDynamic("mergeObjects")(mergeObjects)
-    if (!js.isUndefined(waitForSync)) __obj.updateDynamic("waitForSync")(waitForSync)
+    if (!js.isUndefined(mergeObjects)) __obj.updateDynamic("mergeObjects")(mergeObjects.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForSync)) __obj.updateDynamic("waitForSync")(waitForSync.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateByExampleOptions]
   }
 }

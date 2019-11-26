@@ -19,8 +19,8 @@ object ThreeSymbols2Set {
     yellowExclamation: Icon,
     NumberDictionary: /* index */ NumberDictionary[Icon] = null
   ): ThreeSymbols2Set = {
-    val __obj = js.Dynamic.literal(greenCheck = greenCheck, redCross = redCross, yellowExclamation = yellowExclamation)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    val __obj = js.Dynamic.literal(greenCheck = greenCheck.asInstanceOf[js.Any], redCross = redCross.asInstanceOf[js.Any], yellowExclamation = yellowExclamation.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[ThreeSymbols2Set]
   }
 }

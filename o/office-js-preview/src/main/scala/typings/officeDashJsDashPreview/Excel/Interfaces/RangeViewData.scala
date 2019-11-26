@@ -110,18 +110,18 @@ object RangeViewData {
     values: js.Array[js.Array[_]] = null
   ): RangeViewData = {
     val __obj = js.Dynamic.literal()
-    if (cellAddresses != null) __obj.updateDynamic("cellAddresses")(cellAddresses)
+    if (cellAddresses != null) __obj.updateDynamic("cellAddresses")(cellAddresses.asInstanceOf[js.Any])
     if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
-    if (formulas != null) __obj.updateDynamic("formulas")(formulas)
-    if (formulasLocal != null) __obj.updateDynamic("formulasLocal")(formulasLocal)
-    if (formulasR1C1 != null) __obj.updateDynamic("formulasR1C1")(formulasR1C1)
+    if (formulas != null) __obj.updateDynamic("formulas")(formulas.asInstanceOf[js.Any])
+    if (formulasLocal != null) __obj.updateDynamic("formulasLocal")(formulasLocal.asInstanceOf[js.Any])
+    if (formulasR1C1 != null) __obj.updateDynamic("formulasR1C1")(formulasR1C1.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat)
+    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
     if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (valueTypes != null) __obj.updateDynamic("valueTypes")(valueTypes)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (valueTypes != null) __obj.updateDynamic("valueTypes")(valueTypes.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeViewData]
   }
 }

@@ -2,12 +2,12 @@ package typings.officeDashJsDashPreview.Excel
 
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Boolean
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Double
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Empty
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Empty_
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Error
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Integer
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.RichValue
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.String
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +39,14 @@ trait ChangedEventDetail extends js.Object {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var valueTypeAfter: RangeValueType | Unknown | Empty | String | Integer | Double | Boolean | Error | RichValue
+  var valueTypeAfter: RangeValueType | Unknown_ | Empty_ | String | Integer | Double | Boolean | Error | RichValue
   /**
     *
     * Represents the type of value before changed
     *
     * [Api set: ExcelApi 1.9]
     */
-  var valueTypeBefore: RangeValueType | Unknown | Empty | String | Integer | Double | Boolean | Error | RichValue
+  var valueTypeBefore: RangeValueType | Unknown_ | Empty_ | String | Integer | Double | Boolean | Error | RichValue
 }
 
 object ChangedEventDetail {
@@ -54,10 +54,10 @@ object ChangedEventDetail {
   def apply(
     valueAfter: js.Any,
     valueBefore: js.Any,
-    valueTypeAfter: RangeValueType | Unknown | Empty | String | Integer | Double | Boolean | Error | RichValue,
-    valueTypeBefore: RangeValueType | Unknown | Empty | String | Integer | Double | Boolean | Error | RichValue
+    valueTypeAfter: RangeValueType | Unknown_ | Empty_ | String | Integer | Double | Boolean | Error | RichValue,
+    valueTypeBefore: RangeValueType | Unknown_ | Empty_ | String | Integer | Double | Boolean | Error | RichValue
   ): ChangedEventDetail = {
-    val __obj = js.Dynamic.literal(valueAfter = valueAfter, valueBefore = valueBefore, valueTypeAfter = valueTypeAfter.asInstanceOf[js.Any], valueTypeBefore = valueTypeBefore.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(valueAfter = valueAfter.asInstanceOf[js.Any], valueBefore = valueBefore.asInstanceOf[js.Any], valueTypeAfter = valueTypeAfter.asInstanceOf[js.Any], valueTypeBefore = valueTypeBefore.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChangedEventDetail]
   }

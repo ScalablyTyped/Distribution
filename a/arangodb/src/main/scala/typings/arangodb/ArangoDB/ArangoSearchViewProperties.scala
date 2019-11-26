@@ -28,8 +28,8 @@ object ArangoSearchViewProperties {
     name: String,
     `type`: arangosearch
   ): ArangoSearchViewProperties = {
-    val __obj = js.Dynamic.literal(cleanupIntervalStep = cleanupIntervalStep, consolidationIntervalMsec = consolidationIntervalMsec, consolidationPolicy = consolidationPolicy, id = id, links = links, name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(cleanupIntervalStep = cleanupIntervalStep.asInstanceOf[js.Any], consolidationIntervalMsec = consolidationIntervalMsec.asInstanceOf[js.Any], consolidationPolicy = consolidationPolicy.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArangoSearchViewProperties]
   }
 }

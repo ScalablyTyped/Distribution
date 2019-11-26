@@ -48,10 +48,10 @@ object ConditionalRangeBorderLoadOptions {
     style: js.UndefOr[Boolean] = js.undefined
   ): ConditionalRangeBorderLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(sideIndex)) __obj.updateDynamic("sideIndex")(sideIndex)
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(sideIndex)) __obj.updateDynamic("sideIndex")(sideIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalRangeBorderLoadOptions]
   }
 }

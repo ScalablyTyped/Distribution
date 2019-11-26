@@ -12,7 +12,7 @@ object Anon_ColumnWidth {
   @scala.inline
   def apply(columnWidth: js.UndefOr[Boolean] = js.undefined): Anon_ColumnWidth = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth)
+    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColumnWidth]
   }
 }

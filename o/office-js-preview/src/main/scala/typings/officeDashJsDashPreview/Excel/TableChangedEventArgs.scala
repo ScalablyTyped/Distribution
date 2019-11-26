@@ -10,7 +10,7 @@ import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Remote
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.RowDeleted
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.RowInserted
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.TableChanged
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +35,7 @@ trait TableChangedEventArgs extends js.Object {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var changeType: DataChangeType | Unknown | RangeEdited | RowInserted | RowDeleted | ColumnInserted | ColumnDeleted | CellInserted | CellDeleted
+  var changeType: DataChangeType | Unknown_ | RangeEdited | RowInserted | RowDeleted | ColumnInserted | ColumnDeleted | CellInserted | CellDeleted
   /**
     *
     * Represents the information about the change detail. This property can be retrieved when the Changed event is triggered on a single cell. If the Changed event is triggered on multiple cells, this property cannot be retrieved.
@@ -91,7 +91,7 @@ object TableChangedEventArgs {
   @scala.inline
   def apply(
     address: String,
-    changeType: DataChangeType | Unknown | RangeEdited | RowInserted | RowDeleted | ColumnInserted | ColumnDeleted | CellInserted | CellDeleted,
+    changeType: DataChangeType | Unknown_ | RangeEdited | RowInserted | RowDeleted | ColumnInserted | ColumnDeleted | CellInserted | CellDeleted,
     details: ChangedEventDetail,
     getRange: RequestContext => Range,
     getRangeOrNullObject: RequestContext => Range,
@@ -100,8 +100,8 @@ object TableChangedEventArgs {
     `type`: TableChanged,
     worksheetId: String
   ): TableChangedEventArgs = {
-    val __obj = js.Dynamic.literal(address = address, changeType = changeType.asInstanceOf[js.Any], details = details, getRange = js.Any.fromFunction1(getRange), getRangeOrNullObject = js.Any.fromFunction1(getRangeOrNullObject), source = source.asInstanceOf[js.Any], tableId = tableId, worksheetId = worksheetId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], changeType = changeType.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], getRange = js.Any.fromFunction1(getRange), getRangeOrNullObject = js.Any.fromFunction1(getRangeOrNullObject), source = source.asInstanceOf[js.Any], tableId = tableId.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableChangedEventArgs]
   }
 }

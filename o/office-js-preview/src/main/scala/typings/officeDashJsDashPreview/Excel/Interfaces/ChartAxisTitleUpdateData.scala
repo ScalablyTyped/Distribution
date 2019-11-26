@@ -37,9 +37,9 @@ object ChartAxisTitleUpdateData {
     visible: js.UndefOr[Boolean] = js.undefined
   ): ChartAxisTitleUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (text != null) __obj.updateDynamic("text")(text)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAxisTitleUpdateData]
   }
 }

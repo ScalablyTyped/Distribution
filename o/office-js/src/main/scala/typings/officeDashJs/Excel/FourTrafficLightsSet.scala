@@ -21,8 +21,8 @@ object FourTrafficLightsSet {
     yellowCircle: Icon,
     NumberDictionary: /* index */ NumberDictionary[Icon] = null
   ): FourTrafficLightsSet = {
-    val __obj = js.Dynamic.literal(blackCircleWithBorder = blackCircleWithBorder, greenCircle = greenCircle, redCircleWithBorder = redCircleWithBorder, yellowCircle = yellowCircle)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    val __obj = js.Dynamic.literal(blackCircleWithBorder = blackCircleWithBorder.asInstanceOf[js.Any], greenCircle = greenCircle.asInstanceOf[js.Any], redCircleWithBorder = redCircleWithBorder.asInstanceOf[js.Any], yellowCircle = yellowCircle.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[FourTrafficLightsSet]
   }
 }

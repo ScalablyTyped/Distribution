@@ -40,9 +40,9 @@ object SettingLoadOptions {
     value: js.UndefOr[Boolean] = js.undefined
   ): SettingLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key)
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingLoadOptions]
   }
 }

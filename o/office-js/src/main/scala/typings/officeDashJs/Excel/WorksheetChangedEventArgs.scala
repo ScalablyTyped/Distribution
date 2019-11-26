@@ -9,7 +9,7 @@ import typings.officeDashJs.officeDashJsStrings.RangeEdited
 import typings.officeDashJs.officeDashJsStrings.Remote
 import typings.officeDashJs.officeDashJsStrings.RowDeleted
 import typings.officeDashJs.officeDashJsStrings.RowInserted
-import typings.officeDashJs.officeDashJsStrings.Unknown
+import typings.officeDashJs.officeDashJsStrings.Unknown_
 import typings.officeDashJs.officeDashJsStrings.WorksheetChanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,7 +35,7 @@ trait WorksheetChangedEventArgs extends js.Object {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var changeType: DataChangeType | Unknown | RangeEdited | RowInserted | RowDeleted | ColumnInserted | ColumnDeleted | CellInserted | CellDeleted
+  var changeType: DataChangeType | Unknown_ | RangeEdited | RowInserted | RowDeleted | ColumnInserted | ColumnDeleted | CellInserted | CellDeleted
   /**
     *
     * Represents the information about the change detail. This property can be retrieved when the Changed event is triggered on a single cell. If the Changed event is triggered on multiple cells, this property cannot be retrieved.
@@ -84,7 +84,7 @@ object WorksheetChangedEventArgs {
   @scala.inline
   def apply(
     address: String,
-    changeType: DataChangeType | Unknown | RangeEdited | RowInserted | RowDeleted | ColumnInserted | ColumnDeleted | CellInserted | CellDeleted,
+    changeType: DataChangeType | Unknown_ | RangeEdited | RowInserted | RowDeleted | ColumnInserted | ColumnDeleted | CellInserted | CellDeleted,
     details: ChangedEventDetail,
     getRange: RequestContext => Range,
     getRangeOrNullObject: RequestContext => Range,
@@ -92,8 +92,8 @@ object WorksheetChangedEventArgs {
     `type`: WorksheetChanged,
     worksheetId: String
   ): WorksheetChangedEventArgs = {
-    val __obj = js.Dynamic.literal(address = address, changeType = changeType.asInstanceOf[js.Any], details = details, getRange = js.Any.fromFunction1(getRange), getRangeOrNullObject = js.Any.fromFunction1(getRangeOrNullObject), source = source.asInstanceOf[js.Any], worksheetId = worksheetId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], changeType = changeType.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], getRange = js.Any.fromFunction1(getRange), getRangeOrNullObject = js.Any.fromFunction1(getRangeOrNullObject), source = source.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorksheetChangedEventArgs]
   }
 }

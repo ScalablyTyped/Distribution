@@ -22,8 +22,8 @@ object AddBindingFromNamedItemOptions {
   @scala.inline
   def apply(asyncContext: js.Any = null, id: String = null): AddBindingFromNamedItemOptions = {
     val __obj = js.Dynamic.literal()
-    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddBindingFromNamedItemOptions]
   }
 }

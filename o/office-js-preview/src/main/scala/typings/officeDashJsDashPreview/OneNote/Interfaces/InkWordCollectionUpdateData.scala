@@ -13,7 +13,7 @@ object InkWordCollectionUpdateData {
   @scala.inline
   def apply(items: js.Array[InkWordData] = null): InkWordCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[InkWordCollectionUpdateData]
   }
 }

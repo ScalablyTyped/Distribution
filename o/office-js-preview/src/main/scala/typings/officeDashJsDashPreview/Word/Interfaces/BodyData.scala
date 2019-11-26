@@ -4,7 +4,7 @@ import typings.officeDashJsDashPreview.Word.BodyType
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Footer
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Header
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.MainDoc
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -83,7 +83,7 @@ trait BodyData extends js.Object {
     * [Api set: WordApi 1.3]
     */
   var `type`: js.UndefOr[
-    BodyType | Unknown | MainDoc | typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Section | Header | Footer | typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.TableCell
+    BodyType | Unknown_ | MainDoc | typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Section | Header | Footer | typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.TableCell
   ] = js.undefined
 }
 
@@ -99,18 +99,18 @@ object BodyData {
     styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ js.Any = null,
     tables: js.Array[TableData] = null,
     text: String = null,
-    `type`: BodyType | Unknown | MainDoc | typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Section | Header | Footer | typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.TableCell = null
+    `type`: BodyType | Unknown_ | MainDoc | typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Section | Header | Footer | typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.TableCell = null
   ): BodyData = {
     val __obj = js.Dynamic.literal()
-    if (contentControls != null) __obj.updateDynamic("contentControls")(contentControls)
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (inlinePictures != null) __obj.updateDynamic("inlinePictures")(inlinePictures)
-    if (lists != null) __obj.updateDynamic("lists")(lists)
-    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (styleBuiltIn != null) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn)
-    if (tables != null) __obj.updateDynamic("tables")(tables)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (contentControls != null) __obj.updateDynamic("contentControls")(contentControls.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (inlinePictures != null) __obj.updateDynamic("inlinePictures")(inlinePictures.asInstanceOf[js.Any])
+    if (lists != null) __obj.updateDynamic("lists")(lists.asInstanceOf[js.Any])
+    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (styleBuiltIn != null) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn.asInstanceOf[js.Any])
+    if (tables != null) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BodyData]
   }

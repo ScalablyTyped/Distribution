@@ -45,10 +45,10 @@ object FloatingInkLoadOptions {
     pageContent: PageContentLoadOptions = null
   ): FloatingInkLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
-    if (inkStrokes != null) __obj.updateDynamic("inkStrokes")(inkStrokes)
-    if (pageContent != null) __obj.updateDynamic("pageContent")(pageContent)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (inkStrokes != null) __obj.updateDynamic("inkStrokes")(inkStrokes.asInstanceOf[js.Any])
+    if (pageContent != null) __obj.updateDynamic("pageContent")(pageContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[FloatingInkLoadOptions]
   }
 }

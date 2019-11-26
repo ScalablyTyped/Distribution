@@ -38,7 +38,7 @@ import typings.officeDashJs.officeDashJsStrings.ThisWeek
 import typings.officeDashJs.officeDashJsStrings.ThisYear
 import typings.officeDashJs.officeDashJsStrings.Today
 import typings.officeDashJs.officeDashJsStrings.Tomorrow
-import typings.officeDashJs.officeDashJsStrings.Unknown
+import typings.officeDashJs.officeDashJsStrings.Unknown_
 import typings.officeDashJs.officeDashJsStrings.YearToDate
 import typings.officeDashJs.officeDashJsStrings.Yesterday
 import scala.scalajs.js
@@ -127,7 +127,7 @@ class Filter () extends ClientObject {
     * @param criteria The dynamic criteria to apply.
     */
   def applyDynamicFilter(
-    criteria: Unknown | AboveAverage | AllDatesInPeriodApril | AllDatesInPeriodAugust | AllDatesInPeriodDecember | AllDatesInPeriodFebruray | AllDatesInPeriodJanuary | AllDatesInPeriodJuly | AllDatesInPeriodJune | AllDatesInPeriodMarch | AllDatesInPeriodMay | AllDatesInPeriodNovember | AllDatesInPeriodOctober | AllDatesInPeriodQuarter1 | AllDatesInPeriodQuarter2 | AllDatesInPeriodQuarter3 | AllDatesInPeriodQuarter4 | AllDatesInPeriodSeptember | BelowAverage | LastMonth | LastQuarter | LastWeek | LastYear | NextMonth | NextQuarter | NextWeek | NextYear | ThisMonth | ThisQuarter | ThisWeek | ThisYear | Today | Tomorrow | YearToDate | Yesterday
+    criteria: Unknown_ | AboveAverage | AllDatesInPeriodApril | AllDatesInPeriodAugust | AllDatesInPeriodDecember | AllDatesInPeriodFebruray | AllDatesInPeriodJanuary | AllDatesInPeriodJuly | AllDatesInPeriodJune | AllDatesInPeriodMarch | AllDatesInPeriodMay | AllDatesInPeriodNovember | AllDatesInPeriodOctober | AllDatesInPeriodQuarter1 | AllDatesInPeriodQuarter2 | AllDatesInPeriodQuarter3 | AllDatesInPeriodQuarter4 | AllDatesInPeriodSeptember | BelowAverage | LastMonth | LastQuarter | LastWeek | LastYear | NextMonth | NextQuarter | NextWeek | NextYear | ThisMonth | ThisQuarter | ThisWeek | ThisYear | Today | Tomorrow | YearToDate | Yesterday
   ): Unit = js.native
   /**
     *

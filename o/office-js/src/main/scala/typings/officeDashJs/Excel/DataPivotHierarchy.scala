@@ -16,7 +16,7 @@ import typings.officeDashJs.officeDashJsStrings.Product
 import typings.officeDashJs.officeDashJsStrings.StandardDeviation
 import typings.officeDashJs.officeDashJsStrings.StandardDeviationP
 import typings.officeDashJs.officeDashJsStrings.Sum
-import typings.officeDashJs.officeDashJsStrings.Unknown
+import typings.officeDashJs.officeDashJsStrings.Unknown_
 import typings.officeDashJs.officeDashJsStrings.Variance
 import typings.officeDashJs.officeDashJsStrings.VarianceP
 import scala.scalajs.js
@@ -83,7 +83,7 @@ class DataPivotHierarchy () extends ClientObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var summarizeBy: AggregationFunction | Unknown | Automatic | Sum | Count | Average | Max | Min | Product | CountNumbers | StandardDeviation | StandardDeviationP | Variance | VarianceP = js.native
+  var summarizeBy: AggregationFunction | Unknown_ | Automatic | Sum | Count | Average | Max | Min | Product | CountNumbers | StandardDeviation | StandardDeviationP | Variance | VarianceP = js.native
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *

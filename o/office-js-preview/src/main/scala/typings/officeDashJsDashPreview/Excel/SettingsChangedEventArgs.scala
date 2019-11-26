@@ -23,7 +23,7 @@ trait SettingsChangedEventArgs extends js.Object {
 object SettingsChangedEventArgs {
   @scala.inline
   def apply(settings: SettingCollection): SettingsChangedEventArgs = {
-    val __obj = js.Dynamic.literal(settings = settings)
+    val __obj = js.Dynamic.literal(settings = settings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SettingsChangedEventArgs]
   }

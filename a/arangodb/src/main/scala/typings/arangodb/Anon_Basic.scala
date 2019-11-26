@@ -13,8 +13,8 @@ object Anon_Basic {
   @scala.inline
   def apply(basic: Anon_Password = null, bearer: String = null): Anon_Basic = {
     val __obj = js.Dynamic.literal()
-    if (basic != null) __obj.updateDynamic("basic")(basic)
-    if (bearer != null) __obj.updateDynamic("bearer")(bearer)
+    if (basic != null) __obj.updateDynamic("basic")(basic.asInstanceOf[js.Any])
+    if (bearer != null) __obj.updateDynamic("bearer")(bearer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Basic]
   }
 }

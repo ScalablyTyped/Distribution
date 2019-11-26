@@ -26,7 +26,7 @@ object RunOptions {
     session: RequestUrlAndHeaderInfo | Session = null
   ): RunOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(delayForCellEdit)) __obj.updateDynamic("delayForCellEdit")(delayForCellEdit)
+    if (!js.isUndefined(delayForCellEdit)) __obj.updateDynamic("delayForCellEdit")(delayForCellEdit.asInstanceOf[js.Any])
     if (previousObjects != null) __obj.updateDynamic("previousObjects")(previousObjects.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunOptions]

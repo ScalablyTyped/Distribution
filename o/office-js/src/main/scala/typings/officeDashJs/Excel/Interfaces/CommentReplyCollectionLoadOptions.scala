@@ -64,12 +64,12 @@ object CommentReplyCollectionLoadOptions {
     id: js.UndefOr[Boolean] = js.undefined
   ): CommentReplyCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(authorEmail)) __obj.updateDynamic("authorEmail")(authorEmail)
-    if (!js.isUndefined(authorName)) __obj.updateDynamic("authorName")(authorName)
-    if (!js.isUndefined(content)) __obj.updateDynamic("content")(content)
-    if (!js.isUndefined(creationDate)) __obj.updateDynamic("creationDate")(creationDate)
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(authorEmail)) __obj.updateDynamic("authorEmail")(authorEmail.asInstanceOf[js.Any])
+    if (!js.isUndefined(authorName)) __obj.updateDynamic("authorName")(authorName.asInstanceOf[js.Any])
+    if (!js.isUndefined(content)) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(creationDate)) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentReplyCollectionLoadOptions]
   }
 }

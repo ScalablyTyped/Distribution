@@ -53,11 +53,11 @@ object DocumentData {
     sections: js.Array[SectionData] = null
   ): DocumentData = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (contentControls != null) __obj.updateDynamic("contentControls")(contentControls)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (!js.isUndefined(saved)) __obj.updateDynamic("saved")(saved)
-    if (sections != null) __obj.updateDynamic("sections")(sections)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (contentControls != null) __obj.updateDynamic("contentControls")(contentControls.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (!js.isUndefined(saved)) __obj.updateDynamic("saved")(saved.asInstanceOf[js.Any])
+    if (sections != null) __obj.updateDynamic("sections")(sections.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentData]
   }
 }

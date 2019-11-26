@@ -12,7 +12,7 @@ import typings.officeDashJs.officeDashJsStrings.Product
 import typings.officeDashJs.officeDashJsStrings.StandardDeviation
 import typings.officeDashJs.officeDashJsStrings.StandardDeviationP
 import typings.officeDashJs.officeDashJsStrings.Sum
-import typings.officeDashJs.officeDashJsStrings.Unknown
+import typings.officeDashJs.officeDashJsStrings.Unknown_
 import typings.officeDashJs.officeDashJsStrings.Variance
 import typings.officeDashJs.officeDashJsStrings.VarianceP
 import scala.scalajs.js
@@ -70,7 +70,7 @@ trait DataPivotHierarchyData extends js.Object {
     * [Api set: ExcelApi 1.8]
     */
   var summarizeBy: js.UndefOr[
-    AggregationFunction | Unknown | Automatic | Sum | Count | Average | Max | Min | Product | CountNumbers | StandardDeviation | StandardDeviationP | Variance | VarianceP
+    AggregationFunction | Unknown_ | Automatic | Sum | Count | Average | Max | Min | Product | CountNumbers | StandardDeviation | StandardDeviationP | Variance | VarianceP
   ] = js.undefined
 }
 
@@ -83,15 +83,15 @@ object DataPivotHierarchyData {
     numberFormat: String = null,
     position: Int | Double = null,
     showAs: ShowAsRule = null,
-    summarizeBy: AggregationFunction | Unknown | Automatic | Sum | Count | Average | Max | Min | Product | CountNumbers | StandardDeviation | StandardDeviationP | Variance | VarianceP = null
+    summarizeBy: AggregationFunction | Unknown_ | Automatic | Sum | Count | Average | Max | Min | Product | CountNumbers | StandardDeviation | StandardDeviationP | Variance | VarianceP = null
   ): DataPivotHierarchyData = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat)
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (showAs != null) __obj.updateDynamic("showAs")(showAs)
+    if (showAs != null) __obj.updateDynamic("showAs")(showAs.asInstanceOf[js.Any])
     if (summarizeBy != null) __obj.updateDynamic("summarizeBy")(summarizeBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataPivotHierarchyData]
   }

@@ -37,9 +37,9 @@ object DocumentData {
     view: DocumentViewData = null
   ): DocumentData = {
     val __obj = js.Dynamic.literal()
-    if (application != null) __obj.updateDynamic("application")(application)
-    if (pages != null) __obj.updateDynamic("pages")(pages)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
+    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentData]
   }
 }

@@ -13,7 +13,7 @@ object HyperlinkCollectionData {
   @scala.inline
   def apply(items: js.Array[HyperlinkData] = null): HyperlinkCollectionData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[HyperlinkCollectionData]
   }
 }

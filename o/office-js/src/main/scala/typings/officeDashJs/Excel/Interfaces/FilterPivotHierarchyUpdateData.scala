@@ -37,8 +37,8 @@ object FilterPivotHierarchyUpdateData {
     position: Int | Double = null
   ): FilterPivotHierarchyUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableMultipleFilterItems)) __obj.updateDynamic("enableMultipleFilterItems")(enableMultipleFilterItems)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(enableMultipleFilterItems)) __obj.updateDynamic("enableMultipleFilterItems")(enableMultipleFilterItems.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterPivotHierarchyUpdateData]
   }

@@ -45,10 +45,10 @@ object OutlineLoadOptions {
     paragraphs: ParagraphCollectionLoadOptions = null
   ): OutlineLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
-    if (pageContent != null) __obj.updateDynamic("pageContent")(pageContent)
-    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (pageContent != null) __obj.updateDynamic("pageContent")(pageContent.asInstanceOf[js.Any])
+    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutlineLoadOptions]
   }
 }

@@ -10,7 +10,7 @@ import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Left
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Mixed
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Right
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Top
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,7 +44,7 @@ trait TableCellData extends js.Object {
     *
     * [Api set: WordApi 1.3]
     */
-  var horizontalAlignment: js.UndefOr[Alignment | Mixed | Unknown | Left | Centered | Right | Justified] = js.undefined
+  var horizontalAlignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
   /**
     *
     * Gets the index of the cell's row in the table. Read-only.
@@ -88,7 +88,7 @@ object TableCellData {
     body: BodyData = null,
     cellIndex: Int | Double = null,
     columnWidth: Int | Double = null,
-    horizontalAlignment: Alignment | Mixed | Unknown | Left | Centered | Right | Justified = null,
+    horizontalAlignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = null,
     rowIndex: Int | Double = null,
     shadingColor: String = null,
     value: String = null,
@@ -96,13 +96,13 @@ object TableCellData {
     width: Int | Double = null
   ): TableCellData = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (cellIndex != null) __obj.updateDynamic("cellIndex")(cellIndex.asInstanceOf[js.Any])
     if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
-    if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCellData]

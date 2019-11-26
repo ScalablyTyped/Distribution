@@ -46,10 +46,10 @@ object ConditionalDataBarNegativeFormatUpdateData {
     matchPositiveFillColor: js.UndefOr[Boolean] = js.undefined
   ): ConditionalDataBarNegativeFormatUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
-    if (!js.isUndefined(matchPositiveBorderColor)) __obj.updateDynamic("matchPositiveBorderColor")(matchPositiveBorderColor)
-    if (!js.isUndefined(matchPositiveFillColor)) __obj.updateDynamic("matchPositiveFillColor")(matchPositiveFillColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchPositiveBorderColor)) __obj.updateDynamic("matchPositiveBorderColor")(matchPositiveBorderColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchPositiveFillColor)) __obj.updateDynamic("matchPositiveFillColor")(matchPositiveFillColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalDataBarNegativeFormatUpdateData]
   }
 }

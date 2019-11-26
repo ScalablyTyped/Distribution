@@ -44,8 +44,8 @@ object SearchCriteria {
     searchDirection: SearchDirection | Forward | Backwards = null
   ): SearchCriteria = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(completeMatch)) __obj.updateDynamic("completeMatch")(completeMatch)
-    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase)
+    if (!js.isUndefined(completeMatch)) __obj.updateDynamic("completeMatch")(completeMatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.asInstanceOf[js.Any])
     if (searchDirection != null) __obj.updateDynamic("searchDirection")(searchDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchCriteria]
   }

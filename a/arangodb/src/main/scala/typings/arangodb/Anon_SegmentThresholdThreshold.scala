@@ -21,7 +21,7 @@ object Anon_SegmentThresholdThreshold {
     val __obj = js.Dynamic.literal()
     if (segmentThreshold != null) __obj.updateDynamic("segmentThreshold")(segmentThreshold.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_SegmentThresholdThreshold]
   }
 }

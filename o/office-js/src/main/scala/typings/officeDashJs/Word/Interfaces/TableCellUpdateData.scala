@@ -10,7 +10,7 @@ import typings.officeDashJs.officeDashJsStrings.Left
 import typings.officeDashJs.officeDashJsStrings.Mixed
 import typings.officeDashJs.officeDashJsStrings.Right
 import typings.officeDashJs.officeDashJsStrings.Top
-import typings.officeDashJs.officeDashJsStrings.Unknown
+import typings.officeDashJs.officeDashJsStrings.Unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +37,7 @@ trait TableCellUpdateData extends js.Object {
     *
     * [Api set: WordApi 1.3]
     */
-  var horizontalAlignment: js.UndefOr[Alignment | Mixed | Unknown | Left | Centered | Right | Justified] = js.undefined
+  var horizontalAlignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
   /**
     *
     * Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name.
@@ -66,17 +66,17 @@ object TableCellUpdateData {
   def apply(
     body: BodyUpdateData = null,
     columnWidth: Int | Double = null,
-    horizontalAlignment: Alignment | Mixed | Unknown | Left | Centered | Right | Justified = null,
+    horizontalAlignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = null,
     shadingColor: String = null,
     value: String = null,
     verticalAlignment: VerticalAlignment | Mixed | Top | Center | Bottom = null
   ): TableCellUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCellUpdateData]
   }

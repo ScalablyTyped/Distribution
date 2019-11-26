@@ -20,8 +20,8 @@ object Anon_AllowUserKeysIncrement {
     increment: Int | Double = null,
     offset: Int | Double = null
   ): Anon_AllowUserKeysIncrement = {
-    val __obj = js.Dynamic.literal(allowUserKeys = allowUserKeys)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(allowUserKeys = allowUserKeys.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (increment != null) __obj.updateDynamic("increment")(increment.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AllowUserKeysIncrement]

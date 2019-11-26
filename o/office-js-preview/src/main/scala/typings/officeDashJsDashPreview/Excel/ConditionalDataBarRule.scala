@@ -43,7 +43,7 @@ object ConditionalDataBarRule {
   ): ConditionalDataBarRule = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (formula != null) __obj.updateDynamic("formula")(formula)
+    if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalDataBarRule]
   }
 }

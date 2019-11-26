@@ -21,8 +21,8 @@ object FourArrowsGraySet {
     grayUpInclineArrow: Icon,
     NumberDictionary: /* index */ NumberDictionary[Icon] = null
   ): FourArrowsGraySet = {
-    val __obj = js.Dynamic.literal(grayDownArrow = grayDownArrow, grayDownInclineArrow = grayDownInclineArrow, grayUpArrow = grayUpArrow, grayUpInclineArrow = grayUpInclineArrow)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    val __obj = js.Dynamic.literal(grayDownArrow = grayDownArrow.asInstanceOf[js.Any], grayDownInclineArrow = grayDownInclineArrow.asInstanceOf[js.Any], grayUpArrow = grayUpArrow.asInstanceOf[js.Any], grayUpInclineArrow = grayUpInclineArrow.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[FourArrowsGraySet]
   }
 }

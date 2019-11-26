@@ -17,7 +17,7 @@ object Model {
     forClient: /* value */ js.Any => _ = null,
     fromClient: /* value */ js.Any => _ = null
   ): Model = {
-    val __obj = js.Dynamic.literal(schema = schema)
+    val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
     if (forClient != null) __obj.updateDynamic("forClient")(js.Any.fromFunction1(forClient))
     if (fromClient != null) __obj.updateDynamic("fromClient")(js.Any.fromFunction1(fromClient))
     __obj.asInstanceOf[Model]

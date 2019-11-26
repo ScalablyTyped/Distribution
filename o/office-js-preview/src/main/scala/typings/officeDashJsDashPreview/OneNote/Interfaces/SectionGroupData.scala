@@ -53,11 +53,11 @@ object SectionGroupData {
     sections: js.Array[SectionData] = null
   ): SectionGroupData = {
     val __obj = js.Dynamic.literal()
-    if (clientUrl != null) __obj.updateDynamic("clientUrl")(clientUrl)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (sectionGroups != null) __obj.updateDynamic("sectionGroups")(sectionGroups)
-    if (sections != null) __obj.updateDynamic("sections")(sections)
+    if (clientUrl != null) __obj.updateDynamic("clientUrl")(clientUrl.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (sectionGroups != null) __obj.updateDynamic("sectionGroups")(sectionGroups.asInstanceOf[js.Any])
+    if (sections != null) __obj.updateDynamic("sections")(sections.asInstanceOf[js.Any])
     __obj.asInstanceOf[SectionGroupData]
   }
 }

@@ -37,9 +37,9 @@ object InkAnalysisLoadOptions {
     page: PageLoadOptions = null
   ): InkAnalysisLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
-    if (page != null) __obj.updateDynamic("page")(page)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     __obj.asInstanceOf[InkAnalysisLoadOptions]
   }
 }

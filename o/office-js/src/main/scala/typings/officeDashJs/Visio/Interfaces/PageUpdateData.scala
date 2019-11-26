@@ -19,7 +19,7 @@ object PageUpdateData {
   @scala.inline
   def apply(view: PageViewUpdateData = null): PageUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageUpdateData]
   }
 }

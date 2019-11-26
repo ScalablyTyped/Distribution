@@ -23,8 +23,8 @@ object FiveQuartersSet {
     whiteCircleAllWhiteQuarters: Icon,
     NumberDictionary: /* index */ NumberDictionary[Icon] = null
   ): FiveQuartersSet = {
-    val __obj = js.Dynamic.literal(blackCircle = blackCircle, circleWithOneWhiteQuarter = circleWithOneWhiteQuarter, circleWithThreeWhiteQuarters = circleWithThreeWhiteQuarters, circleWithTwoWhiteQuarters = circleWithTwoWhiteQuarters, whiteCircleAllWhiteQuarters = whiteCircleAllWhiteQuarters)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    val __obj = js.Dynamic.literal(blackCircle = blackCircle.asInstanceOf[js.Any], circleWithOneWhiteQuarter = circleWithOneWhiteQuarter.asInstanceOf[js.Any], circleWithThreeWhiteQuarters = circleWithThreeWhiteQuarters.asInstanceOf[js.Any], circleWithTwoWhiteQuarters = circleWithTwoWhiteQuarters.asInstanceOf[js.Any], whiteCircleAllWhiteQuarters = whiteCircleAllWhiteQuarters.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[FiveQuartersSet]
   }
 }

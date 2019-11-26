@@ -6,7 +6,7 @@ import typings.officeDashJs.officeDashJsStrings.Justified
 import typings.officeDashJs.officeDashJsStrings.Left
 import typings.officeDashJs.officeDashJsStrings.Mixed
 import typings.officeDashJs.officeDashJsStrings.Right
-import typings.officeDashJs.officeDashJsStrings.Unknown
+import typings.officeDashJs.officeDashJsStrings.Unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait ParagraphUpdateData extends js.Object {
     *
     * [Api set: WordApi 1.1]
     */
-  var alignment: js.UndefOr[Alignment | Mixed | Unknown | Left | Centered | Right | Justified] = js.undefined
+  var alignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
   /**
     *
     * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
@@ -125,7 +125,7 @@ trait ParagraphUpdateData extends js.Object {
 object ParagraphUpdateData {
   @scala.inline
   def apply(
-    alignment: Alignment | Mixed | Unknown | Left | Centered | Right | Justified = null,
+    alignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = null,
     firstLineIndent: Int | Double = null,
     font: FontUpdateData = null,
     leftIndent: Int | Double = null,
@@ -144,19 +144,19 @@ object ParagraphUpdateData {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
     if (firstLineIndent != null) __obj.updateDynamic("firstLineIndent")(firstLineIndent.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (leftIndent != null) __obj.updateDynamic("leftIndent")(leftIndent.asInstanceOf[js.Any])
     if (lineSpacing != null) __obj.updateDynamic("lineSpacing")(lineSpacing.asInstanceOf[js.Any])
     if (lineUnitAfter != null) __obj.updateDynamic("lineUnitAfter")(lineUnitAfter.asInstanceOf[js.Any])
     if (lineUnitBefore != null) __obj.updateDynamic("lineUnitBefore")(lineUnitBefore.asInstanceOf[js.Any])
-    if (listItem != null) __obj.updateDynamic("listItem")(listItem)
-    if (listItemOrNullObject != null) __obj.updateDynamic("listItemOrNullObject")(listItemOrNullObject)
+    if (listItem != null) __obj.updateDynamic("listItem")(listItem.asInstanceOf[js.Any])
+    if (listItemOrNullObject != null) __obj.updateDynamic("listItemOrNullObject")(listItemOrNullObject.asInstanceOf[js.Any])
     if (outlineLevel != null) __obj.updateDynamic("outlineLevel")(outlineLevel.asInstanceOf[js.Any])
     if (rightIndent != null) __obj.updateDynamic("rightIndent")(rightIndent.asInstanceOf[js.Any])
     if (spaceAfter != null) __obj.updateDynamic("spaceAfter")(spaceAfter.asInstanceOf[js.Any])
     if (spaceBefore != null) __obj.updateDynamic("spaceBefore")(spaceBefore.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (styleBuiltIn != null) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (styleBuiltIn != null) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParagraphUpdateData]
   }
 }

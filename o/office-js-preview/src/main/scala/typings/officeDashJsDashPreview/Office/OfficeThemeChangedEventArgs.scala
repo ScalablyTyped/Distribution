@@ -23,8 +23,8 @@ trait OfficeThemeChangedEventArgs extends js.Object {
 object OfficeThemeChangedEventArgs {
   @scala.inline
   def apply(officeTheme: OfficeTheme, `type`: officeThemeChanged): OfficeThemeChangedEventArgs = {
-    val __obj = js.Dynamic.literal(officeTheme = officeTheme)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(officeTheme = officeTheme.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OfficeThemeChangedEventArgs]
   }
 }

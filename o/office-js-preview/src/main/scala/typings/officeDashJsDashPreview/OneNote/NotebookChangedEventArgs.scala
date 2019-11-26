@@ -31,8 +31,8 @@ trait NotebookChangedEventArgs extends js.Object {
 object NotebookChangedEventArgs {
   @scala.inline
   def apply(oldId: String, `type`: NotebookChanged): NotebookChangedEventArgs = {
-    val __obj = js.Dynamic.literal(oldId = oldId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(oldId = oldId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotebookChangedEventArgs]
   }
 }

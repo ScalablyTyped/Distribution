@@ -69,13 +69,13 @@ object PageLoadOptions {
     width: js.UndefOr[Boolean] = js.undefined
   ): PageLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index)
-    if (!js.isUndefined(isBackground)) __obj.updateDynamic("isBackground")(isBackground)
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
-    if (view != null) __obj.updateDynamic("view")(view)
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBackground)) __obj.updateDynamic("isBackground")(isBackground.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageLoadOptions]
   }
 }

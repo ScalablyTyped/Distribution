@@ -51,7 +51,7 @@ trait BindingSelectionChangedEventArgs extends js.Object {
 object BindingSelectionChangedEventArgs {
   @scala.inline
   def apply(binding: Binding, columnCount: Double, rowCount: Double, startColumn: Double, startRow: Double): BindingSelectionChangedEventArgs = {
-    val __obj = js.Dynamic.literal(binding = binding, columnCount = columnCount, rowCount = rowCount, startColumn = startColumn, startRow = startRow)
+    val __obj = js.Dynamic.literal(binding = binding.asInstanceOf[js.Any], columnCount = columnCount.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], startColumn = startColumn.asInstanceOf[js.Any], startRow = startRow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BindingSelectionChangedEventArgs]
   }

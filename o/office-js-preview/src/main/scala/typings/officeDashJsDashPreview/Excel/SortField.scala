@@ -80,13 +80,13 @@ object SortField {
     sortOn: SortOn | Value | CellColor | FontColor | typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Icon = null,
     subField: String = null
   ): SortField = {
-    val __obj = js.Dynamic.literal(key = key)
-    if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending)
-    if (color != null) __obj.updateDynamic("color")(color)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (dataOption != null) __obj.updateDynamic("dataOption")(dataOption.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (sortOn != null) __obj.updateDynamic("sortOn")(sortOn.asInstanceOf[js.Any])
-    if (subField != null) __obj.updateDynamic("subField")(subField)
+    if (subField != null) __obj.updateDynamic("subField")(subField.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortField]
   }
 }

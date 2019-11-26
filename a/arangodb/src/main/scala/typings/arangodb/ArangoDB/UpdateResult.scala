@@ -19,9 +19,9 @@ object UpdateResult {
     `new`: Document[T] = null,
     old: Document[T] = null
   ): UpdateResult[T] = {
-    val __obj = js.Dynamic.literal(_id = _id, _key = _key, _oldRev = _oldRev, _rev = _rev)
-    if (`new` != null) __obj.updateDynamic("new")(`new`)
-    if (old != null) __obj.updateDynamic("old")(old)
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], _key = _key.asInstanceOf[js.Any], _oldRev = _oldRev.asInstanceOf[js.Any], _rev = _rev.asInstanceOf[js.Any])
+    if (`new` != null) __obj.updateDynamic("new")(`new`.asInstanceOf[js.Any])
+    if (old != null) __obj.updateDynamic("old")(old.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateResult[T]]
   }
 }

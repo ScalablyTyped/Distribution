@@ -13,9 +13,9 @@ trait AssetDefinition extends js.Object {
 object AssetDefinition {
   @scala.inline
   def apply(path: String, gzip: js.UndefOr[Boolean] = js.undefined, `type`: String = null): AssetDefinition = {
-    val __obj = js.Dynamic.literal(path = path)
-    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetDefinition]
   }
 }

@@ -27,7 +27,7 @@ object TableRowData {
   def apply(index: Int | Double = null, values: js.Array[js.Array[_]] = null): TableRowData = {
     val __obj = js.Dynamic.literal()
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRowData]
   }
 }

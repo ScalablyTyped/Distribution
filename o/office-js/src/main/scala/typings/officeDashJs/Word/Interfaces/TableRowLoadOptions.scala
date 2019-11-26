@@ -101,17 +101,17 @@ object TableRowLoadOptions {
     verticalAlignment: js.UndefOr[Boolean] = js.undefined
   ): TableRowLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(cellCount)) __obj.updateDynamic("cellCount")(cellCount)
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (!js.isUndefined(horizontalAlignment)) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)
-    if (!js.isUndefined(isHeader)) __obj.updateDynamic("isHeader")(isHeader)
-    if (parentTable != null) __obj.updateDynamic("parentTable")(parentTable)
-    if (!js.isUndefined(preferredHeight)) __obj.updateDynamic("preferredHeight")(preferredHeight)
-    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex)
-    if (!js.isUndefined(shadingColor)) __obj.updateDynamic("shadingColor")(shadingColor)
-    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values)
-    if (!js.isUndefined(verticalAlignment)) __obj.updateDynamic("verticalAlignment")(verticalAlignment)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(cellCount)) __obj.updateDynamic("cellCount")(cellCount.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalAlignment)) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHeader)) __obj.updateDynamic("isHeader")(isHeader.asInstanceOf[js.Any])
+    if (parentTable != null) __obj.updateDynamic("parentTable")(parentTable.asInstanceOf[js.Any])
+    if (!js.isUndefined(preferredHeight)) __obj.updateDynamic("preferredHeight")(preferredHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadingColor)) __obj.updateDynamic("shadingColor")(shadingColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalAlignment)) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRowLoadOptions]
   }
 }

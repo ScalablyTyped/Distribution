@@ -80,14 +80,14 @@ object DataPivotHierarchyCollectionLoadOptions {
     summarizeBy: js.UndefOr[Boolean] = js.undefined
   ): DataPivotHierarchyCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (field != null) __obj.updateDynamic("field")(field)
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(numberFormat)) __obj.updateDynamic("numberFormat")(numberFormat)
-    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(showAs)) __obj.updateDynamic("showAs")(showAs)
-    if (!js.isUndefined(summarizeBy)) __obj.updateDynamic("summarizeBy")(summarizeBy)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(numberFormat)) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAs)) __obj.updateDynamic("showAs")(showAs.asInstanceOf[js.Any])
+    if (!js.isUndefined(summarizeBy)) __obj.updateDynamic("summarizeBy")(summarizeBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataPivotHierarchyCollectionLoadOptions]
   }
 }

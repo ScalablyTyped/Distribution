@@ -40,9 +40,9 @@ object FormatProtectionLoadOptions {
     locked: js.UndefOr[Boolean] = js.undefined
   ): FormatProtectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(formulaHidden)) __obj.updateDynamic("formulaHidden")(formulaHidden)
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(formulaHidden)) __obj.updateDynamic("formulaHidden")(formulaHidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatProtectionLoadOptions]
   }
 }

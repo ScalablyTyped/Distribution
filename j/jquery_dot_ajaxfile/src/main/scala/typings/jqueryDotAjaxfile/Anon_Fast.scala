@@ -12,7 +12,7 @@ trait Anon_Fast extends js.Object {
 object Anon_Fast {
   @scala.inline
   def apply(fast: Double, slow: Double): Anon_Fast = {
-    val __obj = js.Dynamic.literal(fast = fast, slow = slow)
+    val __obj = js.Dynamic.literal(fast = fast.asInstanceOf[js.Any], slow = slow.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Fast]
   }

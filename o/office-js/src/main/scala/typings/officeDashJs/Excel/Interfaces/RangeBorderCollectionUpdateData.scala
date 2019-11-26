@@ -21,7 +21,7 @@ object RangeBorderCollectionUpdateData {
   @scala.inline
   def apply(items: js.Array[RangeBorderData] = null, tintAndShade: Int | Double = null): RangeBorderCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (tintAndShade != null) __obj.updateDynamic("tintAndShade")(tintAndShade.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeBorderCollectionUpdateData]
   }

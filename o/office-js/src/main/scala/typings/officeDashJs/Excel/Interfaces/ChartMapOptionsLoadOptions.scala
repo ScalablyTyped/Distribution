@@ -48,10 +48,10 @@ object ChartMapOptionsLoadOptions {
     projectionType: js.UndefOr[Boolean] = js.undefined
   ): ChartMapOptionsLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(labelStrategy)) __obj.updateDynamic("labelStrategy")(labelStrategy)
-    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level)
-    if (!js.isUndefined(projectionType)) __obj.updateDynamic("projectionType")(projectionType)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelStrategy)) __obj.updateDynamic("labelStrategy")(labelStrategy.asInstanceOf[js.Any])
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (!js.isUndefined(projectionType)) __obj.updateDynamic("projectionType")(projectionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartMapOptionsLoadOptions]
   }
 }

@@ -53,11 +53,11 @@ object RichTextLoadOptions {
     text: js.UndefOr[Boolean] = js.undefined
   ): RichTextLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(languageId)) __obj.updateDynamic("languageId")(languageId)
-    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph)
-    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(languageId)) __obj.updateDynamic("languageId")(languageId.asInstanceOf[js.Any])
+    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[RichTextLoadOptions]
   }
 }

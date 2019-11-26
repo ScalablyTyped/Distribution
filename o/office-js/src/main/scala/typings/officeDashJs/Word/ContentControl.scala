@@ -41,7 +41,7 @@ import typings.officeDashJs.officeDashJsStrings.SectionOdd
 import typings.officeDashJs.officeDashJsStrings.Select
 import typings.officeDashJs.officeDashJsStrings.Start
 import typings.officeDashJs.officeDashJsStrings.Tags
-import typings.officeDashJs.officeDashJsStrings.Unknown
+import typings.officeDashJs.officeDashJsStrings.Unknown_
 import typings.officeDashJs.officeDashJsStrings.Whole
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -212,7 +212,7 @@ class ContentControl () extends ClientObject {
     *
     * [Api set: WordApi 1.3]
     */
-  val subtype: ContentControlType | Unknown | RichTextInline | RichTextParagraphs | RichTextTableCell | RichTextTableRow | RichTextTable | PlainTextInline | PlainTextParagraph | Picture | BuildingBlockGallery | CheckBox | ComboBox | DropDownList | DatePicker | RepeatingSection | RichText | PlainText = js.native
+  val subtype: ContentControlType | Unknown_ | RichTextInline | RichTextParagraphs | RichTextTableCell | RichTextTableRow | RichTextTable | PlainTextInline | PlainTextParagraph | Picture | BuildingBlockGallery | CheckBox | ComboBox | DropDownList | DatePicker | RepeatingSection | RichText | PlainText = js.native
   /**
     *
     * Gets the collection of table objects in the content control. Read-only.
@@ -247,7 +247,7 @@ class ContentControl () extends ClientObject {
     *
     * [Api set: WordApi 1.1]
     */
-  val `type`: ContentControlType | Unknown | RichTextInline | RichTextParagraphs | RichTextTableCell | RichTextTableRow | RichTextTable | PlainTextInline | PlainTextParagraph | Picture | BuildingBlockGallery | CheckBox | ComboBox | DropDownList | DatePicker | RepeatingSection | RichText | PlainText = js.native
+  val `type`: ContentControlType | Unknown_ | RichTextInline | RichTextParagraphs | RichTextTableCell | RichTextTableRow | RichTextTable | PlainTextInline | PlainTextParagraph | Picture | BuildingBlockGallery | CheckBox | ComboBox | DropDownList | DatePicker | RepeatingSection | RichText | PlainText = js.native
   /**
     *
     * Clears the contents of the content control. The user can perform the undo operation on the cleared content.

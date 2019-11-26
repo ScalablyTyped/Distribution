@@ -26,11 +26,11 @@ object ShortestPathOptions {
   ): ShortestPathOptions = {
     val __obj = js.Dynamic.literal()
     if (defaultWeight != null) __obj.updateDynamic("defaultWeight")(defaultWeight.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (edgeCollectionRestriction != null) __obj.updateDynamic("edgeCollectionRestriction")(edgeCollectionRestriction.asInstanceOf[js.Any])
     if (endVertexCollectionRestriction != null) __obj.updateDynamic("endVertexCollectionRestriction")(endVertexCollectionRestriction.asInstanceOf[js.Any])
     if (startVertexCollectionRestriction != null) __obj.updateDynamic("startVertexCollectionRestriction")(startVertexCollectionRestriction.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight)
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShortestPathOptions]
   }
 }

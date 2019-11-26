@@ -53,11 +53,11 @@ object RangeViewUpdateData {
     values: js.Array[js.Array[_]] = null
   ): RangeViewUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (formulas != null) __obj.updateDynamic("formulas")(formulas)
-    if (formulasLocal != null) __obj.updateDynamic("formulasLocal")(formulasLocal)
-    if (formulasR1C1 != null) __obj.updateDynamic("formulasR1C1")(formulasR1C1)
-    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (formulas != null) __obj.updateDynamic("formulas")(formulas.asInstanceOf[js.Any])
+    if (formulasLocal != null) __obj.updateDynamic("formulasLocal")(formulasLocal.asInstanceOf[js.Any])
+    if (formulasR1C1 != null) __obj.updateDynamic("formulasR1C1")(formulasR1C1.asInstanceOf[js.Any])
+    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeViewUpdateData]
   }
 }

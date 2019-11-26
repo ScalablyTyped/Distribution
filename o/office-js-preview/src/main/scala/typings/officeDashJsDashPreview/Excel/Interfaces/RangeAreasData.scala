@@ -103,17 +103,17 @@ object RangeAreasData {
     style: String = null
   ): RangeAreasData = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (addressLocal != null) __obj.updateDynamic("addressLocal")(addressLocal)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (addressLocal != null) __obj.updateDynamic("addressLocal")(addressLocal.asInstanceOf[js.Any])
     if (areaCount != null) __obj.updateDynamic("areaCount")(areaCount.asInstanceOf[js.Any])
-    if (areas != null) __obj.updateDynamic("areas")(areas)
+    if (areas != null) __obj.updateDynamic("areas")(areas.asInstanceOf[js.Any])
     if (cellCount != null) __obj.updateDynamic("cellCount")(cellCount.asInstanceOf[js.Any])
-    if (conditionalFormats != null) __obj.updateDynamic("conditionalFormats")(conditionalFormats)
-    if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (!js.isUndefined(isEntireColumn)) __obj.updateDynamic("isEntireColumn")(isEntireColumn)
-    if (!js.isUndefined(isEntireRow)) __obj.updateDynamic("isEntireRow")(isEntireRow)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (conditionalFormats != null) __obj.updateDynamic("conditionalFormats")(conditionalFormats.asInstanceOf[js.Any])
+    if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEntireColumn)) __obj.updateDynamic("isEntireColumn")(isEntireColumn.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEntireRow)) __obj.updateDynamic("isEntireRow")(isEntireRow.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeAreasData]
   }
 }

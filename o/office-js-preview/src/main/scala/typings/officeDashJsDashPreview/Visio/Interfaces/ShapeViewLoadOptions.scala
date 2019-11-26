@@ -26,8 +26,8 @@ object ShapeViewLoadOptions {
   @scala.inline
   def apply($all: js.UndefOr[Boolean] = js.undefined, highlight: js.UndefOr[Boolean] = js.undefined): ShapeViewLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeViewLoadOptions]
   }
 }

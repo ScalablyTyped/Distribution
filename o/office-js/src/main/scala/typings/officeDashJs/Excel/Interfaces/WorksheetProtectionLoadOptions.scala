@@ -40,9 +40,9 @@ object WorksheetProtectionLoadOptions {
     `protected`: js.UndefOr[Boolean] = js.undefined
   ): WorksheetProtectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(options)) __obj.updateDynamic("options")(options)
-    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(options)) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorksheetProtectionLoadOptions]
   }
 }

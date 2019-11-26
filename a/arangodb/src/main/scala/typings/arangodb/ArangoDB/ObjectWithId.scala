@@ -15,8 +15,8 @@ trait ObjectWithId
 object ObjectWithId {
   @scala.inline
   def apply(_id: String, StringDictionary: /* key */ StringDictionary[js.Any] = null): ObjectWithId = {
-    val __obj = js.Dynamic.literal(_id = _id)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ObjectWithId]
   }
 }

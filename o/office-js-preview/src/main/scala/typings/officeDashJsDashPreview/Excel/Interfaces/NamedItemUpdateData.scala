@@ -33,9 +33,9 @@ object NamedItemUpdateData {
   @scala.inline
   def apply(comment: String = null, formula: js.Any = null, visible: js.UndefOr[Boolean] = js.undefined): NamedItemUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (formula != null) __obj.updateDynamic("formula")(formula)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedItemUpdateData]
   }
 }

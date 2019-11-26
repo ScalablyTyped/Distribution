@@ -27,8 +27,8 @@ object OAuth1Options {
     activeUserEndpoint: String = null,
     signatureMethod: `HMAC-SHA1` | PLAINTEXT = null
   ): OAuth1Options = {
-    val __obj = js.Dynamic.literal(accessTokenEndpoint = accessTokenEndpoint, authEndpoint = authEndpoint, clientId = clientId, clientSecret = clientSecret, requestTokenEndpoint = requestTokenEndpoint)
-    if (activeUserEndpoint != null) __obj.updateDynamic("activeUserEndpoint")(activeUserEndpoint)
+    val __obj = js.Dynamic.literal(accessTokenEndpoint = accessTokenEndpoint.asInstanceOf[js.Any], authEndpoint = authEndpoint.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], requestTokenEndpoint = requestTokenEndpoint.asInstanceOf[js.Any])
+    if (activeUserEndpoint != null) __obj.updateDynamic("activeUserEndpoint")(activeUserEndpoint.asInstanceOf[js.Any])
     if (signatureMethod != null) __obj.updateDynamic("signatureMethod")(signatureMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuth1Options]
   }

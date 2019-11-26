@@ -28,7 +28,7 @@ import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Right
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Select
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Start
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Top
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown_
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Whole
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -49,7 +49,7 @@ class Table () extends ClientObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var alignment: Alignment | Mixed | Unknown | Left | Centered | Right | Justified = js.native
+  var alignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = js.native
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Table: RequestContext = js.native
@@ -73,7 +73,7 @@ class Table () extends ClientObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var horizontalAlignment: Alignment | Mixed | Unknown | Left | Centered | Right | Justified = js.native
+  var horizontalAlignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = js.native
   /**
     *
     * Indicates whether all of the table rows are uniform. Read-only.

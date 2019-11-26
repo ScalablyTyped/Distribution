@@ -40,9 +40,9 @@ object ChartAxisTitleFormatLoadOptions {
     font: ChartFontLoadOptions = null
   ): ChartAxisTitleFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (font != null) __obj.updateDynamic("font")(font)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAxisTitleFormatLoadOptions]
   }
 }

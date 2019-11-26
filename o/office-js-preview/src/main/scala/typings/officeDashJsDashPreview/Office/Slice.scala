@@ -30,7 +30,7 @@ trait Slice extends js.Object {
 object Slice {
   @scala.inline
   def apply(data: js.Any, index: Double, size: Double): Slice = {
-    val __obj = js.Dynamic.literal(data = data, index = index, size = size)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Slice]
   }

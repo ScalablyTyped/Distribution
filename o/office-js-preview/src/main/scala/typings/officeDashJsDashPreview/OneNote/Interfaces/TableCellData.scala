@@ -54,10 +54,10 @@ object TableCellData {
   ): TableCellData = {
     val __obj = js.Dynamic.literal()
     if (cellIndex != null) __obj.updateDynamic("cellIndex")(cellIndex.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs.asInstanceOf[js.Any])
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
-    if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor)
+    if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCellData]
   }
 }

@@ -30,11 +30,11 @@ object CollectionProperties {
     replicationFactor: Int | Double = null,
     shardKeys: js.Array[String] = null
   ): CollectionProperties = {
-    val __obj = js.Dynamic.literal(indexBuckets = indexBuckets, isSystem = isSystem, isVolatile = isVolatile, journalSize = journalSize, waitForSync = waitForSync)
-    if (keyOptions != null) __obj.updateDynamic("keyOptions")(keyOptions)
+    val __obj = js.Dynamic.literal(indexBuckets = indexBuckets.asInstanceOf[js.Any], isSystem = isSystem.asInstanceOf[js.Any], isVolatile = isVolatile.asInstanceOf[js.Any], journalSize = journalSize.asInstanceOf[js.Any], waitForSync = waitForSync.asInstanceOf[js.Any])
+    if (keyOptions != null) __obj.updateDynamic("keyOptions")(keyOptions.asInstanceOf[js.Any])
     if (numberOfShards != null) __obj.updateDynamic("numberOfShards")(numberOfShards.asInstanceOf[js.Any])
     if (replicationFactor != null) __obj.updateDynamic("replicationFactor")(replicationFactor.asInstanceOf[js.Any])
-    if (shardKeys != null) __obj.updateDynamic("shardKeys")(shardKeys)
+    if (shardKeys != null) __obj.updateDynamic("shardKeys")(shardKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionProperties]
   }
 }

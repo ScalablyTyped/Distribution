@@ -26,7 +26,7 @@ object ShapeFillUpdateData {
   @scala.inline
   def apply(foregroundColor: String = null, transparency: Int | Double = null): ShapeFillUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor)
+    if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor.asInstanceOf[js.Any])
     if (transparency != null) __obj.updateDynamic("transparency")(transparency.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeFillUpdateData]
   }

@@ -26,8 +26,8 @@ object TableColumnUpdateData {
   @scala.inline
   def apply(name: String = null, values: js.Array[js.Array[_]] = null): TableColumnUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableColumnUpdateData]
   }
 }

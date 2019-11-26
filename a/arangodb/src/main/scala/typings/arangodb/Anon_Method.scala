@@ -13,8 +13,8 @@ trait Anon_Method extends js.Object {
 object Anon_Method {
   @scala.inline
   def apply(url: String, method: HttpMethod = null): Anon_Method = {
-    val __obj = js.Dynamic.literal(url = url)
-    if (method != null) __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Method]
   }
 }

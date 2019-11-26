@@ -74,12 +74,12 @@ object ParagraphData {
     `type`: ParagraphType | typings.officeDashJs.officeDashJsStrings.RichText | typings.officeDashJs.officeDashJsStrings.Image | typings.officeDashJs.officeDashJsStrings.Table | Ink | Other = null
   ): ParagraphData = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (inkWords != null) __obj.updateDynamic("inkWords")(inkWords)
-    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs)
-    if (richText != null) __obj.updateDynamic("richText")(richText)
-    if (table != null) __obj.updateDynamic("table")(table)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (inkWords != null) __obj.updateDynamic("inkWords")(inkWords.asInstanceOf[js.Any])
+    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs.asInstanceOf[js.Any])
+    if (richText != null) __obj.updateDynamic("richText")(richText.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParagraphData]
   }

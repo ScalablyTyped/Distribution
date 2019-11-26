@@ -13,7 +13,7 @@ trait QueryExtra extends js.Object {
 object QueryExtra {
   @scala.inline
   def apply(stats: Anon_ExecutionTime, warnings: js.Array[String]): QueryExtra = {
-    val __obj = js.Dynamic.literal(stats = stats, warnings = warnings)
+    val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QueryExtra]
   }

@@ -74,13 +74,13 @@ object HeaderFooterGroupUpdateData {
     useSheetScale: js.UndefOr[Boolean] = js.undefined
   ): HeaderFooterGroupUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (defaultForAllPages != null) __obj.updateDynamic("defaultForAllPages")(defaultForAllPages)
-    if (evenPages != null) __obj.updateDynamic("evenPages")(evenPages)
-    if (firstPage != null) __obj.updateDynamic("firstPage")(firstPage)
-    if (oddPages != null) __obj.updateDynamic("oddPages")(oddPages)
+    if (defaultForAllPages != null) __obj.updateDynamic("defaultForAllPages")(defaultForAllPages.asInstanceOf[js.Any])
+    if (evenPages != null) __obj.updateDynamic("evenPages")(evenPages.asInstanceOf[js.Any])
+    if (firstPage != null) __obj.updateDynamic("firstPage")(firstPage.asInstanceOf[js.Any])
+    if (oddPages != null) __obj.updateDynamic("oddPages")(oddPages.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSheetMargins)) __obj.updateDynamic("useSheetMargins")(useSheetMargins)
-    if (!js.isUndefined(useSheetScale)) __obj.updateDynamic("useSheetScale")(useSheetScale)
+    if (!js.isUndefined(useSheetMargins)) __obj.updateDynamic("useSheetMargins")(useSheetMargins.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSheetScale)) __obj.updateDynamic("useSheetScale")(useSheetScale.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderFooterGroupUpdateData]
   }
 }

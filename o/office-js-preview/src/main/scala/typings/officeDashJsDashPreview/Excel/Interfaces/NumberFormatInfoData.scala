@@ -28,8 +28,8 @@ object NumberFormatInfoData {
   @scala.inline
   def apply(numberDecimalSeparator: String = null, numberGroupSeparator: String = null): NumberFormatInfoData = {
     val __obj = js.Dynamic.literal()
-    if (numberDecimalSeparator != null) __obj.updateDynamic("numberDecimalSeparator")(numberDecimalSeparator)
-    if (numberGroupSeparator != null) __obj.updateDynamic("numberGroupSeparator")(numberGroupSeparator)
+    if (numberDecimalSeparator != null) __obj.updateDynamic("numberDecimalSeparator")(numberDecimalSeparator.asInstanceOf[js.Any])
+    if (numberGroupSeparator != null) __obj.updateDynamic("numberGroupSeparator")(numberGroupSeparator.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberFormatInfoData]
   }
 }

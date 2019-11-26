@@ -50,10 +50,10 @@ object RangeHyperlink {
     textToDisplay: String = null
   ): RangeHyperlink = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (documentReference != null) __obj.updateDynamic("documentReference")(documentReference)
-    if (screenTip != null) __obj.updateDynamic("screenTip")(screenTip)
-    if (textToDisplay != null) __obj.updateDynamic("textToDisplay")(textToDisplay)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (documentReference != null) __obj.updateDynamic("documentReference")(documentReference.asInstanceOf[js.Any])
+    if (screenTip != null) __obj.updateDynamic("screenTip")(screenTip.asInstanceOf[js.Any])
+    if (textToDisplay != null) __obj.updateDynamic("textToDisplay")(textToDisplay.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeHyperlink]
   }
 }

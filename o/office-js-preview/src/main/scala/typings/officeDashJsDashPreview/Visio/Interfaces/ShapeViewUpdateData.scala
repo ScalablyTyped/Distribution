@@ -20,7 +20,7 @@ object ShapeViewUpdateData {
   @scala.inline
   def apply(highlight: Highlight = null): ShapeViewUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (highlight != null) __obj.updateDynamic("highlight")(highlight)
+    if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeViewUpdateData]
   }
 }

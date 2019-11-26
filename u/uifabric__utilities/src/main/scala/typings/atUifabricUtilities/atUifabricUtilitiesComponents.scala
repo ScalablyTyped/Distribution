@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object atUifabricUtilitiesComponents extends atUifabricUtilitiesProps {
   @scala.inline
-  def BaseComponent[TState]: ComponentType[BaseComponentProps[_]] = js.constructorOf[typings.atUifabricUtilities.libBaseComponentMod.BaseComponent[typings.atUifabricUtilities.libBaseComponentDotTypesMod.IBaseProps[_], TState]].asInstanceOf[typings.react.reactMod.ComponentType[BaseComponentProps[_]]]
+  def BaseComponent[TState]: ComponentType[BaseComponentProps[js.Any]] = js.constructorOf[typings.atUifabricUtilities.libBaseComponentMod.BaseComponent[typings.atUifabricUtilities.libBaseComponentDotTypesMod.IBaseProps[_], TState]].asInstanceOf[typings.react.reactMod.ComponentType[BaseComponentProps[js.Any]]]
   @scala.inline
   def Customizer: ComponentType[CustomizerProps] = js.constructorOf[typings.atUifabricUtilities.atUifabricUtilitiesMod.Customizer].asInstanceOf[typings.react.reactMod.ComponentType[CustomizerProps]]
   @scala.inline

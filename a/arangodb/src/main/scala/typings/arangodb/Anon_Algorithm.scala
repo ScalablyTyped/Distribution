@@ -14,8 +14,8 @@ object Anon_Algorithm {
   @scala.inline
   def apply(algorithm: HashAlgorithm = null, secret: String = null): Anon_Algorithm = {
     val __obj = js.Dynamic.literal()
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
-    if (secret != null) __obj.updateDynamic("secret")(secret)
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
+    if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Algorithm]
   }
 }

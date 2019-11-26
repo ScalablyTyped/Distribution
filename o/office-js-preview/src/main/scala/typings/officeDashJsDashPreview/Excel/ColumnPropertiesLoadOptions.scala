@@ -49,14 +49,14 @@ object ColumnPropertiesLoadOptions {
     style: js.UndefOr[Boolean] = js.undefined
   ): ColumnPropertiesLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(address)) __obj.updateDynamic("address")(address)
-    if (!js.isUndefined(addressLocal)) __obj.updateDynamic("addressLocal")(addressLocal)
-    if (!js.isUndefined(columnHidden)) __obj.updateDynamic("columnHidden")(columnHidden)
-    if (!js.isUndefined(columnIndex)) __obj.updateDynamic("columnIndex")(columnIndex)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
-    if (!js.isUndefined(hyperlink)) __obj.updateDynamic("hyperlink")(hyperlink)
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(address)) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (!js.isUndefined(addressLocal)) __obj.updateDynamic("addressLocal")(addressLocal.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnHidden)) __obj.updateDynamic("columnHidden")(columnHidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnIndex)) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (!js.isUndefined(hyperlink)) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnPropertiesLoadOptions]
   }
 }

@@ -31,8 +31,8 @@ trait PageSelectionChangedEventArgs extends js.Object {
 object PageSelectionChangedEventArgs {
   @scala.inline
   def apply(oldId: String, `type`: PageSelectionChanged): PageSelectionChangedEventArgs = {
-    val __obj = js.Dynamic.literal(oldId = oldId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(oldId = oldId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageSelectionChangedEventArgs]
   }
 }

@@ -75,13 +75,13 @@ object DataValidationLoadOptions {
     valid: js.UndefOr[Boolean] = js.undefined
   ): DataValidationLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(errorAlert)) __obj.updateDynamic("errorAlert")(errorAlert)
-    if (!js.isUndefined(ignoreBlanks)) __obj.updateDynamic("ignoreBlanks")(ignoreBlanks)
-    if (!js.isUndefined(prompt)) __obj.updateDynamic("prompt")(prompt)
-    if (!js.isUndefined(rule)) __obj.updateDynamic("rule")(rule)
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(errorAlert)) __obj.updateDynamic("errorAlert")(errorAlert.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreBlanks)) __obj.updateDynamic("ignoreBlanks")(ignoreBlanks.asInstanceOf[js.Any])
+    if (!js.isUndefined(prompt)) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
+    if (!js.isUndefined(rule)) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataValidationLoadOptions]
   }
 }

@@ -48,10 +48,10 @@ object ChartAxisTitleLoadOptions {
     visible: js.UndefOr[Boolean] = js.undefined
   ): ChartAxisTitleLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAxisTitleLoadOptions]
   }
 }

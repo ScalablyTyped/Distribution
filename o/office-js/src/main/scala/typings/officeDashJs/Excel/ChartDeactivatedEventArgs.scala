@@ -38,8 +38,8 @@ trait ChartDeactivatedEventArgs extends js.Object {
 object ChartDeactivatedEventArgs {
   @scala.inline
   def apply(chartId: String, `type`: ChartDeactivated, worksheetId: String): ChartDeactivatedEventArgs = {
-    val __obj = js.Dynamic.literal(chartId = chartId, worksheetId = worksheetId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(chartId = chartId.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartDeactivatedEventArgs]
   }
 }

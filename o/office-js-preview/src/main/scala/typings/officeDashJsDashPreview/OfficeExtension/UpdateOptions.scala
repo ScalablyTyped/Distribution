@@ -18,7 +18,7 @@ object UpdateOptions {
   @scala.inline
   def apply(throwOnReadOnly: js.UndefOr[Boolean] = js.undefined): UpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(throwOnReadOnly)) __obj.updateDynamic("throwOnReadOnly")(throwOnReadOnly)
+    if (!js.isUndefined(throwOnReadOnly)) __obj.updateDynamic("throwOnReadOnly")(throwOnReadOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateOptions]
   }
 }

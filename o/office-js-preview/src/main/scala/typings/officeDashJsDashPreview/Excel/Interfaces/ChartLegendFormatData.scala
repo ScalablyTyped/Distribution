@@ -26,8 +26,8 @@ object ChartLegendFormatData {
   @scala.inline
   def apply(border: ChartBorderData = null, font: ChartFontData = null): ChartLegendFormatData = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border)
-    if (font != null) __obj.updateDynamic("font")(font)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartLegendFormatData]
   }
 }

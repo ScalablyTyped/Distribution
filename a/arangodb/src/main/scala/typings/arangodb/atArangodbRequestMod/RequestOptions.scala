@@ -42,18 +42,18 @@ object RequestOptions {
   ): RequestOptions = {
     val __obj = js.Dynamic.literal()
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
-    if (!js.isUndefined(followRedirect)) __obj.updateDynamic("followRedirect")(followRedirect)
-    if (form != null) __obj.updateDynamic("form")(form)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(followRedirect)) __obj.updateDynamic("followRedirect")(followRedirect.asInstanceOf[js.Any])
+    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
     if (maxRedirects != null) __obj.updateDynamic("maxRedirects")(maxRedirects.asInstanceOf[js.Any])
-    if (qs != null) __obj.updateDynamic("qs")(qs)
-    if (!js.isUndefined(returnBodyOnError)) __obj.updateDynamic("returnBodyOnError")(returnBodyOnError)
+    if (qs != null) __obj.updateDynamic("qs")(qs.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnBodyOnError)) __obj.updateDynamic("returnBodyOnError")(returnBodyOnError.asInstanceOf[js.Any])
     if (sslProtocol != null) __obj.updateDynamic("sslProtocol")(sslProtocol.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(useQuerystring)) __obj.updateDynamic("useQuerystring")(useQuerystring)
+    if (!js.isUndefined(useQuerystring)) __obj.updateDynamic("useQuerystring")(useQuerystring.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }
 }

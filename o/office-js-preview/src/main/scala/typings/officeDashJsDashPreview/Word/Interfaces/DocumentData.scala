@@ -71,13 +71,13 @@ object DocumentData {
     settings: js.Array[SettingData] = null
   ): DocumentData = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
-    if (contentControls != null) __obj.updateDynamic("contentControls")(contentControls)
-    if (customXmlParts != null) __obj.updateDynamic("customXmlParts")(customXmlParts)
-    if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (!js.isUndefined(saved)) __obj.updateDynamic("saved")(saved)
-    if (sections != null) __obj.updateDynamic("sections")(sections)
-    if (settings != null) __obj.updateDynamic("settings")(settings)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (contentControls != null) __obj.updateDynamic("contentControls")(contentControls.asInstanceOf[js.Any])
+    if (customXmlParts != null) __obj.updateDynamic("customXmlParts")(customXmlParts.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (!js.isUndefined(saved)) __obj.updateDynamic("saved")(saved.asInstanceOf[js.Any])
+    if (sections != null) __obj.updateDynamic("sections")(sections.asInstanceOf[js.Any])
+    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentData]
   }
 }

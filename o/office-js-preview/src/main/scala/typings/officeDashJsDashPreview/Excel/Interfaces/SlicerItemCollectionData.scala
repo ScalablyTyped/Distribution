@@ -13,7 +13,7 @@ object SlicerItemCollectionData {
   @scala.inline
   def apply(items: js.Array[SlicerItemData] = null): SlicerItemCollectionData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlicerItemCollectionData]
   }
 }

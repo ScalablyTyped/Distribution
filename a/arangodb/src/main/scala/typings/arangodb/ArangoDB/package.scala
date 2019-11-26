@@ -9,6 +9,7 @@ package object ArangoDB {
   import typings.arangodb.Anon_FromTo
   import typings.arangodb.arangodbNumbers.`2`
   import typings.arangodb.arangodbNumbers.`3`
+  import typings.arangodb.arangodbStrings.Patch_
   import typings.arangodb.arangodbStrings.arangosearch
   import typings.std.Partial
 
@@ -20,8 +21,8 @@ package object ArangoDB {
   type DocumentIterator[T /* <: js.Object */] = js.Function2[/* document */ Document[T], /* number */ Double, Unit]
   type Edge[T /* <: js.Object */] = Document[T] with Anon_FromTo
   type EdgeCollectionType = `3`
-  type Patch[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Patch[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? T[K] | / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias arangodb.ArangoDB.Patch<T[K]> * / object}
-    */ typings.arangodb.arangodbStrings.Patch with T
+    */ Patch_ with T
   type ViewType = arangosearch
 }

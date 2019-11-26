@@ -27,7 +27,7 @@ import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Right
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Select
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Start
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Top
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,7 +71,7 @@ class TableRow () extends ClientObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var horizontalAlignment: Alignment | Mixed | Unknown | Left | Centered | Right | Justified = js.native
+  var horizontalAlignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = js.native
   /**
     *
     * Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object.

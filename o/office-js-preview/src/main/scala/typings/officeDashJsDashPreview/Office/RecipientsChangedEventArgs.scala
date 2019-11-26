@@ -23,8 +23,8 @@ trait RecipientsChangedEventArgs extends js.Object {
 object RecipientsChangedEventArgs {
   @scala.inline
   def apply(changedRecipientsFields: RecipientsChangedFields, `type`: olkRecipientsChanged): RecipientsChangedEventArgs = {
-    val __obj = js.Dynamic.literal(changedRecipientsFields = changedRecipientsFields)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(changedRecipientsFields = changedRecipientsFields.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecipientsChangedEventArgs]
   }
 }

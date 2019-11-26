@@ -19,9 +19,9 @@ object QueryAstNode {
     subNodes: js.Array[QueryAstNode] = null
   ): QueryAstNode = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (subNodes != null) __obj.updateDynamic("subNodes")(subNodes)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (subNodes != null) __obj.updateDynamic("subNodes")(subNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryAstNode]
   }
 }

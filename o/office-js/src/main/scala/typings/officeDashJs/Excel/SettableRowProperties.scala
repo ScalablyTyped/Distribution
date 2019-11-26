@@ -38,10 +38,10 @@ object SettableRowProperties {
     style: String = null
   ): SettableRowProperties = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
-    if (!js.isUndefined(rowHidden)) __obj.updateDynamic("rowHidden")(rowHidden)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHidden)) __obj.updateDynamic("rowHidden")(rowHidden.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettableRowProperties]
   }
 }

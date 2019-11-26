@@ -30,7 +30,7 @@ trait CategoryDetails extends js.Object {
 object CategoryDetails {
   @scala.inline
   def apply(color: CategoryColor | String, displayName: String): CategoryDetails = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], displayName = displayName)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CategoryDetails]
   }

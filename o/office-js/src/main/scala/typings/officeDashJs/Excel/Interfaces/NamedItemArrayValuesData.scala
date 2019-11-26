@@ -27,8 +27,8 @@ object NamedItemArrayValuesData {
   @scala.inline
   def apply(types: js.Array[js.Array[RangeValueType]] = null, values: js.Array[js.Array[_]] = null): NamedItemArrayValuesData = {
     val __obj = js.Dynamic.literal()
-    if (types != null) __obj.updateDynamic("types")(types)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedItemArrayValuesData]
   }
 }

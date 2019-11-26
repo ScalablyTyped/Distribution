@@ -77,14 +77,14 @@ object PageData {
     webUrl: String = null
   ): PageData = {
     val __obj = js.Dynamic.literal()
-    if (classNotebookPageSource != null) __obj.updateDynamic("classNotebookPageSource")(classNotebookPageSource)
-    if (clientUrl != null) __obj.updateDynamic("clientUrl")(clientUrl)
-    if (contents != null) __obj.updateDynamic("contents")(contents)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (inkAnalysisOrNull != null) __obj.updateDynamic("inkAnalysisOrNull")(inkAnalysisOrNull)
+    if (classNotebookPageSource != null) __obj.updateDynamic("classNotebookPageSource")(classNotebookPageSource.asInstanceOf[js.Any])
+    if (clientUrl != null) __obj.updateDynamic("clientUrl")(clientUrl.asInstanceOf[js.Any])
+    if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (inkAnalysisOrNull != null) __obj.updateDynamic("inkAnalysisOrNull")(inkAnalysisOrNull.asInstanceOf[js.Any])
     if (pageLevel != null) __obj.updateDynamic("pageLevel")(pageLevel.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title)
-    if (webUrl != null) __obj.updateDynamic("webUrl")(webUrl)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (webUrl != null) __obj.updateDynamic("webUrl")(webUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageData]
   }
 }

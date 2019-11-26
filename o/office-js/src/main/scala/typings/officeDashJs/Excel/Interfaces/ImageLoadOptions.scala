@@ -48,10 +48,10 @@ object ImageLoadOptions {
     shape: ShapeLoadOptions = null
   ): ImageLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(format)) __obj.updateDynamic("format")(format)
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
-    if (shape != null) __obj.updateDynamic("shape")(shape)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(format)) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageLoadOptions]
   }
 }

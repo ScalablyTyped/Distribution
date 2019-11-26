@@ -27,7 +27,7 @@ object Anon_ExecutionTime {
     writesExecuted: Double,
     writesIgnored: Double
   ): Anon_ExecutionTime = {
-    val __obj = js.Dynamic.literal(executionTime = executionTime, filtered = filtered, fullCount = fullCount, httpRequests = httpRequests, scannedFull = scannedFull, scannedIndex = scannedIndex, writesExecuted = writesExecuted, writesIgnored = writesIgnored)
+    val __obj = js.Dynamic.literal(executionTime = executionTime.asInstanceOf[js.Any], filtered = filtered.asInstanceOf[js.Any], fullCount = fullCount.asInstanceOf[js.Any], httpRequests = httpRequests.asInstanceOf[js.Any], scannedFull = scannedFull.asInstanceOf[js.Any], scannedIndex = scannedIndex.asInstanceOf[js.Any], writesExecuted = writesExecuted.asInstanceOf[js.Any], writesIgnored = writesIgnored.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ExecutionTime]
   }

@@ -85,15 +85,15 @@ object SectionGroupLoadOptions {
     sections: SectionCollectionLoadOptions = null
   ): SectionGroupLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(clientUrl)) __obj.updateDynamic("clientUrl")(clientUrl)
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
-    if (notebook != null) __obj.updateDynamic("notebook")(notebook)
-    if (parentSectionGroup != null) __obj.updateDynamic("parentSectionGroup")(parentSectionGroup)
-    if (parentSectionGroupOrNull != null) __obj.updateDynamic("parentSectionGroupOrNull")(parentSectionGroupOrNull)
-    if (sectionGroups != null) __obj.updateDynamic("sectionGroups")(sectionGroups)
-    if (sections != null) __obj.updateDynamic("sections")(sections)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientUrl)) __obj.updateDynamic("clientUrl")(clientUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (notebook != null) __obj.updateDynamic("notebook")(notebook.asInstanceOf[js.Any])
+    if (parentSectionGroup != null) __obj.updateDynamic("parentSectionGroup")(parentSectionGroup.asInstanceOf[js.Any])
+    if (parentSectionGroupOrNull != null) __obj.updateDynamic("parentSectionGroupOrNull")(parentSectionGroupOrNull.asInstanceOf[js.Any])
+    if (sectionGroups != null) __obj.updateDynamic("sectionGroups")(sectionGroups.asInstanceOf[js.Any])
+    if (sections != null) __obj.updateDynamic("sections")(sections.asInstanceOf[js.Any])
     __obj.asInstanceOf[SectionGroupLoadOptions]
   }
 }

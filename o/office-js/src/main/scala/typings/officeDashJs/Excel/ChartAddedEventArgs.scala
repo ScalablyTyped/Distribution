@@ -47,8 +47,8 @@ trait ChartAddedEventArgs extends js.Object {
 object ChartAddedEventArgs {
   @scala.inline
   def apply(chartId: String, source: EventSource | Local | Remote, `type`: ChartAdded, worksheetId: String): ChartAddedEventArgs = {
-    val __obj = js.Dynamic.literal(chartId = chartId, source = source.asInstanceOf[js.Any], worksheetId = worksheetId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(chartId = chartId.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAddedEventArgs]
   }
 }

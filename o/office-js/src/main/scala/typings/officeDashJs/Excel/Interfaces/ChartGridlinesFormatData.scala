@@ -19,7 +19,7 @@ object ChartGridlinesFormatData {
   @scala.inline
   def apply(line: ChartLineFormatData = null): ChartGridlinesFormatData = {
     val __obj = js.Dynamic.literal()
-    if (line != null) __obj.updateDynamic("line")(line)
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartGridlinesFormatData]
   }
 }

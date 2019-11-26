@@ -24,8 +24,8 @@ trait CommentRichContent extends js.Object {
 object CommentRichContent {
   @scala.inline
   def apply(richContent: String, mentions: js.Array[CommentMention] = null): CommentRichContent = {
-    val __obj = js.Dynamic.literal(richContent = richContent)
-    if (mentions != null) __obj.updateDynamic("mentions")(mentions)
+    val __obj = js.Dynamic.literal(richContent = richContent.asInstanceOf[js.Any])
+    if (mentions != null) __obj.updateDynamic("mentions")(mentions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentRichContent]
   }
 }

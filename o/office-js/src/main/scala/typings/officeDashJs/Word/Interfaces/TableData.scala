@@ -10,7 +10,7 @@ import typings.officeDashJs.officeDashJsStrings.Left
 import typings.officeDashJs.officeDashJsStrings.Mixed
 import typings.officeDashJs.officeDashJsStrings.Right
 import typings.officeDashJs.officeDashJsStrings.Top
-import typings.officeDashJs.officeDashJsStrings.Unknown
+import typings.officeDashJs.officeDashJsStrings.Unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ trait TableData extends js.Object {
     *
     * [Api set: WordApi 1.3]
     */
-  var alignment: js.UndefOr[Alignment | Mixed | Unknown | Left | Centered | Right | Justified] = js.undefined
+  var alignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
   /**
     *
     * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
@@ -44,7 +44,7 @@ trait TableData extends js.Object {
     *
     * [Api set: WordApi 1.3]
     */
-  var horizontalAlignment: js.UndefOr[Alignment | Mixed | Unknown | Left | Centered | Right | Justified] = js.undefined
+  var horizontalAlignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
   /**
     *
     * Indicates whether all of the table rows are uniform. Read-only.
@@ -164,10 +164,10 @@ trait TableData extends js.Object {
 object TableData {
   @scala.inline
   def apply(
-    alignment: Alignment | Mixed | Unknown | Left | Centered | Right | Justified = null,
+    alignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = null,
     font: FontData = null,
     headerRowCount: Int | Double = null,
-    horizontalAlignment: Alignment | Mixed | Unknown | Left | Centered | Right | Justified = null,
+    horizontalAlignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = null,
     isUniform: js.UndefOr[Boolean] = js.undefined,
     nestingLevel: Int | Double = null,
     rowCount: Int | Double = null,
@@ -187,23 +187,23 @@ object TableData {
   ): TableData = {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (headerRowCount != null) __obj.updateDynamic("headerRowCount")(headerRowCount.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(isUniform)) __obj.updateDynamic("isUniform")(isUniform)
+    if (!js.isUndefined(isUniform)) __obj.updateDynamic("isUniform")(isUniform.asInstanceOf[js.Any])
     if (nestingLevel != null) __obj.updateDynamic("nestingLevel")(nestingLevel.asInstanceOf[js.Any])
     if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows)
-    if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(styleBandedColumns)) __obj.updateDynamic("styleBandedColumns")(styleBandedColumns)
-    if (!js.isUndefined(styleBandedRows)) __obj.updateDynamic("styleBandedRows")(styleBandedRows)
-    if (styleBuiltIn != null) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn)
-    if (!js.isUndefined(styleFirstColumn)) __obj.updateDynamic("styleFirstColumn")(styleFirstColumn)
-    if (!js.isUndefined(styleLastColumn)) __obj.updateDynamic("styleLastColumn")(styleLastColumn)
-    if (!js.isUndefined(styleTotalRow)) __obj.updateDynamic("styleTotalRow")(styleTotalRow)
-    if (tables != null) __obj.updateDynamic("tables")(tables)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(styleBandedColumns)) __obj.updateDynamic("styleBandedColumns")(styleBandedColumns.asInstanceOf[js.Any])
+    if (!js.isUndefined(styleBandedRows)) __obj.updateDynamic("styleBandedRows")(styleBandedRows.asInstanceOf[js.Any])
+    if (styleBuiltIn != null) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn.asInstanceOf[js.Any])
+    if (!js.isUndefined(styleFirstColumn)) __obj.updateDynamic("styleFirstColumn")(styleFirstColumn.asInstanceOf[js.Any])
+    if (!js.isUndefined(styleLastColumn)) __obj.updateDynamic("styleLastColumn")(styleLastColumn.asInstanceOf[js.Any])
+    if (!js.isUndefined(styleTotalRow)) __obj.updateDynamic("styleTotalRow")(styleTotalRow.asInstanceOf[js.Any])
+    if (tables != null) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableData]

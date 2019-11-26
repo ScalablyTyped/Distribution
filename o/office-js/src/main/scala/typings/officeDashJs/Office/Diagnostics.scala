@@ -82,7 +82,7 @@ trait Diagnostics extends js.Object {
 object Diagnostics {
   @scala.inline
   def apply(OWAView: OWAView | OneColumn | TwoColumns | ThreeColumns, hostName: String, hostVersion: String): Diagnostics = {
-    val __obj = js.Dynamic.literal(OWAView = OWAView.asInstanceOf[js.Any], hostName = hostName, hostVersion = hostVersion)
+    val __obj = js.Dynamic.literal(OWAView = OWAView.asInstanceOf[js.Any], hostName = hostName.asInstanceOf[js.Any], hostVersion = hostVersion.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Diagnostics]
   }

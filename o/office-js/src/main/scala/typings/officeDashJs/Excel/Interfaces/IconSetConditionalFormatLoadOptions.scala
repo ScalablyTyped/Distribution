@@ -56,11 +56,11 @@ object IconSetConditionalFormatLoadOptions {
     style: js.UndefOr[Boolean] = js.undefined
   ): IconSetConditionalFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(criteria)) __obj.updateDynamic("criteria")(criteria)
-    if (!js.isUndefined(reverseIconOrder)) __obj.updateDynamic("reverseIconOrder")(reverseIconOrder)
-    if (!js.isUndefined(showIconOnly)) __obj.updateDynamic("showIconOnly")(showIconOnly)
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(criteria)) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseIconOrder)) __obj.updateDynamic("reverseIconOrder")(reverseIconOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(showIconOnly)) __obj.updateDynamic("showIconOnly")(showIconOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconSetConditionalFormatLoadOptions]
   }
 }

@@ -30,7 +30,7 @@ trait PageLoadCompleteEventArgs extends js.Object {
 object PageLoadCompleteEventArgs {
   @scala.inline
   def apply(pageName: String, success: Boolean): PageLoadCompleteEventArgs = {
-    val __obj = js.Dynamic.literal(pageName = pageName, success = success)
+    val __obj = js.Dynamic.literal(pageName = pageName.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PageLoadCompleteEventArgs]
   }

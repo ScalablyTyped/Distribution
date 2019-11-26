@@ -29,8 +29,8 @@ object RuntimeLoadOptions {
   @scala.inline
   def apply($all: js.UndefOr[Boolean] = js.undefined, enableEvents: js.UndefOr[Boolean] = js.undefined): RuntimeLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(enableEvents)) __obj.updateDynamic("enableEvents")(enableEvents)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableEvents)) __obj.updateDynamic("enableEvents")(enableEvents.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuntimeLoadOptions]
   }
 }

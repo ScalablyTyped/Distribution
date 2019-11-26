@@ -20,10 +20,10 @@ object DatabaseUser {
     extra: js.Object = null,
     passwd: String = null
   ): DatabaseUser = {
-    val __obj = js.Dynamic.literal(username = username)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
-    if (extra != null) __obj.updateDynamic("extra")(extra)
-    if (passwd != null) __obj.updateDynamic("passwd")(passwd)
+    val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
+    if (passwd != null) __obj.updateDynamic("passwd")(passwd.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseUser]
   }
 }

@@ -111,15 +111,15 @@ object ChartTrendlineData {
   ): ChartTrendlineData = {
     val __obj = js.Dynamic.literal()
     if (backwardPeriod != null) __obj.updateDynamic("backwardPeriod")(backwardPeriod.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (forwardPeriod != null) __obj.updateDynamic("forwardPeriod")(forwardPeriod.asInstanceOf[js.Any])
-    if (intercept != null) __obj.updateDynamic("intercept")(intercept)
-    if (label != null) __obj.updateDynamic("label")(label)
+    if (intercept != null) __obj.updateDynamic("intercept")(intercept.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (movingAveragePeriod != null) __obj.updateDynamic("movingAveragePeriod")(movingAveragePeriod.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (polynomialOrder != null) __obj.updateDynamic("polynomialOrder")(polynomialOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(showEquation)) __obj.updateDynamic("showEquation")(showEquation)
-    if (!js.isUndefined(showRSquared)) __obj.updateDynamic("showRSquared")(showRSquared)
+    if (!js.isUndefined(showEquation)) __obj.updateDynamic("showEquation")(showEquation.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRSquared)) __obj.updateDynamic("showRSquared")(showRSquared.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartTrendlineData]
   }

@@ -9,20 +9,20 @@ import typings.officeDashJsDashPreview.Word.Interfaces.InlinePictureLoadOptions
 import typings.officeDashJsDashPreview.Word.Interfaces.InlinePictureUpdateData
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.After
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Before
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Bmp
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Bmp_
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Content
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Emf
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.End
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Exif
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Gif
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Gif_
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Icon
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Jpeg
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Jpeg_
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Line
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Next
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Page
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Pdf
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Pict
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Png
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Png_
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Replace
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.SectionContinuous
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.SectionEven
@@ -30,7 +30,7 @@ import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.SectionNex
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.SectionOdd
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Select
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Start
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Svg
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Svg_
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Tiff
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Undefined
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unsupported
@@ -87,7 +87,7 @@ class InlinePicture () extends ClientObject {
     * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  val imageFormat: ImageFormat | Unsupported | Undefined | Bmp | Jpeg | Gif | Tiff | Png | Icon | Exif | Wmf | Emf | Pict | Pdf | Svg = js.native
+  val imageFormat: ImageFormat | Unsupported | Undefined | Bmp_ | Jpeg_ | Gif_ | Tiff | Png_ | Icon | Exif | Wmf | Emf | Pict | Pdf | Svg_ = js.native
   /**
     *
     * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.

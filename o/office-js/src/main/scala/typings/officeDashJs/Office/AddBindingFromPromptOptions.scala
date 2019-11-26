@@ -43,10 +43,10 @@ object AddBindingFromPromptOptions {
     sampleData: TableData = null
   ): AddBindingFromPromptOptions = {
     val __obj = js.Dynamic.literal()
-    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (promptText != null) __obj.updateDynamic("promptText")(promptText)
-    if (sampleData != null) __obj.updateDynamic("sampleData")(sampleData)
+    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (promptText != null) __obj.updateDynamic("promptText")(promptText.asInstanceOf[js.Any])
+    if (sampleData != null) __obj.updateDynamic("sampleData")(sampleData.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddBindingFromPromptOptions]
   }
 }

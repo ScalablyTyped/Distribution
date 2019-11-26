@@ -29,8 +29,8 @@ object ConditionalRangeFillLoadOptions {
   @scala.inline
   def apply($all: js.UndefOr[Boolean] = js.undefined, color: js.UndefOr[Boolean] = js.undefined): ConditionalRangeFillLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalRangeFillLoadOptions]
   }
 }

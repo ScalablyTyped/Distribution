@@ -29,8 +29,8 @@ object WorkbookProtectionLoadOptions {
   @scala.inline
   def apply($all: js.UndefOr[Boolean] = js.undefined, `protected`: js.UndefOr[Boolean] = js.undefined): WorkbookProtectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookProtectionLoadOptions]
   }
 }

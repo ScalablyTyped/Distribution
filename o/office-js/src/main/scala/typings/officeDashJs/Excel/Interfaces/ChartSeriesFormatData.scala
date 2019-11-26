@@ -19,7 +19,7 @@ object ChartSeriesFormatData {
   @scala.inline
   def apply(line: ChartLineFormatData = null): ChartSeriesFormatData = {
     val __obj = js.Dynamic.literal()
-    if (line != null) __obj.updateDynamic("line")(line)
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSeriesFormatData]
   }
 }

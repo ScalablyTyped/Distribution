@@ -14,8 +14,8 @@ trait ObjectWithKey
 object ObjectWithKey {
   @scala.inline
   def apply(_key: String, StringDictionary: /* key */ StringDictionary[js.Any] = null): ObjectWithKey = {
-    val __obj = js.Dynamic.literal(_key = _key)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(_key = _key.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ObjectWithKey]
   }
 }

@@ -85,15 +85,15 @@ object ImageLoadOptions {
     width: js.UndefOr[Boolean] = js.undefined
   ): ImageLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description)
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
-    if (!js.isUndefined(hyperlink)) __obj.updateDynamic("hyperlink")(hyperlink)
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(ocrData)) __obj.updateDynamic("ocrData")(ocrData)
-    if (pageContent != null) __obj.updateDynamic("pageContent")(pageContent)
-    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph)
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(hyperlink)) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(ocrData)) __obj.updateDynamic("ocrData")(ocrData.asInstanceOf[js.Any])
+    if (pageContent != null) __obj.updateDynamic("pageContent")(pageContent.asInstanceOf[js.Any])
+    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageLoadOptions]
   }
 }

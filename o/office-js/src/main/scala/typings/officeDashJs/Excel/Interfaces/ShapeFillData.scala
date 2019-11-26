@@ -44,7 +44,7 @@ object ShapeFillData {
     `type`: ShapeFillType | NoFill | Solid | Gradient | Pattern | PictureAndTexture | Mixed = null
   ): ShapeFillData = {
     val __obj = js.Dynamic.literal()
-    if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor)
+    if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor.asInstanceOf[js.Any])
     if (transparency != null) __obj.updateDynamic("transparency")(transparency.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeFillData]

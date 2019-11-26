@@ -14,7 +14,7 @@ object Anon_Limit {
   def apply(limit: Int | Double = null, waitForSync: js.UndefOr[Boolean] = js.undefined): Anon_Limit = {
     val __obj = js.Dynamic.literal()
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForSync)) __obj.updateDynamic("waitForSync")(waitForSync)
+    if (!js.isUndefined(waitForSync)) __obj.updateDynamic("waitForSync")(waitForSync.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Limit]
   }
 }

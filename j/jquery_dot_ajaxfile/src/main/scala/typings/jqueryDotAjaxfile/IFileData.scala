@@ -13,7 +13,7 @@ trait IFileData extends js.Object {
 object IFileData {
   @scala.inline
   def apply(element: HTMLInputElement, name: String): IFileData = {
-    val __obj = js.Dynamic.literal(element = element, name = name)
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IFileData]
   }

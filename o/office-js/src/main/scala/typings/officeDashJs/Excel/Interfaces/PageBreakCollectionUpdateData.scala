@@ -13,7 +13,7 @@ object PageBreakCollectionUpdateData {
   @scala.inline
   def apply(items: js.Array[PageBreakData] = null): PageBreakCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageBreakCollectionUpdateData]
   }
 }

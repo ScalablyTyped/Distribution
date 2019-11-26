@@ -20,7 +20,7 @@ import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.TaskRemove
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.ToDo
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.ToDoPriority1
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.ToDoPriority2
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown_
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Website
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -51,14 +51,14 @@ class NoteTag () extends ClientObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  val status: NoteTagStatus | Unknown | Normal | Completed | Disabled | OutlookTask | TaskNotSyncedYet | TaskRemoved = js.native
+  val status: NoteTagStatus | Unknown_ | Normal | Completed | Disabled | OutlookTask | TaskNotSyncedYet | TaskRemoved = js.native
   /**
     *
     * Gets the type of the NoteTag object. Read-only.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  val `type`: NoteTagType | Unknown | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2 = js.native
+  val `type`: NoteTagType | Unknown_ | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2 = js.native
   /**
     * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *

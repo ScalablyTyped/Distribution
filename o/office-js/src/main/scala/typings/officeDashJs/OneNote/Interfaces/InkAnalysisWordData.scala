@@ -54,11 +54,11 @@ object InkAnalysisWordData {
     wordAlternates: js.Array[String] = null
   ): InkAnalysisWordData = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (languageId != null) __obj.updateDynamic("languageId")(languageId)
-    if (line != null) __obj.updateDynamic("line")(line)
-    if (strokePointers != null) __obj.updateDynamic("strokePointers")(strokePointers)
-    if (wordAlternates != null) __obj.updateDynamic("wordAlternates")(wordAlternates)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (languageId != null) __obj.updateDynamic("languageId")(languageId.asInstanceOf[js.Any])
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (strokePointers != null) __obj.updateDynamic("strokePointers")(strokePointers.asInstanceOf[js.Any])
+    if (wordAlternates != null) __obj.updateDynamic("wordAlternates")(wordAlternates.asInstanceOf[js.Any])
     __obj.asInstanceOf[InkAnalysisWordData]
   }
 }

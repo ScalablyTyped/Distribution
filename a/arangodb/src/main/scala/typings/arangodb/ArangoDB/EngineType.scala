@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait EngineType extends js.Object
 
+object EngineType {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def mmfiles: typings.arangodb.arangodbStrings.mmfiles = this.cast("mmfiles")
+  @scala.inline
+  def rocksdb: typings.arangodb.arangodbStrings.rocksdb = this.cast("rocksdb")
+}
+

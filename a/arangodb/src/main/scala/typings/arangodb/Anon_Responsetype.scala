@@ -12,7 +12,7 @@ object Anon_Responsetype {
   @scala.inline
   def apply(response_type: String = null): Anon_Responsetype = {
     val __obj = js.Dynamic.literal()
-    if (response_type != null) __obj.updateDynamic("response_type")(response_type)
+    if (response_type != null) __obj.updateDynamic("response_type")(response_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Responsetype]
   }
 }

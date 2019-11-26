@@ -42,9 +42,9 @@ object CustomXmlPartScopedCollectionLoadOptions {
     namespaceUri: js.UndefOr[Boolean] = js.undefined
   ): CustomXmlPartScopedCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(namespaceUri)) __obj.updateDynamic("namespaceUri")(namespaceUri)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(namespaceUri)) __obj.updateDynamic("namespaceUri")(namespaceUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomXmlPartScopedCollectionLoadOptions]
   }
 }

@@ -11,7 +11,7 @@ trait Anon_Charset extends js.Object {
 object Anon_Charset {
   @scala.inline
   def apply(charset: String): Anon_Charset = {
-    val __obj = js.Dynamic.literal(charset = charset)
+    val __obj = js.Dynamic.literal(charset = charset.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Charset]
   }

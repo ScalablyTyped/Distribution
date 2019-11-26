@@ -19,8 +19,8 @@ object ThreeArrowsGraySet {
     grayUpArrow: Icon,
     NumberDictionary: /* index */ NumberDictionary[Icon] = null
   ): ThreeArrowsGraySet = {
-    val __obj = js.Dynamic.literal(grayDownArrow = grayDownArrow, graySideArrow = graySideArrow, grayUpArrow = grayUpArrow)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    val __obj = js.Dynamic.literal(grayDownArrow = grayDownArrow.asInstanceOf[js.Any], graySideArrow = graySideArrow.asInstanceOf[js.Any], grayUpArrow = grayUpArrow.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[ThreeArrowsGraySet]
   }
 }

@@ -104,17 +104,17 @@ object NamedItemCollectionLoadOptions {
     worksheetOrNullObject: WorksheetLoadOptions = null
   ): NamedItemCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (arrayValues != null) __obj.updateDynamic("arrayValues")(arrayValues)
-    if (!js.isUndefined(comment)) __obj.updateDynamic("comment")(comment)
-    if (!js.isUndefined(formula)) __obj.updateDynamic("formula")(formula)
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(scope)) __obj.updateDynamic("scope")(scope)
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
-    if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet)
-    if (worksheetOrNullObject != null) __obj.updateDynamic("worksheetOrNullObject")(worksheetOrNullObject)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (arrayValues != null) __obj.updateDynamic("arrayValues")(arrayValues.asInstanceOf[js.Any])
+    if (!js.isUndefined(comment)) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (!js.isUndefined(formula)) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(scope)) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet.asInstanceOf[js.Any])
+    if (worksheetOrNullObject != null) __obj.updateDynamic("worksheetOrNullObject")(worksheetOrNullObject.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedItemCollectionLoadOptions]
   }
 }

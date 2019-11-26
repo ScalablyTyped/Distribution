@@ -56,9 +56,9 @@ object ConditionalIconCriterion {
     `type`: ConditionalFormatIconRuleType | Invalid | Number | Percent | Formula | Percentile,
     customIcon: Icon = null
   ): ConditionalIconCriterion = {
-    val __obj = js.Dynamic.literal(formula = formula, operator = operator.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(formula = formula.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (customIcon != null) __obj.updateDynamic("customIcon")(customIcon)
+    if (customIcon != null) __obj.updateDynamic("customIcon")(customIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalIconCriterion]
   }
 }

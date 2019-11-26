@@ -19,7 +19,7 @@ object SelectionData {
   @scala.inline
   def apply(shapes: js.Array[ShapeData] = null): SelectionData = {
     val __obj = js.Dynamic.literal()
-    if (shapes != null) __obj.updateDynamic("shapes")(shapes)
+    if (shapes != null) __obj.updateDynamic("shapes")(shapes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionData]
   }
 }

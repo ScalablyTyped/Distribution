@@ -26,7 +26,7 @@ object FunctionResultData {
   @scala.inline
   def apply[T](error: String = null, value: T = null): FunctionResultData[T] = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error)
+    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionResultData[T]]
   }

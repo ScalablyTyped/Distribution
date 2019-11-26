@@ -19,7 +19,7 @@ object TableCellUpdateData {
   @scala.inline
   def apply(shadingColor: String = null): TableCellUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor)
+    if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCellUpdateData]
   }
 }

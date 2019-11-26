@@ -25,12 +25,12 @@ object EmbeddedOptions {
     width: String = null
   ): EmbeddedOptions = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container)
-    if (height != null) __obj.updateDynamic("height")(height)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey.asInstanceOf[js.Any])
     if (timeoutInMilliseconds != null) __obj.updateDynamic("timeoutInMilliseconds")(timeoutInMilliseconds.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmbeddedOptions]
   }
 }

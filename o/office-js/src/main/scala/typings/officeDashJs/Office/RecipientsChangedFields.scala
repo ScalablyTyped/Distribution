@@ -33,7 +33,7 @@ trait RecipientsChangedFields extends js.Object {
 object RecipientsChangedFields {
   @scala.inline
   def apply(optionalAttendees: Boolean, requiredAttendees: Boolean, resources: Boolean): RecipientsChangedFields = {
-    val __obj = js.Dynamic.literal(optionalAttendees = optionalAttendees, requiredAttendees = requiredAttendees, resources = resources)
+    val __obj = js.Dynamic.literal(optionalAttendees = optionalAttendees.asInstanceOf[js.Any], requiredAttendees = requiredAttendees.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RecipientsChangedFields]
   }

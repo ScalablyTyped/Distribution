@@ -24,8 +24,8 @@ object ArangoSearchViewPropertiesOptions {
     val __obj = js.Dynamic.literal()
     if (cleanupIntervalStep != null) __obj.updateDynamic("cleanupIntervalStep")(cleanupIntervalStep.asInstanceOf[js.Any])
     if (consolidationIntervalMsec != null) __obj.updateDynamic("consolidationIntervalMsec")(consolidationIntervalMsec.asInstanceOf[js.Any])
-    if (consolidationPolicy != null) __obj.updateDynamic("consolidationPolicy")(consolidationPolicy)
-    if (links != null) __obj.updateDynamic("links")(links)
+    if (consolidationPolicy != null) __obj.updateDynamic("consolidationPolicy")(consolidationPolicy.asInstanceOf[js.Any])
+    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArangoSearchViewPropertiesOptions]
   }
 }

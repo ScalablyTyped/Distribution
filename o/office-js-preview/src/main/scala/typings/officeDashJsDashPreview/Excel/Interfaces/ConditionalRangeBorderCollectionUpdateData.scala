@@ -47,11 +47,11 @@ object ConditionalRangeBorderCollectionUpdateData {
     top: ConditionalRangeBorderUpdateData = null
   ): ConditionalRangeBorderCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (left != null) __obj.updateDynamic("left")(left)
-    if (right != null) __obj.updateDynamic("right")(right)
-    if (top != null) __obj.updateDynamic("top")(top)
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalRangeBorderCollectionUpdateData]
   }
 }

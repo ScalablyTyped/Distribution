@@ -48,10 +48,10 @@ object TableSortLoadOptions {
     method: js.UndefOr[Boolean] = js.undefined
   ): TableSortLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(fields)) __obj.updateDynamic("fields")(fields)
-    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase)
-    if (!js.isUndefined(method)) __obj.updateDynamic("method")(method)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(fields)) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.asInstanceOf[js.Any])
+    if (!js.isUndefined(method)) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableSortLoadOptions]
   }
 }

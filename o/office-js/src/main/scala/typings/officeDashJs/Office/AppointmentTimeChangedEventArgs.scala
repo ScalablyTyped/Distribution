@@ -30,8 +30,8 @@ trait AppointmentTimeChangedEventArgs extends js.Object {
 object AppointmentTimeChangedEventArgs {
   @scala.inline
   def apply(end: Date, start: Date, `type`: olkAppointmentTimeChanged): AppointmentTimeChangedEventArgs = {
-    val __obj = js.Dynamic.literal(end = end, start = start)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppointmentTimeChangedEventArgs]
   }
 }

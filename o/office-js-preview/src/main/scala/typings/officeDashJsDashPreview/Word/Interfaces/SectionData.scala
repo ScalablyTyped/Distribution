@@ -19,7 +19,7 @@ object SectionData {
   @scala.inline
   def apply(body: BodyData = null): SectionData = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     __obj.asInstanceOf[SectionData]
   }
 }

@@ -71,13 +71,13 @@ object RangeData {
     text: String = null
   ): RangeData = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
-    if (inlinePictures != null) __obj.updateDynamic("inlinePictures")(inlinePictures)
-    if (!js.isUndefined(isEmpty)) __obj.updateDynamic("isEmpty")(isEmpty)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (styleBuiltIn != null) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
+    if (inlinePictures != null) __obj.updateDynamic("inlinePictures")(inlinePictures.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEmpty)) __obj.updateDynamic("isEmpty")(isEmpty.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (styleBuiltIn != null) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeData]
   }
 }

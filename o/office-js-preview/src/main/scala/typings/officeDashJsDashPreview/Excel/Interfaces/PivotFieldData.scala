@@ -54,11 +54,11 @@ object PivotFieldData {
     subtotals: Subtotals = null
   ): PivotFieldData = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (items != null) __obj.updateDynamic("items")(items)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(showAllItems)) __obj.updateDynamic("showAllItems")(showAllItems)
-    if (subtotals != null) __obj.updateDynamic("subtotals")(subtotals)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAllItems)) __obj.updateDynamic("showAllItems")(showAllItems.asInstanceOf[js.Any])
+    if (subtotals != null) __obj.updateDynamic("subtotals")(subtotals.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotFieldData]
   }
 }

@@ -26,8 +26,8 @@ object TableStyleData {
   @scala.inline
   def apply(name: String = null, readOnly: js.UndefOr[Boolean] = js.undefined): TableStyleData = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableStyleData]
   }
 }

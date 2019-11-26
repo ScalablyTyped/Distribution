@@ -29,8 +29,8 @@ object ChartPlotAreaFormatLoadOptions {
   @scala.inline
   def apply($all: js.UndefOr[Boolean] = js.undefined, border: ChartBorderLoadOptions = null): ChartPlotAreaFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (border != null) __obj.updateDynamic("border")(border)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartPlotAreaFormatLoadOptions]
   }
 }

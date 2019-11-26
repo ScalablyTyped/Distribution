@@ -26,8 +26,8 @@ object OutlineData {
   @scala.inline
   def apply(id: String = null, paragraphs: js.Array[ParagraphData] = null): OutlineData = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutlineData]
   }
 }

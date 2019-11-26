@@ -27,8 +27,8 @@ object PresetCriteriaConditionalFormatUpdateData {
   @scala.inline
   def apply(format: ConditionalRangeFormatUpdateData = null, rule: ConditionalPresetCriteriaRule = null): PresetCriteriaConditionalFormatUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (rule != null) __obj.updateDynamic("rule")(rule)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[PresetCriteriaConditionalFormatUpdateData]
   }
 }

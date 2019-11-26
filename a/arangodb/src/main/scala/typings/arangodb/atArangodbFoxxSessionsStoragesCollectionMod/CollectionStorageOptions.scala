@@ -21,8 +21,8 @@ object CollectionStorageOptions {
     ttl: Int | Double = null
   ): CollectionStorageOptions = {
     val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoUpdate)) __obj.updateDynamic("autoUpdate")(autoUpdate)
-    if (!js.isUndefined(pruneExpired)) __obj.updateDynamic("pruneExpired")(pruneExpired)
+    if (!js.isUndefined(autoUpdate)) __obj.updateDynamic("autoUpdate")(autoUpdate.asInstanceOf[js.Any])
+    if (!js.isUndefined(pruneExpired)) __obj.updateDynamic("pruneExpired")(pruneExpired.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionStorageOptions]
   }

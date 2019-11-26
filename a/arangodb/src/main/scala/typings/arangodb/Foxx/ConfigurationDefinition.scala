@@ -19,10 +19,10 @@ object ConfigurationDefinition {
     description: String = null,
     `type`: ConfigurationType = null
   ): ConfigurationDefinition = {
-    val __obj = js.Dynamic.literal(required = required)
-    if (default != null) __obj.updateDynamic("default")(default)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(required = required.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationDefinition]
   }
 }

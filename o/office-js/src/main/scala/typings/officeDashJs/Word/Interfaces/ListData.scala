@@ -47,9 +47,9 @@ object ListData {
   ): ListData = {
     val __obj = js.Dynamic.literal()
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (levelExistences != null) __obj.updateDynamic("levelExistences")(levelExistences)
-    if (levelTypes != null) __obj.updateDynamic("levelTypes")(levelTypes)
-    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs)
+    if (levelExistences != null) __obj.updateDynamic("levelExistences")(levelExistences.asInstanceOf[js.Any])
+    if (levelTypes != null) __obj.updateDynamic("levelTypes")(levelTypes.asInstanceOf[js.Any])
+    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListData]
   }
 }

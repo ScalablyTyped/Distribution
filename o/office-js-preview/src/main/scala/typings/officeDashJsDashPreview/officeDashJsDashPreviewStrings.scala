@@ -333,7 +333,7 @@ object officeDashJsDashPreviewStrings {
   sealed trait BlockArc extends js.Object
   
   @js.native
-  sealed trait Bmp extends js.Object
+  sealed trait Bmp_ extends js.Object
   
   @js.native
   sealed trait BookTitle extends js.Object
@@ -969,6 +969,9 @@ object officeDashJsDashPreviewStrings {
   sealed trait Empty extends js.Object
   
   @js.native
+  sealed trait Empty_ extends js.Object
+  
+  @js.native
   sealed trait End extends js.Object
   
   @js.native
@@ -1344,7 +1347,7 @@ object officeDashJsDashPreviewStrings {
   sealed trait GeometricShape extends js.Object
   
   @js.native
-  sealed trait Gif extends js.Object
+  sealed trait Gif_ extends js.Object
   
   @js.native
   sealed trait Gradient extends js.Object
@@ -1731,7 +1734,7 @@ object officeDashJsDashPreviewStrings {
   sealed trait JPEG extends js.Object
   
   @js.native
-  sealed trait Jpeg extends js.Object
+  sealed trait Jpeg_ extends js.Object
   
   @js.native
   sealed trait Justified extends js.Object
@@ -2496,7 +2499,7 @@ object officeDashJsDashPreviewStrings {
   sealed trait PlusValues extends js.Object
   
   @js.native
-  sealed trait Png extends js.Object
+  sealed trait Png_ extends js.Object
   
   @js.native
   sealed trait Points extends js.Object
@@ -2934,7 +2937,7 @@ object officeDashJsDashPreviewStrings {
   sealed trait SurfaceWireframe extends js.Object
   
   @js.native
-  sealed trait Svg extends js.Object
+  sealed trait Svg_ extends js.Object
   
   @js.native
   sealed trait SwooshArrow extends js.Object
@@ -3267,7 +3270,7 @@ object officeDashJsDashPreviewStrings {
   sealed trait UniqueValues extends js.Object
   
   @js.native
-  sealed trait Unknown extends js.Object
+  sealed trait Unknown_ extends js.Object
   
   @js.native
   sealed trait Unlocked extends js.Object
@@ -3725,7 +3728,7 @@ object officeDashJsDashPreviewStrings {
   @scala.inline
   def BlockArc: BlockArc = "BlockArc".asInstanceOf[BlockArc]
   @scala.inline
-  def Bmp: Bmp = "Bmp".asInstanceOf[Bmp]
+  def Bmp_ : Bmp_ = "Bmp".asInstanceOf[Bmp_]
   @scala.inline
   def BookTitle: BookTitle = "BookTitle".asInstanceOf[BookTitle]
   @scala.inline
@@ -4147,7 +4150,9 @@ object officeDashJsDashPreviewStrings {
   @scala.inline
   def Emphasis: Emphasis = "Emphasis".asInstanceOf[Emphasis]
   @scala.inline
-  def Empty: Empty = "Empty".asInstanceOf[Empty]
+  def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
+  def Empty_ : Empty_ = "Empty".asInstanceOf[Empty_]
   @scala.inline
   def End: End = "End".asInstanceOf[End]
   @scala.inline
@@ -4399,7 +4404,7 @@ object officeDashJsDashPreviewStrings {
   @scala.inline
   def GeometricShape: GeometricShape = "GeometricShape".asInstanceOf[GeometricShape]
   @scala.inline
-  def Gif: Gif = "Gif".asInstanceOf[Gif]
+  def Gif_ : Gif_ = "Gif".asInstanceOf[Gif_]
   @scala.inline
   def Gradient: Gradient = "Gradient".asInstanceOf[Gradient]
   @scala.inline
@@ -4657,7 +4662,7 @@ object officeDashJsDashPreviewStrings {
   @scala.inline
   def JPEG: JPEG = "JPEG".asInstanceOf[JPEG]
   @scala.inline
-  def Jpeg: Jpeg = "Jpeg".asInstanceOf[Jpeg]
+  def Jpeg_ : Jpeg_ = "Jpeg".asInstanceOf[Jpeg_]
   @scala.inline
   def Justified: Justified = "Justified".asInstanceOf[Justified]
   @scala.inline
@@ -5167,7 +5172,7 @@ object officeDashJsDashPreviewStrings {
   @scala.inline
   def PlusValues: PlusValues = "PlusValues".asInstanceOf[PlusValues]
   @scala.inline
-  def Png: Png = "Png".asInstanceOf[Png]
+  def Png_ : Png_ = "Png".asInstanceOf[Png_]
   @scala.inline
   def Points: Points = "Points".asInstanceOf[Points]
   @scala.inline
@@ -5459,7 +5464,7 @@ object officeDashJsDashPreviewStrings {
   @scala.inline
   def SurfaceWireframe: SurfaceWireframe = "SurfaceWireframe".asInstanceOf[SurfaceWireframe]
   @scala.inline
-  def Svg: Svg = "Svg".asInstanceOf[Svg]
+  def Svg_ : Svg_ = "Svg".asInstanceOf[Svg_]
   @scala.inline
   def SwooshArrow: SwooshArrow = "SwooshArrow".asInstanceOf[SwooshArrow]
   @scala.inline
@@ -5681,7 +5686,7 @@ object officeDashJsDashPreviewStrings {
   @scala.inline
   def UniqueValues: UniqueValues = "UniqueValues".asInstanceOf[UniqueValues]
   @scala.inline
-  def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
+  def Unknown_ : Unknown_ = "Unknown".asInstanceOf[Unknown_]
   @scala.inline
   def Unlocked: Unlocked = "Unlocked".asInstanceOf[Unlocked]
   @scala.inline

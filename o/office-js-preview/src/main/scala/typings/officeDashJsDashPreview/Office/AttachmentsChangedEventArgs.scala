@@ -35,8 +35,8 @@ object AttachmentsChangedEventArgs {
     attachmentStatus: AttachmentStatus | String,
     `type`: olkAttachmentsChanged
   ): AttachmentsChangedEventArgs = {
-    val __obj = js.Dynamic.literal(attachmentDetails = attachmentDetails, attachmentStatus = attachmentStatus.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(attachmentDetails = attachmentDetails.asInstanceOf[js.Any], attachmentStatus = attachmentStatus.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentsChangedEventArgs]
   }
 }

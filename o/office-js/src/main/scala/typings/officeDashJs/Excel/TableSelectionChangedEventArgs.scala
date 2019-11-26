@@ -58,8 +58,8 @@ object TableSelectionChangedEventArgs {
     `type`: TableSelectionChanged,
     worksheetId: String
   ): TableSelectionChangedEventArgs = {
-    val __obj = js.Dynamic.literal(address = address, isInsideTable = isInsideTable, tableId = tableId, worksheetId = worksheetId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], isInsideTable = isInsideTable.asInstanceOf[js.Any], tableId = tableId.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableSelectionChangedEventArgs]
   }
 }

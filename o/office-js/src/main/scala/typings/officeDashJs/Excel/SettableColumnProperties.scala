@@ -38,10 +38,10 @@ object SettableColumnProperties {
     style: String = null
   ): SettableColumnProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(columnHidden)) __obj.updateDynamic("columnHidden")(columnHidden)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(columnHidden)) __obj.updateDynamic("columnHidden")(columnHidden.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettableColumnProperties]
   }
 }

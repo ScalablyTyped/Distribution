@@ -19,11 +19,11 @@ object ReplaceOptions {
     waitForSync: js.UndefOr[Boolean] = js.undefined
   ): ReplaceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite)
-    if (!js.isUndefined(returnNew)) __obj.updateDynamic("returnNew")(returnNew)
-    if (!js.isUndefined(returnOld)) __obj.updateDynamic("returnOld")(returnOld)
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
-    if (!js.isUndefined(waitForSync)) __obj.updateDynamic("waitForSync")(waitForSync)
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnNew)) __obj.updateDynamic("returnNew")(returnNew.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnOld)) __obj.updateDynamic("returnOld")(returnOld.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForSync)) __obj.updateDynamic("waitForSync")(waitForSync.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceOptions]
   }
 }

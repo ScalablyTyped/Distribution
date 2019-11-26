@@ -46,8 +46,8 @@ object TableRowData {
   ): TableRowData = {
     val __obj = js.Dynamic.literal()
     if (cellCount != null) __obj.updateDynamic("cellCount")(cellCount.asInstanceOf[js.Any])
-    if (cells != null) __obj.updateDynamic("cells")(cells)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRowData]
   }

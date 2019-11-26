@@ -69,13 +69,13 @@ object TableLoadOptions {
     rows: TableRowCollectionLoadOptions = null
   ): TableLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(borderVisible)) __obj.updateDynamic("borderVisible")(borderVisible)
-    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount)
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
-    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph)
-    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount)
-    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderVisible)) __obj.updateDynamic("borderVisible")(borderVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableLoadOptions]
   }
 }

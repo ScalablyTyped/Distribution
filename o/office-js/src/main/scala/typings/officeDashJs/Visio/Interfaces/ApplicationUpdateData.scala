@@ -26,8 +26,8 @@ object ApplicationUpdateData {
   @scala.inline
   def apply(showBorders: js.UndefOr[Boolean] = js.undefined, showToolbars: js.UndefOr[Boolean] = js.undefined): ApplicationUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(showBorders)) __obj.updateDynamic("showBorders")(showBorders)
-    if (!js.isUndefined(showToolbars)) __obj.updateDynamic("showToolbars")(showToolbars)
+    if (!js.isUndefined(showBorders)) __obj.updateDynamic("showBorders")(showBorders.asInstanceOf[js.Any])
+    if (!js.isUndefined(showToolbars)) __obj.updateDynamic("showToolbars")(showToolbars.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationUpdateData]
   }
 }

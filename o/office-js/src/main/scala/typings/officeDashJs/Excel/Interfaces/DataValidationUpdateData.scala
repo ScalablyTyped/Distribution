@@ -48,10 +48,10 @@ object DataValidationUpdateData {
     rule: DataValidationRule = null
   ): DataValidationUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (errorAlert != null) __obj.updateDynamic("errorAlert")(errorAlert)
-    if (!js.isUndefined(ignoreBlanks)) __obj.updateDynamic("ignoreBlanks")(ignoreBlanks)
-    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
-    if (rule != null) __obj.updateDynamic("rule")(rule)
+    if (errorAlert != null) __obj.updateDynamic("errorAlert")(errorAlert.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreBlanks)) __obj.updateDynamic("ignoreBlanks")(ignoreBlanks.asInstanceOf[js.Any])
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
+    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataValidationUpdateData]
   }
 }

@@ -58,11 +58,11 @@ object CellPropertiesFillLoadOptions {
     tintAndShade: js.UndefOr[Boolean] = js.undefined
   ): CellPropertiesFillLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(pattern)) __obj.updateDynamic("pattern")(pattern)
-    if (!js.isUndefined(patternColor)) __obj.updateDynamic("patternColor")(patternColor)
-    if (!js.isUndefined(patternTintAndShade)) __obj.updateDynamic("patternTintAndShade")(patternTintAndShade)
-    if (!js.isUndefined(tintAndShade)) __obj.updateDynamic("tintAndShade")(tintAndShade)
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(pattern)) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    if (!js.isUndefined(patternColor)) __obj.updateDynamic("patternColor")(patternColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(patternTintAndShade)) __obj.updateDynamic("patternTintAndShade")(patternTintAndShade.asInstanceOf[js.Any])
+    if (!js.isUndefined(tintAndShade)) __obj.updateDynamic("tintAndShade")(tintAndShade.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellPropertiesFillLoadOptions]
   }
 }

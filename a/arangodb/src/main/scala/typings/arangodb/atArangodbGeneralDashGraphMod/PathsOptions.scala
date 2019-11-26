@@ -21,8 +21,8 @@ object PathsOptions {
     minLength: Int | Double = null
   ): PathsOptions = {
     val __obj = js.Dynamic.literal()
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (!js.isUndefined(followCycles)) __obj.updateDynamic("followCycles")(followCycles)
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (!js.isUndefined(followCycles)) __obj.updateDynamic("followCycles")(followCycles.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathsOptions]

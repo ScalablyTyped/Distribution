@@ -44,7 +44,7 @@ object OfficeTheme {
     controlBackgroundColor: String,
     controlForegroundColor: String
   ): OfficeTheme = {
-    val __obj = js.Dynamic.literal(bodyBackgroundColor = bodyBackgroundColor, bodyForegroundColor = bodyForegroundColor, controlBackgroundColor = controlBackgroundColor, controlForegroundColor = controlForegroundColor)
+    val __obj = js.Dynamic.literal(bodyBackgroundColor = bodyBackgroundColor.asInstanceOf[js.Any], bodyForegroundColor = bodyForegroundColor.asInstanceOf[js.Any], controlBackgroundColor = controlBackgroundColor.asInstanceOf[js.Any], controlForegroundColor = controlForegroundColor.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OfficeTheme]
   }

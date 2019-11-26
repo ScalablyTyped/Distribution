@@ -14,7 +14,7 @@ object AuthOptions {
   @scala.inline
   def apply(method: HashAlgorithm = null, saltLength: Int | Double = null): AuthOptions = {
     val __obj = js.Dynamic.literal()
-    if (method != null) __obj.updateDynamic("method")(method)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (saltLength != null) __obj.updateDynamic("saltLength")(saltLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthOptions]
   }

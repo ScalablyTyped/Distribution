@@ -65,10 +65,10 @@ object ChartAreaFormatUpdateData {
     roundedCorners: js.UndefOr[Boolean] = js.undefined
   ): ChartAreaFormatUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (!js.isUndefined(roundedCorners)) __obj.updateDynamic("roundedCorners")(roundedCorners)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (!js.isUndefined(roundedCorners)) __obj.updateDynamic("roundedCorners")(roundedCorners.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAreaFormatUpdateData]
   }
 }

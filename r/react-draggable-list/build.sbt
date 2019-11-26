@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-draggable-list"
-version := "4.0.3-3d636d"
+version := "4.0.3-9f1a51"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -57,11 +57,11 @@ object ConditionalDataBarNegativeFormatLoadOptions {
     matchPositiveFillColor: js.UndefOr[Boolean] = js.undefined
   ): ConditionalDataBarNegativeFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(borderColor)) __obj.updateDynamic("borderColor")(borderColor)
-    if (!js.isUndefined(fillColor)) __obj.updateDynamic("fillColor")(fillColor)
-    if (!js.isUndefined(matchPositiveBorderColor)) __obj.updateDynamic("matchPositiveBorderColor")(matchPositiveBorderColor)
-    if (!js.isUndefined(matchPositiveFillColor)) __obj.updateDynamic("matchPositiveFillColor")(matchPositiveFillColor)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderColor)) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillColor)) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchPositiveBorderColor)) __obj.updateDynamic("matchPositiveBorderColor")(matchPositiveBorderColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchPositiveFillColor)) __obj.updateDynamic("matchPositiveFillColor")(matchPositiveFillColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalDataBarNegativeFormatLoadOptions]
   }
 }

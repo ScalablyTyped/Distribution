@@ -49,12 +49,12 @@ object DebugInfo {
     statements: String = null,
     surroundingStatements: js.Array[String] = null
   ): DebugInfo = {
-    val __obj = js.Dynamic.literal(code = code, message = message)
-    if (errorLocation != null) __obj.updateDynamic("errorLocation")(errorLocation)
-    if (fullStatements != null) __obj.updateDynamic("fullStatements")(fullStatements)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    if (errorLocation != null) __obj.updateDynamic("errorLocation")(errorLocation.asInstanceOf[js.Any])
+    if (fullStatements != null) __obj.updateDynamic("fullStatements")(fullStatements.asInstanceOf[js.Any])
     if (innerError != null) __obj.updateDynamic("innerError")(innerError.asInstanceOf[js.Any])
-    if (statements != null) __obj.updateDynamic("statements")(statements)
-    if (surroundingStatements != null) __obj.updateDynamic("surroundingStatements")(surroundingStatements)
+    if (statements != null) __obj.updateDynamic("statements")(statements.asInstanceOf[js.Any])
+    if (surroundingStatements != null) __obj.updateDynamic("surroundingStatements")(surroundingStatements.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugInfo]
   }
 }

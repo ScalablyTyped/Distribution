@@ -28,8 +28,8 @@ object CultureInfoData {
   @scala.inline
   def apply(name: String = null, numberFormatInfo: NumberFormatInfoData = null): CultureInfoData = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (numberFormatInfo != null) __obj.updateDynamic("numberFormatInfo")(numberFormatInfo)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (numberFormatInfo != null) __obj.updateDynamic("numberFormatInfo")(numberFormatInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[CultureInfoData]
   }
 }

@@ -96,7 +96,7 @@ trait UserProfile extends js.Object {
 object UserProfile {
   @scala.inline
   def apply(accountType: String, displayName: String, emailAddress: String, timeZone: String): UserProfile = {
-    val __obj = js.Dynamic.literal(accountType = accountType, displayName = displayName, emailAddress = emailAddress, timeZone = timeZone)
+    val __obj = js.Dynamic.literal(accountType = accountType.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], emailAddress = emailAddress.asInstanceOf[js.Any], timeZone = timeZone.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UserProfile]
   }

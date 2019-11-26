@@ -37,9 +37,9 @@ object InkAnalysisParagraphData {
     lines: js.Array[InkAnalysisLineData] = null
   ): InkAnalysisParagraphData = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (inkAnalysis != null) __obj.updateDynamic("inkAnalysis")(inkAnalysis)
-    if (lines != null) __obj.updateDynamic("lines")(lines)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (inkAnalysis != null) __obj.updateDynamic("inkAnalysis")(inkAnalysis.asInstanceOf[js.Any])
+    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
     __obj.asInstanceOf[InkAnalysisParagraphData]
   }
 }

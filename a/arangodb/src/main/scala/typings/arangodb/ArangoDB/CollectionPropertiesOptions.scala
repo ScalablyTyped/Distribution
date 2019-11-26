@@ -23,7 +23,7 @@ object CollectionPropertiesOptions {
     if (indexBuckets != null) __obj.updateDynamic("indexBuckets")(indexBuckets.asInstanceOf[js.Any])
     if (journalSize != null) __obj.updateDynamic("journalSize")(journalSize.asInstanceOf[js.Any])
     if (replicationFactor != null) __obj.updateDynamic("replicationFactor")(replicationFactor.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForSync)) __obj.updateDynamic("waitForSync")(waitForSync)
+    if (!js.isUndefined(waitForSync)) __obj.updateDynamic("waitForSync")(waitForSync.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionPropertiesOptions]
   }
 }

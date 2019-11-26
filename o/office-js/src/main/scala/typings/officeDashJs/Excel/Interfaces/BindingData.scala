@@ -33,7 +33,7 @@ object BindingData {
     `type`: BindingType | typings.officeDashJs.officeDashJsStrings.Range | typings.officeDashJs.officeDashJsStrings.Table | Text = null
   ): BindingData = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindingData]
   }

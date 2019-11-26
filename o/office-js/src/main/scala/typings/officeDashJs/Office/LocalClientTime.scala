@@ -62,7 +62,7 @@ object LocalClientTime {
     timezoneOffset: Double,
     year: Double
   ): LocalClientTime = {
-    val __obj = js.Dynamic.literal(date = date, hours = hours, milliseconds = milliseconds, minutes = minutes, month = month, seconds = seconds, timezoneOffset = timezoneOffset, year = year)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], hours = hours.asInstanceOf[js.Any], milliseconds = milliseconds.asInstanceOf[js.Any], minutes = minutes.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any], timezoneOffset = timezoneOffset.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LocalClientTime]
   }

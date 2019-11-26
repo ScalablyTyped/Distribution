@@ -22,11 +22,11 @@ object SafeJwtStorageOptions {
     ttl: Int | Double = null,
     verify: js.UndefOr[Boolean] = js.undefined
   ): SafeJwtStorageOptions = {
-    val __obj = js.Dynamic.literal(secret = secret)
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
     if (maxExp != null) __obj.updateDynamic("maxExp")(maxExp.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
-    if (!js.isUndefined(verify)) __obj.updateDynamic("verify")(verify)
+    if (!js.isUndefined(verify)) __obj.updateDynamic("verify")(verify.asInstanceOf[js.Any])
     __obj.asInstanceOf[SafeJwtStorageOptions]
   }
 }

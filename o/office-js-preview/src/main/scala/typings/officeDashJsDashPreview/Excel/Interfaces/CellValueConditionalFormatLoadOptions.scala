@@ -40,9 +40,9 @@ object CellValueConditionalFormatLoadOptions {
     rule: js.UndefOr[Boolean] = js.undefined
   ): CellValueConditionalFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (!js.isUndefined(rule)) __obj.updateDynamic("rule")(rule)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(rule)) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellValueConditionalFormatLoadOptions]
   }
 }

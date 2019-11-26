@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__ui-components-extension"
-version := "1.2.1-dda8b6"
+version := "1.2.1-3011fe"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.2.1-bcb2e5",
   "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.5.0-be49b7",
   "org.scalablytyped" %%% "jupyterlab__services" % "4.2.0-a1eab4",
-  "org.scalablytyped" %%% "jupyterlab__ui-components" % "1.2.1-e74f82",
+  "org.scalablytyped" %%% "jupyterlab__ui-components" % "1.2.1-048d22",
   "org.scalablytyped" %%% "phosphor__algorithm" % "1.2.0-cad8ac",
   "org.scalablytyped" %%% "phosphor__application" % "1.7.3-8f1d21",
   "org.scalablytyped" %%% "phosphor__commands" % "1.7.2-86b809",

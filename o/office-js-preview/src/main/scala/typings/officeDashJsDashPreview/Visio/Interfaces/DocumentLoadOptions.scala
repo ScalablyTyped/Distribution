@@ -37,9 +37,9 @@ object DocumentLoadOptions {
     view: DocumentViewLoadOptions = null
   ): DocumentLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (application != null) __obj.updateDynamic("application")(application)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentLoadOptions]
   }
 }

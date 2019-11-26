@@ -22,8 +22,8 @@ object RemoveHandlerOptions {
   @scala.inline
   def apply(asyncContext: js.Any = null, handler: String = null): RemoveHandlerOptions = {
     val __obj = js.Dynamic.literal()
-    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext)
-    if (handler != null) __obj.updateDynamic("handler")(handler)
+    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext.asInstanceOf[js.Any])
+    if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveHandlerOptions]
   }
 }

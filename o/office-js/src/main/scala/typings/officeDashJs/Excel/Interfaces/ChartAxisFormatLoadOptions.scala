@@ -40,9 +40,9 @@ object ChartAxisFormatLoadOptions {
     line: ChartLineFormatLoadOptions = null
   ): ChartAxisFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (line != null) __obj.updateDynamic("line")(line)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAxisFormatLoadOptions]
   }
 }

@@ -50,8 +50,8 @@ object ConditionalColorScaleCriterion {
   ): ConditionalColorScaleCriterion = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color)
-    if (formula != null) __obj.updateDynamic("formula")(formula)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalColorScaleCriterion]
   }
 }

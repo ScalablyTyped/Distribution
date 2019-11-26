@@ -40,10 +40,10 @@ object ShapeDataItemData {
   @scala.inline
   def apply(format: String = null, formattedValue: String = null, label: String = null, value: String = null): ShapeDataItemData = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (formattedValue != null) __obj.updateDynamic("formattedValue")(formattedValue)
-    if (label != null) __obj.updateDynamic("label")(label)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (formattedValue != null) __obj.updateDynamic("formattedValue")(formattedValue.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeDataItemData]
   }
 }

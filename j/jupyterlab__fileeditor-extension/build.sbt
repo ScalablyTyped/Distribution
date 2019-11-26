@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__fileeditor-extension"
-version := "1.2.2-bc7ef3"
+version := "1.2.2-ccbaba"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.2.0-e7a73f",
   "org.scalablytyped" %%% "jupyterlab__docmanager" % "1.2.1-97781b",
   "org.scalablytyped" %%% "jupyterlab__docregistry" % "1.2.1-16d896",
-  "org.scalablytyped" %%% "jupyterlab__filebrowser" % "1.2.1-37ceca",
+  "org.scalablytyped" %%% "jupyterlab__filebrowser" % "1.2.1-d54760",
   "org.scalablytyped" %%% "jupyterlab__fileeditor" % "1.2.1-500c10",
   "org.scalablytyped" %%% "jupyterlab__launcher" % "1.2.1-1cbe14",
   "org.scalablytyped" %%% "jupyterlab__mainmenu" % "1.2.1-f5de9b",
@@ -24,7 +24,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.2.1-bcb2e5",
   "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.5.0-be49b7",
   "org.scalablytyped" %%% "jupyterlab__services" % "4.2.0-a1eab4",
-  "org.scalablytyped" %%% "jupyterlab__ui-components" % "1.2.1-e74f82",
+  "org.scalablytyped" %%% "jupyterlab__ui-components" % "1.2.1-048d22",
   "org.scalablytyped" %%% "phosphor__algorithm" % "1.2.0-cad8ac",
   "org.scalablytyped" %%% "phosphor__application" % "1.7.3-8f1d21",
   "org.scalablytyped" %%% "phosphor__commands" % "1.7.2-86b809",

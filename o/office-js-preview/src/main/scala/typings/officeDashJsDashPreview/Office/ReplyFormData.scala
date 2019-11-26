@@ -31,9 +31,9 @@ object ReplyFormData {
     htmlBody: String = null
   ): ReplyFormData = {
     val __obj = js.Dynamic.literal()
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))
-    if (htmlBody != null) __obj.updateDynamic("htmlBody")(htmlBody)
+    if (htmlBody != null) __obj.updateDynamic("htmlBody")(htmlBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplyFormData]
   }
 }

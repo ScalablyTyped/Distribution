@@ -26,7 +26,7 @@ import typings.officeDashJs.officeDashJsStrings.Right
 import typings.officeDashJs.officeDashJsStrings.Solid
 import typings.officeDashJs.officeDashJsStrings.Square
 import typings.officeDashJs.officeDashJsStrings.Start
-import typings.officeDashJs.officeDashJsStrings.Unknown
+import typings.officeDashJs.officeDashJsStrings.Unknown_
 import typings.officeDashJs.officeDashJsStrings.UpperLetter
 import typings.officeDashJs.officeDashJsStrings.UpperRoman
 import scala.scalajs.js
@@ -170,7 +170,7 @@ class List () extends ClientObject {
   @JSName("setLevelAlignment")
   def setLevelAlignment_Right(level: Double, alignment: Right): Unit = js.native
   @JSName("setLevelAlignment")
-  def setLevelAlignment_Unknown(level: Double, alignment: Unknown): Unit = js.native
+  def setLevelAlignment_Unknown(level: Double, alignment: Unknown_): Unit = js.native
   /**
     *
     * Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required.

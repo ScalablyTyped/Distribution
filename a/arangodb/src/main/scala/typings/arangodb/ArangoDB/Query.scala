@@ -14,9 +14,9 @@ trait Query extends js.Object {
 object Query {
   @scala.inline
   def apply(query: String, bindVars: js.Object = null, options: QueryOptions = null): Query = {
-    val __obj = js.Dynamic.literal(query = query)
-    if (bindVars != null) __obj.updateDynamic("bindVars")(bindVars)
-    if (options != null) __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
+    if (bindVars != null) __obj.updateDynamic("bindVars")(bindVars.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
 }

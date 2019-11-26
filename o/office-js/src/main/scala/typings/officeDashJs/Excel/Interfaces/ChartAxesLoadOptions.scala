@@ -48,10 +48,10 @@ object ChartAxesLoadOptions {
     valueAxis: ChartAxisLoadOptions = null
   ): ChartAxesLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (categoryAxis != null) __obj.updateDynamic("categoryAxis")(categoryAxis)
-    if (seriesAxis != null) __obj.updateDynamic("seriesAxis")(seriesAxis)
-    if (valueAxis != null) __obj.updateDynamic("valueAxis")(valueAxis)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (categoryAxis != null) __obj.updateDynamic("categoryAxis")(categoryAxis.asInstanceOf[js.Any])
+    if (seriesAxis != null) __obj.updateDynamic("seriesAxis")(seriesAxis.asInstanceOf[js.Any])
+    if (valueAxis != null) __obj.updateDynamic("valueAxis")(valueAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAxesLoadOptions]
   }
 }

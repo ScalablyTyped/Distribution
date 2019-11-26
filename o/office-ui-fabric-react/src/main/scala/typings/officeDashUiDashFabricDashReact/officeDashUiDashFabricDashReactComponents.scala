@@ -23,7 +23,7 @@ object officeDashUiDashFabricDashReactComponents extends officeDashUiDashFabricD
   @scala.inline
   def BaseButton: ComponentType[BaseButtonProps] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libButtonMod.BaseButton].asInstanceOf[typings.react.reactMod.ComponentType[BaseButtonProps]]
   @scala.inline
-  def BaseComponent[TState]: ComponentType[BaseComponentProps[_]] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libUtilitiesMod.BaseComponent[typings.atUifabricUtilities.libBaseComponentDotTypesMod.IBaseProps[_], TState]].asInstanceOf[typings.react.reactMod.ComponentType[BaseComponentProps[_]]]
+  def BaseComponent[TState]: ComponentType[BaseComponentProps[js.Any]] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libUtilitiesMod.BaseComponent[typings.atUifabricUtilities.libBaseComponentDotTypesMod.IBaseProps[_], TState]].asInstanceOf[typings.react.reactMod.ComponentType[BaseComponentProps[js.Any]]]
   @scala.inline
   def BaseExtendedPeoplePicker: ComponentType[BaseExtendedPeoplePickerProps] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libExtendedPickerMod.BaseExtendedPeoplePicker].asInstanceOf[typings.react.reactMod.ComponentType[BaseExtendedPeoplePickerProps]]
   @scala.inline

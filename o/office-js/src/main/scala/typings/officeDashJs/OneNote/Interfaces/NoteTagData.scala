@@ -18,7 +18,7 @@ import typings.officeDashJs.officeDashJsStrings.TaskRemoved
 import typings.officeDashJs.officeDashJsStrings.ToDo
 import typings.officeDashJs.officeDashJsStrings.ToDoPriority1
 import typings.officeDashJs.officeDashJsStrings.ToDoPriority2
-import typings.officeDashJs.officeDashJsStrings.Unknown
+import typings.officeDashJs.officeDashJsStrings.Unknown_
 import typings.officeDashJs.officeDashJsStrings.Website
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -40,7 +40,7 @@ trait NoteTagData extends js.Object {
     * [Api set: OneNoteApi 1.1]
     */
   var status: js.UndefOr[
-    NoteTagStatus | Unknown | Normal | Completed | Disabled | OutlookTask | TaskNotSyncedYet | TaskRemoved
+    NoteTagStatus | Unknown_ | Normal | Completed | Disabled | OutlookTask | TaskNotSyncedYet | TaskRemoved
   ] = js.undefined
   /**
     *
@@ -49,7 +49,7 @@ trait NoteTagData extends js.Object {
     * [Api set: OneNoteApi 1.1]
     */
   var `type`: js.UndefOr[
-    NoteTagType | Unknown | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2
+    NoteTagType | Unknown_ | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2
   ] = js.undefined
 }
 
@@ -57,11 +57,11 @@ object NoteTagData {
   @scala.inline
   def apply(
     id: String = null,
-    status: NoteTagStatus | Unknown | Normal | Completed | Disabled | OutlookTask | TaskNotSyncedYet | TaskRemoved = null,
-    `type`: NoteTagType | Unknown | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2 = null
+    status: NoteTagStatus | Unknown_ | Normal | Completed | Disabled | OutlookTask | TaskNotSyncedYet | TaskRemoved = null,
+    `type`: NoteTagType | Unknown_ | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2 = null
   ): NoteTagData = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoteTagData]

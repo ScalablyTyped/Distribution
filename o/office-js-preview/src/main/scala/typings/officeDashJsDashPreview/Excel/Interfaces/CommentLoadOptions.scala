@@ -91,15 +91,15 @@ object CommentLoadOptions {
     richContent: js.UndefOr[Boolean] = js.undefined
   ): CommentLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(authorEmail)) __obj.updateDynamic("authorEmail")(authorEmail)
-    if (!js.isUndefined(authorName)) __obj.updateDynamic("authorName")(authorName)
-    if (!js.isUndefined(content)) __obj.updateDynamic("content")(content)
-    if (!js.isUndefined(creationDate)) __obj.updateDynamic("creationDate")(creationDate)
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(mentions)) __obj.updateDynamic("mentions")(mentions)
-    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved)
-    if (!js.isUndefined(richContent)) __obj.updateDynamic("richContent")(richContent)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(authorEmail)) __obj.updateDynamic("authorEmail")(authorEmail.asInstanceOf[js.Any])
+    if (!js.isUndefined(authorName)) __obj.updateDynamic("authorName")(authorName.asInstanceOf[js.Any])
+    if (!js.isUndefined(content)) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(creationDate)) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(mentions)) __obj.updateDynamic("mentions")(mentions.asInstanceOf[js.Any])
+    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved.asInstanceOf[js.Any])
+    if (!js.isUndefined(richContent)) __obj.updateDynamic("richContent")(richContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentLoadOptions]
   }
 }

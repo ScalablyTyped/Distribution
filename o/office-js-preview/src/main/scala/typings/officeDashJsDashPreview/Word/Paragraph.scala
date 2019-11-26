@@ -27,7 +27,7 @@ import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.SectionNex
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.SectionOdd
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Select
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Start
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown_
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Whole
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -48,7 +48,7 @@ class Paragraph () extends ClientObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var alignment: Alignment | Mixed | Unknown | Left | Centered | Right | Justified = js.native
+  var alignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = js.native
   /**
     *
     * Gets the collection of content control objects in the paragraph. Read-only.

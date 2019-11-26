@@ -96,16 +96,16 @@ object ChartLegendLoadOptions {
     width: js.UndefOr[Boolean] = js.undefined
   ): ChartLegendLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
-    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left)
-    if (!js.isUndefined(overlay)) __obj.updateDynamic("overlay")(overlay)
-    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position)
-    if (!js.isUndefined(showShadow)) __obj.updateDynamic("showShadow")(showShadow)
-    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlay)) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(showShadow)) __obj.updateDynamic("showShadow")(showShadow.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartLegendLoadOptions]
   }
 }

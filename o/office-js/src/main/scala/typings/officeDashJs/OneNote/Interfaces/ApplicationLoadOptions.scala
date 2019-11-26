@@ -26,8 +26,8 @@ object ApplicationLoadOptions {
   @scala.inline
   def apply($all: js.UndefOr[Boolean] = js.undefined, notebooks: NotebookCollectionLoadOptions = null): ApplicationLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (notebooks != null) __obj.updateDynamic("notebooks")(notebooks)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (notebooks != null) __obj.updateDynamic("notebooks")(notebooks.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationLoadOptions]
   }
 }

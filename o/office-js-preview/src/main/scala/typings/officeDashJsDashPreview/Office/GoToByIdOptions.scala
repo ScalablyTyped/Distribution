@@ -36,7 +36,7 @@ object GoToByIdOptions {
   @scala.inline
   def apply(asyncContext: js.Any = null, selectionMode: SelectionMode | String = null): GoToByIdOptions = {
     val __obj = js.Dynamic.literal()
-    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext)
+    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext.asInstanceOf[js.Any])
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoToByIdOptions]
   }

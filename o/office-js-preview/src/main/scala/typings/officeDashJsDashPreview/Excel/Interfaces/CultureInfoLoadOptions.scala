@@ -43,9 +43,9 @@ object CultureInfoLoadOptions {
     numberFormatInfo: NumberFormatInfoLoadOptions = null
   ): CultureInfoLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
-    if (numberFormatInfo != null) __obj.updateDynamic("numberFormatInfo")(numberFormatInfo)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (numberFormatInfo != null) __obj.updateDynamic("numberFormatInfo")(numberFormatInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[CultureInfoLoadOptions]
   }
 }

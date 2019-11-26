@@ -38,8 +38,8 @@ trait ShapeDeactivatedEventArgs extends js.Object {
 object ShapeDeactivatedEventArgs {
   @scala.inline
   def apply(shapeId: String, `type`: ShapeDeactivated, worksheetId: String): ShapeDeactivatedEventArgs = {
-    val __obj = js.Dynamic.literal(shapeId = shapeId, worksheetId = worksheetId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(shapeId = shapeId.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeDeactivatedEventArgs]
   }
 }

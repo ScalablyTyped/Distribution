@@ -15,7 +15,7 @@ trait Anon_Failures extends js.Object {
 object Anon_Failures {
   @scala.inline
   def apply(failures: Double, passes: Double, pending: Double, suites: Double, tests: Double): Anon_Failures = {
-    val __obj = js.Dynamic.literal(failures = failures, passes = passes, pending = pending, suites = suites, tests = tests)
+    val __obj = js.Dynamic.literal(failures = failures.asInstanceOf[js.Any], passes = passes.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], suites = suites.asInstanceOf[js.Any], tests = tests.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Failures]
   }

@@ -27,7 +27,7 @@ import typings.officeDashJs.officeDashJsStrings.TaskRemoved
 import typings.officeDashJs.officeDashJsStrings.ToDo
 import typings.officeDashJs.officeDashJsStrings.ToDoPriority1
 import typings.officeDashJs.officeDashJsStrings.ToDoPriority2
-import typings.officeDashJs.officeDashJsStrings.Unknown
+import typings.officeDashJs.officeDashJsStrings.Unknown_
 import typings.officeDashJs.officeDashJsStrings.Website
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -130,27 +130,27 @@ class Paragraph () extends ClientObject {
     */
   val `type`: ParagraphType | typings.officeDashJs.officeDashJsStrings.RichText | typings.officeDashJs.officeDashJsStrings.Image | typings.officeDashJs.officeDashJsStrings.Table | Ink | Other = js.native
   def addNoteTag(
-    `type`: Unknown | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2,
+    `type`: Unknown_ | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2,
     status: Completed
   ): NoteTag = js.native
   def addNoteTag(
-    `type`: Unknown | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2,
+    `type`: Unknown_ | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2,
     status: Disabled
   ): NoteTag = js.native
   def addNoteTag(
-    `type`: Unknown | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2,
+    `type`: Unknown_ | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2,
     status: Normal
   ): NoteTag = js.native
   def addNoteTag(
-    `type`: Unknown | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2,
+    `type`: Unknown_ | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2,
     status: OutlookTask
   ): NoteTag = js.native
   def addNoteTag(
-    `type`: Unknown | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2,
+    `type`: Unknown_ | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2,
     status: TaskNotSyncedYet
   ): NoteTag = js.native
   def addNoteTag(
-    `type`: Unknown | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2,
+    `type`: Unknown_ | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2,
     status: TaskRemoved
   ): NoteTag = js.native
   /**
@@ -163,8 +163,8 @@ class Paragraph () extends ClientObject {
     * @param status The status of the NoteTag.
     */
   def addNoteTag(
-    `type`: Unknown | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2,
-    status: Unknown
+    `type`: Unknown_ | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2,
+    status: Unknown_
   ): NoteTag = js.native
   /**
     *

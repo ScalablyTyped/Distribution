@@ -45,10 +45,10 @@ object ConditionalRangeFormatUpdateData {
     numberFormat: js.Any = null
   ): ConditionalRangeFormatUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (borders != null) __obj.updateDynamic("borders")(borders)
-    if (fill != null) __obj.updateDynamic("fill")(fill)
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat)
+    if (borders != null) __obj.updateDynamic("borders")(borders.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalRangeFormatUpdateData]
   }
 }

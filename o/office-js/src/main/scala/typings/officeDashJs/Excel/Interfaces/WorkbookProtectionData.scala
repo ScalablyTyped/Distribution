@@ -19,7 +19,7 @@ object WorkbookProtectionData {
   @scala.inline
   def apply(`protected`: js.UndefOr[Boolean] = js.undefined): WorkbookProtectionData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`)
+    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookProtectionData]
   }
 }

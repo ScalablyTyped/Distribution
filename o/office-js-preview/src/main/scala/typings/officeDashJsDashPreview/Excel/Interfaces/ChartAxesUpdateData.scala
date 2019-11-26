@@ -37,9 +37,9 @@ object ChartAxesUpdateData {
     valueAxis: ChartAxisUpdateData = null
   ): ChartAxesUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (categoryAxis != null) __obj.updateDynamic("categoryAxis")(categoryAxis)
-    if (seriesAxis != null) __obj.updateDynamic("seriesAxis")(seriesAxis)
-    if (valueAxis != null) __obj.updateDynamic("valueAxis")(valueAxis)
+    if (categoryAxis != null) __obj.updateDynamic("categoryAxis")(categoryAxis.asInstanceOf[js.Any])
+    if (seriesAxis != null) __obj.updateDynamic("seriesAxis")(seriesAxis.asInstanceOf[js.Any])
+    if (valueAxis != null) __obj.updateDynamic("valueAxis")(valueAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAxesUpdateData]
   }
 }

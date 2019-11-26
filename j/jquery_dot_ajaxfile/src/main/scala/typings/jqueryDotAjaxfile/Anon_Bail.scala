@@ -23,11 +23,11 @@ object Anon_Bail {
     ui: String = null
   ): Anon_Bail = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bail)) __obj.updateDynamic("bail")(bail)
-    if (grep != null) __obj.updateDynamic("grep")(grep)
-    if (reporter != null) __obj.updateDynamic("reporter")(reporter)
+    if (!js.isUndefined(bail)) __obj.updateDynamic("bail")(bail.asInstanceOf[js.Any])
+    if (grep != null) __obj.updateDynamic("grep")(grep.asInstanceOf[js.Any])
+    if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (ui != null) __obj.updateDynamic("ui")(ui)
+    if (ui != null) __obj.updateDynamic("ui")(ui.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bail]
   }
 }

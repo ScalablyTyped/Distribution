@@ -21,8 +21,8 @@ object FourRedToBlackSet {
     redCircle: Icon,
     NumberDictionary: /* index */ NumberDictionary[Icon] = null
   ): FourRedToBlackSet = {
-    val __obj = js.Dynamic.literal(blackCircle = blackCircle, grayCircle = grayCircle, pinkCircle = pinkCircle, redCircle = redCircle)
-    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    val __obj = js.Dynamic.literal(blackCircle = blackCircle.asInstanceOf[js.Any], grayCircle = grayCircle.asInstanceOf[js.Any], pinkCircle = pinkCircle.asInstanceOf[js.Any], redCircle = redCircle.asInstanceOf[js.Any])
+    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[FourRedToBlackSet]
   }
 }

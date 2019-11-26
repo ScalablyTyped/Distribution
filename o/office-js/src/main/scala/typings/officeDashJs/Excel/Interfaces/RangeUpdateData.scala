@@ -121,18 +121,18 @@ object RangeUpdateData {
     values: js.Array[js.Array[_]] = null
   ): RangeUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(columnHidden)) __obj.updateDynamic("columnHidden")(columnHidden)
-    if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (formulas != null) __obj.updateDynamic("formulas")(formulas)
-    if (formulasLocal != null) __obj.updateDynamic("formulasLocal")(formulasLocal)
-    if (formulasR1C1 != null) __obj.updateDynamic("formulasR1C1")(formulasR1C1)
-    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
-    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat)
-    if (numberFormatLocal != null) __obj.updateDynamic("numberFormatLocal")(numberFormatLocal)
-    if (!js.isUndefined(rowHidden)) __obj.updateDynamic("rowHidden")(rowHidden)
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (!js.isUndefined(columnHidden)) __obj.updateDynamic("columnHidden")(columnHidden.asInstanceOf[js.Any])
+    if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (formulas != null) __obj.updateDynamic("formulas")(formulas.asInstanceOf[js.Any])
+    if (formulasLocal != null) __obj.updateDynamic("formulasLocal")(formulasLocal.asInstanceOf[js.Any])
+    if (formulasR1C1 != null) __obj.updateDynamic("formulasR1C1")(formulasR1C1.asInstanceOf[js.Any])
+    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
+    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
+    if (numberFormatLocal != null) __obj.updateDynamic("numberFormatLocal")(numberFormatLocal.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHidden)) __obj.updateDynamic("rowHidden")(rowHidden.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeUpdateData]
   }
 }

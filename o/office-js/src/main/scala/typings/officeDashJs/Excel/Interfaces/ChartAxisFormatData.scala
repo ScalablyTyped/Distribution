@@ -26,8 +26,8 @@ object ChartAxisFormatData {
   @scala.inline
   def apply(font: ChartFontData = null, line: ChartLineFormatData = null): ChartAxisFormatData = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (line != null) __obj.updateDynamic("line")(line)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAxisFormatData]
   }
 }

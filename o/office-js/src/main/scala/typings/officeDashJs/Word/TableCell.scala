@@ -25,7 +25,7 @@ import typings.officeDashJs.officeDashJsStrings.Replace
 import typings.officeDashJs.officeDashJsStrings.Right
 import typings.officeDashJs.officeDashJsStrings.Start
 import typings.officeDashJs.officeDashJsStrings.Top
-import typings.officeDashJs.officeDashJsStrings.Unknown
+import typings.officeDashJs.officeDashJsStrings.Unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -69,7 +69,7 @@ class TableCell () extends ClientObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var horizontalAlignment: Alignment | Mixed | Unknown | Left | Centered | Right | Justified = js.native
+  var horizontalAlignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = js.native
   /**
     *
     * Gets the parent row of the cell. Read-only.

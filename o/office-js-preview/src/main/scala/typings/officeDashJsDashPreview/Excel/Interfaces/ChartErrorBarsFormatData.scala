@@ -19,7 +19,7 @@ object ChartErrorBarsFormatData {
   @scala.inline
   def apply(line: ChartLineFormatData = null): ChartErrorBarsFormatData = {
     val __obj = js.Dynamic.literal()
-    if (line != null) __obj.updateDynamic("line")(line)
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartErrorBarsFormatData]
   }
 }

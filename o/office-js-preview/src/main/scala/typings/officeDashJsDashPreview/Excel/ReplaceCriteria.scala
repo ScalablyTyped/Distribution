@@ -31,8 +31,8 @@ object ReplaceCriteria {
   @scala.inline
   def apply(completeMatch: js.UndefOr[Boolean] = js.undefined, matchCase: js.UndefOr[Boolean] = js.undefined): ReplaceCriteria = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(completeMatch)) __obj.updateDynamic("completeMatch")(completeMatch)
-    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase)
+    if (!js.isUndefined(completeMatch)) __obj.updateDynamic("completeMatch")(completeMatch.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceCriteria]
   }
 }

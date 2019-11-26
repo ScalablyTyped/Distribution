@@ -37,7 +37,7 @@ object IterativeCalculationUpdateData {
     maxIteration: Int | Double = null
   ): IterativeCalculationUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (maxChange != null) __obj.updateDynamic("maxChange")(maxChange.asInstanceOf[js.Any])
     if (maxIteration != null) __obj.updateDynamic("maxIteration")(maxIteration.asInstanceOf[js.Any])
     __obj.asInstanceOf[IterativeCalculationUpdateData]

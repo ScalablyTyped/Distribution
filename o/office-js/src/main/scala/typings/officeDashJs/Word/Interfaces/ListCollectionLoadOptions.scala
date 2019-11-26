@@ -45,10 +45,10 @@ object ListCollectionLoadOptions {
     levelTypes: js.UndefOr[Boolean] = js.undefined
   ): ListCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(levelExistences)) __obj.updateDynamic("levelExistences")(levelExistences)
-    if (!js.isUndefined(levelTypes)) __obj.updateDynamic("levelTypes")(levelTypes)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(levelExistences)) __obj.updateDynamic("levelExistences")(levelExistences.asInstanceOf[js.Any])
+    if (!js.isUndefined(levelTypes)) __obj.updateDynamic("levelTypes")(levelTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCollectionLoadOptions]
   }
 }

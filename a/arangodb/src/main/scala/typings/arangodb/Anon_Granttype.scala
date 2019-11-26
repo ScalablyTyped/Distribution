@@ -12,7 +12,7 @@ object Anon_Granttype {
   @scala.inline
   def apply(grant_type: String = null): Anon_Granttype = {
     val __obj = js.Dynamic.literal()
-    if (grant_type != null) __obj.updateDynamic("grant_type")(grant_type)
+    if (grant_type != null) __obj.updateDynamic("grant_type")(grant_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Granttype]
   }
 }

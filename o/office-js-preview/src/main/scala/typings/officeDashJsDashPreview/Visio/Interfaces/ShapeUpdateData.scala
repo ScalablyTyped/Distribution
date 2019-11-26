@@ -26,8 +26,8 @@ object ShapeUpdateData {
   @scala.inline
   def apply(select: js.UndefOr[Boolean] = js.undefined, view: ShapeViewUpdateData = null): ShapeUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeUpdateData]
   }
 }

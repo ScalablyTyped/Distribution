@@ -26,8 +26,8 @@ object DocumentUpdateData {
   @scala.inline
   def apply(application: ApplicationUpdateData = null, view: DocumentViewUpdateData = null): DocumentUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (application != null) __obj.updateDynamic("application")(application)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentUpdateData]
   }
 }

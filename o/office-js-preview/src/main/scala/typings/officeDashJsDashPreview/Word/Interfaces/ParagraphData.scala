@@ -6,7 +6,7 @@ import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Justified
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Left
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Mixed
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Right
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait ParagraphData extends js.Object {
     *
     * [Api set: WordApi 1.1]
     */
-  var alignment: js.UndefOr[Alignment | Mixed | Unknown | Left | Centered | Right | Justified] = js.undefined
+  var alignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
   /**
     *
     * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
@@ -160,7 +160,7 @@ trait ParagraphData extends js.Object {
 object ParagraphData {
   @scala.inline
   def apply(
-    alignment: Alignment | Mixed | Unknown | Left | Centered | Right | Justified = null,
+    alignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = null,
     firstLineIndent: Int | Double = null,
     font: FontData = null,
     inlinePictures: js.Array[InlinePictureData] = null,
@@ -184,24 +184,24 @@ object ParagraphData {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
     if (firstLineIndent != null) __obj.updateDynamic("firstLineIndent")(firstLineIndent.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (inlinePictures != null) __obj.updateDynamic("inlinePictures")(inlinePictures)
-    if (!js.isUndefined(isLastParagraph)) __obj.updateDynamic("isLastParagraph")(isLastParagraph)
-    if (!js.isUndefined(isListItem)) __obj.updateDynamic("isListItem")(isListItem)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (inlinePictures != null) __obj.updateDynamic("inlinePictures")(inlinePictures.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLastParagraph)) __obj.updateDynamic("isLastParagraph")(isLastParagraph.asInstanceOf[js.Any])
+    if (!js.isUndefined(isListItem)) __obj.updateDynamic("isListItem")(isListItem.asInstanceOf[js.Any])
     if (leftIndent != null) __obj.updateDynamic("leftIndent")(leftIndent.asInstanceOf[js.Any])
     if (lineSpacing != null) __obj.updateDynamic("lineSpacing")(lineSpacing.asInstanceOf[js.Any])
     if (lineUnitAfter != null) __obj.updateDynamic("lineUnitAfter")(lineUnitAfter.asInstanceOf[js.Any])
     if (lineUnitBefore != null) __obj.updateDynamic("lineUnitBefore")(lineUnitBefore.asInstanceOf[js.Any])
-    if (listItem != null) __obj.updateDynamic("listItem")(listItem)
-    if (listItemOrNullObject != null) __obj.updateDynamic("listItemOrNullObject")(listItemOrNullObject)
+    if (listItem != null) __obj.updateDynamic("listItem")(listItem.asInstanceOf[js.Any])
+    if (listItemOrNullObject != null) __obj.updateDynamic("listItemOrNullObject")(listItemOrNullObject.asInstanceOf[js.Any])
     if (outlineLevel != null) __obj.updateDynamic("outlineLevel")(outlineLevel.asInstanceOf[js.Any])
     if (rightIndent != null) __obj.updateDynamic("rightIndent")(rightIndent.asInstanceOf[js.Any])
     if (spaceAfter != null) __obj.updateDynamic("spaceAfter")(spaceAfter.asInstanceOf[js.Any])
     if (spaceBefore != null) __obj.updateDynamic("spaceBefore")(spaceBefore.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
-    if (styleBuiltIn != null) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (styleBuiltIn != null) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn.asInstanceOf[js.Any])
     if (tableNestingLevel != null) __obj.updateDynamic("tableNestingLevel")(tableNestingLevel.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParagraphData]
   }
 }

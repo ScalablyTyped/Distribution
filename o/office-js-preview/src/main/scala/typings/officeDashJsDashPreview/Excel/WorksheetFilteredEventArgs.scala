@@ -34,8 +34,8 @@ trait WorksheetFilteredEventArgs extends js.Object {
 object WorksheetFilteredEventArgs {
   @scala.inline
   def apply(`type`: WorksheetFiltered, worksheetId: String): WorksheetFilteredEventArgs = {
-    val __obj = js.Dynamic.literal(worksheetId = worksheetId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(worksheetId = worksheetId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorksheetFilteredEventArgs]
   }
 }

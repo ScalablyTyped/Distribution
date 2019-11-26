@@ -53,11 +53,11 @@ object InkWordCollectionLoadOptions {
     wordAlternates: js.UndefOr[Boolean] = js.undefined
   ): InkWordCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(languageId)) __obj.updateDynamic("languageId")(languageId)
-    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph)
-    if (!js.isUndefined(wordAlternates)) __obj.updateDynamic("wordAlternates")(wordAlternates)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(languageId)) __obj.updateDynamic("languageId")(languageId.asInstanceOf[js.Any])
+    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph.asInstanceOf[js.Any])
+    if (!js.isUndefined(wordAlternates)) __obj.updateDynamic("wordAlternates")(wordAlternates.asInstanceOf[js.Any])
     __obj.asInstanceOf[InkWordCollectionLoadOptions]
   }
 }

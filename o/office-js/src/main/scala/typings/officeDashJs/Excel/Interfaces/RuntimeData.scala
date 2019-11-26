@@ -19,7 +19,7 @@ object RuntimeData {
   @scala.inline
   def apply(enableEvents: js.UndefOr[Boolean] = js.undefined): RuntimeData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableEvents)) __obj.updateDynamic("enableEvents")(enableEvents)
+    if (!js.isUndefined(enableEvents)) __obj.updateDynamic("enableEvents")(enableEvents.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuntimeData]
   }
 }

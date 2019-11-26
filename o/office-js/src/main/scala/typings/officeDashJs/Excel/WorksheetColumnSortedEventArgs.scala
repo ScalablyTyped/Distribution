@@ -52,8 +52,8 @@ object WorksheetColumnSortedEventArgs {
     `type`: WorksheetColumnSorted,
     worksheetId: String
   ): WorksheetColumnSortedEventArgs = {
-    val __obj = js.Dynamic.literal(address = address, source = source.asInstanceOf[js.Any], worksheetId = worksheetId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorksheetColumnSortedEventArgs]
   }
 }

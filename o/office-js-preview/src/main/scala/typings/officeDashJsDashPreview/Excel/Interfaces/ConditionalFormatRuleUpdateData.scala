@@ -33,9 +33,9 @@ object ConditionalFormatRuleUpdateData {
   @scala.inline
   def apply(formula: String = null, formulaLocal: String = null, formulaR1C1: String = null): ConditionalFormatRuleUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (formula != null) __obj.updateDynamic("formula")(formula)
-    if (formulaLocal != null) __obj.updateDynamic("formulaLocal")(formulaLocal)
-    if (formulaR1C1 != null) __obj.updateDynamic("formulaR1C1")(formulaR1C1)
+    if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
+    if (formulaLocal != null) __obj.updateDynamic("formulaLocal")(formulaLocal.asInstanceOf[js.Any])
+    if (formulaR1C1 != null) __obj.updateDynamic("formulaR1C1")(formulaR1C1.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalFormatRuleUpdateData]
   }
 }

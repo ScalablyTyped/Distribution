@@ -30,7 +30,7 @@ trait DataRefreshCompleteEventArgs extends js.Object {
 object DataRefreshCompleteEventArgs {
   @scala.inline
   def apply(document: Document, success: Boolean): DataRefreshCompleteEventArgs = {
-    val __obj = js.Dynamic.literal(document = document, success = success)
+    val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DataRefreshCompleteEventArgs]
   }

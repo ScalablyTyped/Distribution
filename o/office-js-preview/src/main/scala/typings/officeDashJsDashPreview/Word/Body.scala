@@ -25,7 +25,7 @@ import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.SectionNex
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.SectionOdd
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Select
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Start
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown_
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Whole
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -154,7 +154,7 @@ class Body () extends ClientObject {
     *
     * [Api set: WordApi 1.3]
     */
-  val `type`: BodyType | Unknown | MainDoc | typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Section | Header | Footer | typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.TableCell = js.native
+  val `type`: BodyType | Unknown_ | MainDoc | typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Section | Header | Footer | typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.TableCell = js.native
   /**
     *
     * Clears the contents of the body object. The user can perform the undo operation on the cleared content.

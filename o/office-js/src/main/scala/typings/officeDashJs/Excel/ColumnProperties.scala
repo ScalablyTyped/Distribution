@@ -47,13 +47,13 @@ object ColumnProperties {
     style: String = null
   ): ColumnProperties = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
-    if (addressLocal != null) __obj.updateDynamic("addressLocal")(addressLocal)
-    if (!js.isUndefined(columnHidden)) __obj.updateDynamic("columnHidden")(columnHidden)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (addressLocal != null) __obj.updateDynamic("addressLocal")(addressLocal.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnHidden)) __obj.updateDynamic("columnHidden")(columnHidden.asInstanceOf[js.Any])
     if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnProperties]
   }
 }

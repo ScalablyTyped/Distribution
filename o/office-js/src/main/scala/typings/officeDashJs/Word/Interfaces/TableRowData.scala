@@ -10,7 +10,7 @@ import typings.officeDashJs.officeDashJsStrings.Left
 import typings.officeDashJs.officeDashJsStrings.Mixed
 import typings.officeDashJs.officeDashJsStrings.Right
 import typings.officeDashJs.officeDashJsStrings.Top
-import typings.officeDashJs.officeDashJsStrings.Unknown
+import typings.officeDashJs.officeDashJsStrings.Unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,7 +44,7 @@ trait TableRowData extends js.Object {
     *
     * [Api set: WordApi 1.3]
     */
-  var horizontalAlignment: js.UndefOr[Alignment | Mixed | Unknown | Left | Centered | Right | Justified] = js.undefined
+  var horizontalAlignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
   /**
     *
     * Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object.
@@ -95,7 +95,7 @@ object TableRowData {
     cellCount: Int | Double = null,
     cells: js.Array[TableCellData] = null,
     font: FontData = null,
-    horizontalAlignment: Alignment | Mixed | Unknown | Left | Centered | Right | Justified = null,
+    horizontalAlignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = null,
     isHeader: js.UndefOr[Boolean] = js.undefined,
     preferredHeight: Int | Double = null,
     rowIndex: Int | Double = null,
@@ -105,14 +105,14 @@ object TableRowData {
   ): TableRowData = {
     val __obj = js.Dynamic.literal()
     if (cellCount != null) __obj.updateDynamic("cellCount")(cellCount.asInstanceOf[js.Any])
-    if (cells != null) __obj.updateDynamic("cells")(cells)
-    if (font != null) __obj.updateDynamic("font")(font)
+    if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHeader)) __obj.updateDynamic("isHeader")(isHeader)
+    if (!js.isUndefined(isHeader)) __obj.updateDynamic("isHeader")(isHeader.asInstanceOf[js.Any])
     if (preferredHeight != null) __obj.updateDynamic("preferredHeight")(preferredHeight.asInstanceOf[js.Any])
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
-    if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRowData]
   }

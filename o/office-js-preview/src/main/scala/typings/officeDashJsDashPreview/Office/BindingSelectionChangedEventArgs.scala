@@ -68,8 +68,8 @@ object BindingSelectionChangedEventArgs {
     startRow: Double,
     `type`: EventType
   ): BindingSelectionChangedEventArgs = {
-    val __obj = js.Dynamic.literal(binding = binding, columnCount = columnCount, rowCount = rowCount, startColumn = startColumn, startRow = startRow)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(binding = binding.asInstanceOf[js.Any], columnCount = columnCount.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], startColumn = startColumn.asInstanceOf[js.Any], startRow = startRow.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindingSelectionChangedEventArgs]
   }
 }

@@ -36,14 +36,14 @@ object MochaSetupOptions {
     ui: String = null
   ): MochaSetupOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bail)) __obj.updateDynamic("bail")(bail)
-    if (globals != null) __obj.updateDynamic("globals")(globals)
-    if (grep != null) __obj.updateDynamic("grep")(grep)
-    if (!js.isUndefined(ignoreLeaks)) __obj.updateDynamic("ignoreLeaks")(ignoreLeaks)
-    if (reporter != null) __obj.updateDynamic("reporter")(reporter)
+    if (!js.isUndefined(bail)) __obj.updateDynamic("bail")(bail.asInstanceOf[js.Any])
+    if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
+    if (grep != null) __obj.updateDynamic("grep")(grep.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreLeaks)) __obj.updateDynamic("ignoreLeaks")(ignoreLeaks.asInstanceOf[js.Any])
+    if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
     if (slow != null) __obj.updateDynamic("slow")(slow.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (ui != null) __obj.updateDynamic("ui")(ui)
+    if (ui != null) __obj.updateDynamic("ui")(ui.asInstanceOf[js.Any])
     __obj.asInstanceOf[MochaSetupOptions]
   }
 }

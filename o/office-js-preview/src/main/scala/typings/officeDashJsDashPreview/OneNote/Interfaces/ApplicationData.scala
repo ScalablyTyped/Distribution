@@ -19,7 +19,7 @@ object ApplicationData {
   @scala.inline
   def apply(notebooks: js.Array[NotebookData] = null): ApplicationData = {
     val __obj = js.Dynamic.literal()
-    if (notebooks != null) __obj.updateDynamic("notebooks")(notebooks)
+    if (notebooks != null) __obj.updateDynamic("notebooks")(notebooks.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationData]
   }
 }

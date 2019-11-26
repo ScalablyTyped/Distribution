@@ -315,6 +315,7 @@
 | [applicationinsights](./a/applicationinsights) | Microsoft Application Insights module for Node.js | exception monitoring, request monitoring, performance monitoring, application insights, microsoft, azure, cloud, tracing, telemetry, analytics, apm |
 | [applicationinsights-js](./a/applicationinsights-js) | Microsoft Application Insights JavaScript SDK | browser performance monitoring, script errors, application insights, microsoft, azure |
 | [aqb](./a/aqb) | ArangoDB AQL query builder. | arangodb, aql, nosql, query |
+| [arangodb](./a/arangodb) | - | - |
 | [arbiter](./a/arbiter) | A Salesforce ORM powered by jsforce | ORM, Salesforce, JSForce, Query |
 | [arcgis-js-api](./a/arcgis-js-api) | Minified, unbuilt version of the ArcGIS API for Ja | esrijs, esri, arcgis, gis |
 | [arcgis-rest-api](./a/arcgis-rest-api) | - | - |
@@ -3367,6 +3368,7 @@
 | [jquery-urlparam](./j/jquery-urlparam) | - | - |
 | [jquery-validation-unobtru](./j/jquery-validation-unobtrusive) | Add-on to jQuery Validation to enable unobtrusive  | jquery, asp.net, mvc, validation, unobtrusive |
 | [jquery_dot_address](./j/jquery_dot_address) | - | - |
+| [jquery_dot_ajaxfile](./j/jquery_dot_ajaxfile) | Allow to upload file with old browser | - |
 | [jquery_dot_appear](./j/jquery_dot_appear) | jQuery plugin to call a function when an element a | - |
 | [jquery_dot_are-you-sure](./j/jquery_dot_are-you-sure) | A light-weight jQuery "dirty forms" Plugin - it mo | dirty, form, onbeforeunload, save, check |
 | [jquery_dot_autosize](./j/jquery_dot_autosize) | - | - |
@@ -5035,6 +5037,8 @@
 | [odata](./o/odata) | o.js is a isomorphic Odata Javascript library to s | - |
 | [oembed-parser](./o/oembed-parser) | Get oEmbed data from given URL. | oembed, extractor, parser, util |
 | [ofe](./o/ofe) | Overwrite OnFatalError to produce heapdump | On Fatal Error, Fatal, Error, OnFatalError |
+| [office-js](./o/office-js) | Utility for office cloud services. | office, googleapps, office365, word, excel |
+| [office-js-preview](./o/office-js-preview) | - | - |
 | [office-runtime](./o/office-runtime) | - | - |
 | [office-ui-fabric-react](./o/office-ui-fabric-react) | Reusable React components for building experiences | - |
 | [offline-js](./o/offline-js) | Automatically detect when a browser is offline | - |
@@ -7831,6 +7835,7 @@
 | [web3-utils](./w/web3-utils) | Collection of utility functions used in web3.js. | - |
 | [webappsec-credential-mana](./w/webappsec-credential-management) | - | - |
 | [webassembly-web-api](./w/webassembly-web-api) | - | - |
+| [webcl](./w/webcl) | OpenCL bindings for Node.js | - |
 | [webcola](./w/webcola) | WebCola ======= | Graph, Layout, Constraints, Optimization |
 | [webcomponents_dot_js](./w/webcomponents_dot_js) | webcomponents.js | - |
 | [webcrypto](./w/webcrypto) | Use the Node.js crypto module API without having t | crypto |

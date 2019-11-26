@@ -85,15 +85,15 @@ object PivotTableData {
     useCustomSortLists: js.UndefOr[Boolean] = js.undefined
   ): PivotTableData = {
     val __obj = js.Dynamic.literal()
-    if (columnHierarchies != null) __obj.updateDynamic("columnHierarchies")(columnHierarchies)
-    if (dataHierarchies != null) __obj.updateDynamic("dataHierarchies")(dataHierarchies)
-    if (!js.isUndefined(enableDataValueEditing)) __obj.updateDynamic("enableDataValueEditing")(enableDataValueEditing)
-    if (filterHierarchies != null) __obj.updateDynamic("filterHierarchies")(filterHierarchies)
-    if (hierarchies != null) __obj.updateDynamic("hierarchies")(hierarchies)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (rowHierarchies != null) __obj.updateDynamic("rowHierarchies")(rowHierarchies)
-    if (!js.isUndefined(useCustomSortLists)) __obj.updateDynamic("useCustomSortLists")(useCustomSortLists)
+    if (columnHierarchies != null) __obj.updateDynamic("columnHierarchies")(columnHierarchies.asInstanceOf[js.Any])
+    if (dataHierarchies != null) __obj.updateDynamic("dataHierarchies")(dataHierarchies.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDataValueEditing)) __obj.updateDynamic("enableDataValueEditing")(enableDataValueEditing.asInstanceOf[js.Any])
+    if (filterHierarchies != null) __obj.updateDynamic("filterHierarchies")(filterHierarchies.asInstanceOf[js.Any])
+    if (hierarchies != null) __obj.updateDynamic("hierarchies")(hierarchies.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (rowHierarchies != null) __obj.updateDynamic("rowHierarchies")(rowHierarchies.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCustomSortLists)) __obj.updateDynamic("useCustomSortLists")(useCustomSortLists.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotTableData]
   }
 }

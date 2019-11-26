@@ -40,9 +40,9 @@ object RemoveDuplicatesResultLoadOptions {
     uniqueRemaining: js.UndefOr[Boolean] = js.undefined
   ): RemoveDuplicatesResultLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(removed)) __obj.updateDynamic("removed")(removed)
-    if (!js.isUndefined(uniqueRemaining)) __obj.updateDynamic("uniqueRemaining")(uniqueRemaining)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(removed)) __obj.updateDynamic("removed")(removed.asInstanceOf[js.Any])
+    if (!js.isUndefined(uniqueRemaining)) __obj.updateDynamic("uniqueRemaining")(uniqueRemaining.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveDuplicatesResultLoadOptions]
   }
 }

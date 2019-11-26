@@ -20,7 +20,7 @@ object SettingUpdateData {
   @scala.inline
   def apply(value: js.Any = null): SettingUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingUpdateData]
   }
 }

@@ -6845,6 +6845,7 @@
 | 0.28766739248656753 | [angular-http-auth](./a/angular-http-auth) | HTTP Auth Interceptor Module for AngularJS.
 | 0.287568730395978 | [nivo__chord](./n/nivo__chord) | -
 | 0.2875510636899511 | [mousetrap](./m/mousetrap) | Simple library for handling keyboard shortcuts
+| 0.2875087402321433 | [jquery_dot_ajaxfile](./j/jquery_dot_ajaxfile) | Allow to upload file with old browser
 | 0.2873881759784975 | [lodash_dot_tofinite](./l/lodash_dot_tofinite) | The lodash method _.toFinite exported as a module.
 | 0.2872678053972934 | [amplify-deferred](./a/amplify-deferred) | Adding jQuery Deferred support to the amplify.requ
 | 0.2872628191888794 | [texzilla](./t/texzilla) | A LALR Javascript LaTeX-to-MathML converter compat
@@ -7346,6 +7347,7 @@
 | 0.1994686873209554 | [jquery-cropbox](./j/jquery-cropbox) | jQuery plugin for in-place image cropping (zoom & 
 | 0.19905487420023216 | [jupyterlab__terminal](./j/jupyterlab__terminal) | JupyterLab - Terminal Emulator Widget
 | 0.19898260047815422 | [akumina-core](./a/akumina-core) | Adjusted Cache.Get return type Started SiteContex
+| 0.19880417719171345 | [webcl](./w/webcl) | OpenCL bindings for Node.js
 | 0.19843611538085618 | [aws-crypto__sha256-js](./a/aws-crypto__sha256-js) | A pure JS implementation SHA256.
 | 0.1984100919680944 | [wordpress__jest-console](./w/wordpress__jest-console) | Custom Jest matchers for the Console object.
 | 0.19775049523529142 | [lodash_dot_unescape](./l/lodash_dot_unescape) | The lodash method _.unescape exported as a module.
@@ -7449,6 +7451,7 @@
 | 0.15999592179246672 | [get-emoji](./g/get-emoji) | you give emoji name, we give you an emoji
 | 0.15973490352322087 | [rox-react-native](./r/rox-react-native) | Rollout.io ROX JS SDK Client
 | 0.15934205621531827 | [ionic__react](./i/ionic__react) | React specific wrapper for @ionic/core
+| 0.1587863390484147 | [office-js](./o/office-js) | Utility for office cloud services.
 | 0.15819674694109281 | [notifyjs-browser](./n/notifyjs-browser) | Notify.js =====
 | 0.15628382494132198 | [cli-interact](./c/cli-interact) | Simple helper tools for interacting synchronously 
 | 0.15617319740350757 | [hystrixjs](./h/hystrixjs) | resilience module for NodeJS applications

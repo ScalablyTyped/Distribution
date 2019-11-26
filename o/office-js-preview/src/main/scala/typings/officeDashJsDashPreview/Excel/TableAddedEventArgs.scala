@@ -47,8 +47,8 @@ trait TableAddedEventArgs extends js.Object {
 object TableAddedEventArgs {
   @scala.inline
   def apply(source: EventSource | Local | Remote, tableId: String, `type`: TableAdded, worksheetId: String): TableAddedEventArgs = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], tableId = tableId, worksheetId = worksheetId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], tableId = tableId.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableAddedEventArgs]
   }
 }

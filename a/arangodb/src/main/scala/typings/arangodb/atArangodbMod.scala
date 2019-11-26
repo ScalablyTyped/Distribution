@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@arangodb/", JSImport.Namespace)
+@JSImport("@arangodb", JSImport.Namespace)
 @js.native
 object atArangodbMod extends js.Object {
   val db: Database with StringDictionary[js.UndefOr[Collection[_]]] = js.native

@@ -10,7 +10,7 @@ import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Left
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Mixed
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Right
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Top
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +30,7 @@ trait TableRowUpdateData extends js.Object {
     *
     * [Api set: WordApi 1.3]
     */
-  var horizontalAlignment: js.UndefOr[Alignment | Mixed | Unknown | Left | Centered | Right | Justified] = js.undefined
+  var horizontalAlignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
   /**
     *
     * Gets and sets the preferred height of the row in points.
@@ -65,18 +65,18 @@ object TableRowUpdateData {
   @scala.inline
   def apply(
     font: FontUpdateData = null,
-    horizontalAlignment: Alignment | Mixed | Unknown | Left | Centered | Right | Justified = null,
+    horizontalAlignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = null,
     preferredHeight: Int | Double = null,
     shadingColor: String = null,
     values: js.Array[js.Array[String]] = null,
     verticalAlignment: VerticalAlignment | Mixed | Top | Center | Bottom = null
   ): TableRowUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
     if (preferredHeight != null) __obj.updateDynamic("preferredHeight")(preferredHeight.asInstanceOf[js.Any])
-    if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor)
-    if (values != null) __obj.updateDynamic("values")(values)
+    if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRowUpdateData]
   }

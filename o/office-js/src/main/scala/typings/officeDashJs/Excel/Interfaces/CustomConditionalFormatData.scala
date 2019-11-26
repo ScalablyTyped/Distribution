@@ -26,8 +26,8 @@ object CustomConditionalFormatData {
   @scala.inline
   def apply(format: ConditionalRangeFormatData = null, rule: ConditionalFormatRuleData = null): CustomConditionalFormatData = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (rule != null) __obj.updateDynamic("rule")(rule)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomConditionalFormatData]
   }
 }

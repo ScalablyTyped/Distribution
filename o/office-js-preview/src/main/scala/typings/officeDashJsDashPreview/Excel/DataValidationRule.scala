@@ -74,13 +74,13 @@ object DataValidationRule {
     wholeNumber: BasicDataValidation = null
   ): DataValidationRule = {
     val __obj = js.Dynamic.literal()
-    if (custom != null) __obj.updateDynamic("custom")(custom)
-    if (date != null) __obj.updateDynamic("date")(date)
-    if (decimal != null) __obj.updateDynamic("decimal")(decimal)
-    if (list != null) __obj.updateDynamic("list")(list)
-    if (textLength != null) __obj.updateDynamic("textLength")(textLength)
-    if (time != null) __obj.updateDynamic("time")(time)
-    if (wholeNumber != null) __obj.updateDynamic("wholeNumber")(wholeNumber)
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (decimal != null) __obj.updateDynamic("decimal")(decimal.asInstanceOf[js.Any])
+    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
+    if (textLength != null) __obj.updateDynamic("textLength")(textLength.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (wholeNumber != null) __obj.updateDynamic("wholeNumber")(wholeNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataValidationRule]
   }
 }

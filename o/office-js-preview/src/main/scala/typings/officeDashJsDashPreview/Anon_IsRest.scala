@@ -12,7 +12,7 @@ object Anon_IsRest {
   @scala.inline
   def apply(isRest: js.UndefOr[Boolean] = js.undefined): Anon_IsRest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isRest)) __obj.updateDynamic("isRest")(isRest)
+    if (!js.isUndefined(isRest)) __obj.updateDynamic("isRest")(isRest.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IsRest]
   }
 }

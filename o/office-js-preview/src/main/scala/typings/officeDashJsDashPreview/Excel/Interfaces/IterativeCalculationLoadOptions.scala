@@ -48,10 +48,10 @@ object IterativeCalculationLoadOptions {
     maxIteration: js.UndefOr[Boolean] = js.undefined
   ): IterativeCalculationLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (!js.isUndefined(maxChange)) __obj.updateDynamic("maxChange")(maxChange)
-    if (!js.isUndefined(maxIteration)) __obj.updateDynamic("maxIteration")(maxIteration)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxChange)) __obj.updateDynamic("maxChange")(maxChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(maxIteration)) __obj.updateDynamic("maxIteration")(maxIteration.asInstanceOf[js.Any])
     __obj.asInstanceOf[IterativeCalculationLoadOptions]
   }
 }

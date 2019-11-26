@@ -26,8 +26,8 @@ object TextRangeData {
   @scala.inline
   def apply(font: ShapeFontData = null, text: String = null): TextRangeData = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextRangeData]
   }
 }

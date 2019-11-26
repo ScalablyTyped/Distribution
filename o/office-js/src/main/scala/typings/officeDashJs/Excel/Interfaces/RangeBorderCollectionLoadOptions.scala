@@ -65,12 +65,12 @@ object RangeBorderCollectionLoadOptions {
     weight: js.UndefOr[Boolean] = js.undefined
   ): RangeBorderCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
-    if (!js.isUndefined(sideIndex)) __obj.updateDynamic("sideIndex")(sideIndex)
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(tintAndShade)) __obj.updateDynamic("tintAndShade")(tintAndShade)
-    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(sideIndex)) __obj.updateDynamic("sideIndex")(sideIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(tintAndShade)) __obj.updateDynamic("tintAndShade")(tintAndShade.asInstanceOf[js.Any])
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeBorderCollectionLoadOptions]
   }
 }

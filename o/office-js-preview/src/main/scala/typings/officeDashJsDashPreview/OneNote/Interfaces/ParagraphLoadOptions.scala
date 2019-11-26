@@ -117,19 +117,19 @@ object ParagraphLoadOptions {
     `type`: js.UndefOr[Boolean] = js.undefined
   ): ParagraphLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (inkWords != null) __obj.updateDynamic("inkWords")(inkWords)
-    if (outline != null) __obj.updateDynamic("outline")(outline)
-    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs)
-    if (parentParagraph != null) __obj.updateDynamic("parentParagraph")(parentParagraph)
-    if (parentParagraphOrNull != null) __obj.updateDynamic("parentParagraphOrNull")(parentParagraphOrNull)
-    if (parentTableCell != null) __obj.updateDynamic("parentTableCell")(parentTableCell)
-    if (parentTableCellOrNull != null) __obj.updateDynamic("parentTableCellOrNull")(parentTableCellOrNull)
-    if (richText != null) __obj.updateDynamic("richText")(richText)
-    if (table != null) __obj.updateDynamic("table")(table)
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (inkWords != null) __obj.updateDynamic("inkWords")(inkWords.asInstanceOf[js.Any])
+    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
+    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs.asInstanceOf[js.Any])
+    if (parentParagraph != null) __obj.updateDynamic("parentParagraph")(parentParagraph.asInstanceOf[js.Any])
+    if (parentParagraphOrNull != null) __obj.updateDynamic("parentParagraphOrNull")(parentParagraphOrNull.asInstanceOf[js.Any])
+    if (parentTableCell != null) __obj.updateDynamic("parentTableCell")(parentTableCell.asInstanceOf[js.Any])
+    if (parentTableCellOrNull != null) __obj.updateDynamic("parentTableCellOrNull")(parentTableCellOrNull.asInstanceOf[js.Any])
+    if (richText != null) __obj.updateDynamic("richText")(richText.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParagraphLoadOptions]
   }
 }

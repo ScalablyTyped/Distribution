@@ -42,7 +42,7 @@ import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.SectionOdd
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Select
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Start
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Tags
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown_
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Whole
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -243,7 +243,7 @@ class ContentControl () extends ClientObject {
     *
     * [Api set: WordApi 1.3]
     */
-  val subtype: ContentControlType | Unknown | RichTextInline | RichTextParagraphs | RichTextTableCell | RichTextTableRow | RichTextTable | PlainTextInline | PlainTextParagraph | Picture | BuildingBlockGallery | CheckBox | ComboBox | DropDownList | DatePicker | RepeatingSection | RichText | PlainText = js.native
+  val subtype: ContentControlType | Unknown_ | RichTextInline | RichTextParagraphs | RichTextTableCell | RichTextTableRow | RichTextTable | PlainTextInline | PlainTextParagraph | Picture | BuildingBlockGallery | CheckBox | ComboBox | DropDownList | DatePicker | RepeatingSection | RichText | PlainText = js.native
   /**
     *
     * Gets the collection of table objects in the content control. Read-only.
@@ -278,7 +278,7 @@ class ContentControl () extends ClientObject {
     *
     * [Api set: WordApi 1.1]
     */
-  val `type`: ContentControlType | Unknown | RichTextInline | RichTextParagraphs | RichTextTableCell | RichTextTableRow | RichTextTable | PlainTextInline | PlainTextParagraph | Picture | BuildingBlockGallery | CheckBox | ComboBox | DropDownList | DatePicker | RepeatingSection | RichText | PlainText = js.native
+  val `type`: ContentControlType | Unknown_ | RichTextInline | RichTextParagraphs | RichTextTableCell | RichTextTableRow | RichTextTable | PlainTextInline | PlainTextParagraph | Picture | BuildingBlockGallery | CheckBox | ComboBox | DropDownList | DatePicker | RepeatingSection | RichText | PlainText = js.native
   /**
     *
     * Clears the contents of the content control. The user can perform the undo operation on the cleared content.

@@ -37,9 +37,9 @@ object PivotItemUpdateData {
     visible: js.UndefOr[Boolean] = js.undefined
   ): PivotItemUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotItemUpdateData]
   }
 }

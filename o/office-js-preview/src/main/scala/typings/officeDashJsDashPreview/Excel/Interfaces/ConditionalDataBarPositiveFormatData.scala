@@ -38,9 +38,9 @@ object ConditionalDataBarPositiveFormatData {
     gradientFill: js.UndefOr[Boolean] = js.undefined
   ): ConditionalDataBarPositiveFormatData = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
-    if (!js.isUndefined(gradientFill)) __obj.updateDynamic("gradientFill")(gradientFill)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(gradientFill)) __obj.updateDynamic("gradientFill")(gradientFill.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalDataBarPositiveFormatData]
   }
 }

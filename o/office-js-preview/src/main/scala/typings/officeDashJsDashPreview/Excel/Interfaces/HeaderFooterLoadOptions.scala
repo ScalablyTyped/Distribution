@@ -75,13 +75,13 @@ object HeaderFooterLoadOptions {
     rightHeader: js.UndefOr[Boolean] = js.undefined
   ): HeaderFooterLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(centerFooter)) __obj.updateDynamic("centerFooter")(centerFooter)
-    if (!js.isUndefined(centerHeader)) __obj.updateDynamic("centerHeader")(centerHeader)
-    if (!js.isUndefined(leftFooter)) __obj.updateDynamic("leftFooter")(leftFooter)
-    if (!js.isUndefined(leftHeader)) __obj.updateDynamic("leftHeader")(leftHeader)
-    if (!js.isUndefined(rightFooter)) __obj.updateDynamic("rightFooter")(rightFooter)
-    if (!js.isUndefined(rightHeader)) __obj.updateDynamic("rightHeader")(rightHeader)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(centerFooter)) __obj.updateDynamic("centerFooter")(centerFooter.asInstanceOf[js.Any])
+    if (!js.isUndefined(centerHeader)) __obj.updateDynamic("centerHeader")(centerHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(leftFooter)) __obj.updateDynamic("leftFooter")(leftFooter.asInstanceOf[js.Any])
+    if (!js.isUndefined(leftHeader)) __obj.updateDynamic("leftHeader")(leftHeader.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightFooter)) __obj.updateDynamic("rightFooter")(rightFooter.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightHeader)) __obj.updateDynamic("rightHeader")(rightHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderFooterLoadOptions]
   }
 }

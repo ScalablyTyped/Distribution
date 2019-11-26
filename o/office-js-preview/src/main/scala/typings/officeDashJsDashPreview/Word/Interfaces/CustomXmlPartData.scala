@@ -28,8 +28,8 @@ object CustomXmlPartData {
   @scala.inline
   def apply(id: String = null, namespaceUri: String = null): CustomXmlPartData = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (namespaceUri != null) __obj.updateDynamic("namespaceUri")(namespaceUri)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (namespaceUri != null) __obj.updateDynamic("namespaceUri")(namespaceUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomXmlPartData]
   }
 }

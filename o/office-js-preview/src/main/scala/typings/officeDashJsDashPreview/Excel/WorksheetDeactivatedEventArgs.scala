@@ -31,8 +31,8 @@ trait WorksheetDeactivatedEventArgs extends js.Object {
 object WorksheetDeactivatedEventArgs {
   @scala.inline
   def apply(`type`: WorksheetDeactivated, worksheetId: String): WorksheetDeactivatedEventArgs = {
-    val __obj = js.Dynamic.literal(worksheetId = worksheetId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(worksheetId = worksheetId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorksheetDeactivatedEventArgs]
   }
 }

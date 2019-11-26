@@ -31,8 +31,8 @@ object Index {
     `type`: IndexType,
     unique: Boolean
   ): Index[T] = {
-    val __obj = js.Dynamic.literal(code = code, deduplicate = deduplicate, fields = fields, id = id, isNewlyCreated = isNewlyCreated, name = name, selectivityEstimate = selectivityEstimate, sparse = sparse, unique = unique)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], deduplicate = deduplicate.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isNewlyCreated = isNewlyCreated.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selectivityEstimate = selectivityEstimate.asInstanceOf[js.Any], sparse = sparse.asInstanceOf[js.Any], unique = unique.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Index[T]]
   }
 }

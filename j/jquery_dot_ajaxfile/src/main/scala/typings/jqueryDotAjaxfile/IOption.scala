@@ -24,12 +24,12 @@ object IOption {
     url: String = null
   ): IOption = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data)
-    if (desiredResponseDataType != null) __obj.updateDynamic("desiredResponseDataType")(desiredResponseDataType)
-    if (files != null) __obj.updateDynamic("files")(files)
-    if (method != null) __obj.updateDynamic("method")(method)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (desiredResponseDataType != null) __obj.updateDynamic("desiredResponseDataType")(desiredResponseDataType.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (timeoutInSeconds != null) __obj.updateDynamic("timeoutInSeconds")(timeoutInSeconds.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOption]
   }
 }

@@ -21,7 +21,7 @@ object ParsedQuery {
     parameters: js.Array[String],
     parsed: Boolean
   ): ParsedQuery = {
-    val __obj = js.Dynamic.literal(ast = ast, bindVars = bindVars, collections = collections, parameters = parameters, parsed = parsed)
+    val __obj = js.Dynamic.literal(ast = ast.asInstanceOf[js.Any], bindVars = bindVars.asInstanceOf[js.Any], collections = collections.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], parsed = parsed.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ParsedQuery]
   }

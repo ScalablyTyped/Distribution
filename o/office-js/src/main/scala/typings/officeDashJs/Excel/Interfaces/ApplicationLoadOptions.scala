@@ -58,11 +58,11 @@ object ApplicationLoadOptions {
     iterativeCalculation: IterativeCalculationLoadOptions = null
   ): ApplicationLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(calculationEngineVersion)) __obj.updateDynamic("calculationEngineVersion")(calculationEngineVersion)
-    if (!js.isUndefined(calculationMode)) __obj.updateDynamic("calculationMode")(calculationMode)
-    if (!js.isUndefined(calculationState)) __obj.updateDynamic("calculationState")(calculationState)
-    if (iterativeCalculation != null) __obj.updateDynamic("iterativeCalculation")(iterativeCalculation)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(calculationEngineVersion)) __obj.updateDynamic("calculationEngineVersion")(calculationEngineVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(calculationMode)) __obj.updateDynamic("calculationMode")(calculationMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(calculationState)) __obj.updateDynamic("calculationState")(calculationState.asInstanceOf[js.Any])
+    if (iterativeCalculation != null) __obj.updateDynamic("iterativeCalculation")(iterativeCalculation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationLoadOptions]
   }
 }

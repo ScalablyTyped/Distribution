@@ -23,7 +23,7 @@ trait CustomDataValidation extends js.Object {
 object CustomDataValidation {
   @scala.inline
   def apply(formula: String): CustomDataValidation = {
-    val __obj = js.Dynamic.literal(formula = formula)
+    val __obj = js.Dynamic.literal(formula = formula.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CustomDataValidation]
   }

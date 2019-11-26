@@ -29,8 +29,8 @@ object FilterLoadOptions {
   @scala.inline
   def apply($all: js.UndefOr[Boolean] = js.undefined, criteria: js.UndefOr[Boolean] = js.undefined): FilterLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(criteria)) __obj.updateDynamic("criteria")(criteria)
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
+    if (!js.isUndefined(criteria)) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterLoadOptions]
   }
 }

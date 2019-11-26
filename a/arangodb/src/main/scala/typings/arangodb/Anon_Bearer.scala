@@ -11,7 +11,7 @@ trait Anon_Bearer extends js.Object {
 object Anon_Bearer {
   @scala.inline
   def apply(bearer: String): Anon_Bearer = {
-    val __obj = js.Dynamic.literal(bearer = bearer)
+    val __obj = js.Dynamic.literal(bearer = bearer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Bearer]
   }

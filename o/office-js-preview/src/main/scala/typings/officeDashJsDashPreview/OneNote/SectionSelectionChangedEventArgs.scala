@@ -31,8 +31,8 @@ trait SectionSelectionChangedEventArgs extends js.Object {
 object SectionSelectionChangedEventArgs {
   @scala.inline
   def apply(oldId: String, `type`: SectionSelectionChanged): SectionSelectionChangedEventArgs = {
-    val __obj = js.Dynamic.literal(oldId = oldId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(oldId = oldId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SectionSelectionChangedEventArgs]
   }
 }

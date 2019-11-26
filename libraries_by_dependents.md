@@ -7192,6 +7192,7 @@
 | 0 | [jquery-loading-overlay](./j/jquery-loading-overlay) | jQuery Loading Overlay Plugin
 | 0 | [jquery-slugify](./j/jquery-slugify) | Just another another (another) url slug plugin for
 | 0 | [jquery-tags-input](./j/jquery-tags-input) | Do you use tags to organize content on your site? 
+| 0 | [jquery_dot_ajaxfile](./j/jquery_dot_ajaxfile) | Allow to upload file with old browser
 | 0 | [jquery_dot_are-you-sure](./j/jquery_dot_are-you-sure) | A light-weight jQuery "dirty forms" Plugin - it mo
 | 0 | [jquery_dot_cycle2](./j/jquery_dot_cycle2) | A wrapper for jQuery Cycle 2
 | 0 | [jquery_dot_finger](./j/jquery_dot_finger) | jQuery Finger unifies click and touch events by re
@@ -7342,6 +7343,7 @@
 | 0 | [oblo-util](./o/oblo-util) | Utilities module suitable for both Node.js and cli
 | 0 | [octokit__request-error](./o/octokit__request-error) | Error class for Octokit request errors
 | 0 | [ofe](./o/ofe) | Overwrite OnFatalError to produce heapdump
+| 0 | [office-js](./o/office-js) | Utility for office cloud services.
 | 0 | [okta__okta-vue](./o/okta__okta-vue) | Vue support for Okta
 | 0 | [on-wake-up](./o/on-wake-up) | Small module that calls a function when your compu
 | 0 | [onfleet__node-onfleet](./o/onfleet__node-onfleet) | Official client library for accessing the Onfleet 
@@ -7610,6 +7612,7 @@
 | 0 | [waitme](./w/waitme) | waitMe ======
 | 0 | [weapp-api](./w/weapp-api) | wechat api
 | 0 | [web-bluetooth](./w/web-bluetooth) | Library for interacting with Bluetooth 4.0 devices
+| 0 | [webcl](./w/webcl) | OpenCL bindings for Node.js
 | 0 | [webicon](./w/webicon) | Icon library
 | 0 | [webpack-env](./w/webpack-env) | read variables from a .env.js file and make them a
 | 0 | [webprogbase-console-view](./w/webprogbase-console-view) | Console browser and server app module with simplif

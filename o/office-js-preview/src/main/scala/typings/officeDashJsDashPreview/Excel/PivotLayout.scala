@@ -18,7 +18,7 @@ import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Off
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Outline
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Row
 import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Tabular
-import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown
+import typings.officeDashJsDashPreview.officeDashJsDashPreviewStrings.Unknown_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -167,7 +167,7 @@ class PivotLayout () extends ClientObject {
   @JSName("getPivotItems")
   def getPivotItems_Row(axis: Row, cell: Range): ClientResult[js.Array[PivotItem]] = js.native
   @JSName("getPivotItems")
-  def getPivotItems_Unknown(axis: Unknown, cell: String): ClientResult[js.Array[PivotItem]] = js.native
+  def getPivotItems_Unknown(axis: Unknown_, cell: String): ClientResult[js.Array[PivotItem]] = js.native
   /**
     *
     * Gets the PivotItems from an axis that make up the value in a specified range within the PivotTable.
@@ -179,7 +179,7 @@ class PivotLayout () extends ClientObject {
     * @returns A collection of PivotItems that are used to calculate the values in the specified row.
     */
   @JSName("getPivotItems")
-  def getPivotItems_Unknown(axis: Unknown, cell: Range): ClientResult[js.Array[PivotItem]] = js.native
+  def getPivotItems_Unknown(axis: Unknown_, cell: Range): ClientResult[js.Array[PivotItem]] = js.native
   /**
     *
     * Returns the range the PivotTable exists on, excluding the filter area.

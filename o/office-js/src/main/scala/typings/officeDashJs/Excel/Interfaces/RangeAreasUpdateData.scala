@@ -39,9 +39,9 @@ object RangeAreasUpdateData {
     style: String = null
   ): RangeAreasUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation)
-    if (format != null) __obj.updateDynamic("format")(format)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeAreasUpdateData]
   }
 }

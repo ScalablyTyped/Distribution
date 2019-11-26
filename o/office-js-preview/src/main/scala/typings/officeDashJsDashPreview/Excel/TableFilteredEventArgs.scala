@@ -42,8 +42,8 @@ trait TableFilteredEventArgs extends js.Object {
 object TableFilteredEventArgs {
   @scala.inline
   def apply(tableId: String, `type`: TableFiltered, worksheetId: String): TableFilteredEventArgs = {
-    val __obj = js.Dynamic.literal(tableId = tableId, worksheetId = worksheetId)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(tableId = tableId.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableFilteredEventArgs]
   }
 }
