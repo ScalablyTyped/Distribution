@@ -4,8 +4,7 @@ import slinky.core.TagMod
 import slinky.core.facade.ReactElement
 import typings.antd.esFormFormMod.default.{create => createForm}
 import typings.antd.esFormFormMod.{FormCreateOption, GetFieldDecoratorOptions, WrappedFormUtils}
-import typings.antd.esTreeDashSelectInterfaceMod.TreeNodeValue
-import typings.antd.{antdComponents => Antd}
+import typings.antd.{antdProps, antdComponents => Antd}
 import typings.react.ScalableSlinky._
 import typings.react.reactMod.ComponentType
 
@@ -143,9 +142,9 @@ object AntdFacade extends antdProps {
   @inline def Transfer: ExternalComponentP[TransferProps] = importSTComponent(Antd.Transfer)
   @inline def TransferOperation: ExternalComponentP[TransferOperationProps] = importSTComponent(Antd.TransferOperation)
   @inline def Tree: ExternalComponentP[TreeProps] = importSTComponent(Antd.Tree)
-  @inline def TreeDashSelect: ExternalComponentP[TreeSelectProps[TreeNodeValue]] = importSTComponent(Antd.TreeDashSelect)
+  @inline def TreeDashSelect[T /* <: TreeNodeValue */]: ExternalComponentP[TreeSelectProps[T]] = importSTComponent(Antd.TreeDashSelect[T])
   @inline def TreeNode: ExternalComponentP[TreeNodeProps] = importSTComponent(Antd.TreeNode)
-  @inline def TreeSelect: ExternalComponentP[TreeSelectProps[TreeNodeValue]] = importSTComponent(Antd.TreeSelect)
+  @inline def TreeSelect[T /* <: TreeNodeValue */]: ExternalComponentP[TreeSelectProps[T]] = importSTComponent(Antd.TreeSelect[T])
   @inline def TreeTreeNode: ExternalComponentP[TreeTreeNodeProps] = importSTComponent(Antd.TreeTreeNode)
   @inline def Typography: ExternalComponentP[TypographyProps] = importSTComponent(Antd.Typography)
   @inline def Upload: ExternalComponentP[UploadProps] = importSTComponent(Antd.Upload)

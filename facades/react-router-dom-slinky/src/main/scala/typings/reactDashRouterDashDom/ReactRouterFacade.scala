@@ -3,9 +3,14 @@ package typings.reactDashRouterDashDom
 import slinky.core.facade.ReactElement
 import slinky.core.{BuildingComponent, ReactComponentClass}
 import typings.history.historyMod.{Location, LocationState}
-import typings.react.ScalableSlinky.{ExternalComponentP, importSTComponent}
-import typings.reactDashRouter.reactDashRouterMod.{RouteChildrenProps, RouteComponentProps, StaticContext}
 import typings.reactDashRouterDashDom.{reactDashRouterDashDomComponents => RRD}
+import typings.reactDashRouter.reactDashRouterMod.{
+  RouteChildrenProps,
+  RouteComponentProps,
+  RouteProps,
+  StaticContext
+}
+import typings.react.ScalableSlinky.{importSTComponent, ExternalComponentP}
 
 import scala.scalajs.js
 import scala.scalajs.js.|
@@ -55,6 +60,6 @@ object ReactRouterFacade extends reactDashRouterDashDomProps {
     if (!js.isUndefined(sensitive)) props.updateDynamic("sensitive")(sensitive)
     if (!js.isUndefined(strict)) props.updateDynamic("strict")(strict)
 
-    importSTComponent(RRD.Route)(props.asInstanceOf[RouteProps])
+    importSTComponent(RRD.Route[RouteProps])(props.asInstanceOf[RouteProps])
   }
 }
