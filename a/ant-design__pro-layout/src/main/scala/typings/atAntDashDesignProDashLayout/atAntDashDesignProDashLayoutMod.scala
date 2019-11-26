@@ -4,8 +4,7 @@ import typings.atAntDashDesignProDashLayout.libBasicLayoutMod.BasicLayoutProps
 import typings.atAntDashDesignProDashLayout.libFooterMod.FooterProps
 import typings.atAntDashDesignProDashLayout.libGetPageTitleMod.GetPageTitleProps
 import typings.atAntDashDesignProDashLayout.libGridContentMod.GridContentProps
-import typings.atAntDashDesignProDashLayout.libHeaderMod.HeaderViewProps
-import typings.atAntDashDesignProDashLayout.libHeaderMod.HeaderViewState
+import typings.atAntDashDesignProDashLayout.libHeaderMod.HeaderView
 import typings.atAntDashDesignProDashLayout.libPageHeaderWrapperMod.PageHeaderWrapperProps
 import typings.atAntDashDesignProDashLayout.libRouteContextMod.RouteContextType
 import typings.atAntDashDesignProDashLayout.libSettingDrawerMod.SettingDrawerProps
@@ -24,8 +23,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object atAntDashDesignProDashLayoutMod extends js.Object {
   @js.native
-  class DefaultHeader ()
-    extends typings.atAntDashDesignProDashLayout.libHeaderMod.default
+  class DefaultHeader () extends HeaderView
   
   @js.native
   class SettingDrawer ()
@@ -94,12 +92,6 @@ object atAntDashDesignProDashLayoutMod extends js.Object {
   ): Anon_BreadcrumbKey = js.native
   def getPageTitle(props: GetPageTitleProps): String = js.native
   def getPageTitle(props: GetPageTitleProps, ignoreTile: Boolean): String = js.native
-  /* static members */
-  @js.native
-  object DefaultHeader extends js.Object {
-    def getDerivedStateFromProps(props: HeaderViewProps, state: HeaderViewState): HeaderViewState | Null = js.native
-  }
-  
   /* static members */
   @js.native
   object SettingDrawer extends js.Object {

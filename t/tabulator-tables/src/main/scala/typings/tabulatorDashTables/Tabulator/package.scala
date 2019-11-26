@@ -107,6 +107,7 @@ package object Tabulator {
     - typings.tabulatorDashTables.Tabulator.SelectParams
     - typings.tabulatorDashTables.Tabulator.AutoCompleteParams
     - typings.tabulatorDashTables.Tabulator.InputParams
+    - typings.tabulatorDashTables.Tabulator.TextAreaParams
     - js.Function1[/ * cell * / typings.tabulatorDashTables.Tabulator.CellComponent, js.Object]
   */
   type EditorParams = _EditorParams | (js.Function1[/* cell */ CellComponent, js.Object])

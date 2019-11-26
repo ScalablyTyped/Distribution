@@ -15,6 +15,7 @@ package object Summernote {
   import typings.summernote.summernoteStrings.imagesize
   import typings.summernote.summernoteStrings.insert
   import typings.summernote.summernoteStrings.link
+  import typings.summernote.summernoteStrings.misc
   import typings.summernote.summernoteStrings.para
   import typings.summernote.summernoteStrings.remove
   import typings.summernote.summernoteStrings.removeMedia
@@ -45,13 +46,12 @@ package object Summernote {
   // type toolbarDef = [string, string[]][]
   type toolbarDef = js.Array[
     js.Tuple2[
-      style | font | fontsize_ | color | para | height | table | insert | view | help, 
+      style | font | fontsize_ | color | para | height | table | insert | view | help | misc, 
       js.Array[
-        toolbarColorGroupOptions | toolbarFontGroupOptions | toolbarFontsizeGroupOptions | toolbarHeightGroupOptions | toolbarHelpGroupOptions | toolbarInsertGroupOptions | toolbarParaGroupOptions | toolbarStyleGroupOptions | toolbarTableGroupOptions | toolbarViewGroupOptions
+        miscGroupOptions | toolbarColorGroupOptions | toolbarFontGroupOptions | toolbarFontsizeGroupOptions | toolbarHeightGroupOptions | toolbarHelpGroupOptions | toolbarInsertGroupOptions | toolbarParaGroupOptions | toolbarStyleGroupOptions | toolbarTableGroupOptions | toolbarViewGroupOptions
       ]
     ]
   ]
-  type toolbarFontsizeGroupOptions = fontsize_
   type toolbarHeightGroupOptions = height
   type toolbarHelpGroupOptions = help
   type toolbarTableGroupOptions = table

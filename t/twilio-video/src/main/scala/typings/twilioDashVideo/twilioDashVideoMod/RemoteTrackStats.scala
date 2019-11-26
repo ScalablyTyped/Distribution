@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("twilio-video", "RemoteTrackStats")
 @js.native
-class RemoteTrackStats () extends js.Object {
+class RemoteTrackStats () extends TrackStats {
   var bytesReceived: Double | Null = js.native
   var packetsReceived: Double | Null = js.native
 }

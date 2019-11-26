@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
   - typings.summernote.summernoteStrings.link
   - typings.summernote.summernoteStrings.picture
   - typings.summernote.summernoteStrings.hr
+  - typings.summernote.summernoteStrings.table
+  - typings.summernote.summernoteStrings.video
 */
 trait toolbarInsertGroupOptions extends js.Object
 
@@ -20,5 +22,9 @@ object toolbarInsertGroupOptions {
   def link: typings.summernote.summernoteStrings.link = this.cast("link")
   @scala.inline
   def picture: typings.summernote.summernoteStrings.picture = this.cast("picture")
+  @scala.inline
+  def table: typings.summernote.summernoteStrings.table = this.cast("table")
+  @scala.inline
+  def video: typings.summernote.summernoteStrings.video = this.cast("video")
 }
 

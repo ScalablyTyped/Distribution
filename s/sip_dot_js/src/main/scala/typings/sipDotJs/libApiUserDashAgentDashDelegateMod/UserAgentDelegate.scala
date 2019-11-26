@@ -7,11 +7,21 @@ import typings.sipDotJs.libApiReferralMod.Referral
 import typings.sipDotJs.libApiSubscriptionMod.Subscription
 import typings.sipDotJs.libCoreMessagesMethodsRegisterMod.IncomingRegisterRequest
 import typings.sipDotJs.libCoreMessagesMethodsSubscribeMod.IncomingSubscribeRequest
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait UserAgentDelegate extends js.Object {
+  /**
+    * Called upon transport transitioning to connected state.
+    */
+  var onConnect: js.UndefOr[js.Function0[Unit]] = js.undefined
+  /**
+    * Called upon transport transitioning from connected state.
+    * @param error - An error if disconnect triggered by transport. Otherwise undefined.
+    */
+  var onDisconnect: js.UndefOr[js.Function1[/* error */ js.UndefOr[Error], Unit]] = js.undefined
   /**
     * Called upon receipt of an invitation.
     * @remarks
@@ -64,6 +74,8 @@ trait UserAgentDelegate extends js.Object {
 object UserAgentDelegate {
   @scala.inline
   def apply(
+    onConnect: () => Unit = null,
+    onDisconnect: /* error */ js.UndefOr[Error] => Unit = null,
     onInvite: /* invitation */ Invitation => Unit = null,
     onMessage: /* message */ Message => Unit = null,
     onNotify: /* notification */ Notification => Unit = null,
@@ -73,6 +85,8 @@ object UserAgentDelegate {
     onSubscribeRequest: /* request */ IncomingSubscribeRequest => Unit = null
   ): UserAgentDelegate = {
     val __obj = js.Dynamic.literal()
+    if (onConnect != null) __obj.updateDynamic("onConnect")(js.Any.fromFunction0(onConnect))
+    if (onDisconnect != null) __obj.updateDynamic("onDisconnect")(js.Any.fromFunction1(onDisconnect))
     if (onInvite != null) __obj.updateDynamic("onInvite")(js.Any.fromFunction1(onInvite))
     if (onMessage != null) __obj.updateDynamic("onMessage")(js.Any.fromFunction1(onMessage))
     if (onNotify != null) __obj.updateDynamic("onNotify")(js.Any.fromFunction1(onNotify))

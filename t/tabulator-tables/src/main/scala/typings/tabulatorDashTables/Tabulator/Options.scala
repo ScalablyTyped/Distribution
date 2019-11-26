@@ -14,13 +14,16 @@ import typings.tabulatorDashTables.tabulatorDashTablesStrings.bottom
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.cell
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.click
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.collapse
+import typings.tabulatorDashTables.tabulatorDashTablesStrings.columns
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.cookie
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.copy
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.delete
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.field
+import typings.tabulatorDashTables.tabulatorDashTablesStrings.filter
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.fitColumns
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.fitData
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.fitDataFill
+import typings.tabulatorDashTables.tabulatorDashTablesStrings.fitDataStretch
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.form
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.group
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.header
@@ -37,10 +40,12 @@ import typings.tabulatorDashTables.tabulatorDashTablesStrings.remote
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.replace
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.scroll
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.selected
+import typings.tabulatorDashTables.tabulatorDashTablesStrings.sort
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.table
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.top
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.update
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.value
+import typings.tabulatorDashTables.tabulatorDashTablesStrings.visible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -87,6 +92,7 @@ object Options {
     ajaxURLGenerator: (/* url */ String, /* config */ js.Any, /* params */ js.Any) => String = null,
     autoColumns: js.UndefOr[Boolean] = js.undefined,
     autoResize: js.UndefOr[Boolean] = js.undefined,
+    blockRedraw: () => Unit = null,
     cellClick: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
     cellContext: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
     cellDblClick: (/* e */ js.Any, /* cell */ CellComponent) => Unit = null,
@@ -106,7 +112,7 @@ object Options {
     clipboardCopyConfig: Anon_ColumnCalcs | Boolean = null,
     clipboardCopyFormatter: table | (js.Function1[/* rowData */ js.Array[_], String]) = null,
     clipboardCopyHeader: js.UndefOr[Boolean] = js.undefined,
-    clipboardCopySelector: active | table | selected = null,
+    clipboardCopySelector: active | table | selected | visible = null,
     clipboardCopyStyled: js.UndefOr[Boolean] = js.undefined,
     clipboardPasteAction: insert | update | replace = null,
     clipboardPasteError: () => Unit = null,
@@ -114,11 +120,11 @@ object Options {
     clipboardPasted: () => Unit = null,
     columnCalcs: Boolean | both | table | group = null,
     columnHeaderSortMulti: js.UndefOr[Boolean] = js.undefined,
+    columnHeaderVertAlign: top | middle | bottom = null,
     columnMinWidth: Int | Double = null,
     columnMoved: (/* column */ ColumnComponent, /* columns */ js.Array[_]) => Unit = null,
     columnResized: /* column */ ColumnComponent => Unit = null,
     columnTitleChanged: /* column */ ColumnComponent => Unit = null,
-    columnVertAlign: top | middle | bottom = null,
     columnVisibilityChanged: (/* column */ ColumnComponent, /* visible */ Boolean) => Unit = null,
     columns: js.Array[ColumnDefinition] = null,
     data: js.Array[_] = null,
@@ -189,7 +195,7 @@ object Options {
     invalidOptionWarnings: js.UndefOr[Boolean] = js.undefined,
     keybindings: `false` | KeyBinding = null,
     langs: js.Any = null,
-    layout: fitData | fitColumns | fitDataFill = null,
+    layout: fitData | fitColumns | fitDataFill | fitDataStretch = null,
     layoutColumnsOnNewData: js.UndefOr[Boolean] = js.undefined,
     locale: Boolean | String = null,
     localized: (/* locale */ String, /* lang */ js.Any) => Unit = null,
@@ -224,10 +230,14 @@ object Options {
     paginationDataReceived: Record[String, String] = null,
     paginationDataSent: Record[String, String] = null,
     paginationElement: HTMLElement | String = null,
+    paginationInitialPage: Int | Double = null,
     paginationSize: Int | Double = null,
     paginationSizeSelector: `true` | js.Array[Double] = null,
+    persistence: `true` | PersistenceOptions = null,
     persistenceID: String = null,
     persistenceMode: local | cookie | `true` = null,
+    persistenceReaderFunc: (/* id */ String, /* type */ sort | filter | group | page | columns) => _ = null,
+    persistenceWriterFunc: (/* id */ String, /* type */ sort | filter | group | page | columns, /* data */ js.Any) => _ = null,
     persistentFilter: js.UndefOr[Boolean] = js.undefined,
     persistentLayout: js.UndefOr[Boolean] = js.undefined,
     persistentSort: js.UndefOr[Boolean] = js.undefined,
@@ -249,6 +259,7 @@ object Options {
     responsiveLayoutCollapseFormatter: /* data */ js.Array[_] => _ = null,
     responsiveLayoutCollapseStartOpen: js.UndefOr[Boolean] = js.undefined,
     responsiveLayoutCollapseUseFormatters: js.UndefOr[Boolean] = js.undefined,
+    restoreRedraw: () => Unit = null,
     rowAdded: /* row */ RowComponent => Unit = null,
     rowClick: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
     rowContext: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
@@ -269,10 +280,12 @@ object Options {
     rowTap: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
     rowTapHold: (/* e */ js.Any, /* row */ RowComponent) => Unit = null,
     rowUpdated: /* row */ RowComponent => Unit = null,
+    scrollHorizontal: /* left */ js.Any => Unit = null,
     scrollToColumnIfVisible: js.UndefOr[Boolean] = js.undefined,
     scrollToColumnPosition: ScrollToColumnPosition = null,
     scrollToRowIfVisible: js.UndefOr[Boolean] = js.undefined,
     scrollToRowPosition: ScrollToRowPostition = null,
+    scrollVertical: /* top */ js.Any => Unit = null,
     selectable: Boolean | Double | highlight = null,
     selectableCheck: /* row */ RowComponent => Boolean = null,
     selectablePersistence: js.UndefOr[Boolean] = js.undefined,
@@ -310,6 +323,7 @@ object Options {
     if (ajaxURLGenerator != null) __obj.updateDynamic("ajaxURLGenerator")(js.Any.fromFunction3(ajaxURLGenerator))
     if (!js.isUndefined(autoColumns)) __obj.updateDynamic("autoColumns")(autoColumns.asInstanceOf[js.Any])
     if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.asInstanceOf[js.Any])
+    if (blockRedraw != null) __obj.updateDynamic("blockRedraw")(js.Any.fromFunction0(blockRedraw))
     if (cellClick != null) __obj.updateDynamic("cellClick")(js.Any.fromFunction2(cellClick))
     if (cellContext != null) __obj.updateDynamic("cellContext")(js.Any.fromFunction2(cellContext))
     if (cellDblClick != null) __obj.updateDynamic("cellDblClick")(js.Any.fromFunction2(cellDblClick))
@@ -337,11 +351,11 @@ object Options {
     if (clipboardPasted != null) __obj.updateDynamic("clipboardPasted")(js.Any.fromFunction0(clipboardPasted))
     if (columnCalcs != null) __obj.updateDynamic("columnCalcs")(columnCalcs.asInstanceOf[js.Any])
     if (!js.isUndefined(columnHeaderSortMulti)) __obj.updateDynamic("columnHeaderSortMulti")(columnHeaderSortMulti.asInstanceOf[js.Any])
+    if (columnHeaderVertAlign != null) __obj.updateDynamic("columnHeaderVertAlign")(columnHeaderVertAlign.asInstanceOf[js.Any])
     if (columnMinWidth != null) __obj.updateDynamic("columnMinWidth")(columnMinWidth.asInstanceOf[js.Any])
     if (columnMoved != null) __obj.updateDynamic("columnMoved")(js.Any.fromFunction2(columnMoved))
     if (columnResized != null) __obj.updateDynamic("columnResized")(js.Any.fromFunction1(columnResized))
     if (columnTitleChanged != null) __obj.updateDynamic("columnTitleChanged")(js.Any.fromFunction1(columnTitleChanged))
-    if (columnVertAlign != null) __obj.updateDynamic("columnVertAlign")(columnVertAlign.asInstanceOf[js.Any])
     if (columnVisibilityChanged != null) __obj.updateDynamic("columnVisibilityChanged")(js.Any.fromFunction2(columnVisibilityChanged))
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
@@ -425,10 +439,14 @@ object Options {
     if (paginationDataReceived != null) __obj.updateDynamic("paginationDataReceived")(paginationDataReceived.asInstanceOf[js.Any])
     if (paginationDataSent != null) __obj.updateDynamic("paginationDataSent")(paginationDataSent.asInstanceOf[js.Any])
     if (paginationElement != null) __obj.updateDynamic("paginationElement")(paginationElement.asInstanceOf[js.Any])
+    if (paginationInitialPage != null) __obj.updateDynamic("paginationInitialPage")(paginationInitialPage.asInstanceOf[js.Any])
     if (paginationSize != null) __obj.updateDynamic("paginationSize")(paginationSize.asInstanceOf[js.Any])
     if (paginationSizeSelector != null) __obj.updateDynamic("paginationSizeSelector")(paginationSizeSelector.asInstanceOf[js.Any])
+    if (persistence != null) __obj.updateDynamic("persistence")(persistence.asInstanceOf[js.Any])
     if (persistenceID != null) __obj.updateDynamic("persistenceID")(persistenceID.asInstanceOf[js.Any])
     if (persistenceMode != null) __obj.updateDynamic("persistenceMode")(persistenceMode.asInstanceOf[js.Any])
+    if (persistenceReaderFunc != null) __obj.updateDynamic("persistenceReaderFunc")(js.Any.fromFunction2(persistenceReaderFunc))
+    if (persistenceWriterFunc != null) __obj.updateDynamic("persistenceWriterFunc")(js.Any.fromFunction3(persistenceWriterFunc))
     if (!js.isUndefined(persistentFilter)) __obj.updateDynamic("persistentFilter")(persistentFilter.asInstanceOf[js.Any])
     if (!js.isUndefined(persistentLayout)) __obj.updateDynamic("persistentLayout")(persistentLayout.asInstanceOf[js.Any])
     if (!js.isUndefined(persistentSort)) __obj.updateDynamic("persistentSort")(persistentSort.asInstanceOf[js.Any])
@@ -450,6 +468,7 @@ object Options {
     if (responsiveLayoutCollapseFormatter != null) __obj.updateDynamic("responsiveLayoutCollapseFormatter")(js.Any.fromFunction1(responsiveLayoutCollapseFormatter))
     if (!js.isUndefined(responsiveLayoutCollapseStartOpen)) __obj.updateDynamic("responsiveLayoutCollapseStartOpen")(responsiveLayoutCollapseStartOpen.asInstanceOf[js.Any])
     if (!js.isUndefined(responsiveLayoutCollapseUseFormatters)) __obj.updateDynamic("responsiveLayoutCollapseUseFormatters")(responsiveLayoutCollapseUseFormatters.asInstanceOf[js.Any])
+    if (restoreRedraw != null) __obj.updateDynamic("restoreRedraw")(js.Any.fromFunction0(restoreRedraw))
     if (rowAdded != null) __obj.updateDynamic("rowAdded")(js.Any.fromFunction1(rowAdded))
     if (rowClick != null) __obj.updateDynamic("rowClick")(js.Any.fromFunction2(rowClick))
     if (rowContext != null) __obj.updateDynamic("rowContext")(js.Any.fromFunction2(rowContext))
@@ -470,10 +489,12 @@ object Options {
     if (rowTap != null) __obj.updateDynamic("rowTap")(js.Any.fromFunction2(rowTap))
     if (rowTapHold != null) __obj.updateDynamic("rowTapHold")(js.Any.fromFunction2(rowTapHold))
     if (rowUpdated != null) __obj.updateDynamic("rowUpdated")(js.Any.fromFunction1(rowUpdated))
+    if (scrollHorizontal != null) __obj.updateDynamic("scrollHorizontal")(js.Any.fromFunction1(scrollHorizontal))
     if (!js.isUndefined(scrollToColumnIfVisible)) __obj.updateDynamic("scrollToColumnIfVisible")(scrollToColumnIfVisible.asInstanceOf[js.Any])
     if (scrollToColumnPosition != null) __obj.updateDynamic("scrollToColumnPosition")(scrollToColumnPosition.asInstanceOf[js.Any])
     if (!js.isUndefined(scrollToRowIfVisible)) __obj.updateDynamic("scrollToRowIfVisible")(scrollToRowIfVisible.asInstanceOf[js.Any])
     if (scrollToRowPosition != null) __obj.updateDynamic("scrollToRowPosition")(scrollToRowPosition.asInstanceOf[js.Any])
+    if (scrollVertical != null) __obj.updateDynamic("scrollVertical")(js.Any.fromFunction1(scrollVertical))
     if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
     if (selectableCheck != null) __obj.updateDynamic("selectableCheck")(js.Any.fromFunction1(selectableCheck))
     if (!js.isUndefined(selectablePersistence)) __obj.updateDynamic("selectablePersistence")(selectablePersistence.asInstanceOf[js.Any])

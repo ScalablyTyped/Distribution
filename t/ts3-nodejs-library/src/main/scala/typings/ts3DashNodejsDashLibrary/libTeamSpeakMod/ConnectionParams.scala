@@ -5,6 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ConnectionParams extends js.Object {
+  /** wether it should automatically connect after instanciating (default: true) */
+  var autoConnect: js.UndefOr[Boolean] = js.undefined
   /** the host to connect to (default: 127.0.0.1) */
   var host: String
   /** wether a keepalive should get sent (default: true) */
@@ -35,6 +37,7 @@ object ConnectionParams {
     protocol: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.QueryProtocol,
     queryport: Double,
     readyTimeout: Double,
+    autoConnect: js.UndefOr[Boolean] = js.undefined,
     localAddress: String = null,
     nickname: String = null,
     password: String = null,
@@ -42,6 +45,7 @@ object ConnectionParams {
     username: String = null
   ): ConnectionParams = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], keepAlive = keepAlive.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], queryport = queryport.asInstanceOf[js.Any], readyTimeout = readyTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoConnect)) __obj.updateDynamic("autoConnect")(autoConnect.asInstanceOf[js.Any])
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
     if (nickname != null) __obj.updateDynamic("nickname")(nickname.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])

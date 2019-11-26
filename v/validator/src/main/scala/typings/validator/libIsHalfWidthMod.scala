@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @JSImport("validator/lib/isHalfWidth", JSImport.Namespace)
 @js.native
 object libIsHalfWidthMod extends js.Object {
+  /**
+    * Check if the string contains any half-width chars.
+    */
   def default(str: String): Boolean = js.native
 }
 

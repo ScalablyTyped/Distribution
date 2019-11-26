@@ -74,7 +74,6 @@ import typings.reactDashNative.reactDashNativeStrings.never
 import typings.reactDashNative.reactDashNativeStrings.newPassword
 import typings.reactDashNative.reactDashNativeStrings.nickname
 import typings.reactDashNative.reactDashNativeStrings.no
-import typings.reactDashNative.reactDashNativeStrings.none
 import typings.reactDashNative.reactDashNativeStrings.off
 import typings.reactDashNative.reactDashNativeStrings.oneTimeCode
 import typings.reactDashNative.reactDashNativeStrings.organizationName
@@ -94,6 +93,10 @@ import typings.reactDashNative.reactDashNativeStrings.top
 import typings.reactDashNative.reactDashNativeStrings.username
 import typings.reactDashNative.reactDashNativeStrings.words
 import typings.reactDashNative.reactDashNativeStrings.yes
+import typings.reactDashNativeDashMaterialDashTextfield.reactDashNativeDashMaterialDashTextfieldStrings.dashed
+import typings.reactDashNativeDashMaterialDashTextfield.reactDashNativeDashMaterialDashTextfieldStrings.dotted
+import typings.reactDashNativeDashMaterialDashTextfield.reactDashNativeDashMaterialDashTextfieldStrings.none
+import typings.reactDashNativeDashMaterialDashTextfield.reactDashNativeDashMaterialDashTextfieldStrings.solid
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -108,6 +111,7 @@ trait TextFieldProps extends TextInputProps {
   var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var contentInset: js.UndefOr[ContentInset] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabledLineType: js.UndefOr[solid | dotted | dashed | none] = js.undefined
   var disabledLineWidth: js.UndefOr[Double] = js.undefined
   var error: js.UndefOr[String] = js.undefined
   var errorColor: js.UndefOr[String] = js.undefined
@@ -116,10 +120,12 @@ trait TextFieldProps extends TextInputProps {
   var label: js.UndefOr[String] = js.undefined
   var labelFontSize: js.UndefOr[Double] = js.undefined
   var labelTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+  var lineType: js.UndefOr[solid | dotted | dashed | none] = js.undefined
   var lineWidth: js.UndefOr[Double] = js.undefined
   var onPress: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   var prefix: js.UndefOr[String] = js.undefined
-  var renderAccessory: js.UndefOr[js.Function0[Element]] = js.undefined
+  var renderLeftAccessory: js.UndefOr[js.Function0[Element]] = js.undefined
+  var renderRightAccessory: js.UndefOr[js.Function0[Element]] = js.undefined
   @JSName("style")
   var style_TextFieldProps: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   var suffix: js.UndefOr[String] = js.undefined
@@ -133,12 +139,12 @@ object TextFieldProps {
   @scala.inline
   def apply(
     accessibilityActions: js.Array[AccessibilityActionInfo] = null,
-    accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
+    accessibilityComponentType: typings.reactDashNative.reactDashNativeStrings.none | button | radiobutton_checked | radiobutton_unchecked = null,
     accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
     accessibilityHint: String = null,
     accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined,
     accessibilityLabel: String = null,
-    accessibilityLiveRegion: none | polite | assertive = null,
+    accessibilityLiveRegion: typings.reactDashNative.reactDashNativeStrings.none | polite | assertive = null,
     accessibilityRole: AccessibilityRole = null,
     accessibilityState: AccessibilityState = null,
     accessibilityStates: js.Array[AccessibilityStates] = null,
@@ -149,7 +155,7 @@ object TextFieldProps {
     affixTextStyle: StyleProp[TextStyle] = null,
     allowFontScaling: js.UndefOr[Boolean] = js.undefined,
     animationDuration: Int | Double = null,
-    autoCapitalize: none | sentences | words | characters = null,
+    autoCapitalize: typings.reactDashNative.reactDashNativeStrings.none | sentences | words | characters = null,
     autoCompleteType: `cc-csc` | `cc-exp` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | name | password | `postal-code` | `street-address` | tel | username | off = null,
     autoCorrect: js.UndefOr[Boolean] = js.undefined,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
@@ -167,6 +173,7 @@ object TextFieldProps {
     defaultValue: String = null,
     disableFullscreenUI: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
+    disabledLineType: solid | dotted | dashed | none = null,
     disabledLineWidth: Int | Double = null,
     editable: js.UndefOr[Boolean] = js.undefined,
     enablesReturnKeyAutomatically: js.UndefOr[Boolean] = js.undefined,
@@ -186,6 +193,7 @@ object TextFieldProps {
     label: String = null,
     labelFontSize: Int | Double = null,
     labelTextStyle: StyleProp[TextStyle] = null,
+    lineType: solid | dotted | dashed | none = null,
     lineWidth: Int | Double = null,
     maxFontSizeMultiplier: Int | Double = null,
     maxLength: Int | Double = null,
@@ -227,10 +235,11 @@ object TextFieldProps {
     onTouchStart: /* event */ GestureResponderEvent => Unit = null,
     placeholder: String = null,
     placeholderTextColor: String = null,
-    pointerEvents: `box-none` | none | `box-only` | auto = null,
+    pointerEvents: `box-none` | typings.reactDashNative.reactDashNativeStrings.none | `box-only` | auto = null,
     prefix: String = null,
     removeClippedSubviews: js.UndefOr[Boolean] = js.undefined,
-    renderAccessory: () => Element = null,
+    renderLeftAccessory: () => Element = null,
+    renderRightAccessory: () => Element = null,
     renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined,
     returnKeyLabel: String = null,
     returnKeyType: ReturnKeyTypeOptions = null,
@@ -248,7 +257,7 @@ object TextFieldProps {
     textAlignVertical: auto | top | bottom | center = null,
     textBreakStrategy: simple | highQuality | balanced = null,
     textColor: String = null,
-    textContentType: none | URL | addressCity | addressCityAndState | addressState | countryName | creditCardNumber | emailAddress | familyName | fullStreetAddress | givenName | jobTitle | location | middleName | name | namePrefix | nameSuffix | nickname | organizationName | postalCode | streetAddressLine1 | streetAddressLine2 | sublocality | telephoneNumber | username | password | newPassword | oneTimeCode = null,
+    textContentType: typings.reactDashNative.reactDashNativeStrings.none | URL | addressCity | addressCityAndState | addressState | countryName | creditCardNumber | emailAddress | familyName | fullStreetAddress | givenName | jobTitle | location | middleName | name | namePrefix | nameSuffix | nickname | organizationName | postalCode | streetAddressLine1 | streetAddressLine2 | sublocality | telephoneNumber | username | password | newPassword | oneTimeCode = null,
     tintColor: String = null,
     title: String = null,
     titleTextStyle: StyleProp[TextStyle] = null,
@@ -296,6 +305,7 @@ object TextFieldProps {
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (!js.isUndefined(disableFullscreenUI)) __obj.updateDynamic("disableFullscreenUI")(disableFullscreenUI.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (disabledLineType != null) __obj.updateDynamic("disabledLineType")(disabledLineType.asInstanceOf[js.Any])
     if (disabledLineWidth != null) __obj.updateDynamic("disabledLineWidth")(disabledLineWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
     if (!js.isUndefined(enablesReturnKeyAutomatically)) __obj.updateDynamic("enablesReturnKeyAutomatically")(enablesReturnKeyAutomatically.asInstanceOf[js.Any])
@@ -315,6 +325,7 @@ object TextFieldProps {
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelFontSize != null) __obj.updateDynamic("labelFontSize")(labelFontSize.asInstanceOf[js.Any])
     if (labelTextStyle != null) __obj.updateDynamic("labelTextStyle")(labelTextStyle.asInstanceOf[js.Any])
+    if (lineType != null) __obj.updateDynamic("lineType")(lineType.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (maxFontSizeMultiplier != null) __obj.updateDynamic("maxFontSizeMultiplier")(maxFontSizeMultiplier.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
@@ -359,7 +370,8 @@ object TextFieldProps {
     if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews.asInstanceOf[js.Any])
-    if (renderAccessory != null) __obj.updateDynamic("renderAccessory")(js.Any.fromFunction0(renderAccessory))
+    if (renderLeftAccessory != null) __obj.updateDynamic("renderLeftAccessory")(js.Any.fromFunction0(renderLeftAccessory))
+    if (renderRightAccessory != null) __obj.updateDynamic("renderRightAccessory")(js.Any.fromFunction0(renderRightAccessory))
     if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid.asInstanceOf[js.Any])
     if (returnKeyLabel != null) __obj.updateDynamic("returnKeyLabel")(returnKeyLabel.asInstanceOf[js.Any])
     if (returnKeyType != null) __obj.updateDynamic("returnKeyType")(returnKeyType.asInstanceOf[js.Any])

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "gulp-json-editor"
-version := "v2.2.1-dt-20190322Z-e5af70"
+version := "v2.2.1-dt-20190322Z-9d32c3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "js-beautify" % "1.8.3-dt-20190515Z-957702",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-382692",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191125Z-959704",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

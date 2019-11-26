@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-push-notification"
-version := "3.0-dt-20190805Z-6ccf54"
+version := "3.0-dt-20191126Z-3d6ceb"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

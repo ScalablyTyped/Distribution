@@ -4,6 +4,7 @@ import typings.antd.esMenuMenuContextMod.MenuTheme
 import typings.antd.esMenuMod.ClickParam
 import typings.antd.esMenuMod.MenuMode
 import typings.antd.esMenuMod.SelectParam
+import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.realDark
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sidemenu
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.topmenu
 import typings.atAntDashDesignProDashLayout.esDefaultSettingsMod.ContentWidth
@@ -63,7 +64,6 @@ object esSiderMenuBaseMenuMod extends js.Object {
   /* Inlined parent std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/es/defaultSettings.Settings> */
   @js.native
   trait BaseMenuProps extends js.Object {
-    var autoHideHeader: js.UndefOr[Boolean] = js.native
     var className: js.UndefOr[String] = js.native
     var collapsed: js.UndefOr[Boolean] = js.native
     var computedMatch: js.UndefOr[`match`[Route]] = js.native
@@ -97,7 +97,7 @@ object esSiderMenuBaseMenuMod extends js.Object {
     var mode: js.UndefOr[MenuMode] = js.native
     var motion: js.UndefOr[js.Object] = js.native
     var multiple: js.UndefOr[Boolean] = js.native
-    var navTheme: js.UndefOr[MenuTheme] = js.native
+    var navTheme: js.UndefOr[MenuTheme | realDark] = js.native
     var onClick: js.UndefOr[js.Function1[/* param */ ClickParam, Unit]] = js.native
     var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.native
     var onDeselect: js.UndefOr[js.Function1[/* param */ SelectParam, Unit]] = js.native
@@ -109,6 +109,7 @@ object esSiderMenuBaseMenuMod extends js.Object {
     var openTransitionName: js.UndefOr[String] = js.native
     var overflowedIndicator: js.UndefOr[ReactNode] = js.native
     var prefixCls: js.UndefOr[String] = js.native
+    var primaryColor: js.UndefOr[String] = js.native
     var route: js.UndefOr[Route] = js.native
     var selectable: js.UndefOr[Boolean] = js.native
     var selectedKeys: js.UndefOr[js.Array[String]] = js.native

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "express-brute-mongo"
-version := "0.0-unknown-dt-20190322Z-96440b"
+version := "0.0-unknown-dt-20190322Z-58a210"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bson" % "4.0-dt-20191119Z-d3f21d",
-  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191118Z-baa568",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-382692",
+  "org.scalablytyped" %%% "bson" % "4.0-dt-20191119Z-d1e454",
+  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191118Z-85fa1b",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191125Z-959704",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

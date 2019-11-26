@@ -1,12 +1,12 @@
 package typings.validator
 
-import typings.validator.validatorMod.AlphanumericLocale
-import typings.validator.validatorMod.FloatLocale
-import typings.validator.validatorMod.HashAlgorithm
-import typings.validator.validatorMod.PostalCodeLocale
-import typings.validator.validatorMod.default.AlphaLocale
-import typings.validator.validatorMod.default.IdentityCardLocale
-import typings.validator.validatorMod.default.MobilePhoneLocale
+import typings.validator.validatorMod.validator.AlphaLocale
+import typings.validator.validatorMod.validator.AlphanumericLocale
+import typings.validator.validatorMod.validator.FloatLocale
+import typings.validator.validatorMod.validator.HashAlgorithm
+import typings.validator.validatorMod.validator.IdentityCardLocale
+import typings.validator.validatorMod.validator.MobilePhoneLocale
+import typings.validator.validatorMod.validator.PostalCodeLocale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,266 +31,162 @@ object validatorStrings {
   sealed trait `6` extends js.Object
   
   @js.native
-  sealed trait AD
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait AD extends PostalCodeLocale
   
   @js.native
-  sealed trait AT
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait AT extends PostalCodeLocale
   
   @js.native
-  sealed trait AU
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait AU extends PostalCodeLocale
   
   @js.native
-  sealed trait BE
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait BE extends PostalCodeLocale
   
   @js.native
-  sealed trait BG
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait BG extends PostalCodeLocale
   
   @js.native
-  sealed trait BR
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait BR extends PostalCodeLocale
   
   @js.native
-  sealed trait CA
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait CA extends PostalCodeLocale
   
   @js.native
-  sealed trait CH
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait CH extends PostalCodeLocale
   
   @js.native
-  sealed trait CZ
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait CZ extends PostalCodeLocale
   
   @js.native
-  sealed trait DE
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait DE extends PostalCodeLocale
   
   @js.native
-  sealed trait DK
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait DK extends PostalCodeLocale
   
   @js.native
-  sealed trait DZ
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait DZ extends PostalCodeLocale
   
   @js.native
-  sealed trait EE
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait EE extends PostalCodeLocale
   
   @js.native
   sealed trait ES
     extends IdentityCardLocale
-       with typings.validator.validatorMod.IdentityCardLocale
        with PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
   
   @js.native
-  sealed trait FI
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait FI extends PostalCodeLocale
   
   @js.native
-  sealed trait FR
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait FR extends PostalCodeLocale
   
   @js.native
-  sealed trait GB
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait GB extends PostalCodeLocale
   
   @js.native
-  sealed trait GR
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait GR extends PostalCodeLocale
   
   @js.native
-  sealed trait HR
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait HR extends PostalCodeLocale
   
   @js.native
-  sealed trait HU
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait HU extends PostalCodeLocale
   
   @js.native
-  sealed trait ID
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait ID extends PostalCodeLocale
   
   @js.native
-  sealed trait IE
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait IE extends PostalCodeLocale
   
   @js.native
-  sealed trait IL
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait IL extends PostalCodeLocale
   
   @js.native
-  sealed trait IN
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait IN extends PostalCodeLocale
   
   @js.native
-  sealed trait IS
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait IS extends PostalCodeLocale
   
   @js.native
-  sealed trait IT
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait IT extends PostalCodeLocale
   
   @js.native
-  sealed trait JP
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait JP extends PostalCodeLocale
   
   @js.native
-  sealed trait KE
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait KE extends PostalCodeLocale
   
   @js.native
-  sealed trait LI
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait LI extends PostalCodeLocale
   
   @js.native
-  sealed trait LT
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait LT extends PostalCodeLocale
   
   @js.native
-  sealed trait LU
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait LU extends PostalCodeLocale
   
   @js.native
-  sealed trait LV
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait LV extends PostalCodeLocale
   
   @js.native
-  sealed trait MT
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait MT extends PostalCodeLocale
   
   @js.native
-  sealed trait MX
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait MX extends PostalCodeLocale
   
   @js.native
-  sealed trait NL
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait NL extends PostalCodeLocale
   
   @js.native
-  sealed trait NO
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait NO extends PostalCodeLocale
   
   @js.native
-  sealed trait NZ
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait NZ extends PostalCodeLocale
   
   @js.native
-  sealed trait PL
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait PL extends PostalCodeLocale
   
   @js.native
-  sealed trait PR
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait PR extends PostalCodeLocale
   
   @js.native
-  sealed trait PT
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait PT extends PostalCodeLocale
   
   @js.native
-  sealed trait RO
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait RO extends PostalCodeLocale
   
   @js.native
-  sealed trait RU
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait RU extends PostalCodeLocale
   
   @js.native
-  sealed trait SA
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait SA extends PostalCodeLocale
   
   @js.native
-  sealed trait SE
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait SE extends PostalCodeLocale
   
   @js.native
-  sealed trait SI
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait SI extends PostalCodeLocale
   
   @js.native
-  sealed trait SK
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait SK extends PostalCodeLocale
   
   @js.native
-  sealed trait TN
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait TN extends PostalCodeLocale
   
   @js.native
-  sealed trait TW
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait TW extends PostalCodeLocale
   
   @js.native
-  sealed trait UA
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait UA extends PostalCodeLocale
   
   @js.native
-  sealed trait US
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait US extends PostalCodeLocale
   
   @js.native
-  sealed trait ZA
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait ZA extends PostalCodeLocale
   
   @js.native
-  sealed trait ZM
-    extends PostalCodeLocale
-       with typings.validator.validatorMod.default.PostalCodeLocale
+  sealed trait ZM extends PostalCodeLocale
   
   @js.native
   sealed trait all extends js.Object
@@ -301,849 +197,536 @@ object validatorStrings {
   @js.native
   sealed trait ar
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
   
   @js.native
   sealed trait `ar-AE`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `ar-BH`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `ar-DZ`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `ar-EG`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `ar-IQ`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `ar-JO`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `ar-KW`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `ar-LB`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
   
   @js.native
   sealed trait `ar-LY`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
   
   @js.native
   sealed trait `ar-MA`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
   
   @js.native
   sealed trait `ar-QA`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
   
   @js.native
   sealed trait `ar-QM`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
   
   @js.native
   sealed trait `ar-SA`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `ar-SD`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
   
   @js.native
   sealed trait `ar-SY`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `ar-TN`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `ar-YE`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
   
   @js.native
-  sealed trait `be-BY`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `be-BY` extends MobilePhoneLocale
   
   @js.native
   sealed trait `bg-BG`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
-  sealed trait `bn-BD`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `bn-BD` extends MobilePhoneLocale
   
   @js.native
-  sealed trait crc32
-    extends HashAlgorithm
-       with typings.validator.validatorMod.default.HashAlgorithm
+  sealed trait crc32 extends HashAlgorithm
   
   @js.native
-  sealed trait crc32b
-    extends HashAlgorithm
-       with typings.validator.validatorMod.default.HashAlgorithm
+  sealed trait crc32b extends HashAlgorithm
   
   @js.native
   sealed trait `cs-CZ`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `da-DK`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
-  sealed trait `de-AT`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `de-AT` extends MobilePhoneLocale
   
   @js.native
   sealed trait `de-DE`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `el-GR`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `en-AU`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
-  sealed trait `en-CA`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `en-CA` extends MobilePhoneLocale
   
   @js.native
   sealed trait `en-GB`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
-  sealed trait `en-GG`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `en-GG` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `en-GH`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `en-GH` extends MobilePhoneLocale
   
   @js.native
   sealed trait `en-HK`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
-  sealed trait `en-IE`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `en-IE` extends MobilePhoneLocale
   
   @js.native
   sealed trait `en-IN`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
-  sealed trait `en-KE`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `en-KE` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `en-MT`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `en-MT` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `en-MU`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `en-MU` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `en-NG`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `en-NG` extends MobilePhoneLocale
   
   @js.native
   sealed trait `en-NZ`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
-  sealed trait `en-PK`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `en-PK` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `en-RW`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `en-RW` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `en-SG`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `en-SG` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `en-TZ`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `en-TZ` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `en-UG`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `en-UG` extends MobilePhoneLocale
   
   @js.native
   sealed trait `en-US`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `en-ZA`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `en-ZM`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
-  sealed trait `es-CL`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `es-CL` extends MobilePhoneLocale
   
   @js.native
   sealed trait `es-ES`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
-  sealed trait `es-MX`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `es-MX` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `es-PA`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `es-PA` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `es-PY`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `es-PY` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `es-UY`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `es-UY` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `et-EE`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `et-EE` extends MobilePhoneLocale
   
   @js.native
   sealed trait `fa-IR`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
-  sealed trait `fi-FI`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `fi-FI` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `fj-FJ`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `fj-FJ` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `fo-FO`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `fo-FO` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `fr-BE`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `fr-BE` extends MobilePhoneLocale
   
   @js.native
   sealed trait `fr-FR`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
-  sealed trait `fr-GF`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `fr-GF` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `fr-GP`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `fr-GP` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `fr-MQ`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `fr-MQ` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `fr-RE`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `fr-RE` extends MobilePhoneLocale
   
   @js.native
   sealed trait he
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
   
   @js.native
   sealed trait `he-IL`
     extends IdentityCardLocale
-       with typings.validator.validatorMod.IdentityCardLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `hu-HU`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
-  sealed trait `id-ID`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `id-ID` extends MobilePhoneLocale
   
   @js.native
   sealed trait `it-IT`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
-  sealed trait `ja-JP`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `ja-JP` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `kk-KZ`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `kk-KZ` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `kl-GL`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `kl-GL` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `ko-KR`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `ko-KR` extends MobilePhoneLocale
   
   @js.native
   sealed trait `ku-IQ`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
   
   @js.native
-  sealed trait `lt-LT`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `lt-LT` extends MobilePhoneLocale
   
   @js.native
-  sealed trait md4
-    extends HashAlgorithm
-       with typings.validator.validatorMod.default.HashAlgorithm
+  sealed trait md4 extends HashAlgorithm
   
   @js.native
-  sealed trait md5
-    extends HashAlgorithm
-       with typings.validator.validatorMod.default.HashAlgorithm
+  sealed trait md5 extends HashAlgorithm
   
   @js.native
-  sealed trait `ms-MY`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `ms-MY` extends MobilePhoneLocale
   
   @js.native
   sealed trait `nb-NO`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
-  sealed trait `nl-BE`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `nl-BE` extends MobilePhoneLocale
   
   @js.native
   sealed trait `nl-NL`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `nn-NO`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `pl-PL`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `pl-Pl_`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
   
   @js.native
   sealed trait `pt-BR`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `pt-PT`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
-  sealed trait ripemd128
-    extends HashAlgorithm
-       with typings.validator.validatorMod.default.HashAlgorithm
+  sealed trait ripemd128 extends HashAlgorithm
   
   @js.native
-  sealed trait ripemd160
-    extends HashAlgorithm
-       with typings.validator.validatorMod.default.HashAlgorithm
+  sealed trait ripemd160 extends HashAlgorithm
   
   @js.native
-  sealed trait `ro-RO`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `ro-RO` extends MobilePhoneLocale
   
   @js.native
   sealed trait `ru-RU`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
-  sealed trait sha1
-    extends HashAlgorithm
-       with typings.validator.validatorMod.default.HashAlgorithm
+  sealed trait sha1 extends HashAlgorithm
   
   @js.native
-  sealed trait sha256
-    extends HashAlgorithm
-       with typings.validator.validatorMod.default.HashAlgorithm
+  sealed trait sha256 extends HashAlgorithm
   
   @js.native
-  sealed trait sha384
-    extends HashAlgorithm
-       with typings.validator.validatorMod.default.HashAlgorithm
+  sealed trait sha384 extends HashAlgorithm
   
   @js.native
-  sealed trait sha512
-    extends HashAlgorithm
-       with typings.validator.validatorMod.default.HashAlgorithm
+  sealed trait sha512 extends HashAlgorithm
   
   @js.native
   sealed trait `sk-SK`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `sl-SI`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `sr-RS`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `sr-RS@latin`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
   
   @js.native
   sealed trait `sv-SE`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
-  sealed trait `th-TH`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `th-TH` extends MobilePhoneLocale
   
   @js.native
-  sealed trait tiger128
-    extends HashAlgorithm
-       with typings.validator.validatorMod.default.HashAlgorithm
+  sealed trait tiger128 extends HashAlgorithm
   
   @js.native
-  sealed trait tiger160
-    extends HashAlgorithm
-       with typings.validator.validatorMod.default.HashAlgorithm
+  sealed trait tiger160 extends HashAlgorithm
   
   @js.native
-  sealed trait tiger192
-    extends HashAlgorithm
-       with typings.validator.validatorMod.default.HashAlgorithm
+  sealed trait tiger192 extends HashAlgorithm
   
   @js.native
   sealed trait `tr-TR`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
   sealed trait `uk-UA`
     extends AlphaLocale
-       with typings.validator.validatorMod.AlphaLocale
        with AlphanumericLocale
-       with typings.validator.validatorMod.default.AlphanumericLocale
        with FloatLocale
-       with typings.validator.validatorMod.default.FloatLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @js.native
-  sealed trait `vi-VN`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `vi-VN` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `zh-CN`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `zh-CN` extends MobilePhoneLocale
   
   @js.native
-  sealed trait `zh-HK`
-    extends MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
+  sealed trait `zh-HK` extends MobilePhoneLocale
   
   @js.native
   sealed trait `zh-TW`
     extends IdentityCardLocale
-       with typings.validator.validatorMod.IdentityCardLocale
        with MobilePhoneLocale
-       with typings.validator.validatorMod.MobilePhoneLocale
   
   @scala.inline
   def `10`: `10` = "10".asInstanceOf[`10`]

@@ -3,6 +3,7 @@ package typings.menubar.libTypesMod
 import typings.electron.Electron.BrowserWindowConstructorOptions
 import typings.electron.Electron.NativeImage
 import typings.electron.electronMod.Tray
+import typings.menubar.menubarNumbers.`false`
 import typings.menubar.menubarStrings.bottomCenter
 import typings.menubar.menubarStrings.bottomLeft
 import typings.menubar.menubarStrings.bottomRight
@@ -48,9 +49,14 @@ trait Options extends js.Object {
     */
   var icon: js.UndefOr[String | NativeImage] = js.undefined
   /**
-    * The html to load for the pop up window.
+    * The URL to load the menubar's browserWindow with. The url can be a remote
+    * address (e.g. `http://`) or a path to a local HTML file using the
+    * `file://` protocol. If false, then menubar won't call `loadUrl` on
+    * start.
+    * @default `file:// + options.dir + index.html`
+    * @see https://electronjs.org/docs/api/browser-window#winloadurlurl-options
     */
-  var index: String
+  var index: String | `false`
   /**
     * Create BrowserWindow instance before it is used -- increasing resource
     * usage, but making the click on the menubar load faster.
@@ -92,7 +98,7 @@ object Options {
   def apply(
     browserWindow: BrowserWindowConstructorOptions,
     dir: String,
-    index: String,
+    index: String | `false`,
     tooltip: String,
     icon: String | NativeImage = null,
     preloadWindow: js.UndefOr[Boolean] = js.undefined,

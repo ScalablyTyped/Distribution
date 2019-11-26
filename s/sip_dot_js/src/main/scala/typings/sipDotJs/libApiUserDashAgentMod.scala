@@ -1,18 +1,20 @@
 package typings.sipDotJs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.sipDotJs.libApiEmitterMod.Emitter
 import typings.sipDotJs.libApiInviterDashOptionsMod.InviterOptions
 import typings.sipDotJs.libApiInviterMod.Inviter
 import typings.sipDotJs.libApiPublisherMod.Publisher
 import typings.sipDotJs.libApiRegistererMod.Registerer
 import typings.sipDotJs.libApiSessionMod.Session
 import typings.sipDotJs.libApiSubscriptionMod.Subscription
+import typings.sipDotJs.libApiTransportMod.Transport
 import typings.sipDotJs.libApiUserDashAgentDashDelegateMod.UserAgentDelegate
 import typings.sipDotJs.libApiUserDashAgentDashOptionsMod.UserAgentOptions
+import typings.sipDotJs.libApiUserDashAgentDashStateMod.UserAgentState
 import typings.sipDotJs.libCoreMod.IncomingRequestMessage
 import typings.sipDotJs.libCoreMod.Logger
 import typings.sipDotJs.libCoreMod.LoggerFactory
-import typings.sipDotJs.libCoreMod.Transport
 import typings.sipDotJs.libCoreMod.URI
 import typings.sipDotJs.libCoreMod.UserAgentCore
 import typings.sipDotJs.libCoreUserDashAgentDashCoreUserDashAgentDashCoreDashConfigurationMod.Contact
@@ -32,36 +34,45 @@ object libApiUserDashAgentMod extends js.Object {
     */
   class UserAgent () extends js.Object {
     def this(options: Partial[UserAgentOptions]) = this()
+    var _contact: js.Any = js.native
     var _state: js.Any = js.native
     var _stateEventEmitter: js.Any = js.native
-    /** @internal */
-    var applicants: StringDictionary[Inviter] = js.native
+    var _stateInitial: js.Any = js.native
+    var _transport: js.Any = js.native
+    var _userAgentCore: js.Any = js.native
+    /**
+      * Attempt reconnection up to `maxReconnectionAttempts` times.
+      * @param reconnectionAttempt - Current attempt number.
+      */
+    var attemptReconnection: js.Any = js.native
     /**
       * User agent configuration.
       */
     val configuration: Required[UserAgentOptions] = js.native
-    /** @internal */
-    var contact: Contact = js.native
+    /**
+      * User agent contact.
+      */
+    val contact: Contact = js.native
     /** @internal */
     var data: js.Any = js.native
     /** Delegate. */
     var delegate: js.UndefOr[UserAgentDelegate] = js.native
+    /**
+      * Initialize contact.
+      */
     var initContact: js.Any = js.native
+    /**
+      * Initialize user agent core.
+      */
     var initCore: js.Any = js.native
+    var initTransportCallbacks: js.Any = js.native
     /** Logger. */
     var logger: js.Any = js.native
     /** LoggerFactory. */
     var loggerFactory: js.Any = js.native
-    /**
-      * Transport connection event.
-      */
-    var onTransportConnected: js.Any = js.native
-    var onTransportError: js.Any = js.native
-    /**
-      * Handle SIP message received from the transport.
-      * @param messageString - The message.
-      */
-    var onTransportReceiveMsg: js.Any = js.native
+    var onTransportConnect: js.Any = js.native
+    var onTransportDisconnect: js.Any = js.native
+    var onTransportMessage: js.Any = js.native
     /** Options. */
     var options: js.Any = js.native
     /** @internal */
@@ -71,19 +82,29 @@ object libApiUserDashAgentMod extends js.Object {
     /** @internal */
     var sessions: StringDictionary[Session] = js.native
     /**
-      * Helper function. Sets transport listeners
+      * User agent state.
       */
-    var setTransportListeners: js.Any = js.native
-    /** @internal */
-    var status: js.Any = js.native
+    val state: UserAgentState = js.native
+    /**
+      * User agent state change emitter.
+      */
+    val stateChange: Emitter[UserAgentState] = js.native
     /** @internal */
     var subscriptions: StringDictionary[Subscription] = js.native
-    /** @internal */
-    var transport: Transport = js.native
+    /**
+      * Transition state.
+      */
+    var transitionState: js.Any = js.native
+    /**
+      * User agent transport.
+      */
+    val transport: Transport = js.native
     /** Unload listener. */
     var unloadListener: js.Any = js.native
-    /** @internal */
-    var userAgentCore: UserAgentCore = js.native
+    /**
+      * User agent core.
+      */
+    val userAgentCore: UserAgentCore = js.native
     /** @internal */
     def findSession(request: IncomingRequestMessage): js.UndefOr[Session] = js.native
     /** @internal */
@@ -93,21 +114,45 @@ object libApiUserDashAgentMod extends js.Object {
     def getLoggerFactory(): LoggerFactory = js.native
     /** @internal */
     def getSupportedResponseOptions(): js.Array[String] = js.native
-    /** @internal */
+    /**
+      * True if transport is connected.
+      */
+    def isConnected(): Boolean = js.native
+    /**
+      * Used to avoid circular references.
+      * @internal
+      */
     def makeInviter(targetURI: URI): Inviter = js.native
     def makeInviter(targetURI: URI, options: InviterOptions): Inviter = js.native
     /**
-      * Connect user agent to network transport.
+      * Reconnect the transport.
+      */
+    def reconnect(): js.Promise[Unit] = js.native
+    /**
+      * Start the user agent.
+      *
       * @remarks
-      * Connect to the WS server if status = STATUS_INIT.
-      * Resume UA after being closed.
+      * Resolves if transport connects, otherwise rejects.
+      *
+      * @example
+      * ```ts
+      * userAgent.start()
+      *   .then(() => {
+      *     // userAgent.isConnected() === true
+      *   })
+      *   .catch((error: Error) => {
+      *     // userAgent.isConnected() === false
+      *   });
+      * ```
       */
     def start(): js.Promise[Unit] = js.native
     /**
-      * Gracefully close.
-      * Gracefully disconnect from network transport.
+      * Stop the user agent.
+      *
       * @remarks
-      * Unregisters and terminates active sessions/subscriptions.
+      * Resolves when the user agent has completed a graceful shutdown.
+      *
+      * Registerers unregister. Sessions terminate. Subscribers unsubscribe. Publishers unpublish.
       */
     def stop(): js.Promise[Unit] = js.native
   }

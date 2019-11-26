@@ -1,7 +1,7 @@
 
 # Scala.js typings for formatjs__macro
 
-Typings are for version 0.2.4
+Typings are for version 0.2.5
 
 ## Library description:
 formatjs-related compiler macros

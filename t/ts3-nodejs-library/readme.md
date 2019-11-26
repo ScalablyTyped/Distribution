@@ -1,7 +1,7 @@
 
 # Scala.js typings for ts3-nodejs-library
 
-Typings are for version 2.2.0
+Typings are for version 2.3.0
 
 ## Library description:
 TeamSpeak3 Server Query API

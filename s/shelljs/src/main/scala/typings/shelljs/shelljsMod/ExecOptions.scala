@@ -1,6 +1,7 @@
 package typings.shelljs.shelljsMod
 
 import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.Signals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,7 +48,7 @@ object ExecOptions {
     env: ProcessEnv = null,
     fatal: js.UndefOr[Boolean] = js.undefined,
     gid: Int | Double = null,
-    killSignal: String = null,
+    killSignal: Signals | Double = null,
     maxBuffer: Int | Double = null,
     shell: String = null,
     silent: js.UndefOr[Boolean] = js.undefined,

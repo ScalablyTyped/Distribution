@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @JSImport("validator/lib/isLowercase", JSImport.Namespace)
 @js.native
 object libIsLowercaseMod extends js.Object {
+  /**
+    * Check if the string is lowercase.
+    */
   def default(str: String): Boolean = js.native
 }
 

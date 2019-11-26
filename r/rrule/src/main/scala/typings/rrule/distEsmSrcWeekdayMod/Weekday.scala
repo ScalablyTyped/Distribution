@@ -17,3 +17,10 @@ class Weekday protected () extends _ByWeekday {
   def nth(n: Double): Weekday = js.native
 }
 
+/* static members */
+@JSImport("rrule/dist/esm/src/weekday", "Weekday")
+@js.native
+object Weekday extends js.Object {
+  def fromStr(str: WeekdayStr): Weekday = js.native
+}
+

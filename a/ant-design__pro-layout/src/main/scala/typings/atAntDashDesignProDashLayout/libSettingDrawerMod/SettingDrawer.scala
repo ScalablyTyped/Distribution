@@ -1,5 +1,6 @@
 package typings.atAntDashDesignProDashLayout.libSettingDrawerMod
 
+import typings.atAntDashDesignProDashLayout.Anon_ColorList
 import typings.atAntDashDesignProDashLayout.Anon_DefaultMessage
 import typings.react.reactMod.Component
 import typings.react.reactMod._Global_.JSX.Element
@@ -18,8 +19,11 @@ trait SettingDrawer
   def componentWillUnmount_MSettingDrawer(): Unit = js.native
   def getFormatMessage(): js.Function1[/* data */ Anon_DefaultMessage, String] = js.native
   def getLayoutSetting(): js.Array[SettingItemProps] = js.native
+  def getThemeList(): Anon_ColorList = js.native
   def onLanguageChange(): Unit = js.native
   def renderLayoutSettingItem(item: SettingItemProps): Element = js.native
   def togglerContent(): Unit = js.native
+  def updateTheme(dark: Boolean): Unit = js.native
+  def updateTheme(dark: Boolean, color: String): Unit = js.native
 }
 

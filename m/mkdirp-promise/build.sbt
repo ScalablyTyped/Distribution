@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "mkdirp-promise"
-version := "5.0-dt-20180515Z-3c3a05"
+version := "5.0-dt-20180515Z-1fa7f8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "mkdirp" % "0.5-dt-20180214Z-c50487",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-382692",
+  "org.scalablytyped" %%% "mkdirp" % "0.5-dt-20180214Z-4205b1",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191125Z-959704",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-dnd-html5-backend
 
-Typings are for version 9.4.0
+Typings are for version 9.5.1
 
 ## Library description:
 HTML5 backend for React DnD

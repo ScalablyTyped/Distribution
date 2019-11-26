@@ -1,6 +1,7 @@
 package typings.node.childUnderscoreProcessMod
 
 import typings.node.Error
+import typings.node.NodeJS.Signals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ trait ExecException extends Error {
   var cmd: js.UndefOr[java.lang.String] = js.undefined
   var code: js.UndefOr[Double] = js.undefined
   var killed: js.UndefOr[Boolean] = js.undefined
-  var signal: js.UndefOr[java.lang.String] = js.undefined
+  var signal: js.UndefOr[Signals] = js.undefined
 }
 
 object ExecException {
@@ -18,7 +19,7 @@ object ExecException {
     cmd: java.lang.String = null,
     code: Int | Double = null,
     killed: js.UndefOr[Boolean] = js.undefined,
-    signal: java.lang.String = null,
+    signal: Signals = null,
     stack: java.lang.String = null
   ): ExecException = {
     val __obj = js.Dynamic.literal()

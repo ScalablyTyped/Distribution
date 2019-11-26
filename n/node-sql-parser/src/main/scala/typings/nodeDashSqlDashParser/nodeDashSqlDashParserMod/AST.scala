@@ -6,7 +6,7 @@ import typings.nodeDashSqlDashParser.nodeDashSqlDashParserStrings.delete
 import typings.nodeDashSqlDashParser.nodeDashSqlDashParserStrings.insert
 import typings.nodeDashSqlDashParser.nodeDashSqlDashParserStrings.replace
 import typings.nodeDashSqlDashParser.nodeDashSqlDashParserStrings.select
-import typings.nodeDashSqlDashParser.nodeDashSqlDashParserStrings.udpate
+import typings.nodeDashSqlDashParser.nodeDashSqlDashParserStrings.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,15 +22,22 @@ trait AST extends js.Object
 
 object AST {
   @scala.inline
-  def Update(set: js.Array[SetList], table: String, `type`: udpate, where: js.Any, db: String = null): AST = {
-    val __obj = js.Dynamic.literal(set = set.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any])
+  def Update(
+    set: js.Array[SetList],
+    `type`: update,
+    where: js.Any,
+    db: String = null,
+    table: js.Array[From | Dual] = null
+  ): AST = {
+    val __obj = js.Dynamic.literal(set = set.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (db != null) __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[AST]
   }
   @scala.inline
-  def Delete(from: js.Array[From | Dual], tables: js.Any, `type`: delete, where: js.Any): AST = {
-    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], tables = tables.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any])
+  def Delete(from: js.Array[From | Dual], table: js.Any, `type`: delete, where: js.Any): AST = {
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AST]
   }

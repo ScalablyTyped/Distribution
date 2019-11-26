@@ -25,6 +25,18 @@ object intlDashMessageformatDashParserStrings {
        with typings.intlDashMessageformatDashParser.intlDashMessageformatDashParserMod._ValidPluralRule
   
   @js.native
+  sealed trait h11 extends js.Object
+  
+  @js.native
+  sealed trait h12 extends js.Object
+  
+  @js.native
+  sealed trait h23 extends js.Object
+  
+  @js.native
+  sealed trait h24 extends js.Object
+  
+  @js.native
   sealed trait literal extends js.Object
   
   @js.native
@@ -70,6 +82,14 @@ object intlDashMessageformatDashParserStrings {
   def end: end = "end".asInstanceOf[end]
   @scala.inline
   def few: few = "few".asInstanceOf[few]
+  @scala.inline
+  def h11: h11 = "h11".asInstanceOf[h11]
+  @scala.inline
+  def h12: h12 = "h12".asInstanceOf[h12]
+  @scala.inline
+  def h23: h23 = "h23".asInstanceOf[h23]
+  @scala.inline
+  def h24: h24 = "h24".asInstanceOf[h24]
   @scala.inline
   def literal: literal = "literal".asInstanceOf[literal]
   @scala.inline

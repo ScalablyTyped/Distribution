@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "formatjs__macro"
-version := "0.2.4-4d8057"
+version := "0.2.5-3d1d3c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

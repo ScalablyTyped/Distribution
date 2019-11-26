@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "intl-format-cache"
-version := "4.2.8-e0a49b"
+version := "4.2.10-ac5ca7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

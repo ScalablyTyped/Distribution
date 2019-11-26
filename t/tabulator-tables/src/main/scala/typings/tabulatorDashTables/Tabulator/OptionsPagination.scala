@@ -38,6 +38,8 @@ trait OptionsPagination extends js.Object {
   var paginationDataSent: js.UndefOr[Record[String, String]] = js.undefined
   /**  By default the pagination controls are added to the footer of the table. If you wish the controls to be created in another element pass a DOM node or a CSS selector for that element to the paginationElement option.*/
   var paginationElement: js.UndefOr[HTMLElement | String] = js.undefined
+  /** Specify that a specific page should be loaded when the table first load */
+  var paginationInitialPage: js.UndefOr[Double] = js.undefined
   /** Set the number of rows in each page	 */
   var paginationSize: js.UndefOr[Double] = js.undefined
   /**  Setting this option to true will cause Tabulator to create a list of page size options, that are multiples of the current page size. In the example below, the list will have the values of 5, 10, 15 and 20.
@@ -54,6 +56,7 @@ object OptionsPagination {
     paginationDataReceived: Record[String, String] = null,
     paginationDataSent: Record[String, String] = null,
     paginationElement: HTMLElement | String = null,
+    paginationInitialPage: Int | Double = null,
     paginationSize: Int | Double = null,
     paginationSizeSelector: `true` | js.Array[Double] = null
   ): OptionsPagination = {
@@ -64,6 +67,7 @@ object OptionsPagination {
     if (paginationDataReceived != null) __obj.updateDynamic("paginationDataReceived")(paginationDataReceived.asInstanceOf[js.Any])
     if (paginationDataSent != null) __obj.updateDynamic("paginationDataSent")(paginationDataSent.asInstanceOf[js.Any])
     if (paginationElement != null) __obj.updateDynamic("paginationElement")(paginationElement.asInstanceOf[js.Any])
+    if (paginationInitialPage != null) __obj.updateDynamic("paginationInitialPage")(paginationInitialPage.asInstanceOf[js.Any])
     if (paginationSize != null) __obj.updateDynamic("paginationSize")(paginationSize.asInstanceOf[js.Any])
     if (paginationSizeSelector != null) __obj.updateDynamic("paginationSizeSelector")(paginationSizeSelector.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsPagination]

@@ -4,6 +4,7 @@ import typings.antd.esMenuMenuContextMod.MenuTheme
 import typings.antd.esMenuMod.ClickParam
 import typings.antd.esMenuMod.MenuMode
 import typings.antd.esMenuMod.SelectParam
+import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.realDark
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sidemenu
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.topmenu
 import typings.atAntDashDesignProDashLayout.esDefaultSettingsMod.ContentWidth
@@ -26,7 +27,6 @@ import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/es/SiderMenu/BaseMenu.BaseMenuProps> */
 trait PartialBaseMenuProps extends js.Object {
-  var autoHideHeader: js.UndefOr[Boolean] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var collapsed: js.UndefOr[Boolean] = js.undefined
   var computedMatch: js.UndefOr[`match`[Route]] = js.undefined
@@ -60,7 +60,7 @@ trait PartialBaseMenuProps extends js.Object {
   var mode: js.UndefOr[MenuMode] = js.undefined
   var motion: js.UndefOr[js.Object] = js.undefined
   var multiple: js.UndefOr[Boolean] = js.undefined
-  var navTheme: js.UndefOr[MenuTheme] = js.undefined
+  var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* param */ ClickParam, Unit]] = js.undefined
   var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.undefined
   var onDeselect: js.UndefOr[js.Function1[/* param */ SelectParam, Unit]] = js.undefined
@@ -72,6 +72,7 @@ trait PartialBaseMenuProps extends js.Object {
   var openTransitionName: js.UndefOr[String] = js.undefined
   var overflowedIndicator: js.UndefOr[ReactNode] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
+  var primaryColor: js.UndefOr[String] = js.undefined
   var route: js.UndefOr[Route] = js.undefined
   var selectable: js.UndefOr[Boolean] = js.undefined
   var selectedKeys: js.UndefOr[js.Array[String]] = js.undefined
@@ -86,7 +87,6 @@ trait PartialBaseMenuProps extends js.Object {
 object PartialBaseMenuProps {
   @scala.inline
   def apply(
-    autoHideHeader: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     collapsed: js.UndefOr[Boolean] = js.undefined,
     computedMatch: `match`[Route] = null,
@@ -118,7 +118,7 @@ object PartialBaseMenuProps {
     mode: MenuMode = null,
     motion: js.Object = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
-    navTheme: MenuTheme = null,
+    navTheme: MenuTheme | realDark = null,
     onClick: /* param */ ClickParam => Unit = null,
     onCollapse: /* collapsed */ Boolean => Unit = null,
     onDeselect: /* param */ SelectParam => Unit = null,
@@ -130,6 +130,7 @@ object PartialBaseMenuProps {
     openTransitionName: String = null,
     overflowedIndicator: ReactNode = null,
     prefixCls: String = null,
+    primaryColor: String = null,
     route: Route = null,
     selectable: js.UndefOr[Boolean] = js.undefined,
     selectedKeys: js.Array[String] = null,
@@ -141,7 +142,6 @@ object PartialBaseMenuProps {
     title: String = null
   ): PartialBaseMenuProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoHideHeader)) __obj.updateDynamic("autoHideHeader")(autoHideHeader.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
     if (computedMatch != null) __obj.updateDynamic("computedMatch")(computedMatch.asInstanceOf[js.Any])
@@ -183,6 +183,7 @@ object PartialBaseMenuProps {
     if (openTransitionName != null) __obj.updateDynamic("openTransitionName")(openTransitionName.asInstanceOf[js.Any])
     if (overflowedIndicator != null) __obj.updateDynamic("overflowedIndicator")(overflowedIndicator.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
+    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor.asInstanceOf[js.Any])
     if (route != null) __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
     if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
     if (selectedKeys != null) __obj.updateDynamic("selectedKeys")(selectedKeys.asInstanceOf[js.Any])

@@ -1,6 +1,7 @@
 package typings.sipDotJs
 
 import typings.sipDotJs.libApiEmitterMod.Emitter
+import typings.sipDotJs.libApiInviterDashOptionsMod.InviterOptions
 import typings.sipDotJs.libApiInviterMod.Inviter
 import typings.sipDotJs.libApiReferrerMod.Referrer
 import typings.sipDotJs.libApiSessionDashDelegateMod.SessionDelegate
@@ -12,7 +13,6 @@ import typings.sipDotJs.libApiSessionDashInviteDashOptionsMod.SessionInviteOptio
 import typings.sipDotJs.libApiSessionDashOptionsMod.SessionOptions
 import typings.sipDotJs.libApiSessionDashStateMod.SessionState
 import typings.sipDotJs.libApiSessionMod.Session
-import typings.sipDotJs.libApiSessionMod._SessionStatus
 import typings.sipDotJs.libApiUserDashAgentMod.UserAgent
 import typings.sipDotJs.libCoreMessagesBodyMod.Body
 import typings.sipDotJs.libCoreMessagesMethodsAckMod.IncomingAckRequest
@@ -27,13 +27,8 @@ import typings.sipDotJs.libCoreMessagesMethodsPrackMod.IncomingPrackRequest
 import typings.sipDotJs.libCoreMessagesMethodsReferMod.IncomingReferRequest
 import typings.sipDotJs.libCoreMessagesOutgoingDashRequestMod.OutgoingRequestDelegate
 import typings.sipDotJs.libCoreMessagesOutgoingDashRequestMod.RequestOptions
-import typings.sipDotJs.libCoreMod.IncomingRequestMessage
 import typings.sipDotJs.libCoreMod.Logger
 import typings.sipDotJs.libCoreMod.NameAddrHeader
-import typings.sipDotJs.sipDotJsStrings.none
-import typings.sipDotJs.sipDotJsStrings.required
-import typings.sipDotJs.sipDotJsStrings.supported
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,8 +45,11 @@ object libApiSessionMod extends js.Object {
       */
     protected def this(userAgent: UserAgent) = this()
     protected def this(userAgent: UserAgent, options: SessionOptions) = this()
+    /** Dialogs session description handler. */
     var _sessionDescriptionHandler: js.Any = js.native
+    /** Session state. */
     var _state: js.Any = js.native
+    /** Session state emitter. */
     var _stateEventEmitter: js.Any = js.native
     /** @internal */
     var assertedIdentity: js.UndefOr[NameAddrHeader] = js.native
@@ -75,38 +73,31 @@ object libApiSessionMod extends js.Object {
       * The confirmed session dialog.
       */
     var dialog: js.UndefOr[typings.sipDotJs.libCoreSessionSessionMod.Session] = js.native
-    /** @internal */
-    var earlySdp: js.UndefOr[String] = js.native
-    /** Terminated time. */
-    /** @internal */
-    var endTime: js.UndefOr[Date] = js.native
-    /** @internal */
-    var expiresTimer: js.Any = js.native
-    /** @internal */
-    var fromTag: js.UndefOr[String] = js.native
     var getReasonHeaderValue: js.Any = js.native
-    /** @internal */
+    /**
+      * Unique identifier for this session.
+      * @internal
+      */
     var id: js.UndefOr[String] = js.native
-    /** True if an error caused session termination. */
-    /** @internal */
-    var isFailed: Boolean = js.native
-    /** @internal */
-    var localHold: Boolean = js.native
     /** @internal */
     var localIdentity: NameAddrHeader = js.native
-    /** @internal */
+    /**
+      * Logger.
+      * @internal
+      */
     var logger: Logger = js.native
-    /** @internal */
-    var onInfo: js.UndefOr[js.Function1[/* request */ IncomingRequestMessage, Unit]] = js.native
-    /** @internal */
-    var passedOptions: js.Any = js.native
+    /** True if there is a re-INVITE request outstanding. */
     var pendingReinvite: js.Any = js.native
     /** @internal */
     var referral: js.UndefOr[Inviter] = js.native
+    /**
+      * Inviter options to use when following a REFER.
+      * FIXME: This is getting in the Inviter constructor, but not by Invitation (thus undefined).
+      * @internal
+      */
+    var referralInviterOptions: js.UndefOr[InviterOptions] = js.native
     /** @internal */
     var referrer: js.UndefOr[Referrer] = js.native
-    /** @internal */
-    var rel100: none | required | supported = js.native
     /** @internal */
     var remoteIdentity: NameAddrHeader = js.native
     /** @internal */
@@ -131,9 +122,6 @@ object libApiSessionMod extends js.Object {
     var sessionDescriptionHandlerModifiers: js.UndefOr[js.Array[SessionDescriptionHandlerModifier]] = js.native
     /** @internal */
     var sessionDescriptionHandlerOptions: js.UndefOr[SessionDescriptionHandlerOptions] = js.native
-    /** Accepted time. */
-    /** @internal */
-    var startTime: js.UndefOr[Date] = js.native
     /**
       * Session state.
       */
@@ -143,11 +131,7 @@ object libApiSessionMod extends js.Object {
       */
     val stateChange: Emitter[SessionState] = js.native
     /** @internal */
-    var status: _SessionStatus = js.native
-    /** @internal */
     var userAgent: UserAgent = js.native
-    /** @internal */
-    var userNoAnswerTimer: js.Any = js.native
     /**
       * Send BYE.
       * @param delegate - Request delegate.
@@ -157,11 +141,6 @@ object libApiSessionMod extends js.Object {
     def _bye(): js.Promise[OutgoingByeRequest] = js.native
     def _bye(delegate: OutgoingRequestDelegate): js.Promise[OutgoingByeRequest] = js.native
     def _bye(delegate: OutgoingRequestDelegate, options: RequestOptions): js.Promise[OutgoingByeRequest] = js.native
-    /**
-      * Called to cleanup session after terminated.
-      * @internal
-      */
-    def _close(): Unit = js.native
     /**
       * Send INFO.
       * @param delegate - Request delegate.
@@ -186,6 +165,10 @@ object libApiSessionMod extends js.Object {
     /* protected */ def ackAndBye(response: AckableIncomingResponseWithSession): Unit = js.native
     /* protected */ def ackAndBye(response: AckableIncomingResponseWithSession, statusCode: Double): Unit = js.native
     /* protected */ def ackAndBye(response: AckableIncomingResponseWithSession, statusCode: Double, reasonPhrase: String): Unit = js.native
+    /**
+      * Destructor.
+      */
+    def dispose(): js.Promise[Unit] = js.native
     /**
       * Generate an offer or answer for a response to an INVITE request.
       * If a remote offer was provided in the request, set the remote
@@ -292,67 +275,6 @@ object libApiSessionMod extends js.Object {
       * @internal
       */
     /* protected */ def stateTransition(newState: SessionState): Unit = js.native
-  }
-  
-  @js.native
-  sealed trait _SessionStatus extends js.Object
-  
-  @js.native
-  object _SessionStatus extends js.Object {
-    @js.native
-    sealed trait STATUS_1XX_RECEIVED extends _SessionStatus
-    
-    @js.native
-    sealed trait STATUS_ANSWERED extends _SessionStatus
-    
-    @js.native
-    sealed trait STATUS_ANSWERED_WAITING_FOR_PRACK extends _SessionStatus
-    
-    @js.native
-    sealed trait STATUS_CANCELED extends _SessionStatus
-    
-    @js.native
-    sealed trait STATUS_CONFIRMED extends _SessionStatus
-    
-    @js.native
-    sealed trait STATUS_EARLY_MEDIA extends _SessionStatus
-    
-    @js.native
-    sealed trait STATUS_INVITE_RECEIVED extends _SessionStatus
-    
-    @js.native
-    sealed trait STATUS_INVITE_SENT extends _SessionStatus
-    
-    @js.native
-    sealed trait STATUS_NULL extends _SessionStatus
-    
-    @js.native
-    sealed trait STATUS_TERMINATED extends _SessionStatus
-    
-    @js.native
-    sealed trait STATUS_WAITING_FOR_ACK extends _SessionStatus
-    
-    @js.native
-    sealed trait STATUS_WAITING_FOR_ANSWER extends _SessionStatus
-    
-    @js.native
-    sealed trait STATUS_WAITING_FOR_PRACK extends _SessionStatus
-    
-    /* 2 */ val STATUS_1XX_RECEIVED: typings.sipDotJs.libApiSessionMod._SessionStatus.STATUS_1XX_RECEIVED with Double = js.native
-    /* 5 */ val STATUS_ANSWERED: typings.sipDotJs.libApiSessionMod._SessionStatus.STATUS_ANSWERED with Double = js.native
-    /* 10 */ val STATUS_ANSWERED_WAITING_FOR_PRACK: typings.sipDotJs.libApiSessionMod._SessionStatus.STATUS_ANSWERED_WAITING_FOR_PRACK with Double = js.native
-    /* 8 */ val STATUS_CANCELED: typings.sipDotJs.libApiSessionMod._SessionStatus.STATUS_CANCELED with Double = js.native
-    /* 12 */ val STATUS_CONFIRMED: typings.sipDotJs.libApiSessionMod._SessionStatus.STATUS_CONFIRMED with Double = js.native
-    /* 11 */ val STATUS_EARLY_MEDIA: typings.sipDotJs.libApiSessionMod._SessionStatus.STATUS_EARLY_MEDIA with Double = js.native
-    /* 3 */ val STATUS_INVITE_RECEIVED: typings.sipDotJs.libApiSessionMod._SessionStatus.STATUS_INVITE_RECEIVED with Double = js.native
-    /* 1 */ val STATUS_INVITE_SENT: typings.sipDotJs.libApiSessionMod._SessionStatus.STATUS_INVITE_SENT with Double = js.native
-    /* 0 */ val STATUS_NULL: typings.sipDotJs.libApiSessionMod._SessionStatus.STATUS_NULL with Double = js.native
-    /* 9 */ val STATUS_TERMINATED: typings.sipDotJs.libApiSessionMod._SessionStatus.STATUS_TERMINATED with Double = js.native
-    /* 7 */ val STATUS_WAITING_FOR_ACK: typings.sipDotJs.libApiSessionMod._SessionStatus.STATUS_WAITING_FOR_ACK with Double = js.native
-    /* 4 */ val STATUS_WAITING_FOR_ANSWER: typings.sipDotJs.libApiSessionMod._SessionStatus.STATUS_WAITING_FOR_ANSWER with Double = js.native
-    /* 6 */ val STATUS_WAITING_FOR_PRACK: typings.sipDotJs.libApiSessionMod._SessionStatus.STATUS_WAITING_FOR_PRACK with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[_SessionStatus with Double] = js.native
   }
   
 }

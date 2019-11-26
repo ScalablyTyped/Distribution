@@ -16,7 +16,7 @@ object PrefetchQueryOptions {
     force: js.UndefOr[Boolean] = js.undefined,
     manual: js.UndefOr[Boolean] = js.undefined,
     onError: /* err */ js.Any => Unit = null,
-    onSucess: TResult => Unit = null,
+    onSuccess: TResult => Unit = null,
     refetchInterval: `false` | Double = null,
     retry: Boolean | Double = null,
     retryDelay: /* retryAttempt */ Double => Double = null,
@@ -28,7 +28,7 @@ object PrefetchQueryOptions {
     if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
     if (!js.isUndefined(manual)) __obj.updateDynamic("manual")(manual.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (onSucess != null) __obj.updateDynamic("onSucess")(js.Any.fromFunction1(onSucess))
+    if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction1(onSuccess))
     if (refetchInterval != null) __obj.updateDynamic("refetchInterval")(refetchInterval.asInstanceOf[js.Any])
     if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
     if (retryDelay != null) __obj.updateDynamic("retryDelay")(js.Any.fromFunction1(retryDelay))

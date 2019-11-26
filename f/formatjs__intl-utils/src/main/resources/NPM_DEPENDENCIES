@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@formatjs/intl-utils" : "1.4.2"
+      "@formatjs/intl-utils" : "1.4.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@formatjs/intl-utils" : "1.4.2"
+      "@formatjs/intl-utils" : "1.4.3"
     }
   ],
   "compile-devDependencies" : [

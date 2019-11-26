@@ -1,12 +1,13 @@
 package typings.node.childUnderscoreProcessMod
 
 import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.Signals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ExecFileOptions extends CommonOptions {
-  var killSignal: js.UndefOr[java.lang.String] = js.undefined
+  var killSignal: js.UndefOr[Signals | Double] = js.undefined
   var maxBuffer: js.UndefOr[Double] = js.undefined
   var shell: js.UndefOr[Boolean | java.lang.String] = js.undefined
   var windowsVerbatimArguments: js.UndefOr[Boolean] = js.undefined
@@ -18,7 +19,7 @@ object ExecFileOptions {
     cwd: java.lang.String = null,
     env: ProcessEnv = null,
     gid: Int | Double = null,
-    killSignal: java.lang.String = null,
+    killSignal: Signals | Double = null,
     maxBuffer: Int | Double = null,
     shell: Boolean | java.lang.String = null,
     timeout: Int | Double = null,

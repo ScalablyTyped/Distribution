@@ -8,7 +8,6 @@ import typings.sipDotJs.libCoreMessagesMethodsSubscribeMod.IncomingSubscribeRequ
 import typings.sipDotJs.libCoreMod.IncomingRequestMessage
 import typings.sipDotJs.libCoreMod.Logger
 import typings.sipDotJs.libCoreMod.LoggerFactory
-import typings.sipDotJs.libCoreMod.Transport
 import typings.sipDotJs.libCoreMod.URI
 import typings.sipDotJs.libCoreMod.UserAgentCore
 import typings.sipDotJs.libEnumsMod.TypeStrings
@@ -19,6 +18,7 @@ import typings.sipDotJs.libSessionDashDescriptionDashHandlerMod.SessionDescripti
 import typings.sipDotJs.libSessionMod.InviteClientContext
 import typings.sipDotJs.libSessionMod.InviteServerContext
 import typings.sipDotJs.libSubscriptionMod.Subscription
+import typings.sipDotJs.libTransportMod.Transport
 import typings.sipDotJs.libUAMod.UA.Options
 import typings.sipDotJs.sipDotJsStrings.inviteSent
 import typings.sipDotJs.sipDotJsStrings.invite_

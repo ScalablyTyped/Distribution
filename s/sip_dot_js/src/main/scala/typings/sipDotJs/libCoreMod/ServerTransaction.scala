@@ -1,6 +1,7 @@
 package typings.sipDotJs.libCoreMod
 
 import typings.sipDotJs.libCoreTransactionsTransactionDashUserMod.ServerTransactionUser
+import typings.sipDotJs.libCoreTransportMod.Transport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ abstract class ServerTransaction protected ()
   extends typings.sipDotJs.libCoreTransactionsMod.ServerTransaction {
   protected def this(
     _request: typings.sipDotJs.libCoreMessagesMod.IncomingRequestMessage,
-    transport: typings.sipDotJs.libCoreTransportMod.Transport,
+    transport: Transport,
     user: ServerTransactionUser,
     state: typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState,
     loggerCategory: String

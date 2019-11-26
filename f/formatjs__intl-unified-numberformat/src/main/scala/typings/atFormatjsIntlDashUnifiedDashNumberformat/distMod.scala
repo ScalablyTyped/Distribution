@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distMod extends js.Object {
   @js.native
-  class UnifiedNumberFormat protected ()
+  class UnifiedNumberFormat ()
     extends typings.atFormatjsIntlDashUnifiedDashNumberformat.distCoreMod.UnifiedNumberFormat {
     def this(locales: String) = this()
     def this(locales: js.Array[String]) = this()

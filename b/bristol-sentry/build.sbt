@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "bristol-sentry"
-version := "0.0-dt-20190906Z-3bbca4"
+version := "0.0-dt-20190906Z-238732"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-382692",
-  "org.scalablytyped" %%% "raven" % "2.5-dt-20190212Z-8e27c6",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191125Z-959704",
+  "org.scalablytyped" %%% "raven" % "2.5-dt-20190212Z-a72d23",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

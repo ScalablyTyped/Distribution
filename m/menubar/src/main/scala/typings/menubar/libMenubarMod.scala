@@ -7,6 +7,7 @@ import typings.electron.Electron.Rectangle
 import typings.electron.electronMod.BrowserWindow
 import typings.electron.electronMod.Tray
 import typings.menubar.libTypesMod.Options
+import typings.menubar.menubarNumbers.`false`
 import typings.menubar.menubarStrings.bottomCenter
 import typings.menubar.menubarStrings.bottomLeft
 import typings.menubar.menubarStrings.bottomRight
@@ -92,7 +93,7 @@ object libMenubarMod extends js.Object {
     @JSName("getOption")
     def getOption_icon(key: icon): String | NativeImage = js.native
     @JSName("getOption")
-    def getOption_index(key: index): String = js.native
+    def getOption_index(key: index): String | `false` = js.native
     @JSName("getOption")
     def getOption_preloadWindow(key: preloadWindow): Boolean = js.native
     @JSName("getOption")
@@ -111,6 +112,7 @@ object libMenubarMod extends js.Object {
       * Hide the menubar window.
       */
     def hideWindow(): Unit = js.native
+    def setOption(key: index, value: `false`): Unit = js.native
     def setOption(
       key: windowPosition,
       value: trayLeft | trayBottomLeft | trayRight | trayBottomRight | trayCenter | trayBottomCenter | topLeft | topRight | bottomLeft | bottomRight | topCenter | bottomCenter | leftCenter | rightCenter | center

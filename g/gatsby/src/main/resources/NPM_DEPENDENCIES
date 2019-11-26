@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "gatsby" : "2.18.2"
+      "gatsby" : "2.18.3"
     }
   ],
   "test-dependencies" : [
     {
-      "gatsby" : "2.18.2"
+      "gatsby" : "2.18.3"
     }
   ],
   "compile-devDependencies" : [

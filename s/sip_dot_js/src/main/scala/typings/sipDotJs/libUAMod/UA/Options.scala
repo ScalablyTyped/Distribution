@@ -4,13 +4,13 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.sipDotJs.Anon_BuiltinEnabled
 import typings.sipDotJs.libConstantsMod.C.supported
 import typings.sipDotJs.libCoreMod.DigestAuthentication
-import typings.sipDotJs.libCoreMod.Transport
 import typings.sipDotJs.libCoreMod.URI
 import typings.sipDotJs.libSessionDashDescriptionDashHandlerDashFactoryMod.SessionDescriptionHandlerFactory
 import typings.sipDotJs.libSessionDashDescriptionDashHandlerDashFactoryMod.SessionDescriptionHandlerFactoryOptions
 import typings.sipDotJs.libSessionDashDescriptionDashHandlerMod.SessionDescriptionHandler
 import typings.sipDotJs.libSessionMod.InviteClientContext
 import typings.sipDotJs.libSessionMod.InviteServerContext
+import typings.sipDotJs.libTransportMod.Transport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

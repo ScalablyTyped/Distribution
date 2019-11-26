@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.sipDotJs.libApiSessionDashDescriptionDashHandlerDashFactoryMod.SessionDescriptionHandlerFactory
 import typings.sipDotJs.libApiSessionDashDescriptionDashHandlerMod.SessionDescriptionHandler
 import typings.sipDotJs.libApiSessionMod.Session
+import typings.sipDotJs.libApiTransportMod.Transport
 import typings.sipDotJs.libApiUserDashAgentDashDelegateMod.UserAgentDelegate
-import typings.sipDotJs.libCoreMod.Transport
 import typings.sipDotJs.libCoreMod.URI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -101,8 +101,7 @@ trait UserAgentOptions extends js.Object {
   var logConfiguration: js.UndefOr[Boolean] = js.undefined
   /**
     * A function which will be called everytime a log is generated.
-    * @defaultValue
-    * A noop if not defined.
+    * @defaultValue A noop
     */
   var logConnector: js.UndefOr[LogConnector] = js.undefined
   /**
@@ -115,6 +114,21 @@ trait UserAgentOptions extends js.Object {
     * @defaultValue 60
     */
   var noAnswerTimeout: js.UndefOr[Double] = js.undefined
+  /**
+    * Adds a Route header(s) to outgoing requests.
+    * @defaultValue `[]`
+    */
+  var preloadedRouteSet: js.UndefOr[js.Array[String]] = js.undefined
+  /**
+    * Maximum number of times to attempt to reconnect when the transport connection drops.
+    * @defaultValue 3
+    */
+  var reconnectionAttempts: js.UndefOr[Double] = js.undefined
+  /**
+    * Seconds to wait between reconnection attempts when the transport connection drops.
+    * @defaultValue 4
+    */
+  var reconnectionDelay: js.UndefOr[Double] = js.undefined
   /**
     * A factory for generating `SessionDescriptionHandler` instances.
     * @remarks
@@ -185,11 +199,6 @@ trait UserAgentOptions extends js.Object {
     */
   var uri: js.UndefOr[URI] = js.undefined
   /**
-    * Adds a Route header to requests.
-    * @defaultValue `false`
-    */
-  var usePreloadedRoute: js.UndefOr[Boolean] = js.undefined
-  /**
     * User agent string used in the UserAgent header.
     * @defaultValue
     * A reasonable value is utilized.
@@ -224,6 +233,9 @@ object UserAgentOptions {
     logConnector: (/* level */ LogLevel, /* category */ String, /* label */ js.UndefOr[String], /* content */ String) => Unit = null,
     logLevel: LogLevel = null,
     noAnswerTimeout: Int | Double = null,
+    preloadedRouteSet: js.Array[String] = null,
+    reconnectionAttempts: Int | Double = null,
+    reconnectionDelay: Int | Double = null,
     sessionDescriptionHandlerFactory: (/* session */ Session, /* options */ js.UndefOr[js.Object]) => SessionDescriptionHandler = null,
     sessionDescriptionHandlerFactoryOptions: js.Object = null,
     sipExtension100rel: SIPExtension = null,
@@ -233,7 +245,6 @@ object UserAgentOptions {
     transportConstructor: Instantiable2[/* logger */ js.Any, /* options */ js.Any, Transport] = null,
     transportOptions: js.Any = null,
     uri: URI = null,
-    usePreloadedRoute: js.UndefOr[Boolean] = js.undefined,
     userAgentString: String = null,
     viaHost: String = null
   ): UserAgentOptions = {
@@ -256,6 +267,9 @@ object UserAgentOptions {
     if (logConnector != null) __obj.updateDynamic("logConnector")(js.Any.fromFunction4(logConnector))
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
     if (noAnswerTimeout != null) __obj.updateDynamic("noAnswerTimeout")(noAnswerTimeout.asInstanceOf[js.Any])
+    if (preloadedRouteSet != null) __obj.updateDynamic("preloadedRouteSet")(preloadedRouteSet.asInstanceOf[js.Any])
+    if (reconnectionAttempts != null) __obj.updateDynamic("reconnectionAttempts")(reconnectionAttempts.asInstanceOf[js.Any])
+    if (reconnectionDelay != null) __obj.updateDynamic("reconnectionDelay")(reconnectionDelay.asInstanceOf[js.Any])
     if (sessionDescriptionHandlerFactory != null) __obj.updateDynamic("sessionDescriptionHandlerFactory")(js.Any.fromFunction2(sessionDescriptionHandlerFactory))
     if (sessionDescriptionHandlerFactoryOptions != null) __obj.updateDynamic("sessionDescriptionHandlerFactoryOptions")(sessionDescriptionHandlerFactoryOptions.asInstanceOf[js.Any])
     if (sipExtension100rel != null) __obj.updateDynamic("sipExtension100rel")(sipExtension100rel.asInstanceOf[js.Any])
@@ -265,7 +279,6 @@ object UserAgentOptions {
     if (transportConstructor != null) __obj.updateDynamic("transportConstructor")(transportConstructor.asInstanceOf[js.Any])
     if (transportOptions != null) __obj.updateDynamic("transportOptions")(transportOptions.asInstanceOf[js.Any])
     if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePreloadedRoute)) __obj.updateDynamic("usePreloadedRoute")(usePreloadedRoute.asInstanceOf[js.Any])
     if (userAgentString != null) __obj.updateDynamic("userAgentString")(userAgentString.asInstanceOf[js.Any])
     if (viaHost != null) __obj.updateDynamic("viaHost")(viaHost.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserAgentOptions]

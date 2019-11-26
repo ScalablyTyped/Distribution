@@ -9,6 +9,7 @@ import typings.tabulatorDashTables.tabulatorDashTablesStrings.replace
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.selected
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.table
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.update
+import typings.tabulatorDashTables.tabulatorDashTablesStrings.visible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +38,7 @@ trait OptionsClipboard extends js.Object {
     Tabulator will try to use the best selector to match your table setup. If any text is selected on the table, then it will be that text which is copied. If the table has selectable rows enabled, the it will be the currently selected rows copied to the clipboard in the order in which they were selected. Otherwise the currently visible data in the table will be copied.
     These selectors can also be used when programatically triggering a copy event. in this case if the selector is not specified it will default to the value set in the clipboardCopySelector property (which is active by default).
     */
-  var clipboardCopySelector: js.UndefOr[active | table | selected] = js.undefined
+  var clipboardCopySelector: js.UndefOr[active | table | selected | visible] = js.undefined
   /** By default Tabulator will copy some of the tables styling along with the data to give a better visual appearance when pasted into other documents.
     If you want to only copy the unstyled data then you should set the clipboardCopyStyled option to false in the table options object:  */
   var clipboardCopyStyled: js.UndefOr[Boolean] = js.undefined
@@ -65,7 +66,7 @@ object OptionsClipboard {
     clipboardCopyConfig: Anon_ColumnCalcs | Boolean = null,
     clipboardCopyFormatter: table | (js.Function1[/* rowData */ js.Array[_], String]) = null,
     clipboardCopyHeader: js.UndefOr[Boolean] = js.undefined,
-    clipboardCopySelector: active | table | selected = null,
+    clipboardCopySelector: active | table | selected | visible = null,
     clipboardCopyStyled: js.UndefOr[Boolean] = js.undefined,
     clipboardPasteAction: insert | update | replace = null,
     clipboardPasteError: () => Unit = null,

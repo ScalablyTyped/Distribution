@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "firebase-admin"
-version := "8.8.0-261ad3"
+version := "8.8.0-52fb20"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "gaxios" % "2.0.1-535ae1",
-  "org.scalablytyped" %%% "google-auth-library" % "5.3.0-2a8dd1",
-  "org.scalablytyped" %%% "google-cloud__common" % "2.2.2-7fb789",
-  "org.scalablytyped" %%% "google-cloud__firestore" % "2.6.0-d04d05",
-  "org.scalablytyped" %%% "google-cloud__storage" % "3.5.0-63a002",
+  "org.scalablytyped" %%% "gaxios" % "2.0.1-0c2e00",
+  "org.scalablytyped" %%% "google-auth-library" % "5.3.0-5c2628",
+  "org.scalablytyped" %%% "google-cloud__common" % "2.2.2-021f18",
+  "org.scalablytyped" %%% "google-cloud__firestore" % "2.6.0-19f789",
+  "org.scalablytyped" %%% "google-cloud__storage" % "3.5.0-4b1375",
   "org.scalablytyped" %%% "gtoken" % "4.1.0-420d70",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-382692",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191125Z-959704",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
-  "org.scalablytyped" %%% "teeny-request" % "5.3.0-08da02")
+  "org.scalablytyped" %%% "teeny-request" % "5.3.0-2d3dca")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

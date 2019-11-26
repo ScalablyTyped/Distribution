@@ -2,6 +2,7 @@ package typings.atAntDashDesignProDashLayout.esHeaderMod
 
 import typings.antd.esMenuMenuContextMod.MenuTheme
 import typings.atAntDashDesignProDashLayout.Anon_Locale
+import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.realDark
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sidemenu
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.topmenu
 import typings.atAntDashDesignProDashLayout.esDefaultSettingsMod.ContentWidth
@@ -15,7 +16,6 @@ import scala.scalajs.js.annotation._
 /* Inlined parent std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/es/defaultSettings.Settings> */
 /* Inlined parent @ant-design/pro-layout.@ant-design/pro-layout/es/GlobalHeader.GlobalHeaderProps */
 trait HeaderViewProps extends js.Object {
-  var autoHideHeader: js.UndefOr[Boolean] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var collapsed: js.UndefOr[Boolean] = js.undefined
   var collapsedButtonRender: js.UndefOr[WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]]] = js.undefined
@@ -34,8 +34,9 @@ trait HeaderViewProps extends js.Object {
   var menuRender: js.UndefOr[
     WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]
   ] = js.undefined
-  var navTheme: js.UndefOr[MenuTheme] = js.undefined
+  var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
   var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.undefined
+  var primaryColor: js.UndefOr[String] = js.undefined
   var rightContentRender: js.UndefOr[WithFalse[js.Function1[/* props */ this.type, ReactNode]]] = js.undefined
   var siderWidth: js.UndefOr[Double] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
@@ -45,7 +46,6 @@ trait HeaderViewProps extends js.Object {
 object HeaderViewProps {
   @scala.inline
   def apply(
-    autoHideHeader: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     collapsed: js.UndefOr[Boolean] = js.undefined,
     collapsedButtonRender: WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]] = null,
@@ -60,15 +60,15 @@ object HeaderViewProps {
     menu: Anon_Locale = null,
     menuHeaderRender: WithFalse[js.Function2[/* logo */ ReactNode, /* title */ ReactNode, ReactNode]] = null,
     menuRender: WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]] = null,
-    navTheme: MenuTheme = null,
+    navTheme: MenuTheme | realDark = null,
     onCollapse: /* collapsed */ Boolean => Unit = null,
+    primaryColor: String = null,
     rightContentRender: WithFalse[js.Function1[HeaderViewProps, ReactNode]] = null,
     siderWidth: Int | Double = null,
     style: CSSProperties = null,
     title: String = null
   ): HeaderViewProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoHideHeader)) __obj.updateDynamic("autoHideHeader")(autoHideHeader.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
     if (collapsedButtonRender != null) __obj.updateDynamic("collapsedButtonRender")(collapsedButtonRender.asInstanceOf[js.Any])
@@ -85,6 +85,7 @@ object HeaderViewProps {
     if (menuRender != null) __obj.updateDynamic("menuRender")(menuRender.asInstanceOf[js.Any])
     if (navTheme != null) __obj.updateDynamic("navTheme")(navTheme.asInstanceOf[js.Any])
     if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction1(onCollapse))
+    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor.asInstanceOf[js.Any])
     if (rightContentRender != null) __obj.updateDynamic("rightContentRender")(rightContentRender.asInstanceOf[js.Any])
     if (siderWidth != null) __obj.updateDynamic("siderWidth")(siderWidth.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

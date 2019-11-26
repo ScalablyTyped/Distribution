@@ -15,6 +15,7 @@ trait Anon_Appsettingcontentwidth extends js.Object {
   var `app.setting.fixedsidebar.hint`: String
   var `app.setting.hideheader`: String
   var `app.setting.hideheader.hint`: String
+  var `app.setting.loading`: String
   var `app.setting.navigationmode`: String
   var `app.setting.othersettings`: String
   var `app.setting.pagestyle`: String
@@ -48,6 +49,7 @@ object Anon_Appsettingcontentwidth {
     `app.setting.fixedsidebar.hint`: String,
     `app.setting.hideheader`: String,
     `app.setting.hideheader.hint`: String,
+    `app.setting.loading`: String,
     `app.setting.navigationmode`: String,
     `app.setting.othersettings`: String,
     `app.setting.pagestyle`: String,
@@ -78,6 +80,7 @@ object Anon_Appsettingcontentwidth {
     __obj.updateDynamic("app.setting.fixedsidebar.hint")(`app.setting.fixedsidebar.hint`.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.hideheader")(`app.setting.hideheader`.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.hideheader.hint")(`app.setting.hideheader.hint`.asInstanceOf[js.Any])
+    __obj.updateDynamic("app.setting.loading")(`app.setting.loading`.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.navigationmode")(`app.setting.navigationmode`.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.othersettings")(`app.setting.othersettings`.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.pagestyle")(`app.setting.pagestyle`.asInstanceOf[js.Any])

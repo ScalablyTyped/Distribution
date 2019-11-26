@@ -2,6 +2,7 @@ package typings.node.childUnderscoreProcessMod
 
 import typings.node.BufferEncoding
 import typings.node.NodeJS.ProcessEnv
+import typings.node.NodeJS.Signals
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +21,7 @@ object ExecSyncOptionsWithStringEncoding {
     env: ProcessEnv = null,
     gid: Int | Double = null,
     input: java.lang.String | Uint8Array = null,
-    killSignal: java.lang.String | Double = null,
+    killSignal: Signals | Double = null,
     maxBuffer: Int | Double = null,
     shell: java.lang.String = null,
     stdio: StdioOptions = null,

@@ -85,6 +85,13 @@ trait Options extends js.Object {
     */
   var keepCData: js.UndefOr[Boolean] = js.undefined
   /**
+    * If this property defined as true, use { __text: 'abc' } over 'abc'
+    *
+    * @type {boolean}
+    * @memberOf X2JS.Options
+    */
+  var keepText: js.UndefOr[Boolean] = js.undefined
+  /**
     * If true, empty elements will created as self closing elements (<element />). If false, empty elements will be created with start and end tags (<element></element>).
     * 
     * @type {boolean}
@@ -136,6 +143,7 @@ object Options {
     escapeMode: js.UndefOr[Boolean] = js.undefined,
     ignoreRoot: js.UndefOr[Boolean] = js.undefined,
     keepCData: js.UndefOr[Boolean] = js.undefined,
+    keepText: js.UndefOr[Boolean] = js.undefined,
     selfClosingElements: js.UndefOr[Boolean] = js.undefined,
     skipEmptyTextNodesForObj: js.UndefOr[Boolean] = js.undefined,
     stripWhitespaces: js.UndefOr[Boolean] = js.undefined,
@@ -153,6 +161,7 @@ object Options {
     if (!js.isUndefined(escapeMode)) __obj.updateDynamic("escapeMode")(escapeMode.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreRoot)) __obj.updateDynamic("ignoreRoot")(ignoreRoot.asInstanceOf[js.Any])
     if (!js.isUndefined(keepCData)) __obj.updateDynamic("keepCData")(keepCData.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepText)) __obj.updateDynamic("keepText")(keepText.asInstanceOf[js.Any])
     if (!js.isUndefined(selfClosingElements)) __obj.updateDynamic("selfClosingElements")(selfClosingElements.asInstanceOf[js.Any])
     if (!js.isUndefined(skipEmptyTextNodesForObj)) __obj.updateDynamic("skipEmptyTextNodesForObj")(skipEmptyTextNodesForObj.asInstanceOf[js.Any])
     if (!js.isUndefined(stripWhitespaces)) __obj.updateDynamic("stripWhitespaces")(stripWhitespaces.asInstanceOf[js.Any])

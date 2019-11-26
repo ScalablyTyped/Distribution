@@ -46,10 +46,6 @@ object libApiRegistererMod extends js.Object {
     var generateContactHeader: js.Any = js.native
     var id: js.Any = js.native
     var logger: js.Any = js.native
-    /**
-      * @deprecated This should get cleaned up when Transport is reworked
-      */
-    var onTransportDisconnected: js.Any = js.native
     var options: js.Any = js.native
     /**
       * Helper function, called when registered.

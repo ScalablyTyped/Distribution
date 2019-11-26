@@ -30,13 +30,13 @@ object libApiInviterMod extends js.Object {
     @JSName("body")
     var body_Inviter: js.UndefOr[BodyAndContentType] = js.native
     var disposeEarlyMedia: js.Any = js.native
+    var disposed: js.Any = js.native
     var earlyMedia: js.Any = js.native
     var earlyMediaDialog: js.Any = js.native
     var earlyMediaSessionDescriptionHandlers: js.Any = js.native
+    var fromTag: js.Any = js.native
     var inviteWithoutSdp: js.Any = js.native
-    /** True if cancel() was called. */
-    /** @internal */
-    var isCanceled: Boolean = js.native
+    var isCanceled: js.Any = js.native
     var notifyReferer: js.Any = js.native
     /**
       * Handle final response to initial INVITE.
@@ -64,8 +64,10 @@ object libApiInviterMod extends js.Object {
       */
     var onTrying: js.Any = js.native
     var outgoingInviteRequest: js.Any = js.native
-    /** If this Inviter was created as a result of a REFER, the reffered Session. Otherwise undefined. */
-    /** @internal */
+    /**
+      * If this Inviter was created as a result of a REFER, the reffered Session. Otherwise undefined.
+      * @internal
+      */
     var referred: js.UndefOr[Session] = js.native
     /** @internal */
     var request: OutgoingRequestMessage = js.native
@@ -111,6 +113,16 @@ object libApiInviterMod extends js.Object {
     var sendInvite: js.Any = js.native
     /**
       * Cancels the INVITE request.
+      *
+      * @remarks
+      * Sends a CANCEL request.
+      * Resolves once the response sent, otherwise rejects.
+      *
+      * After sending a CANCEL request the expectation is that a 487 final response
+      * will be received for the INVITE. However a 200 final response to the INVITE
+      * may nonetheless arrive (it's a race between the CANCEL reaching the UAS before
+      * the UAS sends a 200) in which case an ACK & BYE will be sent. The net effect
+      * is that this method will terminate the session regardless of the race.
       * @param options - Options bucket.
       */
     def cancel(): js.Promise[Unit] = js.native

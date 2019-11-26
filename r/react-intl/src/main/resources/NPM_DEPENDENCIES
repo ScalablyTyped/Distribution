@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-intl" : "3.6.2"
+      "react-intl" : "3.7.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-intl" : "3.6.2"
+      "react-intl" : "3.7.0"
     }
   ],
   "compile-devDependencies" : [

@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line:strict-export-declare-modifiers
 trait ParserOptions extends js.Object {
+  var baseUrl: js.UndefOr[String] = js.undefined
   var basefix: js.UndefOr[Boolean] = js.undefined
   var big_lines: js.UndefOr[Boolean] = js.undefined
   var blanks: js.UndefOr[Boolean] = js.undefined
@@ -43,6 +44,7 @@ trait ParserOptions extends js.Object {
 object ParserOptions {
   @scala.inline
   def apply(
+    baseUrl: String = null,
     basefix: js.UndefOr[Boolean] = js.undefined,
     big_lines: js.UndefOr[Boolean] = js.undefined,
     blanks: js.UndefOr[Boolean] = js.undefined,
@@ -77,6 +79,7 @@ object ParserOptions {
     xinclude: js.UndefOr[Boolean] = js.undefined
   ): ParserOptions = {
     val __obj = js.Dynamic.literal()
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
     if (!js.isUndefined(basefix)) __obj.updateDynamic("basefix")(basefix.asInstanceOf[js.Any])
     if (!js.isUndefined(big_lines)) __obj.updateDynamic("big_lines")(big_lines.asInstanceOf[js.Any])
     if (!js.isUndefined(blanks)) __obj.updateDynamic("blanks")(blanks.asInstanceOf[js.Any])

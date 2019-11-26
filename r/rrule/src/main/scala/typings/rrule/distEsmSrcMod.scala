@@ -4,6 +4,7 @@ import typings.rrule.distEsmSrcNlpI18nMod.Language
 import typings.rrule.distEsmSrcRrulestrMod.RRuleStrOptions
 import typings.rrule.distEsmSrcTypesMod.Frequency
 import typings.rrule.distEsmSrcTypesMod.Options
+import typings.rrule.distEsmSrcWeekdayMod.WeekdayStr
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -89,6 +90,12 @@ object distEsmSrcMod extends js.Object {
     def parseString(rfcString: String): Partial[Options] = js.native
     def parseText(text: String): Partial[Options] | Null = js.native
     def parseText(text: String, language: Language): Partial[Options] | Null = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object Weekday extends js.Object {
+    def fromStr(str: WeekdayStr): typings.rrule.distEsmSrcWeekdayMod.Weekday = js.native
   }
   
   /* static members */

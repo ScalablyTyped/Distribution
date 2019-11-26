@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LinkParams extends _FormatterParams {
+  var download: js.UndefOr[Boolean] = js.undefined
   var label: js.UndefOr[String] = js.undefined
   // Link
   var labelField: js.UndefOr[String] = js.undefined
@@ -17,6 +18,7 @@ trait LinkParams extends _FormatterParams {
 object LinkParams {
   @scala.inline
   def apply(
+    download: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
     labelField: String = null,
     target: String = null,
@@ -25,6 +27,7 @@ object LinkParams {
     urlPrefix: String = null
   ): LinkParams = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(download)) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelField != null) __obj.updateDynamic("labelField")(labelField.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])

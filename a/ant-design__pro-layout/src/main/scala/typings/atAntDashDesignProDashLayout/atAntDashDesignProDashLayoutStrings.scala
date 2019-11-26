@@ -26,6 +26,9 @@ object atAntDashDesignProDashLayoutStrings {
   sealed trait md extends js.Object
   
   @js.native
+  sealed trait realDark extends js.Object
+  
+  @js.native
   sealed trait sidemenu extends js.Object
   
   @js.native
@@ -59,6 +62,8 @@ object atAntDashDesignProDashLayoutStrings {
   def lg: lg = "lg".asInstanceOf[lg]
   @scala.inline
   def md: md = "md".asInstanceOf[md]
+  @scala.inline
+  def realDark: realDark = "realDark".asInstanceOf[realDark]
   @scala.inline
   def sidemenu: sidemenu = "sidemenu".asInstanceOf[sidemenu]
   @scala.inline

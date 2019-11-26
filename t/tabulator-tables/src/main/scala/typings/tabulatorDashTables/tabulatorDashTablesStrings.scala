@@ -10,6 +10,7 @@ import typings.tabulatorDashTables.Tabulator.ScrollToColumnPosition
 import typings.tabulatorDashTables.Tabulator.ScrollToRowPostition
 import typings.tabulatorDashTables.Tabulator.SortDirection
 import typings.tabulatorDashTables.Tabulator.StandardValidatorType
+import typings.tabulatorDashTables.Tabulator.VisibleRowRangeLookup
 import typings.tabulatorDashTables.Tabulator._ColumnCalc
 import typings.tabulatorDashTables.Tabulator._Editor
 import typings.tabulatorDashTables.Tabulator._Formatter
@@ -43,10 +44,13 @@ object tabulatorDashTablesStrings {
   sealed trait POST extends HttpMethod
   
   @js.native
-  sealed trait active extends js.Object
+  sealed trait active extends VisibleRowRangeLookup
   
   @js.native
   sealed trait add extends js.Object
+  
+  @js.native
+  sealed trait all extends js.Object
   
   @js.native
   sealed trait alphanum extends js.Object
@@ -107,6 +111,9 @@ object tabulatorDashTablesStrings {
   sealed trait color extends _Formatter
   
   @js.native
+  sealed trait columns extends js.Object
+  
+  @js.native
   sealed trait concat extends _ColumnCalc
   
   @js.native
@@ -149,10 +156,16 @@ object tabulatorDashTablesStrings {
   sealed trait edit extends js.Object
   
   @js.native
+  sealed trait editor extends js.Object
+  
+  @js.native
   sealed trait exists extends js.Object
   
   @js.native
   sealed trait field extends js.Object
+  
+  @js.native
+  sealed trait filter extends js.Object
   
   @js.native
   sealed trait first extends js.Object
@@ -165,6 +178,9 @@ object tabulatorDashTablesStrings {
   
   @js.native
   sealed trait fitDataFill extends js.Object
+  
+  @js.native
+  sealed trait fitDataStretch extends js.Object
   
   @js.native
   sealed trait flip extends js.Object
@@ -194,7 +210,12 @@ object tabulatorDashTablesStrings {
   sealed trait hours extends js.Object
   
   @js.native
-  sealed trait html extends _Formatter
+  sealed trait html
+    extends DownloadType
+       with _Formatter
+  
+  @js.native
+  sealed trait hybrid extends js.Object
   
   @js.native
   sealed trait image extends _Formatter
@@ -347,6 +368,9 @@ object tabulatorDashTablesStrings {
   sealed trait selected extends js.Object
   
   @js.native
+  sealed trait sort extends js.Object
+  
+  @js.native
   sealed trait star
     extends _Editor
        with _Formatter
@@ -389,6 +413,9 @@ object tabulatorDashTablesStrings {
   sealed trait value extends js.Object
   
   @js.native
+  sealed trait visible extends VisibleRowRangeLookup
+  
+  @js.native
   sealed trait weeks extends js.Object
   
   @js.native
@@ -417,6 +444,8 @@ object tabulatorDashTablesStrings {
   def active: active = "active".asInstanceOf[active]
   @scala.inline
   def add: add = "add".asInstanceOf[add]
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
   @scala.inline
   def alphanum: alphanum = "alphanum".asInstanceOf[alphanum]
   @scala.inline
@@ -454,6 +483,8 @@ object tabulatorDashTablesStrings {
   @scala.inline
   def color: color = "color".asInstanceOf[color]
   @scala.inline
+  def columns: columns = "columns".asInstanceOf[columns]
+  @scala.inline
   def concat: concat = "concat".asInstanceOf[concat]
   @scala.inline
   def cookie: cookie = "cookie".asInstanceOf[cookie]
@@ -482,9 +513,13 @@ object tabulatorDashTablesStrings {
   @scala.inline
   def edit: edit = "edit".asInstanceOf[edit]
   @scala.inline
+  def editor: editor = "editor".asInstanceOf[editor]
+  @scala.inline
   def exists: exists = "exists".asInstanceOf[exists]
   @scala.inline
   def field: field = "field".asInstanceOf[field]
+  @scala.inline
+  def filter: filter = "filter".asInstanceOf[filter]
   @scala.inline
   def first: first = "first".asInstanceOf[first]
   @scala.inline
@@ -493,6 +528,8 @@ object tabulatorDashTablesStrings {
   def fitData: fitData = "fitData".asInstanceOf[fitData]
   @scala.inline
   def fitDataFill: fitDataFill = "fitDataFill".asInstanceOf[fitDataFill]
+  @scala.inline
+  def fitDataStretch: fitDataStretch = "fitDataStretch".asInstanceOf[fitDataStretch]
   @scala.inline
   def flip: flip = "flip".asInstanceOf[flip]
   @scala.inline
@@ -513,6 +550,8 @@ object tabulatorDashTablesStrings {
   def hours: hours = "hours".asInstanceOf[hours]
   @scala.inline
   def html: html = "html".asInstanceOf[html]
+  @scala.inline
+  def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   @scala.inline
   def image: image = "image".asInstanceOf[image]
   @scala.inline
@@ -610,6 +649,8 @@ object tabulatorDashTablesStrings {
   @scala.inline
   def selected: selected = "selected".asInstanceOf[selected]
   @scala.inline
+  def sort: sort = "sort".asInstanceOf[sort]
+  @scala.inline
   def star: star = "star".asInstanceOf[star]
   @scala.inline
   def string: string = "string".asInstanceOf[string]
@@ -633,6 +674,8 @@ object tabulatorDashTablesStrings {
   def update: update = "update".asInstanceOf[update]
   @scala.inline
   def value: value = "value".asInstanceOf[value]
+  @scala.inline
+  def visible: visible = "visible".asInstanceOf[visible]
   @scala.inline
   def weeks: weeks = "weeks".asInstanceOf[weeks]
   @scala.inline

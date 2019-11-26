@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object sipDotJsStrings {
   @js.native
-  sealed trait `0DOT15DOT7` extends js.Object
+  sealed trait `0DOT15DOT8` extends js.Object
   
   @js.native
   sealed trait ACK extends js.Object
@@ -142,9 +142,6 @@ object sipDotJsStrings {
   sealed trait message_ extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
-  
-  @js.native
   sealed trait notify_ extends js.Object
   
   @js.native
@@ -214,9 +211,6 @@ object sipDotJsStrings {
   sealed trait replaced extends js.Object
   
   @js.native
-  sealed trait required extends js.Object
-  
-  @js.native
   sealed trait setDescription extends js.Object
   
   @js.native
@@ -236,9 +230,6 @@ object sipDotJsStrings {
   
   @js.native
   sealed trait subscribe_ extends js.Object
-  
-  @js.native
-  sealed trait supported extends js.Object
   
   @js.native
   sealed trait terminated extends js.Object
@@ -265,7 +256,7 @@ object sipDotJsStrings {
   sealed trait warn extends LogLevel
   
   @scala.inline
-  def `0DOT15DOT7`: `0DOT15DOT7` = "0.15.7".asInstanceOf[`0DOT15DOT7`]
+  def `0DOT15DOT8`: `0DOT15DOT8` = "0.15.8".asInstanceOf[`0DOT15DOT8`]
   @scala.inline
   def ACK: ACK = "ACK".asInstanceOf[ACK]
   @scala.inline
@@ -355,8 +346,6 @@ object sipDotJsStrings {
   @scala.inline
   def message_ : message_ = "message".asInstanceOf[message_]
   @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
   def notify_ : notify_ = "notify".asInstanceOf[notify_]
   @scala.inline
   def outOfDialogReferRequested: outOfDialogReferRequested = "outOfDialogReferRequested".asInstanceOf[outOfDialogReferRequested]
@@ -403,8 +392,6 @@ object sipDotJsStrings {
   @scala.inline
   def replaced: replaced = "replaced".asInstanceOf[replaced]
   @scala.inline
-  def required: required = "required".asInstanceOf[required]
-  @scala.inline
   def setDescription: setDescription = "setDescription".asInstanceOf[setDescription]
   @scala.inline
   def setRemoteDescription: setRemoteDescription = "setRemoteDescription".asInstanceOf[setRemoteDescription]
@@ -418,8 +405,6 @@ object sipDotJsStrings {
   def stateChanged: stateChanged = "stateChanged".asInstanceOf[stateChanged]
   @scala.inline
   def subscribe_ : subscribe_ = "subscribe".asInstanceOf[subscribe_]
-  @scala.inline
-  def supported: supported = "supported".asInstanceOf[supported]
   @scala.inline
   def terminated: terminated = "terminated".asInstanceOf[terminated]
   @scala.inline

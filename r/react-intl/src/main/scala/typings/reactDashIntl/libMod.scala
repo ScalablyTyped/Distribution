@@ -90,7 +90,7 @@ object libMod extends js.Object {
   def createIntl(config: OptionalIntlConfig): IntlShape = js.native
   def createIntl(config: OptionalIntlConfig, cache: IntlCache): IntlShape = js.native
   def createIntlCache(): IntlCache = js.native
-  def defineMessages[T](msgs: Record[String, T]): Record[String, T] = js.native
+  def defineMessages[T, U /* <: Record[String, T] */](msgs: U): U = js.native
   def injectIntl[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P]): FC[WithIntlProps[P]] with Anon_WrappedComponentComponentTypeP[P] = js.native
   @JSName("injectIntl")
   def injectIntl_IntlPropName_StringP_WrappedComponentPropsIntlPropNameT_ComponentTypeP[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[P]] with RefAttributes[T]]) with Anon_WrappedComponentComponentTypeP[P] = js.native

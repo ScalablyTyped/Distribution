@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "express-pino-logger"
-version := "4.0-dt-20191003Z-0fd7cb"
+version := "4.0-dt-20191003Z-7c00e3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-382692",
-  "org.scalablytyped" %%% "pino" % "5.8-dt-20191028Z-f33820",
-  "org.scalablytyped" %%% "pino-http" % "4.3-dt-20191003Z-57627e",
-  "org.scalablytyped" %%% "pino-std-serializers" % "2.4-dt-20190701Z-a05dd9",
-  "org.scalablytyped" %%% "sonic-boom" % "0.7-dt-20190819Z-66b912",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191125Z-959704",
+  "org.scalablytyped" %%% "pino" % "5.8-dt-20191028Z-96fafc",
+  "org.scalablytyped" %%% "pino-http" % "4.3-dt-20191003Z-61ae94",
+  "org.scalablytyped" %%% "pino-std-serializers" % "2.4-dt-20190701Z-235c50",
+  "org.scalablytyped" %%% "sonic-boom" % "0.7-dt-20190819Z-bea642",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

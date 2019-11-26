@@ -19,14 +19,17 @@ import typings.tabulatorDashTables.Tabulator.ScrollToColumnPosition
 import typings.tabulatorDashTables.Tabulator.ScrollToRowPostition
 import typings.tabulatorDashTables.Tabulator.SortDirection
 import typings.tabulatorDashTables.Tabulator.Sorter
+import typings.tabulatorDashTables.Tabulator.VisibleRowRangeLookup
 import typings.tabulatorDashTables.tabulatorDashTablesNumbers.`false`
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.active
+import typings.tabulatorDashTables.tabulatorDashTablesStrings.all
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.first
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.last
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.next
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.prev
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.selected
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.table
+import typings.tabulatorDashTables.tabulatorDashTablesStrings.visible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -60,9 +63,9 @@ class Tabulator_ protected () extends js.Object {
     Position (optional) - The field to insert the new column next to, this can be any of the standard column component look up options.
   * 
     */
-  def addColumn(definition: ColumnDefinition): Unit = js.native
-  def addColumn(definition: ColumnDefinition, insertRightOfTarget: Boolean): Unit = js.native
-  def addColumn(definition: ColumnDefinition, insertRightOfTarget: Boolean, positionTarget: ColumnLookup): Unit = js.native
+  def addColumn(definition: ColumnDefinition): js.Promise[Unit] = js.native
+  def addColumn(definition: ColumnDefinition, insertRightOfTarget: Boolean): js.Promise[Unit] = js.native
+  def addColumn(definition: ColumnDefinition, insertRightOfTarget: Boolean, positionTarget: ColumnLookup): js.Promise[Unit] = js.native
   /** The addData method returns a promise, this can be used to run any other commands that have to be run after the data has been loaded into the table. By running them in the promise you ensure they are only run after the table has loaded the data. */
   def addData(): js.Promise[RowComponent] = js.native
   def addData(data: js.Array[js.Object]): js.Promise[RowComponent] = js.native
@@ -96,9 +99,10 @@ class Tabulator_ protected () extends js.Object {
   @JSName("copyToClipboard")
   def copyToClipboard_table(`type`: table): Unit = js.native
   /** To permanently remove a column from the table deleteColumn function. This function takes any of the standard column component look up options as its first parameter */
-  def deleteColumn(column: ColumnLookup): Unit = js.native
+  def deleteColumn(column: ColumnLookup): js.Promise[Unit] = js.native
+  def deleteRow(index: js.Array[RowLookup]): Unit = js.native
   /** You can delete any row in the table using the deleteRow function. */
-  def deleteRow(row: RowLookup): Unit = js.native
+  def deleteRow(index: RowLookup): Unit = js.native
   def deselectRow(): Unit = js.native
   def deselectRow(row: RowLookup): Unit = js.native
   /** Deconstructor */
@@ -140,11 +144,58 @@ class Tabulator_ protected () extends js.Object {
   /** If you want to open the generated file in a new browser tab rather than downloading it straight away, you can use the downloadToTab function. This is particularly useful with the PDF downloader, as it allows you to preview the resulting PDF in a new browser ta */
   def downloadToTab(downloadType: DownloadType, fileName: String): Unit = js.native
   def downloadToTab(downloadType: DownloadType, fileName: String, params: DownloadOptions): Unit = js.native
+  @JSName("download")
+  def download_active(
+    downloadType: js.Function4[
+      /* columns */ js.Array[ColumnDefinition], 
+      /* data */ js.Any, 
+      /* options */ js.Any, 
+      /* setFileContents */ js.Any, 
+      _
+    ],
+    fileName: String,
+    params: DownloadOptions,
+    filter: active
+  ): Unit = js.native
+  @JSName("download")
+  def download_active(downloadType: DownloadType, fileName: String, params: DownloadOptions, filter: active): Unit = js.native
+  @JSName("download")
+  def download_all(
+    downloadType: js.Function4[
+      /* columns */ js.Array[ColumnDefinition], 
+      /* data */ js.Any, 
+      /* options */ js.Any, 
+      /* setFileContents */ js.Any, 
+      _
+    ],
+    fileName: String,
+    params: DownloadOptions,
+    filter: all
+  ): Unit = js.native
+  @JSName("download")
+  def download_all(downloadType: DownloadType, fileName: String, params: DownloadOptions, filter: all): Unit = js.native
+  @JSName("download")
+  def download_visible(
+    downloadType: js.Function4[
+      /* columns */ js.Array[ColumnDefinition], 
+      /* data */ js.Any, 
+      /* options */ js.Any, 
+      /* setFileContents */ js.Any, 
+      _
+    ],
+    fileName: String,
+    params: DownloadOptions,
+    filter: visible
+  ): Unit = js.native
+  @JSName("download")
+  def download_visible(downloadType: DownloadType, fileName: String, params: DownloadOptions, filter: visible): Unit = js.native
   /** A lot of the modules come with a range of default settings to make setting up your table easier, for example the sorters, formatters and editors that ship with Tabulator as standard.
     If you are using a lot of custom settings over and over again (for example a custom sorter). you can end up re-delcaring it several time for different tables. To make your life easier Tabulator allows you to extend the default setup of each module to make your custom options as easily accessible as the defaults.
     Using the extendModule function on the global Tabulator variable allows you to globally add these options to all tables.
     The function takes three arguments, the name of the module, the name of the property you want to extend, and an object containing the elements you want to add in your module. In the example below we extend the format module to add two new default formatters: */
   def extendModule(name: String, property: String, values: js.Object): Unit = js.native
+  /** Lookup the table object for any existing table using the element they were created on. */
+  def findTable(query: String): Tabulator = js.native
   /** You can retrieve the current AJAX URL of the table with the getAjaxUrl function.
     * 
     * This will return a HTML encoded string of the table data.
@@ -167,9 +218,9 @@ class Tabulator_ protected () extends js.Object {
   def getColumns(includeColumnGroups: Boolean): js.Array[ColumnComponent | GroupComponent] = js.native
   /** You can retrieve the data stored in the table using the getData function. */
   def getData(): js.Array[_] = js.native
-  def getData(activeOnly: Boolean): js.Array[_] = js.native
+  def getData(activeOnly: VisibleRowRangeLookup): js.Array[_] = js.native
   def getDataCount(): Double = js.native
-  def getDataCount(activeOnly: Boolean): Double = js.native
+  def getDataCount(activeOnly: VisibleRowRangeLookup): Double = js.native
   /** You can retrieve an array of the current programtic filters using the getFilters function, this will not include any of the header filters: */
   def getFilters(includeHeaderFilters: Boolean): js.Array[Filter] = js.native
   /** get grouped table data in the same format as getData() */
@@ -212,10 +263,9 @@ class Tabulator_ protected () extends js.Object {
     */
   def getRowPosition(row: RowLookup): Double = js.native
   def getRowPosition(row: RowLookup, activeOnly: Boolean): Double = js.native
-  /** You can retrieve all the row components in the table using the getRows function.* By default getRows will return an array containing all the Row Component's held in the Tabulator. If you only want to access the currently filtered/sorted elements, you can pass a value of true to the first argument of the function.
-    */
+  /** You can retrieve all the row components in the table using the getRows function.* By default getRows will return an array containing all the Row Component's held in the Tabulator. If you only want to access the currently filtered/sorted elements, you can pass a value of true to the first argument of the function.*/
   def getRows(): js.Array[RowComponent] = js.native
-  def getRows(activeOnly: Boolean): js.Array[RowComponent] = js.native
+  def getRows(activeOnly: VisibleRowRangeLookup): js.Array[RowComponent] = js.native
   /** To get the data objects for the selected rows you can use the getSelectedData function.
     This will return an array of the selected rows data objects in the order in which they were selected */
   def getSelectedData(): js.Array[_] = js.native
@@ -319,7 +369,13 @@ class Tabulator_ protected () extends js.Object {
   /** To programmatically select a row you can use the selectRow function.
     To select a specific row you can pass the any of the standard row component look up options into the first argument of the function. If you leave the argument blank you will select all rows (if you have set the selectable option to a numeric value, it will be ignored when selecting all rows). */
   def selectRow(): Unit = js.native
-  def selectRow(row: RowLookup): Unit = js.native
+  def selectRow(lookup: js.Array[RowLookup]): Unit = js.native
+  @JSName("selectRow")
+  def selectRow_active(lookup: active): Unit = js.native
+  @JSName("selectRow")
+  def selectRow_all(lookup: all): Unit = js.native
+  @JSName("selectRow")
+  def selectRow_visible(lookup: visible): Unit = js.native
   /** If you have previously used the getColumnLayout function to retrieve a tables layout, you can use the setColumnLayout function to apply it to a table. */
   def setColumnLayout(layout: ColumnLayout): Unit = js.native
   /** To replace the current column definitions for a table use the setColumns function. This function takes a column definition array as its only argument. */
@@ -435,6 +491,7 @@ class Tabulator_ protected () extends js.Object {
   def toggleSelectRow(row: RowLookup): Unit = js.native
   /** With history enabled you can use the undo function to automatically undo a user action, the more times you call the function, the further up the history log you go. */
   def undo(): Boolean = js.native
+  def updateColumnDefinition(column: ColumnLookup, definition: ColumnDefinition): js.Promise[Unit] = js.native
   /** If you want to update an existing set of data in the table, without completely replacing the data as the setData method would do, you can use the updateData method.
     This function takes an array of row objects and will update each row based on its index value. (the index defaults to the "id" parameter, this can be set using the index option in the tabulator constructor). Options without an index will be ignored, as will items with an index that is not already in the table data. The addRow function should be used to add new data to the table. */
   def updateData(data: js.Array[js.Object]): js.Promise[Unit] = js.native

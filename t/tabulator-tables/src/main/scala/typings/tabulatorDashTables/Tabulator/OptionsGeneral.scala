@@ -11,6 +11,8 @@ trait OptionsGeneral extends js.Object {
   // Not listed in options--------------------
   /** Tabulator will automatically attempt to redraw the data contained in the table if the containing element for the table is resized. To disable this functionality, set the autoResize property to false */
   var autoResize: js.UndefOr[Boolean] = js.undefined
+  /** Prevent actions from riggering an update of the Virtual DOM: */
+  var blockRedraw: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** The dataEdited callback is triggered whenever the table data is changed by the user. Triggers for this include editing any cell in the table, adding a row and deleting a row. */
   var dataEdited: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
   /** The dataLoaded callback is triggered when a new set of data is loaded into the table. */
@@ -55,6 +57,12 @@ trait OptionsGeneral extends js.Object {
     The data is sorted
     The redraw function is called */
   var renderStarted: js.UndefOr[js.Function0[Unit]] = js.undefined
+  /** This will restore automatic table redrawing and trigger an appropriate redraw if one was needed as a result of any actions that happened while the redraw was blocked. */
+  var restoreRedraw: js.UndefOr[js.Function0[Unit]] = js.undefined
+  /** Callback is triggered when the table is horizontally scrolled. */
+  var scrollHorizontal: js.UndefOr[js.Function1[/* left */ js.Any, Unit]] = js.undefined
+  /** Callback is triggered when the table is vertically scrolled. */
+  var scrollVertical: js.UndefOr[js.Function1[/* top */ js.Any, Unit]] = js.undefined
   /** When a the tabulator constructor is called, the tableBuilding callback will triggered */
   var tableBuilding: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** When a the tabulator constructor is called and the table has finished being rendered, the tableBuilt callback will triggered: */
@@ -73,6 +81,7 @@ object OptionsGeneral {
   @scala.inline
   def apply(
     autoResize: js.UndefOr[Boolean] = js.undefined,
+    blockRedraw: () => Unit = null,
     dataEdited: /* data */ js.Any => Unit = null,
     dataLoaded: /* data */ js.Any => Unit = null,
     dataLoading: /* data */ js.Any => Unit = null,
@@ -89,6 +98,9 @@ object OptionsGeneral {
     reactiveData: js.UndefOr[Boolean] = js.undefined,
     renderComplete: () => Unit = null,
     renderStarted: () => Unit = null,
+    restoreRedraw: () => Unit = null,
+    scrollHorizontal: /* left */ js.Any => Unit = null,
+    scrollVertical: /* top */ js.Any => Unit = null,
     tableBuilding: () => Unit = null,
     tableBuilt: () => Unit = null,
     tooltipGenerationMode: load = null,
@@ -98,6 +110,7 @@ object OptionsGeneral {
   ): OptionsGeneral = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.asInstanceOf[js.Any])
+    if (blockRedraw != null) __obj.updateDynamic("blockRedraw")(js.Any.fromFunction0(blockRedraw))
     if (dataEdited != null) __obj.updateDynamic("dataEdited")(js.Any.fromFunction1(dataEdited))
     if (dataLoaded != null) __obj.updateDynamic("dataLoaded")(js.Any.fromFunction1(dataLoaded))
     if (dataLoading != null) __obj.updateDynamic("dataLoading")(js.Any.fromFunction1(dataLoading))
@@ -114,6 +127,9 @@ object OptionsGeneral {
     if (!js.isUndefined(reactiveData)) __obj.updateDynamic("reactiveData")(reactiveData.asInstanceOf[js.Any])
     if (renderComplete != null) __obj.updateDynamic("renderComplete")(js.Any.fromFunction0(renderComplete))
     if (renderStarted != null) __obj.updateDynamic("renderStarted")(js.Any.fromFunction0(renderStarted))
+    if (restoreRedraw != null) __obj.updateDynamic("restoreRedraw")(js.Any.fromFunction0(restoreRedraw))
+    if (scrollHorizontal != null) __obj.updateDynamic("scrollHorizontal")(js.Any.fromFunction1(scrollHorizontal))
+    if (scrollVertical != null) __obj.updateDynamic("scrollVertical")(js.Any.fromFunction1(scrollVertical))
     if (tableBuilding != null) __obj.updateDynamic("tableBuilding")(js.Any.fromFunction0(tableBuilding))
     if (tableBuilt != null) __obj.updateDynamic("tableBuilt")(js.Any.fromFunction0(tableBuilt))
     if (tooltipGenerationMode != null) __obj.updateDynamic("tooltipGenerationMode")(tooltipGenerationMode.asInstanceOf[js.Any])

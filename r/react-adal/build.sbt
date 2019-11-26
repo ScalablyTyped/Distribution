@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-adal"
-version := "0.4-dt-20180806Z-4895ac"
+version := "0.4-dt-20191125Z-6f15f8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

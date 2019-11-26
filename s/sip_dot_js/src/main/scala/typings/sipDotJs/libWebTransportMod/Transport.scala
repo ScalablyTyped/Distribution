@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js/lib/Web/Transport", "Transport")
 @js.native
 class Transport protected ()
-  extends typings.sipDotJs.libCoreMod.Transport {
+  extends typings.sipDotJs.libTransportMod.Transport {
   def this(logger: Logger) = this()
   def this(logger: Logger, options: js.Any) = this()
   var boundOnClose: js.Any = js.native

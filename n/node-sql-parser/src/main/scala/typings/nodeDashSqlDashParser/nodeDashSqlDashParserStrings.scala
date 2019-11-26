@@ -49,7 +49,7 @@ object nodeDashSqlDashParserStrings {
   sealed trait table extends WhilteListCheckMode
   
   @js.native
-  sealed trait udpate extends js.Object
+  sealed trait update extends js.Object
   
   @scala.inline
   def `*`: `*` = "*".asInstanceOf[`*`]
@@ -80,6 +80,6 @@ object nodeDashSqlDashParserStrings {
   @scala.inline
   def table: table = "table".asInstanceOf[table]
   @scala.inline
-  def udpate: udpate = "udpate".asInstanceOf[udpate]
+  def update: update = "update".asInstanceOf[update]
 }
 

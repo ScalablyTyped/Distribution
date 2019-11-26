@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "http-proxy-middleware"
-version := "0.19-dt-20190819Z-fe3ba8"
+version := "0.19-dt-20190819Z-e77abc"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-21f8e2",
-  "org.scalablytyped" %%% "http-proxy" % "1.17-dt-20191115Z-a7a879",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-382692",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-ec07f0",
+  "org.scalablytyped" %%% "http-proxy" % "1.17-dt-20191115Z-d8960b",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191125Z-959704",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

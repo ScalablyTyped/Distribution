@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "express-openapi"
-version := "5.0.0-0bff06"
+version := "5.0.0-2e62c6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "ajv" % "6.10.2-3573c2",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-95873a",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-21f8e2",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-a64687",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-102985",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-9b6106",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-ec07f0",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-13b33a",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-da006c",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-e84c0f",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-382692",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191125Z-959704",
   "org.scalablytyped" %%% "openapi-default-setter" % "2.1.0-a669fe",
   "org.scalablytyped" %%% "openapi-framework" % "0.25.0-1deb92",
   "org.scalablytyped" %%% "openapi-request-coercer" % "2.3.0-c31e33",
@@ -20,7 +20,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "openapi-security-handler" % "2.0.4-e6ebd1",
   "org.scalablytyped" %%% "openapi-types" % "1.3.5-559860",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-1b75dd",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-c3e43f",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-335844",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
   "org.scalablytyped" %%% "ts-log" % "2.1.4-3dd486")
 publishArtifact in packageDoc := false

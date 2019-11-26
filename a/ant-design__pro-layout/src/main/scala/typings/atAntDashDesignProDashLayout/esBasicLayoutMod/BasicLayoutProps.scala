@@ -8,6 +8,7 @@ import typings.atAntDashDesignProDashLayout.MenuDataItemisUrlboolean
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutNumbers.`false`
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.lg
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.md
+import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.realDark
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sidemenu
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sm
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.topmenu
@@ -34,8 +35,7 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in keyof @ant-design/pro-layout.@ant-design/pro-layout/es/typings.RouterTypes<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route> ]:? @ant-design/pro-layout.@ant-design/pro-layout/es/typings.RouterTypes<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route>[P]}
 - Dropped {[ P in keyof @ant-design/pro-layout.@ant-design/pro-layout/es/defaultSettings.Settings ]:? @ant-design/pro-layout.@ant-design/pro-layout/es/defaultSettings.Settings[P]} */ /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.atAntDashDesignProDashLayout.esHeaderMod.HeaderViewProps because var conflicts: className, logo, menuHeaderRender, siderWidth, style. Inlined isMobile, collapsed, autoHideHeader, menuRender, headerRender, rightContentRender, menu, navTheme, contentWidth, layout, title, fixedHeader, iconfontUrl, fixSiderbar, collapsedButtonRender, onCollapse */ trait BasicLayoutProps extends SiderMenuProps {
-  var autoHideHeader: js.UndefOr[Boolean] = js.undefined
+- typings.atAntDashDesignProDashLayout.esHeaderMod.HeaderViewProps because var conflicts: className, logo, menuHeaderRender, siderWidth, style. Inlined isMobile, collapsed, menuRender, headerRender, rightContentRender, menu, navTheme, contentWidth, layout, title, fixedHeader, iconfontUrl, fixSiderbar, primaryColor, collapsedButtonRender, onCollapse */ trait BasicLayoutProps extends SiderMenuProps {
   var breadcrumbRender: js.UndefOr[
     js.Function1[/* routers */ js.UndefOr[js.Array[Route]], js.UndefOr[js.Array[Route]]]
   ] = js.undefined
@@ -43,6 +43,10 @@ import scala.scalajs.js.annotation._
   var collapsedButtonRender: js.UndefOr[WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]]] = js.undefined
   var contentStyle: js.UndefOr[CSSProperties] = js.undefined
   var contentWidth: js.UndefOr[ContentWidth] = js.undefined
+  /**
+    * 兼用 content的 margin
+    */
+  var disableContentMargin: Boolean
   /**
     * 是否禁用移动端模式，有的管理系统不需要移动端模式，此属性设置为true即可
     */
@@ -85,13 +89,14 @@ import scala.scalajs.js.annotation._
   var menuRender: js.UndefOr[
     WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]
   ] = js.undefined
-  var navTheme: js.UndefOr[MenuTheme] = js.undefined
+  var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
   var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.undefined
   var pageTitleRender: js.UndefOr[
     WithFalse[
       js.Function2[/* props */ GetPageTitleProps, /* defaultPageTitle */ js.UndefOr[String], String]
     ]
   ] = js.undefined
+  var primaryColor: js.UndefOr[String] = js.undefined
   var rightContentRender: js.UndefOr[WithFalse[js.Function1[/* props */ this.type, ReactNode]]] = js.undefined
   var title: js.UndefOr[String] = js.undefined
 }
@@ -99,7 +104,7 @@ import scala.scalajs.js.annotation._
 object BasicLayoutProps {
   @scala.inline
   def apply(
-    autoHideHeader: js.UndefOr[Boolean] = js.undefined,
+    disableContentMargin: Boolean,
     breadcrumbRender: /* routers */ js.UndefOr[js.Array[Route]] => js.UndefOr[js.Array[Route]] = null,
     breakpoint: xs | sm | md | lg | xl | xxl | `false` = null,
     className: String = null,
@@ -128,19 +133,19 @@ object BasicLayoutProps {
     ] = null,
     menuProps: MenuProps = null,
     menuRender: WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]] = null,
-    navTheme: MenuTheme = null,
+    navTheme: MenuTheme | realDark = null,
     onCollapse: /* collapsed */ Boolean => Unit = null,
     onMenuHeaderClick: /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     pageTitleRender: WithFalse[
       js.Function2[/* props */ GetPageTitleProps, /* defaultPageTitle */ js.UndefOr[String], String]
     ] = null,
+    primaryColor: String = null,
     rightContentRender: WithFalse[js.Function1[BasicLayoutProps, ReactNode]] = null,
     siderWidth: Int | Double = null,
     style: CSSProperties = null,
     title: String = null
   ): BasicLayoutProps = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoHideHeader)) __obj.updateDynamic("autoHideHeader")(autoHideHeader.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(disableContentMargin = disableContentMargin.asInstanceOf[js.Any])
     if (breadcrumbRender != null) __obj.updateDynamic("breadcrumbRender")(js.Any.fromFunction1(breadcrumbRender))
     if (breakpoint != null) __obj.updateDynamic("breakpoint")(breakpoint.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
@@ -171,6 +176,7 @@ object BasicLayoutProps {
     if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction1(onCollapse))
     if (onMenuHeaderClick != null) __obj.updateDynamic("onMenuHeaderClick")(js.Any.fromFunction1(onMenuHeaderClick))
     if (pageTitleRender != null) __obj.updateDynamic("pageTitleRender")(pageTitleRender.asInstanceOf[js.Any])
+    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor.asInstanceOf[js.Any])
     if (rightContentRender != null) __obj.updateDynamic("rightContentRender")(rightContentRender.asInstanceOf[js.Any])
     if (siderWidth != null) __obj.updateDynamic("siderWidth")(siderWidth.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

@@ -1,9 +1,7 @@
 package typings.ts3DashNodejsDashLibrary.libTransportCommandMod.Command
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.std.Partial
 import typings.std.Pick
-import typings.std.Record
 import typings.ts3DashNodejsDashLibrary.Anon_Key
 import typings.ts3DashNodejsDashLibrary.libTypesQueryResponseMod.QueryResponseTypes
 import typings.ts3DashNodejsDashLibrary.ts3DashNodejsDashLibraryStrings.raw
@@ -36,16 +34,14 @@ object ^ extends js.Object {
   def escapeKeyValue(key: String, value: String): String = js.native
   def escapeKeyValue(key: String, value: js.Array[String]): String = js.native
   /**
+    * retrieves the key value pair from a string
+    * @param str the key value pair to unescape eg foo=bar
+    */
+  def getKeyValue(str: String): Anon_Key = js.native
+  /**
     * retrieves the default parsers
     */
   def getParsers(): Parsers = js.native
-  /**
-    * merges two objects into each other, if one key does not exist in target
-    * which exists in source then target gets this key added
-    * @param target object which gets keys from source
-    * @param source the additional keys which get added to target
-    */
-  def mergeObjects(target: Record[String, _], source: Record[String, _]): StringDictionary[js.Any] = js.native
   /**
     * parses a number
     * @param value string to parse
@@ -88,10 +84,5 @@ object ^ extends js.Object {
   def parse_raw(hasRaw: Pick[ParserArgument, raw]): js.Array[Partial[Partial[QueryResponseTypes]]] = js.native
   /** unescapes a string */
   def unescape(str: String): String = js.native
-  /**
-    * unescapes a key value pair
-    * @param str the key value pair to unescape eg foo=bar
-    */
-  def unescapeKeyValue(str: String): Anon_Key = js.native
 }
 

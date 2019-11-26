@@ -9,7 +9,7 @@ trait QueryOptions[TResult] extends js.Object {
   var cacheTime: js.UndefOr[Double] = js.undefined
   var manual: js.UndefOr[Boolean] = js.undefined
   var onError: js.UndefOr[js.Function1[/* err */ js.Any, Unit]] = js.undefined
-  var onSucess: js.UndefOr[js.Function1[/* data */ TResult, Unit]] = js.undefined
+  var onSuccess: js.UndefOr[js.Function1[/* data */ TResult, Unit]] = js.undefined
   var refetchInterval: js.UndefOr[`false` | Double] = js.undefined
   var retry: js.UndefOr[Boolean | Double] = js.undefined
   var retryDelay: js.UndefOr[js.Function1[/* retryAttempt */ Double, Double]] = js.undefined
@@ -23,7 +23,7 @@ object QueryOptions {
     cacheTime: Int | Double = null,
     manual: js.UndefOr[Boolean] = js.undefined,
     onError: /* err */ js.Any => Unit = null,
-    onSucess: /* data */ TResult => Unit = null,
+    onSuccess: /* data */ TResult => Unit = null,
     refetchInterval: `false` | Double = null,
     retry: Boolean | Double = null,
     retryDelay: /* retryAttempt */ Double => Double = null,
@@ -34,7 +34,7 @@ object QueryOptions {
     if (cacheTime != null) __obj.updateDynamic("cacheTime")(cacheTime.asInstanceOf[js.Any])
     if (!js.isUndefined(manual)) __obj.updateDynamic("manual")(manual.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (onSucess != null) __obj.updateDynamic("onSucess")(js.Any.fromFunction1(onSucess))
+    if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction1(onSuccess))
     if (refetchInterval != null) __obj.updateDynamic("refetchInterval")(refetchInterval.asInstanceOf[js.Any])
     if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
     if (retryDelay != null) __obj.updateDynamic("retryDelay")(js.Any.fromFunction1(retryDelay))

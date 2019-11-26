@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 @JSImport("validator/lib/isJSON", JSImport.Namespace)
 @js.native
 object libIsJSONMod extends js.Object {
+  /**
+    * Check if the string is valid JSON (note: uses `JSON.parse`).
+    */
   def default(str: String): Boolean = js.native
 }
 

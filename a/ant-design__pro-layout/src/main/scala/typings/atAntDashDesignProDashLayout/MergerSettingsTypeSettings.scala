@@ -1,6 +1,7 @@
 package typings.atAntDashDesignProDashLayout
 
 import typings.antd.esMenuMenuContextMod.MenuTheme
+import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.realDark
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sidemenu
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.topmenu
 import typings.atAntDashDesignProDashLayout.esDefaultSettingsMod.ContentWidth
@@ -10,7 +11,6 @@ import scala.scalajs.js.annotation._
 
 /* Inlined @ant-design/pro-layout.@ant-design/pro-layout/es/SettingDrawer.MergerSettingsType<@ant-design/pro-layout.@ant-design/pro-layout/es/defaultSettings.Settings> */
 trait MergerSettingsTypeSettings extends js.Object {
-  var autoHideHeader: js.UndefOr[Boolean] = js.undefined
   var colorWeak: js.UndefOr[Boolean] = js.undefined
   var contentWidth: js.UndefOr[ContentWidth] = js.undefined
   var fixSiderbar: js.UndefOr[Boolean] = js.undefined
@@ -18,7 +18,7 @@ trait MergerSettingsTypeSettings extends js.Object {
   var iconfontUrl: js.UndefOr[String] = js.undefined
   var layout: js.UndefOr[sidemenu | topmenu] = js.undefined
   var menu: js.UndefOr[Anon_Locale] = js.undefined
-  var navTheme: js.UndefOr[MenuTheme] = js.undefined
+  var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
   var primaryColor: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
 }
@@ -26,7 +26,6 @@ trait MergerSettingsTypeSettings extends js.Object {
 object MergerSettingsTypeSettings {
   @scala.inline
   def apply(
-    autoHideHeader: js.UndefOr[Boolean] = js.undefined,
     colorWeak: js.UndefOr[Boolean] = js.undefined,
     contentWidth: ContentWidth = null,
     fixSiderbar: js.UndefOr[Boolean] = js.undefined,
@@ -34,12 +33,11 @@ object MergerSettingsTypeSettings {
     iconfontUrl: String = null,
     layout: sidemenu | topmenu = null,
     menu: Anon_Locale = null,
-    navTheme: MenuTheme = null,
+    navTheme: MenuTheme | realDark = null,
     primaryColor: String = null,
     title: String = null
   ): MergerSettingsTypeSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoHideHeader)) __obj.updateDynamic("autoHideHeader")(autoHideHeader.asInstanceOf[js.Any])
     if (!js.isUndefined(colorWeak)) __obj.updateDynamic("colorWeak")(colorWeak.asInstanceOf[js.Any])
     if (contentWidth != null) __obj.updateDynamic("contentWidth")(contentWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(fixSiderbar)) __obj.updateDynamic("fixSiderbar")(fixSiderbar.asInstanceOf[js.Any])

@@ -30,6 +30,7 @@ object libTestBackendMod extends js.Object {
   @js.native
   trait TestBackendImpl extends TestBackend {
     var actions: js.Any = js.native
+    var manager: DragDropManager = js.native
     def connectDragPreview(): js.Function0[Unit] = js.native
     def connectDragSource(): js.Function0[Unit] = js.native
     def connectDropTarget(): js.Function0[Unit] = js.native

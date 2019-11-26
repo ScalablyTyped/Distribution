@@ -1,6 +1,9 @@
 package typings.tabulatorDashTables.Tabulator
 
 import typings.tabulatorDashTables.tabulatorDashTablesNumbers.`true`
+import typings.tabulatorDashTables.tabulatorDashTablesStrings.editor
+import typings.tabulatorDashTables.tabulatorDashTablesStrings.hybrid
+import typings.tabulatorDashTables.tabulatorDashTablesStrings.table
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +18,7 @@ trait AutoCompleteParams
   var searchFunc: js.UndefOr[js.Function2[/* term */ String, /* values */ js.Array[String], js.Array[String]]] = js.undefined
   var showListOnEmpty: js.UndefOr[Boolean] = js.undefined
   var values: `true` | js.Array[String] | JSONRecord | String
+  var verticalNavigation: js.UndefOr[editor | table | hybrid] = js.undefined
 }
 
 object AutoCompleteParams {
@@ -27,7 +31,8 @@ object AutoCompleteParams {
     freetext: js.UndefOr[Boolean] = js.undefined,
     listItemFormatter: (/* value */ String, /* text */ String) => String = null,
     searchFunc: (/* term */ String, /* values */ js.Array[String]) => js.Array[String] = null,
-    showListOnEmpty: js.UndefOr[Boolean] = js.undefined
+    showListOnEmpty: js.UndefOr[Boolean] = js.undefined,
+    verticalNavigation: editor | table | hybrid = null
   ): AutoCompleteParams = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty.asInstanceOf[js.Any])
@@ -37,6 +42,7 @@ object AutoCompleteParams {
     if (listItemFormatter != null) __obj.updateDynamic("listItemFormatter")(js.Any.fromFunction2(listItemFormatter))
     if (searchFunc != null) __obj.updateDynamic("searchFunc")(js.Any.fromFunction2(searchFunc))
     if (!js.isUndefined(showListOnEmpty)) __obj.updateDynamic("showListOnEmpty")(showListOnEmpty.asInstanceOf[js.Any])
+    if (verticalNavigation != null) __obj.updateDynamic("verticalNavigation")(verticalNavigation.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoCompleteParams]
   }
 }

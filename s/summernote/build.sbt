@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "summernote"
-version := "0.8-dt-20181016Z-c7d639"
+version := "0.8-dt-20191125Z-be33cf"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

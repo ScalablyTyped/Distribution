@@ -1,6 +1,6 @@
 package typings.atAntDashDesignProDashLayout.libSettingDrawerMod
 
-import typings.atAntDashDesignProDashLayout.MergerSettingsTypeSettingsAutoHideHeader
+import typings.atAntDashDesignProDashLayout.MergerSettingsTypeSettingsColorWeak
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,18 +9,18 @@ trait SettingDrawerProps extends js.Object {
   var collapse: js.UndefOr[Boolean] = js.undefined
   var getContainer: js.UndefOr[js.Any] = js.undefined
   var onCollapseChange: js.UndefOr[js.Function1[/* collapse */ Boolean, Unit]] = js.undefined
-  var onSettingChange: js.UndefOr[js.Function1[/* settings */ MergerSettingsTypeSettingsAutoHideHeader, Unit]] = js.undefined
-  var settings: MergerSettingsTypeSettingsAutoHideHeader
+  var onSettingChange: js.UndefOr[js.Function1[/* settings */ MergerSettingsTypeSettingsColorWeak, Unit]] = js.undefined
+  var settings: MergerSettingsTypeSettingsColorWeak
 }
 
 object SettingDrawerProps {
   @scala.inline
   def apply(
-    settings: MergerSettingsTypeSettingsAutoHideHeader,
+    settings: MergerSettingsTypeSettingsColorWeak,
     collapse: js.UndefOr[Boolean] = js.undefined,
     getContainer: js.Any = null,
     onCollapseChange: /* collapse */ Boolean => Unit = null,
-    onSettingChange: /* settings */ MergerSettingsTypeSettingsAutoHideHeader => Unit = null
+    onSettingChange: /* settings */ MergerSettingsTypeSettingsColorWeak => Unit = null
   ): SettingDrawerProps = {
     val __obj = js.Dynamic.literal(settings = settings.asInstanceOf[js.Any])
     if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse.asInstanceOf[js.Any])

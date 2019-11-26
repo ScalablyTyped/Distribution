@@ -2,6 +2,7 @@ package typings.atAntDashDesignProDashLayout.esSettingDrawerMod
 
 import typings.antd.esMenuMenuContextMod.MenuTheme
 import typings.atAntDashDesignProDashLayout.Anon_Locale
+import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.realDark
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sidemenu
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.topmenu
 import typings.atAntDashDesignProDashLayout.esDefaultSettingsMod.ContentWidth
@@ -11,7 +12,6 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent @ant-design/pro-layout.@ant-design/pro-layout/es/SettingDrawer.MergerSettingsType<@ant-design/pro-layout.@ant-design/pro-layout/es/defaultSettings.Settings> */
 trait SettingDrawerState extends js.Object {
-  var autoHideHeader: js.UndefOr[Boolean] = js.undefined
   var collapse: js.UndefOr[Boolean] = js.undefined
   var colorWeak: js.UndefOr[Boolean] = js.undefined
   var contentWidth: js.UndefOr[ContentWidth] = js.undefined
@@ -21,7 +21,7 @@ trait SettingDrawerState extends js.Object {
   var language: js.UndefOr[String] = js.undefined
   var layout: js.UndefOr[sidemenu | topmenu] = js.undefined
   var menu: js.UndefOr[Anon_Locale] = js.undefined
-  var navTheme: js.UndefOr[MenuTheme] = js.undefined
+  var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
   var primaryColor: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
 }
@@ -29,7 +29,6 @@ trait SettingDrawerState extends js.Object {
 object SettingDrawerState {
   @scala.inline
   def apply(
-    autoHideHeader: js.UndefOr[Boolean] = js.undefined,
     collapse: js.UndefOr[Boolean] = js.undefined,
     colorWeak: js.UndefOr[Boolean] = js.undefined,
     contentWidth: ContentWidth = null,
@@ -39,12 +38,11 @@ object SettingDrawerState {
     language: String = null,
     layout: sidemenu | topmenu = null,
     menu: Anon_Locale = null,
-    navTheme: MenuTheme = null,
+    navTheme: MenuTheme | realDark = null,
     primaryColor: String = null,
     title: String = null
   ): SettingDrawerState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoHideHeader)) __obj.updateDynamic("autoHideHeader")(autoHideHeader.asInstanceOf[js.Any])
     if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse.asInstanceOf[js.Any])
     if (!js.isUndefined(colorWeak)) __obj.updateDynamic("colorWeak")(colorWeak.asInstanceOf[js.Any])
     if (contentWidth != null) __obj.updateDynamic("contentWidth")(contentWidth.asInstanceOf[js.Any])

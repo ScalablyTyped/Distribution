@@ -11,6 +11,11 @@ import scala.scalajs.js.annotation._
 @JSImport("validator/lib/isUUID", JSImport.Namespace)
 @js.native
 object libIsUUIDMod extends js.Object {
+  /**
+    * Check if the string is a UUID (version 3, 4 or 5).
+    *
+    * @param [version="all"] - UUID version
+    */
   def default(str: String): Boolean = js.native
   @JSName("default")
   def default_3(str: String, version: `3`): Boolean = js.native

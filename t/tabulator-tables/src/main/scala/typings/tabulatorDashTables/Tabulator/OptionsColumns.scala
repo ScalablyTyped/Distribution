@@ -9,6 +9,7 @@ import typings.tabulatorDashTables.tabulatorDashTablesStrings.collapse
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.fitColumns
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.fitData
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.fitDataFill
+import typings.tabulatorDashTables.tabulatorDashTablesStrings.fitDataStretch
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.group
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.header
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.hide
@@ -33,6 +34,8 @@ trait OptionsColumns extends js.Object {
   var columnCalcs: js.UndefOr[Boolean | both | table | group] = js.undefined
   /** multiple or single column sorting */
   var columnHeaderSortMulti: js.UndefOr[Boolean] = js.undefined
+  /** You can use the columnHeaderVertAlign option to set how the text in your column headers should be vertically  */
+  var columnHeaderVertAlign: js.UndefOr[top | middle | bottom] = js.undefined
   /** It is possible to set a minimum column width to prevent resizing columns from becoming too small.
     This can be set globally, by setting the columnMinWidth option to the column width when you create your Tabulator.
     This option can be overridden on a per column basis by setting the minWidth property on the column definition. */
@@ -42,8 +45,6 @@ trait OptionsColumns extends js.Object {
   var columnResized: js.UndefOr[js.Function1[/* column */ ColumnComponent, Unit]] = js.undefined
   /** The columnTitleChanged callback is triggered whenever a user edits a column title when the editableTitle parameter has been enabled in the column definition array. */
   var columnTitleChanged: js.UndefOr[js.Function1[/* column */ ColumnComponent, Unit]] = js.undefined
-  /** You can use the columnVertAlign option to set how the text in your column headers should be vertically  */
-  var columnVertAlign: js.UndefOr[top | middle | bottom] = js.undefined
   /** The columnVisibilityChanged callback is triggered whenever a column changes between hidden and visible states. */
   var columnVisibilityChanged: js.UndefOr[js.Function2[/* column */ ColumnComponent, /* visible */ Boolean, Unit]] = js.undefined
   /** The column definitions are provided to Tabluator in the columns property of the table constructor object and should take the format of an array of objects, with each object representing the configuration of one column. */
@@ -57,7 +58,7 @@ trait OptionsColumns extends js.Object {
   /**By setting the headerVisible option to false you can hide the column headers and present the table as a simple list if needed. */
   var headerVisible: js.UndefOr[Boolean] = js.undefined
   /** By default Tabulator will use the fitData layout mode, which will resize the tables columns to fit the data held in each column, unless you specify a width or minWidth in the column constructor. If the width of all columns exceeds the width of the containing element, a scroll bar will appear. */
-  var layout: js.UndefOr[fitData | fitColumns | fitDataFill] = js.undefined
+  var layout: js.UndefOr[fitData | fitColumns | fitDataFill | fitDataStretch] = js.undefined
   /** To keep the layout of the columns consistent, once the column widths have been set on the first data load (either from the data property in the constructor or the setData function) they will not be changed when new data is loaded.
     If you would prefer that the column widths adjust to the data each time you load it into the table you can set the layoutColumnsOnNewData property to true. */
   var layoutColumnsOnNewData: js.UndefOr[Boolean] = js.undefined
@@ -109,18 +110,18 @@ object OptionsColumns {
     autoColumns: js.UndefOr[Boolean] = js.undefined,
     columnCalcs: Boolean | both | table | group = null,
     columnHeaderSortMulti: js.UndefOr[Boolean] = js.undefined,
+    columnHeaderVertAlign: top | middle | bottom = null,
     columnMinWidth: Int | Double = null,
     columnMoved: (/* column */ ColumnComponent, /* columns */ js.Array[_]) => Unit = null,
     columnResized: /* column */ ColumnComponent => Unit = null,
     columnTitleChanged: /* column */ ColumnComponent => Unit = null,
-    columnVertAlign: top | middle | bottom = null,
     columnVisibilityChanged: (/* column */ ColumnComponent, /* visible */ Boolean) => Unit = null,
     columns: js.Array[ColumnDefinition] = null,
     headerFilterPlaceholder: String = null,
     headerSort: js.UndefOr[Boolean] = js.undefined,
     headerSortTristate: js.UndefOr[Boolean] = js.undefined,
     headerVisible: js.UndefOr[Boolean] = js.undefined,
-    layout: fitData | fitColumns | fitDataFill = null,
+    layout: fitData | fitColumns | fitDataFill | fitDataStretch = null,
     layoutColumnsOnNewData: js.UndefOr[Boolean] = js.undefined,
     movableColumns: js.UndefOr[Boolean] = js.undefined,
     nestedFieldSeparator: String | Boolean = null,
@@ -138,11 +139,11 @@ object OptionsColumns {
     if (!js.isUndefined(autoColumns)) __obj.updateDynamic("autoColumns")(autoColumns.asInstanceOf[js.Any])
     if (columnCalcs != null) __obj.updateDynamic("columnCalcs")(columnCalcs.asInstanceOf[js.Any])
     if (!js.isUndefined(columnHeaderSortMulti)) __obj.updateDynamic("columnHeaderSortMulti")(columnHeaderSortMulti.asInstanceOf[js.Any])
+    if (columnHeaderVertAlign != null) __obj.updateDynamic("columnHeaderVertAlign")(columnHeaderVertAlign.asInstanceOf[js.Any])
     if (columnMinWidth != null) __obj.updateDynamic("columnMinWidth")(columnMinWidth.asInstanceOf[js.Any])
     if (columnMoved != null) __obj.updateDynamic("columnMoved")(js.Any.fromFunction2(columnMoved))
     if (columnResized != null) __obj.updateDynamic("columnResized")(js.Any.fromFunction1(columnResized))
     if (columnTitleChanged != null) __obj.updateDynamic("columnTitleChanged")(js.Any.fromFunction1(columnTitleChanged))
-    if (columnVertAlign != null) __obj.updateDynamic("columnVertAlign")(columnVertAlign.asInstanceOf[js.Any])
     if (columnVisibilityChanged != null) __obj.updateDynamic("columnVisibilityChanged")(js.Any.fromFunction2(columnVisibilityChanged))
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (headerFilterPlaceholder != null) __obj.updateDynamic("headerFilterPlaceholder")(headerFilterPlaceholder.asInstanceOf[js.Any])

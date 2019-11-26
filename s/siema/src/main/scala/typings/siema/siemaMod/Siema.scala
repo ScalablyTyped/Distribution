@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Siema extends js.Object {
   var currentSlide: Double = js.native
+  var perPage: Double = js.native
   def append(item: HTMLElement): Unit = js.native
   def append(item: HTMLElement, callback: js.Function0[Unit]): Unit = js.native
   def destroy(): Unit = js.native

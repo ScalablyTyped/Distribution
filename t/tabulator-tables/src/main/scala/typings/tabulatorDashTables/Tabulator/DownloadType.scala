@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   - typings.tabulatorDashTables.tabulatorDashTablesStrings.json
   - typings.tabulatorDashTables.tabulatorDashTablesStrings.xlsx
   - typings.tabulatorDashTables.tabulatorDashTablesStrings.pdf
+  - typings.tabulatorDashTables.tabulatorDashTablesStrings.html
 */
 trait DownloadType extends js.Object
 
@@ -17,6 +18,8 @@ object DownloadType {
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
   def csv: typings.tabulatorDashTables.tabulatorDashTablesStrings.csv = this.cast("csv")
+  @scala.inline
+  def html: typings.tabulatorDashTables.tabulatorDashTablesStrings.html = this.cast("html")
   @scala.inline
   def json: typings.tabulatorDashTables.tabulatorDashTablesStrings.json = this.cast("json")
   @scala.inline

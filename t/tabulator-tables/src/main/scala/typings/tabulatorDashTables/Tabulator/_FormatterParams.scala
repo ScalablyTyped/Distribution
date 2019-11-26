@@ -58,6 +58,7 @@ object _FormatterParams {
   }
   @scala.inline
   def LinkParams(
+    download: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
     labelField: String = null,
     target: String = null,
@@ -66,6 +67,7 @@ object _FormatterParams {
     urlPrefix: String = null
   ): _FormatterParams = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(download)) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelField != null) __obj.updateDynamic("labelField")(labelField.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@formatjs/intl-unified-numberformat/lib/core", "UnifiedNumberFormat")
 @js.native
-class UnifiedNumberFormat protected () extends NumberFormat {
+class UnifiedNumberFormat () extends NumberFormat {
   def this(locales: String) = this()
   def this(locales: js.Array[String]) = this()
   def this(locales: String, options: UnifiedNumberFormatOptions) = this()

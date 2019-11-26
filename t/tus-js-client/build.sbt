@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tus-js-client"
-version := "1.7-dt-20191007Z-9800e0"
+version := "1.8-dt-20191125Z-07ca16"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

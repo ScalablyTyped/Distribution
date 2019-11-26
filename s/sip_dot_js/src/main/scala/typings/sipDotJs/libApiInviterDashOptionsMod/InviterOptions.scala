@@ -28,8 +28,6 @@ trait InviterOptions extends SessionOptions {
   /** If true, send INVITE without SDP. Default is false. */
   var inviteWithoutSdp: js.UndefOr[Boolean] = js.undefined
   /** @deprecated TODO: provide alternative. */
-  var onInfo: js.UndefOr[js.Any] = js.undefined
-  /** @deprecated TODO: provide alternative. */
   var params: js.UndefOr[Anon_FromDisplayName] = js.undefined
   /** @deprecated TODO: provide alternative. */
   var renderbody: js.UndefOr[String] = js.undefined
@@ -51,7 +49,6 @@ object InviterOptions {
     earlyMedia: js.UndefOr[Boolean] = js.undefined,
     extraHeaders: js.Array[String] = null,
     inviteWithoutSdp: js.UndefOr[Boolean] = js.undefined,
-    onInfo: js.Any = null,
     params: Anon_FromDisplayName = null,
     renderbody: String = null,
     rendertype: String = null,
@@ -66,7 +63,6 @@ object InviterOptions {
     if (!js.isUndefined(earlyMedia)) __obj.updateDynamic("earlyMedia")(earlyMedia.asInstanceOf[js.Any])
     if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
     if (!js.isUndefined(inviteWithoutSdp)) __obj.updateDynamic("inviteWithoutSdp")(inviteWithoutSdp.asInstanceOf[js.Any])
-    if (onInfo != null) __obj.updateDynamic("onInfo")(onInfo.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (renderbody != null) __obj.updateDynamic("renderbody")(renderbody.asInstanceOf[js.Any])
     if (rendertype != null) __obj.updateDynamic("rendertype")(rendertype.asInstanceOf[js.Any])

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object atFormatjsMacroMod extends js.Object {
   def `_`[T](msg: T): T = js.native
-  def defineMessages[T](msgs: Record[String, T]): Record[String, T] = js.native
+  def defineMessages[T, U /* <: Record[String, T] */](msgs: U): U = js.native
 }
 

@@ -86,10 +86,9 @@ class OutgoingRequestMessage protected () extends js.Object {
     * the client and the server.
     * https://tools.ietf.org/html/rfc3261#section-8.1.1.7
     * @param branchParameter - The branch parameter.
-    * @param scheme - The scheme.
+    * @param transport - The sent protocol transport.
     */
-  def setViaHeader(branch: String): Unit = js.native
-  def setViaHeader(branch: String, scheme: String): Unit = js.native
+  def setViaHeader(branch: String, transport: String): Unit = js.native
 }
 
 /* static members */

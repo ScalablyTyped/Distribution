@@ -1,6 +1,7 @@
 package typings.node.childUnderscoreProcessMod
 
 import typings.node.Error
+import typings.node.NodeJS.Signals
 import typings.node.eventsMod.EventEmitter
 import typings.node.netMod.Server
 import typings.node.netMod.Socket
@@ -33,16 +34,13 @@ trait ChildProcess extends EventEmitter {
   ] = js.native
   var stdout: Readable | Null = js.native
   @JSName("addListener")
-  def addListener_close(event: close, listener: js.Function2[/* code */ Double, /* signal */ java.lang.String, Unit]): this.type = js.native
+  def addListener_close(event: close, listener: js.Function2[/* code */ Double, /* signal */ Signals, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_disconnect(event: disconnect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_exit(
-    event: exit,
-    listener: js.Function2[/* code */ Double | Null, /* signal */ java.lang.String | Null, Unit]
-  ): this.type = js.native
+  def addListener_exit(event: exit, listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_message(
     event: message,
@@ -50,7 +48,7 @@ trait ChildProcess extends EventEmitter {
   ): this.type = js.native
   def disconnect(): Unit = js.native
   @JSName("emit")
-  def emit_close(event: close, code: Double, signal: java.lang.String): Boolean = js.native
+  def emit_close(event: close, code: Double, signal: Signals): Boolean = js.native
   @JSName("emit")
   def emit_disconnect(event: disconnect): Boolean = js.native
   @JSName("emit")
@@ -60,74 +58,63 @@ trait ChildProcess extends EventEmitter {
   @JSName("emit")
   def emit_exit(event: exit, code: Double): Boolean = js.native
   @JSName("emit")
-  def emit_exit(event: exit, code: Double, signal: java.lang.String): Boolean = js.native
+  def emit_exit(event: exit, code: Double, signal: Signals): Boolean = js.native
   @JSName("emit")
-  def emit_exit(event: exit, code: Null, signal: java.lang.String): Boolean = js.native
+  def emit_exit(event: exit, code: Null, signal: Signals): Boolean = js.native
   @JSName("emit")
   def emit_message(event: message, message: js.Any, sendHandle: Server): Boolean = js.native
   @JSName("emit")
   def emit_message(event: message, message: js.Any, sendHandle: Socket): Boolean = js.native
   def kill(): Unit = js.native
-  def kill(signal: java.lang.String): Unit = js.native
+  def kill(signal: Double): Unit = js.native
+  def kill(signal: Signals): Unit = js.native
   @JSName("on")
-  def on_close(event: close, listener: js.Function2[/* code */ Double, /* signal */ java.lang.String, Unit]): this.type = js.native
+  def on_close(event: close, listener: js.Function2[/* code */ Double, /* signal */ Signals, Unit]): this.type = js.native
   @JSName("on")
   def on_disconnect(event: disconnect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
   @JSName("on")
-  def on_exit(
-    event: exit,
-    listener: js.Function2[/* code */ Double | Null, /* signal */ java.lang.String | Null, Unit]
-  ): this.type = js.native
+  def on_exit(event: exit, listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]): this.type = js.native
   @JSName("on")
   def on_message(
     event: message,
     listener: js.Function2[/* message */ js.Any, /* sendHandle */ Socket | Server, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_close(event: close, listener: js.Function2[/* code */ Double, /* signal */ java.lang.String, Unit]): this.type = js.native
+  def once_close(event: close, listener: js.Function2[/* code */ Double, /* signal */ Signals, Unit]): this.type = js.native
   @JSName("once")
   def once_disconnect(event: disconnect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
   def once_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
   @JSName("once")
-  def once_exit(
-    event: exit,
-    listener: js.Function2[/* code */ Double | Null, /* signal */ java.lang.String | Null, Unit]
-  ): this.type = js.native
+  def once_exit(event: exit, listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]): this.type = js.native
   @JSName("once")
   def once_message(
     event: message,
     listener: js.Function2[/* message */ js.Any, /* sendHandle */ Socket | Server, Unit]
   ): this.type = js.native
   @JSName("prependListener")
-  def prependListener_close(event: close, listener: js.Function2[/* code */ Double, /* signal */ java.lang.String, Unit]): this.type = js.native
+  def prependListener_close(event: close, listener: js.Function2[/* code */ Double, /* signal */ Signals, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_disconnect(event: disconnect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
   @JSName("prependListener")
-  def prependListener_exit(
-    event: exit,
-    listener: js.Function2[/* code */ Double | Null, /* signal */ java.lang.String | Null, Unit]
-  ): this.type = js.native
+  def prependListener_exit(event: exit, listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_message(
     event: message,
     listener: js.Function2[/* message */ js.Any, /* sendHandle */ Socket | Server, Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_close(event: close, listener: js.Function2[/* code */ Double, /* signal */ java.lang.String, Unit]): this.type = js.native
+  def prependOnceListener_close(event: close, listener: js.Function2[/* code */ Double, /* signal */ Signals, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_disconnect(event: disconnect, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_exit(
-    event: exit,
-    listener: js.Function2[/* code */ Double | Null, /* signal */ java.lang.String | Null, Unit]
-  ): this.type = js.native
+  def prependOnceListener_exit(event: exit, listener: js.Function2[/* code */ Double | Null, /* signal */ Signals | Null, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_message(
     event: message,

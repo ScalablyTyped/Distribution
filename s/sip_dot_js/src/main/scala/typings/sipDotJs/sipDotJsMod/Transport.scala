@@ -1,6 +1,6 @@
 package typings.sipDotJs.sipDotJsMod
 
-import typings.sipDotJs.libCoreLogMod.Logger
+import typings.sipDotJs.libCoreMod.Logger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js", "Transport")
 @js.native
 abstract class Transport protected ()
-  extends typings.sipDotJs.libCoreMod.Transport {
+  extends typings.sipDotJs.libTransportMod.Transport {
   /**
     * Constructor
     * @param logger - Logger.

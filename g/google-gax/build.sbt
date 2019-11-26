@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "google-gax"
-version := "1.7.5-594a63"
+version := "1.7.5-301c22"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "gaxios" % "2.0.1-535ae1",
-  "org.scalablytyped" %%% "google-auth-library" % "5.3.0-2a8dd1",
-  "org.scalablytyped" %%% "grpc__grpc-js" % "0.6.9-6c8673",
-  "org.scalablytyped" %%% "grpc__proto-loader" % "0.5.3-fe996a",
+  "org.scalablytyped" %%% "gaxios" % "2.0.1-0c2e00",
+  "org.scalablytyped" %%% "google-auth-library" % "5.3.0-5c2628",
+  "org.scalablytyped" %%% "grpc__grpc-js" % "0.6.9-1b8c7c",
+  "org.scalablytyped" %%% "grpc__proto-loader" % "0.5.3-601932",
   "org.scalablytyped" %%% "gtoken" % "4.1.0-420d70",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191123Z-382692",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191125Z-959704",
   "org.scalablytyped" %%% "protobufjs" % "6.8.8-d57d48",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false

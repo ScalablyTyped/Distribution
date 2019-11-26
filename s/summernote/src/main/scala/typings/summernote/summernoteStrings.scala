@@ -1,5 +1,6 @@
 package typings.summernote
 
+import typings.summernote.summernoteMod._Global_.Summernote.miscGroupOptions
 import typings.summernote.summernoteMod._Global_.Summernote.popoverAirOptionsFont
 import typings.summernote.summernoteMod._Global_.Summernote.popoverAirOptionsInsert
 import typings.summernote.summernoteMod._Global_.Summernote.popoverAirOptionsPara
@@ -8,6 +9,7 @@ import typings.summernote.summernoteMod._Global_.Summernote.popoverImageOptionsI
 import typings.summernote.summernoteMod._Global_.Summernote.popoverLinkLinkOptions
 import typings.summernote.summernoteMod._Global_.Summernote.styleTagsOptions
 import typings.summernote.summernoteMod._Global_.Summernote.toolbarFontGroupOptions
+import typings.summernote.summernoteMod._Global_.Summernote.toolbarFontsizeGroupOptions
 import typings.summernote.summernoteMod._Global_.Summernote.toolbarInsertGroupOptions
 import typings.summernote.summernoteMod._Global_.Summernote.toolbarParaGroupOptions
 import typings.summernote.summernoteMod._Global_.Summernote.toolbarStyleGroupOptions
@@ -21,26 +23,35 @@ object summernoteStrings {
   sealed trait backColor extends js.Object
   
   @js.native
+  sealed trait backcolor_ extends toolbarFontGroupOptions
+  
+  @js.native
   sealed trait blockquote extends styleTagsOptions
   
   @js.native
   sealed trait bold
     extends popoverAirOptionsFont
+       with toolbarFontGroupOptions
        with toolbarStyleGroupOptions
   
   @js.native
   sealed trait clear
     extends popoverAirOptionsFont
+       with toolbarFontGroupOptions
        with toolbarStyleGroupOptions
   
   @js.native
   sealed trait code extends js.Object
   
   @js.native
-  sealed trait codeview extends toolbarViewGroupOptions
+  sealed trait codeview
+    extends miscGroupOptions
+       with toolbarViewGroupOptions
   
   @js.native
-  sealed trait color extends js.Object
+  sealed trait color
+    extends toolbarFontGroupOptions
+       with toolbarFontsizeGroupOptions
   
   @js.native
   sealed trait createLink extends js.Object
@@ -163,10 +174,20 @@ object summernoteStrings {
   sealed trait fontSize extends js.Object
   
   @js.native
-  sealed trait fontsize_ extends js.Object
+  sealed trait fontname_
+    extends toolbarFontGroupOptions
+       with toolbarFontsizeGroupOptions
+  
+  @js.native
+  sealed trait fontsize_
+    extends toolbarFontGroupOptions
+       with toolbarFontsizeGroupOptions
   
   @js.native
   sealed trait foreColor extends js.Object
+  
+  @js.native
+  sealed trait forecolor_ extends toolbarFontGroupOptions
   
   @js.native
   sealed trait formatH1 extends js.Object
@@ -190,7 +211,9 @@ object summernoteStrings {
   sealed trait formatPara extends js.Object
   
   @js.native
-  sealed trait fullscreen extends toolbarViewGroupOptions
+  sealed trait fullscreen
+    extends miscGroupOptions
+       with toolbarViewGroupOptions
   
   @js.native
   sealed trait h1 extends styleTagsOptions
@@ -211,10 +234,12 @@ object summernoteStrings {
   sealed trait h6 extends styleTagsOptions
   
   @js.native
-  sealed trait height extends js.Object
+  sealed trait height extends toolbarParaGroupOptions
   
   @js.native
-  sealed trait help extends js.Object
+  sealed trait help
+    extends miscGroupOptions
+       with toolbarViewGroupOptions
   
   @js.native
   sealed trait hr extends toolbarInsertGroupOptions
@@ -259,7 +284,9 @@ object summernoteStrings {
   sealed trait isEmpty extends js.Object
   
   @js.native
-  sealed trait italic extends toolbarStyleGroupOptions
+  sealed trait italic
+    extends toolbarFontGroupOptions
+       with toolbarStyleGroupOptions
   
   @js.native
   sealed trait justifyCenter extends js.Object
@@ -280,6 +307,9 @@ object summernoteStrings {
   
   @js.native
   sealed trait linkDialogShow extends popoverLinkLinkOptions
+  
+  @js.native
+  sealed trait misc extends js.Object
   
   @js.native
   sealed trait ol extends toolbarParaGroupOptions
@@ -310,7 +340,7 @@ object summernoteStrings {
   sealed trait pre extends styleTagsOptions
   
   @js.native
-  sealed trait redo extends js.Object
+  sealed trait redo extends miscGroupOptions
   
   @js.native
   sealed trait remove extends js.Object
@@ -334,7 +364,9 @@ object summernoteStrings {
   sealed trait strikethrough extends toolbarFontGroupOptions
   
   @js.native
-  sealed trait style extends toolbarStyleGroupOptions
+  sealed trait style
+    extends toolbarParaGroupOptions
+       with toolbarStyleGroupOptions
   
   @js.native
   sealed trait subscript extends toolbarFontGroupOptions
@@ -343,7 +375,7 @@ object summernoteStrings {
   sealed trait superscript extends toolbarFontGroupOptions
   
   @js.native
-  sealed trait table extends js.Object
+  sealed trait table extends toolbarInsertGroupOptions
   
   @js.native
   sealed trait ul
@@ -353,19 +385,25 @@ object summernoteStrings {
   @js.native
   sealed trait underline
     extends popoverAirOptionsFont
+       with toolbarFontGroupOptions
        with toolbarStyleGroupOptions
   
   @js.native
-  sealed trait undo extends js.Object
+  sealed trait undo extends miscGroupOptions
   
   @js.native
   sealed trait unlink extends popoverLinkLinkOptions
+  
+  @js.native
+  sealed trait video extends toolbarInsertGroupOptions
   
   @js.native
   sealed trait view extends js.Object
   
   @scala.inline
   def backColor: backColor = "backColor".asInstanceOf[backColor]
+  @scala.inline
+  def backcolor_ : backcolor_ = "backcolor".asInstanceOf[backcolor_]
   @scala.inline
   def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
   @scala.inline
@@ -459,9 +497,13 @@ object summernoteStrings {
   @scala.inline
   def fontSize: fontSize = "fontSize".asInstanceOf[fontSize]
   @scala.inline
+  def fontname_ : fontname_ = "fontname".asInstanceOf[fontname_]
+  @scala.inline
   def fontsize_ : fontsize_ = "fontsize".asInstanceOf[fontsize_]
   @scala.inline
   def foreColor: foreColor = "foreColor".asInstanceOf[foreColor]
+  @scala.inline
+  def forecolor_ : forecolor_ = "forecolor".asInstanceOf[forecolor_]
   @scala.inline
   def formatH1: formatH1 = "formatH1".asInstanceOf[formatH1]
   @scala.inline
@@ -537,6 +579,8 @@ object summernoteStrings {
   @scala.inline
   def linkDialogShow: linkDialogShow = "linkDialogShow".asInstanceOf[linkDialogShow]
   @scala.inline
+  def misc: misc = "misc".asInstanceOf[misc]
+  @scala.inline
   def ol: ol = "ol".asInstanceOf[ol]
   @scala.inline
   def outdent: outdent = "outdent".asInstanceOf[outdent]
@@ -584,6 +628,8 @@ object summernoteStrings {
   def undo: undo = "undo".asInstanceOf[undo]
   @scala.inline
   def unlink: unlink = "unlink".asInstanceOf[unlink]
+  @scala.inline
+  def video: video = "video".asInstanceOf[video]
   @scala.inline
   def view: view = "view".asInstanceOf[view]
 }

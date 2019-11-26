@@ -15,6 +15,7 @@ trait PushNotification extends js.Object {
   var foreground: Boolean = js.native
   var message: String | js.Object = js.native
   var sound: String = js.native
+  var subText: js.UndefOr[String] = js.native
   var userInteraction: Boolean = js.native
   def abandonPermissions(): Unit = js.native
   def cancelAllLocalNotifications(): Unit = js.native

@@ -1,29 +1,21 @@
 package typings.ts3DashNodejsDashLibrary.libTransportTeamSpeakQueryMod.TeamSpeakQuery
 
+import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait QueryProtocolInterface extends js.Object {
-  val chunk: String
-  def close(): Unit
-  def on(event: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit
-  def send(data: String): Unit
-  def sendKeepAlive(): Unit
-}
-
-object QueryProtocolInterface {
-  @scala.inline
-  def apply(
-    chunk: String,
-    close: () => Unit,
-    on: (String, js.Function1[/* repeated */ js.Any, Unit]) => Unit,
-    send: String => Unit,
-    sendKeepAlive: () => Unit
-  ): QueryProtocolInterface = {
-    val __obj = js.Dynamic.literal(chunk = chunk.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), on = js.Any.fromFunction2(on), send = js.Any.fromFunction1(send), sendKeepAlive = js.Any.fromFunction0(sendKeepAlive))
-  
-    __obj.asInstanceOf[QueryProtocolInterface]
-  }
+@js.native
+trait QueryProtocolInterface extends EventEmitter {
+  val chunk: String = js.native
+  /** forcefully closes the socket */
+  def close(): Unit = js.native
+  /**
+    * sends the data in the first argument, appends a newline
+    * @param {string} str the data which should be sent
+    */
+  def send(data: String): Unit = js.native
+  /** sends a keepalive to the TeamSpeak Server */
+  def sendKeepAlive(): Unit = js.native
 }
 

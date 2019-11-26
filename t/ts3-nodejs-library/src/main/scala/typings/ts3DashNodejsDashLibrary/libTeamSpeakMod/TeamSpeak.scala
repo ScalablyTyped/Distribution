@@ -120,6 +120,7 @@ class TeamSpeak protected () extends EventEmitter {
   var channels: js.Any = js.native
   var clients: js.Any = js.native
   val config: ConnectionParams = js.native
+  var context: js.Any = js.native
   /**
     * Gets called when a channel gets edited
     * @param event the raw teamspeak event
@@ -178,11 +179,29 @@ class TeamSpeak protected () extends EventEmitter {
     * @param node the class which should be used
     */
   var handleCache: js.Any = js.native
-  /** handle after successfully connecting to a TeamSpeak Server */
+  /** handles initial commands after successfully connecting to a TeamSpeak Server */
   var handleReady: js.Any = js.native
+  var priorizeNextCommand: js.Any = js.native
   var query: js.Any = js.native
   var servergroups: js.Any = js.native
   var servers: js.Any = js.native
+  /**
+    * updates the context with new data
+    * @param data the data to update the context with
+    */
+  var updateContext: js.Any = js.native
+  /**
+    * updates the context when the inner callback gets called
+    * and throws the first parameter which is an error
+    * @param context context data to update
+    */
+  var updateContextReject: js.Any = js.native
+  /**
+    * updates the context when the inner callback gets called
+    * and returns the first parameter
+    * @param context context data to update
+    */
+  var updateContextResolve: js.Any = js.native
   /**
     * Adds a new ban rule on the selected virtual server.
     * All parameters are optional but at least one of the following must be set: ip, name, uid or mytsid.
@@ -536,9 +555,9 @@ class TeamSpeak protected () extends EventEmitter {
   def clientSetServerQueryLogin(name: String): js.Promise[ClientSetServerQueryLogin] = js.native
   /**
     * Change your ServerQuery clients settings using given properties.
-    * @param properties the properties which should be changed
+    * @param props the properties which should be changed
     */
-  def clientUpdate(properties: ClientUpdate): js.Promise[js.Array[QueryResponseTypes]] = js.native
+  def clientUpdate(props: ClientUpdate): js.Promise[js.Array[QueryResponseTypes]] = js.native
   /**
     * Submits a complaint about the client with database ID dbid to the server.
     * @param cldbid filter only for certain client with the given database id
@@ -561,6 +580,10 @@ class TeamSpeak protected () extends EventEmitter {
     */
   def complainList(): js.Promise[js.Array[ComplainList]] = js.native
   def complainList(cldbid: Double): js.Promise[js.Array[ComplainList]] = js.native
+  /**
+    * connects to the TeamSpeak Server
+    */
+  def connect(): js.Promise[TeamSpeak] = js.native
   /**
     * returns detailed connection information about the selected virtual server including uptime, traffic information, etc.
     */
@@ -923,6 +946,8 @@ class TeamSpeak protected () extends EventEmitter {
     * Retrieves a list of permissions available on the server instance including ID, name and description.
     */
   def permissionList(): js.Promise[js.Array[PermissionList]] = js.native
+  /** priorizes the next command, this commands will be first in execution */
+  def priorize(): this.type = js.native
   /**
     * Create a new token.+
     * If type is set to 0, the ID specified with tokenid will be a server group ID.
@@ -992,6 +1017,14 @@ class TeamSpeak protected () extends EventEmitter {
   def queryLoginList(pattern: String, start: Double, duration: Double): js.Promise[js.Array[QueryLoginList]] = js.native
   /** closes the ServerQuery connection to the TeamSpeak server instance. */
   def quit(): js.Promise[js.Array[QueryResponseTypes]] = js.native
+  /**
+    * attempts a reconnect to the teamspeak server with full context features
+    * @param attempts the amount of times it should try to reconnect (-1 = try forever)
+    * @param timeout time in ms to wait inbetween reconnect
+    */
+  def reconnect(): js.Promise[this.type] = js.native
+  def reconnect(attempts: Double): js.Promise[this.type] = js.native
+  def reconnect(attempts: Double, timeout: Double): js.Promise[this.type] = js.native
   /**
     * Subscribes to an Event
     * @param event the event on which should be subscribed
@@ -1257,5 +1290,10 @@ object TeamSpeak extends js.Object {
     */
   def toArray[T](input: T): js.Array[T] = js.native
   def toArray[T](input: js.Array[T]): js.Array[T] = js.native
+  /**
+    * waits a set time of ms
+    * @param time time in ms to wait
+    */
+  def wait(time: Double): js.Promise[_] = js.native
 }
 

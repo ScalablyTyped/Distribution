@@ -101,7 +101,7 @@ class AuthenticationContext protected () extends js.Object {
     * Gets token for the specified resource from the cache.
     * @param resource A URI that identifies the resource for which the token is requested.
     */
-  def getCachedToken(resource: String): String = js.native
+  def getCachedToken(resource: String): String | Null = js.native
   /**
     * If user object exists, returns it. Else creates a new user object by decoding `id_token` from the cache.
     */

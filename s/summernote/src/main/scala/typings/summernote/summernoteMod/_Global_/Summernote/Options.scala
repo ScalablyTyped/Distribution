@@ -9,6 +9,10 @@ trait Options extends js.Object {
   var callbacks: js.UndefOr[js.Any] = js.undefined
    // todo
   var codemirror: js.UndefOr[CodemirrorOptions] = js.undefined
+  var codeviewFilter: js.UndefOr[Boolean] = js.undefined
+  var codeviewFilterRegex: js.UndefOr[String] = js.undefined
+  var codeviewIframeFilter: js.UndefOr[Boolean] = js.undefined
+  var codeviewIframeWhitelistSrc: js.UndefOr[js.Array[String]] = js.undefined
   var colors: js.UndefOr[colorsDef] = js.undefined
   var dialogsFade: js.UndefOr[Boolean] = js.undefined
   var dialogsInBody: js.UndefOr[Boolean] = js.undefined
@@ -33,6 +37,7 @@ trait Options extends js.Object {
   var shortcuts: js.UndefOr[Boolean] = js.undefined
   var styleTags: js.UndefOr[js.Array[styleTagsOptions]] = js.undefined
   var styleWithSpan: js.UndefOr[Boolean] = js.undefined
+  var tabDisable: js.UndefOr[Boolean] = js.undefined
   var tableClassName: js.UndefOr[String] = js.undefined
   var tabsize: js.UndefOr[Double] = js.undefined
   var textareaAutoSync: js.UndefOr[Boolean] = js.undefined
@@ -46,6 +51,10 @@ object Options {
     airMode: js.UndefOr[Boolean] = js.undefined,
     callbacks: js.Any = null,
     codemirror: CodemirrorOptions = null,
+    codeviewFilter: js.UndefOr[Boolean] = js.undefined,
+    codeviewFilterRegex: String = null,
+    codeviewIframeFilter: js.UndefOr[Boolean] = js.undefined,
+    codeviewIframeWhitelistSrc: js.Array[String] = null,
     colors: colorsDef = null,
     dialogsFade: js.UndefOr[Boolean] = js.undefined,
     dialogsInBody: js.UndefOr[Boolean] = js.undefined,
@@ -70,6 +79,7 @@ object Options {
     shortcuts: js.UndefOr[Boolean] = js.undefined,
     styleTags: js.Array[styleTagsOptions] = null,
     styleWithSpan: js.UndefOr[Boolean] = js.undefined,
+    tabDisable: js.UndefOr[Boolean] = js.undefined,
     tableClassName: String = null,
     tabsize: Int | Double = null,
     textareaAutoSync: js.UndefOr[Boolean] = js.undefined,
@@ -80,6 +90,10 @@ object Options {
     if (!js.isUndefined(airMode)) __obj.updateDynamic("airMode")(airMode.asInstanceOf[js.Any])
     if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
     if (codemirror != null) __obj.updateDynamic("codemirror")(codemirror.asInstanceOf[js.Any])
+    if (!js.isUndefined(codeviewFilter)) __obj.updateDynamic("codeviewFilter")(codeviewFilter.asInstanceOf[js.Any])
+    if (codeviewFilterRegex != null) __obj.updateDynamic("codeviewFilterRegex")(codeviewFilterRegex.asInstanceOf[js.Any])
+    if (!js.isUndefined(codeviewIframeFilter)) __obj.updateDynamic("codeviewIframeFilter")(codeviewIframeFilter.asInstanceOf[js.Any])
+    if (codeviewIframeWhitelistSrc != null) __obj.updateDynamic("codeviewIframeWhitelistSrc")(codeviewIframeWhitelistSrc.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (!js.isUndefined(dialogsFade)) __obj.updateDynamic("dialogsFade")(dialogsFade.asInstanceOf[js.Any])
     if (!js.isUndefined(dialogsInBody)) __obj.updateDynamic("dialogsInBody")(dialogsInBody.asInstanceOf[js.Any])
@@ -104,6 +118,7 @@ object Options {
     if (!js.isUndefined(shortcuts)) __obj.updateDynamic("shortcuts")(shortcuts.asInstanceOf[js.Any])
     if (styleTags != null) __obj.updateDynamic("styleTags")(styleTags.asInstanceOf[js.Any])
     if (!js.isUndefined(styleWithSpan)) __obj.updateDynamic("styleWithSpan")(styleWithSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(tabDisable)) __obj.updateDynamic("tabDisable")(tabDisable.asInstanceOf[js.Any])
     if (tableClassName != null) __obj.updateDynamic("tableClassName")(tableClassName.asInstanceOf[js.Any])
     if (tabsize != null) __obj.updateDynamic("tabsize")(tabsize.asInstanceOf[js.Any])
     if (!js.isUndefined(textareaAutoSync)) __obj.updateDynamic("textareaAutoSync")(textareaAutoSync.asInstanceOf[js.Any])

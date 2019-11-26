@@ -32,6 +32,8 @@ object libApiReferrerMod extends js.Object {
     /** The referrer delegate. */
     var delegate: js.UndefOr[ReferrerDelegate] = js.native
     var extraHeaders: js.Any = js.native
+    /** The logger. */
+    var logger: js.Any = js.native
     var referToString: js.Any = js.native
     /** The referrer session. */
     val session: Session = js.native
