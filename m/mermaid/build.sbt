@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mermaid"
-version := "8.2-dt-20191010Z-c56404"
+version := "8.2-dt-20191126Z-c56404"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

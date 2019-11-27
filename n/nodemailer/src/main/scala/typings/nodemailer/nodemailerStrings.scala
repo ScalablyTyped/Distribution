@@ -60,9 +60,6 @@ object nodemailerStrings {
   sealed trait attachment extends js.Object
   
   @js.native
-  sealed trait available extends js.Object
-  
-  @js.native
   sealed trait base64 extends TextEncoding
   
   @js.native
@@ -78,9 +75,6 @@ object nodemailerStrings {
   sealed trait custom__ extends js.Object
   
   @js.native
-  sealed trait data extends js.Object
-  
-  @js.native
   sealed trait debug extends LoggerLevel
   
   @js.native
@@ -91,12 +85,6 @@ object nodemailerStrings {
   
   @js.native
   sealed trait fatal extends LoggerLevel
-  
-  @js.native
-  sealed trait hash extends js.Object
-  
-  @js.native
-  sealed trait headers extends js.Object
   
   @js.native
   sealed trait high extends js.Object
@@ -150,9 +138,6 @@ object nodemailerStrings {
   sealed trait `quoted-printable` extends TextEncoding
   
   @js.native
-  sealed trait readable extends js.Object
-  
-  @js.native
   sealed trait token extends js.Object
   
   @js.native
@@ -196,8 +181,6 @@ object nodemailerStrings {
   @scala.inline
   def attachment: attachment = "attachment".asInstanceOf[attachment]
   @scala.inline
-  def available: available = "available".asInstanceOf[available]
-  @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]
   @scala.inline
   def close: close = "close".asInstanceOf[close]
@@ -208,8 +191,6 @@ object nodemailerStrings {
   @scala.inline
   def custom__ : custom__ = "custom".asInstanceOf[custom__]
   @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
   @scala.inline
   def end: end = "end".asInstanceOf[end]
@@ -217,10 +198,6 @@ object nodemailerStrings {
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def fatal: fatal = "fatal".asInstanceOf[fatal]
-  @scala.inline
-  def hash: hash = "hash".asInstanceOf[hash]
-  @scala.inline
-  def headers: headers = "headers".asInstanceOf[headers]
   @scala.inline
   def high: high = "high".asInstanceOf[high]
   @scala.inline
@@ -255,8 +232,6 @@ object nodemailerStrings {
   def proxy_handler_socks5: proxy_handler_socks5 = "proxy_handler_socks5".asInstanceOf[proxy_handler_socks5]
   @scala.inline
   def `quoted-printable`: `quoted-printable` = "quoted-printable".asInstanceOf[`quoted-printable`]
-  @scala.inline
-  def readable: readable = "readable".asInstanceOf[readable]
   @scala.inline
   def token: token = "token".asInstanceOf[token]
   @scala.inline

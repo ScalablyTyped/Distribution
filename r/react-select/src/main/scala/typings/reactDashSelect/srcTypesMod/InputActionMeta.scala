@@ -11,7 +11,7 @@ trait InputActionMeta extends js.Object {
 object InputActionMeta {
   @scala.inline
   def apply(action: InputActionTypes): InputActionMeta = {
-    val __obj = js.Dynamic.literal(action = action)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[InputActionMeta]
   }

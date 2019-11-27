@@ -1,7 +1,6 @@
 package typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod
 
 import typings.googleDashProtobuf.googleDashProtobufMod.Message
-import typings.googleDashProtobuf.googleProtobufWrappersUnderscorePbMod.UInt64Value
 import typings.libraDashCore.libAtGeneratedEventsUnderscorePbMod.EventsForVersions
 import typings.libraDashCore.libAtGeneratedProofUnderscorePbMod.AccumulatorProof
 import typings.libraDashCore.libAtGeneratedTransactionUnderscoreInfoUnderscorePbMod.TransactionInfo
@@ -25,7 +24,9 @@ class TransactionListWithProof_ () extends Message {
   def clearProofOfLastTransaction(): Unit = js.native
   def clearTransactionsList(): Unit = js.native
   def getEventsForVersions(): js.UndefOr[EventsForVersions] = js.native
-  def getFirstTransactionVersion(): js.UndefOr[UInt64Value] = js.native
+  def getFirstTransactionVersion(): js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify google_protobuf_wrappers_pb.UInt64Value */ js.Any
+  ] = js.native
   def getInfosList(): js.Array[TransactionInfo] = js.native
   def getProofOfFirstTransaction(): js.UndefOr[AccumulatorProof] = js.native
   def getProofOfLastTransaction(): js.UndefOr[AccumulatorProof] = js.native
@@ -37,7 +38,9 @@ class TransactionListWithProof_ () extends Message {
   def setEventsForVersions(): Unit = js.native
   def setEventsForVersions(value: EventsForVersions): Unit = js.native
   def setFirstTransactionVersion(): Unit = js.native
-  def setFirstTransactionVersion(value: UInt64Value): Unit = js.native
+  def setFirstTransactionVersion(
+    value: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify google_protobuf_wrappers_pb.UInt64Value */ js.Any
+  ): Unit = js.native
   def setInfosList(value: js.Array[TransactionInfo]): Unit = js.native
   def setProofOfFirstTransaction(): Unit = js.native
   def setProofOfFirstTransaction(value: AccumulatorProof): Unit = js.native

@@ -13,7 +13,7 @@ package object srcSelectMod {
 
   type ElRef = Ref[js.Any]
   type MouseOrTouchEvent = (MouseEvent[HTMLElement, NativeMouseEvent]) | TouchEvent[HTMLElement]
-  type SelectComponentsProps = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type SelectComponentsProps = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in string ]: any}
     */ typings.reactDashSelect.reactDashSelectStrings.SelectComponentsProps with js.Any
 }

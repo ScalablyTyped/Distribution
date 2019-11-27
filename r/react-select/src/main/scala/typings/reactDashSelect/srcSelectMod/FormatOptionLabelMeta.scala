@@ -15,7 +15,7 @@ trait FormatOptionLabelMeta[OptionType /* <: OptionTypeBase */] extends js.Objec
 object FormatOptionLabelMeta {
   @scala.inline
   def apply[OptionType /* <: OptionTypeBase */](context: FormatOptionLabelContext, inputValue: String, selectValue: ValueType[OptionType] = null): FormatOptionLabelMeta[OptionType] = {
-    val __obj = js.Dynamic.literal(context = context, inputValue = inputValue)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], inputValue = inputValue.asInstanceOf[js.Any])
     if (selectValue != null) __obj.updateDynamic("selectValue")(selectValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatOptionLabelMeta[OptionType]]
   }

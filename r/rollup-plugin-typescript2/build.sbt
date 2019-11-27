@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "rollup-plugin-typescript2"
-version := "0.25.2-bbf53f"
+version := "0.25.2-28b1a4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20191119Z-f93ca0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191125Z-959704",
-  "org.scalablytyped" %%% "rollup" % "1.27.5-0633b9",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
+  "org.scalablytyped" %%% "rollup" % "1.27.5-4f7aba",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
   "org.scalablytyped" %%% "typescript" % "3.7.2-cef6ee")
 publishArtifact in packageDoc := false

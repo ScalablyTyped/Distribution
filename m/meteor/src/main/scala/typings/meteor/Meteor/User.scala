@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 trait User extends js.Object {
   var _id: String
   var createdAt: js.UndefOr[Date] = js.undefined
-  // One of the tests assigns a new property to the user so it has to be typed
-  var dexterity: js.UndefOr[Double] = js.undefined
   var emails: js.UndefOr[js.Array[UserEmail]] = js.undefined
   var profile: js.UndefOr[js.Any] = js.undefined
   var services: js.UndefOr[js.Any] = js.undefined
@@ -21,7 +19,6 @@ object User {
   def apply(
     _id: String,
     createdAt: Date = null,
-    dexterity: Int | Double = null,
     emails: js.Array[UserEmail] = null,
     profile: js.Any = null,
     services: js.Any = null,
@@ -29,7 +26,6 @@ object User {
   ): User = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any])
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (dexterity != null) __obj.updateDynamic("dexterity")(dexterity.asInstanceOf[js.Any])
     if (emails != null) __obj.updateDynamic("emails")(emails.asInstanceOf[js.Any])
     if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
     if (services != null) __obj.updateDynamic("services")(services.asInstanceOf[js.Any])

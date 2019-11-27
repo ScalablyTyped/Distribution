@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ng-stomp"
-version := "0.2-dt-20180214Z-8ffdae"
+version := "0.2-dt-20180214Z-a8695b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20191119Z-af02cb",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20191126Z-af02cb",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -28,7 +28,7 @@ package object mithrilDashGlobalMod {
   type RouteOptions = typings.mithril.mithrilMod.RouteOptions
   type RouteResolver[A, S] = typings.mithril.mithrilMod.RouteResolver[A, S]
   type Static = typings.mithril.mithrilMod.Static with Anon_Stream
-  type Stream[T] = typings.mithril.streamMod.Stream[T]
+  type Stream[T] = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify stream<T> */ js.Any
   type Vnode[A, S /* <: typings.mithril.mithrilMod.Lifecycle[A, S] */] = typings.mithril.mithrilMod.Vnode[A, S]
   type VnodeDOM[A, S /* <: typings.mithril.mithrilMod.Lifecycle[A, S] */] = typings.mithril.mithrilMod.VnodeDOM[A, S]
 }

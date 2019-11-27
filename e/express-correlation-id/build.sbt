@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "express-correlation-id"
-version := "1.2-dt-20190819Z-9a8bcd"
+version := "1.2-dt-20190819Z-272317"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-da006c",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191125Z-959704",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-4d11bc",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-1b75dd",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false

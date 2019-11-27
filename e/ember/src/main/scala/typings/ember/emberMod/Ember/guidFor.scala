@@ -8,5 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "Ember.guidFor")
 @js.native
 object guidFor
-  extends TopLevel[js.Function1[/* obj */ js.Any, java.lang.String]]
+  extends TopLevel[
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EmberObjectInternalsNs.guidFor */ js.Any
+    ]
 

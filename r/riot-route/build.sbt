@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "riot-route"
-version := "3.1-dt-20190320Z-d7a1b9"
+version := "3.1-dt-20191126Z-2735a7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

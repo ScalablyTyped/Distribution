@@ -93,11 +93,12 @@ class MultipleTextItemModel ()
   override def getVariable(name: String): js.Any = js.native
   def isEmpty(): Boolean = js.native
   def onValueChanged(newValue: js.Any): Unit = js.native
+  def setComment(name: String, newValue: String): Unit = js.native
   /* CompleteClass */
-  override def setComment(name: String, newValue: String): js.Any = js.native
+  override def setComment(name: String, newValue: String, locNotification: js.Any): js.Any = js.native
   def setData(data: IMultipleTextData): Unit = js.native
   /* CompleteClass */
-  override def setValue(name: String, newValue: js.Any, locNotification: Boolean): js.Any = js.native
+  override def setValue(name: String, newValue: js.Any, locNotification: js.Any): js.Any = js.native
   def setValue(name: String, value: js.Any): Unit = js.native
   /* CompleteClass */
   override def setVariable(name: String, newValue: js.Any): Unit = js.native

@@ -4,8 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ember", "HashLocation")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberRoutingHashLocation * / any */ @JSImport("ember", "HashLocation")
 @js.native
-class HashLocation ()
-  extends typings.atEmberObject.atEmberObjectMod.default
+class HashLocation () extends js.Object
 

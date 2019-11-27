@@ -1,15 +1,12 @@
 organization := "org.scalablytyped"
 name := "meteor"
-version := "1.4-dt-20191101Z-e6b735"
+version := "1.4-dt-20191126Z-2bd0ad"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-ec07f0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-a93afc",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191125Z-959704",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-5cddf8",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191123Z-d1d56f",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-d03b6a",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
   "org.scalablytyped" %%% "underscore" % "1.9-dt-20191118Z-6a6110")
 publishArtifact in packageDoc := false

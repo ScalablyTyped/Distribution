@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "material__data-table"
-version := "3.2.0-b81296"
+version := "3.2.0-04d0b0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "material__base" % "0.35-dt-20190313Z-b8d27a",
+  "org.scalablytyped" %%% "material__base" % "0.35-dt-20191126Z-b8d27a",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

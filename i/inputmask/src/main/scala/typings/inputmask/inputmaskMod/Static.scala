@@ -50,7 +50,7 @@ Instantiable1[(/* opts */ Options) | (/* maskOrAlias */ String), Instance] {
     */
   def extendDefaults(opts: Options): Unit = js.native
   /**
-    * Add new definitions to this inputmask.
+    * Extends the set of available definitions.
     */
   def extendDefinitions(definitions: StringDictionary[Definition]): Unit = js.native
   /**

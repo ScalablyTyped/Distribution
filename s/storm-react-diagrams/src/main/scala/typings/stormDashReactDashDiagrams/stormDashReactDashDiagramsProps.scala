@@ -14,9 +14,6 @@ import scala.scalajs.js.annotation._
 
 trait stormDashReactDashDiagramsProps {
   @scala.inline
-  def BaseWidgetProps: typings.stormDashReactDashDiagrams.distSrcWidgetsBaseWidgetMod.BaseWidgetProps.type = typings.stormDashReactDashDiagrams.distSrcWidgetsBaseWidgetMod.BaseWidgetProps
-  type BaseWidgetProps = typings.stormDashReactDashDiagrams.distSrcWidgetsBaseWidgetMod.BaseWidgetProps
-  @scala.inline
   def DefaultLabelWidgetProps: typings.stormDashReactDashDiagrams.distSrcDefaultsWidgetsDefaultLabelWidgetMod.DefaultLabelWidgetProps.type = typings.stormDashReactDashDiagrams.distSrcDefaultsWidgetsDefaultLabelWidgetMod.DefaultLabelWidgetProps
   type DefaultLabelWidgetProps = typings.stormDashReactDashDiagrams.distSrcDefaultsWidgetsDefaultLabelWidgetMod.DefaultLabelWidgetProps
   @scala.inline

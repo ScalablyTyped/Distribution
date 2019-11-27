@@ -13,7 +13,7 @@ trait ThemeSpacing extends js.Object {
 object ThemeSpacing {
   @scala.inline
   def apply(baseUnit: Double, controlHeight: Double, menuGutter: Double): ThemeSpacing = {
-    val __obj = js.Dynamic.literal(baseUnit = baseUnit, controlHeight = controlHeight, menuGutter = menuGutter)
+    val __obj = js.Dynamic.literal(baseUnit = baseUnit.asInstanceOf[js.Any], controlHeight = controlHeight.asInstanceOf[js.Any], menuGutter = menuGutter.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ThemeSpacing]
   }

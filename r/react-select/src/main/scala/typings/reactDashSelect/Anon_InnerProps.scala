@@ -18,7 +18,7 @@ trait Anon_InnerProps extends js.Object {
 object Anon_InnerProps {
   @scala.inline
   def apply(innerProps: js.Any, isFocused: Boolean, isRtl: Boolean, size: Double): Anon_InnerProps = {
-    val __obj = js.Dynamic.literal(innerProps = innerProps, isFocused = isFocused, isRtl = isRtl, size = size)
+    val __obj = js.Dynamic.literal(innerProps = innerProps.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any], isRtl = isRtl.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_InnerProps]
   }

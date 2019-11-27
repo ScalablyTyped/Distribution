@@ -1,6 +1,7 @@
 package typings.jose.joseMod.JWE
 
 import typings.jose.joseMod.JWK.Key
+import typings.jose.joseMod.JWK.OctKey
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,6 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait completeDecrypt extends js.Object {
   var aad: js.UndefOr[String] = js.undefined
+  var cek: OctKey
   var cleartext: Buffer
   var header: js.UndefOr[js.Object] = js.undefined
   var key: Key
@@ -18,6 +20,7 @@ trait completeDecrypt extends js.Object {
 object completeDecrypt {
   @scala.inline
   def apply(
+    cek: OctKey,
     cleartext: Buffer,
     key: Key,
     aad: String = null,
@@ -25,7 +28,7 @@ object completeDecrypt {
     `protected`: js.Object = null,
     unprotected: js.Object = null
   ): completeDecrypt = {
-    val __obj = js.Dynamic.literal(cleartext = cleartext.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cek = cek.asInstanceOf[js.Any], cleartext = cleartext.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     if (aad != null) __obj.updateDynamic("aad")(aad.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (`protected` != null) __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])

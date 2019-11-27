@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line:no-empty-interface
-@js.native
 trait p5 extends p5InstanceExtensions {
   /**
     *   Allows for the friendly error system (FES) to be
@@ -13,7 +12,7 @@ trait p5 extends p5InstanceExtensions {
     *   a significant boost to performance when needed.
     *   See  disabling the friendly error system.
     */
-  var disableFriendlyErrors: Boolean = js.native
+  var disableFriendlyErrors: Boolean
   /**
     *   Called directly after setup(), the draw() function
     *   continuously executes the lines of code contained
@@ -52,7 +51,7 @@ trait p5 extends p5InstanceExtensions {
     *   applied (ex: fill, stroke, etc) will remain in
     *   effect.
     */
-  def draw(): Unit = js.native
+  def draw(): Unit
   /**
     *   Called directly before setup(), the preload()
     *   function is used to handle asynchronous loading of
@@ -69,7 +68,7 @@ trait p5 extends p5InstanceExtensions {
     *   include an HTML element with id "p5_loading" in
     *   your page. More information here.
     */
-  def preload(): Unit = js.native
+  def preload(): Unit
   /**
     *   Removes the entire p5 sketch. This will remove the
     *   canvas and any elements created by p5.js. It will
@@ -82,7 +81,7 @@ trait p5 extends p5InstanceExtensions {
     *   any other global variables created by your code
     *   will remain.
     */
-  def remove(): Unit = js.native
+  def remove(): Unit
   /**
     *   The setup() function is called once when the
     *   program starts. It's used to define initial
@@ -95,6 +94,21 @@ trait p5 extends p5InstanceExtensions {
     *   setup() are not accessible within other functions,
     *   including draw().
     */
-  def setup(): Unit = js.native
+  def setup(): Unit
+}
+
+object p5 {
+  @scala.inline
+  def apply(
+    disableFriendlyErrors: Boolean,
+    draw: () => Unit,
+    preload: () => Unit,
+    remove: () => Unit,
+    setup: () => Unit
+  ): p5 = {
+    val __obj = js.Dynamic.literal(disableFriendlyErrors = disableFriendlyErrors.asInstanceOf[js.Any], draw = js.Any.fromFunction0(draw), preload = js.Any.fromFunction0(preload), remove = js.Any.fromFunction0(remove), setup = js.Any.fromFunction0(setup))
+  
+    __obj.asInstanceOf[p5]
+  }
 }
 

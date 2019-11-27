@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "uploadcare"
-version := "0.4-dt-20180907Z-2f24f7"
+version := "0.4-dt-20180907Z-a10561"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191125Z-959704",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -1,5 +1,6 @@
 package typings.reactDashNavigation.reactDashNavigationMod
 
+import typings.reactDashNavigation.CreateNavigatorConfigNavigationSwitchRouterConfigN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,12 +19,7 @@ object createSwitchNavigator extends js.Object {
       js.Object, 
       NavigationSwitchProp[NavigationRoute[NavigationParams], NavigationParams]
     ],
-    switchConfig: CreateNavigatorConfig[
-      js.Object, 
-      NavigationSwitchRouterConfig, 
-      js.Object, 
-      NavigationSwitchProp[NavigationRoute[NavigationParams], NavigationParams]
-    ]
+    switchConfig: CreateNavigatorConfigNavigationSwitchRouterConfigN
   ): NavigationNavigator[js.Object, NavigationProp[NavigationState]] = js.native
 }
 

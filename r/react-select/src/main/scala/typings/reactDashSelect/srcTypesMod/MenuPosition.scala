@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait MenuPosition extends js.Object
 
+object MenuPosition {
+  @scala.inline
+  def absolute: typings.reactDashSelect.reactDashSelectStrings.absolute = this.cast("absolute")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def fixed: typings.reactDashSelect.reactDashSelectStrings.fixed = this.cast("fixed")
+}
+

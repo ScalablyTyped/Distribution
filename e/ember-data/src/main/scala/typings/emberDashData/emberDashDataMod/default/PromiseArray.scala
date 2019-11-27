@@ -1,14 +1,12 @@
 package typings.emberDashData.emberDashDataMod.default
 
-import typings.atEmberObject.promiseDashProxyDashMixinMod.PromiseProxyMixin
 import typings.ember.emberMod.default.ArrayProxy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ember-data", "PromiseArray")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PromiseProxyMixin<Ember.ArrayProxy<T>> * / any */ @JSImport("ember-data", "PromiseArray")
 @js.native
-class PromiseArray[T] ()
-  extends PromiseProxyMixin[ArrayProxy[T]]
-     with typings.atEmberArray.proxyMod.ArrayProxy[T]
+class PromiseArray[T] () extends ArrayProxy[T]
 

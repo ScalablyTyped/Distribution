@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fast-text-encoding"
-version := "1.0-dt-20191122Z-f2ad7e"
+version := "1.0-dt-20191126Z-1f9b6b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

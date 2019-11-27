@@ -1,9 +1,6 @@
 package typings.atEmberArray
 
 import typings.atEmberArray.atEmberArrayMod.Array
-import typings.atEmberArray.dashPrivateEnumerableMod.Enumerable
-import typings.atEmberArray.dashPrivateNativeDashArrayMod.NativeArray
-import typings.atEmberObject.computedMod.ComputedProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,24 +12,25 @@ object atEmberArrayMod extends js.Object {
     * This module implements Observer-friendly Array-like behavior. This mixin is picked up by the
     * Array class as well as other controllers, etc. that want to appear to be arrays.
     */
-  @js.native
-  trait Array[T] extends Enumerable[T] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Enumerable<T> * / any */ @js.native
+  trait Array[T] extends js.Object {
     /**
       * Returns a special object that can be used to observe individual properties
       * on the array. Just get an equivalent property on this object and it will
       * return an enumerable that maps automatically to the named key on the
       * member objects.
       */
-    var `@each`: ComputedProperty[T, T] = js.native
+    var `@each`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComputedProperty<T> */ js.Any = js.native
     /**
       * Becomes true whenever the array currently has observers watching changes
       * on the array.
       */
-    var hasArrayObservers: ComputedProperty[Boolean, Boolean] = js.native
+    var hasArrayObservers: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComputedProperty<boolean> */ js.Any = js.native
     /**
       * __Required.__ You must implement this method to apply this mixin.
       */
-    var length: Double | (ComputedProperty[Double, Double]) = js.native
+    var length: Double | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComputedProperty<number> */ js.Any) = js.native
     /**
       * Adds an array observer to the receiving array. The array observer object
       * normally must implement two methods:
@@ -96,9 +94,9 @@ object atEmberArrayMod extends js.Object {
   
   // Ember.Array rather than Array because the `array-type` lint rule doesn't realize the global is shadowed
   // tslint:disable-next-line:array-type
-  val default: typings.atEmberObject.mixinMod.default[Array[js.Any], typings.atEmberObject.atEmberObjectMod.default] = js.native
-  def A[T](): NativeArray[T] = js.native
-  def A[T](arr: Array[T]): NativeArray[T] = js.native
+  val default: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mixin<Array<any>> */ js.Any = js.native
+  def A[T](): js.Any = js.native
+  def A[T](arr: Array[T]): js.Any = js.native
   def isArray(obj: js.Any): /* is std.ArrayLike<any> */ Boolean = js.native
 }
 

@@ -12,18 +12,18 @@ object defineProperty extends js.Object {
   def apply(
     obj: js.Object,
     keyName: java.lang.String,
-    desc: typings.atEmberObject.computedMod.ComputedProperty[_, _]
+    desc: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComputedProperty<any> */ js.Any
   ): Unit = js.native
   def apply(
     obj: js.Object,
     keyName: java.lang.String,
-    desc: typings.atEmberObject.computedMod.ComputedProperty[_, _],
+    desc: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComputedProperty<any> */ js.Any,
     data: js.Any
   ): Unit = js.native
   def apply(
     obj: js.Object,
     keyName: java.lang.String,
-    desc: typings.atEmberObject.computedMod.ComputedProperty[_, _],
+    desc: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComputedProperty<any> */ js.Any,
     data: js.Any,
     meta: js.Any
   ): Unit = js.native

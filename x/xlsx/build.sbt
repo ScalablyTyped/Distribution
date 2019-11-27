@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "xlsx"
-version := "0.15.2-22ec59"
+version := "0.15.3-c2b7d3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

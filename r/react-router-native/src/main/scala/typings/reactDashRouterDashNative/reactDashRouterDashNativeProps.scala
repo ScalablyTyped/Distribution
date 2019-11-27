@@ -27,9 +27,6 @@ trait reactDashRouterDashNativeProps {
   def RedirectProps: typings.reactDashRouter.reactDashRouterMod.RedirectProps.type = typings.reactDashRouter.reactDashRouterMod.RedirectProps
   type RedirectProps = typings.reactDashRouter.reactDashRouterMod.RedirectProps
   @scala.inline
-  def RouteProps: typings.reactDashRouter.reactDashRouterMod.RouteProps.type = typings.reactDashRouter.reactDashRouterMod.RouteProps
-  type RouteProps = typings.reactDashRouter.reactDashRouterMod.RouteProps
-  @scala.inline
   def RouterProps: typings.reactDashRouter.reactDashRouterMod.RouterProps.type = typings.reactDashRouter.reactDashRouterMod.RouterProps
   type RouterProps = typings.reactDashRouter.reactDashRouterMod.RouterProps
   @scala.inline

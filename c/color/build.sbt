@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "color"
-version := "3.0-dt-20191014Z-129203"
+version := "3.0-dt-20191014Z-d6ae3b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "color-convert" % "1.9-dt-20180214Z-d284f7",
+  "org.scalablytyped" %%% "color-convert" % "1.9-dt-20191126Z-d284f7",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-e07bbd",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "relay-compiler"
-version := "7.0-dt-20191030Z-a88b6a"
+version := "7.0-dt-20191126Z-46e780"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

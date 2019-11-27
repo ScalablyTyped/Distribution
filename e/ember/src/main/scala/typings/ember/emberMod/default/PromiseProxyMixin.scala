@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object PromiseProxyMixin
   extends TopLevel[
-      typings.atEmberObject.mixinMod.default[
-        typings.atEmberObject.promiseDashProxyDashMixinMod.PromiseProxyMixin[js.Any], 
-        typings.atEmberObject.atEmberObjectMod.default
-      ]
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EmberObjectPromiseProxyNs.default */ js.Any
     ]
 

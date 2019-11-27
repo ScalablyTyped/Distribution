@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "promise-ftp"
-version := "1.3-dt-20190829Z-c6a3f3"
+version := "1.3-dt-20190829Z-bd7a8d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20191111Z-104ef4",
-  "org.scalablytyped" %%% "ftp" % "0.3.9-dt-20191118Z-b50b0e",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191125Z-959704",
+  "org.scalablytyped" %%% "ftp" % "0.3.9-dt-20191118Z-c8244a",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
   "org.scalablytyped" %%% "promise-ftp-common" % "1.1-dt-20180709Z-e3ad5a",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false

@@ -1,5 +1,6 @@
 package typings.ffi
 
+import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

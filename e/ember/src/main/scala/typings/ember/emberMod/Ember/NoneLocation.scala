@@ -4,8 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ember", "Ember.NoneLocation")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberRoutingNoneLocation * / any */ @JSImport("ember", "Ember.NoneLocation")
 @js.native
-class NoneLocation ()
-  extends typings.atEmberObject.atEmberObjectMod.default
+class NoneLocation () extends js.Object
 

@@ -9,7 +9,7 @@ trait AsObject extends js.Object {
     typings.libraDashCore.libAtGeneratedEventsUnderscorePbMod.EventsForVersions.AsObject
   ] = js.undefined
   var firstTransactionVersion: js.UndefOr[
-    typings.googleDashProtobuf.googleProtobufWrappersUnderscorePbMod.UInt64Value.AsObject
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify google_protobuf_wrappers_pb.UInt64Value.AsObject */ js.Any
   ] = js.undefined
   var infosList: js.Array[
     typings.libraDashCore.libAtGeneratedTransactionUnderscoreInfoUnderscorePbMod.TransactionInfo.AsObject
@@ -35,7 +35,7 @@ object AsObject {
       typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.SignedTransaction.AsObject
     ],
     eventsForVersions: typings.libraDashCore.libAtGeneratedEventsUnderscorePbMod.EventsForVersions.AsObject = null,
-    firstTransactionVersion: typings.googleDashProtobuf.googleProtobufWrappersUnderscorePbMod.UInt64Value.AsObject = null,
+    firstTransactionVersion: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify google_protobuf_wrappers_pb.UInt64Value.AsObject */ js.Any = null,
     proofOfFirstTransaction: typings.libraDashCore.libAtGeneratedProofUnderscorePbMod.AccumulatorProof.AsObject = null,
     proofOfLastTransaction: typings.libraDashCore.libAtGeneratedProofUnderscorePbMod.AccumulatorProof.AsObject = null
   ): AsObject = {

@@ -26,7 +26,7 @@ object atEmberTestDashHelpersMod extends js.Object {
   def focus(target: Target): js.Promise[Unit] = js.native
   def getApplication(): default = js.native
   def getContext(): js.Object = js.native
-  def getResolver(): typings.atEmberApplication.resolverMod.default = js.native
+  def getResolver(): js.Any = js.native
   def getRootElement(): Element = js.native
   def getSettledState(): SettledState = js.native
   def isSettled(): Boolean = js.native
@@ -37,7 +37,9 @@ object atEmberTestDashHelpersMod extends js.Object {
   def resumeTest(): Unit = js.native
   def setApplication(application: default): Unit = js.native
   def setContext(context: js.Object): Unit = js.native
-  def setResolver(resolver: typings.atEmberApplication.resolverMod.default): Unit = js.native
+  def setResolver(
+    resolver: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Resolver */ js.Any
+  ): Unit = js.native
   def settled(): js.Promise[Unit] = js.native
   def setupApplicationContext[Context /* <: js.Object */](context: Context): js.Promise[Context] = js.native
   def setupContext[C /* <: js.Object */](context: C): js.Promise[C] = js.native

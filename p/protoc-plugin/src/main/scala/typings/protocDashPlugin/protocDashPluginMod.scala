@@ -1,6 +1,5 @@
 package typings.protocDashPlugin
 
-import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.SourceCodeInfo.Location.AsObject
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
 import typings.protocDashPlugin.protocDashPluginMod.SimplePluginCallback
@@ -14,19 +13,24 @@ import scala.scalajs.js.annotation._
 object protocDashPluginMod extends js.Object {
   def apply(cb: SimplePluginCallback): js.Promise[Unit] = js.native
   def CodeGeneratorRequest(): js.Promise[
-    typings.googleDashProtobuf.googleProtobufCompilerPluginUnderscorePbMod.CodeGeneratorRequest
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify pb_CodeGeneratorRequest */ _
   ] = js.native
   def CodeGeneratorRequest(stdin: Readable): js.Promise[
-    typings.googleDashProtobuf.googleProtobufCompilerPluginUnderscorePbMod.CodeGeneratorRequest
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify pb_CodeGeneratorRequest */ _
   ] = js.native
   def CodeGeneratorResponse(): js.Function1[/* files */ OutputFiles, Unit] = js.native
   def CodeGeneratorResponse(stdout: Writable): js.Function1[/* files */ OutputFiles, Unit] = js.native
   def CodeGeneratorResponseError(): js.Function1[/* err */ Error, Unit] = js.native
   def CodeGeneratorResponseError(stdout: Writable): js.Function1[/* err */ Error, Unit] = js.native
-  def findCommentByPath(path: js.Array[Double], locationList: js.Array[AsObject]): String = js.native
+  def findCommentByPath(
+    path: js.Array[Double],
+    locationList: js.Array[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Location.AsObject */ _
+    ]
+  ): String = js.native
   type SimplePluginCallback = js.Function1[
     /* filesToGenerate */ js.Array[
-      typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FileDescriptorProto.AsObject
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FileDescriptorProto.AsObject */ js.Any
     ], 
     OutputFiles | js.Promise[OutputFiles]
   ]

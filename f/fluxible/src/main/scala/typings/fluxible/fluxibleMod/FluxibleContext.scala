@@ -1,7 +1,6 @@
 package typings.fluxible.fluxibleMod
 
 import typings.fluxible.Anon_Dispatcher
-import typings.fluxible.addonsBaseStoreMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +29,7 @@ class FluxibleContext () extends js.Object {
   /**
     * Getter for store from dispatcher
     */
-  def getStore[T /* <: ^[js.Object] */](store: Anon_Dispatcher[T]): T = js.native
+  def getStore[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BaseStore */ js.Any */](store: Anon_Dispatcher[T]): T = js.native
   /**
     * Returns the context for stores
     * @return Store context information

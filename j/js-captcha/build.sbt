@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "js-captcha"
-version := "1.1-dt-20190528Z-48146d"
+version := "1.1-dt-20191126Z-48146d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

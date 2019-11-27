@@ -26,7 +26,7 @@ object Anon_AppendTo {
     menuPosition: MenuPosition,
     children: ReactNode = null
   ): Anon_AppendTo = {
-    val __obj = js.Dynamic.literal(appendTo = appendTo, controlElement = controlElement, menuPlacement = menuPlacement, menuPosition = menuPosition)
+    val __obj = js.Dynamic.literal(appendTo = appendTo.asInstanceOf[js.Any], controlElement = controlElement.asInstanceOf[js.Any], menuPlacement = menuPlacement.asInstanceOf[js.Any], menuPosition = menuPosition.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AppendTo]
   }

@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object Observable
   extends TopLevel[
-      typings.atEmberObject.mixinMod.default[
-        typings.atEmberObject.observableMod.Observable, 
-        typings.atEmberObject.coreMod.default
-      ]
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EmberObservable */ js.Any
     ]
 

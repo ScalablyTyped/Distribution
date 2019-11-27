@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "sqlite3-promise"
-version := "1.0-dt-20190924Z-3436f3"
+version := "1.0-dt-20190924Z-72376f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191125Z-959704",
-  "org.scalablytyped" %%% "sqlite3" % "3.1-dt-20190226Z-b15187",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
+  "org.scalablytyped" %%% "sqlite3" % "3.1-dt-20190226Z-4be762",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

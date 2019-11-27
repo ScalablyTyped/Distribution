@@ -2,6 +2,7 @@ package typings.victory.victoryMod
 
 import typings.react.reactMod.ReactElement
 import typings.victory.Anon_XYD3Scale
+import typings.victory.Anon_XYNumberOptional
 import typings.victory.victoryStrings.data
 import typings.victory.victoryStrings.labels
 import typings.victory.victoryStrings.parent
@@ -161,7 +162,7 @@ trait VictoryPieProps
 object VictoryPieProps {
   @scala.inline
   def apply(
-    animate: AnimatePropTypeInterface = null,
+    animate: Boolean | AnimatePropTypeInterface = null,
     colorScale: ColorScalePropType = null,
     containerComponent: ReactElement = null,
     cornerRadius: Int | Double = null,
@@ -179,6 +180,8 @@ object VictoryPieProps {
     labelComponent: ReactElement = null,
     labelRadius: Int | Double = null,
     labels: js.Array[String] | (js.Function1[/* data */ js.Any, String]) = null,
+    maxDomain: Double | Anon_XYNumberOptional = null,
+    minDomain: Double | Anon_XYNumberOptional = null,
     name: String = null,
     padAngle: Int | Double = null,
     padding: PaddingProps = null,
@@ -209,6 +212,8 @@ object VictoryPieProps {
     if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent.asInstanceOf[js.Any])
     if (labelRadius != null) __obj.updateDynamic("labelRadius")(labelRadius.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (maxDomain != null) __obj.updateDynamic("maxDomain")(maxDomain.asInstanceOf[js.Any])
+    if (minDomain != null) __obj.updateDynamic("minDomain")(minDomain.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (padAngle != null) __obj.updateDynamic("padAngle")(padAngle.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])

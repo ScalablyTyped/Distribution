@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 package object ioredisMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.ioredis.Anon_Host
+  import typings.ioredis.Anon_Ip
   import typings.node.Buffer
   import typings.node.NodeJS.ErrnoException
 
@@ -19,4 +20,5 @@ package object ioredisMod {
   ]
   type KeyType = String | Buffer
   type NatMap = StringDictionary[Anon_Host]
+  type PreferredSlaves = (js.Function1[/* slaves */ js.Array[AddressFromResponse], AddressFromResponse | Null]) | js.Array[Anon_Ip] | Anon_Ip
 }

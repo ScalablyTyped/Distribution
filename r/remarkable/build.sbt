@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "remarkable"
-version := "1.7-dt-20190328Z-525e78"
+version := "1.7-dt-20191126Z-525e78"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
 */
 trait InputActionTypes extends js.Object
 
+object InputActionTypes {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def `input-blur`: typings.reactDashSelect.reactDashSelectStrings.`input-blur` = this.cast("input-blur")
+  @scala.inline
+  def `input-change`: typings.reactDashSelect.reactDashSelectStrings.`input-change` = this.cast("input-change")
+  @scala.inline
+  def `menu-close`: typings.reactDashSelect.reactDashSelectStrings.`menu-close` = this.cast("menu-close")
+  @scala.inline
+  def `set-value`: typings.reactDashSelect.reactDashSelectStrings.`set-value` = this.cast("set-value")
+}
+

@@ -1,7 +1,7 @@
 
 # Scala.js typings for write-file-atomic
 
-Typings are for version 2.1
+Typings are for version 3.0
 
 ## Library description:
 Write files in an atomic fashion w/configurable ownership

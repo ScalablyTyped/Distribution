@@ -1,10 +1,7 @@
 package typings.fluxible.fluxibleMod
 
-import org.scalablytyped.runtime.Instantiable1
 import typings.dispatchr.dispatchrMod.Dispatcher
-import typings.dispatchr.dispatchrMod.DispatcherInterface
 import typings.dispatchr.dispatchrMod.StoreClass
-import typings.fluxible.addonsBaseStoreMod.^
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -62,7 +59,7 @@ class Fluxible () extends js.Object {
     * @param [plugin.rehydrate] Method called to rehydrate the plugin settings from the server
     */
   def plug(plugin: js.Any): Unit = js.native
-  def registerStore(store: Instantiable1[/* dispatcher */ DispatcherInterface, ^[js.Object]]): Unit = js.native
+  def registerStore(store: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BaseStore */ js.Any): Unit = js.native
   /**
     * Registers a store to the dispatcher so it can listen for actions
     */

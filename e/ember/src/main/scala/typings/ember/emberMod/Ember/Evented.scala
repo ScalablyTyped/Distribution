@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object Evented
   extends TopLevel[
-      typings.atEmberObject.mixinMod.default[
-        typings.atEmberObject.eventedMod.Evented, 
-        typings.atEmberObject.atEmberObjectMod.default
-      ]
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EmberObjectEventedNs.default */ js.Any
     ]
 

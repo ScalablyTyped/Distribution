@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object MutableEnumerable
   extends TopLevel[
-      typings.atEmberObject.mixinMod.default[
-        typings.atEmberArray.dashPrivateMutableDashEnumerableMod.MutableEnumerable[js.Any], 
-        typings.atEmberObject.atEmberObjectMod.default
-      ]
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EmberMutableEnumerable */ js.Any
     ]
 

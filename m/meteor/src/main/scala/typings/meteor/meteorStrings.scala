@@ -1,7 +1,7 @@
 package typings.meteor
 
-import typings.meteor.ddpMod.DDP.Status
-import typings.meteor.mongoMod.Mongo.BsonType
+import typings.meteor.DDP.Status
+import typings.meteor.Mongo.BsonType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,142 +23,88 @@ object meteorStrings {
   sealed trait _id extends js.Object
   
   @js.native
-  sealed trait array
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait array extends BsonType
   
   @js.native
-  sealed trait binData
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait binData extends BsonType
   
   @js.native
-  sealed trait bool
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait bool extends BsonType
   
   @js.native
-  sealed trait connected
-    extends Status
-       with typings.meteor.DDP.Status
+  sealed trait connected extends Status
   
   @js.native
-  sealed trait connecting
-    extends Status
-       with typings.meteor.DDP.Status
+  sealed trait connecting extends Status
   
   @js.native
-  sealed trait date
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait date extends BsonType
   
   @js.native
-  sealed trait dbPointer
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait dbPointer extends BsonType
   
   @js.native
-  sealed trait decimal
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait decimal extends BsonType
   
   @js.native
-  sealed trait double
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait double extends BsonType
   
   @js.native
-  sealed trait failed
-    extends Status
-       with typings.meteor.DDP.Status
+  sealed trait failed extends Status
   
   @js.native
-  sealed trait int
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait int extends BsonType
   
   @js.native
-  sealed trait javascript
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait javascript extends BsonType
   
   @js.native
-  sealed trait javascriptWithScope
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait javascriptWithScope extends BsonType
   
   @js.native
-  sealed trait long
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait long extends BsonType
   
   @js.native
-  sealed trait maxKey
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait maxKey extends BsonType
   
   @js.native
-  sealed trait minKey
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait minKey extends BsonType
   
   @js.native
-  sealed trait `null`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `null` extends BsonType
   
   @js.native
-  sealed trait number
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait number extends BsonType
   
   @js.native
-  sealed trait `object`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `object` extends BsonType
   
   @js.native
-  sealed trait objectId
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait objectId extends BsonType
   
   @js.native
-  sealed trait offline
-    extends Status
-       with typings.meteor.DDP.Status
+  sealed trait offline extends Status
   
   @js.native
-  sealed trait regex
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait regex extends BsonType
   
   @js.native
   sealed trait `sha-256` extends js.Object
   
   @js.native
-  sealed trait string
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait string extends BsonType
   
   @js.native
-  sealed trait symbol
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait symbol extends BsonType
   
   @js.native
-  sealed trait timestamp
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait timestamp extends BsonType
   
   @js.native
-  sealed trait undefined
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait undefined extends BsonType
   
   @js.native
-  sealed trait waiting
-    extends Status
-       with typings.meteor.DDP.Status
+  sealed trait waiting extends Status
   
   @scala.inline
   def ArraysOrEach: ArraysOrEach = "ArraysOrEach".asInstanceOf[ArraysOrEach]

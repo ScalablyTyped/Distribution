@@ -16,12 +16,12 @@ package object nesMod {
     *          ClientOptions, ClientConnectOptions, ClientRequestOptions,
     *          ClientSubscribeFlags)
     */
-  type Client = typings.nes.clientMod.^
-  type ClientConnectOptions = typings.nes.clientMod.ClientConnectOptions
-  type ClientOptions = typings.nes.clientMod.ClientOptions
-  type ClientRequestOptions = typings.nes.clientMod.ClientRequestOptions
-  type ClientSubscribeFlags = typings.nes.clientMod.ClientSubscribeFlags
-  type Handler = typings.nes.clientMod.Handler
+  type Client = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NesClient */ js.Any
+  type ClientConnectOptions = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NesClient.ClientConnectOptions */ js.Any
+  type ClientOptions = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NesClient.ClientOptions */ js.Any
+  type ClientRequestOptions = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NesClient.ClientRequestOptions */ js.Any
+  type ClientSubscribeFlags = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NesClient.ClientSubscribeFlags */ js.Any
+  type Handler = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NesClient.Handler */ js.Any
   type ServerOnSubscribe = ServerOnSubscribeWithParams | ServerOnSubscribeWithoutParams
   type ServerOnSubscribeWithParams = js.Function3[/* socket */ Socket, /* path */ String, /* params */ js.Any, js.Promise[js.Any]]
   type ServerOnSubscribeWithoutParams = js.Function2[/* socket */ Socket, /* path */ String, js.Promise[js.Any]]

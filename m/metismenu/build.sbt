@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "metismenu"
-version := "3.0.4-fc9017"
+version := "3.0.4-9681ae"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190815Z-72186b",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20191126Z-36922a",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-2d253b",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false

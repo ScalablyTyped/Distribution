@@ -13,31 +13,16 @@ object socketclusterStrings {
   sealed trait brokerStart extends js.Object
   
   @js.native
-  sealed trait connection extends js.Object
-  
-  @js.native
-  sealed trait error extends js.Object
-  
-  @js.native
-  sealed trait exit extends js.Object
-  
-  @js.native
   sealed trait fail extends js.Object
   
   @js.native
   sealed trait green extends ColorCodes
   
   @js.native
-  sealed trait masterMessage extends js.Object
-  
-  @js.native
   sealed trait ready extends js.Object
   
   @js.native
   sealed trait red extends ColorCodes
-  
-  @js.native
-  sealed trait start extends js.Object
   
   @js.native
   sealed trait warning extends js.Object
@@ -65,23 +50,13 @@ object socketclusterStrings {
   @scala.inline
   def brokerStart: brokerStart = "brokerStart".asInstanceOf[brokerStart]
   @scala.inline
-  def connection: connection = "connection".asInstanceOf[connection]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def exit: exit = "exit".asInstanceOf[exit]
-  @scala.inline
   def fail: fail = "fail".asInstanceOf[fail]
   @scala.inline
   def green: green = "green".asInstanceOf[green]
   @scala.inline
-  def masterMessage: masterMessage = "masterMessage".asInstanceOf[masterMessage]
-  @scala.inline
   def ready: ready = "ready".asInstanceOf[ready]
   @scala.inline
   def red: red = "red".asInstanceOf[red]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
   @scala.inline

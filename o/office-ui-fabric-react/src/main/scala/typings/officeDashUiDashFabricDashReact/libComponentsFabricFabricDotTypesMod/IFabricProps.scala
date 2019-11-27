@@ -3,6 +3,9 @@ package typings.officeDashUiDashFabricDashReact.libComponentsFabricFabricDotType
 import typings.atUifabricMergeDashStyles.libIStyleFunctionMod.IStyleFunctionOrObject
 import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
 import typings.atUifabricUtilities.libCreateRefMod.IRefObject
+import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.auto
+import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.ltr
+import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.rtl
 import typings.react.Anon_Html
 import typings.react.NativeMouseEvent
 import typings.react.reactMod.AnimationEvent
@@ -17,6 +20,7 @@ import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.PointerEvent
 import typings.react.reactMod.ReactNode
+import typings.react.reactMod.ReactType
 import typings.react.reactMod.SyntheticEvent
 import typings.react.reactMod.TouchEvent
 import typings.react.reactMod.TransitionEvent
@@ -73,10 +77,32 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IFabricProps extends HTMLAttributes[HTMLDivElement] {
+  /**
+    * Applies the current body background specified in the theme to the root element.
+    */
   var applyTheme: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Applies the current body background specified in the theme to the body element.
+    */
   var applyThemeToBody: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Overrides the root element type, defaults to `div`.
+    */
+  var as: js.UndefOr[ReactType[_]] = js.undefined
   var componentRef: js.UndefOr[IRefObject[js.Object]] = js.undefined
+  /**
+    * Specifies the direction of the content. Will inject a `dir` attribute, and also ensure that the `rtl` flag of the
+    * contextual theme object is set correctly so that css registered with merge-styles can be auto flipped correctly.
+    */
+  @JSName("dir")
+  var dir_IFabricProps: js.UndefOr[rtl | ltr | auto] = js.undefined
+  /**
+    * Overrides the styles for the component.
+    */
   var styles: js.UndefOr[IStyleFunctionOrObject[IFabricStyleProps, IFabricStyles]] = js.undefined
+  /**
+    * Injected by the `styled` HOC wrapper.
+    */
   var theme: js.UndefOr[ITheme] = js.undefined
 }
 
@@ -135,6 +161,7 @@ object IFabricProps {
     `aria-valuemin`: Int | Double = null,
     `aria-valuenow`: Int | Double = null,
     `aria-valuetext`: String = null,
+    as: ReactType[_] = null,
     autoCapitalize: String = null,
     autoCorrect: String = null,
     autoSave: String = null,
@@ -148,7 +175,7 @@ object IFabricProps {
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | Double | js.Array[String] = null,
-    dir: String = null,
+    dir: rtl | ltr | auto = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
@@ -315,6 +342,7 @@ object IFabricProps {
     if (`aria-valuemin` != null) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
     if (`aria-valuenow` != null) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
     if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])

@@ -10,28 +10,6 @@ import scala.scalajs.js.annotation._
 
 object reactDashDraggableDashListComponents extends reactDashDraggableDashListProps {
   @scala.inline
-  def ReactDashDraggableDashList[I, C]: ComponentType[
-    ReactDashDraggableDashListProps[I, C, Component[Partial[TemplateProps[I, C]], js.Object, js.Any]]
-  ] = js.constructorOf[typings.reactDashDraggableDashList.reactDashDraggableDashListMod.default[
-  I, 
-  C, 
-  typings.react.reactMod.Component[
-    typings.std.Partial[
-      typings.reactDashDraggableDashList.reactDashDraggableDashListMod.TemplateProps[I, C]
-    ], 
-    js.Object, 
-    _
-  ]]].asInstanceOf[typings.react.reactMod.ComponentType[
-  ReactDashDraggableDashListProps[
-    I, 
-    C, 
-    typings.react.reactMod.Component[
-      typings.std.Partial[
-        typings.reactDashDraggableDashList.reactDashDraggableDashListMod.TemplateProps[I, C]
-      ], 
-      js.Object, 
-      js.Any
-    ]
-  ]]]
+  def ReactDashDraggableDashList[I, C, T /* <: Component[Partial[TemplateProps[I, C]], js.Object, js.Any] */]: ComponentType[ReactDashDraggableDashListProps[I, C, T]] = js.constructorOf[typings.reactDashDraggableDashList.reactDashDraggableDashListMod.default[I, C, T]].asInstanceOf[typings.react.reactMod.ComponentType[ReactDashDraggableDashListProps[I, C, T]]]
 }
 

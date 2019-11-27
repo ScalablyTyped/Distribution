@@ -4,8 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ember", "Resolver")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberResolver * / any */ @JSImport("ember", "Resolver")
 @js.native
-class Resolver ()
-  extends typings.atEmberObject.atEmberObjectMod.default
+class Resolver () extends js.Object
 

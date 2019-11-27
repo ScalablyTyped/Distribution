@@ -15,17 +15,17 @@ import scala.scalajs.js.annotation._
 @js.native
 class Media protected () extends js.Object {
   def this(data: MediaState, services: MediaServices) = this()
-  val contentType: String = js.native
-  val filename: String = js.native
   var mcsMedia: js.Any = js.native
   var services: js.Any = js.native
-  val sid: String = js.native
-  val size: Double = js.native
   var state: js.Any = js.native
+  def contentType(): String = js.native
+  def filename(): String = js.native
   /**
     * Returns direct content URL for the media.
     * @returns {Promise<String>}
     */
   def getContentUrl(): js.Promise[String] = js.native
+  def sid(): String = js.native
+  def size(): Double = js.native
 }
 

@@ -120,12 +120,6 @@ object styledDashComponentsStrings {
   sealed trait dialog extends js.Object
   
   @js.native
-  sealed trait disk extends js.Object
-  
-  @js.native
-  sealed trait `disk/memory` extends js.Object
-  
-  @js.native
   sealed trait div extends js.Object
   
   @js.native
@@ -331,9 +325,6 @@ object styledDashComponentsStrings {
   
   @js.native
   sealed trait mask extends js.Object
-  
-  @js.native
-  sealed trait memory extends js.Object
   
   @js.native
   sealed trait menu extends js.Object
@@ -622,10 +613,6 @@ object styledDashComponentsStrings {
   @scala.inline
   def dialog: dialog = "dialog".asInstanceOf[dialog]
   @scala.inline
-  def disk: disk = "disk".asInstanceOf[disk]
-  @scala.inline
-  def `disk/memory`: `disk/memory` = "disk/memory".asInstanceOf[`disk/memory`]
-  @scala.inline
   def div: div = "div".asInstanceOf[div]
   @scala.inline
   def dl: dl = "dl".asInstanceOf[dl]
@@ -763,8 +750,6 @@ object styledDashComponentsStrings {
   def marker: marker = "marker".asInstanceOf[marker]
   @scala.inline
   def mask: mask = "mask".asInstanceOf[mask]
-  @scala.inline
-  def memory: memory = "memory".asInstanceOf[memory]
   @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
   @scala.inline

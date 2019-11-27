@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait ArraySqlTokenType extends _SqlTokenType {
   var memberType: TypeNameIdentifierType | SqlTokenType
   var `type`: js.Symbol
-  var values: PositionalParameterValuesType
+  var values: js.Array[ValueExpressionType]
 }
 
 object ArraySqlTokenType {
@@ -15,7 +15,7 @@ object ArraySqlTokenType {
   def apply(
     memberType: TypeNameIdentifierType | SqlTokenType,
     `type`: js.Symbol,
-    values: PositionalParameterValuesType
+    values: js.Array[ValueExpressionType]
   ): ArraySqlTokenType = {
     val __obj = js.Dynamic.literal(memberType = memberType.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

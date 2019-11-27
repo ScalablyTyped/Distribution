@@ -1,7 +1,5 @@
 package typings.react
 
-import typings.react.experimentalMod.reactMod.SuspenseListRevealOrder
-import typings.react.experimentalMod.reactMod.SuspenseListTailMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -89,11 +87,6 @@ object reactStrings {
   sealed trait b extends js.Object
   
   @js.native
-  sealed trait backwards
-    extends SuspenseListRevealOrder
-       with typings.react.reactMod.SuspenseListRevealOrder
-  
-  @js.native
   sealed trait base extends js.Object
   
   @js.native
@@ -167,11 +160,6 @@ object reactStrings {
   
   @js.native
   sealed trait colgroup extends js.Object
-  
-  @js.native
-  sealed trait collapsed
-    extends SuspenseListTailMode
-       with typings.react.reactMod.SuspenseListTailMode
   
   @js.native
   sealed trait copy extends js.Object
@@ -336,11 +324,6 @@ object reactStrings {
   sealed trait form extends js.Object
   
   @js.native
-  sealed trait forwards
-    extends SuspenseListRevealOrder
-       with typings.react.reactMod.SuspenseListRevealOrder
-  
-  @js.native
   sealed trait g extends js.Object
   
   @js.native
@@ -378,11 +361,6 @@ object reactStrings {
   
   @js.native
   sealed trait hgroup extends js.Object
-  
-  @js.native
-  sealed trait hidden
-    extends SuspenseListTailMode
-       with typings.react.reactMod.SuspenseListTailMode
   
   @js.native
   sealed trait horizontal extends js.Object
@@ -769,11 +747,6 @@ object reactStrings {
   sealed trait title extends js.Object
   
   @js.native
-  sealed trait together
-    extends SuspenseListRevealOrder
-       with typings.react.reactMod.SuspenseListRevealOrder
-  
-  @js.native
   sealed trait top extends js.Object
   
   @js.native
@@ -885,8 +858,6 @@ object reactStrings {
   @scala.inline
   def b: b = "b".asInstanceOf[b]
   @scala.inline
-  def backwards: backwards = "backwards".asInstanceOf[backwards]
-  @scala.inline
   def base: base = "base".asInstanceOf[base]
   @scala.inline
   def baseline: baseline = "baseline".asInstanceOf[baseline]
@@ -936,8 +907,6 @@ object reactStrings {
   def col: col = "col".asInstanceOf[col]
   @scala.inline
   def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
-  @scala.inline
-  def collapsed: collapsed = "collapsed".asInstanceOf[collapsed]
   @scala.inline
   def copy: copy = "copy".asInstanceOf[copy]
   @scala.inline
@@ -1047,8 +1016,6 @@ object reactStrings {
   @scala.inline
   def form: form = "form".asInstanceOf[form]
   @scala.inline
-  def forwards: forwards = "forwards".asInstanceOf[forwards]
-  @scala.inline
   def g: g = "g".asInstanceOf[g]
   @scala.inline
   def grammar: grammar = "grammar".asInstanceOf[grammar]
@@ -1074,8 +1041,6 @@ object reactStrings {
   def header: header = "header".asInstanceOf[header]
   @scala.inline
   def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   @scala.inline
@@ -1332,8 +1297,6 @@ object reactStrings {
   def time: time = "time".asInstanceOf[time]
   @scala.inline
   def title: title = "title".asInstanceOf[title]
-  @scala.inline
-  def together: together = "together".asInstanceOf[together]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline

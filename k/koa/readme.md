@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa
 
-Typings are for version 2.x
+Typings are for version 2.11.0
 
 ## Library description:
 Koa web app framework

@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object Comparable
   extends TopLevel[
-      typings.atEmberObject.mixinMod.default[
-        typings.ember.emberMod.Ember.Comparable, 
-        typings.atEmberObject.atEmberObjectMod.default
-      ]
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberMixin<Comparable> */ js.Any
     ]
 

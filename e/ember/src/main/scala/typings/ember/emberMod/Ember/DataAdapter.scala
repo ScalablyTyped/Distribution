@@ -4,8 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ember", "Ember.DataAdapter")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberDataAdapter * / any */ @JSImport("ember", "Ember.DataAdapter")
 @js.native
-class DataAdapter ()
-  extends typings.atEmberDebug.dataDashAdapterMod.DataAdapter
+class DataAdapter () extends js.Object
 

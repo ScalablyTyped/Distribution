@@ -1,5 +1,6 @@
 package typings.emberDashResolver
 
+import typings.ember.emberMod.default.Resolver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,9 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object emberDashResolverMod extends js.Object {
   @js.native
-  class default ()
-    extends typings.atEmberObject.atEmberObjectMod.default
+  class default () extends Resolver
   
-  type EmberResolver = typings.atEmberObject.atEmberObjectMod.default
+  type EmberResolver = Resolver
 }
 

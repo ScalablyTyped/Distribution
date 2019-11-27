@@ -1,5 +1,6 @@
 package typings.slonik.slonikMod
 
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,6 +32,8 @@ trait QueryContextType extends js.Object {
     * `process.hrtime.bigint()` for when query was received.
     */
   var queryInputTime: Double = js.native
+  /** Object used by interceptors to assign interceptor-specific, query-specific context. */
+  var sandbox: Record[String, _] = js.native
   var stackTrace: js.Array[CallSiteType] | Null = js.native
   /**
     * Unique transaction ID

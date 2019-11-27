@@ -13,8 +13,8 @@ trait Anon_ContextEvent extends js.Object {
 object Anon_ContextEvent {
   @scala.inline
   def apply(event: String, context: InstructionsContext = null): Anon_ContextEvent = {
-    val __obj = js.Dynamic.literal(event = event)
-    if (context != null) __obj.updateDynamic("context")(context)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContextEvent]
   }
 }

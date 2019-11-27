@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stripejs"
-version := "3.0-dt-20190504Z-c2ec3c"
+version := "3.0-dt-20191126Z-c2ec3c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

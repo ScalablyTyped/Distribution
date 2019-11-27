@@ -1,6 +1,6 @@
 package typings.ffiDashNapi.ffiDashNapiMod
 
-import typings.ffiDashNapi.Buffer
+import typings.node.Buffer
 import typings.refDashNapi.refDashNapiMod.Type
 import typings.refDashStructDashDi.refDashStructDashDiMod.StructType
 import scala.scalajs.js
@@ -17,8 +17,8 @@ object ffiType extends js.Object {
   def apply(`type`: Type): Buffer = js.native
   def FFI_TYPE(): js.Any = js.native
   /** Pass it an existing Buffer instance to use that as the backing buffer. */
-  def FFI_TYPE(arg: typings.node.Buffer): js.Any = js.native
-  def FFI_TYPE(arg: typings.node.Buffer, data: js.Object): js.Any = js.native
+  def FFI_TYPE(arg: Buffer): js.Any = js.native
+  def FFI_TYPE(arg: Buffer, data: js.Object): js.Any = js.native
   def FFI_TYPE(data: js.Object): js.Any = js.native
 }
 

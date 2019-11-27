@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.surveyDashKnockout.surveyDashKnockoutMod.ISurvey because var conflicts: isLoadingFromJson. Inlined currentPage, pages, isPageStarted, pageVisibilityChanged, panelVisibilityChanged, questionVisibilityChanged, questionsOrder, questionAdded, panelAdded, questionRemoved, panelRemoved, questionRenamed, validateQuestion, validatePanel, hasVisibleQuestionByValueName, questionCountByValueName, processHtml, getSurveyMarkdownHtml, isDisplayMode, isDesignMode, areInvisibleElementsShowing, requiredText, beforeSettingQuestionErrors, getQuestionTitleTemplate, getUpdatedQuestionTitle, questionStartIndex, questionTitleLocation, questionDescriptionLocation, questionErrorLocation, storeOthersAsComment, maxTextLength, maxOthersLength, clearValueOnDisableItems, uploadFiles, downloadFile, clearFiles, updateChoicesFromServer, updateQuestionCssClasses, updatePanelCssClasses, afterRenderQuestion, afterRenderPanel, afterRenderPage, getQuestionByValueNameFromArray, matrixRowAdded, matrixBeforeRowAdded, matrixRowRemoved, matrixCellCreated, matrixAfterCellRender, matrixCellValueChanged, matrixCellValueChanging, matrixCellValidate, dynamicPanelAdded, dynamicPanelRemoved, dynamicPanelItemValueChanged, dragAndDropAllow */ @JSImport("survey-knockout", "SurveyModel")
+- typings.surveyDashKnockout.surveyDashKnockoutMod.ISurvey because var conflicts: isLoadingFromJson. Inlined currentPage, pages, isPageStarted, pageVisibilityChanged, panelVisibilityChanged, questionVisibilityChanged, questionsOrder, questionAdded, panelAdded, questionRemoved, panelRemoved, questionRenamed, validateQuestion, validatePanel, hasVisibleQuestionByValueName, questionCountByValueName, processHtml, getSurveyMarkdownHtml, isDisplayMode, isDesignMode, areInvisibleElementsShowing, isUpdateValueTextOnTyping, requiredText, beforeSettingQuestionErrors, getQuestionTitleTemplate, getUpdatedQuestionTitle, questionStartIndex, questionTitleLocation, questionDescriptionLocation, questionErrorLocation, storeOthersAsComment, maxTextLength, maxOthersLength, clearValueOnDisableItems, uploadFiles, downloadFile, clearFiles, updateChoicesFromServer, updateQuestionCssClasses, updatePanelCssClasses, afterRenderQuestion, afterRenderPanel, afterRenderPage, getQuestionByValueNameFromArray, matrixRowAdded, matrixBeforeRowAdded, matrixRowRemoved, matrixAllowRemoveRow, matrixCellCreated, matrixAfterCellRender, matrixCellValueChanged, matrixCellValueChanging, matrixCellValidate, dynamicPanelAdded, dynamicPanelRemoved, dynamicPanelItemValueChanged, dragAndDropAllow */ @JSImport("survey-knockout", "SurveyModel")
 @js.native
 class SurveyModel ()
   extends Base
@@ -210,6 +210,7 @@ class SurveyModel ()
   var isSinglePage: Boolean = js.native
   val isTimerPanelShowingOnBottom: Boolean = js.native
   val isTimerPanelShowingOnTop: Boolean = js.native
+  val isUpdateValueTextOnTyping: Boolean = js.native
   /**
     * Returns true, if at the current moment the question values on the current page are validating on the server.
     * @see onServerValidateQuestions
@@ -467,6 +468,16 @@ class SurveyModel ()
     * @see QuestionMatrixDropdownModel
     */
   var onMatrixAfterCellRender: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
+  /**
+    * The event is fired before rendering "Remove" button for removing a row from Matrix Dynamic question.
+    * <br/> sender the survey object that fires the event
+    * <br/> options.question a matrix question.
+    * <br/> options.rowIndex a row index.
+    * <br/> options.row a row object.
+    * <br/> options.allow a boolean property. Set it to false to disable the row removing.
+    * @see QuestionMatrixDynamicModel
+    */
+  var onMatrixAllowRemoveRow: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
   /**
     * The event is fired before adding a new row in Matrix Dynamic question.
     * <br/> sender the survey object that fires the event
@@ -962,6 +973,12 @@ class SurveyModel ()
     */
   var surveyShowDataSaving: Boolean = js.native
   /**
+    * Change this property from 'onBlur' to 'onTyping' to update the value of text questions, "text" and "comment",
+    * on every key press. By default, the value is updated an input losts the focus.
+    * Please note, setting to "onTyping" may lead to a performance degradation, in case you have many expressions in the survey
+    */
+  var textUpdateMode: String = js.native
+  /**
     * Returns the time in seconds end-user spends on the survey
     * @see startTimer
     * @see PageModel.timeSpent
@@ -1293,6 +1310,7 @@ class SurveyModel ()
   def matrixAfterCellRender(question: IQuestion, options: js.Any): Unit = js.native
   @JSName("matrixAfterCellRender")
   def matrixAfterCellRender_Any(question: IQuestion, options: js.Any): js.Any = js.native
+  def matrixAllowRemoveRow(question: IQuestion, rowIndex: Double, row: js.Any): Boolean = js.native
   def matrixBeforeRowAdded(options: js.Any): Unit = js.native
   def matrixBeforeRowAdded(options: Anon_CanAddRow): js.Any = js.native
   def matrixCellCreated(question: IQuestion, options: js.Any): Unit = js.native
@@ -1390,8 +1408,15 @@ class SurveyModel ()
   def sendResult(postId: String): Unit = js.native
   def sendResult(postId: String, clientId: String): Unit = js.native
   def sendResult(postId: String, clientId: String, isPartialCompleted: Boolean): Unit = js.native
+  /**
+    * Set the comment value
+    * @param name
+    * @param newValue
+    * @see getComment
+    */
+  def setComment(name: String, newValue: String): Unit = js.native
   /* CompleteClass */
-  override def setComment(name: String, newValue: String): js.Any = js.native
+  override def setComment(name: String, newValue: String, locNotification: js.Any): js.Any = js.native
   /* CompleteClass */
   override def setCompleted(): js.Any = js.native
   /* protected */ def setCompletedState(value: String, text: String): Unit = js.native
@@ -1423,7 +1448,7 @@ class SurveyModel ()
     */
   def setValue(name: String, newQuestionValue: js.Any): Unit = js.native
   /* CompleteClass */
-  override def setValue(name: String, newValue: js.Any, locNotification: Boolean): js.Any = js.native
+  override def setValue(name: String, newValue: js.Any, locNotification: js.Any): js.Any = js.native
   /* CompleteClass */
   override def setVariable(name: String, newValue: js.Any): Unit = js.native
   /**

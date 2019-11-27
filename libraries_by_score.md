@@ -1514,6 +1514,7 @@
 | 0.7469512954010091 | [workbox-core](./w/workbox-core) | This module is used by a number of the other Workb
 | 0.74693544700308 | [rtlcss](./r/rtlcss) | Framework for transforming cascading style sheets 
 | 0.746783999365059 | [cordova-plugin-device](./c/cordova-plugin-device) | Cordova Device Plugin
+| 0.7467192188593186 | [react-select](./r/react-select) | A Select control built with and for ReactJS
 | 0.7466691978453087 | [sparse-bitfield](./s/sparse-bitfield) | Bitfield that allocates a series of small buffers 
 | 0.7466579100555605 | [sqs-consumer](./s/sqs-consumer) | Build SQS-based Node applications without the boil
 | 0.7466117999896631 | [lodash_dot_sorteduniq](./l/lodash_dot_sorteduniq) | The lodash method _.sortedUniq exported as a modul
@@ -1946,6 +1947,7 @@
 | 0.7263707310378308 | [cordova-plugin-network-in](./c/cordova-plugin-network-information) | Cordova Network Information Plugin
 | 0.7263655099550967 | [type-name](./t/type-name) | Just a reasonable typeof
 | 0.7263279216785667 | [jsontoxml](./j/jsontoxml) | This is a library designed to render js objects as
+| 0.7262837771396552 | [react-navigation-drawer](./r/react-navigation-drawer) | Drawer navigator component for React Navigation
 | 0.7262383727919799 | [react-countup](./r/react-countup) | A React component wrapper around CountUp.js
 | 0.726185718202645 | [is-function](./i/is-function) | is that thing a function? Use this module to find 
 | 0.7260327996712366 | [apollo-datasource](./a/apollo-datasource) | -
@@ -2419,6 +2421,7 @@
 | 0.7044475089482004 | [pg-copy-streams](./p/pg-copy-streams) | Low-Level COPY TO and COPY FROM streams for Postgr
 | 0.704246111093685 | [rtl-detect](./r/rtl-detect) | Library will help you to detect if the locale is r
 | 0.7042202875443957 | [inversify-inject-decorato](./i/inversify-inject-decorators) | Lazy evaluated property injection decorators for I
+| 0.7041671204516348 | [javascript-time-ago](./j/javascript-time-ago) | International highly customizable relative date/ti
 | 0.704087835183301 | [route-node](./r/route-node) | A package to create a tree of named routes
 | 0.7040858453386134 | [reflexbox](./r/reflexbox) | Responsive React grid system built with Styled Sys
 | 0.7040392530707753 | [koa-ratelimit](./k/koa-ratelimit) | Rate limiter middleware for koa
@@ -2700,6 +2703,7 @@
 | 0.6918442139794054 | [typescript-collections](./t/typescript-collections) | A complete, fully tested data structure library wr
 | 0.6918401203615754 | [jexl](./j/jexl) | Javascript Expression Language: Powerful context-b
 | 0.6918289471010046 | [ngeohash](./n/ngeohash) | geohash library for nodejs
+| 0.6918069282503201 | [react-navigation-stack](./r/react-navigation-stack) | Stack navigator component for React Navigation
 | 0.6917882341355738 | [ast-types](./a/ast-types) | Esprima-compatible implementation of the Mozilla J
 | 0.6917654752095599 | [user-event](./u/user-event) | Simulate user events for react-testing-library
 | 0.6917580589582124 | [space-pen](./s/space-pen) | Write markup on the final frontier
@@ -3315,6 +3319,7 @@
 | 0.6702784424395194 | [moment-shortformat](./m/moment-shortformat) | An extension to moment.js that formats dates in a 
 | 0.670268253881283 | [webpack-blocks__sass](./w/webpack-blocks__sass) | Webpack block for SASS.
 | 0.670250303052969 | [worker-threads-pool](./w/worker-threads-pool) | Easily manage a pool of Node.js Worker Threads
+| 0.6702501536206356 | [axios-curlirize](./a/axios-curlirize) | Axios third-party module to print all axios reques
 | 0.6701055312604283 | [html2canvas](./h/html2canvas) | Screenshots with JavaScript
 | 0.6700934042965045 | [trouter](./t/trouter) | 🐟 A fast, small-but-mighty, familiar ~fish~ route
 | 0.6700568993447414 | [p-one](./p/p-one) | Test whether some promise passes a testing functio
@@ -4835,6 +4840,7 @@
 | 0.5624136638982795 | [check-types](./c/check-types) | A little library for asserting types and values.
 | 0.5623567322509553 | [oauth](./o/oauth) | Library for interacting with OAuth 1.0, 1.0A, 2 an
 | 0.5623115129867623 | [monk](./m/monk) | The wise MongoDB API
+| 0.5619814865345515 | [koa-proxies](./k/koa-proxies) | Http Proxy Middleware for Koa@2.x/next
 | 0.5617355168442217 | [react-dnd-touch-backend](./r/react-dnd-touch-backend) | Touch backend for react-dnd
 | 0.5615995210436264 | [prosemirror-dropcursor](./p/prosemirror-dropcursor) | Drop cursor plugin for ProseMirror
 | 0.5614875564503385 | [deep-equal](./d/deep-equal) | node's assert.deepEqual algorithm
@@ -5839,6 +5845,7 @@
 | 0.41981268892222784 | [react-native-communicatio](./r/react-native-communications) | Open a web address or call, email, text or iMessag
 | 0.41974930458659626 | [slack-node](./s/slack-node) | Slack API library for node
 | 0.4196318598451976 | [axon](./a/axon) | High-level messaging & socket patterns implemented
+| 0.4196048166181031 | [naudiodon](./n/naudiodon) | Node Stream bindings for PortAudio.
 | 0.41951740822599093 | [lwip](./l/lwip) | Comprehensive, fast, and simple image processing a
 | 0.4194148146686113 | [vex-js](./v/vex-js) | Beautiful, functional dialogs in vanilla JavaScrip
 | 0.41934552456898544 | [route-parser](./r/route-parser) | A isomorphic, bullet-proof, ninja-ready route pars
@@ -6821,6 +6828,7 @@
 | 0.2935900091871014 | [page-icon](./p/page-icon) | Find the best icon for a web page
 | 0.2934297333676658 | [firefox](./f/firefox) | CLI for Firefox
 | 0.2932032996151791 | [lodash_dot_flip](./l/lodash_dot_flip) | The lodash method _.flip exported as a module.
+| 0.2928235170296556 | [domtagger](./d/domtagger) | The hyperHTML's template literal parser
 | 0.29165339931067547 | [lobibox](./l/lobibox) | jQuery Responsive notification plugin
 | 0.2912654368641631 | [sauronjs](./s/sauronjs) | frontend library for advanced interactivity based 
 | 0.29125435630213437 | [keystonejs__adapter-knex](./k/keystonejs__adapter-knex) | KeystoneJS Knex Database Adapter

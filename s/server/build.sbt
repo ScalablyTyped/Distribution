@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "server"
-version := "1.0-dt-20190522Z-265638"
+version := "1.0-dt-20191126Z-018c72"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-9b6106",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-ec07f0",
-  "org.scalablytyped" %%% "csurf" % "1.9.0-dt-20191022Z-efc607",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-13b33a",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-da006c",
-  "org.scalablytyped" %%% "express-session" % "1.15-dt-20191118Z-b781d0",
-  "org.scalablytyped" %%% "formidable" % "1.0.16-dt-20190322Z-8a6cca",
-  "org.scalablytyped" %%% "helmet" % "0.0-unknown-dt-20191029Z-39aa23",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-e84c0f",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191125Z-959704",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-f180da",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-d03b6a",
+  "org.scalablytyped" %%% "csurf" % "1.9.0-dt-20191022Z-0491e6",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-d92710",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-4d11bc",
+  "org.scalablytyped" %%% "express-session" % "1.15-dt-20191118Z-27683d",
+  "org.scalablytyped" %%% "formidable" % "1.0.16-dt-20190322Z-c2f69c",
+  "org.scalablytyped" %%% "helmet" % "0.0-unknown-dt-20191029Z-463651",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-12c9b7",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-1b75dd",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-335844",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-4ff83c",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

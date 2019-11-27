@@ -4,6 +4,7 @@ import typings.react.reactMod.ReactElement
 import typings.victory.Anon_Left
 import typings.victory.Anon_Name
 import typings.victory.Anon_XYD3Scale
+import typings.victory.Anon_XYNumberOptional
 import typings.victory.victoryStrings.data
 import typings.victory.victoryStrings.horizontal
 import typings.victory.victoryStrings.labels
@@ -157,7 +158,7 @@ trait VictoryLegendProps
 object VictoryLegendProps {
   @scala.inline
   def apply(
-    animate: AnimatePropTypeInterface = null,
+    animate: Boolean | AnimatePropTypeInterface = null,
     borderComponent: ReactElement = null,
     borderPadding: PaddingProps = null,
     categories: CategoryPropType = null,
@@ -177,6 +178,8 @@ object VictoryLegendProps {
     itemsPerRow: Int | Double = null,
     label: String | (js.Function1[/* data */ js.Any, String]) = null,
     labelComponent: ReactElement = null,
+    maxDomain: Double | Anon_XYNumberOptional = null,
+    minDomain: Double | Anon_XYNumberOptional = null,
     name: String = null,
     orientation: horizontal | vertical = null,
     padding: PaddingProps = null,
@@ -215,6 +218,8 @@ object VictoryLegendProps {
     if (itemsPerRow != null) __obj.updateDynamic("itemsPerRow")(itemsPerRow.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent.asInstanceOf[js.Any])
+    if (maxDomain != null) __obj.updateDynamic("maxDomain")(maxDomain.asInstanceOf[js.Any])
+    if (minDomain != null) __obj.updateDynamic("minDomain")(minDomain.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])

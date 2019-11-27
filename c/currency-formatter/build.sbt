@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "currency-formatter"
-version := "1.3-dt-20180214Z-db10c0"
+version := "1.3-dt-20191126Z-f08cac"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

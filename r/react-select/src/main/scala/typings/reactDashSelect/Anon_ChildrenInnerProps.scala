@@ -17,7 +17,7 @@ trait Anon_ChildrenInnerProps extends js.Object {
 object Anon_ChildrenInnerProps {
   @scala.inline
   def apply(innerProps: Anon_Event, children: ReactNode = null, innerRef: Ref[_] = null): Anon_ChildrenInnerProps = {
-    val __obj = js.Dynamic.literal(innerProps = innerProps)
+    val __obj = js.Dynamic.literal(innerProps = innerProps.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChildrenInnerProps]

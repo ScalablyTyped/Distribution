@@ -4,8 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ember", "Helper")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberHelper * / any */ @JSImport("ember", "Helper")
 @js.native
-class Helper ()
-  extends typings.atEmberComponent.helperMod.default
+class Helper () extends js.Object
 

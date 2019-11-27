@@ -4,8 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ember", "Ember.ArrayProxy")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberArrayProxy<T> * / any */ @JSImport("ember", "Ember.ArrayProxy")
 @js.native
-class ArrayProxy[T] ()
-  extends typings.atEmberArray.proxyMod.ArrayProxy[T]
+class ArrayProxy[T] () extends js.Object
 

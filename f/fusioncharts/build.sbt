@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fusioncharts"
-version := "3.11-dt-20180214Z-757978"
+version := "3.11-dt-20191126Z-52c4c1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

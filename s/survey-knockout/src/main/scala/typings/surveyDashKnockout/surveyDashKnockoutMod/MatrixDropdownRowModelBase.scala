@@ -61,10 +61,10 @@ class MatrixDropdownRowModelBase protected ()
   override def processTextEx(text: String, returnDisplayValue: Boolean, doEncoding: Boolean): js.Any = js.native
   def runCondition(values: HashTable[_], properties: HashTable[_]): Unit = js.native
   /* CompleteClass */
-  override def setComment(name: String, newValue: String): js.Any = js.native
+  override def setComment(name: String, newValue: String, locNotification: js.Any): js.Any = js.native
   def setValue(name: String, newColumnValue: js.Any): Unit = js.native
   /* CompleteClass */
-  override def setValue(name: String, newValue: js.Any, locNotification: Boolean): js.Any = js.native
+  override def setValue(name: String, newValue: js.Any, locNotification: js.Any): js.Any = js.native
   /* CompleteClass */
   override def setVariable(name: String, newValue: js.Any): Unit = js.native
   /* protected */ def updateCellOnColumnChanged(cell: MatrixDropdownCell): Unit = js.native

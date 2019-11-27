@@ -1,7 +1,7 @@
 
 # Scala.js typings for i2c-bus
 
-Typings are for version 3.0
+Typings are for version v1.0.0
 
 ## Library description:
 I2C serial bus access with Node.js

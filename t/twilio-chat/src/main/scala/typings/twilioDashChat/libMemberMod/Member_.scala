@@ -41,19 +41,9 @@ class Member_ protected () extends EventEmitter {
     * @typedef {('chat' | 'sms' | 'whatsapp')} Member#Type
     */
   def this(services: MemberServices, channel: js.Any, data: MemberDescriptor, sid: String) = this()
-  val attributes: js.Object = js.native
   val channel: js.Any = js.native
-  val dateCreated: Date = js.native
-  val dateUpdated: Date = js.native
-  val identity: String = js.native
-  val isTyping: Boolean = js.native
-  val lastConsumedMessageIndex: Double = js.native
-  val lastConsumptionTimestamp: Date = js.native
-  val roleSid: String = js.native
   var services: js.Any = js.native
-  val sid: String = js.native
   var state: js.Any = js.native
-  val `type`: Type = js.native
   /**
     * Private method function used to stop typing indicator (with event emitting)
     * @private
@@ -69,6 +59,9 @@ class Member_ protected () extends EventEmitter {
     * @private
     */
   def _update(data: js.Any): this.type = js.native
+  def attributes(): js.Object = js.native
+  def dateCreated(): Date = js.native
+  def dateUpdated(): Date = js.native
   /**
     * Gets User for this member and subscribes to it. Supported only for <code>chat</code> type of Members
     * @returns {Promise<User|Error>}
@@ -79,11 +72,18 @@ class Member_ protected () extends EventEmitter {
     * @returns {Promise<UserDescriptor|Error>}
     */
   def getUserDescriptor(): js.Promise[UserDescriptor] = js.native
+  def identity(): String = js.native
+  def isTyping(): Boolean = js.native
+  def lastConsumedMessageIndex(): Double = js.native
+  def lastConsumptionTimestamp(): Date = js.native
   /**
     * Remove Member from the Channel.
     * @returns {Promise<void|Error|SessionError>}
     */
   def remove(): js.Promise[_] = js.native
+  def roleSid(): String = js.native
+  def sid(): String = js.native
+  def `type`(): Type = js.native
   /**
     * Edit member attributes.
     * @param {Object} attributes new attributes for Member.

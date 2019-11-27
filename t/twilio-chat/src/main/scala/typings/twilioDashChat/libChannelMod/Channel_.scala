@@ -78,28 +78,16 @@ class Channel_ protected () extends EventEmitter {
     * @private
     */
   var _onMessageAdded: js.Any = js.native
-  val attributes: js.Object = js.native
-  val createdBy: String = js.native
-  val dateCreated: js.Any = js.native
-  val dateUpdated: js.Any = js.native
   var entity: js.Any = js.native
   var entityName: js.Any = js.native
   var entityPromise: js.Any = js.native
-  val friendlyName: String = js.native
-  val isPrivate: Boolean = js.native
-  val lastConsumedMessageIndex: Double = js.native
-  val lastMessage: LastMessage = js.native
   var members: js.Any = js.native
   var membersEntity: js.Any = js.native
   var messagesEntity: js.Any = js.native
-  val notificationLevel: NotificationLevel = js.native
   var services: js.Any = js.native
   val sid: String = js.native
   var state: js.Any = js.native
-  val status: Status = js.native
   var statusSource: js.Any = js.native
-  val `type`: Type = js.native
-  val uniqueName: String = js.native
   /**
     * Set channel status
     * @private
@@ -157,6 +145,10 @@ class Channel_ protected () extends EventEmitter {
     * @returns {Promise<number|Error|SessionError>} resulting unread messages count in the channel
     */
   def advanceLastConsumedMessageIndex(index: Double): js.Promise[Double] = js.native
+  def attributes(): js.Object = js.native
+  def createdBy(): String = js.native
+  def dateCreated(): js.Any = js.native
+  def dateUpdated(): js.Any = js.native
   /**
     * Decline an invitation to the Channel and unsubscribe from its events.
     * @returns {Promise<Channel|SessionError>}
@@ -167,6 +159,7 @@ class Channel_ protected () extends EventEmitter {
     * @returns {Promise<Channel|SessionError>}
     */
   def delete(): js.Promise[Channel] = js.native
+  def friendlyName(): String = js.native
   /**
     * Get the custom attributes of this Channel.<br/>
     *
@@ -193,6 +186,13 @@ class Channel_ protected () extends EventEmitter {
   def getMembers(): js.Promise[js.Array[Member]] = js.native
   /**
     * Get channel members count.
+    * <br/>
+    * This method is semi-realtime. This means that this data will be eventually correct,
+    * but will also possibly be incorrect for a few seconds. The Chat system does not
+    * provide real time events for counter values changes.
+    * <br/>
+    * So this is quite useful for any UI badges, but is not recommended
+    * to build any core application logic based on these counters being accurate in real time.
     * @returns {Promise<number|Error>}
     */
   def getMembersCount(): js.Promise[Double] = js.native
@@ -210,12 +210,26 @@ class Channel_ protected () extends EventEmitter {
   def getMessages(pageSize: Double, anchor: Double, direction: String): js.Promise[Paginator[Message]] = js.native
   /**
     * Get total message count in a channel.
+    * <br/>
+    * This method is semi-realtime. This means that this data will be eventually correct,
+    * but will also possibly be incorrect for a few seconds. The Chat system does not
+    * provide real time events for counter values changes.
+    * <br/>
+    * So this is quite useful for any UI badges, but is not recommended
+    * to build any core application logic based on these counters being accurate in real time.
     * @returns {Promise<number|Error>}
     */
   def getMessagesCount(): js.Promise[Double] = js.native
   /**
     * Get unconsumed messages count for User if he is Member of this Channel.
     * Rejects if User is not Member of Channel.
+    * <br/>
+    * This method is semi-realtime. This means that this data will be eventually correct,
+    * but will also possibly be incorrect for a few seconds. The Chat system does not
+    * provide real time events for counter values changes.
+    * <br/>
+    * So this is quite useful for any “unread messages count” badges, but is not recommended
+    * to build any core application logic based on these counters being accurate in real time.
     * @returns {Promise<number|Error>}
     */
   def getUnconsumedMessagesCount(): js.Promise[Double] = js.native
@@ -230,16 +244,20 @@ class Channel_ protected () extends EventEmitter {
     * @returns {Promise<void|Error|SessionError>}
     */
   def invite(identity: String): js.Promise[Unit] = js.native
+  def isPrivate(): Boolean = js.native
   /**
     * Join the Channel and subscribe to its events.
     * @returns {Promise<Channel|SessionError>}
     */
   def join(): js.Promise[Channel] = js.native
+  def lastConsumedMessageIndex(): Double = js.native
+  def lastMessage(): LastMessage = js.native
   /**
     * Leave the Channel.
     * @returns {Promise<Channel|SessionError>}
     */
   def leave(): js.Promise[Channel] = js.native
+  def notificationLevel(): NotificationLevel = js.native
   /**
     * Remove a Member from the Channel.
     * @param {String} member - identity of member to remove
@@ -275,12 +293,15 @@ class Channel_ protected () extends EventEmitter {
     * @returns {Promise<void|Error|SessionError>}
     */
   def setUserNotificationLevel(notificationLevel: NotificationLevel): js.Promise[Unit] = js.native
+  def status(): Status = js.native
+  def `type`(): Type = js.native
   /**
     * Send a notification to the server indicating that this Client is currently typing in this Channel.
     * Typing ended notification is sent after a while automatically, but by calling again this method you ensure typing ended is not received.
     * @returns {Promise<void|SessionError>}
     */
   def typing(): js.Any = js.native
+  def uniqueName(): String = js.native
   /**
     * Update the Channel's attributes.
     * @param {Object} attributes - The new attributes object

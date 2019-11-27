@@ -21,7 +21,7 @@ class QuestionMatrixDynamicModel protected () extends QuestionMatrixDropdownMode
   /**
     * Returns true, if a new row can be added.
     * @see maxRowCount
-    * @see canRemoveRow
+    * @see canRemoveRows
     * @see rowCount
     */
   val canAddRow: Boolean = js.native

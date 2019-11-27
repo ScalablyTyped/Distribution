@@ -6,14 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait reactDashMapDashGlProps {
   @scala.inline
-  def BaseControlProps: typings.reactDashMapDashGl.reactDashMapDashGlMod.BaseControlProps.type = typings.reactDashMapDashGl.reactDashMapDashGlMod.BaseControlProps
-  type BaseControlProps = typings.reactDashMapDashGl.reactDashMapDashGlMod.BaseControlProps
-  @scala.inline
   def CanvasOverlayProps: typings.reactDashMapDashGl.reactDashMapDashGlMod.CanvasOverlayProps.type = typings.reactDashMapDashGl.reactDashMapDashGlMod.CanvasOverlayProps
   type CanvasOverlayProps = typings.reactDashMapDashGl.reactDashMapDashGlMod.CanvasOverlayProps
-  @scala.inline
-  def DraggableControlProps: typings.reactDashMapDashGl.reactDashMapDashGlMod.DraggableControlProps.type = typings.reactDashMapDashGl.reactDashMapDashGlMod.DraggableControlProps
-  type DraggableControlProps = typings.reactDashMapDashGl.reactDashMapDashGlMod.DraggableControlProps
   @scala.inline
   def FullscreenControlProps: typings.reactDashMapDashGl.reactDashMapDashGlMod.FullscreenControlProps.type = typings.reactDashMapDashGl.reactDashMapDashGlMod.FullscreenControlProps
   type FullscreenControlProps = typings.reactDashMapDashGl.reactDashMapDashGlMod.FullscreenControlProps

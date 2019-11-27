@@ -1,5 +1,6 @@
 package typings.inputmask.inputmaskMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.inputmask.Anon_Back
 import typings.inputmask.inputmaskStrings.number
 import typings.inputmask.inputmaskStrings.text
@@ -76,6 +77,10 @@ trait Options extends js.Object {
     * @default true
     */
   var decimalProtect: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Add new definitions to this inputmask.
+    */
+  var definitions: js.UndefOr[StringDictionary[Definition]] = js.undefined
   /**
     * Number of fractionalDigits.
     *
@@ -548,6 +553,7 @@ object Options {
     clearMaskOnLostFocus: js.UndefOr[Boolean] = js.undefined,
     colorMask: js.UndefOr[Boolean] = js.undefined,
     decimalProtect: js.UndefOr[Boolean] = js.undefined,
+    definitions: StringDictionary[Definition] = null,
     digits: String = null,
     digitsOptional: js.UndefOr[Boolean] = js.undefined,
     disablePredictiveText: js.UndefOr[Boolean] = js.undefined,
@@ -621,6 +627,7 @@ object Options {
     if (!js.isUndefined(clearMaskOnLostFocus)) __obj.updateDynamic("clearMaskOnLostFocus")(clearMaskOnLostFocus.asInstanceOf[js.Any])
     if (!js.isUndefined(colorMask)) __obj.updateDynamic("colorMask")(colorMask.asInstanceOf[js.Any])
     if (!js.isUndefined(decimalProtect)) __obj.updateDynamic("decimalProtect")(decimalProtect.asInstanceOf[js.Any])
+    if (definitions != null) __obj.updateDynamic("definitions")(definitions.asInstanceOf[js.Any])
     if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
     if (!js.isUndefined(digitsOptional)) __obj.updateDynamic("digitsOptional")(digitsOptional.asInstanceOf[js.Any])
     if (!js.isUndefined(disablePredictiveText)) __obj.updateDynamic("disablePredictiveText")(disablePredictiveText.asInstanceOf[js.Any])

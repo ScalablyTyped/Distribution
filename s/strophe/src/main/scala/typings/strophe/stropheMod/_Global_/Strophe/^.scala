@@ -68,7 +68,6 @@ object ^ extends js.Object {
     js.UndefOr[/* options */ typings.strophe.stropheMod.Strophe.ConnectionOptions], 
     typings.strophe.stropheMod.Strophe.Connection
   ] = js.native
-  val MUC: js.Any = js.native
   /** Constants: XMPP Namespace Constants
     *  Common namespace constants from the XMPP RFCs and XEPs.
     *

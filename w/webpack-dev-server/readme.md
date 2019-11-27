@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-dev-server
 
-Typings are for version 3.4
+Typings are for version 3.9
 
 ## Library description:
 Serves a webpack app. Updates the browser on changes.

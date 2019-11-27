@@ -37,14 +37,6 @@ class SyncMapImpl protected () extends SyncEntity {
     * @private
     */
   /* protected */ def _handleItemRemoved(key: js.Any, eventId: js.Any, oldData: js.Any, dateUpdated: Date, remote: Boolean): Unit = js.native
-  /**
-    * Enumerate all items in this Map.
-    * This always triggers server interaction when being called for the first time on a Map; this may be latent.
-    * This method not supported now and not meant to be used externally.
-    * @param {Function} handler Function to handle each argument.
-    * @private
-    */
-  def forEach(handler: js.Any): js.Promise[_] = js.native
   def get(key: String): js.Promise[MapItem] = js.native
   def getItems(): js.Promise[Paginator[MapItem]] = js.native
   def getItems(args: js.Any): js.Promise[Paginator[MapItem]] = js.native

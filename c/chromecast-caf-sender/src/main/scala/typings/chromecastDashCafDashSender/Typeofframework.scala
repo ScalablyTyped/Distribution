@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.chrome.chrome.cast.ErrorCode
-import typings.chrome.chrome.cast.Session
-import typings.chrome.chrome.cast.media.Media
 import typings.chromecastDashCafDashSender.cast.framework.ActiveInputState
 import typings.chromecastDashCafDashSender.cast.framework.ActiveInputStateEventData
 import typings.chromecastDashCafDashSender.cast.framework.ApplicationMetadata
@@ -35,7 +32,7 @@ trait Typeofframework extends js.Object {
     typings.chromecastDashCafDashSender.cast.framework.ActiveInputStateEventData
   ]
   var ApplicationMetadata: Instantiable1[
-    /* sessionObj */ Session, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify chrome.cast.Session */ /* sessionObj */ js.Any, 
     typings.chromecastDashCafDashSender.cast.framework.ApplicationMetadata
   ]
   var ApplicationMetadataEventData: Instantiable1[
@@ -48,7 +45,7 @@ trait Typeofframework extends js.Object {
   ]
   var CastContext: TypeofClassCastContext
   var CastSession: Instantiable2[
-    /* sessionObj */ Session, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify chrome.cast.Session */ /* sessionObj */ js.Any, 
     /* state */ SessionState, 
     typings.chromecastDashCafDashSender.cast.framework.CastSession
   ]
@@ -58,7 +55,7 @@ trait Typeofframework extends js.Object {
   ]
   var EventData: Instantiable1[/* type */ String, typings.chromecastDashCafDashSender.cast.framework.EventData]
   var MediaSessionEventData: Instantiable1[
-    /* mediaSession */ Media, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify chrome.cast.media.Media */ /* mediaSession */ js.Any, 
     typings.chromecastDashCafDashSender.cast.framework.MediaSessionEventData
   ]
   var RemotePlayer: Instantiable0[typings.chromecastDashCafDashSender.cast.framework.RemotePlayer]
@@ -75,7 +72,7 @@ trait Typeofframework extends js.Object {
   var SessionStateEventData: Instantiable3[
     /* session */ CastSession, 
     /* sessionState */ SessionState, 
-    /* opt_errorCode */ ErrorCode, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify chrome.cast.ErrorCode */ /* opt_errorCode */ js.Any, 
     typings.chromecastDashCafDashSender.cast.framework.SessionStateEventData
   ]
   val VERSION: String
@@ -91,14 +88,24 @@ object Typeofframework {
   @scala.inline
   def apply(
     ActiveInputStateEventData: Instantiable1[/* activeInputState */ ActiveInputState, ActiveInputStateEventData],
-    ApplicationMetadata: Instantiable1[/* sessionObj */ Session, ApplicationMetadata],
+    ApplicationMetadata: Instantiable1[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify chrome.cast.Session */ /* sessionObj */ js.Any, 
+      ApplicationMetadata
+    ],
     ApplicationMetadataEventData: Instantiable1[/* metadata */ ApplicationMetadata, ApplicationMetadataEventData],
     ApplicationStatusEventData: Instantiable1[/* status */ String, ApplicationStatusEventData],
     CastContext: TypeofClassCastContext,
-    CastSession: Instantiable2[/* sessionObj */ Session, /* state */ SessionState, CastSession],
+    CastSession: Instantiable2[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify chrome.cast.Session */ /* sessionObj */ js.Any, 
+      /* state */ SessionState, 
+      CastSession
+    ],
     CastStateEventData: Instantiable1[/* castState */ CastState, CastStateEventData],
     EventData: Instantiable1[/* type */ String, EventData],
-    MediaSessionEventData: Instantiable1[/* mediaSession */ Media, MediaSessionEventData],
+    MediaSessionEventData: Instantiable1[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify chrome.cast.media.Media */ /* mediaSession */ js.Any, 
+      MediaSessionEventData
+    ],
     RemotePlayer: Instantiable0[RemotePlayer],
     RemotePlayerChangedEvent: Instantiable3[
       /* type */ RemotePlayerEventType, 
@@ -110,7 +117,7 @@ object Typeofframework {
     SessionStateEventData: Instantiable3[
       /* session */ CastSession, 
       /* sessionState */ SessionState, 
-      /* opt_errorCode */ ErrorCode, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify chrome.cast.ErrorCode */ /* opt_errorCode */ js.Any, 
       SessionStateEventData
     ],
     VERSION: String,

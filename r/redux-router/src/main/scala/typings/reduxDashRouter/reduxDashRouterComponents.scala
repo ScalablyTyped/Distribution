@@ -1,6 +1,7 @@
 package typings.reduxDashRouter
 
 import typings.react.reactMod.ComponentType
+import typings.reactDashRouter.reactDashRouterMod.RouteProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +14,7 @@ object reduxDashRouterComponents extends reduxDashRouterProps {
   @scala.inline
   def ReduxRouterRedirect: ComponentType[ReduxRouterRedirectProps] = js.constructorOf[typings.reduxDashRouter.libReduxRouterMod.default.Redirect].asInstanceOf[typings.react.reactMod.ComponentType[ReduxRouterRedirectProps]]
   @scala.inline
-  def ReduxRouterRoute: ComponentType[ReduxRouterRouteProps] = js.constructorOf[typings.reduxDashRouter.libReduxRouterMod.default.Route[typings.reactDashRouter.reactDashRouterMod.RouteProps]].asInstanceOf[typings.react.reactMod.ComponentType[ReduxRouterRouteProps]]
+  def ReduxRouterRoute[T /* <: RouteProps */]: ComponentType[T] = js.constructorOf[typings.reduxDashRouter.libReduxRouterMod.default.Route[T]].asInstanceOf[typings.react.reactMod.ComponentType[T]]
   @scala.inline
   def ReduxRouterRouter: ComponentType[ReduxRouterRouterProps] = js.constructorOf[typings.reduxDashRouter.libReduxRouterMod.default.Router].asInstanceOf[typings.react.reactMod.ComponentType[ReduxRouterRouterProps]]
   @scala.inline

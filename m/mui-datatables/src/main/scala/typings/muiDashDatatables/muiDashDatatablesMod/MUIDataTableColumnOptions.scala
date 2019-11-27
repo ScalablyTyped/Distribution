@@ -37,6 +37,7 @@ trait MUIDataTableColumnOptions extends js.Object {
   var hint: js.UndefOr[String] = js.undefined
   var print: js.UndefOr[Boolean] = js.undefined
   var searchable: js.UndefOr[Boolean] = js.undefined
+  var setCellHeaderProps: js.UndefOr[js.Function1[/* columnMeta */ MUIDataTableCustomHeadRenderer, js.Object]] = js.undefined
   var setCellProps: js.UndefOr[
     js.Function3[/* cellValue */ String, /* rowIndex */ Double, /* columnIndex */ Double, js.Object]
   ] = js.undefined
@@ -61,6 +62,7 @@ object MUIDataTableColumnOptions {
     hint: String = null,
     print: js.UndefOr[Boolean] = js.undefined,
     searchable: js.UndefOr[Boolean] = js.undefined,
+    setCellHeaderProps: /* columnMeta */ MUIDataTableCustomHeadRenderer => js.Object = null,
     setCellProps: (/* cellValue */ String, /* rowIndex */ Double, /* columnIndex */ Double) => js.Object = null,
     sort: js.UndefOr[Boolean] = js.undefined,
     sortDirection: asc | desc = null,
@@ -80,6 +82,7 @@ object MUIDataTableColumnOptions {
     if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
     if (!js.isUndefined(print)) __obj.updateDynamic("print")(print.asInstanceOf[js.Any])
     if (!js.isUndefined(searchable)) __obj.updateDynamic("searchable")(searchable.asInstanceOf[js.Any])
+    if (setCellHeaderProps != null) __obj.updateDynamic("setCellHeaderProps")(js.Any.fromFunction1(setCellHeaderProps))
     if (setCellProps != null) __obj.updateDynamic("setCellProps")(js.Any.fromFunction3(setCellProps))
     if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (sortDirection != null) __obj.updateDynamic("sortDirection")(sortDirection.asInstanceOf[js.Any])

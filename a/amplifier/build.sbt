@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "amplifier"
-version := "1.1-dt-20190717Z-e9e201"
+version := "1.1-dt-20190717Z-23fb07"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190815Z-72186b",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20191126Z-36922a",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-2d253b",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false

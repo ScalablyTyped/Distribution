@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "twilio-chat" : "3.3.2"
+      "twilio-chat" : "3.3.3"
     }
   ],
   "test-dependencies" : [
     {
-      "twilio-chat" : "3.3.2"
+      "twilio-chat" : "3.3.3"
     }
   ],
   "compile-devDependencies" : [

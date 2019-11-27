@@ -4,8 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ember", "Ember.Router")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberRoutingRouter * / any */ @JSImport("ember", "Ember.Router")
 @js.native
-class Router ()
-  extends typings.atEmberRouting.routerMod.default
+class Router () extends js.Object
 

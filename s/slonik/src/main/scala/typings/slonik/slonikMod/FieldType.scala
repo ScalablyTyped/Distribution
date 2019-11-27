@@ -5,27 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FieldType extends js.Object {
-  var columnID: Double
-  var dataTypeID: Double
-  var dataTypeModifier: Double
-  var dataTypeSize: Double
-  var format: String
+  var dataTypeId: Double
   var name: String
-  var tableID: Double
 }
 
 object FieldType {
   @scala.inline
-  def apply(
-    columnID: Double,
-    dataTypeID: Double,
-    dataTypeModifier: Double,
-    dataTypeSize: Double,
-    format: String,
-    name: String,
-    tableID: Double
-  ): FieldType = {
-    val __obj = js.Dynamic.literal(columnID = columnID.asInstanceOf[js.Any], dataTypeID = dataTypeID.asInstanceOf[js.Any], dataTypeModifier = dataTypeModifier.asInstanceOf[js.Any], dataTypeSize = dataTypeSize.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tableID = tableID.asInstanceOf[js.Any])
+  def apply(dataTypeId: Double, name: String): FieldType = {
+    val __obj = js.Dynamic.literal(dataTypeId = dataTypeId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FieldType]
   }

@@ -2,6 +2,7 @@ package typings.victory.victoryMod
 
 import typings.react.reactMod.ReactElement
 import typings.victory.Anon_XYD3Scale
+import typings.victory.Anon_XYNumberOptional
 import typings.victory.victoryStrings.data
 import typings.victory.victoryStrings.labels
 import typings.victory.victoryStrings.parent
@@ -110,7 +111,7 @@ trait VictoryStackProps
 object VictoryStackProps {
   @scala.inline
   def apply(
-    animate: AnimatePropTypeInterface = null,
+    animate: Boolean | AnimatePropTypeInterface = null,
     categories: CategoryPropType = null,
     colorScale: ColorScalePropType = null,
     containerComponent: ReactElement = null,
@@ -123,6 +124,8 @@ object VictoryStackProps {
     horizontal: js.UndefOr[Boolean] = js.undefined,
     labelComponent: ReactElement = null,
     labels: js.Array[String] | (js.Function1[/* data */ js.Any, String]) = null,
+    maxDomain: Double | Anon_XYNumberOptional = null,
+    minDomain: Double | Anon_XYNumberOptional = null,
     name: String = null,
     padding: PaddingProps = null,
     scale: ScalePropType | D3Scale | Anon_XYD3Scale = null,
@@ -146,6 +149,8 @@ object VictoryStackProps {
     if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
     if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (maxDomain != null) __obj.updateDynamic("maxDomain")(maxDomain.asInstanceOf[js.Any])
+    if (minDomain != null) __obj.updateDynamic("minDomain")(minDomain.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])

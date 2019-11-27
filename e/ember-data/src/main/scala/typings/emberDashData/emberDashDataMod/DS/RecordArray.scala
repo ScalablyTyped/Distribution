@@ -1,7 +1,6 @@
 package typings.emberDashData.emberDashDataMod.DS
 
-import typings.atEmberArray.proxyMod.ArrayProxy
-import typings.atEmberObject.eventedMod.Evented
+import typings.ember.emberMod.default.ArrayProxy
 import typings.ember.emberMod.default.ComputedProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,11 +13,10 @@ import scala.scalajs.js.annotation._
   * `DS.RecordArray` or its subclasses will be returned by your application's store
   * in response to queries.
   */
-@JSImport("ember-data", "DS.RecordArray")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Evented * / any */ @JSImport("ember-data", "DS.RecordArray")
 @js.native
-class RecordArray[T] ()
-  extends ArrayProxy[T]
-     with Evented {
+class RecordArray[T] () extends ArrayProxy[T] {
   /**
     * The flag to signal a `RecordArray` is finished loading data.
     */

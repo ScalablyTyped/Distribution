@@ -1,17 +1,10 @@
 package typings.codemirror.codemirrorMod.MergeView
 
-import typings.codemirror.codemirrorMod.AutoCloseBrackets
-import typings.codemirror.codemirrorMod.AutoCloseTags
 import typings.codemirror.codemirrorMod.Editor
 import typings.codemirror.codemirrorMod.EditorConfiguration
-import typings.codemirror.codemirrorMod.HighlightSelectionMatches
 import typings.codemirror.codemirrorMod.InputStyle
 import typings.codemirror.codemirrorMod.KeyMap
 import typings.codemirror.codemirrorMod.LintOptions
-import typings.codemirror.codemirrorMod.MatchBrackets
-import typings.codemirror.codemirrorMod.MatchTags
-import typings.codemirror.codemirrorMod.ShowHintOptions
-import typings.codemirror.codemirrorMod.StyleActiveLine
 import typings.codemirror.codemirrorMod.TextMarker
 import typings.std.DragEvent
 import typings.std.KeyboardEvent
@@ -78,8 +71,6 @@ object MergeViewEditorConfiguration {
   def apply(
     orig: js.Any,
     allowEditingOriginals: js.UndefOr[Boolean] = js.undefined,
-    autoCloseBrackets: AutoCloseBrackets | Boolean | String = null,
-    autoCloseTags: AutoCloseTags | Boolean = null,
     autofocus: js.UndefOr[Boolean] = js.undefined,
     collapseIdentical: Boolean | Double = null,
     connect: String = null,
@@ -95,8 +86,6 @@ object MergeViewEditorConfiguration {
     flattenSpans: js.UndefOr[Boolean] = js.undefined,
     foldGutter: js.UndefOr[Boolean] = js.undefined,
     gutters: js.Array[String] = null,
-    highlightSelectionMatches: HighlightSelectionMatches | Boolean = null,
-    hintOptions: ShowHintOptions = null,
     historyEventDelay: Int | Double = null,
     indentUnit: Int | Double = null,
     indentWithTabs: js.UndefOr[Boolean] = js.undefined,
@@ -107,8 +96,6 @@ object MergeViewEditorConfiguration {
     lineWiseCopyCut: js.UndefOr[Boolean] = js.undefined,
     lineWrapping: js.UndefOr[Boolean] = js.undefined,
     lint: Boolean | LintOptions = null,
-    matchBrackets: MatchBrackets | Boolean = null,
-    matchTags: MatchTags | Boolean = null,
     maxHighlightLength: Int | Double = null,
     mode: js.Any = null,
     onCollapse: (/* mergeView */ MergeViewEditor, /* line */ Double, /* size */ Double, /* mark */ TextMarker) => Unit = null,
@@ -121,13 +108,10 @@ object MergeViewEditorConfiguration {
     readOnly: js.Any = null,
     revertButtons: js.UndefOr[Boolean] = js.undefined,
     rtlMoveVisually: js.UndefOr[Boolean] = js.undefined,
-    scrollPastEnd: js.UndefOr[Boolean] = js.undefined,
     scrollbarStyle: String = null,
     showCursorWhenSelecting: js.UndefOr[Boolean] = js.undefined,
     showDifferences: js.UndefOr[Boolean] = js.undefined,
-    showHint: js.UndefOr[Boolean] = js.undefined,
     smartIndent: js.UndefOr[Boolean] = js.undefined,
-    styleActiveLine: StyleActiveLine | Boolean = null,
     tabSize: Int | Double = null,
     tabindex: Int | Double = null,
     theme: String = null,
@@ -139,8 +123,6 @@ object MergeViewEditorConfiguration {
   ): MergeViewEditorConfiguration = {
     val __obj = js.Dynamic.literal(orig = orig.asInstanceOf[js.Any])
     if (!js.isUndefined(allowEditingOriginals)) __obj.updateDynamic("allowEditingOriginals")(allowEditingOriginals.asInstanceOf[js.Any])
-    if (autoCloseBrackets != null) __obj.updateDynamic("autoCloseBrackets")(autoCloseBrackets.asInstanceOf[js.Any])
-    if (autoCloseTags != null) __obj.updateDynamic("autoCloseTags")(autoCloseTags.asInstanceOf[js.Any])
     if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.asInstanceOf[js.Any])
     if (collapseIdentical != null) __obj.updateDynamic("collapseIdentical")(collapseIdentical.asInstanceOf[js.Any])
     if (connect != null) __obj.updateDynamic("connect")(connect.asInstanceOf[js.Any])
@@ -156,8 +138,6 @@ object MergeViewEditorConfiguration {
     if (!js.isUndefined(flattenSpans)) __obj.updateDynamic("flattenSpans")(flattenSpans.asInstanceOf[js.Any])
     if (!js.isUndefined(foldGutter)) __obj.updateDynamic("foldGutter")(foldGutter.asInstanceOf[js.Any])
     if (gutters != null) __obj.updateDynamic("gutters")(gutters.asInstanceOf[js.Any])
-    if (highlightSelectionMatches != null) __obj.updateDynamic("highlightSelectionMatches")(highlightSelectionMatches.asInstanceOf[js.Any])
-    if (hintOptions != null) __obj.updateDynamic("hintOptions")(hintOptions.asInstanceOf[js.Any])
     if (historyEventDelay != null) __obj.updateDynamic("historyEventDelay")(historyEventDelay.asInstanceOf[js.Any])
     if (indentUnit != null) __obj.updateDynamic("indentUnit")(indentUnit.asInstanceOf[js.Any])
     if (!js.isUndefined(indentWithTabs)) __obj.updateDynamic("indentWithTabs")(indentWithTabs.asInstanceOf[js.Any])
@@ -168,8 +148,6 @@ object MergeViewEditorConfiguration {
     if (!js.isUndefined(lineWiseCopyCut)) __obj.updateDynamic("lineWiseCopyCut")(lineWiseCopyCut.asInstanceOf[js.Any])
     if (!js.isUndefined(lineWrapping)) __obj.updateDynamic("lineWrapping")(lineWrapping.asInstanceOf[js.Any])
     if (lint != null) __obj.updateDynamic("lint")(lint.asInstanceOf[js.Any])
-    if (matchBrackets != null) __obj.updateDynamic("matchBrackets")(matchBrackets.asInstanceOf[js.Any])
-    if (matchTags != null) __obj.updateDynamic("matchTags")(matchTags.asInstanceOf[js.Any])
     if (maxHighlightLength != null) __obj.updateDynamic("maxHighlightLength")(maxHighlightLength.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction4(onCollapse))
@@ -182,13 +160,10 @@ object MergeViewEditorConfiguration {
     if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
     if (!js.isUndefined(revertButtons)) __obj.updateDynamic("revertButtons")(revertButtons.asInstanceOf[js.Any])
     if (!js.isUndefined(rtlMoveVisually)) __obj.updateDynamic("rtlMoveVisually")(rtlMoveVisually.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollPastEnd)) __obj.updateDynamic("scrollPastEnd")(scrollPastEnd.asInstanceOf[js.Any])
     if (scrollbarStyle != null) __obj.updateDynamic("scrollbarStyle")(scrollbarStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(showCursorWhenSelecting)) __obj.updateDynamic("showCursorWhenSelecting")(showCursorWhenSelecting.asInstanceOf[js.Any])
     if (!js.isUndefined(showDifferences)) __obj.updateDynamic("showDifferences")(showDifferences.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHint)) __obj.updateDynamic("showHint")(showHint.asInstanceOf[js.Any])
     if (!js.isUndefined(smartIndent)) __obj.updateDynamic("smartIndent")(smartIndent.asInstanceOf[js.Any])
-    if (styleActiveLine != null) __obj.updateDynamic("styleActiveLine")(styleActiveLine.asInstanceOf[js.Any])
     if (tabSize != null) __obj.updateDynamic("tabSize")(tabSize.asInstanceOf[js.Any])
     if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])

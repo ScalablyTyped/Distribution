@@ -1,6 +1,5 @@
 package typings.slickgrid.Slick
 
-import typings.slickgrid.Slick.Editors.Editor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,7 @@ trait ColumnMetadata[T /* <: SlickData */] extends js.Object {
   /**
   		 * A custom cell editor.
   		 */
-  var editor: js.UndefOr[Editor[T]] = js.undefined
+  var editor: js.UndefOr[js.Any] = js.undefined
   /**
   		 * Whether or not a cell can be set as "active".
   		 */
@@ -32,7 +31,7 @@ object ColumnMetadata {
   @scala.inline
   def apply[T /* <: SlickData */](
     colspan: Double | String = null,
-    editor: Editor[T] = null,
+    editor: js.Any = null,
     focusable: js.UndefOr[Boolean] = js.undefined,
     formatter: (/* row */ Double, /* cell */ Double, /* value */ js.Any, /* columnDef */ Column[T], /* dataContext */ SlickData) => String = null,
     selectable: js.UndefOr[Boolean] = js.undefined

@@ -39,7 +39,7 @@ object Anon_ChildrenGetPortalPlacement {
     menuShouldScrollIntoView: Boolean,
     minMenuHeight: Double
   ): Anon_ChildrenGetPortalPlacement = {
-    val __obj = js.Dynamic.literal(children = children, getPortalPlacement = js.Any.fromFunction1(getPortalPlacement), innerProps = innerProps, maxMenuHeight = maxMenuHeight, menuPlacement = menuPlacement, menuPosition = menuPosition, menuShouldScrollIntoView = menuShouldScrollIntoView, minMenuHeight = minMenuHeight)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], getPortalPlacement = js.Any.fromFunction1(getPortalPlacement), innerProps = innerProps.asInstanceOf[js.Any], maxMenuHeight = maxMenuHeight.asInstanceOf[js.Any], menuPlacement = menuPlacement.asInstanceOf[js.Any], menuPosition = menuPosition.asInstanceOf[js.Any], menuShouldScrollIntoView = menuShouldScrollIntoView.asInstanceOf[js.Any], minMenuHeight = minMenuHeight.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_ChildrenGetPortalPlacement]
   }

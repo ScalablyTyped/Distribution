@@ -14,7 +14,7 @@ trait Theme extends js.Object {
 object Theme {
   @scala.inline
   def apply(borderRadius: Double, colors: StringDictionary[String], spacing: ThemeSpacing): Theme = {
-    val __obj = js.Dynamic.literal(borderRadius = borderRadius, colors = colors, spacing = spacing)
+    val __obj = js.Dynamic.literal(borderRadius = borderRadius.asInstanceOf[js.Any], colors = colors.asInstanceOf[js.Any], spacing = spacing.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Theme]
   }

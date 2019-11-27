@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CommandActions extends js.Object {
-  def closeTag(cm: Editor): Unit
   /** If something is selected, indent it by one indent unit. If nothing is selected, insert a tab character. */
   def defaultTabTab(cm: Editor): Unit
   /** Delete the character after the cursor. */
@@ -90,10 +89,6 @@ trait CommandActions extends js.Object {
   def selectAll(cm: Editor): Unit
   /** When multiple selections are present, this deselects all but the primary selection. */
   def singleSelection(cm: Editor): Unit
-  /**
-    * You can bind a key to in order to jump to the tag matching the one under the cursor.
-    */
-  def toMatchingTag(cm: Editor): Unit
   /** Flip the overwrite flag. */
   def toggleOverwrite(cm: Editor): Unit
   /** Swap the characters before and after the cursor. */
@@ -107,7 +102,6 @@ trait CommandActions extends js.Object {
 object CommandActions {
   @scala.inline
   def apply(
-    closeTag: Editor => Unit,
     defaultTabTab: Editor => Unit,
     delCharAfter: Editor => Unit,
     delCharBefore: Editor => Unit,
@@ -150,13 +144,12 @@ object CommandActions {
     redoSelection: Editor => Unit,
     selectAll: Editor => Unit,
     singleSelection: Editor => Unit,
-    toMatchingTag: Editor => Unit,
     toggleOverwrite: Editor => Unit,
     transposeChars: Editor => Unit,
     undo: Editor => Unit,
     undoSelection: Editor => Unit
   ): CommandActions = {
-    val __obj = js.Dynamic.literal(closeTag = js.Any.fromFunction1(closeTag), defaultTabTab = js.Any.fromFunction1(defaultTabTab), delCharAfter = js.Any.fromFunction1(delCharAfter), delCharBefore = js.Any.fromFunction1(delCharBefore), delGroupAfter = js.Any.fromFunction1(delGroupAfter), delGroupBefore = js.Any.fromFunction1(delGroupBefore), delLineLeft = js.Any.fromFunction1(delLineLeft), delWordAfter = js.Any.fromFunction1(delWordAfter), delWordBefore = js.Any.fromFunction1(delWordBefore), delWrappedLineLeft = js.Any.fromFunction1(delWrappedLineLeft), delWrappedLineRight = js.Any.fromFunction1(delWrappedLineRight), deleteLine = js.Any.fromFunction1(deleteLine), goCharLeft = js.Any.fromFunction1(goCharLeft), goCharRight = js.Any.fromFunction1(goCharRight), goColumnLeft = js.Any.fromFunction1(goColumnLeft), goColumnRight = js.Any.fromFunction1(goColumnRight), goDocEnd = js.Any.fromFunction1(goDocEnd), goDocStart = js.Any.fromFunction1(goDocStart), goGroupLeft = js.Any.fromFunction1(goGroupLeft), goGroupRight = js.Any.fromFunction1(goGroupRight), goLineDown = js.Any.fromFunction1(goLineDown), goLineEnd = js.Any.fromFunction1(goLineEnd), goLineLeft = js.Any.fromFunction1(goLineLeft), goLineLeftSmart = js.Any.fromFunction1(goLineLeftSmart), goLineRight = js.Any.fromFunction1(goLineRight), goLineStart = js.Any.fromFunction1(goLineStart), goLineStartSmart = js.Any.fromFunction1(goLineStartSmart), goLineUp = js.Any.fromFunction1(goLineUp), goPageDown = js.Any.fromFunction1(goPageDown), goPageUp = js.Any.fromFunction1(goPageUp), goWordLeft = js.Any.fromFunction1(goWordLeft), goWordRight = js.Any.fromFunction1(goWordRight), indentAuto = js.Any.fromFunction1(indentAuto), indentLess = js.Any.fromFunction1(indentLess), indentMore = js.Any.fromFunction1(indentMore), insertSoftTab = js.Any.fromFunction1(insertSoftTab), insertTab = js.Any.fromFunction1(insertTab), killLine = js.Any.fromFunction1(killLine), newlineAndIndent = js.Any.fromFunction1(newlineAndIndent), redo = js.Any.fromFunction1(redo), redoSelection = js.Any.fromFunction1(redoSelection), selectAll = js.Any.fromFunction1(selectAll), singleSelection = js.Any.fromFunction1(singleSelection), toMatchingTag = js.Any.fromFunction1(toMatchingTag), toggleOverwrite = js.Any.fromFunction1(toggleOverwrite), transposeChars = js.Any.fromFunction1(transposeChars), undo = js.Any.fromFunction1(undo), undoSelection = js.Any.fromFunction1(undoSelection))
+    val __obj = js.Dynamic.literal(defaultTabTab = js.Any.fromFunction1(defaultTabTab), delCharAfter = js.Any.fromFunction1(delCharAfter), delCharBefore = js.Any.fromFunction1(delCharBefore), delGroupAfter = js.Any.fromFunction1(delGroupAfter), delGroupBefore = js.Any.fromFunction1(delGroupBefore), delLineLeft = js.Any.fromFunction1(delLineLeft), delWordAfter = js.Any.fromFunction1(delWordAfter), delWordBefore = js.Any.fromFunction1(delWordBefore), delWrappedLineLeft = js.Any.fromFunction1(delWrappedLineLeft), delWrappedLineRight = js.Any.fromFunction1(delWrappedLineRight), deleteLine = js.Any.fromFunction1(deleteLine), goCharLeft = js.Any.fromFunction1(goCharLeft), goCharRight = js.Any.fromFunction1(goCharRight), goColumnLeft = js.Any.fromFunction1(goColumnLeft), goColumnRight = js.Any.fromFunction1(goColumnRight), goDocEnd = js.Any.fromFunction1(goDocEnd), goDocStart = js.Any.fromFunction1(goDocStart), goGroupLeft = js.Any.fromFunction1(goGroupLeft), goGroupRight = js.Any.fromFunction1(goGroupRight), goLineDown = js.Any.fromFunction1(goLineDown), goLineEnd = js.Any.fromFunction1(goLineEnd), goLineLeft = js.Any.fromFunction1(goLineLeft), goLineLeftSmart = js.Any.fromFunction1(goLineLeftSmart), goLineRight = js.Any.fromFunction1(goLineRight), goLineStart = js.Any.fromFunction1(goLineStart), goLineStartSmart = js.Any.fromFunction1(goLineStartSmart), goLineUp = js.Any.fromFunction1(goLineUp), goPageDown = js.Any.fromFunction1(goPageDown), goPageUp = js.Any.fromFunction1(goPageUp), goWordLeft = js.Any.fromFunction1(goWordLeft), goWordRight = js.Any.fromFunction1(goWordRight), indentAuto = js.Any.fromFunction1(indentAuto), indentLess = js.Any.fromFunction1(indentLess), indentMore = js.Any.fromFunction1(indentMore), insertSoftTab = js.Any.fromFunction1(insertSoftTab), insertTab = js.Any.fromFunction1(insertTab), killLine = js.Any.fromFunction1(killLine), newlineAndIndent = js.Any.fromFunction1(newlineAndIndent), redo = js.Any.fromFunction1(redo), redoSelection = js.Any.fromFunction1(redoSelection), selectAll = js.Any.fromFunction1(selectAll), singleSelection = js.Any.fromFunction1(singleSelection), toggleOverwrite = js.Any.fromFunction1(toggleOverwrite), transposeChars = js.Any.fromFunction1(transposeChars), undo = js.Any.fromFunction1(undo), undoSelection = js.Any.fromFunction1(undoSelection))
   
     __obj.asInstanceOf[CommandActions]
   }

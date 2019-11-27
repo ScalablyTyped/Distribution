@@ -1,6 +1,5 @@
 package typings.ember.emberMod.default
 
-import typings.atEmberObject.dashPrivateTypesMod.UnwrapComputedPropertyGetter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,11 +10,7 @@ object getWithDefault extends js.Object {
   def apply[T, K /* <: java.lang.String */](
     obj: T,
     key: K,
-    defaultValue: UnwrapComputedPropertyGetter[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
-    ]
-  ): UnwrapComputedPropertyGetter[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
-  ] = js.native
+    defaultValue: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify UnwrapComputedPropertyGetter<T[K]> */ js.Any
+  ): js.Any = js.native
 }
 

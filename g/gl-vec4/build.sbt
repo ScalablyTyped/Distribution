@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gl-vec4"
-version := "1.0-dt-20190301Z-d5168c"
+version := "1.0-dt-20191126Z-e496ce"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

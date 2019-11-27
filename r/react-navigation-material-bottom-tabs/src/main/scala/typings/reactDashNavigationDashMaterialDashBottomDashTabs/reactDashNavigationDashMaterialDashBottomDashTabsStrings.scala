@@ -6,59 +6,29 @@ import scala.scalajs.js.annotation._
 
 object reactDashNavigationDashMaterialDashBottomDashTabsStrings {
   @js.native
-  sealed trait getAccessibilityLabel extends js.Object
+  sealed trait history extends js.Object
   
   @js.native
-  sealed trait getBadge extends js.Object
+  sealed trait initialRoute extends js.Object
   
   @js.native
-  sealed trait getColor extends js.Object
+  sealed trait none extends js.Object
   
   @js.native
-  sealed trait getLabelText extends js.Object
+  sealed trait order extends js.Object
   
   @js.native
-  sealed trait getTestID extends js.Object
-  
-  @js.native
-  sealed trait navigationState extends js.Object
-  
-  @js.native
-  sealed trait onIndexChange extends js.Object
-  
-  @js.native
-  sealed trait onTabPress extends js.Object
-  
-  @js.native
-  sealed trait renderIcon extends js.Object
-  
-  @js.native
-  sealed trait renderLabel extends js.Object
-  
-  @js.native
-  sealed trait renderScene extends js.Object
+  sealed trait refocus extends js.Object
   
   @scala.inline
-  def getAccessibilityLabel: getAccessibilityLabel = "getAccessibilityLabel".asInstanceOf[getAccessibilityLabel]
+  def history: history = "history".asInstanceOf[history]
   @scala.inline
-  def getBadge: getBadge = "getBadge".asInstanceOf[getBadge]
+  def initialRoute: initialRoute = "initialRoute".asInstanceOf[initialRoute]
   @scala.inline
-  def getColor: getColor = "getColor".asInstanceOf[getColor]
+  def none: none = "none".asInstanceOf[none]
   @scala.inline
-  def getLabelText: getLabelText = "getLabelText".asInstanceOf[getLabelText]
+  def order: order = "order".asInstanceOf[order]
   @scala.inline
-  def getTestID: getTestID = "getTestID".asInstanceOf[getTestID]
-  @scala.inline
-  def navigationState: navigationState = "navigationState".asInstanceOf[navigationState]
-  @scala.inline
-  def onIndexChange: onIndexChange = "onIndexChange".asInstanceOf[onIndexChange]
-  @scala.inline
-  def onTabPress: onTabPress = "onTabPress".asInstanceOf[onTabPress]
-  @scala.inline
-  def renderIcon: renderIcon = "renderIcon".asInstanceOf[renderIcon]
-  @scala.inline
-  def renderLabel: renderLabel = "renderLabel".asInstanceOf[renderLabel]
-  @scala.inline
-  def renderScene: renderScene = "renderScene".asInstanceOf[renderScene]
+  def refocus: refocus = "refocus".asInstanceOf[refocus]
 }
 

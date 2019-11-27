@@ -1,124 +1,80 @@
 package typings.meteor
 
-import typings.meteor.mongoMod.Mongo.BsonType
-import typings.meteor.mongoMod.Mongo.CurrentDateModifier
+import typings.meteor.Mongo.BsonType
+import typings.meteor.Mongo.CurrentDateModifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object meteorNumbers {
   @js.native
-  sealed trait `-1`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `-1` extends BsonType
   
   @js.native
   sealed trait `0` extends js.Object
   
   @js.native
-  sealed trait `1`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `1` extends BsonType
   
   @js.native
-  sealed trait `10`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `10` extends BsonType
   
   @js.native
-  sealed trait `11`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `11` extends BsonType
   
   @js.native
-  sealed trait `12`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `12` extends BsonType
   
   @js.native
-  sealed trait `127`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `127` extends BsonType
   
   @js.native
-  sealed trait `13`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `13` extends BsonType
   
   @js.native
-  sealed trait `14`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `14` extends BsonType
   
   @js.native
-  sealed trait `15`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `15` extends BsonType
   
   @js.native
-  sealed trait `16`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `16` extends BsonType
   
   @js.native
-  sealed trait `17`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `17` extends BsonType
   
   @js.native
-  sealed trait `18`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `18` extends BsonType
   
   @js.native
-  sealed trait `19`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `19` extends BsonType
   
   @js.native
-  sealed trait `2`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `2` extends BsonType
   
   @js.native
-  sealed trait `3`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `3` extends BsonType
   
   @js.native
-  sealed trait `4`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `4` extends BsonType
   
   @js.native
-  sealed trait `5`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `5` extends BsonType
   
   @js.native
-  sealed trait `6`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `6` extends BsonType
   
   @js.native
-  sealed trait `7`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `7` extends BsonType
   
   @js.native
-  sealed trait `8`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `8` extends BsonType
   
   @js.native
-  sealed trait `9`
-    extends BsonType
-       with typings.meteor.Mongo.BsonType
+  sealed trait `9` extends BsonType
   
   @js.native
-  sealed trait `true`
-    extends CurrentDateModifier
-       with typings.meteor.Mongo.CurrentDateModifier
+  sealed trait `true` extends CurrentDateModifier
   
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]

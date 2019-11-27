@@ -9,7 +9,7 @@ trait InterceptorType extends js.Object {
     js.Function2[
       /* connectionContext */ ConnectionContextType, 
       /* connection */ DatabasePoolConnectionType, 
-      MaybePromiseType[Unit]
+      MaybePromiseType[Null]
     ]
   ] = js.undefined
   var afterQueryExecution: js.UndefOr[
@@ -17,7 +17,7 @@ trait InterceptorType extends js.Object {
       /* queryContext */ QueryContextType, 
       /* query */ QueryType, 
       /* result */ QueryResultType[QueryResultRowType[String]], 
-      MaybePromiseType[QueryResultType[QueryResultRowType[String]]]
+      MaybePromiseType[Null]
     ]
   ] = js.undefined
   var beforePoolConnection: js.UndefOr[
@@ -30,22 +30,33 @@ trait InterceptorType extends js.Object {
     js.Function2[
       /* connectionContext */ ConnectionContextType, 
       /* connection */ DatabasePoolConnectionType, 
-      MaybePromiseType[Unit]
+      MaybePromiseType[Null]
     ]
   ] = js.undefined
   var beforeQueryExecution: js.UndefOr[
     js.Function2[
       /* queryContext */ QueryContextType, 
       /* query */ QueryType, 
-      MaybePromiseType[js.UndefOr[QueryResultType[QueryResultRowType[String]]]]
+      MaybePromiseType[QueryResultType[QueryResultRowType[String]] | Null]
     ]
+  ] = js.undefined
+  var beforeQueryResult: js.UndefOr[
+    js.Function3[
+      /* queryContext */ QueryContextType, 
+      /* query */ QueryType, 
+      /* result */ QueryResultType[QueryResultRowType[String]], 
+      MaybePromiseType[Null]
+    ]
+  ] = js.undefined
+  var beforeTransformQuery: js.UndefOr[
+    js.Function2[/* queryContext */ QueryContextType, /* query */ QueryType, MaybePromiseType[Null]]
   ] = js.undefined
   var queryExecutionError: js.UndefOr[
     js.Function3[
       /* queryContext */ QueryContextType, 
       /* query */ QueryType, 
       /* error */ SlonikError, 
-      MaybePromiseType[Unit]
+      MaybePromiseType[Null]
     ]
   ] = js.undefined
   var transformQuery: js.UndefOr[
@@ -65,12 +76,14 @@ trait InterceptorType extends js.Object {
 object InterceptorType {
   @scala.inline
   def apply(
-    afterPoolConnection: (/* connectionContext */ ConnectionContextType, /* connection */ DatabasePoolConnectionType) => MaybePromiseType[Unit] = null,
-    afterQueryExecution: (/* queryContext */ QueryContextType, /* query */ QueryType, /* result */ QueryResultType[QueryResultRowType[String]]) => MaybePromiseType[QueryResultType[QueryResultRowType[String]]] = null,
+    afterPoolConnection: (/* connectionContext */ ConnectionContextType, /* connection */ DatabasePoolConnectionType) => MaybePromiseType[Null] = null,
+    afterQueryExecution: (/* queryContext */ QueryContextType, /* query */ QueryType, /* result */ QueryResultType[QueryResultRowType[String]]) => MaybePromiseType[Null] = null,
     beforePoolConnection: /* connectionContext */ PoolContextType => MaybePromiseType[js.UndefOr[DatabasePoolType | Null]] = null,
-    beforePoolConnectionRelease: (/* connectionContext */ ConnectionContextType, /* connection */ DatabasePoolConnectionType) => MaybePromiseType[Unit] = null,
-    beforeQueryExecution: (/* queryContext */ QueryContextType, /* query */ QueryType) => MaybePromiseType[js.UndefOr[QueryResultType[QueryResultRowType[String]]]] = null,
-    queryExecutionError: (/* queryContext */ QueryContextType, /* query */ QueryType, /* error */ SlonikError) => MaybePromiseType[Unit] = null,
+    beforePoolConnectionRelease: (/* connectionContext */ ConnectionContextType, /* connection */ DatabasePoolConnectionType) => MaybePromiseType[Null] = null,
+    beforeQueryExecution: (/* queryContext */ QueryContextType, /* query */ QueryType) => MaybePromiseType[QueryResultType[QueryResultRowType[String]] | Null] = null,
+    beforeQueryResult: (/* queryContext */ QueryContextType, /* query */ QueryType, /* result */ QueryResultType[QueryResultRowType[String]]) => MaybePromiseType[Null] = null,
+    beforeTransformQuery: (/* queryContext */ QueryContextType, /* query */ QueryType) => MaybePromiseType[Null] = null,
+    queryExecutionError: (/* queryContext */ QueryContextType, /* query */ QueryType, /* error */ SlonikError) => MaybePromiseType[Null] = null,
     transformQuery: (/* queryContext */ QueryContextType, /* query */ QueryType) => QueryType = null,
     transformRow: (/* queryContext */ QueryContextType, /* query */ QueryType, /* row */ QueryResultRowType[String], /* fields */ js.Array[FieldType]) => QueryResultRowType[String] = null
   ): InterceptorType = {
@@ -80,6 +93,8 @@ object InterceptorType {
     if (beforePoolConnection != null) __obj.updateDynamic("beforePoolConnection")(js.Any.fromFunction1(beforePoolConnection))
     if (beforePoolConnectionRelease != null) __obj.updateDynamic("beforePoolConnectionRelease")(js.Any.fromFunction2(beforePoolConnectionRelease))
     if (beforeQueryExecution != null) __obj.updateDynamic("beforeQueryExecution")(js.Any.fromFunction2(beforeQueryExecution))
+    if (beforeQueryResult != null) __obj.updateDynamic("beforeQueryResult")(js.Any.fromFunction3(beforeQueryResult))
+    if (beforeTransformQuery != null) __obj.updateDynamic("beforeTransformQuery")(js.Any.fromFunction2(beforeTransformQuery))
     if (queryExecutionError != null) __obj.updateDynamic("queryExecutionError")(js.Any.fromFunction3(queryExecutionError))
     if (transformQuery != null) __obj.updateDynamic("transformQuery")(js.Any.fromFunction2(transformQuery))
     if (transformRow != null) __obj.updateDynamic("transformRow")(js.Any.fromFunction4(transformRow))

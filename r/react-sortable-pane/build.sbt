@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "react-sortable-pane"
-version := "1.1.0-99b1ce"
+version := "1.1.0-62cf07"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-a93afc",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-5cddf8",
-  "org.scalablytyped" %%% "re-resizable" % "4.7.1-2c12a5",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191123Z-d1d56f",
-  "org.scalablytyped" %%% "react-motion" % "0.0-unknown-dt-20190509Z-b084a8",
+  "org.scalablytyped" %%% "re-resizable" % "4.7.1-3650bb",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-0aa2c4",
+  "org.scalablytyped" %%% "react-motion" % "0.0-unknown-dt-20190509Z-07cb75",
   "org.scalablytyped" %%% "resize-observer-polyfill" % "1.5.1-5aa74c",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false

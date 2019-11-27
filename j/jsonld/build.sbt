@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsonld"
-version := "1.5-dt-20190408Z-9de16b"
+version := "1.5-dt-20191126Z-9de16b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

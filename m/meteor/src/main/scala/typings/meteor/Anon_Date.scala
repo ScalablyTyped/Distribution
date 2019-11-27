@@ -1,15 +1,13 @@
 package typings.meteor
 
+import typings.meteor.Mongo.CurrentDateModifier
 import typings.meteor.meteorStrings.date
 import typings.meteor.meteorStrings.timestamp
-import typings.meteor.mongoMod.Mongo.CurrentDateModifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Date
-  extends CurrentDateModifier
-     with typings.meteor.Mongo.CurrentDateModifier {
+trait Anon_Date extends CurrentDateModifier {
   @JSName("$type")
   var $type: timestamp | date
 }

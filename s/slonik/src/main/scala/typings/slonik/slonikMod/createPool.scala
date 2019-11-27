@@ -10,7 +10,7 @@ object createPool extends js.Object {
   def apply(connectionConfiguration: DatabaseConfigurationType): DatabasePoolType = js.native
   def apply(
     connectionConfiguration: DatabaseConfigurationType,
-    clientUserConfiguration: ClientUserConfigurationType
+    clientUserConfiguration: ClientConfigurationInputType
   ): DatabasePoolType = js.native
 }
 

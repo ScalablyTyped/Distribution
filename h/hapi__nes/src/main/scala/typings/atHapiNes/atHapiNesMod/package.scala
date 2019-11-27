@@ -16,12 +16,12 @@ package object atHapiNesMod {
     *          ClientOptions, ClientConnectOptions, ClientRequestOptions,
     *          ClientSubscribeFlags)
     */
-  type Client = typings.atHapiNes.libClientMod.Client
-  type ClientConnectOptions = typings.atHapiNes.libClientMod.Client.ClientConnectOptions
-  type ClientOptions = typings.atHapiNes.libClientMod.Client.ClientOptions
-  type ClientRequestOptions = typings.atHapiNes.libClientMod.Client.ClientRequestOptions
-  type ClientSubscribeFlags = typings.atHapiNes.libClientMod.Client.ClientSubscribeFlags
-  type Handler = typings.atHapiNes.libClientMod.Client.Handler
+  type Client = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NesClient.Client */ js.Any
+  type ClientConnectOptions = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NesClient.Client.ClientConnectOptions */ js.Any
+  type ClientOptions = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NesClient.Client.ClientOptions */ js.Any
+  type ClientRequestOptions = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NesClient.Client.ClientRequestOptions */ js.Any
+  type ClientSubscribeFlags = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NesClient.Client.ClientSubscribeFlags */ js.Any
+  type Handler = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NesClient.Client.Handler */ js.Any
   type ServerOnSubscribe = ServerOnSubscribeWithParams | ServerOnSubscribeWithoutParams
   type ServerOnSubscribeWithParams = js.Function3[/* socket */ Socket, /* path */ String, /* params */ js.Any, js.Promise[js.Any]]
   type ServerOnSubscribeWithoutParams = js.Function2[/* socket */ Socket, /* path */ String, js.Promise[js.Any]]

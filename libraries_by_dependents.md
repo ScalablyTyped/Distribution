@@ -300,6 +300,7 @@
 | 925 | [helmet](./h/helmet) | help secure Express/Connect apps with various HTTP
 | 917 | [http-proxy-middleware](./h/http-proxy-middleware) | The one-liner node.js proxy middleware for connect
 | 917 | [should](./s/should) | test framework agnostic BDD-style assertions
+| 913 | [react-select](./r/react-select) | A Select control built with and for ReactJS
 | 907 | [mqtt](./m/mqtt) | A library for the MQTT protocol
 | 893 | [koa-bodyparser](./k/koa-bodyparser) | a body parser for koa
 | 893 | [material-ui__core](./m/material-ui__core) | React components that implement Google's Material 
@@ -3430,6 +3431,7 @@
 | 24 | [inflation](./i/inflation) | Easily unzip an HTTP stream
 | 24 | [is-path-cwd](./i/is-path-cwd) | Check if a path is CWD
 | 24 | [istanbul-lib-hook](./i/istanbul-lib-hook) | Hooks for require, vm and script used in istanbul
+| 24 | [koa-proxies](./k/koa-proxies) | Http Proxy Middleware for Koa@2.x/next
 | 24 | [loadable__webpack-plugin](./l/loadable__webpack-plugin) | Webpack plugin for loadable (required for SSR).
 | 24 | [lodash_dot_forin](./l/lodash_dot_forin) | The lodash method _.forIn exported as a module.
 | 24 | [lowlight](./l/lowlight) | Virtual syntax highlighting for virtual DOMs and n
@@ -3495,6 +3497,7 @@
 | 23 | [react-image-gallery](./r/react-image-gallery) | React carousel image gallery component with thumbn
 | 23 | [react-move](./r/react-move) | Beautiful, data-driven animations for React.
 | 23 | [react-native-orientation](./r/react-native-orientation) | Listen to device orientation changes in React Nati
+| 23 | [react-navigation-stack](./r/react-navigation-stack) | Stack navigator component for React Navigation
 | 23 | [signalr](./s/signalr) | Microsoft ASP.NET SignalR JavaScript Client
 | 23 | [srcset](./s/srcset) | Parse and stringify the HTML  srcset attribute
 | 23 | [standard-http-error](./s/standard-http-error) | Standard HTTP error class. Proper serialization, n
@@ -3594,6 +3597,7 @@
 | 21 | [inversify-express-utils](./i/inversify-express-utils) | Some utilities for the development of express appl
 | 21 | [is-valid-glob](./i/is-valid-glob) | Return true if a value is a valid glob pattern or 
 | 21 | [isotope-layout](./i/isotope-layout) | Filter and sort magical layouts
+| 21 | [javascript-time-ago](./j/javascript-time-ago) | International highly customizable relative date/ti
 | 21 | [jest-resolve-dependencies](./j/jest-resolve-dependencies) | -
 | 21 | [jquery-mask-plugin](./j/jquery-mask-plugin) | A jQuery Plugin to make masks on form fields and h
 | 21 | [jupyterlab__console](./j/jupyterlab__console) | JupyterLab - Code Console
@@ -4797,6 +4801,7 @@
 | 8 | [react-native-community__c](./r/react-native-community__cli) | React Native CLI
 | 8 | [react-native-firebase](./r/react-native-firebase) | A well tested, feature rich Firebase implementatio
 | 8 | [react-native-push-notific](./r/react-native-push-notification) | React Native Local and Remote Notifications
+| 8 | [react-navigation-drawer](./r/react-navigation-drawer) | Drawer navigator component for React Navigation
 | 8 | [react-simple-maps](./r/react-simple-maps) | An svg map component built with and for React
 | 8 | [react-tag-autocomplete](./r/react-tag-autocomplete) | React Tag Autocomplete is a simple tagging compone
 | 8 | [redux-first-router-link](./r/redux-first-router-link) | a simple but effective  component for redux-first-
@@ -5033,6 +5038,7 @@
 | 6 | [detox](./d/detox) | E2E tests and automation for mobile
 | 6 | [devtools-detect](./d/devtools-detect) | Detect if DevTools is open and its orientation
 | 6 | [djv](./d/djv) | dynamic json-schema validator
+| 6 | [domtagger](./d/domtagger) | The hyperHTML's template literal parser
 | 6 | [dynogels](./d/dynogels) | DynamoDB data mapper
 | 6 | [empower](./e/empower) | Power Assert feature enhancer for assert function/
 | 6 | [epub](./e/epub) | Parse ePub electronic book files with Node.JS
@@ -5942,6 +5948,7 @@
 | 2 | [aws-sdk__ssec-middleware](./a/aws-sdk__ssec-middleware) | -
 | 2 | [aws-sdk__util-uri-escape](./a/aws-sdk__util-uri-escape) | -
 | 2 | [aws-sdk__xml-body-builder](./a/aws-sdk__xml-body-builder) | XML Body Builder for the AWS SDK
+| 2 | [axios-curlirize](./a/axios-curlirize) | Axios third-party module to print all axios reques
 | 2 | [axios-token-interceptor](./a/axios-token-interceptor) | An interceptor which makes it easier to work with 
 | 2 | [b2a](./b/b2a) | btoa and atob (ie base64 encoding and decoding) su
 | 2 | [backbone_dot_layoutmanage](./b/backbone_dot_layoutmanager) | A layout and template manager for Backbone.js appl
@@ -6671,6 +6678,7 @@
 | 1 | [moonjs](./m/moonjs) | A minimal, blazing fast user interface library.
 | 1 | [multy](./m/multy) | Koa(v2)/Express middleware for handle multipart fo
 | 1 | [native-toast](./n/native-toast) | Native-like toast notification but for the web.
+| 1 | [naudiodon](./n/naudiodon) | Node Stream bindings for PortAudio.
 | 1 | [navigation](./n/navigation) | The data-first JavaScript router
 | 1 | [navigation-react](./n/navigation-react) | React plugin for the Navigation router
 | 1 | [ndn-js](./n/ndn-js) | A JavaScript client library for Named Data Network

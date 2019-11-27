@@ -26,6 +26,12 @@ object libRestpaginatorMod extends js.Object {
     /* CompleteClass */
     override var items: js.Array[T] = js.native
     var state: js.Any = js.native
+    @JSName("hasNextPage")
+    def hasNextPage_MRestPaginator(): Boolean = js.native
+    @JSName("hasPrevPage")
+    def hasPrevPage_MRestPaginator(): Boolean = js.native
+    @JSName("items")
+    def items_MRestPaginator(): js.Array[T] = js.native
     /**
       * Request next page.
       * Does not modify existing object.

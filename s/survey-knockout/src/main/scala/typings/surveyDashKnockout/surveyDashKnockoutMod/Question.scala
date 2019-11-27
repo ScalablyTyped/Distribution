@@ -113,6 +113,7 @@ class Question protected ()
   val isAllowTitleLeft: Boolean = js.native
   var isAnswered: Boolean = js.native
   val isFlowLayout: Boolean = js.native
+  val isInputTextUpdate: Boolean = js.native
   /**
     * Always returns false.
     */
@@ -124,6 +125,7 @@ class Question protected ()
     */
   var isRequired: Boolean = js.native
   val isRunningValidators: Boolean = js.native
+  val isSurveyInputTextUpdate: Boolean = js.native
   val locCommentText: LocalizableString = js.native
   val locDescription: LocalizableString = js.native
   var locNotificationInData: Boolean = js.native
@@ -365,6 +367,7 @@ class Question protected ()
     */
   def isEmpty(): Boolean = js.native
   def isLayoutTypeSupported(layoutType: String): Boolean = js.native
+  /* protected */ def isTextValue(): Boolean = js.native
   /* InferMemberOverrides */
   override def locStrsChanged(): js.Any with Unit = js.native
   /**

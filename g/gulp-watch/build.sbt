@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "gulp-watch"
-version := "v4.1.1-dt-20190322Z-69986f"
+version := "v4.1.1-dt-20190322Z-1da9d0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-3532b4",
-  "org.scalablytyped" %%% "glob-stream" % "v6.1.0-dt-20190322Z-05a944",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-1cdb42",
+  "org.scalablytyped" %%% "glob-stream" % "v6.1.0-dt-20190322Z-711cbf",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-bf1299",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191125Z-959704",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20191106Z-28bcbb",
-  "org.scalablytyped" %%% "vinyl-fs" % "2.4-dt-20190228Z-741253")
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20191106Z-dc1b11",
+  "org.scalablytyped" %%% "vinyl-fs" % "2.4-dt-20190228Z-3439b0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

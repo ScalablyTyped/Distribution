@@ -14,7 +14,7 @@ trait State extends js.Object {
 object State {
   @scala.inline
   def apply(isDisabled: Boolean, isFocused: Boolean): State = {
-    val __obj = js.Dynamic.literal(isDisabled = isDisabled, isFocused = isFocused)
+    val __obj = js.Dynamic.literal(isDisabled = isDisabled.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[State]
   }

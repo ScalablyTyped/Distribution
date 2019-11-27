@@ -34,8 +34,8 @@ object Anon_ChildrenData {
     children: ReactNode = null,
     innerRef: InnerRef = null
   ): Anon_ChildrenData = {
-    val __obj = js.Dynamic.literal(data = data, innerProps = innerProps, label = label)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], innerProps = innerProps.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChildrenData]

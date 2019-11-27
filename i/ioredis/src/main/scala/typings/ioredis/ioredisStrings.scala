@@ -1,6 +1,7 @@
 package typings.ioredis
 
 import typings.ioredis.ioredisMod.NodeRole
+import typings.ioredis.ioredisMod.SecureVersion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,6 +33,18 @@ object ioredisStrings {
   
   @js.native
   sealed trait SAVE extends js.Object
+  
+  @js.native
+  sealed trait TLSv1 extends SecureVersion
+  
+  @js.native
+  sealed trait TLSv1DOT1 extends SecureVersion
+  
+  @js.native
+  sealed trait TLSv1DOT2 extends SecureVersion
+  
+  @js.native
+  sealed trait TLSv1DOT3 extends SecureVersion
   
   @js.native
   sealed trait WITHSCORES extends js.Object
@@ -78,6 +91,14 @@ object ioredisStrings {
   def OK: OK = "OK".asInstanceOf[OK]
   @scala.inline
   def SAVE: SAVE = "SAVE".asInstanceOf[SAVE]
+  @scala.inline
+  def TLSv1: TLSv1 = "TLSv1".asInstanceOf[TLSv1]
+  @scala.inline
+  def TLSv1DOT1: TLSv1DOT1 = "TLSv1.1".asInstanceOf[TLSv1DOT1]
+  @scala.inline
+  def TLSv1DOT2: TLSv1DOT2 = "TLSv1.2".asInstanceOf[TLSv1DOT2]
+  @scala.inline
+  def TLSv1DOT3: TLSv1DOT3 = "TLSv1.3".asInstanceOf[TLSv1DOT3]
   @scala.inline
   def WITHSCORES: WITHSCORES = "WITHSCORES".asInstanceOf[WITHSCORES]
   @scala.inline

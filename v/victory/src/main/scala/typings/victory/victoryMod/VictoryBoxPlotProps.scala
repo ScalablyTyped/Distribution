@@ -2,6 +2,7 @@ package typings.victory.victoryMod
 
 import typings.react.reactMod.ReactElement
 import typings.victory.Anon_XYD3Scale
+import typings.victory.Anon_XYNumberOptional
 import typings.victory.victoryStrings.bottom
 import typings.victory.victoryStrings.left
 import typings.victory.victoryStrings.right
@@ -125,7 +126,7 @@ trait VictoryBoxPlotProps
 object VictoryBoxPlotProps {
   @scala.inline
   def apply(
-    animate: AnimatePropTypeInterface = null,
+    animate: Boolean | AnimatePropTypeInterface = null,
     boxWidth: Int | Double = null,
     categories: CategoryPropType = null,
     containerComponent: ReactElement = null,
@@ -141,8 +142,10 @@ object VictoryBoxPlotProps {
     labelOrientation: top | bottom | left | right = null,
     labels: js.UndefOr[Boolean] = js.undefined,
     max: StringOrNumberOrCallback = null,
+    maxDomain: Double | Anon_XYNumberOptional = null,
     median: StringOrNumberOrCallback = null,
     min: StringOrNumberOrCallback = null,
+    minDomain: Double | Anon_XYNumberOptional = null,
     name: String = null,
     padding: PaddingProps = null,
     q1: StringOrNumberOrCallback = null,
@@ -174,8 +177,10 @@ object VictoryBoxPlotProps {
     if (labelOrientation != null) __obj.updateDynamic("labelOrientation")(labelOrientation.asInstanceOf[js.Any])
     if (!js.isUndefined(labels)) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (maxDomain != null) __obj.updateDynamic("maxDomain")(maxDomain.asInstanceOf[js.Any])
     if (median != null) __obj.updateDynamic("median")(median.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (minDomain != null) __obj.updateDynamic("minDomain")(minDomain.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (q1 != null) __obj.updateDynamic("q1")(q1.asInstanceOf[js.Any])

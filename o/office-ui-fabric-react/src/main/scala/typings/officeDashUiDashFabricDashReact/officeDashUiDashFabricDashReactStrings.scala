@@ -426,6 +426,9 @@ object officeDashUiDashFabricDashReactStrings {
   sealed trait loadingText extends js.Object
   
   @js.native
+  sealed trait ltr extends js.Object
+  
+  @js.native
   sealed trait magenta extends js.Object
   
   @js.native
@@ -631,6 +634,9 @@ object officeDashUiDashFabricDashReactStrings {
   
   @js.native
   sealed trait role extends js.Object
+  
+  @js.native
+  sealed trait rtl extends js.Object
   
   @js.native
   sealed trait scrollableContentClassName extends js.Object
@@ -1064,6 +1070,8 @@ object officeDashUiDashFabricDashReactStrings {
   @scala.inline
   def loadingText: loadingText = "loadingText".asInstanceOf[loadingText]
   @scala.inline
+  def ltr: ltr = "ltr".asInstanceOf[ltr]
+  @scala.inline
   def magenta: magenta = "magenta".asInstanceOf[magenta]
   @scala.inline
   def magentaDark: magentaDark = "magentaDark".asInstanceOf[magentaDark]
@@ -1201,6 +1209,8 @@ object officeDashUiDashFabricDashReactStrings {
   def right: right = "right".asInstanceOf[right]
   @scala.inline
   def role: role = "role".asInstanceOf[role]
+  @scala.inline
+  def rtl: rtl = "rtl".asInstanceOf[rtl]
   @scala.inline
   def scrollableContentClassName: scrollableContentClassName = "scrollableContentClassName".asInstanceOf[scrollableContentClassName]
   @scala.inline

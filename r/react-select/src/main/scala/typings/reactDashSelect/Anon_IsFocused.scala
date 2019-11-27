@@ -12,7 +12,7 @@ trait Anon_IsFocused extends js.Object {
 object Anon_IsFocused {
   @scala.inline
   def apply(isFocused: Boolean, size: Double): Anon_IsFocused = {
-    val __obj = js.Dynamic.literal(isFocused = isFocused, size = size)
+    val __obj = js.Dynamic.literal(isFocused = isFocused.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_IsFocused]
   }

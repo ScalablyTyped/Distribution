@@ -29,7 +29,7 @@ object Anon_ChildrenComponents {
     removeProps: Anon_EventOnClick,
     children: ReactNode = null
   ): Anon_ChildrenComponents[OptionType] = {
-    val __obj = js.Dynamic.literal(components = components, cropWithEllipsis = cropWithEllipsis, data = data.asInstanceOf[js.Any], innerProps = innerProps, isDisabled = isDisabled, isFocused = isFocused, removeProps = removeProps)
+    val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], cropWithEllipsis = cropWithEllipsis.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], innerProps = innerProps.asInstanceOf[js.Any], isDisabled = isDisabled.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any], removeProps = removeProps.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChildrenComponents[OptionType]]
   }

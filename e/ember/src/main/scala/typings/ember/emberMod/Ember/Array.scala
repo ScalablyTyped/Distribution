@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object Array
   extends TopLevel[
-      typings.atEmberObject.mixinMod.default[
-        typings.atEmberArray.atEmberArrayMod.Array[js.Any], 
-        typings.atEmberObject.atEmberObjectMod.default
-      ]
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mixin<Array<any>> */ js.Any
     ]
 

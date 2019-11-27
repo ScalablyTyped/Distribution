@@ -3,6 +3,7 @@ package typings.victory.victoryMod
 import typings.react.reactMod.ReactElement
 import typings.std.Pick
 import typings.victory.Anon_XYD3Scale
+import typings.victory.Anon_XYNumberOptional
 import typings.victory.victoryStrings.parent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -85,7 +86,7 @@ trait VictoryChartProps extends VictoryCommonProps {
 object VictoryChartProps {
   @scala.inline
   def apply(
-    animate: AnimatePropTypeInterface = null,
+    animate: Boolean | AnimatePropTypeInterface = null,
     containerComponent: ReactElement = null,
     domain: DomainPropType = null,
     domainPadding: DomainPaddingPropType = null,
@@ -94,6 +95,8 @@ object VictoryChartProps {
     groupComponent: ReactElement = null,
     height: Int | Double = null,
     horizontal: js.UndefOr[Boolean] = js.undefined,
+    maxDomain: Double | Anon_XYNumberOptional = null,
+    minDomain: Double | Anon_XYNumberOptional = null,
     name: String = null,
     padding: PaddingProps = null,
     scale: ScalePropType | D3Scale | Anon_XYD3Scale = null,
@@ -112,6 +115,8 @@ object VictoryChartProps {
     if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (maxDomain != null) __obj.updateDynamic("maxDomain")(maxDomain.asInstanceOf[js.Any])
+    if (minDomain != null) __obj.updateDynamic("minDomain")(minDomain.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])

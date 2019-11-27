@@ -4,8 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ember", "Checkbox")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberCheckbox * / any */ @JSImport("ember", "Checkbox")
 @js.native
-class Checkbox ()
-  extends typings.atEmberComponent.atEmberComponentMod.default
+class Checkbox () extends js.Object
 

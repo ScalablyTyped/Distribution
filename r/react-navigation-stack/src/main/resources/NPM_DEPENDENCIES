@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-navigation-stack" : "1.10.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-navigation-stack" : "1.10.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

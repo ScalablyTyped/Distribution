@@ -12,7 +12,7 @@ trait Props[OptionType /* <: OptionTypeBase */] extends js.Object {
 object Props {
   @scala.inline
   def apply[OptionType /* <: OptionTypeBase */](components: SelectComponentsConfig[OptionType]): Props[OptionType] = {
-    val __obj = js.Dynamic.literal(components = components)
+    val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Props[OptionType]]
   }

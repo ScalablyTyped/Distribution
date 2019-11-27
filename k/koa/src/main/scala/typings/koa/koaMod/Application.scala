@@ -18,8 +18,10 @@ trait Application[StateT, CustomT] extends EventEmitter {
   var context: BaseContext with CustomT = js.native
   var env: String = js.native
   var keys: Keygrip | js.Array[String] = js.native
+  var maxIpsCount: Double = js.native
   var middleware: js.Array[Middleware[StateT, CustomT]] = js.native
   var proxy: Boolean = js.native
+  var proxyIpHeader: String = js.native
   var request: BaseRequest = js.native
   var response: BaseResponse = js.native
   var silent: Boolean = js.native

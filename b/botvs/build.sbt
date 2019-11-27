@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "botvs"
-version := "1.0.5-07b7f7"
+version := "1.0.5-f61710"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20191118Z-536bad",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20191126Z-847d1b",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

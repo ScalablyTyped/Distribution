@@ -11,25 +11,11 @@ import scala.scalajs.js.annotation._
 
 object reactDashSelectComponents extends reactDashSelectProps {
   @scala.inline
-  def Async[OptionType /* <: OptionTypeBase */]: ComponentType[AsyncProps[OptionType]] = js.constructorOf[typings.reactDashSelect.asyncMod.default[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[AsyncProps[OptionType]]]
-  @scala.inline
-  def AsyncCreatable[OptionType /* <: OptionTypeBase */]: ComponentType[AsyncCreatableProps[OptionType]] = js.constructorOf[typings.reactDashSelect.srcAsyncCreatableMod.default[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[AsyncCreatableProps[OptionType]]]
-  @scala.inline
-  def AsyncDashCreatable[OptionType /* <: OptionTypeBase */]: ComponentType[AsyncDashCreatableProps[OptionType]] = js.constructorOf[typings.reactDashSelect.asyncDashCreatableMod.default[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[AsyncDashCreatableProps[OptionType]]]
-  @scala.inline
-  def Base[OptionType /* <: OptionTypeBase */]: ComponentType[BaseProps[OptionType]] = js.constructorOf[typings.reactDashSelect.baseMod.default[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[BaseProps[OptionType]]]
-  @scala.inline
   def ClearIndicator: ComponentType[ClearIndicatorProps[js.Any]] = js.constructorOf[typings.reactDashSelect.srcComponentsIndicatorsMod.ClearIndicator].asInstanceOf[typings.react.reactMod.ComponentType[ClearIndicatorProps[js.Any]]]
-  @scala.inline
-  def Collapse: ComponentType[CollapseProps] = js.constructorOf[typings.reactDashSelect.srcAnimatedTransitionsMod.Collapse].asInstanceOf[typings.react.reactMod.ComponentType[CollapseProps]]
   @scala.inline
   def Control: ComponentType[ControlProps[js.Any]] = js.constructorOf[typings.reactDashSelect.srcComponentsControlMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ControlProps[js.Any]]]
   @scala.inline
-  def Creatable[OptionType /* <: OptionTypeBase */]: ComponentType[CreatableProps[OptionType]] = js.constructorOf[typings.reactDashSelect.creatableMod.default[OptionType]].asInstanceOf[typings.react.reactMod.ComponentType[CreatableProps[OptionType]]]
-  @scala.inline
   def DropdownIndicator: ComponentType[DropdownIndicatorProps[js.Any]] = js.constructorOf[typings.reactDashSelect.srcComponentsIndicatorsMod.DropdownIndicator].asInstanceOf[typings.react.reactMod.ComponentType[DropdownIndicatorProps[js.Any]]]
-  @scala.inline
-  def Fade: ComponentType[FadeProps] = js.constructorOf[typings.reactDashSelect.srcAnimatedTransitionsMod.Fade].asInstanceOf[typings.react.reactMod.ComponentType[FadeProps]]
   @scala.inline
   def Group: ComponentType[GroupProps[js.Any]] = js.constructorOf[typings.reactDashSelect.srcComponentsGroupMod.default].asInstanceOf[typings.react.reactMod.ComponentType[GroupProps[js.Any]]]
   @scala.inline

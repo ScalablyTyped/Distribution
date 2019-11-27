@@ -3,6 +3,7 @@ package typings.victory.victoryMod
 import typings.react.reactMod.ReactElement
 import typings.victory.Anon_AxisAxisLabel
 import typings.victory.Anon_XYD3Scale
+import typings.victory.Anon_XYNumberOptional
 import typings.victory.victoryStrings.axis
 import typings.victory.victoryStrings.axisLabel
 import typings.victory.victoryStrings.bottom
@@ -217,7 +218,7 @@ trait VictoryAxisProps extends VictoryCommonProps {
 object VictoryAxisProps {
   @scala.inline
   def apply(
-    animate: AnimatePropTypeInterface = null,
+    animate: Boolean | AnimatePropTypeInterface = null,
     axisComponent: ReactElement = null,
     axisLabelComponent: ReactElement = null,
     axisValue: Double | String | js.Object = null,
@@ -235,6 +236,8 @@ object VictoryAxisProps {
     horizontal: js.UndefOr[Boolean] = js.undefined,
     invertAxis: js.UndefOr[Boolean] = js.undefined,
     label: js.Any = null,
+    maxDomain: Double | Anon_XYNumberOptional = null,
+    minDomain: Double | Anon_XYNumberOptional = null,
     name: String = null,
     offsetX: Int | Double = null,
     offsetY: Int | Double = null,
@@ -268,6 +271,8 @@ object VictoryAxisProps {
     if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
     if (!js.isUndefined(invertAxis)) __obj.updateDynamic("invertAxis")(invertAxis.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (maxDomain != null) __obj.updateDynamic("maxDomain")(maxDomain.asInstanceOf[js.Any])
+    if (minDomain != null) __obj.updateDynamic("minDomain")(minDomain.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
     if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])

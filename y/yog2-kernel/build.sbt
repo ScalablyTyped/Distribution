@@ -1,23 +1,23 @@
 organization := "org.scalablytyped"
 name := "yog2-kernel"
-version := "1.9-dt-20190312Z-70d620"
+version := "1.9-dt-20190312Z-b6851f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-9b6106",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-ec07f0",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-13b33a",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-da006c",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20191118Z-536bad",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-e84c0f",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191125Z-959704",
-  "org.scalablytyped" %%% "node-ral" % "0.18-dt-20181121Z-9cc2ae",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-f180da",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-d03b6a",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-d92710",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-4d11bc",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20191126Z-847d1b",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-12c9b7",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
+  "org.scalablytyped" %%% "node-ral" % "0.18-dt-20181121Z-1a4fb7",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-1b75dd",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-335844",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-4ff83c",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
-  "org.scalablytyped" %%% "yog-bigpipe" % "0.4-dt-20190819Z-b4f712",
-  "org.scalablytyped" %%% "yog-log" % "0.1-dt-20181121Z-df3ce1")
+  "org.scalablytyped" %%% "yog-bigpipe" % "0.4-dt-20190819Z-9be3d6",
+  "org.scalablytyped" %%% "yog-log" % "0.1-dt-20181121Z-010bf9")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

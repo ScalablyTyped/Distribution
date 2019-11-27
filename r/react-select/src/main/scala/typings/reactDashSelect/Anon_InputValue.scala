@@ -11,7 +11,7 @@ trait Anon_InputValue extends js.Object {
 object Anon_InputValue {
   @scala.inline
   def apply(inputValue: String): Anon_InputValue = {
-    val __obj = js.Dynamic.literal(inputValue = inputValue)
+    val __obj = js.Dynamic.literal(inputValue = inputValue.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_InputValue]
   }

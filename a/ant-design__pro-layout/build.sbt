@@ -1,22 +1,21 @@
 organization := "org.scalablytyped"
 name := "ant-design__pro-layout"
-version := "4.8.1-db929d"
+version := "4.8.3-db00c9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ant-design__create-react-context" % "0.2.4-771b3c",
-  "org.scalablytyped" %%% "antd" % "3.25.3-ce5222",
+  "org.scalablytyped" %%% "ant-design__create-react-context" % "0.2.4-08cf97",
+  "org.scalablytyped" %%% "antd" % "3.25.3-f105d3",
   "org.scalablytyped" %%% "csstype" % "2.6.6-a93afc",
-  "org.scalablytyped" %%% "history" % "4.7.2-dt-20190822Z-4ceb2f",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20191118Z-536bad",
+  "org.scalablytyped" %%% "history" % "4.7.2-dt-20191126Z-410aca",
   "org.scalablytyped" %%% "moment" % "2.24.0-534f7e",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-5cddf8",
-  "org.scalablytyped" %%% "rc-mentions" % "0.4.1-286037",
-  "org.scalablytyped" %%% "rc-menu" % "7.5.3-510e19",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191123Z-d1d56f",
-  "org.scalablytyped" %%% "react-router" % "5.1-dt-20191113Z-133303",
-  "org.scalablytyped" %%% "react-slick" % "0.23-dt-20190503Z-375117",
+  "org.scalablytyped" %%% "rc-mentions" % "0.4.1-841142",
+  "org.scalablytyped" %%% "rc-menu" % "7.5.3-ddd86b",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-0aa2c4",
+  "org.scalablytyped" %%% "react-router" % "5.1-dt-20191126Z-944aec",
+  "org.scalablytyped" %%% "react-slick" % "0.23-dt-20190503Z-debde2",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

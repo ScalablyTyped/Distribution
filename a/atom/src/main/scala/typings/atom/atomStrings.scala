@@ -272,9 +272,6 @@ object atomStrings {
   sealed trait fatal extends js.Object
   
   @js.native
-  sealed trait file extends js.Object
-  
-  @js.native
   sealed trait focus extends js.Object
   
   @js.native
@@ -405,9 +402,6 @@ object atomStrings {
   
   @js.native
   sealed trait poll extends js.Object
-  
-  @js.native
-  sealed trait project extends js.Object
   
   @js.native
   sealed trait question extends js.Object
@@ -679,8 +673,6 @@ object atomStrings {
   @scala.inline
   def fatal: fatal = "fatal".asInstanceOf[fatal]
   @scala.inline
-  def file: file = "file".asInstanceOf[file]
-  @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
   @scala.inline
   def forward: forward = "forward".asInstanceOf[forward]
@@ -768,8 +760,6 @@ object atomStrings {
   def overlay: overlay = "overlay".asInstanceOf[overlay]
   @scala.inline
   def poll: poll = "poll".asInstanceOf[poll]
-  @scala.inline
-  def project: project = "project".asInstanceOf[project]
   @scala.inline
   def question: question = "question".asInstanceOf[question]
   @scala.inline

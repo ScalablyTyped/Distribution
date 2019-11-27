@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ActionHandler
   extends TopLevel[
-      typings.atEmberObject.mixinMod.default[
-        typings.atEmberObject.dashPrivateActionDashHandlerMod.ActionHandler, 
-        typings.atEmberObject.atEmberObjectMod.default
-      ]
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EmberActionHandler */ js.Any
     ]
 

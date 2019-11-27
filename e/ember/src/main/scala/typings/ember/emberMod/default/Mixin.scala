@@ -4,8 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ember", "Mixin")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberMixin<T, Base> * / any */ @JSImport("ember", "Mixin")
 @js.native
-class Mixin[T, Base] ()
-  extends typings.atEmberObject.mixinMod.default[T, Base]
+class Mixin[T, Base] () extends js.Object
 

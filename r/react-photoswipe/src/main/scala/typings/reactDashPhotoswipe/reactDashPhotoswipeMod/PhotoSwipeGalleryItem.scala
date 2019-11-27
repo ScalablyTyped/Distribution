@@ -1,6 +1,6 @@
 package typings.reactDashPhotoswipe.reactDashPhotoswipeMod
 
-import typings.photoswipe.Anon_BottomTop
+import typings.photoswipe.Anon_Bottom
 import typings.photoswipe.photoswipeMod.Item
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +23,7 @@ object PhotoSwipeGalleryItem {
     initialZoomLevel: Int | Double = null,
     loadError: js.UndefOr[Boolean] = js.undefined,
     msrc: String = null,
-    vGap: Anon_BottomTop = null
+    vGap: Anon_Bottom = null
   ): PhotoSwipeGalleryItem = {
     val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])

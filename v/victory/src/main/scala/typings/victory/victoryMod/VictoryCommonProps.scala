@@ -2,6 +2,7 @@ package typings.victory.victoryMod
 
 import typings.react.reactMod.ReactElement
 import typings.victory.Anon_XYD3Scale
+import typings.victory.Anon_XYNumberOptional
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,9 +16,9 @@ trait VictoryCommonProps extends js.Object {
     * The animate prop should also be used to specify enter and exit
     * transition configurations with the `onExit` and `onEnter` namespaces respectively.
     * @example
-    * {duration: 500, onExit: () => {}, onEnter: {duration: 500, before: () => ({y: 0})})}
+    * {duration: 500, onExit: () => {}, onEnter: {duration: 500, before: () => ({y: 0})}}
     */
-  var animate: js.UndefOr[AnimatePropTypeInterface] = js.undefined
+  var animate: js.UndefOr[Boolean | AnimatePropTypeInterface] = js.undefined
   /**
     * The containerComponent prop takes an entire component which will be used to
     * create a container element for standalone charts.
@@ -53,6 +54,28 @@ trait VictoryCommonProps extends js.Object {
     * @default false
     */
   var horizontal: js.UndefOr[Boolean] = js.undefined
+  /**
+    * The maxDomain prop defines a maximum domain value for a chart. This prop is useful in
+    * situations where the maximum domain of a chart is static, while the minimum value
+    * depends on data or other variable information.
+    * If the domain prop is set in addition to maximumDomain, domain will be used.
+    *
+    * note: The x value supplied to the maxDomain prop refers to the independent variable,
+    * and the y value refers to the dependent variable. This may cause confusion in
+    * horizontal charts, as the independent variable will corresponds to the y axis.
+    */
+  var maxDomain: js.UndefOr[Double | Anon_XYNumberOptional] = js.undefined
+  /**
+    * The minDomain prop defines a minimum domain value for a chart. This prop is useful in
+    * situations where the minimum domain of a chart is static, while the maximum value
+    * depends on data or other variable information. If the domain prop is set in addition
+    * to minimumDomain, domain will be used.
+    *
+    * note: The x value supplied to the minDomain prop refers to the independent variable,
+    * and the y value refers to the dependent variable. This may cause confusion in
+    * horizontal charts, as the independent variable will corresponds to the y axis.
+    */
+  var minDomain: js.UndefOr[Double | Anon_XYNumberOptional] = js.undefined
   /**
     * The name prop is used to reference a component instance when defining shared events.
     */
@@ -100,11 +123,13 @@ trait VictoryCommonProps extends js.Object {
 object VictoryCommonProps {
   @scala.inline
   def apply(
-    animate: AnimatePropTypeInterface = null,
+    animate: Boolean | AnimatePropTypeInterface = null,
     containerComponent: ReactElement = null,
     groupComponent: ReactElement = null,
     height: Int | Double = null,
     horizontal: js.UndefOr[Boolean] = js.undefined,
+    maxDomain: Double | Anon_XYNumberOptional = null,
+    minDomain: Double | Anon_XYNumberOptional = null,
     name: String = null,
     padding: PaddingProps = null,
     scale: ScalePropType | D3Scale | Anon_XYD3Scale = null,
@@ -118,6 +143,8 @@ object VictoryCommonProps {
     if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (maxDomain != null) __obj.updateDynamic("maxDomain")(maxDomain.asInstanceOf[js.Any])
+    if (minDomain != null) __obj.updateDynamic("minDomain")(minDomain.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])

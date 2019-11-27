@@ -1,7 +1,6 @@
 package typings.atEmberApplication
 
 import typings.atEmberApplication.atEmberApplicationMod.Application
-import typings.atEmberApplication.typesMod.EventDispatcherEvents
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,21 +15,16 @@ object atEmberApplicationMod extends js.Object {
     /**
       * Application's router.
       */
-    var Router: typings.atEmberRouting.atEmberRoutingMod.Router = js.native
+    var Router: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Router */ js.Any = js.native
     /**
       * The DOM events for which the event dispatcher should listen.
       */
-    var customEvents: EventDispatcherEvents = js.native
+    var customEvents: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EventDispatcherEvents */ js.Any = js.native
     /**
       * The Ember.EventDispatcher responsible for delegating events to this application's views.
       */
-    var eventDispatcher: typings.atEmberApplication.dashPrivateEventDashDispatcherMod.default = js.native
-    var registry: typings.atEmberApplication.dashPrivateRegistryMod.default = js.native
-    /**
-      * Set this to provide an alternate class to Ember.DefaultResolver
-      */
-    @JSName("resolver")
-    var resolver_Application: typings.atEmberApplication.dashPrivateDefaultDashResolverMod.default = js.native
+    var eventDispatcher: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EventDispatcher */ js.Any = js.native
+    var registry: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Registry */ js.Any = js.native
     /**
       * The root DOM element of the Application. This can be specified as an
       * element or a jQuery-compatible selector string.

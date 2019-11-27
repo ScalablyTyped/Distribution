@@ -18,13 +18,7 @@ object reactDashCalendarDashTimelineComponents extends reactDashCalendarDashTime
   @scala.inline
   def DateHeader[Data]: ComponentType[DateHeaderProps[Data]] = js.constructorOf[typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineMod.DateHeader[Data]].asInstanceOf[typings.react.reactMod.ComponentType[DateHeaderProps[Data]]]
   @scala.inline
-  def ReactDashCalendarDashTimeline: ComponentType[ReactDashCalendarDashTimelineProps[TimelineItemBase[js.Any], TimelineGroupBase]] = js.constructorOf[typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineMod.default[
-  typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineMod.TimelineItemBase[_], 
-  typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineMod.TimelineGroupBase]].asInstanceOf[typings.react.reactMod.ComponentType[
-  ReactDashCalendarDashTimelineProps[
-    typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineMod.TimelineItemBase[js.Any], 
-    typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineMod.TimelineGroupBase
-  ]]]
+  def ReactDashCalendarDashTimeline[CustomItem /* <: TimelineItemBase[js.Any] */, CustomGroup /* <: TimelineGroupBase */]: ComponentType[ReactDashCalendarDashTimelineProps[CustomItem, CustomGroup]] = js.constructorOf[typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineMod.default[CustomItem, CustomGroup]].asInstanceOf[typings.react.reactMod.ComponentType[ReactDashCalendarDashTimelineProps[CustomItem, CustomGroup]]]
   @scala.inline
   def SidebarHeader[Data]: ComponentType[SidebarHeaderProps[Data]] = js.constructorOf[typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineMod.SidebarHeader[Data]].asInstanceOf[typings.react.reactMod.ComponentType[SidebarHeaderProps[Data]]]
   @scala.inline

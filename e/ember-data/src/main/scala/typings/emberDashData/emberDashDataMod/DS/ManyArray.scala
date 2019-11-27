@@ -1,6 +1,5 @@
 package typings.emberDashData.emberDashDataMod.DS
 
-import typings.atEmberArray.mutableMod.MutableArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,9 +9,10 @@ import scala.scalajs.js.annotation._
   * relationship.
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: parser.TsParser#tsDeclClass functionCall $anonfun class extends from : Ember.Object.extend(Ember.MutableArray as object, Ember.Evented) * / any */ @JSImport("ember-data", "DS.ManyArray")
+- Dropped / * import warning: parser.TsParser#tsDeclClass functionCall $anonfun class extends from : Ember.Object.extend(Ember.MutableArray as object, Ember.Evented) * / any
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberMutableArray<T> * / any */ @JSImport("ember-data", "DS.ManyArray")
 @js.native
-class ManyArray[T] () extends MutableArray[T] {
+class ManyArray[T] () extends js.Object {
   /**
     * The loading state of this array
     */

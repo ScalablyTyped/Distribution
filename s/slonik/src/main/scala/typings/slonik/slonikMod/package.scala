@@ -13,7 +13,7 @@ package object slonikMod {
   import typings.std.Parameters
   import typings.std.Record
 
-  type ClientUserConfigurationType = ClientConfigurationType
+  type ClientConfigurationInputType = ClientConfigurationType
   type ConnectionRoutineType[T] = js.Function1[/* connection */ DatabasePoolConnectionType, js.Promise[T]]
   type DatabaseConfigurationType = String | Anon_Database
   type DatabaseConnectionType = DatabasePoolConnectionType with DatabasePoolType
@@ -25,7 +25,6 @@ package object slonikMod {
   type MaybePromiseType[T] = T | js.Promise[T]
   type NamedAssignmentType = Record[String, ValueExpressionType]
   type NamedParameterValuesType = Record[String, ValueExpressionType]
-  type PositionalParameterValuesType = js.Array[ValueExpressionType]
   type PrimitiveValueExpressionType = String | Double | Boolean | Null | PrimitiveValueExpressionTypeArray
   type QueryAnyFirstFunctionType = js.Function1[
     /* args */ QueryMethodParams[js.Any], 

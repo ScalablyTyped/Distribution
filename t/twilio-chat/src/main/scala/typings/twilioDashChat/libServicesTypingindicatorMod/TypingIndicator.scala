@@ -21,7 +21,6 @@ class TypingIndicator protected () extends js.Object {
   var sentUpdates: js.Any = js.native
   var serviceTypingTimeout: js.Any = js.native
   val services: js.Any = js.native
-  val typingTimeout: Double = js.native
   /**
     * Remote members typing events handler
     * @private
@@ -38,5 +37,6 @@ class TypingIndicator protected () extends js.Object {
     * @param {String} channelSid
     */
   def send(channelSid: String): js.Any = js.native
+  def typingTimeout(): Double = js.native
 }
 

@@ -83,13 +83,10 @@ class Client_ protected () extends EventEmitter {
   var initialize: js.Any = js.native
   var options: js.Any = js.native
   var parsePushNotification: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Client.parsePushNotification */ js.Any = js.native
-  val reachabilityEnabled: Boolean = js.native
   var services: js.Any = js.native
   var sessionPromise: js.Any = js.native
   var subscribeToPushNotifications: js.Any = js.native
-  val token: String = js.native
   var unsubscribeFromPushNotifications: js.Any = js.native
-  val user: typings.twilioDashChat.libUserMod.User = js.native
   val version: String = js.native
   /**
     * Create a Channel on the server and subscribe to its events.
@@ -160,6 +157,7 @@ class Client_ protected () extends EventEmitter {
     * @returns {void|Error}
     */
   def handlePushNotification(notificationPayload: js.Any): js.Promise[Unit] = js.native
+  def reachabilityEnabled(): Boolean = js.native
   /**
     * Registers for push notifications.
     * @param {Client#NotificationsChannelType} channelType - 'gcm', 'apn' and 'fcm' are supported
@@ -173,6 +171,7 @@ class Client_ protected () extends EventEmitter {
     * @returns {Promise<void>}
     */
   def shutdown(): js.Promise[Unit] = js.native
+  def token(): String = js.native
   /**
     * Unregisters from push notifications.
     * @param {Client#NotificationsChannelType} channelType - 'gcm', 'apn' and 'fcm' are supported
@@ -186,5 +185,6 @@ class Client_ protected () extends EventEmitter {
     * @returns {Promise<Client>}
     */
   def updateToken(token: String): js.Promise[Client] = js.native
+  def user(): typings.twilioDashChat.libUserMod.User = js.native
 }
 

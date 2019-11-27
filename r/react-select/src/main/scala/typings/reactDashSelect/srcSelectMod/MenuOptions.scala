@@ -13,7 +13,7 @@ trait MenuOptions[OptionType /* <: OptionTypeBase */] extends js.Object {
 object MenuOptions {
   @scala.inline
   def apply[OptionType /* <: OptionTypeBase */](focusable: js.Array[OptionType], render: js.Array[OptionType]): MenuOptions[OptionType] = {
-    val __obj = js.Dynamic.literal(focusable = focusable, render = render)
+    val __obj = js.Dynamic.literal(focusable = focusable.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MenuOptions[OptionType]]
   }

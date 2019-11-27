@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ffmpeg_dot_js"
-version := "3.1-dt-20191119Z-b4f3bf"
+version := "3.1-dt-20191126Z-a570a4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

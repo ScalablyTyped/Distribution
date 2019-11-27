@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-webrtc
 
-Typings are for version 1.69
+Typings are for version 1.75
 
 ## Library description:
 WebRTC for React Native

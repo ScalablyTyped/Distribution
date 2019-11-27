@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation._
 
 object atAntDashDesignReactDashNativeComponents extends atAntDashDesignReactDashNativeProps {
   @scala.inline
-  def Accordion: ComponentType[AccordionProps[AccordionHeader]] = js.constructorOf[typings.atAntDashDesignReactDashNative.esAccordionMod.default[typings.atAntDashDesignReactDashNative.esAccordionMod.AccordionHeader]].asInstanceOf[typings.react.reactMod.ComponentType[
-  AccordionProps[typings.atAntDashDesignReactDashNative.esAccordionMod.AccordionHeader]]]
+  def Accordion[T /* <: AccordionHeader */]: ComponentType[AccordionProps[T]] = js.constructorOf[typings.atAntDashDesignReactDashNative.esAccordionMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[AccordionProps[T]]]
   @scala.inline
   def ActivityDashIndicator: ComponentType[ActivityDashIndicatorProps] = js.constructorOf[typings.atAntDashDesignReactDashNative.esActivityDashIndicatorMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ActivityDashIndicatorProps]]
   @scala.inline

@@ -35,14 +35,7 @@ class User_ protected () extends EventEmitter {
     * @typedef {('friendlyName' | 'attributes' | 'online' | 'notifiable')} User#UpdateReason
     */
   def this(identity: String, entityName: String, services: UserServices) = this()
-  val attributes: js.Object = js.native
   var entity: js.Any = js.native
-  var entityName: String = js.native
-  val friendlyName: String = js.native
-  var identity: String = js.native
-  val isSubscribed: Boolean = js.native
-  val notifiable: Boolean = js.native
-  val online: Boolean = js.native
   var promiseToFetch: js.Any = js.native
   var services: js.Any = js.native
   var state: js.Any = js.native
@@ -51,6 +44,14 @@ class User_ protected () extends EventEmitter {
   def _fetch(): js.Promise[User] = js.native
   def _update(key: String, value: js.Any): Unit = js.native
   def _updateReachabilityInfo(map: js.Any, update: js.Any): js.Any = js.native
+  def attributes(): js.Object = js.native
+  def entityName(name: String): js.Any = js.native
+  def friendlyName(): String = js.native
+  def identity(): String = js.native
+  def identity(identity: String): js.Any = js.native
+  def isSubscribed(): Boolean = js.native
+  def notifiable(): Boolean = js.native
+  def online(): Boolean = js.native
   /**
     * Removes User from subscription list.
     * @returns {Promise<void>} Promise of completion

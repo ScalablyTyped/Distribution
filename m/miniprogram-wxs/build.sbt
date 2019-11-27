@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "miniprogram-wxs"
-version := "2.6-dt-20190617Z-7cb293"
+version := "2.6-dt-20191126Z-7cb293"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

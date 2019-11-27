@@ -54,10 +54,6 @@ trait ICommAngularStatic extends js.Object {
   		 */
   def debug(enableDebug: Boolean): Unit = js.native
   /**
-  		 * Mock dispatch function for testing commands.
-  		 */
-  def dispatch(ec: ICommandCall, callback: js.Function): Unit = js.native
-  /**
   		 * Event aspects work the same way command aspects do, but they intercept all the command groups instead,
   		 * so you can run some function before the command group starts it's execution , after or when any
   		 * command or interceptor in the group throw an exception.

@@ -13,9 +13,6 @@ object novncDashCoreStrings {
   sealed trait connecting extends NvConnectionState
   
   @js.native
-  sealed trait debug extends js.Object
-  
-  @js.native
   sealed trait disconnected extends NvConnectionState
   
   @js.native
@@ -23,12 +20,6 @@ object novncDashCoreStrings {
   
   @js.native
   sealed trait error extends js.Object
-  
-  @js.native
-  sealed trait info extends js.Object
-  
-  @js.native
-  sealed trait none extends js.Object
   
   @js.native
   sealed trait normal extends js.Object
@@ -41,17 +32,11 @@ object novncDashCoreStrings {
   @scala.inline
   def connecting: connecting = "connecting".asInstanceOf[connecting]
   @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
   def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
   @scala.inline
   def disconnecting: disconnecting = "disconnecting".asInstanceOf[disconnecting]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline

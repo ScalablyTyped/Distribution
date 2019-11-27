@@ -11,27 +11,9 @@ import scala.scalajs.js.annotation._
 @JSImport("ember", "Ember.Test")
 @js.native
 object Test extends js.Object {
-  @js.native
-  class Adapter ()
-    extends typings.atEmberTest.adapterMod.Adapter {
-    /**
-      * This callback will be called whenever an async operation has completed.
-      */
-    /* CompleteClass */
-    override def asyncEnd(): js.Any = js.native
-    /**
-      * This callback will be called whenever an async operation is about to start.
-      */
-    /* CompleteClass */
-    override def asyncStart(): js.Any = js.native
-    /**
-      * Override this method with your testing framework's false assertion.
-      * This function is called whenever an exception occurs causing the testing
-      * promise to fail.
-      */
-    /* CompleteClass */
-    override def exception(error: java.lang.String): js.Any = js.native
-  }
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberTestAdapter * / any */ @js.native
+  class Adapter () extends js.Object
   
   @js.native
   class Promise[T] protected ()
@@ -47,33 +29,15 @@ object Test extends js.Object {
     * This class implements the methods defined by Ember.Test.Adapter for the
     * QUnit testing framework.
     */
-  @js.native
-  class QUnitAdapter ()
-    extends typings.atEmberTest.adapterMod.Adapter {
-    /**
-      * This callback will be called whenever an async operation has completed.
-      */
-    /* CompleteClass */
-    override def asyncEnd(): js.Any = js.native
-    /**
-      * This callback will be called whenever an async operation is about to start.
-      */
-    /* CompleteClass */
-    override def asyncStart(): js.Any = js.native
-    /**
-      * Override this method with your testing framework's false assertion.
-      * This function is called whenever an exception occurs causing the testing
-      * promise to fail.
-      */
-    /* CompleteClass */
-    override def exception(error: java.lang.String): js.Any = js.native
-  }
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberTestAdapter * / any */ @js.native
+  class QUnitAdapter () extends js.Object
   
   /**
     * Used to allow ember-testing to communicate with a specific testing
     * framework.
     */
-  val adapter: typings.atEmberTest.adapterMod.default = js.native
+  val adapter: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberTestAdapter */ js.Any = js.native
   val registerAsyncHelper: js.Function2[
     /* name */ java.lang.String, 
     /* helperMethod */ js.Function2[

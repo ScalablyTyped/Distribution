@@ -13,8 +13,8 @@ trait GroupType[OptionType /* <: OptionTypeBase */]
 object GroupType {
   @scala.inline
   def apply[OptionType /* <: OptionTypeBase */](options: OptionsType[OptionType], StringDictionary: /* key */ StringDictionary[js.Any] = null): GroupType[OptionType] = {
-    val __obj = js.Dynamic.literal(options = options)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[GroupType[OptionType]]
   }
 }

@@ -3,7 +3,6 @@ package typings.reduxDashRouter
 import typings.reactDashRouter.reactDashRouterMod.MemoryRouterProps
 import typings.reactDashRouter.reactDashRouterMod.PromptProps
 import typings.reactDashRouter.reactDashRouterMod.RedirectProps
-import typings.reactDashRouter.reactDashRouterMod.RouteProps
 import typings.reactDashRouter.reactDashRouterMod.RouterProps
 import typings.reactDashRouter.reactDashRouterMod.StaticRouterProps
 import typings.reactDashRouter.reactDashRouterMod.SwitchProps
@@ -21,9 +20,6 @@ trait reduxDashRouterProps {
   @scala.inline
   def ReduxRouterRedirectProps: RedirectProps.type = typings.reactDashRouter.reactDashRouterMod.RedirectProps
   type ReduxRouterRedirectProps = RedirectProps
-  @scala.inline
-  def ReduxRouterRouteProps: RouteProps.type = typings.reactDashRouter.reactDashRouterMod.RouteProps
-  type ReduxRouterRouteProps = RouteProps
   @scala.inline
   def ReduxRouterRouterProps: RouterProps.type = typings.reactDashRouter.reactDashRouterMod.RouterProps
   type ReduxRouterRouterProps = RouterProps

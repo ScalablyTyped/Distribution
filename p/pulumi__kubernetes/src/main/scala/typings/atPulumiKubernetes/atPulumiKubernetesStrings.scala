@@ -315,7 +315,7 @@ object atPulumiKubernetesStrings {
   sealed trait action extends js.Object
   
   @js.native
-  sealed trait address_type extends js.Object
+  sealed trait addressType extends js.Object
   
   @js.native
   sealed trait `admissionregistrationDOTk8sDOTio/v1` extends js.Object
@@ -348,16 +348,16 @@ object atPulumiKubernetesStrings {
   sealed trait `admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfigurationList` extends js.Object
   
   @js.native
-  sealed trait aggregation_rule extends js.Object
+  sealed trait aggregationRule extends js.Object
   
   @js.native
-  sealed trait allow_volume_expansion extends js.Object
+  sealed trait allowVolumeExpansion extends js.Object
   
   @js.native
-  sealed trait allowed_topologies extends js.Object
+  sealed trait allowedTopologies extends js.Object
   
   @js.native
-  sealed trait api_version extends js.Object
+  sealed trait apiVersion extends js.Object
   
   @js.native
   sealed trait `apiextensionsDOTk8sDOTio/v1` extends js.Object
@@ -549,7 +549,7 @@ object atPulumiKubernetesStrings {
   sealed trait `authorizationDOTk8sDOTio/v1beta1/SubjectAccessReview` extends js.Object
   
   @js.native
-  sealed trait automount_service_account_token extends js.Object
+  sealed trait automountServiceAccountToken extends js.Object
   
   @js.native
   sealed trait `autoscaling/v1` extends js.Object
@@ -606,7 +606,7 @@ object atPulumiKubernetesStrings {
   sealed trait `batch/v2alpha1/CronJobList` extends js.Object
   
   @js.native
-  sealed trait binary_data extends js.Object
+  sealed trait binaryData extends js.Object
   
   @js.native
   sealed trait `certificatesDOTk8sDOTio/v1beta1` extends js.Object
@@ -648,16 +648,16 @@ object atPulumiKubernetesStrings {
   sealed trait data extends js.Object
   
   @js.native
-  sealed trait deprecated_count extends js.Object
+  sealed trait deprecatedCount extends js.Object
   
   @js.native
-  sealed trait deprecated_first_timestamp extends js.Object
+  sealed trait deprecatedFirstTimestamp extends js.Object
   
   @js.native
-  sealed trait deprecated_last_timestamp extends js.Object
+  sealed trait deprecatedLastTimestamp extends js.Object
   
   @js.native
-  sealed trait deprecated_source extends js.Object
+  sealed trait deprecatedSource extends js.Object
   
   @js.native
   sealed trait description extends js.Object
@@ -678,7 +678,7 @@ object atPulumiKubernetesStrings {
   sealed trait endpoints_ extends js.Object
   
   @js.native
-  sealed trait event_time extends js.Object
+  sealed trait eventTime extends js.Object
   
   @js.native
   sealed trait `eventsDOTk8sDOTio/v1beta1` extends js.Object
@@ -729,19 +729,19 @@ object atPulumiKubernetesStrings {
   sealed trait `extensions/v1beta1/ReplicaSetList` extends js.Object
   
   @js.native
-  sealed trait first_timestamp extends js.Object
+  sealed trait firstTimestamp extends js.Object
   
   @js.native
-  sealed trait global_default extends js.Object
+  sealed trait globalDefault extends js.Object
   
   @js.native
   sealed trait handler extends js.Object
   
   @js.native
-  sealed trait image_pull_secrets extends js.Object
+  sealed trait imagePullSecrets extends js.Object
   
   @js.native
-  sealed trait involved_object extends js.Object
+  sealed trait involvedObject extends js.Object
   
   @js.native
   sealed trait items extends js.Object
@@ -750,7 +750,7 @@ object atPulumiKubernetesStrings {
   sealed trait kind extends js.Object
   
   @js.native
-  sealed trait last_timestamp extends js.Object
+  sealed trait lastTimestamp extends js.Object
   
   @js.native
   sealed trait message extends js.Object
@@ -759,7 +759,7 @@ object atPulumiKubernetesStrings {
   sealed trait metadata extends js.Object
   
   @js.native
-  sealed trait mount_options extends js.Object
+  sealed trait mountOptions extends js.Object
   
   @js.native
   sealed trait `networkingDOTk8sDOTio/v1` extends js.Object
@@ -825,7 +825,7 @@ object atPulumiKubernetesStrings {
   sealed trait ports extends js.Object
   
   @js.native
-  sealed trait preemption_policy extends js.Object
+  sealed trait preemptionPolicy extends js.Object
   
   @js.native
   sealed trait provisioner extends js.Object
@@ -915,7 +915,7 @@ object atPulumiKubernetesStrings {
   sealed trait reason extends js.Object
   
   @js.native
-  sealed trait reclaim_policy extends js.Object
+  sealed trait reclaimPolicy extends js.Object
   
   @js.native
   sealed trait regarding extends js.Object
@@ -924,19 +924,19 @@ object atPulumiKubernetesStrings {
   sealed trait related extends js.Object
   
   @js.native
-  sealed trait reporting_component extends js.Object
+  sealed trait reportingComponent extends js.Object
   
   @js.native
-  sealed trait reporting_controller extends js.Object
+  sealed trait reportingController extends js.Object
   
   @js.native
-  sealed trait reporting_instance extends js.Object
+  sealed trait reportingInstance extends js.Object
   
   @js.native
   sealed trait revision extends js.Object
   
   @js.native
-  sealed trait role_ref extends js.Object
+  sealed trait roleRef extends js.Object
   
   @js.native
   sealed trait rules extends js.Object
@@ -1047,7 +1047,7 @@ object atPulumiKubernetesStrings {
   sealed trait `storageDOTk8sDOTio/v1beta1/VolumeAttachmentList` extends js.Object
   
   @js.native
-  sealed trait string_data extends js.Object
+  sealed trait stringData extends js.Object
   
   @js.native
   sealed trait subjects extends js.Object
@@ -1173,7 +1173,7 @@ object atPulumiKubernetesStrings {
   sealed trait value extends js.Object
   
   @js.native
-  sealed trait volume_binding_mode extends js.Object
+  sealed trait volumeBindingMode extends js.Object
   
   @js.native
   sealed trait webhooks extends js.Object
@@ -1385,7 +1385,7 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def action: action = "action".asInstanceOf[action]
   @scala.inline
-  def address_type: address_type = "address_type".asInstanceOf[address_type]
+  def addressType: addressType = "addressType".asInstanceOf[addressType]
   @scala.inline
   def `admissionregistrationDOTk8sDOTio/v1`: `admissionregistrationDOTk8sDOTio/v1` = "admissionregistration.k8s.io/v1".asInstanceOf[`admissionregistrationDOTk8sDOTio/v1`]
   @scala.inline
@@ -1407,13 +1407,13 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def `admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfigurationList`: `admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfigurationList` = "admissionregistration.k8s.io/v1beta1/ValidatingWebhookConfigurationList".asInstanceOf[`admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfigurationList`]
   @scala.inline
-  def aggregation_rule: aggregation_rule = "aggregation_rule".asInstanceOf[aggregation_rule]
+  def aggregationRule: aggregationRule = "aggregationRule".asInstanceOf[aggregationRule]
   @scala.inline
-  def allow_volume_expansion: allow_volume_expansion = "allow_volume_expansion".asInstanceOf[allow_volume_expansion]
+  def allowVolumeExpansion: allowVolumeExpansion = "allowVolumeExpansion".asInstanceOf[allowVolumeExpansion]
   @scala.inline
-  def allowed_topologies: allowed_topologies = "allowed_topologies".asInstanceOf[allowed_topologies]
+  def allowedTopologies: allowedTopologies = "allowedTopologies".asInstanceOf[allowedTopologies]
   @scala.inline
-  def api_version: api_version = "api_version".asInstanceOf[api_version]
+  def apiVersion: apiVersion = "apiVersion".asInstanceOf[apiVersion]
   @scala.inline
   def `apiextensionsDOTk8sDOTio/v1`: `apiextensionsDOTk8sDOTio/v1` = "apiextensions.k8s.io/v1".asInstanceOf[`apiextensionsDOTk8sDOTio/v1`]
   @scala.inline
@@ -1541,7 +1541,7 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def `authorizationDOTk8sDOTio/v1beta1/SubjectAccessReview`: `authorizationDOTk8sDOTio/v1beta1/SubjectAccessReview` = "authorization.k8s.io/v1beta1/SubjectAccessReview".asInstanceOf[`authorizationDOTk8sDOTio/v1beta1/SubjectAccessReview`]
   @scala.inline
-  def automount_service_account_token: automount_service_account_token = "automount_service_account_token".asInstanceOf[automount_service_account_token]
+  def automountServiceAccountToken: automountServiceAccountToken = "automountServiceAccountToken".asInstanceOf[automountServiceAccountToken]
   @scala.inline
   def `autoscaling/v1`: `autoscaling/v1` = "autoscaling/v1".asInstanceOf[`autoscaling/v1`]
   @scala.inline
@@ -1579,7 +1579,7 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def `batch/v2alpha1/CronJobList`: `batch/v2alpha1/CronJobList` = "batch/v2alpha1/CronJobList".asInstanceOf[`batch/v2alpha1/CronJobList`]
   @scala.inline
-  def binary_data: binary_data = "binary_data".asInstanceOf[binary_data]
+  def binaryData: binaryData = "binaryData".asInstanceOf[binaryData]
   @scala.inline
   def `certificatesDOTk8sDOTio/v1beta1`: `certificatesDOTk8sDOTio/v1beta1` = "certificates.k8s.io/v1beta1".asInstanceOf[`certificatesDOTk8sDOTio/v1beta1`]
   @scala.inline
@@ -1607,13 +1607,13 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def data: data = "data".asInstanceOf[data]
   @scala.inline
-  def deprecated_count: deprecated_count = "deprecated_count".asInstanceOf[deprecated_count]
+  def deprecatedCount: deprecatedCount = "deprecatedCount".asInstanceOf[deprecatedCount]
   @scala.inline
-  def deprecated_first_timestamp: deprecated_first_timestamp = "deprecated_first_timestamp".asInstanceOf[deprecated_first_timestamp]
+  def deprecatedFirstTimestamp: deprecatedFirstTimestamp = "deprecatedFirstTimestamp".asInstanceOf[deprecatedFirstTimestamp]
   @scala.inline
-  def deprecated_last_timestamp: deprecated_last_timestamp = "deprecated_last_timestamp".asInstanceOf[deprecated_last_timestamp]
+  def deprecatedLastTimestamp: deprecatedLastTimestamp = "deprecatedLastTimestamp".asInstanceOf[deprecatedLastTimestamp]
   @scala.inline
-  def deprecated_source: deprecated_source = "deprecated_source".asInstanceOf[deprecated_source]
+  def deprecatedSource: deprecatedSource = "deprecatedSource".asInstanceOf[deprecatedSource]
   @scala.inline
   def description: description = "description".asInstanceOf[description]
   @scala.inline
@@ -1627,7 +1627,7 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def endpoints_ : endpoints_ = "endpoints".asInstanceOf[endpoints_]
   @scala.inline
-  def event_time: event_time = "event_time".asInstanceOf[event_time]
+  def eventTime: eventTime = "eventTime".asInstanceOf[eventTime]
   @scala.inline
   def `eventsDOTk8sDOTio/v1beta1`: `eventsDOTk8sDOTio/v1beta1` = "events.k8s.io/v1beta1".asInstanceOf[`eventsDOTk8sDOTio/v1beta1`]
   @scala.inline
@@ -1661,27 +1661,27 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def `extensions/v1beta1/ReplicaSetList`: `extensions/v1beta1/ReplicaSetList` = "extensions/v1beta1/ReplicaSetList".asInstanceOf[`extensions/v1beta1/ReplicaSetList`]
   @scala.inline
-  def first_timestamp: first_timestamp = "first_timestamp".asInstanceOf[first_timestamp]
+  def firstTimestamp: firstTimestamp = "firstTimestamp".asInstanceOf[firstTimestamp]
   @scala.inline
-  def global_default: global_default = "global_default".asInstanceOf[global_default]
+  def globalDefault: globalDefault = "globalDefault".asInstanceOf[globalDefault]
   @scala.inline
   def handler: handler = "handler".asInstanceOf[handler]
   @scala.inline
-  def image_pull_secrets: image_pull_secrets = "image_pull_secrets".asInstanceOf[image_pull_secrets]
+  def imagePullSecrets: imagePullSecrets = "imagePullSecrets".asInstanceOf[imagePullSecrets]
   @scala.inline
-  def involved_object: involved_object = "involved_object".asInstanceOf[involved_object]
+  def involvedObject: involvedObject = "involvedObject".asInstanceOf[involvedObject]
   @scala.inline
   def items: items = "items".asInstanceOf[items]
   @scala.inline
   def kind: kind = "kind".asInstanceOf[kind]
   @scala.inline
-  def last_timestamp: last_timestamp = "last_timestamp".asInstanceOf[last_timestamp]
+  def lastTimestamp: lastTimestamp = "lastTimestamp".asInstanceOf[lastTimestamp]
   @scala.inline
   def message: message = "message".asInstanceOf[message]
   @scala.inline
   def metadata: metadata = "metadata".asInstanceOf[metadata]
   @scala.inline
-  def mount_options: mount_options = "mount_options".asInstanceOf[mount_options]
+  def mountOptions: mountOptions = "mountOptions".asInstanceOf[mountOptions]
   @scala.inline
   def `networkingDOTk8sDOTio/v1`: `networkingDOTk8sDOTio/v1` = "networking.k8s.io/v1".asInstanceOf[`networkingDOTk8sDOTio/v1`]
   @scala.inline
@@ -1725,7 +1725,7 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def ports: ports = "ports".asInstanceOf[ports]
   @scala.inline
-  def preemption_policy: preemption_policy = "preemption_policy".asInstanceOf[preemption_policy]
+  def preemptionPolicy: preemptionPolicy = "preemptionPolicy".asInstanceOf[preemptionPolicy]
   @scala.inline
   def provisioner: provisioner = "provisioner".asInstanceOf[provisioner]
   @scala.inline
@@ -1785,21 +1785,21 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def reason: reason = "reason".asInstanceOf[reason]
   @scala.inline
-  def reclaim_policy: reclaim_policy = "reclaim_policy".asInstanceOf[reclaim_policy]
+  def reclaimPolicy: reclaimPolicy = "reclaimPolicy".asInstanceOf[reclaimPolicy]
   @scala.inline
   def regarding: regarding = "regarding".asInstanceOf[regarding]
   @scala.inline
   def related: related = "related".asInstanceOf[related]
   @scala.inline
-  def reporting_component: reporting_component = "reporting_component".asInstanceOf[reporting_component]
+  def reportingComponent: reportingComponent = "reportingComponent".asInstanceOf[reportingComponent]
   @scala.inline
-  def reporting_controller: reporting_controller = "reporting_controller".asInstanceOf[reporting_controller]
+  def reportingController: reportingController = "reportingController".asInstanceOf[reportingController]
   @scala.inline
-  def reporting_instance: reporting_instance = "reporting_instance".asInstanceOf[reporting_instance]
+  def reportingInstance: reportingInstance = "reportingInstance".asInstanceOf[reportingInstance]
   @scala.inline
   def revision: revision = "revision".asInstanceOf[revision]
   @scala.inline
-  def role_ref: role_ref = "role_ref".asInstanceOf[role_ref]
+  def roleRef: roleRef = "roleRef".asInstanceOf[roleRef]
   @scala.inline
   def rules: rules = "rules".asInstanceOf[rules]
   @scala.inline
@@ -1873,7 +1873,7 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def `storageDOTk8sDOTio/v1beta1/VolumeAttachmentList`: `storageDOTk8sDOTio/v1beta1/VolumeAttachmentList` = "storage.k8s.io/v1beta1/VolumeAttachmentList".asInstanceOf[`storageDOTk8sDOTio/v1beta1/VolumeAttachmentList`]
   @scala.inline
-  def string_data: string_data = "string_data".asInstanceOf[string_data]
+  def stringData: stringData = "stringData".asInstanceOf[stringData]
   @scala.inline
   def subjects: subjects = "subjects".asInstanceOf[subjects]
   @scala.inline
@@ -1957,7 +1957,7 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def value: value = "value".asInstanceOf[value]
   @scala.inline
-  def volume_binding_mode: volume_binding_mode = "volume_binding_mode".asInstanceOf[volume_binding_mode]
+  def volumeBindingMode: volumeBindingMode = "volumeBindingMode".asInstanceOf[volumeBindingMode]
   @scala.inline
   def webhooks: webhooks = "webhooks".asInstanceOf[webhooks]
 }

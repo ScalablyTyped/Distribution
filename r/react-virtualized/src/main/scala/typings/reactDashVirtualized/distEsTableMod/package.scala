@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object distEsTableMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.react.reactMod.ReactNode
-  import typings.reactDashVirtualized.Anon_ArialabelAutoHeightChildren
+  import typings.reactDashVirtualized.Anon_ArialabelAutoHeight
   import typings.reactDashVirtualized.distEsGridMod.GridCoreProps
 
   type SortDirectionMap = StringDictionary[SortDirectionType]
@@ -15,6 +15,6 @@ package object distEsTableMod {
   type TableCellRenderer = js.Function1[/* props */ TableCellProps, ReactNode]
   type TableHeaderRenderer = js.Function1[/* props */ TableHeaderProps, ReactNode]
   type TableHeaderRowRenderer = js.Function1[/* props */ TableHeaderRowProps, ReactNode]
-  type TableProps = GridCoreProps with Anon_ArialabelAutoHeightChildren
+  type TableProps = GridCoreProps with Anon_ArialabelAutoHeight
   type TableRowRenderer = js.Function1[/* props */ TableRowProps, ReactNode]
 }

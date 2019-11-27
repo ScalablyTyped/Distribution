@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseModel[MatrixDropdownRowModelBase, MatrixDropdownColumn] {
   def this(name: String) = this()
-  val canRemoveRow: Boolean = js.native
+  val canRemoveRows: Boolean = js.native
   /**
     * Use this property to change the default cell type.
     */
@@ -57,6 +57,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
   val visibleTotalRow: MatrixDropdownRowModelBase = js.native
   def addColumn(name: String): MatrixDropdownColumn = js.native
   def addColumn(name: String, title: String): MatrixDropdownColumn = js.native
+  def canRemoveRow(row: MatrixDropdownRowModelBase): Boolean = js.native
   def columnLayoutChangedCallback(): Unit = js.native
   def columnsChangedCallback(): Unit = js.native
   /* protected */ def createNewValue(): js.Any = js.native

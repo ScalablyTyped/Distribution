@@ -261,11 +261,11 @@ object antdComponents extends antdProps {
   @scala.inline
   def Tree: ComponentType[TreeProps] = js.constructorOf[typings.antd.esTreeMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TreeProps]]
   @scala.inline
-  def TreeDashSelect: ComponentType[TreeDashSelectProps[TreeNodeValue]] = js.constructorOf[typings.antd.esTreeDashSelectMod.default[typings.antd.esTreeDashSelectInterfaceMod.TreeNodeValue]].asInstanceOf[typings.react.reactMod.ComponentType[TreeDashSelectProps[typings.antd.esTreeDashSelectInterfaceMod.TreeNodeValue]]]
+  def TreeDashSelect[T /* <: TreeNodeValue */]: ComponentType[TreeDashSelectProps[T]] = js.constructorOf[typings.antd.esTreeDashSelectMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[TreeDashSelectProps[T]]]
   @scala.inline
   def TreeNode: ComponentType[TreeNodeProps] = typings.antd.esTreeTreeMod.default.TreeNode.asInstanceOf[typings.react.reactMod.ComponentType[TreeNodeProps]]
   @scala.inline
-  def TreeSelect: ComponentType[TreeSelectProps[TreeNodeValue]] = js.constructorOf[typings.antd.esMod.TreeSelect[typings.antd.esTreeDashSelectInterfaceMod.TreeNodeValue]].asInstanceOf[typings.react.reactMod.ComponentType[TreeSelectProps[typings.antd.esTreeDashSelectInterfaceMod.TreeNodeValue]]]
+  def TreeSelect[T /* <: TreeNodeValue */]: ComponentType[TreeSelectProps[T]] = js.constructorOf[typings.antd.esMod.TreeSelect[T]].asInstanceOf[typings.react.reactMod.ComponentType[TreeSelectProps[T]]]
   @scala.inline
   def TreeTreeNode: ComponentType[TreeTreeNodeProps] = typings.antd.esMod.Tree.TreeNode.asInstanceOf[typings.react.reactMod.ComponentType[TreeTreeNodeProps]]
   @scala.inline

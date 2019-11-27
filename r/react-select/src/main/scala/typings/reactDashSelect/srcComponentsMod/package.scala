@@ -11,7 +11,7 @@ package object srcComponentsMod {
   import typings.reactDashSelect.srcTypesMod.OptionTypeBase
   import typings.std.Partial
 
-  type DeepNonNullable[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type DeepNonNullable[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: -? std.NonNullable<T[P]>}
     */ typings.reactDashSelect.reactDashSelectStrings.DeepNonNullable with T
   type IndicatorComponentType[OptionType /* <: OptionTypeBase */] = ComponentType[IndicatorProps[OptionType]]

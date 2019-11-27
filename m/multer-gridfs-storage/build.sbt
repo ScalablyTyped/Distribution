@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "multer-gridfs-storage"
-version := "4.0-dt-20191104Z-e4925f"
+version := "4.0-dt-20191104Z-8aef0a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-9b6106",
-  "org.scalablytyped" %%% "bson" % "4.0-dt-20191119Z-d1e454",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-ec07f0",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-13b33a",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-da006c",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-e84c0f",
-  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191118Z-85fa1b",
-  "org.scalablytyped" %%% "mongoose" % "5.5.1-dt-20191115Z-00444c",
-  "org.scalablytyped" %%% "multer" % "1.3-dt-20190925Z-0c4803",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191125Z-959704",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-f180da",
+  "org.scalablytyped" %%% "bson" % "4.0-dt-20191119Z-675dbb",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-d03b6a",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-d92710",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-4d11bc",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-12c9b7",
+  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191118Z-9e1747",
+  "org.scalablytyped" %%% "mongoose" % "5.5.1-dt-20191115Z-9ac1e0",
+  "org.scalablytyped" %%% "multer" % "1.3-dt-20190925Z-c7c343",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-1b75dd",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-335844",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-4ff83c",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

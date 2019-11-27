@@ -1,7 +1,7 @@
 
 # Scala.js typings for sparql-http-client
 
-Typings are for version 1.1
+Typings are for version 1.2
 
 ## Library description:
 Simplified SPARQL HTTP request client

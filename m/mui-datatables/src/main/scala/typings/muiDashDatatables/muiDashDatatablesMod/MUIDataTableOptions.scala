@@ -61,6 +61,7 @@ trait MUIDataTableOptions extends js.Object {
       ReactNode
     ]
   ] = js.undefined
+  var disableToolbarSelect: js.UndefOr[Boolean] = js.undefined
   var download: js.UndefOr[Boolean] = js.undefined
   var downloadOptions: js.UndefOr[Anon_Filename] = js.undefined
   var elevation: js.UndefOr[Double] = js.undefined
@@ -145,6 +146,7 @@ trait MUIDataTableOptions extends js.Object {
   var serverSide: js.UndefOr[Boolean] = js.undefined
   var serverSideFilterList: js.UndefOr[js.Array[_]] = js.undefined
   var setRowProps: js.UndefOr[js.Function2[/* row */ js.Array[_], /* rowIndex */ Double, js.Object]] = js.undefined
+  var setTableProps: js.UndefOr[js.Function0[js.Object]] = js.undefined
   var sort: js.UndefOr[Boolean] = js.undefined
   var sortFilterList: js.UndefOr[Boolean] = js.undefined
   var textLabels: js.UndefOr[MUIDataTableTextLabels] = js.undefined
@@ -164,6 +166,7 @@ object MUIDataTableOptions {
     customSort: (/* data */ js.Array[_], /* colIndex */ Double, /* order */ String) => js.Array[_] = null,
     customToolbar: () => ReactNode = null,
     customToolbarSelect: (/* selectedRows */ Anon_Data, /* displayData */ js.Array[Anon_DataDataIndex], /* setSelectedRows */ js.Function1[/* rows */ js.Array[Double], Unit]) => ReactNode = null,
+    disableToolbarSelect: js.UndefOr[Boolean] = js.undefined,
     download: js.UndefOr[Boolean] = js.undefined,
     downloadOptions: Anon_Filename = null,
     elevation: Int | Double = null,
@@ -213,6 +216,7 @@ object MUIDataTableOptions {
     serverSide: js.UndefOr[Boolean] = js.undefined,
     serverSideFilterList: js.Array[_] = null,
     setRowProps: (/* row */ js.Array[_], /* rowIndex */ Double) => js.Object = null,
+    setTableProps: () => js.Object = null,
     sort: js.UndefOr[Boolean] = js.undefined,
     sortFilterList: js.UndefOr[Boolean] = js.undefined,
     textLabels: MUIDataTableTextLabels = null,
@@ -229,6 +233,7 @@ object MUIDataTableOptions {
     if (customSort != null) __obj.updateDynamic("customSort")(js.Any.fromFunction3(customSort))
     if (customToolbar != null) __obj.updateDynamic("customToolbar")(js.Any.fromFunction0(customToolbar))
     if (customToolbarSelect != null) __obj.updateDynamic("customToolbarSelect")(js.Any.fromFunction3(customToolbarSelect))
+    if (!js.isUndefined(disableToolbarSelect)) __obj.updateDynamic("disableToolbarSelect")(disableToolbarSelect.asInstanceOf[js.Any])
     if (!js.isUndefined(download)) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
     if (downloadOptions != null) __obj.updateDynamic("downloadOptions")(downloadOptions.asInstanceOf[js.Any])
     if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
@@ -278,6 +283,7 @@ object MUIDataTableOptions {
     if (!js.isUndefined(serverSide)) __obj.updateDynamic("serverSide")(serverSide.asInstanceOf[js.Any])
     if (serverSideFilterList != null) __obj.updateDynamic("serverSideFilterList")(serverSideFilterList.asInstanceOf[js.Any])
     if (setRowProps != null) __obj.updateDynamic("setRowProps")(js.Any.fromFunction2(setRowProps))
+    if (setTableProps != null) __obj.updateDynamic("setTableProps")(js.Any.fromFunction0(setTableProps))
     if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (!js.isUndefined(sortFilterList)) __obj.updateDynamic("sortFilterList")(sortFilterList.asInstanceOf[js.Any])
     if (textLabels != null) __obj.updateDynamic("textLabels")(textLabels.asInstanceOf[js.Any])

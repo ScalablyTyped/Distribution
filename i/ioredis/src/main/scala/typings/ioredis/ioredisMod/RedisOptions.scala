@@ -4,6 +4,8 @@ import typings.ioredis.Anon_Host
 import typings.ioredis.ioredisNumbers.`1`
 import typings.ioredis.ioredisNumbers.`2`
 import typings.ioredis.ioredisNumbers.`false`
+import typings.ioredis.ioredisStrings.master
+import typings.ioredis.ioredisStrings.slave
 import typings.node.tlsMod.ConnectionOptions
 import typings.std.Error
 import scala.scalajs.js
@@ -52,6 +54,11 @@ trait RedisOptions extends js.Object {
     */
   var enableReadyCheck: js.UndefOr[Boolean] = js.undefined
   /**
+    * Whether to support the `tls` option when connecting to Redis via sentinel mode.
+    * default: false.
+    */
+  var enableTLSForSentinelMode: js.UndefOr[Boolean] = js.undefined
+  /**
     * 4 (IPv4) or 6 (IPv6), Defaults to 4.
     */
   var family: js.UndefOr[Double] = js.undefined
@@ -73,7 +80,15 @@ trait RedisOptions extends js.Object {
     * (which is the default behavior before ioredis v4).
     */
   var maxRetriesPerRequest: js.UndefOr[Double | Null] = js.undefined
+  /**
+    * default: null.
+    */
   var name: js.UndefOr[String] = js.undefined
+  /**
+    * NAT map for sentinel connector.
+    * default: null.
+    */
+  var natMap: js.UndefOr[NatMap] = js.undefined
   /**
     * If set, client will send AUTH command with the value of this option when connected.
     */
@@ -83,6 +98,10 @@ trait RedisOptions extends js.Object {
     */
   var path: js.UndefOr[String] = js.undefined
   var port: js.UndefOr[Double] = js.undefined
+  /**
+    * Can be used to prefer a particular slave or set of slaves based on priority.
+    */
+  var preferredSlaves: js.UndefOr[PreferredSlaves] = js.undefined
   /**
     * Enable READONLY mode for the connection. Only available for cluster mode.
     * default: false.
@@ -98,12 +117,28 @@ trait RedisOptions extends js.Object {
     * Fixed in: https://github.com/DefinitelyTyped/DefinitelyTyped/pull/15858
     */
   var retryStrategy: js.UndefOr[js.Function1[/* times */ Double, Double | `false`]] = js.undefined
+  /**
+    * default: "master".
+    */
+  var role: js.UndefOr[master | slave] = js.undefined
+  var sentinelPassword: js.UndefOr[String] = js.undefined
+  /**
+    * If `sentinelRetryStrategy` returns a valid delay time, ioredis will try to reconnect from scratch.
+    * default: function(times) { return Math.min(times * 10, 1000); }
+    */
+  var sentinelRetryStrategy: js.UndefOr[js.Function1[/* retryAttempts */ Double, Double]] = js.undefined
+  var sentinelTLS: js.UndefOr[SecureContextOptions] = js.undefined
   var sentinels: js.UndefOr[js.Array[Anon_Host]] = js.undefined
   /**
     * Whether to show a friendly error stack. Will decrease the performance significantly.
     */
   var showFriendlyErrorStack: js.UndefOr[Boolean] = js.undefined
   var tls: js.UndefOr[ConnectionOptions] = js.undefined
+  /**
+    * Update the given `sentinels` list with new IP addresses when communicating with existing sentinels.
+    * default: true.
+    */
+  var updateSentinels: js.UndefOr[Boolean] = js.undefined
 }
 
 object RedisOptions {
@@ -117,6 +152,7 @@ object RedisOptions {
     dropBufferSupport: js.UndefOr[Boolean] = js.undefined,
     enableOfflineQueue: js.UndefOr[Boolean] = js.undefined,
     enableReadyCheck: js.UndefOr[Boolean] = js.undefined,
+    enableTLSForSentinelMode: js.UndefOr[Boolean] = js.undefined,
     family: Int | Double = null,
     host: String = null,
     keepAlive: Int | Double = null,
@@ -124,15 +160,22 @@ object RedisOptions {
     lazyConnect: js.UndefOr[Boolean] = js.undefined,
     maxRetriesPerRequest: Int | Double = null,
     name: String = null,
+    natMap: NatMap = null,
     password: String = null,
     path: String = null,
     port: Int | Double = null,
+    preferredSlaves: PreferredSlaves = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     reconnectOnError: /* error */ Error => Boolean | `1` | `2` = null,
     retryStrategy: /* times */ Double => Double | `false` = null,
+    role: master | slave = null,
+    sentinelPassword: String = null,
+    sentinelRetryStrategy: /* retryAttempts */ Double => Double = null,
+    sentinelTLS: SecureContextOptions = null,
     sentinels: js.Array[Anon_Host] = null,
     showFriendlyErrorStack: js.UndefOr[Boolean] = js.undefined,
-    tls: ConnectionOptions = null
+    tls: ConnectionOptions = null,
+    updateSentinels: js.UndefOr[Boolean] = js.undefined
   ): RedisOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoResendUnfulfilledCommands)) __obj.updateDynamic("autoResendUnfulfilledCommands")(autoResendUnfulfilledCommands.asInstanceOf[js.Any])
@@ -143,6 +186,7 @@ object RedisOptions {
     if (!js.isUndefined(dropBufferSupport)) __obj.updateDynamic("dropBufferSupport")(dropBufferSupport.asInstanceOf[js.Any])
     if (!js.isUndefined(enableOfflineQueue)) __obj.updateDynamic("enableOfflineQueue")(enableOfflineQueue.asInstanceOf[js.Any])
     if (!js.isUndefined(enableReadyCheck)) __obj.updateDynamic("enableReadyCheck")(enableReadyCheck.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTLSForSentinelMode)) __obj.updateDynamic("enableTLSForSentinelMode")(enableTLSForSentinelMode.asInstanceOf[js.Any])
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (keepAlive != null) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
@@ -150,15 +194,22 @@ object RedisOptions {
     if (!js.isUndefined(lazyConnect)) __obj.updateDynamic("lazyConnect")(lazyConnect.asInstanceOf[js.Any])
     if (maxRetriesPerRequest != null) __obj.updateDynamic("maxRetriesPerRequest")(maxRetriesPerRequest.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (natMap != null) __obj.updateDynamic("natMap")(natMap.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (preferredSlaves != null) __obj.updateDynamic("preferredSlaves")(preferredSlaves.asInstanceOf[js.Any])
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
     if (reconnectOnError != null) __obj.updateDynamic("reconnectOnError")(js.Any.fromFunction1(reconnectOnError))
     if (retryStrategy != null) __obj.updateDynamic("retryStrategy")(js.Any.fromFunction1(retryStrategy))
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (sentinelPassword != null) __obj.updateDynamic("sentinelPassword")(sentinelPassword.asInstanceOf[js.Any])
+    if (sentinelRetryStrategy != null) __obj.updateDynamic("sentinelRetryStrategy")(js.Any.fromFunction1(sentinelRetryStrategy))
+    if (sentinelTLS != null) __obj.updateDynamic("sentinelTLS")(sentinelTLS.asInstanceOf[js.Any])
     if (sentinels != null) __obj.updateDynamic("sentinels")(sentinels.asInstanceOf[js.Any])
     if (!js.isUndefined(showFriendlyErrorStack)) __obj.updateDynamic("showFriendlyErrorStack")(showFriendlyErrorStack.asInstanceOf[js.Any])
     if (tls != null) __obj.updateDynamic("tls")(tls.asInstanceOf[js.Any])
+    if (!js.isUndefined(updateSentinels)) __obj.updateDynamic("updateSentinels")(updateSentinels.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedisOptions]
   }
 }

@@ -17,8 +17,5 @@ trait reactProps {
   @scala.inline
   def SuspenseProps: typings.react.reactMod.SuspenseProps.type = typings.react.reactMod.SuspenseProps
   type SuspenseProps = typings.react.reactMod.SuspenseProps
-  @scala.inline
-  def SuspenseListProps: typings.react.experimentalMod.reactMod.SuspenseListProps.type = typings.react.experimentalMod.reactMod.SuspenseListProps
-  type SuspenseListProps = typings.react.experimentalMod.reactMod.SuspenseListProps
 }
 

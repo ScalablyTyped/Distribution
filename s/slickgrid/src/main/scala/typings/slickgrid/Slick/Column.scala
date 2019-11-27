@@ -61,7 +61,6 @@ trait Column[T /* <: SlickData */] extends js.Object {
   		* @return
   		**/
   var formatter: js.UndefOr[Formatter[T]] = js.undefined
-  var header: js.UndefOr[Header] = js.undefined
   /**
   		* Accepts a string as a class name, applies that class to the cell for the column header.
   		**/
@@ -120,7 +119,6 @@ object Column {
     field: String = null,
     focusable: js.UndefOr[Boolean] = js.undefined,
     formatter: (/* row */ Double, /* cell */ Double, /* value */ js.Any, /* columnDef */ Column[T], /* dataContext */ SlickData) => String = null,
-    header: Header = null,
     headerCssClass: String = null,
     id: String = null,
     maxWidth: Int | Double = null,
@@ -143,7 +141,6 @@ object Column {
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction5(formatter))
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (headerCssClass != null) __obj.updateDynamic("headerCssClass")(headerCssClass.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 package typings.ffi.ffiMod
 
-import typings.ffi.Buffer
+import typings.node.Buffer
 import typings.ref.refMod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`

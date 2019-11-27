@@ -21,16 +21,10 @@ object inject extends js.Object {
   ] = js.native
   @js.native
   object service extends js.Object {
-    def apply(): typings.atEmberObject.computedMod.ComputedProperty[
-        typings.atEmberService.atEmberServiceMod.Service, 
-        typings.atEmberService.atEmberServiceMod.Service
-      ] = js.native
+    def apply(): js.Any = js.native
     def apply(target: js.Object, propertyKey: java.lang.String): Unit = js.native
     def apply(target: js.Object, propertyKey: js.Symbol): Unit = js.native
-    def apply[K /* <: java.lang.String */](name: K): typings.atEmberObject.computedMod.ComputedProperty[
-        /* import warning: importer.ImportType#apply Failed type conversion: @ember/service.@ember/service.Registry[K] */ js.Any, 
-        /* import warning: importer.ImportType#apply Failed type conversion: @ember/service.@ember/service.Registry[K] */ js.Any
-      ] = js.native
+    def apply[K /* <: java.lang.String */](name: K): js.Any = js.native
   }
   
 }

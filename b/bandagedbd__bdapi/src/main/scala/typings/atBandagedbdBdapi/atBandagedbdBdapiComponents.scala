@@ -16,7 +16,5 @@ object atBandagedbdBdapiComponents extends atBandagedbdBdapiProps {
   def BdApiModuleReactStrictMode: ComponentType[BdApiModuleReactStrictModeProps] = typings.atBandagedbdBdapi.atBandagedbdBdapiMod.BdApiModule.React.StrictMode.asInstanceOf[typings.react.reactMod.ComponentType[BdApiModuleReactStrictModeProps]]
   @scala.inline
   def BdApiModuleReactSuspense: ComponentType[BdApiModuleReactSuspenseProps] = typings.atBandagedbdBdapi.atBandagedbdBdapiMod.BdApiModule.React.Suspense.asInstanceOf[typings.react.reactMod.ComponentType[BdApiModuleReactSuspenseProps]]
-  @scala.inline
-  def BdApiModuleReactSuspenseList: ComponentType[BdApiModuleReactSuspenseListProps] = typings.atBandagedbdBdapi.atBandagedbdBdapiMod.BdApiModule.React.SuspenseList.asInstanceOf[typings.react.reactMod.ComponentType[BdApiModuleReactSuspenseListProps]]
 }
 

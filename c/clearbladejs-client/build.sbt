@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "clearbladejs-client"
-version := "1.1-dt-20190213Z-e41e0b"
+version := "1.1-dt-20191126Z-bd1230"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

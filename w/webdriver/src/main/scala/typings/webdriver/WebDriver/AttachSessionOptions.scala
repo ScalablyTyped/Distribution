@@ -18,6 +18,7 @@ object AttachSessionOptions {
     capabilities: DesiredCapabilities = null,
     connectionRetryCount: Int | Double = null,
     connectionRetryTimeout: Int | Double = null,
+    headers: StringDictionary[String] = null,
     hostname: String = null,
     isW3C: js.UndefOr[Boolean] = js.undefined,
     key: String = null,
@@ -33,6 +34,7 @@ object AttachSessionOptions {
     if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
     if (connectionRetryCount != null) __obj.updateDynamic("connectionRetryCount")(connectionRetryCount.asInstanceOf[js.Any])
     if (connectionRetryTimeout != null) __obj.updateDynamic("connectionRetryTimeout")(connectionRetryTimeout.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
     if (!js.isUndefined(isW3C)) __obj.updateDynamic("isW3C")(isW3C.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

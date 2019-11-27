@@ -1,6 +1,6 @@
 package typings.ffiDashNapi.ffiDashNapiMod
 
-import typings.ffiDashNapi.Buffer
+import typings.node.Buffer
 import typings.refDashNapi.refDashNapiMod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`

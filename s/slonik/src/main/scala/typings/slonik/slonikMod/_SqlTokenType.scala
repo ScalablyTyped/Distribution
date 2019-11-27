@@ -9,7 +9,7 @@ trait _SqlTokenType extends js.Object
 
 object _SqlTokenType {
   @scala.inline
-  def UnnestSqlTokenType(columnTypes: js.Array[String], tuples: js.Array[PositionalParameterValuesType], `type`: js.Symbol): _SqlTokenType = {
+  def UnnestSqlTokenType(columnTypes: js.Array[String], tuples: js.Array[js.Array[ValueExpressionType]], `type`: js.Symbol): _SqlTokenType = {
     val __obj = js.Dynamic.literal(columnTypes = columnTypes.asInstanceOf[js.Any], tuples = tuples.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_SqlTokenType]
@@ -30,7 +30,7 @@ object _SqlTokenType {
   def ArraySqlTokenType(
     memberType: TypeNameIdentifierType | SqlTokenType,
     `type`: js.Symbol,
-    values: PositionalParameterValuesType
+    values: js.Array[ValueExpressionType]
   ): _SqlTokenType = {
     val __obj = js.Dynamic.literal(memberType = memberType.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

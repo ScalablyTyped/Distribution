@@ -1,7 +1,6 @@
 package typings.bookshelf.bookshelfMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.lodash.lodashMod.ObjectIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,14 +32,24 @@ abstract class ModelBase[T /* <: Model[_] */] ()
   def keys(): js.Array[String] = js.native
   def omit[R /* <: js.Object */](): R = js.native
   def omit[R /* <: js.Object */](attributes: String*): R = js.native
-  def omit[R /* <: js.Object */](predicate: ObjectIterator[_, Boolean]): R = js.native
-  def omit[R /* <: js.Object */](predicate: ObjectIterator[_, Boolean], thisArg: js.Any): R = js.native
+  def omit[R /* <: js.Object */](
+    predicate: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Lodash.ObjectIterator<any, boolean> */ js.Any
+  ): R = js.native
+  def omit[R /* <: js.Object */](
+    predicate: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Lodash.ObjectIterator<any, boolean> */ js.Any,
+    thisArg: js.Any
+  ): R = js.native
   def pairs(): js.Array[js.Array[_]] = js.native
   def parse(response: js.Object): js.Object = js.native
   def pick[R /* <: js.Object */](): R = js.native
   def pick[R /* <: js.Object */](attributes: String*): R = js.native
-  def pick[R /* <: js.Object */](predicate: ObjectIterator[_, Boolean]): R = js.native
-  def pick[R /* <: js.Object */](predicate: ObjectIterator[_, Boolean], thisArg: js.Any): R = js.native
+  def pick[R /* <: js.Object */](
+    predicate: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Lodash.ObjectIterator<any, boolean> */ js.Any
+  ): R = js.native
+  def pick[R /* <: js.Object */](
+    predicate: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Lodash.ObjectIterator<any, boolean> */ js.Any,
+    thisArg: js.Any
+  ): R = js.native
   def previous(attribute: String): js.Any = js.native
   def previousAttributes(): js.Any = js.native
   def related[R /* <: Model[_] */](relation: String): R | Collection[R] = js.native

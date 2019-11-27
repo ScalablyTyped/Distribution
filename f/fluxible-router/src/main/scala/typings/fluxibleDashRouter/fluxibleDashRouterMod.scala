@@ -1,6 +1,5 @@
 package typings.fluxibleDashRouter
 
-import typings.fluxible.addonsBaseStoreMod.^
 import typings.fluxible.fluxibleMod.FluxibleContext
 import typings.fluxibleDashRouter.fluxibleDashRouterMod.NavLinkProps
 import typings.react.reactMod.Component
@@ -25,15 +24,12 @@ object fluxibleDashRouterMod extends js.Object {
     var `type`: js.UndefOr[String] = js.native
   }
   
-  @js.native
-  class RouteStore ()
-    extends ^[js.Object] {
-    @JSName("dehydrate")
-    def dehydrate_MRouteStore(): js.Any = js.native
-    @JSName("dehydrate")
-    def dehydrate_MRouteStore(context: FluxibleContext): js.Any = js.native
-    @JSName("rehydrate")
-    def rehydrate_MRouteStore(state: js.Any): Unit = js.native
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BaseStore * / any */ @js.native
+  class RouteStore () extends js.Object {
+    def dehydrate(): js.Any = js.native
+    def dehydrate(context: FluxibleContext): js.Any = js.native
+    def rehydrate(state: js.Any): Unit = js.native
   }
   
   def handleHistory(Component: TypeofClassComponent): TypeofClassComponent = js.native

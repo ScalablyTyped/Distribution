@@ -10,6 +10,7 @@ trait Options extends js.Object {
   var capabilities: js.UndefOr[DesiredCapabilities] = js.undefined
   var connectionRetryCount: js.UndefOr[Double] = js.undefined
   var connectionRetryTimeout: js.UndefOr[Double] = js.undefined
+  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   var hostname: js.UndefOr[String] = js.undefined
   var key: js.UndefOr[String] = js.undefined
   var logLevel: js.UndefOr[WebDriverLogTypes] = js.undefined
@@ -27,6 +28,7 @@ object Options {
     capabilities: DesiredCapabilities = null,
     connectionRetryCount: Int | Double = null,
     connectionRetryTimeout: Int | Double = null,
+    headers: StringDictionary[String] = null,
     hostname: String = null,
     key: String = null,
     logLevel: WebDriverLogTypes = null,
@@ -41,6 +43,7 @@ object Options {
     if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
     if (connectionRetryCount != null) __obj.updateDynamic("connectionRetryCount")(connectionRetryCount.asInstanceOf[js.Any])
     if (connectionRetryTimeout != null) __obj.updateDynamic("connectionRetryTimeout")(connectionRetryTimeout.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])

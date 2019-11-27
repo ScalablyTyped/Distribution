@@ -1,6 +1,6 @@
 package typings.ember.emberMod.Ember
 
-import typings.ember.emberNumbers.`true`
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,9 +11,8 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("ember", "Ember.copy")
 @js.native
-object copy extends js.Object {
-  def apply(obj: js.Any): js.Any = js.native
-  def apply(obj: js.Any, deep: Boolean): js.Any = js.native
-  def apply[T](obj: T, deep: `true`): T = js.native
-}
+object copy
+  extends TopLevel[
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EmberObjectInternalsNs.copy */ js.Any
+    ]
 

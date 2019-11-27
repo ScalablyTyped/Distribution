@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material__dom"
-version := "0.43-dt-20190717Z-14d5c7"
+version := "0.43-dt-20191126Z-14d5c7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

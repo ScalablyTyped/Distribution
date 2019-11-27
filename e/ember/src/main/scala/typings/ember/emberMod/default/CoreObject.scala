@@ -4,8 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ember", "CoreObject")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberCoreObject * / any */ @JSImport("ember", "CoreObject")
 @js.native
-class CoreObject ()
-  extends typings.atEmberObject.coreMod.default
+class CoreObject () extends js.Object
 

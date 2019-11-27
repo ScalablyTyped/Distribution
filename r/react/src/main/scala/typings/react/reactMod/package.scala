@@ -223,8 +223,6 @@ package object reactMod {
   type SyntheticEvent[T, E] = BaseSyntheticEvent[E, EventTarget with T, EventTarget]
   type TouchEventHandler[T] = EventHandler[TouchEvent[T]]
   type TransitionEventHandler[T] = EventHandler[TransitionEvent[T]]
-  type TransitionFunction = js.Function0[js.UndefOr[Unit]]
-  type TransitionStartFunction = js.Function1[/* callback */ typings.react.experimentalMod.reactMod.TransitionFunction, Unit]
   type UIEventHandler[T] = EventHandler[UIEvent[T]]
   type ValidationMap[T] = typings.propDashTypes.propDashTypesMod.ValidationMap[T]
   //

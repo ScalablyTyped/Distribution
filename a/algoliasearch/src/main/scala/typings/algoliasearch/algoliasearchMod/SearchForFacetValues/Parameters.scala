@@ -95,6 +95,7 @@ object Parameters {
     ruleContexts: js.Array[String] = null,
     snippetEllipsisText: String = null,
     sortFacetValuesBy: count | alpha = null,
+    sumOrFiltersScores: js.UndefOr[Boolean] = js.undefined,
     synonyms: js.UndefOr[Boolean] = js.undefined,
     tagFilters: js.Array[String] = null,
     typoTolerance: Boolean | min | strict = null,
@@ -154,6 +155,7 @@ object Parameters {
     if (ruleContexts != null) __obj.updateDynamic("ruleContexts")(ruleContexts.asInstanceOf[js.Any])
     if (snippetEllipsisText != null) __obj.updateDynamic("snippetEllipsisText")(snippetEllipsisText.asInstanceOf[js.Any])
     if (sortFacetValuesBy != null) __obj.updateDynamic("sortFacetValuesBy")(sortFacetValuesBy.asInstanceOf[js.Any])
+    if (!js.isUndefined(sumOrFiltersScores)) __obj.updateDynamic("sumOrFiltersScores")(sumOrFiltersScores.asInstanceOf[js.Any])
     if (!js.isUndefined(synonyms)) __obj.updateDynamic("synonyms")(synonyms.asInstanceOf[js.Any])
     if (tagFilters != null) __obj.updateDynamic("tagFilters")(tagFilters.asInstanceOf[js.Any])
     if (typoTolerance != null) __obj.updateDynamic("typoTolerance")(typoTolerance.asInstanceOf[js.Any])
