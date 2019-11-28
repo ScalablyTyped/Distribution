@@ -1,14 +1,12 @@
 package typings.antdDashNative
 
-import typings.atAntDashDesignIconsDashReactDashNative.esFillMod.IconFillProps
-import typings.atAntDashDesignIconsDashReactDashNative.esOutlineMod.IconOutlineProps
+import typings.atAntDashDesignIconsDashReactDashNative.libFillMod.IconFillProps
+import typings.atAntDashDesignIconsDashReactDashNative.libOutlineMod.IconOutlineProps
 import typings.atAntDashDesignIconsDashReactDashNative.{atAntDashDesignIconsDashReactDashNativeComponents => AntdIcons}
-import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings
-import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeProps
-import typings.reactDashNative.reactDashNativeMod.ActionSheetIOSOptions
-import typings.atAntDashDesignReactDashNative.esMod.{ActionSheet, Toast}
-import typings.atAntDashDesignReactDashNative.{atAntDashDesignReactDashNativeComponents => Antd}
+import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeMod.{ActionSheet, Toast}
+import typings.atAntDashDesignReactDashNative.{atAntDashDesignReactDashNativeProps, atAntDashDesignReactDashNativeStrings, atAntDashDesignReactDashNativeComponents => Antd}
 import typings.react.ScalableSlinky._
+import typings.reactDashNative.reactDashNativeMod.ActionSheetIOSOptions
 
 /**
  * This wraps most of `ant-design__react-native` in a more slinky friendly way. We cast all components into `ExternalComponent`s, and

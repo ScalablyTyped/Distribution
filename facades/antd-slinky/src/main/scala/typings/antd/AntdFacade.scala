@@ -2,8 +2,8 @@ package typings.antd
 
 import slinky.core.TagMod
 import slinky.core.facade.ReactElement
-import typings.antd.esFormFormMod.default.{create => createForm}
-import typings.antd.esFormFormMod.{FormCreateOption, GetFieldDecoratorOptions, WrappedFormUtils}
+import typings.antd.libFormFormMod.default.{create => createForm}
+import typings.antd.libFormFormMod.{FormCreateOption, GetFieldDecoratorOptions, WrappedFormUtils}
 import typings.antd.{antdProps, antdComponents => Antd}
 import typings.react.ScalableSlinky._
 import typings.react.reactMod.ComponentType
@@ -149,8 +149,8 @@ object AntdFacade extends antdProps {
   @inline def Typography: ExternalComponentP[TypographyProps] = importSTComponent(Antd.Typography)
   @inline def Upload: ExternalComponentP[UploadProps] = importSTComponent(Antd.Upload)
 
-  @inline def NotificationArgsProps = typings.antd.esNotificationMod.ArgsProps
-  type NotificationArgsProps = typings.antd.esNotificationMod.ArgsProps
+  @inline def NotificationArgsProps = typings.antd.libNotificationMod.ArgsProps
+  type NotificationArgsProps = typings.antd.libNotificationMod.ArgsProps
 
   val antdStrings: typings.antd.antdStrings.type = typings.antd.antdStrings
   
